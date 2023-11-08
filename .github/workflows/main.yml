@@ -78,7 +78,8 @@ jobs:
           mv ./make-easylist.js ./make-easylist.mjs
           node ./make-easylist.mjs in=ruadlist.template out=ruadlist.min.txt minify=1
           popd
-          cp ${{ env.BUILDDIR }}/ruadlist.min.txt ./lists/
+          echo "cp ${{ env.BUILDDIR }}/ruadlist.min.txt lists/"
+          cp ${{ env.BUILDDIR }}/ruadlist.min.txt lists/
       - name: Patch last-updated field
         if: ${{ env.CAN_DO == 'yes' }}
         run: |
