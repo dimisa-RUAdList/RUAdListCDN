@@ -51,7 +51,7 @@ jobs:
         run: |
           TMPDIR=$(mktemp -d)
           git clone --depth=1 --single-branch --branch=master https://github.com/uBlockOrigin/uAssets.git "$TMPDIR"
-          cp -v "$TMPDIR"/tools/easylist/make-easylist.js ${{ env.BUILDDIR }}
+          cp -v "$TMPDIR"/tools/easylist/make-easylist.js ${{ env.BUILDDIR }}/make-easylist.mjs
           cp -v "$TMPDIR"/tools/make-diffpatch.sh ${{ env.BUILDDIR }}
           cp -v "$TMPDIR"/tools/update-diffpatches.sh ${{ env.BUILDDIR }}
       - name: Fetch lists from easylist/ruadlist
@@ -64,7 +64,7 @@ jobs:
       - name: Generate ruadlist.min.txt from RuAdList-uBO.txt
         if: ${{ env.CAN_DO == 'yes' }}
         run: |
-          cd "${{ env.BUILDDIR }}"
+          pushd ${{ env.BUILDDIR }}
           : > ruadlist.template
           echo "! Title: RU AdList for uBO only" >> ruadlist.template
           echo "! Expires: 4 days" >> ruadlist.template
@@ -74,11 +74,8 @@ jobs:
           echo "! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE" >> ruadlist.template
           echo >> ruadlist.template
           echo "%include ruadlist:RuAdList-uBO.txt%" >> ruadlist.template
-          pushd ${{ env.BUILDDIR }}
-          mv ./make-easylist.js ./make-easylist.mjs
           node ./make-easylist.mjs in=ruadlist.template out=ruadlist.min.txt minify=1
           popd
-          echo "cp ${{ env.BUILDDIR }}/ruadlist.min.txt lists/"
           cp ${{ env.BUILDDIR }}/ruadlist.min.txt lists/
       - name: Patch last-updated field
         if: ${{ env.CAN_DO == 'yes' }}
