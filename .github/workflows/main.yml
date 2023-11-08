@@ -94,13 +94,13 @@ jobs:
         if: ${{ env.CAN_DO == 'yes' }}
         run: |
           PATCHES_DIR="patches"
-          ./make-diffpatch.sh "${{ env.TAGNAME }}" "$PATCHES_DIR"
+          ${{ env.BUILDDIR }}/make-diffpatch.sh "${{ env.TAGNAME }}" "$PATCHES_DIR"
       - name: Update existing patches
         if: ${{ env.CAN_DO == 'yes' }}
         run: |
           PATCHES_DIR="patches"
           FILTER_FILES=$(git ls-files --exclude-standard -- lists/*.min.txt)
-          ./update-diffpatches.sh "$GITHUB_REPOSITORY" "$PATCHES_DIR" "$FILTER_FILES"
+          ${{ env.BUILDDIR }}/update-diffpatches.sh "$GITHUB_REPOSITORY" "$PATCHES_DIR" "$FILTER_FILES"
       - name: Commit changes, if any
         if: ${{ env.CAN_DO == 'yes' }}
         run: |
