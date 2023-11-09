@@ -61,7 +61,7 @@ jobs:
           git clone --depth=1 --single-branch --branch=master https://github.com/easylist/ruadlist "$TMPDIR"
           cp -v  "$TMPDIR"/*.txt "${{ env.BUILDDIR }}"
           cp -Rv "$TMPDIR"/advblock "${{ env.BUILDDIR }}"
-      - name: Generate ruadlist.min.txt from RuAdList-uBO.txt
+      - name: Generate ruadlist.ubo.min.txt from RuAdList-uBO.txt
         if: ${{ env.CAN_DO == 'yes' }}
         run: |
           pushd ${{ env.BUILDDIR }}
@@ -74,14 +74,14 @@ jobs:
           echo "! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE" >> ruadlist.template
           echo >> ruadlist.template
           echo "%include ruadlist:RuAdList-uBO.txt%" >> ruadlist.template
-          node ./make-easylist.mjs in=ruadlist.template out=ruadlist.min.txt minify=1
+          node ./make-easylist.mjs in=ruadlist.template out=ruadlist.ubo.min.txt minify=1
           popd
-          cp ${{ env.BUILDDIR }}/ruadlist.min.txt lists/
+          cp ${{ env.BUILDDIR }}/ruadlist.ubo.min.txt lists/
       - name: Patch last-updated field
         if: ${{ env.CAN_DO == 'yes' }}
         run: |
           DATE=$(date -Ru)
-          FILTER_LISTS=( "lists/ruadlist.min.txt" )
+          FILTER_LISTS=( "lists/ruadlist.ubo.min.txt" )
           for FILE in "${FILTER_LISTS[@]}"; do
             STAT=$(git diff --numstat $FILE | sed -r '/^1\s+1\s+/d')
             if [[ -n $STAT ]]; then
