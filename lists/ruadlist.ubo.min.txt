@@ -1,7 +1,8 @@
+[Adblock Plus 2.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 08 Nov 2023 22:58:06 +0000
-! Diff-Path: ../patches/2023.11.8.1378.patch#RUS-0
+! Last modified: Thu, 09 Nov 2023 16:26:11 +0000
+! Diff-Path: ../patches/2023.11.9.986.patch#RUS-0
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -25952,7 +25953,7 @@ bidbaits.ru##.cover-msg
 tarkov-market.com##.disable-adblock
 amedia.online##.errror
 internetsms.org##.fade[class^="modal"]
-ilenta.com,moyens.net,pimpletv.ru,pravda.com.ua,tales.org.ua,ukranews.com,zazloo.ru##.fc-ab-root
+ilenta.com,moyens.net,pimpletv.ru,portaltele.com.ua,pravda.com.ua,tales.org.ua,ukranews.com,zazloo.ru##.fc-ab-root
 hdkinoteatr.com##.fixedBg
 hdkino.biz##.full-news td[bgcolor]
 trupornolabs.org##.header > .red
@@ -27630,15 +27631,14 @@ dzen.ru###ya-dist
 dzen.ru##.adv-ecom
 dzen.ru##.mg-advert__content:not(:first-child):style(margin-top: unset !important)
 dzen.ru##.mg-grid__col > div[style^="margin-top:"]:style(margin-top: unset !important)
-dzen.ru##.video-site-app [data-testid^="feed-row-"] > div[class*="heme"]
-dzen.ru##[class*="Floors"] div[id][class^="feed"] div[class^="kebab-button-mailru-wrapper"] ~ article
+dzen.ru##.viewer-layout__content div[class*="content__player"] ~ div[class*="heme"]
+dzen.ru##[class*="Floors"] div[id][class^="feed"] div[class*="wrapper-"] ~ article
 dzen.ru##a[href*="://yandex.ru/an/count/"]
 dzen.ru##a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div
-dzen.ru##aside.article__right > div[class*="_"]
+dzen.ru##aside[id^="article_"][class*="right"] > div[class]
 dzen.ru##body:style(overflow-y: unset !important)
 dzen.ru##div[aria-label="Карточка рекомендованного видео"] ~ [aria-label]:not([aria-label="Карточка рекомендованного видео"])
 dzen.ru##div[aria-label="Карточка рекомендованного видео"] ~ div:not([aria-label="Карточка рекомендованного видео"]) > div[id][class]
-dzen.ru##div[class*="-content "] > div[class*="-content__player"] ~ div[class*="withDomainHover"]
 dzen.ru##div[class*="article__content"] > .undefined ~ div[class*="__middle"] > div[id][class]
 dzen.ru##div[class*="video-viewer-sidebar__ad"]
 dzen.ru##div[class*="videoCardAd"]

@@ -66,6 +66,7 @@ jobs:
         run: |
           pushd ${{ env.BUILDDIR }}
           : > ruadlist.template
+          echo "[uBlock Origin 1.0]" >> ruadlist.template
           echo "! Title: RU AdList for uBO only" >> ruadlist.template
           echo "! Expires: 4 days" >> ruadlist.template
           echo "! Last modified: %timestamp%" >> ruadlist.template
