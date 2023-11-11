@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 11 Nov 2023 13:20:04 +0000
-! Diff-Path: ../patches/2023.11.11.800.patch#ruadlist
+! Last modified: Sat, 11 Nov 2023 18:22:54 +0000
+! Diff-Path: ../patches/2023.11.11.1102.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -12465,7 +12465,7 @@ lada.kz/uploads/banners/
 ||poufe.ru/promo/
 ||poultryukraine.com/data/image/banners/
 ||povarenok.ru/*/*project$stylesheet
-||povarenok.ru/css/*/s$stylesheet
+||povarenok.ru/css/*/p1.css$stylesheet
 ||povarenok.ru/i/*/*.jpg
 ||powerwaver.cc^*.js|$script
 ||pozdrav.ru/img/banners/
@@ -15505,7 +15505,6 @@ agronom.top##.bg-gray
 myfin.by##.bg-light-blue
 eurolab.ua,gdetraffic.com,novaposhta.ua,penza-press.ru,tveda.ru##.bg-link
 socportal.info##.bg-logo-ads
-asienda.ru,diets.ru,mycharm.ru,myjane.ru,povarenok.ru,stranamam.ru##.bg-sp
 websdr.space#?#.bg-websdr:-abp-has(> .card-body > div > [id] > div[id^="yandex_rtb"])
 mobiltelefon.ru##.bg_banner
 redirekt.info##.bg_header_right > .soft
@@ -16227,7 +16226,6 @@ www.pesticidy.ru##.fix
 alvin-almazov.ru##.fix_block
 e-sant.ru##.fixday
 sims3pack.ru##.fixed-block
-asienda.ru,diets.ru,mycharm.ru,myjane.ru,povarenok.ru,stranamam.ru##.fixed-link
 agroportal.ua##.fixedBanner
 agroportal.ua##.fixedBlock
 avtoblog.ua##.fixedBrand
@@ -16724,6 +16722,7 @@ champion.com.ua#?#.l-col > .widget__title:-abp-contains(/ партн/) ~ .listin
 www.tut.by##.l-main > .b-top + .b-top
 kazanutlary.ru##.l-mainAdArea
 cy-pr.com##.l-navigation-i > noindex
+asienda.ru,diets.ru,mycharm.ru,myjane.ru,povarenok.ru,stranamam.ru##.l-text
 obogrevguru.ru,termogurus.ru##.l2
 38mama.ru##.lad
 investing.com##.largeBannerCloser
@@ -18014,6 +18013,7 @@ torrpeda.org##.someban
 yougame.biz##.sotka
 miformat.info##.source-link
 market-pages.ru##.sovet
+asienda.ru,diets.ru,mycharm.ru,myjane.ru,povarenok.ru,stranamam.ru##.sp-bg
 armflot.ru#?#.sp-column > .sp-module:-abp-has([id*="ScriptRoot"])
 serialrussian.ru##.sp-container
 povarenok.ru##.sp-header-block
@@ -28316,8 +28316,6 @@ anime-chan.me##body > div[style^="pointer-events: none;"][style*="visible;"]
 4pda.to##body [data-revive-id] ~ script ~ [id][class]:style(background-image: none !important)
 my-expert.ru##body:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important)
 sawlive.tv##body[onclick^="closeMyAd"] > div[id][style*="position"][style*="background-color"]
-sdamgia.ru##div > main > div:empty:has(~ div:has-text(rotator)):style(margin-top: -185px !important)
-sdamgia.ru##div > main div div:has(script:has-text(rotator)):style(opacity: 0 !important; pointer-events: none !important)
 www.e1.ru##div:has(> [id] ~ script):style(min-height: 0 !important)
 cq.ru##div[class]:not([class*="-"]):not([class*="_"]):matches-css(margin-top: 16px)
 tass.ru##div[class^="PageLayout_top_sticky"] > div:style(width: auto !important)
@@ -28325,6 +28323,7 @@ pronpic.org##div[style="color:red;font-size:25px;"], .adblock_loock
 hdrezka.*,rezka.*##+js(abort-current-inline-script, document.getElementsByTagName, AMSP.loadAsset)
 hdrezka.*,rezka.*##+js(set-constant, Object.prototype.preroll, undefined)
 m.rp5.*#@#.adsbygoogle
+sdamgia.ru##main > div > div:has-text(rotator):remove()
 mult-porno.*,sex-studentki.*,cosplay-porn.*##+js(set-constant, biads.initCli, undefined)
 dmod.cc,draug.ru,modsforwot.ru##p:has-text(Для скачивания подождите отсчет таймера...)
 porno365.*##+js(abort-on-property-read, bc_blocks)
