@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 11 Nov 2023 18:22:54 +0000
-! Diff-Path: ../patches/2023.11.11.1102.patch#ruadlist
+! Last modified: Sat, 11 Nov 2023 23:18:15 +0000
+! Diff-Path: ../patches/2023.11.11.1398.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -14133,6 +14133,7 @@ shans.com.ua###mainNav > .titleBlue ~ .titleBlue
 shans.com.ua###mainNav > div[style="margin-bottom:20px;"]
 argumenti.ru###main_adv
 forum.hdtv.ru,zadonbass.org###main_banner
+soccer365.com.ua,soccer365.ru###main_container > div[style^="position:"][style*="position:absolute"]
 file-tracker.net###main_content + td[width="240px"]
 forum.tradelikeapro.ru###main_content_section > table > tbody > tr > td:nth-of-type(2)
 rugrad.eu###main_right_col > .section:not(.section_blogs)
@@ -14208,7 +14209,7 @@ forum.inoe.name###notices
 sudga.ru###notifications_menu + .t1border
 donday-aksay.ru,donday-novocherkassk.ru,donday-shakhty.ru,donday-taganrog.ru,donday.ru,volga-day.ru###novoteka
 saratovnews.ru###nws > .banner
-soccer365-1.xyz,soccer365.ru###odds
+soccer365.com.ua,soccer365.ru###odds
 youtube.com###offer-module
 russian.rt.com###offers
 kupidonia.ru###offers-right
@@ -14728,7 +14729,7 @@ delfi.lt###wallpaper
 zh24.com###warning
 browserss.ru###wb_Image1044
 solncewonews.ru###widget_ads
-soccer365-1.xyz,soccer365.ru###widget_bk
+soccer365.com.ua,soccer365.ru###widget_bk
 kriminal.net.ua###widget_wrapper_46
 kriminal.net.ua###widget_wrapper_48
 dachnye-sovety.ru###widgetized-area
@@ -16261,7 +16262,7 @@ isport.ua##.football-link[target="_blank"]
 znamyuzl.ru##.footbox > .rcol > noindex
 pcportal.org##.footer #banner ~ td
 pogodavtomske.ru##.footer > .center
-soccer365-1.xyz,soccer365.ru##.footer > :not(.footer_bottom)
+soccer365.com.ua,soccer365.ru##.footer > :not(.footer_bottom)
 mozutil.mozilla-russia.org##.footer > span > div[style="text-align: left;"] > div[style="text-align: right;"]
 sport.kg##.footer-add > a
 kino-archive.ru,silver.ru##.footer-banner
@@ -16497,7 +16498,7 @@ sgad.ru##.header_right
 kelmochka.ru##.header_site
 azovnews.ru##.header_top
 qrz.ru##.header_top > .left
-soccer365-1.xyz,soccer365.ru##.header_top > :not(.header_top_logo)
+soccer365.com.ua,soccer365.ru##.header_top > :not(.header_top_logo)
 torg.rv.ua##.headerbar > .inner > div[style="float:right"]
 sportsdaily.ru##.heading > .heading__logo
 freakenergy.ru##.headreklama
@@ -19054,7 +19055,7 @@ linux.org.ru##[src^="/adv/"]
 news.soundex.ru##[src^="http://news.soundex.ru/images/banners/"]
 lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##[src^="https://static.lostfilm.top/temp/wow_"]
 yarportal.ru##[style$="height: 60px;"]
-soccer365-1.xyz,soccer365.ru,utorrentfilmi.fun,utorrentfilmi.ru,utorrentmusic.ru##[style*="display"][style*="block"][style*="!important"]
+utorrentfilmi.fun,utorrentfilmi.ru,utorrentmusic.ru##[style*="display"][style*="block"][style*="!important"]
 newsomsk.ru#?#[style*="font"]:-abp-contains(Новости партнеров)
 penzainform.ru##[style*="height: 43px"][style*="max-height: 43px"] ~ div[class^="space_"]
 procherk.info##[style*="line-height:1;"][style$="font-size:8px;"]
@@ -19323,7 +19324,7 @@ pwcats.info##a[href*="fastrader.ru"]
 sport.ua,vringe.com##a[href*="favbet"][target="_blank"]
 superhumor.ru,voffka.com##a[href*="feipiter."]
 godendo.ru##a[href*="firmpage.ru"]
-allhockey.ru,soccer365-1.xyz,soccer365.ru,sovsport.ru##a[href*="fonbet.ru"]
+allhockey.ru,sovsport.ru##a[href*="fonbet.ru"]
 juventus.ru##a[href*="football-shopping.ru"]
 erichware.net##a[href*="freebitco.in"]
 aacalc.ru,noob-club.ru##a[href*="funpay.ru"]
@@ -20569,7 +20570,7 @@ drive.ru##div[class^="osago-"]
 investing.com##div[class^="outbrain_outbrain-wrapper_"]
 caniplay.ru##div[class^="page-block-ad"]
 n1.ru##div[class^="page-header__top-banner"]
-soccer365-1.xyz,soccer365.ru#?#div[class^="page_"][class$="_right"] div:-abp-has(> div[id]:empty ~ script)
+soccer365.com.ua,soccer365.ru#?#div[class^="page_"][class$="_right"] div:-abp-has(> div[id]:empty ~ script)
 miasskiy.ru##div[class^="papex"]
 smolensk-i.ru##div[class^="parthner"]
 cyberscore.live##div[class^="partner-"]
@@ -21051,7 +21052,7 @@ liveresult.ru##div[style="font-size:18px; font-weight:bold;margin-bottom:10px;"]
 astrohelper.ru##div[style="height: 120px;"]
 glavred.info,glavred.net##div[style="height: 400px"]
 kirov-portal.ru##div[style="height: 90px; font-size: 1px; line-height: 1px;"]
-soccer365-1.xyz,soccer365.ru##div[style="height:200px"]
+soccer365.com.ua,soccer365.ru##div[style="height:200px"]
 unews.pro##div[style="height:20px;"]:empty
 autonevod.ru##div[style="height:250px"]
 unian.info,unian.net,unian.ua##div[style="height:260px;clear:both;"]
@@ -27366,6 +27367,8 @@ sobaka.ru##.b-site-body:style(padding-top: 0 !important)
 ! ---
 soccer.ru###main_body > .block:style(height: auto !important)
 soccer.ru###site:style(margin-top: 0 !important)
+! ---
+soccer365.com.ua,soccer365.ru##.header_top:style(padding-top: 0 !important)
 ! ---
 sochi.camera###cams_top_block:style(height: 0 !important)
 sochi.camera##.banner:style(height: 0 !important)
