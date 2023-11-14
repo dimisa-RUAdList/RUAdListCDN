@@ -39,9 +39,7 @@ jobs:
       - name: Time check
         run: |
           UPDATE_PERIOD_IN_HOURS=5
-          pushd ${{ env.BUILDDIR }}
-          echo "CAN_DO=$(node ./need-patch.mjs delay="$UPDATE_PERIOD_IN_HOURS")" >> $GITHUB_ENV
-          popd
+          echo "CAN_DO=$(node ${{ env.BUILDDIR }}/need-patch.mjs delay="$UPDATE_PERIOD_IN_HOURS")" >> $GITHUB_ENV
       - name: Generate version string
         if: ${{ env.CAN_DO == 'yes' }}
         run: |
