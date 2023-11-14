@@ -1,12 +1,23 @@
-diff name:ruadlist lines:126 checksum:731c717a5b
+diff name:ruadlist lines:152 checksum:752dda548b
 d4 2
 a5 2
-! Last modified: Tue, 14 Nov 2023 13:24:13 +0000
-! Diff-Path: ../patches/2023.11.14.804.patch#ruadlist
+! Last modified: Tue, 14 Nov 2023 19:13:21 +0000
+! Diff-Path: ../patches/2023.11.14.1153.patch#ruadlist
+a3636 1
+||mediabrama.com^$third-party
+d4594 1
 a6268 1
 ||unbraceous.men^$third-party
+a10157 1
+||gazeta-misto.te.ua^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.googletagmanager.com *.io *.net *.org *.ru *.ua
 a10162 1
 ||index.minfin.com.ua^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.cloudflare.com *.dmca.com *.getsitecontrol.com *.googleapis.com *.googletagmanager.com *.trustpilot.com *.io *.net *.org *.ru *.ua
+d10534 1
+a10534 1
+/stargate*.$image,popup,xmlhttprequest,domain=bombafilms.ru|hlamer.ru
+d11535 2
+a11536 1
+||growhow.in.ua/wp-content/uploads/branding/
 d12467 1
 a12467 1
 ||povarenok.ru/css/*1.css$stylesheet
@@ -25,6 +36,9 @@ soccer365.com.ua,soccer365.ru###main_container > div[style^="position:"][style*=
 d14210 1
 a14210 1
 soccer365.com.ua,soccer365.ru###odds
+d14715 1
+a14715 1
+bombafilms.ru,hlamer.ru###video-container .overlay_video
 d14730 1
 a14730 1
 soccer365.com.ua,soccer365.ru###widget_bk
@@ -82,12 +96,15 @@ a20466 1
 d20571 1
 a20571 1
 soccer365.com.ua,soccer365.ru#?#div[class^="page_"][class$="_right"] div:-abp-has(> div[id]:empty ~ script)
+d20787 1
+a20787 1
+1news.com.ua,3porosenka.ru,5.ua,agrimpasa.com,belnovosti.by,compendium.su,dni24.com,golos.zp.ua,gorno-altaisk.info,grani21.ru,headinsider.net,imperiyanews.ru,ku66.ru,metronews.ru,mgorod.kz,molbuk.ua,narodna-pravda.ua,oane.ws,onedivision.ru,p-p.com.ua,primgazeta.ru,proufu.ru,radidomapro.ru,ria-m.tv,rifey.ru,risu.org.ua,rusdozor.ru,rusjev.net,segodnya.ua,sharij.net,smolensk-auto.ru,stockinfocus.ru,supercook.ru,svidok.online,telegraf.in.ua,uk.etcetera.media,ukrmir.info,uralpress.ru,valuta.online.ua,vchaspik.ua,vikka.ua,vlasti.net,volynnews.com,vringe.com,vse42.ru,xn--80acvefn6a4c.xn--p1ai,xsport.ua,zakon.kz,zwezda.net##div[id^="Zz"]
 d21053 1
 a21053 1
 soccer365.com.ua,soccer365.ru##div[style="height:200px"]
 d21799 1
 a21799 1
-pikabu.ru,sdamgia.ru##[data-container="outer"]
+pikabu.ru,sdamgia.ru##[data-container]
 d21801 1
 a21801 1
 pikabu.ru,sdamgia.ru##[data-name="partial-container"]
@@ -103,6 +120,12 @@ d22458 2
 a22468 1
 overclockers.ru##div[class*="pip-"]
 d26090 5
+a26643 2
+growhow.in.ua##body:style(background-color: inherit !important)
+! ---
+d26921 1
+a26921 1
+bombafilms.ru,hlamer.ru##body:style(background-color: #596c84 !important)
 a27367 2
 soccer365.com.ua,soccer365.ru##.header_top:style(padding-top: 0 !important)
 ! ---
@@ -119,6 +142,9 @@ dzen.ru##div[class*="article__"] > .undefined ~ div[class*="__middle"] > div[id]
 d27652 3
 a27654 1
 dzen.ru##div[id][class^="feed"] article[class*="_with-boder "]
+d28042 1
+a28042 1
+bombafilms.ru,freehat.cc,hlamer.ru,lostpix.com,potokcdn.com,prostoporno.help,saltday.ru,uploadimagex.com,wowskill.ru,xittv.net##+js(abort-on-property-read, open)
 a28087 1
 lenta.ru##+js(addEventListener-defuser, scroll, extra)
 d28090 1

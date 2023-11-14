@@ -1,10 +1,21 @@
-diff name:ruadlist lines:107 checksum:731c717a5b
+diff name:ruadlist lines:136 checksum:752dda548b
 d4 2
 a5 2
-! Last modified: Tue, 14 Nov 2023 13:24:13 +0000
-! Diff-Path: ../patches/2023.11.14.804.patch#ruadlist
+! Last modified: Tue, 14 Nov 2023 19:13:21 +0000
+! Diff-Path: ../patches/2023.11.14.1153.patch#ruadlist
+a3636 1
+||mediabrama.com^$third-party
+d4594 1
+a10158 1
+||gazeta-misto.te.ua^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.googletagmanager.com *.io *.net *.org *.ru *.ua
 a10163 1
 ||index.minfin.com.ua^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.cloudflare.com *.dmca.com *.getsitecontrol.com *.googleapis.com *.googletagmanager.com *.trustpilot.com *.io *.net *.org *.ru *.ua
+d10535 1
+a10535 1
+/stargate*.$image,popup,xmlhttprequest,domain=bombafilms.ru|hlamer.ru
+d11536 2
+a11537 1
+||growhow.in.ua/wp-content/uploads/branding/
 d12468 1
 a12468 1
 ||povarenok.ru/css/*1.css$stylesheet
@@ -23,6 +34,9 @@ soccer365.com.ua,soccer365.ru###main_container > div[style^="position:"][style*=
 d14211 1
 a14211 1
 soccer365.com.ua,soccer365.ru###odds
+d14716 1
+a14716 1
+bombafilms.ru,hlamer.ru###video-container .overlay_video
 d14731 1
 a14731 1
 soccer365.com.ua,soccer365.ru###widget_bk
@@ -74,9 +88,15 @@ a20467 1
 d20572 1
 a20572 1
 soccer365.com.ua,soccer365.ru#?#div[class^="page_"][class$="_right"] div:-abp-has(> div[id]:empty ~ script)
+d20788 1
+a20788 1
+1news.com.ua,3porosenka.ru,5.ua,agrimpasa.com,belnovosti.by,compendium.su,dni24.com,golos.zp.ua,gorno-altaisk.info,grani21.ru,headinsider.net,imperiyanews.ru,ku66.ru,metronews.ru,mgorod.kz,molbuk.ua,narodna-pravda.ua,oane.ws,onedivision.ru,p-p.com.ua,primgazeta.ru,proufu.ru,radidomapro.ru,ria-m.tv,rifey.ru,risu.org.ua,rusdozor.ru,rusjev.net,segodnya.ua,sharij.net,smolensk-auto.ru,stockinfocus.ru,supercook.ru,svidok.online,telegraf.in.ua,uk.etcetera.media,ukrmir.info,uralpress.ru,valuta.online.ua,vchaspik.ua,vikka.ua,vlasti.net,volynnews.com,vringe.com,vse42.ru,xn--80acvefn6a4c.xn--p1ai,xsport.ua,zakon.kz,zwezda.net##div[id^="Zz"]
 d21054 1
 a21054 1
 soccer365.com.ua,soccer365.ru##div[style="height:200px"]
+d21800 1
+a21800 1
+pikabu.ru,sdamgia.ru##[data-container]
 d21857 1
 a21857 1
 ! домены: hdrezka.ag,hdrezka.buzz,hdrezka.city,hdrezka.club,hdrezka.co,hdrezka.in,hdrezka.ink,hdrezka.loan,hdrezka.me,hdrezka.name,hdrezka.rest,hdrezka.run,hdrezka.sh,hdrezka.today,hdrezka.tv,hdrezka.vip,hdrezka.website,hdrezka.win,hdrezkapez.org,hdrezkapzm.org,hdrezkawer.org,kinopub.me,rezka-ua.tv,rezka.ag,rezkery.com,rezkify.com
@@ -87,6 +107,12 @@ d22460 2
 a22470 1
 overclockers.ru##div[class*="pip-"]
 d26092 5
+a26645 2
+growhow.in.ua##body:style(background-color: inherit !important)
+! ---
+d26923 1
+a26923 1
+bombafilms.ru,hlamer.ru##body:style(background-color: #596c84 !important)
 a27369 2
 soccer365.com.ua,soccer365.ru##.header_top:style(padding-top: 0 !important)
 ! ---
@@ -103,6 +129,9 @@ dzen.ru##div[class*="article__"] > .undefined ~ div[class*="__middle"] > div[id]
 d27654 3
 a27656 1
 dzen.ru##div[id][class^="feed"] article[class*="_with-boder "]
+d28044 1
+a28044 1
+bombafilms.ru,freehat.cc,hlamer.ru,lostpix.com,potokcdn.com,prostoporno.help,saltday.ru,uploadimagex.com,wowskill.ru,xittv.net##+js(abort-on-property-read, open)
 a28089 1
 lenta.ru##+js(addEventListener-defuser, scroll, extra)
 d28092 1

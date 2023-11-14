@@ -1,10 +1,21 @@
-diff name:ruadlist lines:78 checksum:731c717a5b
+diff name:ruadlist lines:107 checksum:752dda548b
 d4 2
 a5 2
-! Last modified: Tue, 14 Nov 2023 13:24:13 +0000
-! Diff-Path: ../patches/2023.11.14.804.patch#ruadlist
+! Last modified: Tue, 14 Nov 2023 19:13:21 +0000
+! Diff-Path: ../patches/2023.11.14.1153.patch#ruadlist
+a3636 1
+||mediabrama.com^$third-party
+d4594 1
+a10158 1
+||gazeta-misto.te.ua^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.googletagmanager.com *.io *.net *.org *.ru *.ua
 a10163 1
 ||index.minfin.com.ua^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.cloudflare.com *.dmca.com *.getsitecontrol.com *.googleapis.com *.googletagmanager.com *.trustpilot.com *.io *.net *.org *.ru *.ua
+d10535 1
+a10535 1
+/stargate*.$image,popup,xmlhttprequest,domain=bombafilms.ru|hlamer.ru
+d11536 2
+a11537 1
+||growhow.in.ua/wp-content/uploads/branding/
 d12468 1
 a12468 1
 ||povarenok.ru/css/*1.css$stylesheet
@@ -18,6 +29,9 @@ a13593 1
 scores24.live###app > div > .js-fixed-sensor + div
 d13942 2
 d14079 1
+d14717 1
+a14717 1
+bombafilms.ru,hlamer.ru###video-container .overlay_video
 d14879 1
 d14971 1
 a15227 1
@@ -51,6 +65,12 @@ a19897 1
 d20468 1
 a20468 1
 101.ru,46tv.ru,999.md,alau.kz,aldebaran.ru,asiarussia.ru,bezparazita.ru,botinok.porn,bountymax.ru,buzulukday.ru,calend.ru,chytomo.com,citydog.by,clubvolvo.ru,crazymailing.com,dnepr.info,dom2stars.ru,dota2.ru,gmod-fan.ru,gorod.dp.ua,gorod48.ru,gtavicecity.ru,hochu.ua,igry-online.net,infobank.by,internetua.com,kamchatinfo.com,kerchinfo.com,khersonline.net,kino-kingdom.com,klops.ru,kluch.media,kvnews.ru,lipetskmedia.ru,manga24.ru,mashintop.ru,mediaryazan.ru,menquestions.ru,mgorod.kz,modernrock.ru,moya-semya.ru,musicforums.ru,nlo-mir.ru,nn.ru,novostroev.ru,nsday.ru,ntr-24.ru,nv.ua,nversia.ru,onlineradiobox.com,orenday.ru,perevolockday.ru,pln-pskov.ru,ponedelnik.info,postovoy.net,ppt.ru,psm7.com,rtraveler.ru,saltday.ru,sevkavportal.ru,sorochinskday.ru,sovets.net,sovets24.ru,spark.ru,studfile.net,studfiles.net,subscribe.ru,telegraf.in.ua,the-village-kz.com,the-village.me,the-village.ru,tltonline.ru,topvideo.tj,torrents.in.ua,trisosny.ru,trymobile.ru,turkmenportal.com,tvzvezda.ru,ukrinform.ru,ura.news,vdvsn.ru,village.com.ua,vklybe.tv,vorle.ru,vse.sale,wincore.ru,womanhit.ru,worldofmods.ru,xn----7sbabrtfclecozdeg8b6a.xn--p1ai,yarik-sat.com,yarnews.net,zerno-ua.com,zhitomir.info,zn.ua,zoon.ru##div[class^="banner"]
+d20789 1
+a20789 1
+1news.com.ua,3porosenka.ru,5.ua,agrimpasa.com,belnovosti.by,compendium.su,dni24.com,golos.zp.ua,gorno-altaisk.info,grani21.ru,headinsider.net,imperiyanews.ru,ku66.ru,metronews.ru,mgorod.kz,molbuk.ua,narodna-pravda.ua,oane.ws,onedivision.ru,p-p.com.ua,primgazeta.ru,proufu.ru,radidomapro.ru,ria-m.tv,rifey.ru,risu.org.ua,rusdozor.ru,rusjev.net,segodnya.ua,sharij.net,smolensk-auto.ru,stockinfocus.ru,supercook.ru,svidok.online,telegraf.in.ua,uk.etcetera.media,ukrmir.info,uralpress.ru,valuta.online.ua,vchaspik.ua,vikka.ua,vlasti.net,volynnews.com,vringe.com,vse42.ru,xn--80acvefn6a4c.xn--p1ai,xsport.ua,zakon.kz,zwezda.net##div[id^="Zz"]
+d21801 1
+a21801 1
+pikabu.ru,sdamgia.ru##[data-container]
 d21858 1
 a21858 1
 ! домены: hdrezka.ag,hdrezka.buzz,hdrezka.city,hdrezka.club,hdrezka.co,hdrezka.in,hdrezka.ink,hdrezka.loan,hdrezka.me,hdrezka.name,hdrezka.rest,hdrezka.run,hdrezka.sh,hdrezka.today,hdrezka.tv,hdrezka.vip,hdrezka.website,hdrezka.win,hdrezkapez.org,hdrezkapzm.org,hdrezkawer.org,kinopub.me,rezka-ua.tv,rezka.ag,rezkery.com,rezkify.com
@@ -61,6 +81,12 @@ d22461 2
 a22471 1
 overclockers.ru##div[class*="pip-"]
 d26093 5
+a26646 2
+growhow.in.ua##body:style(background-color: inherit !important)
+! ---
+d26924 1
+a26924 1
+bombafilms.ru,hlamer.ru##body:style(background-color: #596c84 !important)
 d27470 2
 a27471 2
 the-village-kz.com,the-village.me,the-village.ru,village.com.ua##.page-content:style(background-color: inherit !important)
@@ -74,6 +100,9 @@ dzen.ru##div[class*="article__"] > .undefined ~ div[class*="__middle"] > div[id]
 d27657 3
 a27659 1
 dzen.ru##div[id][class^="feed"] article[class*="_with-boder "]
+d28047 1
+a28047 1
+bombafilms.ru,freehat.cc,hlamer.ru,lostpix.com,potokcdn.com,prostoporno.help,saltday.ru,uploadimagex.com,wowskill.ru,xittv.net##+js(abort-on-property-read, open)
 a28092 1
 lenta.ru##+js(addEventListener-defuser, scroll, extra)
 d28095 1

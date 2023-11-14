@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 14 Nov 2023 13:24:13 +0000
-! Diff-Path: ../patches/2023.11.14.804.patch#ruadlist
+! Last modified: Tue, 14 Nov 2023 19:13:21 +0000
+! Diff-Path: ../patches/2023.11.14.1153.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -3634,6 +3634,7 @@
 ||media.adrcdn.com^
 ||media.kahoxa.ru^$third-party
 ||mediaboom.site^$third-party
+||mediabrama.com^$third-party
 ||mediacot.com^
 ||mediadar.ru^
 ||mediadirectory.net^$third-party
@@ -4591,7 +4592,6 @@
 ||play4victory.net^$third-party
 ||playframe.ru^$third-party
 ||playjusting.com^$third-party
-||playmatic.video^$third-party
 ||playvulkanonline.net^$third-party
 ||pldrag.ru^$third-party
 ||pleasedonotban.ru^$third-party
@@ -10156,6 +10156,7 @@ agrarii-razom.com.ua##div[id^="user-to-register"]
 ||folltiz.site^$csp=script-src
 ||forum.ru-board.com/*.cgi?*=5&topic=51141$csp=img-src 'self' addons.mozilla.org raw.githubusercontent.com
 ||forum.ruboard.ru^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: *.google.com/recaptcha/ *.googletagmanager.com *.gstatic.com/recaptcha/ *.sendpulse.com *.threadloom.com
+||gazeta-misto.te.ua^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.googletagmanager.com *.io *.net *.org *.ru *.ua
 ||gdz-ru.work/subscribe/$csp=sandbox allow-same-origin;
 ||hawk.live/$csp=sandbox allow-same-origin;
 ||icon-icons.com/ru/$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: *.googleapis.com apis.google.com  *.googletagmanager.com *.google.com/recaptcha/ *.gstatic.com *.icon-icons.com *.jquery.com *.io *.net *.org
@@ -10533,7 +10534,7 @@ $xmlhttprequest,domain=happy-biock.info|happy-block.info|howto-news.info|mschist
 /service/display/|$script,domain=povarenok.ru|stranamam.ru
 /site/showbanner/*$domain=latifundist.com
 /sm\.news/[^\s]{80,}/$script,domain=sm.news
-/stargate*.$image,popup,xmlhttprequest,domain=hlamer.ru|oveg.ru
+/stargate*.$image,popup,xmlhttprequest,domain=bombafilms.ru|hlamer.ru
 /static/banners/*$domain=gagadget.com|maxpark.com|vse-sto.com.ua
 /static/js/build/adidas.min.js$domain=auto43.ru|dom43.ru|gorodkirov.ru|job43.ru
 /storage/banners/*$domain=1sn.ru|banki.loans|sportliga.com
@@ -11534,8 +11535,7 @@ lada.kz/uploads/banners/
 ||grani.ru/files/$object
 ||grani21.ru/work/
 ||grippua.com.ua/wp-content/uploads/*/ma.jpg
-||growhow.in.ua/wp-content/uploads/*/test$image
-||growhow.in.ua/wp-content/uploads/*cover$image
+||growhow.in.ua/wp-content/uploads/branding/
 ||gsmbaza.ru/images/ownpictures/
 ||gsmforum.ru/images/ownpictures/
 ||gstatic.com/charts/*/loader.js|$script,domain=finget.ru
@@ -14712,7 +14712,7 @@ delovoy-kirov.ru###uzhanina
 heregirl.ru,ledilana.ru###vgtrk_bottom
 virusinfo.info###vi_ad
 virusinfo.info###vi_adlink
-hlamer.ru,oveg.ru###video-container .overlay_video
+bombafilms.ru,hlamer.ru###video-container .overlay_video
 ivi.ru###video-flack
 videonews.club###video_bootom
 enter.az###videorekframe
@@ -20781,7 +20781,7 @@ moydrygpk.ru##div[id^="PM_rotator"]
 forum.developing.ru##div[id^="SRTB_"]
 browserss.ru##div[id^="SlideShow"]
 inpearls.ru##div[id^="TM_"]
-1news.com.ua,3porosenka.ru,5.ua,agrimpasa.com,belnovosti.by,compendium.su,dni24.com,golos.zp.ua,gorno-altaisk.info,grani21.ru,headinsider.net,hlamer.ru,imperiyanews.ru,ku66.ru,metronews.ru,mgorod.kz,molbuk.ua,narodna-pravda.ua,oane.ws,onedivision.ru,p-p.com.ua,primgazeta.ru,proufu.ru,radidomapro.ru,ria-m.tv,rifey.ru,risu.org.ua,rusdozor.ru,rusjev.net,segodnya.ua,sharij.net,smolensk-auto.ru,stockinfocus.ru,supercook.ru,svidok.online,telegraf.in.ua,uk.etcetera.media,ukrmir.info,uralpress.ru,valuta.online.ua,vchaspik.ua,vikka.ua,vlasti.net,volynnews.com,vringe.com,vse42.ru,xn--80acvefn6a4c.xn--p1ai,xsport.ua,zakon.kz,zwezda.net##div[id^="Zz"]
+1news.com.ua,3porosenka.ru,5.ua,agrimpasa.com,belnovosti.by,compendium.su,dni24.com,golos.zp.ua,gorno-altaisk.info,grani21.ru,headinsider.net,imperiyanews.ru,ku66.ru,metronews.ru,mgorod.kz,molbuk.ua,narodna-pravda.ua,oane.ws,onedivision.ru,p-p.com.ua,primgazeta.ru,proufu.ru,radidomapro.ru,ria-m.tv,rifey.ru,risu.org.ua,rusdozor.ru,rusjev.net,segodnya.ua,sharij.net,smolensk-auto.ru,stockinfocus.ru,supercook.ru,svidok.online,telegraf.in.ua,uk.etcetera.media,ukrmir.info,uralpress.ru,valuta.online.ua,vchaspik.ua,vikka.ua,vlasti.net,volynnews.com,vringe.com,vse42.ru,xn--80acvefn6a4c.xn--p1ai,xsport.ua,zakon.kz,zwezda.net##div[id^="Zz"]
 ppt-online.org##div[id^="ab_"]
 inbox.lt,inbox.lv##div[id^="ad-id_"]
 textarchive.ru##div[id^="ad_"]
@@ -21793,7 +21793,7 @@ pikabu.ru##.stories-feed__container > .story[data-recom-coef] ~ .story:not([data
 pikabu.ru##.stories-feed__container > .story_tags-at-top ~ :not(.story_tags-at-top)
 dracon-zet.ru,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 android-mafia.com,game4you.top,games-pc.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##:not(this-site-promotes-malware)
-pikabu.ru,sdamgia.ru##[data-container="outer"]
+pikabu.ru,sdamgia.ru##[data-container]
 pikabu.ru##[data-name*="banner"]
 pikabu.ru,sdamgia.ru##[data-name="partial-container"]
 pikabu.ru#?#aside > .sidebar-block:-abp-has(> div[id])
@@ -26633,6 +26633,8 @@ glavpost.ua###navbar:style(position: relative !important)
 ! ---
 glavred.info,glavred.net##.newsfeed:style(height: auto !important)
 ! ---
+growhow.in.ua##body:style(background-color: inherit !important)
+! ---
 goclips.tv##.video_content:style(height: auto !important)
 ! ---
 goha.ru##.layout-menu-header__links span[class*="pulse"]::before:style(animation: none !important)
@@ -26910,7 +26912,7 @@ kp.kg,kp.kz,kp.md,kp.ru##body > #app [data-branding-wrapper]:style(padding-top: 
 kp.kg,kp.kz,kp.md,kp.ru##body > #app div[style="display:block !important"] > div:first-child > div:first-child + div > div:first-child + div > div[data-name]:first-child + div:style(margin-top: auto !important)
 ! ---
 ! krasview.ru - зеркала
-hlamer.ru,oveg.ru##body:style(background-color: #596c84 !important)
+bombafilms.ru,hlamer.ru##body:style(background-color: #596c84 !important)
 ! ---
 kriminal.net.ua,news.dn.ua###popup-manager.popup-show
 kriminal.net.ua,news.dn.ua###popup-manager.popup-show + #layout:style(-webkit-filter: none !important; filter: none !important)
@@ -28031,7 +28033,7 @@ anime-chan.me##+js(abort-on-property-read, move_string)
 city.ogo.ua##+js(abort-on-property-read, myatu_bgm)
 kolizhanka.com.ua##+js(abort-on-property-read, nocontext)
 it-actual.ru##+js(abort-on-property-read, onload)
-freehat.cc,hlamer.ru,lostpix.com,oveg.ru,potokcdn.com,prostoporno.help,saltday.ru,uploadimagex.com,wowskill.ru,xittv.net##+js(abort-on-property-read, open)
+bombafilms.ru,freehat.cc,hlamer.ru,lostpix.com,potokcdn.com,prostoporno.help,saltday.ru,uploadimagex.com,wowskill.ru,xittv.net##+js(abort-on-property-read, open)
 sm.news##+js(abort-on-property-read, preventSelection)
 tapochek.net##+js(abort-on-property-read, setsnow)
 anime-chan.me##+js(abort-on-property-read, sparkle)

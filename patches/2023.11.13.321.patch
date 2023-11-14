@@ -1,13 +1,24 @@
-diff name:ruadlist lines:76 checksum:731c717a5b
+diff name:ruadlist lines:105 checksum:752dda548b
 d4 2
 a5 2
-! Last modified: Tue, 14 Nov 2023 13:24:13 +0000
-! Diff-Path: ../patches/2023.11.14.804.patch#ruadlist
+! Last modified: Tue, 14 Nov 2023 19:13:21 +0000
+! Diff-Path: ../patches/2023.11.14.1153.patch#ruadlist
+a3636 1
+||mediabrama.com^$third-party
+d4594 1
+a10158 1
+||gazeta-misto.te.ua^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.googletagmanager.com *.io *.net *.org *.ru *.ua
 a10163 1
 ||index.minfin.com.ua^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.cloudflare.com *.dmca.com *.getsitecontrol.com *.googleapis.com *.googletagmanager.com *.trustpilot.com *.io *.net *.org *.ru *.ua
+d10535 1
+a10535 1
+/stargate*.$image,popup,xmlhttprequest,domain=bombafilms.ru|hlamer.ru
 d11018 1
 a11018 1
 ||bumaikr.com^$subdocument,domain=3dnews.kz|3dnews.ru
+d11536 2
+a11537 1
+||growhow.in.ua/wp-content/uploads/branding/
 d12468 1
 a12468 1
 ||povarenok.ru/css/*1.css$stylesheet
@@ -21,6 +32,9 @@ a13593 1
 scores24.live###app > div > .js-fixed-sensor + div
 d13942 2
 d14079 1
+d14717 1
+a14717 1
+bombafilms.ru,hlamer.ru###video-container .overlay_video
 d14879 1
 d14971 1
 d16077 1
@@ -48,12 +62,24 @@ d19613 1
 d19894 1
 a19898 1
 3dnews.kz,3dnews.ru##a[title^="3DNews"][title*="Дзен"]
+d20790 1
+a20790 1
+1news.com.ua,3porosenka.ru,5.ua,agrimpasa.com,belnovosti.by,compendium.su,dni24.com,golos.zp.ua,gorno-altaisk.info,grani21.ru,headinsider.net,imperiyanews.ru,ku66.ru,metronews.ru,mgorod.kz,molbuk.ua,narodna-pravda.ua,oane.ws,onedivision.ru,p-p.com.ua,primgazeta.ru,proufu.ru,radidomapro.ru,ria-m.tv,rifey.ru,risu.org.ua,rusdozor.ru,rusjev.net,segodnya.ua,sharij.net,smolensk-auto.ru,stockinfocus.ru,supercook.ru,svidok.online,telegraf.in.ua,uk.etcetera.media,ukrmir.info,uralpress.ru,valuta.online.ua,vchaspik.ua,vikka.ua,vlasti.net,volynnews.com,vringe.com,vse42.ru,xn--80acvefn6a4c.xn--p1ai,xsport.ua,zakon.kz,zwezda.net##div[id^="Zz"]
+d21802 1
+a21802 1
+pikabu.ru,sdamgia.ru##[data-container]
 d21859 1
 a21859 1
 ! домены: hdrezka.ag,hdrezka.buzz,hdrezka.city,hdrezka.club,hdrezka.co,hdrezka.in,hdrezka.ink,hdrezka.loan,hdrezka.me,hdrezka.name,hdrezka.rest,hdrezka.run,hdrezka.sh,hdrezka.today,hdrezka.tv,hdrezka.vip,hdrezka.website,hdrezka.win,hdrezkapez.org,hdrezkapzm.org,hdrezkawer.org,kinopub.me,rezka-ua.tv,rezka.ag,rezkery.com,rezkify.com
 a22185 1
 pogoda.mail.ru##div[data-logger="partnerNews"]
 d26092 5
+a26645 2
+growhow.in.ua##body:style(background-color: inherit !important)
+! ---
+d26923 1
+a26923 1
+bombafilms.ru,hlamer.ru##body:style(background-color: #596c84 !important)
 d27640 1
 a27640 1
 dzen.ru##[class*="Floors"] div[id][class^="feed"] [class*="wrapper"][aria-label] ~ [class*="wrapper"]:not([aria-label])
@@ -69,6 +95,9 @@ a27914 1
 d27993 1
 a27993 1
 3dnews.kz,3dnews.ru,avtovzglyad.ru,baby.ru,dni.ru,mamba.ru,pikabu.ru,pogoda.onliner.by,selflib.me,sm.news,sports.ru,tech.onliner.by,www.goha.ru##+js(abort-on-property-read, Ya)
+d28046 1
+a28046 1
+bombafilms.ru,freehat.cc,hlamer.ru,lostpix.com,potokcdn.com,prostoporno.help,saltday.ru,uploadimagex.com,wowskill.ru,xittv.net##+js(abort-on-property-read, open)
 d28229 1
 a28229 1
 3dnews.kz,3dnews.ru,vm.ru##+js(set-constant, Object.prototype.playVideo, noopFunc)
