@@ -1,8 +1,8 @@
-diff name:ruadlist lines:159 checksum:5863198ab7
+diff name:ruadlist lines:162 checksum:12ac1986bc
 d4 2
 a5 2
-! Last modified: Wed, 15 Nov 2023 12:38:12 +0000
-! Diff-Path: ../patches/2023.11.15.758.patch#ruadlist
+! Last modified: Wed, 15 Nov 2023 18:23:34 +0000
+! Diff-Path: ../patches/2023.11.15.1103.patch#ruadlist
 a3636 1
 ||mediabrama.com^$third-party
 d4594 1
@@ -23,7 +23,7 @@ d12739 2
 a12740 1
 ||scores24.live/tvsv/
 a12830 1
-||softportal.com/*.abc|$xmlhttprequest,domain=softportal.com
+||softportal.com/*.abc$xmlhttprequest,domain=softportal.com
 d12833 1
 a13593 1
 scores24.live###app > div > .js-fixed-sensor + div
@@ -111,6 +111,8 @@ pikabu.ru,sdamgia.ru##[data-container]
 d21802 1
 a21802 1
 pikabu.ru,sdamgia.ru##[data-name="partial-container"]
+a21806 1
+pikabu.ru,sdamgia.ru##div:first-child > div:first-child:empty + style + div
 a21810 1
 sdamgia.ru##div[style*="important;"][style*="width:"][style*="height:"] *
 d21856 1
@@ -140,9 +142,10 @@ d27637 1
 a27637 1
 dzen.ru##[class*="Floors"] div[id][class^="feed"] [class*="wrapper"][aria-label] ~ [class*="wrapper"]:not([aria-label])
 d27644 1
-a27644 2
+a27644 3
 dzen.ru##div[class*="article__"] > .undefined ~ div[class*="__middle"] > div[id][class]
 dzen.ru##div[class*="bannerMain"]
+dzen.ru##div[class*="geo-and-currency-widget__hasBanner"] div[class*="underWidget"]
 d27647 1
 d27653 3
 a27655 1

@@ -1,8 +1,8 @@
-diff name:ruadlist lines:154 checksum:5863198ab7
+diff name:ruadlist lines:157 checksum:12ac1986bc
 d4 2
 a5 2
-! Last modified: Wed, 15 Nov 2023 12:38:12 +0000
-! Diff-Path: ../patches/2023.11.15.758.patch#ruadlist
+! Last modified: Wed, 15 Nov 2023 18:23:34 +0000
+! Diff-Path: ../patches/2023.11.15.1103.patch#ruadlist
 a3636 1
 ||mediabrama.com^$third-party
 d4594 1
@@ -23,7 +23,7 @@ d12739 2
 a12740 1
 ||scores24.live/tvsv/
 a12830 1
-||softportal.com/*.abc|$xmlhttprequest,domain=softportal.com
+||softportal.com/*.abc$xmlhttprequest,domain=softportal.com
 d12833 1
 a13593 1
 scores24.live###app > div > .js-fixed-sensor + div
@@ -108,6 +108,8 @@ soccer365.com.ua,soccer365.ru##div[style="height:200px"]
 d21800 1
 a21800 1
 pikabu.ru,sdamgia.ru##[data-container]
+a21806 1
+pikabu.ru,sdamgia.ru##div:first-child > div:first-child:empty + style + div
 d21857 1
 a21857 1
 ! домены: hdrezka.ag,hdrezka.buzz,hdrezka.city,hdrezka.club,hdrezka.co,hdrezka.in,hdrezka.ink,hdrezka.loan,hdrezka.me,hdrezka.name,hdrezka.rest,hdrezka.run,hdrezka.sh,hdrezka.today,hdrezka.tv,hdrezka.vip,hdrezka.website,hdrezka.win,hdrezkapez.org,hdrezkapzm.org,hdrezkawer.org,kinopub.me,rezka-ua.tv,rezka.ag,rezkery.com,rezkify.com
@@ -135,9 +137,10 @@ d27638 1
 a27638 1
 dzen.ru##[class*="Floors"] div[id][class^="feed"] [class*="wrapper"][aria-label] ~ [class*="wrapper"]:not([aria-label])
 d27645 1
-a27645 2
+a27645 3
 dzen.ru##div[class*="article__"] > .undefined ~ div[class*="__middle"] > div[id][class]
 dzen.ru##div[class*="bannerMain"]
+dzen.ru##div[class*="geo-and-currency-widget__hasBanner"] div[class*="underWidget"]
 d27648 1
 d27654 3
 a27656 1

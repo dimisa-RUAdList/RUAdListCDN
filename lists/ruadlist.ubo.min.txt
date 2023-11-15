@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 15 Nov 2023 12:38:12 +0000
-! Diff-Path: ../patches/2023.11.15.758.patch#ruadlist
+! Last modified: Wed, 15 Nov 2023 18:23:34 +0000
+! Diff-Path: ../patches/2023.11.15.1103.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -12828,7 +12828,7 @@ lada.kz/uploads/banners/
 ||soft.sibnet.ru/dist/js/ya-pack_banners.js
 ||soft4xp.ru/rss_news.php
 ||softoroom.net/2pclick/
-||softportal.com/*.abc|$xmlhttprequest,domain=softportal.com
+||softportal.com/*.abc$xmlhttprequest,domain=softportal.com
 ||softportal.com/*.html|$xmlhttprequest,domain=softportal.com
 ||softportal.com/*.htm|$xmlhttprequest,domain=softportal.com
 ||softportal.com/img/qwer.
@@ -21801,6 +21801,7 @@ pikabu.ru#?#aside > .sidebar-block:-abp-has(> div[id])
 kp.kg,kp.kz,kp.md,kp.ru#?#body > #app div:-abp-properties(background-color: rgb(225, 231, 235))
 www.e1.ru#?#body > script[src^="https://www.e1.ru/"] ~ #app [itemprop] > figure:-abp-has(span:-abp-contains(чуть-чуть и видео загрузится))
 cq.ru#?#div:-abp-properties(content: "Реклама")
+pikabu.ru,sdamgia.ru##div:first-child > div:first-child:empty + style + div
 pogoda.onliner.by,tech.onliner.by##div[class*="_fixed-height"]
 pikabu.ru##div[href]
 rg.ru##div[id][class*="__"]:empty
@@ -27639,6 +27640,7 @@ dzen.ru##div[aria-label="Карточка рекомендованного ви�
 dzen.ru##div[aria-label="Карточка рекомендованного видео"] ~ div:not([aria-label="Карточка рекомендованного видео"]) > div[id][class]
 dzen.ru##div[class*="article__"] > .undefined ~ div[class*="__middle"] > div[id][class]
 dzen.ru##div[class*="bannerMain"]
+dzen.ru##div[class*="geo-and-currency-widget__hasBanner"] div[class*="underWidget"]
 dzen.ru##div[class*="video-viewer-sidebar__ad"]
 dzen.ru##div[class*="videoCardAd"]
 dzen.ru##div[class^="dzen-desktop__link_bro-"]

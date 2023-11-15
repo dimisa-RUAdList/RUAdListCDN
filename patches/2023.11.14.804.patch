@@ -1,8 +1,8 @@
-diff name:ruadlist lines:43 checksum:5863198ab7
+diff name:ruadlist lines:49 checksum:12ac1986bc
 d4 2
 a5 2
-! Last modified: Wed, 15 Nov 2023 12:38:12 +0000
-! Diff-Path: ../patches/2023.11.15.758.patch#ruadlist
+! Last modified: Wed, 15 Nov 2023 18:23:34 +0000
+! Diff-Path: ../patches/2023.11.15.1103.patch#ruadlist
 a3636 1
 ||mediabrama.com^$third-party
 d4594 1
@@ -14,6 +14,9 @@ a10536 1
 d11537 2
 a11538 1
 ||growhow.in.ua/wp-content/uploads/branding/
+d12831 1
+a12831 1
+||softportal.com/*.abc$xmlhttprequest,domain=softportal.com
 d14715 1
 a14715 1
 bombafilms.ru,hlamer.ru###video-container .overlay_video
@@ -28,14 +31,17 @@ a20784 1
 d21796 1
 a21796 1
 pikabu.ru,sdamgia.ru##[data-container]
+a21802 1
+pikabu.ru,sdamgia.ru##div:first-child > div:first-child:empty + style + div
 a26635 2
 growhow.in.ua##body:style(background-color: inherit !important)
 ! ---
 d26913 1
 a26913 1
 bombafilms.ru,hlamer.ru##body:style(background-color: #596c84 !important)
-a27637 1
+a27637 2
 dzen.ru##div[class*="bannerMain"]
+dzen.ru##div[class*="geo-and-currency-widget__hasBanner"] div[class*="underWidget"]
 d27640 1
 d28034 1
 a28034 1
