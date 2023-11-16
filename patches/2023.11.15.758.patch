@@ -1,12 +1,34 @@
-diff name:ruadlist lines:11 checksum:2c2554ffe7
+diff name:ruadlist lines:33 checksum:37e0c72dfc
 d4 2
 a5 2
-! Last modified: Thu, 16 Nov 2023 06:26:27 +0000
-! Diff-Path: ../patches/2023.11.16.386.patch#ruadlist
+! Last modified: Thu, 16 Nov 2023 12:38:23 +0000
+! Diff-Path: ../patches/2023.11.16.758.patch#ruadlist
+a8582 1
+##a[href*="://lobar.site/r/"]
+a10155 1
+||findhow.org^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: cse.google.com *.google.com/cse/ *.googleapis.com *.googletagmanager.com translate.google.com *.dev *.io *.net *.org
 d12831 1
 a12831 1
 ||softportal.com/*.abc$xmlhttprequest,domain=softportal.com
-a21803 1
-pikabu.ru,sdamgia.ru##div:first-child > div:first-child:empty + style + div
+d19374 1
+a21782 1
+pikabu.ru##.page-story__before-comments div[style=""]
+a21802 1
+sdamgia.ru##center > div[id][style]
+a21804 1
+sdamgia.ru##div[class^="google_ad_left"]
+a21806 1
+sdamgia.ru##div[id^="yandex_vario"]
+d23008 2
 a27641 1
 dzen.ru##div[class*="geo-and-currency-widget__hasBanner"] div[class*="underWidget"]
+d27658 1
+a27658 1
+ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.DirectInline
+d27660 5
+a27664 5
+ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##div[class*="Images"] .SimpleSkeleton
+ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##div[id*="Images"] .SimpleSkeleton
+! обфускация
+ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.MediaViewer div[class*="_filled"]
+ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.SerpPage div[class*="_filled"]

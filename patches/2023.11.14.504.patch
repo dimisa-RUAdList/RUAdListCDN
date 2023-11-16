@@ -1,11 +1,15 @@
-diff name:ruadlist lines:51 checksum:2c2554ffe7
+diff name:ruadlist lines:73 checksum:37e0c72dfc
 d4 2
 a5 2
-! Last modified: Thu, 16 Nov 2023 06:26:27 +0000
-! Diff-Path: ../patches/2023.11.16.386.patch#ruadlist
+! Last modified: Thu, 16 Nov 2023 12:38:23 +0000
+! Diff-Path: ../patches/2023.11.16.758.patch#ruadlist
 a3636 1
 ||mediabrama.com^$third-party
 d4594 1
+a8582 1
+##a[href*="://lobar.site/r/"]
+a10155 1
+||findhow.org^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: cse.google.com *.google.com/cse/ *.googleapis.com *.googletagmanager.com translate.google.com *.dev *.io *.net *.org
 a10158 1
 ||gazeta-misto.te.ua^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.googletagmanager.com *.io *.net *.org *.ru *.ua
 a10163 1
@@ -27,14 +31,22 @@ ukrinform.ua##.socialBlockSlide
 d19241 1
 a19241 1
 prostomob.com##a[href*="://s.zbanx.com/r/"]
+d19372 1
 d20783 1
 a20783 1
 1news.com.ua,3porosenka.ru,5.ua,agrimpasa.com,belnovosti.by,compendium.su,dni24.com,golos.zp.ua,gorno-altaisk.info,grani21.ru,headinsider.net,imperiyanews.ru,ku66.ru,metronews.ru,mgorod.kz,molbuk.ua,narodna-pravda.ua,oane.ws,onedivision.ru,p-p.com.ua,primgazeta.ru,proufu.ru,radidomapro.ru,ria-m.tv,rifey.ru,risu.org.ua,rusdozor.ru,rusjev.net,segodnya.ua,sharij.net,smolensk-auto.ru,stockinfocus.ru,supercook.ru,svidok.online,telegraf.in.ua,uk.etcetera.media,ukrmir.info,uralpress.ru,valuta.online.ua,vchaspik.ua,vikka.ua,vlasti.net,volynnews.com,vringe.com,vse42.ru,xn--80acvefn6a4c.xn--p1ai,xsport.ua,zakon.kz,zwezda.net##div[id^="Zz"]
+a21780 1
+pikabu.ru##.page-story__before-comments div[style=""]
 d21795 1
 a21795 1
 pikabu.ru,sdamgia.ru##[data-container]
-a21801 1
-pikabu.ru,sdamgia.ru##div:first-child > div:first-child:empty + style + div
+a21800 1
+sdamgia.ru##center > div[id][style]
+a21802 1
+sdamgia.ru##div[class^="google_ad_left"]
+a21804 1
+sdamgia.ru##div[id^="yandex_vario"]
+d23006 2
 a26634 2
 growhow.in.ua##body:style(background-color: inherit !important)
 ! ---
@@ -45,6 +57,16 @@ a27636 2
 dzen.ru##div[class*="bannerMain"]
 dzen.ru##div[class*="geo-and-currency-widget__hasBanner"] div[class*="underWidget"]
 d27639 1
+d27654 1
+a27654 1
+ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.DirectInline
+d27656 5
+a27660 5
+ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##div[class*="Images"] .SimpleSkeleton
+ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##div[id*="Images"] .SimpleSkeleton
+! обфускация
+ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.MediaViewer div[class*="_filled"]
+ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.SerpPage div[class*="_filled"]
 d28033 1
 a28033 1
 bombafilms.ru,freehat.cc,hlamer.ru,lostpix.com,potokcdn.com,prostoporno.help,saltday.ru,uploadimagex.com,wowskill.ru,xittv.net##+js(abort-on-property-read, open)

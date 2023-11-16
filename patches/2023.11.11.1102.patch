@@ -1,11 +1,15 @@
-diff name:ruadlist lines:148 checksum:2c2554ffe7
+diff name:ruadlist lines:170 checksum:37e0c72dfc
 d4 2
 a5 2
-! Last modified: Thu, 16 Nov 2023 06:26:27 +0000
-! Diff-Path: ../patches/2023.11.16.386.patch#ruadlist
+! Last modified: Thu, 16 Nov 2023 12:38:23 +0000
+! Diff-Path: ../patches/2023.11.16.758.patch#ruadlist
 a3636 1
 ||mediabrama.com^$third-party
 d4594 1
+a8582 1
+##a[href*="://lobar.site/r/"]
+a10155 1
+||findhow.org^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: cse.google.com *.google.com/cse/ *.googleapis.com *.googletagmanager.com translate.google.com *.dev *.io *.net *.org
 a10158 1
 ||gazeta-misto.te.ua^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.googletagmanager.com *.io *.net *.org *.ru *.ua
 a10163 1
@@ -80,6 +84,7 @@ prostomob.com##a[href*="://s.zbanx.com/r/"]
 d19326 1
 a19326 1
 allhockey.ru,sovsport.ru##a[href*="fonbet.ru"]
+d19376 1
 d19432 1
 a19432 1
 1plus1.video,1snau.ru,4pda.to,7dach.ru,abw.by,agronews.ua,allbasketball.org,animaunt.org,animedia.tv,anistar.org,app2top.ru,aqua-therm.ru,arsenaltula.ru,astar.bz,autoreview.ru,bez-smenki.ru,cartoonka.art,cy-pr.com,darkermagazine.ru,enovosty.com,euro-football.ru,festima.ru,fishki.net,football.ua,forum.watch.ru,gazeta.uz,gdz.ru,glavagronom.ru,glavpahar.ru,gnatkovsky.com.ua,grippua.com.ua,gsminfo.com.ua,horrorzone.ru,inforeactor.ru,junona.pro,landlord.ua,lgoty-vsem.ru,liveresult.ru,med2.ru,meteo-tv.ru,mezha.media,multmania.club,nachasi.com,news.sportbox.ru,nim.ru,online-star.org,online-stars.org,orelgrad.ru,playground.ru,playmaker24.ru,point.md,pr-cy.ru,prodota.ru,proglib.io,prosports.kg,prosports.kz,riafan.ru,russorosso.ru,rusvesna.su,shkole.net,silver.ru,smartpress.by,solncevo.info,sostav.ua,sovetromantica.com,sovsport.ru,spafilms.me,sport-express.ru,sport-tv.by,sportsdaily.ru,stratege.ru,tayga.info,thg.ru,topvideo.tj,tt-cup.com,tvmag.ru,uoor.com.ua,val.ua,vandrouki.by,vashurok.ru,vc.ru,vgr.by,vjazhi.ru,vmgu.ru,volnorez.com.ua,www.film.ru,www.fontanka.ru,www.khl.ru,www.zoneofgames.ru,yap.ru,yaplakal.com,zakon.kz##a[href*="utm_campai"]
@@ -99,11 +104,17 @@ a20788 1
 d21054 1
 a21054 1
 soccer365.com.ua,soccer365.ru##div[style="height:200px"]
+a21785 1
+pikabu.ru##.page-story__before-comments div[style=""]
 d21800 1
 a21800 1
 pikabu.ru,sdamgia.ru##[data-container]
-a21806 1
-pikabu.ru,sdamgia.ru##div:first-child > div:first-child:empty + style + div
+a21805 1
+sdamgia.ru##center > div[id][style]
+a21807 1
+sdamgia.ru##div[class^="google_ad_left"]
+a21809 1
+sdamgia.ru##div[id^="yandex_vario"]
 d21857 1
 a21857 1
 ! домены: hdrezka.ag,hdrezka.buzz,hdrezka.city,hdrezka.club,hdrezka.co,hdrezka.in,hdrezka.ink,hdrezka.loan,hdrezka.me,hdrezka.name,hdrezka.rest,hdrezka.run,hdrezka.sh,hdrezka.today,hdrezka.tv,hdrezka.vip,hdrezka.website,hdrezka.win,hdrezkapez.org,hdrezkapzm.org,hdrezkawer.org,kinopub.me,rezka-ua.tv,rezka.ag,rezkery.com,rezkify.com
@@ -113,6 +124,7 @@ d22458 1
 d22460 2
 a22470 1
 overclockers.ru##div[class*="pip-"]
+d23012 2
 d26092 5
 a26645 2
 growhow.in.ua##body:style(background-color: inherit !important)
@@ -139,6 +151,16 @@ d27648 1
 d27654 3
 a27656 1
 dzen.ru##div[id][class^="feed"] article[class*="_with-boder "]
+d27665 1
+a27665 1
+ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.DirectInline
+d27667 5
+a27671 5
+ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##div[class*="Images"] .SimpleSkeleton
+ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##div[id*="Images"] .SimpleSkeleton
+! обфускация
+ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.MediaViewer div[class*="_filled"]
+ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.SerpPage div[class*="_filled"]
 d28044 1
 a28044 1
 bombafilms.ru,freehat.cc,hlamer.ru,lostpix.com,potokcdn.com,prostoporno.help,saltday.ru,uploadimagex.com,wowskill.ru,xittv.net##+js(abort-on-property-read, open)

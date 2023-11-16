@@ -1,5 +1,30 @@
-diff name:ruadlist lines:4 checksum:2c2554ffe7
+diff name:ruadlist lines:29 checksum:37e0c72dfc
 d4 2
 a5 2
-! Last modified: Thu, 16 Nov 2023 06:26:27 +0000
-! Diff-Path: ../patches/2023.11.16.386.patch#ruadlist
+! Last modified: Thu, 16 Nov 2023 12:38:23 +0000
+! Diff-Path: ../patches/2023.11.16.758.patch#ruadlist
+a8582 1
+##a[href*="://lobar.site/r/"]
+a10155 1
+||findhow.org^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: cse.google.com *.google.com/cse/ *.googleapis.com *.googletagmanager.com translate.google.com *.dev *.io *.net *.org
+d19374 1
+a21782 1
+pikabu.ru##.page-story__before-comments div[style=""]
+a21802 1
+sdamgia.ru##center > div[id][style]
+d21804 1
+a21805 1
+sdamgia.ru##div[class^="google_ad_left"]
+a21807 1
+sdamgia.ru##div[id^="yandex_vario"]
+d23009 2
+d27660 1
+a27660 1
+ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.DirectInline
+d27662 5
+a27666 5
+ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##div[class*="Images"] .SimpleSkeleton
+ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##div[id*="Images"] .SimpleSkeleton
+! обфускация
+ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.MediaViewer div[class*="_filled"]
+ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.SerpPage div[class*="_filled"]
