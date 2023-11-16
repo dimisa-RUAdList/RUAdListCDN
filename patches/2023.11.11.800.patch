@@ -1,8 +1,8 @@
-diff name:ruadlist lines:179 checksum:37e0c72dfc
+diff name:ruadlist lines:190 checksum:99fa1e6f10
 d4 2
 a5 2
-! Last modified: Thu, 16 Nov 2023 12:38:23 +0000
-! Diff-Path: ../patches/2023.11.16.758.patch#ruadlist
+! Last modified: Thu, 16 Nov 2023 18:25:33 +0000
+! Diff-Path: ../patches/2023.11.16.1105.patch#ruadlist
 a3636 1
 ||mediabrama.com^$third-party
 d4594 1
@@ -110,17 +110,28 @@ a20788 1
 d21054 1
 a21054 1
 soccer365.com.ua,soccer365.ru##div[style="height:200px"]
-a21785 1
+d21785 1
+a21785 2
+pikabu.ru#?#.page-story__before-comments div:-abp-properties(min-height: 248px)
 pikabu.ru##.page-story__before-comments div[style=""]
+d21793 1
+a21793 1
+pikabu.ru#?#.sidebar__inner > .sidebar-block:-abp-has([class]:-abp-properties(min-height: calc(598px)))
 d21800 1
 a21800 1
 pikabu.ru,sdamgia.ru##[data-container]
 a21805 1
 sdamgia.ru##center > div[id][style]
-a21807 1
+a21806 3
+pikabu.ru##div:first-child > div:first-child + div > div:first-child > div:first-child + div:last-child
+pikabu.ru##div:first-child > div:first-child + style + div
+pikabu.ru##div:first-child > div:first-child > style:first-child ~ div
+d21808 1
+a21808 1
 sdamgia.ru##div[class^="google_ad_left"]
 a21809 1
 sdamgia.ru##div[id^="yandex_vario"]
+d21812 2
 d21857 1
 a21857 1
 ! домены: hdrezka.ag,hdrezka.buzz,hdrezka.city,hdrezka.club,hdrezka.co,hdrezka.in,hdrezka.ink,hdrezka.loan,hdrezka.me,hdrezka.name,hdrezka.rest,hdrezka.run,hdrezka.sh,hdrezka.today,hdrezka.tv,hdrezka.vip,hdrezka.website,hdrezka.win,hdrezkapez.org,hdrezkapzm.org,hdrezkawer.org,kinopub.me,rezka-ua.tv,rezka.ag,rezkery.com,rezkify.com

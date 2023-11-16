@@ -1,8 +1,8 @@
-diff name:ruadlist lines:141 checksum:37e0c72dfc
+diff name:ruadlist lines:152 checksum:99fa1e6f10
 d4 2
 a5 2
-! Last modified: Thu, 16 Nov 2023 12:38:23 +0000
-! Diff-Path: ../patches/2023.11.16.758.patch#ruadlist
+! Last modified: Thu, 16 Nov 2023 18:25:33 +0000
+! Diff-Path: ../patches/2023.11.16.1105.patch#ruadlist
 a3636 1
 ||mediabrama.com^$third-party
 d4594 1
@@ -78,17 +78,28 @@ a20468 1
 d20789 1
 a20789 1
 1news.com.ua,3porosenka.ru,5.ua,agrimpasa.com,belnovosti.by,compendium.su,dni24.com,golos.zp.ua,gorno-altaisk.info,grani21.ru,headinsider.net,imperiyanews.ru,ku66.ru,metronews.ru,mgorod.kz,molbuk.ua,narodna-pravda.ua,oane.ws,onedivision.ru,p-p.com.ua,primgazeta.ru,proufu.ru,radidomapro.ru,ria-m.tv,rifey.ru,risu.org.ua,rusdozor.ru,rusjev.net,segodnya.ua,sharij.net,smolensk-auto.ru,stockinfocus.ru,supercook.ru,svidok.online,telegraf.in.ua,uk.etcetera.media,ukrmir.info,uralpress.ru,valuta.online.ua,vchaspik.ua,vikka.ua,vlasti.net,volynnews.com,vringe.com,vse42.ru,xn--80acvefn6a4c.xn--p1ai,xsport.ua,zakon.kz,zwezda.net##div[id^="Zz"]
-a21786 1
+d21786 1
+a21786 2
+pikabu.ru#?#.page-story__before-comments div:-abp-properties(min-height: 248px)
 pikabu.ru##.page-story__before-comments div[style=""]
+d21794 1
+a21794 1
+pikabu.ru#?#.sidebar__inner > .sidebar-block:-abp-has([class]:-abp-properties(min-height: calc(598px)))
 d21801 1
 a21801 1
 pikabu.ru,sdamgia.ru##[data-container]
 a21806 1
 sdamgia.ru##center > div[id][style]
-a21808 1
+a21807 3
+pikabu.ru##div:first-child > div:first-child + div > div:first-child > div:first-child + div:last-child
+pikabu.ru##div:first-child > div:first-child + style + div
+pikabu.ru##div:first-child > div:first-child > style:first-child ~ div
+d21809 1
+a21809 1
 sdamgia.ru##div[class^="google_ad_left"]
 a21810 1
 sdamgia.ru##div[id^="yandex_vario"]
+d21813 2
 d21858 1
 a21858 1
 ! домены: hdrezka.ag,hdrezka.buzz,hdrezka.city,hdrezka.club,hdrezka.co,hdrezka.in,hdrezka.ink,hdrezka.loan,hdrezka.me,hdrezka.name,hdrezka.rest,hdrezka.run,hdrezka.sh,hdrezka.today,hdrezka.tv,hdrezka.vip,hdrezka.website,hdrezka.win,hdrezkapez.org,hdrezkapzm.org,hdrezkawer.org,kinopub.me,rezka-ua.tv,rezka.ag,rezkery.com,rezkify.com

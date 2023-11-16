@@ -1,8 +1,8 @@
-diff name:ruadlist lines:33 checksum:37e0c72dfc
+diff name:ruadlist lines:44 checksum:99fa1e6f10
 d4 2
 a5 2
-! Last modified: Thu, 16 Nov 2023 12:38:23 +0000
-! Diff-Path: ../patches/2023.11.16.758.patch#ruadlist
+! Last modified: Thu, 16 Nov 2023 18:25:33 +0000
+! Diff-Path: ../patches/2023.11.16.1105.patch#ruadlist
 a8582 1
 ##a[href*="://lobar.site/r/"]
 a10155 1
@@ -11,14 +11,25 @@ d12831 1
 a12831 1
 ||softportal.com/*.abc$xmlhttprequest,domain=softportal.com
 d19374 1
-a21782 1
+d21782 1
+a21782 2
+pikabu.ru#?#.page-story__before-comments div:-abp-properties(min-height: 248px)
 pikabu.ru##.page-story__before-comments div[style=""]
+d21790 1
+a21790 1
+pikabu.ru#?#.sidebar__inner > .sidebar-block:-abp-has([class]:-abp-properties(min-height: calc(598px)))
 a21802 1
 sdamgia.ru##center > div[id][style]
-a21804 1
+a21803 3
+pikabu.ru##div:first-child > div:first-child + div > div:first-child > div:first-child + div:last-child
+pikabu.ru##div:first-child > div:first-child + style + div
+pikabu.ru##div:first-child > div:first-child > style:first-child ~ div
+d21805 1
+a21805 1
 sdamgia.ru##div[class^="google_ad_left"]
 a21806 1
 sdamgia.ru##div[id^="yandex_vario"]
+d21809 2
 d23008 2
 a27641 1
 dzen.ru##div[class*="geo-and-currency-widget__hasBanner"] div[class*="underWidget"]
