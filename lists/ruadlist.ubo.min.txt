@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 18 Nov 2023 04:23:47 +0000
-! Diff-Path: ../patches/2023.11.18.263.patch#ruadlist
+! Last modified: Sat, 18 Nov 2023 09:17:38 +0000
+! Diff-Path: ../patches/2023.11.18.557.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -28083,7 +28083,7 @@ fastpic.org,~new.fastpic.org##+js(addEventListener-defuser, getexoloader)
 romakatya.ru##+js(addEventListener-defuser, load, AdBlock)
 overclockers.ru##+js(addEventListener-defuser, load, mamydirect)
 gazeta.ru##+js(addEventListener-defuser, scroll, /Creepy/)
-lenta.ru##+js(addEventListener-defuser, scroll, extra)
+lenta.ru##+js(addEventListener-defuser, scroll, /extra|window.history.pushState/)
 m.lenta.ru##+js(addEventListener-defuser, scroll, getBoundingClientRect)
 www.vesti.ru##+js(addEventListener-defuser, scroll, players)
 comedy-radio.ru,kufar.by,radioromantika.ru,relax-fm.ru,rg.ru,sm.news,ura.news,veseloeradio.ru##+js(cookie-remover, /^bda|^bltsr/)

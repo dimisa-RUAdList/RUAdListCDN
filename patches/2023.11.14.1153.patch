@@ -1,8 +1,8 @@
-diff name:ruadlist lines:118 checksum:22691cd235
+diff name:ruadlist lines:121 checksum:bfd344cf98
 d4 2
 a5 2
-! Last modified: Sat, 18 Nov 2023 04:23:47 +0000
-! Diff-Path: ../patches/2023.11.18.263.patch#ruadlist
+! Last modified: Sat, 18 Nov 2023 09:17:38 +0000
+! Diff-Path: ../patches/2023.11.18.557.patch#ruadlist
 a927 1
 ||builthuosefor.com^$third-party
 a2821 1
@@ -110,6 +110,9 @@ ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##div[id*="Images"] .SimpleSkeleton
 ! обфускация
 ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.MediaViewer div[class*="_filled"]
 ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.SerpPage div[class*="_filled"]
+d28082 1
+a28082 1
+lenta.ru##+js(addEventListener-defuser, scroll, /extra|window.history.pushState/)
 a28110 1
 bitshare.link##+js(nano-setInterval-booster, closeWait, 1800)
 a28316 1
