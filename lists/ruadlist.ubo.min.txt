@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 18 Nov 2023 14:19:20 +0000
-! Diff-Path: ../patches/2023.11.18.859.patch#ruadlist
+! Last modified: Sat, 18 Nov 2023 19:14:56 +0000
+! Diff-Path: ../patches/2023.11.18.1154.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -28321,7 +28321,8 @@ hdrezka.*,rezka.*##+js(abort-current-inline-script, document.getElementsByTagNam
 hdrezka.*,rezka.*##+js(set-constant, Object.prototype.preroll, undefined)
 dzen.ru##iframe[style^="position:"][style*="absolute"][srcdoc]:remove()
 m.rp5.*#@#.adsbygoogle
-sdamgia.ru##main > div > div:has-text(rotator):remove()
+sdamgia.ru##main > div > div > div:has-text(/rotator|блокировщик/)
+sdamgia.ru##main > div:has(~ div:has-text(rotator)):empty:style(margin-bottom: -185px)
 mult-porno.*,sex-studentki.*,cosplay-porn.*##+js(set-constant, biads.initCli, undefined)
 dmod.cc,draug.ru,modsforwot.ru##p:has-text(Для скачивания подождите отсчет таймера...)
 porno365.*##+js(abort-on-property-read, bc_blocks)

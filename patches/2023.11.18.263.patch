@@ -1,8 +1,12 @@
-diff name:ruadlist lines:7 checksum:bec62ec947
+diff name:ruadlist lines:11 checksum:cdacbbe705
 d4 2
 a5 2
-! Last modified: Sat, 18 Nov 2023 14:19:20 +0000
-! Diff-Path: ../patches/2023.11.18.859.patch#ruadlist
+! Last modified: Sat, 18 Nov 2023 19:14:56 +0000
+! Diff-Path: ../patches/2023.11.18.1154.patch#ruadlist
 d28086 1
 a28086 1
 lenta.ru##+js(addEventListener-defuser, scroll, /extra|window.history.pushState/)
+d28324 1
+a28324 2
+sdamgia.ru##main > div > div > div:has-text(/rotator|блокировщик/)
+sdamgia.ru##main > div:has(~ div:has-text(rotator)):empty:style(margin-bottom: -185px)
