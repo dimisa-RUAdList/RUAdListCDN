@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 19 Nov 2023 10:22:40 +0000
-! Diff-Path: ../patches/2023.11.19.622.patch#ruadlist
+! Last modified: Sun, 19 Nov 2023 15:19:09 +0000
+! Diff-Path: ../patches/2023.11.19.919.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -13980,6 +13980,7 @@ sat-ukraine.info###header > div[style^="text-align: center;"]
 rebill.me###header a[target="_blank"]
 bagnet.org,gearshout.net###header-banner
 yap.ru,yaplakal.com###header-flash
+16-bits.ru###header-inner > font > a[href][target="_blank"]
 7days-ua.com###header-items
 gta.com.ua###header-rek
 theageoffootball.com###header-right-section
@@ -22958,6 +22959,7 @@ disk.yandex.by,disk.yandex.kz,disk.yandex.ru,disk.yandex.uz##.awaps__banner
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.b-direct
 docviewer.yandex.by,docviewer.yandex.kz,docviewer.yandex.ru,docviewer.yandex.uz##.js-doc-html > div[class^="pages_"] > div[class]:empty
 yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.page__result .typo:-abp-contains(/^новости партн/i)
+translate.yandex.by,translate.yandex.kz,translate.yandex.ru,translate.yandex.uz##.sidebar-direct
 disk.yandex.by,disk.yandex.kz,disk.yandex.ru,disk.yandex.uz##.software-header-promo
 docviewer.yandex.by,docviewer.yandex.kz,docviewer.yandex.ru,docviewer.yandex.uz##.with-bottom-direct > div[class] > div[class]:empty
 disk.yandex.by,disk.yandex.kz,disk.yandex.ru,disk.yandex.uz##a[href][style*="storage.mds.yandex.net/get-bstor/"]
@@ -28025,7 +28027,7 @@ gazeta.ru##+js(abort-on-property-read, eaglePlayerPlugins.autoplay_position)
 footboom.com,footboom.kz##+js(abort-on-property-read, echelon)
 kinozapas.co,livesx.online,xn--80aikhbrhr.xn--j1amh##+js(abort-on-property-read, forTheFreeVideo.css)
 7ogorod.ru,autonevod.ru,shtrafsud.ru,tophallclub.ru,zazloo.ru##+js(abort-on-property-read, fpm_attr)
-championat.com,doramy.club,rbc.ru,sportrbc.ru,turkish-tv-series.ru##+js(abort-on-property-read, getSelection)
+championat.com,doramy.club,turkish-tv-series.ru##+js(abort-on-property-read, getSelection)
 musify.club##+js(abort-on-property-read, get_ya_browser)
 gazeta.ru##+js(abort-on-property-read, goTolink)
 dota2.ru##+js(abort-on-property-read, helpUsImproveSite)
@@ -28079,6 +28081,7 @@ sports.ru##+js(addEventListener-defuser, DOMContentLoaded, 0x)
 cq.ru##+js(addEventListener-defuser, DOMContentLoaded, banners)
 softonic.ru##+js(addEventListener-defuser, click, [native code])
 ~player.smotrim.ru,smotrim.ru##+js(addEventListener-defuser, click, matches)
+rbc.ru,sportrbc.ru##+js(addEventListener-defuser, copy, getSelection)
 iptv.org.ua,tva.org.ua,ufchgu.ru##+js(addEventListener-defuser, copy, pagelink)
 fastpic.org,~new.fastpic.org##+js(addEventListener-defuser, getexoloader)
 romakatya.ru##+js(addEventListener-defuser, load, AdBlock)

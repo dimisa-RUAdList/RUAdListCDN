@@ -1,8 +1,10 @@
-diff name:ruadlist lines:26 checksum:7f447b6db3
+diff name:ruadlist lines:35 checksum:33e8a31988
 d4 2
 a5 2
-! Last modified: Sun, 19 Nov 2023 10:22:40 +0000
-! Diff-Path: ../patches/2023.11.19.622.patch#ruadlist
+! Last modified: Sun, 19 Nov 2023 15:19:09 +0000
+! Diff-Path: ../patches/2023.11.19.919.patch#ruadlist
+a13982 1
+16-bits.ru###header-inner > font > a[href][target="_blank"]
 d15811 1
 a15811 1
 rudub.net##.card__description__adv
@@ -14,10 +16,17 @@ player.rudub.net#?#div:-abp-has(> a[href*="://bit.ly/"])
 d21497 1
 a21497 1
 player.rudub.net#?#p:-abp-has(> strong a[href*="://cutter.li"])
+a22959 1
+translate.yandex.by,translate.yandex.kz,translate.yandex.ru,translate.yandex.uz##.sidebar-direct
 d27285 2
 a27286 2
 rudub.net##.details__bg
 rudub.net##body > section[class="section details"]:style(padding-top: 70px !important)
+d28027 1
+a28027 1
+championat.com,doramy.club,turkish-tv-series.ru##+js(abort-on-property-read, getSelection)
+a28080 1
+rbc.ru,sportrbc.ru##+js(addEventListener-defuser, copy, getSelection)
 d28086 1
 a28086 1
 lenta.ru##+js(addEventListener-defuser, scroll, /extra|window.history.pushState/)

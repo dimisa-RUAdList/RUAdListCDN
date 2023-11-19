@@ -1,8 +1,8 @@
-diff name:ruadlist lines:101 checksum:7f447b6db3
+diff name:ruadlist lines:110 checksum:33e8a31988
 d4 2
 a5 2
-! Last modified: Sun, 19 Nov 2023 10:22:40 +0000
-! Diff-Path: ../patches/2023.11.19.622.patch#ruadlist
+! Last modified: Sun, 19 Nov 2023 15:19:09 +0000
+! Diff-Path: ../patches/2023.11.19.919.patch#ruadlist
 a927 1
 ||builthuosefor.com^$third-party
 a2821 1
@@ -17,6 +17,8 @@ d10692 2
 a12699 2
 ||rutracker.org.ru/download32.
 ||rutracker.org.ru/exitblock/
+a13981 1
+16-bits.ru###header-inner > font > a[href][target="_blank"]
 a15088 1
 abw.by##.article-content + .card-wrapper
 a15142 1
@@ -84,10 +86,17 @@ pikabu.ru##div[data-ad-id]
 sdamgia.ru##div[data-name="adWrapper"]
 a21815 1
 pikabu.ru##div[style^="width: 300px; height:"]
+a22960 1
+translate.yandex.by,translate.yandex.kz,translate.yandex.ru,translate.yandex.uz##.sidebar-direct
 d27286 2
 a27287 2
 rudub.net##.details__bg
 rudub.net##body > section[class="section details"]:style(padding-top: 70px !important)
+d28028 1
+a28028 1
+championat.com,doramy.club,turkish-tv-series.ru##+js(abort-on-property-read, getSelection)
+a28081 1
+rbc.ru,sportrbc.ru##+js(addEventListener-defuser, copy, getSelection)
 d28087 1
 a28087 1
 lenta.ru##+js(addEventListener-defuser, scroll, /extra|window.history.pushState/)
