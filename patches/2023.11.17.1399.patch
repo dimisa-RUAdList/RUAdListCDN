@@ -1,8 +1,16 @@
-diff name:ruadlist lines:38 checksum:b6f98b9509
+diff name:ruadlist lines:61 checksum:fd46d67639
 d4 2
 a5 2
-! Last modified: Mon, 20 Nov 2023 16:26:43 +0000
-! Diff-Path: ../patches/2023.11.20.986.patch#ruadlist
+! Last modified: Mon, 20 Nov 2023 21:18:08 +0000
+! Diff-Path: ../patches/2023.11.20.1278.patch#ruadlist
+a4643 1
+||popup.su^$third-party
+d11468 1
+a11468 1
+||gecid.com/script/gecid2$script
+d12834 1
+a12836 1
+||softportal.com/*.xyz$xmlhttprequest,domain=softportal.com
 a13982 1
 16-bits.ru###header-inner > font > a[href][target="_blank"]
 d15811 1
@@ -16,11 +24,26 @@ player.rudub.net#?#div:-abp-has(> a[href*="://bit.ly/"])
 d21497 1
 a21497 1
 player.rudub.net#?#p:-abp-has(> strong a[href*="://cutter.li"])
-a21784 2
+a21784 3
 ! Pikabu (ловушка для обфускации)
 ||pikabu.ru/ajax/?key=$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/ajax/?x=$xmlhttprequest,domain=pikabu.ru
+d21786 4
+a21791 1
+pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: calc\([569]{2}[0-9]{1}/)
+d21793 1
+d21795 2
+a21796 1
+pikabu.ru##.stories-feed__container > .story[data-text-length] ~ .story:not([data-text-length])
+d21801 1
+d21808 1
+a21808 2
+pikabu.ru#?#div[class^="page-story__"] div:-abp-properties(/min-height: [245]{2}[0-9]{1}/)
+pikabu.ru##div[class^="page-story__"] div[style=""]
 a22959 1
 translate.yandex.by,translate.yandex.kz,translate.yandex.ru,translate.yandex.uz##.sidebar-direct
+a25335 1
+@@||home-club.com.ua/content/images/other/468x60-white.png|$image,domain=home-club.com.ua
 d27285 2
 a27286 2
 rudub.net##.details__bg
