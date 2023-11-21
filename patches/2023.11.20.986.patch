@@ -1,8 +1,8 @@
-diff name:ruadlist lines:57 checksum:d9271674f0
+diff name:ruadlist lines:60 checksum:232e5cdcf6
 d4 2
 a5 2
-! Last modified: Tue, 21 Nov 2023 12:38:56 +0000
-! Diff-Path: ../patches/2023.11.21.758.patch#ruadlist
+! Last modified: Tue, 21 Nov 2023 17:24:25 +0000
+! Diff-Path: ../patches/2023.11.21.1044.patch#ruadlist
 a4643 1
 ||popup.su^$third-party
 d11468 1
@@ -25,7 +25,7 @@ pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: calc.[0569]{2}[0-9]{
 d21797 1
 d21799 2
 a21800 1
-pikabu.ru##.stories-feed__container > .story[data-visited="true"]
+pikabu.ru##.stories-feed__container > .story[data-author-id] ~ .story:not([data-author-id])
 d21805 1
 a21810 1
 pikabu.ru#?#div[class*="page-story__"] div:-abp-properties(/min-height: [02345]{2}[0-9]{1}/)
@@ -37,8 +37,11 @@ lenta.ru##iframe[src*="icdn.lenta.ru"][src*="banner"]
 d22640 1
 a22640 1
 ||icdn.lenta.ru^*/banner
-a22819 1
-||sports.ru/storage/img/configs/menu_promo/
+d22732 4
+d22739 1
+d22743 2
+a22749 1
+sports.ru##.navigation-top__specials + div:empty,.navigation-top__specials
 a25340 1
 @@||home-club.com.ua/content/images/other/468x60-white.png|$image,domain=home-club.com.ua
 d26523 2

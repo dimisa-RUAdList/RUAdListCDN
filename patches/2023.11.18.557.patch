@@ -1,8 +1,8 @@
-diff name:ruadlist lines:87 checksum:d9271674f0
+diff name:ruadlist lines:90 checksum:232e5cdcf6
 d4 2
 a5 2
-! Last modified: Tue, 21 Nov 2023 12:38:56 +0000
-! Diff-Path: ../patches/2023.11.21.758.patch#ruadlist
+! Last modified: Tue, 21 Nov 2023 17:24:25 +0000
+! Diff-Path: ../patches/2023.11.21.1044.patch#ruadlist
 a4643 1
 ||popup.su^$third-party
 d11468 1
@@ -40,7 +40,7 @@ pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: calc.[0569]{2}[0-9]{
 d21793 1
 d21795 2
 a21796 1
-pikabu.ru##.stories-feed__container > .story[data-visited="true"]
+pikabu.ru##.stories-feed__container > .story[data-author-id] ~ .story:not([data-author-id])
 d21801 1
 a21806 1
 pikabu.ru#?#div[class*="page-story__"] div:-abp-properties(/min-height: [02345]{2}[0-9]{1}/)
@@ -52,8 +52,11 @@ lenta.ru##iframe[src*="icdn.lenta.ru"][src*="banner"]
 d22636 1
 a22636 1
 ||icdn.lenta.ru^*/banner
-a22815 1
-||sports.ru/storage/img/configs/menu_promo/
+d22728 4
+d22735 1
+d22739 2
+a22745 1
+sports.ru##.navigation-top__specials + div:empty,.navigation-top__specials
 a22959 1
 translate.yandex.by,translate.yandex.kz,translate.yandex.ru,translate.yandex.uz##.sidebar-direct
 a25335 1

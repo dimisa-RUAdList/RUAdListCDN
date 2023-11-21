@@ -1,8 +1,8 @@
-diff name:ruadlist lines:41 checksum:d9271674f0
+diff name:ruadlist lines:44 checksum:232e5cdcf6
 d4 2
 a5 2
-! Last modified: Tue, 21 Nov 2023 12:38:56 +0000
-! Diff-Path: ../patches/2023.11.21.758.patch#ruadlist
+! Last modified: Tue, 21 Nov 2023 17:24:25 +0000
+! Diff-Path: ../patches/2023.11.21.1044.patch#ruadlist
 d15949 1
 a15949 1
 filmix.biz,filmix.life,filmix.tech,filmix.zone#?#.container:-abp-has(> .remove-sda-wrap)
@@ -14,7 +14,7 @@ a21794 1
 pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: calc.[0569]{2}[0-9]{1}/)
 d21797 1
 a21797 1
-pikabu.ru##.stories-feed__container > .story[data-visited="true"]
+pikabu.ru##.stories-feed__container > .story[data-author-id] ~ .story:not([data-author-id])
 a21806 1
 pikabu.ru#?#div[class*="page-story__"] div:-abp-properties(/min-height: [02345]{2}[0-9]{1}/)
 d21808 1
@@ -23,8 +23,11 @@ lenta.ru##iframe[src*="icdn.lenta.ru"][src*="banner"]
 d22637 1
 a22637 1
 ||icdn.lenta.ru^*/banner
-a22816 1
-||sports.ru/storage/img/configs/menu_promo/
+d22729 4
+d22736 1
+d22740 2
+a22746 1
+sports.ru##.navigation-top__specials + div:empty,.navigation-top__specials
 d26521 2
 a26522 2
 filmix.biz,filmix.life,filmix.tech,filmix.zone##.main-wrapper:style(margin-top: 0 !important)
