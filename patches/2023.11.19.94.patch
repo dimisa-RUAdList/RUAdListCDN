@@ -1,8 +1,8 @@
-diff name:ruadlist lines:75 checksum:e50cc49c4d
+diff name:ruadlist lines:81 checksum:8730e4649e
 d4 2
 a5 2
-! Last modified: Wed, 22 Nov 2023 13:26:04 +0000
-! Diff-Path: ../patches/2023.11.22.806.patch#ruadlist
+! Last modified: Wed, 22 Nov 2023 18:25:29 +0000
+! Diff-Path: ../patches/2023.11.22.1105.patch#ruadlist
 a4643 1
 ||popup.su^$third-party
 d11468 1
@@ -22,14 +22,14 @@ filmix.biz,filmix.life,filmix.tech,filmix.zone##.page-wrapper .last-news ~ .cont
 d21778 1
 a21785 2
 ! Pikabu (ловушка для обфускации)
-||pikabu.ru/ajax/?x$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/ajax/?*=1&key=$xmlhttprequest,domain=pikabu.ru
 d21787 4
 a21792 1
-pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: calc.[0569]{2}[0-9]{1}/)
+pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: calc.[0569]{2}[0-9]{1}|min-height: calc.43/)
 d21794 1
 d21796 2
 a21797 1
-pikabu.ru##.stories-feed__container > .story[data-author-id] ~ .story:not([data-author-id])
+pikabu.ru##.stories-feed__container > .story[data-is-fixed-story="false"] ~ .story:not([data-is-fixed-story="false"])
 d21802 1
 a21807 1
 pikabu.ru#?#div[class*="page-story__"] div:-abp-properties(/min-height: [02345]{2}[0-9]{1}/)
@@ -56,6 +56,9 @@ d26519 2
 a26520 2
 filmix.biz,filmix.life,filmix.tech,filmix.zone##.main-wrapper:style(margin-top: 0 !important)
 filmix.biz,filmix.life,filmix.tech,filmix.zone##.page-wrapper:style(margin-top: 0 !important)
+a27813 1
+e.mail.ru,octavius.mail.ru##.application_new-toolbar .application-mail:not(.application-mail_webview-mobile) .letter-list[class*="adv"]:style(--letter-list-top-toolbar-height: inherit !important)
+d27815 1
 d28028 1
 a28028 1
 championat.com,doramy.club,turkish-tv-series.ru##+js(abort-on-property-read, getSelection)
@@ -68,6 +71,9 @@ a28117 1
 vgtimes.ru##+js(nano-setInterval-booster, disabled)
 a28271 1
 lenta.ru##.js-scroll-to-site-container:remove()
+d28404 1
+a28404 1
+~3igames.mail.ru,~auto.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~esports.mail.ru,~games.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mailblog.mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##+js(set-constant, mr.mimic, false)
 d29154 1
 a29154 1
 filmix.biz,filmix.life,filmix.tech,filmix.zone###oframeplayer > #player_control_play-icon ~ pjsdiv[style^="position: absolute; left:"][style*="pointer-events: none; display: block; visibility:"]
