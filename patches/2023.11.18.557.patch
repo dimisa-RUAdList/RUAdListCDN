@@ -1,8 +1,8 @@
-diff name:ruadlist lines:92 checksum:dd12a361fd
+diff name:ruadlist lines:94 checksum:e50cc49c4d
 d4 2
 a5 2
-! Last modified: Wed, 22 Nov 2023 08:25:25 +0000
-! Diff-Path: ../patches/2023.11.22.505.patch#ruadlist
+! Last modified: Wed, 22 Nov 2023 13:26:04 +0000
+! Diff-Path: ../patches/2023.11.22.806.patch#ruadlist
 a4643 1
 ||popup.su^$third-party
 d11468 1
@@ -30,10 +30,10 @@ player.rudub.net#?#div:-abp-has(> a[href*="://bit.ly/"])
 d21497 1
 a21497 1
 player.rudub.net#?#p:-abp-has(> strong a[href*="://cutter.li"])
-a21784 3
+d21777 1
+a21784 2
 ! Pikabu (ловушка для обфускации)
-||pikabu.ru/ajax/?key=$xmlhttprequest,domain=pikabu.ru
-||pikabu.ru/ajax/?x=$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/ajax/?x$xmlhttprequest,domain=pikabu.ru
 d21786 4
 a21791 1
 pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: calc.[0569]{2}[0-9]{1}/)
@@ -79,6 +79,8 @@ rbc.ru,sportrbc.ru##+js(addEventListener-defuser, copy, getSelection)
 d28086 1
 a28088 1
 lenta.ru##+js(addEventListener-defuser, scroll, window.history.pushState)
+a28116 1
+vgtimes.ru##+js(nano-setInterval-booster, disabled)
 a28270 1
 lenta.ru##.js-scroll-to-site-container:remove()
 d28324 1

@@ -1,8 +1,8 @@
-diff name:ruadlist lines:64 checksum:dd12a361fd
+diff name:ruadlist lines:66 checksum:e50cc49c4d
 d4 2
 a5 2
-! Last modified: Wed, 22 Nov 2023 08:25:25 +0000
-! Diff-Path: ../patches/2023.11.22.505.patch#ruadlist
+! Last modified: Wed, 22 Nov 2023 13:26:04 +0000
+! Diff-Path: ../patches/2023.11.22.806.patch#ruadlist
 a4643 1
 ||popup.su^$third-party
 d11468 1
@@ -17,10 +17,10 @@ filmix.biz,filmix.life,filmix.tech,filmix.zone#?#.container:-abp-has(> .remove-s
 d17240 1
 a17240 1
 filmix.biz,filmix.life,filmix.tech,filmix.zone##.page-wrapper .last-news ~ .container > .information
-a21786 3
+d21779 1
+a21786 2
 ! Pikabu (ловушка для обфускации)
-||pikabu.ru/ajax/?key=$xmlhttprequest,domain=pikabu.ru
-||pikabu.ru/ajax/?x=$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/ajax/?x$xmlhttprequest,domain=pikabu.ru
 d21788 4
 a21793 1
 pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: calc.[0569]{2}[0-9]{1}/)
@@ -55,6 +55,8 @@ filmix.biz,filmix.life,filmix.tech,filmix.zone##.page-wrapper:style(margin-top: 
 d28090 1
 a28092 1
 lenta.ru##+js(addEventListener-defuser, scroll, window.history.pushState)
+a28120 1
+vgtimes.ru##+js(nano-setInterval-booster, disabled)
 a28274 1
 lenta.ru##.js-scroll-to-site-container:remove()
 d29157 1

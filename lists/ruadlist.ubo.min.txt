@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 22 Nov 2023 08:25:25 +0000
-! Diff-Path: ../patches/2023.11.22.505.patch#ruadlist
+! Last modified: Wed, 22 Nov 2023 13:26:04 +0000
+! Diff-Path: ../patches/2023.11.22.806.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21777,7 +21777,6 @@ rafkino.com##div[id^="MarketGid"]
 @@||s.znctrack.net/z|$xmlhttprequest,domain=censor.net|gazeta.ua|i.ua|mail.ukr.net|meteofor.com.ua|tabloid.pravda.com.ua|viva.ua
 ||imgfrost.net^$third-party
 ||ritsatv.ru^$~document
-||vgtimes.ru/*/|$xmlhttprequest
 ! Liveinternet (ловушка для обфускации)
 /^https?://www\.liveinternet\.ru/(?!utf\/|q\/js\/|js\/|4Ek/JS/diary/main/nav/regoradd.js|autosave.js|cgi-bin/rpls.fcgi?|ckeditor\/|ckfinder\/|main_new_1251.js|share/js/share.js|spell/spell.js|uploader\/|vbcode.js|vbcode_language.js)/$script,domain=www.liveinternet.ru
 ||liveinternet.ru/utf/lici.js?
@@ -21786,8 +21785,7 @@ rafkino.com##div[id^="MarketGid"]
 ||www.liveinternet.ru/users/$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/cgi-bin/rpls.fcgi?list= https://www.liveinternet.ru/spell/spell.js https://www.liveinternet.ru/share/js/share.js https://www.liveinternet.ru/4Ek/JS/diary/main/nav/regoradd.js https://www.liveinternet.ru/4Ek/JS/diary/trans.js
 ||www.liveinternet.ru/|$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/utf/lici.js https://www.liveinternet.ru/utf/li.js https://www.liveinternet.ru/utf/main_new.js
 ! Pikabu (ловушка для обфускации)
-||pikabu.ru/ajax/?key=$xmlhttprequest,domain=pikabu.ru
-||pikabu.ru/ajax/?x=$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/ajax/?x$xmlhttprequest,domain=pikabu.ru
 ! селекторы
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
@@ -28114,6 +28112,7 @@ mp3crown.cc##+js(nano-setInterval-booster, .time)
 sorokam.ru##+js(nano-setInterval-booster, .track-download__timer)
 bitshare.link##+js(nano-setInterval-booster, closeWait, 1800)
 kinokong.pro,uakino.club##+js(nano-setInterval-booster, countdown)
+vgtimes.ru##+js(nano-setInterval-booster, disabled)
 startgamer.ru##+js(nano-setInterval-booster, js-game-loader-block, 1000, 0.0001)
 iblitzmods.ru##+js(nano-setInterval-booster, ks_counter)
 wowskill.ru##+js(nano-setInterval-booster, p)
