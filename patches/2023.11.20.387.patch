@@ -1,8 +1,8 @@
-diff name:ruadlist lines:104 checksum:eefa39f1ca
+diff name:ruadlist lines:104 checksum:29770ca7fc
 d4 2
 a5 2
-! Last modified: Fri, 24 Nov 2023 05:21:27 +0000
-! Diff-Path: ../patches/2023.11.24.321.patch#ruadlist
+! Last modified: Fri, 24 Nov 2023 10:24:42 +0000
+! Diff-Path: ../patches/2023.11.24.624.patch#ruadlist
 a4643 1
 ||popup.su^$third-party
 d10427 1
@@ -25,7 +25,7 @@ spletnik.ru##.vms_article_parent a[href*="utm_"]
 d21779 1
 a21786 2
 ! Pikabu (ловушка для обфускации)
-||pikabu.ru/ajax/?*=1&key=$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/ajax/?*&key=$xmlhttprequest,domain=pikabu.ru
 d21788 4
 d21794 2
 a21795 1
@@ -93,7 +93,7 @@ a28407 1
 ~3igames.mail.ru,~auto.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~esports.mail.ru,~games.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mailblog.mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##+js(set-constant, mr._mimic.encrypt, undefined)
 a28423 2
 ! Конфликт с JS Fixes при первом открытии главной
-mail.ru##[slot="main-column"] > .micro-widgets + div:has(> div)
+mail.ru##[slot="main-column"] > .micro-widgets + div:has(> div:not([class*="tgb"]:not([class*="tabs"])))
 d28509 1
 a28509 1
 ~3igames.mail.ru,~auto.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~cloud.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~esports.mail.ru,~games.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mailblog.mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##^script:has-text(adblock_detected)
