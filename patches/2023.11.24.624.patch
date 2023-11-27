@@ -1,8 +1,8 @@
-diff name:ruadlist lines:82 checksum:936c8e5686
+diff name:ruadlist lines:91 checksum:4c9afcd22b
 d4 2
 a5 2
-! Last modified: Mon, 27 Nov 2023 13:24:49 +0000
-! Diff-Path: ../patches/2023.11.27.804.patch#ruadlist
+! Last modified: Mon, 27 Nov 2023 18:25:37 +0000
+! Diff-Path: ../patches/2023.11.27.1105.patch#ruadlist
 a6003 1
 ||tlxjuj.com^$third-party
 a9954 1
@@ -22,6 +22,9 @@ a13089 1
 ||trk.mail.ru^$subdocument,domain=zoneofgames.ru
 a17330 1
 spletnik.ru##.placeholder_billboard
+d19142 1
+a19142 1
+1tv.ru,drive.ru,f1news.ru,gamemag.ru,kinonews.ru,kinorium.com,livejournal.com,myshows.me,onlinestreams.ru,pikabu.ru,pluggedin.ru,sovsport.ru,spletnik.ru,trinixy.ru,www.pesticidy.ru##a[href*="//ads.adfox.ru/"]
 a20246 1
 101kofemashina.ru##div[align="center"][class$="only"]
 a21488 1
@@ -33,7 +36,12 @@ pikabu.ru##div[class*="page-story__"] div[style=""]
 d21808 1
 d21991 8
 a21998 1
-~3igames.mail.ru,~auto.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~cloud.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~esports.mail.ru,~games.mail.ru,~gibdd.mail.ru,~go.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mailblog.mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##div[class*="main-col"] .tgb-wrapper
+~3igames.mail.ru,~auto.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~cloud.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~esports.mail.ru,~games.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mailblog.mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##div[class*="main-col"] .tgb-wrapper
+d22292 1
+d22297 1
+a22297 1
+||market.yandex.ru/widget/$script,domain=hi-tech.mail.ru
+d22310 1
 a22624 1
 ferra.expert##div[data-render-state][style*="min-height:"]
 a22657 1
@@ -44,6 +52,7 @@ rbc.ru#?#.js-index-central-column > .js-index-doscroll:-abp-has([href*="erid="])
 d25701 1
 a25701 1
 @@/leftad.js|$script,~third-party,domain=game4you.top|games-pc.top|innal.top|naylo.top|rustorka.com|rustorka.net|rustorka.top|rustorkacom.lib
+d25763 1
 a26086 3
 3dnews.kz,3dnews.ru##.article > .onadlable
 3dnews.kz,3dnews.ru##.article > .onadlable ~ .js-mediator-article a[href]:not([href^="/"]):not([href^="#"]):not([href*="3dnews."]):style(pointer-events: none !important; text-decoration: none !important; color: inherit !important)

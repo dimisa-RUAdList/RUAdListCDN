@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 27 Nov 2023 13:24:49 +0000
-! Diff-Path: ../patches/2023.11.27.804.patch#ruadlist
+! Last modified: Mon, 27 Nov 2023 18:25:37 +0000
+! Diff-Path: ../patches/2023.11.27.1105.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -19143,7 +19143,7 @@ pirate-party.ru,piratemedia.net##a[href*=".sim-networks.com/index.php?pid="]
 ctc-rnd.ru##a[href*=".space"]
 rutr.life,rutracker.lib,rutracker.net,rutracker.nl,rutracker.org##a[href*=".vkplay.ru"]
 wintorrents.ru##a[href*=".wintorrents.ru"]
-1tv.ru,drive.ru,f1news.ru,gamemag.ru,kinonews.ru,kinorium.com,livejournal.com,myshows.me,onlinestreams.ru,pikabu.ru,pluggedin.ru,sovsport.ru,trinixy.ru,www.pesticidy.ru##a[href*="//ads.adfox.ru/"]
+1tv.ru,drive.ru,f1news.ru,gamemag.ru,kinonews.ru,kinorium.com,livejournal.com,myshows.me,onlinestreams.ru,pikabu.ru,pluggedin.ru,sovsport.ru,spletnik.ru,trinixy.ru,www.pesticidy.ru##a[href*="//ads.adfox.ru/"]
 dks.com.ua,enovosty.com,expert.in.ua,galas.te.ua,galinfo.com.ua,nbnews.com.ua,plitkar.com.ua,rivnepost.rv.ua,tenews.org.ua,ukrnews24.net,varta1.com.ua##a[href*="//besplatka.ua"]
 360tv.ru,avtonovostidnya.ru,coop-land.ru,energyfm.ru,gdeichto.ru,kommersant.ru,moe-belgorod.ru,moe-kursk.ru,moe-lipetsk.ru,moe-online.ru,moe-tambov.ru,mydecor.ru,mywebpc.ru,new-magazine.ru,penzainform.ru,peterburg2.ru,pnz.ru,regnum.ru,rutube.ru,sm.news,sportsdaily.ru,super.ru,syzran-small.ru,teleprogramma.pro,thegirl.ru,tsargrad.tv,tulapressa.ru,u-f.ru,ura.news,utyug.info,vz.ru,xn----7sbabwosghnf8al4lkj7b.xn--p1ai,zaks.ru,zr.ru##a[href*="//dzen.ru/"]
 beatmake.ru##a[href*="//go.acstat.com/"]
@@ -21995,7 +21995,7 @@ lena-miro.ru,levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,s
 ! Mail.ru
 ! Скрытие по-разделам
 ! Главная
-~3igames.mail.ru,~auto.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~cloud.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~esports.mail.ru,~games.mail.ru,~gibdd.mail.ru,~go.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mailblog.mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##div[class*="main-col"] .tgb-wrapper
+~3igames.mail.ru,~auto.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~cloud.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~esports.mail.ru,~games.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mailblog.mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##div[class*="main-col"] .tgb-wrapper
 ! Auto
 auto.mail.ru#?#.article__item > p:-abp-contains(/P.S.+(ОСАГО|каско)/i)
 auto.mail.ru##.article__item_conversionlink
@@ -22289,12 +22289,11 @@ maps.mail.ru##img[width="200"][height="30"]
 ||imgsmail.ru/js/onair2.$script
 ||imgsmail.ru/r/my/brands/
 ||imgsmail.ru^*/mrg-context_
-||likemore-go.imgsmail.ru/widget.js$script,domain=go.mail.ru
 ||mail.ru/img/promo/
 ||mail.ru/js/common/vendor/
 ||mail.ru^*/rbBanner.js
 ||mamba.ru/images/*/promo/
-||market.yandex.ru/widget/$script,domain=go.mail.ru|hi-tech.mail.ru
+||market.yandex.ru/widget/$script,domain=hi-tech.mail.ru
 ||memytonsfor.ru^$csp=script-src
 ||minigames.imgsmail.ru/swf/stock/
 ||mradx.net/img/$object,subdocument
@@ -22307,7 +22306,6 @@ maps.mail.ru##img[width="200"][height="30"]
 ||r.mradx.net/r/$script
 ||redatastore.ru^$csp=script-src
 ||sportmail.ru^*/BookmakersFooter/
-||stepan-fe.go.mail.ru^$domain=go.mail.ru
 ||tv.mail.ru/popup_banner/
 ! Metaratings
 metaratings.ru##.catfish
@@ -25762,7 +25760,6 @@ gbsmp.ru#@#img[width="728"][height="90"]
 @@||gaua.hit.gemius.pl/gemiuslib.js$domain=1plus1.video|unian.info|unian.net|unian.ua
 @@||gemius.pl/gplayer.js|$script,domain=1plus1.video|unian.info|unian.net|unian.ua
 @@||gig.md^*/reklama/$domain=gig.md
-@@||go.mail.ru^*/adptest$script,domain=go.mail.ru
 @@||googleads.g.doubleclick.net/$xmlhttprequest,domain=2es.work|asteriatm.ru|barsportbar.com|cdnneedtv.ru|cdnpotok.com|cdntelesee.com|cdntvpotok.com|channels247.net|chepok.xyz|domatv.net|fuzzmusic.ru|goool7.ws|hdone.net|hdru.net|hindcine.tv|kipolino.site|klplayer.website|phys-kids.com|pokaz.me|rxtv.github.io|sovetromantica.com|sport7.biz|sportbar.biz|sportbarchik88.com|sporting77.com|src.media-base.co|starserial.ru|sudya-dredd.ru
 @@||googleadservices.com/pagead/conversion.js$script,domain=rzn.info
 @@||googlesyndication.com/pagead/images/$domain=spruto.tv
