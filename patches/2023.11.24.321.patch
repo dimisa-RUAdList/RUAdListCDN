@@ -1,8 +1,8 @@
-diff name:ruadlist lines:72 checksum:c02785bf71
+diff name:ruadlist lines:85 checksum:936c8e5686
 d4 2
 a5 2
-! Last modified: Mon, 27 Nov 2023 08:26:31 +0000
-! Diff-Path: ../patches/2023.11.27.506.patch#ruadlist
+! Last modified: Mon, 27 Nov 2023 13:24:49 +0000
+! Diff-Path: ../patches/2023.11.27.804.patch#ruadlist
 a6003 1
 ||tlxjuj.com^$third-party
 a9954 1
@@ -18,6 +18,8 @@ a11514 1
 d12470 2
 a12471 1
 ||povarenok.ru/css/*/sp.css$stylesheet
+a13089 1
+||trk.mail.ru^$subdocument,domain=zoneofgames.ru
 a17330 1
 spletnik.ru##.placeholder_billboard
 a20246 1
@@ -35,16 +37,26 @@ d21808 1
 d21991 8
 a21998 1
 ~3igames.mail.ru,~auto.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~cloud.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~esports.mail.ru,~games.mail.ru,~gibdd.mail.ru,~go.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mailblog.mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##div[class*="main-col"] .tgb-wrapper
+a22624 1
+ferra.expert##div[data-render-state][style*="min-height:"]
 a22657 1
 rbc.ru#?#.item-in-article:-abp-has([href*="erid="])
 d22660 1
 a22660 1
 rbc.ru#?#.js-index-central-column > .js-index-doscroll:-abp-has([href*="erid="])
+d25701 1
+a25701 1
+@@/leftad.js|$script,~third-party,domain=game4you.top|games-pc.top|innal.top|naylo.top|rustorka.com|rustorka.net|rustorka.top|rustorkacom.lib
 a26086 3
 3dnews.kz,3dnews.ru##.article > .onadlable
 3dnews.kz,3dnews.ru##.article > .onadlable ~ .js-mediator-article a[href]:not([href^="/"]):not([href^="#"]):not([href*="3dnews."]):style(pointer-events: none !important; text-decoration: none !important; color: inherit !important)
 ! ---
 d27307 2
+a27836 1
+mail.ru##.grid__main-col > div[slot="main-column"] .search-container:style(margin-top: 4px !important; margin-bottom: 4px !important)
+a27876 1
+mail.ru##div:not(.grid__main-col) > div[slot="main-column"] .search-container:style(margin-top: 4px !important; margin-bottom: 20px !important)
+d27888 1
 a28184 1
 sdamgia.ru##+js(set-attr, main > div:first-child:empty, class, false)
 a28325 1
@@ -60,9 +72,10 @@ d28404 2
 a28405 2
 ~3igames.mail.ru,~auto.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~esports.mail.ru,~games.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mailblog.mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##+js(set-constant, document.title, null)
 ~3igames.mail.ru,~auto.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~esports.mail.ru,~games.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mailblog.mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##+js(set-constant, mr._mimic.encrypt, undefined)
-d28423 1
-a28423 1
-mail.ru##[slot="main-column"] > .micro-widgets + div[class*=" "]:not([class*="tgb"]):not([class*="tabs"])
+d28422 2
+a28423 2
+! Конфликт с JS Fixes
+mail.ru##[slot="main-column"] > div:first-child + div + div[class*=" "]:not([class*="tgb"]):not([class*="tabs"])
 d28459 1
 a28459 1
 3dn.ru,a-point.info,addfiles.ru,akkordam.ru,all-for-kompa.ru,asia-tv.su,at.ua,autosimgames.ru,chernobyl-soul.com,clan.su,cliphq.ru,coop-lands.ru,db-energo.ru,devdrivers.ru,do.am,dtva-it-rus.gq,elegos.ru,elektronika56.ru,elektrosat.ru,fon-ki.com,for-gsm.ru,free-dream.ru,ftechedu.ru,fukushima-news.ru,gals.md,gamesdendy.ru,giginfo.ru,gloria-cedric.ru,goldformat.ru,greenflash.su,hero-empire.com,igrul-ka.ru,jetvis.ru,krasnickij.ru,krolmen.ru,megaclips.net,mod-rus.ru,mow-portal.ru,moy.su,mp3songs.ru,mp4android.ru,my1.ru,narod.ru,newgames.com.ua,novospasskoe-city.ru,obschestvo-9999.gq,omsimclub.ru,online-supernatural.ru,onlinestargate.ru,only-paper.ru,others.name,pidru4nik.com,pkrc.ru,play-force.ru,pohoronnoe-byuro.com,pokatushki-pmr.ru,pro-zakupki.ru,project-ss.ru,psxworld.ru,radiodom.org,rocketdockfree.ru,sdr-deluxe.com,skidrowcrack.ru,soft-game.net,stalker-gsc.ru,stalker-zone.info,stalkermods.ru,svadbatomsk.ru,techmusic.ru,tes-game.ru,torfiles.ru,torm-egan.ru,torrent-file.top,ucoz.club,ucoz.com,ucoz.net,ucoz.org,ucoz.ru,ucoz.ua,usite.pro,vodopads.ru,vsthouse.ru,warcraftda.ru,xakevsoft.ru,xn--80aeshkkbdj.xn--p1ai,yaminecraft.ru,zona-stalkera.ru##+js(abort-on-property-read, u_global_data)

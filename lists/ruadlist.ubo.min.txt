@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 27 Nov 2023 08:26:31 +0000
-! Diff-Path: ../patches/2023.11.27.506.patch#ruadlist
+! Last modified: Mon, 27 Nov 2023 13:24:49 +0000
+! Diff-Path: ../patches/2023.11.27.804.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -13089,6 +13089,7 @@ lada.kz/uploads/banners/
 ||trello-attachments.s3.amazonaws.com$image,domain=puerrtto.livejournal.com
 ||trinixy.ru^*/branding
 ||trishurupa.ru/*banner/*.gif
+||trk.mail.ru^$subdocument,domain=zoneofgames.ru
 ||trkr.stop1c.ru/
 ||tropica.ru/img/b/
 ||truba.com/i/brand/
@@ -22621,6 +22622,7 @@ mail.rambler.ru##div[class^="SentLetter-context"]
 afisha.ru##div[data-ad="true"]
 rambler.ru##div[data-marker-observer]
 ferra.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,secretmag.ru,wmj.ru##div[data-render-state] > div[style*="min-height:"]
+ferra.expert##div[data-render-state][style*="min-height:"]
 rambler.ru##div[data-rnet]
 gazeta.ru##div[id^="b_24smi_"]
 m.gazeta.ru##div[id^="ban-content-mobile"]
@@ -25698,7 +25700,7 @@ gbsmp.ru#@#img[width="728"][height="90"]
 @@/js/advert.js$~third-party
 @@/js/prebid-ads.js|$script,domain=2rezka.ru|hdrezka.by|key-hub.eu|old-games.ru
 @@/js/siropu/am/ads.min.js$script,~third-party,domain=customgames.ru|fantasticcraft.ru
-@@/lazyad.js|$script,~third-party,domain=game4you.top|games-pc.top|innal.top|naylo.top|rustorka.com|rustorka.net|rustorka.top|rustorkacom.lib
+@@/leftad.js|$script,~third-party,domain=game4you.top|games-pc.top|innal.top|naylo.top|rustorka.com|rustorka.net|rustorka.top|rustorkacom.lib
 @@/pagead2.$domain=axd.semestr.ru|d-mod.ru|elsyst.gnomio.com|htmlweb.ru|math.semestr.ru|minimalsy.xyz|mysmsbox.ru|ph4.ru|profatom.ru|pvpru.com|sitecoder.blogspot.ru|slushat-tekst-pesni.ru|sovremennoepravo.ru|survarium.pro|temp-mail.org|tests24.ru|trialkeys.ru|tvfeed.in|www.inoreader.com
 @@/player/player_ads.html$subdocument,domain=720video.me|bessporno.me|camsclips.biz|ebalovo.adult|ebalovo.porn|ebalovo.pro|lenkino.adult|pbembed.me|porno365.bingo|pornobit.mobi|pornobomba.click|pornobomba.vip|pornoham.me|pornomoll.red|porntn.com|private-records.com|ru-xvideos.me|russkoe21.com
 @@/templates/*/adblock/adframe.*.js$script,~third-party,domain=filmisub.com|kinofen.net
@@ -27835,6 +27837,7 @@ auto.mail.ru,horo.mail.ru,kino.mail.ru,lady.mail.ru,tv.mail.ru##.cols__inner > n
 hi-tech.mail.ru##.cols_margin .link-hdr
 deti.mail.ru##.deti-slot_exchange
 mail.ru##.grid__main-col > .tgb-wrapper
+mail.ru##.grid__main-col > div[slot="main-column"] .search-container:style(margin-top: 4px !important; margin-bottom: 4px !important)
 hi-tech.mail.ru##.header-banner:style(margin: 0 !important)
 my.mail.ru##.l-app__left
 my.mail.ru##.l-app__right
@@ -27875,6 +27878,7 @@ mail.ru##body:not(.js-module) .searchContainer ~ div > a.dmb
 mail.ru##body:not(.js-module) .tabs + div[class] > :first-child:style(width: 100% !important)
 mail.ru##body:not(.js-module) .tabs + div[class]:style(min-width: fit-content !important)
 mail.ru##body:not(.js-module) .tabs > .tabs__item:style(padding: 0 7px !important)
+mail.ru##div:not(.grid__main-col) > div[slot="main-column"] .search-container:style(margin-top: 4px !important; margin-bottom: 20px !important)
 cloud.mail.ru##div[class^="Datalistinfo__root"]
 cloud.mail.ru##div[class^="Public-desktop__rightCol-"]
 cloud.mail.ru##div[class^="Public-desktop__worm-"]
@@ -27886,7 +27890,6 @@ my.mail.ru##div[class^="app-adv-"]
 news.mail.ru,sportmail.ru##div[data-module="LazyLoad.PromoPopup"] .js-module.block
 mail.ru,sportmail.ru##div[data-mp*="LazyPulse"]
 news.mail.ru##div[data-view="MyWidgetView.SmokyExtend"]
-mail.ru##div[slot="main-column"] .search-container:style(margin-top: 4px !important; margin-bottom: 4px !important)
 mail.ru##div[slot="main-column"] > .micro-widgets ~ .tabs:style(margin-top: 5px !important)
 mail.ru##div[slot="main-column"] > .micro-widgets:style(height: auto !important; margin: auto !important)
 my.mail.ru##html.window-loaded .b-video-backscreen
@@ -28421,8 +28424,8 @@ ok.ru##div[class*="__banner-feed"]
 ||pubapi.viqeo.tv^$domain=mail.ru|sportmail.ru
 ||r.mradx.net/img/*.js|$empty,script
 ||ru/count/$image,important,redirect=1x1.gif,domain=mail.ru|sportmail.ru
-! Конфликт с JS Fixes при первом открытии главной
-mail.ru##[slot="main-column"] > .micro-widgets + div[class*=" "]:not([class*="tgb"]):not([class*="tabs"])
+! Конфликт с JS Fixes
+mail.ru##[slot="main-column"] > div:first-child + div + div[class*=" "]:not([class*="tgb"]):not([class*="tabs"])
 ! старый интерфейс почты
 e.mail.ru##+js(json-prune, [].slot)
 e.mail.ru##.b-datalist > div:matches-css(height: 39px):remove()

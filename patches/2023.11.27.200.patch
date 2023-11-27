@@ -1,5 +1,21 @@
-diff name:ruadlist lines:4 checksum:c02785bf71
+diff name:ruadlist lines:20 checksum:936c8e5686
 d4 2
 a5 2
-! Last modified: Mon, 27 Nov 2023 08:26:31 +0000
-! Diff-Path: ../patches/2023.11.27.506.patch#ruadlist
+! Last modified: Mon, 27 Nov 2023 13:24:49 +0000
+! Diff-Path: ../patches/2023.11.27.804.patch#ruadlist
+a13091 1
+||trk.mail.ru^$subdocument,domain=zoneofgames.ru
+a22623 1
+ferra.expert##div[data-render-state][style*="min-height:"]
+d25701 1
+a25701 1
+@@/leftad.js|$script,~third-party,domain=game4you.top|games-pc.top|innal.top|naylo.top|rustorka.com|rustorka.net|rustorka.top|rustorkacom.lib
+a27837 1
+mail.ru##.grid__main-col > div[slot="main-column"] .search-container:style(margin-top: 4px !important; margin-bottom: 4px !important)
+a27877 1
+mail.ru##div:not(.grid__main-col) > div[slot="main-column"] .search-container:style(margin-top: 4px !important; margin-bottom: 20px !important)
+d27889 1
+d28424 2
+a28425 2
+! Конфликт с JS Fixes
+mail.ru##[slot="main-column"] > div:first-child + div + div[class*=" "]:not([class*="tgb"]):not([class*="tabs"])
