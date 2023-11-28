@@ -1,8 +1,8 @@
-diff name:ruadlist lines:45 checksum:40942dc035
+diff name:ruadlist lines:47 checksum:12d98e20d3
 d4 2
 a5 2
-! Last modified: Tue, 28 Nov 2023 14:22:23 +0000
-! Diff-Path: ../patches/2023.11.28.862.patch#ruadlist
+! Last modified: Tue, 28 Nov 2023 19:16:15 +0000
+! Diff-Path: ../patches/2023.11.28.1156.patch#ruadlist
 a6003 1
 ||tlxjuj.com^$third-party
 d10215 1
@@ -37,10 +37,12 @@ a25700 1
 d25762 1
 a27836 1
 mail.ru##.grid__main-col > div[slot="main-column"] .search-container:style(margin-top: 4px !important; margin-bottom: 4px !important)
+a27857 1
+mail.ru##[slot="main-column"] > div:first-child + div + div[class*=" "]:not([class*="tgb"]):not([class*="tabs"])
 a27876 1
 mail.ru##div:not(.grid__main-col) > div[slot="main-column"] .search-container:style(margin-top: 4px !important; margin-bottom: 20px !important)
 d27888 1
 d28423 2
 a28424 2
 ! Конфликт с JS Fixes
-mail.ru##[slot="main-column"] > div:first-child + div + div[class*=" "]:not([class*="tgb"]):not([class*="tabs"])
+mail.ru##.tgb-wrapper:remove()

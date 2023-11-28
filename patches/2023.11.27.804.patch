@@ -1,8 +1,8 @@
-diff name:ruadlist lines:16 checksum:40942dc035
+diff name:ruadlist lines:21 checksum:12d98e20d3
 d4 2
 a5 2
-! Last modified: Tue, 28 Nov 2023 14:22:23 +0000
-! Diff-Path: ../patches/2023.11.28.862.patch#ruadlist
+! Last modified: Tue, 28 Nov 2023 19:16:15 +0000
+! Diff-Path: ../patches/2023.11.28.1156.patch#ruadlist
 d19146 1
 a19146 1
 1tv.ru,drive.ru,f1news.ru,gamemag.ru,kinonews.ru,kinorium.com,livejournal.com,myshows.me,onlinestreams.ru,pikabu.ru,pluggedin.ru,sovsport.ru,spletnik.ru,trinixy.ru,www.pesticidy.ru##a[href*="//ads.adfox.ru/"]
@@ -15,3 +15,8 @@ a22297 1
 ||market.yandex.ru/widget/$script,domain=hi-tech.mail.ru
 d22310 1
 d25765 1
+a27861 1
+mail.ru##[slot="main-column"] > div:first-child + div + div[class*=" "]:not([class*="tgb"]):not([class*="tabs"])
+d28428 1
+a28428 1
+mail.ru##.tgb-wrapper:remove()
