@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 29 Nov 2023 10:25:08 +0000
-! Diff-Path: ../patches/2023.11.29.625.patch#ruadlist
+! Last modified: Wed, 29 Nov 2023 15:21:40 +0000
+! Diff-Path: ../patches/2023.11.29.921.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -8323,6 +8323,7 @@ by,~mail.ru,ru,~sportmail.ru,ua##.banner_box
 ##.merc_title_2
 ##.modul-search
 ##.module-one-search
+##.mov_ads
 ##.mts_ad_widget
 ##.mtt-adhesion-container
 ##.mywidget__col > .mywidget__link_advert
@@ -22043,6 +22044,8 @@ dzen.ru##.article__bottom-embed-wrapper > .ad-split-embed + div
 dzen.ru##.zen-ui-viewport-expansion__container:empty
 dzen.ru##.zenad-card-rtb
 dzen.ru##[data-name="video-in-combo-zen-container"]
+dzen.ru##div[class^="advert-panel"]
+dzen.ru#?#div[class^="grid__row-"]:-abp-has(> div[class^="video-card-ad"])
 dzen.ru##div[data-name^="zen2"]
 ! Дети
 deti.mail.ru##.cols__inner > .box
@@ -27638,13 +27641,14 @@ dzen.ru##div[aria-label="Карточка рекомендованного ви�
 dzen.ru##div[aria-label="Карточка рекомендованного видео"] ~ div:not([aria-label="Карточка рекомендованного видео"]) > div[id][class]
 dzen.ru##div[class*="article__"] > .undefined ~ div[class*="__middle"] > div[id][class]
 dzen.ru##div[class*="bannerMain"]
-dzen.ru##div[class*="geo-and-currency-widget__hasBanner"] div[class*="underWidget"]
 dzen.ru##div[class*="video-viewer-sidebar__ad"]
 dzen.ru##div[class*="videoCardAd"]
+dzen.ru##div[class*="widget__hasBanner"] div[class*="underWidget"]
 dzen.ru##div[class^="dzen-desktop__link_bro-"]
 dzen.ru##div[class^="dzen-desktop__teaser-"]
 dzen.ru##div[class^="dzen-wrapper-with-top-content-desktop__topContent-"] div[class^="promo-"]
 dzen.ru##div[class^="dzen-wrapper-with-top-content-desktop__topContent-"]:style(grid-template-columns: inherit !important)
+dzen.ru##div[class^="video-showcase-feed"] div[class^="grid__row"] > div[class*="heme"]
 dzen.ru##div[id][class$="__ad"]
 dzen.ru##div[id][class^="feed"] article[class*="_with-boder "]
 ! ---

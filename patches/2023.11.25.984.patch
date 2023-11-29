@@ -1,10 +1,12 @@
-diff name:ruadlist lines:90 checksum:f18883e45e
+diff name:ruadlist lines:100 checksum:13026ac808
 d4 2
 a5 2
-! Last modified: Wed, 29 Nov 2023 10:25:08 +0000
-! Diff-Path: ../patches/2023.11.29.625.patch#ruadlist
+! Last modified: Wed, 29 Nov 2023 15:21:40 +0000
+! Diff-Path: ../patches/2023.11.29.921.patch#ruadlist
 a6003 1
 ||tlxjuj.com^$third-party
+a8324 1
+##.mov_ads
 a9954 1
 edenland.com.ua##.popup__messengers ~ #bg-popup,.popup__messengers
 d10214 1
@@ -37,6 +39,9 @@ forum.zoneofgames.ru#?#p:-abp-has(> [src*="trk.mail.ru/"]) + p[style]
 d21993 1
 a21993 1
 ~3igames.mail.ru,~auto.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~cloud.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~esports.mail.ru,~games.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mailblog.mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##div[class*="main-col"] .tgb-wrapper
+a22041 2
+dzen.ru##div[class^="advert-panel"]
+dzen.ru#?#div[class^="grid__row-"]:-abp-has(> div[class^="video-card-ad"])
 d22287 1
 d22292 1
 a22292 1
@@ -68,6 +73,11 @@ a26081 3
 3dnews.kz,3dnews.ru##.article > .onadlable ~ .js-mediator-article a[href]:not([href^="/"]):not([href^="#"]):not([href*="3dnews."]):style(pointer-events: none !important; text-decoration: none !important; color: inherit !important)
 ! ---
 d27302 2
+d27637 1
+a27639 1
+dzen.ru##div[class*="widget__hasBanner"] div[class*="underWidget"]
+a27643 1
+dzen.ru##div[class^="video-showcase-feed"] div[class^="grid__row"] > div[class*="heme"]
 a27831 1
 mail.ru##.grid__main-col > div[slot="main-column"] .search-container:style(margin-top: 4px !important; margin-bottom: 4px !important)
 a27852 1
