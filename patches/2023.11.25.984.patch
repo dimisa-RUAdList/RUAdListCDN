@@ -1,8 +1,8 @@
-diff name:ruadlist lines:100 checksum:13026ac808
+diff name:ruadlist lines:108 checksum:c063d7f8bf
 d4 2
 a5 2
-! Last modified: Wed, 29 Nov 2023 15:21:40 +0000
-! Diff-Path: ../patches/2023.11.29.921.patch#ruadlist
+! Last modified: Wed, 29 Nov 2023 20:21:07 +0000
+! Diff-Path: ../patches/2023.11.29.1221.patch#ruadlist
 a6003 1
 ||tlxjuj.com^$third-party
 a8324 1
@@ -20,6 +20,8 @@ a12472 1
 ||povarenok.ru/css/*/sp.css$stylesheet
 a13090 1
 ||trk.mail.ru^$subdocument,domain=zoneofgames.ru
+a14770 1
+mk.ru###ya_feed_cont
 d18843 1
 d18977 1
 a18977 1
@@ -36,6 +38,12 @@ a21490 1
 forum.zoneofgames.ru##p > [src*="trk.mail.ru/"]
 a21499 1
 forum.zoneofgames.ru#?#p:-abp-has(> [src*="trk.mail.ru/"]) + p[style]
+d21795 1
+a21795 1
+pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: calc.[0569]{2}[0-9]{1}|min-height: calc.42|min-height: calc.43/)
+d21797 1
+a21797 1
+pikabu.ru##.stories-feed__container > .story[data-visited="false"] ~ .story:not([data-visited="false"])
 d21993 1
 a21993 1
 ~3igames.mail.ru,~auto.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~cloud.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~esports.mail.ru,~games.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mailblog.mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##div[class*="main-col"] .tgb-wrapper
