@@ -1,8 +1,8 @@
-diff name:ruadlist lines:73 checksum:12d98e20d3
+diff name:ruadlist lines:90 checksum:223ae282ae
 d4 2
 a5 2
-! Last modified: Tue, 28 Nov 2023 19:16:15 +0000
-! Diff-Path: ../patches/2023.11.28.1156.patch#ruadlist
+! Last modified: Wed, 29 Nov 2023 01:24:49 +0000
+! Diff-Path: ../patches/2023.11.29.84.patch#ruadlist
 a6003 1
 ||tlxjuj.com^$third-party
 a9954 1
@@ -18,9 +18,16 @@ a12472 1
 ||povarenok.ru/css/*/sp.css$stylesheet
 a13090 1
 ||trk.mail.ru^$subdocument,domain=zoneofgames.ru
+d18843 1
+d18977 1
+a18977 1
+bestradio.fm,elsyst.gnomio.com,forum.cxem.net,forum.niiot.net,freeopenvpn.org,ghame.ru,htmlweb.ru,kakoysegodnyaprazdnik.ru,kulichki.net,ph4.ru,pvpru.com,semestr.ru,videoredaktor.ru,xn--80aaiebcrjcibi8adgdtsm9z.xn--p1ai##[id^="aswift_"]
 d19144 1
 a19144 1
 1tv.ru,drive.ru,f1news.ru,gamemag.ru,kinonews.ru,kinorium.com,livejournal.com,myshows.me,onlinestreams.ru,pikabu.ru,pluggedin.ru,sovsport.ru,spletnik.ru,trinixy.ru,www.pesticidy.ru##a[href*="//ads.adfox.ru/"]
+d19154 1
+a19154 1
+1777.ru,1istochnik.ru,7days.ru,actualnews.org,allboxing.ru,argumenti.ru,atas.info,autosaratov.ru,autosport.com.ru,av.by,baby.ru,bel.ru,belkagomel.by,bidbaits.ru,carsweek.ru,cq.ru,ctc.ru,deita.ru,eva.ru,finam.ru,fishki.net,fontanka.ru,food.ru,friday.ru,iz.ru,kaifolog.net,lipetskmedia.ru,mel.fm,nashe.ru,new-magazine.ru,noob-club.ru,nsn.fm,om1.ru,osnmedia.ru,politrussia.com,povarenok.ru,prufy.ru,radiojazzfm.ru,radioultra.ru,realt.by,riamo.ru,rockfm.ru,russian.rt.com,rusvesna.su,sm.news,smolensk-i.ru,smotrim.ru,sovets.net,sovets24.ru,starhit.ru,study.ru,svpressa.ru,takiedela.ru,teleport2001.ru,topnews.ru,tv2.today,ukraina.ru,vm.ru,vsezdorovo.com,www.kolesa.ru,zaycev.net##a[href*="//zen.yandex.ru/"]
 a20248 1
 101kofemashina.ru##div[align="center"][class$="only"]
 a21490 1
@@ -42,10 +49,20 @@ rbc.ru#?#.item-in-article:-abp-has([href*="erid="])
 d22655 1
 a22655 1
 rbc.ru#?#.js-index-central-column > .js-index-doscroll:-abp-has([href*="erid="])
-d25696 1
-a25696 1
+d25696 2
+a25697 2
 @@/leftad.js|$script,~third-party,domain=game4you.top|games-pc.top|innal.top|naylo.top|rustorka.com|rustorka.net|rustorka.top|rustorkacom.lib
+@@/pagead2.$domain=axd.semestr.ru|d-mod.ru|elsyst.gnomio.com|htmlweb.ru|math.semestr.ru|minimalsy.xyz|mysmsbox.ru|ph4.ru|profatom.ru|pvpru.com|sitecoder.blogspot.ru|slushat-tekst-pesni.ru|sovremennoepravo.ru|survarium.pro|temp-mail.org|trialkeys.ru|tvfeed.in|www.inoreader.com
+d25724 1
+a25741 1
+@@||contextual.media.net/dmedianet.js|$object,domain=tests24.su
 d25758 1
+a25758 1
+@@||google-analytics.com/analytics.js|$object,domain=tests24.su
+d25796 1
+a25796 1
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js|$domain=3dsmaxvideo.ru|595.ucoz.net|adult-images.ru|anypictures.ru|archicadvideo.ru|autocadvideo.ru|blogging-techies.com|botrix.live|coreldrawvideo.ru|crast.net|daz3d.ru|di.fm|electric-house.ru|excelvideo.ru|fcportables.com|forums.rusmedserv.com|freeopenvpn.org|ikigaitest.com|imgbum.ru|investing.com|izi-invest.ru|kompasvideo.ru|kvadratmetr.uz|mod-wot.ru|nv.ua|oligarx.uz|otzovik.com|ozlib.com|parnuxi.biz|photoshopvideo.ru|pixcloud.ru|radio-archive.ru|radioromantika.ru|solidworksvideo.ru|stroi-help.ru|tarkov-market.com|tehnar.net.ua|tehnobzor.ru|tehnografi.com|tests24.su|tubeload.co|videoredaktor.ru|wordvideo.ru|xpicture.ru|yvid.ru
+d25841 1
 a26081 3
 3dnews.kz,3dnews.ru##.article > .onadlable
 3dnews.kz,3dnews.ru##.article > .onadlable ~ .js-mediator-article a[href]:not([href^="/"]):not([href^="#"]):not([href*="3dnews."]):style(pointer-events: none !important; text-decoration: none !important; color: inherit !important)
