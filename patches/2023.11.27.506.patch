@@ -1,8 +1,8 @@
-diff name:ruadlist lines:90 checksum:6cab64b83e
+diff name:ruadlist lines:99 checksum:78bb7e50bd
 d4 2
 a5 2
-! Last modified: Thu, 30 Nov 2023 16:28:18 +0000
-! Diff-Path: ../patches/2023.11.30.988.patch#ruadlist
+! Last modified: Thu, 30 Nov 2023 21:18:13 +0000
+! Diff-Path: ../patches/2023.11.30.1278.patch#ruadlist
 a8325 1
 ##.mov_ads
 a13091 1
@@ -38,12 +38,18 @@ d20480 1
 a20480 1
 irr.by,securitylab.ru##div[class^="banner_"]
 d20655 1
+d21795 1
+a21795 1
+||pikabu.ru/ajax/?*&vn_buff=$xmlhttprequest,domain=pikabu.ru
 d21799 1
 a21799 1
-pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: calc.[0569]{2}[0-9]{1}|min-height: calc.42|min-height: calc.43/)
+pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: calc.[0569]{2}[0-9]{1}|min-height: calc.41/)
 d21801 1
 a21801 1
 pikabu.ru##.stories-feed__container > .story[data-comments] ~ .story:not([data-comments])
+d21813 1
+a21814 1
+pikabu.ru##div[class^="sidebar-block "] ~ .sidebar-block_border ~ .sidebar-block_border ~ div[class^="sidebar-block "]:not(.sidebar-block_border)
 d21997 1
 a21997 1
 ~3igames.mail.ru,~auto.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~cloud.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~esports.mail.ru,~games.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mailblog.mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##div[class*="main-col"] .tgb-wrapper
@@ -85,6 +91,9 @@ mail.ru##[slot="main-column"] > div:first-child + div + div[class*=" "]:not([cla
 a27877 1
 mail.ru##div:not(.grid__main-col) > div[slot="main-column"] .search-container:style(margin-top: 4px !important; margin-bottom: 20px !important)
 d27889 1
+d28407 1
+a28407 1
+~3igames.mail.ru,~auto.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~esports.mail.ru,~games.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mailblog.mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##+js(set-constant, mr._mimic.locator, undefined)
 d28424 2
 a28425 2
 ! Конфликт с JS Fixes
