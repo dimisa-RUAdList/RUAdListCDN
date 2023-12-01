@@ -1,25 +1,46 @@
-diff name:ruadlist lines:24 checksum:bf40d35b75
+diff name:ruadlist lines:45 checksum:bce2e04af3
 d4 2
 a5 2
-! Last modified: Fri, 01 Dec 2023 12:37:43 +0000
-! Diff-Path: ../patches/2023.12.1.757.patch#ruadlist
+! Last modified: Fri, 01 Dec 2023 17:21:02 +0000
+! Diff-Path: ../patches/2023.12.1.1041.patch#ruadlist
 a15011 1
 anilib.one,anilib.top,anilibria.iss.one,anilibria.tv##.advert-header
-a17076 1
-anilib.one,anilib.top,anilibria.iss.one,anilibria.tv##.new-header
 d20021 1
 d21783 1
 a21783 1
 ||pikabu.ru/ajax/?*&vn_buff=$xmlhttprequest,domain=pikabu.ru
 d21787 1
 a21787 1
-pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: calc.[0569]{2}[0-9]{1}|min-height: calc.41/)
+pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: calc.[0569]{2}[0-9]{1}|min-height: calc.+4[1-9]/)
 d21801 1
 a21802 1
 pikabu.ru##div[class^="sidebar-block "] ~ .sidebar-block_border ~ .sidebar-block_border ~ div[class^="sidebar-block "]:not(.sidebar-block_border)
+a22605 1
+mail.rambler.ru##div[class^="AddBillboard"]
+a26161 2
+anilib.one,anilib.top,anilibria.iss.one,anilibria.tv##.new-header
+! ---
+d27620 1
+a27620 1
+dzen.ru##[class*="Floors"] div[id][class^="feed"] [class*="wrapper"][aria-label] ~ article:not([aria-label])
+d27623 1
+a27623 1
+dzen.ru##aside[id^="article_"][class*="righ"] > div[class]
+d27627 1
+a27627 3
+dzen.ru##div[class*="PunchCardsOnVideoShowcase"] div[aria-label="Реклaмный блок"]
+dzen.ru##div[class*="PunchCardsOnVideoShowcase"] div[class^="grid__row"] > div[class*="heme"]
+dzen.ru##div[class*="article__"] > .undefined ~ div[class*="__mid"] > div[id][class]
+d27631 1
+a27631 1
+dzen.ru##div[class*="widget__hasBanner"] > div ~ div
+d27637 1
+d27639 1
+a27639 1
+dzen.ru##div[id][class^="feed"] article[class*="_with-border "]
 d28366 1
 a28366 1
 ||vk.com/video_ext.php?$third-party,subdocument,removeparam=autoplay,domain=~mediahope.ru
 d28397 1
 a28397 1
-~3igames.mail.ru,~auto.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~esports.mail.ru,~games.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mailblog.mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##+js(set-constant, mr._mimic.locator, undefined)
+~3igames.mail.ru,~auto.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~esports.mail.ru,~games.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mailblog.mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##+js(set-constant, mr._mimic.encryptPath, undefined)

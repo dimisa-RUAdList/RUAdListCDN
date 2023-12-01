@@ -1,8 +1,8 @@
-diff name:ruadlist lines:84 checksum:bf40d35b75
+diff name:ruadlist lines:99 checksum:bce2e04af3
 d4 2
 a5 2
-! Last modified: Fri, 01 Dec 2023 12:37:43 +0000
-! Diff-Path: ../patches/2023.12.1.757.patch#ruadlist
+! Last modified: Fri, 01 Dec 2023 17:21:02 +0000
+! Diff-Path: ../patches/2023.12.1.1041.patch#ruadlist
 a8325 1
 ##.mov_ads
 d13605 1
@@ -13,8 +13,6 @@ a15011 1
 anilib.one,anilib.top,anilibria.iss.one,anilibria.tv##.advert-header
 d15097 1
 d16850 1
-a17078 1
-anilib.one,anilib.top,anilibria.iss.one,anilibria.tv##.new-header
 d17174 1
 d17296 1
 d18126 1
@@ -43,7 +41,7 @@ a21796 1
 ||pikabu.ru/ajax/?*&vn_buff=$xmlhttprequest,domain=pikabu.ru
 d21800 1
 a21800 1
-pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: calc.[0569]{2}[0-9]{1}|min-height: calc.41/)
+pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: calc.[0569]{2}[0-9]{1}|min-height: calc.+4[1-9]/)
 d21802 1
 a21802 1
 pikabu.ru##.stories-feed__container > .story[data-comments] ~ .story:not([data-comments])
@@ -53,6 +51,8 @@ pikabu.ru##div[class^="sidebar-block "] ~ .sidebar-block_border ~ .sidebar-block
 a22046 2
 dzen.ru##div[class^="advert-panel"]
 dzen.ru#?#div[class^="grid__row-"]:-abp-has(> div[class^="video-card-ad"])
+a22616 1
+mail.rambler.ru##div[class^="AddBillboard"]
 d25702 1
 a25702 1
 @@/pagead2.$domain=axd.semestr.ru|d-mod.ru|elsyst.gnomio.com|htmlweb.ru|math.semestr.ru|minimalsy.xyz|mysmsbox.ru|ph4.ru|profatom.ru|pvpru.com|sitecoder.blogspot.ru|slushat-tekst-pesni.ru|sovremennoepravo.ru|survarium.pro|temp-mail.org|trialkeys.ru|tvfeed.in|www.inoreader.com
@@ -65,13 +65,28 @@ d25800 1
 a25800 1
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js|$domain=3dsmaxvideo.ru|595.ucoz.net|adult-images.ru|anypictures.ru|archicadvideo.ru|autocadvideo.ru|blogging-techies.com|botrix.live|coreldrawvideo.ru|crast.net|daz3d.ru|di.fm|electric-house.ru|excelvideo.ru|fcportables.com|forums.rusmedserv.com|freeopenvpn.org|ikigaitest.com|imgbum.ru|investing.com|izi-invest.ru|kompasvideo.ru|kvadratmetr.uz|mod-wot.ru|nv.ua|oligarx.uz|otzovik.com|ozlib.com|parnuxi.biz|photoshopvideo.ru|pixcloud.ru|radio-archive.ru|radioromantika.ru|solidworksvideo.ru|stroi-help.ru|tarkov-market.com|tehnar.net.ua|tehnobzor.ru|tehnografi.com|tests24.su|tubeload.co|videoredaktor.ru|wordvideo.ru|xpicture.ru|yvid.ru
 d25845 1
+a26172 2
+anilib.one,anilib.top,anilibria.iss.one,anilibria.tv##.new-header
+! ---
 d27018 2
+d27633 1
+a27633 1
+dzen.ru##[class*="Floors"] div[id][class^="feed"] [class*="wrapper"][aria-label] ~ article:not([aria-label])
+d27636 1
+a27636 1
+dzen.ru##aside[id^="article_"][class*="righ"] > div[class]
+d27640 1
+a27640 3
+dzen.ru##div[class*="PunchCardsOnVideoShowcase"] div[aria-label="Реклaмный блок"]
+dzen.ru##div[class*="PunchCardsOnVideoShowcase"] div[class^="grid__row"] > div[class*="heme"]
+dzen.ru##div[class*="article__"] > .undefined ~ div[class*="__mid"] > div[id][class]
 d27642 1
 a27644 2
-dzen.ru##div[class*="widget__hasBanner"] div[class*="underWidget"]
+dzen.ru##div[class*="widget__hasBanner"] > div ~ div
 dzen.ru##div[class^="auto-slide-ad__container"]
-a27648 1
-dzen.ru##div[class^="video-showcase-feed"] div[class^="grid__row"] > div[class*="heme"]
+d27650 1
+a27650 1
+dzen.ru##div[id][class^="feed"] article[class*="_with-border "]
 a27858 1
 mail.ru##[slot="main-column"] > div:first-child + div + div[class*=" "]:not([class*="tgb"]):not([class*="tabs"])
 d28376 1
@@ -79,7 +94,7 @@ a28376 1
 ||vk.com/video_ext.php?$third-party,subdocument,removeparam=autoplay,domain=~mediahope.ru
 d28407 1
 a28407 1
-~3igames.mail.ru,~auto.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~esports.mail.ru,~games.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mailblog.mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##+js(set-constant, mr._mimic.locator, undefined)
+~3igames.mail.ru,~auto.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~esports.mail.ru,~games.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mailblog.mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##+js(set-constant, mr._mimic.encryptPath, undefined)
 d28425 1
 a28425 1
 mail.ru##.tgb-wrapper:remove()
