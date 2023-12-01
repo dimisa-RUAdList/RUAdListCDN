@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 30 Nov 2023 21:18:13 +0000
-! Diff-Path: ../patches/2023.11.30.1278.patch#ruadlist
+! Last modified: Fri, 01 Dec 2023 02:36:55 +0000
+! Diff-Path: ../patches/2023.12.1.156.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -15009,6 +15009,7 @@ ukranews.com##.adversiting
 gtk.tv##.adversting-block-1 > .col-no-padding
 1obl.ru,biofile.ru,domodedovoriamo.ru,flashgames.ru,footballreview.ru,forum.mista.ru,girlsgogames.ru,inforesist.org,klinriamo.ru,kolomnariamo.ru,korolevriamo.ru,krasnogorskriamo.ru,kubnews.ru,lubertsyriamo.ru,mytischiriamo.ru,nightwarez.ru,nur.kz,paparazzi.ru,podolskriamo.ru,reutovriamo.ru,riamo.ru,riamobalashiha.ru,schelkovoriamo.ru,sergposadriamo.ru,serialu.tv,serpuhovriamo.ru,solnechnogorskriamo.ru,zhukovskiyriamo.ru##.advert
 study.ru##.advert-banner-wrap
+anilib.one,anilib.top,anilibria.iss.one,anilibria.tv##.advert-header
 doska.tamboff.ru##.advert-tizer
 ucheba.ru##.advert-uz-block
 qip.ru##.advertTop
@@ -17074,6 +17075,7 @@ znaj.ua##.new-banners
 tvigle.ru##.new-bgs-o
 grimuar.ru##.new-block
 warhead.su##.new-cds-banner
+anilib.one,anilib.top,anilibria.iss.one,anilibria.tv##.new-header
 govoritmoskva.ru##.newContent > .all > :not(.button)
 jewishnews.com.ua##.newcatside-left
 liveday.ru##.news > center > a[target="_blank"] > img
@@ -20018,7 +20020,6 @@ comss.ru##body > .dlblock ~ .container > div[style="margin-top:25px;margin-botto
 comss.ru##body > .dlblock ~ .container[style="padding-top:12px;"]
 2x2tv.ru##body > .gifimg
 uzum.tv##body > .head
-anilib.one,anilib.top,anilibria.iss.one,anilibria.tv##body > .header
 avtoradio.ru##body > .info-block
 barsportbar.com,channels247.net,goool7.ws,s7yours.com,sbautumn.com,sport7.biz,sportabar01.com,sportbar.biz,sportbarchik88.com,sporting77.com,sportsite777.com,spotless365.net##body > .js-div:empty
 zorgee.ru##body > .jumbotron
@@ -28363,7 +28364,7 @@ igromania.ru#?#section[class^="MaterialsManufacturerPage_infiniteWrap"] > div[cl
 ||video.matchtv.ru/iframe/feed/*autostart=1$subdocument,removeparam=autostart
 ||video.matchtv.ru/iframe/feed/*autostart=1$subdocument,removeparam=skin_name
 ||viqeo.tv/*/vq_starter.js$third-party,script,domain=dni.ru|~dom.mail.ru|kanobu.ru|~lady.mail.ru|lifehacker.ru|mail.ru|pravda.ru|sportmail.ru|womanhit.ru
-||vk.com/video_ext.php?$third-party,subdocument,removeparam=autoplay
+||vk.com/video_ext.php?$third-party,subdocument,removeparam=autoplay,domain=~mediahope.ru
 ||widgets.kinopoisk.ru/discovery/trailer/*&loop=1&autoplay=1$subdocument,domain=www.kinopoisk.ru
 ||yandex.ru/ads/system/context.js|$important,script,domain=playground.ru
 ||youtube-nocookie.com/embed/*autoplay=1$subdocument,removeparam=autoplay,domain=weukraine.tv
