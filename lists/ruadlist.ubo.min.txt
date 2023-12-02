@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 02 Dec 2023 08:22:39 +0000
-! Diff-Path: ../patches/2023.12.2.502.patch#ruadlist
+! Last modified: Sat, 02 Dec 2023 13:20:24 +0000
+! Diff-Path: ../patches/2023.12.2.800.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10602,6 +10602,7 @@ lada.kz/uploads/banners/
 ||1000ukg.kz/uploads/banner/
 ||101.ru/static/js/library/mills/
 ||101.ru^*smi$subdocument
+||101kofemashina.ru/jura$image
 ||101kofemashina.ru/nivona/$image
 ||13min.ru/wp-content/*/popups/
 ||13rus.ru/*/$object
@@ -20065,6 +20066,7 @@ realnoevremya.ru##body > div:not([id]):not([class])[style^="width: 350px;"]
 remake.net.ru,zarlit.com##body > div[align="center"]
 gamesisart.ru##body > div[align="left"][style^="position: fixed;"]
 siver.com.ua##body > div[align="right"] > span
+povarenok.ru##body > div[class*="23"]
 999.md,delo.ua,nevasport.ru##body > div[class*="branding"]
 progipertoniyu.ru##body > div[class*="modal"]
 votrube.ru##body > div[class]:last-of-type
@@ -25688,7 +25690,7 @@ gbsmp.ru#@#img[width="728"][height="90"]
 @@/js/advert.js$~third-party
 @@/js/prebid-ads.js|$script,domain=2rezka.ru|hdrezka.by|key-hub.eu|old-games.ru
 @@/js/siropu/am/ads.min.js$script,~third-party,domain=customgames.ru|fantasticcraft.ru
-@@/leftad.js|$script,~third-party,domain=game4you.top|games-pc.top|innal.top|naylo.top|rustorka.com|rustorka.net|rustorka.top|rustorkacom.lib
+@@/leaderad.js|$script,~third-party,domain=game4you.top|games-pc.top|innal.top|naylo.top|rustorka.com|rustorka.net|rustorka.top|rustorkacom.lib
 @@/pagead2.$domain=axd.semestr.ru|d-mod.ru|elsyst.gnomio.com|htmlweb.ru|math.semestr.ru|minimalsy.xyz|mysmsbox.ru|ph4.ru|profatom.ru|pvpru.com|sitecoder.blogspot.ru|slushat-tekst-pesni.ru|sovremennoepravo.ru|survarium.pro|temp-mail.org|trialkeys.ru|tvfeed.in|www.inoreader.com
 @@/player/player_ads.html$subdocument,domain=720video.me|bessporno.me|camsclips.biz|ebalovo.adult|ebalovo.porn|ebalovo.pro|lenkino.adult|pbembed.me|porno365.bingo|pornobit.mobi|pornobomba.click|pornobomba.vip|pornoham.me|pornomoll.red|porntn.com|private-records.com|ru-xvideos.me|russkoe21.com
 @@/templates/*/adblock/adframe.*.js$script,~third-party,domain=filmisub.com|kinofen.net
@@ -27996,7 +27998,6 @@ friends.in.ua,gidonline.eu##+js(abort-on-property-read, atob)
 vprognoze.ru##+js(abort-on-property-read, bannersBillboard)
 terrikon.com##+js(abort-on-property-read, bdy)
 medicina.ua##+js(abort-on-property-read, blocked_action)
-anidub.vip,anidubonline.com##+js(abort-on-property-read, brblob)
 overclockers.ru##+js(abort-on-property-read, cardinals)
 zaruba.fun##+js(abort-on-property-read, clickNS4)
 vesti.ua##+js(abort-on-property-read, createAds)
@@ -28150,6 +28151,7 @@ motorpage.ru##+js(no-xhr-if, /br/)
 116.ru,14.ru,161.ru,164.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,62.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,proizhevsk.ru,provoronezh.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,www.fontanka.ru##+js(no-xhr-if, /hits/event/, method:POST)
 4pda.to##+js(no-xhr-if, /m2?_)
 adme.media##+js(no-xhr-if, /wl-analytics\.tsp\.li/)
+anidub.vip,anidubonline.com,loveanime.live##+js(no-xhr-if, exchange.buzzoola.com)
 livejournal.com##+js(no-xhr-if, livejournal.com/video/check?recordId=)
 sm.news##+js(no-xhr-if, method:GET)
 dzen.ru,frontend.vh.yandex.ru,widgets.kinopoisk.ru,www.kinopoisk.ru,yastatic.net##+js(no-xhr-if, strm.yandex.ru/get/)
@@ -28229,7 +28231,6 @@ forbes.ru##+js(set-constant, Object.prototype.utm_term, false)
 free-tor.info,korsars.info##+js(set-constant, String.fromCharCode, trueFunc)
 vo-dela.su##+js(set-constant, accept18, true)
 hentai-share.one##+js(set-constant, adBlock, false)
-anidub.vip,anidubonline.com,loveanime.live##+js(set-constant, adblock, true)
 gdz-putina.fun,gdz.ninja,gdz.ru,gdzotputina.club,gdzputina.net,megaresheba.com,megaresheba.ru,resheba.me,spishi.fun,zoobrilka.net##+js(set-constant, app.book.external, null)
 razlozhi.ru##+js(set-constant, cadb, false)
 audioportal.su##+js(set-constant, clicks, 2)
