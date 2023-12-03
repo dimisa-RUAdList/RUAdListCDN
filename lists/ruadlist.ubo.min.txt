@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 03 Dec 2023 09:17:47 +0000
-! Diff-Path: ../patches/2023.12.3.557.patch#ruadlist
+! Last modified: Sun, 03 Dec 2023 14:19:05 +0000
+! Diff-Path: ../patches/2023.12.3.859.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10013,7 +10013,7 @@ asienda.ru,diets.ru,mycharm.ru,myjane.ru,povarenok.ru,stranamam.ru##div[class^="
 rutvet.ru##div[data-type="anti-abp"]
 kinobb.net##div[id$="odalWin"]
 techmusic.ru##div[id^="_uwndTop"]
-pornhub.com##div[id^="age-verification"]
+pornhub.com##div[id^="age"][id*="erification"]
 wuzzup.ru##div[id^="arevicofancy-"]
 fishki.net##div[id^="b-close"]
 formulalubvi.com##div[id^="custom_fan_gate_overlay"]
@@ -10758,8 +10758,8 @@ lada.kz/uploads/banners/
 ||alicdn.com^$domain=nnm-club.lib|nnm-club.me|nnmclub.ro|nnmclub.to|prostolinux.ru|ru-an.info|rutracker.ru|savepic.ru|smartbobr.ru|vsaduidoma.com
 ||aliexpress.com^$domain=floradoma.com|gadgetmir.org|medickon.com|multrecept.com|tvoipitomec.com|tvoipitomec.info
 ||aliimg.com^$domain=chem21.info
-||all-episodes.*/images/abc/
-||all-episodes.*/vast.js
+||all-episodes*/images/abc/
+||all-episodes*/vast.js
 ||allbasketball.org/uploads/partners/
 ||allbasketball.org^*/branding/
 ||allbasketball.org^*/fnbt/
@@ -20447,7 +20447,7 @@ myplaycity.ru##div[class^="advertisement"]
 rau.ua,zn.ua##div[class^="advertising"]
 dfm.ru,hitfm.ru,maximum.ru,montecarlo.ru,rusradio.ru##div[class^="advertising-"][class*="-popup-overlay"]
 multoigri.ru##div[class^="advertising-content-"]
-all-episodes.com##div[class^="advtss"]
+all-episodesfun.com##div[class^="advtss"]
 ekaraganda.kz##div[class^="aks-"]
 gamer.ru##div[class^="alarmalarm-banner"]
 shotam.info##div[class^="angwp_"]
@@ -21870,7 +21870,7 @@ $script,~third-party,domain=defileb.com|fplay.online|hovels.info|likelol.online|
 2ip.io,2ip.ru#?#.content-article p:-abp-has(> .adsbygoogle)
 2ip.io,2ip.ru#?#.narrow-column > style + div > div:-abp-has(a[target="_blank"])
 2ip.io,2ip.ru##.test-vpn
-2ip.io,2ip.ru##a[href*="/?url="]
+2ip.io,2ip.ru##a[href*="/?"][href*="="]
 2ip.io,2ip.ru##nav li a[target="_blank"]
 ! Auto.ru
 auto.ru##.BankCardForm
@@ -26131,8 +26131,8 @@ alexfilm.org##main > .container:style(margin-top: 50px !important)
 ! ---
 alexua.tv##.static_content:style(min-height: 0 !important)
 ! ---
-all-episodes.com##body > .wrapper:style(margin-top: 0 !important; max-width: unset !important)
-all-episodes.com##body:style(background-image: none !important)
+all-episodesfun.com##body > .wrapper:style(margin-top: 0 !important; max-width: unset !important)
+all-episodesfun.com##body:style(background-image: none !important)
 ! ---
 allbasketball.org,bit.ua,gidonline.fun,greenpost.ua,kinoboom.su,kinogo-720.net,oblozhki.net,repackov.net,sportboom.info,uateam.tv,urologypro.ru,virusinfo.info##body:not(#id):style(margin-top: 0 !important)
 ! ---
@@ -27298,7 +27298,7 @@ s13.ru##body > .wrapper:style(top: 0 !important)
 ! Sdamgia
 sdamgia.ru###old_school > .App > div > [color="red"]
 sdamgia.ru##.menu[role="navigation"] div[style]:style(height: auto !important)
-sdamgia.ru##aside > div[class]:first-child > div:style(height: auto !important)
+sdamgia.ru##aside > div[class]:first-child div:style(height: auto !important)
 sdamgia.ru##div[style*="height:"] > a[target="_blank"] > img[src^="data:"]
 ! ---
 sc2tv.ru##.body--brranding > .content:style(margin-top: unset !important)

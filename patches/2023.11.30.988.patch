@@ -1,10 +1,17 @@
-diff name:ruadlist lines:73 checksum:1ae191e665
+diff name:ruadlist lines:93 checksum:25f5ba8720
 d4 2
 a5 2
-! Last modified: Sun, 03 Dec 2023 09:17:47 +0000
-! Diff-Path: ../patches/2023.12.3.557.patch#ruadlist
+! Last modified: Sun, 03 Dec 2023 14:19:05 +0000
+! Diff-Path: ../patches/2023.12.3.859.patch#ruadlist
+d10016 1
+a10016 1
+pornhub.com##div[id^="age"][id*="erification"]
 a10604 1
 ||101kofemashina.ru/jura$image
+d10760 2
+a10761 2
+||all-episodes*/images/abc/
+||all-episodes*/vast.js
 a11689 1
 ||itechua.com/wp-content/uploads/*-dpi_news$image
 a15011 1
@@ -18,6 +25,9 @@ povarenok.ru##body > div[class*="23"]
 d20071 1
 a20071 1
 anilib.moe,anilib.one,anilib.top,anilibria.iss.one,anilibria.tv##body > div[class]:not([id]):nth-child(-n+5) > a[href]
+d20447 1
+a20447 1
+all-episodesfun.com##div[class^="advtss"]
 d21783 1
 a21783 1
 ||pikabu.ru/ajax/?zxz=2&_key=$xmlhttprequest,domain=pikabu.ru
@@ -27,6 +37,9 @@ pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: calc.[0569]{2}[0-9]{
 d21801 1
 a21802 1
 pikabu.ru##div[class^="sidebar-block "] ~ .sidebar-block_border ~ .sidebar-block_border ~ div[class^="sidebar-block "]:not(.sidebar-block_border)
+d21870 1
+a21870 1
+2ip.io,2ip.ru##a[href*="/?"][href*="="]
 a22358 1
 ok.ru###hook_Block_FixedPromoBanner
 a22605 1
@@ -34,6 +47,10 @@ mail.rambler.ru##div[class^="AddBillboard"]
 d25690 1
 a25690 1
 @@/leaderad.js|$script,~third-party,domain=game4you.top|games-pc.top|innal.top|naylo.top|rustorka.com|rustorka.net|rustorka.top|rustorkacom.lib
+d26129 2
+a26130 2
+all-episodesfun.com##body > .wrapper:style(margin-top: 0 !important; max-width: unset !important)
+all-episodesfun.com##body:style(background-image: none !important)
 a26161 2
 anilib.moe,anilib.one,anilib.top,anilibria.iss.one,anilibria.tv##.new-header
 ! ---
@@ -44,6 +61,9 @@ ag,biz,buzz,by,city,club,co,com,in,ink,loan,me,name,net,org,rest,run,sh,so,today
 d26812 1
 a26812 1
 hi-news.ru,itechua.com,kino-teatr.ua##body:style(background: none !important)
+d27294 1
+a27294 1
+sdamgia.ru##aside > div[class]:first-child div:style(height: auto !important)
 d27620 1
 a27620 1
 dzen.ru##[class*="Floors"] div[id][class^="feed"] [class*="wrapper"][aria-label] ~ article:not([aria-label])
