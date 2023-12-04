@@ -1,8 +1,8 @@
-diff name:ruadlist lines:134 checksum:b2dccf4ff5
+diff name:ruadlist lines:150 checksum:9ad2123df3
 d4 2
 a5 2
-! Last modified: Mon, 04 Dec 2023 15:21:40 +0000
-! Diff-Path: ../patches/2023.12.4.921.patch#ruadlist
+! Last modified: Mon, 04 Dec 2023 20:21:28 +0000
+! Diff-Path: ../patches/2023.12.4.1221.patch#ruadlist
 a1305 1
 ||cr09.biz^$third-party
 a1640 1
@@ -33,6 +33,7 @@ d15012 1
 a15012 1
 anilib.moe,anilib.one,anilib.top,anilibria.iss.one,anilibria.tv##.advert-header
 d17078 1
+d18412 1
 d18587 1
 d19296 1
 a19296 1
@@ -49,6 +50,12 @@ d20363 1
 d20448 1
 a20448 1
 all-episodesfun.com##div[class^="advtss"]
+a20498 1
+goodfon.ru##div[class^="center_banner"]
+a20650 1
+xenforo.info##div[class^="vds-cloud"]
+d20658 1
+d21750 1
 d21788 1
 a21788 1
 pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: calc.[0569]{2}[0-9]{1}|min-height: calc.+.em/)
@@ -57,7 +64,7 @@ a21790 1
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:-abp-contains(/context":"http:$/))
 d21800 1
 a21800 1
-pikabu.ru#?#div[class*="page-story__"] div:-abp-properties(/min-height: calc./)
+pikabu.ru#?#div[class*="page-story__"] div:-abp-properties(/min-height: [02345]{2}[0-9]{1}|min-height: calc./)
 d21871 2
 a21872 3
 2ip.io,2ip.ru##a[href*="/?"][href*="="][class]
@@ -77,10 +84,14 @@ d22706 2
 a22709 1
 gdespaces.com,gdespaces.net,spac.me,spac.run,spac.wtf,spac1.com,spac1.info,spac1.me,spac1.net,spac1.org,spac1.ru,spaces-blogs.com,spaces.im,spcs-files.xyz,spcs.bio,spcs.global,spcs.life,spcs.me,spcs.network,spcs.news,spcs.pro,spcs.pub,spcs.reviews,spcs.social,strip2.in,strip2.xxx,usersporn.com##.rightbar__reklama
 a22914 1
-dzen.ru##div[class*="_widget-"] div[class]:not([id]) > div[id]:not([class])
+dzen.ru##div[class*="_widget-"] > div > div:not([class*="geoblock"]):not([class*="widget"])
+d24810 1
 d25691 1
 a25691 1
 @@/leaderad.js|$script,~third-party,domain=game4you.top|games-pc.top|innal.top|naylo.top|rustorka.com|rustorka.net|rustorka.top|rustorkacom.lib
+d25870 1
+a25870 1
+au-ok.com,aume.ru#@##banner_adsense
 d26130 2
 a26131 2
 all-episodesfun.com##body > .wrapper:style(margin-top: 0 !important; max-width: unset !important)
@@ -122,6 +133,8 @@ d27640 1
 a27640 1
 dzen.ru##div[id][class^="feed"] article[class*="_with-border "]
 d27996 1
+a28080 1
+aida64.com.ua,aida64russia.com##+js(addEventListener-defuser, wheel)
 d28134 1
 a28135 1
 dracon-zet.ru##+js(no-setTimeout-if, getComputedStyle, 250)
@@ -130,6 +143,9 @@ anidub.vip,anidubonline.com,loveanime.live##+js(no-xhr-if, exchange.buzzoola.com
 a28168 1
 online-fix.me##+js(remove-node-text, #text, РЕКЛАМНЫЙ БЛОК:)
 d28229 1
+a28308 2
+aida64.com.ua,aida64russia.com##body.q-body--prevent-scroll > .q-dialog--modal
+aida64.com.ua,aida64russia.com##body.q-body--prevent-scroll:style(position: unset !important)
 d28398 1
 a28398 1
 ~3igames.mail.ru,~auto.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~esports.mail.ru,~games.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mailblog.mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##+js(set-constant, mr._mimic.locator.setup, undefined)

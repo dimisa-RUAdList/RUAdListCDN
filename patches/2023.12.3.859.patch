@@ -1,8 +1,8 @@
-diff name:ruadlist lines:73 checksum:b2dccf4ff5
+diff name:ruadlist lines:89 checksum:9ad2123df3
 d4 2
 a5 2
-! Last modified: Mon, 04 Dec 2023 15:21:40 +0000
-! Diff-Path: ../patches/2023.12.4.921.patch#ruadlist
+! Last modified: Mon, 04 Dec 2023 20:21:28 +0000
+! Diff-Path: ../patches/2023.12.4.1221.patch#ruadlist
 a1305 1
 ||cr09.biz^$third-party
 a1640 1
@@ -21,11 +21,18 @@ a12476 1
 d14856 1
 a14856 1
 agroter.com.ua,autocentre.ua,cheline.com.ua,itechua.com,te.ua,ternopillive.com,uamotors.com.ua##.a-single
+d18413 1
 d18588 1
 d19297 1
 a19297 1
 aacalc.ru,agronews.ua,agroter.com.ua,ain.ua,ampercar.com,app2top.ru,argumenti.ru,arminfo.info,autogeek.com.ua,bib.bz,blizzardheroes.ru,csgo-guides.ru,daxshat.site,delfi.lt,dtf.ru,for-ua.info,gameinside.ua,games-vam.ru,goal24.live,ilenta.com,img2txt.com,kontrolnaya-rabota.ru,korsars.pro,kritka.su,kurkul.com,liveball7.gq,liveball8.ml,mezha.media,modsfire.com,newstudio.tv,onliner.by,onlinevideoconverter.com,pesni-tut.com,photoshop-besplatno.org,prosportua.com,psm7.com,real-game.net,rutracker-2017.org,skachat-igri-besplatno.info,soft-windows.info,stopgame.ru,tochka.net,topvideo.tj,torrent-shyter.net,trupornolabs.org,ua.news,varta1.com.ua,vc.ru,vgtimes.ru,windows-soft.info,xn--80ac9aeh6f.xn--p1ai,z-music.org,zbirna.com,zoneofgames.ru,zserials.cc##a[href*="bit.ly"]
 d20365 1
+a20500 1
+goodfon.ru##div[class^="center_banner"]
+a20652 1
+xenforo.info##div[class^="vds-cloud"]
+d20660 1
+d21752 1
 d21786 1
 a21786 1
 ||pikabu.ru/ajax/?*&vn_buff=$xmlhttprequest,domain=pikabu.ru
@@ -37,7 +44,7 @@ a21792 1
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:-abp-contains(/context":"http:$/))
 d21802 1
 a21802 1
-pikabu.ru#?#div[class*="page-story__"] div:-abp-properties(/min-height: calc./)
+pikabu.ru#?#div[class*="page-story__"] div:-abp-properties(/min-height: [02345]{2}[0-9]{1}|min-height: calc./)
 d21873 2
 a21874 3
 2ip.io,2ip.ru##a[href*="/?"][href*="="][class]
@@ -53,7 +60,11 @@ d22710 2
 a22713 1
 gdespaces.com,gdespaces.net,spac.me,spac.run,spac.wtf,spac1.com,spac1.info,spac1.me,spac1.net,spac1.org,spac1.ru,spaces-blogs.com,spaces.im,spcs-files.xyz,spcs.bio,spcs.global,spcs.life,spcs.me,spcs.network,spcs.news,spcs.pro,spcs.pub,spcs.reviews,spcs.social,strip2.in,strip2.xxx,usersporn.com##.rightbar__reklama
 a22918 1
-dzen.ru##div[class*="_widget-"] div[class]:not([id]) > div[id]:not([class])
+dzen.ru##div[class*="_widget-"] > div > div:not([class*="geoblock"]):not([class*="widget"])
+d24814 1
+d25874 1
+a25874 1
+au-ok.com,aume.ru#@##banner_adsense
 d26819 1
 a26819 1
 ampercar.com,hi-news.ru,itechua.com,kino-teatr.ua,mmr.net.ua,uamotors.com.ua##body:style(background: none !important)
@@ -67,8 +78,13 @@ d27632 2
 a27633 1
 dzen.ru##div[aria-label="Кaрточка рекомендованного видео"] ~ [aria-label]:not([aria-label="Кaрточка рекомендованного видео"])
 d27640 1
+a28086 1
+aida64.com.ua,aida64russia.com##+js(addEventListener-defuser, wheel)
 d28140 1
 a28141 1
 dracon-zet.ru##+js(no-setTimeout-if, getComputedStyle, 250)
 a28175 1
 online-fix.me##+js(remove-node-text, #text, РЕКЛАМНЫЙ БЛОК:)
+a28314 2
+aida64.com.ua,aida64russia.com##body.q-body--prevent-scroll > .q-dialog--modal
+aida64.com.ua,aida64russia.com##body.q-body--prevent-scroll:style(position: unset !important)

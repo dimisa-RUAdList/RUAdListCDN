@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 04 Dec 2023 15:21:40 +0000
-! Diff-Path: ../patches/2023.12.4.921.patch#ruadlist
+! Last modified: Mon, 04 Dec 2023 20:21:28 +0000
+! Diff-Path: ../patches/2023.12.4.1221.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -18413,7 +18413,6 @@ myshave.ru##.vbmenu_popup + div[align="center"]:not([id]):not([class])
 cheline.com.ua##.vc_empty_space
 bizua.org,podruzke.ru#?#.vce-related-box:-abp-has(> .main-box-inside script)
 l2db.ru##.vda
-xenforo.info##.vds-cloud
 mobportal.net##.verx_r
 facenews.ua##.verytopbanner
 vesti.ua##.vestiAds
@@ -20499,6 +20498,7 @@ buzulukday.ru,nsday.ru,orenday.ru,perevolockday.ru,saltday.ru,sorochinskday.ru##
 sportliga.com##div[class^="bulletin"]
 lada-granta.net,lkforum.ru##div[class^="but-150"]
 umu.org.ua##div[class^="c40-reveal-modal"]
+goodfon.ru##div[class^="center_banner"]
 chita.ru##div[class^="chitaru__wonder"]
 pogoda.meta.ua##div[class^="city__banner"]
 click-or-die.ru##div[class^="click-content"]
@@ -20651,6 +20651,7 @@ tourister.ru##div[class^="trstr_adv_"]
 alimero.ru##div[class^="two-column-page-sidebar-slided-boners"]
 kinonews.ru##div[class^="under_shapka"] > *
 zamunda.ch,zamunda.net##div[class^="unique-"]
+xenforo.info##div[class^="vds-cloud"]
 vesti.kz##div[class^="vesti-banner"]
 1fenshui.ru##div[class^="vex"]
 newbum.net##div[class^="videoban"]
@@ -20658,7 +20659,6 @@ coub.com##div[class^="viewer"][class*="banner"]
 virus-stop.com.ua##div[class^="virus-"]
 hqroom.ru##div[class^="vitrina"]
 goal24.live##div[class^="vjs-promo"]
-goodfon.ru##div[class^="wallpapers__banner"]
 dailyhoro.ru##div[class^="whatever"]
 genshin-info.ru##div[class^="wiad"]
 www.goha.ru##div[class^="widget-twitch"] > .data
@@ -21750,7 +21750,6 @@ doctorrouter.ru,ferr-um.ucoz.ru###vid_vpaut_div
 anivisual.net,apptractor.ru,browserleaks.com,ficbook.net,forum.vorota.de,kg-portal.ru,kulturologia.ru,newxboxone.ru,nookea.com,otzovik.com,root-nation.com,stalker-mods.clan.su,stalker-mods.su,studizba.com,todotech20.com##.adsbygoogle
 sitecoder.blogspot.ru##.adsbygoogle > *
 gtavicecity.ru##.article-ads
-goodfon.ru##.banner_240x400
 postila.ru##.masonry-brick.ads
 zoom.cnews.ru##.promo_block
 root-nation.com##.td-a-ad
@@ -21800,7 +21799,7 @@ www.e1.ru#?#body > script[src^="https://www.e1.ru/"] ~ #app [itemprop] > figure:
 sdamgia.ru##center > div[id][style]
 cq.ru#?#div:-abp-properties(content: "Реклама")
 pogoda.onliner.by,tech.onliner.by##div[class*="_fixed-height"]
-pikabu.ru#?#div[class*="page-story__"] div:-abp-properties(/min-height: calc./)
+pikabu.ru#?#div[class*="page-story__"] div:-abp-properties(/min-height: [02345]{2}[0-9]{1}|min-height: calc./)
 pikabu.ru##div[class*="page-story__"] div[style=""]
 sdamgia.ru##div[class^="google_ad_left"]
 pikabu.ru##div[class^="sidebar-block "] ~ .sidebar-block_border ~ .sidebar-block_border ~ div[class^="sidebar-block "]:not(.sidebar-block_border)
@@ -22917,7 +22916,7 @@ yandex.by,yandex.kz,yandex.ru,yandex.uz##.stat_pixel_yes[onclick][class*="_layou
 yandex.by,yandex.kz,yandex.ru,yandex.uz##a[href*="//ads.adfox.ru/"]
 yandex.by,yandex.kz,yandex.ru,yandex.uz##body[class*="b-page_alt-widgets_yes"] .feed ._need-stub
 yandex.ru##div[class$="ear_js_inited"] > a[href^="//awaps.yandex.ru"]
-dzen.ru##div[class*="_widget-"] div[class]:not([id]) > div[id]:not([class])
+dzen.ru##div[class*="_widget-"] > div > div:not([class*="geoblock"]):not([class*="widget"])
 yandex.by,yandex.kz,yandex.ru,yandex.uz##img[src*="yandex.net/get-direct"]
 ||awaps.yandex.
 ||bs-meta.yandex.$script,xmlhttprequest
@@ -24813,7 +24812,6 @@ cheb.ru,cheboksary.ws,kugesi.ru,na-svyazi.ru##a[href*="/ad.adriver."]
 @@||givekey.ru^$generichide
 @@||gk-stalker.xyz^$generichide
 @@||godeaf.co/start/$generichide
-@@||goodfon.ru^$generichide
 @@||gtavicecity.ru^$generichide
 @@||gwss.ru^$generichide
 @@||hcdn.online^$generichide
@@ -25873,7 +25871,7 @@ akson.ru#@#.ad-list-item
 akson.ru#@#.ad-spacer
 apollo.lv,tvnet.lv#@#.dfp-ad
 aqa.ru#@#div[id^="div-gpt-ad-"]
-au-ok.com#@##banner_adsense
+au-ok.com,aume.ru#@##banner_adsense
 avtodoc24.ru#@#.Ad-Container
 avtodoc24.ru#@#.sidebar-ad
 chelseafc.com,shrlink.top#@#.ad-banner
@@ -28084,6 +28082,7 @@ gazeta.ru##+js(addEventListener-defuser, scroll, /Creepy/)
 m.lenta.ru##+js(addEventListener-defuser, scroll, getBoundingClientRect)
 www.vesti.ru##+js(addEventListener-defuser, scroll, players)
 lenta.ru##+js(addEventListener-defuser, scroll, window.history.pushState)
+aida64.com.ua,aida64russia.com##+js(addEventListener-defuser, wheel)
 comedy-radio.ru,kufar.by,radioromantika.ru,relax-fm.ru,rg.ru,sm.news,ura.news,veseloeradio.ru##+js(cookie-remover, /^bda|^bltsr/)
 ~passport.yandex.by,~passport.yandex.kz,~passport.yandex.ru,~passport.yandex.uz,yandex.by,yandex.kz,yandex.ru,yandex.uz##+js(cookie-remover, /^bltsr$|^JPIqApiY$|^specific$|^substantial$/)
 yapx.ru##+js(cookie-remover, /adblock_/)
@@ -28313,6 +28312,8 @@ kp.kg,kp.kz,kp.md,kp.ru##body > #app div:matches-css(background-color: rgb(225, 
 gazeta.ru##body > div[style="height: 120vh"]
 anime-chan.me##body > div[style^="pointer-events: none;"][style*="visible;"]
 4pda.to##body [data-revive-id] ~ script ~ [id][class]:style(background-image: none !important)
+aida64.com.ua,aida64russia.com##body.q-body--prevent-scroll > .q-dialog--modal
+aida64.com.ua,aida64russia.com##body.q-body--prevent-scroll:style(position: unset !important)
 my-expert.ru##body:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important)
 sawlive.tv##body[onclick^="closeMyAd"] > div[id][style*="position"][style*="background-color"]
 www.e1.ru##div:has(> [id] ~ script):style(min-height: 0 !important)

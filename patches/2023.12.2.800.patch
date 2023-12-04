@@ -1,8 +1,8 @@
-diff name:ruadlist lines:95 checksum:b2dccf4ff5
+diff name:ruadlist lines:111 checksum:9ad2123df3
 d4 2
 a5 2
-! Last modified: Mon, 04 Dec 2023 15:21:40 +0000
-! Diff-Path: ../patches/2023.12.4.921.patch#ruadlist
+! Last modified: Mon, 04 Dec 2023 20:21:28 +0000
+! Diff-Path: ../patches/2023.12.4.1221.patch#ruadlist
 a1305 1
 ||cr09.biz^$third-party
 a1640 1
@@ -27,6 +27,7 @@ a12475 1
 d14855 1
 a14855 1
 agroter.com.ua,autocentre.ua,cheline.com.ua,itechua.com,te.ua,ternopillive.com,uamotors.com.ua##.a-single
+d18412 1
 d18587 1
 d19296 1
 a19296 1
@@ -38,6 +39,12 @@ d20364 1
 d20449 1
 a20449 1
 all-episodesfun.com##div[class^="advtss"]
+a20499 1
+goodfon.ru##div[class^="center_banner"]
+a20651 1
+xenforo.info##div[class^="vds-cloud"]
+d20659 1
+d21751 1
 d21789 1
 a21789 1
 pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: calc.[0569]{2}[0-9]{1}|min-height: calc.+.em/)
@@ -46,7 +53,7 @@ a21791 1
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:-abp-contains(/context":"http:$/))
 d21801 1
 a21801 1
-pikabu.ru#?#div[class*="page-story__"] div:-abp-properties(/min-height: calc./)
+pikabu.ru#?#div[class*="page-story__"] div:-abp-properties(/min-height: [02345]{2}[0-9]{1}|min-height: calc./)
 d21872 2
 a21873 3
 2ip.io,2ip.ru##a[href*="/?"][href*="="][class]
@@ -64,7 +71,11 @@ d22708 2
 a22711 1
 gdespaces.com,gdespaces.net,spac.me,spac.run,spac.wtf,spac1.com,spac1.info,spac1.me,spac1.net,spac1.org,spac1.ru,spaces-blogs.com,spaces.im,spcs-files.xyz,spcs.bio,spcs.global,spcs.life,spcs.me,spcs.network,spcs.news,spcs.pro,spcs.pub,spcs.reviews,spcs.social,strip2.in,strip2.xxx,usersporn.com##.rightbar__reklama
 a22916 1
-dzen.ru##div[class*="_widget-"] div[class]:not([id]) > div[id]:not([class])
+dzen.ru##div[class*="_widget-"] > div > div:not([class*="geoblock"]):not([class*="widget"])
+d24812 1
+d25872 1
+a25872 1
+au-ok.com,aume.ru#@##banner_adsense
 d26132 2
 a26133 2
 all-episodesfun.com##body > .wrapper:style(margin-top: 0 !important; max-width: unset !important)
@@ -89,8 +100,13 @@ d27630 2
 a27631 1
 dzen.ru##div[aria-label="Кaрточка рекомендованного видео"] ~ [aria-label]:not([aria-label="Кaрточка рекомендованного видео"])
 d27638 1
+a28084 1
+aida64.com.ua,aida64russia.com##+js(addEventListener-defuser, wheel)
 d28138 1
 a28139 1
 dracon-zet.ru##+js(no-setTimeout-if, getComputedStyle, 250)
 a28173 1
 online-fix.me##+js(remove-node-text, #text, РЕКЛАМНЫЙ БЛОК:)
+a28312 2
+aida64.com.ua,aida64russia.com##body.q-body--prevent-scroll > .q-dialog--modal
+aida64.com.ua,aida64russia.com##body.q-body--prevent-scroll:style(position: unset !important)

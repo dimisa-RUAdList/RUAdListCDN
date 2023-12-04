@@ -1,15 +1,22 @@
-diff name:ruadlist lines:35 checksum:b2dccf4ff5
+diff name:ruadlist lines:51 checksum:9ad2123df3
 d4 2
 a5 2
-! Last modified: Mon, 04 Dec 2023 15:21:40 +0000
-! Diff-Path: ../patches/2023.12.4.921.patch#ruadlist
+! Last modified: Mon, 04 Dec 2023 20:21:28 +0000
+! Diff-Path: ../patches/2023.12.4.1221.patch#ruadlist
 d11103 1
 a11103 1
 ||cloudfront.net^$domain=5litra.ru|abc-people.com|allhen.online|cima4u.tv|debfile.com|doramatv.live|findanime.net|grouple.co|ilenta.com|leporno.org|librebook.me|mintmanga.live|mose.live|nowa.cc|online-fix.me|raidcall.com|raidcall.com.ru|readmanga.live|selflib.me|selfmanga.live|thg.ru|windata.ru
 a12478 1
 ||povarenok.ru/css/*1.css$stylesheet
+d18415 1
 d18590 1
 d20367 1
+a20502 1
+goodfon.ru##div[class^="center_banner"]
+a20654 1
+xenforo.info##div[class^="vds-cloud"]
+d20662 1
+d21754 1
 d21788 1
 a21788 1
 ||pikabu.ru/ajax/?*&vn_buff=$xmlhttprequest,domain=pikabu.ru
@@ -21,16 +28,25 @@ a21794 1
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:-abp-contains(/context":"http:$/))
 d21804 1
 a21804 1
-pikabu.ru#?#div[class*="page-story__"] div:-abp-properties(/min-height: calc./)
+pikabu.ru#?#div[class*="page-story__"] div:-abp-properties(/min-height: [02345]{2}[0-9]{1}|min-height: calc./)
 d22713 2
 a22716 1
 gdespaces.com,gdespaces.net,spac.me,spac.run,spac.wtf,spac1.com,spac1.info,spac1.me,spac1.net,spac1.org,spac1.ru,spaces-blogs.com,spaces.im,spcs-files.xyz,spcs.bio,spcs.global,spcs.life,spcs.me,spcs.network,spcs.news,spcs.pro,spcs.pub,spcs.reviews,spcs.social,strip2.in,strip2.xxx,usersporn.com##.rightbar__reklama
 a22921 1
-dzen.ru##div[class*="_widget-"] div[class]:not([id]) > div[id]:not([class])
+dzen.ru##div[class*="_widget-"] > div > div:not([class*="geoblock"]):not([class*="widget"])
+d24817 1
+d25877 1
+a25877 1
+au-ok.com,aume.ru#@##banner_adsense
 d27635 2
 a27636 1
 dzen.ru##div[aria-label="Кaрточка рекомендованного видео"] ~ [aria-label]:not([aria-label="Кaрточка рекомендованного видео"])
 d27643 1
+a28089 1
+aida64.com.ua,aida64russia.com##+js(addEventListener-defuser, wheel)
 d28143 1
 a28144 1
 dracon-zet.ru##+js(no-setTimeout-if, getComputedStyle, 250)
+a28318 2
+aida64.com.ua,aida64russia.com##body.q-body--prevent-scroll > .q-dialog--modal
+aida64.com.ua,aida64russia.com##body.q-body--prevent-scroll:style(position: unset !important)
