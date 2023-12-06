@@ -1,8 +1,8 @@
-diff name:ruadlist lines:36 checksum:83fa06d9dc
+diff name:ruadlist lines:66 checksum:8efae98e9d
 d4 2
 a5 2
-! Last modified: Wed, 06 Dec 2023 17:21:04 +0000
-! Diff-Path: ../patches/2023.12.6.1041.patch#ruadlist
+! Last modified: Wed, 06 Dec 2023 22:22:09 +0000
+! Diff-Path: ../patches/2023.12.6.1342.patch#ruadlist
 a2071 1
 ||flyroll.ru^$third-party
 a3904 1
@@ -29,9 +29,39 @@ pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:-abp-contains(/c
 d21803 1
 a21803 1
 pikabu.ru#?#div[class*="page-story__"] div:-abp-properties(/min-height: [02345]{2}[0-9]{1}|min-height: calc.|min-height: [0-9].lh/)
+d25830 1
+a25830 1
+@@||static-mon.yandex.net/static/main.js?pid=$xmlhttprequest,domain=reshuent.kz|reshuolymp.ru|sdamgia.ru|sports.ru
+d25867 1
+a25867 1
+@@||yandex.ru/ads/system/context.js|$xmlhttprequest,domain=reshu.by|reshuent.kz|reshuolymp.ru|sdamgia.ru|sports.ru|strategium.ru
+d27970 1
+a27970 1
+reshu.by,reshuent.kz,reshuolymp.ru,sdamgia.ru##+js(abort-on-property-read, Object.prototype.getAdUsageStorage)
 d28159 1
 a28159 1
 dzen.ru,frontend.vh.yandex.ru,naydex.net,widgets.kinopoisk.ru,www.kinopoisk.ru,yastatic.net##+js(no-xhr-if, strm.yandex.ru/get/)
+a28183 1
+sdamgia.ru##+js(set-attr, .Root:not(.sgia-main-content) main > div:first-child:empty, class, false)
+d28185 1
+a28185 1
+reshu.by##+js(set-attr, main > div:first-child:empty, class, false)
 d28225 1
 a28225 1
 dzen.ru,frontend.vh.yandex.ru,naydex.net,widgets.kinopoisk.ru,www.kinopoisk.ru,yastatic.net##+js(set-constant, Object.prototype.partnerId, {})
+d28263 1
+a28263 1
+reshu.by,sdamgia.ru##.SubjectMenu_desktop.PageLayout-Nav:style(position: sticky !important)
+d28270 1
+a28270 1
+reshu.by,reshuent.kz,reshuolymp.ru,sdamgia.ru##.googlead.pub_300x250.pub_300x250m.pub_728x90.text-ad.textAd.text_ad.text_ads.text-ads.text-ad-links:style(display: block !important)
+d28328 2
+a28329 2
+reshu.by,sdamgia.ru##main > .false:style(margin-bottom: -185px !important)
+reshu.by,sdamgia.ru##main > div > div > div:has-text(/rotator|блокировщик/)
+d29212 1
+a29212 1
+reshu.by,reshuent.kz,reshuolymp.ru,sdamgia.ru#@#.googlead
+d29305 1
+a29305 1
+reshu.by,sdamgia.ru##div[class$="-BlockDetect"]

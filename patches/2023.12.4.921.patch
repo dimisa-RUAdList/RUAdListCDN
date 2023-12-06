@@ -1,8 +1,8 @@
-diff name:ruadlist lines:93 checksum:83fa06d9dc
+diff name:ruadlist lines:123 checksum:8efae98e9d
 d4 2
 a5 2
-! Last modified: Wed, 06 Dec 2023 17:21:04 +0000
-! Diff-Path: ../patches/2023.12.6.1041.patch#ruadlist
+! Last modified: Wed, 06 Dec 2023 22:22:09 +0000
+! Diff-Path: ../patches/2023.12.6.1342.patch#ruadlist
 a1215 1
 ||codedome.online^$third-party
 a1844 1
@@ -78,17 +78,47 @@ d22920 1
 a22920 1
 dzen.ru##div[class*="_widget-"] > div > div:not([class*="geoblock"]):not([class*="widget"])
 d24816 1
+d25831 1
+a25831 1
+@@||static-mon.yandex.net/static/main.js?pid=$xmlhttprequest,domain=reshuent.kz|reshuolymp.ru|sdamgia.ru|sports.ru
+d25868 1
+a25868 1
+@@||yandex.ru/ads/system/context.js|$xmlhttprequest,domain=reshu.by|reshuent.kz|reshuolymp.ru|sdamgia.ru|sports.ru|strategium.ru
 d25876 1
 a25876 1
 au-ok.com,aume.ru#@##banner_adsense
+d27971 1
+a27971 1
+reshu.by,reshuent.kz,reshuolymp.ru,sdamgia.ru##+js(abort-on-property-read, Object.prototype.getAdUsageStorage)
 a28086 1
 aida64.com.ua,aida64russia.com##+js(addEventListener-defuser, wheel)
 d28159 1
 a28159 1
 dzen.ru,frontend.vh.yandex.ru,naydex.net,widgets.kinopoisk.ru,www.kinopoisk.ru,yastatic.net##+js(no-xhr-if, strm.yandex.ru/get/)
+a28183 1
+sdamgia.ru##+js(set-attr, .Root:not(.sgia-main-content) main > div:first-child:empty, class, false)
+d28185 1
+a28185 1
+reshu.by##+js(set-attr, main > div:first-child:empty, class, false)
 d28225 1
 a28225 1
 dzen.ru,frontend.vh.yandex.ru,naydex.net,widgets.kinopoisk.ru,www.kinopoisk.ru,yastatic.net##+js(set-constant, Object.prototype.partnerId, {})
+d28263 1
+a28263 1
+reshu.by,sdamgia.ru##.SubjectMenu_desktop.PageLayout-Nav:style(position: sticky !important)
+d28270 1
+a28270 1
+reshu.by,reshuent.kz,reshuolymp.ru,sdamgia.ru##.googlead.pub_300x250.pub_300x250m.pub_728x90.text-ad.textAd.text_ad.text_ads.text-ads.text-ad-links:style(display: block !important)
 a28315 2
 aida64.com.ua,aida64russia.com##body.q-body--prevent-scroll > .q-dialog--modal
 aida64.com.ua,aida64russia.com##body.q-body--prevent-scroll:style(position: unset !important)
+d28326 2
+a28327 2
+reshu.by,sdamgia.ru##main > .false:style(margin-bottom: -185px !important)
+reshu.by,sdamgia.ru##main > div > div > div:has-text(/rotator|блокировщик/)
+d29210 1
+a29210 1
+reshu.by,reshuent.kz,reshuolymp.ru,sdamgia.ru#@#.googlead
+d29303 1
+a29303 1
+reshu.by,sdamgia.ru##div[class$="-BlockDetect"]

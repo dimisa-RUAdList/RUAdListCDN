@@ -1,8 +1,8 @@
-diff name:ruadlist lines:172 checksum:83fa06d9dc
+diff name:ruadlist lines:202 checksum:8efae98e9d
 d4 2
 a5 2
-! Last modified: Wed, 06 Dec 2023 17:21:04 +0000
-! Diff-Path: ../patches/2023.12.6.1041.patch#ruadlist
+! Last modified: Wed, 06 Dec 2023 22:22:09 +0000
+! Diff-Path: ../patches/2023.12.6.1342.patch#ruadlist
 a1215 1
 ||codedome.online^$third-party
 a1305 1
@@ -128,6 +128,12 @@ gdespaces.com,gdespaces.net,spac.me,spac.run,spac.wtf,spac1.com,spac1.info,spac1
 a22916 1
 dzen.ru##div[class*="_widget-"] > div > div:not([class*="geoblock"]):not([class*="widget"])
 d24812 1
+d25827 1
+a25827 1
+@@||static-mon.yandex.net/static/main.js?pid=$xmlhttprequest,domain=reshuent.kz|reshuolymp.ru|sdamgia.ru|sports.ru
+d25864 1
+a25864 1
+@@||yandex.ru/ads/system/context.js|$xmlhttprequest,domain=reshu.by|reshuent.kz|reshuolymp.ru|sdamgia.ru|sports.ru|strategium.ru
 d25872 1
 a25872 1
 au-ok.com,aume.ru#@##banner_adsense
@@ -155,6 +161,9 @@ d27630 2
 a27631 1
 dzen.ru##div[aria-label="Кaрточка рекомендованного видео"] ~ [aria-label]:not([aria-label="Кaрточка рекомендованного видео"])
 d27638 1
+d27969 1
+a27969 1
+reshu.by,reshuent.kz,reshuolymp.ru,sdamgia.ru##+js(abort-on-property-read, Object.prototype.getAdUsageStorage)
 a28084 1
 aida64.com.ua,aida64russia.com##+js(addEventListener-defuser, wheel)
 d28138 1
@@ -165,9 +174,30 @@ a28157 1
 dzen.ru,frontend.vh.yandex.ru,naydex.net,widgets.kinopoisk.ru,www.kinopoisk.ru,yastatic.net##+js(no-xhr-if, strm.yandex.ru/get/)
 a28173 1
 online-fix.me##+js(remove-node-text, #text, РЕКЛАМНЫЙ БЛОК:)
+a28180 1
+sdamgia.ru##+js(set-attr, .Root:not(.sgia-main-content) main > div:first-child:empty, class, false)
+d28182 1
+a28182 1
+reshu.by##+js(set-attr, main > div:first-child:empty, class, false)
 d28222 1
 a28222 1
 dzen.ru,frontend.vh.yandex.ru,naydex.net,widgets.kinopoisk.ru,www.kinopoisk.ru,yastatic.net##+js(set-constant, Object.prototype.partnerId, {})
+d28260 1
+a28260 1
+reshu.by,sdamgia.ru##.SubjectMenu_desktop.PageLayout-Nav:style(position: sticky !important)
+d28267 1
+a28267 1
+reshu.by,reshuent.kz,reshuolymp.ru,sdamgia.ru##.googlead.pub_300x250.pub_300x250m.pub_728x90.text-ad.textAd.text_ad.text_ads.text-ads.text-ad-links:style(display: block !important)
 a28312 2
 aida64.com.ua,aida64russia.com##body.q-body--prevent-scroll > .q-dialog--modal
 aida64.com.ua,aida64russia.com##body.q-body--prevent-scroll:style(position: unset !important)
+d28323 2
+a28324 2
+reshu.by,sdamgia.ru##main > .false:style(margin-bottom: -185px !important)
+reshu.by,sdamgia.ru##main > div > div > div:has-text(/rotator|блокировщик/)
+d29207 1
+a29207 1
+reshu.by,reshuent.kz,reshuolymp.ru,sdamgia.ru#@#.googlead
+d29300 1
+a29300 1
+reshu.by,sdamgia.ru##div[class$="-BlockDetect"]
