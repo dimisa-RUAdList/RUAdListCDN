@@ -1,8 +1,8 @@
-diff name:ruadlist lines:89 checksum:a325fc9d10
+diff name:ruadlist lines:95 checksum:b336630238
 d4 2
 a5 2
-! Last modified: Wed, 06 Dec 2023 07:18:27 +0000
-! Diff-Path: ../patches/2023.12.6.438.patch#ruadlist
+! Last modified: Wed, 06 Dec 2023 12:38:01 +0000
+! Diff-Path: ../patches/2023.12.6.758.patch#ruadlist
 a1215 1
 ||codedome.online^$third-party
 a1844 1
@@ -57,16 +57,16 @@ d21200 1
 d21754 1
 d21788 1
 a21788 1
-||pikabu.ru/ajax/?*&vn_buff=$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/ajax/?*vn_buff=$xmlhttprequest,domain=pikabu.ru
 d21792 1
 a21792 1
-pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: calc.[0569]{2}[0-9]{1}|min-height: calc.+.em/)
+pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: calc.[0569]{2}[0-9]{1}|min-height: calc.+.em|min-height: [0-9].lh/)
 d21794 1
 a21794 1
-pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:-abp-contains(/context":"http:$/))
+pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:-abp-contains(/context":"http://$/))
 d21804 1
 a21804 1
-pikabu.ru#?#div[class*="page-story__"] div:-abp-properties(/min-height: [02345]{2}[0-9]{1}|min-height: calc./)
+pikabu.ru#?#div[class*="page-story__"] div:-abp-properties(/min-height: [02345]{2}[0-9]{1}|min-height: calc.|min-height: [0-9].lh/)
 d22713 2
 a22716 1
 gdespaces.com,gdespaces.net,spac.me,spac.run,spac.wtf,spac1.com,spac1.info,spac1.me,spac1.net,spac1.org,spac1.ru,spaces-blogs.com,spaces.im,spcs-files.xyz,spcs.bio,spcs.global,spcs.life,spcs.me,spcs.network,spcs.news,spcs.pro,spcs.pub,spcs.reviews,spcs.social,strip2.in,strip2.xxx,usersporn.com##.rightbar__reklama
@@ -85,6 +85,12 @@ aida64.com.ua,aida64russia.com##+js(addEventListener-defuser, wheel)
 d28143 1
 a28144 1
 dracon-zet.ru##+js(no-setTimeout-if, getComputedStyle, 250)
+d28162 1
+a28162 1
+dzen.ru,frontend.vh.yandex.ru,naydex.net,widgets.kinopoisk.ru,www.kinopoisk.ru,yastatic.net##+js(no-xhr-if, strm.yandex.ru/get/)
+d28228 1
+a28228 1
+dzen.ru,frontend.vh.yandex.ru,naydex.net,widgets.kinopoisk.ru,www.kinopoisk.ru,yastatic.net##+js(set-constant, Object.prototype.partnerId, {})
 a28318 2
 aida64.com.ua,aida64russia.com##body.q-body--prevent-scroll > .q-dialog--modal
 aida64.com.ua,aida64russia.com##body.q-body--prevent-scroll:style(position: unset !important)

@@ -1,8 +1,8 @@
-diff name:ruadlist lines:160 checksum:a325fc9d10
+diff name:ruadlist lines:169 checksum:b336630238
 d4 2
 a5 2
-! Last modified: Wed, 06 Dec 2023 07:18:27 +0000
-! Diff-Path: ../patches/2023.12.6.438.patch#ruadlist
+! Last modified: Wed, 06 Dec 2023 12:38:01 +0000
+! Diff-Path: ../patches/2023.12.6.758.patch#ruadlist
 a1215 1
 ||codedome.online^$third-party
 a1305 1
@@ -87,15 +87,18 @@ xenforo.info##div[class^="vds-cloud"]
 d20657 1
 d21195 1
 d21749 1
+d21783 1
+a21783 1
+||pikabu.ru/ajax/?*vn_buff=$xmlhttprequest,domain=pikabu.ru
 d21787 1
 a21787 1
-pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: calc.[0569]{2}[0-9]{1}|min-height: calc.+.em/)
+pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: calc.[0569]{2}[0-9]{1}|min-height: calc.+.em|min-height: [0-9].lh/)
 d21789 1
 a21789 1
-pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:-abp-contains(/context":"http:$/))
+pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:-abp-contains(/context":"http://$/))
 d21799 1
 a21799 1
-pikabu.ru#?#div[class*="page-story__"] div:-abp-properties(/min-height: [02345]{2}[0-9]{1}|min-height: calc./)
+pikabu.ru#?#div[class*="page-story__"] div:-abp-properties(/min-height: [02345]{2}[0-9]{1}|min-height: calc.|min-height: [0-9].lh/)
 d21870 2
 a21871 3
 2ip.io,2ip.ru##a[href*="/?"][href*="="][class]
@@ -153,8 +156,14 @@ a28138 1
 dracon-zet.ru##+js(no-setTimeout-if, getComputedStyle, 250)
 a28152 1
 anidub.vip,anidubonline.com,loveanime.live##+js(no-xhr-if, exchange.buzzoola.com)
+d28155 1
+a28155 1
+dzen.ru,frontend.vh.yandex.ru,naydex.net,widgets.kinopoisk.ru,www.kinopoisk.ru,yastatic.net##+js(no-xhr-if, strm.yandex.ru/get/)
 a28171 1
 online-fix.me##+js(remove-node-text, #text, РЕКЛАМНЫЙ БЛОК:)
+d28220 1
+a28220 1
+dzen.ru,frontend.vh.yandex.ru,naydex.net,widgets.kinopoisk.ru,www.kinopoisk.ru,yastatic.net##+js(set-constant, Object.prototype.partnerId, {})
 d28232 1
 a28311 2
 aida64.com.ua,aida64russia.com##body.q-body--prevent-scroll > .q-dialog--modal
