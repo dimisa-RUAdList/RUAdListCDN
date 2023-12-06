@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 06 Dec 2023 12:38:01 +0000
-! Diff-Path: ../patches/2023.12.6.758.patch#ruadlist
+! Last modified: Wed, 06 Dec 2023 17:21:04 +0000
+! Diff-Path: ../patches/2023.12.6.1041.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -2069,6 +2069,7 @@
 ||floornotalava.com^$third-party
 ||flowpubdom.info^$third-party
 ||flushmviolent.org^
+||flyroll.ru^$third-party
 ||fm05qrtvoele.pro^$third-party
 ||fmich.ru^$third-party
 ||fmk1ezzboz.space^$third-party
@@ -3902,6 +3903,7 @@
 ||mt-data.ru$third-party
 ||mtdata1.ru$third-party,domain=~mt-data.ru
 ||mtdatahaba.rocks^$third-party
+||mtrcss.com^$third-party
 ||mtwbedsl.biz^$third-party
 ||mubra.ru^
 ||muchhetont.ru^$third-party
@@ -13449,7 +13451,7 @@ lada.kz/uploads/banners/
 ||you-anime.ru/vg/
 ||youhack.ru^$object
 ||youtube-nocookie.com^$domain=proporno.org
-||youtube.com/embed/$domain=168.ru|4put.ru|androeed.ru|anime-365.ru|compendium.su|fbsearch.ru|geomap.com.ua|hdrabbit.ru|kinotochka.co|kinotochka.me|lostpix.com|newstudio-online.tv|sbornik-music.ru|sinonim.org|smotret-anime.online|subject.com.ua|ukrlit.net|zarlit.com
+||youtube.com/embed/$domain=168.ru|4put.ru|androeed.ru|anime-365.ru|compendium.su|fbsearch.ru|geomap.com.ua|hdrabbit.ru|kinotochka.co|kinotochka.me|lostpix.com|multitran.com|newstudio-online.tv|sbornik-music.ru|sinonim.org|smotret-anime.online|subject.com.ua|ukrlit.net|zarlit.com
 ||youtube.com^*modestbranding$subdocument,domain=moevideo.net|penzainform.ru|playreplay.me|playreplay.net|playvideolink.com|thesame.tv|videochart.net
 ||yp.ru/content/Banners/
 ||yp.ru/content/Slider/
@@ -14333,7 +14335,6 @@ delovoy-kirov.ru###promo-fix
 24tv.ua###promoArticle
 klerk.ru###promoVip
 sofirus.ru###promo_bottom
-multitran.ru###proverbum
 dofiga.net###ptext_15
 wmforum.2bb.ru###pun-announcement
 forums.heroesofnewerth.com###purchase_pref
@@ -20745,7 +20746,7 @@ narutoplanet.ru##div[id*="script"]
 mirnov.ru#?#div[id*="sidebar"] > div[class*="module"]:-abp-has(> [class*="moduletitle"]:-abp-contains(/^актуально|финам$|сми2$|marketgid|^интересные|гнездо.ру/i))
 infobank.by##div[id*="swiffycontainer"]
 flowtation.ru##div[id*="tizer"]
-1tv.ru,4pda.to,artem-kashkanov.ru,astrakhan-24.ru,baraholka.onliner.by,bigpicture.ru,energyfm.ru,galya.ru,gotovim-doma.ru,multitran.ru,qip.ru,vputilkovo.ru##div[id*="yandex_ad"]
+1tv.ru,4pda.to,artem-kashkanov.ru,astrakhan-24.ru,baraholka.onliner.by,bigpicture.ru,energyfm.ru,galya.ru,gotovim-doma.ru,qip.ru,vputilkovo.ru##div[id*="yandex_ad"]
 mivmeste.info#?#div[id]:-abp-has(> wix-iframe)
 gorodrabot.ru##div[id]:not([class]):not([style])[aria-hidden="true"]
 allgames.zone,bestgamer.su,torrent-wind.net##div[id][align="center"]
@@ -21143,13 +21144,13 @@ wallegend.net##div[style^="text-align:center;line-height:0;display:block;height:
 integral-calculator.ru##div[style^="width: 728px; margin:"]
 crazygames.ru##div[style^="width:"][style*="100%;"][style*="display:"][style*="block"]
 bin.ua##div[style^="width:"][style*="240px;"][style*="height:"]
+kino-teatr.ru##div[style^="width:100"][align="center"]
 vse-shutochki.ru##div[style^="width:100%; height:280px; padding:"]
 appstudio.org##div[style^="width:100%; height:90px;"]
 inmoment.ru##div[style^="width:199px;height:299px;"]
 bookz.ru##div[style^="width:240px;height:400px"]
 m24.ru##div[style^="width:300px;height:600px"]
 liveinternet.ru##div[style^="width:970px; height:280px;"]
-kino-teatr.ru##div[style^="width:99"][align="center"]
 baskino.su##div[title^="Реклама"]
 botanam.net,gdzputina.me##embed
 imageup.ru##fieldset[style^="display: inline; width: 45%;"]
