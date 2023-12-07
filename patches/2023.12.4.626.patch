@@ -1,8 +1,8 @@
-diff name:ruadlist lines:157 checksum:29fd1012d4
+diff name:ruadlist lines:163 checksum:1de4f65c8d
 d4 2
 a5 2
-! Last modified: Thu, 07 Dec 2023 18:25:49 +0000
-! Diff-Path: ../patches/2023.12.7.1105.patch#ruadlist
+! Last modified: Thu, 07 Dec 2023 23:20:04 +0000
+! Diff-Path: ../patches/2023.12.7.1400.patch#ruadlist
 a1215 1
 ||codedome.online^$third-party
 a1844 1
@@ -36,11 +36,15 @@ d13449 1
 a13449 1
 ||youtube.com/embed/$domain=168.ru|4put.ru|androeed.ru|anime-365.ru|compendium.su|fbsearch.ru|geomap.com.ua|hdrabbit.ru|kinotochka.co|kinotochka.me|lostpix.com|multitran.com|newstudio-online.tv|sbornik-music.ru|sinonim.org|smotret-anime.online|subject.com.ua|ukrlit.net|zarlit.com
 d14333 1
+d14771 1
 a14965 1
 lelang.su##.ads_mark
 d14975 1
 a14975 1
 englishsub.ru,lenglish.ru##.adsense_blok
+d15381 1
+a15381 1
+mezha.media,zhitomir.info##.banner-link
 d16763 1
 a16763 1
 lelang.su##.leftSideAdLink
@@ -116,6 +120,8 @@ d27643 1
 d27974 1
 a27974 1
 reshu.by,reshuent.kz,reshuolymp.ru,sdamgia.ru##+js(abort-on-property-read, Object.prototype.getAdUsageStorage)
+a28074 1
+autonews.co.ua##+js(addEventListener-defuser, /contextmenu|copy|keydown|selectstart/)
 a28089 1
 aida64.com.ua,aida64russia.com##+js(addEventListener-defuser, wheel)
 d28132 1

@@ -1,8 +1,8 @@
-diff name:ruadlist lines:86 checksum:29fd1012d4
+diff name:ruadlist lines:92 checksum:1de4f65c8d
 d4 2
 a5 2
-! Last modified: Thu, 07 Dec 2023 18:25:49 +0000
-! Diff-Path: ../patches/2023.12.7.1105.patch#ruadlist
+! Last modified: Thu, 07 Dec 2023 23:20:04 +0000
+! Diff-Path: ../patches/2023.12.7.1400.patch#ruadlist
 a1215 1
 ||codedome.online^$third-party
 a2070 1
@@ -17,6 +17,10 @@ d13451 1
 a13451 1
 ||youtube.com/embed/$domain=168.ru|4put.ru|androeed.ru|anime-365.ru|compendium.su|fbsearch.ru|geomap.com.ua|hdrabbit.ru|kinotochka.co|kinotochka.me|lostpix.com|multitran.com|newstudio-online.tv|sbornik-music.ru|sinonim.org|smotret-anime.online|subject.com.ua|ukrlit.net|zarlit.com
 d14335 1
+d14773 1
+d15384 1
+a15384 1
+mezha.media,zhitomir.info##.banner-link
 a20065 1
 povarenok.ru##body > div:empty + div
 d20073 1
@@ -53,6 +57,8 @@ a25866 1
 d27969 1
 a27969 1
 reshu.by,reshuent.kz,reshuolymp.ru,sdamgia.ru##+js(abort-on-property-read, Object.prototype.getAdUsageStorage)
+a28069 1
+autonews.co.ua##+js(addEventListener-defuser, /contextmenu|copy|keydown|selectstart/)
 d28128 1
 d28158 1
 a28158 1
