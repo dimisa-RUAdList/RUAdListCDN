@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 07 Dec 2023 08:25:17 +0000
-! Diff-Path: ../patches/2023.12.7.505.patch#ruadlist
+! Last modified: Thu, 07 Dec 2023 13:28:24 +0000
+! Diff-Path: ../patches/2023.12.7.808.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -12479,6 +12479,7 @@ lada.kz/uploads/banners/
 ||potokcdn.com/shalun/qwerty.js
 ||poufe.ru/promo/
 ||poultryukraine.com/data/image/banners/
+||povarenok.ru/*bakers$image
 ||povarenok.ru/css/*/sp.css$stylesheet
 ||povarenok.ru/css/*1.css$stylesheet
 ||povarenok.ru/i/*/*.jpg
@@ -20065,6 +20066,7 @@ forchecking.ru##body > div > a[target="_blank"] > img
 forum.watch.ru##body > div > div[style*="overflow"]
 nadavi.com.ua,nadavi.ru##body > div > table[width="92%"]:not([class="top-region"])
 orda.kz##body > div.layer0
+povarenok.ru##body > div:empty + div
 coop-land.ru##body > div:not([id]):not([class]):empty
 boom365hd.com,sport365hd.com,sport365hd.net,whd365.pro##body > div:not([id]):not([class])[style*="z-index"]
 4725.ru##body > div:not([id]):not([class])[style^="position: relative;z-index:"]
@@ -20072,7 +20074,6 @@ realnoevremya.ru##body > div:not([id]):not([class])[style^="width: 350px;"]
 remake.net.ru,zarlit.com##body > div[align="center"]
 gamesisart.ru##body > div[align="left"][style^="position: fixed;"]
 siver.com.ua##body > div[align="right"] > span
-povarenok.ru##body > div[class*="23"]
 999.md,delo.ua,nevasport.ru##body > div[class*="branding"]
 progipertoniyu.ru##body > div[class*="modal"]
 votrube.ru##body > div[class]:last-of-type
@@ -21785,13 +21786,13 @@ rafkino.com##div[id^="MarketGid"]
 ||www.liveinternet.ru/users/$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/cgi-bin/rpls.fcgi?list= https://www.liveinternet.ru/spell/spell.js https://www.liveinternet.ru/share/js/share.js https://www.liveinternet.ru/4Ek/JS/diary/main/nav/regoradd.js https://www.liveinternet.ru/4Ek/JS/diary/trans.js
 ||www.liveinternet.ru/|$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/utf/lici.js https://www.liveinternet.ru/utf/li.js https://www.liveinternet.ru/utf/main_new.js
 ! Pikabu (ловушка для обфускации)
-||pikabu.ru/ajax/?*vn_buff=$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/ajax/?zxe=2&_key=$xmlhttprequest,domain=pikabu.ru
 ! селекторы
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
 pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: calc.[0569]{2}[0-9]{1}|min-height: calc.+.em|min-height: [0-9].lh/)
 pikabu.ru##.sidebar__inner > .sidebar-block div[style=""]
-pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:-abp-contains(/context":"http://$/))
+pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:-abp-contains(/[^\s]/$/))
 dracon-zet.ru,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 android-mafia.com,game4you.top,games-pc.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##:not(this-site-promotes-malware)
 sdamgia.ru##[data-container]
@@ -25828,7 +25829,7 @@ gbsmp.ru#@#img[width="728"][height="90"]
 @@||sld.kiev.ua/assets/*/advert.js
 @@||st.s5o.ru/source/_desktop/$xmlhttprequest,domain=sports.ru
 @@||stalker-mods.*/images/icons/*_|$image,~third-party,domain=stalker-mods.clan.su|stalker-mods.su
-@@||static-mon.yandex.net/static/main.js?pid=$xmlhttprequest,domain=reshuent.kz|reshuolymp.ru|sdamgia.ru|sports.ru
+@@||static-mon.yandex.net/static/main.js?pid=$xmlhttprequest,domain=reshu.by|reshuent.kz|reshuolymp.ru|sdamgia.ru|sports.ru
 @@||static.1tv.ru/player/*/banner.gif$domain=1tv.ru
 @@||static.baik.ru/static/js/apps-js/adv/google_advert.*.js|$script,domain=www.irk.ru
 @@||static.doubleclick.net/instream/ad_status.js|$xmlhttprequest,domain=tehnografi.com
@@ -28127,7 +28128,6 @@ fatcatslim.ru##+js(no-setInterval-if, clientHeight)
 aniu.ru,liveball.uno##+js(no-setInterval-if, debugger)
 anime-chan.me##+js(no-setInterval-if, move_string)
 volyninfo.com##+js(no-setInterval-if, replaceWith)
-online-fix.me##+js(no-setTimeout-if, #dle-content)
 otzovik.com##+js(no-setTimeout-if, , 250)
 sibnet.ru##+js(no-setTimeout-if, Adblock)
 life.ru##+js(no-setTimeout-if, SHOW_PUSH_MODAL)
@@ -28268,6 +28268,7 @@ inoreader.com##.adsbygoogle:style(display: block !important)
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.app__wrapper div[style^="width: calc(100% "]:remove-attr(style)
 footboom.com,footboom.kz##.b-article-content > h2:has-text(букмекер)
 lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##.body > .body:style(user-select: text !important; -moz-user-select: text !important; -webkit-user-select: text !important)
+online-fix.me##.content > .errors
 smotrim.ru##.dialog-wrapper
 reshu.by,reshuent.kz,reshuolymp.ru,sdamgia.ru##.googlead.pub_300x250.pub_300x250m.pub_728x90.text-ad.textAd.text_ad.text_ads.text-ads.text-ad-links:style(display: block !important)
 rbc.ru##.js-index-doscroll audio[autoplay]:remove()
@@ -28309,6 +28310,7 @@ sports.ru##[class*="_label "]
 www.sports.ru##[data-noinit]
 24smi.org##a[href*="://24smi.org/"]:remove-attr(target)
 trupornolabs.org#@#a[href*="://pronpic.org/"]
+online-fix.me##a[href*=":2053"]:remove-class(btn)
 kp.kg,kp.kz,kp.md,kp.ru##body > #app div:matches-css(background-color: rgb(225, 231, 235))
 4pda.to##body > #ipbwrapper > script + div > table > tbody > tr > td[width] + td
 4pda.to##body > div[id^="r"] > div[id^="r"][href]

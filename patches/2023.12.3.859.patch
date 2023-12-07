@@ -1,8 +1,8 @@
-diff name:ruadlist lines:177 checksum:9dee8f5250
+diff name:ruadlist lines:187 checksum:7b6db3812d
 d4 2
 a5 2
-! Last modified: Thu, 07 Dec 2023 08:25:17 +0000
-! Diff-Path: ../patches/2023.12.7.505.patch#ruadlist
+! Last modified: Thu, 07 Dec 2023 13:28:24 +0000
+! Diff-Path: ../patches/2023.12.7.808.patch#ruadlist
 a1215 1
 ||codedome.online^$third-party
 a1305 1
@@ -36,6 +36,8 @@ a11111 1
 ||com/|$third-party,domain=engvideo.net|ling-online.net
 d11691 1
 d11878 1
+a12475 1
+||povarenok.ru/*bakers$image
 a12476 1
 ||povarenok.ru/css/*1.css$stylesheet
 d13447 1
@@ -70,6 +72,9 @@ d19359 1
 d19436 1
 a19436 1
 1tulatv.ru,animevost.org,animevost.top,bombardir.ru,dwg.ru,ebooktime.net,fex.net,forum.antichat.ru,pc-consultant.ru,programmersforum.ru,rusplt.ru,traktorist.ua,vost.pw##a[href*="utm_"]
+a20062 1
+povarenok.ru##body > div:empty + div
+d20070 1
 d20365 1
 a20500 1
 goodfon.ru##div[class^="center_banner"]
@@ -87,13 +92,13 @@ d21198 1
 d21752 1
 d21786 1
 a21786 1
-||pikabu.ru/ajax/?*vn_buff=$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/ajax/?zxe=2&_key=$xmlhttprequest,domain=pikabu.ru
 d21790 1
 a21790 1
 pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: calc.[0569]{2}[0-9]{1}|min-height: calc.+.em|min-height: [0-9].lh/)
 d21792 1
 a21792 1
-pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:-abp-contains(/context":"http://$/))
+pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:-abp-contains(/[^\s]/$/))
 d21802 1
 a21802 1
 pikabu.ru#?#div[class*="page-story__"] div:-abp-properties(/min-height: [02345]{2}[0-9]{1}|min-height: calc.|min-height: [0-9].lh/)
@@ -116,7 +121,7 @@ dzen.ru##div[class*="_widget-"] > div > div:not([class*="geoblock"]):not([class*
 d24814 1
 d25829 1
 a25829 1
-@@||static-mon.yandex.net/static/main.js?pid=$xmlhttprequest,domain=reshuent.kz|reshuolymp.ru|sdamgia.ru|sports.ru
+@@||static-mon.yandex.net/static/main.js?pid=$xmlhttprequest,domain=reshu.by|reshuent.kz|reshuolymp.ru|sdamgia.ru|sports.ru
 d25866 1
 a25866 1
 @@||yandex.ru/ads/system/context.js|$xmlhttprequest,domain=reshu.by|reshuent.kz|reshuolymp.ru|sdamgia.ru|sports.ru|strategium.ru
@@ -141,6 +146,7 @@ a27971 1
 reshu.by,reshuent.kz,reshuolymp.ru,sdamgia.ru##+js(abort-on-property-read, Object.prototype.getAdUsageStorage)
 a28086 1
 aida64.com.ua,aida64russia.com##+js(addEventListener-defuser, wheel)
+d28129 1
 d28140 1
 a28141 1
 dracon-zet.ru##+js(no-setTimeout-if, getComputedStyle, 250)
@@ -160,9 +166,13 @@ dzen.ru,frontend.vh.yandex.ru,naydex.net,widgets.kinopoisk.ru,www.kinopoisk.ru,y
 d28262 1
 a28262 1
 reshu.by,sdamgia.ru##.SubjectMenu_desktop.PageLayout-Nav:style(position: sticky !important)
+a28267 1
+online-fix.me##.content > .errors
 d28269 1
 a28269 1
 reshu.by,reshuent.kz,reshuolymp.ru,sdamgia.ru##.googlead.pub_300x250.pub_300x250m.pub_728x90.text-ad.textAd.text_ad.text_ads.text-ads.text-ad-links:style(display: block !important)
+a28308 1
+online-fix.me##a[href*=":2053"]:remove-class(btn)
 a28314 2
 aida64.com.ua,aida64russia.com##body.q-body--prevent-scroll > .q-dialog--modal
 aida64.com.ua,aida64russia.com##body.q-body--prevent-scroll:style(position: unset !important)
