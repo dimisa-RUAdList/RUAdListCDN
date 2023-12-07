@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 07 Dec 2023 13:28:24 +0000
-! Diff-Path: ../patches/2023.12.7.808.patch#ruadlist
+! Last modified: Thu, 07 Dec 2023 18:25:49 +0000
+! Diff-Path: ../patches/2023.12.7.1105.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -6459,6 +6459,7 @@
 ||videojuly.ru^
 ||videojune.ru^
 ||videoleks.com^$third-party
+||videolink.site^$third-party
 ||videolink.space^$third-party
 ||videonews24.online^$third-party
 ||videonow.ru^$third-party
@@ -21795,6 +21796,7 @@ pikabu.ru##.sidebar__inner > .sidebar-block div[style=""]
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:-abp-contains(/[^\s]/$/))
 dracon-zet.ru,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 android-mafia.com,game4you.top,games-pc.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##:not(this-site-promotes-malware)
+pikabu.ru##[data-block-name]
 sdamgia.ru##[data-container]
 sdamgia.ru##[data-name="partial-container"]
 kp.kg,kp.kz,kp.md,kp.ru#?#body > #app div:-abp-properties(background-color: rgb(225, 231, 235))
@@ -21806,7 +21808,8 @@ pikabu.ru#?#div[class*="page-story__"] div:-abp-properties(/min-height: [02345]{
 pikabu.ru##div[class*="page-story__"] div[style=""]
 sdamgia.ru##div[class^="google_ad_left"]
 pikabu.ru##div[class^="sidebar-block "] ~ .sidebar-block_border ~ .sidebar-block_border ~ div[class^="sidebar-block "]:not(.sidebar-block_border)
-sdamgia.ru##div[data-name="adWrapper"]
+pikabu.ru,sdamgia.ru##div[data-name="adWrapper"]
+pikabu.ru##div[href]
 rg.ru##div[id][class*="__"]:empty
 sdamgia.ru##div[id^="yandex_vario"]
 pikabu.ru##div[style*="important;"][style*="width:"][style*="height:"]

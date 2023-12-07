@@ -1,8 +1,8 @@
-diff name:ruadlist lines:133 checksum:7b6db3812d
+diff name:ruadlist lines:141 checksum:29fd1012d4
 d4 2
 a5 2
-! Last modified: Thu, 07 Dec 2023 13:28:24 +0000
-! Diff-Path: ../patches/2023.12.7.808.patch#ruadlist
+! Last modified: Thu, 07 Dec 2023 18:25:49 +0000
+! Diff-Path: ../patches/2023.12.7.1105.patch#ruadlist
 a1215 1
 ||codedome.online^$third-party
 a1844 1
@@ -11,6 +11,8 @@ a2069 1
 ||flyroll.ru^$third-party
 a3902 1
 ||mtrcss.com^$third-party
+a6457 1
+||videolink.site^$third-party
 d10223 1
 a10223 1
 $third-party,subdocument,domain=bit-lite.com|ckmosstroy.ru|fapreactor.com|fastpic.org|pornreactor.cc
@@ -76,9 +78,15 @@ pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: calc.[0569]{2}[0-9]{
 d21793 1
 a21793 1
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:-abp-contains(/[^\s]/$/))
+a21795 1
+pikabu.ru##[data-block-name]
 d21803 1
 a21803 1
 pikabu.ru#?#div[class*="page-story__"] div:-abp-properties(/min-height: [02345]{2}[0-9]{1}|min-height: calc.|min-height: [0-9].lh/)
+d21807 1
+a21807 2
+pikabu.ru,sdamgia.ru##div[data-name="adWrapper"]
+pikabu.ru##div[href]
 d22920 1
 a22920 1
 dzen.ru##div[class*="_widget-"] > div > div:not([class*="geoblock"]):not([class*="widget"])

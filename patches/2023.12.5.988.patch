@@ -1,14 +1,16 @@
-diff name:ruadlist lines:78 checksum:7b6db3812d
+diff name:ruadlist lines:86 checksum:29fd1012d4
 d4 2
 a5 2
-! Last modified: Thu, 07 Dec 2023 13:28:24 +0000
-! Diff-Path: ../patches/2023.12.7.808.patch#ruadlist
+! Last modified: Thu, 07 Dec 2023 18:25:49 +0000
+! Diff-Path: ../patches/2023.12.7.1105.patch#ruadlist
 a1215 1
 ||codedome.online^$third-party
 a2070 1
 ||flyroll.ru^$third-party
 a3903 1
 ||mtrcss.com^$third-party
+a6458 1
+||videolink.site^$third-party
 a12478 1
 ||povarenok.ru/*bakers$image
 d13451 1
@@ -33,9 +35,15 @@ pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: calc.[0569]{2}[0-9]{
 d21792 1
 a21792 1
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:-abp-contains(/[^\s]/$/))
+a21794 1
+pikabu.ru##[data-block-name]
 d21802 1
 a21802 1
 pikabu.ru#?#div[class*="page-story__"] div:-abp-properties(/min-height: [02345]{2}[0-9]{1}|min-height: calc.|min-height: [0-9].lh/)
+d21806 1
+a21806 2
+pikabu.ru,sdamgia.ru##div[data-name="adWrapper"]
+pikabu.ru##div[href]
 d25829 1
 a25829 1
 @@||static-mon.yandex.net/static/main.js?pid=$xmlhttprequest,domain=reshu.by|reshuent.kz|reshuolymp.ru|sdamgia.ru|sports.ru
