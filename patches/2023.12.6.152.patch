@@ -1,8 +1,8 @@
-diff name:ruadlist lines:90 checksum:99701e1cd2
+diff name:ruadlist lines:91 checksum:0dac3be4d2
 d4 2
 a5 2
-! Last modified: Fri, 08 Dec 2023 09:20:02 +0000
-! Diff-Path: ../patches/2023.12.8.560.patch#ruadlist
+! Last modified: Fri, 08 Dec 2023 14:21:45 +0000
+! Diff-Path: ../patches/2023.12.8.861.patch#ruadlist
 a2071 1
 ||flyroll.ru^$third-party
 a3904 1
@@ -35,8 +35,9 @@ d21791 1
 a21791 1
 pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: calc.[0569]{2}[0-9]{1}|min-height: calc.+.em|min-height: [0-9].lh/)
 d21793 1
-a21793 1
-pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:-abp-contains(/[^\s]/$/))
+a21793 2
+pikabu.ru##.sidebar__inner > .sidebar-block:not(.sidebar-block_border)
+pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:-abp-contains(/[a-z]$/))
 a21795 1
 pikabu.ru##[data-block-name]
 d21803 1

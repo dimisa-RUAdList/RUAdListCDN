@@ -1,8 +1,8 @@
-diff name:ruadlist lines:64 checksum:99701e1cd2
+diff name:ruadlist lines:65 checksum:0dac3be4d2
 d4 2
 a5 2
-! Last modified: Fri, 08 Dec 2023 09:20:02 +0000
-! Diff-Path: ../patches/2023.12.8.560.patch#ruadlist
+! Last modified: Fri, 08 Dec 2023 14:21:45 +0000
+! Diff-Path: ../patches/2023.12.8.861.patch#ruadlist
 a6461 1
 ||videolink.site^$third-party
 a12481 1
@@ -18,8 +18,9 @@ d21788 1
 a21788 1
 ||pikabu.ru/ajax/?zxe=2&_key=$xmlhttprequest,domain=pikabu.ru
 d21794 1
-a21794 1
-pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:-abp-contains(/[^\s]/$/))
+a21794 2
+pikabu.ru##.sidebar__inner > .sidebar-block:not(.sidebar-block_border)
+pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:-abp-contains(/[a-z]$/))
 a21796 1
 pikabu.ru##[data-block-name]
 d21808 1
