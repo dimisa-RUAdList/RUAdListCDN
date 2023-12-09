@@ -1,19 +1,30 @@
-diff name:ruadlist lines:65 checksum:e4b0e48d46
+diff name:ruadlist lines:78 checksum:6765d7b0a9
 d4 2
 a5 2
-! Last modified: Sat, 09 Dec 2023 15:18:40 +0000
-! Diff-Path: ../patches/2023.12.9.918.patch#ruadlist
+! Last modified: Sat, 09 Dec 2023 20:19:44 +0000
+! Diff-Path: ../patches/2023.12.9.1219.patch#ruadlist
 a6461 1
 ||videolink.site^$third-party
-a12481 1
+a7709 2
+/a/ipn/js/*$third-party,script
+/a/pop/js/*$third-party,script
+a7917 1
+/lhzbsrfkjf/js/*$third-party,script
+a11364 1
+||finance.ua/*/commercial/
+d12482 1
+a12482 2
 ||povarenok.ru/*bakers$image
+||povarenok.ru/css/*/sp$stylesheet
 d14775 1
 d15386 1
 a15386 1
 mezha.media,zhitomir.info##.banner-link
 a20067 1
-povarenok.ru##body > div:empty + div
+povarenok.ru##body > div:empty + div > a
 d20075 1
+a20279 1
+tass.ru##div[class*="InlineAd"]
 d21788 1
 a21788 1
 ||pikabu.ru/ajax/?zxe=2&_key=$xmlhttprequest,domain=pikabu.ru
@@ -27,6 +38,8 @@ d21808 1
 a21808 2
 pikabu.ru,sdamgia.ru##div[data-name="adWrapper"]
 pikabu.ru##div[href]
+a24133 1
+||placeholder.treeum.net^$third-party
 d25831 1
 a25831 1
 @@||static-mon.yandex.net/static/main.js?pid=$xmlhttprequest,domain=reshu.by|reshuent.kz|reshuolymp.ru|sdamgia.ru|sports.ru

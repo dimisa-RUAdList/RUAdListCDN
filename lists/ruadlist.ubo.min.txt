@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 09 Dec 2023 15:18:40 +0000
-! Diff-Path: ../patches/2023.12.9.918.patch#ruadlist
+! Last modified: Sat, 09 Dec 2023 20:19:44 +0000
+! Diff-Path: ../patches/2023.12.9.1219.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -7708,6 +7708,8 @@ _verified.php?code=*&server=runetki.com
 /^https?://[0-9a-f]{10}\.[0-9a-f]{10}\.com\/[0-9a-f]{32}\.js$/$third-party,script
 /^https?://[^/]+/[a-z0-9]{15,}(\?hope=.*)?$/$script,domain=~coco.fr|~greenmangaming.com|~ign.com|~justjared.com|~live-tennis.eu|~myorderbox.com|~namemc.com|~novinky.cz|~o2.pl|~onet.pl|~realtor.ca|~regway.com|~roblox.com|~sap.com|~spongemc.org|~spongepowered.org|~studio-svet.ru|~stumbleupon.com|~trueachievements.com|~tv.yandex.by|~tv.yandex.kz|~tv.yandex.ru|~wetteronline.de|~wp.pl
 /^https?://[a-z0-9]+\.info/+[-a-z0-9_?&=]{9,}/$third-party,script,domain=~dusk.com.au|~profi.ru|~reckon.com
+/a/ipn/js/*$third-party,script
+/a/pop/js/*$third-party,script
 /abnl/?ucozads^
 /ad/base.js?id=$third-party,script
 /ad_click/*$object
@@ -7916,6 +7918,7 @@ _verified.php?code=*&server=runetki.com
 /landing_btn/*$script,stylesheet,~third-party,domain=~tmconsult.ru
 /lc?pubId=$third-party,script
 /lentainform_widget.json
+/lhzbsrfkjf/js/*$third-party,script
 /linkexchange/*
 /load-promo/*
 /marketgid_$domain=~marketgid.com
@@ -11363,6 +11366,7 @@ lada.kz/uploads/banners/
 ||filmozavr.com/static/js/popUpBottomCorner.js
 ||fimgs.net/a/$subdocument,domain=fragrantica.ru
 ||finam.ru/net/imageheap/widget/*/logo-finam.png
+||finance.ua/*/commercial/
 ||finbazis.ru^*.php$script,domain=finbazis.ru
 ||finnews.ru^*&img=banners/
 ||fion.ru/files/banners2/
@@ -12481,7 +12485,7 @@ lada.kz/uploads/banners/
 ||poufe.ru/promo/
 ||poultryukraine.com/data/image/banners/
 ||povarenok.ru/*bakers$image
-||povarenok.ru/css/*/sp.css$stylesheet
+||povarenok.ru/css/*/sp$stylesheet
 ||povarenok.ru/css/*1.css$stylesheet
 ||povarenok.ru/i/*/*.jpg
 ||powerwaver.cc^*.js|$script
@@ -20066,7 +20070,7 @@ forchecking.ru##body > div > a[target="_blank"] > img
 forum.watch.ru##body > div > div[style*="overflow"]
 nadavi.com.ua,nadavi.ru##body > div > table[width="92%"]:not([class="top-region"])
 orda.kz##body > div.layer0
-povarenok.ru##body > div:empty + div
+povarenok.ru##body > div:empty + div > a
 coop-land.ru##body > div:not([id]):not([class]):empty
 boom365hd.com,sport365hd.com,sport365hd.net,whd365.pro##body > div:not([id]):not([class])[style*="z-index"]
 4725.ru##body > div:not([id]):not([class])[style^="position: relative;z-index:"]
@@ -20278,6 +20282,7 @@ zhukvesti.ru##div[class*="Banners"]
 football24.ua##div[class*="BrandingPlace"]
 career.ru##div[class*="HHC-Banner-"]
 ren.tv##div[class*="InformationBlock_"]
+tass.ru##div[class*="InlineAd"]
 rg.ru##div[class*="PageArticle"][class*="_partner_"]
 rg.ru##div[class*="YandexAD"]
 fex.net##div[class*="__ads-"]
@@ -24135,6 +24140,7 @@ cheb.ru,cheboksary.ws,kugesi.ru,na-svyazi.ru##a[href*="/ad.adriver."]
 ||pix-cdn.org/image/banner/
 ||pix-cdn.org/image/ts/
 ||pix-cdn.org/image/vk/
+||placeholder.treeum.net^$third-party
 ||placeoff.ru^
 ||platinumcode.net^$third-party
 ||play-in-flash.com/wp-content/$third-party

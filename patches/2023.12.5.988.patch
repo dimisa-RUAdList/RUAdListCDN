@@ -1,8 +1,8 @@
-diff name:ruadlist lines:93 checksum:e4b0e48d46
+diff name:ruadlist lines:106 checksum:6765d7b0a9
 d4 2
 a5 2
-! Last modified: Sat, 09 Dec 2023 15:18:40 +0000
-! Diff-Path: ../patches/2023.12.9.918.patch#ruadlist
+! Last modified: Sat, 09 Dec 2023 20:19:44 +0000
+! Diff-Path: ../patches/2023.12.9.1219.patch#ruadlist
 a1215 1
 ||codedome.online^$third-party
 a2070 1
@@ -11,8 +11,17 @@ a3903 1
 ||mtrcss.com^$third-party
 a6458 1
 ||videolink.site^$third-party
-a12478 1
+a7706 2
+/a/ipn/js/*$third-party,script
+/a/pop/js/*$third-party,script
+a7914 1
+/lhzbsrfkjf/js/*$third-party,script
+a11361 1
+||finance.ua/*/commercial/
+d12479 1
+a12479 2
 ||povarenok.ru/*bakers$image
+||povarenok.ru/css/*/sp$stylesheet
 d13451 1
 a13451 1
 ||youtube.com/embed/$domain=168.ru|4put.ru|androeed.ru|anime-365.ru|compendium.su|fbsearch.ru|geomap.com.ua|hdrabbit.ru|kinotochka.co|kinotochka.me|lostpix.com|multitran.com|newstudio-online.tv|sbornik-music.ru|sinonim.org|smotret-anime.online|subject.com.ua|ukrlit.net|zarlit.com
@@ -22,8 +31,10 @@ d15384 1
 a15384 1
 mezha.media,zhitomir.info##.banner-link
 a20065 1
-povarenok.ru##body > div:empty + div
+povarenok.ru##body > div:empty + div > a
 d20073 1
+a20277 1
+tass.ru##div[class*="InlineAd"]
 d20747 1
 a20747 1
 1tv.ru,4pda.to,artem-kashkanov.ru,astrakhan-24.ru,baraholka.onliner.by,bigpicture.ru,energyfm.ru,galya.ru,gotovim-doma.ru,qip.ru,vputilkovo.ru##div[id*="yandex_ad"]
@@ -49,6 +60,8 @@ d21806 1
 a21806 2
 pikabu.ru,sdamgia.ru##div[data-name="adWrapper"]
 pikabu.ru##div[href]
+a24131 1
+||placeholder.treeum.net^$third-party
 d25829 1
 a25829 1
 @@||static-mon.yandex.net/static/main.js?pid=$xmlhttprequest,domain=reshu.by|reshuent.kz|reshuolymp.ru|sdamgia.ru|sports.ru
