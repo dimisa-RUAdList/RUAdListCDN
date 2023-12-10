@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 10 Dec 2023 16:24:13 +0000
-! Diff-Path: ../patches/2023.12.10.984.patch#ruadlist
+! Last modified: Sun, 10 Dec 2023 21:16:39 +0000
+! Diff-Path: ../patches/2023.12.10.1276.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -3567,6 +3567,7 @@
 ||main-tcod.com^$third-party
 ||mainclc.com^
 ||mainews.ru^
+||mainotter.com^$third-party
 ||maisyy.com^$third-party
 ||major-inpp-code.com^$third-party
 ||major-t-code.com^$third-party
@@ -4788,6 +4789,7 @@
 ||puipui.ru^$third-party
 ||pukchpok.online^$third-party
 ||purecash.ru^$third-party
+||purestairs.com^$third-party
 ||purige.ru^$third-party
 ||push.exchange^$third-party
 ||pushadv.biz^$third-party
@@ -5679,7 +5681,6 @@
 ||strannosty.ru^$third-party
 ||streamingcastle.me^$third-party
 ||streetuptowind.com.com^$third-party
-||streetuptowind.com^$third-party
 ||striere.com^
 ||striete.com^
 ||striglusor.com^$third-party
@@ -5687,6 +5688,7 @@
 ||strucewe.info^$third-party
 ||sts-bts-td.ru^$third-party
 ||stsdv.com^$third-party
+||stteeruptowind.com^$third-party
 ||stumtererum.com^$third-party
 ||styleload.ru^$third-party
 ||su2lgyoeucscn.ru^$third-party
@@ -10447,7 +10449,6 @@ $xmlhttprequest,domain=happy-biock.info|happy-block.info|howto-news.info|mschist
 /ad*.tutu.ru^*_*.php|
 /adata/*$domain=pindosoff.net|pornosvideo.info|pornovkisku.com|teplomontag.net
 /add.php|$xmlhttprequest,domain=domonosok.tk|haes.tech|hqq.to|hqq.tv|porn-watch.ru|vidxhot.net
-/ads/advise/*$domain=2gis.by|2gis.kz|2gis.ru
 /afrsasync*.js$script,domain=auto.vesti.ru|gubernia.com
 /ajax/hitsadv.php?$domain=newsomsk.ru|omskregion.info
 /api*iframe$subdocument,domain=get-tune.cc|intermusic.name|iplayer.info|ipleer.fm|mp3cc.biz|mp3iq.com
@@ -10640,6 +10641,7 @@ lada.kz/uploads/banners/
 ||2baksa.ws^$script
 ||2ch.*/banners/$domain=2ch.hk|2ch.life
 ||2d.windows-8.ru
+||2gis.*/ads/advise/
 ||2ip.ua/images/keyweb.
 ||2ip.ua/images/support_ukraine.png
 ||2ip.ua/images/war.png
@@ -17632,7 +17634,6 @@ anistar.org,astar.bz,online-star.org,online-stars.org##.right-panel-bottom > .fa
 gorod48.ru#?#.right-side > .reading:-abp-has(> div > #MediaMetricsInject)
 playboyrussia.com##.right-side > .sticky
 sochinyashka.ru##.right-sidebar > .block
-vshkole.com##.right-sidebar > div > div[style^="margin-bottom: 20px; height:"]
 censor.net##.right-sidebar div[style^="width: 300px; height: "]
 censor.net#?#.right-sidebar__title_without_border:-abp-has(> div[style^="width: 300px; height: "])
 sport.ua##.right-top__banner
