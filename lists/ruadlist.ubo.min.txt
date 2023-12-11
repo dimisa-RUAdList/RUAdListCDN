@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 11 Dec 2023 12:38:56 +0000
-! Diff-Path: ../patches/2023.12.11.758.patch#ruadlist
+! Last modified: Mon, 11 Dec 2023 17:21:40 +0000
+! Diff-Path: ../patches/2023.12.11.1041.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -14978,6 +14978,7 @@ vsluh.ru##.ads_list
 lelang.su##.ads_mark
 naked-science.ru##.ads_single
 webtun.com##.adsb
+amoledo.com##.adsbanner
 pogodavtomske.ru##.adsbox
 azpolitika.info##.adsbyskyline
 sharknews.ru##.adsdesctop
@@ -15391,7 +15392,7 @@ amur.info,gts39.ru##.banner-item
 volyn24.com##.banner-label
 gameportalrf.ru,profi-forex.org##.banner-left
 newsomsk.ru##.banner-left-detail-new
-mezha.media,zhitomir.info##.banner-link
+amoledo.com,mezha.media,zhitomir.info##.banner-link
 newsazerbaijan.ru##.banner-middle
 gx.net.ua,hh.ru,nevasport.ru,tut.by##.banner-place
 moika78.ru##.banner-place::before
@@ -21794,7 +21795,7 @@ rafkino.com##div[id^="MarketGid"]
 ||www.liveinternet.ru/users/$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/cgi-bin/rpls.fcgi?list= https://www.liveinternet.ru/spell/spell.js https://www.liveinternet.ru/share/js/share.js https://www.liveinternet.ru/4Ek/JS/diary/main/nav/regoradd.js https://www.liveinternet.ru/4Ek/JS/diary/trans.js
 ||www.liveinternet.ru/|$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/utf/lici.js https://www.liveinternet.ru/utf/li.js https://www.liveinternet.ru/utf/main_new.js
 ! Pikabu (ловушка для обфускации)
-||pikabu.ru/ajax/?zxe=2&_key=$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/ajax/?zx*=2&_key=$xmlhttprequest,domain=pikabu.ru
 ! селекторы
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
