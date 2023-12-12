@@ -1,19 +1,27 @@
-diff name:ruadlist lines:18 checksum:23e672e5e4
+diff name:ruadlist lines:26 checksum:a8bb1ffda2
 d4 2
 a5 2
-! Last modified: Tue, 12 Dec 2023 18:25:19 +0000
-! Diff-Path: ../patches/2023.12.12.1105.patch#ruadlist
+! Last modified: Tue, 12 Dec 2023 23:19:59 +0000
+! Diff-Path: ../patches/2023.12.12.1399.patch#ruadlist
 a1101 1
 ||changelifer.biz^$third-party
 a2688 1
 ||igbfwa.com^$third-party
+d21798 1
+a21798 1
+||pikabu.ru/ajax/?*=2&_key=$xmlhttprequest,domain=pikabu.ru
 d21802 1
 a21802 2
 pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: calc.[0569]{2}[0-9]{1}|min-height: calc.+.em|min-height: .+.lh/)
 pikabu.ru##.sidebar-block_border[style*="transparent"]
 d21805 1
 a21805 1
-pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:-abp-contains(//[a-z]$|\s$/))
+pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:-abp-contains(/[a-z]$|\s$|:$/))
 d27641 1
 a27641 1
 dzen.ru##[class*="loors"] div[id][class^="feed"] [class*="wrapper"][aria-label] ~ article:not([aria-label])
+d27772 1
+a27781 3
+! исправление ошибок и косяков оригинальной вёрстки
+gazeta.ru###_id_main_content:style(max-width: 100% !important)
+gazeta.ru##.b_header:style(max-width: 100% !important)
