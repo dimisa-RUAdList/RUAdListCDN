@@ -1,8 +1,12 @@
-diff name:ruadlist lines:12 checksum:d6a75ef5ec
+diff name:ruadlist lines:26 checksum:8f126304b3
 d4 2
 a5 2
-! Last modified: Tue, 12 Dec 2023 08:25:39 +0000
-! Diff-Path: ../patches/2023.12.12.505.patch#ruadlist
+! Last modified: Tue, 12 Dec 2023 13:24:22 +0000
+! Diff-Path: ../patches/2023.12.12.804.patch#ruadlist
+a1101 1
+||changelifer.biz^$third-party
+a2688 1
+||igbfwa.com^$third-party
 a14980 1
 amoledo.com##.adsbanner
 d15394 1
@@ -11,3 +15,13 @@ amoledo.com,mezha.media,zhitomir.info##.banner-link
 d21797 1
 a21797 1
 ||pikabu.ru/ajax/?zx*=2&_key=$xmlhttprequest,domain=pikabu.ru
+d21801 1
+a21801 2
+pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: calc.[0569]{2}[0-9]{1}|min-height: calc.+.em|min-height: .+.lh/)
+pikabu.ru##.sidebar-block_border[style*="transparent"]
+d21804 1
+a21804 1
+pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:-abp-contains(//[a-z]$|\s$/))
+d27640 1
+a27640 1
+dzen.ru##[class*="loors"] div[id][class^="feed"] [class*="wrapper"][aria-label] ~ article:not([aria-label])

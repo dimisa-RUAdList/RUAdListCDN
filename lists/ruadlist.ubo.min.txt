@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 12 Dec 2023 08:25:39 +0000
-! Diff-Path: ../patches/2023.12.12.505.patch#ruadlist
+! Last modified: Tue, 12 Dec 2023 13:24:22 +0000
+! Diff-Path: ../patches/2023.12.12.804.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -1099,6 +1099,7 @@
 ||chabg.top^$third-party
 ||chajv.top^$third-party
 ||championwin.ru^$third-party
+||changelifer.biz^$third-party
 ||chanluu.ru^$third-party
 ||cheburchik.ru^$third-party
 ||checke.biz^$third-party
@@ -2686,6 +2687,7 @@
 ||iemieshohx.com^$third-party
 ||ieuhd.com^$third-party
 ||iexqhm.com^$third-party
+||igbfwa.com^$third-party
 ||igdaejaadediihbiafc.ru^$third-party
 ||igetsend.ru^$third-party
 ||igkek7a2.ga^$third-party
@@ -21799,10 +21801,11 @@ rafkino.com##div[id^="MarketGid"]
 ! селекторы
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
-pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: calc.[0569]{2}[0-9]{1}|min-height: calc.+.em|min-height: [0-9].lh/)
+pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: calc.[0569]{2}[0-9]{1}|min-height: calc.+.em|min-height: .+.lh/)
+pikabu.ru##.sidebar-block_border[style*="transparent"]
 pikabu.ru##.sidebar__inner > .sidebar-block div[style=""]
 pikabu.ru##.sidebar__inner > .sidebar-block:not(.sidebar-block_border)
-pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:-abp-contains(/[a-z]$/))
+pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:-abp-contains(//[a-z]$|\s$/))
 dracon-zet.ru,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 android-mafia.com,game4you.top,games-pc.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##:not(this-site-promotes-malware)
 pikabu.ru##[data-block-name]
@@ -27638,7 +27641,7 @@ dzen.ru##.adv-ecom
 dzen.ru##.mg-advert__content:not(:first-child):style(margin-top: unset !important)
 dzen.ru##.mg-grid__col > div[style^="margin-top:"]:style(margin-top: unset !important)
 dzen.ru##.viewer-layout__content div[class*="content__player"] ~ div[class*="heme"]
-dzen.ru##[class*="Floors"] div[id][class^="feed"] [class*="wrapper"][aria-label] ~ article:not([aria-label])
+dzen.ru##[class*="loors"] div[id][class^="feed"] [class*="wrapper"][aria-label] ~ article:not([aria-label])
 dzen.ru##a[href*="://yandex.ru/an/count/"]
 dzen.ru##a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div
 dzen.ru##aside[id^="article_"][class*="righ"] > div[class]
