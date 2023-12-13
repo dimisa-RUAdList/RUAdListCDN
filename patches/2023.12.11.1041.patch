@@ -1,12 +1,35 @@
-diff name:ruadlist lines:28 checksum:9e2007fb90
+diff name:ruadlist lines:56 checksum:be10e57ed9
 d4 2
 a5 2
-! Last modified: Wed, 13 Dec 2023 14:22:29 +0000
-! Diff-Path: ../patches/2023.12.13.862.patch#ruadlist
+! Last modified: Wed, 13 Dec 2023 19:16:23 +0000
+! Diff-Path: ../patches/2023.12.13.1156.patch#ruadlist
 a1101 1
 ||changelifer.biz^$third-party
 a2688 1
 ||igbfwa.com^$third-party
+a2771 1
+||info-app4.ru^$third-party
+a10162 1
+||autonews.co.ua^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.io *.net *.org *.ru *.ua
+d10519 1
+a10519 1
+/js/init.js$script,~third-party,domain=assistentus.ru|dogovor-urist.ru|erikadmin.ru|fzrf.su|gibdd-gai.ru|gibddru.info|kodeksy.com.ua|moepravo.guru|pasportnyjstol.ru|poliklinika-avto.ru|prestima.ru|pristav-russia.ru|prizivnika.net|prozhivem.com|regoperatory.ru|snn-mn.ru|tbti.ru|vozvrat-tovara.ru|xn--80abefftg5atkeine8j.xn--p1ai|xn--b1aasedeuba5ai.xn--p1ai|zakon-o-tishine.ru|zakonguru.com
+a12765 1
+||scr365.net/a/$domain=soccer365.com.ua|soccer365.ru
+d13285 1
+a13285 1
+||vkplay.live/app/embed/$domain=playground.ru|shazoo.ru|zoneofgames.ru
+d14160 1
+a15227 1
+news.liga.net##.b-blocks
+d19158 1
+a19158 1
+360tv.ru,avtonovostidnya.ru,coop-land.ru,energyfm.ru,gdeichto.ru,kommersant.ru,moe-belgorod.ru,moe-kursk.ru,moe-lipetsk.ru,moe-online.ru,moe-tambov.ru,mydecor.ru,mywebpc.ru,new-magazine.ru,news.ru,penzainform.ru,peterburg2.ru,pnz.ru,regnum.ru,rutube.ru,sm.news,sportsdaily.ru,super.ru,syzran-small.ru,teleprogramma.pro,thegirl.ru,tsargrad.tv,tulapressa.ru,u-f.ru,ura.news,utyug.info,vz.ru,xn----7sbabwosghnf8al4lkj7b.xn--p1ai,zaks.ru,zr.ru##a[href*="//dzen.ru/"]
+d21069 1
+a21150 1
+soccer365.com.ua,soccer365.ru##div[style^="position:"][style*="height:90px"]
+a21255 1
+shazoo.ru##iframe[src*="://vkplay.live/"]
 d21798 1
 a21798 1
 ||pikabu.ru/ajax/?*=2&_key=$xmlhttprequest,domain=pikabu.ru
@@ -17,6 +40,9 @@ pikabu.ru##.sidebar-block_border[style*="transparent"]
 d21805 1
 a21805 1
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:-abp-contains(/[a-z]$|\s$|:$|:.$/))
+d27371 1
+a27371 1
+soccer365.com.ua,soccer365.ru##.header_top:style(margin-top: 0 !important)
 d27641 1
 a27641 1
 dzen.ru##[class*="loors"] div[id][class^="feed"] [class*="wrapper"][aria-label] ~ article:not([aria-label])
@@ -27,3 +53,5 @@ a27781 3
 ! исправление ошибок и косяков оригинальной вёрстки
 gazeta.ru###_id_main_content:style(max-width: 100% !important)
 gazeta.ru##.b_header:style(max-width: 100% !important)
+a28197 1
+eneyida.tv##+js(set-attr, .owl-item > a > img, src, [data-src])

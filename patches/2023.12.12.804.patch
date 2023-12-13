@@ -1,14 +1,40 @@
-diff name:ruadlist lines:17 checksum:9e2007fb90
+diff name:ruadlist lines:45 checksum:be10e57ed9
 d4 2
 a5 2
-! Last modified: Wed, 13 Dec 2023 14:22:29 +0000
-! Diff-Path: ../patches/2023.12.13.862.patch#ruadlist
+! Last modified: Wed, 13 Dec 2023 19:16:23 +0000
+! Diff-Path: ../patches/2023.12.13.1156.patch#ruadlist
+a2773 1
+||info-app4.ru^$third-party
+a10164 1
+||autonews.co.ua^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.io *.net *.org *.ru *.ua
+d10521 1
+a10521 1
+/js/init.js$script,~third-party,domain=assistentus.ru|dogovor-urist.ru|erikadmin.ru|fzrf.su|gibdd-gai.ru|gibddru.info|kodeksy.com.ua|moepravo.guru|pasportnyjstol.ru|poliklinika-avto.ru|prestima.ru|pristav-russia.ru|prizivnika.net|prozhivem.com|regoperatory.ru|snn-mn.ru|tbti.ru|vozvrat-tovara.ru|xn--80abefftg5atkeine8j.xn--p1ai|xn--b1aasedeuba5ai.xn--p1ai|zakon-o-tishine.ru|zakonguru.com
+a12767 1
+||scr365.net/a/$domain=soccer365.com.ua|soccer365.ru
+d13287 1
+a13287 1
+||vkplay.live/app/embed/$domain=playground.ru|shazoo.ru|zoneofgames.ru
+d14162 1
+a15229 1
+news.liga.net##.b-blocks
+d19160 1
+a19160 1
+360tv.ru,avtonovostidnya.ru,coop-land.ru,energyfm.ru,gdeichto.ru,kommersant.ru,moe-belgorod.ru,moe-kursk.ru,moe-lipetsk.ru,moe-online.ru,moe-tambov.ru,mydecor.ru,mywebpc.ru,new-magazine.ru,news.ru,penzainform.ru,peterburg2.ru,pnz.ru,regnum.ru,rutube.ru,sm.news,sportsdaily.ru,super.ru,syzran-small.ru,teleprogramma.pro,thegirl.ru,tsargrad.tv,tulapressa.ru,u-f.ru,ura.news,utyug.info,vz.ru,xn----7sbabwosghnf8al4lkj7b.xn--p1ai,zaks.ru,zr.ru##a[href*="//dzen.ru/"]
+d21071 1
+a21152 1
+soccer365.com.ua,soccer365.ru##div[style^="position:"][style*="height:90px"]
+a21257 1
+shazoo.ru##iframe[src*="://vkplay.live/"]
 d21800 1
 a21800 1
 ||pikabu.ru/ajax/?*=2&_key=$xmlhttprequest,domain=pikabu.ru
 d21808 1
 a21808 1
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:-abp-contains(/[a-z]$|\s$|:$|:.$/))
+d27374 1
+a27374 1
+soccer365.com.ua,soccer365.ru##.header_top:style(margin-top: 0 !important)
 a27660 1
 dzen.ru##div[class^="feed__ro"] article > div:first-child + div + div
 d27775 1
@@ -16,3 +42,5 @@ a27784 3
 ! исправление ошибок и косяков оригинальной вёрстки
 gazeta.ru###_id_main_content:style(max-width: 100% !important)
 gazeta.ru##.b_header:style(max-width: 100% !important)
+a28200 1
+eneyida.tv##+js(set-attr, .owl-item > a > img, src, [data-src])

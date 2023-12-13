@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 13 Dec 2023 14:22:29 +0000
-! Diff-Path: ../patches/2023.12.13.862.patch#ruadlist
+! Last modified: Wed, 13 Dec 2023 19:16:23 +0000
+! Diff-Path: ../patches/2023.12.13.1156.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -2771,6 +2771,7 @@
 ||info-app.ru^$third-party
 ||info-app2.ru^$third-party
 ||info-app3.ru^$third-party
+||info-app4.ru^$third-party
 ||info.howto-news.info^
 ||info33.info^$third-party
 ||info4park.ru^$third-party
@@ -10162,6 +10163,7 @@ agrarii-razom.com.ua##div[id^="user-to-register"]
 ||agroter.com.ua^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.googletagmanager.com *.io *.net *.org *.ru *.ua
 ||an.yandex.ru/count/$csp=script-src
 ||askentire.net^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.googletagmanager.com *.keycaptcha.com
+||autonews.co.ua^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.io *.net *.org *.ru *.ua
 ||azbne.net^$csp=sandbox allow-same-origin;
 ||babla.ru^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' date: ajax.googleapis.com *.bab.la *.cloudflare.net *.jsdelivr.net *.facebook.net *.twitter.com
 ||betnetmed.advertserve.com^$csp=sandbox allow-same-origin;
@@ -10518,7 +10520,7 @@ $xmlhttprequest,domain=happy-biock.info|happy-block.info|howto-news.info|mschist
 /js/*.js?$script,domain=all-sci.net|bib.social|economics.studio|economuch.com|finbook.news|lawbook.online|lawbooks.news|lib.sale|medinfo.live|myzooplanet.ru|pravo.studio|provse.news|psihologia.biz|sci-lib.biz|sci.house|scicenter.online|textbooks.studio|uchebnikfree.com|xn--80aaivjfyj3e.com
 /js/al/mrtarg.js$domain=vk.com|vk.ru
 /js/game_$domain=otxataba.net|xatab-repack.com|xatab-repack.org
-/js/init.js$script,~third-party,domain=assistentus.ru|dogovor-urist.ru|erikadmin.ru|fzrf.su|gibdd-gai.ru|gibddru.info|kodeksy.com.ua|pasportnyjstol.ru|poliklinika-avto.ru|prestima.ru|pristav-russia.ru|prizivnika.net|prozhivem.com|regoperatory.ru|snn-mn.ru|tbti.ru|vozvrat-tovara.ru|xn--80abefftg5atkeine8j.xn--p1ai|xn--b1aasedeuba5ai.xn--p1ai|zakon-o-tishine.ru|zakonguru.com
+/js/init.js$script,~third-party,domain=assistentus.ru|dogovor-urist.ru|erikadmin.ru|fzrf.su|gibdd-gai.ru|gibddru.info|kodeksy.com.ua|moepravo.guru|pasportnyjstol.ru|poliklinika-avto.ru|prestima.ru|pristav-russia.ru|prizivnika.net|prozhivem.com|regoperatory.ru|snn-mn.ru|tbti.ru|vozvrat-tovara.ru|xn--80abefftg5atkeine8j.xn--p1ai|xn--b1aasedeuba5ai.xn--p1ai|zakon-o-tishine.ru|zakonguru.com
 /js/pop*.js$script,domain=superhumor.ru|voffka.com
 /js/script-*.*.js|$script,domain=divxplayer.ml|domonosok.tk|haes.tech|hcdn.online|hqq.to|hqq.tv|kinokrad.in.net|metaverseid.tk|player.cvary.org|porn-watch.ru|vidxhot.net
 /js/v.js$script,domain=superhumor.ru|voffka.com
@@ -12765,6 +12767,7 @@ lada.kz/uploads/banners/
 ||scask.ru/images/fx4you.
 ||scicenter.online^$subdocument
 ||scores24.live/tvsv/
+||scr365.net/a/$domain=soccer365.com.ua|soccer365.ru
 ||screenlist.ru/ads.js
 ||screenpost.ru^*.php$script
 ||scripts.pogodnik.com/public/js/a_detector.js
@@ -13284,7 +13287,7 @@ lada.kz/uploads/banners/
 ||vk.com/dist/web/aliexpress_feed_recommendations_carousel.
 ||vk.com/js/al/aes_light.js$script,domain=~vk.com
 ||vkaznu.ru^*.php$script
-||vkplay.live/app/embed/$domain=playground.ru|zoneofgames.ru
+||vkplay.live/app/embed/$domain=playground.ru|shazoo.ru|zoneofgames.ru
 ||vkurske.com/banners/
 ||vl.ru/eda/*/widget/$script,domain=drom.ru
 ||vl.ru/widgets/drom.js$script,domain=forums.drom.ru
@@ -14159,7 +14162,6 @@ shans.com.ua###mainNav > .titleBlue ~ .titleBlue
 shans.com.ua###mainNav > div[style="margin-bottom:20px;"]
 argumenti.ru###main_adv
 forum.hdtv.ru,zadonbass.org###main_banner
-soccer365.com.ua,soccer365.ru###main_container > div[style^="position:"][style*="position:absolute"]
 file-tracker.net###main_content + td[width="240px"]
 forum.tradelikeapro.ru###main_content_section > table > tbody > tr > td:nth-of-type(2)
 rugrad.eu###main_right_col > .section:not(.section_blogs)
@@ -15227,6 +15229,7 @@ siliconrus.com##.b-bks
 inter.ua##.b-block > table[class]
 sibdepo.ru##.b-block--banner
 ixbt.com##.b-block__parterslist
+news.liga.net##.b-blocks
 sobaka.ru##.b-body-brand-banner
 sobaka.ru##.b-body-sidebar__banners
 hata.by##.b-card__sale
@@ -19157,7 +19160,7 @@ rutr.life,rutracker.lib,rutracker.net,rutracker.nl,rutracker.org##a[href*=".vkpl
 wintorrents.ru##a[href*=".wintorrents.ru"]
 1tv.ru,drive.ru,f1news.ru,gamemag.ru,kinonews.ru,kinorium.com,livejournal.com,myshows.me,onlinestreams.ru,pikabu.ru,pluggedin.ru,sovsport.ru,spletnik.ru,trinixy.ru,www.pesticidy.ru##a[href*="//ads.adfox.ru/"]
 dks.com.ua,enovosty.com,expert.in.ua,galas.te.ua,galinfo.com.ua,nbnews.com.ua,plitkar.com.ua,rivnepost.rv.ua,tenews.org.ua,ukrnews24.net,varta1.com.ua##a[href*="//besplatka.ua"]
-360tv.ru,avtonovostidnya.ru,coop-land.ru,energyfm.ru,gdeichto.ru,kommersant.ru,moe-belgorod.ru,moe-kursk.ru,moe-lipetsk.ru,moe-online.ru,moe-tambov.ru,mydecor.ru,mywebpc.ru,new-magazine.ru,penzainform.ru,peterburg2.ru,pnz.ru,regnum.ru,rutube.ru,sm.news,sportsdaily.ru,super.ru,syzran-small.ru,teleprogramma.pro,thegirl.ru,tsargrad.tv,tulapressa.ru,u-f.ru,ura.news,utyug.info,vz.ru,xn----7sbabwosghnf8al4lkj7b.xn--p1ai,zaks.ru,zr.ru##a[href*="//dzen.ru/"]
+360tv.ru,avtonovostidnya.ru,coop-land.ru,energyfm.ru,gdeichto.ru,kommersant.ru,moe-belgorod.ru,moe-kursk.ru,moe-lipetsk.ru,moe-online.ru,moe-tambov.ru,mydecor.ru,mywebpc.ru,new-magazine.ru,news.ru,penzainform.ru,peterburg2.ru,pnz.ru,regnum.ru,rutube.ru,sm.news,sportsdaily.ru,super.ru,syzran-small.ru,teleprogramma.pro,thegirl.ru,tsargrad.tv,tulapressa.ru,u-f.ru,ura.news,utyug.info,vz.ru,xn----7sbabwosghnf8al4lkj7b.xn--p1ai,zaks.ru,zr.ru##a[href*="//dzen.ru/"]
 beatmake.ru##a[href*="//go.acstat.com/"]
 porno-island.site##a[href*="//goo.su/"]
 animevost.tv,senpai.cc##a[href*="//inlnk.ru/"]
@@ -21068,7 +21071,6 @@ liveresult.ru##div[style="font-size:18px; font-weight:bold;margin-bottom:10px;"]
 astrohelper.ru##div[style="height: 120px;"]
 glavred.info,glavred.net##div[style="height: 400px"]
 kirov-portal.ru##div[style="height: 90px; font-size: 1px; line-height: 1px;"]
-soccer365.com.ua,soccer365.ru##div[style="height:200px"]
 unews.pro##div[style="height:20px;"]:empty
 autonevod.ru##div[style="height:250px"]
 unian.info,unian.net,unian.ua##div[style="height:260px;clear:both;"]
@@ -21150,6 +21152,7 @@ liveposts.ru##div[style^="min-height: 700px;"]
 open3dmodel.com##div[style^="min-height:"][style$="px;"]
 point.md##div[style^="min-height:"][style*="250px"]
 1pnz.ru##div[style^="position: relative; width: 230px; height: 400px"]
+soccer365.com.ua,soccer365.ru##div[style^="position:"][style*="height:90px"]
 lostfilmstv.com##div[style^="promo"]
 kinonews.ru##div[style^="text-align:"][style*="center;"][style*="height:"]
 wallegend.net##div[style^="text-align:center;line-height:0;display:block;height:"]
@@ -21255,6 +21258,7 @@ fapl.ru##iframe[src*="/upload/fapl_"]
 gazeta.uz##iframe[src*="/www/delivery/"]
 s-platoon.ru##iframe[src*="://s-platoon.ru/forfon/"]
 ekovolga.com,imenie-home.ru,news-tape.ru,vamrecipes.ru##iframe[src*="://vamproducts.ru/"]
+shazoo.ru##iframe[src*="://vkplay.live/"]
 yk.kz##iframe[src*="://yk.kz/"][src$="/"]
 protdt.ru##iframe[src*="ADVERT"]
 finversia.ru,lr-club.com,mobile-review.com,pogoda.ru,severinform.ru,thg.ru##iframe[src*="ad.adriver.ru"]
@@ -27371,7 +27375,7 @@ sobaka.ru##.b-site-body:style(padding-top: 0 !important)
 soccer.ru###main_body > .block:style(height: auto !important)
 soccer.ru###site:style(margin-top: 0 !important)
 ! ---
-soccer365.com.ua,soccer365.ru##.header_top:style(padding-top: 0 !important)
+soccer365.com.ua,soccer365.ru##.header_top:style(margin-top: 0 !important)
 ! ---
 sochi.camera###cams_top_block:style(height: 0 !important)
 sochi.camera##.banner:style(height: 0 !important)
@@ -28201,6 +28205,7 @@ game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka
 116.ru,14.ru,161.ru,164.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,62.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,proizhevsk.ru,provoronezh.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,www.fontanka.ru##+js(set, Object.prototype.changeVisible, noopFunc)
 howdyho.net##+js(set-attr, #progress-value, data-timer, 10)
 sdamgia.ru##+js(set-attr, .Root:not(.sgia-main-content) main > div:first-child:empty, class, false)
+eneyida.tv##+js(set-attr, .owl-item > a > img, src, [data-src])
 dtf.ru,vc.ru##+js(set-attr, a[href$="?ref=recommended"], target, '')
 reshu.by##+js(set-attr, main > div:first-child:empty, class, false)
 peers.tv##+js(set-constant, ADV_BLOCKED, false)
