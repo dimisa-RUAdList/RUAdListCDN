@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 13 Dec 2023 09:20:17 +0000
-! Diff-Path: ../patches/2023.12.13.560.patch#ruadlist
+! Last modified: Wed, 13 Dec 2023 14:22:29 +0000
+! Diff-Path: ../patches/2023.12.13.862.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21805,7 +21805,7 @@ pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: calc.[0569]{2}[0-9]{
 pikabu.ru##.sidebar-block_border[style*="transparent"]
 pikabu.ru##.sidebar__inner > .sidebar-block div[style=""]
 pikabu.ru##.sidebar__inner > .sidebar-block:not(.sidebar-block_border)
-pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:-abp-contains(/[a-z]$|\s$|:$/))
+pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:-abp-contains(/[a-z]$|\s$|:$|:.$/))
 dracon-zet.ru,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 android-mafia.com,game4you.top,games-pc.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##:not(this-site-promotes-malware)
 pikabu.ru##[data-block-name]
@@ -27658,6 +27658,7 @@ dzen.ru##div[class^="dzen-desktop__link_bro-"]
 dzen.ru##div[class^="dzen-desktop__teaser-"]
 dzen.ru##div[class^="dzen-wrapper-with-top-content-desktop__topContent-"] div[class^="promo-"]
 dzen.ru##div[class^="dzen-wrapper-with-top-content-desktop__topContent-"]:style(grid-template-columns: inherit !important)
+dzen.ru##div[class^="feed__ro"] article > div:first-child + div + div
 dzen.ru##div[id][class$="__ad"]
 dzen.ru##div[id][class^="feed"] article[class*="_with-border "]
 ! ---

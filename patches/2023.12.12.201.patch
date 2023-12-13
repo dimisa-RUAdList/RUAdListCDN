@@ -1,8 +1,8 @@
-diff name:ruadlist lines:26 checksum:cfde328d3c
+diff name:ruadlist lines:28 checksum:9e2007fb90
 d4 2
 a5 2
-! Last modified: Wed, 13 Dec 2023 09:20:17 +0000
-! Diff-Path: ../patches/2023.12.13.560.patch#ruadlist
+! Last modified: Wed, 13 Dec 2023 14:22:29 +0000
+! Diff-Path: ../patches/2023.12.13.862.patch#ruadlist
 a1101 1
 ||changelifer.biz^$third-party
 a2688 1
@@ -16,10 +16,12 @@ pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: calc.[0569]{2}[0-9]{
 pikabu.ru##.sidebar-block_border[style*="transparent"]
 d21805 1
 a21805 1
-pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:-abp-contains(/[a-z]$|\s$|:$/))
+pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:-abp-contains(/[a-z]$|\s$|:$|:.$/))
 d27641 1
 a27641 1
 dzen.ru##[class*="loors"] div[id][class^="feed"] [class*="wrapper"][aria-label] ~ article:not([aria-label])
+a27657 1
+dzen.ru##div[class^="feed__ro"] article > div:first-child + div + div
 d27772 1
 a27781 3
 ! исправление ошибок и косяков оригинальной вёрстки
