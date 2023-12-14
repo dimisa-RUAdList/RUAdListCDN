@@ -1,8 +1,8 @@
-diff name:ruadlist lines:81 checksum:5fa4a0632d
+diff name:ruadlist lines:88 checksum:bb5903d2ec
 d4 2
 a5 2
-! Last modified: Thu, 14 Dec 2023 10:24:53 +0000
-! Diff-Path: ../patches/2023.12.14.624.patch#ruadlist
+! Last modified: Thu, 14 Dec 2023 15:21:29 +0000
+! Diff-Path: ../patches/2023.12.14.921.patch#ruadlist
 a1101 1
 ||changelifer.biz^$third-party
 a2688 1
@@ -16,6 +16,8 @@ a10197 1
 d10518 1
 a10518 1
 /js/init.js$script,~third-party,domain=assistentus.ru|dogovor-urist.ru|erikadmin.ru|fzrf.su|gibdd-gai.ru|gibddru.info|kodeksy.com.ua|moepravo.guru|pasportnyjstol.ru|poliklinika-avto.ru|prestima.ru|pristav-russia.ru|prizivnika.net|prozhivem.com|regoperatory.ru|snn-mn.ru|tbti.ru|vozvrat-tovara.ru|xn--80abefftg5atkeine8j.xn--p1ai|xn--b1aasedeuba5ai.xn--p1ai|zakon-o-tishine.ru|zakonguru.com
+a10957 1
+||bazr.ru/videocontent/global/banner/
 a12764 1
 ||scr365.net/a/$domain=soccer365.com.ua|soccer365.ru
 d13284 1
@@ -32,6 +34,11 @@ a15357 1
 d15393 1
 a15393 1
 amoledo.com,mezha.media,zhitomir.info##.banner-link
+a15954 1
+bazr.ru##.container > .wrapper > .row > .grid_4
+d17791 1
+a19054 1
+bazr.ru##[src*="/global/banner/"]
 d19156 1
 a19156 1
 360tv.ru,avtonovostidnya.ru,coop-land.ru,energyfm.ru,gdeichto.ru,kommersant.ru,moe-belgorod.ru,moe-kursk.ru,moe-lipetsk.ru,moe-online.ru,moe-tambov.ru,mydecor.ru,mywebpc.ru,new-magazine.ru,news.ru,penzainform.ru,peterburg2.ru,pnz.ru,regnum.ru,rutube.ru,sm.news,sportsdaily.ru,super.ru,syzran-small.ru,teleprogramma.pro,thegirl.ru,tsargrad.tv,tulapressa.ru,u-f.ru,ura.news,utyug.info,vz.ru,xn----7sbabwosghnf8al4lkj7b.xn--p1ai,zaks.ru,zr.ru##a[href*="//dzen.ru/"]
@@ -51,7 +58,7 @@ pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: calc.[0569]{2}[0-9]{
 pikabu.ru##.sidebar-block_border[style*="transparent"]
 d21802 1
 a21802 1
-pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:-abp-contains(/[a-z]$|\s$|:$|:.{1,20}$/))
+pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:-abp-contains(/[a-z]$|[a-z].{1,3}$|\s$|:$|:.{1,20}$/))
 a21814 1
 pikabu.ru##div[class*="sidebar-block_border"][style*="border"]
 d22404 1

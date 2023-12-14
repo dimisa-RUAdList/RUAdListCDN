@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 14 Dec 2023 10:24:53 +0000
-! Diff-Path: ../patches/2023.12.14.624.patch#ruadlist
+! Last modified: Thu, 14 Dec 2023 15:21:29 +0000
+! Diff-Path: ../patches/2023.12.14.921.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10960,6 +10960,7 @@ lada.kz/uploads/banners/
 ||bashskazki.ru/assets/modules/easyadvertising/
 ||batpic.com/p/
 ||bazonserver.site/bazon/index.xml
+||bazr.ru/videocontent/global/banner/
 ||bb.pln24.ru/
 ||bbcont.ru/avtorealnost.html
 ||bddo.ru/uploads/*_ban_
@@ -15959,6 +15960,7 @@ mskins.net#?#.container > .row > .col:-abp-has(> .card script)
 fbsearch.ru##.container > .row > .text-center
 imageban.ru#?#.container > .row > div:-abp-has(> [src*="cdn-rtb.sape.ru"])
 dictat.net##.container > .sidebar
+bazr.ru##.container > .wrapper > .row > .grid_4
 solncevo.info##.container > a[href*="utm_campai"] ~ a[href][target="_blank"]
 saratovnews.ru##.container > div > object
 imagenizr.net##.container > div[id^="adblock-"] ~ .row
@@ -17795,7 +17797,6 @@ tele.ru#?#.section-heading:-abp-has(> .h-text:-abp-contains(Новости па�
 bidbaits.ru##.section-marked
 ivanovonews.ru##.section-marketing-block
 gorvesti.ru,xn--b1ats.xn--80asehdb##.section-r-top
-kg-portal.ru#?#.section-related:-abp-has(> a[href="/////"])
 game.segodnya.ua##.section-spr
 sobesednik.ru#?#.section:-abp-has(> .navbar > .flex-center > p:-abp-contains(Новости партнеров))
 aramil.city#?#.sectionColumn:-abp-has(> .subTitle:-abp-contains(/реклама/i))
@@ -19059,6 +19060,7 @@ treebuna.info,vprognoze.ru##[src*="/banners/"]
 168.ru##[src*="/files/banners/"]
 gorvesti.ru,xn--b1ats.xn--80asehdb##[src*="/files/rk/"]
 cvnews.cv.ua,ifnews.org.ua,lvnews.org.ua,rvnews.rv.ua,tenews.org.ua,uanews.org.ua##[src*="/frontend/assets/advert/"]
+bazr.ru##[src*="/global/banner/"]
 fakty.ua##[src*="/images/banners/"]
 allrefrs.ru##[src*="/imgr/"]
 gecid.com##[src*="/inc/getBanIf."]
@@ -21809,7 +21811,7 @@ pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: calc.[0569]{2}[0-9]{
 pikabu.ru##.sidebar-block_border[style*="transparent"]
 pikabu.ru##.sidebar__inner > .sidebar-block div[style=""]
 pikabu.ru##.sidebar__inner > .sidebar-block:not(.sidebar-block_border)
-pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:-abp-contains(/[a-z]$|\s$|:$|:.{1,20}$/))
+pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:-abp-contains(/[a-z]$|[a-z].{1,3}$|\s$|:$|:.{1,20}$/))
 dracon-zet.ru,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 android-mafia.com,game4you.top,games-pc.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##:not(this-site-promotes-malware)
 pikabu.ru##[data-block-name]
