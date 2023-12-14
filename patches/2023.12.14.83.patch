@@ -1,10 +1,13 @@
-diff name:ruadlist lines:19 checksum:bb5903d2ec
+diff name:ruadlist lines:26 checksum:1393342663
 d4 2
 a5 2
-! Last modified: Thu, 14 Dec 2023 15:21:29 +0000
-! Diff-Path: ../patches/2023.12.14.921.patch#ruadlist
+! Last modified: Thu, 14 Dec 2023 20:21:46 +0000
+! Diff-Path: ../patches/2023.12.14.1221.patch#ruadlist
 a10962 1
 ||bazr.ru/videocontent/global/banner/
+d13575 1
+a13575 1
+78.142.19.8,aliez.me,bazr.ru,context.reverso.net,smartphone.ua###ads
 a15961 1
 bazr.ru##.container > .wrapper > .row > .grid_4
 d17798 1
@@ -13,8 +16,12 @@ bazr.ru##[src*="/global/banner/"]
 d21804 1
 a21804 1
 ||pikabu.ru/ajax/?*=*&_key=$xmlhttprequest,domain=pikabu.ru
+d21808 1
+a21808 1
+pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: calc.[0569]{2}[0-9]{1}|min-height: calc.+.em|min-height: .+.(cm|lh|mm)/)
 d21812 1
-a21812 1
+a21812 2
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:-abp-contains(/[a-z]$|[a-z].{1,3}$|\s$|:$|:.{1,20}$/))
+pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:empty)
 a21824 1
 pikabu.ru##div[class*="sidebar-block_border"][style*="border"]

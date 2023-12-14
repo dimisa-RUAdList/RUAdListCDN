@@ -1,8 +1,8 @@
-diff name:ruadlist lines:99 checksum:bb5903d2ec
+diff name:ruadlist lines:103 checksum:1393342663
 d4 2
 a5 2
-! Last modified: Thu, 14 Dec 2023 15:21:29 +0000
-! Diff-Path: ../patches/2023.12.14.921.patch#ruadlist
+! Last modified: Thu, 14 Dec 2023 20:21:46 +0000
+! Diff-Path: ../patches/2023.12.14.1221.patch#ruadlist
 a1101 1
 ||changelifer.biz^$third-party
 a2688 1
@@ -33,6 +33,9 @@ a12762 1
 d13282 1
 a13282 1
 ||vkplay.live/app/embed/$domain=playground.ru|shazoo.ru|zoneofgames.ru
+d13567 1
+a13567 1
+78.142.19.8,aliez.me,bazr.ru,context.reverso.net,smartphone.ua###ads
 d14157 1
 a14977 1
 amoledo.com##.adsbanner
@@ -65,11 +68,12 @@ a21794 1
 ||pikabu.ru/ajax/?*=*&_key=$xmlhttprequest,domain=pikabu.ru
 d21798 1
 a21798 2
-pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: calc.[0569]{2}[0-9]{1}|min-height: calc.+.em|min-height: .+.lh/)
+pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: calc.[0569]{2}[0-9]{1}|min-height: calc.+.em|min-height: .+.(cm|lh|mm)/)
 pikabu.ru##.sidebar-block_border[style*="transparent"]
 d21801 1
-a21801 1
+a21801 2
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:-abp-contains(/[a-z]$|[a-z].{1,3}$|\s$|:$|:.{1,20}$/))
+pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:empty)
 a21813 1
 pikabu.ru##div[class*="sidebar-block_border"][style*="border"]
 d22403 1
