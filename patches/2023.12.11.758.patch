@@ -1,8 +1,8 @@
-diff name:ruadlist lines:61 checksum:602c0b2265
+diff name:ruadlist lines:63 checksum:5fa4a0632d
 d4 2
 a5 2
-! Last modified: Thu, 14 Dec 2023 05:21:54 +0000
-! Diff-Path: ../patches/2023.12.14.321.patch#ruadlist
+! Last modified: Thu, 14 Dec 2023 10:24:53 +0000
+! Diff-Path: ../patches/2023.12.14.624.patch#ruadlist
 a1101 1
 ||changelifer.biz^$third-party
 a2688 1
@@ -37,14 +37,16 @@ a21254 1
 shazoo.ru##iframe[src*="://vkplay.live/"]
 d21797 1
 a21797 1
-||pikabu.ru/ajax/?*=2&_key=$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/ajax/?*=*&_key=$xmlhttprequest,domain=pikabu.ru
 d21801 1
 a21801 2
 pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: calc.[0569]{2}[0-9]{1}|min-height: calc.+.em|min-height: .+.lh/)
 pikabu.ru##.sidebar-block_border[style*="transparent"]
 d21804 1
 a21804 1
-pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:-abp-contains(/[a-z]$|\s$|:$|:.$/))
+pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:-abp-contains(/[a-z]$|\s$|:$|:.{1,20}$/))
+a21816 1
+pikabu.ru##div[class*="sidebar-block_border"][style*="border"]
 d27370 1
 a27370 1
 soccer365.com.ua,soccer365.ru##.header_top:style(margin-top: 0 !important)

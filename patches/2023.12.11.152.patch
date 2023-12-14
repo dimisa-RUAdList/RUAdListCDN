@@ -1,8 +1,8 @@
-diff name:ruadlist lines:79 checksum:602c0b2265
+diff name:ruadlist lines:81 checksum:5fa4a0632d
 d4 2
 a5 2
-! Last modified: Thu, 14 Dec 2023 05:21:54 +0000
-! Diff-Path: ../patches/2023.12.14.321.patch#ruadlist
+! Last modified: Thu, 14 Dec 2023 10:24:53 +0000
+! Diff-Path: ../patches/2023.12.14.624.patch#ruadlist
 a1101 1
 ||changelifer.biz^$third-party
 a2688 1
@@ -44,14 +44,16 @@ a21252 1
 shazoo.ru##iframe[src*="://vkplay.live/"]
 d21795 1
 a21795 1
-||pikabu.ru/ajax/?*=2&_key=$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/ajax/?*=*&_key=$xmlhttprequest,domain=pikabu.ru
 d21799 1
 a21799 2
 pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: calc.[0569]{2}[0-9]{1}|min-height: calc.+.em|min-height: .+.lh/)
 pikabu.ru##.sidebar-block_border[style*="transparent"]
 d21802 1
 a21802 1
-pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:-abp-contains(/[a-z]$|\s$|:$|:.$/))
+pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:-abp-contains(/[a-z]$|\s$|:$|:.{1,20}$/))
+a21814 1
+pikabu.ru##div[class*="sidebar-block_border"][style*="border"]
 d22404 1
 a22404 1
 161.ru,29.ru,72.ru,74.ru,76.ru,86.ru,e1.ru,msk1.ru,ngs.ru,ngs24.ru,nn.ru,sochi1.ru,ufa1.ru,vladivostok1.ru#?##overlay-modal > div > div > div:-abp-has(> [data-placement])
