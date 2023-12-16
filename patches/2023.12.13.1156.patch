@@ -1,8 +1,8 @@
-diff name:ruadlist lines:52 checksum:c39015e44b
+diff name:ruadlist lines:68 checksum:04895624c5
 d4 2
 a5 2
-! Last modified: Sat, 16 Dec 2023 07:17:03 +0000
-! Diff-Path: ../patches/2023.12.16.437.patch#ruadlist
+! Last modified: Sat, 16 Dec 2023 12:34:20 +0000
+! Diff-Path: ../patches/2023.12.16.754.patch#ruadlist
 a10962 1
 ||bazr.ru/videocontent/global/banner/
 d13548 1
@@ -16,8 +16,14 @@ a15733 1
 agroinfo.kz,flicksbar.info,livejournal.com,narodna-pravda.ua##.brand
 a15961 1
 bazr.ru##.container > .wrapper > .row > .grid_4
+d15975 1
+a15975 1
+filmix.biz,filmix.date,filmix.life,filmix.tech,filmix.zone#?#.container:-abp-has(> .remove-sda-wrap)
 a17042 1
 2ip.ua##.module_adsense
+d17265 1
+a17265 1
+filmix.biz,filmix.date,filmix.life,filmix.tech,filmix.zone##.page-wrapper .last-news ~ .container > .information
 d17798 1
 a19061 1
 bazr.ru##[src*="/global/banner/"]
@@ -43,6 +49,10 @@ pikabu.ru#?#div[class*="page-story__"] div:-abp-properties(/min-height: [02345]{
 a21824 1
 pikabu.ru##div[class*="sidebar-block_border"][style*="border"]
 d26062 2
+d26534 2
+a26535 2
+filmix.biz,filmix.date,filmix.life,filmix.tech,filmix.zone##.main-wrapper:style(margin-top: 0 !important)
+filmix.biz,filmix.date,filmix.life,filmix.tech,filmix.zone##.page-wrapper:style(margin-top: 0 !important)
 d27677 1
 a27678 1
 ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##div[class*="Images"] div[class*="-Card_bottomAdv"]
@@ -51,3 +61,9 @@ d28554 2
 d28557 1
 a28557 1
 ! Last modified: %timestamp%
+d29182 1
+a29182 1
+filmix.biz,filmix.date,filmix.life,filmix.tech,filmix.zone###oframeplayer > #player_control_play-icon ~ pjsdiv[style^="position: absolute; left:"][style*="pointer-events: none; display: block; visibility:"]
+d29267 1
+a29267 1
+filmix.biz,filmix.date,filmix.life,filmix.tech,filmix.zone##.remove-sda-wrap
