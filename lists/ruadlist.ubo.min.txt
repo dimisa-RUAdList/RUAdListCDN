@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 17 Dec 2023 13:21:11 +0000
-! Diff-Path: ../patches/2023.12.17.801.patch#ruadlist
+! Last modified: Sun, 17 Dec 2023 18:23:36 +0000
+! Diff-Path: ../patches/2023.12.17.1103.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -5479,6 +5479,7 @@
 ||simofor.ru^$third-party
 ||sinfosi.ru^$third-party
 ||sionotti.ru^$third-party
+||siresuperm.bid^$third-party
 ||sirokuzo.com^$third-party
 ||siteme.org^$third-party
 ||sitewithg.me^$third-party
@@ -7472,6 +7473,7 @@ _verified.php?code=*&server=runetki.com
 ||mega-pics-money.ru^
 ||money4leads.biz^
 ||mosblog24.ru^
+||msetup-partners.com^$third-party
 ||msetup.pro^
 ||mytrk.xyz^
 ||mytvblogs.ru^
@@ -19170,7 +19172,7 @@ rutr.life,rutracker.lib,rutracker.net,rutracker.nl,rutracker.org##a[href*=".vkpl
 wintorrents.ru##a[href*=".wintorrents.ru"]
 1tv.ru,drive.ru,f1news.ru,gamemag.ru,kinonews.ru,kinorium.com,livejournal.com,myshows.me,onlinestreams.ru,pikabu.ru,pluggedin.ru,sovsport.ru,spletnik.ru,trinixy.ru,www.pesticidy.ru##a[href*="//ads.adfox.ru/"]
 dks.com.ua,enovosty.com,expert.in.ua,galas.te.ua,galinfo.com.ua,nbnews.com.ua,plitkar.com.ua,rivnepost.rv.ua,tenews.org.ua,ukrnews24.net,varta1.com.ua##a[href*="//besplatka.ua"]
-360tv.ru,avtonovostidnya.ru,coop-land.ru,energyfm.ru,gdeichto.ru,kommersant.ru,moe-belgorod.ru,moe-kursk.ru,moe-lipetsk.ru,moe-online.ru,moe-tambov.ru,mydecor.ru,mywebpc.ru,new-magazine.ru,news.ru,penzainform.ru,peterburg2.ru,pnz.ru,regnum.ru,rutube.ru,sm.news,sportsdaily.ru,super.ru,syzran-small.ru,teleprogramma.pro,thegirl.ru,tsargrad.tv,tulapressa.ru,u-f.ru,ura.news,utyug.info,vz.ru,xn----7sbabwosghnf8al4lkj7b.xn--p1ai,zaks.ru,zr.ru##a[href*="//dzen.ru/"]
+360tv.ru,avtonovostidnya.ru,coop-land.ru,energyfm.ru,gdeichto.ru,kommersant.ru,moe-belgorod.ru,moe-kursk.ru,moe-lipetsk.ru,moe-online.ru,moe-tambov.ru,mydecor.ru,mywebpc.ru,new-magazine.ru,news.ru,penzainform.ru,peterburg2.ru,pnz.ru,regnum.ru,russian.rt.com,rutube.ru,sm.news,sportsdaily.ru,super.ru,syzran-small.ru,teleprogramma.pro,thegirl.ru,tsargrad.tv,tulapressa.ru,u-f.ru,ura.news,utyug.info,vz.ru,xn----7sbabwosghnf8al4lkj7b.xn--p1ai,zaks.ru,zr.ru##a[href*="//dzen.ru/"]
 beatmake.ru##a[href*="//go.acstat.com/"]
 porno-island.site##a[href*="//goo.su/"]
 animevost.tv,senpai.cc##a[href*="//inlnk.ru/"]
@@ -19283,6 +19285,7 @@ moirebenok.ua##a[href*="://sgo.one/"]
 programmersforum.ru#?#a[href*="://slurm.club/"] ~ *:-abp-contains(https://)
 sportliga.com##a[href*="://sportliga.com/bookmakers/"] ~ a
 595.ucoz.net##a[href*="://surfearner.me/"]
+rutor-game.info##a[href*="://surl.li/"]
 595.ucoz.net##a[href*="://teaser.bz/"]
 mezha.media##a[href*="://telemart.ua/"]
 itc.ua#?#a[href*="://telemart.ua/"]:-abp-has(> span > strong)
@@ -24999,7 +25002,6 @@ bamper.by,bazar.bike,biblionika.info#@#.adds-wrapper
 kvartirant.by#@#.adinfo
 insignia-mebel.ru#@#.ads-bg
 kvartirant.by#@#.ads-box
-surl.li#@#.ads-card
 roshlam.ru#@#.ads-content
 insignia-mebel.ru#@#.ads-footer
 reklama-sev.com.ua#@#.ads-holder
