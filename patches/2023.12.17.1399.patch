@@ -1,5 +1,32 @@
-diff name:ruadlist lines:4 checksum:0d7d2274a5
+diff name:ruadlist lines:31 checksum:1f6db42445
 d4 2
 a5 2
-! Last modified: Mon, 18 Dec 2023 09:21:04 +0000
-! Diff-Path: ../patches/2023.12.18.561.patch#ruadlist
+! Last modified: Mon, 18 Dec 2023 14:22:23 +0000
+! Diff-Path: ../patches/2023.12.18.862.patch#ruadlist
+a10594 1
+/wp-content/uploads/*.mp4|$~third-party,domain=news24.in.ua|novosti24.kyiv.ua
+d13141 1
+d14333 1
+a19119 1
+news24.in.ua,novosti24.kyiv.ua##a video
+a19152 1
+tulapressa.ru##a[data-href*="//dzen.ru/"]
+a20172 1
+forum.flprog.ru##body.section-index .sidebar
+d21823 1
+a21823 1
+pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: 200px|min-height: calc.[0569]{2}[0-9]{1}|min-height: calc.+.em|min-height: .+.(cm|lh|mm|pt)/)
+a21826 2
+pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__main > div:first-child + div)
+pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__main > div:only-child)
+d21829 1
+a21829 1
+pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(min-height: calc(299px)))
+d24844 1
+a28521 3
+!#if !env_mobile
+mail.ukr.net##div[class]:not([id]):first-child:only-child > div[class]:not([id]):first-child:only-child > div[class]:not([id]):first-child:only-child:style(height: unset !important)
+!#endif
+d28526 1
+a29196 1
+forum.flprog.ru###phpbb_announcement

@@ -1,15 +1,42 @@
-diff name:ruadlist lines:14 checksum:0d7d2274a5
+diff name:ruadlist lines:41 checksum:1f6db42445
 d4 2
 a5 2
-! Last modified: Mon, 18 Dec 2023 09:21:04 +0000
-! Diff-Path: ../patches/2023.12.18.561.patch#ruadlist
+! Last modified: Mon, 18 Dec 2023 14:22:23 +0000
+! Diff-Path: ../patches/2023.12.18.862.patch#ruadlist
 a5481 1
 ||siresuperm.bid^$third-party
 a7474 1
 ||msetup-partners.com^$third-party
+a10592 1
+/wp-content/uploads/*.mp4|$~third-party,domain=news24.in.ua|novosti24.kyiv.ua
+d13139 1
+d14331 1
+a19117 1
+news24.in.ua,novosti24.kyiv.ua##a video
+a19150 1
+tulapressa.ru##a[data-href*="//dzen.ru/"]
 d19173 1
 a19173 1
 360tv.ru,avtonovostidnya.ru,coop-land.ru,energyfm.ru,gdeichto.ru,kommersant.ru,moe-belgorod.ru,moe-kursk.ru,moe-lipetsk.ru,moe-online.ru,moe-tambov.ru,mydecor.ru,mywebpc.ru,new-magazine.ru,news.ru,penzainform.ru,peterburg2.ru,pnz.ru,regnum.ru,russian.rt.com,rutube.ru,sm.news,sportsdaily.ru,super.ru,syzran-small.ru,teleprogramma.pro,thegirl.ru,tsargrad.tv,tulapressa.ru,u-f.ru,ura.news,utyug.info,vz.ru,xn----7sbabwosghnf8al4lkj7b.xn--p1ai,zaks.ru,zr.ru##a[href*="//dzen.ru/"]
 a19285 1
 rutor-game.info##a[href*="://surl.li/"]
+a20169 1
+forum.flprog.ru##body.section-index .sidebar
+d21820 1
+a21820 1
+pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: 200px|min-height: calc.[0569]{2}[0-9]{1}|min-height: calc.+.em|min-height: .+.(cm|lh|mm|pt)/)
+a21823 2
+pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__main > div:first-child + div)
+pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__main > div:only-child)
+d21826 1
+a21826 1
+pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(min-height: calc(299px)))
+d24841 1
 d25002 1
+a28519 3
+!#if !env_mobile
+mail.ukr.net##div[class]:not([id]):first-child:only-child > div[class]:not([id]):first-child:only-child > div[class]:not([id]):first-child:only-child:style(height: unset !important)
+!#endif
+d28524 1
+a29194 1
+forum.flprog.ru###phpbb_announcement
