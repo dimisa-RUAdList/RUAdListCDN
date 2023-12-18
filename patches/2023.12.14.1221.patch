@@ -1,8 +1,8 @@
-diff name:ruadlist lines:106 checksum:1f6db42445
+diff name:ruadlist lines:112 checksum:b715baf1f4
 d4 2
 a5 2
-! Last modified: Mon, 18 Dec 2023 14:22:23 +0000
-! Diff-Path: ../patches/2023.12.18.862.patch#ruadlist
+! Last modified: Mon, 18 Dec 2023 19:16:11 +0000
+! Diff-Path: ../patches/2023.12.18.1156.patch#ruadlist
 a1159 1
 ||click-make.com^$third-party
 a3220 1
@@ -66,17 +66,21 @@ a20666 1
 flicksbar.info##div[class^="topAd"]
 a21574 1
 hi-fi-forum.net##table > tbody > tr > td[width="210"][valign="top"]
+d21806 1
+a21806 1
+||pikabu.ru/ajax/?*=*key=$xmlhttprequest,domain=pikabu.ru
 d21810 1
 a21810 1
-pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: 200px|min-height: calc.[0569]{2}[0-9]{1}|min-height: calc.+.em|min-height: .+.(cm|lh|mm|pt)/)
+pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: [0-9]{3}px|min-height: calc.[0569]{2}[0-9]{1}|min-height: calc.+.em|min-height: .+.(cm|lh|mm|pt)/)
 a21813 2
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__main > div:first-child + div)
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__main > div:only-child)
-a21815 1
+a21815 2
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(min-height: calc(299px)))
+pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(min-height: calc(300px)))
 d21826 1
 a21826 1
-pikabu.ru#?#div[class*="page-story__"] div:-abp-properties(/min-height: [02345]{2}[0-9]{1}|min-height: calc.|min-height: [0-9].lh|height: 250px/)
+pikabu.ru#?#div[class*="page-story__"] div:-abp-properties(/min-height: [02345]{2}[0-9]{1}|min-height: calc.|min-height: .+.(cm|lh)|height: 250px/)
 d24830 1
 d24991 1
 d26066 2
@@ -88,6 +92,8 @@ d27681 1
 a27682 1
 ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##div[class*="Images"] div[class*="-Card_bottomAdv"]
 d27923 2
+a28453 1
+||recostream.go.mail.ru/?stream_id=mediaproject_lenta_$domain=mail.ru|sportmail.ru
 a28512 3
 !#if !env_mobile
 mail.ukr.net##div[class]:not([id]):first-child:only-child > div[class]:not([id]):first-child:only-child > div[class]:not([id]):first-child:only-child:style(height: unset !important)
