@@ -1,18 +1,34 @@
-diff name:ruadlist lines:41 checksum:ff20ee36d5
+diff name:ruadlist lines:57 checksum:1bf5b2d6b8
 d4 2
 a5 2
-! Last modified: Tue, 19 Dec 2023 15:20:56 +0000
-! Diff-Path: ../patches/2023.12.19.920.patch#ruadlist
+! Last modified: Tue, 19 Dec 2023 20:17:37 +0000
+! Diff-Path: ../patches/2023.12.19.1217.patch#ruadlist
 a10594 1
 /wp-content/uploads/*.mp4|$~third-party,domain=news24.in.ua|novosti24.kyiv.ua
+a12503 1
+||povarenok.ru/css/*project$stylesheet
+d13123 1
+a13123 1
+||trk.mail.ru^$subdocument,domain=shazoo.ru|zoneofgames.ru
 d13141 1
+d13297 1
+a13297 1
+||vkplay.live/app/embed/$domain=playground.ru
 d14333 1
+a19086 1
+forum.zoneofgames.ru,shazoo.ru##[src*="trk.mail.ru/"]
 a19119 1
 news24.in.ua,novosti24.kyiv.ua##a video
 a19152 1
 tulapressa.ru##a[data-href*="//dzen.ru/"]
+d19995 1
+d20002 1
+a20002 1
+shazoo.ru##aside > iframe[src] + p[style]
 a20172 1
 forum.flprog.ru##body.section-index .sidebar
+d21275 1
+d21517 1
 d21819 1
 a21819 2
 ||pikabu.ru/ajax/?*=*key=$xmlhttprequest,domain=pikabu.ru

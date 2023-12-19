@@ -1,8 +1,8 @@
-diff name:ruadlist lines:64 checksum:ff20ee36d5
+diff name:ruadlist lines:80 checksum:1bf5b2d6b8
 d4 2
 a5 2
-! Last modified: Tue, 19 Dec 2023 15:20:56 +0000
-! Diff-Path: ../patches/2023.12.19.920.patch#ruadlist
+! Last modified: Tue, 19 Dec 2023 20:17:37 +0000
+! Diff-Path: ../patches/2023.12.19.1217.patch#ruadlist
 a1159 1
 ||click-make.com^$third-party
 a3220 1
@@ -18,12 +18,22 @@ a10590 1
 /wp-content/uploads/*.mp4|$~third-party,domain=news24.in.ua|novosti24.kyiv.ua
 a10862 1
 ||appstorrent.ru/uploads/ad/
+a12498 1
+||povarenok.ru/css/*project$stylesheet
+d13118 1
+a13118 1
+||trk.mail.ru^$subdocument,domain=shazoo.ru|zoneofgames.ru
 d13136 1
+d13292 1
+a13292 1
+||vkplay.live/app/embed/$domain=playground.ru
 d14328 1
 a14898 1
 novochag.ru##.ad-block
 a16138 1
 appstorrent.ru##.dle_b_ad_block
+a19079 1
+forum.zoneofgames.ru,shazoo.ru##[src*="trk.mail.ru/"]
 a19112 1
 news24.in.ua,novosti24.kyiv.ua##a video
 a19145 1
@@ -33,8 +43,14 @@ a19168 1
 360tv.ru,avtonovostidnya.ru,coop-land.ru,energyfm.ru,gdeichto.ru,kommersant.ru,moe-belgorod.ru,moe-kursk.ru,moe-lipetsk.ru,moe-online.ru,moe-tambov.ru,mydecor.ru,mywebpc.ru,new-magazine.ru,news.ru,penzainform.ru,peterburg2.ru,pnz.ru,regnum.ru,russian.rt.com,rutube.ru,sm.news,sportsdaily.ru,super.ru,syzran-small.ru,teleprogramma.pro,thegirl.ru,tsargrad.tv,tulapressa.ru,u-f.ru,ura.news,utyug.info,vz.ru,xn----7sbabwosghnf8al4lkj7b.xn--p1ai,zaks.ru,zr.ru##a[href*="//dzen.ru/"]
 a19280 1
 rutor-game.info##a[href*="://surl.li/"]
+d19987 1
+d19994 1
+a19994 1
+shazoo.ru##aside > iframe[src] + p[style]
 a20164 1
 forum.flprog.ru##body.section-index .sidebar
+d21267 1
+d21509 1
 d21811 1
 a21811 2
 ||pikabu.ru/ajax/?*=*key=$xmlhttprequest,domain=pikabu.ru
