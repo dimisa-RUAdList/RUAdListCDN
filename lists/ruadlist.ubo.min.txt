@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 20 Dec 2023 11:14:49 +0000
-! Diff-Path: ../patches/2023.12.20.674.patch#ruadlist
+! Last modified: Wed, 20 Dec 2023 16:25:01 +0000
+! Diff-Path: ../patches/2023.12.20.985.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -7888,7 +7888,7 @@ _verified.php?code=*&server=runetki.com
 /images/bn/*
 /images/rek/*
 /images/rekl/*
-/img/banner/*$domain=~almicro.ru|~belby.by|~besmart.pp.ua|~chitai-gorod.ru|~flexen.tech|~frosbyte.org|~fvds.ru|~gostas-klimat.ru|~imhonet.ru|~lifestylelabel.ru|~megabitschool.ru|~miralin.ru|~mts.ru|~mtsbank.ru|~stavsalut.hostcrm.ru|~themelooks.org|~vavlab.ru|~webnames.ru|~xn-----6kcvbohzccf5ajf4a7e.xn--p1ai
+/img/banner/*$domain=~almicro.ru|~belby.by|~besmart.pp.ua|~chitai-gorod.ru|~flexen.tech|~frosbyte.org|~fvds.ru|~gostas-klimat.ru|~imhonet.ru|~lifestylelabel.ru|~megabitschool.ru|~miralin.ru|~mts.ru|~mtsbank.ru|~rustix.io|~stavsalut.hostcrm.ru|~themelooks.org|~vavlab.ru|~webnames.ru|~xn-----6kcvbohzccf5ajf4a7e.xn--p1ai
 /img/bn/*$domain=~praimed.ua
 /img/bnr-
 /img/bnr/*$domain=~dataprotection.com.ua|~drweb-av.de|~drweb-av.es|~drweb-av.it|~drweb-av.pl|~drweb.cn|~drweb.co.jp|~drweb.com|~drweb.fr|~drweb.kz|~drweb.ru
@@ -22179,6 +22179,7 @@ news.mail.ru##div[data-logger="partnerNews"]
 ! Новости dzen  (пустые места)
 dzen.ru#?#.mg-grid__item_type_card:-abp-has(> div[class*="loader_animated"])
 dzen.ru#?#.news-app__heading:-abp-has(> h1:-abp-contains(Реклама))
+dzen.ru##.news-mt-advert
 dzen.ru#?#div:-abp-has(> .mg-grid__item_type_card > div[class*="loader_animated"])
 dzen.ru##div[class*="column_myTarget"]
 ! Облако
@@ -22959,7 +22960,7 @@ yandex.by,yandex.kz,yandex.ru,yandex.uz##.stat_pixel_yes[onclick][class*="_layou
 yandex.by,yandex.kz,yandex.ru,yandex.uz##a[href*="//ads.adfox.ru/"]
 yandex.by,yandex.kz,yandex.ru,yandex.uz##body[class*="b-page_alt-widgets_yes"] .feed ._need-stub
 yandex.ru##div[class$="ear_js_inited"] > a[href^="//awaps.yandex.ru"]
-dzen.ru##div[class*="_widget-"] > div > div:not([class*="geoblock"]):not([class*="widget"])
+dzen.ru##div[class*="_wigdet-"] > div > div:not([class*="geoblock"]):not([class*="widget"])
 yandex.by,yandex.kz,yandex.ru,yandex.uz##img[src*="yandex.net/get-direct"]
 ||awaps.yandex.
 ||bs-meta.yandex.$script,xmlhttprequest
