@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 20 Dec 2023 16:25:01 +0000
-! Diff-Path: ../patches/2023.12.20.985.patch#ruadlist
+! Last modified: Wed, 20 Dec 2023 21:17:08 +0000
+! Diff-Path: ../patches/2023.12.20.1277.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10216,6 +10216,7 @@ agrarii-razom.com.ua##div[id^="user-to-register"]
 ||tabloid.pravda.com.ua^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.amazonaws.com *.cloudflare.com apis.google.com cse.google.com www.google.com *.google.com/complete/ *.googleapis.com *.googletagmanager.com *.instagram.com *.jquery.com *.keycaptcha.com *.twitter.com *.io *.net *.org *.ru *.ua
 ||tdsclicks2.ru^$csp=script-src
 ||tribun.com.ua^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: static.addtoany.com *.googletagmanager.com *.io *.net *.org *.ua
+||uapress.kyiv.ua^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.googletagmanager.com *.instagram.com *.tiktok.com *.twitter.com *.dev *.io *.net *.org *.ru *.ua
 ||utarget.ru^$csp=sandbox allow-same-origin;
 ||utarget.ru^$csp=script-src
 ||vazhno.ru^$csp=script-src 'self'
@@ -10592,7 +10593,7 @@ $xmlhttprequest,domain=happy-biock.info|happy-block.info|howto-news.info|mschist
 /wp-content/plugins/custom-blocks/*$domain=alladvices.ru|boleznikrovi.com|diabet-med.com|oprostatit.ru|parazity.com|rodinkam.net|sdelalremont.ru|sustav.info|uroki-pitaniya.ru
 /wp-content/plugins/wbounce/*$domain=glaza.guru
 /wp-content/uploads/*-dpi_news$image,domain=itechua.com|uamotors.com.ua
-/wp-content/uploads/*.mp4|$~third-party,domain=news24.in.ua|novosti24.kyiv.ua
+/wp-content/uploads/*.mp4|$~third-party,domain=news24.in.ua|novosti24.kyiv.ua|uapress.kyiv.ua
 /wp-content/uploads/*/elitstroj*.$image,domain=vb.by
 /wp-content/uploads/*/kurery*.$image,domain=vb.by
 /wp-content/uploads/*/med.$image,domain=vb.by
@@ -16925,6 +16926,7 @@ dv-gazeta.info##.main_ad728x90
 csgolife.ru##.main_block > center > .slider
 vbryanske.com##.main_content > noindex
 uvelir.info##.main_frame > div[style="float:left; width:245px; height:130px;"]
+fbc.biz.ua##.main_header > .full_width > a[target="_blank"] > img
 job.ru,myjob.by##.main_logo_carusel
 ural56.ru##.main_news_right_block_advert
 cont.ws##.main_top_ads
@@ -18217,7 +18219,7 @@ auto62rus.ru#?#.text-center:-abp-contains(/ДВИГАТЕЛЬ ТОРГОВЛИ|�
 gagadget.com#?#.text-center:-abp-has(> [style="min-height: 249px;"])
 gdz4you.com#?#.text-center:-abp-has(script)
 horrorzone.ru##.text_block_widget_video
-az-priroda.ru,bisnesideya.ru,dialogs.org.ua,doctorrouter.ru,dv-gazeta.info,edu-lib.net,farmamir.ru,halyavapliz.ru,kopilohka.ru,lifeinvest.com.ua,marketer.ua,medfactor.com.ua,medicalanswers.com.ua,medicalanswers.site,mods-fs.net,ruskweb.ru,samogonpil.ru,ua-vestnik.com,woman24.kyiv.ua,x-kuzov.ru,yroki-kompa.ru,zhenskiy.kyiv.ua##.textwidget
+az-priroda.ru,bisnesideya.ru,dialogs.org.ua,doctorrouter.ru,dv-gazeta.info,edu-lib.net,farmamir.ru,halyavapliz.ru,kopilohka.ru,lifeinvest.com.ua,marketer.ua,medfactor.com.ua,medicalanswers.com.ua,medicalanswers.site,mods-fs.net,ruskweb.ru,samogonpil.ru,ua-vestnik.com,uapress.kyiv.ua,woman24.kyiv.ua,x-kuzov.ru,yroki-kompa.ru,zhenskiy.kyiv.ua##.textwidget
 news.center4.me##.textwidget > a[href]
 publy.ru,story-house.ru##.textwidget > a[href][target="_blank"]
 rating-avto.ru##.textwidget > a[href^="http://www.masmotors.ru"]
@@ -19118,7 +19120,7 @@ btcsec.com##a > img[style*="height:100px;"]
 rin.ru##a > img[width="120"][height$="0"][src^="/images/"]
 ariom.ru##a > img[width="160"][height="120"]
 forzajuve.ru,omskregion.info##a > img[width="240"][height="400"]
-news24.in.ua,novosti24.kyiv.ua##a video
+news24.in.ua,novosti24.kyiv.ua,uapress.kyiv.ua##a video
 tort.fm##a#bg
 gorodrabot.ru##a.additional-earnings-banner-snippet:not([href*="gorodrabot.ru/"])
 gameinside.ua##a.banner
