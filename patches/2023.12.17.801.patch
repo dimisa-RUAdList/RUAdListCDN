@@ -1,8 +1,8 @@
-diff name:ruadlist lines:67 checksum:1bf5b2d6b8
+diff name:ruadlist lines:79 checksum:1981b8fcf9
 d4 2
 a5 2
-! Last modified: Tue, 19 Dec 2023 20:17:37 +0000
-! Diff-Path: ../patches/2023.12.19.1217.patch#ruadlist
+! Last modified: Wed, 20 Dec 2023 01:08:53 +0000
+! Diff-Path: ../patches/2023.12.20.68.patch#ruadlist
 a5481 1
 ||siresuperm.bid^$third-party
 a7474 1
@@ -57,6 +57,18 @@ a21837 1
 pikabu.ru#?#div[class*="page-story__"] div:-abp-properties(/min-height: [02345]{2}[0-9]{1}|min-height: calc.|min-height: .+.(cm|lh|mm)|height: 250px/)
 d24841 1
 d25002 1
+d27661 1
+a27661 1
+dzen.ru##[class*="ors"] div[id][class^="feed"] [class*="wrapper"][aria-label] ~ article:not([aria-label])
+d27664 1
+a27664 1
+dzen.ru##aside[id^="article_"][class*="gh"] > div[class]
+d27669 1
+a27669 1
+dzen.ru##div[class*="article__"] > .undefined ~ div[class*="__mi"] > div[id][class]
+d27678 1
+a27678 1
+dzen.ru##div[class^="feed__r"] article > div:first-child + div + div
 a28460 1
 ||recostream.go.mail.ru/?stream_id=mediaproject_lenta_$domain=mail.ru|sportmail.ru
 a28519 3

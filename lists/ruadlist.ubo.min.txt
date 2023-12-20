@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 19 Dec 2023 20:17:37 +0000
-! Diff-Path: ../patches/2023.12.19.1217.patch#ruadlist
+! Last modified: Wed, 20 Dec 2023 01:08:53 +0000
+! Diff-Path: ../patches/2023.12.20.68.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -27664,15 +27664,15 @@ dzen.ru##.adv-ecom
 dzen.ru##.mg-advert__content:not(:first-child):style(margin-top: unset !important)
 dzen.ru##.mg-grid__col > div[style^="margin-top:"]:style(margin-top: unset !important)
 dzen.ru##.viewer-layout__content div[class*="content__player"] ~ div[class*="heme"]
-dzen.ru##[class*="loors"] div[id][class^="feed"] [class*="wrapper"][aria-label] ~ article:not([aria-label])
+dzen.ru##[class*="ors"] div[id][class^="feed"] [class*="wrapper"][aria-label] ~ article:not([aria-label])
 dzen.ru##a[href*="://yandex.ru/an/count/"]
 dzen.ru##a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div
-dzen.ru##aside[id^="article_"][class*="righ"] > div[class]
+dzen.ru##aside[id^="article_"][class*="gh"] > div[class]
 dzen.ru##body:style(overflow-y: unset !important)
 dzen.ru##div[aria-label="Кaрточка рекомендованного видео"] ~ [aria-label]:not([aria-label="Кaрточка рекомендованного видео"])
 dzen.ru##div[class*="PunchCardsOnVideoShowcase"] div[aria-label="Реклaмный блок"]
 dzen.ru##div[class*="PunchCardsOnVideoShowcase"] div[class^="grid__row"] > div[class*="heme"]
-dzen.ru##div[class*="article__"] > .undefined ~ div[class*="__mid"] > div[id][class]
+dzen.ru##div[class*="article__"] > .undefined ~ div[class*="__mi"] > div[id][class]
 dzen.ru##div[class*="bannerMain"]
 dzen.ru##div[class*="video-viewer-sidebar__ad"]
 dzen.ru##div[class*="videoCardAd"]
@@ -27681,7 +27681,7 @@ dzen.ru##div[class^="dzen-desktop__link_bro-"]
 dzen.ru##div[class^="dzen-desktop__teaser-"]
 dzen.ru##div[class^="dzen-wrapper-with-top-content-desktop__topContent-"] div[class^="promo-"]
 dzen.ru##div[class^="dzen-wrapper-with-top-content-desktop__topContent-"]:style(grid-template-columns: inherit !important)
-dzen.ru##div[class^="feed__ro"] article > div:first-child + div + div
+dzen.ru##div[class^="feed__r"] article > div:first-child + div + div
 dzen.ru##div[id][class$="__ad"]
 dzen.ru##div[id][class^="feed"] article[class*="_with-border "]
 ! ---
