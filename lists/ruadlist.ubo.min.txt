@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 21 Dec 2023 07:18:24 +0000
-! Diff-Path: ../patches/2023.12.21.438.patch#ruadlist
+! Last modified: Thu, 21 Dec 2023 12:36:39 +0000
+! Diff-Path: ../patches/2023.12.21.756.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -5638,6 +5638,7 @@
 ||srtzq.com^$third-party
 ||srv1.tlt.ru^$domain=~srv1.tlt.ru
 ||srv43.ru^$third-party
+||srvd2204.com^$third-party
 ||ssd7.ru^$third-party
 ||ssliivuqpm.ru^$third-party
 ||ssso.ru^$third-party
@@ -6580,6 +6581,7 @@
 ||vogozaq.ru^$third-party
 ||vogozara.ru^$third-party
 ||vogozita.com^
+||voidnetwork.cloud^$third-party
 ||voiledu.com^$third-party
 ||voilek.com^$third-party
 ||vokayatus.com^$third-party
@@ -10880,6 +10882,7 @@ lada.kz/uploads/banners/
 ||arminfo.info/banners/
 ||armtorg.ru/uploads/shows/$image
 ||army.lv/banners/
+||armyinform.com.ua/wp-content/uploads/*/banner-
 ||aromatmasla.ru/gaamjs/
 ||aromatmasla.ru/scripts/zamven.js
 ||aromatmasla.ru/vk-vs-pl/ya-wsplivayu.js
@@ -17106,7 +17109,6 @@ nur.kz##.nearest-matches
 gdzplus.me,reshator.com##.nerban
 superhumor.ru,voffka.com##.neteye-posts
 ingrus.net##.nevidimka
-cheline.com.ua##.new-ad
 znaj.ua##.new-banners
 tvigle.ru##.new-bgs-o
 grimuar.ru##.new-block
@@ -17135,6 +17137,7 @@ zaxid.net##.news-list-col > .news-list
 onliner.by##.news-media__preview > a > img[src$=".png"]
 1plus1.ua##.news-partners-add
 onliner.by##.news-promo
+armyinform.com.ua##.news-section_items > li.link > a[target="_blank"] > img
 onliner.by##.news-text > * > a[href^="https://catalog.onliner.by/"][href*="utm_"]
 onliner.by##.news-text > .news-media a[href^="https://catalog.onliner.by/"]
 onliner.by##.news-tidings__item.js-closable
@@ -17904,7 +17907,6 @@ vokrug.tv##.sidebar > :not([class])
 beauty.ua##.sidebar > a
 eftwiki.ru##.sidebar > a[href][target="_blank"]
 ru-minecraft.ru##.sidebar > a[href][target="_blank"][rel="nofollow"] > img
-cheline.com.ua#?#.sidebar > aside:-abp-has(> .textwidget:empty)
 online-fix.me#?#.sidebar > div:-abp-has(> #twitch-embed)
 sovsport.ru##.sidebar > div:not([class])[style^="background: #ea0035;"]
 blizzardheroes.ru##.sidebar > div[class^="block"]
@@ -18440,7 +18442,6 @@ val.ua##.val-sidebar
 loveradio.ru##.vbanners
 upl.ua##.vbet-mid
 myshave.ru##.vbmenu_popup + div[align="center"]:not([id]):not([class])
-cheline.com.ua##.vc_empty_space
 bizua.org,podruzke.ru#?#.vce-related-box:-abp-has(> .main-box-inside script)
 l2db.ru##.vda
 mobportal.net##.verx_r
@@ -21511,7 +21512,6 @@ zelenograd.ru##noindex td[width="40%"] > noindex
 dndz.tv##object
 sovets.net,sovets24.ru##object[data*="/images/zen/"]
 geonavigator.ge,navigator.az##object[data*="banner"]
-cheline.com.ua##object[id^="audioplayer"]
 omskzdes.ru##object[id^="banner"]
 ria-m.tv##object[name="videoblock"]
 sibmama.info,sibmama.ru##object[width="150"][height="100"]
@@ -26037,6 +26037,7 @@ gsm.in.ua##body > div[style^="background:"][style*="display: block"]
 ritsatv.ru##body > marquee[style*="red"]
 motorpage.ru##body.noscroll::before
 qrz.ru#?#div[class]:-abp-has(> .inner > a[href="/help/adblock/"])
+vkplay.live##div[class^="AdBlockAlert_root"]
 pronetblog.by##div[class^="adsensepost"]
 2baksa.ws##div[class^="ant"][class*="block"]
 hitsovet.ru,mod-wot.ru##div[class^="chp_ads_block"]
