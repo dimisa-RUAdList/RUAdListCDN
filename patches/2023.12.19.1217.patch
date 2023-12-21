@@ -1,8 +1,8 @@
-diff name:ruadlist lines:51 checksum:6ddfb9bef7
+diff name:ruadlist lines:61 checksum:cef04313ae
 d4 2
 a5 2
-! Last modified: Thu, 21 Dec 2023 12:36:39 +0000
-! Diff-Path: ../patches/2023.12.21.756.patch#ruadlist
+! Last modified: Thu, 21 Dec 2023 17:21:01 +0000
+! Diff-Path: ../patches/2023.12.21.1041.patch#ruadlist
 a5640 1
 ||srvd2204.com^$third-party
 a6582 1
@@ -31,6 +31,16 @@ d19121 1
 a19121 1
 news24.in.ua,novosti24.kyiv.ua,uapress.kyiv.ua##a video
 d21512 1
+a21819 1
+||pikabu.ru/ajax/?*&*key=$xmlhttprequest,domain=pikabu.ru
+d21825 1
+a21825 1
+pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: [0-9]{3}px|min-height: calc.[03569]{2}[0-9]{1}|min-height: calc.+.em|min-height: .+.(cm|in|lh|mm|pt)/)
+a21828 1
+pikabu.ru#?#.stories-feed__container > .story div:-abp-properties(/min-height: .+.cm/)
+d21845 1
+a21845 1
+pikabu.ru#?#div[class*="page-story__"] div:-abp-properties(/min-height: [02345]{2}[0-9]{1}|min-height: calc.|min-height: .+.(cm|in|lh|mm)|height: 250px/)
 a22181 1
 dzen.ru##.news-mt-advert
 d22962 1

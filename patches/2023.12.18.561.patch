@@ -1,8 +1,8 @@
-diff name:ruadlist lines:98 checksum:6ddfb9bef7
+diff name:ruadlist lines:100 checksum:cef04313ae
 d4 2
 a5 2
-! Last modified: Thu, 21 Dec 2023 12:36:39 +0000
-! Diff-Path: ../patches/2023.12.21.756.patch#ruadlist
+! Last modified: Thu, 21 Dec 2023 17:21:01 +0000
+! Diff-Path: ../patches/2023.12.21.1041.patch#ruadlist
 a5640 1
 ||srvd2204.com^$third-party
 a6582 1
@@ -52,13 +52,15 @@ d21275 1
 d21510 1
 d21517 1
 d21819 1
-a21819 2
+a21819 3
+||pikabu.ru/ajax/?*&*key=$xmlhttprequest,domain=pikabu.ru
 ||pikabu.ru/ajax/?*=*key=$xmlhttprequest,domain=pikabu.ru
 ||pikabu.ru/ajax/?*x*key=$xmlhttprequest,domain=pikabu.ru
 d21823 1
 a21823 1
-pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: [0-9]{3}px|min-height: calc.[03569]{2}[0-9]{1}|min-height: calc.+.em|min-height: .+.(cm|lh|mm|pt)/)
-a21826 2
+pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: [0-9]{3}px|min-height: calc.[03569]{2}[0-9]{1}|min-height: calc.+.em|min-height: .+.(cm|in|lh|mm|pt)/)
+a21826 3
+pikabu.ru#?#.stories-feed__container > .story div:-abp-properties(/min-height: .+.cm/)
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__main > div:first-child + div)
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__main > div:only-child)
 d21829 1
@@ -67,7 +69,7 @@ pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(/min-
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(min-height: calc(300px)))
 d21840 1
 a21840 1
-pikabu.ru#?#div[class*="page-story__"] div:-abp-properties(/min-height: [02345]{2}[0-9]{1}|min-height: calc.|min-height: .+.(cm|lh|mm)|height: 250px/)
+pikabu.ru#?#div[class*="page-story__"] div:-abp-properties(/min-height: [02345]{2}[0-9]{1}|min-height: calc.|min-height: .+.(cm|in|lh|mm)|height: 250px/)
 a22176 1
 dzen.ru##.news-mt-advert
 d22957 1
