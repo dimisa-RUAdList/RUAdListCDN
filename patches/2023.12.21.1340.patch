@@ -1,8 +1,19 @@
-diff name:ruadlist lines:19 checksum:4b17b9ea65
+diff name:ruadlist lines:37 checksum:4b0c6a5fea
 d4 2
 a5 2
-! Last modified: Fri, 22 Dec 2023 08:24:02 +0000
-! Diff-Path: ../patches/2023.12.22.504.patch#ruadlist
+! Last modified: Fri, 22 Dec 2023 13:22:30 +0000
+! Diff-Path: ../patches/2023.12.22.802.patch#ruadlist
+a11234 1
+||diets.ru/i/rb/
+a12961 1
+||static.xam.nu/aff/
+d18871 1
+a18871 1
+asienda.ru,diets.ru,mycharm.ru,myjane.ru,povarenok.ru,stranamam.ru##[class^="vigvam"]
+a21795 2
+4pda.to#?#html[style] a[target="_blank"]:-abp-has(> img)
+! Правила для ресурсов, которые их создатели сделали несовместимыми с адблоком
+d27903 1
 d28005 1
 a28005 1
 vk.com,vk.ru##+js(abort-on-property-read, Groups.showDisclaimer)
@@ -18,3 +29,10 @@ vk.com,vk.ru##+js(set-constant, Unauthorized2, undefined)
 d28293 1
 a28293 1
 vk.com,vk.ru##+js(set-constant, noAdsAtAll, {})
+d28444 1
+a28444 2
+~3igames.mail.ru,~auto.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~esports.mail.ru,~games.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mailblog.mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##+js(no-fetch-if, /ad.mail.ru/adp/.*notgb|\/res\//)
+~3igames.mail.ru,~auto.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~esports.mail.ru,~games.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mailblog.mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##+js(no-xhr-if, /ad.mail.ru/adp/.*notgb|\/res\//)
+a28462 1
+mail.ru##[slot="main-column"] > div:matches-css(height: 90px)
+d28560 1

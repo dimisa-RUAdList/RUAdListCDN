@@ -1,8 +1,8 @@
-diff name:ruadlist lines:97 checksum:4b17b9ea65
+diff name:ruadlist lines:115 checksum:4b0c6a5fea
 d4 2
 a5 2
-! Last modified: Fri, 22 Dec 2023 08:24:02 +0000
-! Diff-Path: ../patches/2023.12.22.504.patch#ruadlist
+! Last modified: Fri, 22 Dec 2023 13:22:30 +0000
+! Diff-Path: ../patches/2023.12.22.802.patch#ruadlist
 a5640 1
 ||srvd2204.com^$third-party
 a6582 1
@@ -17,8 +17,12 @@ a10595 1
 /wp-content/uploads/*.mp4|$~third-party,domain=news24.in.ua|novosti24.kyiv.ua|uapress.kyiv.ua
 a10881 1
 ||armyinform.com.ua/wp-content/uploads/*/banner-
+a11230 1
+||diets.ru/i/rb/
 a12504 1
 ||povarenok.ru/css/*project$stylesheet
+a12956 1
+||static.xam.nu/aff/
 d13124 1
 a13124 1
 ||trk.mail.ru^$subdocument,domain=shazoo.ru|zoneofgames.ru
@@ -35,6 +39,9 @@ d18219 1
 a18219 1
 az-priroda.ru,bisnesideya.ru,dialogs.org.ua,doctorrouter.ru,dv-gazeta.info,edu-lib.net,farmamir.ru,halyavapliz.ru,kopilohka.ru,lifeinvest.com.ua,marketer.ua,medfactor.com.ua,medicalanswers.com.ua,medicalanswers.site,mods-fs.net,ruskweb.ru,samogonpil.ru,ua-vestnik.com,uapress.kyiv.ua,woman24.kyiv.ua,x-kuzov.ru,yroki-kompa.ru,zhenskiy.kyiv.ua##.textwidget
 d18440 1
+d18867 1
+a18867 1
+asienda.ru,diets.ru,mycharm.ru,myjane.ru,povarenok.ru,stranamam.ru##[class^="vigvam"]
 a19085 1
 forum.zoneofgames.ru,shazoo.ru##[src*="trk.mail.ru/"]
 d19119 1
@@ -47,6 +54,9 @@ shazoo.ru##aside > iframe[src] + p[style]
 d21277 1
 d21512 1
 d21519 1
+a21794 2
+4pda.to#?#html[style] a[target="_blank"]:-abp-has(> img)
+! Правила для ресурсов, которые их создатели сделали несовместимыми с адблоком
 a21820 1
 ||pikabu.ru/ajax/?*&*key=$xmlhttprequest,domain=pikabu.ru
 a21821 1
@@ -81,6 +91,7 @@ dzen.ru##div[class*="article__"] > .undefined ~ div[class*="__mi"] > div[id][cla
 d27684 1
 a27684 1
 dzen.ru##div[class^="feed__r"] article > div:first-child + div + div
+d27897 1
 d27999 1
 a27999 1
 vk.com,vk.ru##+js(abort-on-property-read, Groups.showDisclaimer)
@@ -96,3 +107,10 @@ vk.com,vk.ru##+js(set-constant, Unauthorized2, undefined)
 d28287 1
 a28287 1
 vk.com,vk.ru##+js(set-constant, noAdsAtAll, {})
+d28438 1
+a28438 2
+~3igames.mail.ru,~auto.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~esports.mail.ru,~games.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mailblog.mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##+js(no-fetch-if, /ad.mail.ru/adp/.*notgb|\/res\//)
+~3igames.mail.ru,~auto.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~esports.mail.ru,~games.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mailblog.mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##+js(no-xhr-if, /ad.mail.ru/adp/.*notgb|\/res\//)
+a28456 1
+mail.ru##[slot="main-column"] > div:matches-css(height: 90px)
+d28554 1

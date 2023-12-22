@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 22 Dec 2023 08:24:02 +0000
-! Diff-Path: ../patches/2023.12.22.504.patch#ruadlist
+! Last modified: Fri, 22 Dec 2023 13:22:30 +0000
+! Diff-Path: ../patches/2023.12.22.802.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -11232,6 +11232,7 @@ lada.kz/uploads/banners/
 ||did5.ru/images/banner
 ||diets.guru/js/fixads.js
 ||diets.guru/teaser/
+||diets.ru/i/rb/
 ||digiboo.ru/bnrs/
 ||digiseller.ru^$domain=keysportal.com
 ||dir.dok911.ru/
@@ -12959,6 +12960,7 @@ lada.kz/uploads/banners/
 ||static.teletarget.ru^$domain=mediavitrina.ru
 ||static.wmbcdn.com/uniweb/js/modern/YandexAds.client.*.js
 ||static.xakep.ru/advert/
+||static.xam.nu/aff/
 ||static.xtubeporno.net^*/videojs-overlay.js
 ||static2*.org/1200x120/
 ||static2.rutracker.org^
@@ -18868,7 +18870,7 @@ sportsdaily.ru##[class^="timetable__bet"]
 moyskelet.ru,obrazovaka.ru##[class^="tizdiv"]
 interfax.ru,sport-interfax.ru##[class^="toplogo__idea"]
 volynnews.com##[class^="view_back"]
-povarenok.ru,stranamam.ru##[class^="vigvam"]
+asienda.ru,diets.ru,mycharm.ru,myjane.ru,povarenok.ru,stranamam.ru##[class^="vigvam"]
 guitarplayer.ru##[class^="windowbg"] > noindex
 sports.kz##[class^="xbet"]
 buhonline.ru##[class^=sideBanner]
@@ -21793,6 +21795,8 @@ root-nation.com##.td-a-rec
 rafkino.com##.ytp-ad-progress-list
 rafkino.com##div[id^="MarketGid"]
 ! *** ./advblock/specific_special.txt ***
+4pda.to#?#html[style] a[target="_blank"]:-abp-has(> img)
+! Правила для ресурсов, которые их создатели сделали несовместимыми с адблоком
 !#if ext_abp
 ! запросы
 /^https?://24smi\.org/*[/]*[/][^\s]{8,}/$xmlhttprequest,domain=24smi.org
@@ -27900,7 +27904,6 @@ mail.ru##.weather_right-column .weather__description::after
 my.mail.ru##:not(.l-common__container) > div[style*="position"][style*="display"][style*="visible"][style*="opacity"][style*="background-color"]
 mail.ru##[data-testid="grid-left-col"] > .logo:style(margin-top: 4px !important; margin-bottom: 4px !important)
 mail.ru##[data-testid="news-tabs"] ~ div > div ~ div > div[style]
-mail.ru##[slot="main-column"] > div:first-child + div + div[class*=" "]:not([class*="tgb"]):not([class*="tabs"])
 mail.ru,sportmail.ru##a[id^="tb-"][class^="tb-"][target="_blank"]
 finance.mail.ru,vfokuse.mail.ru##aside > div > div:style(min-height: 0 !important)
 news.mail.ru##body > .block > .tag:style(z-index: 1400 !important; cursor: pointer !important)
@@ -28441,7 +28444,8 @@ e.mail.ru,octavius.mail.ru##+js(href-sanitizer, [data-cke-saved-href^="https://c
 light.mail.ru##+js(href-sanitizer, [href^="https://checklink.mail.ru/proxy?"], ?url)
 light.mail.ru##+js(href-sanitizer, [href^="https://click.mail.ru/redir?u="], ?u)
 ok.ru,touch.mail.ru##+js(json-prune, result.body.direct)
-~3igames.mail.ru,~auto.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~esports.mail.ru,~games.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mailblog.mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##+js(remove-node-text, script, adblock_detected)
+~3igames.mail.ru,~auto.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~esports.mail.ru,~games.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mailblog.mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##+js(no-fetch-if, /ad.mail.ru/adp/.*notgb|\/res\//)
+~3igames.mail.ru,~auto.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~esports.mail.ru,~games.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mailblog.mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##+js(no-xhr-if, /ad.mail.ru/adp/.*notgb|\/res\//)
 okminigames.mail.ru##+js(set-constant, NO_ADV, 1)
 e.mail.ru,octavius.mail.ru##+js(set-constant, Object.prototype.ENABLE_SMOKESCREEN, undefined)
 otvet.mail.ru##+js(set-constant, Object.prototype._Mimic, undefined)
@@ -28460,6 +28464,7 @@ news.mail.ru,pogoda.mail.ru,sportmail.ru##+js(set-constant, Object.prototype.use
 ~dom.mail.ru,~lady.mail.ru,mail.ru##.article__item_source_viqeo:has(> div > .viqeo-embed > iframe[src^="https://cdn.viqeo.tv/embed?playerId="])
 touch.mail.ru##.page__content__slide > .messagelist > div:not([cid]):not([style]):not([id]):not([class])
 ok.ru##[data-module*="banner"]
+mail.ru##[slot="main-column"] > div:matches-css(height: 90px)
 ~e.mail.ru,mail.ru##body > .grid .user__dropdown
 ok.ru##body > div:not([id]):not([class]) > .exit-popup:style(display: block !important)
 ok.ru##div[class*="__banner-feed"]
@@ -28557,7 +28562,6 @@ root-nation.com##^.td-a-rec
 root-nation.com##^body > a
 inforesist.org##^script:has-text(/gtag\('event'/)
 allboxing.ru##^script:has-text(/this\[atob\(/)
-~3igames.mail.ru,~auto.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~cloud.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~esports.mail.ru,~games.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mailblog.mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##^script:has-text(adblock_detected)
 pikabu.ru##^script:has-text(addPlaceholder)
 otzovik.com##^script:has-text(an.yan)
 hvylya.net,i.ua,ivona.ua,kriminal.tv,meteofor.com.ua,mport.ua,nv.ua,zv.zp.ua##^script:has-text(attachShadow)
