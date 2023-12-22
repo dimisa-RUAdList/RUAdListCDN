@@ -1,8 +1,8 @@
-diff name:ruadlist lines:100 checksum:26103b10c0
+diff name:ruadlist lines:115 checksum:b9da9d4afb
 d4 2
 a5 2
-! Last modified: Thu, 21 Dec 2023 22:20:50 +0000
-! Diff-Path: ../patches/2023.12.21.1340.patch#ruadlist
+! Last modified: Fri, 22 Dec 2023 03:20:27 +0000
+! Diff-Path: ../patches/2023.12.22.200.patch#ruadlist
 a5640 1
 ||srvd2204.com^$third-party
 a6582 1
@@ -90,6 +90,21 @@ dzen.ru##div[class*="article__"] > .undefined ~ div[class*="__mi"] > div[id][cla
 d27680 1
 a27680 1
 dzen.ru##div[class^="feed__r"] article > div:first-child + div + div
+d27995 1
+a27995 1
+vk.com,vk.ru##+js(abort-on-property-read, Groups.showDisclaimer)
+d28014 1
+d28017 1
+d28130 1
+a28130 1
+vk.com,vk.ru##+js(href-sanitizer, a[href*="/away.php?"], ?to)
+a28271 1
+vk.com,vk.ru##+js(set-constant, PageBottomBanners, undefined)
+a28272 1
+vk.com,vk.ru##+js(set-constant, Unauthorized2, undefined)
+d28283 1
+a28283 1
+vk.com,vk.ru##+js(set-constant, noAdsAtAll, {})
 a28462 1
 ||recostream.go.mail.ru/?stream_id=mediaproject_lenta_$domain=mail.ru|sportmail.ru
 a28521 3

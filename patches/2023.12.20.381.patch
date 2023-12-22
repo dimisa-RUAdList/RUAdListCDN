@@ -1,8 +1,8 @@
-diff name:ruadlist lines:49 checksum:26103b10c0
+diff name:ruadlist lines:64 checksum:b9da9d4afb
 d4 2
 a5 2
-! Last modified: Thu, 21 Dec 2023 22:20:50 +0000
-! Diff-Path: ../patches/2023.12.21.1340.patch#ruadlist
+! Last modified: Fri, 22 Dec 2023 03:20:27 +0000
+! Diff-Path: ../patches/2023.12.22.200.patch#ruadlist
 a5640 1
 ||srvd2204.com^$third-party
 a6582 1
@@ -48,3 +48,18 @@ a22962 1
 dzen.ru##div[class*="_wigdet-"] > div > div:not([class*="geoblock"]):not([class*="widget"])
 a26036 1
 vkplay.live##div[class^="AdBlockAlert_root"]
+d27999 1
+a27999 1
+vk.com,vk.ru##+js(abort-on-property-read, Groups.showDisclaimer)
+d28018 1
+d28021 1
+d28134 1
+a28134 1
+vk.com,vk.ru##+js(href-sanitizer, a[href*="/away.php?"], ?to)
+a28275 1
+vk.com,vk.ru##+js(set-constant, PageBottomBanners, undefined)
+a28276 1
+vk.com,vk.ru##+js(set-constant, Unauthorized2, undefined)
+d28287 1
+a28287 1
+vk.com,vk.ru##+js(set-constant, noAdsAtAll, {})

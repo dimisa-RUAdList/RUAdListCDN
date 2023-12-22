@@ -1,8 +1,8 @@
-diff name:ruadlist lines:14 checksum:26103b10c0
+diff name:ruadlist lines:29 checksum:b9da9d4afb
 d4 2
 a5 2
-! Last modified: Thu, 21 Dec 2023 22:20:50 +0000
-! Diff-Path: ../patches/2023.12.21.1340.patch#ruadlist
+! Last modified: Fri, 22 Dec 2023 03:20:27 +0000
+! Diff-Path: ../patches/2023.12.22.200.patch#ruadlist
 a21821 1
 ||pikabu.ru/ajax/?*&*key=$xmlhttprequest,domain=pikabu.ru
 d21827 1
@@ -13,3 +13,18 @@ pikabu.ru#?#.stories-feed__container > .story div:-abp-properties(/min-height: .
 d21847 1
 a21847 1
 pikabu.ru#?#div[class*="page-story__"] div:-abp-properties(/min-height: [02345]{2}[0-9]{1}|min-height: calc.|min-height: .+.(cm|in|lh|mm)|height: 250px/)
+d28003 1
+a28003 1
+vk.com,vk.ru##+js(abort-on-property-read, Groups.showDisclaimer)
+d28022 1
+d28025 1
+d28138 1
+a28138 1
+vk.com,vk.ru##+js(href-sanitizer, a[href*="/away.php?"], ?to)
+a28279 1
+vk.com,vk.ru##+js(set-constant, PageBottomBanners, undefined)
+a28280 1
+vk.com,vk.ru##+js(set-constant, Unauthorized2, undefined)
+d28291 1
+a28291 1
+vk.com,vk.ru##+js(set-constant, noAdsAtAll, {})
