@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 22 Dec 2023 13:22:30 +0000
-! Diff-Path: ../patches/2023.12.22.802.patch#ruadlist
+! Last modified: Fri, 22 Dec 2023 18:24:16 +0000
+! Diff-Path: ../patches/2023.12.22.1104.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21825,6 +21825,7 @@ rafkino.com##div[id^="MarketGid"]
 ! Pikabu (ловушка для обфускации)
 ||pikabu.ru/ajax/?*&*key=$xmlhttprequest,domain=pikabu.ru
 ||pikabu.ru/ajax/?*=*key=$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/ajax/?*_buff=$xmlhttprequest,domain=pikabu.ru
 ||pikabu.ru/ajax/?*x*key=$xmlhttprequest,domain=pikabu.ru
 ! селекторы
 anidub.vip,anidubonline.com##.plyr__menu

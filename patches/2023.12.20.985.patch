@@ -1,8 +1,8 @@
-diff name:ruadlist lines:74 checksum:4b0c6a5fea
+diff name:ruadlist lines:76 checksum:3545d936f6
 d4 2
 a5 2
-! Last modified: Fri, 22 Dec 2023 13:22:30 +0000
-! Diff-Path: ../patches/2023.12.22.802.patch#ruadlist
+! Last modified: Fri, 22 Dec 2023 18:24:16 +0000
+! Diff-Path: ../patches/2023.12.22.1104.patch#ruadlist
 a5640 1
 ||srvd2204.com^$third-party
 a6582 1
@@ -40,6 +40,8 @@ a21793 2
 ! Правила для ресурсов, которые их создатели сделали несовместимыми с адблоком
 a21819 1
 ||pikabu.ru/ajax/?*&*key=$xmlhttprequest,domain=pikabu.ru
+a21820 1
+||pikabu.ru/ajax/?*_buff=$xmlhttprequest,domain=pikabu.ru
 d21825 1
 a21825 1
 pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: [0-9]{3}px|min-height: calc.[03569]{2}[0-9]{1}|min-height: calc.+.em|min-height: .+.(cm|in|lh|mm|pt)/)
