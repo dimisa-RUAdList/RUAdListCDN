@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 23 Dec 2023 14:19:27 +0000
-! Diff-Path: ../patches/2023.12.23.859.patch#ruadlist
+! Last modified: Sat, 23 Dec 2023 19:15:00 +0000
+! Diff-Path: ../patches/2023.12.23.1154.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -8841,7 +8841,7 @@ by,~mail.ru,ru,~sportmail.ru,ua##.banner_box
 ##a[onclick*="offergate-amigo"]
 ~reklamka.ru.net##a[onclick*="reklamka.ru.net"]
 ##a[onclick*="trtkp.ru"]
-me##body[onfocus*="reloadliveblock"] > #bugoverlay ~ table #links_block ~ table
+me##body[onfocus*="reloadliveblock"] > #bugoverlay ~ table table[bgcolor="#dbdbdb"] td[bgcolor="#fafafa"]
 me##body[onfocus*="reloadliveblock"] > #bugoverlay ~ table tr > td[height^="9"][bgcolor]
 ~vk.com,~vk.ru##div[class*="notifier_baloon_"]
 ##div[class*="relap"][class*="-rec-item"]
