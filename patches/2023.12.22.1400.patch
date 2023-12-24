@@ -1,8 +1,12 @@
-diff name:ruadlist lines:51 checksum:def17cd2b8
+diff name:ruadlist lines:64 checksum:cffd3ccc35
 d4 2
 a5 2
-! Last modified: Sat, 23 Dec 2023 19:15:00 +0000
-! Diff-Path: ../patches/2023.12.23.1154.patch#ruadlist
+! Last modified: Sun, 24 Dec 2023 01:32:39 +0000
+! Diff-Path: ../patches/2023.12.24.92.patch#ruadlist
+a213 1
+||ad2the.net^$third-party
+a2260 1
+||get2.fun^$third-party
 a8843 1
 me##body[onfocus*="reloadliveblock"] > #bugoverlay ~ table table[bgcolor="#dbdbdb"] td[bgcolor="#fafafa"]
 a10474 1
@@ -39,6 +43,15 @@ pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: [0-9]{3}px|min-heigh
 d21854 1
 a21854 1
 pikabu.ru#?#div[class*="page-story__"] div:-abp-properties(/min-height: [02345]{2}[0-9]{1}|min-height: calc.|min-height: .+.(cm|in|lh|mm|pt)|height: 250px/)
+d21915 1
+a21915 1
+/point/?method=video_lin*&xl=$xmlhttprequest
+a22588 1
+lenta.ru##.avito
+d22707 2
+a22708 2
+rbc.ru#?#.js-index-central-column .js-index-doscroll:-abp-has([data-pixels-on-show*="adfox"])
+rbc.ru#?#.js-index-central-column .js-index-doscroll:-abp-has([href*="erid="])
 d27618 7
 a27629 4
 vrtp.ru##td[width="100%"][valign="top"][class^="post"] > .postcolor > img:style(max-width: 100% !important)

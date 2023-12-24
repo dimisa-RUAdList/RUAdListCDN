@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 23 Dec 2023 19:15:00 +0000
-! Diff-Path: ../patches/2023.12.23.1154.patch#ruadlist
+! Last modified: Sun, 24 Dec 2023 01:32:39 +0000
+! Diff-Path: ../patches/2023.12.24.92.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -211,6 +211,7 @@
 ||ad.vo-media.ru^$third-party
 ||ad1.ru^$third-party
 ||ad1game.ru^$third-party
+||ad2the.net^$third-party
 ||ad4sell.com^$third-party
 ||adb01.pro^$third-party
 ||adbean.ru^$third-party
@@ -2258,6 +2259,7 @@
 ||get-ads.ru^$third-party
 ||get-hit.ru^$third-party
 ||get1xzone.com^$third-party
+||get2.fun^$third-party
 ||getelem.ru^$third-party
 ||getgale.info^$third-party
 ||getinstant.website^$third-party
@@ -21918,7 +21920,7 @@ $script,~third-party,domain=defileb.com|fplay.online|hovels.info|likelol.online|
 ! ##.b-player a[href*="aHR0c"]
 ! ##.b-seriesupdate__block_list_item[data-url=""]
 ! блокировки
-/point/?method=video_link&xl=$xmlhttprequest
+/point/?method=video_lin*&xl=$xmlhttprequest
 ||static.*ezka.*/i/def_$image
 ||static.*ezka.*/i/promo/
 !||static.*ezka.*/templates/hdrezka/images/slava.
@@ -22592,6 +22594,7 @@ lenta.ru##._tinkoff
 rambler.ru##.article__banner
 rambler.ru##.article__partners
 rambler.ru##.article__read-also
+lenta.ru##.avito
 lenta.ru##.b-board__brand-logo
 lenta.ru##.b-board__coef
 lenta.ru##.b-header-inner__banner
@@ -22710,8 +22713,8 @@ rbc.ru,sportrbc.ru##.g-banner__news-footer > div[class="js-rbcslider-multi-news"
 pro.rbc.ru##.header__partner
 rbc.ru#?#.item-in-article:-abp-has([href*="erid="])
 sportrbc.ru##.js-header-online-container
-rbc.ru#?#.js-index-central-column > .js-index-doscroll:-abp-has([data-pixels-on-show*="adfox"])
-rbc.ru#?#.js-index-central-column > .js-index-doscroll:-abp-has([href*="erid="])
+rbc.ru#?#.js-index-central-column .js-index-doscroll:-abp-has([data-pixels-on-show*="adfox"])
+rbc.ru#?#.js-index-central-column .js-index-doscroll:-abp-has([href*="erid="])
 cash.rbc.ru##.js-one-office.premium
 rbc.ru##.js-video-player-ad-skip
 rbc.ru#?#.l-col-100h:-abp-has(> div [href*="banner"])
