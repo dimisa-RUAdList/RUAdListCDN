@@ -1,19 +1,27 @@
-diff name:ruadlist lines:68 checksum:21e66007f2
+diff name:ruadlist lines:82 checksum:c42a7a62bd
 d4 2
 a5 2
-! Last modified: Sun, 24 Dec 2023 10:22:16 +0000
-! Diff-Path: ../patches/2023.12.24.622.patch#ruadlist
+! Last modified: Sun, 24 Dec 2023 15:18:41 +0000
+! Diff-Path: ../patches/2023.12.24.918.patch#ruadlist
 a213 1
 ||ad2the.net^$third-party
 a2260 1
 ||get2.fun^$third-party
 a8843 1
 me##body[onfocus*="reloadliveblock"] > #bugoverlay ~ table table[bgcolor="#dbdbdb"] td[bgcolor="#fafafa"]
+a10210 1
+||ruboard.website^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: *.google.com/recaptcha/ *.googletagmanager.com *.gstatic.com/recaptcha/ *.ruboard.ru *.sendpulse.com *.threadloom.com
 a10474 1
 /banner/bookmaker-$domain=vse-pro-sport.com.ua|vseprosport.by|vseprosport.kz|vseprosport.ru
 d10507 1
 a10507 1
 /images/banners/*$domain=19rus.info|19rusinfo.ru|1tvnet.ru|33strausa.ru|8vp.ru|agroxxi.ru|alfa-form.ru|altgazeta.ru|aniplay.tv|antimuh.ru|archiportal-crimea.ru|arendator.ru|aum.news|bez-smenki.ru|bitpump.ru|biwork.ru|bryansktoday.ru|buzday.ru|buzulukday.ru|bvedomosti.ru|cars.ru|coil32.ru|conversion.im|cryptoff.org|csmania.ru|darkmoney.at|dtpptz.ru|ecm-journal.ru|erotix-tv.com|express-prigorod.ru|fakty.ua|fermagid.ru|firtka.if.ua|fitsport.ru|forpost.lviv.ua|fuzz-magazine.ru|hd-systems.com.ua|house.kg|hv-info.ru|hype.tech|info-ua.com|infokam.su|inforeactor.ru|itc.ua|itexpert.org.ua|izmacity.com|kaluga.ru|kamchatinfo.com|karelia.ru|kazfootball.kz|kids.to-var.com|km.ru|ko44.ru|korabel.ru|kramatorsk.info|lifetambov.ru|mc.today|mebelminsk.by|medicalj.ru|memstatus.ru|mirnov.ru|mklat.lv|mos-holidays.ru|moscow-post.com|motoforum.ru|motovibor.ru|moya-semya.ru|mycity.by|nakanune.ru|nashdisk.ru|naurfo.ru|ndn.info|neva.today|nevasport.ru|newgdz.com|newgubakha.ru|newizv.ru|news.soundex.ru|ng.kz|ngregion.ru|nsday.ru|numama.ru|ok-inform.ru|orenday.ru|osvita.ua|out-club.ru|perevolockday.ru|planet-today.ru|planetaskazok.ru|poiskvps.ru|pretenziy.ru|profidom.com.ua|prosports.kg|prosports.kz|rabota-kovrov.ru|rabota.kharkov.ua|radioclub.ua|rbc.ru|ria-m.tv|ria56.ru|ridna.ua|rtr24.ru|ruslife.eu|saltday.ru|sevastopol.su|sevkavportal.ru|shans.com.ua|skoda-club.org.ua|smolnarod.ru|sorochinskday.ru|sostav.ua|sp.tomica.ru|starkosino.ru|study.ru|tenstars.ru|ternopoliany.te.ua|trassae95.com|trisosny.ru|tv-gubernia.ru|ua-independent.com|uff.uz|ufocar.ru|ukrlife.tv|valetudo.ru|vdv-kavkaz.ru|vjazhi.ru|vmeste.tv|vp.donetsk.ua|vsatke.ru|vse-pro-sport.com.ua|vseprosport.by|vseprosport.kz|vseprosport.ru|yablor.ru|zamena-podshipnikov.ru|zrenue.com|zvid.org
+d14343 1
+a14343 1
+forum.developing.ru,forum.ruboard.ru,forumodua.com,ruboard.website,virusinfo.info###posts > .postcontainer[id^="yui-gen"]
+d14560 1
+a14560 1
+forum.ruboard.ru,ruboard.website#?##sidebar > li:-abp-has([id^="yandex_rtb_"])
 d14884 1
 a14884 1
 fight.ru,www.sport.ru##.a-block
@@ -27,6 +35,9 @@ a16424 1
 euro-football.ru,fight.ru##.gift-block
 a16530 1
 vse-pro-sport.com.ua,vseprosport.by,vseprosport.kz,vseprosport.ru##.header__bonus
+d19115 1
+a19115 1
+forum.ruboard.ru,ruboard.website##[vid_vpaut_pl]
 d19236 1
 a19236 1
 all-freeload.net,allsport-live.ru,allsport-news.net,mirlib.ru,mixsoft.org,ofitsialnaya-versiya.org,optimakomp.ru,pc-torrents.net,pes-files.ru,soccer24.top,sportlive365.net,x-torrent.pro,zfilm-hd.org,zfilme-hd1.site,zserials.cc##a[href*="/is.gd/"]
@@ -56,6 +67,9 @@ rbc.ru#?#.js-index-central-column .js-index-doscroll:-abp-has([data-pixels-on-sh
 rbc.ru#?#.js-index-central-column .js-index-doscroll:-abp-has([href*="erid="])
 a22722 1
 rbc.ru##.simple-promo-card
+d25934 1
+a25934 1
+forum.ruboard.ru,izi-invest.ru,mmo13.ru,ruboard.website#@#div[id^="yandex_rtb"]
 d27617 7
 a27628 4
 vrtp.ru##td[width="100%"][valign="top"][class^="post"] > .postcolor > img:style(max-width: 100% !important)

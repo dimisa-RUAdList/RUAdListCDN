@@ -1,8 +1,8 @@
-diff name:ruadlist lines:119 checksum:21e66007f2
+diff name:ruadlist lines:133 checksum:c42a7a62bd
 d4 2
 a5 2
-! Last modified: Sun, 24 Dec 2023 10:22:16 +0000
-! Diff-Path: ../patches/2023.12.24.622.patch#ruadlist
+! Last modified: Sun, 24 Dec 2023 15:18:41 +0000
+! Diff-Path: ../patches/2023.12.24.918.patch#ruadlist
 a213 1
 ||ad2the.net^$third-party
 a2260 1
@@ -13,6 +13,8 @@ a6582 1
 ||voidnetwork.cloud^$third-party
 a8841 1
 me##body[onfocus*="reloadliveblock"] > #bugoverlay ~ table table[bgcolor="#dbdbdb"] td[bgcolor="#fafafa"]
+a10208 1
+||ruboard.website^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: *.google.com/recaptcha/ *.googletagmanager.com *.gstatic.com/recaptcha/ *.ruboard.ru *.sendpulse.com *.threadloom.com
 a10472 1
 /banner/bookmaker-$domain=vse-pro-sport.com.ua|vseprosport.by|vseprosport.kz|vseprosport.ru
 d10505 1
@@ -24,6 +26,12 @@ a11231 1
 ||diets.ru/i/rb/
 a12958 1
 ||static.xam.nu/aff/
+d14338 1
+a14338 1
+forum.developing.ru,forum.ruboard.ru,forumodua.com,ruboard.website,virusinfo.info###posts > .postcontainer[id^="yui-gen"]
+d14555 1
+a14555 1
+forum.ruboard.ru,ruboard.website#?##sidebar > li:-abp-has([id^="yandex_rtb_"])
 d14879 1
 a14879 1
 fight.ru,www.sport.ru##.a-block
@@ -45,6 +53,9 @@ d18443 1
 d18870 1
 a18870 1
 asienda.ru,diets.ru,mycharm.ru,myjane.ru,povarenok.ru,stranamam.ru##[class^="vigvam"]
+d19112 1
+a19112 1
+forum.ruboard.ru,ruboard.website##[vid_vpaut_pl]
 d19233 1
 a19233 1
 all-freeload.net,allsport-live.ru,allsport-news.net,mirlib.ru,mixsoft.org,ofitsialnaya-versiya.org,optimakomp.ru,pc-torrents.net,pes-files.ru,soccer24.top,sportlive365.net,x-torrent.pro,zfilm-hd.org,zfilme-hd1.site,zserials.cc##a[href*="/is.gd/"]
@@ -82,6 +93,9 @@ rbc.ru#?#.js-index-central-column .js-index-doscroll:-abp-has([data-pixels-on-sh
 rbc.ru#?#.js-index-central-column .js-index-doscroll:-abp-has([href*="erid="])
 a22716 1
 rbc.ru##.simple-promo-card
+d25928 1
+a25928 1
+forum.ruboard.ru,izi-invest.ru,mmo13.ru,ruboard.website#@#div[id^="yandex_rtb"]
 a26039 1
 vkplay.live##div[class^="AdBlockAlert_root"]
 d27610 7

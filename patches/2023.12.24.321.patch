@@ -1,7 +1,21 @@
-diff name:ruadlist lines:6 checksum:21e66007f2
+diff name:ruadlist lines:20 checksum:c42a7a62bd
 d4 2
 a5 2
-! Last modified: Sun, 24 Dec 2023 10:22:16 +0000
-! Diff-Path: ../patches/2023.12.24.622.patch#ruadlist
+! Last modified: Sun, 24 Dec 2023 15:18:41 +0000
+! Diff-Path: ../patches/2023.12.24.918.patch#ruadlist
+a10213 1
+||ruboard.website^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: *.google.com/recaptcha/ *.googletagmanager.com *.gstatic.com/recaptcha/ *.ruboard.ru *.sendpulse.com *.threadloom.com
+d14347 1
+a14347 1
+forum.developing.ru,forum.ruboard.ru,forumodua.com,ruboard.website,virusinfo.info###posts > .postcontainer[id^="yui-gen"]
+d14564 1
+a14564 1
+forum.ruboard.ru,ruboard.website#?##sidebar > li:-abp-has([id^="yandex_rtb_"])
+d19121 1
+a19121 1
+forum.ruboard.ru,ruboard.website##[vid_vpaut_pl]
 a22732 1
 rbc.ru##.simple-promo-card
+d25944 1
+a25944 1
+forum.ruboard.ru,izi-invest.ru,mmo13.ru,ruboard.website#@#div[id^="yandex_rtb"]
