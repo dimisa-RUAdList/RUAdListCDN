@@ -1,5 +1,26 @@
-diff name:ruadlist lines:4 checksum:3d11ffc27b
+diff name:ruadlist lines:25 checksum:8636b2b2f6
 d4 2
 a5 2
-! Last modified: Mon, 25 Dec 2023 11:16:27 +0000
-! Diff-Path: ../patches/2023.12.25.676.patch#ruadlist
+! Last modified: Mon, 25 Dec 2023 16:26:13 +0000
+! Diff-Path: ../patches/2023.12.25.986.patch#ruadlist
+d2854 1
+a10532 2
+/js/_b.$script,domain=zab.ru|zab.tv
+/js/_y.$script,domain=zab.ru|zab.tv
+a13872 1
+liveball.cc,liveball.uno###custom_brand
+d15704 1
+a18717 1
+zab.ru,zab.tv##.zab-news > article.zab-news__item ~ div:not(.zab-news__item)
+d19303 1
+a20539 1
+meta.ua,xsport.ua##div[class^="bookmaker"]
+d21807 2
+d21878 1
+a21878 1
+inferno.games,mediagetguru.ru,rutor-game.info,torent-igruha.com,torrent-music.ru,torrent-soft.net,torrent-word.ru,torrentigo.net,torrentigruha.org,torrentsoft.net,where-game.ru##:not(this-site-promotes-malware)
+a28015 1
+liveball.cc,liveball.uno##+js(abort-on-property-read, ABNS)
+d28130 1
+a28130 1
+autonews.co.ua,liveball.cc,liveball.uno##+js(addEventListener-defuser, /contextmenu|copy|keydown|selectstart/)

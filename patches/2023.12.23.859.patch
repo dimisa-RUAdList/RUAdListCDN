@@ -1,26 +1,42 @@
-diff name:ruadlist lines:36 checksum:3d11ffc27b
+diff name:ruadlist lines:57 checksum:8636b2b2f6
 d4 2
 a5 2
-! Last modified: Mon, 25 Dec 2023 11:16:27 +0000
-! Diff-Path: ../patches/2023.12.25.676.patch#ruadlist
+! Last modified: Mon, 25 Dec 2023 16:26:13 +0000
+! Diff-Path: ../patches/2023.12.25.986.patch#ruadlist
 a213 1
 ||ad2the.net^$third-party
 a2260 1
 ||get2.fun^$third-party
+d2852 1
 d8844 1
 a8844 1
 me##body[onfocus*="reloadliveblock"] > #bugoverlay ~ table table[bgcolor="#dbdbdb"] td[bgcolor="#fafafa"]
 a10211 1
 ||ruboard.website^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: *.google.com/recaptcha/ *.googletagmanager.com *.gstatic.com/recaptcha/ *.ruboard.ru *.sendpulse.com *.threadloom.com
+a10529 2
+/js/_b.$script,domain=zab.ru|zab.tv
+/js/_y.$script,domain=zab.ru|zab.tv
+a13869 1
+liveball.cc,liveball.uno###custom_brand
 d14345 1
 a14345 1
 forum.developing.ru,forum.ruboard.ru,forumodua.com,ruboard.website,virusinfo.info###posts > .postcontainer[id^="yui-gen"]
 d14562 1
 a14562 1
 forum.ruboard.ru,ruboard.website#?##sidebar > li:-abp-has([id^="yandex_rtb_"])
+d15701 1
+a18714 1
+zab.ru,zab.tv##.zab-news > article.zab-news__item ~ div:not(.zab-news__item)
 d19119 1
 a19119 1
 forum.ruboard.ru,ruboard.website##[vid_vpaut_pl]
+d19300 1
+a20536 1
+meta.ua,xsport.ua##div[class^="bookmaker"]
+d21804 2
+d21875 1
+a21875 1
+inferno.games,mediagetguru.ru,rutor-game.info,torent-igruha.com,torrent-music.ru,torrent-soft.net,torrent-word.ru,torrentigo.net,torrentigruha.org,torrentsoft.net,where-game.ru##:not(this-site-promotes-malware)
 d21921 1
 a21921 1
 /point/?method=video_lin*&xl=$xmlhttprequest
@@ -35,3 +51,8 @@ rbc.ru##.simple-promo-card
 d25941 1
 a25941 1
 forum.ruboard.ru,izi-invest.ru,mmo13.ru,ruboard.website#@#div[id^="yandex_rtb"]
+a28010 1
+liveball.cc,liveball.uno##+js(abort-on-property-read, ABNS)
+d28125 1
+a28125 1
+autonews.co.ua,liveball.cc,liveball.uno##+js(addEventListener-defuser, /contextmenu|copy|keydown|selectstart/)

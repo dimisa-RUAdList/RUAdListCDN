@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 25 Dec 2023 11:16:27 +0000
-! Diff-Path: ../patches/2023.12.25.676.patch#ruadlist
+! Last modified: Mon, 25 Dec 2023 16:26:13 +0000
+! Diff-Path: ../patches/2023.12.25.986.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -2851,7 +2851,6 @@
 ||irvizem.ru^$third-party
 ||is1njb3.ru^$third-party
 ||isbnyzpunkx.com^$third-party
-||ishowyoufuture.com^$third-party
 ||isinodo.ru^$third-party
 ||islamclick.ru^
 ||ismcxv.com^$third-party
@@ -10530,6 +10529,8 @@ $xmlhttprequest,domain=happy-biock.info|happy-block.info|howto-news.info|mschist
 /jquery.cookie.min.js|$script,domain=buzulukday.ru|cknow.ru|nsday.ru|orenday.ru|perevolockday.ru|saltday.ru|sorochinskday.ru
 /jquerymin*.js|$domain=5.45.79.91|cdnstreamfree.com|cdnstreamlive.com|cdntelesee.com|cdntvnet.com|erotixtv.com|ok-tv.org|only-tv.org|potokcdn.com|tivix.co|tvforfamily.net|tvizorcdn.ru
 /js/*.js?$script,domain=all-sci.net|bib.social|economics.studio|economuch.com|finbook.news|lawbook.online|lawbooks.news|lib.sale|medinfo.live|myzooplanet.ru|pravo.studio|provse.news|psihologia.biz|sci-lib.biz|sci.house|scicenter.online|textbooks.studio|uchebnikfree.com|xn--80aaivjfyj3e.com
+/js/_b.$script,domain=zab.ru|zab.tv
+/js/_y.$script,domain=zab.ru|zab.tv
 /js/al/mrtarg.js$domain=vk.com|vk.ru
 /js/game_$domain=otxataba.net|xatab-repack.com|xatab-repack.org
 /js/init.js$script,~third-party,domain=assistentus.ru|dogovor-urist.ru|erikadmin.ru|fzrf.su|gibdd-gai.ru|gibddru.info|kodeksy.com.ua|moepravo.guru|pasportnyjstol.ru|poliklinika-avto.ru|prestima.ru|pristav-russia.ru|prizivnika.net|prozhivem.com|regoperatory.ru|snn-mn.ru|tbti.ru|vozvrat-tovara.ru|xn--80abefftg5atkeine8j.xn--p1ai|xn--b1aasedeuba5ai.xn--p1ai|zakon-o-tishine.ru|zakonguru.com
@@ -13870,6 +13871,7 @@ alldonors.ru###content_r_box
 youtube.com#?##contents > ytd-rich-item-renderer:-abp-has(> #content > ytd-display-ad-renderer)
 ucrazy.ru###crazy-content > div:not([id]):not([class])[style^="background-color:"]
 zzap.ru###ctl00_TopPanel_LangPanel > .top
+liveball.cc,liveball.uno###custom_brand
 oterraria.ru###custom_html-14
 binary-forum.com###da-slider
 pingvinoff.net###daos
@@ -15701,7 +15703,6 @@ etextlib.ru##.book_bl > div[style]:not([id]):not([class])
 litlib.net##.book_ltrs
 drinks.ua##.booking
 ccoins.ru##.bookingaff
-meta.ua,xsport.ua##.bookmaker
 bombardir.ru##.bookmaker-container
 egamersworld.com##.bookmaker_panel > .entry > .thumb
 alvin-almazov.ru,meta.ua##.bookmakers
@@ -18715,6 +18716,7 @@ zx-pk.ru##.yui-sidebar > [id^="widgetlist_column"] > li:nth-child(-n+2)
 moika78.ru,nevasport.ru##.yz
 livesport.ru##.z_picard_card_d
 livecars.ru##.z_wow_aftertxt
+zab.ru,zab.tv##.zab-news > article.zab-news__item ~ div:not(.zab-news__item)
 newsru.co.il##.zahav
 newsru.co.il##.zahav_inner
 gidonline.eu##.zbin
@@ -19300,7 +19302,6 @@ moirebenok.ua##a[href*="://sgo.one/"]
 programmersforum.ru#?#a[href*="://slurm.club/"] ~ *:-abp-contains(https://)
 sportliga.com##a[href*="://sportliga.com/bookmakers/"] ~ a
 595.ucoz.net##a[href*="://surfearner.me/"]
-rutor-game.info##a[href*="://surl.li/"]
 595.ucoz.net##a[href*="://teaser.bz/"]
 mezha.media##a[href*="://telemart.ua/"]
 itc.ua#?#a[href*="://telemart.ua/"]:-abp-has(> span > strong)
@@ -20537,6 +20538,7 @@ delovoymir.biz##div[class^="bnmd_"]
 finversia.ru##div[class^="bnr-"]
 forum.sibmama.info,forum.sibmama.ru##div[class^="bnrb"]
 pohudet.org##div[class^="bodyclick"]
+meta.ua,xsport.ua##div[class^="bookmaker"]
 kingisepp-today.ru,xn----etbbecbrbp5ahkja1ae7v.xn--p1ai#?#div[class^="boxFormWrapper"]:-abp-has(> div[class^="link"] a[href*="/images/reklama/"])
 kerch.fm##div[class^="bp_"][class*="-block"]
 medicina.ua##div[class^="brand_"]
@@ -21804,8 +21806,6 @@ root-nation.com##.td-a-rec
 rafkino.com##.ytp-ad-progress-list
 rafkino.com##div[id^="MarketGid"]
 ! *** ./advblock/specific_special.txt ***
-4pda.to#?#html[style] a[target="_blank"]:-abp-has(> img)
-! Правила для ресурсов, которые их создатели сделали несовместимыми с адблоком
 !#if ext_abp
 ! запросы
 /^https?://24smi\.org/*[/]*[/][^\s]{8,}/$xmlhttprequest,domain=24smi.org
@@ -21875,7 +21875,7 @@ pikabu.ru##div[style^="width: 300px; height:"]
 fontanka.ru#?#section div:-abp-properties(content: "Реклама")
 !#endif
 ! Блокировка ресурсов, намеренно продвигающих вредоносное ПО и фейки
-inferno.games,mediagetguru.ru,torent-igruha.com,torrent-music.ru,torrent-soft.net,torrent-word.ru,torrentigo.net,torrentigruha.org,torrentsoft.net,where-game.ru##:not(this-site-promotes-malware)
+inferno.games,mediagetguru.ru,rutor-game.info,torent-igruha.com,torrent-music.ru,torrent-soft.net,torrent-word.ru,torrentigo.net,torrentigruha.org,torrentsoft.net,where-game.ru##:not(this-site-promotes-malware)
 ! Намеренное продвижение фейков и мошенников
 ||tele.ru^$xmlhttprequest,domain=tele.ru
 ! Плеер venom, в основном для ua-юзеров, примеры >
@@ -28013,6 +28013,7 @@ livesport.ws##+js(abort-current-inline-script, setTimeout, adblockwarn)
 techmusic.ru##+js(abort-current-inline-script, window.onload, _uWnd)
 dmod.cc,draug.ru,modsforwot.ru##+js(abort-current-script, Math.floor, AdSense)
 skam.online##+js(abort-current-script, document.getElementById, composedPath)
+liveball.cc,liveball.uno##+js(abort-on-property-read, ABNS)
 htmlweb.ru##+js(abort-on-property-read, AdbBanner)
 fapreactor.com,joyreactor.cc,pornreactor.cc,reactor.cc##+js(abort-on-property-read, CTRManager.host3)
 anifap.com,anipoisk.org,anitokyo.tv,hcdn.online,kinofilm.co##+js(abort-on-property-read, ClickUndercookie)
@@ -28127,7 +28128,7 @@ kakprosto.ru##+js(abort-on-property-write, window.yaProxy)
 7days.ru##+js(addEventListener-defuser, /^(?:contextmenu|keydown)$/)
 fastpic.org,~new.fastpic.org##+js(addEventListener-defuser, /click|load/, popMagic)
 biqle.org,biqle.ru##+js(addEventListener-defuser, /click|mousedown/, popunder)
-autonews.co.ua##+js(addEventListener-defuser, /contextmenu|copy|keydown|selectstart/)
+autonews.co.ua,liveball.cc,liveball.uno##+js(addEventListener-defuser, /contextmenu|copy|keydown|selectstart/)
 ~id.rambler.ru,rambler.ru,~vp.rambler.ru##+js(addEventListener-defuser, DOMContentLoaded, .j-mini-player__video)
 sibnet.ru##+js(addEventListener-defuser, DOMContentLoaded, /smartweek/)
 sports.ru##+js(addEventListener-defuser, DOMContentLoaded, 0x)
