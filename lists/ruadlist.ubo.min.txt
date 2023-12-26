@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 26 Dec 2023 12:35:08 +0000
-! Diff-Path: ../patches/2023.12.26.755.patch#ruadlist
+! Last modified: Tue, 26 Dec 2023 17:19:36 +0000
+! Diff-Path: ../patches/2023.12.26.1039.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10181,6 +10181,7 @@ agrarii-razom.com.ua##div[id^="user-to-register"]
 ||drive.google.com/file/d/1VmzdhLB_-DcnBtUbKfQPnNvsEp_2gnsy/$csp=script-src
 ||driverpack.io^$csp=sandbox allow-same-origin;
 ||driverpaksolution.ru^$csp=sandbox allow-same-origin;
+||elegantwoman.kyiv.ua^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.googletagmanager.com *.dev *.io *.net *.org *.ru *.ua
 ||ex.24smi.info^$csp=script-src
 ||exoclick.com^$csp=sandbox allow-same-origin;
 ||findhow.org^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: cse.google.com *.google.com/cse/ *.googleapis.com *.googletagmanager.com translate.google.com *.dev *.io *.net *.org
@@ -10956,6 +10957,7 @@ lada.kz/uploads/banners/
 ||balakhna.ru/firms/
 ||balakhna.ru/kvadratiki/
 ||balancervideo.ru^$script
+||ban.zab.ru/
 ||bankcomat.org/res/bankomat/banners/
 ||banki.ru/ng/api/*/public/banners$script,xmlhttprequest
 ||banner.kaktus.media/
@@ -18259,6 +18261,7 @@ vedomosti.ru##.the-loader
 shraibikus.com,topdaynews.ru##.theiaStickySidebar
 ukrs.com.ua##.theiaStickySidebar .widget_text
 433175.ru#?#.theiaStickySidebar > .widget > .widget :-abp-has(.widget-title > h2:-abp-contains(Интересная реклама))
+elegantwoman.kyiv.ua##.theiaStickySidebar > .widget_block
 apral.ru,kino-russfilm.ru,te.ua,topgir.com.ua##.theiaStickySidebar > .widget_custom_html
 newxboxone.ru##.theiaStickySidebar > .widget_text:first-child
 serveradmin.ru##.theiaStickySidebar > :not(#text-html-widget-13):not(#text-html-widget-18):not(#text-html-widget-25):not(.posts-list):not(.login-widget):not([class*="widget_wpforo_widget_recent_"])
@@ -20091,7 +20094,7 @@ edufuture.biz,popgun.ru,trupornolabs.org,xvatit.com,xxxadulttorrent.org##body > 
 naruto-base.tv##body > [target="_blank"]
 budport.com.ua,lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site,mylenium.ru##body > a
 crazyatomicgames.com,kinoafisha.ua,root-nation.com,sportmaps.ru,topvideo.tj,torrentinka.me,trupornolabs.org,udaff.com,xxx-igra.com,xxxadulttorrent.org,yaldagames.com##body > a[href]
-101.ru,101kofemashina.ru,1in.am,alau.kz,alexua.tv,animejapan.tv,animeonline.cc,bit.ua,bugaga.ru,c-inform.info,comments.ua,csgamer.ru,ctv7.ru,cvnews.cv.ua,dead-serial.com,e-libra.ru,fashiony.ru,fclmnews.ru,forpost.lviv.ua,freehat.cc,game2day.ru,gameinside.ua,ggscore.com,gorod.dp.ua,grimm-online.org,gta.com.ua,horrorzone.ru,ifnews.org.ua,igrovaya.org,igry-online.net,itechua.com,izbezhat-nakazania.com,jetsetter.ua,jut.su,kievvlast.com.ua,ko.com.ua,kosti-tv.com,kushvsporte.ru,likeni.ru,lovesun.by,lvnews.org.ua,mac-torrent-download.net,madjong-besplatno.ru,mirf.ru,moldfootball.com,mybrazz.club,nashkiev.ua,ne-kurim.ru,pesikot.org,pimpletv.ru,playua.net,post-tracker.ru,povarenok.ru,prodota.ru,prosports.kg,prosports.kz,prosportua.com,relook.ru,rvnews.rv.ua,saratovnews.ru,segodnya.ua,sopsport.org,spletnica-tv.com,sportarena.com,strela-online.com,teenwolf-tv.com,tenews.org.ua,tg.telepult.pro,theflash-tv.com,topfile.tj,traktorist.ua,uanews.org.ua,udargol.com,upl.ua,vsetors.org,vskazke-tv.com,zorgee.ru##body > a[href][target="_blank"]
+101.ru,101kofemashina.ru,1in.am,alau.kz,alexua.tv,animejapan.tv,animeonline.cc,bit.ua,bugaga.ru,c-inform.info,comments.ua,csgamer.ru,ctv7.ru,cvnews.cv.ua,dead-serial.com,e-libra.ru,fashiony.ru,fclmnews.ru,forpost.lviv.ua,freehat.cc,game2day.ru,gameinside.ua,ggscore.com,gorod.dp.ua,grimm-online.org,gta.com.ua,horrorzone.ru,ifnews.org.ua,igrovaya.org,igry-online.net,itechua.com,izbezhat-nakazania.com,jetsetter.ua,jut.su,kievvlast.com.ua,ko.com.ua,kosti-tv.com,kushvsporte.ru,likeni.ru,lovesun.by,lvnews.org.ua,mac-torrent-download.net,madjong-besplatno.ru,mirf.ru,moldfootball.com,mybrazz.club,nashkiev.ua,ne-kurim.ru,pesikot.org,pimpletv.ru,playua.net,post-tracker.ru,povarenok.ru,prodota.ru,prosports.kg,prosports.kz,prosportua.com,relook.ru,rvnews.rv.ua,saratovnews.ru,segodnya.ua,sopsport.org,spletnica-tv.com,sportarena.com,strela-online.com,teenwolf-tv.com,tenews.org.ua,tg.telepult.pro,theflash-tv.com,topfile.tj,traktorist.ua,uanews.org.ua,udargol.com,upl.ua,vsetors.org,vskazke-tv.com,zab.ru,zorgee.ru##body > a[href][target="_blank"]
 yap.ru,yaplakal.com##body > a[id^="clk-"]
 gotps3.ru##body > a[target="_blank"]
 hmn.ru##body > center > .px_blue_fon
@@ -26149,7 +26152,7 @@ www.1tv.ru##div[class^="Branding_container_"]:style(margin-top: unset !important
 ! ---
 4pda.to##body[itemscope] [id]:first-child > style ~ a[href][target="_blank"]
 4pda.to##html:not([class]):not([style]) > body:not([itemscope]) > div[id] > div[id][href]:style(cursor: auto !important)
-4pda.to##html[style] > body [class]:not([id]):not(div):not([style]) :not(div)[class][id]:style(min-height: 0 !important; height: unset !important)
+4pda.to##html[style]:not([style=""]) > body [class]:not([id]):not(div):not([style]) :not(div)[class][id]:style(min-height: 0 !important; height: unset !important)
 4pda.to##iframe[src*="utm_campaign"]
 4pda.to##tbody > tr[valign="top"] > td[width*="%"] + td > a[href][target="_blank"] > img
 ! ---
@@ -28100,6 +28103,7 @@ kolizhanka.com.ua##+js(abort-on-property-read, nocontext)
 it-actual.ru##+js(abort-on-property-read, onload)
 bombafilms.ru,freehat.cc,hlamer.ru,lostpix.com,potokcdn.com,prostoporno.help,saltday.ru,uploadimagex.com,wowskill.ru,xittv.net##+js(abort-on-property-read, open)
 sm.news##+js(abort-on-property-read, preventSelection)
+zab.ru##+js(abort-on-property-read, scrollw)
 tapochek.net##+js(abort-on-property-read, setsnow)
 anime-chan.me##+js(abort-on-property-read, sparkle)
 bryansknovosti.ru,novozybkov.su,sudya-dredd.ru##+js(abort-on-property-read, stopPrntScr)

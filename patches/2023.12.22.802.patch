@@ -1,8 +1,8 @@
-diff name:ruadlist lines:122 checksum:166592d0aa
+diff name:ruadlist lines:136 checksum:2095137925
 d4 2
 a5 2
-! Last modified: Tue, 26 Dec 2023 12:35:08 +0000
-! Diff-Path: ../patches/2023.12.26.755.patch#ruadlist
+! Last modified: Tue, 26 Dec 2023 17:19:36 +0000
+! Diff-Path: ../patches/2023.12.26.1039.patch#ruadlist
 a213 1
 ||ad2the.net^$third-party
 a2260 1
@@ -10,6 +10,8 @@ a2260 1
 d2852 1
 a8843 1
 me##body[onfocus*="reloadliveblock"] > #bugoverlay ~ table table[bgcolor="#dbdbdb"] td[bgcolor="#fafafa"]
+a10181 1
+||elegantwoman.kyiv.ua^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.googletagmanager.com *.dev *.io *.net *.org *.ru *.ua
 a10210 1
 ||ruboard.website^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: *.google.com/recaptcha/ *.googletagmanager.com *.gstatic.com/recaptcha/ *.ruboard.ru *.sendpulse.com *.threadloom.com
 a10474 1
@@ -20,6 +22,8 @@ a10507 1
 a10527 2
 /js/_b.$script,domain=zab.ru|zab.tv
 /js/_y.$script,domain=zab.ru|zab.tv
+a10952 1
+||ban.zab.ru/
 a13867 1
 liveball.cc,liveball.uno###custom_brand
 d14343 1
@@ -46,6 +50,8 @@ a16530 1
 vse-pro-sport.com.ua,vseprosport.by,vseprosport.kz,vseprosport.ru##.header__bonus
 a17403 1
 relook.ru##.pos-bg
+a18251 1
+elegantwoman.kyiv.ua##.theiaStickySidebar > .widget_block
 a18710 1
 zab.ru,zab.tv##.zab-news > article.zab-news__item ~ div:not(.zab-news__item)
 d19115 1
@@ -61,6 +67,9 @@ d19399 1
 d19574 1
 a19574 1
 asienda.ru,diets.ru,mycharm.ru,myjane.ru,povarenok.ru,relook.ru,stranamam.ru##a[href][style*="display: block"]
+d20084 1
+a20084 1
+101.ru,101kofemashina.ru,1in.am,alau.kz,alexua.tv,animejapan.tv,animeonline.cc,bit.ua,bugaga.ru,c-inform.info,comments.ua,csgamer.ru,ctv7.ru,cvnews.cv.ua,dead-serial.com,e-libra.ru,fashiony.ru,fclmnews.ru,forpost.lviv.ua,freehat.cc,game2day.ru,gameinside.ua,ggscore.com,gorod.dp.ua,grimm-online.org,gta.com.ua,horrorzone.ru,ifnews.org.ua,igrovaya.org,igry-online.net,itechua.com,izbezhat-nakazania.com,jetsetter.ua,jut.su,kievvlast.com.ua,ko.com.ua,kosti-tv.com,kushvsporte.ru,likeni.ru,lovesun.by,lvnews.org.ua,mac-torrent-download.net,madjong-besplatno.ru,mirf.ru,moldfootball.com,mybrazz.club,nashkiev.ua,ne-kurim.ru,pesikot.org,pimpletv.ru,playua.net,post-tracker.ru,povarenok.ru,prodota.ru,prosports.kg,prosports.kz,prosportua.com,relook.ru,rvnews.rv.ua,saratovnews.ru,segodnya.ua,sopsport.org,spletnica-tv.com,sportarena.com,strela-online.com,teenwolf-tv.com,tenews.org.ua,tg.telepult.pro,theflash-tv.com,topfile.tj,traktorist.ua,uanews.org.ua,udargol.com,upl.ua,vsetors.org,vskazke-tv.com,zab.ru,zorgee.ru##body > a[href][target="_blank"]
 a20111 1
 povarenok.ru##body > div[class]:empty
 d20114 1
@@ -105,6 +114,9 @@ dzen.ru##div[class*="_widet-"] > div > div:not([class*="geoblock"]):not([class*=
 d25934 1
 a25934 1
 forum.ruboard.ru,izi-invest.ru,mmo13.ru,ruboard.website#@#div[id^="yandex_rtb"]
+d26135 1
+a26135 1
+4pda.to##html[style]:not([style=""]) > body [class]:not([id]):not(div):not([style]) :not(div)[class][id]:style(min-height: 0 !important; height: unset !important)
 d27617 7
 a27628 4
 vrtp.ru##td[width="100%"][valign="top"][class^="post"] > .postcolor > img:style(max-width: 100% !important)
@@ -117,6 +129,8 @@ vtb-league.com##body.home:style(overflow: auto !important)
 ! ---
 a28003 1
 liveball.cc,liveball.uno##+js(abort-on-property-read, ABNS)
+a28084 1
+zab.ru##+js(abort-on-property-read, scrollw)
 d28118 1
 a28118 1
 autonews.co.ua,liveball.cc,liveball.uno##+js(addEventListener-defuser, /contextmenu|copy|keydown|selectstart/)
