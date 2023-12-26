@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 26 Dec 2023 07:17:41 +0000
-! Diff-Path: ../patches/2023.12.26.437.patch#ruadlist
+! Last modified: Tue, 26 Dec 2023 12:35:08 +0000
+! Diff-Path: ../patches/2023.12.26.755.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -16277,6 +16277,7 @@ narodna-pravda.ua##.fit-vids-style
 www.pesticidy.ru##.fix
 alvin-almazov.ru##.fix_block
 e-sant.ru##.fixday
+relook.ru##.fixed-bg
 sims3pack.ru##.fixed-block
 agroportal.ua##.fixedBanner
 agroportal.ua##.fixedBlock
@@ -17409,6 +17410,7 @@ tourister.ru##.popularMaterialList > div[id^="readmore_"] ~ [class]:not([id^="re
 pingvin.pro#?#.popularreviewscats-home:-abp-has(> h2:-abp-contains(Новини партнерів))
 nrj.ua##.popup-banner
 equity.today##.popup_module_container
+relook.ru##.pos-bg
 denzadnem.com.ua##.post .g-single
 cod31.ru##.post > .entry-tags + .row
 cod31.ru##.post > .entry-tags ~ div[style*="clear"]
@@ -19579,7 +19581,7 @@ zakarpatpost.net##a[href][rel="nofollow noopener"] > img
 xn--m1ah5a.net##a[href][rel="noindex"]
 nonameno.com##a[href][rel="noopener noreferrer"][title="Скачать"]
 koolinar.ru##a[href][rel="sponsored"]
-asienda.ru,diets.ru,mycharm.ru,myjane.ru,povarenok.ru,stranamam.ru##a[href][style*="display: block"]
+asienda.ru,diets.ru,mycharm.ru,myjane.ru,povarenok.ru,relook.ru,stranamam.ru##a[href][style*="display: block"]
 4725.ru##a[href][style^="display:block"] > img
 potokcdn.com##a[href][target="_blank"]
 c-s.net.ua##a[href][target="_blank"] > div
@@ -21136,6 +21138,7 @@ nashamama.com##div[style="position:relative; width:600px; height:350px"]
 referatwork.ru##div[style="rftk"]
 sberometer.ru##div[style="text-align: center; height: 100px;"]
 omskregion.info##div[style="text-align: center; margin: -18px 0 25px; "]
+pcnews.ru##div[style="text-align: center; margin: auto;"] > a[target="_blank"]
 alexlarin.net##div[style="text-align: center;"] > a[href][target="_blank"] > img
 cxem.net##div[style="text-align:center"] > p > a > img
 otxataba.net,xatab-repack.com,xatab-repack.org##div[style="text-align:center;"] > a[href] > img
@@ -21834,12 +21837,12 @@ rafkino.com##div[id^="MarketGid"]
 ! Pikabu (ловушка для обфускации)
 ||pikabu.ru/ajax/?*&*key=$xmlhttprequest,domain=pikabu.ru
 ||pikabu.ru/ajax/?*=*key=$xmlhttprequest,domain=pikabu.ru
-||pikabu.ru/ajax/?*_buff=$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/ajax/?*_buf$xmlhttprequest,domain=pikabu.ru
 ||pikabu.ru/ajax/?*x*key=$xmlhttprequest,domain=pikabu.ru
 ! селекторы
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
-pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: [0-9]{3}px|min-height: calc.[03569]{2}[0-9]{1}|min-height: calc.+.em|min-height: .+.(cm|in|lh|mm|pc|pt)/)
+pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: [0-9]{3}px|min-height: calc.[03569]{2}[0-9]{1}|min-height: calc.+.em|min-height: .+.(cm|in|lh|mm|pc|pt|Q)/)
 pikabu.ru##.sidebar-block_border[style*="transparent"]
 pikabu.ru##.sidebar__inner > .sidebar-block div[style=""]
 pikabu.ru##.sidebar__inner > .sidebar-block:not(.sidebar-block_border)
@@ -21849,6 +21852,7 @@ pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__main > div:only
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:-abp-contains(/[a-z]$|[a-z].{1,3}$|\s$|:$|:.{1,20}$/))
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:empty)
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(/min-height: calc.29.px/))
+pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(min-height: 300px))
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(min-height: calc(300px)))
 dracon-zet.ru,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 android-mafia.com,game4you.top,games-pc.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##:not(this-site-promotes-malware)
@@ -22283,6 +22287,7 @@ finance.mail.ru,vfokuse.mail.ru##div[data-rb-slot]
 ! Хай-тек
 hi-tech.mail.ru##.box[class*=" rb_"]
 hi-tech.mail.ru##.js-banner
+hi-tech.mail.ru##.mailru-visibility-check
 hi-tech.mail.ru##.rb
 hi-tech.mail.ru##[article-item-type="yawidget"]
 hi-tech.mail.ru##[data-logger-parent="bottom"]
@@ -22980,7 +22985,7 @@ yandex.by,yandex.kz,yandex.ru,yandex.uz##.stat_pixel_yes[onclick][class*="_layou
 yandex.by,yandex.kz,yandex.ru,yandex.uz##a[href*="//ads.adfox.ru/"]
 yandex.by,yandex.kz,yandex.ru,yandex.uz##body[class*="b-page_alt-widgets_yes"] .feed ._need-stub
 yandex.ru##div[class$="ear_js_inited"] > a[href^="//awaps.yandex.ru"]
-dzen.ru##div[class*="_wigdet-"] > div > div:not([class*="geoblock"]):not([class*="widget"])
+dzen.ru##div[class*="_widet-"] > div > div:not([class*="geoblock"]):not([class*="widget"])
 yandex.by,yandex.kz,yandex.ru,yandex.uz##img[src*="yandex.net/get-direct"]
 ||awaps.yandex.
 ||bs-meta.yandex.$script,xmlhttprequest

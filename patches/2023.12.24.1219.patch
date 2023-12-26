@@ -1,8 +1,8 @@
-diff name:ruadlist lines:28 checksum:d6ca2181d4
+diff name:ruadlist lines:50 checksum:166592d0aa
 d4 2
 a5 2
-! Last modified: Tue, 26 Dec 2023 07:17:41 +0000
-! Diff-Path: ../patches/2023.12.26.437.patch#ruadlist
+! Last modified: Tue, 26 Dec 2023 12:35:08 +0000
+! Diff-Path: ../patches/2023.12.26.755.patch#ruadlist
 d2854 1
 a10532 2
 /js/_b.$script,domain=zab.ru|zab.tv
@@ -10,18 +10,40 @@ a10532 2
 a13872 1
 liveball.cc,liveball.uno###custom_brand
 d15704 1
+a16278 1
+relook.ru##.fixed-bg
+a17410 1
+relook.ru##.pos-bg
 a18717 1
 zab.ru,zab.tv##.zab-news > article.zab-news__item ~ div:not(.zab-news__item)
 d19303 1
+d19581 1
+a19581 1
+asienda.ru,diets.ru,mycharm.ru,myjane.ru,povarenok.ru,relook.ru,stranamam.ru##a[href][style*="display: block"]
 a20118 1
 povarenok.ru##body > div[class]:empty
 d20121 1
 a20539 1
 meta.ua,xsport.ua##div[class^="bookmaker"]
+a21136 1
+pcnews.ru##div[style="text-align: center; margin: auto;"] > a[target="_blank"]
 d21807 2
+d21837 1
+a21837 1
+||pikabu.ru/ajax/?*_buf$xmlhttprequest,domain=pikabu.ru
+d21842 1
+a21842 1
+pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: [0-9]{3}px|min-height: calc.[03569]{2}[0-9]{1}|min-height: calc.+.em|min-height: .+.(cm|in|lh|mm|pc|pt|Q)/)
+a21851 1
+pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(min-height: 300px))
 d21878 1
 a21878 1
 inferno.games,mediagetguru.ru,rutor-game.info,torent-igruha.com,torrent-music.ru,torrent-soft.net,torrent-word.ru,torrentigo.net,torrentigruha.org,torrentsoft.net,where-game.ru##:not(this-site-promotes-malware)
+a22285 1
+hi-tech.mail.ru##.mailru-visibility-check
+d22983 1
+a22983 1
+dzen.ru##div[class*="_widet-"] > div > div:not([class*="geoblock"]):not([class*="widget"])
 a28015 1
 liveball.cc,liveball.uno##+js(abort-on-property-read, ABNS)
 d28130 1

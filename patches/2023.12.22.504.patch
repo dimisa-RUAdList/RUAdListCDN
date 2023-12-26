@@ -1,8 +1,8 @@
-diff name:ruadlist lines:120 checksum:d6ca2181d4
+diff name:ruadlist lines:136 checksum:166592d0aa
 d4 2
 a5 2
-! Last modified: Tue, 26 Dec 2023 07:17:41 +0000
-! Diff-Path: ../patches/2023.12.26.437.patch#ruadlist
+! Last modified: Tue, 26 Dec 2023 12:35:08 +0000
+! Diff-Path: ../patches/2023.12.26.755.patch#ruadlist
 a213 1
 ||ad2the.net^$third-party
 a2260 1
@@ -41,11 +41,15 @@ a15376 1
 a15688 1
 vse-pro-sport.com.ua,vseprosport.by,vseprosport.kz,vseprosport.ru##.bonus-btn
 d15696 1
+a16270 1
+relook.ru##.fixed-bg
 d16422 1
 a16422 1
 euro-football.ru,fight.ru##.gift-block
 a16528 1
 vse-pro-sport.com.ua,vseprosport.by,vseprosport.kz,vseprosport.ru##.header__bonus
+a17401 1
+relook.ru##.pos-bg
 a18708 1
 zab.ru,zab.tv##.zab-news > article.zab-news__item ~ div:not(.zab-news__item)
 d18871 1
@@ -61,6 +65,9 @@ d19294 1
 a19369 1
 allsport-news.net##a[href*="fon.bet/"]
 d19397 1
+d19572 1
+a19572 1
+asienda.ru,diets.ru,mycharm.ru,myjane.ru,povarenok.ru,relook.ru,stranamam.ru##a[href][style*="display: block"]
 a20109 1
 povarenok.ru##body > div[class]:empty
 d20112 1
@@ -70,11 +77,15 @@ a20529 1
 meta.ua,xsport.ua##div[class^="bookmaker"]
 a20890 1
 vse-pro-sport.com.ua,vseprosport.by,vseprosport.kz,vseprosport.ru##div[id^="bookmaker_"]
+a21125 1
+pcnews.ru##div[style="text-align: center; margin: auto;"] > a[target="_blank"]
 a21823 1
-||pikabu.ru/ajax/?*_buff=$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/ajax/?*_buf$xmlhttprequest,domain=pikabu.ru
 d21828 1
 a21828 1
-pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: [0-9]{3}px|min-height: calc.[03569]{2}[0-9]{1}|min-height: calc.+.em|min-height: .+.(cm|in|lh|mm|pc|pt)/)
+pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: [0-9]{3}px|min-height: calc.[03569]{2}[0-9]{1}|min-height: calc.+.em|min-height: .+.(cm|in|lh|mm|pc|pt|Q)/)
+a21837 1
+pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(min-height: 300px))
 d21849 1
 a21849 1
 pikabu.ru#?#div[class*="page-story__"] div:-abp-properties(/min-height: [02345]{2}[0-9]{1}|min-height: calc.|min-height: .+.(cm|in|lh|mm|pt)|height: 250px/)
@@ -84,6 +95,8 @@ inferno.games,mediagetguru.ru,rutor-game.info,torent-igruha.com,torrent-music.ru
 d21910 1
 a21910 1
 /point/?method=video_lin*&xl=$xmlhttprequest
+a22271 1
+hi-tech.mail.ru##.mailru-visibility-check
 a22583 1
 lenta.ru##.avito
 d22702 2
@@ -92,6 +105,9 @@ rbc.ru#?#.js-index-central-column .js-index-doscroll:-abp-has([data-pixels-on-sh
 rbc.ru#?#.js-index-central-column .js-index-doscroll:-abp-has([href*="erid="])
 a22718 1
 rbc.ru##.simple-promo-card
+d22967 1
+a22967 1
+dzen.ru##div[class*="_widet-"] > div > div:not([class*="geoblock"]):not([class*="widget"])
 d25930 1
 a25930 1
 forum.ruboard.ru,izi-invest.ru,mmo13.ru,ruboard.website#@#div[id^="yandex_rtb"]

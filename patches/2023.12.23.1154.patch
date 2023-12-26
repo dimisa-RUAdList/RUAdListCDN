@@ -1,8 +1,8 @@
-diff name:ruadlist lines:57 checksum:d6ca2181d4
+diff name:ruadlist lines:79 checksum:166592d0aa
 d4 2
 a5 2
-! Last modified: Tue, 26 Dec 2023 07:17:41 +0000
-! Diff-Path: ../patches/2023.12.26.437.patch#ruadlist
+! Last modified: Tue, 26 Dec 2023 12:35:08 +0000
+! Diff-Path: ../patches/2023.12.26.755.patch#ruadlist
 a213 1
 ||ad2the.net^$third-party
 a2260 1
@@ -22,24 +22,43 @@ d14562 1
 a14562 1
 forum.ruboard.ru,ruboard.website#?##sidebar > li:-abp-has([id^="yandex_rtb_"])
 d15701 1
+a16275 1
+relook.ru##.fixed-bg
+a17407 1
+relook.ru##.pos-bg
 a18714 1
 zab.ru,zab.tv##.zab-news > article.zab-news__item ~ div:not(.zab-news__item)
 d19119 1
 a19119 1
 forum.ruboard.ru,ruboard.website##[vid_vpaut_pl]
 d19300 1
+d19578 1
+a19578 1
+asienda.ru,diets.ru,mycharm.ru,myjane.ru,povarenok.ru,relook.ru,stranamam.ru##a[href][style*="display: block"]
 a20115 1
 povarenok.ru##body > div[class]:empty
 d20118 1
 a20536 1
 meta.ua,xsport.ua##div[class^="bookmaker"]
+a21133 1
+pcnews.ru##div[style="text-align: center; margin: auto;"] > a[target="_blank"]
 d21804 2
+d21834 1
+a21834 1
+||pikabu.ru/ajax/?*_buf$xmlhttprequest,domain=pikabu.ru
+d21839 1
+a21839 1
+pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: [0-9]{3}px|min-height: calc.[03569]{2}[0-9]{1}|min-height: calc.+.em|min-height: .+.(cm|in|lh|mm|pc|pt|Q)/)
+a21848 1
+pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(min-height: 300px))
 d21875 1
 a21875 1
 inferno.games,mediagetguru.ru,rutor-game.info,torent-igruha.com,torrent-music.ru,torrent-soft.net,torrent-word.ru,torrentigo.net,torrentigruha.org,torrentsoft.net,where-game.ru##:not(this-site-promotes-malware)
 d21921 1
 a21921 1
 /point/?method=video_lin*&xl=$xmlhttprequest
+a22282 1
+hi-tech.mail.ru##.mailru-visibility-check
 a22594 1
 lenta.ru##.avito
 d22713 2
@@ -48,6 +67,9 @@ rbc.ru#?#.js-index-central-column .js-index-doscroll:-abp-has([data-pixels-on-sh
 rbc.ru#?#.js-index-central-column .js-index-doscroll:-abp-has([href*="erid="])
 a22729 1
 rbc.ru##.simple-promo-card
+d22978 1
+a22978 1
+dzen.ru##div[class*="_widet-"] > div > div:not([class*="geoblock"]):not([class*="widget"])
 d25941 1
 a25941 1
 forum.ruboard.ru,izi-invest.ru,mmo13.ru,ruboard.website#@#div[id^="yandex_rtb"]
