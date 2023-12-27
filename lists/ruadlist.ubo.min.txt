@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 27 Dec 2023 18:24:02 +0000
-! Diff-Path: ../patches/2023.12.27.1104.patch#ruadlist
+! Last modified: Wed, 27 Dec 2023 23:20:05 +0000
+! Diff-Path: ../patches/2023.12.27.1400.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -1846,7 +1846,6 @@
 ||erate.co.il^$third-party
 ||erbwebs.com^$third-party
 ||erileni.ru^$third-party
-||erling.online^$third-party
 ||ernozi.ru^$third-party
 ||ernser.org^$third-party
 ||ero.ru^$third-party,domain=~vpets.ru
@@ -13537,7 +13536,6 @@ lada.kz/uploads/banners/
 ||zzsites.ru^$script
 ! Rewrite rules
 !#if ext_abp
-||livejournal.com/video/check?recordId=$xmlhttprequest,rewrite=abp-resource:blank-text,domain=livejournal.com
 ||s-cdn.org/promo/*.mp4$rewrite=abp-resource:blank-mp4,domain=player-films.online
 ||s-club.tv/promo/*.mp4$rewrite=abp-resource:blank-mp4,domain=player-films.online
 ||ts.kg/olol*.mp4$rewrite=abp-resource:blank-mp4,domain=ts.kg
