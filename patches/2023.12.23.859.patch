@@ -1,8 +1,8 @@
-diff name:ruadlist lines:96 checksum:e120ecb951
+diff name:ruadlist lines:106 checksum:a619486813
 d4 2
 a5 2
-! Last modified: Wed, 27 Dec 2023 13:22:21 +0000
-! Diff-Path: ../patches/2023.12.27.802.patch#ruadlist
+! Last modified: Wed, 27 Dec 2023 18:24:02 +0000
+! Diff-Path: ../patches/2023.12.27.1104.patch#ruadlist
 a213 1
 ||ad2the.net^$third-party
 a2260 1
@@ -11,13 +11,19 @@ d2852 1
 d8844 1
 a8844 1
 me##body[onfocus*="reloadliveblock"] > #bugoverlay ~ table table[bgcolor="#dbdbdb"] td[bgcolor="#fafafa"]
+d10031 1
+d10067 1
 a10182 1
 ||elegantwoman.kyiv.ua^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.googletagmanager.com *.dev *.io *.net *.org *.ru *.ua
 a10211 1
 ||ruboard.website^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: *.google.com/recaptcha/ *.googletagmanager.com *.gstatic.com/recaptcha/ *.ruboard.ru *.sendpulse.com *.threadloom.com
+a10227 1
+||vkazivka.com^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.googletagmanager.com *.io *.net *.org *.ru *.ua
 a10529 2
 /js/_b.$script,domain=zab.ru|zab.tv
 /js/_y.$script,domain=zab.ru|zab.tv
+a10597 1
+/wp-content/plugins/my-popup/$domain=ogorodnik-sadovod.ru
 a10954 1
 ||ban.zab.ru/
 a13869 1
@@ -35,6 +41,8 @@ a17407 1
 relook.ru##.pos-bg
 a18255 1
 elegantwoman.kyiv.ua##.theiaStickySidebar > .widget_block
+a18580 1
+aeslib.ru##.widget_custom_html.FixedWidget__fixed_widget
 a18714 1
 zab.ru,zab.tv##.zab-news > article.zab-news__item ~ div:not(.zab-news__item)
 d19119 1
@@ -82,6 +90,8 @@ rbc.ru##.simple-promo-card
 d22978 1
 a22978 1
 dzen.ru##div[class*="_widet-"] > div > div:not([class*="geoblock"]):not([class*="widget"])
+a23353 1
+||aflt.*.ya.ru/widgets/$third-party
 d25941 1
 a25941 1
 forum.ruboard.ru,izi-invest.ru,mmo13.ru,ruboard.website#@#div[id^="yandex_rtb"]

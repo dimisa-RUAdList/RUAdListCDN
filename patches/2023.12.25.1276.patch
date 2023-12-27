@@ -1,10 +1,16 @@
-diff name:ruadlist lines:40 checksum:e120ecb951
+diff name:ruadlist lines:50 checksum:a619486813
 d4 2
 a5 2
-! Last modified: Wed, 27 Dec 2023 13:22:21 +0000
-! Diff-Path: ../patches/2023.12.27.802.patch#ruadlist
+! Last modified: Wed, 27 Dec 2023 18:24:02 +0000
+! Diff-Path: ../patches/2023.12.27.1104.patch#ruadlist
+d10032 1
+d10068 1
 a10183 1
 ||elegantwoman.kyiv.ua^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.googletagmanager.com *.dev *.io *.net *.org *.ru *.ua
+a10229 1
+||vkazivka.com^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.googletagmanager.com *.io *.net *.org *.ru *.ua
+a10601 1
+/wp-content/plugins/my-popup/$domain=ogorodnik-sadovod.ru
 a10958 1
 ||ban.zab.ru/
 a16279 1
@@ -13,6 +19,8 @@ a17411 1
 relook.ru##.pos-bg
 a18259 1
 elegantwoman.kyiv.ua##.theiaStickySidebar > .widget_block
+a18584 1
+aeslib.ru##.widget_custom_html.FixedWidget__fixed_widget
 d19582 1
 a19582 1
 asienda.ru,diets.ru,mycharm.ru,myjane.ru,povarenok.ru,relook.ru,stranamam.ru##a[href][style*="display: block"]
@@ -34,6 +42,8 @@ hi-tech.mail.ru##.mailru-visibility-check
 d22983 1
 a22983 1
 dzen.ru##div[class*="_widet-"] > div > div:not([class*="geoblock"]):not([class*="widget"])
+a23358 1
+||aflt.*.ya.ru/widgets/$third-party
 d26147 1
 a26147 1
 4pda.to##html[style]:not([style=""]) > body [class]:not([id]):not(div):not([style]) :not(div)[class][id]:style(min-height: 0 !important; height: unset !important)
