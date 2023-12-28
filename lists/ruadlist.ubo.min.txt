@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 28 Dec 2023 09:19:22 +0000
-! Diff-Path: ../patches/2023.12.28.559.patch#ruadlist
+! Last modified: Thu, 28 Dec 2023 14:20:46 +0000
+! Diff-Path: ../patches/2023.12.28.860.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10214,10 +10214,12 @@ agrarii-razom.com.ua##div[id^="user-to-register"]
 ||smartmama.com.ua^$csp=media-src 'none'
 ||smotret.tv^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data:
 ||statusklic.info^$csp=sandbox allow-same-origin;
+||sundries.ua^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.googletagmanager.com *.io *.net *.org *.ru *.ua
 ||syndication.exosrv.com^$csp=sandbox allow-same-origin;
 ||t1mcapp.com^$csp=script-src
 ||tabloid.pravda.com.ua^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.amazonaws.com *.cloudflare.com apis.google.com cse.google.com www.google.com *.google.com/complete/ *.googleapis.com *.googletagmanager.com *.instagram.com *.jquery.com *.keycaptcha.com *.twitter.com *.io *.net *.org *.ru *.ua
 ||tdsclicks2.ru^$csp=script-src
+||tenews.org.ua^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.cloudflare.com *.googletagmanager.com cse.google.com *.google.com/cse/ *.jquery.com *.sendpulse.com *.sharethis.com *.io *.net *.org *.ru *.ua
 ||tribun.com.ua^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: static.addtoany.com *.googletagmanager.com *.io *.net *.org *.ua
 ||uapress.kyiv.ua^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.googletagmanager.com *.instagram.com *.tiktok.com *.twitter.com *.dev *.io *.net *.org *.ru *.ua
 ||utarget.ru^$csp=sandbox allow-same-origin;
@@ -10601,7 +10603,7 @@ $xmlhttprequest,domain=happy-biock.info|happy-block.info|howto-news.info|mschist
 /wp-content/plugins/my-popup/$domain=ogorodnik-sadovod.ru
 /wp-content/plugins/wbounce/*$domain=glaza.guru
 /wp-content/uploads/*-dpi_news$image,domain=itechua.com|uamotors.com.ua
-/wp-content/uploads/*.mp4|$~third-party,domain=news24.in.ua|novosti24.kyiv.ua|uapress.kyiv.ua
+/wp-content/uploads/*.mp4|$~third-party,domain=news24.in.ua|novosti24.kyiv.ua|ua-novosti.info|uapress.kyiv.ua
 /wp-content/uploads/*/elitstroj*.$image,domain=vb.by
 /wp-content/uploads/*/kurery*.$image,domain=vb.by
 /wp-content/uploads/*/med.$image,domain=vb.by
@@ -12512,6 +12514,7 @@ lada.kz/uploads/banners/
 ||poufe.ru/promo/
 ||poultryukraine.com/data/image/banners/
 ||povarenok.ru/*bakers$image
+||povarenok.ru/css/*/media.$stylesheet
 ||povarenok.ru/css/*/sp$stylesheet
 ||povarenok.ru/css/*1.css$stylesheet
 ||povarenok.ru/css/*project$stylesheet
@@ -12559,6 +12562,7 @@ lada.kz/uploads/banners/
 ||projectbase.ru^$script
 ||prologic.su/b/
 ||prom.x-lime.net^
+||promin.cv.ua/uploads/banner
 ||promo.boomtime.lv/
 ||promo.livelib.ru/
 ||promodeejay.net/branding/
@@ -12818,6 +12822,7 @@ lada.kz/uploads/banners/
 ||sexgamesbox.com/images/
 ||sexoporno.su^*/sam-pro-
 ||sfera.fm/assets/media/bannery/
+||sfstatic.net/build/js/chunk~propclick-js-main-js
 ||shaiba.kz//images/bg/
 ||shaiba.kz/images/bg/
 ||shaiba.kz/images/imprt_imgs/
@@ -15840,7 +15845,6 @@ vsplanet.net##.c-left > .block ~ *
 play.tv3.lt,tv3play.skaties.lv##.c-player__wrapper > #freewheel
 dsnews.ua##.c-r
 tsn.ua#?#.c-section > .l-row > .l-col:-abp-has(> [data-ad-container])
-shuba.life##.c-section-slider--article
 5-tv.ru##.cFadeDark
 tomat-pomidor.com##.cPost + script + center
 sravni.ru##.calculator-branded-button
@@ -19092,6 +19096,7 @@ fakty.ua##[src*="/images/banners/"]
 allrefrs.ru##[src*="/imgr/"]
 gecid.com##[src*="/inc/getBanIf."]
 arenda.az##[src*="/public/banner/"]
+promin.cv.ua##[src*="/uploads/banner"]
 kuban24.tv##[src*="/uploads/banners/"]
 bidbaits.ru##[src*="/uploads/commerce/"]
 73online.ru##[src*="://73online.ru/advert/"]
@@ -19136,7 +19141,7 @@ btcsec.com##a > img[style*="height:100px;"]
 rin.ru##a > img[width="120"][height$="0"][src^="/images/"]
 ariom.ru##a > img[width="160"][height="120"]
 forzajuve.ru,omskregion.info##a > img[width="240"][height="400"]
-news24.in.ua,novosti24.kyiv.ua,uapress.kyiv.ua##a video
+news24.in.ua,novosti24.kyiv.ua,tenews.org.ua,ua-novosti.info,uapress.kyiv.ua##a video
 tort.fm##a#bg
 gorodrabot.ru##a.additional-earnings-banner-snippet:not([href*="gorodrabot.ru/"])
 gameinside.ua##a.banner
@@ -19915,7 +19920,6 @@ lu4ok.ws##a[rel="nofollow"][target="_blank"][href^="http://lu4ok.ws/go/?"]
 mebelminsk.by##a[rel="nofollow"][target="_new"][href^="/ref&url="]
 pcprogs.net##a[rel="nofollow,noindex"]
 culturemeter.od.ua##a[rel="noopener nofollow sponsored"]
-promin.cv.ua##a[rel="sponsored"]
 i2r.ru##a[style*="/banner."]
 nya.sh##a[style*="/imgs/a/"]
 gtorrent.club,gtorrent.ru##a[style*="color:"] > span
@@ -20148,6 +20152,8 @@ thailandproperty.tv##body > div[style*="1240px"]
 forum.raskraska.com##body > div[style*="2000"]
 raes.tech,sbfull.com,wigistream.to##body > div[style*="2147483647"]
 nagon.net##body > div[style*="cursor: pointer;"]
+povarenok.ru##body > div[style*="fixed"]
+povarenok.ru##body > div[style*="fixed"] + div
 pay-day.ru##body > div[style*="fixed"]:not([id]):not([class])
 ykt.ru##body > div[style*="height:"][style*="180px"]
 delfi.lt##body > div[style*="height:"][style*="z-index:"]
@@ -21569,6 +21575,7 @@ eanews.ru#?#section > section:-abp-has(> [class^="styled__AdvLink-sc-"])
 fontanka.ru#?#section article div:has(> div:first-child > [id^="adv_"])
 fontanka.ru#?#section article ~ div div:-abp-has(> div > [id^="adv_"])
 fontanka.ru#?#section article ~ div:-abp-has(> [id^="adv_"])
+shuba.life##section.c-post__full .overflow-hidden
 internet-technologies.ru##section[class*="related"]
 www.fontanka.ru##section[class] > div:not([class]) > div:first-child + div + div > div:first-child
 www.fontanka.ru##section[class] > div:not([class]) > div:first-child > div:first-child + div > noindex + div + div > div:first-child + div + div
@@ -21839,12 +21846,12 @@ rafkino.com##div[id^="MarketGid"]
 ! Pikabu (ловушка для обфускации)
 ||pikabu.ru/ajax/?*&*key=$xmlhttprequest,domain=pikabu.ru
 ||pikabu.ru/ajax/?*=*key=$xmlhttprequest,domain=pikabu.ru
-||pikabu.ru/ajax/?*_buf$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/ajax/?*_bf$xmlhttprequest,domain=pikabu.ru
 ||pikabu.ru/ajax/?*x*key=$xmlhttprequest,domain=pikabu.ru
 ! селекторы
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
-pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: [0-9]{3}px|min-height: calc.[03569]{2}[0-9]{1}|min-height: calc.+.em|min-height: .+.(cm|in|lh|mm|pc|pt|Q)/)
+pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: [0-9]{3}px|min-height: calc.[03569]{2}[0-9]{1}|min-height: calc.+.em|min-height: .+.(cm|em|in|lh|mm|pc|pt|Q)/)
 pikabu.ru##.sidebar-block_border[style*="transparent"]
 pikabu.ru##.sidebar__inner > .sidebar-block div[style=""]
 pikabu.ru##.sidebar__inner > .sidebar-block:not(.sidebar-block_border)
@@ -21853,6 +21860,7 @@ pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__main > div:firs
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__main > div:only-child)
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:-abp-contains(/[a-z]$|[a-z].{1,3}$|\s$|:$|:.{1,20}$/))
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:empty)
+pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(/min-height: 29.px/))
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(/min-height: calc.29.px/))
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(min-height: 300px))
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(min-height: calc(300px)))
@@ -22987,7 +22995,7 @@ yandex.by,yandex.kz,yandex.ru,yandex.uz##.stat_pixel_yes[onclick][class*="_layou
 yandex.by,yandex.kz,yandex.ru,yandex.uz##a[href*="//ads.adfox.ru/"]
 yandex.by,yandex.kz,yandex.ru,yandex.uz##body[class*="b-page_alt-widgets_yes"] .feed ._need-stub
 yandex.ru##div[class$="ear_js_inited"] > a[href^="//awaps.yandex.ru"]
-dzen.ru##div[class*="_widet-"] > div > div:not([class*="geoblock"]):not([class*="widget"])
+dzen.ru##div[class*="_widget-"] > div > div:not([class*="geoblock"]):not([class*="widget"])
 yandex.by,yandex.kz,yandex.ru,yandex.uz##img[src*="yandex.net/get-direct"]
 ||awaps.yandex.
 ||bs-meta.yandex.$script,xmlhttprequest
@@ -27693,13 +27701,9 @@ dzen.ru###ya-dist
 dzen.ru##.adv-ecom
 dzen.ru##.mg-advert__content:not(:first-child):style(margin-top: unset !important)
 dzen.ru##.mg-grid__col > div[style^="margin-top:"]:style(margin-top: unset !important)
-dzen.ru##.viewer-layout__content div[class*="content__player"] ~ div[class*="heme"]
-dzen.ru##[class*="ors"] div[id][class^="feed"] [class*="wrapper"][aria-label] ~ article:not([aria-label])
 dzen.ru##a[href*="://yandex.ru/an/count/"]
 dzen.ru##a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div
-dzen.ru##aside[id^="article_"][class*="gh"] > div[class]
 dzen.ru##body:style(overflow-y: unset !important)
-dzen.ru##div[aria-label="Кaрточка рекомендованного видео"] ~ [aria-label]:not([aria-label="Кaрточка рекомендованного видео"])
 dzen.ru##div[class*="PunchCardsOnVideoShowcase"] div[aria-label="Реклaмный блок"]
 dzen.ru##div[class*="PunchCardsOnVideoShowcase"] div[class^="grid__row"] > div[class*="heme"]
 dzen.ru##div[class*="article__"] > .undefined ~ div[class*="__mi"] > div[id][class]
@@ -27711,9 +27715,14 @@ dzen.ru##div[class^="dzen-desktop__link_bro-"]
 dzen.ru##div[class^="dzen-desktop__teaser-"]
 dzen.ru##div[class^="dzen-wrapper-with-top-content-desktop__topContent-"] div[class^="promo-"]
 dzen.ru##div[class^="dzen-wrapper-with-top-content-desktop__topContent-"]:style(grid-template-columns: inherit !important)
-dzen.ru##div[class^="feed__r"] article > div:first-child + div + div
 dzen.ru##div[id][class$="__ad"]
-dzen.ru##div[id][class^="feed"] article[class*="_with-border "]
+! обфускация
+dzen.ru##.article-recommender__feed-container article > div + div
+dzen.ru##.viewer-layout__content div[class*="-player "][aria-label] ~ div[class*="heme"]
+dzen.ru##[class*="or_"] div[id][class^="feed"] [class*="wrapper"][aria-label] ~ article:not([aria-label])
+dzen.ru##aside[id^="article_"][class*="ht"] > div[class]
+dzen.ru##div[aria-label="Карточка рекомендованного видео"] ~ [aria-label]:not([aria-label="Карточка рекомендованного видео"])
+dzen.ru##div[class^="feed__"] > article > div:first-child + div + div
 ! ---
 ! игры
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.app__wrapper div[style^="width: calc(100% "]:style(width: unset !important)
@@ -27987,7 +27996,6 @@ bez-smenki.ru##+js(abort-current-inline-script, $, showPopupextra)
 freescreens.ru,imgbase.ru,imgcach.ru,imgclick.ru,payforpic.ru,picclick.ru,picclock.ru,picforall.ru##+js(abort-current-inline-script, JSON.parse)
 fenglish.site,mp3spy.cc##+js(abort-current-inline-script, JSON.parse, atob)
 electric-house.ru,euro-football.ru,forums.rusmedserv.com,liveresult.ru,smolensk-auto.ru,smolensk-auto.site,stroi-help.ru##+js(abort-current-inline-script, Math.floor, adregain_wall)
-tenews.org.ua##+js(abort-current-inline-script, Math.random)
 agroreview.com##+js(abort-current-inline-script, Object.defineProperty, rcBuf)
 dc-marvel.org,gidonline.eu##+js(abort-current-inline-script, String.fromCharCode, var _0x)
 filmisub.com,kinofen.net##+js(abort-current-inline-script, XMLHttpRequest, document.querySelectorAll)
