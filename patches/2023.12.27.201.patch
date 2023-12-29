@@ -1,8 +1,8 @@
-diff name:ruadlist lines:77 checksum:9539c3a533
+diff name:ruadlist lines:78 checksum:df76517824
 d4 2
 a5 2
-! Last modified: Fri, 29 Dec 2023 10:24:17 +0000
-! Diff-Path: ../patches/2023.12.29.624.patch#ruadlist
+! Last modified: Fri, 29 Dec 2023 15:19:39 +0000
+! Diff-Path: ../patches/2023.12.29.919.patch#ruadlist
 d1849 1
 d10032 1
 d10068 1
@@ -38,14 +38,15 @@ povarenok.ru##body > div[style*="fixed"]
 povarenok.ru##body > div[style*="fixed"] + div
 a21572 1
 shuba.life##section.c-post__full .overflow-hidden
-d21843 1
-a21843 1
-||pikabu.ru/ajax/?*_bf$xmlhttprequest,domain=pikabu.ru
+a21841 1
+||pikabu.ru/ajax/?*&__$xmlhttprequest,domain=pikabu.ru
+d21843 2
 d21848 1
 a21848 1
-pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: [0-9]{3}px|min-height: calc.[03569]{2}[0-9]{1}|min-height: calc.+.em|min-height: .+.(cm|em|in|lh|mm|pc|pt|Q)/)
+pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: [0-9]{3}px|min-height: calc.[03569]{2}[0-9]{1}|min-height: calc.+.em|min-height: .+.(cm|em|ex|in|lh|mm|pc|pt|Q)/)
 a21856 1
-pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(/min-height: 29.px/))
+pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(/min-height: 29.px|min-height: 30.px/))
+d21858 1
 d21885 1
 a21885 1
 inferno.games,mediagetguru.ru,rutor-game.info,rutorgame.info,torent-igruha.com,torrent-music.ru,torrent-soft.net,torrent-word.ru,torrentigo.net,torrentigruha.org,torrentsoft.net,where-game.ru##:not(this-site-promotes-malware)
