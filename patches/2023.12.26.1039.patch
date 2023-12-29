@@ -1,8 +1,8 @@
-diff name:ruadlist lines:66 checksum:7025d2df68
+diff name:ruadlist lines:77 checksum:9539c3a533
 d4 2
 a5 2
-! Last modified: Fri, 29 Dec 2023 05:21:37 +0000
-! Diff-Path: ../patches/2023.12.29.321.patch#ruadlist
+! Last modified: Fri, 29 Dec 2023 10:24:17 +0000
+! Diff-Path: ../patches/2023.12.29.624.patch#ruadlist
 d1849 1
 d10032 1
 d10068 1
@@ -46,9 +46,16 @@ a21848 1
 pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: [0-9]{3}px|min-height: calc.[03569]{2}[0-9]{1}|min-height: calc.+.em|min-height: .+.(cm|em|in|lh|mm|pc|pt|Q)/)
 a21856 1
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(/min-height: 29.px/))
+d21885 1
+a21885 1
+inferno.games,mediagetguru.ru,rutor-game.info,rutorgame.info,torent-igruha.com,torrent-music.ru,torrent-soft.net,torrent-word.ru,torrentigo.net,torrentigruha.org,torrentsoft.net,where-game.ru##:not(this-site-promotes-malware)
+d22617 1
+a22709 1
+autorambler.ru,rambler.ru#?##root div[class]:-abp-has(> div[class] > div[id^="adfox-"]:only-child)
+d22711 1
 d22991 1
 a22991 1
-dzen.ru##div[class*="_widget-"] > div > div:not([class*="geoblock"]):not([class*="widget"])
+dzen.ru##div[class*="-widget_"][class*=" "] > div > div:not([class*="geoblock"]):not([class*="widget"])
 a23366 1
 ||aflt.*.ya.ru/widgets/$third-party
 d27696 2
@@ -64,4 +71,8 @@ dzen.ru##[class*="or_"] div[id][class^="feed"] [class*="wrapper"][aria-label] ~ 
 dzen.ru##aside[id^="article_"][class*="ht"] > div[class]
 dzen.ru##div[aria-label="Карточка рекомендованного видео"] ~ [aria-label]:not([aria-label="Карточка рекомендованного видео"])
 dzen.ru##div[class^="feed__"] > article > div:first-child + div + div
+d27730 2
+a27731 2
+ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##div[class*="Images"] div[class*="_filled"][style^="max-width:"]
+ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##div[id*="Images"] div[class*="_filled"][style^="max-width:"]
 d27990 1
