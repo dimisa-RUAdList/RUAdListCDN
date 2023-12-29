@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 29 Dec 2023 15:19:39 +0000
-! Diff-Path: ../patches/2023.12.29.919.patch#ruadlist
+! Last modified: Fri, 29 Dec 2023 20:20:04 +0000
+! Diff-Path: ../patches/2023.12.29.1220.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10495,7 +10495,7 @@ $xmlhttprequest,domain=happy-biock.info|happy-block.info|howto-news.info|mschist
 /data*?bid=$domain=ebooks.skin
 /default/vbanners/$domain=noi.md
 /do/*$domain=myzuka.club
-/ebllbe/*$image,domain=lostfilm.pro|lostfilm.today|lostfilm.tv|lostfilm.tw|lostfilm.uno|lostfilm.win|lostfilmtv.site|lostfilmtv.uno|lostfilmtv1.site|lostfilmtv2.site|lostfilmtv3.site|lostfilmtv4.site|lostfilmtv5.site
+/ebllbe/*$image,domain=lostfilm.download|lostfilm.pro|lostfilm.today|lostfilm.tv|lostfilm.tw|lostfilm.uno|lostfilm.win|lostfilmtv.site|lostfilmtv.uno|lostfilmtv1.site|lostfilmtv2.site|lostfilmtv3.site|lostfilmtv4.site|lostfilmtv5.site
 /exchange$domain=koob.ru
 /files/rk/*$domain=gorvesti.ru|xn--b1ats.xn--80asehdb
 /forum/image.php?link=https://3cdn.ru$domain=nnm-club.lib|nnm-club.me|nnmclub.ro|nnmclub.to
@@ -12059,6 +12059,7 @@ lada.kz/uploads/banners/
 ||meteo.by/banner_
 ||meteobar.com/ukraine/*/get_kurs_news/
 ||meteocenter.net/weather/templates/fosn.$image
+||mezha.media/wp-content/uploads/*_w__mezha_ua$image
 ||mgorod.kz/wp-content/*/js/slick/
 ||mibius.com.ua/banner
 ||michurinsk.ru/bn/show/$script
@@ -14473,7 +14474,7 @@ lion-tv.org#?##rightside > div:-abp-contains(На правах рекламы)
 lion-tv.org###rightside > div[style^="background:"]
 oskazkax.ru###rightside noindex
 cwer.me,cwer.ru,cwer.su,cwer.ws###rightsidebar
-lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site###rightt-pane iframe
+lostfilm.download,lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site###rightt-pane iframe
 k1news.ru###rigthBlokBaners
 softbox.tv###rk-content
 blackhole.beeline.ru###root
@@ -17223,7 +17224,7 @@ cardiologiya.com,omastopatii.ru##.offblo
 dermatitanet.ru##.offer-ac
 gagadget.com##.offers-index
 agro-biz.ru,ecology-of.ru##.offersblock
-lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##.oi_papa_oi
+lostfilm.download,lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##.oi_papa_oi
 trueua.info##.okadv__block
 trueua.info##.okadvertisement
 avtovzglyad.ru##.okey-24
@@ -19112,7 +19113,7 @@ clubsandero.ru##[src="//an.yandex.ru/system/context.js"] ~ iframe
 rutor.org.ru##[src="/download32.png"]
 linux.org.ru##[src^="/adv/"]
 news.soundex.ru##[src^="http://news.soundex.ru/images/banners/"]
-lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##[src^="https://static.lostfilm.top/temp/wow_"]
+lostfilm.download,lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##[src^="https://static.lostfilm.top/temp/wow_"]
 yarportal.ru##[style$="height: 60px;"]
 utorrentfilmi.fun,utorrentfilmi.ru,utorrentmusic.ru##[style*="display"][style*="block"][style*="!important"]
 newsomsk.ru#?#[style*="font"]:-abp-contains(Новости партнеров)
@@ -20095,7 +20096,7 @@ riotpixels.com##body > [class^="side-url-"]
 browserss.ru##body > [id$="_master_footer"] ~ [id$="_master_footer"] > div[id$="_master_footer_Container"] > div[id^="Layer"]
 edufuture.biz,popgun.ru,trupornolabs.org,xvatit.com,xxxadulttorrent.org##body > [onclick]
 naruto-base.tv##body > [target="_blank"]
-budport.com.ua,lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site,mylenium.ru##body > a
+budport.com.ua,lostfilm.download,lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site,mylenium.ru##body > a
 crazyatomicgames.com,kinoafisha.ua,root-nation.com,sportmaps.ru,topvideo.tj,torrentinka.me,trupornolabs.org,udaff.com,xxx-igra.com,xxxadulttorrent.org,yaldagames.com##body > a[href]
 101.ru,101kofemashina.ru,1in.am,alau.kz,alexua.tv,animejapan.tv,animeonline.cc,bit.ua,bugaga.ru,c-inform.info,comments.ua,csgamer.ru,ctv7.ru,cvnews.cv.ua,dead-serial.com,e-libra.ru,fashiony.ru,fclmnews.ru,forpost.lviv.ua,freehat.cc,game2day.ru,gameinside.ua,ggscore.com,gorod.dp.ua,grimm-online.org,gta.com.ua,horrorzone.ru,ifnews.org.ua,igrovaya.org,igry-online.net,itechua.com,izbezhat-nakazania.com,jetsetter.ua,jut.su,kievvlast.com.ua,ko.com.ua,kosti-tv.com,kushvsporte.ru,likeni.ru,lovesun.by,lvnews.org.ua,mac-torrent-download.net,madjong-besplatno.ru,mirf.ru,moldfootball.com,mybrazz.club,nashkiev.ua,ne-kurim.ru,pesikot.org,pimpletv.ru,playua.net,post-tracker.ru,povarenok.ru,prodota.ru,prosports.kg,prosports.kz,prosportua.com,relook.ru,rvnews.rv.ua,saratovnews.ru,segodnya.ua,sopsport.org,spletnica-tv.com,sportarena.com,strela-online.com,teenwolf-tv.com,tenews.org.ua,tg.telepult.pro,theflash-tv.com,topfile.tj,traktorist.ua,uanews.org.ua,udargol.com,upl.ua,vsetors.org,vskazke-tv.com,zab.ru,zorgee.ru##body > a[href][target="_blank"]
 yap.ru,yaplakal.com##body > a[id^="clk-"]
@@ -21338,7 +21339,7 @@ nevasport.ru##iframe[src^="/exchange/"]
 jofo.ru##iframe[src^="http://creatagen.ru/"]
 smotretonline.ucoz.org##iframe[src^="http://kinohouse.ucoz.ru"]
 www.mp4upload.com##iframe[src^="https://www.mp4upload.com/"][src$=".html"]
-lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##iframe[style*="240px"]
+lostfilm.download,lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##iframe[style*="240px"]
 forum.watch.ru##iframe[style="width: 100%; height: 60px;"]
 forum.watch.ru##iframe[style="width:100%; height:110px;"]
 torrnado.ru##img.Text[src^="/images/"]
@@ -27035,14 +27036,14 @@ livesport.ws##body:style(padding-top: 0 !important)
 ! ---
 lostfilm.info###neheraplper_9000 > a[href] > span
 lostfilm.info##.footer-logo:style(filter: invert(0.8) !important)
-lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##.footer:style(background: #1c1e1f !important; color: #fff !important)
-lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##.gallery_img_preload:style(position: absolute !important; display: block !important; opacity: 0 !important; margin-top: 155px !important; margin-left: 20px !important; width: calc(100% - 40%);)
-lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##.lstfml .footer .links a:style(color: #fff !important)
-lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##body > * > div[style^="padding-top"]
-lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##body > a[onclick]
-lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##body > div:not([id]):not([class]):not([style])
-lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##body > span:nth-child(-n+6)
-lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##body:style(background-image: none !important; background-color: #1c1e1f !important)
+lostfilm.download,lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##.footer:style(background: #1c1e1f !important; color: #fff !important)
+lostfilm.download,lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##.gallery_img_preload:style(position: absolute !important; display: block !important; opacity: 0 !important; margin-top: 155px !important; margin-left: 20px !important; width: calc(100% - 40%);)
+lostfilm.download,lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##.lstfml .footer .links a:style(color: #fff !important)
+lostfilm.download,lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##body > * > div[style^="padding-top"]
+lostfilm.download,lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##body > a[onclick]
+lostfilm.download,lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##body > div:not([id]):not([class]):not([style])
+lostfilm.download,lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##body > span:nth-child(-n+6)
+lostfilm.download,lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##body:style(background-image: none !important; background-color: #1c1e1f !important)
 lostfilm.info##img[src="/vision/footer-logo.png"]:style(filter: invert(0.8) !important)
 ! ---
 lrepacks.net##[href*="poluchenie-premium-dostupa.html"] > b > .fa-spin:style(animation: none !important)
@@ -27316,6 +27317,9 @@ autorambler.ru,rambler.ru##div[style^="order:"][style*="-1"] > div > div:style(m
 nova.rambler.ru##html > body:not(#id):style(overflow: unset !important)
 ! исправление ошибок и косяков оригинальной вёрстки
 www.rambler.ru##footer:style(max-width: 100% !important)
+! ---
+rayon.in.ua##body.lock #subscribes
+rayon.in.ua##body.lock:style(overflow: auto !important; padding-right: 0 !important)
 ! ---
 rbkgames.com##.branding .main-content:style(margin-top: 90px !important)
 rbkgames.com##.poster-grid-item > a[target="_blank"]:first-child:style(pointer-events: none !important)
@@ -28241,7 +28245,7 @@ lenta.ru##+js(remove-attr, class, .js-video-box__container)
 svoboda.org##+js(remove-attr, data-autoplay, video)
 dtf.ru,vc.ru##+js(remove-attr, data-video-play-mode)
 myshared.ru##+js(remove-attr, disabled, .uk-modal-footer > button)
-lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##+js(remove-attr, oncontextmenu, [class], stay)
+lostfilm.download,lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##+js(remove-attr, oncontextmenu, [class], stay)
 stalker-mods.clan.su,stalker-mods.su##+js(remove-attr, oncontextmenu|oncopy|onselectstart)
 www.rambler.ru##+js(remove-attr, target, a[href*="#rcmrclid"], stay)
 mag.relax.by##+js(remove-class, b-global-branding, html)
@@ -28342,7 +28346,7 @@ inoreader.com##.ad_title:style(display: block !important; position: fixed !impor
 inoreader.com##.adsbygoogle:style(display: block !important)
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.app__wrapper div[style^="width: calc(100% "]:remove-attr(style)
 footboom.com,footboom.kz##.b-article-content > h2:has-text(букмекер)
-lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##.body > .body:style(user-select: text !important; -moz-user-select: text !important; -webkit-user-select: text !important)
+lostfilm.download,lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##.body > .body:style(user-select: text !important; -moz-user-select: text !important; -webkit-user-select: text !important)
 online-fix.me##.content > .errors
 smotrim.ru##.dialog-wrapper
 reshu.by,reshuent.kz,reshuolymp.ru,sdamgia.ru##.googlead.pub_300x250.pub_300x250m.pub_728x90.text-ad.textAd.text_ad.text_ads.text-ads.text-ad-links:style(display: block !important)

@@ -1,31 +1,51 @@
-diff name:ruadlist lines:66 checksum:df76517824
+diff name:ruadlist lines:106 checksum:d84cdde246
 d4 2
 a5 2
-! Last modified: Fri, 29 Dec 2023 15:19:39 +0000
-! Diff-Path: ../patches/2023.12.29.919.patch#ruadlist
+! Last modified: Fri, 29 Dec 2023 20:20:04 +0000
+! Diff-Path: ../patches/2023.12.29.1220.patch#ruadlist
 a10216 1
 ||sundries.ua^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.googletagmanager.com *.io *.net *.org *.ru *.ua
 a10220 1
 ||tenews.org.ua^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.cloudflare.com *.googletagmanager.com cse.google.com *.google.com/cse/ *.jquery.com *.sendpulse.com *.sharethis.com *.io *.net *.org *.ru *.ua
+d10496 1
+a10496 1
+/ebllbe/*$image,domain=lostfilm.download|lostfilm.pro|lostfilm.today|lostfilm.tv|lostfilm.tw|lostfilm.uno|lostfilm.win|lostfilmtv.site|lostfilmtv.uno|lostfilmtv1.site|lostfilmtv2.site|lostfilmtv3.site|lostfilmtv4.site|lostfilmtv5.site
 d10604 1
 a10604 1
 /wp-content/uploads/*.mp4|$~third-party,domain=news24.in.ua|novosti24.kyiv.ua|ua-novosti.info|uapress.kyiv.ua
+a12059 1
+||mezha.media/wp-content/uploads/*_w__mezha_ua$image
 a12514 1
 ||povarenok.ru/css/*/media.$stylesheet
 a12561 1
 ||promin.cv.ua/uploads/banner
 a12820 1
 ||sfstatic.net/build/js/chunk~propclick-js-main-js
+d14471 1
+a14471 1
+lostfilm.download,lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site###rightt-pane iframe
 d15843 1
+d17222 1
+a17222 1
+lostfilm.download,lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##.oi_papa_oi
 a19094 1
 promin.cv.ua##[src*="/uploads/banner"]
+d19110 1
+a19110 1
+lostfilm.download,lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##[src^="https://static.lostfilm.top/temp/wow_"]
 d19139 1
 a19139 1
 news24.in.ua,novosti24.kyiv.ua,tenews.org.ua,ua-novosti.info,uapress.kyiv.ua##a video
 d19918 1
+d20094 1
+a20094 1
+budport.com.ua,lostfilm.download,lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site,mylenium.ru##body > a
 a20150 2
 povarenok.ru##body > div[style*="fixed"]
 povarenok.ru##body > div[style*="fixed"] + div
+d21335 1
+a21335 1
+lostfilm.download,lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##iframe[style*="240px"]
 a21571 1
 shuba.life##section.c-post__full .overflow-hidden
 a21840 1
@@ -47,6 +67,20 @@ d22710 1
 d22990 1
 a22990 1
 dzen.ru##div[class*="-widget_"][class*=" "] > div > div:not([class*="geoblock"]):not([class*="widget"])
+d27033 8
+a27040 8
+lostfilm.download,lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##.footer:style(background: #1c1e1f !important; color: #fff !important)
+lostfilm.download,lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##.gallery_img_preload:style(position: absolute !important; display: block !important; opacity: 0 !important; margin-top: 155px !important; margin-left: 20px !important; width: calc(100% - 40%);)
+lostfilm.download,lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##.lstfml .footer .links a:style(color: #fff !important)
+lostfilm.download,lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##body > * > div[style^="padding-top"]
+lostfilm.download,lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##body > a[onclick]
+lostfilm.download,lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##body > div:not([id]):not([class]):not([style])
+lostfilm.download,lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##body > span:nth-child(-n+6)
+lostfilm.download,lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##body:style(background-image: none !important; background-color: #1c1e1f !important)
+a27314 3
+rayon.in.ua##body.lock #subscribes
+rayon.in.ua##body.lock:style(overflow: auto !important; padding-right: 0 !important)
+! ---
 d27696 2
 d27700 1
 d27702 1
@@ -65,3 +99,9 @@ a27731 2
 ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##div[class*="Images"] div[class*="_filled"][style^="max-width:"]
 ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##div[id*="Images"] div[class*="_filled"][style^="max-width:"]
 d27990 1
+d28239 1
+a28239 1
+lostfilm.download,lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##+js(remove-attr, oncontextmenu, [class], stay)
+d28340 1
+a28340 1
+lostfilm.download,lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##.body > .body:style(user-select: text !important; -moz-user-select: text !important; -webkit-user-select: text !important)
