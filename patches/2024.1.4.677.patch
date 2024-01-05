@@ -1,8 +1,8 @@
-diff name:ruadlist lines:18 checksum:ef7ade2f6c
+diff name:ruadlist lines:24 checksum:b84958440f
 d4 2
 a5 2
-! Last modified: Fri, 05 Jan 2024 12:36:25 +0000
-! Diff-Path: ../patches/2024.1.5.756.patch#ruadlist
+! Last modified: Fri, 05 Jan 2024 17:22:21 +0000
+! Diff-Path: ../patches/2024.1.5.1042.patch#ruadlist
 a13741 1
 zaholovok.com.ua###block-reklamappidzagolovokdnya
 a15017 1
@@ -15,5 +15,11 @@ atlasprirodirossii.ru,hyperione.com,sho.org.ua,zazloo.ru##.widget_block
 d18601 1
 a18601 1
 autogeek.com.ua,expert.com.ua,gk-press.if.ua,inform.zp.ua,kulemet.com,mezha.media,pclegko.ru,politarena.online,sn.by,volyninfa.com.ua##.widget_media_image
+a20372 1
+lifehacker.ru##div[class*="footer-widgets__container"] > [data-key^="custom_html-"]
 a26025 1
 kodik.info##.second-message
+a28145 1
+1progs.com##+js(addEventListener-defuser, DOMContentLoaded, landingUrl)
+a28166 1
+lifehacker.ru##+js(href-sanitizer, a[href][rel*="sponsored"][target="_blank"], ?goto)

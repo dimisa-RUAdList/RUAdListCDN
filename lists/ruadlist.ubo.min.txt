@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 05 Jan 2024 12:36:25 +0000
-! Diff-Path: ../patches/2024.1.5.756.patch#ruadlist
+! Last modified: Fri, 05 Jan 2024 17:22:21 +0000
+! Diff-Path: ../patches/2024.1.5.1042.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -20373,6 +20373,7 @@ sveikata.lrytas.lt##div[class*="criteo"]
 fireman.club##div[class*="desktop_direct"]
 www.zoneofgames.ru##div[class*="dver"]
 superjob.ru##div[class*="f-test-vacancy-ad-context-"]
+lifehacker.ru##div[class*="footer-widgets__container"] > [data-key^="custom_html-"]
 tm.ati.su,trucks.ati.su#?#div[class*="grid-user-data"]:-abp-has(> [class*="user-data-grid"] > :empty)
 prnt.sc##div[class*="grundik"]
 stratege.ru##div[class*="info"] > div[class$="_title"]
@@ -28147,6 +28148,7 @@ autonews.co.ua,liveball.cc,liveball.uno##+js(addEventListener-defuser, /contextm
 sibnet.ru##+js(addEventListener-defuser, DOMContentLoaded, /smartweek/)
 sports.ru##+js(addEventListener-defuser, DOMContentLoaded, 0x)
 cq.ru##+js(addEventListener-defuser, DOMContentLoaded, banners)
+1progs.com##+js(addEventListener-defuser, DOMContentLoaded, landingUrl)
 softonic.ru##+js(addEventListener-defuser, click, [native code])
 ~player.smotrim.ru,smotrim.ru##+js(addEventListener-defuser, click, matches)
 ~id.rambler.ru,~mail.rambler.ru,rambler.ru,~vp.rambler.ru##+js(addEventListener-defuser, copy, extra)
@@ -28168,6 +28170,7 @@ www.e1.ru##+js(cookie-remover, jtnews_a_template)
 kakprosto.ru##+js(cookie-remover, yadb)
 vk.com,vk.ru##+js(href-sanitizer, a[href*="/away.php?"], ?to)
 game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(href-sanitizer, a[href*="/go.php"], ?url)
+lifehacker.ru##+js(href-sanitizer, a[href][rel*="sponsored"][target="_blank"], ?goto)
 www.ixbt.com##+js(href-sanitizer, a[href^="//www.ixbt.com/click/?c="], [title])
 vz.ru##+js(href-sanitizer, a[href^="/redir/"], ?exturl)
 vz.ru##+js(href-sanitizer, a[href^="/redir/"], ?vzurl)
