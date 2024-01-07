@@ -1,14 +1,21 @@
-diff name:ruadlist lines:70 checksum:965e59f10e
+diff name:ruadlist lines:80 checksum:1a1087c21c
 d4 2
 a5 2
-! Last modified: Sun, 07 Jan 2024 04:23:58 +0000
-! Diff-Path: ../patches/2024.1.7.263.patch#ruadlist
+! Last modified: Sun, 07 Jan 2024 09:18:21 +0000
+! Diff-Path: ../patches/2024.1.7.558.patch#ruadlist
+a9901 1
+peers.tv###prompt-form-container-phone
 d10496 1
 a10496 1
 /ebllbe/*$image,domain=lostfilm.download|lostfilm.life|lostfilm.pro|lostfilm.space|lostfilm.today|lostfilm.tv|lostfilm.tw|lostfilm.uno|lostfilm.win|lostfilmtv.site|lostfilmtv.uno|lostfilmtv1.site|lostfilmtv2.site|lostfilmtv3.site|lostfilmtv4.site|lostfilmtv5.site
 d10579 1
 a10579 1
 /temp/*.mp4$media,domain=lostfilm.download|lostfilm.life|lostfilm.pro|lostfilm.space|lostfilm.today|lostfilm.tv|lostfilm.tw|lostfilm.uno|lostfilm.win|lostfilmtv.site|lostfilmtv.uno|lostfilmtv1.site|lostfilmtv2.site|lostfilmtv3.site|lostfilmtv4.site|lostfilmtv5.site
+d12887 2
+d12891 4
+a12894 2
+||softportal.com/js/dnld_cntr.js
+||softportal.com/js/freedload.js
 a13741 1
 zaholovok.com.ua###block-reklamappidzagolovokdnya
 d14663 1
@@ -69,3 +76,6 @@ a28144 1
 1progs.com##+js(addEventListener-defuser, DOMContentLoaded, landingUrl)
 a28165 1
 lifehacker.ru##+js(href-sanitizer, a[href][rel*="sponsored"][target="_blank"], ?goto)
+d28258 1
+a28258 1
+peers.tv##+js(set-constant, ADV_DISABLED, true)

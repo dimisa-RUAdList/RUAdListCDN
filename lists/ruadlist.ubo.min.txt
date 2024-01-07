@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 07 Jan 2024 04:23:58 +0000
-! Diff-Path: ../patches/2024.1.7.263.patch#ruadlist
+! Last modified: Sun, 07 Jan 2024 09:18:21 +0000
+! Diff-Path: ../patches/2024.1.7.558.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -9899,6 +9899,7 @@ advis.ru###popup3
 cluber.com.ua,dictat.net,fithacker.ru,megatest.online,storyfox.ru###popup_bg
 muz-tv.ru###popup_overlay
 funnymir.net,intersnoznat.ru###popupwindow
+peers.tv###prompt-form-container-phone
 bilshe.com,businessua.com,multikino.com###reachMedia
 kote.ws###register_popup
 maam.ru###registr
@@ -12884,14 +12885,10 @@ lada.kz/uploads/banners/
 ||soft4xp.ru/rss_news.php
 ||softoroom.net/2pclick/
 ||softportal.com/*.html|$xmlhttprequest,domain=softportal.com
-||softportal.com/*.htm|$xmlhttprequest,domain=softportal.com
-||softportal.com/*.xyz$xmlhttprequest,domain=softportal.com
 ||softportal.com/img/qwer.
 ||softportal.com/img/tlmn.
-||softportal.com/js/download_counter.js
-||softportal.com/js/module.download_popup.js
-||softportal.com/kats_super.
-||softportal.com/ne_lez_ybet.png
+||softportal.com/js/dnld_cntr.js
+||softportal.com/js/freedload.js
 ||softslot.com/image/source/banners/
 ||softslot.com/partners/
 ||solnechnogorsk.net/forum/vsa_banners/
@@ -28262,7 +28259,7 @@ sdamgia.ru##+js(set-attr, .Root:not(.sgia-main-content) main > div:first-child:e
 eneyida.tv##+js(set-attr, .owl-item > a > img, src, [data-src])
 dtf.ru,vc.ru##+js(set-attr, a[href$="?ref=recommended"], target, '')
 reshu.by##+js(set-attr, main > div:first-child:empty, class, false)
-peers.tv##+js(set-constant, ADV_BLOCKED, false)
+peers.tv##+js(set-constant, ADV_DISABLED, true)
 www.ukr.net##+js(set-constant, Clicks._test_meta_referer, null)
 animelend.info##+js(set-constant, JSON.parse, noopFunc)
 ivi.ru##+js(set-constant, Object.prototype.AdvObject, noopFunc)
