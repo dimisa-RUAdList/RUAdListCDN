@@ -1,8 +1,8 @@
-diff name:ruadlist lines:101 checksum:52ffa35a1b
+diff name:ruadlist lines:100 checksum:8d60e5919d
 d4 2
 a5 2
-! Last modified: Mon, 08 Jan 2024 15:21:17 +0000
-! Diff-Path: ../patches/2024.1.8.921.patch#ruadlist
+! Last modified: Mon, 08 Jan 2024 20:21:30 +0000
+! Diff-Path: ../patches/2024.1.8.1221.patch#ruadlist
 a2080 1
 ||fnasmpygwa.com^$third-party
 a4251 1
@@ -93,10 +93,9 @@ a25765 1
 @@/linkadv.js|$script,~third-party,domain=game4you.top|games-pc.top|innal.top|naylo.top|rustorka.com|rustorka.net|rustorka.top|rustorkacom.lib
 a28147 1
 1progs.com##+js(addEventListener-defuser, DOMContentLoaded, landingUrl)
-a28168 1
+a28168 2
+softoroom.org##+js(href-sanitizer, a[href*="/go.php?go="], ?go)
 lifehacker.ru##+js(href-sanitizer, a[href][rel*="sponsored"][target="_blank"], ?goto)
-a28172 1
-softoroom.org##+js(href-sanitizer, a[href^="https://softoroom.org/go.php"], ?go)
 d28261 1
 a28261 1
 peers.tv##+js(set-constant, ADV_DISABLED, true)

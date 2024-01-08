@@ -1,8 +1,8 @@
-diff name:ruadlist lines:65 checksum:52ffa35a1b
+diff name:ruadlist lines:65 checksum:8d60e5919d
 d4 2
 a5 2
-! Last modified: Mon, 08 Jan 2024 15:21:17 +0000
-! Diff-Path: ../patches/2024.1.8.921.patch#ruadlist
+! Last modified: Mon, 08 Jan 2024 20:21:30 +0000
+! Diff-Path: ../patches/2024.1.8.1221.patch#ruadlist
 a2080 1
 ||fnasmpygwa.com^$third-party
 a4251 1
@@ -62,5 +62,5 @@ mignews.com#?#h6:-abp-contains(/новости партнеров|знакомс
 d21330 1
 a24264 1
 ||push-sender.com^$third-party
-a28173 1
-softoroom.org##+js(href-sanitizer, a[href^="https://softoroom.org/go.php"], ?go)
+a28168 1
+softoroom.org##+js(href-sanitizer, a[href*="/go.php?go="], ?go)
