@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 09 Jan 2024 16:27:27 +0000
-! Diff-Path: ../patches/2024.1.9.987.patch#ruadlist
+! Last modified: Tue, 09 Jan 2024 21:17:59 +0000
+! Diff-Path: ../patches/2024.1.9.1277.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21899,7 +21899,7 @@ pikabu.ru##div[style^="width: 300px; height:"]
 fontanka.ru#?#section div:-abp-properties(content: "Реклама")
 !#endif
 ! Блокировка ресурсов, намеренно продвигающих вредоносное ПО и фейки
-inferno.games,mediagetguru.ru,rutor-game.info,rutorgame.info,torent-igruha.com,torrent-music.ru,torrent-soft.net,torrent-word.ru,torrentigo.net,torrentigruha.org,torrentsoft.net,where-game.ru##:not(this-site-promotes-malware)
+inferno.games,mediagetguru.ru,rutor-game.info,rutorgame.info,rutorgames.ru,torent-igruha.com,torrent-music.ru,torrent-soft.net,torrent-word.ru,torrentigo.net,torrentigruha.org,torrentsoft.net,where-game.ru##:not(this-site-promotes-malware)
 ! Намеренное продвижение фейков и мошенников
 ||tele.ru^$xmlhttprequest,domain=tele.ru
 ! Плеер venom, в основном для ua-юзеров, примеры >
@@ -26827,10 +26827,10 @@ instagram.com##body[style*="overflow: hidden;"]:style(overflow: auto !important)
 ! ---
 investing.com###PromoteSignUpPopUp
 investing.com###__next > .fixed
+investing.com###__next > style + div[class]:not([id])
 investing.com###abPopup
 investing.com##.ad-blocker-popup
 investing.com##.js-general-overlay
-investing.com##.wrapper > style + div[class]:not([id])
 investing.com##body:style(overflow: auto !important)
 investing.com##div[class^="desktop"] > .hidden
 ! ---
