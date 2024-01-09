@@ -1,12 +1,18 @@
-diff name:ruadlist lines:122 checksum:b927238c61
+diff name:ruadlist lines:142 checksum:83bae72698
 d4 2
 a5 2
-! Last modified: Tue, 09 Jan 2024 11:17:13 +0000
-! Diff-Path: ../patches/2024.1.9.677.patch#ruadlist
+! Last modified: Tue, 09 Jan 2024 16:27:27 +0000
+! Diff-Path: ../patches/2024.1.9.987.patch#ruadlist
 a2080 1
 ||fnasmpygwa.com^$third-party
+a2788 1
+||infostuet.com^$third-party
 a4251 1
 ||o1qry0qq83.com^$third-party
+a7929 1
+/mapsview/gomaps5.js$third-party
+a7974 1
+/reader/filezone.js$third-party
 a9901 1
 peers.tv###prompt-form-container-phone
 d10457 1
@@ -22,12 +28,18 @@ a11364 1
 ||fakty.ua/js/_d.js
 a12063 1
 ||mignews.com/static/js/feed_parser.min.js
+a12147 2
+||mult-porno.*/front/js/unwanted.js
+||mult-porno.*/front/js/vads.js
 d12268 1
 a12268 1
 ||novaposhta.ua^*/banners/
 d12271 1
 a12407 1
 ||partners.walla.co.il^$domain=mignews.com
+a12820 2
+||sex-studentki.*/front/js/unwanted.js
+||sex-studentki.*/front/js/vads.js
 d12885 1
 a12885 2
 ||softoroom.org/geobin/go.php
@@ -108,10 +120,15 @@ a21240 1
 mignews.com#?#h6:-abp-contains(/новости партнеров|знакомства/i)
 d21333 1
 d21358 1
+a21844 1
+||pikabu.ru/ajax/?*&_fb$xmlhttprequest,domain=pikabu.ru
 a24268 1
 ||push-sender.com^$third-party
 a25938 1
 @@||yandex.ru/ads/system/context.js|$script,domain=tvzvezda.ru
+d26817 1
+a26817 1
+investing.com##div[class^="desktop"] > .hidden
 a28142 1
 tvzvezda.ru##+js(abort-on-stack-trace, Object.prototype.autoplay, /api/)
 a28172 1
@@ -121,3 +138,6 @@ a28266 1
 peers.tv##+js(set-constant, ADV_DISABLED, true)
 a28420 1
 tvzvezda.ru##z-program-online [id^="oframeplayer"] > pjsdiv[style*="opacity: 0.1;"]:empty
+d28590 1
+a28590 1
+@@$cname,domain=360tv.ru|games-pc.top|innal.top|kyiv.ua|sports.ru|tosdr.org

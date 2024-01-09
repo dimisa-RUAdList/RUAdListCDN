@@ -1,11 +1,23 @@
-diff name:ruadlist lines:44 checksum:b927238c61
+diff name:ruadlist lines:64 checksum:83bae72698
 d4 2
 a5 2
-! Last modified: Tue, 09 Jan 2024 11:17:13 +0000
-! Diff-Path: ../patches/2024.1.9.677.patch#ruadlist
+! Last modified: Tue, 09 Jan 2024 16:27:27 +0000
+! Diff-Path: ../patches/2024.1.9.987.patch#ruadlist
+a2789 1
+||infostuet.com^$third-party
+a7931 1
+/mapsview/gomaps5.js$third-party
+a7976 1
+/reader/filezone.js$third-party
 a10937 2
 ||avtoradio.ua/uploads/advertising/
 ||avtoradio.ua/uploads/slider/
+a12152 2
+||mult-porno.*/front/js/unwanted.js
+||mult-porno.*/front/js/vads.js
+a12825 2
+||sex-studentki.*/front/js/unwanted.js
+||sex-studentki.*/front/js/vads.js
 a12928 1
 ||sport24.ru/hub-fonbet/
 a16943 2
@@ -34,8 +46,13 @@ sport24.ru##div.right-scroll-bar-position
 a20304 1
 sport24.ru##div[aria-expanded="false"]
 d20390 1
+a21846 1
+||pikabu.ru/ajax/?*&_fb$xmlhttprequest,domain=pikabu.ru
 a25941 1
 @@||yandex.ru/ads/system/context.js|$script,domain=tvzvezda.ru
+d26820 1
+a26820 1
+investing.com##div[class^="desktop"] > .hidden
 a28145 1
 tvzvezda.ru##+js(abort-on-stack-trace, Object.prototype.autoplay, /api/)
 a28175 1
@@ -43,3 +60,6 @@ softoroom.org##+js(href-sanitizer, a[href*="/go.php?go="], ?go)
 d28181 1
 a28424 1
 tvzvezda.ru##z-program-online [id^="oframeplayer"] > pjsdiv[style*="opacity: 0.1;"]:empty
+d28594 1
+a28594 1
+@@$cname,domain=360tv.ru|games-pc.top|innal.top|kyiv.ua|sports.ru|tosdr.org

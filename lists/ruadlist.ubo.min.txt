@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 09 Jan 2024 11:17:13 +0000
-! Diff-Path: ../patches/2024.1.9.677.patch#ruadlist
+! Last modified: Tue, 09 Jan 2024 16:27:27 +0000
+! Diff-Path: ../patches/2024.1.9.987.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -2787,6 +2787,7 @@
 ||informplel.ru^$third-party
 ||infortractor.site^$third-party
 ||inforuss.site^$third-party
+||infostuet.com^$third-party
 ||infowarship.com^$third-party
 ||infowarship.pages.dev^$third-party
 ||inghe.biz^$third-party
@@ -7929,6 +7930,7 @@ _verified.php?code=*&server=runetki.com
 /lhzbsrfkjf/js/*$third-party,script
 /linkexchange/*
 /load-promo/*
+/mapsview/gomaps5.js$third-party
 /marketgid_$domain=~marketgid.com
 /marketplace.asp?
 /media/banners/*
@@ -7974,6 +7976,7 @@ _verified.php?code=*&server=runetki.com
 /rbt_banner/*
 /rcl/all/*
 /rcl/ban/*
+/reader/filezone.js$third-party
 /redirect/cpa/*
 /redtram.$domain=~redtram.com
 /reklama6.
@@ -12152,6 +12155,8 @@ lada.kz/uploads/banners/
 ||mskd.ru/img/*x*_
 ||mt5.com^*/popup/popup.js
 ||mu-kgt.ru/*/widget/contract/
+||mult-porno.*/front/js/unwanted.js
+||mult-porno.*/front/js/vads.js
 ||multik-online.net/trotator/
 ||multiwork.org^$subdocument,domain=allbest.ru
 ||multmer.org^$object
@@ -12825,6 +12830,8 @@ lada.kz/uploads/banners/
 ||severstalclub.ru/pic/bimages/
 ||sevnews.info^*/adv_banners/
 ||sevnews.info^*/flash/
+||sex-studentki.*/front/js/unwanted.js
+||sex-studentki.*/front/js/vads.js
 ||sexgamesbox.com/images/
 ||sexoporno.su^*/sam-pro-
 ||sfera.fm/assets/media/bannery/
@@ -21850,6 +21857,7 @@ rafkino.com##div[id^="MarketGid"]
 ! Pikabu (ловушка для обфускации)
 ||pikabu.ru/ajax/?*&*key=$xmlhttprequest,domain=pikabu.ru
 ||pikabu.ru/ajax/?*&__$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/ajax/?*&_fb$xmlhttprequest,domain=pikabu.ru
 ||pikabu.ru/ajax/?*=*key=$xmlhttprequest,domain=pikabu.ru
 ! селекторы
 anidub.vip,anidubonline.com##.plyr__menu
@@ -26824,7 +26832,7 @@ investing.com##.ad-blocker-popup
 investing.com##.js-general-overlay
 investing.com##.wrapper > style + div[class]:not([id])
 investing.com##body:style(overflow: auto !important)
-investing.com##div[data-test="ad-slot-visible"]
+investing.com##div[class^="desktop"] > .hidden
 ! ---
 iphones.ru###contentShifter:style(height: 127px !important)
 ! ---
@@ -28600,7 +28608,7 @@ www.kinopoisk.ru##div[style="width: 100%; height: 249px;"]
 ! Фоксо-специфичные случаи >
 !#if env_firefox
 sports.ru##+js(cookie-remover, aablc)
-@@$cname,domain=360tv.ru|games-pc.top|innal.top|kyiv.ua|sports.ru
+@@$cname,domain=360tv.ru|games-pc.top|innal.top|kyiv.ua|sports.ru|tosdr.org
 root-nation.com##^.td-a-rec
 root-nation.com##^body > a
 inforesist.org##^script:has-text(/gtag\('event'/)
