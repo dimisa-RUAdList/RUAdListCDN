@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 10 Jan 2024 07:18:39 +0000
-! Diff-Path: ../patches/2024.1.10.438.patch#ruadlist
+! Last modified: Wed, 10 Jan 2024 12:37:50 +0000
+! Diff-Path: ../patches/2024.1.10.757.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10170,6 +10170,7 @@ agrarii-razom.com.ua##div[id^="user-to-register"]
 ||24smi.*/top/$csp=script-src
 ||24top.*/top/$csp=script-src
 ||agroter.com.ua^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.googletagmanager.com *.io *.net *.org *.ru *.ua
+||alensat.com^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.googletagmanager.com *.googleapis.com *.google.com/recaptcha/ *.gstatic.com/recaptcha/ translate.google.com *.dev *.io *.net *.org
 ||an.yandex.ru/count/$csp=script-src
 ||askentire.net^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.googletagmanager.com *.keycaptcha.com
 ||autonews.co.ua^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.io *.net *.org *.ru *.ua
@@ -10188,7 +10189,6 @@ agrarii-razom.com.ua##div[id^="user-to-register"]
 ||findhow.org^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: cse.google.com *.google.com/cse/ *.googleapis.com *.googletagmanager.com translate.google.com *.dev *.io *.net *.org
 ||folltiz.site^$csp=script-src
 ||forum.ru-board.com/*.cgi?*=5&topic=51141$csp=img-src 'self' addons.mozilla.org raw.githubusercontent.com
-||forum.ruboard.ru^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: *.google.com/recaptcha/ *.googletagmanager.com *.gstatic.com/recaptcha/ *.sendpulse.com *.threadloom.com
 ||gazeta-misto.te.ua^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.googletagmanager.com *.io *.net *.org *.ru *.ua
 ||gdz-ru.work/subscribe/$csp=sandbox allow-same-origin;
 ||hawk.live/$csp=sandbox allow-same-origin;
@@ -13593,7 +13593,6 @@ balticlivecam.com###ad
 gazeta.ua###ad-730
 pons.com###ad-medrec__first
 1000.menu###ad-recipe-bottom
-investing.com###ad1
 glaz-ok.online###adFoot
 cqham.ru,foto.ua,mobile-files.com,mobile-files.ru,nexia-club.ru,solnechnogorsk.net,zx-pk.ru###ad_global_below_navbar
 ecigtalk.ru###ad_global_below_navbar > div[align] + div[style]
@@ -14364,7 +14363,7 @@ invisiblebra.ru,iv-modelist.ru,nakrutiperiscope.ru,nrbiz.ru,pervoevtoroe.ru,star
 manutd.ru###positioner > div[style="height:30px;"]
 aptekamos.ru###post-data-adv
 wysiwygwebbuilder.ru###post_ads
-forum.developing.ru,forum.ruboard.ru,forumodua.com,ruboard.website,virusinfo.info###posts > .postcontainer[id^="yui-gen"]
+forum.developing.ru,forumodua.com,ruboard.website,virusinfo.info###posts > .postcontainer[id^="yui-gen"]
 rf-cheats.ru###posts > br
 nowa.cc,rf-cheats.ru###posts > center
 pptcloud.ru###pptcloud-mail
@@ -14580,7 +14579,7 @@ videoclub.site,vipvideoclub.ru###sidebar > div:not(.module)
 bikepost.ru###sidebar > div[style*="visibility: visible !important"]
 joyreactor.cc,reactor.cc###sidebar > div[style="margin-bottom: 20px"]
 futbik.net###sidebar > div[style]:not(#rightmenu)
-forum.ruboard.ru,ruboard.website#?##sidebar > li:-abp-has([id^="yandex_rtb_"])
+ruboard.website#?##sidebar > li:-abp-has([id^="yandex_rtb_"])
 zx-pk.ru###sidebar > li:first-child
 videovegas.ru###sidebar div[id*="rotator_"]
 vrgames.by###sidebar-first object
@@ -16158,7 +16157,6 @@ flashscore.com.ua,flashscore.ru.com,flashscore.ua,flashscorekz.com,livescore.in,
 camtasia.com.ua##.details > a[href="http://gamelion.net/"]
 playground.ru##.dfp-container
 habr.com##.dfp-slot__placeholder-text a
-investing.com##.dfpVideo
 qna.habr.com##.dfp_label
 sovets.net,sovets24.ru,vkurske.com##.direct
 expertcen.ru##.direct-ad
@@ -16594,7 +16592,6 @@ apparat.cc##.homeBanner
 volnorez.com##.home_Advert
 ubr.ua##.home_ad_first_screen
 kinovit.org##.homeads
-investing.com#?#.homepageWidget:-abp-has(> #topBroker)
 helpiks.org##.homes
 briefly.ru##.honey
 ixbt.com##.honor-mobile-menu-logo
@@ -16794,7 +16791,6 @@ kazanutlary.ru##.l-mainAdArea
 cy-pr.com##.l-navigation-i > noindex
 obogrevguru.ru,termogurus.ru##.l2
 38mama.ru##.lad
-investing.com##.largeBannerCloser
 allboxing.ru#?#.last-news:-abp-has(> .block_title ~ [id^="unit_"])
 2000.ua##.last_articles
 footballhd.ru#?#.lastnewscat:-abp-has(> [id*="ScriptRoot"])
@@ -18411,7 +18407,6 @@ baibako.tv##.topserial > a[href]
 dynamo.kiev.ua##.torba-lightbox-side-wrap
 rybolov.ee##.tp_rightblock_noframe [width="336"][height="240"]
 irad.ru##.tr-banner
-investing.com##.tradeNowRightColumn
 fanforum.ru##.tradingview-widget-container
 czx.to##.trash
 trashbox.ru##.trash_special
@@ -19142,7 +19137,7 @@ radiodacha.ru##[summary="content_table"] > tbody > tr > td[height="90"]
 cdmail.ru,izcity.com##[title*="быстрый браузер!"] > img
 zx-pk.com##[title="Yandex Direct"]
 www.film.ru##[title="Яндекс Дзен"]
-forum.ruboard.ru,ruboard.website##[vid_vpaut_pl]
+ruboard.website##[vid_vpaut_pl]
 lost-abc.ru##[width="630"][height="90"]
 fcpug.ru##a + br
 fcpug.ru##a + br + br
@@ -19888,7 +19883,6 @@ altai4u.com##a[href^="https://play.google.com/store/apps/details?id="]
 allboxing.ru,lifenews.ru,topwar.ru##a[href^="https://relap.io/"][data-ad-link]
 softodrom.ru##a[href^="https://rosecatalog.ru"]
 shazoo.ru##a[href^="https://shazoo.ru/click/"]
-qaru.site##a[href^="https://studwork.org"]
 biqle.org##a[href^="https://theporndude.com/"]
 triskirun.ru##a[href^="https://triskirun.ru/golink/"]
 brestcity.com##a[href^="https://tutvisa.by/"]
@@ -25971,10 +25965,10 @@ daz3d.ru,forums.rusmedserv.com,trialkeys.ru#@#.advblock
 dl2kq.de#@##sponsor_ad
 drahelas.ru#@#.forumAd
 era-igr.ru#@##adsense2
-forum.ruboard.ru,izi-invest.ru,mmo13.ru,ruboard.website#@#div[id^="yandex_rtb"]
 forums.rusmedserv.com#@#img[width="728"][height="90"]
 green-way.com.ua#@#.adWrapper
 iphones.ru#@##sponsorText
+izi-invest.ru,mmo13.ru,ruboard.website#@#div[id^="yandex_rtb"]
 kisameev.ru,myseria.pro,openssource.biz,zazloo.ru#@#.reklama
 liga.net#@##bottomAd
 mail.ru#@#.text-banner
@@ -28324,7 +28318,6 @@ rg.ru##+js(set-constant, Object.prototype.onIntersected, noopFunc)
 rg.ru##+js(set-constant, Object.prototype.openstatCb, undefined)
 dzen.ru,frontend.vh.yandex.ru,naydex.net,widgets.kinopoisk.ru,www.kinopoisk.ru,yastatic.net##+js(set-constant, Object.prototype.partnerId, {})
 3dnews.kz,3dnews.ru,vm.ru##+js(set-constant, Object.prototype.playVideo, noopFunc)
-gismeteo.by,gismeteo.kz,gismeteo.lt,gismeteo.lv,gismeteo.md,gismeteo.ru,meteofor.com.ua##+js(set-constant, Object.prototype.sendCHParams, noopFunc)
 forbes.ru##+js(set-constant, Object.prototype.utm, false)
 forbes.ru##+js(set-constant, Object.prototype.utm_campaign, false)
 forbes.ru##+js(set-constant, Object.prototype.utm_medium, false)
@@ -28361,6 +28354,7 @@ infox.sg##+js(window-close-if, utm)
 08sportbar.com,08sportbar.online,777sportba.com,777sportba.org,777streams.pro,7streams.pro,assiatv.com,barsportbar.com,boom365hd.com,cdnneedtv.ru,cdnpotok.com,cdntvpotok.com,channels247.net,goool7.ws,hd24.pro,hd24.watch,hd365.ws,hdstream365.com,limetvv.com,live-stream365.com,live365tv.site,mc.today,oneliketv.com,oxax.tv,raes.tech,s7yours.com,sbautumn.com,sblive.online,sbsports.pro,sbstreams.ws,shd247.com,sport365hd.com,sport365hd.net,sport7.biz,sportabar01.com,sportbar.biz,sportbar.pm,sportbarchik88.com,sportbox.ws,sporting7.pw,sporting77.com,sportsite777.com,spotless365.net,stream365.pro,telecdn.net,tivix.co,tv-assia.org,vecdn.pw,vip7stream.pw,whd365.pro##+js(window.open-defuser)
 vmusi.ru##+js(window.open-defuser, /tutad\.ru/)
 ontivi.net##+js(window.open-defuser, about:blank)
+vk.com,vk.ru##.PhotoPrimaryAttachment__background[src*="userapi.com/impf/"][src*="blur="]:style(filter: blur(20px) !important)
 reshu.by,sdamgia.ru##.SubjectMenu_desktop.PageLayout-Nav:style(position: sticky !important)
 inoreader.com##.ad_title:style(display: block !important; position: fixed !important; top: -10000px !important; left: -10000px !important)
 inoreader.com##.adsbygoogle:style(display: block !important)
