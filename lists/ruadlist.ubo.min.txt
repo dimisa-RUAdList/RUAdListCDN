@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 11 Jan 2024 18:24:43 +0000
-! Diff-Path: ../patches/2024.1.11.1104.patch#ruadlist
+! Last modified: Thu, 11 Jan 2024 23:20:22 +0000
+! Diff-Path: ../patches/2024.1.11.1400.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -14984,6 +14984,7 @@ openssource.biz##.add-link
 brunet-ka.ru,poleznii-site.ru##.add_zen
 multiurok.ru##.additional-info > nofollow > [align="center"] > a[target="_blank"] > img
 spbdnevnik.ru##.adds
+kg-portal.ru##.adex
 gastronom.ru##.adfox-banner
 www.onliner.by##.adfox-banner-background
 profile.ru##.adfox-hidden
@@ -18251,6 +18252,7 @@ klubok.com##.text-center > div[style="height: 250px;"]
 auto62rus.ru#?#.text-center:-abp-contains(/ДВИГАТЕЛЬ ТОРГОВЛИ|И еще немного рекламы|новости партнеров/i)
 gagadget.com#?#.text-center:-abp-has(> [style="min-height: 249px;"])
 gdz4you.com#?#.text-center:-abp-has(script)
+mezha.media##.text-with-bg
 horrorzone.ru##.text_block_widget_video
 az-priroda.ru,bisnesideya.ru,dialogs.org.ua,doctorrouter.ru,dv-gazeta.info,edu-lib.net,farmamir.ru,halyavapliz.ru,kopilohka.ru,lifeinvest.com.ua,marketer.ua,medfactor.com.ua,medicalanswers.com.ua,medicalanswers.site,mods-fs.net,ruskweb.ru,samogonpil.ru,ua-vestnik.com,uapress.kyiv.ua,woman24.kyiv.ua,x-kuzov.ru,yroki-kompa.ru,zhenskiy.kyiv.ua##.textwidget
 news.center4.me##.textwidget > a[href]
@@ -20516,7 +20518,7 @@ kasparov.ru##div[class^="advCell"]
 kommersant.ru##div[class^="adv_"]
 allsportlinks.com##div[class^="adver_"]
 skolkovarim.com##div[class^="adverser"]
-boxrec.com,iphones.ru,lovitut.ru##div[class^="advert"]
+boxrec.com,iphones.ru,lovitut.ru,pc.ru##div[class^="advert"]
 myplaycity.ru##div[class^="advertisement"]
 rau.ua,zn.ua##div[class^="advertising"]
 dfm.ru,hitfm.ru,maximum.ru,montecarlo.ru,rusradio.ru##div[class^="advertising-"][class*="-popup-overlay"]
@@ -22878,7 +22880,7 @@ sports.ru##img[src*="s5o.ru/source/_desktop/aliens/"]
 sports.ru##p > a[rel="nofollow"] > img[height][width]
 sports.ru#?#p:-abp-has(> a[href]:-abp-contains(М.Видео))
 sports.ru##style:first-child ~ [class^="gift__"]
-||photobooth.cdn.sports.ru/preset/message/5/93/7680003074e13aa8a8d86dae7243a.jpeg
+||photobooth.cdn.sports.ru/preset/message/4/dc/e51ad068e4b749967cd8350270e81.png
 ||s5o.ru/source/_desktop/aliens/$~image
 ||s5o.ru/source/_desktop/assets/00*.jpg
 ||s5o.ru/source/_desktop/build/banners/
