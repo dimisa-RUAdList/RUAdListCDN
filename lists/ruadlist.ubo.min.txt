@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 13 Jan 2024 05:21:50 +0000
-! Diff-Path: ../patches/2024.1.13.321.patch#ruadlist
+! Last modified: Sat, 13 Jan 2024 10:23:23 +0000
+! Diff-Path: ../patches/2024.1.13.623.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10578,7 +10578,7 @@ $xmlhttprequest,domain=happy-biock.info|happy-block.info|howto-news.info|mschist
 /service/display/|$script,domain=povarenok.ru|stranamam.ru
 /site/showbanner/*$domain=latifundist.com
 /sm\.news/[^\s]{80,}/$script,domain=sm.news
-/stargate*.$image,popup,xmlhttprequest,domain=bombafilms.ru|hlamer.ru
+/stargate*.$image,popup,xmlhttprequest,domain=bossfilm.ru|hlamer.ru
 /static/banners/*$domain=gagadget.com|maxpark.com|vse-sto.com.ua
 /static/js/build/adidas.min.js$domain=auto43.ru|dom43.ru|gorodkirov.ru|job43.ru
 /storage/banners/*$domain=1sn.ru|banki.loans|sportliga.com
@@ -14781,7 +14781,7 @@ delovoy-kirov.ru###uzhanina
 heregirl.ru,ledilana.ru###vgtrk_bottom
 virusinfo.info###vi_ad
 virusinfo.info###vi_adlink
-bombafilms.ru,hlamer.ru###video-container .overlay_video
+bossfilm.ru,hlamer.ru###video-container .overlay_video
 ivi.ru###video-flack
 videonews.club###video_bootom
 enter.az###videorekframe
@@ -27004,7 +27004,7 @@ kp.kg,kp.kz,kp.md,kp.ru##body > #app [data-branding-wrapper]:style(padding-top: 
 kp.kg,kp.kz,kp.md,kp.ru##body > #app div[style="display:block !important"] > div:first-child > div:first-child + div > div:first-child + div > div[data-name]:first-child + div:style(margin-top: auto !important)
 ! ---
 ! krasview.ru - зеркала
-bombafilms.ru,hlamer.ru##body:style(background-color: #596c84 !important)
+bossfilm.ru,hlamer.ru##body:style(background-color: #596c84 !important)
 ! ---
 kriminal.net.ua,news.dn.ua###popup-manager.popup-show
 kriminal.net.ua,news.dn.ua###popup-manager.popup-show + #layout:style(-webkit-filter: none !important; filter: none !important)
@@ -28128,7 +28128,7 @@ anime-chan.me##+js(abort-on-property-read, move_string)
 city.ogo.ua##+js(abort-on-property-read, myatu_bgm)
 kolizhanka.com.ua##+js(abort-on-property-read, nocontext)
 it-actual.ru##+js(abort-on-property-read, onload)
-bombafilms.ru,freehat.cc,hlamer.ru,lostpix.com,potokcdn.com,prostoporno.help,saltday.ru,uploadimagex.com,wowskill.ru,xittv.net##+js(abort-on-property-read, open)
+bossfilm.ru,freehat.cc,hlamer.ru,lostpix.com,potokcdn.com,prostoporno.help,saltday.ru,uploadimagex.com,wowskill.ru,xittv.net##+js(abort-on-property-read, open)
 sm.news##+js(abort-on-property-read, preventSelection)
 zab.ru##+js(abort-on-property-read, scrollw)
 tapochek.net##+js(abort-on-property-read, setsnow)
