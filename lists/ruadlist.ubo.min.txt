@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 14 Jan 2024 11:16:39 +0000
-! Diff-Path: ../patches/2024.1.14.676.patch#ruadlist
+! Last modified: Sun, 14 Jan 2024 16:25:10 +0000
+! Diff-Path: ../patches/2024.1.14.985.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -11703,6 +11703,7 @@ lada.kz/uploads/banners/
 ||imhonet.ru/img/dumm/*-promo.
 ||imoneyforum.ru/files/00
 ||imtw.ru/public/js/*banner
+||industry-hunter.com/uploads/banners/
 ||inetsovety.ru/bannerbro/
 ||info.sibnet.ru/img/weather/*/background.
 ||info.sibnet.ru/legacy//static_templates$image
@@ -12197,7 +12198,6 @@ lada.kz/uploads/banners/
 ||n1.by/static/banners.js
 ||na-androeed.ru/*/vaku.png
 ||nadavi.*/gb.php?idb_=
-||nag.ru/d/nag.php?
 ||namba.tv/banners/
 ||narmed24.ru/gajsnm24/
 ||narmed24.ru/scripts/
@@ -12404,6 +12404,7 @@ lada.kz/uploads/banners/
 ||ozon.ru/graphics/img_ban/
 ||p-p.com.ua/-/img/bg-*.jpg
 ||p-p.com.ua/-/uploads/media/000/
+||p.nag.ru/d/
 ||pacogames.com/js/wgAds.
 ||padabum.com/palae.js
 ||padaread.com/superou.js
@@ -14146,6 +14147,7 @@ oper.ru#?##left li:-abp-has(a[href*="//wink."])
 oper.ru#?##left li:-abp-has(a[href*="://opershop.ru"])
 rabota.kharkov.ua###left-banners
 questtime.net###left-bot
+3dnews.kz,3dnews.ru###left-sidebar > .sidebar-chunk.mid:not(.strong)
 gk-press.if.ua###left-sidebar > .widget_text
 mosgorzdrav.ru###left_banners > a[href="http://sod.mos.ru"]
 pesni-tut.com###left_block > div:not([id]):not([class])
@@ -14884,7 +14886,6 @@ russian.rt.com##.Mirtesen-root
 do.ru##.MyOpacity1
 tonkosti.ru##.NoCurTips
 forums.sumy.ua##.Notices.PanelScroller
-forum.nag.ru##.OX[id^="OA_"]
 pogoda21.ru##.PageCap > table .nodivs > a
 zerocoolpro.biz##.PanelScroller
 games-archive.net##.PostContent > noindex > center
@@ -15854,8 +15855,8 @@ carsweek.ru##.bx-composite-btn
 mail.inbox.lt,mail.inbox.lv##.bxS-leftbar
 mail.inbox.lt,mail.inbox.lv##.bxS-text_link
 electroandi.ru##.bybit
-drive2.com#?#.c-block:-abp-has(> .c-dv-sns)
-drive2.com#?#.c-block:-abp-has(> [id^="adfox_"])
+drive2.com,drive2.ru#?#.c-block:-abp-has(> .c-dv-sns)
+drive2.com,drive2.ru#?#.c-block:-abp-has(> [id^="adfox_"])
 vsplanet.net##.c-center > .cols ~ *
 drive2.ru##.c-dv-p
 drive2.com##.c-dv-sns
@@ -16939,6 +16940,7 @@ info.sibnet.ru##.main-header-center > div
 info.sibnet.ru##.main-header-middle > div
 namba.kz##.main-links > [style*="background"]
 ru-minecraft.ru##.main-news2 > div[style^="position: fixed;"][style*="left:"]
+industry-hunter.com##.main-page > .container:first-child > .row > div + div ~ div
 vashdosug.ru##.main-page-banner-container
 glavred.info,glavred.net##.main-partners
 protdt.ru##.main-post-content > p[style] > strong
@@ -19217,7 +19219,7 @@ rutr.life,rutracker.lib,rutracker.net,rutracker.nl,rutracker.org##a[href*=".vkpl
 wintorrents.ru##a[href*=".wintorrents.ru"]
 1tv.ru,drive.ru,f1news.ru,gamemag.ru,kinoafisha.info,kinonews.ru,kinorium.com,livejournal.com,myshows.me,onlinestreams.ru,pikabu.ru,pluggedin.ru,sovsport.ru,spletnik.ru,trinixy.ru,www.pesticidy.ru##a[href*="//ads.adfox.ru/"]
 dks.com.ua,enovosty.com,expert.in.ua,galas.te.ua,galinfo.com.ua,nbnews.com.ua,plitkar.com.ua,rivnepost.rv.ua,tenews.org.ua,ukrnews24.net,varta1.com.ua##a[href*="//besplatka.ua"]
-360tv.ru,avtonovostidnya.ru,coop-land.ru,energyfm.ru,gdeichto.ru,kommersant.ru,moe-belgorod.ru,moe-kursk.ru,moe-lipetsk.ru,moe-online.ru,moe-tambov.ru,mydecor.ru,mywebpc.ru,new-magazine.ru,news.ru,penzainform.ru,peterburg2.ru,pnz.ru,regnum.ru,russian.rt.com,rutube.ru,sm.news,sportsdaily.ru,super.ru,syzran-small.ru,teleprogramma.pro,thegirl.ru,tsargrad.tv,tulapressa.ru,tvzvezda.ru,u-f.ru,ura.news,utyug.info,vz.ru,xn----7sbabwosghnf8al4lkj7b.xn--p1ai,zaks.ru,zr.ru##a[href*="//dzen.ru/"]
+360tv.ru,avtonovostidnya.ru,coop-land.ru,energyfm.ru,gdeichto.ru,kommersant.ru,moe-belgorod.ru,moe-kursk.ru,moe-lipetsk.ru,moe-online.ru,moe-tambov.ru,mydecor.ru,mywebpc.ru,naked-science.ru,new-magazine.ru,news.ru,penzainform.ru,peterburg2.ru,pnz.ru,regnum.ru,russian.rt.com,rutube.ru,sm.news,sportsdaily.ru,super.ru,syzran-small.ru,teleprogramma.pro,thegirl.ru,tsargrad.tv,tulapressa.ru,tvzvezda.ru,u-f.ru,ura.news,utyug.info,vz.ru,xn----7sbabwosghnf8al4lkj7b.xn--p1ai,zaks.ru,zr.ru##a[href*="//dzen.ru/"]
 beatmake.ru##a[href*="//go.acstat.com/"]
 porno-island.site##a[href*="//goo.su/"]
 animevost.tv,senpai.cc##a[href*="//inlnk.ru/"]
@@ -21375,6 +21377,7 @@ cha.moscow##img[alt^="Hilton"]
 pornoakt.click##img[alt^="Баннер"]
 news.online.ua##img[class$="_link"]
 gazeta1.com##img[class^="rec"]
+www.kinopoisk.ru##img[class^="styles_copyrightImg_"]
 newsroom.kh.ua##img[data-lazy-src^="https://www.newsroom.kh.ua/wp-content/uploads/tiny_"]
 gamestar.ru##img[height="310"]
 akademekb.ru##img[id^="cradv_"]

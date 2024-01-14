@@ -1,8 +1,8 @@
-diff name:ruadlist lines:68 checksum:d6189a13b6
+diff name:ruadlist lines:87 checksum:5b9ed38094
 d4 2
 a5 2
-! Last modified: Sun, 14 Jan 2024 11:16:39 +0000
-! Diff-Path: ../patches/2024.1.14.676.patch#ruadlist
+! Last modified: Sun, 14 Jan 2024 16:25:10 +0000
+! Diff-Path: ../patches/2024.1.14.985.patch#ruadlist
 a127 1
 ||3mtr.ru^$third-party
 a6763 1
@@ -17,6 +17,11 @@ a10578 1
 /stargate*.$image,popup,xmlhttprequest,domain=bossfilm.ru|hlamer.ru
 a11685 1
 ||ilenta.com/images/banner/
+a11701 1
+||industry-hunter.com/uploads/banners/
+d12196 1
+a12402 1
+||p.nag.ru/d/
 d12900 1
 a12901 1
 ||softportal.com/*.zyx|$xmlhttprequest,domain=softportal.com
@@ -24,20 +29,29 @@ d12904 2
 a12905 2
 ||softportal.com/js/dc.js
 ||softportal.com/js/fl.js
+a14144 1
+3dnews.kz,3dnews.ru###left-sidebar > .sidebar-chunk.mid:not(.strong)
 d14780 1
 a14780 1
 bossfilm.ru,hlamer.ru###video-container .overlay_video
 a14823 1
 gagadget.com###wrapper > .l-container_wide[style*="min-height:"]
+d14882 1
 a14982 1
 kg-portal.ru##.adex
 a15159 1
 liga.net##.article-header__video-banner
+d15850 2
+a15851 2
+drive2.com,drive2.ru#?#.c-block:-abp-has(> .c-dv-sns)
+drive2.com,drive2.ru#?#.c-block:-abp-has(> [id^="adfox_"])
 d15875 1
 a15875 1
 softportal.com##.cardPageDescMain > div[id] div[style*="min-height:"]
 a16447 1
 fakty.ua##.gis_logo
+a16933 1
+industry-hunter.com##.main-page > .container:first-child > .row > div + div ~ div
 d17232 1
 a17232 1
 1progs.com,gafki.ru##.offer
@@ -47,6 +61,9 @@ a18247 1
 mezha.media##.text-with-bg
 a19102 1
 ilenta.com##[src*="/images/banner/"]
+d19209 1
+a19209 1
+360tv.ru,avtonovostidnya.ru,coop-land.ru,energyfm.ru,gdeichto.ru,kommersant.ru,moe-belgorod.ru,moe-kursk.ru,moe-lipetsk.ru,moe-online.ru,moe-tambov.ru,mydecor.ru,mywebpc.ru,naked-science.ru,new-magazine.ru,news.ru,penzainform.ru,peterburg2.ru,pnz.ru,regnum.ru,russian.rt.com,rutube.ru,sm.news,sportsdaily.ru,super.ru,syzran-small.ru,teleprogramma.pro,thegirl.ru,tsargrad.tv,tulapressa.ru,tvzvezda.ru,u-f.ru,ura.news,utyug.info,vz.ru,xn----7sbabwosghnf8al4lkj7b.xn--p1ai,zaks.ru,zr.ru##a[href*="//dzen.ru/"]
 d20512 1
 a20512 1
 boxrec.com,iphones.ru,lovitut.ru,pc.ru##div[class^="advert"]
@@ -58,6 +75,8 @@ gafki.ru,point.md##div[style^="min-height:"][style*="250px"]
 d21207 1
 a21207 1
 soccer365.com.ua,soccer365.ru##div[style^="position:"][style*="height:"][style*="90px"]
+a21368 1
+www.kinopoisk.ru##img[class^="styles_copyrightImg_"]
 d22876 1
 a22876 1
 ||photobooth.cdn.sports.ru/preset/message/4/dc/e51ad068e4b749967cd8350270e81.png
