@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 14 Jan 2024 06:25:39 +0000
-! Diff-Path: ../patches/2024.1.14.385.patch#ruadlist
+! Last modified: Sun, 14 Jan 2024 11:16:39 +0000
+! Diff-Path: ../patches/2024.1.14.676.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -12901,12 +12901,12 @@ lada.kz/uploads/banners/
 ||soft.sibnet.ru/dist/js/ya-pack_banners.js
 ||soft4xp.ru/rss_news.php
 ||softoroom.org/geobin/go.php
-||softoroom.org/image/yandexbr.
 ||softportal.com/*.html|$xmlhttprequest,domain=softportal.com
+||softportal.com/*.zyx|$xmlhttprequest,domain=softportal.com
 ||softportal.com/img/qwer.
 ||softportal.com/img/tlmn.
-||softportal.com/js/dnld_cntr.js
-||softportal.com/js/freedload.js
+||softportal.com/js/dc.js
+||softportal.com/js/fl.js
 ||softslot.com/image/source/banners/
 ||softslot.com/partners/
 ||solnechnogorsk.net/forum/vsa_banners/
@@ -15879,7 +15879,7 @@ pronovostroy.ru##.card-special-gallery--topic
 regnum.ru##.card-with-adv
 solidarnost.org##.card-yandex
 1tv.ru##.card.promo
-softportal.com##.cardPageDescMain > div[id] > div[style*="min-height:"]
+softportal.com##.cardPageDescMain > div[id] div[style*="min-height:"]
 rudub.net##.card__description__adv
 edimdoma.ru##.card_commercial
 marketsakhcom.ru#?#.cards__col:-abp-has(> .card_cb)

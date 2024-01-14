@@ -1,8 +1,8 @@
-diff name:ruadlist lines:58 checksum:c6a6a29d4a
+diff name:ruadlist lines:68 checksum:d6189a13b6
 d4 2
 a5 2
-! Last modified: Sun, 14 Jan 2024 06:25:39 +0000
-! Diff-Path: ../patches/2024.1.14.385.patch#ruadlist
+! Last modified: Sun, 14 Jan 2024 11:16:39 +0000
+! Diff-Path: ../patches/2024.1.14.676.patch#ruadlist
 a127 1
 ||3mtr.ru^$third-party
 a6763 1
@@ -17,6 +17,13 @@ a10578 1
 /stargate*.$image,popup,xmlhttprequest,domain=bossfilm.ru|hlamer.ru
 a11685 1
 ||ilenta.com/images/banner/
+d12900 1
+a12901 1
+||softportal.com/*.zyx|$xmlhttprequest,domain=softportal.com
+d12904 2
+a12905 2
+||softportal.com/js/dc.js
+||softportal.com/js/fl.js
 d14780 1
 a14780 1
 bossfilm.ru,hlamer.ru###video-container .overlay_video
@@ -26,6 +33,9 @@ a14982 1
 kg-portal.ru##.adex
 a15159 1
 liga.net##.article-header__video-banner
+d15875 1
+a15875 1
+softportal.com##.cardPageDescMain > div[id] div[style*="min-height:"]
 a16447 1
 fakty.ua##.gis_logo
 d17232 1
