@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 16 Jan 2024 08:25:21 +0000
-! Diff-Path: ../patches/2024.1.16.505.patch#ruadlist
+! Last modified: Tue, 16 Jan 2024 13:24:22 +0000
+! Diff-Path: ../patches/2024.1.16.804.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10194,6 +10194,7 @@ agrarii-razom.com.ua##div[id^="user-to-register"]
 ||forum.ru-board.com/*.cgi?*=5&topic=51141$csp=img-src 'self' addons.mozilla.org raw.githubusercontent.com
 ||gazeta-misto.te.ua^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.googletagmanager.com *.io *.net *.org *.ru *.ua
 ||gdz-ru.work/subscribe/$csp=sandbox allow-same-origin;
+||golos.te.ua^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.cloudflare.com *.facebook.com *.googletagmanager.com cse.google.com *.google.com/cse/ *.google.com/recaptcha/ *.jquery.com *.sendpulse.com *.sharethis.com *.twitter.com *.io *.net *.org *.ru *.ua
 ||hawk.live/$csp=sandbox allow-same-origin;
 ||icon-icons.com/ru/$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: *.googleapis.com apis.google.com  *.googletagmanager.com *.google.com/recaptcha/ *.gstatic.com *.icon-icons.com *.jquery.com *.io *.net *.org
 ||idealmedia.io$csp=script-src
@@ -21867,12 +21868,12 @@ rafkino.com##div[id^="MarketGid"]
 ! Pikabu (ловушка для обфускации)
 ||pikabu.ru/ajax/?*&*key=$xmlhttprequest,domain=pikabu.ru
 ||pikabu.ru/ajax/?*&__$xmlhttprequest,domain=pikabu.ru
-||pikabu.ru/ajax/?*&_fb$xmlhttprequest,domain=pikabu.ru
 ||pikabu.ru/ajax/?*=*key=$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/ajax/?*_fb=$xmlhttprequest,domain=pikabu.ru
 ! селекторы
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
-pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: [0-9]{3}px|min-height: calc.[03569]{2}[0-9]{1}|min-height: calc.+.em|min-height: .+.(cm|em|ex|in|lh|mm|pc|pt|Q)/)
+pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: [0-9]{3}px|min-height: calc.[03569]{2}[0-9]{1}|min-height: calc.+.em|min-height: .+.(ch|cm|em|ex|in|lh|mm|pc|pt|Q)/)
 pikabu.ru##.sidebar-block_border[style*="transparent"]
 pikabu.ru##.sidebar__inner > .sidebar-block div[style=""]
 pikabu.ru##.sidebar__inner > .sidebar-block:not(.sidebar-block_border)
@@ -28447,6 +28448,7 @@ pornopuk.com,huyamba.tv,piratam.net,piratca.net,porn720.biz,pornoakt.*,sexitorre
 rp5.*##+js(no-setTimeout-if, 0x)
 kanobu.ru#?#section[class^="MaterialsManufacturerPage_infiniteWrap"] > div[class^="InfiniteScrollWrap_content"] > [class*="MaterialItemPage_materialSection"]:-abp-has(> .knb-grid-container > [data-io-article-url] [class^="TextContent_text"] > p:-abp-contains(/^Реклама:/)) [class^="material-content_"] a[href][target="_blank"]:not([href^="https://kanobu.ru/"]):style(color: inherit !important; pointer-events: none !important)
 igromania.ru#?#section[class^="MaterialsManufacturerPage_infiniteWrap"] > div[class^="InfiniteScrollWrap_content"] > [class*="MaterialItemPage_materialSection"]:-abp-has(> .knb-grid-container > [data-io-article-url] [class^="TextContent_text"] > p:-abp-contains(/^Реклама:/)) [class^="material-content_"] a[href][target="_blank"]:not([href^="https://www.igromania.ru/"]):style(color: inherit !important; pointer-events: none !important)
+kinoafisha.info##videotronic-player:remove-attr(data-video-autoplay)
 tvzvezda.ru##z-program-online [id^="oframeplayer"] > pjsdiv[style*="opacity: 0.1;"]:empty
 ||1plus1.video/*/embed/*autoplay=1$subdocument,removeparam=|
 ||adbutton.net^$script,redirect=noopjs
@@ -28490,7 +28492,7 @@ tvzvezda.ru##z-program-online [id^="oframeplayer"] > pjsdiv[style*="opacity: 0.1
 ||widgets.kinopoisk.ru/discovery/trailer/*&loop=1&autoplay=1$subdocument,domain=www.kinopoisk.ru
 ||yandex.ru/ads/system/context.js|$important,script,domain=playground.ru
 ||youtube-nocookie.com/embed/*autoplay=1$subdocument,removeparam=autoplay,domain=weukraine.tv
-||youtube.com/embed/*autoplay=1$subdocument,removeparam=autoplay,domain=~pikabu.ru
+||youtube.com/embed/*autoplay=1$subdocument,removeparam=autoplay,domain=~kinoafisha.info|~pikabu.ru
 ||youtube.com/embed/?enablejsapi=1&origin=*3dnews.*&widgetid=1$subdocument,badfilter,domain=3dnews.kz|3dnews.ru
 ! Mail.RU
 ~e.mail.ru,mail.ru###projects [data-alias="market"]

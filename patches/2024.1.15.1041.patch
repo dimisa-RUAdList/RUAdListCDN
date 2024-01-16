@@ -1,13 +1,26 @@
-diff name:ruadlist lines:12 checksum:30ddd9793b
+diff name:ruadlist lines:25 checksum:fd372bea36
 d4 2
 a5 2
-! Last modified: Tue, 16 Jan 2024 08:25:21 +0000
-! Diff-Path: ../patches/2024.1.16.505.patch#ruadlist
+! Last modified: Tue, 16 Jan 2024 13:24:22 +0000
+! Diff-Path: ../patches/2024.1.16.804.patch#ruadlist
+a10196 1
+||golos.te.ua^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.cloudflare.com *.facebook.com *.googletagmanager.com cse.google.com *.google.com/cse/ *.google.com/recaptcha/ *.jquery.com *.sendpulse.com *.sharethis.com *.twitter.com *.io *.net *.org *.ru *.ua
 a13894 1
 winreviewer.com###custom_html-6
 d20124 1
 a20124 1
 101.ru,101kofemashina.ru,1in.am,alau.kz,alexua.tv,animejapan.tv,animeonline.cc,bit.ua,bugaga.ru,c-inform.info,comments.ua,csgamer.ru,ctv7.ru,cvnews.cv.ua,dead-serial.com,e-libra.ru,fashiony.ru,fclmnews.ru,forpost.lviv.ua,freehat.cc,game2day.ru,gameinside.ua,ggscore.com,gorod.dp.ua,grimm-online.org,gta.com.ua,horrorzone.ru,ifnews.org.ua,igrovaya.org,igry-online.net,itechua.com,izbezhat-nakazania.com,jetsetter.ua,jut.su,kievvlast.com.ua,kinoafisha.info,ko.com.ua,kosti-tv.com,kushvsporte.ru,likeni.ru,lovesun.by,lvnews.org.ua,mac-torrent-download.net,madjong-besplatno.ru,mirf.ru,moldfootball.com,mybrazz.club,nashkiev.ua,ne-kurim.ru,pesikot.org,pimpletv.ru,playua.net,post-tracker.ru,povarenok.ru,prodota.ru,prosports.kg,prosports.kz,prosportua.com,relook.ru,rvnews.rv.ua,saratovnews.ru,segodnya.ua,sopsport.org,spletnica-tv.com,sportarena.com,strela-online.com,teenwolf-tv.com,tenews.org.ua,tg.telepult.pro,theflash-tv.com,topfile.tj,traktorist.ua,uanews.org.ua,udargol.com,upl.ua,vsetors.org,vskazke-tv.com,zab.ru,zorgee.ru##body > a[href][target="_blank"]
+d21869 1
+a21870 1
+||pikabu.ru/ajax/?*_fb=$xmlhttprequest,domain=pikabu.ru
+d21874 1
+a21874 1
+pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: [0-9]{3}px|min-height: calc.[03569]{2}[0-9]{1}|min-height: calc.+.em|min-height: .+.(ch|cm|em|ex|in|lh|mm|pc|pt|Q)/)
 d22618 3
 a22620 1
 autorambler.ru,rambler.ru###rootWrapper article > div div > aside
+a28450 1
+kinoafisha.info##videotronic-player:remove-attr(data-video-autoplay)
+d28494 1
+a28494 1
+||youtube.com/embed/*autoplay=1$subdocument,removeparam=autoplay,domain=~kinoafisha.info|~pikabu.ru
