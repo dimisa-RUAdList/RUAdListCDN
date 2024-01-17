@@ -1,8 +1,8 @@
-diff name:ruadlist lines:76 checksum:af6ebd580a
+diff name:ruadlist lines:79 checksum:fc4e1da651
 d4 2
 a5 2
-! Last modified: Wed, 17 Jan 2024 14:21:22 +0000
-! Diff-Path: ../patches/2024.1.17.861.patch#ruadlist
+! Last modified: Wed, 17 Jan 2024 19:16:39 +0000
+! Diff-Path: ../patches/2024.1.17.1156.patch#ruadlist
 a10196 1
 ||golos.te.ua^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.cloudflare.com *.facebook.com *.googletagmanager.com cse.google.com *.google.com/cse/ *.google.com/recaptcha/ *.jquery.com *.sendpulse.com *.sharethis.com *.twitter.com *.io *.net *.org *.ru *.ua
 d10466 1
@@ -60,6 +60,9 @@ a21869 1
 d21873 1
 a21873 1
 pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: [0-9]{3}px|min-height: calc.[03569]{2}[0-9]{1}|min-height: calc.+.em|min-height: .+.(ch|cm|em|ex|in|lh|mm|pc|pt|Q)/)
+d21882 1
+a21882 1
+pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(/min-height: 20.px|min-height: 29.px|min-height: 30.px/))
 d22617 3
 a22619 1
 autorambler.ru,rambler.ru###rootWrapper article > div div > aside
