@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 17 Jan 2024 09:20:48 +0000
-! Diff-Path: ../patches/2024.1.17.560.patch#ruadlist
+! Last modified: Wed, 17 Jan 2024 14:21:22 +0000
+! Diff-Path: ../patches/2024.1.17.861.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -12531,7 +12531,7 @@ lada.kz/uploads/banners/
 ||poultryukraine.com/data/image/banners/
 ||povarenok.ru/*bakers$image
 ||povarenok.ru/css/*/media.$stylesheet
-||povarenok.ru/css/*/sp$stylesheet
+||povarenok.ru/css/*/s$stylesheet
 ||povarenok.ru/css/*1.css$stylesheet
 ||povarenok.ru/css/*project$stylesheet
 ||povarenok.ru/i/*/*.jpg
@@ -14100,7 +14100,6 @@ keypro2.ru###interesting_articles
 cripo.com.ua###internetuacom
 argumenti.ru###invite_bottom-news
 inbox.lv###inx-main-roof
-club443.ru###ipbwrapper > div[style="margin:0 auto 5 auto; width:728px; height: 90px"]
 lr-club.com###ipbwrapper > table + #userlinks
 mazepa.to###ipbwrapper > table > tbody > tr > td ~ td
 xboxland.net###ipd-msg-wrapper + br + center
@@ -15288,6 +15287,7 @@ prophotos.ru##.b-custom-banner
 gzt-sv.ru##.b-fad
 xn--80ady2a0c.xn--p1ai##.b-flex
 sobaka.ru##.b-head-banner__link
+komiinform.ru##.b-header
 m24.ru##.b-header-adv-stripe
 bigmir.net##.b-header-banner
 now.ru##.b-header__banner
@@ -16501,6 +16501,7 @@ wday.ru##.hbTop__wrapper
 doctube.ru,narodna-osvita.com.ua##.hban
 rcity.by##.hbaner
 bookskeeper.ru,interesniy.com##.hbanner
+ixbt.com##.hcont
 hdtrailer.ru##.hd_head
 foto.ua##.hdr_banner
 onporn.fun##.hdsd
@@ -17067,6 +17068,7 @@ gdzputina.info##.mob-banner
 www.zakon.kz##.mob_hide[style*="min-height:"]
 servers-rust.ru##.mob_quad_banner
 ixbt.com##.mobadv
+ixbt.com##.mobb
 bankua.com.ua##.mod-custom
 love-sims.ru##.mod-custom3[style]
 newdaynews.ru##.mod-floatbann
@@ -18480,7 +18482,9 @@ loveradio.ru##.vbanners
 upl.ua##.vbet-mid
 myshave.ru##.vbmenu_popup + div[align="center"]:not([id]):not([class])
 bizua.org,podruzke.ru#?#.vce-related-box:-abp-has(> .main-box-inside script)
+ixbt.com##.vcont
 l2db.ru##.vda
+ixbt.com##.vertb
 mobportal.net##.verx_r
 facenews.ua##.verytopbanner
 vesti.ua##.vestiAds
@@ -19219,7 +19223,7 @@ rutr.life,rutracker.lib,rutracker.net,rutracker.nl,rutracker.org##a[href*=".vkpl
 wintorrents.ru##a[href*=".wintorrents.ru"]
 1tv.ru,drive.ru,f1news.ru,gamemag.ru,kinoafisha.info,kinonews.ru,kinorium.com,livejournal.com,myshows.me,onlinestreams.ru,pikabu.ru,pluggedin.ru,sovsport.ru,spletnik.ru,trinixy.ru,www.pesticidy.ru##a[href*="//ads.adfox.ru/"]
 dks.com.ua,enovosty.com,expert.in.ua,galas.te.ua,galinfo.com.ua,nbnews.com.ua,plitkar.com.ua,rivnepost.rv.ua,tenews.org.ua,ukrnews24.net,varta1.com.ua##a[href*="//besplatka.ua"]
-360tv.ru,avtonovostidnya.ru,coop-land.ru,energyfm.ru,gdeichto.ru,kommersant.ru,moe-belgorod.ru,moe-kursk.ru,moe-lipetsk.ru,moe-online.ru,moe-tambov.ru,mydecor.ru,mywebpc.ru,naked-science.ru,new-magazine.ru,news.ru,oper.ru,penzainform.ru,peterburg2.ru,pnz.ru,regnum.ru,russian.rt.com,rutube.ru,sm.news,sportsdaily.ru,super.ru,syzran-small.ru,teleprogramma.pro,thegirl.ru,tsargrad.tv,tulapressa.ru,tvzvezda.ru,u-f.ru,ura.news,utyug.info,vz.ru,xn----7sbabwosghnf8al4lkj7b.xn--p1ai,zaks.ru,zr.ru##a[href*="//dzen.ru/"]
+360tv.ru,avtonovostidnya.ru,coop-land.ru,energyfm.ru,gdeichto.ru,ixbt.com,kommersant.ru,moe-belgorod.ru,moe-kursk.ru,moe-lipetsk.ru,moe-online.ru,moe-tambov.ru,mydecor.ru,mywebpc.ru,naked-science.ru,new-magazine.ru,news.ru,oper.ru,penzainform.ru,peterburg2.ru,pnz.ru,regnum.ru,russian.rt.com,rutube.ru,sm.news,sportsdaily.ru,super.ru,syzran-small.ru,teleprogramma.pro,thegirl.ru,tsargrad.tv,tulapressa.ru,tvzvezda.ru,u-f.ru,ura.news,utyug.info,vz.ru,xn----7sbabwosghnf8al4lkj7b.xn--p1ai,zaks.ru,zr.ru##a[href*="//dzen.ru/"]
 beatmake.ru##a[href*="//go.acstat.com/"]
 porno-island.site##a[href*="//goo.su/"]
 animevost.tv,senpai.cc##a[href*="//inlnk.ru/"]
