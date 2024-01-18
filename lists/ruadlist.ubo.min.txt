@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 18 Jan 2024 15:21:24 +0000
-! Diff-Path: ../patches/2024.1.18.921.patch#ruadlist
+! Last modified: Thu, 18 Jan 2024 20:21:41 +0000
+! Diff-Path: ../patches/2024.1.18.1221.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -19301,7 +19301,6 @@ asienda.ru,diets.ru,mycharm.ru,myjane.ru,povarenok.ru,relook.ru,stranamam.ru##a[
 bombardir.ru##a[href*="://bmbrdr.ru/"]
 programmersforum.ru#?#a[href*="://clck.ru/"] ~ *:-abp-contains(https://)
 kinobase.org##a[href*="://clcr.me/"]
-opennet.me,opennet.ru##a[href*="://click.opennet.ru/cgi-bin/"]
 newstudio.tv,player.rudub.net##a[href*="://cutter.li"]
 fast-torrent.tv##a[href*="://fast-torrent.tv/gomed.php"]
 spys.one##a[href*="://fineproxy.org/"]
@@ -22128,6 +22127,7 @@ dzen.ru##div[data-name^="zen2"]
 deti.mail.ru##.cols__inner > .box
 deti.mail.ru##.rb
 @@||deti.mail.ru^$generichide
+deti.mail.ru##div[data-closewrap-container]
 deti.mail.ru##div[data-qa="Box"]
 deti.mail.ru##tr > .daynews__spring
 ! Здоровье
@@ -27456,6 +27456,7 @@ softbox.tv###cn-content.playlists-iframe:style(display: block !important)
 softportal.com##.btn-download > .submit-spinner
 softportal.com##.btn-download:style(opacity: 1 !important; pointer-events: auto !important)
 softportal.com##.cardPageDescMain > div[id][style]
+softportal.com##.contentWrap > .st-browser__page ~ div[id][style]
 softportal.com##a[href^="prog"][target="_blank"]
 softportal.com##a[href^="prog"][target="_blank"] ~ *
 softportal.com##html:style(overflow: auto !important)
@@ -28186,6 +28187,7 @@ kakprosto.ru##+js(cookie-remover, yadb)
 vk.com,vk.ru##+js(href-sanitizer, a[href*="/away.php?"], ?to)
 game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(href-sanitizer, a[href*="/go.php"], ?url)
 softoroom.org##+js(href-sanitizer, a[href*="/go.php?go="], ?go)
+opennet.me,opennet.ru##+js(href-sanitizer, a[href*="://click.opennet.ru/cgi-bin/"], ?to)
 lifehacker.ru##+js(href-sanitizer, a[href][rel*="sponsored"][target="_blank"], ?goto)
 www.ixbt.com##+js(href-sanitizer, a[href^="//www.ixbt.com/click/?c="], [title])
 vz.ru##+js(href-sanitizer, a[href^="/redir/"], ?exturl)
