@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 22 Jan 2024 14:23:17 +0000
-! Diff-Path: ../patches/2024.1.22.863.patch#ruadlist
+! Last modified: Mon, 22 Jan 2024 19:16:39 +0000
+! Diff-Path: ../patches/2024.1.22.1156.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10558,7 +10558,6 @@ $xmlhttprequest,domain=happy-biock.info|happy-block.info|howto-news.info|mschist
 /load_zahav.js$domain=zahav.ru
 /manifest.json$domain=fairytail-online.ru|happy-biock.info|happy-block.info|howto-news.info
 /media/index$domain=gdz-putina.fun|gdz.ninja|gdz.ru|gdzguru.com|gdzotputina.club|gdzputina.net|megaresheba.com|megaresheba.ru|resheba.me|reshebnik.com|spishi.fun|stavcur.ru|xn--c1acj.xn--p1acf|xn--c1acj.xn--p1ai|zoobrilka.net
-/media/js/reklama.js$domain=amurmedia.ru|chitamedia.su|chukotkamedia.ru|eaomedia.ru|irkutskmedia.ru|kamchatkamedia.ru|krasnodarmedia.su|krasnoyarskmedia.ru|magadanmedia.ru|nakhodka.media|priamurmedia.ru|primamedia.ru|sakhalinmedia.ru|sevastopolmedia.ru|stavropol.media|ulanmedia.ru|ussurmedia.ru|yakutiamedia.ru
 /metrika/?token=$subdocument,domain=fast-fiml.ru|fast-torrent.club|fast-torrent.ru|fast-torrent.su|filmpotok.ru|kinomuch.ru|nebeda.net|pickfilm.ru|veleto.ru|vixim.ru
 /modul*php?img$domain=game-torrent.net|rugames.net|topigr.com|torrent-besplatno.net|torrent9.org|utorrentgames.net|yangteacher.ru
 /multyadv.js$domain=ixbt.com
@@ -12558,7 +12557,7 @@ lada.kz/uploads/banners/
 ||prikol.ru^*/branding_
 ||prikols.com.ru/eroru/
 ||prilok.ru/templates/Flesha/js/jquery.jmpopups$script
-||primamedia.ru^*/banner_fullscreen.
+||primamediamts.servicecdn.ru/media/js/reklama.js
 ||primorye.ru/ti/
 ||primpogoda.ru/imported/delivery/
 ||printerprofi.ru/proxy.php?r$script
@@ -15434,7 +15433,7 @@ gid-minecraft.ru##.banner-bottom-wrapper
 dynamomania.com##.banner-box
 driveroff.net,samlab.ws##.banner-categories
 repost.uz,tvmag.ru##.banner-center
-job.ru,newsvl.ru,tayga.info,tet.tv,unian.info,unian.net,unian.ua,vctr.media##.banner-container
+amurmedia.ru,chitamedia.su,chukotkamedia.ru,eaomedia.ru,irkutskmedia.ru,job.ru,kamchatkamedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,magadanmedia.ru,nakhodka.media,newsvl.ru,priamurmedia.ru,primamedia.ru,sakhalinmedia.ru,sevastopolmedia.ru,stavropol.media,tayga.info,tet.tv,ulanmedia.ru,unian.info,unian.net,unian.ua,ussurmedia.ru,vctr.media,yakutiamedia.ru##.banner-container
 para.by##.banner-cube
 biysk-ok.ru##.banner-default
 vikna.if.ua##.banner-fullborder
@@ -15472,8 +15471,6 @@ day.az,lux.fm##.banner-wrapper
 appleinsider.ru##.banner-zone
 allboxing.ru##.banner.black
 allboxing.ru##.banner.red
-amurmedia.ru,chitamedia.su,chukotkamedia.ru,eaomedia.ru,irkutskmedia.ru,kamchatkamedia.ru,kmory.ru,krasnodarmedia.su,krasnoyarskmedia.ru,magadanmedia.ru,nakhodka.media,priamurmedia.ru,primamedia.ru,sakhalinmedia.ru,sevastopolmedia.ru,stavropol.media,ulanmedia.ru,ussurmedia.ru,yakutiamedia.ru##.banner1
-amurmedia.ru,chitamedia.su,chukotkamedia.ru,eaomedia.ru,irkutskmedia.ru,kamchatkamedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,magadanmedia.ru,nakhodka.media,priamurmedia.ru,primamedia.ru,sakhalinmedia.ru,sevastopolmedia.ru,stavropol.media,svidomo.org,ulanmedia.ru,ussurmedia.ru,yakutiamedia.ru##.banner2
 rfpl.org##.banner240
 kazanfirst.ru##.banner:not(.topcontent_banner)
 domik.ua##.bannerAffix
@@ -16160,7 +16157,6 @@ dermatitanet.ru##.ddd
 pcprogs.net##.dds
 vesti.kz##.deamteam-top-btn
 qwe.ru##.default_menu > div:first-child
-amurmedia.ru,chitamedia.su,chukotkamedia.ru,eaomedia.ru,irkutskmedia.ru,kamchatkamedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,magadanmedia.ru,nakhodka.media,priamurmedia.ru,primamedia.ru,sakhalinmedia.ru,sevastopolmedia.ru,stavropol.media,ulanmedia.ru,ussurmedia.ru,yakutiamedia.ru#?#.deflt-blk:-abp-has(> div[id^="adfox_"])
 delfi.lt##.delfi-ads-front-container
 botanam.net,gdzputina.me##.desctop
 ixbt.com,ixbt.market##.deskadv
@@ -17164,7 +17160,7 @@ narodclub.net##.news > div[onmouseout][onmouseover][style]
 gorod.cn.ua##.news > li > noindex
 zhmak.info##.news > noindex
 gtavicecity.ru##.news-ads
-amurmedia.ru,auto.onliner.by,chitamedia.su,chukotkamedia.ru,eaomedia.ru,fisher.spb.ru,irkutskmedia.ru,kamchatkamedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,magadanmedia.ru,nakhodka.media,onliner.by,priamurmedia.ru,primamedia.ru,sakhalinmedia.ru,sevastopolmedia.ru,stavropol.media,ulanmedia.ru,ussurmedia.ru,yakutiamedia.ru##.news-banner
+auto.onliner.by,fisher.spb.ru,onliner.by##.news-banner
 newsomsk.ru##.news-banners-source
 glavpost.com##.news-block-magick
 primpogoda.ru##.news-container > hr ~ hr ~ hr
@@ -17368,7 +17364,6 @@ tochka.net##.partner-news:not(.b_crosswidget)
 maximum.fm##.partner-recomendation
 lifehacker.ru##.partner-strip
 zaxid.net##.partner-wrap-block
-amurmedia.ru,chitamedia.su,chukotkamedia.ru,eaomedia.ru,irkutskmedia.ru,kamchatkamedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,magadanmedia.ru,nakhodka.media,priamurmedia.ru,primamedia.ru,sakhalinmedia.ru,sevastopolmedia.ru,stavropol.media,ulanmedia.ru,ussurmedia.ru,yakutiamedia.ru##.partner2
 usemind.org##.partner_
 iz.ru##.partner_before_head
 i.ua##.partner_links
@@ -17799,7 +17794,6 @@ rubukkit.org##.rubadv-post
 rubukkit.org##.rubadv-top-in
 tut.by##.rubric-brand
 medside.ru##.rusfond-block
-amurmedia.ru,chitamedia.su,chukotkamedia.ru,eaomedia.ru,irkutskmedia.ru,kamchatkamedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,magadanmedia.ru,nakhodka.media,priamurmedia.ru,primamedia.ru,sakhalinmedia.ru,sevastopolmedia.ru,stavropol.media,ulanmedia.ru,ussurmedia.ru,yakutiamedia.ru##.s-banner
 stroy.ykt.ru##.s-slider
 map.cn.ua##.sModuleContent
 latifundist.com##.sa_widget
@@ -19238,7 +19232,7 @@ adult-images.ru,imgbum.ru,screenpost.ru,xpicture.ru##a[href*="//parnuxi.biz"]
 syzran-small.ru,xn----7sbabwosghnf8al4lkj7b.xn--p1ai##a[href*="//pulse.mail.ru/"]
 kommersant.ru##a[href*="//rusfond.ru"]
 kinoafisha.info,oper.ru##a[href*="//wink."]
-1777.ru,1istochnik.ru,7days.ru,actualnews.org,allboxing.ru,argumenti.ru,atas.info,autosaratov.ru,autosport.com.ru,av.by,baby.ru,bel.ru,belkagomel.by,bidbaits.ru,carsweek.ru,cq.ru,ctc.ru,deita.ru,eva.ru,finam.ru,fishki.net,fontanka.ru,food.ru,friday.ru,iz.ru,kaifolog.net,lipetskmedia.ru,mel.fm,mk.ru,nashe.ru,new-magazine.ru,noob-club.ru,nsn.fm,om1.ru,osnmedia.ru,politrussia.com,povarenok.ru,prufy.ru,radiojazzfm.ru,radioultra.ru,realt.by,riamo.ru,rockfm.ru,russian.rt.com,rusvesna.su,sm.news,smolensk-i.ru,smotrim.ru,sovets.net,sovets24.ru,starhit.ru,study.ru,svpressa.ru,takiedela.ru,teleport2001.ru,topnews.ru,tv2.today,ukraina.ru,vm.ru,vsezdorovo.com,www.kolesa.ru,zaycev.net##a[href*="//zen.yandex.ru/"]
+1777.ru,1istochnik.ru,7days.ru,actualnews.org,allboxing.ru,amurmedia.ru,argumenti.ru,atas.info,autosaratov.ru,autosport.com.ru,av.by,baby.ru,bel.ru,belkagomel.by,bidbaits.ru,carsweek.ru,chitamedia.su,chukotkamedia.ru,cq.ru,ctc.ru,deita.ru,eaomedia.ru,eva.ru,finam.ru,fishki.net,fontanka.ru,food.ru,friday.ru,irkutskmedia.ru,iz.ru,kaifolog.net,kamchatkamedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,lipetskmedia.ru,magadanmedia.ru,mel.fm,mk.ru,nakhodka.media,nashe.ru,new-magazine.ru,noob-club.ru,nsn.fm,om1.ru,osnmedia.ru,politrussia.com,povarenok.ru,priamurmedia.ru,primamedia.ru,prufy.ru,radiojazzfm.ru,radioultra.ru,realt.by,riamo.ru,rockfm.ru,russian.rt.com,rusvesna.su,sakhalinmedia.ru,sevastopolmedia.ru,sm.news,smolensk-i.ru,smotrim.ru,sovets.net,sovets24.ru,starhit.ru,stavropol.media,study.ru,svpressa.ru,takiedela.ru,teleport2001.ru,topnews.ru,tv2.today,ukraina.ru,ulanmedia.ru,ussurmedia.ru,vm.ru,vsezdorovo.com,www.kolesa.ru,yakutiamedia.ru,zaycev.net##a[href*="//zen.yandex.ru/"]
 kritka.su,zserials.cc##a[href*="/1b.yt"]
 zserials.cc##a[href*="/1w.tf"]
 c-sgo.ru,sportliga.com##a[href*="/1xstavka"]
@@ -25893,6 +25887,7 @@ gbsmp.ru#@#img[width="728"][height="90"]
 @@||player.*.com/prebidlink/*.js|$script,domain=tsn.ua
 @@||player.3tv.im^$script,stylesheet,domain=player.3tv.im
 @@||player.adtelligent.com/static/player.$script,stylesheet,domain=ictv.ua|inter.ua|k1.ua|novy.tv|ntn.ua|player.starlight.digital|stb.ua|teleportal.ua|vringe.com|xsport.ua
+@@||premium.adwile.com/$xmlhttprequest,domain=cc-fan.tv|cn-fan.tv|fox-fan.tv|nf-fan.tv
 @@||print-post.com^*.js$script,domain=print-post.com
 @@||pubads.g.doubleclick.net/gampad/ads?sz=$xmlhttprequest,domain=olympics.1tv.ru
 @@||pvpru.com/css/banners/300$domain=pvpru.com
@@ -25904,7 +25899,6 @@ gbsmp.ru#@#img[width="728"][height="90"]
 @@||rem-tv.net^*/advert.js|$script,domain=rem-tv.net
 @@||remont-aud.net/pubads.ads.js|$script,domain=remont-aud.net
 @@||revdepo.com/static/advertisement.js|$script,domain=audioz.download|mac-torrent-download.net
-@@||richads.com/$xmlhttprequest,domain=cc-fan.tv|cn-fan.tv|fox-fan.tv|nf-fan.tv
 @@||ringside24.com/static/js/advert-min.js|$script,domain=ringside24.com
 @@||ru-skript.ru/templates/ruhacker/images/*logo.png
 @@||s-cdn.sportbox.ru^*/adfox.$script,domain=matchtv.ru|news.sportbox.ru
@@ -26099,7 +26093,6 @@ chaynikam.info##div[id^="mdl_ctnr_"]
 zazloo.ru##div[style="background: darkorange; padding: 10px;"]
 rt02.ru##img[alt*="реклам"]
 ritsatv.ru##img[src*="/as/"]
-cc-fan.tv,cn-fan.tv,fox-fan.tv,nf-fan.tv##img[src*="bjb23m4b2j4b2"]
 onliner.by##img[src="https://content.onliner.by/news/1100x5616/eb7d2f564b229c0da9f39ec11eb7d529.png"]
 d3ward.github.io##main > ._bg-red
 au-ok.com##p[style="border:3px solid #C1FF0A;background-color:#d5d5d1;padding:10px;"]
