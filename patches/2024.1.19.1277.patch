@@ -1,8 +1,8 @@
-diff name:ruadlist lines:52 checksum:b7b22d516b
+diff name:ruadlist lines:61 checksum:2bd2155698
 d4 2
 a5 2
-! Last modified: Mon, 22 Jan 2024 09:22:35 +0000
-! Diff-Path: ../patches/2024.1.22.562.patch#ruadlist
+! Last modified: Mon, 22 Jan 2024 14:23:17 +0000
+! Diff-Path: ../patches/2024.1.22.863.patch#ruadlist
 a472 1
 ||appscriptshark.com^$third-party
 a4526 1
@@ -30,6 +30,12 @@ a16392 1
 bestweapon.in##.friend_links
 a18345 1
 nnews.com.ua##.top-bar-ads
+d20114 2
+a20138 1
+povarenok.ru##body > div:empty + div > a[target="_blank"]
+a20147 1
+povarenok.ru##body > div[class]:empty:not([id]):not([style])
+d20174 2
 d20544 1
 a20544 1
 agronews.ua,globalmsk.ru,nta.ua,soccer.ru##div[class^="baner"]
@@ -42,6 +48,8 @@ d25782 1
 d25854 1
 a25903 1
 @@||richads.com/$xmlhttprequest,domain=cc-fan.tv|cn-fan.tv|fox-fan.tv|nf-fan.tv
+a26030 1
+a-russia.ru##.bsac
 d26065 1
 a26065 1
 2es.work,adventuretime.ru,ani.wtf,cdnneedtv.ru,cdnpotok.com,cdntelesee.com,cdntvpotok.com,chepok.xyz,domatv.net,hdone.net,hdru.net,hindcine.tv,kipolino.site,klplayer.website,liveball.cc,liveball.uno,liveball7.gq,liveball8.ml,luxurytv.online,oneliketv.com,phys-kids.com,pokaz.me,rxtv.github.io,sovetromantica.com,strah.video,t1pochek.site,tip0chek.site,tipochek.xyz,worldvideo.site#?#[id^="oframe"] > pjsdiv:-abp-has(> pjsdiv:-abp-contains(/adblock|adblok|адблок|блокировщик|блокировку|фрибет/i))
@@ -51,3 +59,4 @@ a28272 1
 farposst.ru##+js(remove-node-text, #text, Реклама)
 a28511 1
 ~3igames.mail.ru,~auto.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~esports.mail.ru,~games.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mailblog.mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##+js(set-constant, mr.data.asteroids, undefined)
+d28518 1

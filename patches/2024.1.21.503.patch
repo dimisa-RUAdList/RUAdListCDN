@@ -1,8 +1,8 @@
-diff name:ruadlist lines:19 checksum:b7b22d516b
+diff name:ruadlist lines:28 checksum:2bd2155698
 d4 2
 a5 2
-! Last modified: Mon, 22 Jan 2024 09:22:35 +0000
-! Diff-Path: ../patches/2024.1.22.562.patch#ruadlist
+! Last modified: Mon, 22 Jan 2024 14:23:17 +0000
+! Diff-Path: ../patches/2024.1.22.863.patch#ruadlist
 a10197 1
 ||farposst.ru^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: cse.google.com *.google.com/cse/ *.dev *.io *.net *.org *.ru *.ua
 d16217 1
@@ -10,11 +10,20 @@ a16330 1
 russian.rt.com##.follows-channel_djen
 a18349 1
 nnews.com.ua##.top-bar-ads
+d20118 2
+a20142 1
+povarenok.ru##body > div:empty + div > a[target="_blank"]
+a20151 1
+povarenok.ru##body > div[class]:empty:not([id]):not([style])
+d20178 2
 a25906 1
 @@||richads.com/$xmlhttprequest,domain=cc-fan.tv|cn-fan.tv|fox-fan.tv|nf-fan.tv
 d25930 1
+a26034 1
+a-russia.ru##.bsac
 d26101 1
 a26101 1
 cc-fan.tv,cn-fan.tv,fox-fan.tv,nf-fan.tv##img[src*="bjb23m4b2j4b2"]
 a28277 1
 farposst.ru##+js(remove-node-text, #text, Реклама)
+d28524 1
