@@ -1,8 +1,8 @@
-diff name:ruadlist lines:57 checksum:36e7dc808f
+diff name:ruadlist lines:54 checksum:84947585d9
 d4 2
 a5 2
-! Last modified: Tue, 23 Jan 2024 15:21:48 +0000
-! Diff-Path: ../patches/2024.1.23.921.patch#ruadlist
+! Last modified: Tue, 23 Jan 2024 20:22:06 +0000
+! Diff-Path: ../patches/2024.1.23.1222.patch#ruadlist
 d10561 1
 d12561 1
 a12561 1
@@ -18,9 +18,6 @@ d17167 1
 a17167 1
 auto.onliner.by,fisher.spb.ru,onliner.by##.news-banner
 d17371 1
-d17740 1
-a17740 1
-ritsatv.ru##.right_panel > div
 d17802 1
 a18592 1
 nur.kz##.widget-parimatch-wrapper
@@ -28,13 +25,13 @@ d19241 1
 a19241 1
 1777.ru,1istochnik.ru,7days.ru,actualnews.org,allboxing.ru,amurmedia.ru,argumenti.ru,atas.info,autosaratov.ru,autosport.com.ru,av.by,baby.ru,bel.ru,belkagomel.by,bidbaits.ru,carsweek.ru,chitamedia.su,chukotkamedia.ru,cq.ru,ctc.ru,deita.ru,eaomedia.ru,eva.ru,finam.ru,fishki.net,fontanka.ru,food.ru,friday.ru,irkutskmedia.ru,iz.ru,kaifolog.net,kamchatkamedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,lipetskmedia.ru,magadanmedia.ru,mel.fm,mk.ru,nakhodka.media,nashe.ru,new-magazine.ru,noob-club.ru,nsn.fm,om1.ru,osnmedia.ru,politrussia.com,povarenok.ru,priamurmedia.ru,primamedia.ru,prufy.ru,radiojazzfm.ru,radioultra.ru,realt.by,riamo.ru,rockfm.ru,russian.rt.com,rusvesna.su,sakhalinmedia.ru,sevastopolmedia.ru,sm.news,smolensk-i.ru,smotrim.ru,sovets.net,sovets24.ru,starhit.ru,stavropol.media,study.ru,svpressa.ru,takiedela.ru,teleport2001.ru,topnews.ru,tv2.today,ukraina.ru,ulanmedia.ru,ussurmedia.ru,vm.ru,vsezdorovo.com,www.kolesa.ru,yakutiamedia.ru,zaycev.net##a[href*="//zen.yandex.ru/"]
 d20120 2
-a20144 1
-povarenok.ru##body > div:empty + div > a[target="_blank"]
-a20153 1
-povarenok.ru##body > div[class]:empty:not([id]):not([style])
+a20153 2
+povarenok.ru##body > div[class]:empty[style="height: 100%;"]
+povarenok.ru##body > div[class]:empty[style="height: 100%;"] + div a
 d20180 2
-a21854 1
+a21854 2
 ||ritsatv.ru^$csp=script-src
+||ritsatv.ru^$popup
 a21865 1
 ||pikabu.ru/ajax/?*&fb=$xmlhttprequest,domain=pikabu.ru
 d24962 1

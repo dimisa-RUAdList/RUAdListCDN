@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 23 Jan 2024 15:21:48 +0000
-! Diff-Path: ../patches/2024.1.23.921.patch#ruadlist
+! Last modified: Tue, 23 Jan 2024 20:22:06 +0000
+! Diff-Path: ../patches/2024.1.23.1222.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -17733,7 +17733,7 @@ raskraska.com##.right_column > noindex
 otzyvua.net##.right_column_one > div[class^="mainblock h"]
 karavan.tver.ru##.right_con > :not(.city_paper)
 glavpost.ua##.right_content noindex
-ritsatv.ru##.right_panel > div
+ritsatv.ru##.right_panel
 prisnilos.su##.right_side
 sotovik.ru##.right_zone > #banner
 best-antidepressanty.ru##.rightbann
@@ -20136,7 +20136,6 @@ forchecking.ru##body > div > a[target="_blank"] > img
 forum.watch.ru##body > div > div[style*="overflow"]
 nadavi.com.ua,nadavi.ru##body > div > table[width="92%"]:not([class="top-region"])
 orda.kz##body > div.layer0
-povarenok.ru##body > div:empty + div > a[target="_blank"]
 coop-land.ru##body > div:not([id]):not([class]):empty
 boom365hd.com,sport365hd.com,sport365hd.net,whd365.pro##body > div:not([id]):not([class])[style*="z-index"]
 4725.ru##body > div:not([id]):not([class])[style^="position: relative;z-index:"]
@@ -20146,7 +20145,8 @@ gamesisart.ru##body > div[align="left"][style^="position: fixed;"]
 siver.com.ua##body > div[align="right"] > span
 999.md,delo.ua,nevasport.ru##body > div[class*="branding"]
 progipertoniyu.ru##body > div[class*="modal"]
-povarenok.ru##body > div[class]:empty:not([id]):not([style])
+povarenok.ru##body > div[class]:empty[style="height: 100%;"]
+povarenok.ru##body > div[class]:empty[style="height: 100%;"] + div a
 votrube.ru##body > div[class]:last-of-type
 anilib.moe,anilib.one,anilib.top,anilibria.iss.one,anilibria.tv##body > div[class]:not([id]):nth-child(-n+5) > a[href]
 russian.rt.com##body > div[class^="Popup-"]
@@ -21847,6 +21847,7 @@ rafkino.com##div[id^="MarketGid"]
 @@||s.znctrack.net/z|$xmlhttprequest,domain=censor.net|gazeta.ua|i.ua|mail.ukr.net|meteofor.com.ua|tabloid.pravda.com.ua|viva.ua
 ||imgfrost.net^$third-party
 ||ritsatv.ru^$csp=script-src
+||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
 ! Liveinternet (ловушка для обфускации)
 /^https?://www\.liveinternet\.ru/(?!utf\/|q\/js\/|js\/|4Ek/JS/diary/main/nav/regoradd.js|autosave.js|cgi-bin/rpls.fcgi?|ckeditor\/|ckfinder\/|main_new_1251.js|share/js/share.js|spell/spell.js|uploader\/|vbcode.js|vbcode_language.js)/$script,domain=www.liveinternet.ru
