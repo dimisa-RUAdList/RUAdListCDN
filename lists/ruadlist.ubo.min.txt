@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 23 Jan 2024 10:25:31 +0000
-! Diff-Path: ../patches/2024.1.23.625.patch#ruadlist
+! Last modified: Tue, 23 Jan 2024 15:21:48 +0000
+! Diff-Path: ../patches/2024.1.23.921.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -15661,6 +15661,7 @@ znaikak.ru##.blockLinks
 news29.ru##.blockOverlay.blockUI
 domik.ua##.blockProjects_stocksInNews
 sunsurv.ru##.blockRight
+programma-peredach.com##.blockSns
 aktobeinfo.kz##.block[id*="-banners-"]
 gooool.tv,gooool365.org##.block_d
 openssource.biz##.block_left
@@ -17732,7 +17733,7 @@ raskraska.com##.right_column > noindex
 otzyvua.net##.right_column_one > div[class^="mainblock h"]
 karavan.tver.ru##.right_con > :not(.city_paper)
 glavpost.ua##.right_content noindex
-ritsatv.ru##.right_panel
+ritsatv.ru##.right_panel > div
 prisnilos.su##.right_side
 sotovik.ru##.right_zone > #banner
 best-antidepressanty.ru##.rightbann
@@ -18584,6 +18585,7 @@ shopinfo.com.ua##.widget-group-no-name .sidebarAdvertising
 shopinfo.com.ua#?#.widget-group-no-name:-abp-has(.sidebarAdvertising)
 tv.i.ua##.widget-news_premium
 maanimo.com##.widget-offers
+nur.kz##.widget-parimatch-wrapper
 bibliofond.ru##.widget-pomogi
 au-ok.com#?#.widget-sidebar:-abp-has(> div .adsbygoogle)
 au-ok.com#?#.widget-sidebar:-abp-has(> div > [id^="adfox_"])
@@ -21844,6 +21846,7 @@ rafkino.com##div[id^="MarketGid"]
 @@||s.zmctrack.net/z|$xmlhttprequest,domain=i.ua|ivona.ua|meteo.ua|panno4ka.net
 @@||s.znctrack.net/z|$xmlhttprequest,domain=censor.net|gazeta.ua|i.ua|mail.ukr.net|meteofor.com.ua|tabloid.pravda.com.ua|viva.ua
 ||imgfrost.net^$third-party
+||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$~document
 ! Liveinternet (ловушка для обфускации)
 /^https?://www\.liveinternet\.ru/(?!utf\/|q\/js\/|js\/|4Ek/JS/diary/main/nav/regoradd.js|autosave.js|cgi-bin/rpls.fcgi?|ckeditor\/|ckfinder\/|main_new_1251.js|share/js/share.js|spell/spell.js|uploader\/|vbcode.js|vbcode_language.js)/$script,domain=www.liveinternet.ru
@@ -21855,6 +21858,7 @@ rafkino.com##div[id^="MarketGid"]
 ! Pikabu (ловушка для обфускации)
 ||pikabu.ru/ajax/?*&*key=$xmlhttprequest,domain=pikabu.ru
 ||pikabu.ru/ajax/?*&__$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/ajax/?*&fb=$xmlhttprequest,domain=pikabu.ru
 ||pikabu.ru/ajax/?*=*key=$xmlhttprequest,domain=pikabu.ru
 ||pikabu.ru/ajax/?*_fb=$xmlhttprequest,domain=pikabu.ru
 ! селекторы
@@ -24951,7 +24955,7 @@ cheb.ru,cheboksary.ws,kugesi.ru,na-svyazi.ru##a[href*="/ad.adriver."]
 @@||rafkino.com^$generichide
 @@||raskraska.com^$generichide
 @@||redcyt.com/player.php^$generichide
-@@||ritsatv.ru/player/$generichide
+@@||ritsatv.ru^$generichide
 @@||riwkus.pro^$generichide
 @@||root-nation.com^$generichide
 @@||rozetked.me/login|$generichide
@@ -25572,7 +25576,6 @@ xn--112-5cd3baof9c5c.xn--p1ai#@#.wrapad
 @@||reklama.studio^$domain=garantmedia.com
 @@||reklamavarteme.ru^*/reklama/$domain=reklamavarteme.ru
 @@||renault.ru/_beta/banner_system/banner.php$domain=renault.ru
-@@||ritsatv.ru/*.js|$script,~third-party
 @@||rock-online.ru/thema/rock/images/baner_$~third-party
 @@||roshlam.ru/adverts/$xmlhttprequest,domain=roshlam.ru
 @@||rostcars.ru/css/advertisement.css$~third-party
@@ -25998,7 +26001,6 @@ zhurnaly.biz#@#.item-ads
 ! - hide & block
 pornhub.com###abAlert
 d3ward.github.io###ad_ctd
-ritsatv.ru###blockingMessage
 tvvse.my1.ru###cont-i > span[style*="color:red"]
 fast-fiml.ru,fast-torrent.club,fast-torrent.ru,fast-torrent.su,filmpotok.ru,kinomuch.ru,nebeda.net,pickfilm.ru,veleto.ru,vixim.ru###container > center:nth-child(-n+3)
 d3ward.github.io###cts_test
@@ -26092,7 +26094,6 @@ informator.ua#?#div[id^="brid-player"] ~ p:-abp-contains(AdBlock)
 chaynikam.info##div[id^="mdl_ctnr_"]
 zazloo.ru##div[style="background: darkorange; padding: 10px;"]
 rt02.ru##img[alt*="реклам"]
-ritsatv.ru##img[src*="/as/"]
 onliner.by##img[src="https://content.onliner.by/news/1100x5616/eb7d2f564b229c0da9f39ec11eb7d529.png"]
 d3ward.github.io##main > ._bg-red
 au-ok.com##p[style="border:3px solid #C1FF0A;background-color:#d5d5d1;padding:10px;"]
@@ -26104,7 +26105,6 @@ au-ok.com##p[style="border:3px solid #C1FF0A;background-color:#d5d5d1;padding:10
 ||itcrowd.top/templates/yootheme/block.js
 ||moi-detsad.ru/wp-content/cache/autoptimize/js/autoptimize_*.js
 ||pcnews.ru/js/blockadblock.js
-||ritsatv.ru/as/$image
 ||ritsatv.ru^*adblock$image
 ||root-server.ru/wp-content/plugins/*/js/custom.js
 ||rybolov.ee/forum/Themes/RealPopup/
@@ -28032,7 +28032,6 @@ my-expert.ru##+js(abort-current-inline-script, document.getElementsByTagName, un
 brigadtv.ru,castle-serial.ru,ehlita.ru,gameout.ru,itevonklass.ru,izmailovtv.xyz,karateltv.ru,lyucifer.tv,m-z.tv,my-expert.ru,pokazuha.ru,samomdele.tv,saske.tv,sorvigolovatv.ru,taynyeistiny.ru,transformator220.ru##+js(abort-current-inline-script, document.oncontextmenu)
 stalker-mods.clan.su,stalker-mods.su##+js(abort-current-inline-script, document.onkeydown)
 agroreview.com##+js(abort-current-inline-script, encodeURIComponent, rcBuf)
-ritsatv.ru##+js(abort-current-inline-script, fetch)
 gwss.ru##+js(abort-current-inline-script, fuckAdBlock, undefined)
 hardwareluxx.ru##+js(abort-current-inline-script, jQuery, backgroundImage)
 marieclaire.ua##+js(abort-current-inline-script, redram, /загрузка.../)
@@ -28090,6 +28089,7 @@ terrikon.com##+js(abort-on-property-read, bdy)
 medicina.ua##+js(abort-on-property-read, blocked_action)
 overclockers.ru##+js(abort-on-property-read, cardinals)
 zaruba.fun##+js(abort-on-property-read, clickNS4)
+ritsatv.ru##+js(abort-on-property-read, console.clear)
 vesti.ua##+js(abort-on-property-read, createAds)
 gazeta.ru##+js(abort-on-property-read, creepyVideo)
 kolizhanka.com.ua##+js(abort-on-property-read, disable_copy)
@@ -28178,6 +28178,7 @@ m.lenta.ru##+js(addEventListener-defuser, scroll, getBoundingClientRect)
 www.vesti.ru##+js(addEventListener-defuser, scroll, players)
 lenta.ru##+js(addEventListener-defuser, scroll, window.history.pushState)
 aida64.com.ua,aida64russia.com##+js(addEventListener-defuser, wheel)
+ritsatv.ru##+js(alert-buster)
 comedy-radio.ru,kufar.by,radioromantika.ru,relax-fm.ru,rg.ru,sm.news,ura.news,veseloeradio.ru##+js(cookie-remover, /^bda|^bltsr/)
 ~passport.yandex.by,~passport.yandex.kz,~passport.yandex.ru,~passport.yandex.uz,yandex.by,yandex.kz,yandex.ru,yandex.uz##+js(cookie-remover, /^bltsr$|^JPIqApiY$|^specific$|^substantial$/)
 yapx.ru##+js(cookie-remover, /adblock_/)
@@ -28616,7 +28617,6 @@ pikabu.ru##^script:has-text(addPlaceholder)
 otzovik.com##^script:has-text(an.yan)
 hvylya.net,i.ua,ivona.ua,kriminal.tv,meteofor.com.ua,mport.ua,nv.ua,zv.zp.ua##^script:has-text(attachShadow)
 game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##^script:has-text(dimisa)
-ritsatv.ru##^script:has-text(fetch)
 cq.ru##^script:has-text(window.initBanners)
 www.ukr.net##^script:has-text(znc|track)
 !#endif

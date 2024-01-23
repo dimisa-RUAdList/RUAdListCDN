@@ -1,8 +1,8 @@
-diff name:ruadlist lines:68 checksum:9c107bc829
+diff name:ruadlist lines:92 checksum:36e7dc808f
 d4 2
 a5 2
-! Last modified: Tue, 23 Jan 2024 10:25:31 +0000
-! Diff-Path: ../patches/2024.1.23.625.patch#ruadlist
+! Last modified: Tue, 23 Jan 2024 15:21:48 +0000
+! Diff-Path: ../patches/2024.1.23.921.patch#ruadlist
 a472 1
 ||appscriptshark.com^$third-party
 a4526 1
@@ -28,6 +28,8 @@ d15433 1
 a15433 1
 amurmedia.ru,chitamedia.su,chukotkamedia.ru,eaomedia.ru,irkutskmedia.ru,job.ru,kamchatkamedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,magadanmedia.ru,nakhodka.media,newsvl.ru,priamurmedia.ru,primamedia.ru,sakhalinmedia.ru,sevastopolmedia.ru,stavropol.media,tayga.info,tet.tv,ulanmedia.ru,unian.info,unian.net,unian.ua,ussurmedia.ru,vctr.media,yakutiamedia.ru##.banner-container
 d15471 2
+a15662 1
+programma-peredach.com##.blockSns
 d16159 1
 d16214 1
 a16327 1
@@ -39,9 +41,14 @@ d17163 1
 a17163 1
 auto.onliner.by,fisher.spb.ru,onliner.by##.news-banner
 d17367 1
+d17736 1
+a17736 1
+ritsatv.ru##.right_panel > div
 d17798 1
 a18346 1
 nnews.com.ua##.top-bar-ads
+a18587 1
+nur.kz##.widget-parimatch-wrapper
 d19236 1
 a19236 1
 1777.ru,1istochnik.ru,7days.ru,actualnews.org,allboxing.ru,amurmedia.ru,argumenti.ru,atas.info,autosaratov.ru,autosport.com.ru,av.by,baby.ru,bel.ru,belkagomel.by,bidbaits.ru,carsweek.ru,chitamedia.su,chukotkamedia.ru,cq.ru,ctc.ru,deita.ru,eaomedia.ru,eva.ru,finam.ru,fishki.net,fontanka.ru,food.ru,friday.ru,irkutskmedia.ru,iz.ru,kaifolog.net,kamchatkamedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,lipetskmedia.ru,magadanmedia.ru,mel.fm,mk.ru,nakhodka.media,nashe.ru,new-magazine.ru,noob-club.ru,nsn.fm,om1.ru,osnmedia.ru,politrussia.com,povarenok.ru,priamurmedia.ru,primamedia.ru,prufy.ru,radiojazzfm.ru,radioultra.ru,realt.by,riamo.ru,rockfm.ru,russian.rt.com,rusvesna.su,sakhalinmedia.ru,sevastopolmedia.ru,sm.news,smolensk-i.ru,smotrim.ru,sovets.net,sovets24.ru,starhit.ru,stavropol.media,study.ru,svpressa.ru,takiedela.ru,teleport2001.ru,topnews.ru,tv2.today,ukraina.ru,ulanmedia.ru,ussurmedia.ru,vm.ru,vsezdorovo.com,www.kolesa.ru,yakutiamedia.ru,zaycev.net##a[href*="//zen.yandex.ru/"]
@@ -53,17 +60,34 @@ povarenok.ru##body > div[class]:empty:not([id]):not([style])
 d20175 2
 a21411 1
 old-games.ru##img[src*="/img/rkl/"]
+a21848 1
+||ritsatv.ru^$csp=script-src
+a21859 1
+||pikabu.ru/ajax/?*&fb=$xmlhttprequest,domain=pikabu.ru
+d24956 1
+a24956 1
+@@||ritsatv.ru^$generichide
+d25577 1
 d25783 1
 d25855 1
 a25893 1
 @@||premium.adwile.com/$xmlhttprequest,domain=cc-fan.tv|cn-fan.tv|fox-fan.tv|nf-fan.tv
+d26004 1
 a26031 1
 a-russia.ru##.bsac
 d26066 1
 a26066 1
 2es.work,adventuretime.ru,ani.wtf,cdnneedtv.ru,cdnpotok.com,cdntelesee.com,cdntvpotok.com,chepok.xyz,domatv.net,hdone.net,hdru.net,hindcine.tv,kipolino.site,klplayer.website,liveball.cc,liveball.uno,liveball7.gq,liveball8.ml,luxurytv.online,oneliketv.com,phys-kids.com,pokaz.me,rxtv.github.io,sovetromantica.com,strah.video,t1pochek.site,tip0chek.site,tipochek.xyz,worldvideo.site#?#[id^="oframe"] > pjsdiv:-abp-has(> pjsdiv:-abp-contains(/adblock|adblok|адблок|блокировщик|блокировку|фрибет/i))
+d26097 1
+d26109 1
+d28037 1
+a28094 1
+ritsatv.ru##+js(abort-on-property-read, console.clear)
+a28182 1
+ritsatv.ru##+js(alert-buster)
 a28273 1
 farposst.ru##+js(remove-node-text, #text, Реклама)
 a28512 1
 ~3igames.mail.ru,~auto.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~esports.mail.ru,~games.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mailblog.mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##+js(set-constant, mr.data.asteroids, undefined)
 d28519 1
+d28620 1
