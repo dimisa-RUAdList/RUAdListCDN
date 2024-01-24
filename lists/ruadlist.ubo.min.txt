@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 23 Jan 2024 20:22:06 +0000
-! Diff-Path: ../patches/2024.1.23.1222.patch#ruadlist
+! Last modified: Wed, 24 Jan 2024 01:32:21 +0000
+! Diff-Path: ../patches/2024.1.24.92.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -28220,6 +28220,7 @@ autoinfo24.ru,dp73.spb.ru,dropmefiles.com.ua,dropmefiles.net,gtavicecity.ru##+js
 tv-kanali.online##+js(nano-setTimeout-booster, , 30000, 0.0001)
 freetp.org,freetp.ru,online-fix.me##+js(nano-setTimeout-booster, timer)
 4pda.to##+js(nano-setTimeout-booster, zat_tick)
+volley.ru##+js(no-fetch-if, plrjs.org)
 howdyho.net##+js(no-setInterval-if, anti-adblock)
 fatcatslim.ru##+js(no-setInterval-if, clientHeight)
 aniu.ru,liveball.uno##+js(no-setInterval-if, debugger)

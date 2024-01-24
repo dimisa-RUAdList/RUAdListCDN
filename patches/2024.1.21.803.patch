@@ -1,8 +1,8 @@
-diff name:ruadlist lines:63 checksum:84947585d9
+diff name:ruadlist lines:65 checksum:0c9d895dc2
 d4 2
 a5 2
-! Last modified: Tue, 23 Jan 2024 20:22:06 +0000
-! Diff-Path: ../patches/2024.1.23.1222.patch#ruadlist
+! Last modified: Wed, 24 Jan 2024 01:32:21 +0000
+! Diff-Path: ../patches/2024.1.24.92.patch#ruadlist
 a10197 1
 ||farposst.ru^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: cse.google.com *.google.com/cse/ *.dev *.io *.net *.org *.ru *.ua
 d10560 1
@@ -58,6 +58,8 @@ a28098 1
 ritsatv.ru##+js(abort-on-property-read, console.clear)
 a28186 1
 ritsatv.ru##+js(alert-buster)
+a28226 1
+volley.ru##+js(no-fetch-if, plrjs.org)
 a28277 1
 farposst.ru##+js(remove-node-text, #text, Реклама)
 d28524 1
