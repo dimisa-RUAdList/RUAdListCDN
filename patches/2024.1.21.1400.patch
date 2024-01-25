@@ -1,8 +1,8 @@
-diff name:ruadlist lines:97 checksum:459a0322fb
+diff name:ruadlist lines:108 checksum:f4767e6509
 d4 2
 a5 2
-! Last modified: Thu, 25 Jan 2024 17:21:39 +0000
-! Diff-Path: ../patches/2024.1.25.1041.patch#ruadlist
+! Last modified: Thu, 25 Jan 2024 22:20:02 +0000
+! Diff-Path: ../patches/2024.1.25.1340.patch#ruadlist
 a10197 1
 ||farposst.ru^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: cse.google.com *.google.com/cse/ *.dev *.io *.net *.org *.ru *.ua
 d10259 1
@@ -48,8 +48,9 @@ a21848 1
 a21852 2
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
-a21863 1
-||pikabu.ru/ajax/?*&fb=$xmlhttprequest,domain=pikabu.ru
+d21865 1
+a21865 1
+||pikabu.ru/ajax/?*fb=$xmlhttprequest,domain=pikabu.ru
 d22728 1
 a22728 1
 autorambler.ru,rambler.ru#?##rootWrapper div[class]:-abp-has(> div[id^="adfox-"]:only-child)
@@ -79,7 +80,14 @@ dzen.ru##aside[id^="article_"][class*="_rith"] > div[class]
 d27743 1
 a27743 1
 dzen.ru##div[class*="article__"] > .undefined ~ div[class*="_nlld"] > div[id][class]
+a28016 1
+dmod.cc,draug.ru,modsforwot.ru##+js(abort-current-inline-script, Math.floor, AdSense)
+a28036 1
+skam.online##+js(abort-current-inline-script, document.getElementById, composedPath)
 d28041 1
+a28047 1
+liga.net##+js(abort-current-inline-script, window.innerWidth, rcBuf)
+d28049 2
 a28098 1
 ritsatv.ru##+js(abort-on-property-read, console.clear)
 a28186 1
@@ -88,6 +96,9 @@ a28226 1
 volley.ru##+js(no-fetch-if, plrjs.org)
 a28277 1
 farposst.ru##+js(remove-node-text, #text, Реклама)
+a28357 2
+ixbt.com##+js(set-cookie, cookie_accept, 1)
+forum.ixbt.com##+js(set-cookie, ha, 1)
 d28516 1
 a28516 1
 ~3igames.mail.ru,~auto.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~esports.mail.ru,~games.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mailblog.mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##+js(set-constant, mr._mimic.locator.transform, undefined)
