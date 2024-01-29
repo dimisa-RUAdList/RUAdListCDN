@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 29 Jan 2024 16:24:05 +0000
-! Diff-Path: ../patches/2024.1.29.984.patch#ruadlist
+! Last modified: Mon, 29 Jan 2024 21:16:46 +0000
+! Diff-Path: ../patches/2024.1.29.1276.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -28358,6 +28358,7 @@ ixbt.com##+js(set-cookie, cookie_accept, 1)
 forum.ixbt.com##+js(set-cookie, ha, 1)
 kufar.by##+js(set-cookie, kuf_agr, true)
 kinotv.ru##+js(set-cookie, telegram_popup, Y)
+playground.ru##+js(set-local-storage-item, pg_GPbackVideo, on)
 twitch.tv##+js(twitch-videoad)
 silvercube12.xyz##+js(window-close-if, /dispatch)
 infox.sg##+js(window-close-if, utm)
