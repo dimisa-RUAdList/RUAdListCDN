@@ -1,8 +1,8 @@
-diff name:ruadlist lines:69 checksum:17c6c23a06
+diff name:ruadlist lines:81 checksum:8693e4476e
 d4 2
 a5 2
-! Last modified: Tue, 30 Jan 2024 07:18:51 +0000
-! Diff-Path: ../patches/2024.1.30.438.patch#ruadlist
+! Last modified: Tue, 30 Jan 2024 12:33:32 +0000
+! Diff-Path: ../patches/2024.1.30.753.patch#ruadlist
 d7726 1
 a8376 1
 ##.smi24__informer
@@ -11,6 +11,9 @@ a8889 1
 d10588 1
 a10588 1
 /stargate*.$image,popup,xmlhttprequest,domain=dofilms.ru|hlamer.ru
+d13362 1
+a13362 1
+||vp.rambler.ru/player/*/player.html#docking$domain=livejournal.com|rambler.ru|~vp.rambler.ru
 a14220 1
 dou.ua###max-header-adv-id
 d14791 1
@@ -37,6 +40,9 @@ a19463 1
 a20430 1
 sletat.ru##div[class*="uis-popup"][class*="banner"]
 d20975 1
+a21861 1
+||pikabu.ru/ajax/?*=%5B$xmlhttprequest,domain=pikabu.ru
+d21863 1
 d21867 1
 a21867 1
 pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: [0-9]{3}px|min-height: calc.[034569]{2}[0-9]{1}|min-height: calc.+.em|min-height: .+.(ch|cm|em|ex|in|lh|mm|pc|pt|Q)/)
@@ -49,9 +55,14 @@ sportmail.ru##div[data-logger="partnerNews"]
 d22666 1
 a22684 1
 letidor.ru,moslenta.ru,passion.ru,quto.ru##[id^="unit_"]
+a22693 1
+rambler.ru#?#div:-abp-has(> div > div[id^="adfox-"] ~ div [id^="cluster-video-ad"])
+d22728 1
+a22728 1
+autorambler.ru,rambler.ru#?##root div[class]:-abp-has(> div[class] > div[id^="adfox-"]:only-child)
 d23010 1
 a23010 1
-dzen.ru##div[class*="ldget__container"] > div[class*="ldget__"] ~ div
+dzen.ru##div[class*="idjet__container"] > div[class*="idjet__"] ~ div
 d25773 1
 a25773 1
 3dsmaxvideo.ru,archicadvideo.ru,autocadvideo.ru,coreldrawvideo.ru,era-igr.ru,excelvideo.ru,goloskarpat.info,kompasvideo.ru,linux.org,photoshopvideo.ru,radio-online.com.ua,solidworksvideo.ru,videoredaktor.r,wordvideo.ru#@#ins.adsbygoogle
@@ -66,5 +77,6 @@ dofilms.ru,hlamer.ru##body:style(background-color: #596c84 !important)
 d28129 1
 a28129 1
 dofilms.ru,freehat.cc,hlamer.ru,lostpix.com,potokcdn.com,prostoporno.help,saltday.ru,uploadimagex.com,wowskill.ru,xittv.net##+js(abort-on-property-read, open)
+d28347 1
 a28363 1
 playground.ru##+js(set-local-storage-item, pg_GPbackVideo, on)

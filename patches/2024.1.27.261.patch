@@ -1,8 +1,8 @@
-diff name:ruadlist lines:67 checksum:17c6c23a06
+diff name:ruadlist lines:79 checksum:8693e4476e
 d4 2
 a5 2
-! Last modified: Tue, 30 Jan 2024 07:18:51 +0000
-! Diff-Path: ../patches/2024.1.30.438.patch#ruadlist
+! Last modified: Tue, 30 Jan 2024 12:33:32 +0000
+! Diff-Path: ../patches/2024.1.30.753.patch#ruadlist
 d7726 1
 a8376 1
 ##.smi24__informer
@@ -11,6 +11,9 @@ a8889 1
 d10588 1
 a10588 1
 /stargate*.$image,popup,xmlhttprequest,domain=dofilms.ru|hlamer.ru
+d13362 1
+a13362 1
+||vp.rambler.ru/player/*/player.html#docking$domain=livejournal.com|rambler.ru|~vp.rambler.ru
 a14220 1
 dou.ua###max-header-adv-id
 d14791 1
@@ -35,6 +38,9 @@ d19463 1
 a19463 1
 4esnok.by,actualnews.org,argumenti.ru,argumentiru.com,belta.by,brestcity.com,business-gazeta.ru,carsweek.ru,dailystorm.ru,dni.ru,doctorpiter.ru,eadaily.com,elle.ru,fontanka.ru,inosmi.ru,interfax-russia.ru,interfax.ru,itzine.ru,ixbt.com,iz.ru,izhlife.ru,kanobu.ru,kaskad.tv,marieclaire.ru,maximonline.ru,metaratings.ru,mir24.tv,mk.ru,mydecor.ru,nashe.ru,neg.by,novostivl.ru,nsn.fm,osnmedia.ru,osnova.news,parents.ru,playmaker24.ru,primpress.ru,prufy.ru,psychologies.ru,radiojazzfm.ru,radioultra.ru,realnoevremya.ru,realt.by,rockfm.ru,shraibikus.com,sm.news,smolensk-i.ru,sport-interfax.ru,srnsk.ru,svpressa.ru,thegirl.ru,tolknews.ru,topdaynews.ru,transport-news.ru,trmzk.ru,tsargrad.tv,tvcenter.ru,ukraina.ru,vk-smi.ru,vokrugsveta.ru,wday.ru,woman.ru,www.sport.ru##a[href*="news"][href*="favid"]
 d20976 1
+a21862 1
+||pikabu.ru/ajax/?*=%5B$xmlhttprequest,domain=pikabu.ru
+d21864 1
 d21868 1
 a21868 1
 pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: [0-9]{3}px|min-height: calc.[034569]{2}[0-9]{1}|min-height: calc.+.em|min-height: .+.(ch|cm|em|ex|in|lh|mm|pc|pt|Q)/)
@@ -47,9 +53,14 @@ sportmail.ru##div[data-logger="partnerNews"]
 d22667 1
 a22685 1
 letidor.ru,moslenta.ru,passion.ru,quto.ru##[id^="unit_"]
+a22694 1
+rambler.ru#?#div:-abp-has(> div > div[id^="adfox-"] ~ div [id^="cluster-video-ad"])
+d22729 1
+a22729 1
+autorambler.ru,rambler.ru#?##root div[class]:-abp-has(> div[class] > div[id^="adfox-"]:only-child)
 d23011 1
 a23011 1
-dzen.ru##div[class*="ldget__container"] > div[class*="ldget__"] ~ div
+dzen.ru##div[class*="idjet__container"] > div[class*="idjet__"] ~ div
 d25774 1
 a25774 1
 3dsmaxvideo.ru,archicadvideo.ru,autocadvideo.ru,coreldrawvideo.ru,era-igr.ru,excelvideo.ru,goloskarpat.info,kompasvideo.ru,linux.org,photoshopvideo.ru,radio-online.com.ua,solidworksvideo.ru,videoredaktor.r,wordvideo.ru#@#ins.adsbygoogle
@@ -64,5 +75,6 @@ dofilms.ru,hlamer.ru##body:style(background-color: #596c84 !important)
 d28130 1
 a28130 1
 dofilms.ru,freehat.cc,hlamer.ru,lostpix.com,potokcdn.com,prostoporno.help,saltday.ru,uploadimagex.com,wowskill.ru,xittv.net##+js(abort-on-property-read, open)
+d28348 1
 a28364 1
 playground.ru##+js(set-local-storage-item, pg_GPbackVideo, on)

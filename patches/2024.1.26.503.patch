@@ -1,8 +1,8 @@
-diff name:ruadlist lines:127 checksum:17c6c23a06
+diff name:ruadlist lines:136 checksum:8693e4476e
 d4 2
 a5 2
-! Last modified: Tue, 30 Jan 2024 07:18:51 +0000
-! Diff-Path: ../patches/2024.1.30.438.patch#ruadlist
+! Last modified: Tue, 30 Jan 2024 12:33:32 +0000
+! Diff-Path: ../patches/2024.1.30.753.patch#ruadlist
 d7726 1
 a8376 1
 ##.smi24__informer
@@ -11,6 +11,9 @@ a8889 1
 d10588 1
 a10588 1
 /stargate*.$image,popup,xmlhttprequest,domain=dofilms.ru|hlamer.ru
+d13362 1
+a13362 1
+||vp.rambler.ru/player/*/player.html#docking$domain=livejournal.com|rambler.ru|~vp.rambler.ru
 a14220 1
 dou.ua###max-header-adv-id
 d14791 1
@@ -40,6 +43,9 @@ a19463 1
 a20430 1
 sletat.ru##div[class*="uis-popup"][class*="banner"]
 d20975 1
+a21861 1
+||pikabu.ru/ajax/?*=%5B$xmlhttprequest,domain=pikabu.ru
+d21863 1
 d21867 1
 a21867 1
 pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: [0-9]{3}px|min-height: calc.[034569]{2}[0-9]{1}|min-height: calc.+.em|min-height: .+.(ch|cm|em|ex|in|lh|mm|pc|pt|Q)/)
@@ -86,12 +92,14 @@ a22683 1
 letidor.ru,moslenta.ru,passion.ru,quto.ru##[id^="unit_"]
 a22689 1
 finance.rambler.ru#?#div:-abp-has(> a[href*="?erid="])
+a22691 1
+rambler.ru#?#div:-abp-has(> div > div[id^="adfox-"] ~ div [id^="cluster-video-ad"])
 d22726 1
 a22726 1
-autorambler.ru,rambler.ru#?##rootWrapper div[class]:-abp-has(> div[class] > div[id^="adfox-"]:only-child)
+autorambler.ru,rambler.ru#?##root div[class]:-abp-has(> div[class] > div[id^="adfox-"]:only-child)
 d23008 1
 a23008 1
-dzen.ru##div[class*="ldget__container"] > div[class*="ldget__"] ~ div
+dzen.ru##div[class*="idjet__container"] > div[class*="idjet__"] ~ div
 d25771 1
 a25771 1
 3dsmaxvideo.ru,archicadvideo.ru,autocadvideo.ru,coreldrawvideo.ru,era-igr.ru,excelvideo.ru,goloskarpat.info,kompasvideo.ru,linux.org,photoshopvideo.ru,radio-online.com.ua,solidworksvideo.ru,videoredaktor.r,wordvideo.ru#@#ins.adsbygoogle
@@ -122,6 +130,7 @@ a28254 1
 d28283 1
 a28283 1
 116.ru,14.ru,161.ru,164.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,62.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,proizhevsk.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,www.fontanka.ru##+js(set, Object.prototype.changeVisible, noopFunc)
+d28346 1
 a28357 1
 liga.net##+js(set-cookie, cookieAccepted, true)
 a28361 1

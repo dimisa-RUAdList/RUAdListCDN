@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 30 Jan 2024 07:18:51 +0000
-! Diff-Path: ../patches/2024.1.30.438.patch#ruadlist
+! Last modified: Tue, 30 Jan 2024 12:33:32 +0000
+! Diff-Path: ../patches/2024.1.30.753.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -13360,7 +13360,7 @@ lada.kz/uploads/banners/
 ||voxpopuli.kz/pub/banners/img/
 ||voxpopuli.kz/userfiles/branding/
 ||vozmi.net/img/*150x250
-||vp.rambler.ru/player/*/player.html#docking=$domain=livejournal.com
+||vp.rambler.ru/player/*/player.html#docking$domain=livejournal.com|rambler.ru|~vp.rambler.ru
 ||vplate.ru/bundles/adblock-checker-js
 ||vremya-sovetov.ru/rek
 ||vrgames.by^*/banners/
@@ -21861,8 +21861,8 @@ rafkino.com##div[id^="MarketGid"]
 ! Pikabu (ловушка для обфускации)
 ||pikabu.ru/ajax/?*&*key=$xmlhttprequest,domain=pikabu.ru
 ||pikabu.ru/ajax/?*&__$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/ajax/?*=%5B$xmlhttprequest,domain=pikabu.ru
 ||pikabu.ru/ajax/?*=*key=$xmlhttprequest,domain=pikabu.ru
-||pikabu.ru/ajax/?*fb=$xmlhttprequest,domain=pikabu.ru
 ! селекторы
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
@@ -22693,6 +22693,7 @@ championat.com##div.banner[class*=" "]
 finance.rambler.ru#?#div:-abp-has(> a[href*="?erid="])
 autorambler.ru,rambler.ru,sport.rambler.ru#?#div:-abp-has(> div > [data-rnet])
 rambler.ru#?#div:-abp-has(> div > [id^="adfox-"] + div > div:only-child)
+rambler.ru#?#div:-abp-has(> div > div[id^="adfox-"] ~ div [id^="cluster-video-ad"])
 quto.ru#?#div:-abp-has(> div[style] + [id^="rnet_"])
 mail.rambler.ru##div[class*="Ad-direct"]
 lenta.ru##div[class*="goodnews"][class*=" "]
@@ -22727,7 +22728,7 @@ lenta.ru##iframe[src*="icdn.lenta.ru"][src*="banner"]
 ||trafffgen.rambler.ru^
 ||winline.rambler.ru/
 ! Непонятные пустые места, новый и старый дизайн
-autorambler.ru,rambler.ru#?##rootWrapper div[class]:-abp-has(> div[class] > div[id^="adfox-"]:only-child)
+autorambler.ru,rambler.ru#?##root div[class]:-abp-has(> div[class] > div[id^="adfox-"]:only-child)
 autorambler.ru,rambler.ru#?#.commercial-branding aside:-abp-has(div[id^="adfox-"])
 rambler.ru#?#article ~ article ~ div[class]:-abp-has(div > div[class][style="display: none !important;"])
 rambler.ru#?#article ~ article ~ div[class]:-abp-has(div > div[class^="banner--native-partner--"])
@@ -23009,7 +23010,7 @@ yandex.by,yandex.kz,yandex.ru,yandex.uz##.stat_pixel_yes[onclick][class*="_layou
 yandex.by,yandex.kz,yandex.ru,yandex.uz##a[href*="//ads.adfox.ru/"]
 yandex.by,yandex.kz,yandex.ru,yandex.uz##body[class*="b-page_alt-widgets_yes"] .feed ._need-stub
 yandex.ru##div[class$="ear_js_inited"] > a[href^="//awaps.yandex.ru"]
-dzen.ru##div[class*="ldget__container"] > div[class*="ldget__"] ~ div
+dzen.ru##div[class*="idjet__container"] > div[class*="idjet__"] ~ div
 yandex.by,yandex.kz,yandex.ru,yandex.uz##img[src*="yandex.net/get-direct"]
 ||awaps.yandex.
 ||bs-meta.yandex.$script,xmlhttprequest
@@ -28341,7 +28342,6 @@ audioportal.su##+js(set-constant, clicks, 2)
 gazeta.ru##+js(set-constant, g_GazetaNoExchange, true)
 ya.ru##+js(set-constant, home.export.complex-feed, undefined)
 gazeta.ru##+js(set-constant, isAdFree, noopFunc)
-playground.ru##+js(set-constant, localStorage.localstorageGameData, '')
 tv-gubernia.ru##+js(set-constant, main_air_closed, true)
 vk.com,vk.ru##+js(set-constant, noAdsAtAll, {})
 player.smotrim.ru##+js(set-constant, pl.getParams.isPlay, null)

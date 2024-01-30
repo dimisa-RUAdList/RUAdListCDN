@@ -1,11 +1,14 @@
-diff name:ruadlist lines:43 checksum:17c6c23a06
+diff name:ruadlist lines:55 checksum:8693e4476e
 d4 2
 a5 2
-! Last modified: Tue, 30 Jan 2024 07:18:51 +0000
-! Diff-Path: ../patches/2024.1.30.438.patch#ruadlist
+! Last modified: Tue, 30 Jan 2024 12:33:32 +0000
+! Diff-Path: ../patches/2024.1.30.753.patch#ruadlist
 d10589 1
 a10589 1
 /stargate*.$image,popup,xmlhttprequest,domain=dofilms.ru|hlamer.ru
+d13363 1
+a13363 1
+||vp.rambler.ru/player/*/player.html#docking$domain=livejournal.com|rambler.ru|~vp.rambler.ru
 d14793 1
 a14793 1
 dofilms.ru,hlamer.ru###video-container .overlay_video
@@ -14,6 +17,9 @@ click-or-die.ru##[data-cfpa]
 d19056 1
 a19056 1
 bestradio.fm,elsyst.gnomio.com,forum.cxem.net,forum.niiot.net,freeopenvpn.org,ghame.ru,htmlweb.ru,kulichki.net,ph4.ru,pvpru.com,semestr.ru,videoredaktor.ru##[id^="aswift_"]
+a21862 1
+||pikabu.ru/ajax/?*=%5B$xmlhttprequest,domain=pikabu.ru
+d21864 1
 d21868 1
 a21868 1
 pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: [0-9]{3}px|min-height: calc.[034569]{2}[0-9]{1}|min-height: calc.+.em|min-height: .+.(ch|cm|em|ex|in|lh|mm|pc|pt|Q)/)
@@ -23,9 +29,14 @@ pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(/min-
 d21879 1
 a22303 1
 sportmail.ru##div[data-logger="partnerNews"]
+a22694 1
+rambler.ru#?#div:-abp-has(> div > div[id^="adfox-"] ~ div [id^="cluster-video-ad"])
+d22729 1
+a22729 1
+autorambler.ru,rambler.ru#?##root div[class]:-abp-has(> div[class] > div[id^="adfox-"]:only-child)
 d23011 1
 a23011 1
-dzen.ru##div[class*="ldget__container"] > div[class*="ldget__"] ~ div
+dzen.ru##div[class*="idjet__container"] > div[class*="idjet__"] ~ div
 d25774 1
 a25774 1
 3dsmaxvideo.ru,archicadvideo.ru,autocadvideo.ru,coreldrawvideo.ru,era-igr.ru,excelvideo.ru,goloskarpat.info,kompasvideo.ru,linux.org,photoshopvideo.ru,radio-online.com.ua,solidworksvideo.ru,videoredaktor.r,wordvideo.ru#@#ins.adsbygoogle
@@ -40,5 +51,6 @@ dofilms.ru,hlamer.ru##body:style(background-color: #596c84 !important)
 d28130 1
 a28130 1
 dofilms.ru,freehat.cc,hlamer.ru,lostpix.com,potokcdn.com,prostoporno.help,saltday.ru,uploadimagex.com,wowskill.ru,xittv.net##+js(abort-on-property-read, open)
+d28348 1
 a28364 1
 playground.ru##+js(set-local-storage-item, pg_GPbackVideo, on)
