@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 30 Jan 2024 17:21:04 +0000
-! Diff-Path: ../patches/2024.1.30.1041.patch#ruadlist
+! Last modified: Tue, 30 Jan 2024 22:20:28 +0000
+! Diff-Path: ../patches/2024.1.30.1340.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10184,6 +10184,7 @@ agrarii-razom.com.ua##div[id^="user-to-register"]
 ||an.yandex.ru/count/$csp=script-src
 ||askentire.net^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.googletagmanager.com *.keycaptcha.com
 ||autonews.co.ua^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.io *.net *.org *.ru *.ua
+||autosoftos.com^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.google.com/recaptcha/ *.gstatic.com/recaptcha/ *.dev *.io *.net *.org *.ru
 ||azbne.net^$csp=sandbox allow-same-origin;
 ||babla.ru^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' date: ajax.googleapis.com *.bab.la *.cloudflare.net *.jsdelivr.net *.facebook.net *.twitter.com
 ||betnetmed.advertserve.com^$csp=sandbox allow-same-origin;
@@ -13360,7 +13361,7 @@ lada.kz/uploads/banners/
 ||voxpopuli.kz/pub/banners/img/
 ||voxpopuli.kz/userfiles/branding/
 ||vozmi.net/img/*150x250
-||vp.rambler.ru/player/*/player.html#docking$domain=livejournal.com|rambler.ru|~vp.rambler.ru
+||vp.rambler.ru/player/*/player.html#docking$domain=livejournal.com
 ||vplate.ru/bundles/adblock-checker-js
 ||vremya-sovetov.ru/rek
 ||vrgames.by^*/banners/
@@ -17747,6 +17748,7 @@ biqle.org,biqle.ru##.rightbar > div[style^="width"]
 bookskeeper.ru##.rightcol
 kino-archive.ru#?#.rightcol > div:-abp-has(a[href][target="_blank"])
 1001-dollar.com##.rightpanel
+autosoftos.com#?#.rightside > .block:-abp-has(> .dcont > div > ins )
 smotriserial.me##.rightslide
 kinonews.ru##.rightzagolup
 m-live.tv##.rk1,.rk2,.rk3,.rk4,.rk5
@@ -22693,7 +22695,6 @@ championat.com##div.banner[class*=" "]
 finance.rambler.ru#?#div:-abp-has(> a[href*="?erid="])
 autorambler.ru,rambler.ru,sport.rambler.ru#?#div:-abp-has(> div > [data-rnet])
 rambler.ru#?#div:-abp-has(> div > [id^="adfox-"] + div > div:only-child)
-rambler.ru#?#div:-abp-has(> div > div[id^="adfox-"] ~ div [id^="cluster-video-ad"])
 quto.ru#?#div:-abp-has(> div[style] + [id^="rnet_"])
 mail.rambler.ru##div[class*="Ad-direct"]
 lenta.ru##div[class*="goodnews"][class*=" "]
@@ -28253,9 +28254,9 @@ motorpage.ru##+js(no-xhr-if, /br/)
 116.ru,14.ru,161.ru,164.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,62.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,proizhevsk.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,www.fontanka.ru##+js(no-xhr-if, /hits/event/, method:POST)
 4pda.to##+js(no-xhr-if, /m2?_)
 adme.media##+js(no-xhr-if, /wl-analytics\.tsp\.li/)
-anidub.vip,anidubonline.com,loveanime.live##+js(no-xhr-if, exchange.buzzoola.com)
 livejournal.com##+js(no-xhr-if, livejournal.com/video/check?recordId=)
 sm.news##+js(no-xhr-if, method:GET)
+anidub.vip,anidubonline.com,loveanime.live##+js(no-xhr-if, playmatic.video)
 dzen.ru,frontend.vh.yandex.ru,naydex.net,widgets.kinopoisk.ru,www.kinopoisk.ru,yastatic.net##+js(no-xhr-if, strm.yandex.ru/get/)
 otzovik.com##+js(noeval-if, ShadowRoot)
 kvadratmetr.uz,oligarx.uz,tehnar.net.ua##+js(noeval-if, adsBlocked)
@@ -28426,6 +28427,7 @@ aida64.com.ua,aida64russia.com##body.q-body--prevent-scroll:style(position: unse
 my-expert.ru##body:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important)
 sawlive.tv##body[onclick^="closeMyAd"] > div[id][style*="position"][style*="background-color"]
 www.e1.ru##div:has(> [id] ~ script):style(min-height: 0 !important)
+rambler.ru##div:has(> div > div[id^="adfox-"] ~ div [id^="cluster-video-ad"]):remove()
 cq.ru##div[class]:not([class*="-"]):not([class*="_"]):matches-css(margin-top: 16px)
 tass.ru##div[class^="PageLayout_top_sticky"] > div:style(width: auto !important)
 pronpic.org##div[style="color:red;font-size:25px;"], .adblock_loock

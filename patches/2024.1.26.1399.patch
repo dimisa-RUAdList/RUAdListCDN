@@ -1,19 +1,21 @@
-diff name:ruadlist lines:79 checksum:69c89d9aaf
+diff name:ruadlist lines:86 checksum:597c5b4be1
 d4 2
 a5 2
-! Last modified: Tue, 30 Jan 2024 17:21:04 +0000
-! Diff-Path: ../patches/2024.1.30.1041.patch#ruadlist
+! Last modified: Tue, 30 Jan 2024 22:20:28 +0000
+! Diff-Path: ../patches/2024.1.30.1340.patch#ruadlist
 d7726 1
 a8376 1
 ##.smi24__informer
 a8889 1
 ##div[id^="infox_"]
+a10185 1
+||autosoftos.com^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.google.com/recaptcha/ *.gstatic.com/recaptcha/ *.dev *.io *.net *.org *.ru
 d10588 1
 a10588 1
 /stargate*.$image,popup,xmlhttprequest,domain=dofilms.ru|hlamer.ru
 d13362 1
 a13362 1
-||vp.rambler.ru/player/*/player.html#docking$domain=livejournal.com|rambler.ru|~vp.rambler.ru
+||vp.rambler.ru/player/*/player.html#docking$domain=livejournal.com
 a14220 1
 dou.ua###max-header-adv-id
 d14791 1
@@ -25,6 +27,8 @@ fight.ru,izhlife.ru,www.sport.ru##.a-block
 d16613 1
 a16613 1
 comss.ru#?#.horizontal > .rbox:-abp-has(> .rapp a > [alt*="Яндекс"])
+a17747 1
+autosoftos.com#?#.rightside > .block:-abp-has(> .dcont > div > ins )
 d18080 1
 a18938 1
 click-or-die.ru##[data-cfpa]
@@ -53,8 +57,6 @@ sportmail.ru##div[data-logger="partnerNews"]
 d22667 1
 a22685 1
 letidor.ru,moslenta.ru,passion.ru,quto.ru##[id^="unit_"]
-a22694 1
-rambler.ru#?#div:-abp-has(> div > div[id^="adfox-"] ~ div [id^="cluster-video-ad"])
 d22729 1
 a22729 1
 autorambler.ru,rambler.ru#?##root div[class]:-abp-has(> div[class] > div[id^="adfox-"]:only-child)
@@ -75,6 +77,11 @@ dofilms.ru,hlamer.ru##body:style(background-color: #596c84 !important)
 d28130 1
 a28130 1
 dofilms.ru,freehat.cc,hlamer.ru,lostpix.com,potokcdn.com,prostoporno.help,saltday.ru,uploadimagex.com,wowskill.ru,xittv.net##+js(abort-on-property-read, open)
+d28259 1
+a28261 1
+anidub.vip,anidubonline.com,loveanime.live##+js(no-xhr-if, playmatic.video)
 d28348 1
 a28364 1
 playground.ru##+js(set-local-storage-item, pg_GPbackVideo, on)
+a28431 1
+rambler.ru##div:has(> div > div[id^="adfox-"] ~ div [id^="cluster-video-ad"]):remove()

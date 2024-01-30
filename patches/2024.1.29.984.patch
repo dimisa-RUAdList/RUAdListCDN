@@ -1,22 +1,29 @@
-diff name:ruadlist lines:21 checksum:69c89d9aaf
+diff name:ruadlist lines:28 checksum:597c5b4be1
 d4 2
 a5 2
-! Last modified: Tue, 30 Jan 2024 17:21:04 +0000
-! Diff-Path: ../patches/2024.1.30.1041.patch#ruadlist
+! Last modified: Tue, 30 Jan 2024 22:20:28 +0000
+! Diff-Path: ../patches/2024.1.30.1340.patch#ruadlist
+a10186 1
+||autosoftos.com^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.google.com/recaptcha/ *.gstatic.com/recaptcha/ *.dev *.io *.net *.org *.ru
 d13363 1
 a13363 1
-||vp.rambler.ru/player/*/player.html#docking$domain=livejournal.com|rambler.ru|~vp.rambler.ru
+||vp.rambler.ru/player/*/player.html#docking$domain=livejournal.com
+a17749 1
+autosoftos.com#?#.rightside > .block:-abp-has(> .dcont > div > ins )
 d21865 1
 a21865 1
 ||pikabu.ru/ajax/?*bf=$xmlhttprequest,domain=pikabu.ru
-a22695 1
-rambler.ru#?#div:-abp-has(> div > div[id^="adfox-"] ~ div [id^="cluster-video-ad"])
 d22730 1
 a22730 1
 autorambler.ru,rambler.ru#?##root div[class]:-abp-has(> div[class] > div[id^="adfox-"]:only-child)
 d23012 1
 a23012 1
 dzen.ru##div[class*="vldjet__container"] > div[class*="vldjet__"] ~ div
+d28255 1
+a28257 1
+anidub.vip,anidubonline.com,loveanime.live##+js(no-xhr-if, playmatic.video)
 d28344 1
 a28360 1
 playground.ru##+js(set-local-storage-item, pg_GPbackVideo, on)
+a28427 1
+rambler.ru##div:has(> div > div[id^="adfox-"] ~ div [id^="cluster-video-ad"]):remove()

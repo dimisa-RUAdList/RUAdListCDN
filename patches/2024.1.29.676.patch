@@ -1,17 +1,21 @@
-diff name:ruadlist lines:53 checksum:69c89d9aaf
+diff name:ruadlist lines:60 checksum:597c5b4be1
 d4 2
 a5 2
-! Last modified: Tue, 30 Jan 2024 17:21:04 +0000
-! Diff-Path: ../patches/2024.1.30.1041.patch#ruadlist
+! Last modified: Tue, 30 Jan 2024 22:20:28 +0000
+! Diff-Path: ../patches/2024.1.30.1340.patch#ruadlist
+a10186 1
+||autosoftos.com^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.google.com/recaptcha/ *.gstatic.com/recaptcha/ *.dev *.io *.net *.org *.ru
 d10589 1
 a10589 1
 /stargate*.$image,popup,xmlhttprequest,domain=dofilms.ru|hlamer.ru
 d13363 1
 a13363 1
-||vp.rambler.ru/player/*/player.html#docking$domain=livejournal.com|rambler.ru|~vp.rambler.ru
+||vp.rambler.ru/player/*/player.html#docking$domain=livejournal.com
 d14793 1
 a14793 1
 dofilms.ru,hlamer.ru###video-container .overlay_video
+a17749 1
+autosoftos.com#?#.rightside > .block:-abp-has(> .dcont > div > ins )
 d19057 1
 a19057 1
 bestradio.fm,elsyst.gnomio.com,forum.cxem.net,forum.niiot.net,freeopenvpn.org,ghame.ru,htmlweb.ru,kulichki.net,ph4.ru,pvpru.com,semestr.ru,videoredaktor.ru##[id^="aswift_"]
@@ -27,8 +31,6 @@ pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(/min-
 d21880 1
 a22304 1
 sportmail.ru##div[data-logger="partnerNews"]
-a22695 1
-rambler.ru#?#div:-abp-has(> div > div[id^="adfox-"] ~ div [id^="cluster-video-ad"])
 d22730 1
 a22730 1
 autorambler.ru,rambler.ru#?##root div[class]:-abp-has(> div[class] > div[id^="adfox-"]:only-child)
@@ -49,6 +51,11 @@ dofilms.ru,hlamer.ru##body:style(background-color: #596c84 !important)
 d28131 1
 a28131 1
 dofilms.ru,freehat.cc,hlamer.ru,lostpix.com,potokcdn.com,prostoporno.help,saltday.ru,uploadimagex.com,wowskill.ru,xittv.net##+js(abort-on-property-read, open)
+d28260 1
+a28262 1
+anidub.vip,anidubonline.com,loveanime.live##+js(no-xhr-if, playmatic.video)
 d28349 1
 a28365 1
 playground.ru##+js(set-local-storage-item, pg_GPbackVideo, on)
+a28432 1
+rambler.ru##div:has(> div > div[id^="adfox-"] ~ div [id^="cluster-video-ad"]):remove()
