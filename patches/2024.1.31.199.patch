@@ -1,14 +1,69 @@
-diff name:ruadlist lines:13 checksum:431e671439
+diff name:ruadlist lines:68 checksum:963ad787a3
 d4 2
 a5 2
-! Last modified: Thu, 01 Feb 2024 04:24:17 +0000
-! Diff-Path: ../patches/2024.2.1.264.patch#ruadlist
+! Last modified: Thu, 01 Feb 2024 09:20:04 +0000
+! Diff-Path: ../patches/2024.2.1.560.patch#ruadlist
 d21867 1
 a21867 1
-||pikabu.ru/ajax/?abakey=$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/ajax/?abkey=$xmlhttprequest,domain=pikabu.ru
 d21871 1
 a21871 1
 pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: [0-9]{3}px|min-height: calc.29.px|min-height: calc.[034569]{2}[0-9]{1}|min-height: calc.+.em|min-height: .+.(ch|cm|em|ex|in|lh|mm|pc|pt|Q)/)
+d22608 2
+d22611 1
+d22616 1
+a22616 1
+autorambler.ru,rambler.ru#?##summary ~ div:-abp-contains(Продолжение истории после рекламы)
+d22619 1
+d22626 2
+d22637 2
+d22645 1
+d22647 1
+d22650 1
+d22652 1
+d22678 1
+d22680 1
+a22680 1
+weather.rambler.ru##[data-block="seo"]
+d22684 2
+a22685 1
+autorambler.ru,rambler.ru##[data-news_media-desktop*="rnet_widget"]
+d22687 1
+d22695 3
+a22697 1
+autorambler.ru,rambler.ru#?#div:-abp-has(> div > [data-rnet])
+a22699 1
+autorambler.ru,rambler.ru##div[class*="banner--native-"]
+d22709 1
+a22709 1
+autorambler.ru,rambler.ru##div[data-news_media-mobile^="partner_block"]
+d22719 1
+d22731 5
 d23014 1
 a23014 1
-dzen.ru##div[class*="wltjet__container"] > div[class*="wltjet__"] ~ div
+dzen.ru##div[class*="wltjed__container"] > div[class*="wltjed__"] ~ div
+d27305 19
+a27323 4
+autorambler.ru,rambler.ru###app div[style*="min-height:"][style*="250px"]
+autorambler.ru,rambler.ru##.commercial-branding > div script ~ div > div:style(min-height: 0 !important)
+autorambler.ru,rambler.ru##.commercial-branding aside
+autorambler.ru,rambler.ru##.commercial-branding div[style^="min-height:"]:style(min-height: 0 !important)
+d27326 1
+a27326 1
+horoscopes.rambler.ru,tv.rambler.ru,weather.rambler.ru##div[class]:style(min-height: 0 !important)
+d27329 3
+a27331 1
+autorambler.ru,rambler.ru##div[style^="order:"][style*="-1"]:style(min-height: 0 !important)
+a27738 1
+dzen.ru##div[class*="-2r "] > div[class*="__"]:first-child + div[class*="__"]
+a27999 1
+rambler.ru###summary ~ div:has(> [id^="cluster-video-ad"]):remove()
+d28430 1
+a28669 1
+azrotv.com##.adbn-wrap
+a28671 1
+fctvhd.com##.mw-adblock
+a28672 1
+azrotv.com##div[id^="laoad_Adb"]
+a28694 1
+||baeldung.com/*/library/dist/js/ad-recovery.min.js

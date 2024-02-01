@@ -1,8 +1,8 @@
-diff name:ruadlist lines:62 checksum:431e671439
+diff name:ruadlist lines:111 checksum:963ad787a3
 d4 2
 a5 2
-! Last modified: Thu, 01 Feb 2024 04:24:17 +0000
-! Diff-Path: ../patches/2024.2.1.264.patch#ruadlist
+! Last modified: Thu, 01 Feb 2024 09:20:04 +0000
+! Diff-Path: ../patches/2024.2.1.560.patch#ruadlist
 a10186 1
 ||autosoftos.com^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.google.com/recaptcha/ *.gstatic.com/recaptcha/ *.dev *.io *.net *.org *.ru
 d10589 1
@@ -23,7 +23,7 @@ a19056 1
 bestradio.fm,elsyst.gnomio.com,forum.cxem.net,forum.niiot.net,freeopenvpn.org,ghame.ru,htmlweb.ru,kulichki.net,ph4.ru,pvpru.com,semestr.ru,videoredaktor.ru##[id^="aswift_"]
 d21864 1
 a21864 1
-||pikabu.ru/ajax/?abakey=$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/ajax/?abkey=$xmlhttprequest,domain=pikabu.ru
 d21868 1
 a21868 1
 pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: [0-9]{3}px|min-height: calc.29.px|min-height: calc.[034569]{2}[0-9]{1}|min-height: calc.+.em|min-height: .+.(ch|cm|em|ex|in|lh|mm|pc|pt|Q)/)
@@ -33,12 +33,39 @@ pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(/min-
 d21879 1
 a22303 1
 sportmail.ru##div[data-logger="partnerNews"]
-d22729 1
-a22729 1
-autorambler.ru,rambler.ru#?##root div[class]:-abp-has(> div[class] > div[id^="adfox-"]:only-child)
+d22605 2
+d22608 1
+d22613 1
+a22613 1
+autorambler.ru,rambler.ru#?##summary ~ div:-abp-contains(Продолжение истории после рекламы)
+d22616 1
+d22623 2
+d22634 2
+d22642 1
+d22644 1
+d22647 1
+d22649 1
+d22675 1
+d22677 1
+a22677 1
+weather.rambler.ru##[data-block="seo"]
+d22681 2
+a22682 1
+autorambler.ru,rambler.ru##[data-news_media-desktop*="rnet_widget"]
+d22684 1
+d22692 3
+a22694 1
+autorambler.ru,rambler.ru#?#div:-abp-has(> div > [data-rnet])
+a22696 1
+autorambler.ru,rambler.ru##div[class*="banner--native-"]
+d22706 1
+a22706 1
+autorambler.ru,rambler.ru##div[data-news_media-mobile^="partner_block"]
+d22716 1
+d22728 5
 d23011 1
 a23011 1
-dzen.ru##div[class*="wltjet__container"] > div[class*="wltjet__"] ~ div
+dzen.ru##div[class*="wltjed__container"] > div[class*="wltjed__"] ~ div
 d25774 1
 a25774 1
 3dsmaxvideo.ru,archicadvideo.ru,autocadvideo.ru,coreldrawvideo.ru,era-igr.ru,excelvideo.ru,goloskarpat.info,kompasvideo.ru,linux.org,photoshopvideo.ru,radio-online.com.ua,solidworksvideo.ru,videoredaktor.r,wordvideo.ru#@#ins.adsbygoogle
@@ -50,6 +77,22 @@ d26887 4
 d27004 1
 a27004 1
 dofilms.ru,hlamer.ru##body:style(background-color: #596c84 !important)
+d27307 19
+a27325 4
+autorambler.ru,rambler.ru###app div[style*="min-height:"][style*="250px"]
+autorambler.ru,rambler.ru##.commercial-branding > div script ~ div > div:style(min-height: 0 !important)
+autorambler.ru,rambler.ru##.commercial-branding aside
+autorambler.ru,rambler.ru##.commercial-branding div[style^="min-height:"]:style(min-height: 0 !important)
+d27328 1
+a27328 1
+horoscopes.rambler.ru,tv.rambler.ru,weather.rambler.ru##div[class]:style(min-height: 0 !important)
+d27331 3
+a27333 1
+autorambler.ru,rambler.ru##div[style^="order:"][style*="-1"]:style(min-height: 0 !important)
+a27740 1
+dzen.ru##div[class*="-2r "] > div[class*="__"]:first-child + div[class*="__"]
+a28001 1
+rambler.ru###summary ~ div:has(> [id^="cluster-video-ad"]):remove()
 d28130 1
 a28130 1
 dofilms.ru,freehat.cc,hlamer.ru,lostpix.com,potokcdn.com,prostoporno.help,saltday.ru,uploadimagex.com,wowskill.ru,xittv.net##+js(abort-on-property-read, open)
@@ -59,5 +102,11 @@ anidub.vip,anidubonline.com,loveanime.live##+js(no-xhr-if, playmatic.video)
 d28348 1
 a28364 1
 playground.ru##+js(set-local-storage-item, pg_GPbackVideo, on)
-a28431 1
-rambler.ru##div:has(> div > div[id^="adfox-"] ~ div [id^="cluster-video-ad"]):remove()
+a28670 1
+azrotv.com##.adbn-wrap
+a28672 1
+fctvhd.com##.mw-adblock
+a28673 1
+azrotv.com##div[id^="laoad_Adb"]
+a28695 1
+||baeldung.com/*/library/dist/js/ad-recovery.min.js

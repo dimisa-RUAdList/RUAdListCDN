@@ -1,8 +1,8 @@
-diff name:ruadlist lines:26 checksum:431e671439
+diff name:ruadlist lines:77 checksum:963ad787a3
 d4 2
 a5 2
-! Last modified: Thu, 01 Feb 2024 04:24:17 +0000
-! Diff-Path: ../patches/2024.2.1.264.patch#ruadlist
+! Last modified: Thu, 01 Feb 2024 09:20:04 +0000
+! Diff-Path: ../patches/2024.2.1.560.patch#ruadlist
 a10186 1
 ||autosoftos.com^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.google.com/recaptcha/ *.gstatic.com/recaptcha/ *.dev *.io *.net *.org *.ru
 d13363 1
@@ -12,16 +12,67 @@ a17749 1
 autosoftos.com#?#.rightside > .block:-abp-has(> .dcont > div > ins )
 d21865 1
 a21865 1
-||pikabu.ru/ajax/?abakey=$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/ajax/?abkey=$xmlhttprequest,domain=pikabu.ru
 d21869 1
 a21869 1
 pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: [0-9]{3}px|min-height: calc.29.px|min-height: calc.[034569]{2}[0-9]{1}|min-height: calc.+.em|min-height: .+.(ch|cm|em|ex|in|lh|mm|pc|pt|Q)/)
-d22696 1
+d22606 2
+d22609 1
+d22614 1
+a22614 1
+autorambler.ru,rambler.ru#?##summary ~ div:-abp-contains(Продолжение истории после рекламы)
+d22617 1
+d22624 2
+d22635 2
+d22643 1
+d22645 1
+d22648 1
+d22650 1
+d22676 1
+d22678 1
+a22678 1
+weather.rambler.ru##[data-block="seo"]
+d22682 2
+a22683 1
+autorambler.ru,rambler.ru##[data-news_media-desktop*="rnet_widget"]
+d22685 1
+d22693 4
+a22696 1
+autorambler.ru,rambler.ru#?#div:-abp-has(> div > [data-rnet])
+a22698 1
+autorambler.ru,rambler.ru##div[class*="banner--native-"]
+d22708 1
+a22708 1
+autorambler.ru,rambler.ru##div[data-news_media-mobile^="partner_block"]
+d22718 1
+d22730 5
 d23013 1
 a23013 1
-dzen.ru##div[class*="wltjet__container"] > div[class*="wltjet__"] ~ div
+dzen.ru##div[class*="wltjed__container"] > div[class*="wltjed__"] ~ div
+d27304 19
+a27322 4
+autorambler.ru,rambler.ru###app div[style*="min-height:"][style*="250px"]
+autorambler.ru,rambler.ru##.commercial-branding > div script ~ div > div:style(min-height: 0 !important)
+autorambler.ru,rambler.ru##.commercial-branding aside
+autorambler.ru,rambler.ru##.commercial-branding div[style^="min-height:"]:style(min-height: 0 !important)
+d27325 1
+a27325 1
+horoscopes.rambler.ru,tv.rambler.ru,weather.rambler.ru##div[class]:style(min-height: 0 !important)
+d27328 3
+a27330 1
+autorambler.ru,rambler.ru##div[style^="order:"][style*="-1"]:style(min-height: 0 !important)
+a27737 1
+dzen.ru##div[class*="-2r "] > div[class*="__"]:first-child + div[class*="__"]
+a27998 1
+rambler.ru###summary ~ div:has(> [id^="cluster-video-ad"]):remove()
 d28256 1
 a28258 1
 anidub.vip,anidubonline.com,loveanime.live##+js(no-xhr-if, playmatic.video)
-a28428 1
-rambler.ru##div:has(> div > div[id^="adfox-"] ~ div [id^="cluster-video-ad"]):remove()
+a28667 1
+azrotv.com##.adbn-wrap
+a28669 1
+fctvhd.com##.mw-adblock
+a28670 1
+azrotv.com##div[id^="laoad_Adb"]
+a28692 1
+||baeldung.com/*/library/dist/js/ad-recovery.min.js
