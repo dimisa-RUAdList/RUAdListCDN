@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 01 Feb 2024 19:16:03 +0000
-! Diff-Path: ../patches/2024.2.1.1156.patch#ruadlist
+! Last modified: Fri, 02 Feb 2024 01:18:58 +0000
+! Diff-Path: ../patches/2024.2.2.78.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -27706,14 +27706,14 @@ ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.b-page.overlay[data-bem*="serp-m
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.b-page:style(padding-top: 0 !important)
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.blocks-grid__item_static > .direct_type_stripe
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.head-stripe:style(position: fixed !important; transform: scale(0) !important)
-dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.mini-suggest__item > a[href*="://yabs.yandex."][href*="/count/"]
-dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.mini-suggest__item > a[href*="://yandex."][href*="/clck/"]
-dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.mini-suggest__item > a[href][target="_blank"]
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.monetization-group > .monetization-group__item:style(height: auto !important)
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.serp-header:style(margin-top: 0 !important)
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.serp.main__carousel .Label_theme_direct
 ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.serp.main__carousel:not([data-bem*="collectionId"])
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.turbo-advert__loader
+dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"] > a[href*="://yabs.yandex."][href*="/count/"]
+dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"] > a[href*="://yandex."][href*="/clck/"]
+dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"] > a[href][target="_blank"]
 yandex.by,yandex.kz,yandex.ru,yandex.uz##body > .popup[data-bem*="https://yabs.yandex.ru/count/"]
 yandex.by,yandex.kz,yandex.ru,yandex.uz##body > .route-tip-view
 yandex.by,yandex.kz,yandex.ru,yandex.uz##body.b-page > .b-page__container .card.content__adv.card:style(margin-bottom: unset !important; padding: unset !important)
@@ -28285,9 +28285,6 @@ rbc.ru,sportrbc.ru##.l-sticky:has(.forecast:empty) ~ .js-news-feed > .news-feed:
 ozon.ru##.layout-page > div:has(> div > p > a[href*="://docs.ozon.ru/common/pravila"])
 inoreader.com##.leaderboard_ad:style(display: block !important; position: fixed !important; top: -10000px !important; left: -10000px !important)
 nrj.ua##.main__slider > a:not([href^="https://nrj.ua/"]):remove()
-dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.mini-suggest__item:has(> a[href*="://yabs.yandex."][href*="/count/"]):remove()
-dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.mini-suggest__item:has(> a[href*="://yandex."][href*="/clck/"]):remove()
-dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.mini-suggest__item:has(> a[href][target="_blank"]):remove()
 hideip.me#@#.node-promoted
 vm.ru##.onair_wrapper > [name="btn_air_close"]
 cq.ru##.post-content > div > div:matches-css(height: 150px):remove()
@@ -28314,6 +28311,9 @@ pronpic.org#@#:not(obhod-adblocka)
 @@||studizba.com^$generichide,badfilter
 @@||xksqb.com/native.$script,badfilter,domain=gwss.ru
 sports.ru##[class*="_label "]
+dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href*="://yabs.yandex."][href*="/count/"]):remove()
+dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href*="://yandex."][href*="/clck/"]):remove()
+dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href][target="_blank"]):remove()
 www.sports.ru##[data-noinit]
 24smi.org##a[href*="://24smi.org/"]:remove-attr(target)
 trupornolabs.org#@#a[href*="://pronpic.org/"]

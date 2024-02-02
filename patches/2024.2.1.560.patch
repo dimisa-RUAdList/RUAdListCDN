@@ -1,8 +1,8 @@
-diff name:ruadlist lines:145 checksum:6f00ac5bdc
+diff name:ruadlist lines:155 checksum:257645b282
 d4 2
 a5 2
-! Last modified: Thu, 01 Feb 2024 19:16:03 +0000
-! Diff-Path: ../patches/2024.2.1.1156.patch#ruadlist
+! Last modified: Fri, 02 Feb 2024 01:18:58 +0000
+! Diff-Path: ../patches/2024.2.2.78.patch#ruadlist
 d1188 1
 d2388 1
 d3186 1
@@ -140,7 +140,17 @@ d27697 1
 a27697 1
 dzen.ru##[class*="flours"] div[id][class^="feed"] [class*="wrapper"][aria-label] ~ article:not([aria-label])
 d27700 1
+d27767 3
+a27774 3
+dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"] > a[href*="://yabs.yandex."][href*="/count/"]
+dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"] > a[href*="://yandex."][href*="/clck/"]
+dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"] > a[href][target="_blank"]
 d28197 1
 d28285 1
 d28314 1
+d28349 3
+a28377 3
+dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href*="://yabs.yandex."][href*="/count/"]):remove()
+dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href*="://yandex."][href*="/clck/"]):remove()
+dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href][target="_blank"]):remove()
 d28407 1

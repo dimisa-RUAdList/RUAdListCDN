@@ -1,8 +1,8 @@
-diff name:ruadlist lines:198 checksum:6f00ac5bdc
+diff name:ruadlist lines:208 checksum:257645b282
 d4 2
 a5 2
-! Last modified: Thu, 01 Feb 2024 19:16:03 +0000
-! Diff-Path: ../patches/2024.2.1.1156.patch#ruadlist
+! Last modified: Fri, 02 Feb 2024 01:18:58 +0000
+! Diff-Path: ../patches/2024.2.2.78.patch#ruadlist
 d1188 1
 d2388 1
 d3186 1
@@ -182,11 +182,21 @@ rp5.am,rp5.by,rp5.co.nz,rp5.co.uk,rp5.kz,rp5.md,rp5.ru###FheaderContent > div[id
 d27736 1
 a27736 1
 dzen.ru##[class*="flours"] div[id][class^="feed"] [class*="wrapper"][aria-label] ~ article:not([aria-label])
+d27805 3
+a27812 3
+dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"] > a[href*="://yabs.yandex."][href*="/count/"]
+dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"] > a[href*="://yandex."][href*="/clck/"]
+dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"] > a[href][target="_blank"]
 a27999 1
 rambler.ru###summary ~ div:has(> [id^="cluster-video-ad"]):remove()
 d28234 1
 d28322 1
 d28351 1
+d28386 3
+a28414 3
+dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href*="://yabs.yandex."][href*="/count/"]):remove()
+dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href*="://yandex."][href*="/clck/"]):remove()
+dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href][target="_blank"]):remove()
 d28430 1
 d28445 1
 a28669 1
