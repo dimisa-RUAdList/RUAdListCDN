@@ -1,8 +1,8 @@
-diff name:ruadlist lines:253 checksum:42a29cee85
+diff name:ruadlist lines:265 checksum:841d3be0f1
 d4 2
 a5 2
-! Last modified: Fri, 02 Feb 2024 15:19:32 +0000
-! Diff-Path: ../patches/2024.2.2.919.patch#ruadlist
+! Last modified: Fri, 02 Feb 2024 20:19:08 +0000
+! Diff-Path: ../patches/2024.2.2.1219.patch#ruadlist
 d1188 1
 a1259 1
 ||contemo.ru^$third-party
@@ -21,6 +21,9 @@ a10528 1
 d10585 1
 a10585 1
 /Scripts/rcs.js$script,domain=rp5.am|rp5.by|rp5.co.nz|rp5.co.uk|rp5.kz|rp5.md|rp5.ru
+d10589 1
+a10589 1
+/stargate*.$image,popup,xmlhttprequest,domain=hlamer.ru|otfilm.ru
 d10669 1
 d10826 1
 d10908 1
@@ -50,6 +53,9 @@ rp5.am,rp5.by,rp5.co.nz,rp5.co.uk,rp5.kz,rp5.md,rp5.ru###content-wrapper > #cont
 d13961 1
 d14110 1
 d14327 1
+d14793 1
+a14793 1
+hlamer.ru,otfilm.ru###video-container .overlay_video
 d14804 1
 d14942 1
 a14942 1
@@ -198,6 +204,9 @@ a26167 3
 2ip.io,2ip.ru##.data_item > .ip-icon-port-scaner ~ div a
 2ip.io,2ip.ru##.data_item > .ip-icon-proxy ~ div a
 2ip.io,2ip.ru##.ip-links-container a[target="_blank"]
+d27000 1
+a27000 1
+hlamer.ru,otfilm.ru##body:style(background-color: #596c84 !important)
 d27303 19
 a27321 4
 autorambler.ru,rambler.ru###app div[style*="min-height:"][style*="250px"]
@@ -226,6 +235,9 @@ dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__it
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"] > a[href][target="_blank"]
 a27997 1
 rambler.ru###summary ~ div:has(> [id^="cluster-video-ad"]):remove()
+d28126 1
+a28126 1
+freehat.cc,hlamer.ru,lostpix.com,otfilm.ru,potokcdn.com,prostoporno.help,saltday.ru,uploadimagex.com,wowskill.ru,xittv.net##+js(abort-on-property-read, open)
 d28232 1
 d28255 1
 a28257 1
