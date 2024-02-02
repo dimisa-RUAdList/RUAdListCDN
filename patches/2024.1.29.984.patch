@@ -1,9 +1,11 @@
-diff name:ruadlist lines:220 checksum:cc8b8a5766
+diff name:ruadlist lines:241 checksum:089fc799ad
 d4 2
 a5 2
-! Last modified: Fri, 02 Feb 2024 05:22:23 +0000
-! Diff-Path: ../patches/2024.2.2.322.patch#ruadlist
+! Last modified: Fri, 02 Feb 2024 10:23:03 +0000
+! Diff-Path: ../patches/2024.2.2.623.patch#ruadlist
 d1188 1
+a1259 1
+||contemo.ru^$third-party
 d2388 1
 d3186 1
 d4768 1
@@ -16,6 +18,7 @@ a10528 1
 d10585 1
 a10585 1
 /Scripts/rcs.js$script,domain=rp5.am|rp5.by|rp5.co.nz|rp5.co.uk|rp5.kz|rp5.md|rp5.ru
+d10826 1
 d10908 1
 d10964 1
 d11235 1
@@ -28,9 +31,11 @@ d13294 1
 d13363 1
 a13363 1
 ||vp.rambler.ru/player/*/player.html#docking$domain=livejournal.com
+d13577 1
 d13579 1
 a13579 1
 rp5.am,rp5.by,rp5.co.nz,rp5.co.uk,rp5.kz,rp5.md,rp5.ru###FheaderContent > #archiveString ~ div[id]:not([class]):not([id="forecastShort"])
+d13586 1
 d13886 1
 a13886 1
 rp5.am,rp5.by,rp5.co.nz,rp5.co.uk,rp5.kz,rp5.md,rp5.ru###content-wrapper > #content ~ div[id]:not([id="mapa"])
@@ -50,14 +55,19 @@ a15417 1
 d15802 1
 d15861 2
 d15871 1
+d16103 1
 d16163 1
 d16255 1
+d16272 1
+a16361 1
+wildberries.ru##.footer__banner
 d16419 1
 d16615 1
 a16615 1
-comss.ru#?#.horizontal > .rbox:-abp-has(> .rapp a[href="https://www.comss.ru/page.php?id=3023"])
+comss.ru#?#.horizontal > .rbox:-abp-has(> .rapp a[href*="page.php?id=3023"])
 d17450 2
 d17459 1
+d17499 1
 d17616 1
 a17616 1
 aum.news##.recomended
@@ -65,13 +75,18 @@ d17733 1
 a17749 1
 autosoftos.com#?#.rightside > .block:-abp-has(> .dcont > div > ins )
 d18438 1
+d18812 1
+d18951 3
 d19070 1
 d19087 1
 a19087 1
 101.ru,19rus.info,2000.ua,5-tv.ru,56orb.ru,62info.ru,7info.ru,afanasy.biz,agitpro.su,allboxing.ru,anekdot.ru,argumenti.ru,baltnews.ee,belive.ru,bigpicture.ru,bombardir.ru,chehov-vid.ru,daily-inform.ru,dni.ru,dnpmag.com,do-slez.com,eadaily.com,eg.ru,expert.ru,ferra.ru,gazeta-tula.ru,glav.su,glavnoe24.ru,gorobzor.ru,gorvesti.ru,govoritmoskva.ru,gubdaily.ru,hightech.plus,iarex.ru,inforeactor.ru,iz.ru,kirov-portal.ru,kriminal.net.ua,life.ru,livelib.ru,m24.ru,melodrama1.com,mgorod.kz,mir24.tv,mk.ru,myhistori.ru,narodna-pravda.ua,nashgorod.ru,nation-news.ru,nevnov.ru,newinform.com,news-front.info,news.ru,nn.ru,ntv.ru,osnmedia.ru,penzainform.ru,penzavzglyad.ru,pikinform.ru,pnp.ru,polit.info,politexpert.net,politonline.ru,pora.ru,pravda.ru,putin-news.ru,radidomapro.ru,radioromantika.ru,ratel.kz,ren.tv,ria56.ru,riafan.ru,rueconomics.ru,rusplt.ru,russian.rt.com,rusvesna.su,sevkavportal.ru,sharknews.ru,sm.news,sminews.ru,sobesednik.ru,sport-express.ru,steaklovers.menu,sun-news.ru,topwar.ru,trendymen.ru,tsargrad.tv,tsn24.ru,tvc.ru,tvernews.ru,ua.today,uralpress.ru,usa.one,vazhno.ru,vedomosti.ru,versia.ru,veseloeradio.ru,vesti-yamal.ru,vesti.ru,vesti.uz,vestivrn.ru,vokrug.tv,vokrugsveta.ru,xn--b1ats.xn--80asehdb,zakon.kz,zr.ru##[id^="unit_"]
+a19269 1
+cq.ru##a[href*="/cq67er/"]
 d19383 1
 a19383 1
 aacalc.ru,agronews.ua,agroter.com.ua,ain.ua,ampercar.com,app2top.ru,argumenti.ru,arminfo.info,autogeek.com.ua,bib.bz,blizzardheroes.ru,csgo-guides.ru,daxshat.site,dtf.ru,for-ua.info,gameinside.ua,games-vam.ru,goal24.live,ilenta.com,img2txt.com,kontrolnaya-rabota.ru,korsars.pro,kritka.su,kurkul.com,liveball7.gq,liveball8.ml,mezha.media,modsfire.com,newstudio.tv,onliner.by,onlinevideoconverter.com,pesni-tut.com,photoshop-besplatno.org,prosportua.com,psm7.com,real-game.net,rutracker-2017.org,skachat-igri-besplatno.info,soft-windows.info,stopgame.ru,tochka.net,topvideo.tj,torrent-shyter.net,trupornolabs.org,ua.news,varta1.com.ua,vc.ru,vgtimes.ru,windows-soft.info,xn--80ac9aeh6f.xn--p1ai,z-music.org,zbirna.com,zoneofgames.ru,zserials.cc##a[href*="bit.ly"]
+d19923 1
 d19966 1
 d20094 1
 d20180 1
@@ -90,7 +105,7 @@ d20873 1
 d20894 1
 d21865 1
 a21865 1
-||pikabu.ru/ajax/?adakey=$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/ajax/?adabkey=$xmlhttprequest,domain=pikabu.ru
 d21869 1
 a21869 1
 pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: [0-9]{3}px|min-height: calc.29.px|min-height: calc.[034569]{2}[0-9]{1}|min-height: calc.+.em|min-height: .+.(ch|cm|em|ex|in|lh|mm|pc|pt|Q)/)
@@ -141,9 +156,11 @@ a22707 1
 autorambler.ru,rambler.ru##div[data-news_media-mobile^="partner_block"]
 d22717 1
 d22729 5
+a23008 1
+dzen.ru##[class*="floours"] div[id][class^="feed"] [class*="wrapper"][aria-label] ~ article:not([aria-label])
 d23012 1
 a23012 1
-dzen.ru##div[class*="vidjed__container"] > div[class*="vidjed__"] ~ div
+dzen.ru##div[class*="widjed__container"] > div[class*="widjed__"] ~ div
 d23372 1
 d23460 1
 d23463 1
@@ -162,6 +179,9 @@ d25875 1
 d25965 1
 d25991 4
 d25997 1
+d26081 1
+a26081 1
+anime-free.ru,pastebin.com,primpogoda.ru##body > div[id]:not([class])[style="display: block;"]
 a26167 3
 2ip.io,2ip.ru##.data_item > .ip-icon-port-scaner ~ div a
 2ip.io,2ip.ru##.data_item > .ip-icon-proxy ~ div a
@@ -187,8 +207,6 @@ d27364 1
 a27364 1
 rp5.am,rp5.by,rp5.co.nz,rp5.co.uk,rp5.kz,rp5.md,rp5.ru###FheaderContent > div[id]:not([class]):style(min-height: 0 !important)
 d27734 1
-a27734 1
-dzen.ru##[class*="flours"] div[id][class^="feed"] [class*="wrapper"][aria-label] ~ article:not([aria-label])
 d27803 3
 a27810 3
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"] > a[href*="://yabs.yandex."][href*="/count/"]
@@ -200,16 +218,19 @@ d28232 1
 d28255 1
 a28257 1
 anidub.vip,anidubonline.com,loveanime.live##+js(no-xhr-if, playmatic.video)
+a28280 1
+dzen.ru##+js(rmnt, div, adv-skeleton___main)
 d28320 1
 d28344 1
 d28350 1
 a28360 1
 playground.ru##+js(set-local-storage-item, pg_GPbackVideo, on)
 d28384 3
-a28412 3
+a28412 4
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href*="://yabs.yandex."][href*="/count/"]):remove()
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href*="://yandex."][href*="/clck/"]):remove()
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href][target="_blank"]):remove()
+dzen.ru##[class]:has(> div[class*="-single-desktop-floors-"][class*="__container"])
 d28442 1
 a28666 1
 azrotv.com##.adbn-wrap
