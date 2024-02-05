@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 05 Feb 2024 18:25:15 +0000
-! Diff-Path: ../patches/2024.2.5.1105.patch#ruadlist
+! Last modified: Mon, 05 Feb 2024 23:19:52 +0000
+! Diff-Path: ../patches/2024.2.5.1399.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -15519,6 +15519,7 @@ trassae95.com##.banners_img
 police-russia.com##.banners_navbar_below
 sevnews.info##.banners_tmpl3
 gfxstuff.ws,ntsk.ru##.bannertop
+anidub.vip,anidubonline.com##.bannertopclass
 belta.by##.bans
 prowebber.ru##.bantop
 flashscore.com.ua,flashscore.ru.com,flashscore.ua,flashscorekz.com,livescore.in,soccerstand.com##.banx-top
@@ -21795,7 +21796,6 @@ rafkino.com##div[id^="MarketGid"]
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
 ! Liveinternet (ловушка для обфускации)
-liveinternet.ru##style + div > div > div > div > div a[target="__blank"]
 ||liveinternet.ru/utf/lici.js?
 !/^https?://www\.liveinternet\.ru/(?!utf\/|q\/js\/|js\/|4Ek/JS/diary/main/nav/regoradd.js|autosave.js|cgi-bin/rpls.fcgi?|ckeditor\/|ckfinder\/|main_new_1251.js|share/js/share.js|spell/spell.js|uploader\/|vbcode.js|vbcode_language.js)/$script,domain=www.liveinternet.ru
 !||www.liveinternet.ru/community/$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/cgi-bin/rpls.fcgi?list= https://www.liveinternet.ru/spell/spell.js https://www.liveinternet.ru/share/js/share.js https://www.liveinternet.ru/4Ek/JS/diary/main/nav/regoradd.js https://www.liveinternet.ru/4Ek/JS/diary/trans.js
@@ -21824,7 +21824,7 @@ pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(/min-
 dracon-zet.ru,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 android-mafia.com,game4you.top,games-pc.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##:not(this-site-promotes-malware)
 pikabu.ru##[data-block-name]
-sdamgia.ru##[data-container]
+liveinternet.ru,sdamgia.ru##[data-container]
 sdamgia.ru##[data-name="partial-container"]
 kp.kg,kp.kz,kp.md,kp.ru#?#body > #app div:-abp-properties(background-color: rgb(225, 231, 235))
 www.e1.ru#?#body > script[src^="https://www.e1.ru/"] ~ #app [itemprop] > figure:-abp-has(span:-abp-contains(чуть-чуть и видео загрузится))
@@ -21836,7 +21836,7 @@ pikabu.ru##div[class*="page-story__"] div[style=""]
 pikabu.ru##div[class*="sidebar-block_border"][style*="border"]
 sdamgia.ru##div[class^="google_ad_left"]
 pikabu.ru##div[class^="sidebar-block "] ~ .sidebar-block_border ~ .sidebar-block_border ~ div[class^="sidebar-block "]:not(.sidebar-block_border)
-pikabu.ru,sdamgia.ru##div[data-name="adWrapper"]
+liveinternet.ru,pikabu.ru,sdamgia.ru##div[data-name="adWrapper"]
 pikabu.ru##div[href]
 rg.ru##div[id][class*="__"]:empty
 sdamgia.ru##div[id^="yandex_vario"]
@@ -22931,7 +22931,6 @@ dzen.ru##[class*="floours"] div[id][class^="feed"] [class*="wrapper"][aria-label
 yandex.by,yandex.kz,yandex.ru,yandex.uz##a[href*="//ads.adfox.ru/"]
 yandex.by,yandex.kz,yandex.ru,yandex.uz##body[class*="b-page_alt-widgets_yes"] .feed ._need-stub
 yandex.ru##div[class$="ear_js_inited"] > a[href^="//awaps.yandex.ru"]
-dzen.ru##div[class*="widjed__container"] > div[class*="widjed__"] ~ div
 yandex.by,yandex.kz,yandex.ru,yandex.uz##img[src*="yandex.net/get-direct"]
 ||awaps.yandex.
 ||bs-meta.yandex.$script,xmlhttprequest
@@ -28172,7 +28171,6 @@ sports.ru##+js(remove-node-text, script, AdBlocker)
 pikabu.ru##+js(remove-node-text, script, addPlaceholder)
 gsm.in.ua##+js(remove-node-text, script, message_ads)
 game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, tick)
-dzen.ru##+js(rmnt, div, adv-skeleton___main)
 116.ru,14.ru,161.ru,164.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,62.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,proizhevsk.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,www.fontanka.ru##+js(set, Object.prototype.changeVisible, noopFunc)
 howdyho.net##+js(set-attr, #progress-value, data-timer, 10)
 sdamgia.ru##+js(set-attr, .Root:not(.sgia-main-content) main > div:first-child:empty, class, false)
