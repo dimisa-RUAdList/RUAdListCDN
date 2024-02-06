@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 06 Feb 2024 09:19:37 +0000
-! Diff-Path: ../patches/2024.2.6.559.patch#ruadlist
+! Last modified: Tue, 06 Feb 2024 14:20:38 +0000
+! Diff-Path: ../patches/2024.2.6.860.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -11529,7 +11529,6 @@ lada.kz/uploads/banners/
 ||getalbums.ru^$object
 ||ggscore.com/media/b/
 ||giclub.tv/index.php?action=downloads;sa=downfile&id=
-||gidonline.eu^*/gidonline.js
 ||gig-torrent.ru/templates/GTR/images/bn
 ||gigantporno.com/wk.php
 ||gimp.nas2.net/img/rek/
@@ -13760,7 +13759,6 @@ anti-malware.ru,brd24.com,minizal.net,onyxgame.com,otxataba.net,xatab-repack.com
 videoprobki.com###brand-adv-left
 videoprobki.com###brand-adv-right
 voxpopuli.kz###brand_logo
-gidonline.eu###brand_vad
 altapress.ru,klopotenko.com###branding
 rufootballtv.org###branding > a[href]
 foto.ua###branding-bg-pickit
@@ -21583,7 +21581,6 @@ x360-club.org##table[background="themes/xbox/images/hhead.jpg"]
 samlib.ru##table[border][style^="border: solid #8e5373"][style$="margin-bottom: 3px;"]
 kinoblog.tv#?#table[height="300"]:-abp-has(div[class^="adfinity_block_"])
 goroskop.org##table[height="90"]
-picplus.ru##table[height][bgcolor="#e9e9e9"]
 ru.gg##table[id^="ad-"]
 cyberforum.ru#?#table[id^="post"] ~ div[style^="margin: 3px 0px"]:-abp-has([id^="yandex_rtb"])
 cyberforum.ru##table[id^="post"] ~ div[style^="margin: 3px 0px"][style*="display"]
@@ -21718,7 +21715,6 @@ crazyatomicgames.com,xxx-igra.com,yaldagames.com##td[width="300"] + td[valign="t
 crazyatomicgames.com,xxx-igra.com,yaldagames.com##td[width="300"] + td[valign="top"] > noindex ~ noindex
 crazyatomicgames.com,xxx-igra.com,yaldagames.com##td[width="300"] > div[class^="c"]
 crazyatomicgames.com,xxx-igra.com,yaldagames.com##td[width="300"] > noindex
-picplus.ru##td[width="300"][bgcolor="#e9e9e9"]
 unibytes.com##td[width="33%"]
 liveday.ru##td[width="367"] > noindex + table[width="367"]
 cool-archive.ru##td[width="556"] > :not(#dle-content)
@@ -21843,6 +21839,7 @@ sdamgia.ru##div[id^="yandex_vario"]
 pikabu.ru##div[style*="important;"][style*="width:"][style*="height:"]
 sdamgia.ru##div[style*="important;"][style*="width:"][style*="height:"] *
 pikabu.ru##div[style^="width: 300px; height:"]
+liveinternet.ru##style + div > div > div > div > div a[target="__blank"]
 !#endif
 ! Блокировка ресурсов, намеренно продвигающих вредоносное ПО и фейки
 inferno.games,mediagetguru.ru,rutor-game.info,rutor-games.ru,rutorgame.info,rutorgames.ru,torent-igruha.com,torrent-music.ru,torrent-soft.net,torrent-word.ru,torrentigo.net,torrentigruha.org,torrentsoft.net,where-game.ru##:not(this-site-promotes-malware)
@@ -24408,7 +24405,7 @@ cheb.ru,cheboksary.ws,kugesi.ru,na-svyazi.ru##a[href*="/ad.adriver."]
 ||statcontent.ru^$third-party
 ||static.fortfs.com/images/bnrs/$third-party
 ||static.leadia.ru/widget/$third-party
-||static.localrent.com/widget/$third-party
+||static.localrent.com/widget/$third-party,domain=~localrent.pl
 ||static.myrentacar.com/widget/$third-party
 ||static.terrhq.ru^
 ||stavkiprognozy.ru^$third-party
@@ -27905,7 +27902,7 @@ fenglish.site,mp3spy.cc##+js(abort-current-inline-script, JSON.parse, atob)
 dmod.cc,draug.ru,modsforwot.ru##+js(abort-current-inline-script, Math.floor, AdSense)
 electric-house.ru,euro-football.ru,forums.rusmedserv.com,liveresult.ru,smolensk-auto.ru,smolensk-auto.site,stroi-help.ru##+js(abort-current-inline-script, Math.floor, adregain_wall)
 agroreview.com##+js(abort-current-inline-script, Object.defineProperty, rcBuf)
-dc-marvel.org,gidonline.eu##+js(abort-current-inline-script, String.fromCharCode, var _0x)
+dc-marvel.org##+js(abort-current-inline-script, String.fromCharCode, var _0x)
 filmisub.com,kinofen.net##+js(abort-current-inline-script, XMLHttpRequest, document.querySelectorAll)
 gdespaces.com,gdespaces.net,google-cloud.services,spac.me,spac.run,spac.wtf,spac1.com,spac1.info,spac1.me,spac1.net,spac1.org,spac1.ru,spaces-blogs.com,spaces.im,spcs-files.xyz,spcs.bio,spcs.global,spcs.life,spcs.me,spcs.network,spcs.news,spcs.pro,spcs.pub,spcs.reviews,spcs.social,strip2.in,strip2.xxx,usersporn.com##+js(abort-current-inline-script, __require, /clickunder/)
 fastpic.org,~new.fastpic.org##+js(abort-current-inline-script, addEventListener, DOMContentLoaded)
