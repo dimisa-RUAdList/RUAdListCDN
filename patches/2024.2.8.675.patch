@@ -1,8 +1,28 @@
-diff name:ruadlist lines:7 checksum:cda107417b
+diff name:ruadlist lines:27 checksum:d668536469
 d4 2
 a5 2
-! Last modified: Thu, 08 Feb 2024 16:24:29 +0000
-! Diff-Path: ../patches/2024.2.8.984.patch#ruadlist
+! Last modified: Thu, 08 Feb 2024 21:17:29 +0000
+! Diff-Path: ../patches/2024.2.8.1277.patch#ruadlist
+a406 1
+||al-adtech.com^$third-party
 d21797 1
 a21797 1
 ||pikabu.ru/ajax/?arbkey=$xmlhttprequest,domain=pikabu.ru
+d22828 13
+a22840 8
+tourbobit.com,tourbobit.net,turbobeet.net,turbobi.pw,turbobif.com,turbobit.net,turbobita.net,turbobits.cc,turbobits.net,turboobit.com###window-body > #formula ~ p
+tourbobit.com,tourbobit.net,turbobeet.net,turbobi.pw,turbobif.com,turbobit.net,turbobita.net,turbobits.cc,turbobits.net,turboobit.com###window-body > :not(p)
+tourbobit.com,tourbobit.net,turbobeet.net,turbobi.pw,turbobif.com,turbobit.net,turbobita.net,turbobits.cc,turbobits.net,turboobit.com###window-body > a + p
+tourbobit.com,tourbobit.net,turbobeet.net,turbobi.pw,turbobif.com,turbobit.net,turbobita.net,turbobits.cc,turbobits.net,turboobit.com###window-frame > #window-title
+/brinpopup.js$script,domain=tourbobit.com|tourbobit.net|turbobeet.net|turbobi.pw|turbobif.com|turbobit.net|turbobita.net|turbobits.cc|turbobits.net|turboobit.com
+/pus/*$script,domain=tourbobit.com|tourbobit.net|turbobeet.net|turbobi.pw|turbobif.com|turbobit.net|turbobita.net|turbobits.cc|turbobits.net|turboobit.com
+/ybrowser/frame.png|$image,domain=tourbobit.com|tourbobit.net|turbobeet.net|turbobi.pw|turbobif.com|turbobit.net|turbobita.net|turbobits.cc|turbobits.net|turboobit.com
+tourbobit.com,tourbobit.net,turbobeet.net,turbobi.pw,turbobif.com,turbobit.net,turbobita.net,turbobits.cc,turbobits.net,turboobit.com##center > a > img
+d27620 1
+a27620 2
+dzen.ru##[class*="flou"] div[id][class^="feed"] [class*="wrapper"][aria-label] ~ article:not([aria-label])
+dzen.ru##aside[id^="article_"][class*="_right"] > div[class]
+d27622 1
+a27622 1
+dzen.ru##div[class*="article__"] > .undefined ~ div[class*="mid"] > div[id][class]
+d28297 1

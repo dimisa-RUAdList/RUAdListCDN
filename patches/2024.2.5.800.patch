@@ -1,8 +1,10 @@
-diff name:ruadlist lines:99 checksum:cda107417b
+diff name:ruadlist lines:104 checksum:d668536469
 d4 2
 a5 2
-! Last modified: Thu, 08 Feb 2024 16:24:29 +0000
-! Diff-Path: ../patches/2024.2.8.984.patch#ruadlist
+! Last modified: Thu, 08 Feb 2024 21:17:29 +0000
+! Diff-Path: ../patches/2024.2.8.1277.patch#ruadlist
+a406 1
+||al-adtech.com^$third-party
 d7987 1
 a7987 1
 /reklama_$domain=~komarovskiy.net|~mos.ru|~vkn.lt
@@ -69,20 +71,15 @@ liveinternet.ru,pikabu.ru,sdamgia.ru##div[data-name="adWrapper"]
 a21845 1
 liveinternet.ru##style + div > div > div > div > div a
 d22839 13
-a22851 13
-tourbobit.com,tourbobit.net,turbobeet.net,turbobi.pw,turbobif.com,turbobit.net,turbobita.net,turboobit.com,turbosit.net###window-body > #formula
-tourbobit.com,tourbobit.net,turbobeet.net,turbobi.pw,turbobif.com,turbobit.net,turbobita.net,turboobit.com,turbosit.net###window-body > #formula ~ *
-tourbobit.com,tourbobit.net,turbobeet.net,turbobi.pw,turbobif.com,turbobit.net,turbobita.net,turboobit.com,turbosit.net###window-frame > #window-body > div
-tourbobit.com,tourbobit.net,turbobeet.net,turbobi.pw,turbobif.com,turbobit.net,turbobita.net,turboobit.com,turbosit.net#?##window-frame > #window-body > p:-abp-contains(или)
-tourbobit.com,tourbobit.net,turbobeet.net,turbobi.pw,turbobif.com,turbobit.net,turbobita.net,turboobit.com,turbosit.net###window-frame > #window-title
-tourbobit.com,tourbobit.net,turbobeet.net,turbobi.pw,turbobif.com,turbobit.net,turbobita.net,turboobit.com,turbosit.net##.col-2
-tourbobit.com,tourbobit.net,turbobeet.net,turbobi.pw,turbobif.com,turbobit.net,turbobita.net,turboobit.com,turbosit.net##.wrap > .download-type + div
-tourbobit.com,tourbobit.net,turbobeet.net,turbobi.pw,turbobif.com,turbobit.net,turbobita.net,turboobit.com,turbosit.net##.wrap > .download-type ~ center
-/brinpopup.js$script,domain=tourbobit.com|tourbobit.net|turbobeet.net|turbobi.pw|turbobif.com|turbobit.net|turbobita.net|turboobit.com|turbosit.net
-/pus/*$script,domain=tourbobit.com|tourbobit.net|turbobeet.net|turbobi.pw|turbobif.com|turbobit.net|turbobita.net|turboobit.com|turbosit.net
-/ybrowser/frame.png|$image,domain=tourbobit.com|tourbobit.net|turbobeet.net|turbobi.pw|turbobif.com|turbobit.net|turbobita.net|turboobit.com|turbosit.net
-tourbobit.com,tourbobit.net,turbobeet.net,turbobi.pw,turbobif.com,turbobit.net,turbobita.net,turboobit.com,turbosit.net##a[href="/ybrowser/download"]
-tourbobit.com,tourbobit.net,turbobeet.net,turbobi.pw,turbobif.com,turbobit.net,turbobita.net,turboobit.com,turbosit.net##center > a > img
+a22851 8
+tourbobit.com,tourbobit.net,turbobeet.net,turbobi.pw,turbobif.com,turbobit.net,turbobita.net,turbobits.cc,turbobits.net,turboobit.com###window-body > #formula ~ p
+tourbobit.com,tourbobit.net,turbobeet.net,turbobi.pw,turbobif.com,turbobit.net,turbobita.net,turbobits.cc,turbobits.net,turboobit.com###window-body > :not(p)
+tourbobit.com,tourbobit.net,turbobeet.net,turbobi.pw,turbobif.com,turbobit.net,turbobita.net,turbobits.cc,turbobits.net,turboobit.com###window-body > a + p
+tourbobit.com,tourbobit.net,turbobeet.net,turbobi.pw,turbobif.com,turbobit.net,turbobita.net,turbobits.cc,turbobits.net,turboobit.com###window-frame > #window-title
+/brinpopup.js$script,domain=tourbobit.com|tourbobit.net|turbobeet.net|turbobi.pw|turbobif.com|turbobit.net|turbobita.net|turbobits.cc|turbobits.net|turboobit.com
+/pus/*$script,domain=tourbobit.com|tourbobit.net|turbobeet.net|turbobi.pw|turbobif.com|turbobit.net|turbobita.net|turbobits.cc|turbobits.net|turboobit.com
+/ybrowser/frame.png|$image,domain=tourbobit.com|tourbobit.net|turbobeet.net|turbobi.pw|turbobif.com|turbobit.net|turbobita.net|turbobits.cc|turbobits.net|turboobit.com
+tourbobit.com,tourbobit.net,turbobeet.net,turbobi.pw,turbobif.com,turbobit.net,turbobita.net,turbobits.cc,turbobits.net,turboobit.com##center > a > img
 d22934 1
 d24412 1
 a24412 1
@@ -94,7 +91,15 @@ tvapp.su##body > #content > div[style*="fixed"]
 a27271 2
 rusnext.ru##.header20-00:style(height: auto !important)
 ! ---
+d27628 1
+a27628 2
+dzen.ru##[class*="flou"] div[id][class^="feed"] [class*="wrapper"][aria-label] ~ article:not([aria-label])
+dzen.ru##aside[id^="article_"][class*="_right"] > div[class]
+d27630 1
+a27630 1
+dzen.ru##div[class*="article__"] > .undefined ~ div[class*="mid"] > div[id][class]
 d27909 1
 a27909 1
 dc-marvel.org##+js(abort-current-inline-script, String.fromCharCode, var _0x)
 d28175 1
+d28306 1

@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 08 Feb 2024 16:24:29 +0000
-! Diff-Path: ../patches/2024.2.8.984.patch#ruadlist
+! Last modified: Thu, 08 Feb 2024 21:17:29 +0000
+! Diff-Path: ../patches/2024.2.8.1277.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -404,6 +404,7 @@
 ||akiwi.ru^$third-party
 ||aksessuarov.ru^$third-party
 ||akvile.site^$third-party
+||al-adtech.com^$third-party
 ||aleba.ru^$third-party
 ||alemobile.ru^
 ||alfadart.com^$third-party
@@ -22825,19 +22826,14 @@ all-for-woman.com,back-in-ussr.com,budtezdorovy.net,domosedy.com,edalnya.com,kak
 trackeroc.ga,trackeroc.info,trackeroc.ml,trackeroc.org,trackeroc.tk,ttrackeroc.ru##a[href*="/yand."]
 trackeroc.ga,trackeroc.info,trackeroc.ml,trackeroc.org,trackeroc.tk,ttrackeroc.ru##a[href*="sub/"] img
 ! TurboBit и зеркала
-tourbobit.com,tourbobit.net,turbobeet.net,turbobi.pw,turbobif.com,turbobit.net,turbobita.net,turboobit.com,turbosit.net###window-body > #formula
-tourbobit.com,tourbobit.net,turbobeet.net,turbobi.pw,turbobif.com,turbobit.net,turbobita.net,turboobit.com,turbosit.net###window-body > #formula ~ *
-tourbobit.com,tourbobit.net,turbobeet.net,turbobi.pw,turbobif.com,turbobit.net,turbobita.net,turboobit.com,turbosit.net###window-frame > #window-body > div
-tourbobit.com,tourbobit.net,turbobeet.net,turbobi.pw,turbobif.com,turbobit.net,turbobita.net,turboobit.com,turbosit.net#?##window-frame > #window-body > p:-abp-contains(или)
-tourbobit.com,tourbobit.net,turbobeet.net,turbobi.pw,turbobif.com,turbobit.net,turbobita.net,turboobit.com,turbosit.net###window-frame > #window-title
-tourbobit.com,tourbobit.net,turbobeet.net,turbobi.pw,turbobif.com,turbobit.net,turbobita.net,turboobit.com,turbosit.net##.col-2
-tourbobit.com,tourbobit.net,turbobeet.net,turbobi.pw,turbobif.com,turbobit.net,turbobita.net,turboobit.com,turbosit.net##.wrap > .download-type + div
-tourbobit.com,tourbobit.net,turbobeet.net,turbobi.pw,turbobif.com,turbobit.net,turbobita.net,turboobit.com,turbosit.net##.wrap > .download-type ~ center
-/brinpopup.js$script,domain=tourbobit.com|tourbobit.net|turbobeet.net|turbobi.pw|turbobif.com|turbobit.net|turbobita.net|turboobit.com|turbosit.net
-/pus/*$script,domain=tourbobit.com|tourbobit.net|turbobeet.net|turbobi.pw|turbobif.com|turbobit.net|turbobita.net|turboobit.com|turbosit.net
-/ybrowser/frame.png|$image,domain=tourbobit.com|tourbobit.net|turbobeet.net|turbobi.pw|turbobif.com|turbobit.net|turbobita.net|turboobit.com|turbosit.net
-tourbobit.com,tourbobit.net,turbobeet.net,turbobi.pw,turbobif.com,turbobit.net,turbobita.net,turboobit.com,turbosit.net##a[href="/ybrowser/download"]
-tourbobit.com,tourbobit.net,turbobeet.net,turbobi.pw,turbobif.com,turbobit.net,turbobita.net,turboobit.com,turbosit.net##center > a > img
+tourbobit.com,tourbobit.net,turbobeet.net,turbobi.pw,turbobif.com,turbobit.net,turbobita.net,turbobits.cc,turbobits.net,turboobit.com###window-body > #formula ~ p
+tourbobit.com,tourbobit.net,turbobeet.net,turbobi.pw,turbobif.com,turbobit.net,turbobita.net,turbobits.cc,turbobits.net,turboobit.com###window-body > :not(p)
+tourbobit.com,tourbobit.net,turbobeet.net,turbobi.pw,turbobif.com,turbobit.net,turbobita.net,turbobits.cc,turbobits.net,turboobit.com###window-body > a + p
+tourbobit.com,tourbobit.net,turbobeet.net,turbobi.pw,turbobif.com,turbobit.net,turbobita.net,turbobits.cc,turbobits.net,turboobit.com###window-frame > #window-title
+/brinpopup.js$script,domain=tourbobit.com|tourbobit.net|turbobeet.net|turbobi.pw|turbobif.com|turbobit.net|turbobita.net|turbobits.cc|turbobits.net|turboobit.com
+/pus/*$script,domain=tourbobit.com|tourbobit.net|turbobeet.net|turbobi.pw|turbobif.com|turbobit.net|turbobita.net|turbobits.cc|turbobits.net|turboobit.com
+/ybrowser/frame.png|$image,domain=tourbobit.com|tourbobit.net|turbobeet.net|turbobi.pw|turbobif.com|turbobit.net|turbobita.net|turbobits.cc|turbobits.net|turboobit.com
+tourbobit.com,tourbobit.net,turbobeet.net,turbobi.pw,turbobif.com,turbobit.net,turbobita.net,turbobits.cc,turbobits.net,turboobit.com##center > a > img
 ! Ukr.NET
 mail.ukr.net###left_banner
 www.ukr.net###top-banner
@@ -27617,9 +27613,10 @@ dzen.ru##div[id][class$="__ad"]
 ! обфускация
 dzen.ru##.article-recommender__feed-container article > div + div
 dzen.ru##.viewer-layout__content div[class*="-player "][aria-label] ~ div:not([class])
-dzen.ru##aside[id^="article_"][class*="_rith"] > div[class]
+dzen.ru##[class*="flou"] div[id][class^="feed"] [class*="wrapper"][aria-label] ~ article:not([aria-label])
+dzen.ru##aside[id^="article_"][class*="_right"] > div[class]
 dzen.ru##div[aria-label="Карточка рекомендованного видео"] ~ [aria-label]:not([aria-label="Карточка рекомендованного видео"])
-dzen.ru##div[class*="article__"] > .undefined ~ div[class*="_nlld"] > div[id][class]
+dzen.ru##div[class*="article__"] > .undefined ~ div[class*="mid"] > div[id][class]
 dzen.ru##div[class*="idjed__container"] > div[class*="idjed__"] ~ div:style(display: none !important)
 dzen.ru##div[class^="feed__"] > article > div:first-child + div + div
 ! ---
@@ -28294,7 +28291,6 @@ sports.ru##[class*="_label "]
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href*="://yabs.yandex."][href*="/count/"]):remove()
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href*="://yandex."][href*="/clck/"]):remove()
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href][target="_blank"]):remove()
-dzen.ru##[class]:has(> div[class*="-single-desktop-floors-"][class*="__container"])
 www.sports.ru##[data-noinit]
 24smi.org##a[href*="://24smi.org/"]:remove-attr(target)
 trupornolabs.org#@#a[href*="://pronpic.org/"]
