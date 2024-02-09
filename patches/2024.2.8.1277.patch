@@ -1,8 +1,8 @@
-diff name:ruadlist lines:48 checksum:d659c4cd16
+diff name:ruadlist lines:74 checksum:4631dfc4f8
 d4 2
 a5 2
-! Last modified: Fri, 09 Feb 2024 17:19:08 +0000
-! Diff-Path: ../patches/2024.2.9.1039.patch#ruadlist
+! Last modified: Fri, 09 Feb 2024 22:22:07 +0000
+! Diff-Path: ../patches/2024.2.9.1342.patch#ruadlist
 a8676 1
 ##a[href*="://yourlnk.ru/r/"]
 a10213 1
@@ -20,6 +20,8 @@ d17171 1
 d17855 1
 a17855 1
 chasdiy.org##.side-content-wrapper
+a18185 1
+vsviti.com.ua##.td-fix-index > a[href][target="_blank"]
 a18305 1
 chasdiy.org##.top-content-wrapper
 d18613 1
@@ -41,9 +43,33 @@ mirlib.ru##noindex > center > a
 d21798 1
 a21798 1
 ||pikabu.ru/ajax/?arrkey=$xmlhttprequest,domain=pikabu.ru
+d21896 1
+d25680 1
+a25685 1
+@@/pop_ads.js|$script,~third-party,domain=game4you.top|games-pc.top|innal.top|naylo.top|rustorka.com|rustorka.net|rustorka.top|rustorkacom.lib
+a25710 1
+@@||apad2.top/*.js|$script,domain=apad2.top
 a25909 1
 pes-files.ru##.alert-blue
+d26055 3
+a26057 2
+2ip.io,2ip.ru##.data_item > .ip-icon-small ~ div a
+2ip.io,2ip.ru##.ip-info a[target="_blank"]
+a26059 1
+2ip.io,2ip.ru##nav li a[class]
 d27094 3
+d27264 1
+a27264 1
+apad2.top,game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div#body_container:style(margin-top: 0 !important; margin-bottom: 0 !important)
+a27935 1
+ya.ru##+js(abort-on-property-read, MarketFeed)
+d28074 1
+a28074 1
+apad2.top,game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(href-sanitizer, a[href*="/go.php"], ?url)
 d28103 1
 a28103 1
 autoinfo24.ru,dp73.spb.ru,dropmefiles.com.ua,dropmefiles.net,gtavicecity.ru,pes-files.ru##+js(nano-setTimeout-booster)
+d28163 1
+a28163 1
+apad2.top,game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, tick)
+d28224 1

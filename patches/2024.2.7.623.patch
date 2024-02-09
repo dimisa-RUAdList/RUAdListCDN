@@ -1,8 +1,8 @@
-diff name:ruadlist lines:99 checksum:d659c4cd16
+diff name:ruadlist lines:125 checksum:4631dfc4f8
 d4 2
 a5 2
-! Last modified: Fri, 09 Feb 2024 17:19:08 +0000
-! Diff-Path: ../patches/2024.2.9.1039.patch#ruadlist
+! Last modified: Fri, 09 Feb 2024 22:22:07 +0000
+! Diff-Path: ../patches/2024.2.9.1342.patch#ruadlist
 a406 1
 ||al-adtech.com^$third-party
 a8675 1
@@ -40,6 +40,8 @@ d17173 1
 d17857 1
 a17857 1
 chasdiy.org##.side-content-wrapper
+a18187 1
+vsviti.com.ua##.td-fix-index > a[href][target="_blank"]
 a18307 1
 chasdiy.org##.top-content-wrapper
 d18615 1
@@ -70,6 +72,7 @@ a21806 1
 d21843 1
 a21843 1
 liveinternet.ru##style + div > div > div > div > div a
+d21904 1
 d22837 13
 a22849 8
 tourbobit.com,tourbobit.net,turbobeet.net,turbobi.pw,turbobif.com,turbobit.net,turbobita.net,turbobits.cc,turbobits.net,turboobit.com###window-body > #formula ~ p
@@ -80,13 +83,27 @@ tourbobit.com,tourbobit.net,turbobeet.net,turbobi.pw,turbobif.com,turbobit.net,t
 /pus/*$script,domain=tourbobit.com|tourbobit.net|turbobeet.net|turbobi.pw|turbobif.com|turbobit.net|turbobita.net|turbobits.cc|turbobits.net|turboobit.com
 /ybrowser/frame.png|$image,domain=tourbobit.com|tourbobit.net|turbobeet.net|turbobi.pw|turbobif.com|turbobit.net|turbobita.net|turbobits.cc|turbobits.net|turboobit.com
 tourbobit.com,tourbobit.net,turbobeet.net,turbobi.pw,turbobif.com,turbobit.net,turbobita.net,turbobits.cc,turbobits.net,turboobit.com##center > a > img
+d25693 1
+a25698 1
+@@/pop_ads.js|$script,~third-party,domain=game4you.top|games-pc.top|innal.top|naylo.top|rustorka.com|rustorka.net|rustorka.top|rustorkacom.lib
+a25723 1
+@@||apad2.top/*.js|$script,domain=apad2.top
 a25883 1
 kakoysegodnyaprazdnik.ru,xn--80aaiebcrjcibi8adgdtsm9z.xn--p1ai#@#div[id^="yandex_rtb"]
 a25921 1
 pes-files.ru##.alert-blue
 a25968 1
 tvapp.su##body > #content > div[style*="fixed"]
+d26066 3
+a26068 2
+2ip.io,2ip.ru##.data_item > .ip-icon-small ~ div a
+2ip.io,2ip.ru##.ip-info a[target="_blank"]
+a26070 1
+2ip.io,2ip.ru##nav li a[class]
 d27105 3
+d27275 1
+a27275 1
+apad2.top,game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div#body_container:style(margin-top: 0 !important; margin-bottom: 0 !important)
 d27627 1
 a27627 2
 dzen.ru##[class*="flou"] div[id][class^="feed"] [class*="wrapper"][aria-label] ~ article:not([aria-label])
@@ -94,7 +111,16 @@ dzen.ru##aside[id^="article_"][class*="_right"] > div[class]
 d27629 1
 a27629 1
 dzen.ru##div[class*="article__"] > .undefined ~ div[class*="mid"] > div[id][class]
+a27945 1
+ya.ru##+js(abort-on-property-read, MarketFeed)
+d28084 1
+a28084 1
+apad2.top,game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(href-sanitizer, a[href*="/go.php"], ?url)
 d28113 1
 a28113 1
 autoinfo24.ru,dp73.spb.ru,dropmefiles.com.ua,dropmefiles.net,gtavicecity.ru,pes-files.ru##+js(nano-setTimeout-booster)
+d28173 1
+a28173 1
+apad2.top,game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, tick)
+d28234 1
 d28304 1
