@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 10 Feb 2024 08:20:59 +0000
-! Diff-Path: ../patches/2024.2.10.500.patch#ruadlist
+! Last modified: Sat, 10 Feb 2024 13:20:44 +0000
+! Diff-Path: ../patches/2024.2.10.800.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -25893,6 +25893,7 @@ pornhub.com###abAlert
 d3ward.github.io###ad_ctd
 tvvse.my1.ru###cont-i > span[style*="color:red"]
 fast-fiml.ru,fast-torrent.club,fast-torrent.ru,fast-torrent.su,filmpotok.ru,kinomuch.ru,nebeda.net,pickfilm.ru,veleto.ru,vixim.ru###container > center:nth-child(-n+3)
+fm-app.ru,tvapp.su,yootv.ru###content > div[style*="fixed"]
 d3ward.github.io###cts_test
 3dtuning.com###detected
 imagebam.com###hideifpossible.box_wait
@@ -25957,7 +25958,6 @@ channels247.net,goool7.ws,sport7.biz,sportbar.biz,sportbarchik88.com,sporting77.
 2es.work,adventuretime.ru,ani.wtf,cdnneedtv.ru,cdnpotok.com,cdntelesee.com,cdntvpotok.com,chepok.xyz,domatv.net,hdone.net,hdru.net,hindcine.tv,kipolino.site,klplayer.website,liveball.cc,liveball.uno,liveball7.gq,liveball8.ml,luxurytv.online,oneliketv.com,phys-kids.com,pokaz.me,rxtv.github.io,sovetromantica.com,strah.video,t1pochek.site,tip0chek.site,tipochek.xyz,worldvideo.site#?#[id^="oframe"] > pjsdiv:-abp-has(> pjsdiv:-abp-contains(/adblock|adblok|адблок|блокировщик|блокировку|фрибет/i))
 animedub.ru##a[href="https://animedub.ru/adblock.html"]
 sntch.com#?#article > p:-abp-contains(/отключите блокировку рекламы!$/)
-tvapp.su##body > #content > div[style*="fixed"]
 3drubik.ru##body > #page ~ div[id][class]
 24pdd.kz##body > .preloader
 doctorrouter.ru,gamingsym.in,ranobe-novels.ru,transformator220.ru,wuxiaworld.ru##body > :not([id]):not([class]):not(script)
@@ -27975,7 +27975,7 @@ terrikon.com##+js(abort-on-property-read, bdy)
 medicina.ua##+js(abort-on-property-read, blocked_action)
 overclockers.ru##+js(abort-on-property-read, cardinals)
 zaruba.fun##+js(abort-on-property-read, clickNS4)
-ritsatv.ru##+js(abort-on-property-read, console.clear)
+fm-app.ru,ritsatv.ru,tvapp.su,yootv.ru##+js(abort-on-property-read, console.clear)
 vesti.ua##+js(abort-on-property-read, createAds)
 gazeta.ru##+js(abort-on-property-read, creepyVideo)
 kolizhanka.com.ua##+js(abort-on-property-read, disable_copy)
@@ -28046,6 +28046,7 @@ tvzvezda.ru##+js(abort-on-stack-trace, Object.prototype.autoplay, /api/)
 fastpic.org,~new.fastpic.org##+js(addEventListener-defuser, /click|load/, popMagic)
 biqle.org,biqle.ru##+js(addEventListener-defuser, /click|mousedown/, popunder)
 autonews.co.ua,liveball.cc,liveball.uno##+js(addEventListener-defuser, /contextmenu|copy|keydown|selectstart/)
+fm-app.ru,tvapp.su,yootv.ru##+js(addEventListener-defuser, /mouse/, cursorVisible)
 ~id.rambler.ru,rambler.ru,~vp.rambler.ru##+js(addEventListener-defuser, DOMContentLoaded, .j-mini-player__video)
 sibnet.ru##+js(addEventListener-defuser, DOMContentLoaded, /smartweek/)
 sports.ru##+js(addEventListener-defuser, DOMContentLoaded, 0x)

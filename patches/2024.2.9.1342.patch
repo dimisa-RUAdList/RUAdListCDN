@@ -1,5 +1,13 @@
-diff name:ruadlist lines:4 checksum:481a6ba99e
+diff name:ruadlist lines:12 checksum:1beb485736
 d4 2
 a5 2
-! Last modified: Sat, 10 Feb 2024 08:20:59 +0000
-! Diff-Path: ../patches/2024.2.10.500.patch#ruadlist
+! Last modified: Sat, 10 Feb 2024 13:20:44 +0000
+! Diff-Path: ../patches/2024.2.10.800.patch#ruadlist
+a25895 1
+fm-app.ru,tvapp.su,yootv.ru###content > div[style*="fixed"]
+d25960 1
+d27978 1
+a27978 1
+fm-app.ru,ritsatv.ru,tvapp.su,yootv.ru##+js(abort-on-property-read, console.clear)
+a28048 1
+fm-app.ru,tvapp.su,yootv.ru##+js(addEventListener-defuser, /mouse/, cursorVisible)

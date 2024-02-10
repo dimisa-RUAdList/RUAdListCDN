@@ -1,8 +1,8 @@
-diff name:ruadlist lines:125 checksum:481a6ba99e
+diff name:ruadlist lines:130 checksum:1beb485736
 d4 2
 a5 2
-! Last modified: Sat, 10 Feb 2024 08:20:59 +0000
-! Diff-Path: ../patches/2024.2.10.500.patch#ruadlist
+! Last modified: Sat, 10 Feb 2024 13:20:44 +0000
+! Diff-Path: ../patches/2024.2.10.800.patch#ruadlist
 a406 1
 ||al-adtech.com^$third-party
 a8675 1
@@ -90,10 +90,10 @@ a25723 1
 @@||apad2.top/*.js|$script,domain=apad2.top
 a25883 1
 kakoysegodnyaprazdnik.ru,xn--80aaiebcrjcibi8adgdtsm9z.xn--p1ai#@#div[id^="yandex_rtb"]
+a25905 1
+fm-app.ru,tvapp.su,yootv.ru###content > div[style*="fixed"]
 a25921 1
 pes-files.ru##.alert-blue
-a25968 1
-tvapp.su##body > #content > div[style*="fixed"]
 d26066 3
 a26068 2
 2ip.io,2ip.ru##.data_item > .ip-icon-small ~ div a
@@ -113,6 +113,11 @@ a27629 1
 dzen.ru##div[class*="article__"] > .undefined ~ div[class*="mid"] > div[id][class]
 a27945 1
 ya.ru##+js(abort-on-property-read, MarketFeed)
+d27987 1
+a27987 1
+fm-app.ru,ritsatv.ru,tvapp.su,yootv.ru##+js(abort-on-property-read, console.clear)
+a28057 1
+fm-app.ru,tvapp.su,yootv.ru##+js(addEventListener-defuser, /mouse/, cursorVisible)
 d28084 1
 a28084 1
 apad2.top,game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(href-sanitizer, a[href*="/go.php"], ?url)
