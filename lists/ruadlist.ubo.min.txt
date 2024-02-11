@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 11 Feb 2024 04:23:08 +0000
-! Diff-Path: ../patches/2024.2.11.263.patch#ruadlist
+! Last modified: Sun, 11 Feb 2024 09:17:05 +0000
+! Diff-Path: ../patches/2024.2.11.557.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -335,6 +335,7 @@
 ||advmusic.com^$third-party
 ||advmusic.net^$third-party
 ||advrush.com^
+||advscdn.com^$third-party
 ||advservert.com^$third-party
 ||advtise.net^$third-party
 ||advtise.ru^$third-party
@@ -26661,8 +26662,8 @@ hdkinozzoro.ru##body:not(#id):style(padding-top: 0 !important)
 hdrezka.fun,kinokrad.us##.have-brand .wrap:style(margin-top: 0 !important)
 ! ---
 ! HDREZKA
-ag,biz,buzz,by,city,club,co,com,in,ink,loan,me,name,net,org,rest,run,sh,so,today,tv,vip,website,win##body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"] > [id$="er"]:nth-child(-n+3):style(width: unset !important)
-ag,biz,buzz,by,city,club,co,com,in,ink,loan,me,name,net,org,rest,run,sh,so,today,tv,vip,website,win##body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"]:style(padding-top: 0 !important; background-color: inherit !important)
+ag,biz,buzz,by,city,club,co,com,in,ink,kim,loan,me,name,net,org,rest,run,sh,so,today,tv,vip,website,win##body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"] > [id$="er"]:nth-child(-n+3):style(width: unset !important)
+ag,biz,buzz,by,city,club,co,com,in,ink,kim,loan,me,name,net,org,rest,run,sh,so,today,tv,vip,website,win##body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"]:style(padding-top: 0 !important; background-color: inherit !important)
 ! ---
 hdru.net##.page:style(margin-top: 0 !important)
 ! ---

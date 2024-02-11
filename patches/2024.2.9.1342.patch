@@ -1,11 +1,17 @@
-diff name:ruadlist lines:12 checksum:3bb1a80e65
+diff name:ruadlist lines:18 checksum:6b40d1c8ae
 d4 2
 a5 2
-! Last modified: Sun, 11 Feb 2024 04:23:08 +0000
-! Diff-Path: ../patches/2024.2.11.263.patch#ruadlist
+! Last modified: Sun, 11 Feb 2024 09:17:05 +0000
+! Diff-Path: ../patches/2024.2.11.557.patch#ruadlist
+a337 1
+||advscdn.com^$third-party
 a25895 1
 fm-app.ru,tvapp.su,yootv.ru###content > div[style*="fixed"]
 d25960 1
+d26664 2
+a26665 2
+ag,biz,buzz,by,city,club,co,com,in,ink,kim,loan,me,name,net,org,rest,run,sh,so,today,tv,vip,website,win##body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"] > [id$="er"]:nth-child(-n+3):style(width: unset !important)
+ag,biz,buzz,by,city,club,co,com,in,ink,kim,loan,me,name,net,org,rest,run,sh,so,today,tv,vip,website,win##body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"]:style(padding-top: 0 !important; background-color: inherit !important)
 d27978 1
 a27978 1
 fm-app.ru,ritsatv.ru,tvapp.su,yootv.ru##+js(abort-on-property-read, console.clear)
