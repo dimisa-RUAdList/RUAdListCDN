@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 14 Feb 2024 07:19:05 +0000
-! Diff-Path: ../patches/2024.2.14.439.patch#ruadlist
+! Last modified: Wed, 14 Feb 2024 12:34:32 +0000
+! Diff-Path: ../patches/2024.2.14.754.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -17716,6 +17716,7 @@ sport-express.ru##.se-banner
 sport-express.ru##.se-bets
 sport-express.ru##.se-material-page__blog-buttons
 sport-express.ru##.se-material-page__footer-aggregator
+sport-express.ru##.se-partner-stuffing-info
 sport-express.ru##.se-translation-scoreboard-event-bets
 sport-express.ru##.se-translation-scoreboard-extra__bookie
 search.tut.by##.search-i > .b-results-list:first-child:not([start])
@@ -20018,6 +20019,8 @@ gamesisart.ru##body > div[align="left"][style^="position: fixed;"]
 siver.com.ua##body > div[align="right"] > span
 999.md,delo.ua,nevasport.ru##body > div[class*="branding"]
 progipertoniyu.ru##body > div[class*="modal"]
+povarenok.ru##body > div[class]:empty[style="height: 100%;"]
+povarenok.ru##body > div[class]:empty[style="height: 100%;"] + div a
 votrube.ru##body > div[class]:last-of-type
 anilib.moe,anilib.one,anilib.top,anilibria.iss.one,anilibria.tv##body > div[class]:not([id]):nth-child(-n+5) > a[href]
 russian.rt.com##body > div[class^="Popup-"]
@@ -20084,8 +20087,6 @@ christianka.bratstvo.org##body > table[width="99%"] + p[align="center"]
 payeer-gift.ru##body div .banner
 om1.ru##body div[class*="-branding"]
 forum.flprog.ru##body.section-index .sidebar
-povarenok.ru##body:not([id]) > div[class]:empty:not([style])
-povarenok.ru##body:not([id]) > div[class]:empty:not([style]) + div a
 livetvstream.pro,me##body[bgcolor] > #adbtm
 livetvstream.pro,me##body[bgcolor] > div[id="ads"][style^="position: absolute;"]
 livetvstream.pro,me##body[bgcolor] > div[id^="iframe-container"]
@@ -27966,7 +27967,7 @@ fssp.gov.ru,southpark.su,stroi-help.ru,turkcinema.org##+js(abort-on-property-wri
 phys-kids.com##+js(abort-on-property-write, fetch)
 gamemag.ru##+js(abort-on-property-write, keepAdblock)
 kakprosto.ru##+js(abort-on-property-write, window.yaProxy)
-tvzvezda.ru##+js(abort-on-stack-trace, Object.prototype.autoplay, /api/)
+tvzvezda.ru##+js(abort-on-stack-trace, Object.prototype.autoplay, Play)
 7days.ru##+js(addEventListener-defuser, /^(?:contextmenu|keydown)$/)
 fastpic.org,~new.fastpic.org##+js(addEventListener-defuser, /click|load/, popMagic)
 biqle.org,biqle.ru##+js(addEventListener-defuser, /click|mousedown/, popunder)
@@ -28243,13 +28244,14 @@ reshu.by,sdamgia.ru##main > .false:style(margin-bottom: -185px !important)
 reshu.by,sdamgia.ru##main > div > div > div:has-text(/rotator|блокировщик/)
 mult-porno.*,sex-studentki.*,cosplay-porn.*##+js(set-constant, biads.initCli, undefined)
 dmod.cc,draug.ru,modsforwot.ru##p:has-text(Для скачивания подождите отсчет таймера...)
+tvzvezda.ru##pjsdiv[id^="oframe"] > pjsdiv[style*="opacity: 0.1;"]:empty
+tvzvezda.ru##pjsdiv[id^="oframe"] [style="animation-play-state: running;"]
 porno365.*##+js(abort-on-property-read, bc_blocks)
 porno365.*##+js(abort-on-stack-trace, Object.prototype.parallax, window.onload)
 pornopuk.com,huyamba.tv,piratam.net,piratca.net,porn720.biz,pornoakt.*,sexitorrent.com,sextor.org,domahatv.com,torrent-pirat.com,xtorrent.net,rapidzona.tv,xxxrip.net,xxxtor.com,hentai-share.one##+js(abort-current-inline-script, document.querySelectorAll, popMagic)
 kanobu.ru#?#section[class^="MaterialsManufacturerPage_infiniteWrap"] > div[class^="InfiniteScrollWrap_content"] > [class*="MaterialItemPage_materialSection"]:-abp-has(> .knb-grid-container > [data-io-article-url] [class^="TextContent_text"] > p:-abp-contains(/^Реклама:/)) [class^="material-content_"] a[href][target="_blank"]:not([href^="https://kanobu.ru/"]):style(color: inherit !important; pointer-events: none !important)
 igromania.ru#?#section[class^="MaterialsManufacturerPage_infiniteWrap"] > div[class^="InfiniteScrollWrap_content"] > [class*="MaterialItemPage_materialSection"]:-abp-has(> .knb-grid-container > [data-io-article-url] [class^="TextContent_text"] > p:-abp-contains(/^Реклама:/)) [class^="material-content_"] a[href][target="_blank"]:not([href^="https://www.igromania.ru/"]):style(color: inherit !important; pointer-events: none !important)
 kinoafisha.info##videotronic-player:remove-attr(data-video-autoplay)
-tvzvezda.ru##z-program-online [id^="oframeplayer"] > pjsdiv[style*="opacity: 0.1;"]:empty
 ||1plus1.video/*/embed/*autoplay=1$subdocument,removeparam=|
 ||adbutton.net^$script,redirect=noopjs
 ||amedia.online/templates/Animedia/js/libs.js$script,removeparam=|

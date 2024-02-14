@@ -1,8 +1,8 @@
-diff name:ruadlist lines:163 checksum:1944147590
+diff name:ruadlist lines:168 checksum:1b41beb038
 d4 2
 a5 2
-! Last modified: Wed, 14 Feb 2024 07:19:05 +0000
-! Diff-Path: ../patches/2024.2.14.439.patch#ruadlist
+! Last modified: Wed, 14 Feb 2024 12:34:32 +0000
+! Diff-Path: ../patches/2024.2.14.754.patch#ruadlist
 d87 1
 d102 1
 d143 1
@@ -111,6 +111,8 @@ a16909 2
 industry-hunter.com##.main-page > .container > .row > div + div ~ div
 industry-hunter.com##.main-page > .container > div[class^="text-black"]
 d17216 1
+a17792 1
+sport-express.ru##.se-partner-stuffing-info
 d18086 1
 a18086 1
 alexua.tv,avtovzglyad.ru,filmozavr.com,filmozavr.net,forexsystemsru.com,medkrug.ru,must-see.top##.sponsor
@@ -125,10 +127,6 @@ a19178 1
 d19186 1
 a19186 1
 1777.ru,1istochnik.ru,7days.ru,actualnews.org,allboxing.ru,amurmedia.ru,argumenti.ru,atas.info,autosaratov.ru,autosport.com.ru,av.by,baby.ru,bel.ru,belkagomel.by,bidbaits.ru,carsweek.ru,chitamedia.su,chukotkamedia.ru,cq.ru,ctc.ru,deita.ru,eaomedia.ru,eva.ru,finam.ru,fishki.net,fontanka.ru,food.ru,friday.ru,interface31.ru,irkutskmedia.ru,iz.ru,izhlife.ru,kaifolog.net,kamchatkamedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,lipetskmedia.ru,magadanmedia.ru,mel.fm,mk.ru,nakhodka.media,nashe.ru,new-magazine.ru,noob-club.ru,nsn.fm,om1.ru,osnmedia.ru,politrussia.com,povarenok.ru,priamurmedia.ru,primamedia.ru,prufy.ru,radiojazzfm.ru,radioultra.ru,realt.by,riamo.ru,rockfm.ru,russian.rt.com,rusvesna.su,sakhalinmedia.ru,sevastopolmedia.ru,sm.news,smolensk-i.ru,smotrim.ru,sovets.net,sovets24.ru,sravni.ru,starhit.ru,stavropol.media,study.ru,svpressa.ru,takiedela.ru,teleport2001.ru,topnews.ru,tv2.today,ukraina.ru,ulanmedia.ru,ussurmedia.ru,vm.ru,vsezdorovo.com,www.kolesa.ru,yakutiamedia.ru,zaycev.net##a[href*="//zen.yandex.ru/"]
-d20094 2
-a20161 2
-povarenok.ru##body:not([id]) > div[class]:empty:not([style])
-povarenok.ru##body:not([id]) > div[class]:empty:not([style]) + div a
 d20319 1
 a20319 1
 1777.ru,19rus.info,19rusinfo.ru,1ul.ru,2018.pp.ua,20minut.ua,2goroda.ru,365info.kz,3ys.ru,73online.ru,9tv.co.il,advis.ru,agronews.ua,agroreview.com,agrotimes.net,autodmir.ru,avtodispetcher.ru,bakemono.ru,bel.ru,besplatka.ua,bezformata.com,bhub.com.ua,car.ru,cbonds.ru,codernet.ru,comments.ua,con-med.ru,cybersport.ru,echosevera.ru,epravda.com.ua,fatalgame.com,filmz.ru,fishingsib.ru,flamp.ru,food.ru,footballua.tv,forum-profit.ru,gameguru.ru,gecid.com,gorodvitebsk.by,gp.by,growhow.in.ua,haqqin.az,hunting.ru,industry-hunter.com,infpol.ru,investfunds.ru,ircity.ru,islam-today.ru,iz.ru,joborgame.ru,jut.su,k1news.ru,klavogonki.ru,knijky.ru,kt.kz,kursktv.ru,laradiofm.ru,livesport.ws,locals.md,medialeaks.ru,megatyumen.ru,menportal.info,mirkino.club,myslo.ru,neboleem.net,nmedic.info,nv-online.info,obyava.ua,okna.ua,penza-press.ru,polochka.net,povarenok.ru,ppt4web.ru,pravda.com.ua,pravoved.ru,primemusic.cc,profibeer.ru,prostatitanet.com,redfm.ru,relax-fm.ru,rg.ru,skachat-kino.fun,smolensk-i.ru,sovsport.ru,spanishrestaurant.ru,sport5.by,sportguide.kiev.ua,start33.ru,syzran-small.ru,tele.ru,tengrinews.kz,the-flow.ru,thequestion.ru,thg.ru,tveda.ru,twentysix.ru,ufanotes.ru,valverus.info,vashurok.ru,veterinargid.ru,vikka.ua,vinnitsa.info,vklasse.online,vovka.su,vringe.com,vshkole.com,woman.ru,wonderzine.com,wowjp.net,xsport.ua,zagorod.spb.ru,zaim-profi.ru,zaryad.me,zebra-tv.ru,zoohoz.ru,zorbasmedia.ru##div[class*="banner"]
@@ -160,5 +158,12 @@ ag,biz,buzz,by,city,club,co,com,in,ink,kim,loan,me,name,net,org,rest,run,sh,so,t
 d27978 1
 a27978 1
 fm-app.ru,ritsatv.ru,tvapp.su,yootv.ru##+js(abort-on-property-read, console.clear)
+d28044 1
+a28044 1
+tvzvezda.ru##+js(abort-on-stack-trace, Object.prototype.autoplay, Play)
 a28048 1
 fm-app.ru,tvapp.su,yootv.ru##+js(addEventListener-defuser, /mouse/, cursorVisible)
+a28319 2
+tvzvezda.ru##pjsdiv[id^="oframe"] > pjsdiv[style*="opacity: 0.1;"]:empty
+tvzvezda.ru##pjsdiv[id^="oframe"] [style="animation-play-state: running;"]
+d28326 1
