@@ -1,15 +1,27 @@
-diff name:ruadlist lines:14 checksum:9d2b625857
+diff name:ruadlist lines:26 checksum:c1f4eb60f7
 d4 2
 a5 2
-! Last modified: Fri, 16 Feb 2024 14:20:39 +0000
-! Diff-Path: ../patches/2024.2.16.860.patch#ruadlist
+! Last modified: Fri, 16 Feb 2024 19:16:47 +0000
+! Diff-Path: ../patches/2024.2.16.1156.patch#ruadlist
 d11303 1
 a11303 1
 ||fastpic.org/view/$script
 d21731 1
 a21731 1
 ||pikabu.ru/ajax/?armkey=$xmlhttprequest,domain=pikabu.ru
-d22369 3
+d22369 4
+a22372 1
+116.ru,72.ru,e1.ru,ngs.ru,ngs55.ru##[data-test="sticky-header"] > div > div > div > div:first-child:not([data-test])
 a22374 1
 ngs.ru,www.e1.ru##div[data-test="header-sticky"] > div > section ~ div
 d22391 2
+d27779 1
+a27779 1
+mail.ru##body:not(.js-module) .tabs > .tabs__item:style(padding: 0 5px !important; font-size: 15px !important)
+a28374 6
+! Фикс для маленьких экранов
+mail.ru##.grid__header .ph-auth:matches-media((max-width: 1280px)):style(height: 37px !important)
+mail.ru##.grid__header .ph-container:matches-media((max-width: 1280px)):style(height: 40px !important)
+mail.ru##.grid__header > .headline:matches-media((max-width: 1280px)):style(height: 40px !important)
+mail.ru##[slot="main-column"] .news-item:matches-media((max-width: 1280px)):style(line-height: 19px !important)
+mail.ru##[slot="main-column"] > .tabs:matches-media((max-width: 1280px)):style(height: 20px !important)

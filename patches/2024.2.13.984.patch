@@ -1,8 +1,8 @@
-diff name:ruadlist lines:46 checksum:9d2b625857
+diff name:ruadlist lines:58 checksum:c1f4eb60f7
 d4 2
 a5 2
-! Last modified: Fri, 16 Feb 2024 14:20:39 +0000
-! Diff-Path: ../patches/2024.2.16.860.patch#ruadlist
+! Last modified: Fri, 16 Feb 2024 19:16:47 +0000
+! Diff-Path: ../patches/2024.2.16.1156.patch#ruadlist
 a5568 2
 ||spload.site^$third-party
 ||sploads.site^$third-party
@@ -27,10 +27,15 @@ d20085 2
 d21725 1
 a21725 1
 ||pikabu.ru/ajax/?armkey=$xmlhttprequest,domain=pikabu.ru
-d22363 3
+d22363 4
+a22366 1
+116.ru,72.ru,e1.ru,ngs.ru,ngs55.ru##[data-test="sticky-header"] > div > div > div > div:first-child:not([data-test])
 a22368 1
 ngs.ru,www.e1.ru##div[data-test="header-sticky"] > div > section ~ div
 d22385 2
+d27773 1
+a27773 1
+mail.ru##body:not(.js-module) .tabs > .tabs__item:style(padding: 0 5px !important; font-size: 15px !important)
 d27967 1
 a27967 1
 tvzvezda.ru##+js(abort-on-stack-trace, Object.prototype.autoplay, assets)
@@ -45,3 +50,10 @@ d28349 1
 d28356 1
 a28356 1
 news.mail.ru,sportmail.ru##.pm-logo > .pm-logo__link + .pm-logo__link > .pm-logo__name__title:style(opacity: 1 !important; background-color: #005ff9 !important; top: 0 !important; right: -9px !important; height: 35px !important; width: 70px !important; z-index: 9999 !important; font-size: 0 !important; box-shadow: none !important)
+a28368 6
+! Фикс для маленьких экранов
+mail.ru##.grid__header .ph-auth:matches-media((max-width: 1280px)):style(height: 37px !important)
+mail.ru##.grid__header .ph-container:matches-media((max-width: 1280px)):style(height: 40px !important)
+mail.ru##.grid__header > .headline:matches-media((max-width: 1280px)):style(height: 40px !important)
+mail.ru##[slot="main-column"] .news-item:matches-media((max-width: 1280px)):style(line-height: 19px !important)
+mail.ru##[slot="main-column"] > .tabs:matches-media((max-width: 1280px)):style(height: 20px !important)
