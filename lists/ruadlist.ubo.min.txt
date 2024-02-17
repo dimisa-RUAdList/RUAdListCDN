@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 17 Feb 2024 05:19:42 +0000
-! Diff-Path: ../patches/2024.2.17.319.patch#ruadlist
+! Last modified: Sat, 17 Feb 2024 10:20:59 +0000
+! Diff-Path: ../patches/2024.2.17.620.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -5196,6 +5196,7 @@
 ||rukoebads.com^$third-party
 ||ruktar.ru^$third-party
 ||runmken.space^$third-party
+||runoffree.bid^$third-party
 ||runolfsson.net^$third-party
 ||ruproverrcwc.tk^$third-party
 ||ruschopi.ru^$third-party
@@ -15337,6 +15338,7 @@ podolsk.ru,reklama-crimea.com##.banner-holder
 info-ua.com##.banner-holder > .box
 usm.media##.banner-img
 bnkirov.ru##.banner-img:not([href^="http://bnkirov.ru/"]):not([href*="rodnaya-vyatka.ru"]):not([href*="che-online.com"])
+168.ru##.banner-in-frame
 shrlink.top##.banner-inner
 amur.info,gts39.ru##.banner-item
 volyn24.com##.banner-label
@@ -22829,8 +22831,6 @@ yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.scroller__wrap > div[class^="minibadg
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.search-results__guadeloupe
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.serp-adv__add
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.serp-adv__all
-yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.serp-list > .serp-item:-abp-has(.organic__advLabel)
-ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.serp-list > .serp-item:-abp-has([data-bem] > .Organic-ContentWrapper > .TextContainer:-abp-contains(/Реклама.·/))
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.sidebar-view .business-advert-view
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.sidebar-view div[style*="!important"]:not([style*="font-size"])
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.spec-adv
@@ -22846,6 +22846,7 @@ yandex.by,yandex.kz,yandex.ru,yandex.uz##a[href*="//ads.adfox.ru/"]
 yandex.by,yandex.kz,yandex.ru,yandex.uz##body[class*="b-page_alt-widgets_yes"] .feed ._need-stub
 yandex.ru##div[class$="ear_js_inited"] > a[href^="//awaps.yandex.ru"]
 yandex.by,yandex.kz,yandex.ru,yandex.uz##img[src*="yandex.net/get-direct"]
+ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz#?#ul > .serp-item_card:-abp-has([data-bem] .organic__subtitle > span:-abp-contains(/Рeклама|Реклама/))
 ||awaps.yandex.
 ||bs-meta.yandex.$script,xmlhttprequest
 ||bs.yandex.$script
@@ -27603,8 +27604,7 @@ yandex.by,yandex.kz,yandex.ru,yandex.uz##.Root > .ECommerceCarousel
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.adv_pos_compare-bottom
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.adv_pos_compare-side
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.adv_pos_popup
-yandex.by,yandex.kz,yandex.ru,yandex.uz##.b-page.overlay[data-bem*="serp-metrika"] > .DistrSplashscreen
-ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.b-page.overlay[data-bem*="serp-metrika"]:style(overflow-y: auto !important)
+ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.b-page.overlay[data-serp-metrika]:style(overflow-y: auto !important)
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.b-page:style(padding-top: 0 !important)
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.blocks-grid__item_static > .direct_type_stripe
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.head-stripe:style(position: fixed !important; transform: scale(0) !important)
@@ -27731,6 +27731,7 @@ health.mail.ru,hi-tech.mail.ru,news.mail.ru,sportmail.ru##.branding-p
 auto.mail.ru,horo.mail.ru,kino.mail.ru,lady.mail.ru,tv.mail.ru##.cols__inner > noindex
 hi-tech.mail.ru##.cols_margin .link-hdr
 deti.mail.ru##.deti-slot_exchange
+mail.ru##.grid__header .ph-modal-projects-overlay:style(top: inherit !important)
 mail.ru##.grid__main-col > .tgb-wrapper
 mail.ru##.grid__main-col > div[slot="main-column"] .search-container:style(margin-top: 4px !important; margin-bottom: 4px !important)
 hi-tech.mail.ru##.header-banner:style(margin: 0 !important)
@@ -27759,11 +27760,8 @@ finance.mail.ru,vfokuse.mail.ru##aside > div > div:style(min-height: 0 !importan
 news.mail.ru##body > .block > .tag:style(z-index: 1400 !important; cursor: pointer !important)
 mail.ru##body > .grid .grid__lcol > .footer:style(margin-top: 10px !important)
 mail.ru##body > .grid .grid__rcol:style(margin-left: 0 !important)
-mail.ru##body > .grid .news-item_tgb
-mail.ru##body > .grid .rectangle-banner
 mail.ru##body > .grid > div[class^="grid"][class*="__header"] > .toolbar
 mail.ru##body > .zeropixel ~ * .balloon
-mail.ru##body > .zeropixel ~ * .rectangle-banner
 mail.ru##body > .zeropixel ~ * .skeleton-tgb
 mail.ru##body > .zeropixel ~ * .stripe-wrapper
 mail.ru##body > .zeropixel ~ * [class*="tgb-wrap"]
@@ -28064,7 +28062,7 @@ motorpage.ru##+js(no-xhr-if, /br/)
 adme.media##+js(no-xhr-if, /wl-analytics\.tsp\.li/)
 livejournal.com##+js(no-xhr-if, livejournal.com/video/check?recordId=)
 sm.news##+js(no-xhr-if, method:GET)
-anidub.vip,anidubonline.com,loveanime.live##+js(no-xhr-if, playmatic.video)
+anidub.vip,anidubonline.com##+js(no-xhr-if, playmatic.video)
 dzen.ru,frontend.vh.yandex.ru,naydex.net,widgets.kinopoisk.ru,www.kinopoisk.ru,yastatic.net##+js(no-xhr-if, strm.yandex.ru/get/)
 otzovik.com##+js(noeval-if, ShadowRoot)
 kvadratmetr.uz,oligarx.uz,tehnar.net.ua##+js(noeval-if, adsBlocked)
