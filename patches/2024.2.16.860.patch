@@ -1,8 +1,8 @@
-diff name:ruadlist lines:88 checksum:4e66831312
+diff name:ruadlist lines:93 checksum:1507e79767
 d4 2
 a5 2
-! Last modified: Sun, 18 Feb 2024 16:23:39 +0000
-! Diff-Path: ../patches/2024.2.18.983.patch#ruadlist
+! Last modified: Sun, 18 Feb 2024 21:15:50 +0000
+! Diff-Path: ../patches/2024.2.18.1275.patch#ruadlist
 a5198 1
 ||runoffree.bid^$third-party
 d8885 1
@@ -64,6 +64,9 @@ d25893 1
 a25893 1
 fashion2news.com,hotallnews.today,newspad.ru##body > div[id][class]
 d26055 3
+a26884 2
+m24.ru##.vjs-big-play-button:style(background: #0fc3c3 !important)
+! ---
 d27606 2
 a27607 1
 ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.b-page.overlay[data-serp-metrika]:style(overflow-y: auto !important)
@@ -75,9 +78,11 @@ d27775 1
 a27775 1
 mail.ru##body:not(.js-module) .tabs > .tabs__item:style(padding: 0 5px !important; font-size: 15px !important)
 d27992 1
+a28064 1
+anidub.vip,anidubonline.com##+js(no-xhr-if, getCode)
 d28067 1
-a28067 1
-anidub.vip,anidubonline.com##+js(no-xhr-if, playmatic.video)
+a28156 1
+m24.ru##+js(set-constant, player_options.autoplay, false)
 d28230 2
 d28256 1
 a28370 6

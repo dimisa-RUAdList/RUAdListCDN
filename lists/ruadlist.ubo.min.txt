@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 18 Feb 2024 16:23:39 +0000
-! Diff-Path: ../patches/2024.2.18.983.patch#ruadlist
+! Last modified: Sun, 18 Feb 2024 21:15:50 +0000
+! Diff-Path: ../patches/2024.2.18.1275.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -26878,6 +26878,8 @@ lrepacks.net##[href*="poluchenie-premium-dostupa.html"] > b > .fa-spin:style(ani
 ! ---
 lurkmore.wtf###localNotice .floatleft img:style(height: 70px !important; width: auto !important)
 ! ---
+m24.ru##.vjs-big-play-button:style(background: #0fc3c3 !important)
+! ---
 maxpark.com,newsland.com##.b-branding__wrap:style(padding: 0 !important)
 ! ---
 mc.today##.category-all #content:style(background-image: none !important; cursor: auto !important)
@@ -28054,9 +28056,9 @@ motorpage.ru##+js(no-xhr-if, /br/)
 116.ru,14.ru,161.ru,164.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,62.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,proizhevsk.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,www.fontanka.ru##+js(no-xhr-if, /hits/event/, method:POST)
 4pda.to##+js(no-xhr-if, /m2?_)
 adme.media##+js(no-xhr-if, /wl-analytics\.tsp\.li/)
+anidub.vip,anidubonline.com##+js(no-xhr-if, getCode)
 livejournal.com##+js(no-xhr-if, livejournal.com/video/check?recordId=)
 sm.news##+js(no-xhr-if, method:GET)
-anidub.vip,anidubonline.com##+js(no-xhr-if, playmatic.video)
 dzen.ru,frontend.vh.yandex.ru,naydex.net,widgets.kinopoisk.ru,www.kinopoisk.ru,yastatic.net##+js(no-xhr-if, strm.yandex.ru/get/)
 otzovik.com##+js(noeval-if, ShadowRoot)
 kvadratmetr.uz,oligarx.uz,tehnar.net.ua##+js(noeval-if, adsBlocked)
@@ -28146,6 +28148,7 @@ vk.com,vk.ru##+js(set-constant, noAdsAtAll, {})
 player.smotrim.ru##+js(set-constant, pl.getParams.isPlay, null)
 eagleplatform.com##+js(set-constant, player.options.scroll, false)
 kinescope.io##+js(set-constant, playerOptions.behaviour.autoPlay, false)
+m24.ru##+js(set-constant, player_options.autoplay, false)
 softportal.com##+js(set-constant, timeEnd, 1)
 rambler.ru##+js(set-constant, top100Counter, false)
 1tv.ru##+js(set-constant, window.EUMP.plugins.antiblock, noopFunc)
