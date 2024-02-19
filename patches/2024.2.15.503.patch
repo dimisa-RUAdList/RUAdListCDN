@@ -1,8 +1,8 @@
-diff name:ruadlist lines:107 checksum:c007870c04
+diff name:ruadlist lines:120 checksum:800d4581d0
 d4 2
 a5 2
-! Last modified: Mon, 19 Feb 2024 07:19:09 +0000
-! Diff-Path: ../patches/2024.2.19.439.patch#ruadlist
+! Last modified: Mon, 19 Feb 2024 12:34:57 +0000
+! Diff-Path: ../patches/2024.2.19.754.patch#ruadlist
 a5198 1
 ||runoffree.bid^$third-party
 d8885 1
@@ -36,9 +36,13 @@ a13380 1
 d13386 1
 a13386 1
 ||yandex.ru/games/$domain=fishki.net|games.academic.ru|lenta.ru|vz.ru
+a15022 1
+vidstezhyty.com.ua##.aliexpress
 a15338 1
 168.ru##.banner-in-frame
 d16331 1
+a17187 1
+posylka.net##.package-timeline__item--adv
 d20621 1
 d21259 1
 a21259 1
@@ -46,11 +50,17 @@ vlab.su##img[src*="/banner/"]
 d21730 1
 a21730 1
 ||pikabu.ru/ajax/?armkey=$xmlhttprequest,domain=pikabu.ru
+d22351 1
+d22356 1
+d22365 1
+a22365 1
+116.ru,14.ru,161.ru,164.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,62.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,proizhevsk.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,voronezh1.ru##[data-creative]
 d22368 4
-a22371 1
+a22371 2
+72.ru##[data-test="header-adv-logo"]
 116.ru,72.ru,e1.ru,ngs.ru,ngs55.ru##[data-test="sticky-header"] > div > div > div > div:first-child:not([data-test])
 a22373 1
-ngs.ru,www.e1.ru##div[data-test="header-sticky"] > div > section ~ div
+72.ru,ngs.ru,www.e1.ru##div[data-test="header-sticky"] > div > section ~ div
 d22390 2
 a22580 1
 sportrbc.ru##.bet-block
@@ -99,6 +109,9 @@ d28259 1
 d28361 1
 a28361 1
 news.mail.ru,sportmail.ru##.pm-logo > .pm-logo__link + .pm-logo__link > .pm-logo__name__title:style(opacity: 1 !important; background-color: #005ff9 !important; top: 0 !important; right: -9px !important; height: 35px !important; width: 70px !important; z-index: 9999 !important; font-size: 0 !important; box-shadow: none !important)
+d28363 1
+a28363 1
+auto.mail.ru,deti.mail.ru##.pm-logo > .pm-logo__link + .pm-logo__link > .pm-logo__name__title:style(opacity: 1 !important; background-color: #005ff9 !important; top: 0 !important; right: -9px !important; height: 35px !important; width: 75px !important; z-index: 9999 !important; font-size: 0 !important; box-shadow: none !important)
 a28373 6
 ! Фикс для маленьких экранов
 mail.ru##.grid__header .ph-auth:matches-media((max-width: 1280px)):style(height: 37px !important)
