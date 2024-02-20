@@ -1,8 +1,8 @@
-diff name:ruadlist lines:112 checksum:c53f018ce6
+diff name:ruadlist lines:123 checksum:179dd47b21
 d4 2
 a5 2
-! Last modified: Tue, 20 Feb 2024 13:22:14 +0000
-! Diff-Path: ../patches/2024.2.20.802.patch#ruadlist
+! Last modified: Tue, 20 Feb 2024 18:25:44 +0000
+! Diff-Path: ../patches/2024.2.20.1105.patch#ruadlist
 a5198 1
 ||runoffree.bid^$third-party
 d8885 1
@@ -26,6 +26,8 @@ a10576 1
 d10756 1
 a10836 1
 ||aser.pro/ad.
+a12083 1
+||music.yandex.ru/iframe/$domain=burninghut.ru
 a13381 1
 ||xyz/|$third-party,domain=engvideo.net|ling-online.net
 d13387 1
@@ -83,8 +85,14 @@ a22848 1
 ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz#?#ul > .serp-item_card:-abp-has([data-bem] .organic__subtitle > span:-abp-contains(/Рeклама|Реклама/))
 a24816 1
 @@||vk.com/share.php$generichide
+d25770 1
+a25770 1
+@@||yandex.ru/ads/system/adsdk.js$script,domain=aniboom.one|gisher.org|karaoke.ru|kino.tricolor.tv|limehd.tv|litehd.tv|m24.ru|peers.tv|player.mediavitrina.ru|russia-tv.online
 d25833 1
 d25848 1
+d25879 1
+a25879 1
+2es.work,adventuretime.ru,ani.wtf,cdnneedtv.ru,cdnpotok.com,cdntelesee.com,cdntvpotok.com,chepok.xyz,domatv.net,hdone.net,hdru.net,hindcine.tv,kipolino.site,klplayer.website,liveball.cc,liveball.uno,liveball7.gq,liveball8.ml,luxurytv.online,oneliketv.com,phys-kids.com,pokaz.me,rxtv.github.io,sovetromantica.com,strah.video,t1pochek.site,tip0chek.site,tipochek.xyz,volley.ru,worldvideo.site#?#[id^="oframe"] > pjsdiv:-abp-has(> pjsdiv:-abp-contains(/adblock|adblok|адблок|блокировщик|блокировку|фрибет/i))
 d25893 1
 a25893 1
 fashion2news.com,hotallnews.today,newspad.ru##body > div[id][class]
@@ -101,6 +109,9 @@ mail.ru##.grid__header .ph-modal-projects-overlay:style(top: inherit !important)
 d27762 2
 d27766 1
 d27992 1
+d28034 1
+a28034 1
+volley.ru##+js(no-fetch-if, buzzoola.com)
 a28064 1
 anidub.vip,anidubonline.com##+js(no-xhr-if, getCode)
 d28067 1
