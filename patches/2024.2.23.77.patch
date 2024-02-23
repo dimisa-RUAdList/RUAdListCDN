@@ -1,5 +1,18 @@
-diff name:ruadlist lines:4 checksum:fd132b1e3c
+diff name:ruadlist lines:17 checksum:e4dd24f048
 d4 2
 a5 2
-! Last modified: Fri, 23 Feb 2024 06:24:41 +0000
-! Diff-Path: ../patches/2024.2.23.384.patch#ruadlist
+! Last modified: Fri, 23 Feb 2024 11:16:24 +0000
+! Diff-Path: ../patches/2024.2.23.676.patch#ruadlist
+d8901 1
+d21840 3
+a21842 8
+2ip.io,2ip.ru##a[href*="://fineproxy.org"]
+||go.onelink.me^$popup,domain=2ip.io|2ip.ru
+! блокировки, добавленнные из-за агрессивного обхода адблока на 2ip.ru и 2ip.io ~>
+||fineproxy.org^$third-party,popup
+||finevpn.org^$third-party,popup
+||hidemn.org^$third-party,popup
+||hidemy.name^$third-party,popup
+||proxyelite.info^$third-party,popup
+d25987 3
+d25991 1

@@ -1,8 +1,8 @@
-diff name:ruadlist lines:92 checksum:fd132b1e3c
+diff name:ruadlist lines:105 checksum:e4dd24f048
 d4 2
 a5 2
-! Last modified: Fri, 23 Feb 2024 06:24:41 +0000
-! Diff-Path: ../patches/2024.2.23.384.patch#ruadlist
+! Last modified: Fri, 23 Feb 2024 11:16:24 +0000
+! Diff-Path: ../patches/2024.2.23.676.patch#ruadlist
 a104 1
 ||28xppc6e0q.com^$third-party
 a1783 1
@@ -11,6 +11,7 @@ a2155 1
 ||fzgrpqktmq.com^$third-party
 a8770 1
 ##a[href^="https://wcm-ru.frontend.weborama.fr/fcgi-bin/dispatch.fcgi?"]
+d8897 1
 a10114 1
 ||clickthis.blog^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.googletagmanager.com *.reddit.com *.twitter.com *.wp.com *.io *.net *.org
 d10186 1
@@ -75,6 +76,18 @@ a21716 1
 @@||imasdk.googleapis.com/$xmlhttprequest,domain=volley.ru
 a21770 1
 liveinternet.ru##div[style*="!important; "]
+d21833 3
+a21835 8
+2ip.io,2ip.ru##a[href*="://fineproxy.org"]
+||go.onelink.me^$popup,domain=2ip.io|2ip.ru
+! блокировки, добавленнные из-за агрессивного обхода адблока на 2ip.ru и 2ip.io ~>
+||fineproxy.org^$third-party,popup
+||finevpn.org^$third-party,popup
+||hidemn.org^$third-party,popup
+||hidemy.name^$third-party,popup
+||proxyelite.info^$third-party,popup
+d25980 3
+d25984 1
 d27240 2
 d27804 1
 a27804 1

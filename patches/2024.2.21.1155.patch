@@ -1,14 +1,15 @@
-diff name:ruadlist lines:53 checksum:fd132b1e3c
+diff name:ruadlist lines:66 checksum:e4dd24f048
 d4 2
 a5 2
-! Last modified: Fri, 23 Feb 2024 06:24:41 +0000
-! Diff-Path: ../patches/2024.2.23.384.patch#ruadlist
+! Last modified: Fri, 23 Feb 2024 11:16:24 +0000
+! Diff-Path: ../patches/2024.2.23.676.patch#ruadlist
 a104 1
 ||28xppc6e0q.com^$third-party
 a1783 1
 ||elpushnot.com^$third-party
 a2155 1
 ||fzgrpqktmq.com^$third-party
+d8898 1
 a10115 1
 ||clickthis.blog^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.googletagmanager.com *.reddit.com *.twitter.com *.wp.com *.io *.net *.org
 d10187 1
@@ -39,6 +40,18 @@ d21054 1
 d21059 1
 a21774 1
 liveinternet.ru##div[style*="!important; "]
+d21837 3
+a21839 8
+2ip.io,2ip.ru##a[href*="://fineproxy.org"]
+||go.onelink.me^$popup,domain=2ip.io|2ip.ru
+! блокировки, добавленнные из-за агрессивного обхода адблока на 2ip.ru и 2ip.io ~>
+||fineproxy.org^$third-party,popup
+||finevpn.org^$third-party,popup
+||hidemn.org^$third-party,popup
+||hidemy.name^$third-party,popup
+||proxyelite.info^$third-party,popup
+d25984 3
+d25988 1
 d27244 2
 d27808 1
 a27808 1

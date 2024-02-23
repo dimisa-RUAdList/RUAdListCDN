@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 23 Feb 2024 06:24:41 +0000
-! Diff-Path: ../patches/2024.2.23.384.patch#ruadlist
+! Last modified: Fri, 23 Feb 2024 11:16:24 +0000
+! Diff-Path: ../patches/2024.2.23.676.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -8898,7 +8898,6 @@ $popup,domain=176.114.0.126|176.114.0.132|37.220.36.15|assiatv.com|cdnneedtv.ru|
 ||gemius.pl^$popup,domain=terrikon.com
 ||getitbit.net/ads/$popup
 ||goo.gl^$popup,domain=aces.gg|gamegpu.com|skachat-igri-besplatno.info|torrents-game.net|vsofte.biz
-||hidemy.name^$third-party,popup
 ||joker.win/*&offer_id=$popup
 ||m.acestream.net/plan/select?popup=noads$popup
 ||mama.land^$popup,domain=comments.ua
@@ -21837,9 +21836,14 @@ $script,~third-party,domain=defileb.com|fplay.online|hovels.info|likelol.online|
 ##body.has-brand .b-content__main > div[style^="height: 250px; overflow: hidden;"]
 ! 2ip.ru и 2ip.io
 2ip.io,2ip.ru#?#.content-article p:-abp-has(> .adsbygoogle)
-2ip.io,2ip.ru#?#.narrow-column > style ~ div > div:-abp-has(a[style^="color:"])
-2ip.io,2ip.ru##.st-ad
-2ip.io,2ip.ru##.test-vpn
+2ip.io,2ip.ru##a[href*="://fineproxy.org"]
+||go.onelink.me^$popup,domain=2ip.io|2ip.ru
+! блокировки, добавленнные из-за агрессивного обхода адблока на 2ip.ru и 2ip.io ~>
+||fineproxy.org^$third-party,popup
+||finevpn.org^$third-party,popup
+||hidemn.org^$third-party,popup
+||hidemy.name^$third-party,popup
+||proxyelite.info^$third-party,popup
 ! Auto.ru
 auto.ru##.BankCardForm
 auto.ru##.CardOfferBodyAdPlaceCb
@@ -25984,11 +25988,7 @@ www.1tv.ru##div[class^="Branding_container_"]:style(margin-top: unset !important
 ! ---
 2ip.io,2ip.ru##.consent__notice
 2ip.io,2ip.ru##.consent__notice ~ .body-blackout
-2ip.io,2ip.ru##.data_item > .ip-icon-small ~ div a
-2ip.io,2ip.ru##.ip-info a[target="_blank"]
-2ip.io,2ip.ru##a[onclick*="trapABClick"]:style(position: absolute !important; top: -9999px !important; opacity: 0 !important; z-index: -9999 !important)
 2ip.io,2ip.ru##body:style(overflow: auto !important)
-2ip.io,2ip.ru##nav li a[class]
 ! ---
 3dnews.kz,3dnews.ru##.article > .onadlable
 3dnews.kz,3dnews.ru##.article > .onadlable ~ .js-mediator-article a[href]:not([href^="/"]):not([href^="#"]):not([href*="3dnews."]):style(pointer-events: none !important; text-decoration: none !important; color: inherit !important)
