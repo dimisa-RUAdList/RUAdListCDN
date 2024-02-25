@@ -1,18 +1,35 @@
-diff name:ruadlist lines:29 checksum:29c9f34a1e
+diff name:ruadlist lines:55 checksum:00648e1c42
 d4 2
 a5 2
-! Last modified: Sun, 25 Feb 2024 18:22:40 +0000
-! Diff-Path: ../patches/2024.2.25.1102.patch#ruadlist
+! Last modified: Sun, 25 Feb 2024 23:18:33 +0000
+! Diff-Path: ../patches/2024.2.25.1398.patch#ruadlist
+a2243 1
+||getads.ru^$third-party
+a8936 1
+/bens/vinos.js$popup
+d10427 1
+a10427 1
+/bazr/*$domain=allsoch.ru|gdz.work|megaresheba.ru|pedportal.net|ronl.ru|spishy.net|zoobrilka.net
+d10489 1
+a10489 1
+/media/index$domain=gdz-putina.fun|gdz.fm|gdz.ninja|gdz.ru|gdzguru.com|gdzotputina.club|gdzputina.net|megaresheba.com|megaresheba.ru|resheba.me|reshebnik.com|spishi.fun|xn--c1acj.xn--p1acf|xn--c1acj.xn--p1ai|zoobrilka.net
 a10995 1
 ||bst.bratsk.ru/api/getBanner_
 d16429 1
+d16916 1
+a16916 1
+gdz-putina.fun,gdz.fm,gdz.ninja,gdz.ru,gdzguru.com,gdzotputina.club,gdzputina.net,megaresheba.com,megaresheba.ru,resheba.me,reshebnik.com,spishi.fun,stavcur.ru,sumypost.com,xn--c1acj.xn--p1acf,xn--c1acj.xn--p1ai,zoobrilka.net##.media
 a17015 1
 bst.bratsk.ru##.my-sheet-Adv
+a17333 1
+stavcur.ru##.popup-army
 a17387 1
 bst.bratsk.ru##.preloadBannerSizer
 d19114 1
 a19114 1
 360tv.ru,avtonovostidnya.ru,avtovzglyad.ru,bst.bratsk.ru,coop-land.ru,energyfm.ru,fontanka.ru,gdeichto.ru,ixbt.com,kommersant.ru,moe-belgorod.ru,moe-kursk.ru,moe-lipetsk.ru,moe-online.ru,moe-tambov.ru,mydecor.ru,mywebpc.ru,naked-science.ru,new-magazine.ru,news.ru,oper.ru,penzainform.ru,peterburg2.ru,pnz.ru,regnum.ru,rusnext.ru,russian.rt.com,rutube.ru,sm.news,sovsport.ru,sportsdaily.ru,super.ru,syzran-small.ru,teleprogramma.pro,thegirl.ru,tsargrad.tv,tulapressa.ru,tvzvezda.ru,u-f.ru,ura.news,utyug.info,vz.ru,xn----7sbabwosghnf8al4lkj7b.xn--p1ai,zaks.ru,zr.ru##a[href*="//dzen.ru/"]
+a20099 1
+anifap.com,anitokyo.org,anitokyo.tv##body.playerCode > div[style^="position: absolute;"][onclick]
 d21751 1
 a21751 1
 android-mafia.com,apad2.top,game4you.top,games-pc.top,monna2.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##:not(this-site-promotes-malware)
@@ -20,7 +37,16 @@ a25593 1
 @@/(clickunder|footerad|layerad|lazyad|leaderad|leftad|linkad|pop_ad|prerollad|printad|under)/$script,~third-party,domain=game4you.top|games-pc.top|innal.top|naylo.top|rustorka.com|rustorka.net|rustorka.top|rustorkacom.lib
 d25606 1
 d25632 1
+d26112 4
+a26115 4
+anitokyo.org,anitokyo.tv##.container > header:style(margin-top: 10px !important)
+anitokyo.org,anitokyo.tv##.topside::after
+anitokyo.org,anitokyo.tv##.topside::before
+anitokyo.org,anitokyo.tv##.topside:style(max-width: 99.8% !important)
 d26194 2
+d27841 1
+a27841 1
+anifap.com,anipoisk.org,anitokyo.org,anitokyo.tv,hcdn.online,kinofilm.co##+js(abort-on-property-read, ClickUndercookie)
 a28068 1
 apad2.top,game4you.top,games-pc.top,innal.top,monna2.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /chesday|tick/)
 d28073 1
