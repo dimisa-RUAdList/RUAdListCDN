@@ -1,21 +1,58 @@
-diff name:ruadlist lines:24 checksum:fc2adf18db
+diff name:ruadlist lines:61 checksum:8b46dcfb96
 d4 2
 a5 2
-! Last modified: Mon, 26 Feb 2024 14:21:44 +0000
-! Diff-Path: ../patches/2024.2.26.861.patch#ruadlist
+! Last modified: Mon, 26 Feb 2024 19:15:17 +0000
+! Diff-Path: ../patches/2024.2.26.1155.patch#ruadlist
+a882 1
+||brolink*s.site^$third-party
+d885 1
+a1995 1
+||fevofep.com^$third-party
+a3665 1
+||meet-buddy.com^$third-party
+a3799 1
+||modisotay.com^$third-party
+a8066 1
+||com/?pus=$third-party,script
+a8118 1
+||site/?pus=$third-party,script
+d11189 1
+a11189 1
+||digiseller.ru^$domain=keysportal.com|kluchikipro.ru
+a11735 1
+||keysportal.com/yandex$image
 d14880 1
+d19119 1
+a19119 1
+360tv.ru,avtonovostidnya.ru,avtovzglyad.ru,bst.bratsk.ru,coop-land.ru,energyfm.ru,fonmod.com,fontanka.ru,gdeichto.ru,ixbt.com,kommersant.ru,moe-belgorod.ru,moe-kursk.ru,moe-lipetsk.ru,moe-online.ru,moe-tambov.ru,mydecor.ru,mywebpc.ru,naked-science.ru,new-magazine.ru,news.ru,oper.ru,penzainform.ru,peterburg2.ru,pnz.ru,regnum.ru,rusnext.ru,russian.rt.com,rutube.ru,sm.news,sovsport.ru,sportsdaily.ru,super.ru,syzran-small.ru,teleprogramma.pro,thegirl.ru,tsargrad.tv,tulapressa.ru,tvzvezda.ru,u-f.ru,ura.news,utyug.info,vz.ru,xn----7sbabwosghnf8al4lkj7b.xn--p1ai,zaks.ru,zr.ru##a[href*="//dzen.ru/"]
 d21741 1
 a21741 1
 ||pikabu.ru/ajax/?armdkey=$xmlhttprequest,domain=pikabu.ru
+d21756 1
+a21756 1
+dracon-zet.ru,fonmod.com,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 a25810 1
 tests24.su#@##header-ad
 d27532 1
 a27532 1
 dzen.ru##[class*="floo"] div[id][class^="feed"] [class*="wrapper"][aria-label] ~ article:not([aria-label])
+d27892 1
 d27947 1
 a27947 1
 doctorrouter.ru,ranobe-novels.ru,tests24.su##+js(abort-on-property-write, ai_front)
+d27975 1
+a27989 1
+kluchikipro.ru##+js(href-sanitizer, a[href*="deeplink="], ?deeplink)
+d28033 1
+a28033 1
+dracon-zet.ru,fonmod.com##+js(no-setTimeout-if, ai_adb)
+d28036 1
+a28036 1
+dracon-zet.ru,fonmod.com##+js(no-setTimeout-if, getComputedStyle, 250)
 d28080 1
+d28214 1
+a28214 1
+gazeta.ru##body > div[style^="height:"][style*="vh"]:empty
 d28290 1
 a28290 1
 ~3igames.mail.ru,~account.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##+js(abort-on-stack-trace.js, Object.prototype.banner, /re/j/app-)

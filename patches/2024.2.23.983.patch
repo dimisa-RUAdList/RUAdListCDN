@@ -1,10 +1,23 @@
-diff name:ruadlist lines:120 checksum:fc2adf18db
+diff name:ruadlist lines:152 checksum:8b46dcfb96
 d4 2
 a5 2
-! Last modified: Mon, 26 Feb 2024 14:21:44 +0000
-! Diff-Path: ../patches/2024.2.26.861.patch#ruadlist
+! Last modified: Mon, 26 Feb 2024 19:15:17 +0000
+! Diff-Path: ../patches/2024.2.26.1155.patch#ruadlist
+a882 1
+||brolink*s.site^$third-party
+d885 1
+a1995 1
+||fevofep.com^$third-party
 a2243 1
 ||getads.ru^$third-party
+a3664 1
+||meet-buddy.com^$third-party
+a3798 1
+||modisotay.com^$third-party
+a8065 1
+||com/?pus=$third-party,script
+a8117 1
+||site/?pus=$third-party,script
 a8936 1
 /bens/vinos.js$popup
 d10403 1
@@ -18,6 +31,11 @@ a10489 1
 /media/index$domain=gdz-putina.fun|gdz.fm|gdz.ninja|gdz.ru|gdzguru.com|gdzotputina.club|gdzputina.net|megaresheba.com|megaresheba.ru|resheba.me|reshebnik.com|spishi.fun|xn--c1acj.xn--p1acf|xn--c1acj.xn--p1ai|zoobrilka.net
 a10995 1
 ||bst.bratsk.ru/api/getBanner_
+d11186 1
+a11186 1
+||digiseller.ru^$domain=keysportal.com|kluchikipro.ru
+a11732 1
+||keysportal.com/yandex$image
 d12286 1
 d12744 1
 d14879 1
@@ -42,7 +60,7 @@ a18954 1
 rbc.ua,thisisus.ru##[id^="bn_"]
 d19119 1
 a19119 1
-360tv.ru,avtonovostidnya.ru,avtovzglyad.ru,bst.bratsk.ru,coop-land.ru,energyfm.ru,fontanka.ru,gdeichto.ru,ixbt.com,kommersant.ru,moe-belgorod.ru,moe-kursk.ru,moe-lipetsk.ru,moe-online.ru,moe-tambov.ru,mydecor.ru,mywebpc.ru,naked-science.ru,new-magazine.ru,news.ru,oper.ru,penzainform.ru,peterburg2.ru,pnz.ru,regnum.ru,rusnext.ru,russian.rt.com,rutube.ru,sm.news,sovsport.ru,sportsdaily.ru,super.ru,syzran-small.ru,teleprogramma.pro,thegirl.ru,tsargrad.tv,tulapressa.ru,tvzvezda.ru,u-f.ru,ura.news,utyug.info,vz.ru,xn----7sbabwosghnf8al4lkj7b.xn--p1ai,zaks.ru,zr.ru##a[href*="//dzen.ru/"]
+360tv.ru,avtonovostidnya.ru,avtovzglyad.ru,bst.bratsk.ru,coop-land.ru,energyfm.ru,fonmod.com,fontanka.ru,gdeichto.ru,ixbt.com,kommersant.ru,moe-belgorod.ru,moe-kursk.ru,moe-lipetsk.ru,moe-online.ru,moe-tambov.ru,mydecor.ru,mywebpc.ru,naked-science.ru,new-magazine.ru,news.ru,oper.ru,penzainform.ru,peterburg2.ru,pnz.ru,regnum.ru,rusnext.ru,russian.rt.com,rutube.ru,sm.news,sovsport.ru,sportsdaily.ru,super.ru,syzran-small.ru,teleprogramma.pro,thegirl.ru,tsargrad.tv,tulapressa.ru,tvzvezda.ru,u-f.ru,ura.news,utyug.info,vz.ru,xn----7sbabwosghnf8al4lkj7b.xn--p1ai,zaks.ru,zr.ru##a[href*="//dzen.ru/"]
 a19242 1
 agro-business.com.ua,agronomy.com.ua##a[href*="://vnis.com.ua/"]
 a20103 1
@@ -52,8 +70,9 @@ d21488 1
 d21741 1
 a21741 1
 ||pikabu.ru/ajax/?armdkey=$xmlhttprequest,domain=pikabu.ru
-d21757 1
-a21757 1
+d21756 2
+a21757 2
+dracon-zet.ru,fonmod.com,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 android-mafia.com,apad2.top,game4you.top,games-pc.top,monna2.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##:not(this-site-promotes-malware)
 d21782 1
 a21782 1
@@ -98,13 +117,26 @@ d27731 1
 d27857 1
 a27857 1
 anifap.com,anipoisk.org,anitokyo.org,anitokyo.tv,hcdn.online,kinofilm.co##+js(abort-on-property-read, ClickUndercookie)
+d27905 1
 d27960 1
 a27960 1
 doctorrouter.ru,ranobe-novels.ru,tests24.su##+js(abort-on-property-write, ai_front)
+d27988 1
+a28002 1
+kluchikipro.ru##+js(href-sanitizer, a[href*="deeplink="], ?deeplink)
+d28046 1
+a28046 1
+dracon-zet.ru,fonmod.com##+js(no-setTimeout-if, ai_adb)
+d28049 1
+a28049 1
+dracon-zet.ru,fonmod.com##+js(no-setTimeout-if, getComputedStyle, 250)
 a28084 1
 apad2.top,game4you.top,games-pc.top,innal.top,monna2.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /chesday|tick/)
 d28089 1
 d28093 1
+d28227 1
+a28227 1
+gazeta.ru##body > div[style^="height:"][style*="vh"]:empty
 a28302 1
 ~3igames.mail.ru,~account.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##+js(abort-on-stack-trace.js, Object.prototype.banner, /re/j/app-)
 d28307 2
