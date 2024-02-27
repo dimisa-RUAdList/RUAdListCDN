@@ -1,8 +1,8 @@
-diff name:ruadlist lines:71 checksum:b3fd140e40
+diff name:ruadlist lines:82 checksum:5de00d6d6a
 d4 2
 a5 2
-! Last modified: Tue, 27 Feb 2024 15:20:07 +0000
-! Diff-Path: ../patches/2024.2.27.920.patch#ruadlist
+! Last modified: Tue, 27 Feb 2024 20:19:12 +0000
+! Diff-Path: ../patches/2024.2.27.1219.patch#ruadlist
 a882 1
 ||brolink*s.site^$third-party
 d885 1
@@ -32,9 +32,14 @@ clib.me#?#.block:-abp-has(> .content > [data-la-block])
 clib.me#?#.block:-abp-has(> .content:-abp-contains(Реклама))
 a16796 1
 sport-express.ru##.ls-social-block__dzen
+a16972 1
+zaxid.net##.mobile-branding-wrapper
+a18959 1
+24tv.ua,zaxid.net##[id^="mobileBrandingPlace"]
 d19119 1
 a19119 1
 360tv.ru,avtonovostidnya.ru,avtovzglyad.ru,bst.bratsk.ru,coop-land.ru,energyfm.ru,fonmod.com,fontanka.ru,gdeichto.ru,ixbt.com,kommersant.ru,moe-belgorod.ru,moe-kursk.ru,moe-lipetsk.ru,moe-online.ru,moe-tambov.ru,mydecor.ru,mywebpc.ru,naked-science.ru,new-magazine.ru,news.ru,oper.ru,penzainform.ru,peterburg2.ru,pnz.ru,regnum.ru,rusnext.ru,russian.rt.com,rutube.ru,sm.news,sovsport.ru,sport-express.ru,sportsdaily.ru,super.ru,syzran-small.ru,teleprogramma.pro,thegirl.ru,tsargrad.tv,tulapressa.ru,tvzvezda.ru,u-f.ru,ura.news,utyug.info,vz.ru,xn----7sbabwosghnf8al4lkj7b.xn--p1ai,zaks.ru,zr.ru##a[href*="//dzen.ru/"]
+d20881 1
 d21741 1
 a21741 1
 ||pikabu.ru/ajax/?armdkey=$xmlhttprequest,domain=pikabu.ru
@@ -43,6 +48,9 @@ a21756 1
 dracon-zet.ru,fonmod.com,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 a25810 1
 tests24.su#@##header-ad
+d27194 1
+a27194 1
+sdamgia.ru##div[style] > a[target="_blank"] > img[src^="data:"]
 d27532 1
 a27532 1
 dzen.ru##[class*="floo"] div[id][class^="feed"] [class*="wrapper"][aria-label] ~ article:not([aria-label])
@@ -59,6 +67,9 @@ dracon-zet.ru,fonmod.com##+js(no-setTimeout-if, ai_adb)
 d28036 1
 a28036 1
 dracon-zet.ru,fonmod.com##+js(no-setTimeout-if, getComputedStyle, 250)
+a28047 1
+anidub.vip,anidubonline.com##+js(no-xhr-if, /getCode|\/vast/)
+d28051 1
 d28080 1
 d28214 1
 a28214 1

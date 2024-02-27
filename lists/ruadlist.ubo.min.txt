@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 27 Feb 2024 15:20:07 +0000
-! Diff-Path: ../patches/2024.2.27.920.patch#ruadlist
+! Last modified: Tue, 27 Feb 2024 20:19:12 +0000
+! Diff-Path: ../patches/2024.2.27.1219.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -16979,6 +16979,7 @@ www.zakon.kz##.mob_hide[style*="min-height:"]
 servers-rust.ru##.mob_quad_banner
 ixbt.com##.mobadv
 ixbt.com##.mobb
+zaxid.net##.mobile-branding-wrapper
 bankua.com.ua##.mod-custom
 love-sims.ru##.mod-custom3[style]
 newdaynews.ru##.mod-floatbann
@@ -18966,6 +18967,7 @@ nefrolab.ru##[id^="cmdgebh"]
 forexsystemsru.com##[id^="collapseobj_forumbit"] .alt1Active > div[style="float:right"]
 funmult.ru##[id^="icqwin_"]
 popcornnews.ru##[id^="illumination"]
+24tv.ua,zaxid.net##[id^="mobileBrandingPlace"]
 floradoma.com##[id^="my1kil_"]
 hitvk.mobi##[id^="n-rek-"]
 tech-choice.net##[id^="nadavi"]
@@ -20887,7 +20889,6 @@ maxikarta.ru##div[id^="mega_rt_"]
 meta.ua##div[id^="meta_banner_"]
 espreso.tv,tv.meta.ua##div[id^="meta_news_block"]
 phantastike.ru##div[id^="mindmachine"]
-24tv.ua,zaxid.net##div[id^="mobileBrandingPlace"]
 animevost.org,animevost.top,vost.pw#?#div[id^="moduleLeft"]:-abp-has(iframe)
 novyjgod.com##div[id^="nazar"]
 kritika24.ru##div[id^="nenadod_"]
@@ -27201,7 +27202,7 @@ s13.ru##body > .wrapper:style(top: 0 !important)
 sdamgia.ru###old_school > .App > div > [color="red"]
 sdamgia.ru##.menu[role="navigation"] div[style]:style(height: auto !important)
 sdamgia.ru##aside > div[class]:first-child div:style(height: auto !important)
-sdamgia.ru##div[style*="height:"] > a[target="_blank"] > img[src^="data:"]
+sdamgia.ru##div[style] > a[target="_blank"] > img[src^="data:"]
 ! ---
 sc2tv.ru##.body--brranding > .content:style(margin-top: unset !important)
 sc2tv.ru##html:not(#id) > body:not(#id) .body--brranding > *:style(pointer-events: auto !important)
@@ -28054,10 +28055,10 @@ anime-chan.me##+js(no-setTimeout-if, sparkle)
 num-words.com,softportal.com##+js(no-setTimeout-if, toUTCString)
 liveinternet.ru##+js(no-xhr-if, /ad\.mail|adfox|adhigh|adriver|mc\.yandex|mediametrics|otm-r|static-mon/)
 motorpage.ru##+js(no-xhr-if, /br/)
+anidub.vip,anidubonline.com##+js(no-xhr-if, /getCode|\/vast/)
 116.ru,14.ru,161.ru,164.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,62.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,proizhevsk.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,www.fontanka.ru##+js(no-xhr-if, /hits/event/, method:POST)
 4pda.to##+js(no-xhr-if, /m2?_)
 adme.media##+js(no-xhr-if, /wl-analytics\.tsp\.li/)
-anidub.vip,anidubonline.com##+js(no-xhr-if, getCode)
 livejournal.com##+js(no-xhr-if, livejournal.com/video/check?recordId=)
 sm.news##+js(no-xhr-if, method:GET)
 dzen.ru,frontend.vh.yandex.ru,naydex.net,widgets.kinopoisk.ru,www.kinopoisk.ru,yastatic.net##+js(no-xhr-if, strm.yandex.ru/get/)
