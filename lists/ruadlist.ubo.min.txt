@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 28 Feb 2024 16:25:22 +0000
-! Diff-Path: ../patches/2024.2.28.985.patch#ruadlist
+! Last modified: Wed, 28 Feb 2024 21:16:54 +0000
+! Diff-Path: ../patches/2024.2.28.1276.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10525,7 +10525,7 @@ $xmlhttprequest,domain=happy-biock.info|happy-block.info|howto-news.info|mschist
 /service/display/|$script,domain=povarenok.ru|stranamam.ru
 /site/showbanner/*$domain=latifundist.com
 /sm\.news/[^\s]{80,}/$script,domain=sm.news
-/stargate*.$image,popup,xmlhttprequest,domain=hlamer.ru|otfilm.ru
+/stargate*.$image,popup,xmlhttprequest,domain=hlamer.ru|qmovies.ru
 /static/banners/*$domain=gagadget.com|maxpark.com|vse-sto.com.ua
 /static/js/build/adidas.min.js$domain=auto43.ru|dom43.ru|gorodkirov.ru|job43.ru
 /storage/banners/*$domain=1sn.ru|banki.loans|sportliga.com
@@ -14701,7 +14701,7 @@ delovoy-kirov.ru###uzhanina
 heregirl.ru,ledilana.ru###vgtrk_bottom
 virusinfo.info###vi_ad
 virusinfo.info###vi_adlink
-hlamer.ru,otfilm.ru###video-container .overlay_video
+hlamer.ru,qmovies.ru###video-container .overlay_video
 ivi.ru###video-flack
 videonews.club###video_bootom
 enter.az###videorekframe
@@ -25078,6 +25078,7 @@ xn--112-5cd3baof9c5c.xn--p1ai#@#.wrapad
 @@||ads.su^$~third-party
 @@||ads.templateinstant.ru^$domain=templateinstant.ru
 @@||ads.tomtel.ru/adjs.$script
+@@||ads.vk.com/api/v*/*.json$xmlhttprequest,domain=vk.com
 @@||ads.vyborg-press.ru^$domain=vyborg-press.ru
 @@||adsbox.$domain=adsbox.com.ua|adsbox.ru
 @@||adseo.com.ua^$~third-party
@@ -26824,7 +26825,7 @@ kp.kg,kp.kz,kp.md,kp.ru##body > #app [data-branding-wrapper]:style(padding-top: 
 kp.kg,kp.kz,kp.md,kp.ru##body > #app div[style="display:block !important"] > div:first-child > div:first-child + div > div:first-child + div > div[data-name]:first-child + div:style(margin-top: auto !important)
 ! ---
 ! krasview.ru - зеркала
-hlamer.ru,otfilm.ru##body:style(background-color: #596c84 !important)
+hlamer.ru,qmovies.ru##body:style(background-color: #596c84 !important)
 ! ---
 kriminal.net.ua,news.dn.ua###popup-manager.popup-show
 kriminal.net.ua,news.dn.ua###popup-manager.popup-show + #layout:style(-webkit-filter: none !important; filter: none !important)
@@ -27934,7 +27935,7 @@ anime-chan.me##+js(abort-on-property-read, move_string)
 city.ogo.ua##+js(abort-on-property-read, myatu_bgm)
 kolizhanka.com.ua##+js(abort-on-property-read, nocontext)
 it-actual.ru##+js(abort-on-property-read, onload)
-freehat.cc,hlamer.ru,lostpix.com,otfilm.ru,potokcdn.com,prostoporno.help,saltday.ru,uploadimagex.com,wowskill.ru,xittv.net##+js(abort-on-property-read, open)
+freehat.cc,hlamer.ru,lostpix.com,potokcdn.com,prostoporno.help,qmovies.ru,saltday.ru,uploadimagex.com,wowskill.ru,xittv.net##+js(abort-on-property-read, open)
 sm.news##+js(abort-on-property-read, preventSelection)
 zab.ru##+js(abort-on-property-read, scrollw)
 tapochek.net##+js(abort-on-property-read, setsnow)

@@ -1,8 +1,8 @@
-diff name:ruadlist lines:135 checksum:b34a9af50b
+diff name:ruadlist lines:149 checksum:25feb72bb9
 d4 2
 a5 2
-! Last modified: Wed, 28 Feb 2024 16:25:22 +0000
-! Diff-Path: ../patches/2024.2.28.985.patch#ruadlist
+! Last modified: Wed, 28 Feb 2024 21:16:54 +0000
+! Diff-Path: ../patches/2024.2.28.1276.patch#ruadlist
 a882 1
 ||brolink*s.site^$third-party
 d885 1
@@ -40,12 +40,18 @@ a10427 1
 d10489 1
 a10489 1
 /media/index$domain=gdz-putina.fun|gdz.fm|gdz.ninja|gdz.ru|gdzguru.com|gdzotputina.club|gdzputina.net|megaresheba.com|megaresheba.ru|resheba.me|reshebnik.com|spishi.fun|xn--c1acj.xn--p1acf|xn--c1acj.xn--p1ai|zoobrilka.net
+d10517 1
+a10517 1
+/stargate*.$image,popup,xmlhttprequest,domain=hlamer.ru|qmovies.ru
 d11187 1
 a11187 1
 ||digiseller.ru^$domain=keysportal.com|kluchikipro.ru
 a11733 1
 ||keysportal.com/yandex$image
 d12824 1
+d14693 1
+a14693 1
+hlamer.ru,qmovies.ru###video-container .overlay_video
 d14878 1
 a15557 2
 clib.me#?#.block:-abp-has(> .content > [data-la-block])
@@ -81,6 +87,8 @@ a21752 1
 dracon-zet.ru,fonmod.com,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 a24292 1
 ||softoroom.org^$third-party,script
+a25063 1
+@@||ads.vk.com/api/v*/*.json$xmlhttprequest,domain=vk.com
 a25806 1
 tests24.su#@##header-ad
 d26113 4
@@ -89,6 +97,9 @@ anitokyo.org,anitokyo.tv##.container > header:style(margin-top: 10px !important)
 anitokyo.org,anitokyo.tv##.topside::after
 anitokyo.org,anitokyo.tv##.topside::before
 anitokyo.org,anitokyo.tv##.topside:style(max-width: 99.8% !important)
+d26809 1
+a26809 1
+hlamer.ru,qmovies.ru##body:style(background-color: #596c84 !important)
 d27190 1
 a27190 1
 sdamgia.ru##div[style] > a[target="_blank"] > img[src^="data:"]
@@ -104,6 +115,9 @@ d27840 1
 a27840 1
 anifap.com,anipoisk.org,anitokyo.org,anitokyo.tv,hcdn.online,kinofilm.co##+js(abort-on-property-read, ClickUndercookie)
 d27888 1
+d27919 1
+a27919 1
+freehat.cc,hlamer.ru,lostpix.com,potokcdn.com,prostoporno.help,qmovies.ru,saltday.ru,uploadimagex.com,wowskill.ru,xittv.net##+js(abort-on-property-read, open)
 d27943 1
 a27943 1
 doctorrouter.ru,ranobe-novels.ru,tests24.su##+js(abort-on-property-write, ai_front)

@@ -1,8 +1,8 @@
-diff name:ruadlist lines:153 checksum:b34a9af50b
+diff name:ruadlist lines:167 checksum:25feb72bb9
 d4 2
 a5 2
-! Last modified: Wed, 28 Feb 2024 16:25:22 +0000
-! Diff-Path: ../patches/2024.2.28.985.patch#ruadlist
+! Last modified: Wed, 28 Feb 2024 21:16:54 +0000
+! Diff-Path: ../patches/2024.2.28.1276.patch#ruadlist
 a882 1
 ||brolink*s.site^$third-party
 d885 1
@@ -40,6 +40,9 @@ a10427 1
 d10489 1
 a10489 1
 /media/index$domain=gdz-putina.fun|gdz.fm|gdz.ninja|gdz.ru|gdzguru.com|gdzotputina.club|gdzputina.net|megaresheba.com|megaresheba.ru|resheba.me|reshebnik.com|spishi.fun|xn--c1acj.xn--p1acf|xn--c1acj.xn--p1ai|zoobrilka.net
+d10517 1
+a10517 1
+/stargate*.$image,popup,xmlhttprequest,domain=hlamer.ru|qmovies.ru
 a10995 1
 ||bst.bratsk.ru/api/getBanner_
 d11186 1
@@ -48,6 +51,9 @@ a11186 1
 a11732 1
 ||keysportal.com/yandex$image
 d12823 1
+d14692 1
+a14692 1
+hlamer.ru,qmovies.ru###video-container .overlay_video
 d14877 1
 a15556 2
 clib.me#?#.block:-abp-has(> .content > [data-la-block])
@@ -89,6 +95,8 @@ dracon-zet.ru,fonmod.com,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 android-mafia.com,apad2.top,game4you.top,games-pc.top,monna2.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##:not(this-site-promotes-malware)
 a24290 1
 ||softoroom.org^$third-party,script
+a25061 1
+@@||ads.vk.com/api/v*/*.json$xmlhttprequest,domain=vk.com
 a25593 1
 @@/(clickunder|footerad|layerad|lazyad|leaderad|leftad|linkad|pop_ad|prerollad|printad|under)/$script,~third-party,domain=game4you.top|games-pc.top|innal.top|naylo.top|rustorka.com|rustorka.net|rustorka.top|rustorkacom.lib
 d25606 1
@@ -102,6 +110,9 @@ anitokyo.org,anitokyo.tv##.topside::after
 anitokyo.org,anitokyo.tv##.topside::before
 anitokyo.org,anitokyo.tv##.topside:style(max-width: 99.8% !important)
 d26194 2
+d26810 1
+a26810 1
+hlamer.ru,qmovies.ru##body:style(background-color: #596c84 !important)
 d27191 1
 a27191 1
 sdamgia.ru##div[style] > a[target="_blank"] > img[src^="data:"]
@@ -117,6 +128,9 @@ d27841 1
 a27841 1
 anifap.com,anipoisk.org,anitokyo.org,anitokyo.tv,hcdn.online,kinofilm.co##+js(abort-on-property-read, ClickUndercookie)
 d27889 1
+d27920 1
+a27920 1
+freehat.cc,hlamer.ru,lostpix.com,potokcdn.com,prostoporno.help,qmovies.ru,saltday.ru,uploadimagex.com,wowskill.ru,xittv.net##+js(abort-on-property-read, open)
 d27944 1
 a27944 1
 doctorrouter.ru,ranobe-novels.ru,tests24.su##+js(abort-on-property-write, ai_front)
