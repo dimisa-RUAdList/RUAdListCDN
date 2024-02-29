@@ -1,8 +1,8 @@
-diff name:ruadlist lines:167 checksum:692f6f9a0c
+diff name:ruadlist lines:168 checksum:db513d8867
 d4 2
 a5 2
-! Last modified: Thu, 29 Feb 2024 07:19:37 +0000
-! Diff-Path: ../patches/2024.2.29.439.patch#ruadlist
+! Last modified: Thu, 29 Feb 2024 12:34:09 +0000
+! Diff-Path: ../patches/2024.2.29.754.patch#ruadlist
 a882 1
 ||brolink*s.site^$third-party
 d885 1
@@ -121,8 +121,9 @@ dzen.ru##div[class*="card-video-promo__root"]
 d27529 1
 a27529 1
 dzen.ru##[class*="floo"] div[id][class^="feed"] [class*="wrapper"][aria-label] ~ article:not([aria-label])
-d27534 1
-a27534 1
+d27533 2
+a27534 2
+dzen.ru##div[class*="ldjed__container"] > div[class*="ldjed__"] ~ div:style(display: none !important)
 dzen.ru##div[class^="feed__"] > article > div:first-child ~ div
 d27841 1
 a27841 1

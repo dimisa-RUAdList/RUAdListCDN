@@ -1,8 +1,8 @@
-diff name:ruadlist lines:48 checksum:692f6f9a0c
+diff name:ruadlist lines:49 checksum:db513d8867
 d4 2
 a5 2
-! Last modified: Thu, 29 Feb 2024 07:19:37 +0000
-! Diff-Path: ../patches/2024.2.29.439.patch#ruadlist
+! Last modified: Thu, 29 Feb 2024 12:34:09 +0000
+! Diff-Path: ../patches/2024.2.29.754.patch#ruadlist
 a3548 1
 ||mainscriptshark.com^$third-party
 a4959 1
@@ -37,8 +37,9 @@ a26824 1
 hlamer.ru,qmovies.ru##body:style(background-color: #596c84 !important)
 a27531 1
 dzen.ru##div[class*="card-video-promo__root"]
-d27548 1
-a27548 1
+d27547 2
+a27548 2
+dzen.ru##div[class*="ldjed__container"] > div[class*="ldjed__"] ~ div:style(display: none !important)
 dzen.ru##div[class^="feed__"] > article > div:first-child ~ div
 d27933 1
 a27933 1
