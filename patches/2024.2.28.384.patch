@@ -1,8 +1,8 @@
-diff name:ruadlist lines:49 checksum:3a4f8831e4
+diff name:ruadlist lines:65 checksum:4d0b971cf8
 d4 2
 a5 2
-! Last modified: Thu, 29 Feb 2024 22:20:48 +0000
-! Diff-Path: ../patches/2024.2.29.1340.patch#ruadlist
+! Last modified: Fri, 01 Mar 2024 03:24:38 +0000
+! Diff-Path: ../patches/2024.3.1.204.patch#ruadlist
 a3548 1
 ||mainscriptshark.com^$third-party
 a4959 1
@@ -32,15 +32,25 @@ a24306 1
 ||softoroom.org^$third-party,script
 a25077 1
 @@||ads.vk.com/api/v*/*.json$xmlhttprequest,domain=vk.com
+a26384 3
+eplus.by###cookiesAgreementNotice
+eplus.by##body:style(overflow: auto !important)
+! ---
 d26824 1
 a26824 1
 hlamer.ru,qmovies.ru##body:style(background-color: #596c84 !important)
+a27125 1
+autorambler.ru,rambler.ru##.commercial-branding > div script ~ div > div:last-child div:first-child:style(min-height: 0 !important)
+a27126 1
+autorambler.ru,rambler.ru##.commercial-branding article > div > div + div + div div:style(min-height: 0 !important)
 a27531 1
 dzen.ru##div[class*="card-video-promo__root"]
 d27547 2
 a27548 2
 dzen.ru##div[class*="ldjed__container"] > div[class*="ldjed__"] ~ div:style(display: none !important)
 dzen.ru##div[class^="feed__"] > article > div:first-child ~ div
+a27741 1
+mail.ru##.mailbox-container ~ [class] .widget__container
 d27933 1
 a27933 1
 freehat.cc,hlamer.ru,lostpix.com,potokcdn.com,prostoporno.help,qmovies.ru,saltday.ru,uploadimagex.com,wowskill.ru,xittv.net##+js(abort-on-property-read, open)
@@ -48,3 +58,9 @@ d27976 1
 a27994 1
 softoroom.org##+js(href-sanitizer, a[href*=".php?go="], ?go)
 d27997 1
+d28299 1
+d28304 2
+a28305 1
+~3igames.mail.ru,~account.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##+js(no-fetch-if, /\/res\//)
+a28316 1
+~3igames.mail.ru,~account.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##+js(set-constant, mr._mimic.locator.transform, undefined)
