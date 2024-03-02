@@ -1,11 +1,13 @@
-diff name:ruadlist lines:55 checksum:4589891ee0
+diff name:ruadlist lines:91 checksum:5074fcb8ba
 d4 2
 a5 2
-! Last modified: Sat, 02 Mar 2024 09:16:56 +0000
-! Diff-Path: ../patches/2024.3.2.556.patch#ruadlist
+! Last modified: Sat, 02 Mar 2024 14:19:05 +0000
+! Diff-Path: ../patches/2024.3.2.859.patch#ruadlist
 d10467 1
 a10467 1
 /images/banners/*$domain=19rus.info|19rusinfo.ru|1tvnet.ru|33strausa.ru|8vp.ru|agroxxi.ru|alfa-form.ru|altgazeta.ru|aniplay.tv|antimuh.ru|archiportal-crimea.ru|arendator.ru|aum.news|bez-smenki.ru|bitpump.ru|biwork.ru|bryansktoday.ru|buzday.ru|buzulukday.ru|bvedomosti.ru|cars.ru|coil32.ru|conversion.im|cryptoff.org|csmania.ru|cxem.net|darkmoney.at|dtpptz.ru|ecm-journal.ru|erotix-tv.com|express-prigorod.ru|fakty.ua|fermagid.ru|firtka.if.ua|fitsport.ru|forpost.lviv.ua|fuzz-magazine.ru|hd-systems.com.ua|house.kg|hv-info.ru|hype.tech|info-ua.com|infokam.su|inforeactor.ru|itc.ua|itexpert.org.ua|izmacity.com|kaluga.ru|kamchatinfo.com|karelia.ru|kazfootball.kz|kids.to-var.com|km.ru|ko44.ru|korabel.ru|kramatorsk.info|lifetambov.ru|mc.today|mebelminsk.by|medicalj.ru|memstatus.ru|mirnov.ru|mos-holidays.ru|moscow-post.com|motoforum.ru|motovibor.ru|moya-semya.ru|mycity.by|nakanune.ru|nashdisk.ru|naurfo.ru|ndn.info|neva.today|nevasport.ru|newgdz.com|newgubakha.ru|newizv.ru|news.soundex.ru|ng.kz|ngregion.ru|nsday.ru|numama.ru|ok-inform.ru|orenday.ru|osvita.ua|out-club.ru|perevolockday.ru|planet-today.ru|planetaskazok.ru|poiskvps.ru|pretenziy.ru|profidom.com.ua|prosports.kg|prosports.kz|rabota-kovrov.ru|rabota.kharkov.ua|radioclub.ua|rbc.ru|ria-m.tv|ria56.ru|ridna.ua|rtr24.ru|ruslife.eu|saltday.ru|sevastopol.su|sevkavportal.ru|shans.com.ua|skoda-club.org.ua|smolnarod.ru|sorochinskday.ru|sostav.ua|sp.tomica.ru|starkosino.ru|study.ru|tenstars.ru|ternopoliany.te.ua|trassae95.com|trisosny.ru|tv-gubernia.ru|ua-independent.com|uff.uz|ufocar.ru|ukrlife.tv|valetudo.ru|vdv-kavkaz.ru|vjazhi.ru|vmeste.tv|vp.donetsk.ua|vsatke.ru|vse-pro-sport.com.ua|vseprosport.by|vseprosport.kz|vseprosport.ru|yablor.ru|zamena-podshipnikov.ru|zrenue.com|zvid.org
+a10869 1
+||auto.ru/wwwboards/img/banner_
 d11145 5
 a11149 1
 ||cxem.net/cache/index_in_articles.json
@@ -13,6 +15,8 @@ a11400 1
 ||forum.cxem.net/adv/
 d13620 2
 d13759 1
+a14816 1
+auto.ru##.VertisAds
 d15911 2
 d16613 1
 d16621 1
@@ -21,11 +25,19 @@ dtf.ru,vc.ru##.propaganda
 a17540 1
 cxem.net##.rek_plashka
 d18584 1
+d18902 1
 a18950 1
 cxem.net##[id^="_myproduct"]
 d18957 1
 a18957 1
 bestradio.fm,elsyst.gnomio.com,forum.niiot.net,freeopenvpn.org,ghame.ru,htmlweb.ru,kulichki.net,ph4.ru,pvpru.com,semestr.ru,videoredaktor.ru##[id^="aswift_"]
+a19053 1
+auto.ru##[style^="height:"][style*="250px"]:empty
+d19140 1
+a19140 1
+1777.ru,1istochnik.ru,7days.ru,actualnews.org,allboxing.ru,amurmedia.ru,argumenti.ru,atas.info,auto.ru,autosaratov.ru,autosport.com.ru,av.by,baby.ru,bel.ru,belkagomel.by,bidbaits.ru,carsweek.ru,chitamedia.su,chukotkamedia.ru,cq.ru,ctc.ru,deita.ru,eaomedia.ru,eva.ru,finam.ru,fishki.net,fontanka.ru,food.ru,friday.ru,interface31.ru,irkutskmedia.ru,iz.ru,izhlife.ru,kaifolog.net,kamchatkamedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,lipetskmedia.ru,magadanmedia.ru,mel.fm,mk.ru,nakhodka.media,nashe.ru,new-magazine.ru,noob-club.ru,nsn.fm,om1.ru,osnmedia.ru,politrussia.com,povarenok.ru,priamurmedia.ru,primamedia.ru,prufy.ru,radiojazzfm.ru,radioultra.ru,realt.by,riamo.ru,rockfm.ru,russian.rt.com,rusvesna.su,sakhalinmedia.ru,sevastopolmedia.ru,sm.news,smolensk-i.ru,smotrim.ru,sovets.net,sovets24.ru,sravni.ru,starhit.ru,stavropol.media,study.ru,svpressa.ru,takiedela.ru,teleport2001.ru,topnews.ru,tv2.today,ukraina.ru,ulanmedia.ru,ussurmedia.ru,vm.ru,vsezdorovo.com,www.kolesa.ru,yakutiamedia.ru,zaycev.net##a[href*="//zen.yandex.ru/"]
+a20383 1
+auto.ru##div[class^="AdWithFixedHeight"]
 d20917 1
 a20992 1
 dtf.ru##div[style*="banner-height"]
@@ -34,6 +46,23 @@ d21258 1
 d21753 1
 a21753 1
 ||pikabu.ru/ajax/?ardkey=$xmlhttprequest,domain=pikabu.ru
+d21860 23
+a24700 1
+@@://auto.ru/$generichide
+d25309 1
+a25309 1
+@@||mc.yandex.ru/metrika/tag.js$domain=lk.rt.ru|rutube.ru|shokoladki.ru
+d25645 1
+d25649 1
+a25649 1
+@@||an.yandex.ru/system/context.js|$domain=glav.su|onlinelpu.ru|ryfma.com
+d25704 1
+a25704 1
+@@||mc.yandex.ru/metrika/watch.js$script,domain=101.ru|doska.tamboff.ru|oformi-foto.ru|sherlock.store|shok102.ru
+d25789 1
+a25789 1
+@@||yandex.ru/ads/system/context.js|$domain=examenpdd.com|forum.qrz.ru|yvid.ru
+d26160 3
 a26388 3
 eplus.by###cookiesAgreementNotice
 eplus.by##body:style(overflow: auto !important)
@@ -42,12 +71,19 @@ a27129 1
 autorambler.ru,rambler.ru##.commercial-branding > div script ~ div > div:last-child div:first-child:style(min-height: 0 !important)
 a27130 1
 autorambler.ru,rambler.ru##.commercial-branding article > div > div + div + div div:style(min-height: 0 !important)
+d27549 1
+a27549 1
+dzen.ru##aside[id^="article_"][class*="_rlght"] > div[class]
 d27551 2
 a27552 2
 dzen.ru##div[class*="article__"] > .undefined ~ div[class*="mld"] > div[id][class]
 dzen.ru##div[class*="ldjed__container"] > div[class*="ldjed__"] ~ div:style(display: none !important)
 a27746 1
 mail.ru##.mailbox-container ~ [class] .widget__container
+a28219 1
+ozon.ru##[data-lcp-name*="anner-"]:matches-path(/my/reviews/promo):style(display: block !important)
+a28234 1
+ozon.ru##div[data-widget="banner"]:matches-path(/my/reviews/promo):style(display: block !important)
 d28303 1
 d28308 2
 a28309 1

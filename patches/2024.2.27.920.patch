@@ -1,8 +1,8 @@
-diff name:ruadlist lines:105 checksum:4589891ee0
+diff name:ruadlist lines:141 checksum:5074fcb8ba
 d4 2
 a5 2
-! Last modified: Sat, 02 Mar 2024 09:16:56 +0000
-! Diff-Path: ../patches/2024.3.2.556.patch#ruadlist
+! Last modified: Sat, 02 Mar 2024 14:19:05 +0000
+! Diff-Path: ../patches/2024.3.2.859.patch#ruadlist
 a3548 1
 ||mainscriptshark.com^$third-party
 a4959 1
@@ -18,6 +18,8 @@ a10464 1
 d10525 1
 a10525 1
 /stargate*.$image,popup,xmlhttprequest,domain=hlamer.ru|qmovies.ru
+a10866 1
+||auto.ru/wwwboards/img/banner_
 d11142 5
 a11146 1
 ||cxem.net/cache/index_in_articles.json
@@ -29,6 +31,8 @@ d13757 1
 d14702 1
 a14702 1
 hlamer.ru,qmovies.ru###video-container .overlay_video
+a14814 1
+auto.ru##.VertisAds
 d15909 2
 d16158 1
 a16158 1
@@ -45,6 +49,7 @@ dtf.ru,vc.ru##.propaganda
 a17537 1
 cxem.net##.rek_plashka
 d18581 1
+d18899 1
 a18947 1
 cxem.net##[id^="_myproduct"]
 d18954 1
@@ -52,6 +57,13 @@ a18954 1
 bestradio.fm,elsyst.gnomio.com,forum.niiot.net,freeopenvpn.org,ghame.ru,htmlweb.ru,kulichki.net,ph4.ru,pvpru.com,semestr.ru,videoredaktor.ru##[id^="aswift_"]
 a18968 1
 24tv.ua,zaxid.net##[id^="mobileBrandingPlace"]
+a19049 1
+auto.ru##[style^="height:"][style*="250px"]:empty
+d19136 1
+a19136 1
+1777.ru,1istochnik.ru,7days.ru,actualnews.org,allboxing.ru,amurmedia.ru,argumenti.ru,atas.info,auto.ru,autosaratov.ru,autosport.com.ru,av.by,baby.ru,bel.ru,belkagomel.by,bidbaits.ru,carsweek.ru,chitamedia.su,chukotkamedia.ru,cq.ru,ctc.ru,deita.ru,eaomedia.ru,eva.ru,finam.ru,fishki.net,fontanka.ru,food.ru,friday.ru,interface31.ru,irkutskmedia.ru,iz.ru,izhlife.ru,kaifolog.net,kamchatkamedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,lipetskmedia.ru,magadanmedia.ru,mel.fm,mk.ru,nakhodka.media,nashe.ru,new-magazine.ru,noob-club.ru,nsn.fm,om1.ru,osnmedia.ru,politrussia.com,povarenok.ru,priamurmedia.ru,primamedia.ru,prufy.ru,radiojazzfm.ru,radioultra.ru,realt.by,riamo.ru,rockfm.ru,russian.rt.com,rusvesna.su,sakhalinmedia.ru,sevastopolmedia.ru,sm.news,smolensk-i.ru,smotrim.ru,sovets.net,sovets24.ru,sravni.ru,starhit.ru,stavropol.media,study.ru,svpressa.ru,takiedela.ru,teleport2001.ru,topnews.ru,tv2.today,ukraina.ru,ulanmedia.ru,ussurmedia.ru,vm.ru,vsezdorovo.com,www.kolesa.ru,yakutiamedia.ru,zaycev.net##a[href*="//zen.yandex.ru/"]
+a20379 1
+auto.ru##div[class^="AdWithFixedHeight"]
 d20890 1
 d20914 1
 a20989 1
@@ -61,10 +73,27 @@ d21255 1
 d21750 1
 a21750 1
 ||pikabu.ru/ajax/?ardkey=$xmlhttprequest,domain=pikabu.ru
+d21857 23
 a24305 1
 ||softoroom.org^$third-party,script
+a24696 1
+@@://auto.ru/$generichide
 a25076 1
 @@||ads.vk.com/api/v*/*.json$xmlhttprequest,domain=vk.com
+d25304 1
+a25304 1
+@@||mc.yandex.ru/metrika/tag.js$domain=lk.rt.ru|rutube.ru|shokoladki.ru
+d25640 1
+d25644 1
+a25644 1
+@@||an.yandex.ru/system/context.js|$domain=glav.su|onlinelpu.ru|ryfma.com
+d25699 1
+a25699 1
+@@||mc.yandex.ru/metrika/watch.js$script,domain=101.ru|doska.tamboff.ru|oformi-foto.ru|sherlock.store|shok102.ru
+d25784 1
+a25784 1
+@@||yandex.ru/ads/system/context.js|$domain=examenpdd.com|forum.qrz.ru|yvid.ru
+d26155 3
 a26383 3
 eplus.by###cookiesAgreementNotice
 eplus.by##body:style(overflow: auto !important)
@@ -81,6 +110,9 @@ a27204 1
 sdamgia.ru##div[style] > a[target="_blank"] > img[src^="data:"]
 a27530 1
 dzen.ru##div[class*="card-video-promo__root"]
+d27543 1
+a27543 1
+dzen.ru##aside[id^="article_"][class*="_rlght"] > div[class]
 d27545 3
 a27547 3
 dzen.ru##div[class*="article__"] > .undefined ~ div[class*="mld"] > div[id][class]
@@ -98,6 +130,10 @@ d27996 1
 a28056 1
 anidub.vip,anidubonline.com##+js(no-xhr-if, /getCode|\/vast/)
 d28060 1
+a28214 1
+ozon.ru##[data-lcp-name*="anner-"]:matches-path(/my/reviews/promo):style(display: block !important)
+a28229 1
+ozon.ru##div[data-widget="banner"]:matches-path(/my/reviews/promo):style(display: block !important)
 d28298 1
 d28303 2
 a28304 1
