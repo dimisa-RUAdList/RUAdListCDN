@@ -1,5 +1,86 @@
-diff name:ruadlist lines:4 checksum:d23926d101
+diff name:ruadlist lines:85 checksum:d25563fbbe
 d4 2
 a5 2
-! Last modified: Sun, 03 Mar 2024 05:21:09 +0000
-! Diff-Path: ../patches/2024.3.3.321.patch#ruadlist
+! Last modified: Sun, 03 Mar 2024 10:24:35 +0000
+! Diff-Path: ../patches/2024.3.3.624.patch#ruadlist
+d10205 1
+a10205 1
+$third-party,xmlhttprequest,domain=24video.adult|24video.in|24video.net|anisima.ru|arablionz.tv|artrozamnet.ru|autotopik.ru|bigpuzzle.ru|diakov.net|eku.ru|familyspace.ru|farap.ru|film1080p.ru|findanime.net|ggtube.pro|gorodvo.ru|hdklub.com|hdsite.net|hochu.tv|kaztorka.org|kino-hit-online.com|kino-tvserial.online|kinohd.net|kinohd.ws|kogda.org|mainavi.ru|neolove.ru|newcloud.tv|nisorinki.net|nnmclub.to|online-hd.biz|onlineguru.ru|pornozhuk.com|privat-fotka.ru|ru-kino.com|ruvi.tv|seasonvar.ru|shtorm777.ru|smotriserial.me|superhumor.ru|telspravochnik.com|top-radio.ru|torrentshow.org|tryserial.net|voffka.com|vse-sezony.org|zk.fm
+d10456 2
+a10457 2
+/forum/image.php?link=https://3cdn.ru$domain=nnmclub.to
+/forum/image.php?link=https://factpic.ru$domain=nnmclub.to
+d10747 1
+a10747 1
+||alicdn.com^$domain=nnmclub.to|prostolinux.ru|ru-an.info|rutracker.ru|savepic.ru|smartbobr.ru|vsaduidoma.com
+d11406 1
+d13436 1
+a13436 2
+||youtube.com/embed/$domain=4put.ru|androeed.ru|anime-365.ru|compendium.su|fbsearch.ru|geomap.com.ua|hdrabbit.ru|kinotochka.co|kinotochka.me|lostpix.com|multitran.com|newstudio-online.tv|sbornik-music.ru|sinonim.org|smotret-anime.online|subject.com.ua|ukrlit.net|zarlit.com
+||youtube.com/embed/?enablejsapi=$domain=168.ru
+d15753 1
+a15753 1
+nnmclub.to##.btTbl > tbody > .row1 > .genmed[align="center"] noindex
+d15999 1
+a15999 1
+nnmclub.to##.copyright tbody > tr > :not(.copyright)
+d16282 1
+a16282 1
+nnmclub.to##.forumline > tbody > tr > td.spaceRow > center
+d16427 1
+a16427 1
+nnmclub.to##.header .row2 tr:not(:last-child)
+a17373 1
+game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##.post_body > center > a[target="_blank"]
+d18915 2
+d18924 1
+d19274 1
+a19274 1
+nnmclub.to##a[href*="banner_"]
+d20007 1
+a20007 1
+nnmclub.to##body > .ui-corner-all
+d20106 1
+d20748 1
+a20748 1
+nnmclub.to##div[id][style^="display:"][style*="block"][style*="important"]
+d21195 1
+a21195 1
+nnmclub.to##iframe[src*="/forum/ads/"]
+d21589 1
+d21624 1
+d21762 1
+a21762 1
+android-mafia.com,game4you.top,games-pc.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##:not(this-site-promotes-malware)
+d21787 1
+a21787 1
+apad2.top,inferno.games,mediagetguru.ru,monna2.top,only-soft.org,rutor-game.info,rutor-games.ru,rutorgame.info,rutorgames.ru,torent-igruha.com,torrent-music.ru,torrent-soft.net,torrent-word.ru,torrentigo.net,torrentigruha.org,torrentsoft.net,where-game.ru##:not(this-site-promotes-malware)
+a21845 2
+2ip.io,2ip.ru##a[href*="://finevpn.org"]
+2ip.io,2ip.ru##a[href*="://proxyelite.info"]
+d22519 1
+d22525 1
+a22525 1
+championat.com,~mail.rambler.ru,~nova.rambler.ru,rambler.ru##a[href*="okko.sport"]
+d25028 1
+d25941 1
+a25941 1
+24video.adult,24video.in,baskino.me,dnepr.info,dugtor.ru,filmitorrent.net,hdrezka.re,ixbt.com,jetsetter.ua,kinoafisha.ua,kinobar.vip,moskva.fm,newstudio.tv,nnmclub.to,pay-day.ru,roem.ru,trupornolabs.org,vc.ru,virusinfo.info,wikianime.tv,xxxadulttorrent.org,you-anime.ru,yummyanime.tv,zombie-film.live##body:not(#id):style(padding-top: 0 !important)
+d26958 2
+a26959 2
+nnmclub.to##body > .wrap:style(top: 0 !important)
+nnmclub.to##body:style(background: none !important)
+a27029 1
+pikabu.ru###menu-subs > [href]::after
+d27813 1
+a27813 1
+fastpic.org,kaztorka.org,kg-portal.ru,~new.fastpic.org,nnmclub.to##+js(abort-current-inline-script, document.createElement, Math.random)
+d27825 1
+a27825 1
+nnmclub.to##+js(abort-current-inline-script, setInterval, Math.random)
+d27974 1
+a27974 1
+game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(href-sanitizer, a[href*="/go.php"], ?url)
+d28059 1
+a28059 1
+game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /chesday|tick/)
