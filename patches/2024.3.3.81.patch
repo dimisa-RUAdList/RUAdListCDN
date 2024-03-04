@@ -1,8 +1,8 @@
-diff name:ruadlist lines:97 checksum:30d795bbfb
+diff name:ruadlist lines:115 checksum:9b98c9b0f0
 d4 2
 a5 2
-! Last modified: Mon, 04 Mar 2024 12:38:15 +0000
-! Diff-Path: ../patches/2024.3.4.758.patch#ruadlist
+! Last modified: Mon, 04 Mar 2024 16:25:55 +0000
+! Diff-Path: ../patches/2024.3.4.985.patch#ruadlist
 d10205 1
 a10205 1
 $third-party,xmlhttprequest,domain=24video.adult|24video.in|24video.net|anisima.ru|arablionz.tv|artrozamnet.ru|autotopik.ru|bigpuzzle.ru|diakov.net|eku.ru|familyspace.ru|farap.ru|film1080p.ru|findanime.net|ggtube.pro|gorodvo.ru|hdklub.com|hdsite.net|hochu.tv|kaztorka.org|kino-hit-online.com|kino-tvserial.online|kinohd.net|kinohd.ws|kogda.org|mainavi.ru|neolove.ru|newcloud.tv|nisorinki.net|nnmclub.to|online-hd.biz|onlineguru.ru|pornozhuk.com|privat-fotka.ru|ru-kino.com|ruvi.tv|seasonvar.ru|shtorm777.ru|smotriserial.me|superhumor.ru|telspravochnik.com|top-radio.ru|torrentshow.org|tryserial.net|voffka.com|vse-sezony.org|zk.fm
@@ -21,6 +21,8 @@ a13436 2
 d14916 1
 a14916 1
 1927.kiev.ua,1plus1.video,bigpicture.ru,chatadelic.net,coderoad.ru,day.az,euromd.com.ua,football-fun.ru,fotokto.ru,gagadget.com,gameme.eu,gotoshop.ua,gs.by,gsconto.com,hotzoom.net,icons8.ru,infoniac.ru,jooble.org,jooble.ua,kinoafisha.info,klubok.com,like-film.online,malenkiy.ru,mangalib.me,meta.ua,my-calend.ru,orl.ec,podrobnosti.ua,qmovies.ru,ranobelib.me,savevideo.me,scooter-remont.com,seasonvar24.com,sexytales.org,soccer.ru,sports.kz,takprosto.cc,timeout.ru,tvsezon.com,ura.news,world-knigi.ru,yaoilib.me##.ads
+a15233 1
+factor.ua##.b-place-art__mark
 d15753 1
 a15753 1
 nnmclub.to##.btTbl > tbody > .row1 > .genmed[align="center"] noindex
@@ -35,6 +37,9 @@ a16427 1
 nnmclub.to##.header .row2 tr:not(:last-child)
 a17373 1
 game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##.post_body > center > a[target="_blank"]
+d18823 1
+a18823 1
+buhgalter.com.ua,buhgalter911.com,factor.ua,tsn.ua,unian.info,unian.net,unian.ua##[data-ad]
 d18915 2
 d19274 1
 a19274 1
@@ -70,11 +75,19 @@ d22525 1
 a22525 1
 championat.com,~mail.rambler.ru,~nova.rambler.ru,rambler.ru##a[href*="okko.sport"]
 d25028 1
+a25770 1
+buhgalter.com.ua,buhgalter911.com,factor.ua#@#.bottom-ad
 a25851 1
 qmovies.ru##.websockets
 d25941 1
 a25941 1
 24video.adult,24video.in,baskino.me,dnepr.info,dugtor.ru,filmitorrent.net,hdrezka.re,ixbt.com,jetsetter.ua,kinoafisha.ua,kinobar.vip,moskva.fm,newstudio.tv,nnmclub.to,pay-day.ru,roem.ru,trupornolabs.org,vc.ru,virusinfo.info,wikianime.tv,xxxadulttorrent.org,you-anime.ru,yummyanime.tv,zombie-film.live##body:not(#id):style(padding-top: 0 !important)
+a26187 5
+buhgalter911.com##.b-chat:style(margin-bottom: 0 !important)
+buhgalter.com.ua,buhgalter911.com##body.access *:style(filter: none !important)
+buhgalter.com.ua,buhgalter911.com##body.access div[id^="access-au"]
+buhgalter.com.ua,buhgalter911.com##body.access:style(overflow: auto !important; position: relative !important)
+! ---
 d26958 2
 a26959 2
 nnmclub.to##body > .wrap:style(top: 0 !important)
@@ -93,6 +106,11 @@ nnmclub.to##+js(abort-current-inline-script, setInterval, Math.random)
 d27974 1
 a27974 1
 game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(href-sanitizer, a[href*="/go.php"], ?url)
+a28017 1
+buhgalter.com.ua,buhgalter911.com,factor.ua##+js(no-setTimeout-if, adBlockEnabled)
 d28059 1
 a28059 1
 game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /chesday|tick/)
+d28357 1
+a28357 1
+avtovod.com.ua,bigmir.net,buhgalter.com.ua,buhgalter911.com,businessua.com,censor.net,dengi.ua,ditey.com,epravda.com.ua,eurointegration.com.ua,f1analytic.com,facenews.ua,factor.ua,gazeta.ua,gorod.dp.ua,hvylya.net,i.ua,inforesist.org,isport.ua,ivona.ua,kolobok.ua,kriminal.tv,liga.net,meteo.ua,meteofor.com.ua,nnovosti.info,nv.ua,panno4ka.net,pogodaua.com,pravda.com.ua,real-vin.com,smak.ua,stravy.net,tochka.net,tv.ua,viva.ua,vsetv.com,www.ukr.net##+js(remove-node-text, script, "Shadow)
