@@ -1,13 +1,18 @@
-diff name:ruadlist lines:37 checksum:9b98c9b0f0
+diff name:ruadlist lines:49 checksum:5c3b88272a
 d4 2
 a5 2
-! Last modified: Mon, 04 Mar 2024 16:25:55 +0000
-! Diff-Path: ../patches/2024.3.4.985.patch#ruadlist
+! Last modified: Mon, 04 Mar 2024 21:17:30 +0000
+! Diff-Path: ../patches/2024.3.4.1277.patch#ruadlist
+a8908 1
+||go.onelink.me^$popup,domain=2ip.io|2ip.ru|2ip.ua
 d14916 1
 a14916 1
 1927.kiev.ua,1plus1.video,bigpicture.ru,chatadelic.net,coderoad.ru,day.az,euromd.com.ua,football-fun.ru,fotokto.ru,gagadget.com,gameme.eu,gotoshop.ua,gs.by,gsconto.com,hotzoom.net,icons8.ru,infoniac.ru,jooble.org,jooble.ua,kinoafisha.info,klubok.com,like-film.online,malenkiy.ru,mangalib.me,meta.ua,my-calend.ru,orl.ec,podrobnosti.ua,qmovies.ru,ranobelib.me,savevideo.me,scooter-remont.com,seasonvar24.com,sexytales.org,soccer.ru,sports.kz,takprosto.cc,timeout.ru,tvsezon.com,ura.news,world-knigi.ru,yaoilib.me##.ads
 a15233 1
 factor.ua##.b-place-art__mark
+d16603 1
+a16603 1
+2ip.ua##.ipblockmap > div > .ip ~ .ip + div
 d18824 1
 a18824 1
 buhgalter.com.ua,buhgalter911.com,factor.ua,tsn.ua,unian.info,unian.net,unian.ua##[data-ad]
@@ -16,6 +21,11 @@ forum.ru-board.com##[href^="postings.cgi?action=edit&forum=5&topic=51141"]:not([
 d21741 1
 a21741 1
 ||pikabu.ru/ajax/?arkkey=$xmlhttprequest,domain=pikabu.ru
+d21843 2
+a21844 1
+! блокировки, добавленнные из-за агрессивного обхода адблока на 2ip.ru, 2ip.io, 2ip.ua ~>
+a21846 1
+||hide.mn^$third-party,popup
 a22338 1
 116.ru,14.ru,161.ru,164.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,62.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,proizhevsk.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru##.PReP\+
 a25765 1
@@ -33,6 +43,8 @@ a27516 1
 dzen.ru##[class*="fioo"] div[id][class^="feed"] [class*="wrapper"][aria-label] ~ article:not([aria-label])
 a28013 1
 buhgalter.com.ua,buhgalter911.com,factor.ua##+js(no-setTimeout-if, adBlockEnabled)
+d28087 1
+d28204 1
 d28353 1
 a28353 1
 avtovod.com.ua,bigmir.net,buhgalter.com.ua,buhgalter911.com,businessua.com,censor.net,dengi.ua,ditey.com,epravda.com.ua,eurointegration.com.ua,f1analytic.com,facenews.ua,factor.ua,gazeta.ua,gorod.dp.ua,hvylya.net,i.ua,inforesist.org,isport.ua,ivona.ua,kolobok.ua,kriminal.tv,liga.net,meteo.ua,meteofor.com.ua,nnovosti.info,nv.ua,panno4ka.net,pogodaua.com,pravda.com.ua,real-vin.com,smak.ua,stravy.net,tochka.net,tv.ua,viva.ua,vsetv.com,www.ukr.net##+js(remove-node-text, script, "Shadow)

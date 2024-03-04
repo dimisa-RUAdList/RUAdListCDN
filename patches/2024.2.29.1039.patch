@@ -1,8 +1,10 @@
-diff name:ruadlist lines:196 checksum:9b98c9b0f0
+diff name:ruadlist lines:207 checksum:5c3b88272a
 d4 2
 a5 2
-! Last modified: Mon, 04 Mar 2024 16:25:55 +0000
-! Diff-Path: ../patches/2024.3.4.985.patch#ruadlist
+! Last modified: Mon, 04 Mar 2024 21:17:30 +0000
+! Diff-Path: ../patches/2024.3.4.1277.patch#ruadlist
+a8908 1
+||go.onelink.me^$popup,domain=2ip.io|2ip.ru|2ip.ua
 d10205 1
 a10205 1
 $third-party,xmlhttprequest,domain=24video.adult|24video.in|24video.net|anisima.ru|arablionz.tv|artrozamnet.ru|autotopik.ru|bigpuzzle.ru|diakov.net|eku.ru|familyspace.ru|farap.ru|film1080p.ru|findanime.net|ggtube.pro|gorodvo.ru|hdklub.com|hdsite.net|hochu.tv|kaztorka.org|kino-hit-online.com|kino-tvserial.online|kinohd.net|kinohd.ws|kogda.org|mainavi.ru|neolove.ru|newcloud.tv|nisorinki.net|nnmclub.to|online-hd.biz|onlineguru.ru|pornozhuk.com|privat-fotka.ru|ru-kino.com|ruvi.tv|seasonvar.ru|shtorm777.ru|smotriserial.me|superhumor.ru|telspravochnik.com|top-radio.ru|torrentshow.org|tryserial.net|voffka.com|vse-sezony.org|zk.fm
@@ -50,6 +52,9 @@ nnmclub.to##.forumline > tbody > tr > td.spaceRow > center
 d16433 1
 a16433 1
 nnmclub.to##.header .row2 tr:not(:last-child)
+d16609 1
+a16609 1
+2ip.ua##.ipblockmap > div > .ip ~ .ip + div
 d16613 1
 d16621 1
 a17381 1
@@ -105,9 +110,13 @@ android-mafia.com,game4you.top,games-pc.top,rustorka.com,rustorka.net,rustorka.t
 d21794 1
 a21794 1
 apad2.top,inferno.games,mediagetguru.ru,monna2.top,only-soft.org,rutor-game.info,rutor-games.ru,rutorgame.info,rutorgames.ru,torent-igruha.com,torrent-music.ru,torrent-soft.net,torrent-word.ru,torrentigo.net,torrentigruha.org,torrentsoft.net,where-game.ru##:not(this-site-promotes-malware)
-a21852 2
+d21853 2
+a21854 3
 2ip.io,2ip.ru##a[href*="://finevpn.org"]
 2ip.io,2ip.ru##a[href*="://proxyelite.info"]
+! блокировки, добавленнные из-за агрессивного обхода адблока на 2ip.ru, 2ip.io, 2ip.ua ~>
+a21856 1
+||hide.mn^$third-party,popup
 d21860 23
 a22371 1
 116.ru,14.ru,161.ru,164.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,62.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,proizhevsk.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru##.PReP\+
@@ -182,8 +191,10 @@ buhgalter.com.ua,buhgalter911.com,factor.ua##+js(no-setTimeout-if, adBlockEnable
 d28086 1
 a28086 1
 game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /chesday|tick/)
+d28118 1
 a28219 1
 ozon.ru##[data-lcp-name*="anner-"]:matches-path(/my/reviews/promo):style(display: block !important)
+d28234 1
 a28234 1
 ozon.ru##div[data-widget="banner"]:matches-path(/my/reviews/promo):style(display: block !important)
 d28303 1

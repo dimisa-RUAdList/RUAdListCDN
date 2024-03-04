@@ -1,8 +1,10 @@
-diff name:ruadlist lines:115 checksum:9b98c9b0f0
+diff name:ruadlist lines:126 checksum:5c3b88272a
 d4 2
 a5 2
-! Last modified: Mon, 04 Mar 2024 16:25:55 +0000
-! Diff-Path: ../patches/2024.3.4.985.patch#ruadlist
+! Last modified: Mon, 04 Mar 2024 21:17:30 +0000
+! Diff-Path: ../patches/2024.3.4.1277.patch#ruadlist
+a8908 1
+||go.onelink.me^$popup,domain=2ip.io|2ip.ru|2ip.ua
 d10205 1
 a10205 1
 $third-party,xmlhttprequest,domain=24video.adult|24video.in|24video.net|anisima.ru|arablionz.tv|artrozamnet.ru|autotopik.ru|bigpuzzle.ru|diakov.net|eku.ru|familyspace.ru|farap.ru|film1080p.ru|findanime.net|ggtube.pro|gorodvo.ru|hdklub.com|hdsite.net|hochu.tv|kaztorka.org|kino-hit-online.com|kino-tvserial.online|kinohd.net|kinohd.ws|kogda.org|mainavi.ru|neolove.ru|newcloud.tv|nisorinki.net|nnmclub.to|online-hd.biz|onlineguru.ru|pornozhuk.com|privat-fotka.ru|ru-kino.com|ruvi.tv|seasonvar.ru|shtorm777.ru|smotriserial.me|superhumor.ru|telspravochnik.com|top-radio.ru|torrentshow.org|tryserial.net|voffka.com|vse-sezony.org|zk.fm
@@ -35,6 +37,9 @@ nnmclub.to##.forumline > tbody > tr > td.spaceRow > center
 d16427 1
 a16427 1
 nnmclub.to##.header .row2 tr:not(:last-child)
+d16603 1
+a16603 1
+2ip.ua##.ipblockmap > div > .ip ~ .ip + div
 a17373 1
 game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##.post_body > center > a[target="_blank"]
 d18823 1
@@ -65,9 +70,13 @@ android-mafia.com,game4you.top,games-pc.top,rustorka.com,rustorka.net,rustorka.t
 d21787 1
 a21787 1
 apad2.top,inferno.games,mediagetguru.ru,monna2.top,only-soft.org,rutor-game.info,rutor-games.ru,rutorgame.info,rutorgames.ru,torent-igruha.com,torrent-music.ru,torrent-soft.net,torrent-word.ru,torrentigo.net,torrentigruha.org,torrentsoft.net,where-game.ru##:not(this-site-promotes-malware)
-a21845 2
+d21846 2
+a21847 3
 2ip.io,2ip.ru##a[href*="://finevpn.org"]
 2ip.io,2ip.ru##a[href*="://proxyelite.info"]
+! блокировки, добавленнные из-за агрессивного обхода адблока на 2ip.ru, 2ip.io, 2ip.ua ~>
+a21849 1
+||hide.mn^$third-party,popup
 a22341 1
 116.ru,14.ru,161.ru,164.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,62.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,proizhevsk.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru##.PReP\+
 d22519 1
@@ -111,6 +120,8 @@ buhgalter.com.ua,buhgalter911.com,factor.ua##+js(no-setTimeout-if, adBlockEnable
 d28059 1
 a28059 1
 game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /chesday|tick/)
+d28091 1
+d28208 1
 d28357 1
 a28357 1
 avtovod.com.ua,bigmir.net,buhgalter.com.ua,buhgalter911.com,businessua.com,censor.net,dengi.ua,ditey.com,epravda.com.ua,eurointegration.com.ua,f1analytic.com,facenews.ua,factor.ua,gazeta.ua,gorod.dp.ua,hvylya.net,i.ua,inforesist.org,isport.ua,ivona.ua,kolobok.ua,kriminal.tv,liga.net,meteo.ua,meteofor.com.ua,nnovosti.info,nv.ua,panno4ka.net,pogodaua.com,pravda.com.ua,real-vin.com,smak.ua,stravy.net,tochka.net,tv.ua,viva.ua,vsetv.com,www.ukr.net##+js(remove-node-text, script, "Shadow)

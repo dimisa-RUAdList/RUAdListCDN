@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 04 Mar 2024 16:25:55 +0000
-! Diff-Path: ../patches/2024.3.4.985.patch#ruadlist
+! Last modified: Mon, 04 Mar 2024 21:17:30 +0000
+! Diff-Path: ../patches/2024.3.4.1277.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -8906,6 +8906,7 @@ $popup,domain=176.114.0.126|176.114.0.132|37.220.36.15|assiatv.com|cdnneedtv.ru|
 ||com/?id=*&t=direct^$popup
 ||gemius.pl^$popup,domain=terrikon.com
 ||getitbit.net/ads/$popup
+||go.onelink.me^$popup,domain=2ip.io|2ip.ru|2ip.ua
 ||goo.gl^$popup,domain=aces.gg|gamegpu.com|skachat-igri-besplatno.info|torrents-game.net|vsofte.biz
 ||joker.win/*&offer_id=$popup
 ||m.acestream.net/plan/select?popup=noads$popup
@@ -16601,7 +16602,7 @@ besplatnyeprogrammy.ru##.ip-motto
 besplatnyeprogrammy.ru##.ip-motto + table > tbody > tr:last-child > td:not(:last-child)
 besplatnyeprogrammy.ru##.ip-motto + table > tbody > tr:not(:last-child)
 besplatnyeprogrammy.ru##.ip-motto + table > thead
-2ip.ua##.ipblockmap > div > .ipv6 + div
+2ip.ua##.ipblockmap > div > .ip ~ .ip + div
 slivup.biz##.ipsA1d
 zismo.biz##.ipsAd123
 zismo.biz##.ipsAd123 + div[align="center"]
@@ -21842,10 +21843,10 @@ $script,~third-party,domain=defileb.com|fplay.online|hovels.info|likelol.online|
 2ip.io,2ip.ru##a[href*="://fineproxy.org"]
 2ip.io,2ip.ru##a[href*="://finevpn.org"]
 2ip.io,2ip.ru##a[href*="://proxyelite.info"]
-||go.onelink.me^$popup,domain=2ip.io|2ip.ru
-! блокировки, добавленнные из-за агрессивного обхода адблока на 2ip.ru и 2ip.io ~>
+! блокировки, добавленнные из-за агрессивного обхода адблока на 2ip.ru, 2ip.io, 2ip.ua ~>
 ||fineproxy.org^$third-party,popup
 ||finevpn.org^$third-party,popup
+||hide.mn^$third-party,popup
 ||hidemn.org^$third-party,popup
 ||hidemy.name^$third-party,popup
 ||proxyelite.info^$third-party,popup
@@ -28095,7 +28096,6 @@ iz.ru##+js(set-constant, Object.prototype.autoplay, false)
 embed.dugout.com##+js(set-constant, Object.prototype.autostart, noopFunc)
 sports.ru##+js(set-constant, Object.prototype.branding, undefined)
 7days.ru,doctorpiter.ru,dom.mail.ru,kinonews.ru,kp.kg,kp.kz,kp.md,kp.ru,lady.mail.ru,mk.ru,ohotniki.ru,portalvirtualreality.ru,radiokp.ru,sportkp.ru,wday.ru,woman.ru##+js(set-constant, Object.prototype.changeVisible, noopFunc)
-tass.ru##+js(set-constant, Object.prototype.compactMode, true)
 ati.su##+js(set-constant, Object.prototype.createBannerItem, null)
 24smi.org##+js(set-constant, Object.prototype.detect, noopFunc)
 russia-tv.online##+js(set-constant, Object.prototype.detectAdb, noopFunc)
@@ -28212,7 +28212,6 @@ my-expert.ru##body:style(-webkit-touch-callout: default !important; -webkit-user
 sawlive.tv##body[onclick^="closeMyAd"] > div[id][style*="position"][style*="background-color"]
 www.e1.ru##div:has(> [id] ~ script):style(min-height: 0 !important)
 cq.ru##div[class]:not([class*="-"]):not([class*="_"]):matches-css(margin-top: 16px)
-tass.ru##div[class^="PageLayout_top_sticky"] > div:style(width: auto !important)
 ozon.ru##div[data-widget="banner"]:matches-path(/my/reviews/promo):style(display: block !important)
 pronpic.org##div[style="color:red;font-size:25px;"], .adblock_loock
 hdrezka.*,rezka.*##+js(abort-current-inline-script, document.getElementsByTagName, AMSP.loadAsset)
