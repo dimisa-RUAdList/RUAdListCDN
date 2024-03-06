@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 06 Mar 2024 08:25:02 +0000
-! Diff-Path: ../patches/2024.3.6.505.patch#ruadlist
+! Last modified: Wed, 06 Mar 2024 13:20:33 +0000
+! Diff-Path: ../patches/2024.3.6.800.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10450,7 +10450,6 @@ $xmlhttprequest,domain=happy-biock.info|happy-block.info|howto-news.info|mschist
 /content/redtram-$domain=unian.info|unian.net|unian.ua
 /cookiesync.js$domain=dfm.ru|hitfm.ru|maximum.ru|montecarlo.ru
 /data*?bid=$domain=ebooks.skin
-/default/vbanners/$domain=noi.md
 /do/*$domain=myzuka.club
 /ebllbe/*$image,domain=lostfilm.download|lostfilm.life|lostfilm.pro|lostfilm.space|lostfilm.today|lostfilm.tv|lostfilm.tw|lostfilm.uno|lostfilm.win|lostfilmtv.site|lostfilmtv.uno|lostfilmtv1.site|lostfilmtv2.site|lostfilmtv3.site|lostfilmtv4.site|lostfilmtv5.site
 /exchange$domain=koob.ru
@@ -11964,7 +11963,6 @@ lada.kz/uploads/banners/
 ||media.kaifolog.ru$script,domain=kaifolog.ru
 ||media.v102.ru/abs/
 ||media.v102.ru/players/advplayer$object
-||media1.noi.md/uploads/banner/
 ||mediametrics.ru/img/banner$image
 ||mediametrics.ru/js/branding/
 ||mediaryazan.ru/flash_banners/
@@ -12211,6 +12209,7 @@ lada.kz/uploads/banners/
 ||nnportal.org/nntt/$object
 ||nnportal.org/portal/core/i/
 ||nntt.org/a/files/
+||noi.md/ajax/banner/
 ||noiseblocker.de^$domain=hw-lab.com
 ||noodlemagazine.com/static/engine/*/vast.js
 ||nord-news.ru/img/all/
@@ -15015,7 +15014,6 @@ mp3party.net##.advf-top
 showgid.tv##.advrigth
 acer-a500.ru,rabota-kovrov.ru,sosnovskij.ru##.advs
 9111.ru##.advzone
-noi.md##.adw
 recept.ua##.adw-link
 tmbw.ru##.adwidget
 burdastyle.ru##.aff-offers
@@ -17075,6 +17073,7 @@ penzavzglyad.ru##.news-content__b
 belaruspartisan.by##.news-detail > .animate.content ~ div[id]
 ivanovonews.ru##.news-detail__panel > .news-detail__panel-col:first-child > div
 sport.ua#?#.news-event__text > div[class]:-abp-has(table[cellpadding] a[target="_blank"])
+noi.md##.news-feed-item[style="height: 400px"]
 go64.ru#?#.news-grid > .news-grid__col:-abp-has([id^="banner"])
 om1.ru##.news-grid > div[id^="first"]
 om1.ru##.news-grid > div[id^="rastyagka"]
@@ -18377,6 +18376,7 @@ kinotochka.co,kinotochka.me##.unknown-wr
 hibiny.ru##.up-pek-top
 lelang.su##.up_b
 101.ru##.uracy
+noi.md##.ushi
 zoneofgames.ru##.ushki2
 hdrezka.re##.ustoread
 rockstargame.su##.ut-contentroll
@@ -19443,6 +19443,7 @@ mkap.ru##a[href*="zjbi.ru"] > img
 www.film.ru##a[href="#"]
 windows64.net##a[href="#"][onclick*="_blank"]
 playercdn.cdnvideo.ru##a[href="//cdnvideo.ru/?from=playercdn.cdnvideo.ru"]
+noi.md##a[href="//moldovenii.md"]
 xbts.ru##a[href="//xbts.ru/"] + a[target="_blank"]
 drive2.ru##a[href="/_api/drom/navigate"]
 azart.net.ua##a[href="/adv.php"]
@@ -20236,6 +20237,7 @@ www.kinopoisk.ru##div[class$="g-kinopoisk-media"]
 obukhiv.info##div[class*=" min-h-"]
 the-village.ru##div[class*="-BannerPlaceholder-"]
 servernews.ru##div[class*="-banner"]
+noi.md##div[class*="-bnr"]
 moskva.fm,piter.fm##div[class*="-branding-"] > a[target="_blank"]
 doramatv.live,grouple.co,librebook.me,mintmanga.live,mose.live,readmanga.live,selflib.me,selfmanga.live##div[class*="-brnd"]
 kinoafisha.info##div[class*="-fix "][class$="as-desktop"]
@@ -27527,11 +27529,11 @@ dzen.ru##div[id][class$="__ad"]
 ! обфускация
 dzen.ru##.article-recommender__feed-container article > div + div
 dzen.ru##.viewer-layout__content div[class*="-player "][aria-label] ~ div:not([class])
-dzen.ru##[class*="fioo"] div[id][class^="feed"] [class*="wrapper"][aria-label] ~ article:not([aria-label])
-dzen.ru##aside[id^="article_"][class*="_rlght"] > div[class]
+dzen.ru##[class*="folo"] div[id][class^="feed"] [class*="wrapper"][aria-label] ~ article:not([aria-label])
+dzen.ru##aside[id^="article_"][class*="_rgiht"] > div[class]
 dzen.ru##div[aria-label="Карточка рекомендованного видео"] ~ [aria-label]:not([aria-label="Карточка рекомендованного видео"])
-dzen.ru##div[class*="article__"] > .undefined ~ div[class*="mld"] > div[id][class]
-dzen.ru##div[class*="ldjed__container"] > div[class*="ldjed__"] ~ div:style(display: none !important)
+dzen.ru##div[class*="article__"] > .undefined ~ div[class*="midll"] > div[id][class]
+dzen.ru##div[class*="idjet__container"] > div[class*="idjet__"] ~ div:style(display: none !important)
 dzen.ru##div[class^="feed__"] > article > div:first-child ~ div
 ! ---
 ! игры

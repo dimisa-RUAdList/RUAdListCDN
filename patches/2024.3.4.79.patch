@@ -1,27 +1,40 @@
-diff name:ruadlist lines:57 checksum:43c911523a
+diff name:ruadlist lines:75 checksum:727bf24859
 d4 2
 a5 2
-! Last modified: Wed, 06 Mar 2024 08:25:02 +0000
-! Diff-Path: ../patches/2024.3.6.505.patch#ruadlist
+! Last modified: Wed, 06 Mar 2024 13:20:33 +0000
+! Diff-Path: ../patches/2024.3.6.800.patch#ruadlist
 a6294 1
 ||usselftarocco.com^$third-party
 a8908 1
 ||go.onelink.me^$popup,domain=2ip.io|2ip.ru|2ip.ua
+d10451 1
+d11965 1
 a12050 1
 ||modsfire.com/img/ookfmx.
+a12210 1
+||noi.md/ajax/banner/
 d14916 1
 a14916 1
 1927.kiev.ua,1plus1.video,bigpicture.ru,chatadelic.net,coderoad.ru,day.az,euromd.com.ua,football-fun.ru,fotokto.ru,gagadget.com,gameme.eu,gotoshop.ua,gs.by,gsconto.com,hotzoom.net,icons8.ru,infoniac.ru,jooble.org,jooble.ua,kinoafisha.info,klubok.com,like-film.online,malenkiy.ru,mangalib.me,meta.ua,my-calend.ru,orl.ec,podrobnosti.ua,qmovies.ru,ranobelib.me,savevideo.me,scooter-remont.com,seasonvar24.com,sexytales.org,soccer.ru,sports.kz,takprosto.cc,timeout.ru,tvsezon.com,ura.news,world-knigi.ru,yaoilib.me##.ads
+d15015 1
 a15233 1
 factor.ua##.b-place-art__mark
 d16603 1
 a16603 1
 2ip.ua##.ipblockmap > div > .ip ~ .ip + div
+a17073 1
+noi.md##.news-feed-item[style="height: 400px"]
+a18375 1
+noi.md##.ushi
 d18824 1
 a18824 1
 buhgalter.com.ua,buhgalter911.com,factor.ua,tsn.ua,unian.info,unian.net,unian.ua##[data-ad]
 a18922 1
 forum.ru-board.com##[href^="postings.cgi?action=edit&forum=5&topic=51141"]:not([href$="postno=1"]) ~ .post img:not([src*="://forum.ru-board.com/board/"])
+a19440 1
+noi.md##a[href="//moldovenii.md"]
+a20233 1
+noi.md##div[class*="-bnr"]
 d21741 1
 a21741 1
 ||pikabu.ru/ajax/?ar*key=$xmlhttprequest,domain=pikabu.ru
@@ -46,9 +59,14 @@ buhgalter.com.ua,buhgalter911.com##body.access *:style(filter: none !important)
 buhgalter.com.ua,buhgalter911.com##body.access div[id^="access-au"]
 buhgalter.com.ua,buhgalter911.com##body.access:style(overflow: auto !important; position: relative !important)
 ! ---
-d27516 1
-a27516 1
-dzen.ru##[class*="fioo"] div[id][class^="feed"] [class*="wrapper"][aria-label] ~ article:not([aria-label])
+d27516 2
+a27517 2
+dzen.ru##[class*="folo"] div[id][class^="feed"] [class*="wrapper"][aria-label] ~ article:not([aria-label])
+dzen.ru##aside[id^="article_"][class*="_rgiht"] > div[class]
+d27519 2
+a27520 2
+dzen.ru##div[class*="article__"] > .undefined ~ div[class*="midll"] > div[id][class]
+dzen.ru##div[class*="idjet__container"] > div[class*="idjet__"] ~ div:style(display: none !important)
 a28013 1
 buhgalter.com.ua,buhgalter911.com,factor.ua##+js(no-setTimeout-if, adBlockEnabled)
 d28087 1
