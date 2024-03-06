@@ -1,8 +1,8 @@
-diff name:ruadlist lines:57 checksum:103f52f861
+diff name:ruadlist lines:57 checksum:43c911523a
 d4 2
 a5 2
-! Last modified: Wed, 06 Mar 2024 03:19:42 +0000
-! Diff-Path: ../patches/2024.3.6.199.patch#ruadlist
+! Last modified: Wed, 06 Mar 2024 08:25:02 +0000
+! Diff-Path: ../patches/2024.3.6.505.patch#ruadlist
 a6294 1
 ||usselftarocco.com^$third-party
 a8908 1
@@ -24,7 +24,7 @@ a18922 1
 forum.ru-board.com##[href^="postings.cgi?action=edit&forum=5&topic=51141"]:not([href$="postno=1"]) ~ .post img:not([src*="://forum.ru-board.com/board/"])
 d21741 1
 a21741 1
-||pikabu.ru/ajax/?arlkey=$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/ajax/?ar*key=$xmlhttprequest,domain=pikabu.ru
 d21843 2
 a21844 1
 ! блокировки, добавленнные из-за агрессивного обхода адблока на 2ip.ru, 2ip.io, 2ip.ua ~>
