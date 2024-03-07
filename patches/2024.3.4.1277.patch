@@ -1,8 +1,8 @@
-diff name:ruadlist lines:48 checksum:2e51fd40ad
+diff name:ruadlist lines:59 checksum:569af8af51
 d4 2
 a5 2
-! Last modified: Thu, 07 Mar 2024 09:17:19 +0000
-! Diff-Path: ../patches/2024.3.7.557.patch#ruadlist
+! Last modified: Thu, 07 Mar 2024 14:20:55 +0000
+! Diff-Path: ../patches/2024.3.7.860.patch#ruadlist
 a6294 1
 ||usselftarocco.com^$third-party
 a10129 1
@@ -31,12 +31,21 @@ a20805 1
 advizzer.com,bragazeta.ru,cataclysmdda.ru,chehov-vid.ru,conversion.im,coollib.net,ekaraganda.kz,ereport.ru,euro-football.ru,floraprice.ru,gameguru.ru,go64.ru,grinkod.spb.ru,igrixl.ru,kp40.ru,kramatorsk.info,lada.kz,mirnov.ru,mix.tj,musicmp3spb.org,musicwars.ru,news29.ru,ptzgovorit.ru,servers-samp.ru,sovets.net,sport.ua,sports.kz,tayga.info,tparser.org,uaprom.info,vesti.ua,vidal.ru##div[id^="banner"]
 d21744 1
 a21744 1
-||pikabu.ru/ajax/?ar*key=$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/ajax/?a*key=$xmlhttprequest,domain=pikabu.ru
+a21748 1
+pikabu.ru#?#.sidebar-block div:-abp-properties(content: "")
+d21751 1
+d21753 4
+a21756 1
+pikabu.ru#?#.stories-feed__container > .story:-abp-has(> div > header[class*=" "])
+d21773 1
 a21849 1
 ||hidemn.net^$third-party,popup
 d22355 1
 a22355 1
 116.ru,14.ru,161.ru,164.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,62.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,proizhevsk.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru##[data-creative]
+a25792 1
+positiverecords.ru#@#.ad-google
 d27527 2
 a27528 2
 dzen.ru##[class*="folo"] div[id][class^="feed"] [class*="wrapper"][aria-label] ~ article:not([aria-label])
@@ -45,5 +54,7 @@ d27530 2
 a27531 2
 dzen.ru##div[class*="article__"] > .undefined ~ div[class*="midll"] > div[id][class]
 dzen.ru##div[class*="idjet__container"] > div[class*="idjet__"] ~ div:style(display: none !important)
+a27827 1
+positiverecords.ru##+js(abort-current-inline-script, document.querySelector, ad-google)
 a28074 1
 eneyida.tv##+js(set-attr, .owl-item > a > img, src, [data-src])

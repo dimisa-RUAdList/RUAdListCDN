@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 07 Mar 2024 09:17:19 +0000
-! Diff-Path: ../patches/2024.3.7.557.patch#ruadlist
+! Last modified: Thu, 07 Mar 2024 14:20:55 +0000
+! Diff-Path: ../patches/2024.3.7.860.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21748,19 +21748,16 @@ rafkino.com##div[id^="MarketGid"]
 ||pikabu.ru/ajax/?*&*key=$xmlhttprequest,domain=pikabu.ru
 ||pikabu.ru/ajax/?*&__$xmlhttprequest,domain=pikabu.ru
 ||pikabu.ru/ajax/?*=*key=$xmlhttprequest,domain=pikabu.ru
-||pikabu.ru/ajax/?ar*key=$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/ajax/?a*key=$xmlhttprequest,domain=pikabu.ru
 ! селекторы
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
 pikabu.ru#?#.sidebar-block div:-abp-properties(/min-height: [0-9]{3}px|min-height: calc.29.px|min-height: calc.[034569]{2}[0-9]{1}|min-height: calc.+.em|min-height: .+.(ch|cm|em|ex|in|lh|mm|pc|pt|Q)/)
+pikabu.ru#?#.sidebar-block div:-abp-properties(content: "")
 pikabu.ru##.sidebar-block_border[style*="transparent"]
 pikabu.ru##.sidebar__inner > .sidebar-block div[style=""]
-pikabu.ru##.sidebar__inner > .sidebar-block:not(.sidebar-block_border)
 pikabu.ru#?#.stories-feed__container > .story div:-abp-properties(/min-height: .+.cm/)
-pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__main > div:first-child + div)
-pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__main > div:only-child)
-pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:-abp-contains(/[a-z]$|[a-z].{1,3}$|\s$|:$|:.{1,20}$/))
-pikabu.ru#?#.stories-feed__container > .story:-abp-has(> script:empty)
+pikabu.ru#?#.stories-feed__container > .story:-abp-has(> div > header[class*=" "])
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(/min-height: 20.px|min-height: 29.px|min-height: 30.px|min-height: 300./))
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(/min-height: calc.29.px/))
 dracon-zet.ru,fonmod.com,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
@@ -21777,7 +21774,6 @@ pikabu.ru#?#div[class*="page-story__"] div:-abp-properties(/min-height: [02345]{
 pikabu.ru##div[class*="page-story__"] div[style=""]
 pikabu.ru##div[class*="sidebar-block_border"][style*="border"]
 sdamgia.ru##div[class^="google_ad_left"]
-pikabu.ru##div[class^="sidebar-block "] ~ .sidebar-block_border ~ .sidebar-block_border ~ div[class^="sidebar-block "]:not(.sidebar-block_border)
 liveinternet.ru,pikabu.ru,sdamgia.ru##div[data-name="adWrapper"]
 pikabu.ru##div[href]
 rg.ru##div[id][class*="__"]:empty
@@ -25798,6 +25794,7 @@ minigames.mail.ru#@#.js-banner
 mks.space#@#.ads_banner
 newnavitel.blogspot.com#@##AdSense1
 num-words.com#@#.advert-banner
+positiverecords.ru#@#.ad-google
 pvpru.com#@##ad_global_above_footer
 rap-me.online#@#.adv-banner
 tests24.su#@##header-ad
@@ -27833,6 +27830,7 @@ skam.online##+js(abort-current-inline-script, document.getElementById, composedP
 my-expert.ru##+js(abort-current-inline-script, document.getElementsByTagName, unselectable)
 brigadtv.ru,castle-serial.ru,ehlita.ru,gameout.ru,itevonklass.ru,izmailovtv.xyz,karateltv.ru,lyucifer.tv,m-z.tv,miyzvuk.net,my-expert.ru,pokazuha.ru,samomdele.tv,saske.tv,sorvigolovatv.ru,taynyeistiny.ru,transformator220.ru##+js(abort-current-inline-script, document.oncontextmenu)
 stalker-mods.clan.su,stalker-mods.su##+js(abort-current-inline-script, document.onkeydown)
+positiverecords.ru##+js(abort-current-inline-script, document.querySelector, ad-google)
 agroreview.com##+js(abort-current-inline-script, encodeURIComponent, rcBuf)
 gwss.ru##+js(abort-current-inline-script, fuckAdBlock, undefined)
 hardwareluxx.ru##+js(abort-current-inline-script, jQuery, backgroundImage)
