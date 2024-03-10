@@ -1,8 +1,8 @@
-diff name:ruadlist lines:78 checksum:3c8d2aa069
+diff name:ruadlist lines:187 checksum:6ae7f57401
 d4 2
 a5 2
-! Last modified: Sun, 10 Mar 2024 07:19:06 +0000
-! Diff-Path: ../patches/2024.3.10.439.patch#ruadlist
+! Last modified: Sun, 10 Mar 2024 12:31:09 +0000
+! Diff-Path: ../patches/2024.3.10.751.patch#ruadlist
 a2812 1
 ||ippscriptshark.com^$third-party
 a3141 1
@@ -52,6 +52,9 @@ d21168 1
 a21168 1
 comss.one,comss.ru##html:not([style]) > body getsitecontrol-widget:not(#getsitecontrol-7665)
 d21272 1
+d21366 1
+a21366 1
+audiotag.info,computer76.ru,enovosty.com,epravda.com.ua,eurointegration.com.ua,finget.ru,fraza.com,inforesist.org,ostro.org,real-vin.com,soyztreid.website,stravy.net,videoredaktor.ru,volyninfo.com##ins
 d21748 1
 a21748 1
 ||pikabu.ru/ajax/?a*key=$xmlhttprequest,domain=pikabu.ru
@@ -67,6 +70,12 @@ a25589 1
 @@/(clickunder|footerad|layerad|lazyad|leaderad|leftad|linkad|pop_ad|prerollad|printad|pubads|under)/$script,~third-party,domain=game4you.top|games-pc.top|innal.top|naylo.top|rustorka.com|rustorka.net|rustorka.top|rustorkacom.lib
 a25797 1
 positiverecords.ru#@#.ad-google
+d27704 4
+a27765 1
+cloud.mail.ru##div[class^="Folder__worm"]
+d27767 1
+a27767 1
+cloud.mail.ru##div[class^="Public__folderContent"]:style(padding-right: 0 !important)
 a27832 1
 positiverecords.ru##+js(abort-current-inline-script, document.querySelector, ad-google)
 d28003 1
@@ -77,3 +86,103 @@ a28072 1
 game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /dimisa|tick/)
 a28079 1
 eneyida.tv##+js(set-attr, .owl-item > a > img, src, [data-src])
+a28467 1
+@@||yacine-app.com^$generichide
+a28498 1
+||admiral.pub^$third-party
+a28499 1
+||alertarithmetic.com^$third-party
+a28501 1
+||ambrosialsummit.com^$third-party
+a28516 1
+||carpentercolor.com^$third-party
+a28523 1
+||childlikeexample.com^$third-party
+a28541 1
+||devilishdinner.com^$third-party
+a28544 1
+||dreamycanyon.com^$third-party
+a28545 2
+||eminentend.com^$third-party
+||enchantingenchantment.com^$third-party
+a28548 2
+||etherealquasar.com^$third-party
+||exhibitsneeze.com^$third-party
+a28549 2
+||fabulousterritory.com^$third-party
+||fadechildren.com^$third-party
+a28551 1
+||faucetfoot.com^$third-party
+a28558 2
+||franticroof.com^$third-party
+||friendlycrayon.com^$third-party
+a28562 1
+||gladglen.com^$third-party
+a28563 1
+||grumpydime.com^$third-party
+a28575 2
+||kindhush.com^$third-party
+||knitstamp.com^$third-party
+a28578 1
+||lumberrule.com^$third-party
+a28579 3
+||majesticmountainrange.com^$third-party
+||matchjoke.com^$third-party
+||materialmilk.com^$third-party
+a28580 1
+||meadowlullaby.com^$third-party
+a28582 2
+||memorizematch.com^$third-party
+||mistyhorizon.com^$third-party
+a28583 1
+||muddledmemory.com^$third-party
+a28587 3
+||neatshade.com^$third-party
+||nebulacrescent.com^$third-party
+||nebulousamusement.com^$third-party
+a28591 1
+||oafishchance.com^$third-party
+a28599 3
+||piquantvortex.com^$third-party
+||placidactivity.com^$third-party
+||platescarecrow.com^$third-party
+a28617 1
+||recessrain.com^$third-party
+a28623 1
+||roughharmony.com^$third-party
+a28628 1
+||seemlysuggestion.com^$third-party
+a28640 1
+||slinksuggestion.com^$third-party
+a28641 1
+||smilewound.com^$third-party
+a28643 1
+||soggyzoo.com^$third-party
+a28647 3
+||speakgrandfather.com^$third-party
+||spookystitch.com^$third-party
+||sprydelta.com^$third-party
+a28651 2
+||stepcattle.com^$third-party
+||stimulatingsneeze.com^$third-party
+a28652 2
+||stingyspoon.com^$third-party
+||stockingsleet.com^$third-party
+a28656 2
+||subletyoke.com^$third-party
+||substantialgrade.com^$third-party
+a28659 1
+||superviseshoes.com^$third-party
+a28663 1
+||tediousbear.com^$third-party
+a28666 1
+||testadmiral.com^$third-party
+a28671 1
+||tranquilarchipelago.com^$third-party
+a28674 1
+||unaccountablepie.com^$third-party
+a28685 2
+||worriedwine.com^$third-party
+||zephyrlabyrinth.com^$third-party
+a28904 1
+##.ab-detector-wrap

@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 10 Mar 2024 07:19:06 +0000
-! Diff-Path: ../patches/2024.3.10.439.patch#ruadlist
+! Last modified: Sun, 10 Mar 2024 12:31:09 +0000
+! Diff-Path: ../patches/2024.3.10.751.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21365,7 +21365,7 @@ sarafannoeradio.org##img[width="829"][height="90"]
 demiart.ru##img[width="900"][height="100"]
 post-tracker.ru##img[width^="8"][height^="3"][src$=".gif"]
 gizmod.ru##index > .entry
-audiotag.info,computer76.ru,enovosty.com,epravda.com.ua,eurointegration.com.ua,finget.ru,fraza.com,inforesist.org,ostro.org,real-vin.com,stravy.net,videoredaktor.ru,volyninfo.com##ins
+audiotag.info,computer76.ru,enovosty.com,epravda.com.ua,eurointegration.com.ua,finget.ru,fraza.com,inforesist.org,ostro.org,real-vin.com,soyztreid.website,stravy.net,videoredaktor.ru,volyninfo.com##ins
 peugeot-club.net,vjazhi.ru##ins[style^="display:inline"]
 stopgame.ru#?#li:-abp-has(> [href="https://zen.yandex.ru/stopgame"])
 argumenti.ru#?#li:-abp-has(> span:-abp-contains(Новости партнеров))
@@ -27700,10 +27700,6 @@ e.mail.ru,octavius.mail.ru##.application_new-toolbar .application-mail:not(.appl
 e.mail.ru,octavius.mail.ru##.layer-sent-page > .layer:style(min-height: 0 !important)
 e.mail.ru##.ph-projects > a[href^="https://e.mail.ru/messages/inbox?utm_"]:style(pointer-events: none !important)
 ! ---
-cloud.mail.ru###app > #public > #content:style(width: 100% !important)
-cloud.mail.ru###app > #public > .shove
-cloud.mail.ru###app > #public:style(width: 100% !important)
-cloud.mail.ru###app:style(background: none !important)
 mail.ru###bubble-home
 my.mail.ru###history_container > div[class][style*="display: block!important"]
 minigames.mail.ru###like-buttons
@@ -27762,8 +27758,9 @@ mail.ru##body:not(.js-module) .tabs + div[class]:style(min-width: fit-content !i
 mail.ru##body:not(.js-module) .tabs > .tabs__item:style(padding: 0 5px !important; font-size: 15px !important)
 mail.ru##div:not(.grid__main-col) > div[slot="main-column"] .search-container:style(margin-top: 4px !important; margin-bottom: 20px !important)
 cloud.mail.ru##div[class^="Datalistinfo__root"]
+cloud.mail.ru##div[class^="Folder__worm"]
 cloud.mail.ru##div[class^="Public-desktop__rightCol-"]
-cloud.mail.ru##div[class^="Public-desktop__worm-"]
+cloud.mail.ru##div[class^="Public__folderContent"]:style(padding-right: 0 !important)
 cloud.mail.ru##div[class^="ReactViewer__attachesinfo-"]
 cloud.mail.ru##div[class^="ReactViewer__bottominfoWrapper-"]
 cloud.mail.ru##div[class^="ReactViewer__root-"]:style(--bottom-banner-height: 1px !important)
@@ -28466,6 +28463,7 @@ azrotv.com##div[id^="laoad_Adb"]
 shahid4u.club#@#.adsBox
 @@||ency-educ.com^$generichide
 @@||shahid.mbc.net^$generichide
+@@||yacine-app.com^$generichide
 ! *** antiadblockfilters:antiadblockfilters/antiadblock_chinese.txt ***
 ! *** antiadblockfilters:antiadblockfilters/antiadblock_czech.txt ***
 ! *** antiadblockfilters:antiadblockfilters/antiadblock_dutch.txt ***
@@ -28497,9 +28495,12 @@ koolhydraatarmerecepten.info##body > [style^="z-index: 1000000; "]
 ||absorbingcorn.com^$third-party
 ||acceptableauthority.com^$third-party
 ||additionant.com^$third-party
+||admiral.pub^$third-party
 ||afraidlanguage.com^$third-party
+||alertarithmetic.com^$third-party
 ||alluringbucket.com^$third-party
 ||ambitiousanimal.com^$third-party
+||ambrosialsummit.com^$third-party
 ||ancientact.com^$third-party
 ||attractionbanana.com^$third-party
 ||auspiciousyard.com^$third-party
@@ -28515,6 +28516,7 @@ koolhydraatarmerecepten.info##body > [style^="z-index: 1000000; "]
 ||bushesbag.com^$third-party
 ||calmcactus.com^$third-party
 ||carelesshat.com^$third-party
+||carpentercolor.com^$third-party
 ||castcream.com^$third-party
 ||causecherry.com^$third-party
 ||cautiouscredit.com^$third-party
@@ -28522,6 +28524,7 @@ koolhydraatarmerecepten.info##body > [style^="z-index: 1000000; "]
 ||charmingcough.com^$third-party
 ||cherriescare.com^$third-party
 ||childlikecrowd.com^$third-party
+||childlikeexample.com^$third-party
 ||childlikeform.com^$third-party
 ||clammychicken.com^$third-party
 ||clumsycar.com^$third-party
@@ -28540,16 +28543,25 @@ koolhydraatarmerecepten.info##body > [style^="z-index: 1000000; "]
 ||deadpanmarble.com^$third-party
 ||debonairtree.com^$third-party
 ||delicateducks.com^$third-party
+||devilishdinner.com^$third-party
 ||differentcoat.com^$third-party
 ||dockdigestion.com^$third-party
 ||drainpaste.com^$third-party
+||dreamycanyon.com^$third-party
 ||dustydime.com^$third-party
+||eminentend.com^$third-party
+||enchantingenchantment.com^$third-party
 ||enormousfoot.com^$third-party
 ||enviousshape.com^$third-party
 ||equablekettle.com^$third-party
+||etherealquasar.com^$third-party
+||exhibitsneeze.com^$third-party
 ||expansioneggnog.com^$third-party
+||fabulousterritory.com^$third-party
+||fadechildren.com^$third-party
 ||fadewaves.com^$third-party
 ||fallaciousfifth.com^$third-party
+||faucetfoot.com^$third-party
 ||fearfulmint.com^$third-party
 ||fearlessfaucet.com^$third-party
 ||firstfrogs.com^$third-party
@@ -28557,11 +28569,15 @@ koolhydraatarmerecepten.info##body > [style^="z-index: 1000000; "]
 ||flowerstreatment.com^$third-party
 ||floweryfact.com^$third-party
 ||floweryflavor.com^$third-party
+||franticroof.com^$third-party
+||friendlycrayon.com^$third-party
 ||friendwool.com^$third-party
 ||fuzzyerror.com^$third-party
 ||generalprose.com^$third-party
 ||givevacation.com^$third-party
+||gladglen.com^$third-party
 ||glisteningguide.com^$third-party
+||grumpydime.com^$third-party
 ||guidecent.com^$third-party
 ||habitualhumor.com^$third-party
 ||handsomelyhealth.com^$third-party
@@ -28574,22 +28590,36 @@ koolhydraatarmerecepten.info##body > [style^="z-index: 1000000; "]
 ||impossibleexpansion.com^$third-party
 ||inconclusiveaction.com^$third-party
 ||interestingpot.com^$third-party
+||kindhush.com^$third-party
+||knitstamp.com^$third-party
 ||laughablelizards.com^$third-party
 ||livelylaugh.com^$third-party
 ||lovelydrum.com^$third-party
+||lumberrule.com^$third-party
 ||lunchroomlock.com^$third-party
+||majesticmountainrange.com^$third-party
+||matchjoke.com^$third-party
+||materialmilk.com^$third-party
 ||materialparcel.com^$third-party
+||meadowlullaby.com^$third-party
 ||meatydime.com^$third-party
 ||mellowbike.com^$third-party
+||memorizematch.com^$third-party
+||mistyhorizon.com^$third-party
 ||movemeal.com^$third-party
+||muddledmemory.com^$third-party
 ||mundanenail.com^$third-party
 ||muteknife.com^$third-party
 ||muterange.com^$third-party
 ||nappyattack.com^$third-party
+||neatshade.com^$third-party
+||nebulacrescent.com^$third-party
+||nebulousamusement.com^$third-party
 ||needyneedle.com^$third-party
 ||nightwound.com^$third-party
 ||nondescriptnote.com^$third-party
 ||numerousnest.com^$third-party
+||oafishchance.com^$third-party
 ||oppositeparcel.com^$third-party
 ||outstandingsnails.com^$third-party
 ||overconfidentfood.com^$third-party
@@ -28598,6 +28628,9 @@ koolhydraatarmerecepten.info##body > [style^="z-index: 1000000; "]
 ||passivepolo.com^$third-party
 ||pastcabbage.com^$third-party
 ||pastoralroad.com^$third-party
+||piquantvortex.com^$third-party
+||placidactivity.com^$third-party
+||platescarecrow.com^$third-party
 ||plausiblecable.com^$third-party
 ||pleasantpump.com^$third-party
 ||pluckypocket.com^$third-party
@@ -28616,17 +28649,20 @@ koolhydraatarmerecepten.info##body > [style^="z-index: 1000000; "]
 ||rainyzinc.com^$third-party
 ||rampantwork.com^$third-party
 ||rangeplayground.com^$third-party
+||recessrain.com^$third-party
 ||regulatesleet.com^$third-party
 ||rehabilitatereason.com^$third-party
 ||representativebat.com^$third-party
 ||rhetoricalloss.com^$third-party
 ||rhetoricaltoes.com^$third-party
 ||rottenray.com^$third-party
+||roughharmony.com^$third-party
 ||scaredsnake.com^$third-party
 ||scarfsmash.com^$third-party
 ||scintillatingsilver.com^$third-party
 ||seashoreturn.com^$third-party
 ||secretivestick.com^$third-party
+||seemlysuggestion.com^$third-party
 ||selfishsnake.com^$third-party
 ||sensorsmile.com^$third-party
 ||shakegoldfish.com^$third-party
@@ -28639,40 +28675,57 @@ koolhydraatarmerecepten.info##body > [style^="z-index: 1000000; "]
 ||sinceresubstance.com^$third-party
 ||sinkbooks.com^$third-party
 ||slimyseashore.com^$third-party
+||slinksuggestion.com^$third-party
 ||slopesoap.com^$third-party
+||smilewound.com^$third-party
 ||smilingswim.com^$third-party
 ||soapsmoke.com^$third-party
+||soggyzoo.com^$third-party
 ||sombersticks.com^$third-party
 ||sordidsmile.com^$third-party
 ||soretrain.com^$third-party
 ||sparklingshelf.com^$third-party
+||speakgrandfather.com^$third-party
+||spookystitch.com^$third-party
+||sprydelta.com^$third-party
 ||squirrelhands.com^$third-party
 ||stakingsmile.com^$third-party
 ||stalesummer.com^$third-party
 ||steepsister.com^$third-party
+||stepcattle.com^$third-party
+||stimulatingsneeze.com^$third-party
 ||stingsquirrel.com^$third-party
+||stingyspoon.com^$third-party
+||stockingsleet.com^$third-party
 ||strangeclocks.com^$third-party
 ||strangesink.com^$third-party
 ||stretchsister.com^$third-party
 ||stretchsneeze.com^$third-party
+||subletyoke.com^$third-party
+||substantialgrade.com^$third-party
 ||sugarfriction.com^$third-party
 ||sulkycook.com^$third-party
 ||superficialeyes.com^$third-party
+||superviseshoes.com^$third-party
 ||swelteringsmile.com^$third-party
 ||tangyamount.com^$third-party
 ||tastelesstoes.com^$third-party
 ||tastelesstrucks.com^$third-party
+||tediousbear.com^$third-party
 ||telephoneapparatus.com^$third-party
 ||temptteam.com^$third-party
 ||terrifictooth.com^$third-party
+||testadmiral.com^$third-party
 ||thingstaste.com^$third-party
 ||ticketaunt.com^$third-party
 ||tiredthroat.com^$third-party
 ||tiresomethunder.com^$third-party
 ||toadtexture.com^$third-party
+||tranquilarchipelago.com^$third-party
 ||tritebadge.com^$third-party
 ||troubleshade.com^$third-party
 ||unablehope.com^$third-party
+||unaccountablepie.com^$third-party
 ||unadvisedengine.com^$third-party
 ||uninterestedquarter.com^$third-party
 ||unwieldyhealth.com^$third-party
@@ -28684,6 +28737,8 @@ koolhydraatarmerecepten.info##body > [style^="z-index: 1000000; "]
 ||wellgroomedhydrant.com^$third-party
 ||whispermeeting.com^$third-party
 ||wildcommittee.com^$third-party
+||worriedwine.com^$third-party
+||zephyrlabyrinth.com^$third-party
 ! Specific hide
 mediafire.com###abnotify
 llifle.com###ad_blocker_found
@@ -28903,6 +28958,7 @@ _adblocker_detected
 ##.AdblockMessage_msg
 ##.BrokenAd
 ##.ab-detected
+##.ab-detector-wrap
 ##.ad-alert-message-text
 ##.ad-alert-wrapper
 ##.ad-block-detected
