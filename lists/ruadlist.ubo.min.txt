@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 10 Mar 2024 17:20:13 +0000
-! Diff-Path: ../patches/2024.3.10.1040.patch#ruadlist
+! Last modified: Sun, 10 Mar 2024 22:20:48 +0000
+! Diff-Path: ../patches/2024.3.10.1340.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -8909,7 +8909,6 @@ $popup,domain=176.114.0.126|176.114.0.132|37.220.36.15|assiatv.com|cdnneedtv.ru|
 ||com/?id=*&t=direct^$popup
 ||gemius.pl^$popup,domain=terrikon.com
 ||getitbit.net/ads/$popup
-||go.onelink.me^$popup,domain=2ip.io|2ip.ru|2ip.ua
 ||goo.gl^$popup,domain=aces.gg|gamegpu.com|skachat-igri-besplatno.info|torrents-game.net|vsofte.biz
 ||joker.win/*&offer_id=$popup
 ||m.acestream.net/plan/select?popup=noads$popup
@@ -8918,6 +8917,7 @@ $popup,domain=176.114.0.126|176.114.0.132|37.220.36.15|assiatv.com|cdnneedtv.ru|
 ||mp3albomov.net^$popup,domain=lossless-galaxy.ru
 ||namba.kg^$popup,domain=namba.kg
 ||namba.tj^$popup,domain=namba.tj
+||onelink.me^$popup,domain=2ip.io|2ip.ru|2ip.ua
 ||otus.ru/*utm_$third-party,popup
 ||playground.ru/*/promo/$popup
 ||topofgames.com^*?path=$popup
@@ -12190,6 +12190,8 @@ lada.kz/uploads/banners/
 ||newsmaker.md^*/banners/
 ||newsomsk.ru/design/new/js/banner_new.js
 ||newsroom.kh.ua/wp-content/uploads/tiny_
+||newsru.co.il/scripts/ad_
+||newsru.co.il/scripts/main_ad.
 ||newstudio.tv/menu.swf
 ||newsua.ru/images/banner/
 ||nezhatin.com.ua/*.html$subdocument
@@ -20389,6 +20391,7 @@ kaktus.kg,kaktus.media,sportsdaily.ru##div[class^="Banner"]
 comedy-radio.ru,radioromantika.ru,relax-fm.ru,veseloeradio.ru##div[class^="D_"][class*="x"]
 rg.ru##div[class^="EditorialPageArticleAside_item"][style^="height:"]
 apteka.ru##div[class^="Eshop"]
+beta.newsru.co.il##div[class^="HP_"]
 igromania.ru,kanobu.ru##div[class^="HeadingPage_most_discussed"]
 www.sibnet.ru##div[class^="Info_sidebar_"] a[class^="Informer_root_"]
 igromania.ru,kanobu.ru##div[class^="MaterialSubscription_root_"]
@@ -20935,6 +20938,7 @@ argumenti.ru##div[id^="rtb_"]
 vnitkah.ru##div[id^="ruk_"]
 matiz-club.com##div[id^="sape_links"]
 ne-kurim.ru##div[id^="sbs"]
+beta.newsru.co.il##div[id^="section_"]
 sibnet.ru##div[id^="sibAd_"]
 mazepa.to#?#div[id^="sidebar"] > .ipsSideBlock:-abp-has(> h3:-abp-contains(еклам))
 photofuneditor.com#?#div[id^="sidebar"] div[id^="sidebar"]:-abp-has(div > [src*="pagead2."])
