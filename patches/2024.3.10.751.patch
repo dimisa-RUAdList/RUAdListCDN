@@ -1,8 +1,8 @@
-diff name:ruadlist lines:72 checksum:f766572251
+diff name:ruadlist lines:75 checksum:9c223c34c7
 d4 2
 a5 2
-! Last modified: Mon, 11 Mar 2024 18:23:59 +0000
-! Diff-Path: ../patches/2024.3.11.1103.patch#ruadlist
+! Last modified: Mon, 11 Mar 2024 23:19:28 +0000
+! Diff-Path: ../patches/2024.3.11.1399.patch#ruadlist
 a9 1
 .vnadsrv.com^
 a8512 1
@@ -32,8 +32,8 @@ d21749 2
 a21750 2
 ||pikabu.ru/ajax/?b*key=$xmlhttprequest,domain=pikabu.ru
 ||pikabu.ru/ajax/?cmrkey=$xmlhttprequest,domain=pikabu.ru
-a22355 1
-##.theme-ngs div[class^="advLabel"]
+a22358 1
+##[data-ns-portal] div[class^="advLabel"]
 d22361 1
 a22361 1
 72.ru,e1.ru,ngs.ru##[data-test="header-adv-logo"]
@@ -47,6 +47,9 @@ d25796 1
 a27084 2
 portalvirtualreality.ru##.foundation-wrapper:style(padding-top: 0 !important)
 ! ---
+d27199 4
+a27202 1
+e1.ru##.page-type-article.branding:style(margin-top: 0 !important)
 d27435 1
 a27435 1
 ! VIQEO, обще стили для плеера
