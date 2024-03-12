@@ -1,8 +1,8 @@
-diff name:ruadlist lines:75 checksum:ab2c1897bb
+diff name:ruadlist lines:77 checksum:50c8c67578
 d4 2
 a5 2
-! Last modified: Tue, 12 Mar 2024 04:25:21 +0000
-! Diff-Path: ../patches/2024.3.12.265.patch#ruadlist
+! Last modified: Tue, 12 Mar 2024 09:24:26 +0000
+! Diff-Path: ../patches/2024.3.12.564.patch#ruadlist
 a9 1
 .vnadsrv.com^
 a8512 1
@@ -31,7 +31,7 @@ beta.newsru.co.il##div[id^="section_"]
 d21749 2
 a21750 2
 ||pikabu.ru/ajax/?b*key=$xmlhttprequest,domain=pikabu.ru
-||pikabu.ru/ajax/?cmrkey=$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/ajax/?ccmrkey=$xmlhttprequest,domain=pikabu.ru
 a22358 1
 ##[data-ns-portal] div[class^="advLabel"]
 d22361 1
@@ -70,6 +70,8 @@ a28101 1
 kinonews.ru,kp.kg,kp.kz,kp.md,kp.ru,mk.ru,ohotniki.ru,portalvirtualreality.ru,radiokp.ru,sportkp.ru,wday.ru,woman.ru##+js(set-constant, Object.prototype.changeVisible, noopFunc)
 a28175 1
 e1.ru##.page-type-article:remove-class(branding)
+a28204 1
+online-fix.me##a.btn-success[href^="https://online-fix.me/ext/"]:remove-class(btn)
 a28493 3
 ! Third-party servers
 ||content-settings.com^$third-party

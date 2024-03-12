@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 12 Mar 2024 04:25:21 +0000
-! Diff-Path: ../patches/2024.3.12.265.patch#ruadlist
+! Last modified: Tue, 12 Mar 2024 09:24:26 +0000
+! Diff-Path: ../patches/2024.3.12.564.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21754,7 +21754,7 @@ rafkino.com##div[id^="MarketGid"]
 ||pikabu.ru/ajax/?*&*key=$xmlhttprequest,domain=pikabu.ru
 ||pikabu.ru/ajax/?*&__$xmlhttprequest,domain=pikabu.ru
 ||pikabu.ru/ajax/?b*key=$xmlhttprequest,domain=pikabu.ru
-||pikabu.ru/ajax/?cmrkey=$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/ajax/?ccmrkey=$xmlhttprequest,domain=pikabu.ru
 ! селекторы
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
@@ -28209,6 +28209,7 @@ dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__it
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href][target="_blank"]):remove()
 ozon.ru##[data-lcp-name*="anner-"]:matches-path(/my/reviews/promo):style(display: block !important)
 www.sports.ru##[data-noinit]
+online-fix.me##a.btn-success[href^="https://online-fix.me/ext/"]:remove-class(btn)
 24smi.org##a[href*="://24smi.org/"]:remove-attr(target)
 trupornolabs.org#@#a[href*="://pronpic.org/"]
 online-fix.me##a[href*=":2053"]:remove-class(btn)
