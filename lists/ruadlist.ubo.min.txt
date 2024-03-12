@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 12 Mar 2024 09:24:26 +0000
-! Diff-Path: ../patches/2024.3.12.564.patch#ruadlist
+! Last modified: Tue, 12 Mar 2024 14:20:11 +0000
+! Diff-Path: ../patches/2024.3.12.860.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21103,6 +21103,7 @@ domkad.ru##div[style^="display: flex; align-items: center; justify-content: cent
 moto.com.ua##div[style^="display: table; width: 650px; height: 90px;"]
 sarov.info##div[style^="display:inline-block"][style$="margin:0px 0px 12px 0px;"]
 zhenskoe-mnenie.ru#?#div[style^="font-size"]:-abp-contains(Также узнайте...)
+lumpics.ru##div[style^="height:120px;display:block"]
 sinoptik.ua##div[style^="margin"][style$="width: 300px;"]
 freesoft.ru##div[style^="margin-left:"] > a[href="#"]
 onlinetv.one##div[style^="margin: 20px 0;min-height:"]
@@ -21740,6 +21741,7 @@ rafkino.com##div[id^="MarketGid"]
 @@||s.zmctrack.net/z|$xmlhttprequest,domain=i.ua|ivona.ua|meteo.ua|panno4ka.net
 @@||s.znctrack.net/z|$xmlhttprequest,domain=censor.net|gazeta.ua|i.ua|mail.ukr.net|meteofor.com.ua|tabloid.pravda.com.ua|viva.ua
 ||imgfrost.net^$third-party
+||positiverecords.ru^$csp=script-src
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -21766,7 +21768,7 @@ pikabu.ru#?#.stories-feed__container > .story div:-abp-properties(/min-height: .
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> div > header[class*=" "])
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(/min-height: 20.px|min-height: 29.px|min-height: 30.px|min-height: 300./))
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(/min-height: calc.29.px/))
-dracon-zet.ru,fonmod.com,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
+dracon-zet.ru,fonmod.com,positiverecords.ru,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 android-mafia.com,game4you.top,games-pc.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##:not(this-site-promotes-malware)
 pikabu.ru##[data-block-name]
 liveinternet.ru,sdamgia.ru##[data-container]
@@ -25789,9 +25791,9 @@ forums.rusmedserv.com#@#img[width="728"][height="90"]
 green-way.com.ua#@#.adWrapper
 iphones.ru#@##sponsorText
 izi-invest.ru,mmo13.ru,ruboard.website#@#div[id^="yandex_rtb"]
-kakoysegodnyaprazdnik.ru,mmo13.ru,no-steamserv.ru,positiverecords.ru,vesti.ru#@#.adv
+kakoysegodnyaprazdnik.ru,mmo13.ru,no-steamserv.ru,vesti.ru#@#.adv
 kakoysegodnyaprazdnik.ru,xn--80aaiebcrjcibi8adgdtsm9z.xn--p1ai#@#div[id^="yandex_rtb"]
-kisameev.ru,myseria.pro,openssource.biz,positiverecords.ru,zazloo.ru#@#.reklama
+kisameev.ru,myseria.pro,openssource.biz,zazloo.ru#@#.reklama
 liga.net#@##bottomAd
 mail.ru#@#.text-banner
 mail.ru,quantrum.me,revelationonlinedb.ru,vg672plpaer.ru#@#.ad_text
@@ -27205,6 +27207,7 @@ sc2tv.ru##html:not(#id) > body:not(#id) .body--brranding > *:style(pointer-event
 sc2tv.ru##html:not(#id) > body:not(#id) .body--brranding:style(pointer-events: none !important)
 ! ---
 ! Shkulev Media
+e1.ru##.global-wrapper._branding:style(padding-top: 0 !important)
 e1.ru##.page-type-article.branding:style(margin-top: 0 !important)
 116.ru,14.ru,161.ru,164.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,62.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,proizhevsk.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru##.right-column-container > .right-column > div:style(height: auto !important)
 www.e1.ru##[data-test="sticky-header"] > div:first-child > div:first-child + div > div:not(:last-child):style(margin-right: 60px !important)
@@ -27806,6 +27809,7 @@ l2top.ru##+js(abort-current-inline-script, $, get)
 tut.by##+js(abort-current-inline-script, $, init_x_place)
 conversion.im##+js(abort-current-inline-script, $, mainContainer)
 bez-smenki.ru##+js(abort-current-inline-script, $, showPopupextra)
+positiverecords.ru##+js(abort-current-inline-script, $, window.location.href)
 freescreens.ru,imgbase.ru,imgcach.ru,imgclick.ru,payforpic.ru,picclick.ru,picclock.ru,picforall.ru##+js(abort-current-inline-script, JSON.parse)
 fenglish.site,mp3spy.cc##+js(abort-current-inline-script, JSON.parse, atob)
 dmod.cc,draug.ru,modsforwot.ru##+js(abort-current-inline-script, Math.floor, AdSense)
@@ -28017,6 +28021,7 @@ wowskill.ru##+js(nano-setInterval-booster, p)
 diplomsrazu.ru,igrozoom.ru,ru-minecraft.ru,softomania.net,vip-mods.ru,warezok.net,windows-driver.com,windows-driver.net,windows-program.com##+js(nano-setInterval-booster, timer)
 autoinfo24.ru,dp73.spb.ru,dropmefiles.com.ua,dropmefiles.net,gtavicecity.ru,pes-files.ru##+js(nano-setTimeout-booster)
 tv-kanali.online##+js(nano-setTimeout-booster, , 30000, 0.0001)
+soyztreid.website##+js(nano-setTimeout-booster, document.getElementById, 1777)
 freetp.org,freetp.ru,online-fix.me##+js(nano-setTimeout-booster, timer)
 4pda.to##+js(nano-setTimeout-booster, zat_tick)
 volley.ru##+js(no-fetch-if, /buzzoola\.com|plrjs\.org/)
@@ -28169,6 +28174,7 @@ footboom.com,footboom.kz##.b-article-content > h2:has-text(букмекер)
 lostfilm.download,lostfilm.life,lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##.body > .body:style(user-select: text !important; -moz-user-select: text !important; -webkit-user-select: text !important)
 online-fix.me##.content > .errors
 smotrim.ru##.dialog-wrapper
+e1.ru##.global-wrapper:remove-class(_branding)
 reshu.by,reshuent.kz,reshuolymp.ru,sdamgia.ru##.googlead.pub_300x250.pub_300x250m.pub_728x90.text-ad.textAd.text_ad.text_ads.text-ads.text-ad-links:style(display: block !important)
 rbc.ru##.js-index-doscroll audio[autoplay]:remove()
 lenta.ru##.js-scroll-to-site-container:remove()

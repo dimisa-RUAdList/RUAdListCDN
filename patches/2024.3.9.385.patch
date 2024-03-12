@@ -1,8 +1,8 @@
-diff name:ruadlist lines:192 checksum:50c8c67578
+diff name:ruadlist lines:200 checksum:ef525bf543
 d4 2
 a5 2
-! Last modified: Tue, 12 Mar 2024 09:24:26 +0000
-! Diff-Path: ../patches/2024.3.12.564.patch#ruadlist
+! Last modified: Tue, 12 Mar 2024 14:20:11 +0000
+! Diff-Path: ../patches/2024.3.12.860.patch#ruadlist
 a9 1
 .vnadsrv.com^
 a8512 1
@@ -28,13 +28,20 @@ beta.newsru.co.il##div[class^="HP_"]
 d20854 1
 a20937 1
 beta.newsru.co.il##div[id^="section_"]
+a21098 1
+lumpics.ru##div[style^="height:120px;display:block"]
 d21368 1
 a21368 1
 audiotag.info,computer76.ru,enovosty.com,epravda.com.ua,eurointegration.com.ua,finget.ru,fraza.com,inforesist.org,ostro.org,real-vin.com,soyztreid.website,stravy.net,videoredaktor.ru,volyninfo.com##ins
+a21735 1
+||positiverecords.ru^$csp=script-src
 d21749 2
 a21750 2
 ||pikabu.ru/ajax/?b*key=$xmlhttprequest,domain=pikabu.ru
 ||pikabu.ru/ajax/?ccmrkey=$xmlhttprequest,domain=pikabu.ru
+d21762 1
+a21762 1
+dracon-zet.ru,fonmod.com,positiverecords.ru,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 a22358 1
 ##[data-ns-portal] div[class^="advLabel"]
 d22361 1
@@ -43,18 +50,13 @@ a22361 1
 d25587 1
 a25587 1
 @@/(clickunder|footerad|layerad|lazyad|leaderad|leftad|linkad|pop_ad|prerollad|printad|pubads|under)/$script,~third-party,domain=game4you.top|games-pc.top|innal.top|naylo.top|rustorka.com|rustorka.net|rustorka.top|rustorkacom.lib
-d25784 1
-a25784 1
-kakoysegodnyaprazdnik.ru,mmo13.ru,no-steamserv.ru,positiverecords.ru,vesti.ru#@#.adv
-d25786 1
-a25786 1
-kisameev.ru,myseria.pro,openssource.biz,positiverecords.ru,zazloo.ru#@#.reklama
 d25796 1
 a27084 2
 portalvirtualreality.ru##.foundation-wrapper:style(padding-top: 0 !important)
 ! ---
 d27199 4
-a27202 1
+a27202 2
+e1.ru##.global-wrapper._branding:style(padding-top: 0 !important)
 e1.ru##.page-type-article.branding:style(margin-top: 0 !important)
 d27435 1
 a27435 1
@@ -67,6 +69,8 @@ cloud.mail.ru##div[class^="Folder__worm"]
 d27766 1
 a27766 1
 cloud.mail.ru##div[class^="Public__folderContent"]:style(padding-right: 0 !important)
+a27804 1
+positiverecords.ru##+js(abort-current-inline-script, $, window.location.href)
 d27832 1
 a27832 1
 positiverecords.ru##+js(abort-current-inline-script, document.querySelector, className)
@@ -74,6 +78,8 @@ d27856 1
 a27976 1
 7days.ru,cdn.viqeo.tv,kinonews.ru,kp.kg,kp.kz,kp.md,kp.ru,mk.ru,ohotniki.ru,portalvirtualreality.ru,radiokp.ru,sportkp.ru,wday.ru,woman.ru##+js(addEventListener-defuser, visibilitychange, captureContext)
 d27982 1
+a28016 1
+soyztreid.website##+js(nano-setTimeout-booster, document.getElementById, 1777)
 d28072 1
 a28072 1
 game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /dimisa|tick/)
@@ -83,6 +89,8 @@ a28091 1
 d28104 1
 a28104 1
 kinonews.ru,kp.kg,kp.kz,kp.md,kp.ru,mk.ru,ohotniki.ru,portalvirtualreality.ru,radiokp.ru,sportkp.ru,wday.ru,woman.ru##+js(set-constant, Object.prototype.changeVisible, noopFunc)
+a28168 1
+e1.ru##.global-wrapper:remove-class(_branding)
 a28178 1
 e1.ru##.page-type-article:remove-class(branding)
 a28207 1

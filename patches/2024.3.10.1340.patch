@@ -1,8 +1,8 @@
-diff name:ruadlist lines:67 checksum:50c8c67578
+diff name:ruadlist lines:75 checksum:ef525bf543
 d4 2
 a5 2
-! Last modified: Tue, 12 Mar 2024 09:24:26 +0000
-! Diff-Path: ../patches/2024.3.12.564.patch#ruadlist
+! Last modified: Tue, 12 Mar 2024 14:20:11 +0000
+! Diff-Path: ../patches/2024.3.12.860.patch#ruadlist
 a9 1
 .vnadsrv.com^
 a8512 1
@@ -18,33 +18,37 @@ d19891 1
 a19891 1
 kinoafisha.info,kinonews.ru##advertronic-slot
 d20857 1
+a21102 1
+lumpics.ru##div[style^="height:120px;display:block"]
+a21739 1
+||positiverecords.ru^$csp=script-src
 d21753 2
 a21754 2
 ||pikabu.ru/ajax/?b*key=$xmlhttprequest,domain=pikabu.ru
 ||pikabu.ru/ajax/?ccmrkey=$xmlhttprequest,domain=pikabu.ru
+d21766 1
+a21766 1
+dracon-zet.ru,fonmod.com,positiverecords.ru,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 a22362 1
 ##[data-ns-portal] div[class^="advLabel"]
 d22365 1
 a22365 1
 72.ru,e1.ru,ngs.ru##[data-test="header-adv-logo"]
-d25788 1
-a25788 1
-kakoysegodnyaprazdnik.ru,mmo13.ru,no-steamserv.ru,positiverecords.ru,vesti.ru#@#.adv
-d25790 1
-a25790 1
-kisameev.ru,myseria.pro,openssource.biz,positiverecords.ru,zazloo.ru#@#.reklama
 d25800 1
 a27088 2
 portalvirtualreality.ru##.foundation-wrapper:style(padding-top: 0 !important)
 ! ---
 d27203 4
-a27206 1
+a27206 2
+e1.ru##.global-wrapper._branding:style(padding-top: 0 !important)
 e1.ru##.page-type-article.branding:style(margin-top: 0 !important)
 d27439 1
 a27439 1
 ! VIQEO, обще стили для плеера
 a27440 1
 cdn.viqeo.tv##[data-video_status="paused"] .buttonContainer[data-name="play"][style*="left: 10px;"]:style(opacity: unset !important)
+a27805 1
+positiverecords.ru##+js(abort-current-inline-script, $, window.location.href)
 d27833 1
 a27833 1
 positiverecords.ru##+js(abort-current-inline-script, document.querySelector, className)
@@ -52,12 +56,16 @@ d27857 1
 a27977 1
 7days.ru,cdn.viqeo.tv,kinonews.ru,kp.kg,kp.kz,kp.md,kp.ru,mk.ru,ohotniki.ru,portalvirtualreality.ru,radiokp.ru,sportkp.ru,wday.ru,woman.ru##+js(addEventListener-defuser, visibilitychange, captureContext)
 d27983 1
+a28017 1
+soyztreid.website##+js(nano-setTimeout-booster, document.getElementById, 1777)
 d28078 1
 a28092 1
 116.ru,14.ru,161.ru,164.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,62.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,proizhevsk.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,www.fontanka.ru##+js(set-constant, Object.prototype._requestIframeData, noopFunc)
 d28105 1
 a28105 1
 kinonews.ru,kp.kg,kp.kz,kp.md,kp.ru,mk.ru,ohotniki.ru,portalvirtualreality.ru,radiokp.ru,sportkp.ru,wday.ru,woman.ru##+js(set-constant, Object.prototype.changeVisible, noopFunc)
+a28169 1
+e1.ru##.global-wrapper:remove-class(_branding)
 a28179 1
 e1.ru##.page-type-article:remove-class(branding)
 a28208 1
