@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 14 Mar 2024 16:24:47 +0000
-! Diff-Path: ../patches/2024.3.14.984.patch#ruadlist
+! Last modified: Thu, 14 Mar 2024 21:17:20 +0000
+! Diff-Path: ../patches/2024.3.14.1277.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -15526,6 +15526,8 @@ avtovokzaly.ru##.bla-bla-car
 forum.saransk.ru##.blabel
 energyfm.ru##.black-footer
 myfreeproject.com#?#.blblock > .pheading:-abp-has(> h3 > span:-abp-contains(/реклама/i))
+3mod.ru##.bldownload > b
+3mod.ru##.bldownload-reklama
 gorvesti.ru##.blnk
 live-sports101.org##.bloc0
 footballhd.ru#?#.bloc1:-abp-has(div[id^="bn_"])
@@ -28020,7 +28022,7 @@ bitshare.link##+js(nano-setInterval-booster, closeWait, 1800)
 kinokong.pro,uakino.club##+js(nano-setInterval-booster, countdown)
 vgtimes.ru##+js(nano-setInterval-booster, disabled)
 startgamer.ru##+js(nano-setInterval-booster, js-game-loader-block, 1000, 0.0001)
-iblitzmods.ru##+js(nano-setInterval-booster, ks_counter)
+3mod.ru,iblitzmods.ru##+js(nano-setInterval-booster, ks_counter)
 wowskill.ru##+js(nano-setInterval-booster, p)
 diplomsrazu.ru,igrozoom.ru,ru-minecraft.ru,softomania.net,vip-mods.ru,warezok.net,windows-driver.com,windows-driver.net,windows-program.com##+js(nano-setInterval-booster, timer)
 autoinfo24.ru,dp73.spb.ru,dropmefiles.com.ua,dropmefiles.net,gtavicecity.ru,pes-files.ru##+js(nano-setTimeout-booster)
