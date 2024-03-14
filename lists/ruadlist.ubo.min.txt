@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 13 Mar 2024 20:17:59 +0000
-! Diff-Path: ../patches/2024.3.13.1217.patch#ruadlist
+! Last modified: Thu, 14 Mar 2024 01:18:15 +0000
+! Diff-Path: ../patches/2024.3.14.78.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -25907,11 +25907,11 @@ au-ok.com##p[style="border:3px solid #C1FF0A;background-color:#d5d5d1;padding:10
 ||moi-detsad.ru/wp-content/cache/autoptimize/js/autoptimize_*.js
 ||pcnews.ru/js/blockadblock.js
 ||ritsatv.ru^*adblock$image
-||root-server.ru/wp-content/plugins/*/js/custom.js
 ||rybolov.ee/forum/Themes/RealPopup/
 ||starserial.ru/img/adblock.png
 ||storage.yandexcloud.net/sravni-affiliates-public/adblock/adblock_checker.js
 ||texnic.ru/jq/san.js
+||under-prog.ru/wp-content/plugins/eazy-ad-unblocker/
 ||webwintop.ru/wp-content/plugins/$script
 ||xcom-shop.ru/local/templates/.default/js/local/check-block-apps.min.js
 ||yagramotniy.ru/templates/edv/js/_extra/
@@ -27279,7 +27279,6 @@ sports.ru###branding-layout:not(#id):style(padding-top: 0 !important)
 sports.ru###branding-layout:style(pointer-events: none !important)
 sports.ru###ya-antiadblock-notification-container
 sports.ru##.columns-layout__right > div > div[id][class]:style(min-height: 0 !important)
-sports.ru##.page-layout:style(margin-top: 0 !important)
 sports.ru##.x5-popup-overlay
 sports.ru##:not(.nba-global-nav-wrapper) + #branding-layout:not(#id):style(margin-top: 96px !important)
 sports.ru##[data-content-name="banner-static"]:style(position: fixed !important; left: -10000px !important; transform: scale(0) !important; display: none !important)
@@ -27532,7 +27531,7 @@ dzen.ru##aside[id^="article_"][class*="_rgiht"] > div[class]
 dzen.ru##div[aria-label="Карточка рекомендованного видео"] ~ [aria-label]:not([aria-label="Карточка рекомендованного видео"])
 dzen.ru##div[class*="article__"] > .undefined ~ div[class*="midll"] > div[id][class]
 dzen.ru##div[class*="idjet__container"] > div[class*="idjet__"] ~ div:style(display: none !important)
-dzen.ru##div[class^="feed__"] > article > div:first-child ~ div
+dzen.ru##div[class^="feed__"] > article:not([aria-label]) > div:first-child ~ div
 ! ---
 ! игры
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.app__wrapper div[style^="width: calc(100% "]:style(width: unset !important)
@@ -27997,7 +27996,7 @@ pikabu.ru##+js(json-prune, isVideoAutoplayMode swUrl)
 igromania.ru,kanobu.ru##+js(json-prune, results.fixed)
 znanija.com##+js(json-prune, tiers.TIER_ANY)
 ashdi.vip,tortuga.wtf##+js(json-prune, vast)
-595.ucoz.net,5mod-file.ru,file-mods.ru,freesoft.ru,infourok.ru,mixmuz.ru,myshared.ru,myzcloud.me,n-torrents.org,sims3pack.ru,wallegend.net##+js(nano-setInterval-booster)
+595.ucoz.net,5wip-file.ru,file-mods.ru,freesoft.ru,infourok.ru,mixmuz.ru,myshared.ru,myzcloud.me,n-torrents.org,sims3pack.ru,wallegend.net##+js(nano-setInterval-booster)
 studizba.com,surl.li##+js(nano-setInterval-booster, #timer)
 muzlan.top##+js(nano-setInterval-booster, .numcard)
 mp3crown.cc##+js(nano-setInterval-booster, .time)

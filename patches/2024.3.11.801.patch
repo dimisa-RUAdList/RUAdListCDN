@@ -1,8 +1,8 @@
-diff name:ruadlist lines:208 checksum:11a9280a9d
+diff name:ruadlist lines:218 checksum:ba1dda7a1c
 d4 2
 a5 2
-! Last modified: Wed, 13 Mar 2024 20:17:59 +0000
-! Diff-Path: ../patches/2024.3.13.1217.patch#ruadlist
+! Last modified: Thu, 14 Mar 2024 01:18:15 +0000
+! Diff-Path: ../patches/2024.3.14.78.patch#ruadlist
 a9 1
 .vnadsrv.com^
 a253 1
@@ -146,6 +146,9 @@ d25800 1
 d25860 1
 a25860 1
 alarfilm.ru##.websockets
+d25918 1
+a25922 1
+||under-prog.ru/wp-content/plugins/eazy-ad-unblocker/
 d26812 1
 a26812 1
 alarfilm.ru,hlamer.ru##body:style(background-color: #596c84 !important)
@@ -159,11 +162,15 @@ d27203 4
 a27206 2
 e1.ru##.global-wrapper._branding:style(padding-top: 0 !important)
 e1.ru##.page-type-article.branding:style(margin-top: 0 !important)
+d27288 1
 d27439 1
 a27439 1
 ! VIQEO, обще стили для плеера
 a27440 1
 cdn.viqeo.tv##[data-video_status="paused"] .buttonContainer[data-name="play"][style*="left: 10px;"]:style(opacity: unset !important)
+d27540 1
+a27540 1
+dzen.ru##div[class^="feed__"] > article:not([aria-label]) > div:first-child ~ div
 a27805 1
 positiverecords.ru##+js(abort-current-inline-script, $, window.location.href)
 d27809 1
@@ -184,6 +191,9 @@ regnum.news,regnum.ru##+js(addEventListener-defuser, click, , elements, a[href*=
 a27977 1
 7days.ru,cdn.viqeo.tv,kinonews.ru,kp.kg,kp.kz,kp.md,kp.ru,mk.ru,ohotniki.ru,portalvirtualreality.ru,radiokp.ru,sportkp.ru,wday.ru,woman.ru##+js(addEventListener-defuser, visibilitychange, captureContext)
 d27983 1
+d28004 1
+a28004 1
+595.ucoz.net,5wip-file.ru,file-mods.ru,freesoft.ru,infourok.ru,mixmuz.ru,myshared.ru,myzcloud.me,n-torrents.org,sims3pack.ru,wallegend.net##+js(nano-setInterval-booster)
 a28017 1
 soyztreid.website##+js(nano-setTimeout-booster, document.getElementById, 1777)
 d28078 1
