@@ -1,8 +1,8 @@
-diff name:ruadlist lines:248 checksum:d380cee7f1
+diff name:ruadlist lines:265 checksum:3607bc6217
 d4 2
 a5 2
-! Last modified: Thu, 14 Mar 2024 11:17:38 +0000
-! Diff-Path: ../patches/2024.3.14.677.patch#ruadlist
+! Last modified: Thu, 14 Mar 2024 16:24:47 +0000
+! Diff-Path: ../patches/2024.3.14.984.patch#ruadlist
 a9 1
 .vnadsrv.com^
 a253 1
@@ -11,6 +11,8 @@ d4354 1
 d8109 1
 a8109 1
 ||ru/banners/$domain=~animespirit.ru|~cheese-cake.ru|~citilink.ru|~departamentar.ucoz.ru|~e96.ru|~irad.ru|~killot.ru|~mrtexpert.ru|~onlime.ru|~rosbank.ru|~toptracker.ru|~webnames.ru|~wildberries.ru|~zalivalka.ru
+a8350 1
+##[data-membrana-container]
 a8414 1
 ##a[href*="//dzen.ru"][href*="favid"]
 a8512 1
@@ -32,12 +34,17 @@ a10736 1
 d11126 1
 a11477 1
 ||getsitectrl.com^$domain=comss.one|comss.ru
+a12862 1
+||speedtest.org.ua/pirate
 a13073 1
 ||tproger.ru/_nuxt/ListokTop.
 d13395 1
 d13443 1
 a13443 1
 ||youtube.com/embed/$domain=4put.ru|androeed.ru|anime-365.ru|fbsearch.ru|geomap.com.ua|hdrabbit.ru|kinotochka.co|kinotochka.me|lostpix.com|multitran.com|newstudio-online.tv|sbornik-music.ru|sinonim.org|smotret-anime.online|subject.com.ua|ukrlit.net|zarlit.com
+d13526 1
+a13526 1
+balticlivecam.com,speedtest.org.ua###ad
 d13594 1
 d13801 1
 a13801 1
@@ -70,6 +77,7 @@ d15456 1
 d15703 1
 a15703 1
 agroinfo.kz,flicksbar.fun,flicksbar.info,livejournal.com##.brand
+d15784 1
 d15787 1
 a15787 1
 dsnews.ua,focus.ua##.c-r
@@ -81,6 +89,8 @@ a16815 1
 rifey.ru##.m-padding
 a16910 1
 7days.ru#?#.material-7days__paragraf-info:-abp-has(> #RutubePlayerNews)
+a17016 1
+multitest.ua##.mt_adv_block
 a17151 1
 focus.ua##.o-adds
 d17172 1
@@ -90,11 +100,15 @@ regnum.news,regnum.ru##.partners-container
 a17431 1
 regnum.news,regnum.ru##.promo-card-small
 d17532 1
+a17555 1
+3mod.ru##.reklamafull
 d17562 1
 d17834 1
 d18666 2
 a18721 1
 igromania.ru,kanobu.ru##[class*="HeadingPage_most_discussed"]
+a18885 1
+shuba.life##[data-product]
 d18990 1
 a18990 1
 101.ru,19rus.info,2000.ua,5-tv.ru,56orb.ru,62info.ru,7info.ru,afanasy.biz,agitpro.su,allboxing.ru,anekdot.ru,argumenti.ru,baltnews.ee,belive.ru,bigpicture.ru,bombardir.ru,chehov-vid.ru,daily-inform.ru,dni.ru,dnpmag.com,do-slez.com,eadaily.com,eg.ru,expert.ru,ferra.ru,gazeta-tula.ru,glav.su,glavnoe24.ru,gorobzor.ru,gorvesti.ru,govoritmoskva.ru,gubdaily.ru,hightech.plus,iarex.ru,inforeactor.ru,iz.ru,kirov-portal.ru,kriminal.net.ua,life.ru,livelib.ru,m24.ru,melodrama1.com,mgorod.kz,mir24.tv,mk.ru,myhistori.ru,nashgorod.ru,nation-news.ru,nevnov.ru,newinform.com,news-front.info,news.ru,nn.ru,ntv.ru,osnmedia.ru,penzainform.ru,penzavzglyad.ru,pikinform.ru,pnp.ru,polit.info,politexpert.net,politonline.ru,pora.ru,pravda.ru,putin-news.ru,radidomapro.ru,radioromantika.ru,ratel.kz,ren.tv,ria56.ru,riafan.ru,rueconomics.ru,rusplt.ru,russian.rt.com,rusvesna.su,sevkavportal.ru,sharknews.ru,sm.news,sminews.ru,sobesednik.ru,sport-express.ru,steaklovers.menu,sun-news.ru,topwar.ru,trendymen.ru,tsargrad.tv,tsn24.ru,tvc.ru,tvernews.ru,ua.today,uralpress.ru,usa.one,vazhno.ru,vedomosti.ru,versia.ru,veseloeradio.ru,vesti-yamal.ru,vesti.ru,vesti.uz,vestivrn.ru,vokrug.tv,vokrugsveta.ru,xn--b1ats.xn--80asehdb,zakon.kz,zr.ru##[id^="unit_"]
@@ -144,13 +158,16 @@ d20963 1
 a21102 1
 lumpics.ru##div[style^="height:120px;display:block"]
 d21359 1
+d21486 1
+a21486 1
+shuba.life##section.c-post__full > [style="overflow: hidden;"]
 a21489 1
 agroxxi.ru##section[class^="my-"]
 a21739 1
 ||positiverecords.ru^$csp=script-src
 d21751 4
 a21754 1
-||pikabu.ru/ajax/?$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/ajax?$xmlhttprequest,domain=pikabu.ru
 d21766 1
 a21766 1
 dracon-zet.ru,fonmod.com,positiverecords.ru,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
