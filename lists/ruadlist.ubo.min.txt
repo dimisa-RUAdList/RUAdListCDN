@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 14 Mar 2024 06:24:36 +0000
-! Diff-Path: ../patches/2024.3.14.384.patch#ruadlist
+! Last modified: Thu, 14 Mar 2024 11:17:38 +0000
+! Diff-Path: ../patches/2024.3.14.677.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -8413,6 +8413,7 @@ by,~mail.ru,ru,~sportmail.ru,ua##.banner_box
 ##a[href*="//clickdome.online/"]
 ##a[href*="//dagamah.com/"]
 ##a[href*="//do-rod.com/"]
+##a[href*="//dzen.ru"][href*="favid"]
 ##a[href*="//ext-load.net"]
 ##a[href*="//febrare.ru/"]
 ##a[href*="//fofuvipibo.com/"]
@@ -10736,6 +10737,7 @@ lada.kz/uploads/banners/
 ||agronomy.com.ua/images/ban.
 ||agroreview.com/wp-content/uploads/caos/*.js
 ||agroreview.com^*1920x1080
+||agroxxi.ru/ajax/ajax_adagro.
 ||agsat.com.ua/beuty/
 ||aida64.ru^*/amigo$image
 ||aii.su/banners/
@@ -13073,6 +13075,7 @@ lada.kz/uploads/banners/
 ||torrentporno.ru/jrt-$script
 ||tort.fm/banners/
 ||tourister.ru/query.php*=adver-$xmlhttprequest
+||tproger.ru/_nuxt/ListokTop.
 ||tr.anidub.*/templates/Anidub/images/header_bg.
 ||track24.ru/img/bnrs
 ||trackitonline.*/pics/$object
@@ -14898,6 +14901,7 @@ allinfo.kz,leroymerlin-jeb.ru##.adb
 beon.ru##.adbg
 433175.ru,allforpeople.net,govp.info,myshows.me,naurfo.ru##.adblock
 jaomix.ru##.adblock-service
+agroxxi.ru##.adchoice
 agri-gator.com.ua,versii.if.ua##.adcontainer
 factroom.ru##.adcredit
 tatfish.com##.add
@@ -20259,6 +20263,7 @@ poltavawave.com.ua##div[class*="_place__"]
 www.eg.ru##div[class*="_promocodes "]
 rg.ru##div[class*="adBox"]
 rg.ru##div[class*="adFox"]
+agroxxi.ru##div[class*="adagro"]
 yummy-anime.ru,yummyani.me##div[class*="adfinity_block"]
 mayaksbor.ru,rg.ru##div[class*="adfox"]
 svpressa.ru##div[class*="adfox_banner"]
@@ -20473,6 +20478,7 @@ kingisepp-today.ru,xn----etbbecbrbp5ahkja1ae7v.xn--p1ai#?#div[class^="boxFormWra
 kerch.fm##div[class^="bp_"][class*="-block"]
 medicina.ua##div[class^="brand_"]
 gorod.cn.ua##div[class^="branding_"]
+agroxxi.ru##div[class^="brending"]
 sports.kz##div[class^="brndng"]
 24auto.ru##div[class^="brrr_"]
 buzulukday.ru,nsday.ru,orenday.ru,perevolockday.ru,saltday.ru,sorochinskday.ru##div[class^="bsys_"]
@@ -20627,6 +20633,7 @@ dlltop.ru##div[class^="tm-article-banner"]
 odeve.ru##div[class^="toneBlock"]
 flicksbar.fun,flicksbar.info##div[class^="topAd"]
 life-reactor.com##div[class^="top_baner"]
+tproger.ru##div[class^="tp-"][class*="listok"]
 formulalubvi.com##div[class^="traffic-video"]
 rbook.me##div[class^="trsm"]
 tourister.ru##div[class^="trstr_adv_"]
@@ -20653,7 +20660,7 @@ yp.ru##div[class^="yp-tgb-"]
 russianporno911.ru##div[class^="yved"]
 news.pn##div[class^="za-columns-"]
 vk.com,vk.ru##div[data-ad-view]
-tproger.ru,vk.com,vk.ru##div[data-ad]
+vk.com,vk.ru##div[data-ad]
 versii.if.ua##div[data-adid]
 ~m.vk.com,vk.com##div[data-ads]
 tonkosti.ru##div[data-antares="true"]
@@ -20802,6 +20809,7 @@ agro-ukraine.com##div[id^="b_n_r_"]
 alpclubmei.mybb.ru,colorforum.ru,donetskfishing.2bb.ru,fkme.nc-21.ru,parfumclub.9bb.ru,webtalk.ru##div[id^="b_script"]
 sport.ua##div[id^="b_sport_"]
 o-polze.com##div[id^="bablo_"]
+israelinfo.co.il##div[id^="ban"]
 probusiness.by,tut.by##div[id^="banObject"]
 ua-electro.com##div[id^="banadd"]
 radioroks.ua##div[id^="baner"]
@@ -20953,7 +20961,6 @@ avan-ti.net,porevo.site,prohondroz.ru,serialrussian.ru,spinazdorov.ru##div[id^="
 kingisepp-today.ru,xn----etbbecbrbp5ahkja1ae7v.xn--p1ai##div[id^="top-master"]
 ura.news##div[id^="top_banner"]
 smartphone.ua##div[id^="topbanner"]
-tproger.ru##div[id^="tproger_ads_widget-"]
 changeworks.ru##div[id^="ttiz_"]
 sdelala-sama.ru,webdiana.ru##div[id^="turp_"]
 nnovosti.info##div[id^="tvfooter"]
@@ -21480,6 +21487,7 @@ shuba.life##section.c-post__full .overflow-hidden
 internet-technologies.ru##section[class*="related"]
 igromania.ru#?#section[class^="MaterialsManufacturerPage_infiniteWrap"] > div[class^="InfiniteScrollWrap_content"] > [class^="MaterialItemPage_isFirst"] ~ [class^="MaterialItemPage_materialSection"]:-abp-has(> .knb-grid-container > [data-io-article-url] [class^="TextContent_text"] > p:-abp-contains(/^Реклама:/))
 kanobu.ru#?#section[class^="MaterialsManufacturerPage_infiniteWrap"] > div[class^="InfiniteScrollWrap_content"] > [class^="MaterialItemPage_materialSection"]:-abp-has(> .knb-grid-container > [data-io-article-url] a[href="/tags/partnyorskij-material/"])
+agroxxi.ru##section[class^="my-"]
 vikka.ua##section[id^="ctup_ads-"]
 gamegpu.com##section[id^="tm-top-"]
 point.md##span > a[href*="/novosti/business/"]
@@ -21846,6 +21854,7 @@ $script,~third-party,domain=defileb.com|fplay.online|hovels.info|likelol.online|
 ||hide.mn^$third-party,popup
 ||hidemn.net^$third-party,popup
 ||hidemn.org^$third-party,popup
+||hidemx.name^$third-party,popup
 ||hidemy.name^$third-party,popup
 ||proxyelite.info^$third-party,popup
 ! Avito
@@ -22916,7 +22925,7 @@ tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.uz##script[nonce] + script[nonc
 ! Сайты Блокнота
 .php|$third-party,script,domain=bloknot-astrakhan.ru|bloknot-gelendzhik.ru|bloknot-kamyshin.ru|bloknot-krasnodar.ru|bloknot-krymska.ru|bloknot-moldova.ru|bloknot-morozovsk.ru|bloknot-novorossiysk.ru|bloknot-rossosh.ru|bloknot-rostov.ru|bloknot-samara.ru|bloknot-shakhty.ru|bloknot-stavropol.ru|bloknot-taganrog.ru|bloknot-volgodonsk.ru|bloknot-volgograd.ru|bloknot-volzhsky.ru|bloknot-voronezh.ru|bloknot.ru|bloknotanapa.ru|bloknotlipetsk.ru|bloknotsaratov.ru|bloknotsochi.ru|bloknottambov.ru
 /bloknotadv/*$domain=bloknot-astrakhan.ru|bloknot-gelendzhik.ru|bloknot-kamyshin.ru|bloknot-krasnodar.ru|bloknot-krymska.ru|bloknot-moldova.ru|bloknot-morozovsk.ru|bloknot-novorossiysk.ru|bloknot-rossosh.ru|bloknot-rostov.ru|bloknot-samara.ru|bloknot-shakhty.ru|bloknot-stavropol.ru|bloknot-taganrog.ru|bloknot-volgodonsk.ru|bloknot-volgograd.ru|bloknot-volzhsky.ru|bloknot-voronezh.ru|bloknot.ru|bloknotanapa.ru|bloknotlipetsk.ru|bloknotsaratov.ru|bloknotsochi.ru|bloknottambov.ru
-bloknot-astrakhan.ru,bloknot-gelendzhik.ru,bloknot-kamyshin.ru,bloknot-krasnodar.ru,bloknot-krymska.ru,bloknot-moldova.ru,bloknot-morozovsk.ru,bloknot-novorossiysk.ru,bloknot-rossosh.ru,bloknot-rostov.ru,bloknot-samara.ru,bloknot-shakhty.ru,bloknot-stavropol.ru,bloknot-taganrog.ru,bloknot-volgodonsk.ru,bloknot-volgograd.ru,bloknot-volzhsky.ru,bloknot-voronezh.ru,bloknot.ru,bloknotanapa.ru,bloknotlipetsk.ru,bloknotsaratov.ru,bloknotsochi.ru,bloknottambov.ru##a[href*="yandex."][href*="news"][href*="favid"]
+bloknot-astrakhan.ru,bloknot-gelendzhik.ru,bloknot-kamyshin.ru,bloknot-krasnodar.ru,bloknot-krymska.ru,bloknot-moldova.ru,bloknot-morozovsk.ru,bloknot-novorossiysk.ru,bloknot-rossosh.ru,bloknot-rostov.ru,bloknot-samara.ru,bloknot-shakhty.ru,bloknot-stavropol.ru,bloknot-taganrog.ru,bloknot-volgodonsk.ru,bloknot-volgograd.ru,bloknot-volzhsky.ru,bloknot-voronezh.ru,bloknot.ru,bloknotanapa.ru,bloknotlipetsk.ru,bloknotsaratov.ru,bloknotsochi.ru,bloknottambov.ru##a[href*="//zen.yandex.ru/"]
 bloknot-astrakhan.ru,bloknot-gelendzhik.ru,bloknot-kamyshin.ru,bloknot-krasnodar.ru,bloknot-krymska.ru,bloknot-moldova.ru,bloknot-morozovsk.ru,bloknot-novorossiysk.ru,bloknot-rossosh.ru,bloknot-rostov.ru,bloknot-samara.ru,bloknot-shakhty.ru,bloknot-stavropol.ru,bloknot-taganrog.ru,bloknot-volgodonsk.ru,bloknot-volgograd.ru,bloknot-volzhsky.ru,bloknot-voronezh.ru,bloknot.ru,bloknotanapa.ru,bloknotlipetsk.ru,bloknotsaratov.ru,bloknotsochi.ru,bloknottambov.ru##div[class*="banner"]
 ! Сайты Лит-инфо
 /js/elker_$domain=bunin-lit.ru|chehov-lit.ru|cult-lib.ru|cult-news.ru|dostoevskiy-lit.ru|esenin-lit.ru|gogol-lit.ru|kuprin-lit.ru|lermontov-lit.ru|lit-info.ru|nabokov-lit.ru|nekrasov-lit.ru|niv.ru|paustovskiy-lit.ru|pushkin-lit.ru|referat-lib.ru|svr-lit.ru|tolstoy-lit.ru|turgenev-lit.ru|vysotskiy-lit.ru
@@ -26008,6 +26017,8 @@ agronom.com.ua,tt-cup.com##body:style(cursor: auto !important)
 agronom.com.ua,tt-cup.com##body:style(pointer-events: none !important)
 ! ---
 agroreview.com##.main:style(cursor: auto !important)
+! ---
+agroxxi.ru##.sidebarfix:style(margin-top: 0 !important)
 ! ---
 aif.ru###container:not(#id):style(margin-top: 0 !important)
 ! ---

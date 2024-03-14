@@ -1,8 +1,8 @@
-diff name:ruadlist lines:223 checksum:8e4c7cde0c
+diff name:ruadlist lines:253 checksum:d380cee7f1
 d4 2
 a5 2
-! Last modified: Thu, 14 Mar 2024 06:24:36 +0000
-! Diff-Path: ../patches/2024.3.14.384.patch#ruadlist
+! Last modified: Thu, 14 Mar 2024 11:17:38 +0000
+! Diff-Path: ../patches/2024.3.14.677.patch#ruadlist
 a9 1
 .vnadsrv.com^
 a253 1
@@ -11,6 +11,8 @@ d4354 1
 d8109 1
 a8109 1
 ||ru/banners/$domain=~animespirit.ru|~cheese-cake.ru|~citilink.ru|~departamentar.ucoz.ru|~e96.ru|~irad.ru|~killot.ru|~mrtexpert.ru|~onlime.ru|~rosbank.ru|~toptracker.ru|~webnames.ru|~wildberries.ru|~zalivalka.ru
+a8414 1
+##a[href*="//dzen.ru"][href*="favid"]
 a8512 1
 ##a[href*="://bs.serving-sys.ru/"]
 a8694 1
@@ -28,12 +30,16 @@ d10533 1
 a10533 1
 /stargate*.$image,popup,xmlhttprequest,domain=alarfilm.ru|hlamer.ru
 d10734 1
+a10736 1
+||agroxxi.ru/ajax/ajax_adagro.
 d11126 1
 a11477 1
 ||getsitectrl.com^$domain=comss.one|comss.ru
 a12192 2
 ||newsru.co.il/scripts/ad_
 ||newsru.co.il/scripts/main_ad.
+a13071 1
+||tproger.ru/_nuxt/ListokTop.
 d13393 1
 d13441 1
 a13441 1
@@ -51,6 +57,8 @@ d14704 1
 a14704 1
 alarfilm.ru,hlamer.ru###video-container .overlay_video
 d14773 1
+a14900 1
+agroxxi.ru##.adchoice
 d14922 1
 a14922 1
 1927.kiev.ua,1plus1.video,alarfilm.ru,bigpicture.ru,chatadelic.net,coderoad.ru,day.az,euromd.com.ua,football-fun.ru,fotokto.ru,gagadget.com,gameme.eu,gotoshop.ua,gs.by,gsconto.com,hotzoom.net,icons8.ru,infoniac.ru,jooble.org,jooble.ua,kinoafisha.info,klubok.com,like-film.online,malenkiy.ru,mangalib.me,meta.ua,my-calend.ru,orl.ec,podrobnosti.ua,ranobelib.me,savevideo.me,scooter-remont.com,seasonvar24.com,sexytales.org,soccer.ru,sports.kz,takprosto.cc,timeout.ru,tvsezon.com,ura.news,world-knigi.ru,yaoilib.me##.ads
@@ -111,13 +119,24 @@ a19889 1
 kinoafisha.info,kinonews.ru##advertronic-slot
 a20228 1
 regnum.news,regnum.ru##div[class$=" feed-item"]
+a20264 1
+agroxxi.ru##div[class*="adagro"]
 d20392 1
 a20392 1
 newsru.co.il##div[class^="HP_"]
+a20478 1
+agroxxi.ru##div[class^="brending"]
 d20553 1
+a20633 1
+tproger.ru##div[class^="tp-"][class*="listok"]
+d20660 1
+a20660 1
+vk.com,vk.ru##div[data-ad]
 d20775 1
 a20775 1
 primgazeta.ru,zwezda.net##div[id^="Zz"]
+a20808 1
+israelinfo.co.il##div[id^="ban"]
 a20849 1
 ku66.ru##div[id^="comp_"]
 d20854 1
@@ -126,9 +145,12 @@ newsru.co.il##div[id^="section_"]
 d20955 1
 a20955 1
 2mb.ru,alcogolizm.com,anginamed.ru,askort-studio.ru,avtoelektrik-info.ru,bezparazita.ru,calculat.ru,cardiologiya.com,dermatitanet.ru,domovityi.ru,elektrik-a.su,etochay.ru,every-holiday.ru,fightnews.ru,fishedem.ru,gameorakul.ru,gboteh.ru,gipergidroz.net,godsvadba.ru,goodread.name,healthy2life.com,herbaldoc.ru,hozobzor.ru,hudelkin.ru,infekc.ru,kogda-budet.com,kpacotka.info,lookmedbook.ru,luxvaz.ru,m-e-f.ru,medotvet.com,megatechnostroy.ru,mensgen.ru,moikolodets.ru,moyapechen.ru,moyaspina.ru,moypodval.ru,moyskelet.ru,music-education.ru,mykozha.ru,namenu.ru,narmed24.ru,narodnaiamedicina.ru,nashirybki.ru,obrazovaka.ru,omaske.ru,otravlen.ru,papillomy.com,plateginfo.com,podvaldoma.ru,poluchi-teplo.ru,potolokspec.ru,progrib.ru,prohodimets.ru,promoipochki.ru,prorecepty.com,prosadiogorod.ru,prostatitanet.com,sad-doma.net,salat-legko.ru,samogoniche.ru,sdelala-sama.ru,silaman.ru,stomachum.ru,telecomspec.ru,timelady.ru,udermis.ru,uroki-pitaniya.ru,vash-ortoped.com,vdv-kavkaz.ru,vmirevolos.ru,webdiana.ru,womanlady.net,zavisimost03.ru,zdoroveenet.ru,zhenskij-sajt-katerina.ru##div[id^="tgroup_"]
+d20959 1
 a21098 1
 lumpics.ru##div[style^="height:120px;display:block"]
 d21355 1
+a21485 1
+agroxxi.ru##section[class^="my-"]
 a21735 1
 ||positiverecords.ru^$csp=script-src
 d21747 4
@@ -137,6 +159,8 @@ a21750 1
 d21762 1
 a21762 1
 dracon-zet.ru,fonmod.com,positiverecords.ru,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
+a21853 1
+||hidemx.name^$third-party,popup
 a22358 1
 ##[data-ns-portal] div[class^="advLabel"]
 d22361 1
@@ -144,6 +168,9 @@ a22361 1
 72.ru,e1.ru,ngs.ru##[data-test="header-adv-logo"]
 a22644 1
 sports.ru##.columns__alt-column .frame
+d22922 1
+a22922 1
+bloknot-astrakhan.ru,bloknot-gelendzhik.ru,bloknot-kamyshin.ru,bloknot-krasnodar.ru,bloknot-krymska.ru,bloknot-moldova.ru,bloknot-morozovsk.ru,bloknot-novorossiysk.ru,bloknot-rossosh.ru,bloknot-rostov.ru,bloknot-samara.ru,bloknot-shakhty.ru,bloknot-stavropol.ru,bloknot-taganrog.ru,bloknot-volgodonsk.ru,bloknot-volgograd.ru,bloknot-volzhsky.ru,bloknot-voronezh.ru,bloknot.ru,bloknotanapa.ru,bloknotlipetsk.ru,bloknotsaratov.ru,bloknotsochi.ru,bloknottambov.ru##a[href*="//zen.yandex.ru/"]
 d25589 1
 a25589 1
 @@/advert.$script,domain=adhands.ru|azeroth.su|feech.org|joinfo.ua|kopikot.ru|ksimart.com|ksimart.ml|kupidonia.ru|na-ladoni.su|pesikot.org|pwcats.info|shopotam.ru|spravkarf.ru|svidomitov.net|tsj.ru|tverigrad.ru|veedi.com|wotskill.ru
@@ -154,6 +181,9 @@ alarfilm.ru##.websockets
 d25914 1
 a25918 1
 ||under-prog.ru/wp-content/plugins/eazy-ad-unblocker/
+a26015 2
+agroxxi.ru##.sidebarfix:style(margin-top: 0 !important)
+! ---
 d26808 1
 a26808 1
 alarfilm.ru,hlamer.ru##body:style(background-color: #596c84 !important)
