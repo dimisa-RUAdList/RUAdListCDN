@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 15 Mar 2024 12:33:40 +0000
-! Diff-Path: ../patches/2024.3.15.753.patch#ruadlist
+! Last modified: Fri, 15 Mar 2024 17:20:05 +0000
+! Diff-Path: ../patches/2024.3.15.1040.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -8213,7 +8213,6 @@ _tizers.
 ###onesignal-bell-container
 ###potok_flyroll_div
 ###radeant
-~baskino.me###tv_player a[href*="baskino."][target="_blank"]
 ###vPreloader
 ###vid_vpaut_div
 ~vk.com,~vk.ru###vkMsg
@@ -14780,7 +14779,7 @@ hqq.tv##.BetterJsPopOverlay
 ndn.info##.BigBlock
 ixbt.com##.Blocksmaster
 unews.pro#?#.BodyNewsStyle:-abp-has(> div > [id^="yandex_rtb"])
-f1analytic.com##.BoxVideo.clear ~ .BoxVideo.clear
+f1analytic.com,f1ua.org.ua##.BoxVideo.clear ~ .BoxVideo.clear
 mail.google.com##.Bu.y3
 delfi.ee##.C-banner
 myshows.me##.CommentBanner
@@ -17599,7 +17598,7 @@ fion.ru##.right-column .bx-wrapper
 fion.ru##.right-column .select-content[style="margin:9px auto;"]
 russian.rt.com#?#.right-column > .aside-block:-abp-has(script)
 wkino4.net##.right-full > noindex
-f1analytic.com#?#.right-indent > .wrapper-box:-abp-has(> div > .boxTitle:-abp-contains(/реклама/i))
+f1analytic.com,f1ua.org.ua#?#.right-indent > .wrapper-box:-abp-has(> div > .boxTitle:-abp-contains(/реклама/i))
 1kr.ua##.right-inner > .right-social ~ .right-social
 anistar.org,astar.bz,online-star.org,online-stars.org##.right-panel-bottom > .favorites ~ span
 gorod48.ru#?#.right-side > .reading:-abp-has(> div > #MediaMetricsInject)
@@ -18078,7 +18077,6 @@ oneprog.ru##.sticky.first
 za4eti.ru##.stl_d3 [class^="stl_"],.stl_d3 [class^="stl_"] + br
 infox.ru#?#.stlt:-abp-contains(Реклама)
 igry-man.net##.stockgame
-baskino.su##.stop
 gdz.ru##.store-hosting
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__main > [id])
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__placeholder)
@@ -18806,7 +18804,6 @@ sovetromantica.com##[class^="sbrand--"]
 sport-express.ru##[class^="se-bookie"]
 fishki.net##[class^="side"][class*="right"] div[class*="promo"]
 neg.by##[class^="side-banner"]
-baskino.me##[class^="sitelinks"]
 1kr.ua##[class^="spec-block-"]
 sports.kz##[class^="sponsor_"]
 myzcloud.me,sims3pack.ru##[class^="st-br"] > *
@@ -20793,7 +20790,6 @@ wowhead.com##div[id^="announcement"]
 nv.ua##div[id^="async_"][id*="_spec"]
 photoshablon.ru##div[id^="av"]
 nm71.ru##div[id^="az"]
-baskino.me##div[id^="b-mtbcbar"]
 abertu.com,cartoonka.art,dc-marvel.org,goblins-online.ru,gtavicecity.ru,hdkinoteatr.com,itop-gear.ru,kinogo.eu,multmania.club,stmods.ru,the-cinema.online,uniondht.org##div[id^="b_bn_"]
 agro-ukraine.com##div[id^="b_n_r_"]
 alpclubmei.mybb.ru,colorforum.ru,donetskfishing.2bb.ru,fkme.nc-21.ru,parfumclub.9bb.ru,webtalk.ru##div[id^="b_script"]
@@ -21114,7 +21110,6 @@ inmoment.ru##div[style^="width:199px;height:299px;"]
 bookz.ru##div[style^="width:240px;height:400px"]
 m24.ru##div[style^="width:300px;height:600px"]
 liveinternet.ru##div[style^="width:970px; height:280px;"]
-baskino.su##div[title^="Реклама"]
 botanam.net,gdzputina.me##embed
 imageup.ru##fieldset[style^="display: inline; width: 45%;"]
 znak.com##figure
@@ -25937,10 +25932,10 @@ au-ok.com##p[style="border:3px solid #C1FF0A;background-color:#d5d5d1;padding:10
 ! Используется для генерации пользовательского стиля RU AdList CSS Fixes:
 ! Который можно установить отдельно в случае использования Adblock Plus и других баннерорезок.
 ! ---
-aif.ru,ain.ua,bit.ua,budport.com.ua,epravda.com.ua,ixbt.com,ko.com.ua,kv.by,livejournal.com,mc.today,newstudio.tv,oper.ru,pay-day.ru,sc2tv.ru,stopgame.ru,userstyles.org,zakarpatpost.net##body:not(#id):style(background-image: none !important)
-2pay-day.ru,4video.adult,aif.ru,ain.ua,bit.ua,budport.com.ua,epravda.com.ua,ixbt.com,ko.com.ua,kv.by,livejournal.com,mc.today,newstudio.tv,oper.ru,sc2tv.ru,stopgame.ru,userstyles.org,zakarpatpost.net##html:not(#id):style(background-image: none !important)
+aif.ru,ain.ua,bit.ua,budport.com.ua,ixbt.com,ko.com.ua,kv.by,livejournal.com,mc.today,newstudio.tv,oper.ru,pay-day.ru,sc2tv.ru,stopgame.ru,userstyles.org,zakarpatpost.net##body:not(#id):style(background-image: none !important)
+2pay-day.ru,4video.adult,aif.ru,ain.ua,bit.ua,budport.com.ua,ixbt.com,ko.com.ua,kv.by,livejournal.com,mc.today,newstudio.tv,oper.ru,sc2tv.ru,stopgame.ru,userstyles.org,zakarpatpost.net##html:not(#id):style(background-image: none !important)
 ! ---
-baskino.me,dnepr.info,dugtor.ru,filmitorrent.net,ixbt.com,jetsetter.ua,kinoafisha.ua,kinobar.vip,moskva.fm,newstudio.tv,nnmclub.to,pay-day.ru,roem.ru,trupornolabs.org,vc.ru,virusinfo.info,wikianime.tv,xxxadulttorrent.org,you-anime.ru,yummyanime.tv,zombie-film.live##body:not(#id):style(padding-top: 0 !important)
+baskino.film,dnepr.info,dugtor.ru,filmitorrent.net,ixbt.com,jetsetter.ua,kinoafisha.ua,kinobar.vip,moskva.fm,newstudio.tv,nnmclub.to,pay-day.ru,roem.ru,trupornolabs.org,vc.ru,virusinfo.info,wikianime.tv,xxxadulttorrent.org,you-anime.ru,yummyanime.tv,zombie-film.live##body:not(#id):style(padding-top: 0 !important)
 ! ---
 radioromantika.ru##.main-wrapp__content:style(margin-top: 0 !important)
 101.ru##.wrapper-branding
@@ -26365,14 +26360,10 @@ electric-house.ru##table[class^="header"] > tbody > tr > td ~ [class]
 eplus.by###cookiesAgreementNotice
 eplus.by##body:style(overflow: auto !important)
 ! ---
-epravda.com.ua##.right_column_aside > .block:style(margin-top: auto !important)
-epravda.com.ua,seasonvar.ru,uniondht.org##body:not(#id):style(padding: 0 !important)
-epravda.com.ua,seasonvar.ru,uniondht.org##html:not(#id):style(padding: 0 !important)
+seasonvar.ru,uniondht.org##body:not(#id):style(padding: 0 !important)
+seasonvar.ru,uniondht.org##html:not(#id):style(padding: 0 !important)
 ! ---
 espreso.tv###disqus_thread:style(min-width: 700px !important)
-! ---
-epravda.com.ua##body > div[align="center"]:style(width: auto !important; margin: 0 !important)
-epravda.com.ua##body:style(cursor: auto !important)
 ! ---
 eurointegration.com.ua##.header.fixed .layout:style(margin-top: 0 !important)
 eurointegration.com.ua##.right_column_content > .block_news:style(margin-top: 0 !important)
@@ -27825,7 +27816,7 @@ gwss.ru##+js(abort-current-inline-script, fuckAdBlock, undefined)
 hardwareluxx.ru##+js(abort-current-inline-script, jQuery, backgroundImage)
 marieclaire.ua##+js(abort-current-inline-script, redram, /загрузка.../)
 nnmclub.to##+js(abort-current-inline-script, setInterval, Math.random)
-24boxing.com.ua,bilshe.com,businessua.com,f1analytic.com,football-ukraine.com,footballgazeta.com,footballtransfer.com.ua,glianec.com,nashamama.com,sportanalytic.com,stravy.net,zdorovia.com.ua##+js(abort-current-inline-script, setInterval, reload)
+24boxing.com.ua,bilshe.com,businessua.com,f1analytic.com,f1ua.org.ua,football-ukraine.com,footballgazeta.com,footballtransfer.com.ua,glianec.com,nashamama.com,sportanalytic.com,stravy.net,zdorovia.com.ua##+js(abort-current-inline-script, setInterval, reload)
 livesport.ws##+js(abort-current-inline-script, setTimeout, adblockwarn)
 liga.net##+js(abort-current-inline-script, window.innerWidth, rcBuf)
 techmusic.ru##+js(abort-current-inline-script, window.onload, _uWnd)
@@ -28060,6 +28051,7 @@ disk.yandex.by,disk.yandex.com,disk.yandex.kz,disk.yandex.ru,disk.yandex.uz##+js
 motorpage.ru##+js(remove-class, noscroll, body)
 online-fix.me##+js(remove-node-text, #text, РЕКЛАМНЫЙ БЛОК:)
 farposst.ru##+js(remove-node-text, #text, Реклама)
+filmitorrent.net##+js(remove-node-text, #text, Реклама:)
 game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /dimisa|tick/)
 inforesist.org##+js(remove-node-text, script, /gtag\('event'/)
 sports.ru##+js(remove-node-text, script, AdBlocker)
