@@ -1,8 +1,8 @@
-diff name:ruadlist lines:329 checksum:24363a3439
+diff name:ruadlist lines:338 checksum:7106754c1b
 d4 2
 a5 2
-! Last modified: Sat, 16 Mar 2024 03:21:11 +0000
-! Diff-Path: ../patches/2024.3.16.201.patch#ruadlist
+! Last modified: Sat, 16 Mar 2024 08:21:52 +0000
+! Diff-Path: ../patches/2024.3.16.501.patch#ruadlist
 d16 1
 a254 1
 ||adplay.ru^$third-party
@@ -65,6 +65,8 @@ d13706 1
 a13706 1
 anti-malware.ru,brd24.com,minizal.net,onyxgame.com###brand
 d13711 1
+a13744 1
+game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib###checkCookie
 d13803 1
 a13803 1
 stratege.ru###content-top
@@ -159,6 +161,8 @@ a19452 1
 19rusinfo.ru,belta.by,dailystorm.ru,dni.ru,doctorpiter.ru,eg.ru,elle.ru,kakprosto.ru,marieclaire.ru,maximonline.ru,news.ru,newxboxone.ru,parents.ru,playboyrussia.com,psychologies.ru,sobesednik.ru,tvtver.ru,vokrugsveta.ru,wday.ru,woman.ru##a[href*="zen.yandex.ru"]
 d19558 1
 d19795 1
+a20083 1
+game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##body > div[style*="10000px"]
 a20234 1
 regnum.news,regnum.ru##div[class$=" feed-item"]
 a20270 1
@@ -233,8 +237,9 @@ a24317 1
 d24839 1
 a24839 1
 arabela.ru,mathsisfun.com,slavyansk.biz,tagline.ru,x-time.ru#@##adv
-d25596 2
-a25597 2
+d25595 3
+a25597 3
+@@/(clickunder|footerad|layerad|lazyad|leaderad|leftad|linkad|pop_ad|prerollad|printad|pubads|pushdownad|under)/$script,~third-party,domain=game4you.top|games-pc.top|innal.top|naylo.top|rustorka.com|rustorka.net|rustorka.top|rustorkacom.lib
 @@/adblock_detector.js$script,domain=forum.trainzup.net
 @@/advert.$script,domain=adhands.ru|azeroth.su|feech.org|joinfo.ua|kopikot.ru|ksimart.com|ksimart.ml|kupidonia.ru|na-ladoni.su|pesikot.org|pwcats.info|shopotam.ru|spravkarf.ru|svidomitov.net|tsj.ru|tverigrad.ru|veedi.com|wotskill.ru
 d25792 1
@@ -284,6 +289,8 @@ d27179 2
 a27207 1
 e1.ru##.global-wrapper._branding:style(padding-top: 0 !important)
 d27290 1
+a27332 1
+tass.ru##div[class^="LoopChannelLayout_widget"] > div[class^="SimpleCaption_wrapper"]:style(background: none !important)
 d27543 1
 a27543 1
 dzen.ru##div[class^="feed__"] > article:not([aria-label]) > div:first-child ~ div
@@ -318,6 +325,8 @@ kinonews.ru##+js(set-constant, Object.prototype.amp, noopFunc)
 d28107 1
 a28107 1
 kp.kg,kp.kz,kp.md,kp.ru,mk.ru,ohotniki.ru,portalvirtualreality.ru,radiokp.ru,sportkp.ru,wday.ru,woman.ru##+js(set-constant, Object.prototype.changeVisible, noopFunc)
+a28137 1
+tass.ru##+js(set-constant, frames.innerWidth, {})
 a28171 1
 e1.ru##.global-wrapper:remove-class(_branding)
 a29051 1

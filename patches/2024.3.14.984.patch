@@ -1,8 +1,8 @@
-diff name:ruadlist lines:125 checksum:24363a3439
+diff name:ruadlist lines:134 checksum:7106754c1b
 d4 2
 a5 2
-! Last modified: Sat, 16 Mar 2024 03:21:11 +0000
-! Diff-Path: ../patches/2024.3.16.201.patch#ruadlist
+! Last modified: Sat, 16 Mar 2024 08:21:52 +0000
+! Diff-Path: ../patches/2024.3.16.501.patch#ruadlist
 d16 1
 d8217 1
 d9990 1
@@ -32,6 +32,8 @@ d13709 1
 a13709 1
 anti-malware.ru,brd24.com,minizal.net,onyxgame.com###brand
 d13714 1
+a13747 1
+game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib###checkCookie
 d14790 1
 a14790 1
 f1analytic.com,f1ua.org.ua##.BoxVideo.clear ~ .BoxVideo.clear
@@ -63,6 +65,8 @@ a19157 1
 1fnl.ru,1tulatv.ru,aif.ru,alogvinov.com,censor.net,compulenta.ru,computerra.ru,cyberforum.ru,disgustingmen.com,forums.goha.ru,gamebomb.ru,gamer-info.com,gismeteo.ru,gotps3.ru,kudago.com,maximonline.ru,mmorpg.su,mobiltelefon.ru,move.ru,omskpress.ru,osp.ru,penzavzglyad.ru,ps3hits.ru,readovka.ru,shazoo.ru,sobaka.ru,soccer.ru,sportbox.ru,stratege.ru,thg.ru##a[href*="/ad.adriver."]
 d19556 1
 d19793 1
+a20081 1
+game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##body > div[style*="10000px"]
 d20284 1
 a20284 1
 1777.ru,19rus.info,19rusinfo.ru,1ul.ru,2018.pp.ua,20minut.ua,2goroda.ru,365info.kz,3ys.ru,73online.ru,9tv.co.il,advis.ru,agronews.ua,agroreview.com,agrotimes.net,autodmir.ru,avtodispetcher.ru,bakemono.ru,bel.ru,besplatka.ua,bezformata.com,bhub.com.ua,car.ru,cbonds.ru,codernet.ru,comments.ua,con-med.ru,cybersport.ru,echosevera.ru,epravda.com.ua,fatalgame.com,filmz.ru,fishingsib.ru,flamp.ru,food.ru,footballua.tv,forum-profit.ru,gameguru.ru,gecid.com,gorodvitebsk.by,gp.by,growhow.in.ua,haqqin.az,hunting.ru,industry-hunter.com,infpol.ru,investfunds.ru,ircity.ru,islam-today.ru,iz.ru,joborgame.ru,jut.su,k1news.ru,klavogonki.ru,knijky.ru,kt.kz,kursktv.ru,laradiofm.ru,livesport.ws,locals.md,medialeaks.ru,megatyumen.ru,menportal.info,myslo.ru,neboleem.net,nmedic.info,nv-online.info,obyava.ua,okna.ua,penza-press.ru,polochka.net,povarenok.ru,ppt4web.ru,pravda.com.ua,pravoved.ru,primemusic.cc,profibeer.ru,prostatitanet.com,redfm.ru,relax-fm.ru,rg.ru,skachat-kino.fun,smolensk-i.ru,sovsport.ru,spanishrestaurant.ru,sport5.by,sportguide.kiev.ua,start33.ru,syzran-small.ru,tele.ru,tengrinews.kz,the-flow.ru,thequestion.ru,thg.ru,tveda.ru,twentysix.ru,ufanotes.ru,valverus.info,vashurok.ru,veterinargid.ru,vikka.ua,vinnitsa.info,vklasse.online,vovka.su,vringe.com,vshkole.com,woman.ru,wonderzine.com,wowjp.net,xsport.ua,zagorod.spb.ru,zaim-profi.ru,zaryad.me,zebra-tv.ru,zoohoz.ru,zorbasmedia.ru##div[class*="banner"]
@@ -85,8 +89,9 @@ a24319 1
 d24841 1
 a24841 1
 arabela.ru,mathsisfun.com,slavyansk.biz,tagline.ru,x-time.ru#@##adv
-d25598 1
-a25598 1
+d25597 2
+a25598 2
+@@/(clickunder|footerad|layerad|lazyad|leaderad|leftad|linkad|pop_ad|prerollad|printad|pubads|pushdownad|under)/$script,~third-party,domain=game4you.top|games-pc.top|innal.top|naylo.top|rustorka.com|rustorka.net|rustorka.top|rustorkacom.lib
 @@/adblock_detector.js$script,domain=forum.trainzup.net
 d25952 2
 a25953 2
@@ -111,6 +116,8 @@ d26915 2
 d27025 3
 d27076 2
 d27185 2
+a27338 1
+tass.ru##div[class^="LoopChannelLayout_widget"] > div[class^="SimpleCaption_wrapper"]:style(background: none !important)
 d27849 1
 a27849 1
 24boxing.com.ua,bilshe.com,businessua.com,f1analytic.com,f1ua.org.ua,football-ukraine.com,footballgazeta.com,footballtransfer.com.ua,glianec.com,nashamama.com,sportanalytic.com,stravy.net,zdorovia.com.ua##+js(abort-current-inline-script, setInterval, reload)
@@ -119,6 +126,8 @@ a28023 1
 3mod.ru,iblitzmods.ru##+js(nano-setInterval-booster, ks_counter)
 a28083 1
 filmitorrent.net##+js(remove-node-text, #text, Реклама:)
+a28147 1
+tass.ru##+js(set-constant, frames.innerWidth, {})
 a29062 1
 malekal.com##.Here
 d29294 1

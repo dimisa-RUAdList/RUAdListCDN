@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 16 Mar 2024 03:21:11 +0000
-! Diff-Path: ../patches/2024.3.16.201.patch#ruadlist
+! Last modified: Sat, 16 Mar 2024 08:21:52 +0000
+! Diff-Path: ../patches/2024.3.16.501.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -13737,6 +13737,7 @@ tverigrad.ru###center_column ~ div div > img[src]
 kerch.fm###center_left > .informer
 rabota.kharkov.ua###central > table > tbody > tr > .noprint
 finget.ru###chart_a
+game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib###checkCookie
 vk.com###chrome_bar_content
 okrain.net.ua###citata
 thg.ru###clnk_main
@@ -20063,6 +20064,7 @@ fapreactor.com,pornreactor.cc##body > div[id^="inter"]
 steampass.ru##body > div[id^="ips_"]
 pornolomka.com.ru##body > div[id^="pw"]
 emuzic.ru##body > div[onclick^="window.open"]
+game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##body > div[style*="10000px"]
 thailandproperty.tv##body > div[style*="1240px"]
 forum.raskraska.com##body > div[style*="2000"]
 raes.tech,sbfull.com,wigistream.to##body > div[style*="2147483647"]
@@ -25578,7 +25580,7 @@ gbsmp.ru#@#img[width="728"][height="90"]
 3dsmaxvideo.ru,archicadvideo.ru,autocadvideo.ru,coreldrawvideo.ru,excelvideo.ru,kompasvideo.ru,photoshopvideo.ru,print-post.com,solidworksvideo.ru,wordvideo.ru#@##reklama
 720video.me,bessporno.me,camsclips.biz,ebalovo.adult,ebalovo.porn,ebalovo.pro,lenkino.adult,pbembed.me,porno365.bingo,pornobit.mobi,pornobomba.click,pornobomba.vip,pornoham.me,pornomoll.red,porntn.com,private-records.com,ru-xvideos.me,russkoe21.com#@#.ads-iframe
 @@$xmlhttprequest,domain=player.3tv.im
-@@/(clickunder|footerad|layerad|lazyad|leaderad|leftad|linkad|pop_ad|prerollad|printad|pubads|under)/$script,~third-party,domain=game4you.top|games-pc.top|innal.top|naylo.top|rustorka.com|rustorka.net|rustorka.top|rustorkacom.lib
+@@/(clickunder|footerad|layerad|lazyad|leaderad|leftad|linkad|pop_ad|prerollad|printad|pubads|pushdownad|under)/$script,~third-party,domain=game4you.top|games-pc.top|innal.top|naylo.top|rustorka.com|rustorka.net|rustorka.top|rustorkacom.lib
 @@/adblock_detector.js$script,domain=forum.trainzup.net
 @@/advert.$script,domain=adhands.ru|azeroth.su|feech.org|joinfo.ua|kopikot.ru|ksimart.com|ksimart.ml|kupidonia.ru|na-ladoni.su|pesikot.org|pwcats.info|shopotam.ru|spravkarf.ru|svidomitov.net|tsj.ru|tverigrad.ru|veedi.com|wotskill.ru
 @@/advertise.js|$domain=rewbux.com|school-tea.ru
@@ -27307,6 +27309,7 @@ tapochek.net##.scrollable > #thumbs:style(width: max-content !important)
 tapochek.net##.scrollable:style(overflow-x: auto !important; padding-bottom: 16px !important)
 ! ---
 tass.ru##aside > div[class^="NavPanel_nav"]:style(width: unset !important)
+tass.ru##div[class^="LoopChannelLayout_widget"] > div[class^="SimpleCaption_wrapper"]:style(background: none !important)
 tass.ru##div[class^="PageLayout_top_sticky_box"]:style(position: relative !important)
 ! ---
 doba.te.ua###popup-root
@@ -28117,6 +28120,7 @@ hentai-share.one##+js(set-constant, adBlock, false)
 gdz-putina.fun,gdz.ninja,gdz.ru,gdzotputina.club,gdzputina.net,megaresheba.com,megaresheba.ru,resheba.me,spishi.fun,zoobrilka.net##+js(set-constant, app.book.external, null)
 razlozhi.ru##+js(set-constant, cadb, false)
 audioportal.su##+js(set-constant, clicks, 2)
+tass.ru##+js(set-constant, frames.innerWidth, {})
 gazeta.ru##+js(set-constant, g_GazetaNoExchange, true)
 gazeta.ru##+js(set-constant, isAdFree, noopFunc)
 tv-gubernia.ru##+js(set-constant, main_air_closed, true)

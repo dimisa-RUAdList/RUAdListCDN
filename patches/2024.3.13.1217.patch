@@ -1,8 +1,8 @@
-diff name:ruadlist lines:185 checksum:24363a3439
+diff name:ruadlist lines:194 checksum:7106754c1b
 d4 2
 a5 2
-! Last modified: Sat, 16 Mar 2024 03:21:11 +0000
-! Diff-Path: ../patches/2024.3.16.201.patch#ruadlist
+! Last modified: Sat, 16 Mar 2024 08:21:52 +0000
+! Diff-Path: ../patches/2024.3.16.501.patch#ruadlist
 d16 1
 d8217 1
 a8351 1
@@ -45,6 +45,8 @@ d13704 1
 a13704 1
 anti-malware.ru,brd24.com,minizal.net,onyxgame.com###brand
 d13709 1
+a13742 1
+game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib###checkCookie
 d14785 1
 a14785 1
 f1analytic.com,f1ua.org.ua##.BoxVideo.clear ~ .BoxVideo.clear
@@ -85,6 +87,8 @@ a19149 1
 1fnl.ru,1tulatv.ru,aif.ru,alogvinov.com,censor.net,compulenta.ru,computerra.ru,cyberforum.ru,disgustingmen.com,forums.goha.ru,gamebomb.ru,gamer-info.com,gismeteo.ru,gotps3.ru,kudago.com,maximonline.ru,mmorpg.su,mobiltelefon.ru,move.ru,omskpress.ru,osp.ru,penzavzglyad.ru,ps3hits.ru,readovka.ru,shazoo.ru,sobaka.ru,soccer.ru,sportbox.ru,stratege.ru,thg.ru##a[href*="/ad.adriver."]
 d19548 1
 d19785 1
+a20073 1
+game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##body > div[style*="10000px"]
 a20261 1
 agroxxi.ru##div[class*="adagro"]
 d20275 1
@@ -132,8 +136,9 @@ a24306 1
 d24828 1
 a24828 1
 arabela.ru,mathsisfun.com,slavyansk.biz,tagline.ru,x-time.ru#@##adv
-d25585 1
-a25585 1
+d25584 2
+a25585 2
+@@/(clickunder|footerad|layerad|lazyad|leaderad|leftad|linkad|pop_ad|prerollad|printad|pubads|pushdownad|under)/$script,~third-party,domain=game4you.top|games-pc.top|innal.top|naylo.top|rustorka.com|rustorka.net|rustorka.top|rustorkacom.lib
 @@/adblock_detector.js$script,domain=forum.trainzup.net
 d25910 1
 a25914 1
@@ -165,6 +170,8 @@ d27010 3
 d27061 2
 d27170 2
 d27282 1
+a27324 1
+tass.ru##div[class^="LoopChannelLayout_widget"] > div[class^="SimpleCaption_wrapper"]:style(background: none !important)
 d27535 1
 a27535 1
 dzen.ru##div[class^="feed__"] > article:not([aria-label]) > div:first-child ~ div
@@ -179,6 +186,8 @@ a28009 1
 3mod.ru,iblitzmods.ru##+js(nano-setInterval-booster, ks_counter)
 a28069 1
 filmitorrent.net##+js(remove-node-text, #text, Реклама:)
+a28133 1
+tass.ru##+js(set-constant, frames.innerWidth, {})
 a29048 1
 malekal.com##.Here
 d29280 1

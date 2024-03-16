@@ -1,8 +1,8 @@
-diff name:ruadlist lines:216 checksum:24363a3439
+diff name:ruadlist lines:225 checksum:7106754c1b
 d4 2
 a5 2
-! Last modified: Sat, 16 Mar 2024 03:21:11 +0000
-! Diff-Path: ../patches/2024.3.16.201.patch#ruadlist
+! Last modified: Sat, 16 Mar 2024 08:21:52 +0000
+! Diff-Path: ../patches/2024.3.16.501.patch#ruadlist
 d16 1
 a254 1
 ||adplay.ru^$third-party
@@ -52,6 +52,8 @@ d13702 1
 a13702 1
 anti-malware.ru,brd24.com,minizal.net,onyxgame.com###brand
 d13707 1
+a13740 1
+game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib###checkCookie
 d14783 1
 a14783 1
 f1analytic.com,f1ua.org.ua##.BoxVideo.clear ~ .BoxVideo.clear
@@ -107,6 +109,8 @@ a19146 1
 d19366 1
 d19546 1
 d19783 1
+a20071 1
+game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##body > div[style*="10000px"]
 a20222 1
 regnum.news,regnum.ru##div[class$=" feed-item"]
 a20258 1
@@ -158,8 +162,9 @@ a24302 1
 d24824 1
 a24824 1
 arabela.ru,mathsisfun.com,slavyansk.biz,tagline.ru,x-time.ru#@##adv
-d25581 1
-a25581 1
+d25580 2
+a25581 2
+@@/(clickunder|footerad|layerad|lazyad|leaderad|leftad|linkad|pop_ad|prerollad|printad|pubads|pushdownad|under)/$script,~third-party,domain=game4you.top|games-pc.top|innal.top|naylo.top|rustorka.com|rustorka.net|rustorka.top|rustorkacom.lib
 @@/adblock_detector.js$script,domain=forum.trainzup.net
 d25906 1
 a25910 1
@@ -194,6 +199,8 @@ regnum.news,regnum.ru##.page-column > div[class*="-adv-container"]:style(top: 10
 ! ---
 d27164 2
 d27276 1
+a27318 1
+tass.ru##div[class^="LoopChannelLayout_widget"] > div[class^="SimpleCaption_wrapper"]:style(background: none !important)
 d27529 1
 a27529 1
 dzen.ru##div[class^="feed__"] > article:not([aria-label]) > div:first-child ~ div
@@ -210,6 +217,8 @@ a28002 1
 3mod.ru,iblitzmods.ru##+js(nano-setInterval-booster, ks_counter)
 a28062 1
 filmitorrent.net##+js(remove-node-text, #text, Реклама:)
+a28126 1
+tass.ru##+js(set-constant, frames.innerWidth, {})
 a29041 1
 malekal.com##.Here
 d29273 1

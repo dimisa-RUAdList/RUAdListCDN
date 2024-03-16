@@ -1,9 +1,11 @@
-diff name:ruadlist lines:40 checksum:24363a3439
+diff name:ruadlist lines:51 checksum:7106754c1b
 d4 2
 a5 2
-! Last modified: Sat, 16 Mar 2024 03:21:11 +0000
-! Diff-Path: ../patches/2024.3.16.201.patch#ruadlist
+! Last modified: Sat, 16 Mar 2024 08:21:52 +0000
+! Diff-Path: ../patches/2024.3.16.501.patch#ruadlist
 d8216 1
+a13740 1
+game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib###checkCookie
 d14783 1
 a14783 1
 f1analytic.com,f1ua.org.ua##.BoxVideo.clear ~ .BoxVideo.clear
@@ -17,11 +19,16 @@ d18809 1
 d19145 1
 a19145 1
 1fnl.ru,1tulatv.ru,aif.ru,alogvinov.com,censor.net,compulenta.ru,computerra.ru,cyberforum.ru,disgustingmen.com,forums.goha.ru,gamebomb.ru,gamer-info.com,gismeteo.ru,gotps3.ru,kudago.com,maximonline.ru,mmorpg.su,mobiltelefon.ru,move.ru,omskpress.ru,osp.ru,penzavzglyad.ru,ps3hits.ru,readovka.ru,shazoo.ru,sobaka.ru,soccer.ru,sportbox.ru,stratege.ru,thg.ru##a[href*="/ad.adriver."]
+a20067 1
+game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##body > div[style*="10000px"]
 d20796 1
 d21117 1
 d24307 1
 a24307 1
 ||static.localrent.com/widget/$third-party,domain=~in-facts.info|~localrent.pl
+d25585 1
+a25585 1
+@@/(clickunder|footerad|layerad|lazyad|leaderad|leftad|linkad|pop_ad|prerollad|printad|pubads|pushdownad|under)/$script,~third-party,domain=game4you.top|games-pc.top|innal.top|naylo.top|rustorka.com|rustorka.net|rustorka.top|rustorkacom.lib
 d25940 2
 a25941 2
 aif.ru,ain.ua,bit.ua,budport.com.ua,ixbt.com,ko.com.ua,kv.by,livejournal.com,mc.today,newstudio.tv,oper.ru,pay-day.ru,sc2tv.ru,stopgame.ru,userstyles.org,zakarpatpost.net##body:not(#id):style(background-image: none !important)
@@ -34,8 +41,12 @@ a26370 2
 seasonvar.ru,uniondht.org##body:not(#id):style(padding: 0 !important)
 seasonvar.ru,uniondht.org##html:not(#id):style(padding: 0 !important)
 d26374 3
+a27317 1
+tass.ru##div[class^="LoopChannelLayout_widget"] > div[class^="SimpleCaption_wrapper"]:style(background: none !important)
 d27828 1
 a27828 1
 24boxing.com.ua,bilshe.com,businessua.com,f1analytic.com,f1ua.org.ua,football-ukraine.com,footballgazeta.com,footballtransfer.com.ua,glianec.com,nashamama.com,sportanalytic.com,stravy.net,zdorovia.com.ua##+js(abort-current-inline-script, setInterval, reload)
 a28062 1
 filmitorrent.net##+js(remove-node-text, #text, Реклама:)
+a28126 1
+tass.ru##+js(set-constant, frames.innerWidth, {})

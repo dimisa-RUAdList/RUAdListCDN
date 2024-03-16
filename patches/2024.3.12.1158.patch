@@ -1,8 +1,8 @@
-diff name:ruadlist lines:249 checksum:24363a3439
+diff name:ruadlist lines:258 checksum:7106754c1b
 d4 2
 a5 2
-! Last modified: Sat, 16 Mar 2024 03:21:11 +0000
-! Diff-Path: ../patches/2024.3.16.201.patch#ruadlist
+! Last modified: Sat, 16 Mar 2024 08:21:52 +0000
+! Diff-Path: ../patches/2024.3.16.501.patch#ruadlist
 d16 1
 a254 1
 ||adplay.ru^$third-party
@@ -57,6 +57,8 @@ d13701 1
 a13701 1
 anti-malware.ru,brd24.com,minizal.net,onyxgame.com###brand
 d13706 1
+a13739 1
+game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib###checkCookie
 d14702 1
 a14702 1
 alarfilm.ru,hlamer.ru###video-container .overlay_video
@@ -119,6 +121,8 @@ a19147 1
 d19367 1
 d19547 1
 d19784 1
+a20072 1
+game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##body > div[style*="10000px"]
 a20223 1
 regnum.news,regnum.ru##div[class$=" feed-item"]
 a20259 1
@@ -177,8 +181,9 @@ a24307 1
 d24829 1
 a24829 1
 arabela.ru,mathsisfun.com,slavyansk.biz,tagline.ru,x-time.ru#@##adv
-d25586 1
-a25586 1
+d25585 2
+a25586 2
+@@/(clickunder|footerad|layerad|lazyad|leaderad|leftad|linkad|pop_ad|prerollad|printad|pubads|pushdownad|under)/$script,~third-party,domain=game4you.top|games-pc.top|innal.top|naylo.top|rustorka.com|rustorka.net|rustorka.top|rustorkacom.lib
 @@/adblock_detector.js$script,domain=forum.trainzup.net
 d25853 1
 a25853 1
@@ -219,6 +224,8 @@ regnum.news,regnum.ru##.page-column > div[class*="-adv-container"]:style(top: 10
 ! ---
 d27169 2
 d27281 1
+a27323 1
+tass.ru##div[class^="LoopChannelLayout_widget"] > div[class^="SimpleCaption_wrapper"]:style(background: none !important)
 d27534 1
 a27534 1
 dzen.ru##div[class^="feed__"] > article:not([aria-label]) > div:first-child ~ div
@@ -243,6 +250,8 @@ kinonews.ru##+js(set-constant, Object.prototype.amp, noopFunc)
 d28100 1
 a28100 1
 kp.kg,kp.kz,kp.md,kp.ru,mk.ru,ohotniki.ru,portalvirtualreality.ru,radiokp.ru,sportkp.ru,wday.ru,woman.ru##+js(set-constant, Object.prototype.changeVisible, noopFunc)
+a28130 1
+tass.ru##+js(set-constant, frames.innerWidth, {})
 a29045 1
 malekal.com##.Here
 d29277 1
