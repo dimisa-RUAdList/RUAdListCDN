@@ -1,11 +1,13 @@
-diff name:ruadlist lines:274 checksum:3ac25374ad
+diff name:ruadlist lines:300 checksum:8873767287
 d4 2
 a5 2
-! Last modified: Sat, 16 Mar 2024 18:24:37 +0000
-! Diff-Path: ../patches/2024.3.16.1104.patch#ruadlist
+! Last modified: Sat, 16 Mar 2024 23:20:00 +0000
+! Diff-Path: ../patches/2024.3.16.1400.patch#ruadlist
 d16 1
 a254 1
 ||adplay.ru^$third-party
+a3044 1
+||kaloev.site^$third-party
 d7050 2
 a7051 1
 ||zcode1*.me^$third-party
@@ -55,6 +57,8 @@ a12861 1
 ||speedtest.org.ua/pirate
 a13072 1
 ||tproger.ru/_nuxt/ListokTop.
+a13156 1
+||ukrainske.tv/images/ref/banner_
 d13441 1
 a13441 1
 ||youtube.com/embed/$domain=4put.ru|androeed.ru|anime-365.ru|fbsearch.ru|geomap.com.ua|hdrabbit.ru|lostpix.com|multitran.com|newstudio-online.tv|sbornik-music.ru|sinonim.org|smotret-anime.online|subject.com.ua|ukrlit.net|zarlit.com
@@ -68,6 +72,13 @@ d13706 1
 d13730 1
 a13739 1
 game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib###checkCookie
+d14352 1
+a14352 1
+filmitorrent.net,utorr.cc###right > .colorstrip
+d14355 1
+d14682 1
+a14682 1
+filmitorrent.net,utorr.cc###torrents ~ div[align="center"]
 d14702 1
 a14702 1
 alarfilm.ru,hlamer.ru###video-container .overlay_video
@@ -119,6 +130,9 @@ d18380 1
 d18607 1
 d18658 2
 d18811 1
+d18827 1
+a18827 1
+mmo13.ru,ps4.in.ua##[data-ad-slot]
 a18878 1
 shuba.life##[data-product]
 d19087 1
@@ -131,6 +145,9 @@ a19147 1
 d19367 1
 d19432 1
 d19547 1
+d19585 1
+a19585 1
+game-tournaments.com,gdetoedet.ru,uzum.tv##a[href^="/go"]
 d19784 1
 a20072 1
 game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##body > div[style*="10000px"]
@@ -141,6 +158,7 @@ agroxxi.ru##div[class*="adagro"]
 d20273 1
 a20273 1
 1777.ru,19rus.info,19rusinfo.ru,1ul.ru,2018.pp.ua,20minut.ua,2goroda.ru,365info.kz,3ys.ru,73online.ru,9tv.co.il,advis.ru,agronews.ua,agroreview.com,agrotimes.net,autodmir.ru,avtodispetcher.ru,bakemono.ru,bel.ru,besplatka.ua,bezformata.com,bhub.com.ua,car.ru,cbonds.ru,codernet.ru,comments.ua,con-med.ru,cybersport.ru,echosevera.ru,epravda.com.ua,fatalgame.com,filmz.ru,fishingsib.ru,flamp.ru,food.ru,footballua.tv,forum-profit.ru,gameguru.ru,gecid.com,gorodvitebsk.by,gp.by,growhow.in.ua,haqqin.az,hunting.ru,industry-hunter.com,infpol.ru,investfunds.ru,ircity.ru,islam-today.ru,iz.ru,joborgame.ru,jut.su,k1news.ru,klavogonki.ru,knijky.ru,kt.kz,kursktv.ru,laradiofm.ru,livesport.ws,locals.md,medialeaks.ru,megatyumen.ru,menportal.info,myslo.ru,neboleem.net,nmedic.info,nv-online.info,obyava.ua,okna.ua,penza-press.ru,polochka.net,povarenok.ru,ppt4web.ru,pravda.com.ua,pravoved.ru,primemusic.cc,profibeer.ru,prostatitanet.com,redfm.ru,relax-fm.ru,rg.ru,skachat-kino.fun,smolensk-i.ru,sovsport.ru,spanishrestaurant.ru,sport5.by,sportguide.kiev.ua,start33.ru,syzran-small.ru,tele.ru,tengrinews.kz,the-flow.ru,thequestion.ru,thg.ru,tveda.ru,twentysix.ru,ufanotes.ru,valverus.info,vashurok.ru,veterinargid.ru,vikka.ua,vinnitsa.info,vklasse.online,vovka.su,vringe.com,vshkole.com,woman.ru,wonderzine.com,wowjp.net,xsport.ua,zagorod.spb.ru,zaim-profi.ru,zaryad.me,zebra-tv.ru,zoohoz.ru,zorbasmedia.ru##div[class*="banner"]
+d20336 1
 d20387 1
 a20387 1
 newsru.co.il##div[class^="HP_"]
@@ -152,6 +170,7 @@ tproger.ru##div[class^="tp-"][class*="listok"]
 d20655 1
 a20655 1
 vk.com,vk.ru##div[data-ad]
+d20715 1
 d20798 2
 a20803 1
 israelinfo.co.il##div[id^="ban"]
@@ -159,6 +178,7 @@ d20933 1
 a20933 1
 newsru.co.il##div[id^="section_"]
 d20955 1
+d20968 1
 d21061 1
 d21120 1
 a21251 1
@@ -194,6 +214,9 @@ d25585 2
 a25586 2
 @@/(clickunder|footerad|layerad|lazyad|leaderad|leftad|linkad|pop_ad|prerollad|printad|pubads|pushdownad|under)/$script,~third-party,domain=game4you.top|games-pc.top|innal.top|naylo.top|rustorka.com|rustorka.net|rustorka.top|rustorkacom.lib
 @@/adblock_detector.js$script,domain=forum.trainzup.net
+d25781 1
+a25781 1
+izi-invest.ru,ruboard.website#@#div[id^="yandex_rtb"]
 d25853 1
 a25853 1
 alarfilm.ru##.websockets
@@ -206,7 +229,7 @@ aif.ru,ain.ua,bit.ua,budport.com.ua,ixbt.com,ko.com.ua,kv.by,livejournal.com,mc.
 2pay-day.ru,4video.adult,aif.ru,ain.ua,bit.ua,budport.com.ua,ixbt.com,ko.com.ua,kv.by,livejournal.com,mc.today,newstudio.tv,oper.ru,sc2tv.ru,stopgame.ru,userstyles.org,zakarpatpost.net##html:not(#id):style(background-image: none !important)
 d25943 1
 a25943 1
-baskino.film,dnepr.info,dugtor.ru,filmitorrent.net,ixbt.com,jetsetter.ua,kinoafisha.ua,kinobar.vip,moskva.fm,newstudio.tv,nnmclub.to,pay-day.ru,roem.ru,trupornolabs.org,vc.ru,virusinfo.info,wikianime.tv,xxxadulttorrent.org,you-anime.ru,yummyanime.tv,zombie-film.live##body:not(#id):style(padding-top: 0 !important)
+baskino.film,dnepr.info,dugtor.ru,filmitorrent.net,filmitorrent.site,ixbt.com,jetsetter.ua,kinoafisha.ua,kinobar.vip,moskva.fm,newstudio.tv,nnmclub.to,pay-day.ru,roem.ru,trupornolabs.org,utorr.cc,vc.ru,virusinfo.info,wikianime.tv,xxxadulttorrent.org,you-anime.ru,yummyanime.tv,zombie-film.live##body:not(#id):style(padding-top: 0 !important)
 a26012 2
 agroxxi.ru##.sidebarfix:style(margin-top: 0 !important)
 ! ---
@@ -221,6 +244,9 @@ a26368 2
 seasonvar.ru,uniondht.org##body:not(#id):style(padding: 0 !important)
 seasonvar.ru,uniondht.org##html:not(#id):style(padding: 0 !important)
 d26372 3
+d26406 1
+a26406 1
+filmitorrent.net,filmitorrent.site,utorr.cc##body > #container:style(margin-top: 0 !important)
 a26422 2
 www.fontanka.ru###onesignal-promt-target > div:first-child
 ! ---
@@ -260,7 +286,7 @@ d28007 1
 a28007 1
 3mod.ru,iblitzmods.ru##+js(nano-setInterval-booster, ks_counter)
 a28067 1
-filmitorrent.net##+js(remove-node-text, #text, Реклама:)
+filmitorrent.net,utorr.cc##+js(remove-node-text, #text, Реклама:)
 a28092 1
 kinonews.ru##+js(set-constant, Object.prototype.amp, noopFunc)
 d28100 1
