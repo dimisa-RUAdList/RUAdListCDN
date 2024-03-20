@@ -1,8 +1,8 @@
-diff name:ruadlist lines:123 checksum:60e57f32bd
+diff name:ruadlist lines:128 checksum:267c9eacec
 d4 2
 a5 2
-! Last modified: Wed, 20 Mar 2024 17:19:50 +0000
-! Diff-Path: ../patches/2024.3.20.1039.patch#ruadlist
+! Last modified: Wed, 20 Mar 2024 22:19:50 +0000
+! Diff-Path: ../patches/2024.3.20.1339.patch#ruadlist
 d7978 1
 a7978 1
 /teasers/*$domain=~ableton.com|~adventuregamers.com|~agderposten.no|~amway.ru|~amway.ua|~av.by|~babla.ru|~bmw.de|~bmw.ro|~bmw.ru|~business-gazeta.ru|~fujifilm.eu|~gismeteo.by|~gismeteo.kz|~gismeteo.md|~kinobulvar.info|~meganomkino.ru|~newsland.com|~novsu.ru|~rce.by|~road.cc|~stackoverflow.com|~teaserstar.ru|~wetteronline.de|~www.kinopoisk.ru|~yandex.by|~yandex.com|~yandex.com.tr|~yandex.fr|~yandex.kz|~yandex.ru
@@ -92,6 +92,8 @@ a21724 1
 dracon-zet.ru,fonmod.com,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 a21817 1
 ||hidemyname.net^$third-party,popup
+a22174 1
+mail.ru#?#aside div[style^="min-height:"][data-hideorder]:first-child:-abp-has(> [data-rb-slot])
 d23477 1
 a25860 1
 rasfokus.ru##body > div[id] > [align="center"] > a[target="_blank"]
@@ -119,6 +121,9 @@ eagleplatform.com##+js(set-constant, Object.prototype.autoplay, null)
 d28078 1
 a28078 1
 kp.kg,kp.kz,kp.md,kp.ru,mk.ru,ohotniki.ru,portalvirtualreality.ru,radiokp.ru,sportkp.ru,wday.ru,woman.ru,www.fontanka.ru##+js(set-constant, Object.prototype.changeVisible, noopFunc)
+a28298 1
+||pulse.mail.ru^$domain=~e.mail.ru|~octavius.mail.ru|~pulse.mail.ru
+d28300 1
 d29239 1
 a29239 1
 admin.rainbow-online.ru,gitjournal.tech,logist.uxxo.ru,meteoservice.ru,pawno-info.ru,smolensk-auto.ru##body > div[id]:not([class])[style="display: block;"]

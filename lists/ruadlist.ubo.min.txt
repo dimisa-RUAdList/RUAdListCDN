@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 20 Mar 2024 17:19:50 +0000
-! Diff-Path: ../patches/2024.3.20.1039.patch#ruadlist
+! Last modified: Wed, 20 Mar 2024 22:19:50 +0000
+! Diff-Path: ../patches/2024.3.20.1339.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22158,6 +22158,7 @@ mail.ru#?#[data-mywidget-id^="myWidgetItem_"]:-abp-has(.m-mywidget__disclaimer:-
 tv.mail.ru##[data-rb]
 minigames.mail.ru,okminigames.mail.ru#?#[href^="https://minigames.imgsmail.ru/static/css/social-likes."] ~ div[class]:-abp-has([href*="/info/adblock"])
 mail.ru,sportmail.ru##a[href*="news-sphere.com"]
+mail.ru#?#aside div[style^="min-height:"][data-hideorder]:first-child:-abp-has(> [data-rb-slot])
 dom.mail.ru##div[article-item-type="conversionlink"]
 ~e.mail.ru,mail.ru,~octavius.mail.ru##div[class*="rb-slot_plug"]
 tv.mail.ru##div[class][id^="mailru"]
@@ -28277,8 +28278,8 @@ ok.ru##div[class*="__banner-feed"]
 ||ok.ru/res/js/app/VideoEmbed_*.js|$script
 ||ok.ru/videoembed/*autoplay=1$subdocument,removeparam=|
 ||pubapi.viqeo.tv^$domain=mail.ru|sportmail.ru
+||pulse.mail.ru^$domain=~e.mail.ru|~octavius.mail.ru|~pulse.mail.ru
 ||r.mradx.net/img/*.js|$empty,script
-||recostream.go.mail.ru/?stream_id=mediaproject_lenta_$domain=mail.ru|sportmail.ru
 ||ru/count/$image,important,redirect=1x1.gif,domain=mail.ru|sportmail.ru
 ! Конфликт с JS Fixes
 mail.ru##.tgb-wrapper:remove()

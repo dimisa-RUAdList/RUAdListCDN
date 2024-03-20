@@ -1,8 +1,8 @@
-diff name:ruadlist lines:227 checksum:60e57f32bd
+diff name:ruadlist lines:232 checksum:267c9eacec
 d4 2
 a5 2
-! Last modified: Wed, 20 Mar 2024 17:19:50 +0000
-! Diff-Path: ../patches/2024.3.20.1039.patch#ruadlist
+! Last modified: Wed, 20 Mar 2024 22:19:50 +0000
+! Diff-Path: ../patches/2024.3.20.1339.patch#ruadlist
 a3044 1
 ||kaloev.site^$third-party
 d7178 1
@@ -150,6 +150,8 @@ a21746 1
 dracon-zet.ru,fonmod.com,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 a21839 1
 ||hidemyname.net^$third-party,popup
+a22196 1
+mail.ru#?#aside div[style^="min-height:"][data-hideorder]:first-child:-abp-has(> [data-rb-slot])
 a22907 12
 ! dzen мобильная версия
 dzen.ru##.article-render-mobile__embed_embed-type_yandex-direct
@@ -223,6 +225,9 @@ eagleplatform.com##+js(set-constant, Object.prototype.autoplay, null)
 d28086 1
 a28086 1
 kp.kg,kp.kz,kp.md,kp.ru,mk.ru,ohotniki.ru,portalvirtualreality.ru,radiokp.ru,sportkp.ru,wday.ru,woman.ru,www.fontanka.ru##+js(set-constant, Object.prototype.changeVisible, noopFunc)
+a28306 1
+||pulse.mail.ru^$domain=~e.mail.ru|~octavius.mail.ru|~pulse.mail.ru
+d28308 1
 d29247 1
 a29247 1
 admin.rainbow-online.ru,gitjournal.tech,logist.uxxo.ru,meteoservice.ru,pawno-info.ru,smolensk-auto.ru##body > div[id]:not([class])[style="display: block;"]
