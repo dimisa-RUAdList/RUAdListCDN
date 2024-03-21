@@ -1,8 +1,8 @@
-diff name:ruadlist lines:88 checksum:d2f7b42902
+diff name:ruadlist lines:99 checksum:bafb03622b
 d4 2
 a5 2
-! Last modified: Thu, 21 Mar 2024 13:23:15 +0000
-! Diff-Path: ../patches/2024.3.21.803.patch#ruadlist
+! Last modified: Thu, 21 Mar 2024 18:23:56 +0000
+! Diff-Path: ../patches/2024.3.21.1103.patch#ruadlist
 a1269 1
 ||corntire.com^$third-party
 d7465 1
@@ -18,6 +18,8 @@ a9299 1
 ||trafmag.com^$popup
 d9453 1
 d9474 1
+a9495 1
+||ulogin.ru^$third-party,popup
 d9540 2
 d9714 1
 d9728 2
@@ -57,8 +59,13 @@ a21685 1
 d21710 1
 a21710 1
 crackstatus.net,dracon-zet.ru,fonmod.com,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
+a21803 1
+||hidemyname.info^$third-party,popup
 a22161 1
 mail.ru#?#aside div[style^="min-height:"][data-hideorder]:first-child:-abp-has(> [data-rb-slot])
+d22825 1
+a22825 1
+mail.yandex.by,mail.yandex.com,mail.yandex.kz,mail.yandex.ru,mail.yandex.uz##div[class*="DirectLine"]
 a22881 1
 &yhid=$popup,domain=dzen.ru
 a22883 1
@@ -84,6 +91,10 @@ vc.ru##+js(remove-attr, data-video-play-mode)
 d28038 1
 a28038 1
 vc.ru##+js(set-attr, a[href$="?ref=recommended"], target, '')
+a28039 1
+dtf.ru##+js(set-attr, video, controls, true)
+a28199 1
+dtf.ru##video:remove-attr(autoplay)
 a28282 1
 ||pulse.mail.ru^$domain=~e.mail.ru|~octavius.mail.ru|~pulse.mail.ru
 d28284 1

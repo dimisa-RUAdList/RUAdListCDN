@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 21 Mar 2024 13:23:15 +0000
-! Diff-Path: ../patches/2024.3.21.803.patch#ruadlist
+! Last modified: Thu, 21 Mar 2024 18:23:56 +0000
+! Diff-Path: ../patches/2024.3.21.1103.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -9486,6 +9486,7 @@ $popup,domain=176.114.0.126|176.114.0.132|37.220.36.15|assiatv.com|cdnneedtv.ru|
 ||track.sharkgames.com^$third-party,popup
 ||travian.com.ua/landingpage/$popup
 ||tripadvisor.ru/PriceFinderPopunder$popup
+||ulogin.ru^$third-party,popup
 ||velcome-club.com^$popup
 ||vezuha.me^$third-party,popup
 ||vse-sdal.com/promo?ref=$third-party,popup
@@ -21793,6 +21794,7 @@ $script,~third-party,domain=defileb.com|fplay.online|hovels.info|likelol.online|
 ||hidemn.org^$third-party,popup
 ||hidemx.name^$third-party,popup
 ||hidemy.name^$third-party,popup
+||hidemyname.info^$third-party,popup
 ||hidemyname.net^$third-party,popup
 ||proxyelite.info^$third-party,popup
 ! Avito
@@ -22815,7 +22817,7 @@ disk.yandex.by,disk.yandex.kz,disk.yandex.ru,disk.yandex.uz##.software-header-pr
 docviewer.yandex.by,docviewer.yandex.kz,docviewer.yandex.ru,docviewer.yandex.uz##.with-bottom-direct > div[class] > div[class]:empty
 disk.yandex.by,disk.yandex.kz,disk.yandex.ru,disk.yandex.uz##a[href][style*="storage.mds.yandex.net/get-bstor/"]
 travel.yandex.ru##div.root[id]:empty
-mail.yandex.by,mail.yandex.com,mail.yandex.kz,mail.yandex.ru,mail.yandex.uz##div[class*="DirectLinePlaceholder"]
+mail.yandex.by,mail.yandex.com,mail.yandex.kz,mail.yandex.ru,mail.yandex.uz##div[class*="DirectLine"]
 yandex.by,yandex.kz,yandex.ru,yandex.uz##div[class^="b-spec-adv"]
 disk.yandex.by,disk.yandex.kz,disk.yandex.ru,disk.yandex.uz##div[class^="direct"]:not([class^="directory-content"])
 yandex.by,yandex.kz,yandex.ru,yandex.uz##div[data-block="banner-view"]
@@ -28030,6 +28032,7 @@ sdamgia.ru##+js(set-attr, .Root:not(.sgia-main-content) main > div:first-child:e
 eneyida.tv##+js(set-attr, .owl-item > a > img, src, [data-src])
 vc.ru##+js(set-attr, a[href$="?ref=recommended"], target, '')
 reshu.by##+js(set-attr, main > div:first-child:empty, class, false)
+dtf.ru##+js(set-attr, video, controls, true)
 peers.tv##+js(set-constant, ADV_DISABLED, true)
 www.ukr.net##+js(set-constant, Clicks._test_meta_referer, null)
 ivi.ru##+js(set-constant, Object.prototype.AdvObject, noopFunc)
@@ -28190,6 +28193,7 @@ porno365.*##+js(abort-on-stack-trace, Object.prototype.parallax, window.onload)
 pornopuk.com,huyamba.tv,piratam.net,piratca.net,porn720.biz,pornoakt.*,sexitorrent.com,sextor.org,domahatv.com,torrent-pirat.com,xtorrent.net,rapidzona.tv,xxxrip.net,xxxtor.com,hentai-share.one##+js(abort-current-inline-script, document.querySelectorAll, popMagic)
 kanobu.ru#?#section[class^="MaterialsManufacturerPage_infiniteWrap"] > div[class^="InfiniteScrollWrap_content"] > [class*="MaterialItemPage_materialSection"]:-abp-has(> .knb-grid-container > [data-io-article-url] [class^="TextContent_text"] > p:-abp-contains(/^Реклама:/)) [class^="material-content_"] a[href][target="_blank"]:not([href^="https://kanobu.ru/"]):style(color: inherit !important; pointer-events: none !important)
 igromania.ru#?#section[class^="MaterialsManufacturerPage_infiniteWrap"] > div[class^="InfiniteScrollWrap_content"] > [class*="MaterialItemPage_materialSection"]:-abp-has(> .knb-grid-container > [data-io-article-url] [class^="TextContent_text"] > p:-abp-contains(/^Реклама:/)) [class^="material-content_"] a[href][target="_blank"]:not([href^="https://www.igromania.ru/"]):style(color: inherit !important; pointer-events: none !important)
+dtf.ru##video:remove-attr(autoplay)
 kinoafisha.info##videotronic-player:remove-attr(data-video-autoplay)
 ||1plus1.video/*/embed/*autoplay=1$subdocument,removeparam=|
 ||adbutton.net^$script,redirect=noopjs

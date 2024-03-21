@@ -1,8 +1,8 @@
-diff name:ruadlist lines:231 checksum:d2f7b42902
+diff name:ruadlist lines:241 checksum:bafb03622b
 d4 2
 a5 2
-! Last modified: Thu, 21 Mar 2024 13:23:15 +0000
-! Diff-Path: ../patches/2024.3.21.803.patch#ruadlist
+! Last modified: Thu, 21 Mar 2024 18:23:56 +0000
+! Diff-Path: ../patches/2024.3.21.1103.patch#ruadlist
 a1269 1
 ||corntire.com^$third-party
 d7179 1
@@ -26,6 +26,8 @@ a9300 1
 d9454 1
 d9475 1
 d9493 1
+a9497 1
+||ulogin.ru^$third-party,popup
 d9542 2
 d9716 1
 d9730 2
@@ -154,10 +156,14 @@ d21711 1
 d21735 1
 a21735 1
 crackstatus.net,dracon-zet.ru,fonmod.com,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
-a21828 1
+a21828 2
+||hidemyname.info^$third-party,popup
 ||hidemyname.net^$third-party,popup
 a22185 1
 mail.ru#?#aside div[style^="min-height:"][data-hideorder]:first-child:-abp-has(> [data-rb-slot])
+d22849 1
+a22849 1
+mail.yandex.by,mail.yandex.com,mail.yandex.kz,mail.yandex.ru,mail.yandex.uz##div[class*="DirectLine"]
 a22896 14
 ! dzen мобильная версия
 dzen.ru##.article-render-mobile__embed_embed-type_yandex-direct
@@ -215,6 +221,8 @@ vc.ru##+js(remove-attr, data-video-play-mode)
 d28048 1
 a28048 1
 vc.ru##+js(set-attr, a[href$="?ref=recommended"], target, '')
+a28049 1
+dtf.ru##+js(set-attr, video, controls, true)
 d28058 1
 a28058 1
 116.ru,14.ru,161.ru,164.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,62.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,proizhevsk.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru##+js(set-constant, Object.prototype._requestIframeData, noopFunc)
@@ -224,6 +232,8 @@ eagleplatform.com##+js(set-constant, Object.prototype.autoplay, null)
 d28072 1
 a28072 1
 kp.kg,kp.kz,kp.md,kp.ru,mk.ru,ohotniki.ru,portalvirtualreality.ru,radiokp.ru,sportkp.ru,wday.ru,woman.ru,www.fontanka.ru##+js(set-constant, Object.prototype.changeVisible, noopFunc)
+a28209 1
+dtf.ru##video:remove-attr(autoplay)
 a28292 1
 ||pulse.mail.ru^$domain=~e.mail.ru|~octavius.mail.ru|~pulse.mail.ru
 d28294 1
