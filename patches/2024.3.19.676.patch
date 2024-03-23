@@ -1,13 +1,20 @@
-diff name:ruadlist lines:220 checksum:2b7594a781
+diff name:ruadlist lines:246 checksum:441275eab3
 d4 2
 a5 2
-! Last modified: Sat, 23 Mar 2024 10:21:52 +0000
-! Diff-Path: ../patches/2024.3.23.621.patch#ruadlist
+! Last modified: Sat, 23 Mar 2024 15:20:24 +0000
+! Diff-Path: ../patches/2024.3.23.920.patch#ruadlist
+d529 1
+d1140 1
 a1269 1
 ||corntire.com^$third-party
 d6235 1
 a6235 1
 ||ulogin.ru^
+d7313 1
+d7316 1
+d7329 2
+a7363 1
+||find-it.pro^
 d7465 1
 d7477 1
 d7480 2
@@ -22,12 +29,16 @@ a9058 1
 ||corntire.com^$popup
 a9299 1
 ||trafmag.com^$popup
+d9368 1
+d9380 1
 d9453 1
 d9474 1
 d9492 1
 a9496 1
 ||ulogin.ru^$third-party,popup
 d9541 2
+d9577 1
+d9589 2
 d9715 1
 d9729 2
 d10206 1
@@ -44,7 +55,9 @@ a10534 1
 /static/banners/*$domain=gagadget.com|vse-sto.com.ua
 d10673 1
 d10739 1
+d11307 1
 d11319 1
+d11711 1
 d12179 3
 d12740 1
 d13523 1
@@ -54,7 +67,7 @@ d13566 1
 d13614 1
 d14755 1
 a14755 1
-activation-keys.ru,adregain.ru,ads.bid,apicloud.ru,appt12mn.com,azartplay.casino,banner.mob.ru.com,bestdownload3.ru,bestsoft.club,blogiblogi.com,breakingdigest.com,browserextensions.net,cheatget.ru,clbvpurple.com,click2soft.ru,clickbytes.ru,content.directadvert.ru,cs-serva.net,directx.biz,dnevni4ok.com,download.studio,downloadamigo.com,downloadbrowser.ru,driverpack.io,driverpaksolution.ru,drp.su,dugtor-deer.pw,dw1-msetup.org,elementsbrowser.com,endocri.ru,etarg.network,everinform.com,eversmi.com,ex.24smi.info,ex.24smi.site,ex.infox.sg,exonews.ru,fast2click.ru,filetaker.ru,fin-vector.ru,flebolab.ru,getappwiz.ru,getdstud.io,getdstudio.cab,getdstudio.com,getfiletds.ru,getyoursoft.ru,globalstylis.ru,hdvideoboxs.ru,health-official.ru,idealmedia.io,install-now.com,installpack.net,kinowinx.ru,linksoftbox.ru,litebrowser.ru,losnews.ru,mainews.ru,manysoftlink.ru,marketgid.ru,mediapress.xyz,medicin-novosti-24.com,medicineteaser.org,medicineteaser.ru,mega-game.org,mega-pics-money.ru,mixerred.ru,msetup.pro,mysoftbox.ru,mytrk.xyz,nalivali.ru,new-rutor.website,news-decent.com,news-sphere.com,newsles.ru,newsma.ru,novostly.com,offergate.pro,ognyvo.ru,olx.ua.partners,orgsales.ru,picpick.ru,pochistit.ru,popcornhd.ru,portal-peoples.com,prime-oblako.ru,programma-ochistki.ru,readvesti.ru,rotateme.ru,rsboot.ru,rustoria-topnews.ru,rutor.ml,rutorgame.org,rutorrent.co,rutors.tk,rutracker.eu,rutracker.work,rutraker.org,saymigren.net,sb-on-line.ru,search-cdn.ru,searchcdn.ru,smiru.ru,softboxtds.ru,spishi.vip,starblog.org,sysenvfiles.net,t-lafa-site.ru,t1mcapp.com,tdsclicks2.ru,tdsrotations.ru,tft-test.ru,tlmnt.com,top-rutor.eu,top.24smi.info,topnews.smi.one,toprated-film.co,tordrom.com,torrentum.ru,ubar-pro.ru,ubar-pro2.ru,ubar-pro3.ru,ubar-pro4.ru,ubar.pro,ufiler-download.ru,ufiler-pro.ru,ufiler-pro2.ru,ufiler.pro,upro.me,viniki.ru,vserpg.ru,wogoods.com,womens-journal.ru,worldinform.ru,xbox-torrent.ru,ya-browser.ru,ya-cdn.ru,ya-distrib.ru,yabrowser.su,yadistr.ru,yasearch-cdn.ru,yasearchcdn.ru,ynsearch.ru,zodiac-game.info,zpppstop.ru,zqwjpxow7boc.ru##*
+activation-keys.ru,adregain.ru,ads.bid,apicloud.ru,appt12mn.com,banner.mob.ru.com,bestsoft.club,browser-extensions.club,cheatget.ru,click2soft.ru,clickbytes.ru,content.directadvert.ru,cs-serva.net,directx.biz,dnevni4ok.com,download.studio,downloadamigo.com,downloadbrowser.ru,driverpack.io,driverpaksolution.ru,drp.su,dugtor-deer.pw,dw1-msetup.org,elementsbrowser.com,endocri.ru,etarg.network,everinform.com,eversmi.com,ex.24smi.info,ex.24smi.site,ex.infox.sg,exonews.ru,fast2click.ru,filetaker.ru,fin-vector.ru,flebolab.ru,getappwiz.ru,getdstud.io,getdstudio.cab,getdstudio.com,getfiletds.ru,getyoursoft.ru,globalstylis.ru,hdvideoboxs.ru,health-official.ru,idealmedia.io,install-now.com,installpack.net,kinowinx.ru,linksoftbox.ru,litebrowser.ru,losnews.ru,mainews.ru,manysoftlink.ru,marketgid.ru,mediapress.xyz,medicin-novosti-24.com,medicineteaser.org,medicineteaser.ru,mega-game.org,mega-pics-money.ru,mixerred.ru,msetup.pro,mysoftbox.ru,mytrk.xyz,nalivali.ru,new-rutor.website,news-decent.com,news-sphere.com,newsles.ru,newsma.ru,novostly.com,offergate.pro,ognyvo.ru,olx.ua.partners,orgsales.ru,picpick.ru,pochistit.ru,popcornhd.ru,portal-peoples.com,prime-oblako.ru,programma-ochistki.ru,readvesti.ru,rotateme.ru,rsboot.ru,rustoria-topnews.ru,rutor.ml,rutorgame.org,rutorrent.co,rutors.tk,rutracker.eu,rutracker.work,rutraker.org,saymigren.net,sb-on-line.ru,search-cdn.ru,searchcdn.ru,smiru.ru,softboxtds.ru,spishi.vip,starblog.org,sysenvfiles.net,t-lafa-site.ru,t1mcapp.com,tdsclicks2.ru,tdsrotations.ru,tft-test.ru,tlmnt.com,top-rutor.eu,top.24smi.info,topnews.smi.one,toprated-film.co,tordrom.com,torrentum.ru,ubar-pro.ru,ubar-pro2.ru,ubar-pro3.ru,ubar-pro4.ru,ubar.pro,ufiler-download.ru,ufiler-pro.ru,ufiler-pro2.ru,ufiler.pro,upro.me,viniki.ru,vserpg.ru,wogoods.com,womens-journal.ru,worldinform.ru,xbox-torrent.ru,ya-browser.ru,ya-cdn.ru,ya-distrib.ru,yabrowser.su,yadistr.ru,yasearch-cdn.ru,yasearchcdn.ru,ynsearch.ru,zodiac-game.info,zpppstop.ru,zqwjpxow7boc.ru##*
 d14760 1
 a14760 1
 dtf.ru,vc.ru##.ALMGcspq
@@ -101,17 +114,26 @@ d18524 1
 a18524 1
 1000iodinsovet.ru,2info2.ru,4esnok.by,agrimpasa.com,alau.kz,alkogolu.net,atlasprirodirossii.ru,belattra.ru,bizua.org,boxvideotv.ru,brunet-ka.ru,calend.online,cherepah.ru,chirik.info,chudesniesovetiki.site,clubwindows.ru,domashnie-zagotovki.ru,domashniecvety.ru,erokomiksi.com,excelprost.ru,free-news.su,galas.te.ua,geomedia.top,giantessa.ru,golbis.com,golovnie-boli.com,hitagro.ru,hronika.info,htmlhook.ru,hyperione.com,inforpost.com,kopomko.com,koroleffsov.ru,krashevseh.ru,kulemet.com,legkopolezno.ru,lightstories.site,macosinfo.com,makeupkey.ru,mamabook.com.ua,meganovosti.net,mezha.media,miformat.info,nagadala.com,nash-sekret.ru,newsrank.ru,newssky.com.ua,northern-newspaper.ru,ofigeno.ru,ogribax.ru,ovetryanke.ru,paratechnik.ru,podarok.video,podruzke.ru,portable-rus.ru,portaltele.com.ua,portalvirtualreality.ru,prostolinux.ru,putin-today.ru,pzik.ru,rainbowsky.ru,roza2012.net.ua,ru-mir.net,ruslo.info,sci-fi-news.ru,sich.zp.ua,snelwilcox.com,srnsk.ru,strana-it.ru,svoitabachok.ru,trmzk.ru,udobreniya.net,ustanovkaos.ru,ventilationpro.ru,walaw.ru,yconsult.ru##.widget_text
 d18669 1
+d18730 1
 d18769 1
 d18775 1
 a18775 1
 vc.ru##[class^="post-branding-"]
+a18787 1
+life.ru#?#[class^="styles_title_"]:-abp-contains(Новости партнеров)
 d18806 1
 a18806 1
 vc.ru##[data-analytics*="native"]
+d18956 1
+a18956 1
+101.ru,19rus.info,2000.ua,5-tv.ru,56orb.ru,62info.ru,7info.ru,afanasy.biz,agitpro.su,allboxing.ru,anekdot.ru,argumenti.ru,baltnews.ee,belive.ru,bigpicture.ru,bombardir.ru,chehov-vid.ru,daily-inform.ru,dni.ru,dnpmag.com,do-slez.com,eadaily.com,eg.ru,expert.ru,ferra.ru,gazeta-tula.ru,glav.su,glavnoe24.ru,gorobzor.ru,gorvesti.ru,govoritmoskva.ru,gubdaily.ru,hightech.plus,iarex.ru,inforeactor.ru,iz.ru,kirov-portal.ru,kriminal.net.ua,livelib.ru,m24.ru,melodrama1.com,mgorod.kz,mir24.tv,mk.ru,myhistori.ru,nashgorod.ru,nation-news.ru,nevnov.ru,newinform.com,news-front.info,news.ru,nn.ru,ntv.ru,osnmedia.ru,penzainform.ru,penzavzglyad.ru,pikinform.ru,pnp.ru,polit.info,politexpert.net,politonline.ru,pora.ru,pravda.ru,putin-news.ru,radidomapro.ru,radioromantika.ru,ratel.kz,ren.tv,ria56.ru,riafan.ru,rueconomics.ru,rusplt.ru,russian.rt.com,rusvesna.su,sevkavportal.ru,sharknews.ru,sm.news,sminews.ru,sobesednik.ru,sport-express.ru,steaklovers.menu,sun-news.ru,topwar.ru,trendymen.ru,tsargrad.tv,tsn24.ru,tvc.ru,tvernews.ru,ua.today,uralpress.ru,usa.one,vazhno.ru,vedomosti.ru,versia.ru,veseloeradio.ru,vesti-yamal.ru,vesti.ru,vesti.uz,vestivrn.ru,vokrug.tv,vokrugsveta.ru,xn--b1ats.xn--80asehdb,zakon.kz,zr.ru##[id^="unit_"]
 d19069 1
 d19081 1
 a19081 1
 menu.cc.ua,mycooking.pp.ua##a[href$=".htm"]
+d19101 1
+a19101 1
+360tv.ru,avtonovostidnya.ru,avtovzglyad.ru,bst.bratsk.ru,coop-land.ru,energyfm.ru,fonmod.com,fontanka.ru,gdeichto.ru,ixbt.com,kommersant.ru,life.ru,metronews.ru,moe-belgorod.ru,moe-kursk.ru,moe-lipetsk.ru,moe-online.ru,moe-tambov.ru,mydecor.ru,mywebpc.ru,naked-science.ru,new-magazine.ru,news.ru,nsn.fm,oper.ru,penzainform.ru,peterburg2.ru,pnz.ru,regnum.news,regnum.ru,rifey.ru,rusnext.ru,russian.rt.com,rutube.ru,sm.news,sovsport.ru,sport-express.ru,sportsdaily.ru,super.ru,syzran-small.ru,teleprogramma.pro,thegirl.ru,tsargrad.tv,tulapressa.ru,tvzvezda.ru,u-f.ru,ura.news,utyug.info,vz.ru,xn----7sbabwosghnf8al4lkj7b.xn--p1ai,zaks.ru,zr.ru##a[href*="//dzen.ru/"]
 d19118 1
 a19118 1
 2x2forum.ru,5terka.com,algagroup.su,alive-ua.com,animemobi.ru,aniplay.tv,anirem.org,ap22.ru,app-time.ru,appsgames.ru,atlantisfood.ru,bakemono.ru,big-anime.ru,bik-info.ru,cheatground.ru,chelnyagro.ru,chemezova.ru,cknow.ru,click-or-die.ru,ecofoodferma.ru,elektrosat.ru,etika-education.ru,etotop.net,f-igri.ru,gamelendi.ru,gameout.ru,gazetaby.com,gazetaby.info,gazetaby.media,geekmir.ru,gitjournal.tech,hdclub.ua,hype.tech,igra-wow.ru,igui.mobi,inform-ua.info,instrument16.ru,jut-su.net,klub-masterov.ru,kp.kg,kp.kz,kp.md,kp.ru,kritika24.ru,ladylib.net,libking.ru,mixbits.ru,mmorpg.su,moy-instrument.ru,mrtranslate.ru,multfilms.online,newsgsm.com,ognennoetv.ru,ok-tv.org,only-tv.org,osortah.ru,outsidethebox.ms,parazit24.me,peugeot-citroen.net,pluggedin.ru,presentation-creation.ru,privatbankrf.ru,ravis-avto.ru,remont-avtovaz.ru,repack-fitgirl.com,revelationonlinedb.ru,rpgdon.com,rusplt.ru,rutracker.ru,samelectric.ru,selomoe.ru,seloved.ru,shkolniku.com,siddgames.ru,simhost.org,smotret-fizruk-online.su,sonix.tk,steampass.ru,stiralkainfo.ru,technical.city,tivix.co,tmbw.ru,topmmo-games.ru,torrent-games-2016.ru,torrent-games.rip,totori.ru,trackitonline.ru,tuttop.com,tv-only.org,tvoilokony.ru,uanic.name,uaspectr.com,ustanovkaos.ru,vizazh-2.ru,volga.news,vsetop.org,vsetut.su,yamdex.net,zhaparova.ru##a[href*="/ad.admitad.com/"]
@@ -126,11 +148,13 @@ d19400 1
 a19400 1
 5torrent.net,7torrents.net,8torrent.net,animevost.org,animevost.top,bootos.net,dosgames.ru,knigomania.org,kritka.su,minecraft-files.ru,newpcgame.ru,noob-club.ru,politobzor.net,torrent-bro.ru,torrent-cash.ru,torrent-post.ru,torrentmir.com,torrgames.ru,trupornolabs.org,vost.pw,vse-serii.net,www.zoneofgames.ru,xn----7sbcqvkpkdtgif1a4h.xn--p1ai##a[href*="vk.cc"]
 d19446 1
+d19873 1
 d20064 1
 a20064 1
 amdm.ru,amuzic.ru,apachan.net,astromeridian.ru,centr-molodosti.ru,demotivation.me,documentalnye.ru,e-libra.ru,elek.club,filebase.ws,gameru.net,gossebanmen.ru,hi-fi.ru,igrigo.net,kazakh-zerno.net,miytvideo.ru,nowfilms.ru,oterraria.ru,peterburg2.ru,repackov.net,repost.uz,rogoff.club,rutab.net,sexytal.com,story-house.ru,telegraf.in.ua,tourister.ru,vorle.ru,womo.ua##body > noindex
 d20159 1
 d20550 1
+d20588 1
 d20698 1
 a20698 1
 allgames.zone,bestgamer.su##div[id][align="center"]
@@ -188,6 +212,7 @@ d27506 2
 a27507 2
 dzen.ru##div[class*="article__"] > .undefined ~ div[class*="midlle"] > div[id][class]
 dzen.ru##div[class*="widlet__container"] > div[class*="widlet__"] ~ div:style(display: none !important)
+d27634 7
 d27776 1
 d27803 1
 a27944 1
@@ -195,6 +220,7 @@ bonus-tv.ru##+js(addEventListener-defuser, loadstart, isImmediatePropagationStop
 d27948 1
 a27948 1
 7days.ru,cdn.viqeo.tv,kinonews.ru,kp.kg,kp.kz,kp.md,kp.ru,mk.ru,ohotniki.ru,portalvirtualreality.ru,radiokp.ru,sportkp.ru,wday.ru,woman.ru,www.fontanka.ru##+js(addEventListener-defuser, visibilitychange, captureContext)
+d27999 1
 d28018 1
 d28036 1
 d28054 1
