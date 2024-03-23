@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 23 Mar 2024 05:21:53 +0000
-! Diff-Path: ../patches/2024.3.23.321.patch#ruadlist
+! Last modified: Sat, 23 Mar 2024 10:21:52 +0000
+! Diff-Path: ../patches/2024.3.23.621.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -6233,7 +6233,7 @@
 ||ulclick.ru^$third-party
 ||uldmare.com^$third-party
 ||ulenr.top^$third-party
-||ulogin.ru^$third-party
+||ulogin.ru^
 ||ultrapay.net^
 ||ulyvjty4rd.com^$third-party
 ||umagnet.ru^$third-party
@@ -21673,7 +21673,6 @@ rafkino.com##div[id^="MarketGid"]
 @@||s.zhctrack.net/z|$xmlhttprequest,domain=epravda.com.ua|eurointegration.com.ua|gorod.dp.ua|inforesist.org
 @@||s.zmctrack.net/z|$xmlhttprequest,domain=i.ua|ivona.ua|meteo.ua|panno4ka.net
 @@||s.znctrack.net/z|$xmlhttprequest,domain=censor.net|gazeta.ua|i.ua|mail.ukr.net|meteofor.com.ua|tabloid.pravda.com.ua|viva.ua
-||crackstatus.net^$csp=script-src
 ||imgfrost.net^$third-party
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
@@ -21698,7 +21697,7 @@ pikabu.ru#?#.stories-feed__container > .story div:-abp-properties(/min-height: .
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> div > header[class*=" "])
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(/min-height: 20.px|min-height: 29.px|min-height: 30.px|min-height: 300./))
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(/min-height: calc.29.px/))
-crackstatus.net,dracon-zet.ru,fonmod.com,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
+dracon-zet.ru,fonmod.com,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 android-mafia.com,game4you.top,games-pc.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##:not(this-site-promotes-malware)
 pikabu.ru##[data-block-name]
 liveinternet.ru,sdamgia.ru##[data-container]
@@ -21722,6 +21721,8 @@ sdamgia.ru##div[style*="important;"][style*="width:"][style*="height:"] *
 pikabu.ru##div[style^="width: 300px; height:"]
 liveinternet.ru##style + div > div > div > div > div a
 !#endif
+tragtorr.in##:not(my-obnaruzhili-blokirovshchik)
+||tragtorr.in^$csp=script-src
 ! Блокировка ресурсов, намеренно продвигающих вредоносное ПО и фейки
 apad2.top,inferno.games,mediagetguru.ru,monna2.top,only-soft.org,rutor-game.info,rutor-games.ru,rutorgame.info,rutorgames.ru,torent-igruha.com,torrent-music.ru,torrent-soft.net,torrent-word.ru,torrentigo.net,torrentigruha.org,torrentsoft.net,where-game.ru##:not(this-site-promotes-malware)
 ! Намеренное продвижение фейков и мошенников
@@ -27992,7 +27993,6 @@ websdr.space##+js(no-setTimeout-if, setInterval, )
 blackwot.ru##+js(no-setTimeout-if, showModal)
 anime-chan.me##+js(no-setTimeout-if, sparkle)
 num-words.com,softportal.com##+js(no-setTimeout-if, toUTCString)
-crackstatus.net##+js(no-setTimeout-if, window.location.href)
 liveinternet.ru##+js(no-xhr-if, /ad\.mail|adfox|adhigh|adriver|mc\.yandex|mediametrics|otm-r|static-mon/)
 motorpage.ru##+js(no-xhr-if, /br/)
 anidub.vip,anidubonline.com##+js(no-xhr-if, /getCode|\/vast/)
