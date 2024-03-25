@@ -1,8 +1,8 @@
-diff name:ruadlist lines:105 checksum:c4b91135d8
+diff name:ruadlist lines:113 checksum:eb29167d80
 d4 2
 a5 2
-! Last modified: Mon, 25 Mar 2024 07:17:47 +0000
-! Diff-Path: ../patches/2024.3.25.437.patch#ruadlist
+! Last modified: Mon, 25 Mar 2024 12:34:02 +0000
+! Diff-Path: ../patches/2024.3.25.754.patch#ruadlist
 d529 1
 d1140 1
 a2667 1
@@ -88,11 +88,18 @@ dracon-zet.ru,fonmod.com,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 a21725 2
 tragtorr.in##:not(my-obnaruzhili-blokirovshchik)
 ||tragtorr.in^$csp=script-src
-a21795 1
+a21795 2
+||hidemyname.cc^$third-party,popup
 ||hidemyname.info^$third-party,popup
+d22135 1
+d22158 1
 d22818 1
 a22818 1
 mail.yandex.by,mail.yandex.com,mail.yandex.kz,mail.yandex.ru,mail.yandex.uz##div[class*="DirectLine"]
+d27151 1
+d27154 1
+a27154 1
+116.ru,14.ru,161.ru,164.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,62.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,proizhevsk.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru##div[class^="articleBlockViqeo_"][class*="notReady_"]:style(padding-bottom: unset !important)
 d27612 7
 d27976 1
 d27995 1
@@ -104,3 +111,4 @@ a28115 1
 vc.ru##.andropov_video:remove-attr(data-video-play-mode)
 a28192 1
 dtf.ru,vc.ru##video:remove-attr(autoplay)
+d28262 3
