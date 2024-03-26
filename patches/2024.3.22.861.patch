@@ -1,8 +1,8 @@
-diff name:ruadlist lines:156 checksum:4f1088d13c
+diff name:ruadlist lines:162 checksum:afc712f3cc
 d4 2
 a5 2
-! Last modified: Tue, 26 Mar 2024 08:23:16 +0000
-! Diff-Path: ../patches/2024.3.26.503.patch#ruadlist
+! Last modified: Tue, 26 Mar 2024 13:21:09 +0000
+! Diff-Path: ../patches/2024.3.26.801.patch#ruadlist
 d529 1
 d1140 1
 a2667 1
@@ -59,8 +59,6 @@ pkrc.ru##.bn-wrapperWrithwhasd
 d16564 1
 a16564 1
 businessman.ru,neva.today,syl.ru##.intext-block
-a16931 1
-neva.today##.mix-news
 d17305 1
 a17305 1
 yakutia.info##.popular
@@ -87,6 +85,8 @@ a19094 1
 1777.ru,1istochnik.ru,7days.ru,actualnews.org,allboxing.ru,amurmedia.ru,argumenti.ru,atas.info,auto.ru,autosaratov.ru,autosport.com.ru,av.by,baby.ru,bel.ru,belkagomel.by,bidbaits.ru,carsweek.ru,chitamedia.su,chukotkamedia.ru,cq.ru,ctc.ru,deita.ru,eaomedia.ru,eva.ru,finam.ru,fishki.net,fontanka.ru,food.ru,friday.ru,interface31.ru,irkutskmedia.ru,iz.ru,izhlife.ru,kaifolog.net,kamchatkamedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,lipetskmedia.ru,magadanmedia.ru,mel.fm,mk.ru,nakhodka.media,nashe.ru,neva.today,new-magazine.ru,noob-club.ru,nsn.fm,om1.ru,osnmedia.ru,politrussia.com,povarenok.ru,priamurmedia.ru,primamedia.ru,prufy.ru,radiojazzfm.ru,radioultra.ru,realt.by,riamo.ru,rockfm.ru,russian.rt.com,rusvesna.su,sakhalinmedia.ru,sevastopolmedia.ru,sm.news,smolensk-i.ru,smotrim.ru,sovets.net,sovets24.ru,sravni.ru,starhit.ru,stavropol.media,study.ru,svpressa.ru,takiedela.ru,teleport2001.ru,topnews.ru,tv2.today,ukraina.ru,ulanmedia.ru,ussurmedia.ru,vm.ru,vsezdorovo.com,www.kolesa.ru,yakutiamedia.ru,zaycev.net##a[href*="//zen.yandex.ru/"]
 d19521 1
 d19856 1
+a20494 1
+neva.today##div[class^="mix-news"]
 d20569 1
 d21231 1
 a21231 1
@@ -134,7 +134,7 @@ tornado.3dn.ru##.wraps:style(margin-top: 0 !important)
 d27151 1
 d27154 1
 a27154 1
-116.ru,14.ru,161.ru,164.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,62.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,proizhevsk.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru##div[class^="articleBlockViqeo_"][class*="notReady_"]:style(padding-bottom: unset !important)
+116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,62.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,proizhevsk.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru##div[class^="articleBlockViqeo_"][class*="notReady_"]:style(padding-bottom: unset !important)
 d27612 7
 a27753 1
 positiverecords.ru##+js(abort-current-inline-script, $, window.location.href)
@@ -146,6 +146,12 @@ a27934 1
 stalkermods.ru##+js(href-sanitizer, a[href*="/redir.php?r="], ?r)
 d27976 1
 d27995 1
+d27999 1
+a27999 1
+116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,62.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,proizhevsk.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,www.fontanka.ru##+js(no-xhr-if, /hits/event/, method:POST)
+d28040 1
+a28040 1
+116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,62.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,proizhevsk.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru##+js(set-constant, Object.prototype._requestIframeData, noopFunc)
 d28190 1
 a28190 1
 pornopuk.com,huyamba.tv,piratam.net,piratca.net,porn720.biz,pornoakt.*,sexitorrent.com,sextor.org,domahatv.com,torrent-pirat.com,xtorrent.net,rapidzona.tv,xxxrip.net,xxxtor.com,hentai-share.one,3dn.ru##+js(abort-current-inline-script, document.querySelectorAll, popMagic)

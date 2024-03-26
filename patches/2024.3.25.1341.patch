@@ -1,8 +1,8 @@
-diff name:ruadlist lines:46 checksum:4f1088d13c
+diff name:ruadlist lines:55 checksum:afc712f3cc
 d4 2
 a5 2
-! Last modified: Tue, 26 Mar 2024 08:23:16 +0000
-! Diff-Path: ../patches/2024.3.26.503.patch#ruadlist
+! Last modified: Tue, 26 Mar 2024 13:21:09 +0000
+! Diff-Path: ../patches/2024.3.26.801.patch#ruadlist
 a4722 1
 ||propub.ru^$third-party
 d10453 1
@@ -11,8 +11,6 @@ a10453 1
 d16556 1
 a16556 1
 businessman.ru,neva.today,syl.ru##.intext-block
-a16923 1
-neva.today##.mix-news
 d17297 1
 a17297 1
 yakutia.info##.popular
@@ -22,6 +20,8 @@ a19076 1
 d19086 1
 a19086 1
 1777.ru,1istochnik.ru,7days.ru,actualnews.org,allboxing.ru,amurmedia.ru,argumenti.ru,atas.info,auto.ru,autosaratov.ru,autosport.com.ru,av.by,baby.ru,bel.ru,belkagomel.by,bidbaits.ru,carsweek.ru,chitamedia.su,chukotkamedia.ru,cq.ru,ctc.ru,deita.ru,eaomedia.ru,eva.ru,finam.ru,fishki.net,fontanka.ru,food.ru,friday.ru,interface31.ru,irkutskmedia.ru,iz.ru,izhlife.ru,kaifolog.net,kamchatkamedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,lipetskmedia.ru,magadanmedia.ru,mel.fm,mk.ru,nakhodka.media,nashe.ru,neva.today,new-magazine.ru,noob-club.ru,nsn.fm,om1.ru,osnmedia.ru,politrussia.com,povarenok.ru,priamurmedia.ru,primamedia.ru,prufy.ru,radiojazzfm.ru,radioultra.ru,realt.by,riamo.ru,rockfm.ru,russian.rt.com,rusvesna.su,sakhalinmedia.ru,sevastopolmedia.ru,sm.news,smolensk-i.ru,smotrim.ru,sovets.net,sovets24.ru,sravni.ru,starhit.ru,stavropol.media,study.ru,svpressa.ru,takiedela.ru,teleport2001.ru,topnews.ru,tv2.today,ukraina.ru,ulanmedia.ru,ussurmedia.ru,vm.ru,vsezdorovo.com,www.kolesa.ru,yakutiamedia.ru,zaycev.net##a[href*="//zen.yandex.ru/"]
+a20484 1
+neva.today##div[class^="mix-news"]
 d21220 1
 a21220 1
 itc.ua,mc.today,newsua.ru,profidom.com.ua,smolnarod.ru,speka.media,ternopoliany.te.ua,thepage.ua,tv-gubernia.ru,ua.news,vmeste.tv,voip.ru,yablor.ru##img[src*="/images/banner"]
@@ -45,3 +45,12 @@ d22299 1
 a22299 2
 116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,62.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,proizhevsk.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru##div[class^="articleBlockFullscreenGallery_"] > div[class^="wrapper_"] > div[class^="slider_"] ~ div
 72.ru,chita.ru,ngs.ru,ufa1.ru,www.e1.ru##div[data-test="header-sticky"] > div > section ~ div
+d27146 1
+a27146 1
+116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,62.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,proizhevsk.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru##div[class^="articleBlockViqeo_"][class*="notReady_"]:style(padding-bottom: unset !important)
+d27986 1
+a27986 1
+116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,62.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,proizhevsk.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,www.fontanka.ru##+js(no-xhr-if, /hits/event/, method:POST)
+d28027 1
+a28027 1
+116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,62.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,proizhevsk.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru##+js(set-constant, Object.prototype._requestIframeData, noopFunc)
