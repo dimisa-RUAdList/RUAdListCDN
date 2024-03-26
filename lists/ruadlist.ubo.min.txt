@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 26 Mar 2024 18:24:19 +0000
-! Diff-Path: ../patches/2024.3.26.1104.patch#ruadlist
+! Last modified: Tue, 26 Mar 2024 23:21:27 +0000
+! Diff-Path: ../patches/2024.3.26.1401.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10220,7 +10220,6 @@ $xmlhttprequest,domain=happy-biock.info|happy-block.info|howto-news.info|mschist
 .blgy.ru^$script,domain=blgy.ru
 .botinok.porn^$script,domain=botinok.porn
 .calculat.ru$script,domain=calculat.ru
-.censor.net/js/$script
 .chinimavto.ru^$script,domain=chinimavto.ru
 .chto-proishodit.ru^$script,domain=chto-proishodit.ru
 .com-x.life^$script
@@ -10665,6 +10664,7 @@ lada.kz/uploads/banners/
 ||a.sakh.name/bm.php
 ||a.velvet.by^
 ||a.votpusk.ru/show.php$domain=votpusk.ru
+||a4.censor.net/
 ||aacalc.ru/images/*funpay
 ||aacalc.ru/images/Banner
 ||abc-people.com/banners/
@@ -27946,7 +27946,7 @@ kufar.by,pikabu.ru##+js(json-prune, data, errors)
 pikabu.ru##+js(json-prune, isVideoAutoplayMode swUrl)
 igromania.ru,kanobu.ru##+js(json-prune, results.fixed)
 znanija.com##+js(json-prune, tiers.TIER_ANY)
-ashdi.vip,tortuga.wtf##+js(json-prune, vast)
+aniqit.com,ashdi.vip,kodik.info,tortuga.wtf##+js(json-prune, vast)
 595.ucoz.net,5wip-file.ru,file-mods.ru,freesoft.ru,infourok.ru,mixmuz.ru,myshared.ru,myzcloud.me,n-torrents.org,sims3pack.ru,wallegend.net##+js(nano-setInterval-booster)
 studizba.com,surl.li##+js(nano-setInterval-booster, #timer)
 muzlan.top##+js(nano-setInterval-booster, .numcard)
