@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 27 Mar 2024 09:20:39 +0000
-! Diff-Path: ../patches/2024.3.27.560.patch#ruadlist
+! Last modified: Wed, 27 Mar 2024 14:21:16 +0000
+! Diff-Path: ../patches/2024.3.27.861.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -13046,6 +13046,7 @@ lada.kz/uploads/banners/
 ||traderhelp.info/js/fixads.js
 ||tradingview.com/external-embedding/embed-widget-ticker-tape.js$domain=fanforum.ru
 ||traffilm.net/img/brand
+||tragtorr.in/css/back.
 ||trailer.allatv.online/*.mp4|$domain=trailer.allatv.online
 ||transinfo.by/files/transinfo/media/bnrscr/$object
 ||transkarpatia.net/templates/Gazeta/js/abd.min.js
@@ -25805,6 +25806,7 @@ ritsatv.ru##.message.ab
 forum.niiot.net##.modal
 2x2tv.ru##.owl-wrapper-outer .slideAlt
 clan-soprano.ru##.popupBlock
+tragtorr.in##.r-lock
 kodik.info##.second-message
 radioromantika.ru##.showMessageAdBlock
 kg-portal.ru##.social_login > .ulogin ~ .caution
@@ -27542,6 +27544,7 @@ tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.uz##.zen
 tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.uz##[class*="grid_period_"] > div[class] > div[class^="grid__"] ~ div:not([class^="grid__"])
 tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.uz##body > #mount > div[class] > :not(header):not(main):not(footer):not(.metrika-loader)
 ! ---
+ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz###rsya-guarantee
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.Root > .ECommerceCarousel
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.adv_pos_compare-bottom
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.adv_pos_compare-side
@@ -28227,6 +28230,7 @@ kinoafisha.info##videotronic-player:remove-attr(data-video-autoplay)
 ||video.matchtv.ru/iframe/feed/*autostart=1$subdocument,removeparam=skin_name
 ||viqeo.tv/*/vq_starter.js$third-party,script,domain=dni.ru|~dom.mail.ru|kanobu.ru|~lady.mail.ru|lifehacker.ru|mail.ru|pravda.ru|sportmail.ru|womanhit.ru
 ||vk.com/video_ext.php?$third-party,subdocument,removeparam=autoplay,domain=~mediahope.ru
+||vk.com/video_ext.php?*autoplay=1$removeparam=js_api,domain=mail.ru
 ||widgets.kinopoisk.ru/discovery/trailer/*&loop=1&autoplay=1$subdocument,domain=www.kinopoisk.ru
 ||yandex.ru/ads/system/context.js|$important,script,domain=playground.ru
 ||youtube-nocookie.com/embed/*autoplay=1$subdocument,removeparam=autoplay,domain=weukraine.tv
