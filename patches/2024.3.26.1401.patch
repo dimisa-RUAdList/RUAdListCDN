@@ -1,14 +1,16 @@
-diff name:ruadlist lines:101 checksum:7be7b2eb09
+diff name:ruadlist lines:136 checksum:bef8435dcc
 d4 2
 a5 2
-! Last modified: Fri, 29 Mar 2024 06:24:28 +0000
-! Diff-Path: ../patches/2024.3.29.384.patch#ruadlist
+! Last modified: Fri, 29 Mar 2024 11:18:24 +0000
+! Diff-Path: ../patches/2024.3.29.678.patch#ruadlist
 d7353 1
 d7359 1
 d7412 1
 d7416 2
 d7437 1
 d7464 1
+a8568 1
+##a[href*="://profiledbase.com/"]
 a8898 1
 $third-party,popup,domain=2ip.ru
 d9603 1
@@ -17,6 +19,11 @@ d9656 1
 d9659 2
 d9680 1
 d9701 1
+a10106 1
+||24click.*/top/$csp=script-src
+d10154 1
+a10154 1
+||ontvtime.ru^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: *.googletagmanager.com *.gstatic.com *.ok.ru vk.com
 d11020 1
 a11434 1
 ||gazetametro.ru/commercial/banners/
@@ -27,6 +34,8 @@ d13233 1
 d13952 1
 a13952 1
 od-news.com,sudostroenie.info###header_banner
+a13988 1
+mazepa.to###ipbwrapper > .blurBox > table > tbody > tr > td + td
 d13990 1
 d14729 1
 a14729 1
@@ -39,8 +48,9 @@ a15054 1
 u24.ua##.article__adml
 d15058 1
 d15230 1
-a15571 1
-mazepa.to##.blurBox > table > tbody > tr > td + td
+d15289 1
+a15289 1
+168.ru,1plus1.international,1plus1.ua,1prime.ru,1sn.ru,2mm.ru,2plus2.ua,2pricolisty.ru,78.142.19.8,agrobusiness.com.ua,allcio.ru,altgazeta.ru,anadyr.org,apihost.ru,avoka.do,baikal-daily.ru,baltnews.ee,be-in.ru,belretail.by,belsat.eu,bestrussia.tv,bgoperator.ru,blitz.if.ua,blizko.ru,budport.com.ua,bzserial.online,carsweek.ru,chehov-vid.ru,chipfind.ru,chistosex.org,cinetv.ru,copyright.ru,dailycomm.ru,danilin.biz,defence-ua.com,delovoibiysk.ru,dengi.ua,dentalmagazine.ru,dialog.ua,dnl.com.ua,dnl.dn.ua,domashniy.ru,dostyp.com.ua,echo-oren.ru,echomsk.spb.ru,ecology.md,egamersworld.com,examen.ru,exler.ru,f1cd.ru,f1news.ru,factroom.ru,fantv.ru,fc-zenit.ru,fedpress.ru,finobzor.ru,fn-volga.ru,foodinnovation.ru,football.ua,forum.tiguans.ru,fraza.com,gamestar.ru,glavcom.ua,go32.ru,gooool.tv,gooool365.org,gordonua.com,gorod55.ru,hen-tai.ru,hen-tay.com,hightech.fm,hostingkartinok.com,i2hard.ru,iasakh.com,igry-man.net,iguides.ru,inc-news.ru,info-ua.com,inosmi.ru,interfax.by,interior.ru,intermedia.ru,intex-press.by,it-weekly.ru,it-world.ru,joxi.ru,kherson.net.ua,kinoafisha.ua,kinoplex.ru,klassnye-chasy.ru,kod.ru,kolesa.kz,konkurent.ua,korabel.ru,kulichki.net,kurgan.ru,kurs.com.ua,kursiv.media,lentasporta.com,ligasy.kz,live4fun.ru,livejournal.com,lookatme.ru,loveradio.ru,marker.ru,maximum.ru,minus.lviv.ua,mipped.com,mods-fs.net,moldfootball.com,mos-holidays.ru,mosfilmgold.ru,moviestape.net,mv.org.ua,namba.kg,namba.kz,namba.tj,news.nashbryansk.ru,news.pn,newslab.ru,nnews.com.ua,odpublic.net,officepackage.info,ogosex.com.ua,oneprog.ru,online-mult.net,ontvtime.ru,oper.ru,osvita.ua,penzadoctor.ru,peugeot-citroen.net,playboyrussia.com,pn.com.ua,politobzor.net,poltavske.tv,portal.lviv.ua,post-tracker.ru,ppc.world,pravo.ru,prm.ru,render911.ru,reporter.ua,repost.uz,reverso.net,ria.ru,ringside24.com,roem.ru,rudetective.tv,rusroman.ru,russia.ru,rybalka.com,rzn.info,sakh.com,sakhalin.info,samara24.ru,sarnovosti.ru,savepic.ru,seodiz.ru,showgid.tv,sib.fm,skypefree.info,slon.ru,softkey.ru,sonikelf.ru,sopsport.org,spbdnevnik.ru,sport-tv.by,sports.uz,stereo.ru,stopcor.org,stranaru.ru,strashnoe.tv,superomsk.ru,supersadovnik.ru,tass.ru,tele.click,teleg.run,tet.tv,text.ru,tochka.net,topwar.ru,tr.anidub.com,trademaster.ua,tulapressa.ru,tumix.ru,turizm.ru,tvernews.ru,tvrain.ru,uaportal.com,ugorod.kr.ua,ukraina.ru,ukrlife.tv,ukrreal.info,ukurier.gov.ua,unian.tv,usionline.com,val.ua,vce-besplatno.ru,vesty.co.il,vm.ru,vomske.ru,vprognoze.ru,vsluh.net,warfiles.ru,weacom.ru,weukraine.tv,wildo.ru,www.ivi.ru,ya62.ru,yk.kz,yourlink.in,yuginform.ru,yugopolis.ru,yznal.ru,zanoza.kg,zvezdi.ru##.banner
 d15651 1
 d15656 1
 d15694 1
@@ -48,6 +58,8 @@ a15898 1
 censor.net##.container.d-print-none aside[id][style^="height:"]
 d16018 1
 d16724 1
+a17006 1
+chistosex.org##.nav > .menu-part
 d17730 1
 d18992 1
 a18992 1
@@ -67,6 +79,8 @@ gazetametro.ru##div[class*="AdBox"]
 a20456 1
 sudostroenie.info##div[class^="erid"]
 d21677 1
+a21686 1
+||pikabu.ru/ruchka?$xmlhttprequest,domain=pikabu.ru
 d21698 1
 a21698 1
 dracon-zet.ru,fonmod.com,positiverecords.ru,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
@@ -84,10 +98,20 @@ sportmail.ru##div[class*="rb-slot"]
 d22301 1
 a22301 1
 116.ru,72.ru,chita.ru,e1.ru,ngs.ru,ngs55.ru##[data-test="sticky-header"] > div > div > div > div:first-child:not([data-test])
+a22870 1
+&yhic=$popup,domain=dzen.ru
+a22873 1
+?yhic=$popup,domain=dzen.ru
+d24848 1
+d24850 1
+a24850 1
+100kolyasok.kz,4.u0166811.z8.ru,calls.su,chistosex.org,teu-eurocara.com.ua#@#.adv-text
+d25192 1
+a25192 1
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=1plus1.video|1tv.ru|24tv.ua|9191youxi.com|bitent.com|cdn.htmlgames.com|cdn.witchhut.com|euronews.com|flashgames.ru|gamak.tv|games.cdn.famobi.com|gameswf.com|girlsgogames.ru|iz.ru|limehd.tv|matchtv.ru|mirtesen.sputnik.ru|motorsport.tv|online-perviy.tv|online-rossiya1.tv|peers.tv|player.tubia.com|player.twitch.tv|rbc.ru|ren.tv|rusvesna.su|showjet.net|showjet.ru|sportbox.ru|ucankus.com|unian.info|unian.net|unian.ua|veedi.com|vgtimes.ru|videoframe.at|viho.me|viho.pro|viho.tv|wifire.tv|wink.rt.ru|wink.ru|wormax.io
 d25486 1
 d25644 2
-a25645 2
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=open3dmodel.com
+a25645 1
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js|$domain=595.ucoz.net|adult-images.ru|anypictures.ru|blogging-techies.com|botrix.live|crast.net|daz3d.ru|di.fm|electric-house.ru|fcportables.com|forums.rusmedserv.com|freeopenvpn.org|ikigaitest.com|imgbum.ru|investing.com|izi-invest.ru|kvadratmetr.uz|mod-wot.ru|nv.ua|oligarx.uz|otzovik.com|ozlib.com|parnuxi.biz|pixcloud.ru|radio-archive.ru|radioromantika.ru|stroi-help.ru|tarkov-market.com|tehnar.net.ua|tehnobzor.ru|tehnografi.com|tests24.su|tubeload.co|xpicture.ru|yvid.ru
 d25735 1
 d25757 1
@@ -95,7 +119,18 @@ d25793 1
 d25851 1
 a25851 1
 vkplay.ru##div[class^="AdBlockAlert_root"]
+d25855 1
+a25855 1
+rutube.ru##div[class^="notification-"][class*="module__"]
 d27382 1
+d27483 2
+a27484 2
+dzen.ru##[class*="folors"] div[id][class^="feed"] [class*="wrapper"][aria-label] ~ article:not([aria-label])
+dzen.ru##aside[id^="article_"][class*="_rhgt"] > div[class]
+d27486 2
+a27487 2
+dzen.ru##div[class*="article__"] > .undefined ~ div[class*="mldlle"] > div[id][class]
+dzen.ru##div[class*="widjet__container"] > div[class*="widjet__"] ~ div
 a27544 1
 ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz###rsya-guarantee
 a28229 1
