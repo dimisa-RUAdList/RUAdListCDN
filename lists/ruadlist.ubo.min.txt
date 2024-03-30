@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 30 Mar 2024 12:31:46 +0000
-! Diff-Path: ../patches/2024.3.30.751.patch#ruadlist
+! Last modified: Sat, 30 Mar 2024 17:17:56 +0000
+! Diff-Path: ../patches/2024.3.30.1037.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -9346,6 +9346,7 @@ $third-party,popup,domain=2ip.ru
 .infox.sg^$popup
 /blog_strijenko/*$popup
 ||104.198.76.219^$popup
+||24click.*/top/$popup
 ||24smi-*/top/$popup
 ||24smi.*/top/$popup
 ||9donline.ru/welcome/?mita=$popup
@@ -13034,6 +13035,7 @@ lada.kz/uploads/banners/
 ||traderhelp.info/js/fixads.js
 ||tradingview.com/external-embedding/embed-widget-ticker-tape.js$domain=fanforum.ru
 ||traffilm.net/img/brand
+||tragtorr.info/css/back.
 ||trailer.allatv.online/*.mp4|$domain=trailer.allatv.online
 ||transinfo.by/files/transinfo/media/bnrscr/$object
 ||transkarpatia.net/templates/Gazeta/js/abd.min.js
@@ -25740,6 +25742,7 @@ zhurnaly.biz#@#.item-ads
 ! - hide & block
 pornhub.com###abAlert
 d3ward.github.io###ad_ctd
+tragtorr.info###blockms
 tvvse.my1.ru###cont-i > span[style*="color:red"]
 fast-fiml.ru,fast-torrent.club,fast-torrent.ru,fast-torrent.su,filmpotok.ru,kinomuch.ru,nebeda.net,pickfilm.ru,veleto.ru,vixim.ru###container > center:nth-child(-n+3)
 fm-app.ru,tvapp.su,yootv.ru###content > div[style*="fixed"]
