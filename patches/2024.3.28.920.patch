@@ -1,14 +1,17 @@
-diff name:ruadlist lines:101 checksum:054e25089f
+diff name:ruadlist lines:112 checksum:9623dfc3b3
 d4 2
 a5 2
-! Last modified: Sun, 31 Mar 2024 08:23:35 +0000
-! Diff-Path: ../patches/2024.3.31.503.patch#ruadlist
+! Last modified: Sun, 31 Mar 2024 13:20:42 +0000
+! Diff-Path: ../patches/2024.3.31.800.patch#ruadlist
 a8561 1
 ##a[href*="://profiledbase.com/"]
 a9347 1
 ||24click.*/top/$popup
 a10093 1
 ||24click.*/top/$csp=script-src
+d10110 1
+a10110 1
+||d3ward.github.io/toolz/adblock$csp=connect-src 'self'; script-src https://d3ward.github.io/toolz/js/adblock.js
 d10141 1
 a10141 1
 ||ontvtime.ru^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: *.googletagmanager.com *.gstatic.com *.ok.ru vk.com
@@ -16,12 +19,15 @@ d10177 1
 d10505 1
 a10505 1
 /stargate*.$image,popup,xmlhttprequest,domain=filma24.ru|hlamer.ru
+d11122 1
+d11124 1
 a13035 1
 ||tragtorr.info/css/back.
 a13230 1
 ||vokrug.tv/*/videopartners/
 a13974 1
 mazepa.to###ipbwrapper > .blurBox > table > tbody > tr > td + td
+d14232 1
 d14650 1
 a14650 1
 filma24.ru,hlamer.ru###video-container .overlay_video
@@ -35,11 +41,15 @@ d15457 1
 d15555 1
 a15850 1
 kinoafisha.info##.companyButton
+d16750 1
 a16986 1
 chistosex.org##.nav > .menu-part
+d18274 1
 d18919 1
 a18919 1
 101.ru,19rus.info,2000.ua,5-tv.ru,56orb.ru,62info.ru,7info.ru,afanasy.biz,agitpro.su,allboxing.ru,anekdot.ru,argumenti.ru,baltnews.ee,belive.ru,bigpicture.ru,bombardir.ru,chehov-vid.ru,daily-inform.ru,dni.ru,dnpmag.com,do-slez.com,eadaily.com,eg.ru,expert.ru,ferra.ru,gazeta-tula.ru,glavnoe24.ru,gorobzor.ru,gorvesti.ru,govoritmoskva.ru,gubdaily.ru,hightech.plus,iarex.ru,inforeactor.ru,iz.ru,kirov-portal.ru,kriminal.net.ua,livelib.ru,m24.ru,melodrama1.com,mgorod.kz,mir24.tv,mk.ru,myhistori.ru,nashgorod.ru,nation-news.ru,nevnov.ru,newinform.com,news-front.info,news.ru,nn.ru,ntv.ru,osnmedia.ru,penzainform.ru,penzavzglyad.ru,pikinform.ru,pnp.ru,polit.info,politexpert.net,politonline.ru,pora.ru,pravda.ru,putin-news.ru,radidomapro.ru,radioromantika.ru,ratel.kz,ren.tv,ria56.ru,riafan.ru,rueconomics.ru,rusplt.ru,russian.rt.com,rusvesna.su,sevkavportal.ru,sharknews.ru,sm.news,sminews.ru,sobesednik.ru,sport-express.ru,steaklovers.menu,sun-news.ru,topwar.ru,trendymen.ru,tsargrad.tv,tsn24.ru,tvc.ru,tvernews.ru,ua.today,uralpress.ru,usa.one,vazhno.ru,vedomosti.ru,versia.ru,veseloeradio.ru,vesti-yamal.ru,vesti.ru,vesti.uz,vestivrn.ru,vokrug.tv,vokrugsveta.ru,xn--b1ats.xn--80asehdb,zakon.kz,zr.ru##[id^="unit_"]
+d19336 1
+d19675 1
 a20122 1
 glav.su#?#div:-abp-has(> div[id^="js-hb-"])
 d20266 1
@@ -100,3 +110,4 @@ a27963 1
 rusvesna.su##+js(no-setTimeout-if, getVisibleDivs, 300)
 a28209 1
 ||yandex.ru/ads/system/context.js$script,redirect=noopjs,domain=tragtorr.info
+d29068 1

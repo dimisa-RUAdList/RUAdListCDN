@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 31 Mar 2024 08:23:35 +0000
-! Diff-Path: ../patches/2024.3.31.503.patch#ruadlist
+! Last modified: Sun, 31 Mar 2024 13:20:42 +0000
+! Diff-Path: ../patches/2024.3.31.800.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10110,7 +10110,7 @@ agrarii-razom.com.ua##div[id^="user-to-register"]
 ||clickthis.blog^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.googletagmanager.com *.reddit.com *.twitter.com *.wp.com *.io *.net *.org
 ||coollib.net^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.googletagmanager.com *.dev *.io *.net *.org *.ru
 ||crossout.net/*free?*&r=$csp=sandbox allow-same-origin;
-||d3ward.github.io/toolz/adblock$csp=connect-src 'self'
+||d3ward.github.io/toolz/adblock$csp=connect-src 'self'; script-src https://d3ward.github.io/toolz/js/adblock.js
 ||drive.google.com/file/d/1VmzdhLB_-DcnBtUbKfQPnNvsEp_2gnsy/$csp=script-src
 ||driverpack.io^$csp=sandbox allow-same-origin;
 ||driverpaksolution.ru^$csp=sandbox allow-same-origin;
@@ -11121,9 +11121,7 @@ lada.kz/uploads/banners/
 ||cyberscore.live/images/partner-
 ||cybersport.ru/assets/img/*banner
 ||cyberstatic.net/clientscript/edu/prtnrsWidget
-||czx.to/images/flama/
 ||d2wl3qmk54t3ha.cloudfront.net^
-||d3ward.github.io/toolz/js/partner.ads.js
 ||da.advooble.kz/
 ||da.rus-atlas.ru^$script,domain=rus-atlas.ru
 ||da.rus-map.ru/
@@ -14234,7 +14232,6 @@ fototeens.lifeforums.ru,propohoroni.ru###popup
 akakpravilno.ru###popup-bottom
 kp40.ru###popup-id
 muz.ru###popupBanner
-czx.to###popupBlock
 vizyt.com###popup_block
 prodengi.kz###popup_prod
 hereinteresting.ru###popupwindow
@@ -16751,7 +16748,6 @@ mytor.info##.lt_bl
 izmailovtv.xyz,lyucifer.tv,m-z.tv,southpark.su##.luckTitle
 imhonet.ru##.m-advertising
 khl.ru##.m-bnr.b-float_panel_item
-czx.to##.m-content_state_without-gradient.l-content > div[style*="height: 250px"]
 tut.by#?#.m-hop > [class]:-abp-has(span:-abp-contains(Реклама))
 search.tut.by##.m-market
 mirkvartir.ru##.m-mimikria
@@ -18276,7 +18272,6 @@ rybolov.ee##.tp_rightblock_noframe [width="336"][height="240"]
 irad.ru##.tr-banner
 fanforum.ru##.tradingview-widget-container
 bizmedia.kz##.tradingview-widget-container__logo
-czx.to##.trash
 trashbox.ru##.trash_special
 work.ua##.trn-info-block
 kerch.fm##.trongds
@@ -19338,7 +19333,6 @@ rabota24online.ru##a[href*="rich-birds.org"]
 rosrabota.ru##a[href*="rosrabota.ru/delivery/"] > img
 uniondht.org,youpic.su##a[href*="rutor."]
 fotoinform.net##a[href*="shop.vmayke.org"]
-czx.to##a[href*="sites.center"]
 1track.ru##a[href*="smarty.sale"]
 gorvesti.ru,pravda.ru,sovsekretno.ru,tverigrad.ru##a[href*="smi2.net/"]
 softbox.tv##a[href*="softboxmarket.com"]
@@ -19677,7 +19671,6 @@ smolbattle.ru##a[href^="http://toyota-dynamica.ru/"]
 ffoodd.ru##a[href^="http://trening-maximum.ru"]
 infokava.com##a[href^="http://trumangifts.com/"]
 epravda.com.ua##a[href^="http://ua.hit.gemius.pl/hitredir/id="]
-czx.to##a[href^="http://uto.czx.to/"]
 soft.oszone.net##a[href^="http://verismediya.ru"]
 sdelaycomp.ru##a[href^="http://vk.cc/"][target="_blank"]
 skyback.ru##a[href^="http://vk.com/club61342137"]
@@ -29071,7 +29064,6 @@ professorweb.ru###submain > div[class^="a"][style]
 kaermorhen.ru###top-line-container
 numberempire.com###toplink > h3[style="color: red"]
 ganoderma-mushrooms.com,korrektor.name,varicream.org###turn_advert.adblock
-czx.to###vdl_ctnr
 vsaduidoma.com##.ABD_display_wrapper
 eurabota.com##.abtop
 sprashivalka.com##.ad

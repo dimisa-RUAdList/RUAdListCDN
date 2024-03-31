@@ -1,8 +1,8 @@
-diff name:ruadlist lines:188 checksum:054e25089f
+diff name:ruadlist lines:199 checksum:9623dfc3b3
 d4 2
 a5 2
-! Last modified: Sun, 31 Mar 2024 08:23:35 +0000
-! Diff-Path: ../patches/2024.3.31.503.patch#ruadlist
+! Last modified: Sun, 31 Mar 2024 13:20:42 +0000
+! Diff-Path: ../patches/2024.3.31.800.patch#ruadlist
 d7353 1
 d7359 1
 d7412 1
@@ -23,6 +23,9 @@ d9680 1
 d9701 1
 a10106 1
 ||24click.*/top/$csp=script-src
+d10123 1
+a10123 1
+||d3ward.github.io/toolz/adblock$csp=connect-src 'self'; script-src https://d3ward.github.io/toolz/js/adblock.js
 d10154 1
 a10154 1
 ||ontvtime.ru^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: *.googletagmanager.com *.gstatic.com *.ok.ru vk.com
@@ -31,6 +34,8 @@ d10518 1
 a10518 1
 /stargate*.$image,popup,xmlhttprequest,domain=filma24.ru|hlamer.ru
 d11020 1
+d11136 1
+d11138 1
 a11434 1
 ||gazetametro.ru/commercial/banners/
 d13049 1
@@ -48,6 +53,7 @@ od-news.com,sudostroenie.info###header_banner
 a13989 1
 mazepa.to###ipbwrapper > .blurBox > table > tbody > tr > td + td
 d13991 1
+d14248 1
 d14666 1
 a14666 1
 filma24.ru,hlamer.ru###video-container .overlay_video
@@ -78,9 +84,11 @@ a15899 1
 censor.net##.container.d-print-none aside[id][style^="height:"]
 d16019 1
 d16725 1
+d16771 1
 a17007 1
 chistosex.org##.nav > .menu-part
 d17731 1
+d18296 1
 d18941 1
 a18941 1
 101.ru,19rus.info,2000.ua,5-tv.ru,56orb.ru,62info.ru,7info.ru,afanasy.biz,agitpro.su,allboxing.ru,anekdot.ru,argumenti.ru,baltnews.ee,belive.ru,bigpicture.ru,bombardir.ru,chehov-vid.ru,daily-inform.ru,dni.ru,dnpmag.com,do-slez.com,eadaily.com,eg.ru,expert.ru,ferra.ru,gazeta-tula.ru,glavnoe24.ru,gorobzor.ru,gorvesti.ru,govoritmoskva.ru,gubdaily.ru,hightech.plus,iarex.ru,inforeactor.ru,iz.ru,kirov-portal.ru,kriminal.net.ua,livelib.ru,m24.ru,melodrama1.com,mgorod.kz,mir24.tv,mk.ru,myhistori.ru,nashgorod.ru,nation-news.ru,nevnov.ru,newinform.com,news-front.info,news.ru,nn.ru,ntv.ru,osnmedia.ru,penzainform.ru,penzavzglyad.ru,pikinform.ru,pnp.ru,polit.info,politexpert.net,politonline.ru,pora.ru,pravda.ru,putin-news.ru,radidomapro.ru,radioromantika.ru,ratel.kz,ren.tv,ria56.ru,riafan.ru,rueconomics.ru,rusplt.ru,russian.rt.com,rusvesna.su,sevkavportal.ru,sharknews.ru,sm.news,sminews.ru,sobesednik.ru,sport-express.ru,steaklovers.menu,sun-news.ru,topwar.ru,trendymen.ru,tsargrad.tv,tsn24.ru,tvc.ru,tvernews.ru,ua.today,uralpress.ru,usa.one,vazhno.ru,vedomosti.ru,versia.ru,veseloeradio.ru,vesti-yamal.ru,vesti.ru,vesti.uz,vestivrn.ru,vokrug.tv,vokrugsveta.ru,xn--b1ats.xn--80asehdb,zakon.kz,zr.ru##[id^="unit_"]
@@ -90,6 +98,8 @@ forum.zoneofgames.ru##[src*="trk.mail.ru/"]
 d19103 1
 a19103 1
 1fnl.ru,1tulatv.ru,aif.ru,alogvinov.com,compulenta.ru,computerra.ru,cyberforum.ru,disgustingmen.com,forums.goha.ru,gamebomb.ru,gamer-info.com,gismeteo.ru,gotps3.ru,kudago.com,maximonline.ru,mmorpg.su,mobiltelefon.ru,move.ru,omskpress.ru,osp.ru,penzavzglyad.ru,ps3hits.ru,readovka.ru,shazoo.ru,sobaka.ru,soccer.ru,sportbox.ru,stratege.ru,thg.ru##a[href*="/ad.adriver."]
+d19358 1
+d19697 1
 d19912 1
 d19969 1
 a19969 1
@@ -187,3 +197,4 @@ a27988 1
 rusvesna.su##+js(no-setTimeout-if, getVisibleDivs, 300)
 a28234 1
 ||yandex.ru/ads/system/context.js$script,redirect=noopjs,domain=tragtorr.info
+d29093 1
