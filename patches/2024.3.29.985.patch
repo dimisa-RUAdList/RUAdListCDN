@@ -1,8 +1,8 @@
-diff name:ruadlist lines:42 checksum:c9e10d6e6b
+diff name:ruadlist lines:61 checksum:054e25089f
 d4 2
 a5 2
-! Last modified: Sun, 31 Mar 2024 03:21:25 +0000
-! Diff-Path: ../patches/2024.3.31.201.patch#ruadlist
+! Last modified: Sun, 31 Mar 2024 08:23:35 +0000
+! Diff-Path: ../patches/2024.3.31.503.patch#ruadlist
 a9348 1
 ||24click.*/top/$popup
 d10179 1
@@ -11,12 +11,27 @@ a10507 1
 /stargate*.$image,popup,xmlhttprequest,domain=filma24.ru|hlamer.ru
 a13037 1
 ||tragtorr.info/css/back.
+a13232 1
+||vokrug.tv/*/videopartners/
 d14653 1
 a14653 1
 filma24.ru,hlamer.ru###video-container .overlay_video
 d14871 1
 a14871 1
 1927.kiev.ua,1plus1.video,bigpicture.ru,chatadelic.net,coderoad.ru,day.az,euromd.com.ua,filma24.ru,football-fun.ru,fotokto.ru,gagadget.com,gameme.eu,gotoshop.ua,gs.by,gsconto.com,hotzoom.net,icons8.ru,infoniac.ru,jooble.org,jooble.ua,kinoafisha.info,klubok.com,like-film.online,malenkiy.ru,mangalib.me,meta.ua,my-calend.ru,orl.ec,podrobnosti.ua,ranobelib.me,savevideo.me,scooter-remont.com,seasonvar24.com,sexytales.org,soccer.ru,sports.kz,takprosto.cc,timeout.ru,tvsezon.com,ura.news,world-knigi.ru,yaoilib.me##.ads
+d15460 1
+a15852 1
+kinoafisha.info##.companyButton
+d18922 1
+a18922 1
+101.ru,19rus.info,2000.ua,5-tv.ru,56orb.ru,62info.ru,7info.ru,afanasy.biz,agitpro.su,allboxing.ru,anekdot.ru,argumenti.ru,baltnews.ee,belive.ru,bigpicture.ru,bombardir.ru,chehov-vid.ru,daily-inform.ru,dni.ru,dnpmag.com,do-slez.com,eadaily.com,eg.ru,expert.ru,ferra.ru,gazeta-tula.ru,glavnoe24.ru,gorobzor.ru,gorvesti.ru,govoritmoskva.ru,gubdaily.ru,hightech.plus,iarex.ru,inforeactor.ru,iz.ru,kirov-portal.ru,kriminal.net.ua,livelib.ru,m24.ru,melodrama1.com,mgorod.kz,mir24.tv,mk.ru,myhistori.ru,nashgorod.ru,nation-news.ru,nevnov.ru,newinform.com,news-front.info,news.ru,nn.ru,ntv.ru,osnmedia.ru,penzainform.ru,penzavzglyad.ru,pikinform.ru,pnp.ru,polit.info,politexpert.net,politonline.ru,pora.ru,pravda.ru,putin-news.ru,radidomapro.ru,radioromantika.ru,ratel.kz,ren.tv,ria56.ru,riafan.ru,rueconomics.ru,rusplt.ru,russian.rt.com,rusvesna.su,sevkavportal.ru,sharknews.ru,sm.news,sminews.ru,sobesednik.ru,sport-express.ru,steaklovers.menu,sun-news.ru,topwar.ru,trendymen.ru,tsargrad.tv,tsn24.ru,tvc.ru,tvernews.ru,ua.today,uralpress.ru,usa.one,vazhno.ru,vedomosti.ru,versia.ru,veseloeradio.ru,vesti-yamal.ru,vesti.ru,vesti.uz,vestivrn.ru,vokrug.tv,vokrugsveta.ru,xn--b1ats.xn--80asehdb,zakon.kz,zr.ru##[id^="unit_"]
+a20125 1
+glav.su#?#div:-abp-has(> div[id^="js-hb-"])
+d20269 1
+d20804 1
+a20804 1
+glav.su##div[id^="js-hb-"]
+d21062 2
 d25179 1
 a25179 1
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=1plus1.ua|1plus1.video|24tv.ua|gamak.tv|limehd.tv|showjet.net|showjet.ru|unian.info|unian.net|unian.ua|veedi.com|vgtimes.ru|viho.me|viho.pro|viho.tv
@@ -25,8 +40,6 @@ a25531 1
 @@/advertisement.$domain=1ttv.net|androidhost.ru|citydog.by|coil32.ru|coinvesti.ru|futurenet.club|gallerix.ru|imgpay.ru|instrukzii.ru|lingust.ru|newsarium.org|online.ua|pdalife.ru|provladimir.ru|realstrannik.com|realstream.pw|routes.in.ua|rubukkit.org|rzn.info|seriatv.ru|smizu.ru|sportbox.ru|toolson.net|ualinux.com|vsimppt.com.ua|wpnice.ru|xn--80ajbwpejjci7c.xn--p1ai|zdravedae.com
 d25568 1
 d25640 1
-a25745 1
-tragtorr.info###blockms
 d25779 1
 a25779 1
 fashion2news.com,hotallnews.today,ilenta.com,moyens.net,newspad.ru,pimpletv.ru,portaltele.com.ua,pravda.com.ua,tales.org.ua,ukranews.com,wormax.io,zazloo.ru##.fc-ab-root
@@ -39,5 +52,11 @@ filma24.ru,hlamer.ru##body:style(background-color: #596c84 !important)
 d27848 1
 a27848 1
 filma24.ru,freehat.cc,hlamer.ru,lostpix.com,potokcdn.com,prostoporno.help,saltday.ru,uploadimagex.com,wowskill.ru,xittv.net##+js(abort-on-property-read, open)
+a27946 1
+rbc.ru##+js(nano-setTimeout-booster, js-article-check-visibility, 2000)
+a27963 1
+tragtorr.info##+js(no-setTimeout-if, antyadb, 5000)
 a27967 1
 rusvesna.su##+js(no-setTimeout-if, getVisibleDivs, 300)
+a28213 1
+||yandex.ru/ads/system/context.js$script,redirect=noopjs,domain=tragtorr.info
