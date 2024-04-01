@@ -1,8 +1,8 @@
-diff name:ruadlist lines:123 checksum:feb9ae0add
+diff name:ruadlist lines:128 checksum:cab591911c
 d4 2
 a5 2
-! Last modified: Mon, 01 Apr 2024 04:23:56 +0000
-! Diff-Path: ../patches/2024.4.1.263.patch#ruadlist
+! Last modified: Mon, 01 Apr 2024 09:21:18 +0000
+! Diff-Path: ../patches/2024.4.1.561.patch#ruadlist
 a6556 1
 ||vqhrqt.com^$third-party
 a8561 1
@@ -26,6 +26,9 @@ a10505 1
 /stargate*.$image,popup,xmlhttprequest,domain=filma24.ru|hlamer.ru
 d11122 1
 d11124 1
+d12665 1
+a12665 1
+||rutube.ru^$domain=2ch.hk|2ch.life|nashamama.com
 a13035 1
 ||tragtorr.info/css/back.
 a13230 1
@@ -62,8 +65,10 @@ d20801 1
 a20801 1
 glav.su##div[id^="js-hb-"]
 d21059 2
+a21294 1
+2ch.hk,2ch.life#?#main > .main__block:-abp-has(> [src*="https://rutube.ru/"])
 a21665 1
-||pikabu.ru/ruchka?$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/r*chka?$xmlhttprequest,domain=pikabu.ru
 d21704 1
 a21704 1
 apad2.top,besplatnyeprogrammy.ru,inferno.games,mediagetguru.ru,monna2.top,only-soft.org,rutor-game.info,rutor-games.ru,rutorgames.ru,torent-igruha.com,torrent-music.ru,torrent-soft.pro,torrentigo.net,torrentigruha.org,where-game.ru##:not(this-site-promotes-malware)

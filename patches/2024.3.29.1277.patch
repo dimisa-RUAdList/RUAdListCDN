@@ -1,8 +1,8 @@
-diff name:ruadlist lines:83 checksum:feb9ae0add
+diff name:ruadlist lines:91 checksum:cab591911c
 d4 2
 a5 2
-! Last modified: Mon, 01 Apr 2024 04:23:56 +0000
-! Diff-Path: ../patches/2024.4.1.263.patch#ruadlist
+! Last modified: Mon, 01 Apr 2024 09:21:18 +0000
+! Diff-Path: ../patches/2024.4.1.561.patch#ruadlist
 a6556 1
 ||vqhrqt.com^$third-party
 a9348 1
@@ -19,6 +19,9 @@ a10507 1
 /stargate*.$image,popup,xmlhttprequest,domain=filma24.ru|hlamer.ru
 d11124 1
 d11126 1
+d12667 1
+a12667 1
+||rutube.ru^$domain=2ch.hk|2ch.life|nashamama.com
 a13037 1
 ||tragtorr.info/css/back.
 a13232 1
@@ -47,6 +50,11 @@ d20804 1
 a20804 1
 glav.su##div[id^="js-hb-"]
 d21062 2
+a21297 1
+2ch.hk,2ch.life#?#main > .main__block:-abp-has(> [src*="https://rutube.ru/"])
+d21669 1
+a21669 1
+||pikabu.ru/r*chka?$xmlhttprequest,domain=pikabu.ru
 d25179 1
 a25179 1
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=1plus1.ua|1plus1.video|24tv.ua|gamak.tv|limehd.tv|showjet.net|showjet.ru|unian.info|unian.net|unian.ua|veedi.com|vgtimes.ru|viho.me|viho.pro|viho.tv
