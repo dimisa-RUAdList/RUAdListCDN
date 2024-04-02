@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 02 Apr 2024 15:20:31 +0000
-! Diff-Path: ../patches/2024.4.2.920.patch#ruadlist
+! Last modified: Tue, 02 Apr 2024 20:19:32 +0000
+! Diff-Path: ../patches/2024.4.2.1219.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -1045,6 +1045,7 @@
 ||cdn-rtb.sape.ru^
 ||cdn-static.ru^$third-party
 ||cdn-vgtrk.ru^$third-party
+||cdn.neon.click^$third-party
 ||cdn.umh.ua^$third-party
 ||cdn0.moy.su^$third-party
 ||cdn0.ru^$third-party
@@ -15394,6 +15395,7 @@ kingisepp.ru##.banners-box
 hi-news.ru##.banners-center
 kulturomania.ru##.banners-group
 usionline.com##.banners-list__items
+eapteka.ru##.banners-puzzle
 videoprobki.com##.banners-right
 mediametrics.ru##.banners-right-side
 flashboot.ru##.banners-topic
@@ -16819,7 +16821,7 @@ csgolife.ru##.main_block > center > .slider
 meteonova.ru##.main_container[style*="90px"]
 vbryanske.com##.main_content > noindex
 uvelir.info##.main_frame > div[style="float:left; width:245px; height:130px;"]
-fbc.biz.ua##.main_header > .full_width > a[target="_blank"] > img
+fbc.biz.ua##.main_header > .full_width a[target="_blank"] > img
 job.ru,myjob.by##.main_logo_carusel
 ural56.ru##.main_news_right_block_advert
 cont.ws##.main_top_ads
@@ -17001,6 +17003,7 @@ mobile-review.com##.navmenu__advert
 kafanews.com#?#.nb2-list:-abp-has(> .nb2-head:-abp-contains(Визитка))
 nikcenter.org#?#.nchead:-abp-has(> .ncheading:-abp-contains(/партн/i))
 nur.kz##.nearest-matches
+eapteka.ru##.neon-skeleton
 gdzplus.me,reshator.com##.nerban
 superhumor.ru,voffka.com##.neteye-posts
 ingrus.net##.nevidimka
@@ -18808,6 +18811,7 @@ rocketdockfree.ru##[data-msetup]
 woman.ru##[data-name*="Banner"]
 re.kufar.by#?#[data-name="ad_in_listing"] > article:-abp-has(> div > [id^="adfox_"])
 mamba.ru##[data-name="search-banner"]
+eapteka.ru##[data-neon-skeleton-removable]
 vladnews.ru##[data-newsb]
 cq.ru##[data-odds-series]
 bankiros.ru##[data-offer]
@@ -19213,7 +19217,7 @@ softpir.com##a[href*="azbukasofta.xyz"]
 koob.ru##a[href*="b17.ru/"]
 beremennost.net##a[href*="babyitalia.ru"]
 2ip.ua,agro-business.com.ua,alcogolizm.com,anekdot.ru,bitpump.ru,glavagronom.ru,gomel-sat.bz,gre4ka.info,legkopolezno.ru,maw.ru,ozersk74.ru,post-tracker.ru,threatpost.ru,topfile.tj,uamotors.com.ua,yaizakon.com.ua,zhacker.net##a[href*="banner"]
-alltor.me,backup.menu,beremennost.net,buhgalter911.com,dead-serial.com,dedicated.menu,domohozayki.com,electricalschool.info,elementarno-tv.com,fishki.net,forum-profit.ru,hosting.cafe,https.menu,kopilkaurokov.ru,kosti-tv.com,license.menu,multiurok.ru,ogribax.ru,openssource.biz,palantinbest.ru,php.ru,shared.menu,traktorist.ua,uvelir.info,uvelir.net,vds.menu,vorozheya.org,vskazke-tv.com,www.pesticidy.ru##a[href*="banner"][target="_blank"]
+alltor.me,backup.menu,beremennost.net,buhgalter911.com,dead-serial.com,dedicated.menu,domohozayki.com,electricalschool.info,elementarno-tv.com,fbc.biz.ua,fishki.net,forum-profit.ru,hosting.cafe,https.menu,kopilkaurokov.ru,kosti-tv.com,license.menu,multiurok.ru,ogribax.ru,openssource.biz,palantinbest.ru,php.ru,shared.menu,traktorist.ua,uvelir.info,uvelir.net,vds.menu,vorozheya.org,vskazke-tv.com,www.pesticidy.ru##a[href*="banner"][target="_blank"]
 nnmclub.to##a[href*="banner_"]
 forum.mista.ru##a[href*="banners.php?click="]
 forum.mista.ru##a[href*="banners.php?click="] + a
