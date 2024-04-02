@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 01 Apr 2024 19:16:25 +0000
-! Diff-Path: ../patches/2024.4.1.1156.patch#ruadlist
+! Last modified: Tue, 02 Apr 2024 01:23:14 +0000
+! Diff-Path: ../patches/2024.4.2.83.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10165,7 +10165,6 @@ agrarii-razom.com.ua##div[id^="user-to-register"]
 ||utarget.ru^$csp=script-src
 ||vazhno.ru^$csp=script-src 'self'
 ||vesti-ua.net^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.cloudflare.com *.googletagmanager.com *.io *.net *.org *.ru *.ua
-||vikna.tv^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.amazonaws.com *.cloudflare.com apis.google.com cse.google.com www.google.com *.google.com/complete/ *.googleapis.com *.googletagmanager.com *.instagram.com *.jquery.com *.keycaptcha.com *.twitter.com *.io *.net *.org *.ru *.ua
 ||vkazivka.com^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data: *.googletagmanager.com *.io *.net *.org *.ru *.ua
 ||wallpapershome.ru^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' data:
 ||www.liveinternet.ru/|$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' i.li.ru
@@ -18046,6 +18045,7 @@ playmaker24.ru##.subscrite-widget:first-child
 klops.ru##.supercover-banner-header
 bilshe.com#?#.svejnov:-abp-has(> h2 > b:-abp-contains(/^Інші/))
 games-porno.net##.swfgame_banners
+ictv.ua#?#.swiper-slide:-abp-has(> a[href*="utm_campai"])
 moniheal.com##.swiper-wrapper > a:not([href*="moniheal.com/"])
 tonkosti.ru##.sys-sky
 tv2.today##.t-aside-banners
@@ -21624,11 +21624,13 @@ anivisual.net,apptractor.ru,browserleaks.com,ficbook.net,forum.vorota.de,kg-port
 sitecoder.blogspot.ru##.adsbygoogle > *
 gtavicecity.ru##.article-ads
 postila.ru##.masonry-brick.ads
+vikna.tv##.pip-video-wrapper
 zoom.cnews.ru##.promo_block
 root-nation.com##.td-a-ad
 root-nation.com##.td-a-rec
 rafkino.com##.ytp-ad-progress-list
 rafkino.com##div[id^="MarketGid"]
+ictv.ua,vikna.tv##div[id^="div-gpt-ad-"]
 ! *** ./advblock/specific_special.txt ***
 !#if ext_abp
 ! запросы
@@ -24662,6 +24664,7 @@ cheb.ru,cheboksary.ws,kugesi.ru,na-svyazi.ru##a[href*="/ad.adriver."]
 @@||hh.ru/account/$generichide
 @@||hlamer.ru/create-account|$generichide
 @@||html-template.ru^$generichide
+@@||ictv.ua^$generichide
 @@||imgbum.ru^$generichide
 @@||in-trend.biz^$generichide
 @@||inforline.com.ua^$generichide
@@ -24744,6 +24747,7 @@ cheb.ru,cheboksary.ws,kugesi.ru,na-svyazi.ru##a[href*="/ad.adriver."]
 @@||users.1tv.ru/cmnts/$generichide
 @@||vacancies.club^$generichide
 @@||video.showmeshowtv.ru^$generichide
+@@||vikna.tv^$generichide
 @@||vk.com/share.php$generichide
 @@||vsthouse.ru^$generichide
 @@||webcaster.pro^$generichide
