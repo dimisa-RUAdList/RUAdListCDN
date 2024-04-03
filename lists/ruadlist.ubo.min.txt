@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 03 Apr 2024 06:24:52 +0000
-! Diff-Path: ../patches/2024.4.3.384.patch#ruadlist
+! Last modified: Wed, 03 Apr 2024 11:16:49 +0000
+! Diff-Path: ../patches/2024.4.3.676.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -15594,6 +15594,7 @@ forum.sibmama.info,forum.sibmama.ru##.bodyline > div[style*="height:90px"]
 tamboff.ru##.bodyline ~ td[style="width: 240px;vertical-align: top;"]
 factroom.ru##.boff
 vse-pro-sport.com.ua,vseprosport.by,vseprosport.kz,vseprosport.ru##.bonus-btn
+ua-football.com##.bonuses
 footboom.com,footboom.kz##.book-block-wrapper
 vklasse.online#?#.book-box:-abp-has(> [class*="banner"])
 alvin-almazov.ru##.book_banner
@@ -15711,6 +15712,7 @@ download-windows.org,softhome.ru##.btn-installpack
 shopping.nv.ua##.btn-product-embed
 mozhaysksg.ru##.btop
 newauthor.ru##.bue-align-c
+ua-football.com##.buk-table
 delovoigorod.ru##.bun
 kulichki.net##.bunner_container
 hr-portal.ru##.burger_b
@@ -15942,6 +15944,7 @@ gotovchik.ru,inforuss.info,kleo.ru,lentaruss.ru,smiruss.ru##.content_rb
 yagramotniy.ru##.content_right_avvd
 maanimo.com##.content_top_banner
 zoon.ru##.contents > .box-padding
+ua-football.com#?#.contents-content > ul > li:-abp-has(> a:-abp-contains(ставки ))
 meta.ua##.context
 aviso.bz##.context-ad
 zavisimost03.ru##.contextblock
@@ -17740,6 +17743,7 @@ koolinar.ru#?#.shortcode-html:-abp-has(> header > div > [class]:-abp-contains(П
 animevost.org,animevost.top,vost.pw##.shortstoryContent > center[style]
 gamingservers.ru##.show-block
 av.by##.show-on-desktop
+ua-football.com#?#.show-post > h2:-abp-has(> strong:-abp-contains(ставки ))
 kelmochka.ru##.show[class^="fix_post"]
 kineshemec.ru##.showcase
 myfin.by##.showcase-aside.hidden-xs
@@ -25489,7 +25493,7 @@ xn--112-5cd3baof9c5c.xn--p1ai#@#.wrapad
 @@||xvet.ru^*_600x180.$image,domain=xvet.ru
 @@||yaberemenna.info/openx/www/delivery/ai.php?filename=$domain=yaberemenna.info
 @@||yaberemenna.info/openx/www/delivery/ajs.php?zoneid=7&$domain=yaberemenna.info
-@@||yandex.ru/ads/system/context.js|$script,domain=1prime.ru|mmo13.ru|tnt-online.ru|www.liveresult.ru|zaycev.net
+@@||yandex.ru/ads/system/context.js|$script,domain=1prime.ru|mmo13.ru|tnt-online.ru|trychatgpt.ru|www.liveresult.ru|zaycev.net
 @@||yandex.ru/metrika/informer.js
 @@||yandex.ru/search/site/?*search$third-party,script
 @@||yandex.st/share/share.js|$script,domain=nashaplaneta.su
