@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 04 Apr 2024 07:20:04 +0000
-! Diff-Path: ../patches/2024.4.4.440.patch#ruadlist
+! Last modified: Thu, 04 Apr 2024 12:35:02 +0000
+! Diff-Path: ../patches/2024.4.4.755.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -13777,7 +13777,6 @@ aptekamos.ru###data-column-center-adv
 forum.china-iphone.ru###datebar
 last.by###dbtn2
 serialrussian.ru###dd-flash-area
-mediametrics.ru###def_hover
 povarenok.ru###delta_14
 diets.ru###delta_18
 boxrec.com###desktop_sticky_ad_container
@@ -14299,6 +14298,7 @@ korabelov.info###related-posts-after .mag-box-title
 games-porno.net###relategames > noindex
 portall.zp.ua#?##relationfield > div:-abp-has([href*="://aliclick.shop/"])
 itnet.com.ua###reply-title
+mediametrics.ru###reportsInfoBase
 drom.ru###rest_vl_block
 funlog.ru###rfunlog
 google.by,google.com,google.com.ua,google.kz,google.ru###rhs_block .xpdopen div[data-ved] > .mod:not([data-attrid])
@@ -15135,7 +15135,6 @@ forums.drom.ru##.b-banner-group
 cyberstyle.ru##.b-banner_600x90
 bigmir.net,dengi.ua,mport.ua##.b-banner_sm
 rapsinews.ru##.b-banners__bottom
-runews24.ru##.b-bg-top
 siliconrus.com##.b-bks
 inter.ua##.b-block > table[class]
 sibdepo.ru##.b-block--banner
@@ -15148,6 +15147,7 @@ hata.by##.b-card__sale
 hata.by##.b-catalog-table__sale
 kolesa.kz##.b-container
 penzavzglyad.ru##.b-content
+runews24.ru##.b-content > .right
 svpressa.ru##.b-content__section_partners
 svpressa.ru##.b-content__section_teasers
 svpressa.ru##.b-content__title[href^="http://mediametrics.ru"]
@@ -15397,7 +15397,6 @@ kulturomania.ru##.banners-group
 usionline.com##.banners-list__items
 eapteka.ru##.banners-puzzle
 videoprobki.com##.banners-right
-mediametrics.ru##.banners-right-side
 flashboot.ru##.banners-topic
 privetsochi.ru##.banners-topic-banner
 zk.fm##.bannersIframe
@@ -15557,7 +15556,7 @@ omastopatii.ru##.blopr
 oko-planet.su#?#.bltitle:-abp-contains(Реклама)
 dnepr.info##.blue-bann
 ecm-journal.ru##.blurb
-777score.ru,emotionalrating.com,kluch.media,mediametrics.ru,ok-magazine.ru,poltava.to##.bn
+777score.ru,emotionalrating.com,kluch.media,ok-magazine.ru,poltava.to##.bn
 dota2.ru##.bn-btm
 mgorod.kz##.bn-slider
 kinoplex.ru##.bn-top10
@@ -16689,6 +16688,7 @@ samsebeyurist.by##.left_col
 omskinform.ru##.left_col_top
 omskinform.ru##.left_col_top ~ *
 forexsystemsru.com##.left_ff a[href*="/fortrader.org/"]
+runews24.ru##.left_information_block > aside
 ua.today##.left_mob > .title
 cc-fan.tv,cn-fan.tv,fox-fan.tv,nf-fan.tv##.left_panel_shop
 poezdato.net,poizdato.net##.left_side
@@ -17524,7 +17524,6 @@ ero-top.info##.remove_in_mobile
 remontka.pro##.remt
 business-class.su,time.kz##.rennab
 terabit.biz##.reset > li > a[target="_blank"]
-mediametrics.ru##.result-adv
 otzovik.com##.review-body > div
 tmbw.ru#?#.reviewwidget:-abp-has(.adwidget)
 medvesti.com##.rew-block
@@ -17753,7 +17752,6 @@ mobtop.ru##.side .in[style]
 sampik.ru##.side > #menu ~ .box
 kinopoiskhd.com##.side > .random-link ~ *
 grodnonews.by##.side-banner
-mediametrics.ru##.side-banner-item
 medside.ru##.side-banner-yandex
 wm-school.ru##.side-bar > div[style="margin-bottom: 10px;"]
 kinotv1.ru##.side-block > .boxTable ~ .boxTable
@@ -18595,7 +18593,6 @@ sport.kg##.yelrec
 24smi.org#?#.yet:-abp-has(div[id]:empty)
 news.soundex.ru##.yjround_in > br
 zpravda.ru##.yjsquare.zpravda
-runews24.ru##.yl
 prosound.ixbt.com##.ym-gbox-right > div[style="margin:0; padding:0"][align="center"]
 3dnews.kz,3dnews.ru,irecommend.ru##.ymarket-affiliate-widget
 moika78.ru,nevasport.ru##.yn
@@ -18609,7 +18606,7 @@ livesport.ru##.z_picard_card_d
 livecars.ru##.z_wow_aftertxt
 zab.ru,zab.tv##.zab-news > article.zab-news__item ~ div:not(.zab-news__item)
 gidonline.eu##.zbin
-runews24.ru,vesti.ua,wtftime.ru##.zen
+vesti.ua,wtftime.ru##.zen
 tverlife.ru##.zen-block
 minsknews.by##.zen-block-wrapper
 56orb.ru,mgazeta.com,nashgorod.ru##.zen-popup-component
@@ -18636,7 +18633,6 @@ patrioty.org.ua##:not(html) > iframe[style*="important"]:not([src^="https://disq
 123torrent.ru,37.1.201.32,37.1.202.140,37.1.203.156,37.1.204.182,37.1.204.76,37.1.205.159,37.1.205.47,37.1.206.118,37.1.206.121,37.1.206.231,37.1.206.95,37.1.207.130,37.1.207.65,37.1.216.106,37.1.216.119,37.1.217.105,37.1.217.113,5.45.65.153,5.45.66.118,5.45.70.162,5.45.86.39,5.45.87.85,berutor.site,blackrutor.site,extrutor.org,extrutor.site,fastrutor.site,hawk.live,herutor.org,listrutor.org,new-rutor.org,pipitor.org,pronpic.org,prutor.site,r-tor.ru,rutor-live.tk,rutor-search.info,rutor1.site,tracker-rutor.tk,xrutor.org##:not(obhod-adblocka)
 opensharing.org##:not(td) > a[href*="//parnuxi.biz"]:not([href$=".html"])
 csmania.ru##A[onclick^="countAdClick"]
-mediametrics.ru##[_onclick*="advert"]
 mctop.su,topcraft.ru##[action^="/bclick/"]
 fluence-club.ru##[align="CENTER"] > a[href][target="_blank"]
 duster-clubs.ru##[align="CENTER"] > a[href][target="_blank"] > img
@@ -20210,7 +20206,7 @@ znaj.ua##div[class*="advertising"]
 odessa-life.od.ua##div[class*="ai-viewport-"]
 thequestion.ru##div[class*="annonser"]
 gorodvitebsk.by,kursktv.ru,open.ua,penza-press.ru##div[class*="baner"]
-1777.ru,19rus.info,19rusinfo.ru,1ul.ru,2018.pp.ua,20minut.ua,2goroda.ru,365info.kz,3ys.ru,73online.ru,9tv.co.il,advis.ru,agronews.ua,agroreview.com,agrotimes.net,autodmir.ru,avtodispetcher.ru,bakemono.ru,bel.ru,besplatka.ua,bezformata.com,bhub.com.ua,car.ru,cbonds.ru,codernet.ru,comments.ua,con-med.ru,cybersport.ru,echosevera.ru,epravda.com.ua,fatalgame.com,filmz.ru,fishingsib.ru,flamp.ru,food.ru,footballua.tv,forum-profit.ru,gameguru.ru,gecid.com,gorodvitebsk.by,gp.by,growhow.in.ua,haqqin.az,hunting.ru,industry-hunter.com,infpol.ru,investfunds.ru,ircity.ru,islam-today.ru,iz.ru,joborgame.ru,jut.su,k1news.ru,klavogonki.ru,knijky.ru,kt.kz,kursktv.ru,laradiofm.ru,livesport.ws,locals.md,medialeaks.ru,megatyumen.ru,menportal.info,myslo.ru,neboleem.net,nmedic.info,nv-online.info,obyava.ua,okna.ua,penza-press.ru,polochka.net,povarenok.ru,ppt4web.ru,pravda.com.ua,pravoved.ru,primemusic.cc,profibeer.ru,prostatitanet.com,redfm.ru,relax-fm.ru,rg.ru,skachat-kino.fun,smolensk-i.ru,sovsport.ru,spanishrestaurant.ru,sport5.by,sportguide.kiev.ua,start33.ru,syzran-small.ru,tele.ru,tengrinews.kz,the-flow.ru,thequestion.ru,thg.ru,tveda.ru,twentysix.ru,ufanotes.ru,valverus.info,vashurok.ru,veterinargid.ru,vikka.ua,vinnitsa.info,vklasse.online,vovka.su,vringe.com,vshkole.com,woman.ru,wonderzine.com,wowjp.net,xsport.ua,zagorod.spb.ru,zaim-profi.ru,zaryad.me,zebra-tv.ru,zoohoz.ru,zorbasmedia.ru##div[class*="banner"]
+1777.ru,19rus.info,19rusinfo.ru,1ul.ru,2018.pp.ua,20minut.ua,2goroda.ru,365info.kz,3ys.ru,73online.ru,9tv.co.il,advis.ru,agronews.ua,agroreview.com,agrotimes.net,autodmir.ru,avtodispetcher.ru,bakemono.ru,bel.ru,besplatka.ua,bezformata.com,bhub.com.ua,car.ru,cbonds.ru,codernet.ru,comments.ua,con-med.ru,cybersport.ru,echosevera.ru,epravda.com.ua,fatalgame.com,filmz.ru,fishingsib.ru,flamp.ru,food.ru,footballua.tv,forum-profit.ru,gameguru.ru,gecid.com,goodfon.ru,gorodvitebsk.by,gp.by,growhow.in.ua,haqqin.az,hunting.ru,industry-hunter.com,infpol.ru,investfunds.ru,ircity.ru,islam-today.ru,iz.ru,joborgame.ru,jut.su,k1news.ru,klavogonki.ru,knijky.ru,kt.kz,kursktv.ru,laradiofm.ru,livesport.ws,locals.md,medialeaks.ru,megatyumen.ru,menportal.info,myslo.ru,neboleem.net,nmedic.info,nv-online.info,obyava.ua,okna.ua,penza-press.ru,polochka.net,povarenok.ru,ppt4web.ru,pravda.com.ua,pravoved.ru,primemusic.cc,profibeer.ru,prostatitanet.com,redfm.ru,relax-fm.ru,rg.ru,skachat-kino.fun,smolensk-i.ru,sovsport.ru,spanishrestaurant.ru,sport5.by,sportguide.kiev.ua,start33.ru,syzran-small.ru,tele.ru,tengrinews.kz,the-flow.ru,thequestion.ru,thg.ru,tveda.ru,twentysix.ru,ufanotes.ru,valverus.info,vashurok.ru,veterinargid.ru,vikka.ua,vinnitsa.info,vklasse.online,vovka.su,vringe.com,vshkole.com,woman.ru,wonderzine.com,wowjp.net,xsport.ua,zagorod.spb.ru,zaim-profi.ru,zaryad.me,zebra-tv.ru,zoohoz.ru,zorbasmedia.ru##div[class*="banner"]
 dressupmix.ru##div[class*="banner"]:not(.banner-vk)
 bombardir.ru##div[class*="banner-placeholder"]
 mobile-review.com##div[class*="banner-wrapper"]
@@ -20417,7 +20413,6 @@ buzulukday.ru,nsday.ru,orenday.ru,perevolockday.ru,saltday.ru,sorochinskday.ru##
 sportliga.com##div[class^="bulletin"]
 lada-granta.net,lkforum.ru##div[class^="but-150"]
 umu.org.ua##div[class^="c40-reveal-modal"]
-goodfon.ru##div[class^="center_banner"]
 chita.ru##div[class^="chitaru__wonder"]
 pogoda.meta.ua##div[class^="city__banner"]
 click-or-die.ru##div[class^="click-content"]
@@ -26483,13 +26478,13 @@ glavpost.ua###navbar:style(position: relative !important)
 ! ---
 glavred.info,glavred.net##.newsfeed:style(height: auto !important)
 ! ---
-growhow.in.ua##body:style(background-color: inherit !important)
-! ---
 goclips.tv##.video_content:style(height: auto !important)
 ! ---
 www.goha.ru##a[href^="https://www.goha.ru/~"]:style(pointer-events: none !important)
 ! ---
 gol.ru##.wrapper__content-inner:not(#id):style(padding-top: 0 !important)
+! ---
+goodfon.ru##.wallpapers > [class^="wallpapers__item"]:style(margin-right: unset !important; width: 320px !important)
 ! ---
 goodgame.ru##.main-block .main-inner-wrap:style(margin-top: 0 !important)
 ! ---
@@ -26505,6 +26500,8 @@ govoritmoskva.ru##.rightColumn > .darkPart:style(height: auto !important)
 govoritmoskva.ru##footer.pageContainer:style(height: auto !important)
 ! ---
 great-tv.ru,vserialy.com,vserialy.fun###header_box:style(height: auto !important; min-height: auto !important)
+! ---
+growhow.in.ua##body:style(background-color: inherit !important)
 ! ---
 gstv.ru##.page-content:style(margin-top: 0 !important)
 ! ---
