@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 04 Apr 2024 17:19:19 +0000
-! Diff-Path: ../patches/2024.4.4.1039.patch#ruadlist
+! Last modified: Thu, 04 Apr 2024 22:20:08 +0000
+! Diff-Path: ../patches/2024.4.4.1340.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -13875,7 +13875,6 @@ stratege.ru###footer[class]
 freescreens.ru,imgbase.ru,imgcach.ru,imgclick.ru,payforpic.ru,picclick.ru,picclock.ru,picforall.ru###footer_left
 ruseller.com###footer_wrap
 dni.ru#?##for_fix > *:-abp-has(.titlebar > span:-abp-contains(партнеры))
-playground.ru###foundationWrapper > a[href]
 ok.ru###fthColWrp *
 xxx-russian.ru###full-smile
 ex-press.by###full-top-layout
@@ -25789,6 +25788,7 @@ wowhead.com##.is-atf.horizontal-bg
 wowhead.com##.is-atf.vertical-bg
 wowhead.com##.is-btf.horizontal-bg
 ritsatv.ru##.message.ab
+playground.ru##.mezzanine > .mezzanine-center > div:not([class])
 forum.niiot.net##.modal
 2x2tv.ru##.owl-wrapper-outer .slideAlt
 clan-soprano.ru##.popupBlock
@@ -27968,7 +27968,6 @@ razlozhi.ru##+js(no-setTimeout-if, X-Set-Adblock)
 allapteki.ru##+js(no-setTimeout-if, _modal)
 buhgalter.com.ua,buhgalter911.com,factor.ua##+js(no-setTimeout-if, adBlockEnabled)
 strategium.ru##+js(no-setTimeout-if, adblock)
-playground.ru##+js(no-setTimeout-if, adfoxAsyncParams)
 dracon-zet.ru,fonmod.com##+js(no-setTimeout-if, ai_adb)
 aqicn.org##+js(no-setTimeout-if, alert, 15000)
 tragtorr.info##+js(no-setTimeout-if, antyadb, 5000)
@@ -28076,6 +28075,7 @@ audioportal.su##+js(set-constant, clicks, 2)
 tass.ru##+js(set-constant, frames.innerWidth, {})
 gazeta.ru##+js(set-constant, g_GazetaNoExchange, true)
 gazeta.ru##+js(set-constant, isAdFree, noopFunc)
+playground.ru##+js(set-constant, localStorage.localstorageGameData, '')
 tv-gubernia.ru##+js(set-constant, main_air_closed, true)
 vk.com,vk.ru##+js(set-constant, noAdsAtAll, {})
 player.smotrim.ru##+js(set-constant, pl.getParams.isPlay, null)
@@ -28091,6 +28091,7 @@ liga.net##+js(set-cookie, cookieAccepted, true)
 ixbt.com##+js(set-cookie, cookie_accept, 1)
 forum.ixbt.com##+js(set-cookie, ha, 1)
 kufar.by##+js(set-cookie, kuf_agr, true)
+playground.ru##+js(set-cookie, pg_SuggestGameFollow, true)
 kinotv.ru##+js(set-cookie, telegram_popup, Y)
 playground.ru##+js(set-local-storage-item, pg_GPbackVideo, on)
 twitch.tv##+js(twitch-videoad)
@@ -28108,6 +28109,7 @@ yandex.by,yandex.kz,yandex.ru,yandex.uz##.app__wrapper div[style^="width: calc(1
 footboom.com,footboom.kz##.b-article-content > h2:has-text(букмекер)
 lostfilm.download,lostfilm.life,lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##.body > .body:style(user-select: text !important; -moz-user-select: text !important; -webkit-user-select: text !important)
 online-fix.me##.content > .errors
+playground.ru##.dfp-container:remove()
 smotrim.ru##.dialog-wrapper
 e1.ru##.global-wrapper:remove-class(_branding)
 reshu.by,reshuent.kz,reshuolymp.ru,sdamgia.ru##.googlead.pub_300x250.pub_300x250m.pub_728x90.text-ad.textAd.text_ad.text_ads.text-ads.text-ad-links:style(display: block !important)
@@ -28224,7 +28226,6 @@ kinoafisha.info##videotronic-player:remove-attr(data-video-autoplay)
 ||vk.com/video_ext.php?*autoplay=1$removeparam=js_api,domain=mail.ru
 ||widgets.kinopoisk.ru/discovery/trailer/*&loop=1&autoplay=1$subdocument,domain=www.kinopoisk.ru
 ||yandex.ru/ads/system/context.js$script,redirect=noopjs,domain=tragtorr.info
-||yandex.ru/ads/system/context.js|$important,script,domain=playground.ru
 ||youtube-nocookie.com/embed/*autoplay=1$subdocument,removeparam=autoplay,domain=weukraine.tv
 ||youtube.com/embed/*autoplay=1$subdocument,removeparam=autoplay,domain=~kinoafisha.info|~pikabu.ru
 ||youtube.com/embed/?enablejsapi=1&origin=*3dnews.*&widgetid=1$subdocument,badfilter,domain=3dnews.kz|3dnews.ru
@@ -29178,7 +29179,6 @@ forum.bestflowers.ru##.xenOverlay
 @@||goha.ru/app/video/adblock.teaser.js|$script,domain=goha.ru
 @@||qpython.club^$generichide
 @@||sports.ru^*/adfox.$xmlhttprequest
-@@||yandex.ru/ads/system/context.js|$script,domain=playground.ru
 i.factor.ua##[data-place-block]
 auto62rus.ru,eset-key.ru,mycrib.ru,piggy-bank.online,politonline.ru,showmehow.ru##[data-type="anti-abp"]
 megogo.net##[data-widget*="adblockOverlayEnabled"] .notifications

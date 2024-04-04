@@ -1,9 +1,10 @@
-diff name:ruadlist lines:37 checksum:3cf297c0ec
+diff name:ruadlist lines:49 checksum:07772f1048
 d4 2
 a5 2
-! Last modified: Thu, 04 Apr 2024 17:19:19 +0000
-! Diff-Path: ../patches/2024.4.4.1039.patch#ruadlist
+! Last modified: Thu, 04 Apr 2024 22:20:08 +0000
+! Diff-Path: ../patches/2024.4.4.1340.patch#ruadlist
 d13780 1
+d13879 1
 a14301 1
 mediametrics.ru###reportsInfoBase
 d15138 1
@@ -29,10 +30,21 @@ d20420 1
 d21679 2
 a21680 1
 ||pikabu.ru/nroockaz?key=
+a25797 1
+playground.ru##.mezzanine > .mezzanine-center > div:not([class])
 d26487 2
 a26494 2
 goodfon.ru##.wallpapers > [class^="wallpapers__item"]:style(margin-right: unset !important; width: 320px !important)
 ! ---
-a26508 2
-! ---
+a26509 2
 growhow.in.ua##body:style(background-color: inherit !important)
+! ---
+d27975 1
+a28082 1
+playground.ru##+js(set-constant, localStorage.localstorageGameData, '')
+a28097 1
+playground.ru##+js(set-cookie, pg_SuggestGameFollow, true)
+a28114 1
+playground.ru##.dfp-container:remove()
+d28231 1
+d29185 1

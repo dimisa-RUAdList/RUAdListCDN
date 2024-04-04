@@ -1,8 +1,8 @@
-diff name:ruadlist lines:119 checksum:3cf297c0ec
+diff name:ruadlist lines:131 checksum:07772f1048
 d4 2
 a5 2
-! Last modified: Thu, 04 Apr 2024 17:19:19 +0000
-! Diff-Path: ../patches/2024.4.4.1039.patch#ruadlist
+! Last modified: Thu, 04 Apr 2024 22:20:08 +0000
+! Diff-Path: ../patches/2024.4.4.1340.patch#ruadlist
 a1047 1
 ||cdn.neon.click^$third-party
 a1599 1
@@ -18,6 +18,7 @@ d12666 1
 a12666 1
 ||rutube.ru^$domain=2ch.hk|2ch.life|nashamama.com
 d13779 1
+d13878 1
 a14300 1
 mediametrics.ru###reportsInfoBase
 d15137 1
@@ -103,6 +104,8 @@ a24745 1
 d25477 1
 a25477 1
 @@||yandex.ru/ads/system/context.js|$script,domain=1prime.ru|mmo13.ru|tnt-online.ru|trychatgpt.ru|www.liveresult.ru|zaycev.net
+a25778 1
+playground.ru##.mezzanine > .mezzanine-center > div:not([class])
 d26468 2
 a26475 2
 goodfon.ru##.wallpapers > [class^="wallpapers__item"]:style(margin-right: unset !important; width: 320px !important)
@@ -118,3 +121,12 @@ a27616 1
 e.mail.ru,octavius.mail.ru###popup-placeholder
 a27947 1
 vseinstrumenti.ru##+js(no-setTimeout-if, 'null,797', 20000)
+d27954 1
+a28061 1
+playground.ru##+js(set-constant, localStorage.localstorageGameData, '')
+a28076 1
+playground.ru##+js(set-cookie, pg_SuggestGameFollow, true)
+a28093 1
+playground.ru##.dfp-container:remove()
+d28210 1
+d29164 1
