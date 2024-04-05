@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 05 Apr 2024 09:18:51 +0000
-! Diff-Path: ../patches/2024.4.5.558.patch#ruadlist
+! Last modified: Fri, 05 Apr 2024 13:21:59 +0000
+! Diff-Path: ../patches/2024.4.5.801.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10507,7 +10507,6 @@ $xmlhttprequest,domain=happy-biock.info|happy-block.info|howto-news.info|mschist
 /service/display/|$script,domain=povarenok.ru|stranamam.ru
 /site/showbanner/*$domain=latifundist.com
 /sm\.news/[^\s]{80,}/$script,domain=sm.news
-/stargate*.$image,popup,xmlhttprequest,domain=cunofilms.ru|hlamer.ru
 /static/banners/*$domain=gagadget.com|vse-sto.com.ua
 /static/js/build/adidas.min.js$domain=auto43.ru|dom43.ru|gorodkirov.ru|job43.ru
 /storage/banners/*$domain=1sn.ru|banki.loans|sportliga.com
@@ -14650,7 +14649,6 @@ delovoy-kirov.ru###uzhanina
 heregirl.ru,ledilana.ru###vgtrk_bottom
 virusinfo.info###vi_ad
 virusinfo.info###vi_adlink
-cunofilms.ru,hlamer.ru###video-container .overlay_video
 ivi.ru###video-flack
 videonews.club###video_bootom
 enter.az###videorekframe
@@ -14868,7 +14866,7 @@ ua.today##.admix
 promigren.ru##.adp-block
 asiaplustj.info,news.tj##.adredirector
 cn.ru,ittour.com.ua##.adriver
-1927.kiev.ua,1plus1.video,bigpicture.ru,chatadelic.net,coderoad.ru,cunofilms.ru,day.az,euromd.com.ua,football-fun.ru,fotokto.ru,gagadget.com,gameme.eu,gotoshop.ua,gs.by,gsconto.com,hotzoom.net,icons8.ru,infoniac.ru,jooble.org,jooble.ua,kinoafisha.info,klubok.com,like-film.online,malenkiy.ru,mangalib.me,meta.ua,my-calend.ru,orl.ec,podrobnosti.ua,ranobelib.me,savevideo.me,scooter-remont.com,seasonvar24.com,sexytales.org,soccer.ru,sports.kz,takprosto.cc,timeout.ru,tvsezon.com,ura.news,world-knigi.ru,yaoilib.me##.ads
+1927.kiev.ua,1plus1.video,bigpicture.ru,chatadelic.net,coderoad.ru,day.az,euromd.com.ua,football-fun.ru,fotokto.ru,gagadget.com,gameme.eu,gotoshop.ua,gs.by,gsconto.com,hotzoom.net,icons8.ru,infoniac.ru,jooble.org,jooble.ua,kinoafisha.info,klubok.com,like-film.online,malenkiy.ru,mangalib.me,meta.ua,my-calend.ru,orl.ec,podrobnosti.ua,ranobelib.me,savevideo.me,scooter-remont.com,seasonvar24.com,sexytales.org,soccer.ru,sports.kz,takprosto.cc,timeout.ru,tvsezon.com,ura.news,world-knigi.ru,yaoilib.me##.ads
 tarkov-market.com##.ads-horiz
 orl.ec##.ads-inner-top
 footboom.com##.ads-insert
@@ -21763,6 +21761,12 @@ $script,~third-party,domain=defileb.com|fplay.online|hovels.info|likelol.online|
 ##body.has-brand .b-content__main .b-player a[href*="aHR0c"]
 ##body.has-brand .b-content__main > div[id]:not([class]):empty
 ##body.has-brand .b-content__main > div[style^="height: 250px; overflow: hidden;"]
+! hlamer и зеркала
+/stargate/?mode=vast&location=
+ru###ads-top.ads
+||hlamer.ru/stargate?id=$popup
+||ru/content/stargate/*.jpg$image,~third-party
+! ---
 ! 2ip.ru и 2ip.io
 2ip.io,2ip.ru##.ad-test-vpn
 2ip.io,2ip.ru#?#.content-article p:-abp-has(> .adsbygoogle)
@@ -22731,7 +22735,7 @@ yandex.by,yandex.kz,yandex.ru,yandex.uz##.i-bem.tv-grid__item-adv
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.i-bem.tv-sortable-item.tv-sortable-item_sortable_no
 ya.ru##.i-mini-bem.banner
 ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.layout__banner
-market.yandex.by,market.yandex.kz,market.yandex.ru,market.yandex.uz##.layout_type_search.headline__footer
+market.yandex.by,market.yandex.kz,market.yandex.ru##.layout_type_search.headline__footer
 ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.main__distr-popup
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.masonry .incut_banner
 yandex.ru##.org.i-bem.org_js_inited > div[style^="border-bottom"]
@@ -25049,7 +25053,7 @@ xn--112-5cd3baof9c5c.xn--p1ai#@#.wrapad
 @@||audi-surgut.ru/uploads/adverts/$image,domain=audi-surgut.ru
 @@||auto62rus.ru/themes/dw-focus/img/advertising.jpg|$image
 @@||autoreview.ru/images/gallery/*/reklama/$image,domain=autoreview.ru
-@@||awaps.yandex.$domain=kinopoisk.ru|market.yandex.by|market.yandex.kz|market.yandex.ru|market.yandex.uz
+@@||awaps.yandex.$domain=kinopoisk.ru|market.yandex.by|market.yandex.kz|market.yandex.ru
 @@||baner.ua^$domain=baner.ua
 @@||banners.adfox.ru^$image,domain=shop.kp.ru
 @@||banners.turizm.ru/banner*/widjet/$image,domain=turizm.ru
@@ -25782,7 +25786,6 @@ kodik.info##.second-message
 radioromantika.ru##.showMessageAdBlock
 kg-portal.ru##.social_login > .ulogin ~ .caution
 gibdd-gai.ru##.warning
-cunofilms.ru##.websockets
 spletnik.ru##.z-adblock-message
 /*.js|$script,~third-party,domain=cyberpedia.su|infopedia.su|lektsii.org|megaobuchalka.ru|poisk-ru.ru|studopedia.info|studopedia.net|studopedia.org|studopedia.su
 /a-detector/$domain=docfilms.info|green-teatv.com|vesjoloevideo.ru
@@ -26740,7 +26743,7 @@ kp.kg,kp.kz,kp.md,kp.ru##body > #app [data-branding-wrapper]:style(padding-top: 
 kp.kg,kp.kz,kp.md,kp.ru##body > #app div[style="display:block !important"] > div:first-child > div:first-child + div > div:first-child + div > div[data-name]:first-child + div:style(margin-top: auto !important)
 ! ---
 ! krasview.ru - зеркала
-cunofilms.ru,hlamer.ru##body:style(background-color: #596c84 !important)
+hlamer.ru,ru##body[style*="://image.krasview.ru/channel"]:style(background-color: #596c84 !important)
 ! ---
 kriminal.net.ua,news.dn.ua###popup-manager.popup-show
 kriminal.net.ua,news.dn.ua###popup-manager.popup-show + #layout:style(-webkit-filter: none !important; filter: none !important)
@@ -27493,7 +27496,7 @@ yandex.ru##div > .banner-root ~ .page-root > #page > div[class]:first-child > di
 yandex.ru##div > .banner-root ~ .page-root > #page > div[class]:first-child > div[class]:first-child + div > section > div[class]:first-child ~ div > div > span ~ div > div[class]:style(min-height: 0 !important)
 ! ---
 ! маркет
-market.yandex.by,market.yandex.kz,market.yandex.ru,market.yandex.uz##div[data-zone-name="direct-ads-gallery"]
+market.yandex.by,market.yandex.kz,market.yandex.ru##div[data-zone-name="direct-ads-gallery"]
 ! ---
 ! музыка
 music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.uz##.page-root > .d-overhead
@@ -27841,7 +27844,7 @@ anime-chan.me##+js(abort-on-property-read, move_string)
 city.ogo.ua##+js(abort-on-property-read, myatu_bgm)
 kolizhanka.com.ua##+js(abort-on-property-read, nocontext)
 it-actual.ru##+js(abort-on-property-read, onload)
-cunofilms.ru,freehat.cc,hlamer.ru,lostpix.com,potokcdn.com,prostoporno.help,saltday.ru,uploadimagex.com,wowskill.ru,xittv.net##+js(abort-on-property-read, open)
+freehat.cc,hlamer.ru,lostpix.com,potokcdn.com,prostoporno.help,saltday.ru,uploadimagex.com,wowskill.ru,xittv.net##+js(abort-on-property-read, open)
 sm.news##+js(abort-on-property-read, preventSelection)
 zab.ru##+js(abort-on-property-read, scrollw)
 tapochek.net##+js(abort-on-property-read, setsnow)
