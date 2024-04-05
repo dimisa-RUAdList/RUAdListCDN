@@ -1,8 +1,8 @@
-diff name:ruadlist lines:126 checksum:07772f1048
+diff name:ruadlist lines:137 checksum:50d8546994
 d4 2
 a5 2
-! Last modified: Thu, 04 Apr 2024 22:20:08 +0000
-! Diff-Path: ../patches/2024.4.4.1340.patch#ruadlist
+! Last modified: Fri, 05 Apr 2024 03:22:24 +0000
+! Diff-Path: ../patches/2024.4.5.202.patch#ruadlist
 a1047 1
 ||cdn.neon.click^$third-party
 a1599 1
@@ -92,6 +92,10 @@ ictv.ua,vikna.tv##div[id^="div-gpt-ad-"]
 d21663 2
 a21664 1
 ||pikabu.ru/nroockaz?key=
+a21916 1
+dzen.ru##div[class^="floor-skeleton-card__skeletonCardWrapper"]
+a21918 1
+dzen.ru#?#div[data-testid="article-showcase-card"]:-abp-has(> [data-testid="card-rtb"])
 a24664 1
 @@||ictv.ua^$generichide
 a24746 1
@@ -112,8 +116,13 @@ d27097 2
 a27098 2
 rudub.online##.details__bg
 rudub.online##body > section[class*="section details"]:style(padding-top: 70px !important)
+a27460 2
+dzen.ru##div[class*="grid__adaptiveGridContainer"] > div > article:not([aria-label])
+dzen.ru##div[class*="hasBlackHeader"] > div[class^="header-widgets"] ~ div
 a27617 1
 e.mail.ru,octavius.mail.ru###popup-placeholder
+a27937 1
+dzen.ru##+js(nano-setTimeout-booster, '()=>r(t)', 15000)
 a27948 1
 vseinstrumenti.ru##+js(no-setTimeout-if, 'null,797', 20000)
 d27955 1
@@ -123,5 +132,7 @@ a28077 1
 playground.ru##+js(set-cookie, pg_SuggestGameFollow, true)
 a28094 1
 playground.ru##.dfp-container:remove()
+a28122 1
+dzen.ru##:matches-path(/articles) div:matches-attr("/data/"="article-showcase-card"):has(> article:not([aria-label]))
 d28211 1
 d29165 1

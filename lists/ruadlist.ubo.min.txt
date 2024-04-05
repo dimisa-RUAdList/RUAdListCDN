@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 04 Apr 2024 22:20:08 +0000
-! Diff-Path: ../patches/2024.4.4.1340.patch#ruadlist
+! Last modified: Fri, 05 Apr 2024 03:22:24 +0000
+! Diff-Path: ../patches/2024.4.5.202.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21923,8 +21923,10 @@ dzen.ru##.zen-ui-viewport-expansion__container:empty
 dzen.ru##.zenad-card-rtb
 dzen.ru##[data-name="video-in-combo-zen-container"]
 dzen.ru##div[class^="advert-panel"]
+dzen.ru##div[class^="floor-skeleton-card__skeletonCardWrapper"]
 dzen.ru#?#div[class^="grid__row-"]:-abp-has(> div[class^="video-card-ad"])
 dzen.ru##div[data-name^="zen2"]
+dzen.ru#?#div[data-testid="article-showcase-card"]:-abp-has(> [data-testid="card-rtb"])
 ! Дети
 deti.mail.ru##.cols__inner > .box
 deti.mail.ru##.rb
@@ -27472,6 +27474,8 @@ dzen.ru##[class*="folors"] div[id][class^="feed"] [class*="wrapper"][aria-label]
 dzen.ru##aside[id^="article_"][class*="_rhgt"] > div[class]
 dzen.ru##div[aria-label="Карточка рекомендованного видео"] ~ [aria-label]:not([aria-label="Карточка рекомендованного видео"])
 dzen.ru##div[class*="article__"] > .undefined ~ div[class*="mldlle"] > div[id][class]
+dzen.ru##div[class*="grid__adaptiveGridContainer"] > div > article:not([aria-label])
+dzen.ru##div[class*="hasBlackHeader"] > div[class^="header-widgets"] ~ div
 dzen.ru##div[class*="widjet__container"] > div[class*="widjet__"] ~ div
 dzen.ru##div[class^="feed__"] > article:not([aria-label]) > div:first-child ~ div
 dzen.ru##div[id*="splashscreen"]
@@ -27950,6 +27954,7 @@ startgamer.ru##+js(nano-setInterval-booster, js-game-loader-block, 1000, 0.0001)
 wowskill.ru##+js(nano-setInterval-booster, p)
 diplomsrazu.ru,igrozoom.ru,ru-minecraft.ru,softomania.net,vip-mods.ru,warezok.net,windows-driver.com,windows-driver.net,windows-program.com##+js(nano-setInterval-booster, timer)
 autoinfo24.ru,dp73.spb.ru,dropmefiles.com.ua,dropmefiles.net,gtavicecity.ru,pes-files.ru##+js(nano-setTimeout-booster)
+dzen.ru##+js(nano-setTimeout-booster, '()=>r(t)', 15000)
 tv-kanali.online##+js(nano-setTimeout-booster, , 30000, 0.0001)
 soyztreid.website##+js(nano-setTimeout-booster, document.getElementById, 1777)
 rbc.ru##+js(nano-setTimeout-booster, js-article-check-visibility, 2000)
@@ -28138,6 +28143,7 @@ dynamo.kiev.ua##.video-scroll:remove()
 /(aniqit|kodik)./$subdocument,removeparam=geoblock
 /^https?://yastatic\.net\/www\/_\/[^\s]{150,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 /sm\.news/[^\s]{80,}/$script,xmlhttprequest,badfilter,domain=sm.news
+dzen.ru##:matches-path(/articles) div:matches-attr("/data/"="article-showcase-card"):has(> article:not([aria-label]))
 pronpic.org#@#:not(obhod-adblocka)
 @@/fuckadblock.$script,domain=aniboom.one
 @@||frontend.vh.yandex.ru/player/*autoplay=1*service=ya-sport$subdocument,removeparam=|
