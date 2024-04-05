@@ -1,8 +1,8 @@
-diff name:ruadlist lines:32 checksum:bb33f0315a
+diff name:ruadlist lines:45 checksum:cc42599ae3
 d4 2
 a5 2
-! Last modified: Fri, 05 Apr 2024 13:21:59 +0000
-! Diff-Path: ../patches/2024.4.5.801.patch#ruadlist
+! Last modified: Fri, 05 Apr 2024 18:24:19 +0000
+! Diff-Path: ../patches/2024.4.5.1104.patch#ruadlist
 d10510 1
 d14653 1
 d14871 1
@@ -18,6 +18,8 @@ ru###ads-top.ads
 d22734 1
 a22734 1
 market.yandex.by,market.yandex.kz,market.yandex.ru##.layout_type_search.headline__footer
+a24699 1
+@@||praca.by^$generichide
 d25052 1
 a25052 1
 @@||awaps.yandex.$domain=kinopoisk.ru|market.yandex.by|market.yandex.kz|market.yandex.ru
@@ -25,9 +27,20 @@ d25785 1
 d26743 1
 a26743 1
 hlamer.ru,ru##body[style*="://image.krasview.ru/channel"]:style(background-color: #596c84 !important)
+a27017 4
+praca.by##body.modal-open > #cookie-confirm
+praca.by##body.modal-open > .modal-backdrop
+praca.by##body.modal-open:style(overflow: auto !important)
+! ---
 d27496 1
 a27496 1
 market.yandex.by,market.yandex.kz,market.yandex.ru##div[data-zone-name="direct-ads-gallery"]
 d27844 1
 a27844 1
 freehat.cc,hlamer.ru,lostpix.com,potokcdn.com,prostoporno.help,saltday.ru,uploadimagex.com,wowskill.ru,xittv.net##+js(abort-on-property-read, open)
+d27918 2
+a27919 1
+youtube.com##+js(href-sanitizer, a[href^="https://www.youtube.com/redirect?event="][href*="&q=http"], ?q)
+d27953 1
+a27969 1
+vseinstrumenti.ru##+js(no-setTimeout-if, removeJuristicNotification)

@@ -1,8 +1,8 @@
-diff name:ruadlist lines:126 checksum:bb33f0315a
+diff name:ruadlist lines:139 checksum:cc42599ae3
 d4 2
 a5 2
-! Last modified: Fri, 05 Apr 2024 13:21:59 +0000
-! Diff-Path: ../patches/2024.4.5.801.patch#ruadlist
+! Last modified: Fri, 05 Apr 2024 18:24:19 +0000
+! Diff-Path: ../patches/2024.4.5.1104.patch#ruadlist
 a6792 1
 ||wxsbph.com^$third-party
 d10396 1
@@ -80,6 +80,8 @@ yclid=$popup,domain=dzen.ru
 yclyd=$popup,domain=dzen.ru
 yhic=$popup,domain=dzen.ru
 yhid=$popup,domain=dzen.ru
+a24719 1
+@@||praca.by^$generichide
 d24902 1
 d25073 1
 a25073 1
@@ -97,6 +99,11 @@ growhow.in.ua##body:style(background-color: inherit !important)
 d26761 1
 a26761 1
 hlamer.ru,ru##body[style*="://image.krasview.ru/channel"]:style(background-color: #596c84 !important)
+a27035 4
+praca.by##body.modal-open > #cookie-confirm
+praca.by##body.modal-open > .modal-backdrop
+praca.by##body.modal-open:style(overflow: auto !important)
+! ---
 d27475 2
 a27476 2
 dzen.ru##[class*="foloors"] div[id][class^="feed"] [class*="wrapper"][aria-label] ~ article:not([aria-label])
@@ -112,9 +119,15 @@ market.yandex.by,market.yandex.kz,market.yandex.ru##div[data-zone-name="direct-a
 d27860 1
 a27860 1
 freehat.cc,hlamer.ru,lostpix.com,potokcdn.com,prostoporno.help,saltday.ru,uploadimagex.com,wowskill.ru,xittv.net##+js(abort-on-property-read, open)
+d27934 2
+a27935 1
+youtube.com##+js(href-sanitizer, a[href^="https://www.youtube.com/redirect?event="][href*="&q=http"], ?q)
 a27956 1
 dzen.ru##+js(nano-setTimeout-booster, '()=>r(t)', 15000)
+d27968 1
 d27975 1
+a27985 1
+vseinstrumenti.ru##+js(no-setTimeout-if, removeJuristicNotification)
 a28082 1
 playground.ru##+js(set-constant, localStorage.localstorageGameData, '')
 a28097 1

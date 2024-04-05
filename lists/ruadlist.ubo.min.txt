@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 05 Apr 2024 13:21:59 +0000
-! Diff-Path: ../patches/2024.4.5.801.patch#ruadlist
+! Last modified: Fri, 05 Apr 2024 18:24:19 +0000
+! Diff-Path: ../patches/2024.4.5.1104.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -24701,6 +24701,7 @@ cheb.ru,cheboksary.ws,kugesi.ru,na-svyazi.ru##a[href*="/ad.adriver."]
 @@||porjati.net^$generichide
 @@||postila.ru^$generichide
 @@||potokcdn.com^$generichide
+@@||praca.by^$generichide
 @@||pvpru.com^$generichide
 @@||radio-archive.ru^$generichide
 @@||radiolamp.ru^$generichide
@@ -27018,6 +27019,10 @@ porus.ru,ruporus.biz,ruporus.cc,ruporus.com,ruporus.net,ruporus.top,ruporus.tv,r
 postimees.ee##.cookie-paywall-visible .cookie-paywall
 postimees.ee##.cookie-paywall-visible div > .article-body-content ~ .article-body-content:style(display: flex !important)
 ! ---
+praca.by##body.modal-open > #cookie-confirm
+praca.by##body.modal-open > .modal-backdrop
+praca.by##body.modal-open:style(overflow: auto !important)
+! ---
 proagro.com.ua##.ban_head:style(display: block !important; background: none !important; pointer-events: none !important)
 proagro.com.ua##header > a[href="/"]:style(display: block !important)
 proagro.com.ua##main:style(margin-top: 0 !important)
@@ -27918,8 +27923,7 @@ lifehacker.ru##+js(href-sanitizer, a[href][rel*="sponsored"][target="_blank"], ?
 www.ixbt.com##+js(href-sanitizer, a[href^="//www.ixbt.com/click/?c="], [title])
 vz.ru##+js(href-sanitizer, a[href^="/redir/"], ?exturl)
 vz.ru##+js(href-sanitizer, a[href^="/redir/"], ?vzurl)
-disqus.com##+js(href-sanitizer, a[href^="https://disq.us/url?url="], [title])
-youtube.com##+js(href-sanitizer, a[href^="https://www.youtube.com/redirect?event="], ?q)
+youtube.com##+js(href-sanitizer, a[href^="https://www.youtube.com/redirect?event="][href*="&q=http"], ?q)
 uma.media##+js(json-prune, appearance.extended_auto_start)
 ivanovonews.ru##+js(json-prune, banner.ytcode)
 kufar.by,pikabu.ru##+js(json-prune, data, errors)
@@ -27953,7 +27957,6 @@ fatcatslim.ru##+js(no-setInterval-if, clientHeight)
 aniu.ru,liveball.uno##+js(no-setInterval-if, debugger)
 anime-chan.me##+js(no-setInterval-if, move_string)
 volyninfo.com##+js(no-setInterval-if, replaceWith)
-vseinstrumenti.ru##+js(no-setTimeout-if, 'null,797', 20000)
 otzovik.com##+js(no-setTimeout-if, , 250)
 sibnet.ru##+js(no-setTimeout-if, Adblock)
 razlozhi.ru##+js(no-setTimeout-if, X-Set-Adblock)
@@ -27970,6 +27973,7 @@ ferr-um.ucoz.ru,stalker-2-2012.ucoz.net##+js(no-setTimeout-if, getElementBy)
 rusvesna.su##+js(no-setTimeout-if, getVisibleDivs, 300)
 vseprosto.top##+js(no-setTimeout-if, google_jobrunner)
 fishki.net##+js(no-setTimeout-if, is_adblock)
+vseinstrumenti.ru##+js(no-setTimeout-if, removeJuristicNotification)
 testserver.pro##+js(no-setTimeout-if, saa)
 websdr.space##+js(no-setTimeout-if, setInterval, )
 blackwot.ru##+js(no-setTimeout-if, showModal)

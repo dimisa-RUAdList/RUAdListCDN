@@ -1,8 +1,8 @@
-diff name:ruadlist lines:200 checksum:bb33f0315a
+diff name:ruadlist lines:210 checksum:cc42599ae3
 d4 2
 a5 2
-! Last modified: Fri, 05 Apr 2024 13:21:59 +0000
-! Diff-Path: ../patches/2024.4.5.801.patch#ruadlist
+! Last modified: Fri, 05 Apr 2024 18:24:19 +0000
+! Diff-Path: ../patches/2024.4.5.1104.patch#ruadlist
 a1047 1
 ||cdn.neon.click^$third-party
 a1599 1
@@ -141,6 +141,8 @@ yhic=$popup,domain=dzen.ru
 yhid=$popup,domain=dzen.ru
 a24664 1
 @@||ictv.ua^$generichide
+a24702 1
+@@||praca.by^$generichide
 a24746 1
 @@||vikna.tv^$generichide
 d24884 1
@@ -163,6 +165,11 @@ growhow.in.ua##body:style(background-color: inherit !important)
 d26743 1
 a26743 1
 hlamer.ru,ru##body[style*="://image.krasview.ru/channel"]:style(background-color: #596c84 !important)
+a27017 4
+praca.by##body.modal-open > #cookie-confirm
+praca.by##body.modal-open > .modal-backdrop
+praca.by##body.modal-open:style(overflow: auto !important)
+! ---
 d27097 2
 a27098 2
 rudub.online##.details__bg
@@ -184,11 +191,14 @@ e.mail.ru,octavius.mail.ru###popup-placeholder
 d27841 1
 a27841 1
 freehat.cc,hlamer.ru,lostpix.com,potokcdn.com,prostoporno.help,saltday.ru,uploadimagex.com,wowskill.ru,xittv.net##+js(abort-on-property-read, open)
+d27915 2
+a27916 1
+youtube.com##+js(href-sanitizer, a[href^="https://www.youtube.com/redirect?event="][href*="&q=http"], ?q)
 a27937 1
 dzen.ru##+js(nano-setTimeout-booster, '()=>r(t)', 15000)
-a27948 1
-vseinstrumenti.ru##+js(no-setTimeout-if, 'null,797', 20000)
 d27955 1
+a27965 1
+vseinstrumenti.ru##+js(no-setTimeout-if, removeJuristicNotification)
 a28062 1
 playground.ru##+js(set-constant, localStorage.localstorageGameData, '')
 a28077 1
