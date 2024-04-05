@@ -1,8 +1,8 @@
-diff name:ruadlist lines:210 checksum:cc42599ae3
+diff name:ruadlist lines:213 checksum:f1e2a7bb64
 d4 2
 a5 2
-! Last modified: Fri, 05 Apr 2024 18:24:19 +0000
-! Diff-Path: ../patches/2024.4.5.1104.patch#ruadlist
+! Last modified: Fri, 05 Apr 2024 23:20:05 +0000
+! Diff-Path: ../patches/2024.4.5.1400.patch#ruadlist
 a1047 1
 ||cdn.neon.click^$third-party
 a1599 1
@@ -196,6 +196,9 @@ a27916 1
 youtube.com##+js(href-sanitizer, a[href^="https://www.youtube.com/redirect?event="][href*="&q=http"], ?q)
 a27937 1
 dzen.ru##+js(nano-setTimeout-booster, '()=>r(t)', 15000)
+d27939 1
+a27939 1
+fonland.site,soyztreid.website##+js(nano-setTimeout-booster, document.getElementById, 1777)
 d27955 1
 a27965 1
 vseinstrumenti.ru##+js(no-setTimeout-if, removeJuristicNotification)
