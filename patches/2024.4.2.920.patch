@@ -1,8 +1,8 @@
-diff name:ruadlist lines:185 checksum:3007defcc0
+diff name:ruadlist lines:205 checksum:ae764accef
 d4 2
 a5 2
-! Last modified: Sat, 06 Apr 2024 14:18:19 +0000
-! Diff-Path: ../patches/2024.4.6.858.patch#ruadlist
+! Last modified: Sat, 06 Apr 2024 19:14:55 +0000
+! Diff-Path: ../patches/2024.4.6.1154.patch#ruadlist
 a1047 1
 ||cdn.neon.click^$third-party
 a6791 1
@@ -14,6 +14,8 @@ d10508 1
 d10874 1
 a10874 1
 ||b.frida.vse42.ru/$domain=~b.frida.vse42.ru
+a13036 1
+||tragtorr.in/css/back.
 d13779 1
 d13878 1
 d13940 1
@@ -51,10 +53,15 @@ a16822 1
 fbc.biz.ua##.main_header > .full_width a[target="_blank"] > img
 a17003 1
 eapteka.ru##.neon-skeleton
+d17010 1
 d17521 1
+d17574 1
 a17739 1
 ua-football.com#?#.show-post > h2:-abp-has(> strong:-abp-contains(ставки ))
 d17749 1
+d17944 1
+a17944 1
+pay-day.ru,pnz.ru,podolyaka.com,podolyaka.ru,tvcenter.ru,warhead.su##.social-button--yandexzen
 d18591 1
 d18605 1
 a18605 1
@@ -84,9 +91,14 @@ d20412 1
 d21385 1
 a21385 1
 player.rudub.online#?#p:-abp-has(> strong a[href*="://cutter.li"])
+d21659 1
 d21671 2
 a21672 1
 ||pikabu.ru/nroockaz?key=
+d21684 1
+a21684 1
+dracon-zet.ru,fonmod.com,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
+d21708 2
 a21764 6
 ! hlamer и зеркала
 /stargate/?mode=vast&location=
@@ -114,6 +126,8 @@ yclid=$popup,domain=dzen.ru
 yclyd=$popup,domain=dzen.ru
 yhic=$popup,domain=dzen.ru
 yhid=$popup,domain=dzen.ru
+a24163 1
+||sberdevices.ru^$third-party
 a24711 1
 @@||praca.by^$generichide
 d24894 1
@@ -126,6 +140,7 @@ a25488 1
 a25789 1
 playground.ru##.mezzanine > .mezzanine-center > div:not([class])
 d25797 1
+d25811 1
 d26479 2
 a26486 2
 goodfon.ru##.wallpapers > [class^="wallpapers__item"]:style(margin-right: unset !important; width: 320px !important)
@@ -172,6 +187,9 @@ a27949 1
 fonland.site,soyztreid.website##+js(nano-setTimeout-booster, document.getElementById, 1777)
 d27959 1
 d27966 1
+d27969 1
+a27969 1
+tragtorr.in,tragtorr.info##+js(no-setTimeout-if, antyadb, 5000)
 a27976 1
 vseinstrumenti.ru##+js(no-setTimeout-if, removeJuristicNotification)
 a28073 1
@@ -182,5 +200,7 @@ a28105 1
 playground.ru##.dfp-container:remove()
 a28133 1
 dzen.ru##:matches-path(/articles) div:matches-attr("/data/"="article-showcase-card"):has(> article:not([aria-label]))
-d28222 1
+d28221 2
+a28222 1
+||yandex.ru/ads/system/context.js$script,redirect=noopjs,domain=tragtorr.in|tragtorr.info
 d29176 1
