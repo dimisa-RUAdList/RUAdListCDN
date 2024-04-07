@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 07 Apr 2024 15:20:02 +0000
-! Diff-Path: ../patches/2024.4.7.920.patch#ruadlist
+! Last modified: Sun, 07 Apr 2024 20:19:43 +0000
+! Diff-Path: ../patches/2024.4.7.1219.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -13027,7 +13027,7 @@ lada.kz/uploads/banners/
 ||torrentporno.ru/jrt-$script
 ||tort.fm/banners/
 ||tourister.ru/query.php*=adver-$xmlhttprequest
-||tproger.ru/_nuxt/ListokTop.
+||tproger.ru/_nuxt/LubokTop.
 ||tr.anidub.*/templates/Anidub/images/header_bg.
 ||track24.ru/img/bnrs
 ||trackitonline.*/pics/$object
@@ -20557,7 +20557,7 @@ dlltop.ru##div[class^="tm-article-banner"]
 odeve.ru##div[class^="toneBlock"]
 flicksbar.fun,flicksbar.info##div[class^="topAd"]
 life-reactor.com##div[class^="top_baner"]
-tproger.ru##div[class^="tp-"][class*="listok"]
+tproger.ru##div[class^="tp-"][class*="lubok"]
 formulalubvi.com##div[class^="traffic-video"]
 rbook.me##div[class^="trsm"]
 tourister.ru##div[class^="trstr_adv_"]
@@ -28164,7 +28164,7 @@ hdrezka.*,rezka.*##+js(abort-current-inline-script, document.getElementsByTagNam
 hdrezka.*,rezka.*##+js(set-constant, Object.prototype.preroll, undefined)
 dzen.ru##iframe[style^="position:"][style*="absolute"][srcdoc]:remove()
 m.rp5.*#@#.adsbygoogle
-reshu.by,sdamgia.ru##main > .false:style(margin-bottom: -185px !important)
+sdamgia.ru##main > .false + div:not([class]) + [class]:style(margin-top: -185px !important)
 reshu.by,sdamgia.ru##main > div > div > div:has-text(/rotator|блокировщик/)
 mult-porno.*,sex-studentki.*,cosplay-porn.*##+js(set-constant, biads.initCli, undefined)
 dmod.cc,draug.ru,modsforwot.ru##p:has-text(Для скачивания подождите отсчет таймера...)
