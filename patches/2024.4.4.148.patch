@@ -1,8 +1,8 @@
-diff name:ruadlist lines:162 checksum:ae764accef
+diff name:ruadlist lines:170 checksum:a3d8c3d07e
 d4 2
 a5 2
-! Last modified: Sat, 06 Apr 2024 19:14:55 +0000
-! Diff-Path: ../patches/2024.4.6.1154.patch#ruadlist
+! Last modified: Sun, 07 Apr 2024 01:31:01 +0000
+! Diff-Path: ../patches/2024.4.7.91.patch#ruadlist
 a6792 1
 ||wxsbph.com^$third-party
 d10396 1
@@ -134,6 +134,7 @@ market.yandex.by,market.yandex.kz,market.yandex.ru##div[data-zone-name="direct-a
 d27860 1
 a27860 1
 freehat.cc,hlamer.ru,lostpix.com,potokcdn.com,prostoporno.help,saltday.ru,uploadimagex.com,wowskill.ru,xittv.net##+js(abort-on-property-read, open)
+d27917 1
 d27934 2
 a27935 1
 youtube.com##+js(href-sanitizer, a[href^="https://www.youtube.com/redirect?event="][href*="&q=http"], ?q)
@@ -149,6 +150,7 @@ a27978 1
 tragtorr.in,tragtorr.info##+js(no-setTimeout-if, antyadb, 5000)
 a27985 1
 vseinstrumenti.ru##+js(no-setTimeout-if, removeJuristicNotification)
+d28035 1
 a28082 1
 playground.ru##+js(set-constant, localStorage.localstorageGameData, '')
 a28097 1
@@ -160,4 +162,10 @@ dzen.ru##:matches-path(/articles) div:matches-attr("/data/"="article-showcase-ca
 d28230 2
 a28231 1
 ||yandex.ru/ads/system/context.js$script,redirect=noopjs,domain=tragtorr.in|tragtorr.info
+a28374 5
+! VIQEO автоплей на Shkulev Media, только для десктопов
+!#if !env_mobile
+7days.ru,cdn.viqeo.tv,kinonews.ru,kp.kg,kp.kz,kp.md,kp.ru,mk.ru,ohotniki.ru,portalvirtualreality.ru,radiokp.ru,sportkp.ru,wday.ru,woman.ru,www.fontanka.ru##+js(addEventListener-defuser, visibilitychange, captureContext)
+116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,62.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,proizhevsk.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru##+js(set-constant, Object.prototype._requestIframeData, noopFunc)
+!#endif
 d29185 1
