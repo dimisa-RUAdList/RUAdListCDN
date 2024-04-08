@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 08 Apr 2024 16:26:08 +0000
-! Diff-Path: ../patches/2024.4.8.986.patch#ruadlist
+! Last modified: Mon, 08 Apr 2024 21:17:48 +0000
+! Diff-Path: ../patches/2024.4.8.1277.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -15756,6 +15756,7 @@ echosevera.ru##.cartoon
 livejournal.com##.cat-widget__adv-container
 livejournal.com##.cat-widget__card-wrap--adv
 vsthemes.org#?#.catalog > .shorty:-abp-has(> .block)
+hotline.ua##.catalog-three-products
 yamart.ru##.catalogElAd
 tabletki.ua#?#.category-card__card-row > .col:-abp-has(> div > .tabletki-adunit)
 ufanotes.ru##.category2 > .fa-exchange
@@ -26900,6 +26901,7 @@ nezavisim.tv##html:not(#id) *:style(-webkit-filter: none !important; filter: non
 ! ---
 nn.by###mainWrapper:style(background: none !important; padding-top: 0 !important)
 ! ---
+nnmclub.to##.postquotehref:style(position: inherit !important)
 nnmclub.to##body > .wrap:style(top: 0 !important)
 nnmclub.to##body:style(background: none !important)
 ! ---
