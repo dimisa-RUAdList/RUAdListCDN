@@ -1,8 +1,8 @@
-diff name:ruadlist lines:111 checksum:e8ecd66257
+diff name:ruadlist lines:117 checksum:9563a15d98
 d4 2
 a5 2
-! Last modified: Thu, 11 Apr 2024 09:20:21 +0000
-! Diff-Path: ../patches/2024.4.11.560.patch#ruadlist
+! Last modified: Thu, 11 Apr 2024 14:21:35 +0000
+! Diff-Path: ../patches/2024.4.11.861.patch#ruadlist
 d7259 1
 a7259 1
 ||com/s/$script,subdocument,domain=babestar.ru|bestcamsxxx.com|exoticvideo.net|freepublish.ru|gidporno.com|guide-box.ru|imgmoney.ru|kino-zal.kz|kinohost.nov.ru|kinoonlain.org|kritka.net|mega-track.org|mnogohlama.ru|moresofta.com|palevo.com|politland.ru|porn-news.org|porno-gid.info|porno-torrent.biz|porno-torrents.ru|pornoboss.tv|pornogovno.ru|pornomage.net|pornorip.biz|pornorun.com|pornovizion.com|privsex.ru|promotevid.ru|rosporn.com|ru-admin.net|seasonvar.ru|sibiryak-soft.org|suero.tv|tedkino.com|tyt-kinofilm.ru|uptube.su|uvideos.ru|v-chulkahh.ru|video-magnet.com|vodkov.net|vodvore.net|vserisunki.ru|vzale.tv|wifilm.ru|x-zona.org|xxlbunny.com|xxx-russian.ru
@@ -50,6 +50,8 @@ d13494 1
 d13529 1
 d13574 1
 d13595 1
+a13633 1
+russkiiyazyk.ru###block-2
 d13896 1
 d13945 1
 a13945 1
@@ -57,6 +59,8 @@ sudostroenie.info###header_banner
 a14378 1
 musinfo.net###rtm-top
 d14545 1
+a18224 1
+nikopolnews.net##.top-reklama
 d18557 2
 a18641 1
 ilenta.com##[alt="Ads"]
@@ -101,10 +105,12 @@ d26908 1
 d26960 3
 d27471 1
 a27471 1
-dzen.ru##[class*="foloors"] div[id][class^="feed"] [aria-label] ~ article:not([aria-label])
+dzen.ru##[class*="foloors"] div[id][class^="feed"] [aria-label] ~ article:not([aria-label]):not([id])
 a27473 1
 dzen.ru##div[class*="adaptiveGridContainer"] > div > article:not([aria-label])
 d27475 1
+a27475 1
+dzen.ru##div[class*="hasBlackHeader"] > [id*="teaser"]
 d27824 1
 a27974 1
 tradingview.com##+js(no-setTimeout-if, evercookie, 300000)

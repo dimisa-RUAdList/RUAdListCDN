@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 11 Apr 2024 09:20:21 +0000
-! Diff-Path: ../patches/2024.4.11.560.patch#ruadlist
+! Last modified: Thu, 11 Apr 2024 14:21:35 +0000
+! Diff-Path: ../patches/2024.4.11.861.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -13584,6 +13584,7 @@ fastpic.org###bleft
 ketchuptv.ru###blink
 newsroom.kh.ua###block-15
 newsroom.kh.ua###block-16
+russkiiyazyk.ru###block-2
 growhow.in.ua###block-5
 anti-malware.ru###block-block-1
 anti-malware.ru###block-block-21
@@ -18174,6 +18175,7 @@ tut.by##.top-offer
 rugrad.eu##.top-promo
 pavlodar.news,pavon.kz##.top-promo-view
 euro-football.ru##.top-rates
+nikopolnews.net##.top-reklama
 autosport.com.ru##.top-sidebar-banner
 fcenter.ru##.top-site-an
 anti-malware.ru##.top-text-block
@@ -27414,11 +27416,12 @@ dzen.ru##div[id][class$="__ad"]
 dzen.ru###dzen-header ~ [id*="teaser"]
 dzen.ru##.article-recommender__feed-container article > div + div
 dzen.ru##.viewer-layout__content div[class*="-player "][aria-label] ~ div:not([class])
-dzen.ru##[class*="foloors"] div[id][class^="feed"] [aria-label] ~ article:not([aria-label])
+dzen.ru##[class*="foloors"] div[id][class^="feed"] [aria-label] ~ article:not([aria-label]):not([id])
 dzen.ru##aside[id^="article_"][class*="_rhgd"] > div[class]
 dzen.ru##div[aria-label="Карточка рекомендованного видео"] ~ [aria-label]:not([aria-label="Карточка рекомендованного видео"])
 dzen.ru##div[class*="adaptiveGridContainer"] > div > article:not([aria-label])
 dzen.ru##div[class*="article__"] > .undefined ~ div[class*="mldlie"] > div[id][class]
+dzen.ru##div[class*="hasBlackHeader"] > [id*="teaser"]
 dzen.ru##div[class*="hasBlackHeader"] > div[class^="header-widgets"] ~ div
 dzen.ru##div[class*="widjet__container"] > div[class*="widjet__"] ~ div
 dzen.ru##div[class^="feed__"] > article:not([aria-label]) > div:first-child ~ div
