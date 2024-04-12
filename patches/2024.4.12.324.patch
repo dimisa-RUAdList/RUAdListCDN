@@ -1,8 +1,8 @@
-diff name:ruadlist lines:60 checksum:d4c9e33314
+diff name:ruadlist lines:66 checksum:4981fcccc1
 d4 2
 a5 2
-! Last modified: Fri, 12 Apr 2024 15:20:57 +0000
-! Diff-Path: ../patches/2024.4.12.920.patch#ruadlist
+! Last modified: Fri, 12 Apr 2024 20:18:20 +0000
+! Diff-Path: ../patches/2024.4.12.1218.patch#ruadlist
 a1828 1
 ||equippro.xyz^$third-party
 a8382 1
@@ -39,6 +39,9 @@ d21625 1
 a21625 2
 /^https?://pikabu.ru/[a-z]{1,}\?key=/$xmlhttprequest,domain=pikabu.ru
 ||pikabu.ru/ajax?$xmlhttprequest,domain=pikabu.ru
+d21637 1
+a21637 1
+dracon-zet.ru,fonmod.com,howdyho.net,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 a22714 1
 dzen.ru#?#div:-abp-has(> .adv-skeleton___main)
 a23636 1
@@ -53,6 +56,9 @@ d27426 1
 a27426 1
 dzen.ru##div[class*="article__"] > .undefined ~ div[class*="midlie"] > div[id][class]
 d27428 1
+d27911 1
+a27911 1
+howdyho.net##+js(no-setInterval-if, _0x, 5000)
 d27993 1
 a28049 1
 iz.ru##+js(set-local-storage-item, vipler.player.live.play, false)

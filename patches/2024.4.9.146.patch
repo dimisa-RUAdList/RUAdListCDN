@@ -1,8 +1,8 @@
-diff name:ruadlist lines:182 checksum:d4c9e33314
+diff name:ruadlist lines:188 checksum:4981fcccc1
 d4 2
 a5 2
-! Last modified: Fri, 12 Apr 2024 15:20:57 +0000
-! Diff-Path: ../patches/2024.4.12.920.patch#ruadlist
+! Last modified: Fri, 12 Apr 2024 20:18:20 +0000
+! Diff-Path: ../patches/2024.4.12.1218.patch#ruadlist
 a1828 1
 ||equippro.xyz^$third-party
 d7259 1
@@ -139,6 +139,9 @@ d21671 1
 a21671 2
 /^https?://pikabu.ru/[a-z]{1,}\?key=/$xmlhttprequest,domain=pikabu.ru
 ||pikabu.ru/ajax?$xmlhttprequest,domain=pikabu.ru
+d21683 1
+a21683 1
+dracon-zet.ru,fonmod.com,howdyho.net,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 a21773 1
 2ip.io,2ip.ru##a[href*="://hidem"]
 a22099 1
@@ -171,6 +174,9 @@ dzen.ru##div[class*="adaptiveGridContainer"] > div > article:not([aria-label])
 dzen.ru##div[class*="article__"] > .undefined ~ div[class*="midlie"] > div[id][class]
 dzen.ru##div[class*="hasBlackHeader"] > [id*="teaser"]
 d27820 1
+d27956 1
+a27956 1
+howdyho.net##+js(no-setInterval-if, _0x, 5000)
 a27970 1
 tradingview.com##+js(no-setTimeout-if, evercookie, 300000)
 a28016 1
