@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 11 Apr 2024 19:15:17 +0000
-! Diff-Path: ../patches/2024.4.11.1155.patch#ruadlist
+! Last modified: Fri, 12 Apr 2024 01:20:35 +0000
+! Diff-Path: ../patches/2024.4.12.80.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -7971,7 +7971,7 @@ _verified.php?code=*&server=runetki.com
 /teaser_klubnika/*
 /teaserblock.site.js
 /teasers.
-/teasers/*$domain=~ableton.com|~adventuregamers.com|~agderposten.no|~amway.ru|~amway.ua|~av.by|~babla.ru|~bmw.de|~bmw.ro|~bmw.ru|~business-gazeta.ru|~fujifilm.eu|~gismeteo.by|~gismeteo.kz|~gismeteo.md|~kinobulvar.info|~meganomkino.ru|~newsland.com|~novsu.ru|~rce.by|~road.cc|~stackoverflow.com|~teaserstar.ru|~wetteronline.de|~www.kinopoisk.ru|~yandex.by|~yandex.com|~yandex.com.tr|~yandex.fr|~yandex.kz|~yandex.ru
+/teasers/*$domain=~ableton.com|~adventuregamers.com|~agderposten.no|~amway.ru|~amway.ua|~av.by|~babla.ru|~bmw.de|~bmw.ro|~bmw.ru|~business-gazeta.ru|~fujifilm.eu|~gismeteo.by|~gismeteo.kz|~gismeteo.md|~kinobulvar.info|~meganomkino.ru|~novsu.ru|~rce.by|~road.cc|~stackoverflow.com|~teaserstar.ru|~wetteronline.de|~www.kinopoisk.ru|~yandex.by|~yandex.com|~yandex.com.tr|~yandex.fr|~yandex.kz|~yandex.ru
 /testserial/vendor/vast.js
 /tionline120x60.
 /tionline150x60.
@@ -12103,7 +12103,6 @@ lada.kz/uploads/banners/
 ||newserials.net/ranetka.js
 ||newsko.ru/_static/
 ||newslab.ru/b/
-||newsland.*/public/img/viardo.
 ||newsmaker.md^*/banners/
 ||newsomsk.ru/design/new/js/banner_new.js
 ||newsroom.kh.ua/wp-content/uploads/tiny_
@@ -13651,6 +13650,7 @@ aacalc.ru###center_b
 tverigrad.ru###center_column ~ div div > img[src]
 kerch.fm###center_left > .informer
 rabota.kharkov.ua###central > table > tbody > tr > .noprint
+newsland.com###channelsFeed > [data-block-type="channel-card"] ~ :not([data-block-type="channel-card"])
 finget.ru###chart_a
 game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib###checkCookie
 vk.com###chrome_bar_content
@@ -18734,6 +18734,7 @@ vc.ru##[data-analytics*="native"]
 bobr.by,buhonline.ru,zakon.ru##[data-banner-id]
 focus.ua,sovets.net,tvtver.ru##[data-banner]
 tophotels.ru##[data-bh]
+newsland.com##[data-block-type="ads"]
 bbs-sk.ru##[data-blockid^="app_cms_Blocks"]
 minfin.com.ua##[data-bn-slot]
 7dach.ru##[data-campaign-code][data-url*="http"]
@@ -26847,6 +26848,8 @@ nevasport.ru,ru-drivemusic.net##.main-wrapper:style(margin-top: 0 !important)
 ! ---
 newkaliningrad.ru###page-wrapper:style(margin-top: 0 !important)
 newkaliningrad.ru##.col-side > .opinion-teaser:style(border-top: none !important)
+! ---
+newsland.com##.main__branding:style(margin-top: 0 !important)
 ! ---
 newsyou.info##.home:style(background-image: none !important; padding-top: 0 !important)
 newsyou.info##body:style(overflow: auto !important)

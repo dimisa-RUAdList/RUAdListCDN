@@ -1,12 +1,23 @@
-diff name:ruadlist lines:13 checksum:2d890812f7
+diff name:ruadlist lines:24 checksum:785c02d5d9
 d4 2
 a5 2
-! Last modified: Thu, 11 Apr 2024 19:15:17 +0000
-! Diff-Path: ../patches/2024.4.11.1155.patch#ruadlist
+! Last modified: Fri, 12 Apr 2024 01:20:35 +0000
+! Diff-Path: ../patches/2024.4.12.80.patch#ruadlist
+d7974 1
+a7974 1
+/teasers/*$domain=~ableton.com|~adventuregamers.com|~agderposten.no|~amway.ru|~amway.ua|~av.by|~babla.ru|~bmw.de|~bmw.ro|~bmw.ru|~business-gazeta.ru|~fujifilm.eu|~gismeteo.by|~gismeteo.kz|~gismeteo.md|~kinobulvar.info|~meganomkino.ru|~novsu.ru|~rce.by|~road.cc|~stackoverflow.com|~teaserstar.ru|~wetteronline.de|~www.kinopoisk.ru|~yandex.by|~yandex.com|~yandex.com.tr|~yandex.fr|~yandex.kz|~yandex.ru
+d12106 1
 a13586 1
 russkiiyazyk.ru###block-2
+a13652 1
+newsland.com###channelsFeed > [data-block-type="channel-card"] ~ :not([data-block-type="channel-card"])
 a18176 1
 nikopolnews.net##.top-reklama
+a18734 1
+newsland.com##[data-block-type="ads"]
+a26848 2
+newsland.com##.main__branding:style(margin-top: 0 !important)
+! ---
 d27417 1
 a27417 1
 dzen.ru##[class*="foloors"] div[id][class^="feed"] [aria-label] ~ article:not([aria-label]):not([id])
