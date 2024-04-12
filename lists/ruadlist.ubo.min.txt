@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 12 Apr 2024 10:24:14 +0000
-! Diff-Path: ../patches/2024.4.12.624.patch#ruadlist
+! Last modified: Fri, 12 Apr 2024 15:20:57 +0000
+! Diff-Path: ../patches/2024.4.12.920.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -16372,6 +16372,7 @@ gazeta-severny.ru##.header-widget
 cont.ws##.header2
 xvatit.com##.header2 > .header
 obozrevatel.com##.headerBiding
+city-n.ru##.header__adv
 1tv.ru##.header__advertising-block
 024.by,agropolit.com,kp.ua,loveradio.ru,news.ru##.header__banner
 time-to-read.ru##.header__banner__cont
@@ -18430,7 +18431,7 @@ atlasprirodirossii.ru,hyperione.com,portaltele.com.ua,sho.org.ua,zazloo.ru##.wid
 volyninfo.com##.widget_calendar ~ .widget_text ~ .widget_text
 rustaste.ru#?#.widget_categories:-abp-has(> div[align="center"] > img[src*="/aliban"])
 sdelalremont.ru##.widget_cb_widget
-1.zt.ua,100pdf.club,alladvices.ru,amorefilms.ru,analitikaua.net,aspekty.net,auto-portal.com.ua,avtotachki.com,borodina-protiv-buzovoj.ru,chas.cv.ua,cheb-live.ru,cryptodzen.com,dacha.help,dietdo.ru,ebanoe.it,electric-220.ru,erokomiksi.org,flytothesky.ru,gametrick.ru,glavradio.info,golos.te.ua,happymodern.ru,kazakh-zerno.net,koskomp.ru,lhealth.info,m-zh.ru,mi100.info,muwhi.ru,netsofta.net,new-s.com.ua,pravda.cn.ua,psiholog4you.ru,root-nation.com,rubrowsers.ru,sdelalremont.ru,sharknews.ru,simptomy-lechenie.net,smartmama.com.ua,ternopillive.com,tipsboard.ru,ua-news.in.ua,ua-report.info,vgolove.net,vizitnlo.ru,volyninfo.com,vseiski.ru,withcars.ru,wona.com.ua,zelenj.ru##.widget_custom_html
+1.zt.ua,100pdf.club,4studio.com.ua,alladvices.ru,amorefilms.ru,analitikaua.net,aspekty.net,auto-portal.com.ua,avtotachki.com,borodina-protiv-buzovoj.ru,chas.cv.ua,cheb-live.ru,cryptodzen.com,dacha.help,dietdo.ru,ebanoe.it,electric-220.ru,erokomiksi.org,flytothesky.ru,gametrick.ru,glavradio.info,golos.te.ua,happymodern.ru,kazakh-zerno.net,koskomp.ru,lhealth.info,m-zh.ru,mi100.info,muwhi.ru,netsofta.net,new-s.com.ua,pravda.cn.ua,psiholog4you.ru,root-nation.com,rubrowsers.ru,sdelalremont.ru,sharknews.ru,simptomy-lechenie.net,smartmama.com.ua,ternopillive.com,tipsboard.ru,ua-news.in.ua,ua-report.info,vgolove.net,vizitnlo.ru,volyninfo.com,vseiski.ru,withcars.ru,wona.com.ua,zelenj.ru##.widget_custom_html
 femmie.ru##.widget_custom_html > .partners__heading ~ .custom-html-widget
 vsepredohraniteli.ru##.widget_custom_html ~ .widget_text
 aeslib.ru##.widget_custom_html.FixedWidget__fixed_widget
@@ -19118,7 +19119,6 @@ pleogame.ru##a[href*="://go.pleogame.site/r/"]
 sport24.ru##a[href*="://go.sport24.ru"]
 bwtorrents.ru##a[href*="://goo-gl.su/"]
 imageban.ru##a[href*="://gorodrabot.ru/"]
-dev.ua##a[href*="://klats-klats.com/"]
 anistar.org,astar.bz,online-star.org,online-stars.org##a[href*="://litmarket.ru/"]
 ok-tv.org##a[href*="://look-sport.net/"]
 eschemo.ru##a[href*="://marchelas.tilda.ws"]
@@ -20450,7 +20450,7 @@ miasskiy.ru##div[class^="papex"]
 smolensk-i.ru##div[class^="parthner"]
 cyberscore.live##div[class^="partner-"]
 tonkosti.ru##div[class^="partner-link"]
-chytomo.com,moika78.ru,padaread.com##div[class^="partners"]
+chytomo.com,dev.ua,moika78.ru,padaread.com##div[class^="partners"]
 syzran-small.ru,xn----7sbabwosghnf8al4lkj7b.xn--p1ai##div[class^="partnews"]
 1plus1.video##div[class^="playlist-player-branding-"]
 gorod.cn.ua##div[class^="pos"][class*="_"]
@@ -21203,7 +21203,6 @@ chexov.info##img[src*="chexov.info/images/banners/"]
 cqham.ru##img[src*="cqham.ru/forum/ad/"]
 poltava365.com##img[src*="img/adw/"]
 jobvacancy.pro##img[src*="jobvacancy.pro/img/commin/"]
-4studio.com.ua##img[src*="nightburger.lviv.ua/banner_"]
 1pnz.ru##img[src*="баннеры"]
 officebesplatno.com##img[src="/download.png"]
 filmasik.com.ua##img[src="/filmi.jpg"]
@@ -21626,7 +21625,8 @@ ictv.ua,vikna.tv##div[id^="div-gpt-ad-"]
 !||www.liveinternet.ru/users/$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/cgi-bin/rpls.fcgi?list= https://www.liveinternet.ru/spell/spell.js https://www.liveinternet.ru/share/js/share.js https://www.liveinternet.ru/4Ek/JS/diary/main/nav/regoradd.js https://www.liveinternet.ru/4Ek/JS/diary/trans.js
 !||www.liveinternet.ru/|$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/utf/lici.js https://www.liveinternet.ru/utf/li.js https://www.liveinternet.ru/utf/main_new.js
 ! Pikabu (ловушка для обфускации)
-||pikabu.ru/nroockaz?key=
+/^https?://pikabu.ru/[a-z]{1,}\?key=/$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/ajax?$xmlhttprequest,domain=pikabu.ru
 ! селекторы
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
@@ -22716,6 +22716,7 @@ yandex.by,yandex.kz,yandex.ru,yandex.uz##.stat_pixel_yes[onclick][class*="_layou
 dzen.ru##[class*="floours"] div[id][class^="feed"] [class*="wrapper"][aria-label] ~ article:not([aria-label])
 yandex.by,yandex.kz,yandex.ru,yandex.uz##a[href*="//ads.adfox.ru/"]
 yandex.by,yandex.kz,yandex.ru,yandex.uz##body[class*="b-page_alt-widgets_yes"] .feed ._need-stub
+dzen.ru#?#div:-abp-has(> .adv-skeleton___main)
 yandex.ru##div[class$="ear_js_inited"] > a[href^="//awaps.yandex.ru"]
 yandex.by,yandex.kz,yandex.ru,yandex.uz##img[src*="yandex.net/get-direct"]
 ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz#?#ul > .serp-item_card:-abp-has([data-bem] .organic__subtitle > span:-abp-contains(/Рeклама|Реклама/))
@@ -27424,13 +27425,13 @@ dzen.ru##div[id][class$="__ad"]
 dzen.ru###dzen-header ~ [id*="teaser"]
 dzen.ru##.article-recommender__feed-container article > div + div
 dzen.ru##.viewer-layout__content div[class*="-player "][aria-label] ~ div:not([class])
-dzen.ru##[class*="foloors"] div[id][class^="feed"] [aria-label] ~ article:not([aria-label]):not([id])
-dzen.ru##aside[id^="article_"][class*="_rhgd"] > div[class]
+dzen.ru##[class*="fololors"] div[id][class^="feed"] [aria-label] ~ article:not([aria-label]):not([id])
+dzen.ru##aside[id^="article_"][class*="_rhpd"] > div[class]
 dzen.ru##div[aria-label="Карточка рекомендованного видео"] ~ [aria-label]:not([aria-label="Карточка рекомендованного видео"])
+dzen.ru##div[class*="BlackHeader"] > div[class^="header-widgets"] ~ div
 dzen.ru##div[class*="adaptiveGridContainer"] > div > article:not([aria-label])
-dzen.ru##div[class*="article__"] > .undefined ~ div[class*="mldlie"] > div[id][class]
+dzen.ru##div[class*="article__"] > .undefined ~ div[class*="midlie"] > div[id][class]
 dzen.ru##div[class*="hasBlackHeader"] > [id*="teaser"]
-dzen.ru##div[class*="hasBlackHeader"] > div[class^="header-widgets"] ~ div
 dzen.ru##div[class*="widjet__container"] > div[class*="widjet__"] ~ div
 dzen.ru##div[class^="feed__"] > article:not([aria-label]) > div:first-child ~ div
 dzen.ru##div[id*="splashscreen"]
@@ -28131,7 +28132,7 @@ hdrezka.*,rezka.*##+js(abort-current-inline-script, document.getElementsByTagNam
 hdrezka.*,rezka.*##+js(set-constant, Object.prototype.preroll, undefined)
 dzen.ru##iframe[style^="position:"][style*="absolute"][srcdoc]:remove()
 m.rp5.*#@#.adsbygoogle
-sdamgia.ru##main > .false + div:not([class]) + [class]:style(margin-top: -185px !important)
+sdamgia.ru##main > .false + div:not([class]) > [class]:style(margin-top: -185px !important)
 reshu.by,sdamgia.ru##main > div > div > div:has-text(/rotator|блокировщик/)
 mult-porno.*,sex-studentki.*,cosplay-porn.*##+js(set-constant, biads.initCli, undefined)
 dmod.cc,draug.ru,modsforwot.ru##p:has-text(Для скачивания подождите отсчет таймера...)

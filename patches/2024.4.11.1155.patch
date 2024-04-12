@@ -1,8 +1,8 @@
-diff name:ruadlist lines:42 checksum:a83f3a6ec5
+diff name:ruadlist lines:71 checksum:d4c9e33314
 d4 2
 a5 2
-! Last modified: Fri, 12 Apr 2024 10:24:14 +0000
-! Diff-Path: ../patches/2024.4.12.624.patch#ruadlist
+! Last modified: Fri, 12 Apr 2024 15:20:57 +0000
+! Diff-Path: ../patches/2024.4.12.920.patch#ruadlist
 a1828 1
 ||equippro.xyz^$third-party
 d7974 1
@@ -22,22 +22,51 @@ a14828 1
 d15748 1
 a15748 1
 024.by,ampercar.com,autogeek.com.ua,bolshoyulov.ru,femmie.ru,fuzzmusic.ru,gadgets-help.ru,gubdaily.ru,hersonweek.net,itbusiness.com.ua,itsider.com.ua,kakbog.com,kovi.ru,mmr.net.ua,nnews.com.ua,o-polze.com,pcminipro.ru,poravkrym.ru,villaved.ru,vsviti.com.ua##.code-block
+a16370 1
+city-n.ru##.header__adv
 d16372 1
 a16372 1
 024.by,agropolit.com,kp.ua,loveradio.ru,news.ru##.header__banner
 d16997 1
 a16997 1
 onliner.by##.news-media__preview > a:not([href*="onliner.by/"]) > img
+d18429 1
+a18429 1
+1.zt.ua,100pdf.club,4studio.com.ua,alladvices.ru,amorefilms.ru,analitikaua.net,aspekty.net,auto-portal.com.ua,avtotachki.com,borodina-protiv-buzovoj.ru,chas.cv.ua,cheb-live.ru,cryptodzen.com,dacha.help,dietdo.ru,ebanoe.it,electric-220.ru,erokomiksi.org,flytothesky.ru,gametrick.ru,glavradio.info,golos.te.ua,happymodern.ru,kazakh-zerno.net,koskomp.ru,lhealth.info,m-zh.ru,mi100.info,muwhi.ru,netsofta.net,new-s.com.ua,pravda.cn.ua,psiholog4you.ru,root-nation.com,rubrowsers.ru,sdelalremont.ru,sharknews.ru,simptomy-lechenie.net,smartmama.com.ua,ternopillive.com,tipsboard.ru,ua-news.in.ua,ua-report.info,vgolove.net,vizitnlo.ru,volyninfo.com,vseiski.ru,withcars.ru,wona.com.ua,zelenj.ru##.widget_custom_html
 a18736 1
 newsland.com##[data-block-type="ads"]
 d19035 1
 a19035 1
 024.by,1777.ru,1istochnik.ru,7days.ru,actualnews.org,allboxing.ru,amurmedia.ru,argumenti.ru,atas.info,auto.ru,autosaratov.ru,autosport.com.ru,av.by,baby.ru,bel.ru,belkagomel.by,bidbaits.ru,carsweek.ru,chitamedia.su,chukotkamedia.ru,cq.ru,ctc.ru,deita.ru,eaomedia.ru,eva.ru,finam.ru,fishki.net,fontanka.ru,food.ru,friday.ru,interface31.ru,irkutskmedia.ru,iz.ru,izhlife.ru,kaifolog.net,kamchatkamedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,lipetskmedia.ru,magadanmedia.ru,mel.fm,mk.ru,nakhodka.media,nashe.ru,neva.today,new-magazine.ru,noob-club.ru,nsn.fm,om1.ru,osnmedia.ru,politrussia.com,povarenok.ru,priamurmedia.ru,primamedia.ru,prufy.ru,radiojazzfm.ru,radioultra.ru,realt.by,riamo.ru,rockfm.ru,russian.rt.com,rusvesna.su,sakhalinmedia.ru,sevastopolmedia.ru,sm.news,smolensk-i.ru,smotrim.ru,sovets.net,sovets24.ru,sravni.ru,starhit.ru,stavropol.media,study.ru,svpressa.ru,takiedela.ru,teleport2001.ru,topnews.ru,tv2.today,ukraina.ru,ulanmedia.ru,ussurmedia.ru,vm.ru,vsezdorovo.com,www.kolesa.ru,yakutiamedia.ru,zaycev.net##a[href*="//zen.yandex.ru/"]
+d19116 1
+d20448 1
+a20448 1
+chytomo.com,dev.ua,moika78.ru,padaread.com##div[class^="partners"]
+d21201 1
+d21624 1
+a21624 2
+/^https?://pikabu.ru/[a-z]{1,}\?key=/$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/ajax?$xmlhttprequest,domain=pikabu.ru
+a22713 1
+dzen.ru#?#div:-abp-has(> .adv-skeleton___main)
 a23635 1
 ||kudapoiti.by^$third-party
 a26850 2
 newsland.com##.main__branding:style(margin-top: 0 !important)
 ! ---
+d27419 2
+a27420 2
+dzen.ru##[class*="fololors"] div[id][class^="feed"] [aria-label] ~ article:not([aria-label]):not([id])
+dzen.ru##aside[id^="article_"][class*="_rhpd"] > div[class]
+a27421 1
+dzen.ru##div[class*="BlackHeader"] > div[class^="header-widgets"] ~ div
+d27423 1
+a27423 1
+dzen.ru##div[class*="article__"] > .undefined ~ div[class*="midlie"] > div[id][class]
+d27425 1
 d27990 1
 a28046 1
 iz.ru##+js(set-local-storage-item, vipler.player.live.play, false)
+d28126 1
+a28126 1
+sdamgia.ru##main > .false + div:not([class]) > [class]:style(margin-top: -185px !important)
