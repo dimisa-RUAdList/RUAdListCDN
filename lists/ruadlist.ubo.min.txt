@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 14 Apr 2024 10:46:32 +0000
-! Diff-Path: ../patches/2024.4.14.646.patch#ruadlist
+! Last modified: Sun, 14 Apr 2024 22:12:08 +0000
+! Diff-Path: ../patches/2024.4.14.1332.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -18934,6 +18934,7 @@ arminfo.info##[src*="banners/"]
 gorod.cn.ua##[src*="gorod.cn.ua/image/upload/"]
 shans.com.ua##[src*="images/banners"]:not([src="images/banners/lin.gif"])
 7themes.su##[src*="promo_res"]
+ixbt.com##[src*="rose.ixbt.com/banner/"]
 sibnet.ru##[src*="sibnet.ru/iframe-wink"]
 forum.zoneofgames.ru##[src*="trk.mail.ru/"]
 clubsandero.ru##[src="//an.yandex.ru/system/context.js"] ~ iframe
@@ -25833,7 +25834,7 @@ au-ok.com##p[style="border:3px solid #C1FF0A;background-color:#d5d5d1;padding:10
 aif.ru,ain.ua,bit.ua,budport.com.ua,ixbt.com,ko.com.ua,kv.by,livejournal.com,mc.today,newstudio.tv,oper.ru,pay-day.ru,sc2tv.ru,stopgame.ru,userstyles.org,zakarpatpost.net##body:not(#id):style(background-image: none !important)
 2pay-day.ru,4video.adult,aif.ru,ain.ua,bit.ua,budport.com.ua,ixbt.com,ko.com.ua,kv.by,livejournal.com,mc.today,newstudio.tv,oper.ru,sc2tv.ru,stopgame.ru,userstyles.org,zakarpatpost.net##html:not(#id):style(background-image: none !important)
 ! ---
-baskino.film,dnepr.info,dugtor.ru,filmitorrent.net,filmitorrent.site,ixbt.com,jetsetter.ua,kinoafisha.ua,kinobar.vip,moskva.fm,newstudio.tv,nnmclub.to,pay-day.ru,roem.ru,trupornolabs.org,utorr.cc,vc.ru,virusinfo.info,wikianime.tv,xxxadulttorrent.org,you-anime.ru,yummyanime.tv,zombie-film.live##body:not(#id):style(padding-top: 0 !important)
+baskino.film,dnepr.info,dugtor.ru,filmitorrent.net,filmitorrent.site,jetsetter.ua,kinoafisha.ua,kinobar.vip,moskva.fm,newstudio.tv,nnmclub.to,pay-day.ru,roem.ru,trupornolabs.org,utorr.cc,vc.ru,virusinfo.info,wikianime.tv,xxxadulttorrent.org,you-anime.ru,yummyanime.tv,zombie-film.live##body:not(#id):style(padding-top: 0 !important)
 ! ---
 radioromantika.ru##.main-wrapp__content:style(margin-top: 0 !important)
 101.ru##.wrapper-branding
@@ -25986,7 +25987,7 @@ animemovie.ru##nav[role="navigation"] > ul:style(top: 0 !important)
 ! ---
 animespirit.tv,fullfilmhd.space,igry-online.net###wrapper:style(margin-top: 0 !important)
 ! ---
-anidub.best,anilibria.best,anilibria.life,animebest.tv,animedia.life,animego.life,animevost.best,anistars.ru,kinogo-net.la,senpai.cc,yummyanime.life###wr-bg:style(padding-top: 60px !important; margin-top: unset !important)
+anidub.best,anilibria.best,anilibria.life,animebest.tv,animedia.life,animego.life,animevost.best,anistars.ru,kinogo-net.la,senpai.cc,yummyanime.life###wr-bg:style(padding-top: 60px !important; margin-top: unset !important; top: unset !important)
 animevost.org,animevost.top,vost.pw##div[class^="headbg"] > .menu .sar:style(bottom: auto !important; top: 50px !important; z-index: 100 !important)
 animevost.org,animevost.top,vost.pw##div[class^="headbg"] > .menu:style(top: 0 !important)
 animevost.org,animevost.top,vost.pw##div[class^="headbg"]:style(background-image: none !important; height: auto !important)
@@ -26563,8 +26564,8 @@ www.ivi.ru##body.watch > div[class]:not([id]):not([style]):nth-child(-n+2) > sty
 www.ivi.ru##body.watch > div[class]:not([id]):not([style]):nth-child(-n+2):style(background: none !important)
 www.ivi.ru##body.watch > header.ivi-top:style(top: 0 !important)
 ! ---
-ixbt.com##body:not(#id) > .b-content.b-content__breadcrumbs:style(margin-top: 0 !important)
-ixbt.com##body:not(#id) > .b-content__pagecontent:style(margin-top: 0 !important)
+ixbt.com##body:not(#id) > .b-content.b-content__breadcrumbs:style(margin-top: unset !important)
+ixbt.com##body:not(#id) > .b-content__pagecontent:style(margin-top: unset !important)
 ixbt.com##body:style(background-color: white !important)
 ! ---
 forum.ixbt.com##.body_content_table > .left.column:style(margin-right: 0 !important; width: 100% !important)
@@ -26580,6 +26581,7 @@ www.ixbt.com###page-wrapper > .tm-wrapper > .tm:style(margin-bottom: auto !impor
 www.ixbt.com###page-wrapper:style(background-color: white !important)
 ! исправление ошибок и косяков оригинальной вёрстки
 ixbt.market,www.ixbt.com###page-wrapper .container:style(max-width: 100% !important)
+ixbt.com##.b-content__pagecontent > .b-content--wrapper > .g-grid:style(margin-top: unset !important)
 ! ---
 ixbt.games##.main:style(margin-top: 2px !important)
 ixbt.games,smb.ixbt.com##.tm-wrapper > .tm:style(margin-bottom: auto !important)
