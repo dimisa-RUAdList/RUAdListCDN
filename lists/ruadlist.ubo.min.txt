@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 15 Apr 2024 08:19:51 +0000
-! Diff-Path: ../patches/2024.4.15.499.patch#ruadlist
+! Last modified: Mon, 15 Apr 2024 13:20:50 +0000
+! Diff-Path: ../patches/2024.4.15.800.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -15072,7 +15072,7 @@ inmyroom.ru##.b-Article_main-banner
 inmyroom.ru##.b-BannerPlace
 inmyroom.ru##.b-PopupBanner
 serfery.ru##.b-adds
-ixbt.com,ixbt.games,ixbt.market##.b-adfox
+ixbt.com,ixbt.games,ixbt.market,ixbt.pro##.b-adfox
 tut.by##.b-aditem
 tvc.ru##.b-adv-block
 primpress.ru##.b-adv-marker
@@ -26861,6 +26861,7 @@ nezavisim.tv##html:not(#id) *:style(-webkit-filter: none !important; filter: non
 ! ---
 nn.by###mainWrapper:style(background: none !important; padding-top: 0 !important)
 ! ---
+nnmclub.to##.postquotehref:style(position: inherit !important)
 nnmclub.to##body > .wrap:style(top: 0 !important)
 nnmclub.to##body:style(background: none !important)
 ! ---
