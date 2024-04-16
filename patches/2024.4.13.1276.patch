@@ -1,8 +1,8 @@
-diff name:ruadlist lines:59 checksum:929163d9b7
+diff name:ruadlist lines:68 checksum:b4279dbe18
 d4 2
 a5 2
-! Last modified: Tue, 16 Apr 2024 09:19:44 +0000
-! Diff-Path: ../patches/2024.4.16.559.patch#ruadlist
+! Last modified: Tue, 16 Apr 2024 14:21:54 +0000
+! Diff-Path: ../patches/2024.4.16.861.patch#ruadlist
 d10346 1
 a10346 1
 /*.php?uid=$script,domain=animevost.org|animevost.top|cartoonka.art|multmania.club|vost.pw
@@ -13,6 +13,8 @@ d11351 1
 a11351 1
 ||freehat.cc/upload/lap/
 d13792 3
+a14212 1
+freehat.cc###prgm-block
 d14966 1
 d15079 1
 a15079 1
@@ -38,6 +40,8 @@ cisoclub.ru##div[class^=""][class*="LENTA"]
 d21627 1
 a21627 1
 /^https?://pikabu.ru/[a-zA-Z_0-9]{1,}\?key=/$xmlhttprequest,domain=pikabu.ru
+a22811 1
+ychid$popup,domain=dzen.ru
 d25841 1
 a25841 1
 baskino.film,dnepr.info,dugtor.ru,filmitorrent.net,filmitorrent.site,jetsetter.ua,kinoafisha.ua,kinobar.vip,moskva.fm,newstudio.tv,nnmclub.to,pay-day.ru,roem.ru,trupornolabs.org,utorr.cc,vc.ru,virusinfo.info,wikianime.tv,xxxadulttorrent.org,you-anime.ru,yummyanime.tv,zombie-film.live##body:not(#id):style(padding-top: 0 !important)
@@ -56,5 +60,10 @@ newsland.com##.news-line > .news-line__block:hover:style(-webkit-animation: scro
 newsland.com##.news-line > .news-line__block:style(-webkit-animation: none !important; animation: none !important)
 a26866 1
 nnmclub.to##.postquotehref:style(position: inherit !important)
+d27433 1
+a27433 1
+dzen.ru##div[class*="widgets__container"] > div[class*="widgets__"] ~ div
 a27877 1
 freehat.cc,lalapaluza.ru##+js(href-sanitizer, a[href*="/bitrix/rk.php?goto=https"], ?goto)
+a28144 1
+3dnews.ru##video[autoplay="autoplay"]:remove-attr(autoplay)

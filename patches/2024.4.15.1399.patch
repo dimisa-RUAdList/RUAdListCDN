@@ -1,8 +1,17 @@
-diff name:ruadlist lines:7 checksum:929163d9b7
+diff name:ruadlist lines:16 checksum:b4279dbe18
 d4 2
 a5 2
-! Last modified: Tue, 16 Apr 2024 09:19:44 +0000
-! Diff-Path: ../patches/2024.4.16.559.patch#ruadlist
+! Last modified: Tue, 16 Apr 2024 14:21:54 +0000
+! Diff-Path: ../patches/2024.4.16.861.patch#ruadlist
+a14209 1
+freehat.cc###prgm-block
 d21628 1
 a21628 1
 /^https?://pikabu.ru/[a-zA-Z_0-9]{1,}\?key=/$xmlhttprequest,domain=pikabu.ru
+a22812 1
+ychid$popup,domain=dzen.ru
+d27435 1
+a27435 1
+dzen.ru##div[class*="widgets__container"] > div[class*="widgets__"] ~ div
+a28147 1
+3dnews.ru##video[autoplay="autoplay"]:remove-attr(autoplay)

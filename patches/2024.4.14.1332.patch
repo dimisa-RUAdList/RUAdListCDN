@@ -1,8 +1,8 @@
-diff name:ruadlist lines:39 checksum:929163d9b7
+diff name:ruadlist lines:48 checksum:b4279dbe18
 d4 2
 a5 2
-! Last modified: Tue, 16 Apr 2024 09:19:44 +0000
-! Diff-Path: ../patches/2024.4.16.559.patch#ruadlist
+! Last modified: Tue, 16 Apr 2024 14:21:54 +0000
+! Diff-Path: ../patches/2024.4.16.861.patch#ruadlist
 d10346 1
 a10346 1
 /*.php?uid=$script,domain=animevost.org|animevost.top|cartoonka.art|multmania.club|vost.pw
@@ -12,6 +12,8 @@ a10358 1
 d11351 1
 a11351 1
 ||freehat.cc/upload/lap/
+a14209 1
+freehat.cc###prgm-block
 d15075 1
 a15075 1
 ixbt.com,ixbt.games,ixbt.market,ixbt.pro##.b-adfox
@@ -30,11 +32,18 @@ cisoclub.ru##div[class^=""][class*="LENTA"]
 d21623 1
 a21623 1
 /^https?://pikabu.ru/[a-zA-Z_0-9]{1,}\?key=/$xmlhttprequest,domain=pikabu.ru
+a22807 1
+ychid$popup,domain=dzen.ru
 d26359 3
 a26853 2
 newsland.com##.news-line > .news-line__block:hover:style(-webkit-animation: scroll 30s linear 0s infinite !important; animation: scroll 30s linear 0s infinite !important)
 newsland.com##.news-line > .news-line__block:style(-webkit-animation: none !important; animation: none !important)
 a26863 1
 nnmclub.to##.postquotehref:style(position: inherit !important)
+d27430 1
+a27430 1
+dzen.ru##div[class*="widgets__container"] > div[class*="widgets__"] ~ div
 a27874 1
 freehat.cc,lalapaluza.ru##+js(href-sanitizer, a[href*="/bitrix/rk.php?goto=https"], ?goto)
+a28141 1
+3dnews.ru##video[autoplay="autoplay"]:remove-attr(autoplay)
