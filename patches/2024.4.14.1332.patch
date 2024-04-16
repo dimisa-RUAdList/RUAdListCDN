@@ -1,8 +1,8 @@
-diff name:ruadlist lines:39 checksum:bf3ac0a66f
+diff name:ruadlist lines:39 checksum:929163d9b7
 d4 2
 a5 2
-! Last modified: Tue, 16 Apr 2024 04:23:23 +0000
-! Diff-Path: ../patches/2024.4.16.263.patch#ruadlist
+! Last modified: Tue, 16 Apr 2024 09:19:44 +0000
+! Diff-Path: ../patches/2024.4.16.559.patch#ruadlist
 d10346 1
 a10346 1
 /*.php?uid=$script,domain=animevost.org|animevost.top|cartoonka.art|multmania.club|vost.pw
@@ -29,7 +29,7 @@ a20267 1
 cisoclub.ru##div[class^=""][class*="LENTA"]
 d21623 1
 a21623 1
-/^https?://pikabu.ru/[_a-z]{1,}\?key=/$xmlhttprequest,domain=pikabu.ru
+/^https?://pikabu.ru/[a-zA-Z_0-9]{1,}\?key=/$xmlhttprequest,domain=pikabu.ru
 d26359 3
 a26853 2
 newsland.com##.news-line > .news-line__block:hover:style(-webkit-animation: scroll 30s linear 0s infinite !important; animation: scroll 30s linear 0s infinite !important)
