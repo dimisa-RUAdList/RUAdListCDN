@@ -1,8 +1,8 @@
-diff name:ruadlist lines:27 checksum:2d604f7e55
+diff name:ruadlist lines:27 checksum:251b01852d
 d4 2
 a5 2
-! Last modified: Wed, 17 Apr 2024 10:23:40 +0000
-! Diff-Path: ../patches/2024.4.17.623.patch#ruadlist
+! Last modified: Wed, 17 Apr 2024 15:22:52 +0000
+! Diff-Path: ../patches/2024.4.17.922.patch#ruadlist
 a10139 1
 ||3dtoday.ru/upload/medialibrary/*.png
 a15013 1
@@ -15,7 +15,7 @@ a19049 1
 d19685 1
 d21636 1
 a21636 1
-/^https?://pikabu.ru/[a-zA-Z_0-9]{1,}\?kei=/$xmlhttprequest,domain=pikabu.ru
+/^https?:\/\/pikabu\.ru\/[a-zA-Z_0-9]+\?/$xmlhttprequest,domain=pikabu.ru
 d26483 2
 a26484 2
 ag,biz,buzz,by,city,club,co,com,in,ink,kim,loan,me,name,net,org,rest,run,sh,so,space,today,tv,vip,website,win##body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"] > [id$="er"]:nth-child(-n+3):style(width: unset !important)
