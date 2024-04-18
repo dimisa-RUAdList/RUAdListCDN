@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 18 Apr 2024 06:25:55 +0000
-! Diff-Path: ../patches/2024.4.18.385.patch#ruadlist
+! Last modified: Thu, 18 Apr 2024 11:16:07 +0000
+! Diff-Path: ../patches/2024.4.18.676.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -7700,7 +7700,7 @@ _verified.php?code=*&server=runetki.com
 /baners/*$domain=~altera-auto.ru|~mgpk.bntu.by|~mirofox.ru|~redbubbles.ru|~vyviska.com.ua|~xn--100-8cdz0be5b.xn--p1ai|~xn--40-6kcayb8aoh7afog0b.xn--p1ai
 /banmas/index.php?informer=
 /banner.gif$domain=~e.aviasales.ru|~work-pulse.ru
-/banner.png$third-party,domain=~github.com|~kirmuseum.org
+/banner.png$third-party,domain=~drakescans.com|~github.com|~kirmuseum.org
 /banner2.gif
 /banner_$object
 /banner_l*.php?pubId=$third-party,script
@@ -17008,7 +17008,7 @@ gamemag.ru#?#.news-item-wrap > .news-item:-abp-has(> span:-abp-contains(Ad))
 zaxid.net##.news-list-col > .news-list
 onliner.by##.news-media__preview > a:not([href*="onliner.by/"]) > img
 1plus1.ua##.news-partners-add
-onliner.by##.news-promo
+onliner.by#?#.news-promo:-abp-has(> .news-promo__details)
 armyinform.com.ua##.news-section_items > li.link > a[target="_blank"] > img
 onliner.by##.news-text > * > a[href^="https://catalog.onliner.by/"][href*="utm_"]
 onliner.by##.news-text > .news-media a[href^="https://catalog.onliner.by/"]
@@ -21012,6 +21012,7 @@ inmoment.ru##div[style^="width:199px;height:299px;"]
 bookz.ru##div[style^="width:240px;height:400px"]
 m24.ru##div[style^="width:300px;height:600px"]
 liveinternet.ru##div[style^="width:970px; height:280px;"]
+onliner.by#?#em:-abp-contains(нож блокировщику)
 botanam.net,gdzputina.me##embed
 imageup.ru##fieldset[style^="display: inline; width: 45%;"]
 znak.com##figure
@@ -21397,6 +21398,7 @@ yepman.ru##span[style="font-size:14px;"]
 yepman.ru##span[style="font-size:14px;"] + *
 flashscore.com.ua,flashscore.ru.com,flashscore.ua,flashscorekz.com,livescore.in,soccerstand.com##sport[name="soccer"]
 nuriknur.ucoz.com##strong > span[style="color:red"]
+onliner.by#?#strong:-abp-contains(нож блокировщику)
 soyztreid.website##table
 qwe.ru##table + table tr:last-child > td:last-child > .border
 pogoda.ru##table + table[align="center"][summary] > tbody > tr:first-child + tr:last-child > td[align="center"][valign="top"][width="333px"]
