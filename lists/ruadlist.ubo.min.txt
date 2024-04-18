@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 18 Apr 2024 16:25:27 +0000
-! Diff-Path: ../patches/2024.4.18.985.patch#ruadlist
+! Last modified: Thu, 18 Apr 2024 21:17:20 +0000
+! Diff-Path: ../patches/2024.4.18.1277.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -2839,6 +2839,7 @@
 ||isinodo.ru^$third-party
 ||islamclick.ru^
 ||ismcxv.com^$third-party
+||isrv07.com^$third-party
 ||istcs.top^$third-party
 ||isterra.ru^$third-party
 ||istmvh.com^$third-party
@@ -3993,6 +3994,7 @@
 ||namezones.ru^$third-party
 ||namogemi.ru^$third-party
 ||namokuris.com^$third-party
+||naos.ink^$third-party
 ||naplene.ru^$third-party
 ||naruhap.pro^$third-party
 ||nasdfg.com^$third-party
@@ -17385,7 +17387,6 @@ parnuxi.biz##.pw-rkl-section
 crackstatus.net#?#.px-nav-dropdown-menu > .px-nav-item:-abp-has(> a > #uLogin)
 qip.ru##.q_banner
 qip.ru##.q_teaser
-allohalive.com,aniqit.com,anivod.com,doefiratv.net,kinoxam.ru,kodik.biz,kodik.cc,kodik.info,kodikdb.com,u-cdn.org,u-cdn.top,u-play.pro,u-stream.in,video.animejoy.ru,video.doramatv.su##.qp_adsnum
 shopping-spb.su##.queen_link
 ktozvonit.com.ua#?#.question:-abp-has(> .adsbygoogle)
 bash.im##.quote > .text:first-child
@@ -22424,6 +22425,7 @@ www.afisha.ru##[data-test="LINK OKKO-BUTTON"]
 letidor.ru,moslenta.ru,passion.ru,quto.ru##[id^="unit_"]
 wmj.ru##[qaid="topic"] ~ div a[href^="https://zen.yandex.ru/"]
 championat.com##a[href*="fon.bet/"]
+championat.com##a[href*="offer_id="]
 championat.com,~mail.rambler.ru,~nova.rambler.ru,rambler.ru##a[href*="okko.sport"]
 ~mail.rambler.ru,~nova.rambler.ru,rambler.ru,www.afisha.ru##a[href*="okko.tv"]
 letidor.ru,quto.ru##article a[href^="https://zen.yandex.ru/"]
@@ -26152,7 +26154,7 @@ cherkassy-sport.com###body:style(margin-top: 0 !important)
 ! ---
 chita.ru##body:style(background: none !important; margin-top: 0 !important; padding-top: 0 !important)
 ! ---
-cinema-hd.ru,filmshd.vip,goodfilms.su,kinoxa.cc,lordfilm.lu,lordserial.fun,lordserial.run,lordserial.top,newseries.me,yummyanime.best##.wrap:style(padding-top: 0 !important)
+cinema-hd.ru,doramatv.su,filmshd.vip,goodfilms.su,kinoxa.cc,lordfilm.lu,lordserial.fun,lordserial.run,lordserial.top,newseries.me,yummyanime.best##.wrap:style(padding-top: 0 !important)
 ! ---
 comments.ua##.back_bottom > *:style(pointer-events: auto !important)
 comments.ua##.back_bottom:style(cursor: auto !important)
@@ -27915,7 +27917,7 @@ kufar.by,pikabu.ru##+js(json-prune, data, errors)
 pikabu.ru##+js(json-prune, isVideoAutoplayMode swUrl)
 igromania.ru,kanobu.ru##+js(json-prune, results.fixed)
 znanija.com##+js(json-prune, tiers.TIER_ANY)
-aniqit.com,ashdi.vip,kodik.info,tortuga.wtf##+js(json-prune, vast)
+aniqit.com,anivod.com,ashdi.vip,kodik.cc,kodik.info,tortuga.wtf##+js(json-prune, vast)
 595.ucoz.net,5wip-file.ru,file-mods.ru,freesoft.ru,infourok.ru,mixmuz.ru,myshared.ru,myzcloud.me,n-torrents.org,sims3pack.ru,wallegend.net##+js(nano-setInterval-booster)
 studizba.com,surl.li##+js(nano-setInterval-booster, #timer)
 muzlan.top##+js(nano-setInterval-booster, .numcard)
