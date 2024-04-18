@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 18 Apr 2024 11:16:07 +0000
-! Diff-Path: ../patches/2024.4.18.676.patch#ruadlist
+! Last modified: Thu, 18 Apr 2024 16:25:27 +0000
+! Diff-Path: ../patches/2024.4.18.985.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21255,7 +21255,7 @@ sarafannoeradio.org##img[width="829"][height="90"]
 demiart.ru##img[width="900"][height="100"]
 post-tracker.ru##img[width^="8"][height^="3"][src$=".gif"]
 gizmod.ru##index > .entry
-audiotag.info,computer76.ru,enovosty.com,epravda.com.ua,eurointegration.com.ua,finget.ru,fraza.com,inforesist.org,ostro.org,real-vin.com,soyztreid.website,stravy.net,videoredaktor.ru,volyninfo.com##ins
+audiotag.info,computer76.ru,enovosty.com,epravda.com.ua,eurointegration.com.ua,finget.ru,fraza.com,inforesist.org,ostro.org,real-vin.com,stravy.net,videoredaktor.ru,volyninfo.com##ins
 peugeot-club.net,vjazhi.ru##ins[style^="display:inline"]
 stopgame.ru#?#li:-abp-has(> [href="https://zen.yandex.ru/stopgame"])
 argumenti.ru#?#li:-abp-has(> span:-abp-contains(Новости партнеров))
@@ -21631,6 +21631,8 @@ ictv.ua,vikna.tv##div[id^="div-gpt-ad-"]
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
+||soyztreid.website^$csp=script-src
+||soyztreid.website^$popup
 ! Liveinternet (ловушка для обфускации)
 ||liveinternet.ru/utf/lici.js?
 !/^https?://www\.liveinternet\.ru/(?!utf\/|q\/js\/|js\/|4Ek/JS/diary/main/nav/regoradd.js|autosave.js|cgi-bin/rpls.fcgi?|ckeditor\/|ckfinder\/|main_new_1251.js|share/js/share.js|spell/spell.js|uploader\/|vbcode.js|vbcode_language.js)/$script,domain=www.liveinternet.ru
@@ -21639,7 +21641,7 @@ ictv.ua,vikna.tv##div[id^="div-gpt-ad-"]
 !||www.liveinternet.ru/users/$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/cgi-bin/rpls.fcgi?list= https://www.liveinternet.ru/spell/spell.js https://www.liveinternet.ru/share/js/share.js https://www.liveinternet.ru/4Ek/JS/diary/main/nav/regoradd.js https://www.liveinternet.ru/4Ek/JS/diary/trans.js
 !||www.liveinternet.ru/|$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/utf/lici.js https://www.liveinternet.ru/utf/li.js https://www.liveinternet.ru/utf/main_new.js
 ! Pikabu (ловушка для обфускации)
-/^https?:\/\/pikabu\.ru\/[a-zA-Z_0-9]+\?/$xmlhttprequest,domain=pikabu.ru
+/^https?:\/\/pikabu\.ru\/[-a-zA-Z_0-9]+\?/$xmlhttprequest,domain=pikabu.ru
 ||pikabu.ru/ajax?$xmlhttprequest,domain=pikabu.ru
 ! селекторы
 anidub.vip,anidubonline.com##.plyr__menu
@@ -21652,7 +21654,7 @@ pikabu.ru#?#.stories-feed__container > .story div:-abp-properties(/min-height: .
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> div > header[class*=" "])
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(/min-height: 20.px|min-height: 29.px|min-height: 30.px|min-height: 300./))
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(/min-height: calc.29.px/))
-fonmod.com,howdyho.net,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
+fonmod.com,howdyho.net,ritsatv.ru,soyztreid.website##:not(my-obnaruzhili-blokirovshchik)
 android-mafia.com,game4you.top,games-pc.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##:not(this-site-promotes-malware)
 pikabu.ru##[data-block-name]
 liveinternet.ru,sdamgia.ru##[data-container]
@@ -27888,7 +27890,7 @@ bonus-tv.ru##+js(addEventListener-defuser, loadstart, isImmediatePropagationStop
 m.lenta.ru##+js(addEventListener-defuser, scroll, getBoundingClientRect)
 www.vesti.ru##+js(addEventListener-defuser, scroll, players)
 lenta.ru##+js(addEventListener-defuser, scroll, window.history.pushState)
-ritsatv.ru##+js(alert-buster)
+ritsatv.ru,soyztreid.website##+js(alert-buster)
 comedy-radio.ru,kufar.by,radioromantika.ru,relax-fm.ru,rg.ru,sm.news,ura.news,veseloeradio.ru##+js(cookie-remover, /^bda|^bltsr/)
 ~passport.yandex.by,~passport.yandex.kz,~passport.yandex.ru,~passport.yandex.uz,yandex.by,yandex.kz,yandex.ru,yandex.uz##+js(cookie-remover, /^bltsr$|^JPIqApiY$|^specific$|^substantial$/)
 yapx.ru##+js(cookie-remover, /adblock_/)
@@ -27929,7 +27931,7 @@ diplomsrazu.ru,igrozoom.ru,ru-minecraft.ru,softomania.net,vip-mods.ru,warezok.ne
 autoinfo24.ru,dp73.spb.ru,dropmefiles.com.ua,dropmefiles.net,gtavicecity.ru,pes-files.ru##+js(nano-setTimeout-booster)
 dzen.ru##+js(nano-setTimeout-booster, '()=>r(t)', 15000)
 tv-kanali.online##+js(nano-setTimeout-booster, , 30000, 0.0001)
-fonland.site,soyztreid.website##+js(nano-setTimeout-booster, document.getElementById, 1777)
+fonland.site##+js(nano-setTimeout-booster, document.getElementById, 1777)
 rbc.ru##+js(nano-setTimeout-booster, js-article-check-visibility, 2000)
 freetp.org,freetp.ru,online-fix.me##+js(nano-setTimeout-booster, timer)
 4pda.to##+js(nano-setTimeout-booster, zat_tick)

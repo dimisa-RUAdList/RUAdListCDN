@@ -1,8 +1,8 @@
-diff name:ruadlist lines:154 checksum:b7eef11fb8
+diff name:ruadlist lines:169 checksum:1cd53ea659
 d4 2
 a5 2
-! Last modified: Thu, 18 Apr 2024 11:16:07 +0000
-! Diff-Path: ../patches/2024.4.18.676.patch#ruadlist
+! Last modified: Thu, 18 Apr 2024 16:25:27 +0000
+! Diff-Path: ../patches/2024.4.18.985.patch#ruadlist
 a749 1
 ||bidster.net^$third-party
 a5567 1
@@ -98,12 +98,21 @@ a21003 1
 onliner.by#?#em:-abp-contains(нож блокировщику)
 a21168 1
 telesputnik.ru##img[src*="/images/ads/"]
+d21245 1
+a21245 1
+audiotag.info,computer76.ru,enovosty.com,epravda.com.ua,eurointegration.com.ua,finget.ru,fraza.com,inforesist.org,ostro.org,real-vin.com,stravy.net,videoredaktor.ru,volyninfo.com##ins
 a21387 2
 onliner.by#?#strong:-abp-contains(нож блокировщику)
 soyztreid.website##table
+a21618 2
+||soyztreid.website^$csp=script-src
+||soyztreid.website^$popup
 d21627 1
 a21627 1
-/^https?:\/\/pikabu\.ru\/[a-zA-Z_0-9]+\?/$xmlhttprequest,domain=pikabu.ru
+/^https?:\/\/pikabu\.ru\/[-a-zA-Z_0-9]+\?/$xmlhttprequest,domain=pikabu.ru
+d21640 1
+a21640 1
+fonmod.com,howdyho.net,ritsatv.ru,soyztreid.website##:not(my-obnaruzhili-blokirovshchik)
 a22811 1
 ychid$popup,domain=dzen.ru
 d24592 1
@@ -142,8 +151,14 @@ a27433 1
 dzen.ru##div[class*="widgets__container"] > div[class*="widgets__"] ~ div
 a27847 1
 blackwot.ru##+js(abort-on-stack-trace, document.getElementsByTagName, adsBlocked)
+d27870 1
+a27870 1
+ritsatv.ru,soyztreid.website##+js(alert-buster)
 a27877 1
 freehat.cc,lalapaluza.ru##+js(href-sanitizer, a[href*="/bitrix/rk.php?goto=https"], ?goto)
+d27910 1
+a27910 1
+fonland.site##+js(nano-setTimeout-booster, document.getElementById, 1777)
 d27940 1
 d27975 1
 a27979 1

@@ -1,8 +1,8 @@
-diff name:ruadlist lines:51 checksum:b7eef11fb8
+diff name:ruadlist lines:66 checksum:1cd53ea659
 d4 2
 a5 2
-! Last modified: Thu, 18 Apr 2024 11:16:07 +0000
-! Diff-Path: ../patches/2024.4.18.676.patch#ruadlist
+! Last modified: Thu, 18 Apr 2024 16:25:27 +0000
+! Diff-Path: ../patches/2024.4.18.985.patch#ruadlist
 d7703 1
 a7703 1
 /banner.png$third-party,domain=~drakescans.com|~github.com|~kirmuseum.org
@@ -37,15 +37,30 @@ a21014 1
 onliner.by#?#em:-abp-contains(нож блокировщику)
 a21179 1
 telesputnik.ru##img[src*="/images/ads/"]
+d21256 1
+a21256 1
+audiotag.info,computer76.ru,enovosty.com,epravda.com.ua,eurointegration.com.ua,finget.ru,fraza.com,inforesist.org,ostro.org,real-vin.com,stravy.net,videoredaktor.ru,volyninfo.com##ins
 a21398 2
 onliner.by#?#strong:-abp-contains(нож блокировщику)
 soyztreid.website##table
+a21629 2
+||soyztreid.website^$csp=script-src
+||soyztreid.website^$popup
 d21638 1
 a21638 1
-/^https?:\/\/pikabu\.ru\/[a-zA-Z_0-9]+\?/$xmlhttprequest,domain=pikabu.ru
+/^https?:\/\/pikabu\.ru\/[-a-zA-Z_0-9]+\?/$xmlhttprequest,domain=pikabu.ru
+d21651 1
+a21651 1
+fonmod.com,howdyho.net,ritsatv.ru,soyztreid.website##:not(my-obnaruzhili-blokirovshchik)
 a26373 2
 freehat.cc###page:style(max-width: 1600px !important; margin-top: 0 !important)
 ! ---
+d27885 1
+a27885 1
+ritsatv.ru,soyztreid.website##+js(alert-buster)
+d27926 1
+a27926 1
+fonland.site##+js(nano-setTimeout-booster, document.getElementById, 1777)
 d27990 1
 d28150 1
 a28150 1
