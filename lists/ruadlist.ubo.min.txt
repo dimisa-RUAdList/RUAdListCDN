@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 18 Apr 2024 21:17:20 +0000
-! Diff-Path: ../patches/2024.4.18.1277.patch#ruadlist
+! Last modified: Fri, 19 Apr 2024 02:29:14 +0000
+! Diff-Path: ../patches/2024.4.19.149.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -19155,7 +19155,6 @@ prostomob.com##a[href*="://s.zbanx.com/r/"]
 point.md##a[href*="://sales.simpals.com/"][href*="banner"]
 moirebenok.ua##a[href*="://sgo.one/"]
 programmersforum.ru#?#a[href*="://slurm.club/"] ~ *:-abp-contains(https://)
-soyztreid.website##a[href*="://softoroom.org/"]
 sportliga.com##a[href*="://sportliga.com/bookmakers/"] ~ a
 595.ucoz.net##a[href*="://surfearner.me/"]
 595.ucoz.net##a[href*="://teaser.bz/"]
@@ -21400,7 +21399,6 @@ yepman.ru##span[style="font-size:14px;"] + *
 flashscore.com.ua,flashscore.ru.com,flashscore.ua,flashscorekz.com,livescore.in,soccerstand.com##sport[name="soccer"]
 nuriknur.ucoz.com##strong > span[style="color:red"]
 onliner.by#?#strong:-abp-contains(нож блокировщику)
-soyztreid.website##table
 qwe.ru##table + table tr:last-child > td:last-child > .border
 pogoda.ru##table + table[align="center"][summary] > tbody > tr:first-child + tr:last-child > td[align="center"][valign="top"][width="333px"]
 pogoda.ru##table + table[align="center"][summary] > tbody > tr:first-child > th:first-child + th + th:last-child
@@ -21632,8 +21630,6 @@ ictv.ua,vikna.tv##div[id^="div-gpt-ad-"]
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
-||soyztreid.website^$csp=script-src
-||soyztreid.website^$popup
 ! Liveinternet (ловушка для обфускации)
 ||liveinternet.ru/utf/lici.js?
 !/^https?://www\.liveinternet\.ru/(?!utf\/|q\/js\/|js\/|4Ek/JS/diary/main/nav/regoradd.js|autosave.js|cgi-bin/rpls.fcgi?|ckeditor\/|ckfinder\/|main_new_1251.js|share/js/share.js|spell/spell.js|uploader\/|vbcode.js|vbcode_language.js)/$script,domain=www.liveinternet.ru
@@ -21655,7 +21651,7 @@ pikabu.ru#?#.stories-feed__container > .story div:-abp-properties(/min-height: .
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> div > header[class*=" "])
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(/min-height: 20.px|min-height: 29.px|min-height: 30.px|min-height: 300./))
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(/min-height: calc.29.px/))
-fonmod.com,howdyho.net,ritsatv.ru,soyztreid.website##:not(my-obnaruzhili-blokirovshchik)
+fonmod.com,howdyho.net,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 android-mafia.com,game4you.top,games-pc.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##:not(this-site-promotes-malware)
 pikabu.ru##[data-block-name]
 liveinternet.ru,sdamgia.ru##[data-container]
@@ -21679,6 +21675,8 @@ sdamgia.ru##div[style*="important;"][style*="width:"][style*="height:"] *
 pikabu.ru##div[style^="width: 300px; height:"]
 liveinternet.ru##style + div > div > div > div > div a
 !#endif
+soyztreid.website##:not(my-obnaruzhili-blokirovshchik)
+||soyztreid.website^$csp=script-src
 ! Блокировка ресурсов, намеренно продвигающих вредоносное ПО и фейки
 apad2.top,besplatnyeprogrammy.ru,inferno.games,mediagetguru.ru,monna2.top,only-soft.org,rutor-game.ru,torent-igruha.com,torrent-music.ru,torrent-soft.pro,torrentigo.net,torrentigruha.org,where-game.ru##:not(this-site-promotes-malware)
 ! Намеренное продвижение фейков и мошенников
@@ -27892,7 +27890,7 @@ bonus-tv.ru##+js(addEventListener-defuser, loadstart, isImmediatePropagationStop
 m.lenta.ru##+js(addEventListener-defuser, scroll, getBoundingClientRect)
 www.vesti.ru##+js(addEventListener-defuser, scroll, players)
 lenta.ru##+js(addEventListener-defuser, scroll, window.history.pushState)
-ritsatv.ru,soyztreid.website##+js(alert-buster)
+ritsatv.ru##+js(alert-buster)
 comedy-radio.ru,kufar.by,radioromantika.ru,relax-fm.ru,rg.ru,sm.news,ura.news,veseloeradio.ru##+js(cookie-remover, /^bda|^bltsr/)
 ~passport.yandex.by,~passport.yandex.kz,~passport.yandex.ru,~passport.yandex.uz,yandex.by,yandex.kz,yandex.ru,yandex.uz##+js(cookie-remover, /^bltsr$|^JPIqApiY$|^specific$|^substantial$/)
 yapx.ru##+js(cookie-remover, /adblock_/)

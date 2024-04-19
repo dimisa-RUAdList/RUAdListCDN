@@ -1,8 +1,8 @@
-diff name:ruadlist lines:79 checksum:073d2f9639
+diff name:ruadlist lines:70 checksum:d8799dd35e
 d4 2
 a5 2
-! Last modified: Thu, 18 Apr 2024 21:17:20 +0000
-! Diff-Path: ../patches/2024.4.18.1277.patch#ruadlist
+! Last modified: Fri, 19 Apr 2024 02:29:14 +0000
+! Diff-Path: ../patches/2024.4.19.149.patch#ruadlist
 a2841 1
 ||isrv07.com^$third-party
 a3995 1
@@ -28,8 +28,6 @@ d17387 1
 d18240 1
 a19066 1
 cisoclub.ru##a[href*="/adv"]
-a19155 1
-soyztreid.website##a[href*="://softoroom.org/"]
 d19359 1
 d19425 1
 d19479 1
@@ -45,18 +43,14 @@ telesputnik.ru##img[src*="/images/ads/"]
 d21256 1
 a21256 1
 audiotag.info,computer76.ru,enovosty.com,epravda.com.ua,eurointegration.com.ua,finget.ru,fraza.com,inforesist.org,ostro.org,real-vin.com,stravy.net,videoredaktor.ru,volyninfo.com##ins
-a21398 2
+a21398 1
 onliner.by#?#strong:-abp-contains(нож блокировщику)
-soyztreid.website##table
-a21629 2
-||soyztreid.website^$csp=script-src
-||soyztreid.website^$popup
 d21638 1
 a21638 1
 /^https?:\/\/pikabu\.ru\/[-a-zA-Z_0-9]+\?/$xmlhttprequest,domain=pikabu.ru
-d21651 1
-a21651 1
-fonmod.com,howdyho.net,ritsatv.ru,soyztreid.website##:not(my-obnaruzhili-blokirovshchik)
+a21674 2
+soyztreid.website##:not(my-obnaruzhili-blokirovshchik)
+||soyztreid.website^$csp=script-src
 a22420 1
 championat.com##a[href*="offer_id="]
 d26149 1
@@ -65,9 +59,6 @@ cinema-hd.ru,doramatv.su,filmshd.vip,goodfilms.su,kinoxa.cc,lordfilm.lu,lordseri
 a26373 2
 freehat.cc###page:style(max-width: 1600px !important; margin-top: 0 !important)
 ! ---
-d27885 1
-a27885 1
-ritsatv.ru,soyztreid.website##+js(alert-buster)
 d27910 1
 a27910 1
 aniqit.com,anivod.com,ashdi.vip,kodik.cc,kodik.info,tortuga.wtf##+js(json-prune, vast)
