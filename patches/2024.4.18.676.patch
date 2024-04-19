@@ -1,8 +1,8 @@
-diff name:ruadlist lines:31 checksum:ddb3925d5c
+diff name:ruadlist lines:36 checksum:1457c6175f
 d4 2
 a5 2
-! Last modified: Fri, 19 Apr 2024 07:19:16 +0000
-! Diff-Path: ../patches/2024.4.19.439.patch#ruadlist
+! Last modified: Fri, 19 Apr 2024 12:35:01 +0000
+! Diff-Path: ../patches/2024.4.19.755.patch#ruadlist
 a2841 1
 ||isrv07.com^$third-party
 a3995 1
@@ -15,10 +15,13 @@ audiotag.info,computer76.ru,enovosty.com,epravda.com.ua,eurointegration.com.ua,f
 d21402 1
 d21642 1
 a21642 1
-/^https?:\/\/pikabu\.ru\/[-a-zA-Z_0-9]+\?/$xmlhttprequest,domain=pikabu.ru
-a21678 2
+/^https?:\/\/pikabu\.ru\/[-~a-zA-Z_0-9]+\?/$xmlhttprequest,domain=pikabu.ru
+a21678 1
 soyztreid.website##:not(my-obnaruzhili-blokirovshchik)
-||soyztreid.website^$csp=script-src
+a21894 1
+dzen.ru###top-banner
+a22419 1
+championat.com##[data-href*="okko.sport"]
 a22424 1
 championat.com##a[href*="offer_id="]
 d26153 1
@@ -30,3 +33,5 @@ aniqit.com,anivod.com,ashdi.vip,kodik.cc,kodik.info,tortuga.wtf##+js(json-prune,
 d27932 1
 a27932 1
 fonland.site##+js(nano-setTimeout-booster, document.getElementById, 1777)
+a28151 1
+soyztreid.website##head:remove()

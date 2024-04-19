@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 19 Apr 2024 07:19:16 +0000
-! Diff-Path: ../patches/2024.4.19.439.patch#ruadlist
+! Last modified: Fri, 19 Apr 2024 12:35:01 +0000
+! Diff-Path: ../patches/2024.4.19.755.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21638,7 +21638,7 @@ ictv.ua,vikna.tv##div[id^="div-gpt-ad-"]
 !||www.liveinternet.ru/users/$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/cgi-bin/rpls.fcgi?list= https://www.liveinternet.ru/spell/spell.js https://www.liveinternet.ru/share/js/share.js https://www.liveinternet.ru/4Ek/JS/diary/main/nav/regoradd.js https://www.liveinternet.ru/4Ek/JS/diary/trans.js
 !||www.liveinternet.ru/|$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/utf/lici.js https://www.liveinternet.ru/utf/li.js https://www.liveinternet.ru/utf/main_new.js
 ! Pikabu (ловушка для обфускации)
-/^https?:\/\/pikabu\.ru\/[-a-zA-Z_0-9]+\?/$xmlhttprequest,domain=pikabu.ru
+/^https?:\/\/pikabu\.ru\/[-~a-zA-Z_0-9]+\?/$xmlhttprequest,domain=pikabu.ru
 ||pikabu.ru/ajax?$xmlhttprequest,domain=pikabu.ru
 ! селекторы
 anidub.vip,anidubonline.com##.plyr__menu
@@ -21676,7 +21676,6 @@ pikabu.ru##div[style^="width: 300px; height:"]
 liveinternet.ru##style + div > div > div > div > div a
 !#endif
 soyztreid.website##:not(my-obnaruzhili-blokirovshchik)
-||soyztreid.website^$csp=script-src
 ! Блокировка ресурсов, намеренно продвигающих вредоносное ПО и фейки
 apad2.top,besplatnyeprogrammy.ru,inferno.games,mediagetguru.ru,monna2.top,only-soft.org,rutor-game.ru,torent-igruha.com,torrent-music.ru,torrent-soft.pro,torrentigo.net,torrentigruha.org,where-game.ru##:not(this-site-promotes-malware)
 ! Намеренное продвижение фейков и мошенников
@@ -21893,6 +21892,7 @@ horo.mail.ru##div[data-adq-id]
 horo.mail.ru##div[data-closewrap-container]
 horo.mail.ru##div[data-module^="Slot.Mimic"]
 ! Дзен
+dzen.ru###top-banner
 dzen.ru##.article-right-ad-block
 dzen.ru##.article__bottom-embed-wrapper > .ad-split-embed + div
 dzen.ru##.zen-ui-viewport-expansion__container:empty
@@ -22418,6 +22418,7 @@ daily.afisha.ru##[data-block-type="AdContainer"]
 weather.rambler.ru##[data-block="seo"]
 championat.com##[data-goal-label*="_fonbet"]
 championat.com##[data-href*="offer"]
+championat.com##[data-href*="okko.sport"]
 autorambler.ru,rambler.ru##[data-news_media-desktop*="rnet_widget"]
 www.afisha.ru##[data-test="LINK OKKO-BUTTON"]
 letidor.ru,moslenta.ru,passion.ru,quto.ru##[id^="unit_"]
@@ -28151,6 +28152,7 @@ ozon.ru##div[data-widget="banner"]:matches-path(/my/reviews/promo):style(display
 pronpic.org##div[style="color:red;font-size:25px;"], .adblock_loock
 hdrezka.*,rezka.*##+js(abort-current-inline-script, document.getElementsByTagName, AMSP.loadAsset)
 hdrezka.*,rezka.*##+js(set-constant, Object.prototype.preroll, undefined)
+soyztreid.website##head:remove()
 dzen.ru##iframe[style^="position:"][style*="absolute"][srcdoc]:remove()
 m.rp5.*#@#.adsbygoogle
 reshu.by,sdamgia.ru##main > div > div > div:has-text(/rotator|блокировщик/)

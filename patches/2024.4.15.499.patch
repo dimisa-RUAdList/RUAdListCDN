@@ -1,8 +1,8 @@
-diff name:ruadlist lines:153 checksum:ddb3925d5c
+diff name:ruadlist lines:158 checksum:1457c6175f
 d4 2
 a5 2
-! Last modified: Fri, 19 Apr 2024 07:19:16 +0000
-! Diff-Path: ../patches/2024.4.19.439.patch#ruadlist
+! Last modified: Fri, 19 Apr 2024 12:35:01 +0000
+! Diff-Path: ../patches/2024.4.19.755.patch#ruadlist
 a749 1
 ||bidster.net^$third-party
 a2840 1
@@ -100,10 +100,13 @@ a21383 1
 onliner.by#?#strong:-abp-contains(нож блокировщику)
 d21623 1
 a21623 1
-/^https?:\/\/pikabu\.ru\/[-a-zA-Z_0-9]+\?/$xmlhttprequest,domain=pikabu.ru
-a21659 2
+/^https?:\/\/pikabu\.ru\/[-~a-zA-Z_0-9]+\?/$xmlhttprequest,domain=pikabu.ru
+a21659 1
 soyztreid.website##:not(my-obnaruzhili-blokirovshchik)
-||soyztreid.website^$csp=script-src
+a21875 1
+dzen.ru###top-banner
+a22400 1
+championat.com##[data-href*="okko.sport"]
 a22405 1
 championat.com##a[href*="offer_id="]
 a22807 1
@@ -147,6 +150,8 @@ d27937 1
 d27972 1
 a27976 1
 3dnews.kz,3dnews.ru##+js(set-attr, video[controls="controls"], controls, true)
+a28127 1
+soyztreid.website##head:remove()
 d28131 1
 a28131 1
 sdamgia.ru##main > div:first-child:empty + div:not([class]):style(max-height: 30px !important)
