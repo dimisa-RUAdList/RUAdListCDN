@@ -1,8 +1,8 @@
-diff name:ruadlist lines:132 checksum:15607d0ea5
+diff name:ruadlist lines:139 checksum:a2a965707d
 d4 2
 a5 2
-! Last modified: Sun, 21 Apr 2024 14:19:35 +0000
-! Diff-Path: ../patches/2024.4.21.859.patch#ruadlist
+! Last modified: Sun, 21 Apr 2024 19:16:22 +0000
+! Diff-Path: ../patches/2024.4.21.1156.patch#ruadlist
 a268 1
 ||ads.digitalcaramel.com^$third-party
 a1738 1
@@ -34,6 +34,7 @@ a11469 1
 ||growhow.in.ua/api?id=*secure=$subdocument
 a11787 1
 ||kyivvlada.com.ua/wp-content/uploads/*/*-x-*.jpg
+d13462 1
 a13597 1
 growhow.in.ua###block-6
 a13794 1
@@ -84,6 +85,8 @@ a20221 1
 d20282 1
 a20350 1
 cisoclub.ru##div[class^="banner"][class*="LENTA"]
+a20671 1
+game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div[id^="ad"][id$="blog"]
 a21014 1
 onliner.by#?#em:-abp-contains(нож блокировщику)
 a21179 1
@@ -107,8 +110,9 @@ a22415 1
 championat.com##[data-href*="okko.sport"]
 a22420 1
 championat.com##a[href*="offer_id="]
-a25365 1
-@@||talk.hyvor.com/embed/$domain=comss.one|comss.ru
+d25496 1
+a25496 1
+@@/(clickunder|footerad|layerad|lazyad|leaderad|leftad|linkad|pop_ad|prerollad|printad|pubads|pushdownad|right_ad|sidebar_ad|under)/$script,~third-party,domain=game4you.top|games-pc.top|innal.top|naylo.top|rustorka.com|rustorka.net|rustorka.top|rustorkacom.lib
 d25995 1
 a25995 1
 animemobi.ru,euro-football.ru,onlinestreams.ru,seasonvar.one##.wrapper:style(margin-top: 0 !important)
@@ -124,6 +128,9 @@ aniqit.com,anivod.com,ashdi.vip,kodik.cc,kodik.info,tortuga.wtf##+js(json-prune,
 d27926 1
 a27926 1
 fonland.site##+js(nano-setTimeout-booster, document.getElementById, 1777)
+d27984 1
+a27984 1
+game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /ad2blog|tick/)
 d27990 1
 d27993 1
 a28146 1
