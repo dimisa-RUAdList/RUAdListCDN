@@ -1,8 +1,8 @@
-diff name:ruadlist lines:87 checksum:fac2a2568f
+diff name:ruadlist lines:93 checksum:dfe5a0ce11
 d4 2
 a5 2
-! Last modified: Sun, 21 Apr 2024 04:26:23 +0000
-! Diff-Path: ../patches/2024.4.21.266.patch#ruadlist
+! Last modified: Sun, 21 Apr 2024 09:20:50 +0000
+! Diff-Path: ../patches/2024.4.21.560.patch#ruadlist
 a268 1
 ||ads.digitalcaramel.com^$third-party
 a1738 1
@@ -61,17 +61,22 @@ d21258 1
 a21258 1
 audiotag.info,computer76.ru,enovosty.com,epravda.com.ua,eurointegration.com.ua,finget.ru,fraza.com,inforesist.org,ostro.org,real-vin.com,stravy.net,videoredaktor.ru,volyninfo.com##ins
 d21402 1
+a21633 1
+||soyztreid.website^$popup
 d21642 1
 a21642 1
 /^https?:\/\/pikabu\.ru\/[-~a-zA-Z_0-9]+\?/$xmlhttprequest,domain=pikabu.ru
-a21678 1
+a21678 2
 soyztreid.website##:not(my-obnaruzhili-blokirovshchik)
+||soyztreid.website^$csp=script-src
 a21894 1
 dzen.ru###top-banner
 a22419 1
 championat.com##[data-href*="okko.sport"]
 a22424 1
 championat.com##a[href*="offer_id="]
+a25369 1
+@@||talk.hyvor.com/embed/$domain=comss.one|comss.ru
 d25999 1
 a25999 1
 animemobi.ru,euro-football.ru,onlinestreams.ru,seasonvar.one##.wrapper:style(margin-top: 0 !important)
@@ -84,5 +89,6 @@ aniqit.com,anivod.com,ashdi.vip,kodik.cc,kodik.info,tortuga.wtf##+js(json-prune,
 d27932 1
 a27932 1
 fonland.site##+js(nano-setTimeout-booster, document.getElementById, 1777)
+d27998 1
 a28151 1
 soyztreid.website##head:remove()

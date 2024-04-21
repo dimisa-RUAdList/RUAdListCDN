@@ -1,8 +1,8 @@
-diff name:ruadlist lines:88 checksum:fac2a2568f
+diff name:ruadlist lines:92 checksum:dfe5a0ce11
 d4 2
 a5 2
-! Last modified: Sun, 21 Apr 2024 04:26:23 +0000
-! Diff-Path: ../patches/2024.4.21.266.patch#ruadlist
+! Last modified: Sun, 21 Apr 2024 09:20:50 +0000
+! Diff-Path: ../patches/2024.4.21.560.patch#ruadlist
 a268 1
 ||ads.digitalcaramel.com^$third-party
 a1738 1
@@ -58,21 +58,24 @@ d20221 1
 a20221 1
 1.zt.ua,kyivvlada.com.ua##div[class*="section-smartslider"]
 d21402 1
-d21634 2
+d21634 1
 d21644 1
 a21644 1
 /^https?:\/\/pikabu\.ru\/[-~a-zA-Z_0-9]+\?/$xmlhttprequest,domain=pikabu.ru
 d21657 1
 a21657 1
 fonmod.com,howdyho.net,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
-a21680 1
+a21680 2
 soyztreid.website##:not(my-obnaruzhili-blokirovshchik)
+||soyztreid.website^$csp=script-src
 a21896 1
 dzen.ru###top-banner
 a22421 1
 championat.com##[data-href*="okko.sport"]
 a22426 1
 championat.com##a[href*="offer_id="]
+a25371 1
+@@||talk.hyvor.com/embed/$domain=comss.one|comss.ru
 d26001 1
 a26001 1
 animemobi.ru,euro-football.ru,onlinestreams.ru,seasonvar.one##.wrapper:style(margin-top: 0 !important)
@@ -85,5 +88,6 @@ ritsatv.ru##+js(alert-buster)
 d27918 1
 a27918 1
 aniqit.com,anivod.com,ashdi.vip,kodik.cc,kodik.info,tortuga.wtf##+js(json-prune, vast)
+d28000 1
 a28153 1
 soyztreid.website##head:remove()

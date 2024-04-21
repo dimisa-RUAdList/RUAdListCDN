@@ -1,8 +1,8 @@
-diff name:ruadlist lines:143 checksum:fac2a2568f
+diff name:ruadlist lines:149 checksum:dfe5a0ce11
 d4 2
 a5 2
-! Last modified: Sun, 21 Apr 2024 04:26:23 +0000
-! Diff-Path: ../patches/2024.4.21.266.patch#ruadlist
+! Last modified: Sun, 21 Apr 2024 09:20:50 +0000
+! Diff-Path: ../patches/2024.4.21.560.patch#ruadlist
 a268 1
 ||ads.digitalcaramel.com^$third-party
 a1738 1
@@ -100,17 +100,22 @@ a21254 1
 audiotag.info,computer76.ru,enovosty.com,epravda.com.ua,eurointegration.com.ua,finget.ru,fraza.com,inforesist.org,ostro.org,real-vin.com,stravy.net,videoredaktor.ru,volyninfo.com##ins
 a21396 1
 onliner.by#?#strong:-abp-contains(нож блокировщику)
+a21627 1
+||soyztreid.website^$popup
 d21636 1
 a21636 1
 /^https?:\/\/pikabu\.ru\/[-~a-zA-Z_0-9]+\?/$xmlhttprequest,domain=pikabu.ru
-a21672 1
+a21672 2
 soyztreid.website##:not(my-obnaruzhili-blokirovshchik)
+||soyztreid.website^$csp=script-src
 a21888 1
 dzen.ru###top-banner
 a22413 1
 championat.com##[data-href*="okko.sport"]
 a22418 1
 championat.com##a[href*="offer_id="]
+a25363 1
+@@||talk.hyvor.com/embed/$domain=comss.one|comss.ru
 d25993 1
 a25993 1
 animemobi.ru,euro-football.ru,onlinestreams.ru,seasonvar.one##.wrapper:style(margin-top: 0 !important)
@@ -131,6 +136,7 @@ d27924 1
 a27924 1
 fonland.site##+js(nano-setTimeout-booster, document.getElementById, 1777)
 d27988 1
+d27991 1
 d27993 1
 a27993 1
 3dnews.kz,3dnews.ru##+js(set-attr, video[controls="controls"], controls, true)

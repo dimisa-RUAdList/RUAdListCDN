@@ -1,8 +1,8 @@
-diff name:ruadlist lines:78 checksum:fac2a2568f
+diff name:ruadlist lines:82 checksum:dfe5a0ce11
 d4 2
 a5 2
-! Last modified: Sun, 21 Apr 2024 04:26:23 +0000
-! Diff-Path: ../patches/2024.4.21.266.patch#ruadlist
+! Last modified: Sun, 21 Apr 2024 09:20:50 +0000
+! Diff-Path: ../patches/2024.4.21.560.patch#ruadlist
 a268 1
 ||ads.digitalcaramel.com^$third-party
 a1738 1
@@ -53,19 +53,22 @@ d20222 1
 a20222 1
 1.zt.ua,kyivvlada.com.ua##div[class*="section-smartslider"]
 d21403 1
-d21635 2
+d21635 1
 d21645 1
 a21645 1
 /^https?:\/\/pikabu\.ru\/[-~a-zA-Z_0-9]+\?/$xmlhttprequest,domain=pikabu.ru
 d21658 1
 a21658 1
 fonmod.com,howdyho.net,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
-a21681 1
+a21681 2
 soyztreid.website##:not(my-obnaruzhili-blokirovshchik)
+||soyztreid.website^$csp=script-src
 a21897 1
 dzen.ru###top-banner
 a22422 1
 championat.com##[data-href*="okko.sport"]
+a25373 1
+@@||talk.hyvor.com/embed/$domain=comss.one|comss.ru
 d26003 1
 a26003 1
 animemobi.ru,euro-football.ru,onlinestreams.ru,seasonvar.one##.wrapper:style(margin-top: 0 !important)
@@ -75,5 +78,6 @@ cinema-hd.ru,doramatv.su,filmshd.vip,goodfilms.su,hdrezka.it,kinoxa.cc,lordfilm.
 d27895 1
 a27895 1
 ritsatv.ru##+js(alert-buster)
+d28002 1
 a28155 1
 soyztreid.website##head:remove()
