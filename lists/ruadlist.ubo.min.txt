@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 22 Apr 2024 15:20:39 +0000
-! Diff-Path: ../patches/2024.4.22.920.patch#ruadlist
+! Last modified: Mon, 22 Apr 2024 20:20:53 +0000
+! Diff-Path: ../patches/2024.4.22.1220.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21687,7 +21687,7 @@ pikabu.ru##div[style^="width: 300px; height:"]
 liveinternet.ru##style + div > div > div > div > div a
 !#endif
 soyztreid.website##:not(my-obnaruzhili-blokirovshchik)
-||liferoom.net^*.html$third-party,popup
+||liferoom.net^*.$third-party,popup
 ||soyztreid.website^$csp=script-src
 ! Блокировка ресурсов, намеренно продвигающих вредоносное ПО и фейки
 apad2.top,besplatnyeprogrammy.ru,inferno.games,mediagetguru.ru,monna2.top,only-soft.org,rutor-game.ru,torent-igruha.com,torrent-music.ru,torrent-soft.pro,torrentigo.net,torrentigruha.org,where-game.ru##:not(this-site-promotes-malware)
@@ -21911,6 +21911,7 @@ dzen.ru##.article__bottom-embed-wrapper > .ad-split-embed + div
 dzen.ru##.zen-ui-viewport-expansion__container:empty
 dzen.ru##.zenad-card-rtb
 dzen.ru##[data-name="video-in-combo-zen-container"]
+dzen.ru##div[class*="-top-ad-"]
 dzen.ru##div[class^="advert-panel"]
 dzen.ru##div[class^="floor-skeleton-card__skeletonCardWrapper"]
 dzen.ru#?#div[class^="grid__row-"]:-abp-has(> div[class^="video-card-ad"])
@@ -22846,6 +22847,7 @@ yclid=$popup,domain=dzen.ru
 yclyd=$popup,domain=dzen.ru
 yhic=$popup,domain=dzen.ru
 yhid=$popup,domain=dzen.ru
+yhyd=$popup,domain=dzen.ru
 ||t.mail.ru/redir/$popup,domain=dzen.ru
 ! Сайты Блокнота
 .php|$third-party,script,domain=bloknot-astrakhan.ru|bloknot-gelendzhik.ru|bloknot-kamyshin.ru|bloknot-krasnodar.ru|bloknot-krymska.ru|bloknot-moldova.ru|bloknot-morozovsk.ru|bloknot-novorossiysk.ru|bloknot-rossosh.ru|bloknot-rostov.ru|bloknot-samara.ru|bloknot-shakhty.ru|bloknot-stavropol.ru|bloknot-taganrog.ru|bloknot-volgodonsk.ru|bloknot-volgograd.ru|bloknot-volzhsky.ru|bloknot-voronezh.ru|bloknot.ru|bloknotanapa.ru|bloknotlipetsk.ru|bloknotsaratov.ru|bloknotsochi.ru|bloknottambov.ru
@@ -28087,6 +28089,7 @@ playground.ru##+js(set-cookie, pg_SuggestGameFollow, true)
 kinotv.ru##+js(set-cookie, telegram_popup, Y)
 playground.ru##+js(set-local-storage-item, pg_GPbackVideo, on)
 iz.ru##+js(set-local-storage-item, vipler.player.live.play, false)
+sdamgia.ru##+js(spoof-css, main > div:first-child:empty + div:not([class]), height, auto)
 twitch.tv##+js(twitch-videoad)
 silvercube12.xyz##+js(window-close-if, /dispatch)
 infox.sg##+js(window-close-if, utm)
@@ -28168,7 +28171,7 @@ soyztreid.website##head:remove()
 dzen.ru##iframe[style^="position:"][style*="absolute"][srcdoc]:remove()
 m.rp5.*#@#.adsbygoogle
 reshu.by,sdamgia.ru##main > div > div > div:has-text(/rotator|блокировщик/)
-sdamgia.ru##main > div:first-child:empty + div:not([class]):style(max-height: 30px !important)
+sdamgia.ru##main > div:first-child:empty + div:not([class]):style(height: 0 !important)
 mult-porno.*,sex-studentki.*,cosplay-porn.*##+js(set-constant, biads.initCli, undefined)
 dmod.cc,draug.ru,modsforwot.ru##p:has-text(Для скачивания подождите отсчет таймера...)
 tvzvezda.ru##pjsdiv[id^="oframe"] > pjsdiv[style*="opacity: 0.1;"]:empty

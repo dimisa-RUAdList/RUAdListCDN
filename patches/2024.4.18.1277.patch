@@ -1,8 +1,8 @@
-diff name:ruadlist lines:92 checksum:020ba3d701
+diff name:ruadlist lines:101 checksum:1d38cf5d2e
 d4 2
 a5 2
-! Last modified: Mon, 22 Apr 2024 15:20:39 +0000
-! Diff-Path: ../patches/2024.4.22.920.patch#ruadlist
+! Last modified: Mon, 22 Apr 2024 20:20:53 +0000
+! Diff-Path: ../patches/2024.4.22.1220.patch#ruadlist
 a268 1
 ||ads.digitalcaramel.com^$third-party
 a1738 1
@@ -67,12 +67,16 @@ a21658 1
 fonmod.com,howdyho.net,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 a21681 3
 soyztreid.website##:not(my-obnaruzhili-blokirovshchik)
-||liferoom.net^*.html$third-party,popup
+||liferoom.net^*.$third-party,popup
 ||soyztreid.website^$csp=script-src
 a21897 1
 dzen.ru###top-banner
+a21902 1
+dzen.ru##div[class*="-top-ad-"]
 a22422 1
 championat.com##[data-href*="okko.sport"]
+a22836 1
+yhyd=$popup,domain=dzen.ru
 d25504 1
 a25504 1
 @@/(clickunder|footerad|layerad|lazyad|leaderad|leftad|linkad|pop_ad|prerollad|printad|pubads|pushdownad|right_ad|sidebar_ad|under)/$script,~third-party,domain=game4you.top|games-pc.top|innal.top|naylo.top|rustorka.com|rustorka.net|rustorka.top|rustorkacom.lib
@@ -89,5 +93,10 @@ d27994 1
 a27994 1
 game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /ad2blog|tick/)
 d28002 1
+a28078 1
+sdamgia.ru##+js(spoof-css, main > div:first-child:empty + div:not([class]), height, auto)
 a28155 1
 soyztreid.website##head:remove()
+d28159 1
+a28159 1
+sdamgia.ru##main > div:first-child:empty + div:not([class]):style(height: 0 !important)
