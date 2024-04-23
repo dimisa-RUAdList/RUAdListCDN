@@ -1,14 +1,20 @@
-diff name:ruadlist lines:86 checksum:a09b946af1
+diff name:ruadlist lines:109 checksum:8abcb7c9d2
 d4 2
 a5 2
-! Last modified: Tue, 23 Apr 2024 06:27:40 +0000
-! Diff-Path: ../patches/2024.4.23.387.patch#ruadlist
+! Last modified: Tue, 23 Apr 2024 11:17:03 +0000
+! Diff-Path: ../patches/2024.4.23.677.patch#ruadlist
 a268 1
 ||ads.digitalcaramel.com^$third-party
 a1738 1
 ||edhmnn.com^$third-party
 a2591 1
 ||hubll.com^$third-party
+a5608 1
+||ssrv7.com^$third-party
+a8013 1
+/vast.php?partner_id=$third-party,xmlhttprequest
+a8054 1
+?cp.host=*&cp.token=$third-party,xmlhttprequest
 d10142 1
 d10153 1
 a10153 1
@@ -20,8 +26,13 @@ a10506 1
 d10539 1
 a10586 1
 ||3dtoday.ru/upload/medialibrary/*.png
+d10668 2
+d10676 2
+a10677 1
+||agronomy.com.ua/images/pom_de_tere/
 a11472 1
 ||growhow.in.ua/api?id=*secure=$subdocument
+d11589 1
 a11790 1
 ||kyivvlada.com.ua/wp-content/uploads/*/*-x-*.jpg
 d13465 1
@@ -30,6 +41,9 @@ growhow.in.ua###block-6
 a13797 1
 stratege.ru###elid_out_one
 d13843 1
+d15313 1
+a15313 1
+avtovzglyad.ru,computerra.ru,horo.meta.ua,infoindustria.com.ua##.banner__top
 d15517 1
 a15867 1
 seasonvar.one#?#.content > .content-wrap:-abp-has(.pgs-head:-abp-contains(Интересное))
@@ -45,8 +59,14 @@ d19063 1
 a19063 1
 1fnl.ru,1tulatv.ru,aif.ru,alogvinov.com,compulenta.ru,computerra.ru,cyberforum.ru,disgustingmen.com,forums.goha.ru,gamebomb.ru,gamer-info.com,gismeteo.ru,gotps3.ru,kudago.com,maximonline.ru,mmorpg.su,mobiltelefon.ru,move.ru,omskpress.ru,osp.ru,penzavzglyad.ru,ps3hits.ru,readovka.ru,shazoo.ru,sobaka.ru,soccer.ru,sportbox.ru,thg.ru##a[href*="/ad.adriver."]
 d19095 1
+d19169 1
 a19174 1
 stratege.ru##a[href*="_click?id="]
+d19191 1
+a19191 1
+2ip.ua,agro-business.com.ua,agronomy.com.ua,alcogolizm.com,anekdot.ru,bitpump.ru,glavagronom.ru,gomel-sat.bz,gre4ka.info,legkopolezno.ru,maw.ru,ozersk74.ru,post-tracker.ru,threatpost.ru,topfile.tj,uamotors.com.ua,yaizakon.com.ua,zhacker.net##a[href*="banner"]
+d19732 1
+d19735 1
 a20045 1
 itechua.com##center > pre
 a20203 1
@@ -54,11 +74,14 @@ stratege.ru##div[class*="info"] > div[class$="_title"] ~ div[class$="_outer"]
 d20221 1
 a20221 1
 1.zt.ua,kyivvlada.com.ua##div[class*="section-smartslider"]
+d20305 1
 a20671 1
 game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div[id^="ad"][id$="blog"]
+a21377 1
+agro-business.com.ua##section[id^="sp-subcribe-footer"]:not(#sp-subcribe-footer)
 d21641 1
 a21641 1
-/^https?:\/\/pikabu\.ru\/[-~%.a-zA-Z_0-9]+\?/$xmlhttprequest,domain=pikabu.ru
+://pikabu.ru/*%*~*?$xmlhttprequest,domain=pikabu.ru
 a21678 3
 ||liferoom.net^*.$third-party,popup
 ||soyztreid.website^$csp=script-src

@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 23 Apr 2024 06:27:40 +0000
-! Diff-Path: ../patches/2024.4.23.387.patch#ruadlist
+! Last modified: Tue, 23 Apr 2024 11:17:03 +0000
+! Diff-Path: ../patches/2024.4.23.677.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -5609,6 +5609,7 @@
 ||srvd2204.com^$third-party
 ||ssd7.ru^$third-party
 ||ssliivuqpm.ru^$third-party
+||ssrv7.com^$third-party
 ||ssso.ru^$third-party
 ||ssvim.com^$third-party
 ||sszru.ru^$third-party
@@ -8014,6 +8015,7 @@ _verified.php?code=*&server=runetki.com
 /userfiles/banners/*
 /utarget.js
 /utftizer.
+/vast.php?partner_id=$third-party,xmlhttprequest
 /vast.xml?key=
 /vendshow/*
 /video/?format=overroll&
@@ -8055,6 +8057,7 @@ _verified.php?code=*&server=runetki.com
 ?action=adhelper_
 ?ads/criteo.js
 ?begun=*&begun_referrer=*&begun_location=
+?cp.host=*&cp.token=$third-party,xmlhttprequest
 ?frm=script&se_referrer=$third-party,script
 ?teaser_
 ^clickunder-
@@ -10669,16 +10672,13 @@ lada.kz/uploads/banners/
 ||afisha.tut.by/css/ext/
 ||agentp.com.ua/banner
 ||agro-business.com.ua/*_adagency$script
-||agro-business.com.ua/images/*1920x1080$image
-||agro-business.com.ua/images/*_branding_$image
 ||agro-ukraine.com/imgs/b-a-n-n-e-r-s/
 ||agrognom.ru/wp-content/*/1ez1e.min.js
 ||agronews.ua/wp-content/uploads/*1920x1080$image
 ||agronom.com.ua/wp-content/uploads/*_1200x1200$image
 ||agronomy.com.ua/*/slick-slider/
 ||agronomy.com.ua/*_adagency
-||agronomy.com.ua/images/*banner
-||agronomy.com.ua/images/ban.
+||agronomy.com.ua/images/pom_de_tere/
 ||agroreview.com/wp-content/uploads/caos/*.js
 ||agroreview.com^*1920x1080
 ||agroxxi.ru/ajax/ajax_adagro.
@@ -11591,7 +11591,6 @@ lada.kz/uploads/banners/
 ||info.sibnet.ru/img/weather/*/background.
 ||info.sibnet.ru/legacy//static_templates$image
 ||infocar.ua/*combg
-||infoindustria.com.ua^*/background.jpg
 ||infoniac.ru/upload/uimg/dzen.
 ||inform.kz/download/
 ||informburo.kz^*/banners$xmlhttprequest
@@ -15316,7 +15315,7 @@ xporno.xyz##.banner__holder
 region15.ru##.banner__image
 computerra.ru##.banner__sidebar
 time-to-read.ru##.banner__title
-avtovzglyad.ru,computerra.ru,horo.meta.ua##.banner__top
+avtovzglyad.ru,computerra.ru,horo.meta.ua,infoindustria.com.ua##.banner__top
 open4business.com.ua##.banner_article
 povar.ru##.banner_before_mainmenu
 domik.ua,socproxy.ru##.banner_block
@@ -19172,7 +19171,6 @@ torrentinka.me##a[href*="://torrentinka.me/gom"]
 trashbox.ru##a[href*="://trashbox.ru/r.php?"]
 volnorez.com.ua##a[href*="://turagent.od.ua"]
 dnevnienovosti.ru##a[href*="://urldirect.ru/"]
-agro-business.com.ua,agronomy.com.ua##a[href*="://vnis.com.ua/"]
 livesport.ru##a[href*="://www.livesport.ru/away"]
 uaprom.info##a[href*="://www.wem.ua"]
 drive2.com,drive2.ru##a[href*="://yabs.yandex.ru/count/"]
@@ -19195,7 +19193,7 @@ forum.amit.ru##a[href*="amit.ru/service-center"]
 softpir.com##a[href*="azbukasofta.xyz"]
 koob.ru##a[href*="b17.ru/"]
 beremennost.net##a[href*="babyitalia.ru"]
-2ip.ua,agro-business.com.ua,alcogolizm.com,anekdot.ru,bitpump.ru,glavagronom.ru,gomel-sat.bz,gre4ka.info,legkopolezno.ru,maw.ru,ozersk74.ru,post-tracker.ru,threatpost.ru,topfile.tj,uamotors.com.ua,yaizakon.com.ua,zhacker.net##a[href*="banner"]
+2ip.ua,agro-business.com.ua,agronomy.com.ua,alcogolizm.com,anekdot.ru,bitpump.ru,glavagronom.ru,gomel-sat.bz,gre4ka.info,legkopolezno.ru,maw.ru,ozersk74.ru,post-tracker.ru,threatpost.ru,topfile.tj,uamotors.com.ua,yaizakon.com.ua,zhacker.net##a[href*="banner"]
 alltor.me,backup.menu,beremennost.net,buhgalter911.com,dead-serial.com,dedicated.menu,domohozayki.com,electricalschool.info,elementarno-tv.com,fbc.biz.ua,fishki.net,forum-profit.ru,hosting.cafe,https.menu,kopilkaurokov.ru,kosti-tv.com,license.menu,multiurok.ru,ogribax.ru,openssource.biz,palantinbest.ru,php.ru,shared.menu,traktorist.ua,uvelir.info,uvelir.net,vds.menu,vorozheya.org,vskazke-tv.com,www.pesticidy.ru##a[href*="banner"][target="_blank"]
 nnmclub.to##a[href*="banner_"]
 forum.mista.ru##a[href*="banners.php?click="]
@@ -19736,10 +19734,8 @@ webmasters.ru##a[href^="vB.Sponsors/link.php?f="]
 klopotenko.com##a[id^="linkFon"]
 gamebomb.ru##a[id^="mainbackgr"]
 vokrug.tv##a[onclick*="//ads.adfox.ru/"]
-infoindustria.com.ua##a[onclick*="Banners"]
 delo.ua##a[onclick*="Branding"]
 voxpopuli.kz##a[onclick*="Branding"][style]
-infoindustria.com.ua##a[onclick*="Partners"]
 kino-teatr.ru##a[onclick*="_counter"][target="_blank"]
 osnova.news##a[onclick*="ad_click_"]
 l2top.ru##a[onclick*="atob"]
@@ -20311,7 +20307,6 @@ stopgame.ru#?#div[class^="_content"] > div[class^="_video-wrapper"] ~ [class] b:
 domashnie-zagotovki.ru##div[class^="a7-btns"]
 igdz.ru##div[class^="ab-"][class$="-text"]
 u24.ua##div[class^="ab_premium_"]
-infoindustria.com.ua##div[class^="abs_promo"]
 hi-fi.ru##div[class^="ad-"]
 kolombo-online.ru,www.zakon.kz##div[class^="ad_"]
 xn--k1afadd0cwc.xn--p1ai##div[class^="adace"]
@@ -21385,6 +21380,7 @@ igromania.ru#?#section[class^="MaterialsManufacturerPage_infiniteWrap"] > div[cl
 kanobu.ru#?#section[class^="MaterialsManufacturerPage_infiniteWrap"] > div[class^="InfiniteScrollWrap_content"] > [class^="MaterialItemPage_materialSection"]:-abp-has(> .knb-grid-container > [data-io-article-url] a[href="/tags/partnyorskij-material/"])
 agroxxi.ru##section[class^="my-"]
 vikka.ua##section[id^="ctup_ads-"]
+agro-business.com.ua##section[id^="sp-subcribe-footer"]:not(#sp-subcribe-footer)
 gamegpu.com##section[id^="tm-top-"]
 point.md##span > a[href*="/novosti/business/"]
 bhf.io##span > a[href][target="_blank"][rel="nofollow"]
@@ -21648,7 +21644,7 @@ ictv.ua,vikna.tv##div[id^="div-gpt-ad-"]
 !||www.liveinternet.ru/users/$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/cgi-bin/rpls.fcgi?list= https://www.liveinternet.ru/spell/spell.js https://www.liveinternet.ru/share/js/share.js https://www.liveinternet.ru/4Ek/JS/diary/main/nav/regoradd.js https://www.liveinternet.ru/4Ek/JS/diary/trans.js
 !||www.liveinternet.ru/|$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/utf/lici.js https://www.liveinternet.ru/utf/li.js https://www.liveinternet.ru/utf/main_new.js
 ! Pikabu (ловушка для обфускации)
-/^https?:\/\/pikabu\.ru\/[-~%.a-zA-Z_0-9]+\?/$xmlhttprequest,domain=pikabu.ru
+://pikabu.ru/*%*~*?$xmlhttprequest,domain=pikabu.ru
 ||pikabu.ru/ajax?$xmlhttprequest,domain=pikabu.ru
 ! селекторы
 anidub.vip,anidubonline.com##.plyr__menu
