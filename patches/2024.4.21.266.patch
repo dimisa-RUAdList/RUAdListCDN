@@ -1,29 +1,42 @@
-diff name:ruadlist lines:73 checksum:80314f2939
+diff name:ruadlist lines:104 checksum:52ef1d9942
 d4 2
 a5 2
-! Last modified: Wed, 24 Apr 2024 12:43:30 +0000
-! Diff-Path: ../patches/2024.4.24.763.patch#ruadlist
+! Last modified: Wed, 24 Apr 2024 17:21:52 +0000
+! Diff-Path: ../patches/2024.4.24.1041.patch#ruadlist
 a5611 1
 ||ssrv7.com^$third-party
 a8016 1
 /vast.php?partner_id=$third-party,xmlhttprequest
 a8057 1
 ?cp.host=*&cp.token=$third-party,xmlhttprequest
-a10497 1
-/video-dragging\/yandex/$xmlhttprequest,domain=grazia.ru|mentoday.ru|novochag.ru|pravilamag.ru|robb.report|techinsider.ru|thesymbol.ru|thevoicemag.ru
+d10146 1
+a10146 1
+$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: *.addtoany.com *.amazonaws.com *.cloudflare.com *.dmca.com *.disqus.com *.disquscdn.com *.facebook.com *.getsitecontrol.com apis.google.com cse.google.com *.google.com/cse/ *.google.com/complete/ *.google.com/recaptcha/ translate.google.com www.google.com *.googleapis.com *.googletagmanager.com *.gstatic.com/recaptcha/ *.instagram.com *.jivosite.com *.jquery.com *.keycaptcha.com *.sendpulse.com *.sharethis.com *.po.st *.threadloom.com *.tiktok.com *.trustpilot.com *.twitter.com vk.com www.youtube.com *.dev *.io *.net *.org *.ru *.ua,~third-party,domain=agroter.com.ua|alensat.com|allbasketball.org|askentire.net|autonews.co.ua|autosoftos.com|babla.ru|bio-lessons.ru|cardiagram.com.ua|clickthis.blog|coollib.net|elegantwoman.kyiv.ua|farposst.ru|findhow.org|gazeta-misto.te.ua|golos.te.ua|icon-icons.com|ilenta.com|index.minfin.com.ua|inforesist.org|kurs.com.ua|life.pravda.com.ua|mirlib.ru|modfix.ru|musinfo.net|ontvtime.ru|orbit-games.com|perpendicular.pro|poezdato.net|poizdato.net|ruboard.website|sundries.ua|tabloid.pravda.com.ua|tenews.org.ua|tribun.com.ua|uapress.kyiv.ua|valorantinfo.com|vesti-ua.net|vkazivka.com|wallpapershome.ru
+a10443 1
+/js/header-bidding.js$domain=tengriauto.kz|tengrinews.kz|tengrisport.kz
 d10671 2
 d10679 2
 a10680 1
 ||agronomy.com.ua/images/pom_de_tere/
 d11593 1
+d12943 3
 d13470 1
 a13849 1
 stratege.ru###footer[class]
+a14527 1
+tengritravel.kz###text-3
 a14745 1
 vk.com,vk.ru##._ads_block_data_w
 d15319 1
 a15319 1
 avtovzglyad.ru,computerra.ru,horo.meta.ua,infoindustria.com.ua##.banner__top
+d16403 1
+a16403 1
+i.ua,tengriauto.kz,tengrinews.kz,tengrisport.kz##.header_adv
+a16408 1
+tengrisport.kz##.header_sub_links
+d16503 1
+d18159 1
 a18868 2
 stratege.ru##[id][class] > [src*="ads.adfox.ru"] + style + div[id]
 stratege.ru##[id][class] > style:first-child + div[id]
@@ -33,6 +46,10 @@ a19198 1
 2ip.ua,agro-business.com.ua,agronomy.com.ua,alcogolizm.com,anekdot.ru,bitpump.ru,glavagronom.ru,gomel-sat.bz,gre4ka.info,legkopolezno.ru,maw.ru,ozersk74.ru,post-tracker.ru,threatpost.ru,topfile.tj,uamotors.com.ua,yaizakon.com.ua,zhacker.net##a[href*="banner"]
 d19739 1
 d19742 1
+d19812 1
+d20183 1
+a20183 1
+1777.ru,19rus.info,19rusinfo.ru,1ul.ru,20minut.ua,2goroda.ru,365info.kz,3ys.ru,73online.ru,9tv.co.il,advis.ru,agronews.ua,agroreview.com,agrotimes.net,autodmir.ru,avtodispetcher.ru,bakemono.ru,bel.ru,besplatka.ua,bezformata.com,bhub.com.ua,car.ru,cbonds.ru,codernet.ru,comments.ua,con-med.ru,cybersport.ru,echosevera.ru,epravda.com.ua,fatalgame.com,filmz.ru,fishingsib.ru,flamp.ru,food.ru,footballua.tv,forum-profit.ru,gameguru.ru,gecid.com,goodfon.ru,gorodvitebsk.by,gp.by,growhow.in.ua,haqqin.az,hunting.ru,industry-hunter.com,infpol.ru,investfunds.ru,ircity.ru,islam-today.ru,iz.ru,joborgame.ru,jut.su,k1news.ru,klavogonki.ru,knijky.ru,kt.kz,kursktv.ru,laradiofm.ru,livesport.ws,locals.md,medialeaks.ru,megatyumen.ru,menportal.info,myslo.ru,neboleem.net,nmedic.info,nv-online.info,obyava.ua,okna.ua,penza-press.ru,polochka.net,povarenok.ru,ppt4web.ru,pravda.com.ua,pravoved.ru,primemusic.cc,profibeer.ru,prostatitanet.com,redfm.ru,relax-fm.ru,rg.ru,skachat-kino.fun,smolensk-i.ru,sovsport.ru,spanishrestaurant.ru,sport5.by,sportguide.kiev.ua,start33.ru,syzran-small.ru,tele.ru,tengriauto.kz,tengrinews.kz,tengrisport.kz,tengritravel.kz,the-flow.ru,thequestion.ru,thg.ru,tveda.ru,twentysix.ru,ufanotes.ru,valverus.info,vashurok.ru,veterinargid.ru,vikka.ua,vinnitsa.info,vklasse.online,vovka.su,vringe.com,vshkole.com,woman.ru,wonderzine.com,wowjp.net,xsport.ua,zagorod.spb.ru,zaim-profi.ru,zaryad.me,zebra-tv.ru,zoohoz.ru,zorbasmedia.ru##div[class*="banner"]
 d20314 1
 a20680 1
 game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div[id^="ad"][id$="blog"]
@@ -51,6 +68,7 @@ a22842 1
 ycyd=$popup,domain=dzen.ru
 a22844 1
 yhyd=$popup,domain=dzen.ru
+d24286 1
 d25512 1
 a25512 1
 @@/(clickunder|footerad|layerad|lazyad|leaderad|leftad|linkad|pop_ad|prerollad|printad|pubads|pushdownad|right_ad|sidebar_ad|under)/$script,~third-party,domain=game4you.top|games-pc.top|innal.top|naylo.top|rustorka.com|rustorka.net|rustorka.top|rustorkacom.lib
@@ -63,10 +81,23 @@ dzen.ru##aside[id^="article_"][class*="rlhpdt"] > div[class]
 d27462 2
 a27463 1
 dzen.ru##div[class*="article__"] > .undefined ~ div[class*="mldlie"] > div[id][class]
+a27465 2
+dzen.ru##div[class^="article-header"][class*="adWrapper"]
+dzen.ru##div[class^="article-header"][class*="myTarget"]
+d27929 1
+a27929 1
+595.ucoz.net,5wip-file.ru,file-mods.ru,freesoft.ru,infourok.ru,mixmuz.ru,myshared.ru,myzcloud.me,n-torrents.org,sims3pack.ru,wallegend.net,wdho.ru##+js(nano-setInterval-booster)
 d28002 1
 a28002 1
 game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /ad2blog|tick/)
 d28010 1
+a28029 1
+frontend.vh.yandex.ru##+js(set-constant, Object.prototype.autoplay, false)
+d28042 1
+a28042 1
+dzen.ru,frontend.vh.yandex.ru##+js(set-constant, Object.prototype.getAutoplay, noopFunc)
+a28043 1
+frontend.vh.yandex.ru##+js(set-constant, Object.prototype.initialAutoplay, null)
 a28086 1
 reshu.by,sdamgia.ru##+js(spoof-css, main > div:first-child:empty + div:not([class]), height, auto)
 d28168 1
