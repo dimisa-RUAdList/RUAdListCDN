@@ -1,8 +1,8 @@
-diff name:ruadlist lines:111 checksum:df4f7ff9ce
+diff name:ruadlist lines:122 checksum:80314f2939
 d4 2
 a5 2
-! Last modified: Wed, 24 Apr 2024 07:18:30 +0000
-! Diff-Path: ../patches/2024.4.24.438.patch#ruadlist
+! Last modified: Wed, 24 Apr 2024 12:43:30 +0000
+! Diff-Path: ../patches/2024.4.24.763.patch#ruadlist
 a268 1
 ||ads.digitalcaramel.com^$third-party
 a1738 1
@@ -40,7 +40,6 @@ a13600 1
 growhow.in.ua###block-6
 a13797 1
 stratege.ru###elid_out_one
-d13843 1
 a14739 1
 vk.com,vk.ru##._ads_block_data_w
 d15313 1
@@ -56,7 +55,8 @@ kyivvlada.com.ua##.post-block
 d18444 1
 a18444 1
 1.zt.ua,100pdf.club,4studio.com.ua,alladvices.ru,amorefilms.ru,analitikaua.net,aspekty.net,auto-portal.com.ua,avtotachki.com,borodina-protiv-buzovoj.ru,chas.cv.ua,cheb-live.ru,cryptodzen.com,dacha.help,dietdo.ru,ebanoe.it,electric-220.ru,erokomiksi.org,flytothesky.ru,gametrick.ru,glavradio.info,golos.te.ua,happymodern.ru,kazakh-zerno.net,koskomp.ru,kyivvlada.com.ua,lhealth.info,m-zh.ru,mi100.info,muwhi.ru,netsofta.net,new-s.com.ua,pravda.cn.ua,psiholog4you.ru,root-nation.com,rubrowsers.ru,sdelalremont.ru,sharknews.ru,simptomy-lechenie.net,smartmama.com.ua,ternopillive.com,tipsboard.ru,ua-news.in.ua,ua-report.info,vgolove.net,vizitnlo.ru,volyninfo.com,vseiski.ru,withcars.ru,wona.com.ua,zelenj.ru##.widget_custom_html
-d18861 1
+a18860 1
+stratege.ru##[id][class] > [src*="ads.adfox.ru"] + style + div[id]
 d19063 1
 a19063 1
 1fnl.ru,1tulatv.ru,aif.ru,alogvinov.com,compulenta.ru,computerra.ru,cyberforum.ru,disgustingmen.com,forums.goha.ru,gamebomb.ru,gamer-info.com,gismeteo.ru,gotps3.ru,kudago.com,maximonline.ru,mmorpg.su,mobiltelefon.ru,move.ru,omskpress.ru,osp.ru,penzavzglyad.ru,ps3hits.ru,readovka.ru,shazoo.ru,sobaka.ru,soccer.ru,sportbox.ru,thg.ru##a[href*="/ad.adriver."]
@@ -90,6 +90,8 @@ a21678 3
 ||soyztreid.website^$popup
 a21900 1
 dzen.ru##div[class*="-top-ad-"]
+a22833 1
+ycyd=$popup,domain=dzen.ru
 a22835 1
 yhyd=$popup,domain=dzen.ru
 d25503 1
@@ -101,6 +103,15 @@ animemobi.ru,euro-football.ru,onlinestreams.ru,seasonvar.one##.wrapper:style(mar
 d26156 1
 a26156 1
 cinema-hd.ru,doramatv.su,filmshd.vip,goodfilms.su,hdrezka.it,kinoxa.cc,lordfilm.lu,lordserial.fun,lordserial.run,lordserial.top,newseries.me,yummyanime.best##.wrap:style(padding-top: 0 !important)
+a27446 1
+dzen.ru##._is-floor-with-ds-cards
+d27449 2
+a27450 2
+dzen.ru##[class*="foloolors"] div[id][class^="feed"] [aria-label] ~ article:not([aria-label]):not([id])
+dzen.ru##aside[id^="article_"][class*="rlhpdt"] > div[class]
+d27453 2
+a27454 1
+dzen.ru##div[class*="article__"] > .undefined ~ div[class*="mldlie"] > div[id][class]
 d27993 1
 a27993 1
 game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /ad2blog|tick/)

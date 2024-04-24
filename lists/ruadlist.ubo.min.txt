@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 24 Apr 2024 07:18:30 +0000
-! Diff-Path: ../patches/2024.4.24.438.patch#ruadlist
+! Last modified: Wed, 24 Apr 2024 12:43:30 +0000
+! Diff-Path: ../patches/2024.4.24.763.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -13846,6 +13846,7 @@ dungeonmaster.ru###footer noindex
 fotostrana.ru###footer-ads-banner-cont
 tophotels.ru###footer-banner-widget
 piki-trip.ru###footer-widgets .group.pad
+stratege.ru###footer[class]
 freescreens.ru,imgbase.ru,imgcach.ru,imgclick.ru,payforpic.ru,picclick.ru,picclock.ru,picforall.ru###footer_left
 ruseller.com###footer_wrap
 dni.ru#?##for_fix > *:-abp-has(.titlebar > span:-abp-contains(партнеры))
@@ -18866,6 +18867,8 @@ agroreview.com,iarex.ru,p-p.com.ua##[id*="redtram"]
 mychords.net,polaremont.ru,stokvod.ru##[id*="teaser"]
 telek.top##[id*="wmg-"]
 livesport.ru##[id*="wow"]
+stratege.ru##[id][class] > [src*="ads.adfox.ru"] + style + div[id]
+stratege.ru##[id][class] > style:first-child + div[id]
 cxem.net##[id^="_myproduct"]
 onlinetambov.ru##[id^="ad"][class*="ads"]
 svpressa.ru##[id^="adfox_"]
@@ -22842,6 +22845,7 @@ ychid$popup,domain=dzen.ru
 ychyd$popup,domain=dzen.ru
 yclid=$popup,domain=dzen.ru
 yclyd=$popup,domain=dzen.ru
+ycyd=$popup,domain=dzen.ru
 yhic=$popup,domain=dzen.ru
 yhid=$popup,domain=dzen.ru
 yhyd=$popup,domain=dzen.ru
@@ -27456,14 +27460,14 @@ dzen.ru##div[class^="dzen-wrapper-with-top-content-desktop__topContent-"]:style(
 dzen.ru##div[id][class$="__ad"]
 ! обфускация
 dzen.ru###dzen-header ~ [id*="teaser"]
+dzen.ru##._is-floor-with-ds-cards
 dzen.ru##.article-recommender__feed-container article > div + div
 dzen.ru##.viewer-layout__content div[class*="-player "][aria-label] ~ div:not([class])
-dzen.ru##[class*="fololors"] div[id][class^="feed"] [aria-label] ~ article:not([aria-label]):not([id])
-dzen.ru##aside[id^="article_"][class*="_rhpd"] > div[class]
+dzen.ru##[class*="foloolors"] div[id][class^="feed"] [aria-label] ~ article:not([aria-label]):not([id])
+dzen.ru##aside[id^="article_"][class*="rlhpdt"] > div[class]
 dzen.ru##div[aria-label="Карточка рекомендованного видео"] ~ [aria-label]:not([aria-label="Карточка рекомендованного видео"])
 dzen.ru##div[class*="BlackHeader"] > div[class^="header-widgets"] ~ div
-dzen.ru##div[class*="adaptiveGridContainer"] > div > article:not([aria-label])
-dzen.ru##div[class*="article__"] > .undefined ~ div[class*="midlie"] > div[id][class]
+dzen.ru##div[class*="article__"] > .undefined ~ div[class*="mldlie"] > div[id][class]
 dzen.ru##div[class*="hasBlackHeader"] > [id*="teaser"]
 dzen.ru##div[class*="widgets__container"] > div[class*="widgets__"] ~ div
 dzen.ru##div[class^="feed__"] > article:not([aria-label]) > div:first-child ~ div

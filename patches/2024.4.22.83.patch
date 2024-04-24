@@ -1,8 +1,8 @@
-diff name:ruadlist lines:48 checksum:df4f7ff9ce
+diff name:ruadlist lines:64 checksum:80314f2939
 d4 2
 a5 2
-! Last modified: Wed, 24 Apr 2024 07:18:30 +0000
-! Diff-Path: ../patches/2024.4.24.438.patch#ruadlist
+! Last modified: Wed, 24 Apr 2024 12:43:30 +0000
+! Diff-Path: ../patches/2024.4.24.763.patch#ruadlist
 a5611 1
 ||ssrv7.com^$third-party
 a8016 1
@@ -16,11 +16,16 @@ d10679 2
 a10680 1
 ||agronomy.com.ua/images/pom_de_tere/
 d11593 1
+a13848 1
+stratege.ru###footer[class]
 a14744 1
 vk.com,vk.ru##._ads_block_data_w
 d15318 1
 a15318 1
 avtovzglyad.ru,computerra.ru,horo.meta.ua,infoindustria.com.ua##.banner__top
+a18867 2
+stratege.ru##[id][class] > [src*="ads.adfox.ru"] + style + div[id]
+stratege.ru##[id][class] > style:first-child + div[id]
 d19174 1
 d19197 1
 a19197 1
@@ -40,8 +45,19 @@ a21689 1
 ||soyztreid.website^$popup
 a21911 1
 dzen.ru##div[class*="-top-ad-"]
+a22844 1
+ycyd=$popup,domain=dzen.ru
 a22846 1
 yhyd=$popup,domain=dzen.ru
+a27457 1
+dzen.ru##._is-floor-with-ds-cards
+d27460 2
+a27461 2
+dzen.ru##[class*="foloolors"] div[id][class^="feed"] [aria-label] ~ article:not([aria-label]):not([id])
+dzen.ru##aside[id^="article_"][class*="rlhpdt"] > div[class]
+d27464 2
+a27465 1
+dzen.ru##div[class*="article__"] > .undefined ~ div[class*="mldlie"] > div[id][class]
 a28087 1
 reshu.by,sdamgia.ru##+js(spoof-css, main > div:first-child:empty + div:not([class]), height, auto)
 d28169 1
