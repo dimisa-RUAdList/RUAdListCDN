@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 25 Apr 2024 08:26:01 +0000
-! Diff-Path: ../patches/2024.4.25.506.patch#ruadlist
+! Last modified: Thu, 25 Apr 2024 13:18:26 +0000
+! Diff-Path: ../patches/2024.4.25.798.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -17167,6 +17167,7 @@ nur.kz##.page__top
 nnovosti.info##.page_content > .article_content ~ div[style^="width:"]
 djekxa.ru##.page_index.content > p a[href][target="_blank"] > img
 1777.ru##.pages_sf_right_block > table[style*="min-height:"]
+m-strana.ru##.pagination-item > [id^="bx_"] ~ :not([id^="bx_"])
 km.ru##.pane-advertisment
 rz.com.ua##.pane-node-field-right-long-banner
 komarovskiy.net##.panel-body noindex
@@ -17814,6 +17815,7 @@ masterok.livejournal.com##.sidebar-custom > dd > br
 analitikaua.net,aspekty.net,ua-report.info##.sidebar-inner > .widget ~ .widget_text
 raenza.ru##.sidebar-island.box-shadow
 www.aport.ru##.sidebar-item.banner
+m-strana.ru#?#.sidebar-module:-abp-has(> div[id^="adfox_"])
 kinovidos.com##.sidebar-nadpis
 101.ru##.sidebar-news
 podillyanews.com##.sidebar-reclame
@@ -21929,6 +21931,7 @@ health.mail.ru##.js-fixed-panel > .box
 health.mail.ru##.js-popup_gallery .viewbox__side
 @@||health.mail.ru^$generichide
 health.mail.ru##div[class*="page"] .rb
+health.mail.ru##div[data-closewrap-container]
 health.mail.ru##img[width="240"][height="200"]
 health.mail.ru##tr > .daynews__spring
 ! Кино
