@@ -1,10 +1,13 @@
-diff name:ruadlist lines:113 checksum:98d254964a
+diff name:ruadlist lines:124 checksum:343e166c37
 d4 2
 a5 2
-! Last modified: Thu, 25 Apr 2024 13:18:26 +0000
-! Diff-Path: ../patches/2024.4.25.798.patch#ruadlist
+! Last modified: Thu, 25 Apr 2024 18:24:59 +0000
+! Diff-Path: ../patches/2024.4.25.1104.patch#ruadlist
 a5611 1
 ||ssrv7.com^$third-party
+d7989 1
+a7989 1
+/tizer-$domain=~1ab.ru|~blogbaster.org|~cybersport.ru|~f1comp.ru|~metropolnemiga.by
 a8016 1
 /vast.php?partner_id=$third-party,xmlhttprequest
 a8057 1
@@ -20,6 +23,9 @@ a10680 1
 ||agronomy.com.ua/images/pom_de_tere/
 d11593 1
 d12943 3
+d13346 1
+a13346 1
+||yandex.*games/$domain=fishki.net|games.academic.ru|gazeta.ru|lenta.ru|vz.ru
 d13470 1
 a13849 1
 stratege.ru###footer[class]
@@ -73,6 +79,8 @@ a21911 1
 dzen.ru##div[class*="-top-ad-"]
 a21931 1
 health.mail.ru##div[data-closewrap-container]
+a22399 1
+lenta.ru##.layout__container > div[class*="banner "]
 a22844 1
 ycyd=$popup,domain=dzen.ru
 a22846 1
@@ -82,6 +90,9 @@ d25384 1
 d25515 1
 a25515 1
 @@/(clickunder|footerad|layerad|lazyad|leaderad|leftad|linkad|pop_ad|prerollad|printad|pubads|pushdownad|right_ad|sidebar_ad|under)/$script,~third-party,domain=game4you.top|games-pc.top|innal.top|naylo.top|rustorka.com|rustorka.net|rustorka.top|rustorkacom.lib
+d27067 1
+a27067 1
+regnum.news,regnum.ru##.page-column > .right-adv-container:style(top: 100px !important)
 a27458 1
 dzen.ru##._is-floor-with-ds-cards
 d27461 2

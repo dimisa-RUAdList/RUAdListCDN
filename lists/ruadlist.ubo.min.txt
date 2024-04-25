@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 25 Apr 2024 13:18:26 +0000
-! Diff-Path: ../patches/2024.4.25.798.patch#ruadlist
+! Last modified: Thu, 25 Apr 2024 18:24:59 +0000
+! Diff-Path: ../patches/2024.4.25.1104.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -7987,7 +7987,7 @@ _verified.php?code=*&server=runetki.com
 /tionline150x60.
 /tionline240x100.
 /tionline240x400.
-/tizer-$domain=~1ab.ru|~cybersport.ru|~f1comp.ru|~metropolnemiga.by
+/tizer-$domain=~1ab.ru|~blogbaster.org|~cybersport.ru|~f1comp.ru|~metropolnemiga.by
 /tizer.$domain=~tizer.io
 /tizer/*$domain=~asau.ru
 /tizer2.
@@ -13340,7 +13340,7 @@ lada.kz/uploads/banners/
 ||ya62.ru/images/flash/
 ||yakutsk.ru/data/lenta-yakutsk.json
 ||yakutsk.ru/wp-content/themes/yakutsk/assets/js/news-nb.js
-||yandex.ru/games/$domain=fishki.net|games.academic.ru|lenta.ru|vz.ru
+||yandex.*games/$domain=fishki.net|games.academic.ru|gazeta.ru|lenta.ru|vz.ru
 ||yandex51.ru/joketsuperstar$script
 ||yangi-kinolar.ru/vast/$xmlhttprequest
 ||yangteacher.ru/s.png
@@ -22400,6 +22400,7 @@ lenta.ru##.header__twenty-ideas
 lenta.ru##.js-erid
 lenta.ru##.js-header-right > div:first-child:not([class*="goodnews"])
 lenta.ru##.layout::before
+lenta.ru##.layout__container > div[class*="banner "]
 championat.com##.livetable-bar__bonus
 gazeta.ru##.m_banner
 lenta.ru##.okko
@@ -27067,7 +27068,7 @@ rbkgames.com##.branding .main-content:style(margin-top: 90px !important)
 rbkgames.com##.poster-grid-item > a[target="_blank"]:first-child:style(pointer-events: none !important)
 rbkgames.com##html[xmlns]:style(background-image: none !important)
 ! ---
-regnum.news,regnum.ru##.page-column > div[class*="-adv-container"]:style(top: 100px !important)
+regnum.news,regnum.ru##.page-column > .right-adv-container:style(top: 100px !important)
 ! ---
 mag.relax.by##.b-global-branding[branding_url*=http] .b-global-wrap:style(cursor: auto !important)
 mag.relax.by##.b-global-wrap > .b-global-offset:style(padding: unset !important)
