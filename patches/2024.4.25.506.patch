@@ -1,22 +1,37 @@
-diff name:ruadlist lines:21 checksum:a8a87bc87c
+diff name:ruadlist lines:36 checksum:f6896bf5c0
 d4 2
 a5 2
-! Last modified: Fri, 26 Apr 2024 04:23:03 +0000
-! Diff-Path: ../patches/2024.4.26.263.patch#ruadlist
+! Last modified: Fri, 26 Apr 2024 09:20:51 +0000
+! Diff-Path: ../patches/2024.4.26.560.patch#ruadlist
 d7990 1
 a7990 1
 /tizer-$domain=~1ab.ru|~blogbaster.org|~cybersport.ru|~f1comp.ru|~metropolnemiga.by
 d13343 1
 a13343 1
 ||yandex.*games/$domain=fishki.net|games.academic.ru|gazeta.ru|lenta.ru|vz.ru
+a14156 1
+blisch.by###page::after
 a17169 1
 m-strana.ru##.pagination-item > [id^="bx_"] ~ :not([id^="bx_"])
 a17816 1
 m-strana.ru#?#.sidebar-module:-abp-has(> div[id^="adfox_"])
+d19197 1
+a19197 1
+2ip.ua,agro-business.com.ua,agronomy.com.ua,alcogolizm.com,anekdot.ru,bitpump.ru,blisch.by,glavagronom.ru,gomel-sat.bz,gre4ka.info,legkopolezno.ru,maw.ru,ozersk74.ru,post-tracker.ru,threatpost.ru,topfile.tj,uamotors.com.ua,yaizakon.com.ua,zhacker.net##a[href*="banner"]
+d21648 1
+a21649 1
+||pikabu.ru/r~y%D$xmlhttprequest,domain=pikabu.ru
 a21931 1
 health.mail.ru##div[data-closewrap-container]
 a22399 1
 lenta.ru##.layout__container > div[class*="banner "]
+a22845 1
+ycyid=$popup,domain=dzen.ru
+a26096 2
+blisch.by###page:style(padding-top: 0 !important)
+! ---
 d27067 1
 a27067 1
 regnum.news,regnum.ru##.page-column > .right-adv-container:style(top: 100px !important)
+a27465 1
+dzen.ru##div[class*="__widjed-"] > [class*="__container"] > div[class*="__"] ~ div

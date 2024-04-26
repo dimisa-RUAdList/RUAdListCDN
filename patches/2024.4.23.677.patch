@@ -1,8 +1,8 @@
-diff name:ruadlist lines:84 checksum:a8a87bc87c
+diff name:ruadlist lines:94 checksum:f6896bf5c0
 d4 2
 a5 2
-! Last modified: Fri, 26 Apr 2024 04:23:03 +0000
-! Diff-Path: ../patches/2024.4.26.263.patch#ruadlist
+! Last modified: Fri, 26 Apr 2024 09:20:51 +0000
+! Diff-Path: ../patches/2024.4.26.560.patch#ruadlist
 d7990 1
 a7990 1
 /tizer-$domain=~1ab.ru|~blogbaster.org|~cybersport.ru|~f1comp.ru|~metropolnemiga.by
@@ -18,6 +18,8 @@ a13346 1
 ||yandex.*games/$domain=fishki.net|games.academic.ru|gazeta.ru|lenta.ru|vz.ru
 a13848 1
 stratege.ru###footer[class]
+a14158 1
+blisch.by###page::after
 a14526 1
 tengritravel.kz###text-3
 a14744 1
@@ -36,6 +38,9 @@ d18158 1
 a18867 2
 stratege.ru##[id][class] > [src*="ads.adfox.ru"] + style + div[id]
 stratege.ru##[id][class] > style:first-child + div[id]
+d19196 1
+a19196 1
+2ip.ua,agro-business.com.ua,agronomy.com.ua,alcogolizm.com,anekdot.ru,bitpump.ru,blisch.by,glavagronom.ru,gomel-sat.bz,gre4ka.info,legkopolezno.ru,maw.ru,ozersk74.ru,post-tracker.ru,threatpost.ru,topfile.tj,uamotors.com.ua,yaizakon.com.ua,zhacker.net##a[href*="banner"]
 d19808 1
 d20179 1
 a20179 1
@@ -43,15 +48,19 @@ a20179 1
 a21377 1
 tengrinews.kz#?#section:-abp-has(> .ya-news)
 d21647 1
-a21647 1
-://pikabu.ru/*~y%D1%8$xmlhttprequest,domain=pikabu.ru
+a21648 1
+||pikabu.ru/r~y%D$xmlhttprequest,domain=pikabu.ru
 a21930 1
 health.mail.ru##div[data-closewrap-container]
 a22398 1
 lenta.ru##.layout__container > div[class*="banner "]
-a22843 1
+a22843 2
 ycyd=$popup,domain=dzen.ru
+ycyid=$popup,domain=dzen.ru
 d24288 1
+a26095 2
+blisch.by###page:style(padding-top: 0 !important)
+! ---
 d27066 1
 a27066 1
 regnum.news,regnum.ru##.page-column > .right-adv-container:style(top: 100px !important)
@@ -62,7 +71,8 @@ a27461 2
 dzen.ru##[class*="foloolors"] div[id][class^="feed"] [aria-label] ~ article:not([aria-label]):not([id])
 dzen.ru##aside[id^="article_"][class*="rlhpdt"] > div[class]
 d27464 2
-a27465 1
+a27465 2
+dzen.ru##div[class*="__widjed-"] > [class*="__container"] > div[class*="__"] ~ div
 dzen.ru##div[class*="article__"] > .undefined ~ div[class*="mldlie"] > div[id][class]
 a27467 2
 dzen.ru##div[class^="article-header"][class*="adWrapper"]
