@@ -1,23 +1,39 @@
-diff name:ruadlist lines:38 checksum:f84fe4db31
+diff name:ruadlist lines:60 checksum:45b24557e0
 d4 2
 a5 2
-! Last modified: Fri, 26 Apr 2024 14:20:50 +0000
-! Diff-Path: ../patches/2024.4.26.860.patch#ruadlist
+! Last modified: Fri, 26 Apr 2024 19:16:44 +0000
+! Diff-Path: ../patches/2024.4.26.1156.patch#ruadlist
 d7990 1
 a7990 1
 /tizer-$domain=~1ab.ru|~blogbaster.org|~cybersport.ru|~f1comp.ru|~metropolnemiga.by
+d10521 1
 d13343 1
 a13343 1
 ||yandex.*games/$domain=fishki.net|games.academic.ru|gazeta.ru|lenta.ru|vz.ru
 a14156 1
 blisch.by###page::after
+d14801 1
+d16937 1
 a17169 1
 m-strana.ru##.pagination-item > [id^="bx_"] ~ :not([id^="bx_"])
 a17816 1
 m-strana.ru#?#.sidebar-module:-abp-has(> div[id^="adfox_"])
+d17965 1
+a17965 1
+alexua.tv,anilib.moe,anilib.one,anilib.top,anilibria.iss.one,anilibria.tv,avtovzglyad.ru,filmozavr.com,filmozavr.net,forexsystemsru.com,medkrug.ru,must-see.top##.sponsor
+a19085 1
+sovsport.ru##a[href*="/bonuses"]
 d19197 1
 a19197 1
 2ip.ua,agro-business.com.ua,agronomy.com.ua,alcogolizm.com,anekdot.ru,bitpump.ru,blisch.by,glavagronom.ru,gomel-sat.bz,gre4ka.info,legkopolezno.ru,maw.ru,ozersk74.ru,post-tracker.ru,threatpost.ru,topfile.tj,uamotors.com.ua,yaizakon.com.ua,zhacker.net##a[href*="banner"]
+d19322 1
+a19322 1
+uniondht.org##a[href*="rutor."]:not([href*=".rutor.org/"])
+a20050 1
+fonland.site##center > table
+a20385 1
+sovsport.ru##div[class^="button_advertisement"]
+d20911 1
 a21377 1
 tengrinews.kz#?#section:-abp-has(> .ya-news)
 d21647 1
@@ -29,11 +45,17 @@ a22398 1
 lenta.ru##.layout__container > div[class*="banner "]
 a22844 1
 ycyid=$popup,domain=dzen.ru
+a25774 1
+uniondht.org##.post_body > div[style="color:red;font-size:25px;"]
 a26095 2
 blisch.by###page:style(padding-top: 0 !important)
 ! ---
+d26653 1
+a26653 1
+kinokong.pro,kinokrad.film###wrapper:not(#id):style(margin-top: 67px !important)
 d27066 1
 a27066 1
 regnum.news,regnum.ru##.page-column > .right-adv-container:style(top: 100px !important)
 a27464 1
 dzen.ru##div[class*="__widjed-"] > [class*="__container"] > div[class*="__"] ~ div
+d27948 1

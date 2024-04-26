@@ -1,8 +1,8 @@
-diff name:ruadlist lines:117 checksum:f84fe4db31
+diff name:ruadlist lines:139 checksum:45b24557e0
 d4 2
 a5 2
-! Last modified: Fri, 26 Apr 2024 14:20:50 +0000
-! Diff-Path: ../patches/2024.4.26.860.patch#ruadlist
+! Last modified: Fri, 26 Apr 2024 19:16:44 +0000
+! Diff-Path: ../patches/2024.4.26.1156.patch#ruadlist
 a5611 1
 ||ssrv7.com^$third-party
 d7989 1
@@ -18,6 +18,7 @@ $csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: *.addtoany.com 
 a10443 1
 /js/header-bidding.js$domain=tengriauto.kz|tengrinews.kz|tengrisport.kz
 d10498 1
+d10518 1
 d10672 2
 d10680 2
 a10681 1
@@ -35,6 +36,7 @@ a14527 1
 tengritravel.kz###text-3
 a14745 1
 vk.com,vk.ru##._ads_block_data_w
+d14802 1
 d15319 1
 a15319 1
 avtovzglyad.ru,computerra.ru,horo.meta.ua,infoindustria.com.ua##.banner__top
@@ -44,25 +46,39 @@ i.ua,tengriauto.kz,tengrinews.kz,tengrisport.kz##.header_adv
 a16408 1
 tengrisport.kz##.header_sub_links
 d16503 1
+d16938 1
 a17170 1
 m-strana.ru##.pagination-item > [id^="bx_"] ~ :not([id^="bx_"])
 a17817 1
 m-strana.ru#?#.sidebar-module:-abp-has(> div[id^="adfox_"])
+d17966 1
+a17966 1
+alexua.tv,anilib.moe,anilib.one,anilib.top,anilibria.iss.one,anilibria.tv,avtovzglyad.ru,filmozavr.com,filmozavr.net,forexsystemsru.com,medkrug.ru,must-see.top##.sponsor
 d18159 1
 a18868 2
 stratege.ru##[id][class] > [src*="ads.adfox.ru"] + style + div[id]
 stratege.ru##[id][class] > style:first-child + div[id]
+a19085 1
+sovsport.ru##a[href*="/bonuses"]
 d19175 1
 d19198 1
 a19198 1
 2ip.ua,agro-business.com.ua,agronomy.com.ua,alcogolizm.com,anekdot.ru,bitpump.ru,blisch.by,glavagronom.ru,gomel-sat.bz,gre4ka.info,legkopolezno.ru,maw.ru,ozersk74.ru,post-tracker.ru,threatpost.ru,topfile.tj,uamotors.com.ua,yaizakon.com.ua,zhacker.net##a[href*="banner"]
+d19323 1
+a19323 1
+uniondht.org##a[href*="rutor."]:not([href*=".rutor.org/"])
 d19739 1
 d19742 1
 d19812 1
+a20054 1
+fonland.site##center > table
 d20183 1
 a20183 1
 1777.ru,19rus.info,19rusinfo.ru,1ul.ru,20minut.ua,2goroda.ru,365info.kz,3ys.ru,73online.ru,9tv.co.il,advis.ru,agronews.ua,agroreview.com,agrotimes.net,autodmir.ru,avtodispetcher.ru,bakemono.ru,bel.ru,besplatka.ua,bezformata.com,bhub.com.ua,car.ru,cbonds.ru,codernet.ru,comments.ua,con-med.ru,cybersport.ru,echosevera.ru,epravda.com.ua,fatalgame.com,filmz.ru,fishingsib.ru,flamp.ru,food.ru,footballua.tv,forum-profit.ru,gameguru.ru,gecid.com,goodfon.ru,gorodvitebsk.by,gp.by,growhow.in.ua,haqqin.az,hunting.ru,industry-hunter.com,infpol.ru,investfunds.ru,ircity.ru,islam-today.ru,iz.ru,joborgame.ru,jut.su,k1news.ru,klavogonki.ru,knijky.ru,kt.kz,kursktv.ru,laradiofm.ru,livesport.ws,locals.md,medialeaks.ru,megatyumen.ru,menportal.info,myslo.ru,neboleem.net,nmedic.info,nv-online.info,obyava.ua,okna.ua,penza-press.ru,polochka.net,povarenok.ru,ppt4web.ru,pravda.com.ua,pravoved.ru,primemusic.cc,profibeer.ru,prostatitanet.com,redfm.ru,relax-fm.ru,rg.ru,skachat-kino.fun,smolensk-i.ru,sovsport.ru,spanishrestaurant.ru,sport5.by,sportguide.kiev.ua,start33.ru,syzran-small.ru,tele.ru,tengriauto.kz,tengrinews.kz,tengrisport.kz,tengritravel.kz,the-flow.ru,thequestion.ru,thg.ru,tveda.ru,twentysix.ru,ufanotes.ru,valverus.info,vashurok.ru,veterinargid.ru,vikka.ua,vinnitsa.info,vklasse.online,vovka.su,vringe.com,vshkole.com,woman.ru,wonderzine.com,wowjp.net,xsport.ua,zagorod.spb.ru,zaim-profi.ru,zaryad.me,zebra-tv.ru,zoohoz.ru,zorbasmedia.ru##div[class*="banner"]
 d20314 1
+a20390 1
+sovsport.ru##div[class^="button_advertisement"]
+d20916 1
 a21382 1
 tengrinews.kz#?#section:-abp-has(> .ya-news)
 a21387 1
@@ -81,9 +97,14 @@ a22847 2
 ycyd=$popup,domain=dzen.ru
 ycyid=$popup,domain=dzen.ru
 d24292 1
+a25778 1
+uniondht.org##.post_body > div[style="color:red;font-size:25px;"]
 a26099 2
 blisch.by###page:style(padding-top: 0 !important)
 ! ---
+d26657 1
+a26657 1
+kinokong.pro,kinokrad.film###wrapper:not(#id):style(margin-top: 67px !important)
 d27070 1
 a27070 1
 regnum.news,regnum.ru##.page-column > .right-adv-container:style(top: 100px !important)
@@ -103,6 +124,7 @@ dzen.ru##div[class^="article-header"][class*="myTarget"]
 d27935 1
 a27935 1
 595.ucoz.net,5wip-file.ru,file-mods.ru,freesoft.ru,infourok.ru,mixmuz.ru,myshared.ru,myzcloud.me,n-torrents.org,sims3pack.ru,wallegend.net,wdho.ru##+js(nano-setInterval-booster)
+d27950 1
 a28034 1
 frontend.vh.yandex.ru##+js(set-constant, Object.prototype.autoplay, false)
 d28047 1
