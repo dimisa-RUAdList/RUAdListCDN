@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 29 Apr 2024 12:37:18 +0000
-! Diff-Path: ../patches/2024.4.29.757.patch#ruadlist
+! Last modified: Mon, 29 Apr 2024 17:19:32 +0000
+! Diff-Path: ../patches/2024.4.29.1039.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -15441,6 +15441,7 @@ footballhd.ru#?#.bloc_right > div:-abp-has(> .nopromo_view)
 sportanalytic.com#?#.block > .block:-abp-has(> .bt > .bct:-abp-contains(Партнери))
 gorod47.ru##.block > a > img[width]
 hen-tai.ru##.block > noindex
+theblueprint.ru##.block--type_banner
 yantann.rbsmi.ru,yanzori.rbsmi.ru##.block-banner
 vtb-league.com##.block-bets
 evening-kazan.ru,govp.info##.block-block
@@ -27432,6 +27433,7 @@ dzen.ru###ya-dist
 dzen.ru##.adv-ecom
 dzen.ru##.mg-advert__content:not(:first-child):style(margin-top: unset !important)
 dzen.ru##.mg-grid__col > div[style^="margin-top:"]:style(margin-top: unset !important)
+dzen.ru##[data-testid] div[class^="adaptive-card-grid__container"] > div[class=""]
 dzen.ru##a[href*="://yandex.ru/an/count/"]
 dzen.ru##a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div
 dzen.ru##body:style(overflow-y: unset !important)
