@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 29 Apr 2024 17:19:32 +0000
-! Diff-Path: ../patches/2024.4.29.1039.patch#ruadlist
+! Last modified: Mon, 29 Apr 2024 22:21:08 +0000
+! Diff-Path: ../patches/2024.4.29.1341.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -26588,7 +26588,9 @@ itnews.com.ua##td.left[width="200"][valign="top"]:style(height: auto !important)
 ! ---
 ivanovonews.ru##body > .layout:style(padding-top: 50px !important)
 ! ---
+www.ivi.ru##.headerNotify_hasUnread .nbl-simpleControlButton:style(animation: none !important)
 www.ivi.ru##.page-wrapper > .content-main:style(padding-top: 0 !important)
+www.ivi.ru##.rollPlus
 ivi.ru##[data-test="watch_with_adv"] > .nbl-button__primaryText
 www.ivi.ru##body.watch > div[class]:not([id]):not([style]):nth-child(-n+2) > style + .content
 www.ivi.ru##body.watch > div[class]:not([id]):not([style]):nth-child(-n+2):style(background: none !important)
