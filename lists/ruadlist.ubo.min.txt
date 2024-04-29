@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 29 Apr 2024 07:18:46 +0000
-! Diff-Path: ../patches/2024.4.29.438.patch#ruadlist
+! Last modified: Mon, 29 Apr 2024 12:37:18 +0000
+! Diff-Path: ../patches/2024.4.29.757.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -11255,7 +11255,6 @@ lada.kz/uploads/banners/
 ||factroom.ru/brands/
 ||fairtop.in/image/upload/
 ||fakty.ua/js/_d.js
-||fanday.net/img/sadfd/
 ||fans-fcsm.ru/block.js
 ||fapl.ru/upload/fapl_$subdocument
 ||faspiic.ru/js/go_re.js
@@ -11314,7 +11313,6 @@ lada.kz/uploads/banners/
 ||foodinnovation.ru/resources/bannerorder_files/
 ||foodretail.ru/rotatorfiles/
 ||foodretail.ru/rotatorstat/
-||football.by/images/b1/
 ||football.kulichki.net/leon/
 ||football24.ru/coef.
 ||football24.ru/templates/football24/images/leon
@@ -15551,7 +15549,6 @@ zagorod.spb.ru##.bnrobject
 akak.ru##.bnrs
 sexvideobaza.net##.bns-bl
 orki.ru##.bnz_horizontal
-rusfootball.info##.board_side > noindex
 staforceteam.ru##.boardlistInner[style="background-image: url(/logo/Standart/TemaLine2.png); background-repeat: repeat-y"]
 primpogoda.ru##.bober
 newsru.com##.body-page-right-column > div[align="center"]
@@ -15566,6 +15563,7 @@ vklasse.online#?#.book-box:-abp-has(> [class*="banner"])
 alvin-almazov.ru##.book_banner
 etextlib.ru##.book_bl > div[style]:not([id]):not([class])
 litlib.net##.book_ltrs
+football.by##.bookgDiv
 drinks.ua##.booking
 ccoins.ru##.bookingaff
 bombardir.ru##.bookmaker-container
@@ -17556,7 +17554,7 @@ seetv.tv##.right_bar > .reklama_b
 elbruso.ru##.right_col > div[style^="margin-top"]
 noob-club.ru##.right_col_bamboo
 cofp.ru#?#.right_coll > .moduletable:-abp-has(> h3:-abp-contains(Рекламные ссылки))
-fanday.net##.right_colum > section:first-child > .colum_widget_block_header
+fanday.net##.right_colum > section:first-child
 egamersworld.com##.right_column > .bets + .side_bookmakers
 raskraska.com##.right_column > noindex
 otzyvua.net##.right_column_one > div[class^="mainblock h"]
@@ -17628,7 +17626,6 @@ medside.ru##.rusfond-block
 stroy.ykt.ru##.s-slider
 map.cn.ua##.sModuleContent
 latifundist.com##.sa_widget
-fanday.net##.sadfd
 sport-express.ua##.sadse
 nastroyvse.ru#?#.saitbar_bock:-abp-has(.mpwidget)
 autosakhcom.ru,sakh.com,sakh.name##.sakhui-b
@@ -18212,8 +18209,6 @@ autodmir.ru##.top_banner_hidder
 artofcare.ru,forum.fonarevka.ru,twogarin.info##.top_banners
 simhost.org##.top_bg > a
 greenpost.ua##.top_blogger_banner
-fanday.net##.top_bookmaker_w
-fanday.net##.top_bookmaker_w ~ .colum_widget_block_fl
 pressball.by##.top_brand
 tut.by##.top_brand_links
 delovoigorod.ru##.top_bun
@@ -18905,7 +18900,7 @@ radidomapro.ru##[id^="zone_pub"]
 sm.news##[itemprop="articleBody"] > [id][class]:empty
 nashamama.com#?#[itemprop="articleBody"] > p:-abp-contains(/ТЬСЯ ТАКОЖ/i)
 fedpress.ru##[itemtype*="://schema.org/NewsArticle"] .article-box + div[style="padding: 10px"]
-itsider.com.ua,mmr.net.ua,obozvrn.ru,rama.com.ua,subbota.ua,youtebem.com##[itemtype="https://schema.org/WPAdBlock"]
+itsider.com.ua,mmr.net.ua,obozvrn.ru,rama.com.ua,rusfootball.info,subbota.ua,youtebem.com##[itemtype="https://schema.org/WPAdBlock"]
 cheezu.ru##[jello-component="yamarket"]
 livejournal.com##[lj0sale0autoplay0dockable0video0mount]
 egamersworld.com##[name="odds"]
@@ -19078,7 +19073,7 @@ internetno.net##a[href*="/banners/go_to/"]
 livetv.sx##a[href*="/betinfo/"]
 livecup.run,livesport.ru,sport24.ru,ua-football.com##a[href*="/betting"]
 sovsport.ru##a[href*="/bonuses"]
-fanday.net##a[href*="/bookmaker"]
+fanday.net,football.by##a[href*="/bookmaker"]
 otzovik.com##a[href*="/buy/"][rel="nofollow"]
 sportliga.com##a[href*="/c.php?"]
 tvoymalysh.com.ua##a[href*="/cgi-bin/click"]
@@ -19121,6 +19116,7 @@ anifors.ru,anigang.org,animecos.ru,animesos.ru,shinigami.tv##a[href*="://animedu
 argumenti.ru##a[href*="://argumenti.ru/ad_informer/click/"]
 penzainform.ru##a[href*="://b.penzainform.ru/go/"]
 asienda.ru,diets.ru,mycharm.ru,myjane.ru,povarenok.ru,relook.ru,stranamam.ru##a[href*="://beta.mediafort.ru/textclick.php?id="]
+football.by##a[href*="://betonmobile.by"]
 bombardir.ru##a[href*="://bmbrdr.ru/"]
 programmersforum.ru#?#a[href*="://clck.ru/"] ~ *:-abp-contains(https://)
 kinobase.org##a[href*="://clcr.me/"]
@@ -25866,7 +25862,7 @@ au-ok.com##p[style="border:3px solid #C1FF0A;background-color:#d5d5d1;padding:10
 aif.ru,ain.ua,bit.ua,budport.com.ua,ixbt.com,ko.com.ua,kv.by,livejournal.com,mc.today,newstudio.tv,oper.ru,pay-day.ru,sc2tv.ru,stopgame.ru,userstyles.org,zakarpatpost.net##body:not(#id):style(background-image: none !important)
 2pay-day.ru,4video.adult,aif.ru,ain.ua,bit.ua,budport.com.ua,ixbt.com,ko.com.ua,kv.by,livejournal.com,mc.today,newstudio.tv,oper.ru,sc2tv.ru,stopgame.ru,userstyles.org,zakarpatpost.net##html:not(#id):style(background-image: none !important)
 ! ---
-baskino.film,dnepr.info,dugtor.ru,filmitorrent.net,filmitorrent.site,jetsetter.ua,kinoafisha.ua,kinobar.vip,moskva.fm,newstudio.tv,nnmclub.to,pay-day.ru,roem.ru,trupornolabs.org,utorr.cc,vc.ru,virusinfo.info,wikianime.tv,xxxadulttorrent.org,you-anime.ru,yummyanime.tv,zombie-film.live##body:not(#id):style(padding-top: 0 !important)
+baskino.film,dnepr.info,dugtor.ru,filmitorrent.net,filmitorrent.site,jetsetter.ua,kinoafisha.ua,kinobar.vip,moskva.fm,newstudio.tv,nnmclub.to,pay-day.ru,roem.ru,rusfootball.info,trupornolabs.org,utorr.cc,vc.ru,virusinfo.info,wikianime.tv,xxxadulttorrent.org,you-anime.ru,yummyanime.tv,zombie-film.live##body:not(#id):style(padding-top: 0 !important)
 ! ---
 radioromantika.ru##.main-wrapp__content:style(margin-top: 0 !important)
 101.ru##.wrapper-branding
@@ -27099,8 +27095,6 @@ forum.ru-board.com##.tpc > .post > table[width] > tbody > tr > .lgf:style(word-b
 rudub.online##.details__bg
 rudub.online##body > section[class*="section details"]:style(padding-top: 70px !important)
 ! ---
-rusfootball.info###wrap:style(margin-top: auto !important)
-! ---
 rusnext.ru##.header20-00:style(height: auto !important)
 ! ---
 rusprofile.ru###subscription_banner_root
@@ -27468,7 +27462,7 @@ dzen.ru##div[class*="hasBlackHeader"] > [id*="teaser"]
 dzen.ru##div[class*="widgets__container"] > div[class*="widgets__"] ~ div
 dzen.ru##div[class^="article-header"][class*="adWrapper"]
 dzen.ru##div[class^="article-header"][class*="myTarget"]
-dzen.ru##div[class^="feed__"] > article:not([aria-label]) > div:first-child ~ div
+dzen.ru##div[class^="feed__"] > div:not([class]) > article:not([aria-label]) > div:first-child ~ div
 dzen.ru##div[id*="splashscreen"]
 ! ---
 ! игры
@@ -27488,6 +27482,7 @@ ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##div[id*="Images"] div[class*="_fi
 ! ---
 ! карты
 yandex.by,yandex.kz,yandex.ru,yandex.uz##._map_ready .search-advert-badge__advert
+yandex.by,yandex.kz,yandex.ru,yandex.uz##._map_ready .search-list-view__advert-offer-banner
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.sidebar-container ._id_branding_tele2
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.sidebar-container .card-providers-view__item._big
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.sidebar-container .search-advert-badge
@@ -28268,6 +28263,7 @@ ok.ru##div[class*="__banner-feed"]
 ||r.mradx.net/img/*.js|$empty,script
 ||ru/count/$image,important,redirect=1x1.gif,domain=mail.ru|sportmail.ru
 ! Конфликт с JS Fixes
+~3igames.mail.ru,~account.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##+js(abort-on-stack-trace, Object.prototype.ssrAds, completeRadar)
 mail.ru##.tgb-wrapper:remove()
 ! старый интерфейс почты
 e.mail.ru##+js(json-prune, [].slot)
