@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 29 Apr 2024 22:21:08 +0000
-! Diff-Path: ../patches/2024.4.29.1341.patch#ruadlist
+! Last modified: Tue, 30 Apr 2024 03:21:42 +0000
+! Diff-Path: ../patches/2024.4.30.201.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -27705,6 +27705,7 @@ mail.ru##div[slot="main-column"] > .micro-widgets:style(height: auto !important;
 my.mail.ru##html.window-loaded .b-video-backscreen
 my.mail.ru##html.window-loaded .b-video-controls__inside-play-button:style(visibility: visible !important; opacity: 0 !important; width: 100% !important; height: 100% !important; top: 0 !important; left: 0 !important)
 cloud.mail.ru##iframe[src^="https://o2.mail.ru/"] ~ div div[class^="ViewerHeader__closeIcon--"]
+mail.ru##main#grid > .grid-middle ~ div:not([class]):not([id])
 ! --- RU AdList JS Fixes---
 ! *** ./js-fixes-experimental.txt ***
 [Adblock Plus 2.0]
