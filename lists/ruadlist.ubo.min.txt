@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 30 Apr 2024 03:21:42 +0000
-! Diff-Path: ../patches/2024.4.30.201.patch#ruadlist
+! Last modified: Tue, 30 Apr 2024 08:25:23 +0000
+! Diff-Path: ../patches/2024.4.30.505.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21974,6 +21974,7 @@ my.mail.ru##.b-video__native-rb-banner
 my.mail.ru##.b-video__top-rb-banner
 my.mail.ru##.banner
 my.mail.ru##.notif__marketing
+my.mail.ru##.sp-video__billboard
 my.mail.ru##.ui-simple-block > .banner-undefined
 my.mail.ru##.ui-simple-block[class*="promo"]
 my.mail.ru##.ui-simple-block[class*="reklama"]
@@ -27657,7 +27658,6 @@ sportmail.ru##.layout_footer:style(margin-top: 20px !important)
 mail.ru##.mailbox-container ~ [class] .widget__container
 mail.ru,sportmail.ru##.ph-balloon
 mail.ru##.ph-ext
-my.mail.ru##.sp-video__billboard
 mail.ru##.tabs-content .news-item_regular > a:not([data-testid="news-prefix"]):style(white-space: pre-line !important)
 mail.ru##.tabs-content .news-item_regular::after
 mail.ru##.tabs-content > :first-child > a > .news-main__img:style(max-width: unset !important; min-width: unset !important; height: 5em !important; width: 6.66em !important)
