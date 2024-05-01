@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 01 May 2024 04:23:33 +0000
-! Diff-Path: ../patches/2024.5.1.263.patch#ruadlist
+! Last modified: Wed, 01 May 2024 09:22:07 +0000
+! Diff-Path: ../patches/2024.5.1.562.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -8208,6 +8208,7 @@ _tizers.
 ###gaminator
 ###girlsBar
 ###h_24x4
+###idealmedia
 ###idealmedia_container
 ###limonads_body
 ###logethy_iframe
@@ -10001,7 +10002,7 @@ agrarii-razom.com.ua##div[id^="user-to-register"]
 /plugins/wordpress-popup/*$~stylesheet,domain=o-nedvizhke.ru
 /plusonet$script,domain=bigcinema-hd.tv|electorat.info|gipnomag.ru|ironfriends.ru
 /proxy/check/popup/$script,domain=xn--90adear.xn--p1ai
-/pum-site-scripts.js$domain=belsat.eu|hariola.com|v-variant.com.ua
+/pum-site-scripts.js$domain=belsat.eu|hariola.com|svoboda.te.ua|v-variant.com.ua
 /smart-facebook-page-like-overlay-pro/$domain=coocook.me
 /sociallocker-$domain=samiysok.com|sshut.ru|videokaif.ru
 /templates/vser-light/images/social.gif$domain=novoruskino.net|ruskinonovoe.net
@@ -14356,7 +14357,7 @@ hubs.ua###secondary > #text-2
 keysportal.com#?##secondary > .sidebar-widget:-abp-has([id^="yandex_rtb"])
 game-roblox.ru#?##secondary > .widget-wrap:-abp-has(> .widget_execphp)
 sysadmin.link###secondary > .widget_custom_html
-donbass.name###secondary > .widget_custom_html ~ .widget_custom_html
+donbass.name,svoboda.te.ua###secondary > .widget_custom_html ~ .widget_custom_html
 listaj.ru###secondary > .widget_custom_html:not(:last-child)
 keysportal.com###secondary > .widget_recent_entries ~ .sidebar-widget
 belprauda.com,desktophut.ru###secondary > .widget_text
@@ -18456,7 +18457,7 @@ podskazki.info##.widget_hugeit_slider_widget
 kurkul.com##.widget_image-vertical
 kyiv.media##.widget_leftadvbanner
 hyperione.com##.widget_mbywx
-autogeek.com.ua,expert.com.ua,gk-press.if.ua,hronikers.com,inform.zp.ua,kulemet.com,mezha.media,pclegko.ru,politarena.online,sn.by,volyninfa.com.ua##.widget_media_image
+autogeek.com.ua,expert.com.ua,gk-press.if.ua,hronikers.com,inform.zp.ua,kulemet.com,mezha.media,pclegko.ru,politarena.online,sn.by,svoboda.te.ua,volyninfa.com.ua##.widget_media_image
 bazarmedia.info##.widget_mpslwidget
 vegetarian.ru##.widget_multiplead
 testsoch.net##.widget_partn
@@ -18464,7 +18465,7 @@ portall.zp.ua##.widget_rekl
 tula-football.ru##.widget_rss
 tea-online.ru##.widget_sslwidget
 analitikaua.net,aspekty.net,ua-report.info##.widget_super_rss_reader
-1000iodinsovet.ru,2info2.ru,4esnok.by,agrimpasa.com,alau.kz,alkogolu.net,atlasprirodirossii.ru,belattra.ru,bizua.org,boxvideotv.ru,brunet-ka.ru,calend.online,cherepah.ru,chirik.info,chudesniesovetiki.site,clubwindows.ru,domashnie-zagotovki.ru,domashniecvety.ru,erokomiksi.com,excelprost.ru,free-news.su,galas.te.ua,geomedia.top,giantessa.ru,golbis.com,golovnie-boli.com,hitagro.ru,hronika.info,htmlhook.ru,hyperione.com,inforpost.com,kopomko.com,koroleffsov.ru,krashevseh.ru,kulemet.com,legkopolezno.ru,lightstories.site,macosinfo.com,makeupkey.ru,mamabook.com.ua,meganovosti.net,mezha.media,miformat.info,nagadala.com,nash-sekret.ru,newsrank.ru,newssky.com.ua,northern-newspaper.ru,ofigeno.ru,ogribax.ru,ovetryanke.ru,paratechnik.ru,podarok.video,podruzke.ru,portable-rus.ru,portalvirtualreality.ru,prostolinux.ru,putin-today.ru,pzik.ru,rainbowsky.ru,roza2012.net.ua,ru-mir.net,ruslo.info,sci-fi-news.ru,sich.zp.ua,snelwilcox.com,srnsk.ru,strana-it.ru,svoitabachok.ru,trmzk.ru,udobreniya.net,ustanovkaos.ru,ventilationpro.ru,walaw.ru,yconsult.ru##.widget_text
+1000iodinsovet.ru,2info2.ru,4esnok.by,agrimpasa.com,alau.kz,alkogolu.net,atlasprirodirossii.ru,belattra.ru,bizua.org,boxvideotv.ru,brunet-ka.ru,calend.online,cherepah.ru,chirik.info,chudesniesovetiki.site,clubwindows.ru,domashnie-zagotovki.ru,domashniecvety.ru,erokomiksi.com,excelprost.ru,free-news.su,galas.te.ua,geomedia.top,giantessa.ru,golbis.com,golovnie-boli.com,hitagro.ru,hronika.info,htmlhook.ru,hyperione.com,inforpost.com,kopomko.com,koroleffsov.ru,krashevseh.ru,kulemet.com,legkopolezno.ru,lightstories.site,macosinfo.com,makeupkey.ru,mamabook.com.ua,meganovosti.net,mezha.media,miformat.info,nagadala.com,nash-sekret.ru,newsrank.ru,newssky.com.ua,northern-newspaper.ru,ofigeno.ru,ogribax.ru,ovetryanke.ru,paratechnik.ru,podarok.video,podruzke.ru,portable-rus.ru,portalvirtualreality.ru,prostolinux.ru,putin-today.ru,pzik.ru,rainbowsky.ru,roza2012.net.ua,ru-mir.net,ruslo.info,sci-fi-news.ru,sich.zp.ua,snelwilcox.com,srnsk.ru,strana-it.ru,svoitabachok.ru,trmzk.ru,udobreniya.net,ustanovkaos.ru,ventilationpro.ru,walaw.ru,yconsult.ru,zdorovia.com.ua##.widget_text
 expert-dacha.pro##.widget_text > .widget-top
 zaruba.fun#?#.widget_text:-abp-has(#kwork-widget)
 bookzvuk.ru#?#.widget_text:-abp-has(.medicinetizer)
@@ -21618,8 +21619,8 @@ ictv.ua,vikna.tv##div[id^="div-gpt-ad-"]
 ://pikabu.ru/$csp=script-src 'self' * 'unsafe-inline' data:
 @@||imasdk.googleapis.com/$xmlhttprequest,domain=volley.ru
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js|$domain=besthdwallpaper.com
-@@||s.zfctrack.net/z|$xmlhttprequest,domain=businessua.com|epravda.com.ua|eurointegration.com.ua|gorod.dp.ua|hvylya.net|inforesist.org|kriminal.tv|real-vin.com|smak.ua
-@@||s.zhctrack.net/z|$xmlhttprequest,domain=epravda.com.ua|eurointegration.com.ua|gorod.dp.ua|inforesist.org
+@@||s.zfctrack.net/z|$xmlhttprequest,domain=businessua.com|epravda.com.ua|eurointegration.com.ua|gorod.dp.ua|hvylya.net|inforesist.org|kriminal.tv|real-vin.com|smak.ua|zdorovia.com.ua
+@@||s.zhctrack.net/z|$xmlhttprequest,domain=epravda.com.ua|eurointegration.com.ua|gorod.dp.ua|inforesist.org|zdorovia.com.ua
 @@||s.zmctrack.net/z|$xmlhttprequest,domain=i.ua|ivona.ua|meteo.ua|panno4ka.net
 @@||s.znctrack.net/z|$xmlhttprequest,domain=censor.net|gazeta.ua|i.ua|mail.ukr.net|meteofor.com.ua|tabloid.pravda.com.ua|viva.ua
 ||imgfrost.net^$third-party
@@ -28316,7 +28317,7 @@ softportal.com##+js(addEventListener-defuser, load, screenshotsItems)
 ! uTarget Ads
 3dn.ru,a-point.info,addfiles.ru,akkordam.ru,all-for-kompa.ru,asia-tv.su,at.ua,autosimgames.ru,clan.su,db-energo.ru,devdrivers.ru,do.am,elegos.ru,elektronika56.ru,elektrosat.ru,fon-ki.com,for-gsm.ru,free-dream.ru,ftechedu.ru,fukushima-news.ru,gals.md,gloria-cedric.ru,goldformat.ru,greenflash.su,igrul-ka.ru,krasnickij.ru,krolmen.ru,megaclips.net,mow-portal.ru,moy.su,my1.ru,narod.ru,newgames.com.ua,novospasskoe-city.ru,omsimclub.ru,online-supernatural.ru,only-paper.ru,others.name,pidru4nik.com,pkrc.ru,play-force.ru,pohoronnoe-byuro.com,pokatushki-pmr.ru,pro-zakupki.ru,project-ss.ru,psxworld.ru,radiodom.org,rocketdockfree.ru,sdr-deluxe.com,soft-game.net,stalker-gsc.ru,stalker-zone.info,stalkermods.ru,svadbatomsk.ru,techmusic.ru,tes-game.ru,torfiles.ru,ucoz.club,ucoz.com,ucoz.net,ucoz.org,ucoz.ru,ucoz.ua,usite.pro,vodopads.ru,vsthouse.ru,xakevsoft.ru,xn--80aeshkkbdj.xn--p1ai,yaminecraft.ru,zona-stalkera.ru##+js(abort-on-property-read, u_global_data)
 ! Zmctrack
-avtovod.com.ua,bigmir.net,buhgalter.com.ua,buhgalter911.com,businessua.com,censor.net,dengi.ua,ditey.com,epravda.com.ua,eurointegration.com.ua,f1analytic.com,facenews.ua,factor.ua,gazeta.ua,gorod.dp.ua,hvylya.net,i.ua,inforesist.org,isport.ua,ivona.ua,kolobok.ua,kriminal.tv,liga.net,meteo.ua,meteofor.com.ua,nnovosti.info,nv.ua,panno4ka.net,pogodaua.com,pravda.com.ua,real-vin.com,smak.ua,stravy.net,tochka.net,tv.ua,viva.ua,vsetv.com,www.ukr.net##+js(remove-node-text, script, "Shadow)
+avtovod.com.ua,bigmir.net,buhgalter.com.ua,buhgalter911.com,businessua.com,censor.net,dengi.ua,ditey.com,epravda.com.ua,eurointegration.com.ua,f1analytic.com,facenews.ua,factor.ua,gazeta.ua,gorod.dp.ua,hvylya.net,i.ua,inforesist.org,isport.ua,ivona.ua,kolobok.ua,kriminal.tv,liga.net,meteo.ua,meteofor.com.ua,nnovosti.info,nv.ua,panno4ka.net,pogodaua.com,pravda.com.ua,real-vin.com,smak.ua,stravy.net,tochka.net,tv.ua,viva.ua,vsetv.com,www.ukr.net,zdorovia.com.ua##+js(remove-node-text, script, "Shadow)
 bigmir.net,bilshe.com,buhgalter.com.ua,buhgalter911.com,dengi.ua,ditey.com,facenews.ua,factor.ua,football24.ua,gorod.dp.ua,pogodaua.com,vsetv.com##body > div:not([id]):not([class]):not([style]):empty:remove()
 4mama.ua,autoua.net,avtovod.com.ua,beauty.ua,bigmir.net,bilshe.com,buhgalter.com.ua,buhgalter911.com,censor.net,dengi.ua,ditey.com,enovosty.com,epravda.com.ua,eurointegration.com.ua,facenews.ua,factor.ua,football24.ua,forumodua.com,gazeta.ua,gorod.dp.ua,hvylya.net,i.ua,inforesist.org,internetua.com,isport.ua,ivona.ua,kolobok.ua,kriminal.tv,kurs.com.ua,liga.net,mama.ua,meteo.ua,meteofor.com.ua,mport.ua,newsyou.info,nnovosti.info,nv.ua,okino.ua,orakul.com,panno4ka.net,pogodaua.com,pravda.com.ua,real-vin.com,smak.ua,stravy.net,tochka.net,toneto.net,tv.ua,tvoymalysh.com.ua,u-news.com.ua,ukr.net,viva.ua,vsetv.com,zp.ua##body iframe[name][style*="display:none"]:not([id]):not([class]):not([src]):remove()
 4mama.ua,autoua.net,beauty.ua,forumodua.com,internetua.com,newsyou.info,okino.ua,orakul.com,pravda.com.ua,toneto.net,tvoymalysh.com.ua##head > iframe[name]:not([id]):not([class]):not([src]):remove()
