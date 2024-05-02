@@ -1,25 +1,40 @@
-diff name:ruadlist lines:31 checksum:45c1513ec7
+diff name:ruadlist lines:46 checksum:3c97411e94
 d4 2
 a5 2
-! Last modified: Thu, 02 May 2024 05:23:16 +0000
-! Diff-Path: ../patches/2024.5.2.323.patch#ruadlist
+! Last modified: Thu, 02 May 2024 10:24:02 +0000
+! Diff-Path: ../patches/2024.5.2.624.patch#ruadlist
 a8210 1
 ###idealmedia
+d9951 1
 d10004 1
 a10004 1
 /pum-site-scripts.js$domain=belsat.eu|hariola.com|svoboda.te.ua|v-variant.com.ua
 d10149 1
 a10149 1
 $csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: *.addtoany.com *.amazonaws.com *.cloudflare.com *.dmca.com *.disqus.com *.disquscdn.com *.facebook.com *.getsitecontrol.com apis.google.com cse.google.com *.google.com/cse/ *.google.com/complete/ *.google.com/recaptcha/ translate.google.com www.google.com *.googleapis.com *.googletagmanager.com *.gstatic.com/recaptcha/ *.instagram.com *.jivosite.com *.jquery.com *.keycaptcha.com *.sendpulse.com *.sharethis.com *.po.st *.threadloom.com *.tiktok.com *.trustpilot.com *.twitter.com vk.com www.youtube.com *.dev *.io *.net *.org *.ru *.ua,~third-party,domain=agroter.com.ua|alensat.com|allbasketball.org|askentire.net|autonews.co.ua|autosoftos.com|babla.ru|bio-lessons.ru|cardiagram.com.ua|clickthis.blog|coollib.net|elegantwoman.kyiv.ua|farposst.ru|findhow.org|gazeta-misto.te.ua|golos.te.ua|icon-icons.com|ilenta.com|index.minfin.com.ua|inforesist.org|kurs.com.ua|life.pravda.com.ua|mirlib.ru|modfix.ru|musinfo.net|ontvtime.ru|orbit-games.com|perpendicular.pro|pes-files.ru|poezdato.net|poizdato.net|ruboard.website|sundries.ua|tabloid.pravda.com.ua|tenews.org.ua|tribun.com.ua|uapress.kyiv.ua|valorantinfo.com|vesti-ua.net|vkazivka.com|wallpapershome.ru
+a12669 1
+||sberometer.ru/*.html|$subdocument,domain=sberometer.ru
 d14359 1
 a14359 1
 donbass.name,svoboda.te.ua###secondary > .widget_custom_html ~ .widget_custom_html
+a17091 1
+audit-it.ru##.opadv
+d17137 1
+d17350 1
+a17350 1
+allmoldova.com,gdeposylka.ru,infomir59.ru,pavlodar.news,pavon.kz,rentv-smolensk.ru,telesputnik.ru,ubuntovod.ru,webmasters.ru##.promo
 d18459 1
 a18459 1
 autogeek.com.ua,expert.com.ua,gk-press.if.ua,hronikers.com,inform.zp.ua,kulemet.com,mezha.media,pclegko.ru,politarena.online,sn.by,svoboda.te.ua,volyninfa.com.ua##.widget_media_image
 d18467 1
 a18467 1
 1000iodinsovet.ru,2info2.ru,4esnok.by,agrimpasa.com,alau.kz,alkogolu.net,atlasprirodirossii.ru,belattra.ru,bizua.org,boxvideotv.ru,brunet-ka.ru,calend.online,cherepah.ru,chirik.info,chudesniesovetiki.site,clubwindows.ru,domashnie-zagotovki.ru,domashniecvety.ru,erokomiksi.com,excelprost.ru,free-news.su,galas.te.ua,geomedia.top,giantessa.ru,golbis.com,golovnie-boli.com,hitagro.ru,hronika.info,htmlhook.ru,hyperione.com,inforpost.com,kopomko.com,koroleffsov.ru,krashevseh.ru,kulemet.com,legkopolezno.ru,lightstories.site,macosinfo.com,makeupkey.ru,mamabook.com.ua,meganovosti.net,mezha.media,miformat.info,nagadala.com,nash-sekret.ru,newsrank.ru,newssky.com.ua,northern-newspaper.ru,ofigeno.ru,ogribax.ru,ovetryanke.ru,paratechnik.ru,podarok.video,podruzke.ru,portable-rus.ru,portalvirtualreality.ru,prostolinux.ru,putin-today.ru,pzik.ru,rainbowsky.ru,roza2012.net.ua,ru-mir.net,ruslo.info,sci-fi-news.ru,sich.zp.ua,snelwilcox.com,srnsk.ru,strana-it.ru,svoitabachok.ru,trmzk.ru,udobreniya.net,ustanovkaos.ru,ventilationpro.ru,walaw.ru,yconsult.ru,zdorovia.com.ua##.widget_text
+a18595 1
+sberometer.ru#?#:not([class]):-abp-has(> div[class] > iframe[src^="/"][src$=".html"])
+d19841 1
+d20948 1
+a21128 1
+sberometer.ru##iframe[src^="/"][src$=".html"]
 d21621 2
 a21622 2
 @@||s.zfctrack.net/z|$xmlhttprequest,domain=businessua.com|epravda.com.ua|eurointegration.com.ua|gorod.dp.ua|hvylya.net|inforesist.org|kriminal.tv|real-vin.com|smak.ua|zdorovia.com.ua

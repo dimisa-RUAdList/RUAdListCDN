@@ -1,10 +1,11 @@
-diff name:ruadlist lines:88 checksum:45c1513ec7
+diff name:ruadlist lines:103 checksum:3c97411e94
 d4 2
 a5 2
-! Last modified: Thu, 02 May 2024 05:23:16 +0000
-! Diff-Path: ../patches/2024.5.2.323.patch#ruadlist
+! Last modified: Thu, 02 May 2024 10:24:02 +0000
+! Diff-Path: ../patches/2024.5.2.624.patch#ruadlist
 a8210 1
 ###idealmedia
+d9951 1
 d10004 1
 a10004 1
 /pum-site-scripts.js$domain=belsat.eu|hariola.com|svoboda.te.ua|v-variant.com.ua
@@ -13,6 +14,8 @@ a10149 1
 $csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: *.addtoany.com *.amazonaws.com *.cloudflare.com *.dmca.com *.disqus.com *.disquscdn.com *.facebook.com *.getsitecontrol.com apis.google.com cse.google.com *.google.com/cse/ *.google.com/complete/ *.google.com/recaptcha/ translate.google.com www.google.com *.googleapis.com *.googletagmanager.com *.gstatic.com/recaptcha/ *.instagram.com *.jivosite.com *.jquery.com *.keycaptcha.com *.sendpulse.com *.sharethis.com *.po.st *.threadloom.com *.tiktok.com *.trustpilot.com *.twitter.com vk.com www.youtube.com *.dev *.io *.net *.org *.ru *.ua,~third-party,domain=agroter.com.ua|alensat.com|allbasketball.org|askentire.net|autonews.co.ua|autosoftos.com|babla.ru|bio-lessons.ru|cardiagram.com.ua|clickthis.blog|coollib.net|elegantwoman.kyiv.ua|farposst.ru|findhow.org|gazeta-misto.te.ua|golos.te.ua|icon-icons.com|ilenta.com|index.minfin.com.ua|inforesist.org|kurs.com.ua|life.pravda.com.ua|mirlib.ru|modfix.ru|musinfo.net|ontvtime.ru|orbit-games.com|perpendicular.pro|pes-files.ru|poezdato.net|poizdato.net|ruboard.website|sundries.ua|tabloid.pravda.com.ua|tenews.org.ua|tribun.com.ua|uapress.kyiv.ua|valorantinfo.com|vesti-ua.net|vkazivka.com|wallpapershome.ru
 d11258 1
 d11317 1
+a12671 1
+||sberometer.ru/*.html|$subdocument,domain=sberometer.ru
 d14361 1
 a14361 1
 donbass.name,svoboda.te.ua###secondary > .widget_custom_html ~ .widget_custom_html
@@ -21,6 +24,12 @@ theblueprint.ru##.block--type_banner
 d15554 1
 a15568 1
 football.by##.bookgDiv
+a17092 1
+audit-it.ru##.opadv
+d17138 1
+d17351 1
+a17351 1
+allmoldova.com,gdeposylka.ru,infomir59.ru,pavlodar.news,pavon.kz,rentv-smolensk.ru,telesputnik.ru,ubuntovod.ru,webmasters.ru##.promo
 d17559 1
 a17559 1
 fanday.net##.right_colum > section:first-child
@@ -32,6 +41,8 @@ autogeek.com.ua,expert.com.ua,gk-press.if.ua,hronikers.com,inform.zp.ua,kulemet.
 d18471 1
 a18471 1
 1000iodinsovet.ru,2info2.ru,4esnok.by,agrimpasa.com,alau.kz,alkogolu.net,atlasprirodirossii.ru,belattra.ru,bizua.org,boxvideotv.ru,brunet-ka.ru,calend.online,cherepah.ru,chirik.info,chudesniesovetiki.site,clubwindows.ru,domashnie-zagotovki.ru,domashniecvety.ru,erokomiksi.com,excelprost.ru,free-news.su,galas.te.ua,geomedia.top,giantessa.ru,golbis.com,golovnie-boli.com,hitagro.ru,hronika.info,htmlhook.ru,hyperione.com,inforpost.com,kopomko.com,koroleffsov.ru,krashevseh.ru,kulemet.com,legkopolezno.ru,lightstories.site,macosinfo.com,makeupkey.ru,mamabook.com.ua,meganovosti.net,mezha.media,miformat.info,nagadala.com,nash-sekret.ru,newsrank.ru,newssky.com.ua,northern-newspaper.ru,ofigeno.ru,ogribax.ru,ovetryanke.ru,paratechnik.ru,podarok.video,podruzke.ru,portable-rus.ru,portalvirtualreality.ru,prostolinux.ru,putin-today.ru,pzik.ru,rainbowsky.ru,roza2012.net.ua,ru-mir.net,ruslo.info,sci-fi-news.ru,sich.zp.ua,snelwilcox.com,srnsk.ru,strana-it.ru,svoitabachok.ru,trmzk.ru,udobreniya.net,ustanovkaos.ru,ventilationpro.ru,walaw.ru,yconsult.ru,zdorovia.com.ua##.widget_text
+a18599 1
+sberometer.ru#?#:not([class]):-abp-has(> div[class] > iframe[src^="/"][src$=".html"])
 d18908 1
 a18908 1
 itsider.com.ua,mmr.net.ua,obozvrn.ru,rama.com.ua,rusfootball.info,subbota.ua,youtebem.com##[itemtype="https://schema.org/WPAdBlock"]
@@ -40,6 +51,10 @@ a19081 1
 fanday.net,football.by##a[href*="/bookmaker"]
 a19123 1
 football.by##a[href*="://betonmobile.by"]
+d19844 1
+d20951 1
+a21131 1
+sberometer.ru##iframe[src^="/"][src$=".html"]
 d21624 2
 a21625 2
 @@||s.zfctrack.net/z|$xmlhttprequest,domain=businessua.com|epravda.com.ua|eurointegration.com.ua|gorod.dp.ua|hvylya.net|inforesist.org|kriminal.tv|real-vin.com|smak.ua|zdorovia.com.ua

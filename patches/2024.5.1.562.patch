@@ -1,8 +1,23 @@
-diff name:ruadlist lines:7 checksum:45c1513ec7
+diff name:ruadlist lines:22 checksum:3c97411e94
 d4 2
 a5 2
-! Last modified: Thu, 02 May 2024 05:23:16 +0000
-! Diff-Path: ../patches/2024.5.2.323.patch#ruadlist
+! Last modified: Thu, 02 May 2024 10:24:02 +0000
+! Diff-Path: ../patches/2024.5.2.624.patch#ruadlist
+d9952 1
+a12670 1
+||sberometer.ru/*.html|$subdocument,domain=sberometer.ru
+a17092 1
+audit-it.ru##.opadv
+d17138 1
+d17351 1
+a17351 1
+allmoldova.com,gdeposylka.ru,infomir59.ru,pavlodar.news,pavon.kz,rentv-smolensk.ru,telesputnik.ru,ubuntovod.ru,webmasters.ru##.promo
+a18596 1
+sberometer.ru#?#:not([class]):-abp-has(> div[class] > iframe[src^="/"][src$=".html"])
+d19842 1
+d20949 1
+a21129 1
+sberometer.ru##iframe[src^="/"][src$=".html"]
 d27893 1
 a27893 1
 autonews.co.ua,liveball.cc,liveball.uno,ukrainianwall.com##+js(addEventListener-defuser, /contextmenu|copy|keydown|selectstart/)
