@@ -1,8 +1,8 @@
-diff name:ruadlist lines:95 checksum:0c33c3876e
+diff name:ruadlist lines:116 checksum:62dd1eb324
 d4 2
 a5 2
-! Last modified: Fri, 03 May 2024 06:26:25 +0000
-! Diff-Path: ../patches/2024.5.3.386.patch#ruadlist
+! Last modified: Fri, 03 May 2024 11:16:42 +0000
+! Diff-Path: ../patches/2024.5.3.676.patch#ruadlist
 a8210 1
 ###idealmedia
 d9951 1
@@ -19,6 +19,12 @@ a12671 1
 d14361 1
 a14361 1
 donbass.name,svoboda.te.ua###secondary > .widget_custom_html ~ .widget_custom_html
+d14694 1
+a14694 1
+myshows.me#?#.AsideHeading:-abp-contains(/kinopoisk|кинопоиск/i)
+d14712 1
+a14712 1
+myshows.me#?#.Home-section:-abp-has(> div .title [class*="romo"])
 a15445 1
 theblueprint.ru##.block--type_banner
 d15554 1
@@ -59,11 +65,16 @@ d21624 2
 a21625 2
 @@||s.zfctrack.net/z|$xmlhttprequest,domain=businessua.com|epravda.com.ua|eurointegration.com.ua|gorod.dp.ua|hvylya.net|inforesist.org|kriminal.tv|real-vin.com|smak.ua|zdorovia.com.ua
 @@||s.zhctrack.net/z|$xmlhttprequest,domain=epravda.com.ua|eurointegration.com.ua|gorod.dp.ua|inforesist.org|zdorovia.com.ua
+a21639 1
+||pikabu.ru/*u%$xmlhttprequest,domain=pikabu.ru
 d21641 1
-a21641 1
-||pikabu.ru/qu%$xmlhttprequest,domain=pikabu.ru
 a21979 1
 my.mail.ru##.sp-video__billboard
+d22739 1
+a22743 1
+dzen.ru##div[class^="floor-card-rtb_"]
+a22841 1
+ycylid=$popup,domain=dzen.ru
 d25869 1
 a25869 1
 baskino.film,dnepr.info,dugtor.ru,filmitorrent.net,filmitorrent.site,jetsetter.ua,kinoafisha.ua,kinobar.vip,moskva.fm,newstudio.tv,nnmclub.to,pay-day.ru,roem.ru,rusfootball.info,trupornolabs.org,utorr.cc,vc.ru,virusinfo.info,wikianime.tv,xxxadulttorrent.org,you-anime.ru,yummyanime.tv,zombie-film.live##body:not(#id):style(padding-top: 0 !important)
@@ -78,8 +89,18 @@ techinsider.ru##.preview-section .vertical-video__play-icon-wrapper:style(displa
 ! ---
 a27440 1
 dzen.ru##[data-testid] div[class^="adaptive-card-grid__container"] > div[class=""]
-d27471 1
-a27471 1
+d27461 2
+a27462 2
+dzen.ru##[class*="fllors"] div[id][class^="feed"] article[aria-label] ~ div
+dzen.ru##aside[id^="article_"][class*="rlphdt"] > div[class]
+d27466 1
+a27466 1
+dzen.ru##div[class*="article__"] > .undefined ~ div[class*="mldlei"] > div[id][class]
+d27468 4
+a27471 4
+dzen.ru##div[class*="wldjed"] > div[class*="container"] > div ~ div
+dzen.ru##div[class^="article-page"] [class*="adWrapper"]
+dzen.ru##div[class^="article-page"] [class*="myTarget"]
 dzen.ru##div[class^="feed__"] > div:not([class]) > article:not([aria-label]) > div:first-child ~ div
 a27490 1
 yandex.by,yandex.kz,yandex.ru,yandex.uz##._map_ready .search-list-view__advert-offer-banner

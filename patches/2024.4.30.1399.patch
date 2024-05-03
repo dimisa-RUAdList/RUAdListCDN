@@ -1,8 +1,8 @@
-diff name:ruadlist lines:49 checksum:0c33c3876e
+diff name:ruadlist lines:72 checksum:62dd1eb324
 d4 2
 a5 2
-! Last modified: Fri, 03 May 2024 06:26:25 +0000
-! Diff-Path: ../patches/2024.5.3.386.patch#ruadlist
+! Last modified: Fri, 03 May 2024 11:16:42 +0000
+! Diff-Path: ../patches/2024.5.3.676.patch#ruadlist
 a8210 1
 ###idealmedia
 d9951 1
@@ -17,6 +17,12 @@ a12669 1
 d14359 1
 a14359 1
 donbass.name,svoboda.te.ua###secondary > .widget_custom_html ~ .widget_custom_html
+d14692 1
+a14692 1
+myshows.me#?#.AsideHeading:-abp-contains(/kinopoisk|кинопоиск/i)
+d14710 1
+a14710 1
+myshows.me#?#.Home-section:-abp-has(> div .title [class*="romo"])
 a17091 1
 audit-it.ru##.opadv
 d17137 1
@@ -39,9 +45,26 @@ d21621 2
 a21622 2
 @@||s.zfctrack.net/z|$xmlhttprequest,domain=businessua.com|epravda.com.ua|eurointegration.com.ua|gorod.dp.ua|hvylya.net|inforesist.org|kriminal.tv|real-vin.com|smak.ua|zdorovia.com.ua
 @@||s.zhctrack.net/z|$xmlhttprequest,domain=epravda.com.ua|eurointegration.com.ua|gorod.dp.ua|inforesist.org|zdorovia.com.ua
+a21636 1
+||pikabu.ru/*u%$xmlhttprequest,domain=pikabu.ru
 d21638 1
-a21638 1
-||pikabu.ru/qu%$xmlhttprequest,domain=pikabu.ru
+d22737 1
+a22741 1
+dzen.ru##div[class^="floor-card-rtb_"]
+a22839 1
+ycylid=$popup,domain=dzen.ru
+d27463 2
+a27464 2
+dzen.ru##[class*="fllors"] div[id][class^="feed"] article[aria-label] ~ div
+dzen.ru##aside[id^="article_"][class*="rlphdt"] > div[class]
+d27468 1
+a27468 1
+dzen.ru##div[class*="article__"] > .undefined ~ div[class*="mldlei"] > div[id][class]
+d27470 3
+a27472 3
+dzen.ru##div[class*="wldjed"] > div[class*="container"] > div ~ div
+dzen.ru##div[class^="article-page"] [class*="adWrapper"]
+dzen.ru##div[class^="article-page"] [class*="myTarget"]
 d27892 1
 a27892 1
 autonews.co.ua,liveball.cc,liveball.uno,ukrainianwall.com##+js(addEventListener-defuser, /contextmenu|copy|keydown|selectstart/)

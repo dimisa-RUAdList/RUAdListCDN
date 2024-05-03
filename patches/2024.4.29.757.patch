@@ -1,8 +1,8 @@
-diff name:ruadlist lines:66 checksum:0c33c3876e
+diff name:ruadlist lines:89 checksum:62dd1eb324
 d4 2
 a5 2
-! Last modified: Fri, 03 May 2024 06:26:25 +0000
-! Diff-Path: ../patches/2024.5.3.386.patch#ruadlist
+! Last modified: Fri, 03 May 2024 11:16:42 +0000
+! Diff-Path: ../patches/2024.5.3.676.patch#ruadlist
 a8210 1
 ###idealmedia
 d9951 1
@@ -17,6 +17,12 @@ a12669 1
 d14359 1
 a14359 1
 donbass.name,svoboda.te.ua###secondary > .widget_custom_html ~ .widget_custom_html
+d14692 1
+a14692 1
+myshows.me#?#.AsideHeading:-abp-contains(/kinopoisk|кинопоиск/i)
+d14710 1
+a14710 1
+myshows.me#?#.Home-section:-abp-has(> div .title [class*="romo"])
 a15443 1
 theblueprint.ru##.block--type_banner
 a17090 1
@@ -41,11 +47,16 @@ d21620 2
 a21621 2
 @@||s.zfctrack.net/z|$xmlhttprequest,domain=businessua.com|epravda.com.ua|eurointegration.com.ua|gorod.dp.ua|hvylya.net|inforesist.org|kriminal.tv|real-vin.com|smak.ua|zdorovia.com.ua
 @@||s.zhctrack.net/z|$xmlhttprequest,domain=epravda.com.ua|eurointegration.com.ua|gorod.dp.ua|inforesist.org|zdorovia.com.ua
+a21635 1
+||pikabu.ru/*u%$xmlhttprequest,domain=pikabu.ru
 d21637 1
-a21637 1
-||pikabu.ru/qu%$xmlhttprequest,domain=pikabu.ru
 a21975 1
 my.mail.ru##.sp-video__billboard
+d22735 1
+a22739 1
+dzen.ru##div[class^="floor-card-rtb_"]
+a22837 1
+ycylid=$popup,domain=dzen.ru
 a26589 1
 www.ivi.ru##.headerNotify_hasUnread .nbl-simpleControlButton:style(animation: none !important)
 a26590 1
@@ -56,6 +67,18 @@ techinsider.ru##.preview-section .vertical-video__play-icon-wrapper:style(displa
 ! ---
 a27434 1
 dzen.ru##[data-testid] div[class^="adaptive-card-grid__container"] > div[class=""]
+d27455 2
+a27456 2
+dzen.ru##[class*="fllors"] div[id][class^="feed"] article[aria-label] ~ div
+dzen.ru##aside[id^="article_"][class*="rlphdt"] > div[class]
+d27460 1
+a27460 1
+dzen.ru##div[class*="article__"] > .undefined ~ div[class*="mldlei"] > div[id][class]
+d27462 3
+a27464 3
+dzen.ru##div[class*="wldjed"] > div[class*="container"] > div ~ div
+dzen.ru##div[class^="article-page"] [class*="adWrapper"]
+dzen.ru##div[class^="article-page"] [class*="myTarget"]
 d27656 1
 a27703 1
 mail.ru##main#grid > .grid-middle ~ div:not([class]):not([id])

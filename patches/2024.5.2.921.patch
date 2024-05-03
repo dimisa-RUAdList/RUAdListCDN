@@ -1,8 +1,31 @@
-diff name:ruadlist lines:7 checksum:0c33c3876e
+diff name:ruadlist lines:30 checksum:62dd1eb324
 d4 2
 a5 2
-! Last modified: Fri, 03 May 2024 06:26:25 +0000
-! Diff-Path: ../patches/2024.5.3.386.patch#ruadlist
+! Last modified: Fri, 03 May 2024 11:16:42 +0000
+! Diff-Path: ../patches/2024.5.3.676.patch#ruadlist
+d14693 1
+a14693 1
+myshows.me#?#.AsideHeading:-abp-contains(/kinopoisk|кинопоиск/i)
+d14711 1
+a14711 1
+myshows.me#?#.Home-section:-abp-has(> div .title [class*="romo"])
+a21637 1
+||pikabu.ru/*u%$xmlhttprequest,domain=pikabu.ru
 d21639 1
-a21639 1
-||pikabu.ru/qu%$xmlhttprequest,domain=pikabu.ru
+d22738 1
+a22742 1
+dzen.ru##div[class^="floor-card-rtb_"]
+a22840 1
+ycylid=$popup,domain=dzen.ru
+d27464 2
+a27465 2
+dzen.ru##[class*="fllors"] div[id][class^="feed"] article[aria-label] ~ div
+dzen.ru##aside[id^="article_"][class*="rlphdt"] > div[class]
+d27469 1
+a27469 1
+dzen.ru##div[class*="article__"] > .undefined ~ div[class*="mldlei"] > div[id][class]
+d27471 3
+a27473 3
+dzen.ru##div[class*="wldjed"] > div[class*="container"] > div ~ div
+dzen.ru##div[class^="article-page"] [class*="adWrapper"]
+dzen.ru##div[class^="article-page"] [class*="myTarget"]
