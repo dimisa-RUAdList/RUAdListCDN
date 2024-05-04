@@ -1,8 +1,8 @@
-diff name:ruadlist lines:11 checksum:244f27343c
+diff name:ruadlist lines:21 checksum:bbfb9e8c9a
 d4 2
 a5 2
-! Last modified: Sat, 04 May 2024 17:19:12 +0000
-! Diff-Path: ../patches/2024.5.4.1039.patch#ruadlist
+! Last modified: Sat, 04 May 2024 22:20:22 +0000
+! Diff-Path: ../patches/2024.5.4.1340.patch#ruadlist
 a17845 1
 fbc.biz.ua##.sidebar_list_item a[href][target="_blank"] > img
 d19193 1
@@ -10,3 +10,13 @@ a19193 1
 alltor.me,backup.menu,beremennost.net,buhgalter911.com,dead-serial.com,dedicated.menu,domohozayki.com,electricalschool.info,elementarno-tv.com,fishki.net,forum-profit.ru,hosting.cafe,https.menu,kopilkaurokov.ru,kosti-tv.com,license.menu,multiurok.ru,ogribax.ru,openssource.biz,palantinbest.ru,php.ru,shared.menu,traktorist.ua,uvelir.info,uvelir.net,vds.menu,vorozheya.org,vskazke-tv.com,www.pesticidy.ru##a[href*="banner"][target="_blank"]
 a20884 1
 dtf.ru,vc.ru##div[style*="banner-height"]
+d25514 1
+a25514 1
+@@/(clickunder|footerad|layerad|lazyad|leaderad|leftad|linkad|pop_ad|prerollad|printad|pubads|pushdownad|report_ad|right_ad|sidebar_ad|under)/$script,~third-party,domain=game4you.top|games-pc.top|innal.top|naylo.top|rustorka.com|rustorka.net|rustorka.top|rustorkacom.lib
+d28015 1
+a28015 1
+game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /adblog|tick/)
+d28101 1
+d28183 1
+a28183 1
+reshu.by,sdamgia.ru##main > div:first-child:empty + div:not([class]) > div:style(min-height: 86px !important; margin-bottom: -80px !important)

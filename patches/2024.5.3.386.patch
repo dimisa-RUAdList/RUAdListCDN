@@ -1,8 +1,8 @@
-diff name:ruadlist lines:51 checksum:244f27343c
+diff name:ruadlist lines:61 checksum:bbfb9e8c9a
 d4 2
 a5 2
-! Last modified: Sat, 04 May 2024 17:19:12 +0000
-! Diff-Path: ../patches/2024.5.4.1039.patch#ruadlist
+! Last modified: Sat, 04 May 2024 22:20:22 +0000
+! Diff-Path: ../patches/2024.5.4.1340.patch#ruadlist
 d14693 1
 a14693 1
 myshows.me#?#.AsideHeading:-abp-contains(/kinopoisk|кинопоиск/i)
@@ -31,6 +31,9 @@ a22836 1
 ycilid=$popup,domain=dzen.ru
 a22840 1
 ycylid=$popup,domain=dzen.ru
+d25511 1
+a25511 1
+@@/(clickunder|footerad|layerad|lazyad|leaderad|leftad|linkad|pop_ad|prerollad|printad|pubads|pushdownad|report_ad|right_ad|sidebar_ad|under)/$script,~third-party,domain=game4you.top|games-pc.top|innal.top|naylo.top|rustorka.com|rustorka.net|rustorka.top|rustorkacom.lib
 d25741 1
 a25812 1
 myshows.me##div[class*="DetectAdBlock"]
@@ -50,3 +53,10 @@ a27473 3
 dzen.ru##div[class*="wldjed"] > div[class*="container"] > div ~ div
 dzen.ru##div[class^="article-page"] [class*="adWrapper"]
 dzen.ru##div[class^="article-page"] [class*="myTarget"]
+d28010 1
+a28010 1
+game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /adblog|tick/)
+d28096 1
+d28178 1
+a28178 1
+reshu.by,sdamgia.ru##main > div:first-child:empty + div:not([class]) > div:style(min-height: 86px !important; margin-bottom: -80px !important)
