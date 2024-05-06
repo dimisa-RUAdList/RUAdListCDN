@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 06 May 2024 09:22:12 +0000
-! Diff-Path: ../patches/2024.5.6.562.patch#ruadlist
+! Last modified: Mon, 06 May 2024 14:23:25 +0000
+! Diff-Path: ../patches/2024.5.6.863.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -16554,7 +16554,6 @@ obmenvsem.org#?#.item:-abp-has(> div > [src*="pek.png"])
 appmo.org#?#.item:-abp-has(> script)
 appmo.org#?#.item:-abp-has([src*="/images/pek.png"])
 ketchuptv.ru##.itemFullText > center + div[style*="center"]
-byrutdb.org##.itemdown_nottorent_sub
 mypresentation.ru##.items > .p-item ~ div[class][style]
 narutoplanet.ru##.items-leading
 sexsmotri.com##.items-list > noindex
@@ -19461,7 +19460,6 @@ gazeta1.com##a[href][title*="банер"]
 domsovetof.ru##a[href][title="http://rek-chek.ru/"]
 poligon.by##a[href^=" https://vk.com/look_up_potolki"]
 poiskvps.ru##a[href^="./go.php"]
-byrutdb.org##a[href^="/"][href$=".torrent"]
 smotret-multfilmi.net,torrenther.com##a[href^="/"][href*=".php"][target]
 agroportal.ua##a[href^="/"][target="_blank"]
 torrents.in.ua##a[href^="/"][target="_blank"][rel="nofollow"]
@@ -21669,7 +21667,7 @@ soyztreid.website##:not(my-obnaruzhili-blokirovshchik)
 ||soyztreid.website^$csp=script-src
 ||soyztreid.website^$popup
 ! Блокировка ресурсов, намеренно продвигающих вредоносное ПО и фейки
-apad2.top,besplatnyeprogrammy.ru,inferno.games,mediagetguru.ru,monna2.top,only-soft.org,rutor-game.ru,torent-igruha.com,torrent-music.ru,torrent-soft.pro,torrentigo.net,torrentigruha.org,where-game.ru##:not(this-site-promotes-malware)
+apad2.top,besplatnyeprogrammy.ru,inferno.games,mediagetguru.ru,monna2.top,only-soft.org,rutor-game.ru,rutor-gamer.info,torent-igruha.com,torrent-music.ru,torrent-soft.pro,torrentigo.net,torrentigruha.org,where-game.ru##:not(this-site-promotes-malware)
 ! Намеренное продвижение фейков и мошенников
 ||tele.ru^$xmlhttprequest,domain=tele.ru
 ! Плеер venom, в основном для ua-юзеров, примеры >
@@ -27993,7 +27991,7 @@ kvadratmetr.uz,oligarx.uz,tehnar.net.ua##+js(noeval-if, adsBlocked)
 i-ua.tv##+js(remove-attr, autoplay, [data-video-player="small"], stay)
 cnews.ru,gfycat.com,inter.ua,obozrevatel.com,platformcraft.ru,protv.md,rg.ru,rusvesna.su,tv8.md,xsport.ua##+js(remove-attr, autoplay, video, stay)
 u24.ua##+js(remove-attr, autoplay|loop, .watch-live__link > video, stay)
-afisha.ru,byrutdb.org,film.ru,filmpro.ru##+js(remove-attr, autoplay|loop, video, stay)
+afisha.ru,byruthub.org,film.ru,filmpro.ru##+js(remove-attr, autoplay|loop, video, stay)
 lenta.ru##+js(remove-attr, class, .js-video-box__container)
 svoboda.org##+js(remove-attr, data-autoplay, video)
 myshared.ru##+js(remove-attr, disabled, .uk-modal-footer > button)
