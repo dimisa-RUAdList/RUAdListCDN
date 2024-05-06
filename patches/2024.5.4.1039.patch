@@ -1,8 +1,8 @@
-diff name:ruadlist lines:41 checksum:2f77ca95dc
+diff name:ruadlist lines:44 checksum:a2c3c7fe19
 d4 2
 a5 2
-! Last modified: Mon, 06 May 2024 14:23:25 +0000
-! Diff-Path: ../patches/2024.5.6.863.patch#ruadlist
+! Last modified: Mon, 06 May 2024 19:16:47 +0000
+! Diff-Path: ../patches/2024.5.6.1156.patch#ruadlist
 a15366 1
 kratko.plus##.banners-top
 d16556 1
@@ -27,9 +27,11 @@ a24059 1
 d24148 1
 a24148 1
 ||sberdevices.ru^$third-party,domain=~sber.ru|~visper.tech
+d24696 1
 d25516 1
 a25516 1
 @@/(clickunder|footerad|layerad|lazyad|leaderad|leftad|linkad|pop_ad|prerollad|printad|pubads|pushdownad|report_ad|right_ad|sidebar_ad|under)/$script,~third-party,domain=game4you.top|games-pc.top|innal.top|naylo.top|rustorka.com|rustorka.net|rustorka.top|rustorkacom.lib
+d27023 4
 d28005 1
 a28005 1
 afisha.ru,byruthub.org,film.ru,filmpro.ru##+js(remove-attr, autoplay|loop, video, stay)
@@ -38,5 +40,6 @@ a28017 1
 game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /adblog|tick/)
 d28103 1
 d28185 1
-a28185 1
-reshu.by,sdamgia.ru##main > div:first-child:empty + div:not([class]) > div:style(min-height: 86px !important; margin-bottom: -80px !important)
+a28185 2
+reshu.by,sdamgia.ru##main > div:first-child:empty + div:not([class]) > div > div
+reshu.by,sdamgia.ru##main > div:first-child:empty + div:not([class]) > div:style(min-height: 86px !important; height: 86px !important; margin-bottom: -80px !important)

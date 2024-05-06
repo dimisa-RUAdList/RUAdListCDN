@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 06 May 2024 14:23:25 +0000
-! Diff-Path: ../patches/2024.5.6.863.patch#ruadlist
+! Last modified: Mon, 06 May 2024 19:16:47 +0000
+! Diff-Path: ../patches/2024.5.6.1156.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -24682,7 +24682,6 @@ cheb.ru,cheboksary.ws,kugesi.ru,na-svyazi.ru##a[href*="/ad.adriver."]
 @@||porjati.net^$generichide
 @@||postila.ru^$generichide
 @@||potokcdn.com^$generichide
-@@||praca.by^$generichide
 @@||pvpru.com^$generichide
 @@||radio-archive.ru^$generichide
 @@||radiolamp.ru^$generichide
@@ -27009,10 +27008,6 @@ porus.ru,ruporus.biz,ruporus.cc,ruporus.com,ruporus.net,ruporus.top,ruporus.tv,r
 postimees.ee##.cookie-paywall-visible .cookie-paywall
 postimees.ee##.cookie-paywall-visible div > .article-body-content ~ .article-body-content:style(display: flex !important)
 ! ---
-praca.by##body.modal-open > #cookie-confirm
-praca.by##body.modal-open > .modal-backdrop
-praca.by##body.modal-open:style(overflow: auto !important)
-! ---
 proagro.com.ua##.ban_head:style(display: block !important; background: none !important; pointer-events: none !important)
 proagro.com.ua##header > a[href="/"]:style(display: block !important)
 proagro.com.ua##main:style(margin-top: 0 !important)
@@ -28170,7 +28165,8 @@ soyztreid.website##head:remove()
 dzen.ru##iframe[style^="position:"][style*="absolute"][srcdoc]:remove()
 m.rp5.*#@#.adsbygoogle
 reshu.by,sdamgia.ru##main > div > div > div:has-text(/rotator|блокировщик/)
-reshu.by,sdamgia.ru##main > div:first-child:empty + div:not([class]) > div:style(min-height: 86px !important; margin-bottom: -80px !important)
+reshu.by,sdamgia.ru##main > div:first-child:empty + div:not([class]) > div > div
+reshu.by,sdamgia.ru##main > div:first-child:empty + div:not([class]) > div:style(min-height: 86px !important; height: 86px !important; margin-bottom: -80px !important)
 mult-porno.*,sex-studentki.*,cosplay-porn.*##+js(set-constant, biads.initCli, undefined)
 dmod.cc,draug.ru,modsforwot.ru##p:has-text(Для скачивания подождите отсчет таймера...)
 tvzvezda.ru##pjsdiv[id^="oframe"] > pjsdiv[style*="opacity: 0.1;"]:empty
