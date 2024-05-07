@@ -1,19 +1,39 @@
-diff name:ruadlist lines:67 checksum:8f17610211
+diff name:ruadlist lines:103 checksum:bb0377671b
 d4 2
 a5 2
-! Last modified: Tue, 07 May 2024 15:20:57 +0000
-! Diff-Path: ../patches/2024.5.7.920.patch#ruadlist
+! Last modified: Tue, 07 May 2024 20:16:53 +0000
+! Diff-Path: ../patches/2024.5.7.1216.patch#ruadlist
+d10408 1
+a10408 1
+/ebllbe/*$image,domain=lostfilm.download|lostfilm.life|lostfilm.one|lostfilm.pro|lostfilm.space|lostfilm.today|lostfilm.tv|lostfilm.tw|lostfilm.uno|lostfilm.win|lostfilmtv.site|lostfilmtv.uno|lostfilmtv2.site|lostfilmtv3.site|lostfilmtv5.site
+d10490 1
+a10490 1
+/temp/*.mp4$media,domain=lostfilm.download|lostfilm.life|lostfilm.one|lostfilm.pro|lostfilm.space|lostfilm.today|lostfilm.tv|lostfilm.tw|lostfilm.uno|lostfilm.win|lostfilmtv.site|lostfilmtv.uno|lostfilmtv2.site|lostfilmtv3.site|lostfilmtv5.site
 a13467 1
 cian.ru###adfox-stretch-banner
+d14517 1
+a14517 1
+lostfilm.download,lostfilm.life,lostfilm.one,lostfilm.pro,lostfilm.space,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv5.site###testVideo
 a15366 1
 kratko.plus##.banners-top
+a15527 1
+brokker.news##.bn-content
 d16556 1
+d17083 1
+a17083 1
+lostfilm.download,lostfilm.life,lostfilm.one,lostfilm.pro,lostfilm.space,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv5.site##.oi_papa_oi
 a17845 1
 fbc.biz.ua##.sidebar_list_item a[href][target="_blank"] > img
+d19031 1
+a19031 1
+lostfilm.download,lostfilm.life,lostfilm.one,lostfilm.pro,lostfilm.space,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv5.site##a[href*="&brid="]
 d19193 1
 a19193 1
 alltor.me,backup.menu,beremennost.net,buhgalter911.com,dead-serial.com,dedicated.menu,domohozayki.com,electricalschool.info,elementarno-tv.com,fishki.net,forum-profit.ru,hosting.cafe,https.menu,kopilkaurokov.ru,kosti-tv.com,license.menu,multiurok.ru,ogribax.ru,openssource.biz,palantinbest.ru,php.ru,shared.menu,traktorist.ua,uvelir.info,uvelir.net,vds.menu,vorozheya.org,vskazke-tv.com,www.pesticidy.ru##a[href*="banner"][target="_blank"]
 d19462 1
+d19917 1
+a19917 1
+budport.com.ua,lostfilm.download,lostfilm.life,lostfilm.one,lostfilm.pro,lostfilm.space,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv5.site,mylenium.ru##body > a
 a20884 1
 dtf.ru,vc.ru##div[style*="banner-height"]
 d21638 1
@@ -40,6 +60,16 @@ d24694 1
 d25514 1
 a25514 1
 @@/(clickunder|footerad|layerad|lazyad|leaderad|leftad|linkad|pop_ad|prerollad|printad|pubads|pushdownad|report_ad|right_ad|sidebar_ad|under)/$script,~third-party,domain=game4you.top|games-pc.top|innal.top|naylo.top|rustorka.com|rustorka.net|rustorka.top|rustorkacom.lib
+d26793 8
+a26800 8
+lostfilm.download,lostfilm.life,lostfilm.one,lostfilm.pro,lostfilm.space,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv5.site##.footer:style(background: #1c1e1f !important; color: #fff !important)
+lostfilm.download,lostfilm.life,lostfilm.one,lostfilm.pro,lostfilm.space,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv5.site##.gallery_img_preload:style(position: absolute !important; display: block !important; opacity: 0 !important; margin-top: 155px !important; margin-left: 20px !important; width: calc(100% - 40%);)
+lostfilm.download,lostfilm.life,lostfilm.one,lostfilm.pro,lostfilm.space,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv5.site##.lstfml .footer .links a:style(color: #fff !important)
+lostfilm.download,lostfilm.life,lostfilm.one,lostfilm.pro,lostfilm.space,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv5.site##body > * > div[style^="padding-top"]
+lostfilm.download,lostfilm.life,lostfilm.one,lostfilm.pro,lostfilm.space,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv5.site##body > a[onclick]
+lostfilm.download,lostfilm.life,lostfilm.one,lostfilm.pro,lostfilm.space,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv5.site##body > div:not([id]):not([class]):not([style])
+lostfilm.download,lostfilm.life,lostfilm.one,lostfilm.pro,lostfilm.space,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv5.site##body > span:nth-child(-n+6)
+lostfilm.download,lostfilm.life,lostfilm.one,lostfilm.pro,lostfilm.space,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv5.site##body:style(background-image: none !important; background-color: #1c1e1f !important)
 d27021 4
 d27498 2
 a27499 2
@@ -48,10 +78,16 @@ yandex.by,yandex.kz,yandex.ru,yandex.uz##.search-list-view__advert-offer-banner
 d28003 1
 a28003 1
 afisha.ru,byruthub.org,film.ru,filmpro.ru##+js(remove-attr, autoplay|loop, video, stay)
+d28007 1
+a28007 1
+lostfilm.download,lostfilm.life,lostfilm.one,lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##+js(remove-attr, oncontextmenu, [class], stay)
 d28015 1
 a28015 1
 game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /adblog|tick/)
 d28101 1
+d28115 1
+a28115 1
+lostfilm.download,lostfilm.life,lostfilm.one,lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##.body > .body:style(user-select: text !important; -moz-user-select: text !important; -webkit-user-select: text !important)
 d28183 1
 a28183 2
 reshu.by,sdamgia.ru##main > div:first-child:empty + div:not([class]) > div > div
