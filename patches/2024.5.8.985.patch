@@ -1,8 +1,8 @@
-diff name:ruadlist lines:109 checksum:b63b5cb924
+diff name:ruadlist lines:121 checksum:72f1bbb05d
 d4 2
 a5 2
-! Last modified: Sat, 11 May 2024 04:24:07 +0000
-! Diff-Path: ../patches/2024.5.11.264.patch#ruadlist
+! Last modified: Sat, 11 May 2024 09:20:20 +0000
+! Diff-Path: ../patches/2024.5.11.560.patch#ruadlist
 a749 1
 ||bidder.smartytouch.co^$third-party
 a888 2
@@ -46,9 +46,18 @@ liveresult.ru##div[style="height:90px;"]
 a21491 1
 forums.rusmedserv.com##td[align="right"] > b > a[href][target="_blank"]
 d21506 1
+d21625 2
+a21626 2
+@@||s.zfctrack.net/z|$xmlhttprequest,domain=24boxing.com.ua|businessua.com|epravda.com.ua|eurointegration.com.ua|gorod.dp.ua|hvylya.net|inforesist.org|kriminal.tv|real-vin.com|smak.ua|zdorovia.com.ua
+@@||s.zhctrack.net/z|$xmlhttprequest,domain=24boxing.com.ua|epravda.com.ua|eurointegration.com.ua|gorod.dp.ua|inforesist.org|zdorovia.com.ua
 d21642 1
 a21642 1
 ||pikabu.ru/pu%$xmlhttprequest,domain=pikabu.ru
+a22538 4
+!#if ext_abp
+! Temporary rule, until denyallow in ABP-MV3 is implemented
+||world/$third-party,script,domain=gdespaces.com|gdespaces.net|google-cloud.services|spac.me|spac.run|spac.wtf|spac1.com|spac1.info|spac1.me|spac1.net|spac1.org|spac1.ru|spaces-blogs.com|spaces.im|spcs-files.xyz|spcs.bio|spcs.global|spcs.life|spcs.me|spcs.mobi|spcs.network|spcs.news|spcs.pro|spcs.pub|spcs.reviews|spcs.social|strip2.in|strip2.xxx|usersporn.com
+!#endif
 a22831 1
 ycilyd=$popup,domain=dzen.ru
 d24624 1
@@ -103,6 +112,9 @@ fssp.gov.ru,southpark.su,turkcinema.org##+js(abort-on-property-write, document.o
 fssp.gov.ru,southpark.su,turkcinema.org##+js(abort-on-property-write, document.onselectstart)
 d27971 1
 d28167 1
+d28314 1
+a28314 1
+24boxing.com.ua,avtovod.com.ua,bigmir.net,buhgalter.com.ua,buhgalter911.com,businessua.com,censor.net,dengi.ua,ditey.com,epravda.com.ua,eurointegration.com.ua,f1analytic.com,facenews.ua,factor.ua,gazeta.ua,gorod.dp.ua,hvylya.net,i.ua,inforesist.org,isport.ua,ivona.ua,kolobok.ua,kriminal.tv,liga.net,meteo.ua,meteofor.com.ua,nnovosti.info,nv.ua,panno4ka.net,pogodaua.com,pravda.com.ua,real-vin.com,smak.ua,stravy.net,tochka.net,tv.ua,viva.ua,vsetv.com,www.ukr.net,zdorovia.com.ua##+js(remove-node-text, script, "Shadow)
 d29118 1
 d29212 1
 a29212 1
