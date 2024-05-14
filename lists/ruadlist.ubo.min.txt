@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 14 May 2024 07:19:54 +0000
-! Diff-Path: ../patches/2024.5.14.439.patch#ruadlist
+! Last modified: Tue, 14 May 2024 12:38:36 +0000
+! Diff-Path: ../patches/2024.5.14.758.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -19030,6 +19030,7 @@ serialy-2021.com,serialy-tor.com##a[href$=".php"]
 pr-people.ru##a[href$=".php"][target="_blank"]
 eadaily.com##a[href*="#after_incut"]
 lostfilm.download,lostfilm.life,lostfilm.one,lostfilm.pro,lostfilm.space,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv5.site##a[href*="&brid="]
+allfight.ru##a[href*="-pokupka-zhilya-"]
 manutd.ru,sportliga.com##a[href*=".ashx?"]
 onliner.by##a[href*=".betera.by"]
 creativportal.ru##a[href*=".creativportal.ru"]
@@ -20735,6 +20736,7 @@ flashscore.com.ua,flashscore.ru.com,flashscore.ua,flashscorekz.com,livescore.in,
 daboom.ru##div[id^="branded_img"]
 namba.kg,namba.kz,namba.tj,sportarena.com,videochart.net##div[id^="branding"]
 www.film.ru##div[id^="bseller_"]
+allfight.ru##div[id^="bx_"]
 kurs.if.ua,radiotrek.rv.ua##div[id^="candyplace_"]
 sonnik-online.net##div[id^="carousel_pos"]
 doska.fi,russian.fi##div[id^="centered"]
@@ -21738,11 +21740,13 @@ ru###ads-top.ads
 2ip.io,2ip.ru#?#.narrow-column > style ~ div > div:-abp-has(a[style^="color:"])
 2ip.io,2ip.ru##a[href*="://fineproxy.org"]
 2ip.io,2ip.ru##a[href*="://finevpn.org"]
+2ip.io,2ip.ru##a[href*="://hdmnm"]
 2ip.io,2ip.ru##a[href*="://hidem"]
 2ip.io,2ip.ru##a[href*="://proxyelite.info"]
 ! блокировки, добавленнные из-за агрессивного обхода адблока на 2ip.ru, 2ip.io, 2ip.ua ~>
 ||fineproxy.org^$third-party,popup
 ||finevpn.org^$third-party,popup
+||hdmnm.link^$third-party,popup
 ||hide.mn^$third-party,popup
 ||hidemn.net^$third-party,popup
 ||hidemn.org^$third-party,popup
@@ -22706,6 +22710,7 @@ yandex.by,yandex.kz,yandex.ru,yandex.uz##.b-yabrowser-promo
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.container__banner
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.content.i-bem > .body__topblocks
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.content__right > .z-market_right_yes
+ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.content__right div[class][data-log-node]:-abp-has(> div[data-vnl*="renderTo"])
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.direct-view
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.dist-overlay__popup
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.i-bem.adsrv
@@ -28120,6 +28125,7 @@ rbc.ru,sportrbc.ru##.l-sticky:has(.forecast:empty) ~ .js-news-feed > .news-feed:
 ozon.ru##.layout-page > div:has(> div > p > a[href*="://docs.ozon.ru/common/pravila"])
 inoreader.com##.leaderboard_ad:style(display: block !important; position: fixed !important; top: -10000px !important; left: -10000px !important)
 nrj.ua##.main__slider > a:not([href^="https://nrj.ua/"]):remove()
+gamemag.ru##.news-view:has(> .overview > .overview__overview:has-text(Реклама)) .content-text a[href]:style(color: inherit !important; pointer-events: none !important)
 hideip.me#@#.node-promoted
 vm.ru##.onair_wrapper > [name="btn_air_close"]
 e1.ru##.page-type-article:remove-class(branding)
