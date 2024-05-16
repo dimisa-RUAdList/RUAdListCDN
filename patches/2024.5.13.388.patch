@@ -1,8 +1,8 @@
-diff name:ruadlist lines:83 checksum:a3873d96cd
+diff name:ruadlist lines:99 checksum:d1fab04f5e
 d4 2
 a5 2
-! Last modified: Thu, 16 May 2024 14:22:36 +0000
-! Diff-Path: ../patches/2024.5.16.862.patch#ruadlist
+! Last modified: Thu, 16 May 2024 19:15:54 +0000
+! Diff-Path: ../patches/2024.5.16.1155.patch#ruadlist
 a391 1
 ||aj2635.bid^$third-party
 a2829 1
@@ -10,6 +10,9 @@ a2829 1
 d7708 1
 a7708 1
 /baner_$domain=~aplica.pl|~brabrabra.ua|~campworld.com.ua|~churchjc.com|~food16.ru|~nenc.gov.ua|~pcmart.com.ua|~pizzamel.ru|~planetarium.dn.ua|~tambov.gov.ru|~triatek.com.ua|~uslugi.mosreg.ru|~work-pulse.ru|~zippo.net.ua
+d7987 1
+a7987 1
+/teasers/*$domain=~ableton.com|~adventuregamers.com|~agderposten.no|~amway.ru|~amway.ua|~av.by|~babla.ru|~bmw.de|~bmw.ro|~bmw.ru|~business-gazeta.ru|~fujifilm.eu|~gismeteo.by|~gismeteo.kz|~kinobulvar.info|~meganomkino.ru|~novsu.ru|~rce.by|~road.cc|~stackoverflow.com|~teaserstar.ru|~wetteronline.de|~www.kinopoisk.ru|~yandex.by|~yandex.com|~yandex.com.tr|~yandex.fr|~yandex.kz|~yandex.ru
 d9929 1
 a9929 1
 belsat.eu,bizua.org,growhow.in.ua,hariola.com,ukrhealth.net##.popmake-overlay
@@ -55,6 +58,16 @@ a21740 1
 2ip.io,2ip.ru##a[href*="://hdmnm"]
 a21745 1
 ||hdmnm.link^$third-party,popup
+d21773 1
+a21773 1
+gismeteo.by,gismeteo.kz##.column2 > .section-rss
+d21777 2
+a21778 2
+gismeteo.by,gismeteo.kz,gismeteo.ru,meteofor.md##.placeholder
+gismeteo.by,gismeteo.kz,meteofor.com.ua##.section-media
+d21781 1
+a21781 1
+gismeteo.by,gismeteo.kz,gismeteo.ru##.top-media-placeholder
 a22708 1
 ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.content__right div[class][data-log-node]:-abp-has(> div[data-vnl*="renderTo"])
 a22839 1
@@ -73,6 +86,9 @@ dzen.ru##aside[id^="article_"][class*="rigpldt"] > div[class]
 d27473 2
 a27474 1
 dzen.ru##div[class*="witdejet"] > div[class*="container"] > div ~ div
+d27798 1
+a27798 1
+gismeteo.by,gismeteo.kz,gismeteo.ru##+js(abort-on-property-read, Object.prototype.scriptsViaXhr)
 a27849 1
 players.com.ua##+js(abort-on-property-read, localStorage)
 a27929 1

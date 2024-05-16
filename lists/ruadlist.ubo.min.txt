@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 16 May 2024 14:22:36 +0000
-! Diff-Path: ../patches/2024.5.16.862.patch#ruadlist
+! Last modified: Thu, 16 May 2024 19:15:54 +0000
+! Diff-Path: ../patches/2024.5.16.1155.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -7986,7 +7986,7 @@ _verified.php?code=*&server=runetki.com
 /teaser_klubnika/*
 /teaserblock.site.js
 /teasers.
-/teasers/*$domain=~ableton.com|~adventuregamers.com|~agderposten.no|~amway.ru|~amway.ua|~av.by|~babla.ru|~bmw.de|~bmw.ro|~bmw.ru|~business-gazeta.ru|~fujifilm.eu|~gismeteo.by|~gismeteo.kz|~gismeteo.md|~kinobulvar.info|~meganomkino.ru|~novsu.ru|~rce.by|~road.cc|~stackoverflow.com|~teaserstar.ru|~wetteronline.de|~www.kinopoisk.ru|~yandex.by|~yandex.com|~yandex.com.tr|~yandex.fr|~yandex.kz|~yandex.ru
+/teasers/*$domain=~ableton.com|~adventuregamers.com|~agderposten.no|~amway.ru|~amway.ua|~av.by|~babla.ru|~bmw.de|~bmw.ro|~bmw.ru|~business-gazeta.ru|~fujifilm.eu|~gismeteo.by|~gismeteo.kz|~kinobulvar.info|~meganomkino.ru|~novsu.ru|~rce.by|~road.cc|~stackoverflow.com|~teaserstar.ru|~wetteronline.de|~www.kinopoisk.ru|~yandex.by|~yandex.com|~yandex.com.tr|~yandex.fr|~yandex.kz|~yandex.ru
 /testserial/vendor/vast.js
 /tionline120x60.
 /tionline150x60.
@@ -21775,15 +21775,15 @@ checkadblock.ru##.warning
 ||adblock-tester.com^$csp=script-src 'self'
 ||checkadblock.ru^$csp=script-src 'self'
 ! GISMeteo domains
-gismeteo.by,gismeteo.kz,gismeteo.md##.column2 > .section-rss
+gismeteo.by,gismeteo.kz##.column2 > .section-rss
 gismeteo.ru##.content-column > .section-media
 gismeteo.ru##.content-column ~ .content-column > .section-rss
 gismeteo.ru##.follow-zen
-gismeteo.by,gismeteo.kz,gismeteo.md,gismeteo.ru##.placeholder
-gismeteo.by,gismeteo.kz,gismeteo.md,meteofor.com.ua##.section-media
+gismeteo.by,gismeteo.kz,gismeteo.ru,meteofor.md##.placeholder
+gismeteo.by,gismeteo.kz,meteofor.com.ua##.section-media
 meteofor.com.ua##.section-rss
 gismeteo.by,gismeteo.kz,gismeteo.ru##.sticky > .section
-gismeteo.by,gismeteo.kz,gismeteo.md,gismeteo.ru##.top-media-placeholder
+gismeteo.by,gismeteo.kz,gismeteo.ru##.top-media-placeholder
 gismeteo.ru##.widget-container
 gismeteo.ru##div[class*="feed-partner"]
 gismeteo.ru##section > .feed-bg
@@ -27803,7 +27803,7 @@ gdespaces.com,gdespaces.net,google-cloud.services,spac.me,spac.run,spac.wtf,spac
 rbc.ru##+js(abort-on-property-read, Object.prototype.isApplySticky)
 e1.ru,nova.rambler.ru,pikabu.ru##+js(abort-on-property-read, Object.prototype.loadBanner)
 24smi.org##+js(abort-on-property-read, Object.prototype.render)
-gismeteo.by,gismeteo.kz,gismeteo.md,gismeteo.ru##+js(abort-on-property-read, Object.prototype.scriptsViaXhr)
+gismeteo.by,gismeteo.kz,gismeteo.ru##+js(abort-on-property-read, Object.prototype.scriptsViaXhr)
 drive2.ru,razlozhi.ru##+js(abort-on-property-read, Object.prototype.yaContextCb)
 f1comp.ru,tagaev.com,times.zt.ua##+js(abort-on-property-read, PUM.getPopup)
 sinoptik.ua##+js(abort-on-property-read, SIN.AdsLoader)
