@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 19 May 2024 07:17:23 +0000
-! Diff-Path: ../patches/2024.5.19.437.patch#ruadlist
+! Last modified: Sun, 19 May 2024 12:35:55 +0000
+! Diff-Path: ../patches/2024.5.19.755.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -2873,6 +2873,7 @@
 ||ivances.com^
 ||ivanie.com^
 ||ivantat.com^
+||ivi.ru/mad/vast/$third-party
 ||ivnsssc.pro^$third-party
 ||ivsiveg.ru^$third-party
 ||ivwolo.ru^$third-party
@@ -6440,6 +6441,7 @@
 ||videoframe.online^$third-party
 ||videohead.tech^$third-party
 ||videohup.com^$third-party
+||videohype.net^$third-party
 ||videojuly.ru^
 ||videojune.ru^
 ||videoleks.com^$third-party
@@ -21656,6 +21658,7 @@ fonmod.com,howdyho.net,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 android-mafia.com,game4you.top,games-pc.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##:not(this-site-promotes-malware)
 liveinternet.ru,sdamgia.ru##[data-container]
 sdamgia.ru##[data-name="partial-container"]
+liveinternet.ru##[data-wrapper]
 kp.kg,kp.kz,kp.md,kp.ru#?#body > #app div:-abp-properties(background-color: rgb(225, 231, 235))
 www.e1.ru#?#body > script[src^="https://www.e1.ru/"] ~ #app [itemprop] > figure:-abp-has(span:-abp-contains(чуть-чуть и видео загрузится))
 sdamgia.ru##center > div[id][style]
