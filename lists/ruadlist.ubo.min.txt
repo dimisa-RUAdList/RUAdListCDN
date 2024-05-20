@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 20 May 2024 08:25:39 +0000
-! Diff-Path: ../patches/2024.5.20.505.patch#ruadlist
+! Last modified: Mon, 20 May 2024 13:24:08 +0000
+! Diff-Path: ../patches/2024.5.20.804.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -15963,7 +15963,7 @@ tvizor.org##.custom > div[style^="padding:"]
 ok-tv.org##.custom > noindex
 vp.donetsk.ua##.custom > p > a
 vp.donetsk.ua##.custom > p > img
-dacha.help,dev.ua,orchardo.ru,udermis.ru,uroki-pitaniya.ru,vipidei.com##.custom-block
+dacha.help,dev.ua,devby.io,orchardo.ru,udermis.ru,uroki-pitaniya.ru,vipidei.com##.custom-block
 mignews.com##.custom-height-250
 dovidka.biz.ua,forumua.org,xn---2--mddxunv8a2esa.xn--p1ai##.custom-html-widget
 topgir.com.ua##.custom-html-widget > a
@@ -16553,8 +16553,8 @@ fishki.net##.is_adv_post
 ura.news##.is_momenty
 story.neskromnie.ru##.iseeyou
 landlord.ua##.isfixed
-dev.ua#?#.island:-abp-has(> .adsbygoogle)
-dev.ua##.island[style^="padding: 2rem 0;"]
+dev.ua,devby.io#?#.island:-abp-has(> .adsbygoogle)
+dev.ua,devby.io##.island[style^="padding: 2rem 0;"]
 business.ua##.islands--recommended
 carambatv.ru##.item-adv
 vsezdorovo.com#?#.item-content:-abp-has(> .title > a[href*="//zen.yandex.ru/"])
@@ -19532,6 +19532,7 @@ rusradio.ru##a[href^="/target/"]
 bigfangroup.org,freebfg.org##a[href^="/trh"]
 pornomage.net##a[href^="/url?go="]
 izgr.ru##a[href^="?uups"]
+rutr.life,rutracker.lib,rutracker.net,rutracker.nl,rutracker.org##a[href^="go.php?id="]
 sat-digest.com##a[href^="goto.php"] > img[src^="bae/"]
 soccer.ru##a[href^="http"][href*="utm_campai"]
 ochevidec.net##a[href^="http:"]:not([href*="ochevidec.net"]):not([href*="livejournal"]):not([href*="icq"])
@@ -20468,7 +20469,7 @@ miasskiy.ru##div[class^="papex"]
 smolensk-i.ru##div[class^="parthner"]
 cyberscore.live##div[class^="partner-"]
 tonkosti.ru##div[class^="partner-link"]
-chytomo.com,dev.ua,moika78.ru,padaread.com##div[class^="partners"]
+chytomo.com,dev.ua,devby.io,moika78.ru,padaread.com##div[class^="partners"]
 syzran-small.ru,xn----7sbabwosghnf8al4lkj7b.xn--p1ai##div[class^="partnews"]
 1plus1.video##div[class^="playlist-player-branding-"]
 gorod.cn.ua##div[class^="pos"][class*="_"]
@@ -21648,7 +21649,7 @@ ictv.ua,vikna.tv##div[id^="div-gpt-ad-"]
 !||www.liveinternet.ru/|$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/utf/lici.js https://www.liveinternet.ru/utf/li.js https://www.liveinternet.ru/utf/main_new.js
 ! Pikabu (ловушка для обфускации)
 ||pikabu.ru/ajax?$xmlhttprequest,domain=pikabu.ru
-||pikabu.ru/ikhu%$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/iku%$xmlhttprequest,domain=pikabu.ru
 ! селекторы
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
@@ -22857,6 +22858,7 @@ ycyid=$popup,domain=dzen.ru
 ycylid=$popup,domain=dzen.ru
 ycylyd=$popup,domain=dzen.ru
 ycyyld=$popup,domain=dzen.ru
+ycyylyd=$popup,domain=dzen.ru
 yhic=$popup,domain=dzen.ru
 yhid=$popup,domain=dzen.ru
 yhyd=$popup,domain=dzen.ru
@@ -27315,6 +27317,9 @@ tourpom.ru##.modal-open .adv_modal
 tourpom.ru##.modal-open > .modal-backdrop
 tourpom.ru##.modal-open:style(overflow: auto !important)
 ! ---
+! исправление ошибок и косяков оригинальной вёрстки
+tproger.ru##.tp-widget-pinned-post-item__title > a:style(pointer-events: auto !important)
+! ---
 translit.ru##.tBlurred:style(-webkit-filter: none !important)
 translit.ru##.tPechenkiInfoblock
 ! ---
@@ -27486,10 +27491,14 @@ dzen.ru##div[class*="BlackHeader"] > div[class^="header-widgets"] ~ div
 dzen.ru##div[class*="_articleUnderHeaderTop"]
 dzen.ru##div[class*="article__"] > .undefined ~ div[class*="mlildlei"] > div[id][class]
 dzen.ru##div[class*="hasBlackHeader"] > [id*="teaser"]
+dzen.ru##div[class*="shouldShow"]
 dzen.ru##div[class*="witejet"] > div[class*="container"] > div ~ div
 dzen.ru##div[class^="article-page"] [class*="adWrapper"]
 dzen.ru##div[class^="article-page"] [class*="myTarget"]
 dzen.ru##div[class^="feed__"] > div:not([class]) > article:not([aria-label]) > div:first-child ~ div
+dzen.ru##div[class^="floor-card-"] [style*="!important"]
+dzen.ru##div[class^="floor-card-"] [style="width: 100%;"]
+dzen.ru##div[class^="floor-card-"] div[class*="-flouurs-"]
 dzen.ru##div[id*="splashscreen"]
 ! ---
 ! игры
@@ -27913,7 +27922,7 @@ fm-app.ru,tvapp.su,yootv.ru##+js(addEventListener-defuser, /mouse/, cursorVisibl
 sibnet.ru##+js(addEventListener-defuser, DOMContentLoaded, /smartweek/)
 sports.ru##+js(addEventListener-defuser, DOMContentLoaded, 0x)
 cq.ru##+js(addEventListener-defuser, DOMContentLoaded, banners)
-regnum.news,regnum.ru##+js(addEventListener-defuser, click, , elements, a[href*="utm_campaign"])
+regnum.news,regnum.ru,tproger.ru##+js(addEventListener-defuser, click, , elements, a[href*="utm_campaign"])
 softonic.ru##+js(addEventListener-defuser, click, [native code])
 ~player.smotrim.ru,smotrim.ru##+js(addEventListener-defuser, click, matches)
 ~id.rambler.ru,~mail.rambler.ru,rambler.ru,~vp.rambler.ru##+js(addEventListener-defuser, copy, extra)
@@ -28335,7 +28344,7 @@ softportal.com##+js(addEventListener-defuser, load, screenshotsItems)
 ! uTarget Ads
 3dn.ru,a-point.info,addfiles.ru,akkordam.ru,all-for-kompa.ru,asia-tv.su,at.ua,autosimgames.ru,clan.su,db-energo.ru,devdrivers.ru,do.am,elegos.ru,elektronika56.ru,elektrosat.ru,fon-ki.com,for-gsm.ru,free-dream.ru,ftechedu.ru,fukushima-news.ru,gals.md,gloria-cedric.ru,goldformat.ru,greenflash.su,igrul-ka.ru,krasnickij.ru,krolmen.ru,megaclips.net,mow-portal.ru,moy.su,my1.ru,narod.ru,newgames.com.ua,novospasskoe-city.ru,omsimclub.ru,online-supernatural.ru,only-paper.ru,others.name,pidru4nik.com,pkrc.ru,play-force.ru,pohoronnoe-byuro.com,pokatushki-pmr.ru,pro-zakupki.ru,project-ss.ru,psxworld.ru,radiodom.org,rocketdockfree.ru,sdr-deluxe.com,soft-game.net,stalker-gsc.ru,stalker-zone.info,stalkermods.ru,svadbatomsk.ru,techmusic.ru,tes-game.ru,torfiles.ru,ucoz.club,ucoz.com,ucoz.net,ucoz.org,ucoz.ru,ucoz.ua,usite.pro,vodopads.ru,vsthouse.ru,xakevsoft.ru,xn--80aeshkkbdj.xn--p1ai,yaminecraft.ru,zona-stalkera.ru##+js(abort-on-property-read, u_global_data)
 ! Zmctrack
-24boxing.com.ua,avtovod.com.ua,bigmir.net,buhgalter.com.ua,buhgalter911.com,businessua.com,censor.net,dengi.ua,ditey.com,epravda.com.ua,eurointegration.com.ua,f1analytic.com,facenews.ua,factor.ua,gazeta.ua,gorod.dp.ua,hvylya.net,i.ua,inforesist.org,isport.ua,ivona.ua,kolobok.ua,kriminal.tv,liga.net,meteo.ua,meteofor.com.ua,nnovosti.info,nv.ua,panno4ka.net,pogodaua.com,pravda.com.ua,real-vin.com,smak.ua,stravy.net,tochka.net,tv.ua,viva.ua,vsetv.com,www.ukr.net,zdorovia.com.ua##+js(remove-node-text, script, "Shadow)
+24boxing.com.ua,avtovod.com.ua,bigmir.net,buhgalter.com.ua,buhgalter911.com,businessua.com,censor.net,dengi.ua,ditey.com,epravda.com.ua,eurointegration.com.ua,f1analytic.com,facenews.ua,factor.ua,football-ukraine.com,footballgazeta.com,footballtransfer.com.ua,gazeta.ua,gorod.dp.ua,hvylya.net,i.ua,inforesist.org,isport.ua,ivona.ua,kolobok.ua,kriminal.tv,liga.net,meteo.ua,meteofor.com.ua,nnovosti.info,nv.ua,panno4ka.net,pogodaua.com,pravda.com.ua,real-vin.com,smak.ua,sportanalytic.com,stravy.net,tochka.net,tv.ua,viva.ua,vsetv.com,www.ukr.net,zdorovia.com.ua##+js(remove-node-text, script, "Shadow)
 bigmir.net,bilshe.com,buhgalter.com.ua,buhgalter911.com,dengi.ua,ditey.com,facenews.ua,factor.ua,football24.ua,gorod.dp.ua,pogodaua.com,vsetv.com##body > div:not([id]):not([class]):not([style]):empty:remove()
 4mama.ua,autoua.net,avtovod.com.ua,beauty.ua,bigmir.net,bilshe.com,buhgalter.com.ua,buhgalter911.com,censor.net,dengi.ua,ditey.com,enovosty.com,epravda.com.ua,eurointegration.com.ua,facenews.ua,factor.ua,football24.ua,forumodua.com,gazeta.ua,gorod.dp.ua,hvylya.net,i.ua,inforesist.org,internetua.com,isport.ua,ivona.ua,kolobok.ua,kriminal.tv,kurs.com.ua,liga.net,mama.ua,meteo.ua,meteofor.com.ua,mport.ua,newsyou.info,nnovosti.info,nv.ua,okino.ua,orakul.com,panno4ka.net,pogodaua.com,pravda.com.ua,real-vin.com,smak.ua,stravy.net,tochka.net,toneto.net,tv.ua,tvoymalysh.com.ua,u-news.com.ua,ukr.net,viva.ua,vsetv.com,zp.ua##body iframe[name][style*="display:none"]:not([id]):not([class]):not([src]):remove()
 4mama.ua,autoua.net,beauty.ua,forumodua.com,internetua.com,newsyou.info,okino.ua,orakul.com,pravda.com.ua,toneto.net,tvoymalysh.com.ua##head > iframe[name]:not([id]):not([class]):not([src]):remove()
