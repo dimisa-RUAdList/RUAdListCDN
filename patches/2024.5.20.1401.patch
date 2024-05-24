@@ -1,8 +1,8 @@
-diff name:ruadlist lines:58 checksum:1db4c830b3
+diff name:ruadlist lines:80 checksum:71d18ddb95
 d4 2
 a5 2
-! Last modified: Fri, 24 May 2024 07:18:45 +0000
-! Diff-Path: ../patches/2024.5.24.438.patch#ruadlist
+! Last modified: Fri, 24 May 2024 12:38:00 +0000
+! Diff-Path: ../patches/2024.5.24.757.patch#ruadlist
 a6667 1
 ||weblion777.github.io^$third-party
 a7036 1
@@ -47,7 +47,12 @@ a20537 1
 flicksbar.fun,flicksbar.info,flicksbar.mom##div[class^="topAd"]
 d21651 2
 a21652 1
-||pikabu.ru/kru%$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/krru%$xmlhttprequest,domain=pikabu.ru
+a22860 1
+ycyylid=$popup,domain=dzen.ru
+d25831 1
+a25831 1
+myshows.me##div[class*="Detect"]
 d26239 3
 a26241 2
 doramalive.ru##.block-content > .ageLimit
@@ -55,5 +60,22 @@ doramalive.ru##.block-content > .ageLimit ~ .block-player:style(display: block !
 d26247 1
 a26247 1
 dostfilms.info,dostfilms.site,wowskill.ru##body:not(#id) .header:style(margin-top: 0 !important)
+d27483 3
+a27485 3
+dzen.ru##._feed-type_article_showcase article:not([class*="card-"])
+dzen.ru##._is-for-video-floor
+dzen.ru##.article-page-layout div[class*="-top-"] > div[class*="_position_"]
+d27487 2
+a27488 5
+dzen.ru##[class*="desktop"] ~ [id*="teaser"]
+dzen.ru##[class*="foros"] div[id][class^="feed"] article[aria-label] ~ div
+dzen.ru##[class^="dzen-desktop"] ~ div[id$="-popup"]
+dzen.ru##[data-testid="recommend-auth-popup"]
+dzen.ru##aside[id^="article_"][class*="rigght"] > div[class]
+d27490 8
+a27497 2
+dzen.ru##div[class*="article__"] > .undefined ~ div[class*="mlildli"] > div[id][class]
+dzen.ru##div[class*="witejjt"] > div[class*="container"] > div ~ div
+d27499 3
 a27725 1
 cloud.mail.ru##div[class^="ReactViewer__attachesSidebarinfo-"]
