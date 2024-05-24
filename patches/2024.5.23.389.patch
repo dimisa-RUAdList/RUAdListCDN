@@ -1,8 +1,8 @@
-diff name:ruadlist lines:50 checksum:ce70d8446d
+diff name:ruadlist lines:60 checksum:3dc68dda17
 d4 2
 a5 2
-! Last modified: Fri, 24 May 2024 17:22:47 +0000
-! Diff-Path: ../patches/2024.5.24.1042.patch#ruadlist
+! Last modified: Fri, 24 May 2024 22:22:11 +0000
+! Diff-Path: ../patches/2024.5.24.1342.patch#ruadlist
 a7037 1
 ||yvkyil.com^$third-party
 d10169 1
@@ -24,6 +24,14 @@ a19064 1
 d21653 2
 a21654 1
 ||pikabu.ru/krru%$xmlhttprequest,domain=pikabu.ru
+a22720 1
+ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.content__left > #search-result > li:-abp-has(> div .organic__subtitle > span:-abp-contains(Реклaма))
+d22722 1
+a22722 1
+ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.content__right div[class][data-log-node]:-abp-has([data-vnl*="/_crpd/"])
+d22758 1
+a22853 1
+ycld=$popup,domain=dzen.ru
 a22862 1
 ycyylid=$popup,domain=dzen.ru
 d25833 1
@@ -40,7 +48,7 @@ dzen.ru##.article-page-layout div[class*="-top-"] > div[class*="_position_"]
 d27488 2
 a27489 5
 dzen.ru##[class*="desktop"] ~ [id*="teaser"]
-dzen.ru##[class*="foros"] div[id][class^="feed"] article[aria-label] ~ div
+dzen.ru##[class^="card-part-wrapper"] ~ div[class=""]
 dzen.ru##[class^="dzen-desktop"] ~ div[id$="-popup"]
 dzen.ru##[data-testid="recommend-auth-popup"]
 dzen.ru##aside[id^="article_"][class*="rigght"] > div[class]
@@ -49,3 +57,5 @@ a27498 2
 dzen.ru##div[class*="article__"] > .undefined ~ div[class*="mlildli"] > div[id][class]
 dzen.ru##div[class*="witejjt"] > div[class*="container"] > div ~ div
 d27500 3
+a27666 1
+mail.ru###grid .feed__content
