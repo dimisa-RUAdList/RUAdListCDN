@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 30 May 2024 03:23:52 +0000
-! Diff-Path: ../patches/2024.5.30.203.patch#ruadlist
+! Last modified: Thu, 30 May 2024 08:26:34 +0000
+! Diff-Path: ../patches/2024.5.30.506.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -20975,6 +20975,7 @@ megaobuchalka.ru##div[style="width: 80%; align-items: center;"] > center
 forum.gov-zakupki.ru##div[style="width: 970px; height: 90px;"]
 topasnew24.com##div[style="width:100%; height:275px; display:block"]
 topasnew24.com##div[style="width:100%; height:310px; display:block"]
+profinance.ru##div[style="width:300px"]
 amsterdamtravel.ru##div[style="width:300px;height:200px"]
 riamo.ru##div[style="width:300px;height:500px"]
 topasnew24.com##div[style="width:336px; height:280px; display:block"]
@@ -21653,7 +21654,7 @@ ictv.ua,vikna.tv##div[id^="div-gpt-ad-"]
 !||www.liveinternet.ru/users/$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/cgi-bin/rpls.fcgi?list= https://www.liveinternet.ru/spell/spell.js https://www.liveinternet.ru/share/js/share.js https://www.liveinternet.ru/4Ek/JS/diary/main/nav/regoradd.js https://www.liveinternet.ru/4Ek/JS/diary/trans.js
 !||www.liveinternet.ru/|$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/utf/lici.js https://www.liveinternet.ru/utf/li.js https://www.liveinternet.ru/utf/main_new.js
 ! Pikabu (ловушка для обфускации)
-||pikabu.ru/kl$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/ki$xmlhttprequest,domain=pikabu.ru
 ! селекторы
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
@@ -22869,6 +22870,7 @@ ycyylyd=$popup,domain=dzen.ru
 yhic=$popup,domain=dzen.ru
 yhid=$popup,domain=dzen.ru
 yhyd=$popup,domain=dzen.ru
+ylcyd=$popup,domain=dzen.ru
 ||t.mail.ru/redir/$popup,domain=dzen.ru
 ! Сайты Блокнота
 .php|$third-party,script,domain=bloknot-astrakhan.ru|bloknot-gelendzhik.ru|bloknot-kamyshin.ru|bloknot-krasnodar.ru|bloknot-krymska.ru|bloknot-moldova.ru|bloknot-morozovsk.ru|bloknot-novorossiysk.ru|bloknot-rossosh.ru|bloknot-rostov.ru|bloknot-samara.ru|bloknot-shakhty.ru|bloknot-stavropol.ru|bloknot-taganrog.ru|bloknot-volgodonsk.ru|bloknot-volgograd.ru|bloknot-volzhsky.ru|bloknot-voronezh.ru|bloknot.ru|bloknotanapa.ru|bloknotlipetsk.ru|bloknotsaratov.ru|bloknotsochi.ru|bloknottambov.ru
@@ -27494,12 +27496,13 @@ dzen.ru##[class*="desktop"] ~ [id*="teaser"]
 dzen.ru##[class^="card-part-wrapper"] ~ div[class=""]
 dzen.ru##[class^="dzen-desktop"] ~ div[id$="-popup"]
 dzen.ru##[data-testid="recommend-auth-popup"]
-dzen.ru##aside[id^="article_"][class*="rigght"] > div[class]
+dzen.ru##aside[id^="article_"][class*="rlgght"] > div[class]
 dzen.ru##div[aria-label="Карточка рекомендованного видео"] ~ [aria-label]:not([aria-label="Карточка рекомендованного видео"])
-dzen.ru##div[class*="article__"] > .undefined ~ div[class*="mlildli"] > div[id][class]
-dzen.ru##div[class*="witejjt"] > div[class*="container"] > div ~ div
-dzen.ru##div[class^="feed__"] > div:not([class]) > article:not([aria-label]) > div:first-child ~ div
+dzen.ru##div[class*="article__"] > .undefined ~ div[class*="mlilddli"] > div[id][class]
+dzen.ru##div[class*="witejje"] > div[class*="container"] > div ~ div
 dzen.ru##div[id*="splashscreen"]
+dzen.ru##div[id][class^="feed__"] article:not([aria-label]) > div:first-child ~ div
+dzen.ru##div[id][class^="feed__"] article[aria-label] ~ div[class=""]
 ! ---
 ! игры
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.app__wrapper div[style^="width: calc(100% "]:style(width: unset !important)
