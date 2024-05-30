@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 30 May 2024 08:26:34 +0000
-! Diff-Path: ../patches/2024.5.30.506.patch#ruadlist
+! Last modified: Thu, 30 May 2024 13:22:53 +0000
+! Diff-Path: ../patches/2024.5.30.802.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10364,7 +10364,7 @@ $xmlhttprequest,domain=happy-biock.info|happy-block.info|howto-news.info|mschist
 .zz87.xyz^$script
 /*.json|$third-party,xmlhttprequest,domain=www.mp4upload.com
 /*.mp4$domain=letitbit.net
-/*.php?uid=$script,domain=animevost.org|animevost.top|cartoonka.art|multmania.club|vost.pw
+/*.php?uid=$script,domain=animevost.org|animevost.top|vost.pw
 /*.php|$subdocument,domain=hackware.ru|kali.tools
 /*.php|$third-party,subdocument,domain=rutr.life|rutracker.lib|rutracker.net|rutracker.nl|rutracker.org
 /*/mtm.$domain=inforeactor.ru|nation-news.ru|nevnov.ru|newinform.com|polit.info|politexpert.net|politros.com|riafan.ru|rueconomics.ru|slovodel.com
@@ -10443,7 +10443,6 @@ $xmlhttprequest,domain=happy-biock.info|happy-block.info|howto-news.info|mschist
 /img/wizard.$domain=playmarket-for-pc.com|playmarket-pc.com|roblox-pc.com
 /img/yad*.$domain=softomania.net|warezok.net|windows-driver.com|windows-driver.net|windows-program.com
 /img/yandex$domain=ebooks.skin
-/imgboxer/background$image,domain=cartoonka.art|multmania.club
 /index.php?*=rstbox&$xmlhttprequest,domain=ekovolga.com|imenie-home.ru|news-tape.ru|vamrecipes.ru
 /init.js$third-party,script,domain=3rebenka.ru|dokak.ru|info-zhilish.ru|libok.net|planetatain.ru|sovets.net|vedmochka.net|xn----ctbhcnewrrow6gsa.xn--p1ai
 /inoe/player/*.mp4$domain=erocadr.com|xcadr.tv
@@ -15826,7 +15825,6 @@ porngames.su##.column.last.mini > p
 alser.kz##.columnBanner
 russian.rt.com##.column__row_article-page_right:empty
 transinfo.by##.column_banner-wrap
-cartoonka.art,multmania.club##.com2com > .text ~ span
 tabletki.ua##.com__panel-header
 pcportal.org##.come_d
 news.tj##.comment-area .newsbox-outer-banner
@@ -16020,6 +16018,7 @@ korabel.ru##.direct_elm_footer
 uznayvse.ru##.direct_stat
 newkaliningrad.ru##.discount-side-240
 v-androide.com##.distr-vidget-block
+vc.ru##.distribution
 kinonews.ru##.div1000
 petcare.ua##.divBanners
 kinonews.ru##.div_dzen
@@ -19348,7 +19347,7 @@ megosales.com,otcrytki.com##a[href*="twnt.ru"]
 ucoz.ru##a[href*="ukit-freelance.com"][target="_blank"] > img
 westudents.com.ua##a[href*="ukrskidka.com.ua"]
 1tulatv.ru,animevost.org,animevost.top,bombardir.ru,dwg.ru,ebooktime.net,fex.net,forum.antichat.ru,pc-consultant.ru,programmersforum.ru,rusplt.ru,sport24.ru,traktorist.ua,vost.pw##a[href*="utm_"]
-1plus1.video,1snau.ru,4pda.to,7dach.ru,abw.by,agronews.ua,allbasketball.org,animaunt.org,animedia.tv,anistar.org,app2top.ru,aqua-therm.ru,arsenaltula.ru,astar.bz,autoreview.ru,bez-smenki.ru,cartoonka.art,cy-pr.com,darkermagazine.ru,enovosty.com,euro-football.ru,festima.ru,fishki.net,football.ua,forum.watch.ru,gazeta.uz,gdz.ru,glavagronom.ru,glavpahar.ru,gnatkovsky.com.ua,grippua.com.ua,gsminfo.com.ua,horrorzone.ru,inforeactor.ru,junona.pro,landlord.ua,lgoty-vsem.ru,liveresult.ru,med2.ru,meteo-tv.ru,mezha.media,multmania.club,nachasi.com,news.sportbox.ru,nim.ru,online-star.org,online-stars.org,orelgrad.ru,playground.ru,playmaker24.ru,point.md,pr-cy.ru,prodota.ru,proglib.io,prosports.kg,prosports.kz,riafan.ru,russorosso.ru,rusvesna.su,shkole.net,silver.ru,smartpress.by,solncevo.info,sostav.ua,sovetromantica.com,spafilms.me,sport-express.ru,sport-tv.by,sportsdaily.ru,stratege.ru,tayga.info,thg.ru,topvideo.tj,tt-cup.com,tvmag.ru,uoor.com.ua,val.ua,vandrouki.by,vashurok.ru,vc.ru,vgr.by,vjazhi.ru,vmgu.ru,volnorez.com.ua,www.film.ru,www.fontanka.ru,www.khl.ru,www.zoneofgames.ru,yap.ru,yaplakal.com,zakon.kz##a[href*="utm_campai"]
+1plus1.video,1snau.ru,4pda.to,7dach.ru,abw.by,agronews.ua,allbasketball.org,animaunt.org,animedia.tv,anistar.org,app2top.ru,aqua-therm.ru,arsenaltula.ru,astar.bz,autoreview.ru,bez-smenki.ru,cy-pr.com,darkermagazine.ru,enovosty.com,euro-football.ru,festima.ru,fishki.net,football.ua,forum.watch.ru,gazeta.uz,gdz.ru,glavagronom.ru,glavpahar.ru,gnatkovsky.com.ua,grippua.com.ua,gsminfo.com.ua,horrorzone.ru,inforeactor.ru,junona.pro,landlord.ua,lgoty-vsem.ru,liveresult.ru,med2.ru,meteo-tv.ru,mezha.media,nachasi.com,news.sportbox.ru,nim.ru,online-star.org,online-stars.org,orelgrad.ru,playground.ru,playmaker24.ru,point.md,pr-cy.ru,prodota.ru,proglib.io,prosports.kg,prosports.kz,riafan.ru,russorosso.ru,rusvesna.su,shkole.net,silver.ru,smartpress.by,solncevo.info,sostav.ua,sovetromantica.com,spafilms.me,sport-express.ru,sport-tv.by,sportsdaily.ru,stratege.ru,tayga.info,thg.ru,topvideo.tj,tt-cup.com,tvmag.ru,uoor.com.ua,val.ua,vandrouki.by,vashurok.ru,vc.ru,vgr.by,vjazhi.ru,vmgu.ru,volnorez.com.ua,www.film.ru,www.fontanka.ru,www.khl.ru,www.zoneofgames.ru,yap.ru,yaplakal.com,zakon.kz##a[href*="utm_campai"]
 itc.ua##a[href*="utm_campai"] > img
 tradoman.ru##a[href*="utm_source=partner"][target="_blank"] > img
 utorrentgames.net##a[href*="utorrentgames.net/module.php"]
@@ -25950,11 +25949,6 @@ aces.gg##body:style(background: black !important; cursor: default)
 ! ---
 adme.media##body.ReactModal__Body--open > div[style^="z-index: 999; position: absolute;"]
 adme.media##body.ReactModal__Body--open:style(overflow: auto !important)
-! ---
-! Adultmult и зеркала
-cartoonka.art,multmania.club###wrap[class*="menu"]:style(position: static !important)
-cartoonka.art,multmania.club##body:style(background: black !important)
-cartoonka.art,multmania.club##div[style="clear:both;"] > div[class]:first-child:style(margin-top: 0 !important)
 ! ---
 ag.ru###header-links
 ag.ru###new_logo_helper01:style(top: 0 !important)
