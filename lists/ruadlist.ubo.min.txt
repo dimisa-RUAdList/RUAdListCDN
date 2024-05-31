@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 31 May 2024 09:26:48 +0000
-! Diff-Path: ../patches/2024.5.31.566.patch#ruadlist
+! Last modified: Fri, 31 May 2024 14:21:17 +0000
+! Diff-Path: ../patches/2024.5.31.861.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -9978,6 +9978,7 @@ tonnews.ru##body > div[id^="fancybox"]
 supertabak.ru##body > div[id^="jBox"]
 ruskline.ru##body > div[id^="money"]
 dnpmag.com,trendymen.ru##body > div[id^="popup-"]
+pikabu.ru##body > iframe[src*="redirect_uri"]
 daz3d.ru##body > span[id^="s"][style]
 pinterest.com##div[class*="ScreenBanner"]
 snob.ru##div[class*="popup-eventSubscribe"]
@@ -16896,6 +16897,7 @@ allmoldova.com##.middle_banner
 gazeta.uz##.middleboard
 artfile.ru##.midtizer
 oblgazeta.ru##.miko-baner-center
+medinfo.zp.ua##.min a[target="_blank"][rel="nofollow"] > img
 cheezu.ru##.min-h-90
 select.by##.min-height-200px
 trendymen.ru##.mirtesen-feed
@@ -21384,6 +21386,7 @@ megaimg.ru##script[src^="http://am10.ru/"] + center
 car72.ru##section > .container-fluid > div[style^="width:"][style$="%"]
 stopgame.ru#?#section > div[class^="_content-wrapper_"]:-abp-has(> div > a[href^="/watch"]) ~ div[class^="_content"] a[href^="/to?http"]
 eanews.ru#?#section > section:-abp-has(> [class^="styled__AdvLink-sc-"])
+shuba.life##section.c-post__full > [style="overflow: hidden;"]
 amurmedia.ru,chitamedia.su,chukotkamedia.ru,eaomedia.ru,irkutskmedia.ru,job.ru,kamchatkamedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,magadanmedia.ru,nakhodka.media,newsvl.ru,priamurmedia.ru,primamedia.ru,sakhalinmedia.ru,sevastopolmedia.ru,stavropol.media,tayga.info,tet.tv,ulanmedia.ru,unian.info,unian.net,unian.ua,ussurmedia.ru,vctr.media,yakutiamedia.ru,yugopolis.ru##section.countdown
 tengrinews.kz#?#section:-abp-has(> .ya-news)
 internet-technologies.ru##section[class*="related"]
@@ -22389,6 +22392,7 @@ lenta.ru##.b-board__coef
 lenta.ru##.b-header-inner__banner
 gazeta.ru##.b_telegram
 gazeta.ru,lenta.ru,quto.ru##.banner
+gazeta.ru,lenta.ru##.banner + div[class][id]:last-of-type
 rambler.ru##.banner--container
 championat.com##.banner-parallax
 gazeta.ru##.banners
@@ -22721,7 +22725,7 @@ yandex.by,yandex.kz,yandex.ru,yandex.uz##.b-spec-adv
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.b-yabrowser-promo
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.container__banner
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.content.i-bem > .body__topblocks
-ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.content__left > #search-result > li:-abp-has(> div .organic__subtitle > span:-abp-contains(Реклaма))
+ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.content__left > #search-result > li:-abp-has(> div .organic__subtitle > span:-abp-contains(/Pеклама|Реклама/))
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.content__right > .z-market_right_yes
 ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.content__right div[class][data-log-node]:-abp-has([data-vnl*="/_crpd/"])
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.direct-view
@@ -22790,6 +22794,7 @@ yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.page__result .typo:-abp-contains(/^н
 translate.yandex.by,translate.yandex.kz,translate.yandex.ru,translate.yandex.uz##.sidebar-direct
 disk.yandex.by,disk.yandex.kz,disk.yandex.ru,disk.yandex.uz##.software-header-promo
 docviewer.yandex.by,docviewer.yandex.kz,docviewer.yandex.ru,docviewer.yandex.uz##.with-bottom-direct > div[class] > div[class]:empty
+mail.yandex.by,mail.yandex.com,mail.yandex.kz,mail.yandex.ru,mail.yandex.uz#?#[data-key="box=left-box"]:-abp-has(> [data-key="view=react-left-column"] + div:empty) a[href*="/premium-"]
 disk.yandex.by,disk.yandex.kz,disk.yandex.ru,disk.yandex.uz##a[href][style*="storage.mds.yandex.net/get-bstor/"]
 travel.yandex.ru##div.root[id]:empty
 mail.yandex.by,mail.yandex.com,mail.yandex.kz,mail.yandex.ru,mail.yandex.uz##div[class*="DirectLine"]
@@ -22869,6 +22874,7 @@ ycyylyd=$popup,domain=dzen.ru
 yhic=$popup,domain=dzen.ru
 yhid=$popup,domain=dzen.ru
 yhyd=$popup,domain=dzen.ru
+ylclyd=$popup,domain=dzen.ru
 ylcyd=$popup,domain=dzen.ru
 ||t.mail.ru/redir/$popup,domain=dzen.ru
 ! Сайты Блокнота
@@ -27482,7 +27488,6 @@ dzen.ru##div[class^="dzen-wrapper-with-top-content-desktop__topContent-"] div[cl
 dzen.ru##div[class^="dzen-wrapper-with-top-content-desktop__topContent-"]:style(grid-template-columns: inherit !important)
 dzen.ru##div[id][class$="__ad"]
 ! обфускация
-dzen.ru##._feed-type_article_showcase article:not([class*="card-"])
 dzen.ru##._is-for-video-floor
 dzen.ru##.article-page-layout div[class*="-top-"] > div[class*="_position_"]
 dzen.ru##.viewer-layout__content div[class*="-player "][aria-label] ~ div:not([class])
@@ -27492,6 +27497,7 @@ dzen.ru##[class^="dzen-desktop"] ~ div[id$="-popup"]
 dzen.ru##[data-testid="recommend-auth-popup"]
 dzen.ru##aside[id^="article_"][class*="rlgght"] > div[class]
 dzen.ru##div[aria-label="Карточка рекомендованного видео"] ~ [aria-label]:not([aria-label="Карточка рекомендованного видео"])
+dzen.ru##div[class*="_feed-type_article_"] article:not([class*="card-"])
 dzen.ru##div[class*="article__"] > .undefined ~ div[class*="mlilddli"] > div[id][class]
 dzen.ru##div[class*="witejje"] > div[class*="container"] > div ~ div
 dzen.ru##div[id*="splashscreen"]
