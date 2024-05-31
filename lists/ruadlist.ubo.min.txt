@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 31 May 2024 14:21:17 +0000
-! Diff-Path: ../patches/2024.5.31.861.patch#ruadlist
+! Last modified: Fri, 31 May 2024 19:17:16 +0000
+! Diff-Path: ../patches/2024.5.31.1157.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -3924,6 +3924,7 @@
 ||muzile.ru^$third-party
 ||muzokit.ru^
 ||muzomuz.ru^
+||muzotur.info^$third-party
 ||muzrutu.ru^$third-party
 ||mv6sajryr.net^$third-party
 ||mvozne.info^$third-party
@@ -13010,6 +13011,8 @@ lada.kz/uploads/banners/
 ||torrentinka.me/templates/Default/images/prestol
 ||torrentporno.ru/jrt-$script
 ||tort.fm/banners/
+||tourdom.ru/_ad/
+||tourdom.ru/_nuxt/img/*X*_$image
 ||tourister.ru/query.php*=adver-$xmlhttprequest
 ||tproger.ru/_nuxt/LubokTop.
 ||tproger.ru/wp-node/*/rupor/get?link=
@@ -15679,7 +15682,7 @@ kerch.fm##.branners
 s13.ru##.brb
 gdzbot.com##.breadcrumbs ~ [value*="://gdz-ru.work/"] ~ #exercises
 av.by##.break
-multmer.org##.brend
+multmer.org,tourdom.ru##.brend
 cpainform.ru##.brendingBg
 stalkermod.ru##.britem
 znanija.com##.brn-ads-box
@@ -18217,7 +18220,7 @@ panzer35.ru##.topLink a[href*="ruscale.ru"]
 sexytal.com,sexytales.ru##.top_a
 magical-skin.com##.top_baner
 deti-obninsk.ru##.top_baners > a[href][target="_blank"]:not([href^="/deti/index.php"])
-banana.by,bigmir.net,cntime.cn.ua,football24.ru,inedelya.ru,maulnet.ru,meteo-tv.ru,vse-sto.com.ua##.top_banner
+banana.by,bigmir.net,cntime.cn.ua,football24.ru,inedelya.ru,maulnet.ru,meteo-tv.ru,tourdom.ru,vse-sto.com.ua##.top_banner
 partnerkin.com##.top_banner_box
 autodmir.ru##.top_banner_hidder
 artofcare.ru,forum.fonarevka.ru,twogarin.info##.top_banners
@@ -22574,6 +22577,7 @@ sports.ru##.high-adload-container
 sports.ru##.in-read-placement
 sports.ru##.in-read-yadv
 sports.ru##.js-ad-label
+sports.ru##.layout__branding
 cyber.sports.ru##.match-teaser__betting-bar
 sports.ru#?#.material-list__item:-abp-has(.content-label:-abp-contains(/Реклама|Pеклама/))
 sports.ru##.middle-banner-place
@@ -22874,6 +22878,7 @@ ycyylyd=$popup,domain=dzen.ru
 yhic=$popup,domain=dzen.ru
 yhid=$popup,domain=dzen.ru
 yhyd=$popup,domain=dzen.ru
+yiclyd=$popup,domain=dzen.ru
 ylclyd=$popup,domain=dzen.ru
 ylcyd=$popup,domain=dzen.ru
 ||t.mail.ru/redir/$popup,domain=dzen.ru
@@ -24847,7 +24852,7 @@ ntsk.ru#@#.adsinfo
 blag-vesti.ru#@#.adslot_1
 vtomske.ru#@#.adtable
 kvartirant.by#@#.adtxt
-board.sibnet.ru,fridger.com.ua,hawk.ru,hmgma.ru,openbudget.gfu.ru,pcradio.ru,postiralka.com.ua,school.kupiltovar.ru,servkino.ru,siproen.ru,sovcombank.ru,tehnika4u.ru,tourdom.ru#@#.adv
+board.sibnet.ru,fridger.com.ua,hawk.ru,hmgma.ru,openbudget.gfu.ru,pcradio.ru,postiralka.com.ua,school.kupiltovar.ru,servkino.ru,siproen.ru,sovcombank.ru,tehnika4u.ru#@#.adv
 school.kupiltovar.ru#@#.adv-4
 azartcash.com,twite.ru#@#.adv-block
 fiberdevice.ru#@#.adv-header
