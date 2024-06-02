@@ -1,8 +1,10 @@
-diff name:ruadlist lines:87 checksum:4fd1c3eb95
+diff name:ruadlist lines:96 checksum:5a1bb1d968
 d4 2
 a5 2
-! Last modified: Sun, 02 Jun 2024 06:28:20 +0000
-! Diff-Path: ../patches/2024.6.2.388.patch#ruadlist
+! Last modified: Sun, 02 Jun 2024 11:18:02 +0000
+! Diff-Path: ../patches/2024.6.2.678.patch#ruadlist
+a2351 1
+||golynx.tech^$third-party
 a3926 1
 ||muzotur.info^$third-party
 d9843 1
@@ -38,6 +40,11 @@ medinfo.zp.ua##.min a[target="_blank"][rel="nofollow"] > img
 d18220 1
 a18220 1
 banana.by,bigmir.net,cntime.cn.ua,football24.ru,inedelya.ru,maulnet.ru,meteo-tv.ru,tourdom.ru,vse-sto.com.ua##.top_banner
+a18505 1
+players.com.ua##.wp-block-image > figure img[height="160"]
+d18653 1
+a18653 1
+amic.ru,anime-bit.ru,hi-fi.ru,inflora.ru,lifenews.ru,lifenews78.ru,obozrevatel.com,opticlub.org,players.com.ua,podrobnosti.ua,ua-independent.com,vbryanske.com##[class*="banner"]
 d18973 1
 d19353 1
 a19353 1
@@ -63,13 +70,14 @@ a22571 1
 sports.ru##.layout__branding
 d22723 1
 a22723 1
-ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.content__left > #search-result > li:-abp-has(> div .organic__subtitle > span:-abp-contains(/Pеклама|Реклама/))
+ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.content__left > #search-result > li:-abp-has(> div .organic__subtitle > span:-abp-contains(/[РPeеклама]{7}/))
 a22791 1
 mail.yandex.by,mail.yandex.com,mail.yandex.kz,mail.yandex.ru,mail.yandex.uz#?#[data-key="box=left-box"]:-abp-has(> [data-key="view=react-left-column"] + div:empty) a[href*="/premium-"]
-a22870 3
+a22870 4
 yiclyd=$popup,domain=dzen.ru
 ylclyd=$popup,domain=dzen.ru
 ylcyd=$popup,domain=dzen.ru
+yyclyd=$popup,domain=dzen.ru
 d24842 1
 a24842 1
 board.sibnet.ru,fridger.com.ua,hawk.ru,hmgma.ru,openbudget.gfu.ru,pcradio.ru,postiralka.com.ua,school.kupiltovar.ru,servkino.ru,siproen.ru,sovcombank.ru,tehnika4u.ru#@#.adv
@@ -79,9 +87,10 @@ d27496 1
 a27496 1
 dzen.ru##aside[id^="article_"][class*="rlgght"] > div[class]
 d27498 3
-a27500 3
+a27500 4
 dzen.ru##div[class*="_feed-type_article_"] article:not([class*="card-"])
 dzen.ru##div[class*="article__"] > .undefined ~ div[class*="mlilddli"] > div[id][class]
+dzen.ru##div[class*="isFloorsFeed"] ~ article[id] ~ article:not([id])
 dzen.ru##div[class*="witejje"] > div[class*="container"] > div ~ div
 a27501 2
 dzen.ru##div[id][class^="feed__"] article:not([aria-label]) > div:first-child ~ div

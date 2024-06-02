@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 02 Jun 2024 06:28:20 +0000
-! Diff-Path: ../patches/2024.6.2.388.patch#ruadlist
+! Last modified: Sun, 02 Jun 2024 11:18:02 +0000
+! Diff-Path: ../patches/2024.6.2.678.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -2349,6 +2349,7 @@
 ||gogolusin.site^$third-party
 ||gogoway.ru^$third-party
 ||gokliks.ru^
+||golynx.tech^$third-party
 ||gomakemerich1.com^
 ||gomakemerich2.com^
 ||gomiligh.pro^$third-party
@@ -18506,6 +18507,7 @@ thelastgame.ru##.wogame55
 portal.lviv.ua##.wonderpluginslider-container
 showfilm.club##.work
 livecars.ru##.wow_box
+players.com.ua##.wp-block-image > figure img[height="160"]
 levashove.ru##.wp-block-spacer
 travel3.ru##.wpInsert
 experttur.com##.wp_baraban_like
@@ -18653,7 +18655,7 @@ argumenti.ru##[class*="adv_"]
 androidinsider.ru,appleinsider.ru,hi-news.ru##[class*="af_advert_"]
 drive.ru##[class*="autoRu"]
 drive.ru##[class*="autoRu"] + .hr
-amic.ru,anime-bit.ru,hi-fi.ru,inflora.ru,lifenews.ru,lifenews78.ru,obozrevatel.com,opticlub.org,podrobnosti.ua,ua-independent.com,vbryanske.com##[class*="banner"]
+amic.ru,anime-bit.ru,hi-fi.ru,inflora.ru,lifenews.ru,lifenews78.ru,obozrevatel.com,opticlub.org,players.com.ua,podrobnosti.ua,ua-independent.com,vbryanske.com##[class*="banner"]
 vedomosti.ru#?#[class*="banner"]:-abp-has(.teaser-commerce)
 info.sibnet.ru##[class*="banner__brand"]
 disgustingmen.com##[class*="bg_banner"]
@@ -22729,7 +22731,7 @@ yandex.by,yandex.kz,yandex.ru,yandex.uz##.b-spec-adv
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.b-yabrowser-promo
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.container__banner
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.content.i-bem > .body__topblocks
-ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.content__left > #search-result > li:-abp-has(> div .organic__subtitle > span:-abp-contains(/Pеклама|Реклама/))
+ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.content__left > #search-result > li:-abp-has(> div .organic__subtitle > span:-abp-contains(/[РPeеклама]{7}/))
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.content__right > .z-market_right_yes
 ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.content__right div[class][data-log-node]:-abp-has([data-vnl*="/_crpd/"])
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.direct-view
@@ -22881,6 +22883,7 @@ yhyd=$popup,domain=dzen.ru
 yiclyd=$popup,domain=dzen.ru
 ylclyd=$popup,domain=dzen.ru
 ylcyd=$popup,domain=dzen.ru
+yyclyd=$popup,domain=dzen.ru
 ||t.mail.ru/redir/$popup,domain=dzen.ru
 ! Сайты Блокнота
 .php|$third-party,script,domain=bloknot-astrakhan.ru|bloknot-gelendzhik.ru|bloknot-kamyshin.ru|bloknot-krasnodar.ru|bloknot-krymska.ru|bloknot-moldova.ru|bloknot-morozovsk.ru|bloknot-novorossiysk.ru|bloknot-rossosh.ru|bloknot-rostov.ru|bloknot-samara.ru|bloknot-shakhty.ru|bloknot-stavropol.ru|bloknot-taganrog.ru|bloknot-volgodonsk.ru|bloknot-volgograd.ru|bloknot-volzhsky.ru|bloknot-voronezh.ru|bloknot.ru|bloknotanapa.ru|bloknotlipetsk.ru|bloknotsaratov.ru|bloknotsochi.ru|bloknottambov.ru
@@ -27504,6 +27507,7 @@ dzen.ru##aside[id^="article_"][class*="rlgght"] > div[class]
 dzen.ru##div[aria-label="Карточка рекомендованного видео"] ~ [aria-label]:not([aria-label="Карточка рекомендованного видео"])
 dzen.ru##div[class*="_feed-type_article_"] article:not([class*="card-"])
 dzen.ru##div[class*="article__"] > .undefined ~ div[class*="mlilddli"] > div[id][class]
+dzen.ru##div[class*="isFloorsFeed"] ~ article[id] ~ article:not([id])
 dzen.ru##div[class*="witejje"] > div[class*="container"] > div ~ div
 dzen.ru##div[id*="splashscreen"]
 dzen.ru##div[id][class^="feed__"] article:not([aria-label]) > div:first-child ~ div

@@ -1,8 +1,10 @@
-diff name:ruadlist lines:65 checksum:4fd1c3eb95
+diff name:ruadlist lines:74 checksum:5a1bb1d968
 d4 2
 a5 2
-! Last modified: Sun, 02 Jun 2024 06:28:20 +0000
-! Diff-Path: ../patches/2024.6.2.388.patch#ruadlist
+! Last modified: Sun, 02 Jun 2024 11:18:02 +0000
+! Diff-Path: ../patches/2024.6.2.678.patch#ruadlist
+a2351 1
+||golynx.tech^$third-party
 a3926 1
 ||muzotur.info^$third-party
 a9980 1
@@ -25,6 +27,11 @@ medinfo.zp.ua##.min a[target="_blank"][rel="nofollow"] > img
 d18219 1
 a18219 1
 banana.by,bigmir.net,cntime.cn.ua,football24.ru,inedelya.ru,maulnet.ru,meteo-tv.ru,tourdom.ru,vse-sto.com.ua##.top_banner
+a18504 1
+players.com.ua##.wp-block-image > figure img[height="160"]
+d18652 1
+a18652 1
+amic.ru,anime-bit.ru,hi-fi.ru,inflora.ru,lifenews.ru,lifenews78.ru,obozrevatel.com,opticlub.org,players.com.ua,podrobnosti.ua,ua-independent.com,vbryanske.com##[class*="banner"]
 d19351 1
 a19351 1
 1plus1.video,1snau.ru,4pda.to,7dach.ru,abw.by,agronews.ua,allbasketball.org,animaunt.org,animedia.tv,anistar.org,app2top.ru,aqua-therm.ru,arsenaltula.ru,astar.bz,autoreview.ru,bez-smenki.ru,cy-pr.com,darkermagazine.ru,enovosty.com,euro-football.ru,festima.ru,fishki.net,football.ua,forum.watch.ru,gazeta.uz,gdz.ru,glavagronom.ru,glavpahar.ru,gnatkovsky.com.ua,grippua.com.ua,gsminfo.com.ua,horrorzone.ru,inforeactor.ru,junona.pro,landlord.ua,lgoty-vsem.ru,liveresult.ru,med2.ru,meteo-tv.ru,mezha.media,nachasi.com,news.sportbox.ru,nim.ru,online-star.org,online-stars.org,orelgrad.ru,playground.ru,playmaker24.ru,point.md,pr-cy.ru,prodota.ru,proglib.io,prosports.kg,prosports.kz,riafan.ru,russorosso.ru,rusvesna.su,shkole.net,silver.ru,smartpress.by,solncevo.info,sostav.ua,sovetromantica.com,spafilms.me,sport-express.ru,sport-tv.by,sportsdaily.ru,stratege.ru,tayga.info,thg.ru,topvideo.tj,tt-cup.com,tvmag.ru,uoor.com.ua,val.ua,vandrouki.by,vashurok.ru,vc.ru,vgr.by,vjazhi.ru,vmgu.ru,volnorez.com.ua,www.film.ru,www.fontanka.ru,www.khl.ru,www.zoneofgames.ru,yap.ru,yaplakal.com,zakon.kz##a[href*="utm_campai"]
@@ -41,13 +48,14 @@ a22572 1
 sports.ru##.layout__branding
 d22724 1
 a22724 1
-ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.content__left > #search-result > li:-abp-has(> div .organic__subtitle > span:-abp-contains(/Pеклама|Реклама/))
+ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.content__left > #search-result > li:-abp-has(> div .organic__subtitle > span:-abp-contains(/[РPeеклама]{7}/))
 a22792 1
 mail.yandex.by,mail.yandex.com,mail.yandex.kz,mail.yandex.ru,mail.yandex.uz#?#[data-key="box=left-box"]:-abp-has(> [data-key="view=react-left-column"] + div:empty) a[href*="/premium-"]
-a22871 3
+a22871 4
 yiclyd=$popup,domain=dzen.ru
 ylclyd=$popup,domain=dzen.ru
 ylcyd=$popup,domain=dzen.ru
+yyclyd=$popup,domain=dzen.ru
 d24843 1
 a24843 1
 board.sibnet.ru,fridger.com.ua,hawk.ru,hmgma.ru,openbudget.gfu.ru,pcradio.ru,postiralka.com.ua,school.kupiltovar.ru,servkino.ru,siproen.ru,sovcombank.ru,tehnika4u.ru#@#.adv
@@ -57,9 +65,10 @@ d27497 1
 a27497 1
 dzen.ru##aside[id^="article_"][class*="rlgght"] > div[class]
 d27499 3
-a27501 3
+a27501 4
 dzen.ru##div[class*="_feed-type_article_"] article:not([class*="card-"])
 dzen.ru##div[class*="article__"] > .undefined ~ div[class*="mlilddli"] > div[id][class]
+dzen.ru##div[class*="isFloorsFeed"] ~ article[id] ~ article:not([id])
 dzen.ru##div[class*="witejje"] > div[class*="container"] > div ~ div
 a27502 2
 dzen.ru##div[id][class^="feed__"] article:not([aria-label]) > div:first-child ~ div
