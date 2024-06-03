@@ -1,8 +1,8 @@
-diff name:ruadlist lines:65 checksum:e8a1a3646a
+diff name:ruadlist lines:69 checksum:96af4a71f8
 d4 2
 a5 2
-! Last modified: Mon, 03 Jun 2024 12:39:55 +0000
-! Diff-Path: ../patches/2024.6.3.759.patch#ruadlist
+! Last modified: Mon, 03 Jun 2024 17:20:54 +0000
+! Diff-Path: ../patches/2024.6.3.1040.patch#ruadlist
 a345 1
 ||adx.com.ru^$third-party
 a1074 1
@@ -45,13 +45,17 @@ a22572 1
 sports.ru##.layout__branding
 d22724 1
 a22724 1
-ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.content__left > #search-result > li:-abp-has(> div .organic__subtitle > span:-abp-contains(/[РPeеклама]{7}/))
+ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.content__left > #search-result > li:-abp-has(> div .organic__subtitle > span:-abp-contains(/[РPeекламa]{6,7}/))
+d22726 1
+a22726 1
+ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.content__right div[class][data-log-node]:-abp-has(.DirectInlineContainer)
 a22792 1
 mail.yandex.by,mail.yandex.com,mail.yandex.kz,mail.yandex.ru,mail.yandex.uz#?#[data-key="box=left-box"]:-abp-has(> [data-key="view=react-left-column"] + div:empty) a[href*="/premium-"]
 a22871 2
 yiclyd=$popup,domain=dzen.ru
 ylclyd=$popup,domain=dzen.ru
-a22872 1
+a22872 2
+yycliyd=$popup,domain=dzen.ru
 yyclyd=$popup,domain=dzen.ru
 d24844 1
 a24844 1
