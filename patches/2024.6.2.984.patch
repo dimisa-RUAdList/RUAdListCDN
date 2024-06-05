@@ -1,8 +1,8 @@
-diff name:ruadlist lines:38 checksum:f222bbfbce
+diff name:ruadlist lines:56 checksum:2f4f283191
 d4 2
 a5 2
-! Last modified: Wed, 05 Jun 2024 09:25:46 +0000
-! Diff-Path: ../patches/2024.6.5.565.patch#ruadlist
+! Last modified: Wed, 05 Jun 2024 14:23:58 +0000
+! Diff-Path: ../patches/2024.6.5.863.patch#ruadlist
 a345 1
 ||adx.com.ru^$third-party
 a1074 1
@@ -13,6 +13,14 @@ a10382 1
 a11108 1
 ||cyberforum.ru/images/ads/
 d12768 1
+a15052 1
+gotennis.ru##.articles-special
+d15658 1
+a15658 1
+abw.by,agropolit.com,egamersworld.com,elevatorist.com,filmozavr.com,filmozavr.net,gotennis.ru,inoprosport.ru,kinopati.ru,lada-granta.net,latifundist.com,lkforum.ru,myshows.me,old.myshows.me,osp.ru,podfm.ru,popcornnews.ru,psm7.com,superagronom.com,zemliak.com##.branding
+a16013 1
+direct.farm##.desktop-context > div[class*="_cover_"]
+d16298 1
 d17158 1
 a18987 1
 cyberforum.ru#?#[style^="margin: 3px 0px"]:-abp-has(script)
@@ -22,13 +30,18 @@ a19082 1
 d19237 1
 a19237 1
 animeonline.cc,flapler.com,korsars.pro,mods-game.net,mywebpc.ru,rufonts.ru,soft-portal.club,vc.ru##a[href*="clck.ru"]
+d20342 1
+a20342 1
+direct.farm,myplaycity.ru##div[class^="advertisement"]
+a20533 1
+direct.farm#?#div[class^="stories_container"] > div[class^="stories_story"]:-abp-has(> [class^="stories_story_banner"])
 d20698 1
 d20768 1
 d21116 1
 d21448 1
 d21665 1
 a21665 1
-||pikabu.ru/dk$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/mk$xmlhttprequest,domain=pikabu.ru
 d22735 1
 a22735 1
 ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.content__left > #search-result > li:-abp-has(> div .organic__subtitle > span:-abp-contains(/[РPeекламa]{6,7}/))
@@ -37,3 +50,8 @@ a22737 1
 ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.content__right div[class][data-log-node]:-abp-has(.DirectInlineContainer)
 a22886 1
 yycliyd=$popup,domain=dzen.ru
+a26506 2
+gotennis.ru##.page:style(padding-top: 0 !important)
+! ---
+a28128 1
+direct.farm##+js(set-cookie, callToRegisterClosed, true)

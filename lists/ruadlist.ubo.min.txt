@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 05 Jun 2024 09:25:46 +0000
-! Diff-Path: ../patches/2024.6.5.565.patch#ruadlist
+! Last modified: Wed, 05 Jun 2024 14:23:58 +0000
+! Diff-Path: ../patches/2024.6.5.863.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -15052,6 +15052,7 @@ otvetkak.ru##.article_openx
 banker.ua##.article_sidebar > div[class="textwidget"]
 nick-name.ru##.articles
 psychologies.ru##.articles-page__banners_wrapper
+gotennis.ru##.articles-special
 partnerkin.com#?#.articles_list_inner > div:-abp-has(> .sdv-box)
 1000.menu##.as-ad-step
 shazoo.ru##.aside > .grid > div > img[alt="Shazoo @ Yandex.Zen"]
@@ -15657,7 +15658,7 @@ citydog.by##.brandLink
 ekaraganda.kz##.brand_a
 harpersbazaar.com.ua##.brand_left
 harpersbazaar.com.ua##.brand_right
-abw.by,agropolit.com,egamersworld.com,elevatorist.com,filmozavr.com,filmozavr.net,inoprosport.ru,kinopati.ru,lada-granta.net,latifundist.com,lkforum.ru,myshows.me,old.myshows.me,osp.ru,podfm.ru,popcornnews.ru,psm7.com,superagronom.com,zemliak.com##.branding
+abw.by,agropolit.com,egamersworld.com,elevatorist.com,filmozavr.com,filmozavr.net,gotennis.ru,inoprosport.ru,kinopati.ru,lada-granta.net,latifundist.com,lkforum.ru,myshows.me,old.myshows.me,osp.ru,podfm.ru,popcornnews.ru,psm7.com,superagronom.com,zemliak.com##.branding
 tut.by##.branding > a
 3dtoday.ru##.branding-banner
 banki.ru##.branding-bg
@@ -16013,6 +16014,7 @@ qwe.ru##.default_menu > div:first-child
 botanam.net,gdzputina.me##.desctop
 ixbt.com,ixbt.market##.deskadv
 hromadske.radio##.desktop-banner
+direct.farm##.desktop-context > div[class*="_cover_"]
 euroki.org##.desktop_banners
 flashscore.com.ua,flashscore.ru.com,flashscore.ua,flashscorekz.com,livescore.in,soccerstand.com##.detailLeaderboard
 camtasia.com.ua##.details > a[href="http://gamelion.net/"]
@@ -16297,7 +16299,6 @@ semerkainfo.ru##.gensmall > .block_links
 iz.ru#?#.get_news_link__bottom__item:-abp-has(> a[href*="yandex."])
 iz.ru##.get_yandex_subscription_links
 footboom.com,footboom.kz##.gift
-gotennis.ru##.gift-a_header
 bobsoccer.ru##.gift-banner
 euro-football.ru,fight.ru##.gift-block
 liveinternet.ru##.gifts
@@ -20341,7 +20342,7 @@ kommersant.ru##div[class^="adv_"]
 allsportlinks.com##div[class^="adver_"]
 skolkovarim.com##div[class^="adverser"]
 boxrec.com,iphones.ru,lovitut.ru,pc.ru##div[class^="advert"]
-myplaycity.ru##div[class^="advertisement"]
+direct.farm,myplaycity.ru##div[class^="advertisement"]
 rau.ua,zn.ua##div[class^="advertising"]
 dfm.ru,hitfm.ru,maximum.ru,montecarlo.ru,rusradio.ru##div[class^="advertising-"][class*="-popup-overlay"]
 multoigri.ru##div[class^="advertising-content-"]
@@ -20533,6 +20534,7 @@ shikimori.me,shikimori.one,shikimori.org##div[class^="spns"]
 cybersport.ru##div[class^="sponsor"]
 sci-fi-news.ru##div[class^="sreda"]
 infoyarsk.com##div[class^="sticky-block"]
+direct.farm#?#div[class^="stories_container"] > div[class^="stories_story"]:-abp-has(> [class^="stories_story_banner"])
 provladimir.ru##div[class^="stream-item"]
 4rama.com##div[class^="strus"]
 autotopik.ru##div[class^="stuleblok"]
@@ -21660,7 +21662,7 @@ ictv.ua,vikna.tv##div[id^="div-gpt-ad-"]
 !||www.liveinternet.ru/users/$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/cgi-bin/rpls.fcgi?list= https://www.liveinternet.ru/spell/spell.js https://www.liveinternet.ru/share/js/share.js https://www.liveinternet.ru/4Ek/JS/diary/main/nav/regoradd.js https://www.liveinternet.ru/4Ek/JS/diary/trans.js
 !||www.liveinternet.ru/|$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/utf/lici.js https://www.liveinternet.ru/utf/li.js https://www.liveinternet.ru/utf/main_new.js
 ! Pikabu (ловушка для обфускации)
-||pikabu.ru/dk$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/mk$xmlhttprequest,domain=pikabu.ru
 ! селекторы
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
@@ -26503,6 +26505,8 @@ goodfon.ru##.wallpapers > [class^="wallpapers__item"]:style(margin-right: unset 
 ! ---
 goodgame.ru##.main-block .main-inner-wrap:style(margin-top: 0 !important)
 ! ---
+gotennis.ru##.page:style(padding-top: 0 !important)
+! ---
 ! Франшиза Gorodor.ru
 kaluga-poisk.ru,yasniy-city.ru,yola-poisk.ru##body:not(#id):style(background: whitesmoke !important)
 ! ---
@@ -28125,6 +28129,7 @@ rambler.ru##+js(set-constant, top100Counter, false)
 1tv.ru##+js(set-constant, window.EUMP.plugins.antiblock, noopFunc)
 remont-aud.net##+js(set-constant, window.ab, false)
 kufar.by##+js(set-cookie, KUF_SUGGESTER_SHOW_2_ITERATION, 1)
+direct.farm##+js(set-cookie, callToRegisterClosed, true)
 liga.net##+js(set-cookie, cookieAccepted, true)
 ixbt.com##+js(set-cookie, cookie_accept, 1)
 forum.ixbt.com##+js(set-cookie, ha, 1)

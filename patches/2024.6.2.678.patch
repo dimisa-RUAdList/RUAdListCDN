@@ -1,8 +1,8 @@
-diff name:ruadlist lines:46 checksum:f222bbfbce
+diff name:ruadlist lines:64 checksum:2f4f283191
 d4 2
 a5 2
-! Last modified: Wed, 05 Jun 2024 09:25:46 +0000
-! Diff-Path: ../patches/2024.6.5.565.patch#ruadlist
+! Last modified: Wed, 05 Jun 2024 14:23:58 +0000
+! Diff-Path: ../patches/2024.6.5.863.patch#ruadlist
 a345 1
 ||adx.com.ru^$third-party
 a1074 1
@@ -16,6 +16,14 @@ d12768 1
 d14858 1
 a14858 1
 024.by,1927.kiev.ua,1plus1.video,allnews.kz,bigpicture.ru,chatadelic.net,coderoad.ru,day.az,euromd.com.ua,football-fun.ru,fotokto.ru,gagadget.com,gameme.eu,gotoshop.ua,gs.by,gsconto.com,hotzoom.net,icons8.ru,infoniac.ru,jooble.org,jooble.ua,kinoafisha.info,klubok.com,like-film.online,malenkiy.ru,mangalib.me,meta.ua,my-calend.ru,novostiplanety.ru,orl.ec,podrobnosti.ua,savevideo.me,scooter-remont.com,seasonvar24.com,sexytales.org,soccer.ru,sports.kz,takprosto.cc,timeout.ru,tvsezon.com,ura.news,world-knigi.ru,yaoilib.me##.ads
+a15052 1
+gotennis.ru##.articles-special
+d15658 1
+a15658 1
+abw.by,agropolit.com,egamersworld.com,elevatorist.com,filmozavr.com,filmozavr.net,gotennis.ru,inoprosport.ru,kinopati.ru,lada-granta.net,latifundist.com,lkforum.ru,myshows.me,old.myshows.me,osp.ru,podfm.ru,popcornnews.ru,psm7.com,superagronom.com,zemliak.com##.branding
+a16013 1
+direct.farm##.desktop-context > div[class*="_cover_"]
+d16298 1
 a16632 1
 ranobelib.me##.ko_bz
 d17157 1
@@ -27,13 +35,18 @@ a19081 1
 d19236 1
 a19236 1
 animeonline.cc,flapler.com,korsars.pro,mods-game.net,mywebpc.ru,rufonts.ru,soft-portal.club,vc.ru##a[href*="clck.ru"]
+d20341 1
+a20341 1
+direct.farm,myplaycity.ru##div[class^="advertisement"]
+a20532 1
+direct.farm#?#div[class^="stories_container"] > div[class^="stories_story"]:-abp-has(> [class^="stories_story_banner"])
 d20697 1
 d20767 1
 d21115 1
 d21447 1
 d21664 1
 a21664 1
-||pikabu.ru/dk$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/mk$xmlhttprequest,domain=pikabu.ru
 d22734 1
 a22734 1
 ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.content__left > #search-result > li:-abp-has(> div .organic__subtitle > span:-abp-contains(/[РPeекламa]{6,7}/))
@@ -45,3 +58,8 @@ yycliyd=$popup,domain=dzen.ru
 d25125 1
 a25125 1
 @@||com/banners/$domain=eurobank-ua.com|maingear.com
+a26505 2
+gotennis.ru##.page:style(padding-top: 0 !important)
+! ---
+a28127 1
+direct.farm##+js(set-cookie, callToRegisterClosed, true)
