@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 06 Jun 2024 10:24:55 +0000
-! Diff-Path: ../patches/2024.6.6.624.patch#ruadlist
+! Last modified: Thu, 06 Jun 2024 15:23:35 +0000
+! Diff-Path: ../patches/2024.6.6.923.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -16027,7 +16027,7 @@ korabel.ru##.direct_elm_footer
 uznayvse.ru##.direct_stat
 newkaliningrad.ru##.discount-side-240
 v-androide.com##.distr-vidget-block
-vc.ru##.distribution
+dtf.ru,vc.ru##.distribution
 kinonews.ru##.div1000
 petcare.ua##.divBanners
 kinonews.ru##.div_dzen
@@ -21662,7 +21662,7 @@ ictv.ua,vikna.tv##div[id^="div-gpt-ad-"]
 !||www.liveinternet.ru/users/$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/cgi-bin/rpls.fcgi?list= https://www.liveinternet.ru/spell/spell.js https://www.liveinternet.ru/share/js/share.js https://www.liveinternet.ru/4Ek/JS/diary/main/nav/regoradd.js https://www.liveinternet.ru/4Ek/JS/diary/trans.js
 !||www.liveinternet.ru/|$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/utf/lici.js https://www.liveinternet.ru/utf/li.js https://www.liveinternet.ru/utf/main_new.js
 ! Pikabu (ловушка для обфускации)
-||pikabu.ru/mk$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/mm$xmlhttprequest,domain=pikabu.ru
 ! селекторы
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
@@ -22860,32 +22860,31 @@ dzen.ru##div[class^="dzen-mobile__"] > div[id$="-fullscreen"]
 dzen.ru##div[class^="dzen-mobile__topContentBackgroundBottom"]
 dzen.ru##div[style*=" !important; "][style$=" !important;"]
 ! переходы
+/*ychid=$popup,domain=dzen.ru
+/*ychyd=$popup,domain=dzen.ru
+/*yciild=$popup,domain=dzen.ru
+/*ycilid=$popup,domain=dzen.ru
+/*ycilyd=$popup,domain=dzen.ru
+/*ycld=$popup,domain=dzen.ru
+/*yclid=$popup,domain=dzen.ru
+/*ycliid=$popup,domain=dzen.ru
+/*ycliyd=$popup,domain=dzen.ru
+/*yclyd=$popup,domain=dzen.ru
+/*yclyyd=$popup,domain=dzen.ru
+/*ycyd=$popup,domain=dzen.ru
+/*ycyid=$popup,domain=dzen.ru
+/*ycylid=$popup,domain=dzen.ru
+/*ycylyd=$popup,domain=dzen.ru
+/*ycyyld=$popup,domain=dzen.ru
+/*ycyylid=$popup,domain=dzen.ru
+/*ycyylyd=$popup,domain=dzen.ru
+/*yhic=$popup,domain=dzen.ru
+/*yhid=$popup,domain=dzen.ru
+/*yhyd=$popup,domain=dzen.ru
+/*yiclyd=$popup,domain=dzen.ru
+/*ylclyd=$popup,domain=dzen.ru
+/*ylcyd=$popup,domain=dzen.ru
 =mytarget$popup,domain=dzen.ru
-ychid$popup,domain=dzen.ru
-ychyd$popup,domain=dzen.ru
-yciild=$popup,domain=dzen.ru
-ycilid=$popup,domain=dzen.ru
-ycilyd=$popup,domain=dzen.ru
-ycld=$popup,domain=dzen.ru
-yclid=$popup,domain=dzen.ru
-ycliid=$popup,domain=dzen.ru
-yclyd=$popup,domain=dzen.ru
-yclyyd=$popup,domain=dzen.ru
-ycyd=$popup,domain=dzen.ru
-ycyid=$popup,domain=dzen.ru
-ycylid=$popup,domain=dzen.ru
-ycylyd=$popup,domain=dzen.ru
-ycyyld=$popup,domain=dzen.ru
-ycyylid=$popup,domain=dzen.ru
-ycyylyd=$popup,domain=dzen.ru
-yhic=$popup,domain=dzen.ru
-yhid=$popup,domain=dzen.ru
-yhyd=$popup,domain=dzen.ru
-yiclyd=$popup,domain=dzen.ru
-ylclyd=$popup,domain=dzen.ru
-ylcyd=$popup,domain=dzen.ru
-yycliyd=$popup,domain=dzen.ru
-yyclyd=$popup,domain=dzen.ru
 ||t.mail.ru/redir/$popup,domain=dzen.ru
 ! Сайты Блокнота
 .php|$third-party,script,domain=bloknot-astrakhan.ru|bloknot-gelendzhik.ru|bloknot-kamyshin.ru|bloknot-krasnodar.ru|bloknot-krymska.ru|bloknot-moldova.ru|bloknot-morozovsk.ru|bloknot-novorossiysk.ru|bloknot-rossosh.ru|bloknot-rostov.ru|bloknot-samara.ru|bloknot-shakhty.ru|bloknot-stavropol.ru|bloknot-taganrog.ru|bloknot-volgodonsk.ru|bloknot-volgograd.ru|bloknot-volzhsky.ru|bloknot-voronezh.ru|bloknot.ru|bloknotanapa.ru|bloknotlipetsk.ru|bloknotsaratov.ru|bloknotsochi.ru|bloknottambov.ru
@@ -27501,7 +27500,7 @@ dzen.ru##div[class^="dzen-wrapper-with-top-content-desktop__topContent-"]:style(
 dzen.ru##div[id][class$="__ad"]
 ! обфускация
 dzen.ru##._is-for-video-floor
-dzen.ru##.article-page-layout div[class*="-top-"] > div[class*="_position_"]
+dzen.ru##.article-page-layout div[class*="-top-"]
 dzen.ru##.viewer-layout__content div[class*="-player "][aria-label] ~ div:not([class])
 dzen.ru##[class*="desktop"] ~ [id*="teaser"]
 dzen.ru##[class^="card-part-wrapper"] ~ div[class=""]
@@ -27889,7 +27888,7 @@ dota2.ru##+js(abort-on-property-read, helpUsImproveSite)
 elitesnooker.com##+js(abort-on-property-read, initsnow)
 astrakhan.ru,myjane.ru,omskpress.ru,tambovnet.org##+js(abort-on-property-read, kav_cn)
 daz3d.ru##+js(abort-on-property-read, lftrght)
-players.com.ua##+js(abort-on-property-read, localStorage)
+dorama.land,players.com.ua##+js(abort-on-property-read, localStorage)
 studizba.com##+js(abort-on-property-read, m205)
 asteriatm.ru,sudya-dredd.ru,tehnobzor.ru##+js(abort-on-property-read, mdpDeBlocker)
 anime-chan.me##+js(abort-on-property-read, move_string)
