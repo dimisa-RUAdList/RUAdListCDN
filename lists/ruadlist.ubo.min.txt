@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 07 Jun 2024 16:26:27 +0000
-! Diff-Path: ../patches/2024.6.7.986.patch#ruadlist
+! Last modified: Fri, 07 Jun 2024 21:21:49 +0000
+! Diff-Path: ../patches/2024.6.7.1281.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21662,7 +21662,7 @@ ictv.ua,vikna.tv##div[id^="div-gpt-ad-"]
 !||www.liveinternet.ru/users/$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/cgi-bin/rpls.fcgi?list= https://www.liveinternet.ru/spell/spell.js https://www.liveinternet.ru/share/js/share.js https://www.liveinternet.ru/4Ek/JS/diary/main/nav/regoradd.js https://www.liveinternet.ru/4Ek/JS/diary/trans.js
 !||www.liveinternet.ru/|$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/utf/lici.js https://www.liveinternet.ru/utf/li.js https://www.liveinternet.ru/utf/main_new.js
 ! Pikabu (ловушка для обфускации)
-||pikabu.ru/mm$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/lv$xmlhttprequest,domain=pikabu.ru
 ! селекторы
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
@@ -27997,6 +27997,7 @@ tv-kanali.online##+js(nano-setTimeout-booster, , 30000, 0.0001)
 rbc.ru##+js(nano-setTimeout-booster, js-article-check-visibility, 2000)
 freetp.org,freetp.ru,online-fix.me##+js(nano-setTimeout-booster, timer)
 4pda.to##+js(nano-setTimeout-booster, zat_tick)
+reshu.by,sdamgia.ru##+js(nano-setTimeout-booster, {return f(!1)}, 20000)
 volley.ru##+js(no-fetch-if, /buzzoola\.com|plrjs\.org/)
 howdyho.net##+js(no-setInterval-if, _0x, 5000)
 fatcatslim.ru##+js(no-setInterval-if, clientHeight)
@@ -28145,6 +28146,7 @@ infox.sg##+js(window-close-if, utm)
 vmusi.ru##+js(window.open-defuser, /tutad\.ru/)
 ontivi.net##+js(window.open-defuser, about:blank)
 vk.com,vk.ru##.PhotoPrimaryAttachment__background[src*="userapi.com/impf/"][src*="blur="]:style(filter: blur(20px) !important)
+reshu.by,sdamgia.ru##.S617e090e7e
 reshu.by,sdamgia.ru##.SubjectMenu_desktop.PageLayout-Nav:style(position: sticky !important)
 inoreader.com##.ad_title:style(display: block !important; position: fixed !important; top: -10000px !important; left: -10000px !important)
 inoreader.com##.adsbygoogle:style(display: block !important)
