@@ -1,8 +1,8 @@
-diff name:ruadlist lines:188 checksum:8398df88ff
+diff name:ruadlist lines:190 checksum:07cbda1b9e
 d4 2
 a5 2
-! Last modified: Mon, 10 Jun 2024 09:24:17 +0000
-! Diff-Path: ../patches/2024.6.10.564.patch#ruadlist
+! Last modified: Mon, 10 Jun 2024 14:24:39 +0000
+! Diff-Path: ../patches/2024.6.10.864.patch#ruadlist
 a12516 1
 ||radiorecord.ru/assets/tbank/
 d13687 1
@@ -76,7 +76,7 @@ ferra.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,secretmag.ru,wmj.ru#
 gazeta.ru##.m_zen
 lenta.ru##.promo-block
 gazeta.ru##.rcmw-container
-championat.com##.recommender-block ~ .banner + div
+championat.com##.recommender-block ~ .banner + div:not([class*="comments"])
 top100.rambler.ru##.rui-Snackbar-snackbar
 moslenta.ru##.sideColumn > div[class] > div[style^="margin-bottom:"] + div
 lenta.ru##.topic-page__info ~ div
@@ -158,6 +158,8 @@ a25405 1
 d26325 2
 d26796 2
 d27078 6
+a27083 1
+avtorambler.com,rambler.ru##.commercial-branding > div script ~ div > div:style(min-height: 0 !important)
 d27087 3
 d27169 1
 a27169 1
