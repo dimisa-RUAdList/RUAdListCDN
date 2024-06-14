@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 14 Jun 2024 13:24:22 +0000
-! Diff-Path: ../patches/2024.6.14.804.patch#ruadlist
+! Last modified: Fri, 14 Jun 2024 18:29:04 +0000
+! Diff-Path: ../patches/2024.6.14.1109.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -9974,7 +9974,6 @@ bs-life.ru##body > .ui-widget.ui-dialog
 dowlatow.ru##body > .wid-fb
 gosvopros.ru##body > div[class$="-subscr"]
 factroom.ru##body > div[class^="facebook-"]
-roscontrol.com##body > div[class^="promo"]
 bomba.co##body > div[class^="remodal"]
 ladyclub.org##body > div[class^="revelation"]
 zismo.biz##body > div[class^="simplemodal"]
@@ -10537,7 +10536,7 @@ $xmlhttprequest,domain=happy-biock.info|happy-block.info|howto-news.info|mschist
 /www/base/*&cb=$domain=namba.kg|namba.tj
 /yandex.b.js$script,domain=krossava.ru
 /z.js?$script,domain=all-sci.net|bib.social|economics.studio|economuch.com|finbook.news|lawbook.online|lawbooks.news|lib.sale|medinfo.live|myzooplanet.ru|pravo.studio|provse.news|psihologia.biz|sci-lib.biz|sci.house|scicenter.online|textbooks.studio|uchebnikfree.com|xn--80aaivjfyj3e.com
-/z.mp3|$domain=zagonk.com|zagonka.net|zagonka.tv|zagonko.org|zagonkop.gb.net|zogonka.org
+/z.mp3|$domain=zagonka.net|zagonka.tv|zagonko.org|zagonkop.gb.net|zagonkov.gb.net|zogonka.org
 /zvooq.css$domain=moskva.fm|piter.fm
 =http%3A%2F%2Fazaza.torent-telik.
 =js/api/w*.js$~third-party,domain=itc.ua|mezha.media|mychooz.com
@@ -13527,6 +13526,7 @@ debaty.sumy.ua###advertisement
 book-online.com.ua,motorshop.kz###advertising
 click.alfabank.ru###advise
 muzmo.cc###advmusic_banner
+zagonka.net,zagonka.tv,zagonko.org,zagonkop.gb.net,zagonkov.gb.net,zogonka.org###afoot
 androidphone.su###after_ask_helpful
 cqham.ru###after_first_post_yadirect
 muzland.es,muzland.info,muzland.ru###agbordid
@@ -13935,7 +13935,7 @@ radidomapro.ru###header_partenaire
 pesiq.ru###header_right_cell
 gzt-sv.ru###headerq
 chess-samara.ru###headlineAdv
-zagonk.com,zagonka.net,zagonka.tv,zagonko.org,zagonkop.gb.net,zogonka.org###hfsn
+zagonka.net,zagonka.tv,zagonko.org,zagonkop.gb.net,zagonkov.gb.net,zogonka.org###hfsn
 wbprx.com###hidemead
 intvua.com###hit_pr
 vecdn.pw###holdon
@@ -20208,7 +20208,7 @@ znaj.ua##div[class*="advertising"]
 odessa-life.od.ua##div[class*="ai-viewport-"]
 thequestion.ru##div[class*="annonser"]
 gorodvitebsk.by,kursktv.ru,open.ua,penza-press.ru##div[class*="baner"]
-1777.ru,19rus.info,19rusinfo.ru,1ul.ru,20minut.ua,2goroda.ru,365info.kz,3ys.ru,73online.ru,9tv.co.il,advis.ru,agronews.ua,agroreview.com,agrotimes.net,autodmir.ru,avtodispetcher.ru,bakemono.ru,bel.ru,besplatka.ua,bezformata.com,bhub.com.ua,car.ru,cbonds.ru,codernet.ru,comments.ua,con-med.ru,cybersport.ru,echosevera.ru,epravda.com.ua,fatalgame.com,filmz.ru,fishingsib.ru,flamp.ru,food.ru,footballua.tv,forum-profit.ru,gameguru.ru,gecid.com,goodfon.ru,gorodvitebsk.by,gp.by,growhow.in.ua,haqqin.az,hunting.ru,industry-hunter.com,infpol.ru,investfunds.ru,ircity.ru,islam-today.ru,iz.ru,joborgame.ru,jut.su,k1news.ru,klavogonki.ru,knijky.ru,kt.kz,kursktv.ru,laradiofm.ru,livesport.ws,locals.md,medialeaks.ru,megatyumen.ru,menportal.info,myslo.ru,neboleem.net,nmedic.info,nv-online.info,obyava.ua,okna.ua,penza-press.ru,polochka.net,povarenok.ru,ppt4web.ru,pravda.com.ua,pravoved.ru,primemusic.cc,profibeer.ru,prostatitanet.com,redfm.ru,relax-fm.ru,rg.ru,skachat-kino.fun,smolensk-i.ru,sovsport.ru,spanishrestaurant.ru,sport5.by,sportguide.kiev.ua,start33.ru,syzran-small.ru,tele.ru,tengriauto.kz,tengrinews.kz,tengrisport.kz,tengritravel.kz,the-flow.ru,thequestion.ru,thg.ru,tveda.ru,twentysix.ru,ufanotes.ru,valverus.info,vashurok.ru,veterinargid.ru,vikka.ua,vinnitsa.info,vklasse.online,vovka.su,vringe.com,vshkole.com,woman.ru,wonderzine.com,wowjp.net,xsport.ua,zagorod.spb.ru,zaim-profi.ru,zaryad.me,zebra-tv.ru,zoohoz.ru,zorbasmedia.ru##div[class*="banner"]
+1777.ru,19rus.info,19rusinfo.ru,1ul.ru,20minut.ua,2goroda.ru,365info.kz,3ys.ru,73online.ru,9tv.co.il,advis.ru,agronews.ua,agroreview.com,agrotimes.net,autodmir.ru,avtodispetcher.ru,bakemono.ru,bel.ru,besplatka.ua,bezformata.com,bhub.com.ua,car.ru,cbonds.ru,codernet.ru,comments.ua,con-med.ru,cybersport.ru,echosevera.ru,epravda.com.ua,fatalgame.com,filmz.ru,fishingsib.ru,flamp.ru,food.ru,footballua.tv,forum-profit.ru,gameguru.ru,gecid.com,goodfon.ru,gorodvitebsk.by,gp.by,growhow.in.ua,haqqin.az,hunting.ru,industry-hunter.com,infpol.ru,investfunds.ru,ircity.ru,islam-today.ru,iz.ru,joborgame.ru,jut.su,k1news.ru,klavogonki.ru,knijky.ru,kt.kz,kursktv.ru,laradiofm.ru,livesport.ws,locals.md,medialeaks.ru,megatyumen.ru,menportal.info,myslo.ru,neboleem.net,nmedic.info,nv-online.info,obyava.ua,okna.ua,penza-press.ru,polochka.net,povarenok.ru,ppt4web.ru,pravda.com.ua,pravoved.ru,primemusic.cc,profibeer.ru,prostatitanet.com,redfm.ru,relax-fm.ru,rg.ru,roscontrol.com,skachat-kino.fun,smolensk-i.ru,sovsport.ru,spanishrestaurant.ru,sport5.by,sportguide.kiev.ua,start33.ru,syzran-small.ru,tele.ru,tengriauto.kz,tengrinews.kz,tengrisport.kz,tengritravel.kz,the-flow.ru,thequestion.ru,thg.ru,tveda.ru,twentysix.ru,ufanotes.ru,valverus.info,vashurok.ru,veterinargid.ru,vikka.ua,vinnitsa.info,vklasse.online,vovka.su,vringe.com,vshkole.com,woman.ru,wonderzine.com,wowjp.net,xsport.ua,zagorod.spb.ru,zaim-profi.ru,zaryad.me,zebra-tv.ru,zoohoz.ru,zorbasmedia.ru##div[class*="banner"]
 dressupmix.ru##div[class*="banner"]:not(.banner-vk)
 bombardir.ru##div[class*="banner-placeholder"]
 mobile-review.com##div[class*="banner-wrapper"]
@@ -21675,7 +21675,7 @@ ictv.ua,vikna.tv##div[id^="div-gpt-ad-"]
 !||www.liveinternet.ru/users/$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/cgi-bin/rpls.fcgi?list= https://www.liveinternet.ru/spell/spell.js https://www.liveinternet.ru/share/js/share.js https://www.liveinternet.ru/4Ek/JS/diary/main/nav/regoradd.js https://www.liveinternet.ru/4Ek/JS/diary/trans.js
 !||www.liveinternet.ru/|$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/utf/lici.js https://www.liveinternet.ru/utf/li.js https://www.liveinternet.ru/utf/main_new.js
 ! Pikabu (ловушка для обфускации)
-||pikabu.ru/lv$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/mv$xmlhttprequest,domain=pikabu.ru
 ! селекторы
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
@@ -22857,6 +22857,7 @@ dzen.ru##div[style*=" !important; "][style$=" !important;"]
 /*ycilid=$popup,domain=dzen.ru
 /*ycilyd=$popup,domain=dzen.ru
 /*ycld=$popup,domain=dzen.ru
+/*ycleed=$popup,domain=dzen.ru
 /*yclid=$popup,domain=dzen.ru
 /*ycliid=$popup,domain=dzen.ru
 /*ycliyd=$popup,domain=dzen.ru
@@ -27475,11 +27476,11 @@ dzen.ru##[class*="desktop"] ~ [id*="teaser"]
 dzen.ru##[class^="card-part-wrapper"] ~ div[class=""]
 dzen.ru##[class^="dzen-desktop"] ~ div[id$="-popup"]
 dzen.ru##[data-testid="recommend-auth-popup"]
-dzen.ru##aside[id^="article_"][class*="rilgght"] > div[class]
+dzen.ru##aside[id^="article_"][class*="rilghght"] > div[class]
 dzen.ru##div[aria-label="Карточка рекомендованного видео"] ~ [aria-label]:not([aria-label="Карточка рекомендованного видео"])
 dzen.ru##div[class*="_feed-type_article_"] article:not([class*="card-"])
-dzen.ru##div[class*="article__"] > .undefined ~ div[class*="mlilddlei"] > div[id][class]
-dzen.ru##div[class*="witedjjet"] > div[class*="container"] > div ~ div
+dzen.ru##div[class*="article__"] > .undefined ~ div[class*="middlei"] > div[id][class]
+dzen.ru##div[class*="witedjjjet"] > div[class*="container"] > div ~ div
 dzen.ru##div[id*="long_video_floor"] article[id] ~ article:not([id])
 dzen.ru##div[id*="splashscreen"]
 dzen.ru##div[id][class^="feed__"] article:not([aria-label]) > div:first-child ~ div
@@ -27579,7 +27580,7 @@ yap.ru,yaplakal.com##body:not(#id):style(background-color: #9ab9a7 !important)
 yk.kz##.top-line
 yk.kz##.top-line + header.main:style(top: auto !important)
 ! ---
-zagonk.com,zagonka.net,zagonka.tv,zagonko.org,zagonkop.gb.net,zogonka.org###sitebox:not(#id):style(margin-top: 0 !important)
+zagonka.net,zagonka.tv,zagonko.org,zagonkop.gb.net,zagonkov.gb.net,zogonka.org###sitebox:not(#id):style(margin-top: 0 !important)
 ! ---
 zaycev.online##.content:not(#id):style(margin-top: 80px !important)
 ! ---

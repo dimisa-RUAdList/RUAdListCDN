@@ -1,8 +1,8 @@
-diff name:ruadlist lines:71 checksum:1916c3fb72
+diff name:ruadlist lines:98 checksum:8c71a95ff5
 d4 2
 a5 2
-! Last modified: Fri, 14 Jun 2024 13:24:22 +0000
-! Diff-Path: ../patches/2024.6.14.804.patch#ruadlist
+! Last modified: Fri, 14 Jun 2024 18:29:04 +0000
+! Diff-Path: ../patches/2024.6.14.1109.patch#ruadlist
 a1752 1
 ||eduforms.org^$third-party
 a1756 1
@@ -13,13 +13,22 @@ a7665 1
 d8417 1
 a8417 1
 ~b-kontur.ru,~online.sberbank.ru,~pokupay.ru,~sunsim.ru##a[href*="&utm_medium=cpa"][target="_blank"]
+d9975 1
 a10496 1
 /skin/edu$script,domain=semestr.online|semestr.ru
+d10537 1
+a10537 1
+/z.mp3|$domain=zagonka.net|zagonka.tv|zagonko.org|zagonkop.gb.net|zagonkov.gb.net|zogonka.org
 d12710 1
 a12710 3
 ||semestr.ru/skin/anti
 ||semestr.ru/skin/plugins/hmwrk.js
 ||semestr.ru/skin/widgets
+a13524 1
+zagonka.net,zagonka.tv,zagonko.org,zagonkop.gb.net,zagonkov.gb.net,zogonka.org###afoot
+d13933 1
+a13933 1
+zagonka.net,zagonka.tv,zagonko.org,zagonkop.gb.net,zagonkov.gb.net,zogonka.org###hfsn
 a14082 1
 semestr.online,semestr.ru###messageblock1
 a14391 1
@@ -49,12 +58,20 @@ semestr.online,semestr.ru##a[href^="https://zakaz.semestr.ru/"]
 a19826 2
 semestr.online,semestr.ru#?#article div:-abp-has(> [action*="homework.ru"])
 semestr.online,semestr.ru#?#article div:-abp-has(> [action*="vse-sdal.com"])
+d20195 1
+a20195 1
+1777.ru,19rus.info,19rusinfo.ru,1ul.ru,20minut.ua,2goroda.ru,365info.kz,3ys.ru,73online.ru,9tv.co.il,advis.ru,agronews.ua,agroreview.com,agrotimes.net,autodmir.ru,avtodispetcher.ru,bakemono.ru,bel.ru,besplatka.ua,bezformata.com,bhub.com.ua,car.ru,cbonds.ru,codernet.ru,comments.ua,con-med.ru,cybersport.ru,echosevera.ru,epravda.com.ua,fatalgame.com,filmz.ru,fishingsib.ru,flamp.ru,food.ru,footballua.tv,forum-profit.ru,gameguru.ru,gecid.com,goodfon.ru,gorodvitebsk.by,gp.by,growhow.in.ua,haqqin.az,hunting.ru,industry-hunter.com,infpol.ru,investfunds.ru,ircity.ru,islam-today.ru,iz.ru,joborgame.ru,jut.su,k1news.ru,klavogonki.ru,knijky.ru,kt.kz,kursktv.ru,laradiofm.ru,livesport.ws,locals.md,medialeaks.ru,megatyumen.ru,menportal.info,myslo.ru,neboleem.net,nmedic.info,nv-online.info,obyava.ua,okna.ua,penza-press.ru,polochka.net,povarenok.ru,ppt4web.ru,pravda.com.ua,pravoved.ru,primemusic.cc,profibeer.ru,prostatitanet.com,redfm.ru,relax-fm.ru,rg.ru,roscontrol.com,skachat-kino.fun,smolensk-i.ru,sovsport.ru,spanishrestaurant.ru,sport5.by,sportguide.kiev.ua,start33.ru,syzran-small.ru,tele.ru,tengriauto.kz,tengrinews.kz,tengrisport.kz,tengritravel.kz,the-flow.ru,thequestion.ru,thg.ru,tveda.ru,twentysix.ru,ufanotes.ru,valverus.info,vashurok.ru,veterinargid.ru,vikka.ua,vinnitsa.info,vklasse.online,vovka.su,vringe.com,vshkole.com,woman.ru,wonderzine.com,wowjp.net,xsport.ua,zagorod.spb.ru,zaim-profi.ru,zaryad.me,zebra-tv.ru,zoohoz.ru,zorbasmedia.ru##div[class*="banner"]
 a20684 2
 semestr.online,semestr.ru#?#div[id^="Math"][id$="Block"] > div:-abp-has(a[href]:not([href^="/"]):not([href*=".semestr."]))
 semestr.online,semestr.ru#?#div[id^="Math"][id$="Block"] > div:-abp-has(a[href^="https://zakaz.semestr.ru/"])
+d21660 1
+a21660 1
+||pikabu.ru/mv$xmlhttprequest,domain=pikabu.ru
 d22280 1
 a22280 1
 72.ru,74.ru,chita.ru,ngs.ru,ufa1.ru,www.e1.ru##div[data-test="header-sticky"] > div > section ~ div
+a22841 1
+/*ycleed=$popup,domain=dzen.ru
 d24023 1
 a24023 1
 ||profi.ru^*/banner$third-party
@@ -69,4 +86,14 @@ d25653 2
 d25727 1
 a25750 1
 semestr.online,semestr.ru###messageblock1
-d27134 5
+d27135 5
+d27471 1
+a27471 1
+dzen.ru##aside[id^="article_"][class*="rilghght"] > div[class]
+d27474 2
+a27475 2
+dzen.ru##div[class*="article__"] > .undefined ~ div[class*="middlei"] > div[id][class]
+dzen.ru##div[class*="witedjjjet"] > div[class*="container"] > div ~ div
+d27575 1
+a27575 1
+zagonka.net,zagonka.tv,zagonko.org,zagonkop.gb.net,zagonkov.gb.net,zogonka.org###sitebox:not(#id):style(margin-top: 0 !important)
