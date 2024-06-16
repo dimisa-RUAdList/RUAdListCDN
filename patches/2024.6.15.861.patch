@@ -1,5 +1,212 @@
-diff name:ruadlist lines:4 checksum:08c3646851
+diff name:ruadlist lines:211 checksum:ab24f4971b
 d4 2
 a5 2
-! Last modified: Sun, 16 Jun 2024 15:22:24 +0000
-! Diff-Path: ../patches/2024.6.16.922.patch#ruadlist
+! Last modified: Sun, 16 Jun 2024 20:21:05 +0000
+! Diff-Path: ../patches/2024.6.16.1221.patch#ruadlist
+d10165 1
+a10165 1
+$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: *.addtoany.com *.amazonaws.com *.cloudflare.com *.dmca.com *.disqus.com *.disquscdn.com *.facebook.com *.getsitecontrol.com apis.google.com cse.google.com *.google.com/cse/ *.google.com/complete/ *.google.com/recaptcha/ translate.google.com www.google.com *.googleapis.com *.googletagmanager.com *.gstatic.com/recaptcha/ *.instagram.com *.jivosite.com *.jquery.com *.keycaptcha.com *.sendpulse.com *.sharethis.com *.po.st *.threadloom.com *.tiktok.com *.trustpilot.com *.twitter.com vk.com www.youtube.com *.dev *.io *.net *.org *.ru *.ua,domain=agroter.com.ua|alensat.com|allbasketball.org|askentire.net|autonews.co.ua|autosoftos.com|babla.ru|bio-lessons.ru|cardiagram.com.ua|clickthis.blog|coollib.net|elegantwoman.kyiv.ua|farposst.ru|findhow.org|gazeta-misto.te.ua|golos.te.ua|icon-icons.com|ilenta.com|index.minfin.com.ua|inforesist.org|kurs.com.ua|life.pravda.com.ua|mirlib.ru|modfix.ru|musinfo.net|ontvtime.ru|orbit-games.com|perpendicular.pro|pes-files.ru|poezdato.net|poizdato.net|ruboard.website|sundries.ua|tabloid.pravda.com.ua|tenews.org.ua|tribun.com.ua|uapress.kyiv.ua|valorantinfo.com|vesti-ua.net|vkazivka.com|wallpapershome.ru|xn--80aaukc.xn--j1amh|skidkaonline.ru
+d16446 1
+a17393 1
+blog.korabli.su##.promo-wrapper
+d21881 46
+a21926 31
+! Общие
+~e.mail.ru,mail.ru,sportmail.ru##.article__item_conversionlink
+~e.mail.ru,mail.ru,sportmail.ru##.article__item_slot
+~e.mail.ru,mail.ru,sportmail.ru##.daynews > table tr > td ~ td ~ td:last-child
+~e.mail.ru,mail.ru,sportmail.ru##.mailru-visibility-check
+mail.ru##.ph-project-promo-container
+~e.mail.ru,mail.ru,sportmail.ru#?#.viewbox__holder div:-abp-has(> .viewbox__side-loader)
+~e.mail.ru,mail.ru##[data-logger-parent="sidebarDoubleRight"]
+~e.mail.ru,mail.ru,sportmail.ru##[data-view^="Slot"][data-adq-id]
+~e.mail.ru,mail.ru,sportmail.ru#?#aside div[style^="min-height:"][data-hideorder]:first-child:-abp-has(> [data-rb-slot])
+~e.mail.ru,mail.ru,sportmail.ru##div[class*="rb-slot_plug"]
+~e.mail.ru,mail.ru,sportmail.ru##div[data-closewrap-container]
+~e.mail.ru,mail.ru##main#grid .stripe-wrapper
+~e.mail.ru,mail.ru,sportmail.ru#?#tbody:-abp-has(> tr > td > [class*="daynews__item"]) > tr > td ~ td ~ td:last-child
+~e.mail.ru,mail.ru,sportmail.ru##tr > .daynews__spring
+! Почта
+e.mail.ru,octavius.mail.ru###app-canvas .layout__overflow-container > .advert-column
+e.mail.ru,octavius.mail.ru###app-canvas .layout__overflow-container > .slot
+e.mail.ru,octavius.mail.ru###app-canvas .promo-block-letter + div[class]:not([class*="list-"]):not(a)
+e.mail.ru,octavius.mail.ru###message-sent__rb-center-container
+light.mail.ru##.direct_septima
+e.mail.ru,octavius.mail.ru##.layer-sent-page__banner
+e.mail.ru,octavius.mail.ru##.layout__content div[data-test-id="promt-tooltip"]
+e.mail.ru,octavius.mail.ru##.letter-list-item-adv
+@@||e.mail.ru^$generichide
+@@||octavius.mail.ru^$generichide
+! Новости
+news.mail.ru##.m-fixed-panel
+news.mail.ru##.r-source
+news.mail.ru##.reference-page__card ~ span:last-child
+! Дзен новости
+d21939 18
+a21956 20
+! Спорт
+sportmail.ru##.sidebar_video:empty
+sportmail.ru##a[href="/bookmakers/"]
+sportmail.ru##div[data-logger="partnerNews"]
+! Погода
+pogoda.mail.ru##.forecast-branding-link
+pogoda.mail.ru##.js-springs__group__top
+pogoda.mail.ru##.m-fixed-panel
+pogoda.mail.ru##.unprinted
+pogoda.mail.ru##[data-logger-parent="sidebarRight"]
+! Леди
+lady.mail.ru##div[class*="sticky-springs__item"]
+! Гороскопы
+horo.mail.ru##.js-scroll-to-site__hidden
+horo.mail.ru##[data-logger-parent="sidebarRight"]
+! Авто
+auto.mail.ru##.grid > .grid__row_table > [name] ~ div:not([name])
+auto.mail.ru##.spring_adb
+auto.mail.ru##.wrapper > .cols > .cols__wrapper > :not([class*="cols"])
+auto.mail.ru##div[data-closewrap-container]
+d21959 1
+a21959 1
+kino.mail.ru##.align_left > a[aria-label="Смотреть онлайн"]
+d21961 8
+a21968 2
+kino.mail.ru##.p-commercial
+kino.mail.ru##.p-movie-intro__commercial
+d21970 3
+a21972 4
+kino.mail.ru##.p-tv-major__spring
+kino.mail.ru##.sticky-springs div[style*="position:"]
+kino.mail.ru##[data-logger-parent="sidebarDoubleRight"]
+kino.mail.ru##a.button_color_project[name]
+d21974 75
+a22048 12
+kino.mail.ru##div[data-required]
+! Хай-тек
+hi-tech.mail.ru##.marker-adv-holder
+hi-tech.mail.ru#?#[data-qa="Grid"] > div > div:-abp-has(> [data-rb-slot])
+hi-tech.mail.ru#?#[data-qa="Grid"] > div:-abp-has(> .marker-adv-holder)
+hi-tech.mail.ru##div[data-qa="Box"]
+! Фокус
+vfokuse.mail.ru##.m-fixed-panel
+! Здоровье
+health.mail.ru##.m-fixed-panel
+health.mail.ru##.rb
+health.mail.ru##[data-logger-parent="sidebarRight"]
+a22049 1
+pets.mail.ru##.adv-marker-box
+d22053 2
+d22056 2
+d22060 83
+a22142 9
+! Ответы
+otvet.mail.ru##a[href^="https://t.mail.ru/redir/"]
+otvet.mail.ru##div[data-pos]
+otvet.mail.ru#?#div[style^="top: "]:-abp-has(> div > div[class=""]:empty)
+! Дети
+deti.mail.ru##.cols__wrapper > aside
+deti.mail.ru##.deti-slot_exchange
+deti.mail.ru##.js-smoky-end
+! Мини-игры
+d22144 12
+d22157 7
+a22163 38
+! ТВ
+tv.mail.ru##.cols__column_sidebar > span
+tv.mail.ru##.counters ~ div[id][class*=" "]
+tv.mail.ru##.counters ~ span div[id][class*=" "]
+tv.mail.ru##.sticky-springs
+tv.mail.ru##.viewbox__slide_side_show
+tv.mail.ru##.viewbox__slide_side_show ~ span
+tv.mail.ru##.wrapper > .cols [id][class*=" "]
+tv.mail.ru##[data-content="Смотреть онлайн в любое время"]
+tv.mail.ru##[data-logger-parent="sidebarDoubleRight"]
+tv.mail.ru##button[data-player*="eid"][name]
+tv.mail.ru##div[class*="js-popup"] div[id][class*=" "]
+! Мой мир
+my.mail.ru##.b-column-right__block-news-cloud
+my.mail.ru##.b-fourth-pseudo-column
+my.mail.ru##.b-history-event:empty
+my.mail.ru##.b-history__adv-post-carousel
+my.mail.ru##.b-music__main__banner
+my.mail.ru##.b-video__top-rb-banner
+my.mail.ru##.l-app__left
+my.mail.ru##.l-app__right
+my.mail.ru##.sp-video__billboard
+my.mail.ru##.ui-simple-block[class*="promo"]
+my.mail.ru##div[class^="l-music__banner"]
+my.mail.ru##div[style^="position:"][style*=";display:"][style*=";opacity:1;visibility:visible;height:"] div[style^="display:"]
+! Облако
+cloud.mail.ru##div[class*="advHeaderStatic"]
+cloud.mail.ru##div[class^="Folder__worm"]
+cloud.mail.ru##div[class^="ReactViewer__bottominfoWrapper-"]
+cloud.mail.ru##div[class^="Worm__root-"]
+cloud.mail.ru##section > div[class^="Rightinfo__header"]
+! Дом
+dom.mail.ru##[data-qa="ArticlesList"] > [data-logger="ListItem"] ~ div:last-child:not([data-logger="ListItem"])
+! Знакомства
+love.mail.ru##.TopBannerSlot
+love.mail.ru##.adv-contacts
+love.mail.ru##.banner_left
+love.mail.ru##.link-ad
+d22166 8
+a22173 5
+//rs.mail.ru/b$third-party,domain=~km.ru
+||1l-hit.mail.ru^
+||ad.mail.ru^$domain=~e.mail.ru|~octavius.mail.ru
+||an.mail.ru/count/$domain=~e.mail.ru|~o2.mail.ru
+||banners.mail.ru^$third-party
+d22175 10
+a22184 1
+||horo.mail.ru/*/fast-slot.js
+d22186 6
+a22191 2
+||media-stat.mail.ru^
+||mradx.net/img/$subdocument
+a22192 1
+||privacy-cs.mail.ru^$third-party
+a22193 1
+||r.mradx.net/$script,domain=auto.mail.ru|deti.mail.ru|health.mail.ru|kino.mail.ru|lady.mail.ru|my.mail.ru|otvet.mail.ru|pets.mail.ru|pogoda.mail.ru|tv.mail.ru
+d22195 1
+d22197 3
+a22199 8
+||radar.imgsmail.ru^
+||rs.mail.ru^$domain=~account.mail.ru|~o2.mail.ru
+||showbiz.mail.ru^$third-party
+||t.mail.ru/redir/$popup,domain=~e.mail.ru
+||top-fwz1.mail.ru^$domain=~account.mail.ru|~o2.mail.ru
+||torg.mail.ru/prtnr/$third-party
+||trk.mail.ru^$image,ping,script,xmlhttprequest
+||xray.mail.ru^
+a22254 1
+ok.ru#?#.feed-list > .feed-w:-abp-has([class^="feed"] span ~ span ~ span ~ span ~ span ~ span ~ span)
+d22262 4
+a22265 3
+! Блокировка
+||ok.ru/dk|$xmlhttprequest
+||ok.ru/res/js/app/RightColumn_*.js
+d22267 1
+a25002 1
+@@||ads.adfox.ru^$popup,domain=magnit.ru
+a25498 1
+@@||yandex.ru/ads/$domain=magnit.ru
+a25506 1
+@@||yastatic.net/partner-code-bundles/$domain=magnit.ru
+a25531 1
+magnit.ru#@#div[id^="adfox_"]
+d25599 2
+d25837 1
+a25837 1
+kurs.com.ua,ontvtime.ru,skidkaonline.ru##body > div[style*="background-color:"][style*="z-index:"]
+d27632 3
+d27638 1
+d27650 2
+d27655 5
+d27665 2
+d27670 1
+a27670 2
+mail.ru##.mailbox__add-btn-logo
+sportmail.ru##.p-article-bookmakers ~ div a[href^="https://r.mail.ru/"]:style(pointer-events: none !important; text-decoration: none !important; color: inherit !important)
+d27703 1
+d27708 1
+d27710 1
+d27714 1
+d28247 2
