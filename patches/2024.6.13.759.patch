@@ -1,8 +1,8 @@
-diff name:ruadlist lines:272 checksum:7b33beaaaa
+diff name:ruadlist lines:281 checksum:ac5df0018d
 d4 2
 a5 2
-! Last modified: Mon, 17 Jun 2024 11:18:05 +0000
-! Diff-Path: ../patches/2024.6.17.678.patch#ruadlist
+! Last modified: Mon, 17 Jun 2024 16:27:31 +0000
+! Diff-Path: ../patches/2024.6.17.987.patch#ruadlist
 d9977 1
 d10166 1
 a10166 1
@@ -32,6 +32,9 @@ a17392 1
 blog.korabli.su##.promo-wrapper
 d18358 1
 d18462 1
+d18939 1
+a18939 1
+agri-gator.com.ua,itsider.com.ua,mmr.net.ua,obozvrn.ru,rama.com.ua,rusfootball.info,subbota.ua,youtebem.com##[itemtype="https://schema.org/WPAdBlock"]
 a19455 1
 versii.if.ua##a[href]:not([href^="/"]):not([href^="https://versii.if.ua"]) > img
 a19874 1
@@ -218,16 +221,19 @@ ok.ru#?#.feed-list > .feed-w:-abp-has([class^="feed"] span ~ span ~ span ~ span 
 a22256 1
 ok.ru#?#div:-abp-has(> #hook_Block_CompactFooter) > div:not(#hook_Block_CompactFooter)
 d22261 4
-a22264 2
+a22264 4
 ! Блокировка
 ||ok.ru/res/js/app/RightColumn_*.js
+||ok.ru/res/js/b/bpo_*.js
+||ok.ru/res/js/nativeHooks_*.js
 d22266 1
 d22297 1
 a22297 1
 72.ru,74.ru,chita.ru,ngs.ru,ufa1.ru,www.e1.ru##div[data-test="header-sticky"] > div > section ~ div
 a22858 1
 /*ycleed=$popup,domain=dzen.ru
-a22876 1
+a22876 2
+/*ylecd=$popup,domain=dzen.ru
 /*yleed=$popup,domain=dzen.ru
 a25000 1
 @@||ads.adfox.ru^$popup,domain=magnit.ru
@@ -241,6 +247,9 @@ d25597 2
 d25835 1
 a25835 1
 kurs.com.ua,ontvtime.ru,skidkaonline.ru##body > div[style*="background-color:"][style*="z-index:"]
+d27471 1
+a27471 1
+dzen.ru##.article-page-layout > main > div > div[id]
 d27477 1
 a27477 1
 dzen.ru##aside[id^="article_"][class*="rilghght"] > div[class]

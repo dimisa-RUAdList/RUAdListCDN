@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 17 Jun 2024 11:18:05 +0000
-! Diff-Path: ../patches/2024.6.17.678.patch#ruadlist
+! Last modified: Mon, 17 Jun 2024 16:27:31 +0000
+! Diff-Path: ../patches/2024.6.17.987.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -18931,7 +18931,7 @@ radidomapro.ru##[id^="zone_pub"]
 sm.news##[itemprop="articleBody"] > [id][class]:empty
 nashamama.com#?#[itemprop="articleBody"] > p:-abp-contains(/ТЬСЯ ТАКОЖ/i)
 fedpress.ru##[itemtype*="://schema.org/NewsArticle"] .article-box + div[style="padding: 10px"]
-itsider.com.ua,mmr.net.ua,obozvrn.ru,rama.com.ua,rusfootball.info,subbota.ua,youtebem.com##[itemtype="https://schema.org/WPAdBlock"]
+agri-gator.com.ua,itsider.com.ua,mmr.net.ua,obozvrn.ru,rama.com.ua,rusfootball.info,subbota.ua,youtebem.com##[itemtype="https://schema.org/WPAdBlock"]
 cheezu.ru##[jello-component="yamarket"]
 livejournal.com##[lj0sale0autoplay0dockable0video0mount]
 egamersworld.com##[name="odds"]
@@ -22109,6 +22109,8 @@ ok.ru##div[id^="hook_Block_FrOln4thCol"]
 ok.ru##.update-browser_container
 ! Блокировка
 ||ok.ru/res/js/app/RightColumn_*.js
+||ok.ru/res/js/b/bpo_*.js
+||ok.ru/res/js/nativeHooks_*.js
 ||st.mycdn.me/res/i/anonym/jakobs/$image
 ! Реклама, встроенная расширением OkTools)
 ok.ru##iframe[src^="//oktools.ru/page/static/"]
@@ -22721,6 +22723,7 @@ dzen.ru##div[style*=" !important; "][style$=" !important;"]
 /*yiclyd=$popup,domain=dzen.ru
 /*ylclyd=$popup,domain=dzen.ru
 /*ylcyd=$popup,domain=dzen.ru
+/*ylecd=$popup,domain=dzen.ru
 /*yleed=$popup,domain=dzen.ru
 =mytarget$popup,domain=dzen.ru
 ||t.mail.ru/redir/$popup,domain=dzen.ru
@@ -27318,7 +27321,7 @@ dzen.ru##div[class^="dzen-wrapper-with-top-content-desktop__topContent-"]:style(
 dzen.ru##div[id][class$="__ad"]
 ! обфускация
 dzen.ru##._is-for-video-floor
-dzen.ru##.article-page-layout > .main-container > div > div[id]
+dzen.ru##.article-page-layout > main > div > div[id]
 dzen.ru##.viewer-layout__content div[class*="-player "][aria-label] ~ div:not([class])
 dzen.ru##[class*="desktop"] ~ [id*="teaser"]
 dzen.ru##[class^="card-part-wrapper"] ~ div[class=""]

@@ -1,8 +1,8 @@
-diff name:ruadlist lines:243 checksum:7b33beaaaa
+diff name:ruadlist lines:252 checksum:ac5df0018d
 d4 2
 a5 2
-! Last modified: Mon, 17 Jun 2024 11:18:05 +0000
-! Diff-Path: ../patches/2024.6.17.678.patch#ruadlist
+! Last modified: Mon, 17 Jun 2024 16:27:31 +0000
+! Diff-Path: ../patches/2024.6.17.987.patch#ruadlist
 d10165 1
 a10165 1
 $csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: *.addtoany.com *.amazonaws.com *.cloudflare.com *.dmca.com *.disqus.com *.disquscdn.com *.facebook.com *.getsitecontrol.com apis.google.com cse.google.com *.google.com/cse/ *.google.com/complete/ *.google.com/recaptcha/ translate.google.com www.google.com *.googleapis.com *.googletagmanager.com *.gstatic.com/recaptcha/ *.instagram.com *.jivosite.com *.jquery.com *.keycaptcha.com *.sendpulse.com *.sharethis.com *.po.st *.threadloom.com *.tiktok.com *.trustpilot.com *.twitter.com vk.com www.youtube.com *.dev *.io *.net *.org *.ru *.ua,domain=agroter.com.ua|alensat.com|allbasketball.org|askentire.net|autonews.co.ua|autosoftos.com|babla.ru|bio-lessons.ru|cardiagram.com.ua|clickthis.blog|coollib.net|elegantwoman.kyiv.ua|farposst.ru|findhow.org|gazeta-misto.te.ua|golos.te.ua|icon-icons.com|ilenta.com|index.minfin.com.ua|inforesist.org|kurs.com.ua|life.pravda.com.ua|mirlib.ru|modfix.ru|musinfo.net|ontvtime.ru|orbit-games.com|perpendicular.pro|pes-files.ru|poezdato.net|poizdato.net|ruboard.website|sundries.ua|tabloid.pravda.com.ua|tenews.org.ua|tribun.com.ua|uapress.kyiv.ua|valorantinfo.com|vesti-ua.net|vkazivka.com|wallpapershome.ru|xn--80aaukc.xn--j1amh|skidkaonline.ru
@@ -21,6 +21,9 @@ a17393 1
 blog.korabli.su##.promo-wrapper
 d18359 1
 d18463 1
+d18940 1
+a18940 1
+agri-gator.com.ua,itsider.com.ua,mmr.net.ua,obozvrn.ru,rama.com.ua,rusfootball.info,subbota.ua,youtebem.com##[itemtype="https://schema.org/WPAdBlock"]
 a19456 1
 versii.if.ua##a[href]:not([href^="/"]):not([href^="https://versii.if.ua"]) > img
 a19875 1
@@ -204,11 +207,14 @@ ok.ru#?#.feed-list > .feed-w:-abp-has([class^="feed"] span ~ span ~ span ~ span 
 a22257 1
 ok.ru#?#div:-abp-has(> #hook_Block_CompactFooter) > div:not(#hook_Block_CompactFooter)
 d22262 4
-a22265 2
+a22265 4
 ! Блокировка
 ||ok.ru/res/js/app/RightColumn_*.js
+||ok.ru/res/js/b/bpo_*.js
+||ok.ru/res/js/nativeHooks_*.js
 d22267 1
-a22878 1
+a22878 2
+/*ylecd=$popup,domain=dzen.ru
 /*yleed=$popup,domain=dzen.ru
 a25002 1
 @@||ads.adfox.ru^$popup,domain=magnit.ru
@@ -222,6 +228,9 @@ d25599 2
 d25837 1
 a25837 1
 kurs.com.ua,ontvtime.ru,skidkaonline.ru##body > div[style*="background-color:"][style*="z-index:"]
+d27473 1
+a27473 1
+dzen.ru##.article-page-layout > main > div > div[id]
 d27632 3
 d27638 1
 d27650 2

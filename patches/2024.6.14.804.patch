@@ -1,8 +1,8 @@
-diff name:ruadlist lines:267 checksum:7b33beaaaa
+diff name:ruadlist lines:276 checksum:ac5df0018d
 d4 2
 a5 2
-! Last modified: Mon, 17 Jun 2024 11:18:05 +0000
-! Diff-Path: ../patches/2024.6.17.678.patch#ruadlist
+! Last modified: Mon, 17 Jun 2024 16:27:31 +0000
+! Diff-Path: ../patches/2024.6.17.987.patch#ruadlist
 d9977 1
 d10166 1
 a10166 1
@@ -30,6 +30,9 @@ a17393 1
 blog.korabli.su##.promo-wrapper
 d18359 1
 d18463 1
+d18940 1
+a18940 1
+agri-gator.com.ua,itsider.com.ua,mmr.net.ua,obozvrn.ru,rama.com.ua,rusfootball.info,subbota.ua,youtebem.com##[itemtype="https://schema.org/WPAdBlock"]
 a19456 1
 versii.if.ua##a[href]:not([href^="/"]):not([href^="https://versii.if.ua"]) > img
 a19875 1
@@ -216,13 +219,16 @@ ok.ru#?#.feed-list > .feed-w:-abp-has([class^="feed"] span ~ span ~ span ~ span 
 a22257 1
 ok.ru#?#div:-abp-has(> #hook_Block_CompactFooter) > div:not(#hook_Block_CompactFooter)
 d22262 4
-a22265 2
+a22265 4
 ! Блокировка
 ||ok.ru/res/js/app/RightColumn_*.js
+||ok.ru/res/js/b/bpo_*.js
+||ok.ru/res/js/nativeHooks_*.js
 d22267 1
 a22859 1
 /*ycleed=$popup,domain=dzen.ru
-a22877 1
+a22877 2
+/*ylecd=$popup,domain=dzen.ru
 /*yleed=$popup,domain=dzen.ru
 a25001 1
 @@||ads.adfox.ru^$popup,domain=magnit.ru
@@ -236,6 +242,9 @@ d25598 2
 d25836 1
 a25836 1
 kurs.com.ua,ontvtime.ru,skidkaonline.ru##body > div[style*="background-color:"][style*="z-index:"]
+d27472 1
+a27472 1
+dzen.ru##.article-page-layout > main > div > div[id]
 d27478 1
 a27478 1
 dzen.ru##aside[id^="article_"][class*="rilghght"] > div[class]
