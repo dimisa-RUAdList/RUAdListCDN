@@ -1,10 +1,11 @@
-diff name:ruadlist lines:48 checksum:ac5df0018d
+diff name:ruadlist lines:49 checksum:82fa04ce67
 d4 2
 a5 2
-! Last modified: Mon, 17 Jun 2024 16:27:31 +0000
-! Diff-Path: ../patches/2024.6.17.987.patch#ruadlist
-a10390 1
-/^https?:\/\/vgtimes\.ru\/[a-z0-9]{4}\/[a-z0-9]{4}\/[a-z0-9]{4}\/$/$xmlhttprequest
+! Last modified: Mon, 17 Jun 2024 21:20:37 +0000
+! Diff-Path: ../patches/2024.6.17.1280.patch#ruadlist
+a10390 2
+/^https?:\/\/vgtimes\.ru\/[0-9]{2,}\/$/$xmlhttprequest
+/^https?:\/\/vgtimes\.ru\/[a-z0-9]{4,}\/[a-z0-9]{4,}\/[a-z0-9]{4,}\/$/$xmlhttprequest
 d14808 1
 d14845 1
 a14845 1
