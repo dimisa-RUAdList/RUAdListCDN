@@ -1,21 +1,36 @@
-diff name:ruadlist lines:20 checksum:8fd00a4381
+diff name:ruadlist lines:35 checksum:f0b8f143fc
 d4 2
 a5 2
-! Last modified: Tue, 18 Jun 2024 07:21:00 +0000
-! Diff-Path: ../patches/2024.6.18.440.patch#ruadlist
+! Last modified: Tue, 18 Jun 2024 12:40:02 +0000
+! Diff-Path: ../patches/2024.6.18.760.patch#ruadlist
 d10391 1
 a10391 3
 /^https?:\/\/vgtimes\.ru\/[0-9]{2,}\/$/$xmlhttprequest
 /^https?:\/\/vgtimes\.ru\/[a-z0-9]{2,}\/[a-z0-9]{1,2}\/$/$xmlhttprequest
 /^https?:\/\/vgtimes\.ru\/[a-z0-9]{4,}\/[a-z0-9]{4,}\/[a-z0-9]{4,}\/$/$xmlhttprequest
+d15883 1
 d18934 1
 a18934 1
 agri-gator.com.ua,itsider.com.ua,mmr.net.ua,obozvrn.ru,rama.com.ua,rusfootball.info,subbota.ua,youtebem.com##[itemtype="https://schema.org/WPAdBlock"]
+a19896 1
+censor.net##aside[id][style^="height:"][style*="visibility"]
+d21673 1
+a21673 1
+||pikabu.ru/vp$xmlhttprequest,domain=pikabu.ru
 a22111 2
 ||ok.ru/res/js/b/bpo_*.js
 ||ok.ru/res/js/nativeHooks_*.js
+a22721 1
+/*ylced=$popup,domain=dzen.ru
 a22723 1
 /*ylecd=$popup,domain=dzen.ru
 d27321 1
 a27321 1
 dzen.ru##.article-page-layout > main > div > div[id]
+d27327 1
+a27327 1
+dzen.ru##aside[id^="article_"][class*="rilght"] > div[class]
+d27330 2
+a27331 2
+dzen.ru##div[class*="article__"] > .undefined ~ div[class*="midldei"] > div[id][class]
+dzen.ru##div[class*="witdjejet"] > div[class*="container"] > div ~ div
