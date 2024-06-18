@@ -1,15 +1,11 @@
-diff name:ruadlist lines:266 checksum:41a3db3137
+diff name:ruadlist lines:271 checksum:e3d66fcbe1
 d4 2
 a5 2
-! Last modified: Tue, 18 Jun 2024 17:24:18 +0000
-! Diff-Path: ../patches/2024.6.18.1044.patch#ruadlist
+! Last modified: Tue, 18 Jun 2024 22:23:06 +0000
+! Diff-Path: ../patches/2024.6.18.1343.patch#ruadlist
 d10165 1
 a10165 1
 $csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: *.addtoany.com *.amazonaws.com *.cloudflare.com *.dmca.com *.disqus.com *.disquscdn.com *.facebook.com *.getsitecontrol.com apis.google.com cse.google.com *.google.com/cse/ *.google.com/complete/ *.google.com/recaptcha/ translate.google.com www.google.com *.googleapis.com *.googletagmanager.com *.gstatic.com/recaptcha/ *.instagram.com *.jivosite.com *.jquery.com *.keycaptcha.com *.sendpulse.com *.sharethis.com *.po.st *.threadloom.com *.tiktok.com *.trustpilot.com *.twitter.com vk.com www.youtube.com *.dev *.io *.net *.org *.ru *.ua,domain=agroter.com.ua|alensat.com|allbasketball.org|askentire.net|autonews.co.ua|autosoftos.com|babla.ru|bio-lessons.ru|cardiagram.com.ua|clickthis.blog|coollib.net|elegantwoman.kyiv.ua|farposst.ru|findhow.org|gazeta-misto.te.ua|golos.te.ua|icon-icons.com|ilenta.com|index.minfin.com.ua|inforesist.org|kurs.com.ua|life.pravda.com.ua|mirlib.ru|modfix.ru|musinfo.net|ontvtime.ru|orbit-games.com|perpendicular.pro|pes-files.ru|poezdato.net|poizdato.net|ruboard.website|sundries.ua|tabloid.pravda.com.ua|tenews.org.ua|tribun.com.ua|uapress.kyiv.ua|valorantinfo.com|vesti-ua.net|vkazivka.com|wallpapershome.ru|xn--80aaukc.xn--j1amh|skidkaonline.ru
-a10390 3
-/^https?:\/\/vgtimes\.ru\/[0-9]{2,}\/$/$xmlhttprequest
-/^https?:\/\/vgtimes\.ru\/[a-z0-9]{2,}\/[a-z0-9]{1,2}\/$/$xmlhttprequest
-/^https?:\/\/vgtimes\.ru\/[a-z0-9]{4,}\/[a-z0-9]{4,}\/[a-z0-9]{4,}\/$/$xmlhttprequest
 d14808 1
 d14845 1
 a14845 1
@@ -41,7 +37,7 @@ d21678 1
 a21678 1
 ||pikabu.ru/vp$xmlhttprequest,domain=pikabu.ru
 d21881 46
-a21926 31
+a21926 32
 ! Общие
 ~e.mail.ru,mail.ru,sportmail.ru##.article__item_conversionlink
 ~e.mail.ru,mail.ru,sportmail.ru##.article__item_slot
@@ -50,6 +46,7 @@ a21926 31
 mail.ru##.ph-project-promo-container
 ~e.mail.ru,mail.ru,sportmail.ru#?#.viewbox__holder div:-abp-has(> .viewbox__side-loader)
 ~e.mail.ru,mail.ru##[data-logger-parent="sidebarDoubleRight"]
+~e.mail.ru,mail.ru,sportmail.ru##[data-rb-slot]
 ~e.mail.ru,mail.ru,sportmail.ru##[data-view^="Slot"][data-adq-id]
 ~e.mail.ru,mail.ru,sportmail.ru#?#aside div[style^="min-height:"][data-hideorder]:first-child:-abp-has(> [data-rb-slot])
 ~e.mail.ru,mail.ru,sportmail.ru##div[class*="rb-slot_plug"]
@@ -265,3 +262,11 @@ d27879 1
 a27879 1
 4studio.com.ua,cikavosti.com,dialogs.org.ua,fakty.ua,gorodkiev.com.ua,informator.ua,kriminal.tv,pingvin.pro,technoportal.com.ua,u-news.com.ua,uanews.org.ua,volynpost.com##+js(abort-on-property-read, weekCallbacks)
 d28247 2
+d28294 3
+a28296 2
+e.mail.ru,octavius.mail.ru##+js(set-constant, Object.prototype.hasAdBlock, null)
+e.mail.ru,octavius.mail.ru##body > div > .letter-list-item-adv:style(display: block !important)
+a28381 3
+gazeta.ru,lenta.ru##iframe[src^="https://vp.rambler.ru/player/"] ~ svg
+gazeta.ru,lenta.ru##iframe[src^="https://vp.rambler.ru/player/"]:style(position: relative !important)
+||vp.rambler.ru/player/$csp=media-src 'self',domain=championat.com|lenta.ru|gazeta.ru

@@ -1,16 +1,17 @@
-diff name:ruadlist lines:21 checksum:41a3db3137
+diff name:ruadlist lines:30 checksum:e3d66fcbe1
 d4 2
 a5 2
-! Last modified: Tue, 18 Jun 2024 17:24:18 +0000
-! Diff-Path: ../patches/2024.6.18.1044.patch#ruadlist
-a10391 1
-/^https?:\/\/vgtimes\.ru\/[a-z0-9]{2,}\/[a-z0-9]{1,2}\/$/$xmlhttprequest
+! Last modified: Tue, 18 Jun 2024 22:23:06 +0000
+! Diff-Path: ../patches/2024.6.18.1343.patch#ruadlist
+d10391 2
 d15884 1
 a19897 1
 censor.net##aside[id][style^="height:"][style*="visibility"]
 d21674 1
 a21674 1
 ||pikabu.ru/vp$xmlhttprequest,domain=pikabu.ru
+a21884 1
+~e.mail.ru,mail.ru,sportmail.ru##[data-rb-slot]
 a22724 1
 /*ylced=$popup,domain=dzen.ru
 d27331 1
@@ -20,3 +21,11 @@ d27334 2
 a27335 2
 dzen.ru##div[class*="article__"] > .undefined ~ div[class*="midldei"] > div[id][class]
 dzen.ru##div[class*="witdjejet"] > div[class*="container"] > div ~ div
+d28128 3
+a28130 2
+e.mail.ru,octavius.mail.ru##+js(set-constant, Object.prototype.hasAdBlock, null)
+e.mail.ru,octavius.mail.ru##body > div > .letter-list-item-adv:style(display: block !important)
+a28215 3
+gazeta.ru,lenta.ru##iframe[src^="https://vp.rambler.ru/player/"] ~ svg
+gazeta.ru,lenta.ru##iframe[src^="https://vp.rambler.ru/player/"]:style(position: relative !important)
+||vp.rambler.ru/player/$csp=media-src 'self',domain=championat.com|lenta.ru|gazeta.ru
