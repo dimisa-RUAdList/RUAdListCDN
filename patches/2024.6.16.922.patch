@@ -1,8 +1,8 @@
-diff name:ruadlist lines:274 checksum:f08ff30ceb
+diff name:ruadlist lines:280 checksum:cb36fa1397
 d4 2
 a5 2
-! Last modified: Wed, 19 Jun 2024 13:24:21 +0000
-! Diff-Path: ../patches/2024.6.19.804.patch#ruadlist
+! Last modified: Wed, 19 Jun 2024 18:28:27 +0000
+! Diff-Path: ../patches/2024.6.19.1108.patch#ruadlist
 d10165 1
 a10165 1
 $csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: *.addtoany.com *.amazonaws.com *.cloudflare.com *.dmca.com *.disqus.com *.disquscdn.com *.facebook.com *.getsitecontrol.com apis.google.com cse.google.com *.google.com/cse/ *.google.com/complete/ *.google.com/recaptcha/ translate.google.com www.google.com *.googleapis.com *.googletagmanager.com *.gstatic.com/recaptcha/ *.instagram.com *.jivosite.com *.jquery.com *.keycaptcha.com *.sendpulse.com *.sharethis.com *.po.st *.threadloom.com *.tiktok.com *.trustpilot.com *.twitter.com vk.com www.youtube.com *.dev *.io *.net *.org *.ru *.ua,domain=agroter.com.ua|alensat.com|allbasketball.org|askentire.net|autonews.co.ua|autosoftos.com|babla.ru|bio-lessons.ru|cardiagram.com.ua|clickthis.blog|coollib.net|elegantwoman.kyiv.ua|farposst.ru|findhow.org|gazeta-misto.te.ua|golos.te.ua|icon-icons.com|ilenta.com|index.minfin.com.ua|inforesist.org|kurs.com.ua|life.pravda.com.ua|mirlib.ru|modfix.ru|musinfo.net|ontvtime.ru|orbit-games.com|perpendicular.pro|pes-files.ru|poezdato.net|poizdato.net|ruboard.website|sundries.ua|tabloid.pravda.com.ua|tenews.org.ua|tribun.com.ua|uapress.kyiv.ua|valorantinfo.com|vesti-ua.net|vkazivka.com|wallpapershome.ru|xn--80aaukc.xn--j1amh|skidkaonline.ru
@@ -33,9 +33,13 @@ d20595 1
 d20762 1
 a20762 1
 bigkyiv.com.ua,dochronika.ru,footballua.tv,forpost.media,kriminal.tv,pidru4nik.com,swordmaster.org,today.ua,ua,uti-puti.com.ua,www.semestr.ru##div[id^="bn_"]
+a21665 1
+@@||ssp.rambler.ru/capirs_async.js|$script,domain=www.championat.com
 d21678 1
 a21678 1
 ||pikabu.ru/vp$xmlhttprequest,domain=pikabu.ru
+a21690 1
+www.ixbt.com#?#body > style:-abp-contains(margin-top) {remove:true;}
 d21881 46
 a21926 32
 ! Общие
@@ -215,6 +219,8 @@ a22265 4
 ||ok.ru/res/js/b/bpo_*.js
 ||ok.ru/res/js/nativeHooks_*.js
 d22267 1
+a22469 1
+||img.championat.com/brand/
 a22876 1
 /*ylced=$popup,domain=dzen.ru
 a22878 2
@@ -272,4 +278,4 @@ e.mail.ru,octavius.mail.ru##body > div > .letter-list-item-adv:style(display: bl
 a28381 3
 gazeta.ru,lenta.ru##iframe[src^="https://vp.rambler.ru/player/"] ~ svg
 gazeta.ru,lenta.ru##iframe[src^="https://vp.rambler.ru/player/"]:style(position: relative !important)
-||vp.rambler.ru/player/$csp=media-src 'self',domain=championat.com|lenta.ru|gazeta.ru
+||vp.rambler.ru/player/$csp=media-src 'self',domain=championat.com|lenta.ru|gazeta.ru|rambler.ru|~vp.rambler.ru

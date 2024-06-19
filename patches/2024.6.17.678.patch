@@ -1,8 +1,8 @@
-diff name:ruadlist lines:44 checksum:f08ff30ceb
+diff name:ruadlist lines:50 checksum:cb36fa1397
 d4 2
 a5 2
-! Last modified: Wed, 19 Jun 2024 13:24:21 +0000
-! Diff-Path: ../patches/2024.6.19.804.patch#ruadlist
+! Last modified: Wed, 19 Jun 2024 18:28:27 +0000
+! Diff-Path: ../patches/2024.6.19.1108.patch#ruadlist
 d10391 1
 d15883 1
 d18934 1
@@ -10,14 +10,20 @@ a18934 1
 agri-gator.com.ua,itsider.com.ua,mmr.net.ua,obozvrn.ru,rama.com.ua,rusfootball.info,subbota.ua,youtebem.com##[itemtype="https://schema.org/WPAdBlock"]
 a19896 1
 censor.net##aside[id][style^="height:"]
+a21660 1
+@@||ssp.rambler.ru/capirs_async.js|$script,domain=www.championat.com
 d21673 1
 a21673 1
 ||pikabu.ru/vp$xmlhttprequest,domain=pikabu.ru
+a21685 1
+www.ixbt.com#?#body > style:-abp-contains(margin-top) {remove:true;}
 a21883 1
 ~e.mail.ru,mail.ru,sportmail.ru##[data-rb-slot]
 a22111 2
 ||ok.ru/res/js/b/bpo_*.js
 ||ok.ru/res/js/nativeHooks_*.js
+a22314 1
+||img.championat.com/brand/
 a22721 1
 /*ylced=$popup,domain=dzen.ru
 a22723 1
@@ -42,4 +48,4 @@ e.mail.ru,octavius.mail.ru##body > div > .letter-list-item-adv:style(display: bl
 a28211 3
 gazeta.ru,lenta.ru##iframe[src^="https://vp.rambler.ru/player/"] ~ svg
 gazeta.ru,lenta.ru##iframe[src^="https://vp.rambler.ru/player/"]:style(position: relative !important)
-||vp.rambler.ru/player/$csp=media-src 'self',domain=championat.com|lenta.ru|gazeta.ru
+||vp.rambler.ru/player/$csp=media-src 'self',domain=championat.com|lenta.ru|gazeta.ru|rambler.ru|~vp.rambler.ru
