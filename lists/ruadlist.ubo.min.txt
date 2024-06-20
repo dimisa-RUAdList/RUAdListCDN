@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 20 Jun 2024 04:24:22 +0000
-! Diff-Path: ../patches/2024.6.20.264.patch#ruadlist
+! Last modified: Thu, 20 Jun 2024 09:24:35 +0000
+! Diff-Path: ../patches/2024.6.20.564.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -17697,7 +17697,7 @@ ura-inform.com##.search_bar ~ .padd
 salonav.com##.secondary-sidebar > .mom_custom_text
 drinks.ua##.secondary-slider
 softbesplatno.net##.sect-recl
-ctrana.news,strana.news,strana.one,strana.today##.sect-repeat-ban
+ctrana.news,ctrana.one,strana.news,strana.one,strana.today##.sect-repeat-ban
 utkonos.mybb.ru##.section > #tn1
 kulturomania.ru##.section-banner
 mastergrad.com##.section-body > [itemprop="comment"] ~ div[style="margin-bottom: 15px;"]
@@ -21670,7 +21670,7 @@ ictv.ua,vikna.tv##div[id^="div-gpt-ad-"]
 !||www.liveinternet.ru/users/$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/cgi-bin/rpls.fcgi?list= https://www.liveinternet.ru/spell/spell.js https://www.liveinternet.ru/share/js/share.js https://www.liveinternet.ru/4Ek/JS/diary/main/nav/regoradd.js https://www.liveinternet.ru/4Ek/JS/diary/trans.js
 !||www.liveinternet.ru/|$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/utf/lici.js https://www.liveinternet.ru/utf/li.js https://www.liveinternet.ru/utf/main_new.js
 ! Pikabu (ловушка для обфускации)
-||pikabu.ru/vp$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/vn$xmlhttprequest,domain=pikabu.ru
 ! селекторы
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
@@ -22724,6 +22724,7 @@ dzen.ru##div[style*=" !important; "][style$=" !important;"]
 /*yhid=$popup,domain=dzen.ru
 /*yhyd=$popup,domain=dzen.ru
 /*yiclyd=$popup,domain=dzen.ru
+/*ylcd=$popup,domain=dzen.ru
 /*ylced=$popup,domain=dzen.ru
 /*ylclyd=$popup,domain=dzen.ru
 /*ylcyd=$popup,domain=dzen.ru
