@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 20 Jun 2024 14:21:48 +0000
-! Diff-Path: ../patches/2024.6.20.861.patch#ruadlist
+! Last modified: Thu, 20 Jun 2024 19:17:22 +0000
+! Diff-Path: ../patches/2024.6.20.1157.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -12469,8 +12469,7 @@ lada.kz/uploads/banners/
 ||promin.cv.ua/uploads/banner
 ||promo.livelib.ru/
 ||promodeejay.net/branding/
-||promodj.com/brandings/
-||promodj.com/legacy/i/branding/
+||promodj.com/st/banners/
 ||pronpix.ru/*under.js
 ||properm.ru/*banner$script
 ||prophotos.ru/data/brandings/
@@ -13558,6 +13557,7 @@ stopress.ru###aside.punktir
 upn.ru###aspnetForm > center
 gorod55.ru###at-cv-lightbox
 comments.ua###atlanta
+promodj.com###atlas_240x400
 google.by,google.com,google.com.ua,google.kz,google.ru###atvcap
 meta.ua###aukro_s
 nm71.ru###az1
@@ -13660,6 +13660,7 @@ allbasketball.org###branding-ads
 foto.ua###branding-bg-pickit
 truba.com###branding-head-link
 namba.tj###branding-html
+promodj.com###branding_click
 kolyan.net,telegraf.in.ua,traffilm.net,vse.kz###branding_link
 telegraf.in.ua###branding_top
 24tv.ua###branding_wrap
@@ -13838,7 +13839,6 @@ life-prog.ru###fixlife
 poisk-ru.ru###fixydiv
 api.ekranka.tv,api.turk-sinema.ru,api.yadoma.tv###flash_layer
 metamarket.ua###flash_market_468
-promodj.com###flashbranding
 games.apitech.ru###flip_container
 sport247.live###float-bottom-content-closer
 mmoglobus.ru###floating
@@ -14159,6 +14159,7 @@ kino-teatr.ua###ourBranding
 vashdom.ru###out_banner
 electricalschool.info###outer > #third
 woman.ru###outside-col
+promodj.com###overlaybranding
 1plus1.video###ovva-player .o-pp
 outlook.live.com###owaadbar
 wikireality.ru###p-sidebar-extlinks
@@ -14911,10 +14912,10 @@ nur.kz##.adv-placeholder
 aniqit.com,kodik.biz,kodik.cc,kodik.info,kodikdb.com##.adv-player
 sintetiki.net##.adv-sale
 24tv.ua,pise4ka.net##.adv-wrapper
-promodj.com##.adv240x400
 education.ua##.advOnTop
 splkirov.ru##.adv_240x400
 vestivrn.ru##.adv__horizontal
+promodj.com##.adv_advmusic
 games-reviews.net##.adv_algn
 me.fo##.adv_big
 harpersbazaar.com.ua##.adv_block_txt
@@ -16760,6 +16761,7 @@ imhonet.ru##.m-videoplayer-advert
 ria.ru##.m-ya
 fotokto.ru##.m2
 ppl.nnov.ru##.m_lbanner
+promodj.com##.magig_conteiner
 tonkosti.ru##.magnifique-header__partners
 raenza.ru##.main > .container > .row .placeholder
 tvmag.ru#?#.main > .container:-abp-has(> div:empty ~ script)
@@ -16845,7 +16847,6 @@ kinofann.ru##.market
 russkiypro.ru##.market-div
 belretail.by##.market-link
 wylsa.com##.marketWidgetWrapper
-promodj.com##.market_offer_featured
 supersadovnik.ru##.marketgid
 sovets.net,sovets24.ru##.mask
 match-center.playmaker24.ru##.match-bet
@@ -21885,6 +21886,7 @@ mail.ru##.ph-project-promo-container
 ~e.mail.ru,mail.ru##[data-logger-parent="sidebarDoubleRight"]
 ~e.mail.ru,mail.ru,sportmail.ru##[data-rb-slot]
 ~e.mail.ru,mail.ru,sportmail.ru##[data-view^="Slot"][data-adq-id]
+~e.mail.ru,mail.ru,sportmail.ru##a[class^="rb-"][href^="https://r.mail.ru/redir/"][target="_blank"]
 ~e.mail.ru,mail.ru,sportmail.ru#?#aside div[style^="min-height:"][data-hideorder]:first-child:-abp-has(> [data-rb-slot])
 ~e.mail.ru,mail.ru,sportmail.ru##div[class*="rb-slot_plug"]
 ~e.mail.ru,mail.ru,sportmail.ru##div[data-closewrap-container]
@@ -26909,8 +26911,8 @@ prikol.ru###container:style(top: auto !important)
 prikol.ru##html > body > *:style(pointer-events: auto !important)
 prikol.ru##html > body:style(background-image:none !important; pointer-events: none !important)
 ! ---
-promodj.com###topbrandingspot:style(padding-top: 0 !important)
-promodj.com##html:not(#id) > body:style(background-color: #fff !important)
+promodj.com###topbrandingspot:style(padding-top: 0 !important; background: none !important)
+promodj.com##html:not(#id) > body:style(background: none !important)
 ! ---
 prophotos.ru##body:not(#id):style(padding-top: 130px !important)
 ! ---
@@ -27925,7 +27927,7 @@ hentai-share.one##+js(set-constant, adBlock, false)
 gdz-putina.fun,gdz.ninja,gdz.ru,gdzotputina.club,gdzputina.net,megaresheba.com,megaresheba.ru,resheba.me,spishi.fun,zoobrilka.net##+js(set-constant, app.book.external, null)
 razlozhi.ru##+js(set-constant, cadb, false)
 audioportal.su##+js(set-constant, clicks, 2)
-tass.ru##+js(set-constant, frames.innerWidth, {})
+~spec.tass.ru,tass.ru##+js(set-constant, frames.innerWidth, {})
 gazeta.ru##+js(set-constant, g_GazetaNoExchange, true)
 gazeta.ru##+js(set-constant, isAdFree, noopFunc)
 playground.ru##+js(set-constant, localStorage.localstorageGameData, '')
