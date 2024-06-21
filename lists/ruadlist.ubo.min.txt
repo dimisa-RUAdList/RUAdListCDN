@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 21 Jun 2024 10:25:34 +0000
-! Diff-Path: ../patches/2024.6.21.625.patch#ruadlist
+! Last modified: Fri, 21 Jun 2024 15:28:15 +0000
+! Diff-Path: ../patches/2024.6.21.928.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -15733,6 +15733,7 @@ drive2.ru##.c-dv-p
 drive2.com##.c-dv-sns
 dsnews.ua#?#.c-feed__list-item:-abp-has(> .c-feed__item > .c-r)
 vsplanet.net##.c-left > .block ~ *
+telegraf.com.ua#?#.c-post__content > div:-abp-has(> [id^="_vidverto-"])
 dsnews.ua,focus.ua##.c-r
 tsn.ua#?#.c-section > .l-row > .l-col:-abp-has(> [data-ad-container])
 5-tv.ru##.cFadeDark
@@ -21809,9 +21810,9 @@ checkadblock.ru##.warning
 ||adblock-tester.com^$csp=script-src 'self'
 ||checkadblock.ru^$csp=script-src 'self'
 ! GISMeteo domains
-gismeteo.by,gismeteo.kz##.column2 > .section-rss
+gismeteo.by##.column2 > .section-rss
 gismeteo.ru##.content-column > .section-media
-gismeteo.ru##.content-column ~ .content-column > .section-rss
+gismeteo.kz,gismeteo.ru##.content-column ~ .content-column > .section-rss
 gismeteo.ru##.follow-zen
 gismeteo.by,gismeteo.kz,gismeteo.ru,meteofor.md##.placeholder
 gismeteo.by,gismeteo.kz,meteofor.com.ua##.section-media
@@ -22694,6 +22695,7 @@ dzen.ru##.article-right-ad-block
 dzen.ru##.article__bottom-embed-wrapper > .ad-split-embed + div
 dzen.ru##.zen-ui-viewport-expansion__container:empty
 dzen.ru##.zenad-card-rtb
+dzen.ru##[aria-label="Карточка рeкламы"]
 dzen.ru##[aria-label="Карточка рекламы"]
 dzen.ru##[data-name="video-in-combo-zen-container"]
 dzen.ru#?#div:-abp-has(> .adv-skeleton___main)
@@ -22723,6 +22725,7 @@ dzen.ru##div[style*=" !important; "][style$=" !important;"]
 /*yclid=$popup,domain=dzen.ru
 /*ycliid=$popup,domain=dzen.ru
 /*ycliyd=$popup,domain=dzen.ru
+/*yclld=$popup,domain=dzen.ru
 /*yclyd=$popup,domain=dzen.ru
 /*yclyyd=$popup,domain=dzen.ru
 /*ycyd=$popup,domain=dzen.ru
