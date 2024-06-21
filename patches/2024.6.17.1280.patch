@@ -1,8 +1,8 @@
-diff name:ruadlist lines:131 checksum:2e1a0c718b
+diff name:ruadlist lines:155 checksum:185bb64a66
 d4 2
 a5 2
-! Last modified: Fri, 21 Jun 2024 15:28:15 +0000
-! Diff-Path: ../patches/2024.6.21.928.patch#ruadlist
+! Last modified: Fri, 21 Jun 2024 20:22:42 +0000
+! Diff-Path: ../patches/2024.6.21.1222.patch#ruadlist
 d10165 1
 a10165 1
 $csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: *.addtoany.com *.amazonaws.com *.cloudflare.com *.dmca.com *.disqus.com *.disquscdn.com *.facebook.com *.getsitecontrol.com apis.google.com cse.google.com *.google.com/cse/ *.google.com/complete/ *.google.com/recaptcha/ translate.google.com www.google.com *.googleapis.com *.googletagmanager.com *.gstatic.com/recaptcha/ *.instagram.com *.jivosite.com *.jquery.com *.keycaptcha.com *.sendpulse.com *.sharethis.com *.po.st *.threadloom.com *.tiktok.com *.trustpilot.com *.twitter.com vk.com www.youtube.com *.dev *.io *.net *.org *.ru *.ua,domain=agroter.com.ua|alensat.com|allbasketball.org|askentire.net|autonews.co.ua|autosoftos.com|babla.ru|bio-lessons.ru|cardiagram.com.ua|clickthis.blog|coollib.net|elegantwoman.kyiv.ua|farposst.ru|findhow.org|gazeta-misto.te.ua|golos.te.ua|icon-icons.com|ilenta.com|index.minfin.com.ua|inforesist.org|kreschatic.kiev.ua|kurs.com.ua|life.pravda.com.ua|mirlib.ru|modfix.ru|musinfo.net|ontvtime.ru|orbit-games.com|pb-news.info|perpendicular.pro|pes-files.ru|poezdato.net|poizdato.net|ruboard.website|sundries.ua|tabloid.pravda.com.ua|tenews.org.ua|tribun.com.ua|uapress.kyiv.ua|valorantinfo.com|vesti-ua.net|vkazivka.com|wallpapershome.ru|xn--80aaukc.xn--j1amh|skidkaonline.ru
@@ -30,6 +30,9 @@ d15286 1
 a15734 1
 telegraf.com.ua#?#.c-post__content > div:-abp-has(> [id^="_vidverto-"])
 d15884 1
+d15965 1
+a15965 1
+maximonline.ru,parents.ru,vokrugsveta.ru,wday.ru##.creative-container._vb-2
 a16090 1
 format.kr.ua##.elementor-widget-container > a[href][target="_blank"] > img
 a16765 1
@@ -45,8 +48,18 @@ avtosreda.ru,vikna.if.ua##[class*="banner-border"]
 d18784 1
 a18784 1
 examenpdd.com,liveinternet.ru##[data-container="outer"]
+a18786 1
+starhit.ru##[data-creative="hb-top"]
+a19257 1
+fontanka.ru##a[href*="erid="][href*="#lenta-btn"]
+d19382 1
+a19382 1
+19rusinfo.ru,belta.by,dailystorm.ru,dni.ru,doctorpiter.ru,eg.ru,kakprosto.ru,marieclaire.ru,maximonline.ru,news.ru,newxboxone.ru,parents.ru,playboyrussia.com,psychologies.ru,sobesednik.ru,tvtver.ru,vokrugsveta.ru,wday.ru,woman.ru##a[href*="zen.yandex.ru"]
 a19897 1
 censor.net##aside[id][style^="height:"]
+d20428 1
+a20428 1
+doctorpiter.ru,marieclaire.ru,maximonline.ru,mydecor.ru,parents.ru,psychologies.ru,starhit.ru,thegirl.ru,vokrugsveta.ru,wday.ru,woman.ru##div[class^="creative-placeholder"]
 a21661 1
 @@||ssp.rambler.ru/capirs_async.js|$script,domain=www.championat.com
 d21674 1
@@ -69,6 +82,10 @@ a21919 3
 ! Дзен новости Mail-edition
 dzen.ru##.news-mt-advert
 dzen.ru##[aria-label="Таб категорий"][href^="/floors-promo/"]
+d22138 1
+a22138 2
+ru##[data-ns-portal] [data-adv-mark]
+ru##[data-ns-portal] a[href*="erid="][href*="#lenta-btn"]
 a22317 1
 ||img.championat.com/brand/
 d22569 1
@@ -112,6 +129,10 @@ d26901 2
 a26902 2
 promodj.com###topbrandingspot:style(padding-top: 0 !important; background: none !important)
 promodj.com##html:not(#id) > body:style(background: none !important)
+d26992 2
+a26993 2
+ru##[data-ns-portal] .page-type-article.branding div[class^="content_"] > div[class^="bottom"]:style(max-width: 100% !important)
+ru##[data-ns-portal] .page-type-article.branding:style(--grid-breakpoint-lg: unset !important; margin-top: unset !important; width: 100% !important)
 d27331 1
 a27331 1
 dzen.ru##aside[id^="article_"][class*="rilght"] > div[class]
@@ -122,6 +143,9 @@ dzen.ru##div[class*="witdjejet"] > div[class*="container"] > div ~ div
 d27917 1
 a27917 1
 ~spec.tass.ru,tass.ru##+js(set-constant, frames.innerWidth, {})
+d27960 1
+d27972 1
+d28015 1
 d28128 3
 a28130 2
 e.mail.ru,octavius.mail.ru##+js(set-constant, Object.prototype.hasAdBlock, null)
