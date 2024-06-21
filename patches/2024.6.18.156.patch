@@ -1,11 +1,11 @@
-diff name:ruadlist lines:108 checksum:a620b3d27f
+diff name:ruadlist lines:120 checksum:654b7be0d3
 d4 2
 a5 2
-! Last modified: Fri, 21 Jun 2024 05:23:53 +0000
-! Diff-Path: ../patches/2024.6.21.323.patch#ruadlist
+! Last modified: Fri, 21 Jun 2024 10:25:34 +0000
+! Diff-Path: ../patches/2024.6.21.625.patch#ruadlist
 d10165 1
 a10165 1
-$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: *.addtoany.com *.amazonaws.com *.cloudflare.com *.dmca.com *.disqus.com *.disquscdn.com *.facebook.com *.getsitecontrol.com apis.google.com cse.google.com *.google.com/cse/ *.google.com/complete/ *.google.com/recaptcha/ translate.google.com www.google.com *.googleapis.com *.googletagmanager.com *.gstatic.com/recaptcha/ *.instagram.com *.jivosite.com *.jquery.com *.keycaptcha.com *.sendpulse.com *.sharethis.com *.po.st *.threadloom.com *.tiktok.com *.trustpilot.com *.twitter.com vk.com www.youtube.com *.dev *.io *.net *.org *.ru *.ua,domain=agroter.com.ua|alensat.com|allbasketball.org|askentire.net|autonews.co.ua|autosoftos.com|babla.ru|bio-lessons.ru|cardiagram.com.ua|clickthis.blog|coollib.net|elegantwoman.kyiv.ua|farposst.ru|findhow.org|gazeta-misto.te.ua|golos.te.ua|icon-icons.com|ilenta.com|index.minfin.com.ua|inforesist.org|kreschatic.kiev.ua|kurs.com.ua|life.pravda.com.ua|mirlib.ru|modfix.ru|musinfo.net|ontvtime.ru|orbit-games.com|perpendicular.pro|pes-files.ru|poezdato.net|poizdato.net|ruboard.website|sundries.ua|tabloid.pravda.com.ua|tenews.org.ua|tribun.com.ua|uapress.kyiv.ua|valorantinfo.com|vesti-ua.net|vkazivka.com|wallpapershome.ru|xn--80aaukc.xn--j1amh|skidkaonline.ru
+$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: *.addtoany.com *.amazonaws.com *.cloudflare.com *.dmca.com *.disqus.com *.disquscdn.com *.facebook.com *.getsitecontrol.com apis.google.com cse.google.com *.google.com/cse/ *.google.com/complete/ *.google.com/recaptcha/ translate.google.com www.google.com *.googleapis.com *.googletagmanager.com *.gstatic.com/recaptcha/ *.instagram.com *.jivosite.com *.jquery.com *.keycaptcha.com *.sendpulse.com *.sharethis.com *.po.st *.threadloom.com *.tiktok.com *.trustpilot.com *.twitter.com vk.com www.youtube.com *.dev *.io *.net *.org *.ru *.ua,domain=agroter.com.ua|alensat.com|allbasketball.org|askentire.net|autonews.co.ua|autosoftos.com|babla.ru|bio-lessons.ru|cardiagram.com.ua|clickthis.blog|coollib.net|elegantwoman.kyiv.ua|farposst.ru|findhow.org|gazeta-misto.te.ua|golos.te.ua|icon-icons.com|ilenta.com|index.minfin.com.ua|inforesist.org|kreschatic.kiev.ua|kurs.com.ua|life.pravda.com.ua|mirlib.ru|modfix.ru|musinfo.net|ontvtime.ru|orbit-games.com|pb-news.info|perpendicular.pro|pes-files.ru|poezdato.net|poizdato.net|ruboard.website|sundries.ua|tabloid.pravda.com.ua|tenews.org.ua|tribun.com.ua|uapress.kyiv.ua|valorantinfo.com|vesti-ua.net|vkazivka.com|wallpapershome.ru|xn--80aaukc.xn--j1amh|skidkaonline.ru
 d10391 3
 d12475 2
 a12476 1
@@ -17,9 +17,15 @@ promodj.com###branding_click
 d13844 1
 a14164 1
 promodj.com###overlaybranding
+a14572 1
+patee.ru###top > .sepA
+a14573 1
+patee.ru###top > div[style*="height: 200px"]
 d14917 1
 a14920 1
 promodj.com##.adv_advmusic
+a14985 1
+myfin.by##.alfa-promo-btn
 d15287 1
 d15885 1
 a16091 1
@@ -27,18 +33,23 @@ format.kr.ua##.elementor-widget-container > a[href][target="_blank"] > img
 a16766 1
 promodj.com##.magig_conteiner
 d16852 1
+a17264 1
+patee.ru##.placeR > .link
 d17704 1
 a17704 1
 ctrana.news,ctrana.one,strana.news,strana.one,strana.today##.sect-repeat-ban
 a18670 1
 avtosreda.ru,vikna.if.ua##[class*="banner-border"]
+d18785 1
+a18785 1
+examenpdd.com,liveinternet.ru##[data-container="outer"]
 a19898 1
 censor.net##aside[id][style^="height:"]
 a21662 1
 @@||ssp.rambler.ru/capirs_async.js|$script,domain=www.championat.com
 d21675 1
 a21675 1
-||pikabu.ru/vn$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/vk$xmlhttprequest,domain=pikabu.ru
 a21687 1
 www.ixbt.com#?#body > style:-abp-contains(margin-top) {remove:true;}
 a21885 1
@@ -74,9 +85,10 @@ dzen.ru##div[class^="floor-skeleton-card__skeletonCardWrapper"]
 dzen.ru#?#div[class^="grid__row-"]:-abp-has(> div[class^="video-card-ad"])
 dzen.ru##div[data-name^="zen2"]
 dzen.ru#?#div[data-testid="article-showcase-card"]:-abp-has(> [data-testid="card-rtb"])
-a22725 2
+a22725 3
 /*ylcd=$popup,domain=dzen.ru
 /*ylced=$popup,domain=dzen.ru
+/*ylcld=$popup,domain=dzen.ru
 a22729 1
 /*yllcd=$popup,domain=dzen.ru
 d24031 1
