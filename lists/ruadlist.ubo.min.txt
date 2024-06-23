@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 23 Jun 2024 12:37:20 +0000
-! Diff-Path: ../patches/2024.6.23.757.patch#ruadlist
+! Last modified: Sun, 23 Jun 2024 17:20:17 +0000
+! Diff-Path: ../patches/2024.6.23.1040.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -13506,6 +13506,7 @@ want2vote.com###adsWall-0
 want2vote.com###adsWall-1
 shopinfo.com.ua###ads_header_right
 vk.com,vk.ru###ads_left
+game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib###ads_script
 shpargalkablog.ru###adsenseNiz
 4creates.com###adsh
 academ.info###adslinks
@@ -14208,6 +14209,7 @@ poleno.net###pddk221
 onyxgame.com###pegination ~ a
 mamba.ru###photo_viewer[style]
 sportrecs.com###player .MuiButton-containedPrimary
+konohatv.org###player > .absolute
 toples.cc###player > div[style*="pointer;"]
 ts.kg###player-blocker
 ovva.tv###player-mobile-select > .buttons-container
@@ -14651,6 +14653,7 @@ heregirl.ru,ledilana.ru###vgtrk_bottom
 virusinfo.info###vi_ad
 virusinfo.info###vi_adlink
 ivi.ru###video-flack
+xv-ru.com###video-right
 videonews.club###video_bootom
 enter.az###videorekframe
 smartphone.ua###videos-ads
@@ -18154,6 +18157,7 @@ lifetambov.ru##.theme-wrapper > .container > div > *
 thequestion.ru##.theq-header__beta__nav__promo
 nulled.cc##.theshit_top_block
 vgtimes.ru##.thisad
+xv-ru.com##.thumb-ad
 primorye.ru##.ti-block
 mmamama.ru##.tidymag-sidebar-content
 divxplayer.ml,haes.tech,hcdn.online,metaverseid.tk,player.cvary.org##.timecss
@@ -20575,7 +20579,7 @@ tourister.ru##div[class^="trstr_adv_"]
 alimero.ru##div[class^="two-column-page-sidebar-slided-boners"]
 kinonews.ru##div[class^="under_shapka"] > *
 zamunda.ch,zamunda.net##div[class^="unique-"]
-xenforo.info##div[class^="vds-cloud"]
+xenforo.info##div[class^="vds-"][class*="cloud"]
 vesti.kz##div[class^="vesti-banner"]
 1fenshui.ru##div[class^="vex"]
 newbum.net##div[class^="videoban"]
@@ -20710,6 +20714,7 @@ browserss.ru##div[id^="SlideShow"]
 inpearls.ru##div[id^="TM_"]
 primgazeta.ru,zwezda.net##div[id^="Zz"]
 ppt-online.org##div[id^="ab_"]
+xv-ru.com##div[id^="ad-footer"]
 textarchive.ru##div[id^="ad_"]
 andevice.ru##div[id^="ad_header"]
 indigomath.ru##div[id^="ad_id"]
@@ -21009,11 +21014,13 @@ topasnew24.com##div[style="width:336px; height:280px; display:block"]
 softobase.com##div[style="width:336px; height:280px;"]
 for-ua.com##div[style="width:540px;height:90px;overflow:hidden;display:block;margin-top:10px"]
 obfog.ru##div[style="width:970px;height:250px;margin:12px auto 12px auto;display:block"]
+mozaika.biz#?#div[style] > a[href]:not([href^="/"]):not([href^="https://mozaika.biz/"]) > img
 center.bz##div[style] > center
 bless-news.com##div[style] > div[class*="Overlay"][id*="Overlay"]
 cqham.ru##div[style] > noindex a > img
 kirov-portal.ru#?#div[style]:-abp-has(> [id^="adfox_"])
 kirov-portal.ru#?#div[style]:-abp-has(> [id^="unit_"])
+mozaika.biz#?#div[style]:-abp-has(> a[href]:not([href^="/"]):not([href^="https://mozaika.biz/"]) > img)
 kirov-portal.ru#?#div[style]:-abp-has(> ntvk)
 small-games.info#?#div[style]:-abp-has(> p > [href="#hideRekCaption"])
 buhoblik.org.ua##div[style][onclick*="/rizni/"]
@@ -25372,7 +25379,7 @@ xn--112-5cd3baof9c5c.xn--p1ai#@#.wrapad
 @@||yaberemenna.info/openx/www/delivery/ai.php?filename=$domain=yaberemenna.info
 @@||yaberemenna.info/openx/www/delivery/ajs.php?zoneid=7&$domain=yaberemenna.info
 @@||yandex.ru/ads/$domain=magnit.ru
-@@||yandex.ru/ads/system/context.js|$script,domain=1prime.ru|tnt-online.ru|trychatgpt.ru|zaycev.net
+@@||yandex.ru/ads/system/context.js|$script,domain=1prime.ru|konohatv.org|tnt-online.ru|trychatgpt.ru|zaycev.net
 @@||yandex.ru/metrika/informer.js
 @@||yandex.ru/search/site/?*search$third-party,script
 @@||yandex.st/share/share.js|$script,domain=nashaplaneta.su
@@ -25771,7 +25778,7 @@ au-ok.com##p[style="border:3px solid #C1FF0A;background-color:#d5d5d1;padding:10
 aif.ru,ain.ua,bit.ua,budport.com.ua,ixbt.com,ko.com.ua,kv.by,livejournal.com,mc.today,newstudio.tv,oper.ru,pay-day.ru,sc2tv.ru,stopgame.ru,userstyles.org,zakarpatpost.net##body:not(#id):style(background-image: none !important)
 2pay-day.ru,4video.adult,aif.ru,ain.ua,bit.ua,budport.com.ua,ixbt.com,ko.com.ua,kv.by,livejournal.com,mc.today,newstudio.tv,oper.ru,sc2tv.ru,stopgame.ru,userstyles.org,zakarpatpost.net##html:not(#id):style(background-image: none !important)
 ! ---
-baskino.film,dnepr.info,dugtor.ru,filmitorrent.net,filmitorrent.site,jetsetter.ua,kinoafisha.ua,kinobar.vip,moskva.fm,newstudio.tv,nnmclub.to,pay-day.ru,roem.ru,rusfootball.info,trupornolabs.org,utorr.cc,vc.ru,virusinfo.info,wikianime.tv,xxxadulttorrent.org,you-anime.ru,yummyanime.tv,zombie-film.live##body:not(#id):style(padding-top: 0 !important)
+baskino.film,dnepr.info,dugtor.ru,filmitorrent.net,filmitorrent.site,jetsetter.ua,kinoafisha.ua,kinobar.vip,konohatv.org,moskva.fm,newstudio.tv,nnmclub.to,pay-day.ru,roem.ru,rusfootball.info,trupornolabs.org,utorr.cc,vc.ru,virusinfo.info,wikianime.tv,xxxadulttorrent.org,you-anime.ru,yummyanime.tv,zombie-film.live##body:not(#id):style(padding-top: 0 !important)
 ! ---
 radioromantika.ru##.main-wrapp__content:style(margin-top: 0 !important)
 101.ru##.wrapper-branding
@@ -27572,6 +27579,8 @@ cloud.mail.ru##div[class^="ReactViewer__root-"]:style(--bottom-banner-height: 1p
 my.mail.ru##div[class^="app-adv-"]
 news.mail.ru,sportmail.ru##div[data-module="LazyLoad.PromoPopup"] .js-module.block
 mail.ru,sportmail.ru##div[data-mp*="LazyPulse"]
+mail.ru##div[slot="main-column"] > .header
+mail.ru##div[slot="main-column"] > .header ~ .swiper
 mail.ru##div[slot="main-column"] > .micro-widgets ~ .tabs:style(margin-top: 5px !important)
 mail.ru##div[slot="main-column"] > .micro-widgets:style(height: auto !important; margin: auto !important)
 my.mail.ru##html.window-loaded .b-video-backscreen
@@ -27875,7 +27884,7 @@ motorpage.ru##+js(remove-class, noscroll, body)
 online-fix.me##+js(remove-node-text, #text, РЕКЛАМНЫЙ БЛОК:)
 farposst.ru##+js(remove-node-text, #text, Реклама)
 filmitorrent.net,utorr.cc##+js(remove-node-text, #text, Реклама:)
-game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /checkAdBlock|tick/)
+game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /checkAd|tick/)
 inforesist.org##+js(remove-node-text, script, /gtag\('event'/)
 sports.ru##+js(remove-node-text, script, AdBlocker)
 pikabu.ru##+js(remove-node-text, script, addPlaceholder)
@@ -28111,6 +28120,7 @@ light.mail.ru##+js(href-sanitizer, [href^="https://checklink.mail.ru/proxy?"], ?
 light.mail.ru##+js(href-sanitizer, [href^="https://click.mail.ru/redir?u="], ?u)
 ok.ru,touch.mail.ru##+js(json-prune, result.body.direct)
 ~3igames.mail.ru,~account.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##+js(no-fetch-if, /\/res\//)
+~3igames.mail.ru,~account.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##+js(remove-node-text, script, violatedDirective)
 okminigames.mail.ru##+js(set-constant, NO_ADV, 1)
 otvet.mail.ru##+js(set-constant, Object.prototype._Mimic, undefined)
 player-smotri.mail.ru##+js(set-constant, Object.prototype.autoPlayParams, false)
