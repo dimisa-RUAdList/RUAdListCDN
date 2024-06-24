@@ -1,8 +1,8 @@
-diff name:ruadlist lines:117 checksum:7009f378b8
+diff name:ruadlist lines:120 checksum:5456b2821c
 d4 2
 a5 2
-! Last modified: Mon, 24 Jun 2024 03:24:11 +0000
-! Diff-Path: ../patches/2024.6.24.204.patch#ruadlist
+! Last modified: Mon, 24 Jun 2024 08:27:02 +0000
+! Diff-Path: ../patches/2024.6.24.507.patch#ruadlist
 d10165 1
 a10165 1
 $csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: *.addtoany.com *.amazonaws.com *.cloudflare.com *.dmca.com *.disqus.com *.disquscdn.com *.facebook.com *.getsitecontrol.com apis.google.com cse.google.com *.google.com/cse/ *.google.com/complete/ *.google.com/recaptcha/ translate.google.com www.google.com *.googleapis.com *.googletagmanager.com *.gstatic.com/recaptcha/ *.instagram.com *.jivosite.com *.jquery.com *.keycaptcha.com *.sendpulse.com *.sharethis.com *.po.st *.threadloom.com *.tiktok.com *.trustpilot.com *.twitter.com vk.com www.youtube.com *.dev *.io *.net *.org *.ru *.ua,domain=agroter.com.ua|alensat.com|allbasketball.org|askentire.net|autonews.co.ua|autosoftos.com|babla.ru|bio-lessons.ru|cardiagram.com.ua|clickthis.blog|coollib.net|elegantwoman.kyiv.ua|farposst.ru|findhow.org|gazeta-misto.te.ua|golos.te.ua|icon-icons.com|ilenta.com|index.minfin.com.ua|inforesist.org|kreschatic.kiev.ua|kurs.com.ua|life.pravda.com.ua|mirlib.ru|modfix.ru|musinfo.net|ontvtime.ru|orbit-games.com|pb-news.info|perpendicular.pro|pes-files.ru|poezdato.net|poizdato.net|ruboard.website|sundries.ua|tabloid.pravda.com.ua|tenews.org.ua|tribun.com.ua|uapress.kyiv.ua|valorantinfo.com|vesti-ua.net|vkazivka.com|wallpapershome.ru|xn--80aaukc.xn--j1amh|skidkaonline.ru
@@ -67,7 +67,7 @@ a21008 1
 mozaika.biz#?#div[style]:-abp-has(> a[href]:not([href^="/"]):not([href^="https://mozaika.biz/"]) > img)
 d21674 1
 a21674 1
-||pikabu.ru/vk$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/kv$xmlhttprequest,domain=pikabu.ru
 d21807 1
 a21807 1
 gismeteo.by##.column2 > .section-rss
@@ -80,9 +80,12 @@ d22130 1
 a22130 2
 ru##[data-ns-portal] [data-adv-mark]
 ru##[data-ns-portal] a[href*="erid="][href*="#lenta-btn"]
-a22690 2
+a22690 3
+dzen.ru##[aria-label="Карточка peклaмы"]
 dzen.ru##[aria-label="Карточка рeклaмы"]
 dzen.ru##[aria-label="Карточка рeкламы"]
+a22709 1
+/*icllcd=$popup,domain=dzen.ru
 a22719 2
 /*ycllcd=$popup,domain=dzen.ru
 /*yclld=$popup,domain=dzen.ru
