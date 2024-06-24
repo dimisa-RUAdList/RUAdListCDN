@@ -1,8 +1,8 @@
-diff name:ruadlist lines:128 checksum:3f6cbbf073
+diff name:ruadlist lines:147 checksum:ae37bbd86f
 d4 2
 a5 2
-! Last modified: Mon, 24 Jun 2024 13:23:42 +0000
-! Diff-Path: ../patches/2024.6.24.803.patch#ruadlist
+! Last modified: Mon, 24 Jun 2024 18:28:14 +0000
+! Diff-Path: ../patches/2024.6.24.1108.patch#ruadlist
 d10165 1
 a10165 1
 $csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: *.addtoany.com *.amazonaws.com *.cloudflare.com *.dmca.com *.disqus.com *.disquscdn.com *.facebook.com *.getsitecontrol.com apis.google.com cse.google.com *.google.com/cse/ *.google.com/complete/ *.google.com/recaptcha/ translate.google.com www.google.com *.googleapis.com *.googletagmanager.com *.gstatic.com/recaptcha/ *.instagram.com *.jivosite.com *.jquery.com *.keycaptcha.com *.sendpulse.com *.sharethis.com *.po.st *.threadloom.com *.tiktok.com *.trustpilot.com *.twitter.com vk.com www.youtube.com *.dev *.io *.net *.org *.ru *.ua,domain=agroter.com.ua|alensat.com|allbasketball.org|askentire.net|autonews.co.ua|autosoftos.com|babla.ru|bio-lessons.ru|cardiagram.com.ua|clickthis.blog|coollib.net|elegantwoman.kyiv.ua|farposst.ru|findhow.org|gazeta-misto.te.ua|golos.te.ua|icon-icons.com|ilenta.com|index.minfin.com.ua|inforesist.org|kreschatic.kiev.ua|kurs.com.ua|life.pravda.com.ua|mirlib.ru|modfix.ru|musinfo.net|ontvtime.ru|orbit-games.com|pb-news.info|perpendicular.pro|pes-files.ru|poezdato.net|poizdato.net|ruboard.website|sundries.ua|tabloid.pravda.com.ua|tenews.org.ua|tribun.com.ua|uapress.kyiv.ua|valorantinfo.com|vesti-ua.net|vkazivka.com|wallpapershome.ru|xn--80aaukc.xn--j1amh|skidkaonline.ru
@@ -79,22 +79,39 @@ a21809 1
 gismeteo.kz,gismeteo.ru##.content-column ~ .content-column > .section-rss
 a21887 1
 ~e.mail.ru,mail.ru,sportmail.ru##a[class^="rb-"][href^="https://r.mail.ru/"][target="_blank"]
+d21999 1
+a21999 1
+my.mail.ru##div[style^="position:"][style*=";display:"][style*=";opacity:1;visibility:visible;height:"]
 d22130 1
 a22130 2
 ru##[data-ns-portal] [data-adv-mark]
 ru##[data-ns-portal] a[href*="erid="][href*="#lenta-btn"]
-a22690 4
+a22243 1
+avtorambler.com,rambler.ru##.commercial-branding article > div:only-child > div:first-child + div + div:last-child
+a22295 1
+rambler.ru##div[style^="min-height: 140px"]
+a22301 1
+rambler.ru##div[style^="min-height:140px"]
+d22318 3
+a22320 4
+avtorambler.com,rambler.ru#?#.commercial-branding div:-abp-properties(min-height: 125px)
+rambler.ru#?#body > div:-abp-properties(min-height: 250px)
+weather.rambler.ru#?#div:-abp-properties(min-height: 400px)
+weather.rambler.ru#?#div:-abp-properties(min-height: 600px)
+a22690 5
 dzen.ru##[aria-label="Карточка peклaмы"]
 dzen.ru##[aria-label="Карточка pеклaмы"]
 dzen.ru##[aria-label="Карточка рeклaмы"]
 dzen.ru##[aria-label="Карточка рeкламы"]
+dzen.ru##[aria-label="Карточка реклaмы"]
 a22709 2
 /*clyd=$popup,domain=dzen.ru
 /*icllcd=$popup,domain=dzen.ru
 d22720 1
-a22720 2
+a22720 3
 /*ycllcd=$popup,domain=dzen.ru
 /*yclld=$popup,domain=dzen.ru
+/*yclud=$popup,domain=dzen.ru
 d22732 1
 d22735 1
 a22735 1
@@ -109,6 +126,8 @@ d26912 2
 a26913 2
 promodj.com###topbrandingspot:style(padding-top: 0 !important; background: none !important)
 promodj.com##html:not(#id) > body:style(background: none !important)
+a26923 1
+avtorambler.com,rambler.ru##.commercial-branding > div script ~ div > div:last-child div:style(min-height: 0 !important)
 d27003 2
 a27004 2
 ru##[data-ns-portal] .page-type-article.branding div[class^="content_"] > div[class^="bottom"]:style(max-width: 100% !important)
