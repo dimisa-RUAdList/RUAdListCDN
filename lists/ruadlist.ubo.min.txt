@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 26 Jun 2024 15:23:53 +0000
-! Diff-Path: ../patches/2024.6.26.923.patch#ruadlist
+! Last modified: Wed, 26 Jun 2024 20:24:57 +0000
+! Diff-Path: ../patches/2024.6.26.1224.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22005,13 +22005,16 @@ my.mail.ru##.b-fourth-pseudo-column
 my.mail.ru##.b-history-event:empty
 my.mail.ru##.b-history__adv-post-carousel
 my.mail.ru##.b-music__main__banner
+my.mail.ru##.b-video__native-rb-banner
 my.mail.ru##.b-video__top-rb-banner
 my.mail.ru##.l-app__left
 my.mail.ru##.l-app__right
+my.mail.ru##.l-common__container > div > div[style^="display:"]
 my.mail.ru##.sp-video__billboard
 my.mail.ru##.ui-simple-block[class*="promo"]
+my.mail.ru##:not(.l-common__container) > div[style^="position:"][style*=";display:"][style*=";opacity:1;visibility:visible;height:"]
 my.mail.ru##div[class^="l-music__banner"]
-my.mail.ru##div[style^="position:"][style*=";display:"][style*=";opacity:1;visibility:visible;height:"]
+my.mail.ru##div[style^="position:"][style*=";display:"][style*=";opacity:1;visibility:visible;height:"] > div[style^="display:"]
 ! Облако
 cloud.mail.ru##div[class*="advHeaderStatic"]
 cloud.mail.ru##div[class^="Folder__worm"]
@@ -22709,6 +22712,7 @@ dzen.ru##.article-right-ad-block
 dzen.ru##.article__bottom-embed-wrapper > .ad-split-embed + div
 dzen.ru##.zen-ui-viewport-expansion__container:empty
 dzen.ru##.zenad-card-rtb
+dzen.ru##[aria-label^="Peкл"]
 dzen.ru##[aria-label^="Карточк"][aria-label*="мы"]
 dzen.ru##[aria-label^="Рeкл"]
 dzen.ru##[aria-label^="Рекл"]
@@ -22760,6 +22764,7 @@ dzen.ru##div[style*=" !important; "][style$=" !important;"]
 /*yhyd=$popup,domain=dzen.ru
 /*ykiid=$popup,domain=dzen.ru
 /*yklid=$popup,domain=dzen.ru
+/*yklld=$popup,domain=dzen.ru
 /*ylcd=$popup,domain=dzen.ru
 /*ylced=$popup,domain=dzen.ru
 /*ylcld=$popup,domain=dzen.ru
