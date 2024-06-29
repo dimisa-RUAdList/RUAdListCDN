@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 29 Jun 2024 13:22:11 +0000
-! Diff-Path: ../patches/2024.6.29.802.patch#ruadlist
+! Last modified: Sat, 29 Jun 2024 18:26:29 +0000
+! Diff-Path: ../patches/2024.6.29.1106.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -7722,7 +7722,7 @@ _verified.php?code=*&server=runetki.com
 /baner_$domain=~aplica.pl|~brabrabra.ua|~campworld.com.ua|~churchjc.com|~food16.ru|~nenc.gov.ua|~pcmart.com.ua|~pizzamel.ru|~planetarium.dn.ua|~tambov.gov.ru|~triatek.com.ua|~uslugi.mosreg.ru|~work-pulse.ru|~zippo.net.ua
 /baners/*$domain=~altera-auto.ru|~mgpk.bntu.by|~mirofox.ru|~redbubbles.ru|~vyviska.com.ua|~xn--100-8cdz0be5b.xn--p1ai|~xn--40-6kcayb8aoh7afog0b.xn--p1ai
 /banmas/index.php?informer=
-/banner.gif$domain=~e.aviasales.ru|~work-pulse.ru
+/banner.gif$domain=~e.aviasales.ru|~litehd.tv|~russia-tv.online|~work-pulse.ru
 /banner.png$third-party,domain=~drakescans.com|~github.com|~kirmuseum.org
 /banner2.gif
 /banner_$object
@@ -15755,6 +15755,7 @@ vkfaces.com#?#.card-separator__title:-abp-contains(реклама)
 pronovostroy.ru##.card-special-gallery--topic
 solidarnost.org##.card-yandex
 1tv.ru##.card.promo
+sovsport.ru##.cardForecast_card_container__b_Ukm > div[class^="cardForecast_btn"]
 rudub.online##.card__description__adv
 edimdoma.ru##.card_commercial
 marketsakhcom.ru#?#.cards__col:-abp-has(> .card_cb)
@@ -17144,6 +17145,7 @@ mirf.ru##.outer_outer
 avtoradio.ru,energyfm.ru##.outreach
 tv-assia.org##.ovdiv
 domkad.ru##.over-rsi
+russia-tv.online##.overflow-hidden.border[class*="border-brand-base"]
 shuba.life##.overflow-hidden.c-card
 bstudy.net,ozlib.com,studbooks.net,studme.org,studref.com,studwood.net,vuzlit.com,xstud.org##.overheader
 krastown.com##.overlay_wrap
@@ -18181,6 +18183,7 @@ itcrowd.top##.tm-top
 tmbw.ru##.tmbwrekbelow
 kinovdom.tv##.tn-player-tsr
 riwkus.pro##.tnx-block
+russia-tv.online##.to-brand-danger
 donday-aksay.ru,donday-novocherkassk.ru,donday-shakhty.ru,donday-taganrog.ru,donday.ru,volga-day.ru##.tobbanner
 kursk-izvestia.ru##.today_cbr
 lovitut.ru##.toneBlock
@@ -18290,7 +18293,6 @@ tonkosti.ru##.tt-tim
 actualnews.org##.ttte
 kissfm.ua##.tuborg
 news.turizm.ru##.turoperator_adv_title
-russia-tv.online##.tv-box
 vgorodekirove.ru##.two-ad
 podolsk.ru##.two-banners
 theuk.one,usa.one##.two-big-block
@@ -18841,6 +18843,7 @@ iphones.ru##[data-slug="damprodam"]
 mac.org.ua##[data-src*="bashmac"]
 drive2.ru##[data-target^="drom_"]
 adme.media#?#[data-test-id$="-recommended"] > div > div > div:nth-child(-n+3):-abp-has(> div > div > div:empty)
+russia-tv.online#?#[data-test="channel-name-link"] ~ div:-abp-has(> div > div[id^="yandex_rtb"])
 telegraf.com.ua##[data-text^="Новини партнер"]
 my.ua##[data-top-iid]
 dotabuff.com##[data-type="elo-placement"]
@@ -19740,7 +19743,6 @@ informator.ua##a[href^="https://inf.im/pinup_bonus"]
 softodrom.ru##a[href^="https://inspin.me"]
 milliarderr.com##a[href^="https://iqoption.com/promo/"]
 tvtver.ru##a[href^="https://kdservis.ru/"]
-igromania.ru##a[href^="https://keysforgamers.com/ru/products"]
 ndscalc.ru##a[href^="https://kontur.ru/"]
 itcrumbs.ru,serveradmin.ru##a[href^="https://kwork.ru"]
 poebuilds.ru##a[href^="https://lucky-boys.ru/"]
@@ -20333,6 +20335,7 @@ rg.ru##div[class^="EditorialPageArticleAside_item"][style^="height:"]
 apteka.ru##div[class^="Eshop"]
 newsru.co.il##div[class^="HP_"]
 www.sibnet.ru##div[class^="Info_sidebar_"] a[class^="Informer_root_"]
+igromania.ru##div[class^="KeysForGamers_button"]
 igromania.ru,kanobu.ru##div[class^="MaterialSubscription_root_"]
 rg.ru##div[class^="Page_asideItem"][style^="height:"]
 tass.ru##div[class^="PartnerMaterial"]
@@ -20424,6 +20427,7 @@ sportliga.com##div[class^="bulletin"]
 lada-granta.net,lkforum.ru##div[class^="but-150"]
 sovsport.ru##div[class^="button_advertisement"]
 umu.org.ua##div[class^="c40-reveal-modal"]
+sovsport.ru##div[class^="card-carousel_winline"]
 chita.ru##div[class^="chitaru__wonder"]
 pogoda.meta.ua##div[class^="city__banner"]
 click-or-die.ru##div[class^="click-content"]
@@ -25613,7 +25617,7 @@ gbsmp.ru#@#img[width="728"][height="90"]
 @@||www.meteoblue.com/build/website/gpt.js|$xmlhttprequest,domain=meteoblue.com
 @@||xksqb.com/native.$script,domain=gwss.ru
 @@||xn--b1ajehof.xn--80asehdb^$script,domain=xn--b1ajehof.xn--80asehdb
-@@||yandex.ru/ads/system/adsdk.js$script,domain=aniboom.one|gisher.org|karaoke.ru|kino.tricolor.tv|limehd.tv|litehd.tv|m24.ru|peers.tv|player.mediavitrina.ru|russia-tv.online
+@@||yandex.ru/ads/system/adsdk.js$script,domain=aniboom.one|gisher.org|karaoke.ru|kino.tricolor.tv|limehd.tv|m24.ru|peers.tv|player.mediavitrina.ru
 @@||yandex.ru/ads/system/context.js|$domain=examenpdd.com|forum.qrz.ru|yvid.ru
 @@||yandex.ru/ads/system/context.js|$script,domain=tvzvezda.ru
 @@||yandex.ru/ads/system/context.js|$xmlhttprequest,domain=blackwot.ru|reshu.by|reshuent.kz|reshuolymp.ru|sdamgia.ru|sports.ru|strategium.ru
@@ -27873,6 +27877,7 @@ strategium.ru##+js(no-setTimeout-if, adblock)
 fonmod.com##+js(no-setTimeout-if, ai_adb)
 aqicn.org##+js(no-setTimeout-if, alert, 15000)
 tragtorr.in,tragtorr.info##+js(no-setTimeout-if, antyadb, 5000)
+litehd.tv,russia-tv.online##+js(no-setTimeout-if, clientHeight, 2000)
 tv-kanali.online##+js(no-setTimeout-if, doAd)
 tradingview.com##+js(no-setTimeout-if, evercookie, 300000)
 fonmod.com##+js(no-setTimeout-if, getComputedStyle, 250)
@@ -27945,7 +27950,6 @@ sports.ru##+js(set-constant, Object.prototype.branding, undefined)
 kp.kg,kp.kz,kp.md,kp.ru,mk.ru,ohotniki.ru,portalvirtualreality.ru,radiokp.ru,sportkp.ru,wday.ru,woman.ru,www.fontanka.ru##+js(set-constant, Object.prototype.changeVisible, noopFunc)
 ati.su##+js(set-constant, Object.prototype.createBannerItem, null)
 24smi.org##+js(set-constant, Object.prototype.detect, noopFunc)
-russia-tv.online##+js(set-constant, Object.prototype.detectAdb, noopFunc)
 examenpdd.com##+js(set-constant, Object.prototype.detectAdblock, noopFunc)
 embed.twitch.tv,player.twitch.tv##+js(set-constant, Object.prototype.disableAutoplay, true)
 www.mos.ru##+js(set-constant, Object.prototype.disablePaste, false)
