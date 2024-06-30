@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 30 Jun 2024 14:20:59 +0000
-! Diff-Path: ../patches/2024.6.30.860.patch#ruadlist
+! Last modified: Sun, 30 Jun 2024 19:16:54 +0000
+! Diff-Path: ../patches/2024.6.30.1156.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -7126,7 +7126,6 @@
 ||zhalobpa.ru^$third-party
 ||zhastila.ru^$third-party
 ||zhazha.ru^$third-party
-||zhctrack.net^$third-party
 ||zherva.ru^$third-party
 ||zhitkise.info^$third-party
 ||zhkzt.com^$third-party
@@ -7149,13 +7148,11 @@
 ||zm01qttrnqt0.com^$third-party
 ||zm05qst0.pro^$third-party
 ||zmctrack.com^$third-party
-||zmctrack.net^$third-party
 ||zmu1qq.site^$third-party
 ||zmu1ust0.com^$third-party
 ||zmu1ust0.top^$third-party
 ||znatokionline.com^$third-party
 ||znbdr.com^$third-party
-||znctrack.net^$third-party
 ||zne1esxpove.info^$third-party
 ||znetimi.ru^$third-party
 ||znewswork.com^$third-party
@@ -21676,10 +21673,10 @@ ictv.ua,vikna.tv##div[id^="div-gpt-ad-"]
 ://pikabu.ru/$csp=script-src 'self' * 'unsafe-inline' data:
 @@||imasdk.googleapis.com/$xmlhttprequest,domain=volley.ru
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js|$domain=besthdwallpaper.com
-@@||s.zfctrack.net/z|$xmlhttprequest,domain=24boxing.com.ua|businessua.com|epravda.com.ua|eurointegration.com.ua|gorod.dp.ua|hvylya.net|inforesist.org|internetua.com|kriminal.tv|real-vin.com|smak.ua|zdorovia.com.ua
-@@||s.zhctrack.net/z|$xmlhttprequest,domain=24boxing.com.ua|epravda.com.ua|eurointegration.com.ua|gorod.dp.ua|inforesist.org|zdorovia.com.ua
-@@||s.zmctrack.net/z|$xmlhttprequest,domain=i.ua|ivona.ua|meteo.ua|panno4ka.net
-@@||s.znctrack.net/z|$xmlhttprequest,domain=censor.net|gazeta.ua|i.ua|mail.ukr.net|meteofor.com.ua|tabloid.pravda.com.ua|viva.ua
+@@||s.zfctrack.net/z|$xmlhttprequest
+@@||s.zhctrack.net/z|$xmlhttprequest
+@@||s.zmctrack.net/z|$xmlhttprequest
+@@||s.znctrack.net/z|$xmlhttprequest
 @@||ssp.rambler.ru/capirs_async.js|$script,domain=www.championat.com
 ||imgfrost.net^$third-party
 ||ritsatv.ru^$csp=script-src
