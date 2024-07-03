@@ -1,8 +1,8 @@
-diff name:ruadlist lines:47 checksum:cd1545da04
+diff name:ruadlist lines:84 checksum:56385f19da
 d4 2
 a5 2
-! Last modified: Tue, 02 Jul 2024 21:20:26 +0000
-! Diff-Path: ../patches/2024.7.2.1280.patch#ruadlist
+! Last modified: Wed, 03 Jul 2024 02:35:36 +0000
+! Diff-Path: ../patches/2024.7.3.155.patch#ruadlist
 d7129 1
 d7152 1
 d7158 1
@@ -14,6 +14,7 @@ esputnik.com##.cl-dialog
 d11163 1
 a13351 1
 ||xv-ru.com/lvcsm/abck-banners/
+d13545 1
 a15757 1
 sovsport.ru##.cardForecast_card_container__b_Ukm > div[class^="cardForecast_btn"]
 a17146 1
@@ -23,7 +24,15 @@ russia-tv.online##.to-brand-danger
 d18293 1
 a18843 1
 russia-tv.online#?#[data-test="channel-name-link"] ~ div:-abp-has(> div > div[id^="yandex_rtb"])
+d19084 1
+a19084 1
+360tv.ru,avtonovostidnya.ru,avtovzglyad.ru,belarus-news.by,bst.bratsk.ru,coop-land.ru,energyfm.ru,finuslugi.ru,fonmod.com,fontanka.ru,gdeichto.ru,ixbt.com,kommersant.ru,life.ru,metronews.ru,moe-belgorod.ru,moe-kursk.ru,moe-lipetsk.ru,moe-online.ru,moe-tambov.ru,mydecor.ru,mywebpc.ru,naked-science.ru,new-magazine.ru,news.ru,nsn.fm,oper.ru,overclockers.ru,penzainform.ru,peterburg2.ru,pnz.ru,regnum.news,regnum.ru,rifey.ru,rusnext.ru,russian.rt.com,rutube.ru,sm.news,sovsport.ru,sport-express.ru,sportsdaily.ru,super.ru,syzran-small.ru,teleprogramma.pro,thegirl.ru,tsargrad.tv,tulapressa.ru,tvzvezda.ru,u-f.ru,ura.news,utyug.info,vz.ru,xn----7sbabwosghnf8al4lkj7b.xn--p1ai,ytronews.ru,zaks.ru,zaycev.net,zr.ru##a[href*="//dzen.ru/"]
+d19091 1
+a19091 1
+024.by,1777.ru,1istochnik.ru,7days.ru,actualnews.org,allboxing.ru,amurmedia.ru,argumenti.ru,atas.info,auto.ru,autosaratov.ru,autosport.com.ru,av.by,baby.ru,bel.ru,belkagomel.by,bidbaits.ru,carsweek.ru,chitamedia.su,chukotkamedia.ru,cq.ru,ctc.ru,deita.ru,domclick.ru,eaomedia.ru,eva.ru,finam.ru,fishki.net,fontanka.ru,food.ru,friday.ru,interface31.ru,intermedia.ru,irkutskmedia.ru,iz.ru,izhlife.ru,kaifolog.net,kamchatkamedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,lipetskmedia.ru,magadanmedia.ru,mel.fm,mk.ru,nakhodka.media,nashe.ru,neva.today,new-magazine.ru,noob-club.ru,nsn.fm,om1.ru,osnmedia.ru,politrussia.com,povarenok.ru,priamurmedia.ru,primamedia.ru,prufy.ru,radiojazzfm.ru,radioultra.ru,realt.by,riamo.ru,rockfm.ru,russian.rt.com,rusvesna.su,sakhalinmedia.ru,sevastopolmedia.ru,sm.news,smolensk-i.ru,smotrim.ru,sovets.net,sovets24.ru,sravni.ru,starhit.ru,stavropol.media,study.ru,svpressa.ru,takiedela.ru,teleport2001.ru,topnews.ru,tsargrad.tv,tv2.today,ukraina.ru,ulanmedia.ru,ussurmedia.ru,vm.ru,vsezdorovo.com,www.kolesa.ru,yakutiamedia.ru,ytronews.ru,zaycev.net##a[href*="//zen.yandex.ru/"]
 d19743 1
+a20178 1
+zaycev.net##div[class*=" ZNT_"]
 a20335 1
 igromania.ru##div[class^="KeysForGamers_button"]
 a20426 1
@@ -37,12 +46,40 @@ a21676 4
 d21690 1
 a21690 1
 ||pikabu.ru/uk$xmlhttprequest,domain=pikabu.ru
+d22720 1
+a22720 1
+dzen.ru##[aria-label^="Карточк"][aria-label*=" p"][aria-label*="кл"]
+a22772 1
+/*ykilp=$popup,domain=dzen.ru
+d25405 1
+a25405 1
+@@||yandex.ru/ads/system/context.js|$script,domain=1prime.ru|konohatv.org|tnt-online.ru|trychatgpt.ru
+d25424 2
 d25616 1
 a25616 1
 @@||yandex.ru/ads/system/adsdk.js$script,domain=aniboom.one|gisher.org|karaoke.ru|kino.tricolor.tv|limehd.tv|m24.ru|peers.tv|player.mediavitrina.ru
+d26051 1
+a26051 1
+bugaga.ru##.body-branding:style(background: none !important; padding-top: 0 !important)
+a27382 1
+dzen.ru##.article-recomender__feed-container article > div:first-child ~ div
+a27388 1
+dzen.ru##aside[id^="article_"][class*="riljht"] > div[class]
+d27391 3
+a27393 4
+dzen.ru##div[class*="article__"] > .undefined ~ div[class*="mididei"] > div[id][class]
+dzen.ru##div[class*="widtdjejet"] > div[class*="container"] > div ~ div
+dzen.ru##div[id*="long_video_floor"] article[aria-label="Карточка этажа"] ~ :not([aria-label="Карточка этажа"])
+dzen.ru##div[id*="native_floor"] article[aria-label="Карточка этажа"] ~ :not([aria-label="Карточка этажа"])
+d27395 2
+a27607 1
+mail.ru##div[slot="main-column"] .tabs:style(margin-top: 5px !important)
+d27610 1
 d27750 1
 a27750 1
 dorama.land,doramaland.me,players.com.ua##+js(abort-on-property-read, localStorage)
 a27875 1
 litehd.tv,russia-tv.online##+js(no-setTimeout-if, clientHeight, 2000)
 d27948 1
+a28187 1
+e.mail.ru,octavius.mail.ru##body > div[style*="top:"][style*="position:"][style*="visibility:"] #app-canvas div:style(display: block !important)
