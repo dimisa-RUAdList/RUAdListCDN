@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 03 Jul 2024 02:35:36 +0000
-! Diff-Path: ../patches/2024.7.3.155.patch#ruadlist
+! Last modified: Wed, 03 Jul 2024 07:19:42 +0000
+! Diff-Path: ../patches/2024.7.3.439.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21986,6 +21986,7 @@ pets.mail.ru##div[class^="Gallery__slideSide_"]
 otvet.mail.ru##a[href^="https://t.mail.ru/redir/"]
 otvet.mail.ru##div[data-pos]
 otvet.mail.ru#?#div[style^="top: "]:-abp-has(> div > div[class=""]:empty)
+otvet.mail.ru##div[style^="top:"] ~ div[style^="top:"] > div > div[class=""] + div:last-child
 ! Дети
 deti.mail.ru##.cols__wrapper > aside
 deti.mail.ru##.deti-slot_exchange
