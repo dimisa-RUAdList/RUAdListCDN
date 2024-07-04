@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 04 Jul 2024 18:28:16 +0000
-! Diff-Path: ../patches/2024.7.4.1108.patch#ruadlist
+! Last modified: Thu, 04 Jul 2024 23:21:36 +0000
+! Diff-Path: ../patches/2024.7.4.1401.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -28184,7 +28184,6 @@ ok.ru##div[class*="__banner-feed"]
 ! Конфликт с JS Fixes
 ~3igames.mail.ru,~account.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##+js(abort-on-stack-trace, Object.prototype.ssrAds, completeRadar)
 mail.ru##.tgb-wrapper:remove()
-@@||ad.mail.ru/adp/?*&notgb=1|$~third-party,xmlhttprequest,badfilter
 ! старый интерфейс почты
 e.mail.ru##+js(json-prune, [].slot)
 e.mail.ru##.b-datalist > div:matches-css(height: 39px):remove()
@@ -30334,7 +30333,6 @@ forum.bestflowers.ru##.xenOverlay
 /cookie_check.min.js$domain=acetv.me
 /forum/docs/requests.js$script,domain=nnm-club.lib|nnm-club.me|nnm-club.ws|nnmclub.ro|nnmclub.to|nontorclub.in.net
 /gogl_detector$script,domain=meddaily.ru|newsru.com
-@@||ad.mail.ru/adp/?*&notgb=1|$~third-party,xmlhttprequest
 @@||anidub.com/ads.js|$script,domain=anidub.com
 @@||goha.ru/app/video/adblock.teaser.js|$script,domain=goha.ru
 @@||qpython.club^$generichide
