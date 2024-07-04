@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 04 Jul 2024 13:24:50 +0000
-! Diff-Path: ../patches/2024.7.4.804.patch#ruadlist
+! Last modified: Thu, 04 Jul 2024 18:28:16 +0000
+! Diff-Path: ../patches/2024.7.4.1108.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10599,8 +10599,8 @@ lada.kz/uploads/banners/
 ||365keys.ru/img/mg.
 ||37.ru^*/?bxrand=
 ||38mama.ru/forum/images/*/
-||3ddd.ru/ad.html
-||3ddd.ru/other/banners/
+||3ddd.ru/media/images/banner/
+||3ddd.ru/media/images/undefined/
 ||3dnews.*/admtdprx.php
 ||3dnews.*/www/images/
 ||3dnews./*/ad/branding/
@@ -13368,7 +13368,6 @@ lada.kz/uploads/banners/
 ||yangteacher.ru^*.js|$script
 ||yapantiabp.ru/player/
 ||yapcdnimg.ru/player/
-||yapfiles.com^$third-party
 ||yapfiles.ru/uploads/branddata/
 ||yaplakal.com/html/$subdocument
 ||yaplakal.com/html/bans/
@@ -14814,7 +14813,6 @@ igromania.ru,kanobu.ru##.ad-brending
 delfi.ee##.ad-container
 kirovnet.ru##.ad-forum-block
 1927.kiev.ua##.ad-modal
-3ddd.ru##.ad-width
 akniga.org,newsvideo.su##.ad1
 akniga.org,newsvideo.su,orda.kz##.ad2
 mk.tula.ru##.ad200x150
@@ -15357,7 +15355,6 @@ autodoc.ru,spbit.ru##.banner_div
 camelot.multilocal.ru,camelot.userlan.ru##.banner_header
 mybrazz.club##.banner_holder
 vd-tv.ru##.banner_home
-3ddd.ru##.banner_horizontal
 kriminal.tv##.banner_long
 allmoldova.com##.banner_main
 metronews.ru##.banner_margin
@@ -15889,7 +15886,7 @@ mmotop.ru##.container-links
 wotsite.net#?#.container-mat p:-abp-contains(Реклама)
 theplace.ru##.container-rekl-top
 1news.com.ua#?#.container-wrapper:-abp-has(> .mag-box-title:-abp-contains(Партнери проекту))
-filmix.biz,filmix.date,filmix.life,filmix.tech,filmix.zone#?#.container:-abp-has(> .remove-sda-wrap)
+filmix.date,filmix.fm,filmix.life,filmix.pub,filmix.tech,filmix.zone#?#.container:-abp-has(> .remove-sda-wrap)
 alexbruni.ru#?#.container:-abp-has(> div[align="center"] > video > [src*="://dental-paint.ru/"])
 flashscore.com.ua,flashscore.ru.com,flashscore.ua,flashscorekz.com,livescore.in,soccerstand.com##.container__bannerZone
 rosserial.net##.container_gads
@@ -17182,7 +17179,7 @@ yarnews.net##.page-new > .left
 knizhnik.org##.page-note
 golos.ua##.page-single > .col-right
 gdz-ru.work,gdz.fun##.page-subscribe
-filmix.biz,filmix.date,filmix.life,filmix.tech,filmix.zone##.page-wrapper .last-news ~ .container > .information
+filmix.date,filmix.fm,filmix.life,filmix.pub,filmix.tech,filmix.zone##.page-wrapper .last-news ~ .container > .information
 likemetr.ru##.page-wrapper > .analyzer-page > .subscriber
 1yar.tv##.pageBranding
 bdf.ms##.pageContent > div[style^="outline"] > a[href]:not([href^="../threads/"])
@@ -21232,12 +21229,13 @@ freetp.org,freetp.ru##img[src*="/download-yb."]
 slavutich.cn.ua##img[src*="/image/banners/"]
 browserss.ru##img[src*="/images/Banner_"]
 telesputnik.ru##img[src*="/images/ads/"]
-itc.ua,mc.today,newsua.ru,profidom.com.ua,smolnarod.ru,speka.media,ternopoliany.te.ua,thepage.ua,tv-gubernia.ru,ua.news,vmeste.tv,voip.ru,yablor.ru##img[src*="/images/banner"]
+3ddd.ru,itc.ua,mc.today,newsua.ru,profidom.com.ua,smolnarod.ru,speka.media,ternopoliany.te.ua,thepage.ua,tv-gubernia.ru,ua.news,vmeste.tv,voip.ru,yablor.ru##img[src*="/images/banner"]
 ogo.ua##img[src*="/images/bnr/"]
 iviche.com##img[src*="/images/commertials/"]
 manutd.ru##img[src*="/images/pari/"]
 upl.ua##img[src*="/images/puma_"]
 forbes.kz##img[src*="/images/sponsors/"]
+3ddd.ru##img[src*="/images/undefined/"]
 upl.ua##img[src*="/images/vbet_"]
 exdex.ru##img[src*="/img/ab/"]
 zmi.ck.ua##img[src*="/img/andora"]
@@ -22789,6 +22787,7 @@ dzen.ru##div[style*=" !important; "][style$=" !important;"]
 /*yleed=$popup,domain=dzen.ru
 /*yllcd=$popup,domain=dzen.ru
 /*yqilp=$popup,domain=dzen.ru
+/*yqipl=$popup,domain=dzen.ru
 =mytarget$popup,domain=dzen.ru
 ||t.mail.ru/redir/$popup,domain=dzen.ru
 ! Сайты Блокнота
@@ -25747,7 +25746,7 @@ rasfokus.ru##body > div[id] > [align="center"] > a[target="_blank"]
 anime-free.ru,pastebin.com,primpogoda.ru##body > div[id]:not([class])[style="display: block;"]
 fashion2news.com,hotallnews.today,newspad.ru##body > div[id][class]
 24pdd.ru#?#body > div[id][class]:-abp-has(> div[id][class] [class^="adblock"])
-kurs.com.ua,ontvtime.ru,skidkaonline.ru##body > div[style*="background-color:"][style*="z-index:"]
+kurs.com.ua,ontvtime.ru,skidkaonline.ru,ternopillive.com##body > div[style*="background-color:"][style*="z-index:"]
 gsm.in.ua##body > div[style^="background:"][style*="display: block"]
 ritsatv.ru##body > marquee[style*="red"]
 motorpage.ru##body.noscroll::before
@@ -26272,8 +26271,8 @@ filmitorrent.net,filmitorrent.site,utorr.cc##body > #container:style(margin-top:
 ! ---
 filmive-hd.net,kinoshack.net,tree.tv##body > .wrapper:style(margin-top: 0 !important)
 ! ---
-filmix.biz,filmix.date,filmix.life,filmix.tech,filmix.zone##.main-wrapper:style(margin-top: 0 !important)
-filmix.biz,filmix.date,filmix.life,filmix.tech,filmix.zone##.page-wrapper:style(margin-top: 0 !important)
+filmix.date,filmix.fm,filmix.life,filmix.pub,filmix.tech,filmix.zone##.main-wrapper:style(margin-top: 0 !important)
+filmix.date,filmix.fm,filmix.life,filmix.pub,filmix.tech,filmix.zone##.page-wrapper:style(margin-top: 0 !important)
 ! ---
 filmozavr.com,filmozavr.net##.maincontent:style(margin-top: 0 !important)
 ! ---
@@ -28185,6 +28184,7 @@ ok.ru##div[class*="__banner-feed"]
 ! Конфликт с JS Fixes
 ~3igames.mail.ru,~account.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##+js(abort-on-stack-trace, Object.prototype.ssrAds, completeRadar)
 mail.ru##.tgb-wrapper:remove()
+@@||ad.mail.ru/adp/?*&notgb=1|$~third-party,xmlhttprequest,badfilter
 ! старый интерфейс почты
 e.mail.ru##+js(json-prune, [].slot)
 e.mail.ru##.b-datalist > div:matches-css(height: 39px):remove()
@@ -30232,7 +30232,6 @@ aratta-ukraine.com,drawnstories.ru,gisclub.tv,kinda.media,teremok.org.ua,webos-f
 asn.in.ua,beadeath.dclans.ru###mdl_ctnr
 photolessons.org###modal-adbmon-div
 ostroh.info###modal.modal-bg
-filmix.biz,filmix.date,filmix.life,filmix.tech,filmix.zone###oframeplayer > #player_control_play-icon ~ pjsdiv[style^="position: absolute; left:"][style*="pointer-events: none; display: block; visibility:"]
 mover.uz###oframeplayer > [class][style^="display: block"]
 md4u.ru###pagecontent > div[style*="background-color"]
 alensat.org,forummikrotik.ru###phpbb-ads-ab
@@ -30315,7 +30314,7 @@ pythonworld.ru##.pythonworld-contributor
 veseloeradio.ru##.racy_sidebar
 fanfics.me##.red.nodata
 webofcomics.ru##.reklandvipinfo
-filmix.biz,filmix.date,filmix.life,filmix.tech,filmix.zone##.remove-sda-wrap
+filmix.date,filmix.fm,filmix.life,filmix.pub,filmix.tech,filmix.zone##.remove-sda-wrap
 sport-express.ru##.se-adv-notice
 101.ru##.showMessageAdBlock
 uakino.club##.side-content-adblock
@@ -30335,6 +30334,7 @@ forum.bestflowers.ru##.xenOverlay
 /cookie_check.min.js$domain=acetv.me
 /forum/docs/requests.js$script,domain=nnm-club.lib|nnm-club.me|nnm-club.ws|nnmclub.ro|nnmclub.to|nontorclub.in.net
 /gogl_detector$script,domain=meddaily.ru|newsru.com
+@@||ad.mail.ru/adp/?*&notgb=1|$~third-party,xmlhttprequest
 @@||anidub.com/ads.js|$script,domain=anidub.com
 @@||goha.ru/app/video/adblock.teaser.js|$script,domain=goha.ru
 @@||qpython.club^$generichide
