@@ -1,15 +1,51 @@
-diff name:ruadlist lines:65 checksum:5ad124a452
+diff name:ruadlist lines:106 checksum:06c5188b32
 d4 2
 a5 2
-! Last modified: Thu, 04 Jul 2024 08:26:55 +0000
-! Diff-Path: ../patches/2024.7.4.506.patch#ruadlist
+! Last modified: Thu, 04 Jul 2024 13:24:50 +0000
+! Diff-Path: ../patches/2024.7.4.804.patch#ruadlist
+a3603 1
+||mastershik.com^$third-party
 d7129 1
 d7152 1
 d7158 1
+d8257 1
+a8257 1
+~mail.ru,ru,ua##.adv
+d8260 2
+a8261 2
+##.advblock
+##.advertblock
+d8265 1
+a8265 1
+##.ammblock
+d8267 1
+a8267 1
+##.b-banner
+d8269 1
+a8269 1
+##.b-media-banner
+a8270 1
+##.banner-label
+d8272 1
+a8272 1
+by,~mail.ru,ru,ua##.banner_box
+d10166 1
+a10166 1
+$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: *.addtoany.com *.amazonaws.com *.cloudflare.com *.dmca.com *.disqus.com *.disquscdn.com *.facebook.com *.getsitecontrol.com apis.google.com cse.google.com *.google.com/cse/ *.google.com/complete/ *.google.com/recaptcha/ translate.google.com www.google.com *.googleapis.com *.googletagmanager.com *.gstatic.com/recaptcha/ *.instagram.com *.jivosite.com *.jquery.com *.keycaptcha.com *.sendpulse.com *.sharethis.com *.po.st *.threadloom.com *.tiktok.com *.trustpilot.com *.twitter.com vk.com www.youtube.com *.dev *.io *.net *.org *.ru *.ua,domain=agroter.com.ua|alensat.com|allbasketball.org|askentire.net|autonews.co.ua|autosoftos.com|babla.ru|bio-lessons.ru|cardiagram.com.ua|clickthis.blog|coollib.net|elegantwoman.kyiv.ua|farposst.ru|findhow.org|gazeta-misto.te.ua|golos.te.ua|icon-icons.com|ilenta.com|index.minfin.com.ua|inforesist.org|kovelpost.com|kreschatic.kiev.ua|kurs.com.ua|life.pravda.com.ua|mirlib.ru|modfix.ru|musinfo.net|ontvtime.ru|orbit-games.com|pb-news.info|perpendicular.pro|pes-files.ru|poezdato.net|poizdato.net|ruboard.website|sundries.ua|tabloid.pravda.com.ua|tenews.org.ua|ternopillive.com|tribun.com.ua|uapress.kyiv.ua|valorantinfo.com|vesti-ua.net|vkazivka.com|wallpapershome.ru|xn--80aaukc.xn--j1amh|skidkaonline.ru
 d11164 1
+a12053 1
+||mskins.net/themes/mc/assets/promo/
+d13209 1
 d13547 1
+a14962 1
+vinnitsa.info##.advertising-card
 a14971 1
 epravda.com.ua##.advtext_desk
+d15314 1
+a15755 1
+mskins.net#?#.card-panel:-abp-has(> center > .ds)
+d15877 1
+d18236 1
 a18598 1
 pravda.com.ua##.ym-video--wrapper
 d19089 1
@@ -20,6 +56,9 @@ a19096 1
 024.by,1777.ru,1istochnik.ru,7days.ru,actualnews.org,allboxing.ru,amurmedia.ru,argumenti.ru,atas.info,auto.ru,autosaratov.ru,autosport.com.ru,av.by,baby.ru,bel.ru,belkagomel.by,bidbaits.ru,carsweek.ru,chitamedia.su,chukotkamedia.ru,cq.ru,ctc.ru,deita.ru,domclick.ru,eaomedia.ru,eva.ru,finam.ru,fishki.net,fontanka.ru,food.ru,friday.ru,interface31.ru,intermedia.ru,irkutskmedia.ru,iz.ru,izhlife.ru,kaifolog.net,kamchatkamedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,lipetskmedia.ru,magadanmedia.ru,mel.fm,mk.ru,nakhodka.media,nashe.ru,neva.today,new-magazine.ru,noob-club.ru,nsn.fm,om1.ru,osnmedia.ru,politrussia.com,povarenok.ru,priamurmedia.ru,primamedia.ru,prufy.ru,radiojazzfm.ru,radioultra.ru,realt.by,riamo.ru,rockfm.ru,russian.rt.com,rusvesna.su,sakhalinmedia.ru,sevastopolmedia.ru,sm.news,smolensk-i.ru,smotrim.ru,sovets.net,sovets24.ru,sravni.ru,starhit.ru,stavropol.media,study.ru,svpressa.ru,takiedela.ru,teleport2001.ru,topnews.ru,tsargrad.tv,tv2.today,ukraina.ru,ulanmedia.ru,ussurmedia.ru,vm.ru,vsezdorovo.com,www.kolesa.ru,yakutiamedia.ru,ytronews.ru,zaycev.net##a[href*="//zen.yandex.ru/"]
 a20182 1
 zaycev.net##div[class*=" ZNT_"]
+d20468 1
+a20468 1
+mistosumy.com,mynizhyn.com##div[class^="frik"]
 d21679 4
 a21682 4
 @@||s.zfctrack.net/z|$xmlhttprequest
@@ -28,7 +67,9 @@ a21682 4
 @@||s.znctrack.net/z|$xmlhttprequest
 d21696 1
 a21696 1
-||pikabu.ru/ur$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/uj$xmlhttprequest,domain=pikabu.ru
+a21712 1
+dzen.ru#?#div:-abp-properties(min-height: 600px)
 a21992 1
 otvet.mail.ru##div[style^="top:"] ~ div[style^="top:"] > div > div[class=""] + div:last-child
 d22726 1
@@ -36,8 +77,8 @@ a22726 1
 dzen.ru##[aria-label^="Карточк"][aria-label*=" p"][aria-label*="кл"]
 a22778 1
 /*ykilp=$popup,domain=dzen.ru
-a24977 1
-@@||api.vk.com/method/statEvents.$xmlhttprequest,domain=api.vk.com|id.vk.com
+a22788 1
+/*yqilp=$popup,domain=dzen.ru
 d25411 1
 a25411 1
 @@||yandex.ru/ads/system/context.js|$script,domain=1prime.ru|konohatv.org|tnt-online.ru|trychatgpt.ru
