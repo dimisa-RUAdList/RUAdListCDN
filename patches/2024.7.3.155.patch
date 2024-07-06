@@ -1,8 +1,8 @@
-diff name:ruadlist lines:86 checksum:3552f23f69
+diff name:ruadlist lines:94 checksum:ff0258b7e7
 d4 2
 a5 2
-! Last modified: Sat, 06 Jul 2024 05:22:38 +0000
-! Diff-Path: ../patches/2024.7.6.322.patch#ruadlist
+! Last modified: Sat, 06 Jul 2024 10:23:26 +0000
+! Diff-Path: ../patches/2024.7.6.623.patch#ruadlist
 a3603 1
 ||mastershik.com^$third-party
 d8254 1
@@ -56,6 +56,7 @@ filmix.date,filmix.fm,filmix.life,filmix.pub,filmix.tech,filmix.zone##.page-wrap
 d18231 1
 a18593 1
 pravda.com.ua##.ym-video--wrapper
+d19002 1
 d20464 1
 a20464 1
 mistosumy.com,mynizhyn.com##div[class^="frik"]
@@ -69,11 +70,18 @@ a21692 1
 ||pikabu.ru/uh$xmlhttprequest,domain=pikabu.ru
 a21708 1
 dzen.ru#?#div:-abp-properties(min-height: 600px)
+a21931 1
+dzen.ru##.news-mt-advert__banner
 a21988 1
 otvet.mail.ru##div[style^="top:"] ~ div[style^="top:"] > div > div[class=""] + div:last-child
-a22785 2
+a22631 1
+|https://dzen.ru/*/*/*/$subdocument,domain=dzen.ru
+a22736 1
+dzen.ru##iframe[style="display: block; border-width: 0px;"]:not([id])
+a22785 3
 /*yqilp=$popup,domain=dzen.ru
 /*yqipl=$popup,domain=dzen.ru
+/*yqpil=$popup,domain=dzen.ru
 d25744 1
 a25744 1
 kurs.com.ua,ontvtime.ru,skidkaonline.ru,ternopillive.com##body > div[style*="background-color:"][style*="z-index:"]

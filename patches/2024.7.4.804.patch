@@ -1,8 +1,8 @@
-diff name:ruadlist lines:38 checksum:3552f23f69
+diff name:ruadlist lines:46 checksum:ff0258b7e7
 d4 2
 a5 2
-! Last modified: Sat, 06 Jul 2024 05:22:38 +0000
-! Diff-Path: ../patches/2024.7.6.322.patch#ruadlist
+! Last modified: Sat, 06 Jul 2024 10:23:26 +0000
+! Diff-Path: ../patches/2024.7.6.623.patch#ruadlist
 d10602 2
 a10603 2
 ||3ddd.ru/media/images/banner/
@@ -16,6 +16,7 @@ filmix.date,filmix.fm,filmix.life,filmix.pub,filmix.tech,filmix.zone#?#.containe
 d17185 1
 a17185 1
 filmix.date,filmix.fm,filmix.life,filmix.pub,filmix.tech,filmix.zone##.page-wrapper .last-news ~ .container > .information
+d19005 1
 d21235 1
 a21235 1
 3ddd.ru,itc.ua,mc.today,newsua.ru,profidom.com.ua,smolnarod.ru,speka.media,ternopoliany.te.ua,thepage.ua,tv-gubernia.ru,ua.news,vmeste.tv,voip.ru,yablor.ru##img[src*="/images/banner"]
@@ -24,8 +25,15 @@ a21240 1
 d21695 1
 a21695 1
 ||pikabu.ru/uh$xmlhttprequest,domain=pikabu.ru
-a22791 1
+a21935 1
+dzen.ru##.news-mt-advert__banner
+a22636 1
+|https://dzen.ru/*/*/*/$subdocument,domain=dzen.ru
+a22741 1
+dzen.ru##iframe[style="display: block; border-width: 0px;"]:not([id])
+a22791 2
 /*yqipl=$popup,domain=dzen.ru
+/*yqpil=$popup,domain=dzen.ru
 d25750 1
 a25750 1
 kurs.com.ua,ontvtime.ru,skidkaonline.ru,ternopillive.com##body > div[style*="background-color:"][style*="z-index:"]
