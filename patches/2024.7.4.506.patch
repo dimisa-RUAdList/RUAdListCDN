@@ -1,10 +1,13 @@
-diff name:ruadlist lines:92 checksum:f4559fb1af
+diff name:ruadlist lines:127 checksum:28912a1ce7
 d4 2
 a5 2
-! Last modified: Sun, 07 Jul 2024 11:19:16 +0000
-! Diff-Path: ../patches/2024.7.7.679.patch#ruadlist
+! Last modified: Sun, 07 Jul 2024 16:24:52 +0000
+! Diff-Path: ../patches/2024.7.7.984.patch#ruadlist
 a3603 1
 ||mastershik.com^$third-party
+d7851 1
+a7851 1
+/img/banner/*$domain=~almicro.ru|~amusement-center.com|~belby.by|~besmart.pp.ua|~bsky.app|~chitai-gorod.ru|~flexen.tech|~frosbyte.org|~fvds.ru|~gostas-klimat.ru|~imhonet.ru|~lifestylelabel.ru|~megabitschool.ru|~miralin.ru|~mts.ru|~mtsbank.ru|~rustix.io|~stavsalut.hostcrm.ru|~themelooks.org|~vavlab.ru|~webnames.ru|~xn-----6kcvbohzccf5ajf4a7e.xn--p1ai
 d8254 1
 a8254 1
 ~mail.ru,ru,ua##.adv
@@ -33,10 +36,14 @@ d10600 2
 a10601 2
 ||3ddd.ru/media/images/banner/
 ||3ddd.ru/media/images/undefined/
+d10766 2
 a12049 1
 ||mskins.net/themes/mc/assets/promo/
 d13205 1
 d13369 1
+d13788 1
+a14358 1
+animeonline.cc###rkl-left
 d14815 1
 a14957 1
 vinnitsa.info##.advertising-card
@@ -52,7 +59,17 @@ d17183 1
 a17183 1
 filmix.date,filmix.fm,filmix.life,filmix.pub,filmix.tech,filmix.zone##.page-wrapper .last-news ~ .container > .information
 d18232 1
+d18875 1
 d19004 1
+d19217 1
+a19217 1
+777score.ru,animesure.org,football24.ru,games.portal.md,kino4k.in,kinofanonline.net,music-torrent.com,musictor.org,newsgsm.com,online-fix.me,rg-mechanics.site,softbesplatno.net,texdizain.net,windowspro.ru##a[href*="aHR0c"]
+d19258 1
+a19258 1
+flapler.com,korsars.pro,mods-game.net,mywebpc.ru,rufonts.ru,soft-portal.club,vc.ru##a[href*="clck.ru"]
+d19966 1
+a19966 1
+101.ru,101kofemashina.ru,1in.am,alau.kz,alexua.tv,animejapan.tv,bit.ua,bugaga.ru,c-inform.info,comments.ua,csgamer.ru,ctv7.ru,cvnews.cv.ua,dead-serial.com,e-libra.ru,fashiony.ru,fclmnews.ru,fishki.net,forpost.lviv.ua,game2day.ru,gameinside.ua,ggscore.com,gorod.dp.ua,grimm-online.org,gta.com.ua,horrorzone.ru,ifnews.org.ua,igrovaya.org,igry-online.net,itechua.com,izbezhat-nakazania.com,jetsetter.ua,jut.su,kievvlast.com.ua,kinoafisha.info,ko.com.ua,kosti-tv.com,kushvsporte.ru,likeni.ru,lovesun.by,lvnews.org.ua,mac-torrent-download.net,madjong-besplatno.ru,mirf.ru,moldfootball.com,mybrazz.club,nashkiev.ua,ne-kurim.ru,pesikot.org,pimpletv.ru,playua.net,post-tracker.ru,povarenok.ru,prodota.ru,prosports.kg,prosports.kz,prosportua.com,relook.ru,rvnews.rv.ua,saratovnews.ru,sopsport.org,spletnica-tv.com,sportarena.com,strela-online.com,teenwolf-tv.com,tenews.org.ua,tg.telepult.pro,theflash-tv.com,topfile.tj,traktorist.ua,uanews.org.ua,udargol.com,upl.ua,vsetors.org,vskazke-tv.com,zab.ru,zorgee.ru##body > a[href][target="_blank"]
 d20466 1
 a20466 1
 mistosumy.com,mynizhyn.com##div[class^="frik"]
@@ -64,13 +81,23 @@ a21239 1
 d21694 1
 a21694 1
 ||pikabu.ru/uh$xmlhttprequest,domain=pikabu.ru
-a21710 1
+a21710 2
 dzen.ru#?#div:-abp-properties(min-height: 600px)
+dzen.ru#?#div:-abp-properties(position: relative !important)
 d21721 1
 a21721 1
 ~3igames.mail.ru,~account.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru#?#html:-abp-has(> .stylus[id^="stylus"]) body > main [slot] > *:-abp-has(.adchoise)
+a21914 1
+~e.mail.ru,mail.ru,sportmail.ru##table > tbody > tr > td:first-child + td + td:last-child
 a21933 1
 dzen.ru##.news-mt-advert__banner
+a21939 1
+pogoda.mail.ru##.cols__column__inner_border
+d21969 1
+d21971 1
+a21971 2
+hi-tech.mail.ru#?#[data-qa="Grid"] > div:-abp-has(> div > [data-rb-slot])
+hi-tech.mail.ru#?#[data-qa="Grid"] div:-abp-has(> .marker-adv-holder span[data-qa="Text"])
 a22634 1
 |https://dzen.ru/*/*/*/$subdocument,domain=dzen.ru
 a22739 1
@@ -79,6 +106,7 @@ a22788 3
 /*yqilp=$popup,domain=dzen.ru
 /*yqipl=$popup,domain=dzen.ru
 /*yqpil=$popup,domain=dzen.ru
+d24975 2
 d24978 1
 d25748 1
 a25748 1
@@ -87,6 +115,13 @@ d26273 2
 a26274 2
 filmix.date,filmix.fm,filmix.life,filmix.pub,filmix.tech,filmix.zone##.main-wrapper:style(margin-top: 0 !important)
 filmix.date,filmix.fm,filmix.life,filmix.pub,filmix.tech,filmix.zone##.page-wrapper:style(margin-top: 0 !important)
+d27369 1
+a28065 1
+dzen.ru##[data-microappname="TopMicroApp" ] div[style*="height: 0;"]:style(padding-top: unset !important)
+a28367 1
+||wheregoes.com/c/uploads/$script
+a29899 1
+@@||download.megaup.net/openads.js$script,~third-party
 d30233 1
 d30316 1
 a30316 1
