@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 08 Jul 2024 12:40:07 +0000
-! Diff-Path: ../patches/2024.7.8.760.patch#ruadlist
+! Last modified: Mon, 08 Jul 2024 17:22:03 +0000
+! Diff-Path: ../patches/2024.7.8.1042.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -19892,6 +19892,7 @@ magtimes.info##aside img[src^="http://magtimes.info/wp-content/uploads/"]
 poligon.by##aside#sidebar > a[href]
 postal.ninja##aside.tm-sidebar-a [class*="block"]
 www.fontanka.ru#?#aside:-abp-has(> div:only-child > [data-placement])
+www.fontanka.ru##aside:empty
 vk.com##aside[aria-label="Актуальные новости"]
 uznayvse.ru##aside[class*="cls_placeholder"]
 bryansknovosti.ru,novozybkov.su##aside[data-alias="Заголовок"] .widget-area > .widget_text
@@ -21674,6 +21675,7 @@ ictv.ua,vikna.tv##div[id^="div-gpt-ad-"]
 @@||s.zmctrack.net/z|$xmlhttprequest
 @@||s.znctrack.net/z|$xmlhttprequest
 @@||ssp.rambler.ru/capirs_async.js|$script,domain=www.championat.com
+https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|livejournal.com|olegmakarenko.ru|periskop.su|shakko.ru|shiro-kino.ru|vadimrazumov.ru
 ||imgfrost.net^$third-party
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
@@ -21688,6 +21690,7 @@ ictv.ua,vikna.tv##div[id^="div-gpt-ad-"]
 ! Pikabu (ловушка для обфускации)
 ||pikabu.ru/uh$xmlhttprequest,domain=pikabu.ru
 ! селекторы
+www.livejournal.com##.ogl5qqp8umjotxz8w
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(/min-height: 20.px|min-height: 29.px|min-height: 30.px|min-height: 300./))
@@ -21697,6 +21700,7 @@ android-mafia.com,game4you.top,games-pc.top,rustorka.com,rustorka.net,rustorka.t
 liveinternet.ru,sdamgia.ru##[data-container]
 sdamgia.ru##[data-name="partial-container"]
 liveinternet.ru##[data-wrapper]
+lena-miro.ru,levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##[role="banner"] > .s-header-extra + div[class]
 kp.kg,kp.kz,kp.md,kp.ru#?#body > #app div:-abp-properties(background-color: rgb(225, 231, 235))
 www.e1.ru#?#body > script[src^="https://www.e1.ru/"] ~ #app [itemprop] > figure:-abp-has(span:-abp-contains(чуть-чуть и видео загрузится))
 www.ixbt.com#?#body > style:-abp-contains(margin-top) {remove:true;}
