@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 10 Jul 2024 14:22:09 +0000
-! Diff-Path: ../patches/2024.7.10.862.patch#ruadlist
+! Last modified: Wed, 10 Jul 2024 19:22:02 +0000
+! Diff-Path: ../patches/2024.7.10.1162.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -17009,6 +17009,7 @@ nur.kz##.nearest-matches
 eapteka.ru##.neon-skeleton
 gdzplus.me,reshator.com##.nerban
 superhumor.ru,voffka.com##.neteye-posts
+kommersant.ru#?#.network_share > .network_share__item:-abp-has(> .network_share__name > [data-href^="https://dzen.ru/"])
 ingrus.net##.nevidimka
 znaj.ua##.new-banners
 tvigle.ru##.new-bgs-o
@@ -28176,7 +28177,7 @@ news.mail.ru,pogoda.mail.ru,sportmail.ru##+js(set-constant, Object.prototype.use
 ~3igames.mail.ru,~account.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##+js(set-constant, mr._mimic.locator.transform, undefined)
 touch.mail.ru##.page__content__slide > .messagelist > div:not([cid]):not([style]):not([id]):not([class])
 ok.ru##[data-module*="banner"]
-mail.ru##[slot="main-column"] > div:matches-css(height: 90px)
+mail.ru##[slot="main-column"] :matches-css(height: 90px)
 ok.ru##body > div:not([id]):not([class]) > .exit-popup:style(display: block !important)
 ok.ru##div[class*="__banner-feed"]
 ||ad.mail.ru/$image,script,xmlhttprequest,redirect=empty
