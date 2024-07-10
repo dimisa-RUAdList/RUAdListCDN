@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 10 Jul 2024 09:23:01 +0000
-! Diff-Path: ../patches/2024.7.10.563.patch#ruadlist
+! Last modified: Wed, 10 Jul 2024 14:22:09 +0000
+! Diff-Path: ../patches/2024.7.10.862.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21690,7 +21690,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ! Pikabu (ловушка для обфускации)
 ||pikabu.ru/uh$xmlhttprequest,domain=pikabu.ru
 ! селекторы
-www.livejournal.com##.ogl5qqp8umjotxz8w
+livejournal.com#?#.body-content > div[class]:-abp-has(> [class*="-shtorka-commercial"])
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(/min-height: 20.px|min-height: 29.px|min-height: 30.px|min-height: 300./))
@@ -27818,6 +27818,7 @@ rbc.ru,sportrbc.ru##+js(addEventListener-defuser, copy, getSelection)
 carservic.ru,iptv.org.ua,tva.org.ua,ufchgu.ru##+js(addEventListener-defuser, copy, pagelink)
 fastpic.org,~new.fastpic.org##+js(addEventListener-defuser, getexoloader)
 romakatya.ru##+js(addEventListener-defuser, load, AdBlock)
+xv-ru.com##+js(addEventListener-defuser, load, exoJsPop101)
 overclockers.ru##+js(addEventListener-defuser, load, mamydirect)
 bonus-tv.ru##+js(addEventListener-defuser, loadstart, isImmediatePropagationStopped)
 kinoblin.ru##+js(addEventListener-defuser, mousedown, pop.doEvent)
