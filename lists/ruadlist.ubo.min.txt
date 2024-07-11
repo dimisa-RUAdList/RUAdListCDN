@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 11 Jul 2024 10:24:57 +0000
-! Diff-Path: ../patches/2024.7.11.624.patch#ruadlist
+! Last modified: Thu, 11 Jul 2024 15:23:05 +0000
+! Diff-Path: ../patches/2024.7.11.923.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -9902,7 +9902,6 @@ tvc.ru##.b-overlay-soc
 pdalife.ru##.b-popup
 vashgorod.ru##.c-popup
 games-two.su##.ckf-box
-esputnik.com##.cl-dialog
 riafan.ru##.cookie-agreement-wrapper
 crimezone.in.ua##.custom-modal
 jurnalu.ru##.demo
@@ -9985,6 +9984,7 @@ ruskline.ru##body > div[id^="money"]
 dnpmag.com,trendymen.ru##body > div[id^="popup-"]
 pikabu.ru##body > iframe[src*="redirect_uri"]
 daz3d.ru##body > span[id^="s"][style]
+esputnik.com##body.cl-noscroll > .cl-dialog[style*="position: fixed"]
 pinterest.com##div[class*="ScreenBanner"]
 snob.ru##div[class*="popup-eventSubscribe"]
 noworries.news##div[class*="remodal"]
