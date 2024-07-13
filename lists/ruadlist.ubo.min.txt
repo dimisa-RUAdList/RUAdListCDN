@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 13 Jul 2024 17:19:33 +0000
-! Diff-Path: ../patches/2024.7.13.1039.patch#ruadlist
+! Last modified: Sat, 13 Jul 2024 22:22:46 +0000
+! Diff-Path: ../patches/2024.7.13.1342.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -13690,6 +13690,7 @@ kerch.fm###center_left > .informer
 rabota.kharkov.ua###central > table > tbody > tr > .noprint
 newsland.com###channelsFeed > [data-block-type="channel-card"] ~ :not([data-block-type="channel-card"])
 finget.ru###chart_a
+game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib###chessday
 vk.com###chrome_bar_content
 okrain.net.ua###citata
 zoodrug.ru###clone[style*="250px"]
@@ -21040,7 +21041,7 @@ sinoptik.ua##div[style^="margin"][style$="width: 300px;"]
 freesoft.ru##div[style^="margin-left:"] > a[href="#"]
 onlinetv.one##div[style^="margin: 20px 0;min-height:"]
 24tv.ua##div[style^="min-height: 250px;"][style*=" 50px"]
-cadelta.ru##div[style^="min-height: 250px;"][style*="background:"]
+cadelta.ru,modfarm.ru##div[style^="min-height: 250px;"][style*="background:"]
 smart-lab.ru##div[style^="min-height: 250px;"][style*="font-size: 0;"]
 liveposts.ru##div[style^="min-height: 700px;"]
 open3dmodel.com##div[style^="min-height:"][style$="px;"]
@@ -21901,6 +21902,7 @@ lena-miro.ru,levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,s
 ~e.mail.ru,mail.ru,sportmail.ru##.daynews > table tr > td ~ td ~ td:last-child
 ~e.mail.ru,mail.ru,sportmail.ru##.mailru-visibility-check
 mail.ru##.ph-project-promo-container
+~e.mail.ru,mail.ru,~octavius.mail.ru##.tgb-wrapper
 ~e.mail.ru,mail.ru,sportmail.ru##.viewbox__holder .viewbox__side
 ~e.mail.ru,mail.ru,sportmail.ru##.viewbox__holder .viewbox__side-loader ~ *
 ~e.mail.ru,mail.ru##[data-logger-parent="sidebarDoubleRight"]
@@ -22048,6 +22050,7 @@ love.mail.ru##.link-ad
 ||banners.mail.ru^$third-party
 ||bs.mail.ru^$image,domain=mail.ru
 ||horo.mail.ru/*/fast-slot.js
+||limg.imgsmail.ru/re/c/desktop-*.css?_$xmlhttprequest
 ||mamba.ru/images/*/promo/
 ||media-stat.mail.ru^
 ||mradx.net/img/$subdocument
@@ -27571,7 +27574,6 @@ mail.ru##.article__item_source_viqeo .article__container::before:style(content: 
 mail.ru##.asteroid-widgets
 mail.ru##.grid__header .ph-modal-projects-overlay:style(top: inherit !important)
 mail.ru##.grid__main-col .eventbar-wrapper:style(margin-top: 0 !important)
-mail.ru##.grid__main-col > .tgb-wrapper
 mail.ru##.grid__main-col > div[slot="main-column"] .search-container:style(margin-top: 4px !important; margin-bottom: 4px !important)
 hi-tech.mail.ru##.header-banner:style(margin: 0 !important)
 news.mail.ru,pogoda.mail.ru,sportmail.ru##.layout_footer > .block
@@ -27600,9 +27602,7 @@ mail.ru##body > .grid .grid__lcol > .footer:style(margin-top: 10px !important)
 mail.ru##body > .grid .grid__rcol:style(margin-left: 0 !important)
 mail.ru##body > .grid > div[class^="grid"][class*="__header"] > .toolbar
 mail.ru##body > .zeropixel ~ * .balloon
-mail.ru##body > .zeropixel ~ * .skeleton-tgb
 mail.ru##body > .zeropixel ~ * .stripe-wrapper
-mail.ru##body > .zeropixel ~ * [class*="tgb-wrap"]
 mail.ru##body > .zeropixel ~ * div[class][style^="color:"][style$="background-size:auto 40px"]
 otvet.mail.ru##body div div div div[class*="adv-slot-"]
 mail.ru##body:not(.js-module) .searchContainer ~ div > a.dmb
@@ -27927,7 +27927,7 @@ motorpage.ru##+js(remove-class, noscroll, body)
 online-fix.me##+js(remove-node-text, #text, РЕКЛАМНЫЙ БЛОК:)
 farposst.ru##+js(remove-node-text, #text, Реклама)
 filmitorrent.net,utorr.cc##+js(remove-node-text, #text, Реклама:)
-game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /checkAd|tick/)
+game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /dimisa|tick/)
 inforesist.org##+js(remove-node-text, script, /gtag\('event'/)
 sports.ru##+js(remove-node-text, script, AdBlocker)
 pikabu.ru##+js(remove-node-text, script, addPlaceholder)
@@ -28192,7 +28192,6 @@ ok.ru##div[class*="__banner-feed"]
 ||ru/count/$image,important,redirect=1x1.gif,domain=mail.ru|sportmail.ru
 ! Конфликт с JS Fixes
 ~3igames.mail.ru,~account.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##+js(abort-on-stack-trace, Object.prototype.ssrAds, completeRadar)
-mail.ru##.tgb-wrapper:remove()
 ! старый интерфейс почты
 e.mail.ru##+js(json-prune, [].slot)
 e.mail.ru##.b-datalist > div:matches-css(height: 39px):remove()
