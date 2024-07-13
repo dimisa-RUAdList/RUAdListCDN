@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 12 Jul 2024 21:22:06 +0000
-! Diff-Path: ../patches/2024.7.12.1282.patch#ruadlist
+! Last modified: Sat, 13 Jul 2024 02:36:32 +0000
+! Diff-Path: ../patches/2024.7.13.156.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22593,8 +22593,10 @@ ukr.net##.lazy-load-banner
 1901.selcdn.ru##.topFaceGuest
 ! Yandex (Яndex)
 yandex.by,yandex.kz,yandex.ru,yandex.uz###banner.b-banner__content
+ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz#?##search-result > .serp-list__card:-abp-has(> div .organic__subtitle > span:-abp-contains(/[РPeекламa]{6,7}/))
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.Ad > .Ad-Container ~ .Ad-Spinner
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.AdvRsya-Slot
+ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.Organic_withPromoOffer
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.b-spec-adv
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.b-yabrowser-promo
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.container__banner
@@ -27414,6 +27416,7 @@ yandex.by,yandex.kz,yandex.ru,yandex.uz##.stack div[class*="modal"][class*="-R-A
 ! ---
 ! картинки
 ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.DirectInline
+ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.DirectSnippet
 ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##div[class*="Images"] .SimpleSkeleton
 ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##div[class*="Images"] div[class*="-Card_bottomAdv"]
 ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##div[id*="Images"] .SimpleSkeleton
