@@ -1,8 +1,8 @@
-diff name:ruadlist lines:56 checksum:03cd896f55
+diff name:ruadlist lines:62 checksum:43ec14806d
 d4 2
 a5 2
-! Last modified: Sun, 14 Jul 2024 08:28:21 +0000
-! Diff-Path: ../patches/2024.7.14.508.patch#ruadlist
+! Last modified: Sun, 14 Jul 2024 13:43:48 +0000
+! Diff-Path: ../patches/2024.7.14.823.patch#ruadlist
 d9905 1
 a9987 1
 esputnik.com##body.cl-noscroll > .cl-dialog[style*="position: fixed"]
@@ -20,6 +20,8 @@ a17011 1
 kommersant.ru#?#.network_share > .network_share__item:-abp-has(> .network_share__name > [data-href^="https://dzen.ru/"])
 d17167 1
 d18629 1
+a18843 1
+drive2.ru#?#[data-track]:-abp-has([id] > [style="width: 100%; display: none !important;"])
 d21043 1
 a21043 1
 cadelta.ru,modfarm.ru##div[style^="min-height: 250px;"][style*="background:"]
@@ -36,6 +38,10 @@ a22597 1
 ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz#?##search-result > .serp-list__card:-abp-has(> div .organic__subtitle > span:-abp-contains(/[РPeекламa]{6,7}/))
 a22599 1
 ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.Organic_withPromoOffer
+a22603 1
+ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.content__left > #search-result > li:-abp-has(> .Organic_withPromoOffer)
+a22606 1
+ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.content__right div[class][data-log-node]:-abp-has(> div > script)
 d24595 1
 a24631 1
 @@||opensharing.org/img/images/$generichide

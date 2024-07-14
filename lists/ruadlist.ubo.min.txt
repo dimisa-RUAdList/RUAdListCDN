@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 14 Jul 2024 08:28:21 +0000
-! Diff-Path: ../patches/2024.7.14.508.patch#ruadlist
+! Last modified: Sun, 14 Jul 2024 13:43:48 +0000
+! Diff-Path: ../patches/2024.7.14.823.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -18842,6 +18842,7 @@ adme.media#?#[data-test-id$="-recommended"] > div > div > div:nth-child(-n+3):-a
 russia-tv.online#?#[data-test="channel-name-link"] ~ div:-abp-has(> div > div[id^="yandex_rtb"])
 telegraf.com.ua##[data-text^="Новини партнер"]
 my.ua##[data-top-iid]
+drive2.ru#?#[data-track]:-abp-has([id] > [style="width: 100%; display: none !important;"])
 dotabuff.com##[data-type="elo-placement"]
 historyrusedu.ru##[data-uk-grid-match*="target"]
 slukh.media##[data-vc-parallax]
@@ -22604,9 +22605,11 @@ yandex.by,yandex.kz,yandex.ru,yandex.uz##.b-spec-adv
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.b-yabrowser-promo
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.container__banner
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.content.i-bem > .body__topblocks
+ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.content__left > #search-result > li:-abp-has(> .Organic_withPromoOffer)
 ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.content__left > #search-result > li:-abp-has(> div .organic__subtitle > span:-abp-contains(/[РPeекламa]{6,7}/))
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.content__right > .z-market_right_yes
 ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.content__right div[class][data-log-node]:-abp-has(.DirectInlineContainer)
+ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.content__right div[class][data-log-node]:-abp-has(> div > script)
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.direct-view
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.dist-overlay__popup
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.i-bem.adsrv
