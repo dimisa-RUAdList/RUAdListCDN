@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 16 Jul 2024 10:22:18 +0000
-! Diff-Path: ../patches/2024.7.16.622.patch#ruadlist
+! Last modified: Tue, 16 Jul 2024 15:19:18 +0000
+! Diff-Path: ../patches/2024.7.16.919.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -18843,7 +18843,7 @@ adme.media#?#[data-test-id$="-recommended"] > div > div > div:nth-child(-n+3):-a
 russia-tv.online#?#[data-test="channel-name-link"] ~ div:-abp-has(> div > div[id^="yandex_rtb"])
 telegraf.com.ua##[data-text^="Новини партнер"]
 my.ua##[data-top-iid]
-drive2.ru#?#[data-track]:-abp-has([id] > [style="width: 100%; display: none !important;"])
+drive2.ru#?#[data-track]:-abp-has(> div[id]:empty + script)
 dotabuff.com##[data-type="elo-placement"]
 historyrusedu.ru##[data-uk-grid-match*="target"]
 slukh.media##[data-vc-parallax]
