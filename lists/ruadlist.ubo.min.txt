@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 16 Jul 2024 15:19:18 +0000
-! Diff-Path: ../patches/2024.7.16.919.patch#ruadlist
+! Last modified: Tue, 16 Jul 2024 20:21:37 +0000
+! Diff-Path: ../patches/2024.7.16.1221.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -14760,6 +14760,7 @@ russiandc.com##.R
 therussianamerica.com##.RightColumn .Content > a
 muz.ru##.SEO
 startgamer.ru##.SG-fixed-block
+softportal.com##.TblOBan
 siddgames.ru##.TeraPromo
 i.ua##.TopBanner730
 onlineguru.ru##.V3-wrap-big
@@ -21827,6 +21828,7 @@ checkadblock.ru##.warning
 ||adblock-tester.com^$csp=script-src 'self'
 ||checkadblock.ru^$csp=script-src 'self'
 ! GISMeteo domains
+gismeteo.ru#?#.cities-popular:-abp-has(> .list:empty)
 gismeteo.by##.column2 > .section-rss
 gismeteo.ru##.content-column > .section-media
 gismeteo.kz,gismeteo.ru##.content-column ~ .content-column > .section-rss
@@ -26393,7 +26395,6 @@ gecid.com##body:style(cursor: default !important; pointer-events: none !importan
 ! ---
 ! унификация дизайна русского домена с остальными
 gismeteo.ru##.maps .maps-block:style(height: auto !important)
-gismeteo.ru##.maps .maps-list:style(display: inherit !important)
 gismeteo.ru##.project-maps .wrap:style(max-width: 1010px !important)
 gismeteo.ru##.project-weather .wrap:style(max-width: 1010px !important)
 gismeteo.ru##.section-map-grid:style(display: unset !important)
