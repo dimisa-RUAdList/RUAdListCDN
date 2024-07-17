@@ -1,8 +1,8 @@
-diff name:ruadlist lines:45 checksum:e0d3e890db
+diff name:ruadlist lines:62 checksum:387cf5a1f1
 d4 2
 a5 2
-! Last modified: Wed, 17 Jul 2024 01:38:00 +0000
-! Diff-Path: ../patches/2024.7.17.97.patch#ruadlist
+! Last modified: Wed, 17 Jul 2024 06:30:27 +0000
+! Diff-Path: ../patches/2024.7.17.390.patch#ruadlist
 a9246 1
 ||olimp.bet/promo/$popup
 d13508 1
@@ -12,6 +12,12 @@ a13692 1
 game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib###chessday
 a14760 1
 softportal.com##.TblOBan
+d16284 1
+a16284 1
+dok-film.net,howdyho.net,howdyho.pro##.g-ads
+d16539 1
+a16539 1
+howdyho.net,howdyho.pro#?#.inner > .default:-abp-has(> header > h1:-abp-contains(РЕКЛАМА))
 a18843 1
 drive2.ru#?#[data-track]:-abp-has(> div[id]:empty + script)
 d19263 1
@@ -21,6 +27,9 @@ cadelta.ru,modfarm.ru##div[style^="min-height: 250px;"][style*="background:"]
 d21689 1
 a21689 1
 ||pikabu.ru/er$xmlhttprequest,domain=pikabu.ru
+d21696 1
+a21696 1
+fonmod.com,howdyho.net,howdyho.pro,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 a21826 1
 gismeteo.ru#?#.cities-popular:-abp-has(> .list:empty)
 a21903 1
@@ -34,13 +43,21 @@ a22603 1
 ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.content__left > #search-result > li:-abp-has(> .Organic_withPromoOffer)
 a22606 1
 ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.content__right div[class][data-log-node]:-abp-has(> div > script)
+d25779 1
+a25779 1
+||howdyho.*/media/js/main-pn5-ru.js
 d26389 1
 a27434 1
 yandex.by,yandex.kz,yandex.ru,yandex.uz##a[href^="/maps/"][href*="/tinkoff_has_offer"]
 d27574 1
 d27603 1
 d27605 1
+d27877 1
 d27930 1
 a27931 1
 game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /s_script|tick/)
+d27935 1
+a28093 2
+howdyho.*##+js(no-setInterval-if, _0x, 5000)
+howdyho.*##+js(set-attr, #progress-value, data-timer, 15)
 d28195 1

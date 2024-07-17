@@ -1,8 +1,8 @@
-diff name:ruadlist lines:29 checksum:e0d3e890db
+diff name:ruadlist lines:46 checksum:387cf5a1f1
 d4 2
 a5 2
-! Last modified: Wed, 17 Jul 2024 01:38:00 +0000
-! Diff-Path: ../patches/2024.7.17.97.patch#ruadlist
+! Last modified: Wed, 17 Jul 2024 06:30:27 +0000
+! Diff-Path: ../patches/2024.7.17.390.patch#ruadlist
 a9246 1
 ||olimp.bet/promo/$popup
 d13508 1
@@ -10,6 +10,12 @@ a13550 1
 game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib###as_script
 a14761 1
 softportal.com##.TblOBan
+d16285 1
+a16285 1
+dok-film.net,howdyho.net,howdyho.pro##.g-ads
+d16540 1
+a16540 1
+howdyho.net,howdyho.pro#?#.inner > .default:-abp-has(> header > h1:-abp-contains(РЕКЛАМА))
 d18845 1
 a18845 1
 drive2.ru#?#[data-track]:-abp-has(> div[id]:empty + script)
@@ -17,14 +23,25 @@ d19265 1
 d21691 1
 a21691 1
 ||pikabu.ru/er$xmlhttprequest,domain=pikabu.ru
+d21698 1
+a21698 1
+fonmod.com,howdyho.net,howdyho.pro,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 a21828 1
 gismeteo.ru#?#.cities-popular:-abp-has(> .list:empty)
 d22164 1
 a22164 1
 ru##[data-ns-portal] div[class^="topicsList"] a[href*="erid="]
+d25785 1
+a25785 1
+||howdyho.*/media/js/main-pn5-ru.js
 d26395 1
 a27440 1
 yandex.by,yandex.kz,yandex.ru,yandex.uz##a[href^="/maps/"][href*="/tinkoff_has_offer"]
+d27880 1
 d27933 1
 a27934 1
 game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /s_script|tick/)
+d27938 1
+a28096 2
+howdyho.*##+js(no-setInterval-if, _0x, 5000)
+howdyho.*##+js(set-attr, #progress-value, data-timer, 15)

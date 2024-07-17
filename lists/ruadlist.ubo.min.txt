@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 17 Jul 2024 01:38:00 +0000
-! Diff-Path: ../patches/2024.7.17.97.patch#ruadlist
+! Last modified: Wed, 17 Jul 2024 06:30:27 +0000
+! Diff-Path: ../patches/2024.7.17.390.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -16284,7 +16284,7 @@ marathonec.ru##.fullwidthbanner-container
 zerocoolpro.biz##.funbox
 anison.fm##.fw.topbanner
 rubryka.com,test-nmo.ru,theuk.one##.g
-dok-film.net,howdyho.net##.g-ads
+dok-film.net,howdyho.net,howdyho.pro##.g-ads
 volga.news##.g-banner
 ysia.ru##.g-dyn
 nagadala.com##.g-single
@@ -16539,7 +16539,7 @@ meteoprog.ua##.informer[id^="mp_banner_"]
 lostpix.com##.infotext
 europaplus.ru##.infox
 education.ua##.inl-blk
-howdyho.net#?#.inner > .default:-abp-has(> header > h1:-abp-contains(РЕКЛАМА))
+howdyho.net,howdyho.pro#?#.inner > .default:-abp-has(> header > h1:-abp-contains(РЕКЛАМА))
 snn-mn.ru##.inner > .widget_media_image
 totori.ru##.inner-wrap > #header
 24tv.ua##.inner-wrap > .nav-additional
@@ -21696,7 +21696,7 @@ anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(/min-height: 20.px|min-height: 29.px|min-height: 30.px|min-height: 300./))
 pikabu.ru#?#.story__header:-abp-has(> div:empty)
-fonmod.com,howdyho.net,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
+fonmod.com,howdyho.net,howdyho.pro,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 android-mafia.com,game4you.top,games-pc.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##:not(this-site-promotes-malware)
 dzen.ru#?#[class]:-abp-properties(/--banner-color:/)
 liveinternet.ru,sdamgia.ru##[data-container]
@@ -25784,7 +25784,7 @@ au-ok.com##p[style="border:3px solid #C1FF0A;background-color:#d5d5d1;padding:10
 ||csgohelp.ru/assets/app/js/checkIn.js
 ||electric-house.ru/forum/script_el.js
 ||fanforum.ru/uploads/set_resources_$script
-||howdyho.net/media/js/main-pn5-ru.js
+||howdyho.*/media/js/main-pn5-ru.js
 ||in-english.club/statistic/my.js
 ||itcrowd.top/templates/yootheme/block.js
 ||moi-detsad.ru/wp-content/cache/autoptimize/js/autoptimize_*.js
@@ -27879,7 +27879,6 @@ freetp.org,freetp.ru,online-fix.me##+js(nano-setTimeout-booster, timer)
 4pda.to##+js(nano-setTimeout-booster, zat_tick)
 reshu.by,sdamgia.ru##+js(nano-setTimeout-booster, {return f(!1)}, 20000)
 volley.ru##+js(no-fetch-if, /buzzoola\.com|plrjs\.org/)
-howdyho.net##+js(no-setInterval-if, _0x, 5000)
 fatcatslim.ru##+js(no-setInterval-if, clientHeight)
 aniu.ru,liveball.uno##+js(no-setInterval-if, debugger)
 anime-chan.me##+js(no-setInterval-if, move_string)
@@ -27937,7 +27936,6 @@ game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka
 sports.ru##+js(remove-node-text, script, AdBlocker)
 pikabu.ru##+js(remove-node-text, script, addPlaceholder)
 gsm.in.ua##+js(remove-node-text, script, message_ads)
-howdyho.net##+js(set-attr, #progress-value, data-timer, 10)
 eneyida.tv##+js(set-attr, .owl-item > a > img, src, [data-src])
 overclockers.ru##+js(set-attr, img[src="https://overclockers.ru/assets/logo_gray_stub.gif"], src, [data-src])
 dtf.ru,vc.ru##+js(set-attr, video, controls, true)
@@ -28096,6 +28094,8 @@ ozon.ru##div[data-widget="banner"]:matches-path(/my/reviews/promo):style(display
 pronpic.org##div[style="color:red;font-size:25px;"], .adblock_loock
 hdrezka.*,rezka.*##+js(abort-current-inline-script, document.getElementsByTagName, AMSP.loadAsset)
 hdrezka.*,rezka.*##+js(set-constant, Object.prototype.preroll, undefined)
+howdyho.*##+js(no-setInterval-if, _0x, 5000)
+howdyho.*##+js(set-attr, #progress-value, data-timer, 15)
 dzen.ru##iframe[style^="position:"][style*="absolute"][srcdoc]:remove()
 m.rp5.*#@#.adsbygoogle
 reshu.by,sdamgia.ru##main > div > div > div:has-text(/rotator|блокировщик/)
