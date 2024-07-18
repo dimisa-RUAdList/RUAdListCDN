@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 18 Jul 2024 17:21:41 +0000
-! Diff-Path: ../patches/2024.7.18.1041.patch#ruadlist
+! Last modified: Thu, 18 Jul 2024 22:23:20 +0000
+! Diff-Path: ../patches/2024.7.18.1343.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -25633,6 +25633,7 @@ gbsmp.ru#@#img[width="728"][height="90"]
 @@||ww400.smartadserver.com/ac$script,domain=www.deezer.com
 @@||www.cnews.ru/banner/240x400.js|$script,domain=www.cnews.ru
 @@||www.meteoblue.com/build/website/gpt.js|$xmlhttprequest,domain=meteoblue.com
+@@||www3.doubleclick.net/|$xmlhttprequest,domain=animix.lol
 @@||xksqb.com/native.$script,domain=gwss.ru
 @@||xn--b1ajehof.xn--80asehdb^$script,domain=xn--b1ajehof.xn--80asehdb
 @@||yandex.ru/ads/system/adsdk.js$script,domain=aniboom.one|gisher.org|karaoke.ru|kino.tricolor.tv|limehd.tv|m24.ru|peers.tv|player.mediavitrina.ru
@@ -27478,7 +27479,7 @@ yandex.by,yandex.kz,yandex.ru,yandex.uz##.Root > .ECommerceCarousel
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.adv_pos_compare-bottom
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.adv_pos_compare-side
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.adv_pos_popup
-ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.b-page.overlay[data-serp-metrika]:style(overflow-y: auto !important)
+ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.b-page.overlay:style(overflow-y: auto !important)
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.b-page:style(padding-top: 0 !important)
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.blocks-grid__item_static > .direct_type_stripe
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.head-stripe:style(position: fixed !important; transform: scale(0) !important)
@@ -27879,6 +27880,7 @@ freetp.org,freetp.ru,online-fix.me##+js(nano-setTimeout-booster, timer)
 4pda.to##+js(nano-setTimeout-booster, zat_tick)
 reshu.by,sdamgia.ru##+js(nano-setTimeout-booster, {return f(!1)}, 20000)
 volley.ru##+js(no-fetch-if, /buzzoola\.com|plrjs\.org/)
+animix.lol##+js(no-fetch-if, doubleclick.net)
 fatcatslim.ru##+js(no-setInterval-if, clientHeight)
 aniu.ru,liveball.uno##+js(no-setInterval-if, debugger)
 anime-chan.me##+js(no-setInterval-if, move_string)

@@ -1,8 +1,8 @@
-diff name:ruadlist lines:105 checksum:19496fdf0d
+diff name:ruadlist lines:112 checksum:06ea737270
 d4 2
 a5 2
-! Last modified: Thu, 18 Jul 2024 17:21:41 +0000
-! Diff-Path: ../patches/2024.7.18.1041.patch#ruadlist
+! Last modified: Thu, 18 Jul 2024 22:23:20 +0000
+! Diff-Path: ../patches/2024.7.18.1343.patch#ruadlist
 d10181 1
 a10181 1
 $third-party,xmlhttprequest,domain=anisima.ru|arablionz.tv|artrozamnet.ru|autotopik.ru|bigpuzzle.ru|diakov.net|eku.ru|familyspace.ru|farap.ru|film1080p.ru|findanime.net|ggtube.pro|gorodvo.ru|hdklub.com|hdsite.net|hochu.tv|kaztorka.org|kino-hit-online.com|kino-tvserial.online|kinohd.net|kinohd.ws|kogda.org|mainavi.ru|neolove.ru|newcloud.tv|nisorinki.net|nnmclub.ro|nnmclub.to|online-hd.biz|onlineguru.ru|pornozhuk.com|privat-fotka.ru|ru-kino.com|ruvi.tv|seasonvar.ru|shtorm777.ru|smotriserial.me|superhumor.ru|telspravochnik.com|top-radio.ru|torrentshow.org|tryserial.net|voffka.com|vse-sezony.org|zk.fm
@@ -69,6 +69,8 @@ a22523 1
 d22528 2
 a22764 1
 /*yaqpil=$popup,domain=dzen.ru
+a25634 1
+@@||www3.doubleclick.net/|$xmlhttprequest,domain=animix.lol
 d25787 1
 a25787 1
 ||howdyho.*/media/js/main-pn5-ru.js
@@ -91,11 +93,16 @@ dzen.ru##div[class*="article__"] > .undefined ~ div[class*="millde"] > div[id][c
 dzen.ru##div[class*="wigdet"] > div[class*="container"] > div ~ div
 dzen.ru##div[id*="long_video_floor"] .card-video ~ :not(.card-video)
 dzen.ru##div[id*="native_floor"] .card-article ~ :not(.card-article)
+d27480 1
+a27480 1
+ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.b-page.overlay:style(overflow-y: auto !important)
 d27678 1
 a27678 1
 fastpic.org,kaztorka.org,kg-portal.ru,~new.fastpic.org,nnmclub.ro,nnmclub.to##+js(abort-current-inline-script, document.createElement, Math.random)
 d27691 1
 d27882 1
+a27882 1
+animix.lol##+js(no-fetch-if, doubleclick.net)
 d27940 1
 a28098 2
 howdyho.*##+js(no-setInterval-if, _0x, 5000)
