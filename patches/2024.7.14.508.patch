@@ -1,22 +1,21 @@
-diff name:ruadlist lines:124 checksum:c65f484fbb
+diff name:ruadlist lines:129 checksum:99692aa76a
 d4 2
 a5 2
-! Last modified: Thu, 18 Jul 2024 07:20:51 +0000
-! Diff-Path: ../patches/2024.7.18.440.patch#ruadlist
+! Last modified: Thu, 18 Jul 2024 12:42:32 +0000
+! Diff-Path: ../patches/2024.7.18.762.patch#ruadlist
 a9246 1
 ||olimp.bet/promo/$popup
 d10180 1
 a10180 1
 $third-party,xmlhttprequest,domain=anisima.ru|arablionz.tv|artrozamnet.ru|autotopik.ru|bigpuzzle.ru|diakov.net|eku.ru|familyspace.ru|farap.ru|film1080p.ru|findanime.net|ggtube.pro|gorodvo.ru|hdklub.com|hdsite.net|hochu.tv|kaztorka.org|kino-hit-online.com|kino-tvserial.online|kinohd.net|kinohd.ws|kogda.org|mainavi.ru|neolove.ru|newcloud.tv|nisorinki.net|nnmclub.ro|nnmclub.to|online-hd.biz|onlineguru.ru|pornozhuk.com|privat-fotka.ru|ru-kino.com|ruvi.tv|seasonvar.ru|shtorm777.ru|smotriserial.me|superhumor.ru|telspravochnik.com|top-radio.ru|torrentshow.org|tryserial.net|voffka.com|vse-sezony.org|zk.fm
 d10428 2
-a10429 2
-/forum/image.php?link=https://3cdn.ru$domain=nnmclub.ro|nnmclub.to
-/forum/image.php?link=https://factpic.ru$domain=nnmclub.ro|nnmclub.to
 d10715 1
 a10715 1
 ||alicdn.com^$domain=prostolinux.ru|ru-an.info|rutracker.ru|savepic.ru|smartbobr.ru|vsaduidoma.com
-a12161 1
+a12161 3
 ||nnmstatic.win/forum/ads/
+||nnmstatic.win/forum/image.php?link=https://3cdn.ru
+||nnmstatic.win/forum/image.php?link=https://factpic.ru
 d13508 1
 a13550 1
 game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib###as_script
@@ -55,16 +54,22 @@ a21140 1
 nnmclub.ro,nnmclub.to##iframe[src*="/forum/ads/"]
 d21690 1
 a21690 1
-||pikabu.ru/fh$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/kv$xmlhttprequest,domain=pikabu.ru
 d21697 1
 a21697 1
 fonmod.com,howdyho.net,howdyho.pro,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 a21827 1
 gismeteo.ru#?#.cities-popular:-abp-has(> .list:empty)
+d21831 1
+a21837 1
+gismeteo.ru##.zen
 a21912 1
 ~3igames.mail.ru,~account.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru#?#body.crossnav div:-abp-has(> div > div:empty:first-child + div:last-child > div:empty:first-child + div:empty + div:empty:last-child)
+d21936 1
+a21937 1
+dzen.ru##div[class^="news-"][class*="_banner"]
 a22046 1
-|https://mail.ru/res/*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0
+|https://mail.ru/res/*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0
 d22053 1
 d22163 1
 a22163 1
