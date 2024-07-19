@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 19 Jul 2024 18:28:47 +0000
-! Diff-Path: ../patches/2024.7.19.1108.patch#ruadlist
+! Last modified: Fri, 19 Jul 2024 23:21:27 +0000
+! Diff-Path: ../patches/2024.7.19.1401.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21914,7 +21914,7 @@ mail.ru##.ph-project-promo-container
 ~e.mail.ru,mail.ru,sportmail.ru##[data-view^="Slot"][data-adq-id]
 ~e.mail.ru,mail.ru,sportmail.ru##a[class^="rb-"][href^="https://r.mail.ru/"][target="_blank"]
 ~e.mail.ru,mail.ru,sportmail.ru#?#aside div[style^="min-height:"][data-hideorder]:first-child:-abp-has(> [data-rb-slot])
-~3igames.mail.ru,~account.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru#?#body.crossnav div:-abp-has(> div > div:empty:first-child + div:last-child > div:empty:first-child + div:empty + div:empty:last-child)
+~3igames.mail.ru,~account.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru#?#body[style="overflow: unset; max-height: unset;"] div:-abp-has(> div > div:empty:first-child + div:last-child > div:empty:first-child + div:empty + div:empty:last-child)
 ~e.mail.ru,mail.ru,sportmail.ru##div[class*="rb-slot_plug"]
 ~e.mail.ru,mail.ru,sportmail.ru##div[data-closewrap-container]
 ~e.mail.ru,mail.ru##main#grid .stripe-wrapper
@@ -22609,10 +22609,11 @@ yandex.by,yandex.kz,yandex.ru,yandex.uz##.b-yabrowser-promo
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.container__banner
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.content.i-bem > .body__topblocks
 ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.content__left > #search-result > li:-abp-has(> .Organic_withPromoOffer)
+ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.content__left > #search-result > li:-abp-has(> div .Organic-Subtitle > span:-abp-contains(/[РPeекламa]{6,7}/))
 ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.content__left > #search-result > li:-abp-has(> div .organic__subtitle > span:-abp-contains(/[РPeекламa]{6,7}/))
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.content__right > .z-market_right_yes
+ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.content__right div[class]:-abp-has(> div > script)
 ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.content__right div[class][data-log-node]:-abp-has(.DirectInlineContainer)
-ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.content__right div[class][data-log-node]:-abp-has(> div > script)
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.direct-view
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.dist-overlay__popup
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.i-bem.adsrv
@@ -28230,7 +28231,7 @@ mail.ru##img[src*="/logo_2021_region"]
 ! Фикс для маленьких экранов
 mail.ru##.grid__header .ph-auth:matches-media((max-width: 1280px)):style(height: 37px !important)
 mail.ru##.grid__header .ph-container:matches-media((max-width: 1280px)):style(height: 40px !important)
-mail.ru##.grid__header > .headline:matches-media((max-width: 1280px)):style(height: 40px !important)
+mail.ru##.grid__header > .headline:matches-media((max-width: 1280px)):style(height: 40px !important; min-height: 40px !important)
 mail.ru##[slot="main-column"] .news-item:matches-media((max-width: 1280px)):style(line-height: 19px !important)
 mail.ru##[slot="main-column"] > .tabs:matches-media((max-width: 1280px)):style(height: 20px !important)
 !#if env_mobile
