@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 19 Jul 2024 13:24:24 +0000
-! Diff-Path: ../patches/2024.7.19.804.patch#ruadlist
+! Last modified: Fri, 19 Jul 2024 18:28:47 +0000
+! Diff-Path: ../patches/2024.7.19.1108.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10440,6 +10440,7 @@ $xmlhttprequest,domain=happy-biock.info|happy-block.info|howto-news.info|mschist
 /images/brand.$image,domain=izbezhat-nakazania.com|strela-online.com|theflash-tv.com|vskazke-tv.com
 /images/brand/*$domain=amuzic.ru|emuzic.ru|ifin.kz
 /images/jet$image,domain=60-fps.net|soft-windows.info|windows-soft.info
+/images/menubars/ru-dating.$domain=fapreactor.com|pornreactor.cc
 /images/partners/*$domain=argumenti.ru|fonarevka.ru|profit-maker.org
 /images_banner/*$domain=xn----7sbaegss0bebjcb2g.xn--p1ai
 /img/banners/*$domain=chelseablues.ru|geonavigator.ge|gotoshop.ua|grinkod.spb.ru|konkurent.ru|mashina.kg|navigator.az|primpress.ru|profootball.ua|sq.com.ua|ternopillive.com|winternete.ru
@@ -20008,7 +20009,6 @@ rogoff.club##body > div[id][style^="height"]:not(#id)
 ukr.bio##body > div[id^="brands"]
 mobiltelefon.ru##body > div[id^="float_head"] > div[id^="bg-"]
 virusinfo.info##body > div[id^="headbr"]
-fapreactor.com,pornreactor.cc##body > div[id^="inter"]
 steampass.ru##body > div[id^="ips_"]
 pornolomka.com.ru##body > div[id^="pw"]
 emuzic.ru##body > div[onclick^="window.open"]
@@ -21710,6 +21710,7 @@ sdamgia.ru##center > div[id][style]
 dzen.ru#?#div:-abp-has(> style:-abp-contains(yatag))
 cq.ru#?#div:-abp-properties(content: "Реклама")
 dzen.ru#?#div:-abp-properties(position: relative !important)
+otvet.mail.ru#?#div:empty:-abp-properties(content: "Реклама")
 pogoda.onliner.by,tech.onliner.by##div[class*="_fixed-height"]
 pikabu.ru#?#div[class*="page-story__"] div:-abp-properties(/min-height: [02345]{2}[0-9]{1}|min-height: calc.|min-height: .+.(cm|in|lh|mm|pt)|height: 250px/)
 pikabu.ru##div[class*="page-story__"] div[style=""]
@@ -21995,6 +21996,7 @@ pets.mail.ru#?#[data-qa="ArticlesList"] > div:-abp-has(> .pypo-slot)
 pets.mail.ru##div[class^="Gallery__slideSide_"]
 ! Ответы
 otvet.mail.ru##a[href^="https://t.mail.ru/redir/"]
+otvet.mail.ru##body div div[class*="adv-slot-"]
 otvet.mail.ru##div[data-pos]
 otvet.mail.ru#?#div[style^="top: "]:-abp-has(> div > div[class=""]:empty)
 otvet.mail.ru##div[style^="top:"] ~ div[style^="top:"] > div > div[class=""] + div:last-child
@@ -22049,7 +22051,6 @@ love.mail.ru##.link-ad
 ! Блокировка ресурсов в основном на самом mail.ru
 //r.mail.ru/b$subdocument
 //rs.mail.ru/b$third-party,domain=~km.ru
-|https://mail.ru/res/*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0
 ||1l-hit.mail.ru^
 ||ad.mail.ru^$domain=~e.mail.ru|~octavius.mail.ru
 ||an.mail.ru/count/$domain=~e.mail.ru|~o2.mail.ru
@@ -27611,7 +27612,6 @@ mail.ru##body > .grid > div[class^="grid"][class*="__header"] > .toolbar
 mail.ru##body > .zeropixel ~ * .balloon
 mail.ru##body > .zeropixel ~ * .stripe-wrapper
 mail.ru##body > .zeropixel ~ * div[class][style^="color:"][style$="background-size:auto 40px"]
-otvet.mail.ru##body div div div div[class*="adv-slot-"]
 mail.ru##body:not(.js-module) .searchContainer ~ div > a.dmb
 mail.ru##body:not(.js-module) .tabs + div[class] > :first-child:style(width: 100% !important)
 mail.ru##body:not(.js-module) .tabs + div[class]:style(min-width: fit-content !important)
@@ -28165,11 +28165,12 @@ minigames.mail.ru##+js(abort-current-inline-script, $, blockWarnClass)
 mmminigames.mail.ru##+js(abort-current-inline-script, $, mimicTopClass)
 ok.ru##+js(abort-on-property-read, globalAuthLoginPopupCounter)
 ok.ru##+js(abort-on-property-write, mailruEnabled)
+otvet.mail.ru##+js(addEventListener-defuser, load, checkAdblockExistence)
 e.mail.ru,octavius.mail.ru##+js(href-sanitizer, [data-cke-saved-href^="https://checklink.mail.ru/proxy?"])
 light.mail.ru##+js(href-sanitizer, [href^="https://checklink.mail.ru/proxy?"], ?url)
 light.mail.ru##+js(href-sanitizer, [href^="https://click.mail.ru/redir?u="], ?u)
 ok.ru,touch.mail.ru##+js(json-prune, result.body.direct)
-~3igames.mail.ru,~account.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##+js(no-fetch-if, /\/res\//)
+~3igames.mail.ru,~account.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##+js(no-fetch-if, /\/apic\//)
 ~3igames.mail.ru,~account.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##+js(remove-node-text, script, violatedDirective)
 okminigames.mail.ru##+js(set-constant, NO_ADV, 1)
 otvet.mail.ru##+js(set-constant, Object.prototype._Mimic, undefined)

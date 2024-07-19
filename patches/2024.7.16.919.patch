@@ -1,12 +1,14 @@
-diff name:ruadlist lines:121 checksum:6b698e2feb
+diff name:ruadlist lines:132 checksum:3b95dbcf44
 d4 2
 a5 2
-! Last modified: Fri, 19 Jul 2024 13:24:24 +0000
-! Diff-Path: ../patches/2024.7.19.804.patch#ruadlist
+! Last modified: Fri, 19 Jul 2024 18:28:47 +0000
+! Diff-Path: ../patches/2024.7.19.1108.patch#ruadlist
 d10181 1
 a10181 1
 $third-party,xmlhttprequest,domain=anisima.ru|arablionz.tv|artrozamnet.ru|autotopik.ru|bigpuzzle.ru|diakov.net|eku.ru|familyspace.ru|farap.ru|film1080p.ru|findanime.net|ggtube.pro|gorodvo.ru|hdklub.com|hdsite.net|hochu.tv|kaztorka.org|kino-hit-online.com|kino-tvserial.online|kinohd.net|kinohd.ws|kogda.org|mainavi.ru|neolove.ru|newcloud.tv|nisorinki.net|nnmclub.ro|nnmclub.to|online-hd.biz|onlineguru.ru|pornozhuk.com|privat-fotka.ru|ru-kino.com|ruvi.tv|seasonvar.ru|shtorm777.ru|smotriserial.me|superhumor.ru|telspravochnik.com|top-radio.ru|torrentshow.org|tryserial.net|voffka.com|vse-sezony.org|zk.fm
 d10429 2
+a10444 1
+/images/menubars/ru-dating.$domain=fapreactor.com|pornreactor.cc
 d10716 1
 a10716 1
 ||alicdn.com^$domain=prostolinux.ru|ru-an.info|rutracker.ru|savepic.ru|smartbobr.ru|vsaduidoma.com
@@ -39,6 +41,7 @@ d19266 1
 d19953 1
 a19953 1
 nnmclub.ro,nnmclub.to##body > .ui-corner-all
+d20011 1
 d20697 1
 a20912 1
 lena-miro.ru,levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##div[id^="yandex_direct_"]
@@ -51,6 +54,8 @@ a21692 1
 d21699 1
 a21699 1
 fonmod.com,howdyho.net,howdyho.pro,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
+a21712 1
+otvet.mail.ru#?#div:empty:-abp-properties(content: "Реклама")
 a21829 1
 gismeteo.ru#?#.cities-popular:-abp-has(> .list:empty)
 d21833 1
@@ -62,8 +67,8 @@ d21938 1
 a21939 2
 dzen.ru##div[class^="news-"][class*="_banner"]
 dzen.ru##div[class^="news-"][class*="_tsar "]
-a22048 1
-|https://mail.ru/res/*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0
+a21994 1
+otvet.mail.ru##body div div[class*="adv-slot-"]
 d22055 1
 d22165 1
 a22165 1
@@ -105,6 +110,7 @@ dzen.ru##div[id*="native_floor"] .card-article ~ :not(.card-article)
 d27480 1
 a27480 1
 ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.b-page.overlay:style(overflow-y: auto !important)
+d27612 1
 d27678 1
 a27678 1
 fastpic.org,kaztorka.org,kg-portal.ru,~new.fastpic.org,nnmclub.ro,nnmclub.to##+js(abort-current-inline-script, document.createElement, Math.random)
@@ -116,6 +122,11 @@ d27940 1
 a28098 2
 howdyho.*##+js(no-setInterval-if, _0x, 5000)
 howdyho.*##+js(set-attr, #progress-value, data-timer, 15)
+a28165 1
+otvet.mail.ru##+js(addEventListener-defuser, load, checkAdblockExistence)
+d28170 1
+a28170 1
+~3igames.mail.ru,~account.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru##+js(no-fetch-if, /\/apic\//)
 a28375 1
 ||freeiptvplayer.net/wp-content/uploads/$script
 d30349 1
