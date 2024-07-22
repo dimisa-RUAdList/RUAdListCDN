@@ -1,13 +1,19 @@
-diff name:ruadlist lines:27 checksum:fa31358a90
+diff name:ruadlist lines:45 checksum:3d9d46c792
 d4 2
 a5 2
-! Last modified: Mon, 22 Jul 2024 16:28:22 +0000
-! Diff-Path: ../patches/2024.7.22.988.patch#ruadlist
+! Last modified: Mon, 22 Jul 2024 21:21:03 +0000
+! Diff-Path: ../patches/2024.7.22.1281.patch#ruadlist
 a18144 1
 vedomosti.ru##.the-header__top a[href*="?erid="]
 d21692 1
 a21692 1
 ||pikabu.ru/sa$xmlhttprequest,domain=pikabu.ru
+d21694 1
+a21705 1
+livejournal.com#?#a:-abp-has(span:-abp-contains(Реклама))
+d21710 1
+a21710 1
+dzen.ru#?#div:-abp-has(> div:first-child > style + div a span)
 d21917 1
 a21917 1
 ~3igames.mail.ru,~account.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru#?#body[style="overflow: unset; max-height: unset;"] div:-abp-has(> div > div:empty:first-child + div:last-child > div:empty:first-child + div:empty + div:empty:last-child)
@@ -23,6 +29,18 @@ ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.content__left > #search-result 
 a22613 1
 ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.content__right div[class]:-abp-has(> div > script)
 d22615 1
+a22748 4
+dzen.ru##div[class*="_position_articleBottom"]
+dzen.ru##div[class*="_position_feedSingleCard"]
+dzen.ru##div[class*="_rightAdWrapper"]
+dzen.ru##div[class*="_topBannerContainer"]
+a22752 1
+dzen.ru##div[class^="short-video-sidebar-placeholder"]:empty
+a22766 1
+/*ybqpil=$popup,domain=dzen.ru
+d27405 2
+d27412 1
+d27415 1
 d28233 1
 a28233 1
 mail.ru##.grid__header > .headline:matches-media((max-width: 1280px)):style(height: 40px !important; min-height: 40px !important)

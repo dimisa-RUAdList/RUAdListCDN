@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 22 Jul 2024 16:28:22 +0000
-! Diff-Path: ../patches/2024.7.22.988.patch#ruadlist
+! Last modified: Mon, 22 Jul 2024 21:21:03 +0000
+! Diff-Path: ../patches/2024.7.22.1281.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21692,7 +21692,6 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ! Pikabu (ловушка для обфускации)
 ||pikabu.ru/sa$xmlhttprequest,domain=pikabu.ru
 ! селекторы
-livejournal.com#?#.body-content > div[class]:-abp-has(> [class*="-shtorka-commercial"])
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(/min-height: 20.px|min-height: 29.px|min-height: 30.px|min-height: 300./))
@@ -21704,11 +21703,12 @@ liveinternet.ru,sdamgia.ru##[data-container]
 sdamgia.ru##[data-name="partial-container"]
 liveinternet.ru##[data-wrapper]
 lena-miro.ru,levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##[role="banner"] > .s-header-extra + div[class]
+livejournal.com#?#a:-abp-has(span:-abp-contains(Реклама))
 kp.kg,kp.kz,kp.md,kp.ru#?#body > #app div:-abp-properties(background-color: rgb(225, 231, 235))
 www.e1.ru#?#body > script[src^="https://www.e1.ru/"] ~ #app [itemprop] > figure:-abp-has(span:-abp-contains(чуть-чуть и видео загрузится))
 www.ixbt.com#?#body > style:-abp-contains(margin-top) {remove:true;}
 sdamgia.ru##center > div[id][style]
-dzen.ru#?#div:-abp-has(> style:-abp-contains(yatag))
+dzen.ru#?#div:-abp-has(> div:first-child > style + div a span)
 cq.ru#?#div:-abp-properties(content: "Реклама")
 dzen.ru#?#div:-abp-properties(position: relative !important)
 otvet.mail.ru#?#div:empty:-abp-properties(content: "Реклама")
@@ -22750,10 +22750,15 @@ dzen.ru##[data-name="video-in-combo-zen-container"]
 dzen.ru#?#div:-abp-has(> .adv-skeleton___main)
 dzen.ru##div[class*=" card-with-ad__skeletonCard"]
 dzen.ru##div[class*="-top-ad-"]
+dzen.ru##div[class*="_position_articleBottom"]
+dzen.ru##div[class*="_position_feedSingleCard"]
+dzen.ru##div[class*="_rightAdWrapper"]
+dzen.ru##div[class*="_topBannerContainer"]
 dzen.ru##div[class^="advert-panel"]
 dzen.ru##div[class^="floor-card-rtb_"]
 dzen.ru##div[class^="floor-skeleton-card__skeletonCardWrapper"]
 dzen.ru#?#div[class^="grid__row-"]:-abp-has(> div[class^="video-card-ad"])
+dzen.ru##div[class^="short-video-sidebar-placeholder"]:empty
 dzen.ru##div[data-name^="zen2"]
 dzen.ru#?#div[data-testid="article-showcase-card"]:-abp-has(> [data-testid="card-rtb"])
 dzen.ru##iframe[style="display: block; border-width: 0px;"]:not([id])
@@ -22768,6 +22773,7 @@ dzen.ru##div[style*=" !important; "][style$=" !important;"]
 /*clyd=$popup,domain=dzen.ru
 /*icllcd=$popup,domain=dzen.ru
 /*yaqpil=$popup,domain=dzen.ru
+/*ybqpil=$popup,domain=dzen.ru
 /*ychid=$popup,domain=dzen.ru
 /*ychyd=$popup,domain=dzen.ru
 /*yciild=$popup,domain=dzen.ru
@@ -27406,17 +27412,13 @@ dzen.ru##div[class^="dzen-wrapper-with-top-content-desktop__topContent-"]:style(
 dzen.ru##div[id][class$="__ad"]
 ! обфускация
 dzen.ru##._is-for-video-floor
-dzen.ru##.article-page-layout > main > div > div[id]
-dzen.ru##.article-recomender__feed-container article > div:first-child ~ div
 dzen.ru##.viewer-layout__content div[class*="-player "][aria-label] ~ div:not([class])
 dzen.ru##[class*="desktop"] ~ [id*="teaser"]
 dzen.ru##[class^="card-part-wrapper"] ~ div[class=""]
 dzen.ru##[class^="dzen-desktop"] ~ div[id$="-popup"]
 dzen.ru##[data-testid="recommend-auth-popup"]
-dzen.ru##aside[id^="article_"][class*="rihggt"] > div[class]
 dzen.ru##div[aria-label="Карточка рекомендованного видео"] ~ [aria-label]:not([aria-label="Карточка рекомендованного видео"])
 dzen.ru##div[class*="_feed-type_article_"] article:not([class*="card-"])
-dzen.ru##div[class*="article__"] > .undefined ~ div[class*="millde"] > div[id][class]
 dzen.ru##div[class*="wigdet"] > div[class*="container"] > div ~ div
 dzen.ru##div[id*="long_video_floor"] .card-video ~ :not(.card-video)
 dzen.ru##div[id*="native_floor"] .card-article ~ :not(.card-article)

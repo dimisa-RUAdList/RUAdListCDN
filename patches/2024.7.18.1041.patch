@@ -1,8 +1,8 @@
-diff name:ruadlist lines:48 checksum:fa31358a90
+diff name:ruadlist lines:66 checksum:3d9d46c792
 d4 2
 a5 2
-! Last modified: Mon, 22 Jul 2024 16:28:22 +0000
-! Diff-Path: ../patches/2024.7.22.988.patch#ruadlist
+! Last modified: Mon, 22 Jul 2024 21:21:03 +0000
+! Diff-Path: ../patches/2024.7.22.1281.patch#ruadlist
 a10442 1
 /images/menubars/ru-dating.$domain=fapreactor.com|pornreactor.cc
 a18143 1
@@ -11,6 +11,12 @@ d20011 1
 d21692 1
 a21692 1
 ||pikabu.ru/sa$xmlhttprequest,domain=pikabu.ru
+d21694 1
+a21705 1
+livejournal.com#?#a:-abp-has(span:-abp-contains(Реклама))
+d21710 1
+a21710 1
+dzen.ru#?#div:-abp-has(> div:first-child > style + div a span)
 a21712 1
 otvet.mail.ru#?#div:empty:-abp-properties(content: "Реклама")
 d21916 1
@@ -31,8 +37,20 @@ ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.content__left > #search-result 
 a22612 1
 ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.content__right div[class]:-abp-has(> div > script)
 d22614 1
+a22747 4
+dzen.ru##div[class*="_position_articleBottom"]
+dzen.ru##div[class*="_position_feedSingleCard"]
+dzen.ru##div[class*="_rightAdWrapper"]
+dzen.ru##div[class*="_topBannerContainer"]
+a22751 1
+dzen.ru##div[class^="short-video-sidebar-placeholder"]:empty
+a22765 1
+/*ybqpil=$popup,domain=dzen.ru
 a25635 1
 @@||www3.doubleclick.net/|$xmlhttprequest,domain=animix.lol
+d27403 2
+d27410 1
+d27413 1
 d27481 1
 a27481 1
 ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.b-page.overlay:style(overflow-y: auto !important)
