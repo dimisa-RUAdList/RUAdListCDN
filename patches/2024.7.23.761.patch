@@ -1,8 +1,8 @@
-diff name:ruadlist lines:88 checksum:0768afaa04
+diff name:ruadlist lines:96 checksum:e235555cd2
 d4 2
 a5 2
-! Last modified: Fri, 26 Jul 2024 05:25:03 +0000
-! Diff-Path: ../patches/2024.7.26.325.patch#ruadlist
+! Last modified: Fri, 26 Jul 2024 10:26:18 +0000
+! Diff-Path: ../patches/2024.7.26.626.patch#ruadlist
 a4548 1
 ||perfectlinestarter.com^$third-party
 d10387 1
@@ -25,12 +25,10 @@ a17728 1
 seolik.ru##.seolik_top_display
 a19085 1
 eurointegration.com.ua##a[href*=".xyz/"] div
-a19459 2
+a19459 1
 drive2.ru##a[href] > div > div > div > div
-drive2.ru##a[href] > div > div > div > span
-a20128 2
+a20128 1
 drive2.ru#?#div:-abp-has(> a[href] > div > div > div > div)
-drive2.ru#?#div:-abp-has(> a[href] > div > div > div > span)
 a21192 1
 eurointegration.com.ua##iframe[title="3rd party ad content"]
 d21311 1
@@ -46,6 +44,10 @@ dzen.ru#?#div:-abp-has(> a[href] > div > div > div > div)
 a21725 2
 eurointegration.com.ua##iframe[src="about:blank"] {remove:true;}
 eurointegration.com.ua##script[id][data-sdk] {remove:true;}
+d22776 2
+a22777 1
+/*qpil=$popup,domain=dzen.ru
+d22819 1
 d22901 1
 a22902 1
 pogoda21.ru##.PageCap > table .nodivs > a
@@ -57,8 +59,13 @@ zarulem.ws##td[style^="text-align:center;width:50%"]
 a22930 2
 ||afisha21.ru/css/ban/*.gif?id=
 ||afisha21.ru/css/bg/*.gif?id=
+d24757 1
+a24757 1
+bigkyiv.com.ua,roshlam.ru#@#.ad-text
 a25713 1
 seolik.ru##.alert_top_site
+a25741 1
+sport-express.ru##.se-bn-notice
 d26210 1
 d27422 4
 a27425 4
@@ -87,3 +94,4 @@ a28255 1
 4mama.ua,autoua.net,avtovod.com.ua,beauty.ua,bigmir.net,bilshe.com,buhgalter.com.ua,buhgalter911.com,censor.net,dengi.ua,ditey.com,enovosty.com,epravda.com.ua,facenews.ua,factor.ua,football24.ua,forumodua.com,gazeta.ua,gorod.dp.ua,hvylya.net,i.ua,inforesist.org,internetua.com,isport.ua,ivona.ua,kolobok.ua,kriminal.tv,kurs.com.ua,liga.net,mama.ua,meteo.ua,meteofor.com.ua,mport.ua,newsyou.info,nnovosti.info,nv.ua,okino.ua,orakul.com,panno4ka.net,pogodaua.com,pravda.com.ua,real-vin.com,smak.ua,stravy.net,tochka.net,toneto.net,tv.ua,tvoymalysh.com.ua,u-news.com.ua,ukr.net,viva.ua,vsetv.com,zp.ua##body iframe[name][style*="display:none"]:not([id]):not([class]):not([src]):remove()
 a28303 1
 eurointegration.com.ua##^script[onload*="error-report.com"]
+d30343 1
