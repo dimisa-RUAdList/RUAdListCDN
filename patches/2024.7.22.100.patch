@@ -1,8 +1,8 @@
-diff name:ruadlist lines:96 checksum:d4abf44dbc
+diff name:ruadlist lines:109 checksum:001b67a10a
 d4 2
 a5 2
-! Last modified: Thu, 25 Jul 2024 19:17:38 +0000
-! Diff-Path: ../patches/2024.7.25.1157.patch#ruadlist
+! Last modified: Fri, 26 Jul 2024 01:37:04 +0000
+! Diff-Path: ../patches/2024.7.26.97.patch#ruadlist
 a4548 1
 ||perfectlinestarter.com^$third-party
 d10387 1
@@ -23,6 +23,8 @@ drive2.ru##.c-darkening-hover-container ~ :not(.c-darkening-hover-container) > d
 a17109 2
 drive2.ru##.o-grid--equal > div[class] > div:not([class]):not([id])
 drive2.ru##.o-grid--equal > div[class] > div[id]:not(:empty)
+a17727 1
+seolik.ru##.seolik_top_display
 a18144 1
 vedomosti.ru##.the-header__top a[href*="?erid="]
 a19083 1
@@ -74,6 +76,8 @@ zarulem.ws##td[style^="text-align:center;width:50%"]
 a22921 2
 ||afisha21.ru/css/ban/*.gif?id=
 ||afisha21.ru/css/bg/*.gif?id=
+a25704 1
+seolik.ru##.alert_top_site
 d26201 1
 d27407 2
 d27414 1
@@ -83,6 +87,15 @@ dzen.ru##div[class*="_feed-type_article_"] article:not([class*="card"])
 dzen.ru##div[class*="wigddet"] > div[class*="container"] > div ~ div
 dzen.ru##div[id*="long_video_floor"] [class*="__video-"] ~ :not([class*="__video-"])
 dzen.ru##div[id*="native_floor"] [class*="cardPartWrapper"] ~ :not([class*="cardPartWrapper"])
+d27577 1
+a27577 5
+mail.ru###grid .widget__container > .calendar-container
+mail.ru###grid .widget__container > .event-list-widget
+mail.ru###grid .widget__container > .games-widget
+mail.ru###grid .widget__container > .progress-bar-widget
+mail.ru###grid div[class^="feed__"]
+d27584 1
+d27591 1
 a27950 1
 dzen.ru##+js(set-constant, Object.prototype.DirectProduct, undefined)
 a28114 1

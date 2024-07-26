@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 25 Jul 2024 19:17:38 +0000
-! Diff-Path: ../patches/2024.7.25.1157.patch#ruadlist
+! Last modified: Fri, 26 Jul 2024 01:37:04 +0000
+! Diff-Path: ../patches/2024.7.26.97.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -17731,6 +17731,7 @@ bolshoyvopros.ru##.seedbnrs
 subscribe.ru##.sendsay_adv
 gmod-fan.ru##.seo-info
 nakanune.ru##.seo_green
+seolik.ru##.seolik_top_display
 micro-win.com##.seoquake-nofollow
 xtreme.ws##.separator
 24.animez.live#?#.serials > .serial:-abp-has(> .serial-btn > .row > div > img[src^="/assets/smotret_anime-"])
@@ -25726,6 +25727,7 @@ dfm.ru,hitfm.ru,maximum.ru,montecarlo.ru,rusradio.ru##.ad-blocked-message
 ogorod.ru##.adblock_popup_warning
 wowjp.net##.adblocker-notification
 pes-files.ru##.alert-blue
+seolik.ru##.alert_top_site
 electric-house.ru##.alert_warn
 stylenews.ru##.alm-btn-wrap
 7days2die.info#?#.articleContent > p:-abp-has(> span + strong[style])
@@ -27593,21 +27595,23 @@ e.mail.ru,octavius.mail.ru##.layer-sent-page > .layer:style(min-height: 0 !impor
 e.mail.ru##.ph-projects > a[href^="https://e.mail.ru/messages/inbox?utm_"]:style(pointer-events: none !important)
 ! ---
 mail.ru###bubble-home
-mail.ru###grid .feed__content
+mail.ru###grid .widget__container > .calendar-container
+mail.ru###grid .widget__container > .event-list-widget
+mail.ru###grid .widget__container > .games-widget
+mail.ru###grid .widget__container > .progress-bar-widget
+mail.ru###grid div[class^="feed__"]
 my.mail.ru###history_container > div[class][style*="display: block!important"]
 minigames.mail.ru###like-buttons
 minigames.mail.ru###portal-headline:style(margin-top: auto !important)
 hi-tech.mail.ru###portal-menu:style(margin: 0 !important)
 my.mail.ru##.app-event-bubbles
 mail.ru##.article__item_source_viqeo .article__container::before:style(content: initial !important)
-mail.ru##.asteroid-widgets
 mail.ru##.grid__header .ph-modal-projects-overlay:style(top: inherit !important)
 mail.ru##.grid__main-col .eventbar-wrapper:style(margin-top: 0 !important)
 mail.ru##.grid__main-col > div[slot="main-column"] .search-container:style(margin-top: 4px !important; margin-bottom: 4px !important)
 hi-tech.mail.ru##.header-banner:style(margin: 0 !important)
 news.mail.ru,pogoda.mail.ru,sportmail.ru##.layout_footer > .block
 sportmail.ru##.layout_footer:style(margin-top: 20px !important)
-mail.ru##.mailbox-container ~ [class] .widget__container
 mail.ru##.mailbox__add-btn-logo
 sportmail.ru##.p-article-bookmakers ~ div a[href^="https://r.mail.ru/"]:style(pointer-events: none !important; text-decoration: none !important; color: inherit !important)
 mail.ru##.ph-ext

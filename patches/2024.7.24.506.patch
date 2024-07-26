@@ -1,8 +1,8 @@
-diff name:ruadlist lines:63 checksum:d4abf44dbc
+diff name:ruadlist lines:76 checksum:001b67a10a
 d4 2
 a5 2
-! Last modified: Thu, 25 Jul 2024 19:17:38 +0000
-! Diff-Path: ../patches/2024.7.25.1157.patch#ruadlist
+! Last modified: Fri, 26 Jul 2024 01:37:04 +0000
+! Diff-Path: ../patches/2024.7.26.97.patch#ruadlist
 a4548 1
 ||perfectlinestarter.com^$third-party
 d10387 1
@@ -20,6 +20,8 @@ nnmclub.ro,nnmclub.to##.btTbl > tbody > .row1 > .genmed[align="center"] noindex
 a17109 2
 drive2.ru##.o-grid--equal > div[class] > div:not([class]):not([id])
 drive2.ru##.o-grid--equal > div[class] > div[id]:not(:empty)
+a17727 1
+seolik.ru##.seolik_top_display
 a19084 1
 eurointegration.com.ua##a[href*=".xyz/"] div
 a19458 2
@@ -43,6 +45,8 @@ dzen.ru#?#div:-abp-has(> a[href] > div > div > div > div)
 a21724 2
 eurointegration.com.ua##iframe[src="about:blank"] {remove:true;}
 eurointegration.com.ua##script[id][data-sdk] {remove:true;}
+a25712 1
+seolik.ru##.alert_top_site
 d26209 1
 d27421 4
 a27424 4
@@ -50,6 +54,15 @@ dzen.ru##div[class*="_feed-type_article_"] article:not([class*="card"])
 dzen.ru##div[class*="wigddet"] > div[class*="container"] > div ~ div
 dzen.ru##div[id*="long_video_floor"] [class*="__video-"] ~ :not([class*="__video-"])
 dzen.ru##div[id*="native_floor"] [class*="cardPartWrapper"] ~ :not([class*="cardPartWrapper"])
+d27581 1
+a27581 5
+mail.ru###grid .widget__container > .calendar-container
+mail.ru###grid .widget__container > .event-list-widget
+mail.ru###grid .widget__container > .games-widget
+mail.ru###grid .widget__container > .progress-bar-widget
+mail.ru###grid div[class^="feed__"]
+d27588 1
+d27595 1
 a27954 1
 dzen.ru##+js(set-constant, Object.prototype.DirectProduct, undefined)
 a28118 1
