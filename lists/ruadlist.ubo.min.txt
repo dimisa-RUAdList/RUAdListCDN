@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 27 Jul 2024 11:18:40 +0000
-! Diff-Path: ../patches/2024.7.27.678.patch#ruadlist
+! Last modified: Sat, 27 Jul 2024 16:26:23 +0000
+! Diff-Path: ../patches/2024.7.27.986.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -11373,6 +11373,7 @@ lada.kz/uploads/banners/
 ||forums.warforge.ru/style_images/ad/
 ||forzajuve.ru/978x90.
 ||foto-save.ru/file.js
+||fotocdn.net/app/king/$domain=fotostrana.ru
 ||fotokto.ru^*/m2/
 ||freakenergy.ru/imgpls/
 ||freealt.net/daos/
@@ -13991,8 +13992,6 @@ vkfaces.com###js-slider-1
 nur.kz###js-widget-pm
 ifreeapps.ru###jv-banner
 dota2.ru###kalambur
-fotostrana.ru###king-rightplace
-fotostrana.ru###king-rightplace-sight
 broadcast.net.ua###kinoafishaslider
 buknews.com.ua,portal.lviv.ua###kinotvukrnet
 kloomba.com,klumba.com###kl-ad-top
@@ -14097,6 +14096,7 @@ meta.ua###meta_market_bottom
 donday-aksay.ru,donday-novocherkassk.ru,donday-shakhty.ru,donday-taganrog.ru,donday.ru,volga-day.ru###mgid
 oper.ru#?##middle > .thumbnails:-abp-has(> ins a[href*="//wink."])
 oper.ru#?##middle > dd:-abp-has(> .body > a[href*="//wink."])
+fotostrana.ru###middle-ads-banner
 stadion.uz###middle_section > div[style^="float:"]
 k-agent.ru###middletbl_r_in > a[href="http://www.sushivenik.ru"]
 tort.fm###min-banners-block
@@ -14246,7 +14246,6 @@ forum.developing.ru,forumodua.com,ruboard.website,virusinfo.info###posts > .post
 rf-cheats.ru###posts > br
 nowa.cc,rf-cheats.ru###posts > center
 pptcloud.ru###pptcloud-mail
-fotostrana.ru###pr-ads
 cpainform.ru###pr_top
 1ttv.net###prerollad
 delovoy-kirov.ru###preveav
@@ -20834,6 +20833,7 @@ fanfics.me##div[id^="inform_top_"]
 forum.littleone.ru##div[id^="inpage_"]
 glav.su##div[id^="js-hb-"]
 tkaninfo.ru##div[id^="kazandrey"]
+fotostrana.ru##div[id^="king-rightplace"]
 korabel.ru##div[id^="kodirect_"]
 anekdot.ru##div[id^="krt-"]
 mobiltelefon.ru##div[id^="lbanners"]
