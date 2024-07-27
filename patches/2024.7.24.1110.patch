@@ -1,12 +1,16 @@
-diff name:ruadlist lines:78 checksum:4f061e3c1d
+diff name:ruadlist lines:86 checksum:93bbf4ca20
 d4 2
 a5 2
-! Last modified: Sat, 27 Jul 2024 06:27:44 +0000
-! Diff-Path: ../patches/2024.7.27.387.patch#ruadlist
+! Last modified: Sat, 27 Jul 2024 11:18:40 +0000
+! Diff-Path: ../patches/2024.7.27.678.patch#ruadlist
 a4548 1
 ||perfectlinestarter.com^$third-party
+a8950 1
+||special.playground.info/haval$popup
 a11563 1
 ||html-load.com/loader.min.js$domain=eurointegration.com.ua
+a11570 1
+||i.playground.ru/e/wxbrYVT-qdlfsnmP_cFJpw.jpeg
 a17111 1
 drive2.ru##.o-grid--equal > div[class] > div:not([class]):not([id])
 a17730 1
@@ -30,14 +34,17 @@ dzen.ru#?#div:-abp-has(> a[href] > div > div > div > div)
 a21731 2
 eurointegration.com.ua##iframe[src="about:blank"] {remove:true;}
 eurointegration.com.ua##script[id][data-sdk] {remove:true;}
+d21917 1
 d21925 1
-a21931 6
+a21931 8
 ! Главная
+~e.mail.ru,mail.ru,~octavius.mail.ru##.stripe-wrapper
+~e.mail.ru,mail.ru,~octavius.mail.ru##.tgb-wrapper
 ~3igames.mail.ru,~account.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru#?#body[style="overflow: unset; max-height: unset;"] div:-abp-has(> div > div:empty:first-child + div:last-child > div:empty:first-child + div:empty + div:empty:last-child)
-mail.ru#?#div:-abp-has(> div[style^="width:"] + div[style^="margin-left:"] + div > [role="button"])
-mail.ru##div[class^="tgb_"]
-mail.ru##div[style^="margin-left:"] > div[class^="tgb"] + div
-mail.ru##div[style^="width:"] + div[style^="margin-left:"] + div > [role="button"]
+~e.mail.ru,mail.ru,~octavius.mail.ru#?#div:-abp-has(> div[style^="width:"] + div[style^="margin-left:"] + div > [role="button"])
+~e.mail.ru,mail.ru,~octavius.mail.ru##div[class^="tgb_"]
+~e.mail.ru,mail.ru,~octavius.mail.ru##div[style^="margin-left:"] > div[class^="tgb"] + div
+~e.mail.ru,mail.ru,~octavius.mail.ru##div[style^="width:"] + div[style^="margin-left:"] + div > [role="button"]
 d22782 2
 a22783 1
 /*qpil=$popup,domain=dzen.ru
@@ -56,7 +63,8 @@ dzen.ru##div[class*="wigddet"] > div[class*="container"] > div ~ div
 dzen.ru##div[id*="long_video_floor"] [class*="__video-"] ~ :not([class*="__video-"])
 dzen.ru##div[id*="native_floor"] [class*="cardPartWrapper"] ~ :not([class*="cardPartWrapper"])
 d27587 1
-a27587 5
+a27587 6
+mail.ru###grid .asteroid-widgets
 mail.ru###grid .widget__container > .calendar-container
 mail.ru###grid .widget__container > .event-list-widget
 mail.ru###grid .widget__container > .games-widget
