@@ -1,8 +1,8 @@
-diff name:ruadlist lines:139 checksum:ca492baf00
+diff name:ruadlist lines:139 checksum:5f42e96aa7
 d4 2
 a5 2
-! Last modified: Sun, 28 Jul 2024 12:37:58 +0000
-! Diff-Path: ../patches/2024.7.28.757.patch#ruadlist
+! Last modified: Sun, 28 Jul 2024 17:21:02 +0000
+! Diff-Path: ../patches/2024.7.28.1041.patch#ruadlist
 a4548 1
 ||perfectlinestarter.com^$third-party
 a8950 1
@@ -61,9 +61,9 @@ d21699 1
 a21699 1
 ||pikabu.ru/si$xmlhttprequest,domain=pikabu.ru
 a21712 1
-dzen.ru##a[href] > div > div > div > div
+dzen.ru##a[href^="https://dzen.ru/"] > div > div > div > div
 a21716 1
-dzen.ru#?#div:-abp-has(> a[href] > div > div > div > div)
+dzen.ru#?#div:-abp-has(> a[href^="https://dzen.ru/"] > div > div > div > div)
 a21730 2
 eurointegration.com.ua##iframe[src="about:blank"] {remove:true;}
 eurointegration.com.ua##script[id][data-sdk] {remove:true;}
