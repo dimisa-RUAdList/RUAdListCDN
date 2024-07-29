@@ -1,8 +1,8 @@
-diff name:ruadlist lines:55 checksum:75cef3a364
+diff name:ruadlist lines:59 checksum:f28caadaa2
 d4 2
 a5 2
-! Last modified: Mon, 29 Jul 2024 03:25:02 +0000
-! Diff-Path: ../patches/2024.7.29.205.patch#ruadlist
+! Last modified: Mon, 29 Jul 2024 08:27:51 +0000
+! Diff-Path: ../patches/2024.7.29.507.patch#ruadlist
 d10169 1
 a10169 1
 $csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: *.addtoany.com *.amazonaws.com *.cloudflare.com *.dmca.com *.disqus.com *.disquscdn.com *.facebook.com *.getsitecontrol.com apis.google.com cse.google.com *.google.com/cse/ *.google.com/complete/ *.google.com/recaptcha/ translate.google.com www.google.com *.googleapis.com *.googletagmanager.com *.gstatic.com/recaptcha/ *.instagram.com *.jivosite.com *.jquery.com *.keycaptcha.com *.sendpulse.com *.sharethis.com *.po.st *.threadloom.com *.tiktok.com *.trustpilot.com *.twitter.com vk.com www.youtube.com *.dev *.io *.net *.org *.ru *.ua,domain=agroter.com.ua|alensat.com|allbasketball.org|askentire.net|autonews.co.ua|autosoftos.com|babla.ru|bio-lessons.ru|cardiagram.com.ua|clickthis.blog|coollib.net|elegantwoman.kyiv.ua|farposst.ru|findhow.org|gazeta-misto.te.ua|golos.te.ua|icon-icons.com|ilenta.com|index.minfin.com.ua|inforesist.org|kovelpost.com|kreschatic.kiev.ua|kurs.com.ua|life.pravda.com.ua|mirlib.ru|modfix.ru|musinfo.net|ontvtime.ru|orbit-games.com|pb-news.info|perpendicular.pro|pes-files.ru|pingvin.pro|poezdato.net|poizdato.net|ruboard.website|sundries.ua|tabloid.pravda.com.ua|tenews.org.ua|ternopillive.com|tribun.com.ua|uapress.kyiv.ua|valorantinfo.com|vesti-ua.net|vkazivka.com|wallpapershome.ru|xn--80aaukc.xn--j1amh|skidkaonline.ru
@@ -27,6 +27,9 @@ d20765 1
 a20765 1
 advizzer.com,bragazeta.ru,cataclysmdda.ru,chehov-vid.ru,conversion.im,coollib.net,ekaraganda.kz,ereport.ru,euro-football.ru,floraprice.ru,gameguru.ru,go64.ru,grinkod.spb.ru,igrixl.ru,kp40.ru,kramatorsk.info,lada.kz,mirnov.ru,mix.tj,musicmp3spb.org,musicwars.ru,news29.ru,ptzgovorit.ru,servers-samp.ru,sovets.net,sport.ua,sports.kz,tayga.info,tparser.org,uaprom.info,vidal.ru##div[id^="banner"]
 d21115 1
+d21706 1
+a21706 1
+||pikabu.ru/sl$xmlhttprequest,domain=pikabu.ru
 d21720 1
 a21720 1
 dzen.ru##a[href^="https://dzen.ru/"] > div > div > div > div
@@ -42,6 +45,9 @@ ru##[data-test="themes-line"] a[href*="erid="] ~ div
 a22202 2
 59.ru##ul > li > a[href*="erid="]
 59.ru##ul > li > a[href*="erid="] ~ div
+d24141 1
+a24141 1
+||sberdevices.ru^$third-party,domain=~24ttl.stream|~citilink.ru|~dns-shop.ru|~eldorado.ru|~giga.chat|~megamarket.ru|~mvideo.ru|~salutejazz.ru|~sber.ru|~technopark.ru|~visper.tech
 d27712 1
 a27712 1
 shanson320.ru##+js(abort-current-inline-script, document.createElement, atob)
@@ -52,5 +58,3 @@ gazeta.ru,lenta.ru,secretmag.ru,wmj.ru##iframe[src^="https://vp.rambler.ru/playe
 gazeta.ru,lenta.ru,secretmag.ru,wmj.ru##iframe[src^="https://vp.rambler.ru/player/"]:style(position: relative !important)
 ||vp.rambler.ru/player/$csp=media-src 'self',domain=championat.com|lenta.ru|gazeta.ru|rambler.ru|~vp.rambler.ru|secretmag.ru|wmj.ru
 d30414 1
-a30414 1
-gaming.co.ua##body > div[id][class][style*="z-index"][style*="9999"],body > div[id][class][style*="z-index"][style*="9999"] + div[class][style*="z-index"][style*="9999"]
