@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 01 Aug 2024 16:28:15 +0000
-! Diff-Path: ../patches/2024.8.1.988.patch#ruadlist
+! Last modified: Thu, 01 Aug 2024 21:23:19 +0000
+! Diff-Path: ../patches/2024.8.1.1283.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -8291,6 +8291,7 @@ by,~mail.ru,ru,ua##.banner_box
 ##.directadvert-block
 ##.e-ta-rg
 ##.flat_ads_block
+##.fp-player > div[style^="position: absolute; inset: 0px; overflow: hidden; z-index:"][style$="background: transparent; display: block;"]
 ##.gaminator
 ##.goha_ads
 ##.goha_ads_acceptable
@@ -21938,7 +21939,7 @@ mail.ru##.ph-project-promo-container
 ! Главная
 ~e.mail.ru,mail.ru,~octavius.mail.ru##.stripe-wrapper
 ~e.mail.ru,mail.ru,~octavius.mail.ru##.tgb-wrapper
-~e.mail.ru,mail.ru,~octavius.mail.ru##[class*="__arcoee"]
+~3igames.mail.ru,~account.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru#?#body[style="overflow: unset; max-height: unset;"] .chh-jcfh-yipf74 div div div:-abp-has(> div > div:empty:first-child + div:last-child:not(:empty) > div ~ div ~ div ~ div ~ div)
 ! Почта
 e.mail.ru,octavius.mail.ru###app-canvas .layout__overflow-container > .advert-column
 e.mail.ru,octavius.mail.ru###app-canvas .layout__overflow-container > .slot
@@ -25524,6 +25525,7 @@ gbsmp.ru#@#img[width="728"][height="90"]
 @@||adfox.ru/crossdomain.xml$domain=carambatv.ru
 @@||admitad.com/3rd-party/$script,domain=pravera.ru
 @@||adprofits.ru^*/eStreamNoAutoPlay.js|$script,domain=wikianime.tv
+@@||ads.digitalcaramel.com/js/trainzland.ru.js$script,domain=trainzland.ru
 @@||ads.exoclick.com/ad99uip8i.php
 @@||adserver.juicyads.com/js/jads.js|$script,domain=stasyan.ga
 @@||adservice.google.*/adsid/integrator.js$domain=player.tubia.com
@@ -27688,6 +27690,7 @@ rutor.in##+js(abort-current-inline-script, document.createElement, ExternalChrom
 fastpic.org,kaztorka.org,kg-portal.ru,~new.fastpic.org,nnmclub.ro,nnmclub.to##+js(abort-current-inline-script, document.createElement, Math.random)
 shanson320.ru##+js(abort-current-inline-script, document.createElement, atob)
 lrepacks.net##+js(abort-current-inline-script, document.createElement, delete window)
+trainzland.ru##+js(abort-current-inline-script, document.createElement, digitalcaramel)
 transkarpatia.net##+js(abort-current-inline-script, document.createElement, redtram)
 skam.online##+js(abort-current-inline-script, document.getElementById, composedPath)
 my-expert.ru##+js(abort-current-inline-script, document.getElementsByTagName, unselectable)
