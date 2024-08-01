@@ -1,8 +1,8 @@
-diff name:ruadlist lines:175 checksum:2dd78f7825
+diff name:ruadlist lines:182 checksum:8d44d968c9
 d4 2
 a5 2
-! Last modified: Thu, 01 Aug 2024 06:30:53 +0000
-! Diff-Path: ../patches/2024.8.1.390.patch#ruadlist
+! Last modified: Thu, 01 Aug 2024 11:20:16 +0000
+! Diff-Path: ../patches/2024.8.1.680.patch#ruadlist
 a7057 1
 ||z.cdn.bescore.com/load?z=$third-party
 d9393 1
@@ -111,7 +111,7 @@ a21440 1
 www.fontanka.ru##section.gridTwoThirdLaptop a[href*="?erid="]
 d21706 1
 a21706 1
-://pikabu.ru/*%*%*%$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/sn$xmlhttprequest,domain=pikabu.ru
 d21720 1
 a21720 1
 dzen.ru##a[href^="https://dzen.ru/"] > div > div > div > div
@@ -143,9 +143,9 @@ footboom1.com##div[class*="_bookie"]
 ||footboom*/dist/app/js/email-popup.js
 ||footboom*/dist/app/js/menuBonus.js
 d21936 1
-a21940 1
-~e.mail.ru,mail.ru,~octavius.mail.ru##.fssnjse__arcoee
 d21943 5
+a21947 1
+~e.mail.ru,mail.ru,~octavius.mail.ru##[class*="__arcoee"]
 a22197 4
 ru##[data-test="text-list-with-dropdown"] a[href*="erid="]
 ru##[data-test="text-list-with-dropdown"] a[href*="erid="] ~ div
@@ -154,6 +154,13 @@ ru##[data-test="themes-line"] a[href*="erid="] ~ div
 a22202 2
 59.ru##ul > li > a[href*="erid="]
 59.ru##ul > li > a[href*="erid="] ~ div
+a22765 1
+dzen.ru##[aria-label="Карточка этажа"] > div[class]:not([class*="wrapper"])
+a22779 1
+dzen.ru##div[class*="card-widh-ad_"]
+d22798 1
+a22798 1
+/*pil=$popup,domain=dzen.ru
 d24141 1
 a24141 1
 ||sberdevices.ru^$third-party,domain=~24ttl.stream|~citilink.ru|~dns-shop.ru|~eldorado.ru|~giga.chat|~megamarket.ru|~mvideo.ru|~salutejazz.ru|~sber.ru|~technopark.ru|~visper.tech

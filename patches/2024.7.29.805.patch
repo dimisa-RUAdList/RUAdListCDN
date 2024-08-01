@@ -1,8 +1,8 @@
-diff name:ruadlist lines:129 checksum:2dd78f7825
+diff name:ruadlist lines:136 checksum:8d44d968c9
 d4 2
 a5 2
-! Last modified: Thu, 01 Aug 2024 06:30:53 +0000
-! Diff-Path: ../patches/2024.8.1.390.patch#ruadlist
+! Last modified: Thu, 01 Aug 2024 11:20:16 +0000
+! Diff-Path: ../patches/2024.8.1.680.patch#ruadlist
 a7057 1
 ||z.cdn.bescore.com/load?z=$third-party
 d9393 1
@@ -90,7 +90,7 @@ a21429 1
 www.fontanka.ru##section.gridTwoThirdLaptop a[href*="?erid="]
 d21695 1
 a21695 1
-://pikabu.ru/*%*%*%$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/sn$xmlhttprequest,domain=pikabu.ru
 d21714 1
 a21714 1
 dzen.ru#?#div:-abp-has(> a[href^="https://dzen.ru/"] div > div > div > div)
@@ -118,9 +118,16 @@ footboom1.com##div[class*="_bookie"]
 ||footboom*/dist/app/js/antiAdBlock.js
 ||footboom*/dist/app/js/email-popup.js
 ||footboom*/dist/app/js/menuBonus.js
-a21928 1
-~e.mail.ru,mail.ru,~octavius.mail.ru##.fssnjse__arcoee
 d21931 5
+a21935 1
+~e.mail.ru,mail.ru,~octavius.mail.ru##[class*="__arcoee"]
+a22759 1
+dzen.ru##[aria-label="Карточка этажа"] > div[class]:not([class*="wrapper"])
+a22773 1
+dzen.ru##div[class*="card-widh-ad_"]
+d22792 1
+a22792 1
+/*pil=$popup,domain=dzen.ru
 d26340 26
 d27702 1
 a27702 1
