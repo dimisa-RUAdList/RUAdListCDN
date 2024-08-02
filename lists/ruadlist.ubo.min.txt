@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 02 Aug 2024 12:41:22 +0000
-! Diff-Path: ../patches/2024.8.2.761.patch#ruadlist
+! Last modified: Fri, 02 Aug 2024 17:21:56 +0000
+! Diff-Path: ../patches/2024.8.2.1041.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -8952,7 +8952,6 @@ $third-party,popup,domain=2ip.ru
 ||namba.tj^$popup,domain=namba.tj
 ||onelink.me^$popup,domain=2ip.io|2ip.ru|2ip.ua
 ||otus.ru/*utm_$third-party,popup
-||playground.ru/*/promo/$popup
 ||rusvpn.com^$popup,domain=tornado.3dn.ru
 ||special.playground.info/haval$popup
 ||topofgames.com^*?path=$popup
@@ -11568,8 +11567,6 @@ igdz1.ru^$script,domain=igdz.ru
 ||hwp.ru/images/mid/h-anons.
 ||hydrus.cc^$third-party,script
 ||i.kidstaff.com.ua/
-||i.playground.ru/e/5IsYX9ZPez27f_M6XOapUg.jpeg
-||i.playground.ru/e/CtVNnvs7kmBYygAmOmltAg.jpeg
 ||i.ua^*_brandpage_
 ||i2.kidstaff.com.ua/
 ||ibusiness.ru^*/netlab/style.css?
@@ -21686,7 +21683,6 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ! селекторы
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
-playground.ru##.signin-aside > .footer
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(/min-height: 20.px|min-height: 29.px|min-height: 30.px|min-height: 300./))
 pikabu.ru#?#.story__header:-abp-has(> div:empty)
 fonmod.com,howdyho.net,howdyho.pro,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
