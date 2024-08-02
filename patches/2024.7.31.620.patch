@@ -1,18 +1,27 @@
-diff name:ruadlist lines:107 checksum:b012446584
+diff name:ruadlist lines:131 checksum:2f7f5bd880
 d4 2
 a5 2
-! Last modified: Fri, 02 Aug 2024 07:20:50 +0000
-! Diff-Path: ../patches/2024.8.2.440.patch#ruadlist
+! Last modified: Fri, 02 Aug 2024 12:41:22 +0000
+! Diff-Path: ../patches/2024.8.2.761.patch#ruadlist
+a282 1
+||adspector.io^$third-party
+a1685 1
+||dyaconiconelino.com^$third-party
+a4323 1
+||ohmy.bid^$third-party
 a7057 1
 ||z.cdn.bescore.com/load?z=$third-party
 a8292 1
-##.fp-player > div[style^="position: absolute; inset: 0px; overflow: hidden; z-index:"][style$="background: transparent; display: block;"]
+##.fp-player > div[style^="position: absolute; inset: 0px; overflow: hidden; z-index:"][style*="background: transparent"][style$="display: block;"]
 d9997 1
 a9997 1
 agroter.com.ua,ifnews.org.ua,lvnews.org.ua,oblast-te.com.ua,pasy.media,pb-news.info,rvnews.rv.ua,te.ua,tenews.org.ua,ternopillive.com##div[class^="remodal"]
 d10015 1
 a10015 1
 /frontend/*/remodal$script,stylesheet,~third-party,domain=ifnews.org.ua|lvnews.org.ua|rvnews.rv.ua|tenews.org.ua
+d10171 1
+a10171 1
+$third-party,domain=123torrent.ru|37.1.201.32|37.1.202.140|37.1.203.156|37.1.204.182|37.1.204.76|37.1.205.159|37.1.205.47|37.1.206.118|37.1.206.121|37.1.206.231|37.1.206.95|37.1.207.130|37.1.207.65|37.1.216.106|37.1.216.119|37.1.217.105|37.1.217.113|5.45.65.153|5.45.66.118|5.45.70.162|5.45.86.39|5.45.87.85|berutor.site|blackrutor.site|extrutor.org|extrutor.site|fastrutor.site|herutor.org|listrutor.org|new-rutor.org|pipitor.org|pronpic.org|prutor.site|r-tor.ru|rutor-live.tk|rutor-search.info|rutor1.site|sssrtor.ru|tracker-rutor.tk|xrutor.org|znaipticu.ru
 d10547 1
 d11337 5
 a11571 1
@@ -40,6 +49,9 @@ nur.kz##.js-commercial-menu
 d17678 1
 a18299 1
 informburo.kz#?#.uk-container > .uk-grid:-abp-has(> div > strong ~ div > script[src*="idealmedia"])
+d18621 1
+a18621 1
+123torrent.ru,37.1.201.32,37.1.202.140,37.1.203.156,37.1.204.182,37.1.204.76,37.1.205.159,37.1.205.47,37.1.206.118,37.1.206.121,37.1.206.231,37.1.206.95,37.1.207.130,37.1.207.65,37.1.216.106,37.1.216.119,37.1.217.105,37.1.217.113,5.45.65.153,5.45.66.118,5.45.70.162,5.45.86.39,5.45.87.85,berutor.site,blackrutor.site,extrutor.org,extrutor.site,fastrutor.site,hawk.live,herutor.org,listrutor.org,new-rutor.org,pipitor.org,pronpic.org,prutor.site,r-tor.ru,rutor-live.tk,rutor-search.info,rutor1.site,sssrtor.ru,tracker-rutor.tk,xrutor.org##:not(obhod-adblocka)
 a18658 1
 nur.kz##[class*="adv"][class*="laceholder"]
 a18960 1
@@ -102,6 +114,18 @@ a22777 1
 a25503 1
 @@||ads.digitalcaramel.com/js/trainzland.ru.js$script,domain=trainzland.ru
 d26325 26
+a27421 1
+dzen.ru##div[class*="Container"] > div[style="opacity: 1;"] > div[class*="articleRight"][style^="max-height:"]
+a27422 1
+dzen.ru##div[class*="video"] [aria-label="Табы рекомендаций"] ~ [aria-label*="карта"]
+a27423 2
+dzen.ru##div[class^="article-item__articleItem-"] > div[class*="subscribeBanner"] + div:not([class])
+dzen.ru##div[class^="article__article-"] > div[class^="article-item"] > div[id]
+a27426 4
+! incognito
+dzen.ru##.article-page-layout > main > div > div[id]
+dzen.ru##aside[id^="article_"][class*="rihggt"] > div[class]
+dzen.ru##div[class*="article__"] > .undefined ~ div[class*="millde"] > div[id][class]
 a27582 1
 mail.ru###grid .widget__container .promo-with-text
 a27692 1
