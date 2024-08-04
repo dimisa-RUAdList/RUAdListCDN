@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 04 Aug 2024 14:24:08 +0000
-! Diff-Path: ../patches/2024.8.4.864.patch#ruadlist
+! Last modified: Sun, 04 Aug 2024 19:17:15 +0000
+! Diff-Path: ../patches/2024.8.4.1157.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -25677,7 +25677,7 @@ gbsmp.ru#@#img[width="728"][height="90"]
 @@||yandex.ru/ads/system/adsdk.js$script,domain=aniboom.one|gisher.org|karaoke.ru|kino.tricolor.tv|limehd.tv|m24.ru|peers.tv|player.mediavitrina.ru
 @@||yandex.ru/ads/system/context.js|$domain=examenpdd.com|forum.qrz.ru|yvid.ru
 @@||yandex.ru/ads/system/context.js|$script,domain=tvzvezda.ru
-@@||yandex.ru/ads/system/context.js|$xmlhttprequest,domain=blackwot.ru|reshu.by|reshuent.kz|reshuolymp.ru|sdamgia.ru|sports.ru|strategium.ru
+@@||yandex.ru/ads/system/context.js|$xmlhttprequest,domain=ai-next.ru|blackwot.ru|reshu.by|reshuent.kz|reshuolymp.ru|sdamgia.ru|sports.ru|strategium.ru
 @@||yarik-sat.com/reklama/*.js|$script,domain=yarik-sat.com
 @@||yastatic.net/safeframe-bundles/0.83/host.js|$script,domain=examenpdd.com
 @@||zx-pk.ru/abp/adblock_detector.js|$script,domain=zx-pk.ru
@@ -27074,6 +27074,7 @@ s13.ru##body > .wrapper:style(top: 0 !important)
 ! Sdamgia
 sdamgia.ru###old_school > .App > div > [color="red"]
 sdamgia.ru##.menu[role="navigation"] div[style]:style(height: auto !important)
+sdamgia.ru##[role="main"] div[style^="position: absolute; top: 0px; "][style*="cursor: pointer"]
 sdamgia.ru##aside > div[class]:first-child div:style(height: auto !important)
 sdamgia.ru##div[style] > a[target="_blank"] > img[src^="data:"]
 ! ---
