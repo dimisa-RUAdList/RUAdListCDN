@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 05 Aug 2024 20:22:52 +0000
-! Diff-Path: ../patches/2024.8.5.1222.patch#ruadlist
+! Last modified: Tue, 06 Aug 2024 01:38:47 +0000
+! Diff-Path: ../patches/2024.8.6.98.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -27616,6 +27616,7 @@ sportmail.ru##.layout_footer:style(margin-top: 20px !important)
 mail.ru##.mailbox__add-btn-logo
 sportmail.ru##.p-article-bookmakers ~ div a[href^="https://r.mail.ru/"]:style(pointer-events: none !important; text-decoration: none !important; color: inherit !important)
 mail.ru##.ph-ext
+mail.ru##.resplash-btn.noadsButton
 mail.ru##.tabs-content .news-item_regular > a:not([data-testid="news-prefix"]):style(white-space: pre-line !important)
 mail.ru##.tabs-content .news-item_regular::after
 mail.ru##.tabs-content > :first-child > a > .news-main__img:style(max-width: unset !important; min-width: unset !important; height: 5em !important; width: 6.66em !important)
