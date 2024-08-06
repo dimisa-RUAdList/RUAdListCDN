@@ -1,26 +1,29 @@
-diff name:ruadlist lines:25 checksum:9cc81262df
+diff name:ruadlist lines:28 checksum:8034c57443
 d4 2
 a5 2
-! Last modified: Tue, 06 Aug 2024 06:31:58 +0000
-! Diff-Path: ../patches/2024.8.6.391.patch#ruadlist
+! Last modified: Tue, 06 Aug 2024 11:19:05 +0000
+! Diff-Path: ../patches/2024.8.6.679.patch#ruadlist
 d8298 1
 a8298 1
 ##.fp-player > div[style*="position: absolute"][style*="inset: 0px"][style*="overflow: hidden"][style*="z-index:"][style*="background: transparent"][style*="display: block"]
+a10430 1
+/distribution?place=header$xmlhttprequest,domain=dtf.ru|vc.ru
 d12846 1
 a12846 1
 ||sslkn.*/contents*.mp4|
 d15366 1
 a15366 1
 champion.com.ua,ferrum-body.ru,fileclub.biz,nemezisworld.com,odessa.online,progroshi.news,ridus.ru,sharij.net##.banner_top
+d21684 1
+a21684 1
+||pikabu.ru/cn$xmlhttprequest,domain=pikabu.ru
 d21944 1
 a21944 1
 ~3igames.mail.ru,~account.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru#?#body[style="overflow: unset; max-height: unset;"] div div div div:-abp-has(> div > div:empty:first-child + div:last-child > div ~ div ~ div ~ div ~ div)
 a22034 2
 tv.mail.ru##.js-no-smoky ~ div[class^=" "]
 tv.mail.ru##.js-no-smoky ~ span > div[class^=" "]
-a26266 3
-! Отступ в хидере мобильной версии
-dtf.ru,vc.ru##html:root:style(--layout-header-height-large: unset !important)
-! ---
 a27613 1
 mail.ru##.resplash-btn.noadsButton
+a28062 1
+dtf.ru,vc.ru##.header__distribution > style:remove()

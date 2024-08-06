@@ -1,11 +1,13 @@
-diff name:ruadlist lines:33 checksum:9cc81262df
+diff name:ruadlist lines:36 checksum:8034c57443
 d4 2
 a5 2
-! Last modified: Tue, 06 Aug 2024 06:31:58 +0000
-! Diff-Path: ../patches/2024.8.6.391.patch#ruadlist
+! Last modified: Tue, 06 Aug 2024 11:19:05 +0000
+! Diff-Path: ../patches/2024.8.6.679.patch#ruadlist
 d8298 1
 a8298 1
 ##.fp-player > div[style*="position: absolute"][style*="inset: 0px"][style*="overflow: hidden"][style*="z-index:"][style*="background: transparent"][style*="display: block"]
+a10430 1
+/distribution?place=header$xmlhttprequest,domain=dtf.ru|vc.ru
 d12846 1
 a12846 1
 ||sslkn.*/contents*.mp4|
@@ -14,6 +16,9 @@ a15366 1
 champion.com.ua,ferrum-body.ru,fileclub.biz,nemezisworld.com,odessa.online,progroshi.news,ridus.ru,sharij.net##.banner_top
 a21189 1
 sovsport.ru##img[alt="bookmaker"]
+d21683 1
+a21683 1
+||pikabu.ru/cn$xmlhttprequest,domain=pikabu.ru
 d21942 1
 a21942 2
 ~e.mail.ru,mail.ru,~octavius.mail.ru##.zenad-card-rtb
@@ -24,11 +29,9 @@ tv.mail.ru##.js-no-smoky ~ span > div[class^=" "]
 d25678 1
 a25678 1
 @@||yandex.ru/ads/system/context.js|$xmlhttprequest,domain=ai-next.ru|blackwot.ru|reshu.by|reshuent.kz|reshuolymp.ru|sdamgia.ru|sports.ru|strategium.ru
-a26264 3
-! Отступ в хидере мобильной версии
-dtf.ru,vc.ru##html:root:style(--layout-header-height-large: unset !important)
-! ---
 a27074 1
 sdamgia.ru##[role="main"] div[style^="position: absolute; top: 0px; "][style*="cursor: pointer"]
 a27610 1
 mail.ru##.resplash-btn.noadsButton
+a28059 1
+dtf.ru,vc.ru##.header__distribution > style:remove()

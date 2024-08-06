@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 06 Aug 2024 06:31:58 +0000
-! Diff-Path: ../patches/2024.8.6.391.patch#ruadlist
+! Last modified: Tue, 06 Aug 2024 11:19:05 +0000
+! Diff-Path: ../patches/2024.8.6.679.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10428,6 +10428,7 @@ $xmlhttprequest,domain=happy-biock.info|happy-block.info|howto-news.info|mschist
 /content/redtram-$domain=unian.info|unian.net|unian.ua
 /cookiesync.js$domain=dfm.ru|hitfm.ru|maximum.ru|montecarlo.ru
 /data*?bid=$domain=ebooks.skin
+/distribution?place=header$xmlhttprequest,domain=dtf.ru|vc.ru
 /do/*$domain=myzuka.club
 /ebllbe/*$image,domain=lostfilm.download|lostfilm.life|lostfilm.one|lostfilm.pro|lostfilm.space|lostfilm.today|lostfilm.tv|lostfilm.tw|lostfilm.uno|lostfilm.win|lostfilmtv.site|lostfilmtv.uno|lostfilmtv2.site|lostfilmtv3.site|lostfilmtv5.site
 /exchange$domain=koob.ru
@@ -21681,7 +21682,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 !||www.liveinternet.ru/users/$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/cgi-bin/rpls.fcgi?list= https://www.liveinternet.ru/spell/spell.js https://www.liveinternet.ru/share/js/share.js https://www.liveinternet.ru/4Ek/JS/diary/main/nav/regoradd.js https://www.liveinternet.ru/4Ek/JS/diary/trans.js
 !||www.liveinternet.ru/|$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/utf/lici.js https://www.liveinternet.ru/utf/li.js https://www.liveinternet.ru/utf/main_new.js
 ! Pikabu (ловушка для обфускации)
-||pikabu.ru/sn$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/cn$xmlhttprequest,domain=pikabu.ru
 ! селекторы
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
@@ -26266,9 +26267,6 @@ driveroff.net##body > #right ~ .middle:style(margin-right: 4px !important)
 forums.drom.ru###dromRightCol
 forums.drom.ru##.contentWrap .lcWrap:style(padding-right: unset !important)
 ! ---
-! Отступ в хидере мобильной версии
-dtf.ru,vc.ru##html:root:style(--layout-header-height-large: unset !important)
-! ---
 dugtor.ru###left-block:style(min-height: 100% !important)
 dugtor.ru###right-block:style(min-height: 100% !important)
 ! ---
@@ -28066,6 +28064,7 @@ online-fix.me##.content > .errors
 playground.ru##.dfp-container:remove()
 smotrim.ru##.dialog-wrapper
 reshu.by,reshuent.kz,reshuolymp.ru,sdamgia.ru##.googlead.pub_300x250.pub_300x250m.pub_728x90.text-ad.textAd.text_ad.text_ads.text-ads.text-ad-links:style(display: block !important)
+dtf.ru,vc.ru##.header__distribution > style:remove()
 rbc.ru##.js-index-doscroll audio[autoplay]:remove()
 lenta.ru##.js-scroll-to-site-container:remove()
 igromania.ru#?#.knb-grid-container > [data-io-article-url]:-abp-has(> [class^="MaterialItemHead_head"] [href="/tags/partnyorskij-material/"]) > .knb-grid-container [class^="material-content_"] a[href][target="_blank"]:not([href^="https://www.igromania.ru/"]):style(color: inherit !important; pointer-events: none !important)
