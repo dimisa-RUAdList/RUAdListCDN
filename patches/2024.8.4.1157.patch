@@ -1,8 +1,8 @@
-diff name:ruadlist lines:53 checksum:6e6a475a24
+diff name:ruadlist lines:61 checksum:c236c82278
 d4 2
 a5 2
-! Last modified: Wed, 07 Aug 2024 17:24:51 +0000
-! Diff-Path: ../patches/2024.8.7.1044.patch#ruadlist
+! Last modified: Wed, 07 Aug 2024 22:23:58 +0000
+! Diff-Path: ../patches/2024.8.7.1343.patch#ruadlist
 a2276 1
 ||gewfwdgd.site^$third-party
 d8298 1
@@ -20,6 +20,8 @@ d12846 1
 a12846 1
 ||sslkn.*/contents*.mp4|
 d14965 1
+a16641 1
+tabloid.pravda.com.ua##.koz-box
 a17037 1
 football24.ua#?#.news-text > .insert:-abp-has(> a[target="_blank"])
 a17581 1
@@ -50,5 +52,11 @@ tv.mail.ru##.js-no-smoky ~ span > div[class^=" "]
 d27614 2
 a27615 1
 mail.ru##.resplash-btn.noadsButton
+a27961 1
+dtf.ru,vc.ru##+js(set-attr, .media > .andropov-video > video, controls, true)
+d27964 1
 a28062 1
 dtf.ru,vc.ru##.header__distribution > style:remove()
+a28069 1
+dtf.ru,vc.ru##.media > .andropov-video > video:remove-attr(autoplay)
+d28138 1
