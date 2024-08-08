@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 08 Aug 2024 03:24:35 +0000
-! Diff-Path: ../patches/2024.8.8.204.patch#ruadlist
+! Last modified: Thu, 08 Aug 2024 08:27:54 +0000
+! Diff-Path: ../patches/2024.8.8.507.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -14990,6 +14990,7 @@ rt02.ru##.alibut
 vidstezhyty.com.ua##.aliexpress
 the-clu.com##.alignnone[width="300"][height="300"]
 inopressa.ru##.alignright div[style^="height"]
+tabloid.pravda.com.ua##.alko
 minfin.com.ua#?#.all-news > .items > .item:-abp-has(> div > [data-bn-slot])
 moldfootball.com##.all_bet_block
 vringe.com##.all_news_partners
@@ -16642,6 +16643,7 @@ topfile.tj##.knopka
 osvita.ua##.kom
 tabloid.pravda.com.ua##.koz-box
 aqua-therm.ru##.kp-top-banner
+tabloid.pravda.com.ua##.kr-loo-box
 old.kurs.com.ru##.kursInformer #head-content
 old.kurs.com.ru##.kursInformer #ref
 xn--80ady2a0c.xn--p1ai##.l-a-fly
@@ -21096,6 +21098,7 @@ www.onliner.by##header > a[href*="utm_"]
 prosound.ixbt.com##header > div[style^="background"]
 argumenti.ru##header > div[style^="background:"]
 twirpx.com,twirpx.org##header > nav ~ div
+kommersant.ru##header a[href*="&erid="][target="_blank"]
 ofxme.co##header noindex
 tglink.ru##header ~ section:last-child
 myzcloud.me,sims3pack.ru##header.st-flex
@@ -21686,7 +21689,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 !||www.liveinternet.ru/users/$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/cgi-bin/rpls.fcgi?list= https://www.liveinternet.ru/spell/spell.js https://www.liveinternet.ru/share/js/share.js https://www.liveinternet.ru/4Ek/JS/diary/main/nav/regoradd.js https://www.liveinternet.ru/4Ek/JS/diary/trans.js
 !||www.liveinternet.ru/|$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/utf/lici.js https://www.liveinternet.ru/utf/li.js https://www.liveinternet.ru/utf/main_new.js
 ! Pikabu (ловушка для обфускации)
-||pikabu.ru/cn$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/cm$xmlhttprequest,domain=pikabu.ru
 ! селекторы
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
