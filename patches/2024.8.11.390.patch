@@ -1,11 +1,16 @@
-diff name:ruadlist lines:11 checksum:7645ad2fd2
+diff name:ruadlist lines:16 checksum:ae0d47f9d0
 d4 2
 a5 2
-! Last modified: Mon, 12 Aug 2024 12:45:26 +0000
-! Diff-Path: ../patches/2024.8.12.765.patch#ruadlist
+! Last modified: Mon, 12 Aug 2024 17:22:32 +0000
+! Diff-Path: ../patches/2024.8.12.1042.patch#ruadlist
+d4091 1
+a4091 1
+||new4.me^$third-party,domain=~hot.game
 d21701 1
 a21701 1
 ||pikabu.ru/cr$xmlhttprequest,domain=pikabu.ru
+a27883 1
+hot.game##+js(href-sanitizer, [href^="https://ad.admitad.com/"], ?ulp)
 d28144 2
 a28145 2
 howdyho.*##+js(no-setInterval-if, _0x, 1000)

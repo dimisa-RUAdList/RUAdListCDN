@@ -1,10 +1,13 @@
-diff name:ruadlist lines:23 checksum:7645ad2fd2
+diff name:ruadlist lines:28 checksum:ae0d47f9d0
 d4 2
 a5 2
-! Last modified: Mon, 12 Aug 2024 12:45:26 +0000
-! Diff-Path: ../patches/2024.8.12.765.patch#ruadlist
+! Last modified: Mon, 12 Aug 2024 17:22:32 +0000
+! Diff-Path: ../patches/2024.8.12.1042.patch#ruadlist
 a1157 1
 ||cleverculture.pro^$third-party
+d4090 1
+a4090 1
+||new4.me^$third-party,domain=~hot.game
 a4494 1
 ||palecount.com^$third-party
 a5621 1
@@ -18,6 +21,8 @@ a21698 1
 d27871 1
 a27871 1
 kinoblin.ru,serialai.ru##+js(addEventListener-defuser, mousedown, pop.doEvent)
+a27880 1
+hot.game##+js(href-sanitizer, [href^="https://ad.admitad.com/"], ?ulp)
 d28141 2
 a28142 2
 howdyho.*##+js(no-setInterval-if, _0x, 1000)

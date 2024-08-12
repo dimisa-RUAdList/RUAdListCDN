@@ -1,14 +1,17 @@
-diff name:ruadlist lines:81 checksum:7645ad2fd2
+diff name:ruadlist lines:86 checksum:ae0d47f9d0
 d4 2
 a5 2
-! Last modified: Mon, 12 Aug 2024 12:45:26 +0000
-! Diff-Path: ../patches/2024.8.12.765.patch#ruadlist
+! Last modified: Mon, 12 Aug 2024 17:22:32 +0000
+! Diff-Path: ../patches/2024.8.12.1042.patch#ruadlist
 a1157 1
 ||cleverculture.pro^$third-party
 a1286 1
 ||costumefilmimport.com^$third-party
 a3155 1
 ||kinostream.media^$third-party
+d4088 1
+a4088 1
+||new4.me^$third-party,domain=~hot.game
 a4492 1
 ||palecount.com^$third-party
 a5619 1
@@ -70,6 +73,8 @@ rezkahd.life##.have-brand .wrap:style(margin-top: 0 !important)
 d27864 1
 a27864 1
 kinoblin.ru,serialai.ru##+js(addEventListener-defuser, mousedown, pop.doEvent)
+a27873 1
+hot.game##+js(href-sanitizer, [href^="https://ad.admitad.com/"], ?ulp)
 d27901 1
 a27901 1
 kinokong.bz,uakino.club,win-lite.site##+js(nano-setInterval-booster, countdown)
