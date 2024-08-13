@@ -1,14 +1,28 @@
-diff name:ruadlist lines:22 checksum:cd80c68d34
+diff name:ruadlist lines:36 checksum:b1a0d27691
 d4 2
 a5 2
-! Last modified: Tue, 13 Aug 2024 08:27:39 +0000
-! Diff-Path: ../patches/2024.8.13.507.patch#ruadlist
+! Last modified: Tue, 13 Aug 2024 13:25:59 +0000
+! Diff-Path: ../patches/2024.8.13.805.patch#ruadlist
 d4091 1
 a4091 1
 ||new4.me^$third-party,domain=~hot.game
 d21701 1
 a21701 1
 ||pikabu.ru/cr$xmlhttprequest,domain=pikabu.ru
+a21709 1
+www.drive2.ru##[data-container="outer"]
+a21711 2
+www.drive2.ru##[data-sticky-adtune]
+www.drive2.ru##[data-test="AdKebabAndLabel--adLabelContent"]
+d21719 1
+a21719 4
+~e.mail.ru,mail.ru,~octavius.mail.ru##body[style="overflow: unset; max-height: unset;"] article:empty
+~e.mail.ru,mail.ru,~octavius.mail.ru##body[style="overflow: unset; max-height: unset;"] p:empty
+~e.mail.ru,mail.ru,~octavius.mail.ru##body[style="overflow: unset; max-height: unset;"] section:empty
+~e.mail.ru,mail.ru,~octavius.mail.ru##body[style="overflow: unset; max-height: unset;"] span:empty:not(.ph-marusia)
+a21735 2
+www.drive2.ru##iframe[style="display: block; border-width: 0px;"]
+www.drive2.ru##iframe[style="opacity: 1;"]
 d25484 1
 a25484 1
 @@||yandex.ru/ads/system/header-bidding.js|$script,domain=gismeteo.ru|trainzland.ru
