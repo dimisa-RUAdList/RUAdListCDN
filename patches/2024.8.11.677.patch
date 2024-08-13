@@ -1,14 +1,20 @@
-diff name:ruadlist lines:16 checksum:101eb749c7
+diff name:ruadlist lines:22 checksum:6b2a0abe64
 d4 2
 a5 2
-! Last modified: Mon, 12 Aug 2024 22:24:32 +0000
-! Diff-Path: ../patches/2024.8.12.1344.patch#ruadlist
+! Last modified: Tue, 13 Aug 2024 03:25:18 +0000
+! Diff-Path: ../patches/2024.8.13.205.patch#ruadlist
 d4091 1
 a4091 1
 ||new4.me^$third-party,domain=~hot.game
 d21701 1
 a21701 1
 ||pikabu.ru/cr$xmlhttprequest,domain=pikabu.ru
+d25484 1
+a25484 1
+@@||yandex.ru/ads/system/header-bidding.js|$script,domain=gismeteo.ru|trainzland.ru
+d27724 1
+a27724 1
+trainzland.ru##+js(abort-current-inline-script, document.createElement, document.head.appendChild)
 a27883 1
 hot.game##+js(href-sanitizer, [href^="https://ad.admitad.com/"], ?ulp)
 d28144 2
