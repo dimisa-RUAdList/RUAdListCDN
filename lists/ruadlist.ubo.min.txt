@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 15 Aug 2024 15:23:06 +0000
-! Diff-Path: ../patches/2024.8.15.923.patch#ruadlist
+! Last modified: Thu, 15 Aug 2024 20:23:00 +0000
+! Diff-Path: ../patches/2024.8.15.1222.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -20472,6 +20472,7 @@ mistosumy.com,mynizhyn.com##div[class^="frik"]
 fortrader.org##div[class^="ftprefix"]
 auto.vesti.ru##div[class^="g-banner"]
 mk.ru##div[class^="good-place"]
+otzywy.com##div[class^="goog"]
 gisher.org##div[class^="gov"]
 fontanka.ru#?#div[class^="grid"][class*="Laptop"]:-abp-has(> div[id^="adv_"])
 pipdecor.ru##div[class^="hairw-"]
@@ -21701,7 +21702,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 !||www.liveinternet.ru/users/$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/cgi-bin/rpls.fcgi?list= https://www.liveinternet.ru/spell/spell.js https://www.liveinternet.ru/share/js/share.js https://www.liveinternet.ru/4Ek/JS/diary/main/nav/regoradd.js https://www.liveinternet.ru/4Ek/JS/diary/trans.js
 !||www.liveinternet.ru/|$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/utf/lici.js https://www.liveinternet.ru/utf/li.js https://www.liveinternet.ru/utf/main_new.js
 ! Pikabu (ловушка для обфускации)
-||pikabu.ru/cr$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/cs$xmlhttprequest,domain=pikabu.ru
 ! селекторы
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
@@ -21962,7 +21963,7 @@ mail.ru##.ph-project-promo-container
 ~e.mail.ru,mail.ru,sportmail.ru#?#aside div[style^="min-height:"][data-hideorder]:first-child:-abp-has(> [data-rb-slot])
 ~e.mail.ru,mail.ru,sportmail.ru##div[class*="rb-slot_plug"]
 ~e.mail.ru,mail.ru,sportmail.ru##div[data-closewrap-container]
-~e.mail.ru,mail.ru,sportmail.ru##table > tbody > tr > td:first-child + td + td:last-child
+~dobro.mail.ru,~e.mail.ru,mail.ru,sportmail.ru##table > tbody > tr > td:first-child + td + td:last-child
 ~e.mail.ru,mail.ru,sportmail.ru#?#tbody:-abp-has(> tr > td > [class*="daynews__item"]) > tr > td ~ td ~ td:last-child
 ~e.mail.ru,mail.ru,sportmail.ru##tr > .daynews__spring
 ! Главная
@@ -25178,7 +25179,7 @@ xn--112-5cd3baof9c5c.xn--p1ai#@#.wrapad
 @@||hawk.ru/media/banners/$domain=hawk.ru
 @@||hcsibir.ru/uploads/advert/$image,domain=hcsibir.ru
 @@||holder.com.ua^$media,xmlhttprequest,domain=i.ua
-@@||home-club.com.ua/content/images/other/468x60-white.png|$image,domain=home-club.com.ua
+@@||home-club.*.ua/content/images/other/468x60-white.png|$image,~third-party,domain=home-club.co.ua|home-club.com.ua
 @@||hypercomments.com/widget/$script,domain=godzfilm.net|hdkino.biz
 @@||iledebeaute.ru^$domain=iledebeaute.ru
 @@||image.zn.ua/media/images/300x250/$image,domain=zn.ua

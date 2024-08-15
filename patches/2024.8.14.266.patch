@@ -1,8 +1,8 @@
-diff name:ruadlist lines:43 checksum:2057d1399a
+diff name:ruadlist lines:54 checksum:9be94f7b48
 d4 2
 a5 2
-! Last modified: Thu, 15 Aug 2024 15:23:06 +0000
-! Diff-Path: ../patches/2024.8.15.923.patch#ruadlist
+! Last modified: Thu, 15 Aug 2024 20:23:00 +0000
+! Diff-Path: ../patches/2024.8.15.1222.patch#ruadlist
 a893 1
 ||broredir*s.site^$third-party
 d895 1
@@ -29,6 +29,17 @@ abnews.ru,sm.news##[class^="partner"]
 d18977 1
 a18977 1
 abnews.ru,fakty.ua##[src*="/images/banners/"]
+a20471 1
+otzywy.com##div[class^="goog"]
+d21701 1
+a21701 1
+||pikabu.ru/cs$xmlhttprequest,domain=pikabu.ru
+d21962 1
+a21962 1
+~dobro.mail.ru,~e.mail.ru,mail.ru,sportmail.ru##table > tbody > tr > td:first-child + td + td:last-child
+d25178 1
+a25178 1
+@@||home-club.*.ua/content/images/other/468x60-white.png|$image,~third-party,domain=home-club.co.ua|home-club.com.ua
 a27631 1
 mail.ru###user-settings-modal > .user-settings-container > .user-settings-types > .user-settings-types__item:last-child
 d28227 2
