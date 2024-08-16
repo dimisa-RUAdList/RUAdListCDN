@@ -1,8 +1,8 @@
-diff name:ruadlist lines:54 checksum:c3e015cf40
+diff name:ruadlist lines:68 checksum:658c6073e3
 d4 2
 a5 2
-! Last modified: Fri, 16 Aug 2024 06:30:16 +0000
-! Diff-Path: ../patches/2024.8.16.390.patch#ruadlist
+! Last modified: Fri, 16 Aug 2024 11:19:17 +0000
+! Diff-Path: ../patches/2024.8.16.679.patch#ruadlist
 a893 1
 ||broredir*s.site^$third-party
 d895 1
@@ -20,6 +20,11 @@ a10454 1
 /images/banners/*$domain=19rus.info|19rusinfo.ru|1tvnet.ru|33strausa.ru|8vp.ru|abnews.ru|agroxxi.ru|alfa-form.ru|altgazeta.ru|aniplay.tv|antimuh.ru|archiportal-crimea.ru|arendator.ru|aum.news|bez-smenki.ru|bitpump.ru|biwork.ru|bryansktoday.ru|buzday.ru|buzulukday.ru|bvedomosti.ru|cars.ru|coil32.ru|conversion.im|cryptoff.org|csmania.ru|cxem.net|darkmoney.at|dtpptz.ru|ecm-journal.ru|erotix-tv.com|express-prigorod.ru|fakty.ua|fermagid.ru|firtka.if.ua|fitsport.ru|forpost.lviv.ua|fuzz-magazine.ru|hd-systems.com.ua|house.kg|hv-info.ru|hype.tech|info-ua.com|infokam.su|inforeactor.ru|itc.ua|itexpert.org.ua|izmacity.com|kaluga.ru|kamchatinfo.com|karelia.ru|kazfootball.kz|kids.to-var.com|km.ru|ko44.ru|korabel.ru|kramatorsk.info|kyiv-independent.com|lifetambov.ru|mc.today|mebelminsk.by|medicalj.ru|memstatus.ru|mirnov.ru|mos-holidays.ru|moscow-post.com|motoforum.ru|motovibor.ru|moya-semya.ru|mycity.by|nakanune.ru|nashdisk.ru|naurfo.ru|ndn.info|nevasport.ru|newgdz.com|newgubakha.ru|news.soundex.ru|ng.kz|ngregion.ru|nsday.ru|numama.ru|ok-inform.ru|orenday.ru|osvita.ua|out-club.ru|perevolockday.ru|planet-today.ru|planetaskazok.ru|poiskvps.ru|pretenziy.ru|profidom.com.ua|prosports.kg|prosports.kz|rabota-kovrov.ru|rabota.kharkov.ua|radioclub.ua|rbc.ru|ria-m.tv|ria56.ru|ridna.ua|rtr24.ru|ruslife.eu|saltday.ru|sevastopol.su|sevkavportal.ru|shans.com.ua|skoda-club.org.ua|smolnarod.ru|sorochinskday.ru|sostav.ua|sp.tomica.ru|starkosino.ru|study.ru|tenstars.ru|ternopoliany.te.ua|trassae95.com|trisosny.ru|tv-gubernia.ru|ua-independent.com|uff.uz|ufocar.ru|ukrlife.tv|valetudo.ru|vdv-kavkaz.ru|vjazhi.ru|vmeste.tv|vp.donetsk.ua|vsatke.ru|vse-pro-sport.com.ua|vseprosport.by|vseprosport.kz|vseprosport.ru|yablor.ru|zamena-podshipnikov.ru|zrenue.com|zvid.org
 a10670 1
 ||abnews.ru/dog/
+d11573 1
+a11573 1
+||html-load.com/loader.min.js$domain=eurointegration.com.ua|pravda.com.ua
+a16992 1
+mezha.media##.nadavi-widget
 a17920 1
 kommersant.ru#?#.slider-commercial .multimedia__item:-abp-has(.spend__text > .spend__tag:-abp-contains(/^Партнерский /))
 d18536 2
@@ -29,8 +34,10 @@ abnews.ru,sm.news##[class^="partner"]
 d18977 1
 a18977 1
 abnews.ru,fakty.ua##[src*="/images/banners/"]
+d19084 1
 a20471 1
 otzywy.com##div[class^="goog"]
+d21196 1
 d21701 1
 a21701 1
 ||pikabu.ru/cs$xmlhttprequest,domain=pikabu.ru
@@ -42,6 +49,10 @@ a25178 1
 @@||home-club.*.ua/content/images/other/468x60-white.png|$image,~third-party,domain=home-club.co.ua|home-club.com.ua
 a27631 1
 mail.ru###user-settings-modal > .user-settings-container > .user-settings-types > .user-settings-types__item:last-child
+d27789 1
+a27789 1
+eurointegration.com.ua,pravda.com.ua##+js(abort-on-property-read, as_retry)
+d28167 1
 d28227 2
 a28228 2
 ~3igames.mail.ru,~account.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~finance.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru,~vfokuse.mail.ru##+js(no-fetch-if, /\/apic\//)
@@ -53,3 +64,6 @@ a28240 2
 d28256 1
 a28256 1
 ~3igames.mail.ru,~account.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~finance.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru,~vfokuse.mail.ru##+js(abort-on-stack-trace, Object.prototype.ssrAds, completeRadar)
+d28351 1
+a28351 1
+eurointegration.com.ua,pravda.com.ua##^script[onload*="error-report.com"]
