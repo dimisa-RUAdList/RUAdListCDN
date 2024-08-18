@@ -1,8 +1,8 @@
-diff name:ruadlist lines:52 checksum:b65eeeb04f
+diff name:ruadlist lines:59 checksum:ae45a70ffb
 d4 2
 a5 2
-! Last modified: Sat, 17 Aug 2024 22:22:25 +0000
-! Diff-Path: ../patches/2024.8.17.1342.patch#ruadlist
+! Last modified: Sun, 18 Aug 2024 03:23:55 +0000
+! Diff-Path: ../patches/2024.8.18.203.patch#ruadlist
 a893 1
 ||broredir*s.site^$third-party
 d895 1
@@ -16,6 +16,7 @@ $third-party,script,domain=1000iodinsovet.ru|100polezno.ru|100popugaev.ru|1080ki
 d11575 1
 a11575 1
 ||html-load.com/loader.min.js$domain=eurointegration.com.ua|pravda.com.ua
+d11927 1
 a16994 1
 mezha.media##.nadavi-widget
 d19085 1
@@ -24,18 +25,22 @@ otzywy.com##div[class^="goog"]
 d21197 1
 d21702 1
 a21702 1
-||pikabu.ru/cz$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/yz$xmlhttprequest,domain=pikabu.ru
 d21963 1
 a21963 1
 ~dobro.mail.ru,~e.mail.ru,mail.ru,sportmail.ru##table > tbody > tr > td:first-child + td + td:last-child
 d25179 1
 a25179 1
 @@||home-club.*.ua/content/images/other/468x60-white.png|$image,~third-party,domain=home-club.co.ua|home-club.com.ua
+d27238 1
 a27632 1
 mail.ru###user-settings-modal > .user-settings-container > .user-settings-types > .user-settings-types__item:last-child
 d27790 1
 a27790 1
 eurointegration.com.ua,pravda.com.ua##+js(abort-on-property-read, as_retry)
+d28012 1
+a28012 1
+cdnvideo.ru,eda.ru,mania.gcdn.co,tass.ru,vp.rambler.ru,www.rambler.ru##+js(set-constant, Object.prototype.autoPlay, false)
 d28168 1
 d28228 2
 a28229 2
@@ -51,3 +56,5 @@ a28257 1
 d28352 1
 a28352 1
 eurointegration.com.ua,pravda.com.ua##^script[onload*="error-report.com"]
+a28370 1
+@@||bigkyiv.com.ua^$generichide

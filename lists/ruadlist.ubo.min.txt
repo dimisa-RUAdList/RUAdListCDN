@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 17 Aug 2024 22:22:25 +0000
-! Diff-Path: ../patches/2024.8.17.1342.patch#ruadlist
+! Last modified: Sun, 18 Aug 2024 03:23:55 +0000
+! Diff-Path: ../patches/2024.8.18.203.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -11926,7 +11926,6 @@ igdz1.ru^$script,domain=igdz.ru
 ||mctop.su/media/img/b/
 ||mcuns.ru/*.php$script,domain=mcuns.ru
 ||mds.yandex.net/get-bstor/
-||mds.yandex.net/get-vh/
 ||me.fo/*/images/banner
 ||me3.com.ua/static/banners/
 ||meat-expert.ru^*banner$image
@@ -21701,7 +21700,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 !||www.liveinternet.ru/users/$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/cgi-bin/rpls.fcgi?list= https://www.liveinternet.ru/spell/spell.js https://www.liveinternet.ru/share/js/share.js https://www.liveinternet.ru/4Ek/JS/diary/main/nav/regoradd.js https://www.liveinternet.ru/4Ek/JS/diary/trans.js
 !||www.liveinternet.ru/|$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/utf/lici.js https://www.liveinternet.ru/utf/li.js https://www.liveinternet.ru/utf/main_new.js
 ! Pikabu (ловушка для обфускации)
-||pikabu.ru/cz$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/yz$xmlhttprequest,domain=pikabu.ru
 ! селекторы
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
@@ -27237,7 +27236,6 @@ tapochek.net##.scrollable:style(overflow-x: auto !important; padding-bottom: 16p
 ! ---
 tass.ru##aside > div[class^="NavPanel_nav"]:style(width: unset !important)
 tass.ru##div[class^="LoopChannelLayout_widget"] > div[class^="SimpleCaption_wrapper"]:style(background: none !important)
-tass.ru##div[class^="PageLayout_top_sticky_box"]:style(position: relative !important)
 ! ---
 doba.te.ua###popup-root
 doba.te.ua##body.locked:style(overflow:auto !important)
@@ -28012,7 +28010,7 @@ razlozhi.ru##+js(set-constant, Object.prototype.advert, null)
 ivi.ru##+js(set-constant, Object.prototype.advertObject, null)
 igroutka.ru##+js(set-constant, Object.prototype.afg, true)
 kinonews.ru##+js(set-constant, Object.prototype.amp, noopFunc)
-cdnvideo.ru,eda.ru,mania.gcdn.co,vp.rambler.ru,www.rambler.ru##+js(set-constant, Object.prototype.autoPlay, false)
+cdnvideo.ru,eda.ru,mania.gcdn.co,tass.ru,vp.rambler.ru,www.rambler.ru##+js(set-constant, Object.prototype.autoPlay, false)
 afisha.ru##+js(set-constant, Object.prototype.autoPlay, null)
 partnerkin.com##+js(set-constant, Object.prototype.autoPopups, undefined)
 frontend.vh.yandex.ru##+js(set-constant, Object.prototype.autoplay, false)
@@ -28370,6 +28368,7 @@ afisha.ru,autorambler.ru,championat.com,eda.ru,gazeta.ru,lenta.ru,letidor.ru,mos
 e.mail.ru##+js(no-setTimeout-if, '()=>n()', 50)
 e.mail.ru##+js(set-constant, Object.prototype.hasAdBlock, false)
 e.mail.ru#@#+js(set-constant, Object.prototype.hasAdBlock, null)
+@@||bigkyiv.com.ua^$generichide
 ||st.top100.ru/top100/top100.js$domain=www.rambler.ru
 !#endif
 ! --- AWRL-non-sync---
