@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 21 Aug 2024 21:21:20 +0000
-! Diff-Path: ../patches/2024.8.21.1281.patch#ruadlist
+! Last modified: Thu, 22 Aug 2024 02:41:38 +0000
+! Diff-Path: ../patches/2024.8.22.161.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21670,6 +21670,7 @@ ictv.ua,vikna.tv##div[id^="div-gpt-ad-"]
 ! *** ./advblock/specific_special.txt ***
 !#if ext_abp
 ! запросы
+$csp=script-src-attr 'none',domain=eurointegration.com.ua|pravda.com.ua
 /^https?://24smi\.org/*[/]*[/][^\s]{8,}/$xmlhttprequest,domain=24smi.org
 ://pikabu.ru/$csp=script-src 'self' * 'unsafe-inline' data:
 @@||imasdk.googleapis.com/$xmlhttprequest,domain=volley.ru
@@ -21735,7 +21736,6 @@ liveinternet.ru##div[style*="!important; "]
 sdamgia.ru##div[style*="important;"][style*="width:"][style*="height:"] *
 www.drive2.ru##iframe[style="display: block; border-width: 0px;"]
 www.drive2.ru##iframe[style="opacity: 1;"]
-eurointegration.com.ua,pravda.com.ua#?#script[id][data-sdk] {remove:true;}
 liveinternet.ru##style + div > div > div > div > div a
 !#endif
 soyztreid.website##:not(my-obnaruzhili-blokirovshchik)

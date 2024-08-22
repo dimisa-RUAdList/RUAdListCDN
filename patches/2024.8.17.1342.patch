@@ -1,8 +1,8 @@
-diff name:ruadlist lines:100 checksum:43f0f08cda
+diff name:ruadlist lines:100 checksum:db62e56fb7
 d4 2
 a5 2
-! Last modified: Wed, 21 Aug 2024 21:21:20 +0000
-! Diff-Path: ../patches/2024.8.21.1281.patch#ruadlist
+! Last modified: Thu, 22 Aug 2024 02:41:38 +0000
+! Diff-Path: ../patches/2024.8.22.161.patch#ruadlist
 d10004 1
 d10185 1
 a10185 1
@@ -32,6 +32,8 @@ scores24.live##a[href*="/tsr/"]
 a19826 1
 rg.ru##a[title="Дзен"]
 d20325 1
+a21674 1
+$csp=script-src-attr 'none',domain=eurointegration.com.ua|pravda.com.ua
 d21676 7
 d21704 1
 a21704 1
@@ -40,8 +42,6 @@ a21718 1
 dzen.ru##[data_name="visibility-slot"]
 d21744 1
 d21747 1
-a21747 1
-eurointegration.com.ua,pravda.com.ua#?#script[id][data-sdk] {remove:true;}
 d22233 2
 a22234 3
 161.ru,164.ru##noindex ul > li > [data-click-area]
