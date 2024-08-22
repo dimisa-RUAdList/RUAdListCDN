@@ -1,8 +1,9 @@
-diff name:ruadlist lines:30 checksum:2fc771adde
+diff name:ruadlist lines:35 checksum:ba54df318b
 d4 2
 a5 2
-! Last modified: Thu, 22 Aug 2024 12:42:55 +0000
-! Diff-Path: ../patches/2024.8.22.762.patch#ruadlist
+! Last modified: Thu, 22 Aug 2024 17:23:21 +0000
+! Diff-Path: ../patches/2024.8.22.1043.patch#ruadlist
+d6258 1
 d10004 1
 a10849 1
 ||autofill.yandex.ru^$domain=pikabu.ru|sport-express.ru
@@ -15,6 +16,8 @@ a13408 1
 ||youtube.com/embed/$domain=4put.ru|androeed.ru|anime-365.ru|fbsearch.ru|geomap.com.ua|hdrabbit.ru|lostpix.com|newstudio-online.tv|sbornik-music.ru|sinonim.org|smotret-anime.online|subject.com.ua|ukrlit.net|zarlit.com
 a17270 1
 multitran.com##.pic
+a20247 1
+ren.tv##div[class*="dzenFoxButtonsContainer"] > div[class^="root"]
 a21671 1
 $csp=script-src-attr 'none',domain=eurointegration.com.ua|pravda.com.ua
 a21701 1
@@ -24,6 +27,8 @@ d21738 1
 a25758 1
 myshows.me##.CheatModal__modal
 d25834 1
+a26673 1
+www.kinopoisk.ru##body[class*="styles_body"]:style(overflow: auto !important)
 a28063 1
 myshows.me##+js(set-cookie, adBlockModal, true)
 a28120 2
