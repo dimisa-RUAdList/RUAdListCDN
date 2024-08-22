@@ -1,8 +1,8 @@
-diff name:ruadlist lines:45 checksum:257b2e3a77
+diff name:ruadlist lines:57 checksum:2fc771adde
 d4 2
 a5 2
-! Last modified: Thu, 22 Aug 2024 07:22:35 +0000
-! Diff-Path: ../patches/2024.8.22.442.patch#ruadlist
+! Last modified: Thu, 22 Aug 2024 12:42:55 +0000
+! Diff-Path: ../patches/2024.8.22.762.patch#ruadlist
 d10004 1
 d10185 1
 a10185 1
@@ -12,10 +12,17 @@ a10850 1
 ||autofill.yandex.ru^$domain=pikabu.ru|sport-express.ru
 a11230 1
 ||e.radikal.host/2024/07/19/gghhhgggg.$document
+a12070 1
+||multitran.com/gif/iv.mp4
 d12713 1
 a12713 1
 ||scores24.live/tsr/
+d13409 1
+a13409 1
+||youtube.com/embed/$domain=4put.ru|androeed.ru|anime-365.ru|fbsearch.ru|geomap.com.ua|hdrabbit.ru|lostpix.com|newstudio-online.tv|sbornik-music.ru|sinonim.org|smotret-anime.online|subject.com.ua|ukrlit.net|zarlit.com
 d13557 1
+a17272 1
+multitran.com##.pic
 a18847 1
 scores24.live##[data-testid="ExpressCouponBookmakers"]
 d19120 1
@@ -27,6 +34,8 @@ scores24.live##a[href*="/tsr/"]
 d20324 1
 a21673 1
 $csp=script-src-attr 'none',domain=eurointegration.com.ua|pravda.com.ua
+a21703 1
+@@||ozon.ru/highlight/kursk-$elemhide
 d21737 1
 d21740 1
 d22792 1
@@ -44,3 +53,6 @@ dzen.ru##div[class*="dzen-wrapper-with-top-content-desktop__topContent-"]:style(
 d27440 2
 a28064 1
 myshows.me##+js(set-cookie, adBlockModal, true)
+a28121 2
+ozon.ru##:matches-path(/kursk-sertifikaty) [data-lcp-name*="anner-"]:style(display: block !important)
+ozon.ru##:matches-path(/kursk-sertifikaty) div[data-widget="banner"]:style(display: block !important)

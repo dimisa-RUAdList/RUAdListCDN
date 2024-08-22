@@ -1,8 +1,8 @@
-diff name:ruadlist lines:66 checksum:257b2e3a77
+diff name:ruadlist lines:78 checksum:2fc771adde
 d4 2
 a5 2
-! Last modified: Thu, 22 Aug 2024 07:22:35 +0000
-! Diff-Path: ../patches/2024.8.22.442.patch#ruadlist
+! Last modified: Thu, 22 Aug 2024 12:42:55 +0000
+! Diff-Path: ../patches/2024.8.22.762.patch#ruadlist
 d10004 1
 d10185 1
 a10185 1
@@ -14,12 +14,19 @@ a10852 1
 ||autofill.yandex.ru^$domain=pikabu.ru|sport-express.ru
 a11232 1
 ||e.radikal.host/2024/07/19/gghhhgggg.$document
+a12072 1
+||multitran.com/gif/iv.mp4
 d12715 1
 a12715 1
 ||scores24.live/tsr/
+d13411 1
+a13411 1
+||youtube.com/embed/$domain=4put.ru|androeed.ru|anime-365.ru|fbsearch.ru|geomap.com.ua|hdrabbit.ru|lostpix.com|newstudio-online.tv|sbornik-music.ru|sinonim.org|smotret-anime.online|subject.com.ua|ukrlit.net|zarlit.com
 d13559 1
 a14893 1
 in-poland.com##.adsContainer
+a17273 1
+multitran.com##.pic
 a18848 1
 scores24.live##[data-testid="ExpressCouponBookmakers"]
 d19121 1
@@ -34,6 +41,8 @@ d20324 1
 a21673 1
 $csp=script-src-attr 'none',domain=eurointegration.com.ua|pravda.com.ua
 d21675 7
+a21710 1
+@@||ozon.ru/highlight/kursk-$elemhide
 d21744 1
 d21747 1
 d22799 1
@@ -65,3 +74,6 @@ a28049 1
 in-poland.com##+js(set-constant, adsenseIsLoaded, true)
 a28067 1
 myshows.me##+js(set-cookie, adBlockModal, true)
+a28124 2
+ozon.ru##:matches-path(/kursk-sertifikaty) [data-lcp-name*="anner-"]:style(display: block !important)
+ozon.ru##:matches-path(/kursk-sertifikaty) div[data-widget="banner"]:style(display: block !important)
