@@ -1,19 +1,52 @@
-diff name:ruadlist lines:18 checksum:4e0aee64e6
+diff name:ruadlist lines:51 checksum:b681ea9d71
 d4 2
 a5 2
-! Last modified: Sat, 24 Aug 2024 09:23:05 +0000
-! Diff-Path: ../patches/2024.8.24.563.patch#ruadlist
+! Last modified: Sat, 24 Aug 2024 14:22:18 +0000
+! Diff-Path: ../patches/2024.8.24.862.patch#ruadlist
 a1069 1
 ||cdn77.org/*.js$third-party,script
 a1197 1
 ||cmcxmh.com^$third-party
+d7739 1
+a7739 1
+/banner.gif$domain=~e.aviasales.ru|~litehd.tv|~russia-tv.online|~work-pulse.ru|~xcom-shop.ru
 d10313 1
 a10313 1
 .php$third-party,script,domain=asilmedia.org|atastv.ru|dok-film.net|football.kulichki.net|freezmi.io|houseserial.ru|joyreactor.cc|kino-o-voine.ru|novostivl.ru|orenburg.media|pro100hobbi.ru|reactor.cc|reedr.ru|rosserial.be|ryazan.life|samelectric.ru|sib.fm|smartpress.by|tevas.media|tourprom.ru|tv-umnik.ru|vsplanet.net|yakutsk.ru|zfilm-hd.org|zfilme-hd1.site
+a14393 1
+pravda.ru###scrolling-news-list > div[style^="min-height:3"]
 a17125 1
 myshows.me##.okko
+a17828 1
+pikabu.ru##.sidebar-block_half
 a17852 1
 habr.com##.sidebar-small-banner
 d21698 1
 a21698 1
 ||pikabu.ru/*a.e?kej=$xmlhttprequest,domain=pikabu.ru
+d21717 1
+a21717 1
+dzen.ru##a[href^="https://dzen.ru/"]:not(.ui-lib-embed-view-base__link):not([class*="tabContent"]) div > div > div > div
+d21726 1
+a21726 1
+dzen.ru#?#div:-abp-has(> a[href^="https://dzen.ru/"]:not(.ui-lib-embed-view-base__link):not([class*="tabContent"]) div > div > div > div)
+a22809 1
+dzen.ru##div[class*="tsar__container"]
+a25742 1
+xcom-shop.ru#@#.ad-placeholder
+d25869 1
+a27406 4
+! исправление ошибок и косяков оригинальной вёрстки
+www.xcom-shop.ru##body:style(overflow-y: hidden !important)
+www.xcom-shop.ru##html:style(overflow-y: auto !important)
+! ---
+d27847 1
+a27847 1
+bombardir.ru,comp-service.kiev.ua,inforesist.org,www.xcom-shop.ru##+js(abort-on-property-read, window.alert)
+d28021 1
+a28021 1
+dni.expert,dni.ru,kp.kg,kp.kz,kp.md,kp.ru,lifehacker.ru,mk.ru,ohotniki.ru,portalvirtualreality.ru,radiokp.ru,sportkp.ru,wday.ru,woman.ru,womanhit.ru,www.fontanka.ru##+js(set-constant, Object.prototype.changeVisible, noopFunc)
+d28214 1
+d28369 1
+a28369 1
+116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,62.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru##+js(set-constant, Object.prototype._playerAdded, noopFunc)

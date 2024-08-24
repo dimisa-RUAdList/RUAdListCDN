@@ -1,13 +1,16 @@
-diff name:ruadlist lines:38 checksum:4e0aee64e6
+diff name:ruadlist lines:71 checksum:b681ea9d71
 d4 2
 a5 2
-! Last modified: Sat, 24 Aug 2024 09:23:05 +0000
-! Diff-Path: ../patches/2024.8.24.563.patch#ruadlist
+! Last modified: Sat, 24 Aug 2024 14:22:18 +0000
+! Diff-Path: ../patches/2024.8.24.862.patch#ruadlist
 a1069 1
 ||cdn77.org/*.js$third-party,script
 a1197 1
 ||cmcxmh.com^$third-party
 d6258 1
+d7740 1
+a7740 1
+/banner.gif$domain=~e.aviasales.ru|~litehd.tv|~russia-tv.online|~work-pulse.ru|~xcom-shop.ru
 d10314 1
 a10314 1
 .php$third-party,script,domain=asilmedia.org|atastv.ru|dok-film.net|football.kulichki.net|freezmi.io|houseserial.ru|joyreactor.cc|kino-o-voine.ru|novostivl.ru|orenburg.media|pro100hobbi.ru|reactor.cc|reedr.ru|rosserial.be|ryazan.life|samelectric.ru|sib.fm|smartpress.by|tevas.media|tourprom.ru|tv-umnik.ru|vsplanet.net|yakutsk.ru|zfilm-hd.org|zfilme-hd1.site
@@ -16,10 +19,14 @@ a12070 1
 d13409 1
 a13409 1
 ||youtube.com/embed/$domain=4put.ru|androeed.ru|anime-365.ru|fbsearch.ru|geomap.com.ua|hdrabbit.ru|lostpix.com|newstudio-online.tv|sbornik-music.ru|sinonim.org|smotret-anime.online|subject.com.ua|ukrlit.net|zarlit.com
+a14393 1
+pravda.ru###scrolling-news-list > div[style^="min-height:3"]
 a17125 1
 myshows.me##.okko
 a17271 1
 multitran.com##.pic
+a17827 1
+pikabu.ru##.sidebar-block_half
 a17851 1
 habr.com##.sidebar-small-banner
 a20248 1
@@ -31,9 +38,35 @@ a21695 1
 ||pikabu.ru/*a.e?kej=$xmlhttprequest,domain=pikabu.ru
 a21702 1
 @@||ozon.ru/highlight/kursk-$elemhide
+d21713 1
+a21713 1
+dzen.ru##a[href^="https://dzen.ru/"]:not(.ui-lib-embed-view-base__link):not([class*="tabContent"]) div > div > div > div
+d21722 1
+a21722 1
+dzen.ru#?#div:-abp-has(> a[href^="https://dzen.ru/"]:not(.ui-lib-embed-view-base__link):not([class*="tabContent"]) div > div > div > div)
 d21738 1
+a22806 1
+dzen.ru##div[class*="tsar__container"]
+a25739 1
+xcom-shop.ru#@#.ad-placeholder
+d25866 1
 a26673 1
 www.kinopoisk.ru##body[class*="styles_body"]:style(overflow: auto !important)
+a27402 4
+! исправление ошибок и косяков оригинальной вёрстки
+www.xcom-shop.ru##body:style(overflow-y: hidden !important)
+www.xcom-shop.ru##html:style(overflow-y: auto !important)
+! ---
+d27843 1
+a27843 1
+bombardir.ru,comp-service.kiev.ua,inforesist.org,www.xcom-shop.ru##+js(abort-on-property-read, window.alert)
+d28017 1
+a28017 1
+dni.expert,dni.ru,kp.kg,kp.kz,kp.md,kp.ru,lifehacker.ru,mk.ru,ohotniki.ru,portalvirtualreality.ru,radiokp.ru,sportkp.ru,wday.ru,woman.ru,womanhit.ru,www.fontanka.ru##+js(set-constant, Object.prototype.changeVisible, noopFunc)
 a28121 2
 ozon.ru##:matches-path(/kursk-sertifikaty) [data-lcp-name*="anner-"]:style(display: block !important)
 ozon.ru##:matches-path(/kursk-sertifikaty) div[data-widget="banner"]:style(display: block !important)
+d28208 1
+d28363 1
+a28363 1
+116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,62.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru##+js(set-constant, Object.prototype._playerAdded, noopFunc)
