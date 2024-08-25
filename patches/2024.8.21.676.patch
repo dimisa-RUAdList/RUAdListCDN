@@ -1,12 +1,18 @@
-diff name:ruadlist lines:74 checksum:71c66117ab
+diff name:ruadlist lines:97 checksum:c0ba386d43
 d4 2
 a5 2
-! Last modified: Sun, 25 Aug 2024 10:24:52 +0000
-! Diff-Path: ../patches/2024.8.25.624.patch#ruadlist
+! Last modified: Sun, 25 Aug 2024 15:22:41 +0000
+! Diff-Path: ../patches/2024.8.25.922.patch#ruadlist
 a1069 1
 ||cdn77.org/*.js$third-party,script
 a1197 1
 ||cmcxmh.com^$third-party
+a2449 1
+||gsimvqfghc.com^$third-party
+a4293 1
+||octonewjs.com^$third-party
+a4295 1
+||octotracking.com^$third-party
 d6258 1
 d7740 1
 a7740 1
@@ -14,15 +20,22 @@ a7740 1
 d10314 1
 a10314 1
 .php$third-party,script,domain=asilmedia.org|atastv.ru|dok-film.net|football.kulichki.net|freezmi.io|houseserial.ru|joyreactor.cc|kino-o-voine.ru|novostivl.ru|orenburg.media|pro100hobbi.ru|reactor.cc|reedr.ru|rosserial.be|ryazan.life|samelectric.ru|sib.fm|smartpress.by|tevas.media|tourprom.ru|tv-umnik.ru|vsplanet.net|yakutsk.ru|zfilm-hd.org|zfilme-hd1.site
+d11027 1
 a11229 1
 ||e.radikal.host/2024/07/19/gghhhgggg.$document
 a12069 1
 ||multitran.com/gif/iv.mp4
+d12541 1
 d13408 1
 a13408 1
 ||youtube.com/embed/$domain=4put.ru|androeed.ru|anime-365.ru|fbsearch.ru|geomap.com.ua|hdrabbit.ru|lostpix.com|newstudio-online.tv|sbornik-music.ru|sinonim.org|smotret-anime.online|subject.com.ua|ukrlit.net|zarlit.com
 a14392 1
 pravda.ru###scrolling-news-list > div[style^="min-height:3"]
+a15493 1
+readovka67.ru##.block-community-yanews
+d15502 1
+a15502 1
+readovka.news,readovka67.ru##.block-mediametrics
 a17124 1
 myshows.me##.okko
 a17270 1
@@ -31,6 +44,16 @@ a17826 1
 pikabu.ru##.sidebar-block_half
 a17850 1
 habr.com##.sidebar-small-banner
+d19094 1
+a19094 1
+024.by,1777.ru,1istochnik.ru,7days.ru,actualnews.org,allboxing.ru,amurmedia.ru,argumenti.ru,atas.info,auto.ru,autosaratov.ru,autosport.com.ru,av.by,baby.ru,bel.ru,belkagomel.by,bidbaits.ru,carsweek.ru,chitamedia.su,chukotkamedia.ru,cq.ru,ctc.ru,deita.ru,domclick.ru,eaomedia.ru,eva.ru,finam.ru,fishki.net,fontanka.ru,food.ru,friday.ru,interface31.ru,intermedia.ru,irkutskmedia.ru,iz.ru,izhlife.ru,kaifolog.net,kamchatkamedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,lipetskmedia.ru,magadanmedia.ru,mel.fm,mk.ru,nakhodka.media,nashe.ru,neva.today,new-magazine.ru,noob-club.ru,nsn.fm,om1.ru,osnmedia.ru,politrussia.com,povarenok.ru,priamurmedia.ru,primamedia.ru,prufy.ru,radiojazzfm.ru,radioultra.ru,readovka.news,realt.by,riamo.ru,rockfm.ru,russian.rt.com,rusvesna.su,sakhalinmedia.ru,sevastopolmedia.ru,sm.news,smolensk-i.ru,smotrim.ru,sovets.net,sovets24.ru,sravni.ru,starhit.ru,stavropol.media,study.ru,svpressa.ru,takiedela.ru,teleport2001.ru,topnews.ru,tsargrad.tv,tv2.today,ukraina.ru,ulanmedia.ru,ussurmedia.ru,vm.ru,vsezdorovo.com,www.kolesa.ru,yakutiamedia.ru,ytronews.ru,zaycev.net##a[href*="//zen.yandex.ru/"]
+d19104 1
+a19104 1
+1fnl.ru,1tulatv.ru,aif.ru,alogvinov.com,compulenta.ru,computerra.ru,disgustingmen.com,forums.goha.ru,gamebomb.ru,gamer-info.com,gismeteo.ru,gotps3.ru,kudago.com,maximonline.ru,mmorpg.su,mobiltelefon.ru,move.ru,omskpress.ru,osp.ru,penzavzglyad.ru,ps3hits.ru,radiorecord.ru,shazoo.ru,sobaka.ru,soccer.ru,sportbox.ru##a[href*="/ad.adriver."]
+d19315 1
+d19612 1
+d19684 1
+d19693 1
 a20247 1
 ren.tv##div[class*="dzenFoxButtonsContainer"] > div[class^="root"]
 a21671 1
@@ -42,10 +65,10 @@ a21701 1
 @@||ozon.ru/highlight/kursk-$elemhide
 d21712 1
 a21712 1
-dzen.ru##a[href^="https://dzen.ru/"]:not(.ui-lib-embed-view-base__link):not([class*="tabContent"]) div > div > div > div
+dzen.ru##a[href^="https://dzen.ru/"]:not([class*="__link"]):not([class*="tabContent"]) div > div > div > div
 d21721 1
 a21721 1
-dzen.ru#?#div:-abp-has(> a[href^="https://dzen.ru/"]:not(.ui-lib-embed-view-base__link):not([class*="tabContent"]) div > div > div > div)
+dzen.ru#?#div:-abp-has(> a[href^="https://dzen.ru/"]:not([class*="__link"]):not([class*="tabContent"]) div > div > div > div)
 d21735 1
 d21738 1
 a22806 1
