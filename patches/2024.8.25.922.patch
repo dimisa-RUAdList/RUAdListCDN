@@ -1,8 +1,8 @@
-diff name:ruadlist lines:38 checksum:3bc2cfd7c8
+diff name:ruadlist lines:40 checksum:22fad07a7c
 d4 2
 a5 2
-! Last modified: Tue, 27 Aug 2024 17:22:12 +0000
-! Diff-Path: ../patches/2024.8.27.1042.patch#ruadlist
+! Last modified: Tue, 27 Aug 2024 22:26:06 +0000
+! Diff-Path: ../patches/2024.8.27.1346.patch#ruadlist
 a7201 1
 ||zszhfffyd.ru^$third-party
 a7648 1
@@ -21,13 +21,15 @@ d21702 1
 a21702 1
 ||pikabu.ru/*?kej=$xmlhttprequest,domain=pikabu.ru
 a21969 1
-~e.mail.ru,mail.ru,~octavius.mail.ru##body[style="overflow: unset; max-height: unset;"] > div > style ~ div[id^="b-"]
+~e.mail.ru,mail.ru,~octavius.mail.ru##body[style="overflow: unset; max-height: unset;"] > div > style ~ div[id*="-"]
 a25805 1
 uakino.me##.side-content-adblock
 d27312 2
 a27315 2
 uakino.me##body > .all-wrap:style(margin-top: 0 !important)
 ! ---
+a27674 1
+mail.ru##body > .zeropixel ~ div > style ~ div
 d27924 1
 a27924 1
 aniqit.com,anivod.com,ashdi.vip,kodik.cc,kodik.info,kodikdb.com,tortuga.wtf##+js(json-prune, vast)

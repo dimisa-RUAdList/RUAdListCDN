@@ -1,8 +1,8 @@
-diff name:ruadlist lines:94 checksum:3bc2cfd7c8
+diff name:ruadlist lines:96 checksum:22fad07a7c
 d4 2
 a5 2
-! Last modified: Tue, 27 Aug 2024 17:22:12 +0000
-! Diff-Path: ../patches/2024.8.27.1042.patch#ruadlist
+! Last modified: Tue, 27 Aug 2024 22:26:06 +0000
+! Diff-Path: ../patches/2024.8.27.1346.patch#ruadlist
 a2451 1
 ||gsimvqfghc.com^$third-party
 a4295 1
@@ -57,7 +57,7 @@ d21730 1
 a21730 1
 dzen.ru#?#div:-abp-has(> a[href^="https://dzen.ru/"]:not([class*="__link"]):not([class*="tabContent"]) div > div > div > div)
 a21969 1
-~e.mail.ru,mail.ru,~octavius.mail.ru##body[style="overflow: unset; max-height: unset;"] > div > style ~ div[id^="b-"]
+~e.mail.ru,mail.ru,~octavius.mail.ru##body[style="overflow: unset; max-height: unset;"] > div > style ~ div[id*="-"]
 a22813 1
 dzen.ru##div[class*="tsar__container"]
 a25746 1
@@ -74,6 +74,8 @@ a27410 4
 www.xcom-shop.ru##body:style(overflow-y: hidden !important)
 www.xcom-shop.ru##html:style(overflow-y: auto !important)
 ! ---
+a27669 1
+mail.ru##body > .zeropixel ~ div > style ~ div
 d27851 1
 a27851 1
 bombardir.ru,comp-service.kiev.ua,inforesist.org,www.xcom-shop.ru##+js(abort-on-property-read, window.alert)
