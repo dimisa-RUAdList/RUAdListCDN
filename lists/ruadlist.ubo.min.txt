@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 29 Aug 2024 04:27:20 +0000
-! Diff-Path: ../patches/2024.8.29.267.patch#ruadlist
+! Last modified: Thu, 29 Aug 2024 09:25:20 +0000
+! Diff-Path: ../patches/2024.8.29.565.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21703,7 +21703,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 !||www.liveinternet.ru/users/$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/cgi-bin/rpls.fcgi?list= https://www.liveinternet.ru/spell/spell.js https://www.liveinternet.ru/share/js/share.js https://www.liveinternet.ru/4Ek/JS/diary/main/nav/regoradd.js https://www.liveinternet.ru/4Ek/JS/diary/trans.js
 !||www.liveinternet.ru/|$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/utf/lici.js https://www.liveinternet.ru/utf/li.js https://www.liveinternet.ru/utf/main_new.js
 ! Pikabu (ловушка для обфускации)
-||pikabu.ru/*?key=$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/*?say=$xmlhttprequest,domain=pikabu.ru
 ! селекторы
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
@@ -22809,7 +22809,7 @@ dzen.ru##[aria-label^="Рекл"]
 dzen.ru##[data-name="video-in-combo-zen-container"]
 dzen.ru##[id*="-teaser"] > div[id]
 dzen.ru#?#div:-abp-has(> .adv-skeleton___main)
-dzen.ru##div[class*=" card-with-ad__skeletonCard"]
+dzen.ru##div[class*=" card-with-ad__"]
 dzen.ru##div[class*="-top-ad-"]
 dzen.ru##div[class*="_position_articleBottom"]
 dzen.ru##div[class*="_position_feedSingleCard"]
