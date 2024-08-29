@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 29 Aug 2024 14:25:32 +0000
-! Diff-Path: ../patches/2024.8.29.865.patch#ruadlist
+! Last modified: Thu, 29 Aug 2024 19:19:25 +0000
+! Diff-Path: ../patches/2024.8.29.1159.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -13844,7 +13844,7 @@ inpot.ru###ezobann
 bitcryptonews.ru###faq-index
 turmush.kg###fb_bottom_like
 myparcels.ru###featured-wants
-vk.com,vk.ru#?##feed_rows > div[class^="feed_row "]:-abp-has(> .post > ._post_content > .PostHeader > .PostHeaderInfo > .PostHeaderSubtitle > .PostHeaderSubtitle__item:-abp-contains(/Community ad|Реклама |Рэклама | жарнама/))
+vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .post > ._post_content > .PostHeader > .PostHeaderInfo > .PostHeaderSubtitle > .PostHeaderSubtitle__item:-abp-contains(/Community ad|Реклама |Рэклама | жарнама/))
 itop-gear.ru###fguru
 partarium.ru###filter-form a[href^="/redirect/"][target="_blank"]
 city.ogo.ua###first-top-banner
@@ -26990,7 +26990,7 @@ pimpletv.ru##body > #branding:style(padding-top: 0 !important)
 ! ---
 playground.ru###foundationWrapper > *:style(pointer-events: auto !important)
 playground.ru###foundationWrapper > div:style(height: auto !important)
-playground.ru###foundationWrapper:style(background: #373737 !important; padding-top: 0 !important)
+playground.ru###foundationWrapper:style(background: #999999 !important; padding-top: 0 !important)
 playground.ru###foundationWrapper:style(pointer-events: none !important)
 playground.ru##.content_aside-container > .content-column:style(padding-left: 0 !important; padding-right: 40px !important)
 playground.ru##.content_aside-container:style(flex-direction: unset !important)
