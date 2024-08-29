@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 29 Aug 2024 09:25:20 +0000
-! Diff-Path: ../patches/2024.8.29.565.patch#ruadlist
+! Last modified: Thu, 29 Aug 2024 14:25:32 +0000
+! Diff-Path: ../patches/2024.8.29.865.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -16562,6 +16562,7 @@ loveradio.ru##.interactive__vk
 turkish-tv-series.ru##.intereso
 express-novosti.ru##.interesting-news
 etextlib.ru##.interestingly
+business-gazeta.ru##.interests-box
 businessman.ru,neva.today,syl.ru##.intext-block
 api.ekranka.tv,api.turk-sinema.ru,api.yadoma.tv##.invideo
 besplatnyeprogrammy.ru##.ip-motto
@@ -18670,6 +18671,7 @@ cq.ru##[class*="-odd"]
 vesti.kz##[class*="-top-btn"]
 oboz.ua##[class*="Banner"]
 igromania.ru,kanobu.ru##[class*="HeadingPage_most_discussed"]
+business-gazeta.ru##[class*="__advertising-"]
 libsib.ru##[class*="_a24"]
 cq.ru##[class*="_book"]
 kino-teatr.ru##[class*="_dobro"]
@@ -19278,7 +19280,7 @@ gurutestov.ru##a[href*="ecvator."]
 komapz.net##a[href*="epidems.net"]
 kubyshka.org,radiochief.ru,riperam.org,znamyuzl.ru##a[href*="epngo.bz"]
 cybersport.ru##a[href*="erid:"][target="_blank"]
-sport-express.ru##a[href*="erid="][target="_blank"]
+business-gazeta.ru,sport-express.ru##a[href*="erid="][target="_blank"]
 7ba.org,7ba.ru##a[href*="erotel.org"]
 forum.amit.ru##a[href*="evroremont.amit.ru"]
 ilenta.com,lelang.su,rutr.life,rutracker.lib,rutracker.net,rutracker.nl,rutracker.org,shopping.nv.ua##a[href*="fas.st/"]
@@ -25877,6 +25879,7 @@ au-ok.com##p[style="border:3px solid #C1FF0A;background-color:#d5d5d1;padding:10
 ||storage.yandexcloud.net/sravni-affiliates-public/adblock/adblock_checker.js
 ||texnic.ru/jq/san.js
 ||under-prog.ru/wp-content/plugins/eazy-ad-unblocker/
+||vsthouse.ru/a-detector/
 ||webwintop.ru/wp-content/plugins/$script
 ||yagramotniy.ru/templates/edv/js/_extra/
 ! - Против "бесконечной загрузки страниц" -------------------------------------
@@ -27678,7 +27681,7 @@ mail.ru##body > .grid > div[class^="grid"][class*="__header"] > .toolbar
 mail.ru##body > .zeropixel ~ * .balloon
 mail.ru##body > .zeropixel ~ * .stripe-wrapper
 mail.ru##body > .zeropixel ~ * div[class][style^="color:"][style$="background-size:auto 40px"]
-mail.ru##body > .zeropixel ~ div > style ~ div
+mail.ru##body > .zeropixel ~ div > style ~ div:style(pointer-events: none !important; opacity: 0 !important)
 mail.ru##body:not(.js-module) .searchContainer ~ div > a.dmb
 mail.ru##body:not(.js-module) .tabs + div[class] > :first-child:style(width: 100% !important)
 mail.ru##body:not(.js-module) .tabs + div[class]:style(min-width: fit-content !important)
@@ -28154,7 +28157,7 @@ dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__it
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href*="://yandex."][href*="/clck/"]):remove()
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href][target="_blank"]):remove()
 ozon.ru##[data-lcp-name*="anner-"]:matches-path(/my/reviews/promo):style(display: block !important)
-dzen.ru##[data-microappname="TopMicroApp" ] div[style*="height: 0;"]:style(padding-top: unset !important)
+dzen.ru##[data-microappname="TopMicroApp" ] div[style*="%"]:style(padding-top: unset !important)
 www.sports.ru##[data-noinit]
 online-fix.me##a.btn-success[href^="https://online-fix.me/ext/"]:remove-class(btn)
 24smi.org##a[href*="://24smi.org/"]:remove-attr(target)
@@ -30521,6 +30524,5 @@ bigpuzzle.ru##td[valign="top"][width="240px"][height="600"]
 ||rusnext.ru/advar.js$script
 ||shellcat.ru^$third-party
 ||vazhno.ru/cdn-cgi/apps/head/*.js
-||vsthouse.ru/a-detector/
 ! *** antiadblockfilters:antiadblockfilters/antiadblock_slovak.txt ***
 ! *** antiadblockfilters:antiadblockfilters/antiadblock_spanish.txt ***

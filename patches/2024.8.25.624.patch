@@ -1,8 +1,8 @@
-diff name:ruadlist lines:72 checksum:3e6aa976df
+diff name:ruadlist lines:85 checksum:fac64e6054
 d4 2
 a5 2
-! Last modified: Thu, 29 Aug 2024 09:25:20 +0000
-! Diff-Path: ../patches/2024.8.29.565.patch#ruadlist
+! Last modified: Thu, 29 Aug 2024 14:25:32 +0000
+! Diff-Path: ../patches/2024.8.29.865.patch#ruadlist
 a2451 1
 ||gsimvqfghc.com^$third-party
 a4295 1
@@ -23,12 +23,19 @@ readovka67.ru##.block-community-yanews
 d15506 1
 a15506 1
 readovka.news,readovka67.ru##.block-mediametrics
+a16560 1
+business-gazeta.ru##.interests-box
+a18668 1
+business-gazeta.ru##[class*="__advertising-"]
 d19102 1
 a19102 1
 024.by,1777.ru,1istochnik.ru,7days.ru,actualnews.org,allboxing.ru,amurmedia.ru,argumenti.ru,atas.info,auto.ru,autosaratov.ru,autosport.com.ru,av.by,baby.ru,bel.ru,belkagomel.by,bidbaits.ru,carsweek.ru,chitamedia.su,chukotkamedia.ru,cq.ru,ctc.ru,deita.ru,domclick.ru,eaomedia.ru,eva.ru,finam.ru,fishki.net,fontanka.ru,food.ru,friday.ru,interface31.ru,intermedia.ru,irkutskmedia.ru,iz.ru,izhlife.ru,kaifolog.net,kamchatkamedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,lipetskmedia.ru,magadanmedia.ru,mel.fm,mk.ru,nakhodka.media,nashe.ru,neva.today,new-magazine.ru,noob-club.ru,nsn.fm,om1.ru,osnmedia.ru,politrussia.com,povarenok.ru,priamurmedia.ru,primamedia.ru,prufy.ru,radiojazzfm.ru,radioultra.ru,readovka.news,realt.by,riamo.ru,rockfm.ru,russian.rt.com,rusvesna.su,sakhalinmedia.ru,sevastopolmedia.ru,sm.news,smolensk-i.ru,smotrim.ru,sovets.net,sovets24.ru,sravni.ru,starhit.ru,stavropol.media,study.ru,svpressa.ru,takiedela.ru,teleport2001.ru,topnews.ru,tsargrad.tv,tv2.today,ukraina.ru,ulanmedia.ru,ussurmedia.ru,vm.ru,vsezdorovo.com,www.kolesa.ru,yakutiamedia.ru,ytronews.ru,zaycev.net##a[href*="//zen.yandex.ru/"]
 d19112 1
 a19112 1
 1fnl.ru,1tulatv.ru,aif.ru,alogvinov.com,compulenta.ru,computerra.ru,disgustingmen.com,forums.goha.ru,gamebomb.ru,gamer-info.com,gismeteo.ru,gotps3.ru,kudago.com,maximonline.ru,mmorpg.su,mobiltelefon.ru,move.ru,omskpress.ru,osp.ru,penzavzglyad.ru,ps3hits.ru,radiorecord.ru,shazoo.ru,sobaka.ru,soccer.ru,sportbox.ru##a[href*="/ad.adriver."]
+d19277 1
+a19277 1
+business-gazeta.ru,sport-express.ru##a[href*="erid="][target="_blank"]
 d19323 1
 d19620 1
 d19692 1
@@ -56,18 +63,24 @@ a22809 1
 dzen.ru##div[class*=" card-with-ad__"]
 a25807 1
 uakino.me##.side-content-adblock
+a25875 1
+||vsthouse.ru/a-detector/
 d27314 2
 a27317 2
 uakino.me##body > .all-wrap:style(margin-top: 0 !important)
 ! ---
 a27676 1
-mail.ru##body > .zeropixel ~ div > style ~ div
+mail.ru##body > .zeropixel ~ div > style ~ div:style(pointer-events: none !important; opacity: 0 !important)
 d27926 1
 a27926 1
 aniqit.com,anivod.com,ashdi.vip,kodik.cc,kodik.info,kodikdb.com,tortuga.wtf##+js(json-prune, vast)
 d27933 1
 a27933 1
 kinokong.bz,uakino.me,win-lite.site##+js(nano-setInterval-booster, countdown)
+d28152 1
+a28152 1
+dzen.ru##[data-microappname="TopMicroApp" ] div[style*="%"]:style(padding-top: unset !important)
 a28266 1
 ||ok.ru/web-api/*/hobby/getMailRuHobbyFeedScriptSrc$domain=mail.ru
 d30409 1
+d30519 1

@@ -1,12 +1,19 @@
-diff name:ruadlist lines:20 checksum:3e6aa976df
+diff name:ruadlist lines:33 checksum:fac64e6054
 d4 2
 a5 2
-! Last modified: Thu, 29 Aug 2024 09:25:20 +0000
-! Diff-Path: ../patches/2024.8.29.565.patch#ruadlist
+! Last modified: Thu, 29 Aug 2024 14:25:32 +0000
+! Diff-Path: ../patches/2024.8.29.865.patch#ruadlist
 a7201 1
 ||zszhfffyd.ru^$third-party
 a7648 1
 .ru/script.js?sid=$third-party,script
+a16562 1
+business-gazeta.ru##.interests-box
+a18670 1
+business-gazeta.ru##[class*="__advertising-"]
+d19279 1
+a19279 1
+business-gazeta.ru,sport-express.ru##a[href*="erid="][target="_blank"]
 d21704 1
 a21704 1
 ||pikabu.ru/*?say=$xmlhttprequest,domain=pikabu.ru
@@ -15,7 +22,13 @@ a21971 1
 d22809 1
 a22809 1
 dzen.ru##div[class*=" card-with-ad__"]
+a25876 1
+||vsthouse.ru/a-detector/
 a27677 1
-mail.ru##body > .zeropixel ~ div > style ~ div
+mail.ru##body > .zeropixel ~ div > style ~ div:style(pointer-events: none !important; opacity: 0 !important)
+d28153 1
+a28153 1
+dzen.ru##[data-microappname="TopMicroApp" ] div[style*="%"]:style(padding-top: unset !important)
 a28267 1
 ||ok.ru/web-api/*/hobby/getMailRuHobbyFeedScriptSrc$domain=mail.ru
+d30519 1
