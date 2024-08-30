@@ -1,14 +1,25 @@
-diff name:ruadlist lines:13 checksum:434e59bff0
+diff name:ruadlist lines:24 checksum:d5fab9b0ba
 d4 2
 a5 2
-! Last modified: Fri, 30 Aug 2024 05:24:53 +0000
-! Diff-Path: ../patches/2024.8.30.324.patch#ruadlist
+! Last modified: Fri, 30 Aug 2024 10:26:37 +0000
+! Diff-Path: ../patches/2024.8.30.626.patch#ruadlist
 d13847 1
 a13847 1
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .post > ._post_content > .PostHeader > .PostHeaderInfo > .PostHeaderSubtitle > .PostHeaderSubtitle__item:-abp-contains(/Community ad|Реклама |Рэклама | жарнама/))
+d21708 1
+a21708 1
+||pikabu.ru/*~*.*?*=$xmlhttprequest,domain=pikabu.ru
+a21716 1
+dzen.ru#?#[class]:-abp-has(> a[href^="https://dzen.ru/"]:not([class*="__link"]):not([class*="tabContent"]) [class] > [class] > [class] > [class])
+d21727 1
+a21727 1
+dzen.ru##a[href^="https://dzen.ru/"]:not([class*="__link"]):not([class*="tabContent"]) [class] > [class] > [class] > [class]
+d21736 1
 d22814 1
 a22820 1
 dzen.ru##div[class*="card-with-ad__"]
+a22879 1
+/*ypppel=$popup,domain=dzen.ru
 d26991 4
 a26999 1
 playground.ru##body:style(background: #242424 !important)

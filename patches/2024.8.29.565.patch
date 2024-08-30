@@ -1,8 +1,8 @@
-diff name:ruadlist lines:29 checksum:434e59bff0
+diff name:ruadlist lines:40 checksum:d5fab9b0ba
 d4 2
 a5 2
-! Last modified: Fri, 30 Aug 2024 05:24:53 +0000
-! Diff-Path: ../patches/2024.8.30.324.patch#ruadlist
+! Last modified: Fri, 30 Aug 2024 10:26:37 +0000
+! Diff-Path: ../patches/2024.8.30.626.patch#ruadlist
 d13847 1
 a13847 1
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .post > ._post_content > .PostHeader > .PostHeaderInfo > .PostHeaderSubtitle > .PostHeaderSubtitle__item:-abp-contains(/Community ad|Реклама |Рэклама | жарнама/))
@@ -13,9 +13,20 @@ business-gazeta.ru##[class*="__advertising-"]
 d19281 1
 a19281 1
 business-gazeta.ru,sport-express.ru##a[href*="erid="][target="_blank"]
+d21706 1
+a21706 1
+||pikabu.ru/*~*.*?*=$xmlhttprequest,domain=pikabu.ru
+a21714 1
+dzen.ru#?#[class]:-abp-has(> a[href^="https://dzen.ru/"]:not([class*="__link"]):not([class*="tabContent"]) [class] > [class] > [class] > [class])
+d21725 1
+a21725 1
+dzen.ru##a[href^="https://dzen.ru/"]:not([class*="__link"]):not([class*="tabContent"]) [class] > [class] > [class] > [class]
+d21734 1
 d22812 1
 a22818 1
 dzen.ru##div[class*="card-with-ad__"]
+a22877 1
+/*ypppel=$popup,domain=dzen.ru
 a25879 1
 ||vsthouse.ru/a-detector/
 d26988 4

@@ -1,8 +1,8 @@
-diff name:ruadlist lines:62 checksum:434e59bff0
+diff name:ruadlist lines:70 checksum:d5fab9b0ba
 d4 2
 a5 2
-! Last modified: Fri, 30 Aug 2024 05:24:53 +0000
-! Diff-Path: ../patches/2024.8.30.324.patch#ruadlist
+! Last modified: Fri, 30 Aug 2024 10:26:37 +0000
+! Diff-Path: ../patches/2024.8.30.626.patch#ruadlist
 a7201 1
 ||zszhfffyd.ru^$third-party
 a7648 1
@@ -29,12 +29,20 @@ a21288 1
 360tv.news##img[src="/img/ad-1.png"]
 d21702 1
 a21702 1
-||pikabu.ru/*?say=$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/*~*.*?*=$xmlhttprequest,domain=pikabu.ru
+a21710 1
+dzen.ru#?#[class]:-abp-has(> a[href^="https://dzen.ru/"]:not([class*="__link"]):not([class*="tabContent"]) [class] > [class] > [class] > [class])
+d21721 1
+a21721 1
+dzen.ru##a[href^="https://dzen.ru/"]:not([class*="__link"]):not([class*="tabContent"]) [class] > [class] > [class] > [class]
+d21730 1
 a21969 1
 ~e.mail.ru,mail.ru,~octavius.mail.ru##body[style="overflow: unset; max-height: unset;"] > div > style ~ div[id*="-"]
 d22807 1
 a22813 1
 dzen.ru##div[class*="card-with-ad__"]
+a22872 1
+/*ypppel=$popup,domain=dzen.ru
 a25805 1
 uakino.me##.side-content-adblock
 a25873 1
