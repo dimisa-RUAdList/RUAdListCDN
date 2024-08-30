@@ -1,8 +1,8 @@
-diff name:ruadlist lines:32 checksum:cbbd299220
+diff name:ruadlist lines:32 checksum:9dfdd2c7d8
 d4 2
 a5 2
-! Last modified: Thu, 29 Aug 2024 19:19:25 +0000
-! Diff-Path: ../patches/2024.8.29.1159.patch#ruadlist
+! Last modified: Fri, 30 Aug 2024 01:44:21 +0000
+! Diff-Path: ../patches/2024.8.30.104.patch#ruadlist
 d13847 1
 a13847 1
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .post > ._post_content > .PostHeader > .PostHeaderInfo > .PostHeaderSubtitle > .PostHeaderSubtitle__item:-abp-contains(/Community ad|Реклама |Рэклама | жарнама/))
@@ -17,13 +17,13 @@ d21706 1
 a21706 1
 ||pikabu.ru/*?say=$xmlhttprequest,domain=pikabu.ru
 d22812 1
-a22812 1
-dzen.ru##div[class*=" card-with-ad__"]
+a22818 1
+dzen.ru##div[class*="card-with-ad__"]
 a25879 1
 ||vsthouse.ru/a-detector/
-d26990 1
-a26990 1
-playground.ru###foundationWrapper:style(background: #999999 !important; padding-top: 0 !important)
+d26988 4
+a26996 1
+playground.ru##body:style(background: #242424 !important)
 d27681 1
 a27681 1
 mail.ru##body > .zeropixel ~ div > style ~ div:style(pointer-events: none !important; opacity: 0 !important)
