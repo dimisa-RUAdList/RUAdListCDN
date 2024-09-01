@@ -1,8 +1,8 @@
-diff name:ruadlist lines:21 checksum:8235478176
+diff name:ruadlist lines:28 checksum:b605e98cde
 d4 2
 a5 2
-! Last modified: Sun, 01 Sep 2024 12:41:07 +0000
-! Diff-Path: ../patches/2024.9.1.761.patch#ruadlist
+! Last modified: Sun, 01 Sep 2024 17:21:02 +0000
+! Diff-Path: ../patches/2024.9.1.1041.patch#ruadlist
 a2056 1
 ||firrycandour.com^$third-party
 d10200 1
@@ -14,9 +14,16 @@ a11629 2
 d13848 1
 a13849 1
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] > ._post_content .PostHeader > .PostHeaderInfo > .PostHeaderSubtitle span ~ span ~ span ~ span ~ span)
+a20243 1
+mentoday.ru,novochag.ru,pravilamag.ru,techinsider.ru,thesymbol.ru,thevoicemag.ru##div[class*="billboard"]
 a20711 1
 informator.ua##div[id][style="min-height:400px"]
 a26310 2
 dtf.ru,vc.ru##html:style(--layout-header-height-large: 60px !important)
 ! ---
+a26820 3
+mentoday.ru,techinsider.ru,thevoicemag.ru##.preview-section .vertical-video__loader
+mentoday.ru,techinsider.ru,thevoicemag.ru##.preview-section .vertical-video__play-icon-wrapper:style(display: unset !important)
+! ---
+d27258 3
 d28117 1
