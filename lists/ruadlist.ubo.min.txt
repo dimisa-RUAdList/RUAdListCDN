@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 05 Sep 2024 06:32:06 +0000
-! Diff-Path: ../patches/2024.9.5.392.patch#ruadlist
+! Last modified: Thu, 05 Sep 2024 11:20:19 +0000
+! Diff-Path: ../patches/2024.9.5.680.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10755,6 +10755,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||allsat.biz/ban_
 ||alogvinov.com/skinning_
 ||alogvinov.com^*_top.jpg|
+||alphapedia.ru/action/action.php
 ||altai4u.com/wp-content/themes/$object
 ||altgazeta.ru/modules/mod_bgbanner/
 ||am.cdnmob.org/_/img/youtube-bg$image
@@ -14653,7 +14654,6 @@ filmitorrent.site###torrents ~ center
 filmitorrent.net,utorr.cc###torrents ~ div[align="center"]
 3mp3.ru###trance
 starve.io###trevda
-alphapedia.ru###tt
 cikavosti.com###tvukrnet
 shophelp.ru#?##twocol center:-abp-has(> div[style] [src="//an.yandex.ru/system/context.js"])
 forum.ixbt.com###uLogin
@@ -19207,7 +19207,6 @@ trupornolabs.org##a[href*="://pronpic.org/"]
 2gis.by,2gis.kz,2gis.ru##a[href*="://redirect.2gis.com/adv/"]
 helpsetup.ru##a[href*="://reduction.helpsetup.ru/"]
 second.by,tut.by##a[href*="://reklama.tut.by/"]
-alphapedia.ru##a[href*="://rfnd.io/"]
 robloro.ru##a[href*="://robloro.ru/reklama"]
 1istochnik.ru##a[href*="://rostoknadache.ru"] > img
 prostomob.com##a[href*="://s.zbanx.com/r/"]
@@ -22820,6 +22819,7 @@ dzen.ru##div[class*="_rightAdWrapper"]
 dzen.ru##div[class*="_topBannerContainer"]
 dzen.ru##div[class*="card-widh-ad_"]
 dzen.ru##div[class*="card-with-ad__"]
+dzen.ru##div[class*="piacehoder"]:empty
 dzen.ru##div[class*="tsar__container"]
 dzen.ru##div[class^="advert-panel"]
 dzen.ru##div[class^="floor-card-rtb_"]
@@ -25243,7 +25243,7 @@ xn--112-5cd3baof9c5c.xn--p1ai#@#.wrapad
 @@||mangalbbq.ru/upload/$image,domain=mangalbbq.ru
 @@||map.cn.ua/media/*/tur/
 @@||maxcdn.bootstrapcdn.com^$script,domain=gwss.ru|lgotivam.ru|rvb.ru|vsedeserti.ru
-@@||mc.yandex.ru/metrika/tag.js$domain=lk.rt.ru|rutube.ru|shokoladki.ru
+@@||mc.yandex.ru/metrika/tag.js$domain=lk.rt.ru|shokoladki.ru
 @@||mc.yandex.ru^$domain=gosuslugi.ru|mos.ru|mosreg.ru|nalog.lk|nalog.ru|trudvsem.ru
 @@||media.ndv.ru/banners^$domain=ndv.ru
 @@||medianetworkinternational.com/js/advertisement.js$script,domain=realstream.space|sport247.live|sport365.live
@@ -25718,7 +25718,7 @@ yandex.*#@#.search-snippet-view:has(span.search-advert-badge__advert)
 @@||www3.doubleclick.net/|$xmlhttprequest,domain=animix.lol
 @@||xksqb.com/native.$script,domain=gwss.ru
 @@||xn--b1ajehof.xn--80asehdb^$script,domain=xn--b1ajehof.xn--80asehdb
-@@||yandex.ru/ads/system/adsdk.js$script,domain=aniboom.one|gisher.org|karaoke.ru|kino.tricolor.tv|limehd.tv|m24.ru|peers.tv|player.mediavitrina.ru
+@@||yandex.ru/ads/system/adsdk.js$script,domain=aniboom.one|gisher.org|karaoke.ru|kino.tricolor.tv|limehd.tv|m24.ru|peers.tv|player.mediavitrina.ru|rutube.ru
 @@||yandex.ru/ads/system/context.js|$domain=examenpdd.com|forum.qrz.ru|yvid.ru
 @@||yandex.ru/ads/system/context.js|$script,domain=tvzvezda.ru
 @@||yandex.ru/ads/system/context.js|$xmlhttprequest,domain=ai-next.ru|blackwot.ru|reshu.by|reshuent.kz|reshuolymp.ru|sdamgia.ru|sports.ru|strategium.ru
@@ -25763,6 +25763,7 @@ zhurnaly.biz#@#.item-ads
 ! - hide & block
 pornhub.com###abAlert
 d3ward.github.io###ad_ctd
+seolik.ru###alert_top_site
 tvvse.my1.ru###cont-i > span[style*="color:red"]
 fast-fiml.ru,fast-torrent.club,fast-torrent.ru,fast-torrent.su,filmpotok.ru,kinomuch.ru,nebeda.net,pickfilm.ru,veleto.ru,vixim.ru###container > center:nth-child(-n+3)
 fm-app.ru,tvapp.su,yootv.ru###content > div[style*="fixed"]
@@ -25850,7 +25851,6 @@ anime-free.ru,pastebin.com,primpogoda.ru##body > div[id]:not([class])[style="dis
 fashion2news.com,hotallnews.today,newspad.ru##body > div[id][class]
 24pdd.ru#?#body > div[id][class]:-abp-has(> div[id][class] [class^="adblock"])
 kurs.com.ua,ontvtime.ru,skidkaonline.ru,ternopillive.com##body > div[style*="background-color:"][style*="z-index:"]
-seolik.ru##body > div[style^="background-color:"]
 gsm.in.ua##body > div[style^="background:"][style*="display: block"]
 ritsatv.ru##body > marquee[style*="red"]
 motorpage.ru##body.noscroll::before
@@ -27148,6 +27148,8 @@ senior.ua##.mfp-content:style(background-color: #ddd !important)
 senior.ua##.mfp-wrap:style(position: unset !important)
 senior.ua##.subscribe-popup
 senior.ua##html:style(overflow: auto !important)
+! ---
+seolik.ru##body > div[style^="background-color:"]:style(height: unset !important)
 ! ---
 shaiba.kz##.page-layout-without-banner:style(margin-top: 0 !important)
 ! ---
