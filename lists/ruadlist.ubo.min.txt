@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 05 Sep 2024 16:29:54 +0000
-! Diff-Path: ../patches/2024.9.5.989.patch#ruadlist
+! Last modified: Thu, 05 Sep 2024 21:22:06 +0000
+! Diff-Path: ../patches/2024.9.5.1282.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -145,7 +145,6 @@
 ||62.109.18.206^$third-party
 ||6598kn9gpf.ru^$third-party
 ||6c5xnntfvi.com^$third-party
-||6i7y3i.ru^$third-party
 ||6jfvnf69jx.ru^$third-party
 ||6rn05mmbct.ru^$third-party
 ||6t5n9h77m8.com^$third-party
@@ -1216,6 +1215,7 @@
 ||cobrand.ria.com^$third-party
 ||cocabollla.site^$third-party
 ||codata.ru^
+||code.*.ru/|$third-party,script
 ||code.roadvel.ru^$third-party
 ||codedome.online^$third-party
 ||codeextrarich.net^
@@ -10097,6 +10097,8 @@ agrarii-razom.com.ua##div[id^="user-to-register"]
 ||lektsia.info/js/services/boxBeforeClosingShare.js
 ||life.ru/_next/static/chunks/2793.
 ||linkis.com/ajax/get-popup-html$xmlhttprequest
+||litnet.com/common/*/confirm_age/
+||litnet.com/common/js/jquery.cookie.min.js
 ||live-hd.ru/fb24.htm
 ||mailget.net^$third-party
 ||makataka.ru/templates/Default/style/fancy/
@@ -21972,7 +21974,6 @@ mail.ru##.ph-project-promo-container
 ~e.mail.ru,mail.ru,~octavius.mail.ru##.stripe-wrapper
 ~e.mail.ru,mail.ru,~octavius.mail.ru##.tgb-wrapper
 ~e.mail.ru,mail.ru,~octavius.mail.ru##.zenad-card-rtb
-~e.mail.ru,mail.ru,~octavius.mail.ru##body[style="overflow: unset; max-height: unset;"] > div > style ~ div[id*="-"]
 ! Почта
 e.mail.ru,octavius.mail.ru###app-canvas .layout__overflow-container > .advert-column
 e.mail.ru,octavius.mail.ru###app-canvas .layout__overflow-container > .slot
@@ -27982,6 +27983,7 @@ fishki.net##+js(no-setTimeout-if, is_adblock)
 vseinstrumenti.ru##+js(no-setTimeout-if, removeJuristicNotification)
 testserver.pro##+js(no-setTimeout-if, saa)
 websdr.space##+js(no-setTimeout-if, setInterval, )
+litnet.com##+js(no-setTimeout-if, showDialogFeedbackTemplate)
 anime-chan.me##+js(no-setTimeout-if, sparkle)
 num-words.com,softportal.com##+js(no-setTimeout-if, toUTCString)
 liveinternet.ru##+js(no-xhr-if, /ad\.mail|adfox|adhigh|adriver|mc\.yandex|mediametrics|otm-r|static-mon/)
