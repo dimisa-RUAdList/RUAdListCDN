@@ -1,8 +1,8 @@
-diff name:ruadlist lines:67 checksum:ef53eb0068
+diff name:ruadlist lines:72 checksum:44eea541eb
 d4 2
 a5 2
-! Last modified: Fri, 06 Sep 2024 17:21:38 +0000
-! Diff-Path: ../patches/2024.9.6.1041.patch#ruadlist
+! Last modified: Fri, 06 Sep 2024 22:24:01 +0000
+! Diff-Path: ../patches/2024.9.6.1344.patch#ruadlist
 d148 1
 a1218 1
 ||code.*.ru/|$third-party,script
@@ -59,6 +59,11 @@ d25785 1
 d25800 1
 a25800 1
 allbasketball.org,dailymail.co.uk,fashion2news.com,hotallnews.today,ilenta.com,in-poland.com,kreschatic.kiev.ua,moyens.net,newspad.ru,pimpletv.ru,portaltele.com.ua,pravda.com.ua,tales.org.ua,ukranews.com,wormax.io,zazloo.ru##.fc-ab-root
+d26261 2
+a26262 3
+dorama.live##.block-content > .ageLimit
+dorama.live##.block-content > .ageLimit ~ .block-player:style(display: block !important)
+dorama.live##.block-content:style(min-height: unset !important)
 a27150 2
 seolik.ru##body > div[style^="background-color:"]:style(height: unset !important)
 ! ---
