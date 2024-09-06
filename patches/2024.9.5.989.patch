@@ -1,8 +1,8 @@
-diff name:ruadlist lines:13 checksum:f2fad79a2b
+diff name:ruadlist lines:13 checksum:ef53eb0068
 d4 2
 a5 2
-! Last modified: Fri, 06 Sep 2024 12:44:07 +0000
-! Diff-Path: ../patches/2024.9.6.764.patch#ruadlist
+! Last modified: Fri, 06 Sep 2024 17:21:38 +0000
+! Diff-Path: ../patches/2024.9.6.1041.patch#ruadlist
 d148 1
 a1218 1
 ||code.*.ru/|$third-party,script
@@ -10,5 +10,5 @@ a10099 2
 ||litnet.com/common/*/confirm_age/
 ||litnet.com/common/js/jquery.cookie.min.js
 d21975 1
-a27984 1
-litnet.com##+js(no-setTimeout-if, showDialogFeedbackTemplate)
+a27895 1
+litnet.com##+js(addEventListener-defuser, DOMContentLoaded, feedback)

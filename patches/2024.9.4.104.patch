@@ -1,8 +1,8 @@
-diff name:ruadlist lines:109 checksum:f2fad79a2b
+diff name:ruadlist lines:109 checksum:ef53eb0068
 d4 2
 a5 2
-! Last modified: Fri, 06 Sep 2024 12:44:07 +0000
-! Diff-Path: ../patches/2024.9.6.764.patch#ruadlist
+! Last modified: Fri, 06 Sep 2024 17:21:38 +0000
+! Diff-Path: ../patches/2024.9.6.1041.patch#ruadlist
 d148 1
 a1218 1
 ||code.*.ru/|$third-party,script
@@ -104,7 +104,7 @@ allbasketball.org,dailymail.co.uk,fashion2news.com,hotallnews.today,ilenta.com,i
 a27158 2
 seolik.ru##body > div[style^="background-color:"]:style(height: unset !important)
 ! ---
-a27991 1
-litnet.com##+js(no-setTimeout-if, showDialogFeedbackTemplate)
+a27902 1
+litnet.com##+js(addEventListener-defuser, DOMContentLoaded, feedback)
 a28040 1
 rutube.ru##+js(set-constant, Object.prototype.advert, undefined)
