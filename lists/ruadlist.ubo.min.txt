@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 08 Sep 2024 14:23:05 +0000
-! Diff-Path: ../patches/2024.9.8.863.patch#ruadlist
+! Last modified: Sun, 08 Sep 2024 19:18:34 +0000
+! Diff-Path: ../patches/2024.9.8.1158.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -9929,6 +9929,7 @@ pdalife.ru##.b-popup
 vashgorod.ru##.c-popup
 games-two.su##.ckf-box
 riafan.ru##.cookie-agreement-wrapper
+litnet.com##.cookies-w
 crimezone.in.ua##.custom-modal
 jurnalu.ru##.demo
 rufonts.ru##.elementor-popup-modal
@@ -10097,7 +10098,6 @@ agrarii-razom.com.ua##div[id^="user-to-register"]
 ||life.ru/_next/static/chunks/2793.
 ||linkis.com/ajax/get-popup-html$xmlhttprequest
 ||litnet.com/common/*/confirm_age/
-||litnet.com/common/js/jquery.cookie.min.js
 ||live-hd.ru/fb24.htm
 ||mailget.net^$third-party
 ||makataka.ru/templates/Default/style/fancy/
@@ -21963,7 +21963,7 @@ mail.ru##.ph-project-promo-container
 ~e.mail.ru,mail.ru,sportmail.ru##[data-rb-slot]
 ~e.mail.ru,mail.ru,sportmail.ru##[data-view^="Slot"][data-adq-id]
 ~e.mail.ru,mail.ru,sportmail.ru##a[class^="rb-"][href^="https://r.mail.ru/"][target="_blank"]
-~e.mail.ru,mail.ru,sportmail.ru#?#aside div[style^="min-height:"][data-hideorder]:first-child:-abp-has(> [data-rb-slot])
+~e.mail.ru,mail.ru,sportmail.ru##aside div[style^="min-height:"][data-hideorder]:first-child:not(:only-child)
 ~e.mail.ru,mail.ru,sportmail.ru##div[class*="rb-slot_plug"]
 ~e.mail.ru,mail.ru,sportmail.ru##div[data-closewrap-container]
 ~dobro.mail.ru,~e.mail.ru,mail.ru,sportmail.ru##table > tbody > tr > td:first-child + td + td:last-child
@@ -25485,6 +25485,7 @@ xn--112-5cd3baof9c5c.xn--p1ai#@#.wrapad
 @@||web-shpargalka.ru/antibot8/static/peel.js$script,domain=web-shpargalka.ru
 @@||wow-bfa.com^*/images/share-$image,domain=wow-bfa.com
 @@||www.gmod-fan.ru/$script,domain=gmod-fan.ru
+@@||www.googletagmanager.com/gtag/js?id=$script,domain=recordrussia.ru
 @@||www.khl.ru/bitrix/templates/*/js/cookieconsent.min.js|$script,domain=www.khl.ru
 @@||www.kinopoisk.ru^**/discovery/*&embedId=$subdocument,domain=www.kinopoisk.ru
 @@||www.kinopoisk.ru^**/dist/embed.html?frameId=$subdocument,domain=www.kinopoisk.ru
