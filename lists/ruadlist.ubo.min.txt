@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 11 Sep 2024 07:21:32 +0000
-! Diff-Path: ../patches/2024.9.11.441.patch#ruadlist
+! Last modified: Wed, 11 Sep 2024 12:46:33 +0000
+! Diff-Path: ../patches/2024.9.11.766.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -17381,6 +17381,7 @@ infotechnica.ru##.ppoibrorzf
 professionali.ru##.pr-banner-wrap
 newkaliningrad.ru##.pr-side-240
 bst.bratsk.ru##.preloadBannerSizer
+gencit.info##.preloadText
 megaresheba.ru##.preloading
 isport.ua##.premium-desk
 wowhead.com##.premium-promo-row
@@ -21707,7 +21708,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 !||www.liveinternet.ru/users/$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/cgi-bin/rpls.fcgi?list= https://www.liveinternet.ru/spell/spell.js https://www.liveinternet.ru/share/js/share.js https://www.liveinternet.ru/4Ek/JS/diary/main/nav/regoradd.js https://www.liveinternet.ru/4Ek/JS/diary/trans.js
 !||www.liveinternet.ru/|$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/utf/lici.js https://www.liveinternet.ru/utf/li.js https://www.liveinternet.ru/utf/main_new.js
 ! Pikabu (ловушка для обфускации)
-||pikabu.ru/*%*.*=*?*=$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/*%*.*?*=$xmlhttprequest,domain=pikabu.ru
 ! селекторы
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
@@ -27798,6 +27799,7 @@ e1.ru,nova.rambler.ru,pikabu.ru##+js(abort-on-property-read, Object.prototype.lo
 gismeteo.by,gismeteo.kz,gismeteo.ru##+js(abort-on-property-read, Object.prototype.scriptsViaXhr)
 drive2.ru,razlozhi.ru##+js(abort-on-property-read, Object.prototype.yaContextCb)
 f1comp.ru,tagaev.com,times.zt.ua##+js(abort-on-property-read, PUM.getPopup)
+gencit.info##+js(abort-on-property-read, Radish)
 sinoptik.ua##+js(abort-on-property-read, SIN.AdsLoader)
 porngames.su,rintor.info,rintor.net##+js(abort-on-property-read, TotemToolsObject)
 castle-tv.com##+js(abort-on-property-read, WebSocket)
