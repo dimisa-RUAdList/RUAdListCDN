@@ -1,14 +1,26 @@
-diff name:ruadlist lines:13 checksum:d45e0dc53f
+diff name:ruadlist lines:25 checksum:99c46b4f85
 d4 2
 a5 2
-! Last modified: Thu, 12 Sep 2024 18:32:21 +0000
-! Diff-Path: ../patches/2024.9.12.1112.patch#ruadlist
+! Last modified: Thu, 12 Sep 2024 23:24:40 +0000
+! Diff-Path: ../patches/2024.9.12.1404.patch#ruadlist
 d21714 1
 a21714 1
 ||pikabu.ru/*.*=*?*=$xmlhttprequest,domain=pikabu.ru
-a22180 2
+d22181 1
+a22181 2
+! частные
 fanserial.fun,fanserialstv.net##.article-aside-promo a[href][target="_blank"]
+d22183 1
+a22184 5
+! общие
 ##.article-aside-promo a[href][target="_blank"]
+##.flex-promo-series > .left-col > :not(#players):not(.serial-series-info)
+##.flex-promo-series > .right-col a[href][target="_blank"]
+! запросы
 d22699 1
 a22699 1
 ya.ru##.i-mini-bem[class*="banner"]
+d27949 1
+a28199 1
+fanserial.fun,fanserialstv.net,hdrezka.*,rezka.*##+js(set-constant, Object.prototype.preroll, undefined)
+d28201 1

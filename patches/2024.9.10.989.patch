@@ -1,8 +1,8 @@
-diff name:ruadlist lines:41 checksum:d45e0dc53f
+diff name:ruadlist lines:45 checksum:99c46b4f85
 d4 2
 a5 2
-! Last modified: Thu, 12 Sep 2024 18:32:21 +0000
-! Diff-Path: ../patches/2024.9.12.1112.patch#ruadlist
+! Last modified: Thu, 12 Sep 2024 23:24:40 +0000
+! Diff-Path: ../patches/2024.9.12.1404.patch#ruadlist
 d14827 1
 a14827 1
 agravery.com,babla.ru,clickthis.blog,cont.ws,dumskaya.net,filehippo.com,geekmir.ru,ifun.ru,inform-ua.info,kinda.media,klops.ru,liga.net,lookmeet.tv,mmovote.ru,myshared.ru,news.pn,obsuzhday.com,pik.net.ua,primpogoda.ru,prostopleer.com,regmarkets.ru,riavrn.ru,tut.by,ukranews.com,vgolos.ua,vogue.ru,vz.ru,zaks.ru##.ad
@@ -18,14 +18,17 @@ d21710 1
 a21710 1
 ||pikabu.ru/*.*=*?*=$xmlhttprequest,domain=pikabu.ru
 d22176 1
-a22176 3
+a22176 7
 ! зеркала MySeria.NET https://vk.com/myserianet
+! частные
 fanserial.fun,fanserialstv.net##.article-aside-promo a[href][target="_blank"]
-##.article-aside-promo a[href][target="_blank"]
-a22177 5
 fanserial.fun,fanserialstv.net##.flex-promo-series > .left-col > :not(#players):not(.serial-series-info)
-##.flex-promo-series > .right-col a[href][target="_blank"]
 fanserial.fun,fanserialstv.net##.flex-promo-series > .right-col a[href][target="_blank"]
+! общие
+##.article-aside-promo a[href][target="_blank"]
+a22177 4
+##.flex-promo-series > .right-col a[href][target="_blank"]
+! запросы
 .xml?rand=$domain=fanserial.fun|fanserialstv.net
 @@||v*.plrjs.org/*.xml?rand=$xmlhttprequest,domain=fanserial.fun|fanserialstv.net
 d22690 1
@@ -36,7 +39,8 @@ repack.me##main > .container:style(padding-top: 0 !important; margin-top: 0 !imp
 ! ---
 a27800 1
 gencit.info##+js(abort-on-property-read, Radish)
-a27936 1
-fanserial.fun,fanserialstv.net##+js(json-prune, *.preroll)
+a28186 1
+fanserial.fun,fanserialstv.net,hdrezka.*,rezka.*##+js(set-constant, Object.prototype.preroll, undefined)
+d28188 1
 a28239 1
 ||v*.plrjs.org/*.xml$important,xmlhttprequest,redirect=noopvast-3.0

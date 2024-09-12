@@ -1,8 +1,8 @@
-diff name:ruadlist lines:34 checksum:d45e0dc53f
+diff name:ruadlist lines:38 checksum:99c46b4f85
 d4 2
 a5 2
-! Last modified: Thu, 12 Sep 2024 18:32:21 +0000
-! Diff-Path: ../patches/2024.9.12.1112.patch#ruadlist
+! Last modified: Thu, 12 Sep 2024 23:24:40 +0000
+! Diff-Path: ../patches/2024.9.12.1404.patch#ruadlist
 a17223 1
 repack.me#?#.panel-primary:-abp-has(> .panel-body[style="padding: 20px;"] a[href*="aeza."])
 a19243 1
@@ -13,14 +13,17 @@ d21711 1
 a21711 1
 ||pikabu.ru/*.*=*?*=$xmlhttprequest,domain=pikabu.ru
 d22177 1
-a22177 3
+a22177 7
 ! зеркала MySeria.NET https://vk.com/myserianet
+! частные
 fanserial.fun,fanserialstv.net##.article-aside-promo a[href][target="_blank"]
-##.article-aside-promo a[href][target="_blank"]
-a22178 5
 fanserial.fun,fanserialstv.net##.flex-promo-series > .left-col > :not(#players):not(.serial-series-info)
-##.flex-promo-series > .right-col a[href][target="_blank"]
 fanserial.fun,fanserialstv.net##.flex-promo-series > .right-col a[href][target="_blank"]
+! общие
+##.article-aside-promo a[href][target="_blank"]
+a22178 4
+##.flex-promo-series > .right-col a[href][target="_blank"]
+! запросы
 .xml?rand=$domain=fanserial.fun|fanserialstv.net
 @@||v*.plrjs.org/*.xml?rand=$xmlhttprequest,domain=fanserial.fun|fanserialstv.net
 d22691 1
@@ -29,7 +32,8 @@ ya.ru##.i-mini-bem[class*="banner"]
 a27082 2
 repack.me##main > .container:style(padding-top: 0 !important; margin-top: 0 !important)
 ! ---
-a27938 1
-fanserial.fun,fanserialstv.net##+js(json-prune, *.preroll)
+a28188 1
+fanserial.fun,fanserialstv.net,hdrezka.*,rezka.*##+js(set-constant, Object.prototype.preroll, undefined)
+d28190 1
 a28241 1
 ||v*.plrjs.org/*.xml$important,xmlhttprequest,redirect=noopvast-3.0
