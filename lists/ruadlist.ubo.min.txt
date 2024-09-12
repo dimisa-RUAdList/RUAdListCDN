@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 12 Sep 2024 13:28:33 +0000
-! Diff-Path: ../patches/2024.9.12.808.patch#ruadlist
+! Last modified: Thu, 12 Sep 2024 18:32:21 +0000
+! Diff-Path: ../patches/2024.9.12.1112.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21711,7 +21711,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 !||www.liveinternet.ru/users/$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/cgi-bin/rpls.fcgi?list= https://www.liveinternet.ru/spell/spell.js https://www.liveinternet.ru/share/js/share.js https://www.liveinternet.ru/4Ek/JS/diary/main/nav/regoradd.js https://www.liveinternet.ru/4Ek/JS/diary/trans.js
 !||www.liveinternet.ru/|$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/utf/lici.js https://www.liveinternet.ru/utf/li.js https://www.liveinternet.ru/utf/main_new.js
 ! Pikabu (ловушка для обфускации)
-||pikabu.ru/*%*.*?*=$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/*.*=*?*=$xmlhttprequest,domain=pikabu.ru
 ! селекторы
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
@@ -22178,6 +22178,8 @@ mirtesen.ru##[id^="unit_"]
 ~mirtesen.ru,~smi2.ru##a[href*="://smi2.ru/newdata/news?ad="]
 ~smi2.ru##a[href*="://smi2.ru/newdata/news?ad="] *
 ! зеркала MySeria.NET https://vk.com/myserianet
+fanserial.fun,fanserialstv.net##.article-aside-promo a[href][target="_blank"]
+##.article-aside-promo a[href][target="_blank"]
 ##.flex-promo-series > .left-col > :not(#players):not(.serial-series-info)
 fanserial.fun,fanserialstv.net##.flex-promo-series > .left-col > :not(#players):not(.serial-series-info)
 ##.flex-promo-series > .right-col a[href][target="_blank"]
@@ -22696,7 +22698,7 @@ yandex.by,yandex.kz,yandex.ru,yandex.uz##.i-bem.b-timetable__row[onclick*="awaps
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.i-bem.stripe_type_promo
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.i-bem.tv-grid__item-adv
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.i-bem.tv-sortable-item.tv-sortable-item_sortable_no
-ya.ru##.i-mini-bem.banner
+ya.ru##.i-mini-bem[class*="banner"]
 ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.layout__banner
 market.yandex.by,market.yandex.kz,market.yandex.ru##.layout_type_search.headline__footer
 ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.main__distr-popup
