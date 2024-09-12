@@ -1,8 +1,8 @@
-diff name:ruadlist lines:37 checksum:d9fddfe889
+diff name:ruadlist lines:50 checksum:aad8d62514
 d4 2
 a5 2
-! Last modified: Thu, 12 Sep 2024 08:28:52 +0000
-! Diff-Path: ../patches/2024.9.12.508.patch#ruadlist
+! Last modified: Thu, 12 Sep 2024 13:28:33 +0000
+! Diff-Path: ../patches/2024.9.12.808.patch#ruadlist
 a9400 1
 ||yandex.ru/an/count/$popup
 a9931 1
@@ -27,6 +27,15 @@ a21708 1
 d21966 1
 a21966 1
 ~e.mail.ru,mail.ru,sportmail.ru##aside div[style^="min-height:"][data-hideorder]:first-child:not(:only-child)
+d22174 1
+a22174 1
+! зеркала MySeria.NET https://vk.com/myserianet
+a22175 5
+fanserial.fun,fanserialstv.net##.flex-promo-series > .left-col > :not(#players):not(.serial-series-info)
+##.flex-promo-series > .right-col a[href][target="_blank"]
+fanserial.fun,fanserialstv.net##.flex-promo-series > .right-col a[href][target="_blank"]
+.xml?rand=$domain=fanserial.fun|fanserialstv.net
+@@||v*.plrjs.org/*.xml?rand=$xmlhttprequest,domain=fanserial.fun|fanserialstv.net
 a25487 1
 @@||www.googletagmanager.com/gtag/js?id=$script,domain=recordrussia.ru
 a27078 2
@@ -36,3 +45,7 @@ a27554 1
 ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.b-page[style*="padding-right:"]:style(overflow-y: auto !important; padding-right: 0 !important)
 a27796 1
 gencit.info##+js(abort-on-property-read, Radish)
+a27932 1
+fanserial.fun,fanserialstv.net##+js(json-prune, *.preroll)
+a28235 1
+||v*.plrjs.org/*.xml$important,xmlhttprequest,redirect=noopvast-3.0

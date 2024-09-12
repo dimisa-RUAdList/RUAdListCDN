@@ -1,8 +1,8 @@
-diff name:ruadlist lines:29 checksum:d9fddfe889
+diff name:ruadlist lines:42 checksum:aad8d62514
 d4 2
 a5 2
-! Last modified: Thu, 12 Sep 2024 08:28:52 +0000
-! Diff-Path: ../patches/2024.9.12.508.patch#ruadlist
+! Last modified: Thu, 12 Sep 2024 13:28:33 +0000
+! Diff-Path: ../patches/2024.9.12.808.patch#ruadlist
 a9400 1
 ||yandex.ru/an/count/$popup
 a11110 1
@@ -21,6 +21,15 @@ repack.me##a[href="/download"]
 d21708 1
 a21708 1
 ||pikabu.ru/*%*.*?*=$xmlhttprequest,domain=pikabu.ru
+d22174 1
+a22174 1
+! зеркала MySeria.NET https://vk.com/myserianet
+a22175 5
+fanserial.fun,fanserialstv.net##.flex-promo-series > .left-col > :not(#players):not(.serial-series-info)
+##.flex-promo-series > .right-col a[href][target="_blank"]
+fanserial.fun,fanserialstv.net##.flex-promo-series > .right-col a[href][target="_blank"]
+.xml?rand=$domain=fanserial.fun|fanserialstv.net
+@@||v*.plrjs.org/*.xml?rand=$xmlhttprequest,domain=fanserial.fun|fanserialstv.net
 a27079 2
 repack.me##main > .container:style(padding-top: 0 !important; margin-top: 0 !important)
 ! ---
@@ -28,3 +37,7 @@ a27555 1
 ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.b-page[style*="padding-right:"]:style(overflow-y: auto !important; padding-right: 0 !important)
 a27797 1
 gencit.info##+js(abort-on-property-read, Radish)
+a27933 1
+fanserial.fun,fanserialstv.net##+js(json-prune, *.preroll)
+a28236 1
+||v*.plrjs.org/*.xml$important,xmlhttprequest,redirect=noopvast-3.0
