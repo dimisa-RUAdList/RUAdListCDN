@@ -1,8 +1,8 @@
-diff name:ruadlist lines:47 checksum:44377c2c79
+diff name:ruadlist lines:49 checksum:b72decd923
 d4 2
 a5 2
-! Last modified: Fri, 13 Sep 2024 04:27:27 +0000
-! Diff-Path: ../patches/2024.9.13.267.patch#ruadlist
+! Last modified: Fri, 13 Sep 2024 09:24:35 +0000
+! Diff-Path: ../patches/2024.9.13.564.patch#ruadlist
 a9400 1
 ||yandex.ru/an/count/$popup
 d14826 1
@@ -31,7 +31,7 @@ fanserial.fun,fanserialstv.net##.flex-promo-series > .right-col a[href][target="
 a22176 4
 ##.flex-promo-series > .right-col a[href][target="_blank"]
 ! запросы
-.xml?rand=$domain=fanserial.fun|fanserialstv.net
+/player/fan.xml$domain=fanserial.fun|fanserialstv.net
 @@||v*.plrjs.org/*.xml?rand=$xmlhttprequest,domain=fanserial.fun|fanserialstv.net
 d22689 1
 a22689 1
@@ -44,5 +44,7 @@ gencit.info##+js(abort-on-property-read, Radish)
 a28185 1
 fanserial.fun,fanserialstv.net,hdrezka.*,rezka.*##+js(set-constant, Object.prototype.preroll, undefined)
 d28187 1
-a28238 1
+a28372 3
+!#endif
+!#if !env_firefox
 ||v*.plrjs.org/*.xml$important,xmlhttprequest,redirect=noopvast-3.0
