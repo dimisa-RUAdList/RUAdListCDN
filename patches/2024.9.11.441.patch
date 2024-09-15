@@ -1,10 +1,14 @@
-diff name:ruadlist lines:60 checksum:663ab6edd8
+diff name:ruadlist lines:76 checksum:472f5242a0
 d4 2
 a5 2
-! Last modified: Sun, 15 Sep 2024 06:31:32 +0000
-! Diff-Path: ../patches/2024.9.15.391.patch#ruadlist
+! Last modified: Sun, 15 Sep 2024 11:18:22 +0000
+! Diff-Path: ../patches/2024.9.15.678.patch#ruadlist
 a13617 1
 winitpro.ru###banner_registrator
+a15177 1
+edadeal.ru##.b-dsk-hero-ads-banner
+a17064 1
+onliner.by##.news-promo:not([style="background-color: #FFF5EE;"])
 a17223 1
 repack.me#?#.panel-primary:-abp-has(> .panel-body[style="padding: 20px;"] a[href*="aeza."])
 a17383 1
@@ -21,6 +25,13 @@ d21710 1
 a21710 2
 ||pikabu.ru/*.*=*?*=$xmlhttprequest,domain=pikabu.ru
 ||pikabu.ru/*~*?*=$xmlhttprequest,domain=pikabu.ru
+a21715 1
+dzen.ru##.ya__link
+d21727 1
+a21727 1
+dzen.ru##[data_name]
+a21738 1
+dzen.ru#?#div:-abp-has(> .ya__link)
 a21988 1
 e.mail.ru,octavius.mail.ru##span[style*="--sidebar-column-width:"] > div:empty
 d22176 1
@@ -47,9 +58,14 @@ d22261 3
 d22690 1
 a22690 1
 ya.ru##.i-mini-bem[class*="banner"]
+a22824 1
+dzen.ru##div[class*="widget"] > div[class*="container"] > div ~ div
+a22885 1
+/*yqppel=$popup,domain=dzen.ru
 a27081 2
 repack.me##main > .container:style(padding-top: 0 !important; margin-top: 0 !important)
 ! ---
+d27483 1
 a27800 1
 gencit.info##+js(abort-on-property-read, Radish)
 a28186 1
