@@ -1,8 +1,10 @@
-diff name:ruadlist lines:37 checksum:473ab29a2e
+diff name:ruadlist lines:41 checksum:bd5ed72869
 d4 2
 a5 2
-! Last modified: Mon, 16 Sep 2024 07:22:34 +0000
-! Diff-Path: ../patches/2024.9.16.442.patch#ruadlist
+! Last modified: Mon, 16 Sep 2024 12:48:07 +0000
+! Diff-Path: ../patches/2024.9.16.768.patch#ruadlist
+a8074 1
+/wcm/?sh=$third-party,script
 a13617 1
 winitpro.ru###banner_registrator
 a15177 1
@@ -13,15 +15,16 @@ a18101 1
 winitpro.ru##.targetHolder
 a19885 1
 winitpro.ru##aside > .block-search + .block-search + .block-search
-a21714 1
+a21714 2
+||pikabu.ru/*:*?*=$xmlhttprequest,domain=pikabu.ru
 ||pikabu.ru/*~*?*=$xmlhttprequest,domain=pikabu.ru
-a21719 1
-dzen.ru##.ya__link
+a21722 1
+dzen.ru##[class*="ya"][class*="__link"]
 d21731 1
 a21731 1
 dzen.ru##[data_name]
 a21742 1
-dzen.ru#?#div:-abp-has(> .ya__link)
+dzen.ru#?#div:-abp-has(> [class*="ya"][class*="__link"])
 a21992 1
 e.mail.ru,octavius.mail.ru##span[style*="--sidebar-column-width:"] > div:empty
 d22221 1
@@ -33,6 +36,7 @@ d22236 1
 d22275 3
 a22838 1
 dzen.ru##div[class*="widget"] > div[class*="container"] > div ~ div
-a22899 1
+a22899 2
 /*yqppel=$popup,domain=dzen.ru
+/*yqqpel=$popup,domain=dzen.ru
 d27499 1
