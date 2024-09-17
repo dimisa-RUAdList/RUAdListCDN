@@ -1,8 +1,8 @@
-diff name:ruadlist lines:44 checksum:36265c19e5
+diff name:ruadlist lines:46 checksum:e81215e372
 d4 2
 a5 2
-! Last modified: Tue, 17 Sep 2024 13:29:01 +0000
-! Diff-Path: ../patches/2024.9.17.809.patch#ruadlist
+! Last modified: Tue, 17 Sep 2024 18:31:48 +0000
+! Diff-Path: ../patches/2024.9.17.1111.patch#ruadlist
 a8074 1
 /wcm/?sh=$third-party,script
 a10926 1
@@ -34,6 +34,8 @@ a21735 1
 dzen.ru##a[href^="https://dzen.ru/"][class$="__link"] [class] > [class] > [class] > [class]
 a21993 1
 e.mail.ru,octavius.mail.ru##span[style*="--sidebar-column-width:"] > div:empty
+a22826 1
+dzen.ru#?#article:-abp-has(> div:first-child + div > div[id]:empty)
 a22836 1
 dzen.ru##div[class*="widget"] > div[class*="container"] > div ~ div
 a22897 3
