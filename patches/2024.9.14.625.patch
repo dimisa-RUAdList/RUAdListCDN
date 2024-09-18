@@ -1,14 +1,16 @@
-diff name:ruadlist lines:58 checksum:4f8d31332f
+diff name:ruadlist lines:79 checksum:6a6b61be32
 d4 2
 a5 2
-! Last modified: Wed, 18 Sep 2024 04:28:42 +0000
-! Diff-Path: ../patches/2024.9.18.268.patch#ruadlist
+! Last modified: Wed, 18 Sep 2024 09:26:33 +0000
+! Diff-Path: ../patches/2024.9.18.566.patch#ruadlist
 a8074 1
 /wcm/?sh=$third-party,script
 a10926 1
 ||bb.lv/js/gam.js
 a13617 1
 winitpro.ru###banner_registrator
+d14825 1
+d15027 1
 a15177 1
 edadeal.ru##.b-dsk-hero-ads-banner
 d15454 1
@@ -18,35 +20,53 @@ a15550 1
 thelastupd.org#?#.block_down:-abp-has(> .itemdown_nottorent_sub)
 a15859 1
 ukrfootball.ua##.colum_widget_block_pp
+d16259 1
+a16912 1
+pb.wtf,piratbit.fun,piratbit.org,piratbit.top##.menu > li.top_menu ~ li:not(.top_menu )
 a17064 1
 onliner.by##.news-promo:not([style="background-color: #FFF5EE;"])
 a17892 1
 gitflic.ru##.sidebar__banner
+d18093 1
 a18101 1
 winitpro.ru##.targetHolder
+a18437 1
+pb.wtf,piratbit.fun,piratbit.org,piratbit.top#?#.war_item:-abp-has(> .war_img > a[href*="exaccess"])
+a19292 1
+pb.wtf,piratbit.fun,piratbit.org,piratbit.top##a[href*="exaccess"]
+d19839 1
 a19885 1
 winitpro.ru##aside > .block-search + .block-search + .block-search
 a19912 1
 ukrfootball.ua#?#aside > section:-abp-has(> .colum_widget_block_pp)
+a20978 1
+pb.wtf,piratbit.fun,piratbit.org,piratbit.top##div[style="background: #a94442;padding: 5px;font-size: 16px;"]
 a21692 1
 ://pikabu.ru/$csp=connect-src https://pikabu.ru/ajax/ https://pikabu.ru/ajax.php *.pikabu.ru/ data: https://pikabu.ru/.well-known/
 d21714 2
 a21715 1
 ||pikabu.ru/*:*?*=$xmlhttprequest,domain=pikabu.ru
+d21724 1
 a21724 1
-dzen.ru#?#[class]:-abp-has(> a[href^="https://dzen.ru/"][class$="__link"] [class] > [class] > [class] > [class])
+dzen.ru#?#[class]:-abp-has(> a[href^="https://dzen.ru/"]:not([class*="tabContent"]) [class] > [class] > [class] > [class])
 d21731 2
 a21732 2
 dzen.ru,liveinternet.ru##[data-wrapper]
 dzen.ru##[data_name]
+d21735 1
 a21735 1
-dzen.ru##a[href^="https://dzen.ru/"][class$="__link"] [class] > [class] > [class] > [class]
+dzen.ru##a[href^="https://dzen.ru/"]:not([class*="tabContent"]) [class] > [class] > [class] > [class]
 a21993 1
 e.mail.ru,octavius.mail.ru##span[style*="--sidebar-column-width:"] > div:empty
+a22413 2
+avtorambler.com,rambler.ru##div[style="min-height: 600px;"] ~ div
+avtorambler.com,rambler.ru##div[style="min-height:600px"] ~ div
 a22826 1
 dzen.ru#?#article:-abp-has(> div:first-child + div > div[id]:empty)
 a22836 1
 dzen.ru##div[class*="widget"] > div[class*="container"] > div ~ div
+a22895 1
+/*ypqqel=$popup,domain=dzen.ru
 a22897 3
 /*yqppel=$popup,domain=dzen.ru
 /*yqqpel=$popup,domain=dzen.ru
@@ -57,3 +77,4 @@ bb.lv##+js(abort-on-property-read, adjustBackground)
 d28022 1
 a28022 1
 afisha.ru,byruthub.org,film.ru,filmpro.ru,thelastupd.org##+js(remove-attr, autoplay|loop, video, stay)
+d28163 1

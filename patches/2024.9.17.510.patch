@@ -1,8 +1,10 @@
-diff name:ruadlist lines:26 checksum:4f8d31332f
+diff name:ruadlist lines:46 checksum:6a6b61be32
 d4 2
 a5 2
-! Last modified: Wed, 18 Sep 2024 04:28:42 +0000
-! Diff-Path: ../patches/2024.9.18.268.patch#ruadlist
+! Last modified: Wed, 18 Sep 2024 09:26:33 +0000
+! Diff-Path: ../patches/2024.9.18.566.patch#ruadlist
+d14828 1
+d15030 1
 d15458 1
 a15458 1
 zbirna.com##.best_game_sec
@@ -10,18 +12,36 @@ a15554 1
 thelastupd.org#?#.block_down:-abp-has(> .itemdown_nottorent_sub)
 a15863 1
 ukrfootball.ua##.colum_widget_block_pp
+d16263 1
+a16916 1
+pb.wtf,piratbit.fun,piratbit.org,piratbit.top##.menu > li.top_menu ~ li:not(.top_menu )
+d18099 1
+a18444 1
+pb.wtf,piratbit.fun,piratbit.org,piratbit.top#?#.war_item:-abp-has(> .war_img > a[href*="exaccess"])
+a19299 1
+pb.wtf,piratbit.fun,piratbit.org,piratbit.top##a[href*="exaccess"]
+d19846 1
 a19920 1
 ukrfootball.ua#?#aside > section:-abp-has(> .colum_widget_block_pp)
-d21732 1
+a20986 1
+pb.wtf,piratbit.fun,piratbit.org,piratbit.top##div[style="background: #a94442;padding: 5px;font-size: 16px;"]
+d21732 2
 a21733 1
-dzen.ru#?#[class]:-abp-has(> a[href^="https://dzen.ru/"][class$="__link"] [class] > [class] > [class] > [class])
+dzen.ru#?#[class]:-abp-has(> a[href^="https://dzen.ru/"]:not([class*="tabContent"]) [class] > [class] > [class] > [class])
+d21744 1
 a21744 1
-dzen.ru##a[href^="https://dzen.ru/"][class$="__link"] [class] > [class] > [class] > [class]
+dzen.ru##a[href^="https://dzen.ru/"]:not([class*="tabContent"]) [class] > [class] > [class] > [class]
 d21753 1
+a22424 2
+avtorambler.com,rambler.ru##div[style="min-height: 600px;"] ~ div
+avtorambler.com,rambler.ru##div[style="min-height:600px"] ~ div
 a22837 1
 dzen.ru#?#article:-abp-has(> div:first-child + div > div[id]:empty)
+a22907 1
+/*ypqqel=$popup,domain=dzen.ru
 a22911 1
 /*yqqqel=$popup,domain=dzen.ru
 d28036 1
 a28036 1
 afisha.ru,byruthub.org,film.ru,filmpro.ru,thelastupd.org##+js(remove-attr, autoplay|loop, video, stay)
+d28177 1
