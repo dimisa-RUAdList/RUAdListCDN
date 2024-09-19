@@ -1,8 +1,8 @@
-diff name:ruadlist lines:81 checksum:0c5b80be1f
+diff name:ruadlist lines:84 checksum:37fa05502c
 d4 2
 a5 2
-! Last modified: Thu, 19 Sep 2024 15:26:02 +0000
-! Diff-Path: ../patches/2024.9.19.926.patch#ruadlist
+! Last modified: Thu, 19 Sep 2024 20:24:52 +0000
+! Diff-Path: ../patches/2024.9.19.1224.patch#ruadlist
 a8074 1
 /wcm/?sh=$third-party,script
 a10151 1
@@ -48,13 +48,13 @@ a21720 1
 d21726 1
 d21730 2
 a21731 1
-dzen.ru#?#[class]:-abp-has(> a[href^="https://dzen.ru/"][class*="super_"] [class] > [class] > [class] > [class])
+dzen.ru#?#[class]:-abp-has(> a[href^="https://dzen.ru/"][class*="super"] [class] > [class] > [class] > [class])
 d21737 1
 a21737 1
 dzen.ru,liveinternet.ru##[data-wrapper]
 d21741 1
 a21741 1
-dzen.ru#?#a[href^="https://dzen.ru/"][class*="super_"] [class] > [class] > [class] > [class]
+dzen.ru#?#a[href^="https://dzen.ru/"][class*="super"] [class] > [class] > [class] > [class]
 d21750 1
 a22421 2
 avtorambler.com,rambler.ru##div[style="min-height: 600px;"] ~ div
@@ -63,8 +63,9 @@ a22834 3
 dzen.ru##a[href*="://t.mail.ru/redir/"]
 dzen.ru##article > div:first-child + div:not(:last-child)
 dzen.ru##article > div:first-child + div:not(:last-child) + div:last-child
-a22864 1
+a22864 2
 /*y*el=$popup,domain=dzen.ru
+/*y*le=$popup,domain=dzen.ru
 d22904 1
 d22907 1
 a27502 1
@@ -80,3 +81,5 @@ d28172 1
 d28178 1
 a28178 1
 dzen.ru##:matches-path(/articles) div:matches-attr("/data/"="article-showcase-card"):has(> article > div:first-child)
+a28205 1
+volyn.com.ua##body:remove-attr(/oncopy|onselectstart|oncontextmenu/)

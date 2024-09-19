@@ -1,8 +1,8 @@
-diff name:ruadlist lines:35 checksum:0c5b80be1f
+diff name:ruadlist lines:38 checksum:37fa05502c
 d4 2
 a5 2
-! Last modified: Thu, 19 Sep 2024 15:26:02 +0000
-! Diff-Path: ../patches/2024.9.19.926.patch#ruadlist
+! Last modified: Thu, 19 Sep 2024 20:24:52 +0000
+! Diff-Path: ../patches/2024.9.19.1224.patch#ruadlist
 a10152 1
 $csp=script-src-attr 'none',domain=volyn.com.ua
 d13788 1
@@ -14,17 +14,18 @@ interfax.ru##.toplogo__advertisement-wrap
 d18794 1
 d21734 2
 a21735 1
-dzen.ru#?#[class]:-abp-has(> a[href^="https://dzen.ru/"][class*="super_"] [class] > [class] > [class] > [class])
+dzen.ru#?#[class]:-abp-has(> a[href^="https://dzen.ru/"][class*="super"] [class] > [class] > [class] > [class])
 d21745 1
 a21745 1
-dzen.ru#?#a[href^="https://dzen.ru/"][class*="super_"] [class] > [class] > [class] > [class]
+dzen.ru#?#a[href^="https://dzen.ru/"][class*="super"] [class] > [class] > [class] > [class]
 d22840 1
 a22840 3
 dzen.ru##a[href*="://t.mail.ru/redir/"]
 dzen.ru##article > div:first-child + div:not(:last-child)
 dzen.ru##article > div:first-child + div:not(:last-child) + div:last-child
-a22870 1
+a22870 2
 /*y*el=$popup,domain=dzen.ru
+/*y*le=$popup,domain=dzen.ru
 d22910 2
 d22914 3
 a27511 1
@@ -34,3 +35,5 @@ d27518 2
 d28187 1
 a28187 1
 dzen.ru##:matches-path(/articles) div:matches-attr("/data/"="article-showcase-card"):has(> article > div:first-child)
+a28214 1
+volyn.com.ua##body:remove-attr(/oncopy|onselectstart|oncontextmenu/)

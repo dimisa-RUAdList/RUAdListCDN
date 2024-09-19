@@ -1,8 +1,8 @@
-diff name:ruadlist lines:64 checksum:0c5b80be1f
+diff name:ruadlist lines:67 checksum:37fa05502c
 d4 2
 a5 2
-! Last modified: Thu, 19 Sep 2024 15:26:02 +0000
-! Diff-Path: ../patches/2024.9.19.926.patch#ruadlist
+! Last modified: Thu, 19 Sep 2024 20:24:52 +0000
+! Diff-Path: ../patches/2024.9.19.1224.patch#ruadlist
 a10152 1
 $csp=script-src-attr 'none',domain=volyn.com.ua
 d13788 1
@@ -36,10 +36,10 @@ a20986 1
 pb.wtf,piratbit.fun,piratbit.org,piratbit.top##div[style="background: #a94442;padding: 5px;font-size: 16px;"]
 d21732 3
 a21734 1
-dzen.ru#?#[class]:-abp-has(> a[href^="https://dzen.ru/"][class*="super_"] [class] > [class] > [class] > [class])
+dzen.ru#?#[class]:-abp-has(> a[href^="https://dzen.ru/"][class*="super"] [class] > [class] > [class] > [class])
 d21744 2
 a21745 1
-dzen.ru#?#a[href^="https://dzen.ru/"][class*="super_"] [class] > [class] > [class] > [class]
+dzen.ru#?#a[href^="https://dzen.ru/"][class*="super"] [class] > [class] > [class] > [class]
 a22424 2
 avtorambler.com,rambler.ru##div[style="min-height: 600px;"] ~ div
 avtorambler.com,rambler.ru##div[style="min-height:600px"] ~ div
@@ -48,8 +48,9 @@ a22838 3
 dzen.ru##a[href*="://t.mail.ru/redir/"]
 dzen.ru##article > div:first-child + div:not(:last-child)
 dzen.ru##article > div:first-child + div:not(:last-child) + div:last-child
-a22868 1
+a22868 2
 /*y*el=$popup,domain=dzen.ru
+/*y*le=$popup,domain=dzen.ru
 d22908 1
 d22911 3
 a27508 1
@@ -63,3 +64,5 @@ d28179 1
 d28185 1
 a28185 1
 dzen.ru##:matches-path(/articles) div:matches-attr("/data/"="article-showcase-card"):has(> article > div:first-child)
+a28212 1
+volyn.com.ua##body:remove-attr(/oncopy|onselectstart|oncontextmenu/)
