@@ -1,8 +1,8 @@
-diff name:ruadlist lines:43 checksum:7250227118
+diff name:ruadlist lines:46 checksum:103ecd824d
 d4 2
 a5 2
-! Last modified: Wed, 18 Sep 2024 19:20:36 +0000
-! Diff-Path: ../patches/2024.9.18.1160.patch#ruadlist
+! Last modified: Thu, 19 Sep 2024 01:47:44 +0000
+! Diff-Path: ../patches/2024.9.19.107.patch#ruadlist
 d14828 1
 d15030 1
 d15458 1
@@ -27,17 +27,20 @@ a20986 1
 pb.wtf,piratbit.fun,piratbit.org,piratbit.top##div[style="background: #a94442;padding: 5px;font-size: 16px;"]
 d21732 2
 a21733 1
-dzen.ru#?#[class]:-abp-has(> a[href^="https://dzen.ru/"]:not([class*="tabContent"]) [class] > [class] > [class] > [class])
+dzen.ru#?#[class]:-abp-has(> a[href^="https://dzen.ru/"] [class] [data-asset-click])
 d21744 2
 a21745 1
-dzen.ru##a[href^="https://dzen.ru/"]:not([class*="tabContent"]) [class] > [class] > [class] > [class]
+dzen.ru##a[href^="https://dzen.ru/"] [class] [data-asset-click]
 a22424 2
 avtorambler.com,rambler.ru##div[style="min-height: 600px;"] ~ div
 avtorambler.com,rambler.ru##div[style="min-height:600px"] ~ div
 a22837 1
 dzen.ru#?#article:-abp-has(> div:first-child + div > div[id]:empty)
-a22907 1
-/*ypqqel=$popup,domain=dzen.ru
+d22907 1
+a22907 2
+/*yp*el=$popup,domain=dzen.ru
+/*yq*el=$popup,domain=dzen.ru
+d22910 3
 d28037 1
 a28037 1
 afisha.ru,byruthub.org,film.ru,filmpro.ru,thelastupd.org##+js(remove-attr, autoplay|loop, video, stay)

@@ -1,8 +1,8 @@
-diff name:ruadlist lines:64 checksum:7250227118
+diff name:ruadlist lines:64 checksum:103ecd824d
 d4 2
 a5 2
-! Last modified: Wed, 18 Sep 2024 19:20:36 +0000
-! Diff-Path: ../patches/2024.9.18.1160.patch#ruadlist
+! Last modified: Thu, 19 Sep 2024 01:47:44 +0000
+! Diff-Path: ../patches/2024.9.19.107.patch#ruadlist
 a8074 1
 /wcm/?sh=$third-party,script
 a10926 1
@@ -39,24 +39,24 @@ a21720 1
 d21726 1
 d21730 1
 a21730 1
-dzen.ru#?#[class]:-abp-has(> a[href^="https://dzen.ru/"]:not([class*="tabContent"]) [class] > [class] > [class] > [class])
+dzen.ru#?#[class]:-abp-has(> a[href^="https://dzen.ru/"] [class] [data-asset-click])
 d21737 1
 a21737 1
 dzen.ru,liveinternet.ru##[data-wrapper]
 d21741 1
 a21741 1
-dzen.ru##a[href^="https://dzen.ru/"]:not([class*="tabContent"]) [class] > [class] > [class] > [class]
+dzen.ru##a[href^="https://dzen.ru/"] [class] [data-asset-click]
 d21750 1
 a22421 2
 avtorambler.com,rambler.ru##div[style="min-height: 600px;"] ~ div
 avtorambler.com,rambler.ru##div[style="min-height:600px"] ~ div
 a22834 1
 dzen.ru#?#article:-abp-has(> div:first-child + div > div[id]:empty)
-a22904 1
-/*ypqqel=$popup,domain=dzen.ru
-a22907 2
-/*yqqpel=$popup,domain=dzen.ru
-/*yqqqel=$popup,domain=dzen.ru
+d22904 1
+a22904 2
+/*yp*el=$popup,domain=dzen.ru
+/*yq*el=$popup,domain=dzen.ru
+d22907 1
 a27835 1
 bb.lv##+js(abort-on-property-read, adjustBackground)
 d28031 1
