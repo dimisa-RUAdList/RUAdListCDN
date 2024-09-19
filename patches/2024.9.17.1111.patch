@@ -1,8 +1,11 @@
-diff name:ruadlist lines:44 checksum:643580c51c
+diff name:ruadlist lines:64 checksum:0c5b80be1f
 d4 2
 a5 2
-! Last modified: Thu, 19 Sep 2024 10:27:53 +0000
-! Diff-Path: ../patches/2024.9.19.627.patch#ruadlist
+! Last modified: Thu, 19 Sep 2024 15:26:02 +0000
+! Diff-Path: ../patches/2024.9.19.926.patch#ruadlist
+a10152 1
+$csp=script-src-attr 'none',domain=volyn.com.ua
+d13788 1
 d14828 1
 d15030 1
 d15458 1
@@ -13,11 +16,17 @@ thelastupd.org#?#.block_down:-abp-has(> .itemdown_nottorent_sub)
 a15863 1
 ukrfootball.ua##.colum_widget_block_pp
 d16263 1
+a16359 1
+volyn.com.ua##.gpt-main
+d16862 1
 a16916 1
 pb.wtf,piratbit.fun,piratbit.org,piratbit.top##.menu > li.top_menu ~ li:not(.top_menu )
 d18099 1
+a18305 1
+interfax.ru##.toplogo__advertisement-wrap
 a18444 1
 pb.wtf,piratbit.fun,piratbit.org,piratbit.top#?#.war_item:-abp-has(> .war_img > a[href*="exaccess"])
+d18794 1
 a19299 1
 pb.wtf,piratbit.fun,piratbit.org,piratbit.top##a[href*="exaccess"]
 d19846 1
@@ -25,21 +34,32 @@ a19920 1
 ukrfootball.ua#?#aside > section:-abp-has(> .colum_widget_block_pp)
 a20986 1
 pb.wtf,piratbit.fun,piratbit.org,piratbit.top##div[style="background: #a94442;padding: 5px;font-size: 16px;"]
-d21732 2
-a21733 1
-dzen.ru#?#[class]:-abp-has(> a[href^="https://dzen.ru/"] [class] [data-asset-click])
+d21732 3
+a21734 1
+dzen.ru#?#[class]:-abp-has(> a[href^="https://dzen.ru/"][class*="super_"] [class] > [class] > [class] > [class])
 d21744 2
 a21745 1
-dzen.ru##a[href^="https://dzen.ru/"] [class] [data-asset-click]
+dzen.ru#?#a[href^="https://dzen.ru/"][class*="super_"] [class] > [class] > [class] > [class]
 a22424 2
 avtorambler.com,rambler.ru##div[style="min-height: 600px;"] ~ div
 avtorambler.com,rambler.ru##div[style="min-height:600px"] ~ div
+d22838 1
+a22838 3
+dzen.ru##a[href*="://t.mail.ru/redir/"]
+dzen.ru##article > div:first-child + div:not(:last-child)
+dzen.ru##article > div:first-child + div:not(:last-child) + div:last-child
+a22868 1
+/*y*el=$popup,domain=dzen.ru
 d22908 1
-a22908 2
-/*yp*el=$popup,domain=dzen.ru
-/*yq*el=$popup,domain=dzen.ru
 d22911 3
+a27508 1
+dzen.ru##div[aria-label="Заголовок этажа"] ~ article[class^="dzen-desktop"] ~ article:not([class^="dzen-desktop"])
+d27511 1
+d27515 2
 d28038 1
 a28038 1
 afisha.ru,byruthub.org,film.ru,filmpro.ru,thelastupd.org##+js(remove-attr, autoplay|loop, video, stay)
 d28179 1
+d28185 1
+a28185 1
+dzen.ru##:matches-path(/articles) div:matches-attr("/data/"="article-showcase-card"):has(> article > div:first-child)
