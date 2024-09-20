@@ -1,8 +1,8 @@
-diff name:ruadlist lines:29 checksum:be0e3c5b6b
+diff name:ruadlist lines:36 checksum:47cac5218a
 d4 2
 a5 2
-! Last modified: Fri, 20 Sep 2024 11:20:23 +0000
-! Diff-Path: ../patches/2024.9.20.680.patch#ruadlist
+! Last modified: Fri, 20 Sep 2024 16:30:27 +0000
+! Diff-Path: ../patches/2024.9.20.990.patch#ruadlist
 d15752 1
 a18769 1
 shuba.life##[class^="c-banner"]
@@ -16,15 +16,22 @@ a19857 1
 24tv.ua,lux.fm##app-adv-video-placeholder
 d21734 1
 a21734 1
-dzen.ru#?#[class]:-abp-has(> a[href^="https://dzen.ru/"][class*="_link"][class*="_tabContent"] [class] > [class] > [class] > [class])
+dzen.ru#?#[class]:-abp-has(> a[href^="https://dzen.ru/"][class*="_link"][class*="tabContent"] [class] > [class] > [class] > [class])
 d21744 1
 a21744 1
-dzen.ru##a[href^="https://dzen.ru/"][class*="_link"][class*="_tabContent"] [class] > [class] > [class] > [class]
+dzen.ru##a[href^="https://dzen.ru/"][class*="_link"][class*="tabContent"] [class] > [class] > [class] > [class]
+a22836 1
+dzen.ru##[class^="dzen-desktop--top-micro-app__widget-"] [class^="dzen-desktop--top-micro-app"]
+a22841 2
+dzen.ru##article > span:first-child
+dzen.ru#?#article:-abp-has(> span:first-child)
 d22852 1
-a22853 1
-dzen.ru##div[class^="dzen-desktop--header-widgets"] div[class^="dzen-desktop--top-micro-app"]
-a22872 2
+a22872 3
+/*y*il=$popup,domain=dzen.ru
 /*y*le=$popup,domain=dzen.ru
 /*y*li=$popup,domain=dzen.ru
+d28182 1
+a28182 1
+dzen.ru##:matches-path(/articles) div:matches-attr("/data/"="article-showcase-card"):has(> article > div > [class*="image"]:empty)
 a28209 1
 volyn.com.ua##body:remove-attr(/oncopy|onselectstart|oncontextmenu/)
