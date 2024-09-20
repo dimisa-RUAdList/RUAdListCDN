@@ -1,8 +1,8 @@
-diff name:ruadlist lines:34 checksum:47cac5218a
+diff name:ruadlist lines:37 checksum:61697a4119
 d4 2
 a5 2
-! Last modified: Fri, 20 Sep 2024 16:30:27 +0000
-! Diff-Path: ../patches/2024.9.20.990.patch#ruadlist
+! Last modified: Fri, 20 Sep 2024 21:22:06 +0000
+! Diff-Path: ../patches/2024.9.20.1282.patch#ruadlist
 d15752 1
 a18769 1
 shuba.life##[class^="c-banner"]
@@ -23,8 +23,11 @@ dzen.ru##a[href^="https://dzen.ru/"][class*="_link"][class*="tabContent"] [class
 a22836 1
 dzen.ru##[class^="dzen-desktop--top-micro-app__widget-"] [class^="dzen-desktop--top-micro-app"]
 a22841 2
-dzen.ru##article > span:first-child
-dzen.ru#?#article:-abp-has(> span:first-child)
+dzen.ru##article > span:first-child + div:not(:last-child)
+dzen.ru##article > span:first-child + div:not(:last-child) + div:last-child
+d22850 1
+a22850 1
+dzen.ru##div[class*="placehoder"]:empty
 d22852 1
 a22872 1
 /*y*il=$popup,domain=dzen.ru

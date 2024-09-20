@@ -1,8 +1,8 @@
-diff name:ruadlist lines:85 checksum:47cac5218a
+diff name:ruadlist lines:88 checksum:61697a4119
 d4 2
 a5 2
-! Last modified: Fri, 20 Sep 2024 16:30:27 +0000
-! Diff-Path: ../patches/2024.9.20.990.patch#ruadlist
+! Last modified: Fri, 20 Sep 2024 21:22:06 +0000
+! Diff-Path: ../patches/2024.9.20.1282.patch#ruadlist
 a10152 1
 $csp=script-src-attr 'none',domain=volyn.com.ua
 d13788 1
@@ -61,8 +61,11 @@ a22838 5
 dzen.ru##a[href*="://t.mail.ru/redir/"]
 dzen.ru##article > div:first-child + div:not(:last-child)
 dzen.ru##article > div:first-child + div:not(:last-child) + div:last-child
-dzen.ru##article > span:first-child
-dzen.ru#?#article:-abp-has(> span:first-child)
+dzen.ru##article > span:first-child + div:not(:last-child)
+dzen.ru##article > span:first-child + div:not(:last-child) + div:last-child
+d22847 1
+a22847 1
+dzen.ru##div[class*="placehoder"]:empty
 d22849 1
 a22868 4
 /*y*el=$popup,domain=dzen.ru
