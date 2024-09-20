@@ -1,8 +1,8 @@
-diff name:ruadlist lines:84 checksum:41a39ffe13
+diff name:ruadlist lines:99 checksum:be0e3c5b6b
 d4 2
 a5 2
-! Last modified: Fri, 20 Sep 2024 06:33:08 +0000
-! Diff-Path: ../patches/2024.9.20.393.patch#ruadlist
+! Last modified: Fri, 20 Sep 2024 11:20:23 +0000
+! Diff-Path: ../patches/2024.9.20.680.patch#ruadlist
 a8074 1
 /wcm/?sh=$third-party,script
 a10151 1
@@ -17,6 +17,7 @@ a15456 1
 zbirna.com##.best_game_sec
 a15552 1
 thelastupd.org#?#.block_down:-abp-has(> .itemdown_nottorent_sub)
+d15751 1
 a15861 1
 ukrfootball.ua##.colum_widget_block_pp
 d16261 1
@@ -32,10 +33,20 @@ a18302 1
 interfax.ru##.toplogo__advertisement-wrap
 a18441 1
 pb.wtf,piratbit.fun,piratbit.org,piratbit.top#?#.war_item:-abp-has(> .war_img > a[href*="exaccess"])
+a18765 1
+shuba.life##[class^="c-banner"]
 d18791 1
+a18870 1
+dom.ru#?#[data-test="custom-wrapper"]:-abp-has(> div > [href*="movix.ru/"])
 a19296 1
 pb.wtf,piratbit.fun,piratbit.org,piratbit.top##a[href*="exaccess"]
 d19843 1
+d19852 1
+a19852 1
+24tv.ua,lux.fm##app-adv-placeholder
+d19854 1
+a19854 1
+24tv.ua,lux.fm##app-adv-video-placeholder
 a19917 1
 ukrfootball.ua#?#aside > section:-abp-has(> .colum_widget_block_pp)
 a20983 1
@@ -48,13 +59,13 @@ a21720 1
 d21726 1
 d21730 2
 a21731 1
-dzen.ru#?#[class]:-abp-has(> a[href^="https://dzen.ru/"][class*="super"] [class] > [class] > [class] > [class])
+dzen.ru#?#[class]:-abp-has(> a[href^="https://dzen.ru/"][class*="_link"][class*="_tabContent"] [class] > [class] > [class] > [class])
 d21737 1
 a21737 1
 dzen.ru,liveinternet.ru##[data-wrapper]
 d21741 1
 a21741 1
-dzen.ru#?#a[href^="https://dzen.ru/"][class*="super"] [class] > [class] > [class] > [class]
+dzen.ru##a[href^="https://dzen.ru/"][class*="_link"][class*="_tabContent"] [class] > [class] > [class] > [class]
 d21750 1
 a22421 2
 avtorambler.com,rambler.ru##div[style="min-height: 600px;"] ~ div
@@ -63,9 +74,13 @@ a22834 3
 dzen.ru##a[href*="://t.mail.ru/redir/"]
 dzen.ru##article > div:first-child + div:not(:last-child)
 dzen.ru##article > div:first-child + div:not(:last-child) + div:last-child
-a22864 2
+d22845 1
+a22846 1
+dzen.ru##div[class^="dzen-desktop--header-widgets"] div[class^="dzen-desktop--top-micro-app"]
+a22864 3
 /*y*el=$popup,domain=dzen.ru
 /*y*le=$popup,domain=dzen.ru
+/*y*li=$popup,domain=dzen.ru
 d22904 1
 d22907 1
 a27502 1
