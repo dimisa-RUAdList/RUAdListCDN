@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 21 Sep 2024 12:41:56 +0000
-! Diff-Path: ../patches/2024.9.21.761.patch#ruadlist
+! Last modified: Sat, 21 Sep 2024 17:24:24 +0000
+! Diff-Path: ../patches/2024.9.21.1044.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21722,13 +21722,10 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 !||www.liveinternet.ru/top/$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/main_new_1251.js
 !||www.liveinternet.ru/users/$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/cgi-bin/rpls.fcgi?list= https://www.liveinternet.ru/spell/spell.js https://www.liveinternet.ru/share/js/share.js https://www.liveinternet.ru/4Ek/JS/diary/main/nav/regoradd.js https://www.liveinternet.ru/4Ek/JS/diary/trans.js
 !||www.liveinternet.ru/|$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/utf/lici.js https://www.liveinternet.ru/utf/li.js https://www.liveinternet.ru/utf/main_new.js
-! Pikabu (ловушка для обфускации)
-||pikabu.ru/*:*?*=$xmlhttprequest,domain=pikabu.ru
 ! селекторы
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(/min-height: 20.px|min-height: 29.px|min-height: 30.px|min-height: 300./))
-pikabu.ru#?#.story__header:-abp-has(> div:empty)
 fonmod.com,howdyho.net,howdyho.pro,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 android-mafia.com,game4you.top,games-pc.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##:not(this-site-promotes-malware)
 @@||ozon.ru/highlight/kursk-$elemhide
@@ -21759,7 +21756,7 @@ pogoda.onliner.by,tech.onliner.by##div[class*="_fixed-height"]
 pikabu.ru#?#div[class*="page-story__"] div:-abp-properties(/min-height: [02345]{2}[0-9]{1}|min-height: calc.|min-height: .+.(cm|in|lh|mm|pt)|height: 250px/)
 pikabu.ru##div[class*="page-story__"] div[style=""]
 sdamgia.ru##div[class^="google_ad_left"]
-liveinternet.ru,pikabu.ru,sdamgia.ru##div[data-name="adWrapper"]
+liveinternet.ru,sdamgia.ru##div[data-name="adWrapper"]
 rg.ru##div[id][class*="__"]:empty
 sdamgia.ru##div[id^="yandex_vario"]
 liveinternet.ru##div[style*="!important; "]
@@ -22854,6 +22851,7 @@ dzen.ru##div[class*="card-with-ad__"]
 dzen.ru##div[class*="placehoder"]:empty
 dzen.ru##div[class*="tsar__container"]
 dzen.ru##div[class^="advert-panel"]
+dzen.ru##div[class^="content--news-tsar"]
 dzen.ru##div[class^="floor-card-rtb_"]
 dzen.ru##div[class^="floor-skeleton-card__skeletonCardWrapper"]
 dzen.ru#?#div[class^="grid__row-"]:-abp-has(> div[class^="video-card-ad"])
@@ -27891,6 +27889,7 @@ kolizhanka.com.ua##+js(abort-on-property-read, nocontext)
 it-actual.ru##+js(abort-on-property-read, onload)
 freehat.cc,hlamer.ru,lostpix.com,potokcdn.com,prostoporno.help,saltday.ru,uploadimagex.com,wowskill.ru,xittv.net##+js(abort-on-property-read, open)
 sm.news##+js(abort-on-property-read, preventSelection)
+sibnet.ru##+js(abort-on-property-read, rtpon)
 zab.ru##+js(abort-on-property-read, scrollw)
 tapochek.net##+js(abort-on-property-read, setsnow)
 anime-chan.me##+js(abort-on-property-read, sparkle)
@@ -27930,7 +27929,6 @@ biqle.org,biqle.ru##+js(addEventListener-defuser, /click|mousedown/, popunder)
 autonews.co.ua,in-poland.com,liveball.cc,liveball.uno,ukrainianwall.com##+js(addEventListener-defuser, /contextmenu|copy|keydown|selectstart/)
 fm-app.ru,tvapp.su,yootv.ru##+js(addEventListener-defuser, /mouse/, cursorVisible)
 ~id.rambler.ru,rambler.ru,~vp.rambler.ru##+js(addEventListener-defuser, DOMContentLoaded, .j-mini-player__video)
-sibnet.ru##+js(addEventListener-defuser, DOMContentLoaded, /smartweek/)
 sports.ru##+js(addEventListener-defuser, DOMContentLoaded, 0x)
 cq.ru##+js(addEventListener-defuser, DOMContentLoaded, banners)
 litnet.com##+js(addEventListener-defuser, DOMContentLoaded, feedback)

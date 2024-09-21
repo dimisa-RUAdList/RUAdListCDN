@@ -1,8 +1,8 @@
-diff name:ruadlist lines:76 checksum:a80faaac39
+diff name:ruadlist lines:86 checksum:83d1968ca4
 d4 2
 a5 2
-! Last modified: Sat, 21 Sep 2024 12:41:56 +0000
-! Diff-Path: ../patches/2024.9.21.761.patch#ruadlist
+! Last modified: Sat, 21 Sep 2024 17:24:24 +0000
+! Diff-Path: ../patches/2024.9.21.1044.patch#ruadlist
 a10152 1
 $csp=script-src-attr 'none',domain=volyn.com.ua
 d13788 1
@@ -36,12 +36,17 @@ a19859 1
 24tv.ua,lux.fm##app-adv-video-placeholder
 a20989 1
 pb.wtf,piratbit.fun,piratbit.org,piratbit.top##div[style="background: #a94442;padding: 5px;font-size: 16px;"]
+d21725 2
+d21731 1
 d21735 3
 a21737 1
 dzen.ru#?#[class]:-abp-has(> a[href^="https://dzen.ru/"][class*="_link"][class*="tabContent"] [class] > [class] > [class] > [class])
 d21747 2
 a21748 1
 dzen.ru##a[href^="https://dzen.ru/"][class*="_link"][class*="tabContent"] [class] > [class] > [class] > [class]
+d21765 1
+a21765 1
+liveinternet.ru,sdamgia.ru##div[data-name="adWrapper"]
 a22427 2
 avtorambler.com,rambler.ru##div[style="min-height: 600px;"] ~ div
 avtorambler.com,rambler.ru##div[style="min-height:600px"] ~ div
@@ -58,6 +63,8 @@ d22850 1
 a22850 1
 dzen.ru##div[class*="placehoder"]:empty
 d22852 1
+a22853 1
+dzen.ru##div[class^="content--news-tsar"]
 a22871 4
 /*y*el=$popup,domain=dzen.ru
 /*y*il=$popup,domain=dzen.ru
@@ -69,6 +76,9 @@ a27511 1
 dzen.ru##div[aria-label="Заголовок этажа"] ~ article[class^="dzen-desktop"] ~ article:not([class^="dzen-desktop"])
 d27514 1
 d27518 2
+a27892 1
+sibnet.ru##+js(abort-on-property-read, rtpon)
+d27932 1
 d28182 1
 d28188 1
 a28188 1
