@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 23 Sep 2024 19:20:48 +0000
-! Diff-Path: ../patches/2024.9.23.1160.patch#ruadlist
+! Last modified: Tue, 24 Sep 2024 01:50:46 +0000
+! Diff-Path: ../patches/2024.9.24.110.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -6020,6 +6020,7 @@
 ||tl2fast.com^$third-party
 ||tl3fast.com^$third-party
 ||tldredenter.com^$third-party
+||tlgrm.click^$third-party
 ||tlr1.biz^$third-party
 ||tlxjuj.com^$third-party
 ||tm-79.com^
@@ -11028,6 +11029,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||cda.pl/xml_pool/*pool*.php$xmlhttprequest
 ||cdn.anison.fm/images$object
 ||cdn.banki.ru/*/widget-calculators$domain=banki.ru
+||cdn.botanichka.ru/pics/brand/
 ||cdn.gravitec.net/styles/unbloc*.png
 ||cdn.hsmedia.ru/dist/maxim/Product.
 ||cdn.hsmedia.ru/scrooge-client/hsm-creative-manager$script
@@ -11038,7 +11040,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||cdn.net.ru/config.js
 ||cdn.pljs.ru/*/*.xml|$xmlhttprequest
 ||cdn.pljs.ru/b|$xmlhttprequest
-||cdn.taboola.com/libtrc/$domain=kg-portal.ru|newsru.com|zahav.ru
+||cdn.taboola.com/libtrc/$domain=fontanka.ru|kg-portal.ru|newsru.com|zahav.ru
 ||cdn.taboola.com/libtrc/disqus-russia-network/loader.js
 ||cdn.viqeo.tv/*/vq_fly_widget.js
 ||cdn.viqeo.tv^$domain=baby.ru|liveinternet.ru|pay-day.ru|russian7.ru|solenka.info|spletnik.ru|teleprogramma.pro
@@ -11201,7 +11203,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||docplayer.ru/cloud/ads/
 ||dofiga.net^*/trade
 ||dokonlin.ru.com/js-connect-
-||domik.ua/*/region-banners/
+||domik.ua/*/region-banners/$domain=~forum.domik.ua
 ||domkino.kz/os.js
 ||domovita.by/js/adfox/
 ||domsnov.ru/underbanner/
@@ -15545,6 +15547,7 @@ sunsurv.ru##.blockBottom
 sunsurv.ru##.blockLeft
 znaikak.ru##.blockLinks
 news29.ru##.blockOverlay.blockUI
+forum.domik.ua##.blockProjects_post
 domik.ua##.blockProjects_stocksInNews
 sunsurv.ru##.blockRight
 programma-peredach.com##.blockSns
@@ -18114,7 +18117,8 @@ promebelclub.ru,xn----btbdkbsogebtjq6bm4g5b.xn--p1ai##.tborder[width="165"]
 wmforum.2bb.ru##.tclcon > noindex
 wmforum.2bb.ru##.tclcon > table[height="31"]
 oren.ru##.td-ad-background-link
-hs-manacost.ru,oren.ru##.td-banner-wrap-full
+botanichka.ru##.td-all-devices
+botanichka.ru,hs-manacost.ru,oren.ru##.td-banner-wrap-full
 allmmorpg.ru##.td-bnr-wrap-full
 vsviti.com.ua##.td-fix-index > a[href][target="_blank"]
 ani-mania.com##.td-for-blocks > .left-block[style]
@@ -20257,6 +20261,7 @@ mentoday.ru,novochag.ru,pravilamag.ru,techinsider.ru,thesymbol.ru,thevoicemag.ru
 gazetaby.com,gazetaby.info,gazetaby.media##div[class*="block-articles-"][class*="-native"]
 mamaplus.md##div[class*="block-mplus"]
 soccer.ru##div[class*="block-new-desine-"][class*="-bookmakers"]
+forum.domik.ua##div[class*="blockTAdvert"]
 ctv7.ru##div[class*="bnrs-block"]
 diabet-med.com##div[class*="boxzilla"]
 priluki.city##div[class*="bunner"]
@@ -26176,7 +26181,6 @@ bosch-home.ru##.cookielaw-modal-layer
 bosch-home.ru##body.cookielaw-blur-background > *:style(filter: none !important)
 bosch-home.ru##html > head ~ body:style(overflow-y: auto !important)
 ! ---
-botanichka.ru##.td-banner-wrap-full
 botanichka.ru##html > body > *:style(pointer-events: auto !important)
 botanichka.ru##html > body:style(background-image: none !important; pointer-events: none !important)
 ! ---
@@ -27889,7 +27893,6 @@ kolizhanka.com.ua##+js(abort-on-property-read, nocontext)
 it-actual.ru##+js(abort-on-property-read, onload)
 freehat.cc,hlamer.ru,lostpix.com,potokcdn.com,prostoporno.help,saltday.ru,uploadimagex.com,wowskill.ru,xittv.net##+js(abort-on-property-read, open)
 sm.news##+js(abort-on-property-read, preventSelection)
-sibnet.ru##+js(abort-on-property-read, rtpon)
 zab.ru##+js(abort-on-property-read, scrollw)
 tapochek.net##+js(abort-on-property-read, setsnow)
 anime-chan.me##+js(abort-on-property-read, sparkle)
@@ -27929,6 +27932,7 @@ biqle.org,biqle.ru##+js(addEventListener-defuser, /click|mousedown/, popunder)
 autonews.co.ua,in-poland.com,liveball.cc,liveball.uno,ukrainianwall.com##+js(addEventListener-defuser, /contextmenu|copy|keydown|selectstart/)
 fm-app.ru,tvapp.su,yootv.ru##+js(addEventListener-defuser, /mouse/, cursorVisible)
 ~id.rambler.ru,rambler.ru,~vp.rambler.ru##+js(addEventListener-defuser, DOMContentLoaded, .j-mini-player__video)
+sibnet.ru##+js(addEventListener-defuser, DOMContentLoaded, /pon-/)
 sports.ru##+js(addEventListener-defuser, DOMContentLoaded, 0x)
 cq.ru##+js(addEventListener-defuser, DOMContentLoaded, banners)
 litnet.com##+js(addEventListener-defuser, DOMContentLoaded, feedback)

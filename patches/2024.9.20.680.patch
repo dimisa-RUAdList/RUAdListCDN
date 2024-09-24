@@ -1,8 +1,26 @@
-diff name:ruadlist lines:38 checksum:0ad5058ecd
+diff name:ruadlist lines:57 checksum:6476d71e43
 d4 2
 a5 2
-! Last modified: Mon, 23 Sep 2024 19:20:48 +0000
-! Diff-Path: ../patches/2024.9.23.1160.patch#ruadlist
+! Last modified: Tue, 24 Sep 2024 01:50:46 +0000
+! Diff-Path: ../patches/2024.9.24.110.patch#ruadlist
+a6022 1
+||tlgrm.click^$third-party
+a11030 1
+||cdn.botanichka.ru/pics/brand/
+d11041 1
+a11041 1
+||cdn.taboola.com/libtrc/$domain=fontanka.ru|kg-portal.ru|newsru.com|zahav.ru
+d11204 1
+a11204 1
+||domik.ua/*/region-banners/$domain=~forum.domik.ua
+a15547 1
+forum.domik.ua##.blockProjects_post
+d18117 1
+a18117 2
+botanichka.ru##.td-all-devices
+botanichka.ru,hs-manacost.ru,oren.ru##.td-banner-wrap-full
+a20259 1
+forum.domik.ua##div[class*="blockTAdvert"]
 d21725 2
 d21731 1
 d21735 1
@@ -29,11 +47,12 @@ dzen.ru##div[class^="content--news-tsar"]
 a22873 2
 /*y*ii=$popup,domain=dzen.ru
 /*y*il=$popup,domain=dzen.ru
+d26179 1
 a27689 1
 mail.ru###user-settings-modal > .user-settings-container > .user-settings-types > .user-settings-types__item:first-child
-a27890 1
-sibnet.ru##+js(abort-on-property-read, rtpon)
 d27930 1
+a27930 1
+sibnet.ru##+js(addEventListener-defuser, DOMContentLoaded, /pon-/)
 d28185 1
 a28185 1
 dzen.ru##:matches-path(/articles) div:matches-attr("/data/"="article-showcase-card"):has(> article > div > [class*="image"]:empty)
