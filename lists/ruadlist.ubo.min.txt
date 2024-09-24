@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 24 Sep 2024 15:26:12 +0000
-! Diff-Path: ../patches/2024.9.24.926.patch#ruadlist
+! Last modified: Tue, 24 Sep 2024 20:26:28 +0000
+! Diff-Path: ../patches/2024.9.24.1226.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -6296,6 +6296,7 @@
 ||unclic.ru^$third-party
 ||under-click.ru^
 ||undere.com^
+||undersite.pages.dev^$third-party
 ||undrithadat.ru^$third-party
 ||undzbe.com^$third-party
 ||unfeaecmhszmsx.com^$third-party
@@ -8054,6 +8055,7 @@ _verified.php?code=*&server=runetki.com
 /uploads/slider/col$script
 /userfiles/banners/*
 /utarget.js
+/utarget_patched.js
 /utftizer.
 /vast.php?partner_id=$third-party,xmlhttprequest
 /vast.xml?key=
@@ -19175,6 +19177,7 @@ mixsoft.org,soccer24.top,sportlive365.net,zfilm-hd.org,zfilme-hd1.site,zserials.
 posudaa.ru##a[href*="/offer/"]
 profootball.ua##a[href*="/php/rotator/goto.php?id="]
 sakh.tv##a[href*="/promo/out/banner/"]
+shuba.life##a[href*="/purchase"][target="_blank"]
 flatfy.lun.ua##a[href*="/redirect-andromeda/"]
 soccer.ru##a[href*="/redirect.php?destination"]
 rubryka.com##a[href*="/reklama/"]
@@ -27513,12 +27516,12 @@ dzen.ru##[class*="desktop"] ~ [id*="teaser"]
 dzen.ru##[class^="card-part-wrapper"] ~ div[class=""]
 dzen.ru##[class^="dzen-desktop"] ~ div[id$="-popup"]
 dzen.ru##[data-testid="recommend-auth-popup"]
-dzen.ru##div[aria-label="Заголовок этажа"] ~ article[class^="dzen-desktop"] ~ article:not([class^="dzen-desktop"])
 dzen.ru##div[aria-label="Карточка рекомендованного видео"] ~ [aria-label]:not([aria-label="Карточка рекомендованного видео"])
 dzen.ru##div[class*="Container"] > div[style="opacity: 1;"] > div[class*="articleRight"][style^="max-height:"]
 dzen.ru##div[class*="video"] [aria-label="Табы рекомендаций"] ~ [aria-label*="карта"]
 dzen.ru##div[class^="article-item__articleItem-"] > div[class*="subscribeBanner"] + div:not([class])
 dzen.ru##div[class^="article__article-"] > div[class^="article-item"] > div[id]
+dzen.ru##div[class^="dzen-feed_"] article[class^="dzen-desktop--"] ~ article:not([class^="dzen-desktop--"])
 dzen.ru##div[id*="splashscreen"]
 ! incognito
 dzen.ru##.article-page-layout > main > div > div[id]

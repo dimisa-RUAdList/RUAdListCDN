@@ -1,10 +1,14 @@
-diff name:ruadlist lines:43 checksum:817ed54f10
+diff name:ruadlist lines:52 checksum:4fc2c4c149
 d4 2
 a5 2
-! Last modified: Tue, 24 Sep 2024 15:26:12 +0000
-! Diff-Path: ../patches/2024.9.24.926.patch#ruadlist
+! Last modified: Tue, 24 Sep 2024 20:26:28 +0000
+! Diff-Path: ../patches/2024.9.24.1226.patch#ruadlist
 a6022 1
 ||tlgrm.click^$third-party
+a6297 1
+||undersite.pages.dev^$third-party
+a8055 1
+/utarget_patched.js
 a11030 1
 ||cdn.botanichka.ru/pics/brand/
 d11041 1
@@ -19,6 +23,8 @@ d18117 1
 a18117 2
 botanichka.ru##.td-all-devices
 botanichka.ru,hs-manacost.ru,oren.ru##.td-banner-wrap-full
+a19173 1
+shuba.life##a[href*="/purchase"][target="_blank"]
 a20259 1
 forum.domik.ua##div[class*="blockTAdvert"]
 d21732 1
@@ -37,6 +43,9 @@ dzen.ru##article > section:first-child + div:not(:last-child) + div:last-child
 a22873 1
 /*y*ii=$popup,domain=dzen.ru
 d26180 1
+d27513 1
+a27518 1
+dzen.ru##div[class^="dzen-feed_"] article[class^="dzen-desktop--"] ~ article:not([class^="dzen-desktop--"])
 a27690 1
 mail.ru###user-settings-modal > .user-settings-container > .user-settings-types > .user-settings-types__item:first-child
 d27892 1
