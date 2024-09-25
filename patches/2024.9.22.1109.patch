@@ -1,8 +1,8 @@
-diff name:ruadlist lines:50 checksum:26cc140e0a
+diff name:ruadlist lines:58 checksum:fbf358c059
 d4 2
 a5 2
-! Last modified: Wed, 25 Sep 2024 11:21:28 +0000
-! Diff-Path: ../patches/2024.9.25.681.patch#ruadlist
+! Last modified: Wed, 25 Sep 2024 16:33:38 +0000
+! Diff-Path: ../patches/2024.9.25.993.patch#ruadlist
 a6022 1
 ||tlgrm.click^$third-party
 a6297 1
@@ -17,8 +17,11 @@ a11041 1
 d11204 1
 a11204 1
 ||domik.ua/*/region-banners/$domain=~forum.domik.ua
+d14921 1
 a15547 1
 forum.domik.ua##.blockProjects_post
+a15805 1
+tlgrm.ru#?#.channel-feed > .channel-feed__brick:-abp-has(> .cfeed-card > .cfeed-card-contents--banner)
 d18117 1
 a18117 2
 botanichka.ru##.td-all-devices
@@ -27,12 +30,17 @@ a19173 1
 shuba.life##a[href*="/purchase"][target="_blank"]
 a20259 1
 forum.domik.ua##div[class*="blockTAdvert"]
+a20388 1
+amoledo.com##div[class^="adsbanner"]
 d21732 1
 a21732 1
 dzen.ru#?#[class]:-abp-has(> a[href^="https://dzen.ru/"][class*="link"][class*="tabContent"] [class] > [class] > [class] > [class])
 d21742 1
-a21742 1
+a21742 2
 dzen.ru##a[href^="https://dzen.ru/"][class*="link"][class*="tabContent"] [class] > [class] > [class] > [class]
+pikabu.ru##article.story[data-text-length="1"]
+a22448 1
+www.rambler.ru#?##app > div:-abp-properties(min-height: 250px)
 d22835 1
 a22835 1
 dzen.ru##[class^="dzen-desktop--top-micro-app__"] [class^="dzen-desktop--top-micro-app"][class*=" "]
