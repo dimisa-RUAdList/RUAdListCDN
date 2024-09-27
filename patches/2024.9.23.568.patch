@@ -1,8 +1,8 @@
-diff name:ruadlist lines:100 checksum:d91dcb1128
+diff name:ruadlist lines:109 checksum:adc77e53f1
 d4 2
 a5 2
-! Last modified: Fri, 27 Sep 2024 08:30:34 +0000
-! Diff-Path: ../patches/2024.9.27.510.patch#ruadlist
+! Last modified: Fri, 27 Sep 2024 13:30:20 +0000
+! Diff-Path: ../patches/2024.9.27.810.patch#ruadlist
 a6022 1
 ||tlgrm.click^$third-party
 a6297 1
@@ -25,10 +25,15 @@ a12143 1
 ||naydex.net^$domain=actualnews.org|dni24.com|oane.ws|pcpro100.info
 d14181 1
 d14921 1
+d15372 1
+a15372 1
+livejournal.com,novyny.pro##.banner_container
 a15547 1
 forum.domik.ua##.blockProjects_post
 a15805 1
 tlgrm.ru#?#.channel-feed > .channel-feed__brick:-abp-has(> .cfeed-card > .cfeed-card-contents--banner)
+a16576 1
+itc.ua##.intro
 d18117 1
 a18117 2
 botanichka.ru##.td-all-devices
@@ -49,6 +54,10 @@ forum.domik.ua##div[class*="blockTAdvert"]
 a20388 1
 amoledo.com##div[class^="adsbanner"]
 d20501 1
+a20624 1
+wikihow.com##div[class^="wh_ad_"]
+a20898 1
+graycell.ru##div[id^="rare_"]
 d20960 1
 d21108 1
 d21465 1
@@ -72,7 +81,7 @@ a22258 6
 fontanka.ru##a[href="/__business_news"]
 fontanka.ru##article.NVaun > [class] ~ [class]
 fontanka.ru#?#aside > div[class]:-abp-has([class*="flickity"])
-fontanka.ru##aside > div[class]:first-child
+fontanka.ru##aside ~ div aside > div[class]:first-child
 fontanka.ru##aside:empty
 fontanka.ru#?#div[class]:-abp-has(> div > button + [href="/pressrelease/"])
 a22259 2

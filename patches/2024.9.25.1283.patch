@@ -1,8 +1,8 @@
-diff name:ruadlist lines:60 checksum:d91dcb1128
+diff name:ruadlist lines:69 checksum:adc77e53f1
 d4 2
 a5 2
-! Last modified: Fri, 27 Sep 2024 08:30:34 +0000
-! Diff-Path: ../patches/2024.9.27.510.patch#ruadlist
+! Last modified: Fri, 27 Sep 2024 13:30:20 +0000
+! Diff-Path: ../patches/2024.9.27.810.patch#ruadlist
 a10176 1
 ||forums.rusmedserv.com/$csp=script-src 'unsafe-inline' 'unsafe-eval' data: https://forums.rusmedserv.com/clientscript/ cse.google.com *.google.com/cse/ *.googleapis.com
 d11365 1
@@ -10,6 +10,11 @@ d12147 1
 a12147 1
 ||naydex.net^$domain=actualnews.org|dni24.com|oane.ws|pcpro100.info
 d14185 1
+d15375 1
+a15375 1
+livejournal.com,novyny.pro##.banner_container
+a16581 1
+itc.ua##.intro
 d18847 1
 d19415 1
 a19415 1
@@ -20,6 +25,10 @@ forums.rusmedserv.com##body > form > a[target="_blank"]
 a20081 1
 forums.rusmedserv.com##body > span > form > a[target="_blank"]
 d20510 1
+a20633 1
+wikihow.com##div[class^="wh_ad_"]
+a20907 1
+graycell.ru##div[id^="rare_"]
 d20969 1
 d21117 1
 d21474 1
@@ -41,7 +50,7 @@ a22268 6
 fontanka.ru##a[href="/__business_news"]
 fontanka.ru##article.NVaun > [class] ~ [class]
 fontanka.ru#?#aside > div[class]:-abp-has([class*="flickity"])
-fontanka.ru##aside > div[class]:first-child
+fontanka.ru##aside ~ div aside > div[class]:first-child
 fontanka.ru##aside:empty
 fontanka.ru#?#div[class]:-abp-has(> div > button + [href="/pressrelease/"])
 a22269 2
