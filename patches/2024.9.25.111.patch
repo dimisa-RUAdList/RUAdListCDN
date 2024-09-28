@@ -1,14 +1,17 @@
-diff name:ruadlist lines:78 checksum:4f1d6334c2
+diff name:ruadlist lines:105 checksum:15429f4bb6
 d4 2
 a5 2
-! Last modified: Sat, 28 Sep 2024 09:23:37 +0000
-! Diff-Path: ../patches/2024.9.28.563.patch#ruadlist
+! Last modified: Sat, 28 Sep 2024 14:23:07 +0000
+! Diff-Path: ../patches/2024.9.28.863.patch#ruadlist
 a10176 1
 ||forums.rusmedserv.com/$csp=script-src 'unsafe-inline' 'unsafe-eval' data: https://forums.rusmedserv.com/clientscript/ cse.google.com *.google.com/cse/ *.googleapis.com
 d11365 1
 d12147 1
 a12147 1
 ||naydex.net^$domain=actualnews.org|dni24.com|oane.ws|pcpro100.info
+d13866 1
+a13866 1
+vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] > ._post_content .PostHeader > .PostHeaderInfo > .PostHeaderSubtitle span ~ span)
 d14185 1
 d14925 1
 d15376 1
@@ -18,6 +21,8 @@ a15810 1
 tlgrm.ru#?#.channel-feed > .channel-feed__brick:-abp-has(> .cfeed-card > .cfeed-card-contents--banner)
 a16581 1
 itc.ua##.intro
+a18430 1
+api-video.khl.ru##.vjs-link_view-yandex-plus
 d18847 1
 d19415 1
 a19415 1
@@ -42,6 +47,9 @@ a21722 1
 ||pikabu.ru/ajax/*hey=$xmlhttprequest,domain=pikabu.ru
 a21750 1
 pikabu.ru##article.story[data-text-length="1"]
+d22238 1
+a22238 1
+116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,62.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru###div-hb-top-forum
 a22246 2
 fontanka.ru#?#.gridFullLaptop:-abp-has(> div > [href^="/pressrelease"])
 fontanka.ru#?#.gridFullLaptop:-abp-has(> div > a[href="/format/fproject/"])
@@ -67,13 +75,32 @@ a22268 3
 fontanka.ru##div[style*="--creative-height:"]
 fontanka.ru##div[style^="order:"] > a[href*="/?erid="]
 fontanka.ru##div[style^="order:"] > a[href*="/?erid="] ~ div
+d22270 1
+a22270 1
+116.ru,161.ru,164.ru,76.ru,93.ru,sochi1.ru,v1.ru##noindex ul > li > [data-click-area]
 a22272 1
 fontanka.ru#?#ul > li:-abp-has(> div > div > a[href*="/?erid="])
+a22372 1
+championat.com##.banner-announce
 a22456 1
 www.rambler.ru#?##app > div:-abp-properties(min-height: 250px)
 d22778 1
 a22778 1
 mail.yandex.by,mail.yandex.com,mail.yandex.kz,mail.yandex.ru,mail.yandex.uz#?#[data-key="box=left-box"]:-abp-has(> [data-key="view=react-left-column"] + div:empty) a[href*="/premium-"]
+a24693 1
+@@||api-video.khl.ru^$generichide
+d25627 1
+d25761 1
+a25761 1
+@@||yandex.ru/ads/system/adsdk.js$script,domain=aniboom.one|api-video.khl.ru|gisher.org|karaoke.ru|kino.tricolor.tv|limehd.tv|m24.ru|peers.tv|player.mediavitrina.ru|rutube.ru
+d25764 1
+a25764 2
+@@||yandex.ru/ads/system/context.js|$xmlhttprequest,domain=ai-next.ru|blackwot.ru|forums.rusmedserv.com|reshu.by|reshuent.kz|reshuolymp.ru|sdamgia.ru|sports.ru|strategium.ru
+@@||yandex.ru/ads/system/header-bidding.js|$xmlhttprequest,domain=forums.rusmedserv.com
+a25766 1
+@@||yastatic.net/safeframe-bundles/0.83/host.js|$xmlhttprequest,domain=forums.rusmedserv.com
 d27499 1
 a27518 1
 dzen.ru##article[class*="-promo"]
+a27939 1
+forums.rusmedserv.com##+js(addEventListener-defuser, DOMContentLoaded, adsSrc)
