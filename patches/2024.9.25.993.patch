@@ -1,8 +1,8 @@
-diff name:ruadlist lines:114 checksum:8e93b04d61
+diff name:ruadlist lines:116 checksum:bea003943d
 d4 2
 a5 2
-! Last modified: Sun, 29 Sep 2024 15:24:49 +0000
-! Diff-Path: ../patches/2024.9.29.924.patch#ruadlist
+! Last modified: Sun, 29 Sep 2024 20:24:13 +0000
+! Diff-Path: ../patches/2024.9.29.1224.patch#ruadlist
 a10176 1
 ||forums.rusmedserv.com/$csp=script-src 'unsafe-inline' 'unsafe-eval' data: https://forums.rusmedserv.com/clientscript/ cse.google.com *.google.com/cse/ *.googleapis.com
 d10470 1
@@ -113,3 +113,5 @@ a27521 1
 dzen.ru##article[class*="-promo"]
 a27942 1
 forums.rusmedserv.com##+js(addEventListener-defuser, DOMContentLoaded, adsSrc)
+a28035 1
+forums.rusmedserv.com##+js(no-setTimeout-if, window.location.replace)
