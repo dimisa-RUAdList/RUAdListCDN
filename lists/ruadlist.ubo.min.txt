@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 29 Sep 2024 10:25:52 +0000
-! Diff-Path: ../patches/2024.9.29.625.patch#ruadlist
+! Last modified: Sun, 29 Sep 2024 15:24:49 +0000
+! Diff-Path: ../patches/2024.9.29.924.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -13863,7 +13863,8 @@ bitcryptonews.ru###faq-index
 turmush.kg###fb_bottom_like
 myparcels.ru###featured-wants
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] > ._post_content .PostHeader > .PostHeaderInfo > .PostHeaderSubtitle > .PostHeaderSubtitle__item:-abp-contains(/Community ad|Реклама |Рэклама | жарнама/))
-vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] > ._post_content .PostHeader > .PostHeaderInfo > .PostHeaderSubtitle span ~ span)
+vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] > ._post_content .PostHeader > .PostHeaderInfo > .PostHeaderSubtitle [aria-hidden] [aria-hidden])
+vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] > ._post_content .PostHeader > .PostHeaderInfo > .PostHeaderSubtitle span span span span)
 itop-gear.ru###fguru
 partarium.ru###filter-form a[href^="/redirect/"][target="_blank"]
 city.ogo.ua###first-top-banner
