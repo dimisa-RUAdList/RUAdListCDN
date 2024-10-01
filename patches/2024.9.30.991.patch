@@ -1,5 +1,27 @@
-diff name:ruadlist lines:4 checksum:a047f4ef78
+diff name:ruadlist lines:26 checksum:4290ae3091
 d4 2
 a5 2
-! Last modified: Tue, 01 Oct 2024 07:23:49 +0000
-! Diff-Path: ../patches/2024.10.1.443.patch#ruadlist
+! Last modified: Tue, 01 Oct 2024 12:49:14 +0000
+! Diff-Path: ../patches/2024.10.1.769.patch#ruadlist
+a753 1
+||bidajet.info^$third-party
+a5109 1
+||riamiavid.com^$third-party
+d21723 1
+a21723 1
+||pikabu.ru/ajax/*ay=$xmlhttprequest,domain=pikabu.ru
+a22247 3
+fontanka.ru#?#.gridContainer > [class*="grid"]:-abp-has(> [class] > [href="/format/fproject/"])
+fontanka.ru#?#.gridContainer > [class*="grid"]:-abp-has(> [class] > [href^="/pressrelease"])
+fontanka.ru#?#.gridContainer > [class*="grid"]:-abp-has(> [data-creative])
+d22249 2
+a22250 1
+fontanka.ru##.gridOneThirdLaptop > [class^="sliderWrap_"]
+d22281 2
+a22282 2
+fontanka.ru##div[class^="newsFeedBlock_"] > div[class^="news_"] > a[href^="https://doctorpiter.ru/"]
+fontanka.ru#?#div[class^="newsFeedBlock_"] > div[class^="news_"]:-abp-has(> a[href^="https://doctorpiter.ru/"])
+a25743 1
+@@||smaxim.*/player/stats.php?event=Init,|$image,~third-party
+a28269 1
+smaxim.*##+js(set-constant, flashvars.protect_block, '')

@@ -1,24 +1,41 @@
-diff name:ruadlist lines:23 checksum:a047f4ef78
+diff name:ruadlist lines:40 checksum:4290ae3091
 d4 2
 a5 2
-! Last modified: Tue, 01 Oct 2024 07:23:49 +0000
-! Diff-Path: ../patches/2024.10.1.443.patch#ruadlist
+! Last modified: Tue, 01 Oct 2024 12:49:14 +0000
+! Diff-Path: ../patches/2024.10.1.769.patch#ruadlist
+a753 1
+||bidajet.info^$third-party
+a5109 1
+||riamiavid.com^$third-party
 d10766 1
 a13513 1
 alphapedia.ru###action
 d21723 1
 a21723 1
-||pikabu.ru/ajax/*ey=$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/ajax/*ay=$xmlhttprequest,domain=pikabu.ru
+a22247 3
+fontanka.ru#?#.gridContainer > [class*="grid"]:-abp-has(> [class] > [href="/format/fproject/"])
+fontanka.ru#?#.gridContainer > [class*="grid"]:-abp-has(> [class] > [href^="/pressrelease"])
+fontanka.ru#?#.gridContainer > [class*="grid"]:-abp-has(> [data-creative])
+d22249 2
+a22250 1
+fontanka.ru##.gridOneThirdLaptop > [class^="sliderWrap_"]
 a22275 1
 fontanka.ru##aside ~ aside > div:first-child
-d22279 1
-a22279 1
+d22279 3
+a22281 3
 116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,62.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,fontanka.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru##div[class^="articleBlockFullscreenGallery_"] > div[class^="wrapper_"] > div[class^="slider_"] ~ div
+fontanka.ru##div[class^="newsFeedBlock_"] > div[class^="news_"] > a[href^="https://doctorpiter.ru/"]
+fontanka.ru#?#div[class^="newsFeedBlock_"] > div[class^="news_"]:-abp-has(> a[href^="https://doctorpiter.ru/"])
 a22287 1
 fontanka.ru#?#section[class^="sliderWrap_"]:-abp-has(> div > [href="/pressrelease/"])
+a25741 1
+@@||smaxim.*/player/stats.php?event=Init,|$image,~third-party
 d25784 2
 a25785 1
 @@||yandex.ru/ads/system/context.js|$xmlhttprequest,domain=ai-next.ru|blackwot.ru|reshu.by|reshuent.kz|reshuolymp.ru|sdamgia.ru|sports.ru|strategium.ru
 d25788 1
 a26454 1
 www.fontanka.ru##header > div[class^="funding_"]
+a28268 1
+smaxim.*##+js(set-constant, flashvars.protect_block, '')
