@@ -1,8 +1,8 @@
-diff name:ruadlist lines:46 checksum:4290ae3091
+diff name:ruadlist lines:51 checksum:59cf5e54eb
 d4 2
 a5 2
-! Last modified: Tue, 01 Oct 2024 12:49:14 +0000
-! Diff-Path: ../patches/2024.10.1.769.patch#ruadlist
+! Last modified: Tue, 01 Oct 2024 17:24:24 +0000
+! Diff-Path: ../patches/2024.10.1.1044.patch#ruadlist
 a753 1
 ||bidajet.info^$third-party
 a5109 1
@@ -17,6 +17,11 @@ vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] > ._
 d21722 1
 a21722 1
 ||pikabu.ru/ajax/*ay=$xmlhttprequest,domain=pikabu.ru
+a21735 1
+e.mail.ru##.react-async div[class]:empty
+a21774 1
+e.mail.ru##span[style*="--sidebar-column-width:"] > div:last-child
+d22010 1
 a22246 3
 fontanka.ru#?#.gridContainer > [class*="grid"]:-abp-has(> [class] > [href="/format/fproject/"])
 fontanka.ru#?#.gridContainer > [class*="grid"]:-abp-has(> [class] > [href^="/pressrelease"])
