@@ -1,8 +1,8 @@
-diff name:ruadlist lines:62 checksum:50161c7afa
+diff name:ruadlist lines:67 checksum:d9a7c60543
 d4 2
 a5 2
-! Last modified: Wed, 02 Oct 2024 13:30:07 +0000
-! Diff-Path: ../patches/2024.10.2.810.patch#ruadlist
+! Last modified: Wed, 02 Oct 2024 18:33:17 +0000
+! Diff-Path: ../patches/2024.10.2.1113.patch#ruadlist
 a259 1
 ||adradle.life^$third-party
 a753 1
@@ -18,6 +18,8 @@ d13866 1
 a13866 2
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] > ._post_content .PostHeader > .PostHeaderInfo > .PostHeaderSubtitle [aria-hidden] [aria-hidden])
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] > ._post_content .PostHeader > .PostHeaderInfo > .PostHeaderSubtitle span span span span)
+a16560 1
+bb.lv##.inline-desk
 d21722 1
 a21722 1
 ||pikabu.ru/ajax/*ay=$xmlhttprequest,domain=pikabu.ru
@@ -50,6 +52,9 @@ a25784 1
 d25787 1
 a26453 1
 www.fontanka.ru##header > div[class^="funding_"]
+d27545 1
+a27545 1
+dzen.ru##div[class^="dzen-"][class*="feed_"] article[class^="dzen-desktop--"] ~ article:not([class^="dzen-desktop--"])
 d27961 1
 a27961 1
 forums.rusmedserv.com##+js(addEventListener-defuser, DOMContentLoaded, JSON.parse)
