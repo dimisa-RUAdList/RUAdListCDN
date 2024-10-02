@@ -1,10 +1,14 @@
-diff name:ruadlist lines:51 checksum:9f43d49ae6
+diff name:ruadlist lines:62 checksum:50161c7afa
 d4 2
 a5 2
-! Last modified: Wed, 02 Oct 2024 08:31:31 +0000
-! Diff-Path: ../patches/2024.10.2.511.patch#ruadlist
+! Last modified: Wed, 02 Oct 2024 13:30:07 +0000
+! Diff-Path: ../patches/2024.10.2.810.patch#ruadlist
+a259 1
+||adradle.life^$third-party
 a753 1
 ||bidajet.info^$third-party
+a845 1
+||bomentrima.xyz^$third-party
 a5109 1
 ||riamiavid.com^$third-party
 d10766 1
@@ -20,7 +24,7 @@ a21722 1
 a21735 1
 e.mail.ru##.react-async div[class]:empty
 a21774 1
-e.mail.ru##span[style*="--sidebar-column-width:"] > div:last-child
+e.mail.ru##span[style*="--sidebar-column-width:"] > div ~ div ~ div
 d22010 1
 a22246 3
 fontanka.ru#?#.gridContainer > [class*="grid"]:-abp-has(> [class] > [href="/format/fproject/"])
@@ -46,7 +50,14 @@ a25784 1
 d25787 1
 a26453 1
 www.fontanka.ru##header > div[class^="funding_"]
-a28054 1
-forums.rusmedserv.com##+js(no-setTimeout-if, window.location.replace)
+d27961 1
+a27961 1
+forums.rusmedserv.com##+js(addEventListener-defuser, DOMContentLoaded, JSON.parse)
+d28113 1
+a28113 1
+dni.expert,dni.ru,kp.kg,kp.kz,kp.md,kp.ru,lifehacker.ru,mk.ru,ohotniki.ru,portalvirtualreality.ru,radiokp.ru,sportkp.ru,wday.ru,woman.ru,womanhit.ru##+js(set-constant, Object.prototype.changeVisible, noopFunc)
 a28266 1
 smaxim.*##+js(set-constant, flashvars.protect_block, '')
+d28447 1
+a28447 1
+116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,62.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,www.fontanka.ru##+js(set-constant, Object.prototype._playerAdded, noopFunc)
