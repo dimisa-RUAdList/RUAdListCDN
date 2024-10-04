@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 03 Oct 2024 19:18:22 +0000
-! Diff-Path: ../patches/2024.10.3.1158.patch#ruadlist
+! Last modified: Fri, 04 Oct 2024 01:50:45 +0000
+! Diff-Path: ../patches/2024.10.4.110.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -11117,10 +11117,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||compedu.ru^$domain=kopilkaurokov.ru
 ||consmed.ru/branding/
 ||consmed.ru/tizergen/
-||cont.ws/*/ads/meta/
-||cont.ws/*/partner-code-bundles/
-||cont.ws/*/safeframe-bundles/
-||cont.ws/0x*/$script
+||cont.ws/js/test.js?cf=$script
 ||conversion.im/admin/ajax/banners/
 ||cookielaw.org^$domain=adme.media
 ||cookreactor.com^$subdocument
@@ -25825,9 +25822,9 @@ newnavitel.blogspot.com#@##AdSense1
 num-words.com#@#.advert-banner
 pvpru.com#@##ad_global_above_footer
 rap-me.online#@#.adv-banner
+razlozhi.ru,tnt-online.ru#@#div[id^="adfox_"]
 tests24.su#@##header-ad
 textstudio.co#@#.adsbyyahoo
-tnt-online.ru#@#div[id^="adfox_"]
 xcom-shop.ru#@#.ad-placeholder
 zhurnaly.biz#@#.ad-block
 zhurnaly.biz#@#.item-ads
