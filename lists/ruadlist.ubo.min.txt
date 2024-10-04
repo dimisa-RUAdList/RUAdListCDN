@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 04 Oct 2024 05:26:46 +0000
-! Diff-Path: ../patches/2024.10.4.326.patch#ruadlist
+! Last modified: Fri, 04 Oct 2024 10:29:16 +0000
+! Diff-Path: ../patches/2024.10.4.629.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21722,7 +21722,7 @@ $csp=script-src-attr 'none',domain=eurointegration.com.ua|pravda.com.ua
 @@||ssp.rambler.ru/capirs_async.js|$script,domain=www.championat.com
 https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|livejournal.com|olegmakarenko.ru|periskop.su|shakko.ru|shiro-kino.ru|vadimrazumov.ru
 ||imgfrost.net^$third-party
-||pikabu.ru/ajax/*uy=$xmlhttprequest,domain=pikabu.ru
+||pikabu.ru/ajax/*uu=$xmlhttprequest,domain=pikabu.ru
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -21776,6 +21776,7 @@ liveinternet.ru##div[style*="!important; "]
 sdamgia.ru##div[style*="important;"][style*="width:"][style*="height:"] *
 www.drive2.ru##iframe[style="display: block; border-width: 0px;"]
 www.drive2.ru##iframe[style="opacity: 1;"]
+e.mail.ru##span[style*="--sidebar-column-width:"] > div > div ~ div ~ div
 e.mail.ru##span[style*="--sidebar-column-width:"] > div ~ div ~ div
 liveinternet.ru##style + div > div > div > div > div a
 !#endif
