@@ -1,11 +1,11 @@
-diff name:ruadlist lines:28 checksum:45649b0356
+diff name:ruadlist lines:33 checksum:0901e8bf1a
 d4 2
 a5 2
-! Last modified: Fri, 04 Oct 2024 15:26:22 +0000
-! Diff-Path: ../patches/2024.10.4.926.patch#ruadlist
+! Last modified: Fri, 04 Oct 2024 20:25:24 +0000
+! Diff-Path: ../patches/2024.10.4.1225.patch#ruadlist
 d11120 4
 a11123 1
-||cont.ws/js/test.js?cf=$script
+||cont.ws/js/*.js?cf=$script
 a16565 1
 bb.lv##.inline-desk
 d21727 1
@@ -14,14 +14,19 @@ a21727 1
 d21741 1
 a21742 1
 e.mail.ru##:not(.attach-thumb__thumb-elem) > .react-async div > div[class]:not([style]):not([data-test-id]):empty
+a21750 1
+e.mail.ru##[data-styled="active"] + div
 a21780 1
 e.mail.ru##span[style*="--sidebar-column-width:"] > div > div ~ div ~ div
+a22124 1
+cloud.mail.ru##div[class^="ReactViewer__attachesSidebar"]
 a25826 1
 razlozhi.ru,tnt-online.ru#@#div[id^="adfox_"]
 d25829 1
 d27555 1
 a27555 1
 dzen.ru##div[class^="dzen-"][class*="feed_"] article[class^="dzen-desktop--"] ~ article:not([class^="dzen-desktop--"])
+d27771 1
 a27962 1
 forums.rusmedserv.com##+js(abort-on-stack-trace, fetch, eval)
 d27971 1
