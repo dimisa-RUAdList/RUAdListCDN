@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 09 Oct 2024 15:26:35 +0000
-! Diff-Path: ../patches/2024.10.9.926.patch#ruadlist
+! Last modified: Wed, 09 Oct 2024 20:26:04 +0000
+! Diff-Path: ../patches/2024.10.9.1226.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -13870,6 +13870,7 @@ myparcels.ru###featured-wants
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] > ._post_content .PostHeader > .PostHeaderInfo > .PostHeaderSubtitle > .PostHeaderSubtitle__item:-abp-contains(/Community ad|Реклама |Рэклама | жарнама/))
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] > ._post_content .PostHeader > .PostHeaderInfo [onclick*="ads_params:"])
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] > ._post_content .PostHeader > .PostHeaderInfo [onmouseover*="AdsLight"])
+vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] > ._post_content .PostHeader > .PostHeaderInfo span.PostHeaderSubtitle__item)
 itop-gear.ru###fguru
 partarium.ru###filter-form a[href^="/redirect/"][target="_blank"]
 city.ogo.ua###first-top-banner
@@ -22245,8 +22246,8 @@ ok.ru##div[data-place*="BANNER"]
 ! Очень однобокая реклама Хрома + очень часто просят удалить
 ok.ru##.update-browser_container
 ! Блокировка
-||ok.ru/res/js/b/p_*.js
-||ok.ru/res/js/nativeHooks_*.js
+/res/js/b/p_*.js$domain=ok.ru
+/res/js/nativeHooks_*.js$domain=ok.ru
 ||st.mycdn.me/res/i/anonym/jakobs/$image
 ! Реклама, встроенная расширением OkTools)
 ok.ru##iframe[src^="//oktools.ru/page/static/"]
@@ -27557,13 +27558,13 @@ dzen.ru##[class*="desktop"] ~ [id*="teaser"]
 dzen.ru##[class^="card-part-wrapper"] ~ div[class=""]
 dzen.ru##[class^="dzen-desktop"] ~ div[id$="-popup"]
 dzen.ru##[data-testid="recommend-auth-popup"]
+dzen.ru##[id*="_floor_"] article[class]:not(._is-desktop) ~ article._is-desktop
 dzen.ru##article[class*="-promo"]
 dzen.ru##div[aria-label="Карточка рекомендованного видео"] ~ [aria-label]:not([aria-label="Карточка рекомендованного видео"])
 dzen.ru##div[class*="Container"] > div[style="opacity: 1;"] > div[class*="articleRight"][style^="max-height:"]
 dzen.ru##div[class*="video"] [aria-label="Табы рекомендаций"] ~ [aria-label*="карта"]
 dzen.ru##div[class^="article-item__articleItem-"] > div[class*="subscribeBanner"] + div:not([class])
 dzen.ru##div[class^="article__article-"] > div[class^="article-item"] > div[id]
-dzen.ru##div[class^="dzen-"][class*="feed_"] article[class^="dzen-desktop--"] ~ article:not([class^="dzen-desktop--"])
 dzen.ru##div[id*="splashscreen"]
 ! incognito
 dzen.ru##.article-page-layout > main > div > div[id]

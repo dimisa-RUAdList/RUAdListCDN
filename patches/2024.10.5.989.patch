@@ -1,8 +1,8 @@
-diff name:ruadlist lines:69 checksum:c20cca82ee
+diff name:ruadlist lines:77 checksum:affc89637d
 d4 2
 a5 2
-! Last modified: Wed, 09 Oct 2024 15:26:35 +0000
-! Diff-Path: ../patches/2024.10.9.926.patch#ruadlist
+! Last modified: Wed, 09 Oct 2024 20:26:04 +0000
+! Diff-Path: ../patches/2024.10.9.1226.patch#ruadlist
 a8431 1
 ##[href^="https://pxl.leads.su/click/"]
 d10475 1
@@ -15,9 +15,10 @@ a12136 1
 a13512 1
 calcus.ru###a_sidebar_container
 d13867 2
-a13868 2
+a13868 3
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] > ._post_content .PostHeader > .PostHeaderInfo [onclick*="ads_params:"])
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] > ._post_content .PostHeader > .PostHeaderInfo [onmouseover*="AdsLight"])
+vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] > ._post_content .PostHeader > .PostHeaderInfo span.PostHeaderSubtitle__item)
 a14672 1
 calcus.ru###under-calc-ad-placeholder
 d15303 1
@@ -56,12 +57,19 @@ a21763 1
 d21780 2
 a22220 1
 ok.ru#?##hook_Block_FourthCol div:-abp-has([class] ~ [class] ~ [class] ~ [class] ~ [class] ~ [class])
+d22238 2
+a22239 2
+/res/js/b/p_*.js$domain=ok.ru
+/res/js/nativeHooks_*.js$domain=ok.ru
 d25985 1
 a25985 1
 baskino.film,dnepr.info,dugtor.ru,filmitorrent.net,filmitorrent.site,jetsetter.ua,kinoafisha.ua,kinobar.vip,konohatv.org,ladys.media,moskva.fm,newstudio.tv,nnmclub.ro,nnmclub.to,pay-day.ru,roem.ru,rusfootball.info,trupornolabs.org,utorr.cc,vc.ru,virusinfo.info,wikianime.tv,xxxadulttorrent.org,you-anime.ru,yummyanime.tv,zombie-film.live##body:not(#id):style(padding-top: 0 !important)
 d27445 1
 a27445 1
 kp.kg,kp.kz,kp.md,media,ru##.buttonContainer[data-name="play"][style*="left: 10px;"]:style(opacity: unset !important)
+a27549 1
+dzen.ru##[id*="_floor_"] article[class]:not(._is-desktop) ~ article._is-desktop
+d27556 1
 d28123 1
 a28123 1
 dni.expert,dni.ru,kp.kg,kp.kz,kp.md,kp.ru,ladys.media,lifehacker.ru,mk.ru,ohotniki.ru,portalvirtualreality.ru,radiokp.ru,sportkp.ru,wday.ru,woman.ru,womanhit.ru##+js(set-constant, Object.prototype.changeVisible, noopFunc)
