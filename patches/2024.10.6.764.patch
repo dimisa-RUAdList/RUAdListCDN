@@ -1,8 +1,8 @@
-diff name:ruadlist lines:72 checksum:385a00fcc6
+diff name:ruadlist lines:72 checksum:11004fc296
 d4 2
 a5 2
-! Last modified: Thu, 10 Oct 2024 11:21:21 +0000
-! Diff-Path: ../patches/2024.10.10.681.patch#ruadlist
+! Last modified: Thu, 10 Oct 2024 16:30:48 +0000
+! Diff-Path: ../patches/2024.10.10.990.patch#ruadlist
 a8431 1
 ##[href^="https://pxl.leads.su/click/"]
 d10475 1
@@ -43,15 +43,15 @@ e.mail.ru##.layout__column_right-indented
 d21741 1
 d21750 1
 a21760 1
-~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] article:-abp-has(> div div:-abp-contains(/реклама|Рeклама/i))
+~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] article:-abp-has(> div div:-abp-contains(/реклама|Рeклама|Рекламa|Реклaма|Реклaмa|Рeкламa|Реĸлама|ԯ|қ|Рeклaмa|Pеклама|Peклама/i))
 a21761 3
 ~e.mail.ru,mail.ru,~octavius.mail.ru##body[style="overflow: unset; max-height: unset;"] div[style^="margin-left: 3"]
 ~e.mail.ru,mail.ru,~octavius.mail.ru##body[style="overflow: unset; max-height: unset;"] div[style^="width: 3"]
-~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] p:-abp-has(> div div:-abp-contains(/реклама|Рeклама/i))
+~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] p:-abp-has(> div div:-abp-contains(/реклама|Рeклама|Рекламa|Реклaма|Реклaмa|Рeкламa|Реĸлама|ԯ|қ|Рeклaмa|Pеклама|Peклама/i))
 a21762 1
-~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] section:-abp-has(> div div:-abp-contains(/реклама|Рeклама/i))
+~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] section:-abp-has(> div div:-abp-contains(/^реклама|Рeклама|Рекламa|Реклaма|Реклaмa|Рeкламa|Реĸлама|ԯ|қ|Рeклaмa|Pеклама|Peклама/i))
 a21764 1
-~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] span:not(.ph-marusia):-abp-has(> div div:-abp-contains(/реклама|Рeклама/i))
+~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] span:not(.ph-marusia):-abp-has(> div div:-abp-contains(/реклама|Рeклама|Рекламa|Реклaма|Реклaмa|Рeкламa|Реĸлама|ԯ|қ|Рeклaмa|Pеклама|Peклама/i))
 d21781 2
 a22221 1
 ok.ru#?##hook_Block_FourthCol div:-abp-has([class] ~ [class] ~ [class] ~ [class] ~ [class] ~ [class])
