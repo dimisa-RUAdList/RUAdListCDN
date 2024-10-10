@@ -1,10 +1,28 @@
-diff name:ruadlist lines:13 checksum:40c232814f
+diff name:ruadlist lines:31 checksum:385a00fcc6
 d4 2
 a5 2
-! Last modified: Thu, 10 Oct 2024 06:34:10 +0000
-! Diff-Path: ../patches/2024.10.10.394.patch#ruadlist
-a13872 1
+! Last modified: Thu, 10 Oct 2024 11:21:21 +0000
+! Diff-Path: ../patches/2024.10.10.681.patch#ruadlist
+a13872 2
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] > ._post_content .PostHeader > .PostHeaderInfo span.PostHeaderSubtitle__item)
+vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] > ._post_content .post_header_info [onmouseover*="AdsLight"])
+d21732 1
+a21732 1
+||pikabu.ru/ajax/*&*bkr=$xmlhttprequest
+a21743 1
+e.mail.ru##.layout__column_right-indented
+d21765 1
+a21765 1
+~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] article:-abp-has(> div div:-abp-contains(/реклама|Рeклама/i))
+d21769 1
+a21769 1
+~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] p:-abp-has(> div div:-abp-contains(/реклама|Рeклама/i))
+d21771 1
+a21771 1
+~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] section:-abp-has(> div div:-abp-contains(/реклама|Рeклама/i))
+d21774 1
+a21774 1
+~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] span:not(.ph-marusia):-abp-has(> div div:-abp-contains(/реклама|Рeклама/i))
 d22248 2
 a22249 2
 /res/js/b/p_*.js$domain=ok.ru
