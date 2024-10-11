@@ -1,5 +1,30 @@
-diff name:ruadlist lines:4 checksum:5d75b7d760
+diff name:ruadlist lines:29 checksum:d8f4193fed
 d4 2
 a5 2
-! Last modified: Fri, 11 Oct 2024 12:47:04 +0000
-! Diff-Path: ../patches/2024.10.11.767.patch#ruadlist
+! Last modified: Fri, 11 Oct 2024 17:23:48 +0000
+! Diff-Path: ../patches/2024.10.11.1043.patch#ruadlist
+d21734 1
+a21734 1
+||pikabu.ru/ajax/*&*bkq=$xmlhttprequest
+d21768 1
+a21768 2
+~e.mail.ru,mail.ru,~octavius.mail.ru##body[style="overflow: unset; max-height: unset;"] > div > style + div[id^="b"] > :not(.closeWrapper)
+~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] article:-abp-has(> div div:-abp-contains(/реклама|Рeклама|Рекламa|Реклaма|Реклaмa|Рeкламa|Реĸлама|ԯ|қ|Рeклaмa|Pеклама|Peклама|Peклaма/i))
+a21769 2
+~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] div:-abp-has(> div > div[style="height: 200px;"])
+~e.mail.ru,mail.ru,~octavius.mail.ru##body[style="overflow: unset; max-height: unset;"] div[style="height: 200px;"]
+d21772 1
+a21772 1
+~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] p:-abp-has(> div div:-abp-contains(/реклама|Рeклама|Рекламa|Реклaма|Реклaмa|Рeкламa|Реĸлама|ԯ|қ|Рeклaмa|Pеклама|Peклама|Peклaма/i))
+d21774 1
+a21774 1
+~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] section:-abp-has(> div div:-abp-contains(/^реклама|Рeклама|Рекламa|Реклaма|Реклaмa|Рeкламa|Реĸлама|ԯ|қ|Рeклaмa|Pеклама|Peклама|Peклaма/i))
+d21777 1
+a21777 1
+~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] span:not(.ph-marusia):-abp-has(> div div:-abp-contains(/реклама|Рeклама|Рекламa|Реклaма|Реклaмa|Рeкламa|Реĸлама|ԯ|қ|Рeклaмa|Pеклама|Peклама|Peклaма/i))
+a22155 1
+||help.mail.ru/mail/faq/adblock$popup,~third-party
+a27739 1
+mail.ru###mailbox:style(visibility: unset !important; pointer-events: unset !important)
+a27793 1
+mail.ru##div[slot="main-column"] > :nth-child(-n+2) ~ [class] > [class]:style(visibility: unset !important; pointer-events: unset !important)
