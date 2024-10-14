@@ -1,10 +1,12 @@
-diff name:ruadlist lines:40 checksum:36ac02f8bb
+diff name:ruadlist lines:53 checksum:eb393a9eca
 d4 2
 a5 2
-! Last modified: Mon, 14 Oct 2024 05:27:08 +0000
-! Diff-Path: ../patches/2024.10.14.327.patch#ruadlist
+! Last modified: Mon, 14 Oct 2024 10:29:46 +0000
+! Diff-Path: ../patches/2024.10.14.629.patch#ruadlist
 d13591 1
 d13734 1
+a15216 1
+catalog.onliner.by##.b-offers-promo
 d17380 1
 a17380 1
 game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##.post_body center > a[target="_blank"]
@@ -14,16 +16,27 @@ a20842 1
 game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div[id^="chess"]
 d21734 1
 a21734 1
-||pikabu.ru/ajax/*&*bkq=$xmlhttprequest
+||pikabu.ru/ajax/*&*vkq=$xmlhttprequest
 d21768 1
-a21768 1
+a21768 3
 ~e.mail.ru,mail.ru,~octavius.mail.ru##body[style="overflow: unset; max-height: unset;"] > div > style + div[id^="b"] > :not(.closeWrapper)
+~e.mail.ru,mail.ru,~octavius.mail.ru##body[style="overflow: unset; max-height: unset;"] article div[title][role=img]
+~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] article:-abp-has(> div div[title][role=img])
 a21769 2
 ~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] div:-abp-has(> div > div[style="height: 200px;"])
 ~e.mail.ru,mail.ru,~octavius.mail.ru##body[style="overflow: unset; max-height: unset;"] div[style="height: 200px;"]
 d21772 1
+a21772 2
+~e.mail.ru,mail.ru,~octavius.mail.ru##body[style="overflow: unset; max-height: unset;"] p div[title][role=img]
+~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] p:-abp-has(> div div[title][role=img])
 d21774 1
+a21774 2
+~e.mail.ru,mail.ru,~octavius.mail.ru##body[style="overflow: unset; max-height: unset;"] section div[title][role=img]
+~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] section:-abp-has(> div div[title][role=img])
 d21777 1
+a21777 2
+~e.mail.ru,mail.ru,~octavius.mail.ru##body[style="overflow: unset; max-height: unset;"] span:not(.ph-marusia) div[title][role=img]
+~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] span:not(.ph-marusia):-abp-has(> div div[title][role=img])
 a21794 4
 ~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] article:-abp-has(> div div:-abp-contains(/реклама|Рeклама|Рекламa|Реклaма|Реклaмa|Рeкламa|Реĸлама|ԯ|қ|eклaмa|Pеклама|Peклама|Peклaма/i))
 ~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] p:-abp-has(> div div:-abp-contains(/реклама|Рeклама|Рекламa|Реклaма|Реклaмa|Рeкламa|Реĸлама|ԯ|қ|eклaмa|Pеклама|Peклама|Peклaма/i))
