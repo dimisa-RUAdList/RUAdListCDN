@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 15 Oct 2024 06:33:54 +0000
-! Diff-Path: ../patches/2024.10.15.393.patch#ruadlist
+! Last modified: Tue, 15 Oct 2024 11:21:05 +0000
+! Diff-Path: ../patches/2024.10.15.681.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22800,6 +22800,7 @@ yandex.by,yandex.kz,yandex.ru,yandex.uz##.stat_pixel_yes[onclick][class*="_layou
 yandex.by,yandex.kz,yandex.ru,yandex.uz##a[href*="//ads.adfox.ru/"]
 yandex.by,yandex.kz,yandex.ru,yandex.uz##body[class*="b-page_alt-widgets_yes"] .feed ._need-stub
 yandex.ru##div[class$="ear_js_inited"] > a[href^="//awaps.yandex.ru"]
+ya.ru##div[class^="main-home-"][class*="i-mini-bem"]
 yandex.by,yandex.kz,yandex.ru,yandex.uz##img[src*="yandex.net/get-direct"]
 |https://dzen.ru/*/*/*/$subdocument,domain=dzen.ru
 ||awaps.yandex.
@@ -27534,8 +27535,8 @@ xsport.ua##.site:style(margin-top: 0 !important)
 ! ---
 ! Yandex
 ya.ru,yandex.by,yandex.kz,yandex.uz##.link-bro
-ya.ru##.market-banner_js_inited
 ya.ru##.market-feed
+ya.ru##[class^="main-home-"][class*="__content "]
 ! афиша
 afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.uz##div[class$="-banner"]
 afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.uz##div[data-bem*="height"][data-bem*="R-A-"]
@@ -27663,6 +27664,7 @@ yandex.by,yandex.kz,yandex.ru,yandex.uz##.turbo-advert__loader
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"] > a[href*="://yabs.yandex."][href*="/count/"]
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"] > a[href*="://yandex."][href*="/clck/"]
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"] > a[href][target="_blank"]
+dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[id^="suggest-item-"] > a[href*="://yabs.yandex."][href*="/count/"]
 yandex.by,yandex.kz,yandex.ru,yandex.uz##body > .popup[data-bem*="https://yabs.yandex.ru/count/"]
 yandex.by,yandex.kz,yandex.ru,yandex.uz##body > .route-tip-view
 yandex.by,yandex.kz,yandex.ru,yandex.uz##body.b-page > .b-page__container .card.content__adv.card:style(margin-bottom: unset !important; padding: unset !important)
@@ -27880,7 +27882,6 @@ anifap.com,anipoisk.org,anitokyo.org,anitokyo.tv,hcdn.online,kinofilm.co##+js(ab
 comedy-radio.ru,radioromantika.ru,relax-fm.ru,rg.ru,sm.news,ura.news,veseloeradio.ru,www.e1.ru##+js(abort-on-property-read, Date.prototype.toUTCString)
 vk.com,vk.ru##+js(abort-on-property-read, Groups.showDisclaimer)
 rutor.org##+js(abort-on-property-read, Light.Popup)
-ya.ru##+js(abort-on-property-read, MarketFeed)
 drive2.ru##+js(abort-on-property-read, Object.prototype.AdfoxXhrRequestPrepared)
 liveinternet.ru,yap.ru,yaplakal.com##+js(abort-on-property-read, Object.prototype.Metrika)
 liveinternet.ru##+js(abort-on-property-read, Object.prototype.YA_TURBO_PAGES)
@@ -28158,6 +28159,7 @@ embed.twitch.tv,player.twitch.tv##+js(set-constant, Object.prototype.disableAuto
 www.mos.ru##+js(set-constant, Object.prototype.disablePaste, false)
 1tv.ru##+js(set-constant, Object.prototype.disableSeek, noopFunc)
 kinokong.bz##+js(set-constant, Object.prototype.disableSelection, noopFunc)
+ya.ru##+js(set-constant, Object.prototype.generateMarketUrl, null)
 dzen.ru,frontend.vh.yandex.ru##+js(set-constant, Object.prototype.getAutoplay, noopFunc)
 dzen.ru##+js(set-constant, Object.prototype.getUaasConfig, undefined)
 frontend.vh.yandex.ru##+js(set-constant, Object.prototype.initialAutoplay, null)
@@ -28270,6 +28272,7 @@ dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__it
 ozon.ru##[data-lcp-name*="anner-"]:matches-path(/my/reviews/promo):style(display: block !important)
 dzen.ru##[data-microappname="TopMicroApp" ] div[style*="%"]:style(padding-top: unset !important)
 www.sports.ru##[data-noinit]
+dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[id^="suggest-item-"]:has(> a[href*="://yabs.yandex."][href*="/count/"]):remove()
 online-fix.me##a.btn-success[href^="https://online-fix.me/ext/"]:remove-class(btn)
 24smi.org##a[href*="://24smi.org/"]:remove-attr(target)
 trupornolabs.org#@#a[href*="://pronpic.org/"]

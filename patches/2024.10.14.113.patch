@@ -1,8 +1,8 @@
-diff name:ruadlist lines:21 checksum:0e2d9feb1c
+diff name:ruadlist lines:33 checksum:f43dcc7b75
 d4 2
 a5 2
-! Last modified: Tue, 15 Oct 2024 06:33:54 +0000
-! Diff-Path: ../patches/2024.10.15.393.patch#ruadlist
+! Last modified: Tue, 15 Oct 2024 11:21:05 +0000
+! Diff-Path: ../patches/2024.10.15.681.patch#ruadlist
 a15214 1
 catalog.onliner.by##.b-offers-promo
 d21734 1
@@ -20,3 +20,15 @@ a21774 2
 a21776 2
 ~e.mail.ru,mail.ru,~octavius.mail.ru##body[style="overflow: unset; max-height: unset;"] span:not(.ph-marusia) div[title][role=img]
 ~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] span:not(.ph-marusia):-abp-has(> div div[title][role=img])
+a22793 1
+ya.ru##div[class^="main-home-"][class*="i-mini-bem"]
+d27528 1
+a27529 1
+ya.ru##[class^="main-home-"][class*="__content "]
+a27656 1
+dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[id^="suggest-item-"] > a[href*="://yabs.yandex."][href*="/count/"]
+d27874 1
+a28151 1
+ya.ru##+js(set-constant, Object.prototype.generateMarketUrl, null)
+a28263 1
+dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[id^="suggest-item-"]:has(> a[href*="://yabs.yandex."][href*="/count/"]):remove()

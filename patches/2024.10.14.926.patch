@@ -1,5 +1,17 @@
-diff name:ruadlist lines:4 checksum:0e2d9feb1c
+diff name:ruadlist lines:16 checksum:f43dcc7b75
 d4 2
 a5 2
-! Last modified: Tue, 15 Oct 2024 06:33:54 +0000
-! Diff-Path: ../patches/2024.10.15.393.patch#ruadlist
+! Last modified: Tue, 15 Oct 2024 11:21:05 +0000
+! Diff-Path: ../patches/2024.10.15.681.patch#ruadlist
+a22802 1
+ya.ru##div[class^="main-home-"][class*="i-mini-bem"]
+d27537 1
+a27538 1
+ya.ru##[class^="main-home-"][class*="__content "]
+a27665 1
+dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[id^="suggest-item-"] > a[href*="://yabs.yandex."][href*="/count/"]
+d27883 1
+a28160 1
+ya.ru##+js(set-constant, Object.prototype.generateMarketUrl, null)
+a28272 1
+dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[id^="suggest-item-"]:has(> a[href*="://yabs.yandex."][href*="/count/"]):remove()
