@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 17 Oct 2024 18:31:52 +0000
-! Diff-Path: ../patches/2024.10.17.1111.patch#ruadlist
+! Last modified: Thu, 17 Oct 2024 23:24:16 +0000
+! Diff-Path: ../patches/2024.10.17.1404.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21936,6 +21936,7 @@ gismeteo.ru#?#.cities-popular:-abp-has(> .list:empty)
 gismeteo.by##.column2 > .section-rss
 gismeteo.ru##.content-column > .section-media
 gismeteo.kz,gismeteo.ru##.content-column ~ .content-column > .section-rss
+gismeteo.by,gismeteo.kz,gismeteo.ru##.extender
 gismeteo.by,gismeteo.kz,gismeteo.ru,meteofor.md##.placeholder
 gismeteo.by,gismeteo.kz,meteofor.com.ua##.section-media
 meteofor.com.ua##.section-rss
