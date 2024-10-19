@@ -1,8 +1,8 @@
-diff name:ruadlist lines:40 checksum:8edaf4b21e
+diff name:ruadlist lines:52 checksum:cc11de98f0
 d4 2
 a5 2
-! Last modified: Sat, 19 Oct 2024 15:23:25 +0000
-! Diff-Path: ../patches/2024.10.19.923.patch#ruadlist
+! Last modified: Sat, 19 Oct 2024 20:26:17 +0000
+! Diff-Path: ../patches/2024.10.19.1226.patch#ruadlist
 d11121 1
 a11121 1
 ||cont.ws/js/*.js?c=$script
@@ -16,9 +16,15 @@ vk.com,vk.ru##[data-ad-block-uid]
 d19424 1
 a19424 1
 1tulatv.ru,animevost.org,animevost.top,bessarabiainform.com,bombardir.ru,dwg.ru,ebooktime.net,fex.net,pc-consultant.ru,programmersforum.ru,rusplt.ru,sport24.ru,traktorist.ua,vost.pw##a[href*="utm_"]
+d20795 1
+d20843 1
+a20905 1
+game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div[id^="opachalo"]
 d21735 1
 a21735 1
 ||pikabu.ru/ajax/*&*ykq=$xmlhttprequest
+a21746 1
+growhow.in.ua###custom-background-css {remove:true;}
 a21939 1
 gismeteo.by,gismeteo.kz,gismeteo.ru##.extender
 d21944 1
@@ -29,6 +35,8 @@ a22324 1
 116.ru,161.ru,164.ru,173.ru,26.ru,59.ru,63.ru,72.ru,74.ru,76.ru,93.ru,e1.ru,ngs.ru,ngs24.ru,ngs55.ru,sochi1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,www.nn.ru##noindex ul > li > [data-click-area]
 a22435 1
 championat.com##.header-bottom__adv
+a25880 1
+rknweb.ru##.IsAdBlock
 d26621 2
 a26622 2
 ag,biz,buzz,by,city,club,co,com,fi,in,ink,kim,loan,me,name,net,org,rest,run,sh,so,space,today,tv,vip,website,win##body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"] > [id$="er"]:nth-child(-n+3):style(width: unset !important)
@@ -36,6 +44,10 @@ ag,biz,buzz,by,city,club,co,com,fi,in,ink,kim,loan,me,name,net,org,rest,run,sh,s
 d27536 1
 a27536 1
 ya.ru##.i-mini-bem[style]
+a27825 1
+growhow.in.ua###custom-background-css:remove()
+a27979 1
+growhow.in.ua##+js(abort-on-property-read, wpsite_clickable_data)
 d28163 1
 a28173 1
 ya.ru##+js(set-constant, Object.prototype.renderFeed, null)

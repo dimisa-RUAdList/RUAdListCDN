@@ -1,8 +1,8 @@
-diff name:ruadlist lines:69 checksum:8edaf4b21e
+diff name:ruadlist lines:81 checksum:cc11de98f0
 d4 2
 a5 2
-! Last modified: Sat, 19 Oct 2024 15:23:25 +0000
-! Diff-Path: ../patches/2024.10.19.923.patch#ruadlist
+! Last modified: Sat, 19 Oct 2024 20:26:17 +0000
+! Diff-Path: ../patches/2024.10.19.1226.patch#ruadlist
 d11121 1
 a11121 1
 ||cont.ws/js/*.js?c=$script
@@ -28,12 +28,18 @@ a19138 1
 d19424 1
 a19424 1
 1tulatv.ru,animevost.org,animevost.top,bessarabiainform.com,bombardir.ru,dwg.ru,ebooktime.net,fex.net,pc-consultant.ru,programmersforum.ru,rusplt.ru,sport24.ru,traktorist.ua,vost.pw##a[href*="utm_"]
+d20795 1
 d20807 1
 a20807 1
 advizzer.com,bragazeta.ru,cataclysmdda.ru,chehov-vid.ru,conversion.im,coollib.net,ekaraganda.kz,ereport.ru,euro-football.ru,floraprice.ru,gameguru.ru,go64.ru,grinkod.spb.ru,igrixl.ru,kp40.ru,kramatorsk.info,lada.kz,mirnov.ru,mix.tj,musicmp3spb.org,musicwars.ru,news29.ru,pogoda.com,ptzgovorit.ru,servers-samp.ru,sovets.net,sport.ua,sports.kz,tayga.info,tparser.org,uaprom.info,vidal.ru##div[id^="banner"]
+d20843 1
+a20905 1
+game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div[id^="opachalo"]
 d21735 1
 a21735 1
 ||pikabu.ru/ajax/*&*ykq=$xmlhttprequest
+a21746 1
+growhow.in.ua###custom-background-css {remove:true;}
 a21939 1
 gismeteo.by,gismeteo.kz,gismeteo.ru##.extender
 d21944 1
@@ -48,6 +54,8 @@ d22803 1
 d24371 1
 a24371 1
 ||sravni.ru^$third-party,domain=~amazingthailand.ru|~autospot.ru|~bankauto.ru|~credistory.ru|~egrnins.ru|~eldorado.ru|~fin-markt.ru|~ipotekain.ru|~jetravel.ru|~mafin.ru|~osago.online|~osago4u.ru|~osagoonline.info|~rosstrah.online|~shop.vsk.ru|~sravni.ru|~sravnikupi.ru|~svyaznoy.ru|~trip-online.ru|~www-eg-insurance-net.filesusr.com
+a25881 1
+rknweb.ru##.IsAdBlock
 d26622 2
 a26623 2
 ag,biz,buzz,by,city,club,co,com,fi,in,ink,kim,loan,me,name,net,org,rest,run,sh,so,space,today,tv,vip,website,win##body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"] > [id$="er"]:nth-child(-n+3):style(width: unset !important)
@@ -59,6 +67,10 @@ a27741 1
 e.mail.ru,octavius.mail.ru##.advert-column:style(width: 0 !important)
 a27744 1
 e.mail.ru,octavius.mail.ru##.letter-list-item-adv__container:style(height: 0 !important; opacity: 0 !important; pointer-events: none !important)
+a27824 1
+growhow.in.ua###custom-background-css:remove()
+a27978 1
+growhow.in.ua##+js(abort-on-property-read, wpsite_clickable_data)
 d28162 1
 a28172 1
 ya.ru##+js(set-constant, Object.prototype.renderFeed, null)
