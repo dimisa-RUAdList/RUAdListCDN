@@ -1,11 +1,15 @@
-diff name:ruadlist lines:23 checksum:79a076cfd4
+diff name:ruadlist lines:31 checksum:b1a50ed86a
 d4 2
 a5 2
-! Last modified: Sat, 19 Oct 2024 05:24:57 +0000
-! Diff-Path: ../patches/2024.10.19.324.patch#ruadlist
+! Last modified: Sat, 19 Oct 2024 10:26:37 +0000
+! Diff-Path: ../patches/2024.10.19.626.patch#ruadlist
 d11121 1
 a11121 1
 ||cont.ws/js/*.js?c=$script
+a13870 1
+vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] > ._post_content .PostHeader > .PostHeaderInfo span.PostHeaderSubtitle__item [class] [class] [class])
+a18816 1
+vk.com,vk.ru##[data-ad-block-uid]
 d21734 1
 a21734 1
 ||pikabu.ru/ajax/*&*ykq=$xmlhttprequest
@@ -16,6 +20,10 @@ a21943 1
 gismeteo.by,gismeteo.kz,gismeteo.ru##.top-media-extender
 a22434 1
 championat.com##.header-bottom__adv
+d26620 2
+a26621 2
+ag,biz,buzz,by,city,club,co,com,fi,in,ink,kim,loan,me,name,net,org,rest,run,sh,so,space,today,tv,vip,website,win##body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"] > [id$="er"]:nth-child(-n+3):style(width: unset !important)
+ag,biz,buzz,by,city,club,co,com,fi,in,ink,kim,loan,me,name,net,org,rest,run,sh,so,space,today,tv,vip,website,win##body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"]:style(padding-top: 0 !important; background-color: inherit !important)
 d27535 1
 a27535 1
 ya.ru##.i-mini-bem[style]

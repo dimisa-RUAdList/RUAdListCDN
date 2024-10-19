@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 19 Oct 2024 05:24:57 +0000
-! Diff-Path: ../patches/2024.10.19.324.patch#ruadlist
+! Last modified: Sat, 19 Oct 2024 10:26:37 +0000
+! Diff-Path: ../patches/2024.10.19.626.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -13868,6 +13868,7 @@ myparcels.ru###featured-wants
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] > ._post_content .PostHeader > .PostHeaderInfo > .PostHeaderSubtitle > .PostHeaderSubtitle__item:-abp-contains(/Community ad|Реклама |Рэклама | жарнама/))
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] > ._post_content .PostHeader > .PostHeaderInfo [onclick*="ads_params:"])
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] > ._post_content .PostHeader > .PostHeaderInfo [onmouseover*="AdsLight"])
+vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] > ._post_content .PostHeader > .PostHeaderInfo span.PostHeaderSubtitle__item [class] [class] [class])
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] > ._post_content .post_header_info [onmouseover*="AdsLight"])
 itop-gear.ru###fguru
 partarium.ru###filter-form a[href^="/redirect/"][target="_blank"]
@@ -18814,6 +18815,7 @@ sports.kz##[class^="xbet"]
 buhonline.ru##[class^=sideBanner]
 ficbook.net##[data-ab-test-id]
 realist.online,zn.ua##[data-action="banners"]
+vk.com,vk.ru##[data-ad-block-uid]
 mmo13.ru,ps4.in.ua##[data-ad-slot]
 buhgalter.com.ua,buhgalter911.com,factor.ua,tsn.ua,unian.info,unian.net,unian.ua##[data-ad]
 banki.ru##[data-adfox-container]
@@ -26619,8 +26621,8 @@ hdkinozzoro.ru##.jirrua:style(margin-top: 0 !important)
 hdkinozzoro.ru##body:not(#id):style(padding-top: 0 !important)
 ! ---
 ! HDREZKA
-ag,biz,buzz,by,city,club,co,com,in,ink,kim,loan,me,name,net,org,rest,run,sh,so,space,today,tv,vip,website,win##body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"] > [id$="er"]:nth-child(-n+3):style(width: unset !important)
-ag,biz,buzz,by,city,club,co,com,in,ink,kim,loan,me,name,net,org,rest,run,sh,so,space,today,tv,vip,website,win##body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"]:style(padding-top: 0 !important; background-color: inherit !important)
+ag,biz,buzz,by,city,club,co,com,fi,in,ink,kim,loan,me,name,net,org,rest,run,sh,so,space,today,tv,vip,website,win##body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"] > [id$="er"]:nth-child(-n+3):style(width: unset !important)
+ag,biz,buzz,by,city,club,co,com,fi,in,ink,kim,loan,me,name,net,org,rest,run,sh,so,space,today,tv,vip,website,win##body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"]:style(padding-top: 0 !important; background-color: inherit !important)
 ! ---
 hdru.net##.page:style(margin-top: 0 !important)
 ! ---
