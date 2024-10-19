@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 18 Oct 2024 19:18:19 +0000
-! Diff-Path: ../patches/2024.10.18.1158.patch#ruadlist
+! Last modified: Sat, 19 Oct 2024 01:49:15 +0000
+! Diff-Path: ../patches/2024.10.19.109.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -11118,7 +11118,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||compedu.ru^$domain=kopilkaurokov.ru
 ||consmed.ru/branding/
 ||consmed.ru/tizergen/
-||cont.ws/js/*.js?cf=$script
+||cont.ws/js/*.js?c=$script
 ||conversion.im/admin/ajax/banners/
 ||cookielaw.org^$domain=adme.media
 ||cookreactor.com^$subdocument
@@ -21731,7 +21731,7 @@ $csp=script-src-attr 'none',domain=eurointegration.com.ua|pravda.com.ua
 @@||ssp.rambler.ru/capirs_async.js|$script,domain=www.championat.com
 https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|livejournal.com|olegmakarenko.ru|periskop.su|shakko.ru|shiro-kino.ru|vadimrazumov.ru
 ||imgfrost.net^$third-party
-||pikabu.ru/ajax/*&*xkq=$xmlhttprequest
+||pikabu.ru/ajax/*&*ykq=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
