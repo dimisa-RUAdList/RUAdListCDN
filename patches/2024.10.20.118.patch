@@ -1,10 +1,13 @@
-diff name:ruadlist lines:32 checksum:7a04336f33
+diff name:ruadlist lines:48 checksum:ebd56d936f
 d4 2
 a5 2
-! Last modified: Sun, 20 Oct 2024 16:29:07 +0000
-! Diff-Path: ../patches/2024.10.20.989.patch#ruadlist
+! Last modified: Sun, 20 Oct 2024 21:22:03 +0000
+! Diff-Path: ../patches/2024.10.20.1282.patch#ruadlist
 a16178 1
 versii.if.ua##.fb-s-blog-two-top a[href]:not([href^="/"]):not([href^="https://versii.if.ua"])
+d17144 2
+a17413 1
+livelib.ru##.prm-header
 a17669 1
 kommersant.ru##.rocket_man
 a19935 1
@@ -15,12 +18,25 @@ a21154 1
 versii.if.ua##header > [id] > div > div ~ a[href]:not([href^="/"]):not([href^="https://versii.if.ua"])
 a21724 1
 ://mail.ru$csp=img-src 'self' https:
+d21757 1
+a21757 1
+drive2.ru##[data-container="outer"]
+d21760 2
+a21761 2
+drive2.ru##[data-sticky-adtune]
+drive2.ru##[data-test="AdKebabAndLabel--adLabelContent"]
 d21771 17
 a21787 4
 ~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] article:not([data-testid]):-abp-has(div div div svg > use)
 ~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] p:-abp-has(div div div svg > use)
 ~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] section:-abp-has(div div div svg > use)
 ~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] span:not(.container):-abp-has(div div div svg > use)
+a21792 2
+drive2.ru##div[class$="--equal"] > div[class] > div:not([class]):not([id])
+drive2.ru##div[class$="--equal"] > div[class] > div[id]:not(:empty)
+d21797 1
+a21797 1
+drive2.ru,liveinternet.ru,sdamgia.ru##div[data-name="adWrapper"]
 d21805 4
 a21808 1
 e.mail.ru##style:first-child + div[class]:not([id]):last-child
