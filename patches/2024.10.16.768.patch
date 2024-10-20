@@ -1,13 +1,15 @@
-diff name:ruadlist lines:51 checksum:6b654c33ea
+diff name:ruadlist lines:66 checksum:71559b1ab5
 d4 2
 a5 2
-! Last modified: Sun, 20 Oct 2024 06:32:31 +0000
-! Diff-Path: ../patches/2024.10.20.392.patch#ruadlist
+! Last modified: Sun, 20 Oct 2024 11:20:59 +0000
+! Diff-Path: ../patches/2024.10.20.680.patch#ruadlist
 d11121 1
 a11121 1
 ||cont.ws/js/*.js?c=$script
 a13870 1
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] > ._post_content .PostHeader > .PostHeaderInfo span.PostHeaderSubtitle__item [class] [class] [class])
+a17668 1
+kommersant.ru##.rocket_man
 a17711 1
 forum.antichat.club##.sam3Bannner2Uni
 a18816 1
@@ -19,11 +21,22 @@ d20794 1
 d20842 1
 a20904 1
 game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div[id^="opachalo"]
+a21722 1
+://mail.ru$csp=img-src 'self' https:
 d21734 1
 a21734 1
 ||pikabu.ru/ajax/*&*ykq=$xmlhttprequest
 a21745 1
 growhow.in.ua###custom-background-css {remove:true;}
+d21768 17
+a21784 4
+~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] article:not([data-testid]):-abp-has(div div div svg > use)
+~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] p:-abp-has(div div div svg > use)
+~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] section:-abp-has(div div div svg > use)
+~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] span:not(.container):-abp-has(div div div svg > use)
+d21802 4
+a21805 1
+e.mail.ru##style:first-child + div[class]:not([id]):last-child
 a21938 1
 gismeteo.by,gismeteo.kz,gismeteo.ru##.extender
 d21943 1
@@ -43,6 +56,8 @@ ag,biz,buzz,by,city,club,co,com,fi,in,ink,kim,loan,me,name,net,org,rest,run,sh,s
 d27535 1
 a27535 1
 ya.ru##.i-mini-bem[style]
+a27772 1
+mail.ru##.ph-project__user-icon-mask:style(mask-image: inherit !important)
 a27824 1
 growhow.in.ua###custom-background-css:remove()
 a27978 1
