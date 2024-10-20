@@ -1,13 +1,15 @@
-diff name:ruadlist lines:55 checksum:71559b1ab5
+diff name:ruadlist lines:68 checksum:7a04336f33
 d4 2
 a5 2
-! Last modified: Sun, 20 Oct 2024 11:20:59 +0000
-! Diff-Path: ../patches/2024.10.20.680.patch#ruadlist
+! Last modified: Sun, 20 Oct 2024 16:29:07 +0000
+! Diff-Path: ../patches/2024.10.20.989.patch#ruadlist
 d11121 1
 a11121 1
 ||cont.ws/js/*.js?c=$script
 a13870 1
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] > ._post_content .PostHeader > .PostHeaderInfo span.PostHeaderSubtitle__item [class] [class] [class])
+a16177 1
+versii.if.ua##.fb-s-blog-two-top a[href]:not([href^="/"]):not([href^="https://versii.if.ua"])
 a17668 1
 kommersant.ru##.rocket_man
 a17711 1
@@ -17,10 +19,16 @@ vk.com,vk.ru##[data-ad-block-uid]
 d19423 1
 a19423 1
 1tulatv.ru,animevost.org,animevost.top,bessarabiainform.com,bombardir.ru,dwg.ru,ebooktime.net,fex.net,pc-consultant.ru,programmersforum.ru,rusplt.ru,sport24.ru,traktorist.ua,vost.pw##a[href*="utm_"]
+a19932 1
+versii.if.ua##aside > div[class="brxe-block"]
+a20161 1
+versii.if.ua#?#div:-abp-has(> .indication-bor-rad:-abp-contains(РЕКЛАМА))
 d20794 1
 d20842 1
 a20904 1
 game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div[id^="opachalo"]
+a21152 1
+versii.if.ua##header > [id] > div > div ~ a[href]:not([href^="/"]):not([href^="https://versii.if.ua"])
 a21722 1
 ://mail.ru$csp=img-src 'self' https:
 d21734 1
@@ -48,9 +56,14 @@ d26624 2
 a26625 2
 ag,biz,buzz,by,city,club,co,com,fi,in,ink,kim,loan,me,name,net,org,rest,run,sh,so,space,today,tv,vip,website,win##body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"] > [id$="er"]:nth-child(-n+3):style(width: unset !important)
 ag,biz,buzz,by,city,club,co,com,fi,in,ink,kim,loan,me,name,net,org,rest,run,sh,so,space,today,tv,vip,website,win##body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"]:style(padding-top: 0 !important; background-color: inherit !important)
+a27585 1
+dzen.ru##div[class*="widget"] > div[class*="container"] > div ~ div
 a27776 1
 mail.ru##.ph-project__user-icon-mask:style(mask-image: inherit !important)
+a27826 1
+dzen.ru###LayoutTopMicroRoot div[style*="%"]:style(padding-top: unset !important)
 a27828 1
 growhow.in.ua###custom-background-css:remove()
 a27982 1
 growhow.in.ua##+js(abort-on-property-read, wpsite_clickable_data)
+d28277 1
