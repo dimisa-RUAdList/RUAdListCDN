@@ -1,8 +1,8 @@
-diff name:ruadlist lines:106 checksum:d2256a1788
+diff name:ruadlist lines:107 checksum:1ae0f357ba
 d4 2
 a5 2
-! Last modified: Mon, 21 Oct 2024 12:48:40 +0000
-! Diff-Path: ../patches/2024.10.21.768.patch#ruadlist
+! Last modified: Mon, 21 Oct 2024 17:24:21 +0000
+! Diff-Path: ../patches/2024.10.21.1044.patch#ruadlist
 d11121 1
 a11121 1
 ||cont.ws/js/*.js?c=$script
@@ -39,7 +39,7 @@ a21722 1
 ://mail.ru$csp=img-src 'self' https:
 d21734 1
 a21734 1
-||pikabu.ru/ajax/*&*ykq=$xmlhttprequest
+||pikabu.ru/ajax/*&*zkq=$xmlhttprequest
 a21745 1
 growhow.in.ua###custom-background-css {remove:true;}
 d21750 1
@@ -66,8 +66,9 @@ d21794 1
 a21794 1
 drive2.ru,liveinternet.ru,sdamgia.ru##div[data-name="adWrapper"]
 d21802 4
-a21805 1
-e.mail.ru##style:first-child + div[class]:not([id]):last-child
+a21805 2
+e.mail.ru##style:first-child + div[class]:not([id])
+e.mail.ru##style:first-child + div[class]:not([id]) ~ div[class]:not([id])
 a21938 1
 gismeteo.by,gismeteo.kz,gismeteo.ru##.extender
 d21943 1

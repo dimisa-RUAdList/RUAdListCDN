@@ -1,14 +1,17 @@
-diff name:ruadlist lines:33 checksum:d2256a1788
+diff name:ruadlist lines:40 checksum:1ae0f357ba
 d4 2
 a5 2
-! Last modified: Mon, 21 Oct 2024 12:48:40 +0000
-! Diff-Path: ../patches/2024.10.21.768.patch#ruadlist
+! Last modified: Mon, 21 Oct 2024 17:24:21 +0000
+! Diff-Path: ../patches/2024.10.21.1044.patch#ruadlist
 d16570 1
 a16570 1
 howdyho.net,howdyho.pro#?#.inner > .default:-abp-has(> header > h1:-abp-contains(PEKЛAМA))
 d17145 2
 a17414 1
 livelib.ru##.prm-header
+d21742 1
+a21742 1
+||pikabu.ru/ajax/*&*zkq=$xmlhttprequest
 d21759 1
 a21759 2
 howdyho.net,howdyho.pro##:not(my-obnaruzhili-adblock)
@@ -26,6 +29,10 @@ drive2.ru##div[class$="--equal"] > div[class] > div[id]:not(:empty)
 d21790 1
 a21790 1
 drive2.ru,liveinternet.ru,sdamgia.ru##div[data-name="adWrapper"]
+d21798 1
+a21798 2
+e.mail.ru##style:first-child + div[class]:not([id])
+e.mail.ru##style:first-child + div[class]:not([id]) ~ div[class]:not([id])
 a27449 2
 versii.if.ua##.fb-sidebar__main > a[href]:style(pointer-events: none !important)
 ! ---

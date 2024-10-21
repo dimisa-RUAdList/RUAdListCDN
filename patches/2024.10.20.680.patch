@@ -1,8 +1,8 @@
-diff name:ruadlist lines:46 checksum:d2256a1788
+diff name:ruadlist lines:53 checksum:1ae0f357ba
 d4 2
 a5 2
-! Last modified: Mon, 21 Oct 2024 12:48:40 +0000
-! Diff-Path: ../patches/2024.10.21.768.patch#ruadlist
+! Last modified: Mon, 21 Oct 2024 17:24:21 +0000
+! Diff-Path: ../patches/2024.10.21.1044.patch#ruadlist
 a16178 1
 versii.if.ua##.fb-s-blog-two-top a[href]:not([href^="/"]):not([href^="https://versii.if.ua"])
 d16569 1
@@ -17,6 +17,9 @@ a20165 1
 versii.if.ua#?#div:-abp-has(> .indication-bor-rad:-abp-contains(РЕКЛАМА))
 a21155 1
 versii.if.ua##header > [id] > div > div ~ a[href]:not([href^="/"]):not([href^="https://versii.if.ua"])
+d21738 1
+a21738 1
+||pikabu.ru/ajax/*&*zkq=$xmlhttprequest
 d21755 1
 a21755 2
 howdyho.net,howdyho.pro##:not(my-obnaruzhili-adblock)
@@ -34,6 +37,10 @@ drive2.ru##div[class$="--equal"] > div[class] > div[id]:not(:empty)
 d21786 1
 a21786 1
 drive2.ru,liveinternet.ru,sdamgia.ru##div[data-name="adWrapper"]
+d21794 1
+a21794 2
+e.mail.ru##style:first-child + div[class]:not([id])
+e.mail.ru##style:first-child + div[class]:not([id]) ~ div[class]:not([id])
 a27445 2
 versii.if.ua##.fb-sidebar__main > a[href]:style(pointer-events: none !important)
 ! ---
