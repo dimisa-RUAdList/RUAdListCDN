@@ -1,8 +1,8 @@
-diff name:ruadlist lines:86 checksum:cb22a4289f
+diff name:ruadlist lines:99 checksum:d2256a1788
 d4 2
 a5 2
-! Last modified: Mon, 21 Oct 2024 07:23:58 +0000
-! Diff-Path: ../patches/2024.10.21.443.patch#ruadlist
+! Last modified: Mon, 21 Oct 2024 12:48:40 +0000
+! Diff-Path: ../patches/2024.10.21.768.patch#ruadlist
 d11121 1
 a11121 1
 ||cont.ws/js/*.js?c=$script
@@ -10,6 +10,9 @@ a13870 1
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] > ._post_content .PostHeader > .PostHeaderInfo span.PostHeaderSubtitle__item [class] [class] [class])
 a16177 1
 versii.if.ua##.fb-s-blog-two-top a[href]:not([href^="/"]):not([href^="https://versii.if.ua"])
+d16568 1
+a16568 1
+howdyho.net,howdyho.pro#?#.inner > .default:-abp-has(> header > h1:-abp-contains(PEKЛAМA))
 d17143 2
 a17412 1
 livelib.ru##.prm-header
@@ -39,6 +42,10 @@ a21734 1
 ||pikabu.ru/ajax/*&*ykq=$xmlhttprequest
 a21745 1
 growhow.in.ua###custom-background-css {remove:true;}
+d21750 1
+a21750 2
+howdyho.net,howdyho.pro##:not(my-obnaruzhili-adblock)
+fonmod.com,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 d21754 1
 a21754 1
 drive2.ru##[data-container="outer"]
@@ -74,6 +81,9 @@ d26623 2
 a26624 2
 ag,biz,buzz,by,city,club,co,com,fi,in,ink,kim,loan,me,name,net,org,rest,run,sh,so,space,today,tv,vip,website,win##body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"] > [id$="er"]:nth-child(-n+3):style(width: unset !important)
 ag,biz,buzz,by,city,club,co,com,fi,in,ink,kim,loan,me,name,net,org,rest,run,sh,so,space,today,tv,vip,website,win##body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"]:style(padding-top: 0 !important; background-color: inherit !important)
+a27456 2
+versii.if.ua##.fb-sidebar__main > a[href]:style(pointer-events: none !important)
+! ---
 a27584 1
 dzen.ru##div[class*="widget"] > div[class*="container"] > div ~ div
 a27775 1
@@ -85,3 +95,6 @@ growhow.in.ua###custom-background-css:remove()
 a27981 1
 growhow.in.ua##+js(abort-on-property-read, wpsite_clickable_data)
 d28276 1
+d28297 1
+a28297 1
+howdyho.*##+js(no-setInterval-if, pleasemakeitstop)

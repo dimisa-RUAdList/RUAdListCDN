@@ -1,10 +1,13 @@
-diff name:ruadlist lines:48 checksum:cb22a4289f
+diff name:ruadlist lines:61 checksum:d2256a1788
 d4 2
 a5 2
-! Last modified: Mon, 21 Oct 2024 07:23:58 +0000
-! Diff-Path: ../patches/2024.10.21.443.patch#ruadlist
+! Last modified: Mon, 21 Oct 2024 12:48:40 +0000
+! Diff-Path: ../patches/2024.10.21.768.patch#ruadlist
 a16178 1
 versii.if.ua##.fb-s-blog-two-top a[href]:not([href^="/"]):not([href^="https://versii.if.ua"])
+d16569 1
+a16569 1
+howdyho.net,howdyho.pro#?#.inner > .default:-abp-has(> header > h1:-abp-contains(PEKЛAМA))
 d17144 2
 a17413 1
 livelib.ru##.prm-header
@@ -18,6 +21,10 @@ a21154 1
 versii.if.ua##header > [id] > div > div ~ a[href]:not([href^="/"]):not([href^="https://versii.if.ua"])
 a21724 1
 ://mail.ru$csp=img-src 'self' https:
+d21753 1
+a21753 2
+howdyho.net,howdyho.pro##:not(my-obnaruzhili-adblock)
+fonmod.com,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 d21757 1
 a21757 1
 drive2.ru##[data-container="outer"]
@@ -40,6 +47,9 @@ drive2.ru,liveinternet.ru,sdamgia.ru##div[data-name="adWrapper"]
 d21805 4
 a21808 1
 e.mail.ru##style:first-child + div[class]:not([id]):last-child
+a27459 2
+versii.if.ua##.fb-sidebar__main > a[href]:style(pointer-events: none !important)
+! ---
 a27587 1
 dzen.ru##div[class*="widget"] > div[class*="container"] > div ~ div
 a27778 1
@@ -47,3 +57,6 @@ mail.ru##.ph-project__user-icon-mask:style(mask-image: inherit !important)
 a27828 1
 dzen.ru###LayoutTopMicroRoot div[style*="%"]:style(padding-top: unset !important)
 d28281 1
+d28302 1
+a28302 1
+howdyho.*##+js(no-setInterval-if, pleasemakeitstop)
