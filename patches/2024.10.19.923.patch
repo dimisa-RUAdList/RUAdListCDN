@@ -1,13 +1,16 @@
-diff name:ruadlist lines:77 checksum:057457d3c3
+diff name:ruadlist lines:82 checksum:cdf7dda1cc
 d4 2
 a5 2
-! Last modified: Tue, 22 Oct 2024 03:31:00 +0000
-! Diff-Path: ../patches/2024.10.22.210.patch#ruadlist
+! Last modified: Tue, 22 Oct 2024 08:31:08 +0000
+! Diff-Path: ../patches/2024.10.22.511.patch#ruadlist
 a16178 1
 versii.if.ua##.fb-s-blog-two-top a[href]:not([href^="/"]):not([href^="https://versii.if.ua"])
 d16569 1
 a16569 1
 howdyho.net,howdyho.pro#?#.inner > .default:-abp-has(> header > h1:-abp-contains(PEKЛAМA))
+a17081 2
+onliner.by#?#.news-promo[style^="background-color:"]:-abp-has([href]:not([href*=".onliner.by/"]))
+onliner.by#?#.news-promo[style^="background-color:"]:-abp-has([href^="https://catalog.onliner.by/"])
 d17144 2
 a17413 1
 livelib.ru##.prm-header
@@ -27,7 +30,7 @@ a21725 1
 ://mail.ru$csp=img-src 'self' https:
 d21737 1
 a21737 1
-||pikabu.ru/ajax/*&*zkq=$xmlhttprequest
+||pikabu.ru/ajax/*&*akq=$xmlhttprequest
 a21748 1
 growhow.in.ua###custom-background-css {remove:true;}
 d21753 1
@@ -47,6 +50,8 @@ a21787 4
 ~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] p:-abp-has(div div div svg > use)
 ~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] section:-abp-has(div div div svg > use)
 ~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] span:not(.container):-abp-has(div div div svg > use)
+a21790 1
+drive2.ru#?#div:-abp-properties(min-height: 555px)
 a21792 2
 drive2.ru##div[class$="--equal"] > div[class] > div:not([class]):not([id])
 drive2.ru##div[class$="--equal"] > div[class] > div[id]:not(:empty)

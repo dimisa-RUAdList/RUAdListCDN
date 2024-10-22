@@ -1,18 +1,23 @@
-diff name:ruadlist lines:24 checksum:057457d3c3
+diff name:ruadlist lines:29 checksum:cdf7dda1cc
 d4 2
 a5 2
-! Last modified: Tue, 22 Oct 2024 03:31:00 +0000
-! Diff-Path: ../patches/2024.10.22.210.patch#ruadlist
+! Last modified: Tue, 22 Oct 2024 08:31:08 +0000
+! Diff-Path: ../patches/2024.10.22.511.patch#ruadlist
 d16570 1
 a16570 1
 howdyho.net,howdyho.pro#?#.inner > .default:-abp-has(> header > h1:-abp-contains(PEKЛAМA))
+a17082 2
+onliner.by#?#.news-promo[style^="background-color:"]:-abp-has([href]:not([href*=".onliner.by/"]))
+onliner.by#?#.news-promo[style^="background-color:"]:-abp-has([href^="https://catalog.onliner.by/"])
 d21741 1
 a21741 1
-||pikabu.ru/ajax/*&*zkq=$xmlhttprequest
+||pikabu.ru/ajax/*&*akq=$xmlhttprequest
 d21758 1
 a21758 2
 howdyho.net,howdyho.pro##:not(my-obnaruzhili-adblock)
 fonmod.com,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
+a21782 1
+drive2.ru#?#div:-abp-properties(min-height: 555px)
 d21799 1
 a21799 2
 e.mail.ru##style:first-child + div[class]:not([id])

@@ -1,13 +1,16 @@
-diff name:ruadlist lines:53 checksum:057457d3c3
+diff name:ruadlist lines:58 checksum:cdf7dda1cc
 d4 2
 a5 2
-! Last modified: Tue, 22 Oct 2024 03:31:00 +0000
-! Diff-Path: ../patches/2024.10.22.210.patch#ruadlist
+! Last modified: Tue, 22 Oct 2024 08:31:08 +0000
+! Diff-Path: ../patches/2024.10.22.511.patch#ruadlist
 a16178 1
 versii.if.ua##.fb-s-blog-two-top a[href]:not([href^="/"]):not([href^="https://versii.if.ua"])
 d16569 1
 a16569 1
 howdyho.net,howdyho.pro#?#.inner > .default:-abp-has(> header > h1:-abp-contains(PEKЛAМA))
+a17081 2
+onliner.by#?#.news-promo[style^="background-color:"]:-abp-has([href]:not([href*=".onliner.by/"]))
+onliner.by#?#.news-promo[style^="background-color:"]:-abp-has([href^="https://catalog.onliner.by/"])
 d17144 2
 a17413 1
 livelib.ru##.prm-header
@@ -19,7 +22,7 @@ a21155 1
 versii.if.ua##header > [id] > div > div ~ a[href]:not([href^="/"]):not([href^="https://versii.if.ua"])
 d21738 1
 a21738 1
-||pikabu.ru/ajax/*&*zkq=$xmlhttprequest
+||pikabu.ru/ajax/*&*akq=$xmlhttprequest
 d21755 1
 a21755 2
 howdyho.net,howdyho.pro##:not(my-obnaruzhili-adblock)
@@ -31,6 +34,8 @@ d21762 2
 a21763 2
 drive2.ru##[data-sticky-adtune]
 drive2.ru##[data-test="AdKebabAndLabel--adLabelContent"]
+a21779 1
+drive2.ru#?#div:-abp-properties(min-height: 555px)
 a21781 2
 drive2.ru##div[class$="--equal"] > div[class] > div:not([class]):not([id])
 drive2.ru##div[class$="--equal"] > div[class] > div[id]:not(:empty)

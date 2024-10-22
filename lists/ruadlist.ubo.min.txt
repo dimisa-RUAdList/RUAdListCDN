@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 22 Oct 2024 03:31:00 +0000
-! Diff-Path: ../patches/2024.10.22.210.patch#ruadlist
+! Last modified: Tue, 22 Oct 2024 08:31:08 +0000
+! Diff-Path: ../patches/2024.10.22.511.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -17080,6 +17080,8 @@ onliner.by##.news-media__preview > a:not([href*="onliner.by/"]) > img
 1plus1.ua##.news-partners-add
 onliner.by#?#.news-promo:-abp-has(> .news-promo__details)
 onliner.by#?#.news-promo[style^="background-color:"]:-abp-has([href*="banner"])
+onliner.by#?#.news-promo[style^="background-color:"]:-abp-has([href]:not([href*=".onliner.by/"]))
+onliner.by#?#.news-promo[style^="background-color:"]:-abp-has([href^="https://catalog.onliner.by/"])
 armyinform.com.ua##.news-section_items > li.link > a[target="_blank"] > img
 onliner.by##.news-text > * > a[href^="https://catalog.onliner.by/"][href*="utm_"]
 football24.ua#?#.news-text > .insert:-abp-has(> a[target="_blank"])
@@ -21738,7 +21740,7 @@ $csp=script-src-attr 'none',domain=eurointegration.com.ua|pravda.com.ua
 @@||ssp.rambler.ru/capirs_async.js|$script,domain=www.championat.com
 https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|livejournal.com|olegmakarenko.ru|periskop.su|shakko.ru|shiro-kino.ru|vadimrazumov.ru
 ||imgfrost.net^$third-party
-||pikabu.ru/ajax/*&*zkq=$xmlhttprequest
+||pikabu.ru/ajax/*&*akq=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -21781,6 +21783,7 @@ www.ixbt.com#?#body > style:-abp-contains(margin-top) {remove:true;}
 sdamgia.ru##center > div[id][style]
 dzen.ru#?#div:-abp-has(> div:first-child > style + div a span)
 cq.ru#?#div:-abp-properties(content: "Реклама")
+drive2.ru#?#div:-abp-properties(min-height: 555px)
 dzen.ru#?#div:-abp-properties(position: relative !important)
 otvet.mail.ru#?#div:empty:-abp-properties(content: "Реклама")
 drive2.ru##div[class$="--equal"] > div[class] > div:not([class]):not([id])
