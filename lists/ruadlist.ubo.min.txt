@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 22 Oct 2024 08:31:08 +0000
-! Diff-Path: ../patches/2024.10.22.511.patch#ruadlist
+! Last modified: Tue, 22 Oct 2024 13:31:18 +0000
+! Diff-Path: ../patches/2024.10.22.811.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -12971,7 +12971,6 @@ igdz1.ru^$script,domain=igdz.ru
 ||svadba-kursk.ru/forum/banner/
 ||svapka.ru/block_script$script
 ||svezachok.ru/uploads/loadsv.
-||svoboda.org/a/russian-echo-widget/
 ||svpressa.ru/js/_svpressa.js
 ||sw19.ru/pictures/texnomag.
 ||swip.su/wp-content/uploads/*.gif
@@ -15310,7 +15309,6 @@ nr2.ru,russian-bazaar.com##.bann
 kod.ru##.banner + hr
 saratovnews.ru##.banner > noindex
 football.ua##.banner ~ .separator
-svoboda.org##.banner--cover
 paramountcomedy.com.ua##.banner--tall
 roem.ru##.banner-970x90
 mirf.ru##.banner-acf
@@ -16912,7 +16910,6 @@ bookskeeper.ru##.mdl
 ximepa.ru##.mdwr
 gdz-putina.fun,gdz.fm,gdz.ninja,gdz.ru,gdzguru.com,gdzotputina.club,gdzputina.net,megaresheba.com,megaresheba.ru,resheba.me,reshebnik.com,spishi.fun,stavcur.ru,sumypost.com,xn--c1acj.xn--p1acf,xn--c1acj.xn--p1ai,zoobrilka.net##.media
 myslo.ru##.media-ads-block
-svoboda.org#?#.media-block-wrap:-abp-has(> div iframe[src*="/russian-echo-widget/"])
 shostka.info##.media:not([style="padding:0;"])
 auto43.ru##.media_aside_our-partners
 gazeta.spb.ru##.mediacartel
@@ -28299,7 +28296,7 @@ ozon.ru##div[data-widget="banner"]:matches-path(/my/reviews/promo):style(display
 pronpic.org##div[style="color:red;font-size:25px;"], .adblock_loock
 fanserial.fun,fanserialstv.net,hdrezka.*,rezka.*##+js(set-constant, Object.prototype.preroll, undefined)
 hdrezka.*,rezka.*##+js(abort-current-inline-script, document.getElementsByTagName, AMSP.loadAsset)
-howdyho.*##+js(no-setInterval-if, pleasemakeitstop)
+howdyho.*##+js(no-setInterval-if, 1e3)
 howdyho.*##+js(set-attr, #progress-value, data-timer, 16)
 dzen.ru##iframe[style^="position:"][style*="absolute"][srcdoc]:remove()
 m.rp5.*#@#.adsbygoogle
