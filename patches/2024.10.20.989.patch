@@ -1,8 +1,8 @@
-diff name:ruadlist lines:65 checksum:b9a189c0ac
+diff name:ruadlist lines:64 checksum:7556f132f1
 d4 2
 a5 2
-! Last modified: Thu, 24 Oct 2024 05:26:36 +0000
-! Diff-Path: ../patches/2024.10.24.326.patch#ruadlist
+! Last modified: Thu, 24 Oct 2024 10:28:25 +0000
+! Diff-Path: ../patches/2024.10.24.628.patch#ruadlist
 a1353 1
 ||csscloud.live^$third-party
 d10476 1
@@ -30,7 +30,7 @@ a20017 1
 101.ru,101kofemashina.ru,1in.am,alau.kz,alexua.tv,animejapan.tv,bit.ua,bugaga.ru,c-inform.info,comments.ua,csgamer.ru,ctv7.ru,cvnews.cv.ua,dead-serial.com,e-libra.ru,fashiony.ru,fclmnews.ru,fishki.net,forpost.lviv.ua,game2day.ru,gameinside.ua,ggscore.com,gorod.dp.ua,grimm-online.org,gta.com.ua,horrorzone.ru,ifnews.org.ua,igrovaya.org,igry-online.net,itechua.com,izbezhat-nakazania.com,jetsetter.ua,jut.su,kievvlast.com.ua,kinoafisha.info,ko.com.ua,kosti-tv.com,kushvsporte.ru,likeni.ru,lovesun.by,lvnews.org.ua,mac-torrent-download.net,madjong-besplatno.ru,mirf.ru,moldfootball.com,mybrazz.club,nashkiev.ua,ne-kurim.ru,pesikot.org,pimpletv.ru,playua.net,post-tracker.ru,povarenok.ru,prodota.ru,prosports.kg,prosports.kz,prosportua.com,relook.ru,rvnews.rv.ua,saratovnews.ru,shuba.life,sopsport.org,spletnica-tv.com,sportarena.com,strela-online.com,teenwolf-tv.com,tenews.org.ua,tg.telepult.pro,theflash-tv.com,topfile.tj,traktorist.ua,uanews.org.ua,udargol.com,upl.ua,vsetors.org,vskazke-tv.com,zab.ru,zorgee.ru##body > a[href][target="_blank"]
 d21742 1
 a21742 1
-||pikabu.ru/ajax/*&*bkq=$xmlhttprequest
+||pikabu.ru/ajax/*&*ckq=$xmlhttprequest
 d21759 1
 a21759 2
 howdyho.net,howdyho.pro##:not(my-obnaruzhili-adblock)
@@ -51,9 +51,6 @@ d21790 1
 a21790 1
 drive2.ru,liveinternet.ru,sdamgia.ru##div[data-name="adWrapper"]
 d21798 1
-a21798 2
-e.mail.ru##style:first-child + div[class]:not([id])
-e.mail.ru##style:first-child + div[class]:not([id]) ~ div[class]:not([id])
 a22556 1
 rbc.ru##[data-placement]
 a27449 2
@@ -63,4 +60,6 @@ a27718 1
 rbc.ru,sportrbc.ru##.news-feed a[href*="utm_campaign"]
 d28294 1
 a28294 1
-howdyho.*##+js(no-setInterval-if, 1e3)
+howdyho.*##+js(no-setInterval-if, 'height()')
+a28402 1
+e.mail.ru,octavius.mail.ru##+js(no-setTimeout-if, MIMIC_FORCE)

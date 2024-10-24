@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 24 Oct 2024 05:26:36 +0000
-! Diff-Path: ../patches/2024.10.24.326.patch#ruadlist
+! Last modified: Thu, 24 Oct 2024 10:28:25 +0000
+! Diff-Path: ../patches/2024.10.24.628.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21739,7 +21739,7 @@ $csp=script-src-attr 'none',domain=eurointegration.com.ua|pravda.com.ua
 @@||ssp.rambler.ru/capirs_async.js|$script,domain=www.championat.com
 https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|livejournal.com|olegmakarenko.ru|periskop.su|shakko.ru|shiro-kino.ru|vadimrazumov.ru
 ||imgfrost.net^$third-party
-||pikabu.ru/ajax/*&*bkq=$xmlhttprequest
+||pikabu.ru/ajax/*&*ckq=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -21799,8 +21799,6 @@ sdamgia.ru##div[style*="important;"][style*="width:"][style*="height:"] *
 www.drive2.ru##iframe[style="display: block; border-width: 0px;"]
 www.drive2.ru##iframe[style="opacity: 1;"]
 liveinternet.ru##style + div > div > div > div > div a
-e.mail.ru##style:first-child + div[class]:not([id])
-e.mail.ru##style:first-child + div[class]:not([id]) ~ div[class]:not([id])
 !#endif
 soyztreid.website##:not(my-obnaruzhili-blokirovshchik)
 ||liferoom.net^*.$third-party,popup
@@ -28300,7 +28298,7 @@ ozon.ru##div[data-widget="banner"]:matches-path(/my/reviews/promo):style(display
 pronpic.org##div[style="color:red;font-size:25px;"], .adblock_loock
 fanserial.fun,fanserialstv.net,hdrezka.*,rezka.*##+js(set-constant, Object.prototype.preroll, undefined)
 hdrezka.*,rezka.*##+js(abort-current-inline-script, document.getElementsByTagName, AMSP.loadAsset)
-howdyho.*##+js(no-setInterval-if, 1e3)
+howdyho.*##+js(no-setInterval-if, 'height()')
 howdyho.*##+js(set-attr, #progress-value, data-timer, 16)
 dzen.ru##iframe[style^="position:"][style*="absolute"][srcdoc]:remove()
 m.rp5.*#@#.adsbygoogle
@@ -28409,6 +28407,7 @@ e.mail.ru##body:not(#id) > div[style="position: absolute; visibility: hidden; to
 ! newapp
 e.mail.ru,octavius.mail.ru##+js(addEventListener-defuser, /click|destroy|mousedown/, , elements, .html-fishing)
 e.mail.ru,octavius.mail.ru##+js(href-sanitizer, [data-cke-saved-href^="https://checklink.mail.ru/proxy?"])
+e.mail.ru,octavius.mail.ru##+js(no-setTimeout-if, MIMIC_FORCE)
 e.mail.ru,octavius.mail.ru##+js(no-setTimeout-if, _runBatch, 100)
 e.mail.ru,octavius.mail.ru##+js(set-constant, Object.prototype.hasAdBlock, null)
 e.mail.ru,octavius.mail.ru##body > div > .letter-list-item-adv:style(display: block !important)
