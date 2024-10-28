@@ -1,8 +1,8 @@
-diff name:ruadlist lines:45 checksum:a0ffc79c8a
+diff name:ruadlist lines:51 checksum:9394d7f8ac
 d4 2
 a5 2
-! Last modified: Mon, 28 Oct 2024 09:27:23 +0000
-! Diff-Path: ../patches/2024.10.28.567.patch#ruadlist
+! Last modified: Mon, 28 Oct 2024 14:27:06 +0000
+! Diff-Path: ../patches/2024.10.28.867.patch#ruadlist
 a5629 1
 ||speraspace.com^$third-party
 a13714 1
@@ -21,6 +21,9 @@ a20408 1
 hi-fi.ru,ukranews.com##div[class^="ad-"]
 a20532 1
 odysseus.ctc.ru##div[class^="index-module__notice-"]
+d21744 1
+a21744 1
+||pikabu.ru/ajax/*&*fkq=$xmlhttprequest
 a22030 1
 ~e.mail.ru,mail.ru,~octavius.mail.ru##.tgbv-wrapper
 d22148 1
@@ -30,6 +33,9 @@ d22153 1
 a22153 2
 doc.mail.ru##div[class^="Sidebarinfo__root"]
 cloud.mail.ru,doc.mail.ru##div[class^="Worm__root-"]
+a22294 2
+fontanka.ru##[class*="pictureDayBlock_"] li > a[href*="/?erid="]
+fontanka.ru#?#[class*="pictureDayBlock_"] li:-abp-has(> a[href*="/?erid="])
 d26388 12
 a26399 4
 drive2.com,drive2.ru##div[itemtype*="://schema.org/BlogPosting"] > div:last-child > div:first-child + div[class]:style(width: unset !important; margin-left: unset !important)
