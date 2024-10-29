@@ -1,8 +1,8 @@
-diff name:ruadlist lines:77 checksum:b906269b73
+diff name:ruadlist lines:80 checksum:0d5e032725
 d4 2
 a5 2
-! Last modified: Tue, 29 Oct 2024 10:29:31 +0000
-! Diff-Path: ../patches/2024.10.29.629.patch#ruadlist
+! Last modified: Tue, 29 Oct 2024 15:27:03 +0000
+! Diff-Path: ../patches/2024.10.29.927.patch#ruadlist
 a3272 1
 ||kxfhep.com^$third-party
 a5459 1
@@ -43,11 +43,12 @@ d20912 1
 d21744 1
 a21744 1
 ||pikabu.ru/ajax/*&*ckq=$xmlhttprequest
-a21763 4
-~e.mail.ru,mail.ru,~octavius.mail.ru##?#body[style="overflow: unset; max-height: unset;"] article [class]:not(button):not(a):-abp-properties(cursor: pointer)
-~e.mail.ru,mail.ru,~octavius.mail.ru##?#body[style="overflow: unset; max-height: unset;"] p [class]:not(button):not(a):-abp-properties(cursor: pointer)
-~e.mail.ru,mail.ru,~octavius.mail.ru##?#body[style="overflow: unset; max-height: unset;"] section [class]:not(button):not(a):-abp-properties(cursor: pointer)
-~e.mail.ru,mail.ru,~octavius.mail.ru##?#body[style="overflow: unset; max-height: unset;"] span [class]:not(button):not(a):-abp-properties(cursor: pointer)
+d21780 4
+a21783 4
+~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] :not(a) > span:-abp-properties(overflow-x: hidden)
+~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] article:-abp-properties(overflow-x: hidden)
+~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] p:-abp-properties(overflow-x: hidden)
+~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] section:-abp-properties(overflow-x: hidden)
 a22026 1
 ~e.mail.ru,mail.ru,~octavius.mail.ru##.tgbv-wrapper
 d22144 1
@@ -74,5 +75,7 @@ drive2.com,drive2.ru##div[itemtype*="://schema.org/Photograph"] > div:not(:last-
 drive2.com,drive2.ru##div[itemtype*="://schema.org/Product"] ~ div:not(:last-child):style(min-height: 0 !important; padding-top: unset !important; padding-bottom: unset !important; box-shadow: inherit !important)
 a27541 1
 ya.ru##.multifeed
+a27653 1
+ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.SearchPageGrid-Item_direct
 a27769 1
 mail.ru##.balloon-anchor > .balloon
