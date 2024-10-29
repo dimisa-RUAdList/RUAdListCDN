@@ -1,8 +1,8 @@
-diff name:ruadlist lines:30 checksum:0d5e032725
+diff name:ruadlist lines:34 checksum:a0a0e8f244
 d4 2
 a5 2
-! Last modified: Tue, 29 Oct 2024 15:27:03 +0000
-! Diff-Path: ../patches/2024.10.29.927.patch#ruadlist
+! Last modified: Tue, 29 Oct 2024 20:26:20 +0000
+! Diff-Path: ../patches/2024.10.29.1226.patch#ruadlist
 a3272 1
 ||kxfhep.com^$third-party
 a5459 1
@@ -22,9 +22,13 @@ a21751 1
 ||pikabu.ru/ajax/*&*ckq=$xmlhttprequest
 d21771 4
 d21791 4
-a21794 4
+a21794 8
 ~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] :not(a) > span:-abp-properties(overflow-x: hidden)
 ~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] article:-abp-properties(overflow-x: hidden)
+~e.mail.ru,mail.ru,~octavius.mail.ru##body[style="overflow: unset; max-height: unset;"] div:not([id]):not([class]) > article
+~e.mail.ru,mail.ru,~octavius.mail.ru##body[style="overflow: unset; max-height: unset;"] div:not([id]):not([class]) > p
+~e.mail.ru,mail.ru,~octavius.mail.ru##body[style="overflow: unset; max-height: unset;"] div:not([id]):not([class]) > section
+~e.mail.ru,mail.ru,~octavius.mail.ru##body[style="overflow: unset; max-height: unset;"] div:not([id]):not([class]) > span:not(.container)
 ~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] p:-abp-properties(overflow-x: hidden)
 ~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] section:-abp-properties(overflow-x: hidden)
 a27661 1
