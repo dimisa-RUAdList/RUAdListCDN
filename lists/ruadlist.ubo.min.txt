@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 30 Oct 2024 01:52:09 +0000
-! Diff-Path: ../patches/2024.10.30.112.patch#ruadlist
+! Last modified: Wed, 30 Oct 2024 06:35:23 +0000
+! Diff-Path: ../patches/2024.10.30.395.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22437,12 +22437,14 @@ www.afisha.ru###yandex-zen
 lenta.ru#?#._longgrid:-abp-has(> [class*="info"] > [class*="_ad-title"])
 eda.ru#?#.ad_branding_footer div[class^="emotion"]:-abp-has(> [title="yandexzen"])
 eda.ru##.ad_branding_header > section
+gazeta.ru##.b_nav > a[target="_blank"]
 gazeta.ru##.b_telegram
 championat.com,gazeta.ru,lenta.ru##.banner
 lenta.ru##.banner + div[class][id]
 championat.com##.banner-announce
 championat.com##.banner-parallax
 avtorambler.com,rambler.ru##.commercial-branding article > div:only-child > div:first-child + div + div:last-child
+lenta.ru##.custom-banner
 vp.rambler.ru##.eagleplayer-advertisement-remain-time
 vp.rambler.ru##.eplayer-time-to-ad
 finance.rambler.ru##.finance__partners
