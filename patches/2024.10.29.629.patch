@@ -1,8 +1,8 @@
-diff name:ruadlist lines:53 checksum:b0011426fa
+diff name:ruadlist lines:54 checksum:64921aa66e
 d4 2
 a5 2
-! Last modified: Fri, 01 Nov 2024 08:30:06 +0000
-! Diff-Path: ../patches/2024.11.1.510.patch#ruadlist
+! Last modified: Fri, 01 Nov 2024 13:29:56 +0000
+! Diff-Path: ../patches/2024.11.1.809.patch#ruadlist
 a7121 1
 ||zcode1*.com^$third-party
 a10049 1
@@ -19,10 +19,11 @@ a21752 1
 ||pikabu.ru/ajax/*&*kfc=$xmlhttprequest
 d21772 4
 d21792 4
-a21795 8
-~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] :not(a) > span:-abp-properties(overflow-x: hidden)
+a21795 9
+~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] :not(a):not(li):not(.weather-header__title) > span:not([style]):-abp-properties(overflow-x: hidden)
 ~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] article:-abp-properties(overflow-x: hidden)
 ~e.mail.ru,mail.ru,~octavius.mail.ru##body[style="overflow: unset; max-height: unset;"] div:not([id]):not([class]) > article
+~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] div:not([id]):not([class]) > div:-abp-properties(overflow-x: hidden)
 ~e.mail.ru,mail.ru,~octavius.mail.ru##body[style="overflow: unset; max-height: unset;"] div:not([id]):not([class]) > p
 ~e.mail.ru,mail.ru,~octavius.mail.ru##body[style="overflow: unset; max-height: unset;"] div:not([id]):not([class]) > section
 ~e.mail.ru,mail.ru,~octavius.mail.ru##body[style="overflow: unset; max-height: unset;"] div:not([id]):not([class]) > span:not(.container)
@@ -44,7 +45,7 @@ a26030 1
 baskino.film,dnepr.info,dugtor.ru,filmitorrent.net,filmitorrent.site,jetsetter.ua,kinoafisha.ua,kinobar.vip,kinoukr.com,konohatv.org,ladys.media,moskva.fm,newstudio.tv,nnmclub.ro,nnmclub.to,pay-day.ru,roem.ru,rusfootball.info,trupornolabs.org,utorr.cc,vc.ru,virusinfo.info,wikianime.tv,xxxadulttorrent.org,you-anime.ru,yummyanime.tv,zombie-film.live##body:not(#id):style(padding-top: 0 !important)
 d27550 1
 a27550 1
-ya.ru##[id*="rythm"]
+ya.ru##[id*="feed"][id*="_"]
 a27662 1
 ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.SearchPageGrid-Item_direct
 a27915 1

@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 01 Nov 2024 08:30:06 +0000
-! Diff-Path: ../patches/2024.11.1.510.patch#ruadlist
+! Last modified: Fri, 01 Nov 2024 13:29:56 +0000
+! Diff-Path: ../patches/2024.11.1.809.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21789,9 +21789,10 @@ pikabu.ru##article.story[data-text-length="1"]
 kp.kg,kp.kz,kp.md,kp.ru#?#body > #app div:-abp-properties(background-color: rgb(225, 231, 235))
 www.e1.ru#?#body > script[src^="https://www.e1.ru/"] ~ #app [itemprop] > figure:-abp-has(span:-abp-contains(чуть-чуть и видео загрузится))
 www.ixbt.com#?#body > style:-abp-contains(margin-top) {remove:true;}
-~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] :not(a) > span:-abp-properties(overflow-x: hidden)
+~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] :not(a):not(li):not(.weather-header__title) > span:not([style]):-abp-properties(overflow-x: hidden)
 ~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] article:-abp-properties(overflow-x: hidden)
 ~e.mail.ru,mail.ru,~octavius.mail.ru##body[style="overflow: unset; max-height: unset;"] div:not([id]):not([class]) > article
+~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] div:not([id]):not([class]) > div:-abp-properties(overflow-x: hidden)
 ~e.mail.ru,mail.ru,~octavius.mail.ru##body[style="overflow: unset; max-height: unset;"] div:not([id]):not([class]) > p
 ~e.mail.ru,mail.ru,~octavius.mail.ru##body[style="overflow: unset; max-height: unset;"] div:not([id]):not([class]) > section
 ~e.mail.ru,mail.ru,~octavius.mail.ru##body[style="overflow: unset; max-height: unset;"] div:not([id]):not([class]) > span:not(.container)
@@ -27554,7 +27555,7 @@ xsport.ua##.site:style(margin-top: 0 !important)
 ya.ru##.i-mini-bem[style]
 ya.ru,yandex.by,yandex.kz,yandex.uz##.link-bro
 ya.ru##.market-feed
-ya.ru##[id*="rythm"]
+ya.ru##[id*="feed"][id*="_"]
 ! афиша
 afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.uz##div[class$="-banner"]
 afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.uz##div[data-bem*="height"][data-bem*="R-A-"]
