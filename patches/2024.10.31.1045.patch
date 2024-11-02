@@ -1,8 +1,8 @@
-diff name:ruadlist lines:29 checksum:8b35c5241e
+Diff name:ruadlist lines:32 checksum:92a97675b4
 d4 2
 a5 2
-! Last modified: Sat, 02 Nov 2024 14:23:27 +0000
-! Diff-Path: ../patches/2024.11.2.863.patch#ruadlist
+! Last modified: Sat, 02 Nov 2024 19:21:40 +0000
+! Diff-Path: ../patches/2024.11.2.1161.patch#ruadlist
 a10050 1
 htmlacademy.ru##div[style^="margin-left:"][style*="margin-bottom:"][style*="position:"][style*="orange"][style*="z-index:"]
 d17598 1
@@ -18,8 +18,11 @@ a21791 1
 ~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] :not(a):not(li):not(.weather-header__title) > span:not([style]):-abp-properties(overflow-x: hidden)
 a21793 1
 ~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] div:not([id]):not([class]) > div:-abp-properties(overflow-x: hidden)
-a21796 1
+a21796 2
 ~e.mail.ru,mail.ru,~octavius.mail.ru##body[style="overflow: unset; max-height: unset;"] div:not([id]):not([class]) span[style=""]
+~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] div:not([id]):not([class]):not([style]) div:-abp-has(div:-abp-properties(font-size: 24px))
+a27171 1
+avtorambler.com,rambler.ru##.commercial-branding article > div:only-child > div:first-child + div > div > div:first-child + div:style(box-shadow: none !important)
 d27556 1
 a27556 1
 ya.ru##[id*="feed"][id*="_"]

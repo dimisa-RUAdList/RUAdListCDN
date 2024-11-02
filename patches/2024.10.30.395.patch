@@ -1,8 +1,8 @@
-diff name:ruadlist lines:48 checksum:8b35c5241e
+Diff name:ruadlist lines:51 checksum:92a97675b4
 d4 2
 a5 2
-! Last modified: Sat, 02 Nov 2024 14:23:27 +0000
-! Diff-Path: ../patches/2024.11.2.863.patch#ruadlist
+! Last modified: Sat, 02 Nov 2024 19:21:40 +0000
+! Diff-Path: ../patches/2024.11.2.1161.patch#ruadlist
 a7121 1
 ||zcode1*.com^$third-party
 a10049 1
@@ -27,8 +27,9 @@ a21788 1
 ~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] :not(a):not(li):not(.weather-header__title) > span:not([style]):-abp-properties(overflow-x: hidden)
 a21790 1
 ~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] div:not([id]):not([class]) > div:-abp-properties(overflow-x: hidden)
-a21793 1
+a21793 2
 ~e.mail.ru,mail.ru,~octavius.mail.ru##body[style="overflow: unset; max-height: unset;"] div:not([id]):not([class]) span[style=""]
+~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] div:not([id]):not([class]):not([style]) div:-abp-has(div:-abp-properties(font-size: 24px))
 d22057 1
 a22058 1
 dzen.ru##div[class*="DirectAdvert"]
@@ -39,6 +40,8 @@ dzen.ru##div[class^="news-mt-advert"]
 d26032 1
 a26032 1
 baskino.film,dnepr.info,dugtor.ru,filmitorrent.net,filmitorrent.site,jetsetter.ua,kinoafisha.ua,kinobar.vip,kinoukr.com,konohatv.org,ladys.media,moskva.fm,newstudio.tv,nnmclub.ro,nnmclub.to,pay-day.ru,roem.ru,rusfootball.info,trupornolabs.org,utorr.cc,vc.ru,virusinfo.info,wikianime.tv,xxxadulttorrent.org,you-anime.ru,yummyanime.tv,zombie-film.live##body:not(#id):style(padding-top: 0 !important)
+a27167 1
+avtorambler.com,rambler.ru##.commercial-branding article > div:only-child > div:first-child + div > div > div:first-child + div:style(box-shadow: none !important)
 d27552 1
 a27552 1
 ya.ru##[id*="feed"][id*="_"]

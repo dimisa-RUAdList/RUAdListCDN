@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 02 Nov 2024 14:23:27 +0000
-! Diff-Path: ../patches/2024.11.2.863.patch#ruadlist
+! Last modified: Sat, 02 Nov 2024 19:21:40 +0000
+! Diff-Path: ../patches/2024.11.2.1161.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21798,6 +21798,7 @@ www.ixbt.com#?#body > style:-abp-contains(margin-top) {remove:true;}
 ~e.mail.ru,mail.ru,~octavius.mail.ru##body[style="overflow: unset; max-height: unset;"] div:not([id]):not([class]) > section
 ~e.mail.ru,mail.ru,~octavius.mail.ru##body[style="overflow: unset; max-height: unset;"] div:not([id]):not([class]) > span:not(.container)
 ~e.mail.ru,mail.ru,~octavius.mail.ru##body[style="overflow: unset; max-height: unset;"] div:not([id]):not([class]) span[style=""]
+~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] div:not([id]):not([class]):not([style]) div:-abp-has(div:-abp-properties(font-size: 24px))
 ~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] p:-abp-properties(overflow-x: hidden)
 ~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] section:-abp-properties(overflow-x: hidden)
 sdamgia.ru##center > div[id][style]
@@ -27173,6 +27174,7 @@ radioclub.ua###js-content:style(padding-top: 40px !important)
 www.rambler.ru###app > div:style(min-height: 0 !important)
 avtorambler.com,rambler.ru##.commercial-branding > div script ~ div > div:last-child div:style(min-height: 0 !important)
 avtorambler.com,rambler.ru##.commercial-branding > div script ~ div > div:style(min-height: 0 !important)
+avtorambler.com,rambler.ru##.commercial-branding article > div:only-child > div:first-child + div > div > div:first-child + div:style(box-shadow: none !important)
 mail.rambler.ru##div[class*="WithRightBarWrapper"] > div[class*="AutoAppContainer"] ~ *
 mail.rambler.ru##div[class*="WithRightBarWrapper"] > div[class*="AutoAppContainer"]:style(max-width: 100% !important)
 horoscopes.rambler.ru,tv.rambler.ru,weather.rambler.ru##div[class]:style(min-height: 0 !important)
