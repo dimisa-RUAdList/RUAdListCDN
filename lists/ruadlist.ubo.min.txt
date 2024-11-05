@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 05 Nov 2024 17:24:50 +0000
-! Diff-Path: ../patches/2024.11.5.1044.patch#ruadlist
+! Last modified: Tue, 05 Nov 2024 22:26:04 +0000
+! Diff-Path: ../patches/2024.11.5.1346.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -7757,7 +7757,7 @@ _verified.php?code=*&server=runetki.com
 /baner_$domain=~aplica.pl|~brabrabra.ua|~campworld.com.ua|~churchjc.com|~food16.ru|~nenc.gov.ua|~pcmart.com.ua|~pizzamel.ru|~planetarium.dn.ua|~tambov.gov.ru|~triatek.com.ua|~uslugi.mosreg.ru|~work-pulse.ru|~zippo.net.ua
 /baners/*$domain=~altera-auto.ru|~mgpk.bntu.by|~mirofox.ru|~redbubbles.ru|~vyviska.com.ua|~xn--100-8cdz0be5b.xn--p1ai|~xn--40-6kcayb8aoh7afog0b.xn--p1ai
 /banmas/index.php?informer=
-/banner.gif$domain=~e.aviasales.ru|~litehd.tv|~russia-tv.online|~work-pulse.ru|~xcom-shop.ru
+/banner.gif$domain=~e.aviasales.ru|~limehd.tv|~litehd.tv|~russia-tv.online|~work-pulse.ru|~xcom-shop.ru
 /banner.png$third-party,domain=~drakescans.com|~github.com|~kirmuseum.org
 /banner2.gif
 /banner_$object
@@ -11884,7 +11884,6 @@ igdz1.ru^$script,domain=igdz.ru
 ||ligasy.kz/rennab/
 ||likemore-go.imgsmail.ru/widget.js$script,domain=talks.by
 ||likeni.ru/assets/branding/
-||limehd.tv/script/yandexRtb.js
 ||link-up-isp.ru/images/partners/
 ||linkunder.ru/playerjs.js
 ||linux.org.ru/adv/
@@ -15820,7 +15819,6 @@ all-for-kompa.ru##.centersideinn > .cblock
 pulscen.ru##.chameleon
 play.tavr.media##.channel-centre > .bottom-links ~ .d-md-block
 tlgrm.ru#?#.channel-feed > .channel-feed__brick:-abp-has(> .cfeed-card > .cfeed-card-contents--banner)
-limehd.tv#?#.channel__list > .channel__item-container:-abp-has(> .channel-container > [id^="yandex_rtb"])
 profinance.ru##.charts-ad
 nonameno.com#?#.clauses_block_rel .panel:-abp-has([href*="dex.browser"])
 i.ua##.clear.logo_container
@@ -18462,6 +18460,7 @@ oblgazeta.ru##.vr_mobile_right_block
 bvedomosti.ru##.vtem_bannergroup
 dermatitanet.ru##.vtizer
 kinomania.ru##.w-banner
+limehd.tv#?#.w-full > a[href^="/channel/"] ~ div:-abp-has(> div > [id^="yandex_rtb"])
 vgorodekirove.ru##.w_back_shapes
 livecars.ru,livesport.ru##.wall
 vk.com,vk.ru#?#.wall_wrap div[id^="post-"]:-abp-has(.post_content > .post_info > .wall_text > .wall_post_cont > .wall_marked_as_ads)
@@ -24822,6 +24821,7 @@ zarulem.ws##td[style^="text-align:center;width:50%"]
 @@||kvadratmetr.uz^$generichide
 @@||lifenews.ru^$generichide
 @@||lifenews78.ru^$generichide
+@@||limehd.tv^$generichide
 @@||lipetskmedia.ru/personal/profile/$generichide
 @@||list-org.com^$generichide
 @@||litehd.tv^$generichide
@@ -25319,7 +25319,7 @@ xn--112-5cd3baof9c5c.xn--p1ai#@#.wrapad
 @@||imagebam.com/JS/js-cookie.js|$script,domain=imagebam.com
 @@||imagebam.com/assets/js/image_bootstrap.js|$script,domain=imagebam.com
 @@||images.ua.prom.st/*-canon-ir-adv.jpg|$image,domain=printerservice.com.ua
-@@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=1plus1.ua|1plus1.video|24tv.ua|gamak.tv|limehd.tv|showjet.net|showjet.ru|unian.info|unian.net|unian.ua|veedi.com|vgtimes.ru|viho.me|viho.pro|viho.tv
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=1plus1.ua|1plus1.video|24tv.ua|gamak.tv|showjet.net|showjet.ru|unian.info|unian.net|unian.ua|veedi.com|vgtimes.ru|viho.me|viho.pro|viho.tv
 @@||img.ria.ru/userpic/$image,domain=ria.ru
 @@||imgbum.net/img/pagebg.jpg|$image,domain=imgbum.ru
 @@||imhonet.ru/js/templates/views/tiles/m-tiles.advert.$domain=imhonet.ru
@@ -28110,7 +28110,7 @@ strategium.ru##+js(no-setTimeout-if, adblock)
 fonmod.com##+js(no-setTimeout-if, ai_adb)
 aqicn.org##+js(no-setTimeout-if, alert, 15000)
 tragtorr.in,tragtorr.info##+js(no-setTimeout-if, antyadb, 5000)
-litehd.tv,russia-tv.online##+js(no-setTimeout-if, clientHeight, 2000)
+limehd.tv,litehd.tv,russia-tv.online##+js(no-setTimeout-if, clientHeight, 2000)
 tv-kanali.online##+js(no-setTimeout-if, doAd)
 tradingview.com##+js(no-setTimeout-if, evercookie, 300000)
 fonmod.com##+js(no-setTimeout-if, getComputedStyle, 250)

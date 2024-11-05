@@ -1,10 +1,17 @@
-diff name:ruadlist lines:50 checksum:abcad58c07
+diff name:ruadlist lines:65 checksum:38f777352c
 d4 2
 a5 2
-! Last modified: Tue, 05 Nov 2024 17:24:50 +0000
-! Diff-Path: ../patches/2024.11.5.1044.patch#ruadlist
+! Last modified: Tue, 05 Nov 2024 22:26:04 +0000
+! Diff-Path: ../patches/2024.11.5.1346.patch#ruadlist
+d7760 1
+a7760 1
+/banner.gif$domain=~e.aviasales.ru|~limehd.tv|~litehd.tv|~russia-tv.online|~work-pulse.ru|~xcom-shop.ru
 d11112 1
+d11888 1
 d14498 1
+d15825 1
+a18466 1
+limehd.tv#?#.w-full > a[href^="/channel/"] ~ div:-abp-has(> div > [id^="yandex_rtb"])
 d19154 1
 a19154 1
 024.by,1777.ru,1istochnik.ru,7days.ru,actualnews.org,allboxing.ru,amurmedia.ru,argumenti.ru,atas.info,auto.ru,autosaratov.ru,autosport.com.ru,av.by,baby.ru,bel.ru,belkagomel.by,bidbaits.ru,carsweek.ru,chitamedia.su,chukotkamedia.ru,cnews.ru,cq.ru,ctc.ru,deita.ru,domclick.ru,eaomedia.ru,eva.ru,finam.ru,fishki.net,fontanka.ru,food.ru,friday.ru,interface31.ru,intermedia.ru,irkutskmedia.ru,iz.ru,izhlife.ru,kaifolog.net,kamchatkamedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,lipetskmedia.ru,magadanmedia.ru,mel.fm,mk.ru,nakhodka.media,nashe.ru,neva.today,new-magazine.ru,noob-club.ru,nsn.fm,om1.ru,osnmedia.ru,politrussia.com,povarenok.ru,priamurmedia.ru,primamedia.ru,prufy.ru,radiojazzfm.ru,radioultra.ru,readovka.news,realt.by,riamo.ru,rockfm.ru,russian.rt.com,rusvesna.su,sakhalinmedia.ru,sevastopolmedia.ru,sm.news,smolensk-i.ru,smotrim.ru,sovets.net,sovets24.ru,sravni.ru,starhit.ru,stavropol.media,study.ru,svpressa.ru,takiedela.ru,teleport2001.ru,topnews.ru,tsargrad.tv,tv2.today,tverigrad.ru,ukraina.ru,ulanmedia.ru,ussurmedia.ru,vm.ru,vsezdorovo.com,womanhit.ru,www.kolesa.ru,yakutiamedia.ru,ytronews.ru,zaycev.net##a[href*="//zen.yandex.ru/"]
@@ -40,6 +47,11 @@ a22605 2
 ||cnews.ru/inc/js/height_max_banner.js
 ||market.cnews.ru/widget$domain=www.cnews.ru
 d24790 1
+a24825 1
+@@||limehd.tv^$generichide
+d25323 1
+a25323 1
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=1plus1.ua|1plus1.video|24tv.ua|gamak.tv|showjet.net|showjet.ru|unian.info|unian.net|unian.ua|veedi.com|vgtimes.ru|viho.me|viho.pro|viho.tv
 d25336 1
 a25462 1
 @@||reactor.cc^$script,xmlhttprequest,domain=fapreactor.com|pornreactor.cc
@@ -49,3 +61,6 @@ a27737 1
 zoom.cnews.ru##.article_inner.news_content_inner + .sidebar:style(top: 0 !important)
 a27744 1
 zoom.cnews.ru##.main_content:style(margin-top: 12px !important)
+d28114 1
+a28114 1
+limehd.tv,litehd.tv,russia-tv.online##+js(no-setTimeout-if, clientHeight, 2000)

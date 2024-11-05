@@ -1,9 +1,16 @@
-diff name:ruadlist lines:15 checksum:abcad58c07
+diff name:ruadlist lines:30 checksum:38f777352c
 d4 2
 a5 2
-! Last modified: Tue, 05 Nov 2024 17:24:50 +0000
-! Diff-Path: ../patches/2024.11.5.1044.patch#ruadlist
+! Last modified: Tue, 05 Nov 2024 22:26:04 +0000
+! Diff-Path: ../patches/2024.11.5.1346.patch#ruadlist
+d7760 1
+a7760 1
+/banner.gif$domain=~e.aviasales.ru|~limehd.tv|~litehd.tv|~russia-tv.online|~work-pulse.ru|~xcom-shop.ru
+d11887 1
 d14497 1
+d15824 1
+a18465 1
+limehd.tv#?#.w-full > a[href^="/channel/"] ~ div:-abp-has(> div > [id^="yandex_rtb"])
 a19964 1
 yamal-media.ru##aside[class^="articlePartnerNews_"]
 a20974 1
@@ -11,6 +18,14 @@ asna.ru##div[id^="ut-1"]
 d21754 1
 a21754 1
 ||pikabu.ru/ajax/*&*idk=$xmlhttprequest
+a24823 1
+@@||limehd.tv^$generichide
+d25321 1
+a25321 1
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=1plus1.ua|1plus1.video|24tv.ua|gamak.tv|showjet.net|showjet.ru|unian.info|unian.net|unian.ua|veedi.com|vgtimes.ru|viho.me|viho.pro|viho.tv
 d25334 1
 a25460 1
 @@||reactor.cc^$script,xmlhttprequest,domain=fapreactor.com|pornreactor.cc
+d28112 1
+a28112 1
+limehd.tv,litehd.tv,russia-tv.online##+js(no-setTimeout-if, clientHeight, 2000)
