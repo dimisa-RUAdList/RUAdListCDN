@@ -1,8 +1,8 @@
-diff name:ruadlist lines:50 checksum:e49ce26831
+diff name:ruadlist lines:59 checksum:d4fa3e1972
 d4 2
 a5 2
-! Last modified: Fri, 08 Nov 2024 10:27:36 +0000
-! Diff-Path: ../patches/2024.11.8.627.patch#ruadlist
+! Last modified: Fri, 08 Nov 2024 15:25:40 +0000
+! Diff-Path: ../patches/2024.11.8.925.patch#ruadlist
 d7760 1
 a7760 1
 /banner.gif$domain=~e.aviasales.ru|~limehd.tv|~litehd.tv|~russia-tv.online|~work-pulse.ru|~xcom-shop.ru
@@ -10,7 +10,11 @@ d10879 1
 a10879 1
 ||autofill.yandex.ru^$domain=fishki.net|pikabu.ru|sport-express.ru
 d11887 1
+a12178 1
+||news.ru/public/new/desktop/samolet/
 d15823 1
+a15959 1
+joyreactor.cc##.content-card ~ :not(.content-card) > a[href][target="_blank"]
 a18464 1
 limehd.tv#?#.w-full > a[href^="/channel/"] ~ div:-abp-has(> div > [id^="yandex_rtb"])
 a19964 1
@@ -20,8 +24,9 @@ a21755 1
 ||pikabu.ru/ajax/*&*idk3=$xmlhttprequest
 a22063 1
 dzen.ru##[id*="_R-A-"]
-a22064 3
+a22064 4
 dzen.ru##div[class*="__loaded-"]
+sportsdzen.ru##div[class*="bookmakerOdds"]
 dzen.ru##div[class*="news_branding"]
 dzen.ru,sportsdzen.ru##div[class^="news-"][class*="Branding"]
 a22065 1
@@ -49,3 +54,7 @@ proxima.net.ua##body.modal-open:style(overflow: auto !important)
 d28113 1
 a28113 1
 limehd.tv,litehd.tv,russia-tv.online##+js(no-setTimeout-if, clientHeight, 2000)
+a28160 1
+joyreactor.cc##+js(set-attr, video, controls, true)
+a28314 1
+joyreactor.cc##body:has(> script[src*="/register"]) video:remove-attr(autoplay)

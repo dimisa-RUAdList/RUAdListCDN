@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 08 Nov 2024 10:27:36 +0000
-! Diff-Path: ../patches/2024.11.8.627.patch#ruadlist
+! Last modified: Fri, 08 Nov 2024 15:25:40 +0000
+! Diff-Path: ../patches/2024.11.8.925.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -12175,6 +12175,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||newkaliningrad.ru/local/assets/js/yabinding.js
 ||news.agro-center.com.ua/wp-content/uploads/*/background-
 ||news.mspravka.info/adverting/
+||news.ru/public/new/desktop/samolet/
 ||news.tj/adfiles?adid=
 ||news.yandex.ru^$domain=pogoda.ru
 ||news.zancor.ru/images/elvira$image
@@ -15955,6 +15956,7 @@ ekabu.ru#?#.content-block:-abp-has(font:-abp-contains(Новости партн�
 ebaland.net,zrelki.click##.content-box div[style^="margin-bottom: 20px;"]
 votpusk.ru##.content-box-r > div[style^="width:240px"]
 votpusk.ru##.content-box-r > table[width="240"]
+joyreactor.cc##.content-card ~ :not(.content-card) > a[href][target="_blank"]
 ohotniki.ru##.content-footer__subscription
 fairtop.in##.content-images
 masterok.livejournal.com##.content-inner > .entry-wrap > .disabledcomments
@@ -22064,6 +22066,7 @@ dzen.ru##[aria-label="Таб категорий"][href^="/floors-promo/"]
 dzen.ru##[id*="_R-A-"]
 dzen.ru##div[class*="DirectAdvert"]
 dzen.ru##div[class*="__loaded-"]
+sportsdzen.ru##div[class*="bookmakerOdds"]
 dzen.ru##div[class*="news_branding"]
 dzen.ru,sportsdzen.ru##div[class^="news-"][class*="Branding"]
 dzen.ru##div[class^="news-"][class*="_banner"]
@@ -28172,6 +28175,7 @@ gsm.in.ua##+js(remove-node-text, script, message_ads)
 dtf.ru,vc.ru##+js(set-attr, .media > .andropov-video > video, controls, true)
 eneyida.tv##+js(set-attr, .owl-item > a > img, src, [data-src])
 overclockers.ru##+js(set-attr, img[src="https://overclockers.ru/assets/logo_gray_stub.gif"], src, [data-src])
+joyreactor.cc##+js(set-attr, video, controls, true)
 3dnews.kz,3dnews.ru##+js(set-attr, video[controls="controls"], controls, true)
 peers.tv##+js(set-constant, ADV_DISABLED, true)
 www.ukr.net##+js(set-constant, Clicks._test_meta_referer, null)
@@ -28326,6 +28330,7 @@ kp.kg,kp.kz,kp.md,kp.ru##body > #app div:matches-css(background-color: rgb(225, 
 gazeta.ru##body > div[style^="height:"][style*="vh"]:empty
 anime-chan.me##body > div[style^="pointer-events: none;"][style*="visible;"]
 4pda.to##body [data-revive-id] ~ script ~ [id][class]:style(background-image: none !important)
+joyreactor.cc##body:has(> script[src*="/register"]) video:remove-attr(autoplay)
 volyn.com.ua##body:remove-attr(/oncopy|onselectstart|oncontextmenu/)
 my-expert.ru##body:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important)
 sawlive.tv##body[onclick^="closeMyAd"] > div[id][style*="position"][style*="background-color"]

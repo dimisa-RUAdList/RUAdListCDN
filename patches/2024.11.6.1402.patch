@@ -1,11 +1,15 @@
-diff name:ruadlist lines:35 checksum:e49ce26831
+diff name:ruadlist lines:44 checksum:d4fa3e1972
 d4 2
 a5 2
-! Last modified: Fri, 08 Nov 2024 10:27:36 +0000
-! Diff-Path: ../patches/2024.11.8.627.patch#ruadlist
+! Last modified: Fri, 08 Nov 2024 15:25:40 +0000
+! Diff-Path: ../patches/2024.11.8.925.patch#ruadlist
 d10879 1
 a10879 1
 ||autofill.yandex.ru^$domain=fishki.net|pikabu.ru|sport-express.ru
+a12177 1
+||news.ru/public/new/desktop/samolet/
+a15957 1
+joyreactor.cc##.content-card ~ :not(.content-card) > a[href][target="_blank"]
 a19963 1
 hromadske.radio##aside[class^="main_container Banner"]
 d21754 1
@@ -13,8 +17,9 @@ a21754 1
 ||pikabu.ru/ajax/*&*idk3=$xmlhttprequest
 a22062 1
 dzen.ru##[id*="_R-A-"]
-a22063 3
+a22063 4
 dzen.ru##div[class*="__loaded-"]
+sportsdzen.ru##div[class*="bookmakerOdds"]
 dzen.ru##div[class*="news_branding"]
 dzen.ru,sportsdzen.ru##div[class^="news-"][class*="Branding"]
 a22064 1
@@ -29,8 +34,12 @@ a25890 1
 satdx.club###darkenwrapper
 a25935 1
 satdx.club##.rules[style^="display:"][style*="position:"][style*="z-index:"]
-a27160 4
-! ---
+a27161 4
 proxima.net.ua##body.modal-open #ft_custom_modal
 proxima.net.ua##body.modal-open > .modal-backdrop
 proxima.net.ua##body.modal-open:style(overflow: auto !important)
+! ---
+a28160 1
+joyreactor.cc##+js(set-attr, video, controls, true)
+a28314 1
+joyreactor.cc##body:has(> script[src*="/register"]) video:remove-attr(autoplay)
