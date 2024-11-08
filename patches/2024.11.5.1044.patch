@@ -1,23 +1,51 @@
-diff name:ruadlist lines:22 checksum:5f52b380b0
+diff name:ruadlist lines:50 checksum:9da35d80da
 d4 2
 a5 2
-! Last modified: Thu, 07 Nov 2024 19:18:53 +0000
-! Diff-Path: ../patches/2024.11.7.1158.patch#ruadlist
+! Last modified: Fri, 08 Nov 2024 01:49:30 +0000
+! Diff-Path: ../patches/2024.11.8.109.patch#ruadlist
 d7760 1
 a7760 1
 /banner.gif$domain=~e.aviasales.ru|~limehd.tv|~litehd.tv|~russia-tv.online|~work-pulse.ru|~xcom-shop.ru
+d10879 1
+a10879 1
+||autofill.yandex.ru^$domain=fishki.net|pikabu.ru|sport-express.ru
 d11887 1
 d15823 1
 a18464 1
 limehd.tv#?#.w-full > a[href^="/channel/"] ~ div:-abp-has(> div > [id^="yandex_rtb"])
+a19964 1
+hromadske.radio##aside[class^="main_container Banner"]
 d21755 1
 a21755 1
 ||pikabu.ru/ajax/*&*idk2=$xmlhttprequest
+a22063 1
+dzen.ru##[id*="_R-A-"]
+a22064 3
+dzen.ru##div[class*="__loaded-"]
+dzen.ru##div[class*="news_branding"]
+dzen.ru,sportsdzen.ru##div[class^="news-"][class*="Branding"]
+a22065 1
+dzen.ru##div[class^="news-"][class*="banger"]
+d22067 1
+a22067 2
+dzen.ru##div[class^="news-advert"]
+dzen.ru,sportsdzen.ru##div[class^="news-mt-advert"]
 a24824 1
 @@||limehd.tv^$generichide
 d25322 1
 a25322 1
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=1plus1.ua|1plus1.video|24tv.ua|gamak.tv|showjet.net|showjet.ru|unian.info|unian.net|unian.ua|veedi.com|vgtimes.ru|viho.me|viho.pro|viho.tv
+a25334 1
+@@||joyreactor.cc^$script,xmlhttprequest,domain=fapreactor.com|pornreactor.cc
+a25890 1
+satdx.club###darkenwrapper
+a25935 1
+satdx.club##.rules[style^="display:"][style*="position:"][style*="z-index:"]
+a27161 4
+proxima.net.ua##body.modal-open #ft_custom_modal
+proxima.net.ua##body.modal-open > .modal-backdrop
+proxima.net.ua##body.modal-open:style(overflow: auto !important)
+! ---
 d28113 1
 a28113 1
 limehd.tv,litehd.tv,russia-tv.online##+js(no-setTimeout-if, clientHeight, 2000)

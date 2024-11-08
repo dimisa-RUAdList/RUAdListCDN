@@ -1,8 +1,36 @@
-diff name:ruadlist lines:7 checksum:5f52b380b0
+diff name:ruadlist lines:35 checksum:9da35d80da
 d4 2
 a5 2
-! Last modified: Thu, 07 Nov 2024 19:18:53 +0000
-! Diff-Path: ../patches/2024.11.7.1158.patch#ruadlist
+! Last modified: Fri, 08 Nov 2024 01:49:30 +0000
+! Diff-Path: ../patches/2024.11.8.109.patch#ruadlist
+d10879 1
+a10879 1
+||autofill.yandex.ru^$domain=fishki.net|pikabu.ru|sport-express.ru
+a19963 1
+hromadske.radio##aside[class^="main_container Banner"]
 d21754 1
 a21754 1
 ||pikabu.ru/ajax/*&*idk2=$xmlhttprequest
+a22062 1
+dzen.ru##[id*="_R-A-"]
+a22063 3
+dzen.ru##div[class*="__loaded-"]
+dzen.ru##div[class*="news_branding"]
+dzen.ru,sportsdzen.ru##div[class^="news-"][class*="Branding"]
+a22064 1
+dzen.ru##div[class^="news-"][class*="banger"]
+d22066 1
+a22066 2
+dzen.ru##div[class^="news-advert"]
+dzen.ru,sportsdzen.ru##div[class^="news-mt-advert"]
+a25334 1
+@@||joyreactor.cc^$script,xmlhttprequest,domain=fapreactor.com|pornreactor.cc
+a25890 1
+satdx.club###darkenwrapper
+a25935 1
+satdx.club##.rules[style^="display:"][style*="position:"][style*="z-index:"]
+a27160 4
+! ---
+proxima.net.ua##body.modal-open #ft_custom_modal
+proxima.net.ua##body.modal-open > .modal-backdrop
+proxima.net.ua##body.modal-open:style(overflow: auto !important)

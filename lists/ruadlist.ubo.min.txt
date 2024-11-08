@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 07 Nov 2024 19:18:53 +0000
-! Diff-Path: ../patches/2024.11.7.1158.patch#ruadlist
+! Last modified: Fri, 08 Nov 2024 01:49:30 +0000
+! Diff-Path: ../patches/2024.11.8.109.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10876,7 +10876,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||auto.ria.com/images/branding/banner/
 ||auto.ru/wwwboards/img/banner_
 ||auto62rus.ru/img/Mnogo3D.
-||autofill.yandex.ru^$domain=pikabu.ru|sport-express.ru
+||autofill.yandex.ru^$domain=fishki.net|pikabu.ru|sport-express.ru
 ||autogener.ru/img/abp/
 ||autoinfo24.ru/upload/images/banner
 ||autolada.ru/images/banner/
@@ -19961,6 +19961,7 @@ postal.ninja##aside.tm-sidebar-a [class*="block"]
 vk.com##aside[aria-label="Актуальные новости"]
 uznayvse.ru##aside[class*="cls_placeholder"]
 yamal-media.ru##aside[class^="articlePartnerNews_"]
+hromadske.radio##aside[class^="main_container Banner"]
 bryansknovosti.ru,novozybkov.su##aside[data-alias="Заголовок"] .widget-area > .widget_text
 bryansknovosti.ru,novozybkov.su##aside[data-alias="Над новостями"]
 bryansknovosti.ru,novozybkov.su##aside[data-alias="Под меню"]
@@ -22060,10 +22061,16 @@ news.mail.ru##.r-source
 news.mail.ru##.reference-page__card ~ span:last-child
 ! Дзен новости Mail-edition
 dzen.ru##[aria-label="Таб категорий"][href^="/floors-promo/"]
+dzen.ru##[id*="_R-A-"]
 dzen.ru##div[class*="DirectAdvert"]
+dzen.ru##div[class*="__loaded-"]
+dzen.ru##div[class*="news_branding"]
+dzen.ru,sportsdzen.ru##div[class^="news-"][class*="Branding"]
 dzen.ru##div[class^="news-"][class*="_banner"]
+dzen.ru##div[class^="news-"][class*="banger"]
 dzen.ru##div[class^="news-"][class*="tsar"]
-dzen.ru##div[class^="news-mt-advert"]
+dzen.ru##div[class^="news-advert"]
+dzen.ru,sportsdzen.ru##div[class^="news-mt-advert"]
 ! Спорт
 sportmail.ru##.sidebar_video:empty
 sportmail.ru##a[href="/bookmakers/"]
@@ -25332,6 +25339,7 @@ xn--112-5cd3baof9c5c.xn--p1ai#@#.wrapad
 @@||irr.ru/ajax/*/submission/get_cat$domain=irr.ru
 @@||itinvest.ru/promo/adv$domain=itinvest.ru
 @@||joblib.ru/js/ads-$domain=joblib.ru
+@@||joyreactor.cc^$script,xmlhttprequest,domain=fapreactor.com|pornreactor.cc
 @@||js.mamydirect.com/js/$script,domain=tovarniygid.ru
 @@||jutsu-cdn.ru/jcdn/minify?charset=$script,stylesheet,domain=jut.su
 @@||kallpy.com/upld/|$xmlhttprequest
@@ -25888,6 +25896,7 @@ tvvse.my1.ru###cont-i > span[style*="color:red"]
 fast-fiml.ru,fast-torrent.club,fast-torrent.ru,fast-torrent.su,filmpotok.ru,kinomuch.ru,nebeda.net,pickfilm.ru,veleto.ru,vixim.ru###container > center:nth-child(-n+3)
 fm-app.ru,tvapp.su,yootv.ru###content > div[style*="fixed"]
 d3ward.github.io###cts_test
+satdx.club###darkenwrapper
 3dtuning.com###detected
 imagebam.com###hideifpossible.box_wait
 sm.news###installer
@@ -25933,6 +25942,7 @@ forum.niiot.net##.modal
 clan-soprano.ru##.popupBlock
 uniondht.org##.post_body > div[style="color:red;font-size:25px;"]
 electric-house.ru#?#.rules:-abp-has(> p > [src="/img/no_ad.png"])
+satdx.club##.rules[style^="display:"][style*="position:"][style*="z-index:"]
 sport-express.ru##.se-bn-notice
 kodik.info##.second-message
 radioromantika.ru##.showMessageAdBlock
@@ -27158,6 +27168,10 @@ promodj.com###topbrandingspot:style(padding-top: 0 !important; background: none 
 promodj.com##html:not(#id) > body:style(background: none !important)
 ! ---
 prophotos.ru##body:not(#id):style(padding-top: 130px !important)
+! ---
+proxima.net.ua##body.modal-open #ft_custom_modal
+proxima.net.ua##body.modal-open > .modal-backdrop
+proxima.net.ua##body.modal-open:style(overflow: auto !important)
 ! ---
 pvpru.com###ad_global_below_navbar:style(position: fixed !important; transform: scale(0) !important; top: -10000px !important)
 pvpru.com###header ~ *:style(position: fixed !important; transform: scale(0) !important; top: -10000px !important)
