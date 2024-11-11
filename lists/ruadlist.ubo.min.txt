@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 11 Nov 2024 18:31:27 +0000
-! Diff-Path: ../patches/2024.11.11.1111.patch#ruadlist
+! Last modified: Mon, 11 Nov 2024 23:22:18 +0000
+! Diff-Path: ../patches/2024.11.11.1402.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -26392,9 +26392,9 @@ domovita.by##body.blocked > #modalCookies
 domovita.by##body.blocked > div[class*="modal-overlay"]
 domovita.by##body.blocked:style(overflow: auto !important)
 ! ---
-dorama.live##.block-content > .ageLimit
-dorama.live##.block-content > .ageLimit ~ .block-player:style(display: block !important)
-dorama.live##.block-content:style(min-height: unset !important)
+doramalive.news##.block-content > .ageLimit
+doramalive.news##.block-content > .ageLimit ~ [class$="-player"]:style(display: block !important)
+doramalive.news##.block-content:style(min-height: unset !important)
 ! ---
 doramax.org##.wrapper.full:style(margin-top: 70px !important)
 ! ---

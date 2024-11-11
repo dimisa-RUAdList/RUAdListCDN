@@ -1,8 +1,8 @@
-diff name:ruadlist lines:63 checksum:fd04b9adaa
+diff name:ruadlist lines:68 checksum:f30ebb0375
 d4 2
 a5 2
-! Last modified: Mon, 11 Nov 2024 18:31:27 +0000
-! Diff-Path: ../patches/2024.11.11.1111.patch#ruadlist
+! Last modified: Mon, 11 Nov 2024 23:22:18 +0000
+! Diff-Path: ../patches/2024.11.11.1402.patch#ruadlist
 a6485 1
 ||videolink.host^$third-party
 a8203 1
@@ -46,6 +46,11 @@ a25890 1
 satdx.club###darkenwrapper
 a25935 1
 satdx.club##.rules[style^="display:"][style*="position:"][style*="z-index:"]
+d26382 3
+a26384 3
+doramalive.news##.block-content > .ageLimit
+doramalive.news##.block-content > .ageLimit ~ [class$="-player"]:style(display: block !important)
+doramalive.news##.block-content:style(min-height: unset !important)
 a26819 1
 www.kinopoisk.ru##div[class^="styles_wideContentContainer"] > div[class]:first-child:style(min-height: 0 !important)
 a27161 4
