@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 12 Nov 2024 09:25:20 +0000
-! Diff-Path: ../patches/2024.11.12.565.patch#ruadlist
+! Last modified: Tue, 12 Nov 2024 14:25:53 +0000
+! Diff-Path: ../patches/2024.11.12.865.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -19419,6 +19419,7 @@ fotoinform.net##a[href*="shop.vmayke.org"]
 1track.ru##a[href*="smarty.sale"]
 gorvesti.ru,pravda.ru,sovsekretno.ru##a[href*="smi2.net/"]
 softbox.tv##a[href*="softboxmarket.com"]
+agronomy.com.ua##a[href*="srsltid"] > img
 modgames.net##a[href*="steam-account."]
 azbooki.ru,engisys.ru,zip1000.ru##a[href*="stulspb.ru"]
 megatrack.top##a[href*="su0.ru"]
@@ -22268,6 +22269,7 @@ fanserial.fun,fanserialstv.net##.flex-promo-series > .right-col a[href][target="
 /player/fan.xml$domain=fanserial.fun|fanserialstv.net
 @@||v*.plrjs.org/*.xml?rand=$xmlhttprequest,domain=fanserial.fun|fanserialstv.net
 ! Одноклассники
+ok.ru###hook_Block_AsideColumn img:first-child ~ div:not(#hook_Block_CompactFooter)
 ok.ru###hook_Block_AvatarPromoMenu
 ok.ru###hook_Block_FixedPromoBanner
 ok.ru###hook_Block_ForthColumnTopBanner
@@ -22276,11 +22278,12 @@ ok.ru###hook_Block_LeftColumnAdCustom
 ok.ru###hook_Block_TargetBanner
 okminigames.mail.ru###ok-wrapper.container div[class][style="width: 100%;"]
 okminigames.mail.ru###ok-wrapper.container span.js-href
-ok.ru###rightColumn[data-module="StickyBlockWL"]
+ok.ru###rightColumn[data-mouse-wheel]
 ok.ru##.dialogWrapperBanner
 ok.ru##.exit-popup
 ok.ru#?#.feed-list > .feed-w:-abp-has(> [class^="feed"] > .feed-header [class] ~ [class] ~ [class] ~ [class] ~ [class] ~ [class])
 ok.ru#?#.feed-list > .feed-w:-abp-has([class^="feed"][class*="label"]:-abp-contains(Реклама))
+ok.ru#?#.feed-list > .feed-w:-abp-has(button[class*="advert-badge"])
 ok.ru##.forthTopAdv
 ok.ru##.html5-vpl_oklive-banner
 ok.ru#?#div:-abp-has(> #hook_Block_CompactFooter) > div:not(#hook_Block_CompactFooter)
@@ -28357,7 +28360,6 @@ pornopuk.com,huyamba.tv,piratam.net,piratca.net,porn720.biz,pornoakt.*,sexitorre
 kanobu.ru#?#section[class^="MaterialsManufacturerPage_infiniteWrap"] > div[class^="InfiniteScrollWrap_content"] > [class*="MaterialItemPage_materialSection"]:-abp-has(> .knb-grid-container > [data-io-article-url] [class^="TextContent_text"] > p:-abp-contains(/^Реклама:/)) [class^="material-content_"] a[href][target="_blank"]:not([href^="https://kanobu.ru/"]):style(color: inherit !important; pointer-events: none !important)
 igromania.ru#?#section[class^="MaterialsManufacturerPage_infiniteWrap"] > div[class^="InfiniteScrollWrap_content"] > [class*="MaterialItemPage_materialSection"]:-abp-has(> .knb-grid-container > [data-io-article-url] [class^="TextContent_text"] > p:-abp-contains(/^Реклама:/)) [class^="material-content_"] a[href][target="_blank"]:not([href^="https://www.igromania.ru/"]):style(color: inherit !important; pointer-events: none !important)
 smaxim.*##+js(set-constant, flashvars.protect_block, '')
-joyreactor.cc,reactor.cc##video:remove-attr(autoplay)
 3dnews.kz,3dnews.ru##video[autoplay="autoplay"]:remove-attr(autoplay)
 kinoafisha.info##videotronic-player:remove-attr(data-video-autoplay)
 ||1plus1.video/*/embed/*autoplay=1$subdocument,removeparam=|
@@ -28418,7 +28420,6 @@ ok.ru,touch.mail.ru##+js(json-prune, result.body.direct)
 okminigames.mail.ru##+js(set-constant, NO_ADV, 1)
 otvet.mail.ru##+js(set-constant, Object.prototype._Mimic, undefined)
 player-smotri.mail.ru##+js(set-constant, Object.prototype.autoPlayParams, false)
-ok.ru##+js(set-constant, Object.prototype.autoplayScrollHandler, noopFunc)
 ~calls.mail.ru,~e.mail.ru,mail.ru,~my.mail.ru,~o2.mail.ru,~octavius.mail.ru,sportmail.ru,~touch.mail.ru##+js(set-constant, Object.prototype.mimic, undefined)
 ok.ru##+js(set-constant, Object.prototype.obfuscate, noopFunc)
 my.mail.ru##+js(set-constant, Object.prototype.runMimic, noopFunc)
@@ -28426,6 +28427,7 @@ news.mail.ru,pogoda.mail.ru,sportmail.ru##+js(set-constant, Object.prototype.use
 ~3igames.mail.ru,~account.mail.ru,~auto.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~finance.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru,~vfokuse.mail.ru,~widgets.mail.ru##+js(set-constant, document.title, null)
 ~3igames.mail.ru,~account.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~finance.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru,~vfokuse.mail.ru,~widgets.mail.ru##+js(set-constant, mr._mimic.locator.transform, undefined)
 touch.mail.ru##.page__content__slide > .messagelist > div:not([cid]):not([style]):not([id]):not([class])
+/res/js/app/VideoAutoplayFlow_$domain=ok.ru
 ok.ru##[data-module*="banner"]
 mail.ru##[slot="main-column"] :matches-css(height: 90px)
 ok.ru##body > div:not([id]):not([class]) > .exit-popup:style(display: block !important)
