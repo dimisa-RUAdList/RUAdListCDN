@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 15 Nov 2024 07:23:29 +0000
-! Diff-Path: ../patches/2024.11.15.443.patch#ruadlist
+! Last modified: Fri, 15 Nov 2024 12:49:15 +0000
+! Diff-Path: ../patches/2024.11.15.769.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21755,7 +21755,7 @@ $csp=script-src-attr 'none',domain=eurointegration.com.ua|pravda.com.ua
 @@||ssp.rambler.ru/capirs_async.js|$script,domain=www.championat.com
 https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|livejournal.com|olegmakarenko.ru|periskop.su|shakko.ru|shiro-kino.ru|vadimrazumov.ru
 ||imgfrost.net^$third-party
-||pikabu.ru/ajax/*bbid$xmlhttprequest
+||pikabu.ru/ajax/*bidd$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -22866,6 +22866,7 @@ turbopages.org##.advert
 disk.yandex.by,disk.yandex.kz,disk.yandex.ru,disk.yandex.uz##.awaps__banner
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.b-direct
 docviewer.yandex.by,docviewer.yandex.kz,docviewer.yandex.ru,docviewer.yandex.uz##.js-doc-html > div[class^="pages_"] > div[class]:empty
+mail.yandex.by,mail.yandex.com,mail.yandex.kz,mail.yandex.ru,mail.yandex.uz#?#.js-scroller-right:-abp-has(> div:only-child > div:only-child > a[href*="/premium-"])
 yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.page__result .typo:-abp-contains(/^новости партн/i)
 translate.yandex.by,translate.yandex.kz,translate.yandex.ru,translate.yandex.uz##.sidebar-direct
 disk.yandex.by,disk.yandex.kz,disk.yandex.ru,disk.yandex.uz##.software-header-promo
