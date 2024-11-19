@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 19 Nov 2024 16:31:41 +0000
-! Diff-Path: ../patches/2024.11.19.991.patch#ruadlist
+! Last modified: Tue, 19 Nov 2024 21:23:43 +0000
+! Diff-Path: ../patches/2024.11.19.1283.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -15351,7 +15351,7 @@ gameportalrf.ru,profi-forex.org##.banner-left
 newsomsk.ru##.banner-left-detail-new
 amoledo.com,mezha.media,zhitomir.info##.banner-link
 newsazerbaijan.ru##.banner-middle
-gx.net.ua,hh.ru,nevasport.ru,tut.by##.banner-place
+gx.net.ua,nevasport.ru,tut.by##.banner-place
 moika78.ru##.banner-place::before
 sdelanounas.ru##.banner-post
 agroter.com.ua##.banner-promotions-wrapper
@@ -15675,7 +15675,7 @@ ringside24.com##.bout-bets
 freeisland.org##.box-Customs2
 freeisland.org##.box-Customs3
 zoon.ru##.box-banner
-vgae.ru#?#.box-primary:-abp-has(> .box-body > [id^="adfox_"])
+vgae.ru#?#.box-primary:-abp-has(> .box-body[style^="min-height:"])
 gotovim-doma.ru#?#.box-shadow:-abp-has(> [id^="adfox_"])
 podolsk.ru##.box-side > .box-content > noindex
 versia.ru#?#.box-title:-abp-has(> span:-abp-contains(Новости партнеров))
@@ -20460,6 +20460,7 @@ deti.fm##div[class^="banner"]:not(#vk_groups)
 kaktutzhit.by##div[class^="banner"][class$="rightSide"] > .banner:nth-of-type(1)
 cisoclub.ru##div[class^="banner"][class*="LENTA"]
 meteo.ua##div[class^="banner-"]
+hh.ru##div[class^="banner-place"]
 irr.by,securitylab.ru##div[class^="banner_"]
 caravan.su##div[class^="banner_header"]
 mnmag.ru##div[class^="banner_right"]
@@ -20765,8 +20766,6 @@ informator.ua##div[id][style="min-height:400px"]
 mind.ua##div[id][style="padding-bottom: 35px;"]
 mamba.ru##div[id][style="width: 320px; height: 100px;"]
 7days.ru##div[id][style="width: 970px; height: 250px;"]
-vgae.ru##div[id][style^="min-height:100px;"]
-vgae.ru##div[id][style^="min-height:250px;"]
 ivbb.ru##div[id^="ADS_"]
 1tv.ru,2mm.ru,auto.vesti.ru,ctc.ru,f1news.ru,irr.ru,probirka.org,sobesednik.ru,sportbox.ru,tvc.ru##div[id^="AdFox_banner"]
 dorognoe.ru,europaplus.ru,radio7.ru,retrofm.ru##div[id^="AdwolfBanner240x400_"]
@@ -21049,14 +21048,17 @@ kirov-portal.ru##div[style="height: 90px; font-size: 1px; line-height: 1px;"]
 unews.pro##div[style="height:20px;"]:empty
 autonevod.ru##div[style="height:250px"]
 unian.info,unian.net,unian.ua##div[style="height:260px;clear:both;"]
+vgae.ru##div[style="height:348px;"]
 dublikat.one##div[style="height:5px;"]
 unian.info,unian.net,unian.ua##div[style="height:600px"]
 liveresult.ru##div[style="height:90px;"]
 chudo-povar.com##div[style="height:auto;min-height:300px;"]
+vgae.ru##div[style="margin-bottom:15px;"]
 joker.ykt.ru#?#div[style="margin-left:21px;"]:-abp-has(.opros:-abp-contains(Реклама))
 gazetavv.com##div[style="margin-top:5px;height:90px;"]
 gamebomb.ru##div[style="margin: 10px auto; width: 970px; height: 250px"]
 intv.com##div[style="margin: 10px; text-align: center;"]
+vgae.ru##div[style="margin:10px -10px;"]
 holm.ru##div[style="max-height:250px"]
 gagadget.com##div[style="min-height: 249px;"]
 meteopost.com##div[style="min-height: 300px;"]
@@ -21085,6 +21087,7 @@ megaobuchalka.ru##div[style="width: 80%; align-items: center;"] > center
 forum.gov-zakupki.ru##div[style="width: 970px; height: 90px;"]
 topasnew24.com##div[style="width:100%; height:275px; display:block"]
 topasnew24.com##div[style="width:100%; height:310px; display:block"]
+vgae.ru##div[style="width:100%; margin:0 auto;"]
 profinance.ru##div[style="width:300px"]
 amsterdamtravel.ru##div[style="width:300px;height:200px"]
 riamo.ru##div[style="width:300px;height:500px"]
@@ -27806,6 +27809,7 @@ mail.ru###user-settings-modal > .user-settings-container > .user-settings-types 
 my.mail.ru##.app-event-bubbles
 mail.ru##.article__item_source_viqeo .article__container::before:style(content: initial !important)
 mail.ru##.balloon-anchor > .balloon
+mail.ru##.grid__ccol > .tabs-content:style(margin-top: 5px !important)
 mail.ru##.grid__header .ph-modal-projects-overlay:style(top: inherit !important)
 mail.ru##.grid__main-col .eventbar-wrapper:style(margin-top: 0 !important)
 mail.ru##.grid__main-col > div[slot="main-column"] .search-container:style(margin-top: 4px !important; margin-bottom: 4px !important)
@@ -27855,6 +27859,7 @@ mail.ru##div[slot="main-column"] .tabs:style(margin-top: 5px !important)
 mail.ru##div[slot="main-column"] > .header
 mail.ru##div[slot="main-column"] > .header ~ .swiper
 mail.ru##div[slot="main-column"] > .micro-widgets:style(height: auto !important; margin: auto !important)
+mail.ru##div[slot="main-column"] > .tabs__container:style(margin-top: 5px !important)
 mail.ru##div[slot="main-column"] > :nth-child(-n+2) ~ [class] > [class]:style(visibility: unset !important; pointer-events: unset !important)
 my.mail.ru##html.window-loaded .b-video-backscreen
 my.mail.ru##html.window-loaded .b-video-controls__inside-play-button:style(visibility: visible !important; opacity: 0 !important; width: 100% !important; height: 100% !important; top: 0 !important; left: 0 !important)
