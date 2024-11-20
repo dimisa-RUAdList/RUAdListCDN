@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 20 Nov 2024 07:23:59 +0000
-! Diff-Path: ../patches/2024.11.20.443.patch#ruadlist
+! Last modified: Wed, 20 Nov 2024 12:50:20 +0000
+! Diff-Path: ../patches/2024.11.20.770.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -20889,7 +20889,7 @@ ru-an.info##div[id^="hme_ad_news"]
 isport.ua,korrespondent.net##div[id^="holder_"]
 fanfics.me##div[id^="inform_top_"]
 forum.littleone.ru##div[id^="inpage_"]
-game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div[id^="jertva"]
+game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div[id^="jetta"]
 glav.su##div[id^="js-hb-"]
 tkaninfo.ru##div[id^="kazandrey"]
 fotostrana.ru##div[id^="king-rightplace"]
@@ -21754,7 +21754,7 @@ $csp=script-src-attr 'none',domain=eurointegration.com.ua|pravda.com.ua
 @@||ssp.rambler.ru/capirs_async.js|$script,domain=www.championat.com
 https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|livejournal.com|olegmakarenko.ru|periskop.su|shakko.ru|shiro-kino.ru|vadimrazumov.ru
 ||imgfrost.net^$third-party
-||pikabu.ru/ajax/*ebid$xmlhttprequest
+||pikabu.ru/ajax/*?sllla=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
