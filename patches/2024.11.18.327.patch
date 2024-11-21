@@ -1,8 +1,8 @@
-diff name:ruadlist lines:79 checksum:eb2f01f6cc
+diff name:ruadlist lines:88 checksum:6008103914
 d4 2
 a5 2
-! Last modified: Thu, 21 Nov 2024 18:34:17 +0000
-! Diff-Path: ../patches/2024.11.21.1114.patch#ruadlist
+! Last modified: Thu, 21 Nov 2024 23:24:34 +0000
+! Diff-Path: ../patches/2024.11.21.1404.patch#ruadlist
 a2633 1
 ||hutzxn.com^$third-party
 a8850 1
@@ -29,6 +29,10 @@ a13137 1
 a13337 1
 ||westnews.info/img/baner
 d13778 1
+d13875 1
+a13875 2
+vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] .mads_noClickarea)
+vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] > ._post_content .PostHeader > .PostHeaderInfo > [class^="PostHeaderSubtitle"] > [class]:-abp-contains(/Community ad|Реклама|Рэклама|жарнама/))
 a15044 1
 vidstezhyty.com.ua##.answear.sale
 d15350 1
@@ -57,6 +61,8 @@ d20766 2
 d20891 1
 a20891 1
 game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div[id^="jetta"]
+a20928 1
+vk.com,vk.ru##div[id^="post-"][onmousedown="wall.postClickStat(event)"]
 a21049 1
 vgae.ru##div[style="height:348px;"]
 a21053 1
@@ -76,5 +82,8 @@ a26700 1
 innal.top,zannn.top##body:style(margin-top: 0 !important)
 a27806 1
 mail.ru##.grid__ccol > .tabs-content:style(margin-top: 5px !important)
+d27842 1
+a27842 1
+mail.ru##body:not(.js-module) .tabs > .tabs__item:style(padding: 0 4px !important; font-size: 14px !important)
 a27855 1
 mail.ru##div[slot="main-column"] > .tabs__container:style(margin-top: 5px !important)

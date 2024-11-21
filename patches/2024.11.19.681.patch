@@ -1,8 +1,12 @@
-diff name:ruadlist lines:31 checksum:eb2f01f6cc
+diff name:ruadlist lines:40 checksum:6008103914
 d4 2
 a5 2
-! Last modified: Thu, 21 Nov 2024 18:34:17 +0000
-! Diff-Path: ../patches/2024.11.21.1114.patch#ruadlist
+! Last modified: Thu, 21 Nov 2024 23:24:34 +0000
+! Diff-Path: ../patches/2024.11.21.1404.patch#ruadlist
+d13878 1
+a13878 2
+vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] .mads_noClickarea)
+vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] > ._post_content .PostHeader > .PostHeaderInfo > [class^="PostHeaderSubtitle"] > [class]:-abp-contains(/Community ad|Реклама|Рэклама|жарнама/))
 d15354 1
 a15354 1
 gx.net.ua,nevasport.ru,tut.by##.banner-place
@@ -15,6 +19,8 @@ d20768 2
 d20893 1
 a20893 1
 game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div[id^="jetta"]
+a20930 1
+vk.com,vk.ru##div[id^="post-"][onmousedown="wall.postClickStat(event)"]
 a21051 1
 vgae.ru##div[style="height:348px;"]
 a21055 1
@@ -28,5 +34,8 @@ a21754 1
 ||pikabu.ru/ajax/ahyuvhzruD0BEhtf.$xmlhttprequest
 a27808 1
 mail.ru##.grid__ccol > .tabs-content:style(margin-top: 5px !important)
+d27844 1
+a27844 1
+mail.ru##body:not(.js-module) .tabs > .tabs__item:style(padding: 0 4px !important; font-size: 14px !important)
 a27857 1
 mail.ru##div[slot="main-column"] > .tabs__container:style(margin-top: 5px !important)
