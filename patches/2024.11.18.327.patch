@@ -1,8 +1,8 @@
-diff name:ruadlist lines:88 checksum:6008103914
+diff name:ruadlist lines:90 checksum:554241cf07
 d4 2
 a5 2
-! Last modified: Thu, 21 Nov 2024 23:24:34 +0000
-! Diff-Path: ../patches/2024.11.21.1404.patch#ruadlist
+! Last modified: Fri, 22 Nov 2024 04:30:24 +0000
+! Diff-Path: ../patches/2024.11.22.270.patch#ruadlist
 a2633 1
 ||hutzxn.com^$third-party
 a8850 1
@@ -31,7 +31,7 @@ a13337 1
 d13778 1
 d13875 1
 a13875 2
-vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] .mads_noClickarea)
+vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .page_block .mads_noClickarea)
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] > ._post_content .PostHeader > .PostHeaderInfo > [class^="PostHeaderSubtitle"] > [class]:-abp-contains(/Community ad|Реклама|Рэклама|жарнама/))
 a15044 1
 vidstezhyty.com.ua##.answear.sale
@@ -62,7 +62,7 @@ d20891 1
 a20891 1
 game4you.top,games-pc.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div[id^="jetta"]
 a20928 1
-vk.com,vk.ru##div[id^="post-"][onmousedown="wall.postClickStat(event)"]
+vk.com,vk.ru##div[id^="post-"][onmousedown^="wall.postClickStat(event)"]
 a21049 1
 vgae.ru##div[style="height:348px;"]
 a21053 1
@@ -75,6 +75,8 @@ d21251 1
 d21753 1
 a21753 1
 ||pikabu.ru/ajax/ahyuvhzruD0BEhtf.$xmlhttprequest
+a25957 1
+/adsblocker.js$script,domain=jakondo.ru
 d26627 1
 a26627 1
 allhen.online,mintmanga.one##img[src]:style(filter: none !important)

@@ -1,17 +1,19 @@
-diff name:ruadlist lines:16 checksum:6008103914
+diff name:ruadlist lines:18 checksum:554241cf07
 d4 2
 a5 2
-! Last modified: Thu, 21 Nov 2024 23:24:34 +0000
-! Diff-Path: ../patches/2024.11.21.1404.patch#ruadlist
+! Last modified: Fri, 22 Nov 2024 04:30:24 +0000
+! Diff-Path: ../patches/2024.11.22.270.patch#ruadlist
 d13878 1
 a13878 2
-vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] .mads_noClickarea)
+vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .page_block .mads_noClickarea)
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] > ._post_content .PostHeader > .PostHeaderInfo > [class^="PostHeaderSubtitle"] > [class]:-abp-contains(/Community ad|Реклама|Рэклама|жарнама/))
 a20929 1
-vk.com,vk.ru##div[id^="post-"][onmousedown="wall.postClickStat(event)"]
+vk.com,vk.ru##div[id^="post-"][onmousedown^="wall.postClickStat(event)"]
 d21757 1
 a21757 1
 ||pikabu.ru/ajax/ahyuvhzruD0BEhtf.$xmlhttprequest
+a25961 1
+/adsblocker.js$script,domain=jakondo.ru
 d27848 1
 a27848 1
 mail.ru##body:not(.js-module) .tabs > .tabs__item:style(padding: 0 4px !important; font-size: 14px !important)
