@@ -1,8 +1,8 @@
-diff name:ruadlist lines:50 checksum:bd4d7f94a7
+diff name:ruadlist lines:54 checksum:e5f0d08b73
 d4 2
 a5 2
-! Last modified: Sat, 23 Nov 2024 05:26:41 +0000
-! Diff-Path: ../patches/2024.11.23.326.patch#ruadlist
+! Last modified: Sat, 23 Nov 2024 10:27:56 +0000
+! Diff-Path: ../patches/2024.11.23.627.patch#ruadlist
 a511 1
 ||auflink.com^$third-party
 a1347 1
@@ -14,7 +14,9 @@ d13878 1
 a13878 3
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .page_block .mads_noClickarea)
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] > ._post_content .PostHeader > .PostHeaderInfo > [class^="PostHeaderSubtitle"] > [class]:-abp-contains(/Community ad|Реклама|Рэклама|жарнама/))
-vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] > ._post_content .PostHeader > .PostHeaderInfo > div > [class] ~ [class] ~ [class] ~ [class] ~ [class])
+vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] > ._post_content .PostHeader > .PostHeaderInfo > [class^="PostHeaderSubtitle"] > span [class] ~ [class] ~ [class] ~ [class] ~ [class] ~ [class] ~ [class] ~ [class] ~ [class] ~ [class] ~ [class] ~ [class] ~ [class])
+a13881 1
+vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] > ._post_content .post_header_info .post_date:-abp-contains(/Ad|Реклама/))
 d15354 1
 a15354 1
 gx.net.ua,nevasport.ru,tut.by##.banner-place
@@ -40,6 +42,8 @@ vgae.ru##div[style="width:100%; margin:0 auto;"]
 d21754 1
 a21754 1
 ||pikabu.ru/ajax/aiyuvhzruD0BEhtf.$xmlhttprequest
+a25369 1
+@@||login.mos.ru/sps/profile/assets/javascripts/social.js|$script,domain=login.mos.ru
 a25958 1
 /adsblocker.js$script,domain=jakondo.ru
 a27808 1
