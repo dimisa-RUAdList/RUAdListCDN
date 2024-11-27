@@ -1,11 +1,13 @@
-diff name:ruadlist lines:22 checksum:cac3d8de4b
+diff name:ruadlist lines:27 checksum:5506b81df1
 d4 2
 a5 2
-! Last modified: Wed, 27 Nov 2024 09:27:33 +0000
-! Diff-Path: ../patches/2024.11.27.567.patch#ruadlist
+! Last modified: Wed, 27 Nov 2024 14:27:54 +0000
+! Diff-Path: ../patches/2024.11.27.867.patch#ruadlist
 a5140 1
 ||ritrag.com^$third-party
-a13887 1
+a13887 3
+vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .page_block .mkit_noClickarea)
+vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .page_block [data-role="adChoicesMenu"])
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .page_block div[data-role="advertisinglabel"])
 a14595 1
 yesasia.ru###td-outer-wrap > div[style^="display:block;height:"]
@@ -18,6 +20,9 @@ d25386 1
 d25659 1
 a25659 1
 @@||yandex.ru/ads/system/header-bidding.js$script,domain=gismeteo.ru|trainzland.ru
+d26011 1
+a26011 1
+live.vkvideo.ru##div[class^="AdBlockAlert_root"]
 a27881 1
 mail.ru##main#grid .promo-news
 d28568 1

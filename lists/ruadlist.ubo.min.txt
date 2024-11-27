@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 27 Nov 2024 09:27:33 +0000
-! Diff-Path: ../patches/2024.11.27.567.patch#ruadlist
+! Last modified: Wed, 27 Nov 2024 14:27:54 +0000
+! Diff-Path: ../patches/2024.11.27.867.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -13886,6 +13886,8 @@ bitcryptonews.ru###faq-index
 turmush.kg###fb_bottom_like
 myparcels.ru###featured-wants
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .page_block .mads_noClickarea)
+vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .page_block .mkit_noClickarea)
+vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .page_block [data-role="adChoicesMenu"])
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .page_block div[data-role="advertisinglabel"])
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] > ._post_content .PostHeader > .PostHeaderInfo > [class^="PostHeaderSubtitle"] > [class]:-abp-contains(/Community ad|Реклама|Рэклама|жарнама/))
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] > ._post_content .PostHeader > .PostHeaderInfo > [class^="PostHeaderSubtitle"] > span [class] ~ [class] ~ [class] ~ [class] ~ [class] ~ [class] ~ [class] ~ [class] ~ [class] ~ [class] ~ [class] ~ [class] ~ [class])
@@ -26011,7 +26013,7 @@ gsm.in.ua##body > div[style^="background:"][style*="display: block"]
 ritsatv.ru##body > marquee[style*="red"]
 motorpage.ru##body.noscroll::before
 qrz.ru#?#div[class]:-abp-has(> .inner > a[href="/help/adblock/"])
-vkplay.ru##div[class^="AdBlockAlert_root"]
+live.vkvideo.ru##div[class^="AdBlockAlert_root"]
 pronetblog.by##div[class^="adsensepost"]
 2baksa.ws##div[class^="ant"][class*="block"]
 hitsovet.ru,mod-wot.ru##div[class^="chp_ads_block"]
