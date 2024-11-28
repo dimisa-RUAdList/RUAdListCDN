@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 28 Nov 2024 10:31:05 +0000
-! Diff-Path: ../patches/2024.11.28.631.patch#ruadlist
+! Last modified: Thu, 28 Nov 2024 15:27:26 +0000
+! Diff-Path: ../patches/2024.11.28.927.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21760,6 +21760,8 @@ ictv.ua,vikna.tv##div[id^="div-gpt-ad-"]
 ! *** ./advblock/specific_special.txt ***
 !#if ext_abp
 ! запросы
+! ловушка для обфускации, новости дзена
+||dzen.ru/news$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js
 $csp=script-src-attr 'none',domain=eurointegration.com.ua|pravda.com.ua
 /^https?://24smi\.org/*[/]*[/][^\s]{8,}/$xmlhttprequest,domain=24smi.org
 ://mail.ru$csp=img-src 'self' https:

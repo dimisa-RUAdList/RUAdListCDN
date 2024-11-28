@@ -1,8 +1,8 @@
-diff name:ruadlist lines:35 checksum:84be9ef403
+diff name:ruadlist lines:38 checksum:e1e3ce3233
 d4 2
 a5 2
-! Last modified: Thu, 28 Nov 2024 10:31:05 +0000
-! Diff-Path: ../patches/2024.11.28.631.patch#ruadlist
+! Last modified: Thu, 28 Nov 2024 15:27:26 +0000
+! Diff-Path: ../patches/2024.11.28.927.patch#ruadlist
 a13888 1
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .page_block .mkit_noClickArea)
 d19154 1
@@ -11,6 +11,9 @@ rudub.today##a[href*=".li"]
 d21508 1
 a21508 1
 rudub.today#?#p:-abp-has(> strong a[href*=".li"])
+a21761 2
+! ловушка для обфускации, новости дзена
+||dzen.ru/news$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js
 d21776 1
 a21776 1
 ||pikabu.ru/ajax/cdma7azurdaAshcg.$xmlhttprequest
