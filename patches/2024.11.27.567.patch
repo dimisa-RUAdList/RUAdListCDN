@@ -1,8 +1,8 @@
-diff name:ruadlist lines:22 checksum:cafebb57ea
+diff name:ruadlist lines:36 checksum:613d8023e7
 d4 2
 a5 2
-! Last modified: Wed, 27 Nov 2024 19:20:27 +0000
-! Diff-Path: ../patches/2024.11.27.1160.patch#ruadlist
+! Last modified: Thu, 28 Nov 2024 01:58:31 +0000
+! Diff-Path: ../patches/2024.11.28.118.patch#ruadlist
 a13888 2
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .page_block .mkit_noClickarea)
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .page_block [data-role="adChoicesMenu"])
@@ -12,12 +12,26 @@ rudub.today##a[href*=".li"]
 d21506 1
 a21506 1
 rudub.today#?#p:-abp-has(> strong a[href*=".li"])
+d21791 1
+a21838 1
+howdyho.net,howdyho.pro##html[lang="ru"] :not(my-obnaruzhili-adblock)
+a22081 3
+dzen.ru##[id*="_tsar"]
+dzen.ru##div[class*=" news-site--"][class*="__desktop"]
+dzen.ru##div[class*="news-advert"]
+d22093 1
 a22583 1
 rbc.ru##.header__project__info
 d22594 1
 d22619 1
 a22619 1
 rbc.ru##[data-yandex-name^="selfpromo_"]
+d22885 1
+a22885 1
+mail.yandex.by,mail.yandex.com,mail.yandex.kz,mail.yandex.ru,mail.yandex.uz#?#.js-scroller-right:-abp-has(> div:only-child)
 d26014 1
 a26014 1
 live.vkvideo.ru##div[class^="AdBlockAlert_root"]
+d28372 1
+a28372 1
+howdyho.*##+js(no-setTimeout-if, _0x)
