@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 29 Nov 2024 06:35:59 +0000
-! Diff-Path: ../patches/2024.11.29.395.patch#ruadlist
+! Last modified: Fri, 29 Nov 2024 11:21:52 +0000
+! Diff-Path: ../patches/2024.11.29.681.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -13885,9 +13885,8 @@ inpot.ru###ezobann
 bitcryptonews.ru###faq-index
 turmush.kg###fb_bottom_like
 myparcels.ru###featured-wants
-vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .page_block .mads_noClickarea)
-vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .page_block .mkit_noClickArea)
-vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .page_block .mkit_noClickarea)
+vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .page_block .adaptive_ad)
+vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .page_block [class*="_noClick"])
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .page_block [data-role="adChoicesMenu"])
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .page_block div[data-role="advertisinglabel"])
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] > ._post_content .PostHeader > .PostHeaderInfo > [class^="PostHeaderSubtitle"] > [class]:-abp-contains(/Community ad|Реклама|Рэклама|жарнама/))
@@ -21776,7 +21775,7 @@ $csp=script-src-attr 'none',domain=eurointegration.com.ua|pravda.com.ua
 @@||ssp.rambler.ru/capirs_async.js|$script,domain=www.championat.com
 https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|livejournal.com|olegmakarenko.ru|periskop.su|shakko.ru|shiro-kino.ru|vadimrazumov.ru
 ||imgfrost.net^$third-party
-||pikabu.ru/ajax/cdma7azurdaAshcg.$xmlhttprequest
+||pikabu.ru/ajax/c4maZ0Vufga1slsd.$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -28222,6 +28221,7 @@ player.vgtrk.com##+js(set-constant, Object.prototype.IS_CHECK_REGISTRATION, fals
 tv-gubernia.ru##+js(set-constant, Object.prototype.MediaReady, noopFunc)
 xsport.ua##+js(set-constant, Object.prototype.PLAYED, null)
 1tv.ru##+js(set-constant, Object.prototype._currentAgeRestriction, null)
+vk.com,vk.ru##+js(set-constant, Object.prototype.adChoices, undefined)
 music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.uz##+js(set-constant, Object.prototype.adUsageStorageVars, undefined)
 api-video.khl.ru##+js(set-constant, Object.prototype.adblockSettings, undefined)
 razlozhi.ru##+js(set-constant, Object.prototype.advert, null)

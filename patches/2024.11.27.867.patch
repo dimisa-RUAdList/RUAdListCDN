@@ -1,10 +1,12 @@
-diff name:ruadlist lines:41 checksum:181c4fd591
+diff name:ruadlist lines:45 checksum:1a4d90af12
 d4 2
 a5 2
-! Last modified: Fri, 29 Nov 2024 06:35:59 +0000
-! Diff-Path: ../patches/2024.11.29.395.patch#ruadlist
-a13888 1
-vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .page_block .mkit_noClickArea)
+! Last modified: Fri, 29 Nov 2024 11:21:52 +0000
+! Diff-Path: ../patches/2024.11.29.681.patch#ruadlist
+d13888 2
+a13889 2
+vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .page_block .adaptive_ad)
+vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .page_block [class*="_noClick"])
 d15730 1
 a15730 1
 abw.by,agropolit.com,egamersworld.com,elevatorist.com,filmozavr.com,filmozavr.net,gotennis.ru,inoprosport.ru,kinopati.ru,lada-granta.net,latifundist.com,lkforum.ru,myshows.me,old.myshows.me,osp.ru,overclockers.ua,podfm.ru,popcornnews.ru,psm7.com,superagronom.com,zemliak.com##.branding
@@ -19,7 +21,7 @@ a21761 2
 ||dzen.ru/news$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js
 d21776 1
 a21776 1
-||pikabu.ru/ajax/cdma7azurdaAshcg.$xmlhttprequest
+||pikabu.ru/ajax/c4maZ0Vufga1slsd.$xmlhttprequest
 d21793 1
 a21840 1
 howdyho.net,howdyho.pro##html[lang="ru"] :not(my-obnaruzhili-adblock)
@@ -37,6 +39,8 @@ rbc.ru##[data-yandex-name^="selfpromo_"]
 d22887 1
 a22887 1
 mail.yandex.by,mail.yandex.com,mail.yandex.kz,mail.yandex.ru,mail.yandex.uz#?#.js-scroller-right:-abp-has(> div:only-child)
+a28219 1
+vk.com,vk.ru##+js(set-constant, Object.prototype.adChoices, undefined)
 d28374 1
 a28374 1
 howdyho.*##+js(no-setTimeout-if, _0x)

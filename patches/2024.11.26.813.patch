@@ -1,11 +1,12 @@
-diff name:ruadlist lines:46 checksum:181c4fd591
+diff name:ruadlist lines:49 checksum:1a4d90af12
 d4 2
 a5 2
-! Last modified: Fri, 29 Nov 2024 06:35:59 +0000
-! Diff-Path: ../patches/2024.11.29.395.patch#ruadlist
+! Last modified: Fri, 29 Nov 2024 11:21:52 +0000
+! Diff-Path: ../patches/2024.11.29.681.patch#ruadlist
+d13888 1
 a13888 3
-vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .page_block .mkit_noClickArea)
-vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .page_block .mkit_noClickarea)
+vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .page_block .adaptive_ad)
+vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .page_block [class*="_noClick"])
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .page_block [data-role="adChoicesMenu"])
 d15728 1
 a15728 1
@@ -21,7 +22,7 @@ a21759 2
 ||dzen.ru/news$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js
 d21774 1
 a21774 1
-||pikabu.ru/ajax/cdma7azurdaAshcg.$xmlhttprequest
+||pikabu.ru/ajax/c4maZ0Vufga1slsd.$xmlhttprequest
 d21791 1
 a21838 1
 howdyho.net,howdyho.pro##html[lang="ru"] :not(my-obnaruzhili-adblock)
@@ -42,6 +43,8 @@ mail.yandex.by,mail.yandex.com,mail.yandex.kz,mail.yandex.ru,mail.yandex.uz#?#.j
 d26014 1
 a26014 1
 live.vkvideo.ru##div[class^="AdBlockAlert_root"]
+a28217 1
+vk.com,vk.ru##+js(set-constant, Object.prototype.adChoices, undefined)
 d28372 1
 a28372 1
 howdyho.*##+js(no-setTimeout-if, _0x)
