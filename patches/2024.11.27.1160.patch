@@ -1,8 +1,8 @@
-diff name:ruadlist lines:35 checksum:2f7ebda1e1
+diff name:ruadlist lines:38 checksum:82be86e141
 d4 2
 a5 2
-! Last modified: Sat, 30 Nov 2024 17:23:07 +0000
-! Diff-Path: ../patches/2024.11.30.1043.patch#ruadlist
+! Last modified: Sat, 30 Nov 2024 22:26:09 +0000
+! Diff-Path: ../patches/2024.11.30.1346.patch#ruadlist
 d13888 2
 a13889 2
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .page_block .adaptive_ad)
@@ -27,6 +27,9 @@ d22095 1
 d22887 1
 a22887 1
 mail.yandex.by,mail.yandex.com,mail.yandex.kz,mail.yandex.ru,mail.yandex.uz#?#.js-scroller-right:-abp-has(> div:only-child)
+a28101 1
+wotspeak.org##+js(href-sanitizer, [href^="/engine/dwn-car.php"], ?xf)
+d28135 1
 a28219 1
 vk.com,vk.ru##+js(set-constant, Object.prototype.adChoices, undefined)
 d28374 1
