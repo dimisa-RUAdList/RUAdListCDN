@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 01 Dec 2024 13:30:21 +0000
-! Diff-Path: ../patches/2024.12.1.810.patch#ruadlist
+! Last modified: Sun, 01 Dec 2024 18:32:35 +0000
+! Diff-Path: ../patches/2024.12.1.1112.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -19943,6 +19943,7 @@ showgid.tv##aside > .banner + .title
 motogon.ru##aside > .block .banner
 winitpro.ru##aside > .block-search + .block-search + .block-search
 mirlib.ru#?#aside > .block:-abp-has([id^="ambn"])
+linux.org.ru##aside > .boxlet[align="center"]
 sportnews.com.ua##aside > .custom-html-widget
 pik.net.ua##aside > .dialog > a[href]:not([href^="/"]):not([href^="https://pik.net.ua/"])
 jstack.ru##aside > .profile-inner + a[href][target="_blank"] > img
@@ -21776,7 +21777,7 @@ $csp=script-src-attr 'none',domain=eurointegration.com.ua|pravda.com.ua
 @@||ssp.rambler.ru/capirs_async.js|$script,domain=www.championat.com
 https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|livejournal.com|olegmakarenko.ru|periskop.su|shakko.ru|shiro-kino.ru|vadimrazumov.ru
 ||imgfrost.net^$third-party
-||pikabu.ru/ajax/od2laaguzOv7slsd.$xmlhttprequest
+||pikabu.ru/ajax/okgYagul0v777sA.$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
