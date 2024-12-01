@@ -1,8 +1,8 @@
-diff name:ruadlist lines:24 checksum:3efd444129
+diff name:ruadlist lines:46 checksum:26c564ecfe
 d4 2
 a5 2
-! Last modified: Sun, 01 Dec 2024 08:30:21 +0000
-! Diff-Path: ../patches/2024.12.1.510.patch#ruadlist
+! Last modified: Sun, 01 Dec 2024 13:30:21 +0000
+! Diff-Path: ../patches/2024.12.1.810.patch#ruadlist
 d13888 3
 a13890 2
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .page_block .adaptive_ad)
@@ -10,16 +10,38 @@ vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .page_block [class
 d15731 1
 a15731 1
 abw.by,agropolit.com,egamersworld.com,elevatorist.com,filmozavr.com,filmozavr.net,gotennis.ru,inoprosport.ru,kinopati.ru,lada-granta.net,latifundist.com,lkforum.ru,myshows.me,old.myshows.me,osp.ru,overclockers.ua,podfm.ru,popcornnews.ru,psm7.com,superagronom.com,zemliak.com##.branding
+a17224 1
+habr.com##.pack-sponsor
+d20197 1
+a20197 1
+7themes.su,banker.ua,chudo-povar.com,cyberpedia.su,draug.ru,festima.ru,help-wifi.com,mods-fs.net,modsforwot.ru,mydiv.net,nikolaev-city.net,pingvin.pro,pixwords-help.info,point.md,readweb.org,sega-play.ru,slo.ru,vplate.ru,wotspeak.org#?#div:-abp-has(> .adsbygoogle)
+d20207 1
+a20207 1
+blackwot.ru,draug.ru,emdigital.ru,modsforwot.ru,pogodavtomske.ru#?#div:-abp-has(> [id^="yandex_rtb"])
 a21762 2
 ! ловушка для обфускации, новости дзена
 ||dzen.ru/news$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js
 d21777 1
 a21777 1
 ||pikabu.ru/ajax/od2laaguzOv7slsd.$xmlhttprequest
+a25895 1
+draug.ru,leingpt.ru,print-post.com#@##reklama
+d25902 1
+d26411 3
+a26413 3
+draug.ru,modsforwot.ru###timer_1
+draug.ru,modsforwot.ru###timer_2:style(display: block !important)
+draug.ru,modsforwot.ru##body:style(overflow: auto !important)
+d27922 1
+a27922 1
+draug.ru,modsforwot.ru##+js(abort-current-inline-script, Math.floor, AdSense)
 a28104 1
 wotspeak.org##+js(href-sanitizer, [href^="/engine/dwn-car.php"], ?xf)
 d28138 1
 a28222 1
 vk.com,vk.ru##+js(set-constant, Object.prototype.adChoices, undefined)
+d28385 1
+a28385 1
+draug.ru,modsforwot.ru##p:has-text(Для скачивания подождите отсчет таймера...)
 a28395 1
 ya.ru,yandex.*##.dist-overlay__popup:remove()
