@@ -1,16 +1,23 @@
-diff name:ruadlist lines:44 checksum:68a623bfb5
+diff name:ruadlist lines:57 checksum:ea6b3c824f
 d4 2
 a5 2
-! Last modified: Mon, 02 Dec 2024 09:29:14 +0000
-! Diff-Path: ../patches/2024.12.2.569.patch#ruadlist
+! Last modified: Mon, 02 Dec 2024 14:28:29 +0000
+! Diff-Path: ../patches/2024.12.2.868.patch#ruadlist
+a10187 1
+.softoroom.org^$csp=default-src 'unsafe-inline'
 a12498 1
 ||preplay.site^$third-party,domain=hospodar.ua
 d13888 3
 a13890 2
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .page_block .adaptive_ad)
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .page_block [class*="_noClick"])
+d13917 2
+a13918 1
+softoroom.org###fo_cblock2 > .row2 > table ~ div[align="center"]
 a17224 1
 habr.com##.pack-sponsor
+a18869 1
+vgae.ru##[data-count="b/s/"]
 a19945 1
 linux.org.ru##aside > .boxlet[align="center"]
 d20197 1
@@ -19,9 +26,15 @@ a20197 1
 d20207 1
 a20207 1
 blackwot.ru,draug.ru,emdigital.ru,modsforwot.ru,pogodavtomske.ru#?#div:-abp-has(> [id^="yandex_rtb"])
+d21076 1
+d21081 1
+a21140 1
+vgae.ru##div[style^="margin"][style*="-10px;"]
+a21366 1
+softoroom.org##img[src*="yandexbr."]
 d21779 1
 a21779 1
-||pikabu.ru/ajax/okgYagul0v777sA.$xmlhttprequest
+||pikabu.ru/ajax/okzLaqu30v5h7sf.$xmlhttprequest
 a25897 1
 draug.ru,leingpt.ru,print-post.com#@##reklama
 d25904 1
@@ -33,8 +46,8 @@ draug.ru,modsforwot.ru##body:style(overflow: auto !important)
 d27924 1
 a27924 1
 draug.ru,modsforwot.ru##+js(abort-current-inline-script, Math.floor, AdSense)
-a28106 1
-wotspeak.org##+js(href-sanitizer, [href^="/engine/dwn-car.php"], ?xf)
+a28116 1
+wotspeak.org##+js(href-sanitizer, a[href^="/engine/dwn"], ?xf)
 d28140 1
 a28224 1
 vk.com,vk.ru##+js(set-constant, Object.prototype.adChoices, undefined)
