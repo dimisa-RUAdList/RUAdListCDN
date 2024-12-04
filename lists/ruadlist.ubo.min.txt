@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 04 Dec 2024 06:36:36 +0000
-! Diff-Path: ../patches/2024.12.4.396.patch#ruadlist
+! Last modified: Wed, 04 Dec 2024 11:22:05 +0000
+! Diff-Path: ../patches/2024.12.4.682.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -13888,6 +13888,7 @@ bitcryptonews.ru###faq-index
 turmush.kg###fb_bottom_like
 myparcels.ru###featured-wants
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .page_block .adaptive_ad)
+vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .page_block .ads_ad_action_menu_item_icon)
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .page_block .ads_wall_text)
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .page_block [class*="_noClick"])
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .page_block [data-role="adChoicesMenu"])
@@ -19348,7 +19349,7 @@ komapz.net##a[href*="epidems.net"]
 kubyshka.org,radiochief.ru,riperam.org,znamyuzl.ru##a[href*="epngo.bz"]
 cybersport.ru##a[href*="erid:"][target="_blank"]
 business-gazeta.ru##a[href*="erid="]
-sport-express.ru##a[href*="erid="][target="_blank"]
+agronovosti.ru,sport-express.ru##a[href*="erid="][target="_blank"]
 7ba.org,7ba.ru##a[href*="erotel.org"]
 forum.amit.ru##a[href*="evroremont.amit.ru"]
 pb.wtf,piratbit.fun,piratbit.org,piratbit.top##a[href*="exaccess"]

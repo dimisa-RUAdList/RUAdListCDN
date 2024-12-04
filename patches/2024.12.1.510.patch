@@ -1,13 +1,14 @@
-diff name:ruadlist lines:53 checksum:84804a0b15
+diff name:ruadlist lines:57 checksum:d70d506f29
 d4 2
 a5 2
-! Last modified: Wed, 04 Dec 2024 06:36:36 +0000
-! Diff-Path: ../patches/2024.12.4.396.patch#ruadlist
+! Last modified: Wed, 04 Dec 2024 11:22:05 +0000
+! Diff-Path: ../patches/2024.12.4.682.patch#ruadlist
 a10187 1
 .softoroom.org^$csp=default-src 'unsafe-inline'
 a12498 1
 ||preplay.site^$third-party,domain=hospodar.ua
-a13888 1
+a13888 2
+vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .page_block .ads_ad_action_menu_item_icon)
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .page_block .ads_wall_text)
 d13916 2
 a13917 1
@@ -16,6 +17,9 @@ a17223 1
 habr.com##.pack-sponsor
 a18868 1
 vgae.ru##[data-count="b/s/"]
+d19347 1
+a19347 1
+agronovosti.ru,sport-express.ru##a[href*="erid="][target="_blank"]
 a19944 1
 linux.org.ru##aside > .boxlet[align="center"]
 d20196 1
