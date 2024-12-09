@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 09 Dec 2024 06:37:23 +0000
-! Diff-Path: ../patches/2024.12.9.397.patch#ruadlist
+! Last modified: Mon, 09 Dec 2024 11:22:52 +0000
+! Diff-Path: ../patches/2024.12.9.682.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -13523,7 +13523,6 @@ poiskvps.ru###BlueA
 tutu.ru###DBdesktopBillboard
 rp5.am,rp5.by,rp5.co.nz,rp5.co.uk,rp5.kz,rp5.md,rp5.ru###FheaderContent > #archiveString ~ div[id]:not([class]):not([id="forecastShort"])
 nday.te.ua###Flash
-7days.ru###GPM_7days_D_Top
 onlinemusic.com.ua###GoodVane
 cheline.com.ua###IUAfinanceBlock
 sportsdaily.ru###KefTable
@@ -20808,6 +20807,7 @@ exler.ru##div[id^="Banner"]
 bookskeeper.ru##div[id^="BlockId"]
 kontur-map.ru,ololo.fm##div[id^="DIV_DA"]
 vesti.ru##div[id^="DIV_SMI_"]
+7days.ru##div[id^="GPM_7days_"][id$="_Top"]
 relax-fm.ru##div[id^="GPM_Relax_fm_"]
 tasix.me##div[id^="M"][id*="Preload"]
 semestr.online,semestr.ru#?#div[id^="Math"][id$="Block"] > div:-abp-has(a[href]:not([href^="/"]):not([href*=".semestr."]))
