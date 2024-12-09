@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 09 Dec 2024 11:22:52 +0000
-! Diff-Path: ../patches/2024.12.9.682.patch#ruadlist
+! Last modified: Mon, 09 Dec 2024 16:34:40 +0000
+! Diff-Path: ../patches/2024.12.9.994.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -15071,7 +15071,7 @@ youtube.com##.annotation.iv-promo
 vidstezhyty.com.ua##.answear.sale
 photopea.com##.app > div ~ div > a[target="_blank"] > img
 soft.mydiv.net##.app-page__left > .app-page__menu ~ div[style*="height:"]
-mentoday.ru,novochag.ru,pravilamag.ru,techinsider.ru,thesymbol.ru,thevoicemag.ru##.app-popups
+grazia.ru,mentoday.ru,novochag.ru,pravilamag.ru,robb.report,techinsider.ru,thesymbol.ru,thevoicemag.ru##.app-popups
 kriminal.net.ua##.append_html
 megamult.net##.apygame
 dnpr.com.ua##.area-after-nav
@@ -15860,7 +15860,7 @@ glazey.info##.client
 literaguru.ru##.clinic-image
 gorodkiev.com.ua##.clr[style]
 allhen.online,doramatv.live,doramatv.one,findanime.ru,grouple.co,koro.life,librebook.me,mintmanga.one,mose.su,readmanga.io,selflib.me,selfmanga.live,usagi.one##.co_ba
-024.by,ampercar.com,autogeek.com.ua,bolshoyulov.ru,femmie.ru,fuzzmusic.ru,gadgets-help.ru,gubdaily.ru,hersonweek.net,itbusiness.com.ua,itsider.com.ua,kakbog.com,kovi.ru,mmr.net.ua,nnews.com.ua,o-polze.com,pcminipro.ru,poravkrym.ru,villaved.ru,vsviti.com.ua##.code-block
+024.by,ampercar.com,autogeek.com.ua,bolshoyulov.ru,femmie.ru,find-key.ru,fuzzmusic.ru,gadgets-help.ru,gubdaily.ru,hersonweek.net,itbusiness.com.ua,itsider.com.ua,kakbog.com,kovi.ru,mmr.net.ua,nnews.com.ua,o-polze.com,pcminipro.ru,poravkrym.ru,villaved.ru,vsviti.com.ua##.code-block
 prozoro.net.ua##.code-block-34
 vsekamni.net#?#.code-block:-abp-has(> .content_rb)
 slivup.me##.code11
@@ -20318,7 +20318,7 @@ finance.ua,meta.ua##div[class*="banner-zone"]
 sia.ru,voxpopuli.kz##div[class*="banner_"]
 ecology.md##div[class*="bannerplace"]
 apteka.ru,forum.krasmama.ru,mycity.by##div[class*="banners"]
-mentoday.ru,novochag.ru,pravilamag.ru,techinsider.ru,thesymbol.ru,thevoicemag.ru##div[class*="billboard"]
+grazia.ru,mentoday.ru,novochag.ru,pravilamag.ru,robb.report,techinsider.ru,thesymbol.ru,thevoicemag.ru##div[class*="billboard"]
 gazetaby.com,gazetaby.info,gazetaby.media##div[class*="block-articles-"][class*="-native"]
 mamaplus.md##div[class*="block-mplus"]
 soccer.ru##div[class*="block-new-desine-"][class*="-bookmakers"]
@@ -26734,6 +26734,10 @@ ictv.ua##.video-stream:style(background-image:none !important; pointer-events: n
 ! ---
 igrovaya.org,vsetors.org##body > .container:style(margin-top: 0 !important)
 ! ---
+! Independent Media
+grazia.ru,mentoday.ru,techinsider.ru,thevoicemag.ru##.preview-section .vertical-video__loader
+grazia.ru,mentoday.ru,techinsider.ru,thevoicemag.ru##.preview-section .vertical-video__play-icon-wrapper:style(display: unset !important)
+! ---
 infocar.ua###totalbg:style(background-image: none !important)
 ! ---
 infoua.biz###id_box_r_y1:style(position: absolute !important; top: -10000px !important; left: -10000px !important; height: 50px !important)
@@ -26993,9 +26997,6 @@ lurkmore.wtf###localNotice .floatleft img:style(height: 70px !important; width: 
 m24.ru##.vjs-big-play-button:style(background: #0fc3c3 !important)
 ! ---
 mc.today##.category-all #content:style(background-image: none !important; cursor: auto !important)
-! ---
-mentoday.ru,techinsider.ru,thevoicemag.ru##.preview-section .vertical-video__loader
-mentoday.ru,techinsider.ru,thevoicemag.ru##.preview-section .vertical-video__play-icon-wrapper:style(display: unset !important)
 ! ---
 ! сайты Mediafort.ru
 asienda.ru,mycharm.ru,myjane.ru###pagewrapper:style(margin-top: 0 !important)
