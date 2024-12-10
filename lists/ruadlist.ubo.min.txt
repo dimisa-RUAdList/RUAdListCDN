@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 10 Dec 2024 07:26:51 +0000
-! Diff-Path: ../patches/2024.12.10.446.patch#ruadlist
+! Last modified: Tue, 10 Dec 2024 12:53:11 +0000
+! Diff-Path: ../patches/2024.12.10.773.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -17217,6 +17217,7 @@ krastown.com##.overlay_wrap
 truba.com##.overvideo
 magtimes.info##.owl-carousel
 sims3pack.ru##.ozon_link
+safezone.cc##.p-body-content > div[style^="text-align:center;"][style*="min-height:"]
 yougame.biz##.p-body-inner > .notices
 probiv.in,probiv.one##.p-body-pageContent center > [href^="https://t.me/"] > img
 snob.ru##.p-c-a
@@ -18937,6 +18938,7 @@ dotabuff.com##[data-type="elo-placement"]
 historyrusedu.ru##[data-uk-grid-match*="target"]
 slukh.media##[data-vc-parallax]
 nv.ua##[data-vr-zone="Баннер"]
+safezone.cc##[data-widget-key="friends"]
 ozon.ru##[data-widget="advBanner"]
 ozon.ru##[data-widget="advVideoBanner"]
 ozon.ru#?#[data-widget="freshIsland"]:-abp-has(> div > [data-widget="objectBannerList"])
@@ -21790,7 +21792,7 @@ $csp=script-src-attr 'none',domain=eurointegration.com.ua|pravda.com.ua
 @@||ssp.rambler.ru/capirs_async.js|$script,domain=www.championat.com
 https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|livejournal.com|olegmakarenko.ru|periskop.su|shakko.ru|shiro-kino.ru|vadimrazumov.ru
 ||imgfrost.net^$third-party
-||pikabu.ru/ajax/cyn6EhzEdPieuuB.$xmlhttprequest
+||pikabu.ru/ajax/A3k8Z1pQw7tX9mB.$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -27829,6 +27831,7 @@ e.mail.ru,octavius.mail.ru##.application-mail__wrap > .application-mail__layout 
 e.mail.ru,octavius.mail.ru##.application_new-toolbar .application-mail:not(.application-mail_webview-mobile) .letter-list[class*="adv"]:style(--letter-list-top-toolbar-height: inherit !important)
 e.mail.ru,octavius.mail.ru##.layer-sent-page > .layer:style(min-height: 0 !important)
 e.mail.ru,octavius.mail.ru##.letter-list-item-adv__container:style(height: 0 !important; opacity: 0 !important; pointer-events: none !important)
+e.mail.ru##.ph-project__link[href^="https://cloud.mail.ru/promo/"]
 e.mail.ru##.ph-projects > a[href^="https://e.mail.ru/messages/inbox?utm_"]:style(pointer-events: none !important)
 ! ---
 mail.ru###bubble-home
