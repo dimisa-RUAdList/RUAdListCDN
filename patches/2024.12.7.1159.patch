@@ -1,12 +1,18 @@
-diff name:ruadlist lines:55 checksum:f1b11e182b
+diff name:ruadlist lines:67 checksum:d4c530cef7
 d4 2
 a5 2
-! Last modified: Wed, 11 Dec 2024 08:34:10 +0000
-! Diff-Path: ../patches/2024.12.11.514.patch#ruadlist
+! Last modified: Wed, 11 Dec 2024 13:34:09 +0000
+! Diff-Path: ../patches/2024.12.11.814.patch#ruadlist
 d13526 1
+a13891 1
+vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .page_block .__vkfeed_adchoices)
+a14195 1
+www.zoneofgames.ru#?##news-list > .news-item:-abp-has(> .news-content > div > p[style] > span)
 d15075 1
 a15075 1
 grazia.ru,mentoday.ru,novochag.ru,pravilamag.ru,robb.report,techinsider.ru,thesymbol.ru,thevoicemag.ru##.app-popups
+a15596 1
+byrutgame.org##.block_down_game > .block_down ~ .block_down
 d15864 1
 a15864 1
 024.by,ampercar.com,autogeek.com.ua,bolshoyulov.ru,femmie.ru,find-key.ru,fuzzmusic.ru,gadgets-help.ru,gubdaily.ru,hersonweek.net,itbusiness.com.ua,itsider.com.ua,kakbog.com,kovi.ru,mmr.net.ua,nnews.com.ua,o-polze.com,pcminipro.ru,poravkrym.ru,villaved.ru,vsviti.com.ua##.code-block
@@ -35,7 +41,7 @@ d20924 1
 d20956 1
 d21793 1
 a21793 1
-||pikabu.ru/ajax/A3k8Z1pQw7tX9mB.$xmlhttprequest
+||pikabu.ru/ajax/G7h4K9j2L1mQ8nX.$xmlhttprequest
 d24187 1
 a24187 1
 ||player.panda.video/*luster.js$domain=~riamo.ru
@@ -51,6 +57,12 @@ grazia.ru,mentoday.ru,techinsider.ru,thevoicemag.ru##.preview-section .vertical-
 grazia.ru,mentoday.ru,techinsider.ru,thevoicemag.ru##.preview-section .vertical-video__play-icon-wrapper:style(display: unset !important)
 ! ---
 d26996 3
+d27782 1
+a27782 1
+www.zoneofgames.ru##body[style^="padding-top:"][style*="250px"][style*="!important"] > #mkwrapper:style(margin-top: -250px !important)
 a27829 1
 e.mail.ru##.ph-project__link[href^="https://cloud.mail.ru/promo/"]
+d28206 1
+a28206 1
+afisha.ru,film.ru,filmpro.ru,thelastupd.org##+js(remove-attr, autoplay|loop, video, stay)
 d30623 1
