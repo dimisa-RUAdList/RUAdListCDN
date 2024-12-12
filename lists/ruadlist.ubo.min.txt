@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 12 Dec 2024 14:28:19 +0000
-! Diff-Path: ../patches/2024.12.12.868.patch#ruadlist
+! Last modified: Thu, 12 Dec 2024 19:20:55 +0000
+! Diff-Path: ../patches/2024.12.12.1160.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -13807,7 +13807,6 @@ auto.kufar.by#?##content div[class]:not([id]):-abp-has(> [id^="adfox_"]:first-ch
 pickupforum.ru###content div[id^="slider_"]
 vsezdes.info###content h3[style] > span[style^="color"]
 chipinfo.pro###content-container > div[style^="display: block;"]
-football24.ua###content-roll-tracker
 stratege.ru###content-sub
 stratege.ru###content-top
 tvsok.ru###content-wraper > p
@@ -14272,7 +14271,6 @@ lux.fm###partner-block
 bash.news###partner-widget-mediametrics
 footballua.tv###partner_title
 sibmama.info,sibmama.ru###partners
-football24.ua###partners-propositions
 dofiga.net###pbie_25
 poleno.net###pddk221
 onyxgame.com###pegination ~ a
@@ -15141,6 +15139,7 @@ sm.news##.aside > [id][class]
 efir.plus##.aside > div ~ div
 sm.news##.aside div[id][class]:empty
 iz.ru##.aside-advertising
+kurkul.com##.aside-banner-wrap
 auto43.ru#?#.aside-block:-abp-has(> .media_aside_our-partners)
 kinoblog.tv#?#.aside-block:-abp-has(div[class^="adfinity_block_"])
 news-tape.ru#?#.aside-col > .moduletable:-abp-has(> .inner > .box-ct > .adsbygoogle)
@@ -17527,7 +17526,7 @@ friday.ru#?#.rc2:-abp-has(div[id^="adfox_"])
 vsezdorovo.com##.rca-block
 yakutsk.ru##.rca_des
 omastopatii.ru##.rcblo
-zemliak.com##.rcl-label
+elevatorist.com,kurkul.com,latifundist.com,superagronom.com,zemliak.com##.rcl-label
 midasbox.net##.re-block
 happy-biock.info,happy-block.info,howto-news.info##.read-also__title
 twizz.ru##.read-next
@@ -17543,7 +17542,7 @@ tvcook.ru##.recipe-adv_bottom
 19216811.ru##.recl
 depfile.com##.recl_vert
 arigus.tv##.reclam
-meteoprog.ua##.reclama
+kurkul.com,meteoprog.ua##.reclama
 programki.net##.reclama_v
 big-anime.ru##.reclame
 mmo13.ru##.recomend
@@ -18572,7 +18571,6 @@ aplik.ru,discover24.ru,edurusnews.ru,holostyak.site,inforuss.info,krashevseh.ru,
 censor.net##.widget_header aside
 animalbox.ru##.widget_html_javascript_adder
 podskazki.info##.widget_hugeit_slider_widget
-kurkul.com##.widget_image-vertical
 kyiv.media##.widget_leftadvbanner
 hyperione.com##.widget_mbywx
 autogeek.com.ua,cryptonewsua.com,expert.com.ua,gk-press.if.ua,hronikers.com,inform.zp.ua,kulemet.com,mezha.media,pclegko.ru,politarena.online,sn.by,svoboda.te.ua,volyninfa.com.ua##.widget_media_image
@@ -21027,7 +21025,7 @@ alcogolizm.com##div[id^="yazd_"]
 korabel.ru##div[id^="ydirect_"]
 irecommend.ru##div[id^="ymarket-mobtop"]
 mega-stars.ru##div[id^="youtube_ad_"]
-sport.ua##div[id^="zone_"]
+football24.ua,sport.ua##div[id^="zone_"]
 hackware.ru,kali.tools##div[name]
 avtonavideo.ru,chinimavto.ru,minecraftnavideo.ru,multivarki-redmond.ru,odezhda2.ru,piling.re,pol-video.ru,prigotovit.org,prohozhuigru.ru,remontnavideo.ru,shiny2.ru,televizor2.ru##div[onclick*="SkipR"]
 mydiv.net##div[onclick*="partner"]
@@ -21796,7 +21794,7 @@ $csp=script-src-attr 'none',domain=eurointegration.com.ua|pravda.com.ua
 @@||ssp.rambler.ru/capirs_async.js|$script,domain=www.championat.com
 https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|livejournal.com|olegmakarenko.ru|periskop.su|shakko.ru|shiro-kino.ru|vadimrazumov.ru
 ||imgfrost.net^$third-party
-||pikabu.ru/ajax/G7h4K9j2L1mQ8nX.$xmlhttprequest
+||pikabu.ru/ajax/A4b7C2dE9fG1hJ3k.$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
