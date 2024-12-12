@@ -1,12 +1,15 @@
-diff name:ruadlist lines:21 checksum:e19c96f88a
+diff name:ruadlist lines:24 checksum:952900bc00
 d4 2
 a5 2
-! Last modified: Thu, 12 Dec 2024 04:31:12 +0000
-! Diff-Path: ../patches/2024.12.12.271.patch#ruadlist
+! Last modified: Thu, 12 Dec 2024 09:28:12 +0000
+! Diff-Path: ../patches/2024.12.12.568.patch#ruadlist
 a10606 1
 _banner&configs=$domain=uchi.ru
 a13890 1
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .page_block .__vkfeed_adchoices)
+d13892 2
+a13894 1
+vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .page_block [class*=" ads_ad_"])
 a14194 1
 www.zoneofgames.ru#?##news-list > .news-item:-abp-has(> .news-content > div > p[style] > span)
 a15595 1
