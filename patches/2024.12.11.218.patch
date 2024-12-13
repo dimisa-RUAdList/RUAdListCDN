@@ -1,10 +1,16 @@
-diff name:ruadlist lines:40 checksum:b195ca2820
+diff name:ruadlist lines:65 checksum:b25b6c6afb
 d4 2
 a5 2
-! Last modified: Thu, 12 Dec 2024 19:20:55 +0000
-! Diff-Path: ../patches/2024.12.12.1160.patch#ruadlist
+! Last modified: Fri, 13 Dec 2024 02:02:03 +0000
+! Diff-Path: ../patches/2024.12.13.122.patch#ruadlist
 a10606 1
 _banner&configs=$domain=uchi.ru
+a10719 1
+||abw.by/scripts/banner-observer.min.js
+a10908 1
+||avatars.mds.yandex.net/get-adfox-content/$domain=abw.by
+a12990 1
+||superagronom.com/media/banner/
 d13809 1
 a13890 1
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .page_block .__vkfeed_adchoices)
@@ -14,10 +20,18 @@ vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .page_block [class
 a14194 1
 www.zoneofgames.ru#?##news-list > .news-item:-abp-has(> .news-content > div > p[style] > span)
 d14273 1
+a14877 1
+abw.by##.ad-branding
+d15092 1
 a15141 1
 kurkul.com##.aside-banner-wrap
+d15149 1
 a15595 1
 byrutgame.org##.block_down_game > .block_down ~ .block_down
+d15735 1
+a15735 1
+agropolit.com,egamersworld.com,elevatorist.com,filmozavr.com,filmozavr.net,gotennis.ru,inoprosport.ru,kinopati.ru,lada-granta.net,latifundist.com,lkforum.ru,myshows.me,old.myshows.me,osp.ru,overclockers.ua,podfm.ru,popcornnews.ru,psm7.com,superagronom.com,zemliak.com##.branding
+d17499 1
 d17527 1
 a17527 1
 elevatorist.com,kurkul.com,latifundist.com,superagronom.com,zemliak.com##.rcl-label
@@ -25,6 +39,10 @@ d17543 1
 a17543 1
 kurkul.com,meteoprog.ua##.reclama
 d18572 1
+d20303 1
+a20303 1
+yummyani.me,yummyani.meme##div[class*="adfinity_block"]
+d20626 1
 d21027 1
 a21027 1
 football24.ua,sport.ua##div[id^="zone_"]
@@ -33,9 +51,16 @@ a21796 1
 ||pikabu.ru/ajax/A4b7C2dE9fG1hJ3k.$xmlhttprequest
 a25000 1
 ads.tuver.ru#@#.ad-type
+a26288 4
+abw.by##.app-branding:style(transform: none !important)
+abw.by##.cookie-modal
+abw.by##body.stop-scroll:style(position: relative !important)
+! ---
 d27787 1
 a27787 1
 www.zoneofgames.ru##body[style^="padding-top:"][style*="250px"][style*="!important"] > #mkwrapper:style(margin-top: -250px !important)
 d28212 1
 a28212 1
 afisha.ru,film.ru,filmpro.ru,thelastupd.org##+js(remove-attr, autoplay|loop, video, stay)
+a28494 1
+||media-trend.mail.ru/embed/$domain=~media-trend.mail.ru

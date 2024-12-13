@@ -1,10 +1,16 @@
-diff name:ruadlist lines:66 checksum:b195ca2820
+diff name:ruadlist lines:91 checksum:b25b6c6afb
 d4 2
 a5 2
-! Last modified: Thu, 12 Dec 2024 19:20:55 +0000
-! Diff-Path: ../patches/2024.12.12.1160.patch#ruadlist
+! Last modified: Fri, 13 Dec 2024 02:02:03 +0000
+! Diff-Path: ../patches/2024.12.13.122.patch#ruadlist
 a10606 1
 _banner&configs=$domain=uchi.ru
+a10719 1
+||abw.by/scripts/banner-observer.min.js
+a10908 1
+||avatars.mds.yandex.net/get-adfox-content/$domain=abw.by
+a12990 1
+||superagronom.com/media/banner/
 d13526 1
 d13810 1
 a13891 1
@@ -15,18 +21,26 @@ vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> .page_block [class
 a14195 1
 www.zoneofgames.ru#?##news-list > .news-item:-abp-has(> .news-content > div > p[style] > span)
 d14274 1
+a14878 1
+abw.by##.ad-branding
 d15075 1
 a15075 1
 grazia.ru,mentoday.ru,novochag.ru,pravilamag.ru,robb.report,techinsider.ru,thesymbol.ru,thevoicemag.ru##.app-popups
+d15093 1
 a15142 1
 kurkul.com##.aside-banner-wrap
+d15150 1
 a15596 1
 byrutgame.org##.block_down_game > .block_down ~ .block_down
+d15736 1
+a15736 1
+agropolit.com,egamersworld.com,elevatorist.com,filmozavr.com,filmozavr.net,gotennis.ru,inoprosport.ru,kinopati.ru,lada-granta.net,latifundist.com,lkforum.ru,myshows.me,old.myshows.me,osp.ru,overclockers.ua,podfm.ru,popcornnews.ru,psm7.com,superagronom.com,zemliak.com##.branding
 d15864 1
 a15864 1
 024.by,ampercar.com,autogeek.com.ua,bolshoyulov.ru,femmie.ru,find-key.ru,fuzzmusic.ru,gadgets-help.ru,gubdaily.ru,hersonweek.net,itbusiness.com.ua,itsider.com.ua,kakbog.com,kovi.ru,mmr.net.ua,nnews.com.ua,o-polze.com,pcminipro.ru,poravkrym.ru,villaved.ru,vsviti.com.ua##.code-block
 a17220 1
 safezone.cc##.p-body-content > div[style^="text-align:center;"][style*="min-height:"]
+d17499 1
 d17527 1
 a17527 1
 elevatorist.com,kurkul.com,latifundist.com,superagronom.com,zemliak.com##.rcl-label
@@ -38,9 +52,13 @@ itechua.com##.td-fix-index > p[style="text-align: center;"] > span
 d18571 1
 a18940 1
 safezone.cc##[data-widget-key="friends"]
+d20301 1
+a20301 1
+yummyani.me,yummyani.meme##div[class*="adfinity_block"]
 d20322 1
 a20322 1
 grazia.ru,mentoday.ru,novochag.ru,pravilamag.ru,robb.report,techinsider.ru,thesymbol.ru,thevoicemag.ru##div[class*="billboard"]
+d20624 1
 a20810 1
 7days.ru##div[id^="GPM_7days_"][id$="_Top"]
 d21024 1
@@ -51,6 +69,11 @@ a21793 1
 ||pikabu.ru/ajax/A4b7C2dE9fG1hJ3k.$xmlhttprequest
 a24997 1
 ads.tuver.ru#@#.ad-type
+a26285 4
+abw.by##.app-branding:style(transform: none !important)
+abw.by##.cookie-modal
+abw.by##body.stop-scroll:style(position: relative !important)
+! ---
 a26736 4
 ! Independent Media
 grazia.ru,mentoday.ru,techinsider.ru,thevoicemag.ru##.preview-section .vertical-video__loader
@@ -65,3 +88,5 @@ e.mail.ru##.ph-project__link[href^="https://cloud.mail.ru/promo/"]
 d28207 1
 a28207 1
 afisha.ru,film.ru,filmpro.ru,thelastupd.org##+js(remove-attr, autoplay|loop, video, stay)
+a28489 1
+||media-trend.mail.ru/embed/$domain=~media-trend.mail.ru

@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 12 Dec 2024 19:20:55 +0000
-! Diff-Path: ../patches/2024.12.12.1160.patch#ruadlist
+! Last modified: Fri, 13 Dec 2024 02:02:03 +0000
+! Diff-Path: ../patches/2024.12.13.122.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10718,6 +10718,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||abnews.ru/dog/
 ||abs.firstvds.ru^
 ||abv-soft.ru/block_script$script
+||abw.by/scripts/banner-observer.min.js
 ||acc.cv.ua/images/acc_rek/
 ||acc.cv.ua/images/bimg/
 ||aces.gg/templates/Aces/images/BGgeweu8m8s.jpg
@@ -10907,6 +10908,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||av.by/imag*/branding/
 ||avata.ru/images/240x400.png
 ||avata.ru/windows.gif
+||avatars.mds.yandex.net/get-adfox-content/$domain=abw.by
 ||avcore.ru^*.php?$script
 ||avensis-club.ru/images/R/
 ||aviafly.ru/js|
@@ -12989,6 +12991,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||sumypost.com/media/
 ||sunporno.com/sp2.php$xmlhttprequest
 ||superagronom.com/bridge/getbranding
+||superagronom.com/media/banner/
 ||superfish.com^$domain=vk.com
 ||superomsk.ru/images/himg/
 ||superomsk.ru/images/public/banners/
@@ -14875,6 +14878,7 @@ online.zakon.kz,zaycev.fm##.ad-banner
 newsinfo.ru##.ad-before
 novochag.ru##.ad-block
 it-here.ru##.ad-bottom-dc
+abw.by##.ad-branding
 moskva.fm,piter.fm##.ad-branding-block
 igromania.ru,kanobu.ru##.ad-brending
 delfi.ee##.ad-container
@@ -15089,7 +15093,6 @@ penzadoctor.ru##.article-banner
 techdigest.ru##.article-banner-side
 www.sport.ru##.article-bottom-block > .hdr2
 playua.net##.article-comments > .row > div[class] + div[class]
-abw.by##.article-content + .card-wrapper
 studopedia.ru##.article-description > noindex
 mmorpg.su##.article-free
 mk.ru##.article-grid__good-top
@@ -15147,7 +15150,6 @@ reporter.ua##.aside-column > a > img[src*="/home/banners/"]
 u24.ua##.aside-gab
 mezha.media##.aside-links
 snob.ru##.aside-p-c-a
-abw.by##.aside-promo
 minfin.com.ua##.aside-wrap > .js-ad-aside.mfm-aside-block
 chelseanews.ru##.asideContainer > aside[class="asideBox "]:first-child
 pik.net.ua##.aside__advertising
@@ -15734,7 +15736,7 @@ citydog.by##.brandLink
 ekaraganda.kz##.brand_a
 harpersbazaar.com.ua##.brand_left
 harpersbazaar.com.ua##.brand_right
-abw.by,agropolit.com,egamersworld.com,elevatorist.com,filmozavr.com,filmozavr.net,gotennis.ru,inoprosport.ru,kinopati.ru,lada-granta.net,latifundist.com,lkforum.ru,myshows.me,old.myshows.me,osp.ru,overclockers.ua,podfm.ru,popcornnews.ru,psm7.com,superagronom.com,zemliak.com##.branding
+agropolit.com,egamersworld.com,elevatorist.com,filmozavr.com,filmozavr.net,gotennis.ru,inoprosport.ru,kinopati.ru,lada-granta.net,latifundist.com,lkforum.ru,myshows.me,old.myshows.me,osp.ru,overclockers.ua,podfm.ru,popcornnews.ru,psm7.com,superagronom.com,zemliak.com##.branding
 tut.by##.branding > a
 3dtoday.ru##.branding-banner
 banki.ru##.branding-bg
@@ -17498,7 +17500,6 @@ ktozvonit.com.ua#?#.question:-abp-has(> .adsbygoogle)
 bash.im##.quote > .text:first-child
 bash.im##.quote > div[style]
 multiurok.ru##.r-courses__lists
-abw.by##.r-header-wrapper
 myfin.by##.r-sidebar > .own-placement
 oka.fm##.r2016
 all-sci.net,bib.social,economics.studio,economuch.com,finbook.news,lawbook.online,lawbooks.news,lib.sale,medinfo.live,myzooplanet.ru,pravo.studio,provse.news,psihologia.biz,sci-lib.biz,sci.house,scicenter.online,textbooks.studio,uchebnikfree.com,xn--80aaivjfyj3e.com##.r21
@@ -20301,7 +20302,7 @@ www.eg.ru##div[class*="_promocodes "]
 rg.ru##div[class*="adBox"]
 rg.ru##div[class*="adFox"]
 agroxxi.ru##div[class*="adagro"]
-yummy-anime.ru,yummyani.me##div[class*="adfinity_block"]
+yummyani.me,yummyani.meme##div[class*="adfinity_block"]
 mayaksbor.ru,rg.ru##div[class*="adfox"]
 svpressa.ru##div[class*="adfox_banner"]
 glavnoe.net,infotime.co##div[class*="ads-fixed"]
@@ -20624,7 +20625,6 @@ aliexpress.ru#?#div[class^="product-snippet_ProductSnippet__grid"] > [data-produ
 soft.sibnet.ru##div[class^="programm_block-ad"]
 all-sci.net,bib.social,economics.studio,economuch.com,finbook.news,lawbook.online,lawbooks.news,lib.sale,medinfo.live,myzooplanet.ru,pravo.studio,provse.news,psihologia.biz,sci-lib.biz,sci.house,scicenter.online,textbooks.studio,uchebnikfree.com,xn--80aaivjfyj3e.com##div[class^="r"][style*="height:"]
 glavred.info,glavred.net##div[class^="r"][style^="height"][style*="margin:"]
-abw.by##div[class^="r-block"]
 all-sci.net,bib.social,economics.studio,economuch.com,finbook.news,lawbook.online,lawbooks.news,lib.sale,medinfo.live,myzooplanet.ru,pravo.studio,provse.news,psihologia.biz,sci-lib.biz,sci.house,scicenter.online,textbooks.studio,uchebnikfree.com,xn--80aaivjfyj3e.com##div[class^="r711"]
 radiobells.com##div[class^="radio_ads_"]
 rutube.ru##div[class^="rai_raichu-wrapper__advertWrapper"]
@@ -26288,6 +26288,10 @@ www.aviasales.by,www.aviasales.kg,www.aviasales.md,www.aviasales.ru,www.aviasale
 ! ---
 avito.ru##.avito-ads-container:style(margin: 0 !important; min-height: 0 !important; padding-top: 0 !important)
 ! ---
+abw.by##.app-branding:style(transform: none !important)
+abw.by##.cookie-modal
+abw.by##body.stop-scroll:style(position: relative !important)
+! ---
 baby.ru##.promo-background:style(padding-top: 0 !important)
 ! ---
 baibako.tv##.topserial:style(height: auto !important)
@@ -28494,6 +28498,7 @@ ok.ru##div[class*="__banner-feed"]
 ||ad.mail.ru/$image,script,xmlhttprequest,redirect=empty
 ||ad.mail.ru/dist/
 ||mail.ru/api-proxy/rb-mimic/
+||media-trend.mail.ru/embed/$domain=~media-trend.mail.ru
 ||ok.ru/res/js/app/VideoEmbed_*.js|$script
 ||ok.ru/videoembed/*autoplay=1$subdocument,removeparam=|
 ||ok.ru/web-api/*/hobby/getMailRuHobbyFeedScriptSrc$domain=mail.ru
