@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 13 Dec 2024 15:27:43 +0000
-! Diff-Path: ../patches/2024.12.13.927.patch#ruadlist
+! Last modified: Fri, 13 Dec 2024 20:28:14 +0000
+! Diff-Path: ../patches/2024.12.13.1228.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22092,6 +22092,7 @@ e.mail.ru,octavius.mail.ru##.letter-list-item-adv
 news.mail.ru##.m-fixed-panel
 news.mail.ru##.r-source
 news.mail.ru##.reference-page__card ~ span:last-child
+news.mail.ru#?#[data-qa="WrapperContent"] div:-abp-has(> [data-rb-slot])
 dzen.ru##[id*="_tsar"]
 dzen.ru##div[class*=" news-site--"][class*="__desktop"]
 dzen.ru##div[class*="news-advert"]
