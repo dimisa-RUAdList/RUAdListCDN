@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 15 Dec 2024 07:23:28 +0000
-! Diff-Path: ../patches/2024.12.15.443.patch#ruadlist
+! Last modified: Sun, 15 Dec 2024 12:48:08 +0000
+! Diff-Path: ../patches/2024.12.15.768.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -26687,8 +26687,8 @@ hdkinozzoro.ru##.jirrua:style(margin-top: 0 !important)
 hdkinozzoro.ru##body:not(#id):style(padding-top: 0 !important)
 ! ---
 ! HDREZKA
-ag,biz,buzz,by,city,club,co,com,fi,in,ink,kim,loan,me,name,net,org,rest,run,sh,so,space,today,tv,vip,website,win##body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"] > [id$="er"]:nth-child(-n+3):style(width: unset !important)
-ag,biz,buzz,by,city,club,co,com,fi,in,ink,kim,loan,me,name,net,org,rest,run,sh,so,space,today,tv,vip,website,win##body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"]:style(padding-top: 0 !important; background-color: inherit !important)
+ag,biz,buzz,by,city,club,co,com,fi,in,ink,kim,loan,me,name,net,org,pub,rest,run,sh,so,space,today,tv,vip,website,win##body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"] > [id$="er"]:nth-child(-n+3):style(width: unset !important)
+ag,biz,buzz,by,city,club,co,com,fi,in,ink,kim,loan,me,name,net,org,pub,rest,run,sh,so,space,today,tv,vip,website,win##body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"]:style(padding-top: 0 !important; background-color: inherit !important)
 ! ---
 hdru.net##.page:style(margin-top: 0 !important)
 ! ---
@@ -28458,6 +28458,7 @@ ya.ru,yandex.*##.dist-overlay__popup:remove()
 ||youtube.com/embed/*autoplay=1$subdocument,removeparam=autoplay,domain=~kinoafisha.info|~pikabu.ru
 ||youtube.com/embed/?enablejsapi=1&origin=*3dnews.*&widgetid=1$subdocument,badfilter,domain=3dnews.kz|3dnews.ru
 ! Mail.RU
+mail.ru###grid div[class^="feed__"]:remove()
 webagent.mail.ru#@#+js()
 minigames.mail.ru##+js(abort-current-inline-script, $, blockWarnClass)
 mmminigames.mail.ru##+js(abort-current-inline-script, $, mimicTopClass)
@@ -28488,7 +28489,6 @@ ok.ru##div[class*="__banner-feed"]
 ||ad.mail.ru/$image,script,xmlhttprequest,redirect=empty
 ||ad.mail.ru/dist/
 ||mail.ru/api-proxy/rb-mimic/
-||media-trend.mail.ru/embed/$domain=~media-trend.mail.ru
 ||ok.ru/res/js/app/VideoEmbed_*.js|$script
 ||ok.ru/videoembed/*autoplay=1$subdocument,removeparam=|
 ||ok.ru/web-api/*/hobby/getMailRuHobbyFeedScriptSrc$domain=mail.ru
