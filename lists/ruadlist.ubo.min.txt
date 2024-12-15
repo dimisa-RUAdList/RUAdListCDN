@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 15 Dec 2024 02:07:41 +0000
-! Diff-Path: ../patches/2024.12.15.127.patch#ruadlist
+! Last modified: Sun, 15 Dec 2024 07:23:28 +0000
+! Diff-Path: ../patches/2024.12.15.443.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -17248,7 +17248,7 @@ yarnews.net##.page-new > .left
 knizhnik.org##.page-note
 golos.ua##.page-single > .col-right
 gdz-ru.work,gdz.fun##.page-subscribe
-filmix.date,filmix.fm,filmix.life,filmix.me,filmix.pub,filmix.tech,filmix.zone##.page-wrapper .last-news ~ .container > .information
+filmix.date,filmix.life,filmix.my,filmix.pub,filmix.tech,filmix.zone##.page-wrapper .last-news ~ .container > .information
 likemetr.ru##.page-wrapper > .analyzer-page > .subscriber
 1yar.tv##.pageBranding
 bdf.ms##.pageContent > div[style^="outline"] > a[href]:not([href^="../threads/"])
@@ -21788,7 +21788,7 @@ $csp=script-src-attr 'none',domain=eurointegration.com.ua|pravda.com.ua
 @@||ssp.rambler.ru/capirs_async.js|$script,domain=www.championat.com
 https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|livejournal.com|olegmakarenko.ru|periskop.su|shakko.ru|shiro-kino.ru|vadimrazumov.ru
 ||imgfrost.net^$third-party
-||pikabu.ru/ajax/PiRu37tCQpNzUZY.$xmlhttprequest
+||pikabu.ru/ajax/bfd4ZqjsGAf37Rw.$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -25980,7 +25980,7 @@ allbookerka.org##.overhang
 2x2tv.ru##.owl-wrapper-outer .slideAlt
 clan-soprano.ru##.popupBlock
 uniondht.org##.post_body > div[style="color:red;font-size:25px;"]
-filmix.date,filmix.fm,filmix.life,filmix.me,filmix.pub,filmix.tech,filmix.zone##.remove-sda-wrap
+filmix.date,filmix.life,filmix.my,filmix.pub,filmix.tech,filmix.zone##.remove-sda-wrap
 electric-house.ru#?#.rules:-abp-has(> p > [src="/img/no_ad.png"])
 satdx.club##.rules[style^="display:"][style*="position:"][style*="z-index:"]
 sport-express.ru##.se-bn-notice
@@ -26544,8 +26544,8 @@ filmitorrent.net,filmitorrent.site,utorr.cc##body > #container:style(margin-top:
 ! ---
 filmive-hd.net,kinoshack.net,tree.tv##body > .wrapper:style(margin-top: 0 !important)
 ! ---
-filmix.date,filmix.fm,filmix.life,filmix.me,filmix.pub,filmix.tech,filmix.zone##.main-wrapper:style(margin-top: 0 !important)
-filmix.date,filmix.fm,filmix.life,filmix.me,filmix.pub,filmix.tech,filmix.zone##.page-wrapper:style(margin-top: 0 !important)
+filmix.date,filmix.life,filmix.my,filmix.pub,filmix.tech,filmix.zone##.main-wrapper:style(margin-top: 0 !important)
+filmix.date,filmix.life,filmix.my,filmix.pub,filmix.tech,filmix.zone##.page-wrapper:style(margin-top: 0 !important)
 ! ---
 filmozavr.com,filmozavr.net##.maincontent:style(margin-top: 0 !important)
 ! ---
