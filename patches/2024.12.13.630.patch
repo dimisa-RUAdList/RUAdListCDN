@@ -1,8 +1,8 @@
-diff name:ruadlist lines:78 checksum:eebb6594df
+diff name:ruadlist lines:120 checksum:c1aad8a120
 d4 2
 a5 2
-! Last modified: Mon, 16 Dec 2024 08:34:47 +0000
-! Diff-Path: ../patches/2024.12.16.514.patch#ruadlist
+! Last modified: Mon, 16 Dec 2024 13:34:22 +0000
+! Diff-Path: ../patches/2024.12.16.814.patch#ruadlist
 a1704 1
 ||dynotech.io^$third-party
 a2380 1
@@ -17,12 +17,21 @@ a4423 1
 ||opendsp.ru^$third-party
 a4926 1
 ||qtarget.tech^$third-party
+a5272 1
+||rulive.ru^$third-party
+a8870 1
+##a[onclick*="https://dzen.ru/news/?favid="]
 a8891 1
 ##div[data-server-rendered="true"] > div[id^="block-"]
 d10898 1
 a10898 1
 ||autofill.yandex.ru^$domain=fishki.net|myshows.me|pikabu.ru|sport-express.ru
 d11295 2
+a12730 1
+||rutube.ru/play/embed/*?autostart$subdocument,domain=7days.ru|vokrug.tv
+a13297 1
+||vokrug.tv/*/kion-slider.
+d13299 1
 d14540 1
 d15339 1
 a15339 1
@@ -34,6 +43,9 @@ d15670 1
 d15733 1
 a15733 1
 agropolit.com,elevatorist.com,filmozavr.com,filmozavr.net,gotennis.ru,inoprosport.ru,kinopati.ru,lada-granta.net,latifundist.com,lkforum.ru,myshows.me,old.myshows.me,osp.ru,overclockers.ua,podfm.ru,popcornnews.ru,psm7.com,superagronom.com,zemliak.com##.branding
+d16140 1
+a16140 1
+2x2.su,ntv.ru,yk-news.kz##.dzen
 d16186 1
 d16349 1
 d17138 1
@@ -48,13 +60,38 @@ a17796 1
 nakanune.ru##.seo
 d17798 1
 d17848 1
+a18136 2
+vokrug.tv#?#.swiper-wrapper > .series-carousel__item:-abp-has(a[target="_blank"])
+vokrug.tv##.swiper-wrapper > .series-carousel__item:nth-child(-n+2)
+d19026 1
+a19026 1
+101.ru,19rus.info,2000.ua,5-tv.ru,56orb.ru,62info.ru,7info.ru,afanasy.biz,agitpro.su,allboxing.ru,anekdot.ru,argumenti.ru,baltnews.ee,belive.ru,bigpicture.ru,bombardir.ru,chehov-vid.ru,daily-inform.ru,dni.ru,dnpmag.com,do-slez.com,eadaily.com,eg.ru,expert.ru,ferra.ru,gazeta-tula.ru,glavnoe24.ru,gorobzor.ru,gorvesti.ru,govoritmoskva.ru,gubdaily.ru,hightech.plus,iarex.ru,inforeactor.ru,iz.ru,kirov-portal.ru,kriminal.net.ua,livelib.ru,m24.ru,melodrama1.com,mgorod.kz,mir24.tv,mk.ru,myhistori.ru,nashgorod.ru,nation-news.ru,nevnov.ru,newinform.com,news-front.info,news.ru,nn.ru,ntv.ru,osnmedia.ru,penzainform.ru,penzavzglyad.ru,pikinform.ru,pnp.ru,polit.info,politexpert.net,politonline.ru,pora.ru,pravda.ru,radidomapro.ru,radioromantika.ru,ratel.kz,ren.tv,ria56.ru,riafan.ru,rueconomics.ru,rusplt.ru,russian.rt.com,rusvesna.su,sevkavportal.ru,sharknews.ru,sm.news,sminews.ru,sobesednik.ru,sport-express.ru,steaklovers.menu,sun-news.ru,topwar.ru,trendymen.ru,tsargrad.tv,tsn24.ru,tvc.ru,tvernews.ru,ua.today,uralpress.ru,usa.one,vedomosti.ru,versia.ru,veseloeradio.ru,vesti-yamal.ru,vesti.ru,vesti.uz,vestivrn.ru,vokrugsveta.ru,xn--b1ats.xn--80asehdb,zakon.kz,zr.ru##[id^="unit_"]
 d19036 1
+d19173 1
+a19173 1
+1tv.ru,drive.ru,f1news.ru,film.ru,gamemag.ru,kinoafisha.info,kinonews.ru,kinorium.com,livejournal.com,myshows.me,onlinestreams.ru,pikabu.ru,pluggedin.ru,spletnik.ru,trinixy.ru,vokrug.tv,www.pesticidy.ru##a[href*="//ads.adfox.ru/"]
+d19175 1
+a19175 1
+360tv.ru,7days.ru,avtonovostidnya.ru,avtovzglyad.ru,belarus-news.by,bst.bratsk.ru,coop-land.ru,energyfm.ru,finuslugi.ru,fonmod.com,fontanka.ru,gdeichto.ru,ixbt.com,kommersant.ru,ladys.media,life.ru,metronews.ru,mk.ru,moe-belgorod.ru,moe-kursk.ru,moe-lipetsk.ru,moe-online.ru,moe-tambov.ru,mydecor.ru,mywebpc.ru,naked-science.ru,new-magazine.ru,news.ru,nsn.fm,ohotniki.ru,oper.ru,overclockers.ru,penzainform.ru,peterburg2.ru,pnz.ru,regnum.news,regnum.ru,rifey.ru,rusnext.ru,russian.rt.com,rutube.ru,sm.news,sovsport.ru,sport-express.ru,sportsdaily.ru,super.ru,syzran-small.ru,teleprogramma.pro,thegirl.ru,tsargrad.tv,tulapressa.ru,tvzvezda.ru,u-f.ru,ura.news,utyug.info,vz.ru,xn----7sbabwosghnf8al4lkj7b.xn--p1ai,ytronews.ru,zaks.ru,zaycev.net,zr.ru##a[href*="//dzen.ru/"]
+d19367 1
+a19367 1
+allsport-news.net,autosport.com.ru##a[href*="fon.bet/"]
+d19393 1
+d19861 1
+d20059 1
+a20059 1
+101.ru,101kofemashina.ru,1in.am,alau.kz,alexua.tv,animejapan.tv,autosport.com.ru,bit.ua,bugaga.ru,c-inform.info,comments.ua,csgamer.ru,ctv7.ru,cvnews.cv.ua,dead-serial.com,e-libra.ru,fashiony.ru,fclmnews.ru,fishki.net,forpost.lviv.ua,game2day.ru,gameinside.ua,ggscore.com,gorod.dp.ua,grimm-online.org,gta.com.ua,horrorzone.ru,ifnews.org.ua,igrovaya.org,igry-online.net,itechua.com,izbezhat-nakazania.com,jetsetter.ua,jut.su,kievvlast.com.ua,kinoafisha.info,ko.com.ua,kosti-tv.com,kushvsporte.ru,likeni.ru,lovesun.by,lvnews.org.ua,mac-torrent-download.net,madjong-besplatno.ru,mirf.ru,moldfootball.com,mybrazz.club,nashkiev.ua,ne-kurim.ru,pesikot.org,pimpletv.ru,playua.net,post-tracker.ru,povarenok.ru,prodota.ru,prosports.kg,prosports.kz,prosportua.com,relook.ru,rvnews.rv.ua,saratovnews.ru,shuba.life,sopsport.org,spletnica-tv.com,sportarena.com,strela-online.com,teenwolf-tv.com,tenews.org.ua,tg.telepult.pro,theflash-tv.com,topfile.tj,traktorist.ua,uanews.org.ua,udargol.com,upl.ua,vsetors.org,vskazke-tv.com,zab.ru,zorgee.ru##body > a[href][target="_blank"]
+d20195 1
+a21113 1
+autosport.com.ru##div[style="width: 100%; aspect-ratio: 16 / 9;"]
 d21792 1
 a21792 1
 ||pikabu.ru/ajax/5Seq5JITmxzO8up.$xmlhttprequest
 d21861 4
 a22099 1
 news.mail.ru#?#[data-qa="WrapperContent"] div:-abp-has(> [data-rb-slot])
+a24270 1
+||quotiq.ru^$third-party,domain=~media.2x2tv.ru
 d24430 1
 d25632 1
 d25832 1
@@ -63,6 +100,9 @@ a25832 1
 d25988 1
 a25988 1
 filmix.date,filmix.life,filmix.my,filmix.pub,filmix.tech,filmix.zone##.remove-sda-wrap
+a26278 2
+autosport.com.ru##body:not(#id):style(padding-top: 0 !important; background-color: transparent !important)
+! ---
 d26552 2
 a26553 2
 filmix.date,filmix.life,filmix.my,filmix.pub,filmix.tech,filmix.zone##.main-wrapper:style(margin-top: 0 !important)
@@ -74,6 +114,8 @@ ag,biz,buzz,by,city,club,co,com,fi,in,ink,kim,loan,me,name,net,org,pub,rest,run,
 d27956 1
 a27956 1
 1news.com.ua,365news.biz,4mama.ua,4studio.com.ua,agroter.com.ua,apnews.com.ua,argumentiru.com,asiaplustj.info,autotema.org.ua,autotheme.info,avtodream.org,beauty.ua,chas.cv.ua,cheline.com.ua,cikavosti.com,ck.ua,cn.ua,comments.ua,cvnews.cv.ua,day.kyiv.ua,depo.ua,dv-gazeta.info,dyvys.info,economistua.com,expert.in.ua,fedpress.ru,firtka.if.ua,forpost.media,fraza.com,gazeta1.com,glavnoe.ua,glavnoe24.ru,glavpost.ua,golosinfo.com.ua,gorodkiev.com.ua,grad.ua,greenpost.ua,ifnews.org.ua,inforpost.com,inkorr.com,itechua.com,kh.ua,khersonline.net,kolizhanka.com.ua,kop.net.ua,kr.ua,krymr.com,kurskcity.ru,liga.net,lvnews.org.ua,mega-music.pro,mi100.info,mind.ua,mistosumy.com,moirebenok.ua,mycompplus.ru,nashbryansk.ru,news24today.info,newsua.one,ngp-ua.info,nnews.com.ua,novavlada.info,novynarnia.com,np.pl.ua,odessa-life.od.ua,ogo.ua,panoptikon.org,pg11.ru,pik.net.ua,pingvin.pro,pl.com.ua,planetanovosti.com,podpricelom.com.ua,politnavigator.net,poltava365.com,portal.lviv.ua,pravdatutnews.com,prm.ua,procherk.info,profootball.ua,promin.cv.ua,radiosvoboda.org,ratel.kz,real-vin.com,reporter.ua,risu.ua,rivne.media,rivnenews.com.ua,rusjev.com,russianshowbiz.info,rv.ua,rvnews.rv.ua,showdream.org,sport-kr.com.ua,strana.news,strana.today,sud.ua,te.ua,telekritika.ua,tenews.org.ua,theageoffootball.com,tverigrad.ru,tverisport.ru,tvoymalysh.com.ua,uainfo.org,uanews.org.ua,uatv.ua,ukranews.com,ukrrain.com,unn.com.ua,vchaspik.ua,viva.ua,vlast.kz,vnn24.ru,volnorez.com.ua,volyninfa.com.ua,volyninfo.com,volynpost.com,volynua.com,vsviti.com.ua,westnews.info,womo.ua,wona.com.ua,wworld.com.ua,zbirna.com,zp.ua##+js(abort-current-inline-script, document.createElement, /ru-n4p|ua-n4p|загрузка.../)
+a28459 1
+||vkvideo.ru/video_ext.php?$third-party,subdocument,removeparam=autoplay
 a28465 1
 mail.ru###grid div[class^="feed__"]:remove()
 d28496 1
