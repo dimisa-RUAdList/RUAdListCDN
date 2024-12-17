@@ -1,8 +1,32 @@
-diff name:ruadlist lines:7 checksum:8e27dd9e07
+diff name:ruadlist lines:31 checksum:3a1335af66
 d4 2
 a5 2
-! Last modified: Tue, 17 Dec 2024 09:28:22 +0000
-! Diff-Path: ../patches/2024.12.17.568.patch#ruadlist
+! Last modified: Tue, 17 Dec 2024 14:28:28 +0000
+! Diff-Path: ../patches/2024.12.17.868.patch#ruadlist
+a13403 1
+||www.arminfo.info/*.html|$subdocument
+d13619 1
+d14078 1
+d21061 1
+a21298 1
+arminfo.info##iframe[src^="https://www.arminfo.info/"][src$=".html"]
 d21793 1
-a21793 1
+a21793 2
+||news.mail.ru/-/
 ||pikabu.ru/ajax/hcNwyd7dzApDeJa.$xmlhttprequest
+a21806 1
+news.mail.ru,sportmail.ru##.media-ui-slider-track > div:last-child [data-qa="Loader"]
+a22098 3
+news.mail.ru##aside div > div:first-child:empty ~ div
+news.mail.ru#?#aside div:-abp-has(> div:only-child:empty)
+news.mail.ru##body > div > style + div[id]
+a22234 1
+||media-advcycle.imgsmail.ru^$third-party
+a27837 1
+news.mail.ru###article-root section > main + [class] > div div:not([style]):style(min-height: 0 !important; padding: unset !important)
+a28480 1
+news.mail.ru,sportmail.ru##+js(set-constant, Object.prototype.enableMimic, noopFunc)
+d28484 1
+a28484 2
+pogoda.mail.ru##+js(set-constant, Object.prototype.useMimic, noopFunc)
+news.mail.ru##+js(set-constant, __PHS._.props.html, {})

@@ -1,8 +1,8 @@
-diff name:ruadlist lines:98 checksum:8e27dd9e07
+diff name:ruadlist lines:122 checksum:3a1335af66
 d4 2
 a5 2
-! Last modified: Tue, 17 Dec 2024 09:28:22 +0000
-! Diff-Path: ../patches/2024.12.17.568.patch#ruadlist
+! Last modified: Tue, 17 Dec 2024 14:28:28 +0000
+! Diff-Path: ../patches/2024.12.17.868.patch#ruadlist
 a410 1
 ||alfasense.net^$third-party
 a3975 1
@@ -25,6 +25,10 @@ a12731 1
 a13298 1
 ||vokrug.tv/*/kion-slider.
 d13300 1
+a13395 1
+||www.arminfo.info/*.html|$subdocument
+d13611 1
+d14070 1
 d16139 1
 a16139 1
 2x2.su,ntv.ru,yk-news.kz##.dzen
@@ -60,14 +64,26 @@ d20054 1
 a20054 1
 101.ru,101kofemashina.ru,1in.am,alau.kz,alexua.tv,animejapan.tv,autosport.com.ru,bit.ua,bugaga.ru,c-inform.info,comments.ua,csgamer.ru,ctv7.ru,cvnews.cv.ua,dead-serial.com,e-libra.ru,fashiony.ru,fclmnews.ru,fishki.net,forpost.lviv.ua,game2day.ru,gameinside.ua,ggscore.com,gorod.dp.ua,grimm-online.org,gta.com.ua,horrorzone.ru,ifnews.org.ua,igrovaya.org,igry-online.net,itechua.com,izbezhat-nakazania.com,jetsetter.ua,jut.su,kievvlast.com.ua,kinoafisha.info,ko.com.ua,kosti-tv.com,kushvsporte.ru,likeni.ru,lovesun.by,lvnews.org.ua,mac-torrent-download.net,madjong-besplatno.ru,mirf.ru,moldfootball.com,mybrazz.club,nashkiev.ua,ne-kurim.ru,pesikot.org,pimpletv.ru,playua.net,post-tracker.ru,povarenok.ru,prodota.ru,prosports.kg,prosports.kz,prosportua.com,relook.ru,rvnews.rv.ua,saratovnews.ru,shuba.life,sopsport.org,spletnica-tv.com,sportarena.com,strela-online.com,teenwolf-tv.com,tenews.org.ua,tg.telepult.pro,theflash-tv.com,topfile.tj,traktorist.ua,uanews.org.ua,udargol.com,upl.ua,vsetors.org,vskazke-tv.com,zab.ru,zorgee.ru##body > a[href][target="_blank"]
 d20190 1
+d21056 1
 a21108 1
 autosport.com.ru##div[style="width: 100%; aspect-ratio: 16 / 9;"]
+a21292 1
+arminfo.info##iframe[src^="https://www.arminfo.info/"][src$=".html"]
 d21787 1
-a21787 1
+a21787 2
+||news.mail.ru/-/
 ||pikabu.ru/ajax/hcNwyd7dzApDeJa.$xmlhttprequest
+a21800 1
+news.mail.ru,sportmail.ru##.media-ui-slider-track > div:last-child [data-qa="Loader"]
 d21856 4
 a22094 1
 news.mail.ru#?#[data-qa="WrapperContent"] div:-abp-has(> [data-rb-slot])
+a22095 3
+news.mail.ru##aside div > div:first-child:empty ~ div
+news.mail.ru#?#aside div:-abp-has(> div:only-child:empty)
+news.mail.ru##body > div > style + div[id]
+a22231 1
+||media-advcycle.imgsmail.ru^$third-party
 a24265 1
 ||quotiq.ru^$third-party,domain=~media.2x2tv.ru
 d24425 1
@@ -89,6 +105,8 @@ d26690 2
 a26691 2
 ag,biz,buzz,by,city,club,co,com,fi,in,ink,kim,loan,me,name,net,org,pub,rest,run,sh,so,space,today,tv,vip,website,win##body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"] > [id$="er"]:nth-child(-n+3):style(width: unset !important)
 ag,biz,buzz,by,city,club,co,com,fi,in,ink,kim,loan,me,name,net,org,pub,rest,run,sh,so,space,today,tv,vip,website,win##body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"]:style(padding-top: 0 !important; background-color: inherit !important)
+a27833 1
+news.mail.ru###article-root section > main + [class] > div div:not([style]):style(min-height: 0 !important; padding: unset !important)
 d27951 1
 a27951 1
 1news.com.ua,365news.biz,4mama.ua,4studio.com.ua,agroter.com.ua,apnews.com.ua,argumentiru.com,asiaplustj.info,autotema.org.ua,autotheme.info,avtodream.org,beauty.ua,chas.cv.ua,cheline.com.ua,cikavosti.com,ck.ua,cn.ua,comments.ua,cvnews.cv.ua,day.kyiv.ua,depo.ua,dv-gazeta.info,dyvys.info,economistua.com,expert.in.ua,fedpress.ru,firtka.if.ua,forpost.media,fraza.com,gazeta1.com,glavnoe.ua,glavnoe24.ru,glavpost.ua,golosinfo.com.ua,gorodkiev.com.ua,grad.ua,greenpost.ua,ifnews.org.ua,inforpost.com,inkorr.com,itechua.com,kh.ua,khersonline.net,kolizhanka.com.ua,kop.net.ua,kr.ua,krymr.com,kurskcity.ru,liga.net,lvnews.org.ua,mega-music.pro,mi100.info,mind.ua,mistosumy.com,moirebenok.ua,mycompplus.ru,nashbryansk.ru,news24today.info,newsua.one,ngp-ua.info,nnews.com.ua,novavlada.info,novynarnia.com,np.pl.ua,odessa-life.od.ua,ogo.ua,panoptikon.org,pg11.ru,pik.net.ua,pingvin.pro,pl.com.ua,planetanovosti.com,podpricelom.com.ua,politnavigator.net,poltava365.com,portal.lviv.ua,pravdatutnews.com,prm.ua,procherk.info,profootball.ua,promin.cv.ua,radiosvoboda.org,ratel.kz,real-vin.com,reporter.ua,risu.ua,rivne.media,rivnenews.com.ua,rusjev.com,russianshowbiz.info,rv.ua,rvnews.rv.ua,showdream.org,sport-kr.com.ua,strana.news,strana.today,sud.ua,te.ua,telekritika.ua,tenews.org.ua,theageoffootball.com,tverigrad.ru,tverisport.ru,tvoymalysh.com.ua,uainfo.org,uanews.org.ua,uatv.ua,ukranews.com,ukrrain.com,unn.com.ua,vchaspik.ua,viva.ua,vlast.kz,vnn24.ru,volnorez.com.ua,volyninfa.com.ua,volyninfo.com,volynpost.com,volynua.com,vsviti.com.ua,westnews.info,womo.ua,wona.com.ua,wworld.com.ua,zbirna.com,zp.ua##+js(abort-current-inline-script, document.createElement, /ru-n4p|ua-n4p|загрузка.../)
@@ -96,4 +114,10 @@ a28454 1
 ||vkvideo.ru/video_ext.php?$third-party,subdocument,removeparam=autoplay
 a28460 1
 mail.ru###grid div[class^="feed__"]:remove()
+a28474 1
+news.mail.ru,sportmail.ru##+js(set-constant, Object.prototype.enableMimic, noopFunc)
+d28478 1
+a28478 2
+pogoda.mail.ru##+js(set-constant, Object.prototype.useMimic, noopFunc)
+news.mail.ru##+js(set-constant, __PHS._.props.html, {})
 d28491 1

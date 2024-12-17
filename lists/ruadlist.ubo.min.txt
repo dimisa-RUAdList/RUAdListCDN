@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 17 Dec 2024 09:28:22 +0000
-! Diff-Path: ../patches/2024.12.17.568.patch#ruadlist
+! Last modified: Tue, 17 Dec 2024 14:28:28 +0000
+! Diff-Path: ../patches/2024.12.17.868.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -13401,6 +13401,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||wvclub.net^$object
 ||www-mivmeste-info.filesusr.com/
 ||www.4ernigiv.info^*/1ua/images/
+||www.arminfo.info/*.html|$subdocument
 ||www.khl.ru/_banners/
 ||www.mp4upload.com/*.html|$subdocument,domain=www.mp4upload.com
 ||www.pornolenta.cc/js/
@@ -13616,7 +13617,6 @@ zserials.cc###amgf
 winstation.ru###amgo
 pesenok.ru,songpros.ru,songspro.ru###amigo_btn
 allcrimea.net###anews_bigtizer
-arminfo.info,pogoda.by###animation_container
 thequestion.ru###answers div[style*="overflow:hidden"]
 komedra.com###apext
 ecology.md###article > .right-block
@@ -14075,7 +14075,6 @@ batpic.com###l0ZKuGa775
 stranamam.ru###last-ad-link-block
 mp4upload.com###lay.lay
 volynpost.com###layout-center > a[target]
-pogoda.by###left > .HR[align="right"] ~ *
 sergeistrelec.name###left > .bl0 ~ .bl0:not(:nth-last-child(2))
 fullgames.ru###left > div:not(#ms)
 oper.ru###left a[href*="://opershop.ru"]
@@ -21058,7 +21057,6 @@ euro-football.ru,liveresult.ru##div[style*="min-height:"][style*="00px"]
 chipmaker.ru##div[style*="min-height:100px;"]
 binmovie.org##div[style*="width: 240px; height: 600px"]
 anidub.vip,anidubonline.com##div[style*="width: 240px;"][style*="height: 400px;"]
-pogoda.by##div[style*="width:240px; height:400px;"]
 pb.wtf,piratbit.fun,piratbit.org,piratbit.top##div[style="background: #a94442;padding: 5px;font-size: 16px;"]
 mediazavod.ru##div[style="background: #fff;padding: 10px; margin-bottom: 20px;"]
 ingrus.net##div[style="background: #ffffff; box-shadow: 0 0 0 1px #457a9d, 0 0 5px #333; padding: 10px 3px 3px 3px;"]
@@ -21296,6 +21294,7 @@ twirpx.com,twirpx.org##iframe[src^="/"][style*="overflow:"]
 nevasport.ru##iframe[src^="/exchange/"]
 jofo.ru##iframe[src^="http://creatagen.ru/"]
 smotretonline.ucoz.org##iframe[src^="http://kinohouse.ucoz.ru"]
+arminfo.info##iframe[src^="https://www.arminfo.info/"][src$=".html"]
 www.mp4upload.com##iframe[src^="https://www.mp4upload.com/"][src$=".html"]
 forum.watch.ru##iframe[style="width: 100%; height: 60px;"]
 forum.watch.ru##iframe[style="width:100%; height:110px;"]
@@ -21790,6 +21789,7 @@ $csp=script-src-attr 'none',domain=eurointegration.com.ua|pravda.com.ua
 @@||ssp.rambler.ru/capirs_async.js|$script,domain=www.championat.com
 https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|livejournal.com|olegmakarenko.ru|periskop.su|shakko.ru|shiro-kino.ru|vadimrazumov.ru
 ||imgfrost.net^$third-party
+||news.mail.ru/-/
 ||pikabu.ru/ajax/hcNwyd7dzApDeJa.$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
@@ -21804,6 +21804,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ! селекторы
 growhow.in.ua###custom-background-css {remove:true;}
 e.mail.ru##.layout__column_right-indented
+news.mail.ru,sportmail.ru##.media-ui-slider-track > div:last-child [data-qa="Loader"]
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(/min-height: 20.px|min-height: 29.px|min-height: 30.px|min-height: 300./))
@@ -22096,6 +22097,9 @@ news.mail.ru##.r-source
 news.mail.ru##.reference-page__card ~ span:last-child
 news.mail.ru#?#[data-qa="WrapperContent"] div:-abp-has(> [data-rb-slot])
 dzen.ru##[id*="_tsar"]
+news.mail.ru##aside div > div:first-child:empty ~ div
+news.mail.ru#?#aside div:-abp-has(> div:only-child:empty)
+news.mail.ru##body > div > style + div[id]
 dzen.ru##div[class*=" news-site--"][class*="__desktop"]
 dzen.ru##div[class*="news-advert"]
 ! Дзен новости Mail-edition
@@ -22232,6 +22236,7 @@ love.mail.ru##.link-ad
 ||help.mail.ru/mail/faq/adblock$popup,~third-party
 ||horo.mail.ru/*/fast-slot.js
 ||mamba.ru/images/*/promo/
+||media-advcycle.imgsmail.ru^$third-party
 ||media-stat.mail.ru^
 ||mradx.net/img/$subdocument
 ||pets.mail.ru/my/pets/add
@@ -27835,6 +27840,7 @@ e.mail.ru,octavius.mail.ru##.letter-list-item-adv__container:style(height: 0 !im
 e.mail.ru##.ph-project__link[href^="https://cloud.mail.ru/promo/"]
 e.mail.ru##.ph-projects > a[href^="https://e.mail.ru/messages/inbox?utm_"]:style(pointer-events: none !important)
 ! ---
+news.mail.ru###article-root section > main + [class] > div div:not([style]):style(min-height: 0 !important; padding: unset !important)
 mail.ru###bubble-home
 mail.ru###grid .asteroid-widgets
 mail.ru###grid .widget__container .promo-with-text
@@ -28478,10 +28484,12 @@ ok.ru,touch.mail.ru##+js(json-prune, result.body.direct)
 okminigames.mail.ru##+js(set-constant, NO_ADV, 1)
 otvet.mail.ru##+js(set-constant, Object.prototype._Mimic, undefined)
 player-smotri.mail.ru##+js(set-constant, Object.prototype.autoPlayParams, false)
+news.mail.ru,sportmail.ru##+js(set-constant, Object.prototype.enableMimic, noopFunc)
 ~calls.mail.ru,~e.mail.ru,mail.ru,~my.mail.ru,~o2.mail.ru,~octavius.mail.ru,sportmail.ru,~touch.mail.ru##+js(set-constant, Object.prototype.mimic, undefined)
 ok.ru##+js(set-constant, Object.prototype.obfuscate, noopFunc)
 my.mail.ru##+js(set-constant, Object.prototype.runMimic, noopFunc)
-news.mail.ru,pogoda.mail.ru,sportmail.ru##+js(set-constant, Object.prototype.useMimic, noopFunc)
+pogoda.mail.ru##+js(set-constant, Object.prototype.useMimic, noopFunc)
+news.mail.ru##+js(set-constant, __PHS._.props.html, {})
 ~3igames.mail.ru,~account.mail.ru,~auto.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~finance.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru,~vfokuse.mail.ru,~widgets.mail.ru##+js(set-constant, document.title, null)
 ~3igames.mail.ru,~account.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~finance.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru,~vfokuse.mail.ru,~widgets.mail.ru##+js(set-constant, mr._mimic.locator.transform, undefined)
 touch.mail.ru##.page__content__slide > .messagelist > div:not([cid]):not([style]):not([id]):not([class])
