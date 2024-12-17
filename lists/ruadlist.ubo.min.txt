@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 17 Dec 2024 14:28:28 +0000
-! Diff-Path: ../patches/2024.12.17.868.patch#ruadlist
+! Last modified: Tue, 17 Dec 2024 19:20:59 +0000
+! Diff-Path: ../patches/2024.12.17.1160.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21804,7 +21804,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ! селекторы
 growhow.in.ua###custom-background-css {remove:true;}
 e.mail.ru##.layout__column_right-indented
-news.mail.ru,sportmail.ru##.media-ui-slider-track > div:last-child [data-qa="Loader"]
+mail.ru,sportmail.ru##.media-ui-slider-track > div:last-child [data-qa="Loader"]
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(/min-height: 20.px|min-height: 29.px|min-height: 30.px|min-height: 300./))
@@ -28484,8 +28484,8 @@ ok.ru,touch.mail.ru##+js(json-prune, result.body.direct)
 okminigames.mail.ru##+js(set-constant, NO_ADV, 1)
 otvet.mail.ru##+js(set-constant, Object.prototype._Mimic, undefined)
 player-smotri.mail.ru##+js(set-constant, Object.prototype.autoPlayParams, false)
-news.mail.ru,sportmail.ru##+js(set-constant, Object.prototype.enableMimic, noopFunc)
-~calls.mail.ru,~e.mail.ru,mail.ru,~my.mail.ru,~o2.mail.ru,~octavius.mail.ru,sportmail.ru,~touch.mail.ru##+js(set-constant, Object.prototype.mimic, undefined)
+finance.mail.ru,news.mail.ru,sportmail.ru,vfokuse.mail.ru##+js(set-constant, Object.prototype.enableMimic, noopFunc)
+~calls.mail.ru,~e.mail.ru,~finance.mail.ru,mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~sportmail.ru,~touch.mail.ru,~vfokuse.mail.ru##+js(set-constant, Object.prototype.mimic, undefined)
 ok.ru##+js(set-constant, Object.prototype.obfuscate, noopFunc)
 my.mail.ru##+js(set-constant, Object.prototype.runMimic, noopFunc)
 pogoda.mail.ru##+js(set-constant, Object.prototype.useMimic, noopFunc)

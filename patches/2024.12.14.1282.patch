@@ -1,8 +1,8 @@
-diff name:ruadlist lines:98 checksum:3a1335af66
+diff name:ruadlist lines:100 checksum:71927f8e01
 d4 2
 a5 2
-! Last modified: Tue, 17 Dec 2024 14:28:28 +0000
-! Diff-Path: ../patches/2024.12.17.868.patch#ruadlist
+! Last modified: Tue, 17 Dec 2024 19:20:59 +0000
+! Diff-Path: ../patches/2024.12.17.1160.patch#ruadlist
 a4255 1
 ||nsn-azert.xyz^$third-party
 a5278 1
@@ -57,7 +57,7 @@ a21791 2
 ||news.mail.ru/-/
 ||pikabu.ru/ajax/hcNwyd7dzApDeJa.$xmlhttprequest
 a21804 1
-news.mail.ru,sportmail.ru##.media-ui-slider-track > div:last-child [data-qa="Loader"]
+mail.ru,sportmail.ru##.media-ui-slider-track > div:last-child [data-qa="Loader"]
 a22096 3
 news.mail.ru##aside div > div:first-child:empty ~ div
 news.mail.ru#?#aside div:-abp-has(> div:only-child:empty)
@@ -90,8 +90,10 @@ a28454 1
 ||vkvideo.ru/video_ext.php?$third-party,subdocument,removeparam=autoplay
 a28460 1
 mail.ru###grid div[class^="feed__"]:remove()
-a28474 1
-news.mail.ru,sportmail.ru##+js(set-constant, Object.prototype.enableMimic, noopFunc)
+d28475 1
+a28475 2
+finance.mail.ru,news.mail.ru,sportmail.ru,vfokuse.mail.ru##+js(set-constant, Object.prototype.enableMimic, noopFunc)
+~calls.mail.ru,~e.mail.ru,~finance.mail.ru,mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~sportmail.ru,~touch.mail.ru,~vfokuse.mail.ru##+js(set-constant, Object.prototype.mimic, undefined)
 d28478 1
 a28478 2
 pogoda.mail.ru##+js(set-constant, Object.prototype.useMimic, noopFunc)
