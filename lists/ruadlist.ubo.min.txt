@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 18 Dec 2024 15:27:21 +0000
-! Diff-Path: ../patches/2024.12.18.927.patch#ruadlist
+! Last modified: Wed, 18 Dec 2024 20:27:32 +0000
+! Diff-Path: ../patches/2024.12.18.1227.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -27152,6 +27152,7 @@ otzovik.com##[class*="_no_abs"]:style(height: auto !important)
 outlook.live.com##div[tabindex][role="region"][aria-label] ~ div[data-max-width][class] + div[class^="_3_"]
 ! ---
 overclockers.ru##a.over-hiddenlink-html[target="_blank"]:style(pointer-events: none !important; color: inherit !important)
+forums.overclockers.ru##body > div[id^="yandex_ad"]:style(display: block !important)
 forums.overclockers.ru##tr > td[nowrap="nowrap"][style="color: red;  font-weight: bold"]:style(color: #004488 !important; font-weight: 200 !important)
 ! ---
 partnerkin.com##.header-clear:style(margin-bottom: 0 !important)
