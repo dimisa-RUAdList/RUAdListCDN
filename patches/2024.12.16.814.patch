@@ -1,22 +1,30 @@
-diff name:ruadlist lines:35 checksum:effe55a9ec
+diff name:ruadlist lines:43 checksum:88e2fb3291
 d4 2
 a5 2
-! Last modified: Thu, 19 Dec 2024 06:35:23 +0000
-! Diff-Path: ../patches/2024.12.19.395.patch#ruadlist
+! Last modified: Thu, 19 Dec 2024 11:21:30 +0000
+! Diff-Path: ../patches/2024.12.19.681.patch#ruadlist
+d9998 1
+a9998 1
+amedia.lol##.mfp-hide
+d10107 1
+a10107 1
+||amedia.lol/templates/*/popup/
 a13403 1
 ||www.arminfo.info/*.html|$subdocument
 d13619 1
 d14078 1
+d16837 1
 d21061 1
 a21298 1
 arminfo.info##iframe[src^="https://www.arminfo.info/"][src$=".html"]
 d21793 1
 a21793 2
 ||news.mail.ru/-/
-||pikabu.ru/ajax/tMhH6AvRX9JA0vF.$xmlhttprequest
+||pikabu.ru/ajax/Wlz4hvkX7rVO7Pg.$xmlhttprequest
 a21806 1
 mail.ru,sportmail.ru##.media-ui-slider-track > div:last-child [data-qa="Loader"]
-a22098 3
+d22099 1
+a22099 3
 news.mail.ru##aside div > div:first-child:empty ~ div
 news.mail.ru#?#aside div:-abp-has(> div:only-child:empty)
 news.mail.ru##body > div > style + div[id]
