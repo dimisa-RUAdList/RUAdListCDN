@@ -1,14 +1,17 @@
-diff name:ruadlist lines:19 checksum:9521e32fbe
+diff name:ruadlist lines:24 checksum:ae811c572f
 d4 2
 a5 2
-! Last modified: Thu, 19 Dec 2024 16:29:54 +0000
-! Diff-Path: ../patches/2024.12.19.989.patch#ruadlist
+! Last modified: Thu, 19 Dec 2024 21:22:34 +0000
+! Diff-Path: ../patches/2024.12.19.1282.patch#ruadlist
 d9998 1
 a9998 1
 amedia.lol##.mfp-hide
 d10107 1
 a10107 1
 ||amedia.lol/templates/*/popup/
+d14200 1
+a14200 1
+www.zoneofgames.ru#?##news-list > .news-item:-abp-has(> .news-content > div > p[style] > span:-abp-contains(erid:))
 d16836 1
 d21793 1
 a21793 1
@@ -18,3 +21,5 @@ a27154 1
 forums.overclockers.ru##body > div[id^="yandex_ad"]:style(display: block !important)
 a27869 1
 mail.ru,sportmail.ru##.media-ui-slider-track div:first-child + div:not([style]):last-child:style(min-height: 0 !important; width: unset !important)
+a28011 1
+nnmclub.ro,nnmclub.to##+js(abort-on-property-read, _0x1ece)

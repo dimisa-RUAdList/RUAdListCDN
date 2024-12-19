@@ -1,8 +1,8 @@
-diff name:ruadlist lines:87 checksum:9521e32fbe
+diff name:ruadlist lines:92 checksum:ae811c572f
 d4 2
 a5 2
-! Last modified: Thu, 19 Dec 2024 16:29:54 +0000
-! Diff-Path: ../patches/2024.12.19.989.patch#ruadlist
+! Last modified: Thu, 19 Dec 2024 21:22:34 +0000
+! Diff-Path: ../patches/2024.12.19.1282.patch#ruadlist
 a5279 1
 ||rulive.ru^$third-party
 a8877 1
@@ -22,6 +22,9 @@ a13400 1
 ||www.arminfo.info/*.html|$subdocument
 d13616 1
 d14075 1
+d14198 1
+a14198 1
+www.zoneofgames.ru#?##news-list > .news-item:-abp-has(> .news-content > div > p[style] > span:-abp-contains(erid:))
 d16144 1
 a16144 1
 2x2.su,ntv.ru,yk-news.kz##.dzen
@@ -76,6 +79,8 @@ a27831 1
 news.mail.ru###article-root section > main + [class] > div div:not([style]):style(min-height: 0 !important; padding: unset !important)
 a27857 1
 mail.ru,sportmail.ru##.media-ui-slider-track div:first-child + div:not([style]):last-child:style(min-height: 0 !important; width: unset !important)
+a27999 1
+nnmclub.ro,nnmclub.to##+js(abort-on-property-read, _0x1ece)
 a28452 1
 ||vkvideo.ru/video_ext.php?$third-party,subdocument,removeparam=autoplay
 d28474 1
