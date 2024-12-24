@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 24 Dec 2024 11:19:56 +0000
-! Diff-Path: ../patches/2024.12.24.679.patch#ruadlist
+! Last modified: Tue, 24 Dec 2024 16:29:22 +0000
+! Diff-Path: ../patches/2024.12.24.989.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -14971,7 +14971,7 @@ agrarii-razom.com.ua##.adsence-wrapper
 game-mcpe.com,polismed.ru,reshator.com,taurion.ru,vash-ortoped.com,videoculinary.ru##.adsense
 zestradar.com##.adsense_anchor_ads
 englishsub.ru,lenglish.ru##.adsense_blok
-sho.org.ua##.adsgoogle
+24.cv.ua,sho.org.ua##.adsgoogle
 mp3lemon.net##.adsh_ads4
 vise.im##.adsplaser_pro_abtest
 ok-pressa.ru##.adstitles
@@ -15641,8 +15641,6 @@ facenews.ua##.bnblock
 newdaynews.ru#?#.bnd-cnt:-abp-has(> [class] > b:-abp-contains(Новости партнеров))
 apostrophe.ua,bitcryptonews.ru,ogolosha.ua,turizm.ru##.bnr
 splkirov.ru##.bnr-2horizontal
-glavred.info,glavred.net##.bnr-block
-unian.info,unian.net,unian.ua##.bnr-block__bnr
 newauto.kz##.bnr-tall
 punkt-a.info##.bnr-top
 onliner.by##.bnr-top-wide
@@ -17291,6 +17289,7 @@ lrepacks.net,rusplt.ru##.partner-block
 autosport.com.ru##.partner-content
 zahav.ru##.partner-iframe
 w7phone.ru##.partner-in-sidebar
+24tv.ua##.partner-insert
 allboxing.ru,dyvys.info,glavred.info,glavred.net,ictv.ua,unian.info,unian.net,unian.ua##.partner-news
 zi.ua##.partner-news-content
 rusplt.ru##.partner-news-wrapper
@@ -17747,6 +17746,7 @@ beliyspisok.ru,clubvolvo.ru,forum-volgograd.ru,ifud.ws,rusfishing.ru,termoportal
 cnc3018.ru,termoportal.ru,zerocoolpro.biz##.samCodeUnit
 forum-volgograd.ru##.samListItem
 sho.org.ua#?#.sample-posts > h4:-abp-contains(/партнер/i)
+24.cv.ua#?#.sample-posts:-abp-has(> h4:-abp-contains(/^новини партн/i))
 materialscience.ru##.sape
 ladylib.net##.sape[style="width:500px;"]
 rupier.com##.sb > a > img[src^="http://rupier.com/forum/"]
@@ -18554,7 +18554,7 @@ atlasprirodirossii.ru,hyperione.com,portaltele.com.ua,sho.org.ua,zazloo.ru##.wid
 volyninfo.com##.widget_calendar ~ .widget_text ~ .widget_text
 rustaste.ru#?#.widget_categories:-abp-has(> div[align="center"] > img[src*="/aliban"])
 sdelalremont.ru##.widget_cb_widget
-1.zt.ua,100pdf.club,4studio.com.ua,alladvices.ru,amorefilms.ru,analitikaua.net,aspekty.net,auto-portal.com.ua,avtotachki.com,borodina-protiv-buzovoj.ru,chas.cv.ua,cheb-live.ru,cryptodzen.com,dacha.help,dietdo.ru,ebanoe.it,electric-220.ru,erokomiksi.org,flytothesky.ru,gametrick.ru,gizchina.com.ua,glavradio.info,golos.te.ua,happymodern.ru,kazakh-zerno.net,koskomp.ru,kyivvlada.com.ua,lhealth.info,m-zh.ru,mi100.info,muwhi.ru,netsofta.net,new-s.com.ua,pravda.cn.ua,psiholog4you.ru,root-nation.com,rubrowsers.ru,sdelalremont.ru,sharknews.ru,simptomy-lechenie.net,smartmama.com.ua,ternopillive.com,tipsboard.ru,ua-news.in.ua,ua-report.info,vgolove.net,vizitnlo.ru,volyninfo.com,vseiski.ru,withcars.ru,wona.com.ua,zelenj.ru##.widget_custom_html
+1.zt.ua,100pdf.club,24.cv.ua,4studio.com.ua,alladvices.ru,amorefilms.ru,analitikaua.net,aspekty.net,auto-portal.com.ua,avtotachki.com,borodina-protiv-buzovoj.ru,chas.cv.ua,cheb-live.ru,cryptodzen.com,dacha.help,dietdo.ru,ebanoe.it,electric-220.ru,erokomiksi.org,flytothesky.ru,gametrick.ru,gizchina.com.ua,glavradio.info,golos.te.ua,happymodern.ru,kazakh-zerno.net,koskomp.ru,kyivvlada.com.ua,lhealth.info,m-zh.ru,mi100.info,muwhi.ru,netsofta.net,new-s.com.ua,pravda.cn.ua,psiholog4you.ru,root-nation.com,rubrowsers.ru,sdelalremont.ru,sharknews.ru,simptomy-lechenie.net,smartmama.com.ua,ternopillive.com,tipsboard.ru,ua-news.in.ua,ua-report.info,vgolove.net,vizitnlo.ru,volyninfo.com,vseiski.ru,withcars.ru,wona.com.ua,zelenj.ru##.widget_custom_html
 femmie.ru##.widget_custom_html > .partners__heading ~ .custom-html-widget
 vsepredohraniteli.ru##.widget_custom_html ~ .widget_text
 aeslib.ru##.widget_custom_html.FixedWidget__fixed_widget
@@ -18761,6 +18761,7 @@ info.sibnet.ru##[class*="banner__brand"]
 disgustingmen.com##[class*="bg_banner"]
 vse.rv.ua##[class*="billboard"]
 anna-news.info##[class*="blog-holder"] > noindex
+glavred.info,glavred.net,unian.info,unian.net,unian.ua##[class*="bnr-block"]
 euro-football.ru,football.konkurent.ua##[class*="bookmaker"]
 cybersport.ru##[class*="bookmaker"]:not(.root)
 expert.ru##[class*="box-partners"]
@@ -28144,6 +28145,7 @@ www.ixbt.com##+js(href-sanitizer, a[href^="//www.ixbt.com/click/?c="], [title])
 wotspeak.org##+js(href-sanitizer, a[href^="/engine/dwn"], ?xf)
 vz.ru##+js(href-sanitizer, a[href^="/redir/"], ?exturl)
 vz.ru##+js(href-sanitizer, a[href^="/redir/"], ?vzurl)
+pikabu.ru##+js(href-sanitizer, a[href^="https://pikabu.ru/"][href*="?u=http"], ?u)
 nsportal.ru##+js(href-sanitizer, a[href^="https://www.google.com/url?q="])
 youtube.com##+js(href-sanitizer, a[href^="https://www.youtube.com/redirect?event="][href*="&q=http"], ?q)
 uma.media##+js(json-prune, appearance.extended_auto_start)
