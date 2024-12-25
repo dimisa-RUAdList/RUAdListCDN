@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 25 Dec 2024 12:46:20 +0000
-! Diff-Path: ../patches/2024.12.25.766.patch#ruadlist
+! Last modified: Wed, 25 Dec 2024 17:24:13 +0000
+! Diff-Path: ../patches/2024.12.25.1044.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -14454,7 +14454,7 @@ om1.ru###screenGlideAdb
 winxland.ru###script_block
 technical.city###scroll_banner_container
 webdiana.ru###scrollable
-pravda.ru###scrolling-news-list > div[style*="height:3"]
+pravda.ru###scrolling-news-list > div[style*="height:"][style*="overflow:"]
 partnerkin.com###sdv_branding
 hubs.ua###secondary > #text-2
 keysportal.com#?##secondary > .sidebar-widget:-abp-has([id^="yandex_rtb"])
