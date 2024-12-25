@@ -1,8 +1,8 @@
-diff name:ruadlist lines:33 checksum:c02fea93e5
+diff name:ruadlist lines:37 checksum:11da599ab2
 d4 2
 a5 2
-! Last modified: Wed, 25 Dec 2024 17:24:13 +0000
-! Diff-Path: ../patches/2024.12.25.1044.patch#ruadlist
+! Last modified: Wed, 25 Dec 2024 22:24:33 +0000
+! Diff-Path: ../patches/2024.12.25.1344.patch#ruadlist
 d14457 1
 a14457 1
 pravda.ru###scrolling-news-list > div[style*="height:"][style*="overflow:"]
@@ -30,5 +30,9 @@ glavred.info,glavred.net,unian.info,unian.net,unian.ua##[class*="bnr-block"]
 d21792 1
 a21792 1
 ||pikabu.ru/ajax/k5YCQLIQ0*shK1W.$xmlhttprequest
+a28138 2
+vz.ru##+js(href-sanitizer, a[href*="/redir/"], ?exturl)
+vz.ru##+js(href-sanitizer, a[href*="/redir/"], ?vzurl)
+d28145 2
 a28146 1
 pikabu.ru##+js(href-sanitizer, a[href^="https://pikabu.ru/"][href*="?u=http"], ?u)
