@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 29 Dec 2024 06:31:49 +0000
-! Diff-Path: ../patches/2024.12.29.391.patch#ruadlist
+! Last modified: Sun, 29 Dec 2024 11:18:20 +0000
+! Diff-Path: ../patches/2024.12.29.678.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -2139,6 +2139,7 @@
 ||fquqhe.com^$third-party
 ||fqurmqe6agjyofb.ru^$third-party
 ||fqwgi.com^$third-party
+||fragrantanger.com^$third-party
 ||frankiesupport.com^$third-party
 ||freddyman.com^
 ||free-cloud.ru^$third-party
@@ -4080,6 +4081,7 @@
 ||nedorogo-vkusno.ru^$third-party
 ||nedrofu.ru^$third-party
 ||needmorecola.com^$third-party
+||negative-speed.pro^$third-party
 ||nehmien.com^$third-party
 ||nek1urtfoveu.pro^$third-party
 ||nelittte.com^$third-party
@@ -18879,7 +18881,7 @@ itc.ua##[data-course]
 starhit.ru##[data-creative]
 banki.ru##[data-dfp-container]
 briefly.ru##[data-disclaimer*="Реклама"]
-basaru.net.ru,lexxs.us,superkarate.ru,topfile.tj,weblance.com.ua##[data-dlebclicks]
+basaru.net.ru,lexxs.us,superkarate.ru,topfile.tj,uzmov.net,weblance.com.ua##[data-dlebclicks]
 arguments.kyiv.ua,dailynews.kyiv.ua,elegantwoman.kyiv.ua,glamour.kyiv.ua,lady.kyiv.ua,medicalanswers.com.ua,news24.in.ua,ua-novosti.info,ua-vestnik.com,useti.org.ua,womanlife.kyiv.ua,zhenskiy.kyiv.ua##[data-element_type="widget"] a[rel="nofollow"]
 gdetraffic.com##[data-gcat="ads"]
 gamer-info.com##[data-gmimplid]
@@ -28417,7 +28419,7 @@ tvzvezda.ru##pjsdiv[id^="oframe"] > pjsdiv[style*="opacity: 0.1;"]:empty
 tvzvezda.ru##pjsdiv[id^="oframe"] [style="animation-play-state: running;"]
 porno365.*##+js(abort-on-property-read, bc_blocks)
 porno365.*##+js(abort-on-stack-trace, Object.prototype.parallax, window.onload)
-pornopuk.com,huyamba.tv,piratam.net,piratca.net,porn720.biz,pornoakt.*,sexitorrent.com,sextor.org,domahatv.com,torrent-pirat.com,xtorrent.net,rapidzona.tv,xxxrip.net,xxxtor.com,hentai-share.one,3dn.ru##+js(abort-current-inline-script, document.querySelectorAll, popMagic)
+pornopuk.com,huyamba.tv,piratam.net,piratca.net,porn720.biz,pornoakt.*,sexitorrent.com,sextor.org,domahatv.com,torrent-pirat.com,xtorrent.net,rapidzona.tv,xxxrip.net,hentai-mood.me,xxxtor.com,hentai-share.one,3dn.ru##+js(abort-current-inline-script, document.querySelectorAll, popMagic)
 kanobu.ru#?#section[class^="MaterialsManufacturerPage_infiniteWrap"] > div[class^="InfiniteScrollWrap_content"] > [class*="MaterialItemPage_materialSection"]:-abp-has(> .knb-grid-container > [data-io-article-url] [class^="TextContent_text"] > p:-abp-contains(/^Реклама:/)) [class^="material-content_"] a[href][target="_blank"]:not([href^="https://kanobu.ru/"]):style(color: inherit !important; pointer-events: none !important)
 igromania.ru#?#section[class^="MaterialsManufacturerPage_infiniteWrap"] > div[class^="InfiniteScrollWrap_content"] > [class*="MaterialItemPage_materialSection"]:-abp-has(> .knb-grid-container > [data-io-article-url] [class^="TextContent_text"] > p:-abp-contains(/^Реклама:/)) [class^="material-content_"] a[href][target="_blank"]:not([href^="https://www.igromania.ru/"]):style(color: inherit !important; pointer-events: none !important)
 smaxim.*##+js(set-constant, flashvars.protect_block, '')
