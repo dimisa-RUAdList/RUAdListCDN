@@ -1,0 +1,24 @@
+diff name:ruadlist lines:23 checksum:73380e9d6f
+d4 2
+a5 2
+! Last modified: Thu, 02 Jan 2025 20:25:32 +0000
+! Diff-Path: ../patches/2025.1.2.1225.patch#ruadlist
+d13138 1
+a16326 1
+trueua.info##.front-content > .pos-rel
+d17190 2
+a18382 3
+trueua.info##.tui_banner
+trueua.info#?#.tui_section__pad:-abp-has(> .tui_title:-abp-contains(Реклама))
+trueua.info#?#.tui_section__pad:-abp-has(> [data-widget-id])
+d27584 4
+a27587 3
+vkvideo.ru##body.video_showcase #page_body:style(max-width: 100% !important)
+vkvideo.ru##body.video_showcase .VideoGrid.video_items_list:style(max-width: 97% !important)
+vkvideo.ru##body.video_showcase .VideoLayout:style(max-width: 100% !important)
+d28151 1
+a28151 1
+vk.com,vk.ru,vkvideo.ru##+js(href-sanitizer, a[href*="/away.php?"], ?to)
+d28516 1
+a28516 1
+/res/*/VideoAutoplayFlow$script,domain=ok.ru

@@ -1,10 +1,18 @@
-diff name:ruadlist lines:24 checksum:deb1081966
+diff name:ruadlist lines:43 checksum:73380e9d6f
 d4 2
 a5 2
-! Last modified: Thu, 02 Jan 2025 15:24:33 +0000
-! Diff-Path: ../patches/2025.1.2.924.patch#ruadlist
+! Last modified: Thu, 02 Jan 2025 20:25:32 +0000
+! Diff-Path: ../patches/2025.1.2.1225.patch#ruadlist
+d13138 1
+a16326 1
+trueua.info##.front-content > .pos-rel
 a16887 1
 voennoedelo.com#?#.mainVideoWrapper:-abp-has(> script:last-child)
+d17189 2
+a18381 3
+trueua.info##.tui_banner
+trueua.info#?#.tui_section__pad:-abp-has(> .tui_title:-abp-contains(Реклама))
+trueua.info#?#.tui_section__pad:-abp-has(> [data-widget-id])
 a18465 1
 gossipgirl.top##.videoroll-wrapper
 a19133 1
@@ -20,6 +28,17 @@ voennoedelo.com##div[style="margin: 20px auto; height: 300px; width: 910px;"]
 d21862 1
 a21862 1
 howdyho.net,howdyho.pro##html[lang="ru"] :not(my-obnaruzhili-adbl)
-a26715 2
-! ---
+a26716 2
 hentailib.me,slashlib.me##img[src^="https://cover.imglib.info/uploads/"]:style(filter: none !important)
+! ---
+d27578 4
+a27581 3
+vkvideo.ru##body.video_showcase #page_body:style(max-width: 100% !important)
+vkvideo.ru##body.video_showcase .VideoGrid.video_items_list:style(max-width: 97% !important)
+vkvideo.ru##body.video_showcase .VideoLayout:style(max-width: 100% !important)
+d28145 1
+a28145 1
+vk.com,vk.ru,vkvideo.ru##+js(href-sanitizer, a[href*="/away.php?"], ?to)
+d28510 1
+a28510 1
+/res/*/VideoAutoplayFlow$script,domain=ok.ru
