@@ -1,8 +1,8 @@
-diff name:ruadlist lines:53 checksum:35ec4b5bac
+diff name:ruadlist lines:57 checksum:51d42b3417
 d4 2
 a5 2
-! Last modified: Fri, 03 Jan 2025 16:30:00 +0000
-! Diff-Path: ../patches/2025.1.3.989.patch#ruadlist
+! Last modified: Fri, 03 Jan 2025 21:21:51 +0000
+! Diff-Path: ../patches/2025.1.3.1281.patch#ruadlist
 a11358 1
 ||fayllar1.ru/player/preroll
 d13137 1
@@ -27,6 +27,8 @@ hentailib.me,mangalib.me,ranobelib.me,slashlib.me##div[class][style="margin-top:
 d20463 1
 a21093 1
 voennoedelo.com##div[style="margin: 20px auto; height: 300px; width: 910px;"]
+a21808 1
+playground.ru###dfpPrerollDelay {remove:true;}
 d21861 1
 a21861 1
 howdyho.net,howdyho.pro##html[lang="ru"] :not(my-obnaruzhili-adbl)
@@ -41,6 +43,8 @@ a27580 3
 vkvideo.ru##body.video_showcase #page_body:style(max-width: 100% !important)
 vkvideo.ru##body.video_showcase .VideoGrid.video_items_list:style(max-width: 97% !important)
 vkvideo.ru##body.video_showcase .VideoLayout:style(max-width: 100% !important)
+a27937 1
+playground.ru###dfpPrerollDelay:remove()
 d28144 1
 a28144 1
 vk.com,vk.ru,vkvideo.ru##+js(href-sanitizer, a[href*="/away.php?"], ?to)

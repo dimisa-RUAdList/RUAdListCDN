@@ -1,8 +1,8 @@
-diff name:ruadlist lines:31 checksum:35ec4b5bac
+diff name:ruadlist lines:35 checksum:51d42b3417
 d4 2
 a5 2
-! Last modified: Fri, 03 Jan 2025 16:30:00 +0000
-! Diff-Path: ../patches/2025.1.3.989.patch#ruadlist
+! Last modified: Fri, 03 Jan 2025 21:21:51 +0000
+! Diff-Path: ../patches/2025.1.3.1281.patch#ruadlist
 d13138 1
 a16326 1
 trueua.info##.front-content > .pos-rel
@@ -11,6 +11,8 @@ a18382 3
 trueua.info##.tui_banner
 trueua.info#?#.tui_section__pad:-abp-has(> .tui_title:-abp-contains(Реклама))
 trueua.info#?#.tui_section__pad:-abp-has(> [data-widget-id])
+a21813 1
+playground.ru###dfpPrerollDelay {remove:true;}
 d22342 2
 a22344 1
 ||st.okcdn.ru/res/assets/Smokescreen$script,domain=ok.ru
@@ -19,6 +21,8 @@ a27587 3
 vkvideo.ru##body.video_showcase #page_body:style(max-width: 100% !important)
 vkvideo.ru##body.video_showcase .VideoGrid.video_items_list:style(max-width: 97% !important)
 vkvideo.ru##body.video_showcase .VideoLayout:style(max-width: 100% !important)
+a27944 1
+playground.ru###dfpPrerollDelay:remove()
 d28151 1
 a28151 1
 vk.com,vk.ru,vkvideo.ru##+js(href-sanitizer, a[href*="/away.php?"], ?to)

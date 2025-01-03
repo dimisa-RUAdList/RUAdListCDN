@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 03 Jan 2025 16:30:00 +0000
-! Diff-Path: ../patches/2025.1.3.989.patch#ruadlist
+! Last modified: Fri, 03 Jan 2025 21:21:51 +0000
+! Diff-Path: ../patches/2025.1.3.1281.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21812,6 +21812,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 !||www.liveinternet.ru/|$csp=script-src 'unsafe-inline' 'unsafe-eval' i.li.ru https://www.liveinternet.ru/utf/lici.js https://www.liveinternet.ru/utf/li.js https://www.liveinternet.ru/utf/main_new.js
 ! селекторы
 growhow.in.ua###custom-background-css {remove:true;}
+playground.ru###dfpPrerollDelay {remove:true;}
 e.mail.ru##.layout__column_right-indented
 mail.ru,sportmail.ru##.media-ui-slider-track > div:last-child [data-qa="Loader"]
 anidub.vip,anidubonline.com##.plyr__menu
@@ -27941,6 +27942,7 @@ dzen.ru###LayoutTopMicroRoot div[style*="%"]:style(padding-top: unset !important
 gazeta.ru###_id_flowup
 tapochek.net###aposnow
 growhow.in.ua###custom-background-css:remove()
+playground.ru###dfpPrerollDelay:remove()
 myshared.ru###download_form > .modal-body
 vm.ru###onair > img[data-src="/img/player_cover.svg"]
 inoreader.com###reader_pane:style(padding-right: unset !important)
