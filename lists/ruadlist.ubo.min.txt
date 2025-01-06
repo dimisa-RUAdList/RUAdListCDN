@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 06 Jan 2025 14:26:02 +0000
-! Diff-Path: ../patches/2025.1.6.866.patch#ruadlist
+! Last modified: Mon, 06 Jan 2025 19:18:57 +0000
+! Diff-Path: ../patches/2025.1.6.1158.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -269,6 +269,7 @@
 ||ads-provider.com^$third-party
 ||ads-upload.gazprom-media.net^$third-party
 ||ads.digitalcaramel.com^$third-party
+||ads.vk.com/|$xmlhttprequest,domain=~ads.vk.com
 ||ads2.bid^$third-party
 ||adsclick.ru^$third-party
 ||adselector.ru^$third-party
@@ -10999,7 +11000,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||big.az/banner/$image
 ||bigbangtv.ru/bbt.js
 ||bigcinema.tv/uploads/partner/
-||bigkiev.com.ua/ad/
+||bigkyiv.com.ua/wp-content/plugins/firebox/media/public/js/firebox.js
 ||bikepost.ru/plugins/banneroid/
 ||binmovie.org/banners/
 ||biofile.ru/css/*.jpg
@@ -16215,7 +16216,6 @@ bigness.ru##.fark
 prostatitanet.com##.fasc-button
 vgtimes.ru##.fatad
 ficbook.net##.fb-ads-block
-bigkyiv.com.ua##.fb-inst
 versii.if.ua##.fb-s-blog-two-top a[href]:not([href^="/"]):not([href^="https://versii.if.ua"])
 villaved.ru##.fbln
 hi-fi.ru##.feature__ad-block
@@ -18074,7 +18074,7 @@ move.ru##.specs-column
 move.ru##.specs-near
 xxx-russian.ru##.speedbar ~ .rad5
 www.obozrevatel.com#?#.splide__list > .splide__slide:-abp-has(> article > .banner)
-alexua.tv,anilib.moe,anilib.one,anilib.top,anilibria.iss.one,anilibria.tv,avtovzglyad.ru,filmozavr.com,filmozavr.net,forexsystemsru.com,medkrug.ru,must-see.top##.sponsor
+alexua.tv,anilib.moe,anilib.one,anilib.top,anilibria.iss.one,anilibria.tv,avtovzglyad.ru,fco.com.ua,filmozavr.com,filmozavr.net,forexsystemsru.com,medkrug.ru,must-see.top##.sponsor
 radioshanson.fm##.sponsor a[href][target="_blank"]
 yougame.biz##.sponsor-banners
 taker.im##.sponsor-thread
@@ -25013,7 +25013,6 @@ vdvanapa.ru#@#.ad-img
 stomsuper.com,waifucards.app#@#.ad-item
 mishka-knizhka.ru#@#.ad-placeholder
 mishka-knizhka.ru#@#.ad-tag
-bigkyiv.com.ua,roshlam.ru#@#.ad-text
 auto.am#@#.ad-title
 ads.tuver.ru#@#.ad-type
 alliance-catalog.ru#@#.adContent
@@ -25031,7 +25030,6 @@ kvartirant.by#@#.adinfo
 insignia-mebel.ru#@#.ads-bg
 kvartirant.by#@#.ads-box
 surl.li#@#.ads-card
-roshlam.ru#@#.ads-content
 insignia-mebel.ru#@#.ads-footer
 reklama-sev.com.ua#@#.ads-holder
 bamper.by#@#.ads-image
@@ -25060,7 +25058,7 @@ ideipovara.ru,metagames.ru#@#.adv_top
 peleo.ru#@#.advert-block
 maklera.org,svitkvartyr.com#@#.advert-card
 jamesedition.ru#@#.advert2
-am.ru,bestru.ru,roshlam.ru#@#.adverts
+am.ru,bestru.ru#@#.adverts
 abdulinko.ru#@#.advt
 slavyansk.biz#@#.advtext
 komus.ru#@#.b-adv
@@ -25548,7 +25546,6 @@ xn--112-5cd3baof9c5c.xn--p1ai#@#.wrapad
 @@||reklamavarteme.ru^*/reklama/$domain=reklamavarteme.ru
 @@||renault.ru/_beta/banner_system/banner.php$domain=renault.ru
 @@||rock-online.ru/thema/rock/images/baner_$~third-party
-@@||roshlam.ru/adverts/$xmlhttprequest,domain=roshlam.ru
 @@||rostcars.ru/css/advertisement.css$~third-party
 @@||rostov-vershina.ru/assets/cache_image/resources/$image,domain=rostov-vershina.ru
 @@||rotapost.ru/*advertisers/$script,stylesheet,xmlhttprequest,domain=rotapost.ru
@@ -28645,7 +28642,6 @@ afisha.ru,autorambler.ru,championat.com,eda.ru,gazeta.ru,lenta.ru,letidor.ru,mos
 e.mail.ru##+js(no-setTimeout-if, '()=>n()', 50)
 e.mail.ru##+js(set-constant, Object.prototype.hasAdBlock, false)
 e.mail.ru#@#+js(set-constant, Object.prototype.hasAdBlock, null)
-@@||bigkyiv.com.ua^$generichide
 ||st.top100.ru/top100/top100.js$domain=www.rambler.ru
 !#endif
 ! --- AWRL-non-sync---
