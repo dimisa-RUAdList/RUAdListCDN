@@ -1,8 +1,8 @@
-diff name:ruadlist lines:952 checksum:3673c8960d
+diff name:ruadlist lines:999 checksum:ecabedc95c
 d4 2
 a5 2
-! Last modified: Mon, 06 Jan 2025 09:26:47 +0000
-! Diff-Path: ../patches/2025.1.6.566.patch#ruadlist
+! Last modified: Mon, 06 Jan 2025 14:26:02 +0000
+! Diff-Path: ../patches/2025.1.6.866.patch#ruadlist
 a364 1
 ||againandagain.biz^$third-party
 a5609 1
@@ -73,6 +73,47 @@ d22338 2
 a22340 2
 ||st.okcdn.ru/res/assets/alf2-$script,domain=ok.ru
 ||st.okcdn.ru/res/assets/RightColumn-$script,domain=ok.ru
+d22861 1
+a22884 1
+market.yandex.ru,market.yandex.*##.layout_type_search.headline__footer
+d22904 5
+a22908 16
+disk.yandex.ru,disk.yandex.*##.awaps__banner
+disk.yandex.ru,disk.yandex.*##.software-header-promo
+disk.yandex.ru,disk.yandex.*##.top-direct-line
+disk.yandex.ru,disk.yandex.*##a[href][style*="storage.mds.yandex.net/get-bstor/"]
+disk.yandex.ru,disk.yandex.*##div[class^="direct"]:not([class^="directory-content"])
+docviewer.yandex.ru,docviewer.yandex.*##.js-doc-html > div[class^="pages_"] > div[class]:empty
+docviewer.yandex.ru,docviewer.yandex.*##.with-bottom-direct > div[class] > div[class]:empty
+mail.yandex.ru,mail.yandex.*##div[class*="DirectLine"]
+mail.yandex.ru,mail.yandex.*#?#.js-scroller-right:-abp-has(> div:only-child)
+mail.yandex.ru,mail.yandex.*#?#[data-key="box=left-box"]:-abp-has(> [data-key="view=react-left-column"] + div:empty) a[href*="/premium-"]
+rasp.yandex.ru,rasp.yandex.*##.Direct
+rasp.yandex.ru,rasp.yandex.*##.ThreadLayout__topDirect
+rasp.yandex.ru,rasp.yandex.*#?#.SearchSegments__row:-abp-has([class*="banner"])
+rasp.yandex.ru,rasp.yandex.*#?#.SearchSegments__row:-abp-has([id*="banner"])
+translate.yandex.ru,translate.yandex.*##.sidebar-direct
+travel.yandex.ru##div.root[id]:empty
+d22910 1
+a22910 1
+uslugi.yandex.ru##.WebBanner
+d22912 10
+d22923 1
+a22924 1
+yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.page__result .typo:-abp-contains(/^новости партн/i)
+d22929 1
+a22929 1
+afisha.yandex.ru,afisha.yandex.*##.afisha-profit-banner
+d22943 3
+a22945 3
+music.yandex.ru,music.yandex.*##.bar__driver-container
+music.yandex.ru,music.yandex.*##[class^="audio-advert"]
+radio.yandex.ru,radio.yandex.*##.slider > .slider__item_advert
+d22966 3
+a22968 3
+tv.yandex.ru,tv.yandex.*##.branding
+tv.yandex.ru,tv.yandex.*##div[class*="adv-manager"]
+tv.yandex.ru,tv.yandex.*##script[nonce] + script[nonce] + div[class]
 a26716 2
 hentailib.me,slashlib.me##img[src^="https://cover.imglib.info/uploads/"]:style(filter: none !important)
 ! ---
@@ -88,6 +129,12 @@ transkarpatia.net##+js(abort-on-property-write, NiceScroll)
 d28145 1
 a28145 1
 vk.com,vk.ru,vkvideo.ru##+js(href-sanitizer, a[href*="/away.php?"], ?to)
+d28238 1
+d28264 1
+a28413 1
+disk.yandex.ru,disk.yandex.*##+js(remove-class, has-fullscreen-banner|has-right-direct, .public__root, stay)
+a28426 1
+music.yandex.ru,music.yandex.*##+js(set-constant, Object.prototype.adUsageStorageVars, undefined)
 a28499 1
 ok.ru##+js(set-constant, Object.prototype.detectAdBlock, undefined)
 d28502 1
