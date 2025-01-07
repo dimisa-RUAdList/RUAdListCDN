@@ -1,8 +1,8 @@
-diff name:ruadlist lines:87 checksum:e4b44cc172
+diff name:ruadlist lines:103 checksum:d21d53bb39
 d4 2
 a5 2
-! Last modified: Tue, 07 Jan 2025 05:25:22 +0000
-! Diff-Path: ../patches/2025.1.7.325.patch#ruadlist
+! Last modified: Tue, 07 Jan 2025 10:29:31 +0000
+! Diff-Path: ../patches/2025.1.7.629.patch#ruadlist
 a271 1
 ||ads.vk.com/|$xmlhttprequest,domain=~ads.vk.com
 a364 1
@@ -29,6 +29,22 @@ a18071 1
 alexua.tv,anilib.moe,anilib.one,anilib.top,anilibria.iss.one,anilibria.tv,avtovzglyad.ru,fco.com.ua,filmozavr.com,filmozavr.net,forexsystemsru.com,medkrug.ru,must-see.top##.sponsor
 a20504 1
 autogrodno.by##div[class^="bannergroup"]
+a21799 1
+||liveinternet.ru/utf/lici.js?
+d21805 7
+a21811 11
+! howdyho - набор правил для проверки таймаута рецидивов
+@@||yandex.ru/ads/meta/*?target-ref=$xmlhttprequest,domain=howdyho.net|howdyho.pro
+@@||yandex.ru/ads/system/context.js|$script,domain=howdyho.net|howdyho.pro
+@@||yastatic.net/*-bundles/*.js|$script,domain=howdyho.net|howdyho.pro
+howdyho.net,howdyho.pro##.g-ads > header > h2
+howdyho.net,howdyho.pro##.interesting_block_links::before
+howdyho.net,howdyho.pro##div[class^="csr-uniq"]
+howdyho.net,howdyho.pro#@#.g-ads
+howdyho.net,howdyho.pro#@#div[id^="yandex_rtb"]
+||yandex.$domain=howdyho.net|howdyho.pro
+||yastatic.$domain=howdyho.net|howdyho.pro
+d21867 1
 d21873 1
 a21873 1
 apad2.top,besplatnyeprogrammy.ru,hdrip.info,inferno.games,mediagetguru.ru,monna2.top,only-soft.org,rutor-game.ru,rutor-gamer.info,torent-igruha.com,torrent-music.ru,torrent-soft.pro,torrentigo.net,torrentigruha.org,where-game.ru##:not(this-site-promotes-malware)
