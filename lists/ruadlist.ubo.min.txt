@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 07 Jan 2025 20:25:33 +0000
-! Diff-Path: ../patches/2025.1.7.1225.patch#ruadlist
+! Last modified: Wed, 08 Jan 2025 01:51:22 +0000
+! Diff-Path: ../patches/2025.1.8.111.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -15009,7 +15009,7 @@ gurutestov.ru##.adv_collumn > p:not([style])
 aif.ru##.adv_content
 govp.info##.adv_header
 serialochka.ru##.adv_holder
-kommersant.ru##.adv_nest
+autopilot.ru,kommersant.ru##.adv_nest
 btrans.by##.adv_test
 mobportal.net##.adv_video
 bookre.org##.adva2
@@ -20472,7 +20472,7 @@ inforesist.org##div[class^="adslot"]
 fc-zenit.ru#?#div[class^="adv-"]:-abp-has(> div[id^="adfox_"])
 lb.ua##div[class^="adv-banner"]
 kasparov.ru##div[class^="advCell"]
-kommersant.ru##div[class^="adv_"]
+autopilot.ru,kommersant.ru##div[class^="adv_"]
 allsportlinks.com##div[class^="adver_"]
 skolkovarim.com##div[class^="adverser"]
 boxrec.com,iphones.ru,lovitut.ru,pc.ru##div[class^="advert"]
@@ -22898,6 +22898,7 @@ yandex.by,yandex.kz,yandex.ru,yandex.uz##body[class*="b-page_alt-widgets_yes"] .
 yandex.ru##div[class$="ear_js_inited"] > a[href^="//awaps.yandex.ru"]
 yandex.by,yandex.kz,yandex.ru,yandex.uz##img[src*="yandex.net/get-direct"]
 market.yandex.ru,market.yandex.*##.layout_type_search.headline__footer
+ya.ru,yandex.*##.main-home-banner
 |https://dzen.ru/*/*/*/$subdocument,domain=dzen.ru
 ||awaps.yandex.
 ||bs-meta.yandex.$script,xmlhttprequest
