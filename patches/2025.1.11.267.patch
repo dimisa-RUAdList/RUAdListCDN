@@ -1,5 +1,11 @@
-diff name:ruadlist lines:4 checksum:98c7988b58
+diff name:ruadlist lines:10 checksum:fbb39ec009
 d4 2
 a5 2
-! Last modified: Sat, 11 Jan 2025 09:23:00 +0000
-! Diff-Path: ../patches/2025.1.11.562.patch#ruadlist
+! Last modified: Sat, 11 Jan 2025 14:22:56 +0000
+! Diff-Path: ../patches/2025.1.11.862.patch#ruadlist
+d21799 2
+a21800 4
+! ловушка для обфускации, статьи и новости дзена
+||dzen.ru/a/$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
+||dzen.ru/articles$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
+||dzen.ru/news$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
