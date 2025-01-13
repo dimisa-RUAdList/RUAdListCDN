@@ -1,11 +1,13 @@
-diff name:ruadlist lines:22 checksum:84f0e8b742
+diff name:ruadlist lines:26 checksum:8ac9285d00
 d4 2
 a5 2
-! Last modified: Mon, 13 Jan 2025 16:32:28 +0000
-! Diff-Path: ../patches/2025.1.13.992.patch#ruadlist
+! Last modified: Mon, 13 Jan 2025 21:20:15 +0000
+! Diff-Path: ../patches/2025.1.13.1280.patch#ruadlist
 d10205 1
 a10205 1
 .softoroom.org^$csp=default-src 'unsafe-inline',domain=~gzip.softoroom.org|~m.softoroom.org
+a20189 1
+nnmclub.ro,nnmclub.to##center > big
 d21799 2
 a21800 4
 ! ловушка для обфускации, статьи и новости дзена
@@ -18,6 +20,8 @@ a21817 1
 d22246 1
 a22246 1
 cloud.mail.ru,doc.mail.ru##div[class^="Sidebarinfo__root"]
+a28054 1
+versia.ru##+js(abort-on-property-read, addLink)
 d28154 1
 a28154 1
 kp.kg,kp.kz,kp.md,kp.ru,rbc.ru,sportrbc.ru##+js(addEventListener-defuser, copy, getSelection)

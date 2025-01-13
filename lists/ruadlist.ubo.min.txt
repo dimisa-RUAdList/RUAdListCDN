@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 13 Jan 2025 16:32:28 +0000
-! Diff-Path: ../patches/2025.1.13.992.patch#ruadlist
+! Last modified: Mon, 13 Jan 2025 21:20:15 +0000
+! Diff-Path: ../patches/2025.1.13.1280.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -20187,6 +20187,7 @@ samopoznanie.ru##center > a[style][href][target="_blank"]
 inmoment.ru,megaonlines.net##center > a[target="_blank"]
 narodclub.net##center > a[target="_blank"][rel="nofollow"]
 dating.trans-admirer.com##center > b:nth-of-type(3)
+nnmclub.ro,nnmclub.to##center > big
 allmmorpg.ru##center > div > a[rel*="nofollow"][target="_blank"]
 hack-tool.org##center > div > noindex
 sibmail.com##center > div[style*="200px;"]
@@ -28054,6 +28055,7 @@ kufar.by,sm.news##+js(abort-on-property-read, aab)
 bstudy.net,ozlib.com,studbooks.net,studme.org,studref.com,studwood.net,vuzlit.com,xstud.org##+js(abort-on-property-read, abl)
 vgtimes.ru##+js(abort-on-property-read, adblock_availability_check)
 upload.ee##+js(abort-on-property-read, adcashMacros)
+versia.ru##+js(abort-on-property-read, addLink)
 bb.lv##+js(abort-on-property-read, adjustBackground)
 footboom.com,footboom.kz##+js(abort-on-property-read, admiral)
 electric-house.ru##+js(abort-on-property-read, ads)
