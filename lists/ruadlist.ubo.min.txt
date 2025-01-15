@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 15 Jan 2025 08:29:45 +0000
-! Diff-Path: ../patches/2025.1.15.509.patch#ruadlist
+! Last modified: Wed, 15 Jan 2025 13:27:19 +0000
+! Diff-Path: ../patches/2025.1.15.807.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -16835,6 +16835,7 @@ chevy-niva.ru##.logo.right
 ixbt.com##.logohonor
 sapr.ru##.lolcount
 1pnz.ru##.long-banner
+gameguru.ru##.lootguru-link[data-toggle="modal"]
 galya.ru##.lr_block > iframe
 seasonvar.ru##.lside-player
 mytor.info##.lt_bl
@@ -21821,7 +21822,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||imgfrost.net^$third-party
 ||liveinternet.ru/utf/lici.js?
 ||news.mail.ru/-/*.js?
-||pikabu.ru/ajax/*.qb%3Ac?tllla=$xmlhttprequest
+||pikabu.ru/ajax/*?tllla=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -26649,7 +26650,7 @@ gamegpu.com##a[href*="://artline.ua/"]:style(pointer-events: none !important)
 gamegpu.com##a[href*="://bit.ly/"]:style(pointer-events: none !important)
 ! ---
 gameguru.ru###mainContent > section:first-of-type:style(margin-top: unset !important)
-gameguru.ru##body:style(background-color: inherit !important)
+gameguru.ru##body:style(background-image: none !important)
 ! ---
 gamemag.ru##.comment-background:style(background: none !important)
 gamemag.ru##.main-content:style(background: none !important)
