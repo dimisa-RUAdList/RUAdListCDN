@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 16 Jan 2025 09:24:26 +0000
-! Diff-Path: ../patches/2025.1.16.564.patch#ruadlist
+! Last modified: Thu, 16 Jan 2025 14:24:18 +0000
+! Diff-Path: ../patches/2025.1.16.864.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21820,7 +21820,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||imgfrost.net^$third-party
 ||liveinternet.ru/utf/lici.js?
 ||news.mail.ru/-/*.js?
-||pikabu.ru/ajax/*?tllla=$xmlhttprequest
+||pikabu.ru/ajax/*?afghd=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -25999,6 +25999,7 @@ electric-house.ru##.alert_warn
 stylenews.ru##.alm-btn-wrap
 7days2die.info#?#.articleContent > p:-abp-has(> span + strong[style])
 7days2die.info##.articleContent > p[style="display: block!important; text-align: center;"]
+retail.ru##.b2-retail
 nashaplaneta.net##.badv
 img2txt.com##.bd-callout-danger
 img2txt.com##.bd-callout-warning
@@ -26006,6 +26007,9 @@ reallanguage.club##.bgAdd
 guidesgame.ru##.box-warning
 a-russia.ru##.bsac
 tsn.ua##.c-aside__port
+retail.ru##.c1-retail
+retail.ru##.commercial
+retail.ru##.contain__p1
 bidbaits.ru##.cover-msg
 tarkov-market.com##.disable-adblock
 internetsms.org##.fade[class^="modal"]
@@ -26016,11 +26020,16 @@ trupornolabs.org##.header > .red
 wowhead.com##.is-atf.horizontal-bg
 wowhead.com##.is-atf.vertical-bg
 wowhead.com##.is-btf.horizontal-bg
+retail.ru##.markup__b2
+retail.ru##.markup__c1
+retail.ru##.markup__p1
 ritsatv.ru##.message.ab
 playground.ru##.mezzanine > .mezzanine-center > div:not([class])
 forum.niiot.net##.modal
 allbookerka.org##.overhang
 2x2tv.ru##.owl-wrapper-outer .slideAlt
+retail.ru##.p1-retail
+retail.ru##.p2-retail
 clan-soprano.ru##.popupBlock
 uniondht.org##.post_body > div[style="color:red;font-size:25px;"]
 filmix.date,filmix.life,filmix.my,filmix.pub,filmix.tech,filmix.zone##.remove-sda-wrap
@@ -27307,6 +27316,9 @@ repack.me##main > .container:style(padding-top: 0 !important; margin-top: 0 !imp
 ! ---
 reshebnik.com##div[id*="-error-page"] > p:style(height: 0 !important; opacity: 0 !important)
 ! ---
+retail.ru##.header-container:style(height: auto !important)
+retail.ru##header[class^="header--standard"]:style(margin-top: unset !important)
+! ---
 context.reverso.net##.blocked .text:style(filter: none !important; -webkit-filter: none !important)
 context.reverso.net##.blocked:style(filter: none !important; -webkit-filter: none !important)
 context.reverso.net##.locked .example:style(filter: none !important; -webkit-filter: none !important)
@@ -28306,6 +28318,7 @@ dni.expert,dni.ru,kp.kg,kp.kz,kp.md,kp.ru,ladys.media,lifehacker.ru,mk.ru,ohotni
 ati.su##+js(set-constant, Object.prototype.createBannerItem, null)
 24smi.org##+js(set-constant, Object.prototype.detect, noopFunc)
 examenpdd.com##+js(set-constant, Object.prototype.detectAdblock, noopFunc)
+retail.ru##+js(set-constant, Object.prototype.detectBlockAds, noopFunc)
 embed.twitch.tv,player.twitch.tv##+js(set-constant, Object.prototype.disableAutoplay, true)
 www.mos.ru##+js(set-constant, Object.prototype.disablePaste, false)
 1tv.ru##+js(set-constant, Object.prototype.disableSeek, noopFunc)

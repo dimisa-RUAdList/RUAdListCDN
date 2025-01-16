@@ -1,8 +1,8 @@
-diff name:ruadlist lines:21 checksum:600001d94a
+diff name:ruadlist lines:43 checksum:9e628747a0
 d4 2
 a5 2
-! Last modified: Thu, 16 Jan 2025 09:24:26 +0000
-! Diff-Path: ../patches/2025.1.16.564.patch#ruadlist
+! Last modified: Thu, 16 Jan 2025 14:24:18 +0000
+! Diff-Path: ../patches/2025.1.16.864.patch#ruadlist
 d15204 1
 d15207 1
 d15268 1
@@ -17,6 +17,28 @@ a20827 1
 1tv.ru,2mm.ru,auto.vesti.ru,ctc.ru,f1news.ru,irr.ru,probirka.org,sobesednik.ru,sportbox.ru##div[id^="AdFox_banner"]
 a21450 1
 tvc.ru#?#li.play-button-wrap:-abp-has(> div > [id^="adfox_"])
+d21825 1
+a21825 1
+||pikabu.ru/ajax/*?afghd=$xmlhttprequest
+a26003 1
+retail.ru##.b2-retail
+a26010 3
+retail.ru##.c1-retail
+retail.ru##.commercial
+retail.ru##.contain__p1
+a26020 3
+retail.ru##.markup__b2
+retail.ru##.markup__c1
+retail.ru##.markup__p1
+a26025 2
+retail.ru##.p1-retail
+retail.ru##.p2-retail
 d26031 1
 a26031 1
 sport-express.net,sport-express.ru##.se-bn-notice
+a27311 3
+retail.ru##.header-container:style(height: auto !important)
+retail.ru##header[class^="header--standard"]:style(margin-top: unset !important)
+! ---
+a28310 1
+retail.ru##+js(set-constant, Object.prototype.detectBlockAds, noopFunc)
