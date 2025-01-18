@@ -1,8 +1,8 @@
-diff name:ruadlist lines:121 checksum:04192dff72
+diff name:ruadlist lines:127 checksum:96ba3a7adb
 d4 2
 a5 2
-! Last modified: Sat, 18 Jan 2025 16:26:37 +0000
-! Diff-Path: ../patches/2025.1.18.986.patch#ruadlist
+! Last modified: Sat, 18 Jan 2025 21:21:04 +0000
+! Diff-Path: ../patches/2025.1.18.1281.patch#ruadlist
 a354 1
 ||aeidive.info^$third-party
 a8476 1
@@ -54,6 +54,8 @@ byrutgame.org,thelastdb.games,thelastupd.org##.block_down_game > .block_down ~ .
 d16139 1
 a16395 1
 itorrents-igruha.net,itorrents-igruha.org##.global-container > .content-right-column > center
+a16991 1
+winstation.ru##.mg_button
 d17198 1
 a17198 1
 1progs.me,gafki.ru,notorgames.net##.offer
@@ -92,6 +94,8 @@ a21825 1
 d21900 1
 a21900 1
 apad2.top,besplatnyeprogrammy.ru,hdrip.info,inferno.games,mediagetguru.ru,monna2.top,only-soft.org,rutor-gamer.info,rutor-gamer.ru,torrent-music.ru,torrent-soft.pro,torrentigo.net,where-game.ru##:not(this-site-promotes-malware)
+a22509 1
+pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net##a[href*="sex.batsa.pro"]
 a26003 1
 retail.ru##.b2-retail
 a26010 3
@@ -118,5 +122,7 @@ a27311 3
 retail.ru##.header-container:style(height: auto !important)
 retail.ru##header[class^="header--standard"]:style(margin-top: unset !important)
 ! ---
+a28152 1
+1progs.me##+js(addEventListener-defuser, DOMContentLoaded, encodedUrl)
 a28310 1
 retail.ru##+js(set-constant, Object.prototype.detectBlockAds, noopFunc)
