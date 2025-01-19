@@ -1,8 +1,8 @@
-diff name:ruadlist lines:111 checksum:239d42720c
+diff name:ruadlist lines:131 checksum:dc7214f9ba
 d4 2
 a5 2
-! Last modified: Sun, 19 Jan 2025 07:21:03 +0000
-! Diff-Path: ../patches/2025.1.19.441.patch#ruadlist
+! Last modified: Sun, 19 Jan 2025 12:41:11 +0000
+! Diff-Path: ../patches/2025.1.19.761.patch#ruadlist
 a354 1
 ||aeidive.info^$third-party
 a8476 1
@@ -33,8 +33,13 @@ a10561 1
 d12704 1
 a12704 1
 ||ru^$third-party,script,domain=8spoon.ru|amazinghis.ru|anime-chan.me|autotopik.ru|bilimdiler.kz|bouncekitchen.ru|car.ru|carolspb.ru|cars.ru|castlerocktv.ru|cutur.ru|ddgroupclub.com|dietdo.ru|elektrik-a.su|elfterra.ru|faston24.ru|festiveall.ru|g2019.su|gotovim-edu.ru|grudnichky.ru|gruziyagid.ru|hdays.ru|invalidnost.com|ka4ka.ru|kakzharit.info|kino-teatr.ua|kinobu.net|kinolook.top|manga-chan.me|mcuns.ru|medhea.ru|mobtop.ru|mogue.ru|molitva-info.ru|mta-resource.ru|music-radio.ru|neboleyka.info|novospasskoe-city.ru|nude-moon.me|o-polze.com|oreshkov.net|outlandertv.ru|pishchevarenie.ru|prazdnovik.ru|prodragmetally.ru|psyholic.ru|ranobes.com|ruslekar.com|scrubstv.net|sheldontv.ru|shungit-zeolit.ru|simptomov.com|sonnikonline.club|spafilms.me|stopmusic.net|topsopt.ru|tvoilokony.ru|umnica-krasavica.ru|uralfloor.ru|xomusic.ru|yaoi-chan.me
+a12980 1
+||stoigr.org/uploads/sslsldny.
 a13402 1
 ||world-of-gamers.net/Yandex_
+d13441 1
+a13441 1
+||xv-ru.com/euto/
 d13628 1
 a14490 3
 h-chan.me###side > div:not([id]):not([class]):first-child
@@ -70,6 +75,9 @@ a19488 1
 d20078 1
 a20078 1
 101.ru,101kofemashina.ru,1in.am,alau.kz,alexua.tv,animejapan.tv,autosport.com.ru,bit.ua,bugaga.ru,c-inform.info,comments.ua,csgamer.ru,ctv7.ru,cvnews.cv.ua,dead-serial.com,e-libra.ru,fashiony.ru,fclmnews.ru,fishki.net,forpost.lviv.ua,game2day.ru,gameinside.ua,ggscore.com,gorod.dp.ua,grimm-online.org,gta.com.ua,horrorzone.ru,ifnews.org.ua,igry-online.net,itechua.com,izbezhat-nakazania.com,jetsetter.ua,jut.su,kievvlast.com.ua,kinoafisha.info,ko.com.ua,kosti-tv.com,kushvsporte.ru,likeni.ru,lovesun.by,lvnews.org.ua,mac-torrent-download.net,madjong-besplatno.ru,mirf.ru,moldfootball.com,mybrazz.club,nashkiev.ua,ne-kurim.ru,pesikot.org,pimpletv.ru,playua.net,post-tracker.ru,povarenok.ru,prodota.ru,prosports.kg,prosports.kz,prosportua.com,relook.ru,rvnews.rv.ua,saratovnews.ru,shuba.life,sopsport.org,spletnica-tv.com,sportarena.com,strela-online.com,teenwolf-tv.com,tenews.org.ua,tg.telepult.pro,theflash-tv.com,topfile.tj,traktorist.ua,uanews.org.ua,udargol.com,upl.ua,vskazke-tv.com,zab.ru,zorgee.ru##body > a[href][target="_blank"]
+d20442 1
+a20442 1
+hentailib.me,mangalib.me,ranobelib.me,slashlib.me,yaoilib.net##div[class][style="margin-top: 20px; margin-bottom: 20px;"]
 a21448 1
 gofrag.ru#?#li:-abp-has(> .uk-accordion-title ~ [class] a[href*=".ufiler.pro/"])
 d21518 1
@@ -81,6 +89,9 @@ a21823 1
 d21898 1
 a21898 1
 apad2.top,besplatnyeprogrammy.ru,hdrip.info,inferno.games,mediagetguru.ru,monna2.top,only-soft.org,rutor-gamer.info,rutor-gamer.ru,torrent-music.ru,torrent-soft.pro,torrentigo.net,where-game.ru##:not(this-site-promotes-malware)
+d22500 1
+a22500 1
+pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net#?#.forums > tbody > tr[id]:-abp-has(> td script)
 a22507 1
 pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net##a[href*="sex.batsa.pro"]
 a26001 1
@@ -99,6 +110,9 @@ retail.ru##.p2-retail
 a26729 2
 h-chan.me##img[style^="filter: blur"]:style(filter: none !important)
 ! ---
+d26747 1
+a26747 1
+hentailib.me,slashlib.me,yaoilib.net##img[src^="https://cover.imglib.info/uploads/"]:style(filter: none !important)
 d26782 2
 a27107 1
 myshows.me##.LayoutWrapper__promo ~ .LayoutWrapper__main:style(margin-top: 0 !important)
@@ -106,7 +120,13 @@ a27309 3
 retail.ru##.header-container:style(height: auto !important)
 retail.ru##header[class^="header--standard"]:style(margin-top: unset !important)
 ! ---
-a28150 1
+a27679 1
+dzen.ru##[data-testid="dzenpro-banner"]
+a28102 1
+stoigr.org##+js(abort-on-property-read, noselect)
+a28150 2
 1progs.me##+js(addEventListener-defuser, DOMContentLoaded, encodedUrl)
+xv-ru.com##+js(addEventListener-defuser, DOMContentLoaded, exo_tracker)
+d28160 1
 a28308 1
 retail.ru##+js(set-constant, Object.prototype.detectBlockAds, noopFunc)

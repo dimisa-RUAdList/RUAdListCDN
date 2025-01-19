@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 19 Jan 2025 07:21:03 +0000
-! Diff-Path: ../patches/2025.1.19.441.patch#ruadlist
+! Last modified: Sun, 19 Jan 2025 12:41:11 +0000
+! Diff-Path: ../patches/2025.1.19.761.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -12984,6 +12984,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||step2nature.ru/upload/alexkova.popupad/$image
 ||stereohead.ru/_main_page/images/
 ||stgkrf.ru/*.php?$xmlhttprequest
+||stoigr.org/uploads/sslsldny.
 ||stopgame.ru/dist/*/stalcraft
 ||storage.googleapis.com/html5banners/$domain=komedra.com|milliarderr.com
 ||storage.gorod55.ru/promo/
@@ -13445,7 +13446,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||xtreme.ws/xad/
 ||xtubeporno.net/data/js/
 ||xuy.tv/player*/vast.js
-||xv-ru.com/lvcsm/abck-banners/
+||xv-ru.com/euto/
 ||xvideos.com/cams/
 ||xxx-russian.ru/js/38fbf0.js
 ||xxx-tracker.com/pics/
@@ -20445,7 +20446,7 @@ ytvideo.ru##div[class][data-aid]
 dorognoe.ru,europaplus.ru,radio7.ru,retrofm.ru##div[class][data-element*="BANNER"]
 mk.ru,prnt.sc##div[class][style*="important"]
 rlocman.ru##div[class][style="background-color:#fcfcee;padding:10px"]
-hentailib.me,mangalib.me,ranobelib.me,slashlib.me##div[class][style="margin-top: 20px; margin-bottom: 20px;"]
+hentailib.me,mangalib.me,ranobelib.me,slashlib.me,yaoilib.net##div[class][style="margin-top: 20px; margin-bottom: 20px;"]
 puzzleheap.ru##div[class][style^="height:"][id]:empty
 livejournal.com#?#div[class][style^="height:"][style*="background-color: black; position: relative;"]:-abp-has([src*="docking"][src*="eaglecdn"])
 news.pn##div[class][style^="width:"][style$="300px;"]
@@ -22504,7 +22505,7 @@ pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net###page_header > div[style^="p
 pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net###pl-speedbar
 pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net###tor-fl-bgn
 $third-party,object,subdocument,domain=pornolab.biz|pornolab.cc|pornolab.lib|pornolab.net
-pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net#?#.forums tr[id^="f-"]:-abp-has(.topic_icon[src$="/folder_lock.gif"])
+pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net#?#.forums > tbody > tr[id]:-abp-has(> td script)
 pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net##.med.bordered.attach > tbody > .tCenter ~ .tCenter + tr
 pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net##.med.bordered.attach > tbody > tr.row1 ~ .row3
 pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net##.med.bordered.attach > tbody > tr.row1 ~ .row3 ~ *
@@ -26763,7 +26764,7 @@ hentai-share.one##.main .header:style(padding-top: 94px !important)
 hentai-share.one##.showfull .header:style(padding-top: 60px !important)
 hentai-share.one##img[src]:style(filter: none !important)
 ! ---
-hentailib.me,slashlib.me##img[src^="https://cover.imglib.info/uploads/"]:style(filter: none !important)
+hentailib.me,slashlib.me,yaoilib.net##img[src^="https://cover.imglib.info/uploads/"]:style(filter: none !important)
 ! ---
 hentaiz.org##.short-poster > img:style(filter: none !important; -webkit-filter: none !important)
 ! ---
@@ -27698,6 +27699,7 @@ dzen.ru##._is-for-article-floor
 dzen.ru##.adv-ecom
 dzen.ru##.mg-advert__content:not(:first-child):style(margin-top: unset !important)
 dzen.ru##.mg-grid__col > div[style^="margin-top:"]:style(margin-top: unset !important)
+dzen.ru##[data-testid="dzenpro-banner"]
 dzen.ru##a[href*="://yandex.ru/an/count/"]
 dzen.ru##a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div
 dzen.ru##body:style(overflow-y: unset !important)
@@ -28121,6 +28123,7 @@ asteriatm.ru,sudya-dredd.ru,tehnobzor.ru##+js(abort-on-property-read, mdpDeBlock
 anime-chan.me##+js(abort-on-property-read, move_string)
 city.ogo.ua##+js(abort-on-property-read, myatu_bgm)
 kolizhanka.com.ua##+js(abort-on-property-read, nocontext)
+stoigr.org##+js(abort-on-property-read, noselect)
 it-actual.ru##+js(abort-on-property-read, onload)
 freehat.cc,hlamer.ru,lostpix.com,potokcdn.com,prostoporno.help,saltday.ru,uploadimagex.com,wowskill.ru,xittv.net##+js(abort-on-property-read, open)
 sm.news##+js(abort-on-property-read, preventSelection)
@@ -28170,6 +28173,7 @@ sibnet.ru##+js(addEventListener-defuser, DOMContentLoaded, /pon-/)
 sports.ru##+js(addEventListener-defuser, DOMContentLoaded, 0x)
 cq.ru##+js(addEventListener-defuser, DOMContentLoaded, banners)
 1progs.me##+js(addEventListener-defuser, DOMContentLoaded, encodedUrl)
+xv-ru.com##+js(addEventListener-defuser, DOMContentLoaded, exo_tracker)
 litnet.com##+js(addEventListener-defuser, DOMContentLoaded, feedback)
 regnum.news,regnum.ru,tproger.ru##+js(addEventListener-defuser, click, , elements, a[href*="utm_campaign"])
 softonic.ru##+js(addEventListener-defuser, click, [native code])
@@ -28179,7 +28183,6 @@ kp.kg,kp.kz,kp.md,kp.ru,rbc.ru,sportrbc.ru##+js(addEventListener-defuser, copy, 
 carservic.ru,iptv.org.ua,tva.org.ua,ufchgu.ru##+js(addEventListener-defuser, copy, pagelink)
 fastpic.org,~new.fastpic.org##+js(addEventListener-defuser, getexoloader)
 romakatya.ru##+js(addEventListener-defuser, load, AdBlock)
-xv-ru.com##+js(addEventListener-defuser, load, exoJsPop101)
 overclockers.ru##+js(addEventListener-defuser, load, mamydirect)
 bonus-tv.ru##+js(addEventListener-defuser, loadstart, isImmediatePropagationStopped)
 kinoblin.ru,serialai.ru##+js(addEventListener-defuser, mousedown, pop.doEvent)
