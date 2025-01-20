@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 20 Jan 2025 08:30:59 +0000
-! Diff-Path: ../patches/2025.1.20.510.patch#ruadlist
+! Last modified: Mon, 20 Jan 2025 13:28:25 +0000
+! Diff-Path: ../patches/2025.1.20.808.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21829,7 +21829,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||imgfrost.net^$third-party
 ||liveinternet.ru/utf/lici.js?
 ||news.mail.ru/-/*.js?
-||pikabu.ru/ajax/*?afghd=$xmlhttprequest
+||pikabu.ru/ajax/*?*=*=*=*=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -22950,6 +22950,8 @@ disk.yandex.ru,disk.yandex.*##a[href][style*="storage.mds.yandex.net/get-bstor/"
 disk.yandex.ru,disk.yandex.*##div[class^="direct"]:not([class^="directory-content"])
 docviewer.yandex.ru,docviewer.yandex.*##.js-doc-html > div[class^="pages_"] > div[class]:empty
 docviewer.yandex.ru,docviewer.yandex.*##.with-bottom-direct > div[class] > div[class]:empty
+eda.yandex.ru##[data-testid="open-advert-modal-button"]
+eda.yandex.ru##div[class^="banner_"]
 mail.yandex.ru,mail.yandex.*##div[class*="DirectLine"]
 mail.yandex.ru,mail.yandex.*#?#.js-scroller-right:-abp-has(> div:only-child)
 mail.yandex.ru,mail.yandex.*#?#[data-key="box=left-box"]:-abp-has(> [data-key="view=react-left-column"] + div:empty) a[href*="/premium-"]
