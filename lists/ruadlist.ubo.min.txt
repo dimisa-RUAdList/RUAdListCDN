@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 22 Jan 2025 10:26:14 +0000
-! Diff-Path: ../patches/2025.1.22.626.patch#ruadlist
+! Last modified: Wed, 22 Jan 2025 15:25:47 +0000
+! Diff-Path: ../patches/2025.1.22.925.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -26526,7 +26526,7 @@ drahelas.ru##.navbar_notice:style(position: fixed !important; transform: scale(0
 ! ---
 ! Драйв
 drive2.com,drive2.ru##.u-extend-fix:style(background: center / 100% 100% no-repeat #515151 var(--res-logo) !important; border-radius: 6px !important)
-drive2.com,drive2.ru##[data-track]:style(min-height: 0 !important; padding-top: unset !important; padding-bottom: unset !important; box-shadow: inherit !important)
+drive2.com,drive2.ru##[data-track]:not(a):style(min-height: 0 !important; padding-top: unset !important; padding-bottom: unset !important; box-shadow: inherit !important)
 drive2.com,drive2.ru##div[class$="content"] ~ div + div[class*=" "][class$="--mh"]
 drive2.com,drive2.ru##div[itemtype*="://schema.org/BlogPosting"] > div:last-child > div:first-child + div[class]:style(width: unset !important; margin-left: unset !important)
 drive2.com,drive2.ru##div[itemtype*="://schema.org/BlogPosting"] > div:last-child > div:first-child:not(:only-child):style(max-width: unset !important)
