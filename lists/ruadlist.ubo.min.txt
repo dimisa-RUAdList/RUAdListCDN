@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 24 Jan 2025 07:22:11 +0000
-! Diff-Path: ../patches/2025.1.24.442.patch#ruadlist
+! Last modified: Fri, 24 Jan 2025 12:46:09 +0000
+! Diff-Path: ../patches/2025.1.24.766.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -2327,6 +2327,7 @@
 ||github.io^*adsreplace$third-party
 ||github.io^*aplacer$third-party
 ||gityii.ru^$third-party
+||givemelink.cc^$third-party
 ||givemethis.org^$third-party
 ||gizenon.ru^$third-party
 ||gj7.ru^$third-party
@@ -4622,6 +4623,7 @@
 ||piedppienews.com^$third-party
 ||pifvfovy.biz^$third-party
 ||pigiuqproxy.com^$third-party
+||piiqrmvymwue.world^$third-party
 ||pikachun.ru^$third-party
 ||pikadu.info^$third-party
 ||pikalop.com^$third-party
@@ -5495,6 +5497,7 @@
 ||shop3784.ru^$third-party
 ||shopgameslive.com^$third-party
 ||shopnetic.com^$third-party
+||shopsonnies.top^$third-party
 ||shoptop-24.info^$third-party
 ||shotad.com^
 ||shotyfy.com^
@@ -21832,7 +21835,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||imgfrost.net^$third-party
 ||liveinternet.ru/utf/lici.js?
 ||news.mail.ru/-/*.js?
-||pikabu.ru/ajax/*?krovy=$xmlhttprequest
+||pikabu.ru/ajax/*?flenp=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -23031,6 +23034,7 @@ dzen.ru##[aria-label^="Рeкл"]
 dzen.ru##[aria-label^="Рекл"]
 dzen.ru##[class^="dzen-desktop--top-micro-app__"] [class^="dzen-desktop--top-micro-app"][class*=" "]
 dzen.ru##[data-name="video-in-combo-zen-container"]
+dzen.ru##[data-testid="bottom-ad"]
 dzen.ru##[id*="-teaser"] > div[id]
 dzen.ru##a[href*="://t.mail.ru/redir/"]
 dzen.ru##article > section:first-child + div:not(:last-child)
