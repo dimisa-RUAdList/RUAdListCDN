@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 24 Jan 2025 12:46:09 +0000
-! Diff-Path: ../patches/2025.1.24.766.patch#ruadlist
+! Last modified: Fri, 24 Jan 2025 17:22:46 +0000
+! Diff-Path: ../patches/2025.1.24.1042.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -13923,6 +13923,7 @@ bitcryptonews.ru###faq-index
 turmush.kg###fb_bottom_like
 myparcels.ru###featured-wants
 vk.com,vk.ru###feed_rows > .feed_row > div[class^="page_block "]
+vk.com,vk.ru###feed_rows > .feed_row > div[data-media-type]
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] > ._post_content .PostHeader > .PostHeaderInfo > [class^="PostHeaderSubtitle"] > [class]:-abp-contains(/Community ad|Реклама|Рэклама|жарнама/))
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] > ._post_content .PostHeader > .PostHeaderInfo > [class^="PostHeaderSubtitle"] > span [class] ~ [class] ~ [class] ~ [class] ~ [class] ~ [class] ~ [class] ~ [class] ~ [class] ~ [class] ~ [class] ~ [class] ~ [class])
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] > ._post_content .PostHeader > .PostHeaderInfo [onclick*="ads_params:"])
@@ -28328,7 +28329,6 @@ player.vgtrk.com##+js(set-constant, Object.prototype.IS_CHECK_REGISTRATION, fals
 tv-gubernia.ru##+js(set-constant, Object.prototype.MediaReady, noopFunc)
 xsport.ua##+js(set-constant, Object.prototype.PLAYED, null)
 1tv.ru##+js(set-constant, Object.prototype._currentAgeRestriction, null)
-vk.com,vk.ru##+js(set-constant, Object.prototype.adChoices, undefined)
 api-video.khl.ru##+js(set-constant, Object.prototype.adblockSettings, undefined)
 razlozhi.ru##+js(set-constant, Object.prototype.advert, null)
 rutube.ru##+js(set-constant, Object.prototype.advert, undefined)
@@ -28341,6 +28341,7 @@ partnerkin.com##+js(set-constant, Object.prototype.autoPopups, undefined)
 frontend.vh.yandex.ru##+js(set-constant, Object.prototype.autoplay, false)
 eagleplatform.com##+js(set-constant, Object.prototype.autoplay, null)
 embed.dugout.com##+js(set-constant, Object.prototype.autostart, noopFunc)
+vk.com,vk.ru##+js(set-constant, Object.prototype.banner, undefined)
 sports.ru##+js(set-constant, Object.prototype.branding, undefined)
 dni.expert,dni.ru,kp.kg,kp.kz,kp.md,kp.ru,ladys.media,lifehacker.ru,mk.ru,ohotniki.ru,portalvirtualreality.ru,radiokp.ru,sportkp.ru,wday.ru,woman.ru,womanhit.ru##+js(set-constant, Object.prototype.changeVisible, noopFunc)
 ati.su##+js(set-constant, Object.prototype.createBannerItem, null)
