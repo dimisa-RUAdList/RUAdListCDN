@@ -1,14 +1,16 @@
-diff name:ruadlist lines:26 checksum:a5a2e2de06
+diff name:ruadlist lines:30 checksum:f17b4aee55
 d4 2
 a5 2
-! Last modified: Sat, 25 Jan 2025 03:24:33 +0000
-! Diff-Path: ../patches/2025.1.25.204.patch#ruadlist
+! Last modified: Sat, 25 Jan 2025 08:27:28 +0000
+! Diff-Path: ../patches/2025.1.25.507.patch#ruadlist
 a2329 1
 ||givemelink.cc^$third-party
 a4624 1
 ||piiqrmvymwue.world^$third-party
 a5497 1
 ||shopsonnies.top^$third-party
+a13921 1
+vk.com,vk.ru###feed_rows > .feed_row > .mailru-visibility-check
 a13922 1
 vk.com,vk.ru###feed_rows > .feed_row > div[data-media-type]
 d16402 1
@@ -24,4 +26,6 @@ a26529 1
 drive2.com,drive2.ru##[data-track]:not(a):style(min-height: 0 !important; padding-top: unset !important; padding-bottom: unset !important; box-shadow: inherit !important)
 d28327 1
 a28339 1
-vk.com,vk.ru##+js(set-constant, Object.prototype.banner, undefined)
+vk.com,vk.ru##+js(set-constant, Object.prototype.banner, null)
+a28419 1
+vk.com,vk.ru##.feed_row:matches-prop(innerHTML=/_mailru/)

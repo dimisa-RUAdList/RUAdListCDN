@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 25 Jan 2025 03:24:33 +0000
-! Diff-Path: ../patches/2025.1.25.204.patch#ruadlist
+! Last modified: Sat, 25 Jan 2025 08:27:28 +0000
+! Diff-Path: ../patches/2025.1.25.507.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -13922,6 +13922,7 @@ inpot.ru###ezobann
 bitcryptonews.ru###faq-index
 turmush.kg###fb_bottom_like
 myparcels.ru###featured-wants
+vk.com,vk.ru###feed_rows > .feed_row > .mailru-visibility-check
 vk.com,vk.ru###feed_rows > .feed_row > div[class^="page_block "]
 vk.com,vk.ru###feed_rows > .feed_row > div[data-media-type]
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] > ._post_content .PostHeader > .PostHeaderInfo > [class^="PostHeaderSubtitle"] > [class]:-abp-contains(/Community ad|Реклама|Рэклама|жарнама/))
@@ -28341,7 +28342,7 @@ partnerkin.com##+js(set-constant, Object.prototype.autoPopups, undefined)
 frontend.vh.yandex.ru##+js(set-constant, Object.prototype.autoplay, false)
 eagleplatform.com##+js(set-constant, Object.prototype.autoplay, null)
 embed.dugout.com##+js(set-constant, Object.prototype.autostart, noopFunc)
-vk.com,vk.ru##+js(set-constant, Object.prototype.banner, undefined)
+vk.com,vk.ru##+js(set-constant, Object.prototype.banner, null)
 sports.ru##+js(set-constant, Object.prototype.branding, undefined)
 dni.expert,dni.ru,kp.kg,kp.kz,kp.md,kp.ru,ladys.media,lifehacker.ru,mk.ru,ohotniki.ru,portalvirtualreality.ru,radiokp.ru,sportkp.ru,wday.ru,woman.ru,womanhit.ru##+js(set-constant, Object.prototype.changeVisible, noopFunc)
 ati.su##+js(set-constant, Object.prototype.createBannerItem, null)
@@ -28422,6 +28423,7 @@ lostfilm.download,lostfilm.life,lostfilm.one,lostfilm.pro,lostfilm.today,lostfil
 online-fix.me##.content > .errors
 playground.ru##.dfp-container:remove()
 smotrim.ru##.dialog-wrapper
+vk.com,vk.ru##.feed_row:matches-prop(innerHTML=/_mailru/)
 reshu.by,reshuent.kz,reshuolymp.ru,sdamgia.ru##.googlead.pub_300x250.pub_300x250m.pub_728x90.text-ad.textAd.text_ad.text_ads.text-ads.text-ad-links:style(display: block !important)
 rbc.ru##.js-index-doscroll audio[autoplay]:remove()
 lenta.ru##.js-scroll-to-site-container:remove()

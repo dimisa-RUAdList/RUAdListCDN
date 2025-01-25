@@ -1,5 +1,12 @@
-diff name:ruadlist lines:4 checksum:a5a2e2de06
+diff name:ruadlist lines:11 checksum:f17b4aee55
 d4 2
 a5 2
-! Last modified: Sat, 25 Jan 2025 03:24:33 +0000
-! Diff-Path: ../patches/2025.1.25.204.patch#ruadlist
+! Last modified: Sat, 25 Jan 2025 08:27:28 +0000
+! Diff-Path: ../patches/2025.1.25.507.patch#ruadlist
+a13924 1
+vk.com,vk.ru###feed_rows > .feed_row > .mailru-visibility-check
+d28344 1
+a28344 1
+vk.com,vk.ru##+js(set-constant, Object.prototype.banner, null)
+a28424 1
+vk.com,vk.ru##.feed_row:matches-prop(innerHTML=/_mailru/)
