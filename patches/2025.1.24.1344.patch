@@ -1,12 +1,72 @@
-diff name:ruadlist lines:11 checksum:3a6f1b8583
+diff name:ruadlist lines:71 checksum:3c5a1a5c27
 d4 2
 a5 2
-! Last modified: Sat, 25 Jan 2025 13:23:46 +0000
-! Diff-Path: ../patches/2025.1.25.803.patch#ruadlist
-a13924 1
-vk.com,vk.ru###feed_rows > .feed_row > .mailru-visibility-check
+! Last modified: Sat, 25 Jan 2025 18:28:40 +0000
+! Diff-Path: ../patches/2025.1.25.1108.patch#ruadlist
+d13925 2
+d13928 1
+d13931 1
 a16240 1
 vk.com,vk.ru##.feed_row ._post_content > .page_block
+d18530 1
+d21855 5
+a21859 2
+@@||ozon.ru/highlight/kursk-$elemhide
+android-mafia.com,game4you.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##:not(this-site-promotes-malware)
+d21862 5
+a21866 1
+cq.ru#?#div:-abp-properties(content: "Реклама")
+d21868 2
+d21872 1
+a21872 4
+drive2.ru##div[class$="--equal"] > div[class] > div:not([class]):not([id])
+drive2.ru##div[class$="--equal"] > div[class] > div[id]:not(:empty)
+drive2.ru#?#div:-abp-properties(min-height: 555px)
+drive2.ru,liveinternet.ru,sdamgia.ru##div[data-name="adWrapper"]
+a21873 10
+dzen.ru##a[href^="https://dzen.ru/"][class*="link"][class*="tabContent"] [class] > [class] > [class] > [class]
+dzen.ru#?#[class]:-abp-has(> a[href^="https://dzen.ru/"][class*="link"][class*="tabContent"] [class] > [class] > [class] > [class])
+dzen.ru#?#div:-abp-has(> div:first-child > style + div a span)
+dzen.ru#?#div:-abp-properties(position: relative !important)
+dzen.ru,liveinternet.ru##[data-wrapper]
+e.mail.ru##.layout__column_right-indented
+e.mail.ru##div[class=""] > div[class=""] > div[class=""]
+fonmod.com,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
+growhow.in.ua###custom-background-css {remove:true;}
+kp.kg,kp.kz,kp.md,kp.ru#?#body > #app div:-abp-properties(background-color: rgb(225, 231, 235))
+a21874 3
+liveinternet.ru##div[style*="!important; "]
+liveinternet.ru##style + div > div > div > div > div a
+liveinternet.ru,sdamgia.ru##[data-container]
+d21876 1
+a21876 2
+mail.ru,sportmail.ru##.media-ui-slider-track > div:last-child [data-qa="Loader"]
+otvet.mail.ru#?#div:empty:-abp-properties(content: "Реклама")
+d21878 1
+a21878 16
+pikabu.ru##div[class*="page-story__"] div[style=""]
+pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(/min-height: 20.px|min-height: 29.px|min-height: 30.px|min-height: 300./))
+pikabu.ru#?#div[class*="page-story__"] div:-abp-properties(/min-height: [02345]{2}[0-9]{1}|min-height: calc.|min-height: .+.(cm|in|lh|mm|pt)|height: 250px/)
+playground.ru###dfpPrerollDelay {remove:true;}
+pogoda.onliner.by,tech.onliner.by##div[class*="_fixed-height"]
+rg.ru##div[id][class*="__"]:empty
+sdamgia.ru##[data-name="partial-container"]
+sdamgia.ru##center > div[id][style]
+sdamgia.ru##div[class^="google_ad_left"]
+sdamgia.ru##div[id^="yandex_vario"]
+sdamgia.ru##div[style*="important;"][style*="width:"][style*="height:"] *
+the-geek.ru###wp-custom-css {remove:true;}
+vk.*###feed_rows > .feed_row > .mailru-visibility-check {remove:true;}
+vk.*###feed_rows > .feed_row > div[data-media-type] {remove:true;}
+www.drive2.ru##iframe[style="display: block; border-width: 0px;"]
+www.drive2.ru##iframe[style="opacity: 1;"]
+d21881 2
+d21884 1
+a21888 3
+~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] :not(a):not(li):not(.weather-header__title) > span:not([style]):-abp-properties(overflow-x: hidden)
+~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] article:-abp-properties(overflow-x: hidden)
+~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] div:not([id]):not([class]) > div:-abp-properties(overflow-x: hidden)
+d21892 21
+a28005 1
+vk.com,vk.ru###feed_rows > .feed_row > div[class^="page_block "]
 d28344 1
-a28424 1
-vk.com,vk.ru##.feed_row:matches-prop(innerHTML=/_mailru/)
