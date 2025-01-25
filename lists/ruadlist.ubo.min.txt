@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 25 Jan 2025 08:27:28 +0000
-! Diff-Path: ../patches/2025.1.25.507.patch#ruadlist
+! Last modified: Sat, 25 Jan 2025 13:23:46 +0000
+! Diff-Path: ../patches/2025.1.25.803.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -16239,6 +16239,7 @@ anypictures.ru##.featured
 syl.ru#?#.featured_articles > .header:-abp-contains(/^Новости партнеров|^Также читайте/)
 pravoved.ru##.feed-bnnrs--right
 report.az##.feed-col > div[style^="height:"]
+vk.com,vk.ru##.feed_row ._post_content > .page_block
 online.fliphtml5.com##.fh5---banner---container
 allboxing.ru#?#.field-item > p:-abp-has(noindex [href*="adfox.ru"])
 allboxing.ru#?#.field-item > p:-abp-has(noindex [href*="pari.ru"])
@@ -28342,7 +28343,6 @@ partnerkin.com##+js(set-constant, Object.prototype.autoPopups, undefined)
 frontend.vh.yandex.ru##+js(set-constant, Object.prototype.autoplay, false)
 eagleplatform.com##+js(set-constant, Object.prototype.autoplay, null)
 embed.dugout.com##+js(set-constant, Object.prototype.autostart, noopFunc)
-vk.com,vk.ru##+js(set-constant, Object.prototype.banner, null)
 sports.ru##+js(set-constant, Object.prototype.branding, undefined)
 dni.expert,dni.ru,kp.kg,kp.kz,kp.md,kp.ru,ladys.media,lifehacker.ru,mk.ru,ohotniki.ru,portalvirtualreality.ru,radiokp.ru,sportkp.ru,wday.ru,woman.ru,womanhit.ru##+js(set-constant, Object.prototype.changeVisible, noopFunc)
 ati.su##+js(set-constant, Object.prototype.createBannerItem, null)

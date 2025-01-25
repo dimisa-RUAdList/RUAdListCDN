@@ -1,8 +1,8 @@
-diff name:ruadlist lines:27 checksum:f17b4aee55
+diff name:ruadlist lines:27 checksum:3a6f1b8583
 d4 2
 a5 2
-! Last modified: Sat, 25 Jan 2025 08:27:28 +0000
-! Diff-Path: ../patches/2025.1.25.507.patch#ruadlist
+! Last modified: Sat, 25 Jan 2025 13:23:46 +0000
+! Diff-Path: ../patches/2025.1.25.803.patch#ruadlist
 a2329 1
 ||givemelink.cc^$third-party
 a4624 1
@@ -13,6 +13,8 @@ a13921 1
 vk.com,vk.ru###feed_rows > .feed_row > .mailru-visibility-check
 a13922 1
 vk.com,vk.ru###feed_rows > .feed_row > div[data-media-type]
+a16236 1
+vk.com,vk.ru##.feed_row ._post_content > .page_block
 d16402 1
 a19334 1
 itorrents-igruha.net,itorrents-igruha.org##a[href*="BlumCryptoBot"]
@@ -22,7 +24,5 @@ a21835 1
 a23033 1
 dzen.ru##[data-testid="bottom-ad"]
 d28327 1
-a28339 1
-vk.com,vk.ru##+js(set-constant, Object.prototype.banner, null)
 a28419 1
 vk.com,vk.ru##.feed_row:matches-prop(innerHTML=/_mailru/)

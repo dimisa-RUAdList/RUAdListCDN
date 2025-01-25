@@ -1,8 +1,8 @@
-diff name:ruadlist lines:62 checksum:f17b4aee55
+diff name:ruadlist lines:62 checksum:3a6f1b8583
 d4 2
 a5 2
-! Last modified: Sat, 25 Jan 2025 08:27:28 +0000
-! Diff-Path: ../patches/2025.1.25.507.patch#ruadlist
+! Last modified: Sat, 25 Jan 2025 13:23:46 +0000
+! Diff-Path: ../patches/2025.1.25.803.patch#ruadlist
 a2329 1
 ||givemelink.cc^$third-party
 a4624 1
@@ -20,6 +20,8 @@ a13921 1
 vk.com,vk.ru###feed_rows > .feed_row > div[data-media-type]
 a15883 1
 timeweb.com##.cmn-banner-container
+a16234 1
+vk.com,vk.ru##.feed_row ._post_content > .page_block
 d16400 1
 a17867 1
 the-geek.ru##.side-text
@@ -57,7 +59,5 @@ a27524 2
 the-geek.ru##.site-content:style(margin-top: 0 !important)
 ! ---
 d28319 1
-a28331 1
-vk.com,vk.ru##+js(set-constant, Object.prototype.banner, null)
 a28411 1
 vk.com,vk.ru##.feed_row:matches-prop(innerHTML=/_mailru/)
