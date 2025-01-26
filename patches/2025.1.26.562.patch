@@ -1,13 +1,14 @@
-diff name:ruadlist lines:32 checksum:0e77cacc09
+diff name:ruadlist lines:54 checksum:ce39c05bb8
 d4 2
 a5 2
-! Last modified: Sun, 26 Jan 2025 14:21:28 +0000
-! Diff-Path: ../patches/2025.1.26.861.patch#ruadlist
+! Last modified: Sun, 26 Jan 2025 19:17:31 +0000
+! Diff-Path: ../patches/2025.1.26.1157.patch#ruadlist
 a11440 2
 ||forum.abok.ru/_banners/
 ||forum.abok.ru/style_images/ip.boardpr/rek.
 a12691 1
 ||rosteplo.ru/Image/rek/
+d14884 1
 a15216 2
 www.abok.ru##.b-advert__horizontal
 www.abok.ru##.b-advert__vertical
@@ -15,14 +16,19 @@ a15236 1
 www.abok.ru#?#.b-blocks:-abp-has(> .b-advert__vertical)
 a15273 1
 www.abok.ru##.b-news__preview .bannerWrapper
-a16238 2
-vk.com,vk.ru##.feed_row > :not([id^="post"]) > div[class*="_"]
+a16238 1
 vk.com,vk.ru##.feed_row > :not([id^="post"]) > div[class=""]
 a16239 2
 vk.com,vk.ru##.feed_row > [theme]
 vk.com,vk.ru##.feed_row > div[class*=" "] > div:not([class])
+a17449 1
+vk.com,vk.ru##.postredesign
+a18649 1
+vsaduidoma.com##.wppopups-whole
 a18910 1
 rosteplo.ru##[data-content*="ERID"]
+a20528 1
+znanierussia.ru##div[class^="banner-under-"]
 a21365 1
 rosteplo.ru##img[src*="/Image/rek/"]
 a21608 1
@@ -31,3 +37,19 @@ a21736 2
 forum.abok.ru##td[width="165px"] > .borderwrap:first-child
 forum.abok.ru##td[width="165px"] > .borderwrap:first-child + hr
 d21855 2
+d22352 3
+a22354 3
+fanserial.fun,fanserial.pw,fanserial.tv,fanserialstv.net##.article-aside-promo a[href][target="_blank"]
+fanserial.fun,fanserial.pw,fanserial.tv,fanserialstv.net##.flex-promo-series > .left-col > :not(#players):not(.serial-series-info)
+fanserial.fun,fanserial.pw,fanserial.tv,fanserialstv.net##.flex-promo-series > .right-col a[href][target="_blank"]
+d22360 2
+a22361 2
+/player/fan.xml$domain=fanserial.fun|fanserial.pw|fanserial.tv|fanserialstv.net
+@@||v*.plrjs.org/*.xml?rand=$xmlhttprequest,domain=fanserial.fun|fanserial.pw|fanserial.tv|fanserialstv.net
+a24613 1
+||travelpayouts.com^$third-party,domain=~jetravel.ru
+a24772 1
+||youtravel.me/widgets/admitad/$third-party
+d28489 1
+a28489 1
+fanserial.*,fanserialstv.net,hdrezka.*,rezka.*##+js(set-constant, Object.prototype.preroll, undefined)

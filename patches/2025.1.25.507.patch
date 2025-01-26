@@ -1,8 +1,8 @@
-diff name:ruadlist lines:49 checksum:0e77cacc09
+diff name:ruadlist lines:71 checksum:ce39c05bb8
 d4 2
 a5 2
-! Last modified: Sun, 26 Jan 2025 14:21:28 +0000
-! Diff-Path: ../patches/2025.1.26.861.patch#ruadlist
+! Last modified: Sun, 26 Jan 2025 19:17:31 +0000
+! Diff-Path: ../patches/2025.1.26.1157.patch#ruadlist
 a11440 2
 ||forum.abok.ru/_banners/
 ||forum.abok.ru/style_images/ip.boardpr/rek.
@@ -13,6 +13,7 @@ a13927 1
 vk.com,vk.ru###feed_rows > .feed_row > div[class^="feed_post_indicator"]
 d13929 1
 d13932 1
+d14888 1
 a15220 2
 www.abok.ru##.b-advert__horizontal
 www.abok.ru##.b-advert__vertical
@@ -20,16 +21,21 @@ a15240 1
 www.abok.ru#?#.b-blocks:-abp-has(> .b-advert__vertical)
 a15277 1
 www.abok.ru##.b-news__preview .bannerWrapper
-a16241 6
+a16241 5
 vk.com,vk.ru##.feed_row ._post_content > .page_block
-vk.com,vk.ru##.feed_row > :not([id^="post"]) > div[class*="_"]
 vk.com,vk.ru##.feed_row > :not([id^="post"]) > div[class=""]
 vk.com,vk.ru##.feed_row > [style]
 vk.com,vk.ru##.feed_row > [theme]
 vk.com,vk.ru##.feed_row > div[class*=" "] > div:not([class])
+a17451 1
+vk.com,vk.ru##.postredesign
 d18531 1
+a18652 1
+vsaduidoma.com##.wppopups-whole
 a18913 1
 rosteplo.ru##[data-content*="ERID"]
+a20531 1
+znanierussia.ru##div[class^="banner-under-"]
 a21368 1
 rosteplo.ru##img[src*="/Image/rek/"]
 a21611 1
@@ -40,6 +46,19 @@ forum.abok.ru##td[width="165px"] > .borderwrap:first-child + hr
 d21840 1
 a21840 1
 ||pikabu.ru/ajax/*?rodbv=$xmlhttprequest
+d22353 3
+a22355 3
+fanserial.fun,fanserial.pw,fanserial.tv,fanserialstv.net##.article-aside-promo a[href][target="_blank"]
+fanserial.fun,fanserial.pw,fanserial.tv,fanserialstv.net##.flex-promo-series > .left-col > :not(#players):not(.serial-series-info)
+fanserial.fun,fanserial.pw,fanserial.tv,fanserialstv.net##.flex-promo-series > .right-col a[href][target="_blank"]
+d22361 2
+a22362 2
+/player/fan.xml$domain=fanserial.fun|fanserial.pw|fanserial.tv|fanserialstv.net
+@@||v*.plrjs.org/*.xml?rand=$xmlhttprequest,domain=fanserial.fun|fanserial.pw|fanserial.tv|fanserialstv.net
+a24614 1
+||travelpayouts.com^$third-party,domain=~jetravel.ru
+a24773 1
+||youtravel.me/widgets/admitad/$third-party
 a28006 1
 vk.com,vk.ru###feed_rows > .feed_row > div[class^="page_block "]:remove()
 d28345 1
@@ -48,3 +67,6 @@ vk.com,vk.ru##+js(set-constant, Object.prototype.banner, {})
 d28426 1
 a28426 1
 vk.com,vk.ru##.feed_row:matches-prop(innerHTML="/media_on_/")
+d28489 1
+a28489 1
+fanserial.*,fanserialstv.net,hdrezka.*,rezka.*##+js(set-constant, Object.prototype.preroll, undefined)
