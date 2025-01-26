@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 26 Jan 2025 09:22:32 +0000
-! Diff-Path: ../patches/2025.1.26.562.patch#ruadlist
+! Last modified: Sun, 26 Jan 2025 14:21:28 +0000
+! Diff-Path: ../patches/2025.1.26.861.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -11438,6 +11438,8 @@ igdz1.ru^$script,domain=igdz.ru
 ||forscreen.com/*.php|
 ||fortuna.live/banners/
 ||forum-gta.com^$script,domain=phpbb3.x-tk.ru
+||forum.abok.ru/_banners/
+||forum.abok.ru/style_images/ip.boardpr/rek.
 ||forum.adult-torrent.com^
 ||forum.astrakhan.ru/*.swf$object
 ||forum.atvclub.ru/js/audentio/ad_styler/
@@ -12689,6 +12691,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||roem.ru^$object
 ||rose.ixbt.com/banner/
 ||rosrealt.ru/pics/design2/
+||rosteplo.ru/Image/rek/
 ||rostovmama.ru/bypass/*.php?zone=
 ||rotabanner.kulichki.com^
 ||rpod.ru/i/b/
@@ -15214,6 +15217,8 @@ ixbt.com,ixbt.games,ixbt.market,ixbt.pro##.b-adfox
 tut.by##.b-aditem
 primpress.ru##.b-adv-marker
 siliconrus.com##.b-adv-micro
+www.abok.ru##.b-advert__horizontal
+www.abok.ru##.b-advert__vertical
 news.sportbox.ru##.b-advertise
 pulscen.ru##.b-advertising
 astrakhan-24.ru##.b-adverts
@@ -15234,6 +15239,7 @@ sibdepo.ru##.b-block--banner
 ixbt.com##.b-block__parterslist
 svpressa.ru##.b-blockquote-partner
 liga.net##.b-blocks
+www.abok.ru#?#.b-blocks:-abp-has(> .b-advert__vertical)
 sobaka.ru##.b-body-brand-banner
 sobaka.ru##.b-body-sidebar__banners
 hata.by##.b-card__sale
@@ -15271,6 +15277,7 @@ drom.ru##.b-media-cont_theme_adverts
 friday.ru##.b-mts-logo
 altapress.ru##.b-nav li > a:not([href^="/"]):not([href*="altapress"])
 bigmir.net##.b-net-preview
+www.abok.ru##.b-news__preview .bannerWrapper
 104.ua##.b-obozrevatel-top
 catalog.onliner.by##.b-offers-promo
 f1news.ru##.b-other-news
@@ -16236,7 +16243,11 @@ syl.ru#?#.featured_articles > .header:-abp-contains(/^Новости партн�
 pravoved.ru##.feed-bnnrs--right
 report.az##.feed-col > div[style^="height:"]
 vk.com,vk.ru##.feed_row ._post_content > .page_block
+vk.com,vk.ru##.feed_row > :not([id^="post"]) > div[class*="_"]
+vk.com,vk.ru##.feed_row > :not([id^="post"]) > div[class=""]
 vk.com,vk.ru##.feed_row > [style]
+vk.com,vk.ru##.feed_row > [theme]
+vk.com,vk.ru##.feed_row > div[class*=" "] > div:not([class])
 online.fliphtml5.com##.fh5---banner---container
 allboxing.ru#?#.field-item > p:-abp-has(noindex [href*="adfox.ru"])
 allboxing.ru#?#.field-item > p:-abp-has(noindex [href*="pari.ru"])
@@ -18908,6 +18919,7 @@ click-or-die.ru##[data-cfpa]
 vgorodekirove.ru##[data-click]
 tvtver.ru##[data-comment*="reklama"]
 examenpdd.com,liveinternet.ru##[data-container="outer"]
+rosteplo.ru##[data-content*="ERID"]
 gdz4you.com##[data-controller="SearchInputController"] ~ .well-container
 vgae.ru##[data-count="b/s/"]
 itc.ua##[data-course]
@@ -21363,6 +21375,7 @@ akademekb.ru##img[id^="cradv_"]
 bitmakler.com##img[onclick*="bitmakler.com/go.php"]
 nnportal.org##img[onclick^="countAdClick"]
 consol-games.com,consol-games.net##img[src*="/600_200"]
+rosteplo.ru##img[src*="/Image/rek/"]
 salonav.com##img[src*="/SAV_banners/"]
 newformat.info##img[src*="/_img/ban/"]
 ktv-ray.ru##img[src*="/advert/"]
@@ -21606,6 +21619,7 @@ mnogo-krolikov.ru##span[style*="background: #ffe348"]
 snow-motion.ru##span[style="cursor: pointer;"][onclick]:not([onclick*="snow-motion.ru"])
 yepman.ru##span[style="font-size:14px;"]
 yepman.ru##span[style="font-size:14px;"] + *
+forum.abok.ru##span[style^="color: #4F4F4F; font-size: 6pt; text-align: left;"]
 flashscore.com.ua,flashscore.ru.com,flashscore.ua,flashscorekz.com,livescore.in,soccerstand.com##sport[name="soccer"]
 nuriknur.ucoz.com##strong > span[style="color:red"]
 onliner.by#?#strong:-abp-contains(нож блокировщику)
@@ -21734,6 +21748,8 @@ anchem.ru##td[width="100%"][align="center"] > a[href] > img
 stulchik.net##td[width="120"][valign="top"] a[href][target="_blank"]
 lada-granta.net,lkforum.ru##td[width="150"][align="right"][valign="top"]
 www.ruhim.ru##td[width="150"][height="210"]
+forum.abok.ru##td[width="165px"] > .borderwrap:first-child
+forum.abok.ru##td[width="165px"] > .borderwrap:first-child + hr
 mob39.ru##td[width="190"] > .table[width="190"]
 nwcod.com##td[width="2"] + .slink[align="center"] > :not(#dle-content)
 filebase.ws##td[width="200"][valign="top"] > a[href]
@@ -21852,8 +21868,6 @@ howdyho.net,howdyho.pro#@#div[id^="yandex_rtb"]
 ! селекторы
 growhow.in.ua###custom-background-css {remove:true;}
 playground.ru###dfpPrerollDelay {remove:true;}
-vk.com,vk.ru###feed_rows > .feed_row > .mailru-visibility-check {remove:true;}
-vk.com,vk.ru###feed_rows > .feed_row > div[data-media-type] {remove:true;}
 the-geek.ru###wp-custom-css {remove:true;}
 e.mail.ru##.layout__column_right-indented
 mail.ru,sportmail.ru##.media-ui-slider-track > div:last-child [data-qa="Loader"]

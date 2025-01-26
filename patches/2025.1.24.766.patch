@@ -1,23 +1,45 @@
-diff name:ruadlist lines:26 checksum:2118a43da6
+diff name:ruadlist lines:48 checksum:0e77cacc09
 d4 2
 a5 2
-! Last modified: Sun, 26 Jan 2025 09:22:32 +0000
-! Diff-Path: ../patches/2025.1.26.562.patch#ruadlist
+! Last modified: Sun, 26 Jan 2025 14:21:28 +0000
+! Diff-Path: ../patches/2025.1.26.861.patch#ruadlist
+a11440 2
+||forum.abok.ru/_banners/
+||forum.abok.ru/style_images/ip.boardpr/rek.
+a12691 1
+||rosteplo.ru/Image/rek/
 d13925 1
 a13925 1
 vk.com,vk.ru###feed_rows > .feed_row > div[class^="feed_post_indicator"]
 d13927 1
 d13930 1
-a16239 2
+a15218 2
+www.abok.ru##.b-advert__horizontal
+www.abok.ru##.b-advert__vertical
+a15238 1
+www.abok.ru#?#.b-blocks:-abp-has(> .b-advert__vertical)
+a15275 1
+www.abok.ru##.b-news__preview .bannerWrapper
+a16239 6
 vk.com,vk.ru##.feed_row ._post_content > .page_block
+vk.com,vk.ru##.feed_row > :not([id^="post"]) > div[class*="_"]
+vk.com,vk.ru##.feed_row > :not([id^="post"]) > div[class=""]
 vk.com,vk.ru##.feed_row > [style]
+vk.com,vk.ru##.feed_row > [theme]
+vk.com,vk.ru##.feed_row > div[class*=" "] > div:not([class])
 d18529 1
+a18911 1
+rosteplo.ru##[data-content*="ERID"]
+a21366 1
+rosteplo.ru##img[src*="/Image/rek/"]
+a21609 1
+forum.abok.ru##span[style^="color: #4F4F4F; font-size: 6pt; text-align: left;"]
+a21737 2
+forum.abok.ru##td[width="165px"] > .borderwrap:first-child
+forum.abok.ru##td[width="165px"] > .borderwrap:first-child + hr
 d21838 1
 a21838 1
 ||pikabu.ru/ajax/*?rodbv=$xmlhttprequest
-a21855 2
-vk.com,vk.ru###feed_rows > .feed_row > .mailru-visibility-check {remove:true;}
-vk.com,vk.ru###feed_rows > .feed_row > div[data-media-type] {remove:true;}
 a28004 1
 vk.com,vk.ru###feed_rows > .feed_row > div[class^="page_block "]:remove()
 d28331 1
