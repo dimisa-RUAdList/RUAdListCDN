@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 27 Jan 2025 05:25:15 +0000
-! Diff-Path: ../patches/2025.1.27.325.patch#ruadlist
+! Last modified: Mon, 27 Jan 2025 10:28:28 +0000
+! Diff-Path: ../patches/2025.1.27.628.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -20324,6 +20324,7 @@ allhen.online,doramatv.live,doramatv.one,doramatv.ru,findanime.ru,grouple.co,lib
 kinoafisha.info##div[class*="-fix "][class$="as-desktop"]
 sibnet.ru##div[class*="2023"][class*="root"]
 klerk.ru##div[class*="250px"][class*="print:hidden"]
+vk.com,vk.ru##div[class*="2K24"]
 mmo13.ru##div[class*="300x600"]
 gazetametro.ru##div[class*="AdBox"]
 rg.ru##div[class*="Adfox"]
@@ -20660,7 +20661,7 @@ chytomo.com,dev.ua,devby.io,moika78.ru,padaread.com##div[class^="partners"]
 syzran-small.ru,xn----7sbabwosghnf8al4lkj7b.xn--p1ai##div[class^="partnews"]
 1plus1.video##div[class^="playlist-player-branding-"]
 gorod.cn.ua##div[class^="pos"][class*="_"]
-vk.com,vk.ru##div[class^="post"][class$="design"]
+vk.com,vk.ru##div[class^="post"][class$="style"]
 eanews.ru##div[class^="post-"] > section[class^="styled__Wrapper-sc-"]
 tsn24.ru##div[class^="post-banner"]
 vk.com,vk.ru##div[class^="post202"]
@@ -21852,7 +21853,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||imgfrost.net^$third-party
 ||liveinternet.ru/utf/lici.js?
 ||news.mail.ru/-/*.js?
-||pikabu.ru/ajax/*?rodbv=$xmlhttprequest
+||pikabu.ru/ajax/*?bvmyx=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
