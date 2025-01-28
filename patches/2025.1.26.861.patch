@@ -1,8 +1,8 @@
-diff name:ruadlist lines:62 checksum:5a2406e363
+diff name:ruadlist lines:72 checksum:a533d3a8e3
 d4 2
 a5 2
-! Last modified: Tue, 28 Jan 2025 06:32:14 +0000
-! Diff-Path: ../patches/2025.1.28.392.patch#ruadlist
+! Last modified: Tue, 28 Jan 2025 11:19:31 +0000
+! Diff-Path: ../patches/2025.1.28.679.patch#ruadlist
 d12764 1
 a12764 1
 ||rutube.ru^$domain=2ch.hk|2ch.life|ditey.com|nashamama.com
@@ -12,12 +12,17 @@ a15004 1
 24.cv.ua,sho.org.ua,uman24.org.ua##.adsgoogle
 a15516 1
 vk.com,vk.ru##.base_datapst
+a15517 1
+vk.com,vk.ru##.basecontentdata
 a15955 1
 vk.com,vk.ru##.common_post
 a16110 1
 vk.com,vk.ru##.data_post
 d16246 1
-a16945 1
+a16250 1
+vk.com,vk.ru##.feed_row div[class^="original"][class*="info"]
+a16945 2
+vk.com,vk.ru##.maincontentdata
 vk.com,vk.ru##.maindatapost
 a17789 1
 uman24.org.ua##.sample-posts
@@ -36,6 +41,11 @@ a20662 1
 vk.com,vk.ru##div[class^="post"][class$="style"]
 a20664 1
 vk.com,vk.ru##div[class^="post202"]
+d21832 1
+a21832 1
+! ловушка для обфускации: главная, статьи и новости дзена
+a21835 1
+||static.dzeninfra.ru/s3/zen-lib/*/dzen-layout/*_$script
 d21853 1
 a21853 1
 ||pikabu.ru/ajax/*?ohdlt=$xmlhttprequest

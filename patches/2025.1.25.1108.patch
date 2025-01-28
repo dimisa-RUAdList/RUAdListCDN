@@ -1,8 +1,8 @@
-diff name:ruadlist lines:148 checksum:5a2406e363
+diff name:ruadlist lines:157 checksum:a533d3a8e3
 d4 2
 a5 2
-! Last modified: Tue, 28 Jan 2025 06:32:14 +0000
-! Diff-Path: ../patches/2025.1.28.392.patch#ruadlist
+! Last modified: Tue, 28 Jan 2025 11:19:31 +0000
+! Diff-Path: ../patches/2025.1.28.679.patch#ruadlist
 a11440 2
 ||forum.abok.ru/_banners/
 ||forum.abok.ru/style_images/ip.boardpr/rek.
@@ -26,16 +26,20 @@ a15272 1
 www.abok.ru##.b-news__preview .bannerWrapper
 a15508 1
 vk.com,vk.ru##.base_datapst
+a15509 1
+vk.com,vk.ru##.basecontentdata
 a15947 1
 vk.com,vk.ru##.common_post
 a16102 1
 vk.com,vk.ru##.data_post
-a16237 4
+a16237 5
 vk.com,vk.ru##.feed_row > :not([id^="post"]) > div[class=""]
 vk.com,vk.ru##.feed_row > [style]
 vk.com,vk.ru##.feed_row > [theme]
 vk.com,vk.ru##.feed_row > div[class*=" "] > div:not([class])
-a16932 1
+vk.com,vk.ru##.feed_row div[class^="original"][class*="info"]
+a16932 2
+vk.com,vk.ru##.maincontentdata
 vk.com,vk.ru##.maindatapost
 a17776 1
 uman24.org.ua##.sample-posts
@@ -63,6 +67,11 @@ forum.abok.ru##span[style^="color: #4F4F4F; font-size: 6pt; text-align: left;"]
 a21734 2
 forum.abok.ru##td[width="165px"] > .borderwrap:first-child
 forum.abok.ru##td[width="165px"] > .borderwrap:first-child + hr
+d21814 1
+a21814 1
+! ловушка для обфускации: главная, статьи и новости дзена
+a21817 1
+||static.dzeninfra.ru/s3/zen-lib/*/dzen-layout/*_$script
 d21835 1
 a21835 1
 ||pikabu.ru/ajax/*?ohdlt=$xmlhttprequest

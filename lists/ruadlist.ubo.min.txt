@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 28 Jan 2025 06:32:14 +0000
-! Diff-Path: ../patches/2025.1.28.392.patch#ruadlist
+! Last modified: Tue, 28 Jan 2025 11:19:31 +0000
+! Diff-Path: ../patches/2025.1.28.679.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -15515,6 +15515,7 @@ pulscen.ru##.barmen-item
 cvnews.cv.ua,ifnews.org.ua,lvnews.org.ua,rvnews.rv.ua,tenews.org.ua,uanews.org.ua##.base-post-divider ~ a[href][target="_blank"] > img
 vk.com,vk.ru##.base_datapst
 animemobi.ru##.basecont
+vk.com,vk.ru##.basecontentdata
 zh24.com##.baseer > .heading
 animevost.org,animevost.top,vost.pw##.batre
 aces.gg##.baz
@@ -16249,6 +16250,7 @@ vk.com,vk.ru##.feed_row > :not([id^="post"]) > div[class=""]
 vk.com,vk.ru##.feed_row > [style]
 vk.com,vk.ru##.feed_row > [theme]
 vk.com,vk.ru##.feed_row > div[class*=" "] > div:not([class])
+vk.com,vk.ru##.feed_row div[class^="original"][class*="info"]
 online.fliphtml5.com##.fh5---banner---container
 allboxing.ru#?#.field-item > p:-abp-has(noindex [href*="adfox.ru"])
 allboxing.ru#?#.field-item > p:-abp-has(noindex [href*="pari.ru"])
@@ -16944,6 +16946,7 @@ the-cinema.online##.maincont > center
 torrents-soft.net##.maincont > div:nth-last-of-type(2) > a > img
 bookskeeper.ru##.maincont > div[class="clr"]
 bazatabletok.ru##.maincontentcell td[valign="top"]
+vk.com,vk.ru##.maincontentdata
 vk.com,vk.ru##.maindatapost
 penzavzglyad.ru##.mainmenu-ads
 stiletto.blog##.mainos
@@ -21838,10 +21841,11 @@ ictv.ua,vikna.tv##div[id^="div-gpt-ad-"]
 ! *** ./advblock/specific_special.txt ***
 !#if ext_abp
 ! запросы
-! ловушка для обфускации, статьи и новости дзена
+! ловушка для обфускации: главная, статьи и новости дзена
 ||dzen.ru/a/$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/articles$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/news$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
+||static.dzeninfra.ru/s3/zen-lib/*/dzen-layout/*_$script
 ||static.dzeninfra.ru/s3/zen-lib/*/news-site/*_$script
 $csp=script-src-attr 'none',domain=eurointegration.com.ua|pravda.com.ua
 /^https?://24smi\.org/*[/]*[/][^\s]{8,}/$xmlhttprequest,domain=24smi.org
