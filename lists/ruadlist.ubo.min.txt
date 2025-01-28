@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 28 Jan 2025 16:29:52 +0000
-! Diff-Path: ../patches/2025.1.28.989.patch#ruadlist
+! Last modified: Tue, 28 Jan 2025 21:21:57 +0000
+! Diff-Path: ../patches/2025.1.28.1281.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -13926,6 +13926,7 @@ inpot.ru###ezobann
 bitcryptonews.ru###faq-index
 turmush.kg###fb_bottom_like
 myparcels.ru###featured-wants
+vk.com,vk.ru###feed_rows > .feed_row[style=""]
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] > ._post_content .PostHeader > .PostHeaderInfo > [class^="PostHeaderSubtitle"] > [class]:-abp-contains(/Community ad|Реклама|Рэклама|жарнама/))
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] > ._post_content .PostHeader > .PostHeaderInfo [onclick*="ads_params:"])
 vk.com,vk.ru#?##feed_rows > div[class^="feed_row"]:-abp-has(> [id^="post-"] > ._post_content .PostHeader > .PostHeaderInfo [onmouseover*="AdsLight"])
@@ -21871,6 +21872,7 @@ howdyho.net,howdyho.pro#@#div[id^="yandex_rtb"]
 growhow.in.ua###custom-background-css {remove:true;}
 playground.ru###dfpPrerollDelay {remove:true;}
 vk.com,vk.ru###feed_rows > .feed_row > div:not([id])
+vk.com,vk.ru###feed_rows > .feed_row > div[id]:not([data-post-id])
 vk.com,vk.ru#?##feed_rows > .feed_row:-abp-has(.PostHeaderSubtitle:-abp-contains(/[Реклама]/))
 the-geek.ru###wp-custom-css {remove:true;}
 e.mail.ru##.layout__column_right-indented
@@ -25990,7 +25992,7 @@ drahelas.ru#@#.forumAd
 draug.ru,print-post.com#@##reklama
 green-way.com.ua#@#.adWrapper
 iphones.ru#@##sponsorText
-izi-invest.ru,kakoysegodnyaprazdnik.ru,xn--80aaiebcrjcibi8adgdtsm9z.xn--p1ai#@#div[id^="yandex_rtb"]
+izi-invest.ru,kakoysegodnyaprazdnik.ru,leingpt.ru,xn--80aaiebcrjcibi8adgdtsm9z.xn--p1ai#@#div[id^="yandex_rtb"]
 kakoysegodnyaprazdnik.ru,mmo13.ru,no-steamserv.ru,vesti.ru#@#.adv
 kisameev.ru,myseria.pro,openssource.biz,zazloo.ru#@#.reklama
 liga.net#@##bottomAd

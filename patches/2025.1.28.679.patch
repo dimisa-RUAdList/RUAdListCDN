@@ -1,11 +1,13 @@
-diff name:ruadlist lines:43 checksum:a00027639a
+diff name:ruadlist lines:46 checksum:78bcb92f54
 d4 2
 a5 2
-! Last modified: Tue, 28 Jan 2025 16:29:52 +0000
-! Diff-Path: ../patches/2025.1.28.989.patch#ruadlist
+! Last modified: Tue, 28 Jan 2025 21:21:57 +0000
+! Diff-Path: ../patches/2025.1.28.1281.patch#ruadlist
 a7903 1
 /get_ads.php?player=$~third-party,xmlhttprequest
 d13928 1
+a13928 1
+vk.com,vk.ru###feed_rows > .feed_row[style=""]
 d15516 1
 d15518 1
 d15957 1
@@ -28,15 +30,16 @@ d20676 1
 d21054 1
 a21509 1
 www1.ru##nav > .hidden > .list-reset > a[target="_blank"]
-a21883 2
+a21883 3
 vk.com,vk.ru###feed_rows > .feed_row > div:not([id])
+vk.com,vk.ru###feed_rows > .feed_row > div[id]:not([data-post-id])
 vk.com,vk.ru#?##feed_rows > .feed_row:-abp-has(.PostHeaderSubtitle:-abp-contains(/[Реклама]/))
 d25999 1
 a25999 1
 draug.ru,print-post.com#@##reklama
 d26002 1
 a26002 1
-izi-invest.ru,kakoysegodnyaprazdnik.ru,xn--80aaiebcrjcibi8adgdtsm9z.xn--p1ai#@#div[id^="yandex_rtb"]
+izi-invest.ru,kakoysegodnyaprazdnik.ru,leingpt.ru,xn--80aaiebcrjcibi8adgdtsm9z.xn--p1ai#@#div[id^="yandex_rtb"]
 d26004 1
 a27058 2
 leingpt.ru##.m-container > #yandex_rtb_R:style(display: block !important)

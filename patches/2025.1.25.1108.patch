@@ -1,8 +1,8 @@
-diff name:ruadlist lines:161 checksum:a00027639a
+diff name:ruadlist lines:164 checksum:78bcb92f54
 d4 2
 a5 2
-! Last modified: Tue, 28 Jan 2025 16:29:52 +0000
-! Diff-Path: ../patches/2025.1.28.989.patch#ruadlist
+! Last modified: Tue, 28 Jan 2025 21:21:57 +0000
+! Diff-Path: ../patches/2025.1.28.1281.patch#ruadlist
 a7903 1
 /get_ads.php?player=$~third-party,xmlhttprequest
 a11440 2
@@ -13,6 +13,8 @@ a12691 1
 d12761 1
 a12761 1
 ||rutube.ru^$domain=2ch.hk|2ch.life|ditey.com|nashamama.com
+a13924 1
+vk.com,vk.ru###feed_rows > .feed_row[style=""]
 d14883 1
 d15000 1
 a15000 1
@@ -71,10 +73,11 @@ d21835 1
 a21835 1
 ||pikabu.ru/ajax/*?ohdlt=$xmlhttprequest
 d21851 2
-a21852 7
+a21852 8
 growhow.in.ua###custom-background-css {remove:true;}
 playground.ru###dfpPrerollDelay {remove:true;}
 vk.com,vk.ru###feed_rows > .feed_row > div:not([id])
+vk.com,vk.ru###feed_rows > .feed_row > div[id]:not([data-post-id])
 vk.com,vk.ru#?##feed_rows > .feed_row:-abp-has(.PostHeaderSubtitle:-abp-contains(/[Реклама]/))
 the-geek.ru###wp-custom-css {remove:true;}
 e.mail.ru##.layout__column_right-indented
@@ -147,7 +150,7 @@ a25968 1
 draug.ru,print-post.com#@##reklama
 d25971 1
 a25971 1
-izi-invest.ru,kakoysegodnyaprazdnik.ru,xn--80aaiebcrjcibi8adgdtsm9z.xn--p1ai#@#div[id^="yandex_rtb"]
+izi-invest.ru,kakoysegodnyaprazdnik.ru,leingpt.ru,xn--80aaiebcrjcibi8adgdtsm9z.xn--p1ai#@#div[id^="yandex_rtb"]
 d25973 1
 a27027 2
 leingpt.ru##.m-container > #yandex_rtb_R:style(display: block !important)
