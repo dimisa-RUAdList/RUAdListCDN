@@ -1,25 +1,37 @@
-diff name:ruadlist lines:35 checksum:a533d3a8e3
+diff name:ruadlist lines:60 checksum:a00027639a
 d4 2
 a5 2
-! Last modified: Tue, 28 Jan 2025 11:19:31 +0000
-! Diff-Path: ../patches/2025.1.28.679.patch#ruadlist
+! Last modified: Tue, 28 Jan 2025 16:29:52 +0000
+! Diff-Path: ../patches/2025.1.28.989.patch#ruadlist
+a7903 1
+/get_ads.php?player=$~third-party,xmlhttprequest
+d13928 1
 d15003 1
 a15003 1
 24.cv.ua,sho.org.ua,uman24.org.ua##.adsgoogle
-a15515 1
-vk.com,vk.ru##.base_datapst
-a15516 1
-vk.com,vk.ru##.basecontentdata
-a16250 1
-vk.com,vk.ru##.feed_row div[class^="original"][class*="info"]
-a16945 2
-vk.com,vk.ru##.maincontentdata
-vk.com,vk.ru##.maindatapost
+d15955 1
+d16111 1
+d16466 1
+a16466 1
+ixbt.com,ixbt.pro,www1.ru##.hcont
 a17789 1
 uman24.org.ua##.sample-posts
 d18626 1
 a18626 1
 1000iodinsovet.ru,2info2.ru,4esnok.by,agrimpasa.com,alau.kz,alkogolu.net,atlasprirodirossii.ru,belattra.ru,bizua.org,boxvideotv.ru,brunet-ka.ru,calend.online,cherepah.ru,chirik.info,chudesniesovetiki.site,clubwindows.ru,domashnie-zagotovki.ru,domashniecvety.ru,erokomiksi.com,excelprost.ru,free-news.su,galas.te.ua,geomedia.top,giantessa.ru,golbis.com,golovnie-boli.com,hitagro.ru,hronika.info,htmlhook.ru,hyperione.com,inforpost.com,kopomko.com,koroleffsov.ru,krashevseh.ru,kulemet.com,legkopolezno.ru,lightstories.site,macosinfo.com,makeupkey.ru,mamabook.com.ua,meganovosti.net,mezha.media,miformat.info,nagadala.com,nash-sekret.ru,newsrank.ru,newssky.com.ua,northern-newspaper.ru,ofigeno.ru,ogribax.ru,ovetryanke.ru,paratechnik.ru,podarok.video,podruzke.ru,poleznaya.dp.ua,portable-rus.ru,portalvirtualreality.ru,prostolinux.ru,putin-today.ru,pzik.ru,rainbowsky.ru,roza2012.net.ua,ru-mir.net,ruslo.info,sci-fi-news.ru,sich.zp.ua,snelwilcox.com,srnsk.ru,strana-it.ru,svoitabachok.ru,trmzk.ru,udobreniya.net,uman24.org.ua,ustanovkaos.ru,ventilationpro.ru,walaw.ru,yconsult.ru,zdorovia.com.ua##.widget_text
+d18711 1
+a18711 1
+ixbt.com,ixbt.pro,www1.ru##.yandex_recommend
+d19221 1
+a19221 1
+360tv.ru,7days.ru,avtonovostidnya.ru,avtovzglyad.ru,belarus-news.by,bst.bratsk.ru,coop-land.ru,energyfm.ru,finuslugi.ru,fonmod.com,fontanka.ru,gdeichto.ru,ixbt.com,ixbt.shop,kommersant.ru,ladys.media,life.ru,media.az,metronews.ru,mk.ru,moe-belgorod.ru,moe-kursk.ru,moe-lipetsk.ru,moe-online.ru,moe-tambov.ru,mydecor.ru,mywebpc.ru,naked-science.ru,new-magazine.ru,news.ru,nsn.fm,ohotniki.ru,oper.ru,overclockers.ru,penzainform.ru,peterburg2.ru,pnz.ru,regnum.news,regnum.ru,rifey.ru,rusnext.ru,russian.rt.com,rutube.ru,sm.news,sovsport.ru,sport-express.net,sport-express.ru,sportsdaily.ru,stiletto.blog,super.ru,syzran-small.ru,teleprogramma.pro,thegirl.ru,timeweb.com,tsargrad.tv,tulapressa.ru,tvzvezda.ru,u-f.ru,ura.news,utyug.info,vz.ru,www1.ru,xn----7sbabwosghnf8al4lkj7b.xn--p1ai,ytronews.ru,zaks.ru,zaycev.net,zr.ru##a[href*="//dzen.ru/"]
+d20291 1
+d20330 1
+d20667 1
+d20670 1
+d21048 1
+a21503 1
+www1.ru##nav > .hidden > .list-reset > a[target="_blank"]
 d21838 1
 a21838 1
 ! ловушка для обфускации: главная, статьи и новости дзена
@@ -28,9 +40,22 @@ a21841 1
 d21859 1
 a21859 1
 ||pikabu.ru/ajax/*?ohdlt=$xmlhttprequest
+a21876 2
+vk.com,vk.ru###feed_rows > .feed_row > div:not([id])
+vk.com,vk.ru#?##feed_rows > .feed_row:-abp-has(.PostHeaderSubtitle:-abp-contains(/[Реклама]/))
 a21884 1
 @@||fearmp4.ru^$generichide
-d25992 1
+d25991 2
+a25992 1
+draug.ru,print-post.com#@##reklama
+d25995 1
+a25995 1
+izi-invest.ru,kakoysegodnyaprazdnik.ru,xn--80aaiebcrjcibi8adgdtsm9z.xn--p1ai#@#div[id^="yandex_rtb"]
+d25997 1
+a27051 2
+leingpt.ru##.m-container > #yandex_rtb_R:style(display: block !important)
+! ---
+d28028 1
 d28448 1
 a28448 1
 vk.com,vk.ru##.feed_row:matches-prop(innerHTML="/mradx\.net|media_on_/")
