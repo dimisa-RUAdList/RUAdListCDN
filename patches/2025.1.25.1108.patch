@@ -1,8 +1,8 @@
-diff name:ruadlist lines:166 checksum:7194094388
+diff name:ruadlist lines:168 checksum:7b2e614a30
 d4 2
 a5 2
-! Last modified: Wed, 29 Jan 2025 12:44:33 +0000
-! Diff-Path: ../patches/2025.1.29.764.patch#ruadlist
+! Last modified: Wed, 29 Jan 2025 17:23:26 +0000
+! Diff-Path: ../patches/2025.1.29.1043.patch#ruadlist
 a7903 1
 /get_ads.php?player=$~third-party,xmlhttprequest
 a11440 2
@@ -85,12 +85,14 @@ vk.com,vk.ru##.feed_row > [data-post-id][id^="post-"] > :not([class="_post_conte
 e.mail.ru##.layout__column_right-indented
 mail.ru,sportmail.ru##.media-ui-slider-track > div:last-child [data-qa="Loader"]
 d21855 1
-a21855 6
+a21855 8
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(/min-height: 20.px|min-height: 29.px|min-height: 30.px|min-height: 300./))
 fonmod.com,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 android-mafia.com,game4you.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##:not(this-site-promotes-malware)
 @@||fearmp4.ru^$generichide
 @@||ozon.ru/highlight/kursk-$elemhide
+vk.com,vk.ru#?#[class="_post_content"]:-abp-has(.PostFoxderS)
+vk.com,vk.ru#?#[class="_post_content"]:-abp-has(.PostHeaderS)
 dzen.ru#?#[class]:-abp-has(> a[href^="https://dzen.ru/"][class*="link"][class*="tabContent"] [class] > [class] > [class] > [class])
 a21856 2
 liveinternet.ru,sdamgia.ru##[data-container]

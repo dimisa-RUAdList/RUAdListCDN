@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 29 Jan 2025 12:44:33 +0000
-! Diff-Path: ../patches/2025.1.29.764.patch#ruadlist
+! Last modified: Wed, 29 Jan 2025 17:23:26 +0000
+! Diff-Path: ../patches/2025.1.29.1043.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21886,6 +21886,8 @@ fonmod.com,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 android-mafia.com,game4you.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##:not(this-site-promotes-malware)
 @@||fearmp4.ru^$generichide
 @@||ozon.ru/highlight/kursk-$elemhide
+vk.com,vk.ru#?#[class="_post_content"]:-abp-has(.PostFoxderS)
+vk.com,vk.ru#?#[class="_post_content"]:-abp-has(.PostHeaderS)
 dzen.ru#?#[class]:-abp-has(> a[href^="https://dzen.ru/"][class*="link"][class*="tabContent"] [class] > [class] > [class] > [class])
 drive2.ru##[data-container="outer"]
 liveinternet.ru,sdamgia.ru##[data-container]
