@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 29 Jan 2025 07:21:50 +0000
-! Diff-Path: ../patches/2025.1.29.441.patch#ruadlist
+! Last modified: Wed, 29 Jan 2025 12:44:33 +0000
+! Diff-Path: ../patches/2025.1.29.764.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21853,7 +21853,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||imgfrost.net^$third-party
 ||liveinternet.ru/utf/lici.js?
 ||news.mail.ru/-/*.js?
-||pikabu.ru/ajax/*?ohdlt=$xmlhttprequest
+||pikabu.ru/ajax/*?htypn=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -21876,6 +21876,7 @@ vk.com,vk.ru#?##feed_rows > .feed_row:-abp-has(.PostHeaderSubtitle:-abp-contains
 vk.com,vk.ru###feed_rows > div[class="feed_row "] > div[id]:not([data-post-id])
 the-geek.ru###wp-custom-css {remove:true;}
 vk.com,vk.ru##.feed_row > [data-post-id]:not([id^="post-"])
+vk.com,vk.ru##.feed_row > [data-post-id][id^="post-"] > :not([class="_post_content"])
 e.mail.ru##.layout__column_right-indented
 mail.ru,sportmail.ru##.media-ui-slider-track > div:last-child [data-qa="Loader"]
 anidub.vip,anidubonline.com##.plyr__menu

@@ -1,10 +1,14 @@
-diff name:ruadlist lines:9 checksum:1e4c5e473f
+diff name:ruadlist lines:13 checksum:7194094388
 d4 2
 a5 2
-! Last modified: Wed, 29 Jan 2025 07:21:50 +0000
-! Diff-Path: ../patches/2025.1.29.441.patch#ruadlist
+! Last modified: Wed, 29 Jan 2025 12:44:33 +0000
+! Diff-Path: ../patches/2025.1.29.764.patch#ruadlist
+d21856 1
+a21856 1
+||pikabu.ru/ajax/*?htypn=$xmlhttprequest
 d21875 1
 a21876 1
 vk.com,vk.ru###feed_rows > div[class="feed_row "] > div[id]:not([data-post-id])
-a21877 1
+a21877 2
 vk.com,vk.ru##.feed_row > [data-post-id]:not([id^="post-"])
+vk.com,vk.ru##.feed_row > [data-post-id][id^="post-"] > :not([class="_post_content"])

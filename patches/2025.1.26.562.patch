@@ -1,8 +1,8 @@
-diff name:ruadlist lines:113 checksum:1e4c5e473f
+diff name:ruadlist lines:114 checksum:7194094388
 d4 2
 a5 2
-! Last modified: Wed, 29 Jan 2025 07:21:50 +0000
-! Diff-Path: ../patches/2025.1.29.441.patch#ruadlist
+! Last modified: Wed, 29 Jan 2025 12:44:33 +0000
+! Diff-Path: ../patches/2025.1.29.764.patch#ruadlist
 a7903 1
 /get_ads.php?player=$~third-party,xmlhttprequest
 a11440 2
@@ -72,14 +72,15 @@ a21819 1
 ||static.dzeninfra.ru/s3/zen-lib/*/dzen-layout/*_$script
 d21837 1
 a21837 1
-||pikabu.ru/ajax/*?ohdlt=$xmlhttprequest
+||pikabu.ru/ajax/*?htypn=$xmlhttprequest
 d21855 2
 a21856 3
 vk.com,vk.ru###feed_rows > .feed_row > div:not([id])
 vk.com,vk.ru#?##feed_rows > .feed_row:-abp-has(.PostHeaderSubtitle:-abp-contains(/[Реклама]/))
 vk.com,vk.ru###feed_rows > div[class="feed_row "] > div[id]:not([data-post-id])
-a21857 1
+a21857 2
 vk.com,vk.ru##.feed_row > [data-post-id]:not([id^="post-"])
+vk.com,vk.ru##.feed_row > [data-post-id][id^="post-"] > :not([class="_post_content"])
 a21864 1
 @@||fearmp4.ru^$generichide
 d22352 3
