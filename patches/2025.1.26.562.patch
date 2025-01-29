@@ -1,8 +1,8 @@
-diff name:ruadlist lines:111 checksum:78bcb92f54
+diff name:ruadlist lines:113 checksum:8042e8ac6e
 d4 2
 a5 2
-! Last modified: Tue, 28 Jan 2025 21:21:57 +0000
-! Diff-Path: ../patches/2025.1.28.1281.patch#ruadlist
+! Last modified: Wed, 29 Jan 2025 02:49:07 +0000
+! Diff-Path: ../patches/2025.1.29.169.patch#ruadlist
 a7903 1
 /get_ads.php?player=$~third-party,xmlhttprequest
 a11440 2
@@ -76,8 +76,10 @@ a21837 1
 d21855 2
 a21856 3
 vk.com,vk.ru###feed_rows > .feed_row > div:not([id])
-vk.com,vk.ru###feed_rows > .feed_row > div[id]:not([data-post-id])
 vk.com,vk.ru#?##feed_rows > .feed_row:-abp-has(.PostHeaderSubtitle:-abp-contains(/[Реклама]/))
+vk.com,vk.ru###feed_rows > div[class="feed_row "] > div[id]:not([data-post-id])
+a21857 1
+vk.com,vk.ru##.feed_row > [data-post-id]:not([id^="post-"])
 a21864 1
 @@||fearmp4.ru^$generichide
 d22352 3
