@@ -1,8 +1,8 @@
-diff name:ruadlist lines:76 checksum:4d75e39c39
+diff name:ruadlist lines:74 checksum:648f563d69
 d4 2
 a5 2
-! Last modified: Thu, 30 Jan 2025 18:31:38 +0000
-! Diff-Path: ../patches/2025.1.30.1111.patch#ruadlist
+! Last modified: Thu, 30 Jan 2025 23:23:28 +0000
+! Diff-Path: ../patches/2025.1.30.1403.patch#ruadlist
 a7903 1
 /get_ads.php?player=$~third-party,xmlhttprequest
 d12764 1
@@ -36,6 +36,8 @@ a20350 1
 sovsport.ru##div[class*="_bonusLogo"]
 a20570 1
 sovsport.ru##div[class^="bonus-rating"]
+a20599 1
+doska.ykt.ru##div[class^="d-expreriment_adv"]
 d20645 1
 d20673 1
 d20676 1
@@ -53,12 +55,8 @@ vk.com,vk.ru###feed_rows > div[class="feed_row "] > div[id]:not([data-post-id])
 a21884 2
 vk.com,vk.ru##.feed_row > [data-post-id]:not([id^="post-"])
 vk.com,vk.ru##.feed_row > [data-post-id][id^="post-"] > :not([class="_post_content"])
-a21893 5
-vk.com,vk.ru#?#[class="_post_content"]:-abp-has(.FallBackTitle)
-vk.com,vk.ru#?#[class="_post_content"]:-abp-has(.FobosMoon)
-vk.com,vk.ru#?#[class="_post_content"]:-abp-has(.PostFoxderS)
-vk.com,vk.ru#?#[class="_post_content"]:-abp-has(.PostHeaderS)
-vk.com,vk.ru#?#[class="_post_content"]:-abp-has(.PostLisS)
+a21893 1
+vk.com,vk.ru#?#[class="_post_content"]:-abp-has(.HTitleData)
 d25999 1
 a25999 1
 draug.ru,print-post.com#@##reklama
