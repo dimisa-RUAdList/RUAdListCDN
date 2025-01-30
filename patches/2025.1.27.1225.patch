@@ -1,8 +1,8 @@
-diff name:ruadlist lines:85 checksum:ccc88d5e9d
+diff name:ruadlist lines:90 checksum:5979f7aec4
 d4 2
 a5 2
-! Last modified: Thu, 30 Jan 2025 08:28:40 +0000
-! Diff-Path: ../patches/2025.1.30.508.patch#ruadlist
+! Last modified: Thu, 30 Jan 2025 13:27:21 +0000
+! Diff-Path: ../patches/2025.1.30.807.patch#ruadlist
 a7903 1
 /get_ads.php?player=$~third-party,xmlhttprequest
 d12764 1
@@ -16,6 +16,8 @@ a15003 1
 24.cv.ua,sho.org.ua,uman24.org.ua##.adsgoogle
 d15516 1
 d15956 1
+a15959 1
+doska.ykt.ru##.compilations section.compilation-section--desktop:nth-child(-n+2)
 d16112 1
 d16467 1
 a16467 1
@@ -28,6 +30,8 @@ a18627 1
 d18712 1
 a18712 1
 ixbt.com,ixbt.pro,www1.ru##.yandex_recommend
+a18908 1
+doska.ykt.ru##[data-adurl]
 d19222 1
 a19222 1
 360tv.ru,7days.ru,avtonovostidnya.ru,avtovzglyad.ru,belarus-news.by,bst.bratsk.ru,coop-land.ru,energyfm.ru,finuslugi.ru,fonmod.com,fontanka.ru,gdeichto.ru,ixbt.com,ixbt.shop,kommersant.ru,ladys.media,life.ru,media.az,metronews.ru,mk.ru,moe-belgorod.ru,moe-kursk.ru,moe-lipetsk.ru,moe-online.ru,moe-tambov.ru,mydecor.ru,mywebpc.ru,naked-science.ru,new-magazine.ru,news.ru,nsn.fm,ohotniki.ru,oper.ru,overclockers.ru,penzainform.ru,peterburg2.ru,pnz.ru,regnum.news,regnum.ru,rifey.ru,rusnext.ru,russian.rt.com,rutube.ru,sm.news,sovsport.ru,sport-express.net,sport-express.ru,sportsdaily.ru,stiletto.blog,super.ru,syzran-small.ru,teleprogramma.pro,thegirl.ru,timeweb.com,tsargrad.tv,tulapressa.ru,tvzvezda.ru,u-f.ru,ura.news,utyug.info,vz.ru,www1.ru,xn----7sbabwosghnf8al4lkj7b.xn--p1ai,ytronews.ru,zaks.ru,zaycev.net,zr.ru##a[href*="//dzen.ru/"]
@@ -51,7 +55,7 @@ a21842 1
 ||static.dzeninfra.ru/s3/zen-lib/*/dzen-layout/*_$script
 d21860 1
 a21860 1
-||pikabu.ru/ajax/*?htypn=$xmlhttprequest
+||pikabu.ru/ajax/*?akejb=$xmlhttprequest
 a21877 3
 vk.com,vk.ru###feed_rows > .feed_row > div:not([id])
 vk.com,vk.ru#?##feed_rows > .feed_row:-abp-has(.PostHeaderSubtitle:-abp-contains(/[Реклама]/))
@@ -61,8 +65,9 @@ vk.com,vk.ru##.feed_row > [data-post-id]:not([id^="post-"])
 vk.com,vk.ru##.feed_row > [data-post-id][id^="post-"] > :not([class="_post_content"])
 a21885 1
 @@||fearmp4.ru^$generichide
-a21886 4
+a21886 5
 vk.com,vk.ru#?#[class="_post_content"]:-abp-has(.FallBackTitle)
+vk.com,vk.ru#?#[class="_post_content"]:-abp-has(.FobosMoon)
 vk.com,vk.ru#?#[class="_post_content"]:-abp-has(.PostFoxderS)
 vk.com,vk.ru#?#[class="_post_content"]:-abp-has(.PostHeaderS)
 vk.com,vk.ru#?#[class="_post_content"]:-abp-has(.PostLisS)

@@ -1,8 +1,8 @@
-diff name:ruadlist lines:129 checksum:ccc88d5e9d
+diff name:ruadlist lines:134 checksum:5979f7aec4
 d4 2
 a5 2
-! Last modified: Thu, 30 Jan 2025 08:28:40 +0000
-! Diff-Path: ../patches/2025.1.30.508.patch#ruadlist
+! Last modified: Thu, 30 Jan 2025 13:27:21 +0000
+! Diff-Path: ../patches/2025.1.30.807.patch#ruadlist
 a7903 1
 /get_ads.php?player=$~third-party,xmlhttprequest
 a11440 2
@@ -27,6 +27,8 @@ a15236 1
 www.abok.ru#?#.b-blocks:-abp-has(> .b-advert__vertical)
 a15273 1
 www.abok.ru##.b-news__preview .bannerWrapper
+a15951 1
+doska.ykt.ru##.compilations section.compilation-section--desktop:nth-child(-n+2)
 a16238 1
 vk.com,vk.ru##.feed_row > :not([id^="post"]) > div[class=""]
 a16239 2
@@ -45,6 +47,8 @@ vsaduidoma.com##.wppopups-whole
 d18699 1
 a18699 1
 ixbt.com,ixbt.pro,www1.ru##.yandex_recommend
+a18895 1
+doska.ykt.ru##[data-adurl]
 a18910 1
 rosteplo.ru##[data-content*="ERID"]
 a19020 1
@@ -78,7 +82,7 @@ a21819 1
 ||static.dzeninfra.ru/s3/zen-lib/*/dzen-layout/*_$script
 d21837 1
 a21837 1
-||pikabu.ru/ajax/*?htypn=$xmlhttprequest
+||pikabu.ru/ajax/*?akejb=$xmlhttprequest
 d21855 2
 a21856 3
 vk.com,vk.ru###feed_rows > .feed_row > div:not([id])
@@ -89,8 +93,9 @@ vk.com,vk.ru##.feed_row > [data-post-id]:not([id^="post-"])
 vk.com,vk.ru##.feed_row > [data-post-id][id^="post-"] > :not([class="_post_content"])
 a21864 1
 @@||fearmp4.ru^$generichide
-a21865 4
+a21865 5
 vk.com,vk.ru#?#[class="_post_content"]:-abp-has(.FallBackTitle)
+vk.com,vk.ru#?#[class="_post_content"]:-abp-has(.FobosMoon)
 vk.com,vk.ru#?#[class="_post_content"]:-abp-has(.PostFoxderS)
 vk.com,vk.ru#?#[class="_post_content"]:-abp-has(.PostHeaderS)
 vk.com,vk.ru#?#[class="_post_content"]:-abp-has(.PostLisS)

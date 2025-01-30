@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 30 Jan 2025 08:28:40 +0000
-! Diff-Path: ../patches/2025.1.30.508.patch#ruadlist
+! Last modified: Thu, 30 Jan 2025 13:27:21 +0000
+! Diff-Path: ../patches/2025.1.30.807.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -15956,6 +15956,7 @@ samara24.ru##.common_left > [id^="rep_"] > .bl_main
 samara24.ru##.common_right_banners
 kinoafisha.info##.companyButton
 rabota.md##.company_related-banner
+doska.ykt.ru##.compilations section.compilation-section--desktop:nth-child(-n+2)
 sdamgia.ru##.con_warper > div[class$="_block"]
 sdamgia.ru##.con_wraper ~ div[class] > div:not([class="content"])
 vsitv.org##.conrek
@@ -18905,6 +18906,7 @@ buhgalter.com.ua,buhgalter911.com,factor.ua,tsn.ua,unian.info,unian.net,unian.ua
 banki.ru##[data-adfox-container]
 vse42.ru##[data-adplace-inited]
 18000.com.ua##[data-ads]
+doska.ykt.ru##[data-adurl]
 teknoblog.ru##[data-advadstrackid]
 bryansknovosti.ru,novozybkov.su#?#[data-alias="Copyright"] .widget-area > .widget_text:not(:last-child):-abp-has(script)
 vc.ru##[data-analytics*="native"]
@@ -21853,7 +21855,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||imgfrost.net^$third-party
 ||liveinternet.ru/utf/lici.js?
 ||news.mail.ru/-/*.js?
-||pikabu.ru/ajax/*?htypn=$xmlhttprequest
+||pikabu.ru/ajax/*?akejb=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -21887,6 +21889,7 @@ android-mafia.com,game4you.top,rustorka.com,rustorka.net,rustorka.top,rustorkaco
 @@||fearmp4.ru^$generichide
 @@||ozon.ru/highlight/kursk-$elemhide
 vk.com,vk.ru#?#[class="_post_content"]:-abp-has(.FallBackTitle)
+vk.com,vk.ru#?#[class="_post_content"]:-abp-has(.FobosMoon)
 vk.com,vk.ru#?#[class="_post_content"]:-abp-has(.PostFoxderS)
 vk.com,vk.ru#?#[class="_post_content"]:-abp-has(.PostHeaderS)
 vk.com,vk.ru#?#[class="_post_content"]:-abp-has(.PostLisS)
