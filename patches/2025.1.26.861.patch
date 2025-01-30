@@ -1,13 +1,13 @@
-diff name:ruadlist lines:92 checksum:a5c276ec9f
+diff name:ruadlist lines:103 checksum:01fd0c5a0b
 d4 2
 a5 2
-! Last modified: Wed, 29 Jan 2025 22:24:56 +0000
-! Diff-Path: ../patches/2025.1.29.1344.patch#ruadlist
+! Last modified: Thu, 30 Jan 2025 03:27:16 +0000
+! Diff-Path: ../patches/2025.1.30.207.patch#ruadlist
 a7903 1
 /get_ads.php?player=$~third-party,xmlhttprequest
 d12764 1
 a12764 1
-||rutube.ru^$domain=2ch.hk|2ch.life|ditey.com|nashamama.com
+||rutube.ru^$domain=ditey.com|nashamama.com
 d13928 1
 a13928 1
 vk.com,vk.ru###feed_rows > .feed_row[style=""]
@@ -35,9 +35,15 @@ d19219 1
 a19219 1
 360tv.ru,7days.ru,avtonovostidnya.ru,avtovzglyad.ru,belarus-news.by,bst.bratsk.ru,coop-land.ru,energyfm.ru,finuslugi.ru,fonmod.com,fontanka.ru,gdeichto.ru,ixbt.com,ixbt.shop,kommersant.ru,ladys.media,life.ru,media.az,metronews.ru,mk.ru,moe-belgorod.ru,moe-kursk.ru,moe-lipetsk.ru,moe-online.ru,moe-tambov.ru,mydecor.ru,mywebpc.ru,naked-science.ru,new-magazine.ru,news.ru,nsn.fm,ohotniki.ru,oper.ru,overclockers.ru,penzainform.ru,peterburg2.ru,pnz.ru,regnum.news,regnum.ru,rifey.ru,rusnext.ru,russian.rt.com,rutube.ru,sm.news,sovsport.ru,sport-express.net,sport-express.ru,sportsdaily.ru,stiletto.blog,super.ru,syzran-small.ru,teleprogramma.pro,thegirl.ru,timeweb.com,tsargrad.tv,tulapressa.ru,tvzvezda.ru,u-f.ru,ura.news,utyug.info,vz.ru,www1.ru,xn----7sbabwosghnf8al4lkj7b.xn--p1ai,ytronews.ru,zaks.ru,zaycev.net,zr.ru##a[href*="//dzen.ru/"]
 d20289 1
+a20341 1
+sovsport.ru##div[class*="_bonusLogo"]
 a20540 1
 znanierussia.ru##div[class^="banner-under-"]
+a20560 1
+sovsport.ru##div[class^="bonus-rating"]
+d20635 1
 d21042 1
+d21486 1
 a21497 1
 www1.ru##nav > .hidden > .list-reset > a[target="_blank"]
 d21832 1
@@ -57,7 +63,8 @@ vk.com,vk.ru##.feed_row > [data-post-id]:not([id^="post-"])
 vk.com,vk.ru##.feed_row > [data-post-id][id^="post-"] > :not([class="_post_content"])
 a21878 1
 @@||fearmp4.ru^$generichide
-a21879 3
+a21879 4
+vk.com,vk.ru#?#[class="_post_content"]:-abp-has(.FallBackTitle)
 vk.com,vk.ru#?#[class="_post_content"]:-abp-has(.PostFoxderS)
 vk.com,vk.ru#?#[class="_post_content"]:-abp-has(.PostHeaderS)
 vk.com,vk.ru#?#[class="_post_content"]:-abp-has(.PostLisS)
@@ -85,8 +92,12 @@ a27043 2
 leingpt.ru##.m-container > #yandex_rtb_R:style(display: block !important)
 ! ---
 d28020 1
+d28359 1
+a28369 1
+vk.com,vk.ru##+js(set-constant, Object.prototype.disclaimer, {})
 d28440 1
-a28440 1
+a28440 2
+vk.com,vk.ru##.feed_row:matches-attr(/[0-9]/):remove()
 vk.com,vk.ru##.feed_row:matches-prop(innerHTML="/mradx\.net|media_on_/")
 d28503 1
 a28503 1

@@ -1,14 +1,29 @@
-diff name:ruadlist lines:13 checksum:a5c276ec9f
+diff name:ruadlist lines:28 checksum:01fd0c5a0b
 d4 2
 a5 2
-! Last modified: Wed, 29 Jan 2025 22:24:56 +0000
-! Diff-Path: ../patches/2025.1.29.1344.patch#ruadlist
+! Last modified: Thu, 30 Jan 2025 03:27:16 +0000
+! Diff-Path: ../patches/2025.1.30.207.patch#ruadlist
+d12765 1
+a12765 1
+||rutube.ru^$domain=ditey.com|nashamama.com
+a20342 1
+sovsport.ru##div[class*="_bonusLogo"]
+a20562 1
+sovsport.ru##div[class^="bonus-rating"]
+d20637 1
+d21487 1
 d21856 1
 a21856 1
 ||pikabu.ru/ajax/*?htypn=$xmlhttprequest
 a21878 1
 vk.com,vk.ru##.feed_row > [data-post-id][id^="post-"] > :not([class="_post_content"])
-a21887 3
+a21887 4
+vk.com,vk.ru#?#[class="_post_content"]:-abp-has(.FallBackTitle)
 vk.com,vk.ru#?#[class="_post_content"]:-abp-has(.PostFoxderS)
 vk.com,vk.ru#?#[class="_post_content"]:-abp-has(.PostHeaderS)
 vk.com,vk.ru#?#[class="_post_content"]:-abp-has(.PostLisS)
+d28368 1
+a28378 1
+vk.com,vk.ru##+js(set-constant, Object.prototype.disclaimer, {})
+a28448 1
+vk.com,vk.ru##.feed_row:matches-attr(/[0-9]/):remove()
