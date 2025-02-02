@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 02 Feb 2025 06:30:13 +0000
-! Diff-Path: ../patches/2025.2.2.390.patch#ruadlist
+! Last modified: Sun, 02 Feb 2025 11:18:29 +0000
+! Diff-Path: ../patches/2025.2.2.678.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -5067,6 +5067,7 @@
 ||refpajttvenj.top^$third-party
 ||refpakglscpj.best^$third-party
 ||refpakglscpj.top^$third-party
+||refpakntjoyg.top^$third-party
 ||refpakqrnazy.best^$third-party
 ||refpakwqoigx.top^$third-party
 ||refpakykgqyf.top^$third-party
@@ -12754,6 +12755,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||rustorrents.rustorrents.net^
 ||rustrackers.ru/banner_
 ||rutor.org/template/rutor/assets/js/ui.datepicker-ru.js
+||rutracker-net.ru/img/rtn/ban/
 ||rutracker.net/004/
 ||rutracker.net/iframe/
 ||rutracker.org.ru/download32.
@@ -16303,6 +16305,7 @@ pcportal.org##.footer #banner ~ td
 pogodavtomske.ru##.footer > .center
 soccer365.com.ua,soccer365.ru##.footer > :not(.footer_bottom)
 mozutil.mozilla-russia.org##.footer > span > div[style="text-align: left;"] > div[style="text-align: right;"]
+rutracker-net.ru##.footer a[target="_blank"]
 sport.kg##.footer-add > a
 kino-archive.ru,silver.ru##.footer-banner
 finam.ru##.footer-banner-block
@@ -21887,6 +21890,7 @@ drive2.ru##[data-sticky-adtune]
 drive2.ru##[data-test="AdKebabAndLabel--adLabelContent"]
 dzen.ru,liveinternet.ru##[data-wrapper]
 dzen.ru##[data_name]
+vk.com,vk.ru##[id^="post-"] > ._post_content > :only-child
 lena-miro.ru,levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##[role="banner"] > .s-header-extra + div[class]
 livejournal.com#?#a:-abp-has(span:-abp-contains(Реклама))
 dzen.ru##a[href^="https://dzen.ru/"][class*="link"][class*="tabContent"] [class] > [class] > [class] > [class]
