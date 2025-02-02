@@ -1,8 +1,8 @@
-diff name:ruadlist lines:61 checksum:0f6a4e30d6
+diff name:ruadlist lines:64 checksum:426f00abbd
 d4 2
 a5 2
-! Last modified: Sun, 02 Feb 2025 11:18:29 +0000
-! Diff-Path: ../patches/2025.2.2.678.patch#ruadlist
+! Last modified: Sun, 02 Feb 2025 16:28:04 +0000
+! Diff-Path: ../patches/2025.2.2.988.patch#ruadlist
 a514 1
 ||audiotouch.info^$third-party
 a5068 1
@@ -49,8 +49,11 @@ d20669 1
 a20669 1
 chytomo.com,dev.ua,devby.io,padaread.com##div[class^="partners"]
 d21353 1
-a21885 1
+a21885 2
 vk.com,vk.ru##._post_content > .post
+vk.com,vk.ru#?#._post_content:-abp-has(> .PostHeader ~ .wall_text)
+a21887 1
+vk.com,vk.ru#?#.feed_row > [id^="post-"] > ._post_content:-abp-has(> :first-child:not(.PostHeader))
 d21897 1
 a21905 1
 vk.com,vk.ru##[id^="post-"] > ._post_content > :only-child
