@@ -1,14 +1,16 @@
-diff name:ruadlist lines:144 checksum:acba8ee458
+diff name:ruadlist lines:153 checksum:0a5e71b7e2
 d4 2
 a5 2
-! Last modified: Tue, 04 Feb 2025 08:30:17 +0000
-! Diff-Path: ../patches/2025.2.4.510.patch#ruadlist
+! Last modified: Tue, 04 Feb 2025 13:28:28 +0000
+! Diff-Path: ../patches/2025.2.4.808.patch#ruadlist
 a514 1
 ||audiotouch.info^$third-party
 a1454 1
 ||datafeed.bet^$third-party
 a5068 1
 ||refpakntjoyg.top^$third-party
+a8504 1
+~sports.ru,~tribuna.com,~winline.ru##a[href*=".winline.ru/"]
 a8705 1
 ##a[href*="://tracker.rioaffi.com/"]
 d10482 1
@@ -103,6 +105,8 @@ d20421 1
 d20541 1
 a20541 1
 101.ru,1plus1.ua,46tv.ru,999.md,alau.kz,aldebaran.ru,asiarussia.ru,bezparazita.ru,botinok.porn,bountymax.ru,buzulukday.ru,calend.ru,chytomo.com,citydog.by,clubvolvo.ru,crazymailing.com,dnepr.info,dom2stars.ru,dota2.ru,gmod-fan.ru,gorod.dp.ua,gorod48.ru,gtavicecity.ru,hochu.ua,igry-online.net,infobank.by,internetua.com,kamchatinfo.com,kerchinfo.com,khersonline.net,kino-kingdom.com,klops.ru,kluch.media,kvnews.ru,kyiv-independent.com,lipetskmedia.ru,manga24.ru,mashintop.ru,mediaryazan.ru,menquestions.ru,mgorod.kz,mobile-review.com,modernrock.ru,moya-semya.ru,musicforums.ru,nlo-mir.ru,nn.ru,novostroev.ru,nsday.ru,ntr-24.ru,nv.ua,nversia.ru,onlineradiobox.com,orenday.ru,perevolockday.ru,pln-pskov.ru,ponedelnik.info,postovoy.net,ppt.ru,psm7.com,rtraveler.ru,saltday.ru,sevkavportal.ru,sorochinskday.ru,sovets.net,sovets24.ru,spark.ru,studfile.net,studfiles.net,subscribe.ru,telegraf.in.ua,the-village-kz.com,the-village.me,the-village.ru,tltonline.ru,topvideo.tj,torrents.in.ua,trisosny.ru,trymobile.ru,turkmenportal.com,tvzvezda.ru,ukrinform.ru,ura.news,vdvsn.ru,village.com.ua,vklybe.tv,vorle.ru,vse.sale,wincore.ru,womanhit.ru,worldofmods.ru,xn----7sbabrtfclecozdeg8b6a.xn--p1ai,yarik-sat.com,yarnews.net,zerno-ua.com,zhitomir.info,zn.ua,zoon.ru##div[class^="banner"]
+a20645 1
+sovsport.ru##div[class^="match-day_bottom_block"]
 d20667 1
 a20667 1
 chytomo.com,dev.ua,devby.io,padaread.com##div[class^="partners"]
@@ -113,15 +117,20 @@ d21351 1
 a21412 1
 pimpletv.ru##img[src*="/img/riobet"]
 d21494 1
+a21585 1
+sovsport.ru##p[class^="match-day_text_"]
 d21861 1
 a21861 1
 ||pikabu.ru/ajax/*?baUPU=$xmlhttprequest
-a21882 2
+a21882 4
 vk.com,vk.ru##.BmYTVxTLCcyxWV1urCqf
+vk.com,vk.ru##._6fA0YW0meJA3HUt5G7dw
+vk.com,vk.ru##._feed_rows > div:not([id]):not([class])
 vk.com,vk.ru##._post_content > .post
-a21884 2
+a21884 3
 vk.com,vk.ru##.feed_row > [data-post-id][id^="post-"]:not([data-post-author-id])
 vk.com,vk.ru#?#.feed_row > [id^="post-"] > ._post_content:-abp-has(> :first-child:not(.PostHeader))
+vk.com,vk.ru##.feed_row > div[class$=" post"]
 d21894 1
 a21902 1
 vk.com,vk.ru##[id^="post-"] > ._post_content > :only-child
