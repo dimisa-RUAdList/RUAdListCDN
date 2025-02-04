@@ -1,8 +1,8 @@
-diff name:ruadlist lines:67 checksum:0a5e71b7e2
+diff name:ruadlist lines:70 checksum:a043e63268
 d4 2
 a5 2
-! Last modified: Tue, 04 Feb 2025 13:28:28 +0000
-! Diff-Path: ../patches/2025.2.4.808.patch#ruadlist
+! Last modified: Tue, 04 Feb 2025 18:32:14 +0000
+! Diff-Path: ../patches/2025.2.4.1112.patch#ruadlist
 a1455 1
 ||datafeed.bet^$third-party
 a8506 1
@@ -26,6 +26,9 @@ d17151 1
 d17154 1
 a17182 1
 unian.info,unian.net,unian.ua##.newsfeed__ad
+a17236 2
+myshows.me##.online-link
+myshows.me##.online-poster
 d17403 1
 a17447 1
 1plus1.ua##.post__partners
@@ -50,11 +53,11 @@ sovsport.ru##p[class^="match-day_text_"]
 d21852 1
 a21852 1
 ||pikabu.ru/ajax/*?baUPU=$xmlhttprequest
-a21873 3
-vk.com,vk.ru##.BmYTVxTLCcyxWV1urCqf
-vk.com,vk.ru##._6fA0YW0meJA3HUt5G7dw
+a21873 1
 vk.com,vk.ru##._feed_rows > div:not([id]):not([class])
 d21875 1
+a21875 1
+vk.com,vk.ru#?#._post_content:-abp-has(park)
 a21877 1
 vk.com,vk.ru##.feed_row > [data-post-id][id^="post-"]:not([data-post-author-id])
 a21878 1

@@ -1,8 +1,8 @@
-diff name:ruadlist lines:153 checksum:0a5e71b7e2
+diff name:ruadlist lines:155 checksum:a043e63268
 d4 2
 a5 2
-! Last modified: Tue, 04 Feb 2025 13:28:28 +0000
-! Diff-Path: ../patches/2025.2.4.808.patch#ruadlist
+! Last modified: Tue, 04 Feb 2025 18:32:14 +0000
+! Diff-Path: ../patches/2025.2.4.1112.patch#ruadlist
 a514 1
 ||audiotouch.info^$third-party
 a1454 1
@@ -62,6 +62,9 @@ d17147 1
 d17150 1
 a17178 1
 unian.info,unian.net,unian.ua##.newsfeed__ad
+a17232 2
+myshows.me##.online-link
+myshows.me##.online-poster
 d17353 1
 d17358 1
 d17401 1
@@ -122,11 +125,10 @@ sovsport.ru##p[class^="match-day_text_"]
 d21861 1
 a21861 1
 ||pikabu.ru/ajax/*?baUPU=$xmlhttprequest
-a21882 4
-vk.com,vk.ru##.BmYTVxTLCcyxWV1urCqf
-vk.com,vk.ru##._6fA0YW0meJA3HUt5G7dw
+a21882 3
 vk.com,vk.ru##._feed_rows > div:not([id]):not([class])
 vk.com,vk.ru##._post_content > .post
+vk.com,vk.ru#?#._post_content:-abp-has(park)
 a21884 3
 vk.com,vk.ru##.feed_row > [data-post-id][id^="post-"]:not([data-post-author-id])
 vk.com,vk.ru#?#.feed_row > [id^="post-"] > ._post_content:-abp-has(> :first-child:not(.PostHeader))
