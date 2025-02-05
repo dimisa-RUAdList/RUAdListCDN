@@ -1,8 +1,8 @@
-diff name:ruadlist lines:30 checksum:13e1431b61
+diff name:ruadlist lines:33 checksum:a217aaf3d9
 d4 2
 a5 2
-! Last modified: Wed, 05 Feb 2025 14:24:47 +0000
-! Diff-Path: ../patches/2025.2.5.864.patch#ruadlist
+! Last modified: Wed, 05 Feb 2025 19:20:32 +0000
+! Diff-Path: ../patches/2025.2.5.1160.patch#ruadlist
 a8507 1
 ~sports.ru,~tribuna.com,~winline.ru##a[href*=".winline.ru/"]
 a17237 2
@@ -16,16 +16,19 @@ d21854 1
 a21854 1
 ||pikabu.ru/ajax/*?ygnz9=$xmlhttprequest
 d21876 1
-a21876 2
-vk.com,vk.ru##.LNDxBXcR1IzN3cTr7YWo
+a21876 1
 vk.com,vk.ru##._feed_rows > div:not([id]):not([class])
-a21877 1
-vk.com,vk.ru#?#._post_content:-abp-has(park)
+a21877 2
+vk.com,vk.ru#?#._post_content:-abp-has(.PostHeaderInfo > div ~ div)
+vk.com,vk.ru#?#._post_content:-abp-has([src^="https://r0."])
 a21881 1
 vk.com,vk.ru##.feed_row > div[class$=" post"]
+a28088 1
+vk.com,vk.ru##+js(abort-on-property-read, Element.prototype.attachShadow)
 d28206 1
 a28206 1
 vk.com,vk.ru##+js(abort-on-stack-trace, Object.prototype.bannerShowed, evalWithLogging)
 d28475 1
-a28475 1
+a28475 2
 vk.com,vk.ru##.wall_module > div[id]:first-child > :matches-prop(innerHTML="/format_edit|mradx\.net|media_on_/")
+vk.com,vk.ru##.wall_module > div[id]:first-child > div > div:matches-attr("/[0-9]/"="")

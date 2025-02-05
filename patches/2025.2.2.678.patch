@@ -1,8 +1,8 @@
-diff name:ruadlist lines:95 checksum:13e1431b61
+diff name:ruadlist lines:98 checksum:a217aaf3d9
 d4 2
 a5 2
-! Last modified: Wed, 05 Feb 2025 14:24:47 +0000
-! Diff-Path: ../patches/2025.2.5.864.patch#ruadlist
+! Last modified: Wed, 05 Feb 2025 19:20:32 +0000
+! Diff-Path: ../patches/2025.2.5.1160.patch#ruadlist
 a1455 1
 ||datafeed.bet^$third-party
 a8506 1
@@ -73,11 +73,11 @@ sovsport.ru##p[class^="match-day_text_"]
 d21851 1
 a21851 1
 ||pikabu.ru/ajax/*?ygnz9=$xmlhttprequest
-a21872 2
-vk.com,vk.ru##.LNDxBXcR1IzN3cTr7YWo
+a21872 1
 vk.com,vk.ru##._feed_rows > div:not([id]):not([class])
-a21873 1
-vk.com,vk.ru#?#._post_content:-abp-has(park)
+a21873 2
+vk.com,vk.ru#?#._post_content:-abp-has(.PostHeaderInfo > div ~ div)
+vk.com,vk.ru#?#._post_content:-abp-has([src^="https://r0."])
 a21875 3
 vk.com,vk.ru##.feed_row > [data-post-id][id^="post-"]:not([data-post-author-id])
 vk.com,vk.ru#?#.feed_row > [id^="post-"] > ._post_content:-abp-has(> :first-child:not(.PostHeader))
@@ -87,10 +87,13 @@ d25928 1
 a25928 1
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js|$domain=www.aport.ru
 d26050 1
+a28084 1
+vk.com,vk.ru##+js(abort-on-property-read, Element.prototype.attachShadow)
 a28201 1
 vk.com,vk.ru##+js(abort-on-stack-trace, Object.prototype.bannerShowed, evalWithLogging)
 d28376 1
 d28447 2
-a28471 2
+a28471 3
 vk.com,vk.ru##.wall_module > div[id]:first-child > :matches-attr(/[0-9]/):remove()
 vk.com,vk.ru##.wall_module > div[id]:first-child > :matches-prop(innerHTML="/format_edit|mradx\.net|media_on_/")
+vk.com,vk.ru##.wall_module > div[id]:first-child > div > div:matches-attr("/[0-9]/"="")
