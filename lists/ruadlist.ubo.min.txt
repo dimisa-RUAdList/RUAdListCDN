@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 05 Feb 2025 09:26:07 +0000
-! Diff-Path: ../patches/2025.2.5.566.patch#ruadlist
+! Last modified: Wed, 05 Feb 2025 14:24:47 +0000
+! Diff-Path: ../patches/2025.2.5.864.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21856,7 +21856,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||imgfrost.net^$third-party
 ||liveinternet.ru/utf/lici.js?
 ||news.mail.ru/-/*.js?
-||pikabu.ru/ajax/*?baUPU=$xmlhttprequest
+||pikabu.ru/ajax/*?ygnz9=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -21878,6 +21878,7 @@ vk.com,vk.ru###feed_rows > .feed_row > div:not([id])
 vk.com,vk.ru#?##feed_rows > .feed_row:-abp-has(.PostHeaderSubtitle:-abp-contains(/[Реклама]/))
 vk.com,vk.ru###feed_rows > div[class="feed_row "] > div[id]:not([data-post-id])
 the-geek.ru###wp-custom-css {remove:true;}
+vk.com,vk.ru##.LNDxBXcR1IzN3cTr7YWo
 vk.com,vk.ru##._feed_rows > div:not([id]):not([class])
 vk.com,vk.ru##._post_content > .post
 vk.com,vk.ru#?#._post_content:-abp-has(park)
@@ -28210,7 +28211,7 @@ phys-kids.com##+js(abort-on-property-write, fetch)
 gamemag.ru##+js(abort-on-property-write, keepAdblock)
 kakprosto.ru##+js(abort-on-property-write, window.yaProxy)
 tvzvezda.ru##+js(abort-on-stack-trace, Object.prototype.autoplay, assets)
-vk.com,vk.ru##+js(abort-on-stack-trace, Object.prototype.banner, defineProperty)
+vk.com,vk.ru##+js(abort-on-stack-trace, Object.prototype.bannerShowed, evalWithLogging)
 blackwot.ru##+js(abort-on-stack-trace, document.getElementsByTagName, adsBlocked)
 forums.rusmedserv.com##+js(abort-on-stack-trace, fetch, eval)
 7days.ru##+js(addEventListener-defuser, /^(?:contextmenu|keydown)$/)
@@ -28479,7 +28480,7 @@ pikabu.ru##.stories-feed__container > .story[data-author-name] ~ .story[data-con
 player.twitch.tv##.ubo-overlay > .player-ad-notice
 dynamo.kiev.ua##.video-scroll:remove()
 vk.com,vk.ru##.wall_module > div[id]:first-child > :matches-attr(/[0-9]/):remove()
-vk.com,vk.ru##.wall_module > div[id]:first-child > :matches-prop(innerHTML="/mradx\.net|media_on_/")
+vk.com,vk.ru##.wall_module > div[id]:first-child > :matches-prop(innerHTML="/format_edit|mradx\.net|media_on_/")
 /(aniqit|kodik)./$subdocument,removeparam=geoblock
 /^https?://yastatic\.net\/www\/_\/[^\s]{150,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 /sm\.news/[^\s]{80,}/$script,xmlhttprequest,badfilter,domain=sm.news

@@ -1,8 +1,8 @@
-diff name:ruadlist lines:70 checksum:d5b684de84
+diff name:ruadlist lines:71 checksum:13e1431b61
 d4 2
 a5 2
-! Last modified: Wed, 05 Feb 2025 09:26:07 +0000
-! Diff-Path: ../patches/2025.2.5.566.patch#ruadlist
+! Last modified: Wed, 05 Feb 2025 14:24:47 +0000
+! Diff-Path: ../patches/2025.2.5.864.patch#ruadlist
 a1455 1
 ||datafeed.bet^$third-party
 a8506 1
@@ -52,8 +52,9 @@ a21576 1
 sovsport.ru##p[class^="match-day_text_"]
 d21852 1
 a21852 1
-||pikabu.ru/ajax/*?baUPU=$xmlhttprequest
-a21873 1
+||pikabu.ru/ajax/*?ygnz9=$xmlhttprequest
+a21873 2
+vk.com,vk.ru##.LNDxBXcR1IzN3cTr7YWo
 vk.com,vk.ru##._feed_rows > div:not([id]):not([class])
 d21875 1
 a21875 1
@@ -63,9 +64,9 @@ vk.com,vk.ru##.feed_row > [data-post-id][id^="post-"]:not([data-post-author-id])
 a21878 1
 vk.com,vk.ru##.feed_row > div[class$=" post"]
 a28202 1
-vk.com,vk.ru##+js(abort-on-stack-trace, Object.prototype.banner, defineProperty)
+vk.com,vk.ru##+js(abort-on-stack-trace, Object.prototype.bannerShowed, evalWithLogging)
 d28377 1
 d28448 2
 a28472 2
 vk.com,vk.ru##.wall_module > div[id]:first-child > :matches-attr(/[0-9]/):remove()
-vk.com,vk.ru##.wall_module > div[id]:first-child > :matches-prop(innerHTML="/mradx\.net|media_on_/")
+vk.com,vk.ru##.wall_module > div[id]:first-child > :matches-prop(innerHTML="/format_edit|mradx\.net|media_on_/")
