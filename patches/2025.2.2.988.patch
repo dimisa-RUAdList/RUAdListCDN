@@ -1,8 +1,8 @@
-diff name:ruadlist lines:99 checksum:19fbf7bf31
+diff name:ruadlist lines:104 checksum:ad50db6aa7
 d4 2
 a5 2
-! Last modified: Thu, 06 Feb 2025 05:28:16 +0000
-! Diff-Path: ../patches/2025.2.6.328.patch#ruadlist
+! Last modified: Thu, 06 Feb 2025 10:28:14 +0000
+! Diff-Path: ../patches/2025.2.6.628.patch#ruadlist
 a1455 1
 ||datafeed.bet^$third-party
 a8506 1
@@ -17,6 +17,9 @@ a11567 3
 ||gooool365.org/uploads/*.html$subdocument
 a13171 1
 ||tsn.*/banners/$domain=tsn.ua
+d14692 2
+a14693 1
+yap.ru.yaplakal.com###top-line > noindex
 d14976 1
 a14976 1
 024.by,1927.kiev.ua,allnews.kz,bigpicture.ru,chatadelic.net,coderoad.ru,day.az,euromd.com.ua,football-fun.ru,fotokto.ru,gagadget.com,gameme.eu,gotoshop.ua,gs.by,gsconto.com,hotzoom.net,icons8.ru,infoniac.ru,jooble.org,jooble.ua,kinoafisha.info,klubok.com,like-film.online,malenkiy.ru,mangalib.me,meta.ua,my-calend.ru,novostiplanety.ru,orl.ec,podrobnosti.ua,savevideo.me,scooter-remont.com,seasonvar24.com,sexytales.org,soccer.ru,sports.kz,takprosto.cc,timeout.ru,tvsezon.com,ura.news,world-knigi.ru##.ads
@@ -72,13 +75,15 @@ a21575 1
 sovsport.ru##p[class^="match-day_text_"]
 d21851 1
 a21851 1
-||pikabu.ru/ajax/*?ygnz9=$xmlhttprequest
+||pikabu.ru/ajax/*?sXZ0M=$xmlhttprequest
+a21869 1
+vk.com,vk.ru###feed_rows > .feed_row ~ :not(.feed_row)
 a21872 1
 vk.com,vk.ru##._feed_rows > div:not([id]):not([class])
 d21874 1
 a21874 2
-vk.com,vk.ru#?#._post_content:-abp-has(.PostHeaderInfo > div ~ div)
 vk.com,vk.ru#?#._post_content:-abp-has([src^="https://r0."])
+vk.com,vk.ru##._post_content[style=""]
 a21876 1
 vk.com,vk.ru##.feed_row > [data-post-id][id^="post-"]:not([data-post-author-id])
 a21877 1

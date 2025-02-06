@@ -1,13 +1,21 @@
-diff name:ruadlist lines:13 checksum:19fbf7bf31
+diff name:ruadlist lines:21 checksum:ad50db6aa7
 d4 2
 a5 2
-! Last modified: Thu, 06 Feb 2025 05:28:16 +0000
-! Diff-Path: ../patches/2025.2.6.328.patch#ruadlist
+! Last modified: Thu, 06 Feb 2025 10:28:14 +0000
+! Diff-Path: ../patches/2025.2.6.628.patch#ruadlist
+d14697 2
+a14698 1
+yap.ru.yaplakal.com###top-line > noindex
+d21859 1
+a21859 1
+||pikabu.ru/ajax/*?sXZ0M=$xmlhttprequest
+a21877 1
+vk.com,vk.ru###feed_rows > .feed_row ~ :not(.feed_row)
 d21881 1
 d21884 1
 a21884 2
-vk.com,vk.ru#?#._post_content:-abp-has(.PostHeaderInfo > div ~ div)
 vk.com,vk.ru#?#._post_content:-abp-has([src^="https://r0."])
+vk.com,vk.ru##._post_content[style=""]
 a28096 1
 vk.com,vk.ru##+js(abort-on-property-read, Element.prototype.attachShadow)
 a28483 1

@@ -1,10 +1,13 @@
-diff name:ruadlist lines:33 checksum:19fbf7bf31
+diff name:ruadlist lines:38 checksum:ad50db6aa7
 d4 2
 a5 2
-! Last modified: Thu, 06 Feb 2025 05:28:16 +0000
-! Diff-Path: ../patches/2025.2.6.328.patch#ruadlist
+! Last modified: Thu, 06 Feb 2025 10:28:14 +0000
+! Diff-Path: ../patches/2025.2.6.628.patch#ruadlist
 a8507 1
 ~sports.ru,~tribuna.com,~winline.ru##a[href*=".winline.ru/"]
+d14696 2
+a14697 1
+yap.ru.yaplakal.com###top-line > noindex
 a17237 2
 myshows.me##.online-link
 myshows.me##.online-poster
@@ -14,13 +17,15 @@ a21578 1
 sovsport.ru##p[class^="match-day_text_"]
 d21854 1
 a21854 1
-||pikabu.ru/ajax/*?ygnz9=$xmlhttprequest
+||pikabu.ru/ajax/*?sXZ0M=$xmlhttprequest
+a21872 1
+vk.com,vk.ru###feed_rows > .feed_row ~ :not(.feed_row)
 d21876 1
 a21876 1
 vk.com,vk.ru##._feed_rows > div:not([id]):not([class])
 a21877 2
-vk.com,vk.ru#?#._post_content:-abp-has(.PostHeaderInfo > div ~ div)
 vk.com,vk.ru#?#._post_content:-abp-has([src^="https://r0."])
+vk.com,vk.ru##._post_content[style=""]
 a21881 1
 vk.com,vk.ru##.feed_row > div[class$=" post"]
 a28088 1
