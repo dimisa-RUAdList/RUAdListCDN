@@ -1,8 +1,8 @@
-diff name:ruadlist lines:111 checksum:481beda5cb
+diff name:ruadlist lines:120 checksum:dea2a5471f
 d4 2
 a5 2
-! Last modified: Thu, 06 Feb 2025 15:25:57 +0000
-! Diff-Path: ../patches/2025.2.6.925.patch#ruadlist
+! Last modified: Thu, 06 Feb 2025 20:25:08 +0000
+! Diff-Path: ../patches/2025.2.6.1225.patch#ruadlist
 a1455 1
 ||datafeed.bet^$third-party
 d4131 1
@@ -80,6 +80,9 @@ d21302 1
 d21484 1
 a21575 1
 sovsport.ru##p[class^="match-day_text_"]
+d21838 1
+a21838 1
+://pikabu.ru/$csp=connect-src https://pikabu.ru/ajax/ https://pikabu.ru/ajax.php *.pikabu.ru/ data: https://pikabu.ru/.well-known/ wss://pikabu.ru/.well-known/
 d21851 1
 a21851 1
 ||pikabu.ru/ajax/*?sXZ0M=$xmlhttprequest
@@ -99,11 +102,17 @@ d25912 1
 d25930 1
 a25930 1
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js|$domain=www.aport.ru
+d25974 1
+a25974 1
+@@||yandex.ru/ads/system/adsdk.js$script,domain=aniboom.one|api-video.khl.ru|gisher.org|karaoke.ru|kino.tricolor.tv|limehd.tv|m24.ru|peers.tv|player.mediavitrina.ru|ren.tv|rutube.ru
 d26052 1
 a28086 1
 vk.com,vk.ru##+js(abort-on-property-read, Element.prototype.attachShadow)
 a28203 1
 vk.com,vk.ru##+js(abort-on-stack-trace, Object.prototype.bannerShowed, evalWithLogging)
+d28358 1
+a28358 1
+ren.tv,rutube.ru##+js(set-constant, Object.prototype.advert, undefined)
 d28378 1
 d28449 2
 a28473 3

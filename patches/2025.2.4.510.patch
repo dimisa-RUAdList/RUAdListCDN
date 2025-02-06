@@ -1,8 +1,8 @@
-diff name:ruadlist lines:45 checksum:481beda5cb
+diff name:ruadlist lines:54 checksum:dea2a5471f
 d4 2
 a5 2
-! Last modified: Thu, 06 Feb 2025 15:25:57 +0000
-! Diff-Path: ../patches/2025.2.6.925.patch#ruadlist
+! Last modified: Thu, 06 Feb 2025 20:25:08 +0000
+! Diff-Path: ../patches/2025.2.6.1225.patch#ruadlist
 d4132 1
 a4132 1
 ||newmedia.az^$third-party
@@ -22,6 +22,9 @@ a20679 1
 vesti.az##div[class^="rek_"]
 a21578 1
 sovsport.ru##p[class^="match-day_text_"]
+d21841 1
+a21841 1
+://pikabu.ru/$csp=connect-src https://pikabu.ru/ajax/ https://pikabu.ru/ajax.php *.pikabu.ru/ data: https://pikabu.ru/.well-known/ wss://pikabu.ru/.well-known/
 d21854 1
 a21854 1
 ||pikabu.ru/ajax/*?sXZ0M=$xmlhttprequest
@@ -35,11 +38,17 @@ vk.com,vk.ru#?#._post_content:-abp-has([src^="https://r0."])
 vk.com,vk.ru##._post_content[style=""]
 a21881 1
 vk.com,vk.ru##.feed_row > div[class$=" post"]
+d25977 1
+a25977 1
+@@||yandex.ru/ads/system/adsdk.js$script,domain=aniboom.one|api-video.khl.ru|gisher.org|karaoke.ru|kino.tricolor.tv|limehd.tv|m24.ru|peers.tv|player.mediavitrina.ru|ren.tv|rutube.ru
 a28088 1
 vk.com,vk.ru##+js(abort-on-property-read, Element.prototype.attachShadow)
 d28206 1
 a28206 1
 vk.com,vk.ru##+js(abort-on-stack-trace, Object.prototype.bannerShowed, evalWithLogging)
+d28361 1
+a28361 1
+ren.tv,rutube.ru##+js(set-constant, Object.prototype.advert, undefined)
 d28475 1
 a28475 2
 vk.com,vk.ru##.wall_module > div[id]:first-child > :matches-prop(innerHTML="/format_edit|mradx\.net|media_on_/")
