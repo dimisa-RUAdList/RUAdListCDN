@@ -1,8 +1,8 @@
-diff name:ruadlist lines:47 checksum:db60d6794a
+diff name:ruadlist lines:53 checksum:04a3076989
 d4 2
 a5 2
-! Last modified: Fri, 07 Feb 2025 16:30:11 +0000
-! Diff-Path: ../patches/2025.2.7.990.patch#ruadlist
+! Last modified: Fri, 07 Feb 2025 21:21:48 +0000
+! Diff-Path: ../patches/2025.2.7.1281.patch#ruadlist
 d4132 1
 a4132 1
 ||newmedia.az^$third-party
@@ -32,6 +32,10 @@ a21883 1
 vk.com,vk.ru#?#._post_content:-abp-has(.l2Q63U68RkAXQkXEoJnJ)
 a21884 1
 vk.com,vk.ru##._post_content[style=""]
+a22625 1
+lenta.ru##a[class="card-mini _topnews"][href^="/extlink/"]
+a22626 1
+lenta.ru##a[href*="?erid="]
 d25985 1
 a25985 1
 @@||yandex.ru/ads/system/adsdk.js$script,domain=aniboom.one|api-video.khl.ru|gisher.org|karaoke.ru|kino.tricolor.tv|limehd.tv|m24.ru|peers.tv|player.mediavitrina.ru|ren.tv|rutube.ru
@@ -39,6 +43,8 @@ d28097 1
 d28215 1
 a28215 1
 vk.com,vk.ru##+js(abort-on-stack-trace, Object.prototype.onMrcShow, /feed|set/)
+a28257 1
+appleinsider.ru##+js(href-sanitizer, a[href*="?goto=https"], ?goto)
 a28360 1
 vk.com,vk.ru##+js(set-constant, Element.prototype.attachShadow, noopFunc)
 d28370 1

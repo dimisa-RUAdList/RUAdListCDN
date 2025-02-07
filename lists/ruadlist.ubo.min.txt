@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 07 Feb 2025 16:30:11 +0000
-! Diff-Path: ../patches/2025.2.7.990.patch#ruadlist
+! Last modified: Fri, 07 Feb 2025 21:21:48 +0000
+! Diff-Path: ../patches/2025.2.7.1281.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22629,7 +22629,9 @@ weekend.rambler.ru##[data-weekend_media-desktop*="rnet_widget"]
 woman.rambler.ru##[data-woman_media-desktop*="rnet_widget"]
 letidor.ru,moslenta.ru,passion.ru,quto.ru##[id^="unit_"]
 eda.ru##[title="yandexzen"]
+lenta.ru##a[class="card-mini _topnews"][href^="/extlink/"]
 afisha.ru##a[href*="://dzen.ru/"]
+lenta.ru##a[href*="?erid="]
 championat.com##a[href*="offer_id="]
 championat.com##a[href*="okko.sport"]
 www.afisha.ru##a[href^="/out/?url="]
@@ -28260,6 +28262,7 @@ stalkermods.ru##+js(href-sanitizer, a[href*="/redir.php?r="], ?r)
 vz.ru##+js(href-sanitizer, a[href*="/redir/"], ?exturl)
 vz.ru##+js(href-sanitizer, a[href*="/redir/"], ?vzurl)
 opennet.me,opennet.ru##+js(href-sanitizer, a[href*="://click.opennet.ru/cgi-bin/"], ?to)
+appleinsider.ru##+js(href-sanitizer, a[href*="?goto=https"], ?goto)
 kluchikipro.ru##+js(href-sanitizer, a[href*="deeplink="], ?deeplink)
 lifehacker.ru##+js(href-sanitizer, a[href][rel*="sponsored"][target="_blank"], ?goto)
 hot.game##+js(href-sanitizer, a[href][target="_blank"][rel="nofollow"], ?ulp)
