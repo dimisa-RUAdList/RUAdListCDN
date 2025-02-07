@@ -1,15 +1,21 @@
-diff name:ruadlist lines:53 checksum:4f63b87b76
+diff name:ruadlist lines:62 checksum:12b2efd9cc
 d4 2
 a5 2
-! Last modified: Fri, 07 Feb 2025 06:33:22 +0000
-! Diff-Path: ../patches/2025.2.7.393.patch#ruadlist
+! Last modified: Fri, 07 Feb 2025 11:19:37 +0000
+! Diff-Path: ../patches/2025.2.7.679.patch#ruadlist
 d4132 1
 a4132 1
 ||newmedia.az^$third-party
+a4961 1
+||r0.mail.ru^
 a8507 1
 ~sports.ru,~tribuna.com,~winline.ru##a[href*=".winline.ru/"]
+a9090 1
+||r0.mail.ru/redir/$popup
 a12917 1
 ||sovsport.ru/api/smartTableWidget
+a13326 1
+||vk.com/ads_light.php$image
 d14696 2
 a14697 1
 yap.ru.yaplakal.com###top-line > noindex
@@ -27,12 +33,13 @@ a21841 1
 ://pikabu.ru/$csp=connect-src https://pikabu.ru/ajax/ https://pikabu.ru/ajax.php *.pikabu.ru/ data: https://pikabu.ru/.well-known/ wss://pikabu.ru/.well-known/
 d21854 1
 a21854 1
-||pikabu.ru/ajax/*?sXZ0M=$xmlhttprequest
+||pikabu.ru/ajax/*?qSNdb=$xmlhttprequest
 a21872 1
 vk.com,vk.ru###feed_rows > .feed_row ~ :not(.feed_row)
 a21875 1
 vk.com,vk.ru##._feed_rows > div:not([id]):not([class])
-a21876 2
+a21876 3
+vk.com,vk.ru#?#._post_content:-abp-has(.MM77MZuw9JUXVWmX_A_V)
 vk.com,vk.ru#?#._post_content:-abp-has([src^="https://r0."])
 vk.com,vk.ru##._post_content[style=""]
 a21880 1
@@ -40,11 +47,11 @@ vk.com,vk.ru##.feed_row > div[class$=" post"]
 d25976 1
 a25976 1
 @@||yandex.ru/ads/system/adsdk.js$script,domain=aniboom.one|api-video.khl.ru|gisher.org|karaoke.ru|kino.tricolor.tv|limehd.tv|m24.ru|peers.tv|player.mediavitrina.ru|ren.tv|rutube.ru
-a28087 1
-vk.com,vk.ru##+js(abort-on-property-read, Element.prototype.attachShadow)
 d28205 1
 a28205 1
-vk.com,vk.ru##+js(abort-on-stack-trace, Object.prototype.bannerShowed, evalWithLogging)
+vk.com,vk.ru##+js(abort-on-stack-trace, Object.prototype.onMrcShow, /injectedScript|inlineScript/)
+a28350 1
+vk.com,vk.ru##+js(set-constant, Element.prototype.attachShadow, noopFunc)
 d28360 1
 a28360 1
 ren.tv,rutube.ru##+js(set-constant, Object.prototype.advert, undefined)
@@ -52,3 +59,5 @@ d28474 1
 a28474 2
 vk.com,vk.ru##.wall_module > div[id]:first-child > :matches-prop(innerHTML="/format_edit|mradx\.net|media_on_/")
 vk.com,vk.ru##.wall_module > div[id]:first-child > div > div:matches-attr("/[0-9]/"="")
+a28538 1
+||ads.vk.com/public/leadform?$important,popup

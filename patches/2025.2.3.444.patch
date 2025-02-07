@@ -1,15 +1,19 @@
-diff name:ruadlist lines:93 checksum:4f63b87b76
+diff name:ruadlist lines:102 checksum:12b2efd9cc
 d4 2
 a5 2
-! Last modified: Fri, 07 Feb 2025 06:33:22 +0000
-! Diff-Path: ../patches/2025.2.7.393.patch#ruadlist
+! Last modified: Fri, 07 Feb 2025 11:19:37 +0000
+! Diff-Path: ../patches/2025.2.7.679.patch#ruadlist
 a1455 1
 ||datafeed.bet^$third-party
 d4131 1
 a4131 1
 ||newmedia.az^$third-party
+a4960 1
+||r0.mail.ru^
 a8506 1
 ~sports.ru,~tribuna.com,~winline.ru##a[href*=".winline.ru/"]
+a9089 1
+||r0.mail.ru/redir/$popup
 d10676 1
 a10676 1
 ||1plus1.video^$domain=imasdk.googleapis.com
@@ -20,6 +24,8 @@ a11567 3
 ||gooool365.org/uploads/*.html$subdocument
 a12914 1
 ||sovsport.ru/api/smartTableWidget
+a13323 1
+||vk.com/ads_light.php$image
 d14693 2
 a14694 1
 yap.ru.yaplakal.com###top-line > noindex
@@ -63,13 +69,14 @@ a21840 1
 ://pikabu.ru/$csp=connect-src https://pikabu.ru/ajax/ https://pikabu.ru/ajax.php *.pikabu.ru/ data: https://pikabu.ru/.well-known/ wss://pikabu.ru/.well-known/
 d21853 1
 a21853 1
-||pikabu.ru/ajax/*?sXZ0M=$xmlhttprequest
+||pikabu.ru/ajax/*?qSNdb=$xmlhttprequest
 a21871 1
 vk.com,vk.ru###feed_rows > .feed_row ~ :not(.feed_row)
 a21874 1
 vk.com,vk.ru##._feed_rows > div:not([id]):not([class])
 d21876 1
-a21876 2
+a21876 3
+vk.com,vk.ru#?#._post_content:-abp-has(.MM77MZuw9JUXVWmX_A_V)
 vk.com,vk.ru#?#._post_content:-abp-has([src^="https://r0."])
 vk.com,vk.ru##._post_content[style=""]
 a21878 1
@@ -79,10 +86,10 @@ vk.com,vk.ru##.feed_row > div[class$=" post"]
 d25975 1
 a25975 1
 @@||yandex.ru/ads/system/adsdk.js$script,domain=aniboom.one|api-video.khl.ru|gisher.org|karaoke.ru|kino.tricolor.tv|limehd.tv|m24.ru|peers.tv|player.mediavitrina.ru|ren.tv|rutube.ru
-a28086 1
-vk.com,vk.ru##+js(abort-on-property-read, Element.prototype.attachShadow)
 a28203 1
-vk.com,vk.ru##+js(abort-on-stack-trace, Object.prototype.bannerShowed, evalWithLogging)
+vk.com,vk.ru##+js(abort-on-stack-trace, Object.prototype.onMrcShow, /injectedScript|inlineScript/)
+a28348 1
+vk.com,vk.ru##+js(set-constant, Element.prototype.attachShadow, noopFunc)
 d28358 1
 a28358 1
 ren.tv,rutube.ru##+js(set-constant, Object.prototype.advert, undefined)
@@ -92,3 +99,5 @@ a28473 3
 vk.com,vk.ru##.wall_module > div[id]:first-child > :matches-attr(/[0-9]/):remove()
 vk.com,vk.ru##.wall_module > div[id]:first-child > :matches-prop(innerHTML="/format_edit|mradx\.net|media_on_/")
 vk.com,vk.ru##.wall_module > div[id]:first-child > div > div:matches-attr("/[0-9]/"="")
+a28537 1
+||ads.vk.com/public/leadform?$important,popup
