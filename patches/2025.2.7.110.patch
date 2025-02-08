@@ -1,8 +1,8 @@
-diff name:ruadlist lines:29 checksum:f0e756e0d0
+diff name:ruadlist lines:34 checksum:df8d0c04d7
 d4 2
 a5 2
-! Last modified: Sat, 08 Feb 2025 12:42:24 +0000
-! Diff-Path: ../patches/2025.2.8.762.patch#ruadlist
+! Last modified: Sat, 08 Feb 2025 17:21:07 +0000
+! Diff-Path: ../patches/2025.2.8.1041.patch#ruadlist
 a4961 1
 ||r0.mail.ru^
 a9091 1
@@ -18,6 +18,11 @@ a22627 1
 lenta.ru##a[class="card-mini _topnews"][href^="/extlink/"]
 a22628 1
 lenta.ru##a[href*="?erid="]
+d26804 2
+a26805 2
+ag,biz,buzz,by,city,club,co,com,fi,in,ink,kim,loan,me,name,net,org,pub,rest,run,sh,so,space,su,today,tv,vip,website,win##body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"] > [id$="er"]:nth-child(-n+3):style(width: unset !important)
+ag,biz,buzz,by,city,club,co,com,fi,in,ink,kim,loan,me,name,net,org,pub,rest,run,sh,so,space,su,today,tv,vip,website,win##body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"]:style(padding-top: 0 !important; background-color: inherit !important)
+d28027 1
 d28099 1
 d28217 1
 a28217 1

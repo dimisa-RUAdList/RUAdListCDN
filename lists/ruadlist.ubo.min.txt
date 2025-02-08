@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 08 Feb 2025 12:42:24 +0000
-! Diff-Path: ../patches/2025.2.8.762.patch#ruadlist
+! Last modified: Sat, 08 Feb 2025 17:21:07 +0000
+! Diff-Path: ../patches/2025.2.8.1041.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -26807,8 +26807,8 @@ hdkinozzoro.ru##.jirrua:style(margin-top: 0 !important)
 hdkinozzoro.ru##body:not(#id):style(padding-top: 0 !important)
 ! ---
 ! HDREZKA
-ag,biz,buzz,by,city,club,co,com,fi,in,ink,kim,loan,me,name,net,org,pub,rest,run,sh,so,space,today,tv,vip,website,win##body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"] > [id$="er"]:nth-child(-n+3):style(width: unset !important)
-ag,biz,buzz,by,city,club,co,com,fi,in,ink,kim,loan,me,name,net,org,pub,rest,run,sh,so,space,today,tv,vip,website,win##body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"]:style(padding-top: 0 !important; background-color: inherit !important)
+ag,biz,buzz,by,city,club,co,com,fi,in,ink,kim,loan,me,name,net,org,pub,rest,run,sh,so,space,su,today,tv,vip,website,win##body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"] > [id$="er"]:nth-child(-n+3):style(width: unset !important)
+ag,biz,buzz,by,city,club,co,com,fi,in,ink,kim,loan,me,name,net,org,pub,rest,run,sh,so,space,su,today,tv,vip,website,win##body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"]:style(padding-top: 0 !important; background-color: inherit !important)
 ! ---
 hdru.net##.page:style(margin-top: 0 !important)
 ! ---
@@ -28030,7 +28030,6 @@ mail.ru##div[slot="main-column"] > .tabs__container:style(margin-top: 5px !impor
 mail.ru##div[slot="main-column"] > :nth-child(-n+2) ~ [class] > [class]:style(visibility: unset !important; pointer-events: unset !important)
 my.mail.ru##html.window-loaded .b-video-backscreen
 my.mail.ru##html.window-loaded .b-video-controls__inside-play-button:style(visibility: visible !important; opacity: 0 !important; width: 100% !important; height: 100% !important; top: 0 !important; left: 0 !important)
-cloud.mail.ru##iframe[src^="https://o2.mail.ru/"] ~ div div[class^="ViewerHeader__closeIcon--"]
 mail.ru##main#grid .promo-news
 mail.ru##main#grid > .grid-middle ~ div:not([class]):not([id])
 ! --- RU AdList JS Fixes---

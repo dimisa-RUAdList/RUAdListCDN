@@ -1,8 +1,8 @@
-diff name:ruadlist lines:56 checksum:f0e756e0d0
+diff name:ruadlist lines:61 checksum:df8d0c04d7
 d4 2
 a5 2
-! Last modified: Sat, 08 Feb 2025 12:42:24 +0000
-! Diff-Path: ../patches/2025.2.8.762.patch#ruadlist
+! Last modified: Sat, 08 Feb 2025 17:21:07 +0000
+! Diff-Path: ../patches/2025.2.8.1041.patch#ruadlist
 d4132 1
 a4132 1
 ||newmedia.az^$third-party
@@ -39,6 +39,11 @@ lenta.ru##a[href*="?erid="]
 d25984 1
 a25984 1
 @@||yandex.ru/ads/system/adsdk.js$script,domain=aniboom.one|api-video.khl.ru|gisher.org|karaoke.ru|kino.tricolor.tv|limehd.tv|m24.ru|peers.tv|player.mediavitrina.ru|ren.tv|rutube.ru
+d26801 2
+a26802 2
+ag,biz,buzz,by,city,club,co,com,fi,in,ink,kim,loan,me,name,net,org,pub,rest,run,sh,so,space,su,today,tv,vip,website,win##body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"] > [id$="er"]:nth-child(-n+3):style(width: unset !important)
+ag,biz,buzz,by,city,club,co,com,fi,in,ink,kim,loan,me,name,net,org,pub,rest,run,sh,so,space,su,today,tv,vip,website,win##body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"]:style(padding-top: 0 !important; background-color: inherit !important)
+d28024 1
 d28213 1
 a28213 1
 vk.com,vk.ru##+js(abort-on-stack-trace, Object.prototype.onMrcShow, /feed|set/)
