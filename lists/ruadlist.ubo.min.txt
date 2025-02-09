@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 09 Feb 2025 08:27:14 +0000
-! Diff-Path: ../patches/2025.2.9.507.patch#ruadlist
+! Last modified: Sun, 09 Feb 2025 13:24:37 +0000
+! Diff-Path: ../patches/2025.2.9.804.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -366,6 +366,7 @@
 ||afruits.ru^$third-party
 ||afterview.ru^
 ||againandagain.biz^$third-party
+||agenteimmobiliare.info^$third-party
 ||agitazio.com^
 ||agrohod.ru^$third-party
 ||ahaclub.ru^$third-party
@@ -413,6 +414,7 @@
 ||alemobile.ru^
 ||alfadart.com^$third-party
 ||alfasense.net^$third-party
+||alfasrv.com^$third-party
 ||ali-bestshop.ru^$third-party
 ||alibestru*.ru^$third-party
 ||alibestru.ru^$third-party
@@ -4056,6 +4058,7 @@
 ||naplene.ru^$third-party
 ||naruhap.pro^$third-party
 ||nasdfg.com^$third-party
+||nashindex.ru^$third-party
 ||nasledstvo.int.ru^
 ||nasrispit.com^$third-party
 ||nastroyka.club^$third-party
@@ -4960,6 +4963,7 @@
 ||r-publick.info^$third-party
 ||r.interakt.ru^$third-party
 ||r0.mail.ru^
+||r0.mradx.net^
 ||r01.website^$third-party
 ||r0tl.info^$third-party
 ||r0wa9z6t8t.ru^$third-party
@@ -6391,6 +6395,7 @@
 ||uselingdo.com^$third-party
 ||useorthe.com^$third-party
 ||usermediaclick.ru^
+||usesentry.com^$third-party
 ||usimonat.com^
 ||uss1star.com^$third-party
 ||uss2star.com^$third-party
@@ -11024,7 +11029,6 @@ igdz1.ru^$script,domain=igdz.ru
 ||bigcinema.tv/uploads/partner/
 ||bigkyiv.com.ua/wp-content/plugins/firebox/media/public/js/firebox.js
 ||bikepost.ru/plugins/banneroid/
-||binmovie.org/banners/
 ||biofile.ru/css/*.jpg
 ||biomolecula.ru/media/bnr-images/
 ||bisnesideya.ru/wp-content/uploads*/banner$image
@@ -12871,6 +12875,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||siniy-ekran.ru/rb_
 ||sitefaktov.ru/js/*.js|$script,domain=sitefaktov.ru
 ||sixinch.org/banners/$image
+||ski.ru/vertelka/
 ||slavgorod.com.ua/AdTemp/
 ||slavutich.cn.ua/image/banners/
 ||slivki.by/banner/
@@ -17615,7 +17620,7 @@ fonzo.ru,hemingway-lib.ru,kinogo.biz,oka.fm,sex-empire.tv,sms24.info,sms24.me,te
 buzulukday.ru,nsday.ru,orenday.ru,perevolockday.ru,saltday.ru,sorochinskday.ru##.rek,.rek ~ .ramka
 med-heal.ru##.rek-bar
 lenov.ru##.rek-but
-lenov.ru##.rek-top
+lenov.ru,yapolitic.ru##.rek-top
 sport.kg##.rek-widgets
 baginya.org##.rek1
 okaygorod.com##.rek_ban a[href]:not([href^="https://okaygorod.com/"])
@@ -19133,6 +19138,7 @@ shans.com.ua##[src*="images/banners"]:not([src="images/banners/lin.gif"])
 7themes.su##[src*="promo_res"]
 ixbt.com##[src*="rose.ixbt.com/banner/"]
 sibnet.ru##[src*="sibnet.ru/iframe-wink"]
+ski.ru##[src*="ski.ru/vertelka/"]
 forum.zoneofgames.ru##[src*="trk.mail.ru/"]
 clubsandero.ru##[src="//an.yandex.ru/system/context.js"] ~ iframe
 rutor.org.ru##[src="/download32.png"]
@@ -21114,7 +21120,6 @@ wtftime.ru##div[style*="min-height: 200px;"]
 euro-football.ru,liveresult.ru##div[style*="min-height:"][style*="00px"]
 chipmaker.ru##div[style*="min-height:100px;"]
 tsn.ua##div[style*="opacity: 40%"]
-binmovie.org##div[style*="width: 240px; height: 600px"]
 anidub.vip,anidubonline.com##div[style*="width: 240px;"][style*="height: 400px;"]
 pb.wtf,piratbit.fun,piratbit.org,piratbit.top##div[style="background: #a94442;padding: 5px;font-size: 16px;"]
 mediazavod.ru##div[style="background: #fff;padding: 10px; margin-bottom: 20px;"]
@@ -21875,6 +21880,7 @@ howdyho.net,howdyho.pro#@#.g-ads
 howdyho.net,howdyho.pro#@#div[id^="yandex_rtb"]
 ||yandex.$domain=howdyho.net|howdyho.pro
 ||yastatic.$domain=howdyho.net|howdyho.pro
+vk.*#?#head > style:-abp-contains(/adchoice/i) {remove:true;}
 ! селекторы
 growhow.in.ua###custom-background-css {remove:true;}
 playground.ru###dfpPrerollDelay {remove:true;}
@@ -21885,6 +21891,7 @@ vk.com,vk.ru###feed_rows > div[class="feed_row "] > div[id]:not([data-post-id])
 the-geek.ru###wp-custom-css {remove:true;}
 vk.com,vk.ru##._feed_rows > div:not([id]):not([class])
 vk.com,vk.ru##._post_content > .post
+vk.com,vk.ru#?#._post_content:-abp-has(.Efxztiz1tCs6S5IDhTuN)
 vk.com,vk.ru#?#._post_content:-abp-has(.l2Q63U68RkAXQkXEoJnJ)
 vk.com,vk.ru#?#._post_content:-abp-has([src^="https://r0."])
 vk.com,vk.ru##._post_content[style=""]
@@ -26418,8 +26425,6 @@ www.bigmir.net##body > .page:style(padding-top: 144px !important)
 ! ---
 bin.ua##div[style="position:absolute;left:0px;top:0px;width:240px;margin-top:660px"]:style(position: relative !important; margin-top: auto !important)
 ! ---
-binmovie.org###content:style(top: 0 !important; left: 0 !important; width: 100% !important; margin-left: 0 !important)
-! ---
 bit.ua,gidonline.fun,greenpost.ua,kinoboom.su,kinogo-720.net,repackov.net,sportboom.info,urologypro.ru,virusinfo.info##body:not(#id):style(margin-top: 0 !important)
 ! ---
 blackwot.ru##div[class^="blackwot-"][style]
@@ -27389,6 +27394,8 @@ context.reverso.net##.blocked .text:style(filter: none !important; -webkit-filte
 context.reverso.net##.blocked:style(filter: none !important; -webkit-filter: none !important)
 context.reverso.net##.locked .example:style(filter: none !important; -webkit-filter: none !important)
 context.reverso.net##.popup[id*="-results-banner"]
+! ---
+rezka.biz###content:style(margin-top: unset !important)
 ! ---
 rezkahd.life##.have-brand .wrap:style(margin-top: 0 !important)
 ! ---

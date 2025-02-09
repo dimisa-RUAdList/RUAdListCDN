@@ -1,16 +1,43 @@
-diff name:ruadlist lines:15 checksum:e22a294e57
+diff name:ruadlist lines:42 checksum:1e39d6744d
 d4 2
 a5 2
-! Last modified: Sun, 09 Feb 2025 08:27:14 +0000
-! Diff-Path: ../patches/2025.2.9.507.patch#ruadlist
+! Last modified: Sun, 09 Feb 2025 13:24:37 +0000
+! Diff-Path: ../patches/2025.2.9.804.patch#ruadlist
+a368 1
+||agenteimmobiliare.info^$third-party
+a415 1
+||alfasrv.com^$third-party
+a4058 1
+||nashindex.ru^$third-party
+a4962 1
+||r0.mradx.net^
+a6393 1
+||usesentry.com^$third-party
+d11027 1
+a12873 1
+||ski.ru/vertelka/
+d17618 1
+a17618 1
+lenov.ru,yapolitic.ru##.rek-top
+a19135 1
+ski.ru##[src*="ski.ru/vertelka/"]
+d21117 1
+a21877 1
+vk.*#?#head > style:-abp-contains(/adchoice/i) {remove:true;}
+a21887 1
+vk.com,vk.ru#?#._post_content:-abp-has(.Efxztiz1tCs6S5IDhTuN)
 a22631 1
 lenta.ru##a[class="card-mini _topnews"][href^="/extlink/"]
 a22632 1
 lenta.ru##a[href*="?erid="]
+d26419 2
 d26808 2
 a26809 2
 ag,biz,buzz,by,city,club,co,com,fi,in,ink,kim,loan,me,name,net,org,pub,rest,run,sh,so,space,su,today,tv,vip,website,win##body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"] > [id$="er"]:nth-child(-n+3):style(width: unset !important)
 ag,biz,buzz,by,city,club,co,com,fi,in,ink,kim,loan,me,name,net,org,pub,rest,run,sh,so,space,su,today,tv,vip,website,win##body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"]:style(padding-top: 0 !important; background-color: inherit !important)
+a27390 2
+rezka.biz###content:style(margin-top: unset !important)
+! ---
 d28031 1
 a28262 1
 appleinsider.ru##+js(href-sanitizer, a[href*="?goto=https"], ?goto)

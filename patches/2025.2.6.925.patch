@@ -1,21 +1,42 @@
-diff name:ruadlist lines:43 checksum:e22a294e57
+diff name:ruadlist lines:68 checksum:1e39d6744d
 d4 2
 a5 2
-! Last modified: Sun, 09 Feb 2025 08:27:14 +0000
-! Diff-Path: ../patches/2025.2.9.507.patch#ruadlist
-a4961 1
+! Last modified: Sun, 09 Feb 2025 13:24:37 +0000
+! Diff-Path: ../patches/2025.2.9.804.patch#ruadlist
+a368 1
+||agenteimmobiliare.info^$third-party
+a415 1
+||alfasrv.com^$third-party
+a4058 1
+||nashindex.ru^$third-party
+a4961 2
 ||r0.mail.ru^
+||r0.mradx.net^
+a6392 1
+||usesentry.com^$third-party
 a9091 1
 ||r0.mail.ru/redir/$popup
+d11025 1
+a12871 1
+||ski.ru/vertelka/
 a13328 1
 ||vk.com/ads_light.php$image
+d17615 1
+a17615 1
+lenov.ru,yapolitic.ru##.rek-top
+a19132 1
+ski.ru##[src*="ski.ru/vertelka/"]
+d21114 1
 d21847 1
 a21847 1
 ://pikabu.ru/$csp=connect-src https://pikabu.ru/ajax/ https://pikabu.ru/ajax.php *.pikabu.ru/ data: https://pikabu.ru/.well-known/ wss://pikabu.ru/.well-known/
 d21860 1
 a21860 1
 ||pikabu.ru/ajax/*?qSNdb=$xmlhttprequest
-a21884 1
+a21874 1
+vk.*#?#head > style:-abp-contains(/adchoice/i) {remove:true;}
+a21884 2
+vk.com,vk.ru#?#._post_content:-abp-has(.Efxztiz1tCs6S5IDhTuN)
 vk.com,vk.ru#?#._post_content:-abp-has(.l2Q63U68RkAXQkXEoJnJ)
 a22627 1
 lenta.ru##a[class="card-mini _topnews"][href^="/extlink/"]
@@ -24,10 +45,14 @@ lenta.ru##a[href*="?erid="]
 d25987 1
 a25987 1
 @@||yandex.ru/ads/system/adsdk.js$script,domain=aniboom.one|api-video.khl.ru|gisher.org|karaoke.ru|kino.tricolor.tv|limehd.tv|m24.ru|peers.tv|player.mediavitrina.ru|ren.tv|rutube.ru
+d26415 2
 d26804 2
 a26805 2
 ag,biz,buzz,by,city,club,co,com,fi,in,ink,kim,loan,me,name,net,org,pub,rest,run,sh,so,space,su,today,tv,vip,website,win##body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"] > [id$="er"]:nth-child(-n+3):style(width: unset !important)
 ag,biz,buzz,by,city,club,co,com,fi,in,ink,kim,loan,me,name,net,org,pub,rest,run,sh,so,space,su,today,tv,vip,website,win##body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"]:style(padding-top: 0 !important; background-color: inherit !important)
+a27386 2
+rezka.biz###content:style(margin-top: unset !important)
+! ---
 d28027 1
 d28099 1
 d28217 1
