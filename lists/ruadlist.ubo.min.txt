@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 10 Feb 2025 04:30:20 +0000
-! Diff-Path: ../patches/2025.2.10.270.patch#ruadlist
+! Last modified: Mon, 10 Feb 2025 09:26:27 +0000
+! Diff-Path: ../patches/2025.2.10.566.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -8482,6 +8482,7 @@ by,~mail.ru,ru,ua##.banner_box
 ##[href*="postlnk.com"]
 ##[href^="https://download.cdn.yandex.net/yandex-tag/weboffer/"]
 ##[href^="https://pxl.leads.su/click/"]
+##[href^="https://trkleads.su/click/"]
 ##[id^="n4p_"]
 ##[id^="newPortal_informer_"]
 ##[id^="relap-custom-iframe-rec"]
@@ -21865,7 +21866,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||imgfrost.net^$third-party
 ||liveinternet.ru/utf/lici.js?
 ||news.mail.ru/-/*.js?
-||pikabu.ru/ajax/*?qSNdb=$xmlhttprequest
+||pikabu.ru/ajax/*?ZA0lk=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
