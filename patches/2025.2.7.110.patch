@@ -1,17 +1,20 @@
-diff name:ruadlist lines:63 checksum:0a106a3ab5
+diff name:ruadlist lines:74 checksum:52dee9009a
 d4 2
 a5 2
-! Last modified: Mon, 10 Feb 2025 19:18:59 +0000
-! Diff-Path: ../patches/2025.2.10.1158.patch#ruadlist
+! Last modified: Tue, 11 Feb 2025 01:50:03 +0000
+! Diff-Path: ../patches/2025.2.11.110.patch#ruadlist
 a368 1
 ||agenteimmobiliare.info^$third-party
 a415 1
 ||alfasrv.com^$third-party
+a1400 1
+||d0.mradx.net^
 a4058 1
 ||nashindex.ru^$third-party
-a4961 2
+a4961 3
 ||r0.mail.ru^
 ||r0.mradx.net^
+||r0.mradx.ru^
 a6392 1
 ||usesentry.com^$third-party
 a8478 1
@@ -33,10 +36,18 @@ d21860 1
 a21860 1
 ||pikabu.ru/ajax/*?ZA0lk=$xmlhttprequest
 a21874 1
-vk.*#?#head > style:-abp-contains(/adchoice/i) {remove:true;}
-a21884 2
+vk.*##head > style:-abp-contains(/adchoice/i) {remove:true;}
+d21885 1
+a21885 4
 vk.com,vk.ru#?#._post_content:-abp-has(.Efxztiz1tCs6S5IDhTuN)
+vk.com,vk.ru#?#._post_content:-abp-has(.g03FJ4dTToqroympKAMc)
 vk.com,vk.ru#?#._post_content:-abp-has(.l2Q63U68RkAXQkXEoJnJ)
+vk.com,vk.ru#?#._post_content:-abp-has([src*="mradx."])
+d21887 3
+a21889 3
+vk.com,vk.ru##.feed_row > [data-post-id]:not([id^="post"])
+vk.com,vk.ru##.feed_row > [data-post-id][id^="post"] > :not([class="_post_content"])
+vk.com,vk.ru##.feed_row > [data-post-id][id^="post"]:not([post_view_hash])
 a22627 1
 lenta.ru##a[class="card-mini _topnews"][href^="/extlink/"]
 a22628 1

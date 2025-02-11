@@ -1,12 +1,29 @@
-diff name:ruadlist lines:11 checksum:0a106a3ab5
+diff name:ruadlist lines:28 checksum:52dee9009a
 d4 2
 a5 2
-! Last modified: Mon, 10 Feb 2025 19:18:59 +0000
-! Diff-Path: ../patches/2025.2.10.1158.patch#ruadlist
+! Last modified: Tue, 11 Feb 2025 01:50:03 +0000
+! Diff-Path: ../patches/2025.2.11.110.patch#ruadlist
+a1402 1
+||d0.mradx.net^
+a4966 1
+||r0.mradx.ru^
 a8484 1
 ##[href^="https://trkleads.su/click/"]
 d21868 1
 a21868 1
 ||pikabu.ru/ajax/*?ZA0lk=$xmlhttprequest
+d21883 1
+a21883 1
+vk.*##head > style:-abp-contains(/adchoice/i) {remove:true;}
+a21894 1
+vk.com,vk.ru#?#._post_content:-abp-has(.g03FJ4dTToqroympKAMc)
+d21896 1
+a21896 1
+vk.com,vk.ru#?#._post_content:-abp-has([src*="mradx."])
+d21898 3
+a21900 3
+vk.com,vk.ru##.feed_row > [data-post-id]:not([id^="post"])
+vk.com,vk.ru##.feed_row > [data-post-id][id^="post"] > :not([class="_post_content"])
+vk.com,vk.ru##.feed_row > [data-post-id][id^="post"]:not([post_view_hash])
 a25262 1
 @@||2ip.*/js/evercookie/js/evercookie.js|$script,~third-party
