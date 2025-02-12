@@ -1,8 +1,8 @@
-diff name:ruadlist lines:70 checksum:fed20fbd94
+diff name:ruadlist lines:76 checksum:5f466ef0e5
 d4 2
 a5 2
-! Last modified: Wed, 12 Feb 2025 16:31:51 +0000
-! Diff-Path: ../patches/2025.2.12.991.patch#ruadlist
+! Last modified: Wed, 12 Feb 2025 21:22:41 +0000
+! Diff-Path: ../patches/2025.2.12.1282.patch#ruadlist
 a3037 1
 ||journalrussia.ru^$third-party
 a3841 1
@@ -60,9 +60,15 @@ a24558 1
 d24666 2
 a24667 1
 ||travelpayouts.com^$third-party
+a27476 2
+shedevrum.ai###app > .items-center > .items-center:style(height: unset !important)
+! ---
 d28233 1
 a28233 1
 vk.com,vk.ru##+js(abort-on-stack-trace, Object.prototype.checkMrc, /feed|set/)
+d28411 1
+a28411 1
+dzen.ru,shedevrum.ai##+js(set-constant, Object.prototype.getUaasConfig, undefined)
 d28504 1
 a28504 1
 vk.com,vk.ru##.wall_module > div[id]:first-child > :matches-prop(innerHTML="/format_edit|mradx\.|media_on_/")
