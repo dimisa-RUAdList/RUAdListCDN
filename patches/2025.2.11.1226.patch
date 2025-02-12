@@ -1,15 +1,21 @@
-diff name:ruadlist lines:33 checksum:9b5ce18010
+diff name:ruadlist lines:51 checksum:fed20fbd94
 d4 2
 a5 2
-! Last modified: Wed, 12 Feb 2025 11:20:24 +0000
-! Diff-Path: ../patches/2025.2.12.680.patch#ruadlist
+! Last modified: Wed, 12 Feb 2025 16:31:51 +0000
+! Diff-Path: ../patches/2025.2.12.991.patch#ruadlist
+a3037 1
+||journalrussia.ru^$third-party
 a3932 1
 ||mradx.ru^$third-party
 d4969 1
+a6318 1
+||ufcplayer.ru^$third-party
 a7696 1
 .mail.ru/pixel/$image
 a12170 1
 ||mradx.net^$image,domain=vk-apps.com|vk.com|vk.ru
+a19688 1
+knigiskachat.ru##a[href^="/get"]
 d21875 1
 a21875 1
 ||pikabu.ru/ajax/*?ZA2lk=$xmlhttprequest
@@ -23,6 +29,18 @@ a21903 1
 vk.com,vk.ru#?#._post_content:-abp-has(.r4jouGh_Hfn9c5AzpbJg)
 a21908 1
 vk.com,vk.ru##.feed_row > [data-post-id][id^="post"][post_view_hash]:not([data-post-track-code])
+d22897 8
+a22904 10
+.xyz/$script,domain=torbobit.net|tourbobit.com|tourbobit.net|turbobeet.net|turbobi.pw|turbobif.com|turbobit.net|turbobita.net|turbobits.cc|turbobits.net|turboobit.com
+/brinpopup.js$script,domain=torbobit.net|tourbobit.com|tourbobit.net|turbobeet.net|turbobi.pw|turbobif.com|turbobit.net|turbobita.net|turbobits.cc|turbobits.net|turboobit.com
+/custom_code/*$script,domain=torbobit.net|tourbobit.com|tourbobit.net|turbobeet.net|turbobi.pw|turbobif.com|turbobit.net|turbobita.net|turbobits.cc|turbobits.net|turboobit.com
+/pus/*$script,domain=torbobit.net|tourbobit.com|tourbobit.net|turbobeet.net|turbobi.pw|turbobif.com|turbobit.net|turbobita.net|turbobits.cc|turbobits.net|turboobit.com
+/ybrowser/frame.png|$image,domain=torbobit.net|tourbobit.com|tourbobit.net|turbobeet.net|turbobi.pw|turbobif.com|turbobit.net|turbobita.net|turbobits.cc|turbobits.net|turboobit.com
+torbobit.net,tourbobit.com,tourbobit.net,turbobeet.net,turbobi.pw,turbobif.com,turbobit.net,turbobita.net,turbobits.cc,turbobits.net,turboobit.com###window-body > #formula ~ p
+torbobit.net,tourbobit.com,tourbobit.net,turbobeet.net,turbobi.pw,turbobif.com,turbobit.net,turbobita.net,turbobits.cc,turbobits.net,turboobit.com###window-body > :not(p)
+torbobit.net,tourbobit.com,tourbobit.net,turbobeet.net,turbobi.pw,turbobif.com,turbobit.net,turbobita.net,turbobits.cc,turbobits.net,turboobit.com###window-body > a + p
+torbobit.net,tourbobit.com,tourbobit.net,turbobeet.net,turbobi.pw,turbobif.com,turbobit.net,turbobita.net,turbobits.cc,turbobits.net,turboobit.com###window-frame > #window-title
+torbobit.net,tourbobit.com,tourbobit.net,turbobeet.net,turbobi.pw,turbobif.com,turbobit.net,turbobita.net,turbobits.cc,turbobits.net,turboobit.com##center > a > img
 d28236 1
 a28236 1
 vk.com,vk.ru##+js(abort-on-stack-trace, Object.prototype.checkMrc, /feed|set/)

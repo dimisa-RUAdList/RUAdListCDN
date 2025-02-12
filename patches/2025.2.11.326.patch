@@ -1,8 +1,10 @@
-diff name:ruadlist lines:52 checksum:9b5ce18010
+diff name:ruadlist lines:70 checksum:fed20fbd94
 d4 2
 a5 2
-! Last modified: Wed, 12 Feb 2025 11:20:24 +0000
-! Diff-Path: ../patches/2025.2.12.680.patch#ruadlist
+! Last modified: Wed, 12 Feb 2025 16:31:51 +0000
+! Diff-Path: ../patches/2025.2.12.991.patch#ruadlist
+a3037 1
+||journalrussia.ru^$third-party
 a3841 1
 ||mn-tz.ltd^$third-party
 a3931 1
@@ -11,6 +13,8 @@ d4968 1
 a6146 2
 ||tp-em.cc^$third-party
 ||tpembar.com^$third-party
+a6315 1
+||ufcplayer.ru^$third-party
 a7693 1
 .mail.ru/pixel/$image
 a12167 1
@@ -18,6 +22,8 @@ a12167 1
 d15029 1
 a15029 1
 3iks.org,androidkino.net,btrans.by,crimea-news.com,dugtor.ru,dv-gazeta.info,internet-technologies.ru,kinosimka.be,novyny.live,progroshi.news,proukraine.news,qna.center,reestr.rublacklist.net,resheba.top,reviewscompanies.club,vesti.uz,wotsite.net,xcadr.tv##.adv
+a19685 1
+knigiskachat.ru##a[href^="/get"]
 a21801 1
 travelinka.ru##tp-cascoon
 d21871 1
@@ -36,6 +42,18 @@ vk.com,vk.ru##.feed_row > [data-post-id][id^="post"][post_view_hash]:not([data-p
 d21917 1
 a21917 1
 drive2.ru,shedevrum.ai##[data-container="outer"]
+d22893 8
+a22900 10
+.xyz/$script,domain=torbobit.net|tourbobit.com|tourbobit.net|turbobeet.net|turbobi.pw|turbobif.com|turbobit.net|turbobita.net|turbobits.cc|turbobits.net|turboobit.com
+/brinpopup.js$script,domain=torbobit.net|tourbobit.com|tourbobit.net|turbobeet.net|turbobi.pw|turbobif.com|turbobit.net|turbobita.net|turbobits.cc|turbobits.net|turboobit.com
+/custom_code/*$script,domain=torbobit.net|tourbobit.com|tourbobit.net|turbobeet.net|turbobi.pw|turbobif.com|turbobit.net|turbobita.net|turbobits.cc|turbobits.net|turboobit.com
+/pus/*$script,domain=torbobit.net|tourbobit.com|tourbobit.net|turbobeet.net|turbobi.pw|turbobif.com|turbobit.net|turbobita.net|turbobits.cc|turbobits.net|turboobit.com
+/ybrowser/frame.png|$image,domain=torbobit.net|tourbobit.com|tourbobit.net|turbobeet.net|turbobi.pw|turbobif.com|turbobit.net|turbobita.net|turbobits.cc|turbobits.net|turboobit.com
+torbobit.net,tourbobit.com,tourbobit.net,turbobeet.net,turbobi.pw,turbobif.com,turbobit.net,turbobita.net,turbobits.cc,turbobits.net,turboobit.com###window-body > #formula ~ p
+torbobit.net,tourbobit.com,tourbobit.net,turbobeet.net,turbobi.pw,turbobif.com,turbobit.net,turbobita.net,turbobits.cc,turbobits.net,turboobit.com###window-body > :not(p)
+torbobit.net,tourbobit.com,tourbobit.net,turbobeet.net,turbobi.pw,turbobif.com,turbobit.net,turbobita.net,turbobits.cc,turbobits.net,turboobit.com###window-body > a + p
+torbobit.net,tourbobit.com,tourbobit.net,turbobeet.net,turbobi.pw,turbobif.com,turbobit.net,turbobita.net,turbobits.cc,turbobits.net,turboobit.com###window-frame > #window-title
+torbobit.net,tourbobit.com,tourbobit.net,turbobeet.net,turbobi.pw,turbobif.com,turbobit.net,turbobita.net,turbobits.cc,turbobits.net,turboobit.com##center > a > img
 d24558 1
 a24558 1
 ||sravni.ru^$third-party
