@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 12 Feb 2025 06:33:09 +0000
-! Diff-Path: ../patches/2025.2.12.393.patch#ruadlist
+! Last modified: Wed, 12 Feb 2025 11:20:24 +0000
+! Diff-Path: ../patches/2025.2.12.680.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -3930,6 +3930,7 @@
 ||mqqrud.com^$third-party
 ||mquvqdhzgfyjl.com^$third-party
 ||mqwcuesny6.ru^
+||mradx.ru^$third-party
 ||mrakosy.ru^$third-party
 ||mrgreekroad.com^$third-party
 ||mromalt.ru^$third-party
@@ -4966,7 +4967,6 @@
 ||r.interakt.ru^$third-party
 ||r0.mail.ru^
 ||r0.mradx.net^
-||r0.mradx.ru^
 ||r01.website^$third-party
 ||r0tl.info^$third-party
 ||r0wa9z6t8t.ru^$third-party
@@ -7694,6 +7694,7 @@ _verified.php?code=*&server=runetki.com
 .gold/next.html?$third-party,script
 .htm?href=*&tm_mode=
 .info/next.html?$third-party,script
+.mail.ru/pixel/$image
 .marketgid.com^$domain=~marketgid.com
 .md/ads/
 .php?idadv=
@@ -12168,6 +12169,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||mpclub.vip/files/*.js?$script
 ||mport.ua/?_tpl=r_banner
 ||mptron.com/img/
+||mradx.net^$image,domain=vk-apps.com|vk.com|vk.ru
 ||mrtranslate.ru/lorado.js
 ||mskd.ru/img/*x*_
 ||mskins.net/themes/mc/assets/promo/
@@ -21872,7 +21874,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||imgfrost.net^$third-party
 ||liveinternet.ru/utf/lici.js?
 ||news.mail.ru/-/*.js?
-||pikabu.ru/ajax/*?ZA1lk=$xmlhttprequest
+||pikabu.ru/ajax/*?ZA2lk=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -21885,15 +21887,15 @@ howdyho.net,howdyho.pro##.interesting_block_links::before
 howdyho.net,howdyho.pro##div[class^="csr-uniq"]
 howdyho.net,howdyho.pro#@#.g-ads
 howdyho.net,howdyho.pro#@#div[id^="yandex_rtb"]
+||vk-apps.com/*?type=leadform&d=
 ||yandex.$domain=howdyho.net|howdyho.pro
 ||yastatic.$domain=howdyho.net|howdyho.pro
-vk.*##head > style:-abp-contains(/adchoice/i) {remove:true;}
+vk.*##head > style:-abp-contains(/adchoice|mkit_|outlineBanner/i) {remove:true;}
 ! селекторы
 growhow.in.ua###custom-background-css {remove:true;}
 playground.ru###dfpPrerollDelay {remove:true;}
 vk.com,vk.ru###feed_rows > .feed_row > div:not([id])
 vk.com,vk.ru###feed_rows > .feed_row ~ :not(.feed_row)
-vk.com,vk.ru#?##feed_rows > .feed_row:-abp-has(.PostHeaderSubtitle:-abp-contains(/[Реклама]/))
 vk.com,vk.ru###feed_rows > div[class="feed_row "] > div[id]:not([data-post-id])
 the-geek.ru###wp-custom-css {remove:true;}
 vk.com,vk.ru##._feed_rows > div:not([id]):not([class])
@@ -21901,11 +21903,13 @@ vk.com,vk.ru##._post_content > .post
 vk.com,vk.ru#?#._post_content:-abp-has(.Efxztiz1tCs6S5IDhTuN)
 vk.com,vk.ru#?#._post_content:-abp-has(.g03FJ4dTToqroympKAMc)
 vk.com,vk.ru#?#._post_content:-abp-has(.l2Q63U68RkAXQkXEoJnJ)
+vk.com,vk.ru#?#._post_content:-abp-has(.r4jouGh_Hfn9c5AzpbJg)
 vk.com,vk.ru#?#._post_content:-abp-has([src*="mradx."])
 vk.com,vk.ru##._post_content[style=""]
 vk.com,vk.ru##.feed_row > [data-post-id]:not([id^="post"])
 vk.com,vk.ru##.feed_row > [data-post-id][id^="post"] > :not([class="_post_content"])
 vk.com,vk.ru##.feed_row > [data-post-id][id^="post"]:not([post_view_hash])
+vk.com,vk.ru##.feed_row > [data-post-id][id^="post"][post_view_hash]:not([data-post-track-code])
 vk.com,vk.ru#?#.feed_row > [id^="post-"] > ._post_content:-abp-has(> :first-child:not(.PostHeader))
 vk.com,vk.ru##.feed_row > div[class$=" post"]
 e.mail.ru##.layout__column_right-indented
@@ -28233,7 +28237,7 @@ phys-kids.com##+js(abort-on-property-write, fetch)
 gamemag.ru##+js(abort-on-property-write, keepAdblock)
 kakprosto.ru##+js(abort-on-property-write, window.yaProxy)
 tvzvezda.ru##+js(abort-on-stack-trace, Object.prototype.autoplay, assets)
-vk.com,vk.ru##+js(abort-on-stack-trace, Object.prototype.onMrcShow, /feed|set/)
+vk.com,vk.ru##+js(abort-on-stack-trace, Object.prototype.checkMrc, /feed|set/)
 blackwot.ru##+js(abort-on-stack-trace, document.getElementsByTagName, adsBlocked)
 forums.rusmedserv.com##+js(abort-on-stack-trace, fetch, eval)
 7days.ru##+js(addEventListener-defuser, /^(?:contextmenu|keydown)$/)
@@ -28504,7 +28508,7 @@ pikabu.ru##.stories-feed__container > .story[data-author-name] ~ .story[data-con
 player.twitch.tv##.ubo-overlay > .player-ad-notice
 dynamo.kiev.ua##.video-scroll:remove()
 vk.com,vk.ru##.wall_module > div[id]:first-child > :matches-attr(/[0-9]/):remove()
-vk.com,vk.ru##.wall_module > div[id]:first-child > :matches-prop(innerHTML="/format_edit|mradx\.net|media_on_/")
+vk.com,vk.ru##.wall_module > div[id]:first-child > :matches-prop(innerHTML="/format_edit|mradx\.|media_on_/")
 vk.com,vk.ru##.wall_module > div[id]:first-child > div > div:matches-attr("/[0-9]/"="")
 /(aniqit|kodik)./$subdocument,removeparam=geoblock
 /^https?://yastatic\.net\/www\/_\/[^\s]{150,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
@@ -28548,7 +28552,7 @@ pronpic.org##div[style="color:red;font-size:25px;"], .adblock_loock
 fanserial.*,fanserialstv.net,hdrezka.*,rezka.*##+js(set-constant, Object.prototype.preroll, undefined)
 hdrezka.*,rezka.*##+js(abort-current-inline-script, document.getElementsByTagName, AMSP.loadAsset)
 howdyho.*##+js(no-setTimeout-if, _0x)
-howdyho.*##+js(set-attr, #progress-value, data-timer, 16)
+howdyho.*##+js(set-attr, #progress-value, data-timer, 25)
 dzen.ru##iframe[style^="position:"][style*="absolute"][srcdoc]:remove()
 m.rp5.*#@#.adsbygoogle
 reshu.by,sdamgia.ru##main > div > div > div:has-text(/rotator|блокировщик/)

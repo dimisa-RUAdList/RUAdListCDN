@@ -1,8 +1,8 @@
-diff name:ruadlist lines:69 checksum:a06b1895b1
+diff name:ruadlist lines:88 checksum:9b5ce18010
 d4 2
 a5 2
-! Last modified: Wed, 12 Feb 2025 06:33:09 +0000
-! Diff-Path: ../patches/2025.2.12.393.patch#ruadlist
+! Last modified: Wed, 12 Feb 2025 11:20:24 +0000
+! Diff-Path: ../patches/2025.2.12.680.patch#ruadlist
 a368 1
 ||agenteimmobiliare.info^$third-party
 a415 1
@@ -11,19 +11,24 @@ a1400 1
 ||d0.mradx.net^
 a3838 1
 ||mn-tz.ltd^$third-party
+a3928 1
+||mradx.ru^$third-party
 a4058 1
 ||nashindex.ru^$third-party
-a4962 2
+a4962 1
 ||r0.mradx.net^
-||r0.mradx.ru^
 a6140 2
 ||tp-em.cc^$third-party
 ||tpembar.com^$third-party
 a6393 1
 ||usesentry.com^$third-party
+a7686 1
+.mail.ru/pixel/$image
 a8479 1
 ##[href^="https://trkleads.su/click/"]
 d11027 1
+a12160 1
+||mradx.net^$image,domain=vk-apps.com|vk.com|vk.ru
 a12873 1
 ||ski.ru/vertelka/
 d15021 1
@@ -39,20 +44,25 @@ a21793 1
 travelinka.ru##tp-cascoon
 d21863 1
 a21863 1
-||pikabu.ru/ajax/*?ZA1lk=$xmlhttprequest
+||pikabu.ru/ajax/*?ZA2lk=$xmlhttprequest
+a21875 1
+||vk-apps.com/*?type=leadform&d=
 a21877 1
-vk.*##head > style:-abp-contains(/adchoice/i) {remove:true;}
+vk.*##head > style:-abp-contains(/adchoice|mkit_|outlineBanner/i) {remove:true;}
+d21883 1
 a21887 2
 vk.com,vk.ru#?#._post_content:-abp-has(.Efxztiz1tCs6S5IDhTuN)
 vk.com,vk.ru#?#._post_content:-abp-has(.g03FJ4dTToqroympKAMc)
 d21889 1
-a21889 1
+a21889 2
+vk.com,vk.ru#?#._post_content:-abp-has(.r4jouGh_Hfn9c5AzpbJg)
 vk.com,vk.ru#?#._post_content:-abp-has([src*="mradx."])
 d21891 3
-a21893 3
+a21893 4
 vk.com,vk.ru##.feed_row > [data-post-id]:not([id^="post"])
 vk.com,vk.ru##.feed_row > [data-post-id][id^="post"] > :not([class="_post_content"])
 vk.com,vk.ru##.feed_row > [data-post-id][id^="post"]:not([post_view_hash])
+vk.com,vk.ru##.feed_row > [data-post-id][id^="post"][post_view_hash]:not([data-post-track-code])
 d21906 1
 a21906 1
 drive2.ru,shedevrum.ai##[data-container="outer"]
@@ -65,6 +75,15 @@ a24656 1
 a25255 1
 @@||2ip.*/js/evercookie/js/evercookie.js|$script,~third-party
 d26421 2
-a27391 2
-! ---
+a27392 2
 rezka.biz###content:style(margin-top: unset !important)
+! ---
+d28221 1
+a28221 1
+vk.com,vk.ru##+js(abort-on-stack-trace, Object.prototype.checkMrc, /feed|set/)
+d28492 1
+a28492 1
+vk.com,vk.ru##.wall_module > div[id]:first-child > :matches-prop(innerHTML="/format_edit|mradx\.|media_on_/")
+d28536 1
+a28536 1
+howdyho.*##+js(set-attr, #progress-value, data-timer, 25)

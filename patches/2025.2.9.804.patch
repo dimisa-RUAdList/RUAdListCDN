@@ -1,19 +1,23 @@
-diff name:ruadlist lines:47 checksum:a06b1895b1
+diff name:ruadlist lines:65 checksum:9b5ce18010
 d4 2
 a5 2
-! Last modified: Wed, 12 Feb 2025 06:33:09 +0000
-! Diff-Path: ../patches/2025.2.12.393.patch#ruadlist
+! Last modified: Wed, 12 Feb 2025 11:20:24 +0000
+! Diff-Path: ../patches/2025.2.12.680.patch#ruadlist
 a1402 1
 ||d0.mradx.net^
 a3840 1
 ||mn-tz.ltd^$third-party
-a4966 1
-||r0.mradx.ru^
+a3930 1
+||mradx.ru^$third-party
 a6144 2
 ||tp-em.cc^$third-party
 ||tpembar.com^$third-party
+a7691 1
+.mail.ru/pixel/$image
 a8484 1
 ##[href^="https://trkleads.su/click/"]
+a12164 1
+||mradx.net^$image,domain=vk-apps.com|vk.com|vk.ru
 d15026 1
 a15026 1
 3iks.org,androidkino.net,btrans.by,crimea-news.com,dugtor.ru,dv-gazeta.info,internet-technologies.ru,kinosimka.be,novyny.live,progroshi.news,proukraine.news,qna.center,reestr.rublacklist.net,resheba.top,reviewscompanies.club,vesti.uz,wotsite.net,xcadr.tv##.adv
@@ -21,20 +25,25 @@ a21798 1
 travelinka.ru##tp-cascoon
 d21868 1
 a21868 1
-||pikabu.ru/ajax/*?ZA1lk=$xmlhttprequest
+||pikabu.ru/ajax/*?ZA2lk=$xmlhttprequest
+a21880 1
+||vk-apps.com/*?type=leadform&d=
 d21883 1
 a21883 1
-vk.*##head > style:-abp-contains(/adchoice/i) {remove:true;}
+vk.*##head > style:-abp-contains(/adchoice|mkit_|outlineBanner/i) {remove:true;}
+d21889 1
 a21894 1
 vk.com,vk.ru#?#._post_content:-abp-has(.g03FJ4dTToqroympKAMc)
 d21896 1
-a21896 1
+a21896 2
+vk.com,vk.ru#?#._post_content:-abp-has(.r4jouGh_Hfn9c5AzpbJg)
 vk.com,vk.ru#?#._post_content:-abp-has([src*="mradx."])
 d21898 3
-a21900 3
+a21900 4
 vk.com,vk.ru##.feed_row > [data-post-id]:not([id^="post"])
 vk.com,vk.ru##.feed_row > [data-post-id][id^="post"] > :not([class="_post_content"])
 vk.com,vk.ru##.feed_row > [data-post-id][id^="post"]:not([post_view_hash])
+vk.com,vk.ru##.feed_row > [data-post-id][id^="post"][post_view_hash]:not([data-post-track-code])
 d21913 1
 a21913 1
 drive2.ru,shedevrum.ai##[data-container="outer"]
@@ -46,3 +55,12 @@ a24663 1
 ||travelpayouts.com^$third-party
 a25262 1
 @@||2ip.*/js/evercookie/js/evercookie.js|$script,~third-party
+d28228 1
+a28228 1
+vk.com,vk.ru##+js(abort-on-stack-trace, Object.prototype.checkMrc, /feed|set/)
+d28499 1
+a28499 1
+vk.com,vk.ru##.wall_module > div[id]:first-child > :matches-prop(innerHTML="/format_edit|mradx\.|media_on_/")
+d28543 1
+a28543 1
+howdyho.*##+js(set-attr, #progress-value, data-timer, 25)

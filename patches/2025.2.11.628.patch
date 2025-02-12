@@ -1,21 +1,47 @@
-diff name:ruadlist lines:20 checksum:a06b1895b1
+diff name:ruadlist lines:46 checksum:9b5ce18010
 d4 2
 a5 2
-! Last modified: Wed, 12 Feb 2025 06:33:09 +0000
-! Diff-Path: ../patches/2025.2.12.393.patch#ruadlist
+! Last modified: Wed, 12 Feb 2025 11:20:24 +0000
+! Diff-Path: ../patches/2025.2.12.680.patch#ruadlist
 a3841 1
 ||mn-tz.ltd^$third-party
+a3931 1
+||mradx.ru^$third-party
+d4968 1
 a6146 2
 ||tp-em.cc^$third-party
 ||tpembar.com^$third-party
+a7693 1
+.mail.ru/pixel/$image
+a12167 1
+||mradx.net^$image,domain=vk-apps.com|vk.com|vk.ru
 a21801 1
 travelinka.ru##tp-cascoon
 d21871 1
 a21871 1
-||pikabu.ru/ajax/*?ZA1lk=$xmlhttprequest
+||pikabu.ru/ajax/*?ZA2lk=$xmlhttprequest
+a21883 1
+||vk-apps.com/*?type=leadform&d=
+d21886 1
+a21886 1
+vk.*##head > style:-abp-contains(/adchoice|mkit_|outlineBanner/i) {remove:true;}
+d21892 1
+a21899 1
+vk.com,vk.ru#?#._post_content:-abp-has(.r4jouGh_Hfn9c5AzpbJg)
+a21904 1
+vk.com,vk.ru##.feed_row > [data-post-id][id^="post"][post_view_hash]:not([data-post-track-code])
 d24558 1
 a24558 1
 ||sravni.ru^$third-party
 d24666 2
 a24667 1
 ||travelpayouts.com^$third-party
+d28233 1
+a28233 1
+vk.com,vk.ru##+js(abort-on-stack-trace, Object.prototype.checkMrc, /feed|set/)
+d28504 1
+a28504 1
+vk.com,vk.ru##.wall_module > div[id]:first-child > :matches-prop(innerHTML="/format_edit|mradx\.|media_on_/")
+d28548 1
+a28548 1
+howdyho.*##+js(set-attr, #progress-value, data-timer, 25)

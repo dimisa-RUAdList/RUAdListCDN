@@ -1,17 +1,21 @@
-diff name:ruadlist lines:43 checksum:a06b1895b1
+diff name:ruadlist lines:61 checksum:9b5ce18010
 d4 2
 a5 2
-! Last modified: Wed, 12 Feb 2025 06:33:09 +0000
-! Diff-Path: ../patches/2025.2.12.393.patch#ruadlist
+! Last modified: Wed, 12 Feb 2025 11:20:24 +0000
+! Diff-Path: ../patches/2025.2.12.680.patch#ruadlist
 a1402 1
 ||d0.mradx.net^
 a3840 1
 ||mn-tz.ltd^$third-party
-a4966 1
-||r0.mradx.ru^
+a3930 1
+||mradx.ru^$third-party
 a6144 2
 ||tp-em.cc^$third-party
 ||tpembar.com^$third-party
+a7691 1
+.mail.ru/pixel/$image
+a12165 1
+||mradx.net^$image,domain=vk-apps.com|vk.com|vk.ru
 d15027 1
 a15027 1
 3iks.org,androidkino.net,btrans.by,crimea-news.com,dugtor.ru,dv-gazeta.info,internet-technologies.ru,kinosimka.be,novyny.live,progroshi.news,proukraine.news,qna.center,reestr.rublacklist.net,resheba.top,reviewscompanies.club,vesti.uz,wotsite.net,xcadr.tv##.adv
@@ -19,20 +23,25 @@ a21799 1
 travelinka.ru##tp-cascoon
 d21869 1
 a21869 1
-||pikabu.ru/ajax/*?ZA1lk=$xmlhttprequest
+||pikabu.ru/ajax/*?ZA2lk=$xmlhttprequest
+a21881 1
+||vk-apps.com/*?type=leadform&d=
 d21884 1
 a21884 1
-vk.*##head > style:-abp-contains(/adchoice/i) {remove:true;}
+vk.*##head > style:-abp-contains(/adchoice|mkit_|outlineBanner/i) {remove:true;}
+d21890 1
 a21895 1
 vk.com,vk.ru#?#._post_content:-abp-has(.g03FJ4dTToqroympKAMc)
 d21897 1
-a21897 1
+a21897 2
+vk.com,vk.ru#?#._post_content:-abp-has(.r4jouGh_Hfn9c5AzpbJg)
 vk.com,vk.ru#?#._post_content:-abp-has([src*="mradx."])
 d21899 3
-a21901 3
+a21901 4
 vk.com,vk.ru##.feed_row > [data-post-id]:not([id^="post"])
 vk.com,vk.ru##.feed_row > [data-post-id][id^="post"] > :not([class="_post_content"])
 vk.com,vk.ru##.feed_row > [data-post-id][id^="post"]:not([post_view_hash])
+vk.com,vk.ru##.feed_row > [data-post-id][id^="post"][post_view_hash]:not([data-post-track-code])
 d21914 1
 a21914 1
 drive2.ru,shedevrum.ai##[data-container="outer"]
@@ -42,3 +51,12 @@ a24555 1
 d24663 2
 a24664 1
 ||travelpayouts.com^$third-party
+d28230 1
+a28230 1
+vk.com,vk.ru##+js(abort-on-stack-trace, Object.prototype.checkMrc, /feed|set/)
+d28501 1
+a28501 1
+vk.com,vk.ru##.wall_module > div[id]:first-child > :matches-prop(innerHTML="/format_edit|mradx\.|media_on_/")
+d28545 1
+a28545 1
+howdyho.*##+js(set-attr, #progress-value, data-timer, 25)
