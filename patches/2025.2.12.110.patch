@@ -1,8 +1,8 @@
-diff name:ruadlist lines:143 checksum:c8f5064899
+diff name:ruadlist lines:156 checksum:9d42cb3b40
 d4 2
 a5 2
-! Last modified: Sat, 15 Feb 2025 09:24:35 +0000
-! Diff-Path: ../patches/2025.2.15.564.patch#ruadlist
+! Last modified: Sat, 15 Feb 2025 14:22:04 +0000
+! Diff-Path: ../patches/2025.2.15.862.patch#ruadlist
 a240 1
 ||adlook.tech^$third-party
 d381 1
@@ -47,16 +47,26 @@ $third-party,script,domain=1000iodinsovet.ru|100polezno.ru|100popugaev.ru|1080ki
 d10796 1
 a12170 1
 ||mradx.net^$image,domain=vk-apps.com|vk.com|vk.ru
+a13341 1
+||vk.com/*/ads_light.
+a13344 1
+||vk.com/dist/web/mrtarg.
 d13612 1
 d13631 1
 d13639 1
 d13740 1
+d13821 1
 d14210 1
+d14864 1
+d14898 1
+a14898 1
+vk.com,vk.ru##._ads_promoted_post_data_w
 d14933 1
 d14955 1
 d14965 1
 d15002 1
 d15008 1
+d15011 2
 d15786 1
 a15786 1
 agropolit.com,elevatorist.com,filmozavr.com,filmozavr.net,gotennis.ru,inoprosport.ru,kinopati.ru,lada-granta.net,latifundist.com,lkforum.ru,myshows.me,osp.ru,overclockers.ua,podfm.ru,popcornnews.ru,psm7.com,superagronom.com,zemliak.com##.branding
@@ -80,6 +90,7 @@ a19246 1
 024.by,1777.ru,1istochnik.ru,7days.ru,actualnews.org,allboxing.ru,amurmedia.ru,argumenti.ru,atas.info,auto.ru,autosaratov.ru,autosport.com.ru,av.by,baby.ru,bel.ru,belkagomel.by,bidbaits.ru,carsweek.ru,chitamedia.su,chukotkamedia.ru,cnews.ru,cq.ru,ctc.ru,deita.ru,domclick.ru,eaomedia.ru,eva.ru,finam.ru,fishki.net,fontanka.ru,food.ru,friday.ru,gooool365.org,interface31.ru,intermedia.ru,irkutskmedia.ru,iz.ru,izhlife.ru,kaifolog.net,kamchatkamedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,lipetskmedia.ru,magadanmedia.ru,mel.fm,mk.ru,nakhodka.media,nashe.ru,neva.today,new-magazine.ru,noob-club.ru,nsn.fm,om1.ru,osnmedia.ru,peopletalk.ru,politnavigator.net,politrussia.com,povarenok.ru,priamurmedia.ru,primamedia.ru,prufy.ru,radiojazzfm.ru,radioultra.ru,readovka.news,realt.by,riamo.ru,rockfm.ru,russian.rt.com,rusvesna.su,sakhalinmedia.ru,sevastopolmedia.ru,sm.news,smolensk-i.ru,smotrim.ru,sovets.net,sovets24.ru,sravni.ru,starhit.ru,stavropol.media,study.ru,svpressa.ru,takiedela.ru,teleport2001.ru,topnews.ru,tsargrad.tv,tv2.today,tverigrad.ru,ukraina.ru,ulanmedia.ru,ussurmedia.ru,vm.ru,vsezdorovo.com,womanhit.ru,www.kolesa.ru,yakutiamedia.ru,ytronews.ru,zaycev.net##a[href*="//zen.yandex.ru/"]
 a19688 1
 knigiskachat.ru##a[href^="/get"]
+d20056 1
 d20376 1
 a20376 1
 peopletalk.ru,znaj.ua##div[class*="advertising"]
@@ -99,14 +110,16 @@ a21887 1
 d21890 1
 a21890 1
 vk.*##head > style:-abp-contains(/adchoice|mkit_|outlineBanner/i) {remove:true;}
-d21896 1
+d21896 2
+a21897 1
+vk.com,vk.ru###feed_rows > div[class="feed_row "] > div[id]:not([id^="feed_repost"]):not([data-post-id])
 a21903 1
 vk.com,vk.ru#?#._post_content:-abp-has(.r4jouGh_Hfn9c5AzpbJg)
-a21908 1
-vk.com,vk.ru##.feed_row > [data-post-id][id^="post"][post_view_hash]:not([data-post-track-code])
 d21921 1
 a21921 1
 drive2.ru##[data-container="outer"]
+a21952 1
+vk.com,vk.ru##div:first-child:not(.page_block) ~ .feed_row > [data-post-id][id^="post"][post_view_hash]:not([data-post-track-code])
 a21961 1
 shedevrum.ai##div[id^="header_block_"]
 d22272 1
@@ -136,8 +149,8 @@ vk.com,vk.ru##+js(abort-on-stack-trace, Object.prototype.checkMrc, /feed|set/)
 d28414 1
 a28414 1
 dzen.ru,shedevrum.ai##+js(set-constant, Object.prototype.getUaasConfig, undefined)
-d28507 1
-a28507 1
+d28506 3
+a28508 1
 vk.com,vk.ru##.wall_module > div[id]:first-child > :matches-prop(innerHTML="/format_edit|mradx\.|media_on_/")
 d28551 1
 a28551 1
