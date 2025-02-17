@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 17 Feb 2025 11:21:14 +0000
-! Diff-Path: ../patches/2025.2.17.681.patch#ruadlist
+! Last modified: Mon, 17 Feb 2025 16:30:36 +0000
+! Diff-Path: ../patches/2025.2.17.990.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -16942,6 +16942,7 @@ dni.ru##.main_wrapper > div[class="column column_left"]
 myfreeproject.com#?#.mainb > .main_block:-abp-has(> #slides > #reklama)
 csgolife.ru#?#.mainb > .main_block:-abp-has(> center > .slider)
 dungeonmaster.ru##.mainbanner
+interfax.ru,sport-interfax.ru##.mainblock ~ .mainblock .infinitblock::before
 the-cinema.online##.maincont > center
 torrents-soft.net##.maincont > div:nth-last-of-type(2) > a > img
 bookskeeper.ru##.maincont > div[class="clr"]
@@ -18166,8 +18167,7 @@ klops.ru##.supercover-banner-header
 bilshe.com#?#.svejnov:-abp-has(> h2 > b:-abp-contains(/^Інші/))
 games-porno.net##.swfgame_banners
 ictv.ua#?#.swiper-slide:-abp-has(> a[href*="utm_campai"])
-vokrug.tv#?#.swiper-wrapper > .series-carousel__item:-abp-has(a[target="_blank"])
-vokrug.tv##.swiper-wrapper > .series-carousel__item:nth-child(-n+2)
+vokrug.tv#?#.swiper-wrapper > .series-carousel__item:-abp-has(a[onclick*="adfox"])
 moniheal.com##.swiper-wrapper > a:not([href*="moniheal.com/"])
 tonkosti.ru##.sys-sky
 tv2.today##.t-aside-banners
@@ -21848,8 +21848,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||imgfrost.net^$third-party
 ||liveinternet.ru/utf/lici.js?
 ||news.mail.ru/-/*.js?
-||pikabu.ru/ajax/*?ZA4lk=$xmlhttprequest
-||pikabu.ru/ajax/*?ZA5lk=$xmlhttprequest
+||pikabu.ru/ajax/*?Z0Vl7=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
