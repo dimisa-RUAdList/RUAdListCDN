@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 18 Feb 2025 17:24:12 +0000
-! Diff-Path: ../patches/2025.2.18.1044.patch#ruadlist
+! Last modified: Tue, 18 Feb 2025 22:25:20 +0000
+! Diff-Path: ../patches/2025.2.18.1345.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -28221,6 +28221,7 @@ fm-app.ru,tvapp.su,yootv.ru##+js(addEventListener-defuser, /mouse/, cursorVisibl
 ~id.rambler.ru,rambler.ru,~vp.rambler.ru##+js(addEventListener-defuser, DOMContentLoaded, .j-mini-player__video)
 sibnet.ru##+js(addEventListener-defuser, DOMContentLoaded, /pon-/)
 sports.ru##+js(addEventListener-defuser, DOMContentLoaded, 0x)
+oblikbudget.com.ua##+js(addEventListener-defuser, DOMContentLoaded, addWindowOnClickStrategyHandler)
 cq.ru##+js(addEventListener-defuser, DOMContentLoaded, banners)
 1progs.me##+js(addEventListener-defuser, DOMContentLoaded, encodedUrl)
 xv-ru.com##+js(addEventListener-defuser, DOMContentLoaded, exo_tracker)
