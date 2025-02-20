@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 20 Feb 2025 09:26:05 +0000
-! Diff-Path: ../patches/2025.2.20.566.patch#ruadlist
+! Last modified: Thu, 20 Feb 2025 14:26:30 +0000
+! Diff-Path: ../patches/2025.2.20.866.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -8919,7 +8919,6 @@ by,~mail.ru,ru,ua##.banner_box
 ##a[onclick*="trtkp.ru"]
 me##body[onfocus*="reloadliveblock"] > #bugoverlay ~ table table[bgcolor="#dbdbdb"] td[bgcolor="#fafafa"]
 me##body[onfocus*="reloadliveblock"] > #bugoverlay ~ table tr > td[height^="9"][bgcolor]
-~vk.com,~vk.ru##div[class*="notifier_baloon_"]
 ##div[class*="relap"][class*="-rec-item"]
 ##div[class*="spklw"][data-type="ad"]
 ##div[class*="td-a-rec-id-"]
@@ -8935,7 +8934,6 @@ me##body[onfocus*="reloadliveblock"] > #bugoverlay ~ table tr > td[height^="9"][
 ##div[data-id^="div-gpt-ad-"]
 ##div[data-server-rendered="true"] > div[id^="block-"]
 ##div[data-server-rendered="true"] > div[id^="la-"]
-~vk.com,~vk.ru##div[id$="notifiers_wrap"]
 ##div[id*="Teaser_Block"]
 ##div[id^="CGCandy"]
 ##div[id^="Crt-"][style]
@@ -21845,7 +21843,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||imgfrost.net^$third-party
 ||liveinternet.ru/utf/lici.js?
 ||news.mail.ru/-/*.js?
-||pikabu.ru/ajax/*?6mL0d=$xmlhttprequest
+||pikabu.ru/ajax/*?al1J9=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -28221,7 +28219,7 @@ fm-app.ru,tvapp.su,yootv.ru##+js(addEventListener-defuser, /mouse/, cursorVisibl
 ~id.rambler.ru,rambler.ru,~vp.rambler.ru##+js(addEventListener-defuser, DOMContentLoaded, .j-mini-player__video)
 sibnet.ru##+js(addEventListener-defuser, DOMContentLoaded, /pon-/)
 sports.ru##+js(addEventListener-defuser, DOMContentLoaded, 0x)
-oblikbudget.com.ua##+js(addEventListener-defuser, DOMContentLoaded, addWindowOnClickStrategyHandler)
+oblikbudget.com.ua##+js(addEventListener-defuser, DOMContentLoaded, StrategyHandlers)
 cq.ru##+js(addEventListener-defuser, DOMContentLoaded, banners)
 1progs.me##+js(addEventListener-defuser, DOMContentLoaded, encodedUrl)
 xv-ru.com##+js(addEventListener-defuser, DOMContentLoaded, exo_tracker)
