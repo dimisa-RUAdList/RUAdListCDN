@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 26 Feb 2025 15:28:23 +0000
-! Diff-Path: ../patches/2025.2.26.928.patch#ruadlist
+! Last modified: Wed, 26 Feb 2025 20:26:42 +0000
+! Diff-Path: ../patches/2025.2.26.1226.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22767,14 +22767,14 @@ utro.ru##div[class^="partners-block"]
 ! Spaces и зеркала
 strip2.club,strip2.in,strip2.xxx,usersporn.com###sidebar > div[class]:last-child
 google-cloud.services,strip2.club,strip2.in,strip2.xxx,usersporn.com###siteContent > div:not([id]):not([class]) ~ div[class]
-gdespaces.com,gdespaces.net,spac.me,spac.run,spac.wtf,spac1.com,spac1.info,spac1.me,spac1.net,spac1.org,spac1.ru,spaces-blogs.com,spaces.im,spcs-files.xyz,spcs.bio,spcs.global,spcs.life,spcs.me,spcs.network,spcs.news,spcs.pro,spcs.pub,spcs.reviews,spcs.social,strip2.club,strip2.in,strip2.xxx,usersporn.com##.rightbar__reklama
-gdespaces.com,gdespaces.net,google-cloud.services,spac.me,spac.run,spac.wtf,spac1.com,spac1.info,spac1.me,spac1.net,spac1.org,spac1.ru,spaces-blogs.com,spaces.im,spcs-files.xyz,spcs.bio,spcs.global,spcs.life,spcs.me,spcs.mobi,spcs.network,spcs.news,spcs.pro,spcs.pub,spcs.reviews,spcs.social,strip2.club,strip2.in,strip2.xxx,usersporn.com##.tiled_cap
+gdespaces.com,gdespaces.net,spac.me,spac.run,spac.wtf,spac1.com,spac1.net,spac1.org,spaces-blogs.com,spaces.im,spcs-files.xyz,spcs.bio,spcs.life,spcs.me,spcs.network,spcs.pro,spcs.reviews,spcs.social,strip2.club,strip2.in,strip2.xxx,usersporn.com##.rightbar__reklama
+gdespaces.com,gdespaces.net,google-cloud.services,spac.me,spac.run,spac.wtf,spac1.com,spac1.net,spac1.org,spaces-blogs.com,spaces.im,spcs-files.xyz,spcs.bio,spcs.life,spcs.me,spcs.mobi,spcs.network,spcs.pro,spcs.reviews,spcs.social,strip2.club,strip2.in,strip2.xxx,usersporn.com##.tiled_cap
 strip2.club,strip2.in,strip2.xxx,usersporn.com##.tiles_wrapper > .js-file_item ~ div:not([class*="tiled"])
-/^(?!.*(spac.me)).*$/$third-party,script,domain=gdespaces.com|gdespaces.net|google-cloud.services|spac.me|spac.run|spac.wtf|spac1.com|spac1.info|spac1.me|spac1.net|spac1.org|spac1.ru|spaces-blogs.com|spaces.im|spcs-files.xyz|spcs.bio|spcs.global|spcs.life|spcs.me|spcs.mobi|spcs.network|spcs.news|spcs.pro|spcs.pub|spcs.reviews|spcs.social|strip2.club|strip2.in|strip2.xxx|usersporn.com
-gdespaces.com,gdespaces.net,spac.me,spac.run,spac.wtf,spac1.com,spac1.info,spac1.me,spac1.net,spac1.org,spac1.ru,spaces-blogs.com,spaces.im,spcs-files.xyz,spcs.bio,spcs.global,spcs.life,spcs.me,spcs.mobi,spcs.network,spcs.news,spcs.pro,spcs.pub,spcs.reviews,spcs.social#?#div[class]:-abp-has(> a[title] ~ a[title] > div[class])
-gdespaces.com,gdespaces.net,google-cloud.services,spac.me,spac.run,spac.wtf,spac1.com,spac1.info,spac1.me,spac1.net,spac1.org,spac1.ru,spaces-blogs.com,spaces.im,spcs-files.xyz,spcs.bio,spcs.global,spcs.life,spcs.me,spcs.mobi,spcs.network,spcs.news,spcs.pro,spcs.pub,spcs.reviews,spcs.social,strip2.club,strip2.in,strip2.xxx,usersporn.com##div[id][class][style="min-height:150px"]
+/^(?!.*(spac.me)).*$/$third-party,script,domain=gdespaces.com|gdespaces.net|google-cloud.services|spac.me|spac.run|spac.wtf|spac1.com|spac1.net|spac1.org|spaces-blogs.com|spaces.im|spcs-files.xyz|spcs.bio|spcs.life|spcs.me|spcs.mobi|spcs.network|spcs.pro|spcs.reviews|spcs.social|strip2.club|strip2.in|strip2.xxx|usersporn.com
+gdespaces.com,gdespaces.net,spac.me,spac.run,spac.wtf,spac1.com,spac1.net,spac1.org,spaces-blogs.com,spaces.im,spcs-files.xyz,spcs.bio,spcs.life,spcs.me,spcs.mobi,spcs.network,spcs.pro,spcs.reviews,spcs.social#?#div[class]:-abp-has(> a[title] ~ a[title] > div[class])
+gdespaces.com,gdespaces.net,google-cloud.services,spac.me,spac.run,spac.wtf,spac1.com,spac1.net,spac1.org,spaces-blogs.com,spaces.im,spcs-files.xyz,spcs.bio,spcs.life,spcs.me,spcs.mobi,spcs.network,spcs.pro,spcs.reviews,spcs.social,strip2.club,strip2.in,strip2.xxx,usersporn.com##div[id][class][style="min-height:150px"]
 ! Temporary rule, until denyallow in ABP-MV3 is implemented
-||world/$third-party,script,domain=gdespaces.com|gdespaces.net|google-cloud.services|spac.me|spac.run|spac.wtf|spac1.com|spac1.info|spac1.me|spac1.net|spac1.org|spac1.ru|spaces-blogs.com|spaces.im|spcs-files.xyz|spcs.bio|spcs.global|spcs.life|spcs.me|spcs.mobi|spcs.network|spcs.news|spcs.pro|spcs.pub|spcs.reviews|spcs.social|strip2.club|strip2.in|strip2.xxx|usersporn.com
+||world/$third-party,script,domain=gdespaces.com|gdespaces.net|google-cloud.services|spac.me|spac.run|spac.wtf|spac1.com|spac1.net|spac1.org|spaces-blogs.com|spaces.im|spcs-files.xyz|spcs.bio|spcs.life|spcs.me|spcs.mobi|spcs.network|spcs.pro|spcs.reviews|spcs.social|strip2.club|strip2.in|strip2.xxx|usersporn.com
 ! Sports.ru, а также by.tribuna.com, ua.tribuna.com
 sports.ru###top-ad
 sports.ru###top-banner-place
@@ -27825,6 +27825,7 @@ yandex.by,yandex.kz,yandex.ru,yandex.uz##.sidebar-container div[class^="banner-p
 yandex.by,yandex.kz,yandex.ru,yandex.uz##a[href^="/maps/"][href*="/tinkoff_has_offer"]
 ! ---
 ! кью
+yandex.ru##body[class*="page_q"] .top-root > div:style(min-height: 0 !important)
 yandex.ru##div > .banner-root ~ .page-root > #page > div[class]:first-child > div[class]:first-child + div + div > div[style] > div[style] > div > div:last-child div:style(min-height: 0 !important)
 yandex.ru##div > .banner-root ~ .page-root > #page > div[class]:first-child > div[class]:first-child + div > section > div[class]:first-child ~ div > div > div:style(min-height: 0 !important)
 yandex.ru##div > .banner-root ~ .page-root > #page > div[class]:first-child > div[class]:first-child + div > section > div[class]:first-child ~ div > div > span ~ div > div[class]:style(min-height: 0 !important)
@@ -28070,7 +28071,7 @@ fenglish.site,mp3spy.cc##+js(abort-current-inline-script, JSON.parse, atob)
 draug.ru,modsforwot.ru##+js(abort-current-inline-script, Math.floor, AdSense)
 agroreview.com##+js(abort-current-inline-script, Object.defineProperty, rcBuf)
 filmisub.com,kinofen.net##+js(abort-current-inline-script, XMLHttpRequest, document.querySelectorAll)
-gdespaces.com,gdespaces.net,google-cloud.services,spac.me,spac.run,spac.wtf,spac1.com,spac1.info,spac1.me,spac1.net,spac1.org,spac1.ru,spaces-blogs.com,spaces.im,spcs-files.xyz,spcs.bio,spcs.global,spcs.life,spcs.me,spcs.network,spcs.news,spcs.pro,spcs.pub,spcs.reviews,spcs.social,strip2.club,strip2.in,strip2.xxx,usersporn.com##+js(abort-current-inline-script, __require, /clickunder/)
+gdespaces.com,gdespaces.net,google-cloud.services,spac.me,spac.run,spac.wtf,spac1.com,spac1.net,spac1.org,spaces-blogs.com,spaces.im,spcs-files.xyz,spcs.bio,spcs.me,spcs.network,spcs.pro,spcs.reviews,spcs.social,strip2.club,strip2.in,strip2.xxx,usersporn.com##+js(abort-current-inline-script, __require, /clickunder/)
 fastpic.org,~new.fastpic.org##+js(abort-current-inline-script, addEventListener, DOMContentLoaded)
 allboxing.ru##+js(abort-current-inline-script, atob, void)
 pravvest.ru##+js(abort-current-inline-script, clickExplorer)
@@ -28116,7 +28117,7 @@ www.kinopoisk.ru##+js(abort-on-property-read, Object.prototype.bannerOptions)
 gorodrabot.by,gorodrabot.ru##+js(abort-on-property-read, Object.prototype.direct)
 fishki.net##+js(abort-on-property-read, Object.prototype.fakeDetect)
 reshu.by,reshuent.kz,reshuolymp.ru,sdamgia.ru##+js(abort-on-property-read, Object.prototype.getAdUsageStorage)
-gdespaces.com,gdespaces.net,google-cloud.services,spac.me,spac.run,spac.wtf,spac1.com,spac1.info,spac1.me,spac1.net,spac1.org,spac1.ru,spaces-blogs.com,spaces.im,spcs-files.xyz,spcs.bio,spcs.global,spcs.life,spcs.me,spcs.network,spcs.news,spcs.pro,spcs.pub,spcs.reviews,spcs.social,strip2.club,strip2.in,strip2.xxx,usersporn.com##+js(abort-on-property-read, Object.prototype.initOnPlay)
+gdespaces.com,gdespaces.net,google-cloud.services,spac.me,spac.run,spac.wtf,spac1.com,spac1.net,spac1.org,spaces-blogs.com,spaces.im,spcs-files.xyz,spcs.bio,spcs.me,spcs.network,spcs.pro,spcs.reviews,spcs.social,strip2.club,strip2.in,strip2.xxx,usersporn.com##+js(abort-on-property-read, Object.prototype.initOnPlay)
 rbc.ru##+js(abort-on-property-read, Object.prototype.isApplySticky)
 e1.ru,nova.rambler.ru,pikabu.ru##+js(abort-on-property-read, Object.prototype.loadBanner)
 ya.ru##+js(abort-on-property-read, Object.prototype.marketFeedMix)
