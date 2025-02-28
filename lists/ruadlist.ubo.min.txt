@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 28 Feb 2025 17:22:33 +0000
-! Diff-Path: ../patches/2025.2.28.1042.patch#ruadlist
+! Last modified: Fri, 28 Feb 2025 22:25:40 +0000
+! Diff-Path: ../patches/2025.2.28.1345.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -5086,6 +5086,7 @@
 ||redirrtosite.com^
 ||redllama.ru^$third-party
 ||redmarket.online^$third-party
+||redmyco.com^$third-party
 ||rednews.me^$third-party
 ||ree1qrtnove.online^$third-party
 ||ree56vxln.tech^
@@ -6268,6 +6269,7 @@
 ||trusthalloween.com^$third-party
 ||trustjs.net^$third-party
 ||trustrevievvs.info^$third-party
+||trvdp.com^$third-party
 ||trxxh.com^$third-party
 ||trynews.me^$third-party
 ||ts-ads.info^$third-party
@@ -15941,6 +15943,7 @@ ru-an.info#?#.col-right tbody > tr:-abp-has([src*="/ads/"])
 livecars.ru##.col-z-right > #livecars_ru ~ *
 telegraf.in.ua##.col3
 telegraf.in.ua##.col5
+detaly.co.il#?#.col:-abp-has(> .container_ads_small)
 argumenti.ru#?#.col:-abp-has(> [id^="yandex_rtb_"])
 vo-production.com##.colLeft
 ololo.fm##.col_1 > .block2
@@ -16200,7 +16203,6 @@ semestr.online,semestr.ru##.eduChat
 sergeydolya.livejournal.com##.edwrap
 prostolinux.ru##.egg-list
 zemliak.com##.eldala_widget
-detaly.co.il##.elementor-column-gap-extended > .elementor-row > .elementor-hidden-phone
 alau.kz##.elementor-image > a[href]:not([href^="/"]):not([href^="https://alau.kz/"])[target="_blank"]
 format.kr.ua##.elementor-widget-container > a[href][target="_blank"] > img
 weukraine.tv##.elementor-widget-video
@@ -18495,6 +18497,7 @@ geomap.com.ua##.video-row
 p0sembed.com,pbembed.me,porn0sex.online,pornobomba.click,pornoklad.live##.video-spot
 pornopodborka.com##.video-spots-col
 gayzona.pro##.video-sqrs-bl
+sport-express.net,sport-express.ru##.video-wrapper-advert-slot
 www.zoneofgames.ru##.videoBanner
 oboz.ua,obozrevatel.com,stopcor.org,uaportal.com##.videoOfDay
 video.sibnet.ru##.video__topline
@@ -18600,7 +18603,7 @@ atlasprirodirossii.ru,hyperione.com,portaltele.com.ua,sho.org.ua,zazloo.ru##.wid
 volyninfo.com##.widget_calendar ~ .widget_text ~ .widget_text
 rustaste.ru#?#.widget_categories:-abp-has(> div[align="center"] > img[src*="/aliban"])
 sdelalremont.ru##.widget_cb_widget
-1.zt.ua,100pdf.club,24.cv.ua,4studio.com.ua,alladvices.ru,amorefilms.ru,analitikaua.net,aspekty.net,auto-portal.com.ua,avtotachki.com,borodina-protiv-buzovoj.ru,chas.cv.ua,cheb-live.ru,cryptodzen.com,dacha.help,dietdo.ru,ebanoe.it,electric-220.ru,erokomiksi.org,flytothesky.ru,gametrick.ru,gizchina.com.ua,glavradio.info,golos.te.ua,happymodern.ru,kazakh-zerno.net,koskomp.ru,kyivvlada.com.ua,lhealth.info,m-zh.ru,mi100.info,muwhi.ru,netsofta.net,new-s.com.ua,pravda.cn.ua,psiholog4you.ru,root-nation.com,rubrowsers.ru,sdelalremont.ru,sharknews.ru,simptomy-lechenie.net,smartmama.com.ua,ternopillive.com,tipsboard.ru,ua-news.in.ua,ua-report.info,vgolove.net,vizitnlo.ru,volyninfo.com,vseiski.ru,withcars.ru,wona.com.ua,zelenj.ru##.widget_custom_html
+1.zt.ua,100pdf.club,24.cv.ua,4studio.com.ua,alladvices.ru,amorefilms.ru,analitikaua.net,aspekty.net,auto-portal.com.ua,avtotachki.com,borodina-protiv-buzovoj.ru,chas.cv.ua,cheb-live.ru,cryptodzen.com,dacha.help,detaly.co.il,dietdo.ru,ebanoe.it,electric-220.ru,erokomiksi.org,flytothesky.ru,gametrick.ru,gizchina.com.ua,glavradio.info,golos.te.ua,happymodern.ru,kazakh-zerno.net,koskomp.ru,kyivvlada.com.ua,lhealth.info,m-zh.ru,mi100.info,muwhi.ru,netsofta.net,new-s.com.ua,pravda.cn.ua,psiholog4you.ru,root-nation.com,rubrowsers.ru,sdelalremont.ru,sharknews.ru,simptomy-lechenie.net,smartmama.com.ua,ternopillive.com,tipsboard.ru,ua-news.in.ua,ua-report.info,vgolove.net,vizitnlo.ru,volyninfo.com,vseiski.ru,withcars.ru,wona.com.ua,zelenj.ru##.widget_custom_html
 femmie.ru##.widget_custom_html > .partners__heading ~ .custom-html-widget
 vsepredohraniteli.ru##.widget_custom_html ~ .widget_text
 aeslib.ru##.widget_custom_html.FixedWidget__fixed_widget
@@ -18816,6 +18819,7 @@ argumenti.ru##[class*="cc_adv"]
 mcrate.su##[class*="commerc_panel"]
 dni.ru##[class*="container"][class*="partner"]
 prokuzbass.ru##[class*="container-ad"]
+detaly.co.il##[class*="container_ads"]
 forum.guns.ru##[class*="hide"][class$="ban"]
 appleinsider.ru##[class*="home-credit"]
 puerrtto.livejournal.com##[class*="kupibilet"]
@@ -27743,6 +27747,7 @@ xsport.ua##.site:style(margin-top: 0 !important)
 ! ---
 ! Yandex
 ya.ru###rythm-feed
+ya.ru##.document_overflow-scroll_yes:not(.document_new-year-feed-own-scroll_yes) body:style(overflow-y: unset !important)
 ya.ru##.i-mini-bem[style]
 ya.ru,yandex.by,yandex.kz,yandex.uz##.link-bro
 ya.ru##.market-feed
@@ -28124,7 +28129,6 @@ reshu.by,reshuent.kz,reshuolymp.ru,sdamgia.ru##+js(abort-on-property-read, Objec
 gdespaces.com,gdespaces.net,google-cloud.services,spac.me,spac.run,spac.wtf,spac1.com,spac1.net,spac1.org,spaces-blogs.com,spaces.im,spcs-files.xyz,spcs.bio,spcs.me,spcs.network,spcs.pro,spcs.reviews,spcs.social,strip2.club,strip2.in,strip2.xxx,usersporn.com##+js(abort-on-property-read, Object.prototype.initOnPlay)
 rbc.ru##+js(abort-on-property-read, Object.prototype.isApplySticky)
 e1.ru,nova.rambler.ru,pikabu.ru##+js(abort-on-property-read, Object.prototype.loadBanner)
-ya.ru##+js(abort-on-property-read, Object.prototype.marketFeedMix)
 24smi.org##+js(abort-on-property-read, Object.prototype.render)
 gismeteo.by,gismeteo.kz,gismeteo.ru##+js(abort-on-property-read, Object.prototype.scriptsViaXhr)
 drive2.ru,razlozhi.ru##+js(abort-on-property-read, Object.prototype.yaContextCb)
@@ -28228,6 +28232,7 @@ gamemag.ru##+js(abort-on-property-write, keepAdblock)
 kakprosto.ru##+js(abort-on-property-write, window.yaProxy)
 tvzvezda.ru##+js(abort-on-stack-trace, Object.prototype.autoplay, assets)
 vk.com,vk.ru##+js(abort-on-stack-trace, Object.prototype.checkOvv, /feed|set/)
+ya.ru##+js(abort-on-stack-trace, Object.prototype.loadAdvertScriptMode, /yastatic\.net/)
 blackwot.ru##+js(abort-on-stack-trace, document.getElementsByTagName, adsBlocked)
 forums.rusmedserv.com##+js(abort-on-stack-trace, fetch, eval)
 7days.ru##+js(addEventListener-defuser, /^(?:contextmenu|keydown)$/)
@@ -28309,7 +28314,6 @@ freetp.org,freetp.ru,online-fix.me##+js(nano-setTimeout-booster, timer)
 reshu.by,sdamgia.ru##+js(nano-setTimeout-booster, {return f(!1)}, 20000)
 volley.ru##+js(no-fetch-if, /buzzoola\.com|plrjs\.org/)
 animix.lol##+js(no-fetch-if, doubleclick.net)
-ya.ru##+js(no-fetch-if, rythm)
 fatcatslim.ru##+js(no-setInterval-if, clientHeight)
 aniu.ru,liveball.uno##+js(no-setInterval-if, debugger)
 anime-chan.me##+js(no-setInterval-if, move_string)
@@ -28561,6 +28565,7 @@ smaxim.*##+js(set-constant, flashvars.protect_block, '')
 3dnews.kz,3dnews.ru##video[autoplay="autoplay"]:remove-attr(autoplay)
 kinoafisha.info##videotronic-player:remove-attr(data-video-autoplay)
 ya.ru,yandex.*##.dist-overlay__popup:remove()
+ya.ru,yandex.*##.simple-popup__overlay:remove()
 ||1plus1.video/*/embed/*autoplay=1$subdocument,removeparam=|
 ||adbutton.net^$script,redirect=noopjs
 ||ads.vk.com/public/leadform?$important,popup
@@ -28604,6 +28609,7 @@ ya.ru,yandex.*##.dist-overlay__popup:remove()
 ||vkvideo.ru/video_ext.php?$third-party,subdocument,removeparam=autoplay
 ||widgets.kinopoisk.ru/discovery/trailer/*&loop=1&autoplay=1$subdocument,domain=www.kinopoisk.ru
 ||yandex.ru/ads/system/context.js$script,redirect=noopjs,domain=tragtorr.in|tragtorr.info
+||yastatic.net/s3/home-static/feeds/$third-party
 ||youtube-nocookie.com/embed/*autoplay=1$subdocument,removeparam=autoplay,domain=weukraine.tv
 ||youtube.com/embed/*autoplay=1$subdocument,removeparam=autoplay,domain=~kinoafisha.info|~pikabu.ru
 ||youtube.com/embed/?enablejsapi=1&origin=*3dnews.*&widgetid=1$subdocument,badfilter,domain=3dnews.kz|3dnews.ru
