@@ -1,17 +1,25 @@
-diff name:ruadlist lines:35 checksum:c93d9a2a00
+diff name:ruadlist lines:82 checksum:dda62b1f97
 d4 2
 a5 2
-! Last modified: Sun, 02 Mar 2025 14:24:26 +0000
-! Diff-Path: ../patches/2025.3.2.864.patch#ruadlist
+! Last modified: Sun, 02 Mar 2025 19:18:04 +0000
+! Diff-Path: ../patches/2025.3.2.1158.patch#ruadlist
 a5088 1
 ||redmyco.com^$third-party
 a6270 1
 ||trvdp.com^$third-party
+a8927 1
+~litres.ru##a[href^="https://www.litres.ru/"][href$="#buy_now_noreg"]
+a14942 1
+blackwot.ru##.ad-free-button
+a15556 1
+ska.ru##.betting
 a15943 1
 detaly.co.il#?#.col:-abp-has(> .container_ads_small)
 d16203 1
 a16763 1
 igromania.ru#?#.knb-list > [class^="ShelfCard_card_"]:-abp-has(> [class^="ShelfCard_cardFooter_"] > [class^="CardTags_tags_"] > [href="/tags/partnyorskij-material/"])
+a16931 1
+ska.ru##.main-section-adfox
 a18182 1
 igromania.ru#?#.swiper-wrapper > .swiper-slide:-abp-has(> div > .knb-card--footer > div > span:-abp-contains(Партнерский материал))
 a18497 1
@@ -21,16 +29,55 @@ a18603 1
 1.zt.ua,100pdf.club,24.cv.ua,4studio.com.ua,alladvices.ru,amorefilms.ru,analitikaua.net,aspekty.net,auto-portal.com.ua,avtotachki.com,borodina-protiv-buzovoj.ru,chas.cv.ua,cheb-live.ru,cryptodzen.com,dacha.help,detaly.co.il,dietdo.ru,ebanoe.it,electric-220.ru,erokomiksi.org,flytothesky.ru,gametrick.ru,gizchina.com.ua,glavradio.info,golos.te.ua,happymodern.ru,kazakh-zerno.net,koskomp.ru,kyivvlada.com.ua,lhealth.info,m-zh.ru,mi100.info,muwhi.ru,netsofta.net,new-s.com.ua,pravda.cn.ua,psiholog4you.ru,root-nation.com,rubrowsers.ru,sdelalremont.ru,sharknews.ru,simptomy-lechenie.net,smartmama.com.ua,ternopillive.com,tipsboard.ru,ua-news.in.ua,ua-report.info,vgolove.net,vizitnlo.ru,volyninfo.com,vseiski.ru,withcars.ru,wona.com.ua,zelenj.ru##.widget_custom_html
 a18818 1
 detaly.co.il##[class*="container_ads"]
+d19050 1
 a20987 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div[id^="kukan"]
 d21015 1
+a24950 1
+@@||blackwot.ru^$generichide
+d25879 1
+d25968 1
+a25968 1
+@@||static-mon.yandex.net/static/main.js?pid=$xmlhttprequest,domain=reshu.by|reshuent.kz|sdamgia.ru|sports.ru
+d26007 1
+a26278 2
+ai-next.ru##[role="tabpanel"] > div.MuiBox-root:style(min-height: 0 !important)
+! ---
+d26431 2
+d26559 3
+a26561 3
+doramalive.news##.dl-content > .ageLimit
+doramalive.news##.dl-content > .ageLimit ~ [class$="-player"]:style(display: block !important)
+doramalive.news##.dl-content:style(min-height: unset !important)
 a27745 1
 ya.ru##.document_overflow-scroll_yes:not(.document_new-year-feed-own-scroll_yes) body:style(overflow-y: unset !important)
+d28123 1
+a28123 1
+reshu.by,reshuent.kz,sdamgia.ru##+js(abort-on-property-read, Object.prototype.getAdUsageStorage)
 d28127 1
-a28230 1
+d28231 1
+a28231 2
 ya.ru##+js(abort-on-stack-trace, Object.prototype.loadAdvertScriptMode, /yastatic\.net/)
+ai-next.ru##+js(abort-on-stack-trace, document.getElementById, /723-|ai-2-/)
+a28253 1
+blackwot.ru##+js(addEventListener-defuser, load, detect-modal)
 d28312 1
+d28478 1
+a28478 1
+reshu.by,reshuent.kz,sdamgia.ru##.googlead.pub_300x250.pub_300x250m.pub_728x90.text-ad.textAd.text_ad.text_ads.text-ads.text-ad-links:style(display: block !important)
 a28563 1
 ya.ru,yandex.*##.simple-popup__overlay:remove()
 a28606 1
 ||yastatic.net/s3/home-static/feeds/$third-party
+a30113 1
+codeshare.io##.sad-face
+d30141 1
+a30141 1
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=exe-urls.com|fileink.com|phoneky.com|rockmods.net
+a30489 1
+sdamgia.ru##.S29e4f5cdae
+d30530 1
+a30530 1
+reshu.by,reshuent.kz,sdamgia.ru#@#.googlead
+d30614 1
+d30631 1
