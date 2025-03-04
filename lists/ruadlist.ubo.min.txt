@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 04 Mar 2025 16:33:02 +0000
-! Diff-Path: ../patches/2025.3.4.993.patch#ruadlist
+! Last modified: Tue, 04 Mar 2025 21:23:43 +0000
+! Diff-Path: ../patches/2025.3.4.1283.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -16440,7 +16440,6 @@ video.oboz.ua##.global_overheader
 investoday.ru##.globalmesswarnwrap
 usa.one##.glsdklj
 diabethelp.org,sustav.info##.gmp_widget
-doramy.club,www.film.ru##.gnezdo
 instagrabber.ru##.gnice
 radiogrom.com##.goo_gle
 ohotniki.ru##.good
@@ -16770,7 +16769,6 @@ kloomba.com##.kl-ad-item
 igromania.ru,kanobu.ru##.knb-grid-layout > .no-radius
 igromania.ru,kanobu.ru##.knb-informer
 igromania.ru#?#.knb-list > [class^="ShelfCard_card_"]:-abp-has(> [class^="ShelfCard_cardFooter_"] > [class^="CardTags_tags_"] > [href="/tags/partnyorskij-material/"])
-igromania.ru,kanobu.ru##.knb-sidebar_top
 topfile.tj##.knopka
 osvita.ua##.kom
 tabloid.pravda.com.ua##.koz-box
@@ -19547,7 +19545,6 @@ azbooki.ru,engisys.ru,zip1000.ru##a[href*="zasvetom.ru"]
 19rusinfo.ru,belta.by,dailystorm.ru,dni.ru,doctorpiter.ru,eg.ru,kakprosto.ru,marieclaire.ru,maximonline.ru,news.ru,newxboxone.ru,parents.ru,playboyrussia.com,psychologies.ru,sobesednik.ru,tvtver.ru,vokrugsveta.ru,wday.ru,woman.ru##a[href*="zen.yandex.ru"]
 compromat.group##a[href*="zenyandexru"]
 mkap.ru##a[href*="zjbi.ru"] > img
-www.film.ru##a[href="#"]
 windows64.net##a[href="#"][onclick*="_blank"]
 playercdn.cdnvideo.ru##a[href="//cdnvideo.ru/?from=playercdn.cdnvideo.ru"]
 noi.md##a[href="//moldovenii.md"]
@@ -28238,7 +28235,7 @@ phys-kids.com##+js(abort-on-property-write, fetch)
 gamemag.ru##+js(abort-on-property-write, keepAdblock)
 kakprosto.ru##+js(abort-on-property-write, window.yaProxy)
 tvzvezda.ru##+js(abort-on-stack-trace, Object.prototype.autoplay, assets)
-vk.com,vk.ru##+js(abort-on-stack-trace, Object.prototype.checkOvv, /feed|set/)
+vk.com,vk.ru##+js(abort-on-stack-trace, Object.prototype.copyErid, /feed|set/)
 ya.ru##+js(abort-on-stack-trace, Object.prototype.loadAdvertScriptMode, /yastatic\.net/)
 ai-next.ru##+js(abort-on-stack-trace, document.getElementById, /723-|ai-2-/)
 forums.rusmedserv.com##+js(abort-on-stack-trace, fetch, eval)
