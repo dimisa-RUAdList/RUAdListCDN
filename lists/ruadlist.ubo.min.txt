@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 04 Mar 2025 11:21:12 +0000
-! Diff-Path: ../patches/2025.3.4.681.patch#ruadlist
+! Last modified: Tue, 04 Mar 2025 16:33:02 +0000
+! Diff-Path: ../patches/2025.3.4.993.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10286,7 +10286,7 @@ $csp=script-src-attr 'none',domain=volyn.com.ua
 ||utarget.ru^$csp=sandbox allow-same-origin;
 ||utarget.ru^$csp=script-src
 ||www.liveinternet.ru/|$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' i.li.ru
-||www.ukr.net^$csp=frame-src 'self' *.ukr.net *.sinoptik.ua kinoafisha.ua *.twitter.com *.google.com
+||www.ukr.net^$csp=frame-src 'self' *.ukr.net sinoptik.ua kinoafisha.ua *.twitter.com *.google.com
 ||yadistr.ru^$csp=script-src
 ||yandex.ru/turbo?text=https*fishki.net$csp=connect-src
 ! Унифицированное правило для fundingchoicesmessages.google.com
@@ -11421,6 +11421,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||fiat-avtocity.ru/swf/
 ||fiat-vag.ru/comebacker/
 ||files.vse.kz/branding/$image
+||filmix.*/vast_fx.
 ||filmozavr.com/static/background.
 ||filmozavr.com/static/casino/
 ||filmozavr.com/static/js/popUpBottomCorner.js
@@ -13709,12 +13710,10 @@ nm71.ru###az2
 23met.ru###b-top
 f1news.ru###b2-container
 meta.ua###b_meta_popup
-sport.ua###b_sport_240
 prestige-gaming.ru###back_brd
 westudents.com.ua###ban > #lin
 westudents.com.ua###ban noindex
 meteonova.ru###ban_500
-sport.ua###bann-240
 cripo.com.ua,fergananews.com,infobank.by,link.ac,live-gol.net,liveangarsk.ru,lm-games.com,ping-admin.ru,premiership.ru,qupier.org,readbookz.com,redheadsound.studio,urod.ru,voxpopuli.kz,xtreme.ws###banner
 gamexp.ru###banner-slider
 get-tune.net,mirmmo.ru,oneprogs.ru###banner-top
@@ -14268,7 +14267,6 @@ sevnews.info###news_bannerPlace
 tvtver.ru###news_lenta > .hidden-xs:not(.news_item)
 ua.today###news_partner > .relap-default__block-title
 sport.ua#?##news_text > div[class]:-abp-has(table[cellpadding] a[target="_blank"])
-sport.ua#?##news_text > p:-abp-has(> a[href*="://analyticsq1.com/"])
 pogodavtomske.ru###news_tomsk > div:empty
 yachaynik.ru###newsflash
 ntv.ru###newszen
@@ -15553,6 +15551,7 @@ blockchain.info##.bci-ad ~ p
 ixbt.com##.bcontainer
 ma.by##.bdiv
 kabar.kg##.belta-informer
+sport.ua##.best_bookies
 zbirna.com##.best_game_sec
 aldebaran.ru##.best_sellers
 fightnews.info##.bet
@@ -18130,7 +18129,6 @@ stroimdom.com.ua##.sponsors_big
 sr-week.ru##.sponsorslist
 sport.tut.by#?#.sport-table tr > th ~ th:-abp-contains(Ставка)
 sport-interfax.ru##.sport__champcom
-sport.ua##.sportua-bet-block
 erocadr.com##.spot
 topvideo.tj##.spot1
 porn0sex.online##.spots-side
@@ -19416,7 +19414,6 @@ stopgame.ru##a[href*="clc.to"]
 flapler.com,korsars.pro,mods-game.net,mywebpc.ru,rufonts.ru,soft-portal.club,vc.ru##a[href*="clck.ru"]
 tvmag.ru##a[href*="cli.co"]
 book-briefly.ru##a[href*="clickfrm.com"]
-sport.ua##a[href*="clickstats.fun"]
 bloknot-khersona.ks.ua,osnovu-ved.ru##a[href*="cookery-on-every-day.ru"]
 gamedayz.net##a[href*="csgo.life"]
 softportal.com##a[href*="driverpack-solution"]
@@ -20925,7 +20922,7 @@ israelinfo.co.il##div[id^="ban"]
 probusiness.by,tut.by##div[id^="banObject"]
 ua-electro.com##div[id^="banadd"]
 radioroks.ua##div[id^="baner"]
-advizzer.com,bragazeta.ru,cataclysmdda.ru,chehov-vid.ru,conversion.im,coollib.net,ekaraganda.kz,ereport.ru,euro-football.ru,floraprice.ru,gameguru.ru,go64.ru,grinkod.spb.ru,igrixl.ru,kp40.ru,kramatorsk.info,lada.kz,mirnov.ru,mix.tj,musicmp3spb.org,musicwars.ru,news29.ru,pogoda.com,ptzgovorit.ru,servers-samp.ru,sovets.net,sport.ua,sports.kz,tayga.info,tparser.org,uaprom.info,vidal.ru##div[id^="banner"]
+advizzer.com,bragazeta.ru,cataclysmdda.ru,chehov-vid.ru,conversion.im,coollib.net,ekaraganda.kz,ereport.ru,euro-football.ru,floraprice.ru,gameguru.ru,go64.ru,grinkod.spb.ru,igrixl.ru,kp40.ru,kramatorsk.info,lada.kz,mirnov.ru,mix.tj,musicmp3spb.org,musicwars.ru,news29.ru,pogoda.com,ptzgovorit.ru,servers-samp.ru,sovets.net,sports.kz,tayga.info,tparser.org,uaprom.info,vidal.ru##div[id^="banner"]
 ivona.ua,rabota66.ru##div[id^="banner-place-"]
 pitbit.ru##div[id^="banner-right-inside"]
 015.by##div[id^="banner-slider-"]
@@ -26035,9 +26032,9 @@ daz3d.ru,trialkeys.ru#@#.advblock
 dl2kq.de#@##sponsor_ad
 drahelas.ru#@#.forumAd
 draug.ru,print-post.com#@##reklama
+gdz-raketa.ru,izi-invest.ru,kakoysegodnyaprazdnik.ru,leingpt.ru,xn--80aaiebcrjcibi8adgdtsm9z.xn--p1ai#@#div[id^="yandex_rtb"]
 green-way.com.ua#@#.adWrapper
 iphones.ru#@##sponsorText
-izi-invest.ru,kakoysegodnyaprazdnik.ru,leingpt.ru,xn--80aaiebcrjcibi8adgdtsm9z.xn--p1ai#@#div[id^="yandex_rtb"]
 kakoysegodnyaprazdnik.ru,mmo13.ru,no-steamserv.ru,vesti.ru#@#.adv
 kisameev.ru,myseria.pro,openssource.biz,zazloo.ru#@#.reklama
 liga.net#@##bottomAd
@@ -28281,6 +28278,7 @@ yapx.ru##+js(cookie-remover, /adblock_/)
 kakprosto.ru##+js(cookie-remover, yadb)
 softoroom.org##+js(href-sanitizer, a[href*=".php?go="], ?go)
 vk.com,vk.ru,vkvideo.ru##+js(href-sanitizer, a[href*="/away.php?"], ?to)
+dzen.ru##+js(href-sanitizer, a[href*="/away?"], ?to)
 freehat.cc,lalapaluza.ru##+js(href-sanitizer, a[href*="/bitrix/rk.php?goto=https"], ?goto)
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(href-sanitizer, a[href*="/go.php"], ?url)
 stalkermods.ru##+js(href-sanitizer, a[href*="/redir.php?r="], ?r)
