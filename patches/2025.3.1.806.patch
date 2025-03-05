@@ -1,10 +1,13 @@
-diff name:ruadlist lines:148 checksum:e17c8a6756
+diff name:ruadlist lines:160 checksum:2d1a3a0c14
 d4 2
 a5 2
-! Last modified: Wed, 05 Mar 2025 12:49:52 +0000
-! Diff-Path: ../patches/2025.3.5.769.patch#ruadlist
+! Last modified: Wed, 05 Mar 2025 17:25:25 +0000
+! Diff-Path: ../patches/2025.3.5.1045.patch#ruadlist
 a8929 1
 ~litres.ru##a[href^="https://www.litres.ru/"][href$="#buy_now_noreg"]
+a10256 1
+||adblock.turtlecute.org^$csp=connect-src 'self'; script-src https://adblock.turtlecute.org/js/index.js
+d10261 1
 d10288 1
 a10288 1
 ||www.ukr.net^$csp=frame-src 'self' *.ukr.net sinoptik.ua kinoafisha.ua *.twitter.com *.google.com
@@ -48,6 +51,8 @@ d18124 1
 a18184 1
 igromania.ru#?#.swiper-wrapper > .swiper-slide:-abp-has(> div > .knb-card--footer > div > span:-abp-contains(Партнерский материал))
 d18404 1
+a18460 1
+business-gazeta.ru##.unitindent
 a18599 1
 ukrfootball.ua##.widgetBestBookmakersNews
 d18939 1
@@ -96,6 +101,13 @@ d26011 1
 a26027 1
 gdz-raketa.ru,izi-invest.ru,kakoysegodnyaprazdnik.ru,leingpt.ru,xn--80aaiebcrjcibi8adgdtsm9z.xn--p1ai#@#div[id^="yandex_rtb"]
 d26030 1
+d26051 1
+a26051 1
+adblock.turtlecute.org###ad_ctd
+d26056 1
+d26169 1
+a26170 1
+adblock.turtlecute.org##section ._bg-orange
 a26282 2
 ai-next.ru##[role="tabpanel"] > div.MuiBox-root:style(min-height: 0 !important)
 ! ---
