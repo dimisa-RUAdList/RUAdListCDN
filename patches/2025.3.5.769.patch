@@ -1,13 +1,38 @@
-diff name:ruadlist lines:16 checksum:2d1a3a0c14
+diff name:ruadlist lines:49 checksum:2804c6e884
 d4 2
 a5 2
-! Last modified: Wed, 05 Mar 2025 17:25:25 +0000
-! Diff-Path: ../patches/2025.3.5.1045.patch#ruadlist
+! Last modified: Wed, 05 Mar 2025 22:26:24 +0000
+! Diff-Path: ../patches/2025.3.5.1346.patch#ruadlist
+a8163 1
+/wp-content/plugins/aw-bnrs/*
+a8168 1
+/wp-content/plugins/wpsite-background-takeover*/js/wpsite_clickable.js$script
 a10257 1
 ||adblock.turtlecute.org^$csp=connect-src 'self'; script-src https://adblock.turtlecute.org/js/index.js
 d10262 1
+d10649 1
+d10816 2
+a10817 1
+||agronom.com.ua/wp-content/uploads/*1200*1200$image
+d10821 1
+d17355 1
+a17355 1
+24tv.ua,zaxid.net##.partner-insert
 a18465 1
 business-gazeta.ru##.unitindent
+d19046 1
+a19046 1
+iarex.ru,p-p.com.ua##[id*="redtram"]
+d19213 1
+d20518 1
+a20518 1
+vlasti.net,winnote.ru##div[class^="adrotate"]
+d22514 1
+a22514 1
+||cdn.hsmedia.ru/shkulev-*/$script
+d25883 1
+a25883 1
+@@||an.yandex.ru/system/context.js|$domain=onlinelpu.ru|ryfma.com
 d26055 1
 a26055 1
 adblock.turtlecute.org###ad_ctd
@@ -15,3 +40,11 @@ d26060 1
 d26173 1
 a26174 1
 adblock.turtlecute.org##section ._bg-orange
+a26178 1
+||glav.su/js/libs/abd/abd.js
+a26814 2
+hardwareluxx.ru##[href^="https://ya.cc/"]:style(pointer-events: none !important; color: inherit !important)
+! ---
+d28159 1
+a28379 1
+agronews.ua,agroreview.com##+js(remove-node-text, script, clickedOnContent)

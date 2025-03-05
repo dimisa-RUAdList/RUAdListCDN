@@ -1,14 +1,23 @@
-diff name:ruadlist lines:90 checksum:2d1a3a0c14
+diff name:ruadlist lines:123 checksum:2804c6e884
 d4 2
 a5 2
-! Last modified: Wed, 05 Mar 2025 17:25:25 +0000
-! Diff-Path: ../patches/2025.3.5.1045.patch#ruadlist
+! Last modified: Wed, 05 Mar 2025 22:26:24 +0000
+! Diff-Path: ../patches/2025.3.5.1346.patch#ruadlist
+a8163 1
+/wp-content/plugins/aw-bnrs/*
+a8168 1
+/wp-content/plugins/wpsite-background-takeover*/js/wpsite_clickable.js$script
 a10257 1
 ||adblock.turtlecute.org^$csp=connect-src 'self'; script-src https://adblock.turtlecute.org/js/index.js
 d10262 1
 d10289 1
 a10289 1
 ||www.ukr.net^$csp=frame-src 'self' *.ukr.net sinoptik.ua kinoafisha.ua *.twitter.com *.google.com
+d10649 1
+d10816 2
+a10817 1
+||agronom.com.ua/wp-content/uploads/*1200*1200$image
+d10821 1
 a11423 1
 ||filmix.*/vast_fx.
 d11692 1
@@ -30,6 +39,9 @@ a15979 1
 sportanalytic.com##.common_content_news > .news > center
 d16442 1
 d16772 1
+d17356 1
+a17356 1
+24tv.ua,zaxid.net##.partner-insert
 d17713 1
 a17895 1
 redheadsound.studio##.side-block[id]
@@ -42,11 +54,18 @@ ukrfootball.ua##.widgetBestBookmakersNews
 d18947 1
 a18947 1
 basaru.net.ru,gooool365.org,lexxs.us,redheadsound.studio,superkarate.ru,topfile.tj,uzmov.net,weblance.com.ua##[data-dlebclicks]
+d19048 1
+a19048 1
+iarex.ru,p-p.com.ua##[id*="redtram"]
+d19215 1
 d19417 1
 d19551 1
 d20383 1
 a20383 1
 1777.ru,19rus.info,19rusinfo.ru,1ul.ru,20minut.ua,2goroda.ru,365info.kz,3ys.ru,73online.ru,9tv.co.il,advis.ru,agronews.ua,agroreview.com,agrotimes.net,autodmir.ru,avtodispetcher.ru,bakemono.ru,bel.ru,bezformata.com,bhub.com.ua,bon.ua,budport.com.ua,car.ru,cbonds.ru,champion.com.ua,codernet.ru,comments.ua,con-med.ru,cryptonewsua.com,cybersport.ru,echosevera.ru,epravda.com.ua,fatalgame.com,filmz.ru,fishingsib.ru,flamp.ru,food.ru,footballua.tv,forum-profit.ru,gameguru.ru,gecid.com,goodfon.ru,gorodvitebsk.by,gp.by,growhow.in.ua,haqqin.az,hunting.ru,industry-hunter.com,infpol.ru,investfunds.ru,ircity.ru,islam-today.ru,iz.ru,joborgame.ru,jut.su,k1news.ru,klavogonki.ru,knijky.ru,kt.kz,kursktv.ru,laradiofm.ru,livesport.ws,locals.md,medialeaks.ru,megatyumen.ru,menportal.info,myslo.ru,neboleem.net,nmedic.info,nv-online.info,obyava.ua,okna.ua,penza-press.ru,polochka.net,povarenok.ru,ppt4web.ru,pravda.com.ua,pravoved.ru,primemusic.cc,profibeer.ru,prostatitanet.com,redfm.ru,relax-fm.ru,rg.ru,roscontrol.com,skachat-kino.fun,smolensk-i.ru,sovsport.ru,spanishrestaurant.ru,sport5.by,sportanalytic.com,sportguide.kiev.ua,start33.ru,syzran-small.ru,tele.ru,tengriauto.kz,tengrinews.kz,tengrisport.kz,tengritravel.kz,the-flow.ru,thequestion.ru,thg.ru,tveda.ru,twentysix.ru,ufanotes.ru,valverus.info,vashurok.ru,veterinargid.ru,vikka.ua,vinnitsa.info,vklasse.online,vovka.su,vringe.com,vshkole.com,woman.ru,wonderzine.com,wowjp.net,xsport.ua,zagorod.spb.ru,zaim-profi.ru,zaryad.me,zebra-tv.ru,zoohoz.ru,zorbasmedia.ru##div[class*="banner"]
+d20522 1
+a20522 1
+vlasti.net,winnote.ru##div[class^="adrotate"]
 d20926 1
 a20926 1
 advizzer.com,bragazeta.ru,cataclysmdda.ru,chehov-vid.ru,conversion.im,coollib.net,ekaraganda.kz,ereport.ru,euro-football.ru,floraprice.ru,gameguru.ru,go64.ru,grinkod.spb.ru,igrixl.ru,kp40.ru,kramatorsk.info,lada.kz,mirnov.ru,mix.tj,musicmp3spb.org,musicwars.ru,news29.ru,pogoda.com,ptzgovorit.ru,servers-samp.ru,sovets.net,sports.kz,tayga.info,tparser.org,uaprom.info,vidal.ru##div[id^="banner"]
@@ -60,6 +79,12 @@ $csp=script-src-attr 'none',domain=eurointegration.com.ua|pravda.com.ua|sportana
 d21877 1
 a21877 1
 ||pikabu.ru/ajax/*?DUogx=$xmlhttprequest
+d22516 1
+a22516 1
+||cdn.hsmedia.ru/shkulev-*/$script
+d25885 1
+a25885 1
+@@||an.yandex.ru/system/context.js|$domain=onlinelpu.ru|ryfma.com
 a26033 1
 gdz-raketa.ru,izi-invest.ru,kakoysegodnyaprazdnik.ru,leingpt.ru,xn--80aaiebcrjcibi8adgdtsm9z.xn--p1ai#@#div[id^="yandex_rtb"]
 d26036 1
@@ -70,12 +95,18 @@ d26062 1
 d26175 1
 a26176 1
 adblock.turtlecute.org##section ._bg-orange
+a26180 1
+||glav.su/js/libs/abd/abd.js
+a26816 2
+hardwareluxx.ru##[href^="https://ya.cc/"]:style(pointer-events: none !important; color: inherit !important)
+! ---
 d28073 1
 a28073 1
 kolizhanka.com.ua,miyzvuk.net,ozon.ru##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important)
 d28115 1
 a28115 1
 24boxing.com.ua,bilshe.com,businessua.com,f1analytic.com,f1ua.org.ua,football-ukraine.com,footballgazeta.com,footballtransfer.com.ua,glianec.com,nashamama.com,stravy.net,zdorovia.com.ua##+js(abort-current-inline-script, setInterval, reload)
+d28161 1
 d28165 1
 a28165 1
 eurointegration.com.ua,pravda.com.ua,sportanalytic.com##+js(abort-on-property-read, as_retry)
@@ -86,6 +117,8 @@ a28279 1
 dzen.ru##+js(href-sanitizer, a[href*="/away?"], ?to)
 a28350 1
 sport.ua##+js(no-setTimeout-if, window.location.reload)
+a28379 1
+agronews.ua,agroreview.com##+js(remove-node-text, script, clickedOnContent)
 d28749 1
 a28749 1
 eurointegration.com.ua,pravda.com.ua,sportanalytic.com##^script[onload*="error-report.com"]

@@ -1,14 +1,23 @@
-diff name:ruadlist lines:45 checksum:2d1a3a0c14
+diff name:ruadlist lines:78 checksum:2804c6e884
 d4 2
 a5 2
-! Last modified: Wed, 05 Mar 2025 17:25:25 +0000
-! Diff-Path: ../patches/2025.3.5.1045.patch#ruadlist
+! Last modified: Wed, 05 Mar 2025 22:26:24 +0000
+! Diff-Path: ../patches/2025.3.5.1346.patch#ruadlist
+a8163 1
+/wp-content/plugins/aw-bnrs/*
+a8168 1
+/wp-content/plugins/wpsite-background-takeover*/js/wpsite_clickable.js$script
 a10257 1
 ||adblock.turtlecute.org^$csp=connect-src 'self'; script-src https://adblock.turtlecute.org/js/index.js
 d10262 1
 d10289 1
 a10289 1
 ||www.ukr.net^$csp=frame-src 'self' *.ukr.net sinoptik.ua kinoafisha.ua *.twitter.com *.google.com
+d10649 1
+d10816 2
+a10817 1
+||agronom.com.ua/wp-content/uploads/*1200*1200$image
+d10821 1
 a11423 1
 ||filmix.*/vast_fx.
 d13712 1
@@ -18,17 +27,33 @@ a15555 1
 sport.ua##.best_bookies
 d16444 1
 d16774 1
+d17358 1
+a17358 1
+24tv.ua,zaxid.net##.partner-insert
 d18133 1
 a18469 1
 business-gazeta.ru##.unitindent
+d19050 1
+a19050 1
+iarex.ru,p-p.com.ua##[id*="redtram"]
+d19217 1
 d19419 1
 d19553 1
+d20524 1
+a20524 1
+vlasti.net,winnote.ru##div[class^="adrotate"]
 d20928 1
 a20928 1
 advizzer.com,bragazeta.ru,cataclysmdda.ru,chehov-vid.ru,conversion.im,coollib.net,ekaraganda.kz,ereport.ru,euro-football.ru,floraprice.ru,gameguru.ru,go64.ru,grinkod.spb.ru,igrixl.ru,kp40.ru,kramatorsk.info,lada.kz,mirnov.ru,mix.tj,musicmp3spb.org,musicwars.ru,news29.ru,pogoda.com,ptzgovorit.ru,servers-samp.ru,sovets.net,sports.kz,tayga.info,tparser.org,uaprom.info,vidal.ru##div[id^="banner"]
 d21881 1
 a21881 1
 ||pikabu.ru/ajax/*?DUogx=$xmlhttprequest
+d22520 1
+a22520 1
+||cdn.hsmedia.ru/shkulev-*/$script
+d25889 1
+a25889 1
+@@||an.yandex.ru/system/context.js|$domain=onlinelpu.ru|ryfma.com
 a26037 1
 gdz-raketa.ru,izi-invest.ru,kakoysegodnyaprazdnik.ru,leingpt.ru,xn--80aaiebcrjcibi8adgdtsm9z.xn--p1ai#@#div[id^="yandex_rtb"]
 d26040 1
@@ -39,8 +64,16 @@ d26066 1
 d26179 1
 a26180 1
 adblock.turtlecute.org##section ._bg-orange
+a26184 1
+||glav.su/js/libs/abd/abd.js
+a26820 2
+hardwareluxx.ru##[href^="https://ya.cc/"]:style(pointer-events: none !important; color: inherit !important)
+! ---
+d28165 1
 d28244 1
 a28244 1
 vk.com,vk.ru##+js(abort-on-stack-trace, Object.prototype.copyErid, /feed|set/)
 a28283 1
 dzen.ru##+js(href-sanitizer, a[href*="/away?"], ?to)
+a28384 1
+agronews.ua,agroreview.com##+js(remove-node-text, script, clickedOnContent)
