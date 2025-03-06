@@ -1,8 +1,8 @@
-diff name:ruadlist lines:145 checksum:a4b14105c4
+diff name:ruadlist lines:150 checksum:8d83a2178f
 d4 2
 a5 2
-! Last modified: Thu, 06 Mar 2025 18:34:06 +0000
-! Diff-Path: ../patches/2025.3.6.1114.patch#ruadlist
+! Last modified: Thu, 06 Mar 2025 23:23:53 +0000
+! Diff-Path: ../patches/2025.3.6.1403.patch#ruadlist
 a8163 1
 /wp-content/plugins/aw-bnrs/*
 a8168 1
@@ -28,6 +28,8 @@ a11692 1
 ||html-load.com/loader.min.js$domain=eurointegration.com.ua|pravda.com.ua|sportanalytic.com
 a12997 1
 ||statbet.com/api/*/offers/
+a13093 1
+||tapochek.net/x.php
 d13711 1
 d13716 2
 a13717 1
@@ -130,9 +132,12 @@ d28158 1
 d28162 1
 a28162 1
 eurointegration.com.ua,pravda.com.ua,sportanalytic.com##+js(abort-on-property-read, as_retry)
+d28217 1
 d28237 1
 a28237 1
 vk.com,vk.ru##+js(abort-on-stack-trace, Object.prototype.copyErid, /feed|set/)
+a28255 1
+tapochek.net##+js(addEventListener-defuser, click, document.cookie.includes)
 a28276 1
 dzen.ru##+js(href-sanitizer, a[href*="/away?"], ?to)
 a28347 1

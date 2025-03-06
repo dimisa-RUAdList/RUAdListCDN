@@ -1,8 +1,8 @@
-diff name:ruadlist lines:68 checksum:a4b14105c4
+diff name:ruadlist lines:73 checksum:8d83a2178f
 d4 2
 a5 2
-! Last modified: Thu, 06 Mar 2025 18:34:06 +0000
-! Diff-Path: ../patches/2025.3.6.1114.patch#ruadlist
+! Last modified: Thu, 06 Mar 2025 23:23:53 +0000
+! Diff-Path: ../patches/2025.3.6.1403.patch#ruadlist
 a8163 1
 /wp-content/plugins/aw-bnrs/*
 a8168 1
@@ -18,6 +18,8 @@ d10816 2
 a10817 1
 ||agronom.com.ua/wp-content/uploads/*1200*1200$image
 d10821 1
+a13095 1
+||tapochek.net/x.php
 d17355 1
 a17355 1
 24tv.ua,zaxid.net##.partner-insert
@@ -63,6 +65,9 @@ a26814 2
 hardwareluxx.ru##[href^="https://ya.cc/"]:style(pointer-events: none !important; color: inherit !important)
 ! ---
 d28159 1
+d28218 1
+a28256 1
+tapochek.net##+js(addEventListener-defuser, click, document.cookie.includes)
 a28379 1
 agronews.ua,agroreview.com##+js(remove-node-text, script, clickedOnContent)
 a28447 1
