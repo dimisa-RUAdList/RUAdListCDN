@@ -1,8 +1,8 @@
-diff name:ruadlist lines:139 checksum:54a7d88169
+diff name:ruadlist lines:141 checksum:4da2aca513
 d4 2
 a5 2
-! Last modified: Fri, 07 Mar 2025 09:26:13 +0000
-! Diff-Path: ../patches/2025.3.7.566.patch#ruadlist
+! Last modified: Fri, 07 Mar 2025 14:26:02 +0000
+! Diff-Path: ../patches/2025.3.7.866.patch#ruadlist
 a8163 1
 /wp-content/plugins/aw-bnrs/*
 a8168 1
@@ -29,7 +29,7 @@ a11692 1
 a12997 1
 ||statbet.com/api/*/offers/
 a13093 1
-||tapochek.net/z.php
+||tapochek.net/xhrproc.php
 d13711 1
 d13716 2
 a13717 1
@@ -125,16 +125,18 @@ d28221 1
 d28241 1
 a28241 1
 vk.com,vk.ru##+js(abort-on-stack-trace, Object.prototype.copyErid, /feed|set/)
-a28242 1
-tapochek.net##+js(abort-on-stack-trace, atob, decodePath)
 a28280 1
 dzen.ru##+js(href-sanitizer, a[href*="/away?"], ?to)
 a28351 1
 sport.ua##+js(no-setTimeout-if, window.location.reload)
 a28380 1
 agronews.ua,agroreview.com##+js(remove-node-text, script, clickedOnContent)
+a28381 1
+tapochek.net##+js(remove-node-text, script, setRequestHeader)
 a28448 1
 116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,www.fontanka.ru,ya62.ru##+js(set-constant, navigator.sendBeacon, noopFunc)
+a28600 1
+||paintejuke.com^$popunder
 d28750 1
 a28750 1
 eurointegration.com.ua,pravda.com.ua,sportanalytic.com##^script[onload*="error-report.com"]
