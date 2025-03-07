@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 07 Mar 2025 04:29:44 +0000
-! Diff-Path: ../patches/2025.3.7.269.patch#ruadlist
+! Last modified: Fri, 07 Mar 2025 09:26:13 +0000
+! Diff-Path: ../patches/2025.3.7.566.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -13092,7 +13092,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||talk.$domain=dugtor.ru
 ||tamboff.ru/other/forum/banners
 ||tap.az/embed/
-||tapochek.net/x.php
+||tapochek.net/z.php
 ||tayga.info/banners/
 ||tayga.info/design/banner/
 ||tdaily.ru/api/ad|$xmlhttprequest
@@ -28238,6 +28238,7 @@ kakprosto.ru##+js(abort-on-property-write, window.yaProxy)
 tvzvezda.ru##+js(abort-on-stack-trace, Object.prototype.autoplay, assets)
 vk.com,vk.ru##+js(abort-on-stack-trace, Object.prototype.copyErid, /feed|set/)
 ya.ru##+js(abort-on-stack-trace, Object.prototype.loadAdvertScriptMode, /yastatic\.net/)
+tapochek.net##+js(abort-on-stack-trace, atob, decodePath)
 ai-next.ru##+js(abort-on-stack-trace, document.getElementById, /723-|ai-2-/)
 forums.rusmedserv.com##+js(abort-on-stack-trace, fetch, eval)
 7days.ru##+js(addEventListener-defuser, /^(?:contextmenu|keydown)$/)
@@ -28255,7 +28256,6 @@ xv-ru.com##+js(addEventListener-defuser, DOMContentLoaded, exo_tracker)
 litnet.com##+js(addEventListener-defuser, DOMContentLoaded, feedback)
 regnum.news,regnum.ru,tproger.ru##+js(addEventListener-defuser, click, , elements, a[href*="utm_campaign"])
 softonic.ru##+js(addEventListener-defuser, click, [native code])
-tapochek.net##+js(addEventListener-defuser, click, document.cookie.includes)
 ~player.smotrim.ru,smotrim.ru##+js(addEventListener-defuser, click, matches)
 ~id.rambler.ru,~mail.rambler.ru,rambler.ru,~vp.rambler.ru##+js(addEventListener-defuser, copy, extra)
 kp.kg,kp.kz,kp.md,kp.ru,rbc.ru,sportrbc.ru##+js(addEventListener-defuser, copy, getSelection)

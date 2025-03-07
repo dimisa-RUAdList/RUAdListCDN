@@ -1,8 +1,8 @@
-diff name:ruadlist lines:144 checksum:4d6ad309b4
+diff name:ruadlist lines:144 checksum:54a7d88169
 d4 2
 a5 2
-! Last modified: Fri, 07 Mar 2025 04:29:44 +0000
-! Diff-Path: ../patches/2025.3.7.269.patch#ruadlist
+! Last modified: Fri, 07 Mar 2025 09:26:13 +0000
+! Diff-Path: ../patches/2025.3.7.566.patch#ruadlist
 a8163 1
 /wp-content/plugins/aw-bnrs/*
 a8168 1
@@ -29,7 +29,7 @@ a11692 1
 a12997 1
 ||statbet.com/api/*/offers/
 a13093 1
-||tapochek.net/x.php
+||tapochek.net/z.php
 d13711 1
 d13716 2
 a13717 1
@@ -130,8 +130,8 @@ d28220 1
 d28240 1
 a28240 1
 vk.com,vk.ru##+js(abort-on-stack-trace, Object.prototype.copyErid, /feed|set/)
-a28258 1
-tapochek.net##+js(addEventListener-defuser, click, document.cookie.includes)
+a28241 1
+tapochek.net##+js(abort-on-stack-trace, atob, decodePath)
 a28279 1
 dzen.ru##+js(href-sanitizer, a[href*="/away?"], ?to)
 a28350 1
