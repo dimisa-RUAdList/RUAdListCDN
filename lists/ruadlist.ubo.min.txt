@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 08 Mar 2025 05:21:57 +0000
-! Diff-Path: ../patches/2025.3.8.321.patch#ruadlist
+! Last modified: Sat, 08 Mar 2025 10:22:32 +0000
+! Diff-Path: ../patches/2025.3.8.622.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10278,6 +10278,7 @@ $csp=script-src-attr 'none',domain=volyn.com.ua
 ||modsfire.com/download/*/$csp=script-src 'unsafe-eval' data:
 ||news-sphere.com^$csp=script-src
 ||nsportal.ru/download/$csp=frame-src 'self'
+||obfusgated.com/*/tools/ad-block-test$csp=connect-src 'self';
 ||opensharing.org/img/images/$csp=script-src 'unsafe-inline' 'unsafe-eval' opensharing.org/img/
 ||psysovet24.ru^$csp=script-src 'self' * blob: data:
 ||skam.online^$csp=script-src 'self' * 'unsafe-eval' data:
