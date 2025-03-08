@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 08 Mar 2025 15:19:57 +0000
-! Diff-Path: ../patches/2025.3.8.919.patch#ruadlist
+! Last modified: Sat, 08 Mar 2025 20:20:07 +0000
+! Diff-Path: ../patches/2025.3.8.1220.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -345,6 +345,7 @@
 ||advtise.ru^$third-party
 ||advtracker.ru^$third-party
 ||advweb.ru^
+||adwadvert.com.ua^$third-party
 ||adwels.ru^$third-party
 ||adwidgets.ru^$third-party
 ||adwise.agency^$third-party
@@ -10251,6 +10252,7 @@ drukarnia.com.ua##header ~ section[role="dialog"]
 $csp=script-src-attr 'none',domain=volyn.com.ua
 .infox.sg^$csp=script-src
 .softoroom.org^$csp=default-src 'unsafe-inline',domain=~gzip.softoroom.org|~m.softoroom.org
+/bens/vinos.js$csp=sandbox allow-same-origin;
 /gateway/aHR0c$csp=script-src
 |http*//fastpic.org/$csp=frame-src 'self'
 |http*//fastpic.org/$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' static.fastpic.org
@@ -21871,8 +21873,6 @@ $csp=script-src-attr 'none',domain=eurointegration.com.ua|pravda.com.ua|sportana
 @@||s.zmctrack.net/z|$xmlhttprequest
 @@||s.znctrack.net/z|$xmlhttprequest
 @@||ssp.rambler.ru/capirs_async.js|$script,domain=www.championat.com
-@@||tapochek.net/ajax.php|$xmlhttprequest,domain=tapochek.net
-@@||tapochek.net/torinfo.php|$xmlhttprequest,domain=tapochek.net
 https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|livejournal.com|olegmakarenko.ru|periskop.su|shakko.ru|shiro-kino.ru|vadimrazumov.ru
 ||imgfrost.net^$third-party
 ||liveinternet.ru/utf/lici.js?
@@ -21881,7 +21881,6 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
-||tapochek.net^$xmlhttprequest
 ! howdyho - набор правил для проверки таймаута рецидивов
 @@||yandex.ru/ads/meta/*?target-ref=$xmlhttprequest,domain=howdyho.net|howdyho.pro
 @@||yandex.ru/ads/system/context.js|$script,domain=howdyho.net|howdyho.pro
@@ -28078,6 +28077,7 @@ inoreader.com###reader_pane:style(padding-right: unset !important)
 inoreader.com###sinner_container:style(display: block !important; z-index: 0 !important)
 rambler.ru###summary ~ div:has(> [id^="cluster-video-ad"]):remove()
 pronpic.org###vO5STmSLgNAkebzSluI8coxpDgsG97g:style(height: 1px !important; min-height: 1px !important)
+*/bens/vinos.js$popunder
 kolizhanka.com.ua,miyzvuk.net,ozon.ru##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important)
 captcha-api.yandex.ru,passport.yandex.ru#@#+js()
 shaiba.kz##+js(abort-current-inline-script, $, 1xbet)
@@ -28608,7 +28608,6 @@ ya.ru,yandex.*##.simple-popup__overlay:remove()
 ||m.mixadvert.com/show/$important,script
 ||mc.admetrica.ru/sync_cookie_image_check$image,redirect=1x1-transparent.gif
 ||my.mail.ru/video/embed/*autoplay=1$subdocument,removeparam=autoplay
-||paintejuke.com^$popunder
 ||pronpic.org^$subdocument,redirect=noopframe,domain=pronpic.org
 ||pronpic.org^$third-party,badfilter
 ||rbk.ru/*/_videoAutoplayRecommend.js
