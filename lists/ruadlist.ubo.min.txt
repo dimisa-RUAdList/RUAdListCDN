@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 09 Mar 2025 16:24:43 +0000
-! Diff-Path: ../patches/2025.3.9.984.patch#ruadlist
+! Last modified: Sun, 09 Mar 2025 21:20:08 +0000
+! Diff-Path: ../patches/2025.3.9.1280.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -275,6 +275,7 @@
 ||ads.vk.com/|$xmlhttprequest,domain=~ads.vk.com
 ||ads2.bid^$third-party
 ||adsclick.ru^$third-party
+||adseedtech.com^$third-party
 ||adselector.ru^$third-party
 ||adservob.com^$third-party
 ||adservone.com^$third-party
@@ -14640,9 +14641,9 @@ mignews.com###smart_banner
 tyndex.ru###snippetprice
 animestars.ru###snow
 onlinetambov.ru###socAds
+agro-business.com.ua###sp-breadcrumb
 download-software.ru###sp-component .custom
 trend-city.ru###sp-left
-agro-business.com.ua###sp-right .custom > p > a > img
 igra-prestoloff.cx#?##sp-right > .sp-inner > .module:-abp-has([id*="ScriptRoot"])
 igra-prestoloff.cx#?##sp-right > .sp-inner > .module:-abp-has([onerror])
 hi.dn.ua,slavinfo.dn.ua###sp-top-banners
@@ -21436,6 +21437,7 @@ teremok.org.ua##img[src*="/partner/images/"]
 me3.com.ua##img[src*="/static/banners/"]
 vashurok.ru##img[src*="/system/banners/"]
 allgosts.ru##img[src*="/theme/img/hmwk/"]
+agroweek.com##img[src*="/ukravit."]
 dnl.com.ua,dnl.dn.ua,go64.ru,gubkinskiy.com,infoniac.ru,lipetskmedia.ru,paparazzi.ru,zi.ua##img[src*="/upload/rk/"]
 tyachivnews.in.ua##img[src*="/uploads/blocks/"]
 ksza.ks.ua##img[src*="/uploads/rain."]
