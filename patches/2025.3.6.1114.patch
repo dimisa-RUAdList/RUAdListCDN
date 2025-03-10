@@ -1,8 +1,8 @@
-diff name:ruadlist lines:54 checksum:691688a9e0
+diff name:ruadlist lines:61 checksum:f189607ed1
 d4 2
 a5 2
-! Last modified: Mon, 10 Mar 2025 07:22:19 +0000
-! Diff-Path: ../patches/2025.3.10.442.patch#ruadlist
+! Last modified: Mon, 10 Mar 2025 12:51:19 +0000
+! Diff-Path: ../patches/2025.3.10.771.patch#ruadlist
 a277 1
 ||adseedtech.com^$third-party
 a347 1
@@ -31,6 +31,10 @@ a15515 1
 ruwest.ru##.banners-head
 a15903 1
 ruwest.ru##.cl-simple-border-block
+a16020 3
+dtf.ru#?#.content > .content-header:-abp-has(> .author > [href="/br"]) ~ .content__body a[href][target="_blank"][rel]
+dtf.ru#?#.content > .content-header:-abp-has(> .author > [href="/luchshii-rating"]) ~ .content__body a[href][target="_blank"][rel]
+dtf.ru#?#.content > .content-header:-abp-has(> .author > [href="/toprate"]) ~ .content__body a[href][target="_blank"][rel]
 a16522 1
 mi100.info##.header-main__banner
 d19944 1
@@ -44,11 +48,14 @@ igromania.ru,kanobu.ru#?#section[class^="MaterialsManufacturerPage_infiniteWrap"
 d21873 1
 a21873 1
 ||pikabu.ru/ajax/*?o39oD=$xmlhttprequest
+d23056 1
 a26128 1
 /help?ajax=1&name=about_cookie$xmlhttprequest,domain=reshu.by|reshuent.kz|sdamgia.ru
 a28072 1
 */bens/vinos.js$popunder
 d28219 1
+a28291 1
+dtf.ru##+js(href-sanitizer, a[href^="https://api.dtf.ru/"][href*="/redirect?to="], ?to)
 a28382 1
 tapochek.net##+js(remove-node-text, script, setRequestHeader)
 a28568 1

@@ -1,17 +1,24 @@
-diff name:ruadlist lines:16 checksum:691688a9e0
+diff name:ruadlist lines:23 checksum:f189607ed1
 d4 2
 a5 2
-! Last modified: Mon, 10 Mar 2025 07:22:19 +0000
-! Diff-Path: ../patches/2025.3.10.442.patch#ruadlist
+! Last modified: Mon, 10 Mar 2025 12:51:19 +0000
+! Diff-Path: ../patches/2025.3.10.771.patch#ruadlist
 a277 1
 ||adseedtech.com^$third-party
 a14642 1
 agro-business.com.ua###sp-breadcrumb
 d14645 1
+a16027 3
+dtf.ru#?#.content > .content-header:-abp-has(> .author > [href="/br"]) ~ .content__body a[href][target="_blank"][rel]
+dtf.ru#?#.content > .content-header:-abp-has(> .author > [href="/luchshii-rating"]) ~ .content__body a[href][target="_blank"][rel]
+dtf.ru#?#.content > .content-header:-abp-has(> .author > [href="/toprate"]) ~ .content__body a[href][target="_blank"][rel]
 a21438 1
 agroweek.com##img[src*="/ukravit."]
 d21881 1
 a21881 1
 ||pikabu.ru/ajax/*?o39oD=$xmlhttprequest
+d23064 1
 a26136 1
 /help?ajax=1&name=about_cookie$xmlhttprequest,domain=reshu.by|reshuent.kz|sdamgia.ru
+a28299 1
+dtf.ru##+js(href-sanitizer, a[href^="https://api.dtf.ru/"][href*="/redirect?to="], ?to)

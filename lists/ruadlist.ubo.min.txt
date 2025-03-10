@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 10 Mar 2025 07:22:19 +0000
-! Diff-Path: ../patches/2025.3.10.442.patch#ruadlist
+! Last modified: Mon, 10 Mar 2025 12:51:19 +0000
+! Diff-Path: ../patches/2025.3.10.771.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -16026,6 +16026,9 @@ papillomy.com##.content .custom-block
 igra.life#?#.content > #info:nth-of-type(1):-abp-has(> .textos)
 list-org.com#?#.content > .card ~ div:-abp-has(> center > [id^="adfox_"])
 mos.news##.content > .comment-block[style^="margin"]
+dtf.ru#?#.content > .content-header:-abp-has(> .author > [href="/br"]) ~ .content__body a[href][target="_blank"][rel]
+dtf.ru#?#.content > .content-header:-abp-has(> .author > [href="/luchshii-rating"]) ~ .content__body a[href][target="_blank"][rel]
+dtf.ru#?#.content > .content-header:-abp-has(> .author > [href="/toprate"]) ~ .content__body a[href][target="_blank"][rel]
 seasonvar.one#?#.content > .content-wrap:-abp-has(.pgs-head:-abp-contains(Интересное))
 www.i.ua##.content > .news > div > #news_cont ~ [class]
 poimel.live##.content > .text-block.form-wrap
@@ -23063,7 +23066,6 @@ yandex.ru##.pharmacy-page-view__top-banner
 yandex.ru##.turbo-advert
 yandex.ru##div[id^="R-I-"]
 ! Яндекс.Игры
-yandex.ru##.stack > .aab-adv
 yandex.ru##.stack > .promo
 ! Яндекс.Музыка
 music.yandex.ru,music.yandex.*##.bar__driver-container
@@ -28300,6 +28302,7 @@ lifehacker.ru##+js(href-sanitizer, a[href][rel*="sponsored"][target="_blank"], ?
 hot.game##+js(href-sanitizer, a[href][target="_blank"][rel="nofollow"], ?ulp)
 www.ixbt.com##+js(href-sanitizer, a[href^="//www.ixbt.com/click/?c="], [title])
 wotspeak.org##+js(href-sanitizer, a[href^="/engine/dwn"], ?xf)
+dtf.ru##+js(href-sanitizer, a[href^="https://api.dtf.ru/"][href*="/redirect?to="], ?to)
 pikabu.ru##+js(href-sanitizer, a[href^="https://pikabu.ru/"][href*="?u=http"], ?u)
 nsportal.ru##+js(href-sanitizer, a[href^="https://www.google.com/url?q="])
 youtube.com##+js(href-sanitizer, a[href^="https://www.youtube.com/redirect?event="][href*="&q=http"], ?q)

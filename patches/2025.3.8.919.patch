@@ -1,8 +1,8 @@
-diff name:ruadlist lines:38 checksum:691688a9e0
+diff name:ruadlist lines:45 checksum:f189607ed1
 d4 2
 a5 2
-! Last modified: Mon, 10 Mar 2025 07:22:19 +0000
-! Diff-Path: ../patches/2025.3.10.442.patch#ruadlist
+! Last modified: Mon, 10 Mar 2025 12:51:19 +0000
+! Diff-Path: ../patches/2025.3.10.771.patch#ruadlist
 a277 1
 ||adseedtech.com^$third-party
 a347 1
@@ -17,6 +17,10 @@ $third-party,script,domain=1000iodinsovet.ru|100polezno.ru|100popugaev.ru|1080ki
 a14639 1
 agro-business.com.ua###sp-breadcrumb
 d14642 1
+a16024 3
+dtf.ru#?#.content > .content-header:-abp-has(> .author > [href="/br"]) ~ .content__body a[href][target="_blank"][rel]
+dtf.ru#?#.content > .content-header:-abp-has(> .author > [href="/luchshii-rating"]) ~ .content__body a[href][target="_blank"][rel]
+dtf.ru#?#.content > .content-header:-abp-has(> .author > [href="/toprate"]) ~ .content__body a[href][target="_blank"][rel]
 d19949 1
 a19949 1
 gtorrent.cc,gtorrent.club,gtorrent.ru##a[style*="color:"] > span
@@ -30,10 +34,13 @@ d21880 1
 a21880 1
 ||pikabu.ru/ajax/*?o39oD=$xmlhttprequest
 d21884 1
+d23064 1
 a26136 1
 /help?ajax=1&name=about_cookie$xmlhttprequest,domain=reshu.by|reshuent.kz|sdamgia.ru
 a28080 1
 */bens/vinos.js$popunder
+a28298 1
+dtf.ru##+js(href-sanitizer, a[href^="https://api.dtf.ru/"][href*="/redirect?to="], ?to)
 a28576 1
 pornhub.*##.playerFlvContainer.mgp_hideControls:style(cursor: none !important)
 d28611 1
