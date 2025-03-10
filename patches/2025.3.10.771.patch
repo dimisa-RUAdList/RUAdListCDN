@@ -1,24 +1,18 @@
-diff name:ruadlist lines:23 checksum:5865f418fa
+diff name:ruadlist lines:17 checksum:5865f418fa
 d4 2
 a5 2
 ! Last modified: Mon, 10 Mar 2025 17:25:14 +0000
 ! Diff-Path: ../patches/2025.3.10.1045.patch#ruadlist
-a16028 3
-dtf.ru#?#.content > .content-header:-abp-has(> .author > [href="/br"]) ~ .content__body a[href][target="_blank"][rel]
-dtf.ru#?#.content > .content-header:-abp-has(> .author > [href="/luchshii-rating"]) ~ .content__body a[href][target="_blank"][rel]
-dtf.ru#?#.content > .content-header:-abp-has(> .author > [href="/toprate"]) ~ .content__body a[href][target="_blank"][rel]
-a18933 1
+a18936 1
 shuba.life#?#[data-article] > [data-feed-gallery]:-abp-has(a[href*="utm_campai"])
-a18952 1
+a18955 1
 shuba.life##[data-discount-banner]
-a19299 1
+a19302 1
 shuba.life##a[href*="/ingredients/buy"]
-d23066 2
-a23067 3
+d23069 1
+a23069 3
 yandex.ru,yandex.*##.grid-list__game-item_adv
 yandex.ru,yandex.*##.stack > .promo
 yandex.ru,yandex.*##div[class^="FeedAdvBlockRenderer-critical-module__banner"]:empty
-a26542 1
+a26544 1
 cq.ru##article[data-post-url^="https://cq.ru/articles/tech/"] .cq-code-block a[href][rel="nofollow"]:not([href^="/"]):not([href^="https://cq.ru/"]):style(pointer-events: none !important; color: inherit !important)
-a28302 1
-dtf.ru##+js(href-sanitizer, a[href^="https://api.dtf.ru/"][href*="/redirect?to="], ?to)

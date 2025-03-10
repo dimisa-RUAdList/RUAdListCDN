@@ -1,8 +1,8 @@
-diff name:ruadlist lines:36 checksum:f189607ed1
+diff name:ruadlist lines:48 checksum:5865f418fa
 d4 2
 a5 2
-! Last modified: Mon, 10 Mar 2025 12:51:19 +0000
-! Diff-Path: ../patches/2025.3.10.771.patch#ruadlist
+! Last modified: Mon, 10 Mar 2025 17:25:14 +0000
+! Diff-Path: ../patches/2025.3.10.1045.patch#ruadlist
 a277 1
 ||adseedtech.com^$third-party
 a5664 1
@@ -17,6 +17,12 @@ a16026 3
 dtf.ru#?#.content > .content-header:-abp-has(> .author > [href="/br"]) ~ .content__body a[href][target="_blank"][rel]
 dtf.ru#?#.content > .content-header:-abp-has(> .author > [href="/luchshii-rating"]) ~ .content__body a[href][target="_blank"][rel]
 dtf.ru#?#.content > .content-header:-abp-has(> .author > [href="/toprate"]) ~ .content__body a[href][target="_blank"][rel]
+a18931 1
+shuba.life#?#[data-article] > [data-feed-gallery]:-abp-has(a[href*="utm_campai"])
+a18950 1
+shuba.life##[data-discount-banner]
+a19297 1
+shuba.life##a[href*="/ingredients/buy"]
 d19951 1
 a19951 1
 gtorrent.cc,gtorrent.club,gtorrent.ru##a[style*="color:"] > span
@@ -28,9 +34,15 @@ igromania.ru,kanobu.ru#?#section[class^="MaterialsManufacturerPage_infiniteWrap"
 d21880 1
 a21880 1
 ||pikabu.ru/ajax/*?o39oD=$xmlhttprequest
-d23063 1
+d23063 2
+a23064 3
+yandex.ru,yandex.*##.grid-list__game-item_adv
+yandex.ru,yandex.*##.stack > .promo
+yandex.ru,yandex.*##div[class^="FeedAdvBlockRenderer-critical-module__banner"]:empty
 a26135 1
 /help?ajax=1&name=about_cookie$xmlhttprequest,domain=reshu.by|reshuent.kz|sdamgia.ru
+a26538 1
+cq.ru##article[data-post-url^="https://cq.ru/articles/tech/"] .cq-code-block a[href][rel="nofollow"]:not([href^="/"]):not([href^="https://cq.ru/"]):style(pointer-events: none !important; color: inherit !important)
 a28298 1
 dtf.ru##+js(href-sanitizer, a[href^="https://api.dtf.ru/"][href*="/redirect?to="], ?to)
 a28576 1

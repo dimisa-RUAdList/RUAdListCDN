@@ -1,8 +1,8 @@
-diff name:ruadlist lines:23 checksum:f189607ed1
+diff name:ruadlist lines:35 checksum:5865f418fa
 d4 2
 a5 2
-! Last modified: Mon, 10 Mar 2025 12:51:19 +0000
-! Diff-Path: ../patches/2025.3.10.771.patch#ruadlist
+! Last modified: Mon, 10 Mar 2025 17:25:14 +0000
+! Diff-Path: ../patches/2025.3.10.1045.patch#ruadlist
 a277 1
 ||adseedtech.com^$third-party
 a14642 1
@@ -12,13 +12,25 @@ a16027 3
 dtf.ru#?#.content > .content-header:-abp-has(> .author > [href="/br"]) ~ .content__body a[href][target="_blank"][rel]
 dtf.ru#?#.content > .content-header:-abp-has(> .author > [href="/luchshii-rating"]) ~ .content__body a[href][target="_blank"][rel]
 dtf.ru#?#.content > .content-header:-abp-has(> .author > [href="/toprate"]) ~ .content__body a[href][target="_blank"][rel]
+a18932 1
+shuba.life#?#[data-article] > [data-feed-gallery]:-abp-has(a[href*="utm_campai"])
+a18951 1
+shuba.life##[data-discount-banner]
+a19298 1
+shuba.life##a[href*="/ingredients/buy"]
 a21438 1
 agroweek.com##img[src*="/ukravit."]
 d21881 1
 a21881 1
 ||pikabu.ru/ajax/*?o39oD=$xmlhttprequest
-d23064 1
+d23064 2
+a23065 3
+yandex.ru,yandex.*##.grid-list__game-item_adv
+yandex.ru,yandex.*##.stack > .promo
+yandex.ru,yandex.*##div[class^="FeedAdvBlockRenderer-critical-module__banner"]:empty
 a26136 1
 /help?ajax=1&name=about_cookie$xmlhttprequest,domain=reshu.by|reshuent.kz|sdamgia.ru
+a26539 1
+cq.ru##article[data-post-url^="https://cq.ru/articles/tech/"] .cq-code-block a[href][rel="nofollow"]:not([href^="/"]):not([href^="https://cq.ru/"]):style(pointer-events: none !important; color: inherit !important)
 a28299 1
 dtf.ru##+js(href-sanitizer, a[href^="https://api.dtf.ru/"][href*="/redirect?to="], ?to)

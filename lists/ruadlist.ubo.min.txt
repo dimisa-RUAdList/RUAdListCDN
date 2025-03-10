@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 10 Mar 2025 12:51:19 +0000
-! Diff-Path: ../patches/2025.3.10.771.patch#ruadlist
+! Last modified: Mon, 10 Mar 2025 17:25:14 +0000
+! Diff-Path: ../patches/2025.3.10.1045.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -18934,6 +18934,7 @@ doska.ykt.ru##[data-adurl]
 teknoblog.ru##[data-advadstrackid]
 bryansknovosti.ru,novozybkov.su#?#[data-alias="Copyright"] .widget-area > .widget_text:not(:last-child):-abp-has(script)
 vc.ru##[data-analytics*="native"]
+shuba.life#?#[data-article] > [data-feed-gallery]:-abp-has(a[href*="utm_campai"])
 bobr.by,buhonline.ru,zakon.ru##[data-banner-id]
 lena-miro.ru,levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##[data-banner-place-id]
 focus.ua,sovets.net,tvtver.ru##[data-banner]
@@ -18953,6 +18954,7 @@ itc.ua##[data-course]
 starhit.ru##[data-creative]
 banki.ru##[data-dfp-container]
 briefly.ru##[data-disclaimer*="Реклама"]
+shuba.life##[data-discount-banner]
 basaru.net.ru,gooool365.org,lexxs.us,redheadsound.studio,superkarate.ru,topfile.tj,uzmov.net,weblance.com.ua##[data-dlebclicks]
 arguments.kyiv.ua,dailynews.kyiv.ua,elegantwoman.kyiv.ua,glamour.kyiv.ua,lady.kyiv.ua,medicalanswers.com.ua,news24.in.ua,ua-novosti.info,ua-vestnik.com,useti.org.ua,womanlife.kyiv.ua,zhenskiy.kyiv.ua##[data-element_type="widget"] a[rel="nofollow"]
 gdetraffic.com##[data-gcat="ads"]
@@ -19300,6 +19302,7 @@ dota2.ru##a[href*="/gobet/"]
 gig-torrent.ru##a[href*="/gobtn.php"]
 black-warez.ru##a[href*="/goto.php?file="]
 newsyou.info##a[href*="/goto/"][target]
+shuba.life##a[href*="/ingredients/buy"]
 mixsoft.org,soccer24.top,sportlive365.net,zfilm-hd.org,zfilme-hd1.site,zserials.cc##a[href*="/is.gd/"]
 posudaa.ru##a[href*="/offer/"]
 profootball.ua##a[href*="/php/rotator/goto.php?id="]
@@ -23066,7 +23069,9 @@ yandex.ru##.pharmacy-page-view__top-banner
 yandex.ru##.turbo-advert
 yandex.ru##div[id^="R-I-"]
 ! Яндекс.Игры
-yandex.ru##.stack > .promo
+yandex.ru,yandex.*##.grid-list__game-item_adv
+yandex.ru,yandex.*##.stack > .promo
+yandex.ru,yandex.*##div[class^="FeedAdvBlockRenderer-critical-module__banner"]:empty
 ! Яндекс.Музыка
 music.yandex.ru,music.yandex.*##.bar__driver-container
 music.yandex.ru,music.yandex.*##[class^="audio-advert"]
@@ -26542,6 +26547,7 @@ coub.com##header[class="header -transparent"]:style(background: #e0e0e0 !importa
 cpa.rip###page-wrapper > header:style(margin-bottom: auto !important)
 ! ---
 cq.ru##.box[class*="content"]:style(margin-top: auto !important)
+cq.ru##article[data-post-url^="https://cq.ru/articles/tech/"] .cq-code-block a[href][rel="nofollow"]:not([href^="/"]):not([href^="https://cq.ru/"]):style(pointer-events: none !important; color: inherit !important)
 ! ---
 creativportal.ru##.pocaz:style(width: 10px !important; height: 10px !important; position: fixed !important; top:-100px !important)
 ! ---
