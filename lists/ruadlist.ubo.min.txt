@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 11 Mar 2025 13:32:34 +0000
-! Diff-Path: ../patches/2025.3.11.812.patch#ruadlist
+! Last modified: Tue, 11 Mar 2025 18:35:26 +0000
+! Diff-Path: ../patches/2025.3.11.1115.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -17953,6 +17953,7 @@ vokrug.tv##.sidebar > :not([class])
 beauty.ua##.sidebar > a
 eftwiki.ru##.sidebar > a[href][target="_blank"]
 ru-minecraft.ru##.sidebar > a[href][target="_blank"][rel="nofollow"] > img
+fbc.biz.ua##.sidebar > a[target="_blank"] > img
 online-fix.me#?#.sidebar > div:-abp-has(> #twitch-embed)
 blizzardheroes.ru##.sidebar > div[class^="block"]
 vakhta-job.ru##.sidebar > div[style]
@@ -18017,7 +18018,6 @@ teploguru.ru##.sidebar__rek
 landlord.ua##.sidebar_kdbn
 solncewonews.ru##.sidebar_list > .widget_text:not(#text-4):not(#text-89)
 solncewonews.ru##.sidebar_list > [id*="custom_html"]
-fbc.biz.ua##.sidebar_list_item a[href][target="_blank"] > img
 minecraft-files.ru##.sidebar_rek
 burdastyle.ru##.sidebar_top > .mobile-hide
 autocentre.ua##.sidebar_upper
