@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 11 Mar 2025 08:32:09 +0000
-! Diff-Path: ../patches/2025.3.11.512.patch#ruadlist
+! Last modified: Tue, 11 Mar 2025 13:32:34 +0000
+! Diff-Path: ../patches/2025.3.11.812.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -18934,6 +18934,7 @@ teknoblog.ru##[data-advadstrackid]
 bryansknovosti.ru,novozybkov.su#?#[data-alias="Copyright"] .widget-area > .widget_text:not(:last-child):-abp-has(script)
 vc.ru##[data-analytics*="native"]
 shuba.life#?#[data-article] > [data-feed-gallery]:-abp-has(a[href*="utm_campai"])
+shuba.life##[data-banner-container]
 bobr.by,buhonline.ru,zakon.ru##[data-banner-id]
 lena-miro.ru,levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##[data-banner-place-id]
 focus.ua,sovets.net,tvtver.ru##[data-banner]
@@ -25151,7 +25152,6 @@ bamper.by,bazar.bike,biblionika.info#@#.adds-wrapper
 kvartirant.by#@#.adinfo
 insignia-mebel.ru#@#.ads-bg
 kvartirant.by#@#.ads-box
-surl.li#@#.ads-card
 insignia-mebel.ru#@#.ads-footer
 reklama-sev.com.ua#@#.ads-holder
 bamper.by#@#.ads-image
@@ -28400,6 +28400,7 @@ pikabu.ru##+js(remove-node-text, script, addPlaceholder)
 agronews.ua,agroreview.com##+js(remove-node-text, script, clickedOnContent)
 gsm.in.ua##+js(remove-node-text, script, message_ads)
 tapochek.net##+js(remove-node-text, script, setRequestHeader)
+dtf.ru,vc.ru##+js(set-attr, .comment-media > .andropov-video > video, controls, true)
 dtf.ru,vc.ru##+js(set-attr, .media > .andropov-video > video, controls, true)
 eneyida.tv##+js(set-attr, .owl-item > a > img, src, [data-src])
 fontanka.ru##+js(set-attr, [class^="articleBlockVideo_"] video, controls, true)
@@ -28506,6 +28507,7 @@ vc.ru##.andropov_video:remove-attr(data-video-play-mode)
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.app__wrapper div[style^="width: calc(100% "]:remove-attr(style)
 footboom.com,footboom.kz##.b-article-content > h2:has-text(букмекер)
 lostfilm.download,lostfilm.life,lostfilm.one,lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##.body > .body:style(user-select: text !important; -moz-user-select: text !important; -webkit-user-select: text !important)
+dtf.ru,vc.ru##.comment-media > .andropov-video > video:remove-attr(autoplay)
 online-fix.me##.content > .errors
 playground.ru##.dfp-container:remove()
 smotrim.ru##.dialog-wrapper

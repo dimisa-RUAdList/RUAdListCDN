@@ -1,15 +1,16 @@
-diff name:ruadlist lines:27 checksum:a5b006b17a
+diff name:ruadlist lines:33 checksum:fee16e26e2
 d4 2
 a5 2
-! Last modified: Tue, 11 Mar 2025 08:32:09 +0000
-! Diff-Path: ../patches/2025.3.11.512.patch#ruadlist
+! Last modified: Tue, 11 Mar 2025 13:32:34 +0000
+! Diff-Path: ../patches/2025.3.11.812.patch#ruadlist
 a16028 3
 dtf.ru#?#.content > .content-header:-abp-has(> .author > [href="/br"]) ~ .content__body a[href][target="_blank"][rel]
 dtf.ru#?#.content > .content-header:-abp-has(> .author > [href="/luchshii-rating"]) ~ .content__body a[href][target="_blank"][rel]
 dtf.ru#?#.content > .content-header:-abp-has(> .author > [href="/toprate"]) ~ .content__body a[href][target="_blank"][rel]
 d18473 1
-a18933 1
+a18933 2
 shuba.life#?#[data-article] > [data-feed-gallery]:-abp-has(a[href*="utm_campai"])
+shuba.life##[data-banner-container]
 a18952 1
 shuba.life##[data-discount-banner]
 a19299 1
@@ -22,7 +23,12 @@ a23067 3
 yandex.ru,yandex.*##.grid-list__game-item_adv
 yandex.ru,yandex.*##.stack > .promo
 yandex.ru,yandex.*##div[class^="FeedAdvBlockRenderer-critical-module__banner"]:empty
+d25148 1
 a26542 1
 cq.ru##article[data-post-url^="https://cq.ru/articles/tech/"] .cq-code-block a[href][rel="nofollow"]:not([href^="/"]):not([href^="https://cq.ru/"]):style(pointer-events: none !important; color: inherit !important)
 a28302 1
 dtf.ru##+js(href-sanitizer, a[href^="https://api.dtf.ru/"][href*="/redirect?to="], ?to)
+a28394 1
+dtf.ru,vc.ru##+js(set-attr, .comment-media > .andropov-video > video, controls, true)
+a28500 1
+dtf.ru,vc.ru##.comment-media > .andropov-video > video:remove-attr(autoplay)

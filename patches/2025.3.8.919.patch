@@ -1,8 +1,8 @@
-diff name:ruadlist lines:58 checksum:a5b006b17a
+diff name:ruadlist lines:64 checksum:fee16e26e2
 d4 2
 a5 2
-! Last modified: Tue, 11 Mar 2025 08:32:09 +0000
-! Diff-Path: ../patches/2025.3.11.512.patch#ruadlist
+! Last modified: Tue, 11 Mar 2025 13:32:34 +0000
+! Diff-Path: ../patches/2025.3.11.812.patch#ruadlist
 a277 1
 ||adseedtech.com^$third-party
 a347 1
@@ -22,8 +22,9 @@ dtf.ru#?#.content > .content-header:-abp-has(> .author > [href="/br"]) ~ .conten
 dtf.ru#?#.content > .content-header:-abp-has(> .author > [href="/luchshii-rating"]) ~ .content__body a[href][target="_blank"][rel]
 dtf.ru#?#.content > .content-header:-abp-has(> .author > [href="/toprate"]) ~ .content__body a[href][target="_blank"][rel]
 d18469 1
-a18929 1
+a18929 2
 shuba.life#?#[data-article] > [data-feed-gallery]:-abp-has(a[href*="utm_campai"])
+shuba.life##[data-banner-container]
 a18948 1
 shuba.life##[data-discount-banner]
 a19295 1
@@ -46,6 +47,7 @@ a23065 3
 yandex.ru,yandex.*##.grid-list__game-item_adv
 yandex.ru,yandex.*##.stack > .promo
 yandex.ru,yandex.*##div[class^="FeedAdvBlockRenderer-critical-module__banner"]:empty
+d25146 1
 a26136 1
 /help?ajax=1&name=about_cookie$xmlhttprequest,domain=reshu.by|reshuent.kz|sdamgia.ru
 a26539 1
@@ -54,6 +56,10 @@ a28080 1
 */bens/vinos.js$popunder
 a28298 1
 dtf.ru##+js(href-sanitizer, a[href^="https://api.dtf.ru/"][href*="/redirect?to="], ?to)
+a28390 1
+dtf.ru,vc.ru##+js(set-attr, .comment-media > .andropov-video > video, controls, true)
+a28496 1
+dtf.ru,vc.ru##.comment-media > .andropov-video > video:remove-attr(autoplay)
 a28576 1
 pornhub.*##.playerFlvContainer.mgp_hideControls:style(cursor: none !important)
 d28611 1

@@ -1,8 +1,8 @@
-diff name:ruadlist lines:64 checksum:a5b006b17a
+diff name:ruadlist lines:70 checksum:fee16e26e2
 d4 2
 a5 2
-! Last modified: Tue, 11 Mar 2025 08:32:09 +0000
-! Diff-Path: ../patches/2025.3.11.512.patch#ruadlist
+! Last modified: Tue, 11 Mar 2025 13:32:34 +0000
+! Diff-Path: ../patches/2025.3.11.812.patch#ruadlist
 a277 1
 ||adseedtech.com^$third-party
 a347 1
@@ -30,8 +30,9 @@ dtf.ru#?#.content > .content-header:-abp-has(> .author > [href="/toprate"]) ~ .c
 a16526 1
 mi100.info##.header-main__banner
 d18468 1
-a18928 1
+a18928 2
 shuba.life#?#[data-article] > [data-feed-gallery]:-abp-has(a[href*="utm_campai"])
+shuba.life##[data-banner-container]
 a18947 1
 shuba.life##[data-discount-banner]
 a19294 1
@@ -52,6 +53,7 @@ a23061 3
 yandex.ru,yandex.*##.grid-list__game-item_adv
 yandex.ru,yandex.*##.stack > .promo
 yandex.ru,yandex.*##div[class^="FeedAdvBlockRenderer-critical-module__banner"]:empty
+d25142 1
 a26132 1
 /help?ajax=1&name=about_cookie$xmlhttprequest,domain=reshu.by|reshuent.kz|sdamgia.ru
 a26535 1
@@ -60,6 +62,10 @@ a28076 1
 */bens/vinos.js$popunder
 a28294 1
 dtf.ru##+js(href-sanitizer, a[href^="https://api.dtf.ru/"][href*="/redirect?to="], ?to)
+a28386 1
+dtf.ru,vc.ru##+js(set-attr, .comment-media > .andropov-video > video, controls, true)
+a28492 1
+dtf.ru,vc.ru##.comment-media > .andropov-video > video:remove-attr(autoplay)
 a28572 1
 pornhub.*##.playerFlvContainer.mgp_hideControls:style(cursor: none !important)
 d28607 1
