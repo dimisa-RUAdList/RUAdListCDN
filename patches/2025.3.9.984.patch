@@ -1,14 +1,17 @@
-diff name:ruadlist lines:119 checksum:a9df2a95ab
+diff name:ruadlist lines:152 checksum:31bc6cd4e5
 d4 2
 a5 2
-! Last modified: Wed, 12 Mar 2025 14:28:09 +0000
-! Diff-Path: ../patches/2025.3.12.868.patch#ruadlist
+! Last modified: Wed, 12 Mar 2025 19:20:13 +0000
+! Diff-Path: ../patches/2025.3.12.1160.patch#ruadlist
 a277 1
 ||adseedtech.com^$third-party
 a6817 1
 ||whtmyco.com^$third-party
 d8003 1
 d8050 1
+a10133 2
+surl.*##.card-body > .row > div:first-child:not(:only-child)
+surl.*#?#.text-center:-abp-has(> form > .disabled) > p ~ *
 a10267 1
 ||cosplay-porn.$csp=connect-src 'self' blob: data:
 a10281 1
@@ -25,6 +28,10 @@ a10546 1
 d10568 1
 a10568 1
 /html5banner/*$domain=animevost.one|animevost.org|animevost.top|vost.pw
+a10822 1
+||agronomy.com.ua/*/ad_agency/
+a10825 1
+||agronomy.com.ua/modules/mod_aikon_magic_popup/
 a11219 2
 ||cosplay-porn.*/front/js/all_a.js
 ||cosplay-porn.*/front/js/unwanted.js
@@ -43,6 +50,8 @@ d14645 1
 d14821 1
 a14821 1
 animevost.one,animevost.org,animevost.top,vost.pw###wrap > div[class^="headbg"] > a[href][target="_blank"]
+a15135 1
+agronomy.com.ua##.apm-container
 d15548 1
 a15548 1
 animevost.one,animevost.org,animevost.top,vost.pw##.batre
@@ -59,7 +68,13 @@ animevost.one,animevost.org,animevost.top,vost.pw##.shortstoryContent > center[s
 a17951 1
 fbc.biz.ua##.sidebar > a[target="_blank"] > img
 d18016 1
+a18037 1
+pravda.if.ua##.single-post-6__author
+d18245 1
 d18472 1
+d18679 2
+a18835 1
+pravda.if.ua##[class*="footer"] > [class*="menu-section footer-"]:last-child
 a18932 2
 shuba.life#?#[data-article] > [data-feed-gallery]:-abp-has(a[href*="utm_campai"])
 shuba.life##[data-banner-container]
@@ -67,24 +82,40 @@ a18951 1
 shuba.life##[data-discount-banner]
 a18969 1
 myfin.by##[data-link*="winline.by"]
+a18995 1
+pravda.if.ua##[data-source="editor"] > section
 a19298 1
 shuba.life##a[href*="/ingredients/buy"]
+d19393 1
+a19393 1
+2ip.ua,agro-business.com.ua,agronomy.com.ua,alcogolizm.com,anekdot.ru,bitpump.ru,blisch.by,glavagronom.ru,gomel-sat.bz,gre4ka.info,legkopolezno.ru,maw.ru,ozersk74.ru,post-tracker.ru,pravda.if.ua,threatpost.ru,topfile.tj,uamotors.com.ua,yaizakon.com.ua,zhacker.net##a[href*="banner"]
 d19537 1
 a19537 1
 1tulatv.ru,animevost.one,animevost.org,animevost.top,bessarabiainform.com,bombardir.ru,dwg.ru,ebooktime.net,fex.net,pc-consultant.ru,programmersforum.ru,rusplt.ru,sport24.ru,traktorist.ua,vost.pw##a[href*="utm_"]
+a20403 1
+pravda.if.ua##div[class*="content-wrapper"] > [class*="share-container"] ~ [class*="share-container"]
 d20650 1
 a20650 1
 animevost.one,animevost.org,animevost.top,vost.pw##div[class^="interDub-"]
 d21015 1
+a21290 1
+pravda.if.ua##header a[href="https://pravda.if.ua/zamovyty-reklamu/"]
 a21438 1
 agroweek.com##img[src*="/ukravit."]
 a21518 1
 mult-porno.*,sex-studentki.*##.vpsembedmob
+a21651 3
+surl.*##.promo-block
+surl.*##.promo-title
+surl.*##.very-nice-button
 d21881 1
 a21881 1
 ||pikabu.ru/ajax/*?z13sr=$xmlhttprequest
 a22572 1
 pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net###banner-stub
+a22639 2
+championat.com##.stat-widget__banner
+championat.com##.stat-widget__header
 a22704 1
 ||lenta.ru/fenwick
 d23064 2
@@ -93,6 +124,8 @@ yandex.ru,yandex.*##.grid-list__game-item_adv
 yandex.ru,yandex.*##.stack > .promo
 yandex.ru,yandex.*##div[class^="FeedAdvBlockRenderer-critical-module__banner"]:empty
 d25146 1
+a26101 1
+animego.show##.errror
 a26136 1
 /help?ajax=1&name=about_cookie$xmlhttprequest,domain=reshu.by|reshuent.kz|sdamgia.ru
 d26375 3
