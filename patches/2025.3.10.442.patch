@@ -1,8 +1,12 @@
-diff name:ruadlist lines:73 checksum:ad62ec5403
+diff name:ruadlist lines:101 checksum:01f68285b7
 d4 2
 a5 2
-! Last modified: Wed, 12 Mar 2025 04:31:46 +0000
-! Diff-Path: ../patches/2025.3.12.271.patch#ruadlist
+! Last modified: Wed, 12 Mar 2025 09:27:22 +0000
+! Diff-Path: ../patches/2025.3.12.567.patch#ruadlist
+a6818 1
+||whtmyco.com^$third-party
+d8004 1
+d8051 1
 d10508 1
 a10508 1
 /*.php?uid=$script,domain=animevost.one|animevost.org|animevost.top|vost.pw
@@ -13,6 +17,15 @@ a10547 1
 d10569 1
 a10569 1
 /html5banner/*$domain=animevost.one|animevost.org|animevost.top|vost.pw
+a11220 2
+||cosplay-porn.*/front/js/all_a.js
+||cosplay-porn.*/front/js/unwanted.js
+a12193 1
+||mult-porno.*/front/js/all_a.js
+d12195 1
+a12868 1
+||sex-studentki.*/front/js/all_a.js
+d12870 1
 d14238 1
 a14238 1
 animevost.one,animevost.org,animevost.top,vost.pw###moduleLeft[style="border:0;"]
@@ -26,6 +39,9 @@ a16028 3
 dtf.ru#?#.content > .content-header:-abp-has(> .author > [href="/br"]) ~ .content__body a[href][target="_blank"][rel]
 dtf.ru#?#.content > .content-header:-abp-has(> .author > [href="/luchshii-rating"]) ~ .content__body a[href][target="_blank"][rel]
 dtf.ru#?#.content > .content-header:-abp-has(> .author > [href="/toprate"]) ~ .content__body a[href][target="_blank"][rel]
+a16426 2
+myfin.by##.game__label
+myfin.by##.game__partner-logo
 d17883 1
 a17883 1
 animevost.one,animevost.org,animevost.top,vost.pw##.shortstoryContent > center[style]
@@ -38,6 +54,8 @@ shuba.life#?#[data-article] > [data-feed-gallery]:-abp-has(a[href*="utm_campai"]
 shuba.life##[data-banner-container]
 a18952 1
 shuba.life##[data-discount-banner]
+a18970 1
+myfin.by##[data-link*="winline.by"]
 a19299 1
 shuba.life##a[href*="/ingredients/buy"]
 d19538 1
@@ -47,9 +65,15 @@ d20651 1
 a20651 1
 animevost.one,animevost.org,animevost.top,vost.pw##div[class^="interDub-"]
 d21016 1
+a21520 1
+mult-porno.*,sex-studentki.*##.vpsembedmob
 d21883 1
 a21883 1
-||pikabu.ru/ajax/*?t2f6w=$xmlhttprequest
+||pikabu.ru/ajax/*?z13sr=$xmlhttprequest
+a22574 1
+pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net###banner-stub
+a22706 1
+||lenta.ru/fenwick
 d23066 2
 a23067 3
 yandex.ru,yandex.*##.grid-list__game-item_adv
@@ -72,3 +96,7 @@ a28394 1
 dtf.ru,vc.ru##+js(set-attr, .comment-media > .andropov-video > video, controls, true)
 a28500 1
 dtf.ru,vc.ru##.comment-media > .andropov-video > video:remove-attr(autoplay)
+a28562 2
+cosplay-porn.*,mult-porno.*,sex-studentki.*##+js(remove-node-text, script, /initTeasers|initVads/)
+cosplay-porn.*,mult-porno.*,sex-studentki.*##+js(set-cookie-reload, is_age_verified, 1)
+d28576 1
