@@ -1,8 +1,8 @@
-diff name:ruadlist lines:125 checksum:57a693a765
+diff name:ruadlist lines:158 checksum:a925191cc0
 d4 2
 a5 2
-! Last modified: Thu, 13 Mar 2025 05:26:54 +0000
-! Diff-Path: ../patches/2025.3.13.326.patch#ruadlist
+! Last modified: Thu, 13 Mar 2025 10:30:01 +0000
+! Diff-Path: ../patches/2025.3.13.630.patch#ruadlist
 a6818 1
 ||whtmyco.com^$third-party
 d8004 1
@@ -16,6 +16,9 @@ a10282 1
 ||mult-porno.$csp=connect-src 'self' blob: data:
 a10287 1
 ||sex-studentki.$csp=connect-src 'self' blob: data:
+d10301 1
+a10301 1
+$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: *.addtoany.com *.amazonaws.com *.cloudflare.com *.dmca.com *.disqus.com *.disquscdn.com *.facebook.com *.getsitecontrol.com apis.google.com cse.google.com *.google.com/cse/ *.google.com/complete/ *.google.com/recaptcha/ translate.google.com www.google.com *.googleapis.com *.googletagmanager.com *.gstatic.com/recaptcha/ *.instagram.com *.jivosite.com *.jquery.com *.keycaptcha.com *.sendpulse.com *.sharethis.com *.po.st *.threadloom.com *.tiktok.com *.trustpilot.com *.twitter.com vk.com www.youtube.com *.dev *.io *.net *.org *.ru *.ua,domain=agroter.com.ua|alensat.com|allbasketball.org|askentire.net|autonews.co.ua|autosoftos.com|babla.ru|bio-lessons.ru|callfilter.app|cardiagram.com.ua|clickthis.blog|coollib.net|delo.ua|elegantwoman.kyiv.ua|eurointegration.com.ua|farposst.ru|findhow.org|gazeta-misto.te.ua|golos.te.ua|icon-icons.com|ilenta.com|index.minfin.com.ua|inforesist.org|kovelpost.com|kreschatic.kiev.ua|kurs.com.ua|mirlib.ru|modfix.ru|musinfo.net|ontvtime.ru|orbit-games.com|pb-news.info|perpendicular.pro|pes-files.ru|pingvin.pro|poezdato.net|poizdato.net|pravda.com.ua|rovesnyknews.te.ua|ruboard.website|skidkaonline.ru|sundries.ua|tenews.org.ua|ternopillive.com|tribun.com.ua|uapress.kyiv.ua|valorantinfo.com|vesti-ua.net|vkazivka.com|wallpapershome.ru|xn--80aaukc.xn--j1amh
 d10508 1
 a10508 1
 /*.php?uid=$script,domain=animevost.one|animevost.org|animevost.top|vost.pw
@@ -26,10 +29,15 @@ a10547 1
 d10569 1
 a10569 1
 /html5banner/*$domain=animevost.one|animevost.org|animevost.top|vost.pw
+d10571 1
+a10571 1
+/images/banners/*$domain=19rus.info|19rusinfo.ru|1tvnet.ru|33strausa.ru|8vp.ru|abnews.ru|agroxxi.ru|alfa-form.ru|altgazeta.ru|aniplay.tv|antimuh.ru|archiportal-crimea.ru|arendator.ru|aum.news|autogrodno.by|bez-smenki.ru|bitpump.ru|biwork.ru|bryansktoday.ru|buzday.ru|buzulukday.ru|bvedomosti.ru|calcus.ru|cars.ru|coil32.ru|cryptoff.org|csmania.ru|cxem.net|darkmoney.at|dtpptz.ru|ecm-journal.ru|erotix-tv.com|express-prigorod.ru|fakty.ua|fermagid.ru|firtka.if.ua|fitsport.ru|forpost.lviv.ua|fuzz-magazine.ru|hd-systems.com.ua|highload.today|house.kg|hv-info.ru|hype.tech|info-ua.com|infokam.su|inforeactor.ru|itc.ua|itexpert.org.ua|izmacity.com|kaluga.ru|kamchatinfo.com|karelia.ru|kazfootball.kz|kids.to-var.com|km.ru|ko44.ru|korabel.ru|kramatorsk.info|kyiv-independent.com|lifetambov.ru|mc.today|mebelminsk.by|medicalj.ru|memstatus.ru|mirnov.ru|mos-holidays.ru|moscow-post.com|motoforum.ru|motovibor.ru|moya-semya.ru|mycity.by|nakanune.ru|nashdisk.ru|naurfo.ru|ndn.info|newgdz.com|newgubakha.ru|news.soundex.ru|ng.kz|ngregion.ru|nsday.ru|numama.ru|ok-inform.ru|orenday.ru|osvita.ua|out-club.ru|perevolockday.ru|planet-today.ru|planetaskazok.ru|poiskvps.ru|pretenziy.ru|profidom.com.ua|prosports.kg|prosports.kz|rabota-kovrov.ru|rabota.kharkov.ua|radioclub.ua|rbc.ru|ria-m.tv|ria56.ru|ridna.ua|rtr24.ru|ruslife.eu|saltday.ru|sevastopol.su|sevkavportal.ru|shans.com.ua|skoda-club.org.ua|smolnarod.ru|sorochinskday.ru|sostav.ua|sp.tomica.ru|starkosino.ru|study.ru|tenstars.ru|ternopoliany.te.ua|trassae95.com|trisosny.ru|tv-gubernia.ru|ua-independent.com|uff.uz|ufocar.ru|ukrlife.tv|valetudo.ru|vdv-kavkaz.ru|vjazhi.ru|vmeste.tv|vp.donetsk.ua|vsatke.ru|vse-pro-sport.com.ua|vseprosport.by|vseprosport.kz|vseprosport.ru|wallnews.org|yablor.ru|zamena-podshipnikov.ru|zrenue.com|zvid.org
 a10823 1
 ||agronomy.com.ua/*/ad_agency/
 a10826 1
 ||agronomy.com.ua/modules/mod_aikon_magic_popup/
+a11214 1
+||conversion.im/storage/images/b/
 a11220 2
 ||cosplay-porn.*/front/js/all_a.js
 ||cosplay-porn.*/front/js/unwanted.js
@@ -50,9 +58,19 @@ agronomy.com.ua##.apm-container
 d15549 1
 a15549 1
 animevost.one,animevost.org,animevost.top,vost.pw##.batre
+d15864 1
+a15864 1
+delo.ua,dsnews.ua,focus.ua##.c-r
+d15870 1
 a16429 2
 myfin.by##.game__label
 myfin.by##.game__partner-logo
+d16770 1
+a16770 1
+auto43.ru,dom43.ru,job43.ru##.kaka_zone
+d17368 1
+a17368 1
+allboxing.ru,dyvys.info,glavred.info,glavred.net,gorodkirov.ru,ictv.ua,unian.info,unian.net,unian.ua##.partner-news
 d17886 1
 a17886 1
 animevost.one,animevost.org,animevost.top,vost.pw##.shortstoryContent > center[style]
@@ -66,12 +84,17 @@ d18476 1
 d18683 2
 a18839 1
 pravda.if.ua##[class*="footer"] > [class*="menu-section footer-"]:last-child
+d18884 1
+a18884 1
+anime-bit.ru,goodgame.ru,gorodkirov.ru,kolo.news,sm.news##[class^="banner"]
 a18937 1
 shuba.life##[data-banner-container]
 a18975 1
 myfin.by##[data-link*="winline.by"]
 a19001 1
 pravda.if.ua##[data-source="editor"] > section
+a19013 1
+conversion.im##[data-url*="/banners/"]
 d19400 1
 a19400 1
 2ip.ua,agro-business.com.ua,agronomy.com.ua,alcogolizm.com,anekdot.ru,bitpump.ru,blisch.by,glavagronom.ru,gomel-sat.bz,gre4ka.info,legkopolezno.ru,maw.ru,ozersk74.ru,post-tracker.ru,pravda.if.ua,threatpost.ru,topfile.tj,uamotors.com.ua,yaizakon.com.ua,zhacker.net##a[href*="banner"]
@@ -83,6 +106,9 @@ pravda.if.ua##div[class*="content-wrapper"] > [class*="share-container"] ~ [clas
 d20657 1
 a20657 1
 animevost.one,animevost.org,animevost.top,vost.pw##div[class^="interDub-"]
+d20936 1
+a20936 1
+advizzer.com,bragazeta.ru,cataclysmdda.ru,chehov-vid.ru,coollib.net,ekaraganda.kz,ereport.ru,euro-football.ru,floraprice.ru,gameguru.ru,go64.ru,grinkod.spb.ru,igrixl.ru,kp40.ru,kramatorsk.info,lada.kz,mirnov.ru,mix.tj,musicmp3spb.org,musicwars.ru,news29.ru,pogoda.com,ptzgovorit.ru,servers-samp.ru,sovets.net,sports.kz,tayga.info,tparser.org,uaprom.info,vidal.ru##div[id^="banner"]
 d21022 1
 a21297 1
 pravda.if.ua##header a[href="https://pravda.if.ua/zamovyty-reklamu/"]
@@ -94,9 +120,16 @@ surl.*##.promo-title
 surl.*##.very-nice-button
 d21889 1
 a21889 1
-||pikabu.ru/ajax/*?z13sr=$xmlhttprequest
+||pikabu.ru/ajax/*?yg2p5=$xmlhttprequest
 a22580 1
 pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net###banner-stub
+d22608 2
+a22609 1
+/api/banner$xmlhttprequest,domain=pg11.ru|pg12.ru|pg13.ru|pg21.ru|prochepetsk.ru|prodzer.ru|progorod33.ru|progorod43.ru|progorod58.ru|progorod59.ru|progorod62.ru|progorod76.ru|progorodnn.ru|progoroduhta.ru
+d22611 1
+a22611 2
+pg11.ru,pg12.ru,pg13.ru,pg21.ru,prochepetsk.ru,prodzer.ru,progorod33.ru,progorod43.ru,progorod58.ru,progorod59.ru,progorod62.ru,progorod76.ru,progorodnn.ru,progoroduhta.ru##.contentRightMainBanner
+pg11.ru,pg12.ru,pg13.ru,pg21.ru,prochepetsk.ru,prodzer.ru,progorod33.ru,progorod43.ru,progorod58.ru,progorod59.ru,progorod62.ru,progorod76.ru,progorodnn.ru,progoroduhta.ru##[class^="banner"]
 a22647 2
 championat.com##.stat-widget__banner
 championat.com##.stat-widget__header
