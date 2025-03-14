@@ -1,8 +1,8 @@
-diff name:ruadlist lines:171 checksum:c23ae27650
+diff name:ruadlist lines:174 checksum:231e432d70
 d4 2
 a5 2
-! Last modified: Fri, 14 Mar 2025 06:34:16 +0000
-! Diff-Path: ../patches/2025.3.14.394.patch#ruadlist
+! Last modified: Fri, 14 Mar 2025 11:21:06 +0000
+! Diff-Path: ../patches/2025.3.14.681.patch#ruadlist
 a6818 1
 ||whtmyco.com^$third-party
 d8004 1
@@ -52,6 +52,8 @@ d12870 1
 d14238 1
 a14238 1
 animevost.one,animevost.org,animevost.top,vost.pw###moduleLeft[style="border:0;"]
+a14652 1
+minfin.com.ua###special-product-offer
 d14822 1
 a14822 1
 animevost.one,animevost.org,animevost.top,vost.pw###wrap > div[class^="headbg"] > a[href][target="_blank"]
@@ -152,18 +154,19 @@ animevost.one,animevost.org,animevost.top,vost.pw##div[class^="headbg"]:style(ba
 a27350 2
 dumka.poltava.ua##.page-element__ads:style(pointer-events: none !important)
 ! ---
-a27462 3
-rutube.ru##body.wdp-scroll .wdp-popup-overlay-module__overlay
-rutube.ru##body.wdp-scroll:style(overflow-y: auto !important)
-! ---
 d28195 1
 a28195 1
 animevost.org,animevost.top,doefiratv.info,payeer-gift.ru,smotret-anime-365.ru,turkish-tv-series.ru,ufchgu.ru,vost.pw,xn--b1aew.xn--p1ai##+js(abort-on-property-read, document.oncontextmenu)
 d28323 1
+a28340 1
+www.ukr.net##+js(no-fetch-if, /_events/)
 a28402 1
 dtf.ru,vc.ru##+js(set-attr, .comment-media > .andropov-video > video, controls, true)
 a28508 1
 dtf.ru,vc.ru##.comment-media > .andropov-video > video:remove-attr(autoplay)
+a28567 2
+rutube.ru##body.wdp-scroll .wdp-popup-overlay-module__overlay:has(> .wdp-onboardings-inventory-module__popup)
+rutube.ru##body.wdp-scroll:style(overflow-y: auto !important)
 a28570 2
 cosplay-porn.*,mult-porno.*,sex-studentki.*##+js(remove-node-text, script, /initTeasers|initVads/)
 cosplay-porn.*,mult-porno.*,sex-studentki.*##+js(set-cookie-reload, is_age_verified, 1)
