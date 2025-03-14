@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 14 Mar 2025 01:55:23 +0000
-! Diff-Path: ../patches/2025.3.14.115.patch#ruadlist
+! Last modified: Fri, 14 Mar 2025 06:34:16 +0000
+! Diff-Path: ../patches/2025.3.14.394.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21905,7 +21905,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||imgfrost.net^$third-party
 ||liveinternet.ru/utf/lici.js?
 ||news.mail.ru/-/*.js?
-||pikabu.ru/ajax/*?yg2p5=$xmlhttprequest
+||pikabu.ru/ajax/*?d285r=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -27485,6 +27485,9 @@ apad2.top,game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.to
 rutr.life,rutracker.lib,rutracker.net,rutracker.nl,rutracker.org###topic_main > [id^="post_"] ~ .hide-for-print
 rutr.life,rutracker.lib,rutracker.net,rutracker.nl,rutracker.org###topic_main > [id^="post_"] ~ tbody:not([id^="post_"]) > [class]
 rutr.life,rutracker.lib,rutracker.net,rutracker.nl,rutracker.org##[class^="internal-promo-"]
+! ---
+rutube.ru##body.wdp-scroll .wdp-popup-overlay-module__overlay
+rutube.ru##body.wdp-scroll:style(overflow-y: auto !important)
 ! ---
 s13.ru##body > .wrapper:style(top: 0 !important)
 ! ---
