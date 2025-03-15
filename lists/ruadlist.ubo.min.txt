@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 15 Mar 2025 12:45:36 +0000
-! Diff-Path: ../patches/2025.3.15.765.patch#ruadlist
+! Last modified: Sat, 15 Mar 2025 17:23:15 +0000
+! Diff-Path: ../patches/2025.3.15.1043.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10866,6 +10866,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||alloha.tv/index.php?ref=*&domain=
 ||allrefrs.ru/imgr/
 ||allsat.biz/ban_
+||allsport-news.net/images/tennisspar.
 ||alogvinov.com/skinning_
 ||alogvinov.com^*_top.jpg|
 ||altai4u.com/wp-content/themes/$object
@@ -12809,6 +12810,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||rutracker21.org/partners/
 ||rutrk.org/
 ||rutube.ru/api/advert/
+||rutube.ru/api/marketplace/offers/no-ads/
 ||rutube.ru/pangolin/api/web/yappy/v*/$xmlhttprequest
 ||rutube.ru/play/embed/*?autostart$subdocument,domain=7days.ru|vokrug.tv
 ||rutube.ru^$domain=ditey.com|nashamama.com
@@ -17735,6 +17737,7 @@ ap22.ru##.rightColumn a[href][target] > .Recbanner
 gazeta.uz##.rightContainer > .floating_banner
 siteua.org##.rightSide > .social_groups ~ div
 siteua.org##.rightSide > a
+inkorr.com##.right__bar > p
 rozetked.me##.right__images
 banana.by,football24.ru,news.sportbox.ru##.right_banner
 rekportal.ru##.right_banner_container
@@ -18505,6 +18508,7 @@ bizua.org,podruzke.ru#?#.vce-related-box:-abp-has(> .main-box-inside script)
 ixbt.com##.vcont
 l2db.ru##.vda
 ixbt.com##.vertb
+inkorr.com##.vertical__banner
 mobportal.net##.verx_r
 facenews.ua##.verytopbanner
 alcogolizm.com,jlady.ru,parazitovnetu.ru,spinazdorov.ru##.vex
@@ -19154,6 +19158,7 @@ cvnews.cv.ua,ifnews.org.ua,lvnews.org.ua,rvnews.rv.ua,tenews.org.ua,uanews.org.u
 bazr.ru##[src*="/global/banner/"]
 ilenta.com##[src*="/images/banner/"]
 abnews.ru,fakty.ua,highload.today##[src*="/images/banners/"]
+allsport-live.ru,allsport-news.net##[src*="/images/tennisspar."]
 sport-express.ua##[src*="/img/sadse/"]
 allrefrs.ru##[src*="/imgr/"]
 gecid.com##[src*="/inc/getBanIf."]
@@ -19331,7 +19336,6 @@ rubryka.com##a[href*="/reklama/"]
 docfilms.info##a[href*="/search?"][href*="pid="]
 scores24.live##a[href*="/sportbooks"]
 chezasite.com##a[href*="/stat/click-"][target="_blank"]
-allsport-live.ru,allsport-news.net##a[href*="/surl.li/"]
 ant-top.ru##a[href*="/teasers/"]
 scores24.live##a[href*="/tsr/"]
 muzofond.fm##a[href*="/zvuk_transfer?"]
@@ -19458,7 +19462,7 @@ pwcats.info##a[href*="fastrader.ru"]
 sport.ua,vringe.com##a[href*="favbet"][target="_blank"]
 superhumor.ru,voffka.com##a[href*="feipiter."]
 godendo.ru##a[href*="firmpage.ru"]
-allsport-news.net,autosport.com.ru##a[href*="fon.bet/"]
+allsport-live.ru,allsport-news.net,autosport.com.ru##a[href*="fon.bet/"]
 allhockey.ru##a[href*="fonbet.ru"]
 juventus.ru##a[href*="football-shopping.ru"]
 erichware.net##a[href*="freebitco.in"]
