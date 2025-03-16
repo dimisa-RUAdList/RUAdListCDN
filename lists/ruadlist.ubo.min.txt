@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 15 Mar 2025 22:26:26 +0000
-! Diff-Path: ../patches/2025.3.15.1346.patch#ruadlist
+! Last modified: Sun, 16 Mar 2025 03:04:00 +0000
+! Diff-Path: ../patches/2025.3.16.183.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -12810,7 +12810,6 @@ igdz1.ru^$script,domain=igdz.ru
 ||rutracker21.org/partners/
 ||rutrk.org/
 ||rutube.ru/api/advert/
-||rutube.ru/api/marketplace/offers/no-ads/
 ||rutube.ru/pangolin/api/web/yappy/v*/$xmlhttprequest
 ||rutube.ru/play/embed/*?autostart$subdocument,domain=7days.ru|vokrug.tv
 ||rutube.ru^$domain=ditey.com|nashamama.com
@@ -28284,6 +28283,7 @@ ya.ru##+js(abort-on-stack-trace, Object.prototype.loadAdvertScriptMode, /yastati
 ai-next.ru##+js(abort-on-stack-trace, document.getElementById, /723-|ai-2-/)
 forums.rusmedserv.com##+js(abort-on-stack-trace, fetch, eval)
 7days.ru##+js(addEventListener-defuser, /^(?:contextmenu|keydown)$/)
+shedevrum.ai##+js(addEventListener-defuser, /beforeunload|pagehide/, 0x)
 fastpic.org,~new.fastpic.org##+js(addEventListener-defuser, /click|load/, popMagic)
 biqle.org,biqle.ru##+js(addEventListener-defuser, /click|mousedown/, popunder)
 autonews.co.ua,in-poland.com,liveball.cc,liveball.uno,ukrainianwall.com##+js(addEventListener-defuser, /contextmenu|copy|keydown|selectstart/)
@@ -28316,6 +28316,7 @@ comedy-radio.ru,kufar.by,radioromantika.ru,relax-fm.ru,rg.ru,sm.news,ura.news,ve
 ~passport.yandex.by,~passport.yandex.kz,~passport.yandex.ru,~passport.yandex.uz,yandex.by,yandex.kz,yandex.ru,yandex.uz##+js(cookie-remover, /^bltsr$|^JPIqApiY$|^specific$|^substantial$/)
 yapx.ru##+js(cookie-remover, /adblock_/)
 24smi.org##+js(cookie-remover, isab)
+shedevrum.ai##+js(cookie-remover, shedevrum-aab)
 kakprosto.ru##+js(cookie-remover, yadb)
 softoroom.org##+js(href-sanitizer, a[href*=".php?go="], ?go)
 vk.com,vk.ru,vkvideo.ru##+js(href-sanitizer, a[href*="/away.php?"], ?to)
