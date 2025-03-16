@@ -1,8 +1,8 @@
-diff name:ruadlist lines:121 checksum:f79300f1d4
+diff name:ruadlist lines:173 checksum:5729e9f915
 d4 2
 a5 2
-! Last modified: Sun, 16 Mar 2025 13:27:06 +0000
-! Diff-Path: ../patches/2025.3.16.807.patch#ruadlist
+! Last modified: Sun, 16 Mar 2025 18:33:13 +0000
+! Diff-Path: ../patches/2025.3.16.1113.patch#ruadlist
 a3318 1
 ||kzqoeu.com^$third-party
 a10019 1
@@ -75,6 +75,9 @@ a19024 1
 conversion.im##[data-url*="/banners/"]
 a19151 1
 allsport-live.ru,allsport-news.net##[src*="/images/tennisspar."]
+d19262 1
+a19262 1
+360tv.ru,5-tv.ru,7days.ru,avtonovostidnya.ru,avtovzglyad.ru,belarus-news.by,bfm.ru,bst.bratsk.ru,coop-land.ru,energyfm.ru,finuslugi.ru,fonmod.com,fontanka.ru,gdeichto.ru,ixbt.com,ixbt.shop,kommersant.ru,ladys.media,life.ru,media.az,metronews.ru,mk.ru,moe-belgorod.ru,moe-kursk.ru,moe-lipetsk.ru,moe-online.ru,moe-tambov.ru,moika78.ru,mydecor.ru,mywebpc.ru,naked-science.ru,nevasport.ru,new-magazine.ru,news.ru,nsn.fm,ohotniki.ru,oper.ru,overclockers.ru,penzainform.ru,peterburg2.ru,pnz.ru,regnum.news,regnum.ru,rifey.ru,rusnext.ru,russian.rt.com,rutube.ru,sm.news,sovsport.ru,sport-express.net,sport-express.ru,sportsdaily.ru,stiletto.blog,super.ru,syzran-small.ru,teleprogramma.pro,thegirl.ru,timeweb.com,tochka.by,tsargrad.tv,tulapressa.ru,tvzvezda.ru,u-f.ru,ura.news,utyug.info,vz.ru,www1.ru,xn----7sbabwosghnf8al4lkj7b.xn--p1ai,ytronews.ru,zaks.ru,zaycev.net,zr.ru##a[href*="//dzen.ru/"]
 d19329 1
 d19456 1
 a19456 1
@@ -83,6 +86,9 @@ d19729 1
 d20948 1
 a20948 1
 advizzer.com,bragazeta.ru,cataclysmdda.ru,chehov-vid.ru,coollib.net,ekaraganda.kz,ereport.ru,euro-football.ru,floraprice.ru,gameguru.ru,go64.ru,grinkod.spb.ru,igrixl.ru,kp40.ru,kramatorsk.info,lada.kz,mirnov.ru,mix.tj,musicmp3spb.org,musicwars.ru,news29.ru,pogoda.com,ptzgovorit.ru,servers-samp.ru,sovets.net,sports.kz,tayga.info,tparser.org,uaprom.info,vidal.ru##div[id^="banner"]
+d21022 1
+a21045 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div[id^="opapa"]
 d21459 1
 a21459 1
 dnl.com.ua,dnl.dn.ua,go64.ru,gubkinskiy.com,infoniac.ru,lipetskmedia.ru,paparazzi.ru,trk7.ru,zi.ua##img[src*="/upload/rk/"]
@@ -92,6 +98,8 @@ d21661 1
 d21905 1
 a21905 1
 ||pikabu.ru/ajax/*?d285r=$xmlhttprequest
+d22244 1
+d22247 1
 d22625 2
 a22626 1
 /api/banner$xmlhttprequest,domain=pg11.ru|pg12.ru|pg13.ru|pg21.ru|prochepetsk.ru|prodzer.ru|progorod33.ru|progorod43.ru|progorod58.ru|progorod59.ru|progorod62.ru|progorod76.ru|progorodnn.ru|progoroduhta.ru
@@ -99,6 +107,14 @@ d22628 1
 a22628 2
 pg11.ru,pg12.ru,pg13.ru,pg21.ru,prochepetsk.ru,prodzer.ru,progorod33.ru,progorod43.ru,progorod58.ru,progorod59.ru,progorod62.ru,progorod76.ru,progorodnn.ru,progoroduhta.ru##.contentRightMainBanner
 pg11.ru,pg12.ru,pg13.ru,pg21.ru,prochepetsk.ru,prodzer.ru,progorod33.ru,progorod43.ru,progorod58.ru,progorod59.ru,progorod62.ru,progorod76.ru,progorodnn.ru,progoroduhta.ru##[class^="banner"]
+d23123 1
+d23125 5
+d23136 2
+d23141 2
+d23145 2
+d23148 4
+d23153 7
+d23161 1
 a26211 1
 forums.overclockers.ru##tr > td[nowrap="nowrap"][style^="color: red;"][style$="font-weight: bold"]
 d26616 3
@@ -107,6 +123,40 @@ d27321 2
 a27371 2
 dumka.poltava.ua##.page-element__ads:style(pointer-events: none !important)
 ! ---
+d27812 8
+a27819 4
+! главная
+dzen.ru###LayoutTopMicroRoot div[style*="%"]:style(padding-top: unset !important)
+dzen.ru##[class*="card-rtb"]
+dzen.ru##[class*="desktop"] ~ [id*="teaser"]
+a27821 1
+dzen.ru##article[data-card-type*="-promo"]
+d27823 23
+a27845 2
+dzen.ru##div[class*="--corner-banner_"]
+dzen.ru##div[class*="__bannerContainer"]
+d27847 2
+d27850 4
+a27853 19
+! видео
+dzen.ru##[class^="video-site--"] > [id][class*="-content__fullWidth-"]
+dzen.ru##[class^="video-site--"][class*="skeleton"]
+! статьи
+dzen.ru##[data-microappname="ArticleDesktopMicroApp"] > [aria-label] > div[class^="content--article"] > div[id]
+dzen.ru##[data-testid="dzenpro-banner"]
+dzen.ru##div[class*="adContentWrapper"]
+dzen.ru##div[class*="article-item__articleItem-"] > div[class*="contentBottomBlock"] > div[class] ~ div
+dzen.ru##div[class*="bannerMain"]
+dzen.ru##div[class*="dzenProBanner"]
+dzen.ru##div[id$="-rtb"]
+! новости
+dzen.ru,sportsdzen.ru##div[class^="news-site-"][class*="skeleton"]:style(background-color: transparent !important)
+dzen.ru##div[id^="ad-"][class*=" news-"]
+! погода
+dzen.ru##.adv-ecom
+dzen.ru##.b-page_type_maps div[class$="__content"] > [class$="__ad"] > div:style(width: unset !important)
+dzen.ru##.climate-calendar__cell:style(width: 13.8% !important; -webkit-flex-basis: 13.8% !important; flex-basis: 13.8% !important)
+dzen.ru##div[class*="dzen-wrapper-with-top-content-desktop__topContent-"]:style(grid-template-columns: inherit !important)
 d28138 1
 a28138 1
 1news.com.ua,365news.biz,4mama.ua,4studio.com.ua,agroter.com.ua,apnews.com.ua,argumentiru.com,asiaplustj.info,autotema.org.ua,autotheme.info,avtodream.org,beauty.ua,chas.cv.ua,cheline.com.ua,cikavosti.com,ck.ua,cn.ua,comments.ua,cvnews.cv.ua,day.kyiv.ua,depo.ua,dv-gazeta.info,dyvys.info,economistua.com,expert.in.ua,fedpress.ru,firtka.if.ua,forpost.media,fraza.com,gazeta1.com,glavnoe24.ru,glavpost.ua,golosinfo.com.ua,gorodkiev.com.ua,grad.ua,greenpost.ua,ifnews.org.ua,inforpost.com,inkorr.com,itechua.com,kh.ua,khersonline.net,kolizhanka.com.ua,kop.net.ua,kr.ua,krymr.com,kurskcity.ru,liga.net,lvnews.org.ua,mega-music.pro,mi100.info,mind.ua,mistosumy.com,moirebenok.ua,mycompplus.ru,nashbryansk.ru,news24today.info,newsua.one,ngp-ua.info,nnews.com.ua,novavlada.info,novynarnia.com,np.pl.ua,odessa-life.od.ua,ogo.ua,panoptikon.org,pg11.ru,pik.net.ua,pingvin.pro,pl.com.ua,planetanovosti.com,podpricelom.com.ua,politnavigator.net,poltava365.com,portal.lviv.ua,pravdatutnews.com,prm.ua,procherk.info,profootball.ua,promin.cv.ua,radiosvoboda.org,ratel.kz,real-vin.com,reporter.ua,risu.ua,rivne.media,rivnenews.com.ua,rusjev.com,russianshowbiz.info,rv.ua,rvnews.rv.ua,showdream.org,sport-kr.com.ua,strana.news,strana.today,sud.ua,te.ua,telekritika.ua,tenews.org.ua,theageoffootball.com,tverigrad.ru,tverisport.ru,tvoymalysh.com.ua,uainfo.org,uanews.org.ua,uatv.ua,ukranews.com,ukrrain.com,unn.com.ua,vchaspik.ua,viva.ua,vlast.kz,vnn24.ru,volnorez.com.ua,volyninfa.com.ua,volyninfo.com,volynpost.com,volynua.com,vsviti.com.ua,westnews.info,womo.ua,wona.com.ua,wworld.com.ua,zbirna.com,zp.ua##+js(abort-current-inline-script, document.createElement, /ru-n4p|ua-n4p|загрузка.../)
@@ -120,3 +170,5 @@ a28589 3
 rutube.ru##body.wdp-scroll .wdp-popup-overlay-module__overlay .wdp-onboardings-inventory-module__popup
 rutube.ru##body.wdp-scroll .wdp-popup-overlay-module__overlay:has(> .wdp-onboardings-inventory-module__popup)
 rutube.ru##body.wdp-scroll:style(overflow-y: auto !important)
+a28615 1
+tochka.by##section:remove-class(brand)

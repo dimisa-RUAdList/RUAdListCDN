@@ -1,8 +1,8 @@
-diff name:ruadlist lines:20 checksum:f79300f1d4
+diff name:ruadlist lines:72 checksum:5729e9f915
 d4 2
 a5 2
-! Last modified: Sun, 16 Mar 2025 13:27:06 +0000
-! Diff-Path: ../patches/2025.3.16.807.patch#ruadlist
+! Last modified: Sun, 16 Mar 2025 18:33:13 +0000
+! Diff-Path: ../patches/2025.3.16.1113.patch#ruadlist
 a10868 1
 ||allsport-news.net/images/tennisspar.
 a17737 1
@@ -11,11 +11,63 @@ a18507 1
 inkorr.com##.vertical__banner
 a19156 1
 allsport-live.ru,allsport-news.net##[src*="/images/tennisspar."]
+d19267 1
+a19267 1
+360tv.ru,5-tv.ru,7days.ru,avtonovostidnya.ru,avtovzglyad.ru,belarus-news.by,bfm.ru,bst.bratsk.ru,coop-land.ru,energyfm.ru,finuslugi.ru,fonmod.com,fontanka.ru,gdeichto.ru,ixbt.com,ixbt.shop,kommersant.ru,ladys.media,life.ru,media.az,metronews.ru,mk.ru,moe-belgorod.ru,moe-kursk.ru,moe-lipetsk.ru,moe-online.ru,moe-tambov.ru,moika78.ru,mydecor.ru,mywebpc.ru,naked-science.ru,nevasport.ru,new-magazine.ru,news.ru,nsn.fm,ohotniki.ru,oper.ru,overclockers.ru,penzainform.ru,peterburg2.ru,pnz.ru,regnum.news,regnum.ru,rifey.ru,rusnext.ru,russian.rt.com,rutube.ru,sm.news,sovsport.ru,sport-express.net,sport-express.ru,sportsdaily.ru,stiletto.blog,super.ru,syzran-small.ru,teleprogramma.pro,thegirl.ru,timeweb.com,tochka.by,tsargrad.tv,tulapressa.ru,tvzvezda.ru,u-f.ru,ura.news,utyug.info,vz.ru,www1.ru,xn----7sbabwosghnf8al4lkj7b.xn--p1ai,ytronews.ru,zaks.ru,zaycev.net,zr.ru##a[href*="//dzen.ru/"]
 d19334 1
 d19461 1
 a19461 1
 allsport-live.ru,allsport-news.net,autosport.com.ru##a[href*="fon.bet/"]
+d21026 1
+a21049 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div[id^="opapa"]
+d22248 1
+d22251 1
+d23127 1
+d23129 5
+d23140 2
+d23145 2
+d23149 2
+d23152 4
+d23157 7
+d23165 1
+d27812 8
+a27819 4
+! главная
+dzen.ru###LayoutTopMicroRoot div[style*="%"]:style(padding-top: unset !important)
+dzen.ru##[class*="card-rtb"]
+dzen.ru##[class*="desktop"] ~ [id*="teaser"]
+a27821 1
+dzen.ru##article[data-card-type*="-promo"]
+d27823 23
+a27845 2
+dzen.ru##div[class*="--corner-banner_"]
+dzen.ru##div[class*="__bannerContainer"]
+d27847 2
+d27850 4
+a27853 19
+! видео
+dzen.ru##[class^="video-site--"] > [id][class*="-content__fullWidth-"]
+dzen.ru##[class^="video-site--"][class*="skeleton"]
+! статьи
+dzen.ru##[data-microappname="ArticleDesktopMicroApp"] > [aria-label] > div[class^="content--article"] > div[id]
+dzen.ru##[data-testid="dzenpro-banner"]
+dzen.ru##div[class*="adContentWrapper"]
+dzen.ru##div[class*="article-item__articleItem-"] > div[class*="contentBottomBlock"] > div[class] ~ div
+dzen.ru##div[class*="bannerMain"]
+dzen.ru##div[class*="dzenProBanner"]
+dzen.ru##div[id$="-rtb"]
+! новости
+dzen.ru,sportsdzen.ru##div[class^="news-site-"][class*="skeleton"]:style(background-color: transparent !important)
+dzen.ru##div[id^="ad-"][class*=" news-"]
+! погода
+dzen.ru##.adv-ecom
+dzen.ru##.b-page_type_maps div[class$="__content"] > [class$="__ad"] > div:style(width: unset !important)
+dzen.ru##.climate-calendar__cell:style(width: 13.8% !important; -webkit-flex-basis: 13.8% !important; flex-basis: 13.8% !important)
+dzen.ru##div[class*="dzen-wrapper-with-top-content-desktop__topContent-"]:style(grid-template-columns: inherit !important)
 a28282 1
 shedevrum.ai##+js(addEventListener-defuser, /beforeunload|pagehide/, 0x)
 a28314 1
 shedevrum.ai##+js(cookie-remover, shedevrum-aab)
+a28619 1
+tochka.by##section:remove-class(brand)
