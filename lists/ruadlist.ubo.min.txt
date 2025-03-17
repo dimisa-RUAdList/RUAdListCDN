@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 17 Mar 2025 09:28:36 +0000
-! Diff-Path: ../patches/2025.3.17.568.patch#ruadlist
+! Last modified: Mon, 17 Mar 2025 14:27:38 +0000
+! Diff-Path: ../patches/2025.3.17.867.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10277,7 +10277,7 @@ $csp=script-src-attr 'none',domain=volyn.com.ua
 ||ex.24smi.info^$csp=script-src
 ||exoclick.com^$csp=sandbox allow-same-origin;
 ||folltiz.site^$csp=script-src
-||forum.ru-board.com/*.cgi?*=5&topic=51141$csp=img-src 'self' addons.mozilla.org raw.githubusercontent.com
+||forum.ru-board.com/*.cgi?*=5&topic=51141$csp=img-src 'self' http://forum.ru-board.com/ https://forum.ru-board.com/ addons.mozilla.org raw.githubusercontent.com
 ||forums.rusmedserv.com/$csp=script-src 'unsafe-inline' 'unsafe-eval' data: https://forums.rusmedserv.com/clientscript/ cse.google.com *.google.com/cse/ *.googleapis.com
 ||gdz-ru.work/subscribe/$csp=sandbox allow-same-origin;
 ||hawk.live/$csp=sandbox allow-same-origin;
@@ -15373,6 +15373,7 @@ aldebaran.ru#?#.b_read_online:-abp-has(> .litres_fragment_body)
 24tv.ua,espreso.tv##.b_reklama
 101poisk.ru##.b_top
 photoshablon.ru##.b_verh_st
+kommersant.ru##.ba
 tsargrad.tv##.back-fixed
 skam.online##.background-banner
 nv.ua##.background-branding
@@ -19275,7 +19276,7 @@ adult-images.ru,imgbum.ru,screenpost.ru,xpicture.ru##a[href*="//parnuxi.biz"]
 syzran-small.ru,xn----7sbabwosghnf8al4lkj7b.xn--p1ai##a[href*="//pulse.mail.ru/"]
 kommersant.ru##a[href*="//rusfond.ru"]
 kinoafisha.info,oper.ru##a[href*="//wink."]
-024.by,1777.ru,1istochnik.ru,7days.ru,actualnews.org,allboxing.ru,amurmedia.ru,argumenti.ru,atas.info,auto.ru,autosaratov.ru,autosport.com.ru,av.by,baby.ru,bel.ru,belkagomel.by,bidbaits.ru,carsweek.ru,chitamedia.su,chukotkamedia.ru,cnews.ru,cq.ru,ctc.ru,deita.ru,domclick.ru,eaomedia.ru,eva.ru,finam.ru,fishki.net,fontanka.ru,food.ru,friday.ru,gooool365.org,interface31.ru,intermedia.ru,irkutskmedia.ru,iz.ru,izhlife.ru,kaifolog.net,kamchatkamedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,lipetskmedia.ru,magadanmedia.ru,mel.fm,mk.ru,nakhodka.media,nashe.ru,neva.today,new-magazine.ru,noob-club.ru,nsn.fm,om1.ru,osnmedia.ru,peopletalk.ru,politnavigator.net,politrussia.com,povarenok.ru,priamurmedia.ru,primamedia.ru,prufy.ru,radiojazzfm.ru,radioultra.ru,readovka.news,realt.by,riamo.ru,rockfm.ru,russian.rt.com,rusvesna.su,sakhalinmedia.ru,sevastopolmedia.ru,sm.news,smolensk-i.ru,smotrim.ru,sovets.net,sovets24.ru,sravni.ru,starhit.ru,stavropol.media,study.ru,svpressa.ru,takiedela.ru,teleport2001.ru,topnews.ru,tsargrad.tv,tv2.today,tverigrad.ru,ukraina.ru,ulanmedia.ru,ussurmedia.ru,uznayvse.ru,vm.ru,vsezdorovo.com,womanhit.ru,www.kolesa.ru,yakutiamedia.ru,ytronews.ru,zaycev.net##a[href*="//zen.yandex.ru/"]
+024.by,1777.ru,1istochnik.ru,7days.ru,actualnews.org,allboxing.ru,amurmedia.ru,argumenti.ru,atas.info,auto.ru,autosaratov.ru,autosport.com.ru,av.by,baby.ru,bel.ru,belkagomel.by,bidbaits.ru,carsweek.ru,chitamedia.su,chukotkamedia.ru,cnews.ru,cq.ru,ctc.ru,deita.ru,domclick.ru,eaomedia.ru,eva.ru,finam.ru,fishki.net,fontanka.ru,food.ru,friday.ru,gooool365.org,interface31.ru,intermedia.ru,irkutskmedia.ru,iz.ru,izhlife.ru,kaifolog.net,kamchatkamedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,lipetskmedia.ru,magadanmedia.ru,mel.fm,mk.ru,nakhodka.media,nashe.ru,neva.today,new-magazine.ru,noob-club.ru,nsn.fm,om1.ru,osnmedia.ru,peopletalk.ru,politnavigator.net,politrussia.com,povarenok.ru,priamurmedia.ru,primamedia.ru,prufy.ru,radiojazzfm.ru,radioultra.ru,readovka.news,realt.by,riamo.ru,rockfm.ru,rozetked.me,russian.rt.com,rusvesna.su,sakhalinmedia.ru,sevastopolmedia.ru,sm.news,smolensk-i.ru,smotrim.ru,sovets.net,sovets24.ru,sravni.ru,starhit.ru,stavropol.media,study.ru,svpressa.ru,takiedela.ru,teleport2001.ru,topnews.ru,tsargrad.tv,tv2.today,tverigrad.ru,ukraina.ru,ulanmedia.ru,ussurmedia.ru,uznayvse.ru,vm.ru,vsezdorovo.com,womanhit.ru,www.kolesa.ru,yakutiamedia.ru,ytronews.ru,zaycev.net##a[href*="//zen.yandex.ru/"]
 kritka.su,zserials.cc##a[href*="/1b.yt"]
 zserials.cc##a[href*="/1w.tf"]
 c-sgo.ru,sportliga.com##a[href*="/1xstavka"]
@@ -27975,7 +27976,7 @@ e.mail.ru,octavius.mail.ru###app-canvas .paginator-container:style(right: 8px !i
 e.mail.ru,octavius.mail.ru###popup-placeholder
 e.mail.ru,octavius.mail.ru##.advert-column:style(width: 0 !important)
 e.mail.ru,octavius.mail.ru##.application-mail__wrap > .application-mail__layout > .layout[style*="grid-template-columns:"]:style(grid-template-columns: 232px 1fr 0 0 !important)
-e.mail.ru,octavius.mail.ru##.application_new-toolbar .application-mail:not(.application-mail_webview-mobile) .letter-list[class*="adv"]:style(--letter-list-top-toolbar-height: inherit !important)
+e.mail.ru,octavius.mail.ru##.application_new-toolbar .application-mail:not(.application-mail_webview-mobile) [class*="top-line-adv"]:style(--letter-list-top-toolbar-height: inherit !important; --letter-list-top-native-adv-height: inherit !important; --scrollable-top-native-adv-height: inherit !important)
 e.mail.ru,octavius.mail.ru##.layer-sent-page > .layer:style(min-height: 0 !important)
 e.mail.ru,octavius.mail.ru##.letter-list-item-adv__container:style(height: 0 !important; opacity: 0 !important; pointer-events: none !important)
 e.mail.ru##.ph-project__link[href^="https://cloud.mail.ru/promo/"]
