@@ -1,8 +1,8 @@
-diff name:ruadlist lines:92 checksum:d3423b7bba
+diff name:ruadlist lines:102 checksum:5c346cca33
 d4 2
 a5 2
-! Last modified: Tue, 18 Mar 2025 15:28:47 +0000
-! Diff-Path: ../patches/2025.3.18.928.patch#ruadlist
+! Last modified: Tue, 18 Mar 2025 20:26:44 +0000
+! Diff-Path: ../patches/2025.3.18.1226.patch#ruadlist
 d10280 1
 a10280 1
 ||forum.ru-board.com/*.cgi?*=5&topic=51141$csp=img-src 'self' http://forum.ru-board.com/ https://forum.ru-board.com/ addons.mozilla.org raw.githubusercontent.com
@@ -23,10 +23,14 @@ diary.ru,fireman.club,ku66.ru,pershij.com.ua,prostoprosport.ru,qrz.ru,track24.ru
 d15163 1
 a15272 1
 ukranews.com##.b-banner
+a15299 1
+shikimori.me,shikimori.one,shikimori.org#?#.b-forum > article:-abp-has(> .inner > footer .promo)
 a15375 1
 kommersant.ru##.ba
 a16919 1
 cq.ru##.m.--top
+a17220 1
+shikimori.me,shikimori.one,shikimori.org#?#.news_wall > article:-abp-has(> a[href] > .status-line .promo)
 d19271 1
 a19271 1
 360tv.ru,5-tv.ru,7days.ru,avtonovostidnya.ru,avtovzglyad.ru,belarus-news.by,bfm.ru,bst.bratsk.ru,coop-land.ru,energyfm.ru,finuslugi.ru,fonmod.com,fontanka.ru,gdeichto.ru,ixbt.com,ixbt.shop,kommersant.ru,ladys.media,life.ru,media.az,metronews.ru,mk.ru,moe-belgorod.ru,moe-kursk.ru,moe-lipetsk.ru,moe-online.ru,moe-tambov.ru,moika78.ru,mydecor.ru,mywebpc.ru,naked-science.ru,nevasport.ru,new-magazine.ru,news.ru,nsn.fm,ohotniki.ru,oper.ru,overclockers.ru,penzainform.ru,peterburg2.ru,pnz.ru,regnum.news,regnum.ru,rifey.ru,rusnext.ru,russian.rt.com,rutube.ru,sm.news,sovsport.ru,sport-express.net,sport-express.ru,sportsdaily.ru,stiletto.blog,super.ru,syzran-small.ru,teleprogramma.pro,thegirl.ru,timeweb.com,tochka.by,tsargrad.tv,tulapressa.ru,tvzvezda.ru,u-f.ru,ura.news,utyug.info,vz.ru,www1.ru,xn----7sbabwosghnf8al4lkj7b.xn--p1ai,ytronews.ru,zaks.ru,zaycev.net,zr.ru##a[href*="//dzen.ru/"]
@@ -48,10 +52,16 @@ d23148 2
 d23152 2
 d23155 4
 d23160 7
-d23168 1
+d23168 2
+a23169 1
+! dzen и ya/yandex - мобильная версия
+a23175 2
+ya.ru,yandex.ru,yandex.*##.t-construct-adapter__adv
+ya.ru,yandex.ru,yandex.*#?##search-result > .serp-item:-abp-has(> .AdvLabel)
 a26220 1
 ||cdn.commoninja.com^$domain=sochi.camera
 d27545 3
+d27647 4
 d27815 8
 a27822 4
 ! главная
