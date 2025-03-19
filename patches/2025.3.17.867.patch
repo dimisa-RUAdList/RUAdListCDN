@@ -1,8 +1,8 @@
-diff name:ruadlist lines:37 checksum:2d503daf33
+diff name:ruadlist lines:45 checksum:8bee7881e0
 d4 2
 a5 2
-! Last modified: Wed, 19 Mar 2025 06:35:54 +0000
-! Diff-Path: ../patches/2025.3.19.395.patch#ruadlist
+! Last modified: Wed, 19 Mar 2025 11:21:49 +0000
+! Diff-Path: ../patches/2025.3.19.681.patch#ruadlist
 d10307 1
 a10307 1
 $csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: *.addtoany.com *.amazonaws.com *.cloudflare.com *.dmca.com *.disqus.com *.disquscdn.com *.enduro.team *.facebook.com *.getsitecontrol.com apis.google.com cse.google.com *.google.com/cse/ *.google.com/complete/ *.google.com/recaptcha/ translate.google.com www.google.com *.googleapis.com *.googletagmanager.com *.gstatic.com/recaptcha/ *.instagram.com *.jivosite.com *.jquery.com *.keycaptcha.com *.sendpulse.com *.sharethis.com *.po.st *.threadloom.com *.tiktok.com *.trustpilot.com *.twitter.com vk.com www.youtube.com *.dev *.io *.net *.org *.ru *.ua,domain=agroter.com.ua|alensat.com|allbasketball.org|askentire.net|autonews.co.ua|autosoftos.com|babla.ru|bio-lessons.ru|callfilter.app|cardiagram.com.ua|clickthis.blog|coollib.net|delo.ua|elegantwoman.kyiv.ua|enduro.team|eurointegration.com.ua|farposst.ru|findhow.org|gazeta-misto.te.ua|golos.te.ua|icon-icons.com|ilenta.com|index.minfin.com.ua|inforesist.org|kovelpost.com|kreschatic.kiev.ua|kurs.com.ua|mirlib.ru|modfix.ru|musinfo.net|ontvtime.ru|orbit-games.com|pb-news.info|perpendicular.pro|pes-files.ru|pingvin.pro|poezdato.net|poizdato.net|pravda.com.ua|rovesnyknews.te.ua|ruboard.website|skidkaonline.ru|sundries.ua|tenews.org.ua|ternopillive.com|tribun.com.ua|uapress.kyiv.ua|valorantinfo.com|vesti-ua.net|vkazivka.com|wallpapershome.ru|xn--80aaukc.xn--j1amh
@@ -19,13 +19,16 @@ a15272 1
 ukranews.com##.b-banner
 a15299 1
 shikimori.me,shikimori.one,shikimori.org#?#.b-forum > article:-abp-has(> .inner > footer .promo)
+d16063 1
+a16063 1
+joyreactor.cc##.content-card ~ :not(.content-card) a[href][target="_blank"]
 a16920 1
 cq.ru##.m.--top
 a17221 1
 shikimori.me,shikimori.one,shikimori.org#?#.news_wall > article:-abp-has(> a[href] > .status-line .promo)
 d21913 1
 a21913 1
-||pikabu.ru/ajax/*?qqy6w=$xmlhttprequest
+||pikabu.ru/ajax/*?rqy6w=$xmlhttprequest
 d23144 1
 a23144 1
 ! dzen и ya/yandex - мобильная версия
@@ -35,4 +38,9 @@ ya.ru,yandex.ru,yandex.*#?##search-result > .serp-item:-abp-has(> .AdvLabel)
 a26195 1
 ||cdn.commoninja.com^$domain=sochi.camera
 d27520 3
-d27621 4
+d27622 4
+d28312 1
+a28312 1
+595.ucoz.net,5wip-file.ru,file-mods.ru,freesoft.ru,infourok.ru,mixmuz.ru,myshared.ru,myzcloud.me,n-torrents.org,sims3pack.ru,wallegend.net##+js(nano-setInterval-booster)
+a28470 1
+wdho.ru##+js(set-constant, window.c, 4)
