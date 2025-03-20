@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 20 Mar 2025 12:50:33 +0000
-! Diff-Path: ../patches/2025.3.20.770.patch#ruadlist
+! Last modified: Thu, 20 Mar 2025 17:25:15 +0000
+! Diff-Path: ../patches/2025.3.20.1045.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -17389,6 +17389,7 @@ allboxing.ru,dyvys.info,glavred.info,glavred.net,gorodkirov.ru,ictv.ua,unian.inf
 zi.ua##.partner-news-content
 rusplt.ru##.partner-news-wrapper
 tochka.net##.partner-news:not(.b_crosswidget)
+itc.ua##.partner-posts
 maximum.fm##.partner-recomendation
 lifehacker.ru##.partner-strip
 zaxid.net##.partner-wrap-block
@@ -18618,6 +18619,7 @@ au-ok.com#?#.widget-sidebar:-abp-has(> div .adsbygoogle)
 au-ok.com#?#.widget-sidebar:-abp-has(> div > [id^="adfox_"])
 mnogovoprosov.ru#?#.widget-sidebar:-abp-has([src*="/wp-content/uploads/"][src*="/ban"][src*="er"])
 mnogovoprosov.ru#?#.widget-sidebar:-abp-has(p > script)
+itc.ua##.widget-spec-projects
 zanmsk.ru#?#.widget-title:-abp-contains(Наши партнеры)
 pkzsk.info#?#.widget-title:-abp-contains(Новости партнёров)
 stravy.net#?#.widget-title:-abp-contains(Реклама)
@@ -18654,7 +18656,7 @@ grippua.com.ua#?#.widget_custom_html:-abp-has(a[href*="utm_campai"])
 bitva-ex.ru#?#.widget_custom_html:-abp-has(span:-abp-contains(Реклама партнера))
 blagden.ru##.widget_custom_html:last-child
 actual.today##.widget_exchange_rates_widget
-aplik.ru,discover24.ru,edurusnews.ru,holostyak.site,inforuss.info,krashevseh.ru,lentaruss.ru,mezha.media,mobnovelty.ru,smiruss.ru,soderzhanki2.ru,trud-ost.ru##.widget_execphp
+aplik.ru,discover24.ru,edurusnews.ru,holostyak.site,inforuss.info,itc.ua,krashevseh.ru,lentaruss.ru,mezha.media,mobnovelty.ru,smiruss.ru,soderzhanki2.ru,trud-ost.ru##.widget_execphp
 censor.net##.widget_header aside
 animalbox.ru##.widget_html_javascript_adder
 podskazki.info##.widget_hugeit_slider_widget
@@ -21940,6 +21942,7 @@ vk.com,vk.ru###feed_rows > .feed_row > div:not([id])
 vk.com,vk.ru###feed_rows > .feed_row ~ :not(.feed_row)
 vk.com,vk.ru###feed_rows > div[class="feed_row "] > div[id]:not([id^="feed_repost"]):not([data-post-id])
 vk.com,vk.ru###main_feed:not(.feed_submit_only_shown) div:first-child:not(.page_block) ~ .feed_row > [data-post-id][id^="post"][post_view_hash]:not([data-post-track-code])
+flightsim.su###tie-popup-adblock {remove:true;}
 the-geek.ru###wp-custom-css {remove:true;}
 vk.com,vk.ru##._feed_rows > div:not([id]):not([class])
 vk.com,vk.ru##._post_content > .post
@@ -27993,7 +27996,6 @@ mail.ru###grid .widget__container > .progress-bar-widget
 mail.ru###grid div[class^="feed__"]
 my.mail.ru###history_container > div[class][style*="display: block!important"]
 minigames.mail.ru###like-buttons
-mail.ru###mailbox:not(#id):style(visibility: unset !important; pointer-events: unset !important)
 minigames.mail.ru###portal-headline:style(margin-top: auto !important)
 hi-tech.mail.ru###portal-menu:style(margin: 0 !important)
 mail.ru###user-settings-modal > .user-settings-container > .user-settings-types > .user-settings-types__item:first-child
@@ -28005,6 +28007,8 @@ mail.ru##.grid__ccol > .tabs-content:style(margin-top: 5px !important)
 mail.ru##.grid__header .ph-modal-projects-overlay:style(top: inherit !important)
 mail.ru##.grid__main-col .eventbar-wrapper:style(margin-top: 0 !important)
 mail.ru##.grid__main-col > div[slot="main-column"] .search-container:style(margin-top: 4px !important; margin-bottom: 4px !important)
+mail.ru##.grid_blocked #mailbox:not(#id):style(visibility: unset !important; pointer-events: unset !important)
+mail.ru##.grid_blocked div[slot="main-column"] > :nth-child(-n+2) ~ [class] > [class]:style(visibility: unset !important; pointer-events: unset !important)
 hi-tech.mail.ru##.header-banner:style(margin: 0 !important)
 news.mail.ru,pogoda.mail.ru,sportmail.ru##.layout_footer > .block
 sportmail.ru##.layout_footer:style(margin-top: 20px !important)
@@ -28053,7 +28057,6 @@ mail.ru##div[slot="main-column"] > .header
 mail.ru##div[slot="main-column"] > .header ~ .swiper
 mail.ru##div[slot="main-column"] > .micro-widgets:style(height: auto !important; margin: auto !important)
 mail.ru##div[slot="main-column"] > .tabs__container:style(margin-top: 5px !important)
-mail.ru##div[slot="main-column"] > :nth-child(-n+2) ~ [class] > [class]:style(visibility: unset !important; pointer-events: unset !important)
 my.mail.ru##html.window-loaded .b-video-backscreen
 my.mail.ru##html.window-loaded .b-video-controls__inside-play-button:style(visibility: visible !important; opacity: 0 !important; width: 100% !important; height: 100% !important; top: 0 !important; left: 0 !important)
 mail.ru##main#grid .promo-news
@@ -28356,6 +28359,7 @@ vseinstrumenti.ru##+js(no-setTimeout-if, removeJuristicNotification)
 testserver.pro##+js(no-setTimeout-if, saa)
 websdr.space##+js(no-setTimeout-if, setInterval, )
 anime-chan.me##+js(no-setTimeout-if, sparkle)
+flightsim.su##+js(no-setTimeout-if, tie-popup-adblock)
 num-words.com,softportal.com##+js(no-setTimeout-if, toUTCString)
 sport.ua##+js(no-setTimeout-if, window.location.reload)
 liveinternet.ru##+js(no-xhr-if, /ad\.mail|adfox|adhigh|adriver|mc\.yandex|mediametrics|otm-r|static-mon/)

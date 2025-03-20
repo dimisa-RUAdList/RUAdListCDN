@@ -1,8 +1,8 @@
-diff name:ruadlist lines:129 checksum:dc45f983fb
+diff name:ruadlist lines:145 checksum:367dd7465a
 d4 2
 a5 2
-! Last modified: Thu, 20 Mar 2025 12:50:33 +0000
-! Diff-Path: ../patches/2025.3.20.770.patch#ruadlist
+! Last modified: Thu, 20 Mar 2025 17:25:15 +0000
+! Diff-Path: ../patches/2025.3.20.1045.patch#ruadlist
 a8502 1
 ##[href*="://go.leadgid.ru/aff_c?"]
 a8506 1
@@ -42,8 +42,15 @@ a16919 1
 cq.ru##.m.--top
 a17220 1
 shikimori.me,shikimori.one,shikimori.org#?#.news_wall > article:-abp-has(> a[href] > .status-line .promo)
+a17385 1
+itc.ua##.partner-posts
 a17636 1
 obozrevatel.com##.recommendation
+a18613 1
+itc.ua##.widget-spec-projects
+d18650 1
+a18650 1
+aplik.ru,discover24.ru,edurusnews.ru,holostyak.site,inforuss.info,itc.ua,krashevseh.ru,lentaruss.ru,mezha.media,mobnovelty.ru,smiruss.ru,soderzhanki2.ru,trud-ost.ru##.widget_execphp
 d19271 1
 a19271 1
 360tv.ru,5-tv.ru,7days.ru,avtonovostidnya.ru,avtovzglyad.ru,belarus-news.by,bfm.ru,bst.bratsk.ru,coop-land.ru,energyfm.ru,finuslugi.ru,fonmod.com,fontanka.ru,gdeichto.ru,ixbt.com,ixbt.shop,kommersant.ru,ladys.media,life.ru,media.az,metronews.ru,mk.ru,moe-belgorod.ru,moe-kursk.ru,moe-lipetsk.ru,moe-online.ru,moe-tambov.ru,moika78.ru,mydecor.ru,mywebpc.ru,naked-science.ru,nevasport.ru,new-magazine.ru,news.ru,nsn.fm,ohotniki.ru,oper.ru,overclockers.ru,penzainform.ru,peterburg2.ru,pnz.ru,regnum.news,regnum.ru,rifey.ru,rusnext.ru,russian.rt.com,rutube.ru,sm.news,sovsport.ru,sport-express.net,sport-express.ru,sportsdaily.ru,stiletto.blog,super.ru,syzran-small.ru,teleprogramma.pro,thegirl.ru,timeweb.com,tochka.by,tsargrad.tv,tulapressa.ru,tvzvezda.ru,u-f.ru,ura.news,utyug.info,vz.ru,www1.ru,xn----7sbabwosghnf8al4lkj7b.xn--p1ai,ytronews.ru,zaks.ru,zaycev.net,zr.ru##a[href*="//dzen.ru/"]
@@ -59,6 +66,8 @@ game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorka
 d21912 1
 a21912 1
 ||pikabu.ru/ajax/*?rry6w=$xmlhttprequest
+a21935 1
+flightsim.su###tie-popup-adblock {remove:true;}
 d22251 1
 d22254 1
 d23130 1
@@ -121,9 +130,16 @@ dzen.ru##div[class*="dzen-wrapper-with-top-content-desktop__topContent-"]:style(
 d28015 1
 a28015 1
 e.mail.ru,octavius.mail.ru##.application_new-toolbar .application-mail:not(.application-mail_webview-mobile) [class*="top-line-adv"]:style(--letter-list-top-toolbar-height: inherit !important; --letter-list-top-native-adv-height: inherit !important; --scrollable-top-native-adv-height: inherit !important)
+d28032 1
+a28043 2
+mail.ru##.grid_blocked #mailbox:not(#id):style(visibility: unset !important; pointer-events: unset !important)
+mail.ru##.grid_blocked div[slot="main-column"] > :nth-child(-n+2) ~ [class] > [class]:style(visibility: unset !important; pointer-events: unset !important)
+d28092 1
 d28348 1
 a28348 1
 595.ucoz.net,5wip-file.ru,file-mods.ru,freesoft.ru,infourok.ru,mixmuz.ru,myshared.ru,myzcloud.me,n-torrents.org,sims3pack.ru,wallegend.net##+js(nano-setInterval-booster)
+a28394 1
+flightsim.su##+js(no-setTimeout-if, tie-popup-adblock)
 a28506 1
 wdho.ru##+js(set-constant, window.c, 4)
 a28624 1

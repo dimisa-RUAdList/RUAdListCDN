@@ -1,8 +1,8 @@
-diff name:ruadlist lines:34 checksum:dc45f983fb
+diff name:ruadlist lines:50 checksum:367dd7465a
 d4 2
 a5 2
-! Last modified: Thu, 20 Mar 2025 12:50:33 +0000
-! Diff-Path: ../patches/2025.3.20.770.patch#ruadlist
+! Last modified: Thu, 20 Mar 2025 17:25:15 +0000
+! Diff-Path: ../patches/2025.3.20.1045.patch#ruadlist
 a8502 1
 ##[href*="://go.leadgid.ru/aff_c?"]
 a8506 1
@@ -14,22 +14,38 @@ d16065 1
 a16065 1
 joyreactor.cc##.content-card ~ :not(.content-card) a[href][target="_blank"]
 d16177 1
+a17390 1
+itc.ua##.partner-posts
 a17641 1
 obozrevatel.com##.recommendation
+a18618 1
+itc.ua##.widget-spec-projects
+d18655 1
+a18655 1
+aplik.ru,discover24.ru,edurusnews.ru,holostyak.site,inforuss.info,itc.ua,krashevseh.ru,lentaruss.ru,mezha.media,mobnovelty.ru,smiruss.ru,soderzhanki2.ru,trud-ost.ru##.widget_execphp
 d19460 1
 a19460 1
 agronovosti.ru,sport-express.net,sport-express.ru,www.ixbt.com##a[href*="erid="][target="_blank"]
 d21917 1
 a21917 1
 ||pikabu.ru/ajax/*?rry6w=$xmlhttprequest
+a21940 1
+flightsim.su###tie-popup-adblock {remove:true;}
 d27332 6
 a27337 4
 playground.ru##.bonus-landing-page .panel-collapse > .panel-body:style(background-color: white !important)
 playground.ru##.bonus-landing-page .panel-default > .panel-heading:style(background-color: white !important)
 playground.ru##.bonus-landing-page-faq > .title:style(color: white !important)
 playground.ru##body[data-user-id]:style(background: #242424 !important)
+d27996 1
+a28007 2
+mail.ru##.grid_blocked #mailbox:not(#id):style(visibility: unset !important; pointer-events: unset !important)
+mail.ru##.grid_blocked div[slot="main-column"] > :nth-child(-n+2) ~ [class] > [class]:style(visibility: unset !important; pointer-events: unset !important)
+d28056 1
 d28312 1
 a28312 1
 595.ucoz.net,5wip-file.ru,file-mods.ru,freesoft.ru,infourok.ru,mixmuz.ru,myshared.ru,myzcloud.me,n-torrents.org,sims3pack.ru,wallegend.net##+js(nano-setInterval-booster)
+a28358 1
+flightsim.su##+js(no-setTimeout-if, tie-popup-adblock)
 a28470 1
 wdho.ru##+js(set-constant, window.c, 4)
