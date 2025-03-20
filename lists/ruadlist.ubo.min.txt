@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 20 Mar 2025 07:24:02 +0000
-! Diff-Path: ../patches/2025.3.20.444.patch#ruadlist
+! Last modified: Thu, 20 Mar 2025 12:50:33 +0000
+! Diff-Path: ../patches/2025.3.20.770.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -8500,10 +8500,12 @@ by,~mail.ru,ru,ua##.banner_box
 ##[href*="://clickpzk.com/"]
 ##[href*="://drp.su/"]
 ##[href*="://edgrmtracking.com/"]
+##[href*="://go.leadgid.ru/aff_c?"]
 ##[href*="://morelnk.ru/"]
 ~caliber.ru,~worldoftanks.com,~worldoftanks.ru,~worldofwarplanes.ru,~worldofwarships.ru,~wotblitz.com,~wowsblitz.com,~wowslegends.com##[href*="://redir.wargaming.net/"]
 ##[href*="://shopblogger.top/"]
 ##[href*="://simpalsid.com/ad/click?id"]
+##[href*="://track.leadbazaar.co/click?"]
 ##[href*="driftawayforfun.com"]
 ##[href*="driverpack.io/"]
 ~media.hubfiles.gdn##[href*="media.hubfiles.gdn"]
@@ -21914,7 +21916,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||imgfrost.net^$third-party
 ||liveinternet.ru/utf/lici.js?
 ||news.mail.ru/-/*.js?
-||pikabu.ru/ajax/*?rqy6w=$xmlhttprequest
+||pikabu.ru/ajax/*?rry6w=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -27329,12 +27331,10 @@ pikabu.ru##header > .header__main:style(background-color: var(--color--header__b
 ! ---
 pimpletv.ru##body > #branding:style(padding-top: 0 !important)
 ! ---
-playground.ru##.content_aside-container > .content-column:style(padding-left: 0 !important; padding-right: unset !important)
-playground.ru##.content_aside-container:style(flex-direction: unset !important)
-playground.ru##body#userNotAuthorized .bonus-landing-page .panel-collapse > .panel-body:style(background-color: white !important)
-playground.ru##body#userNotAuthorized .bonus-landing-page .panel-default > .panel-heading:style(background-color: white !important)
-playground.ru##body#userNotAuthorized .bonus-landing-page-faq > .title:style(color: white !important)
-playground.ru##body:style(background: #242424 !important)
+playground.ru##.bonus-landing-page .panel-collapse > .panel-body:style(background-color: white !important)
+playground.ru##.bonus-landing-page .panel-default > .panel-heading:style(background-color: white !important)
+playground.ru##.bonus-landing-page-faq > .title:style(color: white !important)
+playground.ru##body[data-user-id]:style(background: #242424 !important)
 ! исправление ошибок и косяков оригинальной вёрстки
 playground.ru##.gp-game-card .user-profile-sidebar:style(max-width: unset !important)
 ! ---
