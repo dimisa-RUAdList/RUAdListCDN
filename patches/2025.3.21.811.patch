@@ -1,8 +1,8 @@
-diff name:ruadlist lines:30 checksum:b3a96c9d43
+diff name:ruadlist lines:43 checksum:e79ba92763
 d4 2
 a5 2
-! Last modified: Fri, 21 Mar 2025 18:34:33 +0000
-! Diff-Path: ../patches/2025.3.21.1114.patch#ruadlist
+! Last modified: Fri, 21 Mar 2025 23:23:26 +0000
+! Diff-Path: ../patches/2025.3.21.1403.patch#ruadlist
 a3398 1
 ||legitimatecurve.pro^$third-party
 a5016 1
@@ -21,11 +21,24 @@ a10532 1
 d10547 1
 a10547 1
 /assets/vendor/*.xml$xmlhttprequest,domain=allohalive.com|aniqit.com|anivod.com|doefiratv.net|kinoxam.ru|kodik.biz|kodik.cc|kodik.info|kodikdb.com|u-cdn.org|u-cdn.top|u-play.pro|u-stream.in|video.doramatv.su
-a14187 1
-livetv.sx###links_block ~ table[bgcolor]
 d14304 1
 a14304 1
 anime-joy.online,animejoy.ru###offreklama
+a17992 1
+pikabu.ru##.sidebar-banner-300x250
 d18368 1
 a18368 1
-1fnl.ru,1tulatv.ru,78.ru,afanasy.biz,bragazeta.ru,dengi.ua,dnepr24.com.ua,football.ua,fullsite.org,gazeta.zp.ua,job.ru,km.ru,konkurent.ua,kr24.com.ua,litrpg.ru,livejournal.ru,nikolaev24.com.ua,novosti-n.org,odessa.net.ua,prm.ru,riamo.ru,rusnext.ru,russia.ru,rusvesna.su,samara24.ru,smilekaluga.ru,study.ru,ucheba.ru,ura-inform.com,v-variant.com.ua,wildo.ru##.top-banner
+1fnl.ru,1tulatv.ru,78.ru,afanasy.biz,bookslist.me,bragazeta.ru,dengi.ua,dnepr24.com.ua,football.ua,fullsite.org,gazeta.zp.ua,job.ru,km.ru,konkurent.ua,kr24.com.ua,litrpg.ru,livejournal.ru,nikolaev24.com.ua,novosti-n.org,odessa.net.ua,prm.ru,riamo.ru,rusnext.ru,russia.ru,rusvesna.su,samara24.ru,smilekaluga.ru,study.ru,ucheba.ru,ura-inform.com,v-variant.com.ua,wildo.ru##.top-banner
+a21802 1
+livetv.sx##td[valign="top"] > a ~ a ~ a ~ table[bgcolor]
+a22016 1
+pikabu.ru##div[id^="bal_"] {remove:true;}
+d27998 1
+a28002 1
+mail.ru###grid .widget__container [class*="promo"]
+d28743 1
+d28751 1
+a28751 1
+! только десктопы
+a28752 1
+www.ukr.net##+js(abort-on-stack-trace, Object.prototype.crossDomain, ecbrStart)

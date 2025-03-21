@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 21 Mar 2025 18:34:33 +0000
-! Diff-Path: ../patches/2025.3.21.1114.patch#ruadlist
+! Last modified: Fri, 21 Mar 2025 23:23:26 +0000
+! Diff-Path: ../patches/2025.3.21.1403.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -14188,7 +14188,6 @@ now.ru###lightbox
 now.ru###lightboxOverlay
 relasko.ru###linkPlace
 mixupload.org###link_brand
-livetv.sx###links_block ~ table[bgcolor]
 litmir.me###litres_btn
 liveinternet.ru###liveinternet_600x250
 liveinternet.ru###liveinternet_billboard
@@ -17994,6 +17993,7 @@ animedub.ru#?#.sidebar div:-abp-has([data-relap-id])
 myfootball.top#?#.sidebar--right > .block_full:-abp-has(.banners-ads)
 prostopleer.com##.sidebar-a330-content
 101poisk.ru,pbembed.me,pornobomba.vip,securitylab.ru,study.ru,vostok.fm##.sidebar-banner
+pikabu.ru##.sidebar-banner-300x250
 glavpost.com##.sidebar-banner-block
 diletant.media##.sidebar-banner-wrap
 theuk.one#?#.sidebar-block:-abp-has(> .sticky .comm-blog)
@@ -18369,7 +18369,7 @@ iz.ru##.top-advertising
 house.kg,mashina.kg##.top-after-banner
 soel.ru##.top-b-place > .container > .b-place
 india-tv.net##.top-b.row
-1fnl.ru,1tulatv.ru,78.ru,afanasy.biz,bragazeta.ru,dengi.ua,dnepr24.com.ua,football.ua,fullsite.org,gazeta.zp.ua,job.ru,km.ru,konkurent.ua,kr24.com.ua,litrpg.ru,livejournal.ru,nikolaev24.com.ua,novosti-n.org,odessa.net.ua,prm.ru,riamo.ru,rusnext.ru,russia.ru,rusvesna.su,samara24.ru,smilekaluga.ru,study.ru,ucheba.ru,ura-inform.com,v-variant.com.ua,wildo.ru##.top-banner
+1fnl.ru,1tulatv.ru,78.ru,afanasy.biz,bookslist.me,bragazeta.ru,dengi.ua,dnepr24.com.ua,football.ua,fullsite.org,gazeta.zp.ua,job.ru,km.ru,konkurent.ua,kr24.com.ua,litrpg.ru,livejournal.ru,nikolaev24.com.ua,novosti-n.org,odessa.net.ua,prm.ru,riamo.ru,rusnext.ru,russia.ru,rusvesna.su,samara24.ru,smilekaluga.ru,study.ru,ucheba.ru,ura-inform.com,v-variant.com.ua,wildo.ru##.top-banner
 foto.ua##.top-banner-container
 pronovostroy.ru##.top-banner-slider
 kazan.32top.ru##.top-banner__container
@@ -21804,6 +21804,7 @@ stalker-2-2012.ucoz.net#?#td[style="width:200px;"] > table:-abp-has(b:-abp-conta
 inopressa.ru##td[style] > div[style="height: 120px"]
 internethalyava.ru##td[valign="top"] > .block-user ~ *
 riperam.org#?#td[valign="top"] > .forabg:-abp-has(> div > div > .inner > .postbody > .content > script[src*="oldxit.ru"])
+livetv.sx##td[valign="top"] > a ~ a ~ a ~ table[bgcolor]
 studopedia.su##td[valign="top"] > center > .link1
 dating.trans-admirer.com##td[valign="top"] > noindex
 smartsoft.kiev.ua##td[valign="top"] > noindex > center
@@ -22018,6 +22019,7 @@ e.mail.ru##div[class=""] > div[class=""] > div[class=""]
 sdamgia.ru##div[class^="google_ad_left"]
 drive2.ru,liveinternet.ru,sdamgia.ru##div[data-name="adWrapper"]
 rg.ru##div[id][class*="__"]:empty
+pikabu.ru##div[id^="bal_"] {remove:true;}
 shedevrum.ai##div[id^="header_block_"]
 sdamgia.ru##div[id^="yandex_vario"]
 liveinternet.ru##div[style*="!important; "]
@@ -27999,11 +28001,11 @@ e.mail.ru##.ph-projects > a[href^="https://e.mail.ru/messages/inbox?utm_"]:style
 news.mail.ru###article-root section > main + [class] > div div:not([style]):style(min-height: 0 !important; padding: unset !important)
 mail.ru###bubble-home
 mail.ru###grid .asteroid-widgets
-mail.ru###grid .widget__container .promo-with-text
 mail.ru###grid .widget__container > .calendar-container
 mail.ru###grid .widget__container > .event-list-widget
 mail.ru###grid .widget__container > .games-widget
 mail.ru###grid .widget__container > .progress-bar-widget
+mail.ru###grid .widget__container [class*="promo"]
 mail.ru###grid div[class^="feed__"]
 my.mail.ru###history_container > div[class][style*="display: block!important"]
 minigames.mail.ru###like-buttons
@@ -28744,7 +28746,6 @@ sinoptik.ua##head > style:empty:style(all: inherit !important)
 ! ukr.net
 mail.ukr.net###top_banner:not(#id):style(display: block !important; pointer-events: none !important; opacity: 0 !important; height: 0 !important)
 www.ukr.net##+js(abort-on-property-read, vpb)
-www.ukr.net##+js(abort-on-stack-trace, Object.prototype.crossDomain, ecbrStart)
 mail.ukr.net##+js(set-constant, Object.prototype.AdvertisingManager, noopFunc)
 mail.ukr.net##.advt:not(#id):style(display: block !important; pointer-events: none !important; opacity: 0 !important; height: 0 !important)
 www.ukr.net##body > .wrapper > #main:style(overflow: hidden !important)
@@ -28752,8 +28753,9 @@ www.ukr.net##div[class*=" "]:first-child + div[class*=" "]:last-child > div[clas
 !#if env_mobile
 www.ukr.net##.lazy-load-banner
 !#endif
-! mail.ukr.net
+! только десктопы
 !#if !env_mobile
+www.ukr.net##+js(abort-on-stack-trace, Object.prototype.crossDomain, ecbrStart)
 mail.ukr.net##div[class]:not([id]):first-child:only-child > div[class]:not([id]):first-child:only-child > div[class]:not([id]):first-child:only-child:style(height: unset !important)
 !#endif
 mail.ukr.net###page:style(padding-top: 0 !important)

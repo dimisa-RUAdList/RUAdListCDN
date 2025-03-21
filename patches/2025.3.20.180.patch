@@ -1,8 +1,8 @@
-diff name:ruadlist lines:87 checksum:b3a96c9d43
+diff name:ruadlist lines:100 checksum:e79ba92763
 d4 2
 a5 2
-! Last modified: Fri, 21 Mar 2025 18:34:33 +0000
-! Diff-Path: ../patches/2025.3.21.1114.patch#ruadlist
+! Last modified: Fri, 21 Mar 2025 23:23:26 +0000
+! Diff-Path: ../patches/2025.3.21.1403.patch#ruadlist
 a3398 1
 ||legitimatecurve.pro^$third-party
 a4800 1
@@ -29,16 +29,16 @@ a10528 1
 d10543 1
 a10543 1
 /assets/vendor/*.xml$xmlhttprequest,domain=allohalive.com|aniqit.com|anivod.com|doefiratv.net|kinoxam.ru|kodik.biz|kodik.cc|kodik.info|kodikdb.com|u-cdn.org|u-cdn.top|u-play.pro|u-stream.in|video.doramatv.su
-a14183 1
-livetv.sx###links_block ~ table[bgcolor]
 d14300 1
 a14300 1
 anime-joy.online,animejoy.ru###offreklama
 a17389 1
 itc.ua##.partner-posts
+a17987 1
+pikabu.ru##.sidebar-banner-300x250
 d18363 1
 a18363 1
-1fnl.ru,1tulatv.ru,78.ru,afanasy.biz,bragazeta.ru,dengi.ua,dnepr24.com.ua,football.ua,fullsite.org,gazeta.zp.ua,job.ru,km.ru,konkurent.ua,kr24.com.ua,litrpg.ru,livejournal.ru,nikolaev24.com.ua,novosti-n.org,odessa.net.ua,prm.ru,riamo.ru,rusnext.ru,russia.ru,rusvesna.su,samara24.ru,smilekaluga.ru,study.ru,ucheba.ru,ura-inform.com,v-variant.com.ua,wildo.ru##.top-banner
+1fnl.ru,1tulatv.ru,78.ru,afanasy.biz,bookslist.me,bragazeta.ru,dengi.ua,dnepr24.com.ua,football.ua,fullsite.org,gazeta.zp.ua,job.ru,km.ru,konkurent.ua,kr24.com.ua,litrpg.ru,livejournal.ru,nikolaev24.com.ua,novosti-n.org,odessa.net.ua,prm.ru,riamo.ru,rusnext.ru,russia.ru,rusvesna.su,samara24.ru,smilekaluga.ru,study.ru,ucheba.ru,ura-inform.com,v-variant.com.ua,wildo.ru##.top-banner
 a18618 1
 itc.ua##.widget-spec-projects
 d18655 1
@@ -53,6 +53,8 @@ a19430 1
 cybersport.ru,dltv.org,esports.ru,prodota.ru##a[href*="betboom.bet"]
 a21157 1
 trychatgpt.ru##div[style*="min-height"][style*="max-height"]
+a21793 1
+livetv.sx##td[valign="top"] > a ~ a ~ a ~ table[bgcolor]
 a21912 1
 @@||statika.mpsuadv.ru/scripts/*.js|$script,domain=trychatgpt.ru
 d21917 1
@@ -60,6 +62,8 @@ a21917 1
 ||pikabu.ru/ajax/*?rry6w=$xmlhttprequest
 a21940 1
 flightsim.su###tie-popup-adblock {remove:true;}
+a22005 1
+pikabu.ru##div[id^="bal_"] {remove:true;}
 a23978 1
 ||ipic.su^$third-party
 d25830 1
@@ -71,6 +75,9 @@ playground.ru##.bonus-landing-page .panel-collapse > .panel-body:style(backgroun
 playground.ru##.bonus-landing-page .panel-default > .panel-heading:style(background-color: white !important)
 playground.ru##.bonus-landing-page-faq > .title:style(color: white !important)
 playground.ru##body[data-user-id]:style(background: #242424 !important)
+d27988 1
+a27992 1
+mail.ru###grid .widget__container [class*="promo"]
 d27996 1
 a28007 2
 mail.ru##.grid_blocked #mailbox:not(#id):style(visibility: unset !important; pointer-events: unset !important)
@@ -86,3 +93,9 @@ flightsim.su##+js(no-setTimeout-if, tie-popup-adblock)
 d28696 1
 a28696 1
 e.mail.ru,octavius.mail.ru##+js(addEventListener-defuser, /click|destroy|mousedown/, '', elements, .html-fishing)
+d28731 1
+d28739 1
+a28739 1
+! только десктопы
+a28740 1
+www.ukr.net##+js(abort-on-stack-trace, Object.prototype.crossDomain, ecbrStart)
