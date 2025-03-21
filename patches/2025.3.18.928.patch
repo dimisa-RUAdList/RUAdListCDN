@@ -1,12 +1,16 @@
-diff name:ruadlist lines:66 checksum:50b9940bc0
+diff name:ruadlist lines:89 checksum:5fadb5a79d
 d4 2
 a5 2
-! Last modified: Fri, 21 Mar 2025 08:31:57 +0000
-! Diff-Path: ../patches/2025.3.21.511.patch#ruadlist
+! Last modified: Fri, 21 Mar 2025 13:31:52 +0000
+! Diff-Path: ../patches/2025.3.21.811.patch#ruadlist
+a4800 1
+||programmatic.ru^$third-party
 a8502 1
 ##[href*="://go.leadgid.ru/aff_c?"]
 a8506 1
 ##[href*="://track.leadbazaar.co/click?"]
+a9994 1
+trychatgpt.ru###root > div > footer ~ div.fixed[style]
 a15300 1
 shikimori.me,shikimori.one,shikimori.org#?#.b-forum > article:-abp-has(> .inner > footer .promo)
 d15470 1
@@ -29,12 +33,18 @@ a18653 1
 aplik.ru,discover24.ru,edurusnews.ru,holostyak.site,inforuss.info,itc.ua,krashevseh.ru,lentaruss.ru,mezha.media,mobnovelty.ru,smiruss.ru,soderzhanki2.ru,trud-ost.ru##.widget_execphp
 a18999 1
 esports.ru##[data-name^="ads/"]
+a19037 1
+trychatgpt.ru##[data-widget-id]
 d19428 1
 a19428 1
 cybersport.ru,dltv.org,esports.ru,prodota.ru##a[href*="betboom.bet"]
 d19458 1
 a19458 1
 agronovosti.ru,sport-express.net,sport-express.ru,www.ixbt.com##a[href*="erid="][target="_blank"]
+a21155 1
+trychatgpt.ru##div[style*="min-height"][style*="max-height"]
+a21910 1
+@@||statika.mpsuadv.ru/scripts/*.js|$script,domain=trychatgpt.ru
 d21915 1
 a21915 1
 ||pikabu.ru/ajax/*?rry6w=$xmlhttprequest
@@ -46,6 +56,11 @@ a23146 1
 a23152 2
 ya.ru,yandex.ru,yandex.*##.t-construct-adapter__adv
 ya.ru,yandex.ru,yandex.*#?##search-result > .serp-item:-abp-has(> .AdvLabel)
+a23974 1
+||ipic.su^$third-party
+d25826 1
+a25826 1
+@@||yandex.ru/ads/system/context.js|$script,domain=1prime.ru|gismeteo.ru|konohatv.org|tnt-online.ru
 d27328 6
 a27333 4
 playground.ru##.bonus-landing-page .panel-collapse > .panel-body:style(background-color: white !important)
@@ -58,6 +73,11 @@ a28007 2
 mail.ru##.grid_blocked #mailbox:not(#id):style(visibility: unset !important; pointer-events: unset !important)
 mail.ru##.grid_blocked div[slot="main-column"] > :nth-child(-n+2) ~ [class] > [class]:style(visibility: unset !important; pointer-events: unset !important)
 d28056 1
+d28263 1
+a28263 1
+regnum.news,regnum.ru,tproger.ru##+js(addEventListener-defuser, click, '', elements, a[href*="utm_campaign"])
+a28268 1
+trychatgpt.ru##+js(addEventListener-defuser, error, '', elements, [data-status="loading"])
 d28312 1
 a28312 1
 595.ucoz.net,5wip-file.ru,file-mods.ru,freesoft.ru,infourok.ru,mixmuz.ru,myshared.ru,myzcloud.me,n-torrents.org,sims3pack.ru,wallegend.net##+js(nano-setInterval-booster)
@@ -65,3 +85,6 @@ a28358 1
 flightsim.su##+js(no-setTimeout-if, tie-popup-adblock)
 a28470 1
 wdho.ru##+js(set-constant, window.c, 4)
+d28695 1
+a28695 1
+e.mail.ru,octavius.mail.ru##+js(addEventListener-defuser, /click|destroy|mousedown/, '', elements, .html-fishing)

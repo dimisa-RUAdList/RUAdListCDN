@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 21 Mar 2025 08:31:57 +0000
-! Diff-Path: ../patches/2025.3.21.511.patch#ruadlist
+! Last modified: Fri, 21 Mar 2025 13:31:52 +0000
+! Diff-Path: ../patches/2025.3.21.811.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -4798,6 +4798,7 @@
 ||procratre.today^$third-party
 ||profiledbase.com^$third-party
 ||profiprobest.ru^$third-party
+||programmatic.ru^$third-party
 ||programmatica.com^$third-party
 ||projectpoi.com^$third-party
 ||proligtb.com^
@@ -9994,6 +9995,7 @@ psm7.com###psm-messenger-subscribe-popup
 bilshe.com,businessua.com,multikino.com###reachMedia
 kote.ws###register_popup
 maam.ru###registr
+trychatgpt.ru###root > div > footer ~ div.fixed[style]
 bvedomosti.ru###sbox-overlay
 bvedomosti.ru###sbox-window
 bilshe.com,businessua.com,multikino.com###shadowMedia
@@ -19042,6 +19044,7 @@ historyrusedu.ru##[data-uk-grid-match*="target"]
 conversion.im##[data-url*="/banners/"]
 slukh.media##[data-vc-parallax]
 nv.ua##[data-vr-zone="Баннер"]
+trychatgpt.ru##[data-widget-id]
 safezone.cc##[data-widget-key="friends"]
 ozon.ru##[data-widget="advBanner"]
 ozon.ru##[data-widget="advVideoBanner"]
@@ -21160,6 +21163,7 @@ reshak.ru##div[style*="height:325px;"]
 euro-football.ru,liveresult.ru##div[style*="height:400px;"]
 nemo-crack.org##div[style*="hot-game.info"]
 narutoplanet.ru##div[style*="margin-top: 9.5px;"]
+trychatgpt.ru##div[style*="min-height"][style*="max-height"]
 wtftime.ru##div[style*="min-height: 200px;"]
 euro-football.ru,liveresult.ru##div[style*="min-height:"][style*="00px"]
 chipmaker.ru##div[style*="min-height:100px;"]
@@ -21915,6 +21919,7 @@ $csp=script-src-attr 'none',domain=eurointegration.com.ua|pravda.com.ua|sportana
 @@||s.zmctrack.net/z|$xmlhttprequest
 @@||s.znctrack.net/z|$xmlhttprequest
 @@||ssp.rambler.ru/capirs_async.js|$script,domain=www.championat.com
+@@||statika.mpsuadv.ru/scripts/*.js|$script,domain=trychatgpt.ru
 https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|livejournal.com|olegmakarenko.ru|periskop.su|shakko.ru|shiro-kino.ru|vadimrazumov.ru
 ||imgfrost.net^$third-party
 ||liveinternet.ru/utf/lici.js?
@@ -23982,6 +23987,7 @@ zarulem.ws##td[style^="text-align:center;width:50%"]
 ||ipgold.ru^$third-party
 ||iphone10gs.com^$third-party
 ||iphoto365.com^$third-party,script
+||ipic.su^$third-party
 ||ipru.ru^$third-party
 ||ipz.ru/cgi-bin/
 ||iqbinaryoptions.com^$third-party
@@ -25833,7 +25839,7 @@ xn--112-5cd3baof9c5c.xn--p1ai#@#.wrapad
 @@||yaberemenna.info/openx/www/delivery/ai.php?filename=$domain=yaberemenna.info
 @@||yaberemenna.info/openx/www/delivery/ajs.php?zoneid=7&$domain=yaberemenna.info
 @@||yandex.ru/ads/$domain=magnit.ru
-@@||yandex.ru/ads/system/context.js|$script,domain=1prime.ru|gismeteo.ru|konohatv.org|tnt-online.ru|trychatgpt.ru
+@@||yandex.ru/ads/system/context.js|$script,domain=1prime.ru|gismeteo.ru|konohatv.org|tnt-online.ru
 @@||yandex.ru/ads/system/header-bidding.js$script,domain=gismeteo.ru|trainzland.ru
 @@||yandex.ru/metrika/informer.js
 @@||yandex.ru/search/site/?*search$third-party,script
@@ -28264,12 +28270,13 @@ cq.ru##+js(addEventListener-defuser, DOMContentLoaded, banners)
 1progs.me##+js(addEventListener-defuser, DOMContentLoaded, encodedUrl)
 xv-ru.com##+js(addEventListener-defuser, DOMContentLoaded, exo_tracker)
 litnet.com##+js(addEventListener-defuser, DOMContentLoaded, feedback)
-regnum.news,regnum.ru,tproger.ru##+js(addEventListener-defuser, click, , elements, a[href*="utm_campaign"])
+regnum.news,regnum.ru,tproger.ru##+js(addEventListener-defuser, click, '', elements, a[href*="utm_campaign"])
 softonic.ru##+js(addEventListener-defuser, click, [native code])
 ~player.smotrim.ru,smotrim.ru##+js(addEventListener-defuser, click, matches)
 ~id.rambler.ru,~mail.rambler.ru,rambler.ru,~vp.rambler.ru##+js(addEventListener-defuser, copy, extra)
 kp.kg,kp.kz,kp.md,kp.ru,rbc.ru,sportrbc.ru##+js(addEventListener-defuser, copy, getSelection)
 carservic.ru,iptv.org.ua,tva.org.ua,ufchgu.ru##+js(addEventListener-defuser, copy, pagelink)
+trychatgpt.ru##+js(addEventListener-defuser, error, '', elements, [data-status="loading"])
 fastpic.org,~new.fastpic.org##+js(addEventListener-defuser, getexoloader)
 romakatya.ru##+js(addEventListener-defuser, load, AdBlock)
 blackwot.ru##+js(addEventListener-defuser, load, detect-modal)
@@ -28698,7 +28705,7 @@ e.mail.ru##.b-datalist > div:matches-css(height: 39px):remove()
 e.mail.ru##.b-letter_thread > div > div:matches-css(height: 39px):remove()
 e.mail.ru##body:not(#id) > div[style="position: absolute; visibility: hidden; top: -10000px; left: -10000px;"] > div:style(display: block !important)
 ! newapp
-e.mail.ru,octavius.mail.ru##+js(addEventListener-defuser, /click|destroy|mousedown/, , elements, .html-fishing)
+e.mail.ru,octavius.mail.ru##+js(addEventListener-defuser, /click|destroy|mousedown/, '', elements, .html-fishing)
 e.mail.ru,octavius.mail.ru##+js(href-sanitizer, [data-cke-saved-href^="https://checklink.mail.ru/proxy?"])
 e.mail.ru,octavius.mail.ru##+js(no-setTimeout-if, MIMIC_FORCE)
 e.mail.ru,octavius.mail.ru##+js(no-setTimeout-if, _runBatch, 100)

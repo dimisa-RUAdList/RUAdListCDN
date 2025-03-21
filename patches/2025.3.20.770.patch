@@ -1,8 +1,12 @@
-diff name:ruadlist lines:25 checksum:50b9940bc0
+diff name:ruadlist lines:48 checksum:5fadb5a79d
 d4 2
 a5 2
-! Last modified: Fri, 21 Mar 2025 08:31:57 +0000
-! Diff-Path: ../patches/2025.3.21.511.patch#ruadlist
+! Last modified: Fri, 21 Mar 2025 13:31:52 +0000
+! Diff-Path: ../patches/2025.3.21.811.patch#ruadlist
+a4800 1
+||programmatic.ru^$third-party
+a9996 1
+trychatgpt.ru###root > div > footer ~ div.fixed[style]
 a17391 1
 itc.ua##.partner-posts
 a18620 1
@@ -12,15 +16,34 @@ a18657 1
 aplik.ru,discover24.ru,edurusnews.ru,holostyak.site,inforuss.info,itc.ua,krashevseh.ru,lentaruss.ru,mezha.media,mobnovelty.ru,smiruss.ru,soderzhanki2.ru,trud-ost.ru##.widget_execphp
 a19003 1
 esports.ru##[data-name^="ads/"]
+a19041 1
+trychatgpt.ru##[data-widget-id]
 d19432 1
 a19432 1
 cybersport.ru,dltv.org,esports.ru,prodota.ru##a[href*="betboom.bet"]
+a21159 1
+trychatgpt.ru##div[style*="min-height"][style*="max-height"]
+a21914 1
+@@||statika.mpsuadv.ru/scripts/*.js|$script,domain=trychatgpt.ru
 a21942 1
 flightsim.su###tie-popup-adblock {remove:true;}
+a23980 1
+||ipic.su^$third-party
+d25832 1
+a25832 1
+@@||yandex.ru/ads/system/context.js|$script,domain=1prime.ru|gismeteo.ru|konohatv.org|tnt-online.ru
 d27996 1
 a28007 2
 mail.ru##.grid_blocked #mailbox:not(#id):style(visibility: unset !important; pointer-events: unset !important)
 mail.ru##.grid_blocked div[slot="main-column"] > :nth-child(-n+2) ~ [class] > [class]:style(visibility: unset !important; pointer-events: unset !important)
 d28056 1
+d28263 1
+a28263 1
+regnum.news,regnum.ru,tproger.ru##+js(addEventListener-defuser, click, '', elements, a[href*="utm_campaign"])
+a28268 1
+trychatgpt.ru##+js(addEventListener-defuser, error, '', elements, [data-status="loading"])
 a28358 1
 flightsim.su##+js(no-setTimeout-if, tie-popup-adblock)
+d28696 1
+a28696 1
+e.mail.ru,octavius.mail.ru##+js(addEventListener-defuser, /click|destroy|mousedown/, '', elements, .html-fishing)
