@@ -1,8 +1,8 @@
-diff name:ruadlist lines:138 checksum:f6d09b05a5
+diff name:ruadlist lines:158 checksum:2a59be9537
 d4 2
 a5 2
-! Last modified: Sat, 22 Mar 2025 14:24:37 +0000
-! Diff-Path: ../patches/2025.3.22.864.patch#ruadlist
+! Last modified: Sat, 22 Mar 2025 19:19:41 +0000
+! Diff-Path: ../patches/2025.3.22.1159.patch#ruadlist
 a3398 1
 ||legitimatecurve.pro^$third-party
 a4800 1
@@ -76,6 +76,11 @@ a21157 1
 trychatgpt.ru##div[style*="min-height"][style*="max-height"]
 a21793 1
 livetv.sx##td[valign="top"] > a ~ a ~ a ~ table[bgcolor]
+d21895 1
+a21895 1
+! ловушка для обфускации дзена: главная, статьи, новости, погода
+a21898 1
+||dzen.ru/pogoda/*_$script
 a21912 1
 @@||statika.mpsuadv.ru/scripts/*.js|$script,domain=trychatgpt.ru
 d21917 1
@@ -85,6 +90,8 @@ a21940 1
 flightsim.su###tie-popup-adblock {remove:true;}
 a22005 1
 pikabu.ru##div[id^="bal_"] {remove:true;}
+a22268 1
+sportmail.ru##span[class*="p-branding__ears"]
 a23978 1
 ||ipic.su^$third-party
 d25830 1
@@ -100,6 +107,19 @@ playground.ru##.bonus-landing-page .panel-collapse > .panel-body:style(backgroun
 playground.ru##.bonus-landing-page .panel-default > .panel-heading:style(background-color: white !important)
 playground.ru##.bonus-landing-page-faq > .title:style(color: white !important)
 playground.ru##body[data-user-id]:style(background: #242424 !important)
+a27793 1
+dzen.ru##[id*="card-rtb"]
+d27806 1
+a27806 2
+dzen.ru##[class*="withStickyAdOnArticle"]
+dzen.ru##[data-microappname="ArticleDesktopMicroApp"] > [aria-label] > div[class] > div[id]
+a27807 1
+dzen.ru##div[class*="__articleItem-"] > div[class*="contentBottomBlock"] > div[class] ~ div
+d27809 1
+a27813 1
+dzen.ru##.news-rubric-desktop__adv-column
+a27814 1
+dzen.ru##div[class^="news-site--news-top-"]
 d27988 1
 a27992 1
 mail.ru###grid .widget__container [class*="promo"]

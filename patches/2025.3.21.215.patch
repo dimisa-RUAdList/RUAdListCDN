@@ -1,8 +1,8 @@
-diff name:ruadlist lines:87 checksum:f6d09b05a5
+diff name:ruadlist lines:107 checksum:2a59be9537
 d4 2
 a5 2
-! Last modified: Sat, 22 Mar 2025 14:24:37 +0000
-! Diff-Path: ../patches/2025.3.22.864.patch#ruadlist
+! Last modified: Sat, 22 Mar 2025 19:19:41 +0000
+! Diff-Path: ../patches/2025.3.22.1159.patch#ruadlist
 a3398 1
 ||legitimatecurve.pro^$third-party
 a4800 1
@@ -48,10 +48,17 @@ a21162 1
 trychatgpt.ru##div[style*="min-height"][style*="max-height"]
 a21798 1
 livetv.sx##td[valign="top"] > a ~ a ~ a ~ table[bgcolor]
+d21900 1
+a21900 1
+! ловушка для обфускации дзена: главная, статьи, новости, погода
+a21903 1
+||dzen.ru/pogoda/*_$script
 a21917 1
 @@||statika.mpsuadv.ru/scripts/*.js|$script,domain=trychatgpt.ru
 a22011 1
 pikabu.ru##div[id^="bal_"] {remove:true;}
+a22274 1
+sportmail.ru##span[class*="p-branding__ears"]
 a23984 1
 ||ipic.su^$third-party
 d25836 1
@@ -61,6 +68,19 @@ a26489 3
 braz-rus.pro##[id^="oframeplayer-"] > pjsdiv[style*="scaleX(1.1)"]:style(transform: none !important)
 braz-rus.pro##video:style(filter: none !important)
 ! ---
+a27797 1
+dzen.ru##[id*="card-rtb"]
+d27810 1
+a27810 2
+dzen.ru##[class*="withStickyAdOnArticle"]
+dzen.ru##[data-microappname="ArticleDesktopMicroApp"] > [aria-label] > div[class] > div[id]
+a27811 1
+dzen.ru##div[class*="__articleItem-"] > div[class*="contentBottomBlock"] > div[class] ~ div
+d27813 1
+a27817 1
+dzen.ru##.news-rubric-desktop__adv-column
+a27818 1
+dzen.ru##div[class^="news-site--news-top-"]
 d27992 1
 a27996 1
 mail.ru###grid .widget__container [class*="promo"]

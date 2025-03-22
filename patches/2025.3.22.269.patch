@@ -1,8 +1,8 @@
-diff name:ruadlist lines:25 checksum:f6d09b05a5
+diff name:ruadlist lines:45 checksum:2a59be9537
 d4 2
 a5 2
-! Last modified: Sat, 22 Mar 2025 14:24:37 +0000
-! Diff-Path: ../patches/2025.3.22.864.patch#ruadlist
+! Last modified: Sat, 22 Mar 2025 19:19:41 +0000
+! Diff-Path: ../patches/2025.3.22.1159.patch#ruadlist
 a11115 1
 ||brzrs.pro/sss/lin/
 d15427 1
@@ -12,10 +12,30 @@ a15489 1
 braz-rus.pro##.banner__promo
 a15901 1
 braz-rus.pro##.card__e-video
+d21909 1
+a21909 1
+! ловушка для обфускации дзена: главная, статьи, новости, погода
+a21912 1
+||dzen.ru/pogoda/*_$script
+a22285 1
+sportmail.ru##span[class*="p-branding__ears"]
 a26501 3
 braz-rus.pro##[id^="oframeplayer-"] > pjsdiv[style*="scaleX(1.1)"]:style(transform: none !important)
 braz-rus.pro##video:style(filter: none !important)
 ! ---
+a27809 1
+dzen.ru##[id*="card-rtb"]
+d27822 1
+a27822 2
+dzen.ru##[class*="withStickyAdOnArticle"]
+dzen.ru##[data-microappname="ArticleDesktopMicroApp"] > [aria-label] > div[class] > div[id]
+a27823 1
+dzen.ru##div[class*="__articleItem-"] > div[class*="contentBottomBlock"] > div[class] ~ div
+d27825 1
+a27829 1
+dzen.ru##.news-rubric-desktop__adv-column
+a27830 1
+dzen.ru##div[class^="news-site--news-top-"]
 a28291 1
 braz-rus.pro##+js(addEventListener-defuser, new, window.location)
 a28294 1

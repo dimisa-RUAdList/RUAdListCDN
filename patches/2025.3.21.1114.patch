@@ -1,8 +1,8 @@
-diff name:ruadlist lines:44 checksum:f6d09b05a5
+diff name:ruadlist lines:64 checksum:2a59be9537
 d4 2
 a5 2
-! Last modified: Sat, 22 Mar 2025 14:24:37 +0000
-! Diff-Path: ../patches/2025.3.22.864.patch#ruadlist
+! Last modified: Sat, 22 Mar 2025 19:19:41 +0000
+! Diff-Path: ../patches/2025.3.22.1159.patch#ruadlist
 a11115 1
 ||brzrs.pro/sss/lin/
 d14191 1
@@ -20,12 +20,32 @@ a18372 1
 1fnl.ru,1tulatv.ru,78.ru,afanasy.biz,bookslist.me,bragazeta.ru,dengi.ua,dnepr24.com.ua,football.ua,fullsite.org,gazeta.zp.ua,job.ru,km.ru,konkurent.ua,kr24.com.ua,litrpg.ru,livejournal.ru,nikolaev24.com.ua,novosti-n.org,odessa.net.ua,prm.ru,riamo.ru,rusnext.ru,russia.ru,rusvesna.su,samara24.ru,smilekaluga.ru,study.ru,ucheba.ru,ura-inform.com,v-variant.com.ua,wildo.ru##.top-banner
 a21806 1
 livetv.sx##td[valign="top"] > a ~ a ~ a ~ table[bgcolor]
+d21908 1
+a21908 1
+! ловушка для обфускации дзена: главная, статьи, новости, погода
+a21911 1
+||dzen.ru/pogoda/*_$script
 a22020 1
 pikabu.ru##div[id^="bal_"] {remove:true;}
+a22283 1
+sportmail.ru##span[class*="p-branding__ears"]
 a26499 3
 braz-rus.pro##[id^="oframeplayer-"] > pjsdiv[style*="scaleX(1.1)"]:style(transform: none !important)
 braz-rus.pro##video:style(filter: none !important)
 ! ---
+a27807 1
+dzen.ru##[id*="card-rtb"]
+d27820 1
+a27820 2
+dzen.ru##[class*="withStickyAdOnArticle"]
+dzen.ru##[data-microappname="ArticleDesktopMicroApp"] > [aria-label] > div[class] > div[id]
+a27821 1
+dzen.ru##div[class*="__articleItem-"] > div[class*="contentBottomBlock"] > div[class] ~ div
+d27823 1
+a27827 1
+dzen.ru##.news-rubric-desktop__adv-column
+a27828 1
+dzen.ru##div[class^="news-site--news-top-"]
 d28002 1
 a28006 1
 mail.ru###grid .widget__container [class*="promo"]
