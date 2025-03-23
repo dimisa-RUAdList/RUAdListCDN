@@ -1,8 +1,8 @@
-diff name:ruadlist lines:149 checksum:302954e03b
+diff name:ruadlist lines:152 checksum:4afcd424d8
 d4 2
 a5 2
-! Last modified: Sun, 23 Mar 2025 15:25:21 +0000
-! Diff-Path: ../patches/2025.3.23.925.patch#ruadlist
+! Last modified: Sun, 23 Mar 2025 20:25:27 +0000
+! Diff-Path: ../patches/2025.3.23.1225.patch#ruadlist
 a3398 1
 ||legitimatecurve.pro^$third-party
 a4800 1
@@ -127,6 +127,9 @@ a28274 1
 braz-rus.pro##+js(addEventListener-defuser, new, window.location)
 a28277 1
 braz-rus.pro##+js(addEventListener-defuser, userpause, Math.random)
+a28292 1
+dtf.ru,vc.ru##+js(href-sanitizer, a[href*="/redirect?to="], ?to)
+d28300 1
 a28311 2
 player.smotrim.ru##+js(json-prune-fetch-response, data.age_restrictions)
 player.smotrim.ru##+js(json-prune-fetch-response, data.template.disable_registration)
