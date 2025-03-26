@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 26 Mar 2025 13:33:51 +0000
-! Diff-Path: ../patches/2025.3.26.813.patch#ruadlist
+! Last modified: Wed, 26 Mar 2025 18:35:28 +0000
+! Diff-Path: ../patches/2025.3.26.1115.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -8168,6 +8168,7 @@ _verified.php?code=*&server=runetki.com
 /webunder_
 /widget-a-b.js
 /wp-content/imgrekl/*
+/wp-content/plugins/*-background*/js/wpsite_clickable.js$script
 /wp-content/plugins/adsplacer_pro/*
 /wp-content/plugins/aw-bnrs/*
 /wp-content/plugins/distr-adv/*
@@ -8175,7 +8176,6 @@ _verified.php?code=*&server=runetki.com
 /wp-content/plugins/flat_pm/*
 /wp-content/plugins/nativerent/static/content.js
 /wp-content/plugins/realbig-media/*
-/wp-content/plugins/wpsite-background-takeover*/js/wpsite_clickable.js$script
 /wp-json/adhelper/*
 /www/imgget/*$script
 /xhr_ab_block
@@ -12612,6 +12612,8 @@ igdz1.ru^$script,domain=igdz.ru
 ||prk.city/foto/bnr/
 ||pro.berdyansk.biz/img/pic/$image
 ||pro100news.info/wp-content/uploads/$object
+||proagro.com.ua/wp-content/uploads*/proagro_background$image
+||proagro.com.ua/wp-content/uploads/*1920h1080.$image
 ||procompsoft.ru/wp-content/cache/min/1/js/
 ||procvetok.com/static/*/brand
 ||prodota.ru/templates/betboom/
@@ -14878,7 +14880,6 @@ ruero.com#?#*:-abp-has(> a[href*="prostitutkixxx"])
 www.aviasales.by,www.aviasales.kg,www.aviasales.kz,www.aviasales.md,www.aviasales.ru,www.aviasales.ua,www.aviasales.uz##.--advert
 cq.ru##.--ligastavok
 knigavuhe.org##.-adfb
-dtf.ru,vc.ru##.ALMGcspq
 ua-ix.biz##.Advertising
 meduza.io##.App-bannerBottom
 meduza.io##.App-bannerTop
@@ -15414,7 +15415,6 @@ slovodel.com##.ban__wrapper
 animemobi.ru##.ban_center_screenlist
 irtafax.com.ua##.ban_h
 russiancfg.ru##.ban_rek_a
-proagro.com.ua##.ban_subhead
 libertycity.net,libertycity.ru##.banad
 get-tune.net##.banan_block
 syzran-small.ru,xn----7sbabwosghnf8al4lkj7b.xn--p1ai##.bancode
@@ -15594,7 +15594,6 @@ officelife.media##.betera-widget
 myfootball.top##.bets
 1927.kiev.ua##.bets-block
 ska.ru##.betting
-proagro.com.ua##.bg-banner
 mmotop.ru##.bg-general
 agronom.top##.bg-gray
 myfin.by##.bg-light-blue
@@ -16442,6 +16441,7 @@ volga.news##.g-banner
 ysia.ru##.g-dyn
 nagadala.com##.g-single
 autogeek.com.ua,bitfin.info##.g1-injected-unit
+dtf.ru,vc.ru##.gBXJEmyp
 bankiros.ru##.g_ban_bot
 u24.ua##.gab-ins
 kaifolog.ru##.gads
@@ -21333,7 +21333,6 @@ ozon.ru##header + [data-replace-layout-path] > div[class]:not([data-widget]):fir
 agronomy.com.ua##header .size-75
 finecooking.ru##header > .container-fluid
 versii.if.ua##header > [id] > div > div ~ a[href]:not([href^="/"]):not([href^="https://versii.if.ua"])
-proagro.com.ua##header > a
 orenburg.media##header > a:not([href^="/"]):not([href*="://orenburg.media/"])
 www.onliner.by##header > a[href*="utm_"]
 prosound.ixbt.com##header > div[style^="background"]
@@ -24556,6 +24555,7 @@ zarulem.ws##td[style^="text-align:center;width:50%"]
 ||server.adeasy.ru^
 ||servidormensseger.hotbox.ru^
 ||setka.media^$third-party
+||setka.news^$third-party
 ||setlinks.ru^$third-party
 ||sevensteps.biz^$third-party
 ||sex-finger.com^$third-party
@@ -27395,10 +27395,6 @@ porus.ru,ruporus.biz,ruporus.cc,ruporus.com,ruporus.net,ruporus.top,ruporus.tv,r
 ! ---
 postimees.ee##.cookie-paywall-visible .cookie-paywall
 postimees.ee##.cookie-paywall-visible div > .article-body-content ~ .article-body-content:style(display: flex !important)
-! ---
-proagro.com.ua##.ban_head:style(display: block !important; background: none !important; pointer-events: none !important)
-proagro.com.ua##header > a[href="/"]:style(display: block !important)
-proagro.com.ua##main:style(margin-top: 0 !important)
 ! ---
 prikol.ru###container:style(top: auto !important)
 prikol.ru##html > body > *:style(pointer-events: auto !important)
