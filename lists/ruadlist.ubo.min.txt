@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 26 Mar 2025 18:35:28 +0000
-! Diff-Path: ../patches/2025.3.26.1115.patch#ruadlist
+! Last modified: Wed, 26 Mar 2025 23:24:26 +0000
+! Diff-Path: ../patches/2025.3.26.1404.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -6026,6 +6026,7 @@
 ||tikstok.fun^$third-party
 ||tilafast.com^$third-party
 ||tilili007.ru^
+||timing-js-menu.xyz^$third-party
 ||timonom.com^
 ||tin-ton.info^$third-party
 ||tinj.ru^$third-party
@@ -20590,7 +20591,7 @@ rau.ua,zn.ua##div[class^="advertising"]
 dfm.ru,hitfm.ru,maximum.ru,montecarlo.ru,rusradio.ru##div[class^="advertising-"][class*="-popup-overlay"]
 multoigri.ru##div[class^="advertising-content-"]
 epravda.com.ua,pravda.com.ua##div[class^="advtext_"]
-all-episodesfun.com##div[class^="advtss"]
+all-episodesfun.org##div[class^="advtss"]
 ekaraganda.kz##div[class^="aks-"]
 gamer.ru##div[class^="alarmalarm-banner"]
 shotam.info##div[class^="angwp_"]
@@ -26353,8 +26354,8 @@ alexfilm.org##main > .container:style(margin-top: 50px !important)
 ! ---
 alexua.tv##.static_content:style(min-height: 0 !important)
 ! ---
-all-episodesfun.com##body > .wrapper:style(margin-top: 0 !important; max-width: unset !important)
-all-episodesfun.com##body:style(background-image: none !important)
+all-episodesfun.org##body > .wrapper:style(margin-top: 0 !important; max-width: unset !important)
+all-episodesfun.org##body:style(background-image: none !important)
 ! ---
 allapteki.ru###alia_modal
 allapteki.ru###vita_modal
