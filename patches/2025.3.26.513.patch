@@ -1,8 +1,8 @@
-diff name:ruadlist lines:62 checksum:c64b91d5c9
+diff name:ruadlist lines:71 checksum:b7620ea51f
 d4 2
 a5 2
-! Last modified: Thu, 27 Mar 2025 14:29:01 +0000
-! Diff-Path: ../patches/2025.3.27.869.patch#ruadlist
+! Last modified: Thu, 27 Mar 2025 19:20:54 +0000
+! Diff-Path: ../patches/2025.3.27.1160.patch#ruadlist
 a6028 1
 ||timing-js-menu.xyz^$third-party
 a8170 1
@@ -17,6 +17,9 @@ a12613 2
 a14289 1
 iguides.ru###newsTape > .row > .col > h2
 d14880 1
+a14953 1
+mp3party.net##.a_wrapper
+d15116 1
 d15416 1
 d15430 1
 a15430 1
@@ -45,6 +48,8 @@ a19295 1
 d19302 1
 a19302 1
 024.by,1777.ru,1istochnik.ru,7days.ru,actualnews.org,allboxing.ru,amurmedia.ru,argumenti.ru,atas.info,auto.ru,autosaratov.ru,autosport.com.ru,av.by,baby.ru,bel.ru,belkagomel.by,bidbaits.ru,carsweek.ru,chitamedia.su,chukotkamedia.ru,cnews.ru,cq.ru,ctc.ru,deita.ru,domclick.ru,eaomedia.ru,eva.ru,finam.ru,fishki.net,fontanka.ru,food.ru,friday.ru,gooool365.org,interface31.ru,intermedia.ru,irkutskmedia.ru,iz.ru,izhlife.ru,kaifolog.net,kamchatkamedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,lipetskmedia.ru,magadanmedia.ru,mel.fm,mk.ru,nakhodka.media,nashe.ru,neva.today,new-magazine.ru,noob-club.ru,nsn.fm,om1.ru,osnmedia.ru,peopletalk.ru,politnavigator.net,politrussia.com,povarenok.ru,priamurmedia.ru,primamedia.ru,prufy.ru,radio1.ru,radiojazzfm.ru,radioultra.ru,readovka.news,realt.by,riamo.ru,rockfm.ru,rozetked.me,russian.rt.com,rusvesna.su,sakhalinmedia.ru,sevastopolmedia.ru,sm.news,smolensk-i.ru,smotrim.ru,sovets.net,sovets24.ru,sravni.ru,starhit.ru,stavropol.media,study.ru,svpressa.ru,takiedela.ru,teleport2001.ru,topnews.ru,tsargrad.tv,tv2.today,tverigrad.ru,ukraina.ru,ulanmedia.ru,ussurmedia.ru,uznayvse.ru,vm.ru,vsezdorovo.com,womanhit.ru,www.kolesa.ru,yakutiamedia.ru,ytronews.ru,zaycev.net##a[href*="//zen.yandex.ru/"]
+a20589 1
+mp3party.net##div[class^="advf-"]
 d20591 1
 a20591 1
 all-episodesfun.org##div[class^="advtss"]
@@ -60,4 +65,8 @@ d26354 2
 a26355 2
 all-episodesfun.org##body > .wrapper:style(margin-top: 0 !important; max-width: unset !important)
 all-episodesfun.org##body:style(background-image: none !important)
-d27396 4
+d27397 4
+a28332 1
+mp3party.net##+js(href-sanitizer, a[href], ?url)
+a28520 1
+mp3party.net##+js(set-cookie, yandexFull, 1)

@@ -1,8 +1,8 @@
-diff name:ruadlist lines:46 checksum:c64b91d5c9
+diff name:ruadlist lines:55 checksum:b7620ea51f
 d4 2
 a5 2
-! Last modified: Thu, 27 Mar 2025 14:29:01 +0000
-! Diff-Path: ../patches/2025.3.27.869.patch#ruadlist
+! Last modified: Thu, 27 Mar 2025 19:20:54 +0000
+! Diff-Path: ../patches/2025.3.27.1160.patch#ruadlist
 a6028 1
 ||timing-js-menu.xyz^$third-party
 a8170 1
@@ -15,6 +15,9 @@ a12614 2
 a14290 1
 iguides.ru###newsTape > .row > .col > h2
 d14881 1
+a14954 1
+mp3party.net##.a_wrapper
+d15117 1
 d15417 1
 d15431 1
 a15431 1
@@ -29,6 +32,8 @@ d16646 1
 d17168 1
 a19152 1
 iguides.ru##[itemtype="http://schema.org/Article"] > .i-v-list-hr + .row > div[class^='col-']:first-child
+a20591 1
+mp3party.net##div[class^="advf-"]
 d20593 1
 a20593 1
 all-episodesfun.org##div[class^="advtss"]
@@ -44,4 +49,8 @@ d26356 2
 a26357 2
 all-episodesfun.org##body > .wrapper:style(margin-top: 0 !important; max-width: unset !important)
 all-episodesfun.org##body:style(background-image: none !important)
-d27398 4
+d27399 4
+a28334 1
+mp3party.net##+js(href-sanitizer, a[href], ?url)
+a28522 1
+mp3party.net##+js(set-cookie, yandexFull, 1)

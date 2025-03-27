@@ -1,8 +1,8 @@
-diff name:ruadlist lines:72 checksum:c64b91d5c9
+diff name:ruadlist lines:81 checksum:b7620ea51f
 d4 2
 a5 2
-! Last modified: Thu, 27 Mar 2025 14:29:01 +0000
-! Diff-Path: ../patches/2025.3.27.869.patch#ruadlist
+! Last modified: Thu, 27 Mar 2025 19:20:54 +0000
+! Diff-Path: ../patches/2025.3.27.1160.patch#ruadlist
 a6028 1
 ||timing-js-menu.xyz^$third-party
 a8170 1
@@ -21,6 +21,9 @@ a14902 1
 myshows.me#?#.HomeSection--separator:-abp-has(> .Container > [class*="Promo"])
 a14905 1
 myshows.me##.LayoutWrapper__promo
+a14951 1
+mp3party.net##.a_wrapper
+d15114 1
 d15414 1
 d15428 1
 a15428 1
@@ -52,6 +55,8 @@ a19300 1
 d20539 1
 a20539 1
 hentailib.me,hentailib.org,mangalib.me,ranobelib.me,slashlib.me,yaoilib.net##div[class][style="margin-top: 20px; margin-bottom: 20px;"]
+a20587 1
+mp3party.net##div[class^="advf-"]
 d20589 1
 a20589 1
 all-episodesfun.org##div[class^="advtss"]
@@ -70,4 +75,8 @@ all-episodesfun.org##body:style(background-image: none !important)
 d26887 1
 a26887 1
 hentailib.me,hentailib.org,slashlib.me,yaoilib.net##img[src*="/uploads/"]:style(filter: none !important)
-d27394 4
+d27395 4
+a28330 1
+mp3party.net##+js(href-sanitizer, a[href], ?url)
+a28518 1
+mp3party.net##+js(set-cookie, yandexFull, 1)
