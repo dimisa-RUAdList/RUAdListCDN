@@ -1,8 +1,8 @@
-diff name:ruadlist lines:43 checksum:b7620ea51f
+diff name:ruadlist lines:43 checksum:93bb312775
 d4 2
 a5 2
-! Last modified: Thu, 27 Mar 2025 19:20:54 +0000
-! Diff-Path: ../patches/2025.3.27.1160.patch#ruadlist
+! Last modified: Fri, 28 Mar 2025 01:58:42 +0000
+! Diff-Path: ../patches/2025.3.28.118.patch#ruadlist
 a6028 1
 ||timing-js-menu.xyz^$third-party
 d10052 1
@@ -38,7 +38,7 @@ d26356 2
 a26357 2
 all-episodesfun.org##body > .wrapper:style(margin-top: 0 !important; max-width: unset !important)
 all-episodesfun.org##body:style(background-image: none !important)
-a28330 1
-mp3party.net##+js(href-sanitizer, a[href], ?url)
+a28318 1
+mp3party.net##+js(href-sanitizer, [href*="?url=https"], ?url)
 a28518 1
 mp3party.net##+js(set-cookie, yandexFull, 1)

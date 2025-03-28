@@ -1,8 +1,8 @@
-diff name:ruadlist lines:31 checksum:b7620ea51f
+diff name:ruadlist lines:31 checksum:93bb312775
 d4 2
 a5 2
-! Last modified: Thu, 27 Mar 2025 19:20:54 +0000
-! Diff-Path: ../patches/2025.3.27.1160.patch#ruadlist
+! Last modified: Fri, 28 Mar 2025 01:58:42 +0000
+! Diff-Path: ../patches/2025.3.28.118.patch#ruadlist
 d10053 1
 a14293 1
 iguides.ru###newsTape > .row > .col > h2
@@ -26,7 +26,7 @@ a20592 1
 mp3party.net##div[class^="advf-"]
 a21676 1
 iguides.ru##section[class*="-right "] > .listing-mini
-a28331 1
-mp3party.net##+js(href-sanitizer, a[href], ?url)
+a28319 1
+mp3party.net##+js(href-sanitizer, [href*="?url=https"], ?url)
 a28519 1
 mp3party.net##+js(set-cookie, yandexFull, 1)

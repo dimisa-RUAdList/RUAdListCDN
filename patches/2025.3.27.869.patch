@@ -1,14 +1,14 @@
-diff name:ruadlist lines:13 checksum:b7620ea51f
+diff name:ruadlist lines:13 checksum:93bb312775
 d4 2
 a5 2
-! Last modified: Thu, 27 Mar 2025 19:20:54 +0000
-! Diff-Path: ../patches/2025.3.27.1160.patch#ruadlist
+! Last modified: Fri, 28 Mar 2025 01:58:42 +0000
+! Diff-Path: ../patches/2025.3.28.118.patch#ruadlist
 a14956 1
 mp3party.net##.a_wrapper
 d15119 1
 a20591 1
 mp3party.net##div[class^="advf-"]
-a28331 1
-mp3party.net##+js(href-sanitizer, a[href], ?url)
+a28319 1
+mp3party.net##+js(href-sanitizer, [href*="?url=https"], ?url)
 a28519 1
 mp3party.net##+js(set-cookie, yandexFull, 1)
