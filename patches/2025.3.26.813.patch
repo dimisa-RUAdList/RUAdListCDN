@@ -1,13 +1,15 @@
-diff name:ruadlist lines:55 checksum:0ba4539cb8
+diff name:ruadlist lines:69 checksum:0be244638c
 d4 2
 a5 2
-! Last modified: Fri, 28 Mar 2025 10:29:58 +0000
-! Diff-Path: ../patches/2025.3.28.629.patch#ruadlist
+! Last modified: Fri, 28 Mar 2025 15:27:50 +0000
+! Diff-Path: ../patches/2025.3.28.927.patch#ruadlist
 a6028 1
 ||timing-js-menu.xyz^$third-party
 a8170 1
 /wp-content/plugins/*-background*/js/wpsite_clickable.js$script
 d8178 1
+a10037 1
+championat.com##.cookie-popup
 d10052 1
 a12614 2
 ||proagro.com.ua/wp-content/uploads*/proagro_background$image
@@ -32,6 +34,9 @@ d16646 1
 d17168 1
 a19152 1
 iguides.ru##[itemtype="http://schema.org/Article"] > .i-v-list-hr + .row > div[class^='col-']:first-child
+d20543 1
+a20543 1
+hentailib.me,hentailib.org,mangalib.me,mangalib.org,ranobelib.me,slashlib.me,yaoilib.net##div[class][style="margin-top: 20px; margin-bottom: 20px;"]
 a20591 1
 mp3party.net##div[class^="advf-"]
 d20593 1
@@ -45,6 +50,13 @@ a21942 1
 ||pikabu.ru/ajax/*?rxy6w=$xmlhttprequest
 a24558 1
 ||setka.news^$third-party
+d25090 1
+d26158 1
+d26210 1
+a26210 1
+kurs.com.ua,ontvtime.ru,ritsatv.ru,skidkaonline.ru,ternopillive.com##body > div[style*="background-color:"][style*="z-index:"]
+d26212 1
+d26241 1
 d26356 2
 a26357 2
 all-episodesfun.org##body > .wrapper:style(margin-top: 0 !important; max-width: unset !important)
@@ -54,3 +66,5 @@ a28186 1
 mp3party.net##+js(abort-on-property-read, Turbolinks)
 a28322 1
 mp3party.net##+js(href-sanitizer, [href*="?url=https"], ?url)
+a28426 1
+ritsatv.ru##+js(remove-node-text, script, /ADBLOCK|checkAdBlocker/)

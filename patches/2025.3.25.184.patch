@@ -1,13 +1,15 @@
-diff name:ruadlist lines:80 checksum:0ba4539cb8
+diff name:ruadlist lines:91 checksum:0be244638c
 d4 2
 a5 2
-! Last modified: Fri, 28 Mar 2025 10:29:58 +0000
-! Diff-Path: ../patches/2025.3.28.629.patch#ruadlist
+! Last modified: Fri, 28 Mar 2025 15:27:50 +0000
+! Diff-Path: ../patches/2025.3.28.927.patch#ruadlist
 a6028 1
 ||timing-js-menu.xyz^$third-party
 a8170 1
 /wp-content/plugins/*-background*/js/wpsite_clickable.js$script
 d8178 1
+a10037 1
+championat.com##.cookie-popup
 d10052 1
 a12214 1
 ||multi-admin.ru/media_banner/$domain=radio1.ru
@@ -53,7 +55,7 @@ a19302 1
 024.by,1777.ru,1istochnik.ru,7days.ru,actualnews.org,allboxing.ru,amurmedia.ru,argumenti.ru,atas.info,auto.ru,autosaratov.ru,autosport.com.ru,av.by,baby.ru,bel.ru,belkagomel.by,bidbaits.ru,carsweek.ru,chitamedia.su,chukotkamedia.ru,cnews.ru,cq.ru,ctc.ru,deita.ru,domclick.ru,eaomedia.ru,eva.ru,finam.ru,fishki.net,fontanka.ru,food.ru,friday.ru,gooool365.org,interface31.ru,intermedia.ru,irkutskmedia.ru,iz.ru,izhlife.ru,kaifolog.net,kamchatkamedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,lipetskmedia.ru,magadanmedia.ru,mel.fm,mk.ru,nakhodka.media,nashe.ru,neva.today,new-magazine.ru,noob-club.ru,nsn.fm,om1.ru,osnmedia.ru,peopletalk.ru,politnavigator.net,politrussia.com,povarenok.ru,priamurmedia.ru,primamedia.ru,prufy.ru,radio1.ru,radiojazzfm.ru,radioultra.ru,readovka.news,realt.by,riamo.ru,rockfm.ru,rozetked.me,russian.rt.com,rusvesna.su,sakhalinmedia.ru,sevastopolmedia.ru,sm.news,smolensk-i.ru,smotrim.ru,sovets.net,sovets24.ru,sravni.ru,starhit.ru,stavropol.media,study.ru,svpressa.ru,takiedela.ru,teleport2001.ru,topnews.ru,tsargrad.tv,tv2.today,tverigrad.ru,ukraina.ru,ulanmedia.ru,ussurmedia.ru,uznayvse.ru,vm.ru,vsezdorovo.com,womanhit.ru,www.kolesa.ru,yakutiamedia.ru,ytronews.ru,zaycev.net##a[href*="//zen.yandex.ru/"]
 d20541 1
 a20541 1
-hentailib.me,hentailib.org,mangalib.me,ranobelib.me,slashlib.me,yaoilib.net##div[class][style="margin-top: 20px; margin-bottom: 20px;"]
+hentailib.me,hentailib.org,mangalib.me,mangalib.org,ranobelib.me,slashlib.me,yaoilib.net##div[class][style="margin-top: 20px; margin-bottom: 20px;"]
 a20589 1
 mp3party.net##div[class^="advf-"]
 d20591 1
@@ -67,6 +69,13 @@ a21940 1
 ||pikabu.ru/ajax/*?rxy6w=$xmlhttprequest
 a24556 1
 ||setka.news^$third-party
+d25088 1
+d26156 1
+d26208 1
+a26208 1
+kurs.com.ua,ontvtime.ru,ritsatv.ru,skidkaonline.ru,ternopillive.com##body > div[style*="background-color:"][style*="z-index:"]
+d26210 1
+d26239 1
 d26354 2
 a26355 2
 all-episodesfun.org##body > .wrapper:style(margin-top: 0 !important; max-width: unset !important)
@@ -79,3 +88,5 @@ a28184 1
 mp3party.net##+js(abort-on-property-read, Turbolinks)
 a28320 1
 mp3party.net##+js(href-sanitizer, [href*="?url=https"], ?url)
+a28424 1
+ritsatv.ru##+js(remove-node-text, script, /ADBLOCK|checkAdBlocker/)
