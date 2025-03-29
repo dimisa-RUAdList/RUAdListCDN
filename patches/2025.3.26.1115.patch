@@ -1,13 +1,15 @@
-diff name:ruadlist lines:56 checksum:3f31ec4614
+diff name:ruadlist lines:75 checksum:378d2539f1
 d4 2
 a5 2
-! Last modified: Sat, 29 Mar 2025 16:31:05 +0000
-! Diff-Path: ../patches/2025.3.29.991.patch#ruadlist
+! Last modified: Sat, 29 Mar 2025 21:22:36 +0000
+! Diff-Path: ../patches/2025.3.29.1282.patch#ruadlist
 a6028 1
 ||timing-js-menu.xyz^$third-party
 a10037 1
 championat.com##.cookie-popup
 d10052 1
+a14242 1
+banki24.by###menu a[href^="https://insnc.onelink.me/"]
 a14292 1
 iguides.ru###newsTape > .row > .col > h2
 a14955 1
@@ -23,6 +25,9 @@ a16081 1
 dtf.ru,vc.ru##.content-list > div[style^="--"]
 d16444 1
 d17168 1
+d18379 1
+a18379 1
+1fnl.ru,1tulatv.ru,afanasy.biz,bookslist.me,bragazeta.ru,dengi.ua,dnepr24.com.ua,football.ua,fullsite.org,gazeta.zp.ua,job.ru,km.ru,konkurent.ua,kr24.com.ua,litrpg.ru,livejournal.ru,nikolaev24.com.ua,novosti-n.org,odessa.net.ua,prm.ru,riamo.ru,rusnext.ru,russia.ru,rusvesna.su,samara24.ru,smilekaluga.ru,study.ru,ucheba.ru,ura-inform.com,v-variant.com.ua,wildo.ru##.top-banner
 a19152 1
 iguides.ru##[itemtype="http://schema.org/Article"] > .i-v-list-hr + .row > div[class^='col-']:first-child
 d20543 1
@@ -33,18 +38,30 @@ mp3party.net##div[class^="advf-"]
 d20593 1
 a20593 1
 all-episodesfun.org##div[class^="advtss"]
+d20598 1
+a20735 1
+78.ru##div[class^="partner-news_container_"]
+d20780 1
+d21078 1
+a21132 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div[id^="ututusi"]
 a21675 1
 iguides.ru##section[class*="-right "] > .listing-mini
 d21941 1
 a21941 1
 ||pikabu.ru/ajax/*?rxy6w=$xmlhttprequest
 d25090 1
+a25225 1
+banki24.by#@#.banner300
 d26158 1
 d26210 1
 a26210 1
 kurs.com.ua,ontvtime.ru,ritsatv.ru,skidkaonline.ru,ternopillive.com##body > div[style*="background-color:"][style*="z-index:"]
 d26212 1
 d26241 1
+a26316 2
+78.ru##div[class^="sidebar_container_"]:style(height: auto !important)
+! ---
 d26356 2
 a26357 2
 all-episodesfun.org##body > .wrapper:style(margin-top: 0 !important; max-width: unset !important)
@@ -53,5 +70,7 @@ a28182 1
 mp3party.net##+js(abort-on-property-read, Turbolinks)
 a28318 1
 mp3party.net##+js(href-sanitizer, [href*="?url=https"], ?url)
-a28422 1
+a28422 2
 ritsatv.ru##+js(remove-node-text, script, /ADBLOCK|checkAdBlocker/)
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /checkCookie|s_script|tick/)
+d28424 1

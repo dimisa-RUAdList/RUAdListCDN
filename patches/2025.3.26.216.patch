@@ -1,8 +1,8 @@
-diff name:ruadlist lines:87 checksum:3f31ec4614
+diff name:ruadlist lines:106 checksum:378d2539f1
 d4 2
 a5 2
-! Last modified: Sat, 29 Mar 2025 16:31:05 +0000
-! Diff-Path: ../patches/2025.3.29.991.patch#ruadlist
+! Last modified: Sat, 29 Mar 2025 21:22:36 +0000
+! Diff-Path: ../patches/2025.3.29.1282.patch#ruadlist
 a6028 1
 ||timing-js-menu.xyz^$third-party
 a8170 1
@@ -16,6 +16,8 @@ a12214 1
 a12613 2
 ||proagro.com.ua/wp-content/uploads*/proagro_background$image
 ||proagro.com.ua/wp-content/uploads/*1920h1080.$image
+a14239 1
+banki24.by###menu a[href^="https://insnc.onelink.me/"]
 a14289 1
 iguides.ru###newsTape > .row > .col > h2
 d14880 1
@@ -36,6 +38,9 @@ d16934 1
 a16935 1
 cq.ru##.m[class*="--"]
 d17167 1
+d18378 1
+a18378 1
+1fnl.ru,1tulatv.ru,afanasy.biz,bookslist.me,bragazeta.ru,dengi.ua,dnepr24.com.ua,football.ua,fullsite.org,gazeta.zp.ua,job.ru,km.ru,konkurent.ua,kr24.com.ua,litrpg.ru,livejournal.ru,nikolaev24.com.ua,novosti-n.org,odessa.net.ua,prm.ru,riamo.ru,rusnext.ru,russia.ru,rusvesna.su,samara24.ru,smilekaluga.ru,study.ru,ucheba.ru,ura-inform.com,v-variant.com.ua,wildo.ru##.top-banner
 d19145 1
 a19145 1
 101.ru,19rus.info,2000.ua,5-tv.ru,56orb.ru,62info.ru,7info.ru,afanasy.biz,agitpro.su,allboxing.ru,anekdot.ru,argumenti.ru,baltnews.ee,belive.ru,bigpicture.ru,bombardir.ru,chehov-vid.ru,daily-inform.ru,dni.ru,dnpmag.com,do-slez.com,eadaily.com,eg.ru,expert.ru,ferra.ru,gazeta-tula.ru,glavnoe24.ru,gorobzor.ru,gorvesti.ru,govoritmoskva.ru,gubdaily.ru,hightech.plus,iarex.ru,inforeactor.ru,iz.ru,kirov-portal.ru,kriminal.net.ua,livelib.ru,m24.ru,melodrama1.com,mgorod.kz,mir24.tv,mk.ru,myhistori.ru,nashgorod.ru,nation-news.ru,nevnov.ru,newinform.com,news-front.info,news.ru,nn.ru,ntv.ru,osnmedia.ru,penzainform.ru,penzavzglyad.ru,pikinform.ru,pnp.ru,polit.info,politexpert.net,politonline.ru,pora.ru,radidomapro.ru,radio1.ru,radioromantika.ru,ratel.kz,ren.tv,ria56.ru,riafan.ru,rueconomics.ru,rusplt.ru,russian.rt.com,rusvesna.su,sevkavportal.ru,sharknews.ru,sm.news,sminews.ru,sobesednik.ru,steaklovers.menu,sun-news.ru,topwar.ru,trendymen.ru,tsargrad.tv,tsn24.ru,tvernews.ru,ua.today,uralpress.ru,usa.one,vedomosti.ru,versia.ru,veseloeradio.ru,vesti-yamal.ru,vesti.ru,vesti.uz,vestivrn.ru,vokrugsveta.ru,xn--b1ats.xn--80asehdb,zakon.kz,zr.ru##[id^="unit_"]
@@ -57,6 +62,13 @@ mp3party.net##div[class^="advf-"]
 d20591 1
 a20591 1
 all-episodesfun.org##div[class^="advtss"]
+d20596 1
+a20733 1
+78.ru##div[class^="partner-news_container_"]
+d20778 1
+d21076 1
+a21130 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div[id^="ututusi"]
 d21334 1
 a21674 1
 iguides.ru##section[class*="-right "] > .listing-mini
@@ -66,12 +78,17 @@ a21940 1
 a24556 1
 ||setka.news^$third-party
 d25088 1
+a25223 1
+banki24.by#@#.banner300
 d26156 1
 d26208 1
 a26208 1
 kurs.com.ua,ontvtime.ru,ritsatv.ru,skidkaonline.ru,ternopillive.com##body > div[style*="background-color:"][style*="z-index:"]
 d26210 1
 d26239 1
+a26314 2
+78.ru##div[class^="sidebar_container_"]:style(height: auto !important)
+! ---
 d26354 2
 a26355 2
 all-episodesfun.org##body > .wrapper:style(margin-top: 0 !important; max-width: unset !important)
@@ -84,5 +101,7 @@ a28184 1
 mp3party.net##+js(abort-on-property-read, Turbolinks)
 a28320 1
 mp3party.net##+js(href-sanitizer, [href*="?url=https"], ?url)
-a28424 1
+a28424 2
 ritsatv.ru##+js(remove-node-text, script, /ADBLOCK|checkAdBlocker/)
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /checkCookie|s_script|tick/)
+d28426 1

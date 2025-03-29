@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 29 Mar 2025 16:31:05 +0000
-! Diff-Path: ../patches/2025.3.29.991.patch#ruadlist
+! Last modified: Sat, 29 Mar 2025 21:22:36 +0000
+! Diff-Path: ../patches/2025.3.29.1282.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -14241,6 +14241,7 @@ dou.ua###max-header-adv-id
 mega-tracker.net###mb_top_space
 colorforum.ru###mbanners
 coap.kz###mc_baner
+banki24.by###menu a[href^="https://insnc.onelink.me/"]
 softodrom.ru###menu p[align="center"] > b
 streamzone.org###menuLeft
 bash.im###menubar > div[style^="float:"]
@@ -18377,7 +18378,7 @@ iz.ru##.top-advertising
 house.kg,mashina.kg##.top-after-banner
 soel.ru##.top-b-place > .container > .b-place
 india-tv.net##.top-b.row
-1fnl.ru,1tulatv.ru,78.ru,afanasy.biz,bookslist.me,bragazeta.ru,dengi.ua,dnepr24.com.ua,football.ua,fullsite.org,gazeta.zp.ua,job.ru,km.ru,konkurent.ua,kr24.com.ua,litrpg.ru,livejournal.ru,nikolaev24.com.ua,novosti-n.org,odessa.net.ua,prm.ru,riamo.ru,rusnext.ru,russia.ru,rusvesna.su,samara24.ru,smilekaluga.ru,study.ru,ucheba.ru,ura-inform.com,v-variant.com.ua,wildo.ru##.top-banner
+1fnl.ru,1tulatv.ru,afanasy.biz,bookslist.me,bragazeta.ru,dengi.ua,dnepr24.com.ua,football.ua,fullsite.org,gazeta.zp.ua,job.ru,km.ru,konkurent.ua,kr24.com.ua,litrpg.ru,livejournal.ru,nikolaev24.com.ua,novosti-n.org,odessa.net.ua,prm.ru,riamo.ru,rusnext.ru,russia.ru,rusvesna.su,samara24.ru,smilekaluga.ru,study.ru,ucheba.ru,ura-inform.com,v-variant.com.ua,wildo.ru##.top-banner
 foto.ua##.top-banner-container
 pronovostroy.ru##.top-banner-slider
 kazan.32top.ru##.top-banner__container
@@ -20598,7 +20599,6 @@ ekaraganda.kz##div[class^="aks-"]
 gamer.ru##div[class^="alarmalarm-banner"]
 shotam.info##div[class^="angwp_"]
 mesjachnye.com##div[class^="article-mvideo"] > div[style^="background:"]
-78.ru##div[class^="article-partners"]
 sravni.ru##div[class^="article_spec-wrapper_"]
 cybersport.ru#?#div[class^="asideWidgets_"] > .rounded-block:-abp-has(> [href*="bookmakers"])
 gdekluet.ru##div[class^="b-app-promoter"]
@@ -20736,6 +20736,7 @@ miasskiy.ru##div[class^="papex"]
 smolensk-i.ru##div[class^="parthner"]
 cyberscore.live##div[class^="partner-"]
 tonkosti.ru##div[class^="partner-link"]
+78.ru##div[class^="partner-news_container_"]
 chytomo.com,dev.ua,devby.io,padaread.com##div[class^="partners"]
 syzran-small.ru,xn----7sbabwosghnf8al4lkj7b.xn--p1ai##div[class^="partnews"]
 1plus1.video##div[class^="playlist-player-branding-"]
@@ -20780,7 +20781,6 @@ hi-tech.ua##div[class^="single-video-reklama-"]
 shazoo.ru#?#div[class^="sm"]:-abp-has(> .vk-privacy-mode-banner)
 shazoo.ru#?#div[class^="sm"]:-abp-has(> div > [id^="yandex_rtb_"])
 smartmama.com.ua##div[class^="smart-"]
-78.ru##div[class^="smi24_informer"]
 sravni.ru##div[class^="special-offers-"]
 fastpic.org##div[class^="spinner"] ~ .d-flex
 shikimori.me,shikimori.one,shikimori.org##div[class^="spns"]
@@ -21078,7 +21078,6 @@ chto-proishodit.ru##div[id^="news_chto_"]
 melodramo.com##div[id^="news_melodramo_ru"]
 korabel.ru##div[id^="newsid_"] > .row0[style="margin-bottom:8px;"] ~ .row0[style="margin-bottom:8px;"]
 win7ka.ru##div[id^="newsteaser_"]
-game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div[id^="opapa"]
 myhistori.ru##div[id^="pad_bnr_"]
 mix.tj##div[id^="parimatch"]
 piccash.net##div[id^="pcash-block"]
@@ -21133,6 +21132,7 @@ changeworks.ru##div[id^="ttiz_"]
 sdelala-sama.ru,webdiana.ru##div[id^="turp_"]
 nnovosti.info##div[id^="tvfooter"]
 asna.ru##div[id^="ut-1"]
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div[id^="ututusi"]
 turkishtvsoapopera.ru##div[id^="vid_over_float"]
 football24.ua,zaxid.net##div[id^="videoAdvWrapper"]
 peopletalk.ru##div[id^="video_banners-"]
@@ -25226,6 +25226,7 @@ komus.ru#@#.b-adv
 irr.ru#@#.b-advert
 a-d-k.ru,airmediacenter.com#@#.b-banner
 kaluga-bestiphone.ru#@#.banner-adv
+banki24.by#@#.banner300
 griffe.ru#@#.banner_box
 biglife.kg#@#.card-ad
 pokrov-monastir.ru#@#.container--ads
@@ -26313,6 +26314,8 @@ tornado.3dn.ru##.wraps:style(margin-top: 0 !important)
 ! ---
 4studio.com.ua###wrapper > #header:style(position: relative !important)
 4studio.com.ua###wrapper:style(padding-top: 0 !important)
+! ---
+78.ru##div[class^="sidebar_container_"]:style(height: auto !important)
 ! ---
 7days.ru##body:style(margin-top: 0 !important)
 ! ---
@@ -28423,8 +28426,8 @@ online-fix.me##+js(remove-node-text, #text, РЕКЛАМНЫЙ БЛОК:)
 farposst.ru##+js(remove-node-text, #text, Реклама)
 filmitorrent.net,utorr.cc##+js(remove-node-text, #text, Реклама:)
 ritsatv.ru##+js(remove-node-text, script, /ADBLOCK|checkAdBlocker/)
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /checkCookie|s_script|tick/)
 inforesist.org##+js(remove-node-text, script, /gtag\('event'/)
-game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /s_script|tick/)
 sports.ru##+js(remove-node-text, script, AdBlocker)
 pikabu.ru##+js(remove-node-text, script, addPlaceholder)
 agronews.ua,agroreview.com##+js(remove-node-text, script, clickedOnContent)
