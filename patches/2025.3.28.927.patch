@@ -1,16 +1,22 @@
-diff name:ruadlist lines:38 checksum:b76b86e300
+diff name:ruadlist lines:67 checksum:bd8dda52e5
 d4 2
 a5 2
-! Last modified: Sun, 30 Mar 2025 12:47:29 +0000
-! Diff-Path: ../patches/2025.3.30.767.patch#ruadlist
+! Last modified: Sun, 30 Mar 2025 17:23:59 +0000
+! Diff-Path: ../patches/2025.3.30.1043.patch#ruadlist
 a439 1
 ||alloviewroll.com^$third-party
 a2310 1
 ||getnodejs.com^$third-party
 a8010 1
 /load-xml/?id=*&roll=$third-party,xmlhttprequest
+a10547 1
+/assets/dist/advertisement.*.js$domain=ficbook.net
+d10966 1
 a14243 1
 banki24.by###menu a[href^="https://insnc.onelink.me/"]
+d15907 1
+a15907 1
+rudub.vip##.card__description__adv
 a16647 1
 iguides.ru##.i-box-ads
 a17898 1
@@ -18,6 +24,10 @@ gorvesti.ru##.section-r
 d18379 1
 a18379 1
 1fnl.ru,1tulatv.ru,afanasy.biz,bookslist.me,bragazeta.ru,dengi.ua,dnepr24.com.ua,football.ua,fullsite.org,gazeta.zp.ua,job.ru,km.ru,konkurent.ua,kr24.com.ua,litrpg.ru,livejournal.ru,nikolaev24.com.ua,novosti-n.org,odessa.net.ua,prm.ru,riamo.ru,rusnext.ru,russia.ru,rusvesna.su,samara24.ru,smilekaluga.ru,study.ru,ucheba.ru,ura-inform.com,v-variant.com.ua,wildo.ru##.top-banner
+d18961 1
+d19289 1
+a19289 1
+ru-dub.xyz,rudub.vip##a[href*=".li"]
 d19571 1
 a19571 1
 gorvesti.ru##a[href*="smi2.net/"]
@@ -26,14 +36,33 @@ d20600 1
 a20737 1
 78.ru##div[class^="partner-news_container_"]
 d20782 1
+a21028 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div[id^="dimisa"]
 d21080 1
-a21134 1
-game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div[id^="ututusi"]
+d21655 1
+a21655 1
+ru-dub.xyz#?#p:-abp-has(> strong a[href*=".li"])
+a21931 1
+@@||dmp.mpsuadv.ru/promer$xmlhttprequest,domain=trychatgpt.ru
+a21932 2
+@@||mpsuadv.ru/event/$xmlhttprequest,domain=trychatgpt.ru
+@@||mpsuadv.ru/sbor$xmlhttprequest,domain=trychatgpt.ru
+a21969 1
+trychatgpt.ru##.\!min-h-72
 a25227 1
 banki24.by#@#.banner300
 a26315 2
 78.ru##div[class^="sidebar_container_"]:style(height: auto !important)
 ! ---
+d27480 2
+a27481 2
+rudub.vip##.details__bg
+rudub.vip##body > section[class*="section details"]:style(padding-top: 70px !important)
+a27677 2
+trychatgpt.ru##[class*="!container"] > span:style(min-height: unset !important)
+! ---
+a28368 1
+trychatgpt.ru##+js(no-fetch-if, /mpsuadv\.ru/)
 a28424 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /checkCookie|s_script|tick/)
 d28426 1

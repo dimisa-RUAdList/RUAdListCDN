@@ -1,17 +1,49 @@
-diff name:ruadlist lines:16 checksum:b76b86e300
+diff name:ruadlist lines:48 checksum:bd8dda52e5
 d4 2
 a5 2
-! Last modified: Sun, 30 Mar 2025 12:47:29 +0000
-! Diff-Path: ../patches/2025.3.30.767.patch#ruadlist
+! Last modified: Sun, 30 Mar 2025 17:23:59 +0000
+! Diff-Path: ../patches/2025.3.30.1043.patch#ruadlist
 a439 1
 ||alloviewroll.com^$third-party
 a2310 1
 ||getnodejs.com^$third-party
 a8010 1
 /load-xml/?id=*&roll=$third-party,xmlhttprequest
+a10547 1
+/assets/dist/advertisement.*.js$domain=ficbook.net
+d10966 1
+d15908 1
+a15908 1
+rudub.vip##.card__description__adv
 a17900 1
 gorvesti.ru##.section-r
+d18963 1
+d19291 1
+a19291 1
+ru-dub.xyz,rudub.vip##a[href*=".li"]
 d19573 1
 a19573 1
 gorvesti.ru##a[href*="smi2.net/"]
 d19796 1
+a21029 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div[id^="dimisa"]
+d21135 1
+d21656 1
+a21656 1
+ru-dub.xyz#?#p:-abp-has(> strong a[href*=".li"])
+a21932 1
+@@||dmp.mpsuadv.ru/promer$xmlhttprequest,domain=trychatgpt.ru
+a21933 2
+@@||mpsuadv.ru/event/$xmlhttprequest,domain=trychatgpt.ru
+@@||mpsuadv.ru/sbor$xmlhttprequest,domain=trychatgpt.ru
+a21970 1
+trychatgpt.ru##.\!min-h-72
+d27484 2
+a27485 2
+rudub.vip##.details__bg
+rudub.vip##body > section[class*="section details"]:style(padding-top: 70px !important)
+a27681 2
+trychatgpt.ru##[class*="!container"] > span:style(min-height: unset !important)
+! ---
+a28372 1
+trychatgpt.ru##+js(no-fetch-if, /mpsuadv\.ru/)

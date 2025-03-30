@@ -1,8 +1,8 @@
-diff name:ruadlist lines:63 checksum:b76b86e300
+diff name:ruadlist lines:92 checksum:bd8dda52e5
 d4 2
 a5 2
-! Last modified: Sun, 30 Mar 2025 12:47:29 +0000
-! Diff-Path: ../patches/2025.3.30.767.patch#ruadlist
+! Last modified: Sun, 30 Mar 2025 17:23:59 +0000
+! Diff-Path: ../patches/2025.3.30.1043.patch#ruadlist
 a439 1
 ||alloviewroll.com^$third-party
 a2310 1
@@ -11,11 +11,17 @@ a8010 1
 /load-xml/?id=*&roll=$third-party,xmlhttprequest
 a10038 1
 championat.com##.cookie-popup
+a10546 1
+/assets/dist/advertisement.*.js$domain=ficbook.net
+d10965 1
 a14242 1
 banki24.by###menu a[href^="https://insnc.onelink.me/"]
 a14956 1
 mp3party.net##.a_wrapper
 d15119 1
+d15906 1
+a15906 1
+rudub.vip##.card__description__adv
 a16646 1
 iguides.ru##.i-box-ads
 a17897 1
@@ -23,6 +29,10 @@ gorvesti.ru##.section-r
 d18378 1
 a18378 1
 1fnl.ru,1tulatv.ru,afanasy.biz,bookslist.me,bragazeta.ru,dengi.ua,dnepr24.com.ua,football.ua,fullsite.org,gazeta.zp.ua,job.ru,km.ru,konkurent.ua,kr24.com.ua,litrpg.ru,livejournal.ru,nikolaev24.com.ua,novosti-n.org,odessa.net.ua,prm.ru,riamo.ru,rusnext.ru,russia.ru,rusvesna.su,samara24.ru,smilekaluga.ru,study.ru,ucheba.ru,ura-inform.com,v-variant.com.ua,wildo.ru##.top-banner
+d18960 1
+d19288 1
+a19288 1
+ru-dub.xyz,rudub.vip##a[href*=".li"]
 d19570 1
 a19570 1
 gorvesti.ru##a[href*="smi2.net/"]
@@ -36,12 +46,22 @@ d20598 1
 a20735 1
 78.ru##div[class^="partner-news_container_"]
 d20780 1
+a21026 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div[id^="dimisa"]
 d21078 1
-a21132 1
-game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div[id^="ututusi"]
+d21653 1
+a21653 1
+ru-dub.xyz#?#p:-abp-has(> strong a[href*=".li"])
+a21929 1
+@@||dmp.mpsuadv.ru/promer$xmlhttprequest,domain=trychatgpt.ru
+a21930 2
+@@||mpsuadv.ru/event/$xmlhttprequest,domain=trychatgpt.ru
+@@||mpsuadv.ru/sbor$xmlhttprequest,domain=trychatgpt.ru
 d21942 1
 a21942 1
 ||pikabu.ru/ajax/*?rxy6w=$xmlhttprequest
+a21967 1
+trychatgpt.ru##.\!min-h-72
 d25091 1
 a25226 1
 banki24.by#@#.banner300
@@ -54,10 +74,19 @@ d26242 1
 a26317 2
 78.ru##div[class^="sidebar_container_"]:style(height: auto !important)
 ! ---
+d27482 2
+a27483 2
+rudub.vip##.details__bg
+rudub.vip##body > section[class*="section details"]:style(padding-top: 70px !important)
+a27679 2
+trychatgpt.ru##[class*="!container"] > span:style(min-height: unset !important)
+! ---
 a28183 1
 mp3party.net##+js(abort-on-property-read, Turbolinks)
 a28319 1
 mp3party.net##+js(href-sanitizer, [href*="?url=https"], ?url)
+a28368 1
+trychatgpt.ru##+js(no-fetch-if, /mpsuadv\.ru/)
 a28423 2
 ritsatv.ru##+js(remove-node-text, script, /ADBLOCK|checkAdBlocker/)
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /checkCookie|s_script|tick/)
