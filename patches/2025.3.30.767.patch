@@ -1,21 +1,29 @@
-diff name:ruadlist lines:36 checksum:bd8dda52e5
+diff name:ruadlist lines:62 checksum:a9afd503da
 d4 2
 a5 2
-! Last modified: Sun, 30 Mar 2025 17:23:59 +0000
-! Diff-Path: ../patches/2025.3.30.1043.patch#ruadlist
+! Last modified: Sun, 30 Mar 2025 22:25:38 +0000
+! Diff-Path: ../patches/2025.3.30.1345.patch#ruadlist
 a10550 1
 /assets/dist/advertisement.*.js$domain=ficbook.net
 d10969 1
+a11531 1
+||freesoft.ru/sponsored/
 d15911 1
 a15911 1
 rudub.vip##.card__description__adv
+a18607 1
+securitylab.ru##.webinar-banner
 d18967 1
+a19196 1
+freesoft.ru##[src*="/sponsored/"]
 d19295 1
 a19295 1
 ru-dub.xyz,rudub.vip##a[href*=".li"]
 a21032 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div[id^="dimisa"]
 d21138 1
+d21286 1
+d21322 1
 d21659 1
 a21659 1
 ru-dub.xyz#?#p:-abp-has(> strong a[href*=".li"])
@@ -24,8 +32,19 @@ a21935 1
 a21936 2
 @@||mpsuadv.ru/event/$xmlhttprequest,domain=trychatgpt.ru
 @@||mpsuadv.ru/sbor$xmlhttprequest,domain=trychatgpt.ru
+d21964 2
+a21965 2
+flightsim.su###tie-popup-adblock {remove:true;}
+freesoft.ru###downloadAdModal {remove:true;}
+a21967 4
+the-geek.ru###wp-custom-css {remove:true;}
+vk.*##head > style:-abp-contains(/adchoice|mkit_|outlineBanner/i) {remove:true;}
+www.ixbt.com#?#body > style:-abp-contains(margin-top) {remove:true;}
+! селекторы
+d21972 2
 a21973 1
 trychatgpt.ru##.\!min-h-72
+d22011 1
 d27487 2
 a27488 2
 rudub.vip##.details__bg
@@ -33,5 +52,12 @@ rudub.vip##body > section[class*="section details"]:style(padding-top: 70px !imp
 a27684 2
 trychatgpt.ru##[class*="!container"] > span:style(min-height: unset !important)
 ! ---
+a28108 1
+freesoft.ru###downloadAdModal:remove()
+a28318 1
+rutube.ru##+js(addEventListener-defuser, visibilitychange, document.hidden)
+d28356 1
+a28356 1
+595.ucoz.net,5wip-file.ru,file-mods.ru,infourok.ru,mixmuz.ru,myshared.ru,myzcloud.me,n-torrents.org,sims3pack.ru,wallegend.net##+js(nano-setInterval-booster)
 a28375 1
 trychatgpt.ru##+js(no-fetch-if, /mpsuadv\.ru/)

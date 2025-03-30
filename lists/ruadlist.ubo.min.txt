@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 30 Mar 2025 17:23:59 +0000
-! Diff-Path: ../patches/2025.3.30.1043.patch#ruadlist
+! Last modified: Sun, 30 Mar 2025 22:25:38 +0000
+! Diff-Path: ../patches/2025.3.30.1345.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -11529,6 +11529,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||freehat.cc/upload/lap/
 ||freep2p.info/vast/
 ||freepiks.ru/*.php$script
+||freesoft.ru/sponsored/
 ||freetp.*/*nacked_tits_bot.
 ||freetp.*/1.js
 ||freetp.*/download-yb.
@@ -18605,6 +18606,7 @@ livecars.ru,livesport.ru##.wall
 wallscloud.net#?#.walls_data > .item:-abp-has(> .thumbnail script)
 pb.wtf,piratbit.fun,piratbit.org,piratbit.top#?#.war_item:-abp-has(> .war_img > a[href*="exaccess"])
 xmages.net##.we-are-featured
+securitylab.ru##.webinar-banner
 gotoshop.ua##.welcome2
 semestr.online,semestr.ru##.well-google
 portsoft.info##.wf_ads
@@ -19193,6 +19195,7 @@ allrefrs.ru##[src*="/imgr/"]
 gecid.com##[src*="/inc/getBanIf."]
 radio1.ru##[src*="/media_banner/"]
 arenda.az##[src*="/public/banner/"]
+freesoft.ru##[src*="/sponsored/"]
 pechera.info##[src*="/storage/banner_upload/"]
 promin.cv.ua##[src*="/uploads/banner"]
 kuban24.tv##[src*="/uploads/banners/"]
@@ -21282,7 +21285,6 @@ rasfokus.ru##div[style^="height:100px;"]
 lumpics.ru##div[style^="height:120px;display:block"]
 sinoptik.ua##div[style^="margin"][style$="width: 300px;"]
 vgae.ru##div[style^="margin"][style*="-10px;"]
-freesoft.ru##div[style^="margin-left:"] > a[href="#"]
 onlinetv.one##div[style^="margin: 20px 0;min-height:"]
 xn----7sbb0bildcbgm8a.xn--p1ai##div[style^="max-width:"][style*="200deg"]
 24tv.ua##div[style^="min-height: 250px;"][style*=" 50px"]
@@ -21318,7 +21320,6 @@ virus-stop.com.ua##footer > h4
 forum.cxem.net#?#form > article[id^="elComment_"]:-abp-has(strong > a[href$="-Adver/"])
 payeer-gift.ru##form > div[style^="width: 300px;"]
 yap.ru,yaplakal.com#?#form > table[id^="p_row_"]:nth-of-type(2):-abp-has(*:-abp-contains(Yap))
-freesoft.ru##form#redirect ~ div .row > div > .content_rb ~ div
 leonkrevs.ucoz.ru##form[action*="wmcasher.ru"]
 megaimg.ru##form[name="show_image"] > center
 day.kyiv.ua#?#h2:-abp-contains(/^новости партн|^новини партн/i)
@@ -21963,16 +21964,18 @@ howdyho.net,howdyho.pro#@#div[id^="yandex_rtb"]
 ||vk-apps.com/*?type=leadform&d=
 ||yandex.$domain=howdyho.net|howdyho.pro
 ||yastatic.$domain=howdyho.net|howdyho.pro
-vk.*##head > style:-abp-contains(/adchoice|mkit_|outlineBanner/i) {remove:true;}
-! селекторы
+flightsim.su###tie-popup-adblock {remove:true;}
+freesoft.ru###downloadAdModal {remove:true;}
 growhow.in.ua###custom-background-css {remove:true;}
 playground.ru###dfpPrerollDelay {remove:true;}
+the-geek.ru###wp-custom-css {remove:true;}
+vk.*##head > style:-abp-contains(/adchoice|mkit_|outlineBanner/i) {remove:true;}
+www.ixbt.com#?#body > style:-abp-contains(margin-top) {remove:true;}
+! селекторы
 vk.com,vk.ru###feed_rows > .feed_row > div:not([id])
 vk.com,vk.ru###feed_rows > .feed_row ~ :not(.feed_row)
 vk.com,vk.ru###feed_rows > div[class="feed_row "] > div[id]:not([id^="feed_repost"]):not([data-post-id])
 vk.com,vk.ru###main_feed:not(.feed_submit_only_shown) div:first-child:not(.page_block) ~ .feed_row > [data-post-id][id^="post"][post_view_hash]:not([data-post-track-code])
-flightsim.su###tie-popup-adblock {remove:true;}
-the-geek.ru###wp-custom-css {remove:true;}
 trychatgpt.ru##.\!min-h-72
 vk.com,vk.ru##._feed_rows > div:not([id]):not([class])
 vk.com,vk.ru##._post_content > .post
@@ -22011,7 +22014,6 @@ dzen.ru##a[href^="https://dzen.ru/"][class*="link"][class*="tabContent"] [class]
 pikabu.ru##article.story[data-text-length="1"]
 kp.kg,kp.kz,kp.md,kp.ru#?#body > #app div:-abp-properties(background-color: rgb(225, 231, 235))
 www.e1.ru#?#body > script[src^="https://www.e1.ru/"] ~ #app [itemprop] > figure:-abp-has(span:-abp-contains(чуть-чуть и видео загрузится))
-www.ixbt.com#?#body > style:-abp-contains(margin-top) {remove:true;}
 ~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] :not(a):not(li):not(.weather-header__title) > span:not([style]):-abp-properties(overflow-x: hidden)
 ~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] article:-abp-properties(overflow-x: hidden)
 ~e.mail.ru,mail.ru,~octavius.mail.ru##body[style="overflow: unset; max-height: unset;"] div:not([id]):not([class]) > article
@@ -28111,6 +28113,7 @@ gazeta.ru###_id_flowup
 tapochek.net###aposnow
 growhow.in.ua###custom-background-css:remove()
 playground.ru###dfpPrerollDelay:remove()
+freesoft.ru###downloadAdModal:remove()
 myshared.ru###download_form > .modal-body
 vm.ru###onair > img[data-src="/img/player_cover.svg"]
 inoreader.com###reader_pane:style(padding-right: unset !important)
@@ -28321,6 +28324,7 @@ m.lenta.ru##+js(addEventListener-defuser, scroll, getBoundingClientRect)
 www.vesti.ru##+js(addEventListener-defuser, scroll, players)
 lenta.ru##+js(addEventListener-defuser, scroll, window.history.pushState)
 braz-rus.pro##+js(addEventListener-defuser, userpause, Math.random)
+rutube.ru##+js(addEventListener-defuser, visibilitychange, document.hidden)
 ritsatv.ru##+js(alert-buster)
 comedy-radio.ru,kufar.by,radioromantika.ru,relax-fm.ru,rg.ru,sm.news,ura.news,veseloeradio.ru##+js(cookie-remover, /^bda|^bltsr/)
 ~passport.yandex.by,~passport.yandex.kz,~passport.yandex.ru,~passport.yandex.uz,yandex.by,yandex.kz,yandex.ru,yandex.uz##+js(cookie-remover, /^bltsr$|^JPIqApiY$|^specific$|^substantial$/)
@@ -28358,7 +28362,7 @@ znanija.com##+js(json-prune, tiers.TIER_ANY)
 aniqit.com,anivod.com,ashdi.vip,kodik.cc,kodik.info,kodikdb.com,tortuga.wtf##+js(json-prune, vast)
 player.smotrim.ru##+js(json-prune-fetch-response, data.age_restrictions)
 player.smotrim.ru##+js(json-prune-fetch-response, data.template.disable_registration)
-595.ucoz.net,5wip-file.ru,file-mods.ru,freesoft.ru,infourok.ru,mixmuz.ru,myshared.ru,myzcloud.me,n-torrents.org,sims3pack.ru,wallegend.net##+js(nano-setInterval-booster)
+595.ucoz.net,5wip-file.ru,file-mods.ru,infourok.ru,mixmuz.ru,myshared.ru,myzcloud.me,n-torrents.org,sims3pack.ru,wallegend.net##+js(nano-setInterval-booster)
 muzlan.top##+js(nano-setInterval-booster, .numcard)
 mp3crown.cc##+js(nano-setInterval-booster, .time)
 sorokam.ru##+js(nano-setInterval-booster, .track-download__timer)

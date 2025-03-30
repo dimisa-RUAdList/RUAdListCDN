@@ -1,8 +1,8 @@
-diff name:ruadlist lines:116 checksum:bd8dda52e5
+diff name:ruadlist lines:142 checksum:a9afd503da
 d4 2
 a5 2
-! Last modified: Sun, 30 Mar 2025 17:23:59 +0000
-! Diff-Path: ../patches/2025.3.30.1043.patch#ruadlist
+! Last modified: Sun, 30 Mar 2025 22:25:38 +0000
+! Diff-Path: ../patches/2025.3.30.1345.patch#ruadlist
 a439 1
 ||alloviewroll.com^$third-party
 a2310 1
@@ -17,6 +17,8 @@ d10052 1
 a10546 1
 /assets/dist/advertisement.*.js$domain=ficbook.net
 d10965 1
+a11527 1
+||freesoft.ru/sponsored/
 a14242 1
 banki24.by###menu a[href^="https://insnc.onelink.me/"]
 a14292 1
@@ -42,9 +44,13 @@ gorvesti.ru##.section-r
 d18379 1
 a18379 1
 1fnl.ru,1tulatv.ru,afanasy.biz,bookslist.me,bragazeta.ru,dengi.ua,dnepr24.com.ua,football.ua,fullsite.org,gazeta.zp.ua,job.ru,km.ru,konkurent.ua,kr24.com.ua,litrpg.ru,livejournal.ru,nikolaev24.com.ua,novosti-n.org,odessa.net.ua,prm.ru,riamo.ru,rusnext.ru,russia.ru,rusvesna.su,samara24.ru,smilekaluga.ru,study.ru,ucheba.ru,ura-inform.com,v-variant.com.ua,wildo.ru##.top-banner
+a18601 1
+securitylab.ru##.webinar-banner
 d18961 1
 a19152 1
 iguides.ru##[itemtype="http://schema.org/Article"] > .i-v-list-hr + .row > div[class^='col-']:first-child
+a19189 1
+freesoft.ru##[src*="/sponsored/"]
 d19288 1
 a19288 1
 ru-dub.xyz,rudub.vip##a[href*=".li"]
@@ -67,6 +73,8 @@ d20780 1
 a21026 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div[id^="dimisa"]
 d21078 1
+d21280 1
+d21316 1
 d21653 1
 a21653 1
 ru-dub.xyz#?#p:-abp-has(> strong a[href*=".li"])
@@ -80,8 +88,19 @@ a21929 2
 d21941 1
 a21941 1
 ||pikabu.ru/ajax/*?rxy6w=$xmlhttprequest
+d21957 2
+a21958 2
+flightsim.su###tie-popup-adblock {remove:true;}
+freesoft.ru###downloadAdModal {remove:true;}
+a21960 4
+the-geek.ru###wp-custom-css {remove:true;}
+vk.*##head > style:-abp-contains(/adchoice|mkit_|outlineBanner/i) {remove:true;}
+www.ixbt.com#?#body > style:-abp-contains(margin-top) {remove:true;}
+! селекторы
+d21965 2
 a21966 1
 trychatgpt.ru##.\!min-h-72
+d22004 1
 d25090 1
 a25225 1
 banki24.by#@#.banner300
@@ -105,10 +124,17 @@ rudub.vip##body > section[class*="section details"]:style(padding-top: 70px !imp
 a27678 2
 trychatgpt.ru##[class*="!container"] > span:style(min-height: unset !important)
 ! ---
+a28102 1
+freesoft.ru###downloadAdModal:remove()
 a28182 1
 mp3party.net##+js(abort-on-property-read, Turbolinks)
+a28311 1
+rutube.ru##+js(addEventListener-defuser, visibilitychange, document.hidden)
 a28318 1
 mp3party.net##+js(href-sanitizer, [href*="?url=https"], ?url)
+d28348 1
+a28348 1
+595.ucoz.net,5wip-file.ru,file-mods.ru,infourok.ru,mixmuz.ru,myshared.ru,myzcloud.me,n-torrents.org,sims3pack.ru,wallegend.net##+js(nano-setInterval-booster)
 a28367 1
 trychatgpt.ru##+js(no-fetch-if, /mpsuadv\.ru/)
 a28422 2
