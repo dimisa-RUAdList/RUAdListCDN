@@ -1,19 +1,27 @@
-diff name:ruadlist lines:81 checksum:76858b678e
+diff name:ruadlist lines:99 checksum:a2d7c70413
 d4 2
 a5 2
-! Last modified: Mon, 31 Mar 2025 13:34:12 +0000
-! Diff-Path: ../patches/2025.3.31.814.patch#ruadlist
+! Last modified: Mon, 31 Mar 2025 18:35:51 +0000
+! Diff-Path: ../patches/2025.3.31.1115.patch#ruadlist
 a439 1
 ||alloviewroll.com^$third-party
 a2310 1
 ||getnodejs.com^$third-party
 a8010 1
 /load-xml/?id=*&roll=$third-party,xmlhttprequest
+a10038 1
+rutube.ru##.cookie-notify-module__cookie-consent
 a10547 1
 /assets/dist/advertisement.*.js$domain=ficbook.net
 d10966 1
 a11528 1
 ||freesoft.ru/sponsored/
+a13791 3
+fapvdo.ru###block-24
+fapvdo.ru###block-26
+fapvdo.ru###block-29
+a14331 1
+fapvdo.ru###page > .users:first-child
 d15908 1
 a15908 1
 rudub.vip##.card__description__adv
@@ -64,6 +72,8 @@ trychatgpt.ru##.\!min-h-72
 a21985 1
 freesoft.ru##.modal-backdrop
 d22008 1
+a26199 1
+fapvdo.ru##body > #txt
 d27484 2
 a27485 2
 rudub.vip##.details__bg
@@ -71,6 +81,8 @@ rudub.vip##body > section[class*="section details"]:style(padding-top: 70px !imp
 a27681 2
 trychatgpt.ru##[class*="!container"] > span:style(min-height: unset !important)
 ! ---
+a28064 1
+mail.ru##body > #grid:not(.grid) .widget__container:nth-child(3) ~ .widget__container
 a28105 1
 freesoft.ru###downloadAdModal:remove()
 a28315 1
@@ -80,3 +92,9 @@ a28353 1
 595.ucoz.net,5wip-file.ru,file-mods.ru,infourok.ru,mixmuz.ru,myshared.ru,myzcloud.me,n-torrents.org,sims3pack.ru,wallegend.net##+js(nano-setInterval-booster)
 a28372 1
 trychatgpt.ru##+js(no-fetch-if, /mpsuadv\.ru/)
+a28433 1
+fapvdo.ru##+js(remove-node-text, script, getComputedStyle)
+d28733 2
+d28736 1
+a28736 1
+mail.ru##+js(json-prune, [].*.result.body)

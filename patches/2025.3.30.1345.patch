@@ -1,8 +1,16 @@
-diff name:ruadlist lines:13 checksum:76858b678e
+diff name:ruadlist lines:31 checksum:a2d7c70413
 d4 2
 a5 2
-! Last modified: Mon, 31 Mar 2025 13:34:12 +0000
-! Diff-Path: ../patches/2025.3.31.814.patch#ruadlist
+! Last modified: Mon, 31 Mar 2025 18:35:51 +0000
+! Diff-Path: ../patches/2025.3.31.1115.patch#ruadlist
+a10041 1
+rutube.ru##.cookie-notify-module__cookie-consent
+a13795 3
+fapvdo.ru###block-24
+fapvdo.ru###block-26
+fapvdo.ru###block-29
+a14335 1
+fapvdo.ru###page > .users:first-child
 d21951 1
 a21951 1
 ||pikabu.ru/ajax/*?ryy6w=$xmlhttprequest
@@ -12,3 +20,13 @@ a21974 1
 freesoft.ru###downloadAdModal
 a21994 1
 freesoft.ru##.modal-backdrop
+a26207 1
+fapvdo.ru##body > #txt
+a28074 1
+mail.ru##body > #grid:not(.grid) .widget__container:nth-child(3) ~ .widget__container
+a28446 1
+fapvdo.ru##+js(remove-node-text, script, getComputedStyle)
+d28746 2
+d28749 1
+a28749 1
+mail.ru##+js(json-prune, [].*.result.body)

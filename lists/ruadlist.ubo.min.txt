@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 31 Mar 2025 13:34:12 +0000
-! Diff-Path: ../patches/2025.3.31.814.patch#ruadlist
+! Last modified: Mon, 31 Mar 2025 18:35:51 +0000
+! Diff-Path: ../patches/2025.3.31.1115.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10039,6 +10039,7 @@ pdalife.ru##.b-popup
 vashgorod.ru##.c-popup
 games-two.su##.ckf-box
 riafan.ru##.cookie-agreement-wrapper
+rutube.ru##.cookie-notify-module__cookie-consent
 championat.com##.cookie-popup
 litnet.com##.cookies-w
 crimezone.in.ua##.custom-modal
@@ -13793,6 +13794,9 @@ ketchuptv.ru###blink
 newsroom.kh.ua###block-15
 newsroom.kh.ua###block-16
 russkiiyazyk.ru###block-2
+fapvdo.ru###block-24
+fapvdo.ru###block-26
+fapvdo.ru###block-29
 growhow.in.ua###block-5
 growhow.in.ua###block-6
 anti-malware.ru###block-block-1
@@ -14333,6 +14337,7 @@ outlook.live.com###owaadbar
 wikireality.ru###p-sidebar-extlinks
 rserials.net###page > #overlay
 kv.by###page > .region-secondary-content
+fapvdo.ru###page > .users:first-child
 carsweek.ru###page > :empty
 brestcity.com###page > a[href] > img
 allunix.ru###page > center
@@ -26208,6 +26213,7 @@ channels247.net,goool7.ws,sport7.biz,sportbar.biz,sportbarchik88.com,sporting77.
 animedub.ru##a[href="https://animedub.ru/adblock.html"]
 sntch.com#?#article > p:-abp-contains(/отключите блокировку рекламы!$/)
 3drubik.ru##body > #page ~ div[id][class]
+fapvdo.ru##body > #txt
 24pdd.kz##body > .preloader
 doctorrouter.ru,gamingsym.in,ranobe-novels.ru,transformator220.ru,wuxiaworld.ru##body > :not([id]):not([class]):not(script)
 mirdiets.ru,top10books.ru##body > [class*="-blackout active"]
@@ -28075,6 +28081,7 @@ mail.ru##[data-testid="grid-left-col"] > .logo:style(margin-top: 4px !important;
 mail.ru##[data-testid="news-tabs"] ~ div > div ~ div > div[style]
 mail.ru,sportmail.ru##a[id^="tb-"][class^="tb-"][target="_blank"]
 finance.mail.ru,vfokuse.mail.ru##aside > div > div:style(min-height: 0 !important)
+mail.ru##body > #grid:not(.grid) .widget__container:nth-child(3) ~ .widget__container
 news.mail.ru##body > .block > .tag:style(z-index: 1400 !important; cursor: pointer !important)
 mail.ru##body > .grid .grid__lcol > .footer:style(margin-top: 10px !important)
 mail.ru##body > .grid .grid__rcol:style(margin-left: 0 !important)
@@ -28447,6 +28454,7 @@ inforesist.org##+js(remove-node-text, script, /gtag\('event'/)
 sports.ru##+js(remove-node-text, script, AdBlocker)
 pikabu.ru##+js(remove-node-text, script, addPlaceholder)
 agronews.ua,agroreview.com##+js(remove-node-text, script, clickedOnContent)
+fapvdo.ru##+js(remove-node-text, script, getComputedStyle)
 gsm.in.ua##+js(remove-node-text, script, message_ads)
 tapochek.net##+js(remove-node-text, script, setRequestHeader)
 dtf.ru,vc.ru##+js(set-attr, .comment-media > .andropov-video > video, controls, true)
@@ -28746,10 +28754,8 @@ ok.ru##div[class*="__banner-feed"]
 ||pulse.mail.ru^$domain=~e.mail.ru|~octavius.mail.ru|~pulse.mail.ru
 ||r.mradx.net/img/*.js|$empty,script
 ||ru/count/$image,important,redirect=1x1.gif,domain=mail.ru|sportmail.ru
-! Конфликт с JS Fixes
-~3igames.mail.ru,~account.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~finance.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru,~vfokuse.mail.ru,~widgets.mail.ru##+js(abort-on-stack-trace, Object.prototype.ssrAds, completeRadar)
 ! старый интерфейс почты
-e.mail.ru##+js(json-prune, [].*.result.body)
+mail.ru##+js(json-prune, [].*.result.body)
 e.mail.ru##.b-datalist > div:matches-css(height: 39px):remove()
 e.mail.ru##.b-letter_thread > div > div:matches-css(height: 39px):remove()
 e.mail.ru##body:not(#id) > div[style="position: absolute; visibility: hidden; top: -10000px; left: -10000px;"] > div:style(display: block !important)

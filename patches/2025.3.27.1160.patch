@@ -1,23 +1,30 @@
-diff name:ruadlist lines:119 checksum:76858b678e
+diff name:ruadlist lines:136 checksum:a2d7c70413
 d4 2
 a5 2
-! Last modified: Mon, 31 Mar 2025 13:34:12 +0000
-! Diff-Path: ../patches/2025.3.31.814.patch#ruadlist
+! Last modified: Mon, 31 Mar 2025 18:35:51 +0000
+! Diff-Path: ../patches/2025.3.31.1115.patch#ruadlist
 a439 1
 ||alloviewroll.com^$third-party
 a2310 1
 ||getnodejs.com^$third-party
 a8010 1
 /load-xml/?id=*&roll=$third-party,xmlhttprequest
-a10038 1
+a10038 2
+rutube.ru##.cookie-notify-module__cookie-consent
 championat.com##.cookie-popup
 a10546 1
 /assets/dist/advertisement.*.js$domain=ficbook.net
 d10965 1
 a11527 1
 ||freesoft.ru/sponsored/
+a13790 3
+fapvdo.ru###block-24
+fapvdo.ru###block-26
+fapvdo.ru###block-29
 a14242 1
 banki24.by###menu a[href^="https://insnc.onelink.me/"]
+a14329 1
+fapvdo.ru###page > .users:first-child
 d15906 1
 a15906 1
 rudub.vip##.card__description__adv
@@ -84,6 +91,8 @@ d25092 1
 a25227 1
 banki24.by#@#.banner300
 d26160 1
+a26198 1
+fapvdo.ru##body > #txt
 d26212 1
 a26212 1
 kurs.com.ua,ontvtime.ru,ritsatv.ru,skidkaonline.ru,ternopillive.com##body > div[style*="background-color:"][style*="z-index:"]
@@ -99,6 +108,8 @@ rudub.vip##body > section[class*="section details"]:style(padding-top: 70px !imp
 a27680 2
 trychatgpt.ru##[class*="!container"] > span:style(min-height: unset !important)
 ! ---
+a28063 1
+mail.ru##body > #grid:not(.grid) .widget__container:nth-child(3) ~ .widget__container
 a28104 1
 freesoft.ru###downloadAdModal:remove()
 a28184 1
@@ -117,4 +128,10 @@ a28425 2
 ritsatv.ru##+js(remove-node-text, script, /ADBLOCK|checkAdBlocker/)
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /checkCookie|s_script|tick/)
 d28427 1
+a28430 1
+fapvdo.ru##+js(remove-node-text, script, getComputedStyle)
 d28522 1
+d28731 2
+d28734 1
+a28734 1
+mail.ru##+js(json-prune, [].*.result.body)
