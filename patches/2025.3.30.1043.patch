@@ -1,8 +1,8 @@
-diff name:ruadlist lines:33 checksum:309ce9b5bd
+diff name:ruadlist lines:37 checksum:76858b678e
 d4 2
 a5 2
-! Last modified: Mon, 31 Mar 2025 08:34:58 +0000
-! Diff-Path: ../patches/2025.3.31.514.patch#ruadlist
+! Last modified: Mon, 31 Mar 2025 13:34:12 +0000
+! Diff-Path: ../patches/2025.3.31.814.patch#ruadlist
 a11531 1
 ||freesoft.ru/sponsored/
 a18607 1
@@ -15,15 +15,19 @@ d21950 1
 a21950 1
 ||pikabu.ru/ajax/*?ryy6w=$xmlhttprequest
 d21966 2
-a21967 2
+a21967 3
 flightsim.su###tie-popup-adblock {remove:true;}
 freesoft.ru###downloadAdModal {remove:true;}
-a21969 4
+freesoft.ru###error.modal {remove:true;}
+a21969 5
 the-geek.ru###wp-custom-css {remove:true;}
 vk.*##head > style:-abp-contains(/adchoice|mkit_|outlineBanner/i) {remove:true;}
 www.ixbt.com#?#body > style:-abp-contains(margin-top) {remove:true;}
 ! селекторы
+freesoft.ru###downloadAdModal
 d21974 2
+a21991 1
+freesoft.ru##.modal-backdrop
 d22014 1
 a28113 1
 freesoft.ru###downloadAdModal:remove()

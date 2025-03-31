@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 31 Mar 2025 08:34:58 +0000
-! Diff-Path: ../patches/2025.3.31.514.patch#ruadlist
+! Last modified: Mon, 31 Mar 2025 13:34:12 +0000
+! Diff-Path: ../patches/2025.3.31.814.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21966,12 +21966,14 @@ howdyho.net,howdyho.pro#@#div[id^="yandex_rtb"]
 ||yastatic.$domain=howdyho.net|howdyho.pro
 flightsim.su###tie-popup-adblock {remove:true;}
 freesoft.ru###downloadAdModal {remove:true;}
+freesoft.ru###error.modal {remove:true;}
 growhow.in.ua###custom-background-css {remove:true;}
 playground.ru###dfpPrerollDelay {remove:true;}
 the-geek.ru###wp-custom-css {remove:true;}
 vk.*##head > style:-abp-contains(/adchoice|mkit_|outlineBanner/i) {remove:true;}
 www.ixbt.com#?#body > style:-abp-contains(margin-top) {remove:true;}
 ! селекторы
+freesoft.ru###downloadAdModal
 vk.com,vk.ru###feed_rows > .feed_row > div:not([id])
 vk.com,vk.ru###feed_rows > .feed_row ~ :not(.feed_row)
 vk.com,vk.ru###feed_rows > div[class="feed_row "] > div[id]:not([id^="feed_repost"]):not([data-post-id])
@@ -21992,6 +21994,7 @@ vk.com,vk.ru#?#.feed_row > [id^="post-"] > ._post_content:-abp-has(> :first-chil
 vk.com,vk.ru##.feed_row > div[class$=" post"]
 e.mail.ru##.layout__column_right-indented
 mail.ru,sportmail.ru##.media-ui-slider-track > div:last-child [data-qa="Loader"]
+freesoft.ru##.modal-backdrop
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(/min-height: 20.px|min-height: 29.px|min-height: 30.px|min-height: 300./))

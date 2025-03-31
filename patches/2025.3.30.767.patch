@@ -1,8 +1,8 @@
-diff name:ruadlist lines:65 checksum:309ce9b5bd
+diff name:ruadlist lines:69 checksum:76858b678e
 d4 2
 a5 2
-! Last modified: Mon, 31 Mar 2025 08:34:58 +0000
-! Diff-Path: ../patches/2025.3.31.514.patch#ruadlist
+! Last modified: Mon, 31 Mar 2025 13:34:12 +0000
+! Diff-Path: ../patches/2025.3.31.814.patch#ruadlist
 a10550 1
 /assets/dist/advertisement.*.js$domain=ficbook.net
 d10969 1
@@ -36,17 +36,21 @@ d21948 1
 a21948 1
 ||pikabu.ru/ajax/*?ryy6w=$xmlhttprequest
 d21964 2
-a21965 2
+a21965 3
 flightsim.su###tie-popup-adblock {remove:true;}
 freesoft.ru###downloadAdModal {remove:true;}
-a21967 4
+freesoft.ru###error.modal {remove:true;}
+a21967 5
 the-geek.ru###wp-custom-css {remove:true;}
 vk.*##head > style:-abp-contains(/adchoice|mkit_|outlineBanner/i) {remove:true;}
 www.ixbt.com#?#body > style:-abp-contains(margin-top) {remove:true;}
 ! селекторы
+freesoft.ru###downloadAdModal
 d21972 2
 a21973 1
 trychatgpt.ru##.\!min-h-72
+a21988 1
+freesoft.ru##.modal-backdrop
 d22011 1
 d27487 2
 a27488 2
