@@ -1,8 +1,8 @@
-diff name:ruadlist lines:118 checksum:97ba9daa97
+diff name:ruadlist lines:133 checksum:6953ccab85
 d4 2
 a5 2
-! Last modified: Tue, 01 Apr 2025 09:29:17 +0000
-! Diff-Path: ../patches/2025.4.1.569.patch#ruadlist
+! Last modified: Tue, 01 Apr 2025 14:28:59 +0000
+! Diff-Path: ../patches/2025.4.1.868.patch#ruadlist
 a439 1
 ||alloviewroll.com^$third-party
 a2310 1
@@ -11,11 +11,17 @@ a8010 1
 /load-xml/?id=*&roll=$third-party,xmlhttprequest
 a10038 1
 rutube.ru##.cookie-notify-module__cookie-consent
+a10179 1
+||cdn.hsmedia.ru/ump-webapp-public/dist/client/assets/AllowConsentNotificationsModal-$third-party
 a10547 1
 /assets/dist/advertisement.*.js$domain=ficbook.net
 d10966 1
 a11528 1
 ||freesoft.ru/sponsored/
+a12745 1
+||ritsatv.ru/files/reklama
+a13714 1
+dtf.ru#?##app:-abp-has(> .bar > .header [href="/auth"]) .content-list > .content:-abp-has(> .content-header > .author > [href="/ggsel"])
 a13791 3
 fapvdo.ru###block-24
 fapvdo.ru###block-26
@@ -24,9 +30,11 @@ a14243 1
 banki24.by###menu a[href^="https://insnc.onelink.me/"]
 a14330 1
 fapvdo.ru###page > .users:first-child
-d15907 1
-a15907 1
+d15907 2
+a15908 3
 rudub.vip##.card__description__adv
+braz-rus.pro##.card__inner-premium
+braz-rus.pro##.card__re-video
 a16647 1
 iguides.ru##.i-box-ads
 a17898 1
@@ -53,8 +61,11 @@ d20782 1
 a21028 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div[id^="dimisa"]
 d21080 1
+d21181 1
 d21282 1
 d21318 1
+a21579 1
+trychatgpt.ru##nav.sticky ~ div:not([class]) > span
 d21655 1
 a21655 1
 ru-dub.xyz#?#p:-abp-has(> strong a[href*=".li"])
@@ -78,11 +89,15 @@ www.ixbt.com#?#body > style:-abp-contains(margin-top) {remove:true;}
 ! селекторы
 freesoft.ru###downloadAdModal
 d21968 2
-a21969 1
-trychatgpt.ru##.\!min-h-72
 a21984 1
 freesoft.ru##.modal-backdrop
 d22007 1
+a22579 5
+! игры
+ru###gs-app-wrapper
+ru##.Ba
+ru##.GameButtons__disableAds
+ru##.GameContainerInner__sb
 a25227 1
 banki24.by#@#.banner300
 a26197 1
@@ -90,13 +105,13 @@ fapvdo.ru##body > #txt
 a26315 2
 78.ru##div[class^="sidebar_container_"]:style(height: auto !important)
 ! ---
+a27472 2
+ritsatv.ru##body[style*="overflow-x: hidden"]:style(overflow-x: unset !important)
+! ---
 d27480 2
 a27481 2
 rudub.vip##.details__bg
 rudub.vip##body > section[class*="section details"]:style(padding-top: 70px !important)
-a27677 2
-trychatgpt.ru##[class*="!container"] > span:style(min-height: unset !important)
-! ---
 a28060 1
 mail.ru##body > #grid:not(.grid) .widget__container:nth-child(3) ~ .widget__container
 a28101 1
