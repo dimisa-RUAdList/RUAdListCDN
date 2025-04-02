@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 02 Apr 2025 15:28:39 +0000
-! Diff-Path: ../patches/2025.4.2.928.patch#ruadlist
+! Last modified: Wed, 02 Apr 2025 20:28:21 +0000
+! Diff-Path: ../patches/2025.4.2.1228.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21935,7 +21935,7 @@ ictv.ua,vikna.tv##div[id^="div-gpt-ad-"]
 ||dzen.ru/a/$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/articles$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/news$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
-||dzen.ru/pogoda/*_$script
+||dzen.ru/pogoda/$script
 ||static.dzeninfra.ru/s3/zen-lib/*/dzen-layout/*_$script
 ||static.dzeninfra.ru/s3/zen-lib/*/news-site/*_$script
 $csp=script-src-attr 'none',domain=eurointegration.com.ua|pravda.com.ua|sportanalytic.com
@@ -27846,7 +27846,8 @@ disk.yandex.by,disk.yandex.com,disk.yandex.kz,disk.yandex.ru,disk.yandex.uz##div
 ! ---
 ! дзен
 ! главная
-dzen.ru###LayoutTopMicroRoot div[style*="%"]:style(padding-top: unset !important)
+dzen.ru###SECOND_CHUNK_APP_CONTAINER_MicroRoot div[style*="%"]:style(padding-top: unset !important)
+dzen.ru##[class*="CardRtb"]
 dzen.ru##[class*="card-rtb"]
 dzen.ru##[class*="desktop"] ~ [id*="teaser"]
 dzen.ru##[id*="card-rtb"]
@@ -27859,20 +27860,29 @@ dzen.ru##div[class*="__bannerContainer"]
 dzen.ru##div[class*="widget"] > div[class*="container"] > div ~ div
 dzen.ru##div[id*="splashscreen"]
 ! видео
-dzen.ru##[class^="video-site--"] > [id][class*="-content__fullWidth-"]
 dzen.ru##[class^="video-site--"][class*="skeleton"]
+dzen.ru##div:not([class]) > [class^="video-site--"][aria-label] > div[id]
 ! статьи
+dzen.ru##.article-container div[class*="AdBlock"]
 dzen.ru##[class*="withStickyAdOnArticle"]
-dzen.ru##[data-microappname="ArticleDesktopMicroApp"] > [aria-label] > div[class] > div[id]
+dzen.ru##[data-microappname] > [aria-label] > div[class] > div[id]
 dzen.ru##[data-testid="dzenpro-banner"]
-dzen.ru##div[class*="__articleItem-"] > div[class*="contentBottomBlock"] > div[class] ~ div
+dzen.ru##div[class*="__articleItem-"] > div > [aria-label="Социальный блок"] ~ div
 dzen.ru##div[class*="adContentWrapper"]
 dzen.ru##div[class*="bannerMain"]
 dzen.ru##div[class*="dzenProBanner"]
 dzen.ru##div[id$="-rtb"]
+dzen.ru##div[id^="article-showcase-"]
 ! новости
+dzen.ru###ad-feed
+dzen.ru##.news-page-layout__content > #header-rubricator ~ [id]
+dzen.ru##.news-page-layout__content > div[class*="position"]
 dzen.ru##.news-rubric-desktop__adv-column
+dzen.ru##.news-secondary-layout-column__secondary div[id]
+dzen.ru##[class^="news-site--InfiniteStoryAdColumnItem-desktop__content"] > div[id*="-column_top"]
 dzen.ru,sportsdzen.ru##div[class^="news-site-"][class*="skeleton"]:style(background-color: transparent !important)
+dzen.ru##div[class^="news-site--Feed-desktop__list-"] > div[id]
+dzen.ru##div[class^="news-site--Story-"] > section ~ [id]
 dzen.ru##div[class^="news-site--news-top-"]
 dzen.ru##div[id^="ad-"][class*=" news-"]
 ! погода
@@ -28127,7 +28137,6 @@ mail.ru##main#grid > .grid-middle ~ div:not([class]):not([id])
 ! Title: RU AdList JS Fixes
 ! Homepage: https://forums.lanik.us/viewforum.php?f=102
 ! --- uBO scriptlets injection rules & other ---
-dzen.ru###LayoutTopMicroRoot div[style*="%"]:style(padding-top: unset !important)
 gazeta.ru###_id_flowup
 tapochek.net###aposnow
 growhow.in.ua###custom-background-css:remove()
@@ -28475,7 +28484,6 @@ www.ukr.net##+js(set-constant, Clicks._test_meta_referer, null)
 vk.com,vk.ru##+js(set-constant, Element.prototype.attachShadow, noopFunc)
 ivi.ru##+js(set-constant, Object.prototype.AdvObject, noopFunc)
 ictv.ua,inter.ua,k1.ua,novy.tv,ntn.ua,starlight.digital,stb.ua,teleportal.ua##+js(set-constant, Object.prototype.AdvertisementManager, undefined)
-dzen.ru##+js(set-constant, Object.prototype.DirectProduct, undefined)
 player.vgtrk.com##+js(set-constant, Object.prototype.IS_CHECK_REGISTRATION, false)
 tv-gubernia.ru##+js(set-constant, Object.prototype.MediaReady, noopFunc)
 xsport.ua##+js(set-constant, Object.prototype.PLAYED, null)
@@ -28503,7 +28511,8 @@ www.mos.ru##+js(set-constant, Object.prototype.disablePaste, false)
 1tv.ru##+js(set-constant, Object.prototype.disableSeek, noopFunc)
 kinokong.sk##+js(set-constant, Object.prototype.disableSelection, noopFunc)
 dzen.ru,frontend.vh.yandex.ru##+js(set-constant, Object.prototype.getAutoplay, noopFunc)
-dzen.ru,shedevrum.ai##+js(set-constant, Object.prototype.getUaasConfig, undefined)
+dzen.ru##+js(set-constant, Object.prototype.getPlacement, undefined)
+shedevrum.ai##+js(set-constant, Object.prototype.getUaasConfig, undefined)
 frontend.vh.yandex.ru##+js(set-constant, Object.prototype.initialAutoplay, null)
 rbc.ru,sportrbc.ru##+js(set-constant, Object.prototype.livetv-state, true)
 tenews.org.ua##+js(set-constant, Object.prototype.manualAutoplay_, null)
@@ -28602,7 +28611,7 @@ vk.com,vk.ru##.wall_module > div[id]:first-child > :matches-prop(innerHTML="/for
 /(aniqit|kodik)./$subdocument,removeparam=geoblock
 /^https?://yastatic\.net\/www\/_\/[^\s]{150,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 /sm\.news/[^\s]{80,}/$script,xmlhttprequest,badfilter,domain=sm.news
-dzen.ru##:matches-path(/articles) div:matches-attr("/data/"="article-showcase-card"):has(> article > div > [class*="image"]:empty)
+dzen.ru##:matches-path(/articles) div:has(> article > div > [class*="image"]:empty)
 ozon.ru##:matches-path(/kursk-sertifikaty) [data-lcp-name*="anner-"]:style(display: block !important)
 ozon.ru##:matches-path(/kursk-sertifikaty) div[data-widget="banner"]:style(display: block !important)
 pronpic.org#@#:not(obhod-adblocka)
@@ -28649,7 +28658,6 @@ fanserial.*,fanserialstv.net,hdrezka.*,rezka.*##+js(set-constant, Object.prototy
 hdrezka.*,rezka.*##+js(abort-current-inline-script, document.getElementsByTagName, AMSP.loadAsset)
 howdyho.*##+js(no-setTimeout-if, _0x)
 howdyho.*##+js(set-attr, #progress-value, data-timer, 25)
-dzen.ru##iframe[style^="position:"][style*="absolute"][srcdoc]:remove()
 liveball.*##+js(abort-on-property-read, ABNS)
 m.rp5.*#@#.adsbygoogle
 reshu.by,sdamgia.ru##main > div > div > div:has-text(/rotator|блокировщик/)

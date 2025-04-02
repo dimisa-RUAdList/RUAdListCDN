@@ -1,8 +1,8 @@
-diff name:ruadlist lines:99 checksum:a97e66dc83
+diff name:ruadlist lines:139 checksum:b6a6a5feb2
 d4 2
 a5 2
-! Last modified: Wed, 02 Apr 2025 15:28:39 +0000
-! Diff-Path: ../patches/2025.4.2.928.patch#ruadlist
+! Last modified: Wed, 02 Apr 2025 20:28:21 +0000
+! Diff-Path: ../patches/2025.4.2.1228.patch#ruadlist
 d7694 1
 a7694 1
 ||pw^$third-party,script,xmlhttprequest,domain=~adwiz.pp.ua|~dewalt.store|~forum.worldofwarships.eu|~forum.worldofwarships.ru|~hdvbplayer.tk|~herokuapp.com|~live-gol.net|~liveball.cc|~liveball.gg|~liveball.my|~liveball.uno|~liveball.ws|~masterclub.store|~movielab.pro|~osu.ppy.sh|~panomama.ru|~pelcn.net|~philips.ru|~purina.ru|~softpir.com|~sportsvideoline3.pw|~tefal.ru|~tikkurila.ru|~vk-apps.com|~vulpecula.host
@@ -42,6 +42,9 @@ liveball.my,liveball.uno,liveball.*###custom_brand
 liveball.my,liveball.uno,liveball.*##.odds_section
 a21582 1
 trychatgpt.ru##nav.sticky ~ div:not([class]) > span
+d21927 1
+a21927 1
+||dzen.ru/pogoda/$script
 d21950 1
 a21950 1
 ||pikabu.ru/ajax/*?pT6E4=$xmlhttprequest
@@ -75,8 +78,36 @@ a27482 2
 ritsatv.ru##body[style*="overflow-x: hidden"]:style(overflow-x: unset !important)
 ! ---
 d27688 2
+d27829 1
+a27829 2
+dzen.ru###SECOND_CHUNK_APP_CONTAINER_MicroRoot div[style*="%"]:style(padding-top: unset !important)
+dzen.ru##[class*="CardRtb"]
+d27842 1
+a27843 1
+dzen.ru##div:not([class]) > [class^="video-site--"][aria-label] > div[id]
+a27844 1
+dzen.ru##.article-container div[class*="AdBlock"]
+d27846 1
+a27846 1
+dzen.ru##[data-microappname] > [aria-label] > div[class] > div[id]
+d27848 1
+a27848 1
+dzen.ru##div[class*="__articleItem-"] > div > [aria-label="Социальный блок"] ~ div
+a27852 1
+dzen.ru##div[id^="article-showcase-"]
+a27853 3
+dzen.ru###ad-feed
+dzen.ru##.news-page-layout__content > #header-rubricator ~ [id]
+dzen.ru##.news-page-layout__content > div[class*="position"]
+a27854 2
+dzen.ru##.news-secondary-layout-column__secondary div[id]
+dzen.ru##[class^="news-site--InfiniteStoryAdColumnItem-desktop__content"] > div[id*="-column_top"]
+a27855 2
+dzen.ru##div[class^="news-site--Feed-desktop__list-"] > div[id]
+dzen.ru##div[class^="news-site--Story-"] > section ~ [id]
 a28072 1
 mail.ru##body > #grid:not(.grid) .widget__container:nth-child(3) ~ .widget__container
+d28109 1
 a28113 1
 freesoft.ru###downloadAdModal:remove()
 d28168 1
@@ -89,9 +120,18 @@ a28361 1
 d28384 1
 a28442 1
 fapvdo.ru##+js(remove-node-text, script, getComputedStyle)
+d28457 1
+d28485 1
+a28485 2
+dzen.ru##+js(set-constant, Object.prototype.getPlacement, undefined)
+shedevrum.ai##+js(set-constant, Object.prototype.getUaasConfig, undefined)
+d28584 1
+a28584 1
+dzen.ru##:matches-path(/articles) div:has(> article > div > [class*="image"]:empty)
 a28606 2
 aniu.ru,liveball.*##+js(no-setInterval-if, debugger)
 autonews.co.ua,in-poland.com,liveball.*,ukrainianwall.com##+js(addEventListener-defuser, /contextmenu|copy|keydown|selectstart/)
+d28629 1
 a28629 1
 liveball.*##+js(abort-on-property-read, ABNS)
 d28742 2
