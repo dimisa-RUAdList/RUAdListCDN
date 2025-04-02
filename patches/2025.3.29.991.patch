@@ -1,12 +1,15 @@
-diff name:ruadlist lines:131 checksum:cb47ba0b94
+diff name:ruadlist lines:152 checksum:ec303f15dd
 d4 2
 a5 2
-! Last modified: Wed, 02 Apr 2025 05:29:23 +0000
-! Diff-Path: ../patches/2025.4.2.329.patch#ruadlist
+! Last modified: Wed, 02 Apr 2025 10:31:07 +0000
+! Diff-Path: ../patches/2025.4.2.631.patch#ruadlist
 a439 1
 ||alloviewroll.com^$third-party
 a2310 1
 ||getnodejs.com^$third-party
+d7692 1
+a7692 1
+||pw^$third-party,script,xmlhttprequest,domain=~adwiz.pp.ua|~dewalt.store|~forum.worldofwarships.eu|~forum.worldofwarships.ru|~hdvbplayer.tk|~herokuapp.com|~live-gol.net|~liveball.cc|~liveball.gg|~liveball.my|~liveball.uno|~liveball.ws|~masterclub.store|~movielab.pro|~osu.ppy.sh|~panomama.ru|~pelcn.net|~philips.ru|~purina.ru|~softpir.com|~sportsvideoline3.pw|~tefal.ru|~tikkurila.ru|~vk-apps.com|~vulpecula.host
 a8010 1
 /load-xml/?id=*&roll=$third-party,xmlhttprequest
 a10038 1
@@ -18,6 +21,8 @@ a10547 1
 d10966 1
 a11528 1
 ||freesoft.ru/sponsored/
+a12008 1
+||liveball.*/public/js/clickunder.js
 a12745 1
 ||ritsatv.ru/files/reklama
 a13714 1
@@ -26,6 +31,7 @@ a13791 3
 fapvdo.ru###block-24
 fapvdo.ru###block-26
 fapvdo.ru###block-29
+d13927 1
 a14243 1
 banki24.by###menu a[href^="https://insnc.onelink.me/"]
 a14330 1
@@ -35,6 +41,7 @@ a15908 3
 rudub.vip##.card__description__adv
 braz-rus.pro##.card__inner-premium
 braz-rus.pro##.card__re-video
+d17282 1
 a17899 1
 gorvesti.ru##.section-r
 d18380 1
@@ -62,6 +69,9 @@ d21081 1
 d21182 1
 d21283 1
 d21319 1
+a21561 2
+liveball.my,liveball.uno,liveball.*###custom_brand
+liveball.my,liveball.uno,liveball.*##.odds_section
 a21580 1
 trychatgpt.ru##nav.sticky ~ div:not([class]) > span
 d21656 1
@@ -74,7 +84,7 @@ a21933 2
 @@||mpsuadv.ru/sbor$xmlhttprequest,domain=trychatgpt.ru
 d21945 1
 a21945 1
-||pikabu.ru/ajax/*?ryy6w=$xmlhttprequest
+||pikabu.ru/ajax/*?pT6E4=$xmlhttprequest
 d21961 2
 a21962 3
 flightsim.su###tie-popup-adblock {remove:true;}
@@ -98,6 +108,9 @@ ru##.GameButtons__disableAds
 ru##.GameContainerInner__sb
 a25228 1
 banki24.by#@#.banner300
+a26189 1
+2es.work,adventuretime.ru,ani.wtf,cdnneedtv.ru,cdnpotok.com,cdntelesee.com,cdntvpotok.com,chepok.xyz,domatv.net,hdone.net,hdru.net,hindcine.tv,kipolino.site,klplayer.website,liveball.my,liveball.uno,liveball.*,liveball7.gq,liveball8.ml,luxurytv.online,oneliketv.com,phys-kids.com,pokaz.me,rxtv.github.io,sovetromantica.com,strah.video,t1pochek.site,tip0chek.site,tipochek.xyz,volley.ru,worldvideo.site#?#[id^="oframe"] > pjsdiv:-abp-has(> pjsdiv:-abp-contains(/adblock|adblok|адблок|блокировщик|блокировку|фрибет/i))
+d26195 1
 a26198 1
 fapvdo.ru##body > #txt
 a26316 2
@@ -114,6 +127,8 @@ a28061 1
 mail.ru##body > #grid:not(.grid) .widget__container:nth-child(3) ~ .widget__container
 a28102 1
 freesoft.ru###downloadAdModal:remove()
+d28157 1
+d28285 1
 a28312 1
 rutube.ru##+js(addEventListener-defuser, visibilitychange, document.hidden)
 d28350 1
@@ -121,11 +136,17 @@ a28350 1
 595.ucoz.net,5wip-file.ru,file-mods.ru,infourok.ru,mixmuz.ru,myshared.ru,myzcloud.me,n-torrents.org,sims3pack.ru,wallegend.net##+js(nano-setInterval-booster)
 a28369 1
 trychatgpt.ru##+js(no-fetch-if, /mpsuadv\.ru/)
+d28372 1
 a28425 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /checkCookie|s_script|tick/)
 d28427 1
 a28430 1
 fapvdo.ru##+js(remove-node-text, script, getComputedStyle)
+a28594 2
+aniu.ru,liveball.*##+js(no-setInterval-if, debugger)
+autonews.co.ua,in-poland.com,liveball.*,ukrainianwall.com##+js(addEventListener-defuser, /contextmenu|copy|keydown|selectstart/)
+a28617 1
+liveball.*##+js(abort-on-property-read, ABNS)
 d28730 2
 d28733 1
 a28733 1
