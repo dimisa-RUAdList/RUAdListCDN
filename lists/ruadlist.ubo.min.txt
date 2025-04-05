@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 05 Apr 2025 03:35:57 +0000
-! Diff-Path: ../patches/2025.4.5.215.patch#ruadlist
+! Last modified: Sat, 05 Apr 2025 08:29:44 +0000
+! Diff-Path: ../patches/2025.4.5.509.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -16713,6 +16713,7 @@ meteoprog.ua##.informer[id^="mp_banner_"]
 lostpix.com##.infotext
 europaplus.ru##.infox
 education.ua##.inl-blk
+catalog.onliner.by##.inline-banner
 bb.lv##.inline-desk
 howdyho.net,howdyho.pro#?#.inner > .default:-abp-has(> header > h1:-abp-contains(PEKЛAМA))
 snn-mn.ru##.inner > .widget_media_image
@@ -20888,6 +20889,7 @@ c-s.net.ua##div[id$="toplayer"]
 gdz-putina.fun##div[id*="-error-page"] + div
 gdz-putina.fun##div[id*="-error-page"] > *
 maanimo.com##div[id*="-gpt-"]
+24smi.org##div[id*="-ir-"]
 rogoff.club##div[id*="-sidebar"]
 zoneofgames.ru##div[id*="ADNEWS"]
 spravportal.ru##div[id*="AdContainer"]
@@ -21960,7 +21962,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||imgfrost.net^$third-party
 ||liveinternet.ru/utf/lici.js?
 ||news.mail.ru/-/*.js?
-||pikabu.ru/ajax/*?r0u6w=$xmlhttprequest
+||pikabu.ru/ajax/*?qoy5r=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -23162,6 +23164,7 @@ yandex.ru,yandex.*##div[class^="FeedAdvBlockRenderer-critical-module__banner"]:e
 ! Яндекс.Музыка
 music.yandex.ru,music.yandex.*##.bar__driver-container
 music.yandex.ru,music.yandex.*##[class^="audio-advert"]
+music.yandex.ru,music.yandex.*##section[class^="SideAdvertBanner_root_"]
 radio.yandex.ru,radio.yandex.*##.slider > .slider__item_advert
 ! Яндекс.Недвижимость
 realty.ya.ru##.FSGalleryLayout > .GalleryGuadeloupe
