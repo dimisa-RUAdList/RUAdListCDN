@@ -1,8 +1,8 @@
-diff name:ruadlist lines:107 checksum:ecd6d964b1
+diff name:ruadlist lines:110 checksum:e3fc01fbbd
 d4 2
 a5 2
-! Last modified: Sat, 05 Apr 2025 18:31:41 +0000
-! Diff-Path: ../patches/2025.4.5.1111.patch#ruadlist
+! Last modified: Sat, 05 Apr 2025 23:24:47 +0000
+! Diff-Path: ../patches/2025.4.5.1404.patch#ruadlist
 d7694 1
 a7694 1
 ||pw^$third-party,script,xmlhttprequest,domain=~adwiz.pp.ua|~dewalt.store|~forum.worldofwarships.eu|~forum.worldofwarships.ru|~hdvbplayer.tk|~herokuapp.com|~live-gol.net|~liveball.cc|~liveball.gg|~liveball.my|~liveball.uno|~liveball.ws|~masterclub.store|~movielab.pro|~osu.ppy.sh|~panomama.ru|~pelcn.net|~philips.ru|~purina.ru|~softpir.com|~sportsvideoline3.pw|~tefal.ru|~tikkurila.ru|~vk-apps.com|~vulpecula.host
@@ -38,6 +38,9 @@ a21937 1
 d21960 1
 a21960 1
 ||pikabu.ru/ajax/*?qoy5r=$xmlhttprequest
+a22888 2
+sports.ru###media-promo-mount-point [class*="adv-text"]
+sports.ru###media-promo-mount-point a[href*="://sirena.world/"]
 a23161 1
 music.yandex.ru,music.yandex.*##section[class^="SideAdvertBanner_root_"]
 a23196 1
@@ -85,8 +88,8 @@ d28129 1
 d28189 1
 d28317 1
 d28406 1
-a28464 1
-tapochek.net##+js(remove-node-text, script, document.head.appendChild)
+a28460 1
+tapochek.net##+js(remove-node-text, script, /document.head.appendChild|document.referrer/)
 d28467 1
 d28480 1
 a28483 1
@@ -105,4 +108,4 @@ a28644 1
 dzen.ru##div:matches-attr(/data-[a-z0-9]/=bottom-ad)
 d28652 1
 a28652 1
-liveball.*##+js(abort-on-property-read, ABNS)
+liveball.*,tapochek.net##+js(abort-on-property-read, ABNS)
