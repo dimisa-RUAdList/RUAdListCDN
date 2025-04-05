@@ -1,8 +1,10 @@
-diff name:ruadlist lines:13 checksum:78900e8d8b
+diff name:ruadlist lines:18 checksum:f7543c9d95
 d4 2
 a5 2
-! Last modified: Sat, 05 Apr 2025 08:29:44 +0000
-! Diff-Path: ../patches/2025.4.5.509.patch#ruadlist
+! Last modified: Sat, 05 Apr 2025 13:27:51 +0000
+! Diff-Path: ../patches/2025.4.5.807.patch#ruadlist
+a13132 1
+||tapochek.net/*.php|$script
 a16715 1
 catalog.onliner.by##.inline-banner
 a20890 1
@@ -12,3 +14,6 @@ a21963 1
 ||pikabu.ru/ajax/*?qoy5r=$xmlhttprequest
 a23164 1
 music.yandex.ru,music.yandex.*##section[class^="SideAdvertBanner_root_"]
+a28477 1
+tapochek.net##+js(remove-node-text, script, document.head.appendChild)
+d28480 1

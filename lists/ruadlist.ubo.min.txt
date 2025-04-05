@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 05 Apr 2025 08:29:44 +0000
-! Diff-Path: ../patches/2025.4.5.509.patch#ruadlist
+! Last modified: Sat, 05 Apr 2025 13:27:51 +0000
+! Diff-Path: ../patches/2025.4.5.807.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -13130,6 +13130,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||talk.$domain=dugtor.ru
 ||tamboff.ru/other/forum/banners
 ||tap.az/embed/
+||tapochek.net/*.php|$script
 ||tayga.info/banners/
 ||tayga.info/design/banner/
 ||tdaily.ru/api/ad|$xmlhttprequest
@@ -28478,9 +28479,9 @@ inforesist.org##+js(remove-node-text, script, /gtag\('event'/)
 sports.ru##+js(remove-node-text, script, AdBlocker)
 pikabu.ru##+js(remove-node-text, script, addPlaceholder)
 agronews.ua,agroreview.com##+js(remove-node-text, script, clickedOnContent)
+tapochek.net##+js(remove-node-text, script, document.head.appendChild)
 fapvdo.ru##+js(remove-node-text, script, getComputedStyle)
 gsm.in.ua##+js(remove-node-text, script, message_ads)
-tapochek.net##+js(remove-node-text, script, setRequestHeader)
 dtf.ru,vc.ru##+js(set-attr, .comment-media > .andropov-video > video, controls, true)
 dtf.ru,vc.ru##+js(set-attr, .media > .andropov-video > video, controls, true)
 eneyida.tv##+js(set-attr, .owl-item > a > img, src, [data-src])
