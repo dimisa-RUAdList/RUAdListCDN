@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 06 Apr 2025 09:25:10 +0000
-! Diff-Path: ../patches/2025.4.6.565.patch#ruadlist
+! Last modified: Sun, 06 Apr 2025 14:24:37 +0000
+! Diff-Path: ../patches/2025.4.6.864.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -16286,6 +16286,7 @@ itc.ua#?#.entry-content > p:-abp-has(> strong > a[href*="utm_campai"])
 proglazki.com##.entry-content > table[border]
 zhzh.com.ua,zhzh.info#?#.entry-galery:-abp-has(> .entry-galery-title:-abp-contains(/полезное объявление|горячие новости/i))
 livejournal.com##.entry-wrap-promo
+nullcms.ru##.epcl-banner
 livejournal.com##.eplayer-time-to-ad
 espanarusa.com##.er-banner
 cpa.rip##.eriuue-content
@@ -26248,7 +26249,7 @@ chemrise.ru##body > div[class*="ui-widget"]
 rasfokus.ru##body > div[id] > [align="center"] > a[target="_blank"]
 anime-free.ru,pastebin.com,primpogoda.ru##body > div[id]:not([class])[style="display: block;"]
 fashion2news.com,hotallnews.today,newspad.ru##body > div[id][class]
-24pdd.ru#?#body > div[id][class]:-abp-has(> div[id][class] [class^="adblock"])
+24pdd.ru,nullcms.ru#?#body > div[id][class]:-abp-has(> div[id][class] [class^="adblock"])
 kurs.com.ua,ontvtime.ru,ritsatv.ru,skidkaonline.ru,ternopillive.com##body > div[style*="background-color:"][style*="z-index:"]
 gsm.in.ua##body > div[style^="background:"][style*="display: block"]
 motorpage.ru##body.noscroll::before
@@ -28478,6 +28479,7 @@ motorpage.ru##+js(remove-class, noscroll, body)
 online-fix.me##+js(remove-node-text, #text, РЕКЛАМНЫЙ БЛОК:)
 farposst.ru##+js(remove-node-text, #text, Реклама)
 filmitorrent.net,utorr.cc##+js(remove-node-text, #text, Реклама:)
+nullcms.ru##+js(remove-node-text, script, 'decodeURIComponent(escape')
 ritsatv.ru##+js(remove-node-text, script, /ADBLOCK|checkAdBlocker/)
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /checkCookie|s_script|tick/)
 tapochek.net##+js(remove-node-text, script, /document.head.appendChild|document.referrer/)

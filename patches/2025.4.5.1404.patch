@@ -1,10 +1,12 @@
-diff name:ruadlist lines:16 checksum:3b0aac3ab4
+diff name:ruadlist lines:23 checksum:9906eea986
 d4 2
 a5 2
-! Last modified: Sun, 06 Apr 2025 09:25:10 +0000
-! Diff-Path: ../patches/2025.4.6.565.patch#ruadlist
+! Last modified: Sun, 06 Apr 2025 14:24:37 +0000
+! Diff-Path: ../patches/2025.4.6.864.patch#ruadlist
 a8789 1
 ~betcity.ru##a[href*="betcity.ru/"]
+a16287 1
+nullcms.ru##.epcl-banner
 a22711 1
 championat.com##.adv-mark
 a22743 1
@@ -14,4 +16,9 @@ championat.com##[data-href*="utm_"]
 d22800 1
 a22800 1
 ||img.championat.com/brand/*.png
+d26247 1
+a26247 1
+24pdd.ru,nullcms.ru#?#body > div[id][class]:-abp-has(> div[id][class] [class^="adblock"])
 d26606 1
+a28477 1
+nullcms.ru##+js(remove-node-text, script, 'decodeURIComponent(escape')

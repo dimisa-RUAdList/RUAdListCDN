@@ -1,8 +1,8 @@
-diff name:ruadlist lines:68 checksum:3b0aac3ab4
+diff name:ruadlist lines:75 checksum:9906eea986
 d4 2
 a5 2
-! Last modified: Sun, 06 Apr 2025 09:25:10 +0000
-! Diff-Path: ../patches/2025.4.6.565.patch#ruadlist
+! Last modified: Sun, 06 Apr 2025 14:24:37 +0000
+! Diff-Path: ../patches/2025.4.6.864.patch#ruadlist
 a8789 1
 ~betcity.ru##a[href*="betcity.ru/"]
 d10539 1
@@ -15,6 +15,8 @@ a14614 1
 videomin.ws#?##sidebar > .sidebar-content:-abp-has(> .top > .fix:-abp-contains(Реклама))
 a15046 1
 24smi.org##.ads-headline
+a16285 1
+nullcms.ru##.epcl-banner
 a16714 1
 catalog.onliner.by##.inline-banner
 a20889 1
@@ -44,6 +46,9 @@ dzen.ru#?#article:-abp-has(> div[data-ad-type="direct"])
 a25930 1
 24smi.org,gdz-raketa.ru,izi-invest.ru,kakoysegodnyaprazdnik.ru,leingpt.ru,xn--80aaiebcrjcibi8adgdtsm9z.xn--p1ai#@#div[id^="yandex_rtb"]
 d26114 1
+d26239 1
+a26239 1
+24pdd.ru,nullcms.ru#?#body > div[id][class]:-abp-has(> div[id][class] [class^="adblock"])
 d26598 1
 d27850 1
 a27853 1
@@ -57,6 +62,8 @@ a27872 1
 dzen.ru##div[class*="adSplitEmbed"]
 a27874 1
 dzen.ru##div[class*="multiEmbedMode"]
+a28466 1
+nullcms.ru##+js(remove-node-text, script, 'decodeURIComponent(escape')
 a28468 1
 tapochek.net##+js(remove-node-text, script, /document.head.appendChild|document.referrer/)
 d28475 1
