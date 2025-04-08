@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 08 Apr 2025 11:22:40 +0000
-! Diff-Path: ../patches/2025.4.8.682.patch#ruadlist
+! Last modified: Tue, 08 Apr 2025 16:34:23 +0000
+! Diff-Path: ../patches/2025.4.8.994.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -14174,7 +14174,7 @@ private-records.com,xcadr.tv###kt_player > a[target]
 moviki.ru###kt_player > iframe[src]
 forum.vingrad.ru###kupitraff
 kurs.com.ua###kurs_pixel
-glav.su###l-c-w > table + br + .bl-m
+glav.su###l-c-w > table:first-child + br + [class]
 batpic.com###l0ZKuGa775
 stranamam.ru###last-ad-link-block
 mp4upload.com###lay.lay
@@ -18830,6 +18830,7 @@ lfootball.ws##.zoneBanner
 ovgorskiy.ru#?#.zsnazzy:-abp-has(.color_b:-abp-contains(Блок рекламы))
 topcraft.ru##.zverinco
 vrhell.com##.zzz
+glav.su#?#:-abp-has(> div[id^="js-hb-"]:first-child
 freepiks.ru##:not(#container-top) > blockquote
 kerch.fm#?#:not(#dle-content) > .shortstory:-abp-has(> a > div > .advs-label)
 meteo.by##:not(.blinks) > .ad
@@ -20376,7 +20377,6 @@ rusprofile.ru#?#div:-abp-has(> div > [id^="yandex_rtb"])
 superjob.ru#?#div:-abp-has(> div > div > [class*="f-test-vacancy-ad-context-"])
 okna.ua#?#div:-abp-has(> div[id][data-url])
 silver.ru#?#div:-abp-has(> div[id^="M"][id*="Composite"])
-glav.su#?#div:-abp-has(> div[id^="js-hb-"]:first-child)
 liveresult.ru#?#div:-abp-has(> div[style="color:#D42A28"])
 koolinar.ru#?#div:-abp-has(> header ~ a[href][rel="sponsored"])
 gdzguru.com#?#div:-abp-has(> img[src*="ops."])
@@ -23211,7 +23211,7 @@ dzen.ru##[aria-label^="Рекл"]
 dzen.ru##[data-testid="bottom-ad"]
 dzen.ru##[id*="-teaser"] > div[id]
 dzen.ru##a[href*="://t.mail.ru/redir/"]
-dzen.ru#?#article:-abp-has(> div[data-ad-type="direct"])
+dzen.ru#?#article:-abp-has(> div[data-ad-type])
 dzen.ru#?#div:-abp-has(> .adv-skeleton___main)
 dzen.ru##div[class*="-top-ad-"]
 dzen.ru##div[class*="_rightAdWrapper"]
@@ -27876,15 +27876,13 @@ dzen.ru##div[class*="__bannerContainer"]
 dzen.ru##div[class*="widget"] > div[class*="container"] > div ~ div
 dzen.ru##div[id*="splashscreen"]
 ! видео
-dzen.ru##[class*="MultiTheme"]
-dzen.ru##[class^="video-site--"][class*="skeleton"]
-dzen.ru##div:not([class]) > [class^="video-site--"][aria-label] > div[id]
+dzen.ru##div[class*="videoSite"] [aria-label] > div[id]
 ! статьи
-dzen.ru##.article-container div[class*="AdBlock"]
 dzen.ru##.page_article [aria-label] > div[class] > div[id]
+dzen.ru##.page_article [aria-label] div[class*="sideColumn"]
 dzen.ru##[class*="withStickyAdOnArticle"]
 dzen.ru##[data-testid="dzenpro-banner"]
-dzen.ru##div[class*="__articleItem-"] > div > [aria-label="Социальный блок"] ~ div
+dzen.ru##div[class*="__articleItem-"] > div > [class*="social"] ~ div
 dzen.ru##div[class*="adContentWrapper"]
 dzen.ru##div[class*="adSplitEmbed"]
 dzen.ru##div[class*="bannerMain"]
@@ -27894,15 +27892,15 @@ dzen.ru##div[id$="-rtb"]
 dzen.ru##div[id^="article-showcase-"]
 ! новости
 dzen.ru###ad-feed
-dzen.ru##.news-page-layout__content > #header-rubricator ~ [id]
+dzen.ru##.news-page-layout__content > [id^="header-"] ~ [id]
 dzen.ru##.news-page-layout__content > div[class*="position"]
 dzen.ru##.news-rubric-desktop__adv-column
+dzen.ru##.news-rubric-desktop__news > section > div > div[id]
 dzen.ru##.news-secondary-layout-column__secondary div[id]
-dzen.ru##[class^="news-site--InfiniteStoryAdColumnItem-desktop__content"] > div[id*="-column_top"]
+dzen.ru##[class^="news-site--Infinite"][class*="AdColumnItem-desktop__content"] > div[id*="-column_top"]
+dzen.ru##div[class*="guat"]
 dzen.ru,sportsdzen.ru##div[class^="news-site-"][class*="skeleton"]:style(background-color: transparent !important)
-dzen.ru##div[class^="news-site--Feed-desktop__list-"] > div[id]
-dzen.ru##div[class^="news-site--Story-"] > section ~ [id]
-dzen.ru##div[class^="news-site--news-top-"]
+dzen.ru##div[class^="news-site--"] > section ~ [id]
 dzen.ru##div[id^="ad-"][class*=" news-"]
 ! погода
 dzen.ru##.adv-ecom
@@ -28419,7 +28417,7 @@ startgamer.ru##+js(nano-setInterval-booster, js-game-loader-block, 1000, 0.0001)
 wowskill.ru##+js(nano-setInterval-booster, p)
 diplomsrazu.ru,igrozoom.ru,ru-minecraft.ru,softomania.net,vip-mods.ru,warezok.net,windows-driver.com,windows-driver.net,windows-program.com##+js(nano-setInterval-booster, timer)
 autoinfo24.ru,dp73.spb.ru,dropmefiles.com.ua,dropmefiles.net,gtavicecity.ru,pes-files.ru##+js(nano-setTimeout-booster)
-dzen.ru##+js(nano-setTimeout-booster, '()=>r(t)', 15000)
+dzen.ru##+js(nano-setTimeout-booster, '()=>r(', 15000)
 tv-kanali.online##+js(nano-setTimeout-booster, , 30000, 0.0001)
 rbc.ru##+js(nano-setTimeout-booster, js-article-check-visibility, 2000)
 freetp.org,freetp.ru,online-fix.me##+js(nano-setTimeout-booster, timer)
