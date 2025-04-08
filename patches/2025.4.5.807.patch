@@ -1,8 +1,8 @@
-diff name:ruadlist lines:74 checksum:0bcc445ea9
+diff name:ruadlist lines:81 checksum:61cd09a263
 d4 2
 a5 2
-! Last modified: Tue, 08 Apr 2025 16:34:23 +0000
-! Diff-Path: ../patches/2025.4.8.994.patch#ruadlist
+! Last modified: Tue, 08 Apr 2025 21:24:56 +0000
+! Diff-Path: ../patches/2025.4.8.1284.patch#ruadlist
 a8789 1
 ~betcity.ru##a[href*="betcity.ru/"]
 a13874 1
@@ -16,7 +16,7 @@ glav.su#?#.f-i121-3 > .tbl:-abp-has(script)
 a18226 1
 hevcclub.com##.sticky-top > div > .card:first-child
 a18826 1
-glav.su#?#:-abp-has(> div[id^="js-hb-"]:first-child
+glav.su#?#:-abp-has(> div[id^="js-hb-"]:first-child)
 d20205 1
 d20374 1
 d21966 1
@@ -41,6 +41,13 @@ d26245 1
 a26245 1
 24pdd.ru,nullcms.ru#?#body > div[id][class]:-abp-has(> div[id][class] [class^="adblock"])
 d26604 1
+a26613 2
+click-or-die.ru##a[href*="://kik.cat/"]:style(pointer-events: none !important; color: inherit !important)
+! ---
+d26916 2
+a26917 2
+ag,biz,buzz,by,city,club,co,com,fi,in,ink,kim,loan,me,name,net,org,pub,rest,run,sh,si,so,space,su,today,tv,vip,website,win##body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"] > [id$="er"]:nth-child(-n+3):style(width: unset !important)
+ag,biz,buzz,by,city,club,co,com,fi,in,ink,kim,loan,me,name,net,org,pub,rest,run,sh,si,so,space,su,today,tv,vip,website,win##body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"]:style(padding-top: 0 !important; background-color: inherit !important)
 d27870 3
 a27872 1
 dzen.ru##div[class*="videoSite"] [aria-label] > div[id]
