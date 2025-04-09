@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 09 Apr 2025 12:53:05 +0000
-! Diff-Path: ../patches/2025.4.9.773.patch#ruadlist
+! Last modified: Wed, 09 Apr 2025 17:25:43 +0000
+! Diff-Path: ../patches/2025.4.9.1045.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -7837,12 +7837,12 @@ _verified.php?code=*&server=runetki.com
 /backlinks.
 /baner.
 /baner/*$domain=~barva.km.ua|~churchjc.com|~ferr-um.ucoz.ru|~fitlife62.ru|~helpsetup.ru|~market-oz.ru|~slovo-shop.ru|~stalker-2-2012.ucoz.net|~stocking.com.ua|~zokko.com.ua
-/baner_$domain=~aplica.pl|~brabrabra.ua|~campworld.com.ua|~churchjc.com|~food16.ru|~nenc.gov.ua|~pcmart.com.ua|~pizzamel.ru|~planetarium.dn.ua|~tambov.gov.ru|~triatek.com.ua|~uslugi.mosreg.ru|~work-pulse.ru|~zippo.net.ua
+/baner_$domain=~aplica.pl|~brabrabra.ua|~campworld.com.ua|~churchjc.com|~food16.ru|~nenc.gov.ua|~pcmart.com.ua|~pizzamel.ru|~planetarium.dn.ua|~tambov.gov.ru|~triatek.com.ua|~uslugi.mosreg.ru|~zippo.net.ua
 /baners/*$domain=~altera-auto.ru|~masterps.com.ua|~mgpk.bntu.by|~mirofox.ru|~redbubbles.ru|~vyviska.com.ua|~xn--100-8cdz0be5b.xn--p1ai|~xn--40-6kcayb8aoh7afog0b.xn--p1ai
 /banmas/index.php?informer=
-/banner.gif$domain=~e.aviasales.ru|~limehd.tv|~litehd.tv|~russia-tv.online|~work-pulse.ru|~xcom-shop.ru
+/banner.gif$domain=~e.aviasales.ru|~xcom-shop.ru
 /banner.png$third-party,domain=~drakescans.com|~github.com|~kirmuseum.org
-/banner2.gif
+/banner2.gif$domain=~limehd.tv|~litehd.tv|~pervyi-tv.online|~russia-tv.online
 /banner_$object
 /banner_l*.php?pubId=$third-party,script
 /bannerex.cgi/getbanner.js?id=
@@ -13654,7 +13654,7 @@ www.i.ua###Premium
 7days.ru###RutubePlayerNews
 urod.ru###Stage
 myzuka.club###TVZavr
-flicksbar.fun,flicksbar.info,flicksbar.mom###TopAdMb
+flcksbr.top,flicksbar.fun,flicksbar.info,flicksbar.mom###TopAdMb
 smartpress.by###TopBox
 videovegas.ru###VegasHeadAds
 sport-express.net,sport-express.ru###_ad_container_
@@ -15823,7 +15823,7 @@ ggscore.com##.br-body
 ggscore.com##.br-col
 riotpixels.com##.br-new
 gdeetotdom.ru##.bracing-banner
-agroinfo.kz,flicksbar.fun,flicksbar.info,flicksbar.mom,livejournal.com##.brand
+agroinfo.kz,flcksbr.top,flicksbar.fun,flicksbar.info,flicksbar.mom,livejournal.com##.brand
 smolensk2.ru##.brand-banner
 bnkirov.ru##.brand-bg
 gamegpu.com##.brand-block
@@ -20824,7 +20824,7 @@ root-nation.com##div[class^="td-header"] .td-stretch-content
 glavpost.com,ittour.com.ua,meta.ua,prohondroz.ru##div[class^="teaser"]
 dlltop.ru##div[class^="tm-article-banner"]
 odeve.ru##div[class^="toneBlock"]
-flicksbar.fun,flicksbar.info,flicksbar.mom##div[class^="topAd"]
+flcksbr.top,flicksbar.fun,flicksbar.info,flicksbar.mom##div[class^="topAd"]
 life-reactor.com##div[class^="top_baner"]
 tproger.ru##div[class^="tp-"][class$="-top-container"]
 formulalubvi.com##div[class^="traffic-video"]
@@ -22030,6 +22030,7 @@ drive2.ru##[data-sticky-adtune]
 drive2.ru##[data-test="AdKebabAndLabel--adLabelContent"]
 dzen.ru,liveinternet.ru##[data-wrapper]
 dzen.ru##[data_name]
+~dzen.ru##[href^="https://dzen.ru/"]
 vk.com,vk.ru##[id^="post-"] > ._post_content > :only-child
 lena-miro.ru,levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##[role="banner"] > .s-header-extra + div[class]
 livejournal.com#?#a:-abp-has(span:-abp-contains(Реклама))
@@ -25123,6 +25124,7 @@ zarulem.ws##td[style^="text-align:center;width:50%"]
 @@||payeer-gift.ru^$generichide
 @@||paypress.ru^$generichide
 @@||persey.if.ua^$generichide
+@@||pervyi-tv.online^$generichide
 @@||ph4.ru^$generichide
 @@||pixcloud.ru^$generichide
 @@||pkfnpo.ru^$generichide
@@ -26112,7 +26114,7 @@ gbsmp.ru#@#img[width="728"][height="90"]
 @@||www3.doubleclick.net/|$xmlhttprequest,domain=animix.lol
 @@||xksqb.com/native.$script,domain=gwss.ru
 @@||xn--b1ajehof.xn--80asehdb^$script,domain=xn--b1ajehof.xn--80asehdb
-@@||yandex.ru/ads/system/adsdk.js$script,domain=aniboom.one|api-video.khl.ru|gisher.org|karaoke.ru|kino.tricolor.tv|limehd.tv|m24.ru|peers.tv|player.mediavitrina.ru|ren.tv|rutube.ru
+@@||yandex.ru/ads/system/adsdk.js$script,domain=aniboom.one|api-video.khl.ru|gisher.org|karaoke.ru|kino.tricolor.tv|m24.ru|peers.tv|player.mediavitrina.ru|ren.tv|rutube.ru
 @@||yandex.ru/ads/system/context.js|$domain=examenpdd.com|forum.qrz.ru|yvid.ru
 @@||yandex.ru/ads/system/context.js|$script,domain=tvzvezda.ru
 @@||yarik-sat.com/reklama/*.js|$script,domain=yarik-sat.com
@@ -27870,7 +27872,6 @@ disk.yandex.by,disk.yandex.com,disk.yandex.kz,disk.yandex.ru,disk.yandex.uz##div
 dzen.ru##[class*="CardRtb"]
 dzen.ru##[class*="card-rtb"]
 dzen.ru##[class*="desktop"] ~ [id*="teaser"]
-dzen.ru##[id*="_MicroRoot"] div[style*="important"]:style(padding-top: unset !important)
 dzen.ru##[id*="card-rtb"]
 dzen.ru##a[href*="://yandex.ru/an/count/"]
 dzen.ru##a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div
@@ -27878,14 +27879,17 @@ dzen.ru##article[data-card-type*="-promo"]
 dzen.ru##body:style(overflow-y: unset !important)
 dzen.ru##div[class*="--corner-banner_"]
 dzen.ru##div[class*="__bannerContainer"]
-dzen.ru##div[class*="widget"] > div[class*="container"] > div ~ div
+dzen.ru##div[class*="dzen-"][class*="-banner-"]
+dzen.ru##div[class^="dzen-desktop"] > [id] > div[style*="important"]:style(padding-top: unset !important)
 dzen.ru##div[id*="splashscreen"]
+dzen.ru##div[style*="important"] div[class*="__main"]
 ! видео
 dzen.ru##div[class*="videoSite"] [aria-label] > div[id]
 ! статьи
 dzen.ru##.page_article [aria-label] > div[class] > div[id]
 dzen.ru##.page_article [aria-label] div[class*="sideColumn"]
 dzen.ru##[class*="withStickyAdOnArticle"]
+dzen.ru##[class*="yandex-direct"]
 dzen.ru##[data-testid="dzenpro-banner"]
 dzen.ru##div[class*="__articleItem-"] > div > [class*="social"] ~ div
 dzen.ru##div[class*="adContentWrapper"]
@@ -27898,7 +27902,8 @@ dzen.ru##div[id^="article-showcase-"]
 ! новости
 dzen.ru###ad-feed
 dzen.ru##.news-page-layout__content > div[class*="position"]
-dzen.ru##.news-page-layout__content [id^="header-"] ~ div:not(:nth-last-child(-n+2))
+dzen.ru##.news-page-layout__rubricator ~ [id]
+dzen.ru##.news-page-layout__rubricator ~ div:not(:nth-last-child(-n+2))
 dzen.ru##.news-rubric-desktop__adv-column
 dzen.ru##.news-rubric-desktop__news > section > div > div[id]
 dzen.ru##.news-secondary-layout-column__secondary div[id]
@@ -28444,7 +28449,7 @@ strategium.ru##+js(no-setTimeout-if, adblock)
 fonmod.com##+js(no-setTimeout-if, ai_adb)
 aqicn.org##+js(no-setTimeout-if, alert, 15000)
 tragtorr.in,tragtorr.info##+js(no-setTimeout-if, antyadb, 5000)
-limehd.tv,litehd.tv,russia-tv.online##+js(no-setTimeout-if, clientHeight, 2000)
+limehd.tv,litehd.tv,pervyi-tv.online,russia-tv.online##+js(no-setTimeout-if, clientHeight, 2000)
 tv-kanali.online##+js(no-setTimeout-if, doAd)
 tradingview.com##+js(no-setTimeout-if, evercookie, 300000)
 fonmod.com##+js(no-setTimeout-if, getComputedStyle, 250)

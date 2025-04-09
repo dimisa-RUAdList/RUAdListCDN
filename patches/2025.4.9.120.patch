@@ -1,13 +1,33 @@
-diff name:ruadlist lines:22 checksum:cd62a30de3
+diff name:ruadlist lines:60 checksum:f6cc51cb8a
 d4 2
 a5 2
-! Last modified: Wed, 09 Apr 2025 12:53:05 +0000
-! Diff-Path: ../patches/2025.4.9.773.patch#ruadlist
+! Last modified: Wed, 09 Apr 2025 17:25:43 +0000
+! Diff-Path: ../patches/2025.4.9.1045.patch#ruadlist
 a6533 1
 ||vidalak.com^$third-party
+d7839 1
+a7839 1
+/baner_$domain=~aplica.pl|~brabrabra.ua|~campworld.com.ua|~churchjc.com|~food16.ru|~nenc.gov.ua|~pcmart.com.ua|~pizzamel.ru|~planetarium.dn.ua|~tambov.gov.ru|~triatek.com.ua|~uslugi.mosreg.ru|~zippo.net.ua
+d7842 1
+a7842 1
+/banner.gif$domain=~e.aviasales.ru|~xcom-shop.ru
+d7844 1
+a7844 1
+/banner2.gif$domain=~limehd.tv|~litehd.tv|~pervyi-tv.online|~russia-tv.online
+d13656 1
+a13656 1
+flcksbr.top,flicksbar.fun,flicksbar.info,flicksbar.mom###TopAdMb
+d15825 1
+a15825 1
+agroinfo.kz,flcksbr.top,flicksbar.fun,flicksbar.info,flicksbar.mom,livejournal.com##.brand
+d20826 1
+a20826 1
+flcksbr.top,flicksbar.fun,flicksbar.info,flicksbar.mom##div[class^="topAd"]
 d21971 1
 a21971 1
 ||pikabu.ru/ajax/*?ga86q=$xmlhttprequest
+a22031 1
+~dzen.ru##[href^="https://dzen.ru/"]
 a22730 1
 championat.com##.game-of-day
 a22807 1
@@ -15,9 +35,27 @@ a22807 1
 d23174 1
 a23174 1
 yandex.ru,yandex.*##div[class^="FeedAdvBlockRenderer-"]:empty
+a25122 1
+@@||pervyi-tv.online^$generichide
+d26112 1
+a26112 1
+@@||yandex.ru/ads/system/adsdk.js$script,domain=aniboom.one|api-video.khl.ru|gisher.org|karaoke.ru|kino.tricolor.tv|m24.ru|peers.tv|player.mediavitrina.ru|ren.tv|rutube.ru
+d27870 1
+d27878 1
+a27878 2
+dzen.ru##div[class*="dzen-"][class*="-banner-"]
+dzen.ru##div[class^="dzen-desktop"] > [id] > div[style*="important"]:style(padding-top: unset !important)
+a27879 1
+dzen.ru##div[style*="important"] div[class*="__main"]
+a27885 1
+dzen.ru##[class*="yandex-direct"]
 d27897 1
-a27898 1
-dzen.ru##.news-page-layout__content [id^="header-"] ~ div:not(:nth-last-child(-n+2))
+a27898 2
+dzen.ru##.news-page-layout__rubricator ~ [id]
+dzen.ru##.news-page-layout__rubricator ~ div:not(:nth-last-child(-n+2))
 d27903 1
 a28396 1
 vc.ru##+js(href-sanitizer, a[href^="https://go.2038.pro/"][href*="?dl="], ?dl)
+d28444 1
+a28444 1
+limehd.tv,litehd.tv,pervyi-tv.online,russia-tv.online##+js(no-setTimeout-if, clientHeight, 2000)

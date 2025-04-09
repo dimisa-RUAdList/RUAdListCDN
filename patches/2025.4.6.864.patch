@@ -1,14 +1,29 @@
-diff name:ruadlist lines:63 checksum:cd62a30de3
+diff name:ruadlist lines:101 checksum:f6cc51cb8a
 d4 2
 a5 2
-! Last modified: Wed, 09 Apr 2025 12:53:05 +0000
-! Diff-Path: ../patches/2025.4.9.773.patch#ruadlist
+! Last modified: Wed, 09 Apr 2025 17:25:43 +0000
+! Diff-Path: ../patches/2025.4.9.1045.patch#ruadlist
 a6533 1
 ||vidalak.com^$third-party
+d7839 1
+a7839 1
+/baner_$domain=~aplica.pl|~brabrabra.ua|~campworld.com.ua|~churchjc.com|~food16.ru|~nenc.gov.ua|~pcmart.com.ua|~pizzamel.ru|~planetarium.dn.ua|~tambov.gov.ru|~triatek.com.ua|~uslugi.mosreg.ru|~zippo.net.ua
+d7842 1
+a7842 1
+/banner.gif$domain=~e.aviasales.ru|~xcom-shop.ru
+d7844 1
+a7844 1
+/banner2.gif$domain=~limehd.tv|~litehd.tv|~pervyi-tv.online|~russia-tv.online
+d13656 1
+a13656 1
+flcksbr.top,flicksbar.fun,flicksbar.info,flicksbar.mom###TopAdMb
 a13875 1
 megapeer.top,megapeer.vip###clickunder
 a14175 1
 glav.su###l-c-w > table:first-child + br + [class]
+d15823 1
+a15823 1
+agroinfo.kz,flcksbr.top,flicksbar.fun,flicksbar.info,flicksbar.mom,livejournal.com##.brand
 a16303 1
 glav.su#?#.f-i121-3 > .tbl:-abp-has(script)
 a18228 1
@@ -17,9 +32,14 @@ a18828 1
 glav.su#?#:-abp-has(> div[id^="js-hb-"]:first-child)
 d20207 1
 d20376 1
+d20823 1
+a20823 1
+flcksbr.top,flicksbar.fun,flicksbar.info,flicksbar.mom##div[class^="topAd"]
 d21968 1
 a21968 1
 ||pikabu.ru/ajax/*?ga86q=$xmlhttprequest
+a22028 1
+~dzen.ru##[href^="https://dzen.ru/"]
 a22727 1
 championat.com##.game-of-day
 a22804 1
@@ -30,6 +50,11 @@ yandex.ru,yandex.*##div[class^="FeedAdvBlockRenderer-"]:empty
 d23211 1
 a23211 1
 dzen.ru#?#article:-abp-has(> div[data-ad-type])
+a25119 1
+@@||pervyi-tv.online^$generichide
+d26109 1
+a26109 1
+@@||yandex.ru/ads/system/adsdk.js$script,domain=aniboom.one|api-video.khl.ru|gisher.org|karaoke.ru|kino.tricolor.tv|m24.ru|peers.tv|player.mediavitrina.ru|ren.tv|rutube.ru
 a26619 2
 click-or-die.ru##a[href*="://kik.cat/"]:style(pointer-events: none !important; color: inherit !important)
 ! ---
@@ -37,18 +62,28 @@ d26922 2
 a26923 2
 ag,biz,buzz,by,city,club,co,com,fi,in,ink,kim,loan,me,name,net,org,pub,rest,run,sh,si,so,space,su,today,tv,vip,website,win##body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"] > [id$="er"]:nth-child(-n+3):style(width: unset !important)
 ag,biz,buzz,by,city,club,co,com,fi,in,ink,kim,loan,me,name,net,org,pub,rest,run,sh,si,so,space,su,today,tv,vip,website,win##body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"]:style(padding-top: 0 !important; background-color: inherit !important)
+d27865 1
+d27873 1
+a27873 2
+dzen.ru##div[class*="dzen-"][class*="-banner-"]
+dzen.ru##div[class^="dzen-desktop"] > [id] > div[style*="important"]:style(padding-top: unset !important)
+a27874 1
+dzen.ru##div[style*="important"] div[class*="__main"]
 d27876 3
 a27878 1
 dzen.ru##div[class*="videoSite"] [aria-label] > div[id]
 d27880 1
 a27881 1
 dzen.ru##.page_article [aria-label] div[class*="sideColumn"]
+a27882 1
+dzen.ru##[class*="yandex-direct"]
 d27884 1
 a27884 1
 dzen.ru##div[class*="__articleItem-"] > div > [class*="social"] ~ div
 d27894 1
-a27895 1
-dzen.ru##.news-page-layout__content [id^="header-"] ~ div:not(:nth-last-child(-n+2))
+a27895 2
+dzen.ru##.news-page-layout__rubricator ~ [id]
+dzen.ru##.news-page-layout__rubricator ~ div:not(:nth-last-child(-n+2))
 a27896 1
 dzen.ru##.news-rubric-desktop__news > section > div > div[id]
 d27898 1
@@ -62,3 +97,6 @@ vc.ru##+js(href-sanitizer, a[href^="https://go.2038.pro/"][href*="?dl="], ?dl)
 d28419 1
 a28419 1
 dzen.ru##+js(nano-setTimeout-booster, '()=>r(', 15000)
+d28441 1
+a28441 1
+limehd.tv,litehd.tv,pervyi-tv.online,russia-tv.online##+js(no-setTimeout-if, clientHeight, 2000)
