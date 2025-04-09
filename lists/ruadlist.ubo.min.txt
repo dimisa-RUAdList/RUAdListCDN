@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 09 Apr 2025 07:25:51 +0000
-! Diff-Path: ../patches/2025.4.9.445.patch#ruadlist
+! Last modified: Wed, 09 Apr 2025 12:53:05 +0000
+! Diff-Path: ../patches/2025.4.9.773.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -6531,6 +6531,7 @@
 ||viaqoo.tech^$third-party
 ||viavideo.digital^$third-party
 ||vicodes.com^$third-party
+||vidalak.com^$third-party
 ||vidasys.ru^$third-party
 ||vidaugust.ru^
 ||videc10.com^
@@ -22728,6 +22729,7 @@ vp.rambler.ru##.eagleplayer-advertisement-remain-time
 vp.rambler.ru##.eplayer-time-to-ad
 finance.rambler.ru##.finance__partners
 horoscopes.rambler.ru##.fzwuC
+championat.com##.game-of-day
 championat.com##.header-bottom__adv
 championat.com##.infographic-countdown
 championat.com##.infographic-duel
@@ -22805,6 +22807,7 @@ avtorambler.com,rambler.ru##div[style^="min-height:400px"]
 avtorambler.com,rambler.ru##div[style^="min-height:600px"]
 avtorambler.com,rambler.ru##div[style^="order:"][style*="-1"]
 |rambler.ru/*/okko-metrics
+||championat.com/embeds/custom.css
 ||img.championat.com/brand/*.png
 ||kraken.rambler.ru^$domain=~kraken.rambler.ru
 ||lenta.ru/fenwick
@@ -23171,7 +23174,7 @@ yandex.ru##div[id^="R-I-"]
 ! Яндекс.Игры
 yandex.ru,yandex.*##.grid-list__game-item_adv
 yandex.ru,yandex.*##.stack > .promo
-yandex.ru,yandex.*##div[class^="FeedAdvBlockRenderer-critical-module__banner"]:empty
+yandex.ru,yandex.*##div[class^="FeedAdvBlockRenderer-"]:empty
 ! Яндекс.Музыка
 music.yandex.ru,music.yandex.*##.bar__driver-container
 music.yandex.ru,music.yandex.*##[class^="audio-advert"]
@@ -27894,13 +27897,12 @@ dzen.ru##div[id$="-rtb"]
 dzen.ru##div[id^="article-showcase-"]
 ! новости
 dzen.ru###ad-feed
-dzen.ru##.news-page-layout__content > [id^="header-"] ~ [id]
 dzen.ru##.news-page-layout__content > div[class*="position"]
+dzen.ru##.news-page-layout__content [id^="header-"] ~ div:not(:nth-last-child(-n+2))
 dzen.ru##.news-rubric-desktop__adv-column
 dzen.ru##.news-rubric-desktop__news > section > div > div[id]
 dzen.ru##.news-secondary-layout-column__secondary div[id]
 dzen.ru##[class^="news-site--Infinite"][class*="AdColumnItem-desktop__content"] > div[id*="-column_top"]
-dzen.ru##div[class*="guat"]
 dzen.ru,sportsdzen.ru##div[class^="news-site-"][class*="skeleton"]:style(background-color: transparent !important)
 dzen.ru##div[class^="news-site--"] > section ~ [id]
 dzen.ru##div[id^="ad-"][class*=" news-"]
@@ -28394,6 +28396,7 @@ lifehacker.ru##+js(href-sanitizer, a[href][rel*="sponsored"][target="_blank"], ?
 hot.game##+js(href-sanitizer, a[href][target="_blank"][rel="nofollow"], ?ulp)
 www.ixbt.com##+js(href-sanitizer, a[href^="//www.ixbt.com/click/?c="], [title])
 wotspeak.org##+js(href-sanitizer, a[href^="/engine/dwn"], ?xf)
+vc.ru##+js(href-sanitizer, a[href^="https://go.2038.pro/"][href*="?dl="], ?dl)
 pikabu.ru##+js(href-sanitizer, a[href^="https://pikabu.ru/"][href*="?u=http"], ?u)
 nsportal.ru##+js(href-sanitizer, a[href^="https://www.google.com/url?q="])
 youtube.com##+js(href-sanitizer, a[href^="https://www.youtube.com/redirect?event="][href*="&q=http"], ?q)

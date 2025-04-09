@@ -1,8 +1,10 @@
-diff name:ruadlist lines:60 checksum:47ef8f38b0
+diff name:ruadlist lines:70 checksum:cd62a30de3
 d4 2
 a5 2
-! Last modified: Wed, 09 Apr 2025 07:25:51 +0000
-! Diff-Path: ../patches/2025.4.9.445.patch#ruadlist
+! Last modified: Wed, 09 Apr 2025 12:53:05 +0000
+! Diff-Path: ../patches/2025.4.9.773.patch#ruadlist
+a6533 1
+||vidalak.com^$third-party
 a13875 1
 megapeer.top,megapeer.vip###clickunder
 a14175 1
@@ -20,6 +22,13 @@ d20375 1
 d21967 1
 a21967 1
 ||pikabu.ru/ajax/*?ga86q=$xmlhttprequest
+a22726 1
+championat.com##.game-of-day
+a22803 1
+||championat.com/embeds/custom.css
+d23170 1
+a23170 1
+yandex.ru,yandex.*##div[class^="FeedAdvBlockRenderer-"]:empty
 d23210 1
 a23210 1
 dzen.ru#?#article:-abp-has(> div[data-ad-type])
@@ -43,17 +52,18 @@ d27883 1
 a27883 1
 dzen.ru##div[class*="__articleItem-"] > div > [class*="social"] ~ div
 d27893 1
-a27893 1
-dzen.ru##.news-page-layout__content > [id^="header-"] ~ [id]
+a27894 1
+dzen.ru##.news-page-layout__content [id^="header-"] ~ div:not(:nth-last-child(-n+2))
 a27895 1
 dzen.ru##.news-rubric-desktop__news > section > div > div[id]
 d27897 1
-a27897 2
+a27897 1
 dzen.ru##[class^="news-site--Infinite"][class*="AdColumnItem-desktop__content"] > div[id*="-column_top"]
-dzen.ru##div[class*="guat"]
 d27899 3
 a27901 1
 dzen.ru##div[class^="news-site--"] > section ~ [id]
+a28392 1
+vc.ru##+js(href-sanitizer, a[href^="https://go.2038.pro/"][href*="?dl="], ?dl)
 d28418 1
 a28418 1
 dzen.ru##+js(nano-setTimeout-booster, '()=>r(', 15000)

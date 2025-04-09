@@ -1,8 +1,10 @@
-diff name:ruadlist lines:81 checksum:47ef8f38b0
+diff name:ruadlist lines:90 checksum:cd62a30de3
 d4 2
 a5 2
-! Last modified: Wed, 09 Apr 2025 07:25:51 +0000
-! Diff-Path: ../patches/2025.4.9.445.patch#ruadlist
+! Last modified: Wed, 09 Apr 2025 12:53:05 +0000
+! Diff-Path: ../patches/2025.4.9.773.patch#ruadlist
+a6533 1
+||vidalak.com^$third-party
 a8789 1
 ~betcity.ru##a[href*="betcity.ru/"]
 a13874 1
@@ -24,16 +26,22 @@ a21966 1
 ||pikabu.ru/ajax/*?ga86q=$xmlhttprequest
 a22711 1
 championat.com##.adv-mark
+a22724 1
+championat.com##.game-of-day
 a22743 1
 championat.com##[data-goal-label="coeff_fonbet"]
 a22744 1
 championat.com##[data-href*="utm_"]
 d22800 1
-a22800 1
+a22800 2
+||championat.com/embeds/custom.css
 ||img.championat.com/brand/*.png
 a22894 2
 sports.ru###media-promo-mount-point [class*="adv-text"]
 sports.ru###media-promo-mount-point a[href*="://sirena.world/"]
+d23164 1
+a23164 1
+yandex.ru,yandex.*##div[class^="FeedAdvBlockRenderer-"]:empty
 d23204 1
 a23204 1
 dzen.ru#?#article:-abp-has(> div[data-ad-type])
@@ -58,17 +66,18 @@ d27878 1
 a27878 1
 dzen.ru##div[class*="__articleItem-"] > div > [class*="social"] ~ div
 d27888 1
-a27888 1
-dzen.ru##.news-page-layout__content > [id^="header-"] ~ [id]
+a27889 1
+dzen.ru##.news-page-layout__content [id^="header-"] ~ div:not(:nth-last-child(-n+2))
 a27890 1
 dzen.ru##.news-rubric-desktop__news > section > div > div[id]
 d27892 1
-a27892 2
+a27892 1
 dzen.ru##[class^="news-site--Infinite"][class*="AdColumnItem-desktop__content"] > div[id*="-column_top"]
-dzen.ru##div[class*="guat"]
 d27894 3
 a27896 1
 dzen.ru##div[class^="news-site--"] > section ~ [id]
+a28387 1
+vc.ru##+js(href-sanitizer, a[href^="https://go.2038.pro/"][href*="?dl="], ?dl)
 d28413 1
 a28413 1
 dzen.ru##+js(nano-setTimeout-booster, '()=>r(', 15000)
