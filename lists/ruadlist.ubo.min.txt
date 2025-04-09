@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 09 Apr 2025 17:25:43 +0000
-! Diff-Path: ../patches/2025.4.9.1045.patch#ruadlist
+! Last modified: Wed, 09 Apr 2025 22:26:48 +0000
+! Diff-Path: ../patches/2025.4.9.1346.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -26642,7 +26642,7 @@ coub.com##header[class="header -transparent"]:style(background: #e0e0e0 !importa
 cpa.rip###page-wrapper > header:style(margin-bottom: auto !important)
 ! ---
 cq.ru##.box[class*="content"]:style(margin-top: auto !important)
-cq.ru##article[data-post-url^="https://cq.ru/articles/tech/"] .cq-code-block a[href][rel="nofollow"]:not([href^="/"]):not([href^="https://cq.ru/"]):style(pointer-events: none !important; color: inherit !important)
+cq.ru##article[data-post-url^="https://cq.ru/articles/tech/"] a[href][rel="nofollow"]:not([href^="/"]):not([href^="https://cq.ru/"]):style(pointer-events: none !important; color: inherit !important)
 ! ---
 creativportal.ru##.pocaz:style(width: 10px !important; height: 10px !important; position: fixed !important; top:-100px !important)
 ! ---

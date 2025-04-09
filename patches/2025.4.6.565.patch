@@ -1,8 +1,8 @@
-diff name:ruadlist lines:108 checksum:f6cc51cb8a
+diff name:ruadlist lines:111 checksum:bc3e2d407b
 d4 2
 a5 2
-! Last modified: Wed, 09 Apr 2025 17:25:43 +0000
-! Diff-Path: ../patches/2025.4.9.1045.patch#ruadlist
+! Last modified: Wed, 09 Apr 2025 22:26:48 +0000
+! Diff-Path: ../patches/2025.4.9.1346.patch#ruadlist
 a6533 1
 ||vidalak.com^$third-party
 d7839 1
@@ -63,6 +63,9 @@ a26251 1
 a26618 2
 click-or-die.ru##a[href*="://kik.cat/"]:style(pointer-events: none !important; color: inherit !important)
 ! ---
+d26634 1
+a26634 1
+cq.ru##article[data-post-url^="https://cq.ru/articles/tech/"] a[href][rel="nofollow"]:not([href^="/"]):not([href^="https://cq.ru/"]):style(pointer-events: none !important; color: inherit !important)
 d26921 2
 a26922 2
 ag,biz,buzz,by,city,club,co,com,fi,in,ink,kim,loan,me,name,net,org,pub,rest,run,sh,si,so,space,su,today,tv,vip,website,win##body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"] > [id$="er"]:nth-child(-n+3):style(width: unset !important)
