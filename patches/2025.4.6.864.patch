@@ -1,8 +1,8 @@
-diff name:ruadlist lines:104 checksum:c81aaaddbb
+diff name:ruadlist lines:106 checksum:214af48bb7
 d4 2
 a5 2
-! Last modified: Thu, 10 Apr 2025 08:33:47 +0000
-! Diff-Path: ../patches/2025.4.10.513.patch#ruadlist
+! Last modified: Thu, 10 Apr 2025 13:34:29 +0000
+! Diff-Path: ../patches/2025.4.10.814.patch#ruadlist
 a6533 1
 ||vidalak.com^$third-party
 d7839 1
@@ -95,6 +95,8 @@ dzen.ru##[class^="news-site--Infinite"][class*="AdColumnItem-desktop__content"] 
 d27900 3
 a27902 1
 dzen.ru##div[class^="news-site--"] > section ~ [id]
+a28377 1
+portalvirtualreality.ru##+js(href-sanitizer, a[href*="&link=https://"], ?link)
 a28393 1
 vc.ru##+js(href-sanitizer, a[href^="https://go.2038.pro/"][href*="?dl="], ?dl)
 d28419 1
