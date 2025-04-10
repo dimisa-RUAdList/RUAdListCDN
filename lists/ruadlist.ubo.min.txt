@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 10 Apr 2025 13:34:29 +0000
-! Diff-Path: ../patches/2025.4.10.814.patch#ruadlist
+! Last modified: Thu, 10 Apr 2025 18:33:21 +0000
+! Diff-Path: ../patches/2025.4.10.1113.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22022,19 +22022,16 @@ fonmod.com,ritsatv.ru##:not(my-obnaruzhili-blokirovshchik)
 android-mafia.com,game4you.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##:not(this-site-promotes-malware)
 @@||fearmp4.ru^$generichide
 @@||ozon.ru/highlight/kursk-$elemhide
-dzen.ru#?#[class]:-abp-has(> a[href^="https://dzen.ru/"][class*="link"][class*="tabContent"] [class] > [class] > [class] > [class])
 drive2.ru##[data-container="outer"]
 liveinternet.ru,sdamgia.ru##[data-container]
 sdamgia.ru##[data-name="partial-container"]
 drive2.ru##[data-sticky-adtune]
 drive2.ru##[data-test="AdKebabAndLabel--adLabelContent"]
-dzen.ru,liveinternet.ru##[data-wrapper]
-dzen.ru##[data_name]
-~dzen.ru##[href^="https://dzen.ru/"]
+liveinternet.ru##[data-wrapper]
+~dzen.ru##[href^="https://dzen.ru"]
 vk.com,vk.ru##[id^="post-"] > ._post_content > :only-child
 lena-miro.ru,levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##[role="banner"] > .s-header-extra + div[class]
 livejournal.com#?#a:-abp-has(span:-abp-contains(Реклама))
-dzen.ru##a[href^="https://dzen.ru/"][class*="link"][class*="tabContent"] [class] > [class] > [class] > [class]
 pikabu.ru##article.story[data-text-length="1"]
 kp.kg,kp.kz,kp.md,kp.ru#?#body > #app div:-abp-properties(background-color: rgb(225, 231, 235))
 www.e1.ru#?#body > script[src^="https://www.e1.ru/"] ~ #app [itemprop] > figure:-abp-has(span:-abp-contains(чуть-чуть и видео загрузится))
@@ -22050,10 +22047,8 @@ www.e1.ru#?#body > script[src^="https://www.e1.ru/"] ~ #app [itemprop] > figure:
 ~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] p:-abp-properties(overflow-x: hidden)
 ~e.mail.ru,mail.ru,~octavius.mail.ru#?#body[style="overflow: unset; max-height: unset;"] section:-abp-properties(overflow-x: hidden)
 sdamgia.ru##center > div[id][style]
-dzen.ru#?#div:-abp-has(> div:first-child > style + div a span)
 cq.ru#?#div:-abp-properties(content: "Реклама")
 drive2.ru#?#div:-abp-properties(min-height: 555px)
-dzen.ru#?#div:-abp-properties(position: relative !important)
 otvet.mail.ru#?#div:empty:-abp-properties(content: "Реклама")
 drive2.ru##div[class$="--equal"] > div[class] > div:not([class]):not([id])
 drive2.ru##div[class$="--equal"] > div[class] > div[id]:not(:empty)
@@ -22445,6 +22440,7 @@ love.mail.ru##.link-ad
 ||bs.mail.ru^$image,domain=mail.ru
 ||help.mail.ru/mail/faq/adblock$popup,~third-party
 ||horo.mail.ru/*/fast-slot.js
+||mail.ru^$domain=dzen.ru
 ||mamba.ru/images/*/promo/
 ||media-advcycle.imgsmail.ru^$third-party
 ||media-stat.mail.ru^
@@ -23830,7 +23826,7 @@ zarulem.ws##td[style^="text-align:center;width:50%"]
 ||drweb.com/pix/$object
 ||duuw.nm.ru^
 ||dverizamki.org/bshow/
-||dzen.ru/widget-loader$third-party
+||dzen.ru^$third-party
 ||e-links.ru^
 ||e-mint.ru^$third-party
 ||e-place.ru^
@@ -27887,7 +27883,7 @@ dzen.ru##div[style*="important"] div[class*="__main"]
 dzen.ru##div[class*="videoSite"] [aria-label] > div[id]
 ! статьи
 dzen.ru##.page_article [aria-label] > div[class] > div[id]
-dzen.ru##.page_article [aria-label] div[class*="sideColumn"]
+dzen.ru##.page_article [aria-label] div[style^="max-height:"]
 dzen.ru##[class*="withStickyAdOnArticle"]
 dzen.ru##[class*="yandex-direct"]
 dzen.ru##[data-testid="dzenpro-banner"]
@@ -27907,6 +27903,7 @@ dzen.ru##.news-page-layout__rubricator ~ div:not(:nth-last-child(-n+2))
 dzen.ru##.news-rubric-desktop__adv-column
 dzen.ru##.news-rubric-desktop__news > section > div > div[id]
 dzen.ru##.news-secondary-layout-column__secondary div[id]
+dzen.ru##.news-story-page__app .news-page-layout__rubricator + div[class*=" "]
 dzen.ru##[class^="news-site--Infinite"][class*="AdColumnItem-desktop__content"] > div[id*="-column_top"]
 dzen.ru,sportsdzen.ru##div[class^="news-site-"][class*="skeleton"]:style(background-color: transparent !important)
 dzen.ru##div[class^="news-site--"] > section ~ [id]
@@ -28665,6 +28662,7 @@ online-fix.me##a.btn-success[href^="https://online-fix.me/ext/"]:remove-class(bt
 trupornolabs.org#@#a[href*="://pronpic.org/"]
 online-fix.me##a[href*=":2053"]:remove-class(btn)
 aniu.ru,liveball.*##+js(no-setInterval-if, debugger)
+dzen.ru##article:has(> div:matches-attr(/data-[a-z0-9]/=/direct|mytarget/))
 autonews.co.ua,in-poland.com,liveball.*,ukrainianwall.com##+js(addEventListener-defuser, /contextmenu|copy|keydown|selectstart/)
 kp.kg,kp.kz,kp.md,kp.ru##body > #app div:matches-css(background-color: rgb(225, 231, 235))
 4pda.to##body > #ipbwrapper > script + div > table > tbody > tr > td[width] + td

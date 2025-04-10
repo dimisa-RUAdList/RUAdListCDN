@@ -1,10 +1,30 @@
-diff name:ruadlist lines:9 checksum:214af48bb7
+diff name:ruadlist lines:29 checksum:8d0129bdcb
 d4 2
 a5 2
-! Last modified: Thu, 10 Apr 2025 13:34:29 +0000
-! Diff-Path: ../patches/2025.4.10.814.patch#ruadlist
+! Last modified: Thu, 10 Apr 2025 18:33:21 +0000
+! Diff-Path: ../patches/2025.4.10.1113.patch#ruadlist
 d21972 1
 a21972 1
 ||pikabu.ru/ajax/*?j0gpe=$xmlhttprequest
+d22025 1
+d22031 3
+a22033 2
+liveinternet.ru##[data-wrapper]
+~dzen.ru##[href^="https://dzen.ru"]
+d22037 1
+d22053 1
+d22056 1
+a22447 1
+||mail.ru^$domain=dzen.ru
+d23833 1
+a23833 1
+||dzen.ru^$third-party
+d27890 1
+a27890 1
+dzen.ru##.page_article [aria-label] div[style^="max-height:"]
+a27909 1
+dzen.ru##.news-story-page__app .news-page-layout__rubricator + div[class*=" "]
 a28387 1
 portalvirtualreality.ru##+js(href-sanitizer, a[href*="&link=https://"], ?link)
+a28666 1
+dzen.ru##article:has(> div:matches-attr(/data-[a-z0-9]/=/direct|mytarget/))

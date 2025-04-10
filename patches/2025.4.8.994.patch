@@ -1,8 +1,8 @@
-diff name:ruadlist lines:75 checksum:214af48bb7
+diff name:ruadlist lines:93 checksum:8d0129bdcb
 d4 2
 a5 2
-! Last modified: Thu, 10 Apr 2025 13:34:29 +0000
-! Diff-Path: ../patches/2025.4.10.814.patch#ruadlist
+! Last modified: Thu, 10 Apr 2025 18:33:21 +0000
+! Diff-Path: ../patches/2025.4.10.1113.patch#ruadlist
 a6533 1
 ||vidalak.com^$third-party
 d7839 1
@@ -29,8 +29,16 @@ flcksbr.top,flicksbar.fun,flicksbar.info,flicksbar.mom##div[class^="topAd"]
 d21971 1
 a21971 1
 ||pikabu.ru/ajax/*?j0gpe=$xmlhttprequest
-a22031 1
-~dzen.ru##[href^="https://dzen.ru/"]
+d22024 1
+d22030 2
+a22031 2
+liveinternet.ru##[data-wrapper]
+~dzen.ru##[href^="https://dzen.ru"]
+d22035 1
+d22051 1
+d22054 1
+a22445 1
+||mail.ru^$domain=dzen.ru
 a22730 1
 championat.com##.game-of-day
 a22807 1
@@ -38,6 +46,9 @@ a22807 1
 d23174 1
 a23174 1
 yandex.ru,yandex.*##div[class^="FeedAdvBlockRenderer-"]:empty
+d23829 1
+a23829 1
+||dzen.ru^$third-party
 a25122 1
 @@||pervyi-tv.online^$generichide
 d26112 1
@@ -60,12 +71,17 @@ dzen.ru##div[class*="dzen-"][class*="-banner-"]
 dzen.ru##div[class^="dzen-desktop"] > [id] > div[style*="important"]:style(padding-top: unset !important)
 a27877 1
 dzen.ru##div[style*="important"] div[class*="__main"]
+d27882 1
+a27882 1
+dzen.ru##.page_article [aria-label] div[style^="max-height:"]
 a27883 1
 dzen.ru##[class*="yandex-direct"]
 d27895 1
 a27896 2
 dzen.ru##.news-page-layout__rubricator ~ [id]
 dzen.ru##.news-page-layout__rubricator ~ div:not(:nth-last-child(-n+2))
+a27899 1
+dzen.ru##.news-story-page__app .news-page-layout__rubricator + div[class*=" "]
 d27901 1
 a28378 1
 portalvirtualreality.ru##+js(href-sanitizer, a[href*="&link=https://"], ?link)
@@ -74,3 +90,5 @@ vc.ru##+js(href-sanitizer, a[href^="https://go.2038.pro/"][href*="?dl="], ?dl)
 d28442 1
 a28442 1
 limehd.tv,litehd.tv,pervyi-tv.online,russia-tv.online##+js(no-setTimeout-if, clientHeight, 2000)
+a28656 1
+dzen.ru##article:has(> div:matches-attr(/data-[a-z0-9]/=/direct|mytarget/))
