@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 14 Apr 2025 12:53:30 +0000
-! Diff-Path: ../patches/2025.4.14.773.patch#ruadlist
+! Last modified: Mon, 14 Apr 2025 17:25:35 +0000
+! Diff-Path: ../patches/2025.4.14.1045.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -28511,7 +28511,7 @@ joyreactor.cc,reactor.cc##+js(set-attr, video, controls, true)
 3dnews.kz,3dnews.ru##+js(set-attr, video[controls="controls"], controls, true)
 peers.tv##+js(set-constant, ADV_DISABLED, true)
 www.ukr.net##+js(set-constant, Clicks._test_meta_referer, null)
-vk.com,vk.ru##+js(set-constant, Element.prototype.attachShadow, noopFunc)
+~m.vk.com,~m.vk.ru,vk.com,vk.ru##+js(set-constant, Element.prototype.attachShadow, noopFunc)
 ivi.ru##+js(set-constant, Object.prototype.AdvObject, noopFunc)
 ictv.ua,inter.ua,k1.ua,novy.tv,ntn.ua,starlight.digital,stb.ua,teleportal.ua##+js(set-constant, Object.prototype.AdvertisementManager, undefined)
 player.vgtrk.com##+js(set-constant, Object.prototype.IS_CHECK_REGISTRATION, false)
