@@ -1,8 +1,8 @@
-diff name:ruadlist lines:79 checksum:f126c5f962
+diff name:ruadlist lines:87 checksum:c38517bad8
 d4 2
 a5 2
-! Last modified: Wed, 16 Apr 2025 04:31:24 +0000
-! Diff-Path: ../patches/2025.4.16.271.patch#ruadlist
+! Last modified: Wed, 16 Apr 2025 09:28:55 +0000
+! Diff-Path: ../patches/2025.4.16.568.patch#ruadlist
 a6535 1
 ||victorycorp.ru^$third-party
 d10085 1
@@ -34,8 +34,9 @@ a15517 1
 bzrus.pro##.banner__promo
 a15658 1
 yougame.biz##.block-body > article#js-post-
-d15928 2
-a15929 2
+d15927 3
+a15929 3
+rudub.biz##.card__description__adv
 bzrus.pro##.card__inner-premium
 bzrus.pro##.card__re-video
 d16302 1
@@ -46,11 +47,14 @@ newsyou.info##.kama-inline-ads
 a17347 1
 yougame.biz##.p-body-inner > p > a[href][target="_blank"]
 d18833 1
+d19316 1
+a19316 1
+ru-dub.xyz,rudub.biz##a[href*=".li"]
 d21971 1
 a21971 3
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
-||pikabu.ru/ajax/*?dmk7r=$xmlhttprequest
+||pikabu.ru/ajax/*?tg30k=$xmlhttprequest
 a22013 1
 newsyou.info##.langblock
 d26558 5
@@ -61,6 +65,10 @@ bzrus.pro##[id^="oframeplayer-"]:style(background-color: transparent !important)
 bzrus.pro##pjsdiv[style*="blur"]:style(filter: none !important)
 bzrus.pro##video:style(filter: none !important)
 ! ---
+d27530 2
+a27531 2
+rudub.biz##.details__bg
+rudub.biz##body > section[class*="section details"]:style(padding-top: 70px !important)
 a28352 1
 doramaland.plus##+js(addEventListener-defuser, DOMContentLoaded, _Modal)
 d28370 1
