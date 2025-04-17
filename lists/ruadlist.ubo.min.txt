@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 17 Apr 2025 15:28:00 +0000
-! Diff-Path: ../patches/2025.4.17.927.patch#ruadlist
+! Last modified: Thu, 17 Apr 2025 20:28:11 +0000
+! Diff-Path: ../patches/2025.4.17.1228.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -15284,6 +15284,7 @@ av.by##.av-branding-bottom
 av.by##.av-branding-top
 pindosoff.net,pornovkisku.com,teplomontag.net##.avr-wrapper
 primanki.com##.avyes
+agronews.ua,agroreview.com##.aw-ads-container
 chas.cv.ua##.awac-wrapper
 bestinfo.am##.awd-hidden-phone
 gsconto.com##.azk-banner
@@ -15763,7 +15764,7 @@ politolog.net##.bnr_300_600
 onlinetrade.ru##.bnr__mark
 armfootball.com##.bnrcontainer
 zagorod.spb.ru##.bnrobject
-akak.ru##.bnrs
+agronews.ua,agroreview.com,akak.ru##.bnrs
 sexvideobaza.net##.bns-bl
 orki.ru##.bnz_horizontal
 staforceteam.ru##.boardlistInner[style="background-image: url(/logo/Standart/TemaLine2.png); background-repeat: repeat-y"]
@@ -22451,8 +22452,8 @@ love.mail.ru##.link-ad
 ||privacy-cs.mail.ru^$third-party
 ||r.mail.ru/*=videoplayer$popup,domain=my.mail.ru
 ||r.mradx.net/$script,domain=auto.mail.ru|deti.mail.ru|health.mail.ru|kino.mail.ru|lady.mail.ru|my.mail.ru|otvet.mail.ru|pets.mail.ru|pogoda.mail.ru|tv.mail.ru
-||r.mradx.net/*link1=$subdocument
 ||r.mradx.net/r/$script
+||r.mradx.net^$subdocument
 ||radar.imgsmail.ru^
 ||rs.mail.ru^$domain=~account.mail.ru|~o2.mail.ru
 ||showbiz.mail.ru^$third-party
@@ -22951,6 +22952,7 @@ sports.ru#?#[class]:-abp-has(> .aside-news-list__advert ~ a[href^="https://sprts
 sports.ru#?#[class]:-abp-has(> .aside-news-list__advert:-abp-contains(Реклама))
 sports.ru##[data-banner-id]
 sports.ru##[data-content-name="banner-dfp"]
+sports.ru#?#[data-control*="Common.CarouselOfCards"]:-abp-has(a[href^="https://sirena.world/"])
 sports.ru##[data-control*="Videonow"]
 sports.ru##[data-control*="adblock"]
 sports.ru##[data-control="Stat.KinopoiskButton"]
