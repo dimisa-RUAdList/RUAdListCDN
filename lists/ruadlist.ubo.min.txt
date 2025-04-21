@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 21 Apr 2025 09:28:35 +0000
-! Diff-Path: ../patches/2025.4.21.568.patch#ruadlist
+! Last modified: Mon, 21 Apr 2025 14:27:23 +0000
+! Diff-Path: ../patches/2025.4.21.867.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -17999,6 +17999,7 @@ lfl.ru##.sidebar .start_block table[style="width: 263px;"]
 headphone-review.ru##.sidebar .widget_text
 pc-aio.ru##.sidebar > #HTML2
 vesti.uz##.sidebar > .adv ~ *
+litnet.com##.sidebar > .b-popular
 fukushima-news.ru#?#.sidebar > .block-content:-abp-has(> noindex > script)
 fukushima-news.ru#?#.sidebar > .block-title:-abp-contains(/^реклама/i)
 sport-tv.by#?#.sidebar > .block:-abp-has(a[href][target="_blank"] > img)
@@ -19059,6 +19060,7 @@ news.soundex.ru##[data-original^="http://news.soundex.ru/images/banners/"]
 studopedia.ru,studopedia.su##[data-partner]
 iz.ru##[data-partners-block-id]
 satellitetvforum.info##[data-phpbb-ads-id]
+litnet.com##[data-popmechanic-embed]
 odds.ru##[data-popup="bonus"]
 shuba.life##[data-product]
 cheezu.ru##[data-provider="yandex"]
