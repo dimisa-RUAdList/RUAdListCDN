@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 23 Apr 2025 06:37:10 +0000
-! Diff-Path: ../patches/2025.4.23.397.patch#ruadlist
+! Last modified: Wed, 23 Apr 2025 11:23:13 +0000
+! Diff-Path: ../patches/2025.4.23.683.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -20305,7 +20305,7 @@ www.google.com,www.google.ru##body > table[style="border: 1px solid #369"]
 christianka.bratstvo.org##body > table[width="99%"] + p[align="center"]
 payeer-gift.ru##body div .banner
 om1.ru##body div[class*="-branding"]
-anifap.com,anitokyo.org,anitokyo.tv##body.playerCode > div[style^="position: absolute;"][onclick]
+anifap.com,anifap.xyz,anitokyo.org,anitokyo.tv##body.playerCode > div[style^="position: absolute;"][onclick]
 forum.flprog.ru##body.section-index .sidebar
 the-geek.ru##body::before
 livetvstream.pro,me##body[bgcolor] > #adbtm
@@ -21983,7 +21983,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||news.mail.ru/-/*.js?
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
-||pikabu.ru/ajax/*?lcn55=$xmlhttprequest
+||pikabu.ru/ajax/*?lcn65=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -22790,6 +22790,7 @@ www.afisha.ru##div[class^="Advert"]
 nova.rambler.ru##div[class^="DirectMKB"]
 nova.rambler.ru##div[class^="LayoutSearch"] section > article[class*=" Serp__item"]:not([class^=" Serp__item"])
 r0.ru##div[class^="News__adv"]
+afisha.ru##div[data-test*="HONEY-AD"] > [data-test="FALLBACK"] > span
 gazeta.ru##div[id^="_g_exchange_"]
 avtorambler.com,rambler.ru##div[id^="rcmw-container-"][id*="-horizontal-"]
 rambler.ru##div[id^="rnet_"]
@@ -28077,13 +28078,13 @@ e.arbitr-praktika.ru##body > div[id][class=""][style]
 26-2.ru,arbitr-praktika.ru,budgetnik.ru,budgetnyk.com.ua,buhsoft.ru26-2.ru,business.ru,cxychet.ru,dirsalona.ru,dzakupivli.com.ua,fd.ru,gazeta-unp.ru,gd.ru,gkh.ru,glavbukh.ru,golovbukh.ua,hr-director.ru,kadrovik01.com.ua,kdelo.ru,kom-dir.ru,law.ru,lawyercom.ru,medsprava.com.ua,menobr.ru,nalogplan.ru,pro-goszakaz.ru,pro-personal.ru,resobr.ru,rnk.ru,sekretariat.ru,sop.com.ua,stroychet.ru,trudohrana.ru,ugpr.ru,zarplata-online.ru,zdrav.ru##div[class^="GbShadow"]
 ! ---
 e.mail.ru,octavius.mail.ru###app-canvas .application-mail__layout .layout__column_right:style(width: auto !important)
+e.mail.ru,octavius.mail.ru###app-canvas .letter-list-item-adv__container
 e.mail.ru,octavius.mail.ru###app-canvas .paginator-container:style(right: 8px !important)
 e.mail.ru,octavius.mail.ru###popup-placeholder
 e.mail.ru,octavius.mail.ru##.advert-column:style(width: 0 !important)
 e.mail.ru,octavius.mail.ru##.application-mail__wrap > .application-mail__layout > .layout[style*="grid-template-columns:"]:style(grid-template-columns: 232px 1fr 0 0 !important)
 e.mail.ru,octavius.mail.ru##.application_new-toolbar .application-mail:not(.application-mail_webview-mobile) [class*="top-line-adv"]:style(--letter-list-top-toolbar-height: inherit !important; --letter-list-top-native-adv-height: inherit !important; --scrollable-top-native-adv-height: inherit !important)
 e.mail.ru,octavius.mail.ru##.layer-sent-page > .layer:style(min-height: 0 !important)
-e.mail.ru,octavius.mail.ru##.letter-list-item-adv__container:style(height: 0 !important; opacity: 0 !important; pointer-events: none !important)
 e.mail.ru##.ph-project__link[href^="https://cloud.mail.ru/promo/"]
 e.mail.ru##.ph-projects > a[href^="https://e.mail.ru/messages/inbox?utm_"]:style(pointer-events: none !important)
 ! ---
@@ -28232,7 +28233,7 @@ liga.net##+js(abort-current-inline-script, window.innerWidth, rcBuf)
 techmusic.ru##+js(abort-current-inline-script, window.onload, _uWnd)
 htmlweb.ru##+js(abort-on-property-read, AdbBanner)
 fapreactor.com,pornreactor.cc,reactor.cc##+js(abort-on-property-read, CTRManager.host3)
-anifap.com,anipoisk.org,anitokyo.org,anitokyo.tv,hcdn.online,kinofilm.co##+js(abort-on-property-read, ClickUndercookie)
+anifap.com,anifap.xyz,anipoisk.org,anitokyo.org,anitokyo.tv,hcdn.online,kinofilm.co##+js(abort-on-property-read, ClickUndercookie)
 comedy-radio.ru,radioromantika.ru,relax-fm.ru,rg.ru,sm.news,ura.news,veseloeradio.ru,www.e1.ru##+js(abort-on-property-read, Date.prototype.toUTCString)
 vk.com,vk.ru##+js(abort-on-property-read, Groups.showDisclaimer)
 rutor.org##+js(abort-on-property-read, Light.Popup)
@@ -28436,7 +28437,7 @@ vgtimes.ru##+js(nano-setInterval-booster, disabled)
 startgamer.ru##+js(nano-setInterval-booster, js-game-loader-block, 1000, 0.0001)
 3mod.ru,iblitzmods.ru##+js(nano-setInterval-booster, ks_counter)
 wowskill.ru##+js(nano-setInterval-booster, p)
-diplomsrazu.ru,igrozoom.ru,ru-minecraft.ru,softomania.net,vip-mods.ru,warezok.net,windows-driver.com,windows-driver.net,windows-program.com##+js(nano-setInterval-booster, timer)
+anifap.com,anifap.xyz,diplomsrazu.ru,igrozoom.ru,ru-minecraft.ru,softomania.net,vip-mods.ru,warezok.net,windows-driver.com,windows-driver.net,windows-program.com##+js(nano-setInterval-booster, timer)
 autoinfo24.ru,dp73.spb.ru,dropmefiles.com.ua,dropmefiles.net,gtavicecity.ru,pes-files.ru##+js(nano-setTimeout-booster)
 dzen.ru##+js(nano-setTimeout-booster, '()=>r(', 15000)
 tv-kanali.online##+js(nano-setTimeout-booster, , 30000, 0.0001)
