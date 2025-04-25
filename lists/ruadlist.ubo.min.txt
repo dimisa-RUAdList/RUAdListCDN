@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 25 Apr 2025 03:42:43 +0000
-! Diff-Path: ../patches/2025.4.25.222.patch#ruadlist
+! Last modified: Fri, 25 Apr 2025 08:34:35 +0000
+! Diff-Path: ../patches/2025.4.25.514.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -17496,6 +17496,7 @@ pikabu.ru##.player__adfox
 lideo.ru##.player_advert
 bilshe.com#?#.playfair:-abp-has(> b:-abp-contains(/^партн/i))
 get-tune.cc,iplayer.info,ipleer.fm,mp3cc.biz,mp3iq.com##.playlist-ad
+anime-joy.online,animejoy.ru#?#.playlists-items > ul > li:-abp-contains(Dzen)
 lenkino.adult##.plb
 rp-mechanics.ru##.plusonet-sl
 kinovit.org##.pmedia_240
@@ -21984,7 +21985,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||news.mail.ru/-/*.js?
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
-||pikabu.ru/ajax/*?lcn75=$xmlhttprequest
+||pikabu.ru/ajax/*?lcn85=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
