@@ -1,8 +1,8 @@
-diff name:ruadlist lines:53 checksum:452be3c634
+diff name:ruadlist lines:67 checksum:4b84d36c21
 d4 2
 a5 2
-! Last modified: Sun, 27 Apr 2025 10:28:54 +0000
-! Diff-Path: ../patches/2025.4.27.628.patch#ruadlist
+! Last modified: Sun, 27 Apr 2025 15:25:37 +0000
+! Diff-Path: ../patches/2025.4.27.925.patch#ruadlist
 a9082 1
 ||market.yandex.ru^$popup,domain=cq.ru
 a10015 1
@@ -19,6 +19,10 @@ a17208 1
 cq.ru##.navbar-steam-button
 a17498 1
 anime-joy.online,animejoy.ru#?#.playlists-items > ul > li:-abp-contains(Dzen)
+d17797 1
+a17797 1
+banana.by,football24.ru##.right_banner
+d18192 1
 a18232 1
 cq.ru##.steam-popup
 a19037 1
@@ -33,13 +37,23 @@ gsett.ru##a[href*="ggsel"]
 a19724 1
 cq.ru##a[href][rel="nofollow"]:not([href^="/"]):not([href^="https://cq.ru/"]) > b
 a20164 1
-cq.ru#?#b:-abp-contains(Где купить:)
+cq.ru#?#b:-abp-contains(Где купить)
 a20431 1
 mash.ru##div[class*=" styles_bar_"]
 a20583 1
 igromania.ru,kanobu.ru##div[class^="AdLink_"]
+d20613 1
 a20931 1
 vokrug.tv##div[id*="okko"]
+d20966 1
+a20966 1
+1tv.ru,2mm.ru,auto.vesti.ru,ctc.ru,f1news.ru,irr.ru,probirka.org,sobesednik.ru##div[id^="AdFox_banner"]
+a20975 1
+news.sportbox.ru##div[id^="GPM_sportbox_"]
+a21270 1
+news.sportbox.ru##div[style="padding: 10px 0 38px 30px;"]
+a21689 1
+cq.ru#?#p:-abp-has(> b:-abp-contains(Где купить))
 a21723 1
 sex-studentki.*##.description > button[style*="color:red;"]
 d21987 1
