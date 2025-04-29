@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 29 Apr 2025 17:26:26 +0000
-! Diff-Path: ../patches/2025.4.29.1046.patch#ruadlist
+! Last modified: Tue, 29 Apr 2025 22:27:56 +0000
+! Diff-Path: ../patches/2025.4.29.1347.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -9444,6 +9444,7 @@ $third-party,popup,domain=2ip.ru
 ||spiderbig.info^$popup
 ||starcrowd.ru^$popup
 ||starinform.ru^$third-party,popup
+||static.dzeninfra.ru^$popup
 ||stirshakead.com^$popup
 ||storytop24.ru^$third-party,popup
 ||stream/*rd.php?id=$third-party,popup
@@ -21987,6 +21988,7 @@ ictv.ua,vikna.tv##div[id^="div-gpt-ad-"]
 $csp=script-src-attr 'none',domain=eurointegration.com.ua|pravda.com.ua|sportanalytic.com
 /^https?://24smi\.org/*[/]*[/][^\s]{8,}/$xmlhttprequest,domain=24smi.org
 ://mail.ru$csp=img-src 'self' https:
+://mail.ru/$csp=connect-src 'self' *.imgsmail.ru *.mail.ru ok.ru vk.com data: blob:
 ://pikabu.ru/$csp=connect-src https://pikabu.ru/ajax/ https://pikabu.ru/ajax.php *.pikabu.ru/ data: https://pikabu.ru/.well-known/ wss://pikabu.ru/.well-known/
 ://pikabu.ru/$csp=script-src 'self' * 'unsafe-inline' data:
 @@||dmp.mpsuadv.ru/promer$xmlhttprequest,domain=trychatgpt.ru
@@ -22066,6 +22068,7 @@ sdamgia.ru##[data-name="partial-container"]
 drive2.ru##[data-sticky-adtune]
 drive2.ru##[data-test="AdKebabAndLabel--adLabelContent"]
 liveinternet.ru##[data-wrapper]
+mail.ru##[href*="https://dzen.ru"]
 ~dzen.ru##[href^="https://dzen.ru"]
 vk.com,vk.ru##[id^="post-"] > ._post_content > :only-child
 lena-miro.ru,levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##[role="banner"] > .s-header-extra + div[class]
@@ -28553,7 +28556,6 @@ ictv.ua,inter.ua,k1.ua,novy.tv,ntn.ua,starlight.digital,stb.ua,teleportal.ua##+j
 player.vgtrk.com##+js(set-constant, Object.prototype.IS_CHECK_REGISTRATION, false)
 tv-gubernia.ru##+js(set-constant, Object.prototype.MediaReady, noopFunc)
 xsport.ua##+js(set-constant, Object.prototype.PLAYED, null)
-dzen.ru##+js(set-constant, Object.prototype.ProtectedNames, undefined)
 1tv.ru##+js(set-constant, Object.prototype._currentAgeRestriction, null)
 api-video.khl.ru##+js(set-constant, Object.prototype.adblockSettings, undefined)
 razlozhi.ru##+js(set-constant, Object.prototype.advert, null)
@@ -28588,6 +28590,7 @@ rg.ru##+js(set-constant, Object.prototype.onIntersected, noopFunc)
 rg.ru##+js(set-constant, Object.prototype.openstatCb, undefined)
 dzen.ru,frontend.vh.yandex.ru,naydex.net,widgets.kinopoisk.ru,www.kinopoisk.ru,yastatic.net##+js(set-constant, Object.prototype.partnerId, {})
 3dnews.kz,3dnews.ru,vm.ru##+js(set-constant, Object.prototype.playVideo, noopFunc)
+dzen.ru##+js(set-constant, Object.prototype.protect, undefined)
 forbes.ru##+js(set-constant, Object.prototype.utm, false)
 forbes.ru##+js(set-constant, Object.prototype.utm_campaign, false)
 forbes.ru##+js(set-constant, Object.prototype.utm_medium, false)
@@ -28702,7 +28705,7 @@ online-fix.me##a.btn-success[href^="https://online-fix.me/ext/"]:remove-class(bt
 trupornolabs.org#@#a[href*="://pronpic.org/"]
 online-fix.me##a[href*=":2053"]:remove-class(btn)
 aniu.ru,liveball.*##+js(no-setInterval-if, debugger)
-dzen.ru##article:has(> div:matches-attr(/data-[a-z0-9]/=/direct|mytarget/))
+dzen.ru##article:has(> div:matches-attr(/[a-z0-9]/=/direct|mytarget/))
 autonews.co.ua,in-poland.com,liveball.*,ukrainianwall.com##+js(addEventListener-defuser, /contextmenu|copy|keydown|selectstart/)
 kp.kg,kp.kz,kp.md,kp.ru##body > #app div:matches-css(background-color: rgb(225, 231, 235))
 4pda.to##body > #ipbwrapper > script + div > table > tbody > tr > td[width] + td

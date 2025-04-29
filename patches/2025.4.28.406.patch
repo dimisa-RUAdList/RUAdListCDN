@@ -1,10 +1,12 @@
-diff name:ruadlist lines:18 checksum:37b5195757
+diff name:ruadlist lines:30 checksum:96fe415fbf
 d4 2
 a5 2
-! Last modified: Tue, 29 Apr 2025 17:26:26 +0000
-! Diff-Path: ../patches/2025.4.29.1046.patch#ruadlist
+! Last modified: Tue, 29 Apr 2025 22:27:56 +0000
+! Diff-Path: ../patches/2025.4.29.1347.patch#ruadlist
 a1703 1
 ||dsxmn0.com^$third-party
+a9445 1
+||static.dzeninfra.ru^$popup
 d10794 1
 a10794 1
 ||7days.ru^*files/adv/
@@ -14,6 +16,16 @@ a13770 1
 grad.ua###banner-top-page
 a14960 1
 playvillage.ru##._2y_
+a21985 1
+://mail.ru/$csp=connect-src 'self' *.imgsmail.ru *.mail.ru ok.ru vk.com data: blob:
 d22005 1
 a22005 1
 ||pikabu.ru/ajax/*?hf6r4=$xmlhttprequest
+a22064 1
+mail.ru##[href*="https://dzen.ru"]
+d28552 1
+a28586 1
+dzen.ru##+js(set-constant, Object.prototype.protect, undefined)
+d28701 1
+a28701 1
+dzen.ru##article:has(> div:matches-attr(/[a-z0-9]/=/direct|mytarget/))

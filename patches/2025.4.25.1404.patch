@@ -1,12 +1,14 @@
-diff name:ruadlist lines:69 checksum:37b5195757
+diff name:ruadlist lines:81 checksum:96fe415fbf
 d4 2
 a5 2
-! Last modified: Tue, 29 Apr 2025 17:26:26 +0000
-! Diff-Path: ../patches/2025.4.29.1046.patch#ruadlist
+! Last modified: Tue, 29 Apr 2025 22:27:56 +0000
+! Diff-Path: ../patches/2025.4.29.1347.patch#ruadlist
 a1703 1
 ||dsxmn0.com^$third-party
 a9082 1
 ||market.yandex.ru^$popup,domain=cq.ru
+a9444 1
+||static.dzeninfra.ru^$popup
 d10793 1
 a10793 1
 ||7days.ru^*files/adv/
@@ -62,9 +64,19 @@ a21692 1
 cq.ru#?#p:-abp-has(> b:-abp-contains(Где купить))
 a21726 1
 sex-studentki.*##.description > button[style*="color:red;"]
+a21970 1
+://mail.ru/$csp=connect-src 'self' *.imgsmail.ru *.mail.ru ok.ru vk.com data: blob:
 d21990 1
 a21990 1
 ||pikabu.ru/ajax/*?hf6r4=$xmlhttprequest
+a22049 1
+mail.ru##[href*="https://dzen.ru"]
 a23721 1
 ||bp-api.ru^$third-party
 d26658 1
+d28537 1
+a28571 1
+dzen.ru##+js(set-constant, Object.prototype.protect, undefined)
+d28686 1
+a28686 1
+dzen.ru##article:has(> div:matches-attr(/[a-z0-9]/=/direct|mytarget/))
