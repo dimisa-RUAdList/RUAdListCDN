@@ -1,8 +1,8 @@
-diff name:ruadlist lines:25 checksum:fcfa0d7095
+diff name:ruadlist lines:35 checksum:ba8c06f36b
 d4 2
 a5 2
-! Last modified: Wed, 30 Apr 2025 13:35:00 +0000
-! Diff-Path: ../patches/2025.4.30.814.patch#ruadlist
+! Last modified: Wed, 30 Apr 2025 18:36:38 +0000
+! Diff-Path: ../patches/2025.4.30.1116.patch#ruadlist
 a1703 1
 ||dsxmn0.com^$third-party
 a9445 1
@@ -11,6 +11,7 @@ a13550 1
 ||xv-ru.com/zoneload/
 a13770 1
 grad.ua###banner-top-page
+d14961 1
 a21986 1
 ://mail.ru/$csp=connect-src 'self' *.imgsmail.ru *.mail.ru ok.ru vk.com data: blob:
 d22006 1
@@ -18,6 +19,15 @@ a22006 1
 ||pikabu.ru/ajax/*?e6hJ7=$xmlhttprequest
 a22065 1
 mail.ru##[href*="https://dzen.ru"]
+a26871 2
+gamegpu.com##a[href*="://compx.ua/"]:style(pointer-events: none !important)
+gamegpu.com##a[href*="://rozetka.com.ua/"]:style(pointer-events: none !important)
+a27455 3
+playvillage.ru##._1z_ ._21_:style(width: 1000% !important; height: 1000% !important; position: absolute !important)
+playvillage.ru##._1z_:style(background: none !important)
+! ---
+a28537 1
+playvillage.ru##+js(set-attr, ._1z_ ._21_, style, '')
 d28553 1
 a28587 1
 dzen.ru##+js(set-constant, Object.prototype.protect, undefined)

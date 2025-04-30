@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 30 Apr 2025 13:35:00 +0000
-! Diff-Path: ../patches/2025.4.30.814.patch#ruadlist
+! Last modified: Wed, 30 Apr 2025 18:36:38 +0000
+! Diff-Path: ../patches/2025.4.30.1116.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -14962,7 +14962,6 @@ bmwclub.ru##.XenAdvShop
 cameralabs.org##.Yreklama
 2gis.by,2gis.kz,2gis.ru##._1xza2sg
 novayagazeta.ru##._1ysoK
-playvillage.ru##._2y_
 yap.ru,yaplakal.com##.__axcode__
 gamestar.ru##.__b-popup1__
 vk.com,vk.ru##._ads_block_data_w
@@ -26875,6 +26874,8 @@ gamebomb.ru##body:style(background-color: #303030 !important; background-image: 
 ! ---
 gamegpu.com##a[href*="://artline.ua/"]:style(pointer-events: none !important)
 gamegpu.com##a[href*="://bit.ly/"]:style(pointer-events: none !important)
+gamegpu.com##a[href*="://compx.ua/"]:style(pointer-events: none !important)
+gamegpu.com##a[href*="://rozetka.com.ua/"]:style(pointer-events: none !important)
 ! ---
 gameguru.ru###mainContent > section:first-of-type:style(margin-top: unset !important)
 gameguru.ru##body:style(background-image: none !important)
@@ -27458,6 +27459,9 @@ playground.ru##.gp-game-card .user-profile-sidebar:style(max-width: unset !impor
 ! ---
 playua.net##body > #page:style(margin-top: 65px !important)
 playua.net##html > body:style(background-image: none !important; background-color: transparent !important)
+! ---
+playvillage.ru##._1z_ ._21_:style(width: 1000% !important; height: 1000% !important; position: absolute !important)
+playvillage.ru##._1z_:style(background: none !important)
 ! ---
 pluggedin.ru##.banner-advertise:style(margin-top: 0 !important)
 pluggedin.ru##.open-main-container:style(margin-top: 60px !important)
@@ -28541,6 +28545,7 @@ agronews.ua,agroreview.com##+js(remove-node-text, script, clickedOnContent)
 newsyou.info##+js(remove-node-text, script, error-report.com)
 fapvdo.ru##+js(remove-node-text, script, getComputedStyle)
 gsm.in.ua##+js(remove-node-text, script, message_ads)
+playvillage.ru##+js(set-attr, ._1z_ ._21_, style, '')
 dtf.ru,vc.ru##+js(set-attr, .comment-media > .andropov-video > video, controls, true)
 dtf.ru,vc.ru##+js(set-attr, .media > .andropov-video > video, controls, true)
 eneyida.tv##+js(set-attr, .owl-item > a > img, src, [data-src])
