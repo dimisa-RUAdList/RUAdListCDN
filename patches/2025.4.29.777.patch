@@ -1,15 +1,25 @@
-diff name:ruadlist lines:33 checksum:5c70cd8578
+diff name:ruadlist lines:50 checksum:3642918bc8
 d4 2
 a5 2
-! Last modified: Thu, 01 May 2025 09:28:25 +0000
-! Diff-Path: ../patches/2025.5.1.568.patch#ruadlist
+! Last modified: Thu, 01 May 2025 14:27:16 +0000
+! Diff-Path: ../patches/2025.5.1.867.patch#ruadlist
 a1703 1
 ||dsxmn0.com^$third-party
 a9445 1
 ||static.dzeninfra.ru^$popup
+a10324 1
+||tapochek.net^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data:
+a10918 1
+||anilibria.*/api/v*/ads/
 a13550 1
 ||xv-ru.com/zoneload/
 d14962 1
+d16047 1
+a16047 1
+anilibria.top,anilibria.wtf##.commercial-banner
+d17178 1
+a17178 1
+anilibria.top,anilibria.wtf#?#.mt-8:-abp-has(> .commercial-banner)
 a21987 1
 ://mail.ru/$csp=connect-src 'self' *.imgsmail.ru *.mail.ru ok.ru vk.com data: blob:
 d22007 1
@@ -17,9 +27,14 @@ a22007 1
 ||pikabu.ru/ajax/*?e6hJ7=$xmlhttprequest
 a22066 1
 mail.ru##[href*="https://dzen.ru"]
-a26872 2
-gamegpu.com##a[href*="://compx.ua/"]:style(pointer-events: none !important)
-gamegpu.com##a[href*="://rozetka.com.ua/"]:style(pointer-events: none !important)
+d26871 2
+a26872 6
+! gamegpu.com, overclockers.ua
+gamegpu.com,overclockers.ua##a[href*="://artline.ua/"]:style(pointer-events: none !important; color: inherit !important)
+gamegpu.com,overclockers.ua##a[href*="://bit.ly/"]:style(pointer-events: none !important; color: inherit !important)
+gamegpu.com,overclockers.ua##a[href*="://compx.ua/"]:style(pointer-events: none !important; color: inherit !important)
+gamegpu.com,overclockers.ua##a[href*="://rozetka.com.ua/"]:style(pointer-events: none !important; color: inherit !important)
+gamegpu.com,overclockers.ua##a[href*="://telemart.ua/"]:style(pointer-events: none !important; color: inherit !important)
 a27456 3
 playvillage.ru##._1z_ ._21_:style(width: 1000% !important; height: 1000% !important; position: absolute !important)
 playvillage.ru##._1z_:style(background: none !important)
@@ -29,6 +44,8 @@ playvillage.ru##+js(set-attr, ._1z_ ._21_, style, '')
 d28554 1
 a28588 1
 dzen.ru##+js(set-constant, Object.prototype.protect, undefined)
+a28645 1
+playground.ru#?#.article-content:-abp-has(> p > em:-abp-contains(erid:)) a[href][rel="nofollow"]:style(pointer-events: none !important; color: inherit !important)
 d28703 1
 a28703 1
 dzen.ru##article:has(> div:matches-attr(/[a-z0-9]/=/direct|mytarget/))

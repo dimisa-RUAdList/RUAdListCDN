@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 01 May 2025 09:28:25 +0000
-! Diff-Path: ../patches/2025.5.1.568.patch#ruadlist
+! Last modified: Thu, 01 May 2025 14:27:16 +0000
+! Diff-Path: ../patches/2025.5.1.867.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10324,6 +10324,7 @@ $csp=script-src-attr 'none',domain=volyn.com.ua
 ||statusklic.info^$csp=sandbox allow-same-origin;
 ||syndication.exosrv.com^$csp=sandbox allow-same-origin;
 ||t1mcapp.com^$csp=script-src
+||tapochek.net^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data:
 ||tdsclicks2.ru^$csp=script-src
 ||utarget.ru^$csp=sandbox allow-same-origin;
 ||utarget.ru^$csp=script-src
@@ -10918,6 +10919,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||anekdotov.net/show/sell/$image
 ||ani-mania.com/files/ban$subdocument
 ||ani-mania.com/seo_anime_
+||anilibria.*/api/v*/ads/
 ||anime-365.ru/promo/
 ||animechan.ru/fun/
 ||animecos.ru/templates/animecos/images/cross.
@@ -16046,7 +16048,7 @@ glavnoe.net,infotime.co##.comments-wrapper
 pikabu.ru##.comments__adv
 novayagazeta.ru##.comments_block div > article + div[style^="margin"]
 car.ru##.commercial
-anilibria.top##.commercial-banner
+anilibria.top,anilibria.wtf##.commercial-banner
 mgazeta.com,yantann.rbsmi.ru,yanzori.rbsmi.ru##.commercical_wrap
 sportanalytic.com##.common_content_news > .news > center
 samara24.ru##.common_left > [id^="rep_"] > .bl_main
@@ -17177,7 +17179,7 @@ hd-720.biz##.movie-full > noindex
 emu-land.net##.mreklama
 ru.motorsport.com##.ms-article-content > div[style^="overflow: hidden; padding-top:"]
 ru.motorsport.com##.ms-side-items--with-banner
-anilibria.top#?#.mt-8:-abp-has(> .commercial-banner)
+anilibria.top,anilibria.wtf#?#.mt-8:-abp-has(> .commercial-banner)
 multitest.ua##.mt_adv_block
 bigmir.net##.mtbottom_priceua
 7days.ru##.mtop
@@ -26872,10 +26874,12 @@ gamebomb.ru###content.site-max-width:style(margin-top: 0 !important; padding-top
 gamebomb.ru##body > div[id] > div[id]:style(background-image: none !important)
 gamebomb.ru##body:style(background-color: #303030 !important; background-image: none !important)
 ! ---
-gamegpu.com##a[href*="://artline.ua/"]:style(pointer-events: none !important)
-gamegpu.com##a[href*="://bit.ly/"]:style(pointer-events: none !important)
-gamegpu.com##a[href*="://compx.ua/"]:style(pointer-events: none !important)
-gamegpu.com##a[href*="://rozetka.com.ua/"]:style(pointer-events: none !important)
+! gamegpu.com, overclockers.ua
+gamegpu.com,overclockers.ua##a[href*="://artline.ua/"]:style(pointer-events: none !important; color: inherit !important)
+gamegpu.com,overclockers.ua##a[href*="://bit.ly/"]:style(pointer-events: none !important; color: inherit !important)
+gamegpu.com,overclockers.ua##a[href*="://compx.ua/"]:style(pointer-events: none !important; color: inherit !important)
+gamegpu.com,overclockers.ua##a[href*="://rozetka.com.ua/"]:style(pointer-events: none !important; color: inherit !important)
+gamegpu.com,overclockers.ua##a[href*="://telemart.ua/"]:style(pointer-events: none !important; color: inherit !important)
 ! ---
 gameguru.ru###mainContent > section:first-of-type:style(margin-top: unset !important)
 gameguru.ru##body:style(background-image: none !important)
@@ -28653,6 +28657,7 @@ inoreader.com##.ad_title:style(display: block !important; position: fixed !impor
 inoreader.com##.adsbygoogle:style(display: block !important)
 vc.ru##.andropov_video:remove-attr(data-video-play-mode)
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.app__wrapper div[style^="width: calc(100% "]:remove-attr(style)
+playground.ru#?#.article-content:-abp-has(> p > em:-abp-contains(erid:)) a[href][rel="nofollow"]:style(pointer-events: none !important; color: inherit !important)
 footboom.com,footboom.kz##.b-article-content > h2:has-text(букмекер)
 lostfilm.download,lostfilm.life,lostfilm.one,lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##.body > .body:style(user-select: text !important; -moz-user-select: text !important; -webkit-user-select: text !important)
 dtf.ru,vc.ru##.comment-media > .andropov-video > video:remove-attr(autoplay)
