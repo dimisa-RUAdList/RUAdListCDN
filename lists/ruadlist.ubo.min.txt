@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 02 May 2025 10:30:49 +0000
-! Diff-Path: ../patches/2025.5.2.630.patch#ruadlist
+! Last modified: Fri, 02 May 2025 15:27:59 +0000
+! Diff-Path: ../patches/2025.5.2.927.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -13908,6 +13908,7 @@ jeder.ru###colwrap > .module-notitle
 7days.ru###comment_banner
 police-russia.com###commercial_ad_showthread_firstpost
 samara24.ru###common_div > .top_bb + .bb_table_bg
+rutube.ru###communicationBanner
 stocktime.ru###cont_right_240
 doska.fi###container + center
 kirovnet.ru###container > #top
@@ -15160,6 +15161,7 @@ mirf.ru##.advt-mf
 recept.ua##.adw-link
 tmbw.ru##.adwidget
 burdastyle.ru##.aff-offers
+rubryka.com##.after-content-advertisment
 wallscloud.net##.after_image_promo
 theuk.one##.afterpost-teaser-x
 ktonanovenkogo.ru##.ag-adv-container
@@ -17679,6 +17681,7 @@ elevatorist.com,kurkul.com,latifundist.com,superagronom.com,zemliak.com##.rcl-la
 superagronom.com##.rcl-note
 midasbox.net##.re-block
 happy-biock.info,happy-block.info,howto-news.info##.read-also__title
+vokrug.tv##.read-more__block
 twizz.ru##.read-next
 okna.ua##.read__right
 vmo24.ru##.readall > p:first-child
@@ -18010,6 +18013,7 @@ v-info.ru##.sidebanner
 kykarek.com,sobakada.ru,subsidii.net,vjazanie.info##.sidebanner-wrapper
 dic.academic.ru,f1comp.ru,forum.vorota.de##.sidebar
 report.if.ua##.sidebar .g-single a[href][target="_blank"]
+vokrug.tv#?#.sidebar .h3:-abp-contains(За кадром)
 lfl.ru##.sidebar .start_block a[href^="http"]:not([href*="://lfl.ru"])
 lfl.ru##.sidebar .start_block table[style="width: 263px;"]
 headphone-review.ru##.sidebar .widget_text
@@ -18912,7 +18916,6 @@ drive.ru##[class*="autoRu"] + .hr
 amic.ru,anime-bit.online,hi-fi.ru,inflora.ru,lifenews.ru,lifenews78.ru,obozrevatel.com,opticlub.org,players.com.ua,podrobnosti.ua,ua-independent.com,vbryanske.com##[class*="banner"]
 vedomosti.ru#?#[class*="banner"]:-abp-has(.teaser-commerce)
 avtosreda.ru,vikna.if.ua##[class*="banner-border"]
-info.sibnet.ru##[class*="banner__brand"]
 disgustingmen.com##[class*="bg_banner"]
 vse.rv.ua##[class*="billboard"]
 anna-news.info##[class*="blog-holder"] > noindex
@@ -20454,7 +20457,6 @@ noi.md##div[class*="-bnr"]
 moskva.fm,piter.fm##div[class*="-branding-"] > a[target="_blank"]
 allhen.online,doramatv.live,doramatv.one,doramatv.ru,findanime.ru,grouple.co,librebook.me,mintmanga.one,mose.su,readmanga.io,selflib.me,selfmanga.live,usagi.one##div[class*="-brnd"]
 kinoafisha.info##div[class*="-fix "][class$="as-desktop"]
-sibnet.ru##div[class*="2023"][class*="root"]
 klerk.ru##div[class*="250px"][class*="print:hidden"]
 mmo13.ru##div[class*="300x600"]
 gazetametro.ru##div[class*="AdBox"]
@@ -20490,7 +20492,7 @@ peopletalk.ru,znaj.ua##div[class*="advertising"]
 odessa-life.od.ua##div[class*="ai-viewport-"]
 thequestion.ru##div[class*="annonser"]
 gorodvitebsk.by,kursktv.ru,open.ua,penza-press.ru##div[class*="baner"]
-1777.ru,19rus.info,19rusinfo.ru,1ul.ru,20minut.ua,2goroda.ru,365info.kz,3ys.ru,73online.ru,9tv.co.il,advis.ru,agronews.ua,agroreview.com,agrotimes.net,autodmir.ru,avtodispetcher.ru,bakemono.ru,bel.ru,bezformata.com,bhub.com.ua,bon.ua,budport.com.ua,car.ru,cbonds.ru,champion.com.ua,codernet.ru,comments.ua,con-med.ru,cryptonewsua.com,cybersport.ru,echosevera.ru,epravda.com.ua,fatalgame.com,filmz.ru,fishingsib.ru,flamp.ru,food.ru,footballua.tv,forum-profit.ru,gameguru.ru,gecid.com,goodfon.ru,gorodvitebsk.by,gp.by,growhow.in.ua,haqqin.az,hunting.ru,industry-hunter.com,infpol.ru,investfunds.ru,ircity.ru,islam-today.ru,iz.ru,joborgame.ru,jut.su,k1news.ru,klavogonki.ru,knijky.ru,kt.kz,kursktv.ru,laradiofm.ru,livesport.ws,locals.md,medialeaks.ru,megatyumen.ru,menportal.info,myslo.ru,neboleem.net,nmedic.info,nv-online.info,obyava.ua,okna.ua,penza-press.ru,polochka.net,povarenok.ru,ppt4web.ru,pravda.com.ua,pravoved.ru,primemusic.cc,profibeer.ru,prostatitanet.com,redfm.ru,relax-fm.ru,rg.ru,roscontrol.com,skachat-kino.fun,smolensk-i.ru,sovsport.ru,spanishrestaurant.ru,sport5.by,sportanalytic.com,sportguide.kiev.ua,start33.ru,syzran-small.ru,tele.ru,tengriauto.kz,tengrinews.kz,tengrisport.kz,tengritravel.kz,the-flow.ru,thequestion.ru,thg.ru,tveda.ru,twentysix.ru,ufanotes.ru,valverus.info,vashurok.ru,veterinargid.ru,vikka.ua,vinnitsa.info,vklasse.online,vovka.su,vringe.com,vshkole.com,woman.ru,wonderzine.com,wowjp.net,xsport.ua,zagorod.spb.ru,zaim-profi.ru,zaryad.me,zebra-tv.ru,zoohoz.ru,zorbasmedia.ru##div[class*="banner"]
+1777.ru,19rus.info,19rusinfo.ru,1ul.ru,20minut.ua,2goroda.ru,365info.kz,3ys.ru,73online.ru,9tv.co.il,advis.ru,agronews.ua,agroreview.com,agrotimes.net,autodmir.ru,avtodispetcher.ru,bakemono.ru,bel.ru,bezformata.com,bhub.com.ua,bon.ua,budport.com.ua,car.ru,cbonds.ru,champion.com.ua,codernet.ru,comments.ua,con-med.ru,cryptonewsua.com,cybersport.ru,echosevera.ru,epravda.com.ua,fatalgame.com,filmz.ru,fishingsib.ru,flamp.ru,food.ru,footballua.tv,forum-profit.ru,gameguru.ru,gecid.com,goodfon.ru,gorodvitebsk.by,gp.by,growhow.in.ua,haqqin.az,hunting.ru,industry-hunter.com,infpol.ru,investfunds.ru,ircity.ru,islam-today.ru,iz.ru,joborgame.ru,jut.su,k1news.ru,klavogonki.ru,knijky.ru,kt.kz,kursktv.ru,laradiofm.ru,livesport.ws,locals.md,medialeaks.ru,megatyumen.ru,menportal.info,myslo.ru,neboleem.net,nmedic.info,nv-online.info,obyava.ua,okna.ua,penza-press.ru,polochka.net,povarenok.ru,ppt4web.ru,pravda.com.ua,pravoved.ru,primemusic.cc,profibeer.ru,prostatitanet.com,redfm.ru,relax-fm.ru,rg.ru,roscontrol.com,sibnet.ru,skachat-kino.fun,smolensk-i.ru,sovsport.ru,spanishrestaurant.ru,sport5.by,sportanalytic.com,sportguide.kiev.ua,start33.ru,syzran-small.ru,tele.ru,tengriauto.kz,tengrinews.kz,tengrisport.kz,tengritravel.kz,the-flow.ru,thequestion.ru,thg.ru,tveda.ru,twentysix.ru,ufanotes.ru,valverus.info,vashurok.ru,veterinargid.ru,vikka.ua,vinnitsa.info,vklasse.online,vovka.su,vringe.com,vshkole.com,woman.ru,wonderzine.com,wowjp.net,xsport.ua,zagorod.spb.ru,zaim-profi.ru,zaryad.me,zebra-tv.ru,zoohoz.ru,zorbasmedia.ru##div[class*="banner"]
 dressupmix.ru##div[class*="banner"]:not(.banner-vk)
 bombardir.ru##div[class*="banner-placeholder"]
 mobile-review.com##div[class*="banner-wrapper"]
@@ -28397,7 +28399,7 @@ fastpic.org,~new.fastpic.org##+js(addEventListener-defuser, /click|load/, popMag
 biqle.org,biqle.ru##+js(addEventListener-defuser, /click|mousedown/, popunder)
 fm-app.ru,tvapp.su,yootv.ru##+js(addEventListener-defuser, /mouse/, cursorVisible)
 ~id.rambler.ru,rambler.ru,~vp.rambler.ru##+js(addEventListener-defuser, DOMContentLoaded, .j-mini-player__video)
-sibnet.ru##+js(addEventListener-defuser, DOMContentLoaded, /pon-/)
+sibnet.ru##+js(addEventListener-defuser, DOMContentLoaded, /EventTracker|utm_campaign/)
 sports.ru##+js(addEventListener-defuser, DOMContentLoaded, 0x)
 buhplatforma.com.ua,dzplatforma.com.ua,medplatforma.com.ua,oblikbudget.com.ua,oplatforma.com.ua,pro-op.com.ua,prokadry.com.ua##+js(addEventListener-defuser, DOMContentLoaded, StrategyHandler)
 doramaland.plus##+js(addEventListener-defuser, DOMContentLoaded, _Modal)
