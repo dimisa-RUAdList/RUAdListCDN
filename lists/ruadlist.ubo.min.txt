@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 04 May 2025 12:49:51 +0000
-! Diff-Path: ../patches/2025.5.4.769.patch#ruadlist
+! Last modified: Sun, 04 May 2025 17:23:49 +0000
+! Diff-Path: ../patches/2025.5.4.1043.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -17406,6 +17406,7 @@ bdf.ms##.pageContent > div[style^="outline"] > a[href]:not([href^="../threads/"]
 matematikalegko.ru##.page_Banner
 darktorrent.org##.page__main a[href][target="_blank"] > img
 businessman.ru#?#.page__section:-abp-has(> .partner)
+redheadsound.studio##.page__text > div[style^="color:"]
 nur.kz##.page__top
 nnovosti.info##.page_content > .article_content ~ div[style^="width:"]
 djekxa.ru##.page_index.content > p a[href][target="_blank"] > img
@@ -19154,6 +19155,7 @@ floomby.ru##[id*="adsPlace"]
 sia.ru##[id*="banana"]
 allgosts.ru##[id*="baner"]
 lifenews.ru,lifenews78.ru,semestr.online,semestr.ru##[id*="banner"]
+forum.guns.ru##[id*="hide"][id$="ban"]
 hideme.ru##[id*="hidemead"]
 iarex.ru,p-p.com.ua##[id*="redtram"]
 mychords.net,polaremont.ru,stokvod.ru##[id*="teaser"]
@@ -21204,6 +21206,7 @@ indi1.top#?#div[id^="widget_wrapper_"]:-abp-has(.widget_video_ads)
 mosday.ru##div[id^="yaad"]
 soccer0100.com,spectehinfo.ru,trudbox.com.ua##div[id^="yandex_direct"]
 lena-miro.ru,levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##div[id^="yandex_direct_"]
+24smi.org,gdz-raketa.ru##div[id^="yandex_rtb"] > :not(img)
 alcogolizm.com##div[id^="yazd_"]
 korabel.ru##div[id^="ydirect_"]
 irecommend.ru##div[id^="ymarket-mobtop"]
