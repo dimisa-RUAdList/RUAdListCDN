@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 06 May 2025 09:29:32 +0000
-! Diff-Path: ../patches/2025.5.6.569.patch#ruadlist
+! Last modified: Tue, 06 May 2025 14:30:31 +0000
+! Diff-Path: ../patches/2025.5.6.870.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22563,17 +22563,24 @@ ok.ru##.exit-popup
 ok.ru#?#.feed-list > .feed-w:-abp-has(> [class^="feed"] > .feed-header [class] ~ [class] ~ [class] ~ [class] ~ [class] ~ [class])
 ok.ru#?#.feed-list > .feed-w:-abp-has([class^="feed"][class*="label"]:-abp-contains(Реклама))
 ok.ru#?#.feed-list > .feed-w:-abp-has(button[class*="advert-badge"])
+ok.ru#?#.feed-list > .feed-w:-abp-has(dzen-content)
 ok.ru##.forthTopAdv
 ok.ru##.html5-vpl_oklive-banner
+ok.ru#?#[data-logger="SimpleLogger"]:-abp-has([href^="https://dzen.ru/"])
+ok.ru#?#[data-logger="SimpleLogger"]:-abp-has(dzen-content)
 ok.ru#?#div:-abp-has(> #hook_Block_CompactFooter) > div:not(#hook_Block_CompactFooter)
 ok.ru##div[class*="__banner-feed-"]
 ok.ru##div[data-place*="BANNER"]
+ok.ru##dzen-content
 ! Очень однобокая реклама Хрома + очень часто просят удалить
 ok.ru##.update-browser_container
 ! Блокировка
+/DzenLoader$domain=ok.ru
+/res/assets/alf2-$script,domain=ok.ru
+/res/assets/RightColumn-$script,domain=ok.ru
+/res/react/dzen$domain=ok.ru
+||ok.ru/web-api/pts/dzen-
 ||st.mycdn.me/res/i/anonym/jakobs/$image
-||st.okcdn.ru/res/assets/alf2-$script,domain=ok.ru
-||st.okcdn.ru/res/assets/RightColumn-$script,domain=ok.ru
 ! Реклама, встроенная расширением OkTools)
 ok.ru##iframe[src^="//oktools.ru/page/static/"]
 ||oktools.ru/page/static/
@@ -27599,8 +27606,8 @@ s13.ru##body > .wrapper:style(top: 0 !important)
 ! Sdamgia
 sdamgia.ru###old_school > .App > div > [color="red"]
 sdamgia.ru##.menu[role="navigation"] div[style]:style(height: auto !important)
-sdamgia.ru##[role="main"] div[style^="position: absolute; top: 0px; "][style*="cursor: pointer"]
 sdamgia.ru##aside > div[class]:first-child div:style(height: auto !important)
+sdamgia.ru##center > div[style^="position: absolute; top: 0px; "]
 sdamgia.ru##div[style] > a[target="_blank"] > img[src^="data:"]
 ! ---
 sc2tv.ru##.body--brranding > .content:style(margin-top: unset !important)
