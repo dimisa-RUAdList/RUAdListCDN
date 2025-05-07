@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 07 May 2025 05:29:01 +0000
-! Diff-Path: ../patches/2025.5.7.329.patch#ruadlist
+! Last modified: Wed, 07 May 2025 10:32:19 +0000
+! Diff-Path: ../patches/2025.5.7.632.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -1468,6 +1468,7 @@
 ||dankulavius.com^$third-party
 ||daopz.top^$third-party
 ||daredac.com^
+||darmancerinelil.com^$third-party
 ||dartimyl.com^
 ||dasftresns.com^$third-party
 ||dashslesh.com^$third-party
@@ -21748,6 +21749,7 @@ vikka.ua##section[id^="ctup_ads-"]
 agro-business.com.ua##section[id^="sp-subcribe-footer"]:not(#sp-subcribe-footer)
 gamegpu.com##section[id^="tm-top-"]
 sex-studentki.*##.description > button[style*="color:red;"]
+sosalkino.tube,sosalkino.*##.spot.after_player
 point.md##span > a[href*="/novosti/business/"]
 bhf.io##span > a[href][target="_blank"][rel="nofollow"]
 sport.tut.by#?#span > small:-abp-contains(Приведённые букмекерские коэффициенты)
@@ -22012,7 +22014,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||news.mail.ru/-/*.js?
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
-||pikabu.ru/ajax/*?n7jrU=$xmlhttprequest
+||pikabu.ru/ajax/*?uj5hC=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
