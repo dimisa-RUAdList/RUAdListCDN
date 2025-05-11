@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 11 May 2025 14:26:16 +0000
-! Diff-Path: ../patches/2025.5.11.866.patch#ruadlist
+! Last modified: Sun, 11 May 2025 19:19:33 +0000
+! Diff-Path: ../patches/2025.5.11.1159.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10887,8 +10887,6 @@ igdz1.ru^$script,domain=igdz.ru
 ||alicdn.com^$domain=prostolinux.ru|ru-an.info|rutracker.ru|savepic.ru|smartbobr.ru|vsaduidoma.com
 ||aliexpress.com^$domain=floradoma.com|gadgetmir.org|medickon.com|multrecept.com|tvoipitomec.com|tvoipitomec.info
 ||aliimg.com^$domain=chem21.info
-||all-episodes*/images/abc/
-||all-episodes*/vast.js
 ||allbasketball.org/*/pari
 ||allbasketball.org/bmpvvxgrht/
 ||allbest.ru/img/*-bg.png
@@ -15308,7 +15306,7 @@ av.by##.av-branding-bottom
 av.by##.av-branding-top
 pindosoff.net,pornovkisku.com,teplomontag.net##.avr-wrapper
 primanki.com##.avyes
-agronews.ua,agroreview.com##.aw-ads-container
+agronews.ua,agroreview.com,agroweek.com##.aw-ads-container
 chas.cv.ua##.awac-wrapper
 bestinfo.am##.awd-hidden-phone
 gsconto.com##.azk-banner
@@ -20664,7 +20662,6 @@ dfm.ru,hitfm.ru,maximum.ru,montecarlo.ru,rusradio.ru##div[class^="advertising-"]
 multoigri.ru##div[class^="advertising-content-"]
 mp3party.net##div[class^="advf-"]
 epravda.com.ua,pravda.com.ua##div[class^="advtext_"]
-all-episodesfun.org##div[class^="advtss"]
 ekaraganda.kz##div[class^="aks-"]
 gamer.ru##div[class^="alarmalarm-banner"]
 shotam.info##div[class^="angwp_"]
@@ -21566,7 +21563,6 @@ teremok.org.ua##img[src*="/partner/images/"]
 me3.com.ua##img[src*="/static/banners/"]
 vashurok.ru##img[src*="/system/banners/"]
 allgosts.ru##img[src*="/theme/img/hmwk/"]
-agroweek.com##img[src*="/ukravit."]
 dnl.com.ua,dnl.dn.ua,go64.ru,gubkinskiy.com,infoniac.ru,lipetskmedia.ru,paparazzi.ru,trk7.ru,zi.ua##img[src*="/upload/rk/"]
 tyachivnews.in.ua##img[src*="/uploads/blocks/"]
 ksza.ks.ua##img[src*="/uploads/rain."]
@@ -26464,9 +26460,6 @@ ain.ua##html > body:not(#id):style(pointer-events: none !important; background-c
 alexfilm.org##main > .container:style(margin-top: 50px !important)
 ! ---
 alexua.tv##.static_content:style(min-height: 0 !important)
-! ---
-all-episodesfun.org##body > .wrapper:style(margin-top: 0 !important; max-width: unset !important)
-all-episodesfun.org##body:style(background-image: none !important)
 ! ---
 allapteki.ru###alia_modal
 allapteki.ru###vita_modal
