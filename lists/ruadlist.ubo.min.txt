@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 13 May 2025 11:23:43 +0000
-! Diff-Path: ../patches/2025.5.13.683.patch#ruadlist
+! Last modified: Tue, 13 May 2025 16:35:33 +0000
+! Diff-Path: ../patches/2025.5.13.995.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10180,6 +10180,7 @@ surl.*#?#.text-center:-abp-has(> form > .disabled) > p ~ *
 /pum-site-scripts.js$domain=belsat.eu|hariola.com|newsyou.info|svoboda.te.ua|v-variant.com.ua
 /smart-facebook-page-like-overlay-pro/$domain=coocook.me
 /sociallocker-$domain=samiysok.com|sshut.ru|videokaif.ru
+/sound/*.mp3$media,domain=pb.wtf|pirat.one|piratbit.fun|piratbit.org|piratbit.top
 /templates/vser-light/images/social.gif$domain=novoruskino.net|ruskinonovoe.net
 /wp-content/*/*modal$script,stylesheet,~third-party,domain=noworries.news
 /wp-content/*/remodal$script,stylesheet,~third-party,domain=agroter.com.ua|oblast-te.com.ua|pb-news.info|te.ua|ternopillive.com
@@ -14295,6 +14296,7 @@ stadion.uz###middle_section > div[style^="float:"]
 k-agent.ru###middletbl_r_in > a[href="http://www.sushivenik.ru"]
 tort.fm###min-banners-block
 bestfree.ru###mine
+pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top###modal-box
 bankchart.com.ua###modal-cpa
 mozilla-russia.org###modex
 animevost.one,animevost.org,animevost.top,vost.pw###moduleLeft[style="border:0;"]
@@ -15007,6 +15009,7 @@ matematikalegko.ru##.abs
 we-reads.com##.abs_row
 kidstaff.com.ua##.absk
 digger.ru##.acid
+pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##.activ.tLeft
 alvin-almazov.ru##.active_bet
 agravery.com,babla.ru,clickthis.blog,cont.ws,dumskaya.net,filehippo.com,geekmir.ru,ifun.ru,inform-ua.info,kinda.media,klops.ru,liga.net,lookmeet.tv,mmovote.ru,myshared.ru,news.pn,obsuzhday.com,pik.net.ua,primpogoda.ru,prostopleer.com,regmarkets.ru,riavrn.ru,tut.by,vgolos.ua,vogue.ru,vz.ru,zaks.ru##.ad
 versii.com##.ad ~ noindex
@@ -15299,6 +15302,7 @@ au.ru##.au-candy
 au.ru##.au-prime-page-desktop-banner
 au.ru##.au-right-banner
 nn.ru##.au-top-ads-container
+ndelo.ru##.auth-box__social-box
 happy-biock.info,happy-block.info,howto-news.info##.author-widget
 r-kopilka.ru##.autor-bl
 andro-news.com##.av-block
@@ -17113,7 +17117,6 @@ motorshop.kz##.menu + .block > div > a > img[src^="images/"]
 list-org.com##.menu > .sticky
 2krota.ru##.menu > a:not([href^="/"])
 1yar.tv##.menu > li > a[href^="https://vk.com/"]
-pb.wtf,piratbit.fun,piratbit.org,piratbit.top##.menu > li.top_menu ~ li:not(.top_menu )
 appleinsider.ru##.menu-item > a[href*="utm_campaig"]
 kursiv.media##.menu-promo
 freelansim.ru##.menu__item.special
@@ -17674,6 +17677,7 @@ gnatkovsky.com.ua##.r_sell
 rosphoto.com##.rad
 fiteria.ru##.rads
 tivix.co##.rakana
+pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##.raleas-navbars > [date-u="slodesr"] > div:empty[style*="opacity:"]
 a42.ru##.ranbne.clearfix
 aromatmasla.ru,progrib.ru##.randomizer
 animemobi.ru##.randomnews > .videorek
@@ -18664,7 +18668,8 @@ limehd.tv#?#.w-full > a[href^="/channel/"] ~ div:-abp-has(> div > [id^="yandex_r
 vgorodekirove.ru##.w_back_shapes
 livecars.ru,livesport.ru##.wall
 wallscloud.net#?#.walls_data > .item:-abp-has(> .thumbnail script)
-pb.wtf,piratbit.fun,piratbit.org,piratbit.top#?#.war_item:-abp-has(> .war_img > a[href*="exaccess"])
+pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top#?#.war_item:-abp-has(> .war_img > a[href*="exaccess"])
+pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top#?#.war_item:-abp-has(> .war_img > a[href*="gamesell."])
 xmages.net##.we-are-featured
 securitylab.ru##.webinar-banner
 gotoshop.ua##.welcome2
@@ -19554,7 +19559,7 @@ business-gazeta.ru##a[href*="erid="]
 agronovosti.ru,sport-express.net,sport-express.ru,www.ixbt.com##a[href*="erid="][target="_blank"]
 7ba.org,7ba.ru##a[href*="erotel.org"]
 forum.amit.ru##a[href*="evroremont.amit.ru"]
-pb.wtf,piratbit.fun,piratbit.org,piratbit.top##a[href*="exaccess"]
+pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##a[href*="exaccess"]
 ilenta.com,lelang.su,rutr.life,rutracker.lib,rutracker.net,rutracker.nl,rutracker.org,shopping.nv.ua##a[href*="fas.st/"]
 pwcats.info##a[href*="fastrader.ru"]
 sport.ua,vringe.com##a[href*="favbet"][target="_blank"]
@@ -19565,6 +19570,7 @@ allhockey.ru##a[href*="fonbet.ru"]
 juventus.ru##a[href*="football-shopping.ru"]
 erichware.net##a[href*="freebitco.in"]
 aacalc.ru,noob-club.ru##a[href*="funpay.ru"]
+pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##a[href*="gamesell."]
 gsett.ru##a[href*="ggsel"]
 gtp-tabs.ru##a[href*="goaway.php"]
 3torrent.org,4allwomen.ru,4k-kino.net,7days2die.info,7torrents.net,a-age.ru,aacalc.ru,aces.gg,androidsmartfony.com,app2top.ru,arsenaltula.ru,audioskazki.net,avtovod.com.ua,cheb.ru,cheboksary.ws,chepetsk.ru,disgustingmen.com,ebanoe.it,f-igri.ru,farap.ru,filmasik.com.ua,for-ua.info,game-pool.ru,games--torrent.ru,geekteam.pro,gorod55.ru,gtp-tabs.ru,hdkino.biz,igri-torrent.net,igryday.ru,ilenta.com,javadevblog.com,kino-teatr.ua,kinonews.ru,kinoplace.org,kinotorka.ru,klubok.com,kontrolnaya-rabota.ru,kritka.su,microstock.ru,mixsoft.org,mobiltelefon.ru,namba.kg,newrutor.net,noob-club.ru,nowa.cc,office-guru.ru,onlinemultfilmy.ru,osobye.ru,pesni-tut.com,povarenok.ru,prosadiogorod.ru,ra1ohx.ru,radiopotok.ru,raskraska.com,relizua.com,rusbitor.ru,sbornik-music.ru,serialpro.net,sewin.net,skachat-igri-besplatno.info,softbaze.ru,softikbox.com,spam-club.blogspot.com,spam-club.blogspot.ru,studopedia.org,superg.ru,tankist.su,torrent-besplatno.net,torrent-club.net,torrent-igri.com,torrentrepack.ru,torrents-game.net,trademaster.ua,tuchkatv.ru,udaff.com,vashipitomcy.ru,vsofte.biz,winxland.ru,yaminecraft.ru,youhack.ru,zoneofgames.ru,zserials.cc##a[href*="goo.gl"]
@@ -20020,6 +20026,7 @@ barneos22.ru##a[href^="https://barneos22.ru/go/"]
 sitepokupok.ru##a[href^="https://citycard.ru/lucky"]
 program-pro.ru##a[href^="https://cryptocandle.ru"]
 biqle.org,biqle.ru##a[href^="https://daftsex.github.io/"]
+pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##a[href^="https://denuvo.net/"]
 www.film.ru##a[href^="https://hochuvkino.ru"]
 informator.ua##a[href^="https://inf.im/pinup_bonus"]
 softodrom.ru##a[href^="https://inspin.me"]
@@ -21259,7 +21266,6 @@ tsn.ua##div[style*="opacity: 40%"]
 glavred.info,glavred.net##div[style*="px;max-height:"][style*="overflow:"][style*="hidden"]
 glavred.info,glavred.net,unian.net,unian.ua##div[style*="px;max-height:"][style*="position:"]
 anidub.vip,anidubonline.com##div[style*="width: 240px;"][style*="height: 400px;"]
-pb.wtf,piratbit.fun,piratbit.org,piratbit.top##div[style="background: #a94442;padding: 5px;font-size: 16px;"]
 mediazavod.ru##div[style="background: #fff;padding: 10px; margin-bottom: 20px;"]
 ingrus.net##div[style="background: #ffffff; box-shadow: 0 0 0 1px #457a9d, 0 0 5px #333; padding: 10px 3px 3px 3px;"]
 lyricshub.ru##div[style="border-right: 1px solid rgba(0, 0, 0, 0.125);"]
@@ -22024,7 +22030,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||news.mail.ru/-/*.js?
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
-||pikabu.ru/ajax/*?r8ivU=$xmlhttprequest
+||pikabu.ru/ajax/*?r8iwU=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -28631,6 +28637,7 @@ in-poland.com##+js(set-constant, adsenseIsLoaded, true)
 gdz-putina.fun,gdz.ninja,gdz.ru,gdzotputina.club,gdzputina.net,megaresheba.com,megaresheba.ru,resheba.me,spishi.fun,zoobrilka.net##+js(set-constant, app.book.external, null)
 razlozhi.ru##+js(set-constant, cadb, false)
 audioportal.su##+js(set-constant, clicks, 2)
+pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##+js(set-constant, countdownNum, 0)
 ~spec.tass.ru,tass.ru##+js(set-constant, frames.innerWidth, {})
 gazeta.ru##+js(set-constant, g_GazetaNoExchange, true)
 gazeta.ru##+js(set-constant, isAdFree, noopFunc)
@@ -28695,6 +28702,9 @@ hideip.me#@#.node-promoted
 vm.ru##.onair_wrapper > [name="btn_air_close"]
 cq.ru##.post-content > div > div:matches-css(height: 150px):remove()
 pikabu.ru##.pub300x250.pub300x250m.pub728x90.text-ad.textAd.textad.textads.text-ads.text-ad-links:style(display: block !important; position: absolute !important; top: -10000px !important; left: -10000px !important)
+pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##.raleas-navbars .war_item .relise
+pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##.raleas-navbars .war_item:remove-attr(style)
+pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##.raleas-navbars .war_item:style(display: inline-block !important)
 sports.ru##.right-first-banner-place + div
 lenta.ru##.scroll-to-site
 softportal.com##.st-browser__timer
@@ -28726,6 +28736,7 @@ fontanka.ru##[class^="articleBlockVideo_"] video ~ button
 ozon.ru##[data-lcp-name*="anner-"]:matches-path(/my/reviews/promo):style(display: block !important)
 www.sports.ru##[data-noinit]
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[id^="suggest-item-"]:has(> a[href*="://yabs.yandex."][href*="/count/"]):remove()
+pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##[value="Скачать"]:remove-attr(disabled)
 online-fix.me##a.btn-success[href^="https://online-fix.me/ext/"]:remove-class(btn)
 24smi.org##a[href*="://24smi.org/"]:remove-attr(target)
 trupornolabs.org#@#a[href*="://pronpic.org/"]
@@ -28944,6 +28955,7 @@ www.kinopoisk.ru##div[style="width: 100%; height: 249px;"]
 !#if env_firefox
 sports.ru##+js(cookie-remover, aablc)
 @@$cname,domain=360tv.ru|3sat.de|innal.top|kyiv.ua|sports.ru|tosdr.org
+ndelo.ru##^.js-login > input
 root-nation.com##^.td-a-rec
 root-nation.com##^body > a
 inforesist.org##^script:has-text(/gtag\('event'/)
