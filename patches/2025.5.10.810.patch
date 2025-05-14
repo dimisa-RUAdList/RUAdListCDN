@@ -1,8 +1,8 @@
-diff name:ruadlist lines:109 checksum:d2ece20463
+diff name:ruadlist lines:118 checksum:6f891d61d8
 d4 2
 a5 2
-! Last modified: Wed, 14 May 2025 12:55:01 +0000
-! Diff-Path: ../patches/2025.5.14.775.patch#ruadlist
+! Last modified: Wed, 14 May 2025 17:26:49 +0000
+! Diff-Path: ../patches/2025.5.14.1046.patch#ruadlist
 d1706 1
 a8628 1
 ##a[href*="//zen.yandex.ru/"]
@@ -31,6 +31,7 @@ ndelo.ru##.auth-box__social-box
 d15310 1
 a15310 1
 agronews.ua,agroreview.com,agroweek.com##.aw-ads-container
+d15954 1
 a15986 1
 mmo13.ru##.cl-block-rk
 a16568 1
@@ -54,6 +55,7 @@ ps4.in.ua##[data-ad-slot]
 d19324 1
 a19324 1
 video.matchtv.ru##a.vjs-link[href*="://matchtv.ru/subscriptions"]
+d19359 1
 d19375 1
 d19556 1
 a19556 1
@@ -69,9 +71,12 @@ d20471 1
 d20663 1
 d21262 1
 d21565 1
+a21743 2
+ru-dub.xyz,rudub.*##a[href*=".li"]
+rudub.*##.card__description__adv
 d22028 1
 a22028 1
-||pikabu.ru/ajax/*?r8iwU=$xmlhttprequest
+||pikabu.ru/ajax/*?r8ixU=$xmlhttprequest
 d22088 1
 a22088 1
 ~dzen.ru,~sportsdzen.ru##[href^="https://dzen.ru"]
@@ -82,6 +87,7 @@ d26322 1
 a26322 1
 live.vkvideo.ru##div[class^="Notifications_root"]
 d26464 3
+d27601 3
 d27743 2
 a27744 2
 tapochek.net##.lenta-tooltips-container > .tooltip-container:style(top: 43px !important)
@@ -106,5 +112,8 @@ pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##.raleas-navbars .war_it
 d28707 1
 a28736 1
 pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##[value="Скачать"]:remove-attr(disabled)
+a28779 2
+rudub.*##.details__bg
+rudub.*##body > section[class*="section details"]:style(padding-top: 70px !important)
 a28954 1
 ndelo.ru##^.js-login > input

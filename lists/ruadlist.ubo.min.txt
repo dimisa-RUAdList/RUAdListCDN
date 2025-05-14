@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 14 May 2025 12:55:01 +0000
-! Diff-Path: ../patches/2025.5.14.775.patch#ruadlist
+! Last modified: Wed, 14 May 2025 17:26:49 +0000
+! Diff-Path: ../patches/2025.5.14.1046.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -15955,7 +15955,6 @@ pronovostroy.ru##.card-special-gallery--topic
 solidarnost.org##.card-yandex
 1tv.ru##.card.promo
 sovsport.ru##.cardForecast_card_container__b_Ukm > div[class^="cardForecast_btn"]
-rudub.biz##.card__description__adv
 bzrus.pro##.card__inner-premium
 bzrus.pro##.card__re-video
 edimdoma.ru##.card_commercial
@@ -19366,7 +19365,6 @@ onliner.by##a[href*=".betera.by"]
 creativportal.ru##a[href*=".creativportal.ru"]
 fishingsib.ru,hunting.ru##a[href*=".fhserv.ru"]:not([href^="https://image.fhserv.ru"])
 2baksa.ws##a[href*=".htm"] > img
-ru-dub.xyz,rudub.biz##a[href*=".li"]
 texnic.ru##a[href*=".php?ad="]
 onliner.by##a[href*=".pm.by"]
 sport.tut.by##a[href*=".pm.by/"]
@@ -21748,6 +21746,8 @@ golbis.com##p[style="text-align:left;margin-left:10px;"]
 stormo.online,stormo.tv##pjsdiv[style^="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; pointer-events: none; z-index: 10000; display: block; background:"][style*="/player/loader.png"]
 brclip.com,clip-share.net,flash-player.net,frvid.com,ibb.co,jpvid.net,kzblow.info,kzclip.com,ru-clip.com,ru-clip.net,ruburn.info,ruclip.com,thclips.com,trshow.info,trvid.com,uaclips.com,vnclip.net##pp
 stratege.ru##psplus-footer
+ru-dub.xyz,rudub.*##a[href*=".li"]
+rudub.*##.card__description__adv
 liveinternet.ru##script + div[id] > div[style^="width:"]
 sftv.ru##script[src*="iwantyourpromo.com"] ~ div[align="center"]
 megaimg.ru##script[src^="http://am10.ru/"] + center
@@ -22032,7 +22032,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||news.mail.ru/-/*.js?
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
-||pikabu.ru/ajax/*?r8iwU=$xmlhttprequest
+||pikabu.ru/ajax/*?r8ixU=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -27599,9 +27599,6 @@ rserials.net###subheader:style(padding-top: 0 !important)
 forum.ru-board.com##.tpc > .post > a[href]:style(word-break: break-all)
 forum.ru-board.com##.tpc > .post > table[width] > tbody > tr > .lgf:style(word-break: break-word)
 ! ---
-rudub.biz##.details__bg
-rudub.biz##body > section[class*="section details"]:style(padding-top: 70px !important)
-! ---
 rusnext.ru##.header20-00:style(height: auto !important)
 ! ---
 rusprofile.ru###subscription_banner_root
@@ -28779,6 +28776,8 @@ pornhub.*##.playerFlvContainer.mgp_hideControls:style(cursor: none !important)
 porno365.*##+js(abort-on-property-read, bc_blocks)
 porno365.*##+js(abort-on-stack-trace, Object.prototype.parallax, window.onload)
 pornopuk.com,huyamba.tv,piratam.net,piratca.net,porn720.biz,pornoakt.*,sexitorrent.com,sextor.org,domahatv.com,torrent-pirat.com,xtorrent.net,rapidzona.tv,xxxrip.net,hentai-mood.me,xxxtor.com,hentai-share.one,3dn.ru##+js(abort-current-inline-script, document.querySelectorAll, popMagic)
+rudub.*##.details__bg
+rudub.*##body > section[class*="section details"]:style(padding-top: 70px !important)
 tochka.by##section:remove-class(brand)
 kanobu.ru#?#section[class^="MaterialsManufacturerPage_infiniteWrap"] > div[class^="InfiniteScrollWrap_content"] > [class*="MaterialItemPage_materialSection"]:-abp-has(> .knb-grid-container > [data-io-article-url] [class^="TextContent_text"] > p:-abp-contains(/^Реклама:/)) [class^="material-content_"] a[href][target="_blank"]:not([href^="https://kanobu.ru/"]):style(color: inherit !important; pointer-events: none !important)
 igromania.ru#?#section[class^="MaterialsManufacturerPage_infiniteWrap"] > div[class^="InfiniteScrollWrap_content"] > [class*="MaterialItemPage_materialSection"]:-abp-has(> .knb-grid-container > [data-io-article-url] [class^="TextContent_text"] > p:-abp-contains(/^Реклама:/)) [class^="material-content_"] a[href][target="_blank"]:not([href^="https://www.igromania.ru/"]):style(color: inherit !important; pointer-events: none !important)
