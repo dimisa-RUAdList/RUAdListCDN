@@ -1,26 +1,51 @@
-diff name:ruadlist lines:25 checksum:e280db0b37
+diff name:ruadlist lines:50 checksum:77a64c1c24
 d4 2
 a5 2
-! Last modified: Thu, 15 May 2025 18:37:46 +0000
-! Diff-Path: ../patches/2025.5.15.1117.patch#ruadlist
+! Last modified: Thu, 15 May 2025 23:25:54 +0000
+! Diff-Path: ../patches/2025.5.15.1405.patch#ruadlist
+d10613 1
+a10613 1
+/images/banners/*$domain=19rus.info|19rusinfo.ru|1tvnet.ru|33strausa.ru|8vp.ru|abnews.ru|agroxxi.ru|alfa-form.ru|altgazeta.ru|aniplay.tv|antimuh.ru|archiportal-crimea.ru|arendator.ru|aum.news|autogrodno.by|bez-smenki.ru|bitpump.ru|biwork.ru|bryansktoday.ru|buzday.ru|buzulukday.ru|bvedomosti.ru|calcus.ru|cars.ru|coil32.ru|cryptoff.org|csmania.ru|cxem.net|darkmoney.at|dtpptz.ru|ecm-journal.ru|erotix-tv.com|express-prigorod.ru|fakty.ua|fermagid.ru|firtka.if.ua|fitsport.ru|forpost.lviv.ua|fuzz-magazine.ru|hd-systems.com.ua|highload.tech|house.kg|hv-info.ru|hype.tech|info-ua.com|infokam.su|inforeactor.ru|itc.ua|itexpert.org.ua|izmacity.com|kaluga.ru|kamchatinfo.com|karelia.ru|kazfootball.kz|kids.to-var.com|km.ru|ko44.ru|korabel.ru|kramatorsk.info|kyiv-independent.com|lifetambov.ru|mc.today|mebelminsk.by|medicalj.ru|memstatus.ru|mirnov.ru|mos-holidays.ru|moscow-post.com|motoforum.ru|motovibor.ru|moya-semya.ru|mycity.by|nakanune.ru|nashdisk.ru|naurfo.ru|ndn.info|newgdz.com|newgubakha.ru|news.soundex.ru|ng.kz|ngregion.ru|nsday.ru|numama.ru|ok-inform.ru|orenday.ru|osvita.ua|out-club.ru|perevolockday.ru|planet-today.ru|planetaskazok.ru|poiskvps.ru|pretenziy.ru|profidom.com.ua|prosports.kg|prosports.kz|rabota-kovrov.ru|rabota.kharkov.ua|radioclub.ua|rbc.ru|ria-m.tv|ria56.ru|ridna.ua|rtr24.ru|ruslife.eu|saltday.ru|sevastopol.su|sevkavportal.ru|shans.com.ua|skoda-club.org.ua|smolnarod.ru|sorochinskday.ru|sostav.ua|sp.tomica.ru|starkosino.ru|study.ru|tenstars.ru|ternopoliany.te.ua|trassae95.com|trisosny.ru|tv-gubernia.ru|ua-independent.com|uff.uz|ufocar.ru|ukrlife.tv|valetudo.ru|vdv-kavkaz.ru|vjazhi.ru|vmeste.tv|vp.donetsk.ua|vsatke.ru|vse-pro-sport.com.ua|vseprosport.by|vseprosport.kz|vseprosport.ru|wallnews.org|yablor.ru|zamena-podshipnikov.ru|zrenue.com|zvid.org
 a15491 1
-itc.ua##.banner-agency
+highload.tech,itc.ua,mc.today##.banner-agency
+a16070 1
+mc.today##.company-slider
+d16777 1
+a16777 1
+highload.tech,itc.ua##.intro
 d17477 1
 a17477 1
-censor.net,fc-zenit.ru,grodnonews.by,highload.today,mc.today,mgorod.kz,mos.news,nsnet.ru,rybalka.com,siteua.org,twogarin.info,vesti42.ru,xsport.ua##.partners
+censor.net,fc-zenit.ru,grodnonews.by,highload.tech,mc.today,mgorod.kz,mos.news,nsnet.ru,rybalka.com,siteua.org,twogarin.info,vesti42.ru,xsport.ua##.partners
 d17619 1
+a18709 1
+highload.tech,mc.today##.widget-spec-project
 a19013 1
 itc.ua##[class^="product"]
 d19064 1
+d19262 1
+a19262 1
+abnews.ru,fakty.ua,highload.tech##[src*="/images/banners/"]
 d19388 1
 a20239 1
 itc.ua##body > .hidden-sm
 d20536 1
 a20536 1
-highload.today,mc.today##div[class*="course-widget"]
+highload.tech,mc.today##div[class*="course-widget"]
 d22035 1
 a22035 1
 ||pikabu.ru/ajax/*?r8iyU=$xmlhttprequest
+d27924 1
+a27924 1
+ya.ru##html[class*="morda"] .body__content > [class*="informers"] ~ div[style]
+d27948 1
+a27948 1
+dzen.ru##div[class] > [id] > div[style*="important"]:style(padding-top: unset !important)
+d27954 2
+d27959 1
 d28314 1
 a28662 1
 mp3party.net##+js(set-cookie, yandexFull, true)
+a28715 3
+dzen.ru##:matches-path(/a/) [data-appid] > [itemscope] > div > div[id]
+dzen.ru##:matches-path(/a/) [data-appid] [style^="max-height:"] [style^="opacity:"]
+dzen.ru##:matches-path(/a/) div:matches-attr(/[a-z0-9]/=article-bottom-block) > [class*="social"] ~ div
