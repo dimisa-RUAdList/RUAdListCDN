@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 18 May 2025 06:36:29 +0000
-! Diff-Path: ../patches/2025.5.18.396.patch#ruadlist
+! Last modified: Sun, 18 May 2025 11:20:54 +0000
+! Diff-Path: ../patches/2025.5.18.680.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10258,6 +10258,7 @@ surl.*#?#.text-center:-abp-has(> form > .disabled) > p ~ *
 ||pravpiter.ru/splash_wind/s_dialog/
 ||psxplanet.ru/forum/clientscript/ny20
 ||radioroks.ua^$domain=megatrack.top
+||rbk.ru/*/scripts/build/fn/_pushAllow.js
 ||senior.ua/disable/request-banner
 ||shokru.com/wp-content/plugins/elegance-modal-box/
 ||sim-portal.ru/jfbe7r9.js
@@ -16702,6 +16703,7 @@ bezformata.com##.hottopicadvertbox
 vomske.ru#?#.hr:-abp-contains(/Яндекс.Директ ВОмске|Другие новости/)
 lifehaker.forum-top.ru##.html-box
 sakh.com,travelsakhcom.ru##.html5-bp
+hentai-hub.net##.htvad
 echomsk.spb.ru##.huge_banner
 bolshoyulov.ru,fastcarp.ru##.hungry
 www.film.ru##.hvk
@@ -19849,7 +19851,6 @@ syzran-small.ru,xn----7sbabwosghnf8al4lkj7b.xn--p1ai##a[href^="/index.php?go=Ban
 kidstaff.com.ua##a[href^="/informer/main.html#reklama"]
 minecraft-mods.ru##a[href^="/lp2/go.php"]
 infomir59.ru,milknews.ru##a[href^="/netcat/modules/banner/"][target="_blank"]
-sdamgia.ru##a[href^="/o"][target="_blank"]
 worldoftanksgame.ru##a[href^="/play-"] > img
 myparcels.ru##a[href^="/r.php"]
 sixinch.org##a[href^="/red"]
@@ -21307,9 +21308,11 @@ chudo-povar.com##div[style="height:auto;min-height:300px;"]
 joker.ykt.ru#?#div[style="margin-left:21px;"]:-abp-has(.opros:-abp-contains(Реклама))
 hentailib.me,hentailib.org,mangalib.me,mangalib.org,ranobelib.me,slashlib.me,yaoilib.net##div[style="margin-top: 8px; margin-bottom: 12px;"]
 gazetavv.com##div[style="margin-top:5px;height:90px;"]
+sdamgia.ru##div[style="margin: 0px; position: relative;"]
 gamebomb.ru##div[style="margin: 10px auto; width: 970px; height: 250px"]
 intv.com##div[style="margin: 10px; text-align: center;"]
 voennoedelo.com##div[style="margin: 20px auto; height: 300px; width: 910px;"]
+sdamgia.ru##div[style="margin:0; position:relative"]
 holm.ru##div[style="max-height:250px"]
 gagadget.com##div[style="min-height: 249px;"]
 meteopost.com##div[style="min-height: 300px;"]
@@ -22902,6 +22905,7 @@ cnews.ru,utro.ru##.banner
 sportrbc.ru##.bet-block
 rbc.ru##.countdown
 rbc.ru##.deposit-block
+rbc.ru##.fox-fallback
 autonews.ru##.g-banner__columns
 rbc.ru,sportrbc.ru##.g-banner__news-footer > div[class="js-rbcslider-multi-news"]
 safe.cnews.ru##.header-brand-logo
@@ -22909,12 +22913,17 @@ pro.rbc.ru##.header__partner
 rbc.ru##.header__project__info
 rbc.ru#?#.item-in-article:-abp-has([href*="erid="])
 sportrbc.ru##.js-header-slider-container
+rbc.ru##.js-index-central-column .item_promo-card
 rbc.ru#?#.js-index-central-column .js-index-doscroll:-abp-has([data-pixels-on-show*="adfox"])
 rbc.ru#?#.js-index-central-column .js-index-doscroll:-abp-has([href*="erid="])
+rbc.ru##.js-index-central-column > [data-publisher-index] .list-slider-item [href^="https://pro.rbc.ru/"]
+rbc.ru#?#.js-index-central-column > [data-publisher-index]:-abp-has(.item__bottom > [href^="https://pro.rbc.ru"])
+rbc.ru##.js-index-doscroll-pro
 cash.rbc.ru##.js-one-office.premium
 rbc.ru##.js-video-player-ad-skip
 rbc.ru#?#.l-col-100h:-abp-has(> div [href*="banner"])
 rbc.ru##.mts-promo
+rbc.ru##.news-feed a[href*="utm_campaign"]
 utro.ru#?#.news-group__content > .news-group__item:-abp-has(> .banner)
 cnews.ru##.objects_row > .cnb-zone > a:not([href*="cnews.ru"])
 rbc.ru,rbclife.ru##.rbc-header-hide-banners
@@ -22940,6 +22949,7 @@ rbc.ru##.video-player__controls__ad-countdown
 utro.ru#?#[class*="title"]:-abp-contains(/новости партнеров/i)
 rbc.ru##[data-placement]
 rbc.ru##[data-vr-zone="Топ новости"] a[href*="utm_campaign"]:not([href^="https://pro.rbc.ru/"])
+rbc.ru##[data-vr-zone="Топ новости"] a[href^="https://pro.rbc.ru/"]
 rbc.ru#?#[data-vr-zone="Топ новости"] div:-abp-has(> a[href*="utm_campaign"]:not([href^="https://pro.rbc.ru/"]))
 rbc.ru##[data-yandex-name^="selfpromo_"]
 rbc.ru##[data-yandex-show="cards_marketplace_show"]
@@ -22955,8 +22965,10 @@ autonews.ru,rbc.ru,sportrbc.ru##body div .banner__filmstrip
 autonews.ru,rbc.ru,rbclife.ru,sportrbc.ru##div[class^="fox-tail"]
 rbc.ru##div[class^="item-slider__partner"]
 utro.ru##div[class^="partners-block"]
+||api.mindbox.ru/scripts/*/tracker.$domain=rbc.ru
 ||cnews.ru/inc/js/height_max_banner.js
 ||market.cnews.ru/widget$domain=www.cnews.ru
+||rbc.ru/*/social-networks/
 ||rbk.ru/*/_mtsFloorAida.js
 ||rbk.ru/*/_renderAggregator.js
 ||rbk.ru/*_videoCommercial.
@@ -27628,6 +27640,7 @@ s13.ru##body > .wrapper:style(top: 0 !important)
 ! Sdamgia
 sdamgia.ru###old_school > .App > div > [color="red"]
 sdamgia.ru##.menu[role="navigation"] div[style]:style(height: auto !important)
+sdamgia.ru##[role="main"] div[style^="position: absolute; top: 0px; "]
 sdamgia.ru##aside > div[class]:first-child div:style(height: auto !important)
 sdamgia.ru##center > div[style^="position: absolute; top: 0px; "]
 sdamgia.ru##div[style] > a[target="_blank"] > img[src^="data:"]
@@ -28118,7 +28131,6 @@ gazeta.ru##.b_header:style(max-width: 100% !important)
 ! ---
 rbc.ru,sportrbc.ru###js_col_left > .l-sticky:style(position: relative !important; top: unset !important)
 zoom.cnews.ru##.article_inner.news_content_inner + .sidebar:style(top: 0 !important)
-rbc.ru##.fox-fallback
 rbc.ru,sportrbc.ru##.g-banner__news-footer:style(min-height: 0 !important)
 rbc.ru##.g-icon-big.g-play::after:style(bottom: calc(50% - 55px) !important; left: calc(50% - 55px) !important; cursor: pointer !important)
 rbc.ru,sportrbc.ru##.g-relative > .forecast:style(height: auto !important)
@@ -28127,7 +28139,6 @@ rbc.ru##.l-small-width-top-padding:style(padding-top: unset !important)
 rbc.ru##.l-sticky-right-parent
 zoom.cnews.ru##.main_content:style(margin-top: 12px !important)
 www.cnews.ru##.mt-auto:style(margin-top: unset !important)
-rbc.ru,sportrbc.ru##.news-feed a[href*="utm_campaign"]
 rbc.ru##.popup_push
 rbc.ru##body > [data-yandex-name="blockad_click"]
 ! исправление ошибок и косяков оригинальной вёрстки
@@ -28830,6 +28841,7 @@ ya.ru,yandex.*##.simple-popup__overlay:remove()
 ||pronpic.org^$subdocument,redirect=noopframe,domain=pronpic.org
 ||pronpic.org^$third-party,badfilter
 ||rbk.ru/*/_videoAutoplayRecommend.js
+||rbk.ru/*/build/fn/_oprosso.js
 ||s-cdn.org/promo/*.mp4$media,redirect=noop-0.1s.mp3,domain=player-films.online
 ||s-club.tv/promo/*.mp4$media,redirect=noop-0.1s.mp3,domain=player-films.online
 ||skam.online^$csp=script-src 'self' * 'unsafe-eval' data:,badfilter

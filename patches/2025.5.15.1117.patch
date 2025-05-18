@@ -1,8 +1,10 @@
-diff name:ruadlist lines:63 checksum:010defebb3
+diff name:ruadlist lines:94 checksum:cd9dd227c9
 d4 2
 a5 2
-! Last modified: Sun, 18 May 2025 06:36:29 +0000
-! Diff-Path: ../patches/2025.5.18.396.patch#ruadlist
+! Last modified: Sun, 18 May 2025 11:20:54 +0000
+! Diff-Path: ../patches/2025.5.18.680.patch#ruadlist
+a10260 1
+||rbk.ru/*/scripts/build/fn/_pushAllow.js
 d10613 1
 a10613 1
 /images/banners/*$domain=19rus.info|19rusinfo.ru|1tvnet.ru|33strausa.ru|8vp.ru|abnews.ru|agroxxi.ru|alfa-form.ru|altgazeta.ru|aniplay.tv|antimuh.ru|archiportal-crimea.ru|arendator.ru|aum.news|autogrodno.by|bez-smenki.ru|bitpump.ru|biwork.ru|bryansktoday.ru|buzday.ru|buzulukday.ru|bvedomosti.ru|calcus.ru|cars.ru|coil32.ru|cryptoff.org|csmania.ru|cxem.net|darkmoney.at|dtpptz.ru|ecm-journal.ru|erotix-tv.com|express-prigorod.ru|fakty.ua|fermagid.ru|firtka.if.ua|fitsport.ru|forpost.lviv.ua|fuzz-magazine.ru|hd-systems.com.ua|highload.tech|house.kg|hv-info.ru|hype.tech|info-ua.com|infokam.su|inforeactor.ru|itc.ua|itexpert.org.ua|izmacity.com|kaluga.ru|kamchatinfo.com|karelia.ru|kazfootball.kz|kids.to-var.com|km.ru|ko44.ru|korabel.ru|kramatorsk.info|kyiv-independent.com|lifetambov.ru|mc.today|mebelminsk.by|medicalj.ru|memstatus.ru|mirnov.ru|mos-holidays.ru|moscow-post.com|motoforum.ru|motovibor.ru|moya-semya.ru|mycity.by|nakanune.ru|nashdisk.ru|naurfo.ru|ndn.info|newgdz.com|newgubakha.ru|news.soundex.ru|ng.kz|ngregion.ru|nsday.ru|numama.ru|ok-inform.ru|orenday.ru|osvita.ua|out-club.ru|perevolockday.ru|planet-today.ru|planetaskazok.ru|poiskvps.ru|pretenziy.ru|profidom.com.ua|prosports.kg|prosports.kz|rabota-kovrov.ru|rabota.kharkov.ua|radioclub.ua|rbc.ru|ria-m.tv|ria56.ru|ridna.ua|rtr24.ru|ruslife.eu|saltday.ru|sevastopol.su|sevkavportal.ru|shans.com.ua|skoda-club.org.ua|smolnarod.ru|sorochinskday.ru|sostav.ua|sp.tomica.ru|starkosino.ru|study.ru|tenstars.ru|ternopoliany.te.ua|trassae95.com|trisosny.ru|tv-gubernia.ru|ua-independent.com|uff.uz|ufocar.ru|ukrlife.tv|valetudo.ru|vdv-kavkaz.ru|vjazhi.ru|vmeste.tv|vp.donetsk.ua|vsatke.ru|vse-pro-sport.com.ua|vseprosport.by|vseprosport.kz|vseprosport.ru|wallnews.org|yablor.ru|zamena-podshipnikov.ru|zrenue.com|zvid.org
@@ -21,6 +23,8 @@ a16071 1
 mc.today##.company-slider
 a16547 1
 1plus1.ua##.google-intext
+a16698 1
+hentai-hub.net##.htvad
 a16709 1
 1plus1.ua##.idealMediaContainer
 d16778 1
@@ -34,6 +38,7 @@ highload.tech,mc.today##.widget-spec-project
 d19262 1
 a19262 1
 abnews.ru,fakty.ua,highload.tech##[src*="/images/banners/"]
+d19844 1
 a20082 1
 ohmywishes.com##a[style*="/images/banner-image/"]
 a20398 1
@@ -45,9 +50,31 @@ ohmywishes.com#?#div:-abp-has(> a[style*="/images/banner-image/"]) ~ button
 d20536 1
 a20536 1
 highload.tech,mc.today##div[class*="course-widget"]
+a21297 1
+sdamgia.ru##div[style="margin: 0px; position: relative;"]
+a21300 1
+sdamgia.ru##div[style="margin:0; position:relative"]
 d22035 1
 a22035 1
 ||pikabu.ru/ajax/*?r8izU=$xmlhttprequest
+a22892 1
+rbc.ru##.fox-fallback
+a22899 1
+rbc.ru##.js-index-central-column .item_promo-card
+a22901 3
+rbc.ru##.js-index-central-column > [data-publisher-index] .list-slider-item [href^="https://pro.rbc.ru/"]
+rbc.ru#?#.js-index-central-column > [data-publisher-index]:-abp-has(.item__bottom > [href^="https://pro.rbc.ru"])
+rbc.ru##.js-index-doscroll-pro
+a22905 1
+rbc.ru##.news-feed a[href*="utm_campaign"]
+a22930 1
+rbc.ru##[data-vr-zone="Топ новости"] a[href^="https://pro.rbc.ru/"]
+a22945 1
+||api.mindbox.ru/scripts/*/tracker.$domain=rbc.ru
+a22947 1
+||rbc.ru/*/social-networks/
+a27618 1
+sdamgia.ru##[role="main"] div[style^="position: absolute; top: 0px; "]
 d27924 1
 a27924 1
 ya.ru##html[class*="morda"] .body__content > [class*="informers"] ~ div[style]
@@ -56,9 +83,13 @@ a27948 1
 dzen.ru##div[class] > [id] > div[style*="important"]:style(padding-top: unset !important)
 d27954 2
 d27959 1
+d28112 1
+d28121 1
 a28483 1
 ohmywishes.com##+js(json-prune-fetch-response, item.banners)
 a28715 3
 dzen.ru##:matches-path(/a/) [data-appid] > [itemscope] > div > div[id]
 dzen.ru##:matches-path(/a/) [data-appid] [style^="max-height:"] [style^="opacity:"]
 dzen.ru##:matches-path(/a/) div:matches-attr(/[a-z0-9]/=article-bottom-block) > [class*="social"] ~ div
+a28819 1
+||rbk.ru/*/build/fn/_oprosso.js
