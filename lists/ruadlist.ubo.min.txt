@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 19 May 2025 17:26:41 +0000
-! Diff-Path: ../patches/2025.5.19.1046.patch#ruadlist
+! Last modified: Mon, 19 May 2025 22:28:59 +0000
+! Diff-Path: ../patches/2025.5.19.1348.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10762,7 +10762,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||21region.org/uploads/main/re/
 ||24stoma.ru/rkm/
 ||2baksa.ws^$script
-||2ch.*/banners/$domain=2ch.hk|2ch.life
+||2ch.*/banners/$domain=2ch.hk|2ch.life|2ch.su
 ||2d.windows-8.ru
 ||2gis.*/ads/advise/
 ||2ip.ua/images/keyweb.
@@ -17160,7 +17160,7 @@ russian-seriali.ru##.mixmob
 afisha.tut.by##.mm-main
 yakutia.info##.mm_widget
 dreamprogs.net##.mmenu a[href^="http"]:not([href^="http://dream"])
-2ch.hk,2ch.life##.mmm
+2ch.hk,2ch.life,2ch.su##.mmm
 minsknews.by##.mn-a-rec
 gamer-info.com##.mn-news-lst-ad-bl > div
 openssource.info##.mob
@@ -18974,7 +18974,7 @@ igrigo.net#?#[class*="navi_title"]:-abp-contains(/браузер|партнер�
 kg.ua##[class*="region-banner"]
 kg.ua##[class*="region-news"] > .block > * > .img-responsive
 kg.ua##[class*="region-news"] > .block a[href][target="_blank"]
-2ch.hk,2ch.life,mypresentation.ru,pshack.net,tonna-games.ru##[class*="rekl"]
+2ch.hk,2ch.life,2ch.su,mypresentation.ru,pshack.net,tonna-games.ru##[class*="rekl"]
 yapx.ru##[class*="revenue-block"]
 sexoporno.su##[class*="sam"][class*="pro"]
 hwp.ru##[class*="tbann"]
@@ -20568,7 +20568,7 @@ niscu.ru##div[class*="iw-modal"]
 kingisepp-today.ru,xn----etbbecbrbp5ahkja1ae7v.xn--p1ai##div[class*="ks-banner-news"]
 ts.kg##div[class*="oops-"]
 altapress.ru,etextlib.ru##div[class*="partners"]
-2ch.hk,2ch.life##div[class*="plashque"]
+2ch.hk,2ch.life,2ch.su##div[class*="plashque"]
 kino-mania.pro##div[class*="plav_"]
 1parazit.ru##div[class*="popup"]
 newsru.com##div[class*="prm"]
