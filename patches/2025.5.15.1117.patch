@@ -1,8 +1,8 @@
-diff name:ruadlist lines:96 checksum:556b8f2886
+diff name:ruadlist lines:107 checksum:e5f8d91798
 d4 2
 a5 2
-! Last modified: Mon, 19 May 2025 07:27:50 +0000
-! Diff-Path: ../patches/2025.5.19.447.patch#ruadlist
+! Last modified: Mon, 19 May 2025 12:57:08 +0000
+! Diff-Path: ../patches/2025.5.19.777.patch#ruadlist
 a10260 1
 ||rbk.ru/*/scripts/build/fn/_pushAllow.js
 d10613 1
@@ -16,6 +16,8 @@ a13072 1
 ||static.ohmywishes.com/images/banner-image/
 a13683 1
 podarkus.ru###__next > div[style^="position:"] > div[style^="position:"]:empty + div:not(:last-child)
+a14365 1
+kinogo.fm###overlay_u
 d15492 1
 a15492 1
 highload.tech,itc.ua,mc.today##.banner-agency
@@ -35,6 +37,8 @@ cq.ru##.market-widget
 d17478 1
 a17478 1
 censor.net,fc-zenit.ru,grodnonews.by,highload.tech,mc.today,mgorod.kz,mos.news,nsnet.ru,rybalka.com,siteua.org,twogarin.info,vesti42.ru,xsport.ua##.partners
+a18117 1
+speedme.ru##.sidebar300x600
 a18709 1
 highload.tech,mc.today##.widget-spec-project
 d19262 1
@@ -52,6 +56,10 @@ ohmywishes.com#?#div:-abp-has(> a[style*="/images/banner-image/"]) ~ button
 d20536 1
 a20536 1
 highload.tech,mc.today##div[class*="course-widget"]
+a20634 1
+tass.ru#?#div[class^="MaterialListing_chunk"] a[href]:-abp-has([class*="tass_pkg_marker"]:-abp-contains(Партнерский материал))
+a21284 1
+speedme.ru##div[style="height: 250px;"]
 a21297 1
 sdamgia.ru##div[style="margin: 0px; position: relative;"]
 a21300 1
@@ -69,6 +77,9 @@ rbc.ru#?#.js-index-central-column > [data-publisher-index]:-abp-has(.item__botto
 rbc.ru##.js-index-doscroll-pro
 a22905 1
 rbc.ru##.news-feed a[href*="utm_campaign"]
+a22929 2
+rbc.ru##[data-vr-zone="Главная новость"] a[href^="https://pro.rbc.ru/"]
+rbc.ru##[data-vr-zone="Главная новость"]::before
 a22930 1
 rbc.ru##[data-vr-zone="Топ новости"] a[href^="https://pro.rbc.ru/"]
 a22945 1

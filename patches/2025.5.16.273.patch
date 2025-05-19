@@ -1,8 +1,8 @@
-diff name:ruadlist lines:62 checksum:556b8f2886
+diff name:ruadlist lines:73 checksum:e5f8d91798
 d4 2
 a5 2
-! Last modified: Mon, 19 May 2025 07:27:50 +0000
-! Diff-Path: ../patches/2025.5.19.447.patch#ruadlist
+! Last modified: Mon, 19 May 2025 12:57:08 +0000
+! Diff-Path: ../patches/2025.5.19.777.patch#ruadlist
 a10260 1
 ||rbk.ru/*/scripts/build/fn/_pushAllow.js
 a10753 1
@@ -13,6 +13,8 @@ a13072 1
 ||static.ohmywishes.com/images/banner-image/
 a13683 1
 podarkus.ru###__next > div[style^="position:"] > div[style^="position:"]:empty + div:not(:last-child)
+a14365 1
+kinogo.fm###overlay_u
 a16548 1
 1plus1.ua##.google-intext
 a16699 1
@@ -21,6 +23,8 @@ a16710 1
 1plus1.ua##.idealMediaContainer
 a17084 1
 cq.ru##.market-widget
+a18118 1
+speedme.ru##.sidebar300x600
 d19846 1
 a20084 1
 ohmywishes.com##a[style*="/images/banner-image/"]
@@ -30,6 +34,10 @@ a20418 1
 podarkus.ru#?#div:-abp-has(> [class^="G-work-podarkus"] > a[href*="erid="])
 a20427 1
 ohmywishes.com#?#div:-abp-has(> a[style*="/images/banner-image/"]) ~ button
+a20636 1
+tass.ru#?#div[class^="MaterialListing_chunk"] a[href]:-abp-has([class*="tass_pkg_marker"]:-abp-contains(Партнерский материал))
+a21286 1
+speedme.ru##div[style="height: 250px;"]
 a21299 1
 sdamgia.ru##div[style="margin: 0px; position: relative;"]
 a21302 1
@@ -47,6 +55,9 @@ rbc.ru#?#.js-index-central-column > [data-publisher-index]:-abp-has(.item__botto
 rbc.ru##.js-index-doscroll-pro
 a22907 1
 rbc.ru##.news-feed a[href*="utm_campaign"]
+a22931 2
+rbc.ru##[data-vr-zone="Главная новость"] a[href^="https://pro.rbc.ru/"]
+rbc.ru##[data-vr-zone="Главная новость"]::before
 a22932 1
 rbc.ru##[data-vr-zone="Топ новости"] a[href^="https://pro.rbc.ru/"]
 a22947 1
