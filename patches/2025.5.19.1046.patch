@@ -1,8 +1,8 @@
-diff name:ruadlist lines:60 checksum:c855ba6217
+diff name:ruadlist lines:66 checksum:f69e4970ed
 d4 2
 a5 2
-! Last modified: Thu, 22 May 2025 10:32:05 +0000
-! Diff-Path: ../patches/2025.5.22.632.patch#ruadlist
+! Last modified: Thu, 22 May 2025 15:29:52 +0000
+! Diff-Path: ../patches/2025.5.22.929.patch#ruadlist
 a4963 1
 ||qkyspzfxnc.ru^$third-party
 d10352 1
@@ -11,6 +11,8 @@ $third-party,script,domain=1000iodinsovet.ru|100polezno.ru|100popugaev.ru|1080ki
 d10765 1
 a10765 1
 ||2ch.*/banners/$domain=2ch.hk|2ch.life|2ch.su
+a14086 1
+cq.ru###fullscreen-container
 d15941 2
 a16389 1
 sochi24.tv##.fixed-bottom-banner
@@ -57,5 +59,9 @@ d22450 2
 a26799 2
 drive2.com,drive2.ru##div[itemtype*="://schema.org/Product"] ~ div #comments ~ div:style(width: unset !important)
 drive2.com,drive2.ru##div[itemtype*="://schema.org/Product"] ~ div #comments:style(max-width: 100% !important)
+a28444 1
+cq.ru##+js(addEventListener-defuser, DOMContentLoaded, 'fullscreen-ad')
+d28450 1
 d28880 1
 d28888 1
+d28997 1

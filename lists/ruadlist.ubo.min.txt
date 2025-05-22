@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 22 May 2025 10:32:05 +0000
-! Diff-Path: ../patches/2025.5.22.632.patch#ruadlist
+! Last modified: Thu, 22 May 2025 15:29:52 +0000
+! Diff-Path: ../patches/2025.5.22.929.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -14085,6 +14085,7 @@ xxx-russian.ru###full-smile
 ex-press.by###full-top-layout
 etextlib.ru###full_det > div[style]:not([id]):not([class])
 vsluh.ru###fullscreen
+cq.ru###fullscreen-container
 khl.ru###fullscreenBanner
 dk003.com###gads
 academic.ru###games
@@ -28446,12 +28447,12 @@ shedevrum.ai##+js(addEventListener-defuser, /beforeunload|pagehide/, 0x)
 fastpic.org,~new.fastpic.org##+js(addEventListener-defuser, /click|load/, popMagic)
 biqle.org,biqle.ru##+js(addEventListener-defuser, /click|mousedown/, popunder)
 fm-app.ru,tvapp.su,yootv.ru##+js(addEventListener-defuser, /mouse/, cursorVisible)
+cq.ru##+js(addEventListener-defuser, DOMContentLoaded, 'fullscreen-ad')
 ~id.rambler.ru,rambler.ru,~vp.rambler.ru##+js(addEventListener-defuser, DOMContentLoaded, .j-mini-player__video)
 sibnet.ru##+js(addEventListener-defuser, DOMContentLoaded, /EventTracker|utm_campaign/)
 sports.ru##+js(addEventListener-defuser, DOMContentLoaded, 0x)
 buhplatforma.com.ua,dzplatforma.com.ua,medplatforma.com.ua,oblikbudget.com.ua,oplatforma.com.ua,pro-op.com.ua,prokadry.com.ua##+js(addEventListener-defuser, DOMContentLoaded, StrategyHandler)
 doramaland.plus##+js(addEventListener-defuser, DOMContentLoaded, _Modal)
-cq.ru##+js(addEventListener-defuser, DOMContentLoaded, banners)
 1progs.me##+js(addEventListener-defuser, DOMContentLoaded, encodedUrl)
 xv-ru.com##+js(addEventListener-defuser, DOMContentLoaded, exo_tracker)
 litnet.com##+js(addEventListener-defuser, DOMContentLoaded, feedback)
@@ -28996,7 +28997,6 @@ allboxing.ru##^script:has-text(/this\[atob\(/)
 pikabu.ru##^script:has-text(addPlaceholder)
 otzovik.com##^script:has-text(an.yan)
 hvylya.net,i.ua,ivona.ua,kriminal.tv,meteofor.com.ua,mport.ua,nv.ua,zv.zp.ua##^script:has-text(attachShadow)
-cq.ru##^script:has-text(window.initBanners)
 www.ukr.net##^script:has-text(znc|track)
 eurointegration.com.ua,pravda.com.ua,sportanalytic.com##^script[onload*="error-report.com"]
 gazeta.ru,lenta.ru,secretmag.ru,wmj.ru##iframe[src^="https://vp.rambler.ru/player/"] ~ svg
