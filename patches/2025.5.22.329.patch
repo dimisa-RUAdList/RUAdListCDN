@@ -1,8 +1,8 @@
-diff name:ruadlist lines:28 checksum:e294632706
+diff name:ruadlist lines:46 checksum:159ed78b75
 d4 2
 a5 2
-! Last modified: Fri, 23 May 2025 11:22:57 +0000
-! Diff-Path: ../patches/2025.5.23.682.patch#ruadlist
+! Last modified: Fri, 23 May 2025 16:33:50 +0000
+! Diff-Path: ../patches/2025.5.23.993.patch#ruadlist
 a14087 1
 cq.ru###fullscreen-container
 d19402 1
@@ -23,6 +23,24 @@ a22351 1
 d22381 1
 a22657 1
 ru##[data-ns-portal] div[class^="topicsInlineAdv"]
+d22917 1
+d22949 3
+a22951 3
+autodaily.ru,autonews.ru,rbc.ru##.topline__branding__wrapper
+autodaily.ru,autonews.ru,rbc.ru,sportrbc.ru##.topline__disable-adv__button
+autodaily.ru,autonews.ru,rbc.ru,sportrbc.ru##.topline__item__image-block
+d22953 4
+a22956 2
+/browser-updater$script,domain=autodaily.ru|autonews.ru|rbc.ru|sportrbc.ru
+/rbcbanners-*/_fullscreen.js$script,domain=autodaily.ru|autonews.ru|rbc.ru|sportrbc.ru
+d22967 1
+a22967 1
+autodaily.ru,autonews.ru,rbc.ru,rbc.ua,sportrbc.ru,utro.ru##[id^="unit_"]
+d22973 3
+a22975 3
+autodaily.ru,autonews.ru,rbc.ru,sportrbc.ru##body div .banner__container
+autodaily.ru,autonews.ru,rbc.ru,sportrbc.ru##body div .banner__filmstrip
+autodaily.ru,autonews.ru,rbc.ru,rbclife.ru,sportrbc.ru##div[class^="fox-tail"]
 a28448 1
 cq.ru##+js(addEventListener-defuser, DOMContentLoaded, 'fullscreen-ad')
 d28454 1
