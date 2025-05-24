@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 24 May 2025 17:24:38 +0000
-! Diff-Path: ../patches/2025.5.24.1044.patch#ruadlist
+! Last modified: Sat, 24 May 2025 22:27:06 +0000
+! Diff-Path: ../patches/2025.5.24.1347.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -13754,6 +13754,7 @@ allcrimea.net###anews_bigtizer
 thequestion.ru###answers div[style*="overflow:hidden"]
 komedra.com###apext
 dtf.ru#?##app:-abp-has(> .bar > .header [href="/auth"]) .content-list > .content:-abp-has(> .content-header > .author > [href="/ggsel"])
+dtf.ru#?##app:-abp-has(> .bar > .header [href="/auth"]) .content-list > .content:-abp-has(> .content-header > .author > [href="/ruslan-titov"])
 dtf.ru#?##app:-abp-has(> .bar > .header [href="/auth"]) .content-list > .content:-abp-has(> .content-header > .author > [href="/u/903841-gamespayberryru"])
 dtf.ru#?##app:-abp-has(> .bar > .header [href="/auth"]) .content-list > .content:-abp-has(> .content-header > .author > [href="/u/954970-kupikod"])
 ecology.md###article > .right-block
@@ -27473,10 +27474,6 @@ open3dmodel.com##.downloadlink a:style(color: #09c !important; text-decoration: 
 open3dmodel.com##.post-info > div[style^="width: 730px;"][style*="#f9f9f9"]:style(background-color: #333 !important)
 open3dmodel.com##body > div:style(filter: none !important; -webkit-filter: none !important)
 open3dmodel.com##body [class^="mdp-deblocker-"]
-! ---
-opennet.me,opennet.ru##html.dark-mode > body:style(filter: invert(90%) !important)
-opennet.me,opennet.ru##html.dark-mode > iframe:style(filter: none !important)
-opennet.me,opennet.ru##html.dark-mode:style(filter: none !important)
 ! ---
 oper.ru###wrapper:style(background-image: none !important; padding-bottom: 0 !important)
 ! ---
