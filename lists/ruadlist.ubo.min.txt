@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 26 May 2025 04:35:14 +0000
-! Diff-Path: ../patches/2025.5.26.275.patch#ruadlist
+! Last modified: Mon, 26 May 2025 09:52:23 +0000
+! Diff-Path: ../patches/2025.5.26.592.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -19374,11 +19374,13 @@ cybersport.ru##a[class^="vkPlay"]
 tulapressa.ru##a[data-href*="//dzen.ru/"]
 bombardir.ru##a[data-href*="://bmbrdr.ru/"]
 ixbt.com##a[data-menuitem="honor"]
+kinorium.com##a[data-original-url^="https://kino.1tv.ru/"]
 kinorium.com##a[data-original-url^="https://kino.tricolor.tv/"]
 kinorium.com##a[data-original-url^="https://kion.ru/"]
 kinorium.com##a[data-original-url^="https://okko.tv/"]
 kinorium.com##a[data-original-url^="https://premier.one/"]
 kinorium.com##a[data-original-url^="https://smotreshka.tv/"]
+kinorium.com##a[data-original-url^="https://start.ru/"]
 kinorium.com##a[data-original-url^="https://tv.apple.com/"][data-original-url*="/movie/"]
 kinorium.com##a[data-original-url^="https://viju.ru/"]
 kinorium.com##a[data-original-url^="https://wink.ru/"]
@@ -20408,6 +20410,7 @@ allmmorpg.ru##center > div > a[rel*="nofollow"][target="_blank"]
 hack-tool.org##center > div > noindex
 sibmail.com##center > div[style*="200px;"]
 lunno.ru,motolife24.ru##center > div[style="font-size:14px;background:#FFFACD;"]
+www.zoneofgames.ru##center > div[style^="width:630px;height:3"]
 youtext.ru##center > font > div[style*="#FFCC66;"]
 trserial.net.ua##center > ins ~ *
 gizmod.ru##center > noindex
@@ -21251,6 +21254,7 @@ changeworks.ru##div[id^="ttiz_"]
 sdelala-sama.ru,webdiana.ru##div[id^="turp_"]
 nnovosti.info##div[id^="tvfooter"]
 asna.ru##div[id^="ut-1"]
+www.zoneofgames.ru##div[id^="via_"]
 turkishtvsoapopera.ru##div[id^="vid_over_float"]
 football24.ua,zaxid.net##div[id^="videoAdvWrapper"]
 peopletalk.ru##div[id^="video_banners-"]
@@ -21957,6 +21961,7 @@ yakusubstudio.forum2x2.ru##td[valign="top"][width="100%"] > table[class^="foruml
 bigfangroup.org,freebfg.org#?#td[valign="top"][width="155"] > table:-abp-has(div[id*="Composite"])
 bigfangroup.org,freebfg.org#?#td[valign="top"][width="155"] > table:-abp-has(div[id^="bn_"])
 etomesto.ru##td[valign="top"][width="176"][align="center"]
+www.zoneofgames.ru##td[valign="top"][width="367"]
 oru.ru##td[width="10"] + td[width="260"]:last-child
 anchem.ru##td[width="100%"][align="center"] > a[href] > img
 stulchik.net##td[width="120"][valign="top"] a[href][target="_blank"]
@@ -22074,7 +22079,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||news.mail.ru/-/*.js?
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
-||pikabu.ru/ajax/*?d1JWx=$xmlhttprequest
+||pikabu.ru/ajax/*?lNF1n=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
