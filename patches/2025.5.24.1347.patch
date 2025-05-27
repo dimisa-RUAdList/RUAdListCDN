@@ -1,20 +1,32 @@
-diff name:ruadlist lines:68 checksum:a5275d5e84
+diff name:ruadlist lines:92 checksum:b598726327
 d4 2
 a5 2
-! Last modified: Tue, 27 May 2025 15:30:36 +0000
-! Diff-Path: ../patches/2025.5.27.930.patch#ruadlist
+! Last modified: Tue, 27 May 2025 20:30:09 +0000
+! Diff-Path: ../patches/2025.5.27.1230.patch#ruadlist
+a7516 1
+||exaccess.com^
+a7528 2
+||gamesell.icu^
+||gamesell.org^
+a7596 1
+||oldgamestore.store^
 a9331 1
 ||kartinco.top^$popup
-a9577 1
-||gamesell.org^$third-party,popup
+a9786 1
+||exaccess.com^$popup
+a9796 2
+||gamesell.icu^$popup
+||gamesell.org^$popup
+a9862 1
+||oldgamestore.store^$popup
 a10170 1
 .mp3$media,domain=pb.wtf|pirat.one|piratbit.fun|piratbit.org|piratbit.top
 d10185 1
+a10586 1
+/banners.$domain=pb.wtf|pirat.one|piratbit.fun|piratbit.org|piratbit.top
 a13207 1
 ||tolknews.ru/_branding/
 d14309 1
-a14310 1
-pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top###modals-box
 d14402 1
 d15023 1
 d15148 1
@@ -24,13 +36,12 @@ d16382 1
 d16730 1
 d17697 1
 a17697 1
-pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##.raleas-navbars > [date-u="silodesr"] > div:empty[style*="opacity:"]
+pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##.raleas-navbarrs > [date-u] > div:empty[style*="opacity:"]
 a18318 1
 autopilot.ru##.subscribe_announcement
-a18694 1
-pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top#?#.war_item:-abp-has(> .war_img > a[href*="kartinco."])
-a19050 1
-pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##[class^="tLeft "] > a[target="_blank"]
+d18693 2
+a18946 1
+pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top#?#[class*="_item"]:-abp-has(> [class*="_img"] > a[href][target="_blank"])
 a19377 11
 kinorium.com##a[data-original-url^="https://kino.1tv.ru/"]
 kinorium.com##a[data-original-url^="https://kino.tricolor.tv/"]
@@ -49,12 +60,16 @@ a19399 2
 360tv.ru,5-tv.ru,7days.ru,avtonovostidnya.ru,avtovzglyad.ru,belarus-news.by,bfm.ru,bst.bratsk.ru,coop-land.ru,energyfm.ru,finuslugi.ru,fonmod.com,fontanka.ru,gdeichto.ru,ixbt.com,ixbt.shop,kommersant.ru,ladys.media,life.ru,mash.ru,media.az,metronews.ru,mk.ru,moe-belgorod.ru,moe-kursk.ru,moe-lipetsk.ru,moe-online.ru,moe-tambov.ru,moika78.ru,mydecor.ru,mywebpc.ru,myweekend.ru,naked-science.ru,nevasport.ru,new-magazine.ru,news.ru,nsn.fm,ohotniki.ru,oper.ru,overclockers.ru,penzainform.ru,peterburg2.ru,pnz.ru,radio1.ru,regnum.news,regnum.ru,rifey.ru,rusnext.ru,russian.rt.com,rutube.ru,sm.news,smotrim.ru,sovsport.ru,sport-express.net,sport-express.ru,sportsdaily.ru,stiletto.blog,super.ru,syzran-small.ru,teleprogramma.org,thegirl.ru,timeweb.com,tochka.by,tsargrad.tv,tulapressa.ru,tvzvezda.ru,u-f.ru,ura.news,utyug.info,vz.ru,www1.ru,xn----7sbabwosghnf8al4lkj7b.xn--p1ai,ytronews.ru,zaks.ru,zaycev.net,zr.ru##a[href*="//dzen.ru/"]
 a19619 1
 pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##a[href*="kartinco."]
+a19867 1
+pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##a[href^="/ox"]
 a20155 1
 zmi.ck.ua##article > br + small
 a20161 1
 zmi.ck.ua##article > hr + small
 a20402 1
 www.zoneofgames.ru##center > div[style^="width:630px;height:3"]
+a21178 1
+pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##div[id^="mod"][id*="box"]
 a21245 1
 www.zoneofgames.ru##div[id^="via_"]
 d21591 1
@@ -63,7 +78,16 @@ www.zoneofgames.ru##td[valign="top"][width="367"]
 d22069 1
 a22069 1
 ||pikabu.ru/ajax/*?Jf4E2=$xmlhttprequest
+a22153 1
+exaccess.com,gamesell.org,oldgamestore.store##:not(fake-shop)
 d22282 1
 a22282 1
 gismeteo.by,gismeteo.kz,gismeteo.ru,meteofor.com.ua,meteofor.md##.placeholder
 d22442 1
+a23917 1
+||digiseller.com^$third-party
+d28734 3
+a28736 3
+pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##.raleas-navbarrs .all_item .relise
+pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##.raleas-navbarrs .all_item:remove-attr(style)
+pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##.raleas-navbarrs .all_item:style(display: inline-block !important)
