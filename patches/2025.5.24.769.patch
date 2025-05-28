@@ -1,8 +1,8 @@
-diff name:ruadlist lines:106 checksum:b1ca0d78a9
+diff name:ruadlist lines:112 checksum:7b5720a6a8
 d4 2
 a5 2
-! Last modified: Wed, 28 May 2025 11:23:54 +0000
-! Diff-Path: ../patches/2025.5.28.683.patch#ruadlist
+! Last modified: Wed, 28 May 2025 16:34:31 +0000
+! Diff-Path: ../patches/2025.5.28.994.patch#ruadlist
 a7516 1
 ||exaccess.com^
 a7528 2
@@ -10,6 +10,9 @@ a7528 2
 ||gamesell.org^
 a7596 1
 ||oldgamestore.store^
+d9074 1
+a9074 1
+$popup,domain=176.114.0.126|176.114.0.132|37.220.36.15|assiatv.com|cdnneedtv.ru|cdnpotok.com|cdntvpotok.com|freescreens.ru|imgbase.ru|imgcach.ru|imgclick.ru|kolikbolik.top|oneliketv.com|payforpic.ru|pb.wtf|picclick.ru|picclock.ru|picforall.ru|pirat.one|piratbit.fun|piratbit.org|piratbit.top|protonvideo.to|telecdn.net|tv-assia.org
 a9331 1
 ||kartinco.top^$popup
 a9786 1
@@ -22,8 +25,8 @@ a9862 1
 a10170 1
 .mp3$media,domain=pb.wtf|pirat.one|piratbit.fun|piratbit.org|piratbit.top
 d10185 1
-a10586 1
-/banners.$domain=pb.wtf|pirat.one|piratbit.fun|piratbit.org|piratbit.top
+a10530 1
+.txt|$xmlhttprequest,domain=pb.wtf|pirat.one|piratbit.fun|piratbit.org|piratbit.top
 a13207 1
 ||tolknews.ru/_branding/
 a13756 1
@@ -38,12 +41,12 @@ d16381 1
 d16729 1
 d17696 1
 a17696 1
-pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##.raleas-navbarrs > [date-u] > div:empty[style*="opacity:"]
+pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##.raleas-navbarrrs > [date-u] > div:empty[style*="opacity:"]
 a18317 1
 autopilot.ru##.subscribe_announcement
 d18692 2
-a18945 1
-pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top#?#[class*="_item"]:-abp-has(> [class*="_img"] > a[href][target="_blank"])
+a19160 1
+pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##[date-u] .relise
 a19376 11
 kinorium.com##a[data-original-url^="https://kino.1tv.ru/"]
 kinorium.com##a[data-original-url^="https://kino.tricolor.tv/"]
@@ -60,10 +63,11 @@ d19397 2
 a19398 2
 1tv.ru,drive.ru,f1news.ru,film.ru,gamemag.ru,kinoafisha.info,kinonews.ru,kinorium.com,livejournal.com,myshows.me,onlinestreams.ru,pikabu.ru,pluggedin.ru,spletnik.ru,tolknews.ru,trinixy.ru,vokrug.tv,www.pesticidy.ru##a[href*="//ads.adfox.ru/"]
 360tv.ru,5-tv.ru,7days.ru,avtonovostidnya.ru,avtovzglyad.ru,belarus-news.by,bfm.ru,bst.bratsk.ru,coop-land.ru,energyfm.ru,finuslugi.ru,fonmod.com,fontanka.ru,gdeichto.ru,ixbt.com,ixbt.shop,kommersant.ru,ladys.media,life.ru,mash.ru,media.az,metronews.ru,mk.ru,moe-belgorod.ru,moe-kursk.ru,moe-lipetsk.ru,moe-online.ru,moe-tambov.ru,moika78.ru,mydecor.ru,mywebpc.ru,myweekend.ru,naked-science.ru,nevasport.ru,new-magazine.ru,news.ru,nsn.fm,ohotniki.ru,oper.ru,overclockers.ru,penzainform.ru,peterburg2.ru,pnz.ru,radio1.ru,regnum.news,regnum.ru,rifey.ru,rusnext.ru,russian.rt.com,rutube.ru,sm.news,smotrim.ru,sovsport.ru,sport-express.net,sport-express.ru,sportsdaily.ru,stiletto.blog,super.ru,syzran-small.ru,teleprogramma.org,thegirl.ru,timeweb.com,tochka.by,tsargrad.tv,tulapressa.ru,tvzvezda.ru,u-f.ru,ura.news,utyug.info,vz.ru,www1.ru,xn----7sbabwosghnf8al4lkj7b.xn--p1ai,ytronews.ru,zaks.ru,zaycev.net,zr.ru##a[href*="//dzen.ru/"]
-a19618 1
-pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##a[href*="kartinco."]
-a19866 1
-pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##a[href^="/ox"]
+d19585 1
+d19596 1
+d20051 1
+a20109 1
+pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##a[target="_blank"]
 a20154 1
 zmi.ck.ua##article > br + small
 a20160 1
@@ -74,7 +78,7 @@ d20528 1
 a20528 1
 yummy-ani.me,yummy-anime.ru,yummyani.me##div[class*="adfinity_block"]
 a21177 1
-pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##div[id^="mod"][id*="box"]
+pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##div[id^="mod"]
 a21244 1
 www.zoneofgames.ru##div[id^="via_"]
 d21590 1
@@ -100,8 +104,10 @@ d27477 4
 d27689 1
 a27689 1
 shedevrum.ai###app > .items-center > div[class]:style(height: unset !important)
+a28486 1
+pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##+js(disable-newtab-links)
 d28737 3
 a28739 3
-pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##.raleas-navbarrs .all_item .relise
-pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##.raleas-navbarrs .all_item:remove-attr(style)
-pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##.raleas-navbarrs .all_item:style(display: inline-block !important)
+pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##.raleas-navbarrrs .all_it .relise
+pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##.raleas-navbarrrs .all_it:remove-attr(style)
+pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##.raleas-navbarrrs .all_it:style(display: inline-block !important)
