@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 28 May 2025 06:38:38 +0000
-! Diff-Path: ../patches/2025.5.28.398.patch#ruadlist
+! Last modified: Wed, 28 May 2025 11:23:54 +0000
+! Diff-Path: ../patches/2025.5.28.683.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -20548,7 +20548,7 @@ www.eg.ru##div[class*="_promocodes "]
 rg.ru##div[class*="adBox"]
 rg.ru##div[class*="adFox"]
 agroxxi.ru##div[class*="adagro"]
-yummy-ani.me,yummyani.me##div[class*="adfinity_block"]
+yummy-ani.me,yummy-anime.ru,yummyani.me##div[class*="adfinity_block"]
 mayaksbor.ru,rg.ru,ruwiki.ru##div[class*="adfox"]
 svpressa.ru##div[class*="adfox_banner"]
 glavnoe.net,infotime.co##div[class*="ads-fixed"]
@@ -22090,7 +22090,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||news.mail.ru/-/*.js?
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
-||pikabu.ru/ajax/*?Jf4E2=$xmlhttprequest
+||pikabu.ru/ajax/*?k6G7s=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -26409,6 +26409,7 @@ forums.overclockers.ru##tr > td[nowrap="nowrap"][style^="color: red;"][style$="f
 ||in-english.club/statistic/my.js
 ||itcrowd.top/templates/yootheme/block.js
 ||moi-detsad.ru/wp-content/cache/autoptimize/js/autoptimize_*.js
+||new.yummy-anime.ru/assets/ARu.avif
 ||nnmstatic.win/forum/docs/requests.js
 ||pcnews.ru/js/blockadblock.js
 ||rybolov.ee/forum/Themes/RealPopup/
