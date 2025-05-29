@@ -1,8 +1,8 @@
-diff name:ruadlist lines:116 checksum:d27a921982
+diff name:ruadlist lines:118 checksum:99143c458e
 d4 2
 a5 2
-! Last modified: Thu, 29 May 2025 17:27:48 +0000
-! Diff-Path: ../patches/2025.5.29.1047.patch#ruadlist
+! Last modified: Thu, 29 May 2025 22:28:48 +0000
+! Diff-Path: ../patches/2025.5.29.1348.patch#ruadlist
 a7516 1
 ||exaccess.com^
 a7528 2
@@ -87,7 +87,7 @@ auto.rambler.ru,avtorambler.com###app > .ad_branding_header ~ div[class] > div[c
 a22823 1
 avtorambler.com,rambler.ru#?#.commercial-branding div:-abp-has(> a[href^="https://ads.adfox.ru/"])
 a22853 1
-news.rambler.ru##[data-rcmw-init]
+avtorambler.com,rambler.ru##[data-rcmw-init]
 a22858 1
 avtorambler.com,rambler.ru##[id^="rambler-promo-"]
 a22859 1
@@ -110,6 +110,8 @@ a27694 1
 shedevrum.ai###app > .items-center > div[class]:style(height: unset !important)
 a28491 1
 pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##+js(disable-newtab-links)
+a28599 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, div, Уважаемый посетитель!)
 d28742 3
 a28744 3
 pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##.raleas-navbarrrs .all_it .relise

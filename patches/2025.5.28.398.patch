@@ -1,8 +1,8 @@
-diff name:ruadlist lines:65 checksum:d27a921982
+diff name:ruadlist lines:67 checksum:99143c458e
 d4 2
 a5 2
-! Last modified: Thu, 29 May 2025 17:27:48 +0000
-! Diff-Path: ../patches/2025.5.29.1047.patch#ruadlist
+! Last modified: Thu, 29 May 2025 22:28:48 +0000
+! Diff-Path: ../patches/2025.5.29.1348.patch#ruadlist
 d9078 1
 a9078 1
 $popup,domain=176.114.0.126|176.114.0.132|37.220.36.15|assiatv.com|cdnneedtv.ru|cdnpotok.com|cdntvpotok.com|freescreens.ru|imgbase.ru|imgcach.ru|imgclick.ru|kolikbolik.top|oneliketv.com|payforpic.ru|pb.wtf|picclick.ru|picclock.ru|picforall.ru|pirat.one|piratbit.fun|piratbit.org|piratbit.top|protonvideo.to|telecdn.net|tv-assia.org
@@ -41,7 +41,7 @@ auto.rambler.ru,avtorambler.com###app > .ad_branding_header ~ div[class] > div[c
 a22839 1
 avtorambler.com,rambler.ru#?#.commercial-branding div:-abp-has(> a[href^="https://ads.adfox.ru/"])
 a22869 1
-news.rambler.ru##[data-rcmw-init]
+avtorambler.com,rambler.ru##[data-rcmw-init]
 a22874 1
 avtorambler.com,rambler.ru##[id^="rambler-promo-"]
 a22875 1
@@ -59,6 +59,8 @@ a27599 1
 avtorambler.com,rambler.ru##.commercial-branding:style(margin-top: unset !important; margin-bottom: unset !important)
 a28508 1
 pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##+js(disable-newtab-links)
+a28616 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, div, Уважаемый посетитель!)
 d28759 3
 a28761 3
 pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##.raleas-navbarrrs .all_it .relise

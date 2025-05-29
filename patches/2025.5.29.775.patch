@@ -1,14 +1,14 @@
-diff name:ruadlist lines:17 checksum:d27a921982
+diff name:ruadlist lines:19 checksum:99143c458e
 d4 2
 a5 2
-! Last modified: Thu, 29 May 2025 17:27:48 +0000
-! Diff-Path: ../patches/2025.5.29.1047.patch#ruadlist
+! Last modified: Thu, 29 May 2025 22:28:48 +0000
+! Diff-Path: ../patches/2025.5.29.1348.patch#ruadlist
 a22820 1
 auto.rambler.ru,avtorambler.com###app > .ad_branding_header ~ div[class] > div[class]:empty
 a22836 1
 avtorambler.com,rambler.ru#?#.commercial-branding div:-abp-has(> a[href^="https://ads.adfox.ru/"])
 a22866 1
-news.rambler.ru##[data-rcmw-init]
+avtorambler.com,rambler.ru##[data-rcmw-init]
 a22873 1
 horoscopes.rambler.ru##[itemtype="http://schema.org/Article"] > div[class]:nth-last-of-type(2) > div:last-child > div + div ~ div
 a22886 2
@@ -16,3 +16,5 @@ www.rambler.ru#?#div:-abp-has(> div > [data-cerber^="widgets-carousel:"]) + div 
 avtorambler.com,rambler.ru#?#div:-abp-has(> div[id*=":_adfox_"])
 a27600 1
 avtorambler.com,rambler.ru##.commercial-branding:style(margin-top: unset !important; margin-bottom: unset !important)
+a28618 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, div, Уважаемый посетитель!)
