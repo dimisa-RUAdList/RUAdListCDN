@@ -1,8 +1,8 @@
-diff name:ruadlist lines:106 checksum:7747739e63
+diff name:ruadlist lines:119 checksum:d27a921982
 d4 2
 a5 2
-! Last modified: Thu, 29 May 2025 12:55:12 +0000
-! Diff-Path: ../patches/2025.5.29.775.patch#ruadlist
+! Last modified: Thu, 29 May 2025 17:27:48 +0000
+! Diff-Path: ../patches/2025.5.29.1047.patch#ruadlist
 a7516 1
 ||exaccess.com^
 a7528 2
@@ -85,16 +85,29 @@ d22289 1
 a22289 1
 gismeteo.by,gismeteo.kz,gismeteo.ru,meteofor.com.ua,meteofor.md##.placeholder
 d22449 1
+a22806 1
+auto.rambler.ru,avtorambler.com###app > .ad_branding_header ~ div[class] > div[class]:empty
+a22822 1
+avtorambler.com,rambler.ru#?#.commercial-branding div:-abp-has(> a[href^="https://ads.adfox.ru/"])
+a22852 1
+news.rambler.ru##[data-rcmw-init]
 a22857 1
 avtorambler.com,rambler.ru##[id^="rambler-promo-"]
+a22858 1
+horoscopes.rambler.ru##[itemtype="http://schema.org/Article"] > div[class]:nth-last-of-type(2) > div:last-child > div + div ~ div
 a22860 1
 avtorambler.com,rambler.ru##a[href*="//ads.adfox.ru/"]
+a22870 2
+www.rambler.ru#?#div:-abp-has(> div > [data-cerber^="widgets-carousel:"]) + div > div > div > div:-abp-has(> div a[href^="https://ads.adfox.ru/"])
+avtorambler.com,rambler.ru#?#div:-abp-has(> div[id*=":_adfox_"])
 a22907 1
 ||embeds.rambler.ru/cpa-elements/
 a23924 1
 ||digiseller.com^$third-party
 a26393 1
 ||new.yummy-anime.ru/assets/ARu.avif
+a27581 1
+avtorambler.com,rambler.ru##.commercial-branding:style(margin-top: unset !important; margin-bottom: unset !important)
 d27693 1
 a27693 1
 shedevrum.ai###app > .items-center > div[class]:style(height: unset !important)
