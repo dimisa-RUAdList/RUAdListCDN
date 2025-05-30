@@ -1,8 +1,8 @@
-diff name:ruadlist lines:100 checksum:390b1bab4a
+diff name:ruadlist lines:114 checksum:a07d86c906
 d4 2
 a5 2
-! Last modified: Fri, 30 May 2025 08:34:57 +0000
-! Diff-Path: ../patches/2025.5.30.514.patch#ruadlist
+! Last modified: Fri, 30 May 2025 13:36:19 +0000
+! Diff-Path: ../patches/2025.5.30.816.patch#ruadlist
 a7516 1
 ||exaccess.com^
 a7528 2
@@ -10,6 +10,8 @@ a7528 2
 ||gamesell.org^
 a7596 1
 ||oldgamestore.store^
+a8463 1
+##.pop-transformer-form[style*="2C3F57"][style*="flex"]
 d9074 1
 a9074 1
 $popup,domain=176.114.0.126|176.114.0.132|37.220.36.15|assiatv.com|cdnneedtv.ru|cdnpotok.com|cdntvpotok.com|freescreens.ru|imgbase.ru|imgcach.ru|imgclick.ru|kolikbolik.top|oneliketv.com|payforpic.ru|pb.wtf|picclick.ru|picclock.ru|picforall.ru|pirat.one|piratbit.fun|piratbit.org|piratbit.top|protonvideo.to|telecdn.net|tv-assia.org
@@ -27,20 +29,28 @@ a10170 1
 d10185 1
 a10530 1
 .txt|$xmlhttprequest,domain=pb.wtf|pirat.one|piratbit.fun|piratbit.org|piratbit.top
+a13700 1
+tvigle.ru###ad-padding
 d14310 1
 d15023 1
 d16729 1
+d17262 1
 d17696 1
 a17696 1
 pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##.raleas-navbarrrs > [date-u] > div:empty[style*="opacity:"]
 d18693 2
 a19161 1
 pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##[date-u] .relise
+a19377 2
+kinorium.com##a[data-original-url^="https://24h.tv/"]
+kinorium.com##a[data-original-url^="https://bolshoe.tv/"]
 d19385 1
 a19385 1
 kinorium.com##a[data-original-url^="https://tv.apple.com/"]
 a19387 1
 kinorium.com##a[data-original-url^="https://www.amediateka.ru/"]
+a19388 1
+kinorium.com##a[data-original-url^="https://www.tvigle.ru/"]
 d19597 1
 d19608 1
 d20063 1
@@ -70,8 +80,9 @@ a22828 1
 avtorambler.com,rambler.ru#?#.commercial-branding div:-abp-has(> a[href^="https://ads.adfox.ru/"])
 a22858 1
 avtorambler.com,rambler.ru##[data-rcmw-init]
-a22863 1
+a22863 2
 avtorambler.com,rambler.ru##[id^="rambler-promo-"]
+avtorambler.com,rambler.ru#?#[id^="rambler-promo-"] ~ div:-abp-has(> div > [data-rcmw-init])
 a22864 1
 horoscopes.rambler.ru##[itemtype="http://schema.org/Article"] > div[class]:nth-last-of-type(2) > div:last-child > div + div ~ div
 a22866 1
@@ -83,6 +94,9 @@ a22913 1
 ||embeds.rambler.ru/cpa-elements/
 a23930 1
 ||digiseller.com^$third-party
+d26206 1
+a26353 1
+tvigle.ru##[class^="styles_removeAd"]
 a26399 1
 ||new.yummy-anime.ru/assets/ARu.avif
 a27587 1

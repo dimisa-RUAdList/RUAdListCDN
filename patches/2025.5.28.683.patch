@@ -1,25 +1,35 @@
-diff name:ruadlist lines:62 checksum:390b1bab4a
+diff name:ruadlist lines:76 checksum:a07d86c906
 d4 2
 a5 2
-! Last modified: Fri, 30 May 2025 08:34:57 +0000
-! Diff-Path: ../patches/2025.5.30.514.patch#ruadlist
+! Last modified: Fri, 30 May 2025 13:36:19 +0000
+! Diff-Path: ../patches/2025.5.30.816.patch#ruadlist
+a8467 1
+##.pop-transformer-form[style*="2C3F57"][style*="flex"]
 d9078 1
 a9078 1
 $popup,domain=176.114.0.126|176.114.0.132|37.220.36.15|assiatv.com|cdnneedtv.ru|cdnpotok.com|cdntvpotok.com|freescreens.ru|imgbase.ru|imgcach.ru|imgclick.ru|kolikbolik.top|oneliketv.com|payforpic.ru|pb.wtf|picclick.ru|picclock.ru|picforall.ru|pirat.one|piratbit.fun|piratbit.org|piratbit.top|protonvideo.to|telecdn.net|tv-assia.org
 a10539 1
 .txt|$xmlhttprequest,domain=pb.wtf|pirat.one|piratbit.fun|piratbit.org|piratbit.top
 d10596 1
+a13710 1
+tvigle.ru###ad-padding
+d17269 1
 d17703 1
 a17703 1
 pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##.raleas-navbarrrs > [date-u] > div:empty[style*="opacity:"]
 d18952 1
 a19167 1
 pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##[date-u] .relise
+a19383 2
+kinorium.com##a[data-original-url^="https://24h.tv/"]
+kinorium.com##a[data-original-url^="https://bolshoe.tv/"]
 d19391 1
 a19391 1
 kinorium.com##a[data-original-url^="https://tv.apple.com/"]
 a19393 1
 kinorium.com##a[data-original-url^="https://www.amediateka.ru/"]
+a19394 1
+kinorium.com##a[data-original-url^="https://www.tvigle.ru/"]
 d19603 1
 d19614 1
 d19637 1
@@ -39,8 +49,9 @@ a22839 1
 avtorambler.com,rambler.ru#?#.commercial-branding div:-abp-has(> a[href^="https://ads.adfox.ru/"])
 a22869 1
 avtorambler.com,rambler.ru##[data-rcmw-init]
-a22874 1
+a22874 2
 avtorambler.com,rambler.ru##[id^="rambler-promo-"]
+avtorambler.com,rambler.ru#?#[id^="rambler-promo-"] ~ div:-abp-has(> div > [data-rcmw-init])
 a22875 1
 horoscopes.rambler.ru##[itemtype="http://schema.org/Article"] > div[class]:nth-last-of-type(2) > div:last-child > div + div ~ div
 a22877 1
@@ -50,6 +61,9 @@ www.rambler.ru#?#div:-abp-has(> div > [data-cerber^="widgets-carousel:"]) + div 
 avtorambler.com,rambler.ru#?#div:-abp-has(> div[id*=":_adfox_"])
 a22924 1
 ||embeds.rambler.ru/cpa-elements/
+d26218 1
+a26365 1
+tvigle.ru##[class^="styles_removeAd"]
 a27600 1
 avtorambler.com,rambler.ru##.commercial-branding:style(margin-top: unset !important; margin-bottom: unset !important)
 a28509 1
