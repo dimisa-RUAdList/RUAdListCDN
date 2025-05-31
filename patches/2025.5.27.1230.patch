@@ -1,30 +1,37 @@
-diff name:ruadlist lines:94 checksum:b3513f0fe0
+diff name:ruadlist lines:102 checksum:9b202e09b6
 d4 2
 a5 2
-! Last modified: Sat, 31 May 2025 09:26:16 +0000
-! Diff-Path: ../patches/2025.5.31.566.patch#ruadlist
+! Last modified: Sat, 31 May 2025 14:25:50 +0000
+! Diff-Path: ../patches/2025.5.31.865.patch#ruadlist
 d290 1
 d1017 1
 d3787 1
+d7517 1
+d7530 2
+d7600 1
 a8467 1
 ##.pop-transformer-form[style*="2C3F57"][style*="flex"]
 d8480 1
-d9078 1
-a9078 1
-$popup,domain=176.114.0.126|176.114.0.132|37.220.36.15|assiatv.com|cdnneedtv.ru|cdnpotok.com|cdntvpotok.com|freescreens.ru|imgbase.ru|imgcach.ru|imgclick.ru|kolikbolik.top|oneliketv.com|payforpic.ru|pb.wtf|picclick.ru|picclock.ru|picforall.ru|pirat.one|piratbit.fun|piratbit.org|piratbit.top|protonvideo.to|telecdn.net|tv-assia.org
+d9792 1
+d9803 2
+d9871 1
 a10539 1
 .txt|$xmlhttprequest,domain=pb.wtf|pirat.one|piratbit.fun|piratbit.org|piratbit.top
 d10596 1
+a10671 1
+/pibit.json$xmlhttprequest,domain=pb.wtf|pirat.one|piratbit.fun|piratbit.org|piratbit.top
 a13710 1
 tvigle.ru###ad-padding
 d15357 1
+a17097 1
+pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##.mains a[href^="/"][href*="xt/"]:not(.btn)
 d17269 1
 d17703 1
-a17703 1
-pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##.raleas-navbarrrs > [date-u] > div:empty[style*="opacity:"]
+a18532 3
+pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##.top_menu > a[href="#"] > span
+pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##.top_menu:not([class*="  "]) > a[href^="/"][href*="xt/"]
+pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top#?#.top_menu:not([class*="  "]):-abp-has(> a[href="#"] > span)
 d18952 1
-a19167 1
-pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##[date-u] .relise
 a19383 2
 kinorium.com##a[data-original-url^="https://24h.tv/"]
 kinorium.com##a[data-original-url^="https://bolshoe.tv/"]
@@ -39,18 +46,20 @@ d19603 1
 d19614 1
 d19637 1
 d19886 1
-d20071 1
-a20129 1
-pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##a[target="_blank"]
 d20551 1
 a20551 1
 yummy-ani.me,yummy-anime.ru,yummyani.me##div[class*="adfinity_block"]
+a20879 3
+pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top#?#div[class^="raleas-navbar"] .all_it:-abp-has(a[href^="/"][href*="xt/"])
+pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##div[class^="raleas-navbar"] > [date-u] > div:empty[style*="opacity:"]
+pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##div[class^="raleas-navbar"] a[href^="/"][href*="xt/"]
 d21201 1
 a21201 1
 pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##div[id^="mod"]
 d22093 1
 a22093 1
 ||pikabu.ru/ajax/*?asdf2=$xmlhttprequest
+d22178 1
 a22823 1
 auto.rambler.ru,avtorambler.com###app > .ad_branding_header ~ div[class] > div[class]:empty
 a22831 1
@@ -74,6 +83,7 @@ www.rambler.ru#?#div:-abp-has(> div > [data-cerber^="widgets-carousel:"]) + div 
 avtorambler.com,rambler.ru#?#div:-abp-has(> div[id*=":_adfox_"])
 a22924 1
 ||embeds.rambler.ru/cpa-elements/
+d23942 1
 d26218 1
 a26365 1
 tvigle.ru##[class^="styles_removeAd"]
@@ -84,12 +94,10 @@ avtorambler.com,rambler.ru##.commercial-branding:style(margin-top: unset !import
 d27711 1
 a27711 1
 shedevrum.ai###app > .items-center > div[class]:style(height: unset !important)
-a28508 1
-pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##+js(disable-newtab-links)
 a28616 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, div, Уважаемый посетитель!)
 d28759 3
-a28761 3
-pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##.raleas-navbarrrs .all_it .relise
-pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##.raleas-navbarrrs .all_it:remove-attr(style)
-pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##.raleas-navbarrrs .all_it:style(display: inline-block !important)
+a28820 3
+pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##div[class^="raleas-navbar"] .all_it:remove-attr(style)
+pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##div[class^="raleas-navbar"] .all_it:style(display: inline-block !important)
+pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##div[class^="raleas-navbar"] .relis
