@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 31 May 2025 04:32:19 +0000
-! Diff-Path: ../patches/2025.5.31.272.patch#ruadlist
+! Last modified: Sat, 31 May 2025 09:26:16 +0000
+! Diff-Path: ../patches/2025.5.31.566.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -287,7 +287,6 @@
 ||adsmmgp.com^$third-party
 ||adsmo.ru^$third-party
 ||adsorg.com^
-||adspector.io^$third-party
 ||adspeeker.com^$third-party
 ||adspend.space^$third-party
 ||adstag0102.xyz^$third-party
@@ -1014,7 +1013,6 @@
 ||c704655a9050bdcc.com^$third-party
 ||c97eaqj38e.ru^$third-party
 ||cachand.com^
-||cache.betweendigital.com^
 ||cadwx.com^$third-party
 ||cafjwf.com^$third-party
 ||cafmjvh7.ru^
@@ -3784,7 +3782,6 @@
 ||melodramo-adv.ru^$third-party
 ||melodramo.ru^$third-party
 ||melotiratum.com^$third-party
-||membrana.media^$third-party
 ||mementes.com^
 ||memtkh.com^$third-party
 ||menato.ru^
@@ -8478,7 +8475,6 @@ by,~mail.ru,ru,ua##.banner_box
 ##.sp_search3_table
 ##.sp_search_table
 ##.surbis_banner
-##.td-a-rec
 ##.tiezerlady
 ##.topbaner
 ##.travelpayouts_container-offers-carousel.carousel
@@ -15356,7 +15352,6 @@ auto.vesti.ru##.b-anons--banner
 ixbt.com#?#.b-article > h4:-abp-contains(Справочник по ценам)
 kinokladovka.com##.b-background__link
 sho-me.ru##.b-baner-sho-me-link
-ukranews.com##.b-banner
 dengi.ua##.b-banner-container
 forums.drom.ru##.b-banner-group
 cyberstyle.ru##.b-banner_600x90
@@ -22831,6 +22826,7 @@ lenta.ru#?#._longgrid:-abp-has(> [class*="info"] > [class*="_ad-title"])
 eda.ru#?#.ad_branding_footer div[class^="emotion"]:-abp-has(> [title="yandexzen"])
 eda.ru##.ad_branding_header > section
 championat.com##.adv-mark
+lenta.ru##.advertisable-plate__erid
 gazeta.ru##.b_nav > a[target="_blank"]
 gazeta.ru##.b_telegram
 championat.com,gazeta.ru,lenta.ru##.banner
@@ -22886,7 +22882,7 @@ avtorambler.com,rambler.ru##a[href*="//ads.adfox.ru/"]
 afisha.ru##a[href*="://dzen.ru/"]
 lenta.ru##a[href*="?erid="]
 championat.com##a[href*="offer_id="]
-championat.com##a[href*="okko.sport"]
+championat.com,lenta.ru##a[href*="okko.sport"]
 www.afisha.ru##a[href^="/out/?url="]
 rambler.ru#?#article div:-abp-has(> div > [id^="rcmw-container"]:empty)
 avtorambler.com,rambler.ru#?#aside:-abp-has(> div > [class^="banner--native-partner_widget"])
