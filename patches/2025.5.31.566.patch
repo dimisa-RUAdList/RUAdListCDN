@@ -1,8 +1,10 @@
-diff name:ruadlist lines:38 checksum:c2329db271
+diff name:ruadlist lines:41 checksum:710f443f79
 d4 2
 a5 2
-! Last modified: Sun, 01 Jun 2025 05:29:15 +0000
-! Diff-Path: ../patches/2025.6.1.329.patch#ruadlist
+! Last modified: Sun, 01 Jun 2025 10:30:36 +0000
+! Diff-Path: ../patches/2025.6.1.630.patch#ruadlist
+a508 1
+||artfiles.online^$third-party
 d7514 1
 d7527 2
 d7597 1
@@ -14,6 +16,7 @@ d9800 2
 d9868 1
 a10668 1
 /pibit.json$xmlhttprequest,domain=pb.wtf|pirat.one|piratbit.fun|piratbit.org|piratbit.top
+d16356 1
 a17094 1
 pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##.mains a[href^="/"][href*="xt/"]:not(.btn)
 d17699 1
@@ -24,6 +27,8 @@ pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top#?#.top_menu:not([class*=
 d19163 1
 a20066 1
 pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##a[href^="https://denuvo.net/"]
+a20075 1
+cq.ru##a[href^="https://market.yandex.ru/"][rel="nofollow"]
 d20125 1
 a20875 3
 pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top#?#div[class^="raleas-navbar"] .all_it:-abp-has(a[href^="/"][href*="xt/"])
@@ -33,7 +38,5 @@ d22174 1
 d23949 1
 d28518 1
 d28770 3
-a28831 3
-pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##div[class^="raleas-navbar"] .all_it:remove-attr(style)
-pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##div[class^="raleas-navbar"] .all_it:style(display: inline-block !important)
-pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##div[class^="raleas-navbar"] .relis
+a28831 1
+pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##div[class^="raleas-navbar"] .ad + .ad ~ .all_it:style(left: -206px !important)

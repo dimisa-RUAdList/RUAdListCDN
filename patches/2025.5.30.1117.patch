@@ -1,9 +1,11 @@
-diff name:ruadlist lines:48 checksum:c2329db271
+diff name:ruadlist lines:51 checksum:710f443f79
 d4 2
 a5 2
-! Last modified: Sun, 01 Jun 2025 05:29:15 +0000
-! Diff-Path: ../patches/2025.6.1.329.patch#ruadlist
+! Last modified: Sun, 01 Jun 2025 10:30:36 +0000
+! Diff-Path: ../patches/2025.6.1.630.patch#ruadlist
 d290 1
+a509 1
+||artfiles.online^$third-party
 d1017 1
 d3787 1
 d7517 1
@@ -19,6 +21,7 @@ d9872 1
 a10672 1
 /pibit.json$xmlhttprequest,domain=pb.wtf|pirat.one|piratbit.fun|piratbit.org|piratbit.top
 d15359 1
+d16361 1
 a17099 1
 pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##.mains a[href^="/"][href*="xt/"]:not(.btn)
 d17704 1
@@ -29,6 +32,8 @@ pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top#?#.top_menu:not([class*=
 d19168 1
 a20071 1
 pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##a[href^="https://denuvo.net/"]
+a20080 1
+cq.ru##a[href^="https://market.yandex.ru/"][rel="nofollow"]
 d20130 1
 a20880 3
 pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top#?#div[class^="raleas-navbar"] .all_it:-abp-has(a[href^="/"][href*="xt/"])
@@ -43,7 +48,5 @@ championat.com,lenta.ru##a[href*="okko.sport"]
 d23953 1
 d28522 1
 d28774 3
-a28835 3
-pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##div[class^="raleas-navbar"] .all_it:remove-attr(style)
-pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##div[class^="raleas-navbar"] .all_it:style(display: inline-block !important)
-pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##div[class^="raleas-navbar"] .relis
+a28835 1
+pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##div[class^="raleas-navbar"] .ad + .ad ~ .all_it:style(left: -206px !important)

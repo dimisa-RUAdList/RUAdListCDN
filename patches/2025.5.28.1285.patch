@@ -1,9 +1,11 @@
-diff name:ruadlist lines:91 checksum:c2329db271
+diff name:ruadlist lines:94 checksum:710f443f79
 d4 2
 a5 2
-! Last modified: Sun, 01 Jun 2025 05:29:15 +0000
-! Diff-Path: ../patches/2025.6.1.329.patch#ruadlist
+! Last modified: Sun, 01 Jun 2025 10:30:36 +0000
+! Diff-Path: ../patches/2025.6.1.630.patch#ruadlist
 d290 1
+a509 1
+||artfiles.online^$third-party
 d1017 1
 d3787 1
 d7517 1
@@ -23,6 +25,7 @@ a10671 1
 a13710 1
 tvigle.ru###ad-padding
 d15357 1
+d16359 1
 a17097 1
 pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##.mains a[href^="/"][href*="xt/"]:not(.btn)
 d17269 1
@@ -44,6 +47,8 @@ a19394 1
 kinorium.com##a[data-original-url^="https://www.tvigle.ru/"]
 a20066 1
 pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##a[href^="https://denuvo.net/"]
+a20075 1
+cq.ru##a[href^="https://market.yandex.ru/"][rel="nofollow"]
 d20125 1
 a20875 3
 pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top#?#div[class^="raleas-navbar"] .all_it:-abp-has(a[href^="/"][href*="xt/"])
@@ -86,7 +91,5 @@ d28506 1
 a28614 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, div, Уважаемый посетитель!)
 d28757 3
-a28818 3
-pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##div[class^="raleas-navbar"] .all_it:remove-attr(style)
-pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##div[class^="raleas-navbar"] .all_it:style(display: inline-block !important)
-pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##div[class^="raleas-navbar"] .relis
+a28818 1
+pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##div[class^="raleas-navbar"] .ad + .ad ~ .all_it:style(left: -206px !important)

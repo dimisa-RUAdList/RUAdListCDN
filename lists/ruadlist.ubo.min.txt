@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 01 Jun 2025 05:29:15 +0000
-! Diff-Path: ../patches/2025.6.1.329.patch#ruadlist
+! Last modified: Sun, 01 Jun 2025 10:30:36 +0000
+! Diff-Path: ../patches/2025.6.1.630.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -506,6 +506,7 @@
 ||areastock.site^$third-party
 ||arigami.ru^
 ||armi.media^$third-party
+||artfiles.online^$third-party
 ||aruhdx.com^$third-party
 ||as4zjsw7.ru^$third-party
 ||asdhit.com^
@@ -16346,7 +16347,6 @@ autogrodno.by##.expautos_detail_right > .moduletable_menu:first-child > span
 korabel.ru##.ext_link_img
 russian.rt.com##.external-widget
 carsweek.ru##.extra
-glav.su#?#.f-i121-3 > .tbl:-abp-has(script)
 superjob.ru#?#.f-test-search-result-item:-abp-has(> div > div .f-test-link-Podrobnee)
 superjob.ru#?#.f-test-search-result-item:-abp-has(> div li div:empty:first-child + div:empty)
 1777.ru##.f80
@@ -20069,6 +20069,7 @@ www.kinopoisk.ru##a[href^="https://kino.tricolor.tv/watch/"]
 ndscalc.ru##a[href^="https://kontur.ru/"]
 itcrumbs.ru##a[href^="https://kwork.ru"]
 poebuilds.ru##a[href^="https://lucky-boys.ru/"]
+cq.ru##a[href^="https://market.yandex.ru/"][rel="nofollow"]
 medved.us##a[href^="https://my.alfa-forex.ru/ru/registration/"]
 nashvancouver.com##a[href^="https://nashvancouver.com/linkout/"] > img[alt="tree"]
 vm.ru##a[href^="https://news.yandex.ru/index.html?from=rubric"]
@@ -28821,9 +28822,7 @@ cosplay-porn.*,mult-porno.*,sex-studentki.*##+js(set-cookie-reload, is_age_verif
 disk.yandex.ru,disk.yandex.*##+js(remove-class, has-fullscreen-banner|has-right-direct, .public__root, stay)
 dzen.ru##div:matches-attr(/data-[a-z0-9]/=bottom-ad)
 cq.ru##div[class]:not([class*="-"]):not([class*="_"]):matches-css(margin-top: 16px)
-pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##div[class^="raleas-navbar"] .all_it:remove-attr(style)
-pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##div[class^="raleas-navbar"] .all_it:style(display: inline-block !important)
-pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##div[class^="raleas-navbar"] .relis
+pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##div[class^="raleas-navbar"] .ad + .ad ~ .all_it:style(left: -206px !important)
 ozon.ru##div[data-widget="banner"]:matches-path(/my/reviews/promo):style(display: block !important)
 pronpic.org##div[style="color:red;font-size:25px;"], .adblock_loock
 fanserial.*,fanserialstv.net,hdrezka.*,rezka.*##+js(set-constant, Object.prototype.preroll, undefined)
