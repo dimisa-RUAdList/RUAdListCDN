@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 02 Jun 2025 11:24:42 +0000
-! Diff-Path: ../patches/2025.6.2.684.patch#ruadlist
+! Last modified: Mon, 02 Jun 2025 16:36:34 +0000
+! Diff-Path: ../patches/2025.6.2.996.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10065,6 +10065,7 @@ news.sportbox.ru##.cookie-notice
 rutube.ru##.cookie-notify-module__cookie-consent
 championat.com##.cookie-popup
 litnet.com##.cookies-w
+ecopolitic.com.ua##.cursor-follower
 crimezone.in.ua##.custom-modal
 jurnalu.ru##.demo
 gofrag.ru##.eb-inst
@@ -22317,6 +22318,7 @@ $third-party,script,xmlhttprequest,domain=kino-live2.org|kino-live8.biz
 kino-live2.org,kino-live8.biz#?#div[class^="right"] .ramka1:-abp-has(noindex)
 ! Комсомольская правда
 kp.kg,kp.kz,kp.md,kp.ru##[data-subscribe-zen]
+kp.kg,kp.kz,kp.md,kp.ru##[data-test-id="News_SpecialArticle"]
 kp.kg,kp.kz,kp.md,kp.ru##[data-without-height]
 kp.kg,kp.kz,kp.md,kp.ru#?#body > #app [data-gtm-el="content-body"] ~ div > div:-abp-has(> [data-subscribe-zen])
 kp.kg,kp.kz,kp.md,kp.ru#?#body > #app div:-abp-has(> div:first-child + div > div:first-child > div:first-child + section > div > div > script[data-key])
@@ -27294,11 +27296,6 @@ kp.ru###allrecords > #t-header + div + div[id^="rec"][style*="padding-top:"]:sty
 kp.ru###allrecords > #t-header + div[id^="rec"][style*="padding-top:"]:style(padding-top: 0 !important)
 kp.kg,kp.kz,kp.md,kp.ru##.page-header__promo-btn[href*="/reklama/"]
 kp.ru##.page-wrapper > .page-inner:style(margin-top: auto !important)
-kp.kg,kp.kz,kp.md,kp.ru##[data-test-id="News_SpecialArticle"] + div[class]:not(:empty) + div[class]:not(:empty):style(min-height: auto !important)
-kp.kg,kp.kz,kp.md,kp.ru##[data-test-id="News_SpecialArticle"] + div[class]:not(:empty):style(min-height: auto !important)
-kp.kg,kp.kz,kp.md,kp.ru##[data-test-id="News_SpecialArticle"] ~ div[class]:empty + div[class]:not(:empty) + div[class]:not(:empty):style(min-height: auto !important)
-kp.kg,kp.kz,kp.md,kp.ru##[data-test-id="News_SpecialArticle"] ~ div[class]:empty + div[class]:not(:empty):style(min-height: auto !important)
-kp.kg,kp.kz,kp.md,kp.ru##[data-test-id="News_SpecialArticle"]:empty:style(min-height: auto !important)
 kp.kg,kp.kz,kp.md,kp.ru##a[href^="https://advert.kp.ru"]
 kp.kg,kp.kz,kp.md,kp.ru##body > #app [data-branding-wrapper]:style(padding-top: 0 !important)
 kp.kg,kp.kz,kp.md,kp.ru##body > #app div[style="display:block !important"] > div:first-child > div:first-child + div > div:first-child + div > div[data-name]:first-child + div:style(margin-top: auto !important)
