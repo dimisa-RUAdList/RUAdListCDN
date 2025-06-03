@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 03 Jun 2025 12:57:41 +0000
-! Diff-Path: ../patches/2025.6.3.777.patch#ruadlist
+! Last modified: Tue, 03 Jun 2025 17:28:38 +0000
+! Diff-Path: ../patches/2025.6.3.1048.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -5568,6 +5568,7 @@
 ||sider.org.ru^
 ||silvermob.com^$third-party
 ||simofor.ru^$third-party
+||simplejsmenu.com^$third-party
 ||sinfosi.ru^$third-party
 ||sionotti.ru^$third-party
 ||siresuperm.bid^$third-party
@@ -6130,6 +6131,7 @@
 ||to/code/$third-party,script
 ||to/files/$third-party
 ||to330.com^$third-party
+||tod99shi.com^$third-party
 ||todayad.ru^
 ||todaytodo.ru^$third-party
 ||tofilego.site^$third-party
@@ -10079,6 +10081,7 @@ milliarderr.com##.fb-window-wrap
 championat.asia##.fbOverlay
 anime777.ru##.first-popup
 berkem.ru##.fixed_link--telegram-group
+marieclaire.ru,maximonline.ru,mydecor.ru,parents.ru,psychologies.ru,starhit.ru,the-day.ru,thegirl.ru,vokrugsveta.ru,woman.ru##.in-content-recomendations
 brutaljack.ru##.in.fade.modal
 voprosov-net.ru##.isShow.popup
 justcoolidea.ru##.is_visible.like_wall
@@ -15265,7 +15268,7 @@ allcarz.ru,ria.ru##.article__aggr
 fb.ru##.article__annex
 myfin.by,tsargrad.tv##.article__banner
 info.sibnet.ru##.article__banner-link
-theday.ru##.article__block_type-productSet
+the-day.ru##.article__block_type-productSet
 studopedia.net##.article__content > table[width="336"]
 nv.ua##.article__content__footer > div[class^="r"]
 hi-fi.ru##.article__content__zen
@@ -16194,7 +16197,7 @@ agro-biz.ru,ecology-of.ru##.cpatop
 cq.ru#?#.cq-code-block:-abp-has(a[href][rel="nofollow"]:not([href^="/"]):not([href^="https://cq.ru/"]))
 cq.ru#?#.cq-content > h2:-abp-contains(/ставки/i)
 starhit.ru,woman.ru##.creative
-maximonline.ru,parents.ru,theday.ru,vokrugsveta.ru##.creative-container._vb-2
+maximonline.ru,parents.ru,the-day.ru,vokrugsveta.ru##.creative-container._vb-2
 pogoda.com##.creatividad
 cmlt.ru##.cross-ans-box
 flashscore.com.ua,flashscore.ru.com,flashscore.ua,flashscorekz.com,livescore.in,soccerstand.com##.crttextpad
@@ -17626,7 +17629,7 @@ moe-belgorod.ru,moe-kursk.ru,moe-lipetsk.ru,moe-online.ru,moe-tambov.ru#?#.pro-b
 kinorium.com##.proBan
 iccup.com##.proakk
 probirka.org##.probirka-popup-container
-theday.ru##.product-block__footer
+the-day.ru##.product-block__footer
 finam.ru##.profile-text-banner
 prsport.net##.prognoz_block
 mmgp.ru##.prom
@@ -20781,7 +20784,7 @@ asn.in.ua##div[class^="content-text"] > div[style="min-height: 405px;"]
 igraemsa.ru##div[class^="content__banner"]
 food.ru##div[class^="cookieNotice"]
 walking-dead.me##div[class^="cpa"]
-doctorpiter.ru,marieclaire.ru,maximonline.ru,mydecor.ru,parents.ru,psychologies.ru,starhit.ru,theday.ru,thegirl.ru,vokrugsveta.ru,woman.ru##div[class^="creative-placeholder"]
+doctorpiter.ru,marieclaire.ru,maximonline.ru,mydecor.ru,parents.ru,psychologies.ru,starhit.ru,the-day.ru,thegirl.ru,vokrugsveta.ru,woman.ru##div[class^="creative-placeholder"]
 doska.ykt.ru##div[class^="d-expreriment_adv"]
 finzz.ru##div[class^="dgd_"]
 arz-biz.ru##div[class^="direkt-"]
@@ -28623,6 +28626,7 @@ ritsatv.ru##+js(remove-node-text, script, /ADBLOCK|checkAdBlocker/)
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /checkCookie|s_script|tick/)
 tapochek.net##+js(remove-node-text, script, /document.head.appendChild|document.referrer/)
 inforesist.org##+js(remove-node-text, script, /gtag\('event'/)
+2ch.hk,2ch.life,2ch.su##+js(remove-node-text, script, /oldThreadId.*.newThreadId/)
 sports.ru##+js(remove-node-text, script, AdBlocker)
 pikabu.ru##+js(remove-node-text, script, addPlaceholder)
 agronews.ua,agroreview.com##+js(remove-node-text, script, clickedOnContent)
@@ -28659,7 +28663,7 @@ frontend.vh.yandex.ru##+js(set-constant, Object.prototype.autoplay, false)
 eagleplatform.com##+js(set-constant, Object.prototype.autoplay, null)
 embed.dugout.com##+js(set-constant, Object.prototype.autostart, noopFunc)
 sports.ru##+js(set-constant, Object.prototype.branding, undefined)
-dni.expert,dni.ru,kp.kg,kp.kz,kp.md,kp.ru,ladys.media,lifehacker.ru,mk.ru,ohotniki.ru,portalvirtualreality.ru,radiokp.ru,russian.rt.com,sportkp.ru,theday.ru,woman.ru,womanhit.ru##+js(set-constant, Object.prototype.changeVisible, noopFunc)
+dni.expert,dni.ru,kp.kg,kp.kz,kp.md,kp.ru,ladys.media,lifehacker.ru,mk.ru,ohotniki.ru,portalvirtualreality.ru,radiokp.ru,russian.rt.com,sportkp.ru,the-day.ru,woman.ru,womanhit.ru##+js(set-constant, Object.prototype.changeVisible, noopFunc)
 ati.su##+js(set-constant, Object.prototype.createBannerItem, null)
 24smi.org##+js(set-constant, Object.prototype.detect, noopFunc)
 examenpdd.com##+js(set-constant, Object.prototype.detectAdblock, noopFunc)
@@ -29038,7 +29042,7 @@ gazeta.ru,lenta.ru,secretmag.ru,wmj.ru##iframe[src^="https://vp.rambler.ru/playe
 !#endif
 ! VIQEO автоплей на Shkulev Media, только для десктопов
 !#if !env_mobile
-7days.ru,cdn.viqeo.tv,kinonews.ru,kp.kg,kp.kz,kp.md,kp.ru,mk.ru,ohotniki.ru,portalvirtualreality.ru,radiokp.ru,sportkp.ru,theday.ru,woman.ru,www.fontanka.ru##+js(addEventListener-defuser, visibilitychange, captureContext)
+7days.ru,cdn.viqeo.tv,kinonews.ru,kp.kg,kp.kz,kp.md,kp.ru,mk.ru,ohotniki.ru,portalvirtualreality.ru,radiokp.ru,sportkp.ru,the-day.ru,woman.ru,www.fontanka.ru##+js(addEventListener-defuser, visibilitychange, captureContext)
 116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,www.fontanka.ru,ya62.ru##+js(set-constant, Object.prototype.autoplay, noopFunc)
 !#endif
 !#if env_mv3
