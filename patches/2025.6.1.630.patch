@@ -1,8 +1,8 @@
-diff name:ruadlist lines:105 checksum:ef066f427e
+diff name:ruadlist lines:121 checksum:109662c209
 d4 2
 a5 2
-! Last modified: Wed, 04 Jun 2025 13:41:45 +0000
-! Diff-Path: ../patches/2025.6.4.821.patch#ruadlist
+! Last modified: Wed, 04 Jun 2025 18:38:37 +0000
+! Diff-Path: ../patches/2025.6.4.1118.patch#ruadlist
 a842 2
 ||bm.ebacdn.com^$third-party
 ||bm.lencdn.com^$third-party
@@ -73,6 +73,8 @@ vokrug.tv#?#.swiper-wrapper > .series-carousel__item:-abp-has(> a[href*="//ads.a
 d18389 1
 a18613 1
 lenkino.adult##.vb-spt
+a18970 1
+cq.ru##[class*="grid"] > a[href*="playerok"]
 d19213 1
 a19213 1
 cross.bet,forum.mista.ru,unews.pro##[id^="banner"]
@@ -95,12 +97,26 @@ d21782 1
 d22088 1
 a22088 1
 ||pikabu.ru/ajax/*?Y19iK=$xmlhttprequest
+a22103 1
+cq.*##[class*="grid"] > a:has(.p-item__button-sponsored) {remove:true;}
 a22318 1
 kp.kg,kp.kz,kp.md,kp.ru##[data-test-id="News_SpecialArticle"]
+a27251 1
+www.kinopoisk.ru##div[class*="styles_middleContainer"] > div[class]:first-child:style(min-height: 0 !important)
+a27259 1
+www.kinopoisk.ru###modal-root > [class^="styles_root_"] ~ div:not([class^="styles_modal_"])
+a27264 1
+www.kinopoisk.ru##div[class*="__AMNhR styles_"]
 d27296 5
+a27534 1
+pikabu.ru##.sidebar-game-block
+a28581 1
+www.kinopoisk.ru##+js(no-setTimeout-if, blocker)
 d28665 1
 a28665 1
 dni.expert,dni.ru,kp.kg,kp.kz,kp.md,kp.ru,ladys.media,lifehacker.ru,mk.ru,ohotniki.ru,portalvirtualreality.ru,radiokp.ru,russian.rt.com,sportkp.ru,the-day.ru,woman.ru,womanhit.ru##+js(set-constant, Object.prototype.changeVisible, noopFunc)
+a28792 1
+cq.ru##[class*="grid"] > a:has(.p-item__button-sponsored):remove()
 d29044 1
 a29044 1
 7days.ru,cdn.viqeo.tv,kinonews.ru,kp.kg,kp.kz,kp.md,kp.ru,mk.ru,ohotniki.ru,portalvirtualreality.ru,radiokp.ru,sportkp.ru,the-day.ru,woman.ru,www.fontanka.ru##+js(addEventListener-defuser, visibilitychange, captureContext)

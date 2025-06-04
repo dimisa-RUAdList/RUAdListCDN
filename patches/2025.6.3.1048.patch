@@ -1,8 +1,8 @@
-diff name:ruadlist lines:26 checksum:ef066f427e
+diff name:ruadlist lines:42 checksum:109662c209
 d4 2
 a5 2
-! Last modified: Wed, 04 Jun 2025 13:41:45 +0000
-! Diff-Path: ../patches/2025.6.4.821.patch#ruadlist
+! Last modified: Wed, 04 Jun 2025 18:38:37 +0000
+! Diff-Path: ../patches/2025.6.4.1118.patch#ruadlist
 d15800 1
 a15800 1
 apostrophe.ua,bitcryptonews.ru,news.ru,ogolosha.ua,turizm.ru##.bnr
@@ -15,6 +15,8 @@ a17982 1
 news.ru##.section-renab
 a18323 1
 vokrug.tv#?#.swiper-wrapper > .series-carousel__item:-abp-has(> a[href*="//ads.adfox.ru/"])
+a18973 1
+cq.ru##[class*="grid"] > a[href*="playerok"]
 d19245 1
 a19245 1
 101.ru,19rus.info,2000.ua,5-tv.ru,56orb.ru,62info.ru,7info.ru,afanasy.biz,agitpro.su,allboxing.ru,anekdot.ru,argumenti.ru,baltnews.ee,belive.ru,bigpicture.ru,bombardir.ru,chehov-vid.ru,daily-inform.ru,dni.ru,dnpmag.com,do-slez.com,eadaily.com,eg.ru,expert.ru,ferra.ru,gazeta-tula.ru,glavnoe24.ru,gorobzor.ru,gorvesti.ru,govoritmoskva.ru,gubdaily.ru,hightech.plus,iarex.ru,inforeactor.ru,iz.ru,kirov-portal.ru,kriminal.net.ua,livelib.ru,m24.ru,melodrama1.com,mgorod.kz,mir24.tv,mk.ru,myhistori.ru,nashgorod.ru,nation-news.ru,nevnov.ru,newinform.com,news-front.info,nn.ru,ntv.ru,osnmedia.ru,penzainform.ru,penzavzglyad.ru,pikinform.ru,pnp.ru,polit.info,politexpert.net,politonline.ru,pora.ru,radidomapro.ru,radio1.ru,radioromantika.ru,ratel.kz,ren.tv,ria56.ru,riafan.ru,rueconomics.ru,rusplt.ru,russian.rt.com,rusvesna.su,sevkavportal.ru,sharknews.ru,sm.news,sminews.ru,sobesednik.ru,steaklovers.menu,sun-news.ru,topwar.ru,trendymen.ru,tsargrad.tv,tsn24.ru,tvernews.ru,ua.today,uralpress.ru,usa.one,vedomosti.ru,versia.ru,veseloeradio.ru,vesti-yamal.ru,vesti.ru,vesti.uz,vestivrn.ru,vokrugsveta.ru,xn--b1ats.xn--80asehdb,zakon.kz,zr.ru##[id^="unit_"]
@@ -24,4 +26,18 @@ a20559 1
 d22092 1
 a22092 1
 ||pikabu.ru/ajax/*?Y19iK=$xmlhttprequest
+a22107 1
+cq.*##[class*="grid"] > a:has(.p-item__button-sponsored) {remove:true;}
+a27256 1
+www.kinopoisk.ru##div[class*="styles_middleContainer"] > div[class]:first-child:style(min-height: 0 !important)
+a27264 1
+www.kinopoisk.ru###modal-root > [class^="styles_root_"] ~ div:not([class^="styles_modal_"])
+a27269 1
+www.kinopoisk.ru##div[class*="__AMNhR styles_"]
+a27534 1
+pikabu.ru##.sidebar-game-block
+a28581 1
+www.kinopoisk.ru##+js(no-setTimeout-if, blocker)
 d28629 1
+a28793 1
+cq.ru##[class*="grid"] > a:has(.p-item__button-sponsored):remove()

@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 04 Jun 2025 13:41:45 +0000
-! Diff-Path: ../patches/2025.6.4.821.patch#ruadlist
+! Last modified: Wed, 04 Jun 2025 18:38:37 +0000
+! Diff-Path: ../patches/2025.6.4.1118.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -18974,6 +18974,7 @@ dni.ru##[class*="container"][class*="partner"]
 prokuzbass.ru##[class*="container-ad"]
 detaly.co.il##[class*="container_ads"]
 pravda.if.ua##[class*="footer"] > [class*="menu-section footer-"]:last-child
+cq.ru##[class*="grid"] > a[href*="playerok"]
 forum.guns.ru##[class*="hide"][class$="ban"]
 appleinsider.ru##[class*="home-credit"]
 puerrtto.livejournal.com##[class*="kupibilet"]
@@ -22108,6 +22109,7 @@ howdyho.net,howdyho.pro#@#div[id^="yandex_rtb"]
 ||vk-apps.com/*?type=leadform&d=
 ||yandex.$domain=howdyho.net|howdyho.pro
 ||yastatic.$domain=howdyho.net|howdyho.pro
+cq.*##[class*="grid"] > a:has(.p-item__button-sponsored) {remove:true;}
 flightsim.su###tie-popup-adblock {remove:true;}
 freesoft.ru###downloadAdModal {remove:true;}
 freesoft.ru###error.modal {remove:true;}
@@ -27257,6 +27259,7 @@ www.kinopoisk.ru##div[class*=" styles_basicMediaSection"]:style(padding-top: 40p
 www.kinopoisk.ru##div[class*=" styles_videoContainer"]:style(margin-top: 0 !important)
 www.kinopoisk.ru##div[class*="styles_baseContainer"] > div[class]:first-child > div[class]:first-child:style(min-height: 0 !important)
 www.kinopoisk.ru##div[class*="styles_baseContainer"] > div[class]:first-child:style(min-height: 0 !important)
+www.kinopoisk.ru##div[class*="styles_middleContainer"] > div[class]:first-child:style(min-height: 0 !important)
 www.kinopoisk.ru##div[class^="styles_adBlockWarningRoot"]
 www.kinopoisk.ru##div[class^="styles_themeTopBanner"]
 www.kinopoisk.ru##div[class^="styles_wideContentContainer"] > div[class]:first-child:style(min-height: 0 !important)
@@ -27265,11 +27268,13 @@ www.kinopoisk.ru##div[data-type="teaserspec"]
 www.kinopoisk.ru##div[style="min-width: 1px;"]:style(min-height: 0 !important)
 www.kinopoisk.ru##div[style="min-width:1px"]:style(min-height: 0 !important)
 ! правила для обфусцированной версии
+www.kinopoisk.ru###modal-root > [class^="styles_root_"] ~ div:not([class^="styles_modal_"])
 www.kinopoisk.ru##.app__page > div[class*="-container_"]:not([class*="media"]):not([class*="content"]):first-child
 www.kinopoisk.ru##.desktop-layout-with-sidebar__middle > .desktop-layout-with-sidebar__wrapper > div[class*="-container_"]:not([class*="kinopoisk"]):first-child
 www.kinopoisk.ru##.media-post-page > div[class*="-container_"]:not([class*="media"]):first-child
 www.kinopoisk.ru##.page-content > div[id]:not(#header-info-bg):empty
 www.kinopoisk.ru##.page-content > div[id]:not(#header-info-bg):empty + div[id]:not(#top):style(margin-bottom: 40px !important)
+www.kinopoisk.ru##div[class*="__AMNhR styles_"]
 www.kinopoisk.ru##div[class*="kinopoisk-media-container_pending"]:style(min-height: 0 !important)
 www.kinopoisk.ru##div[id*="_superbanner_"]
 ! исправление ошибок и косяков оригинальной вёрстки
@@ -27535,6 +27540,7 @@ freescreens.ru,imgbase.ru,imgcach.ru,imgclick.ru,payforpic.ru,picclick.ru,picclo
 pikabu.ru###menu-subs > [href]::after
 pikabu.ru##.app > .app__inner[style*="padding-top"]:style(padding-top: 64px !important)
 pikabu.ru##.footer__inner:style(background-color: var(--color--app__bg) !important; color: var(--color--app__text) !important)
+pikabu.ru##.sidebar-game-block
 pikabu.ru##aside > .sidebar-block > div > div > div > div:style(min-height: unset !important)
 pikabu.ru##aside > .sidebar-block > div > div > div:style(min-height: unset !important)
 pikabu.ru##aside > .sidebar-block > div > div:style(min-height: unset !important)
@@ -28582,6 +28588,7 @@ strategium.ru##+js(no-setTimeout-if, adblock)
 fonmod.com##+js(no-setTimeout-if, ai_adb)
 aqicn.org##+js(no-setTimeout-if, alert, 15000)
 tragtorr.in,tragtorr.info##+js(no-setTimeout-if, antyadb, 5000)
+www.kinopoisk.ru##+js(no-setTimeout-if, blocker)
 limehd.tv,litehd.tv,pervyi-tv.online,russia-tv.online##+js(no-setTimeout-if, clientHeight, 2000)
 tv-kanali.online##+js(no-setTimeout-if, doAd)
 tradingview.com##+js(no-setTimeout-if, evercookie, 300000)
@@ -28793,6 +28800,7 @@ pronpic.org#@#:not(obhod-adblocka)
 @@||studizba.com^$generichide,badfilter
 @@||xksqb.com/native.$script,badfilter,domain=gwss.ru
 sports.ru##[class*="_label "]
+cq.ru##[class*="grid"] > a:has(.p-item__button-sponsored):remove()
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href*="://yabs.yandex."][href*="/count/"]):remove()
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href*="://yandex."][href*="/clck/"]):remove()
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href][target="_blank"]):remove()
