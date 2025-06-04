@@ -1,8 +1,8 @@
-diff name:ruadlist lines:92 checksum:109662c209
+diff name:ruadlist lines:101 checksum:4e939ee00a
 d4 2
 a5 2
-! Last modified: Wed, 04 Jun 2025 18:38:37 +0000
-! Diff-Path: ../patches/2025.6.4.1118.patch#ruadlist
+! Last modified: Wed, 04 Jun 2025 23:26:22 +0000
+! Diff-Path: ../patches/2025.6.4.1406.patch#ruadlist
 a5570 1
 ||simplejsmenu.com^$third-party
 a6132 1
@@ -81,6 +81,15 @@ www.kinopoisk.ru##div[class*="__AMNhR styles_"]
 d27298 5
 a27536 1
 pikabu.ru##.sidebar-game-block
+d27988 1
+a27992 1
+ya.ru##.reasoning-section
+d27994 1
+a27994 2
+ya.ru##[id^="rythm-fee"]
+ya.ru##html[class*="morda"] .body__content > aside ~ div[style]
+a28571 1
+ya.ru##+js(no-fetch-if, rythm_market)
 a28583 1
 www.kinopoisk.ru##+js(no-setTimeout-if, blocker)
 d28667 1

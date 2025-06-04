@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 04 Jun 2025 18:38:37 +0000
-! Diff-Path: ../patches/2025.6.4.1118.patch#ruadlist
+! Last modified: Wed, 04 Jun 2025 23:26:22 +0000
+! Diff-Path: ../patches/2025.6.4.1406.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -27992,13 +27992,14 @@ www.xcom-shop.ru##html:style(overflow-y: auto !important)
 xsport.ua##.site:style(margin-top: 0 !important)
 ! ---
 ! Yandex
-ya.ru###rythm-feed
 ya.ru##.document_overflow-scroll_yes:not(.document_new-year-feed-own-scroll_yes) body:style(overflow-y: unset !important)
 ya.ru##.i-mini-bem[style]
 ya.ru,yandex.by,yandex.kz,yandex.uz##.link-bro
 ya.ru##.market-feed
+ya.ru##.reasoning-section
 ya.ru##[id*="feed"][id*="_"]
-ya.ru##html[class*="morda"] .body__content > [class*="informers"] ~ div[style]
+ya.ru##[id^="rythm-fee"]
+ya.ru##html[class*="morda"] .body__content > aside ~ div[style]
 ! афиша
 afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.uz##div[class$="-banner"]
 afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.uz##div[data-bem*="height"][data-bem*="R-A-"]
@@ -28576,6 +28577,7 @@ www.ukr.net##+js(no-fetch-if, /_events/)
 volley.ru##+js(no-fetch-if, /buzzoola\.com|plrjs\.org/)
 trychatgpt.ru##+js(no-fetch-if, /mpsuadv\.ru/)
 animix.lol##+js(no-fetch-if, doubleclick.net)
+ya.ru##+js(no-fetch-if, rythm_market)
 fatcatslim.ru##+js(no-setInterval-if, clientHeight)
 anime-chan.me##+js(no-setInterval-if, move_string)
 volyninfo.com##+js(no-setInterval-if, replaceWith)
