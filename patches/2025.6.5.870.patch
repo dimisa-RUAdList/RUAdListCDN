@@ -1,8 +1,8 @@
-diff name:ruadlist lines:13 checksum:669cb07715
+diff name:ruadlist lines:85 checksum:66b9a498af
 d4 2
 a5 2
-! Last modified: Fri, 06 Jun 2025 05:30:41 +0000
-! Diff-Path: ../patches/2025.6.6.330.patch#ruadlist
+! Last modified: Fri, 06 Jun 2025 10:33:21 +0000
+! Diff-Path: ../patches/2025.6.6.633.patch#ruadlist
 d11300 1
 d19496 1
 a19496 1
@@ -10,5 +10,77 @@ joyreactor.cc##a[href*="://candy"]
 a20726 1
 cursorinfo.co.il##div[class^="atf_"][class*="_news"]
 d20975 1
+d22096 1
+a22096 1
+||pikabu.ru/ajax/*?b6V7n=$xmlhttprequest
+a22880 1
+gazeta.ru##[data-url^="https://www.gazeta.ru/prcom/"]
+d22937 1
+a22942 1
+||rambler.ru/*/okko-metrics
+a22945 1
+||static.gazeta.ru/nm2021/js/others_scripts_v6.js
+d23206 37
+d23249 4
+a23253 1
+ya.ru##.i-mini-bem[class*="banner"]
+a23254 40
+ya.ru,yandex.ru,yandex.*##.layout__banner
+ya.ru,yandex.ru,yandex.*##.main__distr-popup
+ya.ru,yandex.ru,yandex.*##.Organic_withPromoOffer
+ya.ru,yandex.ru,yandex.*#?#.content__left > #search-result > li:-abp-has(> .Organic_withPromoOffer)
+ya.ru,yandex.ru,yandex.*#?#.content__left > #search-result > li:-abp-has(> div .Organic-Subtitle > span:-abp-contains(/[РPeекламa]{6,7}/))
+ya.ru,yandex.ru,yandex.*#?#.content__left > #search-result > li:-abp-has(> div .organic__subtitle > span:-abp-contains(/[РPeекламa]{6,7}/))
+ya.ru,yandex.ru,yandex.*#?#.content__right div[class]:-abp-has(> div > script)
+ya.ru,yandex.ru,yandex.*#?#.content__right div[class][data-log-node]:-abp-has(.DirectInlineContainer)
+yandex.ru,yandex.*###banner.b-banner__content
+yandex.ru,yandex.*##.Ad > .Ad-Container ~ .Ad-Spinner
+yandex.ru,yandex.*##.AdvRsya-Slot
+yandex.ru,yandex.*##.b-spec-adv
+yandex.ru,yandex.*##.b-yabrowser-promo
+yandex.ru,yandex.*##.container__banner
+yandex.ru,yandex.*##.content.i-bem > .body__topblocks
+yandex.ru,yandex.*##.content__right > .z-market_right_yes
+yandex.ru,yandex.*##.direct-view
+yandex.ru,yandex.*##.dist-overlay__popup
+yandex.ru,yandex.*##.i-bem.adsrv
+yandex.ru,yandex.*##.i-bem.b-timetable__row[onclick*="awaps"]
+yandex.ru,yandex.*##.i-bem.stripe_type_promo
+yandex.ru,yandex.*##.i-bem.tv-grid__item-adv
+yandex.ru,yandex.*##.i-bem.tv-sortable-item.tv-sortable-item_sortable_no
+yandex.ru,yandex.*##.masonry .incut_banner
+yandex.ru,yandex.*##.org.i-bem.org_js_inited > div[style^="border-bottom"]
+yandex.ru,yandex.*##.org__sidebar > .org__links + div[style^="margin-top"]
+yandex.ru,yandex.*##.search-results__guadeloupe
+yandex.ru,yandex.*##.serp-adv__add
+yandex.ru,yandex.*##.serp-adv__all
+yandex.ru,yandex.*##.sidebar-view .business-advert-view
+yandex.ru,yandex.*##.sidebar-view div[style*="!important"]:not([style*="font-size"])
+yandex.ru,yandex.*##.spec-adv
+yandex.ru,yandex.*##.stat_pixel_yes[onclick][class*="_layout_"][class*="_format_"]
+yandex.ru,yandex.*##a[href*="//ads.adfox.ru/"]
+yandex.ru,yandex.*##body[class*="b-page_alt-widgets_yes"] .feed ._need-stub
+yandex.ru,yandex.*##div[class$="ear_js_inited"] > a[href^="//awaps.yandex.ru"]
+yandex.ru,yandex.*##img[src*="yandex.net/get-direct"]
+yandex.ru,yandex.*#?##search-result > .serp-list__card:-abp-has(> div .organic__subtitle > span:-abp-contains(/[РPeекламa]{6,7}/))
+yandex.ru,yandex.*#?#.scroller__wrap > .showcase__item:-abp-has(.product-card__direct)
+yandex.ru,yandex.*#?#.scroller__wrap > div[class^="minibadge"]:-abp-has(.serp-item .label:-abp-contains(реклама))
+d23294 7
+a23300 8
+yandex.ru,yandex.*##.b-direct
+yandex.ru,yandex.*##[id*="R-I-"][style*="height:"]:empty
+yandex.ru,yandex.*##div[class^="b-spec-adv"]
+yandex.ru,yandex.*##div[data-block="banner-view"]
+yandex.ru,yandex.*##ymaps > div[class^="search-placemark-layout-connect_advert"]
+yandex.ru,yandex.*##ymaps > div[class^="search-placemark-layout-connect_special"]
+yandex.ru,yandex.*#?#.page__result .typo:-abp-contains(/^новости партн/i)
+yandex.ru,yandex.*#?#html[class*=" Theme_color_news-"] div[class*="_type_native"] [class*="_type_card"]:-abp-has(> div > div:empty)
+d27818 1
+a27819 2
+! исправление ошибок и косяков оригинальной вёрстки
+tapochek.net##.lenta-tooltips-container > .tooltip-container:style(top: 43px !important; position: fixed !important)
 a28002 1
 ya.ru##html[class*="morda"] main > [data-hydration-id]:nth-child(-n+2)
+d28918 1
+a28918 1
+||youtube.com/embed/*autoplay=1$subdocument,removeparam=autoplay,domain=~kinoafisha.info|~pikabu.ru|~poolsuite.net

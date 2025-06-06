@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 06 Jun 2025 05:30:41 +0000
-! Diff-Path: ../patches/2025.6.6.330.patch#ruadlist
+! Last modified: Fri, 06 Jun 2025 10:33:21 +0000
+! Diff-Path: ../patches/2025.6.6.633.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22092,7 +22092,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||news.mail.ru/-/*.js?
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
-||pikabu.ru/ajax/*?o98TY=$xmlhttprequest
+||pikabu.ru/ajax/*?b6V7n=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -22877,6 +22877,7 @@ avtorambler.com,rambler.ru##[data-rcmw-init]
 sport.rambler.ru##[data-sport_media-desktop*="rnet_widget"]
 www.afisha.ru#?#[data-test="SECTION"] > [data-test="SECTION-CONTENT"]:-abp-has(> div > [href^="/out/?url="])
 travel.rambler.ru##[data-travel_media-desktop*="rnet_widget"]
+gazeta.ru##[data-url^="https://www.gazeta.ru/prcom/"]
 weekend.rambler.ru##[data-weekend_media-desktop*="rnet_widget"]
 woman.rambler.ru##[data-woman_media-desktop*="rnet_widget"]
 avtorambler.com,rambler.ru##[id^="rambler-promo-"]
@@ -22933,15 +22934,16 @@ avtorambler.com,rambler.ru##div[style^="min-height:300px"]
 avtorambler.com,rambler.ru##div[style^="min-height:400px"]
 avtorambler.com,rambler.ru##div[style^="min-height:600px"]
 avtorambler.com,rambler.ru##div[style^="order:"][style*="-1"]
-|rambler.ru/*/okko-metrics
 ||championat.com/embeds/custom.css
 ||embeds.rambler.ru/cpa-elements/
 ||img.championat.com/brand/*.png
 ||kraken.rambler.ru^$domain=~kraken.rambler.ru
 ||lenta.ru/fenwick
+||rambler.ru/*/okko-metrics
 ||rcmjs.rambler.ru/static/rcmw/rcmw.*.horizontal.
 ||rcmjs.rambler.ru/static/recommender.js
 ||ssp.rambler.ru^$domain=~ssp.rambler.ru
+||static.gazeta.ru/nm2021/js/others_scripts_v6.js
 ||trafffgen.rambler.ru^
 ||winline.rambler.ru^
 !#if ext_abp
@@ -23202,55 +23204,55 @@ ukr.net##.lazy-load-banner
 1901.selcdn.ru###bannerTop
 1901.selcdn.ru##.topFaceGuest
 ! Yandex (Яndex)
-yandex.by,yandex.kz,yandex.ru,yandex.uz###banner.b-banner__content
-ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz#?##search-result > .serp-list__card:-abp-has(> div .organic__subtitle > span:-abp-contains(/[РPeекламa]{6,7}/))
-yandex.by,yandex.kz,yandex.ru,yandex.uz##.Ad > .Ad-Container ~ .Ad-Spinner
-yandex.by,yandex.kz,yandex.ru,yandex.uz##.AdvRsya-Slot
-ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.Organic_withPromoOffer
-yandex.by,yandex.kz,yandex.ru,yandex.uz##.b-spec-adv
-yandex.by,yandex.kz,yandex.ru,yandex.uz##.b-yabrowser-promo
-yandex.by,yandex.kz,yandex.ru,yandex.uz##.container__banner
-yandex.by,yandex.kz,yandex.ru,yandex.uz##.content.i-bem > .body__topblocks
-ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.content__left > #search-result > li:-abp-has(> .Organic_withPromoOffer)
-ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.content__left > #search-result > li:-abp-has(> div .Organic-Subtitle > span:-abp-contains(/[РPeекламa]{6,7}/))
-ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.content__left > #search-result > li:-abp-has(> div .organic__subtitle > span:-abp-contains(/[РPeекламa]{6,7}/))
-yandex.by,yandex.kz,yandex.ru,yandex.uz##.content__right > .z-market_right_yes
-ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.content__right div[class]:-abp-has(> div > script)
-ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.content__right div[class][data-log-node]:-abp-has(.DirectInlineContainer)
-yandex.by,yandex.kz,yandex.ru,yandex.uz##.direct-view
-yandex.by,yandex.kz,yandex.ru,yandex.uz##.dist-overlay__popup
-yandex.by,yandex.kz,yandex.ru,yandex.uz##.i-bem.adsrv
-yandex.by,yandex.kz,yandex.ru,yandex.uz##.i-bem.b-timetable__row[onclick*="awaps"]
-yandex.by,yandex.kz,yandex.ru,yandex.uz##.i-bem.stripe_type_promo
-yandex.by,yandex.kz,yandex.ru,yandex.uz##.i-bem.tv-grid__item-adv
-yandex.by,yandex.kz,yandex.ru,yandex.uz##.i-bem.tv-sortable-item.tv-sortable-item_sortable_no
-ya.ru##.i-mini-bem[class*="banner"]
-ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.layout__banner
-ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.main__distr-popup
-yandex.by,yandex.kz,yandex.ru,yandex.uz##.masonry .incut_banner
-yandex.ru##.org.i-bem.org_js_inited > div[style^="border-bottom"]
-yandex.ru##.org__sidebar > .org__links + div[style^="margin-top"]
-yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.scroller__wrap > .showcase__item:-abp-has(.product-card__direct)
-yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.scroller__wrap > div[class^="minibadge"]:-abp-has(.serp-item .label:-abp-contains(реклама))
-yandex.by,yandex.kz,yandex.ru,yandex.uz##.search-results__guadeloupe
-yandex.by,yandex.kz,yandex.ru,yandex.uz##.serp-adv__add
-yandex.by,yandex.kz,yandex.ru,yandex.uz##.serp-adv__all
-yandex.by,yandex.kz,yandex.ru,yandex.uz##.sidebar-view .business-advert-view
-yandex.by,yandex.kz,yandex.ru,yandex.uz##.sidebar-view div[style*="!important"]:not([style*="font-size"])
-yandex.by,yandex.kz,yandex.ru,yandex.uz##.spec-adv
-yandex.by,yandex.kz,yandex.ru,yandex.uz##.stat_pixel_yes[onclick][class*="_layout_"][class*="_format_"]
 /portal/ntp/banner?$domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@://ya.r*/search$generichide
 @@://yandex.*/safe/win/$generichide
 @@://yandex.*/search$generichide
 @@://yandex.ru/|$generichide
 @@||yandex.ru/ads/system/adsdk.js|$script,domain=yandex.ru
-yandex.by,yandex.kz,yandex.ru,yandex.uz##a[href*="//ads.adfox.ru/"]
-yandex.by,yandex.kz,yandex.ru,yandex.uz##body[class*="b-page_alt-widgets_yes"] .feed ._need-stub
-yandex.ru##div[class$="ear_js_inited"] > a[href^="//awaps.yandex.ru"]
-yandex.by,yandex.kz,yandex.ru,yandex.uz##img[src*="yandex.net/get-direct"]
 market.yandex.ru,market.yandex.*##.layout_type_search.headline__footer
+ya.ru##.i-mini-bem[class*="banner"]
 ya.ru,yandex.*##.main-home-banner
+ya.ru,yandex.ru,yandex.*##.layout__banner
+ya.ru,yandex.ru,yandex.*##.main__distr-popup
+ya.ru,yandex.ru,yandex.*##.Organic_withPromoOffer
+ya.ru,yandex.ru,yandex.*#?#.content__left > #search-result > li:-abp-has(> .Organic_withPromoOffer)
+ya.ru,yandex.ru,yandex.*#?#.content__left > #search-result > li:-abp-has(> div .Organic-Subtitle > span:-abp-contains(/[РPeекламa]{6,7}/))
+ya.ru,yandex.ru,yandex.*#?#.content__left > #search-result > li:-abp-has(> div .organic__subtitle > span:-abp-contains(/[РPeекламa]{6,7}/))
+ya.ru,yandex.ru,yandex.*#?#.content__right div[class]:-abp-has(> div > script)
+ya.ru,yandex.ru,yandex.*#?#.content__right div[class][data-log-node]:-abp-has(.DirectInlineContainer)
+yandex.ru,yandex.*###banner.b-banner__content
+yandex.ru,yandex.*##.Ad > .Ad-Container ~ .Ad-Spinner
+yandex.ru,yandex.*##.AdvRsya-Slot
+yandex.ru,yandex.*##.b-spec-adv
+yandex.ru,yandex.*##.b-yabrowser-promo
+yandex.ru,yandex.*##.container__banner
+yandex.ru,yandex.*##.content.i-bem > .body__topblocks
+yandex.ru,yandex.*##.content__right > .z-market_right_yes
+yandex.ru,yandex.*##.direct-view
+yandex.ru,yandex.*##.dist-overlay__popup
+yandex.ru,yandex.*##.i-bem.adsrv
+yandex.ru,yandex.*##.i-bem.b-timetable__row[onclick*="awaps"]
+yandex.ru,yandex.*##.i-bem.stripe_type_promo
+yandex.ru,yandex.*##.i-bem.tv-grid__item-adv
+yandex.ru,yandex.*##.i-bem.tv-sortable-item.tv-sortable-item_sortable_no
+yandex.ru,yandex.*##.masonry .incut_banner
+yandex.ru,yandex.*##.org.i-bem.org_js_inited > div[style^="border-bottom"]
+yandex.ru,yandex.*##.org__sidebar > .org__links + div[style^="margin-top"]
+yandex.ru,yandex.*##.search-results__guadeloupe
+yandex.ru,yandex.*##.serp-adv__add
+yandex.ru,yandex.*##.serp-adv__all
+yandex.ru,yandex.*##.sidebar-view .business-advert-view
+yandex.ru,yandex.*##.sidebar-view div[style*="!important"]:not([style*="font-size"])
+yandex.ru,yandex.*##.spec-adv
+yandex.ru,yandex.*##.stat_pixel_yes[onclick][class*="_layout_"][class*="_format_"]
+yandex.ru,yandex.*##a[href*="//ads.adfox.ru/"]
+yandex.ru,yandex.*##body[class*="b-page_alt-widgets_yes"] .feed ._need-stub
+yandex.ru,yandex.*##div[class$="ear_js_inited"] > a[href^="//awaps.yandex.ru"]
+yandex.ru,yandex.*##img[src*="yandex.net/get-direct"]
+yandex.ru,yandex.*#?##search-result > .serp-list__card:-abp-has(> div .organic__subtitle > span:-abp-contains(/[РPeекламa]{6,7}/))
+yandex.ru,yandex.*#?#.scroller__wrap > .showcase__item:-abp-has(.product-card__direct)
+yandex.ru,yandex.*#?#.scroller__wrap > div[class^="minibadge"]:-abp-has(.serp-item .label:-abp-contains(реклама))
 |https://dzen.ru/*/*/*/$subdocument,domain=dzen.ru
 ||awaps.yandex.
 ||bs-meta.yandex.$script,xmlhttprequest
@@ -23290,13 +23292,14 @@ translate.yandex.ru,translate.yandex.*##.sidebar-direct
 travel.yandex.ru##div.root[id]:empty
 turbopages.org##.advert
 uslugi.yandex.ru##.WebBanner
-yandex.by,yandex.kz,yandex.ru,yandex.uz##.b-direct
-yandex.by,yandex.kz,yandex.ru,yandex.uz##div[class^="b-spec-adv"]
-yandex.by,yandex.kz,yandex.ru,yandex.uz##div[data-block="banner-view"]
-yandex.by,yandex.kz,yandex.ru,yandex.uz#?#.page__result .typo:-abp-contains(/^новости партн/i)
-yandex.by,yandex.kz,yandex.ru,yandex.uz#?#html[class*=" Theme_color_news-"] div[class*="_type_native"] [class*="_type_card"]:-abp-has(> div > div:empty)
-yandex.ru##ymaps > div[class^="search-placemark-layout-connect_advert"]
-yandex.ru##ymaps > div[class^="search-placemark-layout-connect_special"]
+yandex.ru,yandex.*##.b-direct
+yandex.ru,yandex.*##[id*="R-I-"][style*="height:"]:empty
+yandex.ru,yandex.*##div[class^="b-spec-adv"]
+yandex.ru,yandex.*##div[data-block="banner-view"]
+yandex.ru,yandex.*##ymaps > div[class^="search-placemark-layout-connect_advert"]
+yandex.ru,yandex.*##ymaps > div[class^="search-placemark-layout-connect_special"]
+yandex.ru,yandex.*#?#.page__result .typo:-abp-contains(/^новости партн/i)
+yandex.ru,yandex.*#?#html[class*=" Theme_color_news-"] div[class*="_type_native"] [class*="_type_card"]:-abp-has(> div > div:empty)
 ! Яндекс.Афиша
 afisha.yandex.ru,afisha.yandex.*##.afisha-profit-banner
 ! Яндекс.Видео
@@ -27814,8 +27817,9 @@ study.ru##.header-inner:style(height: 94px !important)
 surl.li###redirect-button > #timer
 surl.li##.redirect-button:style(pointer-events: auto !important; opacity: 1 !important)
 ! ---
-tapochek.net##.lenta-tooltips-container > .tooltip-container:style(top: 43px !important)
 tapochek.net##.lenta_scrollable.poster:style(border: none !important)
+! исправление ошибок и косяков оригинальной вёрстки
+tapochek.net##.lenta-tooltips-container > .tooltip-container:style(top: 43px !important; position: fixed !important)
 ! ---
 tass.ru##aside > div[class^="NavPanel_nav"]:style(width: unset !important)
 tass.ru##div[class^="LoopChannelLayout_widget"] > div[class^="SimpleCaption_wrapper"]:style(background: none !important)
@@ -28915,7 +28919,7 @@ ya.ru,yandex.*##.simple-popup__overlay:remove()
 ||yandex.ru/ads/system/context.js$script,redirect=noopjs,domain=tragtorr.in|tragtorr.info
 ||yastatic.net/s3/home-static/feeds/$third-party
 ||youtube-nocookie.com/embed/*autoplay=1$subdocument,removeparam=autoplay,domain=weukraine.tv
-||youtube.com/embed/*autoplay=1$subdocument,removeparam=autoplay,domain=~kinoafisha.info|~pikabu.ru
+||youtube.com/embed/*autoplay=1$subdocument,removeparam=autoplay,domain=~kinoafisha.info|~pikabu.ru|~poolsuite.net
 ||youtube.com/embed/?enablejsapi=1&origin=*3dnews.*&widgetid=1$subdocument,badfilter,domain=3dnews.kz|3dnews.ru
 ! Mail.RU
 mail.ru###grid div[class^="feed__"]:remove()
