@@ -1,8 +1,8 @@
-diff name:ruadlist lines:120 checksum:96dde1dce1
+diff name:ruadlist lines:130 checksum:88b1c7117e
 d4 2
 a5 2
-! Last modified: Fri, 06 Jun 2025 15:27:43 +0000
-! Diff-Path: ../patches/2025.6.6.927.patch#ruadlist
+! Last modified: Fri, 06 Jun 2025 20:30:38 +0000
+! Diff-Path: ../patches/2025.6.6.1230.patch#ruadlist
 a3991 1
 ||multicolored-carry.com^$third-party
 d10365 1
@@ -12,14 +12,22 @@ d11300 1
 d15800 1
 a15800 1
 apostrophe.ua,bitcryptonews.ru,news.ru,ogolosha.ua,turizm.ru##.bnr
+a17060 1
+vuzopedia.ru##.mainReclame
 d18619 1
 a18619 1
 lenkino.adult,yalenkino.org##.vb-spt
+a18690 1
+vuzopedia.ru##.vsplyvOkno
 a18976 1
 cq.ru##[class*="grid"] > a[href*="playerok"]
 d19495 1
 a19495 1
 joyreactor.cc##a[href*="://candy"]
+a19543 1
+vuzopedia.ru##a[href*="?erid="]
+a19847 1
+vuzopedia.ru##a[href^="/adverInfo/"]
 a20725 1
 cursorinfo.co.il##div[class^="atf_"][class*="_news"]
 d20974 1
@@ -90,6 +98,8 @@ yandex.ru,yandex.*##ymaps > div[class^="search-placemark-layout-connect_advert"]
 yandex.ru,yandex.*##ymaps > div[class^="search-placemark-layout-connect_special"]
 yandex.ru,yandex.*#?#.page__result .typo:-abp-contains(/^новости партн/i)
 yandex.ru,yandex.*#?#html[class*=" Theme_color_news-"] div[class*="_type_native"] [class*="_type_card"]:-abp-has(> div > div:empty)
+a26297 1
+vuzopedia.ru###fab
 a27259 1
 www.kinopoisk.ru##div[class*="styles_middleContainer"] > div[class]:first-child:style(min-height: 0 !important)
 a27267 1
