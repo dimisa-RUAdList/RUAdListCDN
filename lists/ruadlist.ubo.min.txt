@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 10 Jun 2025 14:30:46 +0000
-! Diff-Path: ../patches/2025.6.10.870.patch#ruadlist
+! Last modified: Tue, 10 Jun 2025 19:22:28 +0000
+! Diff-Path: ../patches/2025.6.10.1162.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -12671,6 +12671,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||prk.city/foto/bnr/
 ||pro.berdyansk.biz/img/pic/$image
 ||pro100news.info/wp-content/uploads/$object
+||proagro.com.ua/wp-content/uploads*/proagro_background$image
 ||proagro.com.ua/wp-content/uploads/*/proagro-1920x$image
 ||proagro.com.ua/wp-content/uploads/*1920h1080.$image
 ||procompsoft.ru/wp-content/cache/min/1/js/
@@ -18860,6 +18861,7 @@ telestrekoza.com##.xoxo.blogroll
 pornoham.net##.xpwt_video-spots-col
 tvernews.ru##.y_dzen
 macilove.com##.ya-candy
+vokrug.tv##.ya-dzen
 infox.ru##.ya-invite-block
 u-f.ru##.ya-news
 bestpersons.ru##.ya-partner_ads-up > *
@@ -27284,7 +27286,7 @@ www.kinopoisk.ru##div[data-type="teaserspec"]
 www.kinopoisk.ru##div[style="min-width: 1px;"]:style(min-height: 0 !important)
 www.kinopoisk.ru##div[style="min-width:1px"]:style(min-height: 0 !important)
 ! правила для обфусцированной версии
-www.kinopoisk.ru###modal-root > [class^="styles_root_"] ~ div:not([class^="styles_modal_"])
+www.kinopoisk.ru###modal-root > [class^="styles_root_"] ~ div:not([class^="styles_modal_"]):not([class^="styles_overlay_"])
 www.kinopoisk.ru##.app__page > div[class*="-container_"]:not([class*="media"]):not([class*="content"]):first-child
 www.kinopoisk.ru##.desktop-layout-with-sidebar__middle > .desktop-layout-with-sidebar__wrapper > div[class*="-container_"]:not([class*="kinopoisk"]):first-child
 www.kinopoisk.ru##.media-post-page > div[class*="-container_"]:not([class*="media"]):first-child
@@ -28495,7 +28497,7 @@ phys-kids.com##+js(abort-on-property-write, fetch)
 gamemag.ru##+js(abort-on-property-write, keepAdblock)
 kakprosto.ru##+js(abort-on-property-write, window.yaProxy)
 tvzvezda.ru##+js(abort-on-stack-trace, Object.prototype.autoplay, assets)
-vk.com,vk.ru##+js(abort-on-stack-trace, Object.prototype.copyErid, /feed|set/)
+vk.com,vk.ru##+js(abort-on-stack-trace, Object.prototype.dispatcher, /feed|set/)
 ya.ru##+js(abort-on-stack-trace, Object.prototype.loadAdvertScriptMode, /yastatic\.net/)
 shadowcore.ru##+js(abort-on-stack-trace, document.createElement, checkAboba)
 ai-next.ru##+js(abort-on-stack-trace, document.getElementById, /723-|ai-2-/)
@@ -28672,7 +28674,6 @@ joyreactor.cc,reactor.cc##+js(set-attr, video, controls, true)
 3dnews.kz,3dnews.ru##+js(set-attr, video[controls="controls"], controls, true)
 peers.tv##+js(set-constant, ADV_DISABLED, true)
 www.ukr.net##+js(set-constant, Clicks._test_meta_referer, null)
-~cloud.vk.com,~m.vk.com,~m.vk.ru,vk.com,vk.ru##+js(set-constant, Element.prototype.attachShadow, noopFunc)
 ivi.ru##+js(set-constant, Object.prototype.AdvObject, noopFunc)
 ictv.ua,inter.ua,k1.ua,novy.tv,ntn.ua,starlight.digital,stb.ua,teleportal.ua##+js(set-constant, Object.prototype.AdvertisementManager, undefined)
 player.vgtrk.com##+js(set-constant, Object.prototype.IS_CHECK_REGISTRATION, false)
