@@ -1,8 +1,8 @@
-diff name:ruadlist lines:54 checksum:55b7140b86
+diff name:ruadlist lines:61 checksum:5676db3002
 d4 2
 a5 2
-! Last modified: Fri, 13 Jun 2025 07:27:06 +0000
-! Diff-Path: ../patches/2025.6.13.447.patch#ruadlist
+! Last modified: Fri, 13 Jun 2025 12:56:05 +0000
+! Diff-Path: ../patches/2025.6.13.776.patch#ruadlist
 a8966 1
 ~pari.ru##a[href^="https://pari.ru/promo/"]
 a9089 1
@@ -26,7 +26,7 @@ a18860 1
 vokrug.tv##.ya-dzen
 d19555 1
 a19555 1
-hentailib.me,hentailib.org,mangalib.me,mangalib.org,ranobelib.me,vuzopedia.ru##a[href*="?erid="]
+anilib.me,animelib.org,hentailib.me,hentailib.org,mangalib.me,mangalib.org,ranobelib.me,vuzopedia.ru##a[href*="?erid="]
 d22112 1
 a22112 1
 ||pikabu.ru/ajax/*?M57fg=$xmlhttprequest
@@ -46,9 +46,16 @@ a22954 1
 ||cpa-elements.rambler.ru/*/sdk.js
 a24481 1
 ||old.fx.co^$third-party
+a26587 2
+anilib.me,animelib.org,hentailib.me,hentailib.org,slashlib.me,yaoilib.net##img[src*="/uploads/"]:style(filter: none !important)
+! ---
+d27099 2
 d27285 1
 a27285 1
 www.kinopoisk.ru###modal-root > [class^="styles_root_"] ~ div:not([class^="styles_modal_"]):not([class^="styles_overlay_"])
+a27986 2
+vuzopedia.ru##img[src*="/storage/app/resources/"][style*="blur"]:style(filter: none !important)
+! ---
 d28496 1
 a28496 1
 vk.com,vk.ru##+js(abort-on-stack-trace, Object.prototype.dispatcher, /feed|set/)

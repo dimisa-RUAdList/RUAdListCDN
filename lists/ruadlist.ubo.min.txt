@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 13 Jun 2025 07:27:06 +0000
-! Diff-Path: ../patches/2025.6.13.447.patch#ruadlist
+! Last modified: Fri, 13 Jun 2025 12:56:05 +0000
+! Diff-Path: ../patches/2025.6.13.776.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -19558,7 +19558,7 @@ livesport.ru##a[href*="://www.livesport.ru/away"]
 uaprom.info##a[href*="://www.wem.ua"]
 drive2.com,drive2.ru##a[href*="://yabs.yandex.ru/count/"]
 gamer-info.com##a[href*="=http"]:not([target])
-hentailib.me,hentailib.org,mangalib.me,mangalib.org,ranobelib.me,vuzopedia.ru##a[href*="?erid="]
+anilib.me,animelib.org,hentailib.me,hentailib.org,mangalib.me,mangalib.org,ranobelib.me,vuzopedia.ru##a[href*="?erid="]
 mauforum.ru##a[href*="?partner"]
 itorrents-igruha.net,itorrents-igruha.org##a[href*="BlumCryptoBot"]
 stratege.ru##a[href*="_click?id="]
@@ -26599,6 +26599,8 @@ anidub.vip,anidubonline.com##.sticky-wrap:style(position: relative !important)
 anidub.vip,anidubonline.com##.wrap > .popular:style(visibility: visible !important)
 anidub.vip,anidubonline.com##main > .wrap-center:style(margin-left: auto !important; margin-right: auto !important)
 ! ---
+anilib.me,animelib.org,hentailib.me,hentailib.org,slashlib.me,yaoilib.net##img[src*="/uploads/"]:style(filter: none !important)
+! ---
 anilib.moe,anilib.one,anilib.top,anilibria.iss.one,anilibria.tv##.new-header
 ! ---
 anime-naruto.ru,blich.ru,borutoplanet.ru,bungou-stray-dogs.ru,doktor-stoun.ru,haikyu.ru,hunter-x-hunter.ru,klinok-rassekayuschiy-demonov.ru,magicheskaya-bitva.ru,my-hero-academia.ru,one-pieces.ru,reinkarnatsiya-bezrabotnogo.ru,tokiyskie-mstiteli.ru##.home:style(padding-top: 0 !important)
@@ -27109,8 +27111,6 @@ hellomagazine.com##.footer:style(position: relative !important)
 hentai-share.one##.main .header:style(padding-top: 94px !important)
 hentai-share.one##.showfull .header:style(padding-top: 60px !important)
 hentai-share.one##img[src]:style(filter: none !important)
-! ---
-hentailib.me,hentailib.org,slashlib.me,yaoilib.net##img[src*="/uploads/"]:style(filter: none !important)
 ! ---
 hentaiz.org##.short-poster > img:style(filter: none !important; -webkit-filter: none !important)
 ! ---
@@ -27997,6 +27997,8 @@ vtb-league.com##body.home:style(overflow: auto !important)
 ! ---
 vtimes.io##body:style(position: unset !important)
 vtimes.io##div[class^="cookies-modal"]
+! ---
+vuzopedia.ru##img[src*="/storage/app/resources/"][style*="blur"]:style(filter: none !important)
 ! ---
 warfiles.ru###header + .banner:style(height: 100px !important)
 ! ---

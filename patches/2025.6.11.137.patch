@@ -1,8 +1,8 @@
-diff name:ruadlist lines:36 checksum:55b7140b86
+diff name:ruadlist lines:43 checksum:5676db3002
 d4 2
 a5 2
-! Last modified: Fri, 13 Jun 2025 07:27:06 +0000
-! Diff-Path: ../patches/2025.6.13.447.patch#ruadlist
+! Last modified: Fri, 13 Jun 2025 12:56:05 +0000
+! Diff-Path: ../patches/2025.6.13.776.patch#ruadlist
 d9346 1
 a9988 1
 rg.ru###cookie-consent
@@ -18,7 +18,7 @@ a15138 1
 investsocial.com##.adsection
 d19559 1
 a19559 1
-hentailib.me,hentailib.org,mangalib.me,mangalib.org,ranobelib.me,vuzopedia.ru##a[href*="?erid="]
+anilib.me,animelib.org,hentailib.me,hentailib.org,mangalib.me,mangalib.org,ranobelib.me,vuzopedia.ru##a[href*="?erid="]
 a22811 1
 pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net###main-nav a[target="_blank"]
 a22827 1
@@ -35,3 +35,10 @@ a22958 1
 ||cpa-elements.rambler.ru/*/sdk.js
 a24485 1
 ||old.fx.co^$third-party
+a26591 2
+anilib.me,animelib.org,hentailib.me,hentailib.org,slashlib.me,yaoilib.net##img[src*="/uploads/"]:style(filter: none !important)
+! ---
+d27103 2
+a27989 2
+! ---
+vuzopedia.ru##img[src*="/storage/app/resources/"][style*="blur"]:style(filter: none !important)
