@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 14 Jun 2025 13:32:57 +0000
-! Diff-Path: ../patches/2025.6.14.812.patch#ruadlist
+! Last modified: Sat, 14 Jun 2025 18:34:29 +0000
+! Diff-Path: ../patches/2025.6.14.1114.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10128,6 +10128,7 @@ my.rv.ua##.spu-box
 lolzona.ru##.stb-container
 sravni.ru##.subscription-popup
 liga.net##.swal2-backdrop-show
+gamestatus.info##.telegram-follow-popup
 sputnikipogrom.com##.tp-overlay
 povar.ru##.vk.soc-banner
 blogspot.ru##.widget-content > #overlay
@@ -11448,6 +11449,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||engine.24gadget.ru/
 ||envybox.io^$domain=globuslife.ru
 ||epidemz.net/bank/
+||eponesh.com/files/gs/scrg/hsm-creative-manager.js
 ||eragun.org/js/ae*.js|$script
 ||eralady.ru/ads.js
 ||ero-top.info/uploads/banner
@@ -15111,7 +15113,7 @@ ua.today##.admix
 promigren.ru##.adp-block
 asiaplustj.info,news.tj##.adredirector
 cn.ru,ittour.com.ua##.adriver
-024.by,1927.kiev.ua,allnews.kz,bigpicture.ru,chatadelic.net,coderoad.ru,day.az,dumka.poltava.ua,euromd.com.ua,football-fun.ru,fotokto.ru,gagadget.com,gameme.eu,gotoshop.ua,gs.by,gsconto.com,hotzoom.net,icons8.ru,infoniac.ru,jooble.org,jooble.ua,kinoafisha.info,klubok.com,like-film.online,malenkiy.ru,mangalib.me,meta.ua,my-calend.ru,novostiplanety.ru,orl.ec,podrobnosti.ua,savevideo.me,scooter-remont.com,seasonvar24.com,sexytales.org,soccer.ru,sports.kz,takprosto.cc,timeout.ru,tvsezon.com,ura.news,world-knigi.ru##.ads
+024.by,1927.kiev.ua,allnews.kz,aviaforum.ru,bigpicture.ru,chatadelic.net,coderoad.ru,day.az,dumka.poltava.ua,euromd.com.ua,football-fun.ru,fotokto.ru,gagadget.com,gameme.eu,gotoshop.ua,gs.by,gsconto.com,hotzoom.net,icons8.ru,infoniac.ru,jooble.org,jooble.ua,kinoafisha.info,klubok.com,like-film.online,malenkiy.ru,mangalib.me,meta.ua,my-calend.ru,novostiplanety.ru,orl.ec,podrobnosti.ua,savevideo.me,scooter-remont.com,seasonvar24.com,sexytales.org,soccer.ru,sports.kz,takprosto.cc,timeout.ru,tvsezon.com,ura.news,world-knigi.ru##.ads
 24smi.org##.ads-headline
 tarkov-market.com##.ads-horiz
 orl.ec##.ads-inner-top
@@ -15963,11 +15965,14 @@ kinobanda.net##.buyframe
 carsweek.ru##.bx-composite-btn
 electroandi.ru##.bybit
 tsn.ua##.c-aside__port
+drive2.com,drive2.ru#?#.c-block:-abp-has(> .c-dv-label)
 vsplanet.net##.c-center > .cols ~ *
 drive2.ru##.c-darkening-hover-container ~ :not(.c-darkening-hover-container) > div[id]
+drive2.com,drive2.ru##.c-dv-label
 drive2.ru##.c-dv-p
-drive2.com##.c-dv-sns
+drive2.com,drive2.ru##.c-dv-sns
 dsnews.ua#?#.c-feed__list-item:-abp-has(> .c-feed__item > .c-r)
+drive2.com,drive2.ru#?#.c-header:-abp-contains(/Ads|Реклама/)
 vsplanet.net##.c-left > .block ~ *
 telegraf.com.ua#?#.c-post__content > div:-abp-has(> [id^="_vidverto-"])
 delo.ua,dsnews.ua,focus.ua##.c-r
@@ -17374,6 +17379,7 @@ cardiologiya.com,omastopatii.ru##.offblo
 dermatitanet.ru##.offer-ac
 gagadget.com##.offers-index
 agro-biz.ru,ecology-of.ru##.offersblock
+gamestatus.info##.offline-act-banner
 lostfilm.download,lostfilm.life,lostfilm.one,lostfilm.pro,lostfilm.space,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv5.site##.oi_papa_oi
 myshows.me##.okko
 disput.az##.okus_top
@@ -20083,6 +20089,7 @@ barneos22.ru##a[href^="https://barneos22.ru/go/"]
 sitepokupok.ru##a[href^="https://citycard.ru/lucky"]
 program-pro.ru##a[href^="https://cryptocandle.ru"]
 biqle.org,biqle.ru##a[href^="https://daftsex.github.io/"]
+gamestatus.info##a[href^="https://denuvo.net"]
 pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##a[href^="https://denuvo.net/"]
 pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##a[href^="https://gamesell.org/"]
 www.film.ru##a[href^="https://hochuvkino.ru"]
@@ -22811,6 +22818,7 @@ forums.overclockers.ru#?#table > tbody > tr:-abp-has(> [class^="profile"]:-abp-c
 ! Pornolab.NET
 pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net###banner-stub
 pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net###latest_news > div
+pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net###logo .bCenter
 pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net###main-nav a[target="_blank"]
 pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net###main_content_wrap > #latest_news > table[width="100%"] > tbody > tr > td[width="100%"] ~ *
 pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net###main_content_wrap > #latest_news > table[width="100%"] > tbody > tr ~ *
@@ -26296,6 +26304,7 @@ daz3d.ru,trialkeys.ru#@#.advblock
 dl2kq.de#@##sponsor_ad
 drahelas.ru#@#.forumAd
 draug.ru,print-post.com#@##reklama
+gamepush.com#@##text_ad
 green-way.com.ua#@#.adWrapper
 iphones.ru#@##sponsorText
 kakoysegodnyaprazdnik.ru,mmo13.ru,no-steamserv.ru,vesti.ru#@#.adv
@@ -28515,7 +28524,7 @@ shadowcore.ru##+js(abort-on-stack-trace, document.createElement, checkAboba)
 ai-next.ru##+js(abort-on-stack-trace, document.getElementById, /723-|ai-2-/)
 forums.rusmedserv.com##+js(abort-on-stack-trace, fetch, eval)
 7days.ru##+js(addEventListener-defuser, /^(?:contextmenu|keydown)$/)
-shedevrum.ai##+js(addEventListener-defuser, /beforeunload|pagehide/, 0x)
+drive2.ru,shedevrum.ai##+js(addEventListener-defuser, /beforeunload|pagehide/, 0x)
 fastpic.org,~new.fastpic.org##+js(addEventListener-defuser, /click|load/, popMagic)
 biqle.org,biqle.ru##+js(addEventListener-defuser, /click|mousedown/, popunder)
 fm-app.ru,tvapp.su,yootv.ru##+js(addEventListener-defuser, /mouse/, cursorVisible)
@@ -28551,6 +28560,7 @@ ritsatv.ru##+js(alert-buster)
 comedy-radio.ru,kufar.by,radioromantika.ru,relax-fm.ru,rg.ru,sm.news,ura.news,veseloeradio.ru##+js(cookie-remover, /^bda|^bltsr/)
 ~passport.yandex.by,~passport.yandex.kz,~passport.yandex.ru,~passport.yandex.uz,yandex.by,yandex.kz,yandex.ru,yandex.uz##+js(cookie-remover, /^bltsr$|^JPIqApiY$|^specific$|^substantial$/)
 yapx.ru##+js(cookie-remover, /adblock_/)
+drive2.ru##+js(cookie-remover, hurricane)
 24smi.org##+js(cookie-remover, isab)
 shedevrum.ai##+js(cookie-remover, shedevrum-aab)
 kakprosto.ru##+js(cookie-remover, yadb)
@@ -28622,7 +28632,7 @@ strategium.ru##+js(no-setTimeout-if, adblock)
 fonmod.com##+js(no-setTimeout-if, ai_adb)
 aqicn.org##+js(no-setTimeout-if, alert, 15000)
 tragtorr.in,tragtorr.info##+js(no-setTimeout-if, antyadb, 5000)
-www.kinopoisk.ru##+js(no-setTimeout-if, blocker)
+drive2.ru,www.kinopoisk.ru##+js(no-setTimeout-if, blocker)
 limehd.tv,litehd.tv,pervyi-tv.online,russia-tv.online##+js(no-setTimeout-if, clientHeight, 2000)
 tv-kanali.online##+js(no-setTimeout-if, doAd)
 tradingview.com##+js(no-setTimeout-if, evercookie, 300000)

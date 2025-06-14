@@ -1,13 +1,17 @@
-diff name:ruadlist lines:54 checksum:feaa01b323
+diff name:ruadlist lines:85 checksum:d150b89928
 d4 2
 a5 2
-! Last modified: Sat, 14 Jun 2025 13:32:57 +0000
-! Diff-Path: ../patches/2025.6.14.812.patch#ruadlist
+! Last modified: Sat, 14 Jun 2025 18:34:29 +0000
+! Diff-Path: ../patches/2025.6.14.1114.patch#ruadlist
 d9346 1
 a9988 1
 rg.ru###cookie-consent
+a10130 1
+gamestatus.info##.telegram-follow-popup
 a10672 1
 /main_widget-*-promo.$domain=fx.co
+a11449 1
+||eponesh.com/files/gs/scrg/hsm-creative-manager.js
 a11597 1
 ||fx.co/*/popup/popup.
 d12268 1
@@ -16,14 +20,31 @@ a12673 1
 d12825 1
 a12825 1
 ||rt.com/scripts/adfox/
+d15112 1
+a15112 1
+024.by,1927.kiev.ua,allnews.kz,aviaforum.ru,bigpicture.ru,chatadelic.net,coderoad.ru,day.az,dumka.poltava.ua,euromd.com.ua,football-fun.ru,fotokto.ru,gagadget.com,gameme.eu,gotoshop.ua,gs.by,gsconto.com,hotzoom.net,icons8.ru,infoniac.ru,jooble.org,jooble.ua,kinoafisha.info,klubok.com,like-film.online,malenkiy.ru,mangalib.me,meta.ua,my-calend.ru,novostiplanety.ru,orl.ec,podrobnosti.ua,savevideo.me,scooter-remont.com,seasonvar24.com,sexytales.org,soccer.ru,sports.kz,takprosto.cc,timeout.ru,tvsezon.com,ura.news,world-knigi.ru##.ads
 a15137 1
 investsocial.com##.adsection
+a15962 1
+drive2.com,drive2.ru#?#.c-block:-abp-has(> .c-dv-label)
+a15964 1
+drive2.com,drive2.ru##.c-dv-label
+d15966 1
+a15966 1
+drive2.com,drive2.ru##.c-dv-sns
+a15967 1
+drive2.com,drive2.ru#?#.c-header:-abp-contains(/Ads|Реклама/)
+a17373 1
+gamestatus.info##.offline-act-banner
 a18862 1
 vokrug.tv##.ya-dzen
 d19557 1
 a19557 1
 anilib.me,animelib.org,hentailib.me,hentailib.org,mangalib.me,mangalib.org,ranobelib.me,vuzopedia.ru##a[href*="?erid="]
-a22809 1
+a20081 1
+gamestatus.info##a[href^="https://denuvo.net"]
+a22809 2
+pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net###logo .bCenter
 pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net###main-nav a[target="_blank"]
 a22825 1
 pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net##[src*="pornolab.net/004/"]
@@ -39,6 +60,8 @@ a22956 1
 ||cpa-elements.rambler.ru/*/sdk.js
 a24483 1
 ||old.fx.co^$third-party
+a26286 1
+gamepush.com#@##text_ad
 a26589 2
 anilib.me,animelib.org,hentailib.me,hentailib.org,slashlib.me,yaoilib.net##img[src*="/uploads/"]:style(filter: none !important)
 ! ---
@@ -52,4 +75,12 @@ vuzopedia.ru##img[src*="/storage/app/resources/"][style*="blur"]:style(filter: n
 d28498 1
 a28498 1
 vk.com,vk.ru##+js(abort-on-stack-trace, Object.prototype.dispatcher, /feed|set/)
+d28504 1
+a28504 1
+drive2.ru,shedevrum.ai##+js(addEventListener-defuser, /beforeunload|pagehide/, 0x)
+a28539 1
+drive2.ru##+js(cookie-remover, hurricane)
+d28611 1
+a28611 1
+drive2.ru,www.kinopoisk.ru##+js(no-setTimeout-if, blocker)
 d28675 1
