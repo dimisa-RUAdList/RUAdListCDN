@@ -1,8 +1,16 @@
-diff name:ruadlist lines:36 checksum:ede1c1f3bc
+diff name:ruadlist lines:94 checksum:3215a29daf
 d4 2
 a5 2
-! Last modified: Sun, 15 Jun 2025 09:27:09 +0000
-! Diff-Path: ../patches/2025.6.15.567.patch#ruadlist
+! Last modified: Sun, 15 Jun 2025 14:25:52 +0000
+! Diff-Path: ../patches/2025.6.15.865.patch#ruadlist
+a5336 1
+||rugfrfji.win^$third-party
+d8193 1
+a8193 1
+/wcm/?sh=$third-party,script,xmlhttprequest
+d10078 1
+a10078 1
+championat.com,championat.ru##.cookie-popup
 a10130 1
 gamestatus.info##.telegram-follow-popup
 a11450 1
@@ -23,10 +31,57 @@ a17376 1
 gamestatus.info##.offline-act-banner
 a20085 1
 gamestatus.info##a[href^="https://denuvo.net"]
+d22110 1
+a22110 1
+@@||ssp.rambler.ru/capirs_async.js|$script,domain=www.championat.com|www.championat.ru
+a22112 1
+||captcha-api.yandex.ru^$domain=drive2.ru
 a22813 1
 pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net###logo .bCenter
+d22861 1
+a22861 1
+championat.com,championat.ru##.adv-mark
+d22865 1
+a22865 1
+championat.com,championat.ru,gazeta.ru,lenta.ru##.banner
+d22867 2
+a22868 2
+championat.com,championat.ru##.banner-announce
+championat.com,championat.ru##.banner-parallax
+d22877 4
+a22880 4
+championat.com,championat.ru##.game-of-day
+championat.com,championat.ru##.header-bottom__adv
+championat.com,championat.ru##.infographic-countdown
+championat.com,championat.ru##.infographic-duel
+d22885 1
+a22885 1
+championat.com,championat.ru##.recommender-block ~ .banner + div:not([class*="comments"])
+d22888 2
+a22889 2
+championat.com,championat.ru##.stat-widget__banner
+championat.com,championat.ru##.stat-widget__header
+d22897 3
+a22899 3
+championat.com,championat.ru##[data-goal-label="coeff_fonbet"]
+championat.com,championat.ru##[data-href*="okko.sport"]
+championat.com,championat.ru##[data-href*="utm_"]
+d22918 2
+a22919 2
+championat.com,championat.ru##a[href*="offer_id="]
+championat.com,championat.ru,lenta.ru##a[href*="okko.sport"]
+d22966 1
+a22966 1
+||championat.*/embeds/custom.css
+d22969 1
+a22969 1
+||img.championat.*/brand/*.png
 a26298 1
 gamepush.com#@##text_ad
+d26786 2
+a26787 2
+championat.com,championat.ru##.page-sidebar > .sticky-vertical:style(position: relative !important; top: 0 !important)
+championat.com,championat.ru##html:not(#id):style(padding-top: 0 !important)
 d28518 1
 a28518 1
 drive2.ru,shedevrum.ai##+js(addEventListener-defuser, /beforeunload|pagehide/, 0x)
@@ -35,3 +90,6 @@ drive2.ru##+js(cookie-remover, hurricane)
 d28625 1
 a28625 1
 drive2.ru,www.kinopoisk.ru##+js(no-setTimeout-if, blocker)
+d29077 1
+a29077 1
+||vp.rambler.ru/player/$csp=media-src 'self',domain=championat.com|championat.ru|lenta.ru|gazeta.ru|rambler.ru|~vp.rambler.ru|secretmag.ru|wmj.ru
