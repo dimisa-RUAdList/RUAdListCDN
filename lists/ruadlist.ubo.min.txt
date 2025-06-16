@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 16 Jun 2025 15:30:54 +0000
-! Diff-Path: ../patches/2025.6.16.930.patch#ruadlist
+! Last modified: Mon, 16 Jun 2025 20:30:43 +0000
+! Diff-Path: ../patches/2025.6.16.1230.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -28555,7 +28555,7 @@ opennet.me,opennet.ru##+js(href-sanitizer, a[href*="://click.opennet.ru/cgi-bin/
 appleinsider.ru##+js(href-sanitizer, a[href*="?goto=https"], ?goto)
 kluchikipro.ru##+js(href-sanitizer, a[href*="deeplink="], ?deeplink)
 lifehacker.ru##+js(href-sanitizer, a[href][rel*="sponsored"][target="_blank"], ?goto)
-hot.game##+js(href-sanitizer, a[href][target="_blank"][rel="nofollow"], ?ulp)
+hot.game##+js(href-sanitizer, a[href][target="_blank"], ?ulp)
 www.ixbt.com##+js(href-sanitizer, a[href^="//www.ixbt.com/click/?c="], [title])
 wotspeak.org##+js(href-sanitizer, a[href^="/engine/dwn"], ?xf)
 vc.ru##+js(href-sanitizer, a[href^="https://go.2038.pro/"][href*="?dl="], ?dl)
