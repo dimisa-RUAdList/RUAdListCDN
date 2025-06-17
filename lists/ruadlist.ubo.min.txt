@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 17 Jun 2025 06:39:57 +0000
-! Diff-Path: ../patches/2025.6.17.399.patch#ruadlist
+! Last modified: Tue, 17 Jun 2025 11:24:17 +0000
+! Diff-Path: ../patches/2025.6.17.684.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -12529,7 +12529,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||partner.komedra.com/
 ||partner.labirint.ru^$third-party,domain=rutlib.com
 ||partner.uhty-multy.ru/
-||partnerkin.com/uploads/resb/
+||partnerkin.com/*/resb
 ||partners.walla.co.il^$domain=mignews.com
 ||passus.ru/test-widget/
 ||patria.md/i/partners/
@@ -15672,6 +15672,7 @@ kabar.kg##.belta-informer
 sport.ua##.best_bookies
 zbirna.com##.best_game_sec
 aldebaran.ru##.best_sellers
+partnerkin.com##.bests_block
 fightnews.info##.bet
 allhockey.ru##.bet-wrap
 vesti.kz##.betconest
@@ -18312,6 +18313,7 @@ za4eti.ru##.stl_d3 [class^="stl_"],.stl_d3 [class^="stl_"] + br
 infox.ru#?#.stlt:-abp-contains(Реклама)
 igry-man.net##.stockgame
 gdz.ru##.store-hosting
+pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__main .story__promo)
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__main > [id])
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__placeholder)
 pikabu.ru#?#.stories-feed__container > .story:-abp-has([class*="sponsor"])
@@ -22099,7 +22101,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||news.mail.ru/-/*.js?
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
-||pikabu.ru/ajax/*?M58fg=$xmlhttprequest
+||pikabu.ru/ajax/*?Ng6w7=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
