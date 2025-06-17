@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 17 Jun 2025 16:36:40 +0000
-! Diff-Path: ../patches/2025.6.17.996.patch#ruadlist
+! Last modified: Tue, 17 Jun 2025 21:26:48 +0000
+! Diff-Path: ../patches/2025.6.17.1286.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10405,7 +10405,6 @@ $xmlhttprequest,domain=happy-biock.info|happy-block.info|howto-news.info|mschist
 .calculat.ru$script,domain=calculat.ru
 .chinimavto.ru^$script,domain=chinimavto.ru
 .chto-proishodit.ru^$script,domain=chto-proishodit.ru
-.com-x.life^$script
 .creativportal.ru^$domain=creativportal.ru
 .diversant-club.ru^$script
 .dnevniki-vampira.net^$script,domain=dnevniki-vampira.net
@@ -26354,6 +26353,7 @@ trupornolabs.org##.header > .red
 wowhead.com##.is-atf.horizontal-bg
 wowhead.com##.is-atf.vertical-bg
 wowhead.com##.is-btf.horizontal-bg
+com-x.life##.jquery-error
 retail.ru##.markup__b2
 retail.ru##.markup__c1
 retail.ru##.markup__p1
@@ -26780,6 +26780,8 @@ chita.ru##body:style(background: none !important; margin-top: 0 !important; padd
 cinema-hd.ru,doramatv.su,filmshd.vip,goodfilms.su,hdrezka.it,kinoxa.cc,lordfilm.lu,lordserial.fun,lordserial.run,lordserial.top,newseries.me,yummyanime.best##.wrap:style(padding-top: 0 !important)
 ! ---
 click-or-die.ru##a[href*="://kik.cat/"]:style(pointer-events: none !important; color: inherit !important)
+! ---
+com-x.life##.blur-image:style(filter: none !important)
 ! ---
 comments.ua##.back_bottom > *:style(pointer-events: auto !important)
 comments.ua##.back_bottom:style(cursor: auto !important)
