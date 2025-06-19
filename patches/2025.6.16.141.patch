@@ -1,8 +1,8 @@
-diff name:ruadlist lines:26 checksum:438826780f
+diff name:ruadlist lines:30 checksum:ee2629ee7c
 d4 2
 a5 2
-! Last modified: Thu, 19 Jun 2025 03:52:51 +0000
-! Diff-Path: ../patches/2025.6.19.232.patch#ruadlist
+! Last modified: Thu, 19 Jun 2025 08:36:45 +0000
+! Diff-Path: ../patches/2025.6.19.516.patch#ruadlist
 d10408 1
 d12532 1
 a12532 1
@@ -16,12 +16,16 @@ pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__main .story__pr
 d19392 15
 d22116 1
 a22116 1
-||pikabu.ru/ajax/*?x35Vl=$xmlhttprequest
+||pikabu.ru/ajax/*?bE9Hd=$xmlhttprequest
 a26368 1
 com-x.life##.jquery-error
 a26795 2
 com-x.life##.blur-image:style(filter: none !important)
 ! ---
+d27732 2
+a27733 2
+ru##[data-ns-portal] .branding[data-page] div[class^="content_"] > div[class^="bottom"]:style(max-width: 100% !important)
+ru##[data-ns-portal] .branding[data-page]:style(--grid-breakpoint-lg: unset !important; margin-top: unset !important; width: 100% !important)
 d28572 1
 a28572 1
 hot.game##+js(href-sanitizer, a[href][target="_blank"], ?ulp)
