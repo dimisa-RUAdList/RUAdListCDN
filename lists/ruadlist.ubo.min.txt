@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 20 Jun 2025 14:29:10 +0000
-! Diff-Path: ../patches/2025.6.20.869.patch#ruadlist
+! Last modified: Fri, 20 Jun 2025 19:22:18 +0000
+! Diff-Path: ../patches/2025.6.20.1162.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -27286,7 +27286,7 @@ www.kinopoisk.ru##div[class*=" styles_videoContainer"]:style(margin-top: 0 !impo
 www.kinopoisk.ru##div[class*="styles_baseContainer"] > div[class]:first-child > div[class]:first-child:style(min-height: 0 !important)
 www.kinopoisk.ru##div[class*="styles_baseContainer"] > div[class]:first-child:style(min-height: 0 !important)
 www.kinopoisk.ru##div[class*="styles_middleContainer"] > div[class]:first-child:style(min-height: 0 !important)
-www.kinopoisk.ru##div[class^="styles_adBlockWarningRoot"]
+kinopoisk.ru##div[class^="styles_adBlockWarningRoot"]
 www.kinopoisk.ru##div[class^="styles_themeTopBanner"]
 www.kinopoisk.ru##div[class^="styles_wideContentContainer"] > div[class]:first-child:style(min-height: 0 !important)
 www.kinopoisk.ru##div[class^="toaster-container"]
@@ -28763,6 +28763,7 @@ liga.net##+js(set-cookie, cookieAccepted, true)
 ixbt.com##+js(set-cookie, cookie_accept, 1)
 avito.ru##+js(set-cookie, cookie_consent_shown, 1)
 forum.ixbt.com##+js(set-cookie, ha, 1)
+hd.kinopoisk.ru,www.kinopoisk.ru##+js(set-cookie, kdetect, true)
 kufar.by##+js(set-cookie, kuf_agr, true)
 playground.ru##+js(set-cookie, pg_SuggestGameFollow, true)
 kinotv.ru##+js(set-cookie, telegram_popup, Y)

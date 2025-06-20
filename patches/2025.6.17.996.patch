@@ -1,8 +1,8 @@
-diff name:ruadlist lines:41 checksum:1b69023e01
+diff name:ruadlist lines:46 checksum:90b75dc85f
 d4 2
 a5 2
-! Last modified: Fri, 20 Jun 2025 14:29:10 +0000
-! Diff-Path: ../patches/2025.6.20.869.patch#ruadlist
+! Last modified: Fri, 20 Jun 2025 19:22:18 +0000
+! Diff-Path: ../patches/2025.6.20.1162.patch#ruadlist
 d10408 1
 a15041 1
 jut-su.skin##.abn-wrap
@@ -32,6 +32,9 @@ com-x.life##.jquery-error
 a26783 2
 com-x.life##.blur-image:style(filter: none !important)
 ! ---
+d27278 1
+a27278 1
+kinopoisk.ru##div[class^="styles_adBlockWarningRoot"]
 d27720 2
 a27721 2
 ru##[data-ns-portal] .branding[data-page] div[class^="content_"] > div[class^="bottom"]:style(max-width: 100% !important)
@@ -40,3 +43,5 @@ d28019 2
 a28020 2
 ya.ru##[id^="rythm-"]
 ya.ru##html[class*="morda"] aside ~ div[style]
+a28754 1
+hd.kinopoisk.ru,www.kinopoisk.ru##+js(set-cookie, kdetect, true)
