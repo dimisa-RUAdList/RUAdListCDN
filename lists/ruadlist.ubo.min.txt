@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 21 Jun 2025 05:28:28 +0000
-! Diff-Path: ../patches/2025.6.21.328.patch#ruadlist
+! Last modified: Sat, 21 Jun 2025 10:30:54 +0000
+! Diff-Path: ../patches/2025.6.21.630.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -19163,6 +19163,7 @@ adme.media#?#[data-test-id$="-recommended"] > div > div > div:nth-child(-n+3):-a
 russia-tv.online#?#[data-test="channel-name-link"] ~ div:-abp-has(> div > div[id^="yandex_rtb"])
 dom.ru#?#[data-test="custom-wrapper"]:-abp-has(> div > [href*="movix.ru/"])
 scores24.live##[data-testid="ExpressCouponBookmakers"]
+t-j.ru##[data-testid="banner"]
 telegraf.com.ua##[data-text^="Новини партнер"]
 my.ua##[data-top-iid]
 drive2.ru#?#[data-track]:-abp-has(> div[id]:empty + script)
@@ -22891,6 +22892,7 @@ championat.com,championat.ru##[data-href*="okko.sport"]
 championat.com,championat.ru##[data-href*="utm_"]
 motor.ru##[data-motor-desktop*="exchange_block"]
 rambler.ru##[data-news_media-desktop*="rnet_widget"]
+ferra.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,secretmag.ru,wmj.ru##[data-qa="lb-content"] ~ [data-qa="lb-footer"] ~ div
 avtorambler.com,rambler.ru##[data-rcmw-init]
 sport.rambler.ru##[data-sport_media-desktop*="rnet_widget"]
 www.afisha.ru#?#[data-test="SECTION"] > [data-test="SECTION-CONTENT"]:-abp-has(> div > [href^="/out/?url="])
