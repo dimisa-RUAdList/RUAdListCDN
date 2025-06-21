@@ -1,8 +1,17 @@
-diff name:ruadlist lines:35 checksum:2286868438
+diff name:ruadlist lines:51 checksum:7e05602e82
 d4 2
 a5 2
-! Last modified: Sat, 21 Jun 2025 15:26:42 +0000
-! Diff-Path: ../patches/2025.6.21.926.patch#ruadlist
+! Last modified: Sat, 21 Jun 2025 20:27:46 +0000
+! Diff-Path: ../patches/2025.6.21.1227.patch#ruadlist
+a3696 1
+||mbt-1.com^$third-party
+a7730 1
+&cp.host=*&cp.token=$third-party,xmlhttprequest
+a8065 1
+/player/ads.php?cp.host=$xmlhttprequest
+d14448 1
+d14843 1
+d19133 1
 a19165 1
 t-j.ru##[data-testid="banner"]
 a19445 1
@@ -11,6 +20,7 @@ a19469 1
 soccer.ru##a[href*="/odds"]
 a19737 1
 soccer.ru##a[href="/bookmakers"]
+d21064 1
 a21791 1
 vc.ru##p a[href^="https://market.yandex.ru/"]
 d22105 1
@@ -25,6 +35,9 @@ a23224 1
 a23232 2
 ya.ru##[aria-label="Информеры"] ~ [class]
 ya.ru##[style*="feed"][style*="min-height:"]
+d26261 1
+a26261 1
+@@||wambacdn.net^$script,domain=love.0629.com.ua|love.mail.ru|mamba.ru|wamba.com
 d27282 1
 a27282 1
 kinopoisk.ru##div[class^="styles_adBlockWarningRoot"]
@@ -32,5 +45,8 @@ d28023 2
 a28024 2
 ya.ru##[id^="rythm-"]
 ya.ru##html[class*="morda"] aside ~ div[style]
+d28412 1
+a28412 1
+3dnews.kz,3dnews.ru,avtovzglyad.ru,baby.ru,cont.ws,dni.ru,pikabu.ru,pogoda.onliner.by,selflib.me,sm.news,sports.ru,tech.onliner.by,www.goha.ru##+js(abort-on-property-read, Ya)
 a28758 1
 hd.kinopoisk.ru,www.kinopoisk.ru##+js(set-cookie, kdetect, true)
