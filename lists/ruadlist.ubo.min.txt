@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 23 Jun 2025 07:29:23 +0000
-! Diff-Path: ../patches/2025.6.23.449.patch#ruadlist
+! Last modified: Mon, 23 Jun 2025 12:58:39 +0000
+! Diff-Path: ../patches/2025.6.23.778.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -11188,7 +11188,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||buhoblik.org.ua/images/banners/*/banner$image
 ||buhonline.ru^*/banners.
 ||buhonline.ru^*/lazy-side-banner.
-||bumaikr.com^$subdocument,domain=3dnews.kz|3dnews.ru
+||bumaikr.com^$subdocument,domain=3dnews.ru
 ||burdastyle.ru/aff/$image
 ||business-class.su/uploads/rennab/
 ||business-poisk.com/wp-content/uploads^*/banner$image
@@ -14249,7 +14249,7 @@ oper.ru#?##left li:-abp-has(a[href*="//wink."])
 oper.ru#?##left li:-abp-has(a[href*="://opershop.ru"])
 rabota.kharkov.ua###left-banners
 questtime.net###left-bot
-3dnews.kz,3dnews.ru###left-sidebar > .sidebar-chunk.mid:not(.strong)
+3dnews.ru###left-sidebar > .sidebar-chunk.mid:not(.strong)
 gk-press.if.ua###left-sidebar > .widget_text
 mosgorzdrav.ru###left_banners > a[href="http://sod.mos.ru"]
 pesni-tut.com###left_block > div:not([id]):not([class])
@@ -16264,7 +16264,7 @@ darkwebs.ws##.darkrek
 obrkarta.ru##.data-banner > #brunch
 obrkarta.ru##.data-banner > #zarniza
 kirovnet.ru##.data-place
-3dnews.kz,3dnews.ru##.dc_promo
+3dnews.ru##.dc_promo
 optimistt.ru##.dcont .b_center
 fc-zenit.ru##.ddb-adv
 dermatitanet.ru##.ddd
@@ -18688,7 +18688,7 @@ baby.ru##.viqeo-embed
 virus-stop.com.ua##.virus-widget
 modernfirearms.net##.visible-lg .widget_text
 sochi24.tv##.visit-url
-3dnews.kz,3dnews.ru##.vivo-wide
+3dnews.ru##.vivo-wide
 pornbase.info##.vjs-inplayer-container
 api-video.khl.ru##.vjs-link_view-yandex-plus
 sovetromantica.com##.vjs-overlay-background
@@ -18896,7 +18896,7 @@ news.soundex.ru##.yjround_in > br
 zpravda.ru##.yjsquare.zpravda
 prosound.ixbt.com##.ym-gbox-right > div[style="margin:0; padding:0"][align="center"]
 pravda.com.ua##.ym-video--wrapper
-3dnews.kz,3dnews.ru,irecommend.ru##.ymarket-affiliate-widget
+3dnews.ru,irecommend.ru##.ymarket-affiliate-widget
 androeed.ru##.you_a
 sinonim.org##.youtube
 tonkosti.ru##.youtube-lm-trailer
@@ -20163,7 +20163,7 @@ lostfilm.info##a[title="LostFilm.INFO"] > div[style*="height"]
 rg.ru##a[title="Дзен"]
 radiotrek.rv.ua##a[title="Реклама"]
 ixbt.com##a[title="Яндекс Зен"]
-3dnews.kz,3dnews.ru##a[title^="3DNews"][title*="Дзен"]
+3dnews.ru##a[title^="3DNews"][title*="Дзен"]
 survarium.pro##adsense
 kinoafisha.info,kinonews.ru##advertronic-slot
 24tv.ua,lux.fm##app-adv-placeholder
@@ -22106,7 +22106,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||news.mail.ru/-/*.js?
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
-||pikabu.ru/ajax/*?w6X9g=$xmlhttprequest
+||pikabu.ru/ajax/*?po5Ox=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -23343,6 +23343,8 @@ yandex.ru##div[id^="R-I-"]
 yandex.ru,yandex.*##.grid-list__game-item_adv
 yandex.ru,yandex.*##.stack > .promo
 yandex.ru,yandex.*##div[class^="FeedAdvBlockRenderer-"]:empty
+! Яндекс.Карты
+yandex.ru,yandex.*##.catalog-grid-view__item._advert
 ! Яндекс.Музыка
 music.yandex.ru,music.yandex.*##.bar__driver-container
 music.yandex.ru,music.yandex.*##[class^="audio-advert"]
@@ -26516,8 +26518,8 @@ www.1tv.ru##div[class^="Branding_container_"]:style(margin-top: unset !important
 tornado.3dn.ru##.wrap:style(cursor: default !important)
 tornado.3dn.ru##.wraps:style(margin-top: 0 !important)
 ! ---
-3dnews.kz,3dnews.ru##.article > .onadlable
-3dnews.kz,3dnews.ru##.article > .onadlable ~ .js-mediator-article a[href]:not([href^="/"]):not([href^="#"]):not([href*="3dnews."]):style(pointer-events: none !important; text-decoration: none !important; color: inherit !important)
+3dnews.ru##.article > .onadlable
+3dnews.ru##.article > .onadlable ~ .js-mediator-article a[href]:not([href^="/"]):not([href^="#"]):not([href*="3dnews."]):style(pointer-events: none !important; text-decoration: none !important; color: inherit !important)
 ! ---
 4pda.to##body[itemscope] [id]:first-child > style ~ a[href][target="_blank"]
 4pda.to##html:not([class]):not([style]) > body:not([itemscope]) > div[id] > div[id][href]:style(cursor: auto !important)
@@ -28340,7 +28342,7 @@ freesoft.ru###downloadAdModal:remove()
 myshared.ru###download_form > .modal-body
 vm.ru###onair > img[data-src="/img/player_cover.svg"]
 inoreader.com###reader_pane:style(padding-right: unset !important)
-3dnews.kz,3dnews.ru#@##right-sidebar > #youtube-chunk-wrapper
+3dnews.ru#@##right-sidebar > #youtube-chunk-wrapper
 inoreader.com###sinner_container:style(display: block !important; z-index: 0 !important)
 rambler.ru###summary ~ div:has(> [id^="cluster-video-ad"]):remove()
 pronpic.org###vO5STmSLgNAkebzSluI8coxpDgsG97g:style(height: 1px !important; min-height: 1px !important)
@@ -28418,7 +28420,7 @@ sinoptik.ua##+js(abort-on-property-read, SIN.AdsLoader)
 porngames.su,rintor.info,rintor.net##+js(abort-on-property-read, TotemToolsObject)
 castle-tv.com##+js(abort-on-property-read, WebSocket)
 100popugaev.ru,coderlessons.com,fixx.one,its-kids.ru,molitvy.guru,nizhny.ru,pro100hobbi.ru,publy.ru,samelectric.ru,svadba.expert,tehnobzor.ru,vibir.ru##+js(abort-on-property-read, XMLHttpRequest)
-3dnews.kz,3dnews.ru,avtovzglyad.ru,baby.ru,cont.ws,dni.ru,pikabu.ru,pogoda.onliner.by,selflib.me,sm.news,sports.ru,tech.onliner.by,www.goha.ru##+js(abort-on-property-read, Ya)
+3dnews.ru,avtovzglyad.ru,baby.ru,cont.ws,dni.ru,pikabu.ru,pogoda.onliner.by,selflib.me,sm.news,sports.ru,tech.onliner.by,www.goha.ru##+js(abort-on-property-read, Ya)
 nnmclub.ro,nnmclub.to##+js(abort-on-property-read, _0x1ece)
 comedy-radio.ru,radioromantika.ru,relax-fm.ru,veseloeradio.ru##+js(abort-on-property-read, __vasActiveTestIds)
 forum.overclockers.ua##+js(abort-on-property-read, a_urls)
@@ -28684,7 +28686,7 @@ eneyida.tv##+js(set-attr, .owl-item > a > img, src, [data-src])
 fontanka.ru##+js(set-attr, [class^="articleBlockVideo_"] video, controls, true)
 overclockers.ru##+js(set-attr, img[src="https://overclockers.ru/assets/logo_gray_stub.gif"], src, [data-src])
 joyreactor.cc,reactor.cc##+js(set-attr, video, controls, true)
-3dnews.kz,3dnews.ru##+js(set-attr, video[controls="controls"], controls, true)
+3dnews.ru##+js(set-attr, video[controls="controls"], controls, true)
 peers.tv##+js(set-constant, ADV_DISABLED, true)
 www.ukr.net##+js(set-constant, Clicks._test_meta_referer, null)
 ivi.ru##+js(set-constant, Object.prototype.AdvObject, noopFunc)
@@ -28725,7 +28727,7 @@ vp.rambler.ru##+js(set-constant, Object.prototype.minPlayingVisibleHeight, noopF
 rg.ru##+js(set-constant, Object.prototype.onIntersected, noopFunc)
 rg.ru##+js(set-constant, Object.prototype.openstatCb, undefined)
 dzen.ru,frontend.vh.yandex.ru,naydex.net,widgets.kinopoisk.ru,www.kinopoisk.ru,yastatic.net##+js(set-constant, Object.prototype.partnerId, {})
-3dnews.kz,3dnews.ru,vm.ru##+js(set-constant, Object.prototype.playVideo, noopFunc)
+3dnews.ru,vm.ru##+js(set-constant, Object.prototype.playVideo, noopFunc)
 dzen.ru##+js(set-constant, Object.prototype.protect, undefined)
 forbes.ru##+js(set-constant, Object.prototype.utm, false)
 forbes.ru##+js(set-constant, Object.prototype.utm_campaign, false)
@@ -28896,7 +28898,7 @@ kanobu.ru#?#section[class^="MaterialsManufacturerPage_infiniteWrap"] > div[class
 igromania.ru#?#section[class^="MaterialsManufacturerPage_infiniteWrap"] > div[class^="InfiniteScrollWrap_content"] > [class*="MaterialItemPage_materialSection"]:-abp-has(> .knb-grid-container > [data-io-article-url] [class^="TextContent_text"] > p:-abp-contains(/^Реклама:/)) [class^="material-content_"] a[href][target="_blank"]:not([href^="https://www.igromania.ru/"]):style(color: inherit !important; pointer-events: none !important)
 smaxim.*##+js(set-constant, flashvars.protect_block, '')
 studizba.com,surl.*##+js(nano-setInterval-booster, #timer)
-3dnews.kz,3dnews.ru##video[autoplay="autoplay"]:remove-attr(autoplay)
+3dnews.ru##video[autoplay="autoplay"]:remove-attr(autoplay)
 kino-teatr.ru,kinoafisha.info,kinonews.ru##videotronic-player:remove-attr(data-video-autoplay)
 ya.ru,yandex.*##.dist-overlay__popup:remove()
 ya.ru,yandex.*##.simple-popup__overlay:remove()
@@ -28949,7 +28951,7 @@ ya.ru,yandex.*##.simple-popup__overlay:remove()
 ||yastatic.net/s3/home-static/feeds/$third-party
 ||youtube-nocookie.com/embed/*autoplay=1$subdocument,removeparam=autoplay,domain=weukraine.tv
 ||youtube.com/embed/*autoplay=1$subdocument,removeparam=autoplay,domain=~kinoafisha.info|~pikabu.ru|~poolsuite.net
-||youtube.com/embed/?enablejsapi=1&origin=*3dnews.*&widgetid=1$subdocument,badfilter,domain=3dnews.kz|3dnews.ru
+||youtube.com/embed/?enablejsapi=1&origin=*3dnews.*&widgetid=1$subdocument,badfilter,domain=3dnews.ru
 ! Mail.RU
 mail.ru###grid div[class^="feed__"]:remove()
 webagent.mail.ru#@#+js()

@@ -1,5 +1,51 @@
-diff name:ruadlist lines:4 checksum:24e7871108
+diff name:ruadlist lines:50 checksum:0322b21bfd
 d4 2
 a5 2
-! Last modified: Mon, 23 Jun 2025 07:29:23 +0000
-! Diff-Path: ../patches/2025.6.23.449.patch#ruadlist
+! Last modified: Mon, 23 Jun 2025 12:58:39 +0000
+! Diff-Path: ../patches/2025.6.23.778.patch#ruadlist
+d11191 1
+a11191 1
+||bumaikr.com^$subdocument,domain=3dnews.ru
+d14252 1
+a14252 1
+3dnews.ru###left-sidebar > .sidebar-chunk.mid:not(.strong)
+d16267 1
+a16267 1
+3dnews.ru##.dc_promo
+d18691 1
+a18691 1
+3dnews.ru##.vivo-wide
+d18899 1
+a18899 1
+3dnews.ru,irecommend.ru##.ymarket-affiliate-widget
+d20166 1
+a20166 1
+3dnews.ru##a[title^="3DNews"][title*="Дзен"]
+d22109 1
+a22109 1
+||pikabu.ru/ajax/*?po5Ox=$xmlhttprequest
+a23345 2
+! Яндекс.Карты
+yandex.ru,yandex.*##.catalog-grid-view__item._advert
+d26519 2
+a26520 2
+3dnews.ru##.article > .onadlable
+3dnews.ru##.article > .onadlable ~ .js-mediator-article a[href]:not([href^="/"]):not([href^="#"]):not([href*="3dnews."]):style(pointer-events: none !important; text-decoration: none !important; color: inherit !important)
+d28343 1
+a28343 1
+3dnews.ru#@##right-sidebar > #youtube-chunk-wrapper
+d28421 1
+a28421 1
+3dnews.ru,avtovzglyad.ru,baby.ru,cont.ws,dni.ru,pikabu.ru,pogoda.onliner.by,selflib.me,sm.news,sports.ru,tech.onliner.by,www.goha.ru##+js(abort-on-property-read, Ya)
+d28687 1
+a28687 1
+3dnews.ru##+js(set-attr, video[controls="controls"], controls, true)
+d28728 1
+a28728 1
+3dnews.ru,vm.ru##+js(set-constant, Object.prototype.playVideo, noopFunc)
+d28899 1
+a28899 1
+3dnews.ru##video[autoplay="autoplay"]:remove-attr(autoplay)
+d28952 1
+a28952 1
+||youtube.com/embed/?enablejsapi=1&origin=*3dnews.*&widgetid=1$subdocument,badfilter,domain=3dnews.ru
