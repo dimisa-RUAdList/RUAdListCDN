@@ -1,8 +1,8 @@
-diff name:ruadlist lines:65 checksum:0322b21bfd
+diff name:ruadlist lines:78 checksum:5dbeddaba2
 d4 2
 a5 2
-! Last modified: Mon, 23 Jun 2025 12:58:39 +0000
-! Diff-Path: ../patches/2025.6.23.778.patch#ruadlist
+! Last modified: Mon, 23 Jun 2025 17:28:28 +0000
+! Diff-Path: ../patches/2025.6.23.1048.patch#ruadlist
 a3696 1
 ||mbt-1.com^$third-party
 a7730 1
@@ -30,12 +30,25 @@ d19133 1
 d20166 1
 a20166 1
 3dnews.ru##a[title^="3DNews"][title*="Дзен"]
+d20951 1
+a20951 1
+uaserials.com,uaserials.film##div[class^="uas-custom-"]
 d21068 1
 a21795 1
 vc.ru##p a[href^="https://market.yandex.ru/"]
+a21873 3
+nnmclub.ro,nnmclub.to##table > tbody > tr > td > br:first-child + br
+nnmclub.ro,nnmclub.to##table > tbody > tr > td > br:first-child + br + table.pline
+nnmclub.ro,nnmclub.to##table > tbody > tr > td > br:first-child + br + table.pline + br
 d22109 1
 a22109 1
 ||pikabu.ru/ajax/*?po5Ox=$xmlhttprequest
+a23075 1
+cyber.sports.ru##.cyber-tags-header
+a23077 1
+cyber.sports.ru##.header-bookmaker-banner
+a23135 1
+cyber.sports.ru##a[href^="https://redirect.appmetrica.yandex.com/serve/"]
 a23345 2
 ! Яндекс.Карты
 yandex.ru,yandex.*##.catalog-grid-view__item._advert

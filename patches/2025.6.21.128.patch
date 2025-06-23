@@ -1,8 +1,8 @@
-diff name:ruadlist lines:69 checksum:0322b21bfd
+diff name:ruadlist lines:82 checksum:5dbeddaba2
 d4 2
 a5 2
-! Last modified: Mon, 23 Jun 2025 12:58:39 +0000
-! Diff-Path: ../patches/2025.6.23.778.patch#ruadlist
+! Last modified: Mon, 23 Jun 2025 17:28:28 +0000
+! Diff-Path: ../patches/2025.6.23.1048.patch#ruadlist
 a3696 1
 ||mbt-1.com^$third-party
 a7730 1
@@ -32,14 +32,27 @@ t-j.ru##[data-testid="banner"]
 d20165 1
 a20165 1
 3dnews.ru##a[title^="3DNews"][title*="Дзен"]
+d20950 1
+a20950 1
+uaserials.com,uaserials.film##div[class^="uas-custom-"]
 d21067 1
 a21794 1
 vc.ru##p a[href^="https://market.yandex.ru/"]
+a21872 3
+nnmclub.ro,nnmclub.to##table > tbody > tr > td > br:first-child + br
+nnmclub.ro,nnmclub.to##table > tbody > tr > td > br:first-child + br + table.pline
+nnmclub.ro,nnmclub.to##table > tbody > tr > td > br:first-child + br + table.pline + br
 d22108 1
 a22108 1
 ||pikabu.ru/ajax/*?po5Ox=$xmlhttprequest
 a22893 1
 ferra.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,secretmag.ru,wmj.ru##[data-qa="lb-content"] ~ [data-qa="lb-footer"] ~ div
+a23073 1
+cyber.sports.ru##.cyber-tags-header
+a23075 1
+cyber.sports.ru##.header-bookmaker-banner
+a23133 1
+cyber.sports.ru##a[href^="https://redirect.appmetrica.yandex.com/serve/"]
 a23343 2
 ! Яндекс.Карты
 yandex.ru,yandex.*##.catalog-grid-view__item._advert
