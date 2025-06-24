@@ -1,8 +1,8 @@
-diff name:ruadlist lines:92 checksum:ccc2c39922
+diff name:ruadlist lines:123 checksum:3e7c9fd7cf
 d4 2
 a5 2
-! Last modified: Tue, 24 Jun 2025 13:41:07 +0000
-! Diff-Path: ../patches/2025.6.24.821.patch#ruadlist
+! Last modified: Tue, 24 Jun 2025 18:39:12 +0000
+! Diff-Path: ../patches/2025.6.24.1119.patch#ruadlist
 a3696 1
 ||mbt-1.com^$third-party
 a7730 1
@@ -26,6 +26,7 @@ d14843 1
 d16266 1
 a16266 1
 3dnews.ru##.dc_promo
+d18223 1
 d18690 1
 a18690 1
 3dnews.ru##.vivo-wide
@@ -35,12 +36,18 @@ a18898 1
 a18901 1
 gamestatus.info##.youtube-news-main-block
 d19133 1
+d19455 1
+a19455 1
+ixbt.games##a[href*="/click/branding/"]
 d19593 1
 a19593 1
 cloudnetworks.ru,flapler.com,korsars.pro,mods-game.net,mywebpc.ru,rufonts.ru,soft-portal.club,vc.ru##a[href*="clck.ru"]
+d20096 1
 d20166 1
 a20166 1
 3dnews.ru##a[title^="3DNews"][title*="Дзен"]
+a20422 1
+nnmclub.ro,nnmclub.to##center > a[style="color: green; font-size: 16px; font-weight: bold"]
 d20951 1
 a20951 1
 uaserials.com,uaserials.film##div[class^="uas-custom-"]
@@ -52,11 +59,24 @@ nnmclub.ro,nnmclub.to##table > tbody > tr > td > br:first-child + br + table.pli
 d22110 1
 a22110 1
 ||pikabu.ru/ajax/*?k8y5r=$xmlhttprequest
+a22133 1
+www.ixbt.*##.clickable_zone {remove:true;}
 a22332 4
 ! мобильная версия
 gismeteo.kz,gismeteo.ru##.feed[data-stat-type="rss"]
 gismeteo.kz,gismeteo.ru##.rss-tabs
 gismeteo.ru##[data-stat-type="rss"] > div.feed-title
+d22998 3
+d23005 1
+d23029 1
+d23031 1
+a23043 6
+rbc.ru##body.free .js-index-central-column > [data-publisher-index] .list-slider-item [href^="https://pro.rbc.ru/"]
+rbc.ru#?#body.free .js-index-central-column > [data-publisher-index]:-abp-has(.item__bottom > [href^="https://pro.rbc.ru"])
+rbc.ru##body.free .js-index-doscroll-pro
+rbc.ru##body.free .news-feed a[href*="utm_campaign"]
+rbc.ru##body.free [data-vr-zone="Главная новость"]::before
+rbc.ru##body.free [data-vr-zone="Топ новости"] a[href^="https://pro.rbc.ru/"]
 a23076 1
 cyber.sports.ru##.cyber-tags-header
 a23078 1
@@ -73,6 +93,17 @@ d26520 2
 a26521 2
 3dnews.ru##.article > .onadlable
 3dnews.ru##.article > .onadlable ~ .js-mediator-article a[href]:not([href^="/"]):not([href^="#"]):not([href*="3dnews."]):style(pointer-events: none !important; text-decoration: none !important; color: inherit !important)
+d27206 1
+a27206 1
+ixbt.com##body:style(background-color: inherit !important)
+d27213 2
+a27218 1
+www.ixbt.com##.branding .main__container:style(margin-top: unset !important)
+d27224 3
+a27226 3
+ixbt.games##.tm-wrapper > .tm:style(margin-bottom: auto !important)
+ixbt.games##body:not(#id):style(margin-top: 0 !important)
+ixbt.games##body:style(background: #eee !important)
 d28344 1
 a28344 1
 3dnews.ru#@##right-sidebar > #youtube-chunk-wrapper

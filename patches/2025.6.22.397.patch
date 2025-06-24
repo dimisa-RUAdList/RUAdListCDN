@@ -1,8 +1,8 @@
-diff name:ruadlist lines:79 checksum:ccc2c39922
+diff name:ruadlist lines:110 checksum:3e7c9fd7cf
 d4 2
 a5 2
-! Last modified: Tue, 24 Jun 2025 13:41:07 +0000
-! Diff-Path: ../patches/2025.6.24.821.patch#ruadlist
+! Last modified: Tue, 24 Jun 2025 18:39:12 +0000
+! Diff-Path: ../patches/2025.6.24.1119.patch#ruadlist
 d11191 1
 a11191 1
 ||bumaikr.com^$subdocument,domain=3dnews.ru
@@ -18,6 +18,7 @@ a14252 1
 d16267 1
 a16267 1
 3dnews.ru##.dc_promo
+d18224 1
 d18691 1
 a18691 1
 3dnews.ru##.vivo-wide
@@ -26,12 +27,18 @@ a18899 1
 3dnews.ru,irecommend.ru##.ymarket-affiliate-widget
 a18902 1
 gamestatus.info##.youtube-news-main-block
+d19455 1
+a19455 1
+ixbt.games##a[href*="/click/branding/"]
 d19593 1
 a19593 1
 cloudnetworks.ru,flapler.com,korsars.pro,mods-game.net,mywebpc.ru,rufonts.ru,soft-portal.club,vc.ru##a[href*="clck.ru"]
+d20096 1
 d20166 1
 a20166 1
 3dnews.ru##a[title^="3DNews"][title*="Дзен"]
+a20422 1
+nnmclub.ro,nnmclub.to##center > a[style="color: green; font-size: 16px; font-weight: bold"]
 d20951 1
 a20951 1
 uaserials.com,uaserials.film##div[class^="uas-custom-"]
@@ -42,11 +49,24 @@ nnmclub.ro,nnmclub.to##table > tbody > tr > td > br:first-child + br + table.pli
 d22109 1
 a22109 1
 ||pikabu.ru/ajax/*?k8y5r=$xmlhttprequest
+a22132 1
+www.ixbt.*##.clickable_zone {remove:true;}
 a22331 4
 ! мобильная версия
 gismeteo.kz,gismeteo.ru##.feed[data-stat-type="rss"]
 gismeteo.kz,gismeteo.ru##.rss-tabs
 gismeteo.ru##[data-stat-type="rss"] > div.feed-title
+d22997 3
+d23004 1
+d23028 1
+d23030 1
+a23042 6
+rbc.ru##body.free .js-index-central-column > [data-publisher-index] .list-slider-item [href^="https://pro.rbc.ru/"]
+rbc.ru#?#body.free .js-index-central-column > [data-publisher-index]:-abp-has(.item__bottom > [href^="https://pro.rbc.ru"])
+rbc.ru##body.free .js-index-doscroll-pro
+rbc.ru##body.free .news-feed a[href*="utm_campaign"]
+rbc.ru##body.free [data-vr-zone="Главная новость"]::before
+rbc.ru##body.free [data-vr-zone="Топ новости"] a[href^="https://pro.rbc.ru/"]
 a23075 1
 cyber.sports.ru##.cyber-tags-header
 a23077 1
@@ -60,6 +80,17 @@ d26519 2
 a26520 2
 3dnews.ru##.article > .onadlable
 3dnews.ru##.article > .onadlable ~ .js-mediator-article a[href]:not([href^="/"]):not([href^="#"]):not([href*="3dnews."]):style(pointer-events: none !important; text-decoration: none !important; color: inherit !important)
+d27205 1
+a27205 1
+ixbt.com##body:style(background-color: inherit !important)
+d27212 2
+a27217 1
+www.ixbt.com##.branding .main__container:style(margin-top: unset !important)
+d27223 3
+a27225 3
+ixbt.games##.tm-wrapper > .tm:style(margin-bottom: auto !important)
+ixbt.games##body:not(#id):style(margin-top: 0 !important)
+ixbt.games##body:style(background: #eee !important)
 d28343 1
 a28343 1
 3dnews.ru#@##right-sidebar > #youtube-chunk-wrapper

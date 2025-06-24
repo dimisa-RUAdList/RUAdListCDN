@@ -1,24 +1,55 @@
-diff name:ruadlist lines:23 checksum:ccc2c39922
+diff name:ruadlist lines:54 checksum:3e7c9fd7cf
 d4 2
 a5 2
-! Last modified: Tue, 24 Jun 2025 13:41:07 +0000
-! Diff-Path: ../patches/2025.6.24.821.patch#ruadlist
+! Last modified: Tue, 24 Jun 2025 18:39:12 +0000
+! Diff-Path: ../patches/2025.6.24.1119.patch#ruadlist
 d13784 4
 a13787 2
 dtf.ru#?##app:-abp-has(> .bar > .header [href="/auth"]) .content-list > .content:-abp-has(> .content-header > .author > [href="/id954970"])
 dtf.ru#?##app:-abp-has(> .bar > .header [href="/auth"]) .content-list > .content:-abp-has(> div > .author .badge__icon--pro)
 a14178 1
 fastpic.org###headermenu a[target="_blank"]
+d18224 1
 a18902 1
 gamestatus.info##.youtube-news-main-block
+d19455 1
+a19455 1
+ixbt.games##a[href*="/click/branding/"]
 d19593 1
 a19593 1
 cloudnetworks.ru,flapler.com,korsars.pro,mods-game.net,mywebpc.ru,rufonts.ru,soft-portal.club,vc.ru##a[href*="clck.ru"]
+d20096 1
+a20422 1
+nnmclub.ro,nnmclub.to##center > a[style="color: green; font-size: 16px; font-weight: bold"]
 d22112 1
 a22112 1
 ||pikabu.ru/ajax/*?k8y5r=$xmlhttprequest
+a22135 1
+www.ixbt.*##.clickable_zone {remove:true;}
 a22334 4
 ! мобильная версия
 gismeteo.kz,gismeteo.ru##.feed[data-stat-type="rss"]
 gismeteo.kz,gismeteo.ru##.rss-tabs
 gismeteo.ru##[data-stat-type="rss"] > div.feed-title
+d23000 3
+d23007 1
+d23031 1
+d23033 1
+a23045 6
+rbc.ru##body.free .js-index-central-column > [data-publisher-index] .list-slider-item [href^="https://pro.rbc.ru/"]
+rbc.ru#?#body.free .js-index-central-column > [data-publisher-index]:-abp-has(.item__bottom > [href^="https://pro.rbc.ru"])
+rbc.ru##body.free .js-index-doscroll-pro
+rbc.ru##body.free .news-feed a[href*="utm_campaign"]
+rbc.ru##body.free [data-vr-zone="Главная новость"]::before
+rbc.ru##body.free [data-vr-zone="Топ новости"] a[href^="https://pro.rbc.ru/"]
+d27213 1
+a27213 1
+ixbt.com##body:style(background-color: inherit !important)
+d27220 2
+a27225 1
+www.ixbt.com##.branding .main__container:style(margin-top: unset !important)
+d27231 3
+a27233 3
+ixbt.games##.tm-wrapper > .tm:style(margin-bottom: auto !important)
+ixbt.games##body:not(#id):style(margin-top: 0 !important)
+ixbt.games##body:style(background: #eee !important)

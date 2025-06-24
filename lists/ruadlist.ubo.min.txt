@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 24 Jun 2025 13:41:07 +0000
-! Diff-Path: ../patches/2025.6.24.821.patch#ruadlist
+! Last modified: Tue, 24 Jun 2025 18:39:12 +0000
+! Diff-Path: ../patches/2025.6.24.1119.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -18220,7 +18220,6 @@ hi-news.ru#?#.small-text:-abp-has(> a[href^="https://dzen.ru/"])
 ain.business,ain.ua##.small-white-block
 krym.news,novostivl.ru,ryazan.life,v-tatarstane.ru,yakutsk.ru##.small_ads_cell
 smartmama.com.ua##.smart-widget
-smb.ixbt.com##.smbad
 proufu.ru##.smi
 factroom.ru##.smi2
 mel.fm##.smi2-news-container
@@ -19452,7 +19451,7 @@ otzovik.com##a[href*="/buy/"][rel="nofollow"]
 sportliga.com##a[href*="/c.php?"]
 tvoymalysh.com.ua##a[href*="/cgi-bin/click"]
 forum.sibmama.info,forum.sibmama.ru##a[href*="/cl.php?b"]
-ixbt.games,smb.ixbt.com##a[href*="/click/branding/"]
+ixbt.games##a[href*="/click/branding/"]
 cq.ru##a[href*="/cq67er/"]
 podolyaka.com,podolyaka.ru##a[href*="/dzen/"]
 liveinternet.ru##a[href*="/fastvk.com/"]
@@ -20093,7 +20092,6 @@ oren.ru##a[href^="https://orenburg.metro-cc.ru/"]
 altai4u.com##a[href^="https://play.google.com/store/apps/details?id="]
 allboxing.ru,lifenews.ru,topwar.ru##a[href^="https://relap.io/"][data-ad-link]
 shazoo.ru##a[href^="https://shazoo.ru/click/"]
-nnmclub.ro,nnmclub.to##a[href^="https://storage.googleapis.com/amnezia/amnezia.org"][style]
 biqle.org##a[href^="https://theporndude.com/"]
 triskirun.ru##a[href^="https://triskirun.ru/golink/"]
 brestcity.com##a[href^="https://tutvisa.by/"]
@@ -20420,6 +20418,7 @@ mehanik.games,tes-game.ru##center > a[href][rel="nofollow"] > img
 aggromusic.ru,fullpcgame.ru,gidonline.fun,gig-games.net,megosales.com,torrent-song.ru,torrents-soft.net,yaebus.net##center > a[href][target="_blank"] > img
 root-nation.com##center > a[href][target="_blank"] img
 molchun.ru##center > a[rel="nofollow"][target="_blank"] > img
+nnmclub.ro,nnmclub.to##center > a[style="color: green; font-size: 16px; font-weight: bold"]
 samopoznanie.ru##center > a[style][href][target="_blank"]
 inmoment.ru,megaonlines.net##center > a[target="_blank"]
 narodclub.net##center > a[target="_blank"][rel="nofollow"]
@@ -22133,6 +22132,7 @@ growhow.in.ua###custom-background-css {remove:true;}
 playground.ru###dfpPrerollDelay {remove:true;}
 the-geek.ru###wp-custom-css {remove:true;}
 vk.*##head > style:-abp-contains(/adchoice|mkit_|outlineBanner/i) {remove:true;}
+www.ixbt.*##.clickable_zone {remove:true;}
 www.ixbt.com#?#body > style:-abp-contains(margin-top) {remove:true;}
 ! селекторы
 freesoft.ru###downloadAdModal
@@ -23001,14 +23001,10 @@ sportrbc.ru##.js-header-slider-container
 rbc.ru##.js-index-central-column .item_promo-card
 rbc.ru#?#.js-index-central-column .js-index-doscroll:-abp-has([data-pixels-on-show*="adfox"])
 rbc.ru#?#.js-index-central-column .js-index-doscroll:-abp-has([href*="erid="])
-rbc.ru##.js-index-central-column > [data-publisher-index] .list-slider-item [href^="https://pro.rbc.ru/"]
-rbc.ru#?#.js-index-central-column > [data-publisher-index]:-abp-has(.item__bottom > [href^="https://pro.rbc.ru"])
-rbc.ru##.js-index-doscroll-pro
 cash.rbc.ru##.js-one-office.premium
 rbc.ru##.js-video-player-ad-skip
 rbc.ru#?#.l-col-100h:-abp-has(> div [href*="banner"])
 rbc.ru##.mts-promo
-rbc.ru##.news-feed a[href*="utm_campaign"]
 utro.ru#?#.news-group__content > .news-group__item:-abp-has(> .banner)
 cnews.ru##.objects_row > .cnb-zone > a:not([href*="cnews.ru"])
 rbc.ru,rbclife.ru##.rbc-header-hide-banners
@@ -23032,9 +23028,7 @@ rbc.ru##.video-player__controls__ad-countdown
 utro.ru#?#[class*="title"]:-abp-contains(/новости партнеров/i)
 rbc.ru##[data-placement]
 rbc.ru##[data-vr-zone="Главная новость"] a[href^="https://pro.rbc.ru/"]
-rbc.ru##[data-vr-zone="Главная новость"]::before
 rbc.ru##[data-vr-zone="Топ новости"] a[href*="utm_campaign"]:not([href^="https://pro.rbc.ru/"])
-rbc.ru##[data-vr-zone="Топ новости"] a[href^="https://pro.rbc.ru/"]
 rbc.ru#?#[data-vr-zone="Топ новости"] div:-abp-has(> a[href*="utm_campaign"]:not([href^="https://pro.rbc.ru/"]))
 rbc.ru##[data-yandex-name^="selfpromo_"]
 rbc.ru##[data-yandex-show="cards_marketplace_show"]
@@ -23047,6 +23041,12 @@ quote.ru##a[href="https://quote.ru/?utm_source=topline"] img
 cnews.ru#?#a[href^="https://www.cnews.ru/redirect.php"]:-abp-contains(Дзен)
 autodaily.ru,autonews.ru,rbc.ru,sportrbc.ru##body div .banner__container
 autodaily.ru,autonews.ru,rbc.ru,sportrbc.ru##body div .banner__filmstrip
+rbc.ru##body.free .js-index-central-column > [data-publisher-index] .list-slider-item [href^="https://pro.rbc.ru/"]
+rbc.ru#?#body.free .js-index-central-column > [data-publisher-index]:-abp-has(.item__bottom > [href^="https://pro.rbc.ru"])
+rbc.ru##body.free .js-index-doscroll-pro
+rbc.ru##body.free .news-feed a[href*="utm_campaign"]
+rbc.ru##body.free [data-vr-zone="Главная новость"]::before
+rbc.ru##body.free [data-vr-zone="Топ новости"] a[href^="https://pro.rbc.ru/"]
 autodaily.ru,autonews.ru,rbc.ru,rbclife.ru,sportrbc.ru##div[class^="fox-tail"]
 rbc.ru##div[class^="item-slider__partner"]
 utro.ru##div[class^="partners-block"]
@@ -27214,27 +27214,26 @@ www.ivi.ru##body.watch > header.ivi-top:style(top: 0 !important)
 ! ---
 ixbt.com##body:not(#id) > .b-content.b-content__breadcrumbs:style(margin-top: unset !important)
 ixbt.com##body:not(#id) > .b-content__pagecontent:style(margin-top: unset !important)
-ixbt.com##body:style(background-color: white !important)
+ixbt.com##body:style(background-color: inherit !important)
 ! ---
 forum.ixbt.com##.body_content_table > .left.column:style(margin-right: 0 !important; width: 100% !important)
 forum.ixbt.com##.body_wrapper:style(max-width: 100% !important)
 forum.ixbt.com##.fullscreen_branding ~ .body_content_table:style(margin-top: 0 !important; z-index: 0 !important)
 forum.ixbt.com##.left.column > #question.dialog_thanks:style(left: 67% !important)
 ! ---
-smb.ixbt.com##.smb-bg:style(background: none !important)
-smb.ixbt.com##.wrapper > #tm:style(margin-bottom: auto !important)
 www.ixbt.com###page-wrapper > #header:style(margin-bottom: auto !important)
 ixbt.market,www.ixbt.com###page-wrapper > #wrapper:style(padding-top: 0 !important)
 www.ixbt.com###page-wrapper > .tm-wrapper > .tm:style(margin-bottom: auto !important)
 www.ixbt.com###page-wrapper:style(background-color: white !important)
+www.ixbt.com##.branding .main__container:style(margin-top: unset !important)
 ! исправление ошибок и косяков оригинальной вёрстки
 ixbt.market,www.ixbt.com###page-wrapper .container:style(max-width: 100% !important)
 ixbt.com##.b-content__pagecontent > .b-content--wrapper > .g-grid:style(margin-top: unset !important)
 ! ---
 ixbt.games##.main:style(margin-top: 2px !important)
-ixbt.games,smb.ixbt.com##.tm-wrapper > .tm:style(margin-bottom: auto !important)
-ixbt.games,smb.ixbt.com##body:not(#id):style(margin-top: 0 !important)
-ixbt.games,smb.ixbt.com##body:style(background: #eee !important)
+ixbt.games##.tm-wrapper > .tm:style(margin-bottom: auto !important)
+ixbt.games##body:not(#id):style(margin-top: 0 !important)
+ixbt.games##body:style(background: #eee !important)
 ! ---
 jut-su.net##body:not(#id):style(padding-top: 0 !important; padding-bottom: 0 !important)
 ! ---
