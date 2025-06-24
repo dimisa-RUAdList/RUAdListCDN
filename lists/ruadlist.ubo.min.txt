@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 24 Jun 2025 08:37:35 +0000
-! Diff-Path: ../patches/2025.6.24.517.patch#ruadlist
+! Last modified: Tue, 24 Jun 2025 13:41:07 +0000
+! Diff-Path: ../patches/2025.6.24.821.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -19590,7 +19590,7 @@ chatovod.ru##a[href*="chatovod.ru/cli"]
 chatovod.ru##a[href*="chatovod.ru/cli"] *
 kinopictures.net##a[href*="chromepro.ru"]
 stopgame.ru##a[href*="clc.to"]
-flapler.com,korsars.pro,mods-game.net,mywebpc.ru,rufonts.ru,soft-portal.club,vc.ru##a[href*="clck.ru"]
+cloudnetworks.ru,flapler.com,korsars.pro,mods-game.net,mywebpc.ru,rufonts.ru,soft-portal.club,vc.ru##a[href*="clck.ru"]
 tvmag.ru##a[href*="cli.co"]
 book-briefly.ru##a[href*="clickfrm.com"]
 bloknot-khersona.ks.ua,osnovu-ved.ru##a[href*="cookery-on-every-day.ru"]
@@ -22332,6 +22332,10 @@ gismeteo.ru##.widget-container
 gismeteo.ru##.zen
 gismeteo.ru##div[class*="feed-partner"]
 gismeteo.ru##section > .feed-bg
+! мобильная версия
+gismeteo.kz,gismeteo.ru##.feed[data-stat-type="rss"]
+gismeteo.kz,gismeteo.ru##.rss-tabs
+gismeteo.ru##[data-stat-type="rss"] > div.feed-title
 ! Kino-live
 $third-party,script,xmlhttprequest,domain=kino-live2.org|kino-live8.biz
 /life.js$domain=kino-live1.site|kino-live10.site|kino-live11.site|kino-live12.site|kino-live2.org|kino-live2.site|kino-live3.site|kino-live5.site|kino-live6.site|kino-live7.site|kino-live8.site|kino-live9.site
