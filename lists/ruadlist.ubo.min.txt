@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 25 Jun 2025 04:38:04 +0000
-! Diff-Path: ../patches/2025.6.25.278.patch#ruadlist
+! Last modified: Wed, 25 Jun 2025 09:32:59 +0000
+! Diff-Path: ../patches/2025.6.25.572.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -19032,6 +19032,7 @@ igromania.ru,kanobu.ru##[class^="LentaAdFox_"]
 360tv.ru##[class^="LinkZen"]
 www.sibnet.ru##[class^="WinkPromo_"]
 overclockers.ua##[class^="ad_slot"]
+softlab-portable.net##[class^="adblock_"]
 bug.org.ua,yvision.kz##[class^="ads_"]
 wot-news.com##[class^="adv_first"]
 sr-week.ru##[class^="advt"]
@@ -21756,6 +21757,7 @@ guitarplayer.ru##noindex > a[href*="svetomuz.ru"]
 bestgardener.ru,compress.ru,escorenews.com##noindex > a[rel="nofollow"][target="_blank"]
 animemaga.ru##noindex > a[style][target="_blank"]
 encyclopaedia-russia.ru,poragovorit.com##noindex > a[target="_blank"] > img
+softlab-portable.net##noindex > center
 mirlib.ru##noindex > center > a
 obnimau.ru##noindex > center > table
 tyndex.ru##noindex > center[style]
@@ -21881,6 +21883,7 @@ electrik.info##table > tbody > tr > td[valign="top"][align="left"][width="200"]
 hi-fi-forum.net##table > tbody > tr > td[width="210"][valign="top"]
 kazus.ru##table > tbody > tr > td[width="728"]
 propogodu.ru##table.weather + noindex
+softlab-portable.net#?#table:-abp-has(> tbody > tr > .bl_title_bkgr:-abp-contains(/интересно/i))
 forum.superkot.com##table:first-child + .tablebg + .tablebg + .tablebg
 forum.superkot.com##table:first-child + .tablebg + .tablebg + br + .tablebg
 anchem.ru##table[align="center"][width="90%"] > tbody > tr > td[align="left"] + td[width="234"]
@@ -21915,6 +21918,7 @@ casino-mining.com##tbody > tr > td[style="vertical-align:top"]
 deti-obninsk.ru##tbody > tr > td[valign="top"][align="left"]
 goroskop.org##tbody > tr > td[width="100%"][valign="top"] + td
 anchem.ru##tbody > tr > td[width="50%"][valign="top"] + td[width="120"][valign="top"]
+softlab-portable.net#?#tbody > tr:-abp-has(> td + [class^="adblock_"])
 anchem.ru#?#tbody > tr:-abp-has(> td[valign="top"][width="130"] > font > [href="/advertising/"])
 anchem.ru#?#tbody > tr:-abp-has(> td[valign="top"][width="130"] > font > [href="/approach/"])
 omnibus.moy.su##tbody > tr[style="background-color: black"]
@@ -22112,7 +22116,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||news.mail.ru/-/*.js?
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
-||pikabu.ru/ajax/*?k8y5r=$xmlhttprequest
+||pikabu.ru/ajax/*?jr56t=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -27226,7 +27230,7 @@ forum.ixbt.com##.fullscreen_branding ~ .body_content_table:style(margin-top: 0 !
 forum.ixbt.com##.left.column > #question.dialog_thanks:style(left: 67% !important)
 ! ---
 www.ixbt.com###page-wrapper > #header:style(margin-bottom: auto !important)
-ixbt.market,www.ixbt.com###page-wrapper > #wrapper:style(padding-top: 0 !important)
+ixbt.market,www.ixbt.com###page-wrapper > #wrapper:style(padding-top: 0 !important; margin-top: unset !important)
 www.ixbt.com###page-wrapper > .tm-wrapper > .tm:style(margin-bottom: auto !important)
 www.ixbt.com###page-wrapper:style(background-color: white !important)
 www.ixbt.com##.branding .main__container:style(margin-top: unset !important)

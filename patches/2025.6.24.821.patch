@@ -1,8 +1,8 @@
-diff name:ruadlist lines:46 checksum:5eca66fc6c
+diff name:ruadlist lines:60 checksum:2e4c9b6ab0
 d4 2
 a5 2
-! Last modified: Wed, 25 Jun 2025 04:38:04 +0000
-! Diff-Path: ../patches/2025.6.25.278.patch#ruadlist
+! Last modified: Wed, 25 Jun 2025 09:32:59 +0000
+! Diff-Path: ../patches/2025.6.25.572.patch#ruadlist
 a16276 1
 www.ixbt.com##.desktopcontainer
 a17230 1
@@ -15,12 +15,23 @@ d18223 1
 d18427 1
 a18427 1
 starhit.ru,uralweb.ru,www.ixbt.com##.tgb
+a19031 1
+softlab-portable.net##[class^="adblock_"]
 d19455 1
 a19455 1
 ixbt.games##a[href*="/click/branding/"]
 d20096 1
 a20422 1
 nnmclub.ro,nnmclub.to##center > a[style="color: green; font-size: 16px; font-weight: bold"]
+a21755 1
+softlab-portable.net##noindex > center
+a21880 1
+softlab-portable.net#?#table:-abp-has(> tbody > tr > .bl_title_bkgr:-abp-contains(/интересно/i))
+a21914 1
+softlab-portable.net#?#tbody > tr:-abp-has(> td + [class^="adblock_"])
+d22112 1
+a22112 1
+||pikabu.ru/ajax/*?jr56t=$xmlhttprequest
 a22135 1
 www.ixbt.*##.clickable_zone {remove:true;}
 d23004 3
@@ -38,6 +49,9 @@ d27217 1
 a27217 1
 ixbt.com##body:style(background-color: inherit !important)
 d27224 2
+d27227 1
+a27227 1
+ixbt.market,www.ixbt.com###page-wrapper > #wrapper:style(padding-top: 0 !important; margin-top: unset !important)
 a27229 1
 www.ixbt.com##.branding .main__container:style(margin-top: unset !important)
 d27235 3

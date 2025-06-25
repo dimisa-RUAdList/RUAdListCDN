@@ -1,8 +1,8 @@
-diff name:ruadlist lines:136 checksum:5eca66fc6c
+diff name:ruadlist lines:147 checksum:2e4c9b6ab0
 d4 2
 a5 2
-! Last modified: Wed, 25 Jun 2025 04:38:04 +0000
-! Diff-Path: ../patches/2025.6.25.278.patch#ruadlist
+! Last modified: Wed, 25 Jun 2025 09:32:59 +0000
+! Diff-Path: ../patches/2025.6.25.572.patch#ruadlist
 a3696 1
 ||mbt-1.com^$third-party
 a7730 1
@@ -46,6 +46,8 @@ a18898 1
 3dnews.ru,irecommend.ru##.ymarket-affiliate-widget
 a18901 1
 gamestatus.info##.youtube-news-main-block
+a19030 1
+softlab-portable.net##[class^="adblock_"]
 d19133 1
 d19455 1
 a19455 1
@@ -63,15 +65,21 @@ d20951 1
 a20951 1
 uaserials.com,uaserials.film##div[class^="uas-custom-"]
 d21068 1
+a21756 1
+softlab-portable.net##noindex > center
 a21795 1
 vc.ru##p a[href^="https://market.yandex.ru/"]
 a21873 3
 nnmclub.ro,nnmclub.to##table > tbody > tr > td > br:first-child + br
 nnmclub.ro,nnmclub.to##table > tbody > tr > td > br:first-child + br + table.pline
 nnmclub.ro,nnmclub.to##table > tbody > tr > td > br:first-child + br + table.pline + br
+a21877 1
+softlab-portable.net#?#table:-abp-has(> tbody > tr > .bl_title_bkgr:-abp-contains(/интересно/i))
+a21911 1
+softlab-portable.net#?#tbody > tr:-abp-has(> td + [class^="adblock_"])
 d22109 1
 a22109 1
-||pikabu.ru/ajax/*?k8y5r=$xmlhttprequest
+||pikabu.ru/ajax/*?jr56t=$xmlhttprequest
 a22132 1
 www.ixbt.*##.clickable_zone {remove:true;}
 a22331 4
@@ -110,6 +118,9 @@ d27205 1
 a27205 1
 ixbt.com##body:style(background-color: inherit !important)
 d27212 2
+d27215 1
+a27215 1
+ixbt.market,www.ixbt.com###page-wrapper > #wrapper:style(padding-top: 0 !important; margin-top: unset !important)
 a27217 1
 www.ixbt.com##.branding .main__container:style(margin-top: unset !important)
 d27223 3
