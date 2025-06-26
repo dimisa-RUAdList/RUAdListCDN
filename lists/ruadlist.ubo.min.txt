@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 26 Jun 2025 05:31:24 +0000
-! Diff-Path: ../patches/2025.6.26.331.patch#ruadlist
+! Last modified: Thu, 26 Jun 2025 10:33:05 +0000
+! Diff-Path: ../patches/2025.6.26.633.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -17660,7 +17660,7 @@ prsport.net##.prognoz_block
 mmgp.ru##.prom
 tut.by##.prom-l
 tut.by##.prom-r
-allmoldova.com,gdeposylka.ru,gsett.ru,infomir59.ru,pavlodar.news,pavon.kz,rentv-smolensk.ru,telesputnik.ru,ubuntovod.ru,webmasters.ru##.promo
+allmoldova.com,gdeposylka.ru,infomir59.ru,pavlodar.news,pavon.kz,rentv-smolensk.ru,telesputnik.ru,ubuntovod.ru,webmasters.ru##.promo
 roskomsvoboda.org##.promo-banner
 expertcen.ru##.promo-block
 habr.com##.promo-block_courses
@@ -18721,6 +18721,7 @@ securitylab.ru##.webinar-banner
 gotoshop.ua##.welcome2
 semestr.online,semestr.ru##.well-google
 portsoft.info##.wf_ads
+gsett.ru##.wfd
 m.vk.com##.wi_head[href*="/away.php?to="]
 m.vk.com##.wi_head[href*="/away.php?to="] + .wi_body
 sport-express.net,sport-express.ru##.wichtig[class*="hidden"]
@@ -21802,6 +21803,7 @@ onfoto.ru##p > table[cellspacing="5"][cellpadding="0"][width="100%"] > tbody > t
 vc.ru##p a[href^="https://market.yandex.ru/"]
 cameleo.xyz#?#p.main:-abp-has([href*="bit.ly"])
 thg.ru#?#p:-abp-contains(Erid:)
+gsett.ru#?#p:-abp-contains(Комплектующие предоставлены)
 bibe.ru#?#p:-abp-contains(Реклама :)
 y-games.ru#?#p:-abp-has(> .ContentTitle[style="height: 20px;"])
 pingvin.pro#?#p:-abp-has(> .adsbygoogle)
@@ -22118,7 +22120,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||news.mail.ru/-/*.js?
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
-||pikabu.ru/ajax/*?jr56t=$xmlhttprequest
+||pikabu.ru/ajax/*?ruC1d=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
