@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 26 Jun 2025 15:30:48 +0000
-! Diff-Path: ../patches/2025.6.26.930.patch#ruadlist
+! Last modified: Thu, 26 Jun 2025 20:30:55 +0000
+! Diff-Path: ../patches/2025.6.26.1230.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10164,6 +10164,7 @@ tonnews.ru##body > div[id^="fancybox"]
 supertabak.ru##body > div[id^="jBox"]
 ruskline.ru##body > div[id^="money"]
 dnpmag.com,trendymen.ru##body > div[id^="popup-"]
+7days.ru##body > div[style^="position: fixed; bottom: 0px;"]
 daz3d.ru##body > span[id^="s"][style]
 esputnik.com##body.cl-noscroll > .cl-dialog[style*="position: fixed"]
 pinterest.com##div[class*="ScreenBanner"]
@@ -19160,6 +19161,7 @@ goldsrc.ru##[data-role="primaryNavBar"] a[href^="http://csserv.ru/"]
 goldsrc.ru##[data-role="primaryNavBar"] a[href^="https://gamecms.ru/"]
 zoneofgames.ru##[data-role="sidebarAd"]
 malenkiy.ru##[data-role="sidebarAd"] > center
+anilib.me,animelib.org,hentailib.me,hentailib.org,mangalib.me,mangalib.org,ranobelib.me##[data-scroll-content] > a[target="_blank"]:not([href="https://app.lib.social/app2.html"])
 tgstat.com,tgstat.ru##[data-slick*="autoplay"]
 zr.ru##[data-slot-name]
 iphones.ru##[data-slug="damprodam"]
