@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 26 Jun 2025 10:33:05 +0000
-! Diff-Path: ../patches/2025.6.26.633.patch#ruadlist
+! Last modified: Thu, 26 Jun 2025 15:30:48 +0000
+! Diff-Path: ../patches/2025.6.26.930.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -26407,7 +26407,7 @@ satdx.club##.rules[style^="display:"][style*="position:"][style*="z-index:"]
 sport-express.net,sport-express.ru##.se-bn-notice
 kodik.info##.second-message
 radioromantika.ru##.showMessageAdBlock
-uakino.me##.side-content-adblock
+uakino.best##.side-content-adblock
 kg-portal.ru##.social_login > .ulogin ~ .caution
 pikabu.ru##.toast_danger
 gibdd-gai.ru##.warning
@@ -27936,9 +27936,9 @@ ua-cinema.com##body:style(background: #091016 !important)
 ! ---
 ua.news##body:style(background-image: none !important; background-color: #ffffff !important; padding-top: 0 !important)
 ! ---
-uakino.com##header .container:style(padding-top: 30px !important)
+uakino.best##body > .all-wrap:style(margin-top: 0 !important)
 ! ---
-uakino.me##body > .all-wrap:style(margin-top: 0 !important)
+uakino.com##header .container:style(padding-top: 30px !important)
 ! ---
 ukr.bio###site:style(top: 0 !important)
 ! ---
@@ -28617,7 +28617,7 @@ muzlan.top##+js(nano-setInterval-booster, .numcard)
 mp3crown.cc##+js(nano-setInterval-booster, .time)
 sorokam.ru##+js(nano-setInterval-booster, .track-download__timer)
 bitshare.link##+js(nano-setInterval-booster, closeWait, 1800)
-kinokong.sk,uakino.me,win-lite.site##+js(nano-setInterval-booster, countdown)
+kinokong.sk,uakino.best,win-lite.site##+js(nano-setInterval-booster, countdown)
 vgtimes.ru##+js(nano-setInterval-booster, disabled)
 startgamer.ru##+js(nano-setInterval-booster, js-game-loader-block, 1000, 0.0001)
 3mod.ru,iblitzmods.ru##+js(nano-setInterval-booster, ks_counter)
