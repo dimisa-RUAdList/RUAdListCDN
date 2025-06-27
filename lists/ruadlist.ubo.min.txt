@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 27 Jun 2025 02:18:39 +0000
-! Diff-Path: ../patches/2025.6.27.138.patch#ruadlist
+! Last modified: Fri, 27 Jun 2025 06:40:43 +0000
+! Diff-Path: ../patches/2025.6.27.400.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22334,21 +22334,22 @@ footboom1.com##div[class*="_bookie"]
 ! GISMeteo domains
 gismeteo.ru#?#.cities-popular:-abp-has(> .list:empty)
 gismeteo.by##.column2 > .section-rss
-gismeteo.ru##.content-column > .section-media
 gismeteo.kz,gismeteo.ru##.content-column ~ .content-column > .section-rss
 gismeteo.by,gismeteo.kz,gismeteo.ru##.extender
 gismeteo.by,gismeteo.kz,gismeteo.ru,meteofor.com.ua,meteofor.md##.placeholder
-gismeteo.by,gismeteo.kz,meteofor.com.ua##.section-media
+gismeteo.by,gismeteo.kz,gismeteo.ru,meteofor.com.ua##.section-media
 meteofor.com.ua##.section-rss
 gismeteo.by,gismeteo.kz,gismeteo.ru##.sticky > .section
 gismeteo.by,gismeteo.kz,gismeteo.ru##.top-media-extender
 gismeteo.ru##.widget-container
 gismeteo.ru##.zen
+gismeteo.ru##[data-row="advert"]
 gismeteo.ru##div[class*="feed-partner"]
 gismeteo.ru##section > .feed-bg
 ! мобильная версия
 gismeteo.kz,gismeteo.ru##.feed[data-stat-type="rss"]
 gismeteo.kz,gismeteo.ru##.rss-tabs
+gismeteo.ru##.section-rssAdvert
 gismeteo.ru##[data-stat-type="rss"] > div.feed-title
 ! Kino-live
 $third-party,script,xmlhttprequest,domain=kino-live2.org|kino-live8.biz
@@ -27579,7 +27580,7 @@ outlook.live.com##div[tabindex][role="region"][aria-label] ~ div[data-max-width]
 ! ---
 overclockers.ru##a.over-hiddenlink-html[target="_blank"]:style(pointer-events: none !important; color: inherit !important)
 ! ---
-partnerkin.com##body .fix_ap_bck:style(margin-bottom: -3px !important)
+partnerkin.com##body > [class^="fix_"]:style(margin-bottom: -3px !important)
 ! ---
 patrioty.org.ua##footer:style(margin: 0 !important)
 ! ---
