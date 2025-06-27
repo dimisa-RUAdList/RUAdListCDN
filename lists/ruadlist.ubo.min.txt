@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 27 Jun 2025 06:40:43 +0000
-! Diff-Path: ../patches/2025.6.27.400.patch#ruadlist
+! Last modified: Fri, 27 Jun 2025 11:24:19 +0000
+! Diff-Path: ../patches/2025.6.27.684.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -19031,6 +19031,7 @@ tsn.ua#?#[class]:-abp-has(> iframe[src*="/banners/"])
 examenpdd.com##[class][style*="important"] * *
 igromania.ru,kanobu.ru##[class^="AdFoxBanner"]
 brestcity.com##[class^="BlockR"]
+regard.ru##[class^="CreditBanner_banner"]
 diletant.media##[class^="HomePage_aBanner"]
 kanobu.ru##[class^="IgromaniaChannel_mania"]
 igromania.ru,kanobu.ru##[class^="LentaAdFox_"]
@@ -22122,7 +22123,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||news.mail.ru/-/*.js?
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
-||pikabu.ru/ajax/*?ruC1d=$xmlhttprequest
+||pikabu.ru/ajax/*?oa3Le=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
