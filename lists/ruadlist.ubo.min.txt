@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 01 Jul 2025 15:30:36 +0000
-! Diff-Path: ../patches/2025.7.1.930.patch#ruadlist
+! Last modified: Tue, 01 Jul 2025 20:31:09 +0000
+! Diff-Path: ../patches/2025.7.1.1231.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -13500,7 +13500,6 @@ igdz1.ru^$script,domain=igdz.ru
 ||webmasters.ru/forum/ltbanners/
 ||webpark.ru/*/mhealth
 ||webplus.info/getres.php?getadv=
-||websdr.space/covid19-$subdocument
 ||webstat.torrent-rutor.org/
 ||webtun.com/uploads/files/
 ||wedlife.ru/b/
@@ -15652,7 +15651,6 @@ agronom.top##.bg-gray
 myfin.by##.bg-light-blue
 eurolab.ua,gdetraffic.com,novaposhta.ua,penza-press.ru,tveda.ru##.bg-link
 socportal.info##.bg-logo-ads
-websdr.space#?#.bg-websdr:-abp-has(> .card-body > div > [id] > div[id^="yandex_rtb"])
 mobiltelefon.ru##.bg_banner
 redirekt.info##.bg_header_right > .soft
 g-list.ru,ongab.ru##.bgad
@@ -17885,7 +17883,6 @@ internetsms.org##.row-fluid.center > h3
 internetsms.org##.row-fluid.center > h4
 metrogame.net##.row.row-flash.roll
 investoday.ru##.row2 > span[style^="float:"]
-websdr.space#?#.row[style="display: block;"]:-abp-has(iframe)
 www.eg.ru##.row[style="margin-top: 30px;"]
 nikcenter.org#?#.row[style^="padding-"]:-abp-has(> .nchead > .ncheading:-abp-contains(/^партн/i))
 epravda.com.ua,eurointegration.com.ua##.rpad script[src*="orbit.lun.ua"] + span
@@ -28581,6 +28578,7 @@ volley.ru##+js(no-fetch-if, /buzzoola\.com|plrjs\.org/)
 trychatgpt.ru##+js(no-fetch-if, /mpsuadv\.ru/)
 animix.lol##+js(no-fetch-if, doubleclick.net)
 ya.ru##+js(no-fetch-if, rythm_market)
+websdr.su##+js(no-setInterval-if, '(clearInterval(e)')
 fatcatslim.ru##+js(no-setInterval-if, clientHeight)
 anime-chan.me##+js(no-setInterval-if, move_string)
 volyninfo.com##+js(no-setInterval-if, replaceWith)
@@ -28605,7 +28603,6 @@ in-poland.com##+js(no-setTimeout-if, initServices, 5000)
 fishki.net##+js(no-setTimeout-if, is_adblock)
 vseinstrumenti.ru##+js(no-setTimeout-if, removeJuristicNotification)
 testserver.pro##+js(no-setTimeout-if, saa)
-websdr.space##+js(no-setTimeout-if, setInterval, )
 anime-chan.me##+js(no-setTimeout-if, sparkle)
 flightsim.su##+js(no-setTimeout-if, tie-popup-adblock)
 num-words.com,softportal.com##+js(no-setTimeout-if, toUTCString)

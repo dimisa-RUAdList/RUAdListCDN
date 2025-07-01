@@ -1,10 +1,13 @@
-diff name:ruadlist lines:19 checksum:fc1ae31abb
+diff name:ruadlist lines:25 checksum:0eccbc3450
 d4 2
 a5 2
-! Last modified: Tue, 01 Jul 2025 15:30:36 +0000
-! Diff-Path: ../patches/2025.7.1.930.patch#ruadlist
+! Last modified: Tue, 01 Jul 2025 20:31:09 +0000
+! Diff-Path: ../patches/2025.7.1.1231.patch#ruadlist
 a10563 1
 /*/*/|$script,domain=lenkino.adult|yalenkino.org
+d13502 1
+d15654 1
+d17887 1
 d18956 1
 d22071 1
 a22071 1
@@ -18,3 +21,6 @@ a27647 1
 rezka.biz##.container > #content:style(margin-top: unset !important)
 a28432 1
 gazeta.ru##+js(abort-on-property-read, history.replaceState)
+a28580 1
+websdr.su##+js(no-setInterval-if, '(clearInterval(e)')
+d28605 1
