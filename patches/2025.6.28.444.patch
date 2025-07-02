@@ -1,8 +1,8 @@
-diff name:ruadlist lines:246 checksum:bf0cc8313b
+diff name:ruadlist lines:277 checksum:9deb2d977c
 d4 2
 a5 2
-! Last modified: Wed, 02 Jul 2025 06:41:30 +0000
-! Diff-Path: ../patches/2025.7.2.401.patch#ruadlist
+! Last modified: Wed, 02 Jul 2025 11:24:51 +0000
+! Diff-Path: ../patches/2025.7.2.684.patch#ruadlist
 d9410 1
 d10365 1
 a10365 1
@@ -171,7 +171,15 @@ a22025 1
 rutr.life,rutracker.lib,rutracker.net,rutracker.org#?#tr.row3 > td > ul > li:-abp-has(> a[href*="offer_id="])
 d22094 1
 a22094 1
-||pikabu.ru/ajax/*?y5rt6=$xmlhttprequest
+||pikabu.ru/ajax/*?y6rt6=$xmlhttprequest
+a22097 1
+||websdr.su^$~document,~third-party
+a22114 2
+lenta.*##.topic-body__content> .box-external-video:last-child {remove:true;}
+lenta.*##.topic-footer > .box-external-video {remove:true;}
+d22145 1
+a22145 1
+fonmod.com,ritsatv.ru,websdr.su##:not(my-obnaruzhili-blokirovshchik)
 d22324 6
 a22329 6
 $third-party,script,xmlhttprequest,domain=kino-live8.biz
@@ -180,10 +188,30 @@ $third-party,script,xmlhttprequest,domain=kino-live8.biz
 @@||212.113.38.*.ts|$xmlhttprequest,domain=kino-live8.biz
 @@||googleads.g.doubleclick.net/$xmlhttprequest,domain=kino-live8.biz
 kino-live8.biz#?#div[class^="right"] .ramka1:-abp-has(noindex)
+a22582 1
+metaratings.ru##a[href*="//dzen.ru/"]
+a22583 1
+metaratings.ru##div[class^="BonusesItem_"]
+a22584 1
+metaratings.ru#?#div[class^="Button_button_"]:-abp-has(> [class*="Button_green"])
+a22588 2
+metaratings.ru##div[class^="MatchCarousel_"]
+metaratings.ru##div[class^="SportHome_mainTopBk_"]
 a22847 1
 gazeta.ru##.b_rightcol-sticky > div[id]
+a22864 1
+lenta.ru##.js-video-eagle > div[style^="height:"][style*="overflow:"]
+a22873 2
+lenta.ru##.topic-body__content > .box-external-video:last-child
+lenta.ru##.topic-footer > .box-external-video
+a22878 1
+gazeta.ru##[data-docking="left-down"] > div[style^="height:"][style*="overflow:"]
+a22927 1
+gazeta.ru##div[id^="__id_global_rambler_video_off_"][data-mediaposition="bottom"]
 a22957 1
 ||rcm.rambler.ru/*/widget?adtech_uid=
+a22962 1
+||vp.rambler.ru/player/*&mediaposition=bottom&$subdocument,domain=gazeta.ru
 d23917 1
 a23917 1
 ||citilink.ru^$third-party,domain=~citilink.ru|~retailrocket.net|~rutr.life|~rutracker.lib|~rutracker.net|~rutracker.org
@@ -231,6 +259,9 @@ gazeta.ru##+js(set-constant, history.replaceState, noopFunc)
 d28771 1
 a28771 1
 08sportbar.com,08sportbar.online,777sportba.com,777sportba.org,777streams.pro,7streams.pro,assiatv.com,barsportbar.com,boom365hd.com,cdnpotok.com,cdntvpotok.com,channels247.net,goool7.ws,hd24.pro,hd24.watch,hd365.ws,hdstream365.com,limetvv.com,live-stream365.com,live365tv.site,mc.today,oneliketv.com,oxax.tv,raes.tech,s7yours.com,sbautumn.com,sblive.online,sbsports.pro,sbstreams.ws,shd247.com,sport365hd.com,sport365hd.net,sport7.biz,sportabar01.com,sportbar.pm,sportbarchik88.com,sportbox.ws,sporting7.pw,sporting77.com,sportsite777.com,spotless365.net,stream365.pro,telecdn.net,tivix.co,tv-assia.org,vecdn.pw,vip7stream.pw,whd365.pro##+js(window.open-defuser)
+a28808 2
+lenta.ru##.topic-body__content > .box-external-video:last-child:remove()
+lenta.ru##.topic-footer > .box-external-video:remove()
 a30467 1
 codebeautify.org###adBlockerShare
 a30511 2
