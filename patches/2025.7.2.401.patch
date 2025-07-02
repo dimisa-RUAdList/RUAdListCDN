@@ -1,8 +1,12 @@
-diff name:ruadlist lines:38 checksum:48d0ad1045
+diff name:ruadlist lines:45 checksum:30626597b1
 d4 2
 a5 2
-! Last modified: Wed, 02 Jul 2025 16:36:04 +0000
-! Diff-Path: ../patches/2025.7.2.996.patch#ruadlist
+! Last modified: Wed, 02 Jul 2025 21:27:00 +0000
+! Diff-Path: ../patches/2025.7.2.1286.patch#ruadlist
+d12511 1
+a18955 1
+partnerkin.com##[class*="iap-"] *
+d19861 2
 d22068 1
 a22068 1
 ||pikabu.ru/ajax/*?y6rt6=$xmlhttprequest
@@ -34,6 +38,9 @@ a22902 1
 gazeta.ru##div[id^="__id_global_rambler_video_off_"][data-mediaposition="bottom"]
 a22938 1
 ||vp.rambler.ru/player/*&mediaposition=bottom&$subdocument,domain=gazeta.ru
+d27521 1
+a27521 1
+partnerkin.com##body > [class^="fix_"]:style(margin-bottom: -5px !important)
 a28782 2
 lenta.ru##.topic-body__content > .box-external-video:last-child:remove()
 lenta.ru##.topic-footer > .box-external-video:remove()
