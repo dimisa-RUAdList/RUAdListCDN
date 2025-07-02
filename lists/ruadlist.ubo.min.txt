@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 01 Jul 2025 20:31:09 +0000
-! Diff-Path: ../patches/2025.7.1.1231.patch#ruadlist
+! Last modified: Wed, 02 Jul 2025 02:18:24 +0000
+! Diff-Path: ../patches/2025.7.2.138.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -28429,7 +28429,6 @@ buhplatforma.com.ua,championat.com,doramy.club,dzplatforma.com.ua,medplatforma.c
 musify.club##+js(abort-on-property-read, get_ya_browser)
 gazeta.ru##+js(abort-on-property-read, goTolink)
 dota2.ru##+js(abort-on-property-read, helpUsImproveSite)
-gazeta.ru##+js(abort-on-property-read, history.replaceState)
 elitesnooker.com##+js(abort-on-property-read, initsnow)
 astrakhan.ru,myjane.ru,omskpress.ru,tambovnet.org##+js(abort-on-property-read, kav_cn)
 daz3d.ru##+js(abort-on-property-read, lftrght)
@@ -28711,6 +28710,7 @@ audioportal.su##+js(set-constant, clicks, 2)
 pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##+js(set-constant, countdownNum, 0)
 ~spec.tass.ru,tass.ru##+js(set-constant, frames.innerWidth, {})
 gazeta.ru##+js(set-constant, g_GazetaNoExchange, true)
+gazeta.ru##+js(set-constant, history.replaceState, noopFunc)
 gazeta.ru##+js(set-constant, isAdFree, noopFunc)
 playground.ru##+js(set-constant, localStorage.localstorageGameData, '')
 tv-gubernia.ru##+js(set-constant, main_air_closed, true)
