@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 03 Jul 2025 07:28:26 +0000
-! Diff-Path: ../patches/2025.7.3.448.patch#ruadlist
+! Last modified: Thu, 03 Jul 2025 12:55:49 +0000
+! Diff-Path: ../patches/2025.7.3.775.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22064,7 +22064,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||news.mail.ru/-/*.js?
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
-||pikabu.ru/ajax/*?y6rt6=$xmlhttprequest
+||pikabu.ru/ajax/*?y7rt6=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -26341,6 +26341,7 @@ tarkov-market.com##.disable-adblock
 internetsms.org##.fade[class^="modal"]
 allbasketball.org,dailymail.co.uk,fashion2news.com,hotallnews.today,ilenta.com,in-poland.com,kreschatic.kiev.ua,moyens.net,newspad.ru,pimpletv.ru,portaltele.com.ua,pravda.com.ua,tales.org.ua,ukranews.com,wormax.io,zazloo.ru##.fc-ab-root
 hdkinoteatr.com##.fixedBg
+rutube.ru##.footer-fixed-components-module__footerFixed
 hdkino.biz##.full-news td[bgcolor]
 trupornolabs.org##.header > .red
 wowhead.com##.is-atf.horizontal-bg
