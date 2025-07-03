@@ -1,9 +1,11 @@
-diff name:ruadlist lines:45 checksum:92605560e6
+diff name:ruadlist lines:49 checksum:4ec570b73b
 d4 2
 a5 2
-! Last modified: Thu, 03 Jul 2025 02:19:08 +0000
-! Diff-Path: ../patches/2025.7.3.139.patch#ruadlist
+! Last modified: Thu, 03 Jul 2025 07:28:26 +0000
+! Diff-Path: ../patches/2025.7.3.448.patch#ruadlist
 d12511 1
+a15004 1
+partnerkin.com##.ab_item
 a18955 1
 partnerkin.com##[class*="iap-"] *
 d19861 2
@@ -12,7 +14,8 @@ a22068 1
 ||pikabu.ru/ajax/*?y6rt6=$xmlhttprequest
 a22071 1
 ||websdr.su^$~document,~third-party
-a22088 2
+a22088 3
+lenta.*##.js-scroll-to-site {remove:true;}
 lenta.*##.topic-body__content> .box-external-video:last-child {remove:true;}
 lenta.*##.topic-footer > .box-external-video {remove:true;}
 d22119 1
@@ -27,7 +30,8 @@ metaratings.ru#?#div[class^="Button_button_"]:-abp-has(> [class*="Button_green"]
 a22562 2
 metaratings.ru##div[class^="MatchCarousel_"]
 metaratings.ru##div[class^="SportHome_mainTopBk_"]
-a22839 1
+a22839 2
+lenta.ru##.js-scroll-to-site
 lenta.ru##.js-video-eagle > div[style^="height:"][style*="overflow:"]
 a22848 2
 lenta.ru##.topic-body__content > .box-external-video:last-child
