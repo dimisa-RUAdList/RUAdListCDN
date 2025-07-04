@@ -1,8 +1,8 @@
-diff name:ruadlist lines:51 checksum:abf3821906
+diff name:ruadlist lines:57 checksum:74ad765971
 d4 2
 a5 2
-! Last modified: Fri, 04 Jul 2025 03:54:15 +0000
-! Diff-Path: ../patches/2025.7.4.234.patch#ruadlist
+! Last modified: Fri, 04 Jul 2025 08:36:36 +0000
+! Diff-Path: ../patches/2025.7.4.516.patch#ruadlist
 d12511 1
 a15004 1
 partnerkin.com##.ab_item
@@ -11,7 +11,7 @@ partnerkin.com##[class*="iap-"] *
 d19861 2
 d22068 1
 a22068 1
-||pikabu.ru/ajax/*?y7rt6=$xmlhttprequest
+||pikabu.ru/ajax/*?y8rt6=$xmlhttprequest
 a22071 1
 ||websdr.su^$~document,~third-party
 a22088 3
@@ -44,6 +44,12 @@ a22938 1
 ||vp.rambler.ru/player/*&mediaposition=bottom&$subdocument,domain=gazeta.ru
 a26328 1
 rutube.ru##.footer-fixed-components-module__footerFixed
+d27265 1
+a27265 1
+www.kinopoisk.ru##.app__page > div:not([class*="media"]):not([class*="content"]):first-child:style(min-height: 0 !important)
+d27267 1
+a27267 1
+www.kinopoisk.ru##.media-post-page > div:not([class*="media"]):first-child:style(min-height: 0 !important)
 d27521 1
 a27521 1
 partnerkin.com##body > [class^="fix_"]:style(margin-bottom: -5px !important)
