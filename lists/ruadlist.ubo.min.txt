@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 05 Jul 2025 04:35:54 +0000
-! Diff-Path: ../patches/2025.7.5.275.patch#ruadlist
+! Last modified: Sat, 05 Jul 2025 09:27:14 +0000
+! Diff-Path: ../patches/2025.7.5.567.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -12508,6 +12508,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||partner.komedra.com/
 ||partner.labirint.ru^$third-party,domain=rutlib.com
 ||partner.uhty-multy.ru/
+||partnerkin.com/uploads/stbr/
 ||partners.walla.co.il^$domain=mignews.com
 ||passus.ru/test-widget/
 ||patria.md/i/partners/
@@ -14901,6 +14902,7 @@ motorpuls.ru###wrapper > #header
 metodsilva.ru###wrapper > .fma-bg
 gagadget.com###wrapper > .l-container_wide[style*="min-height:"]
 rasfokus.ru,waralbum.ru###wrapper > noindex
+fastpic.org###x9f8e2b
 newsko.ru###xtest-videoad
 soft.sibnet.ru###ya-block
 80-e.ru###ya-bottom
@@ -18953,7 +18955,6 @@ detaly.co.il##[class*="container_ads"]
 pravda.if.ua##[class*="footer"] > [class*="menu-section footer-"]:last-child
 forum.guns.ru##[class*="hide"][class$="ban"]
 appleinsider.ru##[class*="home-credit"]
-partnerkin.com##[class*="iap-"] *
 puerrtto.livejournal.com##[class*="kupibilet"]
 espritgames.ru##[class*="landing"]
 www.onliner.by##[class*="megabanner"]
@@ -19860,6 +19861,7 @@ tribun.com.ua##a[href^="/redirects/banner.php"]:not([title="Телеграм К�
 bashinform.ru##a[href^="/rk.php"]
 gageno.ru,pikapo.ru##a[href^="/s"][target="_blank"]
 gunsbroker.ru##a[href^="/sp.php?id="]
+partnerkin.com##a[href^="/strk/"]
 rusradio.ru##a[href^="/target/"]
 bigfangroup.org,freebfg.org##a[href^="/trh"]
 pornomage.net##a[href^="/url?go="]
