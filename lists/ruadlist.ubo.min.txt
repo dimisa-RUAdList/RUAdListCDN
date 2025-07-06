@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 06 Jul 2025 05:30:12 +0000
-! Diff-Path: ../patches/2025.7.6.330.patch#ruadlist
+! Last modified: Sun, 06 Jul 2025 10:30:45 +0000
+! Diff-Path: ../patches/2025.7.6.630.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10149,7 +10149,7 @@ tonnews.ru##body > div[id^="fancybox"]
 supertabak.ru##body > div[id^="jBox"]
 ruskline.ru##body > div[id^="money"]
 dnpmag.com,trendymen.ru##body > div[id^="popup-"]
-7days.ru##body > div[style^="position: fixed; bottom: 0px;"]
+7days.ru,vokrug.tv##body > div[style^="position: fixed; bottom: 0px;"]
 daz3d.ru##body > span[id^="s"][style]
 esputnik.com##body.cl-noscroll > .cl-dialog[style*="position: fixed"]
 pinterest.com##div[class*="ScreenBanner"]
@@ -21530,6 +21530,7 @@ jofo.ru##iframe[src^="http://creatagen.ru/"]
 smotretonline.ucoz.org##iframe[src^="http://kinohouse.ucoz.ru"]
 arminfo.info##iframe[src^="https://www.arminfo.info/"][src$=".html"]
 www.mp4upload.com##iframe[src^="https://www.mp4upload.com/"][src$=".html"]
+fastpic.org##iframe[srcdoc]
 forum.watch.ru##iframe[style="width: 100%; height: 60px;"]
 forum.watch.ru##iframe[style="width:100%; height:110px;"]
 torrnado.ru##img.Text[src^="/images/"]
