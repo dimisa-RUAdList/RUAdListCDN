@@ -1,8 +1,8 @@
-diff name:ruadlist lines:28 checksum:235a7bbed5
+diff name:ruadlist lines:34 checksum:62067ba930
 d4 2
 a5 2
-! Last modified: Sat, 05 Jul 2025 19:21:31 +0000
-! Diff-Path: ../patches/2025.7.5.1161.patch#ruadlist
+! Last modified: Sun, 06 Jul 2025 02:28:05 +0000
+! Diff-Path: ../patches/2025.7.6.148.patch#ruadlist
 a12510 1
 ||partnerkin.com/uploads/stbr/
 a14903 1
@@ -19,6 +19,10 @@ a22087 1
 lenta.*##.js-scroll-to-site {remove:true;}
 a22845 1
 lenta.ru##.js-scroll-to-site
+a23368 1
+dzen.ru##a[href^="https://trk.mail.ru/"]
+a23377 1
+dzen.ru##[data-testid="dzen-pro-fullscreen"]
 a26340 1
 rutube.ru##.footer-fixed-components-module__footerFixed
 d27277 1
@@ -27,3 +31,5 @@ www.kinopoisk.ru##.app__page > div:not([class*="media"]):not([class*="content"])
 d27279 1
 a27279 1
 www.kinopoisk.ru##.media-post-page > div:not([class*="media"]):first-child:style(min-height: 0 !important)
+a28026 1
+dzen.ru##[class*="dzen-desktop--flash-modal"]
