@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 07 Jul 2025 11:24:43 +0000
-! Diff-Path: ../patches/2025.7.7.684.patch#ruadlist
+! Last modified: Mon, 07 Jul 2025 16:36:37 +0000
+! Diff-Path: ../patches/2025.7.7.996.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -15933,14 +15933,12 @@ carsweek.ru##.bx-composite-btn
 electroandi.ru##.bybit
 tsn.ua##.c-aside__port
 drive2.com,drive2.ru#?#.c-block:-abp-has(> .c-dv-label)
-vsplanet.net##.c-center > .cols ~ *
 drive2.ru##.c-darkening-hover-container ~ :not(.c-darkening-hover-container) > div[id]
 drive2.com,drive2.ru##.c-dv-label
 drive2.ru##.c-dv-p
 drive2.com,drive2.ru##.c-dv-sns
 dsnews.ua#?#.c-feed__list-item:-abp-has(> .c-feed__item > .c-r)
 drive2.com,drive2.ru#?#.c-header:-abp-contains(/Ads|Реклама/)
-vsplanet.net##.c-left > .block ~ *
 telegraf.com.ua#?#.c-post__content > div:-abp-has(> [id^="_vidverto-"])
 delo.ua,dsnews.ua,focus.ua##.c-r
 5-tv.ru##.cFadeDark
@@ -16052,6 +16050,8 @@ naurfo.ru##.column a[href][target="_blank"]
 www.sport.ru##.column-right > div[style="margin-top:20px;"]
 www.sport.ru##.column-right > h5.hdr2
 travelask.ru##.column-sidebar__ads
+vsplanet.net#?#.column.c-center > div:-abp-has(> script)
+vsplanet.net#?#.column.c-center > h2:-abp-contains(Реклама)
 porngames.su##.column.last.mini > p
 alser.kz##.columnBanner
 russian.rt.com##.column__row_article-page_right:empty
