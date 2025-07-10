@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 10 Jul 2025 09:33:05 +0000
-! Diff-Path: ../patches/2025.7.10.573.patch#ruadlist
+! Last modified: Thu, 10 Jul 2025 14:32:02 +0000
+! Diff-Path: ../patches/2025.7.10.872.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -302,6 +302,7 @@
 ||adtags.pro^$third-party
 ||adtarget.me^$third-party
 ||adtcodeblack.com^$third-party
+||adtec.ru^$third-party
 ||adtech-digital.ru^$third-party
 ||adtraf.pro^$third-party
 ||adtraff.ru^
@@ -352,6 +353,7 @@
 ||adwise.agency^$third-party
 ||adwist.ru^$third-party
 ||adwolf.ru^$third-party
+||adx.bid^$third-party
 ||adx.com.ru^$third-party
 ||adxgeeks.com^$third-party
 ||adxzqk.com^$third-party
@@ -6200,6 +6202,7 @@
 ||trafall.com^
 ||trafalz.com^
 ||trafers.ru^
+||traffaret.com^$third-party
 ||traffclick.me^$third-party
 ||traffer.biz^$third-party
 ||traffic-king.ru^
@@ -13107,6 +13110,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||storyroom.ru/bbb/
 ||str.eshzdorovo.ru^
 ||stranamam.ru/i/*/*.jpg
+||stranamam.ru/i/povarenok-widget.gif
 ||stranaru.ru/media/ban/
 ||stream.1tv.ru/api/com-inject.json?r$script,domain=1tv.ru
 ||streamapps.ru^$script
@@ -15059,7 +15063,7 @@ jaomix.ru##.adblock-service
 agroxxi.ru##.adchoice
 agri-gator.com.ua##.adcontainer
 factroom.ru##.adcredit
-tatfish.com##.add
+hibinform.ru,tatfish.com##.add
 openssource.biz##.add-link
 brunet-ka.ru,poleznii-site.ru##.add_zen
 multiurok.ru##.additional-info > nofollow > [align="center"] > a[target="_blank"] > img
@@ -15500,7 +15504,7 @@ gid-minecraft.ru##.banner-bottom-wrapper
 dynamomania.com##.banner-box
 driveroff.net,samlab.ws##.banner-categories
 repost.uz,tvmag.ru##.banner-center
-amurmedia.ru,chitamedia.su,chukotkamedia.ru,eaomedia.ru,irkutskmedia.ru,job.ru,kamchatkamedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,magadanmedia.ru,nakhodka.media,newsvl.ru,priamurmedia.ru,primamedia.ru,sakhalinmedia.ru,sevastopolmedia.ru,shedevrum.ai,stavropol.media,tayga.info,tet.tv,ulanmedia.ru,unian.info,unian.net,unian.ua,ussurmedia.ru,vctr.media,wallnews.org,yakutiamedia.ru,yugopolis.ru##.banner-container
+amurmedia.ru,chitamedia.su,chukotkamedia.ru,eaomedia.ru,irkutskmedia.ru,job.ru,kamchatkamedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,magadanmedia.ru,nakhodka.media,newsvl.ru,nord-news.ru,priamurmedia.ru,primamedia.ru,sakhalinmedia.ru,sevastopolmedia.ru,shedevrum.ai,stavropol.media,tayga.info,tet.tv,ulanmedia.ru,unian.info,unian.net,unian.ua,ussurmedia.ru,vctr.media,wallnews.org,yakutiamedia.ru,yugopolis.ru##.banner-container
 para.by##.banner-cube
 biysk-ok.ru##.banner-default
 vikna.if.ua##.banner-fullborder
@@ -17495,6 +17499,7 @@ roypchel.ru##.pblock
 shophelp.ru##.pc-banner
 lookmedbook.ru##.pediatr-banner-container
 onyxgame.com##.pegination ~ a
+hibiny.ru##.pek-inside
 dotaguide.ru##.penci-sidebar-left
 umu.org.ua##.penci-sidebar-widgets.widget-area-2
 dotaguide.ru##.pered-kontentom
@@ -18168,6 +18173,7 @@ emusic.me##.skin-block
 festyy.com##.skip-advert
 fc-zenit.ru##.sl-foot
 kerch.fm#?#.slick-slide:-abp-has(div:-abp-contains(На правах рекламы))
+hibinform.ru##.slick-track
 lib.rus.ec,posters.ec##.slide_anons
 kommersant.ru#?#.slider-commercial .multimedia__item:-abp-has(.spend__text > .spend__tag:-abp-contains(/^Партнерский /))
 rayon.in.ua##.slider-main
@@ -20674,6 +20680,7 @@ cybersport.ru,kolombo-online.ru,www.zakon.kz##div[class^="ad_"]
 xn--k1afadd0cwc.xn--p1ai##div[class^="adace"]
 cameralabs.org##div[class^="adaptivgoogle"]
 e-ink-reader.ru##div[class^="adb"]
+hibiny.ru##div[class^="adfox_"]
 vlasti.net,winnote.ru##div[class^="adrotate"]
 chernomorets.odessa.ua,moei.ru,shaiba.kz,x-kuzov.ru##div[class^="ads"]
 amoledo.com##div[class^="adsbanner"]
