@@ -1,5 +1,32 @@
-diff name:ruadlist lines:4 checksum:238f2a9bd5
+diff name:ruadlist lines:31 checksum:cb9b5b75a9
 d4 2
 a5 2
-! Last modified: Fri, 11 Jul 2025 05:33:54 +0000
-! Diff-Path: ../patches/2025.7.11.333.patch#ruadlist
+! Last modified: Fri, 11 Jul 2025 10:33:20 +0000
+! Diff-Path: ../patches/2025.7.11.633.patch#ruadlist
+a8961 1
+~telegra.ph##a[href^="https://telegra.ph/"]
+d22080 1
+a22080 1
+||pikabu.ru/ajax/*?gJK9b=$xmlhttprequest
+d22614 3
+a22616 4
+fanserial.*,fanserial.сс,myfanserial.net##.article-aside-promo
+fanserial.*,fanserial.сс,myfanserial.net##.flex-promo-series > .left-col > :not(#players):not(.serial-series-info)
+fanserial.*,fanserial.сс,myfanserial.net##.flex-promo-series > .right-col
+fanserial.*,fanserial.сс,myfanserial.net##[itemtype*="://schema.org/TVEpisode"] [data-dlebid]
+d22618 1
+a22618 1
+##.article-aside-promo a[href*="webcash&"]
+d22620 1
+a22620 2
+##.flex-promo-series > .right-col
+##[itemtype*="://schema.org/TVEpisode"] [data-dlebid]
+d22622 2
+a22623 2
+/player/fan.xml$domain=fanserial.сс|myfanserial.net
+@@||v*.plrjs.org/*.xml?rand=$xmlhttprequest,domain=fanserial.cc|myfanserial.net
+d22979 1
+a23013 1
+/*betblock$domain=rbc.ru|sportrbc.ru
+a23037 1
+rbc.ru,sportrbc.ru##div[class^="bet-block"]
