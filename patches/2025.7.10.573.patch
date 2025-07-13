@@ -1,8 +1,8 @@
-diff name:ruadlist lines:70 checksum:925915fd1d
+diff name:ruadlist lines:80 checksum:a1562c3d64
 d4 2
 a5 2
-! Last modified: Sun, 13 Jul 2025 07:29:05 +0000
-! Diff-Path: ../patches/2025.7.13.449.patch#ruadlist
+! Last modified: Sun, 13 Jul 2025 12:54:20 +0000
+! Diff-Path: ../patches/2025.7.13.774.patch#ruadlist
 a304 1
 ||adtec.ru^$third-party
 a354 1
@@ -28,8 +28,15 @@ a16379 1
 allboxing.ru##.fixed-banner
 a17497 1
 hibiny.ru##.pek-inside
+d17908 1
+a17908 1
+blik.ua,sport-express.ua##.sadse
 a18170 1
 hibinform.ru##.slick-track
+a18799 1
+sport.ua##.wrap > div[style^="height"]
+a18987 1
+igromania.ru,kanobu.ru##[class^="AdButtons"]
 d19823 1
 a19823 1
 37.ru,62info.ru,agrostory.com,allcio.ru,bits.media,compulenta.ru,gubkinskiy.com,hi-fi.ru,infostart.ru,it-weekly.ru,it-world.ru,kluch.media,likeni.ru,mgazeta.com,mnmag.ru,nmosktoday.com,officelife.media,rugrad.eu,seonews.ru,vladtv.ru,vn.ru,vt-inform.ru,yantann.rbsmi.ru,yanzori.rbsmi.ru,zi.ua##a[href^="/bitrix/rk.php"]
@@ -62,6 +69,9 @@ d22615 2
 a22616 2
 /player/fan.xml$domain=fanserial.сс|myfanserial.net
 @@||v*.plrjs.org/*.xml?rand=$xmlhttprequest,domain=fanserial.cc|myfanserial.net
+a22686 2
+ru##[data-ns-portal] div[class^="wrap_"][class$=" gridFullMobile"]:empty
+ru##[data-ns-portal] div[class^="wrap_"][class$=" gridOneThirdLaptop"]:empty
 d22972 1
 a23006 1
 /*betblock$domain=rbc.ru|sportrbc.ru

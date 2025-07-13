@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 13 Jul 2025 07:29:05 +0000
-! Diff-Path: ../patches/2025.7.13.449.patch#ruadlist
+! Last modified: Sun, 13 Jul 2025 12:54:20 +0000
+! Diff-Path: ../patches/2025.7.13.774.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -17913,7 +17913,7 @@ medside.ru##.rusfond-block
 stroy.ykt.ru##.s-slider
 map.cn.ua##.sModuleContent
 latifundist.com##.sa_widget
-sport-express.ua##.sadse
+blik.ua,sport-express.ua##.sadse
 nastroyvse.ru#?#.saitbar_bock:-abp-has(.mpwidget)
 autosakhcom.ru,sakh.com,sakh.name##.sakhui-b
 fitomarket.com.ua##.sales-box
@@ -18806,6 +18806,7 @@ provce.ck.ua##.wp_image_wrap
 giantessa.ru##.wpb_text_column
 vsaduidoma.com##.wppopups-whole
 irr.by,irr.ru##.wrBanerPlace noindex
+sport.ua##.wrap > div[style^="height"]
 avtosreda.ru##.wrap > noindex
 vse42.ru##.wrap-adplace-frame
 kurer-sreda.ru##.wrap-inf4x4
@@ -18994,6 +18995,7 @@ allpravda.info,geo-politica.info,globalwarnews.ru,inosmi.info,news24today.info,p
 argumenti.ru#?#[class]:-abp-has(> a[href] [class*="partner"])
 tsn.ua#?#[class]:-abp-has(> iframe[src*="/banners/"])
 examenpdd.com##[class][style*="important"] * *
+igromania.ru,kanobu.ru##[class^="AdButtons"]
 igromania.ru,kanobu.ru##[class^="AdFoxBanner"]
 brestcity.com##[class^="BlockR"]
 regard.ru##[class^="CreditBanner_banner"]
@@ -22698,6 +22700,8 @@ ru##[data-ns-portal] [class^="layout-"][class$="notifications"]
 ru##[data-ns-portal] [data-adv-mark]
 ru##[data-ns-portal] div[class^="topicsInlineAdv"]
 ru##[data-ns-portal] div[class^="topicsList"] a[href*="erid="]
+ru##[data-ns-portal] div[class^="wrap_"][class$=" gridFullMobile"]:empty
+ru##[data-ns-portal] div[class^="wrap_"][class$=" gridOneThirdLaptop"]:empty
 116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,62.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,fontanka.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru##[data-placement]
 116.ru,45.ru,59.ru,93.ru,fontanka.ru,ngs42.ru,ngs55.ru,v1.ru##[data-status]
 72.ru,74.ru,chita.ru,e1.ru,ngs.ru,ufa1.ru##[data-test="header-adv-logo"]
