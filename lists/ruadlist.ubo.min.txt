@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 13 Jul 2025 17:26:00 +0000
-! Diff-Path: ../patches/2025.7.13.1045.patch#ruadlist
+! Last modified: Sun, 13 Jul 2025 22:29:46 +0000
+! Diff-Path: ../patches/2025.7.13.1349.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21808,6 +21808,7 @@ iguides.ru##section[class*="-right "] > .listing-mini
 internet-technologies.ru##section[class*="related"]
 igromania.ru#?#section[class^="MaterialsManufacturerPage_infiniteWrap"] > div[class^="InfiniteScrollWrap_content"] > [class^="MaterialItemPage_isFirst"] ~ [class^="MaterialItemPage_materialSection"]:-abp-has(> .knb-grid-container > [data-io-article-url] [class^="TextContent_text"] > p:-abp-contains(/^Реклама:/))
 igromania.ru,kanobu.ru#?#section[class^="MaterialsManufacturerPage_infiniteWrap"] > div[class^="InfiniteScrollWrap_content"] > [class^="MaterialItemPage_materialSection"]:-abp-has(> .knb-grid-container > [data-io-article-url] a[href="/tags/partnyorskij-material/"])
+igromania.ru,kanobu.ru#?#section[class^="MaterialsManufacturerPage_infiniteWrap"] > div[class^="InfiniteScrollWrap_content"] > [class^="MaterialItemPage_materialSection"]:-abp-has(> div [class^="SpecialLabelOfArticle_isPartnerMaterial"])
 agroxxi.ru##section[class^="my-"]
 vikka.ua##section[id^="ctup_ads-"]
 agro-business.com.ua##section[id^="sp-subcribe-footer"]:not(#sp-subcribe-footer)
