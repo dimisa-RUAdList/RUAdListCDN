@@ -1,8 +1,8 @@
-diff name:ruadlist lines:92 checksum:5e98e3b7e6
+diff name:ruadlist lines:140 checksum:a1a95501f3
 d4 2
 a5 2
-! Last modified: Tue, 15 Jul 2025 14:31:08 +0000
-! Diff-Path: ../patches/2025.7.15.871.patch#ruadlist
+! Last modified: Tue, 15 Jul 2025 19:26:17 +0000
+! Diff-Path: ../patches/2025.7.15.1166.patch#ruadlist
 a3872 1
 ||mntzco.com^$third-party
 d10111 1
@@ -14,6 +14,9 @@ a10196 1
 d10209 1
 a10209 1
 /wp-content/uploads/pum/pum-site-$domain=belsat.eu|best-home-ideas.com|bizua.org|hariola.com|newsyou.info
+d10373 1
+a10373 1
+$third-party,xmlhttprequest,domain=anisima.ru|arablionz.tv|artrozamnet.ru|autotopik.ru|bigpuzzle.ru|diakov.net|eku.ru|familyspace.ru|farap.ru|film1080p.ru|ggtube.pro|gorodvo.ru|hdklub.com|hdsite.net|hochu.tv|kaztorka.org|kino-hit-online.com|kino-tvserial.online|kinohd.ws|kogda.org|mainavi.ru|neolove.ru|newcloud.tv|nisorinki.net|nnm-club.me|nnmclub.ro|nnmclub.to|online-hd.biz|onlineguru.ru|pornozhuk.com|privat-fotka.ru|ru-kino.com|ruvi.tv|seasonvar.ru|shtorm777.ru|smotriserial.me|superhumor.ru|telspravochnik.com|top-radio.ru|torrentshow.org|tryserial.net|voffka.com|vse-sezony.org|zk.fm
 a13027 1
 ||spiker.club/ads/
 d13261 1
@@ -22,6 +25,7 @@ diakov.net###ad-wrapper-two
 d13947 1
 a14055 1
 allboxing.ru###fixed-banner-modal
+d14576 1
 a14906 1
 itc.ua###wrapper > .container > p > .out-link1
 d15489 1
@@ -30,9 +34,18 @@ a15489 1
 a15531 1
 koroldanylo.com.ua##.banner-slider-container
 d15553 1
+d15919 1
+a15919 1
+nnm-club.me,nnmclub.ro,nnmclub.to##.btTbl > tbody > .row1 > .genmed[align="center"] noindex
 a15928 1
 uazmi.org##.button-banner
 d15962 2
+d16180 1
+a16180 1
+nnm-club.me,nnmclub.ro,nnmclub.to##.copyright tbody > tr > :not(.copyright)
+d16608 1
+a16608 1
+nnm-club.me,nnmclub.ro,nnmclub.to##.header .row2 tr:not(:last-child)
 a16782 1
 itc.ua##.intro2
 d17484 1
@@ -47,18 +60,39 @@ alexua.tv,anilib.moe,anilib.one,anilib.top,anilibria.iss.one,anilibria.tv,avtovz
 d18747 1
 a18747 1
 1.zt.ua,100pdf.club,24.cv.ua,4studio.com.ua,alladvices.ru,amorefilms.ru,analitikaua.net,aspekty.net,auto-portal.com.ua,avtotachki.com,borodina-protiv-buzovoj.ru,chas.cv.ua,cheb-live.ru,cryptodzen.com,dacha.help,detaly.co.il,dietdo.ru,ebanoe.it,electric-220.ru,erokomiksi.org,flytothesky.ru,gametrick.ru,gizchina.net,glavradio.info,golos.te.ua,happymodern.ru,kazakh-zerno.net,koskomp.ru,kyivvlada.com.ua,lhealth.info,m-zh.ru,mi100.info,muwhi.ru,netsofta.net,new-s.com.ua,pravda.cn.ua,psiholog4you.ru,root-nation.com,rubrowsers.ru,sdelalremont.ru,sharknews.ru,simptomy-lechenie.net,smartmama.com.ua,ternopillive.com,tipsboard.ru,ua-news.in.ua,ua-report.info,vgolove.net,vizitnlo.ru,volyninfo.com,vseiski.ru,withcars.ru,wona.com.ua,zelenj.ru##.widget_custom_html
+d19140 1
 a19145 1
 uazmi.org##[data-text^="Рекламн"]
 d19242 1
 a19242 1
 101.ru,19rus.info,2000.ua,5-tv.ru,56orb.ru,62info.ru,7info.ru,afanasy.biz,agitpro.su,allboxing.ru,anekdot.ru,argumenti.ru,baltnews.ee,belive.ru,bigpicture.ru,bombardir.ru,chehov-vid.ru,daily-inform.ru,dni.ru,dnpmag.com,do-slez.com,eadaily.com,eg.ru,expert.ru,ferra.ru,gazeta-tula.ru,glavnoe24.ru,gorobzor.ru,gorvesti.ru,govoritmoskva.ru,gubdaily.ru,hightech.plus,iarex.ru,inforeactor.ru,iz.ru,kirov-portal.ru,kriminal.net.ua,livelib.ru,m24.ru,melodrama1.com,mgorod.kz,mir24.tv,mk.ru,myhistori.ru,nashgorod.ru,nation-news.ru,nevnov.ru,newinform.com,nn.ru,ntv.ru,osnmedia.ru,penzainform.ru,penzavzglyad.ru,pikinform.ru,pnp.ru,polit.info,politexpert.net,politonline.ru,pora.ru,radidomapro.ru,radio1.ru,radioromantika.ru,ratel.kz,ren.tv,ria56.ru,riafan.ru,rueconomics.ru,rusplt.ru,russian.rt.com,rusvesna.su,sevkavportal.ru,sharknews.ru,sm.news,sminews.ru,sobesednik.ru,steaklovers.menu,sun-news.ru,topwar.ru,trendymen.ru,tsargrad.tv,tsn24.ru,tvernews.ru,ua.today,uralpress.ru,usa.one,vedomosti.ru,versia.ru,veseloeradio.ru,vesti-yamal.ru,vesti.ru,vesti.uz,vestivrn.ru,vokrugsveta.ru,xn--b1ats.xn--80asehdb,zakon.kz,zr.ru##[id^="unit_"]
+a20218 1
+adme.media##aside div[style^="min-height:"]
+d20278 1
+a20278 1
+nnm-club.me,nnmclub.ro,nnmclub.to##body > .ui-corner-all
 a20384 1
 shuba.life#?#button[target="_blank"]:-abp-has(> .i-icon-basket)
+d20396 1
+a20396 1
+nnm-club.me,nnmclub.ro,nnmclub.to##center > a[style="color: green; font-size: 16px; font-weight: bold"]
+d20401 1
+a20401 1
+nnm-club.me,nnmclub.ro,nnmclub.to##center > big
 d21144 1
+d21503 1
+a21503 1
+nnm-club.me,nnmclub.ro,nnmclub.to##iframe[src*="/forum/ads/"]
+d21688 1
 a21799 1
 vgoru.org##script[src^="https://mediabrama.com/shop/"] + div[class]
 a21810 1
 igromania.ru,kanobu.ru#?#section[class^="MaterialsManufacturerPage_infiniteWrap"] > div[class^="InfiniteScrollWrap_content"] > [class^="MaterialItemPage_materialSection"]:-abp-has(> div [class^="SpecialLabelOfArticle_isPartnerMaterial"])
+d21849 3
+a21851 3
+nnm-club.me,nnmclub.ro,nnmclub.to##table > tbody > tr > td > br:first-child + br
+nnm-club.me,nnmclub.ro,nnmclub.to##table > tbody > tr > td > br:first-child + br + table.pline
+nnm-club.me,nnmclub.ro,nnmclub.to##table > tbody > tr > td > br:first-child + br + table.pline + br
 a21998 1
 diakov.net#?#td[width="50%"]:-abp-has(> [id^="adfox_"])
 d22087 1
@@ -81,10 +115,24 @@ a23153 1
 tribuna.com##div[class^="CustomRatingsWidget"]
 a23157 1
 tribuna.com##div[data-test="bookie-widget"]
+d26498 1
+a26498 1
+baskino.film,dnepr.info,dugtor.ru,filmitorrent.net,filmitorrent.site,jetsetter.ua,kinoafisha.ua,kinobar.vip,kinoukr.com,konohatv.org,ladys.media,moskva.fm,newstudio.tv,nnm-club.me,nnmclub.ro,nnmclub.to,pay-day.ru,roem.ru,rusfootball.info,trupornolabs.org,utorr.cc,vc.ru,virusinfo.info,xxxadulttorrent.org,you-anime.ru,yummyanime.tv,zombie-film.live##body:not(#id):style(padding-top: 0 !important)
 d26767 6
 a27194 2
 itc.ua##body.age-popup-active > .age-popup-overlay
 itc.ua##body.age-popup-active:style(overflow: unset !important)
+d27515 3
+a27517 3
+nnm-club.me,nnmclub.ro,nnmclub.to##.postquotehref:style(position: inherit !important)
+nnm-club.me,nnmclub.ro,nnmclub.to##body > .wrap:style(top: 0 !important)
+nnm-club.me,nnmclub.ro,nnmclub.to##body:style(background: none !important)
+d28386 1
+a28386 1
+fastpic.org,kaztorka.org,kg-portal.ru,~new.fastpic.org,nnm-club.me,nnmclub.ro,nnmclub.to##+js(abort-current-inline-script, document.createElement, Math.random)
+d28432 1
+a28432 1
+nnm-club.me,nnmclub.ro,nnmclub.to##+js(abort-on-property-read, _0x1ece)
 d28554 1
 d28558 1
 a28873 1
