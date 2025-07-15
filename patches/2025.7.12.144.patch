@@ -1,8 +1,8 @@
-diff name:ruadlist lines:101 checksum:0bcd1e841d
+diff name:ruadlist lines:119 checksum:5e98e3b7e6
 d4 2
 a5 2
-! Last modified: Tue, 15 Jul 2025 09:36:52 +0000
-! Diff-Path: ../patches/2025.7.15.576.patch#ruadlist
+! Last modified: Tue, 15 Jul 2025 14:31:08 +0000
+! Diff-Path: ../patches/2025.7.15.871.patch#ruadlist
 a3872 1
 ||mntzco.com^$third-party
 d10111 1
@@ -17,7 +17,11 @@ a10209 1
 a13027 1
 ||spiker.club/ads/
 d13261 1
+a13705 1
+diakov.net###ad-wrapper-two
 d13947 1
+a14055 1
+allboxing.ru###fixed-banner-modal
 a14906 1
 itc.ua###wrapper > .container > p > .out-link1
 d15165 1
@@ -77,9 +81,21 @@ a21794 1
 vgoru.org##script[src^="https://mediabrama.com/shop/"] + div[class]
 a21805 1
 igromania.ru,kanobu.ru#?#section[class^="MaterialsManufacturerPage_infiniteWrap"] > div[class^="InfiniteScrollWrap_content"] > [class^="MaterialItemPage_materialSection"]:-abp-has(> div [class^="SpecialLabelOfArticle_isPartnerMaterial"])
+a21993 1
+diakov.net#?#td[width="50%"]:-abp-has(> [id^="adfox_"])
 d22082 1
 a22082 1
 ||pikabu.ru/ajax/*?MY65r=$xmlhttprequest
+d22616 4
+a22619 4
+fanserial.*,fanserial.сс,myfanserial.net,1fanserials.ru##.article-aside-promo
+fanserial.*,fanserial.сс,myfanserial.net,1fanserials.ru##.flex-promo-series > .left-col > :not(#players):not(.serial-series-info)
+fanserial.*,fanserial.сс,myfanserial.net,1fanserials.ru##.flex-promo-series > .right-col
+fanserial.*,fanserial.сс,myfanserial.net,1fanserials.ru##[itemtype*="://schema.org/TVEpisode"] [data-dlebid]
+d22626 2
+a22627 2
+/player/fan.xml$domain=1fanserials.ru|fanserial.сс|myfanserial.net
+@@||v*.plrjs.org/*.xml?rand=$xmlhttprequest,domain=1fanserials.ru|fanserial.cc|myfanserial.net
 a22697 2
 ru##[data-ns-portal] div[class^="wrap_"][class$=" gridFullMobile"]:empty
 ru##[data-ns-portal] div[class^="wrap_"][class$=" gridOneThirdLaptop"]:empty
@@ -98,5 +114,7 @@ itc.ua##body.age-popup-active > .age-popup-overlay
 itc.ua##body.age-popup-active:style(overflow: unset !important)
 d28546 1
 d28550 1
-a29070 1
-116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,62.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,www.fontanka.ru##+js(set-constant, navigator.storage.persist, undefined)
+a28865 1
+rutube.ru##body.wdp-scroll .wdp-popup-overlay-module__overlay [class*="-view-trigger-popup"]
+a28866 1
+rutube.ru##body.wdp-scroll .wdp-popup-overlay-module__overlay:has(> [class*="-view-trigger-popup"])
