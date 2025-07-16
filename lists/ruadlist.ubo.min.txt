@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 16 Jul 2025 10:35:23 +0000
-! Diff-Path: ../patches/2025.7.16.635.patch#ruadlist
+! Last modified: Wed, 16 Jul 2025 15:32:48 +0000
+! Diff-Path: ../patches/2025.7.16.932.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22709,6 +22709,7 @@ ru##[data-ns-portal] div[class^="topicsInlineAdv"]
 ru##[data-ns-portal] div[class^="topicsList"] a[href*="erid="]
 ru##[data-ns-portal] div[class^="wrap_"][class$=" gridFullMobile"]:empty
 ru##[data-ns-portal] div[class^="wrap_"][class$=" gridOneThirdLaptop"]:empty
+ru##[data-ns-portal] ul[class^="footerLogos_"] [href*="/?erid"]
 116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,62.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,fontanka.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru##[data-placement]
 116.ru,45.ru,59.ru,93.ru,fontanka.ru,ngs42.ru,ngs55.ru,v1.ru##[data-status]
 72.ru,74.ru,chita.ru,e1.ru,ngs.ru,ufa1.ru##[data-test="header-adv-logo"]
@@ -22890,6 +22891,7 @@ championat.com,championat.ru##.stat-widget__header
 lenta.ru##.topic-body__content > .box-external-video:last-child
 lenta.ru##.topic-footer > .box-external-video
 lenta.ru##.topic-page__info ~ div
+lenta.ru##.traffic-exchange
 lenta.ru##.yandex-games
 www.afisha.ru##[aria-label="Реклама"]
 mail.rambler.ru##[class*="MaillistItemAdvertPlace"]
