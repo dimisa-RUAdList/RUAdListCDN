@@ -1,8 +1,8 @@
-diff name:ruadlist lines:30 checksum:19aa8c94aa
+diff name:ruadlist lines:43 checksum:e9b46781a0
 d4 2
 a5 2
-! Last modified: Wed, 16 Jul 2025 15:32:48 +0000
-! Diff-Path: ../patches/2025.7.16.932.patch#ruadlist
+! Last modified: Wed, 16 Jul 2025 20:32:40 +0000
+! Diff-Path: ../patches/2025.7.16.1232.patch#ruadlist
 d10098 1
 a10098 1
 amedia.online##.mfp-hide
@@ -29,3 +29,16 @@ a22709 1
 ru##[data-ns-portal] ul[class^="footerLogos_"] [href*="/?erid"]
 a22890 1
 lenta.ru##.traffic-exchange
+a23084 1
+sports.ru##.branding-ad-link
+a23117 1
+sports.ru##.sb-linked-image
+d23165 1
+d23170 9
+a23178 4
+||dumpster.cdn.sports.ru/*.webp|$image
+||s5o.ru/build/_desktop/split_testing_init.js
+||senoval.cdn.sports.ru/cross-recommender/
+||senoval.cdn.sports.ru/s-presence/sblock-presence.min.js
+a27822 1
+sports.ru##body > div[id][style="padding-top: 306px; margin-top: 0px;"]:style(padding-top: 96px !important)
