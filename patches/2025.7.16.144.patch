@@ -1,38 +1,65 @@
-diff name:ruadlist lines:50 checksum:e83605b434
+diff name:ruadlist lines:82 checksum:1e2bf83d03
 d4 2
 a5 2
-! Last modified: Thu, 17 Jul 2025 06:45:05 +0000
-! Diff-Path: ../patches/2025.7.17.405.patch#ruadlist
+! Last modified: Thu, 17 Jul 2025 11:26:41 +0000
+! Diff-Path: ../patches/2025.7.17.686.patch#ruadlist
 d10098 1
 a10098 1
 amedia.online##.mfp-hide
 d10214 1
 a10214 1
 ||amedia.online/templates/*/popup/
+d10374 1
+a10374 1
+$third-party,xmlhttprequest,domain=anisima.ru|artrozamnet.ru|autotopik.ru|bigpuzzle.ru|diakov.net|eku.ru|familyspace.ru|farap.ru|gorodvo.ru|hochu.tv|kogda.org|neolove.ru|nnm-club.me|nnmclub.ro|nnmclub.to|onlineguru.ru|pornozhuk.com|seasonvar.ru|superhumor.ru|top-radio.ru|voffka.com
+d10688 1
+d11942 1
+d13185 1
+d13651 1
+d13734 1
+a13734 1
+z200.fm,zvukoff.ru###adv-list-top
+d14264 1
+d14818 1
 a15222 1
 partnerkin.com##.ap_b
 a15277 1
 partnerkin.com#?#.article_item:-abp-has(> .ap_b)
+d15617 1
+d16176 1
+d16938 1
+d17866 1
+a18169 1
+gorodvo.ru##.singlenews_layout > .bottom
+a18996 1
+gorodvo.ru#?#[class]:-abp-has(> [id^="adfox_"])
 a19463 1
 partnerkin.com##a[href*="/strk/"]
 d19819 1
 a19819 1
 agroportal.ua##a[href^="/"][target="_blank"]
 d20068 1
+d20284 1
 d20292 1
 a20292 1
 101.ru,101kofemashina.ru,1in.am,alau.kz,alexua.tv,animejapan.tv,autosport.com.ru,bit.ua,bugaga.ru,c-inform.info,comments.ua,csgamer.ru,ctv7.ru,cvnews.cv.ua,dead-serial.com,e-libra.ru,epravda.com.ua,fashiony.ru,fclmnews.ru,fishki.net,forpost.lviv.ua,game2day.ru,gameinside.ua,ggscore.com,gorod.dp.ua,grimm-online.org,gta.com.ua,horrorzone.ru,ifnews.org.ua,igry-online.net,itechua.com,izbezhat-nakazania.com,jetsetter.ua,jut.su,kievvlast.com.ua,kinoafisha.info,ko.com.ua,kosti-tv.com,kushvsporte.ru,likeni.ru,lovesun.by,lvnews.org.ua,mac-torrent-download.net,madjong-besplatno.ru,mirf.ru,moldfootball.com,mybrazz.club,nashkiev.ua,ne-kurim.ru,pesikot.org,pimpletv.ru,playua.net,post-tracker.ru,povarenok.ru,prodota.ru,prosports.kg,prosports.kz,prosportua.com,relook.ru,rvnews.rv.ua,saratovnews.ru,shuba.life,sopsport.org,spletnica-tv.com,sportarena.com,strela-online.com,teenwolf-tv.com,tenews.org.ua,tg.telepult.pro,the-geek.ru,theflash-tv.com,topfile.tj,traktorist.ua,uanews.org.ua,udargol.com,upl.ua,vskazke-tv.com,zab.ru,zorgee.ru##body > a[href][target="_blank"]
+d20322 1
+a20676 1
+russian.rt.com##div[class^="Popup-"]
 d22092 1
 a22092 1
-||pikabu.ru/ajax/*?b456d=$xmlhttprequest
+||pikabu.ru/ajax/*?T23Er=$xmlhttprequest
 a22709 1
 ru##[data-ns-portal] ul[class^="footerLogos_"] [href*="/?erid"]
 a22890 1
 lenta.ru##.traffic-exchange
-a23084 1
+a23084 2
+sports.ru#?#.aside-news-list__item:-abp-has(> a[href^="https://sirena.world/"])
 sports.ru##.branding-ad-link
 a23098 1
 sports.ru#?#.material-list__item:-abp-has(a[href^="https://sprts.cc/"])
+a23103 1
+sports.ru##.news-ad-inreads
 a23117 1
 sports.ru##.sb-linked-image
 a23123 1
@@ -42,10 +69,15 @@ sports.ru##article.material-list__item[data-link^="https://sirena.world/"]
 d23156 1
 d23165 1
 d23170 9
-a23178 4
+a23178 5
 ||dumpster.cdn.sports.ru/*.webp|$image
 ||s5o.ru/build/_desktop/split_testing_init.js
 ||senoval.cdn.sports.ru/cross-recommender/
+||senoval.cdn.sports.ru/news-renderer/public/SparrowRecommendations-
 ||senoval.cdn.sports.ru/s-presence/sblock-presence.min.js
+d27241 3
 a27822 1
 sports.ru##body > div[id][style="padding-top: 306px; margin-top: 0px;"]:style(padding-top: 96px !important)
+d28389 1
+a28389 1
+fastpic.org,kg-portal.ru,~new.fastpic.org,nnm-club.me,nnmclub.ro,nnmclub.to##+js(abort-current-inline-script, document.createElement, Math.random)

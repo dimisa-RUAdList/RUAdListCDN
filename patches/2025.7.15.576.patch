@@ -1,8 +1,8 @@
-diff name:ruadlist lines:119 checksum:e83605b434
+diff name:ruadlist lines:145 checksum:1e2bf83d03
 d4 2
 a5 2
-! Last modified: Thu, 17 Jul 2025 06:45:05 +0000
-! Diff-Path: ../patches/2025.7.17.405.patch#ruadlist
+! Last modified: Thu, 17 Jul 2025 11:26:41 +0000
+! Diff-Path: ../patches/2025.7.17.686.patch#ruadlist
 d10098 1
 a10098 1
 amedia.online##.mfp-hide
@@ -11,25 +11,42 @@ a10214 1
 ||amedia.online/templates/*/popup/
 d10374 1
 a10374 1
-$third-party,xmlhttprequest,domain=anisima.ru|arablionz.tv|artrozamnet.ru|autotopik.ru|bigpuzzle.ru|diakov.net|eku.ru|familyspace.ru|farap.ru|film1080p.ru|ggtube.pro|gorodvo.ru|hdklub.com|hdsite.net|hochu.tv|kaztorka.org|kino-hit-online.com|kino-tvserial.online|kinohd.ws|kogda.org|mainavi.ru|neolove.ru|newcloud.tv|nisorinki.net|nnm-club.me|nnmclub.ro|nnmclub.to|online-hd.biz|onlineguru.ru|pornozhuk.com|privat-fotka.ru|ru-kino.com|ruvi.tv|seasonvar.ru|shtorm777.ru|smotriserial.me|superhumor.ru|telspravochnik.com|top-radio.ru|torrentshow.org|tryserial.net|voffka.com|vse-sezony.org|zk.fm
+$third-party,xmlhttprequest,domain=anisima.ru|artrozamnet.ru|autotopik.ru|bigpuzzle.ru|diakov.net|eku.ru|familyspace.ru|farap.ru|gorodvo.ru|hochu.tv|kogda.org|neolove.ru|nnm-club.me|nnmclub.ro|nnmclub.to|onlineguru.ru|pornozhuk.com|seasonvar.ru|superhumor.ru|top-radio.ru|voffka.com
+d10688 1
+d11942 1
+d13185 1
+d13651 1
 a13706 1
 diakov.net###ad-wrapper-two
+d13733 1
+a13733 1
+z200.fm,zvukoff.ru###adv-list-top
 a14055 1
 allboxing.ru###fixed-banner-modal
+d14262 1
 d14576 1
+d14817 1
 a15221 1
 partnerkin.com##.ap_b
 a15276 1
 partnerkin.com#?#.article_item:-abp-has(> .ap_b)
+d15616 1
 d15920 1
 a15920 1
 nnm-club.me,nnmclub.ro,nnmclub.to##.btTbl > tbody > .row1 > .genmed[align="center"] noindex
+d16175 1
 d16180 1
 a16180 1
 nnm-club.me,nnmclub.ro,nnmclub.to##.copyright tbody > tr > :not(.copyright)
 d16608 1
 a16608 1
 nnm-club.me,nnmclub.ro,nnmclub.to##.header .row2 tr:not(:last-child)
+d16937 1
+d17865 1
+a18168 1
+gorodvo.ru##.singlenews_layout > .bottom
+a18995 1
+gorodvo.ru#?#[class]:-abp-has(> [id^="adfox_"])
 d19141 1
 a19463 1
 partnerkin.com##a[href*="/strk/"]
@@ -42,15 +59,19 @@ adme.media##aside div[style^="min-height:"]
 d20280 1
 a20280 1
 nnm-club.me,nnmclub.ro,nnmclub.to##body > .ui-corner-all
+d20283 1
 d20291 1
 a20291 1
 101.ru,101kofemashina.ru,1in.am,alau.kz,alexua.tv,animejapan.tv,autosport.com.ru,bit.ua,bugaga.ru,c-inform.info,comments.ua,csgamer.ru,ctv7.ru,cvnews.cv.ua,dead-serial.com,e-libra.ru,epravda.com.ua,fashiony.ru,fclmnews.ru,fishki.net,forpost.lviv.ua,game2day.ru,gameinside.ua,ggscore.com,gorod.dp.ua,grimm-online.org,gta.com.ua,horrorzone.ru,ifnews.org.ua,igry-online.net,itechua.com,izbezhat-nakazania.com,jetsetter.ua,jut.su,kievvlast.com.ua,kinoafisha.info,ko.com.ua,kosti-tv.com,kushvsporte.ru,likeni.ru,lovesun.by,lvnews.org.ua,mac-torrent-download.net,madjong-besplatno.ru,mirf.ru,moldfootball.com,mybrazz.club,nashkiev.ua,ne-kurim.ru,pesikot.org,pimpletv.ru,playua.net,post-tracker.ru,povarenok.ru,prodota.ru,prosports.kg,prosports.kz,prosportua.com,relook.ru,rvnews.rv.ua,saratovnews.ru,shuba.life,sopsport.org,spletnica-tv.com,sportarena.com,strela-online.com,teenwolf-tv.com,tenews.org.ua,tg.telepult.pro,the-geek.ru,theflash-tv.com,topfile.tj,traktorist.ua,uanews.org.ua,udargol.com,upl.ua,vskazke-tv.com,zab.ru,zorgee.ru##body > a[href][target="_blank"]
+d20321 1
 d20399 1
 a20399 1
 nnm-club.me,nnmclub.ro,nnmclub.to##center > a[style="color: green; font-size: 16px; font-weight: bold"]
 d20404 1
 a20404 1
 nnm-club.me,nnmclub.ro,nnmclub.to##center > big
+a20675 1
+russian.rt.com##div[class^="Popup-"]
 d21505 1
 a21505 1
 nnm-club.me,nnmclub.ro,nnmclub.to##iframe[src*="/forum/ads/"]
@@ -64,7 +85,7 @@ a22002 1
 diakov.net#?#td[width="50%"]:-abp-has(> [id^="adfox_"])
 d22091 1
 a22091 1
-||pikabu.ru/ajax/*?b456d=$xmlhttprequest
+||pikabu.ru/ajax/*?T23Er=$xmlhttprequest
 d22625 4
 a22628 4
 fanserial.*,fanserial.сс,myfanserial.net,1fanserials.ru##.article-aside-promo
@@ -79,10 +100,13 @@ a22708 1
 ru##[data-ns-portal] ul[class^="footerLogos_"] [href*="/?erid"]
 a22889 1
 lenta.ru##.traffic-exchange
-a23083 1
+a23083 2
+sports.ru#?#.aside-news-list__item:-abp-has(> a[href^="https://sirena.world/"])
 sports.ru##.branding-ad-link
 a23097 1
 sports.ru#?#.material-list__item:-abp-has(a[href^="https://sprts.cc/"])
+a23102 1
+sports.ru##.news-ad-inreads
 a23116 1
 sports.ru##.sb-linked-image
 a23122 1
@@ -92,14 +116,16 @@ sports.ru##article.material-list__item[data-link^="https://sirena.world/"]
 d23155 1
 d23164 1
 d23169 9
-a23177 4
+a23177 5
 ||dumpster.cdn.sports.ru/*.webp|$image
 ||s5o.ru/build/_desktop/split_testing_init.js
 ||senoval.cdn.sports.ru/cross-recommender/
+||senoval.cdn.sports.ru/news-renderer/public/SparrowRecommendations-
 ||senoval.cdn.sports.ru/s-presence/sblock-presence.min.js
 d26504 1
 a26504 1
 baskino.film,dnepr.info,dugtor.ru,filmitorrent.net,filmitorrent.site,jetsetter.ua,kinoafisha.ua,kinobar.vip,kinoukr.com,konohatv.org,ladys.media,moskva.fm,newstudio.tv,nnm-club.me,nnmclub.ro,nnmclub.to,pay-day.ru,roem.ru,rusfootball.info,trupornolabs.org,utorr.cc,vc.ru,virusinfo.info,xxxadulttorrent.org,you-anime.ru,yummyanime.tv,zombie-film.live##body:not(#id):style(padding-top: 0 !important)
+d27240 3
 d27517 3
 a27519 3
 nnm-club.me,nnmclub.ro,nnmclub.to##.postquotehref:style(position: inherit !important)
@@ -109,7 +135,7 @@ a27821 1
 sports.ru##body > div[id][style="padding-top: 306px; margin-top: 0px;"]:style(padding-top: 96px !important)
 d28388 1
 a28388 1
-fastpic.org,kaztorka.org,kg-portal.ru,~new.fastpic.org,nnm-club.me,nnmclub.ro,nnmclub.to##+js(abort-current-inline-script, document.createElement, Math.random)
+fastpic.org,kg-portal.ru,~new.fastpic.org,nnm-club.me,nnmclub.ro,nnmclub.to##+js(abort-current-inline-script, document.createElement, Math.random)
 d28434 1
 a28434 1
 nnm-club.me,nnmclub.ro,nnmclub.to##+js(abort-on-property-read, _0x1ece)
