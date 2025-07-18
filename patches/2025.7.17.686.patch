@@ -1,8 +1,8 @@
-diff name:ruadlist lines:19 checksum:e28e69ef38
+diff name:ruadlist lines:24 checksum:402e7e1be4
 d4 2
 a5 2
-! Last modified: Fri, 18 Jul 2025 13:01:18 +0000
-! Diff-Path: ../patches/2025.7.18.781.patch#ruadlist
+! Last modified: Fri, 18 Jul 2025 17:31:32 +0000
+! Diff-Path: ../patches/2025.7.18.1051.patch#ruadlist
 d8963 1
 a9138 1
 /fcgi-bin/dispatch.fcgi?$popup
@@ -10,6 +10,8 @@ a13748 1
 pornhub.com,pornhub.org###ageDisclaimerMainBG
 a16854 1
 pornhub.org##.js_promoItem
+a17772 1
+cont.ws##.remove-fftv-link
 a17943 1
 sport-express.net,sport-express.ru##.se-translation-scoreboard-event-badge
 d19391 1
@@ -18,3 +20,6 @@ a19391 1
 d22085 1
 a22085 1
 ||pikabu.ru/ajax/*?bjk7t=$xmlhttprequest
+a28332 2
+mail.ru##html[style*="-tgbv"] > body[style*="position: fixed;"] > div[class=""][style=""] > .modal
+mail.ru##html[style*="-tgbv"] > body[style*="position: fixed;"]:style(position: unset !important)

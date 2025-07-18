@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 18 Jul 2025 13:01:18 +0000
-! Diff-Path: ../patches/2025.7.18.781.patch#ruadlist
+! Last modified: Fri, 18 Jul 2025 17:31:32 +0000
+! Diff-Path: ../patches/2025.7.18.1051.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -17772,6 +17772,7 @@ newsua.one#?#.related_news:-abp-has(script)
 pronovostroy.ru##.relative-products
 kurer-sreda.ru##.reld-1
 zenit-fk.ru##.remodal-is-opened
+cont.ws##.remove-fftv-link
 ero-top.info##.remove_in_mobile
 remontka.pro##.remt
 business-class.su,time.kz##.rennab
@@ -28333,6 +28334,8 @@ mail.ru##div[slot="main-column"] > .micro-widgets:style(height: auto !important;
 mail.ru##div[slot="main-column"] > .tabs__container:style(margin-top: 5px !important)
 my.mail.ru##html.window-loaded .b-video-backscreen
 my.mail.ru##html.window-loaded .b-video-controls__inside-play-button:style(visibility: visible !important; opacity: 0 !important; width: 100% !important; height: 100% !important; top: 0 !important; left: 0 !important)
+mail.ru##html[style*="-tgbv"] > body[style*="position: fixed;"] > div[class=""][style=""] > .modal
+mail.ru##html[style*="-tgbv"] > body[style*="position: fixed;"]:style(position: unset !important)
 mail.ru##main#grid .promo-news
 mail.ru##main#grid .tabs__settings
 mail.ru##main#grid > .grid-middle ~ div:not([class]):not([id])
