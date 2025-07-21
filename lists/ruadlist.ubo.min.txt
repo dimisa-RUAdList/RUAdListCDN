@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 21 Jul 2025 05:37:34 +0000
-! Diff-Path: ../patches/2025.7.21.337.patch#ruadlist
+! Last modified: Mon, 21 Jul 2025 10:36:23 +0000
+! Diff-Path: ../patches/2025.7.21.636.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -9099,7 +9099,6 @@ $third-party,popup,domain=2ip.ru
 ||namba.tj^$popup,domain=namba.tj
 ||onelink.me^$popup,domain=2ip.io|2ip.ru|2ip.ua
 ||otus.ru/*utm_$third-party,popup
-||rusvpn.com^$popup,domain=tornado.3dn.ru
 ||special.playground.info/haval$popup
 ||topofgames.com^*?path=$popup
 ||torrentum.ru^$popup
@@ -10946,7 +10945,6 @@ igdz1.ru^$script,domain=igdz.ru
 ||anilibria.*/api/v*/ads/
 ||anime-365.ru/promo/
 ||animechan.ru/fun/
-||animecos.ru/templates/animecos/images/cross.
 ||animecult.me/*.js|$third-party,script
 ||animedia.tv/img/promo/
 ||animedia.tv^*/bnr/
@@ -13228,7 +13226,6 @@ igdz1.ru^$script,domain=igdz.ru
 ||topvideo.tj/media/branding/
 ||topvideo.tj/media/catfish/
 ||topwar.ru/bg/
-||tornado.3dn.ru/*/bg-vpn.$image
 ||torrent-chic.ru/2019/
 ||torrent-games.*/templatetgnew/images/background
 ||torrent-ideal.ru/*best/
@@ -15504,7 +15501,7 @@ gid-minecraft.ru##.banner-bottom-wrapper
 dynamomania.com##.banner-box
 driveroff.net,samlab.ws##.banner-categories
 repost.uz,tvmag.ru##.banner-center
-amurmedia.ru,chitamedia.su,chukotkamedia.ru,eaomedia.ru,irkutskmedia.ru,job.ru,kamchatkamedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,magadanmedia.ru,nakhodka.media,newsvl.ru,nord-news.ru,priamurmedia.ru,primamedia.ru,sakhalinmedia.ru,sevastopolmedia.ru,shedevrum.ai,stavropol.media,tayga.info,tet.tv,ulanmedia.ru,unian.info,unian.net,unian.ua,ussurmedia.ru,vctr.media,wallnews.org,yakutiamedia.ru,yugopolis.ru##.banner-container
+amurmedia.ru,angarskmedia.ru,chitamedia.su,chukotkamedia.ru,eaomedia.ru,irkutskmedia.ru,job.ru,kamchatkamedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,magadanmedia.ru,nakhodka.media,newsvl.ru,nord-news.ru,priamurmedia.ru,primamedia.ru,sakhalinmedia.ru,sevastopolmedia.ru,shedevrum.ai,stavropol.media,tayga.info,tet.tv,ulanmedia.ru,unian.info,unian.net,unian.ua,ussurmedia.ru,vctr.media,wallnews.org,yakutiamedia.ru,yugopolis.ru##.banner-container
 para.by##.banner-cube
 biysk-ok.ru##.banner-default
 vikna.if.ua##.banner-fullborder
@@ -17932,7 +17929,6 @@ med.vesti.ru##.sb-banner
 beauty.ua,viva.ua##.sb-partners
 edyna.media#?#.sb__column > .sb__section:-abp-has(> .sb-partners)
 agroinfo.kz##.sbanner
-tornado.3dn.ru#?#.sblock:-abp-has(> .b_title > .ins:-abp-contains(Реклама))
 uaspectr.com##.sbr-slider > .pst-block > .pst-block-head
 tagilcity.ru##.sbs_p
 sportsdaily.ru##.schedule__bet-block
@@ -18047,7 +18043,6 @@ webtun.com##.sidebar > .dcont
 wikiwolrd.com##.sidebar > .flying
 nashemisto.dp.ua##.sidebar > .nm-banner-widget
 do4a.net#?#.sidebar > .section:-abp-has(h3:-abp-contains(Реклама))
-anigang.org##.sidebar > .side-box > center ~ *
 turkcinema.org##.sidebar > .widget-wrap ~ .widget-wrap > .widget_text
 ktozvonit.com.ua#?#.sidebar > .widget:-abp-has(> .adsbygoogle)
 ukrmilitary.com##.sidebar > .widget:nth-child(-n+4) > .widget-content div[style="text-align: center;"] > a[href]
@@ -19468,7 +19463,6 @@ filmisub.com##a[href*="728x90"]
 bizmedia.kz,nur.kz##a[href*="://1xbet."]
 allboxing.ru##a[href*="://aff1xstavka.com/"]
 rutracker.ru,wuxiaworld.ru##a[href*="://ali.ski/"]
-anifors.ru,anigang.org,animecos.ru,animesos.ru,shinigami.tv##a[href*="://animedub.ru/"]
 argumenti.ru##a[href*="://argumenti.ru/ad_informer/click/"]
 penzainform.ru##a[href*="://b.penzainform.ru/go/"]
 asienda.ru,diets.ru,mycharm.ru,myjane.ru,povarenok.ru,relook.ru,stranamam.ru##a[href*="://beta.mediafort.ru/textclick.php?id="]
@@ -21801,7 +21795,7 @@ car72.ru##section > .container-fluid > div[style^="width:"][style$="%"]
 stopgame.ru#?#section > div[class^="_content-wrapper_"]:-abp-has(> div > a[href^="/watch"]) ~ div[class^="_content"] a[href^="/to?http"]
 eanews.ru#?#section > section:-abp-has(> [class^="styled__AdvLink-sc-"])
 shuba.life##section.c-post__full > [style="overflow: hidden;"]
-amurmedia.ru,chitamedia.su,chukotkamedia.ru,eaomedia.ru,irkutskmedia.ru,job.ru,kamchatkamedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,magadanmedia.ru,nakhodka.media,newsvl.ru,priamurmedia.ru,primamedia.ru,sakhalinmedia.ru,sevastopolmedia.ru,stavropol.media,tayga.info,tet.tv,ulanmedia.ru,unian.info,unian.net,unian.ua,ussurmedia.ru,vctr.media,yakutiamedia.ru,yugopolis.ru##section.countdown
+amurmedia.ru,angarskmedia.ru,chitamedia.su,chukotkamedia.ru,eaomedia.ru,irkutskmedia.ru,job.ru,kamchatkamedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,magadanmedia.ru,nakhodka.media,newsvl.ru,priamurmedia.ru,primamedia.ru,sakhalinmedia.ru,sevastopolmedia.ru,stavropol.media,tayga.info,tet.tv,ulanmedia.ru,unian.info,unian.net,unian.ua,ussurmedia.ru,vctr.media,yakutiamedia.ru,yugopolis.ru##section.countdown
 tengrinews.kz#?#section:-abp-has(> .ya-news)
 rutube.ru##section[aria-label="информационный баннер"]
 iguides.ru##section[class*="-right "] > .listing-mini
@@ -22086,7 +22080,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||news.mail.ru/-/*.js?
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
-||pikabu.ru/ajax/*?bjk7t=$xmlhttprequest
+||pikabu.ru/ajax/*?L987y=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -26530,9 +26524,6 @@ www.1tv.ru##div[class^="Branding_container_"]:style(margin-top: unset !important
 2ip.io,2ip.ru##.consent__notice ~ .body-blackout
 2ip.io,2ip.ru##body:style(overflow: auto !important)
 ! ---
-tornado.3dn.ru##.wrap:style(cursor: default !important)
-tornado.3dn.ru##.wraps:style(margin-top: 0 !important)
-! ---
 3dnews.ru##.article > .onadlable
 3dnews.ru##.article > .onadlable ~ .js-mediator-article a[href]:not([href^="/"]):not([href^="#"]):not([href*="3dnews."]):style(pointer-events: none !important; text-decoration: none !important; color: inherit !important)
 ! ---
@@ -26623,9 +26614,6 @@ anime-naruto.ru,blich.ru,borutoplanet.ru,bungou-stray-dogs.ru,doktor-stoun.ru,ha
 ! ---
 anime777.ru##.need-friends:style(margin-top: 125px !important)
 anime777.ru##.vsemayki-banner
-! ---
-animecos.ru##.headb:style(height: auto !important)
-animecos.ru##.wrap:style(margin-top: unset !important)
 ! ---
 animedia.pro##.content > .media:style(padding-bottom: unset !important)
 animedia.pro,tt.animedia.tv##.main-container:style(margin-top: 80px !important)
@@ -26964,6 +26952,7 @@ filmitorrent.net,filmitorrent.site,utorr.cc##body > #container:style(margin-top:
 ! ---
 filmix.date,filmix.life,filmix.my,filmix.pub,filmix.tech,filmix.zone##.main-wrapper:style(margin-top: 0 !important)
 filmix.date,filmix.life,filmix.my,filmix.pub,filmix.tech,filmix.zone##.page-wrapper:style(margin-top: 0 !important)
+filmix.day##.wrap:style(margin-top: 0 !important)
 ! ---
 filmozavr.com,filmozavr.net##.maincontent:style(margin-top: 0 !important)
 ! ---
@@ -28508,7 +28497,6 @@ sinoptik.ua##+js(abort-on-property-read, vpb)
 bombardir.ru,comp-service.kiev.ua,inforesist.org,www.xcom-shop.ru##+js(abort-on-property-read, window.alert)
 softportal.com##+js(abort-on-property-read, window.block)
 growhow.in.ua##+js(abort-on-property-read, wpsite_clickable_data)
-tornado.3dn.ru##+js(abort-on-property-read, wrapper.addEventListener)
 80-e.ru,doramatv.live,examenpdd.com,rg.ru,shadowcore.ru,ura.news##+js(abort-on-property-read, yaContextCb)
 animedia.tv,animedub.ru,vsetut.su##+js(abort-on-property-read, zfgformats)
 transkarpatia.net##+js(abort-on-property-write, NiceScroll)
@@ -28921,6 +28909,7 @@ ya.ru,yandex.*##.simple-popup__overlay:remove()
 ||1wzyuh.com^$popunder
 ||adbutton.net^$script,redirect=noopjs
 ||ads.vk.com/public/leadform?$important,popup
+||aj1907.online/*.js|$script,redirect=noopjs
 ||an.yandex.ru^$domain=e.mail.ru
 ||cdn.hsmedia.ru/ump-webapp-public/dist/client/assets/ArticleBlockVideo-$script,domain=fontanka.ru
 ||clustrmaps.com/counter/$image,redirect=32x32.png
