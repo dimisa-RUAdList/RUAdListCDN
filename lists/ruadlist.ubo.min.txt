@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 24 Jul 2025 04:04:33 +0000
-! Diff-Path: ../patches/2025.7.24.244.patch#ruadlist
+! Last modified: Thu, 24 Jul 2025 08:39:42 +0000
+! Diff-Path: ../patches/2025.7.24.519.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -17959,7 +17959,7 @@ ura-inform.com##.search_bar ~ .padd
 salonav.com##.secondary-sidebar > .mom_custom_text
 drinks.ua##.secondary-slider
 softbesplatno.net##.sect-recl
-ctrana.one,strana.news,strana.one,strana.today##.sect-repeat-ban
+ctrana.one,strana.news,strana.one,strana.today,stranaua.media##.sect-repeat-ban
 utkonos.mybb.ru##.section > #tn1
 kulturomania.ru##.section-banner
 mastergrad.com##.section-body > [itemprop="comment"] ~ div[style="margin-bottom: 15px;"]
@@ -22089,7 +22089,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||news.mail.ru/-/*.js?
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
-||pikabu.ru/ajax/*?U6t55=$xmlhttprequest
+||pikabu.ru/ajax/*?W6y7u=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
