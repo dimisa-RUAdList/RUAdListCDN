@@ -1,8 +1,8 @@
-diff name:ruadlist lines:30 checksum:0b37e26804
+diff name:ruadlist lines:38 checksum:bd43f8cc0d
 d4 2
 a5 2
-! Last modified: Fri, 25 Jul 2025 09:35:07 +0000
-! Diff-Path: ../patches/2025.7.25.575.patch#ruadlist
+! Last modified: Fri, 25 Jul 2025 14:31:15 +0000
+! Diff-Path: ../patches/2025.7.25.871.patch#ruadlist
 a2255 1
 ||gameinstaller.ru^$third-party
 d12976 1
@@ -16,16 +16,24 @@ a20179 1
 gzt-sv.ru,iptv.org.ua,muz-teoretik.ru,profootball.ua,telik.top,tva.org.ua##aside .widget_custom_html
 a21171 1
 football24.ua##div[id^="igamingBlock-"]
-d21393 1
+a21716 1
+small-games.info##noindex > .light
 d22092 1
 a22092 1
 ||pikabu.ru/ajax/*?eKU7Y=$xmlhttprequest
-d22183 1
-a22183 1
-apad2.top,besplatnyeprogrammy.ru,hdrip.info,inferno.games,mediagetguru.ru,monna2.top,only-soft.org,rutor-gamer.info,rutor-gamer.ru,small-games.info,torrent-music.ru,torrent-soft.pro,torrentigo.net,where-game.ru##:not(this-site-promotes-malware)
+a23370 1
+yandex.ru,yandex.*##.map-controls__additional-button .promo-button
+a26395 1
+lumex.space##.nv-blocker
 a26415 1
 /assets/ARu.$image,domain=yummy-ani.me|yummy-anime.ru|yummyani.me
+a26461 1
+yummy-ani.me,yummy-anime.ru,yummyani.me##img[src*="/assets/ARu."]
+a26473 1
+||lumex.space/assets/adblock_$image
 d26475 1
-a27633 2
-! ---
+a27634 2
 profootball.ua###page:style(margin-top: 0 !important)
+! ---
+a28601 1
+lumex.space##+js(json-prune-fetch-response, ads.banners.endtag ads.banners.pausebanner ads.rolls)
