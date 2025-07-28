@@ -1,8 +1,8 @@
-diff name:ruadlist lines:49 checksum:3d11fb6536
+diff name:ruadlist lines:56 checksum:6464b8ae7d
 d4 2
 a5 2
-! Last modified: Mon, 28 Jul 2025 13:03:08 +0000
-! Diff-Path: ../patches/2025.7.28.783.patch#ruadlist
+! Last modified: Mon, 28 Jul 2025 17:32:31 +0000
+! Diff-Path: ../patches/2025.7.28.1052.patch#ruadlist
 a2506 1
 ||gumyfui.com^$third-party
 a8695 1
@@ -35,12 +35,19 @@ a22898 1
 championat.com,championat.ru##[data-champ*="Okko"]
 a23371 1
 yandex.ru,yandex.*##.map-controls__additional-button .promo-button
+d24029 1
+a24029 1
+||dzen.ru^$third-party,~subdocument,domain=~sportsdzen.ru
 a26396 1
 lumex.space##.nv-blocker
 a26463 1
 yummy-ani.me,yummy-anime.ru,yummyani.me##img[src*="/assets/ARu."]
 a26475 1
 ||lumex.space/assets/adblock_$image
+a28083 1
+dzen.ru##div[class*="-right-ad-column"]
+a28550 1
+dzen.ru,sportsdzen.ru##+js(addEventListener-defuser, click, , elements, [data-appid^="news-site"])
 a28604 1
 lumex.space##+js(json-prune-fetch-response, ads.banners.endtag ads.banners.pausebanner ads.rolls)
 d29048 3

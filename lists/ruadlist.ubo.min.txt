@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 28 Jul 2025 13:03:08 +0000
-! Diff-Path: ../patches/2025.7.28.783.patch#ruadlist
+! Last modified: Mon, 28 Jul 2025 17:32:31 +0000
+! Diff-Path: ../patches/2025.7.28.1052.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -24035,7 +24035,7 @@ zarulem.ws##td[style^="text-align:center;width:50%"]
 ||drweb.com/pix/$object
 ||duuw.nm.ru^
 ||dverizamki.org/bshow/
-||dzen.ru^$third-party,~subdocument
+||dzen.ru^$third-party,~subdocument,domain=~sportsdzen.ru
 ||e-links.ru^
 ||e-mint.ru^$third-party
 ||e-place.ru^
@@ -28093,6 +28093,7 @@ dzen.ru##div[class*="video-site"] [aria-label] > div[id]
 dzen.ru##[class*="withStickyAdOnArticle"]
 dzen.ru##[class*="yandex-direct"]
 dzen.ru##[data-testid="dzenpro-banner"]
+dzen.ru##div[class*="-right-ad-column"]
 dzen.ru##div[class*="adContentWrapper"]
 dzen.ru##div[class*="adSplitEmbed"]
 dzen.ru##div[class*="bannerMain"]
@@ -28560,6 +28561,7 @@ xv-ru.com##+js(addEventListener-defuser, DOMContentLoaded, exo_tracker)
 litnet.com##+js(addEventListener-defuser, DOMContentLoaded, feedback)
 regnum.news,regnum.ru,tproger.ru##+js(addEventListener-defuser, click, '', elements, a[href*="utm_campaign"])
 116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,62.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,www.fontanka.ru##+js(addEventListener-defuser, click, , elements, [class^="plotsLine_"] > div)
+dzen.ru,sportsdzen.ru##+js(addEventListener-defuser, click, , elements, [data-appid^="news-site"])
 softonic.ru##+js(addEventListener-defuser, click, [native code])
 ~player.smotrim.ru,smotrim.ru##+js(addEventListener-defuser, click, matches)
 ~id.rambler.ru,~mail.rambler.ru,rambler.ru,~vp.rambler.ru##+js(addEventListener-defuser, copy, extra)
