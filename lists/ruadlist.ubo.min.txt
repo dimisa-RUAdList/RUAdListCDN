@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 29 Jul 2025 08:40:10 +0000
-! Diff-Path: ../patches/2025.7.29.520.patch#ruadlist
+! Last modified: Tue, 29 Jul 2025 13:04:07 +0000
+! Diff-Path: ../patches/2025.7.29.784.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22436,6 +22436,7 @@ dzen.ru##[id*="_R-A-"]
 dzen.ru##[id*="_R-I-"]
 dzen.ru##div[class*="DirectAdvert"]
 sportsdzen.ru##div[class*="bookmakerOdds"]
+sportsdzen.ru##div[class*="mascot-banner"]
 dzen.ru##div[class*="news_branding"]
 dzen.ru,sportsdzen.ru##div[class^="news-"][class*="Branding"]
 dzen.ru##div[class^="news-"][class*="_banner"]
@@ -26403,7 +26404,6 @@ retail.ru##.markup__c1
 retail.ru##.markup__p1
 playground.ru##.mezzanine > .mezzanine-center > div:not([class])
 forum.niiot.net##.modal
-lumex.space##.nv-blocker
 allbookerka.org##.overhang
 2x2tv.ru##.owl-wrapper-outer .slideAlt
 retail.ru##.p1-retail
@@ -26484,7 +26484,6 @@ forums.overclockers.ru##tr > td[nowrap="nowrap"][style^="color: red;"][style$="f
 ||howdyho.*/media/js/main-pn5-ru.js
 ||in-english.club/statistic/my.js
 ||itcrowd.top/templates/yootheme/block.js
-||lumex.space/assets/adblock_$image
 ||moi-detsad.ru/wp-content/cache/autoptimize/js/autoptimize_*.js
 ||nnmstatic.win/forum/docs/requests.js
 ||pcnews.ru/js/blockadblock.js
@@ -28114,6 +28113,10 @@ dzen.ru##[class^="news-site--Infinite"][class*="AdColumnItem-desktop__content"] 
 dzen.ru,sportsdzen.ru##div[class^="news-site-"][class*="skeleton"]:style(background-color: transparent !important)
 dzen.ru##div[class^="news-site--"] > section ~ [id]
 dzen.ru##div[id^="ad-"][class*=" news-"]
+! исправление ошибок и косяков оригинальной вёрстки
+dzen.ru,sportsdzen.ru##.news-media-block__preview-fold-count
+dzen.ru,sportsdzen.ru##.news-media-block__preview-play
+dzen.ru,sportsdzen.ru##.news-media-block__preview:style(cursor: auto !important)
 ! погода
 dzen.ru##.adv-ecom
 dzen.ru##.b-page_type_maps div[class$="__content"] > [class$="__ad"] > div:style(width: unset !important)
@@ -28641,6 +28644,7 @@ reshu.by,sdamgia.ru##+js(nano-setTimeout-booster, {return f(!1)}, 20000)
 www.ukr.net##+js(no-fetch-if, /_events/)
 volley.ru##+js(no-fetch-if, /buzzoola\.com|plrjs\.org/)
 trychatgpt.ru##+js(no-fetch-if, /mpsuadv\.ru/)
+dzen.ru,sportsdzen.ru##+js(no-fetch-if, /stats/bulk)
 animix.lol##+js(no-fetch-if, doubleclick.net)
 ya.ru##+js(no-fetch-if, rythm_market)
 websdr.su##+js(no-setInterval-if, '(clearInterval(e)')

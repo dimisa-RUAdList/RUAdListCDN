@@ -1,8 +1,8 @@
-diff name:ruadlist lines:23 checksum:7762cbca99
+diff name:ruadlist lines:34 checksum:de5d7ed21e
 d4 2
 a5 2
-! Last modified: Tue, 29 Jul 2025 08:40:10 +0000
-! Diff-Path: ../patches/2025.7.29.520.patch#ruadlist
+! Last modified: Tue, 29 Jul 2025 13:04:07 +0000
+! Diff-Path: ../patches/2025.7.29.784.patch#ruadlist
 a8696 1
 ##a[href*="://clicks.af-ru2e2e.com/"]
 a17912 1
@@ -10,13 +10,24 @@ kommersant.ru##.rubric_branding
 d22097 1
 a22097 1
 ||pikabu.ru/ajax/*?eKT7Y=$xmlhttprequest
+a22436 1
+sportsdzen.ru##div[class*="mascot-banner"]
 d24036 1
 a24036 1
 ||dzen.ru^$third-party,~subdocument,domain=~sportsdzen.ru
+d26404 1
+d26485 1
 a28093 1
 dzen.ru##div[class*="-right-ad-column"]
+a28113 4
+! исправление ошибок и косяков оригинальной вёрстки
+dzen.ru,sportsdzen.ru##.news-media-block__preview-fold-count
+dzen.ru,sportsdzen.ru##.news-media-block__preview-play
+dzen.ru,sportsdzen.ru##.news-media-block__preview:style(cursor: auto !important)
 a28560 1
 dzen.ru,sportsdzen.ru##+js(addEventListener-defuser, click, , elements, [data-appid^="news-site"])
+a28639 1
+dzen.ru,sportsdzen.ru##+js(no-fetch-if, /stats/bulk)
 d29059 3
 a29061 3
 24boxing.com.ua,avtovod.com.ua,bigmir.net,bilshe.com,buhgalter.com.ua,buhgalter911.com,businessua.com,censor.net,dengi.ua,ditey.com,epravda.com.ua,f1analytic.com,facenews.ua,factor.ua,football-ukraine.com,football24.ua,footballgazeta.com,footballtransfer.com.ua,gazeta.ua,glianec.com,gorod.dp.ua,hvylya.net,i.ua,inforesist.org,isport.ua,ivona.ua,kolobok.ua,kriminal.tv,liga.net,meteo.ua,meteofor.com.ua,nnovosti.info,nv.ua,panno4ka.net,pogodaua.com,pravda.com.ua,real-vin.com,smak.ua,sportanalytic.com,stravy.net,tochka.net,tv.ua,viva.ua,vsetv.com,www.ukr.net,zdorovia.com.ua##+js(remove-node-text, script, "Shadow)
