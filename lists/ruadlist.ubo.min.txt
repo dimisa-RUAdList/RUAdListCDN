@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 31 Jul 2025 10:35:59 +0000
-! Diff-Path: ../patches/2025.7.31.635.patch#ruadlist
+! Last modified: Thu, 31 Jul 2025 15:33:46 +0000
+! Diff-Path: ../patches/2025.7.31.933.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -16375,7 +16375,7 @@ allboxing.ru#?#.field-item > p:-abp-has(noindex [href*="pari.ru"])
 allboxing.ru#?#.field-item > p:-abp-has(noindex [href*="utm_campaign"])
 libertycity.net,libertycity.ru##.file_download > div[style*="height:"]
 libertycity.net,libertycity.ru##.file_info_ad
-kinorium.com##.film-page__buttons-cinema
+kinorium.com##.film-page__buttons-watch
 fast-fiml.ru,fast-torrent.club,fast-torrent.ru,fast-torrent.su,filmpotok.ru,kinomuch.ru,nebeda.net,pickfilm.ru,veleto.ru,vixim.ru##.film_page > div:not([id]):not([class]) > center
 asn.in.ua##.filter-container
 nixp.ru##.firefox
@@ -28561,6 +28561,7 @@ regnum.news,regnum.ru,tproger.ru##+js(addEventListener-defuser, click, '', eleme
 dzen.ru,sportsdzen.ru##+js(addEventListener-defuser, click, , elements, [data-appid^="news-site"])
 softonic.ru##+js(addEventListener-defuser, click, [native code])
 ~player.smotrim.ru,smotrim.ru##+js(addEventListener-defuser, click, matches)
+lrepacks.net##+js(addEventListener-defuser, click, pop)
 ~id.rambler.ru,~mail.rambler.ru,rambler.ru,~vp.rambler.ru##+js(addEventListener-defuser, copy, extra)
 kp.kg,kp.kz,kp.md,kp.ru,rbc.ru,sportrbc.ru##+js(addEventListener-defuser, copy, getSelection)
 carservic.ru,iptv.org.ua,tva.org.ua,ufchgu.ru##+js(addEventListener-defuser, copy, pagelink)
@@ -28752,8 +28753,6 @@ frontend.vh.yandex.ru##+js(set-constant, Object.prototype.initialAutoplay, null)
 rbc.ru,sportrbc.ru##+js(set-constant, Object.prototype.livetv-state, true)
 tenews.org.ua##+js(set-constant, Object.prototype.manualAutoplay_, null)
 vp.rambler.ru##+js(set-constant, Object.prototype.minPlayingVisibleHeight, noopFunc)
-rg.ru##+js(set-constant, Object.prototype.onIntersected, noopFunc)
-rg.ru##+js(set-constant, Object.prototype.openstatCb, undefined)
 dzen.ru,frontend.vh.yandex.ru,naydex.net,widgets.kinopoisk.ru,www.kinopoisk.ru,yastatic.net##+js(set-constant, Object.prototype.partnerId, {})
 3dnews.ru,vm.ru##+js(set-constant, Object.prototype.playVideo, noopFunc)
 dzen.ru##+js(set-constant, Object.prototype.protect, undefined)
