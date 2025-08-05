@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 04 Aug 2025 19:27:25 +0000
-! Diff-Path: ../patches/2025.8.4.1167.patch#ruadlist
+! Last modified: Tue, 05 Aug 2025 02:32:10 +0000
+! Diff-Path: ../patches/2025.8.5.152.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22784,6 +22784,9 @@ www.e1.ru#?#section:-abp-has(> div[class]:empty + div[class]:empty + div[class]:
 ||naydex.net^$domain=e1.ru
 ! баннер в хидере мобильной версии
 116.ru,72.ru,e1.ru,ngs55.ru##[data-ref="sticky-header-wrap"] > [data-test="sticky-header"] ~ div
+! бесконечная загрузка в хроме
+e1.ru#?#a[target="_blank"]:-abp-has([src="https://n1s1.hsmedia.ru/svgs/f4/f476378cca0e48ffe11350485363e787.svg"])
+||n1s1.hsmedia.ru/svgs/f4/f476378cca0e48ffe11350485363e787.svg$domain=e1.ru
 ! Overclockers.ru
 forums.overclockers.ru##.adsbygoogle
 overclockers.ru##.an-line-between
@@ -27412,7 +27415,8 @@ www.liveinternet.ru##:not(.allpageinner) > :not(.header) > .logo > a[href="/"] >
 ! LiveJournal
 www.livejournal.com##.mainpage > div[class]:style(min-height: 0 !important)
 lena-miro.ru,levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##.mdspost > div[class]:style(min-height: 0 !important)
-livejournal.com##.s-layout > div[class]:style(min-height: 0 !important)
+lena-miro.ru,levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##.pagewide-wrapper:style(min-height: 0 !important)
+lena-miro.ru,levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##.s-layout > div[class]:style(min-height: 0 !important)
 lena-miro.ru,levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##header > div[class]:style(min-height: 0 !important)
 ! ---
 liveresult.ru##.main:style(margin-top: 0 !important)
