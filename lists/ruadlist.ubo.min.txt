@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 06 Aug 2025 16:39:42 +0000
-! Diff-Path: ../patches/2025.8.6.999.patch#ruadlist
+! Last modified: Wed, 06 Aug 2025 21:27:45 +0000
+! Diff-Path: ../patches/2025.8.6.1287.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -14620,9 +14620,9 @@ smartbobr.ru###servisybuttons
 superhumor.ru,voffka.com###shapka-blk
 klubok.com###shops-wrap
 literator.org###showcase
-h-chan.me,hentaichan.live###side > div:not([id]):not([class]):first-child
-h-chan.me,hentaichan.live###side > div:not([id]):not([class]):first-child + br
-h-chan.me,hentaichan.live###side > div:not([id]):not([class]):first-child + br + .area_right
+h-chan.me,hentaichan.live,hentaichan.pro###side > div:not([id]):not([class]):first-child
+h-chan.me,hentaichan.live,hentaichan.pro###side > div:not([id]):not([class]):first-child + br
+h-chan.me,hentaichan.live,hentaichan.pro###side > div:not([id]):not([class]):first-child + br + .area_right
 vpk.name###side > div[style*="300px"][style*="600px"]
 drive.ru###side-dv
 igrozor.org###sideAdv
@@ -15919,6 +15919,7 @@ templateinstant.ru##.bs-topbanner
 seeds.org.ua##.bsac
 partnerkin.com##.bst_wrap
 nnm-club.me,nnmclub.ro,nnmclub.to##.btTbl > tbody > .row1 > .genmed[align="center"] noindex
+wildberries.ru##.btn-advertising
 livelib.ru##.btn-buy-holder
 download-windows.org,softhome.ru##.btn-installpack
 shopping.nv.ua##.btn-product-embed
