@@ -1,8 +1,8 @@
-diff name:ruadlist lines:28 checksum:50ff9843af
+diff name:ruadlist lines:38 checksum:f777ab1e57
 d4 2
 a5 2
-! Last modified: Fri, 08 Aug 2025 08:40:55 +0000
-! Diff-Path: ../patches/2025.8.8.520.patch#ruadlist
+! Last modified: Fri, 08 Aug 2025 13:02:57 +0000
+! Diff-Path: ../patches/2025.8.8.782.patch#ruadlist
 a10723 1
 /videojs-vast-vpaid-waterfall.$domain=hcdn.online|hencdn.top
 d11724 1
@@ -13,13 +13,20 @@ a14625 3
 h-chan.me,hentaichan.live,hentaichan.pro###side > div:not([id]):not([class]):first-child
 h-chan.me,hentaichan.live,hentaichan.pro###side > div:not([id]):not([class]):first-child + br
 h-chan.me,hentaichan.live,hentaichan.pro###side > div:not([id]):not([class]):first-child + br + .area_right
+d14987 1
 d15065 1
 a15065 1
 433175.ru,allforpeople.net,govp.info,karaosha.ru,myshows.me,naurfo.ru##.adblock
 a15921 1
 wildberries.ru##.btn-advertising
+d16072 1
 a16249 1
 zakon.kz##.desktop-full-advert
+d20651 1
+d22074 2
+a22075 2
+||static.dzeninfra.ru/s3/zen-lib/*/dzen-desktop/*.*.*.*.*.*.*.$script
+||static.dzeninfra.ru/s3/zen-lib/*/dzen-layout/*.*.*.*.*.*.*.$script
 d22101 1
 a22101 1
 ||pikabu.ru/ajax/*?eB31z=$xmlhttprequest
@@ -27,3 +34,6 @@ a25869 2
 @@||moe.video/videos/*.m3u8|$xmlhttprequest,domain=karaosha.ru
 @@||moe.video/videos/*.ts|$xmlhttprequest,domain=karaosha.ru
 d26220 1
+a28864 1
+dzen.ru##:matches-path(/a/) [class^="content--article-"] [style^="opacity:"]
+d28866 1

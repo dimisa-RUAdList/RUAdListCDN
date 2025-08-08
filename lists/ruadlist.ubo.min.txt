@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 08 Aug 2025 08:40:55 +0000
-! Diff-Path: ../patches/2025.8.8.520.patch#ruadlist
+! Last modified: Fri, 08 Aug 2025 13:02:57 +0000
+! Diff-Path: ../patches/2025.8.8.782.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -14985,7 +14985,6 @@ i.ua##.Wrap > .anons
 bmwclub.ru##.XenAdvShop
 cameralabs.org##.Yreklama
 2gis.by,2gis.kz,2gis.ru##._1xza2sg
-novayagazeta.ru##._1ysoK
 yap.ru,yaplakal.com##.__axcode__
 gamestar.ru##.__b-popup1__
 vk.com,vk.ru##._ads_block_data_w
@@ -16071,7 +16070,6 @@ diablo.su##.comments-area
 superhumor.ru,voffka.com##.comments-head
 glavnoe.net,infotime.co##.comments-wrapper
 pikabu.ru##.comments__adv
-novayagazeta.ru##.comments_block div > article + div[style^="margin"]
 car.ru##.commercial
 anilibria.top,anilibria.wtf##.commercial-banner
 mgazeta.com,yantann.rbsmi.ru,yanzori.rbsmi.ru##.commercical_wrap
@@ -20651,7 +20649,6 @@ smi2.ru#?#div[class]:-abp-has(> div > [data-id^="adfox-"])
 smi2.ru#?#div[class]:-abp-has(> div > [data-id^="exAd_"])
 smi2.ru#?#div[class]:-abp-has(> div[font-size] > span:-abp-contains(/опрос/i))
 searchengines.guru#?#div[class]:-abp-has(> div[id][align="center"])
-novayagazeta.ru#?#div[class]:-abp-has(> div[style^="display"] ~ div > div[id*="adfox_"])
 www.kinopoisk.ru##div[class]:first-child > div[class*=" "] > div:first-child + :not(div) + div[class*=" "]:last-child
 ytvideo.ru##div[class][data-aid]
 dorognoe.ru,europaplus.ru,radio7.ru,retrofm.ru##div[class][data-element*="BANNER"]
@@ -22074,8 +22071,8 @@ ictv.ua,vikna.tv##div[id^="div-gpt-ad-"]
 ||dzen.ru/articles$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/news$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/pogoda/$script
-||static.dzeninfra.ru/s3/zen-lib/*/dzen-desktop/*_$script
-||static.dzeninfra.ru/s3/zen-lib/*/dzen-layout/*_$script
+||static.dzeninfra.ru/s3/zen-lib/*/dzen-desktop/*.*.*.*.*.*.*.$script
+||static.dzeninfra.ru/s3/zen-lib/*/dzen-layout/*.*.*.*.*.*.*.$script
 ||static.dzeninfra.ru/s3/zen-lib/*/news-site/*_$script
 $csp=script-src-attr 'none',domain=eurointegration.com.ua|pravda.com.ua|sportanalytic.com
 /^https?://24smi\.org/*[/]*[/][^\s]{8,}/$xmlhttprequest,domain=24smi.org
@@ -28866,8 +28863,8 @@ vk.com,vk.ru##.wall_module > div[id]:first-child > :matches-prop(innerHTML="/for
 /(aniqit|kodik)./$subdocument,removeparam=geoblock
 /^https?://yastatic\.net\/www\/_\/[^\s]{150,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 /sm\.news/[^\s]{80,}/$script,xmlhttprequest,badfilter,domain=sm.news
+dzen.ru##:matches-path(/a/) [class^="content--article-"] [style^="opacity:"]
 dzen.ru##:matches-path(/a/) [data-appid] > [itemscope] > div > div[id]
-dzen.ru##:matches-path(/a/) [data-appid] [style^="max-height:"] [style^="opacity:"]
 dzen.ru##:matches-path(/a/) div:matches-attr(/[a-z0-9]/=article-bottom-block) > [class*="social"] ~ div
 dzen.ru##:matches-path(/articles) div:has(> article > div > [class*="image"]:empty)
 ozon.ru##:matches-path(/kursk-sertifikaty) [data-lcp-name*="anner-"]:style(display: block !important)
