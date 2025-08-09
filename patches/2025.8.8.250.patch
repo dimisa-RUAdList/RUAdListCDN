@@ -1,15 +1,18 @@
-diff name:ruadlist lines:21 checksum:a90e07807d
+diff name:ruadlist lines:31 checksum:f92a490064
 d4 2
 a5 2
-! Last modified: Sat, 09 Aug 2025 09:28:45 +0000
-! Diff-Path: ../patches/2025.8.9.568.patch#ruadlist
+! Last modified: Sat, 09 Aug 2025 14:28:14 +0000
+! Diff-Path: ../patches/2025.8.9.868.patch#ruadlist
 a377 1
 ||agl007.site^$third-party
 a8217 1
 ?cp.host=*&cp.domain=$third-party,xmlhttprequest
+d10798 1
 d14988 1
 d16074 1
 d20654 1
+a20787 1
+2ip.ua##div[class^="custom_proxy"]
 d22077 2
 a22078 2
 ||static.dzeninfra.ru/s3/zen-lib/*/dzen-desktop/*.*.*.*.*.*.*.$script
@@ -17,6 +20,13 @@ a22078 2
 d22104 1
 a22104 1
 ||pikabu.ru/ajax/*?eB31z=$xmlhttprequest
+a27312 1
+hd.kinopoisk.ru##.ReactModalPortal > div[class*="styles_fixed_"]
+a27324 1
+kinopoisk.ru##div[class*="styles_adBlockWarningRoot"]
+d27328 1
+d28104 1
+d28812 1
 a28868 1
 dzen.ru##:matches-path(/a/) [class^="content--article-"] [style^="opacity:"]
 d28870 1

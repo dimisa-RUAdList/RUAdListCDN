@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 09 Aug 2025 09:28:45 +0000
-! Diff-Path: ../patches/2025.8.9.568.patch#ruadlist
+! Last modified: Sat, 09 Aug 2025 14:28:14 +0000
+! Diff-Path: ../patches/2025.8.9.868.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10797,7 +10797,6 @@ igdz1.ru^$script,domain=igdz.ru
 ||2ch.*/banners/$domain=2ch.hk|2ch.life|2ch.su
 ||2d.windows-8.ru
 ||2gis.*/ads/advise/
-||2ip.ua/images/keyweb.
 ||2ip.ua/images/support_ukraine.png
 ||2ip.ua/images/war.png
 ||2krota.ru/rekla/
@@ -20784,6 +20783,7 @@ igraemsa.ru##div[class^="content__banner"]
 food.ru##div[class^="cookieNotice"]
 walking-dead.me##div[class^="cpa"]
 doctorpiter.ru,marieclaire.ru,maximonline.ru,mydecor.ru,parents.ru,psychologies.ru,starhit.ru,the-day.ru,thegirl.ru,vokrugsveta.ru,woman.ru##div[class^="creative-placeholder"]
+2ip.ua##div[class^="custom_proxy"]
 doska.ykt.ru##div[class^="d-expreriment_adv"]
 finzz.ru##div[class^="dgd_"]
 arz-biz.ru##div[class^="direkt-"]
@@ -27309,6 +27309,7 @@ kinoteatr.ru##html > body:style(background-image: none !important; background-co
 ! ---
 www.kinopoisk.ru###header-info-bg:style(background-color: transparent !important; background-image: none !important)
 www.kinopoisk.ru###top > div[id][style^="height: 210px"]
+hd.kinopoisk.ru##.ReactModalPortal > div[class*="styles_fixed_"]
 www.kinopoisk.ru##.app div[class^="device"][class*=" page-main__content"]:style(background-color: black !important)
 www.kinopoisk.ru##.film-seances-page:style(box-shadow: 0 -8px 15px #333333 !important)
 www.kinopoisk.ru##.page-content > #header-info-bg + div[id]:not([class]):style(margin-bottom: 40px !important)
@@ -27321,10 +27322,10 @@ www.kinopoisk.ru##body[class*="styles_body"]:style(overflow: auto !important)
 www.kinopoisk.ru##div[class*=" styles_basicInfoSection"]:style(padding-top: 40px !important)
 www.kinopoisk.ru##div[class*=" styles_basicMediaSection"]:style(padding-top: 40px !important)
 www.kinopoisk.ru##div[class*=" styles_videoContainer"]:style(margin-top: 0 !important)
+kinopoisk.ru##div[class*="styles_adBlockWarningRoot"]
 www.kinopoisk.ru##div[class*="styles_baseContainer"] > div[class]:first-child > div[class]:first-child:style(min-height: 0 !important)
 www.kinopoisk.ru##div[class*="styles_baseContainer"] > div[class]:first-child:style(min-height: 0 !important)
 www.kinopoisk.ru##div[class*="styles_middleContainer"] > div[class]:first-child:style(min-height: 0 !important)
-kinopoisk.ru##div[class^="styles_adBlockWarningRoot"]
 www.kinopoisk.ru##div[class^="styles_themeTopBanner"]
 www.kinopoisk.ru##div[class^="styles_wideContentContainer"] > div[class]:first-child:style(min-height: 0 !important)
 www.kinopoisk.ru##div[class^="toaster-container"]
@@ -28100,7 +28101,6 @@ dzen.ru##div[style*="important"] div[class*="__main"]
 ! видео
 dzen.ru##div[class*="video-site"] [aria-label] > div[id]
 ! статьи
-dzen.ru##[class*="withStickyAdOnArticle"]
 dzen.ru##[class*="yandex-direct"]
 dzen.ru##[data-testid="dzenpro-banner"]
 dzen.ru##div[class*="-right-ad-column"]
@@ -28808,7 +28808,6 @@ liga.net##+js(set-cookie, cookieAccepted, true)
 ixbt.com##+js(set-cookie, cookie_accept, 1)
 avito.ru##+js(set-cookie, cookie_consent_shown, 1)
 forum.ixbt.com##+js(set-cookie, ha, 1)
-hd.kinopoisk.ru,www.kinopoisk.ru##+js(set-cookie, kdetect, true)
 kufar.by##+js(set-cookie, kuf_agr, true)
 playground.ru##+js(set-cookie, pg_SuggestGameFollow, true)
 kinotv.ru##+js(set-cookie, telegram_popup, Y)
