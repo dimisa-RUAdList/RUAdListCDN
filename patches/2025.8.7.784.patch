@@ -1,8 +1,8 @@
-diff name:ruadlist lines:74 checksum:20ad6d6de7
+diff name:ruadlist lines:81 checksum:a86012ebdc
 d4 2
 a5 2
-! Last modified: Sun, 10 Aug 2025 15:28:31 +0000
-! Diff-Path: ../patches/2025.8.10.928.patch#ruadlist
+! Last modified: Sun, 10 Aug 2025 20:30:31 +0000
+! Diff-Path: ../patches/2025.8.10.1230.patch#ruadlist
 a377 1
 ||agl007.site^$third-party
 a8217 1
@@ -39,6 +39,11 @@ a22077 2
 d22103 1
 a22103 1
 ||pikabu.ru/ajax/*?eB31z=$xmlhttprequest
+d22668 1
+a22668 1
+ok.ru#?#.feed-list > .feed-w:-abp-has([class^="feed"][class*="label"]:-abp-contains(/реклама/i))
+a22672 1
+ok.ru##[adchoicesize]
 d22729 1
 a22729 1
 45.ru,56.ru,72.ru,74.ru,chita.ru,e1.ru,ngs.ru,ufa1.ru##[data-test="header-adv-logo"]
@@ -73,3 +78,5 @@ d28809 1
 a28865 1
 dzen.ru##:matches-path(/a/) [class^="content--article-"] [style^="opacity:"]
 d28867 1
+a29007 1
+my.mail.ru##+js(href-sanitizer, [href^="https://clicker.mail.ru/redir?u="], ?u)

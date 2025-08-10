@@ -1,8 +1,8 @@
-diff name:ruadlist lines:51 checksum:20ad6d6de7
+diff name:ruadlist lines:58 checksum:a86012ebdc
 d4 2
 a5 2
-! Last modified: Sun, 10 Aug 2025 15:28:31 +0000
-! Diff-Path: ../patches/2025.8.10.928.patch#ruadlist
+! Last modified: Sun, 10 Aug 2025 20:30:31 +0000
+! Diff-Path: ../patches/2025.8.10.1230.patch#ruadlist
 a8218 1
 ?cp.host=*&cp.domain=$third-party,xmlhttprequest
 a8840 1
@@ -22,6 +22,11 @@ allsport-live.ru,allsport-news.net##a[href*="binance.com"]
 d19597 1
 a20785 1
 2ip.ua##div[class^="custom_proxy"]
+d22667 1
+a22667 1
+ok.ru#?#.feed-list > .feed-w:-abp-has([class^="feed"][class*="label"]:-abp-contains(/реклама/i))
+a22671 1
+ok.ru##[adchoicesize]
 d22728 1
 a22728 1
 45.ru,56.ru,72.ru,74.ru,chita.ru,e1.ru,ngs.ru,ufa1.ru##[data-test="header-adv-logo"]
@@ -50,3 +55,5 @@ kinopoisk.ru##div[class*="styles_adBlockWarningRoot"]
 d27326 1
 d28102 1
 d28810 1
+a29008 1
+my.mail.ru##+js(href-sanitizer, [href^="https://clicker.mail.ru/redir?u="], ?u)

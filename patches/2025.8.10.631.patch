@@ -1,8 +1,8 @@
-diff name:ruadlist lines:33 checksum:20ad6d6de7
+diff name:ruadlist lines:40 checksum:a86012ebdc
 d4 2
 a5 2
-! Last modified: Sun, 10 Aug 2025 15:28:31 +0000
-! Diff-Path: ../patches/2025.8.10.928.patch#ruadlist
+! Last modified: Sun, 10 Aug 2025 20:30:31 +0000
+! Diff-Path: ../patches/2025.8.10.1230.patch#ruadlist
 a8841 1
 ~fon.bet##a[href*="fon.bet/"]
 a11360 1
@@ -17,6 +17,11 @@ anilib.me,animelib.org,diets.ru,hentailib.me,hentailib.org,mangalib.me,mangalib.
 a19560 1
 allsport-live.ru,allsport-news.net##a[href*="binance.com"]
 d19597 1
+d22668 1
+a22668 1
+ok.ru#?#.feed-list > .feed-w:-abp-has([class^="feed"][class*="label"]:-abp-contains(/реклама/i))
+a22672 1
+ok.ru##[adchoicesize]
 a23116 2
 sports.ru##.factoid-coefficient
 sports.ru##.factoid-rows__adv-label
@@ -32,3 +37,5 @@ a23178 1
 sports.ru##a[href*="fon.bet/"]
 a23199 1
 ||dumpster.cdn.sports.ru/*.png|$image
+a29010 1
+my.mail.ru##+js(href-sanitizer, [href^="https://clicker.mail.ru/redir?u="], ?u)
