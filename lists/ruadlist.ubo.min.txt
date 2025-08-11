@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 11 Aug 2025 06:48:26 +0000
-! Diff-Path: ../patches/2025.8.11.408.patch#ruadlist
+! Last modified: Mon, 11 Aug 2025 11:26:46 +0000
+! Diff-Path: ../patches/2025.8.11.686.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -14914,7 +14914,6 @@ itc.ua###wrapper > .container > p > .out-link1
 metodsilva.ru###wrapper > .fma-bg
 gagadget.com###wrapper > .l-container_wide[style*="min-height:"]
 rasfokus.ru,waralbum.ru###wrapper > noindex
-fastpic.org###x9f8e2b
 newsko.ru###xtest-videoad
 soft.sibnet.ru###ya-block
 80-e.ru###ya-bottom
@@ -16379,7 +16378,6 @@ allboxing.ru#?#.field-item > p:-abp-has(noindex [href*="pari.ru"])
 allboxing.ru#?#.field-item > p:-abp-has(noindex [href*="utm_campaign"])
 libertycity.net,libertycity.ru##.file_download > div[style*="height:"]
 libertycity.net,libertycity.ru##.file_info_ad
-kinorium.com##.film-page__buttons-watch
 fast-fiml.ru,fast-torrent.club,fast-torrent.ru,fast-torrent.su,filmpotok.ru,kinomuch.ru,nebeda.net,pickfilm.ru,veleto.ru,vixim.ru##.film_page > div:not([id]):not([class]) > center
 asn.in.ua##.filter-container
 nixp.ru##.firefox
@@ -17958,6 +17956,7 @@ search.tut.by##.search-i > .b-results-list:first-child:not([start])
 move.ru##.search-item_tgb
 sletat.ru##.search-result__list-item[data-offerid]
 flatfy.lun.ua#?#.search-results-section:-abp-has(.new-building-offer-list)
+web.telegram.org#?#.search-section > .search-result:-abp-has(> div > .search-sponsored-badge)
 rusnext.ru##.searchField_y
 ura-inform.com##.search_bar ~ .padd
 salonav.com##.secondary-sidebar > .mom_custom_text
@@ -18971,6 +18970,7 @@ mcrate.su##[class*="commerc_panel"]
 dni.ru##[class*="container"][class*="partner"]
 prokuzbass.ru##[class*="container-ad"]
 detaly.co.il##[class*="container_ads"]
+kinorium.com##[class*="film-page__buttons-watch"]
 pravda.if.ua##[class*="footer"] > [class*="menu-section footer-"]:last-child
 allboxing.ru##[class*="fullscreen-banner"]
 forum.guns.ru##[class*="hide"][class$="ban"]
@@ -22104,7 +22104,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||news.mail.ru/-/*.js?
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
-||pikabu.ru/ajax/*?eB31z=$xmlhttprequest
+||pikabu.ru/ajax/*?jm7Dg=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -27607,6 +27607,8 @@ partnerkin.com##body > [class^="fix_"]:style(margin-bottom: -5px !important)
 ! ---
 patrioty.org.ua##footer:style(margin: 0 !important)
 ! ---
+pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##div[class^="raleas-navbar"] .ad + .ad ~ .all_it:style(left: -206px !important)
+! ---
 penzainform.ru##body:style(cursor: auto !important; background: whitesmoke !important)
 ! ---
 peterburg2.ru##body > .a:style(background-image: none !important)
@@ -28929,7 +28931,6 @@ cosplay-porn.*,fap-guru.*,mult-porno.*,sex-studentki.*##+js(set-cookie-reload, i
 disk.yandex.ru,disk.yandex.*##+js(remove-class, has-fullscreen-banner|has-right-direct, .public__root, stay)
 dzen.ru##div:matches-attr(/data-[a-z0-9]/=bottom-ad)
 cq.ru##div[class]:not([class*="-"]):not([class*="_"]):matches-css(margin-top: 16px)
-pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##div[class^="raleas-navbar"] .ad + .ad ~ .all_it:style(left: -206px !important)
 ozon.ru##div[data-widget="banner"]:matches-path(/my/reviews/promo):style(display: block !important)
 pronpic.org##div[style="color:red;font-size:25px;"], .adblock_loock
 fanserial.*,fanserialstv.net,hdrezka.*,rezka.*##+js(set-constant, Object.prototype.preroll, undefined)

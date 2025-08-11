@@ -1,8 +1,8 @@
-diff name:ruadlist lines:81 checksum:55b4a165a4
+diff name:ruadlist lines:91 checksum:d825fd5e32
 d4 2
 a5 2
-! Last modified: Mon, 11 Aug 2025 06:48:26 +0000
-! Diff-Path: ../patches/2025.8.11.408.patch#ruadlist
+! Last modified: Mon, 11 Aug 2025 11:26:46 +0000
+! Diff-Path: ../patches/2025.8.11.686.patch#ruadlist
 a377 1
 ||agl007.site^$third-party
 a8217 1
@@ -14,15 +14,21 @@ a11359 1
 ||diets.ru/i/fitness-
 a13022 1
 ||sovet.kidstaff.com.ua/informers_adaptive.html
+d14913 1
 d14987 1
 d15065 1
 a15065 1
 433175.ru,allforpeople.net,govp.info,karaosha.ru,myshows.me,naurfo.ru##.adblock
 d16073 1
+d16380 1
 a17412 1
 autosport.com.ru#?#.page-block:-abp-has(> div[class^="smi24_"])
+a17957 1
+web.telegram.org#?#.search-section > .search-result:-abp-has(> div > .search-sponsored-badge)
 a18443 1
 asienda.ru,diets.ru,mycharm.ru,myjane.ru,povarenok.ru,relook.ru,stranamam.ru##.tl-house
+a18969 1
+kinorium.com##[class*="film-page__buttons-watch"]
 d19532 1
 a19532 1
 anilib.me,animelib.org,diets.ru,hentailib.me,hentailib.org,mangalib.me,mangalib.org,ranobelib.me,vuzopedia.ru##a[href*="?erid="]
@@ -38,7 +44,7 @@ a22077 2
 ||static.dzeninfra.ru/s3/zen-lib/*/dzen-layout/*.*.*.*.*.*.*.$script
 d22103 1
 a22103 1
-||pikabu.ru/ajax/*?eB31z=$xmlhttprequest
+||pikabu.ru/ajax/*?jm7Dg=$xmlhttprequest
 d22668 1
 a22668 1
 ok.ru#?#.feed-list > .feed-w:-abp-has([class^="feed"][class*="label"]:-abp-contains(/реклама/i))
@@ -73,10 +79,14 @@ hd.kinopoisk.ru##.ReactModalPortal > div[class*="styles_fixed_"]
 a27321 1
 kinopoisk.ru##div[class*="styles_adBlockWarningRoot"]
 d27325 1
+a27591 2
+pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##div[class^="raleas-navbar"] .ad + .ad ~ .all_it:style(left: -206px !important)
+! ---
 d28101 1
 d28809 1
 a28865 1
 dzen.ru##:matches-path(/a/) [class^="content--article-"] [style^="opacity:"]
 d28867 1
+d28916 1
 a29007 1
 my.mail.ru##+js(href-sanitizer, [href^="https://clicker.mail.ru/redir?u="], ?u)
