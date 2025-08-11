@@ -1,8 +1,8 @@
-diff name:ruadlist lines:76 checksum:bce666dbaf
+diff name:ruadlist lines:83 checksum:ee07b366a8
 d4 2
 a5 2
-! Last modified: Mon, 11 Aug 2025 16:38:28 +0000
-! Diff-Path: ../patches/2025.8.11.998.patch#ruadlist
+! Last modified: Mon, 11 Aug 2025 21:25:51 +0000
+! Diff-Path: ../patches/2025.8.11.1285.patch#ruadlist
 a377 1
 ||agl007.site^$third-party
 a8217 1
@@ -30,6 +30,9 @@ allsport-live.ru,allsport-news.net##a[href*="binance.com"]
 d19596 1
 a20784 1
 2ip.ua##div[class^="custom_proxy"]
+d21182 1
+a21182 1
+f1news.ru,forum.littleone.ru##div[id^="inpage_"]
 d22101 1
 a22101 1
 ||pikabu.ru/ajax/*?jm7Dg=$xmlhttprequest
@@ -70,8 +73,12 @@ d27325 1
 a27591 2
 pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##div[class^="raleas-navbar"] .ad + .ad ~ .all_it:style(left: -206px !important)
 ! ---
+d27711 1
+a27712 1
+context.reverso.net##[class*="locked"] .example:style(filter: none !important; -webkit-filter: none !important)
 d28101 1
 d28809 1
 d28916 1
+d28929 1
 a29007 1
 my.mail.ru##+js(href-sanitizer, [href^="https://clicker.mail.ru/redir?u="], ?u)

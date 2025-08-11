@@ -1,8 +1,8 @@
-diff name:ruadlist lines:86 checksum:bce666dbaf
+diff name:ruadlist lines:93 checksum:ee07b366a8
 d4 2
 a5 2
-! Last modified: Mon, 11 Aug 2025 16:38:28 +0000
-! Diff-Path: ../patches/2025.8.11.998.patch#ruadlist
+! Last modified: Mon, 11 Aug 2025 21:25:51 +0000
+! Diff-Path: ../patches/2025.8.11.1285.patch#ruadlist
 a377 1
 ||agl007.site^$third-party
 a8217 1
@@ -33,6 +33,9 @@ d19598 1
 d20654 1
 a20787 1
 2ip.ua##div[class^="custom_proxy"]
+d21185 1
+a21185 1
+f1news.ru,forum.littleone.ru##div[id^="inpage_"]
 d22077 2
 a22078 2
 ||static.dzeninfra.ru/s3/zen-lib/*/dzen-desktop/*.*.*.*.*.*.*.$script
@@ -77,11 +80,15 @@ d27328 1
 a27594 2
 pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##div[class^="raleas-navbar"] .ad + .ad ~ .all_it:style(left: -206px !important)
 ! ---
+d27714 1
+a27715 1
+context.reverso.net##[class*="locked"] .example:style(filter: none !important; -webkit-filter: none !important)
 d28104 1
 d28812 1
 a28868 1
 dzen.ru##:matches-path(/a/) [class^="content--article-"] [style^="opacity:"]
 d28870 1
 d28919 1
+d28932 1
 a29010 1
 my.mail.ru##+js(href-sanitizer, [href^="https://clicker.mail.ru/redir?u="], ?u)

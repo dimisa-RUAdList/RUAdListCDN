@@ -1,14 +1,17 @@
-diff name:ruadlist lines:27 checksum:bce666dbaf
+diff name:ruadlist lines:34 checksum:ee07b366a8
 d4 2
 a5 2
-! Last modified: Mon, 11 Aug 2025 16:38:28 +0000
-! Diff-Path: ../patches/2025.8.11.998.patch#ruadlist
+! Last modified: Mon, 11 Aug 2025 21:25:51 +0000
+! Diff-Path: ../patches/2025.8.11.1285.patch#ruadlist
 d14917 1
 d16382 1
 a17960 1
 web.telegram.org#?#.search-section > .search-result:-abp-has(> div > .search-sponsored-badge)
 a18973 1
 kinorium.com##[class*="film-page__buttons-watch"]
+d21188 1
+a21188 1
+f1news.ru,forum.littleone.ru##div[id^="inpage_"]
 d22107 1
 a22107 1
 ||pikabu.ru/ajax/*?jm7Dg=$xmlhttprequest
@@ -23,6 +26,10 @@ ok.ru##[adchoicesize]
 a27608 2
 pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##div[class^="raleas-navbar"] .ad + .ad ~ .all_it:style(left: -206px !important)
 ! ---
+d27728 1
+a27729 1
+context.reverso.net##[class*="locked"] .example:style(filter: none !important; -webkit-filter: none !important)
 d28931 1
+d28944 1
 a29022 1
 my.mail.ru##+js(href-sanitizer, [href^="https://clicker.mail.ru/redir?u="], ?u)

@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 11 Aug 2025 16:38:28 +0000
-! Diff-Path: ../patches/2025.8.11.998.patch#ruadlist
+! Last modified: Mon, 11 Aug 2025 21:25:51 +0000
+! Diff-Path: ../patches/2025.8.11.1285.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21185,7 +21185,7 @@ ru-an.info##div[id^="hme_ad_news"]
 isport.ua,korrespondent.net##div[id^="holder_"]
 football24.ua##div[id^="igamingBlock-"]
 fanfics.me##div[id^="inform_top_"]
-forum.littleone.ru##div[id^="inpage_"]
+f1news.ru,forum.littleone.ru##div[id^="inpage_"]
 glav.su##div[id^="js-hb-"]
 tkaninfo.ru##div[id^="kazandrey"]
 fotostrana.ru##div[id^="king-rightplace"]
@@ -27728,8 +27728,8 @@ retail.ru##header[class^="header--standard"]:style(margin-top: unset !important)
 ! ---
 context.reverso.net##.blocked .text:style(filter: none !important; -webkit-filter: none !important)
 context.reverso.net##.blocked:style(filter: none !important; -webkit-filter: none !important)
-context.reverso.net##.locked .example:style(filter: none !important; -webkit-filter: none !important)
 context.reverso.net##.popup[id*="-results-banner"]
+context.reverso.net##[class*="locked"] .example:style(filter: none !important; -webkit-filter: none !important)
 ! ---
 rezka.biz##.container > #content:style(margin-top: unset !important)
 ! ---
@@ -28943,7 +28943,6 @@ m.rp5.*#@#.adsbygoogle
 reshu.by,sdamgia.ru##main > div > div > div:has-text(/rotator|блокировщик/)
 reshu.by,sdamgia.ru##main > div:first-child:empty + div:not([class]) > div > div
 reshu.by,sdamgia.ru##main > div:first-child:empty + div:not([class]) > div:style(min-height: 86px !important; height: 86px !important; margin-bottom: -80px !important)
-music.yandex.ru,music.yandex.*##+js(set-constant, Object.prototype.adUsageStorageVars, undefined)
 draug.ru,modsforwot.ru##p:has-text(Для скачивания подождите отсчет таймера...)
 tvzvezda.ru##pjsdiv[id^="oframe"] > pjsdiv[style*="opacity: 0.1;"]:empty
 tvzvezda.ru##pjsdiv[id^="oframe"] [style="animation-play-state: running;"]
