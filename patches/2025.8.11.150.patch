@@ -1,10 +1,12 @@
-diff name:ruadlist lines:44 checksum:12c130e209
+diff name:ruadlist lines:56 checksum:39c3b32f7c
 d4 2
 a5 2
-! Last modified: Tue, 12 Aug 2025 12:58:50 +0000
-! Diff-Path: ../patches/2025.8.12.778.patch#ruadlist
+! Last modified: Tue, 12 Aug 2025 17:29:19 +0000
+! Diff-Path: ../patches/2025.8.12.1049.patch#ruadlist
 a3872 1
 ||mn-tz.com^$third-party
+a8771 1
+~2ip.ru,~sx.org##a[href*="://sx.org/"]
 d11064 1
 d14917 1
 d14938 1
@@ -20,6 +22,8 @@ a18347 1
 glav.su#?#.tbl:-abp-has(> tbody > tr > td > div[id^="js-y-rtb"])
 a18973 1
 kinorium.com##[class*="film-page__buttons-watch"]
+a20822 1
+business-gazeta.ru##div[class^="holiday-carousel"]
 a21093 1
 forum.awd.ru##div[id^="ads-"]
 d21188 2
@@ -30,16 +34,24 @@ d21639 1
 d22107 1
 a22107 1
 ||pikabu.ru/ajax/*?W5E6r=$xmlhttprequest
-a22266 1
-2ip.io,2ip.ru##a[href*="://sx.org/"]
+a22266 2
+2ip.io,2ip.ru##a[href*="proxyshare.com/"]
+2ip.io,2ip.ru##nav a[target="_blank"]
+a22280 2
+||proxyshare.com^$third-party,popup
+||sx.org^$third-party,popup
 d22416 1
 a22416 1
 ~dobro.mail.ru,~e.mail.ru,mail.ru,~my.mail.ru,sportmail.ru##table > tbody > tr > td:first-child + td + td:last-child
+d23408 2
+d23411 1
 a27609 2
 pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##div[class^="raleas-navbar"] .ad + .ad ~ .all_it:style(left: -206px !important)
 ! ---
 d27729 1
 a27730 1
 context.reverso.net##[class*="locked"] .example:style(filter: none !important; -webkit-filter: none !important)
+d28183 5
 d28932 1
 d28945 1
+d31071 2

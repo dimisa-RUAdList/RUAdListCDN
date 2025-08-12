@@ -1,12 +1,14 @@
-diff name:ruadlist lines:98 checksum:12c130e209
+diff name:ruadlist lines:110 checksum:39c3b32f7c
 d4 2
 a5 2
-! Last modified: Tue, 12 Aug 2025 12:58:50 +0000
-! Diff-Path: ../patches/2025.8.12.778.patch#ruadlist
+! Last modified: Tue, 12 Aug 2025 17:29:19 +0000
+! Diff-Path: ../patches/2025.8.12.1049.patch#ruadlist
 a3872 1
 ||mn-tz.com^$third-party
 a8218 1
 ?cp.host=*&cp.domain=$third-party,xmlhttprequest
+a8770 1
+~2ip.ru,~sx.org##a[href*="://sx.org/"]
 a8840 1
 ~fon.bet##a[href*="fon.bet/"]
 d10799 1
@@ -39,6 +41,8 @@ allsport-live.ru,allsport-news.net##a[href*="binance.com"]
 d19597 1
 a20785 1
 2ip.ua##div[class^="custom_proxy"]
+a20817 1
+business-gazeta.ru##div[class^="holiday-carousel"]
 a21088 1
 forum.awd.ru##div[id^="ads-"]
 d21183 2
@@ -49,8 +53,12 @@ d21634 1
 d22102 1
 a22102 1
 ||pikabu.ru/ajax/*?W5E6r=$xmlhttprequest
-a22261 1
-2ip.io,2ip.ru##a[href*="://sx.org/"]
+a22261 2
+2ip.io,2ip.ru##a[href*="proxyshare.com/"]
+2ip.io,2ip.ru##nav a[target="_blank"]
+a22275 2
+||proxyshare.com^$third-party,popup
+||sx.org^$third-party,popup
 d22411 1
 a22411 1
 ~dobro.mail.ru,~e.mail.ru,mail.ru,~my.mail.ru,sportmail.ru##table > tbody > tr > td:first-child + td + td:last-child
@@ -80,6 +88,8 @@ a23175 1
 sports.ru##a[href*="fon.bet/"]
 a23196 1
 ||dumpster.cdn.sports.ru/*.png|$image
+d23392 2
+d23395 1
 a27310 1
 hd.kinopoisk.ru##.ReactModalPortal > div[class*="styles_fixed_"]
 a27322 1
@@ -92,8 +102,10 @@ d27712 1
 a27713 1
 context.reverso.net##[class*="locked"] .example:style(filter: none !important; -webkit-filter: none !important)
 d28102 1
+d28167 5
 d28810 1
 d28917 1
 d28930 1
 a29008 1
 my.mail.ru##+js(href-sanitizer, [href^="https://clicker.mail.ru/redir?u="], ?u)
+d31055 2
