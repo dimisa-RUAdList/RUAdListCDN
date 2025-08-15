@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 14 Aug 2025 19:23:06 +0000
-! Diff-Path: ../patches/2025.8.14.1163.patch#ruadlist
+! Last modified: Fri, 15 Aug 2025 02:20:45 +0000
+! Diff-Path: ../patches/2025.8.15.140.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -17533,6 +17533,7 @@ bnkirov.ru##.plate-panel
 megacritic.ru#?#.platform-content:-abp-has(> .moduletable a[rel="sponsored"])
 muzofond.fm##.playOther
 seetv.tv##.player > .reklama_b
+fishki.net##.player-adv-wrapper
 sexvideobaza.net##.player-bn
 novinki-kino.net,smotra.net##.player22
 pikabu.ru##.player__adfox
@@ -27018,6 +27019,7 @@ films-online.club##.body-wrap > #content:style(margin-top:42px !important)
 fclmnews.ru##.site:style(margin-top: 0 !important)
 ! ---
 fishki.net###container:style(cursor: auto !important)
+fishki.net##[id^="videoplayer_"][aria-label="Video Player"]:style(display: block !important)
 ! ---
 flashscore.com.ua,flashscore.ru.com,flashscore.ua,flashscorekz.com,livescore.in,soccerstand.com##[data-bookmaker-id]:style(pointer-events: none !important)
 ! ---
