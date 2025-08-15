@@ -1,15 +1,15 @@
-diff name:ruadlist lines:78 checksum:bcd8da0813
+diff name:ruadlist lines:87 checksum:101f5d6e19
 d4 2
 a5 2
-! Last modified: Fri, 15 Aug 2025 05:31:43 +0000
-! Diff-Path: ../patches/2025.8.15.331.patch#ruadlist
+! Last modified: Fri, 15 Aug 2025 10:32:02 +0000
+! Diff-Path: ../patches/2025.8.15.632.patch#ruadlist
 a3872 1
 ||mn-tz.com^$third-party
 a8771 1
 ~2ip.ru,~sx.org##a[href*="://sx.org/"]
 d10369 1
-a11033 1
-||ati.su/gw/
+a10748 1
+://ati.su/gw/*/public/$script,subdocument
 d11064 1
 d12734 1
 d14937 1
@@ -24,9 +24,13 @@ fishki.net##.player-adv-wrapper
 d18346 1
 a18346 1
 glav.su#?#.tbl:-abp-has(> tbody > tr > td > div[id^="js-y-rtb"])
+a18848 1
+arbatmedia.kz##.ya_rtb
 d19060 1
 a19060 1
 asienda.ru,diets.ru,mycharm.ru,myjane.ru,povarenok.ru,ptichka.ru,stranamam.ru##[class^="vigvam"]
+a19146 1
+arbatmedia.kz##[data-smi-widget-id]
 a20532 1
 loads.ati.su##div[class*="Media_banner__"]
 a20822 1
@@ -37,6 +41,9 @@ d21188 2
 a21189 2
 f1news.ru,forum.littleone.ru##div[id^="inpage_"]
 glav.su##div[id^="js-y-rtb"]
+d21463 1
+a21463 1
+arbatmedia.kz,day.kyiv.ua#?#h2:-abp-contains(/^новости партн|^новини партн/i)
 d21639 1
 d22107 1
 a22107 1
@@ -75,5 +82,7 @@ context.reverso.net##[class*="locked"] .example:style(filter: none !important; -
 d28185 5
 d28223 1
 d28231 3
+a28346 1
+mail.ru##.tv-widget > .vk-video
 d28946 1
 d31072 2
