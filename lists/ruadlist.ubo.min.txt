@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 16 Aug 2025 11:21:59 +0000
-! Diff-Path: ../patches/2025.8.16.681.patch#ruadlist
+! Last modified: Sat, 16 Aug 2025 16:32:44 +0000
+! Diff-Path: ../patches/2025.8.16.992.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -19161,6 +19161,7 @@ telegraf.com.ua##[data-text^="Новини партнер"]
 uazmi.org##[data-text^="Рекламн"]
 my.ua##[data-top-iid]
 drive2.ru#?#[data-track]:-abp-has(> div[id]:empty + script)
+rbc.ua##[data-type="_mgwidget"]
 dotabuff.com##[data-type="elo-placement"]
 historyrusedu.ru##[data-uk-grid-match*="target"]
 conversion.im##[data-url*="/banners/"]
@@ -21693,7 +21694,7 @@ sarafannoeradio.org##img[width="829"][height="90"]
 demiart.ru##img[width="900"][height="100"]
 post-tracker.ru##img[width^="8"][height^="3"][src$=".gif"]
 gizmod.ru##index > .entry
-audiotag.info,computer76.ru,enovosty.com,epravda.com.ua,finget.ru,fraza.com,inforesist.org,ostro.org,real-vin.com,stravy.net,videoredaktor.ru,volyninfo.com##ins
+audiotag.info,computer76.ru,enovosty.com,epravda.com.ua,finget.ru,fraza.com,inforesist.org,ostro.org,rbc.ua,real-vin.com,stravy.net,videoredaktor.ru,volyninfo.com##ins
 peugeot-club.net,vjazhi.ru##ins[style^="display:inline"]
 tvc.ru#?#li.play-button-wrap:-abp-has(> div > [id^="adfox_"])
 gofrag.ru#?#li:-abp-has(> .uk-accordion-title ~ [class] a[href*=".ufiler.pro/"])
@@ -23084,7 +23085,7 @@ rbc.ru#?#[data-vr-zone="Топ новости"] div:-abp-has(> a[href*="utm_camp
 rbc.ru##[data-yandex-name^="selfpromo_"]
 rbc.ru##[data-yandex-show="cards_marketplace_show"]
 rbc.ru##[data-yandex-show^="commercial_cards_"]
-autodaily.ru,autonews.ru,rbc.ru,rbc.ua,sportrbc.ru,utro.ru##[id^="unit_"]
+autodaily.ru,autonews.ru,rbc.ru,sportrbc.ru,utro.ru##[id^="unit_"]
 rbc.ru##a.video-player__details[target="_blank"]
 quote.ru##a[href*="bannersdisable_button"]
 sportrbc.ru##a[href*="erid="][target="_blank"]
@@ -29046,6 +29047,7 @@ news.mail.ru##+js(set-constant, __PHS._.props.html, {})
 ~3igames.mail.ru,~account.mail.ru,~auto.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~finance.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru,~vfokuse.mail.ru,~widgets.mail.ru##+js(set-constant, document.title, null)
 ~3igames.mail.ru,~account.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~finance.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru,~vfokuse.mail.ru,~widgets.mail.ru##+js(set-constant, mr._mimic.locator.transform, undefined)
 touch.mail.ru##.page__content__slide > .messagelist > div:not([cid]):not([style]):not([id]):not([class])
+mail.ru##.tv-widget > .vk-video
 mail.ru##.tv-widget > .vk-video:remove()
 /2promo.octavius.bundle.js$domain=mail.ru
 /res/*/VideoAutoplayFlow$script,domain=ok.ru

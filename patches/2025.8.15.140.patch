@@ -1,8 +1,8 @@
-diff name:ruadlist lines:27 checksum:fa85fcca47
+diff name:ruadlist lines:36 checksum:67a86bf39b
 d4 2
 a5 2
-! Last modified: Sat, 16 Aug 2025 11:21:59 +0000
-! Diff-Path: ../patches/2025.8.16.681.patch#ruadlist
+! Last modified: Sat, 16 Aug 2025 16:32:44 +0000
+! Diff-Path: ../patches/2025.8.16.992.patch#ruadlist
 a10749 1
 ://ati.su/gw/*/public/$script,subdocument
 d11035 1
@@ -10,6 +10,8 @@ a18851 1
 arbatmedia.kz##.ya_rtb
 a19149 1
 arbatmedia.kz##[data-smi-widget-id]
+a19161 1
+rbc.ua##[data-type="_mgwidget"]
 a19741 1
 uafix.net##a[href="/noads.html"]
 d20303 1
@@ -18,11 +20,18 @@ a20303 1
 d21469 1
 a21469 1
 arbatmedia.kz,day.kyiv.ua#?#h2:-abp-contains(/^новости партн|^новини партн/i)
+d21693 1
+a21693 1
+audiotag.info,computer76.ru,enovosty.com,epravda.com.ua,finget.ru,fraza.com,inforesist.org,ostro.org,rbc.ua,real-vin.com,stravy.net,videoredaktor.ru,volyninfo.com##ins
 a22576 3
 ! VK Play
 vkplay.ru##.aside__banner
 vkplay.ru##div[class*="ArtBannerSkeleton"]
 a22582 1
 ||api.vkplay.ru/*/banner_right/
-a29041 1
+d23080 1
+a23080 1
+autodaily.ru,autonews.ru,rbc.ru,sportrbc.ru,utro.ru##[id^="unit_"]
+a29041 2
+mail.ru##.tv-widget > .vk-video
 mail.ru##.tv-widget > .vk-video:remove()

@@ -1,8 +1,8 @@
-diff name:ruadlist lines:62 checksum:fa85fcca47
+diff name:ruadlist lines:71 checksum:67a86bf39b
 d4 2
 a5 2
-! Last modified: Sat, 16 Aug 2025 11:21:59 +0000
-! Diff-Path: ../patches/2025.8.16.681.patch#ruadlist
+! Last modified: Sat, 16 Aug 2025 16:32:44 +0000
+! Diff-Path: ../patches/2025.8.16.992.patch#ruadlist
 d10371 1
 a10750 1
 ://ati.su/gw/*/public/$script,subdocument
@@ -18,6 +18,8 @@ a19062 1
 asienda.ru,diets.ru,mycharm.ru,myjane.ru,povarenok.ru,ptichka.ru,stranamam.ru##[class^="vigvam"]
 a19148 1
 arbatmedia.kz##[data-smi-widget-id]
+a19160 1
+rbc.ua##[data-type="_mgwidget"]
 a19740 1
 uafix.net##a[href="/noads.html"]
 d20302 1
@@ -28,6 +30,9 @@ loads.ati.su##div[class*="Media_banner__"]
 d21467 1
 a21467 1
 arbatmedia.kz,day.kyiv.ua#?#h2:-abp-contains(/^новости партн|^новини партн/i)
+d21691 1
+a21691 1
+audiotag.info,computer76.ru,enovosty.com,epravda.com.ua,finget.ru,fraza.com,inforesist.org,ostro.org,rbc.ua,real-vin.com,stravy.net,videoredaktor.ru,volyninfo.com##ins
 d22110 1
 a22110 1
 ||pikabu.ru/ajax/*?mh7y5=$xmlhttprequest
@@ -39,6 +44,9 @@ vkplay.ru##.aside__banner
 vkplay.ru##div[class*="ArtBannerSkeleton"]
 a22579 1
 ||api.vkplay.ru/*/banner_right/
+d23077 1
+a23077 1
+autodaily.ru,autonews.ru,rbc.ru,sportrbc.ru,utro.ru##[id^="unit_"]
 d23426 1
 a23426 3
 yandex.ru#?#.mg-page-layout-item_pos_none:-abp-has(.turbo-advert)
@@ -59,5 +67,6 @@ a27361 1
 www.kinopoisk.ru##div[class*="__EPaSo"]
 d28222 1
 d28230 3
-a29039 1
+a29039 2
+mail.ru##.tv-widget > .vk-video
 mail.ru##.tv-widget > .vk-video:remove()
