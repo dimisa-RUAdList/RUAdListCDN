@@ -1,8 +1,8 @@
-diff name:ruadlist lines:43 checksum:67a86bf39b
+diff name:ruadlist lines:48 checksum:53ee24210c
 d4 2
 a5 2
-! Last modified: Sat, 16 Aug 2025 16:32:44 +0000
-! Diff-Path: ../patches/2025.8.16.992.patch#ruadlist
+! Last modified: Sat, 16 Aug 2025 21:24:53 +0000
+! Diff-Path: ../patches/2025.8.16.1284.patch#ruadlist
 a10749 1
 ://ati.su/gw/*/public/$script,subdocument
 d11035 1
@@ -28,6 +28,9 @@ arbatmedia.kz,day.kyiv.ua#?#h2:-abp-contains(/^новости партн|^нов
 d21692 1
 a21692 1
 audiotag.info,computer76.ru,enovosty.com,epravda.com.ua,finget.ru,fraza.com,inforesist.org,ostro.org,rbc.ua,real-vin.com,stravy.net,videoredaktor.ru,volyninfo.com##ins
+d22417 1
+a22417 1
+~e.mail.ru,~kino.mail.ru,mail.ru,sportmail.ru#?#[data-qa="WrapperContent"] div:-abp-has(> [data-rb-slot])
 a22575 3
 ! VK Play
 vkplay.ru##.aside__banner
@@ -39,6 +42,8 @@ a23079 1
 autodaily.ru,autonews.ru,rbc.ru,sportrbc.ru,utro.ru##[id^="unit_"]
 a27020 1
 fishki.net##[id^="videoplayer_"][aria-label="Video Player"]:style(display: block !important)
+a28848 1
+dtf.ru,vc.ru##.author__avatar video:remove-attr(autoplay)
 a29039 2
 mail.ru##.tv-widget > .vk-video
 mail.ru##.tv-widget > .vk-video:remove()

@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 16 Aug 2025 16:32:44 +0000
-! Diff-Path: ../patches/2025.8.16.992.patch#ruadlist
+! Last modified: Sat, 16 Aug 2025 21:24:53 +0000
+! Diff-Path: ../patches/2025.8.16.1284.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22419,7 +22419,7 @@ mail.ru##.ph-project-promo-container
 ~e.mail.ru,mail.ru,sportmail.ru##.viewbox__holder .viewbox__side
 ~e.mail.ru,mail.ru,sportmail.ru##.viewbox__holder .viewbox__side-loader ~ *
 ~e.mail.ru,mail.ru##[data-logger-parent="sidebarDoubleRight"]
-~e.mail.ru,mail.ru,sportmail.ru#?#[data-qa="WrapperContent"] div:-abp-has(> [data-rb-slot])
+~e.mail.ru,~kino.mail.ru,mail.ru,sportmail.ru#?#[data-qa="WrapperContent"] div:-abp-has(> [data-rb-slot])
 ~e.mail.ru,mail.ru,sportmail.ru##[data-rb-slot]
 ~e.mail.ru,mail.ru,sportmail.ru##[data-view^="Slot"][data-adq-id]
 ~e.mail.ru,mail.ru,sportmail.ru##a[class^="rb-"][href^="https://r.mail.ru/"][target="_blank"]
@@ -28856,6 +28856,7 @@ inoreader.com##.adsbygoogle:style(display: block !important)
 vc.ru##.andropov_video:remove-attr(data-video-play-mode)
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.app__wrapper div[style^="width: calc(100% "]:remove-attr(style)
 playground.ru#?#.article-content:-abp-has(> p > em:-abp-contains(erid:)) a[href][rel="nofollow"]:style(pointer-events: none !important; color: inherit !important)
+dtf.ru,vc.ru##.author__avatar video:remove-attr(autoplay)
 footboom.com,footboom.kz##.b-article-content > h2:has-text(букмекер)
 lostfilm.download,lostfilm.life,lostfilm.one,lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##.body > .body:style(user-select: text !important; -moz-user-select: text !important; -webkit-user-select: text !important)
 dtf.ru,vc.ru##.comment-media > .andropov-video > video:remove-attr(autoplay)
