@@ -1,8 +1,8 @@
-diff name:ruadlist lines:54 checksum:af9d1112a3
+diff name:ruadlist lines:60 checksum:fa85fcca47
 d4 2
 a5 2
-! Last modified: Sat, 16 Aug 2025 06:38:43 +0000
-! Diff-Path: ../patches/2025.8.16.398.patch#ruadlist
+! Last modified: Sat, 16 Aug 2025 11:21:59 +0000
+! Diff-Path: ../patches/2025.8.16.681.patch#ruadlist
 d10371 1
 a10750 1
 ://ati.su/gw/*/public/$script,subdocument
@@ -33,6 +33,12 @@ a22110 1
 ||pikabu.ru/ajax/*?mh7y5=$xmlhttprequest
 a22519 1
 otvet.mail.ru##div[class^="_Card_"][data-hidden="false"]
+a22573 3
+! VK Play
+vkplay.ru##.aside__banner
+vkplay.ru##div[class*="ArtBannerSkeleton"]
+a22579 1
+||api.vkplay.ru/*/banner_right/
 d23426 1
 a23426 3
 yandex.ru#?#.mg-page-layout-item_pos_none:-abp-has(.turbo-advert)
@@ -51,5 +57,5 @@ a27362 1
 www.kinopoisk.ru##div[class*="__EPaSo"]
 d28223 1
 d28231 3
-a28346 1
-mail.ru##.tv-widget > .vk-video
+a29040 1
+mail.ru##.tv-widget > .vk-video:remove()

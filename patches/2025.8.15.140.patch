@@ -1,8 +1,8 @@
-diff name:ruadlist lines:21 checksum:af9d1112a3
+diff name:ruadlist lines:27 checksum:fa85fcca47
 d4 2
 a5 2
-! Last modified: Sat, 16 Aug 2025 06:38:43 +0000
-! Diff-Path: ../patches/2025.8.16.398.patch#ruadlist
+! Last modified: Sat, 16 Aug 2025 11:21:59 +0000
+! Diff-Path: ../patches/2025.8.16.681.patch#ruadlist
 a10749 1
 ://ati.su/gw/*/public/$script,subdocument
 d11035 1
@@ -18,5 +18,11 @@ a20303 1
 d21469 1
 a21469 1
 arbatmedia.kz,day.kyiv.ua#?#h2:-abp-contains(/^новости партн|^новини партн/i)
-a28347 1
-mail.ru##.tv-widget > .vk-video
+a22576 3
+! VK Play
+vkplay.ru##.aside__banner
+vkplay.ru##div[class*="ArtBannerSkeleton"]
+a22582 1
+||api.vkplay.ru/*/banner_right/
+a29041 1
+mail.ru##.tv-widget > .vk-video:remove()

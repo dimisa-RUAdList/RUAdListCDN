@@ -1,8 +1,8 @@
-diff name:ruadlist lines:71 checksum:af9d1112a3
+diff name:ruadlist lines:77 checksum:fa85fcca47
 d4 2
 a5 2
-! Last modified: Sat, 16 Aug 2025 06:38:43 +0000
-! Diff-Path: ../patches/2025.8.16.398.patch#ruadlist
+! Last modified: Sat, 16 Aug 2025 11:21:59 +0000
+! Diff-Path: ../patches/2025.8.16.681.patch#ruadlist
 a8772 1
 ~2ip.ru,~sx.org##a[href*="://sx.org/"]
 d10370 1
@@ -44,6 +44,12 @@ a22282 2
 ||sx.org^$third-party,popup
 a22514 1
 otvet.mail.ru##div[class^="_Card_"][data-hidden="false"]
+a22568 3
+! VK Play
+vkplay.ru##.aside__banner
+vkplay.ru##div[class*="ArtBannerSkeleton"]
+a22574 1
+||api.vkplay.ru/*/banner_right/
 d23410 2
 d23413 1
 d23424 1
@@ -67,6 +73,6 @@ www.kinopoisk.ru##div[class*="__EPaSo"]
 d28187 5
 d28225 1
 d28233 3
-a28348 1
-mail.ru##.tv-widget > .vk-video
+a29042 1
+mail.ru##.tv-widget > .vk-video:remove()
 d31073 2
