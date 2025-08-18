@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 18 Aug 2025 13:44:05 +0000
-! Diff-Path: ../patches/2025.8.18.824.patch#ruadlist
+! Last modified: Mon, 18 Aug 2025 18:42:48 +0000
+! Diff-Path: ../patches/2025.8.18.1122.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -12368,6 +12368,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||ngs.ru/static/js/app/adFoxBanner/
 ||nice-film.ru/js*/*.js$script
 ||nightburger.lviv.ua/banner_
+||nim.ru/css/ad-
 ||ninemanga.com/files/js/ad_both.js
 ||nirtopala.com^$image,subdocument
 ||nirvana.fm/banners/
@@ -17563,7 +17564,9 @@ cod31.ru##.post > .entry-tags + .row
 cod31.ru##.post > .entry-tags ~ div[style*="clear"]
 ustanovkaos.ru##.post > .title
 ustanovkaos.ru##.post > noindex
+iphones.ru#?#.post > p:-abp-contains(Купить за):-abp-has([target="_blank"])
 iphones.ru#?#.post > p:-abp-has(a[href*="?erid="])
+iphones.ru#?#.post > p:-abp-has(a[href*="utm_campaign"])
 101poisk.ru##.post-banner-bottom
 kyivvlada.com.ua##.post-block
 kot-i-koshka.ru##.post-block > div[id]
