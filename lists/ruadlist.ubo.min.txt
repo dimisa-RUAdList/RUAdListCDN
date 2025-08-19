@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 19 Aug 2025 09:29:38 +0000
-! Diff-Path: ../patches/2025.8.19.569.patch#ruadlist
+! Last modified: Tue, 19 Aug 2025 14:29:56 +0000
+! Diff-Path: ../patches/2025.8.19.869.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -14422,7 +14422,6 @@ ipadus.ru,joomlatown.net,klanwin.ru,ruspicbox.ru,sportnet.live###parent_popup
 www.onliner.by###parimatch-widget .b-main-page-result__list
 clip2net.com###partbn
 hostingkartinok.com###partner
-hostingkartinok.com###partner-aside
 lux.fm###partner-block
 bash.news###partner-widget-mediametrics
 litres.ru###partnerLine
@@ -16162,7 +16161,6 @@ afportal.ru#?#.content:-abp-has(> div > #nadoelo)
 sexytales.org##.contentBox > noindex
 spot.uz##.contentBoxR.floating_banner
 i2hard.ru##.content__col-left
-fishki.net#?#.content__sub-heading:-abp-contains(Новости партнёров)
 kriminal.tv,marpravda.ru##.content_banner
 kino-teatr.ru#?#.content_block > .page_content_block:-abp-has(> div[style] [id*="_dobro"])
 kino-teatr.ru##.content_block > div[class*="_text_white"]
@@ -16291,6 +16289,7 @@ slo.ru##.download-box > div:not([class="download"])
 rl-team.net##.download_blue_yellow
 terabit.biz##.download_inner
 hostmp3.ru##.download_method > .method_box ~ *
+fishki.net#?#.drag_element:-abp-has(.adv_info_wrapper)
 fishki.net#?#.drag_element:-abp-has([href*="poleznaja-reklama.html"])
 fishki.net#?#.drag_element:-abp-has([href]:-abp-contains(Peклама))
 fishki.net#?#.drag_element:-abp-has(script[id^="generated_ID_"])
@@ -16803,7 +16802,6 @@ meat-expert.ru##.ipsPad_bottom
 baku365.com##.ipsSpacer_both:empty
 fisher.spb.ru##.ipsWidget > div > p > a > img[src*="/banners/"]
 kovi.ru##.is-style-warning
-fishki.net##.is_adv_post
 ura.news##.is_momenty
 story.neskromnie.ru##.iseeyou
 landlord.ua##.isfixed
@@ -16899,7 +16897,6 @@ obogrevguru.ru,termogurus.ru##.l2
 allboxing.ru#?#.last-news:-abp-has(> .block_title ~ [id^="unit_"])
 2000.ua##.last_articles
 footballhd.ru#?#.lastnewscat:-abp-has(> [id*="ScriptRoot"])
-~fishki.net,yandex.ru#?#.layout__left_sticky > div[class$="-wrapper"]:-abp-has(> .related-root.typo:empty)
 eurointegration.com.ua##.layout_news > .separator::after
 ko.com.ua##.layout_right_column > p
 izvestia.kiev.ua##.lazy-load-box[style^="font-size: 0.75em;"]
@@ -17777,7 +17774,6 @@ do-slez.com##.rel_block
 aromatmasla.ru##.rela_page
 eurosport.ru##.related-content-story--sponsored
 kod.ru##.related-posts
-~fishki.net,yandex.ru##.related-root.typo:empty
 topvideo.tj##.related-video-holde-right > .table
 newsua.one#?#.related_news:-abp-has(script)
 pronovostroy.ru##.relative-products
@@ -20275,6 +20271,7 @@ myusli.ru##body > #layout > .fixed
 livetvstream.pro,me##body > #localpp[onclick*="window.open"]
 palantinbest.ru,pojrem.ru##body > #overlay
 pensioneram.info##body > #page ~ *
+hostingkartinok.com##body > #panel-inner-wrap
 sakhalin.info##body > #promo-popup
 sosnovskij.ru##body > #top
 id-storage.com##body > #video ~ [class][style*="pointer"][style*="z-index"]
@@ -21562,7 +21559,6 @@ kluch.media##iframe[src*="kluch.media/banners/"]
 livetv.sx##iframe[src*="livetvcdn.net/html/"]
 mauforum.ru##iframe[src*="mauforum.ru/"][src$="/"]
 allbest.ru##iframe[src*="multiwork.org"]
-fishki.net##iframe[src*="ondu.ru/"]
 ikovrov.ru##iframe[src*="pr.ikovrov.ru/www/"]
 rz.com.ua##iframe[src*="rz.com.ua/sites/default/files/baneri-"]
 avtoradio.ru##iframe[src*="smi2"]
@@ -28601,6 +28597,7 @@ doramaland.plus##+js(addEventListener-defuser, DOMContentLoaded, _Modal)
 1progs.me##+js(addEventListener-defuser, DOMContentLoaded, encodedUrl)
 xv-ru.com##+js(addEventListener-defuser, DOMContentLoaded, exo_tracker)
 litnet.com##+js(addEventListener-defuser, DOMContentLoaded, feedback)
+vedomosti.ru##+js(addEventListener-defuser, click, '', elements, a[href*="?from="])
 regnum.news,regnum.ru,tproger.ru##+js(addEventListener-defuser, click, '', elements, a[href*="utm_campaign"])
 116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,62.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,www.fontanka.ru##+js(addEventListener-defuser, click, , elements, [class^="plotsLine_"] > div)
 softonic.ru##+js(addEventListener-defuser, click, [native code])
@@ -28755,6 +28752,7 @@ fapvdo.ru##+js(remove-node-text, script, getComputedStyle)
 gsm.in.ua##+js(remove-node-text, script, message_ads)
 playvillage.ru##+js(set-attr, ._1z_ ._21_, style, '')
 dtf.ru,vc.ru##+js(set-attr, .comment-media > .andropov-video > video, controls, true)
+fishki.net##+js(set-attr, .cycle-carousel-wrap > a > img, src, [data-src])
 dtf.ru,vc.ru##+js(set-attr, .media > .andropov-video > video, controls, true)
 eneyida.tv##+js(set-attr, .owl-item > a > img, src, [data-src])
 fontanka.ru##+js(set-attr, [class^="articleBlockVideo_"] video, controls, true)
