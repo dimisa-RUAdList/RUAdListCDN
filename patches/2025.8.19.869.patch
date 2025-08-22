@@ -1,8 +1,12 @@
-diff name:ruadlist lines:27 checksum:21001f0e83
+diff name:ruadlist lines:36 checksum:4994bd5180
 d4 2
 a5 2
-! Last modified: Fri, 22 Aug 2025 07:26:02 +0000
-! Diff-Path: ../patches/2025.8.22.446.patch#ruadlist
+! Last modified: Fri, 22 Aug 2025 12:54:23 +0000
+! Diff-Path: ../patches/2025.8.22.774.patch#ruadlist
+a903 1
+||bracdn.online^$third-party
+a9097 1
+://pikabu.ru/*/*/*/*..$popup
 d10233 1
 d10373 1
 a10373 1
@@ -20,9 +24,14 @@ a21835 1
 vk.com,vk.ru##section[class^="ImageBanner-"]
 d22117 1
 a22117 1
-||pikabu.ru/ajax/*?mh6y5=$xmlhttprequest
+||pikabu.ru/ajax/*?mh5y5=$xmlhttprequest
 d22744 1
 a22744 1
 ru##[data-ns-portal] .notify-messages-popups
 a25087 1
 ||vigvam.ru^$third-party
+a29178 4
+vk.com/video_ext.php##+js(addEventListener-defuser, message, '', elements, window)
+vk.com/video_ext.php##+js(set-constant, Object.prototype.autoplay, false)
+vkvideo.ru/video_ext.php##+js(addEventListener-defuser, message, '', elements, window)
+vkvideo.ru/video_ext.php##+js(set-constant, Object.prototype.autoplay, false)

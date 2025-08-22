@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 22 Aug 2025 07:26:02 +0000
-! Diff-Path: ../patches/2025.8.22.446.patch#ruadlist
+! Last modified: Fri, 22 Aug 2025 12:54:23 +0000
+! Diff-Path: ../patches/2025.8.22.774.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -901,6 +901,7 @@
 ||bpkk.ru^$third-party
 ||bpyxg.com^$third-party
 ||braaisstew.pro^$third-party
+||bracdn.online^$third-party
 ||braipholl.com^$third-party
 ||brandarium.ru^
 ||bratuxaborcuxa.ru^$third-party
@@ -9095,6 +9096,7 @@ $third-party,popup,domain=2ip.ru
 /go.php$popup,domain=piratca.net
 /redirect/cpa/*$popup,domain=rt02.ru
 ://pikabu.ru/*/*/*/*--$popup
+://pikabu.ru/*/*/*/*..$popup
 ://pikabu.ru/*/*/*/*_$popup
 |http://li.ru/go?$popup,domain=fishki.net
 ||catcut.net^$popup,domain=mobile-4at-obshenie.chatovod.ru|mobile-chat-obshenie.jimdo.com
@@ -22114,7 +22116,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||news.mail.ru/-/*.js?
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
-||pikabu.ru/ajax/*?mh6y5=$xmlhttprequest
+||pikabu.ru/ajax/*?mh5y5=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -29177,6 +29179,10 @@ afisha.ru,autorambler.ru,championat.com,eda.ru,gazeta.ru,lenta.ru,letidor.ru,mos
 e.mail.ru##+js(no-setTimeout-if, '()=>n()', 50)
 e.mail.ru##+js(set-constant, Object.prototype.hasAdBlock, false)
 e.mail.ru#@#+js(set-constant, Object.prototype.hasAdBlock, null)
+vk.com/video_ext.php##+js(addEventListener-defuser, message, '', elements, window)
+vk.com/video_ext.php##+js(set-constant, Object.prototype.autoplay, false)
+vkvideo.ru/video_ext.php##+js(addEventListener-defuser, message, '', elements, window)
+vkvideo.ru/video_ext.php##+js(set-constant, Object.prototype.autoplay, false)
 ||st.top100.ru/top100/top100.js$domain=www.rambler.ru
 !#endif
 ! --- AWRL-non-sync---
