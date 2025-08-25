@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 25 Aug 2025 15:29:37 +0000
-! Diff-Path: ../patches/2025.8.25.929.patch#ruadlist
+! Last modified: Mon, 25 Aug 2025 20:29:34 +0000
+! Diff-Path: ../patches/2025.8.25.1229.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21383,6 +21383,7 @@ baibako.tv##div[style="padding-bottom:15px;margin-bottom:15px;border-bottom:1px 
 psxplanet.ru##div[style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; "][align="left"]
 mobiset.ru##div[style="padding-top:5px;height:107px;"]
 news.sportbox.ru##div[style="padding: 10px 0 38px 30px;"]
+dorama.land,doramaland.plus##div[style="position: absolute; z-index: 99999"]
 tv-fresh.org##div[style="position: relative;display: block;width: 100%;height: 90px;margin-top: 10px;"]
 alltor.me##div[style="position:absolute; top:65px; left:520px;"]
 photofacefun.com##div[style="position:absolute;width:100%;text-align:center;height:90px;top:10px;left:0"]
@@ -28539,7 +28540,7 @@ dota2.ru##+js(abort-on-property-read, helpUsImproveSite)
 elitesnooker.com##+js(abort-on-property-read, initsnow)
 astrakhan.ru,myjane.ru,omskpress.ru,tambovnet.org##+js(abort-on-property-read, kav_cn)
 daz3d.ru##+js(abort-on-property-read, lftrght)
-dorama.land,doramaland.me,players.com.ua##+js(abort-on-property-read, localStorage)
+dorama.land,doramaland.plus,players.com.ua##+js(abort-on-property-read, localStorage)
 studizba.com##+js(abort-on-property-read, m205)
 asteriatm.ru,sudya-dredd.ru,tehnobzor.ru##+js(abort-on-property-read, mdpDeBlocker)
 anime-chan.me##+js(abort-on-property-read, move_string)
