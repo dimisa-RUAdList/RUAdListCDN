@@ -1,8 +1,8 @@
-diff name:ruadlist lines:59 checksum:6e23fc8d3a
+diff name:ruadlist lines:93 checksum:d04000810d
 d4 2
 a5 2
-! Last modified: Sun, 24 Aug 2025 19:20:44 +0000
-! Diff-Path: ../patches/2025.8.24.1160.patch#ruadlist
+! Last modified: Mon, 25 Aug 2025 02:09:29 +0000
+! Diff-Path: ../patches/2025.8.25.129.patch#ruadlist
 a903 1
 ||bracdn.online^$third-party
 a9097 1
@@ -13,13 +13,29 @@ $csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: *.addtoany.com 
 a10641 1
 /i/ctc_$image,domain=povarenok.ru|stranamam.ru
 d12385 1
+d12530 1
+a12530 1
+||partnerkin.com/uploads/stb
 a13944 1
 nnovosti.info###container > .row > div + div > .w-100
 a14298 1
 stopgame.ru#?##material_content:-abp-contains(/erid:/i) > p
+a15016 1
+partnerkin.com##.ab_article_sidebar_inner
 d15269 1
+d15283 1
+a15289 1
+partnerkin.com#?#.articles_list_inner > div:-abp-has(> div .ap_b)
+a15954 1
+nashamama.com#?#.cN-linkList:-abp-has(> h3:only-child)
 d16231 1
+a16580 1
+cubiq.ru##.gridlove-button
+a16950 1
+cubiq.ru##.lets-review-block__aff
 d17434 1
+a17633 1
+partnerkin.com##.profile_banner
 d18078 1
 a18224 1
 stranamam.ru##.sp-bg
@@ -29,6 +45,8 @@ stopgame.ru#?#[class^="_content"] > div[class^="_video-wrapper"] ~ [class] b:-ab
 a19166 1
 nv.ua##[data-unit_type="bnr"]
 d19169 1
+d19265 1
+d19292 1
 d19542 1
 a19542 1
 anilib.me,animelib.org,asienda.ru,diets.ru,hentailib.me,hentailib.org,iphones.ru,mangalib.me,mangalib.org,mycharm.ru,myjane.ru,povarenok.ru,ptichka.ru,ranobelib.me,relook.ru,stranamam.ru,vuzopedia.ru##a[href*="?erid="]
@@ -41,12 +59,28 @@ d20698 2
 d20825 1
 d21281 1
 d21346 1
+d21387 1
+a21790 1
+nashamama.com#?#p > b:-abp-contains(каво також:)
 d21827 1
 a21827 1
 stopgame.ru#?#section > div[class^="_content-wrapper_"]:-abp-has(> div > a[href^="/watch"]) ~ [class^="_content"] a[href^="/to?http"]
 d22117 1
 a22117 1
 ||pikabu.ru/ajax/*?mh5y5=$xmlhttprequest
+d27164 1
+a27164 1
+hardwareluxx.ru##[href*="ya"][href*="cc"][target="_blank"]:style(pointer-events: none !important; color: inherit !important)
+d28107 2
+a28108 2
+ya.ru##[id^="ryt"][id*="fe"]
+ya.ru##html[class*="_informers"] aside ~ div[style]
+a28176 1
+ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##.AdvRsyaCrossPage
+d28624 1
+d28687 1
+a28687 1
+ya.ru##+js(no-fetch-if, rythm_)
 d29107 1
 a29107 1
 24boxing.com.ua,avtovod.com.ua,bigmir.net,bilshe.com,buhgalter.com.ua,buhgalter911.com,businessua.com,censor.net,dengi.ua,ditey.com,epravda.com.ua,f1analytic.com,facenews.ua,factor.ua,football-ukraine.com,football24.ua,footballgazeta.com,footballtransfer.com.ua,gazeta.ua,glianec.com,gorod.dp.ua,hvylya.net,i.ua,inforesist.org,isport.ua,ivona.ua,kolobok.ua,kriminal.tv,liga.net,meteo.ua,meteofor.com.ua,nnovosti.info,nv.ua,panno4ka.net,pogodaua.com,pravda.com.ua,real-vin.com,sportanalytic.com,stravy.net,tochka.net,tv.ua,viva.ua,vsetv.com,www.ukr.net,zdorovia.com.ua##+js(remove-node-text, script, "Shadow)
