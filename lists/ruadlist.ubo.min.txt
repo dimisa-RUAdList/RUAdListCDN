@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 26 Aug 2025 06:41:40 +0000
-! Diff-Path: ../patches/2025.8.26.401.patch#ruadlist
+! Last modified: Tue, 26 Aug 2025 11:24:07 +0000
+! Diff-Path: ../patches/2025.8.26.684.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -11737,7 +11737,6 @@ igdz1.ru^$script,domain=igdz.ru
 ||hdserials.net/*.php|$script
 ||hdtrailer.ru/images/bg/
 ||hdtv.ru/resources/$object
-||hdvbua.pro/data/banners?
 ||helloradio.ru^$third-party,domain=qrz.ru
 ||helsi.me/api/datum/api/banner?
 ||hentai-x.ru/js/
@@ -13088,6 +13087,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||starkosino.ru/images/stories/$object
 ||stars.manystars.ru^
 ||start.parimatch.ru/bnr/
+||stat.hdvbua.pro/
 ||statbet.com/api/*/offers/
 ||static.1tv.ru/player/special/vast/
 ||static.bulbul.kg/*/ad/
@@ -29181,9 +29181,9 @@ e.mail.ru##+js(no-setTimeout-if, '()=>n()', 50)
 e.mail.ru##+js(set-constant, Object.prototype.hasAdBlock, false)
 e.mail.ru#@#+js(set-constant, Object.prototype.hasAdBlock, null)
 vk.com/video_ext.php##+js(addEventListener-defuser, message, '', elements, window)
-vk.com/video_ext.php##+js(set-constant, Object.prototype.autoplay, false)
+vk.com/video_ext.php##+js(set-constant, Object.prototype.autoplay, null)
 vkvideo.ru/video_ext.php##+js(addEventListener-defuser, message, '', elements, window)
-vkvideo.ru/video_ext.php##+js(set-constant, Object.prototype.autoplay, false)
+vkvideo.ru/video_ext.php##+js(set-constant, Object.prototype.autoplay, null)
 ||st.top100.ru/top100/top100.js$domain=www.rambler.ru
 !#endif
 ! --- AWRL-non-sync---
