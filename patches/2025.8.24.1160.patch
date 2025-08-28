@@ -1,8 +1,8 @@
-diff name:ruadlist lines:100 checksum:f16679a2ab
+diff name:ruadlist lines:113 checksum:42da905422
 d4 2
 a5 2
-! Last modified: Thu, 28 Aug 2025 13:34:56 +0000
-! Diff-Path: ../patches/2025.8.28.814.patch#ruadlist
+! Last modified: Thu, 28 Aug 2025 18:37:21 +0000
+! Diff-Path: ../patches/2025.8.28.1117.patch#ruadlist
 a191 1
 ||abzadd.com^$third-party
 a7937 1
@@ -18,6 +18,7 @@ a12532 1
 ||partnerkin.com/uploads/stb
 a13089 1
 ||stat.hdvbua.pro/
+d14249 1
 a14380 1
 ultorz.store###onion_wrap
 a14920 1
@@ -56,6 +57,7 @@ privet-rostov.ru##div[class^="dle_b_mts"]
 a21381 1
 dorama.land,doramaland.plus##div[style="position: absolute; z-index: 99999"]
 d21385 1
+d21767 1
 a21788 1
 nashamama.com#?#p > b:-abp-contains(каво також:)
 d22115 1
@@ -73,6 +75,8 @@ a23364 1
 d25883 1
 a25883 1
 @@||mc.yandex.ru/metrika/tag.js$domain=limehd.tv|litehd.tv|lk.rt.ru|pervyi-tv.online|russia-tv.online|shokoladki.ru
+a26190 1
+@@.ru/ads/system/adsdk.gif|$image,domain=limehd.tv|litehd.tv|pervyi-tv.online|russia-tv.online
 a26757 1
 abw.by##.application:style(top: 0 !important)
 a26758 1
@@ -80,8 +84,8 @@ abw.by##body.stop-scroll > div[class^="_overlay_"]
 d27162 1
 a27162 1
 hardwareluxx.ru##[href*="ya"][href*="cc"][target="_blank"]:style(pointer-events: none !important; color: inherit !important)
-d28105 2
-a28106 2
+d28105 3
+a28107 2
 ya.ru##[id^="ryt"][id*="fe"]
 ya.ru##html[class*="_informers"] aside ~ div[style]
 a28174 1
@@ -93,6 +97,15 @@ d28622 1
 d28685 1
 a28685 1
 ya.ru##+js(no-fetch-if, rythm_)
+a28698 1
+limehd.tv,litehd.tv,pervyi-tv.online,russia-tv.online##+js(no-setTimeout-if, apply, 2000)
+d28700 1
+a28767 1
+dzen.ru##+js(set-constant, Object.prototype.RenderMarks, undefined)
+d28796 1
+d28801 1
+a28903 1
+forum.ru-board.com##:matches-path(topic=51666) .dats > a[href="javascript:pasteN('AlAvis')"] > b:style(color: #00bfff !important)
 d29179 1
 a29179 1
 vk.com/video_ext.php##+js(set-constant, Object.prototype.autoplay, null)

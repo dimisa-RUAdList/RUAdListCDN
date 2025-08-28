@@ -1,8 +1,8 @@
-diff name:ruadlist lines:31 checksum:f16679a2ab
+diff name:ruadlist lines:45 checksum:42da905422
 d4 2
 a5 2
-! Last modified: Thu, 28 Aug 2025 13:34:56 +0000
-! Diff-Path: ../patches/2025.8.28.814.patch#ruadlist
+! Last modified: Thu, 28 Aug 2025 18:37:21 +0000
+! Diff-Path: ../patches/2025.8.28.1117.patch#ruadlist
 a191 1
 ||abzadd.com^$third-party
 a7937 1
@@ -10,6 +10,7 @@ a7937 1
 d10348 1
 a10348 1
 ||forum.ru-board.com/*.cgi?*=5&topic=51666$csp=img-src 'self' http://forum.ru-board.com/ https://forum.ru-board.com/ addons.mozilla.org raw.githubusercontent.com
+d14250 1
 a14922 1
 fastpic.org###x9f8e2b
 a17077 1
@@ -19,6 +20,7 @@ a19209 1
 forum.ru-board.com##[href^="postings.cgi?action=edit&forum=5&topic=51666"]:not([href$="postno=1"]) ~ .post img:not([src*="://forum.ru-board.com/board/"])
 a20812 1
 privet-rostov.ru##div[class^="dle_b_mts"]
+d21771 1
 d22120 1
 a22120 1
 ||pikabu.ru/ajax/*?O0pBf=$xmlhttprequest
@@ -30,3 +32,15 @@ a23314 1
 ya.ru##section[class^="reason"]
 a23364 1
 ||ya.ru/portal/*feed_geo=
+a26190 1
+@@.ru/ads/system/adsdk.gif|$image,domain=limehd.tv|litehd.tv|pervyi-tv.online|russia-tv.online
+d28109 1
+a28700 1
+limehd.tv,litehd.tv,pervyi-tv.online,russia-tv.online##+js(no-setTimeout-if, apply, 2000)
+d28702 1
+a28769 1
+dzen.ru##+js(set-constant, Object.prototype.RenderMarks, undefined)
+d28798 1
+d28803 1
+a28905 1
+forum.ru-board.com##:matches-path(topic=51666) .dats > a[href="javascript:pasteN('AlAvis')"] > b:style(color: #00bfff !important)

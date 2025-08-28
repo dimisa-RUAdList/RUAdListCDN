@@ -1,8 +1,8 @@
-diff name:ruadlist lines:42 checksum:f16679a2ab
+diff name:ruadlist lines:56 checksum:42da905422
 d4 2
 a5 2
-! Last modified: Thu, 28 Aug 2025 13:34:56 +0000
-! Diff-Path: ../patches/2025.8.28.814.patch#ruadlist
+! Last modified: Thu, 28 Aug 2025 18:37:21 +0000
+! Diff-Path: ../patches/2025.8.28.1117.patch#ruadlist
 a191 1
 ||abzadd.com^$third-party
 a7937 1
@@ -10,6 +10,7 @@ a7937 1
 d10348 1
 a10348 1
 ||forum.ru-board.com/*.cgi?*=5&topic=51666$csp=img-src 'self' http://forum.ru-board.com/ https://forum.ru-board.com/ addons.mozilla.org raw.githubusercontent.com
+d14250 1
 a14922 1
 fastpic.org###x9f8e2b
 a17077 1
@@ -23,6 +24,7 @@ a19421 1
 360tv.ru,5-tv.ru,7days.ru,avtonovostidnya.ru,avtovzglyad.ru,belarus-news.by,bfm.ru,bst.bratsk.ru,coop-land.ru,energyfm.ru,finuslugi.ru,fonmod.com,fontanka.ru,gdeichto.ru,habr.com,inosmi.ru,ixbt.com,ixbt.shop,kommersant.ru,kulturologia.ru,ladys.media,life.ru,mash.ru,media.az,metronews.ru,mk.ru,moe-belgorod.ru,moe-kursk.ru,moe-lipetsk.ru,moe-online.ru,moe-tambov.ru,moika78.ru,mydecor.ru,mywebpc.ru,myweekend.ru,naked-science.ru,nevasport.ru,new-magazine.ru,news.ru,nsn.fm,ohotniki.ru,oper.ru,overclockers.ru,penzainform.ru,peterburg2.ru,pnz.ru,radio1.ru,regnum.news,regnum.ru,ridlife.ru,rifey.ru,rodgor-vlg.ru,rusnext.ru,russian.rt.com,rutube.ru,sm.news,smotrim.ru,soccer.ru,sovsport.ru,sport-express.net,sport-express.ru,sportsdaily.ru,stiletto.blog,super.ru,syzran-small.ru,teleprogramma.org,thegirl.ru,timeweb.com,tochka.by,tsargrad.tv,tulapressa.ru,tvzvezda.ru,u-f.ru,ura.news,utyug.info,vz.ru,www1.ru,xn----7sbabwosghnf8al4lkj7b.xn--p1ai,ytronews.ru,zaks.ru,zaycev.net,zr.ru##a[href*="//dzen.ru/"]
 a20813 1
 privet-rostov.ru##div[class^="dle_b_mts"]
+d21772 1
 d22121 1
 a22121 1
 ||pikabu.ru/ajax/*?O0pBf=$xmlhttprequest
@@ -37,7 +39,19 @@ a23365 1
 d25884 1
 a25884 1
 @@||mc.yandex.ru/metrika/tag.js$domain=limehd.tv|litehd.tv|lk.rt.ru|pervyi-tv.online|russia-tv.online|shokoladki.ru
+a26191 1
+@@.ru/ads/system/adsdk.gif|$image,domain=limehd.tv|litehd.tv|pervyi-tv.online|russia-tv.online
 a26758 1
 abw.by##.application:style(top: 0 !important)
 a26759 1
 abw.by##body.stop-scroll > div[class^="_overlay_"]
+d28108 1
+a28699 1
+limehd.tv,litehd.tv,pervyi-tv.online,russia-tv.online##+js(no-setTimeout-if, apply, 2000)
+d28701 1
+a28768 1
+dzen.ru##+js(set-constant, Object.prototype.RenderMarks, undefined)
+d28797 1
+d28802 1
+a28904 1
+forum.ru-board.com##:matches-path(topic=51666) .dats > a[href="javascript:pasteN('AlAvis')"] > b:style(color: #00bfff !important)
