@@ -1,18 +1,45 @@
-diff name:ruadlist lines:27 checksum:758a1f7a21
+diff name:ruadlist lines:54 checksum:f16679a2ab
 d4 2
 a5 2
-! Last modified: Thu, 28 Aug 2025 08:34:46 +0000
-! Diff-Path: ../patches/2025.8.28.514.patch#ruadlist
+! Last modified: Thu, 28 Aug 2025 13:34:56 +0000
+! Diff-Path: ../patches/2025.8.28.814.patch#ruadlist
+a191 1
+||abzadd.com^$third-party
+a7937 1
+/content/stream/agl/*
+d10348 1
+a10348 1
+||forum.ru-board.com/*.cgi?*=5&topic=51666$csp=img-src 'self' http://forum.ru-board.com/ https://forum.ru-board.com/ addons.mozilla.org raw.githubusercontent.com
 d11740 1
 a13090 1
 ||stat.hdvbua.pro/
 a14381 1
 ultorz.store###onion_wrap
+a14921 1
+fastpic.org###x9f8e2b
+a17076 1
+partnerkin.com##.main_top.article_ab_container
 d18669 1
+d19209 1
+a19209 1
+forum.ru-board.com##[href^="postings.cgi?action=edit&forum=5&topic=51666"]:not([href$="postno=1"]) ~ .post img:not([src*="://forum.ru-board.com/board/"])
 d19420 1
 a19420 1
 360tv.ru,5-tv.ru,7days.ru,avtonovostidnya.ru,avtovzglyad.ru,belarus-news.by,bfm.ru,bst.bratsk.ru,coop-land.ru,energyfm.ru,finuslugi.ru,fonmod.com,fontanka.ru,gdeichto.ru,habr.com,inosmi.ru,ixbt.com,ixbt.shop,kommersant.ru,kulturologia.ru,ladys.media,life.ru,mash.ru,media.az,metronews.ru,mk.ru,moe-belgorod.ru,moe-kursk.ru,moe-lipetsk.ru,moe-online.ru,moe-tambov.ru,moika78.ru,mydecor.ru,mywebpc.ru,myweekend.ru,naked-science.ru,nevasport.ru,new-magazine.ru,news.ru,nsn.fm,ohotniki.ru,oper.ru,overclockers.ru,penzainform.ru,peterburg2.ru,pnz.ru,radio1.ru,regnum.news,regnum.ru,ridlife.ru,rifey.ru,rodgor-vlg.ru,rusnext.ru,russian.rt.com,rutube.ru,sm.news,smotrim.ru,soccer.ru,sovsport.ru,sport-express.net,sport-express.ru,sportsdaily.ru,stiletto.blog,super.ru,syzran-small.ru,teleprogramma.org,thegirl.ru,timeweb.com,tochka.by,tsargrad.tv,tulapressa.ru,tvzvezda.ru,u-f.ru,ura.news,utyug.info,vz.ru,www1.ru,xn----7sbabwosghnf8al4lkj7b.xn--p1ai,ytronews.ru,zaks.ru,zaycev.net,zr.ru##a[href*="//dzen.ru/"]
+a20812 1
+privet-rostov.ru##div[class^="dle_b_mts"]
+d22120 1
+a22120 1
+||pikabu.ru/ajax/*?O0pBf=$xmlhttprequest
 d22814 5
+d23309 1
+d23318 1
+a23318 1
+ya.ru##[aria-label^="Информе"] ~ [class]
+a23319 1
+ya.ru##section[class^="reason"]
+a23369 1
+||ya.ru/portal/*feed_geo=
 d25888 1
 a25888 1
 @@||mc.yandex.ru/metrika/tag.js$domain=limehd.tv|litehd.tv|lk.rt.ru|pervyi-tv.online|russia-tv.online|shokoladki.ru

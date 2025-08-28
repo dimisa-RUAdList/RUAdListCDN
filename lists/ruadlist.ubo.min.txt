@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 28 Aug 2025 08:34:46 +0000
-! Diff-Path: ../patches/2025.8.28.514.patch#ruadlist
+! Last modified: Thu, 28 Aug 2025 13:34:56 +0000
+! Diff-Path: ../patches/2025.8.28.814.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -189,6 +189,7 @@
 ||abeets.ru^$third-party
 ||abourselfi.com^
 ||abs-cdn.org^$third-party
+||abzadd.com^$third-party
 ||academand.com^
 ||acdnpro.com^$third-party
 ||ackhoo.com^$third-party
@@ -7935,6 +7936,7 @@ _verified.php?code=*&server=runetki.com
 /comebacker.js$xmlhttprequest
 /comebacker.php$xmlhttprequest
 /content/get?*&previous_ad_id=
+/content/stream/agl/*
 /cout.php?sid=$script
 /criteo_adblock.js
 /crt_adb.js
@@ -10345,7 +10347,7 @@ $csp=script-src-attr 'none',domain=volyn.com.ua
 ||exoclick.com^$csp=sandbox allow-same-origin;
 ||fap-guru.$csp=connect-src 'self' blob: data:
 ||folltiz.site^$csp=script-src
-||forum.ru-board.com/*.cgi?*=5&topic=51141$csp=img-src 'self' http://forum.ru-board.com/ https://forum.ru-board.com/ addons.mozilla.org raw.githubusercontent.com
+||forum.ru-board.com/*.cgi?*=5&topic=51666$csp=img-src 'self' http://forum.ru-board.com/ https://forum.ru-board.com/ addons.mozilla.org raw.githubusercontent.com
 ||forums.rusmedserv.com/$csp=script-src 'unsafe-inline' 'unsafe-eval' data: https://forums.rusmedserv.com/clientscript/ cse.google.com *.google.com/cse/ *.googleapis.com
 ||gdz-ru.work/subscribe/$csp=sandbox allow-same-origin;
 ||hawk.live/$csp=sandbox allow-same-origin;
@@ -14920,6 +14922,7 @@ itc.ua###wrapper > .container > p > .out-link1
 metodsilva.ru###wrapper > .fma-bg
 gagadget.com###wrapper > .l-container_wide[style*="min-height:"]
 rasfokus.ru,waralbum.ru###wrapper > noindex
+fastpic.org###x9f8e2b
 newsko.ru###xtest-videoad
 soft.sibnet.ru###ya-block
 80-e.ru###ya-bottom
@@ -17075,6 +17078,7 @@ uvelir.info##.main_frame > div[style="float:left; width:245px; height:130px;"]
 fbc.biz.ua##.main_header > .full_width a[target="_blank"] > img
 job.ru,myjob.by##.main_logo_carusel
 ural56.ru##.main_news_right_block_advert
+partnerkin.com##.main_top.article_ab_container
 cont.ws##.main_top_ads
 kinoafisha.ua##.main_top_line
 dni.ru##.main_wrapper > div[class="column column_left"]
@@ -19206,7 +19210,7 @@ nntt.org##[href^="http://numbuster.com"]
 nntt.org##[href^="http://www.cenam.net"]
 game2day.ru##[href^="https://p2d.ru/"]
 divxplayer.ml,haes.tech,hcdn.online,hqq.tv,metaverseid.tk,player.cvary.org##[href^="https://t.me/"]
-forum.ru-board.com##[href^="postings.cgi?action=edit&forum=5&topic=51141"]:not([href$="postno=1"]) ~ .post img:not([src*="://forum.ru-board.com/board/"])
+forum.ru-board.com##[href^="postings.cgi?action=edit&forum=5&topic=51666"]:not([href$="postno=1"]) ~ .post img:not([src*="://forum.ru-board.com/board/"])
 virpl.ru##[id$="-banner"]
 cools.biz,cools.dj,get-tune.cc,intermusic.name,iplayer.info,ipleer.fm,k1news.ru,kolesa.kz,market4game.ru,mp3iq.com,vmuzice.me,yellowpages.uz##[id*="Banner"]
 espreso.tv##[id*="ScriptRoot"]:not(.news-block-magick)
@@ -20810,6 +20814,7 @@ aum.news##div[class^="djslider"]
 onlinestreams.ru##div[class^="dle_b_"]
 z-torrents.ru##div[class^="dle_b_app"]
 btu.org.ua##div[class^="dle_b_bet"]
+privet-rostov.ru##div[class^="dle_b_mts"]
 a7d.com.ua##div[class^="dle_b_righttop_"] > div[align="center"]
 onfillm.club##div[class^="dolmraz"]
 vip-mods.ru#?#div[class^="down-page"]:-abp-has(> .file-active) > .timer
@@ -22117,7 +22122,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||news.mail.ru/-/*.js?
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
-||pikabu.ru/ajax/*?lc7nV=$xmlhttprequest
+||pikabu.ru/ajax/*?O0pBf=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -23301,7 +23306,6 @@ ukr.net##.lazy-load-banner
 1901.selcdn.ru###bannerTop
 1901.selcdn.ru##.topFaceGuest
 ! Yandex (Яndex)
-/feed?feed_geo=$domain=ya.ru
 /portal/ntp/banner?$domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 @@://ya.r*/search$generichide
 @@://yandex.*/safe/win/$generichide
@@ -23310,8 +23314,9 @@ ukr.net##.lazy-load-banner
 @@||yandex.ru/ads/system/adsdk.js|$script,domain=yandex.ru
 market.yandex.ru,market.yandex.*##.layout_type_search.headline__footer
 ya.ru##.i-mini-bem[class*="banner"]
-ya.ru##[aria-label="Информеры"] ~ [class]
+ya.ru##[aria-label^="Информе"] ~ [class]
 ya.ru##[style*="feed"][style*="min-height:"]
+ya.ru##section[class^="reason"]
 ya.ru,yandex.*##.main-home-banner
 ya.ru,yandex.ru,yandex.*##.AdvProductGallery
 ya.ru,yandex.ru,yandex.*##.layout__banner
@@ -23362,6 +23367,7 @@ yandex.ru,yandex.*#?#.scroller__wrap > div[class^="minibadge"]:-abp-has(.serp-it
 ||kiks.yandex.
 ||static-mon.yandex.net/static/main.js$domain=~auto.ru
 ||strm.yandex.ru/get/$media,domain=yastatic.net
+||ya.ru/portal/*feed_geo=
 ||yabs.yandex.*/show/$third-party
 ||yadi.sk^*direct?
 ||yandex-news.naydex.net^$subdocument
