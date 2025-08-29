@@ -1,8 +1,8 @@
-diff name:ruadlist lines:58 checksum:7fe5ac7445
+diff name:ruadlist lines:65 checksum:92213cdf75
 d4 2
 a5 2
-! Last modified: Fri, 29 Aug 2025 09:28:36 +0000
-! Diff-Path: ../patches/2025.8.29.568.patch#ruadlist
+! Last modified: Fri, 29 Aug 2025 14:27:21 +0000
+! Diff-Path: ../patches/2025.8.29.867.patch#ruadlist
 a191 1
 ||abzadd.com^$third-party
 a7937 1
@@ -10,6 +10,8 @@ a7937 1
 d10348 1
 a10348 1
 ||forum.ru-board.com/*.cgi?*=5&topic=51666$csp=img-src 'self' http://forum.ru-board.com/ https://forum.ru-board.com/ addons.mozilla.org raw.githubusercontent.com
+a13777 1
+dtf.ru#?##app:-abp-has(> .bar > .tabbar [href="/account"] > .icon--login) .content-list > .content:-abp-has(> div > .author .badge__icon--pro)
 d14250 1
 a14381 1
 ultorz.store###onion_wrap
@@ -27,9 +29,14 @@ a19420 1
 a20812 1
 privet-rostov.ru##div[class^="dle_b_mts"]
 d21771 1
+a21841 2
+igromania.ru,kanobu.ru##section[class^="PlotWithMaterials_plots_"] [class*="_tabs"] > button ~ button
+igromania.ru,kanobu.ru#?#section[class^="PlotWithMaterials_plots_"]:-abp-has(> div [class*="_tabs"] > button ~ button[class*="_active_"]) [class^="PlotWithMaterials_head_"] ~ div
 d22120 1
 a22120 1
-||pikabu.ru/ajax/*?O0pBf=$xmlhttprequest
+||pikabu.ru/ajax/*?kSo6l=$xmlhttprequest
+a22940 1
+auto.rambler.ru,avtorambler.com#?#[data-auto_media-desktop="content_block"] ~ div div:-abp-has(> div > [data-rcmw-init])
 d23304 1
 d23313 1
 a23313 1
