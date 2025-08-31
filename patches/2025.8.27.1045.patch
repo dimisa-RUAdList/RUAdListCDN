@@ -1,8 +1,8 @@
-diff name:ruadlist lines:85 checksum:0c03338dc5
+diff name:ruadlist lines:91 checksum:390441342d
 d4 2
 a5 2
-! Last modified: Sat, 30 Aug 2025 20:26:09 +0000
-! Diff-Path: ../patches/2025.8.30.1226.patch#ruadlist
+! Last modified: Sun, 31 Aug 2025 02:06:43 +0000
+! Diff-Path: ../patches/2025.8.31.126.patch#ruadlist
 a191 1
 ||abzadd.com^$third-party
 d420 1
@@ -75,6 +75,10 @@ abw.by##.application:style(top: 0 !important)
 a26759 1
 abw.by##body.stop-scroll > div[class^="_overlay_"]
 d28108 1
+a28166 1
+dzen.ru##[class*="segment__container"] > div > article[class^="card "] ~ div:last-child
+a28241 1
+dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[id^="suggest-item-"] > a[href][target="_blank"]
 a28699 1
 limehd.tv,litehd.tv,pervyi-tv.online,russia-tv.online##+js(no-setTimeout-if, apply, 2000)
 d28701 1
@@ -84,3 +88,5 @@ d28797 1
 d28802 1
 a28904 1
 forum.ru-board.com##:matches-path(topic=51666) .dats > a[href="javascript:pasteN('AlAvis')"] > b:style(color: #00bfff !important)
+a28921 1
+dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[id^="suggest-item-"]:has(> a[href][target="_blank"]):remove()

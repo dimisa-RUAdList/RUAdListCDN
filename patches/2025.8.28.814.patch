@@ -1,8 +1,8 @@
-diff name:ruadlist lines:50 checksum:0c03338dc5
+diff name:ruadlist lines:56 checksum:390441342d
 d4 2
 a5 2
-! Last modified: Sat, 30 Aug 2025 20:26:09 +0000
-! Diff-Path: ../patches/2025.8.30.1226.patch#ruadlist
+! Last modified: Sun, 31 Aug 2025 02:06:43 +0000
+! Diff-Path: ../patches/2025.8.31.126.patch#ruadlist
 d421 1
 a13779 1
 dtf.ru#?##app:-abp-has(> .bar > .tabbar [href="/account"] > .icon--login) .content-list > .content:-abp-has(> div > .author .badge__icon--pro)
@@ -40,6 +40,10 @@ auto.rambler.ru,avtorambler.com#?#[data-auto_media-desktop="content_block"] ~ di
 a26196 1
 @@.ru/ads/system/adsdk.gif|$image,domain=limehd.tv|litehd.tv|pervyi-tv.online|russia-tv.online
 d28115 1
+a28173 1
+dzen.ru##[class*="segment__container"] > div > article[class^="card "] ~ div:last-child
+a28248 1
+dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[id^="suggest-item-"] > a[href][target="_blank"]
 a28706 1
 limehd.tv,litehd.tv,pervyi-tv.online,russia-tv.online##+js(no-setTimeout-if, apply, 2000)
 d28708 1
@@ -49,3 +53,5 @@ d28804 1
 d28809 1
 a28911 1
 forum.ru-board.com##:matches-path(topic=51666) .dats > a[href="javascript:pasteN('AlAvis')"] > b:style(color: #00bfff !important)
+a28928 1
+dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[id^="suggest-item-"]:has(> a[href][target="_blank"]):remove()

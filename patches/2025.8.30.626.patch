@@ -1,8 +1,8 @@
-diff name:ruadlist lines:16 checksum:0c03338dc5
+diff name:ruadlist lines:22 checksum:390441342d
 d4 2
 a5 2
-! Last modified: Sat, 30 Aug 2025 20:26:09 +0000
-! Diff-Path: ../patches/2025.8.30.1226.patch#ruadlist
+! Last modified: Sun, 31 Aug 2025 02:06:43 +0000
+! Diff-Path: ../patches/2025.8.31.126.patch#ruadlist
 d421 1
 a16258 1
 www1.ru##.desktop-c
@@ -15,3 +15,9 @@ d18882 1
 a18882 1
 ixbt.com,ixbt.pro##.yandex_recommend
 d21732 1
+a28177 1
+dzen.ru##[class*="segment__container"] > div > article[class^="card "] ~ div:last-child
+a28252 1
+dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[id^="suggest-item-"] > a[href][target="_blank"]
+a28932 1
+dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[id^="suggest-item-"]:has(> a[href][target="_blank"]):remove()

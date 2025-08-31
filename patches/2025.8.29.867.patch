@@ -1,8 +1,8 @@
-diff name:ruadlist lines:26 checksum:0c03338dc5
+diff name:ruadlist lines:32 checksum:390441342d
 d4 2
 a5 2
-! Last modified: Sat, 30 Aug 2025 20:26:09 +0000
-! Diff-Path: ../patches/2025.8.30.1226.patch#ruadlist
+! Last modified: Sun, 31 Aug 2025 02:06:43 +0000
+! Diff-Path: ../patches/2025.8.31.126.patch#ruadlist
 d421 1
 d14360 1
 a16259 1
@@ -25,3 +25,9 @@ d21730 1
 a21837 1
 iguides.ru#?#section.row > section:-abp-has(> article [href*="?erid="])
 d21840 1
+a28175 1
+dzen.ru##[class*="segment__container"] > div > article[class^="card "] ~ div:last-child
+a28250 1
+dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[id^="suggest-item-"] > a[href][target="_blank"]
+a28930 1
+dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[id^="suggest-item-"]:has(> a[href][target="_blank"]):remove()
