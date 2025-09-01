@@ -1,8 +1,8 @@
-diff name:ruadlist lines:91 checksum:612e5aa540
+diff name:ruadlist lines:91 checksum:eeb8a88db2
 d4 2
 a5 2
-! Last modified: Mon, 01 Sep 2025 12:55:58 +0000
-! Diff-Path: ../patches/2025.9.1.775.patch#ruadlist
+! Last modified: Mon, 01 Sep 2025 17:23:34 +0000
+! Diff-Path: ../patches/2025.9.1.1043.patch#ruadlist
 d421 1
 d10374 1
 a10374 1
@@ -81,7 +81,7 @@ a28706 1
 limehd.tv,litehd.tv,pervyi-tv.online,russia-tv.online##+js(no-setTimeout-if, apply, 2000)
 d28708 1
 a28747 1
-ya.ru##+js(remove-node-text, div, _ad-mark)
+ya.ru##+js(remove-node-text, div, 'ad-mark__b-unit-wrapper')
 a28775 1
 dzen.ru##+js(set-constant, Object.prototype.RenderMarks, undefined)
 d28804 1

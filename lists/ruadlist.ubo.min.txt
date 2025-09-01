@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 01 Sep 2025 12:55:58 +0000
-! Diff-Path: ../patches/2025.9.1.775.patch#ruadlist
+! Last modified: Mon, 01 Sep 2025 17:23:34 +0000
+! Diff-Path: ../patches/2025.9.1.1043.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -28761,7 +28761,7 @@ motorpage.ru##+js(remove-class, noscroll, body)
 online-fix.me##+js(remove-node-text, #text, РЕКЛАМНЫЙ БЛОК:)
 farposst.ru##+js(remove-node-text, #text, Реклама)
 filmitorrent.net,utorr.cc##+js(remove-node-text, #text, Реклама:)
-ya.ru##+js(remove-node-text, div, _ad-mark)
+ya.ru##+js(remove-node-text, div, 'ad-mark__b-unit-wrapper')
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, div, мый посетитель!)
 nullcms.ru##+js(remove-node-text, script, 'decodeURIComponent(escape')
 ritsatv.ru##+js(remove-node-text, script, /ADBLOCK|checkAdBlocker/)

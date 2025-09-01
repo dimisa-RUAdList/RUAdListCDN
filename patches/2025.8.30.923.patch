@@ -1,8 +1,8 @@
-diff name:ruadlist lines:48 checksum:612e5aa540
+diff name:ruadlist lines:48 checksum:eeb8a88db2
 d4 2
 a5 2
-! Last modified: Mon, 01 Sep 2025 12:55:58 +0000
-! Diff-Path: ../patches/2025.9.1.775.patch#ruadlist
+! Last modified: Mon, 01 Sep 2025 17:23:34 +0000
+! Diff-Path: ../patches/2025.9.1.1043.patch#ruadlist
 d10373 1
 a10373 1
 ||www.ukr.net^$csp=frame-src 'self' *.ukr.net *.cloudflare.com *.google.com kinoafisha.ua sinoptik.ua *.twitter.com
@@ -44,6 +44,6 @@ dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[id^="suggest-item-"] > a
 a28497 1
 ya.ru##+js(abort-on-property-read, RythmFeed)
 a28751 1
-ya.ru##+js(remove-node-text, div, _ad-mark)
+ya.ru##+js(remove-node-text, div, 'ad-mark__b-unit-wrapper')
 a28932 1
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[id^="suggest-item-"]:has(> a[href][target="_blank"]):remove()
