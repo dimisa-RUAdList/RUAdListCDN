@@ -1,9 +1,12 @@
-diff name:ruadlist lines:56 checksum:0a3c0dc6e2
+diff name:ruadlist lines:68 checksum:612e5aa540
 d4 2
 a5 2
-! Last modified: Mon, 01 Sep 2025 07:27:34 +0000
-! Diff-Path: ../patches/2025.9.1.447.patch#ruadlist
+! Last modified: Mon, 01 Sep 2025 12:55:58 +0000
+! Diff-Path: ../patches/2025.9.1.775.patch#ruadlist
 d421 1
+d10374 1
+a10374 1
+||www.ukr.net^$csp=frame-src 'self' *.ukr.net *.cloudflare.com *.google.com kinoafisha.ua sinoptik.ua *.twitter.com
 a14344 1
 mignews.com###nakonu_rss
 d14360 1
@@ -45,6 +48,11 @@ d21731 1
 a21838 1
 iguides.ru#?#section.row > section:-abp-has(> article [href*="?erid="])
 d21841 1
+a22100 1
+||static.dzeninfra.ru/s3/zen-lib/*/dzen-desktop/*_$script
+d22127 1
+a22127 1
+||pikabu.ru/ajax/*?rR7cd=$xmlhttprequest
 d22265 2
 a22266 2
 ://sta*rezka.*/i/def_$image
@@ -53,5 +61,9 @@ a28176 1
 dzen.ru##[class*="segment__container"] > div > article[class^="card "] ~ div:last-child
 a28251 1
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[id^="suggest-item-"] > a[href][target="_blank"]
+a28496 1
+ya.ru##+js(abort-on-property-read, RythmFeed)
+a28750 1
+ya.ru##+js(remove-node-text, div, _ad-mark)
 a28931 1
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[id^="suggest-item-"]:has(> a[href][target="_blank"]):remove()

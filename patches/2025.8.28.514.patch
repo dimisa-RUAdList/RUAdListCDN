@@ -1,8 +1,8 @@
-diff name:ruadlist lines:106 checksum:0a3c0dc6e2
+diff name:ruadlist lines:115 checksum:612e5aa540
 d4 2
 a5 2
-! Last modified: Mon, 01 Sep 2025 07:27:34 +0000
-! Diff-Path: ../patches/2025.9.1.447.patch#ruadlist
+! Last modified: Mon, 01 Sep 2025 12:55:58 +0000
+! Diff-Path: ../patches/2025.9.1.775.patch#ruadlist
 a191 1
 ||abzadd.com^$third-party
 d420 1
@@ -11,6 +11,9 @@ a7937 1
 d10348 1
 a10348 1
 ||forum.ru-board.com/*.cgi?*=5&topic=51666$csp=img-src 'self' http://forum.ru-board.com/ https://forum.ru-board.com/ addons.mozilla.org raw.githubusercontent.com
+d10372 1
+a10372 1
+||www.ukr.net^$csp=frame-src 'self' *.ukr.net *.cloudflare.com *.google.com kinoafisha.ua sinoptik.ua *.twitter.com
 a13777 1
 dtf.ru#?##app:-abp-has(> .bar > .tabbar [href="/account"] > .icon--login) .content-list > .content:-abp-has(> div > .author .badge__icon--pro)
 d14250 1
@@ -70,9 +73,11 @@ d21836 1
 a21841 2
 igromania.ru,kanobu.ru##section[class^="PlotWithMaterials_plots_"] [class*="_tabs"] > button ~ button
 igromania.ru,kanobu.ru#?#section[class^="PlotWithMaterials_plots_"]:-abp-has(> div [class*="_tabs"] > button ~ button[class*="_active_"]) [class^="PlotWithMaterials_head_"] ~ div
+a22093 1
+||static.dzeninfra.ru/s3/zen-lib/*/dzen-desktop/*_$script
 d22120 1
 a22120 1
-||pikabu.ru/ajax/*?kSo6l=$xmlhttprequest
+||pikabu.ru/ajax/*?rR7cd=$xmlhttprequest
 d22258 2
 a22259 2
 ://sta*rezka.*/i/def_$image
@@ -94,9 +99,13 @@ a28167 1
 dzen.ru##[class*="segment__container"] > div > article[class^="card "] ~ div:last-child
 a28242 1
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[id^="suggest-item-"] > a[href][target="_blank"]
+a28487 1
+ya.ru##+js(abort-on-property-read, RythmFeed)
 a28700 1
 limehd.tv,litehd.tv,pervyi-tv.online,russia-tv.online##+js(no-setTimeout-if, apply, 2000)
 d28702 1
+a28741 1
+ya.ru##+js(remove-node-text, div, _ad-mark)
 a28769 1
 dzen.ru##+js(set-constant, Object.prototype.RenderMarks, undefined)
 d28798 1

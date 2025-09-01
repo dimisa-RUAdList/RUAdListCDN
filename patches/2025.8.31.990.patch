@@ -1,5 +1,17 @@
-diff name:ruadlist lines:4 checksum:0a3c0dc6e2
+diff name:ruadlist lines:16 checksum:612e5aa540
 d4 2
 a5 2
-! Last modified: Mon, 01 Sep 2025 07:27:34 +0000
-! Diff-Path: ../patches/2025.9.1.447.patch#ruadlist
+! Last modified: Mon, 01 Sep 2025 12:55:58 +0000
+! Diff-Path: ../patches/2025.9.1.775.patch#ruadlist
+d10373 1
+a10373 1
+||www.ukr.net^$csp=frame-src 'self' *.ukr.net *.cloudflare.com *.google.com kinoafisha.ua sinoptik.ua *.twitter.com
+a22109 1
+||static.dzeninfra.ru/s3/zen-lib/*/dzen-desktop/*_$script
+d22136 1
+a22136 1
+||pikabu.ru/ajax/*?rR7cd=$xmlhttprequest
+a28507 1
+ya.ru##+js(abort-on-property-read, RythmFeed)
+a28761 1
+ya.ru##+js(remove-node-text, div, _ad-mark)

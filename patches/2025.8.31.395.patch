@@ -1,8 +1,11 @@
-diff name:ruadlist lines:30 checksum:0a3c0dc6e2
+diff name:ruadlist lines:42 checksum:612e5aa540
 d4 2
 a5 2
-! Last modified: Mon, 01 Sep 2025 07:27:34 +0000
-! Diff-Path: ../patches/2025.9.1.447.patch#ruadlist
+! Last modified: Mon, 01 Sep 2025 12:55:58 +0000
+! Diff-Path: ../patches/2025.9.1.775.patch#ruadlist
+d10373 1
+a10373 1
+||www.ukr.net^$csp=frame-src 'self' *.ukr.net *.cloudflare.com *.google.com kinoafisha.ua sinoptik.ua *.twitter.com
 a14343 1
 mignews.com###nakonu_rss
 a15669 1
@@ -25,7 +28,16 @@ a19794 1
 esports.ru##a[href="https://www.esports.ru/news-betboom/"]
 a19795 1
 vedomosti.ru##a[href="https://www.vedomosti.ru/sport/rb"]
+a22101 1
+||static.dzeninfra.ru/s3/zen-lib/*/dzen-desktop/*_$script
+d22128 1
+a22128 1
+||pikabu.ru/ajax/*?rR7cd=$xmlhttprequest
 d22266 2
 a22267 2
 ://sta*rezka.*/i/def_$image
 ://sta*rezka.*/i/promo/
+a28499 1
+ya.ru##+js(abort-on-property-read, RythmFeed)
+a28753 1
+ya.ru##+js(remove-node-text, div, _ad-mark)
