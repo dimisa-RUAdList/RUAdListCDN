@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 01 Sep 2025 17:23:34 +0000
-! Diff-Path: ../patches/2025.9.1.1043.patch#ruadlist
+! Last modified: Mon, 01 Sep 2025 22:26:11 +0000
+! Diff-Path: ../patches/2025.9.1.1346.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -11872,7 +11872,6 @@ igdz1.ru^$script,domain=igdz.ru
 ||iviche.com/images/commertials/
 ||ixbt.com/branding/
 ||ixbt.com/cgi-bin/banqs.cgi
-||ixbt.games^*/branding/
 ||ixbt.online/banners/
 ||ixbt.online^*/brandings/
 ||iz.ru^*/banners/
@@ -15342,7 +15341,7 @@ inmyroom.ru##.b-Article_main-banner
 inmyroom.ru##.b-BannerPlace
 inmyroom.ru##.b-PopupBanner
 serfery.ru##.b-adds
-ixbt.com,ixbt.games,ixbt.market,ixbt.pro##.b-adfox
+ixbt.com,ixbt.market##.b-adfox
 tut.by##.b-aditem
 primpress.ru##.b-adv-marker
 siliconrus.com##.b-adv-micro
@@ -16258,7 +16257,7 @@ qwe.ru##.default_menu > div:first-child
 botanam.net,gdzputina.me##.desctop
 ixbt.com,ixbt.market##.deskadv
 hromadske.radio##.desktop-banner
-www1.ru##.desktop-c
+ixbt.games,ixbt.pro,www1.ru##.desktop-c
 direct.farm##.desktop-context > div[class*="_cover_"]
 zakon.kz##.desktop-full-advert
 euroki.org##.desktop_banners
@@ -16604,7 +16603,7 @@ psychologies.ru,starhit.ru##.hb-placeholder
 doctube.ru,narodna-osvita.com.ua##.hban
 rcity.by##.hbaner
 bookskeeper.ru,interesniy.com##.hbanner
-ixbt.com,ixbt.pro##.hcont
+ixbt.com##.hcont
 hdtrailer.ru##.hd_head
 foto.ua##.hdr_banner
 onporn.fun##.hdsd
@@ -17184,6 +17183,7 @@ servers-rust.ru##.mob_quad_banner
 ixbt.com##.mobadv
 ixbt.com##.mobb
 zaxid.net##.mobile-branding-wrapper
+ixbt.games,ixbt.pro##.mobile-c
 bankua.com.ua##.mod-custom
 love-sims.ru##.mod-custom3[style]
 newdaynews.ru##.mod-floatbann
@@ -17750,7 +17750,7 @@ carrotblog.ru#?#.recomend-section:-abp-has(> .flex > :not([data-href^="http://ca
 pythonru.com##.recomendation-feed-bottom
 aum.news##.recomended
 oper.ru##.recommend
-www1.ru##.recommend-c
+ixbt.games,ixbt.pro,www1.ru##.recommend-c
 obozrevatel.com##.recommendation
 www.ixbt.com##.recommendcontainer
 cardiologiya.com,zdorovia.com.ua##.recommended
@@ -18109,6 +18109,7 @@ pikabu.ru##.sidebar-block_placeholder
 web-shpargalka.ru##.sidebar-blocks-block[style="height: 1700px;"]
 t.ks.ua#?#.sidebar-box:-abp-has(> .row > .block-block)
 t.ks.ua#?#.sidebar-box:-abp-has(> [class^="ne-banner-"])
+ixbt.games##.sidebar-c
 buknews.com.ua##.sidebar-container > a[rel="nofollow"] > img
 culturemeter.od.ua##.sidebar-content > .widget_custom_html
 istorikonline.ru##.sidebar-content > .widget_custom_html ~ *
@@ -18887,7 +18888,7 @@ sdelanounas.ru##.yandex-zen
 regmarkets.ru##.yandexAd
 queen-time.ru##.yandex_ad_floating
 freeexe.net##.yandex_ads
-ixbt.com,ixbt.pro##.yandex_recommend
+ixbt.com##.yandex_recommend
 promodj.com##.yandexmusic
 1777.ru##.yanews__block
 softomania.net,warezok.net,windows-driver.com,windows-driver.net,windows-program.com##.yaoffer
@@ -19468,7 +19469,6 @@ otzovik.com##a[href*="/buy/"][rel="nofollow"]
 sportliga.com##a[href*="/c.php?"]
 tvoymalysh.com.ua##a[href*="/cgi-bin/click"]
 forum.sibmama.info,forum.sibmama.ru##a[href*="/cl.php?b"]
-ixbt.games##a[href*="/click/branding/"]
 cq.ru##a[href*="/cq67er/"]
 podolyaka.com,podolyaka.ru##a[href*="/dzen/"]
 liveinternet.ru##a[href*="/fastvk.com/"]
@@ -27307,11 +27307,6 @@ www.ixbt.com##.branding .main__container:style(margin-top: unset !important)
 ! исправление ошибок и косяков оригинальной вёрстки
 ixbt.market,www.ixbt.com###page-wrapper .container:style(max-width: 100% !important)
 ixbt.com##.b-content__pagecontent > .b-content--wrapper > .g-grid:style(margin-top: unset !important)
-! ---
-ixbt.games##.main:style(margin-top: 2px !important)
-ixbt.games##.tm-wrapper > .tm:style(margin-bottom: auto !important)
-ixbt.games##body:not(#id):style(margin-top: 0 !important)
-ixbt.games##body:style(background: #eee !important)
 ! ---
 jut-su.net##body:not(#id):style(padding-top: 0 !important; padding-bottom: 0 !important)
 ! ---
