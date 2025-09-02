@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 02 Sep 2025 08:35:10 +0000
-! Diff-Path: ../patches/2025.9.2.515.patch#ruadlist
+! Last modified: Tue, 02 Sep 2025 13:35:57 +0000
+! Diff-Path: ../patches/2025.9.2.815.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -16835,8 +16835,6 @@ bookmo.org,eromo.org,vidmo.org,vpopke.com#?#.items:-abp-has(> .item-card script)
 news.qip.ru##.items_block > article.item[style*="important"]
 news.qip.ru##.items_block.news > .low_new:not(.aside_left)
 itzine.ru##.itzin-podcast-promo
-varlamovru.livejournal.com##.j-e-afterpost-randomsocial
-varlamovru.livejournal.com##.j-mainbanner
 yurasumy.livejournal.com##.j-promo-widget
 livejournal.com##.j-w-adv
 livejournal.com##.j-w-adv-content
@@ -20099,7 +20097,6 @@ ndscalc.ru##a[href^="https://kontur.ru/"]
 itcrumbs.ru##a[href^="https://kwork.ru"]
 poebuilds.ru##a[href^="https://lucky-boys.ru/"]
 cq.ru##a[href^="https://market.yandex.ru/"][rel="nofollow"]
-3dnews.ru##a[href^="https://msi.gm/"]
 medved.us##a[href^="https://my.alfa-forex.ru/ru/registration/"]
 nashvancouver.com##a[href^="https://nashvancouver.com/linkout/"] > img[alt="tree"]
 vm.ru##a[href^="https://news.yandex.ru/index.html?from=rubric"]
@@ -28863,6 +28860,7 @@ kinotv.ru##+js(set-cookie, telegram_popup, Y)
 mp3party.net##+js(set-cookie, yandexFull, true)
 playground.ru##+js(set-local-storage-item, pg_GPbackVideo, on)
 iz.ru##+js(set-local-storage-item, vipler.player.live.play, false)
+dtf.ru,vc.ru##+js(set-local-storage-item, visits-count:plus-promotion, $remove$)
 twitch.tv##+js(twitch-videoad)
 silvercube12.xyz##+js(window-close-if, /dispatch)
 tv.acestream.org##+js(window-close-if, /p/?q=)

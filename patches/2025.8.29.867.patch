@@ -1,8 +1,8 @@
-diff name:ruadlist lines:80 checksum:f7ca61e47e
+diff name:ruadlist lines:81 checksum:0137f2b6dc
 d4 2
 a5 2
-! Last modified: Tue, 02 Sep 2025 08:35:10 +0000
-! Diff-Path: ../patches/2025.9.2.515.patch#ruadlist
+! Last modified: Tue, 02 Sep 2025 13:35:57 +0000
+! Diff-Path: ../patches/2025.9.2.815.patch#ruadlist
 d421 1
 d10374 1
 a10374 1
@@ -23,6 +23,7 @@ ixbt.games,ixbt.pro,www1.ru##.desktop-c
 d16605 1
 a16605 1
 ixbt.com##.hcont
+d16837 2
 a16856 1
 esports.ru##.js-catfish
 a16863 1
@@ -53,8 +54,6 @@ a19792 1
 esports.ru##a[href="https://www.esports.ru/news-betboom/"]
 a19793 1
 vedomosti.ru##a[href="https://www.vedomosti.ru/sport/rb"]
-a20091 1
-3dnews.ru##a[href^="https://msi.gm/"]
 d21730 1
 a21837 1
 iguides.ru#?#section.row > section:-abp-has(> article [href*="?erid="])
@@ -77,5 +76,7 @@ a28495 1
 ya.ru##+js(abort-on-property-read, RythmFeed)
 a28749 1
 ya.ru##+js(remove-node-text, div, 'ad-mark__b-unit-wrapper')
+a28855 1
+dtf.ru,vc.ru##+js(set-local-storage-item, visits-count:plus-promotion, $remove$)
 a28930 1
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[id^="suggest-item-"]:has(> a[href][target="_blank"]):remove()

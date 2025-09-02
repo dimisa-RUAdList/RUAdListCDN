@@ -1,8 +1,8 @@
-diff name:ruadlist lines:38 checksum:f7ca61e47e
+diff name:ruadlist lines:42 checksum:0137f2b6dc
 d4 2
 a5 2
-! Last modified: Tue, 02 Sep 2025 08:35:10 +0000
-! Diff-Path: ../patches/2025.9.2.515.patch#ruadlist
+! Last modified: Tue, 02 Sep 2025 13:35:57 +0000
+! Diff-Path: ../patches/2025.9.2.815.patch#ruadlist
 d10373 1
 a10373 1
 ||www.ukr.net^$csp=frame-src 'self' *.ukr.net *.cloudflare.com *.google.com kinoafisha.ua sinoptik.ua *.twitter.com
@@ -16,6 +16,7 @@ ixbt.games,ixbt.pro,www1.ru##.desktop-c
 d16607 1
 a16607 1
 ixbt.com##.hcont
+d16839 2
 a17186 1
 ixbt.games,ixbt.pro##.mobile-c
 d17753 1
@@ -27,6 +28,7 @@ d18890 1
 a18890 1
 ixbt.com##.yandex_recommend
 d19471 1
+d20102 1
 a22109 1
 ||static.dzeninfra.ru/s3/zen-lib/*/dzen-desktop/*_$script
 d22136 1
@@ -37,3 +39,5 @@ a28507 1
 ya.ru##+js(abort-on-property-read, RythmFeed)
 a28761 1
 ya.ru##+js(remove-node-text, div, 'ad-mark__b-unit-wrapper')
+a28867 1
+dtf.ru,vc.ru##+js(set-local-storage-item, visits-count:plus-promotion, $remove$)
