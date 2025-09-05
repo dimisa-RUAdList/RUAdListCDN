@@ -1,8 +1,8 @@
-diff name:ruadlist lines:136 checksum:73cc98e499
+diff name:ruadlist lines:147 checksum:06b01e0e42
 d4 2
 a5 2
-! Last modified: Fri, 05 Sep 2025 11:21:43 +0000
-! Diff-Path: ../patches/2025.9.5.681.patch#ruadlist
+! Last modified: Fri, 05 Sep 2025 16:30:20 +0000
+! Diff-Path: ../patches/2025.9.5.990.patch#ruadlist
 a4962 1
 ||qiw.lol^$third-party
 d10042 1
@@ -98,11 +98,22 @@ a22811 3
 a23065 1
 rbc.ru##.js-index-central-column .item-commercial-anons-wrapper
 d23067 2
-a23068 4
+a23068 5
 rbc.ru##.js-index-central-column .js-countdown-wrapper
 rbc.ru#?#.js-index-central-column .js-index-doscroll > .js-index-scroll-container:-abp-has([href*="erid="])
 rbc.ru#?#.js-index-central-column .js-index-doscroll[data-type="spec"]:-abp-has([href*="erid="]) > div
 rbc.ru#?#.js-index-central-column > div:first-child ~ div ~ div:-abp-has([href*="?erid="])
+rbc.ru##.js-index-central-column > div:nth-child(-n+5) > .js-index-doscroll[data-type="spec"] > div
+d23096 3
+a23111 1
+rbc.ru#?#body.free .js-index-central-column > [data-publisher-index]:-abp-has([class*="pro-anons"])
+a23113 1
+rbc.ru##body.free [data-vr-zone="Главная новость"] a[href^="https://pro.rbc.ru/"]
+a23114 2
+rbc.ru##body.free [data-vr-zone="Топ новости"] .main__feed::before
+rbc.ru##body.free [data-vr-zone="Топ новости"] a[href*="utm_campaign"]:not([href^="https://pro.rbc.ru/"])
+a23115 1
+rbc.ru#?#body.free [data-vr-zone="Топ новости"] div:-abp-has(> a[href*="utm_campaign"]:not([href^="https://pro.rbc.ru/"]))
 a26459 1
 anime-bit.pro,anime-bit.su##.layer_box > #header
 a26694 2
