@@ -1,8 +1,8 @@
-diff name:ruadlist lines:14 checksum:8e42a6c080
+diff name:ruadlist lines:30 checksum:73cc98e499
 d4 2
 a5 2
-! Last modified: Fri, 05 Sep 2025 06:37:45 +0000
-! Diff-Path: ../patches/2025.9.5.397.patch#ruadlist
+! Last modified: Fri, 05 Sep 2025 11:21:43 +0000
+! Diff-Path: ../patches/2025.9.5.681.patch#ruadlist
 a12599 1
 ||pnp.ru/upload/user/banner-adv-$image
 d16762 1
@@ -13,3 +13,19 @@ a20835 1
 mk.ru##div[class^="good-place"]
 a21649 1
 pnp.ru##img[src*="/upload/user/banner-adv-"]
+d22128 1
+a22128 1
+||pikabu.ru/ajax/*?qRt5y=$xmlhttprequest
+a23060 1
+rbc.ru##.js-index-central-column .item-commercial-anons-wrapper
+d23062 2
+a23063 4
+rbc.ru##.js-index-central-column .js-countdown-wrapper
+rbc.ru#?#.js-index-central-column .js-index-doscroll > .js-index-scroll-container:-abp-has([href*="erid="])
+rbc.ru#?#.js-index-central-column .js-index-doscroll[data-type="spec"]:-abp-has([href*="erid="]) > div
+rbc.ru#?#.js-index-central-column > div:first-child ~ div ~ div:-abp-has([href*="?erid="])
+d28798 1
+a28810 1
+dzen.ru##+js(set-constant, Object.prototype.isCustomBannerType, undefined)
+a28885 1
+rbc.ru#?#.js-index-central-column .js-index-doscroll[data-type="spec"]:-abp-has([href*="erid="]):style(padding: 1px !important; border-bottom: none !important; opacity: 0 !important)
