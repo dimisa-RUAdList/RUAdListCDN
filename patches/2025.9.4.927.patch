@@ -1,8 +1,13 @@
-diff name:ruadlist lines:32 checksum:b5efc15f0e
+diff name:ruadlist lines:47 checksum:a095aa9b3b
 d4 2
 a5 2
-! Last modified: Sat, 06 Sep 2025 12:46:56 +0000
-! Diff-Path: ../patches/2025.9.6.766.patch#ruadlist
+! Last modified: Sat, 06 Sep 2025 17:20:51 +0000
+! Diff-Path: ../patches/2025.9.6.1040.patch#ruadlist
+a17531 1
+limehd.tv,litehd.tv,pervyi-tv.online,russia-tv.online##.place-content-center > [data-test="channel-name-link"] ~ div:not([data-test="channel-name-link"])
+a17916 1
+programhub.ru##.rsy-common-wrapper
+d18704 1
 d22130 1
 a22130 1
 ||pikabu.ru/ajax/*?qRt5y=$xmlhttprequest
@@ -26,8 +31,18 @@ rbc.ru##body.free [data-vr-zone="Топ новости"] .main__feed::before
 rbc.ru##body.free [data-vr-zone="Топ новости"] a[href*="utm_campaign"]:not([href^="https://pro.rbc.ru/"])
 a23112 1
 rbc.ru#?#body.free [data-vr-zone="Топ новости"] div:-abp-has(> a[href*="utm_campaign"]:not([href^="https://pro.rbc.ru/"]))
+d25896 1
+a25896 1
+@@||mc.yandex.ru/metrika/tag.js$domain=lk.rt.ru|shokoladki.ru
+d26367 1
+a26367 1
+@@||yandex.ru/ads/system/context.js|$script,domain=limehd.tv|litehd.tv|pervyi-tv.online|russia-tv.online|shadowcore.ru|tvzvezda.ru
+a28625 1
+megaprogz.ru,programhub.ru##+js(addEventListener-defuser, download, isMonetized)
 d28800 1
 a28812 1
 dzen.ru##+js(set-constant, Object.prototype.isCustomBannerType, undefined)
+a28844 1
+megaprogz.ru,programhub.ru##+js(set-constant, portal.isRedirectToYandexSearchAfterDownloadEnabled, false)
 a28887 1
 rbc.ru#?#.js-index-central-column .js-index-doscroll[data-type="spec"]:-abp-has([href*="erid="]):style(padding: 1px !important; border-bottom: none !important; opacity: 0 !important)

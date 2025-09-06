@@ -1,11 +1,16 @@
-diff name:ruadlist lines:45 checksum:b5efc15f0e
+diff name:ruadlist lines:60 checksum:a095aa9b3b
 d4 2
 a5 2
-! Last modified: Sat, 06 Sep 2025 12:46:56 +0000
-! Diff-Path: ../patches/2025.9.6.766.patch#ruadlist
+! Last modified: Sat, 06 Sep 2025 17:20:51 +0000
+! Diff-Path: ../patches/2025.9.6.1040.patch#ruadlist
 a12599 1
 ||pnp.ru/upload/user/banner-adv-$image
 d16762 1
+a17531 1
+limehd.tv,litehd.tv,pervyi-tv.online,russia-tv.online##.place-content-center > [data-test="channel-name-link"] ~ div:not([data-test="channel-name-link"])
+a17916 1
+programhub.ru##.rsy-common-wrapper
+d18704 1
 d19274 1
 a19274 1
 101.ru,19rus.info,2000.ua,5-tv.ru,56orb.ru,62info.ru,7info.ru,afanasy.biz,agitpro.su,allboxing.ru,anekdot.ru,argumenti.ru,baltnews.ee,belive.ru,bigpicture.ru,bombardir.ru,chehov-vid.ru,daily-inform.ru,dni.ru,dnpmag.com,do-slez.com,eadaily.com,eg.ru,expert.ru,ferra.ru,gazeta-tula.ru,glavnoe24.ru,gorobzor.ru,gorvesti.ru,govoritmoskva.ru,gubdaily.ru,hightech.plus,iarex.ru,inforeactor.ru,iz.ru,kirov-portal.ru,kriminal.net.ua,livelib.ru,m24.ru,melodrama1.com,mgorod.kz,mk.ru,myhistori.ru,nashgorod.ru,nation-news.ru,nevnov.ru,newinform.com,nn.ru,ntv.ru,osnmedia.ru,penzainform.ru,penzavzglyad.ru,pikinform.ru,polit.info,politexpert.net,politonline.ru,pora.ru,radidomapro.ru,radio1.ru,radioromantika.ru,ratel.kz,ren.tv,ria56.ru,riafan.ru,rueconomics.ru,rusplt.ru,russian.rt.com,rusvesna.su,sevkavportal.ru,sharknews.ru,sm.news,sminews.ru,sobesednik.ru,steaklovers.menu,sun-news.ru,topwar.ru,trendymen.ru,tsargrad.tv,tsn24.ru,tvernews.ru,ua.today,uralpress.ru,usa.one,vedomosti.ru,versia.ru,veseloeradio.ru,vesti-yamal.ru,vesti.ru,vesti.uz,vestivrn.ru,vokrugsveta.ru,xn--b1ats.xn--80asehdb,zakon.kz,zr.ru##[id^="unit_"]
@@ -36,11 +41,21 @@ rbc.ru##body.free [data-vr-zone="Топ новости"] .main__feed::before
 rbc.ru##body.free [data-vr-zone="Топ новости"] a[href*="utm_campaign"]:not([href^="https://pro.rbc.ru/"])
 a23110 1
 rbc.ru#?#body.free [data-vr-zone="Топ новости"] div:-abp-has(> a[href*="utm_campaign"]:not([href^="https://pro.rbc.ru/"]))
+d25894 1
+a25894 1
+@@||mc.yandex.ru/metrika/tag.js$domain=lk.rt.ru|shokoladki.ru
+d26365 1
+a26365 1
+@@||yandex.ru/ads/system/context.js|$script,domain=limehd.tv|litehd.tv|pervyi-tv.online|russia-tv.online|shadowcore.ru|tvzvezda.ru
 d28162 1
 a28169 1
 dzen.ru##div[class^="news-"] [class$="__rubricator"] + div[class*=" "]
+a28623 1
+megaprogz.ru,programhub.ru##+js(addEventListener-defuser, download, isMonetized)
 d28798 1
 a28810 1
 dzen.ru##+js(set-constant, Object.prototype.isCustomBannerType, undefined)
+a28842 1
+megaprogz.ru,programhub.ru##+js(set-constant, portal.isRedirectToYandexSearchAfterDownloadEnabled, false)
 a28885 1
 rbc.ru#?#.js-index-central-column .js-index-doscroll[data-type="spec"]:-abp-has([href*="erid="]):style(padding: 1px !important; border-bottom: none !important; opacity: 0 !important)

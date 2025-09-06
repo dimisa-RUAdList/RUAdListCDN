@@ -1,8 +1,8 @@
-diff name:ruadlist lines:148 checksum:b5efc15f0e
+diff name:ruadlist lines:163 checksum:a095aa9b3b
 d4 2
 a5 2
-! Last modified: Sat, 06 Sep 2025 12:46:56 +0000
-! Diff-Path: ../patches/2025.9.6.766.patch#ruadlist
+! Last modified: Sat, 06 Sep 2025 17:20:51 +0000
+! Diff-Path: ../patches/2025.9.6.1040.patch#ruadlist
 a4962 1
 ||qiw.lol^$third-party
 d10042 1
@@ -29,6 +29,11 @@ a16153 1
 muz-tv.ru##.content-cols-right
 d16765 1
 d16767 1
+a17536 1
+limehd.tv,litehd.tv,pervyi-tv.online,russia-tv.online##.place-content-center > [data-test="channel-name-link"] ~ div:not([data-test="channel-name-link"])
+a17921 1
+programhub.ru##.rsy-common-wrapper
+d18709 1
 d18917 1
 d18981 1
 a18981 1
@@ -115,6 +120,12 @@ rbc.ru##body.free [data-vr-zone="Топ новости"] .main__feed::before
 rbc.ru##body.free [data-vr-zone="Топ новости"] a[href*="utm_campaign"]:not([href^="https://pro.rbc.ru/"])
 a23115 1
 rbc.ru#?#body.free [data-vr-zone="Топ новости"] div:-abp-has(> a[href*="utm_campaign"]:not([href^="https://pro.rbc.ru/"]))
+d25899 1
+a25899 1
+@@||mc.yandex.ru/metrika/tag.js$domain=lk.rt.ru|shokoladki.ru
+d26370 1
+a26370 1
+@@||yandex.ru/ads/system/context.js|$script,domain=limehd.tv|litehd.tv|pervyi-tv.online|russia-tv.online|shadowcore.ru|tvzvezda.ru
 a26459 1
 anime-bit.pro,anime-bit.su##.layer_box > #header
 a26694 2
@@ -132,6 +143,8 @@ dzen.ru##div[class^="news-"] [class$="__rubricator"] + div[class*=" "]
 d28618 1
 a28618 1
 116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,www.fontanka.ru,ya62.ru##+js(addEventListener-defuser, click, , elements, [class^="plotsLine_"] > div)
+a28625 1
+megaprogz.ru,programhub.ru##+js(addEventListener-defuser, download, isMonetized)
 d28734 1
 a28734 1
 116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,www.fontanka.ru,ya62.ru##+js(no-xhr-if, /hits/event/, method:POST)
@@ -141,6 +154,8 @@ dzen.ru##+js(set-constant, Object.prototype.isCustomBannerType, undefined)
 d28839 1
 a28839 1
 116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,www.fontanka.ru,ya62.ru##+js(set-constant, navigator.sendBeacon, noopFunc)
+a28844 1
+megaprogz.ru,programhub.ru##+js(set-constant, portal.isRedirectToYandexSearchAfterDownloadEnabled, false)
 a28887 1
 rbc.ru#?#.js-index-central-column .js-index-doscroll[data-type="spec"]:-abp-has([href*="erid="]):style(padding: 1px !important; border-bottom: none !important; opacity: 0 !important)
 d29190 1
