@@ -1,10 +1,12 @@
-diff name:ruadlist lines:19 checksum:22fbf05a6f
+diff name:ruadlist lines:52 checksum:1d3fa0f5e9
 d4 2
 a5 2
-! Last modified: Sun, 07 Sep 2025 08:29:28 +0000
-! Diff-Path: ../patches/2025.9.7.509.patch#ruadlist
+! Last modified: Sun, 07 Sep 2025 13:25:57 +0000
+! Diff-Path: ../patches/2025.9.7.805.patch#ruadlist
 a7767 1
 .ru/ads/$~xmlhttprequest
+a7768 1
+.ru/ads/meta/
 a10602 1
 /api/*/ads-banners$domain=limehd.tv|litehd.tv|pervyi-tv.online|russia-tv.online
 d13257 1
@@ -16,5 +18,36 @@ d20391 1
 a20391 1
 amdm.ru,amuzic.ru,astromeridian.ru,centr-molodosti.ru,demotivation.me,documentalnye.ru,e-libra.ru,elek.club,filebase.ws,gameru.net,gossebanmen.ru,hi-fi.ru,igrigo.net,kazakh-zerno.net,miytvideo.ru,nowfilms.ru,oterraria.ru,peterburg2.ru,repost.uz,rogoff.club,rutab.net,sexytal.com,story-house.ru,telegraf.in.ua,vorle.ru,womo.ua##body > noindex
 d20962 1
+a23054 1
+rbc.ru##.branding-block
+d23069 1
+d23076 2
+d23086 1
+d23088 3
+a23090 4
+rbc.ru,rbclifetime.ru##.topline-desktop-hide-banners
+autonews.ru,rbc.ru,rbcautonews.ru,rbcrealty.ru##.topline__branding__wrapper
+autonews.ru,rbc.ru,rbcautonews.ru,rbcrealty.ru,sportrbc.ru##.topline__disable-adv__button
+autonews.ru,rbc.ru,rbcautonews.ru,sportrbc.ru##.topline__item__image-block
+d23093 2
+a23094 2
+/browser-updater$script,domain=autonews.ru|rbc.ru|sportrbc.ru
+/rbcbanners-*/_fullscreen.js$script,domain=autonews.ru|rbc.ru|rbcautonews.ru|sportrbc.ru
+d23100 1
+a23100 1
+autonews.ru,rbc.ru,sportrbc.ru,utro.ru##[id^="unit_"]
+d23106 2
+a23107 2
+autonews.ru,rbc.ru,rbcautonews.ru,sportrbc.ru##body div .banner__container
+autonews.ru,rbc.ru,sportrbc.ru##body div .banner__filmstrip
+d23122 1
+a23122 1
+autonews.ru,rbc.ru,rbcautonews.ru,rbclifetime.ru,sportrbc.ru##div[class^="fox-tail"]
 a24979 1
 ||taxi-tourister.ru^$third-party
+d28307 1
+a28307 1
+rbc.ru,rbcrealty.ru,sportrbc.ru###js_col_left > .l-sticky:style(position: relative !important; top: unset !important)
+d28902 1
+a28902 1
+rbc.ru,rbcrealty.ru,sportrbc.ru##.l-sticky:has(.forecast:empty) ~ .js-news-feed > .news-feed:style(top: 166px !important; position: unset !important)

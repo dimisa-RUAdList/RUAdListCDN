@@ -1,10 +1,12 @@
-diff name:ruadlist lines:34 checksum:22fbf05a6f
+diff name:ruadlist lines:67 checksum:1d3fa0f5e9
 d4 2
 a5 2
-! Last modified: Sun, 07 Sep 2025 08:29:28 +0000
-! Diff-Path: ../patches/2025.9.7.509.patch#ruadlist
+! Last modified: Sun, 07 Sep 2025 13:25:57 +0000
+! Diff-Path: ../patches/2025.9.7.805.patch#ruadlist
 a7767 1
 .ru/ads/$~xmlhttprequest
+a7768 1
+.ru/ads/meta/
 a10602 1
 /api/*/ads-banners$domain=limehd.tv|litehd.tv|pervyi-tv.online|russia-tv.online
 d13257 1
@@ -21,6 +23,31 @@ d20390 1
 a20390 1
 amdm.ru,amuzic.ru,astromeridian.ru,centr-molodosti.ru,demotivation.me,documentalnye.ru,e-libra.ru,elek.club,filebase.ws,gameru.net,gossebanmen.ru,hi-fi.ru,igrigo.net,kazakh-zerno.net,miytvideo.ru,nowfilms.ru,oterraria.ru,peterburg2.ru,repost.uz,rogoff.club,rutab.net,sexytal.com,story-house.ru,telegraf.in.ua,vorle.ru,womo.ua##body > noindex
 d20961 1
+a23053 1
+rbc.ru##.branding-block
+d23068 1
+d23075 2
+d23085 1
+d23087 3
+a23089 4
+rbc.ru,rbclifetime.ru##.topline-desktop-hide-banners
+autonews.ru,rbc.ru,rbcautonews.ru,rbcrealty.ru##.topline__branding__wrapper
+autonews.ru,rbc.ru,rbcautonews.ru,rbcrealty.ru,sportrbc.ru##.topline__disable-adv__button
+autonews.ru,rbc.ru,rbcautonews.ru,sportrbc.ru##.topline__item__image-block
+d23092 2
+a23093 2
+/browser-updater$script,domain=autonews.ru|rbc.ru|sportrbc.ru
+/rbcbanners-*/_fullscreen.js$script,domain=autonews.ru|rbc.ru|rbcautonews.ru|sportrbc.ru
+d23099 1
+a23099 1
+autonews.ru,rbc.ru,sportrbc.ru,utro.ru##[id^="unit_"]
+d23105 2
+a23106 2
+autonews.ru,rbc.ru,rbcautonews.ru,sportrbc.ru##body div .banner__container
+autonews.ru,rbc.ru,sportrbc.ru##body div .banner__filmstrip
+d23121 1
+a23121 1
+autonews.ru,rbc.ru,rbcautonews.ru,rbclifetime.ru,sportrbc.ru##div[class^="fox-tail"]
 a24978 1
 ||taxi-tourister.ru^$third-party
 d25903 1
@@ -29,7 +56,13 @@ a25903 1
 d26374 1
 a26374 1
 @@||yandex.ru/ads/system/context.js|$script,domain=limehd.tv|litehd.tv|pervyi-tv.online|russia-tv.online|shadowcore.ru|tvzvezda.ru
+d28306 1
+a28306 1
+rbc.ru,rbcrealty.ru,sportrbc.ru###js_col_left > .l-sticky:style(position: relative !important; top: unset !important)
 a28632 1
 megaprogz.ru,programhub.ru##+js(addEventListener-defuser, download, isMonetized)
 a28851 1
 megaprogz.ru,programhub.ru##+js(set-constant, portal.isRedirectToYandexSearchAfterDownloadEnabled, false)
+d28899 1
+a28899 1
+rbc.ru,rbcrealty.ru,sportrbc.ru##.l-sticky:has(.forecast:empty) ~ .js-news-feed > .news-feed:style(top: 166px !important; position: unset !important)
