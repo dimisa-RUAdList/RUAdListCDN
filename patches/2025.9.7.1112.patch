@@ -1,8 +1,8 @@
-diff name:ruadlist lines:36 checksum:5c2566f612
+diff name:ruadlist lines:46 checksum:9ee28bed70
 d4 2
 a5 2
-! Last modified: Mon, 08 Sep 2025 14:30:22 +0000
-! Diff-Path: ../patches/2025.9.8.870.patch#ruadlist
+! Last modified: Mon, 08 Sep 2025 19:21:28 +0000
+! Diff-Path: ../patches/2025.9.8.1161.patch#ruadlist
 a10360 1
 ||paileactivist.github.io/toolz/adblock$csp=connect-src 'self'
 d14440 1
@@ -10,9 +10,17 @@ a20626 1
 konohatv.life#?#div[class*="px"]:-abp-has(> [id^="yandex_rtb_"])
 a20797 1
 sovsport.ru##div[class^="card-carousel_coefficient"]
+d22125 1
+a22125 2
+@@||s3.wi-fi.ru/mtt/configs/sites/dtf.js|$script,domain=dtf.ru
+@@||ssp.rambler.ru/capirs_async.js|$script,domain=dtf.ru|www.championat.com|www.championat.ru
+a22126 1
+@@||yandex.ru/ads/system/context.js|$script,domain=dtf.ru
 d22134 1
 a22134 1
 ||pikabu.ru/ajax/*?W34rf=$xmlhttprequest
+a23072 1
+rbc.ru##.js-index-central-column > [data-publisher-index] .showcase-collection__footer
 d26168 2
 a26169 1
 @@||yandex.ru/ads/system/header-bidding.js$script,domain=trainzland.ru
@@ -27,6 +35,8 @@ a26591 1
 baskino.film,dnepr.info,dugtor.ru,filmitorrent.net,filmitorrent.site,jetsetter.ua,kinoafisha.ua,kinobar.vip,kinoukr.com,konohatv.life,ladys.media,moskva.fm,newstudio.tv,nnm-club.me,nnmclub.ro,nnmclub.to,pay-day.ru,roem.ru,rusfootball.info,trupornolabs.org,utorr.cc,vc.ru,virusinfo.info,xxxadulttorrent.org,you-anime.ru,yummyanime.tv,zombie-film.live##body:not(#id):style(padding-top: 0 !important)
 d27974 3
 d28708 1
+a28716 1
+dtf.ru##+js(no-setTimeout-if, '{n&&r(n),n=null', 100)
 a28811 1
 meduza.io##+js(set-constant, Object.prototype.data-censorhip, undefined)
 a28947 1

@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 08 Sep 2025 14:30:22 +0000
-! Diff-Path: ../patches/2025.9.8.870.patch#ruadlist
+! Last modified: Mon, 08 Sep 2025 19:21:28 +0000
+! Diff-Path: ../patches/2025.9.8.1161.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22124,8 +22124,10 @@ $csp=script-src-attr 'none',domain=eurointegration.com.ua|pravda.com.ua|sportana
 @@||s.zhctrack.net/z|$xmlhttprequest
 @@||s.zmctrack.net/z|$xmlhttprequest
 @@||s.znctrack.net/z|$xmlhttprequest
-@@||ssp.rambler.ru/capirs_async.js|$script,domain=www.championat.com|www.championat.ru
+@@||s3.wi-fi.ru/mtt/configs/sites/dtf.js|$script,domain=dtf.ru
+@@||ssp.rambler.ru/capirs_async.js|$script,domain=dtf.ru|www.championat.com|www.championat.ru
 @@||statika.mpsuadv.ru/scripts/*.js|$script,domain=trychatgpt.ru
+@@||yandex.ru/ads/system/context.js|$script,domain=dtf.ru
 https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|livejournal.com|olegmakarenko.ru|periskop.su|shakko.ru|shiro-kino.ru|vadimrazumov.ru
 ||captcha-api.yandex.ru^$domain=drive2.ru
 ||imgfrost.net^$third-party
@@ -23072,6 +23074,7 @@ rbc.ru##.js-index-central-column .item_promo-card
 rbc.ru##.js-index-central-column .js-countdown-wrapper
 rbc.ru#?#.js-index-central-column .js-index-doscroll > .js-index-scroll-container:-abp-has([href*="erid="])
 rbc.ru#?#.js-index-central-column .js-index-doscroll[data-type="spec"]:-abp-has([href*="erid="]) > div
+rbc.ru##.js-index-central-column > [data-publisher-index] .showcase-collection__footer
 cash.rbc.ru##.js-one-office.premium
 rbc.ru##.js-video-player-ad-skip
 rbc.ru#?#.l-col-100h:-abp-has(> div [href*="banner"])
@@ -28711,6 +28714,7 @@ websdr.su##+js(no-setInterval-if, '(clearInterval(e)')
 fatcatslim.ru##+js(no-setInterval-if, clientHeight)
 anime-chan.me##+js(no-setInterval-if, move_string)
 volyninfo.com##+js(no-setInterval-if, replaceWith)
+dtf.ru##+js(no-setTimeout-if, '{n&&r(n),n=null', 100)
 otzovik.com##+js(no-setTimeout-if, , 250)
 sibnet.ru##+js(no-setTimeout-if, Adblock)
 razlozhi.ru##+js(no-setTimeout-if, X-Set-Adblock)

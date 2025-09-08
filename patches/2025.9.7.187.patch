@@ -1,8 +1,8 @@
-diff name:ruadlist lines:84 checksum:5c2566f612
+diff name:ruadlist lines:94 checksum:9ee28bed70
 d4 2
 a5 2
-! Last modified: Mon, 08 Sep 2025 14:30:22 +0000
-! Diff-Path: ../patches/2025.9.8.870.patch#ruadlist
+! Last modified: Mon, 08 Sep 2025 19:21:28 +0000
+! Diff-Path: ../patches/2025.9.8.1161.patch#ruadlist
 a7767 1
 .ru/ads/$~xmlhttprequest
 a7768 1
@@ -25,12 +25,20 @@ konohatv.life#?#div[class*="px"]:-abp-has(> [id^="yandex_rtb_"])
 a20793 1
 sovsport.ru##div[class^="card-carousel_coefficient"]
 d20962 1
+d22122 1
+a22122 2
+@@||s3.wi-fi.ru/mtt/configs/sites/dtf.js|$script,domain=dtf.ru
+@@||ssp.rambler.ru/capirs_async.js|$script,domain=dtf.ru|www.championat.com|www.championat.ru
+a22123 1
+@@||yandex.ru/ads/system/context.js|$script,domain=dtf.ru
 d22131 1
 a22131 1
 ||pikabu.ru/ajax/*?W34rf=$xmlhttprequest
 a23054 1
 rbc.ru##.branding-block
 d23069 1
+a23069 1
+rbc.ru##.js-index-central-column > [data-publisher-index] .showcase-collection__footer
 d23076 2
 d23086 1
 d23088 3
@@ -72,6 +80,8 @@ d28307 1
 a28307 1
 rbc.ru,rbcrealty.ru,sportrbc.ru###js_col_left > .l-sticky:style(position: relative !important; top: unset !important)
 d28706 1
+a28714 1
+dtf.ru##+js(no-setTimeout-if, '{n&&r(n),n=null', 100)
 a28809 1
 meduza.io##+js(set-constant, Object.prototype.data-censorhip, undefined)
 d28902 1
