@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 08 Sep 2025 04:32:09 +0000
-! Diff-Path: ../patches/2025.9.8.272.patch#ruadlist
+! Last modified: Mon, 08 Sep 2025 09:30:44 +0000
+! Diff-Path: ../patches/2025.9.8.570.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -20795,6 +20795,7 @@ sportliga.com##div[class^="bulletin"]
 lada-granta.net,lkforum.ru##div[class^="but-150"]
 sovsport.ru##div[class^="button_advertisement"]
 umu.org.ua##div[class^="c40-reveal-modal"]
+sovsport.ru##div[class^="card-carousel_coefficient"]
 sovsport.ru##div[class^="card-carousel_winline"]
 chita.ru##div[class^="chitaru__wonder"]
 pogoda.meta.ua##div[class^="city__banner"]
@@ -22131,7 +22132,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||news.mail.ru/-/*.js?
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
-||pikabu.ru/ajax/*?qRt5y=$xmlhttprequest
+||pikabu.ru/ajax/*?W34rf=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
