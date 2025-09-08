@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 08 Sep 2025 09:30:44 +0000
-! Diff-Path: ../patches/2025.9.8.570.patch#ruadlist
+! Last modified: Mon, 08 Sep 2025 14:30:22 +0000
+! Diff-Path: ../patches/2025.9.8.870.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10358,6 +10358,7 @@ $csp=script-src-attr 'none',domain=volyn.com.ua
 ||nsportal.ru/download/$csp=frame-src 'self'
 ||obfusgated.com/*/tools/ad-block-test$csp=connect-src 'self';
 ||opensharing.org/img/images/$csp=script-src 'unsafe-inline' 'unsafe-eval' opensharing.org/img/
+||paileactivist.github.io/toolz/adblock$csp=connect-src 'self'
 ||psysovet24.ru^$csp=script-src 'self' * blob: data:
 ||sex-studentki.$csp=connect-src 'self' blob: data:
 ||skam.online^$csp=script-src 'self' * 'unsafe-eval' data:
@@ -14437,7 +14438,6 @@ dofiga.net###pbie_25
 poleno.net###pddk221
 onyxgame.com###pegination ~ a
 sportrecs.com###player .MuiButton-containedPrimary
-konohatv.org###player > .absolute
 toples.cc###player > div[style*="pointer;"]
 ts.kg###player-blocker
 ovva.tv###player-mobile-select > .buttons-container
@@ -20624,6 +20624,7 @@ altapress.ru,etextlib.ru##div[class*="partners"]
 kino-mania.pro##div[class*="plav_"]
 1parazit.ru##div[class*="popup"]
 newsru.com##div[class*="prm"]
+konohatv.life#?#div[class*="px"]:-abp-has(> [id^="yandex_rtb_"])
 smexigrex.ru##div[class*="region-amm"]
 fiteria.ru##div[class*="relap-"]
 baby.ru##div[class*="rennab-"]
@@ -26166,8 +26167,7 @@ xn--112-5cd3baof9c5c.xn--p1ai#@#.wrapad
 @@||yaberemenna.info/openx/www/delivery/ai.php?filename=$domain=yaberemenna.info
 @@||yaberemenna.info/openx/www/delivery/ajs.php?zoneid=7&$domain=yaberemenna.info
 @@||yandex.ru/ads/$domain=magnit.ru
-@@||yandex.ru/ads/system/context.js|$script,domain=1prime.ru|gismeteo.ru|konohatv.org|tnt-online.ru
-@@||yandex.ru/ads/system/header-bidding.js$script,domain=gismeteo.ru|trainzland.ru
+@@||yandex.ru/ads/system/header-bidding.js$script,domain=trainzland.ru
 @@||yandex.ru/metrika/informer.js
 @@||yandex.ru/search/site/?*search$third-party,script
 @@||yandex.st/share/share.js|$script,domain=nashaplaneta.su
@@ -26375,7 +26375,7 @@ gbsmp.ru#@#img[width="728"][height="90"]
 @@||xn--b1ajehof.xn--80asehdb^$script,domain=xn--b1ajehof.xn--80asehdb
 @@||yandex.ru/ads/system/adsdk.js$script,domain=aniboom.one|api-video.khl.ru|gisher.org|karaoke.ru|kino.tricolor.tv|m24.ru|peers.tv|player.mediavitrina.ru|ren.tv|rutube.ru
 @@||yandex.ru/ads/system/context.js|$domain=examenpdd.com|forum.qrz.ru|yvid.ru
-@@||yandex.ru/ads/system/context.js|$script,domain=limehd.tv|litehd.tv|pervyi-tv.online|russia-tv.online|shadowcore.ru|tvzvezda.ru
+@@||yandex.ru/ads/system/context.js|$script,domain=limehd.tv|litehd.tv|pervyi-tv.online|russia-tv.online|shadowcore.ru|tvzvezda.ru|volley.ru
 @@||yarik-sat.com/reklama/*.js|$script,domain=yarik-sat.com
 @@||yastatic.net/safeframe-bundles/0.83/host.js|$script,domain=examenpdd.com
 @@||zx-pk.ru/abp/adblock_detector.js|$script,domain=zx-pk.ru
@@ -26407,7 +26407,7 @@ newnavitel.blogspot.com#@##AdSense1
 num-words.com#@#.advert-banner
 pvpru.com#@##ad_global_above_footer
 rap-me.online#@#.adv-banner
-razlozhi.ru,tnt-online.ru#@#div[id^="adfox_"]
+razlozhi.ru#@#div[id^="adfox_"]
 tests24.su#@##header-ad
 textstudio.co#@#.adsbyyahoo
 xcom-shop.ru#@#.ad-placeholder
@@ -26589,7 +26589,7 @@ forums.overclockers.ru##tr > td[nowrap="nowrap"][style^="color: red;"][style$="f
 aif.ru,ain.ua,bit.ua,budport.com.ua,ixbt.com,ko.com.ua,kv.by,livejournal.com,mc.today,newstudio.tv,oper.ru,pay-day.ru,sc2tv.ru,stopgame.ru,userstyles.org,zakarpatpost.net##body:not(#id):style(background-image: none !important)
 2pay-day.ru,4video.adult,aif.ru,ain.ua,bit.ua,budport.com.ua,ixbt.com,ko.com.ua,kv.by,livejournal.com,mc.today,newstudio.tv,oper.ru,sc2tv.ru,stopgame.ru,userstyles.org,zakarpatpost.net##html:not(#id):style(background-image: none !important)
 ! ---
-baskino.film,dnepr.info,dugtor.ru,filmitorrent.net,filmitorrent.site,jetsetter.ua,kinoafisha.ua,kinobar.vip,kinoukr.com,konohatv.org,ladys.media,moskva.fm,newstudio.tv,nnm-club.me,nnmclub.ro,nnmclub.to,pay-day.ru,roem.ru,rusfootball.info,trupornolabs.org,utorr.cc,vc.ru,virusinfo.info,xxxadulttorrent.org,you-anime.ru,yummyanime.tv,zombie-film.live##body:not(#id):style(padding-top: 0 !important)
+baskino.film,dnepr.info,dugtor.ru,filmitorrent.net,filmitorrent.site,jetsetter.ua,kinoafisha.ua,kinobar.vip,kinoukr.com,konohatv.life,ladys.media,moskva.fm,newstudio.tv,nnm-club.me,nnmclub.ro,nnmclub.to,pay-day.ru,roem.ru,rusfootball.info,trupornolabs.org,utorr.cc,vc.ru,virusinfo.info,xxxadulttorrent.org,you-anime.ru,yummyanime.tv,zombie-film.live##body:not(#id):style(padding-top: 0 !important)
 ! ---
 radioromantika.ru##.main-wrapp__content:style(margin-top: 0 !important)
 101.ru##.wrapper-branding
@@ -27972,9 +27972,6 @@ thebell.io##.post_content.newsletter:style(max-height: unset !important)
 ! ---
 thg.ru##body:style(background: whitesmoke !important)
 ! ---
-tnt-online.ru###all:not(#id) > #content:style(margin-top: 20px !important)
-tnt-online.ru##body:style(background-color: #fff !important)
-! ---
 tochka.net###comments_block:style(margin-top: unset !important)
 tochka.net##.embed-instagram > iframe:style(max-width: unset !important)
 ! ---
@@ -28706,7 +28703,6 @@ freetp.org,freetp.ru,online-fix.me##+js(nano-setTimeout-booster, timer)
 4pda.to##+js(nano-setTimeout-booster, zat_tick)
 reshu.by,sdamgia.ru##+js(nano-setTimeout-booster, {return f(!1)}, 20000)
 www.ukr.net##+js(no-fetch-if, /_events/)
-volley.ru##+js(no-fetch-if, /buzzoola\.com|plrjs\.org/)
 trychatgpt.ru##+js(no-fetch-if, /mpsuadv\.ru/)
 dzen.ru,sportsdzen.ru##+js(no-fetch-if, /stats/bulk)
 animix.lol##+js(no-fetch-if, doubleclick.net)
@@ -28810,6 +28806,7 @@ embed.dugout.com##+js(set-constant, Object.prototype.autostart, noopFunc)
 sports.ru##+js(set-constant, Object.prototype.branding, undefined)
 dni.expert,dni.ru,kp.kg,kp.kz,kp.md,kp.ru,ladys.media,lifehacker.ru,mk.ru,ohotniki.ru,portalvirtualreality.ru,radiokp.ru,russian.rt.com,sportkp.ru,the-day.ru,woman.ru,womanhit.ru##+js(set-constant, Object.prototype.changeVisible, noopFunc)
 ati.su##+js(set-constant, Object.prototype.createBannerItem, null)
+meduza.io##+js(set-constant, Object.prototype.data-censorhip, undefined)
 24smi.org##+js(set-constant, Object.prototype.detect, noopFunc)
 examenpdd.com##+js(set-constant, Object.prototype.detectAdblock, noopFunc)
 retail.ru##+js(set-constant, Object.prototype.detectBlockAds, noopFunc)
@@ -28946,7 +28943,11 @@ cq.ru##[class*="grid"] > a:has(.p-item__button-sponsored):remove()
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href*="://yabs.yandex."][href*="/count/"]):remove()
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href*="://yandex."][href*="/clck/"]):remove()
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href][target="_blank"]):remove()
+meduza.io##[class]:remove-attr(data-censorhip)
 fontanka.ru##[class^="articleBlockVideo_"] video ~ button
+meduza.io##[data-censorhip=true] .BlockTitle-module-root span:style(box-shadow: inherit !important; color: inherit !important)
+meduza.io##[data-censorhip=true] [class^="ChronologyItem-module"] span:style(box-shadow: inherit !important; color: inherit !important)
+meduza.io##[data-censorhip=true] [class^="ChronologyItem-module"] strong:style(box-shadow: inherit !important; color: inherit !important)
 ozon.ru##[data-lcp-name*="anner-"]:matches-path(/my/reviews/promo):style(display: block !important)
 www.sports.ru##[data-noinit]
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[id^="suggest-item-"]:has(> a[href*="://yabs.yandex."][href*="/count/"]):remove()

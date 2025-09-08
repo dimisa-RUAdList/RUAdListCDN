@@ -1,12 +1,14 @@
-diff name:ruadlist lines:84 checksum:30aea87405
+diff name:ruadlist lines:108 checksum:5c2566f612
 d4 2
 a5 2
-! Last modified: Mon, 08 Sep 2025 09:30:44 +0000
-! Diff-Path: ../patches/2025.9.8.570.patch#ruadlist
+! Last modified: Mon, 08 Sep 2025 14:30:22 +0000
+! Diff-Path: ../patches/2025.9.8.870.patch#ruadlist
 a7767 1
 .ru/ads/$~xmlhttprequest
 a7768 1
 .ru/ads/meta/
+a10358 1
+||paileactivist.github.io/toolz/adblock$csp=connect-src 'self'
 a10602 1
 /api/*/ads-banners$domain=limehd.tv|litehd.tv|pervyi-tv.online|russia-tv.online
 d13257 1
@@ -14,6 +16,7 @@ a13257 1
 ||tourister.ru/js/acrt_obs_$script
 a13871 1
 wdrussia.ru###bnprm
+d14436 1
 a17531 1
 limehd.tv,litehd.tv,pervyi-tv.online,russia-tv.online##.place-content-center > [data-test="channel-name-link"] ~ div:not([data-test="channel-name-link"])
 a17916 1
@@ -22,6 +25,8 @@ d18704 1
 d20390 1
 a20390 1
 amdm.ru,amuzic.ru,astromeridian.ru,centr-molodosti.ru,demotivation.me,documentalnye.ru,e-libra.ru,elek.club,filebase.ws,gameru.net,gossebanmen.ru,hi-fi.ru,igrigo.net,kazakh-zerno.net,miytvideo.ru,nowfilms.ru,oterraria.ru,peterburg2.ru,repost.uz,rogoff.club,rutab.net,sexytal.com,story-house.ru,telegraf.in.ua,vorle.ru,womo.ua##body > noindex
+a20621 1
+konohatv.life#?#div[class*="px"]:-abp-has(> [id^="yandex_rtb_"])
 a20792 1
 sovsport.ru##div[class^="card-carousel_coefficient"]
 d20961 1
@@ -70,16 +75,35 @@ a24974 1
 d25899 1
 a25899 1
 @@||mc.yandex.ru/metrika/tag.js$domain=lk.rt.ru|shokoladki.ru
+d26161 2
+a26162 1
+@@||yandex.ru/ads/system/header-bidding.js$script,domain=trainzland.ru
 d26370 1
 a26370 1
-@@||yandex.ru/ads/system/context.js|$script,domain=limehd.tv|litehd.tv|pervyi-tv.online|russia-tv.online|shadowcore.ru|tvzvezda.ru
+@@||yandex.ru/ads/system/context.js|$script,domain=limehd.tv|litehd.tv|pervyi-tv.online|russia-tv.online|shadowcore.ru|tvzvezda.ru|volley.ru
+d26402 1
+a26402 1
+razlozhi.ru#@#div[id^="adfox_"]
+d26584 1
+a26584 1
+baskino.film,dnepr.info,dugtor.ru,filmitorrent.net,filmitorrent.site,jetsetter.ua,kinoafisha.ua,kinobar.vip,kinoukr.com,konohatv.life,ladys.media,moskva.fm,newstudio.tv,nnm-club.me,nnmclub.ro,nnmclub.to,pay-day.ru,roem.ru,rusfootball.info,trupornolabs.org,utorr.cc,vc.ru,virusinfo.info,xxxadulttorrent.org,you-anime.ru,yummyanime.tv,zombie-film.live##body:not(#id):style(padding-top: 0 !important)
+d27967 3
 d28302 1
 a28302 1
 rbc.ru,rbcrealty.ru,sportrbc.ru###js_col_left > .l-sticky:style(position: relative !important; top: unset !important)
 a28628 1
 megaprogz.ru,programhub.ru##+js(addEventListener-defuser, download, isMonetized)
+d28700 1
+a28803 1
+meduza.io##+js(set-constant, Object.prototype.data-censorhip, undefined)
 a28847 1
 megaprogz.ru,programhub.ru##+js(set-constant, portal.isRedirectToYandexSearchAfterDownloadEnabled, false)
 d28895 1
 a28895 1
 rbc.ru,rbcrealty.ru,sportrbc.ru##.l-sticky:has(.forecast:empty) ~ .js-news-feed > .news-feed:style(top: 166px !important; position: unset !important)
+a28938 1
+meduza.io##[class]:remove-attr(data-censorhip)
+a28939 3
+meduza.io##[data-censorhip=true] .BlockTitle-module-root span:style(box-shadow: inherit !important; color: inherit !important)
+meduza.io##[data-censorhip=true] [class^="ChronologyItem-module"] span:style(box-shadow: inherit !important; color: inherit !important)
+meduza.io##[data-censorhip=true] [class^="ChronologyItem-module"] strong:style(box-shadow: inherit !important; color: inherit !important)
