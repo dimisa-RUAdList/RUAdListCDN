@@ -1,8 +1,13 @@
-diff name:ruadlist lines:14 checksum:2fa2c316c3
+diff name:ruadlist lines:21 checksum:6476a4279d
 d4 2
 a5 2
-! Last modified: Tue, 09 Sep 2025 05:27:01 +0000
-! Diff-Path: ../patches/2025.9.9.327.patch#ruadlist
+! Last modified: Tue, 09 Sep 2025 10:31:07 +0000
+! Diff-Path: ../patches/2025.9.9.631.patch#ruadlist
+d20487 1
+a20487 1
+blackwot.ru,draug.ru,emdigital.ru,enthub.it,modsforwot.ru,pogodavtomske.ru#?#div:-abp-has(> [id^="yandex_rtb"])
+a21729 1
+enthub.it##main > aside + .block > div:not([id]):not([class])
 d22127 1
 a22127 2
 @@||s3.wi-fi.ru/mtt/configs/sites/dtf.js|$script,domain=dtf.ru
@@ -11,5 +16,7 @@ a22128 1
 @@||yandex.ru/ads/system/context.js|$script,domain=dtf.ru
 a23074 1
 rbc.ru##.js-index-central-column > [data-publisher-index] .showcase-collection__footer
+a26888 1
+click-or-die.ru##a[href*="erid="]:style(pointer-events: none !important; color: inherit !important)
 a28713 1
 dtf.ru##+js(no-setTimeout-if, '{n&&r(n),n=null', 100)

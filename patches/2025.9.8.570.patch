@@ -1,13 +1,18 @@
-diff name:ruadlist lines:41 checksum:2fa2c316c3
+diff name:ruadlist lines:48 checksum:6476a4279d
 d4 2
 a5 2
-! Last modified: Tue, 09 Sep 2025 05:27:01 +0000
-! Diff-Path: ../patches/2025.9.9.327.patch#ruadlist
+! Last modified: Tue, 09 Sep 2025 10:31:07 +0000
+! Diff-Path: ../patches/2025.9.9.631.patch#ruadlist
 a10360 1
 ||paileactivist.github.io/toolz/adblock$csp=connect-src 'self'
 d14440 1
+d20487 1
+a20487 1
+blackwot.ru,draug.ru,emdigital.ru,enthub.it,modsforwot.ru,pogodavtomske.ru#?#div:-abp-has(> [id^="yandex_rtb"])
 a20626 1
 konohatv.life#?#div[class*="px"]:-abp-has(> [id^="yandex_rtb_"])
+a21728 1
+enthub.it##main > aside + .block > div:not([id]):not([class])
 d22126 1
 a22126 2
 @@||s3.wi-fi.ru/mtt/configs/sites/dtf.js|$script,domain=dtf.ru
@@ -28,6 +33,8 @@ razlozhi.ru#@#div[id^="adfox_"]
 d26592 1
 a26592 1
 baskino.film,dnepr.info,dugtor.ru,filmitorrent.net,filmitorrent.site,jetsetter.ua,kinoafisha.ua,kinobar.vip,kinoukr.com,konohatv.life,ladys.media,moskva.fm,newstudio.tv,nnm-club.me,nnmclub.ro,nnmclub.to,pay-day.ru,roem.ru,rusfootball.info,trupornolabs.org,utorr.cc,vc.ru,virusinfo.info,xxxadulttorrent.org,you-anime.ru,yummyanime.tv,zombie-film.live##body:not(#id):style(padding-top: 0 !important)
+a26888 1
+click-or-die.ru##a[href*="erid="]:style(pointer-events: none !important; color: inherit !important)
 d27975 3
 d28709 1
 a28717 1
