@@ -1,13 +1,16 @@
-diff name:ruadlist lines:86 checksum:6476a4279d
+diff name:ruadlist lines:96 checksum:f95a4c65a9
 d4 2
 a5 2
-! Last modified: Tue, 09 Sep 2025 10:31:07 +0000
-! Diff-Path: ../patches/2025.9.9.631.patch#ruadlist
+! Last modified: Tue, 09 Sep 2025 15:29:33 +0000
+! Diff-Path: ../patches/2025.9.9.929.patch#ruadlist
 a7769 1
 .ru/ads/meta/
 a10359 1
 ||paileactivist.github.io/toolz/adblock$csp=connect-src 'self'
 d14439 1
+d14941 1
+a18933 1
+activation-keys.ru,adregain.ru,ads.bid,apicloud.ru,appt12mn.com,banner.mob.ru.com,bestsoft.club,browser-extensions.club,cheatget.ru,click2soft.ru,clickbytes.ru,content.directadvert.ru,cs-serva.net,directx.biz,dnevni4ok.com,download.studio,downloadamigo.com,downloadbrowser.ru,driverpack.io,driverpaksolution.ru,drp.su,dugtor-deer.pw,dw1-msetup.org,elementsbrowser.com,etarg.network,everinform.com,ex.24smi.info,ex.24smi.site,ex.infox.sg,exonews.ru,fast2click.ru,filetaker.ru,fin-vector.ru,flebolab.ru,getappwiz.ru,getdstud.io,getdstudio.cab,getdstudio.com,getdstudio.dev,getfiletds.ru,getyoursoft.ru,globalstylis.ru,hdvideoboxs.ru,health-official.ru,idealmedia.io,install-now.com,installpack.net,kinowinx.ru,linksoftbox.ru,litebrowser.ru,losnews.ru,mainews.ru,manysoftlink.ru,marketgid.ru,medicin-novosti-24.com,medicineteaser.org,medicineteaser.ru,msetup.pro,mysoftbox.ru,mytrk.xyz,nalivali.ru,new-rutor.website,news-decent.com,news-sphere.com,newsma.ru,novostly.com,offergate.pro,ognyvo.ru,olx.ua.partners,orgsales.ru,picpick.ru,pochistit.ru,popcornhd.ru,prime-oblako.ru,programma-ochistki.ru,readvesti.ru,rotateme.ru,rsboot.ru,rustoria-topnews.ru,rutor.ml,rutorrent.co,rutors.tk,rutracker.eu,rutracker.work,rutraker.org,saymigren.net,sb-on-line.ru,search-cdn.ru,searchcdn.ru,smiru.ru,softboxtds.ru,spishi.vip,starblog.org,sysenvfiles.net,t-lafa-site.ru,t1mcapp.com,tdsclicks2.ru,tdsrotations.ru,tft-test.ru,tlmnt.com,top-rutor.eu,top.24smi.info,topnews.smi.one,toprated-film.co,tordrom.com,torrentum.ru,ubar-pro.ru,ubar-pro2.ru,ubar-pro3.ru,ubar-pro4.ru,ubar.pro,ufiler-download.ru,ufiler-pro.ru,ufiler-pro2.ru,ufiler.pro,upro.me,viniki.ru,vserpg.ru,wogoods.com,womens-journal.ru,worldinform.ru,xbox-torrent.ru,ya-browser.ru,ya-cdn.ru,ya-distrib.ru,yabrowser.su,yadistr.ru,yasearch-cdn.ru,yasearchcdn.ru,ynsearch.ru,zodiac-game.info,zpppstop.ru,zqwjpxow7boc.ru##:not(this-site-is-fake)
 d20486 1
 a20486 1
 blackwot.ru,draug.ru,emdigital.ru,enthub.it,modsforwot.ru,pogodavtomske.ru#?#div:-abp-has(> [id^="yandex_rtb"])
@@ -26,6 +29,8 @@ a22125 1
 d22133 1
 a22133 1
 ||pikabu.ru/ajax/*?W34rf=$xmlhttprequest
+a22477 1
+dzen.ru##[id*="_R-U-"]
 a23056 1
 rbc.ru##.branding-block
 d23071 1
@@ -68,14 +73,19 @@ baskino.film,dnepr.info,dugtor.ru,filmitorrent.net,filmitorrent.site,jetsetter.u
 a26888 1
 click-or-die.ru##a[href*="erid="]:style(pointer-events: none !important; color: inherit !important)
 d27975 3
+d28182 1
+a28182 1
+dzen.ru##div[class*="new"] [class$="__rubricator"] + div[class*=" "]
 d28310 1
 a28310 1
 rbc.ru,rbcrealty.ru,sportrbc.ru###js_col_left > .l-sticky:style(position: relative !important; top: unset !important)
+a28638 1
+dtf.ru##+js(addEventListener-defuser, error, removeChild)
 d28709 1
-a28717 1
-dtf.ru##+js(no-setTimeout-if, '{n&&r(n),n=null', 100)
 a28812 1
 meduza.io##+js(set-constant, Object.prototype.data-censorhip, undefined)
+a28814 1
+dtf.ru##+js(set-constant, Object.prototype.detectAdblock, undefined)
 d28905 1
 a28905 1
 rbc.ru,rbcrealty.ru,sportrbc.ru##.l-sticky:has(.forecast:empty) ~ .js-news-feed > .news-feed:style(top: 166px !important; position: unset !important)
