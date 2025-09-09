@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 09 Sep 2025 15:29:33 +0000
-! Diff-Path: ../patches/2025.9.9.929.patch#ruadlist
+! Last modified: Tue, 09 Sep 2025 20:27:52 +0000
+! Diff-Path: ../patches/2025.9.9.1227.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -28341,6 +28341,7 @@ e.mail.ru,octavius.mail.ru##.advert-column:style(width: 0 !important)
 e.mail.ru,octavius.mail.ru##.application-mail__wrap > .application-mail__layout > .layout[style*="grid-template-columns:"]:style(grid-template-columns: 232px 1fr 0 0 !important)
 e.mail.ru,octavius.mail.ru##.application_new-toolbar .application-mail:not(.application-mail_webview-mobile) [class*="top-line-adv"]:style(--letter-list-top-toolbar-height: inherit !important; --letter-list-top-native-adv-height: inherit !important; --scrollable-top-native-adv-height: inherit !important)
 e.mail.ru,octavius.mail.ru##.layer-sent-page > .layer:style(min-height: 0 !important)
+e.mail.ru,octavius.mail.ru##.letter-meta > .skeleton
 e.mail.ru##.ph-project__link[href^="https://cloud.mail.ru/promo/"]
 e.mail.ru##.ph-projects > a[href^="https://e.mail.ru/messages/inbox?utm_"]:style(pointer-events: none !important)
 ! ---
