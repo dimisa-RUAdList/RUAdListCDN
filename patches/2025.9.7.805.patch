@@ -1,10 +1,12 @@
-diff name:ruadlist lines:65 checksum:2b4f364359
+diff name:ruadlist lines:71 checksum:6f367e6633
 d4 2
 a5 2
-! Last modified: Wed, 10 Sep 2025 16:33:38 +0000
-! Diff-Path: ../patches/2025.9.10.993.patch#ruadlist
+! Last modified: Wed, 10 Sep 2025 21:23:18 +0000
+! Diff-Path: ../patches/2025.9.10.1283.patch#ruadlist
 a10360 1
 ||paileactivist.github.io/toolz/adblock$csp=connect-src 'self'
+a12243 1
+||moonanime.art/static/js/promo.js
 d14440 1
 d14942 1
 a18934 1
@@ -27,6 +29,10 @@ a22126 1
 d22134 1
 a22134 1
 ||pikabu.ru/ajax/*?NM78y=$xmlhttprequest
+a22269 3
+hdrezka.*,rezka.*##body.has-brand .b-content__main .b-player a[href*="aHR0c"]
+hdrezka.*,rezka.*##body.has-brand .b-content__main > div[id]:not([class]):empty
+hdrezka.*,rezka.*##body.has-brand .b-content__main > div[style^="height: 250px; overflow: hidden;"]
 a22478 1
 dzen.ru##[id*="_R-U-"]
 a23072 1
