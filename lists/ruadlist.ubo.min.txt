@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 12 Sep 2025 08:33:16 +0000
-! Diff-Path: ../patches/2025.9.12.513.patch#ruadlist
+! Last modified: Fri, 12 Sep 2025 13:31:36 +0000
+! Diff-Path: ../patches/2025.9.12.811.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -11912,6 +11912,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||kapital-rus.ru/img/*/banners/
 ||kapriz.info/img/
 ||kapriz.info/tiz/
+||karavan.ua/wp-content/uploads/*-branding-$image
 ||kavkazova.ru^*rtl1.org$xmlhttprequest
 ||kazanfirst.ru/ads
 ||kazfootball.kz/tools/scripts/slick/
@@ -13897,6 +13898,7 @@ allbasketball.org###branding-ads
 foto.ua###branding-bg-pickit
 truba.com###branding-head-link
 namba.tj###branding-html
+karavan.ua###brandingTop
 promodj.com###branding_click
 kolyan.net,telegraf.in.ua,traffilm.net,vse.kz###branding_link
 telegraf.in.ua###branding_top
@@ -15253,6 +15255,8 @@ riamo.ru##.article--external
 penzadoctor.ru##.article-banner
 techdigest.ru##.article-banner-side
 www.sport.ru##.article-bottom-block > .hdr2
+lifehacker.ru#?#.article-card-container > .container > .article-card__small-wrapper:-abp-has(a[href*="/topics/shopping/"])
+lifehacker.ru#?#.article-card-container > .container > .article-card__small-wrapper:-abp-has(a[href*="utm_"])
 playua.net##.article-comments > .row > div[class] + div[class]
 studopedia.ru##.article-description > noindex
 mmorpg.su##.article-free
@@ -19500,6 +19504,7 @@ scores24.live##a[href*="/sportbooks"]
 chezasite.com##a[href*="/stat/click-"][target="_blank"]
 partnerkin.com##a[href*="/strk/"]
 ant-top.ru##a[href*="/teasers/"]
+lifehacker.ru##a[href*="/topics/shopping/"]
 scores24.live##a[href*="/tsr/"]
 muzofond.fm##a[href*="/zvuk_transfer?"]
 filmisub.com##a[href*="728x90"]
@@ -21619,6 +21624,7 @@ gamestar.ru##img[height="310"]
 akademekb.ru##img[id^="cradv_"]
 bitmakler.com##img[onclick*="bitmakler.com/go.php"]
 nnportal.org##img[onclick^="countAdClick"]
+karavan.ua##img[src*="-branding-"]
 consol-games.com,consol-games.net##img[src*="/600_200"]
 rosteplo.ru##img[src*="/Image/rek/"]
 salonav.com##img[src*="/SAV_banners/"]
@@ -22140,7 +22146,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||news.mail.ru/-/*.js?
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
-||pikabu.ru/ajax/*?NM78y=$xmlhttprequest
+||pikabu.ru/ajax/*?f6h7U=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -28680,7 +28686,7 @@ opennet.me,opennet.ru##+js(href-sanitizer, a[href*="://click.opennet.ru/cgi-bin/
 appleinsider.ru##+js(href-sanitizer, a[href*="?goto=https"], ?goto)
 kluchikipro.ru##+js(href-sanitizer, a[href*="deeplink="], ?deeplink)
 lifehacker.ru##+js(href-sanitizer, a[href][rel*="sponsored"][target="_blank"], ?goto)
-hot.game##+js(href-sanitizer, a[href][target="_blank"], ?ulp)
+hot.game,lifehacker.ru##+js(href-sanitizer, a[href][target="_blank"], ?ulp)
 www.ixbt.com##+js(href-sanitizer, a[href^="//www.ixbt.com/click/?c="], [title])
 wotspeak.org##+js(href-sanitizer, a[href^="/engine/dwn"], ?xf)
 vc.ru##+js(href-sanitizer, a[href^="https://go.2038.pro/"][href*="?dl="], ?dl)

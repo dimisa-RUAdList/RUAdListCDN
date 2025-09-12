@@ -1,16 +1,23 @@
-diff name:ruadlist lines:79 checksum:e941f23a22
+diff name:ruadlist lines:93 checksum:58d010d50c
 d4 2
 a5 2
-! Last modified: Fri, 12 Sep 2025 08:33:16 +0000
-! Diff-Path: ../patches/2025.9.12.513.patch#ruadlist
+! Last modified: Fri, 12 Sep 2025 13:31:36 +0000
+! Diff-Path: ../patches/2025.9.12.811.patch#ruadlist
 a10360 1
 ||paileactivist.github.io/toolz/adblock$csp=connect-src 'self'
+a11913 1
+||karavan.ua/wp-content/uploads/*-branding-$image
 a12243 1
 ||moonanime.art/static/js/promo.js
+a13897 1
+karavan.ua###brandingTop
 a14171 1
 bigkyiv.com.ua###headlessui-portal-root
 d14440 1
 d14942 1
+a15254 2
+lifehacker.ru#?#.article-card-container > .container > .article-card__small-wrapper:-abp-has(a[href*="/topics/shopping/"])
+lifehacker.ru#?#.article-card-container > .container > .article-card__small-wrapper:-abp-has(a[href*="utm_"])
 d16024 1
 a16024 1
 024.by,ampercar.com,autogeek.com.ua,bolshoyulov.ru,femmie.ru,find-key.ru,fuzzmusic.ru,gadgets-help.ru,gubdaily.ru,hersonweek.net,itbusiness.com.ua,itsider.com.ua,kakbog.com,karavan.ua,kovi.ru,mmr.net.ua,nnews.com.ua,o-polze.com,pcminipro.ru,poravkrym.ru,villaved.ru,vsviti.com.ua##.code-block
@@ -23,6 +30,8 @@ a19103 1
 karavan.ua##[data-banner-name]
 a19262 1
 karavan.ua##[id^="kar-"]
+a19498 1
+lifehacker.ru##a[href*="/topics/shopping/"]
 d20487 1
 a20487 1
 blackwot.ru,draug.ru,emdigital.ru,enthub.it,modsforwot.ru,pogodavtomske.ru#?#div:-abp-has(> [id^="yandex_rtb"])
@@ -34,6 +43,8 @@ advizzer.com,bigkyiv.com.ua,bragazeta.ru,cataclysmdda.ru,chehov-vid.ru,coollib.n
 d21165 1
 a21165 1
 dochronika.ru,footballua.tv,forpost.media,kriminal.tv,pidru4nik.com,swordmaster.org,today.ua,uti-puti.com.ua,www.semestr.ru##div[id^="bn_"]
+a21616 1
+karavan.ua##img[src*="-branding-"]
 a21728 1
 enthub.it##main > aside + .block > div:not([id]):not([class])
 d22126 1
@@ -44,7 +55,7 @@ a22127 1
 @@||yandex.ru/ads/system/context.js|$script,domain=dtf.ru
 d22135 1
 a22135 1
-||pikabu.ru/ajax/*?NM78y=$xmlhttprequest
+||pikabu.ru/ajax/*?f6h7U=$xmlhttprequest
 a22270 3
 hdrezka.*,rezka.*##body.has-brand .b-content__main .b-player a[href*="aHR0c"]
 hdrezka.*,rezka.*##body.has-brand .b-content__main > div[id]:not([class]):empty
@@ -75,6 +86,9 @@ a28340 1
 e.mail.ru,octavius.mail.ru##.letter-meta > .skeleton
 a28638 1
 dtf.ru##+js(addEventListener-defuser, error, removeChild)
+d28671 1
+a28671 1
+hot.game,lifehacker.ru##+js(href-sanitizer, a[href][target="_blank"], ?ulp)
 d28709 1
 a28814 1
 dtf.ru##+js(set-constant, Object.prototype.detectAdblock, undefined)
