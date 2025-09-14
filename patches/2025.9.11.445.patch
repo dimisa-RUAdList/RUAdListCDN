@@ -1,8 +1,10 @@
-diff name:ruadlist lines:62 checksum:e8c11d64d3
+diff name:ruadlist lines:67 checksum:ce60dc10c6
 d4 2
 a5 2
-! Last modified: Sun, 14 Sep 2025 10:24:42 +0000
-! Diff-Path: ../patches/2025.9.14.624.patch#ruadlist
+! Last modified: Sun, 14 Sep 2025 15:23:12 +0000
+! Diff-Path: ../patches/2025.9.14.923.patch#ruadlist
+a9429 1
+||parik24.biz^*?adtag=$popup
 a11591 1
 ||frankmedia.ru/wp-json/*/banners?id=
 a11914 1
@@ -24,8 +26,9 @@ a15503 1
 d16024 1
 a16024 1
 024.by,ampercar.com,autogeek.com.ua,bolshoyulov.ru,femmie.ru,find-key.ru,fuzzmusic.ru,gadgets-help.ru,gubdaily.ru,hersonweek.net,itbusiness.com.ua,itsider.com.ua,kakbog.com,karavan.ua,kovi.ru,mmr.net.ua,nnews.com.ua,o-polze.com,pcminipro.ru,poravkrym.ru,villaved.ru,vsviti.com.ua##.code-block
-a16825 1
-frankmedia.ru#?#.item:-abp-has(> .news-preview > .label .partners)
+a16820 2
+frankmedia.ru##.item > .news-preview > .label
+frankmedia.ru##.item > .news-preview > .label ~ [class]
 a17293 1
 frankmedia.ru#?#.news-list section:-abp-has(> .card > .info .partners)
 d18802 1
@@ -50,8 +53,8 @@ a21167 1
 dochronika.ru,footballua.tv,forpost.media,kriminal.tv,pidru4nik.com,swordmaster.org,today.ua,uti-puti.com.ua,www.semestr.ru##div[id^="bn_"]
 a21618 1
 karavan.ua##img[src*="-branding-"]
-a21842 1
-frankmedia.ru#?#section > .card:-abp-has(> .info .partners)
+a21848 1
+frankmedia.ru#?#section:-abp-has(> .block > .header > [href="/news?types=partners-material"])
 d22140 1
 a22140 1
 ||pikabu.ru/ajax/*?f6h7U=$xmlhttprequest
@@ -59,5 +62,7 @@ d28680 1
 a28680 1
 hot.game,lifehacker.ru##+js(href-sanitizer, a[href][target="_blank"], ?ulp)
 d28821 1
+a28889 1
+parik24.biz##+js(window-close-if, adtag)
 d28959 1
 d28961 3
