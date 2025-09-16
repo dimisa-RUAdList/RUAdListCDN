@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 16 Sep 2025 07:25:31 +0000
-! Diff-Path: ../patches/2025.9.16.445.patch#ruadlist
+! Last modified: Tue, 16 Sep 2025 12:54:24 +0000
+! Diff-Path: ../patches/2025.9.16.774.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -7860,7 +7860,7 @@ _verified.php?code=*&server=runetki.com
 /api/topl/*/*.js$third-party
 /b?size=*&catgry=$third-party,script
 /b_bs_killdog_
-/backlinks.
+/backlinks.$domain=~vuetifyjs.com
 /baner.
 /baner/*$domain=~barva.km.ua|~churchjc.com|~ferr-um.ucoz.ru|~fitlife62.ru|~helpsetup.ru|~market-oz.ru|~slovo-shop.ru|~stalker-2-2012.ucoz.net|~stocking.com.ua|~xadoindustrial.com|~zokko.com.ua
 /baner_$domain=~aplica.pl|~brabrabra.ua|~campworld.com.ua|~churchjc.com|~food16.ru|~nenc.gov.ua|~pcmart.com.ua|~pizzamel.ru|~planetarium.dn.ua|~tambov.gov.ru|~triatek.com.ua|~uslugi.mosreg.ru|~zippo.net.ua
@@ -8273,7 +8273,7 @@ _tizers.
 ||me/?pu=$third-party,script
 ||me/init.js$third-party,script
 ||name/?pu=$third-party,script
-||net/banners/
+||net/banners/$domain=~hepsiburada.com
 ||oblivki.$third-party,script
 ||online/rotator.min.js$third-party
 ||porno*/images/obmen/$image,~third-party
@@ -9191,6 +9191,7 @@ $third-party,popup,domain=2ip.ru
 ||130.211.212.60^$popup
 ||1740f665a91b68.com^$popup
 ||176.114.0.131^$popup
+||24parik.com^*?adtag=$popup
 ||35.184.188.211^$popup
 ||42eed1a0d9c129.com^$popup
 ||46kdc235eh.com^$popup
@@ -9429,6 +9430,7 @@ $third-party,popup,domain=2ip.ru
 ||onclkds.com^$third-party,popup
 ||online/*rd.php?id=$third-party,popup
 ||otrek.ru^$popup
+||parik24.bid^*?creative_id=$popup
 ||parik24.biz^*?adtag=$popup
 ||peel-down.net/search.php?$popup
 ||playermailer.net^$popup
@@ -17183,7 +17185,7 @@ russian-seriali.ru##.mixmob
 afisha.tut.by##.mm-main
 yakutia.info##.mm_widget
 dreamprogs.net##.mmenu a[href^="http"]:not([href^="http://dream"])
-2ch.hk,2ch.life,2ch.su##.mmm
+2ch.life,2ch.su##.mmm
 minsknews.by##.mn-a-rec
 gamer-info.com##.mn-news-lst-ad-bl > div
 openssource.info##.mob
@@ -19023,7 +19025,7 @@ igrigo.net#?#[class*="navi_title"]:-abp-contains(/браузер|партнер�
 kg.ua##[class*="region-banner"]
 kg.ua##[class*="region-news"] > .block > * > .img-responsive
 kg.ua##[class*="region-news"] > .block a[href][target="_blank"]
-2ch.hk,2ch.life,2ch.su,mypresentation.ru,pshack.net,tonna-games.ru##[class*="rekl"]
+2ch.life,2ch.su,mypresentation.ru,pshack.net,tonna-games.ru##[class*="rekl"]
 yapx.ru##[class*="revenue-block"]
 sexoporno.su##[class*="sam"][class*="pro"]
 hwp.ru##[class*="tbann"]
@@ -20639,7 +20641,7 @@ niscu.ru##div[class*="iw-modal"]
 kingisepp-today.ru,xn----etbbecbrbp5ahkja1ae7v.xn--p1ai##div[class*="ks-banner-news"]
 ts.kg##div[class*="oops-"]
 altapress.ru,etextlib.ru##div[class*="partners"]
-2ch.hk,2ch.life,2ch.su##div[class*="plashque"]
+2ch.life,2ch.su##div[class*="plashque"]
 kino-mania.pro##div[class*="plav_"]
 1parazit.ru##div[class*="popup"]
 newsru.com##div[class*="prm"]
@@ -28809,9 +28811,9 @@ newsyou.info##+js(remove-node-text, script, error-report.com)
 fapvdo.ru##+js(remove-node-text, script, getComputedStyle)
 gsm.in.ua##+js(remove-node-text, script, message_ads)
 playvillage.ru##+js(set-attr, ._1z_ ._21_, style, '')
-dtf.ru,vc.ru##+js(set-attr, .comment-media > .andropov-video > video, controls, true)
+dtf.ru,vc.ru##+js(set-attr, .comment-media .andropov-video video, controls, true)
 fishki.net##+js(set-attr, .cycle-carousel-wrap > a > img, src, [data-src])
-dtf.ru,vc.ru##+js(set-attr, .media > .andropov-video > video, controls, true)
+dtf.ru,vc.ru##+js(set-attr, .media .andropov-video video, controls, true)
 eneyida.tv##+js(set-attr, .owl-item > a > img, src, [data-src])
 fontanka.ru##+js(set-attr, [class^="articleBlockVideo_"] video, controls, true)
 overclockers.ru##+js(set-attr, img[src="https://overclockers.ru/assets/logo_gray_stub.gif"], src, [data-src])
@@ -28819,6 +28821,7 @@ joyreactor.cc,reactor.cc##+js(set-attr, video, controls, true)
 3dnews.ru##+js(set-attr, video[controls="controls"], controls, true)
 peers.tv##+js(set-constant, ADV_DISABLED, true)
 www.ukr.net##+js(set-constant, Clicks._test_meta_referer, null)
+dtf.ru,vc.ru##+js(set-constant, HTMLVideoElement.prototype.play, {})
 ivi.ru##+js(set-constant, Object.prototype.AdvObject, noopFunc)
 ictv.ua,inter.ua,k1.ua,novy.tv,ntn.ua,starlight.digital,stb.ua,teleportal.ua##+js(set-constant, Object.prototype.AdvertisementManager, undefined)
 player.vgtrk.com##+js(set-constant, Object.prototype.IS_CHECK_REGISTRATION, false)
@@ -28910,7 +28913,7 @@ twitch.tv##+js(twitch-videoad)
 aj2738.top##+js(window-close-if)
 silvercube12.xyz##+js(window-close-if, /dispatch)
 tv.acestream.org##+js(window-close-if, /p/?q=)
-parik24.biz##+js(window-close-if, adtag)
+24parik.com,parik24.biz##+js(window-close-if, adtag)
 infox.sg##+js(window-close-if, utm)
 08sportbar.com,08sportbar.online,777sportba.com,777sportba.org,777streams.pro,7streams.pro,assiatv.com,barsportbar.com,boom365hd.com,cdnpotok.com,cdntvpotok.com,channels247.net,goool7.ws,hd24.pro,hd24.watch,hd365.ws,hdstream365.com,limetvv.com,live-stream365.com,live365tv.site,mc.today,oneliketv.com,oxax.tv,raes.tech,s7yours.com,sbautumn.com,sblive.online,sbsports.pro,sbstreams.ws,shd247.com,sport365hd.com,sport365hd.net,sport7.biz,sportabar01.com,sportbar.pm,sportbarchik88.com,sportbox.ws,sporting7.pw,sporting77.com,sportsite777.com,spotless365.net,stream365.pro,telecdn.net,tivix.co,tv-assia.org,vecdn.pw,vip7stream.pw,whd365.pro##+js(window.open-defuser)
 vmusi.ru##+js(window.open-defuser, /tutad\.ru/)
@@ -28921,6 +28924,7 @@ reshu.by,sdamgia.ru##.S617e090e7e
 reshu.by,sdamgia.ru##.SubjectMenu_desktop.PageLayout-Nav:style(position: sticky !important)
 inoreader.com##.ad_title:style(display: block !important; position: fixed !important; top: -10000px !important; left: -10000px !important)
 inoreader.com##.adsbygoogle:style(display: block !important)
+dtf.ru,vc.ru##.andropov-video-player--with-controls .andropov-video-player__overlay
 vc.ru##.andropov_video:remove-attr(data-video-play-mode)
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.app__wrapper div[style^="width: calc(100% "]:remove-attr(style)
 playground.ru#?#.article-content:-abp-has(> p > em:-abp-contains(erid:)) a[href][rel="nofollow"]:style(pointer-events: none !important; color: inherit !important)
@@ -29210,6 +29214,8 @@ www.kinopoisk.ru##div[style="width: 100%; height: 249px;"]
 ! Фоксо-специфичные случаи >
 !#if env_firefox
 sports.ru##+js(cookie-remover, aablc)
+dtf.ru,vc.ru##+js(set-constant, HTMLVideoElement.prototype.autoplay, {})
+dtf.ru,vc.ru##.media .andropov-video-player:style(position: unset !important)
 @@$cname,domain=360tv.ru|3sat.de|innal.top|kyiv.ua|sports.ru|tosdr.org
 ndelo.ru##^.js-login > input
 root-nation.com##^.td-a-rec

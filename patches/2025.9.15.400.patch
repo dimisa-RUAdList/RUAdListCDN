@@ -1,12 +1,22 @@
-diff name:ruadlist lines:38 checksum:515834cf41
+diff name:ruadlist lines:73 checksum:d8c6ce8e58
 d4 2
 a5 2
-! Last modified: Tue, 16 Sep 2025 07:25:31 +0000
-! Diff-Path: ../patches/2025.9.16.445.patch#ruadlist
+! Last modified: Tue, 16 Sep 2025 12:54:24 +0000
+! Diff-Path: ../patches/2025.9.16.774.patch#ruadlist
 a409 1
 ||aj2738.top^$third-party
+d7862 1
+a7862 1
+/backlinks.$domain=~vuetifyjs.com
+d8275 1
+a8275 1
+||net/banners/$domain=~hepsiburada.com
+a9192 1
+||24parik.com^*?adtag=$popup
 a9216 1
 ||aj2738.top^$popup
+a9429 1
+||parik24.bid^*?creative_id=$popup
 d15262 2
 a15263 2
 lifehacker.ru#?#.article-card-container > .container > [class*="article-card"]:-abp-has(a[href*="/topics/shopping/"])
@@ -14,6 +24,9 @@ lifehacker.ru#?#.article-card-container > .container > [class*="article-card"]:-
 d16270 1
 a16270 1
 ixbt.com,ixbt.games,ixbt.pro,www1.ru##.desktop-c
+d17184 1
+a17184 1
+2ch.life,2ch.su##.mmm
 d17194 1
 a17194 1
 ixbt.com,ixbt.games,ixbt.pro,www1.ru##.mobile-c
@@ -25,6 +38,12 @@ a18123 1
 ixbt.com,ixbt.games##.sidebar-c
 a18446 1
 lifehacker.ru#?#.the-tv__observer:-abp-has(a[href*="/topics/shopping/"])
+d19023 1
+a19023 1
+2ch.life,2ch.su,mypresentation.ru,pshack.net,tonna-games.ru##[class*="rekl"]
+d20639 1
+a20639 1
+2ch.life,2ch.su##div[class*="plashque"]
 d21033 1
 a21488 1
 forbes.ru##div[type="ad"]
@@ -33,7 +52,23 @@ a22158 1
 ||pikabu.ru/ajax/*?bNm8j=$xmlhttprequest
 a27101 1
 forbes.ru##a[href*="?erid="]:style(pointer-events: none !important; color: inherit !important)
+d28808 1
+a28808 1
+dtf.ru,vc.ru##+js(set-attr, .comment-media .andropov-video video, controls, true)
+d28810 1
+a28810 1
+dtf.ru,vc.ru##+js(set-attr, .media .andropov-video video, controls, true)
+a28817 1
+dtf.ru,vc.ru##+js(set-constant, HTMLVideoElement.prototype.play, {})
 a28846 1
 forbes.ru##+js(set-constant, Object.prototype.erid, false)
 a28904 1
 aj2738.top##+js(window-close-if)
+d28907 1
+a28907 1
+24parik.com,parik24.biz##+js(window-close-if, adtag)
+a28917 1
+dtf.ru,vc.ru##.andropov-video-player--with-controls .andropov-video-player__overlay
+a29206 2
+dtf.ru,vc.ru##+js(set-constant, HTMLVideoElement.prototype.autoplay, {})
+dtf.ru,vc.ru##.media .andropov-video-player:style(position: unset !important)

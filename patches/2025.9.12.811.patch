@@ -1,13 +1,22 @@
-diff name:ruadlist lines:63 checksum:515834cf41
+diff name:ruadlist lines:94 checksum:d8c6ce8e58
 d4 2
 a5 2
-! Last modified: Tue, 16 Sep 2025 07:25:31 +0000
-! Diff-Path: ../patches/2025.9.16.445.patch#ruadlist
+! Last modified: Tue, 16 Sep 2025 12:54:24 +0000
+! Diff-Path: ../patches/2025.9.16.774.patch#ruadlist
 a409 1
 ||aj2738.top^$third-party
+d7862 1
+a7862 1
+/backlinks.$domain=~vuetifyjs.com
+d8275 1
+a8275 1
+||net/banners/$domain=~hepsiburada.com
+a9192 1
+||24parik.com^*?adtag=$popup
 a9216 1
 ||aj2738.top^$popup
-a9429 1
+a9429 2
+||parik24.bid^*?creative_id=$popup
 ||parik24.biz^*?adtag=$popup
 a11591 1
 ||frankmedia.ru/wp-json/*/banners?id=
@@ -28,6 +37,9 @@ ixbt.com,ixbt.games,ixbt.pro,www1.ru##.desktop-c
 a16825 2
 frankmedia.ru##.item > .news-preview > .label
 frankmedia.ru##.item > .news-preview > .label ~ [class]
+d17178 1
+a17178 1
+2ch.life,2ch.su##.mmm
 d17188 1
 a17188 1
 ixbt.com,ixbt.games,ixbt.pro,www1.ru##.mobile-c
@@ -41,9 +53,15 @@ a18116 1
 ixbt.com,ixbt.games##.sidebar-c
 a18439 1
 lifehacker.ru#?#.the-tv__observer:-abp-has(a[href*="/topics/shopping/"])
+d19016 1
+a19016 1
+2ch.life,2ch.su,mypresentation.ru,pshack.net,tonna-games.ru##[class*="rekl"]
 d19107 1
 a20266 1
 shuba.life#?#aside.c-section:-abp-has(a[href*="/silpo/"])
+d20632 1
+a20632 1
+2ch.life,2ch.su##div[class*="plashque"]
 a20832 1
 btu.org.ua##div[class^="dle_b_banner"]
 d21025 1
@@ -56,9 +74,22 @@ a22149 1
 ||pikabu.ru/ajax/*?bNm8j=$xmlhttprequest
 a27092 1
 forbes.ru##a[href*="?erid="]:style(pointer-events: none !important; color: inherit !important)
+d28799 1
+a28799 1
+dtf.ru,vc.ru##+js(set-attr, .comment-media .andropov-video video, controls, true)
+d28801 1
+a28801 1
+dtf.ru,vc.ru##+js(set-attr, .media .andropov-video video, controls, true)
+a28808 1
+dtf.ru,vc.ru##+js(set-constant, HTMLVideoElement.prototype.play, {})
 a28837 1
 forbes.ru##+js(set-constant, Object.prototype.erid, false)
 a28895 1
 aj2738.top##+js(window-close-if)
 a28897 1
-parik24.biz##+js(window-close-if, adtag)
+24parik.com,parik24.biz##+js(window-close-if, adtag)
+a28907 1
+dtf.ru,vc.ru##.andropov-video-player--with-controls .andropov-video-player__overlay
+a29196 2
+dtf.ru,vc.ru##+js(set-constant, HTMLVideoElement.prototype.autoplay, {})
+dtf.ru,vc.ru##.media .andropov-video-player:style(position: unset !important)
