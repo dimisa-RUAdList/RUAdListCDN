@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 17 Sep 2025 08:33:58 +0000
-! Diff-Path: ../patches/2025.9.17.513.patch#ruadlist
+! Last modified: Wed, 17 Sep 2025 13:33:25 +0000
+! Diff-Path: ../patches/2025.9.17.813.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -12130,6 +12130,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||marketing.spb.ru/images/klik_banner/
 ||maslomotors.ru/wp-content/themes/maslomotor/js/tp/popup.js$script
 ||matchid.adfox.yandex.ru^$domain=auto.ru|avtovzglyad.ru|drive2.ru|ficbook.net|goha.ru|liveinternet.ru|www.kinopoisk.ru
+||matchtv.ru/assets/*/coefs-parser/
 ||math-helper.ru/is_clickunder/
 ||math-prosto.ru/images/tutor/
 ||mauforum.ru/*/|$subdocument,domain=mauforum.ru
@@ -27536,6 +27537,8 @@ lrepacks.net##[href*="poluchenie-premium-dostupa.html"] > b > .fa-spin:style(ani
 lurkmore.wtf###localNotice .floatleft img:style(height: 70px !important; width: auto !important)
 ! ---
 m24.ru##.vjs-big-play-button:style(background: #0fc3c3 !important)
+! ---
+video.matchtv.ru##.video-js::after:style(background: none !important)
 ! ---
 mc.today##.category-all #content:style(background-image: none !important; cursor: auto !important)
 ! ---

@@ -1,8 +1,8 @@
-diff name:ruadlist lines:73 checksum:d73848a164
+diff name:ruadlist lines:78 checksum:3a6462e609
 d4 2
 a5 2
-! Last modified: Wed, 17 Sep 2025 08:33:58 +0000
-! Diff-Path: ../patches/2025.9.17.513.patch#ruadlist
+! Last modified: Wed, 17 Sep 2025 13:33:25 +0000
+! Diff-Path: ../patches/2025.9.17.813.patch#ruadlist
 a409 1
 ||aj2738.top^$third-party
 d7862 1
@@ -17,6 +17,8 @@ a9216 1
 ||aj2738.top^$popup
 a9429 1
 ||parik24.bid^*?creative_id=$popup
+a12128 1
+||matchtv.ru/assets/*/coefs-parser/
 d15262 2
 a15263 2
 lifehacker.ru#?#.article-card-container > .container > [class*="article-card"]:-abp-has(a[href*="/topics/shopping/"])
@@ -52,6 +54,9 @@ a22158 1
 ||pikabu.ru/ajax/*?bNm8j=$xmlhttprequest
 a27101 1
 forbes.ru##a[href*="?erid="]:style(pointer-events: none !important; color: inherit !important)
+a27533 2
+video.matchtv.ru##.video-js::after:style(background: none !important)
+! ---
 d28808 1
 a28808 1
 dtf.ru,vc.ru##+js(set-attr, .comment-media .andropov-video video, controls, true)

@@ -1,8 +1,8 @@
-diff name:ruadlist lines:39 checksum:d73848a164
+diff name:ruadlist lines:44 checksum:3a6462e609
 d4 2
 a5 2
-! Last modified: Wed, 17 Sep 2025 08:33:58 +0000
-! Diff-Path: ../patches/2025.9.17.513.patch#ruadlist
+! Last modified: Wed, 17 Sep 2025 13:33:25 +0000
+! Diff-Path: ../patches/2025.9.17.813.patch#ruadlist
 d7863 1
 a7863 1
 /backlinks.$domain=~vuetifyjs.com
@@ -13,6 +13,8 @@ a9193 1
 ||24parik.com^*?adtag=$popup
 a9431 1
 ||parik24.bid^*?creative_id=$popup
+a12130 1
+||matchtv.ru/assets/*/coefs-parser/
 d17186 1
 a17186 1
 2ch.life,2ch.su##.mmm
@@ -22,6 +24,9 @@ a19026 1
 d20642 1
 a20642 1
 2ch.life,2ch.su##div[class*="plashque"]
+a27537 2
+video.matchtv.ru##.video-js::after:style(background: none !important)
+! ---
 d28812 1
 a28812 1
 dtf.ru,vc.ru##+js(set-attr, .comment-media .andropov-video video, controls, true)
