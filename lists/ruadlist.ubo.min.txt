@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 18 Sep 2025 14:28:30 +0000
-! Diff-Path: ../patches/2025.9.18.868.patch#ruadlist
+! Last modified: Thu, 18 Sep 2025 19:20:14 +0000
+! Diff-Path: ../patches/2025.9.18.1160.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -19167,7 +19167,7 @@ vladnews.ru##[data-newsb]
 cq.ru##[data-odds-series]
 bankiros.ru##[data-offer]
 news.soundex.ru##[data-original^="http://news.soundex.ru/images/banners/"]
-studopedia.ru,studopedia.su##[data-partner]
+shuba.life,studopedia.ru,studopedia.su##[data-partner]
 iz.ru##[data-partners-block-id]
 satellitetvforum.info##[data-phpbb-ads-id]
 litnet.com##[data-popmechanic-embed]
@@ -22161,7 +22161,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||news.mail.ru/-/*.js?
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
-||pikabu.ru/ajax/*?bNm7j=$xmlhttprequest
+||pikabu.ru/ajax/*?bNm6j=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -23368,9 +23368,10 @@ ya.ru##.i-mini-bem[class*="banner"]
 ya.ru##[aria-label^="Информе"] ~ [class]
 ya.ru##[style*="feed"][style*="min-height:"]
 ya.ru##section[class^="reason"]
-ya.ru,yandex.*##.main-home-banner
 ya.ru,yandex.ru,yandex.*##.AdvProductGallery
 ya.ru,yandex.ru,yandex.*##.layout__banner
+ya.ru,yandex.ru,yandex.*##.main-home-banner
+ya.ru,yandex.ru,yandex.*##.main__block-banner
 ya.ru,yandex.ru,yandex.*##.main__distr-popup
 ya.ru,yandex.ru,yandex.*##.Organic_withPromoOffer
 ya.ru,yandex.ru,yandex.*#?#.content__left > #search-result > li:-abp-has(> .Organic_withPromoOffer)
