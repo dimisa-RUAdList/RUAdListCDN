@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 19 Sep 2025 10:30:24 +0000
-! Diff-Path: ../patches/2025.9.19.630.patch#ruadlist
+! Last modified: Fri, 19 Sep 2025 15:26:37 +0000
+! Diff-Path: ../patches/2025.9.19.926.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10662,7 +10662,7 @@ $xmlhttprequest,domain=happy-biock.info|happy-block.info|howto-news.info|mschist
 /images/menubars/sweet-ai-girls.$domain=fapreactor.com|pornreactor.cc
 /images/partners/*$domain=argumenti.ru|fonarevka.ru|profit-maker.org
 /images_banner/*$domain=xn----7sbaegss0bebjcb2g.xn--p1ai
-/img/banners/*$domain=chelseablues.ru|geonavigator.ge|gotoshop.ua|grinkod.spb.ru|konkurent.ru|mashina.kg|navigator.az|primpress.ru|profootball.ua|sq.com.ua|ternopillive.com|winternete.ru
+/img/banners/*$domain=chelseablues.ru|geonavigator.ge|gotoshop.ua|grinkod.spb.ru|konkurent.ru|mashina.kg|navigator.az|primpress.ru|profootball.ua|ternopillive.com|winternete.ru
 /img/bym3.$domain=buzulukday.ru|nsday.ru|orenday.ru|perevolockday.ru|saltday.ru|sorochinskday.ru
 /img/other/a/nikifilini.$domain=anilib.moe|anilib.one|anilib.top|anilibria.iss.one|anilibria.tv
 /img/promotion/*$domain=pavlodar.news|pavon.kz
@@ -15115,6 +15115,7 @@ cn.ru,ittour.com.ua##.adriver
 tarkov-market.com##.ads-horiz
 orl.ec##.ads-inner-top
 wav-library.net##.ads-long-block
+news.sportbox.ru##.ads-marking
 sm.news##.ads-ob
 fightnews.info##.ads-overlay
 hsl.com.ua##.ads-place
@@ -22161,7 +22162,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||news.mail.ru/-/*.js?
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
-||pikabu.ru/ajax/*?bNm6j=$xmlhttprequest
+||pikabu.ru/ajax/*?bNm5j=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
