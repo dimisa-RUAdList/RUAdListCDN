@@ -1,8 +1,8 @@
-diff name:ruadlist lines:30 checksum:d4c08e4c20
+diff name:ruadlist lines:38 checksum:b0f49fdd3e
 d4 2
 a5 2
-! Last modified: Sat, 20 Sep 2025 11:20:01 +0000
-! Diff-Path: ../patches/2025.9.20.680.patch#ruadlist
+! Last modified: Sat, 20 Sep 2025 16:29:00 +0000
+! Diff-Path: ../patches/2025.9.20.989.patch#ruadlist
 d10665 1
 a10665 1
 /img/banners/*$domain=chelseablues.ru|geonavigator.ge|gotoshop.ua|grinkod.spb.ru|konkurent.ru|mashina.kg|navigator.az|primpress.ru|profootball.ua|ternopillive.com|winternete.ru
@@ -15,6 +15,14 @@ a23271 1
 tribuna.com##div[class*="_odds_wrapper"]
 a23280 1
 tribuna.com#?#div[style="display: contents;"] > div:-abp-has(> a[href="/betting/bonuses/"])
+a26797 2
+appleinsider.ru##a[href*="erid="]:style(pointer-events: none !important; color: inherit !important)
+! ---
+a28754 1
+ritsatv.ru##+js(no-setTimeout-if, AdBlock)
+d28807 1
+a28807 1
+ritsatv.ru##+js(remove-node-text, script, /adBlock|adblock-warning/)
 a29096 2
 ||vk.ru/video_ext.php?$third-party,subdocument,removeparam=autoplay
 ||vk.ru/video_ext.php?*autoplay=1$removeparam=js_api,domain=mail.ru|sportmail.ru
