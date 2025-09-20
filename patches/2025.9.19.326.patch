@@ -1,8 +1,8 @@
-diff name:ruadlist lines:12 checksum:8672773b60
+diff name:ruadlist lines:26 checksum:d4c08e4c20
 d4 2
 a5 2
-! Last modified: Sat, 20 Sep 2025 06:35:03 +0000
-! Diff-Path: ../patches/2025.9.20.395.patch#ruadlist
+! Last modified: Sat, 20 Sep 2025 11:20:01 +0000
+! Diff-Path: ../patches/2025.9.20.680.patch#ruadlist
 d10665 1
 a10665 1
 /img/banners/*$domain=chelseablues.ru|geonavigator.ge|gotoshop.ua|grinkod.spb.ru|konkurent.ru|mashina.kg|navigator.az|primpress.ru|profootball.ua|ternopillive.com|winternete.ru
@@ -11,3 +11,17 @@ news.sportbox.ru##.ads-marking
 d22164 1
 a22164 1
 ||pikabu.ru/ajax/*?bNm5j=$xmlhttprequest
+a29098 2
+||vk.ru/video_ext.php?$third-party,subdocument,removeparam=autoplay
+||vk.ru/video_ext.php?*autoplay=1$removeparam=js_api,domain=mail.ru|sportmail.ru
+d29105 1
+a29105 1
+||youtube.com/embed/*autoplay=1$subdocument,removeparam=autoplay,domain=~dtf.ru|~kinoafisha.info|~pikabu.ru|~poolsuite.net|~vc.ru
+d29258 1
+a29258 3
+vk.com/video_ext.php##+js(set-constant, Object.prototype.autoplay, undefined)
+vk.ru/video_ext.php##+js(addEventListener-defuser, message, '', elements, window)
+vk.ru/video_ext.php##+js(set-constant, Object.prototype.autoplay, undefined)
+d29260 1
+a29260 1
+vkvideo.ru/video_ext.php##+js(set-constant, Object.prototype.autoplay, undefined)

@@ -1,5 +1,19 @@
-diff name:ruadlist lines:4 checksum:8672773b60
+diff name:ruadlist lines:18 checksum:d4c08e4c20
 d4 2
 a5 2
-! Last modified: Sat, 20 Sep 2025 06:35:03 +0000
-! Diff-Path: ../patches/2025.9.20.395.patch#ruadlist
+! Last modified: Sat, 20 Sep 2025 11:20:01 +0000
+! Diff-Path: ../patches/2025.9.20.680.patch#ruadlist
+a29099 2
+||vk.ru/video_ext.php?$third-party,subdocument,removeparam=autoplay
+||vk.ru/video_ext.php?*autoplay=1$removeparam=js_api,domain=mail.ru|sportmail.ru
+d29106 1
+a29106 1
+||youtube.com/embed/*autoplay=1$subdocument,removeparam=autoplay,domain=~dtf.ru|~kinoafisha.info|~pikabu.ru|~poolsuite.net|~vc.ru
+d29259 1
+a29259 3
+vk.com/video_ext.php##+js(set-constant, Object.prototype.autoplay, undefined)
+vk.ru/video_ext.php##+js(addEventListener-defuser, message, '', elements, window)
+vk.ru/video_ext.php##+js(set-constant, Object.prototype.autoplay, undefined)
+d29261 1
+a29261 1
+vkvideo.ru/video_ext.php##+js(set-constant, Object.prototype.autoplay, undefined)

@@ -1,8 +1,8 @@
-diff name:ruadlist lines:16 checksum:8672773b60
+diff name:ruadlist lines:30 checksum:d4c08e4c20
 d4 2
 a5 2
-! Last modified: Sat, 20 Sep 2025 06:35:03 +0000
-! Diff-Path: ../patches/2025.9.20.395.patch#ruadlist
+! Last modified: Sat, 20 Sep 2025 11:20:01 +0000
+! Diff-Path: ../patches/2025.9.20.680.patch#ruadlist
 d10665 1
 a10665 1
 /img/banners/*$domain=chelseablues.ru|geonavigator.ge|gotoshop.ua|grinkod.spb.ru|konkurent.ru|mashina.kg|navigator.az|primpress.ru|profootball.ua|ternopillive.com|winternete.ru
@@ -15,3 +15,17 @@ a23271 1
 tribuna.com##div[class*="_odds_wrapper"]
 a23280 1
 tribuna.com#?#div[style="display: contents;"] > div:-abp-has(> a[href="/betting/bonuses/"])
+a29096 2
+||vk.ru/video_ext.php?$third-party,subdocument,removeparam=autoplay
+||vk.ru/video_ext.php?*autoplay=1$removeparam=js_api,domain=mail.ru|sportmail.ru
+d29103 1
+a29103 1
+||youtube.com/embed/*autoplay=1$subdocument,removeparam=autoplay,domain=~dtf.ru|~kinoafisha.info|~pikabu.ru|~poolsuite.net|~vc.ru
+d29256 1
+a29256 3
+vk.com/video_ext.php##+js(set-constant, Object.prototype.autoplay, undefined)
+vk.ru/video_ext.php##+js(addEventListener-defuser, message, '', elements, window)
+vk.ru/video_ext.php##+js(set-constant, Object.prototype.autoplay, undefined)
+d29258 1
+a29258 1
+vkvideo.ru/video_ext.php##+js(set-constant, Object.prototype.autoplay, undefined)
