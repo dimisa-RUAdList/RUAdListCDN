@@ -1,8 +1,8 @@
-diff name:ruadlist lines:48 checksum:f2085e1894
+diff name:ruadlist lines:63 checksum:82b4262354
 d4 2
 a5 2
-! Last modified: Sun, 21 Sep 2025 07:21:24 +0000
-! Diff-Path: ../patches/2025.9.21.441.patch#ruadlist
+! Last modified: Sun, 21 Sep 2025 12:48:39 +0000
+! Diff-Path: ../patches/2025.9.21.768.patch#ruadlist
 a2861 1
 ||innovation-lab.ru^$third-party
 d10665 1
@@ -12,11 +12,21 @@ a11532 1
 ||fishki.net/hell456/
 a15117 1
 news.sportbox.ru##.ads-marking
+d15906 1
+a15906 1
+agropolit.com,elevatorist.com,filmozavr.com,filmozavr.net,gotennis.ru,inoprosport.ru,kinopati.ru,kurkul.com,lada-granta.net,latifundist.com,lkforum.ru,myshows.me,osp.ru,overclockers.ua,podfm.ru,popcornnews.ru,psm7.com,stopgame.ru,superagronom.com,zemliak.com##.branding
 a19277 1
 fishki.net##[id^="branding"]
+a20374 1
+stopgame.ru##body > div[class]:not([id]):not([style]):empty
 d22164 1
 a22164 1
 ||pikabu.ru/ajax/*?bNm5j=$xmlhttprequest
+a23113 1
+rbc.ru##.radio-partner-block
+a23121 2
+rbc.ru##.story-wrapper_branded .story-header__logo
+rbc.ru##.story-wrapper_branded [class*="descriptor"]
 d26414 1
 a26414 1
 @@||yandex.ru/ads/system/context.js|$script,domain=forum.ixbt.com|limehd.tv|litehd.tv|pervyi-tv.online|russia-tv.online|shadowcore.ru|tvzvezda.ru|volley.ru
@@ -25,6 +35,8 @@ appleinsider.ru##a[href*="erid="]:style(pointer-events: none !important; color: 
 ! ---
 a27344 1
 forum.ixbt.com##.deskadv:style(position: absolute !important; top: -10000px !important; height: 21px !important)
+a27965 1
+stopgame.ru##body:style(cursor: default !important)
 d28631 1
 a28631 1
 80-e.ru,doramatv.live,examenpdd.com,forum.ixbt.com,rg.ru,shadowcore.ru,ura.news##+js(abort-on-property-read, yaContextCb)
@@ -33,6 +45,9 @@ ritsatv.ru##+js(no-setTimeout-if, AdBlock)
 d28809 1
 a28809 1
 ritsatv.ru##+js(remove-node-text, script, /adBlock|adblock-warning/)
+d28821 1
+a28821 1
+fishki.net##+js(set-attr, .cycle-carousel-wrap > a.bottom_slide__item > img, src, [data-src])
 a29098 2
 ||vk.ru/video_ext.php?$third-party,subdocument,removeparam=autoplay
 ||vk.ru/video_ext.php?*autoplay=1$removeparam=js_api,domain=mail.ru|sportmail.ru

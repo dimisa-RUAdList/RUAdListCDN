@@ -1,8 +1,8 @@
-diff name:ruadlist lines:64 checksum:f2085e1894
+diff name:ruadlist lines:79 checksum:82b4262354
 d4 2
 a5 2
-! Last modified: Sun, 21 Sep 2025 07:21:24 +0000
-! Diff-Path: ../patches/2025.9.21.441.patch#ruadlist
+! Last modified: Sun, 21 Sep 2025 12:48:39 +0000
+! Diff-Path: ../patches/2025.9.21.768.patch#ruadlist
 a2861 1
 ||innovation-lab.ru^$third-party
 d10665 1
@@ -14,14 +14,24 @@ a12132 1
 ||matchtv.ru/assets/*/coefs-parser/
 a15116 1
 news.sportbox.ru##.ads-marking
+d15905 1
+a15905 1
+agropolit.com,elevatorist.com,filmozavr.com,filmozavr.net,gotennis.ru,inoprosport.ru,kinopati.ru,kurkul.com,lada-granta.net,latifundist.com,lkforum.ru,myshows.me,osp.ru,overclockers.ua,podfm.ru,popcornnews.ru,psm7.com,stopgame.ru,superagronom.com,zemliak.com##.branding
 d19169 1
 a19169 1
 shuba.life,studopedia.ru,studopedia.su##[data-partner]
 a19276 1
 fishki.net##[id^="branding"]
+a20373 1
+stopgame.ru##body > div[class]:not([id]):not([style]):empty
 d22163 1
 a22163 1
 ||pikabu.ru/ajax/*?bNm5j=$xmlhttprequest
+a23112 1
+rbc.ru##.radio-partner-block
+a23120 2
+rbc.ru##.story-wrapper_branded .story-header__logo
+rbc.ru##.story-wrapper_branded [class*="descriptor"]
 a23270 1
 tribuna.com##div[class*="_odds_wrapper"]
 a23279 1
@@ -41,6 +51,8 @@ forum.ixbt.com##.deskadv:style(position: absolute !important; top: -10000px !imp
 a27539 2
 video.matchtv.ru##.video-js::after:style(background: none !important)
 ! ---
+a27959 1
+stopgame.ru##body:style(cursor: default !important)
 d28625 1
 a28625 1
 80-e.ru,doramatv.live,examenpdd.com,forum.ixbt.com,rg.ru,shadowcore.ru,ura.news##+js(abort-on-property-read, yaContextCb)
@@ -49,6 +61,9 @@ ritsatv.ru##+js(no-setTimeout-if, AdBlock)
 d28803 1
 a28803 1
 ritsatv.ru##+js(remove-node-text, script, /adBlock|adblock-warning/)
+d28815 1
+a28815 1
+fishki.net##+js(set-attr, .cycle-carousel-wrap > a.bottom_slide__item > img, src, [data-src])
 a29092 2
 ||vk.ru/video_ext.php?$third-party,subdocument,removeparam=autoplay
 ||vk.ru/video_ext.php?*autoplay=1$removeparam=js_api,domain=mail.ru|sportmail.ru

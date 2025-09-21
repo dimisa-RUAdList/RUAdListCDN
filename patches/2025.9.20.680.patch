@@ -1,14 +1,24 @@
-diff name:ruadlist lines:26 checksum:f2085e1894
+diff name:ruadlist lines:41 checksum:82b4262354
 d4 2
 a5 2
-! Last modified: Sun, 21 Sep 2025 07:21:24 +0000
-! Diff-Path: ../patches/2025.9.21.441.patch#ruadlist
+! Last modified: Sun, 21 Sep 2025 12:48:39 +0000
+! Diff-Path: ../patches/2025.9.21.768.patch#ruadlist
 a2861 1
 ||innovation-lab.ru^$third-party
 a11532 1
 ||fishki.net/hell456/
+d15907 1
+a15907 1
+agropolit.com,elevatorist.com,filmozavr.com,filmozavr.net,gotennis.ru,inoprosport.ru,kinopati.ru,kurkul.com,lada-granta.net,latifundist.com,lkforum.ru,myshows.me,osp.ru,overclockers.ua,podfm.ru,popcornnews.ru,psm7.com,stopgame.ru,superagronom.com,zemliak.com##.branding
 a19278 1
 fishki.net##[id^="branding"]
+a20375 1
+stopgame.ru##body > div[class]:not([id]):not([style]):empty
+a23114 1
+rbc.ru##.radio-partner-block
+a23122 2
+rbc.ru##.story-wrapper_branded .story-header__logo
+rbc.ru##.story-wrapper_branded [class*="descriptor"]
 d26415 1
 a26415 1
 @@||yandex.ru/ads/system/context.js|$script,domain=forum.ixbt.com|limehd.tv|litehd.tv|pervyi-tv.online|russia-tv.online|shadowcore.ru|tvzvezda.ru|volley.ru
@@ -17,6 +27,8 @@ appleinsider.ru##a[href*="erid="]:style(pointer-events: none !important; color: 
 ! ---
 a27345 1
 forum.ixbt.com##.deskadv:style(position: absolute !important; top: -10000px !important; height: 21px !important)
+a27966 1
+stopgame.ru##body:style(cursor: default !important)
 d28632 1
 a28632 1
 80-e.ru,doramatv.live,examenpdd.com,forum.ixbt.com,rg.ru,shadowcore.ru,ura.news##+js(abort-on-property-read, yaContextCb)
@@ -25,3 +37,6 @@ ritsatv.ru##+js(no-setTimeout-if, AdBlock)
 d28810 1
 a28810 1
 ritsatv.ru##+js(remove-node-text, script, /adBlock|adblock-warning/)
+d28822 1
+a28822 1
+fishki.net##+js(set-attr, .cycle-carousel-wrap > a.bottom_slide__item > img, src, [data-src])
