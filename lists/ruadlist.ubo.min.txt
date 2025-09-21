@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 20 Sep 2025 21:21:02 +0000
-! Diff-Path: ../patches/2025.9.20.1281.patch#ruadlist
+! Last modified: Sun, 21 Sep 2025 02:06:56 +0000
+! Diff-Path: ../patches/2025.9.21.126.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -2859,6 +2859,7 @@
 ||inmedias.biz^$third-party
 ||inmeund.ru^$third-party
 ||innoapi.info^$third-party
+||innovation-lab.ru^$third-party
 ||inpiza.com^$third-party
 ||inplayer.ru^$third-party,domain=~sova.live
 ||inppfinder.info^$third-party
@@ -11530,6 +11531,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||finnews.ru^*&img=banners/
 ||fion.ru/files/banners2/
 ||fion.ru/files/vitrina/
+||fishki.net/hell456/
 ||fishki.net/someaction/
 ||fishnet.ru^*/banners/
 ||fix-pix.ru/rotator.php
@@ -19276,6 +19278,7 @@ imgfiles.ru##[id^="bn"] > *
 rutr.life,rutracker.lib,rutracker.net,rutracker.org##[id^="bn-"]
 rbc.ua,thisisus.ru##[id^="bn_"]
 horadric.ru##[id^="brand-"]
+fishki.net##[id^="branding"]
 nefrolab.ru##[id^="cmdgebh"]
 forexsystemsru.com##[id^="collapseobj_forumbit"] .alt1Active > div[style="float:right"]
 funmult.ru##[id^="icqwin_"]
@@ -28632,7 +28635,7 @@ sinoptik.ua##+js(abort-on-property-read, vpb)
 bombardir.ru,comp-service.kiev.ua,inforesist.org,www.xcom-shop.ru##+js(abort-on-property-read, window.alert)
 softportal.com##+js(abort-on-property-read, window.block)
 growhow.in.ua##+js(abort-on-property-read, wpsite_clickable_data)
-80-e.ru,doramatv.live,examenpdd.com,rg.ru,shadowcore.ru,ura.news##+js(abort-on-property-read, yaContextCb)
+80-e.ru,doramatv.live,examenpdd.com,forum.ixbt.com,rg.ru,shadowcore.ru,ura.news##+js(abort-on-property-read, yaContextCb)
 animedia.tv,animedub.ru,vsetut.su##+js(abort-on-property-read, zfgformats)
 transkarpatia.net##+js(abort-on-property-write, NiceScroll)
 24pdd.ru##+js(abort-on-property-write, adsBlocked)
