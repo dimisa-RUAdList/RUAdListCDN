@@ -1,8 +1,8 @@
-diff name:ruadlist lines:41 checksum:f6b8680b54
+diff name:ruadlist lines:50 checksum:a6b101e9fc
 d4 2
 a5 2
-! Last modified: Mon, 22 Sep 2025 08:36:14 +0000
-! Diff-Path: ../patches/2025.9.22.516.patch#ruadlist
+! Last modified: Mon, 22 Sep 2025 13:34:55 +0000
+! Diff-Path: ../patches/2025.9.22.814.patch#ruadlist
 a2861 1
 ||innovation-lab.ru^$third-party
 a11532 1
@@ -12,6 +12,9 @@ a15907 1
 agropolit.com,elevatorist.com,filmozavr.com,filmozavr.net,gotennis.ru,inoprosport.ru,kinopati.ru,kurkul.com,lada-granta.net,latifundist.com,lkforum.ru,myshows.me,osp.ru,overclockers.ua,podfm.ru,popcornnews.ru,psm7.com,stopgame.ru,superagronom.com,zemliak.com##.branding
 a19278 1
 fishki.net##[id^="branding"]
+a19366 1
+auto.ru##[style*="height:"][style*="250px"]:empty
+d19373 1
 a20375 1
 stopgame.ru##body > div[class]:not([id]):not([style]):empty
 a23114 1
@@ -19,6 +22,9 @@ rbc.ru##.radio-partner-block
 a23122 2
 rbc.ru##.story-wrapper_branded .story-header__logo
 rbc.ru##.story-wrapper_branded [class*="descriptor"]
+d26334 1
+a26334 1
+@@||mc.yandex.ru/metrika/watch.js$script,domain=101.ru|auto.ru|doska.tamboff.ru|oformi-foto.ru|sherlock.store|shok102.ru
 d26415 1
 a26415 1
 @@||yandex.ru/ads/system/context.js|$script,domain=forum.ixbt.com|limehd.tv|litehd.tv|pervyi-tv.online|russia-tv.online|shadowcore.ru|tvzvezda.ru|volley.ru
@@ -29,6 +35,9 @@ a27345 1
 forum.ixbt.com##.deskadv:style(position: absolute !important; top: -10000px !important; height: 21px !important)
 a27966 1
 stopgame.ru##body:style(cursor: default !important)
+d28542 1
+a28542 1
+auto.ru,reshu.by,reshuent.kz,sdamgia.ru##+js(abort-on-property-read, Object.prototype.getAdUsageStorage)
 d28632 1
 a28632 1
 80-e.ru,doramatv.live,examenpdd.com,forum.ixbt.com,rg.ru,shadowcore.ru,ura.news##+js(abort-on-property-read, yaContextCb)

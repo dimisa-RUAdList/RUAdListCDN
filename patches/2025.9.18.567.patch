@@ -1,8 +1,8 @@
-diff name:ruadlist lines:74 checksum:f6b8680b54
+diff name:ruadlist lines:83 checksum:a6b101e9fc
 d4 2
 a5 2
-! Last modified: Mon, 22 Sep 2025 08:36:14 +0000
-! Diff-Path: ../patches/2025.9.22.516.patch#ruadlist
+! Last modified: Mon, 22 Sep 2025 13:34:55 +0000
+! Diff-Path: ../patches/2025.9.22.814.patch#ruadlist
 a2861 1
 ||innovation-lab.ru^$third-party
 d10665 1
@@ -20,6 +20,9 @@ a19170 1
 shuba.life,studopedia.ru,studopedia.su##[data-partner]
 a19277 1
 fishki.net##[id^="branding"]
+a19365 1
+auto.ru##[style*="height:"][style*="250px"]:empty
+d19372 1
 a20374 1
 stopgame.ru##body > div[class]:not([id]):not([style]):empty
 d22164 1
@@ -38,6 +41,9 @@ d23371 1
 a23373 2
 ya.ru,yandex.ru,yandex.*##.main-home-banner
 ya.ru,yandex.ru,yandex.*##.main__block-banner
+d26330 1
+a26330 1
+@@||mc.yandex.ru/metrika/watch.js$script,domain=101.ru|auto.ru|doska.tamboff.ru|oformi-foto.ru|sherlock.store|shok102.ru
 d26411 1
 a26411 1
 @@||yandex.ru/ads/system/context.js|$script,domain=forum.ixbt.com|limehd.tv|litehd.tv|pervyi-tv.online|russia-tv.online|shadowcore.ru|tvzvezda.ru|volley.ru
@@ -48,6 +54,9 @@ a27341 1
 forum.ixbt.com##.deskadv:style(position: absolute !important; top: -10000px !important; height: 21px !important)
 a27962 1
 stopgame.ru##body:style(cursor: default !important)
+d28538 1
+a28538 1
+auto.ru,reshu.by,reshuent.kz,sdamgia.ru##+js(abort-on-property-read, Object.prototype.getAdUsageStorage)
 d28628 1
 a28628 1
 80-e.ru,doramatv.live,examenpdd.com,forum.ixbt.com,rg.ru,shadowcore.ru,ura.news##+js(abort-on-property-read, yaContextCb)
