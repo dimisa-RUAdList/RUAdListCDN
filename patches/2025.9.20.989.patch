@@ -1,8 +1,8 @@
-diff name:ruadlist lines:49 checksum:603f769d0f
+diff name:ruadlist lines:60 checksum:1681b64e79
 d4 2
 a5 2
-! Last modified: Tue, 23 Sep 2025 09:28:36 +0000
-! Diff-Path: ../patches/2025.9.23.568.patch#ruadlist
+! Last modified: Tue, 23 Sep 2025 14:29:06 +0000
+! Diff-Path: ../patches/2025.9.23.869.patch#ruadlist
 a2861 1
 ||innovation-lab.ru^$third-party
 a11532 1
@@ -21,6 +21,17 @@ auto.ru##[style*="height:"][style*="250px"]:empty
 d19373 1
 a20375 1
 stopgame.ru##body > div[class]:not([id]):not([style]):empty
+a20735 1
+auto.ru##div[class^="RecommendationsItem__ad-"]
+d22130 3
+a22132 3
+||dzen.ru/a/$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
+||dzen.ru/articles$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
+||dzen.ru/news$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
+d22134 5
+a22138 2
+||static.dzeninfra.ru/s3/zen-lib/*/dzen-desktop/*a*a*a*a*a*a*a$script
+||static.dzeninfra.ru/s3/zen-lib/*/news-site-mobile/*a*a*a*a*a*a*a$script
 d22165 1
 a22165 1
 ||pikabu.ru/ajax/*?t8Orr=$xmlhttprequest
