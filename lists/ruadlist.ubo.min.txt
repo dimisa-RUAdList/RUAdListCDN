@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 23 Sep 2025 19:21:27 +0000
-! Diff-Path: ../patches/2025.9.23.1161.patch#ruadlist
+! Last modified: Wed, 24 Sep 2025 01:57:38 +0000
+! Diff-Path: ../patches/2025.9.24.117.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22519,6 +22519,7 @@ dzen.ru##div[class*="news-advert"]
 dzen.ru##[id*="_R-A-"]
 dzen.ru##[id*="_R-E-"]
 dzen.ru##[id*="_R-I-"]
+dzen.ru##[id*="_R-O-"]
 dzen.ru##[id*="_R-U-"]
 sportsdzen.ru##div[class*="-sports-button-ad_"]
 dzen.ru##div[class*="DirectAdvert"]
@@ -23076,6 +23077,7 @@ avtorambler.com,rambler.ru##rambler-info-banner
 ||championat.*/embeds/custom.css
 ||cpa-elements.rambler.ru/*/sdk.js
 ||embeds.rambler.ru/cpa-elements/
+||embeds.rambler.ru/widgets/car-loan-calculator/sdk.js
 ||img.championat.*/brand/*.png
 ||kraken.rambler.ru^$domain=~kraken.rambler.ru
 ||lenta.ru/fenwick
@@ -28881,6 +28883,7 @@ dzen.ru##+js(set-constant, Object.prototype.getPlacement, undefined)
 shedevrum.ai##+js(set-constant, Object.prototype.getUaasConfig, undefined)
 frontend.vh.yandex.ru##+js(set-constant, Object.prototype.initialAutoplay, null)
 dzen.ru##+js(set-constant, Object.prototype.isCustomBannerType, undefined)
+dzen.ru##+js(set-constant, Object.prototype.isTurboPage, undefined)
 rbc.ru,sportrbc.ru##+js(set-constant, Object.prototype.livetv-state, true)
 tenews.org.ua##+js(set-constant, Object.prototype.manualAutoplay_, null)
 vp.rambler.ru##+js(set-constant, Object.prototype.minPlayingVisibleHeight, noopFunc)
@@ -28991,6 +28994,7 @@ vk.com,vk.ru##.wall_module > div[id]:first-child > :matches-prop(innerHTML="/for
 dzen.ru##:matches-path(/a/) [class^="content--article-"] [style^="opacity:"]
 dzen.ru##:matches-path(/a/) [data-appid] > [itemscope] > div > div[id]
 dzen.ru##:matches-path(/a/) div:matches-attr(/[a-z0-9]/=article-bottom-block) > [class*="social"] ~ div
+dzen.ru##:matches-path(/articles) div:has(> article > [class*="adBox"])
 dzen.ru##:matches-path(/articles) div:has(> article > div > [class*="image"]:empty)
 ozon.ru##:matches-path(/kursk-sertifikaty) [data-lcp-name*="anner-"]:style(display: block !important)
 ozon.ru##:matches-path(/kursk-sertifikaty) div[data-widget="banner"]:style(display: block !important)

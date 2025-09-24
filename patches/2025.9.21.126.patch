@@ -1,8 +1,8 @@
-diff name:ruadlist lines:57 checksum:e231f5adcd
+diff name:ruadlist lines:65 checksum:4dc33b3b39
 d4 2
 a5 2
-! Last modified: Tue, 23 Sep 2025 19:21:27 +0000
-! Diff-Path: ../patches/2025.9.23.1161.patch#ruadlist
+! Last modified: Wed, 24 Sep 2025 01:57:38 +0000
+! Diff-Path: ../patches/2025.9.24.117.patch#ruadlist
 d10182 1
 a10182 1
 esputnik.com,~webinars.esputnik.com##body.cl-noscroll > .cl-dialog[style*="position: fixed"]
@@ -40,6 +40,10 @@ a22141 2
 d22168 1
 a22168 1
 ||pikabu.ru/ajax/*?t8Orr=$xmlhttprequest
+a22515 1
+dzen.ru##[id*="_R-O-"]
+a23072 1
+||embeds.rambler.ru/widgets/car-loan-calculator/sdk.js
 a23117 1
 rbc.ru##.radio-partner-block
 a23125 2
@@ -56,3 +60,7 @@ auto.ru,reshu.by,reshuent.kz,sdamgia.ru##+js(abort-on-property-read, Object.prot
 d28829 1
 a28829 1
 fishki.net##+js(set-attr, .cycle-carousel-wrap > a.bottom_slide__item > img, src, [data-src])
+a28873 1
+dzen.ru##+js(set-constant, Object.prototype.isTurboPage, undefined)
+a28983 1
+dzen.ru##:matches-path(/articles) div:has(> article > [class*="adBox"])

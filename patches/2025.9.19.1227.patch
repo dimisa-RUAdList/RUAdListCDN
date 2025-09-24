@@ -1,8 +1,8 @@
-diff name:ruadlist lines:93 checksum:e231f5adcd
+diff name:ruadlist lines:101 checksum:4dc33b3b39
 d4 2
 a5 2
-! Last modified: Tue, 23 Sep 2025 19:21:27 +0000
-! Diff-Path: ../patches/2025.9.23.1161.patch#ruadlist
+! Last modified: Wed, 24 Sep 2025 01:57:38 +0000
+! Diff-Path: ../patches/2025.9.24.117.patch#ruadlist
 a2861 1
 ||innovation-lab.ru^$third-party
 d10181 1
@@ -46,6 +46,10 @@ a22138 2
 d22165 1
 a22165 1
 ||pikabu.ru/ajax/*?t8Orr=$xmlhttprequest
+a22512 1
+dzen.ru##[id*="_R-O-"]
+a23069 1
+||embeds.rambler.ru/widgets/car-loan-calculator/sdk.js
 a23114 1
 rbc.ru##.radio-partner-block
 a23122 2
@@ -78,6 +82,10 @@ ritsatv.ru##+js(remove-node-text, script, /adBlock|adblock-warning/)
 d28822 1
 a28822 1
 fishki.net##+js(set-attr, .cycle-carousel-wrap > a.bottom_slide__item > img, src, [data-src])
+a28866 1
+dzen.ru##+js(set-constant, Object.prototype.isTurboPage, undefined)
+a28976 1
+dzen.ru##:matches-path(/articles) div:has(> article > [class*="adBox"])
 a29099 2
 ||vk.ru/video_ext.php?$third-party,subdocument,removeparam=autoplay
 ||vk.ru/video_ext.php?*autoplay=1$removeparam=js_api,domain=mail.ru|sportmail.ru
