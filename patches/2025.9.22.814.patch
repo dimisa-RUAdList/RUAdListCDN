@@ -1,8 +1,16 @@
-diff name:ruadlist lines:44 checksum:b91a1c9a8a
+diff name:ruadlist lines:57 checksum:be474d9ad5
 d4 2
 a5 2
-! Last modified: Wed, 24 Sep 2025 15:27:50 +0000
-! Diff-Path: ../patches/2025.9.24.927.patch#ruadlist
+! Last modified: Wed, 24 Sep 2025 20:28:47 +0000
+! Diff-Path: ../patches/2025.9.24.1228.patch#ruadlist
+d9195 1
+a9195 2
+||24parik.*?adtag=$popup
+||24parik.*?creative_id=$popup
+d9434 2
+a9435 2
+||parik24.*?adtag=$popup
+||parik24.*?creative_id=$popup
 d10182 1
 a10182 1
 esputnik.com,~webinars.esputnik.com##body.cl-noscroll > .cl-dialog[style*="position: fixed"]
@@ -39,7 +47,12 @@ avtorambler.com,rambler.ru#?#article div:-abp-has(> rambler-car-loan-calculator)
 avtorambler.com,rambler.ru#?#article div:-abp-has(> rambler-info-banner)
 a23073 1
 ||embeds.rambler.ru/widgets/car-loan-calculator/sdk.js
+a28737 1
+rutube.ru##+js(json-prune-fetch-response, appearance.auto_start, , propsToMatch, 2x2tv.ru)
 a28878 1
 dzen.ru##+js(set-constant, Object.prototype.isTurboPage, undefined)
+d28935 1
+a28985 1
+24parik.*,parik24.*##+js(window-close-if, /adtag|creative_id/)
 a28988 1
 dzen.ru##:matches-path(/articles) div:has(> article > [class*="adBox"])

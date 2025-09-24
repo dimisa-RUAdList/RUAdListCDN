@@ -1,10 +1,18 @@
-diff name:ruadlist lines:77 checksum:b91a1c9a8a
+diff name:ruadlist lines:90 checksum:be474d9ad5
 d4 2
 a5 2
-! Last modified: Wed, 24 Sep 2025 15:27:50 +0000
-! Diff-Path: ../patches/2025.9.24.927.patch#ruadlist
+! Last modified: Wed, 24 Sep 2025 20:28:47 +0000
+! Diff-Path: ../patches/2025.9.24.1228.patch#ruadlist
 a2861 1
 ||innovation-lab.ru^$third-party
+d9194 1
+a9194 2
+||24parik.*?adtag=$popup
+||24parik.*?creative_id=$popup
+d9433 2
+a9434 2
+||parik24.*?adtag=$popup
+||parik24.*?creative_id=$popup
 d10181 1
 a10181 1
 esputnik.com,~webinars.esputnik.com##body.cl-noscroll > .cl-dialog[style*="position: fixed"]
@@ -69,10 +77,15 @@ auto.ru,reshu.by,reshuent.kz,sdamgia.ru##+js(abort-on-property-read, Object.prot
 d28635 1
 a28635 1
 80-e.ru,doramatv.live,examenpdd.com,forum.ixbt.com,rg.ru,shadowcore.ru,ura.news##+js(abort-on-property-read, yaContextCb)
+a28729 1
+rutube.ru##+js(json-prune-fetch-response, appearance.auto_start, , propsToMatch, 2x2tv.ru)
 d28826 1
 a28826 1
 fishki.net##+js(set-attr, .cycle-carousel-wrap > a.bottom_slide__item > img, src, [data-src])
 a28870 1
 dzen.ru##+js(set-constant, Object.prototype.isTurboPage, undefined)
+d28927 1
+a28977 1
+24parik.*,parik24.*##+js(window-close-if, /adtag|creative_id/)
 a28980 1
 dzen.ru##:matches-path(/articles) div:has(> article > [class*="adBox"])

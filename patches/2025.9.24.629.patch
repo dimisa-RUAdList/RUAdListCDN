@@ -1,8 +1,21 @@
-diff name:ruadlist lines:7 checksum:b91a1c9a8a
+diff name:ruadlist lines:20 checksum:be474d9ad5
 d4 2
 a5 2
-! Last modified: Wed, 24 Sep 2025 15:27:50 +0000
-! Diff-Path: ../patches/2025.9.24.927.patch#ruadlist
+! Last modified: Wed, 24 Sep 2025 20:28:47 +0000
+! Diff-Path: ../patches/2025.9.24.1228.patch#ruadlist
+d9195 1
+a9195 2
+||24parik.*?adtag=$popup
+||24parik.*?creative_id=$popup
+d9434 2
+a9435 2
+||parik24.*?adtag=$popup
+||parik24.*?creative_id=$popup
 d22174 1
 a22174 1
 ||pikabu.ru/ajax/*?t7Orr=$xmlhttprequest
+a28746 1
+rutube.ru##+js(json-prune-fetch-response, appearance.auto_start, , propsToMatch, 2x2tv.ru)
+d28945 1
+a28995 1
+24parik.*,parik24.*##+js(window-close-if, /adtag|creative_id/)
