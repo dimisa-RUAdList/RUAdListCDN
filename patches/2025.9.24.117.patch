@@ -1,8 +1,10 @@
-diff name:ruadlist lines:23 checksum:6ffaed85d2
+diff name:ruadlist lines:31 checksum:820d305354
 d4 2
 a5 2
-! Last modified: Thu, 25 Sep 2025 06:39:20 +0000
-! Diff-Path: ../patches/2025.9.25.399.patch#ruadlist
+! Last modified: Thu, 25 Sep 2025 11:22:58 +0000
+! Diff-Path: ../patches/2025.9.25.682.patch#ruadlist
+a1030 1
+||california1955.nl^$third-party
 d9195 1
 a9195 2
 ||24parik.*?adtag=$popup
@@ -11,6 +13,11 @@ d9434 2
 a9435 2
 ||parik24.*?adtag=$popup
 ||parik24.*?creative_id=$popup
+a18852 1
+hh.ru##.work-in-company-banner
+a20618 1
+hh.ru##div[class*="banner-place"]
+d20798 1
 d22174 1
 a22174 1
 ||pikabu.ru/ajax/*?t7Orr=$xmlhttprequest
@@ -22,3 +29,4 @@ rutube.ru##+js(json-prune-fetch-response, appearance.auto_start, , propsToMatch,
 d28943 1
 a28993 1
 24parik.*,parik24.*##+js(window-close-if, /adtag|creative_id/)
+d29248 1

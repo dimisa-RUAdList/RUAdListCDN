@@ -1,8 +1,10 @@
-diff name:ruadlist lines:81 checksum:6ffaed85d2
+diff name:ruadlist lines:89 checksum:820d305354
 d4 2
 a5 2
-! Last modified: Thu, 25 Sep 2025 06:39:20 +0000
-! Diff-Path: ../patches/2025.9.25.399.patch#ruadlist
+! Last modified: Thu, 25 Sep 2025 11:22:58 +0000
+! Diff-Path: ../patches/2025.9.25.682.patch#ruadlist
+a1030 1
+||california1955.nl^$third-party
 d9195 1
 a9195 2
 ||24parik.*?adtag=$popup
@@ -26,6 +28,8 @@ a18198 1
 lifehacker.ru##.single-article > .widgets-renderer
 a18454 1
 lifehacker.ru#?#.the-tv__observer:-abp-has(.lh-article-card-meta__partner)
+a18847 1
+hh.ru##.work-in-company-banner
 a19023 2
 burninghut.ru#?#[class*="list"] > .article-card-small-list__item:-abp-has(.card-footer__categories > a[href="/category/musthave/"])
 burninghut.ru#?#[class*="list"] > .article-card-small-list__item:-abp-has(.card-footer__categories > span:-abp-contains(Реклама))
@@ -34,8 +38,11 @@ auto.ru##[style*="height:"][style*="250px"]:empty
 d19376 1
 a20378 1
 stopgame.ru##body > div[class]:not([id]):not([style]):empty
+a20610 1
+hh.ru##div[class*="banner-place"]
 a20738 1
 auto.ru##div[class^="RecommendationsItem__ad-"]
+d20789 1
 d22133 3
 a22135 3
 ||dzen.ru/a/$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
@@ -80,3 +87,4 @@ a28980 1
 24parik.*,parik24.*##+js(window-close-if, /adtag|creative_id/)
 a28983 1
 dzen.ru##:matches-path(/articles) div:has(> article > [class*="adBox"])
+d29234 1
