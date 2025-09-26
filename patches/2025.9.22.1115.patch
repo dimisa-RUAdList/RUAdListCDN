@@ -1,8 +1,8 @@
-diff name:ruadlist lines:84 checksum:d110c1f13a
+diff name:ruadlist lines:87 checksum:67ba0263c7
 d4 2
 a5 2
-! Last modified: Fri, 26 Sep 2025 07:25:24 +0000
-! Diff-Path: ../patches/2025.9.26.445.patch#ruadlist
+! Last modified: Fri, 26 Sep 2025 12:54:21 +0000
+! Diff-Path: ../patches/2025.9.26.774.patch#ruadlist
 a1030 1
 ||california1955.nl^$third-party
 d9195 1
@@ -19,6 +19,7 @@ esputnik.com,~webinars.esputnik.com##body.cl-noscroll > .cl-dialog[style*="posit
 d10397 1
 a10397 1
 $third-party,xmlhttprequest,domain=anisima.ru|artrozamnet.ru|autotopik.ru|bigpuzzle.ru|diakov.net|eku.ru|familyspace.ru|farap.ru|gorodvo.ru|hochu.tv|kogda.org|neolove.ru|nnm-club.me|nnmclub.ro|nnmclub.to|onlineguru.ru|pornozhuk.com|seasonvar.ru|superhumor.ru|voffka.com
+d10631 1
 d10748 1
 a10748 1
 /wp-admin/admin-ajax.php|$xmlhttprequest,domain=avtozakony.ru|clubwindows.ru|commix.ru|moy-instrument.ru|mr-build.ru|newxboxone.ru|pensioneram.info|prizvanie.su|vise.im
@@ -58,7 +59,7 @@ a22144 2
 ||static.dzeninfra.ru/s3/zen-lib/*/news-site-mobile/*a*a*a*a*a*a*a$script
 d22171 1
 a22171 1
-||pikabu.ru/ajax/*?t7Orr=$xmlhttprequest
+||pikabu.ru/ajax/*?a1BIp=$xmlhttprequest
 a22518 1
 dzen.ru##[id*="_R-O-"]
 a23027 2
@@ -78,8 +79,10 @@ rutube.ru##+js(json-prune-fetch-response, appearance.auto_start, '', stackToMatc
 a28880 1
 dzen.ru##+js(set-constant, Object.prototype.isTurboPage, undefined)
 d28937 1
-a28987 1
+a28987 3
 24parik.*,parik24.*##+js(window-close-if, /adtag|creative_id/)
+dtf.ru##:matches-path(-erid-) .block-special-button
+dtf.ru##:matches-path(-erid-) a[href^="https://go.vc.ru/"]:style(pointer-events: none !important; color: inherit !important)
 a28990 1
 dzen.ru##:matches-path(/articles) div:has(> article > [class*="adBox"])
 d29241 1

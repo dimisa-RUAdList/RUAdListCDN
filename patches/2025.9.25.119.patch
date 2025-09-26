@@ -1,13 +1,14 @@
-diff name:ruadlist lines:37 checksum:d110c1f13a
+diff name:ruadlist lines:44 checksum:67ba0263c7
 d4 2
 a5 2
-! Last modified: Fri, 26 Sep 2025 07:25:24 +0000
-! Diff-Path: ../patches/2025.9.26.445.patch#ruadlist
+! Last modified: Fri, 26 Sep 2025 12:54:21 +0000
+! Diff-Path: ../patches/2025.9.26.774.patch#ruadlist
 a1030 1
 ||california1955.nl^$third-party
 d10398 1
 a10398 1
 $third-party,xmlhttprequest,domain=anisima.ru|artrozamnet.ru|autotopik.ru|bigpuzzle.ru|diakov.net|eku.ru|familyspace.ru|farap.ru|gorodvo.ru|hochu.tv|kogda.org|neolove.ru|nnm-club.me|nnmclub.ro|nnmclub.to|onlineguru.ru|pornozhuk.com|seasonvar.ru|superhumor.ru|voffka.com
+d10632 1
 d10749 1
 a10749 1
 /wp-admin/admin-ajax.php|$xmlhttprequest,domain=avtozakony.ru|clubwindows.ru|commix.ru|moy-instrument.ru|mr-build.ru|newxboxone.ru|pensioneram.info|prizvanie.su|vise.im
@@ -25,6 +26,9 @@ d20799 1
 d22129 1
 a22129 1
 anivisual.net,apptractor.ru,browserleaks.com,ficbook.net,forum.vorota.de,kg-portal.ru,nookea.com,otzovik.com,root-nation.com,stalker-mods.clan.su,stalker-mods.su,studizba.com,todotech20.com##.adsbygoogle
+d22175 1
+a22175 1
+||pikabu.ru/ajax/*?a1BIp=$xmlhttprequest
 d25436 1
 d28658 1
 a28658 1
@@ -35,4 +39,7 @@ carservic.ru,iptv.org.ua,newxboxone.ru,tva.org.ua,ufchgu.ru##+js(addEventListene
 d28748 1
 a28748 1
 rutube.ru##+js(json-prune-fetch-response, appearance.auto_start, '', stackToMatch, !rutube.ru/video)
+a28997 2
+dtf.ru##:matches-path(-erid-) .block-special-button
+dtf.ru##:matches-path(-erid-) a[href^="https://go.vc.ru/"]:style(pointer-events: none !important; color: inherit !important)
 d29252 1

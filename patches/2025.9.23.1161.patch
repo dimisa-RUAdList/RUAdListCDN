@@ -1,8 +1,8 @@
-diff name:ruadlist lines:61 checksum:d110c1f13a
+diff name:ruadlist lines:64 checksum:67ba0263c7
 d4 2
 a5 2
-! Last modified: Fri, 26 Sep 2025 07:25:24 +0000
-! Diff-Path: ../patches/2025.9.26.445.patch#ruadlist
+! Last modified: Fri, 26 Sep 2025 12:54:21 +0000
+! Diff-Path: ../patches/2025.9.26.774.patch#ruadlist
 a1030 1
 ||california1955.nl^$third-party
 d9195 1
@@ -16,6 +16,7 @@ a9435 2
 d10397 1
 a10397 1
 $third-party,xmlhttprequest,domain=anisima.ru|artrozamnet.ru|autotopik.ru|bigpuzzle.ru|diakov.net|eku.ru|familyspace.ru|farap.ru|gorodvo.ru|hochu.tv|kogda.org|neolove.ru|nnm-club.me|nnmclub.ro|nnmclub.to|onlineguru.ru|pornozhuk.com|seasonvar.ru|superhumor.ru|voffka.com
+d10631 1
 d10748 1
 a10748 1
 /wp-admin/admin-ajax.php|$xmlhttprequest,domain=avtozakony.ru|clubwindows.ru|commix.ru|moy-instrument.ru|mr-build.ru|newxboxone.ru|pensioneram.info|prizvanie.su|vise.im
@@ -35,7 +36,7 @@ a22128 1
 anivisual.net,apptractor.ru,browserleaks.com,ficbook.net,forum.vorota.de,kg-portal.ru,nookea.com,otzovik.com,root-nation.com,stalker-mods.clan.su,stalker-mods.su,studizba.com,todotech20.com##.adsbygoogle
 d22174 1
 a22174 1
-||pikabu.ru/ajax/*?t7Orr=$xmlhttprequest
+||pikabu.ru/ajax/*?a1BIp=$xmlhttprequest
 a22521 1
 dzen.ru##[id*="_R-O-"]
 a23030 2
@@ -55,8 +56,10 @@ rutube.ru##+js(json-prune-fetch-response, appearance.auto_start, '', stackToMatc
 a28883 1
 dzen.ru##+js(set-constant, Object.prototype.isTurboPage, undefined)
 d28940 1
-a28990 1
+a28990 3
 24parik.*,parik24.*##+js(window-close-if, /adtag|creative_id/)
+dtf.ru##:matches-path(-erid-) .block-special-button
+dtf.ru##:matches-path(-erid-) a[href^="https://go.vc.ru/"]:style(pointer-events: none !important; color: inherit !important)
 a28993 1
 dzen.ru##:matches-path(/articles) div:has(> article > [class*="adBox"])
 d29244 1

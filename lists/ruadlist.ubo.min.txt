@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 26 Sep 2025 07:25:24 +0000
-! Diff-Path: ../patches/2025.9.26.445.patch#ruadlist
+! Last modified: Fri, 26 Sep 2025 12:54:21 +0000
+! Diff-Path: ../patches/2025.9.26.774.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10630,7 +10630,6 @@ $xmlhttprequest,domain=happy-biock.info|happy-block.info|howto-news.info|mschist
 /block/partners$domain=glavred.info|glavred.net|unian.info|unian.net|unian.ua
 /bnr-tumarke*.mp4|$domain=gzt-sv.ru
 /brending/*$image,domain=animevost.one|animevost.org|animevost.top|vost.pw
-/build/assets/yaVid-*.js$domain=anilib.me|animelib.org
 /chat*js$domain=all-sci.net|bib.social|economics.studio|economuch.com|finbook.news|lawbook.online|lawbooks.news|lib.sale|medinfo.live|myzooplanet.ru|pravo.studio|provse.news|psihologia.biz|sci-lib.biz|sci.house|scicenter.online|textbooks.studio|uchebnikfree.com|xn--80aaivjfyj3e.com
 /chat*js$script,domain=bstudy.net|ozlib.com|studbooks.net|studme.org|studref.com|studwood.net|vuzlit.com|xstud.org
 /code/bshow.php$script,domain=hd-720.biz|onlinemusic.com.ua
@@ -22174,7 +22173,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||news.mail.ru/-/*.js?
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
-||pikabu.ru/ajax/*?t7Orr=$xmlhttprequest
+||pikabu.ru/ajax/*?a1BIp=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -28996,6 +28995,8 @@ vk.com,vk.ru##.wall_module > div[id]:first-child > :matches-prop(innerHTML="/for
 /^https?://yastatic\.net\/www\/_\/[^\s]{150,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 /sm\.news/[^\s]{80,}/$script,xmlhttprequest,badfilter,domain=sm.news
 24parik.*,parik24.*##+js(window-close-if, /adtag|creative_id/)
+dtf.ru##:matches-path(-erid-) .block-special-button
+dtf.ru##:matches-path(-erid-) a[href^="https://go.vc.ru/"]:style(pointer-events: none !important; color: inherit !important)
 dzen.ru##:matches-path(/a/) [class^="content--article-"] [style^="opacity:"]
 dzen.ru##:matches-path(/a/) [data-appid] > [itemscope] > div > div[id]
 dzen.ru##:matches-path(/a/) div:matches-attr(/[a-z0-9]/=article-bottom-block) > [class*="social"] ~ div
