@@ -1,8 +1,8 @@
-diff name:ruadlist lines:87 checksum:53ed734ee7
+diff name:ruadlist lines:101 checksum:807ebdc3d1
 d4 2
 a5 2
-! Last modified: Sat, 27 Sep 2025 08:29:35 +0000
-! Diff-Path: ../patches/2025.9.27.509.patch#ruadlist
+! Last modified: Sat, 27 Sep 2025 13:26:28 +0000
+! Diff-Path: ../patches/2025.9.27.806.patch#ruadlist
 a1030 1
 ||california1955.nl^$third-party
 d9195 1
@@ -23,12 +23,21 @@ d10631 1
 d10748 1
 a10748 1
 /wp-admin/admin-ajax.php|$xmlhttprequest,domain=avtozakony.ru|clubwindows.ru|commix.ru|moy-instrument.ru|mr-build.ru|newxboxone.ru|pensioneram.info|prizvanie.su|vise.im
+a11329 1
+||cubiq.ru/wp-content/plugins/essential-grid/public/assets/js/esg$script
 a15270 1
 lifehacker.ru#?#.article-card-container > .container > [class*="article-card"]:-abp-has(.slider__title:-abp-contains(Полезные товары))
 a15709 1
 agroportal.ua##.blc
+a16229 1
+cubiq.ru##.cubiq-button
+d16610 1
 a17162 1
 burninghut.ru##.menu-item__link[href="/category/musthave/"]
+a17253 2
+repack.me##.my.row > div:first-child .panel-primary.short-title
+repack.me##.my.row > div:first-child .panel-primary.short-title ~ br
+d17479 2
 a18199 1
 lifehacker.ru##.single-article > .widgets-renderer
 d18464 1
@@ -37,6 +46,9 @@ hh.ru##.work-in-company-banner
 a19025 2
 burninghut.ru#?#[class*="list"] > .article-card-small-list__item:-abp-has(.card-footer__categories > a[href="/category/musthave/"])
 burninghut.ru#?#[class*="list"] > .article-card-small-list__item:-abp-has(.card-footer__categories > span:-abp-contains(Реклама))
+a19285 1
+cubiq.ru##[id^="esg-grid"]
+d19597 1
 d20124 1
 a20124 1
 burninghut.ru,cq.ru,lifehacker.ru##a[href^="https://market.yandex.ru/"]
@@ -60,6 +72,8 @@ a22144 2
 d22171 1
 a22171 1
 ||pikabu.ru/ajax/*?a1BIp=$xmlhttprequest
+a22326 1
+2ip.ru##.change-ip
 a22518 1
 dzen.ru##[id*="_R-O-"]
 a23027 2
@@ -81,8 +95,8 @@ dzen.ru##+js(set-constant, Object.prototype.isTurboPage, undefined)
 d28937 1
 a28987 3
 24parik.*,parik24.*##+js(window-close-if, /adtag|creative_id/)
-dtf.ru##:matches-path(-erid-) .block-special-button
-dtf.ru##:matches-path(-erid-) a[href^="https://go.vc.ru/"]:style(pointer-events: none !important; color: inherit !important)
+dtf.ru,vc.ru##:matches-path(-erid-) .block-special-button
+dtf.ru,vc.ru##:matches-path(-erid-) a[href*="go.vc.ru"]:style(pointer-events: none !important; color: inherit !important)
 a28990 1
 dzen.ru##:matches-path(/articles) div:has(> article > [class*="adBox"])
 d29241 1

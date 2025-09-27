@@ -1,8 +1,8 @@
-diff name:ruadlist lines:56 checksum:53ed734ee7
+diff name:ruadlist lines:70 checksum:807ebdc3d1
 d4 2
 a5 2
-! Last modified: Sat, 27 Sep 2025 08:29:35 +0000
-! Diff-Path: ../patches/2025.9.27.509.patch#ruadlist
+! Last modified: Sat, 27 Sep 2025 13:26:28 +0000
+! Diff-Path: ../patches/2025.9.27.806.patch#ruadlist
 a1030 1
 ||california1955.nl^$third-party
 d9195 1
@@ -20,11 +20,23 @@ d10631 1
 d10748 1
 a10748 1
 /wp-admin/admin-ajax.php|$xmlhttprequest,domain=avtozakony.ru|clubwindows.ru|commix.ru|moy-instrument.ru|mr-build.ru|newxboxone.ru|pensioneram.info|prizvanie.su|vise.im
+a11329 1
+||cubiq.ru/wp-content/plugins/essential-grid/public/assets/js/esg$script
 a15710 1
 agroportal.ua##.blc
+a16230 1
+cubiq.ru##.cubiq-button
+d16611 1
+a17255 2
+repack.me##.my.row > div:first-child .panel-primary.short-title
+repack.me##.my.row > div:first-child .panel-primary.short-title ~ br
+d17481 2
 d18467 1
 a18852 1
 hh.ru##.work-in-company-banner
+a19290 1
+cubiq.ru##[id^="esg-grid"]
+d19602 1
 d20129 1
 a20129 1
 burninghut.ru,cq.ru,lifehacker.ru##a[href^="https://market.yandex.ru/"]
@@ -37,6 +49,8 @@ anivisual.net,apptractor.ru,browserleaks.com,ficbook.net,forum.vorota.de,kg-port
 d22174 1
 a22174 1
 ||pikabu.ru/ajax/*?a1BIp=$xmlhttprequest
+a22329 1
+2ip.ru##.change-ip
 a23031 2
 avtorambler.com,rambler.ru#?#article div:-abp-has(> rambler-car-loan-calculator)
 avtorambler.com,rambler.ru#?#article div:-abp-has(> rambler-info-banner)
@@ -52,6 +66,6 @@ rutube.ru##+js(json-prune-fetch-response, appearance.auto_start, '', stackToMatc
 d28943 1
 a28993 3
 24parik.*,parik24.*##+js(window-close-if, /adtag|creative_id/)
-dtf.ru##:matches-path(-erid-) .block-special-button
-dtf.ru##:matches-path(-erid-) a[href^="https://go.vc.ru/"]:style(pointer-events: none !important; color: inherit !important)
+dtf.ru,vc.ru##:matches-path(-erid-) .block-special-button
+dtf.ru,vc.ru##:matches-path(-erid-) a[href*="go.vc.ru"]:style(pointer-events: none !important; color: inherit !important)
 d29248 1

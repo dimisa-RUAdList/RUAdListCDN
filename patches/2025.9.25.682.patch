@@ -1,8 +1,8 @@
-diff name:ruadlist lines:36 checksum:53ed734ee7
+diff name:ruadlist lines:50 checksum:807ebdc3d1
 d4 2
 a5 2
-! Last modified: Sat, 27 Sep 2025 08:29:35 +0000
-! Diff-Path: ../patches/2025.9.27.509.patch#ruadlist
+! Last modified: Sat, 27 Sep 2025 13:26:28 +0000
+! Diff-Path: ../patches/2025.9.27.806.patch#ruadlist
 d10399 1
 a10399 1
 $third-party,xmlhttprequest,domain=anisima.ru|artrozamnet.ru|autotopik.ru|bigpuzzle.ru|diakov.net|eku.ru|familyspace.ru|farap.ru|gorodvo.ru|hochu.tv|kogda.org|neolove.ru|nnm-club.me|nnmclub.ro|nnmclub.to|onlineguru.ru|pornozhuk.com|seasonvar.ru|superhumor.ru|voffka.com
@@ -10,9 +10,21 @@ d10633 1
 d10750 1
 a10750 1
 /wp-admin/admin-ajax.php|$xmlhttprequest,domain=avtozakony.ru|clubwindows.ru|commix.ru|moy-instrument.ru|mr-build.ru|newxboxone.ru|pensioneram.info|prizvanie.su|vise.im
+a11331 1
+||cubiq.ru/wp-content/plugins/essential-grid/public/assets/js/esg$script
 a15712 1
 agroportal.ua##.blc
+a16232 1
+cubiq.ru##.cubiq-button
+d16613 1
+a17257 2
+repack.me##.my.row > div:first-child .panel-primary.short-title
+repack.me##.my.row > div:first-child .panel-primary.short-title ~ br
+d17483 2
 d18469 1
+a19293 1
+cubiq.ru##[id^="esg-grid"]
+d19605 1
 d20132 1
 a20132 1
 burninghut.ru,cq.ru,lifehacker.ru##a[href^="https://market.yandex.ru/"]
@@ -22,6 +34,8 @@ anivisual.net,apptractor.ru,browserleaks.com,ficbook.net,forum.vorota.de,kg-port
 d22177 1
 a22177 1
 ||pikabu.ru/ajax/*?a1BIp=$xmlhttprequest
+a22332 1
+2ip.ru##.change-ip
 d25438 1
 d28660 1
 a28660 1
@@ -33,5 +47,5 @@ d28750 1
 a28750 1
 rutube.ru##+js(json-prune-fetch-response, appearance.auto_start, '', stackToMatch, !rutube.ru/video)
 a28999 2
-dtf.ru##:matches-path(-erid-) .block-special-button
-dtf.ru##:matches-path(-erid-) a[href^="https://go.vc.ru/"]:style(pointer-events: none !important; color: inherit !important)
+dtf.ru,vc.ru##:matches-path(-erid-) .block-special-button
+dtf.ru,vc.ru##:matches-path(-erid-) a[href*="go.vc.ru"]:style(pointer-events: none !important; color: inherit !important)
