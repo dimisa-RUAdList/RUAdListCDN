@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 27 Sep 2025 13:26:28 +0000
-! Diff-Path: ../patches/2025.9.27.806.patch#ruadlist
+! Last modified: Sat, 27 Sep 2025 18:33:04 +0000
+! Diff-Path: ../patches/2025.9.27.1113.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -593,6 +593,7 @@
 ||bachmedia.ru^
 ||backforward.bid^$third-party
 ||backromy.com^
+||backwardstask.com^$third-party
 ||badamareus.com^$third-party
 ||badumtsium.com^$third-party
 ||bafffnewss.com^$third-party
@@ -28676,6 +28677,7 @@ forums.rusmedserv.com##+js(abort-on-stack-trace, fetch, eval)
 drive2.ru,shedevrum.ai##+js(addEventListener-defuser, /beforeunload|pagehide/, 0x)
 fastpic.org,~new.fastpic.org##+js(addEventListener-defuser, /click|load/, popMagic)
 biqle.org,biqle.ru##+js(addEventListener-defuser, /click|mousedown/, popunder)
+lrepacks.net##+js(addEventListener-defuser, /click|mousedown/, setClickedUrl)
 fm-app.ru,tvapp.su,yootv.ru##+js(addEventListener-defuser, /mouse/, cursorVisible)
 cq.ru##+js(addEventListener-defuser, DOMContentLoaded, 'fullscreen-ad')
 ~id.rambler.ru,rambler.ru,~vp.rambler.ru##+js(addEventListener-defuser, DOMContentLoaded, .j-mini-player__video)
