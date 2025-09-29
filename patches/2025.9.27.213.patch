@@ -1,8 +1,8 @@
-diff name:ruadlist lines:59 checksum:572648a911
+diff name:ruadlist lines:76 checksum:75fca16ddd
 d4 2
 a5 2
-! Last modified: Mon, 29 Sep 2025 10:31:38 +0000
-! Diff-Path: ../patches/2025.9.29.631.patch#ruadlist
+! Last modified: Mon, 29 Sep 2025 15:27:46 +0000
+! Diff-Path: ../patches/2025.9.29.927.patch#ruadlist
 a595 1
 ||backwardstask.com^$third-party
 a11330 1
@@ -12,9 +12,17 @@ vokrug.tv##.b-infinity
 d16043 1
 a16043 1
 ahen.me,allhen.online,doramatv.live,doramatv.one,doramatv.ru,findanime.ru,grouple.co,koro.life,librebook.me,mintmanga.one,mose.su,readmanga.io,selflib.me,selfmanga.live,usagi.one##.co_ba
+d16107 1
+a16107 1
+aniliberty.top,anilibria.top##.commercial-banner
 a16232 1
 cubiq.ru##.cubiq-button
+a16408 1
+aniliberty.top,anilibria.top#?#.ff-body + .v-card:-abp-has(a[href^="https://funpay.com/"])
 d16613 1
+d17243 1
+a17243 1
+aniliberty.top,anilibria.top#?#.mt-8:-abp-has(> .commercial-banner)
 a17257 2
 repack.me##.my.row > div:first-child .panel-primary.short-title
 repack.me##.my.row > div:first-child .panel-primary.short-title ~ br
@@ -45,15 +53,24 @@ a22176 1
 ||pikabu.ru/ajax/*?lOG0l=$xmlhttprequest
 a22331 1
 2ip.ru##.change-ip
+a26264 1
+yandex.*#@#li[class*="_card"]:has(a[href^="https://yabs.yandex.ru/count/"])
 d26754 1
 a26754 1
 anilib.me,animelib.org,hentailib.me,hentailib.org,shlib.life,slashlib.me,yaoilib.net##img[src*="/uploads/"]:style(filter: none !important)
+a26757 3
+aniliberty.top,anilibria.top##.v-carousel
+aniliberty.top,anilibria.top##.v-carousel + div.d-flex
+! ---
+d28668 1
 a28676 1
 lrepacks.net##+js(addEventListener-defuser, /click|mousedown/, setClickedUrl)
 a28704 1
 rutube.ru##+js(addEventListener-defuser, message, __messagesAtom)
 a28839 1
 ahen.me##+js(remove-node-text, script, createAdblockBlock)
+a28854 1
+vk.com,vk.ru##+js(set-constant, Object.prototype.AdChoices, undefined)
 d28998 2
 a28999 2
 dtf.ru,vc.ru##:matches-path(-erid-) .block-special-button

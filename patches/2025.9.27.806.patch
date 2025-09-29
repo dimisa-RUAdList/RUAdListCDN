@@ -1,8 +1,8 @@
-diff name:ruadlist lines:41 checksum:572648a911
+diff name:ruadlist lines:58 checksum:75fca16ddd
 d4 2
 a5 2
-! Last modified: Mon, 29 Sep 2025 10:31:38 +0000
-! Diff-Path: ../patches/2025.9.29.631.patch#ruadlist
+! Last modified: Mon, 29 Sep 2025 15:27:46 +0000
+! Diff-Path: ../patches/2025.9.29.927.patch#ruadlist
 a595 1
 ||backwardstask.com^$third-party
 a15415 1
@@ -10,6 +10,14 @@ vokrug.tv##.b-infinity
 d16044 1
 a16044 1
 ahen.me,allhen.online,doramatv.live,doramatv.one,doramatv.ru,findanime.ru,grouple.co,koro.life,librebook.me,mintmanga.one,mose.su,readmanga.io,selflib.me,selfmanga.live,usagi.one##.co_ba
+d16108 1
+a16108 1
+aniliberty.top,anilibria.top##.commercial-banner
+a16410 1
+aniliberty.top,anilibria.top#?#.ff-body + .v-card:-abp-has(a[href^="https://funpay.com/"])
+d17244 1
+a17244 1
+aniliberty.top,anilibria.top#?#.mt-8:-abp-has(> .commercial-banner)
 d18368 2
 d19198 1
 a19198 1
@@ -31,12 +39,21 @@ a22156 1
 d22177 1
 a22177 1
 ||pikabu.ru/ajax/*?lOG0l=$xmlhttprequest
+a26266 1
+yandex.*#@#li[class*="_card"]:has(a[href^="https://yabs.yandex.ru/count/"])
 d26756 1
 a26756 1
 anilib.me,animelib.org,hentailib.me,hentailib.org,shlib.life,slashlib.me,yaoilib.net##img[src*="/uploads/"]:style(filter: none !important)
+a26759 3
+aniliberty.top,anilibria.top##.v-carousel
+aniliberty.top,anilibria.top##.v-carousel + div.d-flex
+! ---
+d28670 1
 a28678 1
 lrepacks.net##+js(addEventListener-defuser, /click|mousedown/, setClickedUrl)
 a28706 1
 rutube.ru##+js(addEventListener-defuser, message, __messagesAtom)
 a28841 1
 ahen.me##+js(remove-node-text, script, createAdblockBlock)
+a28856 1
+vk.com,vk.ru##+js(set-constant, Object.prototype.AdChoices, undefined)

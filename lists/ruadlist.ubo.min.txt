@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 29 Sep 2025 10:31:38 +0000
-! Diff-Path: ../patches/2025.9.29.631.patch#ruadlist
+! Last modified: Mon, 29 Sep 2025 15:27:46 +0000
+! Diff-Path: ../patches/2025.9.29.927.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -16107,7 +16107,7 @@ superhumor.ru,voffka.com##.comments-head
 glavnoe.net,infotime.co##.comments-wrapper
 pikabu.ru##.comments__adv
 car.ru##.commercial
-anilibria.top,anilibria.wtf##.commercial-banner
+aniliberty.top,anilibria.top##.commercial-banner
 yantann.rbsmi.ru,yanzori.rbsmi.ru##.commercical_wrap
 sportanalytic.com##.common_content_news > .news > center
 samara24.ru##.common_left > [id^="rep_"] > .bl_main
@@ -16410,6 +16410,7 @@ vk.com,vk.ru##.feed_row ._post_content > .page_block
 vk.com,vk.ru##.feed_row > :not([id^="post"]) > div[class=""]
 vk.com,vk.ru##.feed_row > [theme]
 vk.com,vk.ru##.feed_row > div[class*=" "] > div:not([class])
+aniliberty.top,anilibria.top#?#.ff-body + .v-card:-abp-has(a[href^="https://funpay.com/"])
 online.fliphtml5.com##.fh5---banner---container
 allboxing.ru#?#.field-item > p:-abp-has(noindex [href*="adfox.ru"])
 allboxing.ru#?#.field-item > p:-abp-has(noindex [href*="pari.ru"])
@@ -17243,7 +17244,7 @@ emu-land.net##.mreklama
 ru.motorsport.com##.ms-article-content > div[style^="overflow: hidden; padding-top:"]
 ru.motorsport.com##.ms-side-items--with-banner
 www.ixbt.com##.mt-2:empty
-anilibria.top,anilibria.wtf#?#.mt-8:-abp-has(> .commercial-banner)
+aniliberty.top,anilibria.top#?#.mt-8:-abp-has(> .commercial-banner)
 multitest.ua##.mt_adv_block
 bigmir.net##.mtbottom_priceua
 7days.ru##.mtop
@@ -26265,6 +26266,7 @@ aqa.ru#@#div[id^="google_ads_iframe_"]
 oane.ws#@#div[id^="smi_teaser_"]
 pgpru.com,transinfo.by#@#img[width="468"][height="60"]
 gbsmp.ru#@#img[width="728"][height="90"]
+yandex.*#@#li[class*="_card"]:has(a[href^="https://yabs.yandex.ru/count/"])
 !#detect.bookmark
 101.ru,motogp-news.ru#@##advert-1
 24smi.org,gdz-raketa.ru,izi-invest.ru,kakoysegodnyaprazdnik.ru,leingpt.ru,xn--80aaiebcrjcibi8adgdtsm9z.xn--p1ai#@#div[id^="yandex_rtb"]
@@ -26757,6 +26759,9 @@ anidub.vip,anidubonline.com##main > .wrap-center:style(margin-left: auto !import
 anilib.me,animelib.org,hentailib.me,hentailib.org,shlib.life,slashlib.me,yaoilib.net##img[src*="/uploads/"]:style(filter: none !important)
 ! ---
 anilib.moe,anilib.one,anilib.top,anilibria.iss.one,anilibria.tv##.new-header
+! ---
+aniliberty.top,anilibria.top##.v-carousel
+aniliberty.top,anilibria.top##.v-carousel + div.d-flex
 ! ---
 anime-bit.pro,anime-bit.su##body:style(cursor: auto !important)
 ! ---
@@ -28668,7 +28673,6 @@ gamemag.ru##+js(abort-on-property-write, keepAdblock)
 searchfloor.org##+js(abort-on-property-write, showHelpProjectModal)
 kakprosto.ru##+js(abort-on-property-write, window.yaProxy)
 tvzvezda.ru##+js(abort-on-stack-trace, Object.prototype.autoplay, assets)
-vk.com,vk.ru##+js(abort-on-stack-trace, Object.prototype.dispatcher, /feed|set/)
 ya.ru##+js(abort-on-stack-trace, Object.prototype.loadAdvertScriptMode, /yastatic\.net/)
 shadowcore.ru##+js(abort-on-stack-trace, document.createElement, checkAboba)
 ai-next.ru##+js(abort-on-stack-trace, document.getElementById, /723-|ai-2-/)
@@ -28858,6 +28862,7 @@ joyreactor.cc,reactor.cc##+js(set-attr, video, controls, true)
 peers.tv##+js(set-constant, ADV_DISABLED, true)
 www.ukr.net##+js(set-constant, Clicks._test_meta_referer, null)
 dtf.ru,vc.ru##+js(set-constant, HTMLVideoElement.prototype.play, {})
+vk.com,vk.ru##+js(set-constant, Object.prototype.AdChoices, undefined)
 ivi.ru##+js(set-constant, Object.prototype.AdvObject, noopFunc)
 ictv.ua,inter.ua,k1.ua,novy.tv,ntn.ua,starlight.digital,stb.ua,teleportal.ua##+js(set-constant, Object.prototype.AdvertisementManager, undefined)
 player.vgtrk.com##+js(set-constant, Object.prototype.IS_CHECK_REGISTRATION, false)

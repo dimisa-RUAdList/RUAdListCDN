@@ -1,10 +1,18 @@
-diff name:ruadlist lines:16 checksum:572648a911
+diff name:ruadlist lines:33 checksum:75fca16ddd
 d4 2
 a5 2
-! Last modified: Mon, 29 Sep 2025 10:31:38 +0000
-! Diff-Path: ../patches/2025.9.29.631.patch#ruadlist
+! Last modified: Mon, 29 Sep 2025 15:27:46 +0000
+! Diff-Path: ../patches/2025.9.29.927.patch#ruadlist
 a15416 1
 vokrug.tv##.b-infinity
+d16109 1
+a16109 1
+aniliberty.top,anilibria.top##.commercial-banner
+a16411 1
+aniliberty.top,anilibria.top#?#.ff-body + .v-card:-abp-has(a[href^="https://funpay.com/"])
+d17245 1
+a17245 1
+aniliberty.top,anilibria.top#?#.mt-8:-abp-has(> .commercial-banner)
 d18369 2
 d19330 1
 d19465 1
@@ -15,3 +23,12 @@ banki.ru##div[class*="AdfoxBannerWrapper"]
 d22179 1
 a22179 1
 ||pikabu.ru/ajax/*?lOG0l=$xmlhttprequest
+a26268 1
+yandex.*#@#li[class*="_card"]:has(a[href^="https://yabs.yandex.ru/count/"])
+a26761 3
+aniliberty.top,anilibria.top##.v-carousel
+aniliberty.top,anilibria.top##.v-carousel + div.d-flex
+! ---
+d28672 1
+a28861 1
+vk.com,vk.ru##+js(set-constant, Object.prototype.AdChoices, undefined)
