@@ -1,10 +1,12 @@
-diff name:ruadlist lines:98 checksum:75fca16ddd
+diff name:ruadlist lines:109 checksum:ab77f803ea
 d4 2
 a5 2
-! Last modified: Mon, 29 Sep 2025 15:27:46 +0000
-! Diff-Path: ../patches/2025.9.29.927.patch#ruadlist
+! Last modified: Mon, 29 Sep 2025 20:24:51 +0000
+! Diff-Path: ../patches/2025.9.29.1224.patch#ruadlist
 a595 1
 ||backwardstask.com^$third-party
+a9108 1
+?partner=$popup,domain=lifehacker.ru
 d10399 1
 a10399 1
 $third-party,xmlhttprequest,domain=anisima.ru|artrozamnet.ru|autotopik.ru|bigpuzzle.ru|diakov.net|eku.ru|familyspace.ru|farap.ru|gorodvo.ru|hochu.tv|kogda.org|neolove.ru|nnm-club.me|nnmclub.ro|nnmclub.to|onlineguru.ru|pornozhuk.com|seasonvar.ru|superhumor.ru|voffka.com
@@ -14,6 +16,8 @@ a10750 1
 /wp-admin/admin-ajax.php|$xmlhttprequest,domain=avtozakony.ru|clubwindows.ru|commix.ru|moy-instrument.ru|mr-build.ru|newxboxone.ru|pensioneram.info|prizvanie.su|vise.im
 a11331 1
 ||cubiq.ru/wp-content/plugins/essential-grid/public/assets/js/esg$script
+a15272 1
+lifehacker.ru#?#.article-card-container > .container > [class*="article-card"]:-abp-has(.lh-article-card-meta__promo)
 a15415 1
 vokrug.tv##.b-infinity
 a15712 1
@@ -36,7 +40,12 @@ a17257 2
 repack.me##.my.row > div:first-child .panel-primary.short-title
 repack.me##.my.row > div:first-child .panel-primary.short-title ~ br
 d17483 2
+a17695 2
+lifehacker.ru##.promo__container .promo__picture
+lifehacker.ru##.promo__container a[href*="erid="]
 d18367 2
+a18461 1
+lifehacker.ru#?#.the-tv__observer:-abp-has(.lh-article-card-meta__promo)
 d18469 1
 d19198 1
 a19198 1
@@ -79,6 +88,8 @@ a26759 3
 aniliberty.top,anilibria.top##.v-carousel
 aniliberty.top,anilibria.top##.v-carousel + div.d-flex
 ! ---
+a27524 1
+lifehacker.ru##.promo__container:style(pointer-events: none !important; background: none !important)
 d28660 1
 a28660 1
 newxboxone.ru,ufchgu.ru##+js(abort-on-property-write, disableSelection)

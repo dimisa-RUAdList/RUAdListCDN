@@ -1,8 +1,12 @@
-diff name:ruadlist lines:54 checksum:75fca16ddd
+diff name:ruadlist lines:65 checksum:ab77f803ea
 d4 2
 a5 2
-! Last modified: Mon, 29 Sep 2025 15:27:46 +0000
-! Diff-Path: ../patches/2025.9.29.927.patch#ruadlist
+! Last modified: Mon, 29 Sep 2025 20:24:51 +0000
+! Diff-Path: ../patches/2025.9.29.1224.patch#ruadlist
+a9109 1
+?partner=$popup,domain=lifehacker.ru
+a15273 1
+lifehacker.ru#?#.article-card-container > .container > [class*="article-card"]:-abp-has(.lh-article-card-meta__promo)
 a15416 1
 vokrug.tv##.b-infinity
 d16045 1
@@ -16,7 +20,12 @@ aniliberty.top,anilibria.top#?#.ff-body + .v-card:-abp-has(a[href^="https://funp
 d17245 1
 a17245 1
 aniliberty.top,anilibria.top#?#.mt-8:-abp-has(> .commercial-banner)
+a17697 2
+lifehacker.ru##.promo__container .promo__picture
+lifehacker.ru##.promo__container a[href*="erid="]
 d18369 2
+a18463 1
+lifehacker.ru#?#.the-tv__observer:-abp-has(.lh-article-card-meta__promo)
 d19199 1
 a19199 1
 anilib.me,animelib.org,hentailib.me,hentailib.org,mangalib.me,mangalib.org,ranobelib.me,shlib.life##[data-scroll-content] > a[target="_blank"]:not([href="https://app.lib.social/app2.html"])
@@ -46,6 +55,8 @@ a26760 3
 aniliberty.top,anilibria.top##.v-carousel
 aniliberty.top,anilibria.top##.v-carousel + div.d-flex
 ! ---
+a27525 1
+lifehacker.ru##.promo__container:style(pointer-events: none !important; background: none !important)
 d28671 1
 a28708 1
 rutube.ru##+js(addEventListener-defuser, message, __messagesAtom)

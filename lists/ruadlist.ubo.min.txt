@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 29 Sep 2025 15:27:46 +0000
-! Diff-Path: ../patches/2025.9.29.927.patch#ruadlist
+! Last modified: Mon, 29 Sep 2025 20:24:51 +0000
+! Diff-Path: ../patches/2025.9.29.1224.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -9107,6 +9107,7 @@ $third-party,popup,domain=2ip.ru
 ://pikabu.ru/*/*/*/*--$popup
 ://pikabu.ru/*/*/*/*..$popup
 ://pikabu.ru/*/*/*/*_$popup
+?partner=$popup,domain=lifehacker.ru
 |http://li.ru/go?$popup,domain=fishki.net
 ||catcut.net^$popup,domain=mobile-4at-obshenie.chatovod.ru|mobile-chat-obshenie.jimdo.com
 ||com/?id=*&t=direct^$popup
@@ -15271,6 +15272,7 @@ penzadoctor.ru##.article-banner
 techdigest.ru##.article-banner-side
 www.sport.ru##.article-bottom-block > .hdr2
 lifehacker.ru#?#.article-card-container > .container > [class*="article-card"]:-abp-has(.lh-article-card-meta__partner)
+lifehacker.ru#?#.article-card-container > .container > [class*="article-card"]:-abp-has(.lh-article-card-meta__promo)
 lifehacker.ru#?#.article-card-container > .container > [class*="article-card"]:-abp-has(.slider__title:-abp-contains(Полезные товары))
 lifehacker.ru#?#.article-card-container > .container > [class*="article-card"]:-abp-has(a[href*="/topics/shopping/"])
 lifehacker.ru#?#.article-card-container > .container > [class*="article-card"]:-abp-has(a[href*="utm_"])
@@ -17697,6 +17699,8 @@ igry-bitva-zamkov.ru##.promo-top
 vbr.ru##.promo-trust
 blog.korabli.su##.promo-wrapper
 sea-man.org##.promo-yandex
+lifehacker.ru##.promo__container .promo__picture
+lifehacker.ru##.promo__container a[href*="erid="]
 cpainform.ru##.promo_block
 anekdot.ru##.promo_head
 now.ru##.promo_link
@@ -18461,6 +18465,7 @@ vedomosti.ru##.the-header__top a[href*="?erid="]
 ria.ru#?#.the-in-carousel__item:-abp-has(> [data-has-banner])
 vedomosti.ru##.the-loader
 lifehacker.ru#?#.the-tv__observer:-abp-has(.lh-article-card-meta__partner)
+lifehacker.ru#?#.the-tv__observer:-abp-has(.lh-article-card-meta__promo)
 lifehacker.ru#?#.the-tv__observer:-abp-has(a[href*="/topics/shopping/"])
 shraibikus.com,topdaynews.ru##.theiaStickySidebar
 ukrs.com.ua##.theiaStickySidebar .widget_text
@@ -27528,6 +27533,7 @@ libertycity.net,libertycity.ru##.downloada > .btn:style(font-size: large !import
 libertycity.net,libertycity.ru##.downloada:style(display: block !important)
 libertycity.net,libertycity.ru##.main_shift:style(height: 100px !important)
 ! ---
+lifehacker.ru##.promo__container:style(pointer-events: none !important; background: none !important)
 lifehacker.ru##.recipes-layout__content:style(margin-top: 0 !important)
 ! ---
 lifetambov.ru##.theme-wrapper > .container > div:style(padding-bottom: unset !important)
