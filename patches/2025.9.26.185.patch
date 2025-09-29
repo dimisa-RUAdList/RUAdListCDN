@@ -1,13 +1,16 @@
-diff name:ruadlist lines:41 checksum:f0246c93ee
+diff name:ruadlist lines:50 checksum:ac142fc17a
 d4 2
 a5 2
-! Last modified: Sun, 28 Sep 2025 19:18:19 +0000
-! Diff-Path: ../patches/2025.9.28.1158.patch#ruadlist
+! Last modified: Mon, 29 Sep 2025 02:01:30 +0000
+! Diff-Path: ../patches/2025.9.29.121.patch#ruadlist
 a595 1
 ||backwardstask.com^$third-party
 d10633 1
 a11331 1
 ||cubiq.ru/wp-content/plugins/essential-grid/public/assets/js/esg$script
+d16044 1
+a16044 1
+ahen.me,allhen.online,doramatv.live,doramatv.one,doramatv.ru,findanime.ru,grouple.co,koro.life,librebook.me,mintmanga.one,mose.su,readmanga.io,selflib.me,selfmanga.live,usagi.one##.co_ba
 a16233 1
 cubiq.ru##.cubiq-button
 d16614 1
@@ -27,6 +30,8 @@ hentailib.me,hentailib.org,mangalib.me,mangalib.org,ranobelib.me,shlib.life,slas
 d21417 1
 a21417 1
 hentailib.me,hentailib.org,mangalib.me,mangalib.org,ranobelib.me,shlib.life,slashlib.me,yaoilib.net##div[style="margin-top: 8px; margin-bottom: 12px;"]
+a22156 1
+@@||a.magsrv.com/ad-provider.js$script,domain=ahen.me
 d22177 1
 a22177 1
 ||pikabu.ru/ajax/*?a1BIp=$xmlhttprequest
@@ -37,6 +42,10 @@ a26755 1
 anilib.me,animelib.org,hentailib.me,hentailib.org,shlib.life,slashlib.me,yaoilib.net##img[src*="/uploads/"]:style(filter: none !important)
 a28677 1
 lrepacks.net##+js(addEventListener-defuser, /click|mousedown/, setClickedUrl)
+a28705 1
+rutube.ru##+js(addEventListener-defuser, message, __messagesAtom)
+a28840 1
+ahen.me##+js(remove-node-text, script, createAdblockBlock)
 a28998 2
 dtf.ru,vc.ru##:matches-path(-erid-) .block-special-button
 dtf.ru,vc.ru##:matches-path(-erid-) a[href*="go.vc.ru"]:style(pointer-events: none !important; color: inherit !important)

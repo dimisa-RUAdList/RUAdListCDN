@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 28 Sep 2025 19:18:19 +0000
-! Diff-Path: ../patches/2025.9.28.1158.patch#ruadlist
+! Last modified: Mon, 29 Sep 2025 02:01:30 +0000
+! Diff-Path: ../patches/2025.9.29.121.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -16042,7 +16042,7 @@ glazey.info##.client
 literaguru.ru##.clinic-image
 gorodkiev.com.ua##.clr[style]
 timeweb.com##.cmn-banner-container
-allhen.online,doramatv.live,doramatv.one,doramatv.ru,findanime.ru,grouple.co,koro.life,librebook.me,mintmanga.one,mose.su,readmanga.io,selflib.me,selfmanga.live,usagi.one##.co_ba
+ahen.me,allhen.online,doramatv.live,doramatv.one,doramatv.ru,findanime.ru,grouple.co,koro.life,librebook.me,mintmanga.one,mose.su,readmanga.io,selflib.me,selfmanga.live,usagi.one##.co_ba
 click-or-die.ru##.cod-ratings-widget
 024.by,ampercar.com,autogeek.com.ua,bolshoyulov.ru,femmie.ru,find-key.ru,fuzzmusic.ru,gadgets-help.ru,gubdaily.ru,hersonweek.net,itbusiness.com.ua,itsider.com.ua,kakbog.com,karavan.ua,kovi.ru,mmr.net.ua,nnews.com.ua,o-polze.com,pcminipro.ru,poravkrym.ru,villaved.ru,vsviti.com.ua##.code-block
 prozoro.net.ua##.code-block-34
@@ -22155,6 +22155,7 @@ $csp=script-src-attr 'none',domain=eurointegration.com.ua|pravda.com.ua|sportana
 ://mail.ru/$csp=connect-src 'self' *.imgsmail.ru *.mail.ru ok.ru vk.com data: blob:
 ://pikabu.ru/$csp=connect-src https://pikabu.ru/ajax/ https://pikabu.ru/ajax.php *.pikabu.ru/ data: https://pikabu.ru/.well-known/ wss://pikabu.ru/.well-known/
 ://pikabu.ru/$csp=script-src 'self' * 'unsafe-inline' data:
+@@||a.magsrv.com/ad-provider.js$script,domain=ahen.me
 @@||dmp.mpsuadv.ru/promer$xmlhttprequest,domain=trychatgpt.ru
 @@||imasdk.googleapis.com/$xmlhttprequest,domain=volley.ru
 @@||mpsuadv.ru/event/$xmlhttprequest,domain=trychatgpt.ru
@@ -28706,6 +28707,7 @@ romakatya.ru##+js(addEventListener-defuser, load, AdBlock)
 blackwot.ru##+js(addEventListener-defuser, load, detect-modal)
 overclockers.ru##+js(addEventListener-defuser, load, mamydirect)
 bonus-tv.ru##+js(addEventListener-defuser, loadstart, isImmediatePropagationStopped)
+rutube.ru##+js(addEventListener-defuser, message, __messagesAtom)
 kinoblin.ru,pornoakt.info,serialai.ru##+js(addEventListener-defuser, mousedown, pop.doEvent)
 m.lenta.ru##+js(addEventListener-defuser, scroll, getBoundingClientRect)
 www.vesti.ru##+js(addEventListener-defuser, scroll, players)
@@ -28841,6 +28843,7 @@ inforesist.org##+js(remove-node-text, script, /gtag\('event'/)
 sports.ru##+js(remove-node-text, script, AdBlocker)
 pikabu.ru##+js(remove-node-text, script, addPlaceholder)
 agronews.ua,agroreview.com##+js(remove-node-text, script, clickedOnContent)
+ahen.me##+js(remove-node-text, script, createAdblockBlock)
 newsyou.info##+js(remove-node-text, script, error-report.com)
 fapvdo.ru##+js(remove-node-text, script, getComputedStyle)
 gsm.in.ua##+js(remove-node-text, script, message_ads)

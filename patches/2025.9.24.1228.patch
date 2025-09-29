@@ -1,8 +1,8 @@
-diff name:ruadlist lines:74 checksum:f0246c93ee
+diff name:ruadlist lines:83 checksum:ac142fc17a
 d4 2
 a5 2
-! Last modified: Sun, 28 Sep 2025 19:18:19 +0000
-! Diff-Path: ../patches/2025.9.28.1158.patch#ruadlist
+! Last modified: Mon, 29 Sep 2025 02:01:30 +0000
+! Diff-Path: ../patches/2025.9.29.121.patch#ruadlist
 a595 1
 ||backwardstask.com^$third-party
 a1030 1
@@ -18,6 +18,9 @@ a11330 1
 ||cubiq.ru/wp-content/plugins/essential-grid/public/assets/js/esg$script
 a15711 1
 agroportal.ua##.blc
+d16042 1
+a16042 1
+ahen.me,allhen.online,doramatv.live,doramatv.one,doramatv.ru,findanime.ru,grouple.co,koro.life,librebook.me,mintmanga.one,mose.su,readmanga.io,selflib.me,selfmanga.live,usagi.one##.co_ba
 a16231 1
 cubiq.ru##.cubiq-button
 d16612 1
@@ -49,6 +52,8 @@ hentailib.me,hentailib.org,mangalib.me,mangalib.org,ranobelib.me,shlib.life,slas
 d22129 1
 a22129 1
 anivisual.net,apptractor.ru,browserleaks.com,ficbook.net,forum.vorota.de,kg-portal.ru,nookea.com,otzovik.com,root-nation.com,stalker-mods.clan.su,stalker-mods.su,studizba.com,todotech20.com##.adsbygoogle
+a22154 1
+@@||a.magsrv.com/ad-provider.js$script,domain=ahen.me
 d22175 1
 a22175 1
 ||pikabu.ru/ajax/*?a1BIp=$xmlhttprequest
@@ -66,9 +71,13 @@ lrepacks.net##+js(addEventListener-defuser, /click|mousedown/, setClickedUrl)
 d28696 1
 a28696 1
 carservic.ru,iptv.org.ua,newxboxone.ru,tva.org.ua,ufchgu.ru##+js(addEventListener-defuser, copy, pagelink)
+a28704 1
+rutube.ru##+js(addEventListener-defuser, message, __messagesAtom)
 d28748 1
 a28748 1
 rutube.ru##+js(json-prune-fetch-response, appearance.auto_start, '', stackToMatch, !rutube.ru/video)
+a28839 1
+ahen.me##+js(remove-node-text, script, createAdblockBlock)
 a28997 2
 dtf.ru,vc.ru##:matches-path(-erid-) .block-special-button
 dtf.ru,vc.ru##:matches-path(-erid-) a[href*="go.vc.ru"]:style(pointer-events: none !important; color: inherit !important)
