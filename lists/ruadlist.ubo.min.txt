@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 30 Sep 2025 06:39:46 +0000
-! Diff-Path: ../patches/2025.9.30.399.patch#ruadlist
+! Last modified: Tue, 30 Sep 2025 11:22:40 +0000
+! Diff-Path: ../patches/2025.9.30.682.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -17651,6 +17651,8 @@ inform.zp.ua##.posts-list-banner
 gotennis.ru##.posts-relative
 the-village-kz.com,the-village.me,the-village.ru,village.com.ua##.posts-sidebar
 svoimirykami.club##.posts__adv
+lifehacker.ru#?#.posts__list > .posts__item:-abp-has(.lh-article-card-meta__partner)
+lifehacker.ru#?#.posts__list > .posts__item:-abp-has(.lh-article-card-meta__promo)
 infotechnica.ru##.ppoibrorzf
 professionali.ru##.pr-banner-wrap
 newkaliningrad.ru##.pr-side-240
@@ -22181,7 +22183,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||news.mail.ru/-/*.js?
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
-||pikabu.ru/ajax/*?lOG0l=$xmlhttprequest
+||pikabu.ru/ajax/*?l0GOl=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -26271,7 +26273,6 @@ aqa.ru#@#div[id^="google_ads_iframe_"]
 oane.ws#@#div[id^="smi_teaser_"]
 pgpru.com,transinfo.by#@#img[width="468"][height="60"]
 gbsmp.ru#@#img[width="728"][height="90"]
-yandex.*#@#li[class*="_card"]:has(a[href^="https://yabs.yandex.ru/count/"])
 !#detect.bookmark
 101.ru,motogp-news.ru#@##advert-1
 24smi.org,gdz-raketa.ru,izi-invest.ru,kakoysegodnyaprazdnik.ru,leingpt.ru,xn--80aaiebcrjcibi8adgdtsm9z.xn--p1ai#@#div[id^="yandex_rtb"]
@@ -26767,6 +26768,7 @@ anilib.moe,anilib.one,anilib.top,anilibria.iss.one,anilibria.tv##.new-header
 ! ---
 aniliberty.top,anilibria.top##.v-carousel
 aniliberty.top,anilibria.top##.v-carousel + div.d-flex
+aniliberty.top,anilibria.top##[class*="image-blur-"]:style(filter: none !important)
 ! ---
 anime-bit.pro,anime-bit.su##body:style(cursor: auto !important)
 ! ---

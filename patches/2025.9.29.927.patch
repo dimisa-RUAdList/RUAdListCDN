@@ -1,16 +1,25 @@
-diff name:ruadlist lines:15 checksum:4182cd3188
+diff name:ruadlist lines:24 checksum:0046d0f0f2
 d4 2
 a5 2
-! Last modified: Tue, 30 Sep 2025 06:39:46 +0000
-! Diff-Path: ../patches/2025.9.30.399.patch#ruadlist
+! Last modified: Tue, 30 Sep 2025 11:22:40 +0000
+! Diff-Path: ../patches/2025.9.30.682.patch#ruadlist
 a9109 1
 ?partner=$popup,domain=lifehacker.ru
 a15273 1
 lifehacker.ru#?#.article-card-container > .container > [class*="article-card"]:-abp-has(.lh-article-card-meta__promo)
+a17651 2
+lifehacker.ru#?#.posts__list > .posts__item:-abp-has(.lh-article-card-meta__partner)
+lifehacker.ru#?#.posts__list > .posts__item:-abp-has(.lh-article-card-meta__promo)
 a17699 2
 lifehacker.ru##.promo__container .promo__picture
 lifehacker.ru##.promo__container a[href*="erid="]
 a18463 1
 lifehacker.ru#?#.the-tv__observer:-abp-has(.lh-article-card-meta__promo)
+d22179 1
+a22179 1
+||pikabu.ru/ajax/*?l0GOl=$xmlhttprequest
+d26269 1
+a26764 1
+aniliberty.top,anilibria.top##[class*="image-blur-"]:style(filter: none !important)
 a27530 1
 lifehacker.ru##.promo__container:style(pointer-events: none !important; background: none !important)

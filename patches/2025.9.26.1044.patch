@@ -1,8 +1,8 @@
-diff name:ruadlist lines:87 checksum:4182cd3188
+diff name:ruadlist lines:89 checksum:0046d0f0f2
 d4 2
 a5 2
-! Last modified: Tue, 30 Sep 2025 06:39:46 +0000
-! Diff-Path: ../patches/2025.9.30.399.patch#ruadlist
+! Last modified: Tue, 30 Sep 2025 11:22:40 +0000
+! Diff-Path: ../patches/2025.9.30.682.patch#ruadlist
 a595 1
 ||backwardstask.com^$third-party
 a9108 1
@@ -31,6 +31,9 @@ a17257 2
 repack.me##.my.row > div:first-child .panel-primary.short-title
 repack.me##.my.row > div:first-child .panel-primary.short-title ~ br
 d17483 2
+a17647 2
+lifehacker.ru#?#.posts__list > .posts__item:-abp-has(.lh-article-card-meta__partner)
+lifehacker.ru#?#.posts__list > .posts__item:-abp-has(.lh-article-card-meta__promo)
 a17695 2
 lifehacker.ru##.promo__container .promo__picture
 lifehacker.ru##.promo__container a[href*="erid="]
@@ -59,17 +62,16 @@ a22155 1
 @@||a.magsrv.com/ad-provider.js$script,domain=ahen.me
 d22176 1
 a22176 1
-||pikabu.ru/ajax/*?lOG0l=$xmlhttprequest
+||pikabu.ru/ajax/*?l0GOl=$xmlhttprequest
 a22331 1
 2ip.ru##.change-ip
-a26264 1
-yandex.*#@#li[class*="_card"]:has(a[href^="https://yabs.yandex.ru/count/"])
 d26754 1
 a26754 1
 anilib.me,animelib.org,hentailib.me,hentailib.org,shlib.life,slashlib.me,yaoilib.net##img[src*="/uploads/"]:style(filter: none !important)
-a26757 3
+a26757 4
 aniliberty.top,anilibria.top##.v-carousel
 aniliberty.top,anilibria.top##.v-carousel + div.d-flex
+aniliberty.top,anilibria.top##[class*="image-blur-"]:style(filter: none !important)
 ! ---
 a27522 1
 lifehacker.ru##.promo__container:style(pointer-events: none !important; background: none !important)
