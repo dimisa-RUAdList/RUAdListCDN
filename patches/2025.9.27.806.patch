@@ -1,12 +1,17 @@
-diff name:ruadlist lines:73 checksum:add511f457
+diff name:ruadlist lines:88 checksum:0bca216bd3
 d4 2
 a5 2
-! Last modified: Tue, 30 Sep 2025 16:33:48 +0000
-! Diff-Path: ../patches/2025.9.30.993.patch#ruadlist
+! Last modified: Tue, 30 Sep 2025 21:23:37 +0000
+! Diff-Path: ../patches/2025.9.30.1283.patch#ruadlist
 a595 1
 ||backwardstask.com^$third-party
 a9108 1
 ?partner=$popup,domain=lifehacker.ru
+a14981 1
+forbes.ru##.Er4We
+d14988 1
+a14988 1
+forbes.ru##.Ix-yg
 a15272 1
 lifehacker.ru#?#.article-card-container > .container > [class*="article-card"]:-abp-has(.lh-article-card-meta__promo)
 a15415 1
@@ -33,6 +38,7 @@ a18462 1
 lifehacker.ru#?#.the-tv__observer:-abp-has(.lh-article-card-meta__promo)
 a18497 1
 habr.com##.tm-article-presenter__banner
+d19170 1
 d19198 1
 a19198 1
 anilib.me,animelib.org,hentailib.me,hentailib.org,mangalib.me,mangalib.org,ranobelib.me,shlib.life##[data-scroll-content] > a[target="_blank"]:not([href="https://app.lib.social/app2.html"])
@@ -45,6 +51,8 @@ banki.ru##div[class*="AdfoxBannerWrapper"]
 d20726 1
 a20726 1
 hentailib.me,hentailib.org,mangalib.me,mangalib.org,ranobelib.me,shlib.life,slashlib.me,yaoilib.net##div[class][style="margin-top: 20px; margin-bottom: 20px;"]
+a21054 1
+forbes.ru##div[data-title-deleted="Реклама на Forbes"]
 d21417 1
 a21417 1
 hentailib.me,hentailib.org,mangalib.me,mangalib.org,ranobelib.me,shlib.life,slashlib.me,yaoilib.net##div[style="margin-top: 8px; margin-bottom: 12px;"]
@@ -61,14 +69,21 @@ aniliberty.top,anilibria.top##.v-carousel
 aniliberty.top,anilibria.top##.v-carousel + div.d-flex
 aniliberty.top,anilibria.top##[class*="image-blur-"]:style(filter: none !important)
 ! ---
+d27132 1
+a27132 1
+forbes.ru##.jNJtr:style(height: calc(var(--vh, 1vh)*100 - 1px) !important)
 a27524 1
 lifehacker.ru##.promo__container:style(pointer-events: none !important; background: none !important)
 d28670 1
 a28678 1
 lrepacks.net##+js(addEventListener-defuser, /click|mousedown/, setClickedUrl)
+a28690 1
+forbes.ru##+js(addEventListener-defuser, click, '', elements, a[href*="utm_campaign="])
 a28706 1
 rutube.ru##+js(addEventListener-defuser, message, __messagesAtom)
 a28841 1
 ahen.me##+js(remove-node-text, script, createAdblockBlock)
 a28856 1
 vk.com,vk.ru##+js(set-constant, Object.prototype.AdChoices, undefined)
+d28886 1
+d28898 6

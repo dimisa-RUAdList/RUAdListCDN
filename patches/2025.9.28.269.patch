@@ -1,10 +1,15 @@
-diff name:ruadlist lines:69 checksum:add511f457
+diff name:ruadlist lines:84 checksum:0bca216bd3
 d4 2
 a5 2
-! Last modified: Tue, 30 Sep 2025 16:33:48 +0000
-! Diff-Path: ../patches/2025.9.30.993.patch#ruadlist
+! Last modified: Tue, 30 Sep 2025 21:23:37 +0000
+! Diff-Path: ../patches/2025.9.30.1283.patch#ruadlist
 a9109 1
 ?partner=$popup,domain=lifehacker.ru
+a14982 1
+forbes.ru##.Er4We
+d14989 1
+a14989 1
+forbes.ru##.Ix-yg
 a15273 1
 lifehacker.ru#?#.article-card-container > .container > [class*="article-card"]:-abp-has(.lh-article-card-meta__promo)
 a15416 1
@@ -31,6 +36,7 @@ a18463 1
 lifehacker.ru#?#.the-tv__observer:-abp-has(.lh-article-card-meta__promo)
 a18498 1
 habr.com##.tm-article-presenter__banner
+d19171 1
 d19199 1
 a19199 1
 anilib.me,animelib.org,hentailib.me,hentailib.org,mangalib.me,mangalib.org,ranobelib.me,shlib.life##[data-scroll-content] > a[target="_blank"]:not([href="https://app.lib.social/app2.html"])
@@ -43,6 +49,8 @@ banki.ru##div[class*="AdfoxBannerWrapper"]
 d20727 1
 a20727 1
 hentailib.me,hentailib.org,mangalib.me,mangalib.org,ranobelib.me,shlib.life,slashlib.me,yaoilib.net##div[class][style="margin-top: 20px; margin-bottom: 20px;"]
+a21055 1
+forbes.ru##div[data-title-deleted="Реклама на Forbes"]
 d21418 1
 a21418 1
 hentailib.me,hentailib.org,mangalib.me,mangalib.org,ranobelib.me,shlib.life,slashlib.me,yaoilib.net##div[style="margin-top: 8px; margin-bottom: 12px;"]
@@ -59,12 +67,19 @@ aniliberty.top,anilibria.top##.v-carousel
 aniliberty.top,anilibria.top##.v-carousel + div.d-flex
 aniliberty.top,anilibria.top##[class*="image-blur-"]:style(filter: none !important)
 ! ---
+d27133 1
+a27133 1
+forbes.ru##.jNJtr:style(height: calc(var(--vh, 1vh)*100 - 1px) !important)
 a27525 1
 lifehacker.ru##.promo__container:style(pointer-events: none !important; background: none !important)
 d28671 1
+a28692 1
+forbes.ru##+js(addEventListener-defuser, click, '', elements, a[href*="utm_campaign="])
 a28708 1
 rutube.ru##+js(addEventListener-defuser, message, __messagesAtom)
 a28843 1
 ahen.me##+js(remove-node-text, script, createAdblockBlock)
 a28858 1
 vk.com,vk.ru##+js(set-constant, Object.prototype.AdChoices, undefined)
+d28888 1
+d28900 6
