@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 30 Sep 2025 21:23:37 +0000
-! Diff-Path: ../patches/2025.9.30.1283.patch#ruadlist
+! Last modified: Wed, 01 Oct 2025 02:08:45 +0000
+! Diff-Path: ../patches/2025.10.1.128.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -18375,6 +18375,7 @@ klops.ru##.supercover-banner-header
 bilshe.com#?#.svejnov:-abp-has(> h2 > b:-abp-contains(/^Інші/))
 games-porno.net##.swfgame_banners
 ictv.ua#?#.swiper-slide:-abp-has(> a[href*="utm_campai"])
+vokrug.tv#?#.swiper-wrapper > .series-carousel__item:-abp-has(a[onclick*="adfox"])
 iguides.ru#?#.swiper-wrapper > .swiper-slide:-abp-has(> article [href*="?erid="])
 igromania.ru#?#.swiper-wrapper > .swiper-slide:-abp-has(> div > .knb-card--footer > div > span:-abp-contains(Партнерский материал))
 moniheal.com##.swiper-wrapper > a:not([href*="moniheal.com/"])
