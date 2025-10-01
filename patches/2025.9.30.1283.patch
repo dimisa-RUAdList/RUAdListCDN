@@ -1,7 +1,19 @@
-diff name:ruadlist lines:6 checksum:f0aec21a3e
+diff name:ruadlist lines:18 checksum:1710f709a0
 d4 2
 a5 2
-! Last modified: Wed, 01 Oct 2025 07:26:29 +0000
-! Diff-Path: ../patches/2025.10.1.446.patch#ruadlist
+! Last modified: Wed, 01 Oct 2025 12:56:47 +0000
+! Diff-Path: ../patches/2025.10.1.776.patch#ruadlist
 a18377 1
 vokrug.tv#?#.swiper-wrapper > .series-carousel__item:-abp-has(a[onclick*="adfox"])
+a20464 1
+novayagazeta.eu#?#button:-abp-has(> [src^="/vpnovaya_"])
+d22188 1
+a22188 1
+||pikabu.ru/ajax/*?l0G0l=$xmlhttprequest
+a27541 6
+! Фикс для плеера VIQEO
+lifehacker.ru##[data-video_status="initial"] .splash-pause
+lifehacker.ru##[data-video_status] .previewContainer:style(z-index: unset !important)
+lifehacker.ru##[data-video_status] .splash-icon_animation_container:style(opacity: unset !important)
+lifehacker.ru##[data-video_status] .splashContainer:style(display: unset !important)
+lifehacker.ru##[data-video_status]:not([data-video_status="initial"]) .splash-play

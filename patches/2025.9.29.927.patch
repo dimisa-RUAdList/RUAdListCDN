@@ -1,8 +1,8 @@
-diff name:ruadlist lines:43 checksum:f0aec21a3e
+diff name:ruadlist lines:52 checksum:1710f709a0
 d4 2
 a5 2
-! Last modified: Wed, 01 Oct 2025 07:26:29 +0000
-! Diff-Path: ../patches/2025.10.1.446.patch#ruadlist
+! Last modified: Wed, 01 Oct 2025 12:56:47 +0000
+! Diff-Path: ../patches/2025.10.1.776.patch#ruadlist
 a9109 1
 ?partner=$popup,domain=lifehacker.ru
 a14982 1
@@ -25,11 +25,13 @@ lifehacker.ru#?#.the-tv__observer:-abp-has(.lh-article-card-meta__promo)
 a18498 1
 habr.com##.tm-article-presenter__banner
 d19171 1
+a20456 1
+novayagazeta.eu#?#button:-abp-has(> [src^="/vpnovaya_"])
 a21055 1
 forbes.ru##div[data-title-deleted="Реклама на Forbes"]
 d22179 1
 a22179 1
-||pikabu.ru/ajax/*?l0GOl=$xmlhttprequest
+||pikabu.ru/ajax/*?l0G0l=$xmlhttprequest
 d26269 1
 a26764 1
 aniliberty.top,anilibria.top##[class*="image-blur-"]:style(filter: none !important)
@@ -38,6 +40,13 @@ a27138 1
 forbes.ru##.jNJtr:style(height: calc(var(--vh, 1vh)*100 - 1px) !important)
 a27530 1
 lifehacker.ru##.promo__container:style(pointer-events: none !important; background: none !important)
+a27531 6
+! Фикс для плеера VIQEO
+lifehacker.ru##[data-video_status="initial"] .splash-pause
+lifehacker.ru##[data-video_status] .previewContainer:style(z-index: unset !important)
+lifehacker.ru##[data-video_status] .splash-icon_animation_container:style(opacity: unset !important)
+lifehacker.ru##[data-video_status] .splashContainer:style(display: unset !important)
+lifehacker.ru##[data-video_status]:not([data-video_status="initial"]) .splash-play
 a28696 1
 forbes.ru##+js(addEventListener-defuser, click, '', elements, a[href*="utm_campaign="])
 d28895 1

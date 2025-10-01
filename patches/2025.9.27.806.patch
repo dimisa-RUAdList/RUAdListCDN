@@ -1,8 +1,8 @@
-diff name:ruadlist lines:88 checksum:f0aec21a3e
+diff name:ruadlist lines:97 checksum:1710f709a0
 d4 2
 a5 2
-! Last modified: Wed, 01 Oct 2025 07:26:29 +0000
-! Diff-Path: ../patches/2025.10.1.446.patch#ruadlist
+! Last modified: Wed, 01 Oct 2025 12:56:47 +0000
+! Diff-Path: ../patches/2025.10.1.776.patch#ruadlist
 a595 1
 ||backwardstask.com^$third-party
 a9108 1
@@ -46,6 +46,8 @@ d19329 1
 d19464 1
 a19464 1
 1tv.ru,drive.ru,f1news.ru,film.ru,gamemag.ru,kinoafisha.info,kinonews.ru,kinorium.com,livejournal.com,myshows.me,onlinestreams.ru,pikabu.ru,pluggedin.ru,spletnik.ru,tolknews.ru,trinixy.ru,www.pesticidy.ru##a[href*="//ads.adfox.ru/"]
+a20456 1
+novayagazeta.eu#?#button:-abp-has(> [src^="/vpnovaya_"])
 a20587 1
 banki.ru##div[class*="AdfoxBannerWrapper"]
 d20726 1
@@ -60,7 +62,7 @@ a22156 1
 @@||a.magsrv.com/ad-provider.js$script,domain=ahen.me
 d22177 1
 a22177 1
-||pikabu.ru/ajax/*?l0GOl=$xmlhttprequest
+||pikabu.ru/ajax/*?l0G0l=$xmlhttprequest
 d26756 1
 a26756 1
 anilib.me,animelib.org,hentailib.me,hentailib.org,shlib.life,slashlib.me,yaoilib.net##img[src*="/uploads/"]:style(filter: none !important)
@@ -74,6 +76,13 @@ a27132 1
 forbes.ru##.jNJtr:style(height: calc(var(--vh, 1vh)*100 - 1px) !important)
 a27524 1
 lifehacker.ru##.promo__container:style(pointer-events: none !important; background: none !important)
+a27525 6
+! Фикс для плеера VIQEO
+lifehacker.ru##[data-video_status="initial"] .splash-pause
+lifehacker.ru##[data-video_status] .previewContainer:style(z-index: unset !important)
+lifehacker.ru##[data-video_status] .splash-icon_animation_container:style(opacity: unset !important)
+lifehacker.ru##[data-video_status] .splashContainer:style(display: unset !important)
+lifehacker.ru##[data-video_status]:not([data-video_status="initial"]) .splash-play
 d28670 1
 a28678 1
 lrepacks.net##+js(addEventListener-defuser, /click|mousedown/, setClickedUrl)

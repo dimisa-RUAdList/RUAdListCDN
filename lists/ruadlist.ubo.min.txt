@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 01 Oct 2025 07:26:29 +0000
-! Diff-Path: ../patches/2025.10.1.446.patch#ruadlist
+! Last modified: Wed, 01 Oct 2025 12:56:47 +0000
+! Diff-Path: ../patches/2025.10.1.776.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -20463,6 +20463,7 @@ livetvstream.pro,me##body[bgcolor] > #adbtm
 livetvstream.pro,me##body[bgcolor] > div[id="ads"][style^="position: absolute;"]
 livetvstream.pro,me##body[bgcolor] > div[id^="iframe-container"]
 hi-fi.ru##body[data-pageid] #ipsLayout_sidebar
+novayagazeta.eu#?#button:-abp-has(> [src^="/vpnovaya_"])
 shuba.life#?#button[target="_blank"]:-abp-has(> .i-icon-basket)
 flamp.ru##cat-banner
 exnews.org##center + noindex
@@ -22186,7 +22187,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||news.mail.ru/-/*.js?
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
-||pikabu.ru/ajax/*?l0GOl=$xmlhttprequest
+||pikabu.ru/ajax/*?l0G0l=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -27540,6 +27541,12 @@ libertycity.net,libertycity.ru##.main_shift:style(height: 100px !important)
 ! ---
 lifehacker.ru##.promo__container:style(pointer-events: none !important; background: none !important)
 lifehacker.ru##.recipes-layout__content:style(margin-top: 0 !important)
+! Фикс для плеера VIQEO
+lifehacker.ru##[data-video_status="initial"] .splash-pause
+lifehacker.ru##[data-video_status] .previewContainer:style(z-index: unset !important)
+lifehacker.ru##[data-video_status] .splash-icon_animation_container:style(opacity: unset !important)
+lifehacker.ru##[data-video_status] .splashContainer:style(display: unset !important)
+lifehacker.ru##[data-video_status]:not([data-video_status="initial"]) .splash-play
 ! ---
 lifetambov.ru##.theme-wrapper > .container > div:style(padding-bottom: unset !important)
 ! ---
