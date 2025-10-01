@@ -1,8 +1,8 @@
-diff name:ruadlist lines:79 checksum:155ebd7923
+diff name:ruadlist lines:114 checksum:e1d3f18a5b
 d4 2
 a5 2
-! Last modified: Wed, 01 Oct 2025 17:25:06 +0000
-! Diff-Path: ../patches/2025.10.1.1045.patch#ruadlist
+! Last modified: Wed, 01 Oct 2025 22:26:12 +0000
+! Diff-Path: ../patches/2025.10.1.1346.patch#ruadlist
 a10156 2
 tass.ru##[class*="Layout_bottom_fixed_"]
 tass.ru##[data-no-mourning="true"][class^="DesktopLayout_above"]
@@ -20,6 +20,14 @@ lifehacker.ru#?#.posts__list > .posts__item:-abp-has(.lh-article-card-meta__part
 lifehacker.ru#?#.posts__list > .posts__item:-abp-has(.lh-article-card-meta__promo)
 a17839 1
 tass.ru##.rfm-marquee-container
+d17937 1
+a17937 1
+officepackage.info,vc.ru##.rotator
+a18322 1
+myshows.me##.startru
+d18370 1
+a18370 1
+vc.ru##.supbar--top
 a18374 1
 vokrug.tv#?#.swiper-wrapper > .series-carousel__item:-abp-has(a[onclick*="adfox"])
 a18503 1
@@ -37,12 +45,37 @@ d20748 1
 d20755 1
 a21060 1
 forbes.ru##div[data-title-deleted="Реклама на Forbes"]
+d21378 1
+a21378 1
+vc.ru##div[style*="banner-height"]
+d22173 2
+a22174 1
+@@||ssp.rambler.ru/capirs_async.js|$script,domain=www.championat.com|www.championat.ru
+d22176 1
 d22184 1
 a22184 1
 ||pikabu.ru/ajax/*?l0G0l=$xmlhttprequest
+a22237 1
+dtf.ru##.rotator * *
+a22238 1
+dtf.ru##.supbar--top * *
+a22268 1
+dtf.ru##div[style*="banner-height"] * *
 d26274 1
+a26395 1
+@@||s3.wi-fi.ru/mtt/configs/sites/dtf.js|$xmlhttprequest,domain=dtf.ru
+a26402 1
+@@||ssp.rambler.ru/capirs_async.js|$xmlhttprequest,domain=dtf.ru
 a26769 1
 aniliberty.top,anilibria.top##[class*="image-blur-"]:style(filter: none !important)
+a27056 7
+! суррогат
+dtf.ru##.right-sidebar div[style*="banner-height"] *
+dtf.ru##.right-sidebar div[style*="banner-height"]:style(height: 100px !important; margin-top: -120px !important; pointer-events: none !important; background-color: transparent !important;)
+dtf.ru##.rotator *
+dtf.ru##.rotator--limitless
+dtf.ru##.rotator:style(height: 100px !important; margin-top: -100px !important; margin-bottom: unset !important; pointer-events: none !important; background-color: transparent !important;)
+dtf.ru##.supbar--top:style(height: 100px !important; margin-top: -200px !important; pointer-events: none !important; background-color: transparent !important)
 d27143 1
 a27143 1
 forbes.ru##.jNJtr:style(height: calc(var(--vh, 1vh)*100 - 1px) !important)
@@ -64,9 +97,11 @@ tass.ru##div[class^="LoopChannel_widget"] > [class^="SimpleCaption_wrapper"]:sty
 tass.ru##div[class^="LoopChannel_wrapper"][role="presentation"]:style(box-shadow: none !important)
 a28702 1
 forbes.ru##+js(addEventListener-defuser, click, '', elements, a[href*="utm_campaign="])
+d28713 1
 d28884 1
 a28884 1
 cdnvideo.ru,eda.ru,mania.gcdn.co,vp.rambler.ru,www.rambler.ru##+js(set-constant, Object.prototype.autoPlay, false)
+d28895 1
 d28901 1
 d28913 6
 d28928 1
