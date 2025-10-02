@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 02 Oct 2025 08:34:19 +0000
-! Diff-Path: ../patches/2025.10.2.514.patch#ruadlist
+! Last modified: Thu, 02 Oct 2025 13:33:01 +0000
+! Diff-Path: ../patches/2025.10.2.813.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -14998,6 +14998,7 @@ russian.rt.com##.Mirtesen-root
 do.ru##.MyOpacity1
 tonkosti.ru##.NoCurTips
 forums.sumy.ua##.Notices.PanelScroller
+myshows.me##.OnlineLink
 zerocoolpro.biz##.PanelScroller
 games-archive.net##.PostContent > noindex > center
 russiandc.com##.R
@@ -17939,7 +17940,7 @@ kommersant.ru##.rocket_man
 in-english.club##.roll_autoplay_ads
 novgorod.ru##.root > .bigb
 matematikalegko.ru##.rotac_reklama
-officepackage.info,vc.ru##.rotator
+dtf.ru,officepackage.info,vc.ru##.rotator
 milknet.ru##.rotator-wrap
 bestradio.fm##.row .panel-danger
 5-tv.ru##.row > .col3.positionRelative
@@ -18325,7 +18326,6 @@ info.sibnet.ru##.stakan-border:not([style])
 tod-news.com##.stamp_main ~ .item
 newsroom24.ru##.standart_banner > [src*="/advertising/flash"] + *
 nn.ru##.starnews-block
-myshows.me##.startru
 riatomsk.ru##.stat-zen
 ykt.ru##.static-adv
 kubnews.ru,tripoli.land##.static-banner
@@ -18373,7 +18373,7 @@ newinform.com##.subscribe
 rtraveler.ru##.subscribe-wrap
 autopilot.ru##.subscribe_announcement
 playmaker24.ru##.subscrite-widget:first-child
-vc.ru##.supbar--top
+dtf.ru,vc.ru##.supbar--top
 klops.ru##.supercover-banner-header
 bilshe.com#?#.svejnov:-abp-has(> h2 > b:-abp-contains(/^Інші/))
 games-porno.net##.swfgame_banners
@@ -21385,7 +21385,7 @@ dltv.org##div[style*="/uploads/banners/"]
 doefiratv.info##div[style*="339px;"]
 x-console.com##div[style*="710px;"][style*="70px;"]
 forums.ngemu.com##div[style*="920px;"][style*="250px;"]
-vc.ru##div[style*="banner-height"]
+dtf.ru,vc.ru##div[style*="banner-height"]
 bikepost.ru##div[style*="block"][style*="center"][style*="width:"][style*="height:"]
 dumskaya.net##div[style*="display:inline-bl1ock"]
 kinogo.ru.net##div[style*="fyi5fimf."]
@@ -22189,7 +22189,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||news.mail.ru/-/*.js?
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
-||pikabu.ru/ajax/*?l0G0l=$xmlhttprequest
+||pikabu.ru/ajax/*?goGoh=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -22243,9 +22243,7 @@ mail.ru,sportmail.ru##.media-ui-slider-track > div:last-child [data-qa="Loader"]
 freesoft.ru##.modal-backdrop
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
-dtf.ru##.rotator * *
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(/min-height: 20.px|min-height: 29.px|min-height: 30.px|min-height: 300./))
-dtf.ru##.supbar--top * *
 fonmod.com,ritsatv.ru,websdr.su##:not(my-obnaruzhili-blokirovshchik)
 android-mafia.com,game4you.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##:not(this-site-promotes-malware)
 @@||fearmp4.ru^$generichide
@@ -22276,7 +22274,6 @@ rg.ru##div[id][class*="__"]:empty
 shedevrum.ai##div[id^="header_block_"]
 sdamgia.ru##div[id^="yandex_vario"]
 liveinternet.ru##div[style*="!important; "]
-dtf.ru##div[style*="banner-height"] * *
 sdamgia.ru##div[style*="important;"][style*="width:"][style*="height:"] *
 www.drive2.ru##iframe[style="display: block; border-width: 0px;"]
 www.drive2.ru##iframe[style="opacity: 1;"]
@@ -26403,7 +26400,6 @@ gbsmp.ru#@#img[width="728"][height="90"]
 @@||ru-skript.ru/templates/ruhacker/images/*logo.png
 @@||s-cdn.sportbox.ru^*/adfox.$script,domain=matchtv.ru|news.sportbox.ru
 @@||s.imgur.com/desktop-assets/js/floaty_rotator.*.bundle.js|$script,domain=imgur.com
-@@||s3.wi-fi.ru/mtt/configs/sites/dtf.js|$xmlhttprequest,domain=dtf.ru
 @@||securepubads.g.doubleclick.net/gampad/ads$xmlhttprequest,domain=www.aport.ru
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js|$domain=www.aport.ru
 @@||seo-fast.ru/js/adv.js$script,domain=seo-fast.ru
@@ -26411,7 +26407,6 @@ gbsmp.ru#@#img[width="728"][height="90"]
 @@||shararam-card.tk/showads.js|$script,domain=shararam-card.tk
 @@||sld.kiev.ua/assets/*/advert.js
 @@||smaxim.*/player/stats.php?event=Init,|$image,~third-party
-@@||ssp.rambler.ru/capirs_async.js|$xmlhttprequest,domain=dtf.ru
 @@||st.s5o.ru/source/_desktop/$xmlhttprequest,domain=sports.ru
 @@||stalker-mods.*/images/icons/*_|$image,~third-party,domain=stalker-mods.clan.su|stalker-mods.su
 @@||static-mon.yandex.net/static/main.js?pid=$xmlhttprequest,domain=reshu.by|reshuent.kz|sdamgia.ru|sports.ru
@@ -27067,13 +27062,6 @@ forums.drom.ru###dromRightCol
 forums.drom.ru##.contentWrap .lcWrap:style(padding-right: unset !important)
 ! ---
 dtf.ru,vc.ru##html:style(--layout-header-height-large: 60px !important)
-! суррогат
-dtf.ru##.right-sidebar div[style*="banner-height"] *
-dtf.ru##.right-sidebar div[style*="banner-height"]:style(height: 100px !important; margin-top: -120px !important; pointer-events: none !important; background-color: transparent !important;)
-dtf.ru##.rotator *
-dtf.ru##.rotator--limitless
-dtf.ru##.rotator:style(height: 100px !important; margin-top: -100px !important; margin-bottom: unset !important; pointer-events: none !important; background-color: transparent !important;)
-dtf.ru##.supbar--top:style(height: 100px !important; margin-top: -200px !important; pointer-events: none !important; background-color: transparent !important)
 ! ---
 dugtor.ru###left-block:style(min-height: 100% !important)
 dugtor.ru###right-block:style(min-height: 100% !important)
@@ -28920,6 +28908,7 @@ dni.expert,dni.ru,kp.kg,kp.kz,kp.md,kp.ru,ladys.media,lifehacker.ru,mk.ru,ohotni
 ati.su##+js(set-constant, Object.prototype.createBannerItem, null)
 24smi.org##+js(set-constant, Object.prototype.detect, noopFunc)
 examenpdd.com##+js(set-constant, Object.prototype.detectAdblock, noopFunc)
+dtf.ru##+js(set-constant, Object.prototype.detectAdblock, undefined)
 retail.ru##+js(set-constant, Object.prototype.detectBlockAds, noopFunc)
 embed.twitch.tv,player.twitch.tv##+js(set-constant, Object.prototype.disableAutoplay, true)
 www.mos.ru##+js(set-constant, Object.prototype.disablePaste, false)
