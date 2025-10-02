@@ -1,8 +1,8 @@
-diff name:ruadlist lines:117 checksum:b7dc240fe0
+diff name:ruadlist lines:146 checksum:b04a09b93d
 d4 2
 a5 2
-! Last modified: Thu, 02 Oct 2025 13:33:01 +0000
-! Diff-Path: ../patches/2025.10.2.813.patch#ruadlist
+! Last modified: Thu, 02 Oct 2025 18:36:37 +0000
+! Diff-Path: ../patches/2025.10.2.1116.patch#ruadlist
 a9109 1
 ?partner=$popup,domain=lifehacker.ru
 a10155 2
@@ -39,6 +39,12 @@ lifehacker.ru##.promo__container .promo__picture
 lifehacker.ru##.promo__container a[href*="erid="]
 a17833 1
 tass.ru##.rfm-marquee-container
+d17931 1
+a17931 1
+officepackage.info,vc.ru##.rotator
+d18364 1
+a18364 1
+vc.ru##.supbar--top
 d18369 1
 a18463 1
 lifehacker.ru#?#.the-tv__observer:-abp-has(.lh-article-card-meta__promo)
@@ -63,6 +69,9 @@ d20743 1
 d20750 1
 a21055 1
 forbes.ru##div[data-title-deleted="Реклама на Forbes"]
+d21373 1
+a21373 1
+vc.ru##div[style*="banner-height"]
 d22168 2
 a22169 1
 @@||ssp.rambler.ru/capirs_async.js|$script,domain=www.championat.com|www.championat.ru
@@ -70,11 +79,29 @@ d22171 1
 d22179 1
 a22179 1
 ||pikabu.ru/ajax/*?goGoh=$xmlhttprequest
+a22232 1
+dtf.ru##.rotator * *
+a22233 1
+dtf.ru##.supbar--top * *
+a22263 1
+dtf.ru##div[style*="banner-height"] * *
+a26389 1
+@@||s3.wi-fi.ru/mtt/configs/sites/dtf.js|$xmlhttprequest,domain=dtf.ru
+a26396 1
+@@||ssp.rambler.ru/capirs_async.js|$xmlhttprequest,domain=dtf.ru
 a26761 4
 aniliberty.top,anilibria.top##.v-carousel
 aniliberty.top,anilibria.top##.v-carousel + div.d-flex
 aniliberty.top,anilibria.top##[class*="image-blur-"]:style(filter: none !important)
 ! ---
+a27047 7
+! суррогат
+dtf.ru##.right-sidebar div[style*="banner-height"] *
+dtf.ru##.right-sidebar div[style*="banner-height"]:style(height: 100px !important; margin-top: -120px !important; pointer-events: none !important; background-color: transparent !important;)
+dtf.ru##.rotator *
+dtf.ru##.rotator--limitless
+dtf.ru##.rotator:style(height: 100px !important; margin-top: -100px !important; margin-bottom: unset !important; pointer-events: none !important; background-color: transparent !important;)
+dtf.ru##.supbar--top:style(height: 100px !important; margin-top: -200px !important; pointer-events: none !important; background-color: transparent !important)
 d27134 1
 a27134 1
 forbes.ru##.jNJtr:style(height: calc(var(--vh, 1vh)*100 - 1px) !important)
@@ -100,6 +127,8 @@ d28672 1
 a28693 1
 forbes.ru##+js(addEventListener-defuser, click, '', elements, a[href*="utm_campaign="])
 d28704 1
+a28821 1
+dtf.ru##+js(prevent-fetch, /capirs_async|mtt\/configs/)
 a28861 1
 vk.com,vk.ru##+js(set-constant, Object.prototype.AdChoices, undefined)
 d28874 1
