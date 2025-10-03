@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 03 Oct 2025 09:26:03 +0000
-! Diff-Path: ../patches/2025.10.3.566.patch#ruadlist
+! Last modified: Fri, 03 Oct 2025 14:26:53 +0000
+! Diff-Path: ../patches/2025.10.3.866.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -6718,6 +6718,7 @@
 ||vqhrqt.com^$third-party
 ||vqjep.com^$third-party
 ||vqmcyx.com^$third-party
+||vqserve.com^$third-party
 ||vrcteam.ru^$third-party
 ||vrt.news^$third-party
 ||vrzgn.com^$third-party
@@ -16443,6 +16444,7 @@ syl.ru##.flatBlock
 province.ru##.flexbannergroup > div:not(.gsInformer)
 pawno-info.ru##.floatcontainer.formcontrols.blockbody > a[href][target="_blank"]
 goldroyal.net##.floating
+frankmedia.ru##.floating-banner
 factroom.ru##.floating.b-sidebar
 notik.ru##.floating_bnr
 waitpost.ru##.fly
@@ -28706,6 +28708,7 @@ phys-kids.com##+js(abort-on-property-write, fetch)
 gamemag.ru##+js(abort-on-property-write, keepAdblock)
 searchfloor.org##+js(abort-on-property-write, showHelpProjectModal)
 kakprosto.ru##+js(abort-on-property-write, window.yaProxy)
+dtf.ru,vc.ru##+js(abort-on-stack-trace, HTMLVideoElement.prototype.play, /index-)
 tvzvezda.ru##+js(abort-on-stack-trace, Object.prototype.autoplay, assets)
 ya.ru##+js(abort-on-stack-trace, Object.prototype.loadAdvertScriptMode, /yastatic\.net/)
 shadowcore.ru##+js(abort-on-stack-trace, document.createElement, checkAboba)
@@ -28896,7 +28899,6 @@ joyreactor.cc,reactor.cc##+js(set-attr, video, controls, true)
 3dnews.ru##+js(set-attr, video[controls="controls"], controls, true)
 peers.tv##+js(set-constant, ADV_DISABLED, true)
 www.ukr.net##+js(set-constant, Clicks._test_meta_referer, null)
-dtf.ru,vc.ru##+js(set-constant, HTMLVideoElement.prototype.play, {})
 vk.com,vk.ru##+js(set-constant, Object.prototype.AdChoices, undefined)
 ivi.ru##+js(set-constant, Object.prototype.AdvObject, noopFunc)
 ictv.ua,inter.ua,k1.ua,novy.tv,ntn.ua,starlight.digital,stb.ua,teleportal.ua##+js(set-constant, Object.prototype.AdvertisementManager, undefined)
@@ -28917,7 +28919,7 @@ frontend.vh.yandex.ru##+js(set-constant, Object.prototype.autoplay, false)
 eagleplatform.com##+js(set-constant, Object.prototype.autoplay, null)
 embed.dugout.com##+js(set-constant, Object.prototype.autostart, noopFunc)
 sports.ru##+js(set-constant, Object.prototype.branding, undefined)
-dni.expert,dni.ru,kp.kg,kp.kz,kp.md,kp.ru,ladys.media,lifehacker.ru,mk.ru,ohotniki.ru,portalvirtualreality.ru,radiokp.ru,russian.rt.com,sportkp.ru,the-day.ru,woman.ru,womanhit.ru##+js(set-constant, Object.prototype.changeVisible, noopFunc)
+dni.expert,dni.ru,kp.kg,kp.kz,kp.md,kp.ru,ladys.media,lifehacker.ru,mk.ru,ohotniki.ru,portalvirtualreality.ru,radiokp.ru,russian.rt.com,sportkp.ru,stopgame.ru,the-day.ru,woman.ru,womanhit.ru##+js(set-constant, Object.prototype.changeVisible, noopFunc)
 ati.su##+js(set-constant, Object.prototype.createBannerItem, null)
 24smi.org##+js(set-constant, Object.prototype.detect, noopFunc)
 examenpdd.com##+js(set-constant, Object.prototype.detectAdblock, noopFunc)
