@@ -1,8 +1,8 @@
-diff name:ruadlist lines:26 checksum:ac1a8d23f0
+diff name:ruadlist lines:34 checksum:31fe0b02a1
 d4 2
 a5 2
-! Last modified: Sat, 04 Oct 2025 20:25:56 +0000
-! Diff-Path: ../patches/2025.10.4.1225.patch#ruadlist
+! Last modified: Sun, 05 Oct 2025 02:07:01 +0000
+! Diff-Path: ../patches/2025.10.5.127.patch#ruadlist
 a2504 1
 ||gtmpx.com^$third-party
 a6720 1
@@ -15,6 +15,8 @@ d18328 1
 d22192 1
 a22192 1
 ||pikabu.ru/ajax/*?Qw43E=$xmlhttprequest
+d26346 1
+d28706 1
 a28708 1
 dtf.ru,vc.ru##+js(abort-on-stack-trace, HTMLVideoElement.prototype.play, /index-)
 a28858 1
@@ -25,3 +27,9 @@ a28919 1
 dni.expert,dni.ru,kp.kg,kp.kz,kp.md,kp.ru,ladys.media,lifehacker.ru,mk.ru,ohotniki.ru,portalvirtualreality.ru,radiokp.ru,russian.rt.com,sportkp.ru,stopgame.ru,the-day.ru,woman.ru,womanhit.ru##+js(set-constant, Object.prototype.changeVisible, noopFunc)
 a28922 1
 dtf.ru##+js(set-constant, Object.prototype.detectAdblock, undefined)
+d29014 1
+a29335 4
+!#endif
+! Mobile only
+!#if env_mobile
+gamemag.ru#@?#.news-item-wrap > .news-item:-abp-has(> span:-abp-contains(Ad))

@@ -1,8 +1,8 @@
-diff name:ruadlist lines:102 checksum:ac1a8d23f0
+diff name:ruadlist lines:110 checksum:31fe0b02a1
 d4 2
 a5 2
-! Last modified: Sat, 04 Oct 2025 20:25:56 +0000
-! Diff-Path: ../patches/2025.10.4.1225.patch#ruadlist
+! Last modified: Sun, 05 Oct 2025 02:07:01 +0000
+! Diff-Path: ../patches/2025.10.5.127.patch#ruadlist
 a2504 1
 ||gtmpx.com^$third-party
 a6720 1
@@ -52,6 +52,7 @@ a22243 1
 dtf.ru##.supbar--top * *
 a22273 1
 dtf.ru##div[style*="banner-height"] * *
+d26340 1
 a26399 1
 @@||s3.wi-fi.ru/mtt/configs/sites/dtf.js|$xmlhttprequest,domain=dtf.ru
 a26406 1
@@ -80,6 +81,7 @@ tass.ru##div[class^="LoopChannelPlaceholder_bottom"]:style(background: none !imp
 tass.ru##div[class^="LoopChannelPlaceholder_container"]:style(box-shadow: none !important)
 tass.ru##div[class^="LoopChannel_widget"] > [class^="SimpleCaption_wrapper"]:style(background: none !important)
 tass.ru##div[class^="LoopChannel_wrapper"][role="presentation"]:style(box-shadow: none !important)
+d28683 1
 a28685 1
 dtf.ru,vc.ru##+js(abort-on-stack-trace, HTMLVideoElement.prototype.play, /index-)
 d28719 1
@@ -93,6 +95,7 @@ d28897 1
 a28897 1
 dni.expert,dni.ru,kp.kg,kp.kz,kp.md,kp.ru,ladys.media,lifehacker.ru,mk.ru,ohotniki.ru,portalvirtualreality.ru,radiokp.ru,russian.rt.com,sportkp.ru,stopgame.ru,the-day.ru,woman.ru,womanhit.ru##+js(set-constant, Object.prototype.changeVisible, noopFunc)
 d28927 1
+d28994 1
 a29217 7
 ! Tass
 tass.ru##+js(abort-on-stack-trace, HTMLVideoElement.prototype.play, onCanPlay)
@@ -101,3 +104,8 @@ tass.ru##+js(set-attr, video[class*="HLSPlayback_player"], controls, true)
 tass.ru##+js(set-constant, Object.prototype.autoPlay, {})
 tass.ru##[class^="LoopChannelPlayer_wrapper_"] > [role="presentation"]
 tass.ru##[class^="LoopChannelPlayer_wrapper_"] [class^="Centered_box_"]
+a29308 4
+!#endif
+! Mobile only
+!#if env_mobile
+gamemag.ru#@?#.news-item-wrap > .news-item:-abp-has(> span:-abp-contains(Ad))

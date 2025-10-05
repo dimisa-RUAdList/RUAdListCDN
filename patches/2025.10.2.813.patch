@@ -1,8 +1,8 @@
-diff name:ruadlist lines:48 checksum:ac1a8d23f0
+diff name:ruadlist lines:56 checksum:31fe0b02a1
 d4 2
 a5 2
-! Last modified: Sat, 04 Oct 2025 20:25:56 +0000
-! Diff-Path: ../patches/2025.10.4.1225.patch#ruadlist
+! Last modified: Sun, 05 Oct 2025 02:07:01 +0000
+! Diff-Path: ../patches/2025.10.5.127.patch#ruadlist
 a2504 1
 ||gtmpx.com^$third-party
 a6720 1
@@ -27,6 +27,7 @@ a22246 1
 dtf.ru##.supbar--top * *
 a22276 1
 dtf.ru##div[style*="banner-height"] * *
+d26343 1
 a26402 1
 @@||s3.wi-fi.ru/mtt/configs/sites/dtf.js|$xmlhttprequest,domain=dtf.ru
 a26409 1
@@ -39,6 +40,7 @@ dtf.ru##.rotator *
 dtf.ru##.rotator--limitless
 dtf.ru##.rotator:style(height: 100px !important; margin-top: -100px !important; margin-bottom: unset !important; pointer-events: none !important; background-color: transparent !important;)
 dtf.ru##.supbar--top:style(height: 100px !important; margin-top: -200px !important; pointer-events: none !important; background-color: transparent !important)
+d28694 1
 a28696 1
 dtf.ru,vc.ru##+js(abort-on-stack-trace, HTMLVideoElement.prototype.play, /index-)
 a28846 1
@@ -47,3 +49,9 @@ d28886 1
 d28907 1
 a28907 1
 dni.expert,dni.ru,kp.kg,kp.kz,kp.md,kp.ru,ladys.media,lifehacker.ru,mk.ru,ohotniki.ru,portalvirtualreality.ru,radiokp.ru,russian.rt.com,sportkp.ru,stopgame.ru,the-day.ru,woman.ru,womanhit.ru##+js(set-constant, Object.prototype.changeVisible, noopFunc)
+d29003 1
+a29324 4
+!#endif
+! Mobile only
+!#if env_mobile
+gamemag.ru#@?#.news-item-wrap > .news-item:-abp-has(> span:-abp-contains(Ad))
