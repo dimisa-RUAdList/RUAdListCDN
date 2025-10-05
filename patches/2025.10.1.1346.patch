@@ -1,8 +1,8 @@
-diff name:ruadlist lines:34 checksum:95d218baac
+diff name:ruadlist lines:44 checksum:12a25cf2ee
 d4 2
 a5 2
-! Last modified: Sun, 05 Oct 2025 16:29:18 +0000
-! Diff-Path: ../patches/2025.10.5.989.patch#ruadlist
+! Last modified: Sun, 05 Oct 2025 21:21:26 +0000
+! Diff-Path: ../patches/2025.10.5.1281.patch#ruadlist
 a2504 1
 ||gtmpx.com^$third-party
 a6720 1
@@ -11,7 +11,13 @@ a15000 1
 myshows.me##.OnlineLink
 a16444 1
 frankmedia.ru##.floating-banner
+d17292 1
 d18328 1
+d18336 1
+a18336 1
+cq.ru##.steam-pay__ad
+a19159 1
+sport-express.net,sport-express.ru##[data-component="widget-bookmaker-rating"]
 d22192 1
 a22192 1
 ||pikabu.ru/ajax/*?Qw43E=$xmlhttprequest
@@ -19,6 +25,8 @@ d26346 1
 d28706 1
 a28708 1
 dtf.ru,vc.ru##+js(abort-on-stack-trace, HTMLVideoElement.prototype.play, /index-)
+a28777 1
+rsload.net##+js(href-sanitizer, a[href^="https://fixti.ru/download.php?files="], ?files)
 a28858 1
 dtf.ru##+js(prevent-fetch, /capirs_async|mtt\/configs/)
 d28898 1
@@ -28,6 +36,8 @@ dni.expert,dni.ru,kp.kg,kp.kz,kp.md,kp.ru,ladys.media,lifehacker.ru,mk.ru,ohotni
 a28922 1
 dtf.ru##+js(set-constant, Object.prototype.detectAdblock, undefined)
 d29014 1
+a29068 1
+click-or-die.ru##article:has(p:has-text(ERID)) a:style(pointer-events: none !important; color: inherit !important)
 a29335 4
 !#endif
 ! Mobile only

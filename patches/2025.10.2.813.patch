@@ -1,20 +1,26 @@
-diff name:ruadlist lines:56 checksum:95d218baac
+diff name:ruadlist lines:66 checksum:12a25cf2ee
 d4 2
 a5 2
-! Last modified: Sun, 05 Oct 2025 16:29:18 +0000
-! Diff-Path: ../patches/2025.10.5.989.patch#ruadlist
+! Last modified: Sun, 05 Oct 2025 21:21:26 +0000
+! Diff-Path: ../patches/2025.10.5.1281.patch#ruadlist
 a2504 1
 ||gtmpx.com^$third-party
 a6720 1
 ||vqserve.com^$third-party
 a16445 1
 frankmedia.ru##.floating-banner
+d17293 1
 d17943 1
 a17943 1
 officepackage.info,vc.ru##.rotator
+d18336 1
+a18336 1
+cq.ru##.steam-pay__ad
 d18376 1
 a18376 1
 vc.ru##.supbar--top
+a19159 1
+sport-express.net,sport-express.ru##[data-component="widget-bookmaker-rating"]
 d21388 1
 a21388 1
 vc.ru##div[style*="banner-height"]
@@ -43,6 +49,8 @@ dtf.ru##.supbar--top:style(height: 100px !important; margin-top: -200px !importa
 d28694 1
 a28696 1
 dtf.ru,vc.ru##+js(abort-on-stack-trace, HTMLVideoElement.prototype.play, /index-)
+a28765 1
+rsload.net##+js(href-sanitizer, a[href^="https://fixti.ru/download.php?files="], ?files)
 a28846 1
 dtf.ru##+js(prevent-fetch, /capirs_async|mtt\/configs/)
 d28886 1
@@ -50,6 +58,8 @@ d28907 1
 a28907 1
 dni.expert,dni.ru,kp.kg,kp.kz,kp.md,kp.ru,ladys.media,lifehacker.ru,mk.ru,ohotniki.ru,portalvirtualreality.ru,radiokp.ru,russian.rt.com,sportkp.ru,stopgame.ru,the-day.ru,woman.ru,womanhit.ru##+js(set-constant, Object.prototype.changeVisible, noopFunc)
 d29003 1
+a29057 1
+click-or-die.ru##article:has(p:has-text(ERID)) a:style(pointer-events: none !important; color: inherit !important)
 a29324 4
 !#endif
 ! Mobile only
