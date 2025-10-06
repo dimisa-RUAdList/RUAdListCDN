@@ -1,12 +1,15 @@
-diff name:ruadlist lines:31 checksum:0d98f84635
+diff name:ruadlist lines:40 checksum:921227e7e8
 d4 2
 a5 2
-! Last modified: Mon, 06 Oct 2025 12:55:44 +0000
-! Diff-Path: ../patches/2025.10.6.775.patch#ruadlist
+! Last modified: Mon, 06 Oct 2025 17:25:11 +0000
+! Diff-Path: ../patches/2025.10.6.1045.patch#ruadlist
 a2504 1
 ||gtmpx.com^$third-party
 a11764 1
 ||hh.ru/build/static/images/big-promo-
+a15804 2
+dtf.ru##.blocker__buttons
+dtf.ru##.blocker__description
 d17295 1
 d18338 1
 a18338 1
@@ -19,12 +22,18 @@ a21377 2
 vk.com,vk.ru##div[role="feed"] > article > div:not([class]) > div:only-child
 vk.com,vk.ru##div[role="feed"] > article > div[class]
 d26348 1
+a26625 1
+||dtf.ru/assets/Blocker-
 d28708 1
+a28712 1
+vk.com,vk.ru##+js(abort-on-stack-trace, Object.prototype.dispatcher, fad.js)
 a28780 1
 rsload.net##+js(href-sanitizer, a[href^="https://fixti.ru/download.php?files="], ?files)
 d29018 1
 a29072 1
 click-or-die.ru##article:has(p:has-text(ERID)) a:style(pointer-events: none !important; color: inherit !important)
+a29329 1
+dtf.ru##+js(addEventListener-defuser, click, '', elements, a[href^="/"][data-router-link])
 a29339 4
 !#endif
 ! Mobile only

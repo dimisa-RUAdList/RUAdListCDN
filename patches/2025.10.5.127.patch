@@ -1,10 +1,13 @@
-diff name:ruadlist lines:21 checksum:0d98f84635
+diff name:ruadlist lines:30 checksum:921227e7e8
 d4 2
 a5 2
-! Last modified: Mon, 06 Oct 2025 12:55:44 +0000
-! Diff-Path: ../patches/2025.10.6.775.patch#ruadlist
+! Last modified: Mon, 06 Oct 2025 17:25:11 +0000
+! Diff-Path: ../patches/2025.10.6.1045.patch#ruadlist
 a11765 1
 ||hh.ru/build/static/images/big-promo-
+a15805 2
+dtf.ru##.blocker__buttons
+dtf.ru##.blocker__description
 d17296 1
 d18339 1
 a18339 1
@@ -16,7 +19,13 @@ hh.ru#?#body > [id] > [data-qa] > div[class^="wrapper--"]:-abp-has([data-name="B
 a21378 2
 vk.com,vk.ru##div[role="feed"] > article > div:not([class]) > div:only-child
 vk.com,vk.ru##div[role="feed"] > article > div[class]
+a26625 1
+||dtf.ru/assets/Blocker-
+a28711 1
+vk.com,vk.ru##+js(abort-on-stack-trace, Object.prototype.dispatcher, fad.js)
 a28779 1
 rsload.net##+js(href-sanitizer, a[href^="https://fixti.ru/download.php?files="], ?files)
 a29070 1
 click-or-die.ru##article:has(p:has-text(ERID)) a:style(pointer-events: none !important; color: inherit !important)
+a29327 1
+dtf.ru##+js(addEventListener-defuser, click, '', elements, a[href^="/"][data-router-link])

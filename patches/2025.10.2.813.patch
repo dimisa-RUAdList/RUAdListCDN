@@ -1,14 +1,17 @@
-diff name:ruadlist lines:73 checksum:0d98f84635
+diff name:ruadlist lines:82 checksum:921227e7e8
 d4 2
 a5 2
-! Last modified: Mon, 06 Oct 2025 12:55:44 +0000
-! Diff-Path: ../patches/2025.10.6.775.patch#ruadlist
+! Last modified: Mon, 06 Oct 2025 17:25:11 +0000
+! Diff-Path: ../patches/2025.10.6.1045.patch#ruadlist
 a2504 1
 ||gtmpx.com^$third-party
 a6720 1
 ||vqserve.com^$third-party
 a11763 1
 ||hh.ru/build/static/images/big-promo-
+a15803 2
+dtf.ru##.blocker__buttons
+dtf.ru##.blocker__description
 a16445 1
 frankmedia.ru##.floating-banner
 d17293 1
@@ -45,6 +48,8 @@ a26402 1
 @@||s3.wi-fi.ru/mtt/configs/sites/dtf.js|$xmlhttprequest,domain=dtf.ru
 a26409 1
 @@||ssp.rambler.ru/capirs_async.js|$xmlhttprequest,domain=dtf.ru
+a26618 1
+||dtf.ru/assets/Blocker-
 a27064 7
 ! суррогат
 dtf.ru##.right-sidebar div[style*="banner-height"] *
@@ -56,6 +61,8 @@ dtf.ru##.supbar--top:style(height: 100px !important; margin-top: -200px !importa
 d28694 1
 a28696 1
 dtf.ru,vc.ru##+js(abort-on-stack-trace, HTMLVideoElement.prototype.play, /index-)
+a28697 1
+vk.com,vk.ru##+js(abort-on-stack-trace, Object.prototype.dispatcher, fad.js)
 a28765 1
 rsload.net##+js(href-sanitizer, a[href^="https://fixti.ru/download.php?files="], ?files)
 a28846 1
@@ -67,6 +74,8 @@ dni.expert,dni.ru,kp.kg,kp.kz,kp.md,kp.ru,ladys.media,lifehacker.ru,mk.ru,ohotni
 d29003 1
 a29057 1
 click-or-die.ru##article:has(p:has-text(ERID)) a:style(pointer-events: none !important; color: inherit !important)
+a29314 1
+dtf.ru##+js(addEventListener-defuser, click, '', elements, a[href^="/"][data-router-link])
 a29324 4
 !#endif
 ! Mobile only

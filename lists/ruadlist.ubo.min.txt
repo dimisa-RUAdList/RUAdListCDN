@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 06 Oct 2025 12:55:44 +0000
-! Diff-Path: ../patches/2025.10.6.775.patch#ruadlist
+! Last modified: Mon, 06 Oct 2025 17:25:11 +0000
+! Diff-Path: ../patches/2025.10.6.1045.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -15804,6 +15804,8 @@ meteonova.ru#?#.block_top:-abp-has(> div:empty)
 meteonova.ru#?#.block_top:-abp-has(> div:empty) + div
 meteonova.ru#?#.block_top:-abp-has(> div:empty) + div + .block_bottom
 isport.ua##.block_top_banner
+dtf.ru##.blocker__buttons
+dtf.ru##.blocker__description
 armourbook.com#?#.blocklite:-abp-has(> div > [class]:-abp-contains(Реклама))
 pogodavtomske.ru#?#.blockm:-abp-has(> #sela)
 wotspeak.org##.blockmainkv
@@ -26627,6 +26629,7 @@ adblock.turtlecute.org##section ._bg-orange
 forums.overclockers.ru##tr > td[nowrap="nowrap"][style^="color: red;"][style$="font-weight: bold"]
 ||anivisual.net/back/scss.js
 ||csgohelp.ru/assets/app/js/checkIn.js
+||dtf.ru/assets/Blocker-
 ||electric-house.ru/forum/script_el.js
 ||fanforum.ru/uploads/set_resources_$script
 ||glav.su/js/libs/abd/abd.js
@@ -28713,6 +28716,7 @@ searchfloor.org##+js(abort-on-property-write, showHelpProjectModal)
 kakprosto.ru##+js(abort-on-property-write, window.yaProxy)
 dtf.ru,vc.ru##+js(abort-on-stack-trace, HTMLVideoElement.prototype.play, /index-)
 tvzvezda.ru##+js(abort-on-stack-trace, Object.prototype.autoplay, assets)
+vk.com,vk.ru##+js(abort-on-stack-trace, Object.prototype.dispatcher, fad.js)
 ya.ru##+js(abort-on-stack-trace, Object.prototype.loadAdvertScriptMode, /yastatic\.net/)
 shadowcore.ru##+js(abort-on-stack-trace, document.createElement, checkAboba)
 ai-next.ru##+js(abort-on-stack-trace, document.getElementById, /723-|ai-2-/)
@@ -29331,6 +29335,7 @@ gazeta.ru,lenta.ru,secretmag.ru,wmj.ru##iframe[src^="https://vp.rambler.ru/playe
 !#endif
 !#if env_mv3
 afisha.ru,autorambler.ru,championat.com,eda.ru,gazeta.ru,lenta.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,rambler.ru,wmj.ru##+js(abort-current-inline-script, dispatchEvent, zoomdecorate)
+dtf.ru##+js(addEventListener-defuser, click, '', elements, a[href^="/"][data-router-link])
 e.mail.ru##+js(no-setTimeout-if, '()=>n()', 50)
 e.mail.ru##+js(set-constant, Object.prototype.hasAdBlock, false)
 e.mail.ru#@#+js(set-constant, Object.prototype.hasAdBlock, null)
