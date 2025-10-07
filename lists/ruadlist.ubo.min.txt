@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 07 Oct 2025 08:34:48 +0000
-! Diff-Path: ../patches/2025.10.7.514.patch#ruadlist
+! Last modified: Tue, 07 Oct 2025 13:35:35 +0000
+! Diff-Path: ../patches/2025.10.7.815.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -3619,6 +3619,7 @@
 ||lytanon.pro^$third-party
 ||lyx.guru^$third-party
 ||lzbhby4aopbepr.ru^$third-party
+||m-31.ru^$third-party
 ||m-growninppcode.com^$third-party
 ||m-hub.info^$third-party
 ||m-setup.net^$third-party
@@ -19271,7 +19272,7 @@ forum.ru-board.com##[href^="postings.cgi?action=edit&forum=5&topic=51666"]:not([
 virpl.ru##[id$="-banner"]
 cools.biz,cools.dj,get-tune.cc,intermusic.name,iplayer.info,ipleer.fm,k1news.ru,kolesa.kz,market4game.ru,mp3iq.com,vmuzice.me,yellowpages.uz##[id*="Banner"]
 espreso.tv##[id*="ScriptRoot"]:not(.news-block-magick)
-football24.ua##[id*="VideoAdvWrapper"]
+football24.ua,zaxid.net##[id*="VideoAdvWrapper"]
 liveinternet.ru,livejournal.com##[id*="_R-A-"]
 kino-teatr.ru##[id*="_dobro"]
 makler.md##[id*="_wideBann"]
@@ -20664,9 +20665,9 @@ pravda.if.ua##div[class*="content-wrapper"] > [class*="share-container"] ~ [clas
 joinfo.ua##div[class*="content_ads"]
 livelib.ru##div[class*="context-ads-"]
 highload.tech,mc.today##div[class*="course-widget"]
+ren.tv##div[class*="customButtonsWrapper_"] > div
 fireman.club##div[class*="desktop_direct"]
 www.zoneofgames.ru##div[class*="dver"]
-ren.tv##div[class*="dzenFoxButtonsContainer"] > div[class^="root"]
 dltv.org##div[class*="erid"]
 superjob.ru##div[class*="f-test-vacancy-ad-context-"]
 prokuzbass.ru#?#div[class*="flex-grow"]:-abp-has(> .sticky > .adv)
@@ -20696,7 +20697,6 @@ sport-express.net,sport-express.ru##div[class*="right_col_banner"]
 svetlica-mama-blogger.ru##div[class*="sgpb-popup-"]
 hochu.tv##div[class*="sidebar"]
 1track.ru##div[class*="smartys"]
-ren.tv##div[class*="socialButtonsWrapper"] > div
 nur.kz##div[class*="sponsorship"]
 apest.ru##div[class*="sredstvo_container_group"]
 6sotok-dom.com,ant-top.ru,subsidii.net##div[class*="teaser"]
@@ -22198,7 +22198,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||news.mail.ru/-/*.js?
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
-||pikabu.ru/ajax/*?Qw43E=$xmlhttprequest
+||pikabu.ru/ajax/*?Qw53E=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
