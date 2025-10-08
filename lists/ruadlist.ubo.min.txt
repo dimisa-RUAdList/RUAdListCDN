@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 08 Oct 2025 14:29:59 +0000
-! Diff-Path: ../patches/2025.10.8.869.patch#ruadlist
+! Last modified: Wed, 08 Oct 2025 19:21:02 +0000
+! Diff-Path: ../patches/2025.10.8.1161.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -18477,6 +18477,7 @@ vedomosti.ru##.the-loader
 lifehacker.ru#?#.the-tv__observer:-abp-has(.lh-article-card-meta__partner)
 lifehacker.ru#?#.the-tv__observer:-abp-has(.lh-article-card-meta__promo)
 lifehacker.ru#?#.the-tv__observer:-abp-has(a[href*="/topics/shopping/"])
+lifehacker.ru#?#.the-tv__observer:-abp-has(a[href*="utm_"])
 shraibikus.com,topdaynews.ru##.theiaStickySidebar
 ukrs.com.ua##.theiaStickySidebar .widget_text
 1news.com.ua#?#.theiaStickySidebar > .text-html:-abp-has(> div > iframe[src="about:blank"])
@@ -20771,6 +20772,7 @@ auto.ru##div[class^="RecommendationsItem__ad-"]
 kanobu.ru#?#div[class^="Sidebar_sidebar_list"] > div[class]:-abp-has(> div > div > span:-abp-contains(Партнерский материал))
 igromania.ru,kanobu.ru##div[class^="TopPageBanner_wrap_"]
 yarnovosti.com##div[class^="_5"]
+t-j.ru##div[class^="_banner_"]
 domashnie-zagotovki.ru##div[class^="a7-btns"]
 igdz.ru##div[class^="ab-"][class$="-text"]
 u24.ua##div[class^="ab_premium_"]
@@ -25467,6 +25469,7 @@ zarulem.ws##td[style^="text-align:center;width:50%"]
 @@||online-stars.org^$generichide
 @@||onlinevideoconverter.com^$generichide
 @@||opensharing.org/img/images/$generichide
+@@||orfogrammka.ru/*/#/login$generichide
 @@||otzovik.com^$generichide
 @@||parnuxi.biz^$generichide
 @@||passport.i.ua^$generichide
