@@ -1,8 +1,8 @@
-diff name:ruadlist lines:46 checksum:01da07f519
+diff name:ruadlist lines:60 checksum:f906ba8d24
 d4 2
 a5 2
-! Last modified: Wed, 08 Oct 2025 04:30:55 +0000
-! Diff-Path: ../patches/2025.10.8.270.patch#ruadlist
+! Last modified: Wed, 08 Oct 2025 09:29:24 +0000
+! Diff-Path: ../patches/2025.10.8.569.patch#ruadlist
 a3621 1
 ||m-31.ru^$third-party
 d10047 1
@@ -20,6 +20,10 @@ a18339 1
 cq.ru##.steam-pay__ad
 a19162 1
 sport-express.net,sport-express.ru##[data-component="widget-bookmaker-rating"]
+a19220 1
+beeline.ru##[data-t-id="components-TopBanner"]
+a19259 1
+allboxing.ru##[href="https://allboxing.ru/rejting-kapperov"]
 d19271 1
 a19271 1
 football24.ua,zaxid.net##[id*="VideoAdvWrapper"]
@@ -34,7 +38,9 @@ vk.com,vk.ru##div[role="feed"] > article > div:not([class]) > div:only-child
 vk.com,vk.ru##div[role="feed"] > article > div[class]
 d22195 1
 a22195 1
-||pikabu.ru/ajax/*?Qw53E=$xmlhttprequest
+||pikabu.ru/ajax/*?Qw63E=$xmlhttprequest
+a26515 1
+delfi.ee##.ad-block-layer
 a26625 1
 ||dtf.ru/assets/Blocker-
 a28711 1
@@ -45,3 +51,11 @@ a29070 1
 click-or-die.ru##article:has(p:has-text(ERID)) a:style(pointer-events: none !important; color: inherit !important)
 a29327 1
 dtf.ru##+js(addEventListener-defuser, click, '', elements, a[href^="/"][data-router-link])
+d29407 1
+a29407 2
+||baeldung.com/*/library/dist/js/pro-recovery.
+||baeldung.com/*/library/dist/js/recovery.
+d31081 1
+d31100 1
+a31211 1
+/^https?:\/\/pikabu\.ru\/ajax\/[A-Za-z0-9]+\?[A-Za-z0-9]+=[0-9a-z-]+[0-9a-z]$/$xmlhttprequest,domain=pikabu.ru
