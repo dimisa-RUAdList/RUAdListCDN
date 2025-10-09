@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 09 Oct 2025 10:31:55 +0000
-! Diff-Path: ../patches/2025.10.9.631.patch#ruadlist
+! Last modified: Thu, 09 Oct 2025 15:37:59 +0000
+! Diff-Path: ../patches/2025.10.9.937.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -17329,6 +17329,9 @@ om1.ru##.news-grid > div[id^="first"]
 om1.ru##.news-grid > div[id^="rastyagka"]
 onliner.by##.news-incut_position_right
 gamemag.ru#?#.news-item-wrap > .news-item:-abp-has(> span:-abp-contains(Ad))
+thepage.ua#?#.news-list > .news-list__item:-abp-has(.advertising_material)
+thepage.ua#?#.news-list > .news-list__item:-abp-has(.company_news)
+thepage.ua#?#.news-list > .news-list__item:-abp-has(.partner_material)
 frankmedia.ru#?#.news-list section:-abp-has(> .card > .info .partners)
 zaxid.net##.news-list-col > .news-list
 onliner.by##.news-media__preview > a:not([href*="onliner.by/"]) > img
