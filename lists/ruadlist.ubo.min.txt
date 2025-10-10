@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 10 Oct 2025 11:23:07 +0000
-! Diff-Path: ../patches/2025.10.10.683.patch#ruadlist
+! Last modified: Fri, 10 Oct 2025 16:33:19 +0000
+! Diff-Path: ../patches/2025.10.10.993.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -14205,8 +14205,6 @@ dokfilm.maminforum.com###html-header > #obj
 goodgame.ru###html5player > div[style*="absolute"]
 root-nation.com###id-custom_banner
 rutr.life,rutracker.lib,rutracker.net,rutracker.org###idx-sidebar2 > div:not([id]):not([class])
-nnm-club.me,nnmclub.ro,nnmclub.to###iframe_overlay
-nnm-club.me,nnmclub.ro,nnmclub.to###iiframe
 batpic.com###imRunetkiPop
 penzavzglyad.ru###index-right > .col-border.col-1
 gazeta1.com#?##index_desktop > .row:-abp-has(> div > #span-title:-abp-contains(/^реклама|^партн/i))
@@ -16662,7 +16660,7 @@ landlord.ua##.head_img_parent
 forum.ixbt.com##.head_ulogin
 fvhm.ru,game-bomb.ucoz.ru##.header
 sm.news##.header #person:empty
-nnm-club.me,nnmclub.ro,nnmclub.to##.header .row2 tr:not(:last-child)
+nnm-club.me,nnmclub.ro,nnmclub.to##.header .row2 table[width="100%"] > tbody > tr > td > center
 liveinternet.ru##.header > .headerlinks
 dpchas.com.ua##.header > .sticky-top
 sovetromantica.com#?#.header--text:-abp-contains(Реклама)
@@ -20647,7 +20645,7 @@ peopletalk.ru,znaj.ua##div[class*="advertising"]
 odessa-life.od.ua##div[class*="ai-viewport-"]
 thequestion.ru##div[class*="annonser"]
 gorodvitebsk.by,kursktv.ru,open.ua,penza-press.ru##div[class*="baner"]
-1777.ru,19rus.info,19rusinfo.ru,1ul.ru,20minut.ua,2goroda.ru,365info.kz,3ys.ru,73online.ru,9tv.co.il,advis.ru,agronews.ua,agropolit.com,agroreview.com,agrotimes.net,autodmir.ru,avtodispetcher.ru,bakemono.ru,bel.ru,bezformata.com,bhub.com.ua,bon.ua,budport.com.ua,car.ru,cbonds.ru,champion.com.ua,codernet.ru,comments.ua,con-med.ru,cryptonewsua.com,cybersport.ru,echosevera.ru,elevatorist.com,epravda.com.ua,fatalgame.com,filmz.ru,fishingsib.ru,flamp.ru,food.ru,footballua.tv,forum-profit.ru,gameguru.ru,gecid.com,goodfon.ru,gorodvitebsk.by,gp.by,growhow.in.ua,haqqin.az,hunting.ru,industry-hunter.com,infpol.ru,investfunds.ru,ircity.ru,islam-today.ru,iz.ru,joborgame.ru,jut.su,k1news.ru,klavogonki.ru,knijky.ru,kt.kz,kurkul.com,kursktv.ru,laradiofm.ru,latifundist.com,livesport.ws,locals.md,medialeaks.ru,megatyumen.ru,menportal.info,myslo.ru,neboleem.net,news.ru,nmedic.info,nv-online.info,obyava.ua,okna.ua,penza-press.ru,polochka.net,povarenok.ru,ppt4web.ru,pravda.com.ua,pravoved.ru,primemusic.cc,profibeer.ru,prostatitanet.com,redfm.ru,relax-fm.ru,rg.ru,roscontrol.com,sibnet.ru,skachat-kino.fun,smolensk-i.ru,sovsport.ru,spanishrestaurant.ru,sport5.by,sportanalytic.com,sportguide.kiev.ua,start33.ru,superagronom.com,syzran-small.ru,tele.ru,tengriauto.kz,tengrinews.kz,tengrisport.kz,tengritravel.kz,the-flow.ru,thequestion.ru,thg.ru,tveda.ru,twentysix.ru,ufanotes.ru,valverus.info,vashurok.ru,veterinargid.ru,vikka.ua,vinnitsa.info,vklasse.online,vovka.su,vringe.com,vshkole.com,woman.ru,wonderzine.com,wowjp.net,xsport.ua,zagorod.spb.ru,zaim-profi.ru,zaryad.me,zebra-tv.ru,zemliak.com,zoohoz.ru,zorbasmedia.ru##div[class*="banner"]
+1777.ru,19rus.info,19rusinfo.ru,1ul.ru,20minut.ua,2goroda.ru,365info.kz,3ys.ru,73online.ru,9tv.co.il,advis.ru,agronews.ua,agropolit.com,agroreview.com,agrotimes.net,autodmir.ru,avtodispetcher.ru,bakemono.ru,bel.ru,bezformata.com,bhub.com.ua,bon.ua,budport.com.ua,car.ru,cbonds.ru,champion.com.ua,codernet.ru,comments.ua,con-med.ru,cryptonewsua.com,cybersport.ru,echosevera.ru,elevatorist.com,epravda.com.ua,fatalgame.com,filmz.ru,fishingsib.ru,flamp.ru,food.ru,footballua.tv,forum-profit.ru,gameguru.ru,gecid.com,goodfon.ru,gorodvitebsk.by,gp.by,growhow.in.ua,haqqin.az,hunting.ru,industry-hunter.com,infpol.ru,investfunds.ru,ircity.ru,islam-today.ru,iz.ru,joborgame.ru,jut.su,k1news.ru,klavogonki.ru,knijky.ru,kt.kz,kurkul.com,kursktv.ru,laradiofm.ru,latifundist.com,lifehacker.ru,livesport.ws,locals.md,medialeaks.ru,megatyumen.ru,menportal.info,myslo.ru,neboleem.net,news.ru,nmedic.info,nv-online.info,obyava.ua,okna.ua,penza-press.ru,polochka.net,povarenok.ru,ppt4web.ru,pravda.com.ua,pravoved.ru,primemusic.cc,profibeer.ru,prostatitanet.com,redfm.ru,relax-fm.ru,rg.ru,roscontrol.com,sibnet.ru,skachat-kino.fun,smolensk-i.ru,sovsport.ru,spanishrestaurant.ru,sport5.by,sportanalytic.com,sportguide.kiev.ua,start33.ru,superagronom.com,syzran-small.ru,tele.ru,tengriauto.kz,tengrinews.kz,tengrisport.kz,tengritravel.kz,the-flow.ru,thequestion.ru,thg.ru,tveda.ru,twentysix.ru,ufanotes.ru,valverus.info,vashurok.ru,veterinargid.ru,vikka.ua,vinnitsa.info,vklasse.online,vovka.su,vringe.com,vshkole.com,woman.ru,wonderzine.com,wowjp.net,xsport.ua,zagorod.spb.ru,zaim-profi.ru,zaryad.me,zebra-tv.ru,zemliak.com,zoohoz.ru,zorbasmedia.ru##div[class*="banner"]
 dressupmix.ru##div[class*="banner"]:not(.banner-vk)
 hh.ru##div[class*="banner-place"]
 bombardir.ru##div[class*="banner-placeholder"]
@@ -22205,7 +22203,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||news.mail.ru/-/*.js?
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
-||pikabu.ru/ajax/*?Qw73E=$xmlhttprequest
+||pikabu.ru/ajax/*?Qw83E=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -28264,6 +28262,7 @@ dzen.ru##[class*="CardRtb"]
 dzen.ru##[class*="card-rtb"]
 dzen.ru##[class*="desktop"] ~ [id*="teaser"]
 dzen.ru##[class*="dzen-desktop--flash-modal"]
+dzen.ru##[class^="dzen-desktop--main-page-"]
 dzen.ru##[id*="card-rtb"]
 dzen.ru##a[href*="://yandex.ru/an/count/"]
 dzen.ru##a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div
@@ -28273,9 +28272,9 @@ dzen.ru##div[class*="--corner-banner_"]
 dzen.ru##div[class*="__bannerContainer"]
 dzen.ru##div[class*="dzen-"][class*="-banner-"]
 dzen.ru##div[class*="dzen-desktop--top-sidebar-desktop-ad__root"]
-dzen.ru##div[class] > [id] > div[style*="important"]:style(padding-top: unset !important)
 dzen.ru##div[id*="splashscreen"]
 dzen.ru##div[style*="important"] div[class*="__main"]
+dzen.ru##html[class*="morda"] div[class] > [id] > div[style*="%"]:style(padding-top: unset !important)
 ! видео
 dzen.ru##div[class*="watch-page-content"] [aria-label] > div[id]
 ! статьи
@@ -28949,9 +28948,9 @@ kinokong.sk##+js(set-constant, Object.prototype.disableSelection, noopFunc)
 dzen.ru,frontend.vh.yandex.ru##+js(set-constant, Object.prototype.getAutoplay, noopFunc)
 dzen.ru##+js(set-constant, Object.prototype.getPlacement, undefined)
 shedevrum.ai##+js(set-constant, Object.prototype.getUaasConfig, undefined)
+dzen.ru##+js(set-constant, Object.prototype.initYaVersion, undefined)
 frontend.vh.yandex.ru##+js(set-constant, Object.prototype.initialAutoplay, null)
 dzen.ru##+js(set-constant, Object.prototype.isCustomBannerType, undefined)
-dzen.ru##+js(set-constant, Object.prototype.isTurboPage, undefined)
 rbc.ru,sportrbc.ru##+js(set-constant, Object.prototype.livetv-state, true)
 tenews.org.ua##+js(set-constant, Object.prototype.manualAutoplay_, null)
 vp.rambler.ru##+js(set-constant, Object.prototype.minPlayingVisibleHeight, noopFunc)
@@ -29053,13 +29052,13 @@ vk.com,vk.ru##.wall_module > div[id]:first-child > :matches-prop(innerHTML="/for
 24parik.*,parik24.*##+js(window-close-if, /adtag|creative_id/)
 dtf.ru,vc.ru##:matches-path(-erid-) .block-special-button
 dtf.ru,vc.ru##:matches-path(-erid-) a[href*="go.vc.ru"]:style(pointer-events: none !important; color: inherit !important)
-dzen.ru##:matches-path(/a/) [class^="content--article-"] [style^="opacity:"]
+dzen.ru##:matches-path(/a/) [class^="content--"] [style^="opacity:"]
 dzen.ru##:matches-path(/a/) [data-appid] > [itemscope] > div > div[id]
-dzen.ru##:matches-path(/a/) div:matches-attr(/[a-z0-9]/=article-bottom-block) > [class*="social"] ~ div
+dzen.ru##:matches-path(/a/) div:matches-attr(/[a-z0-9]/=article-bottom-block) > [class] ~ div:not([class]):not([id])
 dzen.ru##:matches-path(/articles) div:has(> article > [class*="adBox"])
-dzen.ru##:matches-path(/articles) div:has(> article > div > [class*="image"]:empty)
 ozon.ru##:matches-path(/kursk-sertifikaty) [data-lcp-name*="anner-"]:style(display: block !important)
 ozon.ru##:matches-path(/kursk-sertifikaty) div[data-widget="banner"]:style(display: block !important)
+dzen.ru##:matches-path(articles) div[class^="article-feed--"] > div:matches-attr(/./=/card$/) ~ div[id]
 forum.ru-board.com##:matches-path(topic=51666) .dats > a[href="javascript:pasteN('AlAvis')"] > b:style(color: #00bfff !important)
 pronpic.org#@#:not(obhod-adblocka)
 @@/fuckadblock.$script,domain=aniboom.one
@@ -29085,7 +29084,7 @@ online-fix.me##a.btn-success[href^="https://online-fix.me/ext/"]:remove-class(bt
 trupornolabs.org#@#a[href*="://pronpic.org/"]
 online-fix.me##a[href*=":2053"]:remove-class(btn)
 aniu.ru,liveball.*##+js(no-setInterval-if, debugger)
-dzen.ru##article:has(> div:matches-attr(/[a-z0-9]/=/direct|mytarget/))
+dzen.ru##article:has(> div:matches-attr(/[a-z0-9]/=/_ad-yp|direct|mytarget/))
 click-or-die.ru##article:has(p:has-text(ERID)) a:style(pointer-events: none !important; color: inherit !important)
 autonews.co.ua,in-poland.com,liveball.*,ukrainianwall.com##+js(addEventListener-defuser, /contextmenu|copy|keydown|selectstart/)
 kp.kg,kp.kz,kp.md,kp.ru##body > #app div:matches-css(background-color: rgb(225, 231, 235))
@@ -29105,6 +29104,8 @@ sawlive.tv##body[onclick^="closeMyAd"] > div[id][style*="position"][style*="back
 cosplay-porn.*,fap-guru.*,mult-porno.*,sex-studentki.*##+js(remove-node-text, script, /initTeasers|initVads/)
 cosplay-porn.*,fap-guru.*,mult-porno.*,sex-studentki.*##+js(set-cookie-reload, is_age_verified, 1)
 disk.yandex.ru,disk.yandex.*##+js(remove-class, has-fullscreen-banner|has-right-direct, .public__root, stay)
+dzen.ru##div:matches-attr(/./=dzenpro-banner)
+dzen.ru##div:matches-attr(/[a-z0-9]/=/_ad-yp|direct|mytarget/)
 dzen.ru##div:matches-attr(/data-[a-z0-9]/=bottom-ad)
 cq.ru##div[class]:not([class*="-"]):not([class*="_"]):matches-css(margin-top: 16px)
 ozon.ru##div[data-widget="banner"]:matches-path(/my/reviews/promo):style(display: block !important)
