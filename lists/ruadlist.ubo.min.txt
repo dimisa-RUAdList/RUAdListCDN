@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 10 Oct 2025 16:33:19 +0000
-! Diff-Path: ../patches/2025.10.10.993.patch#ruadlist
+! Last modified: Fri, 10 Oct 2025 21:22:42 +0000
+! Diff-Path: ../patches/2025.10.10.1282.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -17971,6 +17971,7 @@ newsua.ru##.rsya
 bitshare.link##.rtbCont
 rusvesna.su##.rtecenter > a[href][target="_blank"]
 alkogolu.net,cardiologiya.com,prizvanie.su,sustav.info##.rtiz
+habr.com##.rtk-cod-special
 seriallife.ru##.rtp-wrapper
 foodretail.ru##.rttr_bnr
 cheboksary.ws##.ru200200
@@ -18224,6 +18225,8 @@ podillyanews.com##.similar-news
 novostiua.net##.simple-banner
 kurs.if.ua##.simple-top-block
 lifehacker.ru##.single-article > .widgets-renderer
+lifehacker.ru#?#.single-article__content:-abp-has(.article-card__meta a[href*="/topics/relax/books/"]) article > .core-buttons
+lifehacker.ru#?#.single-article__content:-abp-has(.article-card__meta a[href*="/topics/relax/books/"]) article a[target="_blank"][rel*="sponsored"] > img
 novadoba.com.ua##.single-bottom-advertising-block
 pravda.if.ua##.single-post-6__author
 hi-tech.ua#?#.single-post:-abp-has(.sam-pro-container)
