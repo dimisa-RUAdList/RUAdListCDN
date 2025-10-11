@@ -1,8 +1,8 @@
-diff name:ruadlist lines:89 checksum:9c4aa77df9
+diff name:ruadlist lines:95 checksum:19634e3db0
 d4 2
 a5 2
-! Last modified: Sat, 11 Oct 2025 07:21:50 +0000
-! Diff-Path: ../patches/2025.10.11.441.patch#ruadlist
+! Last modified: Sat, 11 Oct 2025 12:48:30 +0000
+! Diff-Path: ../patches/2025.10.11.768.patch#ruadlist
 d10149 2
 a10150 2
 my.rv.ua,ogo.ua##.spu-bg
@@ -20,6 +20,8 @@ d13853 1
 d13856 1
 a13856 1
 namba.tj###banners-top
+a15027 1
+wtftime.ru##._recomment_container
 d15552 1
 a15552 1
 amurmedia.ru,angarskmedia.ru,chitamedia.su,chukotkamedia.ru,eaomedia.ru,irkutskmedia.ru,job.ru,kamchatkamedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,magadanmedia.ru,molbuk.ua,nakhodka.media,newsvl.ru,nord-news.ru,novostirostov.ru,omskmedia.su,priamurmedia.ru,primadonna.media,primamedia.ru,sakhalinmedia.ru,sevastopolmedia.ru,shedevrum.ai,sochimedia.su,stavropol.media,stolicamedia.ru,tayga.info,tet.tv,ulanmedia.ru,unian.info,unian.net,unian.ua,ussurmedia.ru,vctr.media,wallnews.org,yakutiamedia.ru,yugopolis.ru##.banner-container
@@ -45,6 +47,7 @@ lifehacker.ru#?#.single-article__content:-abp-has(.article-card__meta a[href*="/
 d18422 2
 a18479 1
 lifehacker.ru#?#.the-tv__observer:-abp-has(a[href*="utm_"])
+d18960 1
 d19404 1
 d20642 1
 a20642 1
@@ -52,9 +55,12 @@ a20642 1
 a20773 1
 t-j.ru##div[class^="_banner_"]
 d21286 1
+d21407 1
 a21440 1
 ogo.ua##div[style="margin-top:15px; text-align:center;"]
 d21698 1
+a21777 1
+wtftime.ru##li.entity[style="padding: 0; margin-bottom: 10px; overflow: hidden; border-right: 0;"]
 d21814 1
 d22051 1
 d22199 1
@@ -87,4 +93,4 @@ a29078 1
 dzen.ru##article:has(> div:matches-attr(/[a-z0-9]/=/_ad-yp|direct|mytarget/))
 a29097 2
 dzen.ru##div:matches-attr(/./=dzenpro-banner)
-dzen.ru##div:matches-attr(/[a-z0-9]/=/_ad-yp|direct|mytarget/)
+dzen.ru##div:matches-attr(/[a-z0-9]/=/_ad-yp/)
