@@ -1,8 +1,8 @@
-diff name:ruadlist lines:112 checksum:ede2b9e29a
+diff name:ruadlist lines:128 checksum:2326ef7d4d
 d4 2
 a5 2
-! Last modified: Mon, 13 Oct 2025 09:32:14 +0000
-! Diff-Path: ../patches/2025.10.13.572.patch#ruadlist
+! Last modified: Mon, 13 Oct 2025 14:30:00 +0000
+! Diff-Path: ../patches/2025.10.13.870.patch#ruadlist
 d10149 2
 a10150 2
 my.rv.ua,ogo.ua##.spu-bg
@@ -35,12 +35,16 @@ a15552 1
 amurmedia.ru,angarskmedia.ru,chitamedia.su,chukotkamedia.ru,eaomedia.ru,irkutskmedia.ru,job.ru,kamchatkamedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,magadanmedia.ru,molbuk.ua,nakhodka.media,newsvl.ru,nord-news.ru,novostirostov.ru,omskmedia.su,priamurmedia.ru,primadonna.media,primamedia.ru,sakhalinmedia.ru,sevastopolmedia.ru,shedevrum.ai,sochimedia.su,stavropol.media,stolicamedia.ru,tayga.info,tet.tv,ulanmedia.ru,unian.info,unian.net,unian.ua,ussurmedia.ru,vctr.media,wallnews.org,yakutiamedia.ru,yugopolis.ru##.banner-container
 a15576 1
 ogo.ua##.banner-strip
+a16040 1
+meest.com##.cl-floating-box
 a16379 1
 appleinsider.ru#?#.entry-content > p:-abp-has(> code > [href="https://t.me/sunduk_aliexpress"])
 d16417 1
 d16661 1
 a16661 1
 nnm-club.me,nnmclub.ro,nnmclub.to##.header .row2 table[width="100%"] > tbody > tr > td > center
+a16668 1
+habr.com##.header-banner-wrapper
 d16899 1
 a17195 1
 molbuk.ua#?#.mid_col > b:-abp-contains(РЕКЛАМА)
@@ -60,6 +64,8 @@ a18828 1
 nsn.net.ua#?#.widget_custom_html:-abp-has(.recreativ)
 d18964 1
 d19408 1
+a20535 1
+habr.com##div.tm-bordered-card:empty
 d20646 1
 a20646 1
 1777.ru,19rus.info,19rusinfo.ru,1ul.ru,20minut.ua,2goroda.ru,365info.kz,3ys.ru,73online.ru,9tv.co.il,advis.ru,agronews.ua,agropolit.com,agroreview.com,agrotimes.net,autodmir.ru,avtodispetcher.ru,bakemono.ru,bel.ru,bezformata.com,bhub.com.ua,bon.ua,budport.com.ua,car.ru,cbonds.ru,champion.com.ua,codernet.ru,comments.ua,con-med.ru,cryptonewsua.com,cybersport.ru,echosevera.ru,elevatorist.com,epravda.com.ua,fatalgame.com,filmz.ru,fishingsib.ru,flamp.ru,food.ru,footballua.tv,forum-profit.ru,gameguru.ru,gecid.com,goodfon.ru,gorodvitebsk.by,gp.by,growhow.in.ua,haqqin.az,hunting.ru,industry-hunter.com,infpol.ru,investfunds.ru,ircity.ru,islam-today.ru,iz.ru,joborgame.ru,jut.su,k1news.ru,klavogonki.ru,knijky.ru,kt.kz,kurkul.com,kursktv.ru,laradiofm.ru,latifundist.com,lifehacker.ru,livesport.ws,locals.md,medialeaks.ru,megatyumen.ru,menportal.info,myslo.ru,neboleem.net,news.ru,nmedic.info,nv-online.info,obyava.ua,okna.ua,penza-press.ru,polochka.net,povarenok.ru,ppt4web.ru,pravda.com.ua,pravoved.ru,primemusic.cc,profibeer.ru,prostatitanet.com,redfm.ru,relax-fm.ru,rg.ru,roscontrol.com,sibnet.ru,skachat-kino.fun,smolensk-i.ru,sovsport.ru,spanishrestaurant.ru,sport5.by,sportanalytic.com,sportguide.kiev.ua,start33.ru,superagronom.com,syzran-small.ru,tele.ru,tengriauto.kz,tengrinews.kz,tengrisport.kz,tengritravel.kz,the-flow.ru,thequestion.ru,thg.ru,tveda.ru,twentysix.ru,ufanotes.ru,valverus.info,vashurok.ru,veterinargid.ru,vikka.ua,vinnitsa.info,vklasse.online,vovka.su,vringe.com,vshkole.com,woman.ru,wonderzine.com,wowjp.net,xsport.ua,zagorod.spb.ru,zaim-profi.ru,zaryad.me,zebra-tv.ru,zemliak.com,zoohoz.ru,zorbasmedia.ru##div[class*="banner"]
@@ -93,6 +99,10 @@ dzen.ru##[class^="dzen-desktop--main-page-"]
 d28272 1
 a28274 1
 dzen.ru##html[class*="morda"] div[class] > [id] > div[style*="%"]:style(padding-top: unset !important)
+a28776 1
+e.mail.ru,mail.rambler.ru,mail.yandex.ru,octavius.mail.ru##+js(href-sanitizer, a[href*=".mckx.ru/"], ?u)
+a28795 1
+e.mail.ru,mail.rambler.ru,mail.yandex.ru,octavius.mail.ru##+js(href-sanitizer, a[href^="https://robot.mos.ru/"], ?url)
 a28947 1
 dzen.ru##+js(set-constant, Object.prototype.initYaVersion, undefined)
 d28950 1
@@ -111,3 +121,9 @@ dzen.ru##article:has(> div:matches-attr(/[a-z0-9]/=/_ad-yp|direct|mytarget/))
 a29103 2
 dzen.ru##div:matches-attr(/./=dzenpro-banner)
 dzen.ru##div:matches-attr(/[a-z0-9]/=/_ad-yp/)
+d29216 2
+a29217 2
+mail.ru##.tv-widget > [class^="vk-video"]
+mail.ru##.tv-widget > [class^="vk-video"]:remove()
+a29243 1
+e.mail.ru,octavius.mail.ru##+js(set-attr, .html-fishing a, target, true)

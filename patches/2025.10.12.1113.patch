@@ -1,8 +1,24 @@
-diff name:ruadlist lines:7 checksum:ede2b9e29a
+diff name:ruadlist lines:23 checksum:2326ef7d4d
 d4 2
 a5 2
-! Last modified: Mon, 13 Oct 2025 09:32:14 +0000
-! Diff-Path: ../patches/2025.10.13.572.patch#ruadlist
+! Last modified: Mon, 13 Oct 2025 14:30:00 +0000
+! Diff-Path: ../patches/2025.10.13.870.patch#ruadlist
+a16042 1
+meest.com##.cl-floating-box
+a16670 1
+habr.com##.header-banner-wrapper
 d16901 1
+a20538 1
+habr.com##div.tm-bordered-card:empty
 a20686 1
 esports.ru##div[class*="js-present-"]
+a28782 1
+e.mail.ru,mail.rambler.ru,mail.yandex.ru,octavius.mail.ru##+js(href-sanitizer, a[href*=".mckx.ru/"], ?u)
+a28801 1
+e.mail.ru,mail.rambler.ru,mail.yandex.ru,octavius.mail.ru##+js(href-sanitizer, a[href^="https://robot.mos.ru/"], ?url)
+d29224 2
+a29225 2
+mail.ru##.tv-widget > [class^="vk-video"]
+mail.ru##.tv-widget > [class^="vk-video"]:remove()
+a29251 1
+e.mail.ru,octavius.mail.ru##+js(set-attr, .html-fishing a, target, true)

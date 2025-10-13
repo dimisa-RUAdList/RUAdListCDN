@@ -1,8 +1,8 @@
-diff name:ruadlist lines:74 checksum:ede2b9e29a
+diff name:ruadlist lines:90 checksum:2326ef7d4d
 d4 2
 a5 2
-! Last modified: Mon, 13 Oct 2025 09:32:14 +0000
-! Diff-Path: ../patches/2025.10.13.572.patch#ruadlist
+! Last modified: Mon, 13 Oct 2025 14:30:00 +0000
+! Diff-Path: ../patches/2025.10.13.870.patch#ruadlist
 d10149 2
 a10150 2
 my.rv.ua,ogo.ua##.spu-bg
@@ -33,7 +33,11 @@ a15553 1
 amurmedia.ru,angarskmedia.ru,chitamedia.su,chukotkamedia.ru,eaomedia.ru,irkutskmedia.ru,job.ru,kamchatkamedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,magadanmedia.ru,molbuk.ua,nakhodka.media,newsvl.ru,nord-news.ru,novostirostov.ru,omskmedia.su,priamurmedia.ru,primadonna.media,primamedia.ru,sakhalinmedia.ru,sevastopolmedia.ru,shedevrum.ai,sochimedia.su,stavropol.media,stolicamedia.ru,tayga.info,tet.tv,ulanmedia.ru,unian.info,unian.net,unian.ua,ussurmedia.ru,vctr.media,wallnews.org,yakutiamedia.ru,yugopolis.ru##.banner-container
 a15577 1
 ogo.ua##.banner-strip
+a16041 1
+meest.com##.cl-floating-box
 d16419 1
+a16670 1
+habr.com##.header-banner-wrapper
 d16901 1
 a17197 1
 molbuk.ua#?#.mid_col > b:-abp-contains(РЕКЛАМА)
@@ -48,6 +52,8 @@ a18833 1
 nsn.net.ua#?#.widget_custom_html:-abp-has(.recreativ)
 d18969 1
 d19413 1
+a20540 1
+habr.com##div.tm-bordered-card:empty
 a20688 1
 esports.ru##div[class*="js-present-"]
 d21296 1
@@ -70,6 +76,16 @@ gazeta.ru##div[id^="block_pad_id"]
 a27733 2
 ogo.ua##.ast-below-header-bar .site-below-header-wrap:style(min-height: 0 !important)
 ! ---
+a28782 1
+e.mail.ru,mail.rambler.ru,mail.yandex.ru,octavius.mail.ru##+js(href-sanitizer, a[href*=".mckx.ru/"], ?u)
+a28801 1
+e.mail.ru,mail.rambler.ru,mail.yandex.ru,octavius.mail.ru##+js(href-sanitizer, a[href^="https://robot.mos.ru/"], ?url)
 d29111 1
 a29111 1
 dzen.ru##div:matches-attr(/[a-z0-9]/=/_ad-yp/)
+d29224 2
+a29225 2
+mail.ru##.tv-widget > [class^="vk-video"]
+mail.ru##.tv-widget > [class^="vk-video"]:remove()
+a29251 1
+e.mail.ru,octavius.mail.ru##+js(set-attr, .html-fishing a, target, true)
