@@ -1,8 +1,8 @@
-diff name:ruadlist lines:125 checksum:644c532bde
+diff name:ruadlist lines:146 checksum:cefc2664ea
 d4 2
 a5 2
-! Last modified: Mon, 13 Oct 2025 19:19:59 +0000
-! Diff-Path: ../patches/2025.10.13.1159.patch#ruadlist
+! Last modified: Tue, 14 Oct 2025 01:58:49 +0000
+! Diff-Path: ../patches/2025.10.14.118.patch#ruadlist
 d10149 2
 a10150 2
 my.rv.ua,ogo.ua##.spu-bg
@@ -37,11 +37,17 @@ ogo.ua##.banner-strip
 a16043 1
 meest.com##.cl-floating-box
 d16421 1
+d16558 1
+a16558 1
+dok-film.net,howdyho.net##.g-ads
 d16665 1
 a16665 1
 nnm-club.me,nnmclub.ro,nnmclub.to##.header .row2 table[width="100%"] > tbody > tr > td > center
 a16672 1
 habr.com##.header-banner-wrapper
+d16817 1
+a16817 1
+howdyho.net#?#.inner > .default:-abp-has(> header > h1:-abp-contains(PEKЛAМA))
 d16903 1
 a17199 1
 molbuk.ua#?#.mid_col > b:-abp-contains(РЕКЛАМА)
@@ -80,6 +86,21 @@ d22060 1
 d22208 1
 a22208 1
 ||pikabu.ru/ajax/*?Qw83E=$xmlhttprequest
+d22214 8
+a22221 9
+howdyho.net#@#.g-ads
+howdyho.net##.g-ads > header > h2
+howdyho.net##.interesting_block_links::before
+@@||yandex.ru/ads/meta/*?target-ref=$xmlhttprequest,domain=howdyho.net
+@@||yandex.ru/ads/system/context.js|$script,domain=howdyho.net
+@@||yastatic.net/*-bundles/*.js|$script,domain=howdyho.net
+howdyho.net##[data-name="adWrapper"]
+howdyho.net##div[class^="csr-uniq"]
+howdyho.net#@#div[id^="yandex_rtb"]
+d22223 2
+a22224 2
+||yandex.$domain=howdyho.net
+||yastatic.$domain=howdyho.net
 d23085 1
 a23085 1
 gazeta.ru,letidor.ru,moslenta.ru,passion.ru,quto.ru##div[class*="billboard"]
