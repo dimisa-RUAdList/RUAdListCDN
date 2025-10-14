@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 14 Oct 2025 10:31:07 +0000
-! Diff-Path: ../patches/2025.10.14.631.patch#ruadlist
+! Last modified: Tue, 14 Oct 2025 15:29:55 +0000
+! Diff-Path: ../patches/2025.10.14.929.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22204,7 +22204,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||news.mail.ru/-/*.js?
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
-||pikabu.ru/ajax/*?Qw83E=$xmlhttprequest
+||pikabu.ru/ajax/*?o7cJs=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -28806,6 +28806,7 @@ vc.ru##+js(href-sanitizer, a[href^="https://go.2038.pro/"][href*="?dl="], ?dl)
 pikabu.ru##+js(href-sanitizer, a[href^="https://pikabu.ru/"][href*="?u=http"], ?u)
 e.mail.ru,mail.rambler.ru,mail.yandex.ru,octavius.mail.ru##+js(href-sanitizer, a[href^="https://robot.mos.ru/"], ?url)
 nsportal.ru##+js(href-sanitizer, a[href^="https://www.google.com/url?q="])
+e.mail.ru,mail.rambler.ru,mail.yandex.ru,octavius.mail.ru##+js(href-sanitizer, a[href^="https://www.gosuslugi.ru/ref?t="], ?to)
 youtube.com##+js(href-sanitizer, a[href^="https://www.youtube.com/redirect?event="][href*="&q=http"], ?q)
 uma.media##+js(json-prune, appearance.extended_auto_start)
 ivanovonews.ru##+js(json-prune, banner.ytcode)
