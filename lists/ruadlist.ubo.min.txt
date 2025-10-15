@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 15 Oct 2025 06:39:17 +0000
-! Diff-Path: ../patches/2025.10.15.399.patch#ruadlist
+! Last modified: Wed, 15 Oct 2025 11:23:12 +0000
+! Diff-Path: ../patches/2025.10.15.683.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21390,6 +21390,7 @@ mastergrad.com##div[onclick*="Кликнул по рекламе"]
 delphimaster.net##div[onclick^="onclickRight"]
 vk.com,vk.ru##div[role="feed"] > article > div:not([class]) > div:only-child
 vk.com,vk.ru##div[role="feed"] > article > div[class]
+vk.com,vk.ru#?#div[role="feed"] > article:-abp-has(> div [class^="AdBlockProtector__noVisible--"])
 mega-tracker.net##div[style$="#CCCCCC;"]
 360.ru##div[style$="250px;"]
 mobiledevice.ru##div[style$="468px;"]
@@ -28730,7 +28731,7 @@ searchfloor.org##+js(abort-on-property-write, showHelpProjectModal)
 kakprosto.ru##+js(abort-on-property-write, window.yaProxy)
 dtf.ru,vc.ru##+js(abort-on-stack-trace, HTMLVideoElement.prototype.play, /index-)
 tvzvezda.ru##+js(abort-on-stack-trace, Object.prototype.autoplay, assets)
-vk.com,vk.ru##+js(abort-on-stack-trace, Object.prototype.dispatcher, fad.js)
+vk.com,vk.ru##+js(abort-on-stack-trace, Object.prototype.dispatcher, /chunks/9635)
 ya.ru##+js(abort-on-stack-trace, Object.prototype.loadAdvertScriptMode, /yastatic\.net/)
 shadowcore.ru##+js(abort-on-stack-trace, document.createElement, checkAboba)
 ai-next.ru##+js(abort-on-stack-trace, document.getElementById, /723-|ai-2-/)

@@ -1,8 +1,8 @@
-diff name:ruadlist lines:47 checksum:a4ea49e997
+diff name:ruadlist lines:52 checksum:20a15c6c5f
 d4 2
 a5 2
-! Last modified: Wed, 15 Oct 2025 06:39:17 +0000
-! Diff-Path: ../patches/2025.10.15.399.patch#ruadlist
+! Last modified: Wed, 15 Oct 2025 11:23:12 +0000
+! Diff-Path: ../patches/2025.10.15.683.patch#ruadlist
 a16042 1
 meest.com##.cl-floating-box
 d16556 1
@@ -15,6 +15,8 @@ a16815 1
 howdyho.net#?#.inner > .default:-abp-has(> header > h1:-abp-contains(PEKЛAМA))
 a20537 1
 habr.com##div.tm-bordered-card:empty
+a21389 1
+vk.com,vk.ru#?#div[role="feed"] > article:-abp-has(> div [class^="AdBlockProtector__noVisible--"])
 d22204 1
 a22204 1
 ||pikabu.ru/ajax/*?o7cJs=$xmlhttprequest
@@ -34,6 +36,9 @@ a22220 2
 ||yandex.$domain=howdyho.net
 ||yastatic.$domain=howdyho.net
 d25478 1
+d28730 1
+a28730 1
+vk.com,vk.ru##+js(abort-on-stack-trace, Object.prototype.dispatcher, /chunks/9635)
 a28782 1
 e.mail.ru,mail.rambler.ru,mail.yandex.ru,octavius.mail.ru##+js(href-sanitizer, a[href*=".mckx.ru/"], ?u)
 a28801 1
