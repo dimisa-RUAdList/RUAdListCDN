@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 16 Oct 2025 07:26:41 +0000
-! Diff-Path: ../patches/2025.10.16.446.patch#ruadlist
+! Last modified: Thu, 16 Oct 2025 12:57:22 +0000
+! Diff-Path: ../patches/2025.10.16.777.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22205,7 +22205,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||news.mail.ru/-/*.js?
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
-||pikabu.ru/ajax/*?o7cJs=$xmlhttprequest
+||pikabu.ru/ajax/*?x7gDe=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -28253,6 +28253,7 @@ ya.ru##.reasoning-section
 ya.ru##[id*="feed"][id*="_"]
 ya.ru##[id^="ryt"][id*="fe"]
 ya.ru##html[class*="_informers"] aside ~ div[style]
+ya.ru##html[class*="_reasoning"] aside ~ div[style]
 ! афиша
 afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.uz##div[class$="-banner"]
 afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.uz##div[data-bem*="height"][data-bem*="R-A-"]
@@ -29327,6 +29328,7 @@ www.kinopoisk.ru##div[style="width: 100%; height: 249px;"]
 ! Фоксо-специфичные случаи >
 !#if env_firefox
 sports.ru##+js(cookie-remover, aablc)
+ya.ru#@#+js(remove-node-text, div, 'ad-mark__b-unit-wrapper')
 dtf.ru,vc.ru##+js(set-constant, HTMLVideoElement.prototype.autoplay, {})
 @@$cname,domain=360tv.ru|3sat.de|innal.top|kyiv.ua|sports.ru|tosdr.org
 ndelo.ru##^.js-login > input
@@ -29339,6 +29341,8 @@ otzovik.com##^script:has-text(an.yan)
 hvylya.net,i.ua,ivona.ua,kriminal.tv,meteofor.com.ua,mport.ua,nv.ua,zv.zp.ua##^script:has-text(attachShadow)
 www.ukr.net##^script:has-text(znc|track)
 eurointegration.com.ua,pravda.com.ua,sportanalytic.com##^script[onload*="error-report.com"]
+ya.ru##div[style]:matches-prop(innerText="/РЕКЛАМА/")
+ya.ru##div[style]:matches-prop(innerText="/РЕКЛАМА/"):remove()
 gazeta.ru,lenta.ru,secretmag.ru,wmj.ru##iframe[src^="https://vp.rambler.ru/player/"] ~ svg
 gazeta.ru,lenta.ru,secretmag.ru,wmj.ru##iframe[src^="https://vp.rambler.ru/player/"]:style(position: relative !important)
 ||vp.rambler.ru/player/$csp=media-src 'self',domain=championat.com|championat.ru|lenta.ru|gazeta.ru|rambler.ru|~vp.rambler.ru|secretmag.ru|wmj.ru

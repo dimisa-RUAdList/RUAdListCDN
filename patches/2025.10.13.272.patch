@@ -1,8 +1,8 @@
-diff name:ruadlist lines:57 checksum:9ffe687fc4
+diff name:ruadlist lines:64 checksum:f4d4f80376
 d4 2
 a5 2
-! Last modified: Thu, 16 Oct 2025 07:26:41 +0000
-! Diff-Path: ../patches/2025.10.16.446.patch#ruadlist
+! Last modified: Thu, 16 Oct 2025 12:57:22 +0000
+! Diff-Path: ../patches/2025.10.16.777.patch#ruadlist
 a16042 1
 meest.com##.cl-floating-box
 d16556 1
@@ -19,7 +19,7 @@ a21389 1
 vk.com,vk.ru#?#div[role="feed"] > article:-abp-has(> div [class^="AdBlockProtector__noVisible--"])
 d22204 1
 a22204 1
-||pikabu.ru/ajax/*?o7cJs=$xmlhttprequest
+||pikabu.ru/ajax/*?x7gDe=$xmlhttprequest
 d22210 8
 a22217 9
 howdyho.net#@#.g-ads
@@ -36,6 +36,8 @@ a22220 2
 ||yandex.$domain=howdyho.net
 ||yastatic.$domain=howdyho.net
 d25478 1
+a28251 1
+ya.ru##html[class*="_reasoning"] aside ~ div[style]
 d28730 1
 a28730 1
 vk.com,vk.ru##+js(abort-on-stack-trace, Object.prototype.dispatcher, /chunks/9635)
@@ -56,3 +58,8 @@ mail.ru##.tv-widget > [class^="vk-video"]
 mail.ru##.tv-widget > [class^="vk-video"]:remove()
 a29251 1
 e.mail.ru,octavius.mail.ru##+js(set-attr, .html-fishing a, target, true)
+a29320 1
+ya.ru#@#+js(remove-node-text, div, 'ad-mark__b-unit-wrapper')
+a29332 2
+ya.ru##div[style]:matches-prop(innerText="/РЕКЛАМА/")
+ya.ru##div[style]:matches-prop(innerText="/РЕКЛАМА/"):remove()

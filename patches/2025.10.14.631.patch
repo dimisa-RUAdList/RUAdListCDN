@@ -1,14 +1,16 @@
-diff name:ruadlist lines:20 checksum:9ffe687fc4
+diff name:ruadlist lines:27 checksum:f4d4f80376
 d4 2
 a5 2
-! Last modified: Thu, 16 Oct 2025 07:26:41 +0000
-! Diff-Path: ../patches/2025.10.16.446.patch#ruadlist
+! Last modified: Thu, 16 Oct 2025 12:57:22 +0000
+! Diff-Path: ../patches/2025.10.16.777.patch#ruadlist
 a21392 1
 vk.com,vk.ru#?#div[role="feed"] > article:-abp-has(> div [class^="AdBlockProtector__noVisible--"])
 d22207 1
 a22207 1
-||pikabu.ru/ajax/*?o7cJs=$xmlhttprequest
+||pikabu.ru/ajax/*?x7gDe=$xmlhttprequest
 d25482 1
+a28255 1
+ya.ru##html[class*="_reasoning"] aside ~ div[style]
 d28734 1
 a28734 1
 vk.com,vk.ru##+js(abort-on-stack-trace, Object.prototype.dispatcher, /chunks/9635)
@@ -19,3 +21,8 @@ e.mail.ru,mail.rambler.ru,mail.yandex.ru,octavius.mail.ru##+js(href-sanitizer, a
 a28808 1
 e.mail.ru,mail.rambler.ru,mail.yandex.ru,octavius.mail.ru##+js(href-sanitizer, a[href^="https://www.gosuslugi.ru/ref?t="], ?to)
 d28887 1
+a29327 1
+ya.ru#@#+js(remove-node-text, div, 'ad-mark__b-unit-wrapper')
+a29339 2
+ya.ru##div[style]:matches-prop(innerText="/РЕКЛАМА/")
+ya.ru##div[style]:matches-prop(innerText="/РЕКЛАМА/"):remove()

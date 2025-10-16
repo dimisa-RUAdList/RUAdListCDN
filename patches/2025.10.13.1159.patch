@@ -1,8 +1,8 @@
-diff name:ruadlist lines:41 checksum:9ffe687fc4
+diff name:ruadlist lines:48 checksum:f4d4f80376
 d4 2
 a5 2
-! Last modified: Thu, 16 Oct 2025 07:26:41 +0000
-! Diff-Path: ../patches/2025.10.16.446.patch#ruadlist
+! Last modified: Thu, 16 Oct 2025 12:57:22 +0000
+! Diff-Path: ../patches/2025.10.16.777.patch#ruadlist
 d16557 1
 a16557 1
 dok-film.net,howdyho.net##.g-ads
@@ -13,7 +13,7 @@ a21392 1
 vk.com,vk.ru#?#div[role="feed"] > article:-abp-has(> div [class^="AdBlockProtector__noVisible--"])
 d22207 1
 a22207 1
-||pikabu.ru/ajax/*?o7cJs=$xmlhttprequest
+||pikabu.ru/ajax/*?x7gDe=$xmlhttprequest
 d22213 8
 a22220 9
 howdyho.net#@#.g-ads
@@ -30,6 +30,8 @@ a22223 2
 ||yandex.$domain=howdyho.net
 ||yastatic.$domain=howdyho.net
 d25481 1
+a28254 1
+ya.ru##html[class*="_reasoning"] aside ~ div[style]
 d28733 1
 a28733 1
 vk.com,vk.ru##+js(abort-on-stack-trace, Object.prototype.dispatcher, /chunks/9635)
@@ -40,3 +42,8 @@ e.mail.ru,mail.rambler.ru,mail.yandex.ru,octavius.mail.ru##+js(href-sanitizer, a
 a28807 1
 e.mail.ru,mail.rambler.ru,mail.yandex.ru,octavius.mail.ru##+js(href-sanitizer, a[href^="https://www.gosuslugi.ru/ref?t="], ?to)
 d28886 1
+a29326 1
+ya.ru#@#+js(remove-node-text, div, 'ad-mark__b-unit-wrapper')
+a29338 2
+ya.ru##div[style]:matches-prop(innerText="/РЕКЛАМА/")
+ya.ru##div[style]:matches-prop(innerText="/РЕКЛАМА/"):remove()
