@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 17 Oct 2025 08:35:19 +0000
-! Diff-Path: ../patches/2025.10.17.515.patch#ruadlist
+! Last modified: Fri, 17 Oct 2025 13:34:09 +0000
+! Diff-Path: ../patches/2025.10.17.814.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -7965,6 +7965,7 @@ _verified.php?code=*&server=runetki.com
 /datagroup.gif
 /delivery/fc2.
 /direct.php|$~third-party,xmlhttprequest,domain=~cdromance.com
+/dle-plugin/ad-rotator/ad-list.json
 /edgemesh.*.js$script,domain=~edgemesh.com|~edgeno.de
 /edu_chat.js
 /educhat.js
@@ -11004,7 +11005,6 @@ igdz1.ru^$script,domain=igdz.ru
 ||api-maps.yandex.ru^$script,domain=radio7.ru|retrofm.ru
 ||api.1plus1.video/static/js/api.gpt.js
 ||api.digitalaccess.ru/logger^
-||api.rstprgapipt.*/ad-rotator/
 ||api.yapfiles.ru/vast/
 ||apitelesputnik.ru/storage/images/ads/
 ||aplik.ru/cdn-cgi/$xmlhttprequest
@@ -15768,6 +15768,7 @@ euro-football.ru#?#.block:-abp-has(> .block__body script)
 clib.me#?#.block:-abp-has(> .content > [data-la-block])
 clib.me#?#.block:-abp-has(> .content:-abp-contains(Реклама))
 liveresult.ru#?#.block:-abp-has(> .relap-runtime-iframe)
+esports.ru#?#.block:-abp-has(> a[href^="https://leon.ru"])
 euro-football.ru#?#.block:-abp-has(> div > [class*="bookmaker"])
 24warez.ru#?#.block:-abp-has(> h4:-abp-contains(Партнеры))
 sport-tv.by#?#.block:-abp-has([id^="yandex_rtb"])
@@ -19842,6 +19843,7 @@ fchimik.ru##a[href="http://www.pravo.gov.ru/"]
 fchimik.ru##a[href="http://www.procterandgamble.ru/"]
 vd-tv.ru##a[href="http://www.vdclab.ru/"]
 cq.ru##a[href="https://cq.ru/bookmakers"]
+esports.ru##a[href="https://go.esports.ru/roulette"]
 oper.ru##a[href="https://oper.ru/follow/wi"]
 sportarena.com##a[href="https://sportarena.com/betting/"]
 sportarena.com##a[href="https://sportarena.com/bookmakers/"]
