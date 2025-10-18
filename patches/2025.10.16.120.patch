@@ -1,8 +1,8 @@
-diff name:ruadlist lines:33 checksum:b7ce0614bd
+diff name:ruadlist lines:35 checksum:3c18a9a835
 d4 2
 a5 2
-! Last modified: Sat, 18 Oct 2025 14:24:22 +0000
-! Diff-Path: ../patches/2025.10.18.864.patch#ruadlist
+! Last modified: Sat, 18 Oct 2025 19:19:12 +0000
+! Diff-Path: ../patches/2025.10.18.1159.patch#ruadlist
 a7967 1
 /dle-plugin/ad-rotator/ad-list.json
 d10512 4
@@ -27,6 +27,8 @@ a28739 1
 dtf.ru##+js(abort-on-stack-trace, window.setTimeout, ' HR ')
 a28787 1
 e.mail.ru,mail.rambler.ru,mail.yandex.ru,octavius.mail.ru##+js(href-sanitizer, a[href*=".mck1.ru/"], ?u)
+a29003 1
+lk.emias.mos.ru##+js(set-cookie, lk-hasConsent, True)
 a29329 1
 ya.ru#@#+js(remove-node-text, div, 'ad-mark__b-unit-wrapper')
 a29341 2
