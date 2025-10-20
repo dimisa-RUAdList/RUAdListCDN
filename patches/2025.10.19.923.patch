@@ -1,8 +1,8 @@
-diff name:ruadlist lines:33 checksum:fcbee8ed1a
+diff name:ruadlist lines:43 checksum:8cf8b880ef
 d4 2
 a5 2
-! Last modified: Mon, 20 Oct 2025 16:34:39 +0000
-! Diff-Path: ../patches/2025.10.20.994.patch#ruadlist
+! Last modified: Mon, 20 Oct 2025 21:24:55 +0000
+! Diff-Path: ../patches/2025.10.20.1284.patch#ruadlist
 a4902 1
 ||pushina.info^$third-party
 a4949 1
@@ -21,6 +21,9 @@ a22250 1
 drive2.ru##.c-dv-side
 a22271 1
 drive2.ru##[data-ym-view="drom_catalog_view"]
+a26191 2
+@@||translate-pa.googleapis.com^$third-party,xmlhttprequest
+@@||translate.googleapis.com/_/translate_http/$third-party,xmlhttprequest
 a27088 1
 dtf.ru##.sticky-stack-sidebar__section:not(:only-child):style(min-height: 0 !important)
 d27091 2
@@ -32,3 +35,10 @@ gamegpu.com,overclockers.ua##a[href*="://brain.com.ua/"]:style(pointer-events: n
 d28739 1
 a28739 1
 dtf.ru##+js(abort-on-stack-trace, window.setTimeout, a.call)
+d28788 2
+a28789 1
+e.mail.ru,mail.rambler.ru,mail.yandex.ru,octavius.mail.ru##+js(href-sanitizer, a[href*=".mck"][href*=".ru/c/"], ?u)
+a28899 1
+author.today##+js(remove-attr, onmousedown|unselectable|onselectstart|oncontextmenu, .noselect, stay)
+a29047 1
+author.today##.noselect:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important)
