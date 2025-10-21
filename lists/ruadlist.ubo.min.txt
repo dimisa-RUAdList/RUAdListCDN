@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 21 Oct 2025 17:25:20 +0000
-! Diff-Path: ../patches/2025.10.21.1045.patch#ruadlist
+! Last modified: Tue, 21 Oct 2025 22:24:22 +0000
+! Diff-Path: ../patches/2025.10.21.1344.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -19246,6 +19246,7 @@ ozon.ru##[data-widget="advBanner"]
 ozon.ru##[data-widget="advVideoBanner"]
 ozon.ru#?#[data-widget="freshIsland"]:-abp-has(> div > [data-widget="objectBannerList"])
 pravda.cn.ua##[data-widget_type="image.default"]
+drive2.ru##[data-ym-view="drom_catalog_view"]
 photos-models.com##[gnezdo_container_id]
 pikabu.ru##[href*="/acceptable-ads"]
 xn--80awhdeco3h.xn--p1ai,yarportal.ru##[href*="/goto.php?id="][target="_blank"] > img[src^="http://yarportal.ru/"]
@@ -22270,7 +22271,6 @@ android-mafia.com,game4you.top,rustorka.com,rustorka.net,rustorka.top,rustorkaco
 liveinternet.ru,sdamgia.ru##[data-container]
 sdamgia.ru##[data-name="partial-container"]
 liveinternet.ru##[data-wrapper]
-drive2.ru##[data-ym-view="drom_catalog_view"]
 mail.ru##[href*="https://dzen.ru"]
 ~dzen.ru,~sportsdzen.ru##[href^="https://dzen.ru"]
 vk.com,vk.ru##[id^="post-"] > ._post_content > :only-child
