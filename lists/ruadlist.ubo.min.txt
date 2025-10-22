@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 22 Oct 2025 08:38:08 +0000
-! Diff-Path: ../patches/2025.10.22.518.patch#ruadlist
+! Last modified: Wed, 22 Oct 2025 13:39:32 +0000
+! Diff-Path: ../patches/2025.10.22.819.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -8959,7 +8959,6 @@ by,~mail.ru,ru,ua##.banner_box
 ##a[href*="xxxrevpushclcdu.com"]
 ##a[href*="zdravo-med.ru"]
 ##a[href="http://advert.mirtesen.ru/"]
-~pikadil.ru##a[href="https://pikadil.ru"]
 ##a[href^="/go/ubar?"]
 ##a[href^="/go/ufiler?"]
 ##a[href^="/images/obmen/"][href$=".php"][target="_blank"]
@@ -8990,6 +8989,7 @@ by,~mail.ru,ru,ua##.banner_box
 ##a[href^="https://kshop"][href*=".pro/"]
 ##a[href^="https://msetup.pro"]
 ~pari.ru##a[href^="https://pari.ru/promo/"]
+~pikadil.ru##a[href^="https://pikadil.ru"]
 ##a[href^="https://relap.io/"][href*="promo_ad_link"]
 ##a[href^="https://wcm-ru.frontend.weborama.fr/fcgi-bin/dispatch.fcgi?"]
 ##a[href^="https://www.juicer.io?referrer="]
@@ -10820,7 +10820,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||21region.org/uploads/main/re/
 ||24stoma.ru/rkm/
 ||2baksa.ws^$script
-||2ch.*/banners/$domain=2ch.hk|2ch.life|2ch.su
+||2ch.*/banners/
 ||2d.windows-8.ru
 ||2gis.*/ads/advise/
 ||2ip.ua/images/support_ukraine.png
@@ -17210,7 +17210,7 @@ russian-seriali.ru##.mixmob
 afisha.tut.by##.mm-main
 yakutia.info##.mm_widget
 dreamprogs.net##.mmenu a[href^="http"]:not([href^="http://dream"])
-2ch.life,2ch.su##.mmm
+2ch.life,2ch.org,2ch.su##.mmm
 minsknews.by##.mn-a-rec
 gamer-info.com##.mn-news-lst-ad-bl > div
 openssource.info##.mob
@@ -19061,7 +19061,7 @@ igrigo.net#?#[class*="navi_title"]:-abp-contains(/браузер|партнер�
 kg.ua##[class*="region-banner"]
 kg.ua##[class*="region-news"] > .block > * > .img-responsive
 kg.ua##[class*="region-news"] > .block a[href][target="_blank"]
-2ch.life,2ch.su,mypresentation.ru,pshack.net,tonna-games.ru##[class*="rekl"]
+2ch.life,2ch.org,2ch.su,mypresentation.ru,pshack.net,tonna-games.ru##[class*="rekl"]
 yapx.ru##[class*="revenue-block"]
 sexoporno.su##[class*="sam"][class*="pro"]
 hwp.ru##[class*="tbann"]
@@ -19170,6 +19170,7 @@ rosteplo.ru##[data-content*="ERID"]
 gdz4you.com##[data-controller="SearchInputController"] ~ .well-container
 vgae.ru##[data-count="b/s/"]
 starhit.ru##[data-creative]
+drive2.ru##[data-data-ym-view="drom_main_view"]
 banki.ru##[data-dfp-container]
 briefly.ru##[data-disclaimer*="Реклама"]
 shuba.life##[data-discount-banner]
@@ -20689,7 +20690,7 @@ esports.ru##div[class*="js-present-"]
 kingisepp-today.ru,xn----etbbecbrbp5ahkja1ae7v.xn--p1ai##div[class*="ks-banner-news"]
 ts.kg##div[class*="oops-"]
 altapress.ru,etextlib.ru##div[class*="partners"]
-2ch.life,2ch.su##div[class*="plashque"]
+2ch.life,2ch.org,2ch.su##div[class*="plashque"]
 kino-mania.pro##div[class*="plav_"]
 1parazit.ru##div[class*="popup"]
 newsru.com##div[class*="prm"]
@@ -22704,6 +22705,7 @@ vkplay.ru##div[class*="ArtBannerSkeleton"]
 ||pets.mail.ru/my/pets/add
 ||privacy-cs.mail.ru^$third-party
 ||r.mail.ru/*=videoplayer$popup,domain=my.mail.ru
+||r.mradx.net/$domain=dzen.ru
 ||r.mradx.net/$script,domain=auto.mail.ru|deti.mail.ru|e.mail.ru|health.mail.ru|kino.mail.ru|lady.mail.ru|my.mail.ru|otvet.mail.ru|pets.mail.ru|pogoda.mail.ru|tv.mail.ru
 ||r.mradx.net/r/$script
 ||r.mradx.net^$subdocument
