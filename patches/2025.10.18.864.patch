@@ -1,8 +1,8 @@
-diff name:ruadlist lines:122 checksum:3b1d1012e0
+diff name:ruadlist lines:139 checksum:bd587d0b67
 d4 2
 a5 2
-! Last modified: Wed, 22 Oct 2025 13:39:32 +0000
-! Diff-Path: ../patches/2025.10.22.819.patch#ruadlist
+! Last modified: Wed, 22 Oct 2025 18:40:24 +0000
+! Diff-Path: ../patches/2025.10.22.1120.patch#ruadlist
 a4902 1
 ||pushina.info^$third-party
 a4949 1
@@ -58,6 +58,8 @@ ura.news##a[href*="zen.ru/"]
 d19800 1
 a20413 1
 ura.news##body > div[class^="g"]
+a20586 1
+litres.ru##div[aria-label="Реклама"]
 d20690 1
 a20690 1
 2ch.life,2ch.org,2ch.su##div[class*="plashque"]
@@ -121,3 +123,18 @@ a29003 1
 lk.emias.mos.ru##+js(set-cookie, lk-hasConsent, True)
 a29045 1
 author.today##.noselect:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important)
+d29272 7
+a29281 5
+! Embed.rg.ru
+embed.rg.ru##+js(set-attr, video, controls, true)
+embed.rg.ru##+js(set-constant, HTMLVideoElement.prototype.play, {})
+embed.rg.ru##.media-control
+embed.rg.ru##.player-poster
+a29285 7
+! Tass
+tass.ru##+js(abort-on-stack-trace, HTMLVideoElement.prototype.play, onCanPlay)
+tass.ru##+js(addEventListener-defuser, pause, '', elements, video[class*="HLSPlayback_player"])
+tass.ru##+js(set-attr, video[class*="HLSPlayback_player"], controls, true)
+tass.ru##+js(set-constant, Object.prototype.autoPlay, {})
+tass.ru##[class^="LoopChannelPlayer_wrapper_"] > [role="presentation"]
+tass.ru##[class^="LoopChannelPlayer_wrapper_"] [class^="Centered_box_"]

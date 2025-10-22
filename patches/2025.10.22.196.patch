@@ -1,8 +1,8 @@
-diff name:ruadlist lines:23 checksum:3b1d1012e0
+diff name:ruadlist lines:40 checksum:bd587d0b67
 d4 2
 a5 2
-! Last modified: Wed, 22 Oct 2025 13:39:32 +0000
-! Diff-Path: ../patches/2025.10.22.819.patch#ruadlist
+! Last modified: Wed, 22 Oct 2025 18:40:24 +0000
+! Diff-Path: ../patches/2025.10.22.1120.patch#ruadlist
 d8962 1
 a8992 1
 ~pikadil.ru##a[href^="https://pikadil.ru"]
@@ -17,8 +17,25 @@ a19064 1
 2ch.life,2ch.org,2ch.su,mypresentation.ru,pshack.net,tonna-games.ru##[class*="rekl"]
 a19172 1
 drive2.ru##[data-data-ym-view="drom_main_view"]
+a20588 1
+litres.ru##div[aria-label="Реклама"]
 d20692 1
 a20692 1
 2ch.life,2ch.org,2ch.su##div[class*="plashque"]
 a22706 1
 ||r.mradx.net/$domain=dzen.ru
+d29281 7
+a29290 5
+! Embed.rg.ru
+embed.rg.ru##+js(set-attr, video, controls, true)
+embed.rg.ru##+js(set-constant, HTMLVideoElement.prototype.play, {})
+embed.rg.ru##.media-control
+embed.rg.ru##.player-poster
+a29294 7
+! Tass
+tass.ru##+js(abort-on-stack-trace, HTMLVideoElement.prototype.play, onCanPlay)
+tass.ru##+js(addEventListener-defuser, pause, '', elements, video[class*="HLSPlayback_player"])
+tass.ru##+js(set-attr, video[class*="HLSPlayback_player"], controls, true)
+tass.ru##+js(set-constant, Object.prototype.autoPlay, {})
+tass.ru##[class^="LoopChannelPlayer_wrapper_"] > [role="presentation"]
+tass.ru##[class^="LoopChannelPlayer_wrapper_"] [class^="Centered_box_"]
