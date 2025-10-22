@@ -1,52 +1,19 @@
-diff name:ruadlist lines:51 checksum:f1925b2c4a
+diff name:ruadlist lines:18 checksum:f1925b2c4a
 d4 2
 a5 2
 ! Last modified: Wed, 22 Oct 2025 23:23:05 +0000
 ! Diff-Path: ../patches/2025.10.22.1403.patch#ruadlist
-d8962 1
-a8992 1
-~pikadil.ru##a[href^="https://pikadil.ru"]
-d10823 1
-a10823 1
-||2ch.*/banners/
 d15551 1
 a15551 1
 amurmedia.ru,angarskmedia.ru,chitamedia.su,chukotkamedia.ru,eaomedia.ru,irkutskmedia.ru,job.ru,kamchatkamedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,magadanmedia.ru,molbuk.ua,nakhodka.media,newsvl.ru,nord-news.ru,novostirostov.ru,omskmedia.su,peterburgmedia.ru,priamurmedia.ru,primadonna.media,primamedia.ru,sakhalinmedia.ru,sevastopolmedia.ru,shedevrum.ai,sochimedia.su,stavropol.media,stolicamedia.ru,tayga.info,tet.tv,ulanmedia.ru,unian.info,unian.net,unian.ua,ussurmedia.ru,vctr.media,wallnews.org,yakutiamedia.ru,yugopolis.ru##.banner-container
 a15988 1
 drive2.ru##.c-boosts
-d17213 1
-a17213 1
-2ch.life,2ch.org,2ch.su##.mmm
-d19064 1
-a19064 1
-2ch.life,2ch.org,2ch.su,mypresentation.ru,pshack.net,tonna-games.ru##[class*="rekl"]
-a19172 1
+d19173 1
+a19173 1
 drive2.ru##[data-data-ym-view^="drom_"]
-a19248 1
+d19250 1
+a19250 1
 drive2.ru##[data-ym-view^="drom_"]
-a20587 1
-litres.ru##div[aria-label="Реклама"]
-d20691 1
-a20691 1
-2ch.life,2ch.org,2ch.su##div[class*="plashque"]
-d21918 1
-a21918 1
+d21921 1
+a21921 1
 amurmedia.ru,angarskmedia.ru,chitamedia.su,chukotkamedia.ru,eaomedia.ru,irkutskmedia.ru,job.ru,kamchatkamedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,magadanmedia.ru,nakhodka.media,newsvl.ru,novostirostov.ru,omskmedia.su,peterburgmedia.ru,priamurmedia.ru,primadonna.media,primamedia.ru,sakhalinmedia.ru,sevastopolmedia.ru,sochimedia.su,stavropol.media,stolicamedia.ru,tayga.info,tet.tv,ulanmedia.ru,unian.info,unian.net,unian.ua,ussurmedia.ru,vctr.media,yakutiamedia.ru,yugopolis.ru##section.countdown
-d22273 1
-a22706 1
-||r.mradx.net/$domain=dzen.ru
-d29281 7
-a29290 5
-! Embed.rg.ru
-embed.rg.ru##+js(set-attr, video, controls, true)
-embed.rg.ru##+js(set-constant, HTMLVideoElement.prototype.play, {})
-embed.rg.ru##.media-control
-embed.rg.ru##.player-poster
-a29294 7
-! Tass
-tass.ru##+js(abort-on-stack-trace, HTMLVideoElement.prototype.play, onCanPlay)
-tass.ru##+js(addEventListener-defuser, pause, '', elements, video[class*="HLSPlayback_player"])
-tass.ru##+js(set-attr, video[class*="HLSPlayback_player"], controls, true)
-tass.ru##+js(set-constant, Object.prototype.autoPlay, {})
-tass.ru##[class^="LoopChannelPlayer_wrapper_"] > [role="presentation"]
-tass.ru##[class^="LoopChannelPlayer_wrapper_"] [class^="Centered_box_"]
