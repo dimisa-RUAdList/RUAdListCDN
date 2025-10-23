@@ -1,8 +1,8 @@
-diff name:ruadlist lines:142 checksum:03c2a04398
+diff name:ruadlist lines:161 checksum:5e7e9bd3dd
 d4 2
 a5 2
-! Last modified: Thu, 23 Oct 2025 09:30:19 +0000
-! Diff-Path: ../patches/2025.10.23.570.patch#ruadlist
+! Last modified: Thu, 23 Oct 2025 14:31:21 +0000
+! Diff-Path: ../patches/2025.10.23.871.patch#ruadlist
 a4902 1
 ||pushina.info^$third-party
 a4949 1
@@ -60,6 +60,8 @@ ura.news##a[href*="zen.ru/"]
 d19801 1
 a20414 1
 ura.news##body > div[class^="g"]
+a20525 1
+ura.news#?#div > h2 ~ ul > li:-abp-has(> div > [id^="adv-"])
 a20587 1
 litres.ru##div[aria-label="Реклама"]
 d20691 1
@@ -75,6 +77,9 @@ ura.news##div[id*="-advertisement-"]
 d21361 1
 d21372 1
 d21412 1
+d21477 1
+a21530 1
+stratege.ru#?#div[style^="text-align: center;"]:-abp-has(> i ~ br ~ br ~ [rel="nofollow"])
 a21676 1
 ura.news##img[alt="Реклама"]
 a21803 3
@@ -84,11 +89,22 @@ ura.news##main > div aside > div:first-child
 d21918 1
 a21918 1
 amurmedia.ru,angarskmedia.ru,chitamedia.su,chukotkamedia.ru,eaomedia.ru,irkutskmedia.ru,job.ru,kamchatkamedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,magadanmedia.ru,nakhodka.media,newsvl.ru,novostirostov.ru,omskmedia.su,peterburgmedia.ru,priamurmedia.ru,primadonna.media,primamedia.ru,sakhalinmedia.ru,sevastopolmedia.ru,sochimedia.su,stavropol.media,stolicamedia.ru,tayga.info,tet.tv,ulanmedia.ru,unian.info,unian.net,unian.ua,ussurmedia.ru,vctr.media,yakutiamedia.ru,yugopolis.ru##section.countdown
+d22180 2
+a22181 2
+||static.dzeninfra.ru/s3/zen-lib/*/dzen-desktop/$script
+||static.dzeninfra.ru/s3/zen-lib/*/news-site-mobile/$script
 d22207 1
 a22207 1
 ||pikabu.ru/ajax/*?f234R=$xmlhttprequest
 a22250 1
 drive2.ru##.c-dv-side
+a22368 2
+2ip.io,2ip.ru##.main-ip-icon-warning
+2ip.io,2ip.ru##.main-ip-icon-warning ~ [aria-disabled]
+a22374 1
+2ip.io,2ip.ru##a[href*="adBannerRedirector"]
+a22563 1
+dzen.ru##div[class*="_advertItem"]
 a22704 1
 ||r.mradx.net/$domain=dzen.ru
 a24878 1
@@ -107,6 +123,9 @@ dtf.ru##[class*="sidebar"] div[style*="banner-height"]:style(height: 100px !impo
 a27218 1
 gamegpu.com,overclockers.ua##a[href*="://brain.com.ua/"]:style(pointer-events: none !important; color: inherit !important)
 d28153 2
+d28307 1
+a28307 1
+dzen.ru##div[class*="new"] [class$="__rubricator"] + div[class*=" "] > div:only-child
 d28618 1
 a28618 1
 comedy-radio.ru,radioromantika.ru,relax-fm.ru,rg.ru,sm.news,veseloeradio.ru,www.e1.ru##+js(abort-on-property-read, Date.prototype.toUTCString)

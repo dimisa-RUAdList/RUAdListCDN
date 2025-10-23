@@ -1,8 +1,8 @@
-diff name:ruadlist lines:38 checksum:03c2a04398
+diff name:ruadlist lines:57 checksum:5e7e9bd3dd
 d4 2
 a5 2
-! Last modified: Thu, 23 Oct 2025 09:30:19 +0000
-! Diff-Path: ../patches/2025.10.23.570.patch#ruadlist
+! Last modified: Thu, 23 Oct 2025 14:31:21 +0000
+! Diff-Path: ../patches/2025.10.23.871.patch#ruadlist
 d15551 1
 a15551 1
 amurmedia.ru,angarskmedia.ru,chitamedia.su,chukotkamedia.ru,eaomedia.ru,irkutskmedia.ru,job.ru,kamchatkamedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,magadanmedia.ru,molbuk.ua,nakhodka.media,newsvl.ru,nord-news.ru,novostirostov.ru,omskmedia.su,peterburgmedia.ru,priamurmedia.ru,primadonna.media,primamedia.ru,sakhalinmedia.ru,sevastopolmedia.ru,shedevrum.ai,sochimedia.su,stavropol.media,stolicamedia.ru,tayga.info,tet.tv,ulanmedia.ru,unian.info,unian.net,unian.ua,ussurmedia.ru,vctr.media,wallnews.org,yakutiamedia.ru,yugopolis.ru##.banner-container
@@ -14,14 +14,33 @@ drive2.ru##[data-data-ym-view^="drom_"]
 d19250 1
 a19250 1
 drive2.ru##[data-ym-view^="drom_"]
+a20527 1
+ura.news#?#div > h2 ~ ul > li:-abp-has(> div > [id^="adv-"])
 a20589 1
 litres.ru##div[aria-label="Реклама"]
+d21475 1
+a21528 1
+stratege.ru#?#div[style^="text-align: center;"]:-abp-has(> i ~ br ~ br ~ [rel="nofollow"])
 d21920 1
 a21920 1
 amurmedia.ru,angarskmedia.ru,chitamedia.su,chukotkamedia.ru,eaomedia.ru,irkutskmedia.ru,job.ru,kamchatkamedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,magadanmedia.ru,nakhodka.media,newsvl.ru,novostirostov.ru,omskmedia.su,peterburgmedia.ru,priamurmedia.ru,primadonna.media,primamedia.ru,sakhalinmedia.ru,sevastopolmedia.ru,sochimedia.su,stavropol.media,stolicamedia.ru,tayga.info,tet.tv,ulanmedia.ru,unian.info,unian.net,unian.ua,ussurmedia.ru,vctr.media,yakutiamedia.ru,yugopolis.ru##section.countdown
+d22182 2
+a22183 2
+||static.dzeninfra.ru/s3/zen-lib/*/dzen-desktop/$script
+||static.dzeninfra.ru/s3/zen-lib/*/news-site-mobile/$script
 d22209 1
 a22209 1
 ||pikabu.ru/ajax/*?f234R=$xmlhttprequest
+a22371 2
+2ip.io,2ip.ru##.main-ip-icon-warning
+2ip.io,2ip.ru##.main-ip-icon-warning ~ [aria-disabled]
+a22377 1
+2ip.io,2ip.ru##a[href*="adBannerRedirector"]
+a22566 1
+dzen.ru##div[class*="_advertItem"]
+d28315 1
+a28315 1
+dzen.ru##div[class*="new"] [class$="__rubricator"] + div[class*=" "] > div:only-child
 d29283 7
 a29292 5
 ! Embed.rg.ru

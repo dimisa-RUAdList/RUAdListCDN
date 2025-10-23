@@ -1,8 +1,27 @@
-diff name:ruadlist lines:7 checksum:03c2a04398
+diff name:ruadlist lines:26 checksum:5e7e9bd3dd
 d4 2
 a5 2
-! Last modified: Thu, 23 Oct 2025 09:30:19 +0000
-! Diff-Path: ../patches/2025.10.23.570.patch#ruadlist
+! Last modified: Thu, 23 Oct 2025 14:31:21 +0000
+! Diff-Path: ../patches/2025.10.23.871.patch#ruadlist
+a20528 1
+ura.news#?#div > h2 ~ ul > li:-abp-has(> div > [id^="adv-"])
+d21477 1
+a21530 1
+stratege.ru#?#div[style^="text-align: center;"]:-abp-has(> i ~ br ~ br ~ [rel="nofollow"])
+d22184 2
+a22185 2
+||static.dzeninfra.ru/s3/zen-lib/*/dzen-desktop/$script
+||static.dzeninfra.ru/s3/zen-lib/*/news-site-mobile/$script
 d22211 1
 a22211 1
 ||pikabu.ru/ajax/*?f234R=$xmlhttprequest
+a22373 2
+2ip.io,2ip.ru##.main-ip-icon-warning
+2ip.io,2ip.ru##.main-ip-icon-warning ~ [aria-disabled]
+a22379 1
+2ip.io,2ip.ru##a[href*="adBannerRedirector"]
+a22568 1
+dzen.ru##div[class*="_advertItem"]
+d28317 1
+a28317 1
+dzen.ru##div[class*="new"] [class$="__rubricator"] + div[class*=" "] > div:only-child
