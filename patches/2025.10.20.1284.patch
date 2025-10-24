@@ -1,8 +1,8 @@
-diff name:ruadlist lines:135 checksum:5454edbd95
+diff name:ruadlist lines:141 checksum:6acb4e6670
 d4 2
 a5 2
-! Last modified: Fri, 24 Oct 2025 10:32:22 +0000
-! Diff-Path: ../patches/2025.10.24.632.patch#ruadlist
+! Last modified: Fri, 24 Oct 2025 15:28:59 +0000
+! Diff-Path: ../patches/2025.10.24.928.patch#ruadlist
 a8498 1
 ##.smartmedia-lenta
 a8990 1
@@ -92,6 +92,9 @@ a22374 2
 2ip.io,2ip.ru##.main-ip-icon-warning ~ [aria-disabled]
 a22380 1
 2ip.io,2ip.ru##a[href*="adBannerRedirector"]
+a22541 2
+! фикс для бесконечной загрузки на главной
+||pms.mail.ru/?main_exp_id=
 a22566 1
 dzen.ru##[id*="_R-Q-"]
 a22569 1
@@ -116,6 +119,9 @@ comedy-radio.ru,radioromantika.ru,relax-fm.ru,rg.ru,sm.news,veseloeradio.ru,www.
 d28729 1
 a28729 1
 80-e.ru,doramatv.live,examenpdd.com,forum.ixbt.com,rg.ru,shadowcore.ru##+js(abort-on-property-read, yaContextCb)
+d28749 1
+a28749 1
+dtf.ru##+js(abort-on-stack-trace, window.setTimeout, 'R ')
 d28790 1
 a28790 1
 comedy-radio.ru,kufar.by,radioromantika.ru,relax-fm.ru,rg.ru,sm.news,veseloeradio.ru##+js(cookie-remover, /^bda|^bltsr/)

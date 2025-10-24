@@ -1,8 +1,8 @@
-diff name:ruadlist lines:60 checksum:5454edbd95
+diff name:ruadlist lines:66 checksum:6acb4e6670
 d4 2
 a5 2
-! Last modified: Fri, 24 Oct 2025 10:32:22 +0000
-! Diff-Path: ../patches/2025.10.24.632.patch#ruadlist
+! Last modified: Fri, 24 Oct 2025 15:28:59 +0000
+! Diff-Path: ../patches/2025.10.24.928.patch#ruadlist
 d15551 1
 a15551 1
 amurmedia.ru,angarskmedia.ru,chitamedia.su,chukotkamedia.ru,eaomedia.ru,irkutskmedia.ru,job.ru,kamchatkamedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,magadanmedia.ru,molbuk.ua,nakhodka.media,newsvl.ru,nord-news.ru,novostirostov.ru,omskmedia.su,peterburgmedia.ru,priamurmedia.ru,primadonna.media,primamedia.ru,sakhalinmedia.ru,sevastopolmedia.ru,shedevrum.ai,sochimedia.su,stavropol.media,stolicamedia.ru,tayga.info,tet.tv,ulanmedia.ru,unian.info,unian.net,unian.ua,ussurmedia.ru,vctr.media,wallnews.org,yakutiamedia.ru,yugopolis.ru##.banner-container
@@ -36,6 +36,9 @@ a22371 2
 2ip.io,2ip.ru##.main-ip-icon-warning ~ [aria-disabled]
 a22377 1
 2ip.io,2ip.ru##a[href*="adBannerRedirector"]
+a22538 2
+! фикс для бесконечной загрузки на главной
+||pms.mail.ru/?main_exp_id=
 a22563 1
 dzen.ru##[id*="_R-Q-"]
 a22566 1
@@ -44,6 +47,9 @@ d28310 1
 d28315 1
 a28315 1
 dzen.ru##div[class*="new"] [class$="__rubricator"] + div[class*=" "] > div:only-child
+d28747 1
+a28747 1
+dtf.ru##+js(abort-on-stack-trace, window.setTimeout, 'R ')
 d29283 7
 a29292 5
 ! Embed.rg.ru

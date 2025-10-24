@@ -1,8 +1,8 @@
-diff name:ruadlist lines:76 checksum:5454edbd95
+diff name:ruadlist lines:82 checksum:6acb4e6670
 d4 2
 a5 2
-! Last modified: Fri, 24 Oct 2025 10:32:22 +0000
-! Diff-Path: ../patches/2025.10.24.632.patch#ruadlist
+! Last modified: Fri, 24 Oct 2025 15:28:59 +0000
+! Diff-Path: ../patches/2025.10.24.928.patch#ruadlist
 d8962 1
 a8992 1
 ~pikadil.ru##a[href^="https://pikadil.ru"]
@@ -50,6 +50,9 @@ a22370 2
 2ip.io,2ip.ru##.main-ip-icon-warning ~ [aria-disabled]
 a22376 1
 2ip.io,2ip.ru##a[href*="adBannerRedirector"]
+a22537 2
+! фикс для бесконечной загрузки на главной
+||pms.mail.ru/?main_exp_id=
 a22562 1
 dzen.ru##[id*="_R-Q-"]
 a22565 1
@@ -60,6 +63,9 @@ d28308 1
 d28313 1
 a28313 1
 dzen.ru##div[class*="new"] [class$="__rubricator"] + div[class*=" "] > div:only-child
+d28745 1
+a28745 1
+dtf.ru##+js(abort-on-stack-trace, window.setTimeout, 'R ')
 d29281 7
 a29290 5
 ! Embed.rg.ru

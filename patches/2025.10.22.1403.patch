@@ -1,8 +1,8 @@
-diff name:ruadlist lines:29 checksum:5454edbd95
+diff name:ruadlist lines:35 checksum:6acb4e6670
 d4 2
 a5 2
-! Last modified: Fri, 24 Oct 2025 10:32:22 +0000
-! Diff-Path: ../patches/2025.10.24.632.patch#ruadlist
+! Last modified: Fri, 24 Oct 2025 15:28:59 +0000
+! Diff-Path: ../patches/2025.10.24.928.patch#ruadlist
 a20528 1
 ura.news#?#div > h2 ~ ul > li:-abp-has(> div > [id^="adv-"])
 d21477 1
@@ -20,6 +20,9 @@ a22373 2
 2ip.io,2ip.ru##.main-ip-icon-warning ~ [aria-disabled]
 a22379 1
 2ip.io,2ip.ru##a[href*="adBannerRedirector"]
+a22540 2
+! фикс для бесконечной загрузки на главной
+||pms.mail.ru/?main_exp_id=
 a22565 1
 dzen.ru##[id*="_R-Q-"]
 a22568 1
@@ -28,3 +31,6 @@ d28312 1
 d28317 1
 a28317 1
 dzen.ru##div[class*="new"] [class$="__rubricator"] + div[class*=" "] > div:only-child
+d28749 1
+a28749 1
+dtf.ru##+js(abort-on-stack-trace, window.setTimeout, 'R ')
