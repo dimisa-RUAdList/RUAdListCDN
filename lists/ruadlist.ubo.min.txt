@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 28 Oct 2025 14:31:12 +0000
-! Diff-Path: ../patches/2025.10.28.871.patch#ruadlist
+! Last modified: Tue, 28 Oct 2025 19:23:05 +0000
+! Diff-Path: ../patches/2025.10.28.1163.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -19580,6 +19580,7 @@ oterraria.ru##a[href*="://genshindrop.com/ref/"]
 pleogame.ru##a[href*="://go.pleogame.site/r/"]
 sport24.ru##a[href*="://go.sport24.ru"]
 bwtorrents.ru##a[href*="://goo-gl.su/"]
+mezha.ua##a[href*="://hator.gg/"]
 anistar.org,astar.bz,online-star.org,online-stars.org##a[href*="://litmarket.ru/"]
 eschemo.ru##a[href*="://marchelas.tilda.ws"]
 tsn24.ru##a[href*="://mediametrics.ru/"]
@@ -26645,6 +26646,7 @@ kurs.com.ua,ontvtime.ru,ritsatv.ru,skidkaonline.ru,ternopillive.com##body > div[
 gsm.in.ua##body > div[style^="background:"][style*="display: block"]
 www.kolesa.ru##body > div[style^="position: fixed;"][style*="z-index:"]
 motorpage.ru##body.noscroll::before
+rg.ru##div[class*="AdblockModal_wrapper_"]
 qrz.ru#?#div[class]:-abp-has(> .inner > a[href="/help/adblock/"])
 live.vkvideo.ru##div[class^="Notifications_root"]
 pronetblog.by##div[class^="adsensepost"]
@@ -27929,6 +27931,8 @@ rezkahd.life##.have-brand .wrap:style(margin-top: 0 !important)
 rg.ru##div[class*="_spiegelWrapper"]:style(padding-top: 0 !important)
 rg.ru##div[class^="PageMediaContentVideo_mainContent"]:style(min-height: 0 !important)
 rg.ru##div[class^="Page_main"][style*="min-height:"]:style(min-height: 0 !important)
+rg.ru##html[style*="overflow:"] > body:style(padding-right: 0 !important)
+rg.ru##html[style*="overflow:"]:style(overflow: auto !important)
 ! ---
 ria.ru##.m-blur ~ #modalLayer
 ria.ru##.m-blur:style(filter: none !important; position: relative !important)
@@ -28786,6 +28790,7 @@ kp.kg,kp.kz,kp.md,kp.ru,rbc.ru,sportrbc.ru##+js(addEventListener-defuser, copy, 
 carservic.ru,iptv.org.ua,newxboxone.ru,tva.org.ua,ufchgu.ru##+js(addEventListener-defuser, copy, pagelink)
 megaprogz.ru,programhub.ru##+js(addEventListener-defuser, download, isMonetized)
 trychatgpt.ru##+js(addEventListener-defuser, error, '', elements, [data-status="loading"])
+rg.ru##+js(addEventListener-defuser, error, (e){t(e)})
 fastpic.org,~new.fastpic.org##+js(addEventListener-defuser, getexoloader)
 romakatya.ru##+js(addEventListener-defuser, load, AdBlock)
 blackwot.ru##+js(addEventListener-defuser, load, detect-modal)
@@ -28987,6 +28992,7 @@ dzen.ru##+js(set-constant, Object.prototype.isCustomBannerType, undefined)
 rbc.ru,sportrbc.ru##+js(set-constant, Object.prototype.livetv-state, true)
 tenews.org.ua##+js(set-constant, Object.prototype.manualAutoplay_, null)
 vp.rambler.ru##+js(set-constant, Object.prototype.minPlayingVisibleHeight, noopFunc)
+embed.rg.ru##+js(set-constant, Object.prototype.onIntersected, undefined)
 dzen.ru,frontend.vh.yandex.ru,naydex.net,widgets.kinopoisk.ru,www.kinopoisk.ru,yastatic.net##+js(set-constant, Object.prototype.partnerId, {})
 3dnews.ru,vm.ru##+js(set-constant, Object.prototype.playVideo, noopFunc)
 vk.com,vk.ru##+js(set-constant, PageBottomBanners, undefined)
@@ -29296,11 +29302,6 @@ mail.ru##[slot="main-column"] > .tabs:matches-media((max-width: 1280px)):style(h
 !#if env_mobile
 mail.ru#@#body:not(.js-module) .tabs + div[class]:style(min-width: fit-content !important)
 !#endif
-! Embed.rg.ru
-embed.rg.ru##+js(set-attr, video, controls, true)
-embed.rg.ru##+js(set-constant, HTMLVideoElement.prototype.play, {})
-embed.rg.ru##.media-control
-embed.rg.ru##.player-poster
 ! Softportal - https://github.com/uBlockOrigin/uBlock-issues/issues/2246
 !#if env_firefox
 softportal.com##+js(addEventListener-defuser, load, screenshotsItems)

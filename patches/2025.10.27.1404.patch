@@ -1,5 +1,17 @@
-diff name:ruadlist lines:4 checksum:6a961a50b8
+diff name:ruadlist lines:16 checksum:2b1d103a12
 d4 2
 a5 2
-! Last modified: Tue, 28 Oct 2025 14:31:12 +0000
-! Diff-Path: ../patches/2025.10.28.871.patch#ruadlist
+! Last modified: Tue, 28 Oct 2025 19:23:05 +0000
+! Diff-Path: ../patches/2025.10.28.1163.patch#ruadlist
+a19582 1
+mezha.ua##a[href*="://hator.gg/"]
+a26647 1
+rg.ru##div[class*="AdblockModal_wrapper_"]
+a27931 2
+rg.ru##html[style*="overflow:"] > body:style(padding-right: 0 !important)
+rg.ru##html[style*="overflow:"]:style(overflow: auto !important)
+a28788 1
+rg.ru##+js(addEventListener-defuser, error, (e){t(e)})
+a28989 1
+embed.rg.ru##+js(set-constant, Object.prototype.onIntersected, undefined)
+d29299 5

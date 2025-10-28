@@ -1,8 +1,8 @@
-diff name:ruadlist lines:70 checksum:6a961a50b8
+diff name:ruadlist lines:82 checksum:2b1d103a12
 d4 2
 a5 2
-! Last modified: Tue, 28 Oct 2025 14:31:12 +0000
-! Diff-Path: ../patches/2025.10.28.871.patch#ruadlist
+! Last modified: Tue, 28 Oct 2025 19:23:05 +0000
+! Diff-Path: ../patches/2025.10.28.1163.patch#ruadlist
 d10709 1
 a10709 1
 /nadavi-api/*$domain=gsminfo.com.ua|hardwareluxx.ru|headphonesbest.ru|ironfriends.ru|itc.ua|itechua.com|mezha.ua|mobile-review.com|pingvin.pro|technoportal.com.ua|tehnobzor.ru
@@ -37,6 +37,8 @@ a18854 1
 1000iodinsovet.ru,2info2.ru,4esnok.by,agrimpasa.com,alau.kz,alkogolu.net,atlasprirodirossii.ru,belattra.ru,bizua.org,boxvideotv.ru,brunet-ka.ru,calend.online,cherepah.ru,chirik.info,chudesniesovetiki.site,clubwindows.ru,domashnie-zagotovki.ru,domashniecvety.ru,erokomiksi.com,excelprost.ru,free-news.su,galas.te.ua,geomedia.top,giantessa.ru,golbis.com,golovnie-boli.com,hitagro.ru,hronika.info,htmlhook.ru,hyperione.com,inforpost.com,karavan.ua,kopomko.com,koroleffsov.ru,krashevseh.ru,kulemet.com,legkopolezno.ru,lightstories.site,macosinfo.com,makeupkey.ru,mamabook.com.ua,meganovosti.net,miformat.info,nagadala.com,nash-sekret.ru,newsrank.ru,newssky.com.ua,northern-newspaper.ru,ofigeno.ru,ogribax.ru,ovetryanke.ru,paratechnik.ru,podarok.video,podruzke.ru,poleznaya.dp.ua,portable-rus.ru,portalvirtualreality.ru,prostolinux.ru,putin-today.ru,pzik.ru,rainbowsky.ru,roza2012.net.ua,ru-mir.net,ruslo.info,sci-fi-news.ru,sich.zp.ua,snelwilcox.com,srnsk.ru,strana-it.ru,svoitabachok.ru,trmzk.ru,udobreniya.net,uman24.org.ua,ustanovkaos.ru,ventilationpro.ru,walaw.ru,yconsult.ru,zdorovia.com.ua##.widget_text
 a19549 1
 kinonews.ru##a[href*="/rdrct_"]
+a19582 1
+mezha.ua##a[href*="://hator.gg/"]
 d19607 1
 a19607 1
 mezha.ua##a[href*="://telemart.ua/"]
@@ -65,7 +67,17 @@ a24006 1
 ||auto.kolesa.ru/api/*-widget?$script,domain=~auto.kolesa.ru
 a26641 1
 www.kolesa.ru##body > div[style^="position: fixed;"][style*="z-index:"]
+a26642 1
+rg.ru##div[class*="AdblockModal_wrapper_"]
 d27438 1
 a27438 1
 forum.ixbt.com##.deskadv:style(position: absolute !important; top: -10000px !important; height: 34px !important)
+a27926 2
+rg.ru##html[style*="overflow:"] > body:style(padding-right: 0 !important)
+rg.ru##html[style*="overflow:"]:style(overflow: auto !important)
 d28679 1
+a28784 1
+rg.ru##+js(addEventListener-defuser, error, (e){t(e)})
+a28985 1
+embed.rg.ru##+js(set-constant, Object.prototype.onIntersected, undefined)
+d29295 5
