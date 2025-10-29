@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 29 Oct 2025 10:32:42 +0000
-! Diff-Path: ../patches/2025.10.29.632.patch#ruadlist
+! Last modified: Wed, 29 Oct 2025 15:32:04 +0000
+! Diff-Path: ../patches/2025.10.29.932.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -15567,6 +15567,7 @@ newsazerbaijan.ru##.banner-middle
 gx.net.ua,tut.by##.banner-place
 sdelanounas.ru##.banner-post
 agroter.com.ua##.banner-promotions-wrapper
+metro-cc.ru##.banner-retail-rocket
 profi-forex.org,vl.ru##.banner-right
 dfm.ru,ivona.ua,officelife.media##.banner-section
 aum.news,kinoprofi.vip##.banner-sidebar
@@ -22373,8 +22374,8 @@ ru###ads-top.ads
 ||ru/content/stargate/*.jpg$image,~third-party
 ! ---
 ! 2ip.ru и 2ip.io
+2ip.ru##.ad-change-ip
 2ip.io,2ip.ru##.ad-test-vpn
-2ip.ru##.change-ip
 2ip.io,2ip.ru#?#.content-article p:-abp-has(> .adsbygoogle)
 2ip.io,2ip.ru##.main-ip-icon-warning
 2ip.io,2ip.ru##.main-ip-icon-warning ~ [aria-disabled]
