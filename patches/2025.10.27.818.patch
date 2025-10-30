@@ -1,17 +1,22 @@
-diff name:ruadlist lines:23 checksum:4dd0f44c32
+diff name:ruadlist lines:30 checksum:314e69827e
 d4 2
 a5 2
-! Last modified: Thu, 30 Oct 2025 06:39:35 +0000
-! Diff-Path: ../patches/2025.10.30.399.patch#ruadlist
+! Last modified: Thu, 30 Oct 2025 11:23:53 +0000
+! Diff-Path: ../patches/2025.10.30.683.patch#ruadlist
 a15569 1
 metro-cc.ru##.banner-retail-rocket
 a16515 1
 nnm-club.me,nnmclub.ro,nnmclub.to##.forumline > tbody > tr > td > center
 a19582 1
 mezha.ua##a[href*="://hator.gg/"]
+d22215 1
+a22215 1
+||pikabu.ru/ajax/*?kL8IG=$xmlhttprequest
 a22374 1
 2ip.ru##.ad-change-ip
 d22376 1
+a22573 1
+dzen.ru##[id*="_R-N-"]
 a26647 1
 rg.ru##div[class*="AdblockModal_wrapper_"]
 a27931 2
@@ -21,4 +26,6 @@ a28788 1
 rg.ru##+js(addEventListener-defuser, error, (e){t(e)})
 a28989 1
 embed.rg.ru##+js(set-constant, Object.prototype.onIntersected, undefined)
+a29173 1
+ya.ru,yandex.*##+js(remove-node-text, script, DistributionLinkBro)
 d29299 5

@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 30 Oct 2025 06:39:35 +0000
-! Diff-Path: ../patches/2025.10.30.399.patch#ruadlist
+! Last modified: Thu, 30 Oct 2025 11:23:53 +0000
+! Diff-Path: ../patches/2025.10.30.683.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22215,7 +22215,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||news.mail.ru/-/*.js?
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
-||pikabu.ru/ajax/*?q2E4T=$xmlhttprequest
+||pikabu.ru/ajax/*?kL8IG=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -22574,6 +22574,7 @@ dzen.ru##div[class*="news-advert"]
 dzen.ru##[id*="_R-A-"]
 dzen.ru##[id*="_R-E-"]
 dzen.ru##[id*="_R-I-"]
+dzen.ru##[id*="_R-N-"]
 dzen.ru##[id*="_R-O-"]
 dzen.ru##[id*="_R-Q-"]
 dzen.ru##[id*="_R-U-"]
@@ -29179,6 +29180,7 @@ smaxim.*##+js(set-constant, flashvars.protect_block, '')
 studizba.com,surl.*##+js(nano-setInterval-booster, #timer)
 3dnews.ru##video[autoplay="autoplay"]:remove-attr(autoplay)
 kino-teatr.ru,kinoafisha.info,kinonews.ru##videotronic-player:remove-attr(data-video-autoplay)
+ya.ru,yandex.*##+js(remove-node-text, script, DistributionLinkBro)
 ya.ru,yandex.*##.dist-overlay__popup:remove()
 ya.ru,yandex.*##.simple-popup__overlay:remove()
 ||1plus1.video/*/embed/*autoplay=1$subdocument,removeparam=|
