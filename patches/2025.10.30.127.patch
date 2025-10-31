@@ -1,8 +1,8 @@
-diff name:ruadlist lines:28 checksum:929bb26a46
+diff name:ruadlist lines:34 checksum:753f65aba4
 d4 2
 a5 2
-! Last modified: Thu, 30 Oct 2025 21:24:38 +0000
-! Diff-Path: ../patches/2025.10.30.1284.patch#ruadlist
+! Last modified: Fri, 31 Oct 2025 02:05:09 +0000
+! Diff-Path: ../patches/2025.10.31.125.patch#ruadlist
 d10096 1
 a10096 1
 rutube.ru##.application-module__additionalContent
@@ -27,3 +27,9 @@ d26582 1
 d26657 1
 a29181 1
 ya.ru,yandex.*##+js(remove-node-text, script, DistributionLinkBro)
+a29306 5
+! Patephone
+patephone.com###yba-wrap
+patephone.com##+js(no-setTimeout-if, lastTick)
+patephone.com##+js(set-local-storage-item, rwDemo, $remove$)
+patephone.com##.reward-info
