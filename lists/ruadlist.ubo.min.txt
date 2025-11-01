@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 01 Nov 2025 13:29:15 +0000
-! Diff-Path: ../patches/2025.11.1.809.patch#ruadlist
+! Last modified: Sat, 01 Nov 2025 18:33:54 +0000
+! Diff-Path: ../patches/2025.11.1.1113.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -8788,7 +8788,6 @@ by,~mail.ru,ru,ua##.banner_box
 ##a[href*="://softclicks.ru/"]
 ##a[href*="://sugisatomi.com/"]
 ##a[href*="://superiortds.ru/"]
-~2ip.ru,~sx.org##a[href*="://sx.org/"]
 ##a[href*="://takenewsoft.ru/"]
 ##a[href*="://tatarkoresh.ru"]
 ##a[href*="://tdsrotations.ru/"]
@@ -22391,6 +22390,7 @@ ru###ads-top.ads
 2ip.io,2ip.ru##a[href*="://hdmnm"]
 2ip.io,2ip.ru##a[href*="://hidem"]
 2ip.io,2ip.ru##a[href*="://proxyelite.info"]
+2ip.io,2ip.ru##a[href*="://sx.org/"]
 2ip.io,2ip.ru##a[href*="adBannerRedirector"]
 2ip.io,2ip.ru##a[href*="proxyshare.com/"]
 2ip.io,2ip.ru##nav a[target="_blank"]
@@ -22409,7 +22409,6 @@ ru###ads-top.ads
 ||hidemyname.net^$third-party,popup
 ||proxyelite.info^$third-party,popup
 ||proxyshare.com^$third-party,popup
-||sx.org^$third-party,popup
 ! Avito
 www.avito.ru##div[class^="advert-"]
 www.avito.ru##div[class^="items-ads-"]
