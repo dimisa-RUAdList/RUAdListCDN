@@ -1,8 +1,8 @@
-diff name:ruadlist lines:63 checksum:dc8ba3053d
+diff name:ruadlist lines:69 checksum:73fa41c241
 d4 2
 a5 2
-! Last modified: Sat, 01 Nov 2025 08:31:59 +0000
-! Diff-Path: ../patches/2025.11.1.511.patch#ruadlist
+! Last modified: Sat, 01 Nov 2025 13:29:15 +0000
+! Diff-Path: ../patches/2025.11.1.809.patch#ruadlist
 d10096 1
 a10096 1
 rutube.ru##.application-module__additionalContent
@@ -25,18 +25,22 @@ a18694 1
 112.ua,inkorr.com##.vertical__banner
 a19582 1
 mezha.ua##a[href*="://hator.gg/"]
+a21461 1
+news.ru##div[style="min-height: 250px; margin: 15px 0"]
 a21909 1
 112.ua,inkorr.com##p[style="margin-top:-18px;font-size:12px;margin-bottom: 40px;"]
 a21927 1
 byxatab.com##section.sect.sect--bdt:nth-of-type(1)
 d22215 1
 a22215 1
-||pikabu.ru/ajax/*?kL8IG=$xmlhttprequest
+||pikabu.ru/ajax/*?R987u=$xmlhttprequest
 a22374 1
 2ip.ru##.ad-change-ip
 d22376 1
 a22573 1
 dzen.ru##[id*="_R-N-"]
+a23356 1
+sports.ru##div[id$="-notification-container"]
 a23446 1
 ya.ru##body > div[data-hydration-id] > [href^="https://yabs.yandex.ru/count/"] + div
 d26492 1
@@ -49,6 +53,7 @@ d26653 1
 a27931 2
 rg.ru##html[style*="overflow:"] > body:style(padding-right: 0 !important)
 rg.ru##html[style*="overflow:"]:style(overflow: auto !important)
+d28051 1
 a28788 1
 rg.ru##+js(addEventListener-defuser, error, (e){t(e)})
 a28989 1
@@ -56,9 +61,10 @@ embed.rg.ru##+js(set-constant, Object.prototype.onIntersected, undefined)
 a29173 1
 ya.ru,yandex.*##+js(remove-node-text, script, DistributionLinkBro)
 d29299 5
-a29303 5
+a29303 6
 ! Patephone
 patephone.com###yba-wrap
 patephone.com##+js(no-setTimeout-if, lastTick)
 patephone.com##+js(set-local-storage-item, rwDemo, $remove$)
+patephone.com##+js(set-local-storage-item, rws, $remove$)
 patephone.com##.reward-info

@@ -1,8 +1,8 @@
-diff name:ruadlist lines:51 checksum:dc8ba3053d
+diff name:ruadlist lines:57 checksum:73fa41c241
 d4 2
 a5 2
-! Last modified: Sat, 01 Nov 2025 08:31:59 +0000
-! Diff-Path: ../patches/2025.11.1.511.patch#ruadlist
+! Last modified: Sat, 01 Nov 2025 13:29:15 +0000
+! Diff-Path: ../patches/2025.11.1.809.patch#ruadlist
 d10096 1
 a10096 1
 rutube.ru##.application-module__additionalContent
@@ -23,18 +23,22 @@ che.cn.ua#?#.ot-mod-outer:-abp-has([src*="/images/banners/"]:not([alt="checnua@g
 d18694 1
 a18694 1
 112.ua,inkorr.com##.vertical__banner
+a21462 1
+news.ru##div[style="min-height: 250px; margin: 15px 0"]
 a21910 1
 112.ua,inkorr.com##p[style="margin-top:-18px;font-size:12px;margin-bottom: 40px;"]
 a21928 1
 byxatab.com##section.sect.sect--bdt:nth-of-type(1)
 d22216 1
 a22216 1
-||pikabu.ru/ajax/*?kL8IG=$xmlhttprequest
+||pikabu.ru/ajax/*?R987u=$xmlhttprequest
 a22375 1
 2ip.ru##.ad-change-ip
 d22377 1
 a22574 1
 dzen.ru##[id*="_R-N-"]
+a23357 1
+sports.ru##div[id$="-notification-container"]
 a23447 1
 ya.ru##body > div[data-hydration-id] > [href^="https://yabs.yandex.ru/count/"] + div
 d26493 1
@@ -42,11 +46,13 @@ a26493 1
 @@||yandex.ru/ads/system/adsdk.js$script,domain=aniboom.one|api-video.khl.ru|gisher.org|karaoke.ru|kino.tricolor.tv|m24.ru|peers.tv|player.mediavitrina.ru|ren.tv
 d26580 1
 d26655 1
+d28055 1
 a29179 1
 ya.ru,yandex.*##+js(remove-node-text, script, DistributionLinkBro)
-a29304 5
+a29304 6
 ! Patephone
 patephone.com###yba-wrap
 patephone.com##+js(no-setTimeout-if, lastTick)
 patephone.com##+js(set-local-storage-item, rwDemo, $remove$)
+patephone.com##+js(set-local-storage-item, rws, $remove$)
 patephone.com##.reward-info

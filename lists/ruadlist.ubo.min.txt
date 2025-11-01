@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 01 Nov 2025 08:31:59 +0000
-! Diff-Path: ../patches/2025.11.1.511.patch#ruadlist
+! Last modified: Sat, 01 Nov 2025 13:29:15 +0000
+! Diff-Path: ../patches/2025.11.1.809.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21464,6 +21464,7 @@ voennoedelo.com##div[style="margin: 20px auto; height: 300px; width: 910px;"]
 sdamgia.ru##div[style="margin:0; position:relative"]
 holm.ru##div[style="max-height:250px"]
 gagadget.com##div[style="min-height: 249px;"]
+news.ru##div[style="min-height: 250px; margin: 15px 0"]
 meteopost.com##div[style="min-height: 300px;"]
 my.mosenergosbyt.ru#?#div[style="min-height: 50px;"]:-abp-has(> img[src*="/file/id_content:"])
 gagadget.com##div[style="min-height: 89px;"]
@@ -22219,7 +22220,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||news.mail.ru/-/*.js?
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
-||pikabu.ru/ajax/*?kL8IG=$xmlhttprequest
+||pikabu.ru/ajax/*?R987u=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -23362,6 +23363,7 @@ sports.ru##div[data-control-noinit="Common.BetsTabs"]
 sports.ru##div[data-control="Common.AutoInit"]
 sports.ru##div[data-control^="Common.Bets"]
 tribuna.com##div[data-test="bookie-widget"]
+sports.ru##div[id$="-notification-container"]
 tribuna.com#?#div[style="display: contents;"] > div:-abp-has(> a[href="/betting/bonuses/"])
 sports.ru##p > a[rel="nofollow"] > img[height][width]
 sports.ru#?#p:-abp-has(> a[href]:-abp-contains(М.Видео))
@@ -28058,7 +28060,6 @@ sports.ru###branding-layout > * > *:style(pointer-events: auto !important)
 sports.ru###branding-layout > a:style(width: 0 !important; height: 0 !important; left:-10000px !important)
 sports.ru###branding-layout:not(#id):style(padding-top: 0 !important)
 sports.ru###branding-layout:style(pointer-events: none !important)
-sports.ru###ya-antiadblock-notification-container
 sports.ru##.columns-layout__right > div > div[id][class]:style(min-height: 0 !important)
 sports.ru##.x5-popup-overlay
 sports.ru##:not(.nba-global-nav-wrapper) + #branding-layout:not(#id):style(margin-top: 96px !important)
@@ -29313,6 +29314,7 @@ mail.ru#@#body:not(.js-module) .tabs + div[class]:style(min-width: fit-content !
 patephone.com###yba-wrap
 patephone.com##+js(no-setTimeout-if, lastTick)
 patephone.com##+js(set-local-storage-item, rwDemo, $remove$)
+patephone.com##+js(set-local-storage-item, rws, $remove$)
 patephone.com##.reward-info
 ! Softportal - https://github.com/uBlockOrigin/uBlock-issues/issues/2246
 !#if env_firefox
