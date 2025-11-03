@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 03 Nov 2025 10:34:16 +0000
-! Diff-Path: ../patches/2025.11.3.634.patch#ruadlist
+! Last modified: Mon, 03 Nov 2025 15:29:57 +0000
+! Diff-Path: ../patches/2025.11.3.929.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10310,7 +10310,7 @@ surl.*#?#.text-center:-abp-has(> form > .disabled) > p ~ *
 ||psxplanet.ru/forum/clientscript/ny20
 ||radioroks.ua^$domain=megatrack.top
 ||rbk.ru/*/scripts/build/fn/_pushAllow.js
-||searchfloor.org/static/*/help-project-modal-
+||searchfloor.*/help-project-modal-
 ||senior.ua/disable/request-banner
 ||shokru.com/wp-content/plugins/elegance-modal-box/
 ||sim-portal.ru/jfbe7r9.js
@@ -22873,6 +22873,7 @@ fontanka.ru#?#[class*="pictureDayBlock_"] li:-abp-has(> a[href*="/?erid="])
 fontanka.ru##[data-io-article-url] > [itemprop="articleBody"] ~ p[class]
 ru##[data-ns-portal] .notify-messages-popups
 ru##[data-ns-portal] [data-adv-mark]
+ru##[data-ns-portal] aside > div[class^="promocodeBlock_"]
 ru##[data-ns-portal] div[class^="topicsInlineAdv"]
 ru##[data-ns-portal] div[class^="topicsList"] a[href*="erid="]
 ru##[data-ns-portal] div[class^="wrap_"][class$=" gridFullMobile"]:empty
@@ -28108,6 +28109,7 @@ surl.li##.redirect-button:style(pointer-events: auto !important; opacity: 1 !imp
 ! ---
 tapochek.net##.lenta_scrollable.poster:style(border: none !important)
 ! исправление ошибок и косяков оригинальной вёрстки
+tapochek.net##.download-torrent-btn:style(font-size: 17px !important)
 tapochek.net##.lenta-tooltips-container > .tooltip-container:style(top: 43px !important; position: fixed !important)
 ! ---
 tass.ru##div[class^="LoopChannelPlaceholder_bottom"]:style(background: none !important)
@@ -28755,7 +28757,6 @@ softportal.com##+js(abort-on-property-read, window.block)
 growhow.in.ua##+js(abort-on-property-read, wpsite_clickable_data)
 80-e.ru,doramatv.live,examenpdd.com,forum.ixbt.com,rg.ru,shadowcore.ru##+js(abort-on-property-read, yaContextCb)
 animedia.tv,animedub.ru,vsetut.su##+js(abort-on-property-read, zfgformats)
-searchfloor.org##+js(abort-on-property-write, HelpProjectPromo)
 transkarpatia.net##+js(abort-on-property-write, NiceScroll)
 24pdd.ru##+js(abort-on-property-write, adsBlocked)
 doctorrouter.ru,ranobe-novels.ru,tests24.su##+js(abort-on-property-write, ai_front)
@@ -29182,6 +29183,7 @@ porno365.*##+js(abort-on-stack-trace, Object.prototype.parallax, window.onload)
 pornopuk.com,huyamba.tv,piratam.net,piratca.net,porn720.biz,pornoakt.*,sexitorrent.com,sextor.org,domahatv.com,torrent-pirat.com,xtorrent.net,rapidzona.tv,xxxrip.net,hentai-mood.me,xxxtor.com,hentai-share.one,3dn.ru##+js(abort-current-inline-script, document.querySelectorAll, popMagic)
 rudub.*##.details__bg
 rudub.*##body > section[class*="section details"]:style(padding-top: 70px !important)
+searchfloor.*##+js(abort-on-property-write, HelpProjectPromo)
 tochka.by##section:remove-class(brand)
 kanobu.ru#?#section[class^="MaterialsManufacturerPage_infiniteWrap"] > div[class^="InfiniteScrollWrap_content"] > [class*="MaterialItemPage_materialSection"]:-abp-has(> .knb-grid-container > [data-io-article-url] [class^="TextContent_text"] > p:-abp-contains(/^Реклама:/)) [class^="material-content_"] a[href][target="_blank"]:not([href^="https://kanobu.ru/"]):style(color: inherit !important; pointer-events: none !important)
 igromania.ru#?#section[class^="MaterialsManufacturerPage_infiniteWrap"] > div[class^="InfiniteScrollWrap_content"] > [class*="MaterialItemPage_materialSection"]:-abp-has(> .knb-grid-container > [data-io-article-url] [class^="TextContent_text"] > p:-abp-contains(/^Реклама:/)) [class^="material-content_"] a[href][target="_blank"]:not([href^="https://www.igromania.ru/"]):style(color: inherit !important; pointer-events: none !important)
@@ -29409,11 +29411,11 @@ gazeta.ru,lenta.ru,secretmag.ru,wmj.ru##iframe[src^="https://vp.rambler.ru/playe
 !#endif
 !#if env_mv3
 afisha.ru,autorambler.ru,championat.com,eda.ru,gazeta.ru,lenta.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,rambler.ru,wmj.ru##+js(abort-current-inline-script, dispatchEvent, zoomdecorate)
-searchfloor.org##+js(addEventListener-defuser, DOMContentLoaded, isDonatePage)
 dtf.ru##+js(addEventListener-defuser, click, '', elements, a[href^="/"][data-router-link])
 e.mail.ru##+js(no-setTimeout-if, '()=>n()', 50)
 e.mail.ru##+js(set-constant, Object.prototype.hasAdBlock, false)
 e.mail.ru#@#+js(set-constant, Object.prototype.hasAdBlock, null)
+searchfloor.*##+js(addEventListener-defuser, DOMContentLoaded, isDonatePage)
 vk.com/video_ext.php##+js(addEventListener-defuser, message, '', elements, window)
 vk.com/video_ext.php##+js(set-constant, Object.prototype.autoplay, undefined)
 vk.ru/video_ext.php##+js(addEventListener-defuser, message, '', elements, window)
