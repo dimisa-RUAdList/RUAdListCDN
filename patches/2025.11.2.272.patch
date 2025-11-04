@@ -1,8 +1,8 @@
-diff name:ruadlist lines:69 checksum:a4185015b6
+diff name:ruadlist lines:76 checksum:b9b41eced8
 d4 2
 a5 2
-! Last modified: Tue, 04 Nov 2025 11:25:51 +0000
-! Diff-Path: ../patches/2025.11.4.685.patch#ruadlist
+! Last modified: Tue, 04 Nov 2025 16:34:57 +0000
+! Diff-Path: ../patches/2025.11.4.994.patch#ruadlist
 d8993 1
 a8993 1
 ##a[href^="https://wcm"][href*="weborama"][href*="/fcgi-bin/dispatch.fcgi?"]
@@ -55,16 +55,23 @@ d29123 1
 a29178 1
 searchfloor.*##+js(abort-on-property-write, HelpProjectPromo)
 d29195 1
+d29231 6
 a29317 4
 ! Hsmedia автоплей на Shkulev Media
 116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,www.fontanka.ru,ya62.ru##+js(set-attr, [class^="articleBlockVideo_"] video[src*="hsmedia.ru/"], controls, true)
 116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,www.fontanka.ru,ya62.ru##[class^="articleBlockVideo_"] video[src*="hsmedia.ru/"] ~ button
 ||cdn.hsmedia.ru/ump-webapp-public/dist/client/assets/ArticleBlockVideo-$script
-a29330 4
+a29330 10
 ! VK player, на сторонних сайтах
 vk.com/video_ext.php##+js(set-constant, Object.prototype.autoplay, undefined)
 vk.ru/video_ext.php##+js(set-constant, Object.prototype.autoplay, undefined)
 vkvideo.ru/video_ext.php##+js(set-constant, Object.prototype.autoplay, undefined)
+||vk.com/video_ext.php?$third-party,subdocument,removeparam=autoplay,domain=~mediahope.ru
+||vk.com/video_ext.php?*autoplay=1$third-party,removeparam=js_api
+||vk.ru/video_ext.php?$third-party,subdocument,removeparam=autoplay
+||vk.ru/video_ext.php?*autoplay=1$third-party,removeparam=js_api
+||vkvideo.ru/video_ext.php?$third-party,subdocument,removeparam=autoplay
+||vkvideo.ru/video_ext.php?*autoplay=1$third-party,removeparam=js_api
 d29410 6
 a29415 1
 searchfloor.*##+js(addEventListener-defuser, DOMContentLoaded, isDonatePage)
