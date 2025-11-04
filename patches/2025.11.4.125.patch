@@ -1,5 +1,27 @@
-diff name:ruadlist lines:4 checksum:2ca1441bc4
+diff name:ruadlist lines:26 checksum:a4185015b6
 d4 2
 a5 2
-! Last modified: Tue, 04 Nov 2025 06:41:55 +0000
-! Diff-Path: ../patches/2025.11.4.401.patch#ruadlist
+! Last modified: Tue, 04 Nov 2025 11:25:51 +0000
+! Diff-Path: ../patches/2025.11.4.685.patch#ruadlist
+a19097 2
+igromania.ru,kanobu.ru##[class^="PlotWithMaterials_plots_"] [class*="_tabs"] > button ~ button
+igromania.ru,kanobu.ru#?#[class^="PlotWithMaterials_plots_"]:-abp-has(> div [class*="_tabs"] > button ~ button[class*="_active_"]) [class^="PlotWithMaterials_head_"] ~ div
+d21948 2
+a22428 2
+adblock-tester.com,checkadblock.ru###app > .description
+adblock-tester.com,checkadblock.ru##footer
+d22430 1
+d28964 1
+d29131 1
+d29204 1
+a29326 4
+! Hsmedia автоплей на Shkulev Media
+116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,www.fontanka.ru,ya62.ru##+js(set-attr, [class^="articleBlockVideo_"] video[src*="hsmedia.ru/"], controls, true)
+116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,www.fontanka.ru,ya62.ru##[class^="articleBlockVideo_"] video[src*="hsmedia.ru/"] ~ button
+||cdn.hsmedia.ru/ump-webapp-public/dist/client/assets/ArticleBlockVideo-$script
+a29339 4
+! VK player, на сторонних сайтах
+vk.com/video_ext.php##+js(set-constant, Object.prototype.autoplay, undefined)
+vk.ru/video_ext.php##+js(set-constant, Object.prototype.autoplay, undefined)
+vkvideo.ru/video_ext.php##+js(set-constant, Object.prototype.autoplay, undefined)
+d29420 6

@@ -1,8 +1,8 @@
-diff name:ruadlist lines:70 checksum:2ca1441bc4
+diff name:ruadlist lines:92 checksum:a4185015b6
 d4 2
 a5 2
-! Last modified: Tue, 04 Nov 2025 06:41:55 +0000
-! Diff-Path: ../patches/2025.11.4.401.patch#ruadlist
+! Last modified: Tue, 04 Nov 2025 11:25:51 +0000
+! Diff-Path: ../patches/2025.11.4.685.patch#ruadlist
 d8791 1
 d8994 1
 a8994 1
@@ -27,6 +27,9 @@ news.ru##.samolet-ad
 d18698 1
 a18698 1
 112.ua,inkorr.com##.vertical__banner
+a19094 2
+igromania.ru,kanobu.ru##[class^="PlotWithMaterials_plots_"] [class*="_tabs"] > button ~ button
+igromania.ru,kanobu.ru#?#[class^="PlotWithMaterials_plots_"]:-abp-has(> div [class*="_tabs"] > button ~ button[class*="_active_"]) [class^="PlotWithMaterials_head_"] ~ div
 a19413 2
 sport24.ru##[style="cursor: pointer;"]
 sport24.ru##[style="cursor:pointer"]
@@ -40,12 +43,17 @@ a21914 1
 112.ua,inkorr.com##p[style="margin-top:-18px;font-size:12px;margin-bottom: 40px;"]
 a21932 1
 byxatab.com##section.sect.sect--bdt:nth-of-type(1)
+d21941 2
 d22220 1
 a22220 1
 ||pikabu.ru/ajax/*?R987u=$xmlhttprequest
 a22390 1
 2ip.io,2ip.ru##a[href*="://sx.org/"]
 d22409 1
+a22421 2
+adblock-tester.com,checkadblock.ru###app > .description
+adblock-tester.com,checkadblock.ru##footer
+d22423 1
 a22869 1
 ru##[data-ns-portal] aside > div[class^="promocodeBlock_"]
 a23325 1
@@ -63,9 +71,23 @@ d28759 1
 d28768 1
 a28768 1
 dtf.ru##+js(abort-on-stack-trace, window.setTimeout, '$3 ')
+d28954 1
+d29121 1
 a29176 1
 searchfloor.*##+js(abort-on-property-write, HelpProjectPromo)
+d29193 1
 a29313 1
 patephone.com##+js(set-local-storage-item, rws, $remove$)
-a29406 1
+a29314 4
+! Hsmedia автоплей на Shkulev Media
+116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,www.fontanka.ru,ya62.ru##+js(set-attr, [class^="articleBlockVideo_"] video[src*="hsmedia.ru/"], controls, true)
+116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,www.fontanka.ru,ya62.ru##[class^="articleBlockVideo_"] video[src*="hsmedia.ru/"] ~ button
+||cdn.hsmedia.ru/ump-webapp-public/dist/client/assets/ArticleBlockVideo-$script
+a29327 4
+! VK player, на сторонних сайтах
+vk.com/video_ext.php##+js(set-constant, Object.prototype.autoplay, undefined)
+vk.ru/video_ext.php##+js(set-constant, Object.prototype.autoplay, undefined)
+vkvideo.ru/video_ext.php##+js(set-constant, Object.prototype.autoplay, undefined)
+d29407 6
+a29412 1
 searchfloor.*##+js(addEventListener-defuser, DOMContentLoaded, isDonatePage)
