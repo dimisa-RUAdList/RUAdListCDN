@@ -1,11 +1,14 @@
-diff name:ruadlist lines:34 checksum:c174b7103b
+diff name:ruadlist lines:43 checksum:5da252ac10
 d4 2
 a5 2
-! Last modified: Wed, 05 Nov 2025 17:29:10 +0000
-! Diff-Path: ../patches/2025.11.5.1049.patch#ruadlist
+! Last modified: Wed, 05 Nov 2025 22:28:43 +0000
+! Diff-Path: ../patches/2025.11.5.1348.patch#ruadlist
+d10019 1
 d20488 1
 a20488 1
 anifap.com,anifap.xyz,anitokyo.tv,anitokyo1.top##body.playerCode > div[style^="position: absolute;"][onclick]
+a20643 1
+rg.ru##div[class*="_fox__"]
 d22227 1
 a22227 1
 ||pikabu.ru/ajax/*?R986u=$xmlhttprequest
@@ -20,16 +23,22 @@ anitokyo.tv,anitokyo1.top##.container > header:style(margin-top: 10px !important
 anitokyo.tv,anitokyo1.top##.topside::after
 anitokyo.tv,anitokyo1.top##.topside::before
 anitokyo.tv,anitokyo1.top##.topside:style(max-width: 99.8% !important)
+a27946 2
+rg.ru###cookie-consent
+rg.ru###cookie-consent ~ [class*="_root_"]:style(top: unset !important)
 d28659 1
 a28659 1
 anifap.com,anifap.xyz,anipoisk.org,anitokyo.tv,anitokyo1.top,hcdn.online,kinofilm.co##+js(abort-on-property-read, ClickUndercookie)
+d28779 1
+a28779 1
+dtf.ru##+js(abort-on-stack-trace, window.setTimeout, '$R ')
 d28805 1
 a28805 1
 aione.ru,carservic.ru,iptv.org.ua,newxboxone.ru,tva.org.ua,ufchgu.ru##+js(addEventListener-defuser, copy, pagelink)
 a29312 3
 ! Book service read&download
-booksreed.ru,novkniga.ru,skanbooks.ru##+js(href-sanitizer, .specialcontdown > a[href^="/download?downloadlink="], ?downloadlink)
-booksreed.ru,novkniga.ru,skanbooks.ru##+js(set-attr, .specialcontdown > a, download)
+booksreed.ru,electrobooks.ru,novkniga.ru,skanbooks.ru##+js(href-sanitizer, .specialcontdown > a[href^="/download?downloadlink="], ?downloadlink)
+booksreed.ru,electrobooks.ru,novkniga.ru,skanbooks.ru##+js(set-attr, .specialcontdown > a, download)
 a29345 2
 ! Телеканал Царьград
 ||vk.com/video_ext.php?oid=-75679763&id=$csp=connect-src 'self' *.okcdn.ru

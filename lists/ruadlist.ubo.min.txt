@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 05 Nov 2025 17:29:10 +0000
-! Diff-Path: ../patches/2025.11.5.1049.patch#ruadlist
+! Last modified: Wed, 05 Nov 2025 22:28:43 +0000
+! Diff-Path: ../patches/2025.11.5.1348.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10016,7 +10016,6 @@ nikopolnews.net###button-contact-vr
 samsebevoin.ru,westnews.info###cboxOverlay
 fishki.net###chrome_popup
 dnepr24.com.ua,gazeta.zp.ua,kherson.net.ua,kr24.com.ua,nikolaev24.com.ua,odessa.net.ua,samsebevoin.ru,westnews.info###colorbox
-rg.ru###cookie-consent
 olx.kz,olx.ua,olx.uz###div-gpt-listing-full-screen-container
 trashbox.ru###div_modal_rolbot_placeholder
 gitarkin.ru###dropin
@@ -20641,6 +20640,7 @@ fex.net##div[class*="__ads-"]
 mydiv.net##div[class*="__bot-ad"]
 mydiv.net##div[class*="__top-ad"]
 sovsport.ru##div[class*="_bonusLogo"]
+rg.ru##div[class*="_fox__"]
 poltavawave.com.ua##div[class*="_place__"]
 www.eg.ru##div[class*="_promocodes "]
 tass.ru##div[class*="_top_ad_"]
@@ -27945,6 +27945,8 @@ rezka.biz##.container > #content:style(margin-top: unset !important)
 ! ---
 rezkahd.life##.have-brand .wrap:style(margin-top: 0 !important)
 ! ---
+rg.ru###cookie-consent
+rg.ru###cookie-consent ~ [class*="_root_"]:style(top: unset !important)
 rg.ru##div[class*="_spiegelWrapper"]:style(padding-top: 0 !important)
 rg.ru##div[class^="PageMediaContentVideo_mainContent"]:style(min-height: 0 !important)
 rg.ru##div[class^="Page_main"][style*="min-height:"]:style(min-height: 0 !important)
@@ -28777,7 +28779,7 @@ ya.ru##+js(abort-on-stack-trace, Object.prototype.loadAdvertScriptMode, /yastati
 shadowcore.ru##+js(abort-on-stack-trace, document.createElement, checkAboba)
 ai-next.ru##+js(abort-on-stack-trace, document.getElementById, /723-|ai-2-/)
 forums.rusmedserv.com##+js(abort-on-stack-trace, fetch, eval)
-dtf.ru##+js(abort-on-stack-trace, window.setTimeout, '$3 ')
+dtf.ru##+js(abort-on-stack-trace, window.setTimeout, '$R ')
 7days.ru##+js(addEventListener-defuser, /^(?:contextmenu|keydown)$/)
 drive2.ru,shedevrum.ai##+js(addEventListener-defuser, /beforeunload|pagehide/, 0x)
 fastpic.org,~new.fastpic.org##+js(addEventListener-defuser, /click|load/, popMagic)
@@ -29312,8 +29314,8 @@ mail.ru##[slot="main-column"] > .tabs:matches-media((max-width: 1280px)):style(h
 mail.ru#@#body:not(.js-module) .tabs + div[class]:style(min-width: fit-content !important)
 !#endif
 ! Book service read&download
-booksreed.ru,novkniga.ru,skanbooks.ru##+js(href-sanitizer, .specialcontdown > a[href^="/download?downloadlink="], ?downloadlink)
-booksreed.ru,novkniga.ru,skanbooks.ru##+js(set-attr, .specialcontdown > a, download)
+booksreed.ru,electrobooks.ru,novkniga.ru,skanbooks.ru##+js(href-sanitizer, .specialcontdown > a[href^="/download?downloadlink="], ?downloadlink)
+booksreed.ru,electrobooks.ru,novkniga.ru,skanbooks.ru##+js(set-attr, .specialcontdown > a, download)
 ! Patephone
 patephone.com###yba-wrap
 patephone.com##+js(no-setTimeout-if, lastTick)
