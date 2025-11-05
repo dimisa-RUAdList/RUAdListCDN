@@ -1,5 +1,32 @@
-diff name:ruadlist lines:4 checksum:c226d99c09
+diff name:ruadlist lines:31 checksum:585340a8ca
 d4 2
 a5 2
-! Last modified: Wed, 05 Nov 2025 07:27:19 +0000
-! Diff-Path: ../patches/2025.11.5.447.patch#ruadlist
+! Last modified: Wed, 05 Nov 2025 12:58:02 +0000
+! Diff-Path: ../patches/2025.11.5.778.patch#ruadlist
+d20488 1
+a20488 1
+anifap.com,anifap.xyz,anitokyo.tv,anitokyo1.top##body.playerCode > div[style^="position: absolute;"][onclick]
+d22227 1
+a22227 1
+||pikabu.ru/ajax/*?R986u=$xmlhttprequest
+d22387 1
+a22387 1
+2ip.io,2ip.ru##.ad-change-ip
+a22389 1
+2ip.io,2ip.ru##.ip-icon-x-eye
+d26889 4
+a26892 4
+anitokyo.tv,anitokyo1.top##.container > header:style(margin-top: 10px !important)
+anitokyo.tv,anitokyo1.top##.topside::after
+anitokyo.tv,anitokyo1.top##.topside::before
+anitokyo.tv,anitokyo1.top##.topside:style(max-width: 99.8% !important)
+d28659 1
+a28659 1
+anifap.com,anifap.xyz,anipoisk.org,anitokyo.tv,anitokyo1.top,hcdn.online,kinofilm.co##+js(abort-on-property-read, ClickUndercookie)
+d28805 1
+a28805 1
+aione.ru,carservic.ru,iptv.org.ua,newxboxone.ru,tva.org.ua,ufchgu.ru##+js(addEventListener-defuser, copy, pagelink)
+a29312 3
+! Book service read&download
+booksreed.ru,novkniga.ru,skanbooks.ru##+js(href-sanitizer, .specialcontdown > a[href^="/download?downloadlink="], ?downloadlink)
+booksreed.ru,novkniga.ru,skanbooks.ru##+js(set-attr, .specialcontdown > a, download)

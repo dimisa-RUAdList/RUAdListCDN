@@ -1,8 +1,8 @@
-diff name:ruadlist lines:91 checksum:c226d99c09
+diff name:ruadlist lines:115 checksum:585340a8ca
 d4 2
 a5 2
-! Last modified: Wed, 05 Nov 2025 07:27:19 +0000
-! Diff-Path: ../patches/2025.11.5.447.patch#ruadlist
+! Last modified: Wed, 05 Nov 2025 12:58:02 +0000
+! Diff-Path: ../patches/2025.11.5.778.patch#ruadlist
 d8791 1
 d8994 1
 a8994 1
@@ -30,13 +30,21 @@ sport24.ru##[style="cursor:pointer"]
 a19414 1
 sport24.ru##[style="padding: 0.25rem;"][aria-expanded="false"]
 d19585 1
+d20481 1
+a20481 1
+anifap.com,anifap.xyz,anitokyo.tv,anitokyo1.top##body.playerCode > div[style^="position: absolute;"][onclick]
 d20594 1
 a21466 1
 news.ru##div[style="min-height: 250px; margin: 15px 0"]
 d21943 2
 d22222 1
 a22222 1
-||pikabu.ru/ajax/*?R987u=$xmlhttprequest
+||pikabu.ru/ajax/*?R986u=$xmlhttprequest
+d22382 1
+a22382 1
+2ip.io,2ip.ru##.ad-change-ip
+a22384 1
+2ip.io,2ip.ru##.ip-icon-x-eye
 a22392 1
 2ip.io,2ip.ru##a[href*="://sx.org/"]
 d22411 1
@@ -54,19 +62,35 @@ d23365 1
 a23365 2
 sports.ru##div[id$="-notification-container"]
 tribuna.com#?#div[style="display: contents;"] > div:-abp-has(> a[href*="/betting/bonuses/"])
+d26879 4
+a26882 4
+anitokyo.tv,anitokyo1.top##.container > header:style(margin-top: 10px !important)
+anitokyo.tv,anitokyo1.top##.topside::after
+anitokyo.tv,anitokyo1.top##.topside::before
+anitokyo.tv,anitokyo1.top##.topside:style(max-width: 99.8% !important)
 d28061 1
 a28104 1
 tapochek.net##.download-torrent-btn:style(font-size: 17px !important)
+d28649 1
+a28649 1
+anifap.com,anifap.xyz,anipoisk.org,anitokyo.tv,anitokyo1.top,hcdn.online,kinofilm.co##+js(abort-on-property-read, ClickUndercookie)
 d28761 1
 d28770 1
 a28770 1
 dtf.ru##+js(abort-on-stack-trace, window.setTimeout, '$3 ')
+d28796 1
+a28796 1
+aione.ru,carservic.ru,iptv.org.ua,newxboxone.ru,tva.org.ua,ufchgu.ru##+js(addEventListener-defuser, copy, pagelink)
 d28956 1
 d29123 1
 a29178 1
 searchfloor.*##+js(abort-on-property-write, HelpProjectPromo)
 d29195 1
 d29231 6
+a29311 3
+! Book service read&download
+booksreed.ru,novkniga.ru,skanbooks.ru##+js(href-sanitizer, .specialcontdown > a[href^="/download?downloadlink="], ?downloadlink)
+booksreed.ru,novkniga.ru,skanbooks.ru##+js(set-attr, .specialcontdown > a, download)
 a29315 1
 patephone.com##+js(set-local-storage-item, rws, $remove$)
 a29316 4
