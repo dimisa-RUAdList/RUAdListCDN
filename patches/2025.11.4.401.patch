@@ -1,12 +1,18 @@
-diff name:ruadlist lines:77 checksum:bd622c2c58
+diff name:ruadlist lines:95 checksum:92e936c976
 d4 2
 a5 2
-! Last modified: Thu, 06 Nov 2025 13:38:23 +0000
-! Diff-Path: ../patches/2025.11.6.818.patch#ruadlist
+! Last modified: Thu, 06 Nov 2025 18:40:25 +0000
+! Diff-Path: ../patches/2025.11.6.1120.patch#ruadlist
 d10019 1
+d11160 1
+d14287 2
+d14360 2
+a15452 1
+d3.ru##.b-promo
 a17744 2
 dtf.ru##.quiz-promo
 dtf.ru##.quiz__description
+d18254 1
 a19097 2
 igromania.ru,kanobu.ru##[class^="PlotWithMaterials_plots_"] [class*="_tabs"] > button ~ button
 igromania.ru,kanobu.ru#?#[class^="PlotWithMaterials_plots_"]:-abp-has(> div [class*="_tabs"] > button ~ button[class*="_active_"]) [class^="PlotWithMaterials_head_"] ~ div
@@ -15,7 +21,16 @@ a20486 1
 anifap.com,anifap.xyz,anitokyo.tv,anitokyo1.top##body.playerCode > div[style^="position: absolute;"][onclick]
 a20641 1
 rg.ru##div[class*="_fox__"]
+a21812 4
+lurkmore.*###localNotice #aside_buttons
+lurkmore.*###localNotice .infobox
+lurkmore.*###n-Группа-в-Дискорде
+lurkmore.*###n-Канал-в-Телеграме
 d21948 2
+a21950 3
+d3.ru##section[data-uid="extraAd"]
+d3.ru##section[data-uid^="ad"]
+d3.ru##section[data-uid^="placeholder-"]
 d22227 1
 a22227 1
 ||pikabu.ru/ajax/*?R985u=$xmlhttprequest
@@ -36,6 +51,7 @@ anitokyo.tv,anitokyo1.top##.container > header:style(margin-top: 10px !important
 anitokyo.tv,anitokyo1.top##.topside::after
 anitokyo.tv,anitokyo1.top##.topside::before
 anitokyo.tv,anitokyo1.top##.topside:style(max-width: 99.8% !important)
+d27663 2
 a27945 2
 rg.ru###cookie-consent
 rg.ru###cookie-consent ~ [class*="_root_"]:style(top: unset !important)
@@ -76,3 +92,5 @@ vkvideo.ru/video_ext.php##+js(set-constant, Object.prototype.autoplay, undefined
 ! Телеканал Царьград
 ||vk.com/video_ext.php?oid=-75679763&id=$csp=connect-src 'self' *.okcdn.ru
 d29420 6
+d31247 1
+d31364 2

@@ -1,22 +1,28 @@
-diff name:ruadlist lines:96 checksum:bd622c2c58
+diff name:ruadlist lines:114 checksum:92e936c976
 d4 2
 a5 2
-! Last modified: Thu, 06 Nov 2025 13:38:23 +0000
-! Diff-Path: ../patches/2025.11.6.818.patch#ruadlist
+! Last modified: Thu, 06 Nov 2025 18:40:25 +0000
+! Diff-Path: ../patches/2025.11.6.1120.patch#ruadlist
 d8993 1
 a8993 1
 ##a[href^="https://wcm"][href*="weborama"][href*="/fcgi-bin/dispatch.fcgi?"]
 d10019 1
 a10312 1
 ||searchfloor.*/help-project-modal-
+d11159 1
 d12375 1
 a12375 1
 ||news.ru/assets/images/ad/
+d14286 2
+d14359 2
+a15451 1
+d3.ru##.b-promo
 a17743 2
 dtf.ru##.quiz-promo
 dtf.ru##.quiz__description
 a18000 1
 news.ru##.samolet-ad
+d18252 1
 a19095 2
 igromania.ru,kanobu.ru##[class^="PlotWithMaterials_plots_"] [class*="_tabs"] > button ~ button
 igromania.ru,kanobu.ru#?#[class^="PlotWithMaterials_plots_"]:-abp-has(> div [class*="_tabs"] > button ~ button[class*="_active_"]) [class^="PlotWithMaterials_head_"] ~ div
@@ -25,7 +31,16 @@ a20484 1
 anifap.com,anifap.xyz,anitokyo.tv,anitokyo1.top##body.playerCode > div[style^="position: absolute;"][onclick]
 a20639 1
 rg.ru##div[class*="_fox__"]
+a21810 4
+lurkmore.*###localNotice #aside_buttons
+lurkmore.*###localNotice .infobox
+lurkmore.*###n-Группа-в-Дискорде
+lurkmore.*###n-Канал-в-Телеграме
 d21946 2
+a21948 3
+d3.ru##section[data-uid="extraAd"]
+d3.ru##section[data-uid^="ad"]
+d3.ru##section[data-uid^="placeholder-"]
 d22225 1
 a22225 1
 ||pikabu.ru/ajax/*?R985u=$xmlhttprequest
@@ -48,6 +63,7 @@ anitokyo.tv,anitokyo1.top##.container > header:style(margin-top: 10px !important
 anitokyo.tv,anitokyo1.top##.topside::after
 anitokyo.tv,anitokyo1.top##.topside::before
 anitokyo.tv,anitokyo1.top##.topside:style(max-width: 99.8% !important)
+d27660 2
 a27942 2
 rg.ru###cookie-consent
 rg.ru###cookie-consent ~ [class*="_root_"]:style(top: unset !important)
@@ -95,3 +111,5 @@ vkvideo.ru/video_ext.php##+js(set-constant, Object.prototype.autoplay, undefined
 d29415 6
 a29420 1
 searchfloor.*##+js(addEventListener-defuser, DOMContentLoaded, isDonatePage)
+d31242 1
+d31359 2

@@ -1,19 +1,35 @@
-diff name:ruadlist lines:26 checksum:bd622c2c58
+diff name:ruadlist lines:44 checksum:92e936c976
 d4 2
 a5 2
-! Last modified: Thu, 06 Nov 2025 13:38:23 +0000
-! Diff-Path: ../patches/2025.11.6.818.patch#ruadlist
+! Last modified: Thu, 06 Nov 2025 18:40:25 +0000
+! Diff-Path: ../patches/2025.11.6.1120.patch#ruadlist
 d10019 1
+d11160 1
+d14287 2
+d14360 2
+a15452 1
+d3.ru##.b-promo
 a17744 2
 dtf.ru##.quiz-promo
 dtf.ru##.quiz__description
+d18254 1
 a20643 1
 rg.ru##div[class*="_fox__"]
+a21814 4
+lurkmore.*###localNotice #aside_buttons
+lurkmore.*###localNotice .infobox
+lurkmore.*###n-Группа-в-Дискорде
+lurkmore.*###n-Канал-в-Телеграме
+a21950 3
+d3.ru##section[data-uid="extraAd"]
+d3.ru##section[data-uid^="ad"]
+d3.ru##section[data-uid^="placeholder-"]
 d22227 1
 a22227 1
 ||pikabu.ru/ajax/*?R985u=$xmlhttprequest
 a22418 1
 www.avito.ru##div[class*="styles-module-root_animation-"]:empty
+d27665 2
 a27947 2
 rg.ru###cookie-consent
 rg.ru###cookie-consent ~ [class*="_root_"]:style(top: unset !important)
@@ -25,3 +41,5 @@ d29315 2
 a29316 2
 booksreed.ru,electrobooks.ru,novkniga.ru,skanbooks.ru##+js(href-sanitizer, .specialcontdown > a[href^="/download?downloadlink="], ?downloadlink)
 booksreed.ru,electrobooks.ru,novkniga.ru,skanbooks.ru##+js(set-attr, .specialcontdown > a, download)
+d31253 1
+d31370 2
