@@ -1,9 +1,12 @@
-diff name:ruadlist lines:71 checksum:25dc9126e2
+diff name:ruadlist lines:77 checksum:bd622c2c58
 d4 2
 a5 2
-! Last modified: Thu, 06 Nov 2025 08:36:48 +0000
-! Diff-Path: ../patches/2025.11.6.516.patch#ruadlist
+! Last modified: Thu, 06 Nov 2025 13:38:23 +0000
+! Diff-Path: ../patches/2025.11.6.818.patch#ruadlist
 d10019 1
+a17744 2
+dtf.ru##.quiz-promo
+dtf.ru##.quiz__description
 a19097 2
 igromania.ru,kanobu.ru##[class^="PlotWithMaterials_plots_"] [class*="_tabs"] > button ~ button
 igromania.ru,kanobu.ru#?#[class^="PlotWithMaterials_plots_"]:-abp-has(> div [class*="_tabs"] > button ~ button[class*="_active_"]) [class^="PlotWithMaterials_head_"] ~ div
@@ -15,12 +18,14 @@ rg.ru##div[class*="_fox__"]
 d21948 2
 d22227 1
 a22227 1
-||pikabu.ru/ajax/*?R986u=$xmlhttprequest
+||pikabu.ru/ajax/*?R985u=$xmlhttprequest
 d22387 1
 a22387 1
 2ip.io,2ip.ru##.ad-change-ip
 a22389 1
 2ip.io,2ip.ru##.ip-icon-x-eye
+a22417 1
+www.avito.ru##div[class*="styles-module-root_animation-"]:empty
 a22428 2
 adblock-tester.com,checkadblock.ru###app > .description
 adblock-tester.com,checkadblock.ru##footer
@@ -39,11 +44,12 @@ a28658 1
 anifap.com,anifap.xyz,anipoisk.org,anitokyo.tv,anitokyo1.top,hcdn.online,kinofilm.co##+js(abort-on-property-read, ClickUndercookie)
 d28778 1
 a28778 1
-dtf.ru##+js(abort-on-stack-trace, window.setTimeout, '$R ')
+dtf.ru##+js(abort-on-stack-trace, window.setTimeout, 'R https://dtf.ru/assets/index-')
 d28804 1
 a28804 1
 aione.ru,carservic.ru,iptv.org.ua,newxboxone.ru,tva.org.ua,ufchgu.ru##+js(addEventListener-defuser, copy, pagelink)
 d28964 1
+d28994 1
 d29131 1
 d29204 1
 d29240 6

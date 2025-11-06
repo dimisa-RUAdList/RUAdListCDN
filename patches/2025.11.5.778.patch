@@ -1,17 +1,26 @@
-diff name:ruadlist lines:17 checksum:25dc9126e2
+diff name:ruadlist lines:26 checksum:bd622c2c58
 d4 2
 a5 2
-! Last modified: Thu, 06 Nov 2025 08:36:48 +0000
-! Diff-Path: ../patches/2025.11.6.516.patch#ruadlist
+! Last modified: Thu, 06 Nov 2025 13:38:23 +0000
+! Diff-Path: ../patches/2025.11.6.818.patch#ruadlist
 d10019 1
+a17744 2
+dtf.ru##.quiz-promo
+dtf.ru##.quiz__description
 a20643 1
 rg.ru##div[class*="_fox__"]
+d22227 1
+a22227 1
+||pikabu.ru/ajax/*?R985u=$xmlhttprequest
+a22418 1
+www.avito.ru##div[class*="styles-module-root_animation-"]:empty
 a27947 2
 rg.ru###cookie-consent
 rg.ru###cookie-consent ~ [class*="_root_"]:style(top: unset !important)
 d28780 1
 a28780 1
-dtf.ru##+js(abort-on-stack-trace, window.setTimeout, '$R ')
+dtf.ru##+js(abort-on-stack-trace, window.setTimeout, 'R https://dtf.ru/assets/index-')
+d28995 1
 d29315 2
 a29316 2
 booksreed.ru,electrobooks.ru,novkniga.ru,skanbooks.ru##+js(href-sanitizer, .specialcontdown > a[href^="/download?downloadlink="], ?downloadlink)

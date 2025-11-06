@@ -1,8 +1,8 @@
-diff name:ruadlist lines:111 checksum:25dc9126e2
+diff name:ruadlist lines:117 checksum:bd622c2c58
 d4 2
 a5 2
-! Last modified: Thu, 06 Nov 2025 08:36:48 +0000
-! Diff-Path: ../patches/2025.11.6.516.patch#ruadlist
+! Last modified: Thu, 06 Nov 2025 13:38:23 +0000
+! Diff-Path: ../patches/2025.11.6.818.patch#ruadlist
 d8993 1
 a8993 1
 ##a[href^="https://wcm"][href*="weborama"][href*="/fcgi-bin/dispatch.fcgi?"]
@@ -19,6 +19,9 @@ a14685 1
 nim.ru###sidebar > .widget.banner:nth-child(-n+3)
 a15864 1
 sport24.ru##.bookmaker-rating
+a17741 2
+dtf.ru##.quiz-promo
+dtf.ru##.quiz__description
 a17998 1
 news.ru##.samolet-ad
 a19093 2
@@ -39,12 +42,14 @@ rg.ru##div[class*="_fox__"]
 d21943 2
 d22222 1
 a22222 1
-||pikabu.ru/ajax/*?R986u=$xmlhttprequest
+||pikabu.ru/ajax/*?R985u=$xmlhttprequest
 d22382 1
 a22382 1
 2ip.io,2ip.ru##.ad-change-ip
 a22384 1
 2ip.io,2ip.ru##.ip-icon-x-eye
+a22412 1
+www.avito.ru##div[class*="styles-module-root_animation-"]:empty
 a22423 2
 adblock-tester.com,checkadblock.ru###app > .description
 adblock-tester.com,checkadblock.ru##footer
@@ -75,11 +80,12 @@ anifap.com,anifap.xyz,anipoisk.org,anitokyo.tv,anitokyo1.top,hcdn.online,kinofil
 d28761 1
 d28770 1
 a28770 1
-dtf.ru##+js(abort-on-stack-trace, window.setTimeout, '$R ')
+dtf.ru##+js(abort-on-stack-trace, window.setTimeout, 'R https://dtf.ru/assets/index-')
 d28796 1
 a28796 1
 aione.ru,carservic.ru,iptv.org.ua,newxboxone.ru,tva.org.ua,ufchgu.ru##+js(addEventListener-defuser, copy, pagelink)
 d28956 1
+d28986 1
 d29123 1
 a29178 1
 searchfloor.*##+js(abort-on-property-write, HelpProjectPromo)
