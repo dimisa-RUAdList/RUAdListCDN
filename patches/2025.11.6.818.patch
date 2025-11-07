@@ -1,8 +1,8 @@
-diff name:ruadlist lines:22 checksum:fca5e43617
+diff name:ruadlist lines:40 checksum:4e30d193ea
 d4 2
 a5 2
-! Last modified: Fri, 07 Nov 2025 09:28:58 +0000
-! Diff-Path: ../patches/2025.11.7.568.patch#ruadlist
+! Last modified: Fri, 07 Nov 2025 14:29:35 +0000
+! Diff-Path: ../patches/2025.11.7.869.patch#ruadlist
 d11159 1
 d14286 2
 d14359 2
@@ -18,6 +18,24 @@ a21952 3
 d3.ru##section[data-uid="extraAd"]
 d3.ru##section[data-uid^="ad"]
 d3.ru##section[data-uid^="placeholder-"]
+d22202 2
+a22203 2
+||static.dzeninfra.ru/s3/zen-apps/content/$script
+||static.dzeninfra.ru/s3/zen-apps/mobile/$script
+d22229 1
+a22229 1
+||pikabu.ru/ajax/*?R984u=$xmlhttprequest
+a22587 1
+dzen.ru##[id*="8845410"]
+a22637 2
+kino.mail.ru##[data-logger="kino__Providers"]
+kino.mail.ru##[data-partner-cid]
+a23469 1
+ya.ru##body > div[data-hydration-id] > div > [src^="https://yabs.yandex.ru/count/"] + div
 d27668 2
+d29319 2
+a29320 2
+booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkniga.ru,skanbooks.ru,x-libri.ru##+js(href-sanitizer, .specialcontdown > a[href^="/download?downloadlink="], ?downloadlink)
+booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkniga.ru,skanbooks.ru,x-libri.ru##+js(set-attr, .specialcontdown > a, download)
 d31257 1
 d31374 2

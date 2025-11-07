@@ -1,8 +1,8 @@
-diff name:ruadlist lines:64 checksum:fca5e43617
+diff name:ruadlist lines:75 checksum:4e30d193ea
 d4 2
 a5 2
-! Last modified: Fri, 07 Nov 2025 09:28:58 +0000
-! Diff-Path: ../patches/2025.11.7.568.patch#ruadlist
+! Last modified: Fri, 07 Nov 2025 14:29:35 +0000
+! Diff-Path: ../patches/2025.11.7.869.patch#ruadlist
 d10019 1
 d11160 1
 d14287 2
@@ -27,9 +27,13 @@ a21950 3
 d3.ru##section[data-uid="extraAd"]
 d3.ru##section[data-uid^="ad"]
 d3.ru##section[data-uid^="placeholder-"]
+d22200 2
+a22201 2
+||static.dzeninfra.ru/s3/zen-apps/content/$script
+||static.dzeninfra.ru/s3/zen-apps/mobile/$script
 d22227 1
 a22227 1
-||pikabu.ru/ajax/*?R985u=$xmlhttprequest
+||pikabu.ru/ajax/*?R984u=$xmlhttprequest
 d22387 1
 a22387 1
 2ip.io,2ip.ru##.ad-change-ip
@@ -37,6 +41,13 @@ a22389 1
 2ip.io,2ip.ru##.ip-icon-x-eye
 a22417 1
 www.avito.ru##div[class*="styles-module-root_animation-"]:empty
+a22583 1
+dzen.ru##[id*="8845410"]
+a22633 2
+kino.mail.ru##[data-logger="kino__Providers"]
+kino.mail.ru##[data-partner-cid]
+a23465 1
+ya.ru##body > div[data-hydration-id] > div > [src^="https://yabs.yandex.ru/count/"] + div
 d26889 4
 a26892 4
 anitokyo.tv,anitokyo1.top##.container > header:style(margin-top: 10px !important)
@@ -59,7 +70,7 @@ aione.ru,carservic.ru,iptv.org.ua,newxboxone.ru,tva.org.ua,ufchgu.ru##+js(addEve
 d28994 1
 a29312 3
 ! Book service read&download
-booksreed.ru,electrobooks.ru,novkniga.ru,skanbooks.ru##+js(href-sanitizer, .specialcontdown > a[href^="/download?downloadlink="], ?downloadlink)
-booksreed.ru,electrobooks.ru,novkniga.ru,skanbooks.ru##+js(set-attr, .specialcontdown > a, download)
+booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkniga.ru,skanbooks.ru,x-libri.ru##+js(href-sanitizer, .specialcontdown > a[href^="/download?downloadlink="], ?downloadlink)
+booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkniga.ru,skanbooks.ru,x-libri.ru##+js(set-attr, .specialcontdown > a, download)
 d31249 1
 d31366 2

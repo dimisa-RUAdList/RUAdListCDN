@@ -1,8 +1,8 @@
-diff name:ruadlist lines:116 checksum:fca5e43617
+diff name:ruadlist lines:127 checksum:4e30d193ea
 d4 2
 a5 2
-! Last modified: Fri, 07 Nov 2025 09:28:58 +0000
-! Diff-Path: ../patches/2025.11.7.568.patch#ruadlist
+! Last modified: Fri, 07 Nov 2025 14:29:35 +0000
+! Diff-Path: ../patches/2025.11.7.869.patch#ruadlist
 d8993 1
 a8993 1
 ##a[href^="https://wcm"][href*="weborama"][href*="/fcgi-bin/dispatch.fcgi?"]
@@ -42,9 +42,13 @@ a21949 3
 d3.ru##section[data-uid="extraAd"]
 d3.ru##section[data-uid^="ad"]
 d3.ru##section[data-uid^="placeholder-"]
+d22199 2
+a22200 2
+||static.dzeninfra.ru/s3/zen-apps/content/$script
+||static.dzeninfra.ru/s3/zen-apps/mobile/$script
 d22226 1
 a22226 1
-||pikabu.ru/ajax/*?R985u=$xmlhttprequest
+||pikabu.ru/ajax/*?R984u=$xmlhttprequest
 d22386 1
 a22386 1
 2ip.io,2ip.ru##.ad-change-ip
@@ -56,8 +60,15 @@ a22427 2
 adblock-tester.com,checkadblock.ru###app > .description
 adblock-tester.com,checkadblock.ru##footer
 d22429 1
+a22581 1
+dzen.ru##[id*="8845410"]
+a22631 2
+kino.mail.ru##[data-logger="kino__Providers"]
+kino.mail.ru##[data-partner-cid]
 a22875 1
 ru##[data-ns-portal] aside > div[class^="promocodeBlock_"]
+a23462 1
+ya.ru##body > div[data-hydration-id] > div > [src^="https://yabs.yandex.ru/count/"] + div
 d26886 4
 a26889 4
 anitokyo.tv,anitokyo1.top##.container > header:style(margin-top: 10px !important)
@@ -89,8 +100,8 @@ d29201 1
 d29237 6
 a29317 3
 ! Book service read&download
-booksreed.ru,electrobooks.ru,novkniga.ru,skanbooks.ru##+js(href-sanitizer, .specialcontdown > a[href^="/download?downloadlink="], ?downloadlink)
-booksreed.ru,electrobooks.ru,novkniga.ru,skanbooks.ru##+js(set-attr, .specialcontdown > a, download)
+booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkniga.ru,skanbooks.ru,x-libri.ru##+js(href-sanitizer, .specialcontdown > a[href^="/download?downloadlink="], ?downloadlink)
+booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkniga.ru,skanbooks.ru,x-libri.ru##+js(set-attr, .specialcontdown > a, download)
 a29323 4
 ! Hsmedia автоплей на Shkulev Media
 116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,www.fontanka.ru,ya62.ru##+js(set-attr, [class^="articleBlockVideo_"] video[src*="hsmedia.ru/"], controls, true)

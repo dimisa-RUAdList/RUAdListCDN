@@ -1,5 +1,23 @@
-diff name:ruadlist lines:4 checksum:fca5e43617
+diff name:ruadlist lines:22 checksum:4e30d193ea
 d4 2
 a5 2
-! Last modified: Fri, 07 Nov 2025 09:28:58 +0000
-! Diff-Path: ../patches/2025.11.7.568.patch#ruadlist
+! Last modified: Fri, 07 Nov 2025 14:29:35 +0000
+! Diff-Path: ../patches/2025.11.7.869.patch#ruadlist
+d22204 2
+a22205 2
+||static.dzeninfra.ru/s3/zen-apps/content/$script
+||static.dzeninfra.ru/s3/zen-apps/mobile/$script
+d22231 1
+a22231 1
+||pikabu.ru/ajax/*?R984u=$xmlhttprequest
+a22589 1
+dzen.ru##[id*="8845410"]
+a22639 2
+kino.mail.ru##[data-logger="kino__Providers"]
+kino.mail.ru##[data-partner-cid]
+a23471 1
+ya.ru##body > div[data-hydration-id] > div > [src^="https://yabs.yandex.ru/count/"] + div
+d29319 2
+a29320 2
+booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkniga.ru,skanbooks.ru,x-libri.ru##+js(href-sanitizer, .specialcontdown > a[href^="/download?downloadlink="], ?downloadlink)
+booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkniga.ru,skanbooks.ru,x-libri.ru##+js(set-attr, .specialcontdown > a, download)
