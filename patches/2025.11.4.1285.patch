@@ -1,10 +1,18 @@
-diff name:ruadlist lines:75 checksum:34dbbdc5c2
+diff name:ruadlist lines:99 checksum:799cc340ec
 d4 2
 a5 2
-! Last modified: Sat, 08 Nov 2025 10:27:46 +0000
-! Diff-Path: ../patches/2025.11.8.627.patch#ruadlist
+! Last modified: Sat, 08 Nov 2025 15:24:37 +0000
+! Diff-Path: ../patches/2025.11.8.924.patch#ruadlist
+a138 1
+||4rabet.sbs^$third-party
+d7727 1
+a7727 1
+||pw^$third-party,script,xmlhttprequest,domain=~adwiz.pp.ua|~dewalt.store|~forum.worldofwarships.eu|~forum.worldofwarships.ru|~hdvbplayer.tk|~herokuapp.com|~liveball.cc|~liveball.gg|~liveball.my|~liveball.uno|~liveball.ws|~masterclub.store|~movielab.pro|~osu.ppy.sh|~panomama.ru|~pelcn.net|~philips.ru|~purina.ru|~softpir.com|~sportsvideoline3.pw|~tefal.ru|~tikkurila.ru|~vk-apps.com|~vulpecula.host
 d10019 1
 d11160 1
+d13826 1
+a13826 1
+cripo.com.ua,fergananews.com,infobank.by,link.ac,liveangarsk.ru,lm-games.com,ping-admin.ru,premiership.ru,qupier.org,readbookz.com,redheadsound.studio,urod.ru,voxpopuli.kz,xtreme.ws###banner
 d14287 2
 d14360 2
 a15452 1
@@ -13,16 +21,28 @@ a17744 2
 dtf.ru##.quiz-promo
 dtf.ru##.quiz__description
 d18254 1
+d19500 1
+a19500 1
+360tv.ru,5-tv.ru,7days.ru,avtonovostidnya.ru,avtovzglyad.ru,belarus-news.by,bfm.ru,bst.bratsk.ru,coop-land.ru,energyfm.ru,finuslugi.ru,fonmod.com,fontanka.ru,gdeichto.ru,habr.com,inosmi.ru,ixbt.com,ixbt.shop,kommersant.ru,kulturologia.ru,ladys.media,life.ru,mash.ru,media.az,metronews.ru,mgazeta.com,mk.ru,moe-belgorod.ru,moe-kursk.ru,moe-lipetsk.ru,moe-online.ru,moe-tambov.ru,moika78.ru,mydecor.ru,mywebpc.ru,myweekend.ru,naked-science.ru,nevasport.ru,new-magazine.ru,news.ru,nsn.fm,ohotniki.ru,oper.ru,overclockers.ru,penzainform.ru,peterburg2.ru,pnz.ru,radio1.ru,regnum.news,regnum.ru,ridlife.ru,rifey.ru,rodgor-vlg.ru,rodina-history.ru,rusnext.ru,russian.rt.com,rutube.ru,sm.news,smotrim.ru,soccer.ru,sovsport.ru,sport-express.net,sport-express.ru,sportsdaily.ru,stiletto.blog,super.ru,syzran-small.ru,teleprogramma.org,thegirl.ru,timeweb.com,tochka.by,tsargrad.tv,tulapressa.ru,tvzvezda.ru,u-f.ru,utyug.info,vz.ru,www1.ru,xn----7sbabwosghnf8al4lkj7b.xn--p1ai,ytronews.ru,zaks.ru,zaycev.net,zr.ru##a[href*="//dzen.ru/"]
+d20462 1
+a20462 1
+footlook.top##body > div[style^="position: fixed"]
 d20488 1
 a20488 1
 anifap.com,anifap.xyz,anitokyo.tv,anitokyo1.top##body.playerCode > div[style^="position: absolute;"][onclick]
+a20496 1
+shuba.life##button[target="_blank"]:not([href])
 a20643 1
 rg.ru##div[class*="_fox__"]
+a20795 1
+hromadske.radio#?#div[class^="SidebarNews_"] > article:-abp-has(> div > h3 > [class^="SidebarPreview_promoted_"])
 a21814 4
 lurkmore.*###localNotice #aside_buttons
 lurkmore.*###localNotice .infobox
 lurkmore.*###n-Группа-в-Дискорде
 lurkmore.*###n-Канал-в-Телеграме
+a21945 1
+rodina-history.ru##section[class^="ChannelSubscription_root_"]
 a21950 3
 d3.ru##section[data-uid="extraAd"]
 d3.ru##section[data-uid^="ad"]
@@ -68,9 +88,13 @@ d28805 1
 a28805 1
 aione.ru,carservic.ru,iptv.org.ua,newxboxone.ru,tva.org.ua,ufchgu.ru##+js(addEventListener-defuser, copy, pagelink)
 d28994 1
-a29312 3
+a29312 7
 ! Book service read&download
 booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkniga.ru,skanbooks.ru,x-libri.ru##+js(href-sanitizer, .specialcontdown > a[href^="/download?downloadlink="], ?downloadlink)
 booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkniga.ru,skanbooks.ru,x-libri.ru##+js(set-attr, .specialcontdown > a, download)
+! NTV
+ntv.ru#?##air-mini-player:has(> div > .vjs-paused) ~ .air-player__controls
+ntv.ru##+js(abort-on-stack-trace, HTMLVideoElement.prototype.play, manualAutoplay)
+ntv.ru##.vjs-paused > button.vjs-big-play-button:style(display: block !important; z-index: 9999 !important)
 d31249 1
 d31366 2

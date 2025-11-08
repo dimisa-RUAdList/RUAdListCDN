@@ -1,19 +1,39 @@
-diff name:ruadlist lines:40 checksum:34dbbdc5c2
+diff name:ruadlist lines:64 checksum:799cc340ec
 d4 2
 a5 2
-! Last modified: Sat, 08 Nov 2025 10:27:46 +0000
-! Diff-Path: ../patches/2025.11.8.627.patch#ruadlist
+! Last modified: Sat, 08 Nov 2025 15:24:37 +0000
+! Diff-Path: ../patches/2025.11.8.924.patch#ruadlist
+a138 1
+||4rabet.sbs^$third-party
+d7727 1
+a7727 1
+||pw^$third-party,script,xmlhttprequest,domain=~adwiz.pp.ua|~dewalt.store|~forum.worldofwarships.eu|~forum.worldofwarships.ru|~hdvbplayer.tk|~herokuapp.com|~liveball.cc|~liveball.gg|~liveball.my|~liveball.uno|~liveball.ws|~masterclub.store|~movielab.pro|~osu.ppy.sh|~panomama.ru|~pelcn.net|~philips.ru|~purina.ru|~softpir.com|~sportsvideoline3.pw|~tefal.ru|~tikkurila.ru|~vk-apps.com|~vulpecula.host
 d11159 1
+d13825 1
+a13825 1
+cripo.com.ua,fergananews.com,infobank.by,link.ac,liveangarsk.ru,lm-games.com,ping-admin.ru,premiership.ru,qupier.org,readbookz.com,redheadsound.studio,urod.ru,voxpopuli.kz,xtreme.ws###banner
 d14286 2
 d14359 2
 a15451 1
 d3.ru##.b-promo
 d18255 1
+d19501 1
+a19501 1
+360tv.ru,5-tv.ru,7days.ru,avtonovostidnya.ru,avtovzglyad.ru,belarus-news.by,bfm.ru,bst.bratsk.ru,coop-land.ru,energyfm.ru,finuslugi.ru,fonmod.com,fontanka.ru,gdeichto.ru,habr.com,inosmi.ru,ixbt.com,ixbt.shop,kommersant.ru,kulturologia.ru,ladys.media,life.ru,mash.ru,media.az,metronews.ru,mgazeta.com,mk.ru,moe-belgorod.ru,moe-kursk.ru,moe-lipetsk.ru,moe-online.ru,moe-tambov.ru,moika78.ru,mydecor.ru,mywebpc.ru,myweekend.ru,naked-science.ru,nevasport.ru,new-magazine.ru,news.ru,nsn.fm,ohotniki.ru,oper.ru,overclockers.ru,penzainform.ru,peterburg2.ru,pnz.ru,radio1.ru,regnum.news,regnum.ru,ridlife.ru,rifey.ru,rodgor-vlg.ru,rodina-history.ru,rusnext.ru,russian.rt.com,rutube.ru,sm.news,smotrim.ru,soccer.ru,sovsport.ru,sport-express.net,sport-express.ru,sportsdaily.ru,stiletto.blog,super.ru,syzran-small.ru,teleprogramma.org,thegirl.ru,timeweb.com,tochka.by,tsargrad.tv,tulapressa.ru,tvzvezda.ru,u-f.ru,utyug.info,vz.ru,www1.ru,xn----7sbabwosghnf8al4lkj7b.xn--p1ai,ytronews.ru,zaks.ru,zaycev.net,zr.ru##a[href*="//dzen.ru/"]
+d20463 1
+a20463 1
+footlook.top##body > div[style^="position: fixed"]
+a20497 1
+shuba.life##button[target="_blank"]:not([href])
+a20797 1
+hromadske.radio#?#div[class^="SidebarNews_"] > article:-abp-has(> div > h3 > [class^="SidebarPreview_promoted_"])
 a21816 4
 lurkmore.*###localNotice #aside_buttons
 lurkmore.*###localNotice .infobox
 lurkmore.*###n-Группа-в-Дискорде
 lurkmore.*###n-Канал-в-Телеграме
+a21947 1
+rodina-history.ru##section[class^="ChannelSubscription_root_"]
 a21952 3
 d3.ru##section[data-uid="extraAd"]
 d3.ru##section[data-uid^="ad"]
@@ -34,8 +54,12 @@ a23469 1
 ya.ru##body > div[data-hydration-id] > div > [src^="https://yabs.yandex.ru/count/"] + div
 d27668 2
 d29319 2
-a29320 2
+a29320 6
 booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkniga.ru,skanbooks.ru,x-libri.ru##+js(href-sanitizer, .specialcontdown > a[href^="/download?downloadlink="], ?downloadlink)
 booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkniga.ru,skanbooks.ru,x-libri.ru##+js(set-attr, .specialcontdown > a, download)
+! NTV
+ntv.ru#?##air-mini-player:has(> div > .vjs-paused) ~ .air-player__controls
+ntv.ru##+js(abort-on-stack-trace, HTMLVideoElement.prototype.play, manualAutoplay)
+ntv.ru##.vjs-paused > button.vjs-big-play-button:style(display: block !important; z-index: 9999 !important)
 d31257 1
 d31374 2
