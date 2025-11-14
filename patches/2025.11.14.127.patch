@@ -1,13 +1,14 @@
-diff name:ruadlist lines:39 checksum:40d9008289
+diff name:ruadlist lines:52 checksum:52750b8ed9
 d4 2
 a5 2
-! Last modified: Fri, 14 Nov 2025 16:36:58 +0000
-! Diff-Path: ../patches/2025.11.14.996.patch#ruadlist
+! Last modified: Fri, 14 Nov 2025 21:25:42 +0000
+! Diff-Path: ../patches/2025.11.14.1285.patch#ruadlist
 a8760 2
 ##a[href*="://lubar.icu/r/"]
 ##a[href*="://lubar.xyz/r/"]
 d15647 1
 d15694 1
+d15786 1
 a16592 1
 myfootball.life##.gg-tra-ranking
 d18154 1
@@ -26,15 +27,27 @@ a21317 1
 myfootball.life##div[id^="main-"][id*="-ranking"]
 a21811 1
 epicentrk.ua##li > aside > div:first-child > div > span
+d22267 1
+a22267 1
+lenta.*##.topic-footer > div[class^="box-"][class$="-video"] {remove:true;}
 d22338 1
 a22338 1
-apad2.top,besplatnyeprogrammy.ru,hdrip.info,inferno.games,mediagetguru.ru,monna2.top,only-soft.org,torrent-music.ru,torrent-soft.pro,torrentigo.net,where-game.ru##:not(this-site-promotes-malware)
+apad2.top,besplatnyeprogrammy.ru,byrutgame.org,hdrip.info,inferno.games,mediagetguru.ru,monna2.top,only-soft.org,torrent-music.ru,torrent-soft.pro,torrentigo.net,where-game.ru##:not(this-site-promotes-malware)
 d28636 1
 a28636 1
 captcha-api.yandex.ru,id.vk.ru,passport.yandex.ru,webagent.mail.ru#@#+js()
 d28838 1
 a29070 1
 lenta.ru##+js(set-cookie, unity_pause_sso, 1)
+d29122 1
+a29122 1
+lenta.ru##.topic-footer > div[class^="box-"][class$="-video"]:remove()
 a29193 1
 kinoblin.ru,pornoakt.*,serialai.ru##+js(addEventListener-defuser, mousedown, pop.doEvent)
 d29268 1
+d29336 4
+a29339 4
+bookdream.ru,booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkniga.ru,skanbooks.ru,x-libri.ru##+js(abort-on-property-read, disable_keystrokes)
+bookdream.ru,booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkniga.ru,skanbooks.ru,x-libri.ru##+js(addEventListener-defuser, copy, preventDefault)
+bookdream.ru,booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkniga.ru,skanbooks.ru,x-libri.ru##+js(href-sanitizer, .specialcontdown > a[href^="/download?downloadlink="], ?downloadlink)
+bookdream.ru,booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkniga.ru,skanbooks.ru,x-libri.ru##+js(set-attr, .specialcontdown > a, download)

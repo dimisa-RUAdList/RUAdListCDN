@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 14 Nov 2025 16:36:58 +0000
-! Diff-Path: ../patches/2025.11.14.996.patch#ruadlist
+! Last modified: Fri, 14 Nov 2025 21:25:42 +0000
+! Diff-Path: ../patches/2025.11.14.1285.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -15783,7 +15783,6 @@ sunsurv.ru##.blockRight
 programma-peredach.com##.blockSns
 aktobeinfo.kz##.block[id*="-banners-"]
 gooool365.org##.block_d
-byrutgame.org##.block_down_game > .block_down ~ .block_down
 kino-teatr.ru##.block_ivi
 openssource.biz##.block_left
 chatadelic.net,db.chgk.info,dsvload.net,forzajuve.ru,gubkabob.net,imageban.ru,kak-spasti-mir.ru,moi-detsad.ru,podrobno.uz,prostomac.com,rap-text.ru,recensent.ru,seriatv.ru,volomy.ru##.block_links
@@ -22270,7 +22269,7 @@ freesoft.ru###error.modal {remove:true;}
 growhow.in.ua###custom-background-css {remove:true;}
 lenta.*##.js-scroll-to-site {remove:true;}
 lenta.*##.topic-body__content> .box-external-video:last-child {remove:true;}
-lenta.*##.topic-footer > .box-external-video {remove:true;}
+lenta.*##.topic-footer > div[class^="box-"][class$="-video"] {remove:true;}
 playground.ru###dfpPrerollDelay {remove:true;}
 the-geek.ru###wp-custom-css {remove:true;}
 vk.*##head > style:-abp-contains(/adchoice|mkit_|outlineBanner/i) {remove:true;}
@@ -22341,7 +22340,7 @@ www.drive2.ru##iframe[style="opacity: 1;"]
 liveinternet.ru##style + div > div > div > div > div a
 !#endif
 ! Блокировка ресурсов, намеренно продвигающих вредоносное ПО и фейки
-apad2.top,besplatnyeprogrammy.ru,hdrip.info,inferno.games,mediagetguru.ru,monna2.top,only-soft.org,torrent-music.ru,torrent-soft.pro,torrentigo.net,where-game.ru##:not(this-site-promotes-malware)
+apad2.top,besplatnyeprogrammy.ru,byrutgame.org,hdrip.info,inferno.games,mediagetguru.ru,monna2.top,only-soft.org,torrent-music.ru,torrent-soft.pro,torrentigo.net,where-game.ru##:not(this-site-promotes-malware)
 ! Намеренное продвижение фейков и мошенников
 ||tele.ru^$xmlhttprequest,domain=tele.ru
 ! Плеер venom, в основном для ua-юзеров, примеры >
@@ -29125,7 +29124,7 @@ gtavicecity.ru##.stop-waiting
 pikabu.ru##.stories-feed__container > .story[data-author-name] ~ .story:not([data-author-name])
 pikabu.ru##.stories-feed__container > .story[data-author-name] ~ .story[data-context-actions*=",profile_hide,"]
 lenta.ru##.topic-body__content > .box-external-video:last-child:remove()
-lenta.ru##.topic-footer > .box-external-video:remove()
+lenta.ru##.topic-footer > div[class^="box-"][class$="-video"]:remove()
 player.twitch.tv##.ubo-overlay > .player-ad-notice
 dynamo.kiev.ua##.video-scroll:remove()
 vk.com,vk.ru##.wall_module > div[id]:first-child > :matches-prop(innerHTML="/format_edit|mradx\.|media_on_/")
@@ -29339,10 +29338,10 @@ mail.ru##[slot="main-column"] > .tabs:matches-media((max-width: 1280px)):style(h
 mail.ru#@#body:not(.js-module) .tabs + div[class]:style(min-width: fit-content !important)
 !#endif
 ! Book service read&download
-booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkniga.ru,skanbooks.ru,x-libri.ru##+js(abort-on-property-read, disable_keystrokes)
-booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkniga.ru,skanbooks.ru,x-libri.ru##+js(addEventListener-defuser, copy, preventDefault)
-booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkniga.ru,skanbooks.ru,x-libri.ru##+js(href-sanitizer, .specialcontdown > a[href^="/download?downloadlink="], ?downloadlink)
-booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkniga.ru,skanbooks.ru,x-libri.ru##+js(set-attr, .specialcontdown > a, download)
+bookdream.ru,booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkniga.ru,skanbooks.ru,x-libri.ru##+js(abort-on-property-read, disable_keystrokes)
+bookdream.ru,booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkniga.ru,skanbooks.ru,x-libri.ru##+js(addEventListener-defuser, copy, preventDefault)
+bookdream.ru,booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkniga.ru,skanbooks.ru,x-libri.ru##+js(href-sanitizer, .specialcontdown > a[href^="/download?downloadlink="], ?downloadlink)
+bookdream.ru,booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkniga.ru,skanbooks.ru,x-libri.ru##+js(set-attr, .specialcontdown > a, download)
 ! NTV
 ntv.ru#?##air-mini-player:has(> div > .vjs-paused) ~ .air-player__controls
 ntv.ru##+js(abort-on-stack-trace, HTMLVideoElement.prototype.play, manualAutoplay)

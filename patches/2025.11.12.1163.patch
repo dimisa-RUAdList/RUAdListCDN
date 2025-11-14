@@ -1,8 +1,8 @@
-diff name:ruadlist lines:48 checksum:40d9008289
+diff name:ruadlist lines:58 checksum:52750b8ed9
 d4 2
 a5 2
-! Last modified: Fri, 14 Nov 2025 16:36:58 +0000
-! Diff-Path: ../patches/2025.11.14.996.patch#ruadlist
+! Last modified: Fri, 14 Nov 2025 21:25:42 +0000
+! Diff-Path: ../patches/2025.11.14.1285.patch#ruadlist
 a8760 2
 ##a[href*="://lubar.icu/r/"]
 ##a[href*="://lubar.xyz/r/"]
@@ -11,8 +11,6 @@ a12805 1
 d15646 1
 d15693 1
 d15785 1
-a15785 1
-byrutgame.org##.block_down_game > .block_down ~ .block_down
 a16334 1
 thelastdb.games,thelastupd.org##.downl_game > .block_down ~ .block_down
 a16590 1
@@ -35,15 +33,27 @@ a21314 1
 myfootball.life##div[id^="main-"][id*="-ranking"]
 a21808 1
 epicentrk.ua##li > aside > div:first-child > div > span
+d22264 1
+a22264 1
+lenta.*##.topic-footer > div[class^="box-"][class$="-video"] {remove:true;}
 d22335 1
 a22335 1
-apad2.top,besplatnyeprogrammy.ru,hdrip.info,inferno.games,mediagetguru.ru,monna2.top,only-soft.org,torrent-music.ru,torrent-soft.pro,torrentigo.net,where-game.ru##:not(this-site-promotes-malware)
+apad2.top,besplatnyeprogrammy.ru,byrutgame.org,hdrip.info,inferno.games,mediagetguru.ru,monna2.top,only-soft.org,torrent-music.ru,torrent-soft.pro,torrentigo.net,where-game.ru##:not(this-site-promotes-malware)
 d28633 1
 a28633 1
 captcha-api.yandex.ru,id.vk.ru,passport.yandex.ru,webagent.mail.ru#@#+js()
 d28835 1
 a29067 1
 lenta.ru##+js(set-cookie, unity_pause_sso, 1)
+d29119 1
+a29119 1
+lenta.ru##.topic-footer > div[class^="box-"][class$="-video"]:remove()
 a29190 1
 kinoblin.ru,pornoakt.*,serialai.ru##+js(addEventListener-defuser, mousedown, pop.doEvent)
 d29265 1
+d29333 4
+a29336 4
+bookdream.ru,booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkniga.ru,skanbooks.ru,x-libri.ru##+js(abort-on-property-read, disable_keystrokes)
+bookdream.ru,booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkniga.ru,skanbooks.ru,x-libri.ru##+js(addEventListener-defuser, copy, preventDefault)
+bookdream.ru,booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkniga.ru,skanbooks.ru,x-libri.ru##+js(href-sanitizer, .specialcontdown > a[href^="/download?downloadlink="], ?downloadlink)
+bookdream.ru,booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkniga.ru,skanbooks.ru,x-libri.ru##+js(set-attr, .specialcontdown > a, download)

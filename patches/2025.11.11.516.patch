@@ -1,8 +1,8 @@
-diff name:ruadlist lines:72 checksum:40d9008289
+diff name:ruadlist lines:79 checksum:52750b8ed9
 d4 2
 a5 2
-! Last modified: Fri, 14 Nov 2025 16:36:58 +0000
-! Diff-Path: ../patches/2025.11.14.996.patch#ruadlist
+! Last modified: Fri, 14 Nov 2025 21:25:42 +0000
+! Diff-Path: ../patches/2025.11.14.1285.patch#ruadlist
 a8760 2
 ##a[href*="://lubar.icu/r/"]
 ##a[href*="://lubar.xyz/r/"]
@@ -13,8 +13,6 @@ myshows.me#?#.Slider .SlideItem:-abp-has([class*="advertiser"])
 d15645 1
 d15692 1
 d15784 1
-a15784 1
-byrutgame.org##.block_down_game > .block_down ~ .block_down
 a16333 1
 thelastdb.games,thelastupd.org##.downl_game > .block_down ~ .block_down
 a16589 1
@@ -47,9 +45,12 @@ epicentrk.ua##li > aside > div:first-child > div > span
 d22236 1
 a22236 1
 ||pikabu.ru/ajax/*?ltA1c=$xmlhttprequest
+d22261 1
+a22261 1
+lenta.*##.topic-footer > div[class^="box-"][class$="-video"] {remove:true;}
 d22332 1
 a22332 1
-apad2.top,besplatnyeprogrammy.ru,hdrip.info,inferno.games,mediagetguru.ru,monna2.top,only-soft.org,torrent-music.ru,torrent-soft.pro,torrentigo.net,where-game.ru##:not(this-site-promotes-malware)
+apad2.top,besplatnyeprogrammy.ru,byrutgame.org,hdrip.info,inferno.games,mediagetguru.ru,monna2.top,only-soft.org,torrent-music.ru,torrent-soft.pro,torrentigo.net,where-game.ru##:not(this-site-promotes-malware)
 a22593 1
 dzen.ru##div[id][class*="news-"][class*="_loaded"]
 a22889 1
@@ -65,9 +66,15 @@ captcha-api.yandex.ru,id.vk.ru,passport.yandex.ru,webagent.mail.ru#@#+js()
 d28829 1
 a29061 1
 lenta.ru##+js(set-cookie, unity_pause_sso, 1)
+d29113 1
+a29113 1
+lenta.ru##.topic-footer > div[class^="box-"][class$="-video"]:remove()
 a29184 1
 kinoblin.ru,pornoakt.*,serialai.ru##+js(addEventListener-defuser, mousedown, pop.doEvent)
 d29259 1
-a29326 2
-booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkniga.ru,skanbooks.ru,x-libri.ru##+js(abort-on-property-read, disable_keystrokes)
-booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkniga.ru,skanbooks.ru,x-libri.ru##+js(addEventListener-defuser, copy, preventDefault)
+d29327 2
+a29328 4
+bookdream.ru,booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkniga.ru,skanbooks.ru,x-libri.ru##+js(abort-on-property-read, disable_keystrokes)
+bookdream.ru,booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkniga.ru,skanbooks.ru,x-libri.ru##+js(addEventListener-defuser, copy, preventDefault)
+bookdream.ru,booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkniga.ru,skanbooks.ru,x-libri.ru##+js(href-sanitizer, .specialcontdown > a[href^="/download?downloadlink="], ?downloadlink)
+bookdream.ru,booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkniga.ru,skanbooks.ru,x-libri.ru##+js(set-attr, .specialcontdown > a, download)
