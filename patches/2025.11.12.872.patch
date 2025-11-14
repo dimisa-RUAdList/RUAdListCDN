@@ -1,8 +1,11 @@
-diff name:ruadlist lines:28 checksum:3be934a414
+diff name:ruadlist lines:38 checksum:4bd7b517b6
 d4 2
 a5 2
-! Last modified: Fri, 14 Nov 2025 06:41:34 +0000
-! Diff-Path: ../patches/2025.11.14.401.patch#ruadlist
+! Last modified: Fri, 14 Nov 2025 11:24:32 +0000
+! Diff-Path: ../patches/2025.11.14.684.patch#ruadlist
+a8760 2
+##a[href*="://lubar.icu/r/"]
+##a[href*="://lubar.xyz/r/"]
 a12805 1
 ||repack-byrutor.org/telamon.
 a15003 1
@@ -14,6 +17,10 @@ a16333 1
 thelastdb.games,thelastupd.org##.downl_game > .block_down ~ .block_down
 a16606 1
 lifehacker.ru##.goods-gallery
+a18232 1
+lifehacker.ru#?#.single-article__content:-abp-has(footer:-abp-contains(Реклама.)) article a > img
+a19447 1
+burninghut.ru##a.article-button[rel="noopener"]
 d22238 1
 a22238 1
 ||pikabu.ru/ajax/*?ltA1c=$xmlhttprequest
@@ -24,6 +31,9 @@ a22895 1
 ru##[data-ns-portal] aside div[class^="promocodeBlock_"]
 a22909 1
 ru##[data-test="themes-line"] a[href*="utm_campaign"]
+d28832 1
+a29187 1
+kinoblin.ru,pornoakt.*,serialai.ru##+js(addEventListener-defuser, mousedown, pop.doEvent)
 a29329 2
 booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkniga.ru,skanbooks.ru,x-libri.ru##+js(abort-on-property-read, disable_keystrokes)
 booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkniga.ru,skanbooks.ru,x-libri.ru##+js(addEventListener-defuser, copy, preventDefault)

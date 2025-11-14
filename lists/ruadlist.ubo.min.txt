@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 14 Nov 2025 06:41:34 +0000
-! Diff-Path: ../patches/2025.11.14.401.patch#ruadlist
+! Last modified: Fri, 14 Nov 2025 11:24:32 +0000
+! Diff-Path: ../patches/2025.11.14.684.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -8758,6 +8758,8 @@ by,~mail.ru,ru,ua##.banner_box
 ##a[href*="://lapina.xyz/"]
 ##a[href*="://lobar.site/r/"]
 ##a[href*="://loderkkis.ru"]
+##a[href*="://lubar.icu/r/"]
+##a[href*="://lubar.xyz/r/"]
 ##a[href*="://manysoftlink.ru/"]
 ##a[href*="://matchnow.info"]
 ~mediasyndicate.ru##a[href*="://mediasyndicate.ru"][href*="banner"]
@@ -18234,6 +18236,7 @@ kurs.if.ua##.simple-top-block
 lifehacker.ru##.single-article > .widgets-renderer
 lifehacker.ru##.single-article__content article > .core-buttons
 lifehacker.ru##.single-article__content article a[target="_blank"][rel*="sponsored"] > img
+lifehacker.ru#?#.single-article__content:-abp-has(footer:-abp-contains(Реклама.)) article a > img
 novadoba.com.ua##.single-bottom-advertising-block
 pravda.if.ua##.single-post-6__author
 hi-tech.ua#?#.single-post:-abp-has(.sam-pro-container)
@@ -19449,6 +19452,7 @@ forzajuve.ru,omskregion.info##a > img[width="240"][height="400"]
 news24.in.ua,novosti24.kyiv.ua,tenews.org.ua,ua-novosti.info,uapress.kyiv.ua##a video
 tort.fm##a#bg
 gorodrabot.ru##a.additional-earnings-banner-snippet:not([href*="gorodrabot.ru/"])
+burninghut.ru##a.article-button[rel="noopener"]
 gameinside.ua##a.banner
 focus.ua,zoneofgames.ru##a.branding
 poker-wiki.ru##a.external[rel="nofollow"][href*="/go/?site="] > img[src$=".gif"]
@@ -28835,7 +28839,6 @@ blackwot.ru##+js(addEventListener-defuser, load, detect-modal)
 overclockers.ru##+js(addEventListener-defuser, load, mamydirect)
 bonus-tv.ru##+js(addEventListener-defuser, loadstart, isImmediatePropagationStopped)
 rutube.ru##+js(addEventListener-defuser, message, __messagesAtom)
-kinoblin.ru,pornoakt.info,serialai.ru##+js(addEventListener-defuser, mousedown, pop.doEvent)
 m.lenta.ru##+js(addEventListener-defuser, scroll, getBoundingClientRect)
 www.vesti.ru##+js(addEventListener-defuser, scroll, players)
 lenta.ru##+js(addEventListener-defuser, scroll, window.history.pushState)
@@ -29191,6 +29194,7 @@ fap-guru.*,seks-studentki.*,sex-studentki.*##+js(addEventListener-defuser, DOMCo
 hdrezka.*,rezka.*##+js(abort-current-inline-script, document.getElementsByTagName, AMSP.loadAsset)
 howdyho.*##+js(no-setTimeout-if, _0x)
 howdyho.*##+js(set-attr, #progress-value, data-timer, 25)
+kinoblin.ru,pornoakt.*,serialai.ru##+js(addEventListener-defuser, mousedown, pop.doEvent)
 liveball.*,tapochek.net##+js(abort-on-property-read, ABNS)
 m.rp5.*#@#.adsbygoogle
 reshu.by,sdamgia.ru##main > div > div > div:has-text(/rotator|блокировщик/)
