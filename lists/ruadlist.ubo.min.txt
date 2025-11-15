@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 15 Nov 2025 17:22:45 +0000
-! Diff-Path: ../patches/2025.11.15.1042.patch#ruadlist
+! Last modified: Sat, 15 Nov 2025 22:24:30 +0000
+! Diff-Path: ../patches/2025.11.15.1344.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -29292,7 +29292,6 @@ ok.ru##[data-module*="banner"]
 mail.ru##[slot="main-column"] :matches-css(height: 90px)
 ok.ru##body > div:not([id]):not([class]) > .exit-popup:style(display: block !important)
 ok.ru##div[class*="__banner-feed"]
-||ad.mail.ru/$image,script,xmlhttprequest,redirect=empty
 ||ad.mail.ru/dist/
 ||mail.ru/api-proxy/rb-mimic/
 ||ok.ru/res/js/app/VideoEmbed_*.js|$script
