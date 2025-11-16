@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 16 Nov 2025 08:33:38 +0000
-! Diff-Path: ../patches/2025.11.16.513.patch#ruadlist
+! Last modified: Sun, 16 Nov 2025 13:30:17 +0000
+! Diff-Path: ../patches/2025.11.16.810.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -8156,6 +8156,7 @@ _verified.php?code=*&server=runetki.com
 /teaserblock.site.js
 /teasers.
 /teasers/*$domain=~ableton.com|~adventuregamers.com|~agderposten.no|~amway.ru|~amway.ua|~av.by|~babla.ru|~bmw.de|~bmw.ro|~bmw.ru|~business-gazeta.ru|~fujifilm.eu|~gismeteo.by|~gismeteo.kz|~kinobulvar.info|~meganomkino.ru|~novsu.ru|~rce.by|~road.cc|~stackoverflow.com|~teaserstar.ru|~wetteronline.de|~www.kinopoisk.ru|~yandex.by|~yandex.com|~yandex.com.tr|~yandex.fr|~yandex.kz|~yandex.ru
+/telamon.png
 /testserial/vendor/vast.js
 /tionline120x60.
 /tionline150x60.
@@ -12803,7 +12804,6 @@ igdz1.ru^$script,domain=igdz.ru
 ||relinka.net/banner
 ||remoteshaman.com^*/gcheck.js
 ||rep.ru/site/get-text-advert-block/
-||repack-byrutor.org/telamon.
 ||repack-fitgirl.com/uploads/generalback-$image
 ||report.capinfopro.ru^$domain=radidomapro.ru
 ||reporter.ua/home/banners/
@@ -23483,11 +23483,11 @@ ukr.net##.lazy-load-banner
 @@||yandex.ru/ads/system/adsdk.js|$script,domain=yandex.ru
 market.yandex.ru,market.yandex.*##.layout_type_search.headline__footer
 ya.ru##.i-mini-bem[class*="banner"]
-ya.ru##[aria-label^="Информе"] ~ [class]
+ya.ru##[aria-label^="Информ"] ~ [class]
 ya.ru##[style*="feed"][style*="min-height:"]
 ya.ru##body > div[data-hydration-id] > [href^="https://yabs.yandex.ru/count/"] + div
 ya.ru##body > div[data-hydration-id] > div > [src^="https://yabs.yandex.ru/count/"] + div
-ya.ru##section[class^="reason"]
+ya.ru##section[class^="reaso"]
 ya.ru,yandex.ru,yandex.*##.AdvProductGallery
 ya.ru,yandex.ru,yandex.*##.layout__banner
 ya.ru,yandex.ru,yandex.*##.main-home-banner
@@ -28314,7 +28314,7 @@ ya.ru##.reasoning-section
 ya.ru##[id*="feed"][id*="_"]
 ya.ru##[id^="ryt"][id*="fe"]
 ya.ru##html[class*="_informers"] aside ~ div[style]
-ya.ru##html[class*="_reasoning"] aside ~ div[style]
+ya.ru##html[class*="_reaso"] aside ~ div[style]
 ! афиша
 afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.uz##div[class$="-banner"]
 afisha.yandex.by,afisha.yandex.kz,afisha.yandex.ru,afisha.yandex.uz##div[data-bem*="height"][data-bem*="R-A-"]

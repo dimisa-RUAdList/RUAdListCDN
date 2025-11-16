@@ -1,9 +1,12 @@
-diff name:ruadlist lines:31 checksum:6b5d114949
+diff name:ruadlist lines:43 checksum:7ada20e6a9
 d4 2
 a5 2
-! Last modified: Sun, 16 Nov 2025 08:33:38 +0000
-! Diff-Path: ../patches/2025.11.16.513.patch#ruadlist
+! Last modified: Sun, 16 Nov 2025 13:30:17 +0000
+! Diff-Path: ../patches/2025.11.16.810.patch#ruadlist
+a8158 1
+/telamon.png
 d12247 2
+d12808 1
 d15703 1
 a15712 1
 mt.today##.bigbeautifulbutton
@@ -25,7 +28,16 @@ mt.today##a[href^="https://t.me/skidkimt/"]:not([target])
 d20449 1
 d21004 1
 d21319 1
+d23491 1
+a23491 1
+ya.ru##[aria-label^="Информ"] ~ [class]
+d23495 1
+a23495 1
+ya.ru##section[class^="reaso"]
 d27737 5
+d28327 1
+a28327 1
+ya.ru##html[class*="_reaso"] aside ~ div[style]
 d29305 1
 a29425 2
 rutube.ru##+js(json-edit-fetch-response, [?!.video_balancer.default].appearance.auto_start, propsToMatch, /api/play)
