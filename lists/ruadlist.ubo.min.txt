@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 17 Nov 2025 09:34:27 +0000
-! Diff-Path: ../patches/2025.11.17.574.patch#ruadlist
+! Last modified: Mon, 17 Nov 2025 14:31:21 +0000
+! Diff-Path: ../patches/2025.11.17.871.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -18231,6 +18231,7 @@ kurs.if.ua##.simple-top-block
 lifehacker.ru##.single-article > .widgets-renderer
 lifehacker.ru##.single-article__content article > .core-buttons
 lifehacker.ru##.single-article__content article a[target="_blank"][rel*="sponsored"] > img
+lifehacker.ru##.single-article__content article a[target="_blank"][rel*="sponsored"] ~ .wp-element-caption[style]
 lifehacker.ru#?#.single-article__content:-abp-has(footer:-abp-contains(Реклама.)) article a > img
 novadoba.com.ua##.single-bottom-advertising-block
 pravda.if.ua##.single-post-6__author
@@ -22212,8 +22213,7 @@ ictv.ua,vikna.tv##div[id^="div-gpt-ad-"]
 ||dzen.ru/articles$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/news$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/pogoda/$script
-||static.dzeninfra.ru/s3/zen-apps/content/$script
-||static.dzeninfra.ru/s3/zen-apps/mobile/$script
+||static.dzeninfra.ru/s3/zen-apps/*/*/*/*/*/$script
 $csp=script-src-attr 'none',domain=eurointegration.com.ua|pravda.com.ua|sportanalytic.com
 /^https?://24smi\.org/*[/]*[/][^\s]{8,}/$xmlhttprequest,domain=24smi.org
 ://mail.ru$csp=img-src 'self' https:
@@ -22597,9 +22597,10 @@ news.mail.ru##aside div > div:first-child:empty ~ div
 news.mail.ru#?#aside div:-abp-has(> div:only-child:empty)
 news.mail.ru##body > div > style + div[id]
 dzen.ru##div[class*="news-advert"]
+dzen.ru##div[id][class*="news-"][class*="-advert"]
 dzen.ru##div[id][class*="news-"][class*="_loaded"]
 ! Дзен новости Mail-edition
-dzen.ru##[id*="8845410"]
+dzen.ru##[id*="845410"]
 dzen.ru##[id*="_R-A-"]
 dzen.ru##[id*="_R-E-"]
 dzen.ru##[id*="_R-I-"]
