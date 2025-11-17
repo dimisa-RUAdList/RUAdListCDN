@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 17 Nov 2025 14:31:21 +0000
-! Diff-Path: ../patches/2025.11.17.871.patch#ruadlist
+! Last modified: Mon, 17 Nov 2025 19:23:17 +0000
+! Diff-Path: ../patches/2025.11.17.1163.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -12321,6 +12321,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||my-cinema.net/branding/
 ||my.mosenergosbyt.ru/file/id_content:$image
 ||mydiv.net/tim/newold
+||myfootball.life/*/betking/
 ||mymedicalportal.net^$xmlhttprequest
 ||mynizhyn.com/image/banners/
 ||myparcels.ru/ajax/tz.php
@@ -15982,7 +15983,6 @@ kinobanda.net##.buyframe
 carsweek.ru##.bx-composite-btn
 electroandi.ru##.bybit
 drive2.com,drive2.ru#?#.c-block:-abp-has(> .c-dv-label)
-drive2.com,drive2.ru##.c-block[class*="rossko"]
 drive2.ru##.c-boosts
 drive2.ru##.c-darkening-hover-container ~ :not(.c-darkening-hover-container) > div[id]
 drive2.com,drive2.ru##.c-dv-label
@@ -19182,7 +19182,7 @@ rosteplo.ru##[data-content*="ERID"]
 gdz4you.com##[data-controller="SearchInputController"] ~ .well-container
 vgae.ru##[data-count="b/s/"]
 starhit.ru##[data-creative]
-drive2.ru##[data-data-ym-view^="drom_"]
+drive2.com,drive2.ru##[data-data-ym-view]
 banki.ru##[data-dfp-container]
 briefly.ru##[data-disclaimer*="Реклама"]
 shuba.life##[data-discount-banner]
@@ -19259,7 +19259,7 @@ ozon.ru##[data-widget="advBanner"]
 ozon.ru##[data-widget="advVideoBanner"]
 ozon.ru#?#[data-widget="freshIsland"]:-abp-has(> div > [data-widget="objectBannerList"])
 pravda.cn.ua##[data-widget_type="image.default"]
-drive2.ru##[data-ym-view^="drom_"]
+drive2.com,drive2.ru##[data-ym-view]
 photos-models.com##[gnezdo_container_id]
 pikabu.ru##[href*="/acceptable-ads"]
 xn--80awhdeco3h.xn--p1ai,yarportal.ru##[href*="/goto.php?id="][target="_blank"] > img[src^="http://yarportal.ru/"]
@@ -20724,6 +20724,7 @@ baby.ru##div[class*="rennab-"]
 mastergrad.com##div[class*="revive"]
 house.kg,mashina.kg##div[class*="right-side-banner-"]
 sport-express.net,sport-express.ru##div[class*="right_col_banner"]
+drive2.com,drive2.ru##div[class*="rossko"]
 1.zt.ua,kyivvlada.com.ua##div[class*="section-smartslider"]
 svetlica-mama-blogger.ru##div[class*="sgpb-popup-"]
 hochu.tv##div[class*="sidebar"]
@@ -27126,21 +27127,14 @@ drahelas.ru##.forumAd:style(height: 1px !important)
 drahelas.ru##.navbar_notice:style(position: fixed !important; transform: scale(0) !important)
 ! ---
 ! Драйв
+drive2.com,drive2.ru##.o-columns:style(grid-template-columns: unset !important)
 drive2.com,drive2.ru##.u-extend-fix:style(background: center / 100% 100% no-repeat #515151 var(--res-logo) !important; border-radius: 6px !important)
 drive2.com,drive2.ru##[data-track]:not(a):style(min-height: 0 !important; padding-top: unset !important; padding-bottom: unset !important; box-shadow: inherit !important)
 drive2.com,drive2.ru##div[class$="content"] ~ div + div[class*=" "][class$="--mh"]
-drive2.com,drive2.ru##div[itemtype*="://schema.org/BlogPosting"] > div:last-child > div:first-child + div[class]:style(width: unset !important; margin-left: unset !important)
-drive2.com,drive2.ru##div[itemtype*="://schema.org/BlogPosting"] > div:last-child > div:first-child:not(:only-child):style(max-width: unset !important)
 drive2.com,drive2.ru##div[itemtype*="://schema.org/BlogPosting"] > div:not(:last-child):style(min-height: 0 !important; padding-top: unset !important; padding-bottom: unset !important; box-shadow: inherit !important)
-drive2.com,drive2.ru##div[itemtype*="://schema.org/Review"] ~ div:last-child > div:first-child + div[class]:style(width: unset !important; margin-left: unset !important)
-drive2.com,drive2.ru##div[itemtype*="://schema.org/Review"] ~ div:last-child > div:first-child:not(:only-child):style(max-width: unset !important)
-drive2.com,drive2.ru##div[itemtype*="://schema.org/Review"] ~ div:not(:last-child):style(min-height: 0 !important; padding-top: unset !important; padding-bottom: unset !important; box-shadow: inherit !important)
-drive2.com,drive2.ru##div[itemtype*="://schema.org/Photograph"] > div:last-child > div:first-child + div[class]:style(width: unset !important; margin-left: unset !important)
-drive2.com,drive2.ru##div[itemtype*="://schema.org/Photograph"] > div:last-child > div:first-child:not(:only-child):style(max-width: unset !important)
 drive2.com,drive2.ru##div[itemtype*="://schema.org/Photograph"] > div:not(:last-child):style(min-height: 0 !important; padding-top: unset !important; padding-bottom: unset !important; box-shadow: inherit !important)
-drive2.com,drive2.ru##div[itemtype*="://schema.org/Product"] ~ div #comments ~ div:style(width: unset !important)
-drive2.com,drive2.ru##div[itemtype*="://schema.org/Product"] ~ div #comments:style(max-width: 100% !important)
 drive2.com,drive2.ru##div[itemtype*="://schema.org/Product"] ~ div:not(:last-child):style(min-height: 0 !important; padding-top: unset !important; padding-bottom: unset !important; box-shadow: inherit !important)
+drive2.com,drive2.ru##div[itemtype*="://schema.org/Review"] ~ div:not(:last-child):style(min-height: 0 !important; padding-top: unset !important; padding-bottom: unset !important; box-shadow: inherit !important)
 drive2.com,drive2.ru##div[class*="--content article "] + div
 drive2.com,drive2.ru##div[class*="--content article "] + div + div:not(:last-child)
 drive2.com,drive2.ru##div[class*="--content article "] + div ~ div:last-child > div:first-child + div[class]
@@ -29026,6 +29020,7 @@ vp.rambler.ru##+js(set-constant, Object.prototype.minPlayingVisibleHeight, noopF
 embed.rg.ru##+js(set-constant, Object.prototype.onIntersected, undefined)
 dzen.ru,frontend.vh.yandex.ru,naydex.net,widgets.kinopoisk.ru,www.kinopoisk.ru,yastatic.net##+js(set-constant, Object.prototype.partnerId, {})
 3dnews.ru,vm.ru##+js(set-constant, Object.prototype.playVideo, noopFunc)
+myfootball.life##+js(set-constant, Object.prototype.skipDelay, undefined)
 vk.com,vk.ru##+js(set-constant, PageBottomBanners, undefined)
 free-tor.info,korsars.info##+js(set-constant, String.fromCharCode, trueFunc)
 vk.com,vk.ru##+js(set-constant, Unauthorized2, undefined)

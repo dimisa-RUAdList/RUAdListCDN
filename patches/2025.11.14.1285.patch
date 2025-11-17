@@ -1,19 +1,28 @@
-diff name:ruadlist lines:53 checksum:af0832a575
+diff name:ruadlist lines:73 checksum:7f9ad480c6
 d4 2
 a5 2
-! Last modified: Mon, 17 Nov 2025 14:31:21 +0000
-! Diff-Path: ../patches/2025.11.17.871.patch#ruadlist
+! Last modified: Mon, 17 Nov 2025 19:23:17 +0000
+! Diff-Path: ../patches/2025.11.17.1163.patch#ruadlist
 a8158 1
 /telamon.png
 d12247 2
+a12324 1
+||myfootball.life/*/betking/
 d12808 1
 d15703 1
 a15712 1
 mt.today##.bigbeautifulbutton
+d15987 1
 d17159 1
 a18236 1
 lifehacker.ru##.single-article__content article a[target="_blank"][rel*="sponsored"] ~ .wp-element-caption[style]
 d18423 1
+d19188 1
+a19188 1
+drive2.com,drive2.ru##[data-data-ym-view]
+d19265 1
+a19265 1
+drive2.com,drive2.ru##[data-ym-view]
 d19523 1
 a19523 1
 1fnl.ru,1tulatv.ru,aif.ru,alogvinov.com,compulenta.ru,computerra.ru,disgustingmen.com,forums.goha.ru,gamebomb.ru,gamer-info.com,gismeteo.ru,gotps3.ru,kudago.com,maximonline.ru,mmorpg.su,move.ru,omskpress.ru,osp.ru,penzavzglyad.ru,ps3hits.ru,radiorecord.ru,shazoo.ru,sobaka.ru,soccer.ru,sportbox.ru##a[href*="/ad.adriver."]
@@ -28,6 +37,8 @@ mt.today##a[href^="https://s.click.aliexpress."]:not([target])
 a20184 1
 mt.today##a[href^="https://t.me/skidkimt/"]:not([target])
 d20449 1
+a20728 1
+drive2.com,drive2.ru##div[class*="rossko"]
 d21004 1
 d21319 1
 d22220 2
@@ -44,10 +55,19 @@ ya.ru##[aria-label^="Информ"] ~ [class]
 d23495 1
 a23495 1
 ya.ru##section[class^="reaso"]
+a27132 1
+drive2.com,drive2.ru##.o-columns:style(grid-template-columns: unset !important)
+d27136 2
+d27139 5
+d27145 2
+a27147 1
+drive2.com,drive2.ru##div[itemtype*="://schema.org/Review"] ~ div:not(:last-child):style(min-height: 0 !important; padding-top: unset !important; padding-bottom: unset !important; box-shadow: inherit !important)
 d27737 5
 d28327 1
 a28327 1
 ya.ru##html[class*="_reaso"] aside ~ div[style]
+a29037 1
+myfootball.life##+js(set-constant, Object.prototype.skipDelay, undefined)
 d29305 1
 a29425 2
 rutube.ru##+js(json-edit-fetch-response, [?!.video_balancer.default].appearance.auto_start, propsToMatch, /api/play)
