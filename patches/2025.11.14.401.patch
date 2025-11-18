@@ -1,17 +1,25 @@
-diff name:ruadlist lines:120 checksum:7f9ad480c6
+diff name:ruadlist lines:141 checksum:039fcdaf55
 d4 2
 a5 2
-! Last modified: Mon, 17 Nov 2025 19:23:17 +0000
-! Diff-Path: ../patches/2025.11.17.1163.patch#ruadlist
+! Last modified: Tue, 18 Nov 2025 02:06:54 +0000
+! Diff-Path: ../patches/2025.11.18.126.patch#ruadlist
 a8158 1
 /telamon.png
 a8760 2
 ##a[href*="://lubar.icu/r/"]
 ##a[href*="://lubar.xyz/r/"]
+a9270 1
+||clkdaly.com^$popup
+a9332 1
+||girlieturtle.com^$popup
+a9513 1
+||tookfree.com^$popup
 d12245 2
 a12322 1
-||myfootball.life/*/betking/
+||myfootball.life/*/betking/$~media
 d12806 1
+a13699 1
+||myfootball.life/*/betking/$media,rewrite=abp-resource:blank-mp4,domain=myfootball.life
 d15647 1
 d15694 1
 d15703 1
@@ -28,6 +36,9 @@ myfootball.life#?#.sidebar--right > .block_full:-abp-has(.gg-tra-ranking)
 a18236 2
 lifehacker.ru##.single-article__content article a[target="_blank"][rel*="sponsored"] ~ .wp-element-caption[style]
 lifehacker.ru#?#.single-article__content:-abp-has(footer:-abp-contains(Реклама.)) article a > img
+d18353 1
+a18353 1
+cq.ru##.steam-news-block-wrapper
 d18422 1
 a19164 1
 epicentrk.ua##[data-advertising-listing-list] header
@@ -78,12 +89,18 @@ dzen.ru##div[id][class*="news-"][class*="-advert"]
 d22602 1
 a22602 1
 dzen.ru##[id*="845410"]
+d23104 1
+a23104 1
+ferra.ru,indicator.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,secretmag.ru,wmj.ru##[data-qa="lb-content"] ~ [data-qa="lb-footer"] ~ div
 d23486 1
 a23486 1
 ya.ru##[aria-label^="Информ"] ~ [class]
 d23490 1
 a23490 1
 ya.ru##section[class^="reaso"]
+a23893 2
+! кликабельный элемент в плеерах типа upns.*
+##body > div[style^="position: fixed; inset: 0px; z-index: 2147483647; background: black; opacity: 0.01;"]
 a27127 1
 drive2.com,drive2.ru##.o-columns:style(grid-template-columns: unset !important)
 d27131 2
@@ -100,14 +117,18 @@ a28636 1
 captcha-api.yandex.ru,id.vk.ru,passport.yandex.ru,webagent.mail.ru#@#+js()
 d28838 1
 a29033 1
-myfootball.life##+js(set-constant, Object.prototype.skipDelay, undefined)
+letidor.ru,motor.ru,quto.ru,secretmag.ru,wmj.ru##+js(set-constant, Object.prototype.readMore, undefined)
 a29070 1
-lenta.ru##+js(set-cookie, unity_pause_sso, 1)
+ferra.ru,gazeta.ru,indicator.ru,lenta.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,secretmag.ru,wmj.ru##+js(set-cookie, unity_pause_sso, 1)
+a29114 1
+letidor.ru,motor.ru,quto.ru,secretmag.ru,wmj.ru##.readMore
 d29122 1
 a29122 1
 lenta.ru##.topic-footer > div[class^="box-"][class$="-video"]:remove()
 a29193 1
 kinoblin.ru,pornoakt.*,serialai.ru##+js(addEventListener-defuser, mousedown, pop.doEvent)
+a29243 1
+||myfootball.life/*/betking/$media,redirect=noopmp4-1s,domain=myfootball.life
 d29268 1
 d29300 1
 d29336 4

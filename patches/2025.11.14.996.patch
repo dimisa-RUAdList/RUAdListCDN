@@ -1,14 +1,22 @@
-diff name:ruadlist lines:89 checksum:7f9ad480c6
+diff name:ruadlist lines:113 checksum:039fcdaf55
 d4 2
 a5 2
-! Last modified: Mon, 17 Nov 2025 19:23:17 +0000
-! Diff-Path: ../patches/2025.11.17.1163.patch#ruadlist
+! Last modified: Tue, 18 Nov 2025 02:06:54 +0000
+! Diff-Path: ../patches/2025.11.18.126.patch#ruadlist
 a8158 1
 /telamon.png
+a9272 1
+||clkdaly.com^$popup
+a9334 1
+||girlieturtle.com^$popup
+a9515 1
+||tookfree.com^$popup
 d12247 2
 a12324 1
-||myfootball.life/*/betking/
+||myfootball.life/*/betking/$~media
 d12808 1
+a13701 1
+||myfootball.life/*/betking/$media,rewrite=abp-resource:blank-mp4,domain=myfootball.life
 d15703 1
 a15712 1
 mt.today##.bigbeautifulbutton
@@ -17,6 +25,9 @@ d15988 1
 d17160 1
 a18237 1
 lifehacker.ru##.single-article__content article a[target="_blank"][rel*="sponsored"] ~ .wp-element-caption[style]
+d18355 1
+a18355 1
+cq.ru##.steam-news-block-wrapper
 d18424 1
 d19189 1
 a19189 1
@@ -56,12 +67,18 @@ dzen.ru##div[id][class*="news-"][class*="-advert"]
 d22608 1
 a22608 1
 dzen.ru##[id*="845410"]
+d23110 1
+a23110 1
+ferra.ru,indicator.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,secretmag.ru,wmj.ru##[data-qa="lb-content"] ~ [data-qa="lb-footer"] ~ div
 d23492 1
 a23492 1
 ya.ru##[aria-label^="Информ"] ~ [class]
 d23496 1
 a23496 1
 ya.ru##section[class^="reaso"]
+a23899 2
+! кликабельный элемент в плеерах типа upns.*
+##body > div[style^="position: fixed; inset: 0px; z-index: 2147483647; background: black; opacity: 0.01;"]
 a27133 1
 drive2.com,drive2.ru##.o-columns:style(grid-template-columns: unset !important)
 d27137 2
@@ -74,10 +91,17 @@ d28328 1
 a28328 1
 ya.ru##html[class*="_reaso"] aside ~ div[style]
 a29038 1
-myfootball.life##+js(set-constant, Object.prototype.skipDelay, undefined)
+letidor.ru,motor.ru,quto.ru,secretmag.ru,wmj.ru##+js(set-constant, Object.prototype.readMore, undefined)
+d29076 1
+a29076 1
+ferra.ru,gazeta.ru,indicator.ru,lenta.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,secretmag.ru,wmj.ru##+js(set-cookie, unity_pause_sso, 1)
+a29120 1
+letidor.ru,motor.ru,quto.ru,secretmag.ru,wmj.ru##.readMore
 d29128 1
 a29128 1
 lenta.ru##.topic-footer > div[class^="box-"][class$="-video"]:remove()
+a29250 1
+||myfootball.life/*/betking/$media,redirect=noopmp4-1s,domain=myfootball.life
 d29306 1
 d29342 4
 a29345 4

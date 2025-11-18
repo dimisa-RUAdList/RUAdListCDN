@@ -1,14 +1,22 @@
-diff name:ruadlist lines:73 checksum:7f9ad480c6
+diff name:ruadlist lines:97 checksum:039fcdaf55
 d4 2
 a5 2
-! Last modified: Mon, 17 Nov 2025 19:23:17 +0000
-! Diff-Path: ../patches/2025.11.17.1163.patch#ruadlist
+! Last modified: Tue, 18 Nov 2025 02:06:54 +0000
+! Diff-Path: ../patches/2025.11.18.126.patch#ruadlist
 a8158 1
 /telamon.png
+a9272 1
+||clkdaly.com^$popup
+a9334 1
+||girlieturtle.com^$popup
+a9515 1
+||tookfree.com^$popup
 d12247 2
 a12324 1
-||myfootball.life/*/betking/
+||myfootball.life/*/betking/$~media
 d12808 1
+a13701 1
+||myfootball.life/*/betking/$media,rewrite=abp-resource:blank-mp4,domain=myfootball.life
 d15703 1
 a15712 1
 mt.today##.bigbeautifulbutton
@@ -16,6 +24,9 @@ d15987 1
 d17159 1
 a18236 1
 lifehacker.ru##.single-article__content article a[target="_blank"][rel*="sponsored"] ~ .wp-element-caption[style]
+d18354 1
+a18354 1
+cq.ru##.steam-news-block-wrapper
 d18423 1
 d19188 1
 a19188 1
@@ -49,12 +60,18 @@ dzen.ru##div[id][class*="news-"][class*="-advert"]
 d22607 1
 a22607 1
 dzen.ru##[id*="845410"]
+d23109 1
+a23109 1
+ferra.ru,indicator.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,secretmag.ru,wmj.ru##[data-qa="lb-content"] ~ [data-qa="lb-footer"] ~ div
 d23491 1
 a23491 1
 ya.ru##[aria-label^="Информ"] ~ [class]
 d23495 1
 a23495 1
 ya.ru##section[class^="reaso"]
+a23898 2
+! кликабельный элемент в плеерах типа upns.*
+##body > div[style^="position: fixed; inset: 0px; z-index: 2147483647; background: black; opacity: 0.01;"]
 a27132 1
 drive2.com,drive2.ru##.o-columns:style(grid-template-columns: unset !important)
 d27136 2
@@ -67,7 +84,14 @@ d28327 1
 a28327 1
 ya.ru##html[class*="_reaso"] aside ~ div[style]
 a29037 1
-myfootball.life##+js(set-constant, Object.prototype.skipDelay, undefined)
+letidor.ru,motor.ru,quto.ru,secretmag.ru,wmj.ru##+js(set-constant, Object.prototype.readMore, undefined)
+d29075 1
+a29075 1
+ferra.ru,gazeta.ru,indicator.ru,lenta.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,secretmag.ru,wmj.ru##+js(set-cookie, unity_pause_sso, 1)
+a29119 1
+letidor.ru,motor.ru,quto.ru,secretmag.ru,wmj.ru##.readMore
+a29249 1
+||myfootball.life/*/betking/$media,redirect=noopmp4-1s,domain=myfootball.life
 d29305 1
 a29425 2
 rutube.ru##+js(json-edit-fetch-response, [?!.video_balancer.default].appearance.auto_start, propsToMatch, /api/play)

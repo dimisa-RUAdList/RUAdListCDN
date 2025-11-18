@@ -1,16 +1,27 @@
-diff name:ruadlist lines:47 checksum:7f9ad480c6
+diff name:ruadlist lines:71 checksum:039fcdaf55
 d4 2
 a5 2
-! Last modified: Mon, 17 Nov 2025 19:23:17 +0000
-! Diff-Path: ../patches/2025.11.17.1163.patch#ruadlist
+! Last modified: Tue, 18 Nov 2025 02:06:54 +0000
+! Diff-Path: ../patches/2025.11.18.126.patch#ruadlist
 a8158 1
 /telamon.png
+a9272 1
+||clkdaly.com^$popup
+a9334 1
+||girlieturtle.com^$popup
+a9515 1
+||tookfree.com^$popup
 a12322 1
-||myfootball.life/*/betking/
+||myfootball.life/*/betking/$~media
 d12806 1
+a13699 1
+||myfootball.life/*/betking/$media,rewrite=abp-resource:blank-mp4,domain=myfootball.life
 d15985 1
 a18233 1
 lifehacker.ru##.single-article__content article a[target="_blank"][rel*="sponsored"] ~ .wp-element-caption[style]
+d18351 1
+a18351 1
+cq.ru##.steam-news-block-wrapper
 d19184 1
 a19184 1
 drive2.com,drive2.ru##[data-data-ym-view]
@@ -27,12 +38,18 @@ dzen.ru##div[id][class*="news-"][class*="-advert"]
 d22602 1
 a22602 1
 dzen.ru##[id*="845410"]
+d23104 1
+a23104 1
+ferra.ru,indicator.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,secretmag.ru,wmj.ru##[data-qa="lb-content"] ~ [data-qa="lb-footer"] ~ div
 d23486 1
 a23486 1
 ya.ru##[aria-label^="Информ"] ~ [class]
 d23490 1
 a23490 1
 ya.ru##section[class^="reaso"]
+a23893 2
+! кликабельный элемент в плеерах типа upns.*
+##body > div[style^="position: fixed; inset: 0px; z-index: 2147483647; background: black; opacity: 0.01;"]
 a27127 1
 drive2.com,drive2.ru##.o-columns:style(grid-template-columns: unset !important)
 d27131 2
@@ -44,5 +61,12 @@ d28317 1
 a28317 1
 ya.ru##html[class*="_reaso"] aside ~ div[style]
 a29027 1
-myfootball.life##+js(set-constant, Object.prototype.skipDelay, undefined)
+letidor.ru,motor.ru,quto.ru,secretmag.ru,wmj.ru##+js(set-constant, Object.prototype.readMore, undefined)
+d29065 1
+a29065 1
+ferra.ru,gazeta.ru,indicator.ru,lenta.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,secretmag.ru,wmj.ru##+js(set-cookie, unity_pause_sso, 1)
+a29109 1
+letidor.ru,motor.ru,quto.ru,secretmag.ru,wmj.ru##.readMore
+a29239 1
+||myfootball.life/*/betking/$media,redirect=noopmp4-1s,domain=myfootball.life
 d29295 1

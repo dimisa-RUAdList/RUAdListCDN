@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 17 Nov 2025 19:23:17 +0000
-! Diff-Path: ../patches/2025.11.17.1163.patch#ruadlist
+! Last modified: Tue, 18 Nov 2025 02:06:54 +0000
+! Diff-Path: ../patches/2025.11.18.126.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -9271,6 +9271,7 @@ $third-party,popup,domain=2ip.ru
 ||clickson.net^*/pp/$popup
 ||cliclo-gateway.ru^$popup
 ||cliclo-useraction.ru^$popup
+||clkdaly.com^$popup
 ||club-vullkan.com^$third-party,popup
 ||code.directadvert.ru^$popup
 ||com/go.php?tid=*&hid=$popup
@@ -9333,6 +9334,7 @@ $third-party,popup,domain=2ip.ru
 ||getmyads24.com^$third-party,popup
 ||gettraf.com^$popup
 ||gfsrv.net^$third-party,popup
+||girlieturtle.com^$popup
 ||go.sellaction.net^$popup
 ||go.trafking.ru^$popup
 ||gobylink.info^$popup
@@ -9514,6 +9516,7 @@ $third-party,popup,domain=2ip.ru
 ||tipebixartbli.ml^$popup
 ||titangel.me^$third-party,popup
 ||tmredirects.com^$popup
+||tookfree.com^$popup
 ||toolsins.com^$popup
 ||top/*rd.php?id=$third-party,popup
 ||torvind.com^$popup
@@ -12321,7 +12324,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||my-cinema.net/branding/
 ||my.mosenergosbyt.ru/file/id_content:$image
 ||mydiv.net/tim/newold
-||myfootball.life/*/betking/
+||myfootball.life/*/betking/$~media
 ||mymedicalportal.net^$xmlhttprequest
 ||mynizhyn.com/image/banners/
 ||myparcels.ru/ajax/tz.php
@@ -13698,6 +13701,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||zzsites.ru^$script
 ! Rewrite rules
 !#if ext_abp
+||myfootball.life/*/betking/$media,rewrite=abp-resource:blank-mp4,domain=myfootball.life
 ||s-cdn.org/promo/*.mp4$rewrite=abp-resource:blank-mp4,domain=player-films.online
 ||s-club.tv/promo/*.mp4$rewrite=abp-resource:blank-mp4,domain=player-films.online
 ||ts.kg/olol*.mp4$rewrite=abp-resource:blank-mp4,domain=ts.kg
@@ -18349,7 +18353,7 @@ vl.ru##.static-banners
 bigcaucasus.com,pravda.ru##.staticFragment
 calc.ru##.static_re
 finzz.ru##.stb-container
-cq.ru##.steam-pay__ad
+cq.ru##.steam-news-block-wrapper
 diakov.net##.stic
 wylsa.com##.stick-promo--container
 www.zoneofgames.ru##.stickBanner
@@ -23103,7 +23107,7 @@ championat.com,championat.ru##[data-href*="okko.sport"]
 championat.com,championat.ru##[data-href*="utm_"]
 motor.ru##[data-motor-desktop*="exchange_block"]
 rambler.ru##[data-news_media-desktop*="rnet_widget"]
-ferra.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,secretmag.ru,wmj.ru##[data-qa="lb-content"] ~ [data-qa="lb-footer"] ~ div
+ferra.ru,indicator.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,secretmag.ru,wmj.ru##[data-qa="lb-content"] ~ [data-qa="lb-footer"] ~ div
 avtorambler.com,rambler.ru##[data-rcmw-init]
 sport.rambler.ru##[data-sport_media-desktop*="rnet_widget"]
 www.afisha.ru#?#[data-test="SECTION"] > [data-test="SECTION-CONTENT"]:-abp-has(> div > [href^="/out/?url="])
@@ -23893,6 +23897,8 @@ zarulem.ws##td[style^="text-align:center;width:50%"]
 ||ucoz.org/?*%5E$script,subdocument,~third-party
 ||ucoz.ru/?*%21*%$script,subdocument,~third-party
 ||ucoz.ru/?*%5E$script,subdocument,~third-party
+! кликабельный элемент в плеерах типа upns.*
+##body > div[style^="position: fixed; inset: 0px; z-index: 2147483647; background: black; opacity: 0.01;"]
 ! Рекламный баннер Browsec
 ##body > div[class^="_"][class*=" _"][class$="_stBig"]
 ! *** ./advblock/thirdparty.txt ***
@@ -29020,7 +29026,7 @@ vp.rambler.ru##+js(set-constant, Object.prototype.minPlayingVisibleHeight, noopF
 embed.rg.ru##+js(set-constant, Object.prototype.onIntersected, undefined)
 dzen.ru,frontend.vh.yandex.ru,naydex.net,widgets.kinopoisk.ru,www.kinopoisk.ru,yastatic.net##+js(set-constant, Object.prototype.partnerId, {})
 3dnews.ru,vm.ru##+js(set-constant, Object.prototype.playVideo, noopFunc)
-myfootball.life##+js(set-constant, Object.prototype.skipDelay, undefined)
+letidor.ru,motor.ru,quto.ru,secretmag.ru,wmj.ru##+js(set-constant, Object.prototype.readMore, undefined)
 vk.com,vk.ru##+js(set-constant, PageBottomBanners, undefined)
 free-tor.info,korsars.info##+js(set-constant, String.fromCharCode, trueFunc)
 vk.com,vk.ru##+js(set-constant, Unauthorized2, undefined)
@@ -29058,7 +29064,7 @@ kufar.by##+js(set-cookie, kuf_agr, true)
 lk.emias.mos.ru##+js(set-cookie, lk-hasConsent, True)
 playground.ru##+js(set-cookie, pg_SuggestGameFollow, true)
 kinotv.ru##+js(set-cookie, telegram_popup, Y)
-lenta.ru##+js(set-cookie, unity_pause_sso, 1)
+ferra.ru,gazeta.ru,indicator.ru,lenta.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,secretmag.ru,wmj.ru##+js(set-cookie, unity_pause_sso, 1)
 mp3party.net##+js(set-cookie, yandexFull, true)
 playground.ru##+js(set-local-storage-item, pg_GPbackVideo, on)
 iz.ru##+js(set-local-storage-item, vipler.player.live.play, false)
@@ -29103,6 +29109,7 @@ author.today##.noselect:style(-webkit-touch-callout: default !important; -webkit
 vm.ru##.onair_wrapper > [name="btn_air_close"]
 cq.ru##.post-content > div > div:matches-css(height: 150px):remove()
 pikabu.ru##.pub300x250.pub300x250m.pub728x90.text-ad.textAd.textad.textads.text-ads.text-ad-links:style(display: block !important; position: absolute !important; top: -10000px !important; left: -10000px !important)
+letidor.ru,motor.ru,quto.ru,secretmag.ru,wmj.ru##.readMore
 sports.ru##.right-first-banner-place + div
 lenta.ru##.scroll-to-site
 softportal.com##.st-browser__timer
@@ -29233,6 +29240,7 @@ ya.ru,yandex.*##.simple-popup__overlay:remove()
 ||m.mixadvert.com/show/$important,script
 ||mc.admetrica.ru/sync_cookie_image_check$image,redirect=1x1-transparent.gif
 ||my.mail.ru/video/embed/*autoplay=1$subdocument,removeparam=autoplay
+||myfootball.life/*/betking/$media,redirect=noopmp4-1s,domain=myfootball.life
 ||partnerprofitboost.com^$popunder
 ||pronpic.org^$subdocument,redirect=noopframe,domain=pronpic.org
 ||pronpic.org^$third-party,badfilter
