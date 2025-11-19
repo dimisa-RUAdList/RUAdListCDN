@@ -1,8 +1,8 @@
-diff name:ruadlist lines:104 checksum:8c2156d716
+diff name:ruadlist lines:112 checksum:7b719bb9ab
 d4 2
 a5 2
-! Last modified: Wed, 19 Nov 2025 06:41:00 +0000
-! Diff-Path: ../patches/2025.11.19.401.patch#ruadlist
+! Last modified: Wed, 19 Nov 2025 11:24:52 +0000
+! Diff-Path: ../patches/2025.11.19.684.patch#ruadlist
 a8158 1
 /telamon.png
 a9272 1
@@ -63,6 +63,10 @@ dzen.ru##div[id][class*="news-"][class*="-advert"]
 d22607 1
 a22607 1
 dzen.ru##[id*="845410"]
+a22728 2
+cloud.mail.ru##div[class^="ShovePublic__disableButton--"]
+cloud.mail.ru##div[class^="ShovePublic__frame--"]
+d22730 1
 d23109 1
 a23109 1
 ferra.ru,indicator.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,secretmag.ru,wmj.ru##[data-qa="lb-content"] ~ [data-qa="lb-footer"] ~ div
@@ -77,17 +81,21 @@ a23898 2
 ##body > div[style^="position: fixed; inset: 0px; z-index: 2147483647; background: black; opacity: 0.01;"]
 a27132 1
 drive2.com,drive2.ru##.o-columns:style(grid-template-columns: unset !important)
-d27136 2
-d27139 5
-d27145 2
-a27147 1
-drive2.com,drive2.ru##div[itemtype*="://schema.org/Review"] ~ div:not(:last-child):style(min-height: 0 !important; padding-top: unset !important; padding-bottom: unset !important; box-shadow: inherit !important)
+d27136 12
 d27737 5
 d28327 1
 a28327 1
 ya.ru##html[class*="_reaso"] aside ~ div[style]
+d28601 1
+a28601 1
+cloud.mail.ru##div[class^="Public-desktop_"][class*="_shove--"]:style(background-color: inherit !important)
+d28603 1
+a28605 3
+cloud.mail.ru##div[class^="ShovePublic__content"]:style(width: 100% !important)
+cloud.mail.ru##div[class^="ShovePublic__folder"]:style(width: 100% !important)
+cloud.mail.ru##div[class^="ShovePublic__root"]:style(background-color: inherit !important)
 a29037 1
-letidor.ru,motor.ru,quto.ru,secretmag.ru,wmj.ru##+js(set-constant, Object.prototype.readMore, undefined)
+letidor.ru,quto.ru,secretmag.ru,wmj.ru##+js(set-constant, Object.prototype.readMore, undefined)
 d29075 1
 a29075 1
 ferra.ru,indicator.ru,lenta.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,secretmag.ru,wmj.ru##+js(set-cookie, unity_pause_sso, 1)

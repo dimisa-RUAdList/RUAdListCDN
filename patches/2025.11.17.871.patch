@@ -1,8 +1,8 @@
-diff name:ruadlist lines:55 checksum:8c2156d716
+diff name:ruadlist lines:63 checksum:7b719bb9ab
 d4 2
 a5 2
-! Last modified: Wed, 19 Nov 2025 06:41:00 +0000
-! Diff-Path: ../patches/2025.11.19.401.patch#ruadlist
+! Last modified: Wed, 19 Nov 2025 11:24:52 +0000
+! Diff-Path: ../patches/2025.11.19.684.patch#ruadlist
 a9273 1
 ||clkdaly.com^$popup
 a9335 1
@@ -28,6 +28,10 @@ drive2.com,drive2.ru##div[class*="rossko"]
 d22242 1
 a22242 1
 ||pikabu.ru/ajax/*?J87KI=$xmlhttprequest
+a22724 2
+cloud.mail.ru##div[class^="ShovePublic__disableButton--"]
+cloud.mail.ru##div[class^="ShovePublic__frame--"]
+d22726 1
 d23105 1
 a23105 1
 ferra.ru,indicator.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,secretmag.ru,wmj.ru##[data-qa="lb-content"] ~ [data-qa="lb-footer"] ~ div
@@ -36,13 +40,17 @@ a23894 2
 ##body > div[style^="position: fixed; inset: 0px; z-index: 2147483647; background: black; opacity: 0.01;"]
 a27128 1
 drive2.com,drive2.ru##.o-columns:style(grid-template-columns: unset !important)
-d27132 2
-d27135 5
-d27141 2
-a27143 1
-drive2.com,drive2.ru##div[itemtype*="://schema.org/Review"] ~ div:not(:last-child):style(min-height: 0 !important; padding-top: unset !important; padding-bottom: unset !important; box-shadow: inherit !important)
+d27132 12
+d28592 1
+a28592 1
+cloud.mail.ru##div[class^="Public-desktop_"][class*="_shove--"]:style(background-color: inherit !important)
+d28594 1
+a28596 3
+cloud.mail.ru##div[class^="ShovePublic__content"]:style(width: 100% !important)
+cloud.mail.ru##div[class^="ShovePublic__folder"]:style(width: 100% !important)
+cloud.mail.ru##div[class^="ShovePublic__root"]:style(background-color: inherit !important)
 a29028 1
-letidor.ru,motor.ru,quto.ru,secretmag.ru,wmj.ru##+js(set-constant, Object.prototype.readMore, undefined)
+letidor.ru,quto.ru,secretmag.ru,wmj.ru##+js(set-constant, Object.prototype.readMore, undefined)
 d29066 1
 a29066 1
 ferra.ru,indicator.ru,lenta.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,secretmag.ru,wmj.ru##+js(set-cookie, unity_pause_sso, 1)

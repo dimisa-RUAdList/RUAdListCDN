@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 19 Nov 2025 06:41:00 +0000
-! Diff-Path: ../patches/2025.11.19.401.patch#ruadlist
+! Last modified: Wed, 19 Nov 2025 11:24:52 +0000
+! Diff-Path: ../patches/2025.11.19.684.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22727,8 +22727,9 @@ cloud.mail.ru##div[class*="advHeaderStatic"]
 cloud.mail.ru##div[class^="Folder__worm"]
 cloud.mail.ru##div[class^="ReactViewer__attachesSidebar"]
 cloud.mail.ru##div[class^="ReactViewer__bottominfoWrapper-"]
+cloud.mail.ru##div[class^="ShovePublic__disableButton--"]
+cloud.mail.ru##div[class^="ShovePublic__frame--"]
 cloud.mail.ru,doc.mail.ru##div[class^="Sidebarinfo__root"]
-cloud.mail.ru,doc.mail.ru##div[class^="Worm__root-"]
 cloud.mail.ru##section > div[class^="Rightinfo__header"]
 ! Дом
 dom.mail.ru##[data-qa="ArticlesList"] > [data-logger="ListItem"] ~ div:last-child:not([data-logger="ListItem"])
@@ -27137,10 +27138,6 @@ drive2.com,drive2.ru##.o-columns:style(grid-template-columns: unset !important)
 drive2.com,drive2.ru##.u-extend-fix:style(background: center / 100% 100% no-repeat #515151 var(--res-logo) !important; border-radius: 6px !important)
 drive2.com,drive2.ru##[data-track]:not(a):style(min-height: 0 !important; padding-top: unset !important; padding-bottom: unset !important; box-shadow: inherit !important)
 drive2.com,drive2.ru##div[class$="content"] ~ div + div[class*=" "][class$="--mh"]
-drive2.com,drive2.ru##div[itemtype*="://schema.org/BlogPosting"] > div:not(:last-child):style(min-height: 0 !important; padding-top: unset !important; padding-bottom: unset !important; box-shadow: inherit !important)
-drive2.com,drive2.ru##div[itemtype*="://schema.org/Photograph"] > div:not(:last-child):style(min-height: 0 !important; padding-top: unset !important; padding-bottom: unset !important; box-shadow: inherit !important)
-drive2.com,drive2.ru##div[itemtype*="://schema.org/Product"] ~ div:not(:last-child):style(min-height: 0 !important; padding-top: unset !important; padding-bottom: unset !important; box-shadow: inherit !important)
-drive2.com,drive2.ru##div[itemtype*="://schema.org/Review"] ~ div:not(:last-child):style(min-height: 0 !important; padding-top: unset !important; padding-bottom: unset !important; box-shadow: inherit !important)
 drive2.com,drive2.ru##div[class*="--content article "] + div
 drive2.com,drive2.ru##div[class*="--content article "] + div + div:not(:last-child)
 drive2.com,drive2.ru##div[class*="--content article "] + div ~ div:last-child > div:first-child + div[class]
@@ -28589,11 +28586,13 @@ mail.ru##body:not(.js-module) .tabs + div[class] > :first-child:style(width: 100
 mail.ru##body:not(.js-module) .tabs + div[class]:style(min-width: fit-content !important)
 mail.ru##body:not(.js-module) .tabs > .tabs__item:style(padding: 0 4px !important; font-size: 14px !important)
 mail.ru##div:not(.grid__main-col) > div[slot="main-column"] .search-container:style(margin-top: 4px !important; margin-bottom: 20px !important)
-cloud.mail.ru##div[class^="Datalistinfo__root"]
+cloud.mail.ru##div[class^="Public-desktop_"][class*="_shove--"]:style(background-color: inherit !important)
 cloud.mail.ru##div[class^="Public-desktop__rightCol-"]
-cloud.mail.ru##div[class^="Public__folderContent"]:style(padding-right: 0 !important)
 cloud.mail.ru##div[class^="ReactViewer__attachesinfo-"]
 cloud.mail.ru##div[class^="ReactViewer__root-"]:style(--bottom-banner-height: 1px !important)
+cloud.mail.ru##div[class^="ShovePublic__content"]:style(width: 100% !important)
+cloud.mail.ru##div[class^="ShovePublic__folder"]:style(width: 100% !important)
+cloud.mail.ru##div[class^="ShovePublic__root"]:style(background-color: inherit !important)
 my.mail.ru##div[class^="app-adv-"]
 news.mail.ru,sportmail.ru##div[data-module="LazyLoad.PromoPopup"] .js-module.block
 mail.ru,sportmail.ru##div[data-mp*="LazyPulse"]
@@ -29026,7 +29025,7 @@ vp.rambler.ru##+js(set-constant, Object.prototype.minPlayingVisibleHeight, noopF
 embed.rg.ru##+js(set-constant, Object.prototype.onIntersected, undefined)
 dzen.ru,frontend.vh.yandex.ru,naydex.net,widgets.kinopoisk.ru,www.kinopoisk.ru,yastatic.net##+js(set-constant, Object.prototype.partnerId, {})
 3dnews.ru,vm.ru##+js(set-constant, Object.prototype.playVideo, noopFunc)
-letidor.ru,motor.ru,quto.ru,secretmag.ru,wmj.ru##+js(set-constant, Object.prototype.readMore, undefined)
+letidor.ru,quto.ru,secretmag.ru,wmj.ru##+js(set-constant, Object.prototype.readMore, undefined)
 vk.com,vk.ru##+js(set-constant, PageBottomBanners, undefined)
 free-tor.info,korsars.info##+js(set-constant, String.fromCharCode, trueFunc)
 vk.com,vk.ru##+js(set-constant, Unauthorized2, undefined)
