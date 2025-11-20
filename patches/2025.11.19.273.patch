@@ -1,16 +1,30 @@
-diff name:ruadlist lines:49 checksum:20f80ccbb4
+diff name:ruadlist lines:73 checksum:6d722e63ed
 d4 2
 a5 2
-! Last modified: Thu, 20 Nov 2025 07:27:37 +0000
-! Diff-Path: ../patches/2025.11.20.447.patch#ruadlist
+! Last modified: Thu, 20 Nov 2025 12:57:17 +0000
+! Diff-Path: ../patches/2025.11.20.777.patch#ruadlist
+a396 1
+||aj1616.online^$third-party
+a496 1
+||apkfiler.sbs^$third-party
+a515 1
+||artofile.homes^$third-party
+a8512 1
+##.ubar
+a9751 1
+||gameinstaller.ru^$popup
 d10403 1
 a10403 1
-$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: *.addtoany.com *.amazonaws.com *.cloudflare.com *.content-loader.com *.dmca.com *.disqus.com *.disquscdn.com *.enduro.team *.facebook.com *.getsitecontrol.com accounts.google.com apis.google.com cse.google.com *.google.com/cse/ *.google.com/complete/ *.google.com/recaptcha/ translate.google.com www.google.com *.googleapis.com *.googletagmanager.com *.gstatic.com/recaptcha/ *.icon-icons.com *.instagram.com *.jivosite.com *.jquery.com *.keycaptcha.com *.sendpulse.com *.sharethis.com *.po.st *.threadloom.com *.tiktok.com *.trustpilot.com *.twitter.com vk.com www.youtube.com *.dev *.io *.net *.org *.ru *.ua,domain=agroter.com.ua|alensat.com|allbasketball.org|askentire.net|autonews.co.ua|autosoftos.com|babla.ru|bio-lessons.ru|callfilter.app|cardiagram.com.ua|clickthis.blog|coollib.net|delo.ua|elegantwoman.kyiv.ua|enduro.team|eurointegration.com.ua|farposst.ru|findhow.org|for-driver.info|gazeta-misto.te.ua|golos.te.ua|icon-icons.com|ilenta.com|index.minfin.com.ua|inforesist.org|kovelpost.com|kreschatic.kiev.ua|kurs.com.ua|mirlib.ru|modfix.ru|musinfo.net|newsyou.info|notebookcheck-ru.com|nsn.net.ua|ontvtime.ru|orbit-games.com|pb-news.info|perpendicular.pro|pes-files.ru|pingvin.pro|poezdato.net|poizdato.net|pravda.com.ua|rovesnyknews.te.ua|ruboard.website|skidkaonline.ru|sundries.ua|tenews.org.ua|ternopillive.com|tribun.com.ua|uapress.kyiv.ua|valorantinfo.com|vesti-ua.net|vkazivka.com|wallpapershome.ru|xn--80aaukc.xn--j1amh
+$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: *.addtoany.com *.amazonaws.com *.cloudflare.com content-loader.com *.dmca.com *.disqus.com *.disquscdn.com *.enduro.team *.facebook.com *.getsitecontrol.com accounts.google.com apis.google.com cse.google.com *.google.com/cse/ *.google.com/complete/ *.google.com/recaptcha/ translate.google.com www.google.com *.googleapis.com *.googletagmanager.com *.gstatic.com/recaptcha/ *.html-load.com *.icon-icons.com *.instagram.com *.jivosite.com *.jquery.com *.keycaptcha.com *.sendpulse.com *.sharethis.com cdn.snigelweb.com *.po.st *.threadloom.com *.tiktok.com *.trustpilot.com *.twitter.com vk.com www.youtube.com *.dev *.io *.net *.org *.ru *.ua,domain=agroter.com.ua|alensat.com|allbasketball.org|askentire.net|autonews.co.ua|autosoftos.com|babla.ru|bio-lessons.ru|callfilter.app|cardiagram.com.ua|clickthis.blog|coollib.net|delo.ua|elegantwoman.kyiv.ua|enduro.team|eurointegration.com.ua|farposst.ru|findhow.org|for-driver.info|gazeta-misto.te.ua|golos.te.ua|icon-icons.com|ilenta.com|index.minfin.com.ua|inforesist.org|kovelpost.com|kreschatic.kiev.ua|kurs.com.ua|mirlib.ru|modfix.ru|musinfo.net|newsyou.info|notebookcheck-ru.com|nsn.net.ua|ontvtime.ru|orbit-games.com|pb-news.info|perpendicular.pro|pes-files.ru|pingvin.pro|poezdato.net|poizdato.net|pravda.com.ua|rovesnyknews.te.ua|ruboard.website|skidkaonline.ru|sundries.ua|tenews.org.ua|ternopillive.com|tribun.com.ua|uapress.kyiv.ua|valorantinfo.com|vesti-ua.net|vkazivka.com|wallpapershome.ru|xn--80aaukc.xn--j1amh
 d11810 1
 a11810 1
 ||html-load.com/loader.min.js$domain=eurointegration.com.ua|news.zerkalo.io|newsyou.info|notebookcheck-ru.com|pravda.com.ua|sportanalytic.com
 d12426 1
 d16085 1
+a16595 1
+brotorrent.net##.giBlock
+a17010 1
+androidinsider.ru##.link-alert
 d17879 1
 d18293 1
 d18655 1
@@ -30,10 +44,18 @@ d21966 3
 d22222 1
 a22222 1
 $csp=script-src-attr 'none',domain=eurointegration.com.ua|pravda.com.ua|sportanalytic.com|notebookcheck-ru.com
+d22303 1
+a22303 2
+dtf.ru##.rotator *
+dtf.ru##.sticky-stack-sidebar-section .loader + div[id][class]:empty
 a22729 2
 cloud.mail.ru##div[class^="ShovePublic__disableButton--"]
 cloud.mail.ru##div[class^="ShovePublic__frame--"]
 d22731 1
+a23484 1
+300.ya.ru##.banner-container
+a26856 1
+androidinsider.ru##a[href*="erid="]:style(pointer-events: none !important; color: inherit !important; border-bottom: inherit !important)
 a27064 1
 click-or-die.ru##a[href*="sponsored="]:style(pointer-events: none !important; color: inherit !important)
 d27140 4
@@ -48,3 +70,5 @@ cloud.mail.ru##div[class^="ShovePublic__root"]:style(background-color: inherit !
 d29029 1
 a29029 1
 letidor.ru,quto.ru,secretmag.ru,wmj.ru##+js(set-constant, Object.prototype.readMore, undefined)
+a29089 1
+androidinsider.ru##.article-body:has(> p > [href="https://androidinsider.ru/tag/reklama"]) a[href*="utm_campaign"]:style(pointer-events: none !important; color: inherit !important; border-bottom: inherit !important)
