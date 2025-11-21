@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 21 Nov 2025 08:38:20 +0000
-! Diff-Path: ../patches/2025.11.21.518.patch#ruadlist
+! Last modified: Fri, 21 Nov 2025 13:34:45 +0000
+! Diff-Path: ../patches/2025.11.21.814.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -28864,6 +28864,7 @@ lifehacker.ru##+js(href-sanitizer, a[href][rel*="sponsored"][target="_blank"], ?
 hot.game,lifehacker.ru##+js(href-sanitizer, a[href][target="_blank"], ?ulp)
 www.ixbt.com##+js(href-sanitizer, a[href^="//www.ixbt.com/click/?c="], [title])
 wotspeak.org##+js(href-sanitizer, a[href^="/engine/dwn"], ?xf)
+rambler.ru##+js(href-sanitizer, a[href^="http://www.gazeta.ru"][aria-label^="Перейти на страницу источника"], +https)
 e.mail.ru,mail.rambler.ru,mail.yandex.ru,octavius.mail.ru##+js(href-sanitizer, a[href^="https://click.email4customers.com/Link?"], ?args)
 rsload.net##+js(href-sanitizer, a[href^="https://fixti.ru/download.php?files="], ?files)
 vc.ru##+js(href-sanitizer, a[href^="https://go.2038.pro/"][href*="?dl="], ?dl)
@@ -29195,6 +29196,7 @@ fap-guru.*,seks-studentki.*,sex-studentki.*##+js(addEventListener-defuser, DOMCo
 hdrezka.*,rezka.*##+js(abort-current-inline-script, document.getElementsByTagName, AMSP.loadAsset)
 howdyho.*##+js(no-setTimeout-if, _0x)
 howdyho.*##+js(set-attr, #progress-value, data-timer, 25)
+ferra.ru,indicator.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,secretmag.ru,wmj.ru##html[data-env]:style(container-type: unset !important)
 kinoblin.ru,pornoakt.*,serialai.ru##+js(addEventListener-defuser, mousedown, pop.doEvent)
 liveball.*,tapochek.net##+js(abort-on-property-read, ABNS)
 m.rp5.*#@#.adsbygoogle
