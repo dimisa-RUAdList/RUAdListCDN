@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 21 Nov 2025 18:35:54 +0000
-! Diff-Path: ../patches/2025.11.21.1115.patch#ruadlist
+! Last modified: Fri, 21 Nov 2025 23:25:54 +0000
+! Diff-Path: ../patches/2025.11.21.1405.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -19225,6 +19225,7 @@ eapteka.ru##[data-neon-skeleton-removable]
 vladnews.ru##[data-newsb]
 cq.ru##[data-odds-series]
 bankiros.ru##[data-offer]
+kinorium.com##[data-original-url*="erid="]
 news.soundex.ru##[data-original^="http://news.soundex.ru/images/banners/"]
 shuba.life,studopedia.ru,studopedia.su##[data-partner]
 iz.ru##[data-partners-block-id]
@@ -23585,6 +23586,7 @@ rasp.yandex.ru,rasp.yandex.*#?#.SearchSegments__row:-abp-has([class*="banner"])
 rasp.yandex.ru,rasp.yandex.*#?#.SearchSegments__row:-abp-has([id*="banner"])
 translate.yandex.ru,translate.yandex.*##.sidebar-direct
 translate.yandex.ru,translate.yandex.*##.SingEhAuil2ADSg8Sapi
+translate.yandex.ru,translate.yandex.*##div[id^="sidebar-"]
 travel.yandex.ru##div.root[id]:empty
 turbopages.org##.advert
 uslugi.yandex.ru##.WebBanner
