@@ -1,8 +1,8 @@
-diff name:ruadlist lines:28 checksum:77ace491d4
+diff name:ruadlist lines:116 checksum:228b4aedb0
 d4 2
 a5 2
-! Last modified: Sat, 22 Nov 2025 09:26:34 +0000
-! Diff-Path: ../patches/2025.11.22.566.patch#ruadlist
+! Last modified: Sat, 22 Nov 2025 14:25:41 +0000
+! Diff-Path: ../patches/2025.11.22.865.patch#ruadlist
 a7706 1
 ||utorria.ru^
 a8447 1
@@ -13,6 +13,12 @@ a9759 3
 ||ggsel.net/?subid=$popup
 a9993 1
 ||utorria.ru^$popup
+d10235 1
+a10235 1
+/eagle.autostart.$script,domain=gazeta.press|gazeta.ru|lenta.ru|rambler.ru
+d13627 1
+a13627 1
+||yandex.*games/$domain=fishki.net|games.academic.ru|gazeta.press|gazeta.ru|lenta.ru|vz.ru
 d16340 1
 d18999 1
 a18999 1
@@ -22,8 +28,90 @@ kinorium.com##[data-original-url*="erid="]
 d19699 1
 a19699 1
 agronovosti.ru,kinorium.com,sport-express.net,sport-express.ru,www.ixbt.com##a[href*="erid="][target="_blank"]
+d23063 4
+a23066 4
+gazeta.press,gazeta.ru##.b_nav > a[target="_blank"]
+gazeta.press,gazeta.ru##.b_rightcol-sticky > div[id]
+gazeta.press,gazeta.ru##.b_telegram
+championat.com,championat.ru,gazeta.press,gazeta.ru,lenta.ru##.banner
+d23085 1
+a23085 1
+gazeta.press,gazeta.ru##.m_zen
+d23087 1
+a23087 1
+gazeta.press,gazeta.ru##.rcmw-container
+d23103 1
+a23103 1
+gazeta.press,gazeta.ru##[data-docking="left-down"] > div[style^="height:"][style*="overflow:"]
+d23116 1
+a23116 1
+gazeta.press,gazeta.ru##[data-url*="/prcom/"]
+a23130 1
+gazeta.press,gazeta.ru##a[href^="/prcom/"]
+d23136 1
+a23136 1
+gazeta.press,gazeta.ru#?#div:-abp-has(> .b_telegram)
+d23147 1
+a23147 1
+gazeta.press,gazeta.ru,letidor.ru,moslenta.ru,passion.ru,quto.ru##div[class*="billboard"]
+d23155 2
+a23156 2
+gazeta.press,gazeta.ru##div[id^="__id_global_rambler_video_off_"][data-mediaposition="bottom"]
+gazeta.press,gazeta.ru##div[id^="_g_exchange_"]
+d23191 1
+a23191 1
+||static.gazeta.ru/nm2021/js/others_scripts_
+d23193 1
+a23193 1
+||vp.rambler.ru/player/*&mediaposition=bottom&$subdocument,domain=gazeta.press|gazeta.ru
+d23203 1
+a23203 1
+gazeta.press,gazeta.ru###in-read
+d23205 2
+a23206 2
+gazeta.press,gazeta.ru##div[class^="gazeta-dynamic-ban-"]
+gazeta.press,gazeta.ru##div[id^="block_pad_id"]
 a23582 1
 translate.yandex.ru,translate.yandex.*##div[id^="sidebar-"]
+d28493 1
+a28493 1
+gagadget.com,gazeta.press|gazeta.ru,lenta.ru,rambler.ru##body:not(#id):style(overflow-y: auto !important)
+d28495 2
+a28496 2
+gazeta.press,gazeta.ru###_id_main_content:style(max-width: 100% !important)
+gazeta.press,gazeta.ru##.b_header:style(max-width: 100% !important)
+d28621 1
+d28743 1
+a28743 1
+gazeta.press,gazeta.ru##+js(abort-on-property-read, eaglePlayerPlugins.autoplay_position)
+d28749 1
+a28749 1
+gazeta.press,gazeta.ru##+js(abort-on-property-read, goTolink)
 d28867 1
 a28867 1
 rambler.ru##+js(href-sanitizer, a[href^="http:"][aria-label^="Перейти на страницу источника"], +https)
+d29043 3
+a29045 3
+gazeta.press,gazeta.ru##+js(set-constant, g_GazetaNoExchange, true)
+gazeta.press,gazeta.ru##+js(set-constant, history.replaceState, noopFunc)
+gazeta.press,gazeta.ru##+js(set-constant, isAdFree, noopFunc)
+d29073 1
+a29073 1
+gazeta.press,gazeta.ru##+js(set-cookie-reload, unity_pause_sso, 1)
+d29162 1
+a29162 1
+gazeta.press,gazeta.ru##^responseheader(location)
+d29174 1
+a29174 1
+gazeta.press,gazeta.ru##body > div[style^="height:"][style*="vh"]:empty
+d29444 3
+a29446 3
+gazeta.ru,gazeta.press|lenta.ru,secretmag.ru,wmj.ru##iframe[src^="https://vp.rambler.ru/player/"] ~ svg
+gazeta.ru,gazeta.press|lenta.ru,secretmag.ru,wmj.ru##iframe[src^="https://vp.rambler.ru/player/"]:style(position: relative !important)
+||vp.rambler.ru/player/$csp=media-src 'self',domain=championat.com|championat.ru|lenta.ru|gazeta.press|gazeta.ru|rambler.ru|~vp.rambler.ru|secretmag.ru|wmj.ru
+d29453 1
+a29453 1
+||zoomdecorate.rambler.ru^$script,redirect=noopjs,domain=afisha.ru|autorambler.ru|championat.com|eda.ru|gazeta.press|gazeta.ru|lenta.ru|letidor.ru|moslenta.ru|motor.ru|passion.ru|quto.ru|rambler.ru|wmj.ru
+d29461 1
+a29461 1
+afisha.ru,autorambler.ru,championat.com,eda.ru,gazeta.press,gazeta.ru,lenta.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,rambler.ru,wmj.ru##+js(abort-current-inline-script, dispatchEvent, zoomdecorate)

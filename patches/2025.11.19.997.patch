@@ -1,8 +1,8 @@
-diff name:ruadlist lines:72 checksum:77ace491d4
+diff name:ruadlist lines:160 checksum:228b4aedb0
 d4 2
 a5 2
-! Last modified: Sat, 22 Nov 2025 09:26:34 +0000
-! Diff-Path: ../patches/2025.11.22.566.patch#ruadlist
+! Last modified: Sat, 22 Nov 2025 14:25:41 +0000
+! Diff-Path: ../patches/2025.11.22.865.patch#ruadlist
 a396 1
 ||aj1616.online^$third-party
 a496 1
@@ -23,6 +23,9 @@ a9754 3
 ||ggsel.net/?subid=$popup
 a9988 1
 ||utorria.ru^$popup
+d10230 1
+a10230 1
+/eagle.autostart.$script,domain=gazeta.press|gazeta.ru|lenta.ru|rambler.ru
 d10403 1
 a10403 1
 $csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: *.addtoany.com *.amazonaws.com *.cloudflare.com content-loader.com *.dmca.com *.disqus.com *.disquscdn.com *.enduro.team *.facebook.com *.getsitecontrol.com accounts.google.com apis.google.com cse.google.com *.google.com/cse/ *.google.com/complete/ *.google.com/recaptcha/ translate.google.com www.google.com *.googleapis.com *.googletagmanager.com *.gstatic.com/recaptcha/ *.html-load.com *.icon-icons.com *.instagram.com *.jivosite.com *.jquery.com *.keycaptcha.com *.sendpulse.com *.sharethis.com cdn.snigelweb.com *.po.st *.threadloom.com *.tiktok.com *.trustpilot.com *.twitter.com vk.com www.youtube.com *.dev *.io *.net *.org *.ru *.ua,domain=agroter.com.ua|alensat.com|allbasketball.org|askentire.net|autonews.co.ua|autosoftos.com|babla.ru|bio-lessons.ru|callfilter.app|cardiagram.com.ua|clickthis.blog|coollib.net|delo.ua|elegantwoman.kyiv.ua|enduro.team|eurointegration.com.ua|farposst.ru|findhow.org|for-driver.info|gazeta-misto.te.ua|golos.te.ua|icon-icons.com|ilenta.com|index.minfin.com.ua|inforesist.org|kovelpost.com|kreschatic.kiev.ua|kurs.com.ua|mirlib.ru|modfix.ru|musinfo.net|newsyou.info|notebookcheck-ru.com|nsn.net.ua|ontvtime.ru|orbit-games.com|pb-news.info|perpendicular.pro|pes-files.ru|pingvin.pro|poezdato.net|poizdato.net|pravda.com.ua|rovesnyknews.te.ua|ruboard.website|skidkaonline.ru|sundries.ua|tenews.org.ua|ternopillive.com|tribun.com.ua|uapress.kyiv.ua|valorantinfo.com|vesti-ua.net|vkazivka.com|wallpapershome.ru|xn--80aaukc.xn--j1amh
@@ -30,6 +33,9 @@ d11810 1
 a11810 1
 ||html-load.com/loader.min.js$domain=eurointegration.com.ua|news.zerkalo.io|newsyou.info|notebookcheck-ru.com|pravda.com.ua|sportanalytic.com
 d12426 1
+d13623 1
+a13623 1
+||yandex.*games/$domain=fishki.net|games.academic.ru|gazeta.press|gazeta.ru|lenta.ru|vz.ru
 d16336 1
 a16594 1
 brotorrent.net##.giBlock
@@ -52,6 +58,49 @@ d22298 1
 a22298 2
 dtf.ru##.rotator *
 dtf.ru##.sticky-stack-sidebar-section .loader + div[id][class]:empty
+d23058 4
+a23061 4
+gazeta.press,gazeta.ru##.b_nav > a[target="_blank"]
+gazeta.press,gazeta.ru##.b_rightcol-sticky > div[id]
+gazeta.press,gazeta.ru##.b_telegram
+championat.com,championat.ru,gazeta.press,gazeta.ru,lenta.ru##.banner
+d23080 1
+a23080 1
+gazeta.press,gazeta.ru##.m_zen
+d23082 1
+a23082 1
+gazeta.press,gazeta.ru##.rcmw-container
+d23098 1
+a23098 1
+gazeta.press,gazeta.ru##[data-docking="left-down"] > div[style^="height:"][style*="overflow:"]
+d23111 1
+a23111 1
+gazeta.press,gazeta.ru##[data-url*="/prcom/"]
+a23125 1
+gazeta.press,gazeta.ru##a[href^="/prcom/"]
+d23131 1
+a23131 1
+gazeta.press,gazeta.ru#?#div:-abp-has(> .b_telegram)
+d23142 1
+a23142 1
+gazeta.press,gazeta.ru,letidor.ru,moslenta.ru,passion.ru,quto.ru##div[class*="billboard"]
+d23150 2
+a23151 2
+gazeta.press,gazeta.ru##div[id^="__id_global_rambler_video_off_"][data-mediaposition="bottom"]
+gazeta.press,gazeta.ru##div[id^="_g_exchange_"]
+d23186 1
+a23186 1
+||static.gazeta.ru/nm2021/js/others_scripts_
+d23188 1
+a23188 1
+||vp.rambler.ru/player/*&mediaposition=bottom&$subdocument,domain=gazeta.press|gazeta.ru
+d23198 1
+a23198 1
+gazeta.press,gazeta.ru###in-read
+d23200 2
+a23201 2
+gazeta.press,gazeta.ru##div[class^="gazeta-dynamic-ban-"]
+gazeta.press,gazeta.ru##div[id^="block_pad_id"]
 a23340 1
 cyber.sports.ru##.post-content a[href*="://sirena.world/"]
 a23381 1
@@ -65,9 +114,48 @@ androidinsider.ru##a[href*="erid="]:style(pointer-events: none !important; color
 a27060 1
 click-or-die.ru##a[href*="sponsored="]:style(pointer-events: none !important; color: inherit !important)
 d27931 1
+d28484 1
+a28484 1
+gagadget.com,gazeta.press|gazeta.ru,lenta.ru,rambler.ru##body:not(#id):style(overflow-y: auto !important)
+d28486 2
+a28487 2
+gazeta.press,gazeta.ru###_id_main_content:style(max-width: 100% !important)
+gazeta.press,gazeta.ru##.b_header:style(max-width: 100% !important)
+d28612 1
+d28734 1
+a28734 1
+gazeta.press,gazeta.ru##+js(abort-on-property-read, eaglePlayerPlugins.autoplay_position)
+d28740 1
+a28740 1
+gazeta.press,gazeta.ru##+js(abort-on-property-read, goTolink)
 a28857 1
 rambler.ru##+js(href-sanitizer, a[href^="http:"][aria-label^="Перейти на страницу источника"], +https)
+d29033 3
+a29035 3
+gazeta.press,gazeta.ru##+js(set-constant, g_GazetaNoExchange, true)
+gazeta.press,gazeta.ru##+js(set-constant, history.replaceState, noopFunc)
+gazeta.press,gazeta.ru##+js(set-constant, isAdFree, noopFunc)
+d29063 1
+a29063 1
+gazeta.press,gazeta.ru##+js(set-cookie-reload, unity_pause_sso, 1)
 a29083 1
 androidinsider.ru##.article-body:has(> p > [href="https://androidinsider.ru/tag/reklama"]) a[href*="utm_campaign"]:style(pointer-events: none !important; color: inherit !important; border-bottom: inherit !important)
+d29151 1
+a29151 1
+gazeta.press,gazeta.ru##^responseheader(location)
+d29163 1
+a29163 1
+gazeta.press,gazeta.ru##body > div[style^="height:"][style*="vh"]:empty
 a29187 1
 ferra.ru,indicator.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,secretmag.ru,wmj.ru##html[data-env]:style(container-type: unset !important)
+d29432 3
+a29434 3
+gazeta.ru,gazeta.press|lenta.ru,secretmag.ru,wmj.ru##iframe[src^="https://vp.rambler.ru/player/"] ~ svg
+gazeta.ru,gazeta.press|lenta.ru,secretmag.ru,wmj.ru##iframe[src^="https://vp.rambler.ru/player/"]:style(position: relative !important)
+||vp.rambler.ru/player/$csp=media-src 'self',domain=championat.com|championat.ru|lenta.ru|gazeta.press|gazeta.ru|rambler.ru|~vp.rambler.ru|secretmag.ru|wmj.ru
+d29441 1
+a29441 1
+||zoomdecorate.rambler.ru^$script,redirect=noopjs,domain=afisha.ru|autorambler.ru|championat.com|eda.ru|gazeta.press|gazeta.ru|lenta.ru|letidor.ru|moslenta.ru|motor.ru|passion.ru|quto.ru|rambler.ru|wmj.ru
+d29449 1
+a29449 1
+afisha.ru,autorambler.ru,championat.com,eda.ru,gazeta.press,gazeta.ru,lenta.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,rambler.ru,wmj.ru##+js(abort-current-inline-script, dispatchEvent, zoomdecorate)
