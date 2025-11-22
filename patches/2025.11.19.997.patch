@@ -1,8 +1,8 @@
-diff name:ruadlist lines:160 checksum:228b4aedb0
+diff name:ruadlist lines:172 checksum:5273d8c5c6
 d4 2
 a5 2
-! Last modified: Sat, 22 Nov 2025 14:25:41 +0000
-! Diff-Path: ../patches/2025.11.22.865.patch#ruadlist
+! Last modified: Sat, 22 Nov 2025 19:21:24 +0000
+! Diff-Path: ../patches/2025.11.22.1161.patch#ruadlist
 a396 1
 ||aj1616.online^$third-party
 a496 1
@@ -11,6 +11,9 @@ a515 1
 ||artofile.homes^$third-party
 a7703 1
 ||utorria.ru^
+d7728 1
+a7728 1
+||pw^$third-party,script,xmlhttprequest,domain=~adwiz.pp.ua|~dewalt.store|~forum.worldofwarships.eu|~forum.worldofwarships.ru|~hdvbplayer.tk|~herokuapp.com|~liveball.cc|~liveball.gg|~liveball.my|~liveball.sx|~liveball.uno|~liveball.ws|~masterclub.store|~movielab.pro|~osu.ppy.sh|~panomama.ru|~pelcn.net|~philips.ru|~purina.ru|~softpir.com|~sportsvideoline3.pw|~tefal.ru|~tikkurila.ru|~vk-apps.com|~vulpecula.host
 a8444 1
 ~utorria.ru##.block_down > [class*="nottorent"]
 a8512 1
@@ -50,7 +53,13 @@ kinorium.com##[data-original-url*="erid="]
 d19694 1
 a19694 1
 agronovosti.ru,kinorium.com,sport-express.net,sport-express.ru,www.ixbt.com##a[href*="erid="][target="_blank"]
+a20598 1
+ura.news#?#div:only-child > div:-abp-contains(Продолжение после рекламы)
 d20613 1
+d21825 1
+a21826 2
+liveball.my,liveball.uno,liveball.*##[class^="custom_brand"]
+liveball.my,liveball.uno,liveball.*##div[class^="catfish_"]
 d22217 1
 a22217 1
 $csp=script-src-attr 'none',domain=eurointegration.com.ua|pravda.com.ua|sportanalytic.com|notebookcheck-ru.com
@@ -113,6 +122,9 @@ a26852 1
 androidinsider.ru##a[href*="erid="]:style(pointer-events: none !important; color: inherit !important; border-bottom: inherit !important)
 a27060 1
 click-or-die.ru##a[href*="sponsored="]:style(pointer-events: none !important; color: inherit !important)
+a27646 2
+liveball.gg,liveball.my,liveball.space,liveball.sx,liveball.uno,liveball.ws##main.main_div:style(margin-top: 0 !important)
+! ---
 d27931 1
 d28484 1
 a28484 1

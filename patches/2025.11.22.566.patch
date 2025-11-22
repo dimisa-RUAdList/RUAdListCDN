@@ -1,14 +1,23 @@
-diff name:ruadlist lines:92 checksum:228b4aedb0
+diff name:ruadlist lines:104 checksum:5273d8c5c6
 d4 2
 a5 2
-! Last modified: Sat, 22 Nov 2025 14:25:41 +0000
-! Diff-Path: ../patches/2025.11.22.865.patch#ruadlist
+! Last modified: Sat, 22 Nov 2025 19:21:24 +0000
+! Diff-Path: ../patches/2025.11.22.1161.patch#ruadlist
+d7732 1
+a7732 1
+||pw^$third-party,script,xmlhttprequest,domain=~adwiz.pp.ua|~dewalt.store|~forum.worldofwarships.eu|~forum.worldofwarships.ru|~hdvbplayer.tk|~herokuapp.com|~liveball.cc|~liveball.gg|~liveball.my|~liveball.sx|~liveball.uno|~liveball.ws|~masterclub.store|~movielab.pro|~osu.ppy.sh|~panomama.ru|~pelcn.net|~philips.ru|~purina.ru|~softpir.com|~sportsvideoline3.pw|~tefal.ru|~tikkurila.ru|~vk-apps.com|~vulpecula.host
 d10241 1
 a10241 1
 /eagle.autostart.$script,domain=gazeta.press|gazeta.ru|lenta.ru|rambler.ru
 d13633 1
 a13633 1
 ||yandex.*games/$domain=fishki.net|games.academic.ru|gazeta.press|gazeta.ru|lenta.ru|vz.ru
+a20609 1
+ura.news#?#div:only-child > div:-abp-contains(Продолжение после рекламы)
+d21835 1
+a21836 2
+liveball.my,liveball.uno,liveball.*##[class^="custom_brand"]
+liveball.my,liveball.uno,liveball.*##div[class^="catfish_"]
 d23069 4
 a23072 4
 gazeta.press,gazeta.ru##.b_nav > a[target="_blank"]
@@ -52,6 +61,9 @@ d23211 2
 a23212 2
 gazeta.press,gazeta.ru##div[class^="gazeta-dynamic-ban-"]
 gazeta.press,gazeta.ru##div[id^="block_pad_id"]
+a27663 2
+liveball.gg,liveball.my,liveball.space,liveball.sx,liveball.uno,liveball.ws##main.main_div:style(margin-top: 0 !important)
+! ---
 d28500 1
 a28500 1
 gagadget.com,gazeta.press|gazeta.ru,lenta.ru,rambler.ru##body:not(#id):style(overflow-y: auto !important)
