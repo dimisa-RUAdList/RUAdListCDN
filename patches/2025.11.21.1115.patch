@@ -1,25 +1,37 @@
-diff name:ruadlist lines:108 checksum:897c63c8ba
+diff name:ruadlist lines:133 checksum:a5b92b9cab
 d4 2
 a5 2
-! Last modified: Sun, 23 Nov 2025 20:30:09 +0000
-! Diff-Path: ../patches/2025.11.23.1230.patch#ruadlist
+! Last modified: Mon, 24 Nov 2025 02:20:47 +0000
+! Diff-Path: ../patches/2025.11.24.140.patch#ruadlist
+a3510 1
+||listofmonks.com^$third-party
 d7732 1
 a7732 1
 ||pw^$third-party,script,xmlhttprequest,domain=~adwiz.pp.ua|~dewalt.store|~forum.worldofwarships.eu|~forum.worldofwarships.ru|~hdvbplayer.tk|~herokuapp.com|~liveball.cc|~liveball.gg|~liveball.my|~liveball.sx|~liveball.uno|~liveball.ws|~masterclub.store|~movielab.pro|~osu.ppy.sh|~panomama.ru|~pelcn.net|~philips.ru|~purina.ru|~softpir.com|~sportsvideoline3.pw|~tefal.ru|~tikkurila.ru|~vk-apps.com|~vulpecula.host
+a9327 1
+||fclmnews.ru^$third-party,popup
 d10241 1
 a10241 1
 /eagle.autostart.$script,domain=gazeta.press|gazeta.ru|lenta.ru|rambler.ru
 d13633 1
 a13633 1
 ||yandex.*games/$domain=fishki.net|games.academic.ru|gazeta.press|gazeta.ru|lenta.ru|vz.ru
+d17020 1
+a17020 1
+androidinsider.ru,appleinsider.ru##.link-alert
 a19227 1
 kinorium.com##[data-original-url*="erid="]
+d20480 1
+a20480 1
+footlook.top,rplnews.online##body > div[style^="position: fixed"]
 a20608 1
 ura.news#?#div:only-child > div:-abp-contains(Продолжение после рекламы)
 d21834 1
 a21835 2
 liveball.my,liveball.uno,liveball.*##[class^="custom_brand"]
 liveball.my,liveball.uno,liveball.*##div[class^="catfish_"]
+a21921 1
+appleinsider.ru#?#p > .large-text:-abp-has(> [href*="//dzen.ru/"])
 d23068 4
 a23071 4
 gazeta.press,gazeta.ru##.b_nav > a[target="_blank"]
@@ -65,6 +77,9 @@ gazeta.press,gazeta.ru##div[class^="gazeta-dynamic-ban-"]
 gazeta.press,gazeta.ru##div[id^="block_pad_id"]
 a23587 1
 translate.yandex.ru,translate.yandex.*##div[id^="sidebar-"]
+d25721 1
+a26372 1
+disk.yandex.ru,disk.yandex.*#@#.content_ads
 a27661 2
 liveball.gg,liveball.my,liveball.space,liveball.sx,liveball.uno,liveball.ws##main.main_div:style(margin-top: 0 !important)
 ! ---
@@ -82,6 +97,16 @@ gazeta.press,gazeta.ru##+js(abort-on-property-read, eaglePlayerPlugins.autoplay_
 d28754 1
 a28754 1
 gazeta.press,gazeta.ru##+js(abort-on-property-read, goTolink)
+a28771 1
+footlook.top,rplnews.online##+js(abort-on-property-read, start_cl)
+a28871 1
+fishki.net##+js(href-sanitizer, a[href^="/go/?url=https"], ?url)
+d28974 1
+a28974 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, div, 'ый посетитель!')
+a28975 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /Adblock|checkCookie|potapinasty|s_script|tick/)
+d28977 1
 d29048 3
 a29050 3
 gazeta.press,gazeta.ru##+js(set-constant, g_GazetaNoExchange, true)

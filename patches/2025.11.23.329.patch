@@ -1,5 +1,30 @@
-diff name:ruadlist lines:4 checksum:897c63c8ba
+diff name:ruadlist lines:29 checksum:a5b92b9cab
 d4 2
 a5 2
-! Last modified: Sun, 23 Nov 2025 20:30:09 +0000
-! Diff-Path: ../patches/2025.11.23.1230.patch#ruadlist
+! Last modified: Mon, 24 Nov 2025 02:20:47 +0000
+! Diff-Path: ../patches/2025.11.24.140.patch#ruadlist
+a3510 1
+||listofmonks.com^$third-party
+a9327 1
+||fclmnews.ru^$third-party,popup
+d17020 1
+a17020 1
+androidinsider.ru,appleinsider.ru##.link-alert
+d20481 1
+a20481 1
+footlook.top,rplnews.online##body > div[style^="position: fixed"]
+a21924 1
+appleinsider.ru#?#p > .large-text:-abp-has(> [href*="//dzen.ru/"])
+d25726 1
+a26377 1
+disk.yandex.ru,disk.yandex.*#@#.content_ads
+a28777 1
+footlook.top,rplnews.online##+js(abort-on-property-read, start_cl)
+a28877 1
+fishki.net##+js(href-sanitizer, a[href^="/go/?url=https"], ?url)
+d28980 1
+a28980 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, div, 'ый посетитель!')
+a28981 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /Adblock|checkCookie|potapinasty|s_script|tick/)
+d28983 1

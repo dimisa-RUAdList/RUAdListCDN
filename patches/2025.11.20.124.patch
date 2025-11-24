@@ -1,14 +1,16 @@
-diff name:ruadlist lines:162 checksum:897c63c8ba
+diff name:ruadlist lines:183 checksum:a5b92b9cab
 d4 2
 a5 2
-! Last modified: Sun, 23 Nov 2025 20:30:09 +0000
-! Diff-Path: ../patches/2025.11.23.1230.patch#ruadlist
+! Last modified: Mon, 24 Nov 2025 02:20:47 +0000
+! Diff-Path: ../patches/2025.11.24.140.patch#ruadlist
 a396 1
 ||aj1616.online^$third-party
 a496 1
 ||apkfiler.sbs^$third-party
 a515 1
 ||artofile.homes^$third-party
+a3507 1
+||listofmonks.com^$third-party
 a7703 1
 ||utorria.ru^
 d7728 1
@@ -18,6 +20,8 @@ a8444 1
 ~utorria.ru##.block_down > [class*="nottorent"]
 a8512 1
 ##.ubar
+a9321 1
+||fclmnews.ru^$third-party,popup
 a9751 1
 ||gameinstaller.ru^$popup
 a9754 3
@@ -39,7 +43,7 @@ d16335 1
 a16593 1
 brotorrent.net##.giBlock
 a17008 1
-androidinsider.ru##.link-alert
+androidinsider.ru,appleinsider.ru##.link-alert
 d17660 1
 d18993 1
 a18993 1
@@ -49,12 +53,17 @@ kinorium.com##[data-original-url*="erid="]
 d19693 1
 a19693 1
 agronovosti.ru,kinorium.com,sport-express.net,sport-express.ru,www.ixbt.com##a[href*="erid="][target="_blank"]
+d20469 1
+a20469 1
+footlook.top,rplnews.online##body > div[style^="position: fixed"]
 a20597 1
 ura.news#?#div:only-child > div:-abp-contains(Продолжение после рекламы)
 d21823 1
 a21824 2
 liveball.my,liveball.uno,liveball.*##[class^="custom_brand"]
 liveball.my,liveball.uno,liveball.*##div[class^="catfish_"]
+a21910 1
+appleinsider.ru#?#p > .large-text:-abp-has(> [href*="//dzen.ru/"])
 d22296 1
 a22296 2
 dtf.ru##.rotator *
@@ -110,6 +119,9 @@ a23478 1
 300.ya.ru##.banner-container
 a23572 1
 translate.yandex.ru,translate.yandex.*##div[id^="sidebar-"]
+d25706 1
+a26357 1
+disk.yandex.ru,disk.yandex.*#@#.content_ads
 a26850 1
 androidinsider.ru##a[href*="erid="]:style(pointer-events: none !important; color: inherit !important; border-bottom: inherit !important)
 a27645 2
@@ -130,8 +142,17 @@ gazeta.press,gazeta.ru##+js(abort-on-property-read, eaglePlayerPlugins.autoplay_
 d28739 1
 a28739 1
 gazeta.press,gazeta.ru##+js(abort-on-property-read, goTolink)
-a28856 1
+a28756 1
+footlook.top,rplnews.online##+js(abort-on-property-read, start_cl)
+a28856 2
+fishki.net##+js(href-sanitizer, a[href^="/go/?url=https"], ?url)
 rambler.ru##+js(href-sanitizer, a[href^="http:"][aria-label^="Перейти на страницу источника"], +https)
+d28958 1
+a28958 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, div, 'ый посетитель!')
+a28959 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /Adblock|checkCookie|potapinasty|s_script|tick/)
+d28961 1
 d29032 3
 a29034 3
 gazeta.press,gazeta.ru##+js(set-constant, g_GazetaNoExchange, true)

@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 23 Nov 2025 20:30:09 +0000
-! Diff-Path: ../patches/2025.11.23.1230.patch#ruadlist
+! Last modified: Mon, 24 Nov 2025 02:20:47 +0000
+! Diff-Path: ../patches/2025.11.24.140.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -3508,6 +3508,7 @@
 ||listat.biz^$third-party
 ||listis.ru^$third-party
 ||listof.mobi^
+||listofmonks.com^$third-party
 ||litewebbusiness.com^$third-party
 ||litiumo.com^
 ||littel.biz^$third-party
@@ -9325,6 +9326,7 @@ $third-party,popup,domain=2ip.ru
 ||ext-load.net^$third-party,popup
 ||extlinka.ru^$popup
 ||fastvk.com^$popup
+||fclmnews.ru^$third-party,popup
 ||finetrack.ru^$popup
 ||flashcdn.net^$popup
 ||flylinks.pw^$popup
@@ -17017,7 +17019,7 @@ cubiq.ru##.lets-review-block__aff
 cwer.me,cwer.ru,cwer.su,cwer.ws##.like_hide
 homeporno.org##.line > a[href][target="_blank"] > *
 mmotop.ru##.link-1
-androidinsider.ru##.link-alert
+androidinsider.ru,appleinsider.ru##.link-alert
 vinbazar.com##.link_image
 vinbazar.com##.link_img
 online-films.ckoro.ru##.link_test
@@ -20478,7 +20480,7 @@ allmmorpg.ru##body > div[style="display: inline-block"]
 tamboff.ru##body > div[style="width: 960px; margin: 0 auto; height: 300px; position: relative;"]
 laststicker.ru##body > div[style] > noindex
 obob.tv##body > div[style^="padding:"] > a[href]
-footlook.top##body > div[style^="position: fixed"]
+footlook.top,rplnews.online##body > div[style^="position: fixed"]
 root-nation.com##body > div[style^="position: fixed; display: flow-root; z-index:"]
 player-cdn.com##body > div[style^="width: 100%; height: auto; position: absolute; z-index: 100000; top: 0px; bottom: 0px; cursor: pointer; background: url"]
 innal.top,zannn.top##body > div[style^="width:"][style*="1265px"]
@@ -21922,6 +21924,7 @@ sibmama.info,sibmama.ru##object[width="150"][height="100"]
 guzei.com##object[width="200"][height="100"]
 y-games.ru##p > .ContentTitle[style="height: 20px;"]
 y-games.ru##p > .ContentTitle[style="height: 20px;"] + .ContentText
+appleinsider.ru#?#p > .large-text:-abp-has(> [href*="//dzen.ru/"])
 ppl.nnov.ru##p > a[href][target="_blank"]:not([href*="nnov.ru"]) > img[src*="/bannery/"]
 nashamama.com#?#p > b:-abp-contains(каво також:)
 skmash.ru##p > script[src*="wmrfast.com"] ~ *
@@ -25723,7 +25726,6 @@ banki24.by#@#.banner300
 griffe.ru#@#.banner_box
 biglife.kg#@#.card-ad
 pokrov-monastir.ru#@#.container--ads
-disk.yandex.by,disk.yandex.com,disk.yandex.com.am,disk.yandex.kz,disk.yandex.lt,disk.yandex.ru,disk.yandex.uz#@#.content_ads
 agrobook.ru#@#.context-ads
 f-igri.ru#@#.google_ad
 skodarapidclub.ru#@#.headerad
@@ -26375,6 +26377,7 @@ xn--112-5cd3baof9c5c.xn--p1ai#@#.wrapad
 4pda.to#@#[data-revive-zoneid]
 espreso.tv,tasix.me#@#[id*="ScriptRoot"]
 mail.google.com#@#a[href^="http://mgid.com/"]
+disk.yandex.ru,disk.yandex.*#@#.content_ads
 blocksandfiles.com,milanac.ru#@#div[class*="td-a-rec-id-"]
 pets.mail.ru#@#div[data-adq-id^="adqcontainer"]
 kyiv.ukrainianwall.com#@#div[id*="MarketGid"]
@@ -28775,6 +28778,7 @@ sm.news##+js(abort-on-property-read, preventSelection)
 zab.ru##+js(abort-on-property-read, scrollw)
 tapochek.net##+js(abort-on-property-read, setsnow)
 anime-chan.me##+js(abort-on-property-read, sparkle)
+footlook.top,rplnews.online##+js(abort-on-property-read, start_cl)
 bryansknovosti.ru,novozybkov.su,sudya-dredd.ru##+js(abort-on-property-read, stopPrntScr)
 moremania.info##+js(abort-on-property-read, t364_initPopup)
 gidonline.eu,kinogo.eu##+js(abort-on-property-read, target_script)
@@ -28875,6 +28879,7 @@ lifehacker.ru##+js(href-sanitizer, a[href][rel*="sponsored"][target="_blank"], ?
 hot.game,lifehacker.ru##+js(href-sanitizer, a[href][target="_blank"], ?ulp)
 www.ixbt.com##+js(href-sanitizer, a[href^="//www.ixbt.com/click/?c="], [title])
 wotspeak.org##+js(href-sanitizer, a[href^="/engine/dwn"], ?xf)
+fishki.net##+js(href-sanitizer, a[href^="/go/?url=https"], ?url)
 rambler.ru##+js(href-sanitizer, a[href^="http:"][aria-label^="Перейти на страницу источника"], +https)
 e.mail.ru,mail.rambler.ru,mail.yandex.ru,octavius.mail.ru##+js(href-sanitizer, a[href^="https://click.email4customers.com/Link?"], ?args)
 rsload.net##+js(href-sanitizer, a[href^="https://fixti.ru/download.php?files="], ?files)
@@ -28977,10 +28982,10 @@ online-fix.me##+js(remove-node-text, #text, РЕКЛАМНЫЙ БЛОК:)
 farposst.ru##+js(remove-node-text, #text, Реклама)
 filmitorrent.net,utorr.cc##+js(remove-node-text, #text, Реклама:)
 ya.ru##+js(remove-node-text, div, 'ad-mark__b-unit-wrapper')
-game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, div, мый посетитель!)
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, div, 'ый посетитель!')
 nullcms.ru##+js(remove-node-text, script, 'decodeURIComponent(escape')
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /Adblock|checkCookie|potapinasty|s_script|tick/)
 ritsatv.ru##+js(remove-node-text, script, /adBlock|adblock-warning/)
-game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /checkCookie|potapinasty|s_script|tick/)
 tapochek.net##+js(remove-node-text, script, /document.head.appendChild|document.referrer/)
 inforesist.org##+js(remove-node-text, script, /gtag\('event'/)
 sports.ru##+js(remove-node-text, script, AdBlocker)
