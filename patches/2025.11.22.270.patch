@@ -1,8 +1,8 @@
-diff name:ruadlist lines:152 checksum:0537527aa8
+diff name:ruadlist lines:163 checksum:12665a444e
 d4 2
 a5 2
-! Last modified: Mon, 24 Nov 2025 16:32:37 +0000
-! Diff-Path: ../patches/2025.11.24.992.patch#ruadlist
+! Last modified: Mon, 24 Nov 2025 21:27:20 +0000
+! Diff-Path: ../patches/2025.11.24.1287.patch#ruadlist
 a3510 1
 ||listofmonks.com^$third-party
 d7732 1
@@ -41,6 +41,8 @@ a20481 1
 footlook.top,rplnews.online##body > div[style^="position: fixed"]
 a20609 1
 ura.news#?#div:only-child > div:-abp-contains(Продолжение после рекламы)
+a20720 1
+fishki.net##div[class*="is_adv_post"]
 d21835 1
 a21836 2
 liveball.my,liveball.uno,liveball.*##[class^="custom_brand"]
@@ -96,6 +98,11 @@ gazeta.press,gazeta.ru##div[id^="block_pad_id"]
 d25723 1
 a26374 1
 disk.yandex.ru,disk.yandex.*#@#.content_ads
+d26868 1
+a26868 2
+androidinsider.ru,appleinsider.ru##a[href*="://s.zbanx.com/r/"]:style(pointer-events: none !important; color: inherit !important; border-bottom: inherit !important)
+androidinsider.ru,appleinsider.ru##a[href*="erid="]:style(pointer-events: none !important; color: inherit !important; border-bottom: inherit !important)
+d26949 2
 a27663 2
 liveball.gg,liveball.my,liveball.space,liveball.sx,liveball.uno,liveball.ws##main.main_div:style(margin-top: 0 !important; max-width: 100% !important)
 ! ---
@@ -123,11 +130,15 @@ game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorka
 a28977 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /Adblock|checkCookie|potapinasty|s_script|tick/)
 d28979 1
+a28991 1
+fishki.net##+js(set-attr, .drag_element a[href*=".html"], target, true)
 d29050 3
 a29052 3
 gazeta.press,gazeta.ru##+js(set-constant, g_GazetaNoExchange, true)
 gazeta.press,gazeta.ru##+js(set-constant, history.replaceState, noopFunc)
 gazeta.press,gazeta.ru##+js(set-constant, isAdFree, noopFunc)
+a29068 1
+champion.com.ua##+js(set-cookie, age_confirmed, 1)
 d29080 1
 a29080 1
 gazeta.press,gazeta.ru##+js(set-cookie-reload, unity_pause_sso, 1)
