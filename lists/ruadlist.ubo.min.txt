@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 25 Nov 2025 17:29:55 +0000
-! Diff-Path: ../patches/2025.11.25.1049.patch#ruadlist
+! Last modified: Tue, 25 Nov 2025 22:30:15 +0000
+! Diff-Path: ../patches/2025.11.25.1350.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -17481,6 +17481,7 @@ probiv.in,probiv.one##.p-body-pageContent center > [href^="https://t.me/"] > img
 esp8266.ru##.p-header-content > .p-header-logo ~ div
 mreadz.com##.p-md.text-center.ibox-content:nth-of-type(2)
 vk-smi.ru##.p-news
+habr.com##.p-shaped
 tv.meta.ua##.pRight
 cq.ru##.p__header > .p__header-image ~ div::before
 habr.com##.pack-sponsor
@@ -27400,6 +27401,8 @@ gta.com.ua##body:style(background-image: none !important; background-color: #f5f
 gubkinskiy.com###page-content:style(margin-top: 0 !important)
 ! ---
 h-chan.me##img[style^="filter: blur"]:style(filter: none !important)
+! ---
+habr.com##.has-p-shaped:style(padding-top: 12px !important)
 ! ---
 hardwareluxx.ru##[href*="ya"][href*="cc"][target="_blank"]:style(pointer-events: none !important; color: inherit !important)
 ! ---
