@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 25 Nov 2025 07:28:41 +0000
-! Diff-Path: ../patches/2025.11.25.448.patch#ruadlist
+! Last modified: Tue, 25 Nov 2025 12:59:28 +0000
+! Diff-Path: ../patches/2025.11.25.779.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -8991,13 +8991,18 @@ by,~mail.ru,ru,ua##.banner_box
 ##a[href^="http://traderstart.mirtesen.ru"]
 ##a[href^="http://trafmaster.com"]
 ~20idei.ru##a[href^="https://20idei.ru"] > *
+~24gadget.ru##a[href^="https://24gadget.ru/"]
+~aifishki.ru##a[href^="https://aifishki.ru/"]
 ~bither.one##a[href^="https://bither.one/"]
 ##a[href^="https://bongacams"][href*="com/track?"]
 ~lesta.ru##a[href^="https://click.track-lesta.ru/"]
+~dtpchp.ru##a[href^="https://dtpchp.ru/"]
+~fukaka.ru##a[href^="https://fukaka.ru/"]
 ##a[href^="https://homyanus.com"]
 ##a[href^="https://kshop"][href*=".com/"]
 ##a[href^="https://kshop"][href*=".pro/"]
 ##a[href^="https://msetup.pro"]
+~netplayer.ru##a[href^="https://netplayer.ru/"]
 ~pari.ru##a[href^="https://pari.ru/promo/"]
 ~pikadil.ru##a[href^="https://pikadil.ru"]
 ##a[href^="https://relap.io/"][href*="promo_ad_link"]
@@ -13081,6 +13086,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||spbdnevnik.ru/media/_b/$image
 ||spbit.ru/b_images/
 ||special.matchtv.ru/feeds/
+||special.pikabu.ru/*/banner.html
 ||specials*.servicecdn.ru/$domain=dtf.ru|vc.ru
 ||speedtest.org.ua/pirate
 ||spiker.club/ads/
@@ -15756,7 +15762,6 @@ siddgames.ru#?#.block-body.block-row:-abp-has(.TeraPromo)
 siddgames.ru#?#.block-body.block-row:-abp-has(.resourseReklverx)
 nur.kz##.block-branded-icon
 soccer.ru##.block-centering[style*="min-width"][style*="min-height"]
-readovka67.ru##.block-community-yanews
 iz.ru##.block-container-margins [style^="height:"][style*="250px;"]
 znaj.ua##.block-custom-banners
 rgmechanics.info#?#.block-dark:-abp-has(script)
@@ -15765,7 +15770,6 @@ naogorode.net##.block-header[style="margin-bottom: 15px;"]
 mover.uz##.block-info-vertical
 100filmov.net##.block-inner > noindex
 nur.kz##.block-main-info__sponsor-image
-readovka.news,readovka67.ru##.block-mediametrics
 stena.ee##.block-outer a[href][rel="nofollow"]
 lovitut.ru##.block-reklamo_rotator
 sntch.com##.block-relap
@@ -16414,6 +16418,7 @@ diets.guru,pohudet.org##.exitblock
 autogrodno.by##.expautos_detail_right > .moduletable_menu:first-child > span
 korabel.ru##.ext_link_img
 russian.rt.com##.external-widget
+pikabu.ru##.external_branding
 carsweek.ru##.extra
 superjob.ru#?#.f-test-search-result-item:-abp-has(> div > div .f-test-link-Podrobnee)
 superjob.ru#?#.f-test-search-result-item:-abp-has(> div li div:empty:first-child + div:empty)
@@ -18216,7 +18221,7 @@ med2.ru##.sidebarAds
 vremenno.net##.sidebarBlock:first-child
 pogoda.meta.ua##.sidebar__ads
 gitflic.ru##.sidebar__banner
-fishki.net##.sidebar__block_trend ~ .sidebar__block_trend
+fishki.net##.sidebar__block_trend
 bioware.ru#?#.sidebar__content-wrp:-abp-has(.sidebar__image > a[href^="http://gamazavr.ru/"])
 teploguru.ru##.sidebar__rek
 24smi.org##.sidebar__wrap > :not(.sidebar__info)
@@ -19429,6 +19434,7 @@ clubsandero.ru##[src="//an.yandex.ru/system/context.js"] ~ iframe
 rutor.org.ru##[src="/download32.png"]
 linux.org.ru##[src^="/adv/"]
 news.soundex.ru##[src^="http://news.soundex.ru/images/banners/"]
+pikabu.ru##[src^="https://special.pikabu.ru/"][src*="banner.html"]
 yarportal.ru##[style$="height: 60px;"]
 newsomsk.ru#?#[style*="font"]:-abp-contains(Новости партнеров)
 penzainform.ru##[style*="height: 43px"][style*="max-height: 43px"] ~ div[class^="space_"]
@@ -20780,6 +20786,7 @@ pravda.ru#?#div[class="section"]:-abp-has(> .staticFragment)
 foto.ua##div[class="side-banner"]
 wowskill.ru##div[class="side-blok"]
 seasonvar.ru##div[class="sidebar lside"] > :not(div)
+fishki.net#?#div[class="sidebar__block"]:-abp-has(a:not([href^="/"]):not([href^="https://fishki.net/"]))
 pro-kyiv.in.ua##div[class="widget widget_text"]
 budport.com.ua##div[class] > a[href][rel="nofollow"] > p
 driver.ru##div[class] > a[href][target="_blank"] > img
@@ -23507,6 +23514,9 @@ ukr.net##.lazy-load-banner
 @@://yandex.*/search$generichide
 @@://yandex.ru/|$generichide
 @@||yandex.ru/ads/system/adsdk.js|$script,domain=yandex.ru
+market.yandex.ru##[data-auto="banner"] > a:not([href^="/"]):not([href^="https://market.yandex.ru/"])
+market.yandex.ru##[data-auto="banner"] [role="button"]
+market.yandex.ru##[data-auto="banner-ad-label"]
 market.yandex.ru,market.yandex.*##.layout_type_search.headline__footer
 ya.ru##.i-mini-bem[class*="banner"]
 ya.ru##[aria-label^="Информ"] ~ [class]
@@ -23934,6 +23944,7 @@ zarulem.ws##td[style^="text-align:center;width:50%"]
 ||1popov.ru^$third-party
 ||1xwgn.xyz^$third-party
 ||2000zakazov.ru^
+||24gadget.ru^$third-party
 ||24new.ru^$third-party
 ||24s.ru^
 ||24smi.host^$third-party
@@ -24028,6 +24039,7 @@ zarulem.ws##td[style^="text-align:center;width:50%"]
 ||agentbilet.com/sites/$third-party
 ||agitmedia.com^
 ||agrotv.ru^$third-party
+||aifishki.ru^$third-party
 ||airbnb.ru/embeddable/$third-party
 ||akabo.ru^
 ||alawar.ru/onlinegames/*&link=
@@ -24281,6 +24293,7 @@ zarulem.ws##td[style^="text-align:center;width:50%"]
 ||dozory.goodoo.ru^
 ||drakonas.eu^$third-party
 ||drweb.com/pix/$object
+||dtpchp.ru^$third-party
 ||duuw.nm.ru^
 ||dverizamki.org/bshow/
 ||dzen.ru^$third-party,~subdocument,domain=~sportsdzen.ru
@@ -24372,6 +24385,7 @@ zarulem.ws##td[style^="text-align:center;width:50%"]
 ||freshmac.ru^$third-party
 ||frogadvert.ru^
 ||fsimg.ru/elephant/
+||fukaka.ru^$third-party
 ||funcoin.club^$third-party
 ||funkit.ru/i/partner_banners/
 ||funnation.ru^$third-party
@@ -24738,6 +24752,7 @@ zarulem.ws##td[style^="text-align:center;width:50%"]
 ||neoban.su^
 ||neosap.ru^$third-party
 ||neosmi.ru^$third-party
+||netplayer.ru^$third-party
 ||netporno.org^$third-party
 ||newclick.org^$third-party
 ||newportal.com.ua/$third-party
