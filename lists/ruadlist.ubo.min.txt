@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 26 Nov 2025 08:37:57 +0000
-! Diff-Path: ../patches/2025.11.26.517.patch#ruadlist
+! Last modified: Wed, 26 Nov 2025 13:01:02 +0000
+! Diff-Path: ../patches/2025.11.26.781.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -20523,6 +20523,7 @@ livetvstream.pro,me##body[bgcolor] > #adbtm
 livetvstream.pro,me##body[bgcolor] > div[id="ads"][style^="position: absolute;"]
 livetvstream.pro,me##body[bgcolor] > div[id^="iframe-container"]
 hi-fi.ru##body[data-pageid] #ipsLayout_sidebar
+shuba.life#?#button:-abp-contains(Купит)
 novayagazeta.eu#?#button:-abp-has(> [src^="/vpnovaya_"])
 shuba.life#?#button[target="_blank"]:-abp-has(> .i-icon-basket)
 shuba.life##button[target="_blank"]:not([href])
@@ -22266,7 +22267,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||news.mail.ru/-/*.js?
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
-||pikabu.ru/ajax/*?Pnm89=$xmlhttprequest
+||pikabu.ru/ajax/*?Pnm79=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -22459,6 +22460,7 @@ ru###ads-top.ads
 ||proxyelite.info^$third-party,popup
 ||proxyshare.com^$third-party,popup
 ! Avito
+www.avito.ru##div[class*="index-advRootWidget"]
 www.avito.ru##div[class*="styles-module-root_animation-"]:empty
 www.avito.ru##div[class^="advert-"]
 www.avito.ru##div[class^="items-ads-"]
