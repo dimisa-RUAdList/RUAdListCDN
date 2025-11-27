@@ -1,8 +1,8 @@
-diff name:ruadlist lines:116 checksum:240205e4f2
+diff name:ruadlist lines:125 checksum:e0d5b1fcd8
 d4 2
 a5 2
-! Last modified: Thu, 27 Nov 2025 09:32:03 +0000
-! Diff-Path: ../patches/2025.11.27.572.patch#ruadlist
+! Last modified: Thu, 27 Nov 2025 14:31:04 +0000
+! Diff-Path: ../patches/2025.11.27.871.patch#ruadlist
 a3510 1
 ||listofmonks.com^$third-party
 a8992 2
@@ -36,8 +36,12 @@ habr.com##.p-shaped
 d18215 1
 a18215 1
 fishki.net##.sidebar__block_trend
+d18845 1
+a18845 1
+profootball.ua#?#.widget_custom_html:-abp-contains(/^новости партн|^новини партнер|^реклама/i)
 a19427 1
 pikabu.ru##[src^="https://special.pikabu.ru/"][src*="banner.html"]
+d19575 1
 d20269 1
 a20269 1
 24tv.ua,football24.ua,lux.fm##app-adv-placeholder
@@ -59,10 +63,15 @@ a20481 1
 footlook.top,rplnews.online##body > div[style^="position: fixed"]
 a20513 1
 shuba.life#?#button:-abp-contains(Купит)
+d20610 1
 a20721 1
 fishki.net##div[class*="is_adv_post"]
 a20776 1
 fishki.net#?#div[class="sidebar__block"]:-abp-has(a:not([href^="/"]):not([href^="https://fishki.net/"]))
+a21470 1
+ura.news#?#div[style="font-size: 16px;"] div:only-child > div:-abp-contains(Продолжение после рекламы)
+a21850 1
+ura.news##main > div > div:first-child:not([class=""])
 a21924 1
 appleinsider.ru#?#p > .large-text:-abp-has(> [href*="//dzen.ru/"])
 d22254 1
