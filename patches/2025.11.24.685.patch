@@ -1,8 +1,8 @@
-diff name:ruadlist lines:97 checksum:e0d5b1fcd8
+diff name:ruadlist lines:108 checksum:82ed487f9d
 d4 2
 a5 2
-! Last modified: Thu, 27 Nov 2025 14:31:04 +0000
-! Diff-Path: ../patches/2025.11.27.871.patch#ruadlist
+! Last modified: Thu, 27 Nov 2025 19:22:02 +0000
+! Diff-Path: ../patches/2025.11.27.1162.patch#ruadlist
 a8993 2
 ~24gadget.ru##a[href^="https://24gadget.ru/"]
 ~aifishki.ru##a[href^="https://aifishki.ru/"]
@@ -64,7 +64,7 @@ a21852 1
 ura.news##main > div > div:first-child:not([class=""])
 d22257 1
 a22257 1
-||pikabu.ru/ajax/*?Pnm79=$xmlhttprequest
+||pikabu.ru/ajax/*?Pnm69=$xmlhttprequest
 a22449 1
 www.avito.ru##div[class*="index-advRootWidget"]
 a23505 3
@@ -89,6 +89,13 @@ d26955 2
 a27385 2
 habr.com##.has-p-shaped:style(padding-top: 12px !important)
 ! ---
+d27670 1
+a27670 2
+liveball.gg,liveball.my,liveball.space,liveball.sx,liveball.uno,liveball.ws##footer:style(max-width: 100% !important)
+liveball.gg,liveball.my,liveball.space,liveball.sx,liveball.uno,liveball.ws##main.main_div:style(margin-top: 0 !important; max-width: 100% !important; border-radius: inherit !important)
+d28508 1
+a28508 1
+gagadget.com,gazeta.press,gazeta.ru,lenta.ru,rambler.ru##body:not(#id):style(overflow-y: auto !important)
 a29000 1
 fishki.net##+js(set-attr, .drag_element a[href*=".html"], target, true)
 a29077 1
@@ -96,3 +103,7 @@ champion.com.ua##+js(set-cookie, age_confirmed, 1)
 a29140 2
 24tv.ua##.storify-story-img:style(display: unset !important)
 24tv.ua##.storify-story-video
+d29460 2
+a29461 2
+gazeta.press,gazeta.ru,lenta.ru,secretmag.ru,wmj.ru##iframe[src^="https://vp.rambler.ru/player/"] ~ svg
+gazeta.press,gazeta.ru,lenta.ru,secretmag.ru,wmj.ru##iframe[src^="https://vp.rambler.ru/player/"]:style(position: relative !important)

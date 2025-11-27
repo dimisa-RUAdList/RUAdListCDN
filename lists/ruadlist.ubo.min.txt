@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 27 Nov 2025 14:31:04 +0000
-! Diff-Path: ../patches/2025.11.27.871.patch#ruadlist
+! Last modified: Thu, 27 Nov 2025 19:22:02 +0000
+! Diff-Path: ../patches/2025.11.27.1162.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22267,7 +22267,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||news.mail.ru/-/*.js?
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
-||pikabu.ru/ajax/*?Pnm79=$xmlhttprequest
+||pikabu.ru/ajax/*?Pnm69=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -27690,7 +27690,8 @@ lifehacker.ru##[data-video_status]:not([data-video_status="initial"]) .splash-pl
 ! ---
 lifetambov.ru##.theme-wrapper > .container > div:style(padding-bottom: unset !important)
 ! ---
-liveball.gg,liveball.my,liveball.space,liveball.sx,liveball.uno,liveball.ws##main.main_div:style(margin-top: 0 !important; max-width: 100% !important)
+liveball.gg,liveball.my,liveball.space,liveball.sx,liveball.uno,liveball.ws##footer:style(max-width: 100% !important)
+liveball.gg,liveball.my,liveball.space,liveball.sx,liveball.uno,liveball.ws##main.main_div:style(margin-top: 0 !important; max-width: 100% !important; border-radius: inherit !important)
 ! ---
 livecars.ru,livesport.ru##.content:style(margin-top: 0 !important)
 ! ---
@@ -28528,7 +28529,7 @@ zr.ru##aside > div[class^="styled__SidebarWrap-"]:style(height: auto !important)
 ! ---
 autoua.net,gagadget.com##.fader-social
 autoua.net##.social-open:style(overflow: auto !important)
-gagadget.com,gazeta.press|gazeta.ru,lenta.ru,rambler.ru##body:not(#id):style(overflow-y: auto !important)
+gagadget.com,gazeta.press,gazeta.ru,lenta.ru,rambler.ru##body:not(#id):style(overflow-y: auto !important)
 ! исправление ошибок и косяков оригинальной вёрстки
 gazeta.press,gazeta.ru###_id_main_content:style(max-width: 100% !important)
 gazeta.press,gazeta.ru##.b_header:style(max-width: 100% !important)
@@ -29484,8 +29485,8 @@ www.ukr.net##^script:has-text(znc|track)
 eurointegration.com.ua,pravda.com.ua,sportanalytic.com##^script[onload*="error-report.com"]
 ya.ru##div[style]:matches-prop(innerText="/РЕКЛАМА/")
 ya.ru##div[style]:matches-prop(innerText="/РЕКЛАМА/"):remove()
-gazeta.ru,gazeta.press|lenta.ru,secretmag.ru,wmj.ru##iframe[src^="https://vp.rambler.ru/player/"] ~ svg
-gazeta.ru,gazeta.press|lenta.ru,secretmag.ru,wmj.ru##iframe[src^="https://vp.rambler.ru/player/"]:style(position: relative !important)
+gazeta.press,gazeta.ru,lenta.ru,secretmag.ru,wmj.ru##iframe[src^="https://vp.rambler.ru/player/"] ~ svg
+gazeta.press,gazeta.ru,lenta.ru,secretmag.ru,wmj.ru##iframe[src^="https://vp.rambler.ru/player/"]:style(position: relative !important)
 ||vp.rambler.ru/player/$csp=media-src 'self',domain=championat.com|championat.ru|lenta.ru|gazeta.press|gazeta.ru|rambler.ru|~vp.rambler.ru|secretmag.ru|wmj.ru
 !#endif
 !#if !env_firefox

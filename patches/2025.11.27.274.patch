@@ -1,8 +1,8 @@
-diff name:ruadlist lines:13 checksum:e0d5b1fcd8
+diff name:ruadlist lines:27 checksum:82ed487f9d
 d4 2
 a5 2
-! Last modified: Thu, 27 Nov 2025 14:31:04 +0000
-! Diff-Path: ../patches/2025.11.27.871.patch#ruadlist
+! Last modified: Thu, 27 Nov 2025 19:22:02 +0000
+! Diff-Path: ../patches/2025.11.27.1162.patch#ruadlist
 d18855 1
 a18855 1
 profootball.ua#?#.widget_custom_html:-abp-contains(/^новости партн|^новини партнер|^реклама/i)
@@ -12,3 +12,17 @@ a21485 1
 ura.news#?#div[style="font-size: 16px;"] div:only-child > div:-abp-contains(Продолжение после рекламы)
 a21865 1
 ura.news##main > div > div:first-child:not([class=""])
+d22270 1
+a22270 1
+||pikabu.ru/ajax/*?Pnm69=$xmlhttprequest
+d27693 1
+a27693 2
+liveball.gg,liveball.my,liveball.space,liveball.sx,liveball.uno,liveball.ws##footer:style(max-width: 100% !important)
+liveball.gg,liveball.my,liveball.space,liveball.sx,liveball.uno,liveball.ws##main.main_div:style(margin-top: 0 !important; max-width: 100% !important; border-radius: inherit !important)
+d28531 1
+a28531 1
+gagadget.com,gazeta.press,gazeta.ru,lenta.ru,rambler.ru##body:not(#id):style(overflow-y: auto !important)
+d29487 2
+a29488 2
+gazeta.press,gazeta.ru,lenta.ru,secretmag.ru,wmj.ru##iframe[src^="https://vp.rambler.ru/player/"] ~ svg
+gazeta.press,gazeta.ru,lenta.ru,secretmag.ru,wmj.ru##iframe[src^="https://vp.rambler.ru/player/"]:style(position: relative !important)
