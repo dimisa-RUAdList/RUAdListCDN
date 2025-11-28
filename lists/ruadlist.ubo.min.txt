@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 28 Nov 2025 10:33:13 +0000
-! Diff-Path: ../patches/2025.11.28.633.patch#ruadlist
+! Last modified: Fri, 28 Nov 2025 15:29:22 +0000
+! Diff-Path: ../patches/2025.11.28.929.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22267,7 +22267,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||news.mail.ru/-/*.js?
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
-||pikabu.ru/ajax/*?Pnm69=$xmlhttprequest
+||pikabu.ru/ajax/*?Pnm59=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -29014,7 +29014,7 @@ tapochek.net##+js(remove-node-text, script, /document.head.appendChild|document.
 inforesist.org##+js(remove-node-text, script, /gtag\('event'/)
 sports.ru##+js(remove-node-text, script, AdBlocker)
 pikabu.ru##+js(remove-node-text, script, addPlaceholder)
-agronews.ua,agroreview.com##+js(remove-node-text, script, clickedOnContent)
+agronews.ua,agroreview.com,agroweek.com##+js(remove-node-text, script, clickedOnContent)
 ahen.me##+js(remove-node-text, script, createAdblockBlock)
 newsyou.info##+js(remove-node-text, script, error-report.com)
 fapvdo.ru##+js(remove-node-text, script, getComputedStyle)

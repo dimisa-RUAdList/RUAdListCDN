@@ -1,8 +1,8 @@
-diff name:ruadlist lines:77 checksum:9a0d9f7ed1
+diff name:ruadlist lines:80 checksum:fda3318194
 d4 2
 a5 2
-! Last modified: Fri, 28 Nov 2025 10:33:13 +0000
-! Diff-Path: ../patches/2025.11.28.633.patch#ruadlist
+! Last modified: Fri, 28 Nov 2025 15:29:22 +0000
+! Diff-Path: ../patches/2025.11.28.929.patch#ruadlist
 a8993 2
 ~24gadget.ru##a[href^="https://24gadget.ru/"]
 ~aifishki.ru##a[href^="https://aifishki.ru/"]
@@ -45,7 +45,7 @@ a21856 1
 ura.news##main > div > div:first-child:not([class=""])
 d22261 1
 a22261 1
-||pikabu.ru/ajax/*?Pnm69=$xmlhttprequest
+||pikabu.ru/ajax/*?Pnm59=$xmlhttprequest
 a22453 1
 www.avito.ru##div[class*="index-advRootWidget"]
 a23509 3
@@ -72,6 +72,9 @@ liveball.gg,liveball.my,liveball.space,liveball.sx,liveball.uno,liveball.ws##mai
 d28511 1
 a28511 1
 gagadget.com,gazeta.press,gazeta.ru,lenta.ru,rambler.ru##body:not(#id):style(overflow-y: auto !important)
+d28996 1
+a28996 1
+agronews.ua,agroreview.com,agroweek.com##+js(remove-node-text, script, clickedOnContent)
 d29467 2
 a29468 2
 gazeta.press,gazeta.ru,lenta.ru,secretmag.ru,wmj.ru##iframe[src^="https://vp.rambler.ru/player/"] ~ svg
