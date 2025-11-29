@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 29 Nov 2025 16:33:46 +0000
-! Diff-Path: ../patches/2025.11.29.993.patch#ruadlist
+! Last modified: Sat, 29 Nov 2025 21:24:38 +0000
+! Diff-Path: ../patches/2025.11.29.1284.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -16424,7 +16424,6 @@ superjob.ru#?#.f-test-search-result-item:-abp-has(> div > div .f-test-link-Podro
 superjob.ru#?#.f-test-search-result-item:-abp-has(> div li div:empty:first-child + div:empty)
 1777.ru##.f80
 fotokto.ru##.fRight > .rightBox
-ura.news##.fW
 medicina.ua##.face-right > .direct-link
 roem.ru##.factus-promoted
 activ.kz##.fade[class*="modal"]
@@ -29006,8 +29005,8 @@ motorpage.ru##+js(remove-class, noscroll, body)
 online-fix.me##+js(remove-node-text, #text, РЕКЛАМНЫЙ БЛОК:)
 farposst.ru##+js(remove-node-text, #text, Реклама)
 filmitorrent.net,utorr.cc##+js(remove-node-text, #text, Реклама:)
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, div, 'Adblock,')
 ya.ru##+js(remove-node-text, div, 'ad-mark__b-unit-wrapper')
-game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, div, 'ый посетитель!')
 nullcms.ru##+js(remove-node-text, script, 'decodeURIComponent(escape')
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /Adblock|checkCookie|potapinasty|s_script|tick/)
 ritsatv.ru##+js(remove-node-text, script, /adBlock|adblock-warning/)
