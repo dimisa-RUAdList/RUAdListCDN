@@ -1,8 +1,8 @@
-diff name:ruadlist lines:45 checksum:5b2419dccb
+diff name:ruadlist lines:49 checksum:57e52437cb
 d4 2
 a5 2
-! Last modified: Sat, 29 Nov 2025 06:39:25 +0000
-! Diff-Path: ../patches/2025.11.29.399.patch#ruadlist
+! Last modified: Sat, 29 Nov 2025 11:23:09 +0000
+! Diff-Path: ../patches/2025.11.29.683.patch#ruadlist
 a17483 1
 habr.com##.p-shaped
 d18854 1
@@ -27,6 +27,8 @@ a22268 1
 ||pikabu.ru/ajax/*?Pnm59=$xmlhttprequest
 a22460 1
 www.avito.ru##div[class*="index-advRootWidget"]
+a23205 1
+||ig.rambler.ru/gazeta-sport-betting-
 a27403 2
 habr.com##.has-p-shaped:style(padding-top: 12px !important)
 ! ---
@@ -40,6 +42,8 @@ gagadget.com,gazeta.press,gazeta.ru,lenta.ru,rambler.ru##body:not(#id):style(ove
 d29011 1
 a29011 1
 agronews.ua,agroreview.com,agroweek.com##+js(remove-node-text, script, clickedOnContent)
+a29258 1
+translate.yandex.ru,translate.yandex.*##+js(set-constant, Object.prototype.dispatchSignalCallbacks, undefined)
 d29482 2
 a29483 2
 gazeta.press,gazeta.ru,lenta.ru,secretmag.ru,wmj.ru##iframe[src^="https://vp.rambler.ru/player/"] ~ svg
