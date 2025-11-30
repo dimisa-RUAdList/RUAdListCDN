@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 30 Nov 2025 17:25:16 +0000
-! Diff-Path: ../patches/2025.11.30.1045.patch#ruadlist
+! Last modified: Sun, 30 Nov 2025 22:28:54 +0000
+! Diff-Path: ../patches/2025.11.30.1348.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -23167,13 +23167,13 @@ mail.rambler.ru##div[class*="Ad-root"]
 mail.rambler.ru##div[class*="AddBillboard"]
 mail.rambler.ru##div[class*="AppContainer-adWrapper"]
 mail.rambler.ru##div[class*="SentLetter-context"]
+nova.rambler.ru##div[class*="__sticky--"] > div:first-child:not(:only-child):not([class^="Found__root--"])
+nova.rambler.ru##div[class*="adv__context"]
 avtorambler.com,rambler.ru##div[class*="banner-"]
-gazeta.press,gazeta.ru,letidor.ru,moslenta.ru,passion.ru,quto.ru##div[class*="billboard"]
+gazeta.press,gazeta.ru,letidor.ru,moslenta.ru,nova.rambler.ru,passion.ru,quto.ru##div[class*="billboard"]
 lenta.ru##div[class*="goodnews"][class*=" "]
 horoscopes.rambler.ru##div[class][style=""]
 www.afisha.ru##div[class^="Advert"]
-nova.rambler.ru##div[class^="DirectMKB"]
-nova.rambler.ru##div[class^="LayoutSearch"] section > article[class*=" Serp__item"]:not([class^=" Serp__item"])
 r0.ru##div[class^="News__adv"]
 afisha.ru##div[data-test*="HONEY-AD"] > [data-test="FALLBACK"] > span
 gazeta.press,gazeta.ru##div[id^="__id_global_rambler_video_off_"][data-mediaposition="bottom"]
@@ -23200,6 +23200,7 @@ avtorambler.com,rambler.ru##div[style^="min-height:400px"]
 avtorambler.com,rambler.ru##div[style^="min-height:600px"]
 avtorambler.com,rambler.ru##div[style^="order:"][style*="-1"]
 avtorambler.com,rambler.ru##rambler-info-banner
+nova.rambler.ru##section > article[class*=" Serp__item"]:not([class^=" Serp__item"])
 ||championat.*/embeds/custom.css
 ||cpa-elements.rambler.ru/*/sdk.js
 ||embeds.rambler.ru/cpa-elements/
@@ -28566,6 +28567,7 @@ e.mail.ru,octavius.mail.ru##.layer-sent-page > .layer:style(min-height: 0 !impor
 e.mail.ru,octavius.mail.ru##.letter-meta > .skeleton
 e.mail.ru##.ph-project__link[href^="https://cloud.mail.ru/promo/"]
 e.mail.ru##.ph-projects > a[href^="https://e.mail.ru/messages/inbox?utm_"]:style(pointer-events: none !important)
+e.mail.ru,octavius.mail.ru##div[class^="fields_container-"] > div > div[style="display: block;"]
 ! ---
 news.mail.ru###article-root section > main + [class] > div div:not([style]):style(min-height: 0 !important; padding: unset !important)
 mail.ru###bubble-home

@@ -1,8 +1,8 @@
-diff name:ruadlist lines:46 checksum:c3f08356e8
+diff name:ruadlist lines:57 checksum:3256b33184
 d4 2
 a5 2
-! Last modified: Sun, 30 Nov 2025 17:25:16 +0000
-! Diff-Path: ../patches/2025.11.30.1045.patch#ruadlist
+! Last modified: Sun, 30 Nov 2025 22:28:54 +0000
+! Diff-Path: ../patches/2025.11.30.1348.patch#ruadlist
 a10689 1
 /igaming/out/widget$domain=obozrevatel.com
 a12838 1
@@ -39,9 +39,20 @@ a20429 1
 d21297 1
 a21297 1
 namba.kg,namba.kz,namba.tj,videochart.net##div[id^="branding"]
+a23171 2
+nova.rambler.ru##div[class*="__sticky--"] > div:first-child:not(:only-child):not([class^="Found__root--"])
+nova.rambler.ru##div[class*="adv__context"]
+d23173 1
+a23173 1
+gazeta.press,gazeta.ru,letidor.ru,moslenta.ru,nova.rambler.ru,passion.ru,quto.ru##div[class*="billboard"]
+d23177 2
+a23204 1
+nova.rambler.ru##section > article[class*=" Serp__item"]:not([class^=" Serp__item"])
 a26896 1
 androidinsider.ru,appleinsider.ru##a[href*="://bit.ly/"]:style(pointer-events: none !important; color: inherit !important; border-bottom: inherit !important)
 d28124 2
+a28571 1
+e.mail.ru,octavius.mail.ru##div[class^="fields_container-"] > div > div[style="display: block;"]
 a29008 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, div, 'Adblock,')
 d29010 1
