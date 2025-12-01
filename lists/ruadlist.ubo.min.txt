@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 01 Dec 2025 13:42:43 +0000
-! Diff-Path: ../patches/2025.12.1.822.patch#ruadlist
+! Last modified: Mon, 01 Dec 2025 18:47:53 +0000
+! Diff-Path: ../patches/2025.12.1.1127.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22286,12 +22286,12 @@ howdyho.net#@#div[id^="yandex_rtb"]
 ||vk-apps.com/*?type=leadform&d=
 ||yandex.$domain=howdyho.net
 ||yastatic.$domain=howdyho.net
+championat.*,lenta.*##.js-scroll-to-site {remove:true;}
 cq.*##[class*="grid"] > a:has(.p-item__button-sponsored) {remove:true;}
 flightsim.su###tie-popup-adblock {remove:true;}
 freesoft.ru###downloadAdModal {remove:true;}
 freesoft.ru###error.modal {remove:true;}
 growhow.in.ua###custom-background-css {remove:true;}
-lenta.*##.js-scroll-to-site {remove:true;}
 lenta.*##.topic-body__content> .box-external-video:last-child {remove:true;}
 lenta.*##.topic-footer > div[class^="box-"][class$="-video"] {remove:true;}
 playground.ru###dfpPrerollDelay {remove:true;}
@@ -23105,7 +23105,7 @@ championat.com,championat.ru##.game-of-day
 championat.com,championat.ru##.header-bottom__adv
 championat.com,championat.ru##.infographic-countdown
 championat.com,championat.ru##.infographic-duel
-lenta.ru##.js-scroll-to-site
+championat.com,lenta.ru##.js-scroll-to-site
 lenta.ru##.js-video-eagle > div[style^="height:"][style*="overflow:"]
 ferra.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,secretmag.ru,wmj.ru##.lb-ad-visible
 gazeta.press,gazeta.ru##.m_zen
@@ -28568,7 +28568,7 @@ e.mail.ru,octavius.mail.ru###app-canvas .paginator-container:style(right: 8px !i
 e.mail.ru,octavius.mail.ru###popup-placeholder
 e.mail.ru,octavius.mail.ru##.advert-column:style(width: 0 !important)
 e.mail.ru,octavius.mail.ru##.application-mail__wrap > .application-mail__layout > .layout[style*="grid-template-columns:"]:style(grid-template-columns: 232px 1fr 0 0 !important)
-e.mail.ru,octavius.mail.ru##.application_new-toolbar .application-mail:not(.application-mail_webview-mobile) [class*="top-line-adv"]:style(--letter-list-top-toolbar-height: inherit !important; --letter-list-top-native-adv-height: inherit !important; --scrollable-top-native-adv-height: inherit !important)
+e.mail.ru,octavius.mail.ru##.application_new-toolbar .application-mail:not(.application-mail_webview-mobile) [class*="top-line-adv"]:style(--letter-list-top-native-adv-height: inherit !important; --scrollable-top-native-adv-height: inherit !important)
 e.mail.ru,octavius.mail.ru##.layer-sent-page > .layer:style(min-height: 0 !important)
 e.mail.ru,octavius.mail.ru##.letter-meta > .skeleton
 e.mail.ru##.ph-project__link[href^="https://cloud.mail.ru/promo/"]
@@ -28882,6 +28882,7 @@ rutube.ru##+js(addEventListener-defuser, message, __messagesAtom)
 m.lenta.ru##+js(addEventListener-defuser, scroll, getBoundingClientRect)
 www.vesti.ru##+js(addEventListener-defuser, scroll, players)
 lenta.ru##+js(addEventListener-defuser, scroll, window.history.pushState)
+championat.com##+js(addEventListener-defuser, scroll, window.location.href)
 rutube.ru##+js(addEventListener-defuser, visibilitychange, document.hidden)
 ritsatv.ru##+js(alert-buster)
 comedy-radio.ru,kufar.by,radioromantika.ru,relax-fm.ru,rg.ru,sm.news,veseloeradio.ru##+js(cookie-remover, /^bda|^bltsr/)
@@ -29152,7 +29153,6 @@ smotrim.ru##.dialog-wrapper
 reshu.by,reshuent.kz,sdamgia.ru##.googlead.pub_300x250.pub_300x250m.pub_728x90.text-ad.textAd.text_ad.text_ads.text-ads.text-ad-links:style(display: block !important)
 rbc.ru#?#.js-index-central-column .js-index-doscroll[data-type="spec"]:-abp-has([href*="erid="]):style(padding: 1px !important; border-bottom: none !important; opacity: 0 !important)
 rbc.ru##.js-index-doscroll audio[autoplay]:remove()
-lenta.ru##.js-scroll-to-site-container:remove()
 igromania.ru#?#.knb-grid-container > [data-io-article-url]:-abp-has(> [class^="MaterialItemHead_head"] [href="/tags/partnyorskij-material/"]) > .knb-grid-container [class^="material-content_"] a[href][target="_blank"]:not([href^="https://www.igromania.ru/"]):style(color: inherit !important; pointer-events: none !important)
 rbc.ru,rbcrealty.ru,sportrbc.ru##.l-sticky:has(.forecast:empty) ~ .js-news-feed > .news-feed:style(top: 166px !important; position: unset !important)
 ozon.ru##.layout-page > div:has(> div > p > a[href*="://docs.ozon.ru/common/pravila"])
@@ -29166,7 +29166,6 @@ cq.ru##.post-content > div > div:matches-css(height: 150px):remove()
 pikabu.ru##.pub300x250.pub300x250m.pub728x90.text-ad.textAd.textad.textads.text-ads.text-ad-links:style(display: block !important; position: absolute !important; top: -10000px !important; left: -10000px !important)
 letidor.ru,motor.ru,quto.ru,secretmag.ru,wmj.ru##.readMore
 sports.ru##.right-first-banner-place + div
-lenta.ru##.scroll-to-site
 softportal.com##.st-browser__timer
 gtavicecity.ru##.stop-waiting
 pikabu.ru##.stories-feed__container > .story[data-author-name] ~ .story:not([data-author-name])
@@ -29205,6 +29204,7 @@ cq.ru##[class*="grid"] > a:has(.p-item__button-sponsored):remove()
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href*="://yabs.yandex."][href*="/count/"]):remove()
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href*="://yandex."][href*="/clck/"]):remove()
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href][target="_blank"]):remove()
+championat.com,lenta.ru##[class*="scroll-to-site"]:remove()
 ozon.ru##[data-lcp-name*="anner-"]:matches-path(/my/reviews/promo):style(display: block !important)
 www.sports.ru##[data-noinit]
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[id^="suggest-item-"]:has(> a[href*="://yabs.yandex."][href*="/count/"]):remove()
