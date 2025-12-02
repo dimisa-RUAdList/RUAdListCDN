@@ -1,9 +1,11 @@
-diff name:ruadlist lines:94 checksum:1ca361b2d8
+diff name:ruadlist lines:104 checksum:805c2ba64c
 d4 2
 a5 2
-! Last modified: Tue, 02 Dec 2025 14:35:05 +0000
-! Diff-Path: ../patches/2025.12.2.875.patch#ruadlist
+! Last modified: Tue, 02 Dec 2025 19:26:53 +0000
+! Diff-Path: ../patches/2025.12.2.1166.patch#ruadlist
 d5065 1
+a9136 1
+||clck.ru^$popup,domain=playground.ru
 a10689 1
 /igaming/out/widget$domain=obozrevatel.com
 a11881 1
@@ -59,9 +61,13 @@ namba.kg,namba.kz,namba.tj,videochart.net##div[id^="branding"]
 a22286 1
 championat.*,lenta.*##.js-scroll-to-site {remove:true;}
 d22292 1
+a22294 1
+lenta.*##.vk-video-popup {remove:true;}
 d23106 1
 a23106 1
 championat.com,lenta.ru##.js-scroll-to-site
+a23120 1
+lenta.ru##.vk-video-popup
 a23170 2
 nova.rambler.ru##div[class*="__sticky--"] > div:first-child:not(:only-child):not([class^="Found__root--"])
 nova.rambler.ru##div[class*="adv__context"]
@@ -77,6 +83,8 @@ a23529 1
 ya.ru##ul[class*="-section__list"]
 a26895 1
 androidinsider.ru,appleinsider.ru##a[href*="://bit.ly/"]:style(pointer-events: none !important; color: inherit !important; border-bottom: inherit !important)
+a27904 1
+playground.ru##a[href*="/clck.ru/"]:style(pointer-events: none !important; color: inherit !important)
 d28123 2
 a28357 1
 ya.ru##html[class*="_neuro"] aside ~ div[style]
@@ -91,5 +99,7 @@ a29111 1
 remanga.org##+js(set-cookie, promo-toast-tg, true)
 d29148 1
 d29162 1
+a29172 1
+lenta.ru##.vk-video-popup:remove()
 a29200 1
 championat.com,lenta.ru##[class*="scroll-to-site"]:remove()

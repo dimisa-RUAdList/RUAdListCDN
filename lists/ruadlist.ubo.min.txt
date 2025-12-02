@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 02 Dec 2025 14:35:05 +0000
-! Diff-Path: ../patches/2025.12.2.875.patch#ruadlist
+! Last modified: Tue, 02 Dec 2025 19:26:53 +0000
+! Diff-Path: ../patches/2025.12.2.1166.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -9133,6 +9133,7 @@ $third-party,popup,domain=2ip.ru
 ?partner=$popup,domain=lifehacker.ru
 |http://li.ru/go?$popup,domain=fishki.net
 ||catcut.net^$popup,domain=mobile-4at-obshenie.chatovod.ru|mobile-chat-obshenie.jimdo.com
+||clck.ru^$popup,domain=playground.ru
 ||com/?id=*&t=direct^$popup
 ||gemius.pl^$popup,domain=terrikon.com
 ||getitbit.net/ads/$popup
@@ -22296,6 +22297,7 @@ freesoft.ru###error.modal {remove:true;}
 growhow.in.ua###custom-background-css {remove:true;}
 lenta.*##.topic-body__content> .box-external-video:last-child {remove:true;}
 lenta.*##.topic-footer > div[class^="box-"][class$="-video"] {remove:true;}
+lenta.*##.vk-video-popup {remove:true;}
 playground.ru###dfpPrerollDelay {remove:true;}
 the-geek.ru###wp-custom-css {remove:true;}
 vk.*##head > style:-abp-contains(/adchoice|mkit_|outlineBanner/i) {remove:true;}
@@ -23122,6 +23124,7 @@ lenta.ru##.topic-body__content > .box-external-video:last-child
 lenta.ru##.topic-footer > .box-external-video
 lenta.ru##.topic-page__info ~ div
 lenta.ru##.traffic-exchange
+lenta.ru##.vk-video-popup
 lenta.ru##.yandex-games
 www.afisha.ru##[aria-label="Реклама"]
 mail.rambler.ru##[class*="MaillistItemAdvertPlace"]
@@ -27910,6 +27913,7 @@ pimpletv.ru##body > #branding:style(padding-top: 0 !important)
 playground.ru##.bonus-landing-page .panel-collapse > .panel-body:style(background-color: white !important)
 playground.ru##.bonus-landing-page .panel-default > .panel-heading:style(background-color: white !important)
 playground.ru##.bonus-landing-page-faq > .title:style(color: white !important)
+playground.ru##a[href*="/clck.ru/"]:style(pointer-events: none !important; color: inherit !important)
 playground.ru##body[data-user-id]:style(background: #242424 !important)
 ! исправление ошибок и косяков оригинальной вёрстки
 playground.ru##.gp-game-card .user-profile-sidebar:style(max-width: unset !important)
@@ -29178,6 +29182,7 @@ lenta.ru##.topic-body__content > .box-external-video:last-child:remove()
 lenta.ru##.topic-footer > div[class^="box-"][class$="-video"]:remove()
 player.twitch.tv##.ubo-overlay > .player-ad-notice
 dynamo.kiev.ua##.video-scroll:remove()
+lenta.ru##.vk-video-popup:remove()
 vk.com,vk.ru##.wall_module > div[id]:first-child > :matches-prop(innerHTML="/format_edit|mradx\.|media_on_/")
 /(aniqit|kodik)./$subdocument,removeparam=geoblock
 /^https?://yastatic\.net\/www\/_\/[^\s]{150,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz

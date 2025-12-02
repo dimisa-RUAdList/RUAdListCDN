@@ -1,17 +1,25 @@
-diff name:ruadlist lines:22 checksum:1ca361b2d8
+diff name:ruadlist lines:32 checksum:805c2ba64c
 d4 2
 a5 2
-! Last modified: Tue, 02 Dec 2025 14:35:05 +0000
-! Diff-Path: ../patches/2025.12.2.875.patch#ruadlist
+! Last modified: Tue, 02 Dec 2025 19:26:53 +0000
+! Diff-Path: ../patches/2025.12.2.1166.patch#ruadlist
+a9135 1
+||clck.ru^$popup,domain=playground.ru
 a19483 2
 lifehacker.ru##a.goods__button[target="_blank"]
 lifehacker.ru##a.goods__image-link[target="_blank"]
 a22288 1
 championat.*,lenta.*##.js-scroll-to-site {remove:true;}
 d22294 1
+a22296 1
+lenta.*##.vk-video-popup {remove:true;}
 d23108 1
 a23108 1
 championat.com,lenta.ru##.js-scroll-to-site
+a23122 1
+lenta.ru##.vk-video-popup
+a27910 1
+playground.ru##a[href*="/clck.ru/"]:style(pointer-events: none !important; color: inherit !important)
 d28571 1
 a28571 1
 e.mail.ru,octavius.mail.ru##.application_new-toolbar .application-mail:not(.application-mail_webview-mobile) [class*="top-line-adv"]:style(--letter-list-top-native-adv-height: inherit !important; --scrollable-top-native-adv-height: inherit !important)
@@ -19,5 +27,7 @@ a28884 1
 championat.com##+js(addEventListener-defuser, scroll, window.location.href)
 d29155 1
 d29169 1
+a29179 1
+lenta.ru##.vk-video-popup:remove()
 a29207 1
 championat.com,lenta.ru##[class*="scroll-to-site"]:remove()

@@ -1,8 +1,18 @@
-diff name:ruadlist lines:7 checksum:1ca361b2d8
+diff name:ruadlist lines:17 checksum:805c2ba64c
 d4 2
 a5 2
-! Last modified: Tue, 02 Dec 2025 14:35:05 +0000
-! Diff-Path: ../patches/2025.12.2.875.patch#ruadlist
+! Last modified: Tue, 02 Dec 2025 19:26:53 +0000
+! Diff-Path: ../patches/2025.12.2.1166.patch#ruadlist
+a9135 1
+||clck.ru^$popup,domain=playground.ru
 a19483 2
 lifehacker.ru##a.goods__button[target="_blank"]
 lifehacker.ru##a.goods__image-link[target="_blank"]
+a22296 1
+lenta.*##.vk-video-popup {remove:true;}
+a23122 1
+lenta.ru##.vk-video-popup
+a27910 1
+playground.ru##a[href*="/clck.ru/"]:style(pointer-events: none !important; color: inherit !important)
+a29178 1
+lenta.ru##.vk-video-popup:remove()

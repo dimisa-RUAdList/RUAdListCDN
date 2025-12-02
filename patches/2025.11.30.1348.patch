@@ -1,9 +1,11 @@
-diff name:ruadlist lines:45 checksum:1ca361b2d8
+diff name:ruadlist lines:55 checksum:805c2ba64c
 d4 2
 a5 2
-! Last modified: Tue, 02 Dec 2025 14:35:05 +0000
-! Diff-Path: ../patches/2025.12.2.875.patch#ruadlist
+! Last modified: Tue, 02 Dec 2025 19:26:53 +0000
+! Diff-Path: ../patches/2025.12.2.1166.patch#ruadlist
 d5065 1
+a9136 1
+||clck.ru^$popup,domain=playground.ru
 a11882 1
 ||infox.ru/rb/
 a15318 1
@@ -24,13 +26,19 @@ servernews.ru,stolicaonego.ru##div[class*="-banner"]
 a22285 1
 championat.*,lenta.*##.js-scroll-to-site {remove:true;}
 d22291 1
+a22293 1
+lenta.*##.vk-video-popup {remove:true;}
 d23105 1
 a23105 1
 championat.com,lenta.ru##.js-scroll-to-site
+a23119 1
+lenta.ru##.vk-video-popup
 a23524 1
 ya.ru##[aria-label="Informers"] ~ [class]
 a23529 1
 ya.ru##ul[class*="-section__list"]
+a27905 1
+playground.ru##a[href*="/clck.ru/"]:style(pointer-events: none !important; color: inherit !important)
 a28356 1
 ya.ru##html[class*="_neuro"] aside ~ div[style]
 d28565 1
@@ -42,5 +50,7 @@ a29111 1
 remanga.org##+js(set-cookie, promo-toast-tg, true)
 d29148 1
 d29162 1
+a29172 1
+lenta.ru##.vk-video-popup:remove()
 a29200 1
 championat.com,lenta.ru##[class*="scroll-to-site"]:remove()
