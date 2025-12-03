@@ -1,28 +1,18 @@
-diff name:ruadlist lines:27 checksum:bd74fc4042
+diff name:ruadlist lines:17 checksum:bd74fc4042
 d4 2
 a5 2
 ! Last modified: Wed, 03 Dec 2025 02:15:56 +0000
 ! Diff-Path: ../patches/2025.12.3.135.patch#ruadlist
-a9135 1
-||clck.ru^$popup,domain=playground.ru
-a10642 1
+a10643 1
 /advert/placements/*$domain=zernotorg.ua
-a10787 1
+a10788 1
 /wp-content/uploads/*-pidlozhka-$image,domain=agronews.ua|agroreview.com|agroweek.com
-a10791 1
+a10792 1
 /wp-content/uploads/*_1920x1080$image,domain=agronews.ua|agroreview.com|agroweek.com
-d10956 1
-a15530 1
+d10957 1
+a15531 1
 ukragroconsult.com##.ban > a:not([href^="/"]):not([href^="https://ukragroconsult.com/"])
-a19314 1
+a19315 1
 zernotorg.ua##[hx-get*="/advert/placements/"]
-a20520 1
+a20521 1
 agronews.ua,agroreview.com,agroweek.com##body.has-aw-background::before
-a22298 1
-lenta.*##.vk-video-popup {remove:true;}
-a23124 1
-lenta.ru##.vk-video-popup
-a27912 1
-playground.ru##a[href*="/clck.ru/"]:style(pointer-events: none !important; color: inherit !important)
-a29180 1
-lenta.ru##.vk-video-popup:remove()

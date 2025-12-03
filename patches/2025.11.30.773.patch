@@ -1,13 +1,20 @@
-diff name:ruadlist lines:102 checksum:805c2ba64c
+diff name:ruadlist lines:115 checksum:bd74fc4042
 d4 2
 a5 2
-! Last modified: Tue, 02 Dec 2025 19:26:53 +0000
-! Diff-Path: ../patches/2025.12.2.1166.patch#ruadlist
+! Last modified: Wed, 03 Dec 2025 02:15:56 +0000
+! Diff-Path: ../patches/2025.12.3.135.patch#ruadlist
 d5065 1
 a9136 1
 ||clck.ru^$popup,domain=playground.ru
+a10643 1
+/advert/placements/*$domain=zernotorg.ua
 a10689 1
 /igaming/out/widget$domain=obozrevatel.com
+a10787 1
+/wp-content/uploads/*-pidlozhka-$image,domain=agronews.ua|agroreview.com|agroweek.com
+a10791 1
+/wp-content/uploads/*_1920x1080$image,domain=agronews.ua|agroreview.com|agroweek.com
+d10956 1
 a11881 1
 ||infox.ru/rb/
 a12838 1
@@ -24,6 +31,8 @@ a15299 1
 sappers.com.ua##.article-block-ads
 a15317 1
 stolicaonego.ru##.article-widget
+a15528 1
+ukragroconsult.com##.ban > a:not([href^="/"]):not([href^="https://ukragroconsult.com/"])
 d15886 1
 a17207 1
 sportarena.ua##.menu-top-red
@@ -32,6 +41,8 @@ a19189 1
 karavan.ua,sportarena.ua##[data-banner-name]
 a19254 1
 remanga.org##[data-sentry-source-file="promobanners.tsx"]
+a19311 1
+zernotorg.ua##[hx-get*="/advert/placements/"]
 a19409 1
 obozrevatel.com##[src*="/igaming/out/widget/"]
 a19415 1
@@ -52,6 +63,8 @@ sportarena.ua##body > .nomobile
 d20428 1
 a20428 1
 101.ru,101kofemashina.ru,1in.am,alau.kz,alexua.tv,animejapan.tv,autosport.com.ru,bit.ua,bugaga.ru,c-inform.info,comments.ua,csgamer.ru,ctv7.ru,cvnews.cv.ua,dead-serial.com,e-libra.ru,epravda.com.ua,fashiony.ru,fclmnews.ru,fishki.net,forpost.lviv.ua,game2day.ru,gameinside.ua,ggscore.com,gorod.dp.ua,grimm-online.org,gta.com.ua,horrorzone.ru,ifnews.org.ua,igry-online.net,itechua.com,izbezhat-nakazania.com,jetsetter.ua,jut.su,kievvlast.com.ua,kinoafisha.info,ko.com.ua,kosti-tv.com,kushvsporte.ru,likeni.ru,lovesun.by,lvnews.org.ua,mac-torrent-download.net,madjong-besplatno.ru,mirf.ru,moldfootball.com,mybrazz.club,nashkiev.ua,ne-kurim.ru,orelgrad.ru,pesikot.org,pimpletv.ru,playua.net,post-tracker.ru,povarenok.ru,prodota.ru,prosports.kg,prosports.kz,prosportua.com,relook.ru,rvnews.rv.ua,saratovnews.ru,shuba.life,sopsport.org,spletnica-tv.com,strela-online.com,teenwolf-tv.com,tenews.org.ua,tg.telepult.pro,the-geek.ru,theflash-tv.com,topfile.tj,traktorist.ua,uafix.net,uanews.org.ua,udargol.com,upl.ua,vskazke-tv.com,zab.ru,zorgee.ru##body > a[href][target="_blank"]
+a20516 1
+agronews.ua,agroreview.com,agroweek.com##body.has-aw-background::before
 d20651 1
 a20651 1
 servernews.ru,stolicaonego.ru##div[class*="-banner"]
