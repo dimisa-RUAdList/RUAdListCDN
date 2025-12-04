@@ -1,8 +1,8 @@
-diff name:ruadlist lines:38 checksum:9c04d11385
+diff name:ruadlist lines:45 checksum:5e8a7b024f
 d4 2
 a5 2
-! Last modified: Thu, 04 Dec 2025 06:45:19 +0000
-! Diff-Path: ../patches/2025.12.4.405.patch#ruadlist
+! Last modified: Thu, 04 Dec 2025 11:27:46 +0000
+! Diff-Path: ../patches/2025.12.4.687.patch#ruadlist
 a9135 1
 ||clck.ru^$popup,domain=playground.ru
 a10642 1
@@ -12,8 +12,12 @@ a10787 1
 a10791 1
 /wp-content/uploads/*_1920x1080$image,domain=agronews.ua|agroreview.com|agroweek.com
 d10956 1
+a13956 1
+kinorium.com###bwnurid
 a15530 1
 ukragroconsult.com##.ban > a:not([href^="/"]):not([href^="https://ukragroconsult.com/"])
+a17757 1
+gameguru.ru##.publications > .row > [id^="publication-"] ~ div:not([id^="publication-"])
 a19314 1
 zernotorg.ua##[hx-get*="/advert/placements/"]
 a19483 2
@@ -33,6 +37,9 @@ a22604 1
 ~e.mail.ru,mail.ru,~octavius.mail.ru##.fullscreen-ad-wrapper
 a23122 1
 lenta.ru##.vk-video-popup
+d27334 1
+a27334 1
+gameguru.ru##body:style(background-image: none !important; background-color: inherit !important)
 a27910 1
 playground.ru##a[href*="/clck.ru/"]:style(pointer-events: none !important; color: inherit !important)
 a29178 1

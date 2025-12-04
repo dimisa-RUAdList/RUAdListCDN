@@ -1,8 +1,8 @@
-diff name:ruadlist lines:60 checksum:9c04d11385
+diff name:ruadlist lines:67 checksum:5e8a7b024f
 d4 2
 a5 2
-! Last modified: Thu, 04 Dec 2025 06:45:19 +0000
-! Diff-Path: ../patches/2025.12.4.405.patch#ruadlist
+! Last modified: Thu, 04 Dec 2025 11:27:46 +0000
+! Diff-Path: ../patches/2025.12.4.687.patch#ruadlist
 d5065 1
 a9136 1
 ||clck.ru^$popup,domain=playground.ru
@@ -15,8 +15,12 @@ a10792 1
 d10957 1
 a11882 1
 ||infox.ru/rb/
+a13956 1
+kinorium.com###bwnurid
 a15530 1
 ukragroconsult.com##.ban > a:not([href^="/"]):not([href^="https://ukragroconsult.com/"])
+a17757 1
+gameguru.ru##.publications > .row > [id^="publication-"] ~ div:not([id^="publication-"])
 a19256 1
 remanga.org##[data-sentry-source-file="promobanners.tsx"]
 a19313 1
@@ -44,6 +48,9 @@ a23107 1
 championat.com,lenta.ru##.js-scroll-to-site
 a23121 1
 lenta.ru##.vk-video-popup
+d27333 1
+a27333 1
+gameguru.ru##body:style(background-image: none !important; background-color: inherit !important)
 a27909 1
 playground.ru##a[href*="/clck.ru/"]:style(pointer-events: none !important; color: inherit !important)
 d28570 1
