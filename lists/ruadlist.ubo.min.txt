@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 05 Dec 2025 07:30:03 +0000
-! Diff-Path: ../patches/2025.12.5.450.patch#ruadlist
+! Last modified: Fri, 05 Dec 2025 12:59:23 +0000
+! Diff-Path: ../patches/2025.12.5.779.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -18369,6 +18369,7 @@ pornopodborka.com##.spots-wrap
 skatay.com##.sprite-14 + * > hr + table[align="center"]
 ogolosha.ua##.square-banner-wrapper
 polochka.net##.ss-overflow-hidden
+sostav.ru##.ssschool
 satsis.info##.st-allbanners
 info.sibnet.ru##.stakan-border:not([style])
 tod-news.com##.stamp_main ~ .item
@@ -19673,7 +19674,7 @@ livesport.ru##a[href*="://www.livesport.ru/away"]
 uaprom.info##a[href*="://www.wem.ua"]
 drive2.com,drive2.ru##a[href*="://yabs.yandex.ru/count/"]
 gamer-info.com##a[href*="=http"]:not([target])
-anilib.me,animelib.org,asienda.ru,cybersport.ru,diets.ru,hentailib.me,hentailib.org,iphones.ru,mangalib.me,mangalib.org,mycharm.ru,myjane.ru,povarenok.ru,ptichka.ru,ranobelib.me,relook.ru,stranamam.ru,vuzopedia.ru##a[href*="?erid="]
+anilib.me,animelib.org,asienda.ru,cybersport.ru,diets.ru,hentailib.me,hentailib.org,iphones.ru,mangalib.me,mangalib.org,mycharm.ru,myjane.ru,povarenok.ru,ptichka.ru,ranobelib.me,relook.ru,sostav.ru,stranamam.ru,vuzopedia.ru##a[href*="?erid="]
 mauforum.ru##a[href*="?partner"]
 itorrents-igruha.net,itorrents-igruha.org##a[href*="BlumCryptoBot"]
 stratege.ru##a[href*="_click?id="]
@@ -20470,9 +20471,9 @@ siver.com.ua##body > div[align="right"] > span
 progipertoniyu.ru##body > div[class*="modal"]
 povarenok.ru##body > div[class]:empty:not([style])
 votrube.ru##body > div[class]:last-of-type
+ura.news##body > div[class]:not([class*=" "])
 stopgame.ru##body > div[class]:not([id]):not([style]):empty
 anilib.moe,anilib.one,anilib.top,anilibria.iss.one,anilibria.tv##body > div[class]:not([id]):nth-child(-n+5) > a[href]
-ura.news##body > div[class^="g"]
 finam.ru##body > div[class^="hidden-"]
 openssource.biz##body > div[class^="spu-"]
 gazgolder.com##body > div[g-popup-type="popup_ad"]
@@ -21499,7 +21500,6 @@ vellisa.ru##div[style="display: inline-block;"] a[href]
 novostivmire.com##div[style="float: none; margin:0px;"]
 gizmod.ru##div[style="float:left;width:344px;height:295px;"]
 forum.china-iphone.ru##div[style="float:right; margin-right: 5px;"]
-ura.news#?#div[style="font-size: 16px;"] div:only-child > div:-abp-contains(Продолжение после рекламы)
 lleo.me##div[style="font-size:11px; margin: 0 2px 0 2px;"]
 astrohelper.ru##div[style="height: 120px;"]
 speedme.ru##div[style="height: 250px;"]
@@ -21582,6 +21582,7 @@ domkad.ru##div[style^="display: flex; align-items: center; justify-content: cent
 moto.com.ua##div[style^="display: table; width: 650px; height: 90px;"]
 sarov.info##div[style^="display:inline-block"][style$="margin:0px 0px 12px 0px;"]
 zhenskoe-mnenie.ru#?#div[style^="font-size"]:-abp-contains(Также узнайте...)
+ura.news#?#div[style^="font-size:"][style*="16px"] div:only-child > div:-abp-contains(Продолжение после рекламы)
 rasfokus.ru##div[style^="height:100px;"]
 lumpics.ru##div[style^="height:120px;display:block"]
 sinoptik.ua##div[style^="margin"][style$="width: 300px;"]
