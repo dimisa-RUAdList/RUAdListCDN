@@ -1,8 +1,11 @@
-diff name:ruadlist lines:82 checksum:98d12280e7
+diff name:ruadlist lines:100 checksum:1ecf9643f6
 d4 2
 a5 2
-! Last modified: Mon, 08 Dec 2025 10:36:16 +0000
-! Diff-Path: ../patches/2025.12.8.636.patch#ruadlist
+! Last modified: Mon, 08 Dec 2025 15:32:36 +0000
+! Diff-Path: ../patches/2025.12.8.932.patch#ruadlist
+a7845 1
+/ad-rotator/ad-list.json
+d7978 1
 a8512 1
 ##.stream-item-widget
 d9773 1
@@ -11,12 +14,16 @@ a9773 1
 d10171 1
 a10171 1
 belsat.eu,best-home-ideas.com,bizua.org,growhow.in.ua,hariola.com,newsyou.info,spiker.club##.popmake-overlay
+a10222 1
+lenta.ru##div[class*="cation js-"]
 d10272 1
 a10272 1
 /wp-content/uploads/pum/pum-site-$domain=belsat.eu|best-home-ideas.com|bizua.org|hariola.com|newsyou.info|spiker.club
 d10406 1
 a10406 1
 ||obfusgated.com/*/tools/ad-block-test$csp=connect-src 'self'; img-src 'self';
+a12347 1
+||mvapspdmpg.com/veoveo-creative/
 d14908 1
 a15195 1
 football24.ua##.adv-insert
@@ -62,7 +69,11 @@ d26572 1
 d26574 1
 a26574 1
 @@||static-mon.yandex.net/static/main.js?pid=$xmlhttprequest,domain=reshu.by|reshuent.kz|sdamgia.ru
+a26922 2
+androidinsider.ru,appleinsider.ru##a[href*="://ali.ski/"]:style(pointer-events: none !important; color: inherit !important; border-bottom: inherit !important)
+androidinsider.ru,appleinsider.ru##a[href*="://aliexpress.ru/item/"]:style(pointer-events: none !important; color: inherit !important; border-bottom: inherit !important)
 d28165 1
+d28599 1
 a28630 1
 finance.mail.ru,news.mail.ru,vfokuse.mail.ru##.p-catchup
 d28774 1
@@ -78,6 +89,13 @@ game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorka
 d29045 1
 a29105 1
 sports.ru##+js(set-constant, Sports.sPresenceLoaded, true)
+a29351 1
+cloud.mail.ru###react-modals:has(a[href^="https://vk.cc/"])
+a29403 1
+e.mail.ru,octavius.mail.ru##.vkuiPopoutRoot:has(a[href^="https://vk.cc/"])
+a29405 2
+e.mail.ru,octavius.mail.ru##div[class^="fields_container-"] > div > div[style="display: block;"]
+e.mail.ru,octavius.mail.ru##div[class^="fields_container-"] > div > div[style="display: block;"]:has([data-name="from"] > [class^="containerInner-"] > [class^="label-"] > div:not([class^="beautifulAddressEntry-"])):style(display: block !important)
 d29502 1
 a29539 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(prevent-setTimeout, _0x)

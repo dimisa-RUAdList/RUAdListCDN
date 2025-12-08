@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 08 Dec 2025 10:36:16 +0000
-! Diff-Path: ../patches/2025.12.8.636.patch#ruadlist
+! Last modified: Mon, 08 Dec 2025 15:32:36 +0000
+! Diff-Path: ../patches/2025.12.8.932.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -7843,6 +7843,7 @@ _verified.php?code=*&server=runetki.com
 /a/ipn/js/*$third-party,script
 /a/pop/js/*$third-party,script
 /abnl/?ucozads^
+/ad-rotator/ad-list.json
 /ad/base.js?id=$third-party,script
 /ad_click/*$object
 /ad_iframe/*$domain=~convert-video-online.com|~online-audio-converter.com
@@ -7975,7 +7976,6 @@ _verified.php?code=*&server=runetki.com
 /datagroup.gif
 /delivery/fc2.
 /direct.php|$~third-party,xmlhttprequest,domain=~cdromance.com
-/dle-plugin/ad-rotator/ad-list.json
 /edgemesh.*.js$script,domain=~edgemesh.com|~edgeno.de
 /edu_chat.js
 /educhat.js
@@ -10221,6 +10221,7 @@ dnpmag.com,trendymen.ru##body > div[id^="popup-"]
 daz3d.ru##body > span[id^="s"][style]
 esputnik.com,~webinars.esputnik.com##body.cl-noscroll > .cl-dialog[style*="position: fixed"]
 pinterest.com##div[class*="ScreenBanner"]
+lenta.ru##div[class*="cation js-"]
 noworries.news##div[class*="remodal"]
 muzofon.com##div[class*="simplemodal"]
 5sfer.com##div[class^="charlotte-"]
@@ -12346,6 +12347,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||muzoff.ru/html/
 ||muzoff.ru/rek/
 ||muzoktcrb.ru/clickworker.js
+||mvapspdmpg.com/veoveo-creative/
 ||mxtads.*/$script
 ||mxttrf.com/vast.xml
 ||my-cinema.net/branding/
@@ -26921,6 +26923,8 @@ alllyr.ru##.fancybox-enabled:style(overflow: auto !important)
 ! ---
 androidinsider.ru###trend:style(margin-bottom: 0 !important)
 androidinsider.ru###wrapper:style(background: none !important)
+androidinsider.ru,appleinsider.ru##a[href*="://ali.ski/"]:style(pointer-events: none !important; color: inherit !important; border-bottom: inherit !important)
+androidinsider.ru,appleinsider.ru##a[href*="://aliexpress.ru/item/"]:style(pointer-events: none !important; color: inherit !important; border-bottom: inherit !important)
 androidinsider.ru,appleinsider.ru##a[href*="://bit.ly/"]:style(pointer-events: none !important; color: inherit !important; border-bottom: inherit !important)
 androidinsider.ru,appleinsider.ru##a[href*="://s.zbanx.com/r/"]:style(pointer-events: none !important; color: inherit !important; border-bottom: inherit !important)
 androidinsider.ru,appleinsider.ru##a[href*="erid="]:style(pointer-events: none !important; color: inherit !important; border-bottom: inherit !important)
@@ -28596,7 +28600,6 @@ e.mail.ru,octavius.mail.ru##.layer-sent-page > .layer:style(min-height: 0 !impor
 e.mail.ru,octavius.mail.ru##.letter-meta > .skeleton
 e.mail.ru##.ph-project__link[href^="https://cloud.mail.ru/promo/"]
 e.mail.ru##.ph-projects > a[href^="https://e.mail.ru/messages/inbox?utm_"]:style(pointer-events: none !important)
-e.mail.ru,octavius.mail.ru##div[class^="fields_container-"] > div > div[style="display: block;"]
 ! ---
 news.mail.ru###article-root section > main + [class] > div div:not([style]):style(min-height: 0 !important; padding: unset !important)
 mail.ru###bubble-home
@@ -29349,6 +29352,7 @@ ya.ru,yandex.*##.simple-popup__overlay:remove()
 ||youtube.com/embed/?enablejsapi=1&origin=*3dnews.*&widgetid=1$subdocument,badfilter,domain=3dnews.ru
 ! Mail.RU
 mail.ru###grid div[class^="feed__"]:remove()
+cloud.mail.ru###react-modals:has(a[href^="https://vk.cc/"])
 minigames.mail.ru##+js(abort-current-inline-script, $, blockWarnClass)
 mmminigames.mail.ru##+js(abort-current-inline-script, $, mimicTopClass)
 ok.ru##+js(abort-on-property-read, globalAuthLoginPopupCounter)
@@ -29401,8 +29405,11 @@ e.mail.ru,octavius.mail.ru##+js(no-setTimeout-if, MIMIC_FORCE)
 e.mail.ru,octavius.mail.ru##+js(no-setTimeout-if, _runBatch, 100)
 e.mail.ru,octavius.mail.ru##+js(set-attr, .html-fishing a, target, true)
 e.mail.ru,octavius.mail.ru##+js(set-constant, Object.prototype.hasAdBlock, null)
+e.mail.ru,octavius.mail.ru##.vkuiPopoutRoot:has(a[href^="https://vk.cc/"])
 e.mail.ru,octavius.mail.ru##body > div > .letter-list-item-adv:style(display: block !important)
 e.mail.ru,octavius.mail.ru##body > div[style*="top:"][style*="position:"][style*="visibility:"] #app-canvas div:style(display: block !important)
+e.mail.ru,octavius.mail.ru##div[class^="fields_container-"] > div > div[style="display: block;"]
+e.mail.ru,octavius.mail.ru##div[class^="fields_container-"] > div > div[style="display: block;"]:has([data-name="from"] > [class^="containerInner-"] > [class^="label-"] > div:not([class^="beautifulAddressEntry-"])):style(display: block !important)
 ! VK-брендинг
 light.mail.ru##.portal-menu__logo__link:style(width: 90px !important; !important; overflow: hidden !important)
 ! Фикс для маленьких экранов
