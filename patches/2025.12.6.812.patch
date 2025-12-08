@@ -1,8 +1,8 @@
-diff name:ruadlist lines:75 checksum:6373e0cdfe
+diff name:ruadlist lines:85 checksum:98d12280e7
 d4 2
 a5 2
-! Last modified: Mon, 08 Dec 2025 05:33:54 +0000
-! Diff-Path: ../patches/2025.12.8.333.patch#ruadlist
+! Last modified: Mon, 08 Dec 2025 10:36:16 +0000
+! Diff-Path: ../patches/2025.12.8.636.patch#ruadlist
 a8512 1
 ##.stream-item-widget
 d9773 1
@@ -14,6 +14,9 @@ belsat.eu,best-home-ideas.com,bizua.org,growhow.in.ua,hariola.com,newsyou.info,s
 d10272 1
 a10272 1
 /wp-content/uploads/pum/pum-site-$domain=belsat.eu|best-home-ideas.com|bizua.org|hariola.com|newsyou.info|spiker.club
+d10406 1
+a10406 1
+||obfusgated.com/*/tools/ad-block-test$csp=connect-src 'self'; img-src 'self';
 d14908 1
 a15195 1
 football24.ua##.adv-insert
@@ -52,6 +55,9 @@ a21145 1
 softonic.ru##div[data-meta="placeholder-slot"]
 a22280 1
 @@||senoval-master.cdn.sports.ru/moneyball/s-presence/adfx.loader.bind.js|$script,domain=sports.ru
+d22290 1
+a22290 1
+||pikabu.ru/ajax/*?l3Mrm=$xmlhttprequest
 a23452 1
 cyber.sports.ru##div[class^="desktop-teaser_"] a[href*="://sirena.world/"]
 d23457 1
@@ -60,6 +66,8 @@ d26574 1
 a26574 1
 @@||static-mon.yandex.net/static/main.js?pid=$xmlhttprequest,domain=reshu.by|reshuent.kz|sdamgia.ru
 d28165 1
+a28630 1
+finance.mail.ru,news.mail.ru,vfokuse.mail.ru##.p-catchup
 d28774 1
 a28774 1
 3dnews.ru,avtovzglyad.ru,baby.ru,cont.ws,dni.ru,pikabu.ru,pogoda.onliner.by,russian7.ru,selflib.me,sm.news,tech.onliner.by,www.goha.ru##+js(abort-on-property-read, Ya)
@@ -74,3 +82,5 @@ d29045 1
 a29105 1
 sports.ru##+js(set-constant, Sports.sPresenceLoaded, true)
 d29502 1
+a29539 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(prevent-setTimeout, _0x)

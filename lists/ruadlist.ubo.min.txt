@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 08 Dec 2025 05:33:54 +0000
-! Diff-Path: ../patches/2025.12.8.333.patch#ruadlist
+! Last modified: Mon, 08 Dec 2025 10:36:16 +0000
+! Diff-Path: ../patches/2025.12.8.636.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10404,7 +10404,7 @@ $csp=script-src-attr 'none',domain=volyn.com.ua
 ||mult-porno.$csp=connect-src 'self' blob: data:
 ||news-sphere.com^$csp=script-src
 ||nsportal.ru/download/$csp=frame-src 'self'
-||obfusgated.com/*/tools/ad-block-test$csp=connect-src 'self';
+||obfusgated.com/*/tools/ad-block-test$csp=connect-src 'self'; img-src 'self';
 ||opensharing.org/img/images/$csp=script-src 'unsafe-inline' 'unsafe-eval' opensharing.org/img/
 ||paileactivist.github.io/toolz/adblock$csp=connect-src 'self'
 ||psysovet24.ru^$csp=script-src 'self' * blob: data:
@@ -22289,7 +22289,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||news.mail.ru/-/*.js?
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
-||pikabu.ru/ajax/*?x0rVQ=$xmlhttprequest
+||pikabu.ru/ajax/*?l3Mrm=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -28628,6 +28628,7 @@ sportmail.ru##.layout_footer:style(margin-top: 20px !important)
 mail.ru##.mailbox__add-btn-logo
 mail.ru,sportmail.ru##.media-ui-slider-track div:first-child + div:not([style]):last-child:style(min-height: 0 !important; width: unset !important)
 sportmail.ru##.p-article-bookmakers ~ div a[href^="https://r.mail.ru/"]:style(pointer-events: none !important; text-decoration: none !important; color: inherit !important)
+finance.mail.ru,news.mail.ru,vfokuse.mail.ru##.p-catchup
 mail.ru##.ph-ext
 mail.ru##.ph-project__user-icon-mask:style(mask-image: inherit !important)
 mail.ru##.resplash-btn.noadsButton
@@ -29535,6 +29536,7 @@ gazeta.press,gazeta.ru,lenta.ru,secretmag.ru,wmj.ru##iframe[src^="https://vp.ram
 afisha.ru,autorambler.ru,championat.com,eda.ru,gazeta.press,gazeta.ru,lenta.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,rambler.ru,wmj.ru##+js(abort-current-inline-script, dispatchEvent, zoomdecorate)
 dtf.ru##+js(addEventListener-defuser, click, '', elements, a[href^="/"][data-router-link])
 e.mail.ru##+js(no-setTimeout-if, '()=>n()', 50)
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(prevent-setTimeout, _0x)
 e.mail.ru##+js(set-constant, Object.prototype.hasAdBlock, false)
 e.mail.ru#@#+js(set-constant, Object.prototype.hasAdBlock, null)
 searchfloor.*##+js(addEventListener-defuser, DOMContentLoaded, isDonatePage)
