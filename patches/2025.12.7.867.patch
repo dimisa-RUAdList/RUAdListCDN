@@ -1,8 +1,8 @@
-diff name:ruadlist lines:40 checksum:cc5ed3e8e2
+diff name:ruadlist lines:49 checksum:34a9624b48
 d4 2
 a5 2
-! Last modified: Tue, 09 Dec 2025 06:46:05 +0000
-! Diff-Path: ../patches/2025.12.9.406.patch#ruadlist
+! Last modified: Tue, 09 Dec 2025 11:27:43 +0000
+! Diff-Path: ../patches/2025.12.9.687.patch#ruadlist
 a7845 1
 /ad-rotator/ad-list.json
 d7978 1
@@ -13,12 +13,20 @@ a10407 1
 ||obfusgated.com/*/tools/ad-block-test$csp=connect-src 'self'; img-src 'self';
 a12348 1
 ||mvapspdmpg.com/veoveo-creative/
+d22265 1
+a22265 1
+||static.dzeninfra.ru/s3/zen-apps/*2/$script
+d22282 1
 d22292 1
 a22292 1
 ||pikabu.ru/ajax/*?l3Mrm=$xmlhttprequest
 a26923 2
 androidinsider.ru,appleinsider.ru##a[href*="://ali.ski/"]:style(pointer-events: none !important; color: inherit !important; border-bottom: inherit !important)
 androidinsider.ru,appleinsider.ru##a[href*="://aliexpress.ru/item/"]:style(pointer-events: none !important; color: inherit !important; border-bottom: inherit !important)
+a28415 3
+! исправление ошибок и косяков оригинальной вёрстки
+dzen.ru###SECOND_CHUNK_APP_CONTAINER_MicroRoot div[class^="dzen-layout--desktop-page-layout__left"]:style(height: calc(91vh - var(--desktopPageLayoutHeaderHeight)) !important)
+dzen.ru###SECOND_CHUNK_APP_CONTAINER_MicroRoot div[class^="dzen-layout--desktop-page-layout__root"]:style(min-height: 0 !important)
 d28599 1
 a28630 1
 finance.mail.ru,news.mail.ru,vfokuse.mail.ru##.p-catchup
@@ -27,6 +35,7 @@ cloud.mail.ru##div[class^="Public__folderContent"]:style(padding-right: 0 !impor
 d29040 1
 a29040 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /Adblock|AdGuard|tick/)
+d29104 1
 d29126 1
 a29126 1
 ~comments.rambler.ru,rambler.ru##+js(set-constant, top100Counter, false)

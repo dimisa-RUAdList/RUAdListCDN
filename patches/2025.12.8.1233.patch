@@ -1,10 +1,19 @@
-diff name:ruadlist lines:9 checksum:cc5ed3e8e2
+diff name:ruadlist lines:18 checksum:34a9624b48
 d4 2
 a5 2
-! Last modified: Tue, 09 Dec 2025 06:46:05 +0000
-! Diff-Path: ../patches/2025.12.9.406.patch#ruadlist
+! Last modified: Tue, 09 Dec 2025 11:27:43 +0000
+! Diff-Path: ../patches/2025.12.9.687.patch#ruadlist
+d22267 1
+a22267 1
+||static.dzeninfra.ru/s3/zen-apps/*2/$script
+d22284 1
+a28419 3
+! исправление ошибок и косяков оригинальной вёрстки
+dzen.ru###SECOND_CHUNK_APP_CONTAINER_MicroRoot div[class^="dzen-layout--desktop-page-layout__left"]:style(height: calc(91vh - var(--desktopPageLayoutHeaderHeight)) !important)
+dzen.ru###SECOND_CHUNK_APP_CONTAINER_MicroRoot div[class^="dzen-layout--desktop-page-layout__root"]:style(min-height: 0 !important)
 a28666 1
 cloud.mail.ru##div[class^="Public__folderContent"]:style(padding-right: 0 !important)
+d29108 1
 d29130 1
 a29130 1
 ~comments.rambler.ru,rambler.ru##+js(set-constant, top100Counter, false)

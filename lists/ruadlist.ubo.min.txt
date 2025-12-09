@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 09 Dec 2025 06:46:05 +0000
-! Diff-Path: ../patches/2025.12.9.406.patch#ruadlist
+! Last modified: Tue, 09 Dec 2025 11:27:43 +0000
+! Diff-Path: ../patches/2025.12.9.687.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22264,7 +22264,7 @@ ictv.ua,vikna.tv##div[id^="div-gpt-ad-"]
 ||dzen.ru/articles$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/news$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/pogoda/$script
-||static.dzeninfra.ru/s3/zen-apps/*/*/*/*/*/$script
+||static.dzeninfra.ru/s3/zen-apps/*2/$script
 $csp=script-src-attr 'none',domain=eurointegration.com.ua|pravda.com.ua|sportanalytic.com|notebookcheck-ru.com
 /^https?://24smi\.org/*[/]*[/][^\s]{8,}/$xmlhttprequest,domain=24smi.org
 ://mail.ru$csp=img-src 'self' https:
@@ -22281,7 +22281,6 @@ $csp=script-src-attr 'none',domain=eurointegration.com.ua|pravda.com.ua|sportana
 @@||s.zhctrack.net/z|$xmlhttprequest
 @@||s.zmctrack.net/z|$xmlhttprequest
 @@||s.znctrack.net/z|$xmlhttprequest
-@@||senoval-master.cdn.sports.ru/moneyball/s-presence/adfx.loader.bind.js|$script,domain=sports.ru
 @@||ssp.rambler.ru/capirs_async.js|$script,domain=www.championat.com|www.championat.ru
 @@||statika.mpsuadv.ru/scripts/*.js|$script,domain=trychatgpt.ru
 https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|livejournal.com|olegmakarenko.ru|periskop.su|shakko.ru|shiro-kino.ru|vadimrazumov.ru
@@ -28417,6 +28416,9 @@ dzen.ru##div[class*="dzen-desktop--top-sidebar-desktop-ad__root"]
 dzen.ru##div[id*="splashscreen"]
 dzen.ru##div[style*="important"] div[class*="__main"]
 dzen.ru##html[class*="morda"] div[class] > [id] > div[style*="%"]:style(padding-top: unset !important)
+! исправление ошибок и косяков оригинальной вёрстки
+dzen.ru###SECOND_CHUNK_APP_CONTAINER_MicroRoot div[class^="dzen-layout--desktop-page-layout__left"]:style(height: calc(91vh - var(--desktopPageLayoutHeaderHeight)) !important)
+dzen.ru###SECOND_CHUNK_APP_CONTAINER_MicroRoot div[class^="dzen-layout--desktop-page-layout__root"]:style(min-height: 0 !important)
 ! видео
 dzen.ru##div[class*="watch-page-content"] [aria-label] > div[id]
 ! статьи
@@ -29106,7 +29108,6 @@ dzen.ru,frontend.vh.yandex.ru,naydex.net,widgets.kinopoisk.ru,www.kinopoisk.ru,y
 3dnews.ru,vm.ru##+js(set-constant, Object.prototype.playVideo, noopFunc)
 letidor.ru,quto.ru,secretmag.ru,wmj.ru##+js(set-constant, Object.prototype.readMore, undefined)
 vk.com,vk.ru##+js(set-constant, PageBottomBanners, undefined)
-sports.ru##+js(set-constant, Sports.sPresenceLoaded, true)
 free-tor.info,korsars.info##+js(set-constant, String.fromCharCode, trueFunc)
 vk.com,vk.ru##+js(set-constant, Unauthorized2, undefined)
 hentai-share.one##+js(set-constant, adBlock, false)
