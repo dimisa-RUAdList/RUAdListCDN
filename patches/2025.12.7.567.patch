@@ -1,8 +1,8 @@
-diff name:ruadlist lines:75 checksum:df14751931
+diff name:ruadlist lines:80 checksum:3eb169e785
 d4 2
 a5 2
-! Last modified: Mon, 08 Dec 2025 20:33:32 +0000
-! Diff-Path: ../patches/2025.12.8.1233.patch#ruadlist
+! Last modified: Tue, 09 Dec 2025 02:16:57 +0000
+! Diff-Path: ../patches/2025.12.9.136.patch#ruadlist
 a7845 1
 /ad-rotator/ad-list.json
 d7978 1
@@ -60,11 +60,16 @@ androidinsider.ru,appleinsider.ru##a[href*="://aliexpress.ru/item/"]:style(point
 d28598 1
 a28629 1
 finance.mail.ru,news.mail.ru,vfokuse.mail.ru##.p-catchup
+a28661 1
+cloud.mail.ru##div[class^="Public__folderContent"]:style(padding-right: 0 !important)
 a28881 1
 allboxing.ru##+js(addEventListener-defuser, DOMContentLoaded, popup)
 d29038 1
 a29038 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /Adblock|AdGuard|tick/)
+d29124 1
+a29124 1
+~comments.rambler.ru,rambler.ru##+js(set-constant, top100Counter, false)
 a29348 1
 cloud.mail.ru###react-modals:has(a[href^="https://vk.cc/"])
 a29400 1

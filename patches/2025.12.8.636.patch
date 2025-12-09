@@ -1,8 +1,8 @@
-diff name:ruadlist lines:22 checksum:df14751931
+diff name:ruadlist lines:27 checksum:3eb169e785
 d4 2
 a5 2
-! Last modified: Mon, 08 Dec 2025 20:33:32 +0000
-! Diff-Path: ../patches/2025.12.8.1233.patch#ruadlist
+! Last modified: Tue, 09 Dec 2025 02:16:57 +0000
+! Diff-Path: ../patches/2025.12.9.136.patch#ruadlist
 a7845 1
 /ad-rotator/ad-list.json
 d7978 1
@@ -14,6 +14,11 @@ a26923 2
 androidinsider.ru,appleinsider.ru##a[href*="://ali.ski/"]:style(pointer-events: none !important; color: inherit !important; border-bottom: inherit !important)
 androidinsider.ru,appleinsider.ru##a[href*="://aliexpress.ru/item/"]:style(pointer-events: none !important; color: inherit !important; border-bottom: inherit !important)
 d28599 1
+a28663 1
+cloud.mail.ru##div[class^="Public__folderContent"]:style(padding-right: 0 !important)
+d29127 1
+a29127 1
+~comments.rambler.ru,rambler.ru##+js(set-constant, top100Counter, false)
 a29351 1
 cloud.mail.ru###react-modals:has(a[href^="https://vk.cc/"])
 a29403 1

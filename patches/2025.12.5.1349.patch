@@ -1,8 +1,8 @@
-diff name:ruadlist lines:115 checksum:df14751931
+diff name:ruadlist lines:120 checksum:3eb169e785
 d4 2
 a5 2
-! Last modified: Mon, 08 Dec 2025 20:33:32 +0000
-! Diff-Path: ../patches/2025.12.8.1233.patch#ruadlist
+! Last modified: Tue, 09 Dec 2025 02:16:57 +0000
+! Diff-Path: ../patches/2025.12.9.136.patch#ruadlist
 a1626 1
 ||dlfiles.ru^$third-party
 a5524 1
@@ -91,6 +91,8 @@ d28162 1
 d28596 1
 a28627 1
 finance.mail.ru,news.mail.ru,vfokuse.mail.ru##.p-catchup
+a28659 1
+cloud.mail.ru##div[class^="Public__folderContent"]:style(padding-right: 0 !important)
 d28771 1
 a28771 1
 3dnews.ru,avtovzglyad.ru,baby.ru,cont.ws,dni.ru,pikabu.ru,pogoda.onliner.by,russian7.ru,selflib.me,sm.news,tech.onliner.by,www.goha.ru##+js(abort-on-property-read, Ya)
@@ -104,6 +106,9 @@ game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorka
 d29042 1
 a29102 1
 sports.ru##+js(set-constant, Sports.sPresenceLoaded, true)
+d29124 1
+a29124 1
+~comments.rambler.ru,rambler.ru##+js(set-constant, top100Counter, false)
 a29348 1
 cloud.mail.ru###react-modals:has(a[href^="https://vk.cc/"])
 a29400 1
