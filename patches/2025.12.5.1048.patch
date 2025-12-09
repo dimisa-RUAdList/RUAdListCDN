@@ -1,14 +1,15 @@
-diff name:ruadlist lines:127 checksum:34a9624b48
+diff name:ruadlist lines:146 checksum:2bd093a5e9
 d4 2
 a5 2
-! Last modified: Tue, 09 Dec 2025 11:27:43 +0000
-! Diff-Path: ../patches/2025.12.9.687.patch#ruadlist
+! Last modified: Tue, 09 Dec 2025 16:38:05 +0000
+! Diff-Path: ../patches/2025.12.9.998.patch#ruadlist
 a1626 1
 ||dlfiles.ru^$third-party
 a5524 1
 ||serv96.top^$third-party
-a7843 1
+a7843 2
 /ad-rotator/ad-list.json
+/ad-rotator/vast.xml
 d7976 1
 a8510 1
 ##.stream-item-widget
@@ -82,9 +83,25 @@ a22262 1
 d22288 1
 a22288 1
 ||pikabu.ru/ajax/*?l3Mrm=$xmlhttprequest
+d22653 1
+a22653 1
+dzen.ru##[id*="5410"]
+a22814 1
+||storage.mds.yandex.net/get-canvas-html5/$domain=dzen.ru
+a23094 1
+gazeta.ru###_id_sber_auth
+a23171 1
+gazeta.press,gazeta.ru##a[href*="/twz/"]
 a23450 1
 cyber.sports.ru##div[class^="desktop-teaser_"] a[href*="://sirena.world/"]
 d23455 1
+a23692 1
+dzen.ru###branded-banner
+a23700 1
+dzen.ru##[data-testid="right-ad-block"]
+a23709 1
+dzen.ru##div[class^="dzen-desktop--top-app__dummy-"]:empty
+d23722 48
 d26570 1
 d26572 1
 a26572 1
@@ -93,10 +110,12 @@ a26920 2
 androidinsider.ru,appleinsider.ru##a[href*="://ali.ski/"]:style(pointer-events: none !important; color: inherit !important; border-bottom: inherit !important)
 androidinsider.ru,appleinsider.ru##a[href*="://aliexpress.ru/item/"]:style(pointer-events: none !important; color: inherit !important; border-bottom: inherit !important)
 d28163 1
+a28409 1
+dzen.ru##div[class*="dzen-desktop--feed-one-column-right-panel__ad"]
 a28413 3
 ! исправление ошибок и косяков оригинальной вёрстки
 dzen.ru###SECOND_CHUNK_APP_CONTAINER_MicroRoot div[class^="dzen-layout--desktop-page-layout__left"]:style(height: calc(91vh - var(--desktopPageLayoutHeaderHeight)) !important)
-dzen.ru###SECOND_CHUNK_APP_CONTAINER_MicroRoot div[class^="dzen-layout--desktop-page-layout__root"]:style(min-height: 0 !important)
+dzen.ru###SECOND_CHUNK_APP_CONTAINER_MicroRoot div[class^="dzen-layout--desktop-page-layout__root"]:style(min-height: 0 !important; --desktopPageLayoutCenterPadding: inherit !important)
 d28597 1
 a28628 1
 finance.mail.ru,news.mail.ru,vfokuse.mail.ru##.p-catchup
