@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 10 Dec 2025 07:31:26 +0000
-! Diff-Path: ../patches/2025.12.10.451.patch#ruadlist
+! Last modified: Wed, 10 Dec 2025 13:03:20 +0000
+! Diff-Path: ../patches/2025.12.10.783.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10127,6 +10127,7 @@ esetnod32.ru##.b-mdl
 hetaqrqire.ru##.b-modal
 tvc.ru##.b-overlay-soc
 pdalife.ru##.b-popup
+ivanovonews.ru##.bottom-left-modal
 vashgorod.ru##.c-popup
 games-two.su##.ckf-box
 riafan.ru##.cookie-agreement-wrapper
@@ -10171,6 +10172,7 @@ videokaif.ru##.onp-sl-overlap-locker-box
 winstation.ru##.overlay-wrapper.thanks
 alpindustria.ru##.personal > .overlay
 belsat.eu,best-home-ideas.com,bizua.org,growhow.in.ua,hariola.com,newsyou.info,spiker.club##.popmake-overlay
+ural56.ru##.popup-a
 gb.ru##.popup-wheel-overlay
 alpindustria.ru##.popup.subscribe_panel
 golbis.com##.post-top-meta[style*="fixed;"]
@@ -13417,6 +13419,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||ups1*.ru^$script
 ||uptracker.ru/images/casino/
 ||upweek.ru/wp-content/banners/
+||ura.news/*_rsc=$xmlhttprequest
 ||uralweb.ru/js/mft/capCode/
 ||uralweb.ru/promo/
 ||urbc.ru/uploads/*.swf
@@ -16736,7 +16739,7 @@ xvatit.com##.header2 > .header
 obozrevatel.com##.headerBiding
 city-n.ru##.header__adv
 1tv.ru##.header__advertising-block
-024.by,kp.ua,loveradio.ru##.header__banner
+024.by,kp.ua,loveradio.ru,ural56.ru##.header__banner
 time-to-read.ru##.header__banner__cont
 chelny-izvest.ru##.header__block > .header__block-title
 vse-pro-sport.com.ua,vseprosport.by,vseprosport.kz,vseprosport.ru##.header__bonus
@@ -17155,7 +17158,6 @@ vbryanske.com##.main_content > noindex
 uvelir.info##.main_frame > div[style="float:left; width:245px; height:130px;"]
 fbc.biz.ua##.main_header > .full_width a[target="_blank"] > img
 job.ru,myjob.by##.main_logo_carusel
-ural56.ru##.main_news_right_block_advert
 partnerkin.com##.main_top.article_ab_container
 cont.ws##.main_top_ads
 kinoafisha.ua##.main_top_line
@@ -18190,6 +18192,7 @@ prostopleer.com##.sidebar-a330-content
 pikabu.ru##.sidebar-banner-300x250
 glavpost.com##.sidebar-banner-block
 diletant.media##.sidebar-banner-wrap
+ural56.ru##.sidebar-banner__item
 theuk.one#?#.sidebar-block:-abp-has(> .sticky .comm-blog)
 pikabu.ru##.sidebar-block_half
 pikabu.ru##.sidebar-block_placeholder
@@ -18910,7 +18913,6 @@ agrognom.ru,apral.ru,kvmarvel.ru,samelectric.ru##.widget_zen_widget
 burninghut.ru##.widgets-area--above-comments
 inetsovety.ru##.wiged.widget_text
 enovosty.com##.wiget.ukr_links
-ural56.ru##.wikimart
 forum.taxiservice.com.ua#?#.windowbg:-abp-has(> .poster > h4:-abp-contains(Форум Такси Сервис))
 lookatme.ru##.with-ad
 thelastgame.ru##.wogame55
@@ -20214,7 +20216,7 @@ www.kinopoisk.ru##a[href^="https://kino.tricolor.tv/watch/"]
 ndscalc.ru##a[href^="https://kontur.ru/"]
 itcrumbs.ru##a[href^="https://kwork.ru"]
 poebuilds.ru##a[href^="https://lucky-boys.ru/"]
-burninghut.ru,cq.ru,lifehacker.ru##a[href^="https://market.yandex.ru/"]
+burninghut.ru,cq.ru,lifehacker.ru,mt.today##a[href^="https://market.yandex.ru/"]
 medved.us##a[href^="https://my.alfa-forex.ru/ru/registration/"]
 nashvancouver.com##a[href^="https://nashvancouver.com/linkout/"] > img[alt="tree"]
 vm.ru##a[href^="https://news.yandex.ru/index.html?from=rubric"]
@@ -20912,7 +20914,6 @@ autogrodno.by##div[class^="bannergroup"]
 kino.vl.ru##div[class^="banners"]
 academ.info##div[class^="bannerzone"]
 bloomchain.ru##div[class^="bc-advertising"]
-ural56.ru##div[class^="beono-banner"]
 rating-avto.ru##div[class^="best-prices"]
 fight.ru##div[class^="bet-widget-"]
 vokrug.tv##div[class^="block-"][class*="0"]
@@ -23716,6 +23717,7 @@ dzen.ru##a[href^="https://trk.mail.ru/"]
 dzen.ru#?#article:-abp-has(> div[data-ad-type])
 dzen.ru#?#div:-abp-has(> .adv-skeleton___main)
 dzen.ru##div[class*="-top-ad-"]
+dzen.ru##div[class*="_isRtb-"]
 dzen.ru##div[class*="_rightAdWrapper"]
 dzen.ru##div[class*="main-page-top-of-the-day-ad"]
 dzen.ru##div[class*="tsar__container"]
@@ -27014,7 +27016,7 @@ www.bigmir.net##body > .page:style(padding-top: 144px !important)
 ! ---
 bin.ua##div[style="position:absolute;left:0px;top:0px;width:240px;margin-top:660px"]:style(position: relative !important; margin-top: auto !important)
 ! ---
-bit.ua,gidonline.fun,greenpost.ua,kinoboom.su,kinogo-720.net,sportboom.info,urologypro.ru,virusinfo.info##body:not(#id):style(margin-top: 0 !important)
+bit.ua,gidonline.fun,greenpost.ua,kinoboom.su,kinogo-720.net,mt.today,sportboom.info,urologypro.ru,virusinfo.info##body:not(#id):style(margin-top: 0 !important)
 ! ---
 blisch.by###page:style(padding-top: 0 !important)
 ! ---
@@ -28987,6 +28989,7 @@ sm.news##+js(no-xhr-if, method:GET)
 dzen.ru,frontend.vh.yandex.ru,naydex.net,widgets.kinopoisk.ru,www.kinopoisk.ru,yastatic.net##+js(no-xhr-if, strm.yandex.ru/get/)
 otzovik.com##+js(noeval-if, ShadowRoot)
 kvadratmetr.uz,oligarx.uz,tehnar.net.ua##+js(noeval-if, adsBlocked)
+ura.news##+js(prevent-fetch, _rsc=)
 i-ua.tv##+js(remove-attr, autoplay, [data-video-player="small"], stay)
 cnews.ru,gfycat.com,inter.ua,obozrevatel.com,platformcraft.ru,protv.md,rg.ru,rusvesna.su,tv8.md,xsport.ua##+js(remove-attr, autoplay, video, stay)
 u24.ua##+js(remove-attr, autoplay|loop, .watch-live__link > video, stay)
