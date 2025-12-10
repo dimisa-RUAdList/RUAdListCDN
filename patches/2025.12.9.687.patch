@@ -1,8 +1,8 @@
-diff name:ruadlist lines:52 checksum:e05f79cb56
+diff name:ruadlist lines:59 checksum:4862d3a37a
 d4 2
 a5 2
-! Last modified: Wed, 10 Dec 2025 13:03:20 +0000
-! Diff-Path: ../patches/2025.12.10.783.patch#ruadlist
+! Last modified: Wed, 10 Dec 2025 17:34:03 +0000
+! Diff-Path: ../patches/2025.12.10.1054.patch#ruadlist
 a7846 1
 /ad-rotator/vast.xml
 a10128 1
@@ -21,7 +21,12 @@ d18912 1
 d20216 1
 a20216 1
 burninghut.ru,cq.ru,lifehacker.ru,mt.today##a[href^="https://market.yandex.ru/"]
+d20477 1
+a20477 1
+ura.news##body > div[class]:not([class*=" "]):not([style])
 d20914 1
+a22015 1
+rg.ru##section[class^="ReadAlso_root"]
 d22658 1
 a22658 1
 dzen.ru##[id*="5410"]
@@ -29,8 +34,10 @@ a22819 1
 ||storage.mds.yandex.net/get-canvas-html5/$domain=dzen.ru
 a23099 1
 gazeta.ru###_id_sber_auth
+a23129 1
+lenta.ru##.header__my
 a23176 1
-gazeta.press,gazeta.ru##a[href*="/twz/"]
+gazeta.press,gazeta.ru,lenta.ru##a[href*="/twz/"]
 a23697 1
 dzen.ru###branded-banner
 a23705 2

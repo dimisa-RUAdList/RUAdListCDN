@@ -1,8 +1,8 @@
-diff name:ruadlist lines:132 checksum:e05f79cb56
+diff name:ruadlist lines:139 checksum:4862d3a37a
 d4 2
 a5 2
-! Last modified: Wed, 10 Dec 2025 13:03:20 +0000
-! Diff-Path: ../patches/2025.12.10.783.patch#ruadlist
+! Last modified: Wed, 10 Dec 2025 17:34:03 +0000
+! Diff-Path: ../patches/2025.12.10.1054.patch#ruadlist
 a7845 2
 /ad-rotator/ad-list.json
 /ad-rotator/vast.xml
@@ -62,12 +62,17 @@ d20213 1
 a20213 1
 burninghut.ru,cq.ru,lifehacker.ru,mt.today##a[href^="https://market.yandex.ru/"]
 d20352 1
+d20475 1
+a20475 1
+ura.news##body > div[class]:not([class*=" "]):not([style])
 d20898 1
 a20898 1
 101.ru,1plus1.ua,46tv.ru,999.md,alau.kz,aldebaran.ru,asiarussia.ru,bezparazita.ru,botinok.porn,bountymax.ru,buzulukday.ru,calend.ru,chytomo.com,citydog.by,clubvolvo.ru,crazymailing.com,dnepr.info,dom2stars.ru,dota2.ru,gmod-fan.ru,gorod.dp.ua,gorod48.ru,gtavicecity.ru,hochu.ua,igry-online.net,infobank.by,internetua.com,kamchatinfo.com,kerchinfo.com,khersonline.net,kino-kingdom.com,klops.ru,kluch.media,kvnews.ru,kyiv-independent.com,lipetskmedia.ru,manga24.ru,mashintop.ru,mediaryazan.ru,menquestions.ru,mgorod.kz,mobile-review.com,modernrock.ru,moya-semya.ru,musicforums.ru,nlo-mir.ru,nn.ru,novostroev.ru,nsday.ru,ntr-24.ru,nv.ua,nversia.ru,onlineradiobox.com,orenday.ru,perevolockday.ru,pln-pskov.ru,ponedelnik.info,postovoy.net,ppt.ru,psm7.com,rtraveler.ru,saltday.ru,sevkavportal.ru,sorochinskday.ru,sovets.net,sovets24.ru,spark.ru,studfile.net,studfiles.net,subscribe.ru,telegraf.in.ua,the-village-kz.com,the-village.me,the-village.ru,tltonline.ru,topvideo.tj,torrents.in.ua,trisosny.ru,trymobile.ru,turkmenportal.com,tvzvezda.ru,ukrinform.ru,vdvsn.ru,village.com.ua,vklybe.tv,vorle.ru,vse.sale,wheel-news.com,wincore.ru,womanhit.ru,worldofmods.ru,xn----7sbabrtfclecozdeg8b6a.xn--p1ai,yarik-sat.com,yarnews.net,zerno-ua.com,zhitomir.info,zn.ua,zoon.ru##div[class^="banner"]
 d20912 1
 a20972 1
 chasdiy.org##div[class^="fanner"]
+a22012 1
+rg.ru##section[class^="ReadAlso_root"]
 d22264 1
 a22264 1
 ||static.dzeninfra.ru/s3/zen-apps/*2/$script
@@ -82,8 +87,10 @@ a22817 1
 ||storage.mds.yandex.net/get-canvas-html5/$domain=dzen.ru
 a23097 1
 gazeta.ru###_id_sber_auth
+a23127 1
+lenta.ru##.header__my
 a23174 1
-gazeta.press,gazeta.ru##a[href*="/twz/"]
+gazeta.press,gazeta.ru,lenta.ru##a[href*="/twz/"]
 a23695 1
 dzen.ru###branded-banner
 a23703 2
