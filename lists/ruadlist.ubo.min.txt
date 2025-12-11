@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 11 Dec 2025 08:41:18 +0000
-! Diff-Path: ../patches/2025.12.11.521.patch#ruadlist
+! Last modified: Thu, 11 Dec 2025 13:04:15 +0000
+! Diff-Path: ../patches/2025.12.11.784.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -28907,7 +28907,6 @@ wotspeak.org##+js(href-sanitizer, a[href^="/engine/dwn"], ?xf)
 fishki.net##+js(href-sanitizer, a[href^="/go/?url=https"], ?url)
 rambler.ru##+js(href-sanitizer, a[href^="http:"][aria-label^="Перейти на страницу источника"], +https)
 e.mail.ru,mail.rambler.ru,mail.yandex.ru,octavius.mail.ru##+js(href-sanitizer, a[href^="https://click.email4customers.com/Link?"], ?args)
-rsload.net##+js(href-sanitizer, a[href^="https://fixti.ru/download.php?files="], ?files)
 vc.ru##+js(href-sanitizer, a[href^="https://go.2038.pro/"][href*="?dl="], ?dl)
 pikabu.ru##+js(href-sanitizer, a[href^="https://pikabu.ru/"][href*="?u=http"], ?u)
 e.mail.ru,mail.rambler.ru,mail.yandex.ru,octavius.mail.ru##+js(href-sanitizer, a[href^="https://robot.mos.ru/"], ?url)
