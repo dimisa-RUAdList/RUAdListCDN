@@ -1,8 +1,8 @@
-diff name:ruadlist lines:66 checksum:67d6711cc5
+diff name:ruadlist lines:77 checksum:5372b31328
 d4 2
 a5 2
-! Last modified: Fri, 12 Dec 2025 09:34:40 +0000
-! Diff-Path: ../patches/2025.12.12.574.patch#ruadlist
+! Last modified: Fri, 12 Dec 2025 14:28:46 +0000
+! Diff-Path: ../patches/2025.12.12.868.patch#ruadlist
 a7846 1
 /ad-rotator/vast.xml
 a10128 1
@@ -42,6 +42,8 @@ a23130 1
 lenta.ru##.header__my
 a23177 1
 gazeta.press,gazeta.ru,lenta.ru##a[href*="/twz/"]
+a23198 1
+nova.rambler.ru#?#div[class*="__sticky--"] > div:-abp-has(> [id^="adfox-"])
 a23698 1
 dzen.ru###branded-banner
 a23706 2
@@ -65,3 +67,12 @@ d28943 1
 a29026 1
 ura.news##+js(prevent-fetch, _rsc=)
 d29109 1
+a29457 1
+vk.com/video_ext.php##+js(addEventListener-defuser, message, /addExceptionTypeValue|isValidUrl/)
+a29458 1
+vk.ru/video_ext.php##+js(addEventListener-defuser, message, /addExceptionTypeValue|isValidUrl/)
+a29459 1
+vkvideo.ru/video_ext.php##+js(addEventListener-defuser, message, /addExceptionTypeValue|isValidUrl/)
+d29462 1
+d29464 1
+d29466 1
