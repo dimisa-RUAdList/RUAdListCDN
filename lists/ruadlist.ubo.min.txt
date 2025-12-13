@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 13 Dec 2025 15:27:37 +0000
-! Diff-Path: ../patches/2025.12.13.927.patch#ruadlist
+! Last modified: Sat, 13 Dec 2025 20:30:11 +0000
+! Diff-Path: ../patches/2025.12.13.1230.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -20238,6 +20238,7 @@ ternopillive.com##a[href^="https://www.facebook.com/republicplatte/"]
 www.kinopoisk.ru##a[href^="https://www.ivi.ru/watch/"]
 design-for.net##a[href^="https://www.reg.ru/"]
 ebay-russia.ru##a[href^="https://www.shipito.com/"]
+www.kinopoisk.ru##a[href^="https://www.vtb.ru/personal/"]
 imgmoney.ru##a[href^="https://www.youtube.com/"] img
 semestr.online,semestr.ru##a[href^="https://zakaz.semestr.ru/"]
 wmmail.ru##a[href^="index.php?cf=html-tbanner&bid="]
@@ -29006,8 +29007,8 @@ motorpage.ru##+js(remove-class, noscroll, body)
 online-fix.me##+js(remove-node-text, #text, РЕКЛАМНЫЙ БЛОК:)
 farposst.ru##+js(remove-node-text, #text, Реклама)
 filmitorrent.net,utorr.cc##+js(remove-node-text, #text, Реклама:)
-game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, div, 'Adblock,')
 ya.ru##+js(remove-node-text, div, 'ad-mark__b-unit-wrapper')
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, div, /Adblock|AdGuard/)
 nullcms.ru##+js(remove-node-text, script, 'decodeURIComponent(escape')
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /Adblock|AdGuard|tick/)
 ritsatv.ru##+js(remove-node-text, script, /adBlock|adblock-warning/)

@@ -1,8 +1,8 @@
-diff name:ruadlist lines:54 checksum:ae103bcf8d
+diff name:ruadlist lines:59 checksum:3e200e0fa9
 d4 2
 a5 2
-! Last modified: Sat, 13 Dec 2025 15:27:37 +0000
-! Diff-Path: ../patches/2025.12.13.927.patch#ruadlist
+! Last modified: Sat, 13 Dec 2025 20:30:11 +0000
+! Diff-Path: ../patches/2025.12.13.1230.patch#ruadlist
 a10129 1
 ivanovonews.ru##.bottom-left-modal
 a10173 1
@@ -23,6 +23,8 @@ d18913 1
 d20217 1
 a20217 1
 burninghut.ru,cq.ru,lifehacker.ru,mt.today##a[href^="https://market.yandex.ru/"]
+a20239 1
+www.kinopoisk.ru##a[href^="https://www.vtb.ru/personal/"]
 d20478 1
 a20478 1
 ura.news##body > div[class]:not([class*=" "]):not([style])
@@ -44,6 +46,9 @@ bit.ua,gidonline.fun,greenpost.ua,kinoboom.su,kinogo-720.net,mt.today,sportboom.
 d28906 1
 a28989 1
 ura.news##+js(prevent-fetch, _rsc=)
+d29005 1
+a29006 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, div, /Adblock|AdGuard/)
 a29419 1
 vk.com/video_ext.php##+js(addEventListener-defuser, message, /addExceptionTypeValue|isValidUrl/)
 a29420 1
