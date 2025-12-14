@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 14 Dec 2025 06:41:50 +0000
-! Diff-Path: ../patches/2025.12.14.401.patch#ruadlist
+! Last modified: Sun, 14 Dec 2025 11:23:59 +0000
+! Diff-Path: ../patches/2025.12.14.683.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -9873,6 +9873,7 @@ $third-party,popup,domain=2ip.ru
 ||getdstudio.cab^$popup
 ||getdstudio.com^$popup
 ||getdstudio.dev^$popup
+||getsfiler.ru^$popup
 ||glance-news.com^$popup
 ||globalstylis.ru^$popup
 ||go2lead.net^$popup
@@ -12356,7 +12357,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||my-cinema.net/branding/
 ||my.mosenergosbyt.ru/file/id_content:$image
 ||mydiv.net/tim/newold
-||myfootball.life/*/betking/$~media
+||myfootball.*/betking/$~media
 ||mymedicalportal.net^$xmlhttprequest
 ||mynizhyn.com/image/banners/
 ||myparcels.ru/ajax/tz.php
@@ -13735,7 +13736,8 @@ igdz1.ru^$script,domain=igdz.ru
 ||zzsites.ru^$script
 ! Rewrite rules
 !#if ext_abp
-||myfootball.life/*/betking/$media,rewrite=abp-resource:blank-mp4,domain=myfootball.life
+||myfootball.pw/*/betking/$media,rewrite=abp-resource:blank-mp4,domain=myfootball.pw
+||myfootball.ws/*/betking/$media,rewrite=abp-resource:blank-mp4,domain=myfootball.ws
 ||s-cdn.org/promo/*.mp4$rewrite=abp-resource:blank-mp4,domain=player-films.online
 ||s-club.tv/promo/*.mp4$rewrite=abp-resource:blank-mp4,domain=player-films.online
 ||ts.kg/olol*.mp4$rewrite=abp-resource:blank-mp4,domain=ts.kg
@@ -16369,6 +16371,7 @@ griffiny.ru##.dopoln
 1progs.me,1progs.ru,notorgames.net##.down
 gamestracker.org##.down-mg
 slo.ru##.download-box > div:not([class="download"])
+igrovuha.org##.download-btn
 rl-team.net##.download_blue_yellow
 terabit.biz##.download_inner
 hostmp3.ru##.download_method > .method_box ~ *
@@ -16622,7 +16625,7 @@ legkopolezno.ru##.gen-banner
 semerkainfo.ru##.gensmall > .block_links
 iz.ru#?#.get_news_link__bottom__item:-abp-has(> a[href*="yandex."])
 iz.ru##.get_yandex_subscription_links
-myfootball.life##.gg-tra-ranking
+myfootball.pw,myfootball.ws##.gg-tra-ranking
 dota2.ru##.ggbetgift
 brotorrent.net##.giBlock
 dltv.org##.gift
@@ -18185,7 +18188,7 @@ vakhta-job.ru##.sidebar > div[style]
 animang.one,zdravotvet.ru##.sidebar > noindex
 24smi.org##.sidebar a[href][target="_blank"] > img
 animedub.ru#?#.sidebar div:-abp-has([data-relap-id])
-myfootball.life#?#.sidebar--right > .block_full:-abp-has(.gg-tra-ranking)
+myfootball.pw,myfootball.ws#?#.sidebar--right > .block_full:-abp-has(.gg-tra-ranking)
 prostopleer.com##.sidebar-a330-content
 101poisk.ru,acmc.ua,pbembed.me,pornobomba.vip,securitylab.ru,study.ru,vostok.fm##.sidebar-banner
 pikabu.ru##.sidebar-banner-300x250
@@ -18572,6 +18575,7 @@ russia-tv.online##.to-brand-danger
 donday-aksay.ru,donday-novocherkassk.ru,donday-shakhty.ru,donday-taganrog.ru,donday.ru,volga-day.ru##.tobbanner
 kursk-izvestia.ru##.today_cbr
 lovitut.ru##.toneBlock
+igrovuha.org##.tool
 urod.ru##.toolbarContent > .toolbarLink
 khersondaily.com##.top--banner
 igroutka.ru##.top-adapt
@@ -20906,7 +20910,7 @@ kaktutzhit.by##div[class^="banner"][class$="rightSide"] > .banner:nth-of-type(1)
 cisoclub.ru##div[class^="banner"][class*="LENTA"]
 meteo.ua##div[class^="banner-"]
 znanierussia.ru##div[class^="banner-under-"]
-irr.by,myfootball.life,securitylab.ru##div[class^="banner_"]
+irr.by,myfootball.pw,myfootball.ws,securitylab.ru##div[class^="banner_"]
 caravan.su##div[class^="banner_header"]
 mnmag.ru##div[class^="banner_right"]
 fox-online.tv##div[class^="banner_sape"]
@@ -21368,7 +21372,7 @@ fotostrana.ru##div[id^="king-rightplace"]
 korabel.ru##div[id^="kodirect_"]
 anekdot.ru##div[id^="krt-"]
 goroday.ru##div[id^="lngtblck_"]
-myfootball.life##div[id^="main-"][id*="-ranking"]
+myfootball.pw,myfootball.ws##div[id^="main-"][id*="-ranking"]
 great-tv.ru,vserialy.com,vserialy.fun##div[id^="main_banner"]
 hype.tech,ixbt.com,rbkgames.com,vyborok.com##div[id^="marketWidget"]
 nanoreview.net##div[id^="mawid"]
@@ -28995,7 +28999,7 @@ ura.news##+js(prevent-fetch, _rsc=)
 i-ua.tv##+js(remove-attr, autoplay, [data-video-player="small"], stay)
 cnews.ru,gfycat.com,inter.ua,obozrevatel.com,platformcraft.ru,protv.md,rg.ru,rusvesna.su,tv8.md,xsport.ua##+js(remove-attr, autoplay, video, stay)
 u24.ua##+js(remove-attr, autoplay|loop, .watch-live__link > video, stay)
-afisha.ru,film.ru,filmpro.ru,thelastupd.org##+js(remove-attr, autoplay|loop, video, stay)
+afisha.ru,film.ru,filmpro.ru,thelastdb.games,thelastupd.org##+js(remove-attr, autoplay|loop, video, stay)
 lenta.ru##+js(remove-attr, class, .js-video-box__container)
 svoboda.org##+js(remove-attr, data-autoplay, video)
 myshared.ru##+js(remove-attr, disabled, .uk-modal-footer > button)
@@ -29295,7 +29299,7 @@ ya.ru,yandex.*##.simple-popup__overlay:remove()
 ||m.mixadvert.com/show/$important,script
 ||mc.admetrica.ru/sync_cookie_image_check$image,redirect=1x1-transparent.gif
 ||my.mail.ru/video/embed/*autoplay=1$subdocument,removeparam=autoplay
-||myfootball.life/*/betking/$media,redirect=noopmp4-1s,domain=myfootball.life
+||myfootball.*/betking/$media,redirect=noopmp4-1s
 ||partnerprofitboost.com^$popunder
 ||pronpic.org^$subdocument,redirect=noopframe,domain=pronpic.org
 ||pronpic.org^$third-party,badfilter
