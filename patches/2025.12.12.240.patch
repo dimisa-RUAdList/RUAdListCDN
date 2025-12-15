@@ -1,8 +1,8 @@
-diff name:ruadlist lines:57 checksum:f482df0b32
+diff name:ruadlist lines:72 checksum:df33620103
 d4 2
 a5 2
-! Last modified: Mon, 15 Dec 2025 07:33:08 +0000
-! Diff-Path: ../patches/2025.12.15.453.patch#ruadlist
+! Last modified: Mon, 15 Dec 2025 13:05:04 +0000
+! Diff-Path: ../patches/2025.12.15.785.patch#ruadlist
 a9875 1
 ||getsfiler.ru^$popup
 d12359 1
@@ -36,17 +36,32 @@ irr.by,myfootball.pw,myfootball.ws,securitylab.ru##div[class^="banner_"]
 d21371 1
 a21371 1
 myfootball.pw,myfootball.ws##div[id^="main-"][id*="-ranking"]
+d22296 1
+a22296 1
+||pikabu.ru/ajax/*?qnh5G=$xmlhttprequest
+a22323 2
+tapochek.*##body:has(#register_link) > canvas
+tapochek.*##body:has(#register_link) > canvas {remove:true;}
 a23204 1
 nova.rambler.ru#?#div[class*="__sticky--"] > div:-abp-has(> [id^="adfox-"])
+d28661 1
+d28803 1
 d28997 1
 a28997 1
 afisha.ru,film.ru,filmpro.ru,thelastdb.games,thelastupd.org##+js(remove-attr, autoplay|loop, video, stay)
 d29009 1
 a29010 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, div, /Adblock|AdGuard/)
+a29226 2
+tapochek.net##body:has(#register_link) > canvas
+tapochek.net##body:has(#register_link) > canvas:remove()
 d29297 1
 a29297 1
 ||myfootball.*/betking/$media,redirect=noopmp4-1s
+d29346 2
+a29347 2
+mail.ru##.tv-widget [class^="vk-video"]
+mail.ru##.tv-widget [class^="vk-video"]:remove()
 a29423 1
 vk.com/video_ext.php##+js(addEventListener-defuser, message, /addExceptionTypeValue|isValidUrl/)
 a29424 1
