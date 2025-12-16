@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 16 Dec 2025 13:46:28 +0000
-! Diff-Path: ../patches/2025.12.16.826.patch#ruadlist
+! Last modified: Tue, 16 Dec 2025 18:46:01 +0000
+! Diff-Path: ../patches/2025.12.16.1126.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10953,6 +10953,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||adultphotosets.net^$script
 ||adverman.*/banners/
 ||advis.ru/upload/iblock/$image
+||advisor.api.2gis.
 ||afanasy.biz/banner/
 ||afisha.tut.by/css/ext/
 ||agentp.com.ua/banner
@@ -26474,6 +26475,7 @@ gbsmp.ru#@#img[width="728"][height="90"]
 @@||drahelas.ru/r/www/delivery/spc.php?zones=$script,domain=drahelas.ru
 @@||drahelas.ru/r/www/delivery/spcjs.php?id=$script,domain=drahelas.ru
 @@||easymc.io/ads/px.gif?ch=$image,domain=easymc.io
+@@||files.bidmatic.io/microplayer/configs/*.jsonp|$script,domain=play.tavr.media
 @@||forum.ixbt.com/js/fotkidepo/baners//*.js|$script,domain=forum.ixbt.com
 @@||fosshub.com/media/js/adblock.js|$domain=fosshub.com
 @@||fwdcdn.com^*/advertisment.js|$script
@@ -26523,6 +26525,7 @@ gbsmp.ru#@#img[width="728"][height="90"]
 @@||pkfnpo.ru^$image,domain=pkfnpo.ru
 @@||player.3tv.im^$script,stylesheet,domain=player.3tv.im
 @@||player.adtelligent.com/static/player.$script,stylesheet,domain=ictv.ua|inter.ua|k1.ua|novy.tv|ntn.ua|player.starlight.digital|stb.ua|teleportal.ua|xsport.ua
+@@||player.bidmatic.io/microplayer/*/stream.es.js|$script,domain=play.tavr.media
 @@||print-post.com^*.js$script,domain=print-post.com
 @@||pvpru.com/css/banners/300$domain=pvpru.com
 @@||questtime.net/js/adverts.js$script,domain=questtime.net
@@ -28174,7 +28177,7 @@ surl.li###redirect-button > #timer
 surl.li##.redirect-button:style(pointer-events: auto !important; opacity: 1 !important)
 ! ---
 tapochek.net##.lenta_scrollable.poster:style(border: none !important)
-tapochek.net##td.tRight[width="50%"]:style(color: #f6f6f6 !important)
+tapochek.net##td.tRight[width="50%"]:style(color: transparent !important)
 ! исправление ошибок и косяков оригинальной вёрстки
 tapochek.net##.download-torrent-btn:style(font-size: 17px !important)
 tapochek.net##.lenta-tooltips-container > .tooltip-container:style(top: 43px !important; position: fixed !important)
@@ -28290,6 +28293,12 @@ videoredaktor.ru##div[style^="min-height: 100vh;"]:style(min-height: 0 !importan
 ! VIQEO, обще стили для плеера
 kp.kg,kp.kz,kp.md,media,ru,russian.rt.com##.buttonContainer[data-name="play"][style*="left: 10px;"]:style(opacity: unset !important)
 cdn.viqeo.tv##[data-video_status="paused"] .buttonContainer[data-name="play"][style*="left: 10px;"]:style(opacity: unset !important)
+! Фикс для VK-плеера во фреймах VIQEO
+kp.kg,kp.kz,kp.md,media,ru,russian.rt.com##[data-video_status][data-adapter="vk"] .previewContainer:style(z-index: unset !important)
+kp.kg,kp.kz,kp.md,media,ru,russian.rt.com##[data-video_status][data-adapter="vk"] .splash-icon_animation_container:style(opacity: unset !important)
+kp.kg,kp.kz,kp.md,media,ru,russian.rt.com##[data-video_status][data-adapter="vk"] .splash-pause
+kp.kg,kp.kz,kp.md,media,ru,russian.rt.com##[data-video_status][data-adapter="vk"] .splashContainer:style(display: unset !important)
+kp.kg,kp.kz,kp.md,media,ru,russian.rt.com##[data-video_status][data-adapter="vk"]:not([data-video_status="initial"]) .splash-play
 ! ---
 virtualbrest.ru##body > div[id][class] > .header > div > div:not([class^="header"]) > *
 virtualbrest.ru##body > div[id][class] > .header ~ div[class] > ul > li[class]:not(.ttyyuu)
@@ -29432,7 +29441,7 @@ tass.ru##[class^="LoopChannelPlayer_wrapper_"] [class^="Centered_box_"]
 ! uTarget Ads
 3dn.ru,a-point.info,addfiles.ru,akkordam.ru,all-for-kompa.ru,asia-tv.su,at.ua,autosimgames.ru,clan.su,db-energo.ru,devdrivers.ru,do.am,elegos.ru,elektronika56.ru,elektrosat.ru,fon-ki.com,for-gsm.ru,free-dream.ru,ftechedu.ru,fukushima-news.ru,gals.md,gloria-cedric.ru,goldformat.ru,greenflash.su,igrul-ka.ru,krasnickij.ru,krolmen.ru,megaclips.net,mow-portal.ru,moy.su,my1.ru,narod.ru,newgames.com.ua,novospasskoe-city.ru,omsimclub.ru,online-supernatural.ru,only-paper.ru,others.name,pidru4nik.com,pkrc.ru,play-force.ru,pohoronnoe-byuro.com,pokatushki-pmr.ru,pro-zakupki.ru,project-ss.ru,psxworld.ru,radiodom.org,rocketdockfree.ru,sdr-deluxe.com,soft-game.net,stalker-gsc.ru,stalker-zone.info,stalkermods.ru,svadbatomsk.ru,techmusic.ru,tes-game.ru,torfiles.ru,ucoz.club,ucoz.com,ucoz.net,ucoz.org,ucoz.ru,ucoz.ua,usite.pro,vodopads.ru,vsthouse.ru,xakevsoft.ru,xn--80aeshkkbdj.xn--p1ai,yaminecraft.ru,zona-stalkera.ru##+js(abort-on-property-read, u_global_data)
 ! VK player, на сторонних сайтах
-vk.com/video_ext.php##+js(addEventListener-defuser, message, /addExceptionTypeValue|isValidUrl/)
+vk.com/video_ext.php##+js(addEventListener-defuser, message, /isValidUrl|async/)
 vk.com/video_ext.php##+js(set-constant, Object.prototype.autoplay, undefined)
 vk.ru/video_ext.php##+js(addEventListener-defuser, message, /addExceptionTypeValue|isValidUrl/)
 vk.ru/video_ext.php##+js(set-constant, Object.prototype.autoplay, undefined)

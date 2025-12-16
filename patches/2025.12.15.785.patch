@@ -1,8 +1,10 @@
-diff name:ruadlist lines:16 checksum:0bb44bf4ec
+diff name:ruadlist lines:32 checksum:e3622734fb
 d4 2
 a5 2
-! Last modified: Tue, 16 Dec 2025 13:46:28 +0000
-! Diff-Path: ../patches/2025.12.16.826.patch#ruadlist
+! Last modified: Tue, 16 Dec 2025 18:46:01 +0000
+! Diff-Path: ../patches/2025.12.16.1126.patch#ruadlist
+a10955 1
+||advisor.api.2gis.
 a12406 1
 ||neva.today/hamster/
 a17007 1
@@ -13,5 +15,19 @@ profinance.ru##div[style="width:320px"]
 a23647 1
 mail.yandex.ru,mail.yandex.*##.RightColumnRoot.WithGlobalBar
 d23649 1
+a26474 1
+@@||files.bidmatic.io/microplayer/configs/*.jsonp|$script,domain=play.tavr.media
+a26523 1
+@@||player.bidmatic.io/microplayer/*/stream.es.js|$script,domain=play.tavr.media
 a28174 1
-tapochek.net##td.tRight[width="50%"]:style(color: #f6f6f6 !important)
+tapochek.net##td.tRight[width="50%"]:style(color: transparent !important)
+a28289 6
+! Фикс для VK-плеера во фреймах VIQEO
+kp.kg,kp.kz,kp.md,media,ru,russian.rt.com##[data-video_status][data-adapter="vk"] .previewContainer:style(z-index: unset !important)
+kp.kg,kp.kz,kp.md,media,ru,russian.rt.com##[data-video_status][data-adapter="vk"] .splash-icon_animation_container:style(opacity: unset !important)
+kp.kg,kp.kz,kp.md,media,ru,russian.rt.com##[data-video_status][data-adapter="vk"] .splash-pause
+kp.kg,kp.kz,kp.md,media,ru,russian.rt.com##[data-video_status][data-adapter="vk"] .splashContainer:style(display: unset !important)
+kp.kg,kp.kz,kp.md,media,ru,russian.rt.com##[data-video_status][data-adapter="vk"]:not([data-video_status="initial"]) .splash-play
+d29432 1
+a29432 1
+vk.com/video_ext.php##+js(addEventListener-defuser, message, /isValidUrl|async/)
