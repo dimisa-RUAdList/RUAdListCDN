@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 16 Dec 2025 04:01:43 +0000
-! Diff-Path: ../patches/2025.12.16.241.patch#ruadlist
+! Last modified: Tue, 16 Dec 2025 08:43:10 +0000
+! Diff-Path: ../patches/2025.12.16.523.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -28174,6 +28174,7 @@ surl.li###redirect-button > #timer
 surl.li##.redirect-button:style(pointer-events: auto !important; opacity: 1 !important)
 ! ---
 tapochek.net##.lenta_scrollable.poster:style(border: none !important)
+tapochek.net##td.tRight[width="50%"]:style(color: #f6f6f6 !important)
 ! исправление ошибок и косяков оригинальной вёрстки
 tapochek.net##.download-torrent-btn:style(font-size: 17px !important)
 tapochek.net##.lenta-tooltips-container > .tooltip-container:style(top: 43px !important; position: fixed !important)
