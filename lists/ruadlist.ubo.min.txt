@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 16 Dec 2025 18:46:01 +0000
-! Diff-Path: ../patches/2025.12.16.1126.patch#ruadlist
+! Last modified: Tue, 16 Dec 2025 23:28:26 +0000
+! Diff-Path: ../patches/2025.12.16.1408.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -11033,6 +11033,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||animemovie.ru^*/images/naruto_
 ||animenfo.com/*/ads/
 ||animestars.ru/snow$image
+||animix.lol/static/media/pre.$media
 ||aniplay.tv^*/images/banner.
 ||antec.com/*/web_banner/$domain=hw-lab.com
 ||anti-free.ru/pics/bonus$image
@@ -18394,6 +18395,7 @@ bigcaucasus.com,pravda.ru##.staticFragment
 calc.ru##.static_re
 finzz.ru##.stb-container
 cq.ru##.steam-news-block-wrapper
+dtf.ru##.steam-pay-widget
 diakov.net##.stic
 wylsa.com##.stick-promo--container
 www.zoneofgames.ru##.stickBanner
@@ -19513,6 +19515,7 @@ tsargrad.tv##a.link-social-zen
 litres.ru##a.logo[href*="#buy_now_noreg"][target="_blank"]
 sportsdaily.ru##a.match-mini__heading-link > .match-mini__logo
 kinobaza.net##a.red
+dtf.ru##a.sidebar-item[href^="/pay"]
 www.ivi.ru##a.teaserImage[target="_blank"]
 video.matchtv.ru##a.vjs-link[href*="://matchtv.ru/subscriptions"]
 moniheal.com##a:not([href*="moniheal.com/"]) > img[src*="/m-public/"]
@@ -20326,6 +20329,7 @@ bankiros.ru#?#article > aside:-abp-has(> [data-offer])
 zmi.ck.ua##article > br + small
 vsthemes.org##article > div:not([class])
 vladday.ru##article > div[style^="min-height:"]
+dtf.ru#?#article > figure:-abp-has(> .block-wrapper__content a[href]:-abp-contains(пополнить Steam))
 24boxing.com.ua#?#article > h2:-abp-contains(/реклама/i)
 24boxing.com.ua#?#article > h2:-abp-contains(/реклама/i) + ul
 24boxing.com.ua#?#article > h3:-abp-contains(/реклама|партнер|яндекс/i)
@@ -29342,6 +29346,7 @@ mail.ru###grid div[class^="feed__"]:remove()
 cloud.mail.ru###react-modals:has(a[href^="https://vk.cc/"])
 minigames.mail.ru##+js(abort-current-inline-script, $, blockWarnClass)
 mmminigames.mail.ru##+js(abort-current-inline-script, $, mimicTopClass)
+~account.mail.ru,~e.mail.ru,mail.ru,~o2.mail.ru,~octavius.mail.ru,sportmail.ru##+js(abort-current-script, __mediaTrend, autoplay)
 ok.ru##+js(abort-on-property-read, globalAuthLoginPopupCounter)
 ok.ru##+js(abort-on-property-write, mailruEnabled)
 light.mail.ru##+js(href-sanitizer, [href^="https://checklink.mail.ru/proxy?"], ?url)
@@ -29441,11 +29446,8 @@ tass.ru##[class^="LoopChannelPlayer_wrapper_"] [class^="Centered_box_"]
 ! uTarget Ads
 3dn.ru,a-point.info,addfiles.ru,akkordam.ru,all-for-kompa.ru,asia-tv.su,at.ua,autosimgames.ru,clan.su,db-energo.ru,devdrivers.ru,do.am,elegos.ru,elektronika56.ru,elektrosat.ru,fon-ki.com,for-gsm.ru,free-dream.ru,ftechedu.ru,fukushima-news.ru,gals.md,gloria-cedric.ru,goldformat.ru,greenflash.su,igrul-ka.ru,krasnickij.ru,krolmen.ru,megaclips.net,mow-portal.ru,moy.su,my1.ru,narod.ru,newgames.com.ua,novospasskoe-city.ru,omsimclub.ru,online-supernatural.ru,only-paper.ru,others.name,pidru4nik.com,pkrc.ru,play-force.ru,pohoronnoe-byuro.com,pokatushki-pmr.ru,pro-zakupki.ru,project-ss.ru,psxworld.ru,radiodom.org,rocketdockfree.ru,sdr-deluxe.com,soft-game.net,stalker-gsc.ru,stalker-zone.info,stalkermods.ru,svadbatomsk.ru,techmusic.ru,tes-game.ru,torfiles.ru,ucoz.club,ucoz.com,ucoz.net,ucoz.org,ucoz.ru,ucoz.ua,usite.pro,vodopads.ru,vsthouse.ru,xakevsoft.ru,xn--80aeshkkbdj.xn--p1ai,yaminecraft.ru,zona-stalkera.ru##+js(abort-on-property-read, u_global_data)
 ! VK player, на сторонних сайтах
-vk.com/video_ext.php##+js(addEventListener-defuser, message, /isValidUrl|async/)
 vk.com/video_ext.php##+js(set-constant, Object.prototype.autoplay, undefined)
-vk.ru/video_ext.php##+js(addEventListener-defuser, message, /addExceptionTypeValue|isValidUrl/)
 vk.ru/video_ext.php##+js(set-constant, Object.prototype.autoplay, undefined)
-vkvideo.ru/video_ext.php##+js(addEventListener-defuser, message, /addExceptionTypeValue|isValidUrl/)
 vkvideo.ru/video_ext.php##+js(set-constant, Object.prototype.autoplay, undefined)
 ||vk.com/video_ext.php?$third-party,subdocument,removeparam=autoplay,domain=~mediahope.ru
 ||vk.ru/video_ext.php?$third-party,subdocument,removeparam=autoplay

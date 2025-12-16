@@ -1,10 +1,18 @@
-diff name:ruadlist lines:22 checksum:e3622734fb
+diff name:ruadlist lines:32 checksum:11ffad3290
 d4 2
 a5 2
-! Last modified: Tue, 16 Dec 2025 18:46:01 +0000
-! Diff-Path: ../patches/2025.12.16.1126.patch#ruadlist
+! Last modified: Tue, 16 Dec 2025 23:28:26 +0000
+! Diff-Path: ../patches/2025.12.16.1408.patch#ruadlist
 a10955 1
 ||advisor.api.2gis.
+a11034 1
+||animix.lol/static/media/pre.$media
+a18395 1
+dtf.ru##.steam-pay-widget
+a19514 1
+dtf.ru##a.sidebar-item[href^="/pay"]
+a20327 1
+dtf.ru#?#article > figure:-abp-has(> .block-wrapper__content a[href]:-abp-contains(пополнить Steam))
 a26476 1
 @@||files.bidmatic.io/microplayer/configs/*.jsonp|$script,domain=play.tavr.media
 a26525 1
@@ -18,6 +26,8 @@ kp.kg,kp.kz,kp.md,media,ru,russian.rt.com##[data-video_status][data-adapter="vk"
 kp.kg,kp.kz,kp.md,media,ru,russian.rt.com##[data-video_status][data-adapter="vk"] .splash-pause
 kp.kg,kp.kz,kp.md,media,ru,russian.rt.com##[data-video_status][data-adapter="vk"] .splashContainer:style(display: unset !important)
 kp.kg,kp.kz,kp.md,media,ru,russian.rt.com##[data-video_status][data-adapter="vk"]:not([data-video_status="initial"]) .splash-play
+a29334 1
+~account.mail.ru,~e.mail.ru,mail.ru,~o2.mail.ru,~octavius.mail.ru,sportmail.ru##+js(abort-current-script, __mediaTrend, autoplay)
 d29434 1
-a29434 1
-vk.com/video_ext.php##+js(addEventListener-defuser, message, /isValidUrl|async/)
+d29436 1
+d29438 1

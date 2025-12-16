@@ -1,14 +1,22 @@
-diff name:ruadlist lines:47 checksum:e3622734fb
+diff name:ruadlist lines:57 checksum:11ffad3290
 d4 2
 a5 2
-! Last modified: Tue, 16 Dec 2025 18:46:01 +0000
-! Diff-Path: ../patches/2025.12.16.1126.patch#ruadlist
+! Last modified: Tue, 16 Dec 2025 23:28:26 +0000
+! Diff-Path: ../patches/2025.12.16.1408.patch#ruadlist
 a10955 1
 ||advisor.api.2gis.
+a11034 1
+||animix.lol/static/media/pre.$media
 a12406 1
 ||neva.today/hamster/
 a17007 1
 orelgrad.ru##.left-side
+a18393 1
+dtf.ru##.steam-pay-widget
+a19512 1
+dtf.ru##a.sidebar-item[href^="/pay"]
+a20325 1
+dtf.ru#?#article > figure:-abp-has(> .block-wrapper__content a[href]:-abp-contains(пополнить Steam))
 d21571 1
 a21573 1
 profinance.ru##div[style="width:320px"]
@@ -39,10 +47,12 @@ d28809 1
 a29232 2
 tapochek.net##body:has(#register_link) > canvas
 tapochek.net##body:has(#register_link) > canvas:remove()
+a29330 1
+~account.mail.ru,~e.mail.ru,mail.ru,~o2.mail.ru,~octavius.mail.ru,sportmail.ru##+js(abort-current-script, __mediaTrend, autoplay)
 d29352 2
 a29353 2
 mail.ru##.tv-widget [class^="vk-video"]
 mail.ru##.tv-widget [class^="vk-video"]:remove()
 d29430 1
-a29430 1
-vk.com/video_ext.php##+js(addEventListener-defuser, message, /isValidUrl|async/)
+d29432 1
+d29434 1
