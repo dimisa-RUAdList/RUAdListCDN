@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 17 Dec 2025 14:34:55 +0000
-! Diff-Path: ../patches/2025.12.17.874.patch#ruadlist
+! Last modified: Wed, 17 Dec 2025 19:27:20 +0000
+! Diff-Path: ../patches/2025.12.17.1167.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -27918,7 +27918,7 @@ pimpletv.ru##body > #branding:style(padding-top: 0 !important)
 playground.ru##.bonus-landing-page .panel-collapse > .panel-body:style(background-color: white !important)
 playground.ru##.bonus-landing-page .panel-default > .panel-heading:style(background-color: white !important)
 playground.ru##.bonus-landing-page-faq > .title:style(color: white !important)
-playground.ru##a[href*="/clck.ru/"]:style(pointer-events: none !important; color: inherit !important)
+playground.ru##a[href^="https://www.playground.ru/redirect/https/"]:style(pointer-events: none !important; color: inherit !important)
 playground.ru##body[data-user-id]:style(background: #242424 !important)
 ! исправление ошибок и косяков оригинальной вёрстки
 playground.ru##.gp-game-card .user-profile-sidebar:style(max-width: unset !important)
@@ -29349,7 +29349,7 @@ mail.ru###grid div[class^="feed__"]:remove()
 cloud.mail.ru###react-modals:has(a[href^="https://vk.cc/"])
 minigames.mail.ru##+js(abort-current-inline-script, $, blockWarnClass)
 mmminigames.mail.ru##+js(abort-current-inline-script, $, mimicTopClass)
-~account.mail.ru,~e.mail.ru,mail.ru,~o2.mail.ru,~octavius.mail.ru,sportmail.ru##+js(abort-current-script, __mediaTrend, autoplay)
+~account.mail.ru,~e.mail.ru,mail.ru,~o2.mail.ru,~octavius.mail.ru,sportmail.ru##+js(abort-current-script, __mediaTrend, TrendVideoArticle)
 ok.ru##+js(abort-on-property-read, globalAuthLoginPopupCounter)
 ok.ru##+js(abort-on-property-write, mailruEnabled)
 light.mail.ru##+js(href-sanitizer, [href^="https://checklink.mail.ru/proxy?"], ?url)

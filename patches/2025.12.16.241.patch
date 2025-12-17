@@ -1,8 +1,8 @@
-diff name:ruadlist lines:41 checksum:d9ee362699
+diff name:ruadlist lines:44 checksum:62cd2e5c01
 d4 2
 a5 2
-! Last modified: Wed, 17 Dec 2025 14:34:55 +0000
-! Diff-Path: ../patches/2025.12.17.874.patch#ruadlist
+! Last modified: Wed, 17 Dec 2025 19:27:20 +0000
+! Diff-Path: ../patches/2025.12.17.1167.patch#ruadlist
 a9772 1
 ||getappwizard.ru^$popup
 a9779 1
@@ -26,6 +26,9 @@ a26476 1
 @@||files.bidmatic.io/microplayer/configs/*.jsonp|$script,domain=play.tavr.media
 a26525 1
 @@||player.bidmatic.io/microplayer/*/stream.es.js|$script,domain=play.tavr.media
+d27911 1
+a27911 1
+playground.ru##a[href^="https://www.playground.ru/redirect/https/"]:style(pointer-events: none !important; color: inherit !important)
 a28176 1
 tapochek.net##.topmenu td.tRight:style(color: transparent !important)
 a28291 6
@@ -36,7 +39,7 @@ kp.kg,kp.kz,kp.md,media,ru,russian.rt.com##[data-video_status][data-adapter="vk"
 kp.kg,kp.kz,kp.md,media,ru,russian.rt.com##[data-video_status][data-adapter="vk"] .splashContainer:style(display: unset !important)
 kp.kg,kp.kz,kp.md,media,ru,russian.rt.com##[data-video_status][data-adapter="vk"]:not([data-video_status="initial"]) .splash-play
 a29334 1
-~account.mail.ru,~e.mail.ru,mail.ru,~o2.mail.ru,~octavius.mail.ru,sportmail.ru##+js(abort-current-script, __mediaTrend, autoplay)
+~account.mail.ru,~e.mail.ru,mail.ru,~o2.mail.ru,~octavius.mail.ru,sportmail.ru##+js(abort-current-script, __mediaTrend, TrendVideoArticle)
 d29434 1
 d29436 1
 d29438 1
