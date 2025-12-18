@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 17 Dec 2025 19:27:20 +0000
-! Diff-Path: ../patches/2025.12.17.1167.patch#ruadlist
+! Last modified: Thu, 18 Dec 2025 02:17:04 +0000
+! Diff-Path: ../patches/2025.12.18.137.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10097,7 +10097,7 @@ psm7.com###psm-messenger-subscribe-popup
 bilshe.com,businessua.com,multikino.com###reachMedia
 kote.ws###register_popup
 maam.ru###registr
-trychatgpt.ru###root > div > footer ~ div.fixed[style]
+trychatgpt.ru###root > div > div.fixed:not(:empty)
 bvedomosti.ru###sbox-overlay
 bvedomosti.ru###sbox-window
 sport-express.net,sport-express.ru###se-cookie-popup
