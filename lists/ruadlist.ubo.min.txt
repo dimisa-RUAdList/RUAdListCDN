@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 20 Dec 2025 17:25:28 +0000
-! Diff-Path: ../patches/2025.12.20.1045.patch#ruadlist
+! Last modified: Sat, 20 Dec 2025 22:28:35 +0000
+! Diff-Path: ../patches/2025.12.20.1348.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -23532,12 +23532,12 @@ torbobit.net,tourbobit.com,tourbobit.net,turbobeet.net,turbobi.pw,turbobif.com,t
 torbobit.net,tourbobit.com,tourbobit.net,turbobeet.net,turbobi.pw,turbobif.com,turbobit.net,turbobita.net,turbobits.cc,turbobits.net,turboobit.com###window-frame > #window-title
 torbobit.net,tourbobit.com,tourbobit.net,turbobeet.net,turbobi.pw,turbobif.com,turbobit.net,turbobita.net,turbobits.cc,turbobits.net,turboobit.com##center > a > img
 ! Ukr.NET
-mail.ukr.net###left_banner
+mail.ukr.net###app-root > div[class] > div:first-child:not([class*="_"])
 www.ukr.net###top-banner
-mail.ukr.net###top_banner
 ukr.net##.adv-news
 www.ukr.net##.fixed-block > div[class] ~ div
 www.ukr.net##.placeholder
+mail.ukr.net##.skeleton__adbar
 www.ukr.net#?#article > section:-abp-has(> div > div > a[href*="/ad.adriver."])
 www.ukr.net##div[class^="fuel-"][class$="-banner"]
 www.ukr.net##div[id^="ecbr-"]
@@ -29473,10 +29473,8 @@ bigmir.net,buhgalter.com.ua,buhgalter911.com,dengi.ua,ditey.com,facenews.ua,fact
 sinoptik.ua##head > style:empty:style(all: inherit !important)
 !#endif
 ! ukr.net
-mail.ukr.net###top_banner:not(#id):style(display: block !important; pointer-events: none !important; opacity: 0 !important; height: 0 !important)
 www.ukr.net##+js(abort-on-property-read, vpb)
 mail.ukr.net##+js(set-constant, Object.prototype.AdvertisingManager, noopFunc)
-mail.ukr.net##.advt:not(#id):style(display: block !important; pointer-events: none !important; opacity: 0 !important; height: 0 !important)
 www.ukr.net##body > .wrapper > #main:style(overflow: hidden !important)
 www.ukr.net##div[class*=" "]:first-child + div[class*=" "]:last-child > div[class*=" "] > div[class*=" "]:first-child:empty ~ div[class*=" "]
 !#if env_mobile
@@ -29485,12 +29483,7 @@ www.ukr.net##.lazy-load-banner
 ! только десктопы
 !#if !env_mobile
 www.ukr.net##+js(abort-on-stack-trace, Object.prototype.crossDomain, ecbrStart)
-mail.ukr.net##div[class]:not([id]):first-child:only-child > div[class]:not([id]):first-child:only-child > div[class]:not([id]):first-child:only-child:style(height: unset !important)
 !#endif
-mail.ukr.net###page:style(padding-top: 0 !important)
-mail.ukr.net##.sidebar:style(top: 0 !important)
-mail.ukr.net##div[class]:not([id]):first-child:only-child > div[class]:not([id]):first-child:only-child > div[class]:not([id]):first-child:only-child > div[class]:not([id]):first-child:not(:only-child)
-mail.ukr.net##div[class]:not([id]):first-child:only-child > div[class]:not([id]):first-child:only-child > div[class]:not([id]):first-child:only-child > div[class]:not([id]):first-child:not(:only-child) ~ div[class]:not([id])
 ||mail.ukr.net^$csp=connect-src 'self' *.ukr.net *.fwdcdn.com
 ! Правила для компенсации отсутствия Scriptlet Doctor
 !#if env_firefox
