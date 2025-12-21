@@ -1,8 +1,8 @@
-diff name:ruadlist lines:80 checksum:9708198e49
+diff name:ruadlist lines:95 checksum:dbeb3bf228
 d4 2
 a5 2
-! Last modified: Sun, 21 Dec 2025 08:36:00 +0000
-! Diff-Path: ../patches/2025.12.21.515.patch#ruadlist
+! Last modified: Sun, 21 Dec 2025 13:34:30 +0000
+! Diff-Path: ../patches/2025.12.21.814.patch#ruadlist
 a3239 1
 ||kiontwert.live^$third-party
 a9279 1
@@ -36,6 +36,9 @@ a19173 4
 24tv.ua##[class^="partner-insert"] + .media_embed
 24tv.ua##[class^="partner-insert"] + p.additional-image
 24tv.ua##[class^="partner-insert"] + p[dir]
+d21205 1
+a21205 1
+bina.az,bitpump.ru,chem21.info,enovosty.com,ogorodnik.com,orelgrad.ru,propozitsiya.com,snow-motion.ru,stadion.uz,tap.az,turbo.az,uralpress.ru##div[id*="banner"]
 a21363 1
 fastpic.org##div[id^="fp-"]
 d22308 1
@@ -49,12 +52,16 @@ a22486 1
 2ip.io,2ip.ru##div[class^="ad-"][class*="change-ip"]
 a22670 1
 dzen.ru##div[class*="MyTargetAdvert"]
+a23196 1
+gazeta.press,gazeta.ru,lenta.ru##a[href*="/tvz/"]
 d23526 1
 a23526 1
 mail.ukr.net###app-root > div[class] > div:first-child:not([class*="_"])
 d23528 1
 a23531 1
 mail.ukr.net##.skeleton__adbar
+a25355 1
+||wavesend.ru^$third-party
 d26074 1
 a26074 1
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=1plus1.ua|1plus1.video|24tv.ua|debilizator.tv|gamak.tv|showjet.net|showjet.ru|telek.top|unian.info|unian.net|unian.ua|veedi.com|vgtimes.ru|viho.me|viho.pro|viho.tv
@@ -66,7 +73,13 @@ a27918 1
 playground.ru##a[href^="https://www.playground.ru/redirect/https/"]:style(pointer-events: none !important; color: inherit !important)
 d28184 1
 a28184 1
-tapochek.net##.topmenu td.tRight:style(color: transparent !important)
+tapochek.net##.topmenu td[class^="tRight"]:style(color: transparent !important)
+d29032 1
+a29032 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, div, /Ad.block|Adblock/)
+d29034 1
+a29034 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /Ad.block|Adblock|tick/)
 d29349 1
 a29349 1
 ~account.mail.ru,~e.mail.ru,mail.ru,~o2.mail.ru,~octavius.mail.ru,sportmail.ru##+js(abort-current-script, __mediaTrend, TrendVideoArticle)
@@ -79,3 +92,5 @@ d29480 4
 d29529 1
 a29529 1
 116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,www.fontanka.ru,ya62.ru##+js(set-constant, Object.prototype.autoplay, undefined)
+a29535 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, blockPage)

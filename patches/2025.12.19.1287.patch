@@ -1,8 +1,8 @@
-diff name:ruadlist lines:35 checksum:9708198e49
+diff name:ruadlist lines:53 checksum:dbeb3bf228
 d4 2
 a5 2
-! Last modified: Sun, 21 Dec 2025 08:36:00 +0000
-! Diff-Path: ../patches/2025.12.21.515.patch#ruadlist
+! Last modified: Sun, 21 Dec 2025 13:34:30 +0000
+! Diff-Path: ../patches/2025.12.21.814.patch#ruadlist
 a10203 1
 24tv.ua##app-age-popup
 d16572 1
@@ -14,23 +14,41 @@ a19178 4
 24tv.ua##[class^="partner-insert"] + .media_embed
 24tv.ua##[class^="partner-insert"] + p.additional-image
 24tv.ua##[class^="partner-insert"] + p[dir]
+d21210 1
+a21210 1
+bina.az,bitpump.ru,chem21.info,enovosty.com,ogorodnik.com,orelgrad.ru,propozitsiya.com,snow-motion.ru,stadion.uz,tap.az,turbo.az,uralpress.ru##div[id*="banner"]
 a21368 1
 fastpic.org##div[id^="fp-"]
 a22344 1
 www.ixbt.*###branding-ssr-style {remove:true;}
+a23201 1
+gazeta.press,gazeta.ru,lenta.ru##a[href*="/tvz/"]
 d23531 1
 a23531 1
 mail.ukr.net###app-root > div[class] > div:first-child:not([class*="_"])
 d23533 1
 a23536 1
 mail.ukr.net##.skeleton__adbar
+a25360 1
+||wavesend.ru^$third-party
 d26079 1
 a26079 1
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=1plus1.ua|1plus1.video|24tv.ua|debilizator.tv|gamak.tv|showjet.net|showjet.ru|telek.top|unian.info|unian.net|unian.ua|veedi.com|vgtimes.ru|viho.me|viho.pro|viho.tv
 a26446 1
 @@/videojs-contrib-ads.min.js|$script,domain=debilizator.tv|gamak.tv|telek.top
 d26491 1
+d28189 1
+a28189 1
+tapochek.net##.topmenu td[class^="tRight"]:style(color: transparent !important)
+d29037 1
+a29037 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, div, /Ad.block|Adblock/)
+d29039 1
+a29039 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /Ad.block|Adblock|tick/)
 d29472 1
 d29475 1
 d29484 1
 d29486 4
+a29541 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, blockPage)

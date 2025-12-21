@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 21 Dec 2025 08:36:00 +0000
-! Diff-Path: ../patches/2025.12.21.515.patch#ruadlist
+! Last modified: Sun, 21 Dec 2025 13:34:30 +0000
+! Diff-Path: ../patches/2025.12.21.814.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21209,7 +21209,7 @@ finmarket.ru##div[id*="_ban"]
 niv.ru##div[id*="_ban_"]
 kavkazova.ru##div[id*="actionteaser"]
 ochevidets.ru##div[id*="baner"]
-bina.az,bitpump.ru,chem21.info,enovosty.com,ogorodnik.com,propozitsiya.com,snow-motion.ru,stadion.uz,tap.az,turbo.az,uralpress.ru##div[id*="banner"]
+bina.az,bitpump.ru,chem21.info,enovosty.com,ogorodnik.com,orelgrad.ru,propozitsiya.com,snow-motion.ru,stadion.uz,tap.az,turbo.az,uralpress.ru##div[id*="banner"]
 propozitsiya.com##div[id*="bunner"]
 drom.ru,newsvl.ru,vl.ru##div[id*="candy"]
 akipress.org##div[id*="company"]
@@ -23203,6 +23203,7 @@ horoscopes.rambler.ru##[itemtype="http://schema.org/Article"] > div[class]:nth-l
 eda.ru##[title="yandexzen"]
 lenta.ru##a[class="card-mini _topnews"][href^="/extlink/"]
 avtorambler.com,rambler.ru##a[href*="//ads.adfox.ru/"]
+gazeta.press,gazeta.ru,lenta.ru##a[href*="/tvz/"]
 gazeta.press,gazeta.ru,lenta.ru##a[href*="/twz/"]
 afisha.ru##a[href*="://dzen.ru/"]
 lenta.ru##a[href*="?erid="]
@@ -25362,6 +25363,7 @@ zarulem.ws##td[style^="text-align:center;width:50%"]
 ||warezplatinum.com^$third-party
 ||warnet.ws/banners/
 ||wau.com.ua^$domain=~wau.com.ua
+||wavesend.ru^$third-party
 ||wbn.su^
 ||web-rom.ru^
 ||webasm.com^
@@ -28190,7 +28192,7 @@ surl.li###redirect-button > #timer
 surl.li##.redirect-button:style(pointer-events: auto !important; opacity: 1 !important)
 ! ---
 tapochek.net##.lenta_scrollable.poster:style(border: none !important)
-tapochek.net##.topmenu td.tRight:style(color: transparent !important)
+tapochek.net##.topmenu td[class^="tRight"]:style(color: transparent !important)
 ! исправление ошибок и косяков оригинальной вёрстки
 tapochek.net##.download-torrent-btn:style(font-size: 17px !important)
 tapochek.net##.lenta-tooltips-container > .tooltip-container:style(top: 43px !important; position: fixed !important)
@@ -29038,9 +29040,9 @@ online-fix.me##+js(remove-node-text, #text, РЕКЛАМНЫЙ БЛОК:)
 farposst.ru##+js(remove-node-text, #text, Реклама)
 filmitorrent.net,utorr.cc##+js(remove-node-text, #text, Реклама:)
 ya.ru##+js(remove-node-text, div, 'ad-mark__b-unit-wrapper')
-game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, div, /Adblock|AdGuard/)
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, div, /Ad.block|Adblock/)
 nullcms.ru##+js(remove-node-text, script, 'decodeURIComponent(escape')
-game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /Adblock|AdGuard|tick/)
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /Ad.block|Adblock|tick/)
 ritsatv.ru##+js(remove-node-text, script, /adBlock|adblock-warning/)
 tapochek.net##+js(remove-node-text, script, /document.head.appendChild|document.referrer/)
 inforesist.org##+js(remove-node-text, script, /gtag\('event'/)
@@ -29536,6 +29538,7 @@ afisha.ru,autorambler.ru,championat.com,eda.ru,gazeta.press,gazeta.ru,lenta.ru,l
 dtf.ru##+js(addEventListener-defuser, click, '', elements, a[href^="/"][data-router-link])
 e.mail.ru##+js(no-setTimeout-if, '()=>n()', 50)
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(prevent-setTimeout, _0x)
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, blockPage)
 e.mail.ru##+js(set-constant, Object.prototype.hasAdBlock, false)
 e.mail.ru#@#+js(set-constant, Object.prototype.hasAdBlock, null)
 searchfloor.*##+js(addEventListener-defuser, DOMContentLoaded, isDonatePage)
