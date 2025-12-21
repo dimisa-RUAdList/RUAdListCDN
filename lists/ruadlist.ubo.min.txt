@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 21 Dec 2025 18:38:53 +0000
-! Diff-Path: ../patches/2025.12.21.1118.patch#ruadlist
+! Last modified: Sun, 21 Dec 2025 23:26:52 +0000
+! Diff-Path: ../patches/2025.12.21.1406.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -23539,6 +23539,7 @@ ukr.net##.adv-news
 www.ukr.net##.fixed-block > div[class] ~ div
 www.ukr.net##.placeholder
 mail.ukr.net##.skeleton__adbar
+@@||mail.ukr.net/widget$elemhide
 www.ukr.net#?#article > section:-abp-has(> div > div > a[href*="/ad.adriver."])
 www.ukr.net##div[class^="fuel-"][class$="-banner"]
 www.ukr.net##div[id^="ecbr-"]
@@ -28195,7 +28196,7 @@ tapochek.net##.lenta_scrollable.poster:style(border: none !important)
 tapochek.net##.topmenu td[class^="tRight"]:style(color: transparent !important)
 ! исправление ошибок и косяков оригинальной вёрстки
 tapochek.net##.download-torrent-btn:style(font-size: 17px !important)
-tapochek.net##.lenta-tooltips-container > .tooltip-container:style(top: 43px !important; position: fixed !important)
+tapochek.net##.lenta-tooltips-container > .lenta-tooltip-item:style(top: 43px !important; position: fixed !important)
 ! ---
 tass.ru##div[class^="LoopChannelPlaceholder_bottom"]:style(background: none !important)
 tass.ru##div[class^="LoopChannelPlaceholder_container"]:style(box-shadow: none !important)
