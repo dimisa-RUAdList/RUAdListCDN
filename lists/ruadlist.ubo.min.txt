@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 22 Dec 2025 09:38:39 +0000
-! Diff-Path: ../patches/2025.12.22.578.patch#ruadlist
+! Last modified: Mon, 22 Dec 2025 14:32:22 +0000
+! Diff-Path: ../patches/2025.12.22.872.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -8158,7 +8158,7 @@ _verified.php?code=*&server=runetki.com
 /t.bbn?$third-party
 /talky3d.gif
 /tds.php?*=*=$third-party,script
-/teaser.$~media,~object,domain=~amocrm.ru|~gitlab.io|~gosuslugi.ru|~insomnihack.ch|~kp.ru|~krym.news|~novostivl.ru|~pik-comfort.ru|~play.date|~ryazan.life|~textbook.ru|~uplabs.com|~v-tatarstane.ru|~yakutsk.ru
+/teaser.$~media,~object,domain=~amocrm.ru|~gitlab.io|~gosuslugi.ru|~insomnihack.ch|~kp.ru|~krym.news|~mazda-autohaus-volz-saarbruecken.de|~novostivl.ru|~pik-comfort.ru|~play.date|~ryazan.life|~textbook.ru|~uplabs.com|~v-tatarstane.ru|~yakutsk.ru
 /teaser2.
 /teaser_klubnika/*
 /teaserblock.site.js
@@ -22288,7 +22288,7 @@ ictv.ua,vikna.tv##div[id^="div-gpt-ad-"]
 ||dzen.ru/news$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/pogoda/$script
 ||static.dzeninfra.ru/s3/zen-apps/*2/$script
-$csp=script-src-attr 'none',domain=eurointegration.com.ua|pravda.com.ua|sportanalytic.com|notebookcheck-ru.com
+$csp=script-src-attr 'none',domain=eurointegration.com.ua|sportanalytic.com|notebookcheck-ru.com
 /^https?://24smi\.org/*[/]*[/][^\s]{8,}/$xmlhttprequest,domain=24smi.org
 ://mail.ru$csp=img-src 'self' https:
 ://mail.ru/$csp=connect-src 'self' *.imgsmail.ru *.mail.ru ok.ru vk.com data: blob:
@@ -28051,6 +28051,7 @@ rp5.am,rp5.by,rp5.co.nz,rp5.kz,rp5.md,rp5.ru###FheaderContent > div[id]:not([cla
 ! ---
 rserials.net###subheader:style(padding-top: 0 !important)
 ! ---
+forum.ru-board.com##.ny-lights:style(animation: none !important)
 forum.ru-board.com##.tpc > .post > a[href]:style(word-break: break-all)
 forum.ru-board.com##.tpc > .post > table[width] > tbody > tr > .lgf:style(word-break: break-word)
 ! ---
@@ -28193,7 +28194,8 @@ surl.li###redirect-button > #timer
 surl.li##.redirect-button:style(pointer-events: auto !important; opacity: 1 !important)
 ! ---
 tapochek.net##.lenta_scrollable.poster:style(border: none !important)
-tapochek.net##.topmenu td[class^="tRight"]:style(color: transparent !important)
+tapochek.net##.topmenu td.rightAlign > #garland-sound-icon:style(color: #000000 !important)
+tapochek.net##.topmenu td.rightAlign:style(color: transparent !important)
 ! исправление ошибок и косяков оригинальной вёрстки
 tapochek.net##.download-torrent-btn:style(font-size: 17px !important)
 tapochek.net##.lenta-tooltips-container > .lenta-tooltip-item:style(top: 43px !important; position: fixed !important)
