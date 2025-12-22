@@ -1,8 +1,8 @@
-diff name:ruadlist lines:71 checksum:967ffd94b6
+diff name:ruadlist lines:82 checksum:f3d0b69c45
 d4 2
 a5 2
-! Last modified: Mon, 22 Dec 2025 14:32:22 +0000
-! Diff-Path: ../patches/2025.12.22.872.patch#ruadlist
+! Last modified: Mon, 22 Dec 2025 19:25:26 +0000
+! Diff-Path: ../patches/2025.12.22.1165.patch#ruadlist
 a3239 1
 ||kiontwert.live^$third-party
 d8160 1
@@ -11,6 +11,9 @@ a8160 1
 a10202 1
 24tv.ua##app-age-popup
 d11746 1
+a15366 2
+pravda.com.ua##.article_news_adv
+pravda.com.ua#?#.article_news_list:-abp-has(> .unit_header_banner)
 a17041 1
 24tv.ua##.legal
 d17580 3
@@ -43,6 +46,8 @@ mail.ukr.net##.skeleton__adbar
 @@||mail.ukr.net/widget$elemhide
 a25360 1
 ||wavesend.ru^$third-party
+a25684 1
+vk.com,vk.ru#@##ads_wrapper
 d26079 1
 a26079 1
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=1plus1.ua|1plus1.video|24tv.ua|debilizator.tv|gamak.tv|showjet.net|showjet.ru|telek.top|unian.info|unian.net|unian.ua|veedi.com|vgtimes.ru|viho.me|viho.pro|viho.tv
@@ -58,6 +63,9 @@ tapochek.net##.topmenu td.rightAlign:style(color: transparent !important)
 d28192 1
 a28192 1
 tapochek.net##.lenta-tooltips-container > .lenta-tooltip-item:style(top: 43px !important; position: fixed !important)
+d28790 1
+a28790 1
+eurointegration.com.ua,sportanalytic.com##+js(abort-on-property-read, as_retry)
 d29037 1
 a29037 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, div, /Ad.block|Adblock/)
@@ -68,5 +76,8 @@ d29472 1
 d29475 1
 d29484 1
 d29486 4
+d29518 1
+a29518 1
+eurointegration.com.ua,sportanalytic.com##^script[onload*="error-report.com"]
 a29541 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, blockPage)

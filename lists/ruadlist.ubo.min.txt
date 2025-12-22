@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 22 Dec 2025 14:32:22 +0000
-! Diff-Path: ../patches/2025.12.22.872.patch#ruadlist
+! Last modified: Mon, 22 Dec 2025 19:25:26 +0000
+! Diff-Path: ../patches/2025.12.22.1165.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -15365,6 +15365,8 @@ kinoafisha.info##.article_contentroll
 maanimo.com##.article_end_banner
 gorodovoy.ru##.article_footerText
 kanalukraina.tv##.article_idealmedia
+pravda.com.ua##.article_news_adv
+pravda.com.ua#?#.article_news_list:-abp-has(> .unit_header_banner)
 otvetkak.ru##.article_openx
 banker.ua##.article_sidebar > div[class="textwidget"]
 nick-name.ru##.articles
@@ -25689,6 +25691,7 @@ topserver.ru#@##ads2
 topserver.ru#@##ads3
 topserver.ru#@##ads4
 devicesearch.ru#@##ads_top
+vk.com,vk.ru#@##ads_wrapper
 pc-aio.ru#@##adstop
 arabela.ru,mathsisfun.com,slavyansk.biz,tagline.ru,x-time.ru#@##adv
 videoxq.com#@##adv-title
@@ -28796,7 +28799,7 @@ fearmp4.ru##+js(abort-on-property-read, ads_block_check)
 freehat.cc##+js(abort-on-property-read, advFirstClickOpenNewTab)
 amazinghis.ru,moj-pes.ru##+js(abort-on-property-read, anOptions)
 shrlink.top##+js(abort-on-property-read, app_vars.force_disable_adblock)
-eurointegration.com.ua,pravda.com.ua,sportanalytic.com##+js(abort-on-property-read, as_retry)
+eurointegration.com.ua,sportanalytic.com##+js(abort-on-property-read, as_retry)
 friends.in.ua,gidonline.eu##+js(abort-on-property-read, atob)
 terrikon.com##+js(abort-on-property-read, bdy)
 medicina.ua##+js(abort-on-property-read, blocked_action)
@@ -29517,7 +29520,7 @@ pikabu.ru##^script:has-text(addPlaceholder)
 otzovik.com##^script:has-text(an.yan)
 hvylya.net,i.ua,ivona.ua,kriminal.tv,meteofor.com.ua,mport.ua,nv.ua,zv.zp.ua##^script:has-text(attachShadow)
 www.ukr.net##^script:has-text(znc|track)
-eurointegration.com.ua,pravda.com.ua,sportanalytic.com##^script[onload*="error-report.com"]
+eurointegration.com.ua,sportanalytic.com##^script[onload*="error-report.com"]
 ya.ru##div[style]:matches-prop(innerText="/РЕКЛАМА/")
 ya.ru##div[style]:matches-prop(innerText="/РЕКЛАМА/"):remove()
 gazeta.press,gazeta.ru,lenta.ru,secretmag.ru,wmj.ru##iframe[src^="https://vp.rambler.ru/player/"] ~ svg

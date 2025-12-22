@@ -1,11 +1,14 @@
-diff name:ruadlist lines:47 checksum:967ffd94b6
+diff name:ruadlist lines:58 checksum:f3d0b69c45
 d4 2
 a5 2
-! Last modified: Mon, 22 Dec 2025 14:32:22 +0000
-! Diff-Path: ../patches/2025.12.22.872.patch#ruadlist
+! Last modified: Mon, 22 Dec 2025 19:25:26 +0000
+! Diff-Path: ../patches/2025.12.22.1165.patch#ruadlist
 d8161 1
 a8161 1
 /teaser.$~media,~object,domain=~amocrm.ru|~gitlab.io|~gosuslugi.ru|~insomnihack.ch|~kp.ru|~krym.news|~mazda-autohaus-volz-saarbruecken.de|~novostivl.ru|~pik-comfort.ru|~play.date|~ryazan.life|~textbook.ru|~uplabs.com|~v-tatarstane.ru|~yakutsk.ru
+a15367 2
+pravda.com.ua##.article_news_adv
+pravda.com.ua#?#.article_news_list:-abp-has(> .unit_header_banner)
 d21212 1
 a21212 1
 bina.az,bitpump.ru,chem21.info,enovosty.com,ogorodnik.com,orelgrad.ru,propozitsiya.com,snow-motion.ru,stadion.uz,tap.az,turbo.az,uralpress.ru##div[id*="banner"]
@@ -25,6 +28,8 @@ mail.ukr.net##.skeleton__adbar
 @@||mail.ukr.net/widget$elemhide
 a25364 1
 ||wavesend.ru^$third-party
+a25688 1
+vk.com,vk.ru#@##ads_wrapper
 a28050 1
 forum.ru-board.com##.ny-lights:style(animation: none !important)
 d28193 1
@@ -34,6 +39,9 @@ tapochek.net##.topmenu td.rightAlign:style(color: transparent !important)
 d28196 1
 a28196 1
 tapochek.net##.lenta-tooltips-container > .lenta-tooltip-item:style(top: 43px !important; position: fixed !important)
+d28794 1
+a28794 1
+eurointegration.com.ua,sportanalytic.com##+js(abort-on-property-read, as_retry)
 d29041 1
 a29041 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, div, /Ad.block|Adblock/)
@@ -44,5 +52,8 @@ d29476 1
 d29479 1
 d29488 1
 d29490 4
+d29522 1
+a29522 1
+eurointegration.com.ua,sportanalytic.com##^script[onload*="error-report.com"]
 a29545 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, blockPage)
