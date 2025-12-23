@@ -1,8 +1,8 @@
-diff name:ruadlist lines:48 checksum:ba69c2a110
+diff name:ruadlist lines:58 checksum:bf7ddc6d4e
 d4 2
 a5 2
-! Last modified: Tue, 23 Dec 2025 10:35:42 +0000
-! Diff-Path: ../patches/2025.12.23.635.patch#ruadlist
+! Last modified: Tue, 23 Dec 2025 15:32:07 +0000
+! Diff-Path: ../patches/2025.12.23.932.patch#ruadlist
 d8161 1
 a8161 1
 /teaser.$~media,~object,domain=~amocrm.ru|~gitlab.io|~gosuslugi.ru|~insomnihack.ch|~kp.ru|~krym.news|~mazda-autohaus-volz-saarbruecken.de|~novostivl.ru|~pik-comfort.ru|~play.date|~ryazan.life|~textbook.ru|~uplabs.com|~v-tatarstane.ru|~yakutsk.ru
@@ -27,6 +27,14 @@ disgustingmen.com##li.menu-item > a:not([href^="https://disgustingmen.com"]):not
 d22291 1
 a22291 1
 $csp=script-src-attr 'none',domain=eurointegration.com.ua|sportanalytic.com|notebookcheck-ru.com
+d22316 1
+a22316 1
+||pikabu.ru/ajax/*?nb1Ag=$xmlhttprequest
+d22684 1
+a22684 1
+dzen.ru##[id*="410-"]
+a23181 1
+rambler.ru##[data-cerber="weather-widget"] a[href*="?erid="]
 a23584 1
 market.yandex.ru,market.yandex.*##[data-apiary-widget-name="@marketfront/MadvHeaderPromo"]
 a25691 1
@@ -44,6 +52,8 @@ a29055 1
 disgustingmen.com##+js(remove-node-text, script, window.location.replace)
 a29135 1
 disgustingmen.com##+js(set-cookie, _redirect_, 0, , reload, 1)
+a29215 1
+dzen.ru##:matches-path(/a/) article:matches-attr(/./=/promo-card/)
 d29518 1
 a29518 1
 eurointegration.com.ua,sportanalytic.com##^script[onload*="error-report.com"]

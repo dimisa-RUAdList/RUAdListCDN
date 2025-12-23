@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 23 Dec 2025 10:35:42 +0000
-! Diff-Path: ../patches/2025.12.23.635.patch#ruadlist
+! Last modified: Tue, 23 Dec 2025 15:32:07 +0000
+! Diff-Path: ../patches/2025.12.23.932.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22318,7 +22318,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||news.mail.ru/-/*.js?
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
-||pikabu.ru/ajax/*?qnh6G=$xmlhttprequest
+||pikabu.ru/ajax/*?nb1Ag=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -22686,7 +22686,7 @@ dzen.ru##div[class*="news-advert"]
 dzen.ru##div[id][class*="news-"][class*="-advert"]
 dzen.ru##div[id][class*="news-"][class*="_loaded"]
 ! Дзен новости Mail-edition
-dzen.ru##[id*="5410"]
+dzen.ru##[id*="410-"]
 dzen.ru##[id*="_R-A-"]
 dzen.ru##[id*="_R-E-"]
 dzen.ru##[id*="_R-I-"]
@@ -23184,6 +23184,7 @@ www.afisha.ru##[aria-label="Реклама"]
 mail.rambler.ru##[class*="MaillistItemAdvertPlace"]
 auto.rambler.ru,avtorambler.com##[data-auto_media-desktop*="rnet_widget"]
 auto.rambler.ru,avtorambler.com#?#[data-auto_media-desktop="content_block"] ~ div div:-abp-has(> div > [data-rcmw-init])
+rambler.ru##[data-cerber="weather-widget"] a[href*="?erid="]
 championat.com,championat.ru##[data-champ*="Okko"]
 gazeta.press,gazeta.ru##[data-docking="left-down"] > div[style^="height:"][style*="overflow:"]
 doctor.rambler.ru##[data-doctor_media-desktop*="rnet_widget"]
@@ -29224,6 +29225,7 @@ dtf.ru,vc.ru##:matches-path(-erid-) .block-special-button
 dtf.ru,vc.ru##:matches-path(-erid-) a[href*="go.vc.ru"]:style(pointer-events: none !important; color: inherit !important)
 dzen.ru##:matches-path(/a/) [class^="content--"] [style^="opacity:"]
 dzen.ru##:matches-path(/a/) [data-appid] > [itemscope] > div > div[id]
+dzen.ru##:matches-path(/a/) article:matches-attr(/./=/promo-card/)
 dzen.ru##:matches-path(/a/) div:matches-attr(/[a-z0-9]/=article-bottom-block) > [class] ~ div:not([class]):not([id])
 dzen.ru##:matches-path(/articles) div:has(> article > [class*="adBox"])
 ozon.ru##:matches-path(/kursk-sertifikaty) [data-lcp-name*="anner-"]:style(display: block !important)

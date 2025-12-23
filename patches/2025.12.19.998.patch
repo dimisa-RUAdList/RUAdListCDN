@@ -1,8 +1,8 @@
-diff name:ruadlist lines:103 checksum:ba69c2a110
+diff name:ruadlist lines:113 checksum:bf7ddc6d4e
 d4 2
 a5 2
-! Last modified: Tue, 23 Dec 2025 10:35:42 +0000
-! Diff-Path: ../patches/2025.12.23.635.patch#ruadlist
+! Last modified: Tue, 23 Dec 2025 15:32:07 +0000
+! Diff-Path: ../patches/2025.12.23.932.patch#ruadlist
 a3239 1
 ||kiontwert.live^$third-party
 d8160 1
@@ -46,8 +46,16 @@ disgustingmen.com##li.menu-item > a:not([href^="https://disgustingmen.com"]):not
 d22288 1
 a22288 1
 $csp=script-src-attr 'none',domain=eurointegration.com.ua|sportanalytic.com|notebookcheck-ru.com
+d22313 1
+a22313 1
+||pikabu.ru/ajax/*?nb1Ag=$xmlhttprequest
 a22344 1
 www.ixbt.*###branding-ssr-style {remove:true;}
+d22680 1
+a22680 1
+dzen.ru##[id*="410-"]
+a23177 1
+rambler.ru##[data-cerber="weather-widget"] a[href*="?erid="]
 d23202 1
 a23202 2
 gazeta.press,gazeta.ru,lenta.ru##a[href*="/tvz"]
@@ -93,6 +101,8 @@ a29048 1
 disgustingmen.com##+js(remove-node-text, script, window.location.replace)
 a29128 1
 disgustingmen.com##+js(set-cookie, _redirect_, 0, , reload, 1)
+a29208 1
+dzen.ru##:matches-path(/a/) article:matches-attr(/./=/promo-card/)
 d29472 1
 d29475 1
 d29484 1
