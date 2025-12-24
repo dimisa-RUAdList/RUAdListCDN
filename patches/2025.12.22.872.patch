@@ -1,8 +1,8 @@
-diff name:ruadlist lines:46 checksum:a0f945d4f7
+diff name:ruadlist lines:51 checksum:a44a9b6280
 d4 2
 a5 2
-! Last modified: Wed, 24 Dec 2025 16:36:23 +0000
-! Diff-Path: ../patches/2025.12.24.996.patch#ruadlist
+! Last modified: Wed, 24 Dec 2025 21:27:00 +0000
+! Diff-Path: ../patches/2025.12.24.1286.patch#ruadlist
 a9437 1
 ||my.id/help/?$third-party,popup
 a15367 2
@@ -33,6 +33,9 @@ a23584 1
 market.yandex.ru,market.yandex.*##[data-apiary-widget-name="@marketfront/MadvHeaderPromo"]
 a25691 1
 vk.com,vk.ru#@##ads_wrapper
+d28315 5
+a28319 1
+club,com,kg,kz,md,media,net,org,ru,su,tv##[data-video_status][data-adapter="vk"] .previewContainer
 d28799 1
 a28799 1
 eurointegration.com.ua,sportanalytic.com##+js(abort-on-property-read, as_retry)
@@ -45,3 +48,5 @@ dzen.ru##:matches-path(/a/) article:matches-attr(/./=/promo-card/)
 d29520 1
 a29520 1
 eurointegration.com.ua,sportanalytic.com##^script[onload*="error-report.com"]
+a29547 1
+||cdn.viqeo.tv/js/assets/master-*/styles/vn_player.css$stylesheet

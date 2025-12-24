@@ -1,8 +1,8 @@
-diff name:ruadlist lines:35 checksum:a0f945d4f7
+diff name:ruadlist lines:40 checksum:a44a9b6280
 d4 2
 a5 2
-! Last modified: Wed, 24 Dec 2025 16:36:23 +0000
-! Diff-Path: ../patches/2025.12.24.996.patch#ruadlist
+! Last modified: Wed, 24 Dec 2025 21:27:00 +0000
+! Diff-Path: ../patches/2025.12.24.1286.patch#ruadlist
 a9437 1
 ||my.id/help/?$third-party,popup
 a15628 1
@@ -28,9 +28,14 @@ a23183 1
 rambler.ru##[data-cerber="weather-widget"] a[href*="?erid="]
 a23586 1
 market.yandex.ru,market.yandex.*##[data-apiary-widget-name="@marketfront/MadvHeaderPromo"]
+d28318 5
+a28322 1
+club,com,kg,kz,md,media,net,org,ru,su,tv##[data-video_status][data-adapter="vk"] .previewContainer
 a29060 1
 disgustingmen.com##+js(remove-node-text, script, window.location.replace)
 a29140 1
 disgustingmen.com##+js(set-cookie, _redirect_, 0, , reload, 1)
 a29220 1
 dzen.ru##:matches-path(/a/) article:matches-attr(/./=/promo-card/)
+a29550 1
+||cdn.viqeo.tv/js/assets/master-*/styles/vn_player.css$stylesheet

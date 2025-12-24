@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 24 Dec 2025 16:36:23 +0000
-! Diff-Path: ../patches/2025.12.24.996.patch#ruadlist
+! Last modified: Wed, 24 Dec 2025 21:27:00 +0000
+! Diff-Path: ../patches/2025.12.24.1286.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -28320,11 +28320,7 @@ videoredaktor.ru##div[style^="min-height: 100vh;"]:style(min-height: 0 !importan
 kp.kg,kp.kz,kp.md,media,ru,russian.rt.com##.buttonContainer[data-name="play"][style*="left: 10px;"]:style(opacity: unset !important)
 cdn.viqeo.tv##[data-video_status="paused"] .buttonContainer[data-name="play"][style*="left: 10px;"]:style(opacity: unset !important)
 ! Фикс для VK-плеера во фреймах VIQEO
-kp.kg,kp.kz,kp.md,media,ru,russian.rt.com##[data-video_status][data-adapter="vk"] .previewContainer:style(z-index: unset !important)
-kp.kg,kp.kz,kp.md,media,ru,russian.rt.com##[data-video_status][data-adapter="vk"] .splash-icon_animation_container:style(opacity: unset !important)
-kp.kg,kp.kz,kp.md,media,ru,russian.rt.com##[data-video_status][data-adapter="vk"] .splash-pause
-kp.kg,kp.kz,kp.md,media,ru,russian.rt.com##[data-video_status][data-adapter="vk"] .splashContainer:style(display: unset !important)
-kp.kg,kp.kz,kp.md,media,ru,russian.rt.com##[data-video_status][data-adapter="vk"]:not([data-video_status="initial"]) .splash-play
+club,com,kg,kz,md,media,net,org,ru,su,tv##[data-video_status][data-adapter="vk"] .previewContainer
 ! ---
 virtualbrest.ru##body > div[id][class] > .header > div > div:not([class^="header"]) > *
 virtualbrest.ru##body > div[id][class] > .header ~ div[class] > ul > li[class]:not(.ttyyuu)
@@ -29556,6 +29552,7 @@ game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorka
 e.mail.ru##+js(set-constant, Object.prototype.hasAdBlock, false)
 e.mail.ru#@#+js(set-constant, Object.prototype.hasAdBlock, null)
 searchfloor.*##+js(addEventListener-defuser, DOMContentLoaded, isDonatePage)
+||cdn.viqeo.tv/js/assets/master-*/styles/vn_player.css$stylesheet
 ||st.top100.ru/top100/top100.js$domain=www.rambler.ru
 !#endif
 ! Mobile only
