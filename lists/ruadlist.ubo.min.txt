@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 26 Dec 2025 08:38:40 +0000
-! Diff-Path: ../patches/2025.12.26.518.patch#ruadlist
+! Last modified: Fri, 26 Dec 2025 13:39:30 +0000
+! Diff-Path: ../patches/2025.12.26.819.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -23003,6 +23003,7 @@ ru##[data-test="themes-line"] a[href*="/longread"]
 ru##[data-test="themes-line"] a[href*="erid="]
 ru##[data-test="themes-line"] a[href*="erid="] ~ div
 ru##[data-test="themes-line"] a[href*="utm_campaign"]
+ru##[data-test="themes-line"] a[href][target="_blank"]
 www.e1.ru#?#[data-vr-contentbox="Новость в левой колонке"]:-abp-has(> div ~ div ~ div)
 116.ru,14.ru,161.ru,164.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,voronezh1.ru,ya62.ru##a[href*="://auto.ru"][href*="utm_"]
 fontanka.ru##a[href="/__business_news"]
@@ -28202,10 +28203,6 @@ study.ru##.header-inner:style(height: 94px !important)
 surl.li###redirect-button > #timer
 surl.li##.redirect-button:style(pointer-events: auto !important; opacity: 1 !important)
 ! ---
-tapochek.net##.lenta_scrollable.poster:style(border: none !important)
-! исправление ошибок и косяков оригинальной вёрстки
-tapochek.net##.download-torrent-btn:style(font-size: 17px !important)
-! ---
 tass.ru##div[class^="LoopChannelPlaceholder_bottom"]:style(background: none !important)
 tass.ru##div[class^="LoopChannelPlaceholder_container"]:style(box-shadow: none !important)
 tass.ru##div[class^="LoopChannel_widget"] > [class^="SimpleCaption_wrapper"]:style(background: none !important)
@@ -29467,8 +29464,11 @@ tass.ru##[class^="LoopChannelPlayer_wrapper_"] [class^="Centered_box_"]
 ! uTarget Ads
 3dn.ru,a-point.info,addfiles.ru,akkordam.ru,all-for-kompa.ru,asia-tv.su,at.ua,autosimgames.ru,clan.su,db-energo.ru,devdrivers.ru,do.am,elegos.ru,elektronika56.ru,elektrosat.ru,fon-ki.com,for-gsm.ru,free-dream.ru,ftechedu.ru,fukushima-news.ru,gals.md,gloria-cedric.ru,goldformat.ru,greenflash.su,igrul-ka.ru,krasnickij.ru,krolmen.ru,megaclips.net,mow-portal.ru,moy.su,my1.ru,narod.ru,newgames.com.ua,novospasskoe-city.ru,omsimclub.ru,online-supernatural.ru,only-paper.ru,others.name,pidru4nik.com,pkrc.ru,play-force.ru,pohoronnoe-byuro.com,pokatushki-pmr.ru,pro-zakupki.ru,project-ss.ru,psxworld.ru,radiodom.org,rocketdockfree.ru,sdr-deluxe.com,soft-game.net,stalker-gsc.ru,stalker-zone.info,stalkermods.ru,svadbatomsk.ru,techmusic.ru,tes-game.ru,torfiles.ru,ucoz.club,ucoz.com,ucoz.net,ucoz.org,ucoz.ru,ucoz.ua,usite.pro,vodopads.ru,vsthouse.ru,xakevsoft.ru,xn--80aeshkkbdj.xn--p1ai,yaminecraft.ru,zona-stalkera.ru##+js(abort-on-property-read, u_global_data)
 ! VK player, на сторонних сайтах
+vk.com/video_ext.php##+js(json-prune-fetch-response, response.items, '', propsToMatch, getVideoDiscover)
 vk.com/video_ext.php##+js(set-constant, Object.prototype.autoplay, undefined)
+vk.ru/video_ext.php##+js(json-prune-fetch-response, response.items, '', propsToMatch, getVideoDiscover)
 vk.ru/video_ext.php##+js(set-constant, Object.prototype.autoplay, undefined)
+vkvideo.ru/video_ext.php##+js(json-prune-fetch-response, response.items, '', propsToMatch, getVideoDiscover)
 vkvideo.ru/video_ext.php##+js(set-constant, Object.prototype.autoplay, undefined)
 ||vk.com/video_ext.php?$third-party,subdocument,removeparam=autoplay,domain=~mediahope.ru
 ||vk.ru/video_ext.php?$third-party,subdocument,removeparam=autoplay

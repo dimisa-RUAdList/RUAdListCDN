@@ -1,8 +1,8 @@
-diff name:ruadlist lines:69 checksum:553bbea65a
+diff name:ruadlist lines:76 checksum:c895c8a153
 d4 2
 a5 2
-! Last modified: Fri, 26 Dec 2025 08:38:40 +0000
-! Diff-Path: ../patches/2025.12.26.518.patch#ruadlist
+! Last modified: Fri, 26 Dec 2025 13:39:30 +0000
+! Diff-Path: ../patches/2025.12.26.819.patch#ruadlist
 a9437 1
 ||my.id/help/?$third-party,popup
 a12769 1
@@ -38,14 +38,15 @@ a22657 1
 d22684 1
 a22684 1
 dzen.ru##[id*="410-"]
+a22999 1
+ru##[data-test="themes-line"] a[href][target="_blank"]
 a23181 1
 rambler.ru##[data-cerber="weather-widget"] a[href*="?erid="]
 a23584 1
 market.yandex.ru,market.yandex.*##[data-apiary-widget-name="@marketfront/MadvHeaderPromo"]
 a25691 1
 vk.com,vk.ru#@##ads_wrapper
-d28197 2
-d28201 1
+d28196 7
 d28315 5
 a28319 1
 club,com,kg,kz,md,media,net,org,ru,su,tv##[data-video_status][data-adapter="vk"] .previewContainer
@@ -63,6 +64,12 @@ a29137 1
 disgustingmen.com##+js(set-cookie, _redirect_, 0, , reload, 1)
 a29217 1
 dzen.ru##:matches-path(/a/) article:matches-attr(/./=/promo-card/)
+a29463 1
+vk.com/video_ext.php##+js(json-prune-fetch-response, response.items, '', propsToMatch, getVideoDiscover)
+a29464 1
+vk.ru/video_ext.php##+js(json-prune-fetch-response, response.items, '', propsToMatch, getVideoDiscover)
+a29465 1
+vkvideo.ru/video_ext.php##+js(json-prune-fetch-response, response.items, '', propsToMatch, getVideoDiscover)
 d29520 1
 a29520 1
 eurointegration.com.ua,sportanalytic.com##^script[onload*="error-report.com"]

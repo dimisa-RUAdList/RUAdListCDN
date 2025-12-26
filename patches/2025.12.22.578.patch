@@ -1,8 +1,8 @@
-diff name:ruadlist lines:75 checksum:553bbea65a
+diff name:ruadlist lines:82 checksum:c895c8a153
 d4 2
 a5 2
-! Last modified: Fri, 26 Dec 2025 08:38:40 +0000
-! Diff-Path: ../patches/2025.12.26.518.patch#ruadlist
+! Last modified: Fri, 26 Dec 2025 13:39:30 +0000
+! Diff-Path: ../patches/2025.12.26.819.patch#ruadlist
 d8161 1
 a8161 1
 /teaser.$~media,~object,domain=~amocrm.ru|~gitlab.io|~gosuslugi.ru|~insomnihack.ch|~kp.ru|~krym.news|~mazda-autohaus-volz-saarbruecken.de|~novostivl.ru|~pik-comfort.ru|~play.date|~ryazan.life|~textbook.ru|~uplabs.com|~v-tatarstane.ru|~yakutsk.ru
@@ -42,6 +42,8 @@ a22657 1
 d22684 1
 a22684 1
 dzen.ru##[id*="410-"]
+a22999 1
+ru##[data-test="themes-line"] a[href][target="_blank"]
 a23181 1
 rambler.ru##[data-cerber="weather-widget"] a[href*="?erid="]
 a23584 1
@@ -50,8 +52,7 @@ a25691 1
 vk.com,vk.ru#@##ads_wrapper
 a28053 1
 forum.ru-board.com##.ny-lights:style(animation: none !important)
-d28196 1
-d28199 1
+d28195 6
 d28313 5
 a28317 1
 club,com,kg,kz,md,media,net,org,ru,su,tv##[data-video_status][data-adapter="vk"] .previewContainer
@@ -69,6 +70,12 @@ a29135 1
 disgustingmen.com##+js(set-cookie, _redirect_, 0, , reload, 1)
 a29215 1
 dzen.ru##:matches-path(/a/) article:matches-attr(/./=/promo-card/)
+a29461 1
+vk.com/video_ext.php##+js(json-prune-fetch-response, response.items, '', propsToMatch, getVideoDiscover)
+a29462 1
+vk.ru/video_ext.php##+js(json-prune-fetch-response, response.items, '', propsToMatch, getVideoDiscover)
+a29463 1
+vkvideo.ru/video_ext.php##+js(json-prune-fetch-response, response.items, '', propsToMatch, getVideoDiscover)
 d29518 1
 a29518 1
 eurointegration.com.ua,sportanalytic.com##^script[onload*="error-report.com"]
