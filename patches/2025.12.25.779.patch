@@ -1,8 +1,8 @@
-diff name:ruadlist lines:23 checksum:e49fe27646
+diff name:ruadlist lines:29 checksum:da7f4e39cb
 d4 2
 a5 2
-! Last modified: Sat, 27 Dec 2025 04:39:49 +0000
-! Diff-Path: ../patches/2025.12.27.279.patch#ruadlist
+! Last modified: Sat, 27 Dec 2025 09:29:38 +0000
+! Diff-Path: ../patches/2025.12.27.569.patch#ruadlist
 a12770 1
 ||promptcdn.com/veoveo-creative/
 d12897 1
@@ -15,6 +15,12 @@ a22662 1
 ://mail.ru/$csp=connect-src 'self' *.imgsmail.ru *.mail.ru ok.ru vk.com data: blob:
 a23004 1
 ru##[data-test="themes-line"] a[href][target="_blank"]
+d27938 1
+a27938 4
+playground.ru##a[href*="clck.ru/"]:style(pointer-events: none !important; color: inherit !important)
+playground.ru##a[href*="market.yandex.ru/"]:style(pointer-events: none !important; color: inherit !important)
+playground.ru##a[href*="ozon.ru/"]:style(pointer-events: none !important; color: inherit !important)
+playground.ru##a[href*="wildberries.ru/"]:style(pointer-events: none !important; color: inherit !important)
 d28204 6
 a29470 1
 vk.com/video_ext.php##+js(json-prune-fetch-response, response.items, '', propsToMatch, getVideoDiscover)

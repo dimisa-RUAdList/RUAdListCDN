@@ -1,12 +1,18 @@
-diff name:ruadlist lines:15 checksum:e49fe27646
+diff name:ruadlist lines:21 checksum:da7f4e39cb
 d4 2
 a5 2
-! Last modified: Sat, 27 Dec 2025 04:39:49 +0000
-! Diff-Path: ../patches/2025.12.27.279.patch#ruadlist
+! Last modified: Sat, 27 Dec 2025 09:29:38 +0000
+! Diff-Path: ../patches/2025.12.27.569.patch#ruadlist
 a13968 1
 pikabu.ru###branding_ad_header
 a23005 1
 ru##[data-test="themes-line"] a[href][target="_blank"]
+d27939 1
+a27939 4
+playground.ru##a[href*="clck.ru/"]:style(pointer-events: none !important; color: inherit !important)
+playground.ru##a[href*="market.yandex.ru/"]:style(pointer-events: none !important; color: inherit !important)
+playground.ru##a[href*="ozon.ru/"]:style(pointer-events: none !important; color: inherit !important)
+playground.ru##a[href*="wildberries.ru/"]:style(pointer-events: none !important; color: inherit !important)
 d28205 4
 a29469 1
 vk.com/video_ext.php##+js(json-prune-fetch-response, response.items, '', propsToMatch, getVideoDiscover)
