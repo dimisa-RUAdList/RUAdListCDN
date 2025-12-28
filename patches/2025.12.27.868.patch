@@ -1,7 +1,16 @@
-diff name:ruadlist lines:6 checksum:5f95883aef
+diff name:ruadlist lines:15 checksum:b1f683a20c
 d4 2
 a5 2
-! Last modified: Sun, 28 Dec 2025 05:34:51 +0000
-! Diff-Path: ../patches/2025.12.28.334.patch#ruadlist
+! Last modified: Sun, 28 Dec 2025 10:32:27 +0000
+! Diff-Path: ../patches/2025.12.28.632.patch#ruadlist
 a21390 1
 securitylab.ru##div[id^="js-banner-"]
+d28930 1
+a28930 1
+hot.game,mp3party.net##+js(href-sanitizer, [href*="url=https"], ?url)
+d29052 1
+a29052 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, div, /Ad.block|Adblock|AdGuard/)
+d29054 1
+a29054 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /Ad.block|Adblock|AdGuard|tick/)
