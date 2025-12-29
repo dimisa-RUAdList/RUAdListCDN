@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 29 Dec 2025 11:28:13 +0000
-! Diff-Path: ../patches/2025.12.29.688.patch#ruadlist
+! Last modified: Mon, 29 Dec 2025 16:37:17 +0000
+! Diff-Path: ../patches/2025.12.29.997.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -29270,6 +29270,7 @@ sawlive.tv##body[onclick^="closeMyAd"] > div[id][style*="position"][style*="back
 cosplay-porn.*,fap-guru.*,mult-porno.*,sex-studentki.*##+js(remove-node-text, script, /initTeasers|initVads/)
 cosplay-porn.*,fap-guru.*,mult-porno.*,sex-studentki.*##+js(set-cookie-reload, is_age_verified, 1)
 disk.yandex.ru,disk.yandex.*##+js(remove-class, has-fullscreen-banner|has-right-direct, .public__root, stay)
+playground.ru##div.article-content:remove-class(js-redirect)
 dzen.ru##div:matches-attr(/./=dzenpro-banner)
 dzen.ru##div:matches-attr(/[a-z0-9]/=/_ad-yp/)
 dzen.ru##div:matches-attr(/data-[a-z0-9]/=bottom-ad)
