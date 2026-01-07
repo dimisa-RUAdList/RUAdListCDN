@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 07 Jan 2026 10:37:11 +0000
-! Diff-Path: ../patches/2026.1.7.637.patch#ruadlist
+! Last modified: Wed, 07 Jan 2026 15:36:22 +0000
+! Diff-Path: ../patches/2026.1.7.936.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10305,6 +10305,7 @@ surl.*#?#.text-center:-abp-has(> form > .disabled) > p ~ *
 ||dsvload.net/engine/modules/ed-shortbar/
 ||eventsfolder.ru/templates/ef/js/lockers-ru$script
 ||factsinter.com/wp-content/plugins/custom-fan-gate-plugin/
+||files.1mi.media/_next/static/chunks/7285.745a56d0d4f13a7f.js
 ||fishing-mr.ru/modal/
 ||free-software.com.ua/wp-content/plugins/fancybox-for-wordpress/
 ||gdz-free.ru/files/stuHover$script
@@ -15550,7 +15551,7 @@ aldebaran.ru#?#.b_read_online:-abp-has(> .litres_fragment_body)
 24tv.ua,espreso.tv##.b_reklama
 101poisk.ru##.b_top
 photoshablon.ru##.b_verh_st
-kommersant.ru##.ba
+kommersant.ru,neftegaz.ru##.ba
 tsargrad.tv##.back-fixed
 skam.online##.background-banner
 nv.ua##.background-branding
@@ -18201,7 +18202,6 @@ lavnik.net##.sidebar > .widget_list_mag_wp_300px:first-child
 golos.zp.ua##.sidebar > .widget_rvuoi:nth-child(-n+4)
 book-briefly.ru,vazremont.com##.sidebar > .widget_text
 365news.biz,newgoal.ru##.sidebar > .widget_text ~ .widget_text
-womanhit.ru##.sidebar > :not(.card)
 happy-biock.info,happy-block.info,howto-news.info##.sidebar > :not(.widget)
 vokrug.tv##.sidebar > :not([class])
 4mama.ua#?#.sidebar > [class]:-abp-has(> [class]:-abp-contains(/Новости партнеров|Новини партнерів/))
@@ -18389,7 +18389,7 @@ move.ru##.specs-near
 xxx-russian.ru##.speedbar ~ .rad5
 www.obozrevatel.com#?#.splide__list > .splide__slide:-abp-has(> article > .banner)
 gsett.ru##.spnc-right a[target="_blank"]
-alexua.tv,anilib.moe,anilib.one,anilib.top,anilibria.iss.one,anilibria.tv,avtovzglyad.ru,fco.com.ua,filmozavr.com,filmozavr.net,forexsystemsru.com,itc.ua,medkrug.ru,must-see.top##.sponsor
+alexua.tv,anilib.moe,anilib.one,anilib.top,anilibria.iss.one,anilibria.tv,avtovzglyad.ru,fco.com.ua,filmozavr.com,filmozavr.net,forexsystemsru.com,itc.ua,medkrug.ru,must-see.top,womanhit.ru##.sponsor
 radioshanson.fm##.sponsor a[href][target="_blank"]
 fbu.ua,stroimdom.com.ua##.sponsors
 zi.ua##.sponsors-holder
@@ -19021,7 +19021,6 @@ promodj.com##.yandexmusic
 softomania.net,warezok.net,windows-driver.com,windows-driver.net,windows-program.com##.yaoffer
 ideaprog.download##.yapr
 samaragovorit.ru##.yarec
-womanhit.ru##.yasubscribe
 mytor.info##.yelobv4
 sport.kg##.yelrec
 24smi.org#?#.yet:-abp-has(div[id]:empty)
@@ -19558,6 +19557,7 @@ lol24.ee##a[class^="alex_bnr_"]
 zloy-odessit.livejournal.com##a[class^="banne"][href][target="_blank"]
 the-village.ru##a[class^="base-BuyAdvLink-"]
 newformat.info##a[class^="branding-"]
+neftegaz.ru##a[class^="promo_site"]
 rutr.life,rutracker.lib,rutracker.net,rutracker.org##a[class^="ref-"][target="_blank"]
 vc.ru##a[class^="sber-"]
 nachasi.com##a[class^="style_sublogo_"]
@@ -19586,7 +19586,7 @@ ctc-rnd.ru##a[href*=".space"]
 rutr.life,rutracker.lib,rutracker.net,rutracker.org##a[href*=".vkplay.ru"]
 wintorrents.ru##a[href*=".wintorrents.ru"]
 1tv.ru,drive.ru,f1news.ru,film.ru,gamemag.ru,kinoafisha.info,kinonews.ru,kinorium.com,livejournal.com,myshows.me,onlinestreams.ru,pikabu.ru,pluggedin.ru,spletnik.ru,tolknews.ru,trinixy.ru,www.pesticidy.ru##a[href*="//ads.adfox.ru/"]
-360tv.ru,5-tv.ru,7days.ru,avtonovostidnya.ru,avtovzglyad.ru,belarus-news.by,bfm.ru,bst.bratsk.ru,coop-land.ru,energyfm.ru,expert.ru,finuslugi.ru,fonmod.com,fontanka.ru,gdeichto.ru,habr.com,inosmi.ru,ixbt.com,ixbt.shop,kommersant.ru,kulturologia.ru,ladys.media,life.ru,mash.ru,media.az,metronews.ru,mgazeta.com,mk.ru,moe-belgorod.ru,moe-kursk.ru,moe-lipetsk.ru,moe-online.ru,moe-tambov.ru,moika78.ru,mydecor.ru,mywebpc.ru,myweekend.ru,naked-science.ru,nevasport.ru,new-magazine.ru,news.ru,nsn.fm,ohotniki.ru,oper.ru,overclockers.ru,penzainform.ru,peterburg2.ru,pnz.ru,radio1.ru,regnum.news,regnum.ru,ridlife.ru,rifey.ru,rodgor-vlg.ru,rodina-history.ru,rusnext.ru,russian.rt.com,rutube.ru,sm.news,smotrim.ru,soccer.ru,sovsport.ru,sport-express.net,sport-express.ru,sportsdaily.ru,stiletto.blog,stolicaonego.ru,stratege.ru,super.ru,syzran-small.ru,teleprogramma.org,thegirl.ru,timeweb.com,tochka.by,tsargrad.tv,tulapressa.ru,tvzvezda.ru,u-f.ru,utyug.info,vz.ru,www1.ru,xn----7sbabwosghnf8al4lkj7b.xn--p1ai,ytronews.ru,zaks.ru,zaycev.net,zr.ru##a[href*="//dzen.ru/"]
+360tv.ru,5-tv.ru,7days.ru,avtonovostidnya.ru,avtovzglyad.ru,belarus-news.by,bfm.ru,bst.bratsk.ru,coop-land.ru,energyfm.ru,expert.ru,finuslugi.ru,fonmod.com,fontanka.ru,gdeichto.ru,habr.com,inosmi.ru,ixbt.com,ixbt.shop,kommersant.ru,kulturologia.ru,ladys.media,life.ru,mash.ru,media.az,metronews.ru,mgazeta.com,mk.ru,moe-belgorod.ru,moe-kursk.ru,moe-lipetsk.ru,moe-online.ru,moe-tambov.ru,moika78.ru,mydecor.ru,mywebpc.ru,myweekend.ru,naked-science.ru,neftegaz.ru,nevasport.ru,new-magazine.ru,news.ru,nsn.fm,ohotniki.ru,oper.ru,overclockers.ru,penzainform.ru,peterburg2.ru,pnz.ru,radio1.ru,regnum.news,regnum.ru,ridlife.ru,rifey.ru,rodgor-vlg.ru,rodina-history.ru,rusnext.ru,russian.rt.com,rutube.ru,sm.news,smotrim.ru,soccer.ru,sovsport.ru,sport-express.net,sport-express.ru,sportsdaily.ru,stiletto.blog,stolicaonego.ru,stratege.ru,super.ru,syzran-small.ru,teleprogramma.org,thegirl.ru,timeweb.com,tochka.by,tsargrad.tv,tulapressa.ru,tvzvezda.ru,u-f.ru,utyug.info,vz.ru,womanhit.ru,www1.ru,xn----7sbabwosghnf8al4lkj7b.xn--p1ai,ytronews.ru,zaks.ru,zaycev.net,zr.ru##a[href*="//dzen.ru/"]
 beatmake.ru##a[href*="//go.acstat.com/"]
 porno-island.site##a[href*="//goo.su/"]
 adult-images.ru,imgbum.ru,screenpost.ru,xpicture.ru##a[href*="//parnuxi.biz"]
