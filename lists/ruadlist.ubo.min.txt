@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 09 Jan 2026 13:03:56 +0000
-! Diff-Path: ../patches/2026.1.9.783.patch#ruadlist
+! Last modified: Fri, 09 Jan 2026 17:33:46 +0000
+! Diff-Path: ../patches/2026.1.9.1053.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -23373,6 +23373,7 @@ rbc.ru#?#body.free .js-index-central-column > [data-publisher-index]:-abp-has(.i
 rbc.ru#?#body.free .js-index-central-column > [data-publisher-index]:-abp-has([class*="pro-anons"])
 rbc.ru##body.free .js-index-central-column > div:nth-child(-1n+5) > div[style^="background-color:"]
 rbc.ru##body.free .js-index-central-column [href^="https://pro.rbc.ru"]
+rbc.ru##body.free .js-index-doscroll .pro-slider
 rbc.ru##body.free .js-index-doscroll-pro
 rbc.ru##body.free .news-feed a[href*="utm_campaign"]
 rbc.ru##body.free [data-vr-zone="Главная новость"] a[href^="https://pro.rbc.ru/"]
