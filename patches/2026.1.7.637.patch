@@ -1,8 +1,8 @@
-diff name:ruadlist lines:49 checksum:52207161d9
+diff name:ruadlist lines:55 checksum:2b6b1b0859
 d4 2
 a5 2
-! Last modified: Sat, 10 Jan 2026 13:36:07 +0000
-! Diff-Path: ../patches/2026.1.10.816.patch#ruadlist
+! Last modified: Sat, 10 Jan 2026 18:40:58 +0000
+! Diff-Path: ../patches/2026.1.10.1120.patch#ruadlist
 a3208 1
 ||kingads.digital^$third-party
 d8167 1
@@ -45,6 +45,12 @@ a20335 1
 gorodvo.ru,kinoafisha.info,kinonews.ru##advertronic-slot
 a23374 1
 rbc.ru##body.free .js-index-doscroll .pro-slider
+d29060 1
+a29060 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, div, /Ad.block|Adb-|Adblock|AdGuard/)
+d29062 1
+a29062 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /Ad.block|Adb-|Adblock|AdGuard|tick/)
 a29091 1
 playground.ru##+js(set-constant, Object.prototype.addRedirects, noopFunc)
 d29288 1
