@@ -1,8 +1,8 @@
-diff name:ruadlist lines:20 checksum:3e3092b5d4
+diff name:ruadlist lines:29 checksum:b9f0e08a4b
 d4 2
 a5 2
-! Last modified: Tue, 13 Jan 2026 06:48:59 +0000
-! Diff-Path: ../patches/2026.1.13.408.patch#ruadlist
+! Last modified: Tue, 13 Jan 2026 11:30:05 +0000
+! Diff-Path: ../patches/2026.1.13.690.patch#ruadlist
 a363 1
 ||adzone.ru^$third-party
 a14550 1
@@ -17,5 +17,14 @@ a19324 1
 radiosputnik.ru##[data-type="banner"]
 a21505 1
 vk.com,vk.ru#?#div[role="feed"] > article:-abp-has(> [data-post-id] [class^="vkitPostHeader__container"] [data-testid="post-header-subtitle"]:-abp-contains(/Community ad|Реклама |Рэклама | жарнама/))
+d22308 2
+a22309 2
+||static.dzeninfra.ru/s3/zen-apps/dzen-mobile/$script
+||static.dzeninfra.ru/s3/zen-apps/news-site/$script
+d22699 1
+a22699 1
+dzen.ru##[id*="10-"]
+a29406 1
+://mail.ru$csp=frame-src 'self' *.mail.ru https://yandex.ru/portal/searchframe/
 a29570 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##[style*=" 11111"]

@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 13 Jan 2026 06:48:59 +0000
-! Diff-Path: ../patches/2026.1.13.408.patch#ruadlist
+! Last modified: Tue, 13 Jan 2026 11:30:05 +0000
+! Diff-Path: ../patches/2026.1.13.690.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22309,8 +22309,8 @@ ictv.ua,vikna.tv##div[id^="div-gpt-ad-"]
 ||dzen.ru/articles$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/news$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/pogoda/$script
-||static.dzeninfra.ru/s3/zen-apps/video-feed/$script
-||static.dzeninfra.ru/s3/zen-apps/video-player-core/1.121.0/$script
+||static.dzeninfra.ru/s3/zen-apps/dzen-mobile/$script
+||static.dzeninfra.ru/s3/zen-apps/news-site/$script
 $csp=script-src-attr 'none',domain=eurointegration.com.ua|sportanalytic.com|notebookcheck-ru.com
 /^https?://24smi\.org/*[/]*[/][^\s]{8,}/$xmlhttprequest,domain=24smi.org
 ://mail.ru$csp=img-src 'self' https:
@@ -22700,7 +22700,7 @@ news.mail.ru##aside div > div:first-child:empty ~ div
 news.mail.ru#?#aside div:-abp-has(> div:only-child:empty)
 news.mail.ru##body > div > style + div[id]
 ! Дзен новости Mail-edition
-dzen.ru##[id*="510-"]
+dzen.ru##[id*="10-"]
 dzen.ru##[id*="_R-A-"]
 dzen.ru##[id*="_R-E-"]
 dzen.ru##[id*="_R-I-"]
@@ -29408,6 +29408,7 @@ mail.ru##.tv-widget [class^="vk-video"]
 mail.ru##.tv-widget [class^="vk-video"]:remove()
 /2promo.octavius.bundle.js$domain=mail.ru
 /res/*/VideoAutoplayFlow$script,domain=ok.ru
+://mail.ru$csp=frame-src 'self' *.mail.ru https://yandex.ru/portal/searchframe/
 ok.ru##[data-module*="banner"]
 mail.ru##[slot="main-column"] :matches-css(height: 90px)
 ok.ru##body > div:not([id]):not([class]) > .exit-popup:style(display: block !important)
