@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 16 Jan 2026 14:35:43 +0000
-! Diff-Path: ../patches/2026.1.16.875.patch#ruadlist
+! Last modified: Fri, 16 Jan 2026 19:26:07 +0000
+! Diff-Path: ../patches/2026.1.16.1166.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -20581,6 +20581,8 @@ livetvstream.pro,me##body[bgcolor] > #adbtm
 livetvstream.pro,me##body[bgcolor] > div[id="ads"][style^="position: absolute;"]
 livetvstream.pro,me##body[bgcolor] > div[id^="iframe-container"]
 hi-fi.ru##body[data-pageid] #ipsLayout_sidebar
+2gis.by,2gis.kz,2gis.ru##button > div[style^="width: 136px; height: 100%;"]
+2gis.by,2gis.kz,2gis.ru##button > div[style^="width: 136px; height: 100%;"] ~ div[style*="pointer-events: auto"]
 shuba.life#?#button:-abp-contains(Купит)
 novayagazeta.eu#?#button:-abp-has(> [src^="/vpnovaya_"])
 shuba.life#?#button[target="_blank"]:-abp-has(> .i-icon-basket)
