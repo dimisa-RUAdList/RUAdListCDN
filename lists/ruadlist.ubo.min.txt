@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 21 Jan 2026 04:11:42 +0000
-! Diff-Path: ../patches/2026.1.21.251.patch#ruadlist
+! Last modified: Wed, 21 Jan 2026 09:43:27 +0000
+! Diff-Path: ../patches/2026.1.21.583.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -9676,7 +9676,6 @@ $third-party,popup,domain=2ip.ru
 ||lotsofslots.net^$third-party,popup
 ||lovecity3d.com/img/promo.$popup
 ||luckiestclick.com^$popup
-||mamydirect.com^$third-party,popup,domain=~overclockers.ru|~tovarniygid.ru
 ||mediaget.com/ld/get_installer.php?r=$popup
 ||mediaget.com/promo$third-party,popup
 ||medicineteaser.ru^$popup
@@ -28929,7 +28928,6 @@ rg.ru##+js(addEventListener-defuser, error, (e){t(e)})
 fastpic.org,~new.fastpic.org##+js(addEventListener-defuser, getexoloader)
 romakatya.ru##+js(addEventListener-defuser, load, AdBlock)
 blackwot.ru##+js(addEventListener-defuser, load, detect-modal)
-overclockers.ru##+js(addEventListener-defuser, load, mamydirect)
 bonus-tv.ru##+js(addEventListener-defuser, loadstart, isImmediatePropagationStopped)
 rutube.ru##+js(addEventListener-defuser, message, __messagesAtom)
 m.lenta.ru##+js(addEventListener-defuser, scroll, getBoundingClientRect)
