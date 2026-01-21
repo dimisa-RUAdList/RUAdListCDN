@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 21 Jan 2026 14:45:10 +0000
-! Diff-Path: ../patches/2026.1.21.885.patch#ruadlist
+! Last modified: Wed, 21 Jan 2026 19:36:04 +0000
+! Diff-Path: ../patches/2026.1.21.1176.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -479,6 +479,7 @@
 ||anidublink.ru^
 ||anilibriadub.ru^$third-party
 ||anilibriaz.ru^
+||anime-go.cc^$third-party
 ||animebest.zone^
 ||animegofan.ru^
 ||animegofans.ru^$third-party
@@ -10133,13 +10134,13 @@ stalker-gsc.ru###win > .podps
 technoavia.ru##.Agreement
 glavbukh.ru##.GbShadow
 all.biz##.ab-fade
-rutube.ru##.application-module__additionalContent
 esetnod32.ru##.b-fade
 pdalife.ru##.b-mask
 esetnod32.ru##.b-mdl
 hetaqrqire.ru##.b-modal
 tvc.ru##.b-overlay-soc
 pdalife.ru##.b-popup
+rutube.ru##.bottom-bar-components-module__bottomBar
 ivanovonews.ru##.bottom-left-modal
 vashgorod.ru##.c-popup
 games-two.su##.ckf-box
@@ -10210,6 +10211,7 @@ pasy.media##[data-remodal-id]
 novoruskino.net##[src$="/social.gif"]
 24tv.ua##app-age-popup
 football24.ua##app-over-21
+rutube.ru##aside[aria-label^="Уведомление об"]
 profbuh8.ru##body > #TB_overlay,body > #TB_window
 gavag.ru##body > #bodypopup
 censor.net,hi-tech-pro.ru##body > #cboxOverlay,body > #colorbox
@@ -19101,7 +19103,7 @@ argumenti.ru##[class*="adv_"]
 androidinsider.ru,appleinsider.ru,hi-news.ru##[class*="af_advert_"]
 drive.ru##[class*="autoRu"]
 drive.ru##[class*="autoRu"] + .hr
-amic.ru,anime-bit.pro,anime-bit.su,hi-fi.ru,inflora.ru,lifenews.ru,lifenews78.ru,obozrevatel.com,opticlub.org,players.com.ua,podrobnosti.ua,ua-independent.com,vbryanske.com##[class*="banner"]
+amic.ru,anime-bit.ru,hi-fi.ru,inflora.ru,lifenews.ru,lifenews78.ru,obozrevatel.com,opticlub.org,players.com.ua,podrobnosti.ua,ua-independent.com,vbryanske.com##[class*="banner"]
 vedomosti.ru#?#[class*="banner"]:-abp-has(.teaser-commerce)
 avtosreda.ru,vikna.if.ua##[class*="banner-border"]
 disgustingmen.com##[class*="bg_banner"]
@@ -26721,7 +26723,7 @@ trupornolabs.org##.header > .red
 wowhead.com##.is-atf.horizontal-bg
 wowhead.com##.is-atf.vertical-bg
 wowhead.com##.is-btf.horizontal-bg
-anime-bit.pro,anime-bit.su##.layer_box > #header
+anime-bit.ru##.layer_box > #header
 retail.ru##.markup__b2
 retail.ru##.markup__c1
 retail.ru##.markup__p1
@@ -26970,7 +26972,7 @@ aniliberty.top,anilibria.top##.v-carousel
 aniliberty.top,anilibria.top##.v-carousel + div.d-flex
 aniliberty.top,anilibria.top##[class*="image-blur-"]:style(filter: none !important)
 ! ---
-anime-bit.pro,anime-bit.su##body:style(cursor: auto !important)
+anime-bit.ru##body:style(cursor: auto !important)
 ! ---
 anime-naruto.ru,blich.ru,borutoplanet.ru,bungou-stray-dogs.ru,doktor-stoun.ru,haikyu.ru,hunter-x-hunter.ru,klinok-rassekayuschiy-demonov.ru,magicheskaya-bitva.ru,my-hero-academia.ru,one-pieces.ru,reinkarnatsiya-bezrabotnogo.ru,tokiyskie-mstiteli.ru##.home:style(padding-top: 0 !important)
 anime-naruto.ru,blich.ru,borutoplanet.ru,bungou-stray-dogs.ru,doktor-stoun.ru,haikyu.ru,hunter-x-hunter.ru,klinok-rassekayuschiy-demonov.ru,magicheskaya-bitva.ru,my-hero-academia.ru,one-pieces.ru,reinkarnatsiya-bezrabotnogo.ru,tokiyskie-mstiteli.ru##.single:style(padding-top: 0 !important)
@@ -28966,6 +28968,7 @@ e.mail.ru,mail.rambler.ru,mail.yandex.ru,octavius.mail.ru##+js(href-sanitizer, a
 vc.ru##+js(href-sanitizer, a[href^="https://go.2038.pro/"][href*="?dl="], ?dl)
 pikabu.ru##+js(href-sanitizer, a[href^="https://pikabu.ru/"][href*="?u=http"], ?u)
 e.mail.ru,mail.rambler.ru,mail.yandex.ru,octavius.mail.ru##+js(href-sanitizer, a[href^="https://robot.mos.ru/"], ?url)
+rutube.ru##+js(href-sanitizer, a[href^="https://rutube.ru/api/routing/"][href*="away?target"], ?target)
 nsportal.ru##+js(href-sanitizer, a[href^="https://www.google.com/url?q="])
 e.mail.ru,mail.rambler.ru,mail.yandex.ru,octavius.mail.ru##+js(href-sanitizer, a[href^="https://www.gosuslugi.ru/ref?t="], ?to)
 youtube.com##+js(href-sanitizer, a[href^="https://www.youtube.com/redirect?event="][href*="&q=http"], ?q)
