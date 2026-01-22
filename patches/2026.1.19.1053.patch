@@ -1,8 +1,8 @@
-diff name:ruadlist lines:41 checksum:8ace101ac9
+diff name:ruadlist lines:52 checksum:e7e7e9e5ea
 d4 2
 a5 2
-! Last modified: Thu, 22 Jan 2026 05:39:54 +0000
-! Diff-Path: ../patches/2026.1.22.339.patch#ruadlist
+! Last modified: Thu, 22 Jan 2026 10:41:51 +0000
+! Diff-Path: ../patches/2026.1.22.641.patch#ruadlist
 a481 1
 ||anime-go.cc^$third-party
 a3711 1
@@ -29,6 +29,17 @@ d15538 1
 d19105 1
 a19105 1
 amic.ru,anime-bit.ru,hi-fi.ru,inflora.ru,lifenews.ru,lifenews78.ru,obozrevatel.com,opticlub.org,players.com.ua,podrobnosti.ua,ua-independent.com,vbryanske.com##[class*="banner"]
+d22338 1
+a22338 1
+||pikabu.ru/ajax/*?nGfR6=$xmlhttprequest
+d23606 5
+a23610 6
+market.yandex.ru,market.yandex.*##[aria-label="Баннер"]
+market.yandex.ru,market.yandex.*##[data-apiary-widget-name*="@marketfront/MadvHeaderPromo"]
+market.yandex.ru,market.yandex.*##[data-auto*="banner"] > a:not([href^="/"]):not([href^="https://market.yandex.ru/"])
+market.yandex.ru,market.yandex.*##[data-auto*="banner"] [role="button"]
+market.yandex.ru,market.yandex.*##[data-madv]
+market.yandex.ru,market.yandex.*##div[id^="remix_"] > div[style^="grid-row:"][style*="grid-column:"]:empty
 d26725 1
 a26725 1
 anime-bit.ru##.layer_box > #header
