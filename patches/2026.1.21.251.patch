@@ -1,8 +1,10 @@
-diff name:ruadlist lines:41 checksum:9f7dae883d
+diff name:ruadlist lines:50 checksum:c2953dd0f3
 d4 2
 a5 2
-! Last modified: Thu, 22 Jan 2026 15:42:23 +0000
-! Diff-Path: ../patches/2026.1.22.942.patch#ruadlist
+! Last modified: Thu, 22 Jan 2026 20:38:37 +0000
+! Diff-Path: ../patches/2026.1.22.1238.patch#ruadlist
+a382 1
+||agl010.pro^$third-party
 a481 1
 ||anime-go.cc^$third-party
 a5772 1
@@ -38,5 +40,12 @@ d26974 1
 a26974 1
 anime-bit.ru##body:style(cursor: auto !important)
 d28932 1
+a28959 1
+rambler.ru##+js(href-sanitizer, a[href*="?utm_"][data-main-link], +https)
 a28970 1
 rutube.ru##+js(href-sanitizer, a[href^="https://rutube.ru/api/routing/"][href*="away?target"], ?target)
+d29173 1
+d29176 1
+a29176 1
+championat.com,ferra.ru,gazeta.press,gazeta.ru,indicator.ru,lenta.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,secretmag.ru,wmj.ru##+js(set-cookie, unity_pause_sso, 1, '', reload, 1)
+d29178 1
