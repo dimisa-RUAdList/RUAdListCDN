@@ -1,14 +1,32 @@
-diff name:ruadlist lines:25 checksum:cafd7a6469
+diff name:ruadlist lines:55 checksum:02c0c1016c
 d4 2
 a5 2
-! Last modified: Fri, 23 Jan 2026 06:50:37 +0000
-! Diff-Path: ../patches/2026.1.23.410.patch#ruadlist
+! Last modified: Fri, 23 Jan 2026 11:30:42 +0000
+! Diff-Path: ../patches/2026.1.23.690.patch#ruadlist
 a382 1
 ||agl010.pro^$third-party
+a13453 1
+||uwupad.me/static/lb/
+a17367 1
+uwupad.me##.native-ad-container
 d19527 1
+a20267 1
+uwupad.me##a[href^="https://uwupad.me/advertisement/"]
 d22340 1
 a22340 1
 ||pikabu.ru/ajax/*?nGfR6=$xmlhttprequest
+a22370 1
+uwupad.*##style:-abp-contains(lb-banner-height) {remove:true;}
+d23405 10
+a23414 8
+google-cloud.services,spac.me,spaces.im,spcs.bio,strip2.co,strip2.*,usersporn.com###sidebar > div[class]:last-child
+google-cloud.services,spac.me,spaces.im,spcs.bio,strip2.co,strip2.*,usersporn.com###siteContent > div:not([id]):not([class]) ~ div[class]
+google-cloud.services,spac.me,spaces.im,spcs.bio,strip2.co,strip2.*,usersporn.com##.rightbar__reklama
+google-cloud.services,spac.me,spaces.im,spcs.bio,strip2.co,strip2.*,usersporn.com##.tiled_cap
+google-cloud.services,spac.me,spaces.im,spcs.bio,strip2.co,strip2.*,usersporn.com##.tiles_wrapper > .js-file_item ~ div:not([class*="tiled"])
+google-cloud.services,spac.me,spaces.im,spcs.bio,strip2.co,strip2.*,usersporn.com##div[id][class][style="min-height:150px"]
+google-cloud.services,spac.me,spaces.im,spcs.bio,strip2.co,strip2.*,usersporn.com#?#div[class]:-abp-has(> a[title] ~ a[title] > div[class])
+||world/$third-party,script,domain=google-cloud.services|spac.me|spaces.im|spcs.bio|strip2.co|usersporn.com
 d23608 5
 a23612 6
 market.yandex.ru,market.yandex.*##[aria-label="Баннер"]
@@ -17,10 +35,22 @@ market.yandex.ru,market.yandex.*##[data-auto*="banner"] > a:not([href^="/"]):not
 market.yandex.ru,market.yandex.*##[data-auto*="banner"] [role="button"]
 market.yandex.ru,market.yandex.*##[data-madv]
 market.yandex.ru,market.yandex.*##div[id^="remix_"] > div[style^="grid-row:"][style*="grid-column:"]:empty
+a26693 1
+uwupad.me###uwu-shield
+d28752 1
+d28796 1
 a28960 1
 rambler.ru##+js(href-sanitizer, a[href*="?utm_"][data-main-link], +https)
+a29076 1
+uwupad.me##+js(remove-node-text, script, checkAdBlock)
+a29082 1
+uwupad.me##+js(remove-node-text, style, lb-banner-height)
 d29175 1
 d29178 1
 a29178 1
 championat.com,ferra.ru,gazeta.press,gazeta.ru,indicator.ru,lenta.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,secretmag.ru,wmj.ru##+js(set-cookie, unity_pause_sso, 1, '', reload, 1)
 d29180 1
+a29307 3
+google-cloud.services,spac.me,spaces.im,spcs.bio,strip2.co,strip2.*,usersporn.com##+js(abort-current-inline-script, __require, /clickunder/)
+google-cloud.services,spac.me,spaces.im,spcs.bio,strip2.co,strip2.*,usersporn.com##+js(abort-on-property-read, Object.prototype.initOnPlay)
+google-cloud.services,spac.me,spaces.im,spcs.bio,strip2.co,strip2.*,usersporn.com##+js(set, Object.prototype.ads/mobiads, undefined)

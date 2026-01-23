@@ -1,5 +1,35 @@
-diff name:ruadlist lines:4 checksum:cafd7a6469
+diff name:ruadlist lines:34 checksum:02c0c1016c
 d4 2
 a5 2
-! Last modified: Fri, 23 Jan 2026 06:50:37 +0000
-! Diff-Path: ../patches/2026.1.23.410.patch#ruadlist
+! Last modified: Fri, 23 Jan 2026 11:30:42 +0000
+! Diff-Path: ../patches/2026.1.23.690.patch#ruadlist
+a13454 1
+||uwupad.me/static/lb/
+a17368 1
+uwupad.me##.native-ad-container
+a20267 1
+uwupad.me##a[href^="https://uwupad.me/advertisement/"]
+a22370 1
+uwupad.*##style:-abp-contains(lb-banner-height) {remove:true;}
+d23405 10
+a23414 8
+google-cloud.services,spac.me,spaces.im,spcs.bio,strip2.co,strip2.*,usersporn.com###sidebar > div[class]:last-child
+google-cloud.services,spac.me,spaces.im,spcs.bio,strip2.co,strip2.*,usersporn.com###siteContent > div:not([id]):not([class]) ~ div[class]
+google-cloud.services,spac.me,spaces.im,spcs.bio,strip2.co,strip2.*,usersporn.com##.rightbar__reklama
+google-cloud.services,spac.me,spaces.im,spcs.bio,strip2.co,strip2.*,usersporn.com##.tiled_cap
+google-cloud.services,spac.me,spaces.im,spcs.bio,strip2.co,strip2.*,usersporn.com##.tiles_wrapper > .js-file_item ~ div:not([class*="tiled"])
+google-cloud.services,spac.me,spaces.im,spcs.bio,strip2.co,strip2.*,usersporn.com##div[id][class][style="min-height:150px"]
+google-cloud.services,spac.me,spaces.im,spcs.bio,strip2.co,strip2.*,usersporn.com#?#div[class]:-abp-has(> a[title] ~ a[title] > div[class])
+||world/$third-party,script,domain=google-cloud.services|spac.me|spaces.im|spcs.bio|strip2.co|usersporn.com
+a26694 1
+uwupad.me###uwu-shield
+d28753 1
+d28797 1
+a29078 1
+uwupad.me##+js(remove-node-text, script, checkAdBlock)
+a29084 1
+uwupad.me##+js(remove-node-text, style, lb-banner-height)
+a29307 3
+google-cloud.services,spac.me,spaces.im,spcs.bio,strip2.co,strip2.*,usersporn.com##+js(abort-current-inline-script, __require, /clickunder/)
+google-cloud.services,spac.me,spaces.im,spcs.bio,strip2.co,strip2.*,usersporn.com##+js(abort-on-property-read, Object.prototype.initOnPlay)
+google-cloud.services,spac.me,spaces.im,spcs.bio,strip2.co,strip2.*,usersporn.com##+js(set, Object.prototype.ads/mobiads, undefined)
