@@ -1,8 +1,8 @@
-diff name:ruadlist lines:89 checksum:02c0c1016c
+diff name:ruadlist lines:97 checksum:1ba5774046
 d4 2
 a5 2
-! Last modified: Fri, 23 Jan 2026 11:30:42 +0000
-! Diff-Path: ../patches/2026.1.23.690.patch#ruadlist
+! Last modified: Fri, 23 Jan 2026 16:45:06 +0000
+! Diff-Path: ../patches/2026.1.23.1005.patch#ruadlist
 a382 1
 ||agl010.pro^$third-party
 a481 1
@@ -38,11 +38,17 @@ amic.ru,anime-bit.ru,hi-fi.ru,inflora.ru,lifenews.ru,lifenews78.ru,obozrevatel.c
 d19525 1
 a20265 1
 uwupad.me##a[href^="https://uwupad.me/advertisement/"]
+d22312 2
+a22313 2
+||static.dzeninfra.ru/s3/zen-apps/dzen-layout/$script
+||static.dzeninfra.ru/s3/zen-apps/subscriptions/$script
 d22338 1
 a22338 1
 ||pikabu.ru/ajax/*?nGfR6=$xmlhttprequest
 a22368 1
 uwupad.*##style:-abp-contains(lb-banner-height) {remove:true;}
+a22703 1
+dzen.ru##[id*="20-"]
 d23403 10
 a23412 8
 google-cloud.services,spac.me,spaces.im,spcs.bio,strip2.co,strip2.*,usersporn.com###sidebar > div[class]:last-child
@@ -80,6 +86,8 @@ a29074 1
 uwupad.me##+js(remove-node-text, script, checkAdBlock)
 a29080 1
 uwupad.me##+js(remove-node-text, style, lb-banner-height)
+a29165 1
+nnm-club.me,nnmclub.ro,nnmclub.to##+js(set-cookie, clear, ok, , reload, 1)
 d29175 1
 a29175 1
 championat.com,ferra.ru,gazeta.press,gazeta.ru,indicator.ru,lenta.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,secretmag.ru,wmj.ru##+js(set-cookie, unity_pause_sso, 1, '', reload, 1)

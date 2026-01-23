@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 23 Jan 2026 11:30:42 +0000
-! Diff-Path: ../patches/2026.1.23.690.patch#ruadlist
+! Last modified: Fri, 23 Jan 2026 16:45:06 +0000
+! Diff-Path: ../patches/2026.1.23.1005.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22314,8 +22314,8 @@ ictv.ua,vikna.tv##div[id^="div-gpt-ad-"]
 ||dzen.ru/articles$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/news$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/pogoda/$script
-||static.dzeninfra.ru/s3/zen-apps/dzen-mobile/$script
-||static.dzeninfra.ru/s3/zen-apps/news-site/$script
+||static.dzeninfra.ru/s3/zen-apps/dzen-layout/$script
+||static.dzeninfra.ru/s3/zen-apps/subscriptions/$script
 $csp=script-src-attr 'none',domain=eurointegration.com.ua|sportanalytic.com|notebookcheck-ru.com
 /^https?://24smi\.org/*[/]*[/][^\s]{8,}/$xmlhttprequest,domain=24smi.org
 ://mail.ru$csp=img-src 'self' https:
@@ -22707,6 +22707,7 @@ news.mail.ru#?#aside div:-abp-has(> div:only-child:empty)
 news.mail.ru##body > div > style + div[id]
 ! Дзен новости Mail-edition
 dzen.ru##[id*="10-"]
+dzen.ru##[id*="20-"]
 dzen.ru##[id*="_R-A-"]
 dzen.ru##[id*="_R-E-"]
 dzen.ru##[id*="_R-I-"]
@@ -29170,6 +29171,7 @@ disgustingmen.com##+js(set-cookie, _redirect_, 0, , reload, 1)
 myshows.me##+js(set-cookie, adBlockModal, true)
 champion.com.ua##+js(set-cookie, age_confirmed, 1)
 direct.farm##+js(set-cookie, callToRegisterClosed, true)
+nnm-club.me,nnmclub.ro,nnmclub.to##+js(set-cookie, clear, ok, , reload, 1)
 liga.net##+js(set-cookie, cookieAccepted, true)
 ixbt.com##+js(set-cookie, cookie_accept, 1)
 avito.ru##+js(set-cookie, cookie_consent_shown, 1)
