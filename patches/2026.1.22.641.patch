@@ -1,10 +1,13 @@
-diff name:ruadlist lines:67 checksum:1147aeb741
+diff name:ruadlist lines:75 checksum:8664a9f31b
 d4 2
 a5 2
-! Last modified: Sat, 24 Jan 2026 12:58:47 +0000
-! Diff-Path: ../patches/2026.1.24.778.patch#ruadlist
+! Last modified: Sat, 24 Jan 2026 17:28:39 +0000
+! Diff-Path: ../patches/2026.1.24.1048.patch#ruadlist
 a382 1
 ||agl010.pro^$third-party
+d10447 1
+a10447 1
+$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: *.addtoany.com *.amazonaws.com *.cloudflare.com content-loader.com *.dmca.com *.disqus.com *.disquscdn.com *.enduro.team *.facebook.com *.getsitecontrol.com accounts.google.com apis.google.com cse.google.com *.google.com/cse/ *.google.com/complete/ *.google.com/recaptcha/ translate.google.com www.google.com *.googleapis.com *.googletagmanager.com *.gstatic.com/recaptcha/ *.html-load.com *.icon-icons.com *.instagram.com *.jivosite.com *.jquery.com *.keycaptcha.com *.sendpulse.com *.sharethis.com cdn.snigelweb.com *.po.st *.threadloom.com *.tiktok.com *.trustpilot.com *.twitter.com vk.com www.youtube.com *.dev *.io *.net *.org *.ru *.ua,domain=agroter.com.ua|alensat.com|allbasketball.org|askentire.net|autonews.co.ua|autosoftos.com|babla.ru|bio-lessons.ru|callfilter.app|cardiagram.com.ua|clickthis.blog|coollib.net|delo.ua|elegantwoman.kyiv.ua|enduro.team|eurointegration.com.ua|farposst.ru|findhow.org|for-driver.info|gazeta-misto.te.ua|golos.te.ua|icon-icons.com|ilenta.com|index.minfin.com.ua|inforesist.org|kovelpost.com|kreschatic.kiev.ua|kurs.com.ua|mirlib.ru|modfix.ru|musinfo.net|newsyou.info|notebookcheck-ru.com|nsn.net.ua|ontvtime.ru|orbit-games.com|pb-news.info|perpendicular.pro|pes-files.ru|pingvin.pro|poezdato.net|poizdato.net|pravda.com.ua|rovesnyknews.te.ua|ruboard.website|skidkaonline.by|skidkaonline.ru|sundries.ua|tenews.org.ua|ternopillive.com|tribun.com.ua|uapress.kyiv.ua|valorantinfo.com|vesti-ua.net|vkazivka.com|wallpapershome.ru|xn--80aaukc.xn--j1amh
 a12812 2
 ||qafqazinfo.az/banners/
 ||qafqazinfo.az/public/site/js/reklam.js
@@ -18,6 +21,7 @@ uwupad.me##a[href^="https://uwupad.me/advertisement/"]
 d20488 1
 a20488 1
 101.ru,101kofemashina.ru,1in.am,alau.kz,alexua.tv,animejapan.tv,autosport.com.ru,bit.ua,bugaga.ru,c-inform.info,comments.ua,csgamer.ru,ctv7.ru,cvnews.cv.ua,dead-serial.com,e-libra.ru,epravda.com.ua,fashiony.ru,fclmnews.ru,fishki.net,forpost.lviv.ua,game2day.ru,gameinside.ua,ggscore.com,gorod.dp.ua,grimm-online.org,gta.com.ua,horrorzone.ru,ifnews.org.ua,igry-online.net,itechua.com,izbezhat-nakazania.com,jetsetter.ua,jut.su,kievvlast.com.ua,kinoafisha.info,ko.com.ua,kosti-tv.com,kushvsporte.ru,likeni.ru,lovesun.by,lvnews.org.ua,mac-torrent-download.net,madjong-besplatno.ru,mirf.ru,moldfootball.com,mybrazz.club,nashkiev.ua,ne-kurim.ru,orelgrad.ru,pesikot.org,pimpletv.ru,playua.net,post-tracker.ru,povarenok.ru,prodota.ru,prosports.kg,prosports.kz,prosportua.com,qafqazinfo.az,relook.ru,rvnews.rv.ua,saratovnews.ru,shuba.life,sopsport.org,spletnica-tv.com,strela-online.com,teenwolf-tv.com,tenews.org.ua,tg.telepult.pro,the-geek.ru,theflash-tv.com,topfile.tj,traktorist.ua,uafix.net,uanews.org.ua,udargol.com,upl.ua,vskazke-tv.com,zab.ru,zorgee.ru##body > a[href][target="_blank"]
+d21081 1
 d21232 1
 a21232 1
 bina.az,bitpump.ru,chem21.info,enovosty.com,ogorodnik.com,orelgrad.ru,propozitsiya.com,qafqazinfo.az,snow-motion.ru,stadion.uz,tap.az,turbo.az,uralpress.ru##div[id*="banner"]
@@ -47,9 +51,13 @@ a28961 1
 rambler.ru##+js(href-sanitizer, a[href*="?utm_"][data-main-link], +https)
 a29053 1
 rutube.ru##+js(prevent-addEventListener, click, showRedirectPopup)
+d29073 1
+a29073 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /Ad.block|Adb-|AdGuard|dblo|tick/)
 a29077 1
 uwupad.me##+js(remove-node-text, script, checkAdBlock)
-a29083 1
+a29083 2
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, style, epom-brend)
 uwupad.me##+js(remove-node-text, style, lb-banner-height)
 a29168 1
 nnm-club.me,nnmclub.ro,nnmclub.to##+js(set-cookie, clear, ok, , reload, 1)
