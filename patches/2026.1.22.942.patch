@@ -1,16 +1,25 @@
-diff name:ruadlist lines:51 checksum:fefdcef73e
+diff name:ruadlist lines:66 checksum:1147aeb741
 d4 2
 a5 2
-! Last modified: Sat, 24 Jan 2026 07:28:58 +0000
-! Diff-Path: ../patches/2026.1.24.448.patch#ruadlist
+! Last modified: Sat, 24 Jan 2026 12:58:47 +0000
+! Diff-Path: ../patches/2026.1.24.778.patch#ruadlist
 a382 1
 ||agl010.pro^$third-party
+a12812 2
+||qafqazinfo.az/banners/
+||qafqazinfo.az/public/site/js/reklam.js
 a13453 1
 ||uwupad.me/static/lb/
 a17367 1
 uwupad.me##.native-ad-container
 a20266 1
 uwupad.me##a[href^="https://uwupad.me/advertisement/"]
+d20487 1
+a20487 1
+101.ru,101kofemashina.ru,1in.am,alau.kz,alexua.tv,animejapan.tv,autosport.com.ru,bit.ua,bugaga.ru,c-inform.info,comments.ua,csgamer.ru,ctv7.ru,cvnews.cv.ua,dead-serial.com,e-libra.ru,epravda.com.ua,fashiony.ru,fclmnews.ru,fishki.net,forpost.lviv.ua,game2day.ru,gameinside.ua,ggscore.com,gorod.dp.ua,grimm-online.org,gta.com.ua,horrorzone.ru,ifnews.org.ua,igry-online.net,itechua.com,izbezhat-nakazania.com,jetsetter.ua,jut.su,kievvlast.com.ua,kinoafisha.info,ko.com.ua,kosti-tv.com,kushvsporte.ru,likeni.ru,lovesun.by,lvnews.org.ua,mac-torrent-download.net,madjong-besplatno.ru,mirf.ru,moldfootball.com,mybrazz.club,nashkiev.ua,ne-kurim.ru,orelgrad.ru,pesikot.org,pimpletv.ru,playua.net,post-tracker.ru,povarenok.ru,prodota.ru,prosports.kg,prosports.kz,prosportua.com,qafqazinfo.az,relook.ru,rvnews.rv.ua,saratovnews.ru,shuba.life,sopsport.org,spletnica-tv.com,strela-online.com,teenwolf-tv.com,tenews.org.ua,tg.telepult.pro,the-geek.ru,theflash-tv.com,topfile.tj,traktorist.ua,uafix.net,uanews.org.ua,udargol.com,upl.ua,vskazke-tv.com,zab.ru,zorgee.ru##body > a[href][target="_blank"]
+d21231 1
+a21231 1
+bina.az,bitpump.ru,chem21.info,enovosty.com,ogorodnik.com,orelgrad.ru,propozitsiya.com,qafqazinfo.az,snow-motion.ru,stadion.uz,tap.az,turbo.az,uralpress.ru##div[id*="banner"]
 d22313 2
 a22314 2
 ||static.dzeninfra.ru/s3/zen-apps/dzen-layout/$script
@@ -35,6 +44,8 @@ d28752 1
 d28796 1
 a28960 1
 rambler.ru##+js(href-sanitizer, a[href*="?utm_"][data-main-link], +https)
+a29052 1
+rutube.ru##+js(prevent-addEventListener, click, showRedirectPopup)
 a29076 1
 uwupad.me##+js(remove-node-text, script, checkAdBlock)
 a29082 1
@@ -46,7 +57,11 @@ d29178 1
 a29178 1
 championat.com,ferra.ru,gazeta.press,gazeta.ru,indicator.ru,lenta.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,secretmag.ru,wmj.ru##+js(set-cookie, unity_pause_sso, 1, '', reload, 1)
 d29180 1
+a29207 2
+gamemag.ru##.content-text:has(em:has-text(erid:)) a > strong:style(font-weight: inherit !important)
+gamemag.ru##.content-text:has(em:has-text(erid:)) a:style(pointer-events: none !important; color: inherit !important)
 a29307 3
 google-cloud.services,spac.me,spaces.im,spcs.bio,strip2.co,strip2.*,usersporn.com##+js(abort-current-inline-script, __require, /clickunder/)
 google-cloud.services,spac.me,spaces.im,spcs.bio,strip2.co,strip2.*,usersporn.com##+js(abort-on-property-read, Object.prototype.initOnPlay)
 google-cloud.services,spac.me,spaces.im,spcs.bio,strip2.co,strip2.*,usersporn.com##+js(set, Object.prototype.ads/mobiads, undefined)
+d29587 4
