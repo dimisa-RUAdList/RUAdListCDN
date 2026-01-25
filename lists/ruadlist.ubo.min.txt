@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 25 Jan 2026 08:38:15 +0000
-! Diff-Path: ../patches/2026.1.25.518.patch#ruadlist
+! Last modified: Sun, 25 Jan 2026 13:00:55 +0000
+! Diff-Path: ../patches/2026.1.25.780.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -14627,6 +14627,7 @@ novate.ru###right > h2 ~ div + br + br + h2
 novate.ru#?##right > h2:-abp-contains(Рекомендуем)
 novate.ru###right > noindex ~ .bordered
 komplat.by###right-banner-container
+questtime.net###right-bot
 astromeridian.ru###right-column > noindex
 aptekamos.ru###right-data-container [bannerid]
 freepiks.ru,opensharing.org###right-image
@@ -20574,6 +20575,7 @@ dari-radost13.ru##body > table
 itnews.com.ua##body > table > tbody > tr > td[style^="height:112px;"]
 pixs.ru##body > table > tbody > tr > td[valign][width]
 tyndex.ru##body > table > tbody > tr:first-child > td:first-child + td[valign="top"][align="left"]
+forum.ru-board.com##body > table:first-of-type + br
 chipfind.ru##body > table[height="80"]
 www.google.com,www.google.ru##body > table[style="border: 1px solid #369"]
 christianka.bratstvo.org##body > table[width="99%"] + p[align="center"]
@@ -26580,7 +26582,6 @@ gbsmp.ru#@#img[width="728"][height="90"]
 @@||player.bidmatic.io/microplayer/*/stream.es.js|$script,domain=play.tavr.media
 @@||print-post.com^*.js$script,domain=print-post.com
 @@||pvpru.com/css/banners/300$domain=pvpru.com
-@@||questtime.net/js/adverts.js$script,domain=questtime.net
 @@||radio-archive.ru/adblockDetector.js|$script,domain=radio-archive.ru
 @@||radiorecord.fm/googleads.js|$script,domain=radiorecord.fm
 @@||radioscope.in.ua/res/js/app.js?ads=1|$xmlhttprequest,domain=radioscope.in.ua
@@ -26670,6 +26671,9 @@ mks.space#@#.ads_banner
 newnavitel.blogspot.com#@##AdSense1
 num-words.com#@#.advert-banner
 pvpru.com#@##ad_global_above_footer
+questtime.net#@#.ad-unit
+questtime.net#@#.ad-zone
+questtime.net#@#.ads-banner
 rap-me.online#@#.adv-banner
 razlozhi.ru#@#div[id^="adfox_"]
 tests24.su#@##header-ad
@@ -29079,6 +29083,7 @@ game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorka
 ritsatv.ru##+js(remove-node-text, script, /adBlock|adblock-warning/)
 tapochek.net##+js(remove-node-text, script, /document.head.appendChild|document.referrer/)
 inforesist.org##+js(remove-node-text, script, /gtag\('event'/)
+questtime.net##+js(remove-node-text, script, MsgNoAD)
 pikabu.ru##+js(remove-node-text, script, addPlaceholder)
 uwupad.me##+js(remove-node-text, script, checkAdBlock)
 agronews.ua,agroreview.com,agroweek.com##+js(remove-node-text, script, clickedOnContent)
