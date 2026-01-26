@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 26 Jan 2026 09:45:55 +0000
-! Diff-Path: ../patches/2026.1.26.585.patch#ruadlist
+! Last modified: Mon, 26 Jan 2026 14:41:00 +0000
+! Diff-Path: ../patches/2026.1.26.880.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22404,7 +22404,7 @@ mail.ru,sportmail.ru##.media-ui-slider-track > div:last-child [data-qa="Loader"]
 freesoft.ru##.modal-backdrop
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
-dtf.ru##.rotator *
+dtf.ru##.rotator
 dtf.ru##.sticky-stack-sidebar-section .loader + div[id][class]:empty
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(/min-height: 20.px|min-height: 29.px|min-height: 30.px|min-height: 300./))
 dtf.ru##.supbar--top * *
@@ -22437,14 +22437,14 @@ rg.ru##div[id][class*="__"]:empty
 shedevrum.ai##div[id^="header_block_"]
 sdamgia.ru##div[id^="yandex_vario"]
 liveinternet.ru##div[style*="!important; "]
-dtf.ru##div[style*="banner-height"] * *
+dtf.ru##div[style*="banner-height"]
 sdamgia.ru##div[style*="important;"][style*="width:"][style*="height:"] *
 www.drive2.ru##iframe[style="display: block; border-width: 0px;"]
 www.drive2.ru##iframe[style="opacity: 1;"]
 liveinternet.ru##style + div > div > div > div > div a
 !#endif
 ! Блокировка ресурсов, намеренно продвигающих вредоносное ПО и фейки
-apad2.top,besplatnyeprogrammy.ru,byrutgame.org,hdrip.info,inferno.games,mediagetguru.ru,monna2.top,only-soft.org,torrent-music.ru,torrent-soft.pro,torrentigo.net,where-game.ru##:not(this-site-promotes-malware)
+apad2.top,besplatnyeprogrammy.ru,byrutgame.org,hdrip.info,mediagetguru.ru,monna2.top,torrent-music.ru,torrent-soft.net##:not(this-site-promotes-malware)
 ! Намеренное продвижение фейков и мошенников
 ||tele.ru^$xmlhttprequest,domain=tele.ru
 ! Плеер venom, в основном для ua-юзеров, примеры >
@@ -28742,6 +28742,7 @@ inoreader.com###reader_pane:style(padding-right: unset !important)
 inoreader.com###sinner_container:style(display: block !important; z-index: 0 !important)
 rambler.ru###summary ~ div:has(> [id^="cluster-video-ad"]):remove()
 pronpic.org###vO5STmSLgNAkebzSluI8coxpDgsG97g:style(height: 1px !important; min-height: 1px !important)
+$doc,reason=malicious,domain=apad2.top|besplatnyeprogrammy.ru|byrutgame.org|hdrip.info|mediagetguru.ru|monna2.top|torrent-music.ru|torrent-soft.net
 */bens/vinos.js$popunder
 kolizhanka.com.ua,miyzvuk.net,ozon.ru##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important)
 captcha-api.yandex.ru,id.vk.ru,passport.yandex.ru,webagent.mail.ru#@#+js()
@@ -29460,11 +29461,13 @@ e.mail.ru,octavius.mail.ru##+js(no-setTimeout-if, MIMIC_FORCE)
 e.mail.ru,octavius.mail.ru##+js(no-setTimeout-if, _runBatch, 100)
 e.mail.ru,octavius.mail.ru##+js(set-attr, .html-fishing a, target, true)
 e.mail.ru,octavius.mail.ru##+js(set-constant, Object.prototype.hasAdBlock, null)
+e.mail.ru,octavius.mail.ru##.application-mail__layout_main + .react-async
 e.mail.ru,octavius.mail.ru##.vkuiPopoutRoot:has(a[href^="https://vk.cc/"])
 e.mail.ru,octavius.mail.ru##body > div > .letter-list-item-adv:style(display: block !important)
 e.mail.ru,octavius.mail.ru##body > div[style*="top:"][style*="position:"][style*="visibility:"] #app-canvas div:style(display: block !important)
 e.mail.ru,octavius.mail.ru##div[class^="fields_container-"] > div > div[style="display: block;"]
 e.mail.ru,octavius.mail.ru##div[class^="fields_container-"] > div > div[style="display: block;"]:has([data-name="from"] > [class^="containerInner-"] > [class^="label-"] > div:not([class^="beautifulAddressEntry-"])):style(display: block !important)
+||vkvideo.ru/video_ext.php?$subdocument,domain=e.mail.ru|octavius.mail.ru
 ! VK-брендинг
 light.mail.ru##.portal-menu__logo__link:style(width: 90px !important; !important; overflow: hidden !important)
 ! Фикс для маленьких экранов
