@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 27 Jan 2026 15:39:25 +0000
-! Diff-Path: ../patches/2026.1.27.939.patch#ruadlist
+! Last modified: Tue, 27 Jan 2026 20:34:36 +0000
+! Diff-Path: ../patches/2026.1.27.1234.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -12037,6 +12037,8 @@ igdz1.ru^$script,domain=igdz.ru
 ||kinogo.media/1xads/
 ||kinogo.media/ads/
 ||kinogo.media/templates/kinogo/js/ad.js
+||kinogo.media/templates/kinogo/js/adbetv.js
+||kinogo.media/templates/kinogo/js/bets-
 ||kinokod.me/mg.png
 ||kinokubik.com/templates/kinokubik/images/mgbutton2.png
 ||kinoman.online/*.xml|$~third-party,xmlhttprequest
@@ -28037,7 +28039,6 @@ avtorambler.com,rambler.ru##.commercial-branding > div script ~ div > div:last-c
 avtorambler.com,rambler.ru##.commercial-branding > div script ~ div > div:style(min-height: 0 !important)
 avtorambler.com,rambler.ru##.commercial-branding article > div:only-child > div:first-child + div > div > div:first-child + div:style(box-shadow: none !important)
 avtorambler.com,rambler.ru##.commercial-branding:style(margin-top: unset !important; margin-bottom: unset !important)
-rambler.ru##[data-cerber="weather-widget"]:style(max-height: 200px !important)
 mail.rambler.ru##div[class*="WithRightBarWrapper"] > div[class*="AutoAppContainer"] ~ *
 mail.rambler.ru##div[class*="WithRightBarWrapper"] > div[class*="AutoAppContainer"]:style(max-width: 100% !important)
 horoscopes.rambler.ru,tv.rambler.ru,weather.rambler.ru##div[class]:style(min-height: 0 !important)
