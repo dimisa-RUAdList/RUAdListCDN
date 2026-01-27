@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 27 Jan 2026 05:38:04 +0000
-! Diff-Path: ../patches/2026.1.27.338.patch#ruadlist
+! Last modified: Tue, 27 Jan 2026 10:42:54 +0000
+! Diff-Path: ../patches/2026.1.27.642.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -12036,6 +12036,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||kinogo.la/code/$xmlhttprequest
 ||kinogo.media/1xads/
 ||kinogo.media/ads/
+||kinogo.media/templates/kinogo/js/ad.js
 ||kinokod.me/mg.png
 ||kinokubik.com/templates/kinokubik/images/mgbutton2.png
 ||kinoman.online/*.xml|$~third-party,xmlhttprequest
@@ -22345,7 +22346,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||news.mail.ru/-/*.js?
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
-||pikabu.ru/ajax/*?nGfR6=$xmlhttprequest
+||pikabu.ru/ajax/*?n8Ljw=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -29253,7 +29254,6 @@ player.twitch.tv##.ubo-overlay > .player-ad-notice
 dynamo.kiev.ua##.video-scroll:remove()
 lenta.ru##.vk-video-popup:remove()
 vk.com,vk.ru##.wall_module > div[id]:first-child > :matches-prop(innerHTML="/format_edit|mradx\.|media_on_/")
-/(aniqit|kodik)./$subdocument,removeparam=geoblock
 /^https?://yastatic\.net\/www\/_\/[^\s]{150,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 /sm\.news/[^\s]{80,}/$script,xmlhttprequest,badfilter,domain=sm.news
 24parik.*,parik24.*##+js(window-close-if, /adtag|creative_id/)
