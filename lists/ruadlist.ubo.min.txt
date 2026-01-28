@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 28 Jan 2026 06:52:00 +0000
-! Diff-Path: ../patches/2026.1.28.412.patch#ruadlist
+! Last modified: Wed, 28 Jan 2026 11:32:09 +0000
+! Diff-Path: ../patches/2026.1.28.692.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10075,6 +10075,7 @@ galinfo.com.ua###fader
 fon-ki.com,megomult.ru###fancybox-overlay
 econet.ru,formulalubvi.com,humor.fm###fb-popup
 humor.fm###fb-popup-bg
+pravda-nn.ru###fb-root
 fresher.ru###fbpopup
 fishki.net###fishki-prompt-widget
 astv.ru###fullscreenmf
@@ -10177,7 +10178,7 @@ krugo.ru##.lwsoc
 amedia.online##.mfp-hide
 ##.min-width-normal > #popup_container
 ##.min-width-normal > #popup_container ~ #fade
-top.thepo.st##.modal-backdrop
+pravda-nn.ru,top.thepo.st##.modal-backdrop
 svadbavo.ru##.modal-baner + .mask,.modal-baner
 wotexpress.info##.modal-block-hide-twitch
 womenzone.org##.modalFacebook
@@ -10223,6 +10224,7 @@ womanadvice.ru##body > #dialog-fb
 domfailov.ru##body > #pop-up-window
 secretmag.ru##body > #subscribe-popup
 vika-plus.ru##body > #usac
+pravda-nn.ru##body > .active
 velosipedinfo.ru##body > .b-modal
 mynizhyn.com,pechera.info##body > .overlay[style="display: block;"]
 bs-life.ru##body > .ui-widget.ui-dialog
@@ -15131,7 +15133,7 @@ alvin-almazov.ru##.active_bet
 agravery.com,babla.ru,clickthis.blog,cont.ws,dumskaya.net,filehippo.com,geekmir.ru,ifun.ru,inform-ua.info,kinda.media,klops.ru,kosht.media,liga.net,lookmeet.tv,mmovote.ru,myshared.ru,news.pn,obsuzhday.com,pik.net.ua,primpogoda.ru,prostopleer.com,regmarkets.ru,riavrn.ru,tut.by,vgolos.ua,vogue.ru,vz.ru,zaks.ru##.ad
 versii.com##.ad ~ noindex
 gta5-mods.com##.ad-above-mod-dl-btn
-online.zakon.kz,zaycev.fm##.ad-banner
+online.zakon.kz,pravda-nn.ru,zaycev.fm##.ad-banner
 newsinfo.ru##.ad-before
 it-here.ru##.ad-bottom-dc
 abw.by##.ad-branding
@@ -15930,6 +15932,7 @@ tamboff.ru##.bodyline ~ td[style="width: 240px;vertical-align: top;"]
 factroom.ru##.boff
 vse-pro-sport.com.ua,vseprosport.by,vseprosport.kz,vseprosport.ru##.bonus-btn
 ua-football.com##.bonuses
+readli.net##.book-actions__button[href^="https://www.litres.ru/"]
 vklasse.online#?#.book-box:-abp-has(> [class*="banner"])
 alvin-almazov.ru##.book_banner
 etextlib.ru##.book_bl > div[style]:not([id]):not([class])
@@ -17730,7 +17733,7 @@ rutr.life,rutracker.lib,rutracker.net,rutracker.org##.postLink[href*="citilink.r
 repost.uz##.post__banner
 apnews.com.ua##.post__bottom-banner
 dermatitanet.ru##.post__entry > div[style^="background"]
-1plus1.ua##.post__partners
+1plus1.ua,pravda-nn.ru##.post__partners
 apnews.com.ua##.post__partners-news
 talkwebber.ru##.post_block ~ table
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##.post_body center > a[target="_blank"]
