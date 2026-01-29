@@ -1,8 +1,8 @@
-diff name:ruadlist lines:45 checksum:e6adb7476c
+diff name:ruadlist lines:54 checksum:09d94603f6
 d4 2
 a5 2
-! Last modified: Thu, 29 Jan 2026 07:48:54 +0000
-! Diff-Path: ../patches/2026.1.29.468.patch#ruadlist
+! Last modified: Thu, 29 Jan 2026 13:19:23 +0000
+! Diff-Path: ../patches/2026.1.29.799.patch#ruadlist
 a10077 1
 pravda-nn.ru###fb-root
 d10180 1
@@ -24,6 +24,9 @@ readli.net##.book-actions__button[href^="https://www.litres.ru/"]
 d17728 1
 a17728 1
 1plus1.ua,pravda-nn.ru##.post__partners
+d22320 1
+a22320 1
+||static.dzeninfra.ru/s3/zen-apps/mobile/$script
 d22346 1
 a22346 1
 ||pikabu.ru/ajax/*?n8Ljw=$xmlhttprequest
@@ -36,10 +39,16 @@ dtf.ru##div[style*="banner-height"]
 d22447 1
 a22447 1
 apad2.top,besplatnyeprogrammy.ru,byrutgame.org,hdrip.info,mediagetguru.ru,monna2.top,torrent-music.ru,torrent-soft.net##:not(this-site-promotes-malware)
+a22713 1
+dzen.ru##[id*="30-"]
 d28037 1
 a28744 1
 $doc,reason=malicious,domain=apad2.top|besplatnyeprogrammy.ru|byrutgame.org|hdrip.info|mediagetguru.ru|monna2.top|torrent-music.ru|torrent-soft.net
+a28967 1
+e.mail.ru,mail.rambler.ru,mail.yandex.ru,octavius.mail.ru##+js(href-sanitizer, a[href*="://opros.mosreg.ru/callback/survey"][href*="/direct_url/?redirect="], ?redirect)
 d29253 1
+a29398 1
+||video.sports.ru/embed/*autoplay=1$subdocument,removeparam=autoplay
 a29462 1
 e.mail.ru,octavius.mail.ru##.application-mail__layout_main + .react-async
 a29467 1

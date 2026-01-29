@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 29 Jan 2026 07:48:54 +0000
-! Diff-Path: ../patches/2026.1.29.468.patch#ruadlist
+! Last modified: Thu, 29 Jan 2026 13:19:23 +0000
+! Diff-Path: ../patches/2026.1.29.799.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22325,7 +22325,7 @@ ictv.ua,vikna.tv##div[id^="div-gpt-ad-"]
 ||dzen.ru/articles$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/news$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/pogoda/$script
-||static.dzeninfra.ru/s3/zen-apps/dzen-layout/$script
+||static.dzeninfra.ru/s3/zen-apps/mobile/$script
 ||static.dzeninfra.ru/s3/zen-apps/subscriptions/$script
 $csp=script-src-attr 'none',domain=eurointegration.com.ua|sportanalytic.com|notebookcheck-ru.com
 /^https?://24smi\.org/*[/]*[/][^\s]{8,}/$xmlhttprequest,domain=24smi.org
@@ -22719,6 +22719,7 @@ news.mail.ru##body > div > style + div[id]
 ! Дзен новости Mail-edition
 dzen.ru##[id*="10-"]
 dzen.ru##[id*="20-"]
+dzen.ru##[id*="30-"]
 dzen.ru##[id*="_R-A-"]
 dzen.ru##[id*="_R-E-"]
 dzen.ru##[id*="_R-I-"]
@@ -28973,6 +28974,7 @@ vz.ru##+js(href-sanitizer, a[href*="/redir/"], ?exturl)
 vz.ru##+js(href-sanitizer, a[href*="/redir/"], ?vzurl)
 dtf.ru,vc.ru##+js(href-sanitizer, a[href*="/redirect?to="], ?to)
 opennet.me,opennet.ru##+js(href-sanitizer, a[href*="://click.opennet.ru/cgi-bin/"], ?to)
+e.mail.ru,mail.rambler.ru,mail.yandex.ru,octavius.mail.ru##+js(href-sanitizer, a[href*="://opros.mosreg.ru/callback/survey"][href*="/direct_url/?redirect="], ?redirect)
 appleinsider.ru##+js(href-sanitizer, a[href*="?goto=https"], ?goto)
 rambler.ru##+js(href-sanitizer, a[href*="?utm_"][data-main-link], +https)
 kluchikipro.ru##+js(href-sanitizer, a[href*="deeplink="], ?deeplink)
@@ -29403,6 +29405,7 @@ ya.ru,yandex.*##.simple-popup__overlay:remove()
 ||v*.plrjs.org/*.xml|$important,xmlhttprequest,redirect=noop.txt
 ||video.matchtv.ru/iframe/feed/*autostart=1$subdocument,removeparam=autostart
 ||video.matchtv.ru/iframe/feed/*autostart=1$subdocument,removeparam=skin_name
+||video.sports.ru/embed/*autoplay=1$subdocument,removeparam=autoplay
 ||widgets.kinopoisk.ru/discovery/trailer/*&loop=1&autoplay=1$subdocument,domain=www.kinopoisk.ru
 ||yandex.ru/ads/system/context.js$script,redirect=noopjs,domain=tragtorr.in|tragtorr.info
 ||yastatic.net/s3/home-static/feeds/$third-party
