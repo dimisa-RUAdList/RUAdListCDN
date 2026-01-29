@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 29 Jan 2026 13:19:23 +0000
-! Diff-Path: ../patches/2026.1.29.799.patch#ruadlist
+! Last modified: Thu, 29 Jan 2026 17:49:27 +0000
+! Diff-Path: ../patches/2026.1.29.1069.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -28459,7 +28459,7 @@ dzen.ru##body:style(overflow-y: unset !important)
 dzen.ru##div[class*="--corner-banner_"]
 dzen.ru##div[class*="__bannerContainer"]
 dzen.ru##div[class*="dzen-"][class*="-banner-"]
-dzen.ru##div[class*="dzen-desktop--feed"][class*="__ad-"]
+dzen.ru##div[class*="dzen-desktop--"][class*="__ad-"]
 dzen.ru##div[class*="dzen-desktop--feed-one-column-right-panel__ad"]
 dzen.ru##div[class*="dzen-desktop--top-sidebar-desktop-ad__root"]
 dzen.ru##div[id*="splashscreen"]
@@ -28488,6 +28488,7 @@ dzen.ru##.news-rubric-desktop__adv-column
 dzen.ru##.news-rubric-desktop__news > section > div > div[id]
 dzen.ru##.news-secondary-layout-column__secondary div[id]
 dzen.ru##[class^="news-site--Infinite"][class*="AdColumnItem-desktop__content"] > div[id*="-column_top"]
+dzen.ru##div:not(.news-rubric-desktop__adv-column) > div[class^="mg-sticky"]
 dzen.ru##div[class*="new"] [class$="__rubricator"] + div[class*=" "] > div:only-child
 dzen.ru,sportsdzen.ru##div[class^="news-site-"][class*="skeleton"]:style(background-color: transparent !important)
 dzen.ru##div[class^="news-site--"] > section ~ [id]
@@ -29272,6 +29273,7 @@ dzen.ru##:matches-path(/a/) div:matches-attr(/[a-z0-9]/=article-bottom-block) > 
 dzen.ru##:matches-path(/articles) div:has(> article > [class*="adBox"])
 ozon.ru##:matches-path(/kursk-sertifikaty) [data-lcp-name*="anner-"]:style(display: block !important)
 ozon.ru##:matches-path(/kursk-sertifikaty) div[data-widget="banner"]:style(display: block !important)
+dzen.ru##:matches-path(/news) div[id*="feed"] > div:not([id]) > div[id*="feed"]
 dzen.ru##:matches-path(articles) div[class^="article-feed--"] > div:matches-attr(/./=/card$/) ~ div[id]
 forum.ru-board.com##:matches-path(topic=51666) .dats > a[href="javascript:pasteN('AlAvis')"] > b:style(color: #00bfff !important)
 pronpic.org#@#:not(obhod-adblocka)
@@ -29607,7 +29609,7 @@ afisha.ru,autorambler.ru,championat.com,eda.ru,gazeta.press,gazeta.ru,lenta.ru,l
 dtf.ru##+js(addEventListener-defuser, click, '', elements, a[href^="/"][data-router-link])
 e.mail.ru##+js(no-setTimeout-if, '()=>n()', 50)
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(prevent-setTimeout, _0x)
-game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /blockPage|parseInt/)
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /agl007|blockPage/)
 e.mail.ru##+js(set-constant, Object.prototype.hasAdBlock, false)
 e.mail.ru#@#+js(set-constant, Object.prototype.hasAdBlock, null)
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##[style*=" 11111"]
