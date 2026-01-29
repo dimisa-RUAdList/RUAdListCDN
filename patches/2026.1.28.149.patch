@@ -1,8 +1,10 @@
-diff name:ruadlist lines:38 checksum:ea477e65c7
+diff name:ruadlist lines:45 checksum:5088cad103
 d4 2
 a5 2
-! Last modified: Thu, 29 Jan 2026 17:49:27 +0000
-! Diff-Path: ../patches/2026.1.29.1069.patch#ruadlist
+! Last modified: Thu, 29 Jan 2026 22:40:35 +0000
+! Diff-Path: ../patches/2026.1.29.1360.patch#ruadlist
+a5768 1
+||ssp.rutube.ru^
 a10077 1
 pravda-nn.ru###fb-root
 d10180 1
@@ -30,6 +32,11 @@ a28486 1
 dzen.ru##div:not(.news-rubric-desktop__adv-column) > div[class^="mg-sticky"]
 a28972 1
 e.mail.ru,mail.rambler.ru,mail.yandex.ru,octavius.mail.ru##+js(href-sanitizer, a[href*="://opros.mosreg.ru/callback/survey"][href*="/direct_url/?redirect="], ?redirect)
+d29123 1
+a29123 1
+ren.tv##+js(set-constant, Object.prototype.advert, undefined)
+a29124 1
+rutube.ru##+js(set-constant, Object.prototype.advertsByUrl, undefined)
 a29269 1
 dzen.ru##:matches-path(/news) div[id*="feed"] > div:not([id]) > div[id*="feed"]
 a29402 1
