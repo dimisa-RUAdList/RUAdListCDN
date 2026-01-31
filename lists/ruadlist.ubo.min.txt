@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 31 Jan 2026 14:36:06 +0000
-! Diff-Path: ../patches/2026.1.31.876.patch#ruadlist
+! Last modified: Sat, 31 Jan 2026 19:29:05 +0000
+! Diff-Path: ../patches/2026.1.31.1169.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10247,6 +10247,7 @@ daz3d.ru##body > span[id^="s"][style]
 esputnik.com,~webinars.esputnik.com##body.cl-noscroll > .cl-dialog[style*="position: fixed"]
 pinterest.com##div[class*="ScreenBanner"]
 lenta.ru##div[class*="cation js-"]
+rutube.ru##div[class*="portraitNoTouchScroll"] div[class^="controls-overlay-module__overlay"]
 noworries.news##div[class*="remodal"]
 muzofon.com##div[class*="simplemodal"]
 5sfer.com##div[class^="charlotte-"]
