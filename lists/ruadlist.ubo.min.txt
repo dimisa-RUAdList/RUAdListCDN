@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 01 Feb 2026 15:35:41 +0000
-! Diff-Path: ../patches/2026.2.1.935.patch#ruadlist
+! Last modified: Sun, 01 Feb 2026 20:38:14 +0000
+! Diff-Path: ../patches/2026.2.1.1238.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -11696,6 +11696,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||gamegpu.com/images/banners
 ||gameinside.ua^*/branding$image
 ||gamelayer.ru/dist/public/preloader.js
+||gamemag.ru/images/top-img$image
 ||gamer.ru/*branding
 ||gamer.ru/assets/skins/
 ||gamerpro.ru/images/adver/$image,object
@@ -28232,14 +28233,6 @@ stopgame.ru###preroll_mediaplayer
 stopgame.ru##body:style(cursor: default !important)
 stopgame.ru##div[id^="videoplayer_"][class^="iframe_wrapper"]:style(display: block !important)
 ! ---
-stratege.ru###footer:style(margin-top: 0 !important)
-stratege.ru##html.home > body idiv[class][id]:style(background: none !important)
-stratege.ru##html:style(background-color: #dbdbdb !important)
-! forum
-stratege.ru###vbulletin_html #globalcontent:style(margin-top: unset !important)
-stratege.ru###vbulletin_html .above_body:style(margin-bottom: auto !important)
-stratege.ru###vbulletin_html body > div[id][class]:style(background: none !important)
-! ---
 stravy.net##.right-sidebar:style(margin-top: 0 !important; overflow: hidden !important)
 ! ---
 study.ru###header:style(height: 94px !important)
@@ -29259,6 +29252,7 @@ pikabu.ru##.stories-feed__container > .story[data-author-name] ~ .story:not([dat
 pikabu.ru##.stories-feed__container > .story[data-author-name] ~ .story[data-context-actions*=",profile_hide,"]
 24tv.ua##.storify-story-img:style(display: unset !important)
 24tv.ua##.storify-story-video
+gamemag.ru##.top-img-wrap:remove()
 lenta.ru##.topic-body__content > .box-external-video:last-child:remove()
 lenta.ru##.topic-footer > div[class^="box-"][class$="-video"]:remove()
 player.twitch.tv##.ubo-overlay > .player-ad-notice
