@@ -1,12 +1,14 @@
-diff name:ruadlist lines:61 checksum:5856e2b8ae
+diff name:ruadlist lines:66 checksum:a74f447d8a
 d4 2
 a5 2
-! Last modified: Sun, 01 Feb 2026 05:34:20 +0000
-! Diff-Path: ../patches/2026.2.1.334.patch#ruadlist
+! Last modified: Sun, 01 Feb 2026 10:39:42 +0000
+! Diff-Path: ../patches/2026.2.1.639.patch#ruadlist
 a763 1
 ||bestspway.fun^$third-party
 a5768 1
 ||ssp.rutube.ru^
+a10238 1
+3dnews.ru##body > div[id][class][style^="display: block;"]
 a10247 1
 rutube.ru##div[class*="portraitNoTouchScroll"] div[class^="controls-overlay-module__overlay"]
 d10459 1
@@ -48,6 +50,9 @@ a28753 1
 $doc,reason=malicious,domain=apad2.top|besplatnyeprogrammy.ru|byrut.org.ru|byrutgame.org|hdrip.info|mediagetguru.ru|monna2.top|torrent-music.ru|torrent-soft.net
 a28980 1
 kichkas.biz,rsload.net##+js(href-sanitizer, a[href*="url=aHR0c"], ?url -base64)
+d29092 1
+a29092 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /Adb-|dGua|dblo|tick/)
 a29120 1
 meteum.ai##+js(set-constant, Object.prototype.BlockRenderSteps, undefined)
 d29128 1
