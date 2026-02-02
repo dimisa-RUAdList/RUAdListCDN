@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 02 Feb 2026 08:58:13 +0000
-! Diff-Path: ../patches/2026.2.2.538.patch#ruadlist
+! Last modified: Mon, 02 Feb 2026 11:44:27 +0000
+! Diff-Path: ../patches/2026.2.2.704.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21655,6 +21655,7 @@ sinoptik.ua##div[style^="margin"][style$="width: 300px;"]
 vgae.ru##div[style^="margin"][style*="-10px;"]
 onlinetv.one##div[style^="margin: 20px 0;min-height:"]
 xn----7sbb0bildcbgm8a.xn--p1ai##div[style^="max-width:"][style*="200deg"]
+get-save.com##div[style^="min-height: 250px;"]
 24tv.ua##div[style^="min-height: 250px;"][style*=" 50px"]
 cadelta.ru,modfarm.ru##div[style^="min-height: 250px;"][style*="background:"]
 smart-lab.ru##div[style^="min-height: 250px;"][style*="font-size: 0;"]
@@ -22327,8 +22328,8 @@ ictv.ua,vikna.tv##div[id^="div-gpt-ad-"]
 ||dzen.ru/articles$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/news$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/pogoda/$script
+||static.dzeninfra.ru/s3/zen-apps/desktop2/$script
 ||static.dzeninfra.ru/s3/zen-apps/mobile/$script
-||static.dzeninfra.ru/s3/zen-apps/subscriptions/$script
 $csp=script-src-attr 'none',domain=eurointegration.com.ua|sportanalytic.com|notebookcheck-ru.com
 /^https?://24smi\.org/*[/]*[/][^\s]{8,}/$xmlhttprequest,domain=24smi.org
 ://mail.ru$csp=img-src 'self' https:
