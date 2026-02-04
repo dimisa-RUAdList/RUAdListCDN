@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 04 Feb 2026 13:22:10 +0000
-! Diff-Path: ../patches/2026.2.4.802.patch#ruadlist
+! Last modified: Wed, 04 Feb 2026 19:03:18 +0000
+! Diff-Path: ../patches/2026.2.4.1143.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -8812,6 +8812,7 @@ by,~mail.ru,ru,ua##.banner_box
 ~smi.expert##a[href*="://smi.expert/"]
 ~smi.today##a[href*="://smi.today/"]
 ##a[href*="://softclicks.ru/"]
+##a[href*="://softdl.site/"]
 ##a[href*="://sugisatomi.com/"]
 ##a[href*="://superiortds.ru/"]
 ##a[href*="://takenewsoft.ru/"]
@@ -21813,6 +21814,7 @@ sovsport.ru##img[alt="bookmaker"]
 smartbobr.ru##img[alt="Али распродажа"]
 nov-pravda.ru##img[alt="Нацпроекты"]
 ura.news##img[alt="Реклама"]
+mloads.com##img[alt="Скачать бесплатно"]
 insanegames.ru##img[alt="Скачать"]
 nov-pravda.ru##img[alt="Тульские СМИ"]
 relasko.ru##img[alt="Читать онлайн"]
@@ -23693,6 +23695,7 @@ yandex.ru,yandex.*#?#.scroller__wrap > div[class^="minibadge"]:-abp-has(.serp-it
 ||yadi.sk^*direct?
 ||yandex-news.naydex.net^$subdocument
 ||yandex-pogoda.naydex.net^$subdocument
+||yandex.*/ads/system/context.js
 ||yandex.net/get-direct$domain=~e.mail.ru
 ||yandex.ru/maps/api/branding/
 ||yandex.ru/mapuid/$csp=script-src
