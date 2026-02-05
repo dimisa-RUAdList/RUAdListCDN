@@ -1,8 +1,8 @@
-diff name:ruadlist lines:61 checksum:18ba1e86a4
+diff name:ruadlist lines:76 checksum:7cfd595ea2
 d4 2
 a5 2
-! Last modified: Thu, 05 Feb 2026 09:57:43 +0000
-! Diff-Path: ../patches/2026.2.5.597.patch#ruadlist
+! Last modified: Thu, 05 Feb 2026 14:57:11 +0000
+! Diff-Path: ../patches/2026.2.5.897.patch#ruadlist
 d10302 1
 a10302 1
 /wp-content/uploads/pum/pum-site-$domain=belsat.eu|best-home-ideas.com|bizua.org|hariola.com|newsauto.com.ua|newsyou.info|spiker.club
@@ -33,6 +33,8 @@ a18787 1
 sichnews.ua##.vcex-image-banner
 a19245 1
 liza.ua##[data-ad-id]
+a19330 1
+irtafax.com##[data-sticky-offset="20"] > .td-fix-index:nth-child(-n+2)
 d19447 1
 a19447 1
 101.ru,19rus.info,2000.ua,5-tv.ru,56orb.ru,62info.ru,7info.ru,afanasy.biz,agitpro.su,allboxing.ru,anekdot.ru,argumenti.ru,baltnews.ee,belive.ru,bigpicture.ru,bombardir.ru,chehov-vid.ru,daily-inform.ru,dni.ru,dnpmag.com,do-slez.com,eadaily.com,eg.ru,ferra.ru,gazeta-tula.ru,glavnoe24.ru,gorobzor.ru,gorvesti.ru,govoritmoskva.ru,gubdaily.ru,hightech.plus,iarex.ru,inforeactor.ru,iz.ru,kirov-portal.ru,livelib.ru,m24.ru,melodrama1.com,mgorod.kz,mk.ru,myhistori.ru,nashgorod.ru,nation-news.ru,nevnov.ru,newinform.com,nn.ru,ntv.ru,osnmedia.ru,penzainform.ru,penzavzglyad.ru,pikinform.ru,polit.info,politexpert.net,politonline.ru,pora.ru,radidomapro.ru,radio1.ru,radioromantika.ru,ratel.kz,ren.tv,ria56.ru,riafan.ru,rueconomics.ru,rusplt.ru,russian.rt.com,rusvesna.su,sevkavportal.ru,sharknews.ru,sm.news,sminews.ru,sobesednik.ru,steaklovers.menu,sun-news.ru,topwar.ru,trendymen.ru,tsargrad.tv,tsn24.ru,tvernews.ru,ua.today,ura.news,uralpress.ru,usa.one,vedomosti.ru,versia.ru,veseloeradio.ru,vesti-yamal.ru,vesti.ru,vesti.uz,vestivrn.ru,vokrugsveta.ru,xn--b1ats.xn--80asehdb,zakon.kz,zr.ru##[id^="unit_"]
@@ -52,11 +54,24 @@ a21509 1
 kriminal.net.ua#?#div[id^="widget_wrapper_"]:-abp-has(> .body [src="https://smi.pp.ua/vidjetua.js"])
 a21674 1
 kgd.ru##div[style^="width:"][style*=";height:"][style*="px;background:#f3f6f9"]
+d22460 1
+a22460 1
+apad2.top,besplatnyeprogrammy.ru,byrut.org.ru,byrutgame.org,hdrip.info,mediagetguru.ru,monna2.top,torrent-music.ru,torrent-soft.net,torrent-soft.ru##:not(this-site-promotes-malware)
+a23482 1
+sports.ru##.right-banner-element
 a23524 1
 sports.ru##ad-slot
 a26831 1
 ||cxid.media/wp-content/cache/perfmatters/cxid.media/minify/*.adblock_detector.min.js
 d27738 3
+d28459 1
+a28460 1
+dzen.ru##div[class^="dzen-desktop--one-column-with-side-panel__right"]
+d28753 1
+a28753 1
+$doc,reason=malicious,domain=apad2.top|besplatnyeprogrammy.ru|byrut.org.ru|byrutgame.org|hdrip.info|mediagetguru.ru|monna2.top|torrent-music.ru|torrent-soft.net|torrent-soft.ru
 a29104 2
 kriminal.net.ua##+js(remove-node-text, script, nidclick)
 sichnews.ua##+js(remove-node-text, script, right_click)
+a29105 1
+stratege.ru##+js(remove-node-text, style, background: black !important;)

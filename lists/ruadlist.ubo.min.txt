@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 05 Feb 2026 09:57:43 +0000
-! Diff-Path: ../patches/2026.2.5.597.patch#ruadlist
+! Last modified: Thu, 05 Feb 2026 14:57:11 +0000
+! Diff-Path: ../patches/2026.2.5.897.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -19330,6 +19330,7 @@ zr.ru##[data-slot-name]
 iphones.ru##[data-slug="damprodam"]
 arbatmedia.kz##[data-smi-widget-id]
 mac.org.ua##[data-src*="bashmac"]
+irtafax.com##[data-sticky-offset="20"] > .td-fix-index:nth-child(-n+2)
 beeline.ru##[data-t-id="components-TopBanner"]
 drive2.ru#?#[data-target]:-abp-has(> div > h3 ~ [href*=".drom.ru/"])
 drive2.ru##[data-target^="drom_"]
@@ -22466,7 +22467,7 @@ www.drive2.ru##iframe[style="opacity: 1;"]
 liveinternet.ru##style + div > div > div > div > div a
 !#endif
 ! Блокировка ресурсов, намеренно продвигающих вредоносное ПО и фейки
-apad2.top,besplatnyeprogrammy.ru,byrut.org.ru,byrutgame.org,hdrip.info,mediagetguru.ru,monna2.top,torrent-music.ru,torrent-soft.net##:not(this-site-promotes-malware)
+apad2.top,besplatnyeprogrammy.ru,byrut.org.ru,byrutgame.org,hdrip.info,mediagetguru.ru,monna2.top,torrent-music.ru,torrent-soft.net,torrent-soft.ru##:not(this-site-promotes-malware)
 ! Намеренное продвижение фейков и мошенников
 ||tele.ru^$xmlhttprequest,domain=tele.ru
 ! Плеер venom, в основном для ua-юзеров, примеры >
@@ -23489,6 +23490,7 @@ cyber.sports.ru##.post-content a[href*="://sirena.world/"]
 sports.ru##.promo-link
 sports.ru#?#.recommendations__list > .recommendations__item:-abp-has([href*="promo"])
 sports.ru##.record-widget__bookmaker
+sports.ru##.right-banner-element
 sports.ru##.rightPart > .mB20
 sports.ru#?#.rightPart > div:-abp-contains(Реклама 18+)
 sports.ru##.sb-linked-image
@@ -28464,8 +28466,8 @@ dzen.ru##div[class*="--corner-banner_"]
 dzen.ru##div[class*="__bannerContainer"]
 dzen.ru##div[class*="dzen-"][class*="-banner-"]
 dzen.ru##div[class*="dzen-desktop--"][class*="__ad-"]
-dzen.ru##div[class*="dzen-desktop--feed-one-column-right-panel__ad"]
 dzen.ru##div[class*="dzen-desktop--top-sidebar-desktop-ad__root"]
+dzen.ru##div[class^="dzen-desktop--one-column-with-side-panel__right"]
 dzen.ru##div[id*="splashscreen"]
 dzen.ru##div[style*="important"] div[class*="__main"]
 ! исправление ошибок и косяков оригинальной вёрстки
@@ -28758,7 +28760,7 @@ inoreader.com###reader_pane:style(padding-right: unset !important)
 inoreader.com###sinner_container:style(display: block !important; z-index: 0 !important)
 rambler.ru###summary ~ div:has(> [id^="cluster-video-ad"]):remove()
 pronpic.org###vO5STmSLgNAkebzSluI8coxpDgsG97g:style(height: 1px !important; min-height: 1px !important)
-$doc,reason=malicious,domain=apad2.top|besplatnyeprogrammy.ru|byrut.org.ru|byrutgame.org|hdrip.info|mediagetguru.ru|monna2.top|torrent-music.ru|torrent-soft.net
+$doc,reason=malicious,domain=apad2.top|besplatnyeprogrammy.ru|byrut.org.ru|byrutgame.org|hdrip.info|mediagetguru.ru|monna2.top|torrent-music.ru|torrent-soft.net|torrent-soft.ru
 */bens/vinos.js$popunder
 kolizhanka.com.ua,miyzvuk.net,ozon.ru##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important)
 captcha-api.yandex.ru,id.vk.ru,passport.yandex.ru,webagent.mail.ru#@#+js()
@@ -29113,6 +29115,7 @@ gsm.in.ua##+js(remove-node-text, script, message_ads)
 kriminal.net.ua##+js(remove-node-text, script, nidclick)
 sichnews.ua##+js(remove-node-text, script, right_click)
 disgustingmen.com##+js(remove-node-text, script, window.location.replace)
+stratege.ru##+js(remove-node-text, style, background: black !important;)
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, style, epom-brend)
 uwupad.me##+js(remove-node-text, style, lb-banner-height)
 playvillage.ru##+js(set-attr, ._1z_ ._21_, style, '')
