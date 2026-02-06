@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 06 Feb 2026 15:52:41 +0000
-! Diff-Path: ../patches/2026.2.6.952.patch#ruadlist
+! Last modified: Fri, 06 Feb 2026 20:47:08 +0000
+! Diff-Path: ../patches/2026.2.6.1247.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22017,6 +22017,7 @@ ruskino.ru##noindex > nofallow
 filebase.ws,torrent-bort.ru##noindex > nofollow
 peterburg2.ru##noindex > noindex
 medicina.ua##noindex > script[src^="/adv.php?"] ~ div
+torrents-soft.ru##noindex > table > tbody > tr > td[style^="width:50%"] > ul
 torrents-soft.ru##noindex > table > tbody > tr > td[style^="width:50%"][style*="#22c55e"]:first-child
 file-online.ru##noindex > table[style]
 hotsoft.net.ru##noindex > table[width="100%"]
