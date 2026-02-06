@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 06 Feb 2026 02:50:54 +0000
-! Diff-Path: ../patches/2026.2.6.170.patch#ruadlist
+! Last modified: Fri, 06 Feb 2026 07:52:18 +0000
+! Diff-Path: ../patches/2026.2.6.472.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22366,7 +22366,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|
 ||news.mail.ru/-/*.js?
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
-||pikabu.ru/ajax/*?U7T6r=$xmlhttprequest
+||pikabu.ru/ajax/*?s67Hy=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -23458,6 +23458,7 @@ sports.ru##.document-recommendations
 sports.ru##.factoid-coefficient
 sports.ru##.factoid-rows__adv-label
 sports.ru##.fonbet-teaser
+sports.ru##.frame__footer
 cyber.sports.ru##.header-bookmaker-banner
 sports.ru##.high-adload-container
 sports.ru##.in-read-placement
@@ -23488,6 +23489,8 @@ sports.ru##.poll__bookmaker-logo
 cyber.sports.ru##.polling
 cyber.sports.ru##.post-content a[href*="://sirena.world/"]
 sports.ru##.promo-link
+sports.ru##.promo-timer__broadcast-label
+sports.ru##.promo-timer__erid-label
 sports.ru#?#.recommendations__list > .recommendations__item:-abp-has([href*="promo"])
 sports.ru##.record-widget__bookmaker
 sports.ru##.right-banner-element
@@ -28245,6 +28248,9 @@ star-wars-film.ru##body:style(padding-top: 0 !important)
 stopgame.ru###preroll_mediaplayer
 stopgame.ru##body:style(cursor: default !important)
 stopgame.ru##div[id^="videoplayer_"][class^="iframe_wrapper"]:style(display: block !important)
+! ---
+stratege.ru###vbulletin_html .above_body:style(margin-bottom: auto !important)
+stratege.ru##html:style(background-color: #dbdbdb !important)
 ! ---
 stravy.net##.right-sidebar:style(margin-top: 0 !important; overflow: hidden !important)
 ! ---
