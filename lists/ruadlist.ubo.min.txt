@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 06 Feb 2026 10:54:57 +0000
-! Diff-Path: ../patches/2026.2.6.654.patch#ruadlist
+! Last modified: Fri, 06 Feb 2026 15:52:41 +0000
+! Diff-Path: ../patches/2026.2.6.952.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -11406,7 +11406,6 @@ igdz1.ru^$script,domain=igdz.ru
 ||cy-pr.com/images/stat/tr.png
 ||cy-pr.com/images/tr/
 ||cyberforum.ru/images/ads/
-||cyberscore.live/images/partner-
 ||cybersport.ru/api/bookmakers?
 ||cybersport.ru/assets/img/*banner
 ||cyberstatic.net/clientscript/edu/prtnrsWidget
@@ -13353,6 +13352,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||torrent-games.*/templatetgnew/images/background
 ||torrent-ideal.ru/*best/
 ||torrent-igruha.ru/templates/flat-cinema/js/script.js
+||torrent-soft.net/uploads/banner.
 ||torrent5.net/blu.$image
 ||torrenther.com^*.php|$script
 ||torrentinka.me/templates/Default/images/prestol
@@ -16773,6 +16773,7 @@ rozetked.me##.header-img
 mmo.one##.header-link
 babyblog.ru##.header-links
 mi100.info##.header-main__banner
+pikabu.ru##.header-menu__item_tbank
 football.ua##.header-nav .isport-link
 wowhead.com##.header-nav-wowhead-premium
 fishki.net##.header-nav__link[href="/games/"]
@@ -21093,7 +21094,6 @@ n1.ru##div[class^="page-header__top-banner"]
 soccer365.com.ua,soccer365.ru#?#div[class^="page_"][class$="_right"] div:-abp-has(> div[id]:empty ~ script)
 miasskiy.ru##div[class^="papex"]
 smolensk-i.ru##div[class^="parthner"]
-cyberscore.live##div[class^="partner-"]
 tonkosti.ru##div[class^="partner-link"]
 78.ru##div[class^="partner-news_container_"]
 chytomo.com,dev.ua,devby.io,padaread.com##div[class^="partners"]
@@ -21317,6 +21317,7 @@ browserss.ru##div[id^="SlideShow"]
 inpearls.ru##div[id^="TM_"]
 primgazeta.ru,zwezda.net##div[id^="Zz"]
 ppt-online.org##div[id^="ab_"]
+ixbt.games,ixbt.pro,www.ixbt.com,www1.ru##div[id^="ad-"]
 xv-ru.com##div[id^="ad-footer"]
 textarchive.ru##div[id^="ad_"]
 andevice.ru##div[id^="ad_header"]
@@ -21572,6 +21573,7 @@ forum.guns.ru##div[style="clear:both;height:200px;"]
 liveresult.ru##div[style="color:#D42A28"]
 liveresult.ru##div[style="color:#d42a28"]
 vellisa.ru##div[style="display: inline-block;"] a[href]
+torrents-soft.ru##div[style="display:flex; flex-wrap:wrap; gap:12px; align-items:flex-start;"]
 novostivmire.com##div[style="float: none; margin:0px;"]
 gizmod.ru##div[style="float:left;width:344px;height:295px;"]
 forum.china-iphone.ru##div[style="float:right; margin-right: 5px;"]
@@ -22015,6 +22017,7 @@ ruskino.ru##noindex > nofallow
 filebase.ws,torrent-bort.ru##noindex > nofollow
 peterburg2.ru##noindex > noindex
 medicina.ua##noindex > script[src^="/adv.php?"] ~ div
+torrents-soft.ru##noindex > table > tbody > tr > td[style^="width:50%"][style*="#22c55e"]:first-child
 file-online.ru##noindex > table[style]
 hotsoft.net.ru##noindex > table[width="100%"]
 zelenograd.ru##noindex > table[width="100%"][cellpadding="1"]
@@ -22467,7 +22470,7 @@ www.drive2.ru##iframe[style="opacity: 1;"]
 liveinternet.ru##style + div > div > div > div > div a
 !#endif
 ! Блокировка ресурсов, намеренно продвигающих вредоносное ПО и фейки
-apad2.top,besplatnyeprogrammy.ru,byrut.org.ru,byrutgame.org,hdrip.info,mediagetguru.ru,monna2.top,torrent-music.ru,torrent-soft.net,torrent-soft.ru##:not(this-site-promotes-malware)
+apad2.top,besplatnyeprogrammy.ru,byrut.org.ru,byrutgame.org,hdrip.info,mediagetguru.ru,monna2.top,torrent-music.ru,torrent-soft.ru##:not(this-site-promotes-malware)
 ! Намеренное продвижение фейков и мошенников
 ||tele.ru^$xmlhttprequest,domain=tele.ru
 ! Плеер venom, в основном для ua-юзеров, примеры >
@@ -28768,7 +28771,7 @@ inoreader.com###reader_pane:style(padding-right: unset !important)
 inoreader.com###sinner_container:style(display: block !important; z-index: 0 !important)
 rambler.ru###summary ~ div:has(> [id^="cluster-video-ad"]):remove()
 pronpic.org###vO5STmSLgNAkebzSluI8coxpDgsG97g:style(height: 1px !important; min-height: 1px !important)
-$doc,reason=malicious,domain=apad2.top|besplatnyeprogrammy.ru|byrut.org.ru|byrutgame.org|hdrip.info|mediagetguru.ru|monna2.top|torrent-music.ru|torrent-soft.net|torrent-soft.ru
+$doc,reason=malicious,domain=apad2.top|besplatnyeprogrammy.ru|byrut.org.ru|byrutgame.org|hdrip.info|mediagetguru.ru|monna2.top|torrent-music.ru|torrent-soft.ru
 */bens/vinos.js$popunder
 kolizhanka.com.ua,miyzvuk.net,ozon.ru##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important)
 captcha-api.yandex.ru,id.vk.ru,passport.yandex.ru,webagent.mail.ru#@#+js()
@@ -28996,7 +28999,7 @@ appleinsider.ru##+js(href-sanitizer, a[href*="?goto=https"], ?goto)
 rambler.ru##+js(href-sanitizer, a[href*="?utm_"][data-main-link], +https)
 kluchikipro.ru##+js(href-sanitizer, a[href*="deeplink="], ?deeplink)
 innal.top,seedoff.net,zannn.top##+js(href-sanitizer, a[href*="to=aHR0c"], ?to -base64)
-kichkas.biz,rsload.net##+js(href-sanitizer, a[href*="url=aHR0c"], ?url -base64)
+kichkas.biz,rsload.net,torrents-soft.ru##+js(href-sanitizer, a[href*="url=aHR0c"], ?url -base64)
 lifehacker.ru##+js(href-sanitizer, a[href][rel*="sponsored"][target="_blank"], ?goto)
 hot.game,lifehacker.ru##+js(href-sanitizer, a[href][target="_blank"], ?ulp)
 www.ixbt.com##+js(href-sanitizer, a[href^="//www.ixbt.com/click/?c="], [title])
@@ -31508,7 +31511,6 @@ objavlenija.respublika.cz##.sweet-alert,.sweet-overlay
 kinoafisha.ua##.turn-off-add-block-text
 stalkerportaal.ru##.video_adsense
 bookskeeper.ru,e-xecutive.ru##.warning
-cyberscore.live##.wrapper-partner-rb
 forum.bestflowers.ru##.xenOverlay
 /^https?:\/\/pikabu\.ru\/ajax\/[A-Za-z0-9]+\?[A-Za-z0-9]+=[0-9a-z-]+[0-9a-z]$/$xmlhttprequest,domain=pikabu.ru
 /cookie_check.min.js$domain=acetv.me
