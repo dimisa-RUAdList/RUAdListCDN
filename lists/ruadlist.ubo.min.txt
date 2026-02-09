@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 09 Feb 2026 13:41:57 +0000
-! Diff-Path: ../patches/2026.2.9.821.patch#ruadlist
+! Last modified: Mon, 09 Feb 2026 19:36:20 +0000
+! Diff-Path: ../patches/2026.2.9.1176.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -29396,6 +29396,7 @@ ya.ru,yandex.*##.simple-popup__overlay:remove()
 ||video.matchtv.ru/iframe/feed/*autostart=1$subdocument,removeparam=autostart
 ||video.matchtv.ru/iframe/feed/*autostart=1$subdocument,removeparam=skin_name
 ||video.sports.ru/embed/*autoplay=1$subdocument,removeparam=autoplay
+||vkvideo.ru/video_ext.php$subdocument,badfilter
 ||widgets.kinopoisk.ru/discovery/trailer/*&loop=1&autoplay=1$subdocument,domain=www.kinopoisk.ru
 ||yandex.ru/ads/system/context.js$script,redirect=noopjs,domain=tragtorr.in|tragtorr.info
 ||yastatic.net/s3/home-static/feeds/$third-party
