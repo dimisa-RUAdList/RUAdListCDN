@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 11 Feb 2026 05:41:16 +0000
-! Diff-Path: ../patches/2026.2.11.341.patch#ruadlist
+! Last modified: Wed, 11 Feb 2026 10:04:31 +0000
+! Diff-Path: ../patches/2026.2.11.604.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -19532,7 +19532,6 @@ tsargrad.tv##a.link-social-zen
 litres.ru##a.logo[href*="#buy_now_noreg"][target="_blank"]
 sportsdaily.ru##a.match-mini__heading-link > .match-mini__logo
 kinobaza.net##a.red
-dtf.ru##a.sidebar-item[href^="/pay"]
 www.ivi.ru##a.teaserImage[target="_blank"]
 video.matchtv.ru##a.vjs-link[href*="://matchtv.ru/subscriptions"]
 moniheal.com##a:not([href*="moniheal.com/"]) > img[src*="/m-public/"]
@@ -19540,6 +19539,7 @@ good73.net##a[\;] > img
 ren.tv##a[class*=" ya_"]
 solverbook.com##a[class*="-banner-"]
 siliconrus.com##a[class*="b-menu__li__a-"]
+dtf.ru##a[class*="bar"][href^="/pay"]
 prm.ru##a[class*="http"] > img[width="240"]
 amurpress.ru##a[class*="rekl"][target="_blank"]:not([href^="http://amurpress.ru/"])
 economistua.com##a[class="gofollow"] > img
@@ -23162,7 +23162,7 @@ avtorambler.com,rambler.ru##.adfox-background-container
 championat.com,championat.ru##.adv-mark
 lenta.ru##.advertisable-plate__erid
 championat.com,championat.ru#?#.article-preview._video:-abp-has(> div > a[href*="okko.sport"])
-gazeta.press,gazeta.ru##.b_custom_logo-link
+gazeta.press,gazeta.ru##.b_custom_logo
 championat.com,championat.ru,gazeta.press,gazeta.ru,lenta.ru##.banner
 lenta.ru##.banner + div[class][id]
 championat.com,championat.ru##.banner-announce
@@ -27145,10 +27145,7 @@ chita.ru##body:style(background: none !important; margin-top: 0 !important; padd
 ! ---
 cinema-hd.ru,doramatv.su,filmshd.vip,goodfilms.su,hdrezka.it,kinoxa.cc,lordfilm.lu,lordserial.fun,lordserial.run,lordserial.top,newseries.me,yummyanime.best##.wrap:style(padding-top: 0 !important)
 ! ---
-click-or-die.ru##a[href*="://kik.cat/"]:style(pointer-events: none !important; color: inherit !important)
-click-or-die.ru##a[href*="erid="]:style(pointer-events: none !important; color: inherit !important)
-click-or-die.ru##a[href*="sponsored="]:style(pointer-events: none !important; color: inherit !important)
-click-or-die.ru##a[href*="www.dns-shop.ru/"]:style(pointer-events: none !important; color: inherit !important)
+click-or-die.ru##.prose a[href]:not([href^="/"]):not([href^="https://click-or-die.ru/"]):style(pointer-events: none !important; color: inherit !important)
 ! ---
 com-x.life##.blur-image:style(filter: none !important)
 ! ---
@@ -29270,7 +29267,6 @@ online-fix.me##a.btn-success[href^="https://online-fix.me/ext/"]:remove-class(bt
 online-fix.me##a[href*=":2053"]:remove-class(btn)
 aniu.ru,liveball.*##+js(no-setInterval-if, debugger)
 dzen.ru##article:has(> div:matches-attr(/[a-z0-9]/=/_ad-yp|direct|mytarget/))
-click-or-die.ru##article:has(p:has-text(ERID)) a:style(pointer-events: none !important; color: inherit !important)
 autonews.co.ua,in-poland.com,liveball.*,ukrainianwall.com##+js(addEventListener-defuser, /contextmenu|copy|keydown|selectstart/)
 kp.kg,kp.kz,kp.md,kp.ru##body > #app div:matches-css(background-color: rgb(225, 231, 235))
 4pda.to##body > #ipbwrapper > script + div > table > tbody > tr > td[width] + td
