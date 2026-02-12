@@ -1,8 +1,8 @@
-diff name:ruadlist lines:31 checksum:1ba5c9733a
+diff name:ruadlist lines:37 checksum:2714dfe1dc
 d4 2
 a5 2
-! Last modified: Thu, 12 Feb 2026 11:49:53 +0000
-! Diff-Path: ../patches/2026.2.12.709.patch#ruadlist
+! Last modified: Thu, 12 Feb 2026 16:05:05 +0000
+! Diff-Path: ../patches/2026.2.12.965.patch#ruadlist
 a15829 1
 habr.com#?#.block-wrapper:-abp-has(> [data-test-id^="Advertising"] > div:empty)
 d17207 1
@@ -16,6 +16,9 @@ a20766 3
 www.livejournal.com#?#div[class*="card-wrap"]:-abp-has(> [data-slot] > div[class*="--empty"])
 www.livejournal.com#?#div[class*="card-wrap"]:-abp-has(> div a[href*="rcmrclid"])
 www.livejournal.com#?#div[class*="card-wrap"]:-abp-has(> div[class]:empty)
+d22330 1
+a22330 1
+||pikabu.ru/ajax/*?Q88ui=$xmlhttprequest
 a23164 1
 gazeta.press,gazeta.ru##.b_custom_logo
 d23173 2
@@ -30,3 +33,6 @@ d28966 1
 a28966 1
 rutube.ru##+js(json-prune-fetch-response, appearance.auto_start, '', stackToMatch, embed)
 d29272 1
+d29494 1
+a29494 1
+!vk.com,vk.ru,vkvideo.ru##+js(json-prune-fetch-response, response.items, response.ads)
