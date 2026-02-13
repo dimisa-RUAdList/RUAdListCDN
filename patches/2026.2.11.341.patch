@@ -1,14 +1,24 @@
-diff name:ruadlist lines:32 checksum:415274cb7a
+diff name:ruadlist lines:45 checksum:4594170377
 d4 2
 a5 2
-! Last modified: Thu, 12 Feb 2026 21:45:27 +0000
-! Diff-Path: ../patches/2026.2.12.1305.patch#ruadlist
+! Last modified: Fri, 13 Feb 2026 03:17:03 +0000
+! Diff-Path: ../patches/2026.2.13.197.patch#ruadlist
+a6712 1
+||vn12345.mvapspdmpg.com^$third-party
+a15012 1
+yapolitic.ru###ya_political:empty
 a15829 1
 habr.com#?#.block-wrapper:-abp-has(> [data-test-id^="Advertising"] > div:empty)
 d17207 1
+a17886 1
+yapolitic.ru##.rek-bot
 d19535 1
 a19542 1
 dtf.ru##a[class*="bar"][href^="/pay"]
+d19760 2
+a19761 2
+business-gazeta.ru,www.ixbt.com##a[href*="erid="]
+66.ru,agronovosti.ru,kinorium.com,sport-express.net,sport-express.ru##a[href*="erid="][target="_blank"]
 a20766 3
 www.livejournal.com#?#div[class*="card-wrap"]:-abp-has(> [data-slot] > div[class*="--empty"])
 www.livejournal.com#?#div[class*="card-wrap"]:-abp-has(> div a[href*="rcmrclid"])
@@ -16,6 +26,8 @@ www.livejournal.com#?#div[class*="card-wrap"]:-abp-has(> div[class]:empty)
 d22330 1
 a22330 1
 ||pikabu.ru/ajax/*?Q88ui=$xmlhttprequest
+a22855 1
+||media-sellgate.mail.ru/embed/widget/index.js
 d23165 1
 a23165 1
 gazeta.press,gazeta.ru##.b_custom_logo
@@ -30,4 +42,5 @@ click-or-die.ru##.prose a[href]:not([href^="/"]):not([href^="https://click-or-di
 d29273 1
 d29495 1
 a29495 1
-!vk.com,vk.ru,vkvideo.ru##+js(json-prune-fetch-response, response.items, response.ads)
+vk.com,vk.ru,vkvideo.ru##+js(set-constant, Object.prototype.pauseSuggestions, undefined)
+d29541 1

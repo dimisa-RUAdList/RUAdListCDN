@@ -1,13 +1,26 @@
-diff name:ruadlist lines:12 checksum:415274cb7a
+diff name:ruadlist lines:25 checksum:4594170377
 d4 2
 a5 2
-! Last modified: Thu, 12 Feb 2026 21:45:27 +0000
-! Diff-Path: ../patches/2026.2.12.1305.patch#ruadlist
+! Last modified: Fri, 13 Feb 2026 03:17:03 +0000
+! Diff-Path: ../patches/2026.2.13.197.patch#ruadlist
+a6712 1
+||vn12345.mvapspdmpg.com^$third-party
+a15012 1
+yapolitic.ru###ya_political:empty
 a15829 1
 habr.com#?#.block-wrapper:-abp-has(> [data-test-id^="Advertising"] > div:empty)
+a17885 1
+yapolitic.ru##.rek-bot
+d19759 2
+a19760 2
+business-gazeta.ru,www.ixbt.com##a[href*="erid="]
+66.ru,agronovosti.ru,kinorium.com,sport-express.net,sport-express.ru##a[href*="erid="][target="_blank"]
 d22332 1
 a22332 1
 ||pikabu.ru/ajax/*?Q88ui=$xmlhttprequest
+a22857 1
+||media-sellgate.mail.ru/embed/widget/index.js
 d29493 1
 a29493 1
-!vk.com,vk.ru,vkvideo.ru##+js(json-prune-fetch-response, response.items, response.ads)
+vk.com,vk.ru,vkvideo.ru##+js(set-constant, Object.prototype.pauseSuggestions, undefined)
+d29539 1

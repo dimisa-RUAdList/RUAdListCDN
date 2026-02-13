@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 12 Feb 2026 21:45:27 +0000
-! Diff-Path: ../patches/2026.2.12.1305.patch#ruadlist
+! Last modified: Fri, 13 Feb 2026 03:17:03 +0000
+! Diff-Path: ../patches/2026.2.13.197.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -6710,6 +6710,7 @@
 ||vmkxcsss.ru^$third-party
 ||vn-chk123.com^$third-party
 ||vn-chk777.com^$third-party
+||vn12345.mvapspdmpg.com^$third-party
 ||vne56qxpovf.info^$third-party
 ||vne56wxlo.shop^$third-party
 ||vne56wxlo.tech^$third-party
@@ -15010,6 +15011,7 @@ newsko.ru###xtest-videoad
 soft.sibnet.ru###ya-block
 80-e.ru###ya-bottom
 avtovzglyad.ru,mk.ru###ya_feed_cont
+yapolitic.ru###ya_political:empty
 snatchnews.com###yandexBanner
 ixbt.com###yandex_recommend
 planet-today.ru###yandex_save
@@ -17884,6 +17886,7 @@ calorizator.ru#?#.region[id^="content-"] > .block:-abp-has(script:-abp-contains(
 fonzo.ru,hemingway-lib.ru,kinogo.biz,oka.fm,sms24.info,sms24.me,ternopoliany.te.ua##.rek
 buzulukday.ru,nsday.ru,orenday.ru,perevolockday.ru,saltday.ru,sorochinskday.ru##.rek,.rek ~ .ramka
 med-heal.ru##.rek-bar
+yapolitic.ru##.rek-bot
 lenov.ru##.rek-but
 lenov.ru,yapolitic.ru##.rek-top
 sport.kg##.rek-widgets
@@ -19757,8 +19760,8 @@ gurutestov.ru##a[href*="ecvator."]
 komapz.net##a[href*="epidems.net"]
 kubyshka.org,radiochief.ru,riperam.org,znamyuzl.ru##a[href*="epngo.bz"]
 cybersport.ru##a[href*="erid:"][target="_blank"]
-business-gazeta.ru##a[href*="erid="]
-66.ru,agronovosti.ru,kinorium.com,sport-express.net,sport-express.ru,www.ixbt.com##a[href*="erid="][target="_blank"]
+business-gazeta.ru,www.ixbt.com##a[href*="erid="]
+66.ru,agronovosti.ru,kinorium.com,sport-express.net,sport-express.ru##a[href*="erid="][target="_blank"]
 7ba.org,7ba.ru##a[href*="erotel.org"]
 forum.amit.ru##a[href*="evroremont.amit.ru"]
 ilenta.com,lelang.su,rutr.life,rutracker.lib,rutracker.net,rutracker.org,shopping.nv.ua##a[href*="fas.st/"]
@@ -22856,6 +22859,7 @@ vkplay.ru##div[class*="ArtBannerSkeleton"]
 ||mail.ru^$domain=dzen.ru
 ||mamba.ru/images/*/promo/
 ||media-advcycle.imgsmail.ru^$third-party
+||media-sellgate.mail.ru/embed/widget/index.js
 ||media-stat.mail.ru^
 ||mradx.net/img/$subdocument
 ||pets.mail.ru/my/pets/add
@@ -29491,7 +29495,7 @@ tass.ru##[class^="LoopChannelPlayer_wrapper_"] [class^="Centered_box_"]
 ! uTarget Ads
 3dn.ru,a-point.info,addfiles.ru,akkordam.ru,all-for-kompa.ru,asia-tv.su,at.ua,autosimgames.ru,clan.su,db-energo.ru,devdrivers.ru,do.am,elegos.ru,elektronika56.ru,elektrosat.ru,fon-ki.com,for-gsm.ru,free-dream.ru,ftechedu.ru,fukushima-news.ru,gals.md,gloria-cedric.ru,goldformat.ru,greenflash.su,igrul-ka.ru,krasnickij.ru,krolmen.ru,megaclips.net,mow-portal.ru,moy.su,my1.ru,narod.ru,newgames.com.ua,novospasskoe-city.ru,omsimclub.ru,online-supernatural.ru,only-paper.ru,others.name,pidru4nik.com,pkrc.ru,play-force.ru,pohoronnoe-byuro.com,pokatushki-pmr.ru,pro-zakupki.ru,project-ss.ru,psxworld.ru,radiodom.org,rocketdockfree.ru,sdr-deluxe.com,soft-game.net,stalker-gsc.ru,stalker-zone.info,stalkermods.ru,svadbatomsk.ru,techmusic.ru,tes-game.ru,torfiles.ru,ucoz.club,ucoz.com,ucoz.net,ucoz.org,ucoz.ru,ucoz.ua,usite.pro,vodopads.ru,vsthouse.ru,xakevsoft.ru,xn--80aeshkkbdj.xn--p1ai,zona-stalkera.ru##+js(abort-on-property-read, u_global_data)
 ! VK player, на сторонних сайтах
-!vk.com,vk.ru,vkvideo.ru##+js(json-prune-fetch-response, response.items, response.ads)
+vk.com,vk.ru,vkvideo.ru##+js(set-constant, Object.prototype.pauseSuggestions, undefined)
 vk.com/video_ext.php##+js(set-constant, Object.prototype.autoplay, undefined)
 vk.ru/video_ext.php##+js(set-constant, Object.prototype.autoplay, undefined)
 vkvideo.ru/video_ext.php##+js(set-constant, Object.prototype.autoplay, undefined)
@@ -29537,7 +29541,6 @@ www.kinopoisk.ru##div[style="width: 100%; height: 249px;"]
 ! Фоксо-специфичные случаи >
 !#if env_firefox
 rutube.ru##+js(json-edit-fetch-response, [?!.video_balancer.default].appearance.auto_start, propsToMatch, /api/play)
-rutube.ru#@#+js(json-prune-fetch-response, appearance.auto_start, '', stackToMatch, !rutube.ru/video)
 ya.ru#@#+js(remove-node-text, div, 'ad-mark__b-unit-wrapper')
 dtf.ru,vc.ru##+js(set-constant, HTMLVideoElement.prototype.autoplay, {})
 @@$cname,domain=360tv.ru|3sat.de|innal.top|kyiv.ua|sports.ru|tosdr.org
