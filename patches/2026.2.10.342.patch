@@ -1,8 +1,8 @@
-diff name:ruadlist lines:123 checksum:4594170377
+diff name:ruadlist lines:131 checksum:39ae31281a
 d4 2
 a5 2
-! Last modified: Fri, 13 Feb 2026 03:17:03 +0000
-! Diff-Path: ../patches/2026.2.13.197.patch#ruadlist
+! Last modified: Fri, 13 Feb 2026 07:11:58 +0000
+! Diff-Path: ../patches/2026.2.13.431.patch#ruadlist
 a6712 1
 ||vn12345.mvapspdmpg.com^$third-party
 d10467 1
@@ -112,10 +112,18 @@ androidinsider.ru,appleinsider.ru,iguides.ru##a[href*="erid="]:style(pointer-eve
 d27170 4
 a27173 1
 click-or-die.ru##.prose a[href]:not([href^="/"]):not([href^="https://click-or-die.ru/"]):style(pointer-events: none !important; color: inherit !important)
+d28600 1
+a28600 5
+gazeta.press,gazeta.ru##.b_content:style(max-width: 100% !important)
+gazeta.press,gazeta.ru##.b_footer:style(max-width: 100% !important)
+gazeta.press,gazeta.ru##.b_header:style(min-width: 100% !important)
+gazeta.press,gazeta.ru##.b_main:style(max-width: 100% !important)
+gazeta.press,gazeta.ru##.b_subject_bar:style(max-width: 100% !important)
 d28989 1
 a28989 1
 rutube.ru##+js(json-prune-fetch-response, appearance.auto_start, '', stackToMatch, embed)
 d29295 1
+d29401 1
 d29517 1
 a29517 1
 vk.com,vk.ru,vkvideo.ru##+js(set-constant, Object.prototype.pauseSuggestions, undefined)

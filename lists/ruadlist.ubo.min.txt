@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 13 Feb 2026 03:17:03 +0000
-! Diff-Path: ../patches/2026.2.13.197.patch#ruadlist
+! Last modified: Fri, 13 Feb 2026 07:11:58 +0000
+! Diff-Path: ../patches/2026.2.13.431.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -28579,7 +28579,11 @@ autoua.net,gagadget.com##.fader-social
 autoua.net##.social-open:style(overflow: auto !important)
 gagadget.com,gazeta.press,gazeta.ru,lenta.ru,rambler.ru##body:not(#id):style(overflow-y: auto !important)
 ! исправление ошибок и косяков оригинальной вёрстки
-gazeta.press,gazeta.ru##.b_header:style(max-width: 100% !important)
+gazeta.press,gazeta.ru##.b_content:style(max-width: 100% !important)
+gazeta.press,gazeta.ru##.b_footer:style(max-width: 100% !important)
+gazeta.press,gazeta.ru##.b_header:style(min-width: 100% !important)
+gazeta.press,gazeta.ru##.b_main:style(max-width: 100% !important)
+gazeta.press,gazeta.ru##.b_subject_bar:style(max-width: 100% !important)
 ! ---
 rbc.ru,rbcrealty.ru,sportrbc.ru###js_col_left > .l-sticky:style(position: relative !important; top: unset !important)
 zoom.cnews.ru##.article_inner.news_content_inner + .sidebar:style(top: 0 !important)
@@ -29379,7 +29383,6 @@ ya.ru,yandex.*##.simple-popup__overlay:remove()
 ||video.matchtv.ru/iframe/feed/*autostart=1$subdocument,removeparam=autostart
 ||video.matchtv.ru/iframe/feed/*autostart=1$subdocument,removeparam=skin_name
 ||video.sports.ru/embed/*autoplay=1$subdocument,removeparam=autoplay
-||vkvideo.ru/video_ext.php$subdocument,badfilter
 ||widgets.kinopoisk.ru/discovery/trailer/*&loop=1&autoplay=1$subdocument,domain=www.kinopoisk.ru
 ||yandex.ru/ads/system/context.js$script,redirect=noopjs,domain=tragtorr.in|tragtorr.info
 ||yastatic.net/s3/home-static/feeds/$third-party
