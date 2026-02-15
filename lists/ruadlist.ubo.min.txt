@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 15 Feb 2026 09:43:03 +0000
-! Diff-Path: ../patches/2026.2.15.583.patch#ruadlist
+! Last modified: Sun, 15 Feb 2026 14:39:26 +0000
+! Diff-Path: ../patches/2026.2.15.879.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -18868,7 +18868,7 @@ shopinfo.com.ua##.widget-group-no-name .sidebarAdvertising
 shopinfo.com.ua#?#.widget-group-no-name:-abp-has(.sidebarAdvertising)
 tv.i.ua##.widget-news_premium
 maanimo.com##.widget-offers
-interface31.ru##.widget-pages a[href*="utm_"]
+interface31.ru##.widget-pages a[href][target="_blank"] > img
 interface31.ru#?#.widget-pages:-abp-has(> .widget-header:-abp-contains(Реклама))
 nur.kz##.widget-parimatch-wrapper
 bibliofond.ru##.widget-pomogi
