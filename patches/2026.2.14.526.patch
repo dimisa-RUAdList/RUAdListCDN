@@ -1,8 +1,8 @@
-diff name:ruadlist lines:19 checksum:fcace9a666
+diff name:ruadlist lines:35 checksum:3236d29077
 d4 2
 a5 2
-! Last modified: Sun, 15 Feb 2026 19:34:50 +0000
-! Diff-Path: ../patches/2026.2.15.1174.patch#ruadlist
+! Last modified: Mon, 16 Feb 2026 03:14:40 +0000
+! Diff-Path: ../patches/2026.2.16.194.patch#ruadlist
 d7749 1
 a7749 1
 ||pw^$third-party,script,xmlhttprequest,domain=~adwiz.pp.ua|~dewalt.store|~forum.worldofwarships.eu|~forum.worldofwarships.ru|~hansgrohe.ru|~hdvbplayer.tk|~herokuapp.com|~liveball.cc|~liveball.gg|~liveball.my|~liveball.sx|~liveball.uno|~liveball.ws|~masterclub.store|~movielab.pro|~osu.ppy.sh|~panomama.ru|~pelcn.net|~philips.ru|~purina.ru|~softpir.com|~sportsvideoline3.pw|~tefal.ru|~tikkurila.ru|~vk-apps.com|~vulpecula.host
@@ -16,5 +16,21 @@ a18569 1
 3m2.ua##.theiaStickySidebar a[target="_blank"] > img
 a18866 1
 interface31.ru##.widget-pages a[href][target="_blank"] > img
+d23611 6
+a23737 11
+! Яндекс.Маркет
+market.yandex.ru,market.yandex.*##[aria-label="Баннер"]
+market.yandex.ru,market.yandex.*##[data-apiary-widget-name*="@marketfront/MadvHeaderPromo"]
+market.yandex.ru,market.yandex.*##[data-auto*="banner"] > a:not([href^="/"]):not([href^="https://market.yandex.ru/"])
+market.yandex.ru,market.yandex.*##[data-auto*="banner"] [role="button"]
+market.yandex.ru,market.yandex.*##[data-auto="direct-tgo-banner"]
+market.yandex.ru,market.yandex.*##[data-banner-manager-id] [role="button"]
+market.yandex.ru,market.yandex.*##[data-baobab-name="recomMadv"] [role="button"]
+market.yandex.ru,market.yandex.*##[data-madv]
+market.yandex.ru,market.yandex.*##a[href^="https://ad.adriver.ru/"]
+market.yandex.ru,market.yandex.*##div[id^="remix_"] > div[style^="grid-row:"][style*="grid-column:"]:empty
 d26525 1
 d26574 1
+d28501 1
+a28501 1
+market.yandex.by,market.yandex.kz,market.yandex.ru###MainHeader:style(margin-top: unset !important)
