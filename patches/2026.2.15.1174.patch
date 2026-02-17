@@ -1,14 +1,23 @@
-diff name:ruadlist lines:54 checksum:a4d8a64ce7
+diff name:ruadlist lines:80 checksum:acf2d2f2c6
 d4 2
 a5 2
-! Last modified: Tue, 17 Feb 2026 06:05:18 +0000
-! Diff-Path: ../patches/2026.2.17.365.patch#ruadlist
+! Last modified: Tue, 17 Feb 2026 11:49:04 +0000
+! Diff-Path: ../patches/2026.2.17.709.patch#ruadlist
 a8739 1
 ##a[href*="://betsxwin.pro/"]
+a11282 1
+||byrutgame.org/templates/byrut_upd/js/ip-check.js
+a13813 1
+byrutgame.org###activation
 a15704 1
 securitymedia.org##.banner_with_erid
 a15924 1
 sovsport.ru##.bonus-compilation-wrapper
+d16759 1
+a16759 1
+pikabu.ru##.header-menu__item_finances
+a18320 1
+byrutgame.org##.site-helper
 a18361 1
 securitymedia.org#?#.socials__social:-abp-has(> a[href^="https://dzen.ru/"])
 a19183 1
@@ -34,6 +43,15 @@ a21686 1
 sovsport.ru#?#h2:-abp-contains(/получайте бонусы| ставки на/i)
 a21687 1
 sovsport.ru#?#h3:-abp-contains(/получайте бонусы| ставки на/i)
+d22314 1
+a22314 1
+||static.dzeninfra.ru/s3/zen-apps/video-feed/*/*/$script
+d22340 1
+a22340 1
+||pikabu.ru/ajax/*?g8lKb=$xmlhttprequest
+d22441 1
+a22441 1
+apad2.top,besplatnyeprogrammy.ru,byrut.org.ru,hdrip.info,mediagetguru.ru,mixsoft.org,monna2.top,torrent-music.ru,torrent-soft.ru##:not(this-site-promotes-malware)
 d23616 6
 a23742 11
 ! Яндекс.Маркет
@@ -50,6 +68,14 @@ market.yandex.ru,market.yandex.*##div[id^="remix_"] > div[style^="grid-row:"][st
 a28114 2
 securitymedia.org##body > .content:style(padding-top: 0 !important)
 ! ---
+d28427 1
+a28427 2
+dzen.ru##div[class^="dzen-desktop--"][class*="__right-"] div[style^="--top-padding:"]
+dzen.ru##div[class^="dzen-desktop--top-"] > div[style*="%"]:style(padding-top: unset !important)
+d28429 1
 d28504 1
 a28504 1
 market.yandex.by,market.yandex.kz,market.yandex.ru###MainHeader:style(margin-top: unset !important)
+d28725 1
+a28725 1
+$doc,reason=malicious,domain=apad2.top|besplatnyeprogrammy.ru|byrut.org.ru|hdrip.info|mediagetguru.ru|mixsoft.org|monna2.top|torrent-music.ru|torrent-soft.ru
