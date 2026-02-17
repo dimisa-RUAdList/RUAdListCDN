@@ -1,8 +1,8 @@
-diff name:ruadlist lines:72 checksum:4e4422df1c
+diff name:ruadlist lines:72 checksum:0e72e8a9ef
 d4 2
 a5 2
-! Last modified: Mon, 16 Feb 2026 20:44:44 +0000
-! Diff-Path: ../patches/2026.2.16.1244.patch#ruadlist
+! Last modified: Tue, 17 Feb 2026 02:53:28 +0000
+! Diff-Path: ../patches/2026.2.17.173.patch#ruadlist
 d7749 1
 a7749 1
 ||pw^$third-party,script,xmlhttprequest,domain=~adwiz.pp.ua|~dewalt.store|~forum.worldofwarships.eu|~forum.worldofwarships.ru|~hansgrohe.ru|~hdvbplayer.tk|~herokuapp.com|~liveball.cc|~liveball.gg|~liveball.my|~liveball.sx|~liveball.uno|~liveball.ws|~masterclub.store|~movielab.pro|~osu.ppy.sh|~panomama.ru|~pelcn.net|~philips.ru|~purina.ru|~softpir.com|~sportsvideoline3.pw|~tefal.ru|~tikkurila.ru|~vk-apps.com|~vulpecula.host
@@ -46,10 +46,10 @@ a21018 1
 sovsport.ru##div[class^="free-bet-widget_buttonContainer_"]
 a21044 1
 sovsport.ru##div[class^="match-day_footer_"]
-a21680 1
-sovsport.ru#?#h2:-abp-contains( ставки на)
 a21682 1
-sovsport.ru#?#h3:-abp-contains( ставки на)
+sovsport.ru#?#h2:-abp-contains(/получайте бонусы| ставки на/i)
+a21683 1
+sovsport.ru#?#h3:-abp-contains(/получайте бонусы| ставки на/i)
 d23612 6
 a23738 11
 ! Яндекс.Маркет
