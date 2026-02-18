@@ -1,8 +1,8 @@
-diff name:ruadlist lines:30 checksum:f0e315c9a3
+diff name:ruadlist lines:41 checksum:e88e6e7251
 d4 2
 a5 2
-! Last modified: Wed, 18 Feb 2026 07:13:32 +0000
-! Diff-Path: ../patches/2026.2.18.433.patch#ruadlist
+! Last modified: Wed, 18 Feb 2026 13:37:06 +0000
+! Diff-Path: ../patches/2026.2.18.817.patch#ruadlist
 a11283 1
 ||byrutgame.org/templates/byrut_upd/js/ip-check.js
 a13814 1
@@ -21,11 +21,22 @@ a22351 1
 d22452 1
 a22452 1
 apad2.top,besplatnyeprogrammy.ru,byrut.org.ru,hdrip.info,mediagetguru.ru,mixsoft.org,monna2.top,torrent-music.ru,torrent-soft.ru##:not(this-site-promotes-malware)
+a23371 1
+rbc.ru##.topline-desktop-link-branding
+a23379 1
+rbc.ru##[data-name="SimplePromoCard"]
+a23405 2
+rbc.ru##body.free a.meta-info-row-project[href^="https://pro.rbc.ru"]
+rbc.ru##body.free div[class^="style_promo_"]
+a23409 1
+rbc.ru##div[class^="styles_okko"]
 d28445 1
 a28445 2
 dzen.ru##div[class^="dzen-desktop--"][class*="__right-"] div[style^="--top-padding:"]
 dzen.ru##div[class^="dzen-desktop--top-"] > div[style*="%"]:style(padding-top: unset !important)
 d28447 1
+a28618 1
+rbc.ru##.topline-desktop-project-large:style(border-color: transparent !important)
 d28743 1
 a28743 1
 $doc,reason=malicious,domain=apad2.top|besplatnyeprogrammy.ru|byrut.org.ru|hdrip.info|mediagetguru.ru|mixsoft.org|monna2.top|torrent-music.ru|torrent-soft.ru
