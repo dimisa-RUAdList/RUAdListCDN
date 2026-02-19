@@ -1,8 +1,8 @@
-diff name:ruadlist lines:67 checksum:8d3e15615a
+diff name:ruadlist lines:119 checksum:d82f6ea3f1
 d4 2
 a5 2
-! Last modified: Thu, 19 Feb 2026 03:10:55 +0000
-! Diff-Path: ../patches/2026.2.19.190.patch#ruadlist
+! Last modified: Thu, 19 Feb 2026 08:58:53 +0000
+! Diff-Path: ../patches/2026.2.19.538.patch#ruadlist
 a11283 1
 ||byrutgame.org/templates/byrut_upd/js/ip-check.js
 a13814 1
@@ -47,22 +47,74 @@ a22351 1
 d22452 1
 a22452 1
 apad2.top,besplatnyeprogrammy.ru,byrut.org.ru,hdrip.info,mediagetguru.ru,mixsoft.org,monna2.top,torrent-music.ru,torrent-soft.ru##:not(this-site-promotes-malware)
-a23371 1
-rbc.ru##.topline-desktop-link-branding
-a23379 1
+d23338 2
+a23339 1
+rbc.ru##.central-publisher-item[data-name="CommercialAnons"]
+d23347 6
+a23353 2
+rbc.ru##.js-pro-slider__container
+rbc.ru##.js-snippet-pro-container
+a23356 1
+rbc.ru##.news-feed a[href*="utm_campaign"]
+a23360 1
+rbc.ru,sportrbc.ru##.read-more-pro
+d23371 1
+a23371 2
+rbc.ru##.topline-desktop-hide-banners
+rbc.ru,rbclifemedia.ru##.topline-desktop-link-branding
+d23374 1
+a23374 1
+autonews.ru,rbc.ru,rbcautonews.ru,rbcrealty.ru,sportrbc.ru##.topline__item__image-block
+a23378 1
+/topline-branding$domain=rbc.ru|sportrbc.ru
+a23379 2
+rbc.ru##[class^="SportMainBetBlocks_"]
 rbc.ru##[data-name="SimplePromoCard"]
-a23405 2
+d23392 14
+a23405 13
+rbc.ru##body div[class^="MainNewsComponent_wrapper_"] [href^="https://pro.rbc.ru/"]
 rbc.ru##body.free a.meta-info-row-project[href^="https://pro.rbc.ru"]
+rbc.ru##body.free a[class^="styles_message-bar_"][href^="https://pro.rbc.ru/"]
+rbc.ru#?#body.free aside.bside .sidebar:-abp-has(a[href^="https://pro.rbc.ru/"])
+rbc.ru#?#body.free div[class="central-publisher-item"]:-abp-has([href^="https://pro.rbc.ru/"])
 rbc.ru##body.free div[class^="style_promo_"]
+rbc.ru##body.free div[data-name^="SpecialBlockPro"]
+rbc.ru##div[class*="styles_newsfeed"] .sidebar a[href*="utm_campaign"]
+rbc.ru##div[class*="styles_newsfeed"] .sidebar a[href*="utm_campaign"] ~ .meta-info-row-wrapper
+rbc.ru#?#div[class*="styles_newsfeed"] .sidebar:-abp-has(a[href*="utm_campaign"])
+rbc.ru##div[class="central-publisher-item"]:nth-child(-n+2) [href^="https://pro.rbc.ru/"]
+rbc.ru#?#div[class="central-publisher-item"]:nth-child(-n+2):-abp-has([href^="https://pro.rbc.ru/"])
+rbc.ru##div[class^="BsideBanner"]
+d23407 1
+a23407 2
+rbc.ru##div[class^="commercial-formats-"]
+autonews.ru,rbc.ru,rbcautonews.ru,rbclifemedia.ru,sportrbc.ru##div[class^="fox-tail"]
 a23409 1
 rbc.ru##div[class^="styles_okko"]
+a23806 1
+dzen.ru##div[class^="dzen-desktop--feed-one-column-ad_"]
+d28433 1
+a28433 1
+dzen.ru##[class^="dzen-desktop--main-page-"]:style(opacity: 0 !important)
 d28445 1
 a28445 2
 dzen.ru##div[class^="dzen-desktop--"][class*="__right-"] div[style^="--top-padding:"]
 dzen.ru##div[class^="dzen-desktop--top-"] > div[style*="%"]:style(padding-top: unset !important)
 d28447 1
+a28612 1
+rbc.ru,rbcrealty.ru,sportrbc.ru##.is-outline .topline__item:style(border-color: transparent !important)
 a28618 1
-rbc.ru##.topline-desktop-project-large:style(border-color: transparent !important)
+rbc.ru,rbclifemedia.ru##.topline-desktop-project-large:style(border-color: transparent !important)
 d28743 1
 a28743 1
 $doc,reason=malicious,domain=apad2.top|besplatnyeprogrammy.ru|byrut.org.ru|hdrip.info|mediagetguru.ru|mixsoft.org|monna2.top|torrent-music.ru|torrent-soft.ru
+d28799 1
+d28804 1
+d29013 1
+a29106 2
+rbc.ru##+js(set-attr, a[href*="?from=main_lines"], target, true)
+rbc.ru##+js(set-attr, a[href*="?from=newsfeed"], target, true)
+d29129 1
+a29129 1
+afisha.ru,rbc.ru##+js(set-constant, Object.prototype.autoPlay, null)
+d29233 1
