@@ -1,8 +1,8 @@
-diff name:ruadlist lines:136 checksum:d82f6ea3f1
+diff name:ruadlist lines:150 checksum:341f79db36
 d4 2
 a5 2
-! Last modified: Thu, 19 Feb 2026 08:58:53 +0000
-! Diff-Path: ../patches/2026.2.19.538.patch#ruadlist
+! Last modified: Thu, 19 Feb 2026 13:38:52 +0000
+! Diff-Path: ../patches/2026.2.19.818.patch#ruadlist
 a8739 1
 ##a[href*="://betsxwin.pro/"]
 a11282 1
@@ -46,6 +46,8 @@ sovsport.ru##a[href*="/click?"]
 d20488 1
 a20488 1
 101.ru,101kofemashina.ru,1in.am,alau.kz,alexua.tv,animejapan.tv,autosport.com.ru,bit.ua,bugaga.ru,c-inform.info,comments.ua,csgamer.ru,ctv7.ru,cvnews.cv.ua,dead-serial.com,e-libra.ru,epravda.com.ua,fashiony.ru,fclmnews.ru,fishki.net,forpost.lviv.ua,game2day.ru,gameinside.ua,ggscore.com,gorod.dp.ua,grimm-online.org,gta.com.ua,horrorzone.ru,ifnews.org.ua,igry-online.net,itechua.com,izbezhat-nakazania.com,jetsetter.ua,jut.su,kievvlast.com.ua,kinoafisha.info,ko.com.ua,kosti-tv.com,kushvsporte.ru,likeni.ru,lovesun.by,lvnews.org.ua,mac-torrent-download.net,madjong-besplatno.ru,mirf.ru,moldfootball.com,mybrazz.club,nashkiev.ua,ne-kurim.ru,orelgrad.ru,pesikot.org,pimpletv.ru,playua.net,post-tracker.ru,povarenok.ru,prodota.ru,prosports.kg,prosports.kz,prosportua.com,qafqazinfo.az,relook.ru,rvnews.rv.ua,saratovnews.ru,securitymedia.org,shuba.life,sopsport.org,spletnica-tv.com,strela-online.com,teenwolf-tv.com,tenews.org.ua,tg.telepult.pro,the-geek.ru,theflash-tv.com,topfile.tj,traktorist.ua,uafix.net,uanews.org.ua,udargol.com,upl.ua,vskazke-tv.com,zab.ru,zorgee.ru##body > a[href][target="_blank"]
+a21051 1
+sovsport.ru##div[class^="marquee_wrapper_"]
 d21690 1
 d21693 1
 a21693 1
@@ -72,6 +74,8 @@ a23352 1
 rbc.ru##.news-feed a[href*="utm_campaign"]
 a23356 1
 rbc.ru,sportrbc.ru##.read-more-pro
+a23363 1
+rbc.ru#?#.sticky-wrapper:-abp-has(> .sticky-element:empty)
 d23367 1
 a23367 2
 rbc.ru##.topline-desktop-hide-banners
@@ -105,11 +109,21 @@ rbc.ru##div[class^="commercial-formats-"]
 autonews.ru,rbc.ru,rbcautonews.ru,rbclifemedia.ru,sportrbc.ru##div[class^="fox-tail"]
 a23405 1
 rbc.ru##div[class^="styles_okko"]
+d23727 1
+a23727 3
+afisha.yandex.ru,afisha.yandex.*##.adfox
+afisha.yandex.ru,afisha.yandex.*##div[data-banner-id]
+afisha.yandex.ru,afisha.yandex.*#?#div[data-component="Grid__Page"]:-abp-has(> div > div.adfox[id])
 a23802 1
 dzen.ru##div[class^="dzen-desktop--feed-one-column-ad_"]
 a28126 2
 securitymedia.org##body > .content:style(padding-top: 0 !important)
 ! ---
+d28411 4
+a28414 3
+afisha.yandex.ru##[style^="width:"][style*="100%;"][style*="height:"][style*="240px;"][style*="display:"][style*="block;"]:empty
+afisha.yandex.ru##[style^="width:"][style*="100%;"][style*="height:"][style*="250px;"][style*="display:"][style*="block;"]:empty
+afisha.yandex.ru##header + div > div:style(height: auto !important)
 d28427 1
 a28427 1
 dzen.ru##[class^="dzen-desktop--main-page-"]:style(opacity: 0 !important)

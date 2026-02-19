@@ -1,8 +1,8 @@
-diff name:ruadlist lines:113 checksum:d82f6ea3f1
+diff name:ruadlist lines:127 checksum:341f79db36
 d4 2
 a5 2
-! Last modified: Thu, 19 Feb 2026 08:58:53 +0000
-! Diff-Path: ../patches/2026.2.19.538.patch#ruadlist
+! Last modified: Thu, 19 Feb 2026 13:38:52 +0000
+! Diff-Path: ../patches/2026.2.19.818.patch#ruadlist
 a11283 1
 ||byrutgame.org/templates/byrut_upd/js/ip-check.js
 a13814 1
@@ -32,6 +32,8 @@ galka.if.ua##a.infoblock-count[target="_blank"]
 d19555 1
 a19555 1
 dtf.ru##a[class*="bar"][href^="/store"]
+a21055 1
+sovsport.ru##div[class^="marquee_wrapper_"]
 d22325 1
 a22325 1
 ||static.dzeninfra.ru/s3/zen-apps/video-feed/*/*/$script
@@ -52,6 +54,8 @@ a23356 1
 rbc.ru##.news-feed a[href*="utm_campaign"]
 a23360 1
 rbc.ru,sportrbc.ru##.read-more-pro
+a23367 1
+rbc.ru#?#.sticky-wrapper:-abp-has(> .sticky-element:empty)
 d23371 1
 a23371 2
 rbc.ru##.topline-desktop-hide-banners
@@ -85,8 +89,18 @@ rbc.ru##div[class^="commercial-formats-"]
 autonews.ru,rbc.ru,rbcautonews.ru,rbclifemedia.ru,sportrbc.ru##div[class^="fox-tail"]
 a23409 1
 rbc.ru##div[class^="styles_okko"]
+d23731 1
+a23731 3
+afisha.yandex.ru,afisha.yandex.*##.adfox
+afisha.yandex.ru,afisha.yandex.*##div[data-banner-id]
+afisha.yandex.ru,afisha.yandex.*#?#div[data-component="Grid__Page"]:-abp-has(> div > div.adfox[id])
 a23806 1
 dzen.ru##div[class^="dzen-desktop--feed-one-column-ad_"]
+d28417 4
+a28420 3
+afisha.yandex.ru##[style^="width:"][style*="100%;"][style*="height:"][style*="240px;"][style*="display:"][style*="block;"]:empty
+afisha.yandex.ru##[style^="width:"][style*="100%;"][style*="height:"][style*="250px;"][style*="display:"][style*="block;"]:empty
+afisha.yandex.ru##header + div > div:style(height: auto !important)
 d28433 1
 a28433 1
 dzen.ru##[class^="dzen-desktop--main-page-"]:style(opacity: 0 !important)

@@ -1,8 +1,8 @@
-diff name:ruadlist lines:163 checksum:d82f6ea3f1
+diff name:ruadlist lines:177 checksum:341f79db36
 d4 2
 a5 2
-! Last modified: Thu, 19 Feb 2026 08:58:53 +0000
-! Diff-Path: ../patches/2026.2.19.538.patch#ruadlist
+! Last modified: Thu, 19 Feb 2026 13:38:52 +0000
+! Diff-Path: ../patches/2026.2.19.818.patch#ruadlist
 a8739 1
 ##a[href*="://betsxwin.pro/"]
 a11282 1
@@ -57,6 +57,8 @@ a20484 1
 d20733 1
 a21022 1
 sovsport.ru##div[class^="free-bet-widget_buttonContainer_"]
+a21047 1
+sovsport.ru##div[class^="marquee_wrapper_"]
 a21048 1
 sovsport.ru##div[class^="match-day_footer_"]
 a21686 1
@@ -83,6 +85,8 @@ a23345 1
 rbc.ru##.news-feed a[href*="utm_campaign"]
 a23349 1
 rbc.ru,sportrbc.ru##.read-more-pro
+a23356 1
+rbc.ru#?#.sticky-wrapper:-abp-has(> .sticky-element:empty)
 d23360 1
 a23360 2
 rbc.ru##.topline-desktop-hide-banners
@@ -117,6 +121,11 @@ autonews.ru,rbc.ru,rbcautonews.ru,rbclifemedia.ru,sportrbc.ru##div[class^="fox-t
 a23398 1
 rbc.ru##div[class^="styles_okko"]
 d23616 6
+d23726 1
+a23726 3
+afisha.yandex.ru,afisha.yandex.*##.adfox
+afisha.yandex.ru,afisha.yandex.*##div[data-banner-id]
+afisha.yandex.ru,afisha.yandex.*#?#div[data-component="Grid__Page"]:-abp-has(> div > div.adfox[id])
 a23742 11
 ! Яндекс.Маркет
 market.yandex.ru,market.yandex.*##[aria-label="Баннер"]
@@ -134,6 +143,11 @@ dzen.ru##div[class^="dzen-desktop--feed-one-column-ad_"]
 a28114 2
 securitymedia.org##body > .content:style(padding-top: 0 !important)
 ! ---
+d28399 4
+a28402 3
+afisha.yandex.ru##[style^="width:"][style*="100%;"][style*="height:"][style*="240px;"][style*="display:"][style*="block;"]:empty
+afisha.yandex.ru##[style^="width:"][style*="100%;"][style*="height:"][style*="250px;"][style*="display:"][style*="block;"]:empty
+afisha.yandex.ru##header + div > div:style(height: auto !important)
 d28415 1
 a28415 1
 dzen.ru##[class^="dzen-desktop--main-page-"]:style(opacity: 0 !important)
