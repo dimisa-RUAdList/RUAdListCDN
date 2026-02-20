@@ -1,8 +1,8 @@
-diff name:ruadlist lines:126 checksum:c27485aa1b
+diff name:ruadlist lines:123 checksum:3453238a66
 d4 2
 a5 2
-! Last modified: Fri, 20 Feb 2026 14:53:38 +0000
-! Diff-Path: ../patches/2026.2.20.893.patch#ruadlist
+! Last modified: Fri, 20 Feb 2026 19:01:14 +0000
+! Diff-Path: ../patches/2026.2.20.1141.patch#ruadlist
 d13890 1
 d14062 1
 d14836 1
@@ -39,7 +39,7 @@ d22329 1
 d23341 2
 a23342 1
 rbc.ru##.central-publisher-item[data-name="CommercialAnons"]
-d23350 6
+d23351 5
 a23356 2
 rbc.ru##.js-pro-slider__container
 rbc.ru##.js-snippet-pro-container
@@ -60,9 +60,11 @@ a23382 1
 /topline-branding$domain=rbc.ru|sportrbc.ru
 a23383 1
 rbc.ru##[class^="SportMainBetBlocks_"]
-d23397 14
-a23410 1
+d23397 10
+a23406 3
 rbc.ru##body div[class^="MainNewsComponent_wrapper_"] [href^="https://pro.rbc.ru/"]
+rbc.ru#?#body.free .intresting__list > .intresting__item:-abp-has(a[href^="https://pro.rbc.ru/"])
+rbc.ru#?#body.free .js-index-central-column > [data-publisher-index]:-abp-has([href^="https://pro.rbc.ru"])
 a23411 3
 rbc.ru##body.free a[class^="styles_message-bar_"][href^="https://pro.rbc.ru/"]
 rbc.ru#?#body.free aside.bside .sidebar:-abp-has(a[href^="https://pro.rbc.ru/"])
@@ -104,14 +106,9 @@ autonews.ru,rbc.ru,rbcrealty.ru,sportrbc.ru##.is-outline .topline__item:style(bo
 d28627 1
 a28627 1
 rbc.ru,rbclifemedia.ru##.topline-desktop-project-large:style(border-color: transparent !important)
-d28808 1
 a28808 1
 dzen.ru##+js(abort-on-property-read, Object.prototype.adfoxContainerId)
-d28813 1
 d29022 1
-a29115 2
-rbc.ru##+js(set-attr, a[href*="?from=main_lines"], target, true)
-rbc.ru##+js(set-attr, a[href*="?from=newsfeed"], target, true)
 d29138 1
 a29138 1
 afisha.ru,rbc.ru##+js(set-constant, Object.prototype.autoPlay, null)

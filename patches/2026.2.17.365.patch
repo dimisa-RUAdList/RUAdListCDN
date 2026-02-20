@@ -1,8 +1,8 @@
-diff name:ruadlist lines:151 checksum:c27485aa1b
+diff name:ruadlist lines:149 checksum:3453238a66
 d4 2
 a5 2
-! Last modified: Fri, 20 Feb 2026 14:53:38 +0000
-! Diff-Path: ../patches/2026.2.20.893.patch#ruadlist
+! Last modified: Fri, 20 Feb 2026 19:01:14 +0000
+! Diff-Path: ../patches/2026.2.20.1141.patch#ruadlist
 a11283 1
 ||byrutgame.org/templates/byrut_upd/js/ip-check.js
 a13814 1
@@ -55,7 +55,7 @@ apad2.top,besplatnyeprogrammy.ru,byrut.org.ru,hdrip.info,mediagetguru.ru,mixsoft
 d23338 2
 a23339 1
 rbc.ru##.central-publisher-item[data-name="CommercialAnons"]
-d23347 6
+d23348 5
 a23353 2
 rbc.ru##.js-pro-slider__container
 rbc.ru##.js-snippet-pro-container
@@ -77,9 +77,12 @@ a23378 1
 a23379 2
 rbc.ru##[class^="SportMainBetBlocks_"]
 rbc.ru##[data-name="SimplePromoCard"]
-d23392 14
-a23405 13
+d23392 10
+a23401 3
 rbc.ru##body div[class^="MainNewsComponent_wrapper_"] [href^="https://pro.rbc.ru/"]
+rbc.ru#?#body.free .intresting__list > .intresting__item:-abp-has(a[href^="https://pro.rbc.ru/"])
+rbc.ru#?#body.free .js-index-central-column > [data-publisher-index]:-abp-has([href^="https://pro.rbc.ru"])
+a23405 12
 rbc.ru##body.free a.meta-info-row-project[href^="https://pro.rbc.ru"]
 rbc.ru##body.free a[class^="styles_message-bar_"][href^="https://pro.rbc.ru/"]
 rbc.ru#?#body.free aside.bside .sidebar:-abp-has(a[href^="https://pro.rbc.ru/"])
@@ -129,14 +132,9 @@ rbc.ru,rbclifemedia.ru##.topline-desktop-project-large:style(border-color: trans
 d28743 1
 a28743 1
 $doc,reason=malicious,domain=apad2.top|besplatnyeprogrammy.ru|byrut.org.ru|hdrip.info|mediagetguru.ru|mixsoft.org|monna2.top|torrent-music.ru|torrent-soft.ru
-d28799 1
 a28799 1
 dzen.ru##+js(abort-on-property-read, Object.prototype.adfoxContainerId)
-d28804 1
 d29013 1
-a29106 2
-rbc.ru##+js(set-attr, a[href*="?from=main_lines"], target, true)
-rbc.ru##+js(set-attr, a[href*="?from=newsfeed"], target, true)
 d29129 1
 a29129 1
 afisha.ru,rbc.ru##+js(set-constant, Object.prototype.autoPlay, null)

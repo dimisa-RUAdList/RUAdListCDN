@@ -1,8 +1,8 @@
-diff name:ruadlist lines:48 checksum:c27485aa1b
+diff name:ruadlist lines:61 checksum:3453238a66
 d4 2
 a5 2
-! Last modified: Fri, 20 Feb 2026 14:53:38 +0000
-! Diff-Path: ../patches/2026.2.20.893.patch#ruadlist
+! Last modified: Fri, 20 Feb 2026 19:01:14 +0000
+! Diff-Path: ../patches/2026.2.20.1141.patch#ruadlist
 d13890 1
 d14062 1
 d14836 1
@@ -16,8 +16,17 @@ sovsport.ru##div[class^="marquee_wrapper_"]
 a22328 1
 ||static.dzeninfra.ru/s3/zen-apps/news-site/*/*/$script
 d22330 1
+a23349 1
+rbc.ru##.js-index-central-column .item-commercial-anons-wrapper
 a23368 1
 rbc.ru#?#.sticky-wrapper:-abp-has(> .sticky-element:empty)
+a23397 6
+rbc.ru#?#body.free .intresting__list > .intresting__item:-abp-has(a[href^="https://pro.rbc.ru/"])
+rbc.ru#?#body.free .js-index-central-column > [data-publisher-index]:-abp-has([href^="https://pro.rbc.ru"])
+rbc.ru##body.free [data-vr-zone="Топ новости"] .main__feed::before
+rbc.ru##body.free [data-vr-zone="Топ новости"] a[href*="utm_campaign"]:not([href^="https://pro.rbc.ru/"])
+rbc.ru##body.free [data-vr-zone="Топ новости"] a[href^="https://pro.rbc.ru/"]
+rbc.ru#?#body.free [data-vr-zone="Топ новости"] div:-abp-has(> a[href*="utm_campaign"]:not([href^="https://pro.rbc.ru/"]))
 d23635 1
 a23635 1
 ya.ru##[aria-label^="Информ"] ~ [class][class]:not(button)
@@ -36,8 +45,12 @@ dzen.ru##div[class*="topContentOneColumnFeed"] > div:first-child + div > article
 d28620 1
 a28620 1
 autonews.ru,rbc.ru,rbcrealty.ru,sportrbc.ru##.is-outline .topline__item:style(border-color: transparent !important)
-a28807 1
+a28807 2
+rbc.ru##+js(abort-on-property-read, Object.prototype._isAutostartQueueSet)
 dzen.ru##+js(abort-on-property-read, Object.prototype.adfoxContainerId)
+a28811 1
+rbc.ru##+js(abort-on-property-read, Object.prototype.isApplySticky)
+d29113 2
 d29153 1
 d29155 1
 d29157 1

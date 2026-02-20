@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 20 Feb 2026 14:53:38 +0000
-! Diff-Path: ../patches/2026.2.20.893.patch#ruadlist
+! Last modified: Fri, 20 Feb 2026 19:01:14 +0000
+! Diff-Path: ../patches/2026.2.20.1141.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -23346,6 +23346,7 @@ pro.rbc.ru##.header__partner
 rbc.ru##.header__project__info
 rbc.ru#?#.item-in-article:-abp-has([href*="erid="])
 sportrbc.ru##.js-header-slider-container
+rbc.ru##.js-index-central-column .item-commercial-anons-wrapper
 cash.rbc.ru##.js-one-office.premium
 rbc.ru##.js-pro-slider__container
 rbc.ru##.js-snippet-pro-container
@@ -23395,6 +23396,12 @@ cnews.ru#?#a[href^="https://www.cnews.ru/redirect.php"]:-abp-contains(Дзен)
 autonews.ru,rbc.ru,rbcautonews.ru,sportrbc.ru##body div .banner__container
 autonews.ru,rbc.ru,sportrbc.ru##body div .banner__filmstrip
 rbc.ru##body div[class^="MainNewsComponent_wrapper_"] [href^="https://pro.rbc.ru/"]
+rbc.ru#?#body.free .intresting__list > .intresting__item:-abp-has(a[href^="https://pro.rbc.ru/"])
+rbc.ru#?#body.free .js-index-central-column > [data-publisher-index]:-abp-has([href^="https://pro.rbc.ru"])
+rbc.ru##body.free [data-vr-zone="Топ новости"] .main__feed::before
+rbc.ru##body.free [data-vr-zone="Топ новости"] a[href*="utm_campaign"]:not([href^="https://pro.rbc.ru/"])
+rbc.ru##body.free [data-vr-zone="Топ новости"] a[href^="https://pro.rbc.ru/"]
+rbc.ru#?#body.free [data-vr-zone="Топ новости"] div:-abp-has(> a[href*="utm_campaign"]:not([href^="https://pro.rbc.ru/"]))
 rbc.ru##body.free a.meta-info-row-project[href^="https://pro.rbc.ru"]
 rbc.ru##body.free a[class^="styles_message-bar_"][href^="https://pro.rbc.ru/"]
 rbc.ru#?#body.free aside.bside .sidebar:-abp-has(a[href^="https://pro.rbc.ru/"])
@@ -28808,11 +28815,13 @@ drive2.ru##+js(abort-on-property-read, Object.prototype.AdfoxXhrRequestPrepared)
 liveinternet.ru,yap.ru,yaplakal.com##+js(abort-on-property-read, Object.prototype.Metrika)
 liveinternet.ru##+js(abort-on-property-read, Object.prototype.YA_TURBO_PAGES)
 lena-miro.ru,levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##+js(abort-on-property-read, Object.prototype._getBanner)
+rbc.ru##+js(abort-on-property-read, Object.prototype._isAutostartQueueSet)
 dzen.ru##+js(abort-on-property-read, Object.prototype.adfoxContainerId)
 www.kinopoisk.ru##+js(abort-on-property-read, Object.prototype.bannerOptions)
 gorodrabot.by,gorodrabot.ru##+js(abort-on-property-read, Object.prototype.direct)
 fishki.net##+js(abort-on-property-read, Object.prototype.fakeDetect)
 auto.ru,reshu.by,reshuent.kz,sdamgia.ru##+js(abort-on-property-read, Object.prototype.getAdUsageStorage)
+rbc.ru##+js(abort-on-property-read, Object.prototype.isApplySticky)
 e1.ru,nova.rambler.ru,pikabu.ru##+js(abort-on-property-read, Object.prototype.loadBanner)
 24smi.org##+js(abort-on-property-read, Object.prototype.render)
 gismeteo.by,gismeteo.kz,gismeteo.ru##+js(abort-on-property-read, Object.prototype.scriptsViaXhr)
@@ -29114,8 +29123,6 @@ fishki.net##+js(set-attr, .cycle-carousel-wrap > a.bottom_slide__item > img, src
 fishki.net##+js(set-attr, .drag_element a[href*=".html"], target, true)
 dtf.ru,vc.ru##+js(set-attr, .media .andropov-video video, controls, true)
 eneyida.tv##+js(set-attr, .owl-item > a > img, src, [data-src])
-rbc.ru##+js(set-attr, a[href*="?from=main_lines"], target, true)
-rbc.ru##+js(set-attr, a[href*="?from=newsfeed"], target, true)
 overclockers.ru##+js(set-attr, img[src="https://overclockers.ru/assets/logo_gray_stub.gif"], src, [data-src])
 joyreactor.cc,reactor.cc##+js(set-attr, video, controls, true)
 3dnews.ru##+js(set-attr, video[controls="controls"], controls, true)
