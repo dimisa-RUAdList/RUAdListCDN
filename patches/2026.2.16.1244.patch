@@ -1,8 +1,8 @@
-diff name:ruadlist lines:135 checksum:3281cb3ca9
+diff name:ruadlist lines:147 checksum:962ab40b1c
 d4 2
 a5 2
-! Last modified: Fri, 20 Feb 2026 04:54:56 +0000
-! Diff-Path: ../patches/2026.2.20.294.patch#ruadlist
+! Last modified: Fri, 20 Feb 2026 09:53:42 +0000
+! Diff-Path: ../patches/2026.2.20.593.patch#ruadlist
 a11283 1
 ||byrutgame.org/templates/byrut_upd/js/ip-check.js
 a13814 1
@@ -97,9 +97,9 @@ rbc.ru##div[class^="commercial-formats-"]
 autonews.ru,rbc.ru,rbcautonews.ru,rbclifemedia.ru,sportrbc.ru##div[class^="fox-tail"]
 a23409 1
 rbc.ru##div[class^="styles_okko"]
-d23731 1
-a23731 3
+a23730 1
 afisha.yandex.ru,afisha.yandex.*##.adfox
+a23731 2
 afisha.yandex.ru,afisha.yandex.*##div[data-banner-id]
 afisha.yandex.ru,afisha.yandex.*#?#div[data-component="Grid__Page"]:-abp-has(> div > div.adfox[id])
 a23806 1
@@ -113,18 +113,21 @@ d28433 1
 a28433 1
 dzen.ru##[class^="dzen-desktop--main-page-"]:style(opacity: 0 !important)
 d28445 1
-a28445 2
+a28445 3
+dzen.ru##div[class*="topContentOneColumnFeed"] > div:first-child + div > article:style(background: inherit !important)
 dzen.ru##div[class^="dzen-desktop--"][class*="__right-"] div[style^="--top-padding:"]
 dzen.ru##div[class^="dzen-desktop--top-"] > div[style*="%"]:style(padding-top: unset !important)
 d28447 1
 a28612 1
-rbc.ru,rbcrealty.ru,sportrbc.ru##.is-outline .topline__item:style(border-color: transparent !important)
+autonews.ru,rbc.ru,rbcrealty.ru,sportrbc.ru##.is-outline .topline__item:style(border-color: transparent !important)
 a28618 1
 rbc.ru,rbclifemedia.ru##.topline-desktop-project-large:style(border-color: transparent !important)
 d28743 1
 a28743 1
 $doc,reason=malicious,domain=apad2.top|besplatnyeprogrammy.ru|byrut.org.ru|hdrip.info|mediagetguru.ru|mixsoft.org|monna2.top|torrent-music.ru|torrent-soft.ru
 d28799 1
+a28799 1
+dzen.ru##+js(abort-on-property-read, Object.prototype.adfoxContainerId)
 d28804 1
 d29013 1
 a29106 2
@@ -133,4 +136,13 @@ rbc.ru##+js(set-attr, a[href*="?from=newsfeed"], target, true)
 d29129 1
 a29129 1
 afisha.ru,rbc.ru##+js(set-constant, Object.prototype.autoPlay, null)
+d29145 1
+d29147 1
+d29149 1
 d29233 1
+a29275 2
+dzen.ru##:matches-path(video/watch) [class*="_withBottomSpace-"]
+dzen.ru##:matches-path(video/watch) [class*="doc2doc-after"]
+d29323 1
+a29323 1
+dzen.ru##div:matches-attr(/data-[a-z0-9]/=/-ad$/)

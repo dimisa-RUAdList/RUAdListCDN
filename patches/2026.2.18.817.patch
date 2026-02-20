@@ -1,8 +1,8 @@
-diff name:ruadlist lines:101 checksum:3281cb3ca9
+diff name:ruadlist lines:114 checksum:962ab40b1c
 d4 2
 a5 2
-! Last modified: Fri, 20 Feb 2026 04:54:56 +0000
-! Diff-Path: ../patches/2026.2.20.294.patch#ruadlist
+! Last modified: Fri, 20 Feb 2026 09:53:42 +0000
+! Diff-Path: ../patches/2026.2.20.593.patch#ruadlist
 d15600 1
 d15608 1
 a15608 1
@@ -70,9 +70,9 @@ d23414 1
 a23414 2
 rbc.ru##div[class^="commercial-formats-"]
 autonews.ru,rbc.ru,rbcautonews.ru,rbclifemedia.ru,sportrbc.ru##div[class^="fox-tail"]
-d23739 1
-a23739 3
+a23738 1
 afisha.yandex.ru,afisha.yandex.*##.adfox
+a23739 2
 afisha.yandex.ru,afisha.yandex.*##div[data-banner-id]
 afisha.yandex.ru,afisha.yandex.*#?#div[data-component="Grid__Page"]:-abp-has(> div > div.adfox[id])
 a23814 1
@@ -85,12 +85,16 @@ afisha.yandex.ru##header + div > div:style(height: auto !important)
 d28441 1
 a28441 1
 dzen.ru##[class^="dzen-desktop--main-page-"]:style(opacity: 0 !important)
+a28452 1
+dzen.ru##div[class*="topContentOneColumnFeed"] > div:first-child + div > article:style(background: inherit !important)
 a28620 1
-rbc.ru,rbcrealty.ru,sportrbc.ru##.is-outline .topline__item:style(border-color: transparent !important)
+autonews.ru,rbc.ru,rbcrealty.ru,sportrbc.ru##.is-outline .topline__item:style(border-color: transparent !important)
 d28627 1
 a28627 1
 rbc.ru,rbclifemedia.ru##.topline-desktop-project-large:style(border-color: transparent !important)
 d28808 1
+a28808 1
+dzen.ru##+js(abort-on-property-read, Object.prototype.adfoxContainerId)
 d28813 1
 d29022 1
 a29115 2
@@ -99,4 +103,13 @@ rbc.ru##+js(set-attr, a[href*="?from=newsfeed"], target, true)
 d29138 1
 a29138 1
 afisha.ru,rbc.ru##+js(set-constant, Object.prototype.autoPlay, null)
+d29154 1
+d29156 1
+d29158 1
 d29242 1
+a29284 2
+dzen.ru##:matches-path(video/watch) [class*="_withBottomSpace-"]
+dzen.ru##:matches-path(video/watch) [class*="doc2doc-after"]
+d29332 1
+a29332 1
+dzen.ru##div:matches-attr(/data-[a-z0-9]/=/-ad$/)

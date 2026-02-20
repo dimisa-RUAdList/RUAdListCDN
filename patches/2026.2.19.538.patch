@@ -1,17 +1,17 @@
-diff name:ruadlist lines:20 checksum:3281cb3ca9
+diff name:ruadlist lines:36 checksum:962ab40b1c
 d4 2
 a5 2
-! Last modified: Fri, 20 Feb 2026 04:54:56 +0000
-! Diff-Path: ../patches/2026.2.20.294.patch#ruadlist
+! Last modified: Fri, 20 Feb 2026 09:53:42 +0000
+! Diff-Path: ../patches/2026.2.20.593.patch#ruadlist
 a15836 1
 habr.com#?#.block-wrapper:-abp-has(> [data-test-id*="Advertising"]:empty)
 a21059 1
 sovsport.ru##div[class^="marquee_wrapper_"]
 a23368 1
 rbc.ru#?#.sticky-wrapper:-abp-has(> .sticky-element:empty)
-d23737 1
-a23737 3
+a23736 1
 afisha.yandex.ru,afisha.yandex.*##.adfox
+a23737 2
 afisha.yandex.ru,afisha.yandex.*##div[data-banner-id]
 afisha.yandex.ru,afisha.yandex.*#?#div[data-component="Grid__Page"]:-abp-has(> div > div.adfox[id])
 d28424 4
@@ -19,3 +19,19 @@ a28427 3
 afisha.yandex.ru##[style^="width:"][style*="100%;"][style*="height:"][style*="240px;"][style*="display:"][style*="block;"]:empty
 afisha.yandex.ru##[style^="width:"][style*="100%;"][style*="height:"][style*="250px;"][style*="display:"][style*="block;"]:empty
 afisha.yandex.ru##header + div > div:style(height: auto !important)
+a28451 1
+dzen.ru##div[class*="topContentOneColumnFeed"] > div:first-child + div > article:style(background: inherit !important)
+d28620 1
+a28620 1
+autonews.ru,rbc.ru,rbcrealty.ru,sportrbc.ru##.is-outline .topline__item:style(border-color: transparent !important)
+a28807 1
+dzen.ru##+js(abort-on-property-read, Object.prototype.adfoxContainerId)
+d29153 1
+d29155 1
+d29157 1
+a29282 2
+dzen.ru##:matches-path(video/watch) [class*="_withBottomSpace-"]
+dzen.ru##:matches-path(video/watch) [class*="doc2doc-after"]
+d29330 1
+a29330 1
+dzen.ru##div:matches-attr(/data-[a-z0-9]/=/-ad$/)

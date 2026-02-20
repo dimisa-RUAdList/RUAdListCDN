@@ -1,8 +1,8 @@
-diff name:ruadlist lines:81 checksum:3281cb3ca9
+diff name:ruadlist lines:94 checksum:962ab40b1c
 d4 2
 a5 2
-! Last modified: Fri, 20 Feb 2026 04:54:56 +0000
-! Diff-Path: ../patches/2026.2.20.294.patch#ruadlist
+! Last modified: Fri, 20 Feb 2026 09:53:42 +0000
+! Diff-Path: ../patches/2026.2.20.593.patch#ruadlist
 a15836 1
 habr.com#?#.block-wrapper:-abp-has(> [data-test-id*="Advertising"]:empty)
 a21059 1
@@ -50,9 +50,9 @@ d23415 1
 a23415 2
 rbc.ru##div[class^="commercial-formats-"]
 autonews.ru,rbc.ru,rbcautonews.ru,rbclifemedia.ru,sportrbc.ru##div[class^="fox-tail"]
-d23740 1
-a23740 3
+a23739 1
 afisha.yandex.ru,afisha.yandex.*##.adfox
+a23740 2
 afisha.yandex.ru,afisha.yandex.*##div[data-banner-id]
 afisha.yandex.ru,afisha.yandex.*#?#div[data-component="Grid__Page"]:-abp-has(> div > div.adfox[id])
 a23815 1
@@ -65,12 +65,16 @@ afisha.yandex.ru##header + div > div:style(height: auto !important)
 d28442 1
 a28442 1
 dzen.ru##[class^="dzen-desktop--main-page-"]:style(opacity: 0 !important)
+a28453 1
+dzen.ru##div[class*="topContentOneColumnFeed"] > div:first-child + div > article:style(background: inherit !important)
 a28621 1
-rbc.ru,rbcrealty.ru,sportrbc.ru##.is-outline .topline__item:style(border-color: transparent !important)
+autonews.ru,rbc.ru,rbcrealty.ru,sportrbc.ru##.is-outline .topline__item:style(border-color: transparent !important)
 d28628 1
 a28628 1
 rbc.ru,rbclifemedia.ru##.topline-desktop-project-large:style(border-color: transparent !important)
 d28809 1
+a28809 1
+dzen.ru##+js(abort-on-property-read, Object.prototype.adfoxContainerId)
 d28814 1
 d29023 1
 a29116 2
@@ -79,4 +83,13 @@ rbc.ru##+js(set-attr, a[href*="?from=newsfeed"], target, true)
 d29139 1
 a29139 1
 afisha.ru,rbc.ru##+js(set-constant, Object.prototype.autoPlay, null)
+d29155 1
+d29157 1
+d29159 1
 d29243 1
+a29285 2
+dzen.ru##:matches-path(video/watch) [class*="_withBottomSpace-"]
+dzen.ru##:matches-path(video/watch) [class*="doc2doc-after"]
+d29333 1
+a29333 1
+dzen.ru##div:matches-attr(/data-[a-z0-9]/=/-ad$/)
