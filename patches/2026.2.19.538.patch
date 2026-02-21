@@ -1,8 +1,8 @@
-diff name:ruadlist lines:72 checksum:b845f34faa
+diff name:ruadlist lines:76 checksum:a11550a2fe
 d4 2
 a5 2
-! Last modified: Sat, 21 Feb 2026 15:35:51 +0000
-! Diff-Path: ../patches/2026.2.21.935.patch#ruadlist
+! Last modified: Sat, 21 Feb 2026 20:36:29 +0000
+! Diff-Path: ../patches/2026.2.21.1236.patch#ruadlist
 a10278 1
 bbc.com#?#header[role="banner"] > div > div:has(> div > div > p > [href*="/cookies/"])
 d13890 1
@@ -43,6 +43,10 @@ afisha.yandex.ru,afisha.yandex.*##div[data-banner-id]
 afisha.yandex.ru,afisha.yandex.*#?#div[data-component="Grid__Page"]:-abp-has(> div > div.adfox[id])
 a23763 1
 market.yandex.ru,market.yandex.*##div[data-apiary-widget-name="@monetize/CreativeBanner"]
+a26188 1
+@@||magnit.ru/scripts/prebid.js|$script,~third-party
+a26480 1
+magnit.ru#@#a[href^="https://yandex.ru/adfox/"]
 d28424 4
 a28427 3
 afisha.yandex.ru##[style^="width:"][style*="100%;"][style*="height:"][style*="240px;"][style*="display:"][style*="block;"]:empty
@@ -52,7 +56,7 @@ a28451 1
 dzen.ru##div[class*="topContentOneColumnFeed"] > div:first-child + div > article:style(background: inherit !important)
 d28620 1
 a28620 1
-autonews.ru,rbc.ru,rbcrealty.ru,sportrbc.ru##.is-outline .topline__item:style(border-color: transparent !important)
+autonews.ru,rbc.ru,rbcautonews.ru,rbcrealty.ru,sportrbc.ru##.is-outline .topline__item:style(border-color: transparent !important)
 d28755 1
 a28755 1
 captcha-api.yandex.ru,id.vk.ru,passport.yandex.ru,sso.dzen.ru,sso.ya.ru#@#+js()
