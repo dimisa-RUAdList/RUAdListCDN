@@ -1,8 +1,9 @@
-diff name:ruadlist lines:18 checksum:071f7f7b44
+diff name:ruadlist lines:21 checksum:5ea78754b6
 d4 2
 a5 2
-! Last modified: Fri, 20 Feb 2026 19:41:09 +0000
-! Diff-Path: ../patches/2026.2.20.1181.patch#ruadlist
+! Last modified: Sat, 21 Feb 2026 02:44:17 +0000
+! Diff-Path: ../patches/2026.2.21.164.patch#ruadlist
+d22720 1
 a23348 1
 rbc.ru##.js-index-central-column .item-commercial-anons-wrapper
 a23397 6
@@ -12,6 +13,8 @@ rbc.ru##body.free [data-vr-zone="Топ новости"] .main__feed::before
 rbc.ru##body.free [data-vr-zone="Топ новости"] a[href*="utm_campaign"]:not([href^="https://pro.rbc.ru/"])
 rbc.ru##body.free [data-vr-zone="Топ новости"] a[href^="https://pro.rbc.ru/"]
 rbc.ru#?#body.free [data-vr-zone="Топ новости"] div:-abp-has(> a[href*="utm_campaign"]:not([href^="https://pro.rbc.ru/"]))
+a23766 1
+market.yandex.ru,market.yandex.*##div[data-apiary-widget-name="@monetize/CreativeBanner"]
 a28810 1
 rbc.ru##+js(abort-on-property-read, Object.prototype._isAutostartQueueSet)
 a28815 1

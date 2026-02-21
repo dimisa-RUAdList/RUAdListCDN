@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 20 Feb 2026 19:41:09 +0000
-! Diff-Path: ../patches/2026.2.20.1181.patch#ruadlist
+! Last modified: Sat, 21 Feb 2026 02:44:17 +0000
+! Diff-Path: ../patches/2026.2.21.164.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22717,7 +22717,6 @@ news.mail.ru##aside div > div:first-child:empty ~ div
 news.mail.ru#?#aside div:-abp-has(> div:only-child:empty)
 news.mail.ru##body > div > style + div[id]
 ! Дзен новости Mail-edition
-dzen.ru##[id*="10-"]
 dzen.ru##[id*="20-"]
 dzen.ru##[id*="30-"]
 dzen.ru##[id*="_R-A-"]
@@ -23771,6 +23770,7 @@ market.yandex.ru,market.yandex.*##[data-banner-manager-id] [role="button"]
 market.yandex.ru,market.yandex.*##[data-baobab-name="recomMadv"] [role="button"]
 market.yandex.ru,market.yandex.*##[data-madv]
 market.yandex.ru,market.yandex.*##a[href^="https://ad.adriver.ru/"]
+market.yandex.ru,market.yandex.*##div[data-apiary-widget-name="@monetize/CreativeBanner"]
 market.yandex.ru,market.yandex.*##div[id^="remix_"] > div[style^="grid-row:"][style*="grid-column:"]:empty
 ! Яндекс.Музыка
 music.yandex.ru,music.yandex.*##section[class^="SideAdvertBanner_root_"]
