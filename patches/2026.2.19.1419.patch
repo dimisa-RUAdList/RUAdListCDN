@@ -1,8 +1,8 @@
-diff name:ruadlist lines:62 checksum:0cfa19a6c8
+diff name:ruadlist lines:78 checksum:d2a2c2f39a
 d4 2
 a5 2
-! Last modified: Sun, 22 Feb 2026 11:31:46 +0000
-! Diff-Path: ../patches/2026.2.22.691.patch#ruadlist
+! Last modified: Sun, 22 Feb 2026 16:45:31 +0000
+! Diff-Path: ../patches/2026.2.22.1005.patch#ruadlist
 a10278 1
 bbc.com#?#header[role="banner"] > div > div:has(> div > div > p > [href*="/cookies/"])
 d13890 1
@@ -27,9 +27,7 @@ rbc.ru##body.free [data-vr-zone="Топ новости"] .main__feed::before
 rbc.ru##body.free [data-vr-zone="Топ новости"] a[href*="utm_campaign"]:not([href^="https://pro.rbc.ru/"])
 rbc.ru##body.free [data-vr-zone="Топ новости"] a[href^="https://pro.rbc.ru/"]
 rbc.ru#?#body.free [data-vr-zone="Топ новости"] div:-abp-has(> a[href*="utm_campaign"]:not([href^="https://pro.rbc.ru/"]))
-d23638 1
-a23638 1
-ya.ru##[aria-label^="Информ"] ~ [class][class]:not(button)
+d23637 2
 a23740 1
 afisha.yandex.ru,afisha.yandex.*##.afisha-profit-banner
 a23768 1
@@ -38,6 +36,11 @@ a26193 1
 @@||magnit.ru/scripts/prebid.js|$script,~third-party
 a26485 1
 magnit.ru#@#a[href^="https://yandex.ru/adfox/"]
+d28425 1
+a28425 1
+ya.ru##[style*="--masonry-feed-columns-count:"]
+a28427 1
+ya.ru##html[class*="document_feed_"] aside ~ div[style]
 a28455 1
 dzen.ru##div[class*="topContentOneColumnFeed"] > div:first-child + div > article:style(background: inherit !important)
 d28624 1
@@ -51,13 +54,26 @@ rbc.ru##+js(abort-on-property-read, Object.prototype._isAutostartQueueSet)
 dzen.ru##+js(abort-on-property-read, Object.prototype.adfoxContainerId)
 a28815 1
 rbc.ru##+js(abort-on-property-read, Object.prototype.isApplySticky)
+d28822 1
+a29002 1
+ya.ru##+js(json-prune, rythm_market)
+d29031 1
+d29090 1
+a29090 2
+ya.ru##+js(remove-node-text, a, /Установите Яндекс Браузер|Установить поиск Яндекса/)
+ya.ru##+js(remove-node-text, div, 'ad-mark__b-unit')
 d29117 2
 d29157 1
 d29159 1
-d29161 1
+d29161 2
+a29162 1
+rbc.ru,rbcrealty.ru,sportrbc.ru##+js(set-constant, Object.prototype.livetv-state, true)
 a29286 2
 dzen.ru##:matches-path(video/watch) [class*="_withBottomSpace-"]
 dzen.ru##:matches-path(video/watch) [class*="doc2doc-after"]
 d29334 1
 a29334 1
 dzen.ru##div:matches-attr(/data-[a-z0-9]/=/-ad$/)
+d29578 1
+a29578 1
+ya.ru#@#+js(remove-node-text, div, 'ad-mark__b-unit')

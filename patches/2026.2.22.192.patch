@@ -1,5 +1,25 @@
-diff name:ruadlist lines:4 checksum:0cfa19a6c8
+diff name:ruadlist lines:24 checksum:d2a2c2f39a
 d4 2
 a5 2
-! Last modified: Sun, 22 Feb 2026 11:31:46 +0000
-! Diff-Path: ../patches/2026.2.22.691.patch#ruadlist
+! Last modified: Sun, 22 Feb 2026 16:45:31 +0000
+! Diff-Path: ../patches/2026.2.22.1005.patch#ruadlist
+d23643 2
+d28435 1
+a28435 1
+ya.ru##[style*="--masonry-feed-columns-count:"]
+a28437 1
+ya.ru##html[class*="document_feed_"] aside ~ div[style]
+d28836 1
+a29016 1
+ya.ru##+js(json-prune, rythm_market)
+d29045 1
+d29104 1
+a29104 2
+ya.ru##+js(remove-node-text, a, /Установите Яндекс Браузер|Установить поиск Яндекса/)
+ya.ru##+js(remove-node-text, div, 'ad-mark__b-unit')
+d29171 1
+a29171 1
+rbc.ru,rbcrealty.ru,sportrbc.ru##+js(set-constant, Object.prototype.livetv-state, true)
+d29589 1
+a29589 1
+ya.ru#@#+js(remove-node-text, div, 'ad-mark__b-unit')

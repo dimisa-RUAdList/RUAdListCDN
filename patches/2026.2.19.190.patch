@@ -1,8 +1,8 @@
-diff name:ruadlist lines:118 checksum:0cfa19a6c8
+diff name:ruadlist lines:134 checksum:d2a2c2f39a
 d4 2
 a5 2
-! Last modified: Sun, 22 Feb 2026 11:31:46 +0000
-! Diff-Path: ../patches/2026.2.22.691.patch#ruadlist
+! Last modified: Sun, 22 Feb 2026 16:45:31 +0000
+! Diff-Path: ../patches/2026.2.22.1005.patch#ruadlist
 a10278 1
 bbc.com#?#header[role="banner"] > div > div:has(> div > div > p > [href*="/cookies/"])
 d13890 1
@@ -67,9 +67,7 @@ d23415 1
 a23415 2
 rbc.ru##div[class^="commercial-formats-"]
 autonews.ru,rbc.ru,rbcautonews.ru,rbclifemedia.ru,sportrbc.ru##div[class^="fox-tail"]
-d23638 1
-a23638 1
-ya.ru##[aria-label^="Информ"] ~ [class][class]:not(button)
+d23637 2
 a23739 1
 afisha.yandex.ru,afisha.yandex.*##.adfox
 a23740 2
@@ -83,6 +81,11 @@ a26190 1
 @@||magnit.ru/scripts/prebid.js|$script,~third-party
 a26482 1
 magnit.ru#@#a[href^="https://yandex.ru/adfox/"]
+d28422 1
+a28422 1
+ya.ru##[style*="--masonry-feed-columns-count:"]
+a28424 1
+ya.ru##html[class*="document_feed_"] aside ~ div[style]
 d28426 4
 a28429 3
 afisha.yandex.ru##[style^="width:"][style*="100%;"][style*="height:"][style*="240px;"][style*="display:"][style*="block;"]:empty
@@ -103,13 +106,23 @@ a28756 1
 captcha-api.yandex.ru,id.vk.ru,passport.yandex.ru,sso.dzen.ru,sso.ya.ru#@#+js()
 a28809 1
 dzen.ru##+js(abort-on-property-read, Object.prototype.adfoxContainerId)
+d28821 1
+a29001 1
+ya.ru##+js(json-prune, rythm_market)
 d29023 1
+d29031 1
+d29090 1
+a29090 2
+ya.ru##+js(remove-node-text, a, /Установите Яндекс Браузер|Установить поиск Яндекса/)
+ya.ru##+js(remove-node-text, div, 'ad-mark__b-unit')
 d29139 1
 a29139 1
 afisha.ru,rbc.ru##+js(set-constant, Object.prototype.autoPlay, null)
 d29155 1
 d29157 1
-d29159 1
+d29159 2
+a29160 1
+rbc.ru,rbcrealty.ru,sportrbc.ru##+js(set-constant, Object.prototype.livetv-state, true)
 d29243 1
 a29285 2
 dzen.ru##:matches-path(video/watch) [class*="_withBottomSpace-"]
@@ -117,3 +130,6 @@ dzen.ru##:matches-path(video/watch) [class*="doc2doc-after"]
 d29333 1
 a29333 1
 dzen.ru##div:matches-attr(/data-[a-z0-9]/=/-ad$/)
+d29577 1
+a29577 1
+ya.ru#@#+js(remove-node-text, div, 'ad-mark__b-unit')

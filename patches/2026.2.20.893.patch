@@ -1,8 +1,8 @@
-diff name:ruadlist lines:36 checksum:0cfa19a6c8
+diff name:ruadlist lines:56 checksum:d2a2c2f39a
 d4 2
 a5 2
-! Last modified: Sun, 22 Feb 2026 11:31:46 +0000
-! Diff-Path: ../patches/2026.2.22.691.patch#ruadlist
+! Last modified: Sun, 22 Feb 2026 16:45:31 +0000
+! Diff-Path: ../patches/2026.2.22.1005.patch#ruadlist
 a10278 1
 bbc.com#?#header[role="banner"] > div > div:has(> div > div > p > [href*="/cookies/"])
 a20345 2
@@ -18,12 +18,18 @@ rbc.ru##body.free [data-vr-zone="Топ новости"] .main__feed::before
 rbc.ru##body.free [data-vr-zone="Топ новости"] a[href*="utm_campaign"]:not([href^="https://pro.rbc.ru/"])
 rbc.ru##body.free [data-vr-zone="Топ новости"] a[href^="https://pro.rbc.ru/"]
 rbc.ru#?#body.free [data-vr-zone="Топ новости"] div:-abp-has(> a[href*="utm_campaign"]:not([href^="https://pro.rbc.ru/"]))
+d23634 2
 a23766 1
 market.yandex.ru,market.yandex.*##div[data-apiary-widget-name="@monetize/CreativeBanner"]
 a26191 1
 @@||magnit.ru/scripts/prebid.js|$script,~third-party
 a26483 1
 magnit.ru#@#a[href^="https://yandex.ru/adfox/"]
+d28423 1
+a28423 1
+ya.ru##[style*="--masonry-feed-columns-count:"]
+a28425 1
+ya.ru##html[class*="document_feed_"] aside ~ div[style]
 d28623 1
 a28623 1
 autonews.ru,rbc.ru,rbcautonews.ru,rbcrealty.ru,sportrbc.ru##.is-outline .topline__item:style(border-color: transparent !important)
@@ -34,4 +40,18 @@ a28810 1
 rbc.ru##+js(abort-on-property-read, Object.prototype._isAutostartQueueSet)
 a28815 1
 rbc.ru##+js(abort-on-property-read, Object.prototype.isApplySticky)
+d28822 1
+a29002 1
+ya.ru##+js(json-prune, rythm_market)
+d29031 1
+d29090 1
+a29090 2
+ya.ru##+js(remove-node-text, a, /Установите Яндекс Браузер|Установить поиск Яндекса/)
+ya.ru##+js(remove-node-text, div, 'ad-mark__b-unit')
 d29117 2
+d29159 1
+a29159 1
+rbc.ru,rbcrealty.ru,sportrbc.ru##+js(set-constant, Object.prototype.livetv-state, true)
+d29577 1
+a29577 1
+ya.ru#@#+js(remove-node-text, div, 'ad-mark__b-unit')

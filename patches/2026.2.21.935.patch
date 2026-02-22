@@ -1,12 +1,32 @@
-diff name:ruadlist lines:11 checksum:0cfa19a6c8
+diff name:ruadlist lines:31 checksum:d2a2c2f39a
 d4 2
 a5 2
-! Last modified: Sun, 22 Feb 2026 11:31:46 +0000
-! Diff-Path: ../patches/2026.2.22.691.patch#ruadlist
+! Last modified: Sun, 22 Feb 2026 16:45:31 +0000
+! Diff-Path: ../patches/2026.2.22.1005.patch#ruadlist
+d23643 2
 a26201 1
 @@||magnit.ru/scripts/prebid.js|$script,~third-party
 a26493 1
 magnit.ru#@#a[href^="https://yandex.ru/adfox/"]
+d28433 1
+a28433 1
+ya.ru##[style*="--masonry-feed-columns-count:"]
+a28435 1
+ya.ru##html[class*="document_feed_"] aside ~ div[style]
 d28633 1
 a28633 1
 autonews.ru,rbc.ru,rbcautonews.ru,rbcrealty.ru,sportrbc.ru##.is-outline .topline__item:style(border-color: transparent !important)
+d28834 1
+a29014 1
+ya.ru##+js(json-prune, rythm_market)
+d29043 1
+d29102 1
+a29102 2
+ya.ru##+js(remove-node-text, a, /Установите Яндекс Браузер|Установить поиск Яндекса/)
+ya.ru##+js(remove-node-text, div, 'ad-mark__b-unit')
+d29169 1
+a29169 1
+rbc.ru,rbcrealty.ru,sportrbc.ru##+js(set-constant, Object.prototype.livetv-state, true)
+d29587 1
+a29587 1
+ya.ru#@#+js(remove-node-text, div, 'ad-mark__b-unit')
