@@ -1,8 +1,8 @@
-diff name:ruadlist lines:56 checksum:d2a2c2f39a
+diff name:ruadlist lines:59 checksum:1338b1283d
 d4 2
 a5 2
-! Last modified: Sun, 22 Feb 2026 16:45:31 +0000
-! Diff-Path: ../patches/2026.2.22.1005.patch#ruadlist
+! Last modified: Sun, 22 Feb 2026 21:34:38 +0000
+! Diff-Path: ../patches/2026.2.22.1294.patch#ruadlist
 a10278 1
 bbc.com#?#header[role="banner"] > div > div:has(> div > div > p > [href*="/cookies/"])
 a20345 2
@@ -21,10 +21,13 @@ rbc.ru#?#body.free [data-vr-zone="Топ новости"] div:-abp-has(> a[href*
 d23634 2
 a23766 1
 market.yandex.ru,market.yandex.*##div[data-apiary-widget-name="@monetize/CreativeBanner"]
+a25607 1
+@@://magnit.ru/$generichide
 a26191 1
 @@||magnit.ru/scripts/prebid.js|$script,~third-party
-a26483 1
-magnit.ru#@#a[href^="https://yandex.ru/adfox/"]
+d26490 1
+a26490 1
+payment.mts.ru#@#div[id^="adfox_"]
 d28423 1
 a28423 1
 ya.ru##[style*="--masonry-feed-columns-count:"]

@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 22 Feb 2026 16:45:31 +0000
-! Diff-Path: ../patches/2026.2.22.1005.patch#ruadlist
+! Last modified: Sun, 22 Feb 2026 21:34:38 +0000
+! Diff-Path: ../patches/2026.2.22.1294.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -25613,6 +25613,7 @@ zarulem.ws##td[style^="text-align:center;width:50%"]
 ! *** ./advblock/whitelist.txt ***
 @@://auth.nuzhnapomosh.ru/$generichide
 @@://auto.ru/$generichide
+@@://magnit.ru/$generichide
 @@||adult-images.ru^$generichide
 @@||alexstuff.ru^$generichide
 @@||alhimika.net^$generichide
@@ -26490,14 +26491,13 @@ xn--112-5cd3baof9c5c.xn--p1ai#@#.wrapad
 4pda.to#@#[data-revive-zoneid]
 espreso.tv,tasix.me#@#[id*="ScriptRoot"]
 mail.google.com#@#a[href^="http://mgid.com/"]
-magnit.ru#@#a[href^="https://yandex.ru/adfox/"]
 disk.yandex.ru,disk.yandex.*#@#.content_ads
 blocksandfiles.com,milanac.ru#@#div[class*="td-a-rec-id-"]
 pets.mail.ru#@#div[data-adq-id^="adqcontainer"]
 kyiv.ukrainianwall.com#@#div[id*="MarketGid"]
 kyiv.ukrainianwall.com#@#div[id*="ScriptRoot"]
 kyiv.ukrainianwall.com#@#div[id^="M"][id*="Composite"]
-magnit.ru,payment.mts.ru#@#div[id^="adfox_"]
+payment.mts.ru#@#div[id^="adfox_"]
 cinemastar.ru#@#div[id^="advads-"]
 hi.ru#@#div[id^="crt-"][style]
 aqa.ru,ladiesproject.ru#@#div[id^="div-gpt-ad"]
