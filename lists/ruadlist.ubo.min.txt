@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 01 Mar 2026 08:44:30 +0000
-! Diff-Path: ../patches/2026.3.1.524.patch#ruadlist
+! Last modified: Sun, 01 Mar 2026 13:07:28 +0000
+! Diff-Path: ../patches/2026.3.1.787.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -8319,7 +8319,7 @@ _tizers.
 ||ru/ban/$domain=~chita-game.ru|~zabgame.ru
 ||ru/banner.$domain=~allplanets.ru|~gibdd-gai.ru|~knigilub.ru|~megafon.ru|~rsa.su
 ||ru/banner/$domain=~autodoc.ru|~befree.ru|~matematikalegko.ru|~newdaynews.ru|~rfs.ru|~smotriuchis.ru|~svka.ru|~utkonos.ru
-||ru/banners/$domain=~animespirit.ru|~cheese-cake.ru|~citilink.ru|~departamentar.ucoz.ru|~e96.ru|~irad.ru|~killot.ru|~mrtexpert.ru|~onlime.ru|~rosbank.ru|~toptracker.ru|~webnames.ru|~wildberries.ru|~zalivalka.ru
+||ru/banners/$domain=~animespirit.ru|~cheese-cake.ru|~citilink.ru|~departamentar.ucoz.ru|~e96.ru|~irad.ru|~killot.ru|~mrtexpert.ru|~onlime.ru|~rosbank.ru|~toptracker.ru|~webnames.ru|~zalivalka.ru
 ||ru/bpoint/bnr/
 ||ru/code/yaoffer/$third-party
 ||ru/i/banner/
@@ -10180,8 +10180,6 @@ marieclaire.ru,maximonline.ru,mydecor.ru,parents.ru,psychologies.ru,starhit.ru,t
 brutaljack.ru##.in.fade.modal
 voprosov-net.ru##.isShow.popup
 justcoolidea.ru##.is_visible.like_wall
-wildberries.ru##.jqmOverlay
-wildberries.ru##.jqmWindow
 ognov.ru,porjati.ru,sovkusom.ru##.jquery-modal.blocker
 fishki.net##.like_wall.is_visible
 haba.ru##.likewall
@@ -10400,6 +10398,7 @@ surl.*#?#.text-center:-abp-has(> form > .disabled) > p ~ *
 ||vboro.de^$third-party
 ||visagistprofi.ru/wp-content/plugins/wpt-tea-coffee-dance/
 ||vitaportal.ru^*/new_popup$script,stylesheet
+||wbbasket.ru/*/site/app/DynamicOnboardingPopupViewModel.
 ||web2edu.ru/script/leaves.js
 ||widgets.getsitecontrol.com^$script,domain=minfin.com.ua
 ||womansay.net/assets/templates/womansay/js/popup/
@@ -13611,6 +13610,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||wasd.tv/ssp/roll$xmlhttprequest
 ||watch.ru/bp/
 ||watchcine.ru/templates/HDKINOMAX/images/bg.jpg
+||wbbasket.ru/*/crm-bnrs/
 ||wdomain.ru/*.php|$script,domain=wdomain.ru
 ||weacom.ru/abrakadabra/
 ||weather7.ru/wp-content/uploads/*bonka*.jpg
@@ -16039,7 +16039,6 @@ templateinstant.ru##.bs-topbanner
 seeds.org.ua##.bsac
 partnerkin.com##.bst_wrap
 nnm-club.me,nnmclub.ro,nnmclub.to##.btTbl > tbody > .row1 > .genmed[align="center"] noindex
-wildberries.ru##.btn-advertising
 livelib.ru##.btn-buy-holder
 download-windows.org,softhome.ru##.btn-installpack
 shopping.nv.ua##.btn-product-embed
@@ -16570,7 +16569,6 @@ zaruba.fun##.footer-second-widgets-section > section > .widget_text
 shaiba.kz##.footer-top__partners > .footer-block-wide:only-child
 lifehacker.ru##.footer-widgets__container
 4rama.com##.footerLegal
-wildberries.ru##.footer__banner
 resheba.me##.footer__btn-link
 relax-fm.ru##.footer__promotion_container
 kinoafisha.info##.footer_apps
@@ -22298,6 +22296,8 @@ repost.uz##video[src*="/storage/uploads/"][src$=".mp4"]
 vc.ru##vue[name="booster"]
 wasd.tv##wasd-banner
 wasd.tv##wasd-player-overlay-banner
+wildberries.ru,wildberries.*##div.banner
+wildberries.ru,wildberries.*##div.j-banners-block
 mivmeste.info##wix-iframe
 pogodairadar.com.ua##wo-ad
 101xp.com##xp-banner-sidebar
@@ -29126,10 +29126,12 @@ game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorka
 uwupad.me##+js(remove-node-text, style, lb-banner-height)
 playvillage.ru##+js(set-attr, ._1z_ ._21_, style, '')
 dtf.ru,vc.ru##+js(set-attr, .comment-media .andropov-video video, controls, true)
+rbc.ru##+js(set-attr, .content-custom [href*="?from="]:not([href*="utm"]), target, true)
 fishki.net##+js(set-attr, .cycle-carousel-wrap > a.bottom_slide__item > img, src, [data-src])
 fishki.net##+js(set-attr, .drag_element a[href*=".html"], target, true)
 dtf.ru,vc.ru##+js(set-attr, .media .andropov-video video, controls, true)
 eneyida.tv##+js(set-attr, .owl-item > a > img, src, [data-src])
+rbc.ru##+js(set-attr, a[href*="?from=newsfeed"][data-role="title-link"], target, true)
 overclockers.ru##+js(set-attr, img[src="https://overclockers.ru/assets/logo_gray_stub.gif"], src, [data-src])
 joyreactor.cc,reactor.cc##+js(set-attr, video, controls, true)
 3dnews.ru##+js(set-attr, video[controls="controls"], controls, true)
@@ -29381,6 +29383,7 @@ studizba.com,surl.*##+js(nano-setInterval-booster, #timer)
 translate.yandex.ru,translate.yandex.*##+js(set-constant, Object.prototype.dispatchSignalCallbacks, undefined)
 3dnews.ru##video[autoplay="autoplay"]:remove-attr(autoplay)
 kino-teatr.ru,kinoafisha.info,kinonews.ru##videotronic-player:remove-attr(data-video-autoplay)
+wildberries.*##+js(set-constant, Object.prototype._prepareBannersList, undefined)
 ya.ru,yandex.*##+js(remove-node-text, script, DistributionLinkBro)
 ya.ru,yandex.*##.dist-overlay__popup:remove()
 ya.ru,yandex.*##.simple-popup__overlay:remove()

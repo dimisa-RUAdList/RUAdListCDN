@@ -1,8 +1,8 @@
-diff name:ruadlist lines:23 checksum:1b3388e840
+diff name:ruadlist lines:42 checksum:ecfa1ceb2a
 d4 2
 a5 2
-! Last modified: Sun, 01 Mar 2026 08:44:30 +0000
-! Diff-Path: ../patches/2026.3.1.524.patch#ruadlist
+! Last modified: Sun, 01 Mar 2026 13:07:28 +0000
+! Diff-Path: ../patches/2026.3.1.787.patch#ruadlist
 a3329 1
 ||kurwa-bober.ninja^$third-party
 a4106 1
@@ -10,15 +10,34 @@ a4106 1
 d7897 1
 a7897 1
 /backlinks.$domain=~backlinks.su|~vuetifyjs.com
+d8320 1
+a8320 1
+||ru/banners/$domain=~animespirit.ru|~cheese-cake.ru|~citilink.ru|~departamentar.ucoz.ru|~e96.ru|~irad.ru|~killot.ru|~mrtexpert.ru|~onlime.ru|~rosbank.ru|~toptracker.ru|~webnames.ru|~zalivalka.ru
+d10181 2
 a10308 1
 /wp-content/plugins/wp-popups-lite/*$domain=e5450.com
+a10399 1
+||wbbasket.ru/*/site/app/DynamicOnboardingPopupViewModel.
 a10689 1
 /api/ad/*$domain=lampa.mx
+a13609 1
+||wbbasket.ru/*/crm-bnrs/
+d16038 1
+d16569 1
 d21666 1
 a21666 1
 stratege.ru#?#div[style^="text-align: center;"]:-abp-has([target="_blank"][rel="nofollow"] > img[src^="https://stratege.ru/forums/files/gallery/"])
+a22296 2
+wildberries.ru,wildberries.*##div.banner
+wildberries.ru,wildberries.*##div.j-banners-block
 a26844 1
 ||gametorrent.org/templates/gametorrent/js/ablock.js
 d29104 1
 a29104 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /Adb-|A-d-b-|-Gua|dGua|dblo|tick/)
+a29123 1
+rbc.ru##+js(set-attr, .content-custom [href*="?from="]:not([href*="utm"]), target, true)
+a29127 1
+rbc.ru##+js(set-attr, a[href*="?from=newsfeed"][data-role="title-link"], target, true)
+a29378 1
+wildberries.*##+js(set-constant, Object.prototype._prepareBannersList, undefined)

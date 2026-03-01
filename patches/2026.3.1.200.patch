@@ -1,5 +1,24 @@
-diff name:ruadlist lines:4 checksum:1b3388e840
+diff name:ruadlist lines:23 checksum:ecfa1ceb2a
 d4 2
 a5 2
-! Last modified: Sun, 01 Mar 2026 08:44:30 +0000
-! Diff-Path: ../patches/2026.3.1.524.patch#ruadlist
+! Last modified: Sun, 01 Mar 2026 13:07:28 +0000
+! Diff-Path: ../patches/2026.3.1.787.patch#ruadlist
+d8322 1
+a8322 1
+||ru/banners/$domain=~animespirit.ru|~cheese-cake.ru|~citilink.ru|~departamentar.ucoz.ru|~e96.ru|~irad.ru|~killot.ru|~mrtexpert.ru|~onlime.ru|~rosbank.ru|~toptracker.ru|~webnames.ru|~zalivalka.ru
+d10183 2
+a10402 1
+||wbbasket.ru/*/site/app/DynamicOnboardingPopupViewModel.
+a13613 1
+||wbbasket.ru/*/crm-bnrs/
+d16042 1
+d16573 1
+a22300 2
+wildberries.ru,wildberries.*##div.banner
+wildberries.ru,wildberries.*##div.j-banners-block
+a29128 1
+rbc.ru##+js(set-attr, .content-custom [href*="?from="]:not([href*="utm"]), target, true)
+a29132 1
+rbc.ru##+js(set-attr, a[href*="?from=newsfeed"][data-role="title-link"], target, true)
+a29383 1
+wildberries.*##+js(set-constant, Object.prototype._prepareBannersList, undefined)
