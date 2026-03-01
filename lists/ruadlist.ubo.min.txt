@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 01 Mar 2026 13:46:11 +0000
-! Diff-Path: ../patches/2026.3.1.826.patch#ruadlist
+! Last modified: Sun, 01 Mar 2026 18:48:49 +0000
+! Diff-Path: ../patches/2026.3.1.1128.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -15049,7 +15049,6 @@ ndn.info##.BigBlock
 ixbt.com##.Blocksmaster
 unews.pro#?#.BodyNewsStyle:-abp-has(> div > [id^="yandex_rtb"])
 f1analytic.com,f1ua.org.ua##.BoxVideo.clear ~ .BoxVideo.clear
-mail.google.com##.Bu.y3
 delfi.ee##.C-banner
 myshows.me##.CommentBanner
 meduza.io##.DFPBanner-module-root
@@ -18688,7 +18687,7 @@ remontka.pro##.topadmobile
 krisha.kz,zerocoolpro.biz##.topb
 vsetv.com##.topban
 pushkin.ru##.topbannans-wrapper
-automobili.ru,post-tracker.ru,rtkorr.com##.topbanner
+1news.az,automobili.ru,post-tracker.ru,rtkorr.com##.topbanner
 santikov.net##.topbannerbg
 news.tj##.topbanners
 kingisepp-today.ru,xn----etbbecbrbp5ahkja1ae7v.xn--p1ai##.topbar__link > .red
@@ -20641,7 +20640,6 @@ grad.ua##div > .comments ~ .blok_header_title
 ohmywishes.com##div > button + button ~ div > button
 ura.news#?#div > h2 ~ ul > li:-abp-has(> div > [id^="adv-"])
 xsport.ua#?#div.MuiBox-root:-abp-has(> div[class*="-root"] > div[id^="div-gpt-ad"])
-mail.google.com##div.ae5
 mport.ua##div.b-widgets
 ero-top.info##div.dating
 nashaplaneta.net##div.hide.margin32 > .ttle
@@ -26213,7 +26211,6 @@ xn--112-5cd3baof9c5c.xn--p1ai#@#.wrapad
 @@||medicina.ua/js/adriver.core.*.js|$script,domain=medicina.ua
 @@||mentalmarket.io^$domain=mentalmarket.io
 @@||messenger.upservice.io^$domain=promo.upservice.com
-@@||mgid.com^$third-party,popup,domain=mail.google.com
 @@||mgrim.atcon.ru/sites/sotek/img/banner$image,domain=mgrim.atcon.ru
 @@||mgts.ru/upload/images/ban$domain=mgts.ru
 @@||militaryreview.su/engine/classes/min/index.php?$script,domain=militaryreview.su
@@ -26491,7 +26488,6 @@ xn--112-5cd3baof9c5c.xn--p1ai#@#.wrapad
 @@||zviazda.by^*/300x250/$image,domain=zviazda.by
 4pda.to#@#[data-revive-zoneid]
 espreso.tv,tasix.me#@#[id*="ScriptRoot"]
-mail.google.com#@#a[href^="http://mgid.com/"]
 disk.yandex.ru,disk.yandex.*#@#.content_ads
 blocksandfiles.com,milanac.ru#@#div[class*="td-a-rec-id-"]
 pets.mail.ru#@#div[data-adq-id^="adqcontainer"]
