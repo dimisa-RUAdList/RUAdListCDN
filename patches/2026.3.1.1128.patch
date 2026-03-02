@@ -1,8 +1,8 @@
-diff name:ruadlist lines:22 checksum:49492f5938
+diff name:ruadlist lines:49 checksum:876bee2c84
 d4 2
 a5 2
-! Last modified: Mon, 02 Mar 2026 04:56:13 +0000
-! Diff-Path: ../patches/2026.3.2.296.patch#ruadlist
+! Last modified: Mon, 02 Mar 2026 10:02:17 +0000
+! Diff-Path: ../patches/2026.3.2.602.patch#ruadlist
 a3838 1
 ||mfhkabefnl.com^$third-party
 a4749 1
@@ -21,3 +21,30 @@ a11368 1
 d21160 1
 a21160 1
 uaserials.com,uaserials.my##div[class^="uas-custom-"]
+d22329 2
+a22330 2
+||static.dzeninfra.ru/s3/zen-apps/commets2/*/*/$script
+||static.dzeninfra.ru/s3/zen-apps/dzen-mobile/*/*/$script
+d22355 1
+a22355 1
+||pikabu.ru/ajax/*?f67Gh=$xmlhttprequest
+d28450 1
+a28458 1
+dzen.ru##div[class*="-top-of-the-day-ad"]:style(opacity: 0 !important)
+d28465 1
+a28466 1
+dzen.ru##div[style*="12.362637362637363"]
+a28815 1
+dzen.ru##+js(abort-on-property-read, Object.prototype.AdFox_getCodeScript)
+d28821 2
+d29286 2
+a29289 2
+dzen.ru##:matches-path(/a/) div[style^="opacity:"]
+dzen.ru##:matches-path(/a/) main > div > [itemscope] > div > div[id]
+a29292 1
+dzen.ru##:matches-path(/news) div[class*="news-r_"]
+d29294 1
+a29294 1
+dzen.ru##:matches-path(articles) div[class^="article-feed--"] > div[class] ~ div[id]
+a29345 1
+dzen.ru##div:matches-attr(/data-is-/="false")

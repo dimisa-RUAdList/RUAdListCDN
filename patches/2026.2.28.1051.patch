@@ -1,8 +1,8 @@
-diff name:ruadlist lines:51 checksum:49492f5938
+diff name:ruadlist lines:78 checksum:876bee2c84
 d4 2
 a5 2
-! Last modified: Mon, 02 Mar 2026 04:56:13 +0000
-! Diff-Path: ../patches/2026.3.2.296.patch#ruadlist
+! Last modified: Mon, 02 Mar 2026 10:02:17 +0000
+! Diff-Path: ../patches/2026.3.2.602.patch#ruadlist
 a3838 1
 ||mfhkabefnl.com^$third-party
 a4749 1
@@ -42,11 +42,38 @@ stratege.ru#?#div[style^="text-align: center;"]:-abp-has([target="_blank"][rel="
 a22300 2
 wildberries.ru,wildberries.*##div.banner
 wildberries.ru,wildberries.*##div.j-banners-block
+d22331 2
+a22332 2
+||static.dzeninfra.ru/s3/zen-apps/commets2/*/*/$script
+||static.dzeninfra.ru/s3/zen-apps/dzen-mobile/*/*/$script
+d22357 1
+a22357 1
+||pikabu.ru/ajax/*?f67Gh=$xmlhttprequest
 d26216 1
 d26494 1
+d28454 1
+a28462 1
+dzen.ru##div[class*="-top-of-the-day-ad"]:style(opacity: 0 !important)
+d28469 1
+a28470 1
+dzen.ru##div[style*="12.362637362637363"]
+a28819 1
+dzen.ru##+js(abort-on-property-read, Object.prototype.AdFox_getCodeScript)
+d28825 2
 a29128 1
 rbc.ru##+js(set-attr, .content-custom [href*="?from="]:not([href*="utm"]), target, true)
 a29132 1
 rbc.ru##+js(set-attr, a[href*="?from=newsfeed"][data-role="title-link"], target, true)
+d29288 2
+a29291 2
+dzen.ru##:matches-path(/a/) div[style^="opacity:"]
+dzen.ru##:matches-path(/a/) main > div > [itemscope] > div > div[id]
+a29294 1
+dzen.ru##:matches-path(/news) div[class*="news-r_"]
+d29296 1
+a29296 1
+dzen.ru##:matches-path(articles) div[class^="article-feed--"] > div[class] ~ div[id]
+a29347 1
+dzen.ru##div:matches-attr(/data-is-/="false")
 a29383 1
 wildberries.*##+js(set-constant, Object.prototype._prepareBannersList, undefined)

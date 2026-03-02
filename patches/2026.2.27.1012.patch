@@ -1,8 +1,8 @@
-diff name:ruadlist lines:67 checksum:49492f5938
+diff name:ruadlist lines:94 checksum:876bee2c84
 d4 2
 a5 2
-! Last modified: Mon, 02 Mar 2026 04:56:13 +0000
-! Diff-Path: ../patches/2026.3.2.296.patch#ruadlist
+! Last modified: Mon, 02 Mar 2026 10:02:17 +0000
+! Diff-Path: ../patches/2026.3.2.602.patch#ruadlist
 a3329 1
 ||kurwa-bober.ninja^$third-party
 a3837 1
@@ -53,10 +53,26 @@ stratege.ru#?#div[style^="text-align: center;"]:-abp-has([target="_blank"][rel="
 a22296 2
 wildberries.ru,wildberries.*##div.banner
 wildberries.ru,wildberries.*##div.j-banners-block
+d22327 2
+a22328 2
+||static.dzeninfra.ru/s3/zen-apps/commets2/*/*/$script
+||static.dzeninfra.ru/s3/zen-apps/dzen-mobile/*/*/$script
+d22353 1
+a22353 1
+||pikabu.ru/ajax/*?f67Gh=$xmlhttprequest
 d26212 1
 d26490 1
 a26844 1
 ||gametorrent.org/templates/gametorrent/js/ablock.js
+d28449 1
+a28457 1
+dzen.ru##div[class*="-top-of-the-day-ad"]:style(opacity: 0 !important)
+d28464 1
+a28465 1
+dzen.ru##div[style*="12.362637362637363"]
+a28814 1
+dzen.ru##+js(abort-on-property-read, Object.prototype.AdFox_getCodeScript)
+d28820 2
 d29104 1
 a29104 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /Adb-|A-d-b-|-Gua|dGua|dblo|tick/)
@@ -64,5 +80,16 @@ a29123 1
 rbc.ru##+js(set-attr, .content-custom [href*="?from="]:not([href*="utm"]), target, true)
 a29127 1
 rbc.ru##+js(set-attr, a[href*="?from=newsfeed"][data-role="title-link"], target, true)
+d29283 2
+a29286 2
+dzen.ru##:matches-path(/a/) div[style^="opacity:"]
+dzen.ru##:matches-path(/a/) main > div > [itemscope] > div > div[id]
+a29289 1
+dzen.ru##:matches-path(/news) div[class*="news-r_"]
+d29291 1
+a29291 1
+dzen.ru##:matches-path(articles) div[class^="article-feed--"] > div[class] ~ div[id]
+a29342 1
+dzen.ru##div:matches-attr(/data-is-/="false")
 a29378 1
 wildberries.*##+js(set-constant, Object.prototype._prepareBannersList, undefined)
