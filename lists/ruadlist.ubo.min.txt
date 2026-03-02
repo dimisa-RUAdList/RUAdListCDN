@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 02 Mar 2026 10:02:17 +0000
-! Diff-Path: ../patches/2026.3.2.602.patch#ruadlist
+! Last modified: Mon, 02 Mar 2026 14:54:54 +0000
+! Diff-Path: ../patches/2026.3.2.894.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22682,7 +22682,7 @@ mail.ru##.ph-project-promo-container
 ~e.mail.ru,mail.ru,sportmail.ru##.viewbox__holder .viewbox__side
 ~e.mail.ru,mail.ru,sportmail.ru##.viewbox__holder .viewbox__side-loader ~ *
 ~e.mail.ru,mail.ru##[data-logger-parent="sidebarDoubleRight"]
-~e.mail.ru,~kino.mail.ru,mail.ru,sportmail.ru#?#[data-qa="WrapperContent"] div:-abp-has(> [data-rb-slot])
+~e.mail.ru,~kino.mail.ru,mail.ru,sportmail.ru,~tv.mail.ru#?#[data-qa="WrapperContent"] div:-abp-has(> [data-rb-slot])
 ~e.mail.ru,mail.ru,sportmail.ru##[data-rb-slot]
 ~e.mail.ru,mail.ru,sportmail.ru##[data-view^="Slot"][data-adq-id]
 ~e.mail.ru,mail.ru,sportmail.ru##a[class^="rb-"][href^="https://r.mail.ru/"][target="_blank"]
@@ -28474,6 +28474,7 @@ dzen.ru###SECOND_CHUNK_APP_CONTAINER_MicroRoot div[class^="dzen-layout--desktop-
 ! видео
 dzen.ru##div[class*="watch-page-content"] [aria-label] > div[id]
 ! статьи
+dzen.ru##.content--styles__banner-cc + [aria-label] ~ div
 dzen.ru##[class*="yandex-direct"]
 dzen.ru##[data-testid="dzenpro-banner"]
 dzen.ru##div[class*="-ad-block_"]
@@ -28495,10 +28496,14 @@ dzen.ru##.news-secondary-layout-column__secondary div[id]
 dzen.ru##.news-story-page div[id] > div:not([id]) > div[id]
 dzen.ru##[class^="news-site--Infinite"][class*="AdColumnItem-desktop__content"] > div[id*="-column_top"]
 dzen.ru##div:not(.news-rubric-desktop__adv-column) > div[class^="mg-sticky"]
+dzen.ru##div[class*="_content_with-new-"] > div[id] ~ div[class^="news-r_"]
+dzen.ru##div[class*="_content_with-new-"] > div[id] ~ div[id]
 dzen.ru##div[class*="new"] [class$="__rubricator"] + div[class*=" "] > div:only-child
+dzen.ru##div[class*="news-r_"] > div[id]
 dzen.ru##div[class^="news-site-"][class*="-desktop-"]:style(background-color: transparent !important)
 dzen.ru,sportsdzen.ru##div[class^="news-site-"][class*="skeleton"]:style(background-color: transparent !important)
 dzen.ru##div[class^="news-site--"] > section ~ [id]
+dzen.ru##div[class^="r_"][class*="skeleton"]:style(background-color: transparent !important)
 dzen.ru##div[id^="ad-"][class*=" news-"]
 ! погода
 dzen.ru##.adv-ecom
@@ -29287,12 +29292,11 @@ dtf.ru,vc.ru##:matches-path(-erid-) .block-special-button
 dtf.ru,vc.ru##:matches-path(-erid-) a[href*="go.vc.ru"]:style(pointer-events: none !important; color: inherit !important)
 dzen.ru##:matches-path(/a/) article:matches-attr(/./=/promo-card/)
 dzen.ru##:matches-path(/a/) div:matches-attr(/[a-z0-9]/=article-bottom-block) > [class] ~ div:not([class]):not([id])
-dzen.ru##:matches-path(/a/) div[style^="opacity:"]
+dzen.ru##:matches-path(/a/) div[style="opacity: 1;"]
 dzen.ru##:matches-path(/a/) main > div > [itemscope] > div > div[id]
 dzen.ru##:matches-path(/articles) div:has(> article > [class*="adBox"])
 ozon.ru##:matches-path(/kursk-sertifikaty) [data-lcp-name*="anner-"]:style(display: block !important)
 ozon.ru##:matches-path(/kursk-sertifikaty) div[data-widget="banner"]:style(display: block !important)
-dzen.ru##:matches-path(/news) div[class*="news-r_"]
 dzen.ru##:matches-path(/news) div[id*="feed"] > div:not([id]) > div[id*="feed"]
 dzen.ru##:matches-path(articles) div[class^="article-feed--"] > div[class] ~ div[id]
 forum.ru-board.com##:matches-path(topic=51666) .dats > a[href="javascript:pasteN('AlAvis')"] > b:style(color: #00bfff !important)

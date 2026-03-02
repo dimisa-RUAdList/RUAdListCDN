@@ -1,8 +1,8 @@
-diff name:ruadlist lines:94 checksum:876bee2c84
+diff name:ruadlist lines:104 checksum:f0dbbe7cc2
 d4 2
 a5 2
-! Last modified: Mon, 02 Mar 2026 10:02:17 +0000
-! Diff-Path: ../patches/2026.3.2.602.patch#ruadlist
+! Last modified: Mon, 02 Mar 2026 14:54:54 +0000
+! Diff-Path: ../patches/2026.3.2.894.patch#ruadlist
 a3329 1
 ||kurwa-bober.ninja^$third-party
 a3837 1
@@ -60,6 +60,9 @@ a22328 2
 d22353 1
 a22353 1
 ||pikabu.ru/ajax/*?f67Gh=$xmlhttprequest
+d22680 1
+a22680 1
+~e.mail.ru,~kino.mail.ru,mail.ru,sportmail.ru,~tv.mail.ru#?#[data-qa="WrapperContent"] div:-abp-has(> [data-rb-slot])
 d26212 1
 d26490 1
 a26844 1
@@ -70,6 +73,15 @@ dzen.ru##div[class*="-top-of-the-day-ad"]:style(opacity: 0 !important)
 d28464 1
 a28465 1
 dzen.ru##div[style*="12.362637362637363"]
+a28472 1
+dzen.ru##.content--styles__banner-cc + [aria-label] ~ div
+a28493 2
+dzen.ru##div[class*="_content_with-new-"] > div[id] ~ div[class^="news-r_"]
+dzen.ru##div[class*="_content_with-new-"] > div[id] ~ div[id]
+a28494 1
+dzen.ru##div[class*="news-r_"] > div[id]
+a28497 1
+dzen.ru##div[class^="r_"][class*="skeleton"]:style(background-color: transparent !important)
 a28814 1
 dzen.ru##+js(abort-on-property-read, Object.prototype.AdFox_getCodeScript)
 d28820 2
@@ -82,10 +94,8 @@ a29127 1
 rbc.ru##+js(set-attr, a[href*="?from=newsfeed"][data-role="title-link"], target, true)
 d29283 2
 a29286 2
-dzen.ru##:matches-path(/a/) div[style^="opacity:"]
+dzen.ru##:matches-path(/a/) div[style="opacity: 1;"]
 dzen.ru##:matches-path(/a/) main > div > [itemscope] > div > div[id]
-a29289 1
-dzen.ru##:matches-path(/news) div[class*="news-r_"]
 d29291 1
 a29291 1
 dzen.ru##:matches-path(articles) div[class^="article-feed--"] > div[class] ~ div[id]
