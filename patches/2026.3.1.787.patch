@@ -1,8 +1,8 @@
-diff name:ruadlist lines:66 checksum:b3f92d2f3f
+diff name:ruadlist lines:78 checksum:98e914495f
 d4 2
 a5 2
-! Last modified: Tue, 03 Mar 2026 05:59:19 +0000
-! Diff-Path: ../patches/2026.3.3.359.patch#ruadlist
+! Last modified: Tue, 03 Mar 2026 10:54:59 +0000
+! Diff-Path: ../patches/2026.3.3.654.patch#ruadlist
 a3838 1
 ||mfhkabefnl.com^$third-party
 a4749 1
@@ -19,10 +19,17 @@ d11368 1
 a11368 1
 ||com/|$third-party,domain=4book.org|engvideo.net|ling-online.net
 d15052 1
+d18429 1
 d18691 1
 a18691 1
 1news.az,automobili.ru,post-tracker.ru,rtkorr.com##.topbanner
+a19652 1
+pikabu.ru##a[href*="/payment/steam?"]
+a19948 1
+cq.ru##a[href="https://cq.ru/steam-pay"]
 d20644 1
+a20831 1
+dtf.ru##div[class*="steam-pay-widget"]
 d21162 1
 a21162 1
 uaserials.com,uaserials.my##div[class^="uas-custom-"]
@@ -46,16 +53,21 @@ a28470 1
 dzen.ru##div[style*="12.362637362637363"]
 a28477 1
 dzen.ru##.content--styles__banner-cc + [aria-label] ~ div
+a28486 1
+dzen.ru##div[class^="content--article-bottom-single-"]
 a28498 2
-dzen.ru##div[class*="_content_with-new-"] > div[id] ~ div[class^="news-r_"]
 dzen.ru##div[class*="_content_with-new-"] > div[id] ~ div[id]
+dzen.ru##div[class*="_content_with-new-"] > div[id]:first-child + div[class*=" news-"]
 a28499 1
-dzen.ru##div[class*="news-r_"] > div[id]
-a28502 1
-dzen.ru##div[class^="r_"][class*="skeleton"]:style(background-color: transparent !important)
+dzen.ru##div[class^="news"] [class*="skeleton"]:style(background-color: transparent !important)
+a28502 2
+dzen.ru##div[id] > div[class*="-desktop-"] > div[class*="__image-"]:empty
+dzen.ru##div[id] > div[class*="-desktop-"] > div[class*="__image-"]:empty + div[class*="__content-"]
 a28819 1
 dzen.ru##+js(abort-on-property-read, Object.prototype.AdFox_getCodeScript)
 d28825 2
+a28960 1
+cq.ru##+js(addEventListener-defuser, copy, preventDefault)
 d29290 2
 a29293 2
 dzen.ru##:matches-path(/a/) div[style="opacity: 1;"]

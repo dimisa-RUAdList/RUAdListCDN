@@ -1,20 +1,32 @@
-diff name:ruadlist lines:20 checksum:b3f92d2f3f
+diff name:ruadlist lines:32 checksum:98e914495f
 d4 2
 a5 2
-! Last modified: Tue, 03 Mar 2026 05:59:19 +0000
-! Diff-Path: ../patches/2026.3.3.359.patch#ruadlist
+! Last modified: Tue, 03 Mar 2026 10:54:59 +0000
+! Diff-Path: ../patches/2026.3.3.654.patch#ruadlist
+d18431 1
+a19654 1
+pikabu.ru##a[href*="/payment/steam?"]
+a19950 1
+cq.ru##a[href="https://cq.ru/steam-pay"]
+a20832 1
+dtf.ru##div[class*="steam-pay-widget"]
 d22685 1
 a22685 1
 ~e.mail.ru,~kino.mail.ru,mail.ru,sportmail.ru,~tv.mail.ru#?#[data-qa="WrapperContent"] div:-abp-has(> [data-rb-slot])
 a28476 1
 dzen.ru##.content--styles__banner-cc + [aria-label] ~ div
+a28485 1
+dzen.ru##div[class^="content--article-bottom-single-"]
 a28497 2
-dzen.ru##div[class*="_content_with-new-"] > div[id] ~ div[class^="news-r_"]
 dzen.ru##div[class*="_content_with-new-"] > div[id] ~ div[id]
+dzen.ru##div[class*="_content_with-new-"] > div[id]:first-child + div[class*=" news-"]
 a28498 1
-dzen.ru##div[class*="news-r_"] > div[id]
-a28501 1
-dzen.ru##div[class^="r_"][class*="skeleton"]:style(background-color: transparent !important)
+dzen.ru##div[class^="news"] [class*="skeleton"]:style(background-color: transparent !important)
+a28501 2
+dzen.ru##div[id] > div[class*="-desktop-"] > div[class*="__image-"]:empty
+dzen.ru##div[id] > div[class*="-desktop-"] > div[class*="__image-"]:empty + div[class*="__content-"]
+a28958 1
+cq.ru##+js(addEventListener-defuser, copy, preventDefault)
 d29290 1
 a29290 1
 dzen.ru##:matches-path(/a/) div[style="opacity: 1;"]
