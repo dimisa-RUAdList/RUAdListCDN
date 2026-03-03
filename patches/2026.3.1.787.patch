@@ -1,8 +1,8 @@
-diff name:ruadlist lines:97 checksum:e4e2857e40
+diff name:ruadlist lines:109 checksum:7f48ad3026
 d4 2
 a5 2
-! Last modified: Tue, 03 Mar 2026 15:55:10 +0000
-! Diff-Path: ../patches/2026.3.3.955.patch#ruadlist
+! Last modified: Tue, 03 Mar 2026 20:45:12 +0000
+! Diff-Path: ../patches/2026.3.3.1245.patch#ruadlist
 a3838 1
 ||mfhkabefnl.com^$third-party
 a4749 1
@@ -18,8 +18,11 @@ a10678 1
 d11368 1
 a11368 1
 ||com/|$third-party,domain=4book.org|engvideo.net|ling-online.net
+a13913 1
+9tv.co.il###banner-container
 d15052 1
 d18429 1
+d18457 1
 d18691 1
 a18691 1
 1news.az,automobili.ru,post-tracker.ru,rtkorr.com##.topbanner
@@ -30,6 +33,8 @@ cq.ru##a[href="https://cq.ru/steam-pay"]
 d20644 1
 a20831 1
 dtf.ru##div[class*="steam-pay-widget"]
+a20998 1
+9tv.co.il##div[class^="comm_block"]
 d21162 1
 a21162 1
 uaserials.com,uaserials.my##div[class^="uas-custom-"]
@@ -58,12 +63,19 @@ metarating.com.ua,meta-ratings.kz,metaratings.ru,metaratings.*##div[class^="Mult
 metarating.com.ua,meta-ratings.kz,metaratings.ru,metaratings.*#?#div[class^="Button-module-"]:-abp-has(> [href^="/promo"])
 metarating.com.ua,meta-ratings.kz,metaratings.ru,metaratings.*#?#div[class^="ContentBlock"]:-abp-has(> a[href*="/bonuses/"])
 metarating.com.ua,meta-ratings.kz,metaratings.ru,metaratings.*#?#div[class^="WorkareaRow-module-"] > .sidebar:-abp-has(> div[class^="BookmakersRatingAside-module-"]:only-child)
+d26160 1
+a26160 3
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=1plus1.ua|1plus1.video|24tv.ua|debilizator.tv|gamak.tv|showjet.net|showjet.ru|stream.9tv.co.il|telek.top|unian.info|unian.net|unian.ua|veedi.com|vgtimes.ru|viho.me|viho.pro|viho.tv
+@@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$script,domain=stream.9tv.co.il
+@@||imasdk.googleapis.com/pal/sdkloader/pal.js$script,domain=stream.9tv.co.il
 d26216 1
 d26494 1
 a27840 3
 meta-ratings.kz,metarating.com.ua,metaratings.by,metaratings.ru,metaratings.tj##div[class^="MatchCarousel-module-"][class*="homePage"] header > a[href="/match-center/"]:style(color: #fff !important)
 meta-ratings.kz,metarating.com.ua,metaratings.by,metaratings.ru,metaratings.tj##div[class^="MatchCarousel-module-"][class*="homePage"]:style(background-color: #7e8f9f !important)
 ! ---
+a27987 1
+playground.ru##a[href*="dns-shop.ru/"]:style(pointer-events: none !important; color: inherit !important)
 d28454 1
 a28462 1
 dzen.ru##div[class*="-top-of-the-day-ad"]:style(opacity: 0 !important)
