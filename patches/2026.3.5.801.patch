@@ -1,8 +1,10 @@
-diff name:ruadlist lines:15 checksum:59895fc195
+diff name:ruadlist lines:34 checksum:6ee1b2a40b
 d4 2
 a5 2
-! Last modified: Sat, 07 Mar 2026 09:38:27 +0000
-! Diff-Path: ../patches/2026.3.7.578.patch#ruadlist
+! Last modified: Sat, 07 Mar 2026 14:35:44 +0000
+! Diff-Path: ../patches/2026.3.7.875.patch#ruadlist
+a5475 1
+||scriptapi.dev^$third-party
 a6325 1
 ||trorqeok.com^$third-party
 d10476 1
@@ -14,3 +16,20 @@ a10681 1
 d13780 3
 a13782 1
 ||zoneofgames.ru/advBlock.php
+a18946 1
+bryansknovosti.ru,novozybkov.su#?#.widget_text:-abp-has(> .textwidget > p:-abp-contains(/баннер/i))
+a19335 1
+bryansknovosti.ru,novozybkov.su##[data-title^="erid:"]
+d19602 1
+a19602 1
+360tv.ru,5-tv.ru,7days.ru,avtonovostidnya.ru,avtovzglyad.ru,belarus-news.by,bfm.ru,bryansknovosti.ru,bst.bratsk.ru,coop-land.ru,energyfm.ru,expert.ru,finuslugi.ru,fonmod.com,fontanka.ru,gdeichto.ru,habr.com,inosmi.ru,ixbt.com,ixbt.shop,kommersant.ru,kulturologia.ru,ladys.media,life.ru,mash.ru,media.az,metronews.ru,mgazeta.com,mk.ru,moe-belgorod.ru,moe-kursk.ru,moe-lipetsk.ru,moe-online.ru,moe-tambov.ru,moika78.ru,mydecor.ru,mywebpc.ru,myweekend.ru,naked-science.ru,neftegaz.ru,nevasport.ru,new-magazine.ru,news.ru,novozybkov.su,nsn.fm,ohotniki.ru,oper.ru,overclockers.ru,penzainform.ru,peterburg2.ru,pnz.ru,radio1.ru,regnum.news,regnum.ru,ridlife.ru,rifey.ru,rodgor-vlg.ru,rodina-history.ru,rusnext.ru,russian.rt.com,rutube.ru,securitymedia.org,sm.news,smotrim.ru,soccer.ru,sovsport.ru,sport-express.net,sport-express.ru,sportsdaily.ru,stiletto.blog,stolicaonego.ru,stratege.ru,super.ru,syzran-small.ru,teleprogramma.org,thegirl.ru,timeweb.com,tochka.by,tsargrad.tv,tulapressa.ru,tvzvezda.ru,u-f.ru,utyug.info,vz.ru,womanhit.ru,www1.ru,xn----7sbabwosghnf8al4lkj7b.xn--p1ai,ytronews.ru,zaks.ru,zaycev.net,zr.ru##a[href*="//dzen.ru/"]
+d20439 2
+d20442 3
+a26832 1
+pulsesync.dev##div[class^="warnNotification-module-"]
+d29301 4
+a29304 4
+dzen.ru##:matches-path(/\/a/) article:matches-attr(/./=/promo-card/)
+dzen.ru##:matches-path(/\/a/) div:matches-attr(/[a-z0-9]/=article-bottom-block) > [class] ~ div:not([class]):not([id])
+dzen.ru##:matches-path(/\/a/) div[style="opacity: 1;"]
+dzen.ru##:matches-path(/\/a/) main > div > [itemscope] > div > div[id]
