@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 07 Mar 2026 14:35:44 +0000
-! Diff-Path: ../patches/2026.3.7.875.patch#ruadlist
+! Last modified: Sat, 07 Mar 2026 19:29:49 +0000
+! Diff-Path: ../patches/2026.3.7.1169.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10208,6 +10208,7 @@ gb.ru##.popup-wheel-overlay
 alpindustria.ru##.popup.subscribe_panel
 golbis.com##.post-top-meta[style*="fixed;"]
 hdstudio.org##.promo-bl
+vgtimes.ru##.push_ask
 gdz-free.com##.shadow
 mixednews.ru##.slidebox_social
 domkino.tv##.social-annoyer
@@ -15193,7 +15194,6 @@ profile.ru##.adfox-hidden
 baby.ru##.adfox-video-desk
 ren.tv##.adfox-wrapper
 sravni.ru##.adfox_placeholder
-vgtimes.ru##.adfshift
 wintech.net.ru##.adgoogle
 onlinetestpad.com##.adleft
 ua.today##.admix
@@ -15693,6 +15693,7 @@ autodoc.ru,spbit.ru##.banner_div
 camelot.multilocal.ru,camelot.userlan.ru##.banner_header
 mybrazz.club##.banner_holder
 vd-tv.ru##.banner_home
+vgtimes.ru##.banner_in_news
 kriminal.tv##.banner_long
 allmoldova.com##.banner_main
 metronews.ru##.banner_margin
@@ -16421,7 +16422,6 @@ fishki.net#?#.drag_element:-abp-has([href="javascript:void(0)"])
 fishki.net#?#.drag_element:-abp-has([href]:-abp-contains(Peклама))
 fishki.net#?#.drag_element:-abp-has(script[id^="generated_ID_"])
 gennadij.pavlenko.name##.draggable_oio
-vgtimes.ru##.dragon_lord
 maximonline.ru##.ds-block-product
 softomania.net,warezok.net,windows-driver.com,windows-driver.net,windows-program.com##.ds-down
 dom72.ru##.duck-line
@@ -16491,7 +16491,6 @@ activ.kz##.fade[class*="modal"]
 ipicture.ru##.faq > ul > li + div
 bigness.ru##.fark
 prostatitanet.com##.fasc-button
-vgtimes.ru##.fatad
 ficbook.net##.fb-ads-block
 versii.if.ua##.fb-s-blog-two-top a:not([href])
 versii.if.ua##.fb-s-blog-two-top a[href]:not([href^="/"]):not([href^="https://versii.if.ua"])
@@ -19888,6 +19887,7 @@ megosales.com,otcrytki.com##a[href*="twnt.ru"]
 ucoz.ru##a[href*="ukit-freelance.com"][target="_blank"] > img
 westudents.com.ua##a[href*="ukrskidka.com.ua"]
 1tulatv.ru,animevost.one,animevost.org,animevost.top,bessarabiainform.com,bombardir.ru,dwg.ru,ebooktime.net,fex.net,pc-consultant.ru,programmersforum.ru,rusplt.ru,sport24.ru,traktorist.ua,vost.pw##a[href*="utm_"]
+securitylab.ru##a[href*="utm_"][target="_blank"] > div
 1news.com.ua,1plus1.video,1snau.ru,4pda.to,7dach.ru,abw.by,agronews.ua,allbasketball.org,animaunt.org,animedia.tv,anistar.org,app2top.ru,aqua-therm.ru,arsenaltula.ru,astar.bz,autoreview.ru,bez-smenki.ru,byxatab.org,cy-pr.com,darkermagazine.ru,enovosty.com,euro-football.ru,festima.ru,fishki.net,football.ua,forum.watch.ru,gazeta.uz,gdz.ru,glavagronom.ru,glavpahar.ru,gnatkovsky.com.ua,grippua.com.ua,gsminfo.com.ua,horrorzone.ru,inforeactor.ru,informator.ua,junona.pro,landlord.ua,lgoty-vsem.ru,liveresult.ru,med2.ru,meteo-tv.ru,mezha.ua,nachasi.com,news.sportbox.ru,nim.ru,online-star.org,online-stars.org,orelgrad.ru,playground.ru,playmaker24.ru,point.md,pr-cy.ru,prodota.ru,proglib.io,prosports.kg,prosports.kz,riafan.ru,russorosso.ru,rusvesna.su,shkole.net,silver.ru,smartpress.by,solncevo.info,sostav.ua,sovetromantica.com,spafilms.me,sport-express.net,sport-express.ru,sport-tv.by,sportsdaily.ru,stratege.ru,tayga.info,thg.ru,topvideo.tj,tt-cup.com,tvmag.ru,uoor.com.ua,val.ua,vandrouki.by,vashurok.ru,vc.ru,vgr.by,vjazhi.ru,vmgu.ru,volnorez.com.ua,www.film.ru,www.khl.ru,www.zoneofgames.ru,yap.ru,yaplakal.com,zakon.kz,zanmsk.ru##a[href*="utm_campai"]
 itc.ua##a[href*="utm_campai"] > img
 tradoman.ru##a[href*="utm_source=partner"][target="_blank"] > img
@@ -21135,6 +21135,7 @@ hi-tech.ua##div[class^="single-video-reklama-"]
 shazoo.ru#?#div[class^="sm"]:-abp-has(> .vk-privacy-mode-banner)
 shazoo.ru#?#div[class^="sm"]:-abp-has(> div > [id^="yandex_rtb_"])
 smartmama.com.ua##div[class^="smart-"]
+pulsesync.dev##div[class^="spaceBackground-module-"]
 sravni.ru##div[class^="special-offers-"]
 fastpic.org##div[class^="spinner"] ~ .d-flex
 cybersport.ru##div[class^="sponsor"]
@@ -25709,7 +25710,6 @@ zarulem.ws##td[style^="text-align:center;width:50%"]
 @@||rozetked.me/register|$generichide
 @@||ru-skript.ru^$generichide
 @@||rup.com.ua^$generichide
-@@||rusprofile.ru^$generichide
 @@||rusrek.com^$generichide
 @@||russia-tv.online^$generichide
 @@||rustreams.ru^$generichide
