@@ -1,8 +1,8 @@
-diff name:ruadlist lines:90 checksum:b1ecc74591
+diff name:ruadlist lines:119 checksum:6c9af12ccc
 d4 2
 a5 2
-! Last modified: Fri, 13 Mar 2026 15:53:58 +0000
-! Diff-Path: ../patches/2026.3.13.953.patch#ruadlist
+! Last modified: Fri, 13 Mar 2026 20:49:14 +0000
+! Diff-Path: ../patches/2026.3.13.1249.patch#ruadlist
 a2343 2
 ||gglead.net^$third-party
 ||gglead.org^$third-party
@@ -46,8 +46,13 @@ d16836 1
 d16887 1
 a16887 1
 itvmg.com,rivne1.tv##.info
+d16974 1
+a16974 1
+levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##.js--direct-ad-host
 a17184 1
 vg-news.ru##.main-small-right-block
+a17579 1
+levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##.pagewide-wrapper
 a17890 1
 kg.ua##.region-region-rek-title
 a18151 2
@@ -55,9 +60,10 @@ ua-football.com##.show-post > [style="color: rgb(170, 170, 170); font-style: ita
 ua-football.com#?#.show-post > div[style^="background:"]:-abp-has(> strong a[rel="nofollow"])
 d18315 1
 d19157 1
-d19253 1
-a19253 1
+d19253 2
+a19254 2
 intent.press,karavan.ua,sportarena.ua##[data-banner-name]
+levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##[data-banner-place-id]
 a19358 1
 kg.ua##[href*="://flaerok.ua"]
 d19565 1
@@ -68,9 +74,24 @@ a19604 1
 360tv.ru,5-tv.ru,7days.ru,avtonovostidnya.ru,avtovzglyad.ru,belarus-news.by,bfm.ru,bryansknovosti.ru,bst.bratsk.ru,comnews.ru,coop-land.ru,energyfm.ru,expert.ru,finuslugi.ru,fonmod.com,fontanka.ru,gdeichto.ru,habr.com,inosmi.ru,ixbt.com,ixbt.shop,kommersant.ru,kulturologia.ru,ladys.media,life.ru,mash.ru,media.az,metronews.ru,mgazeta.com,mk.ru,moe-belgorod.ru,moe-kursk.ru,moe-lipetsk.ru,moe-online.ru,moe-tambov.ru,moika78.ru,mydecor.ru,mywebpc.ru,myweekend.ru,naked-science.ru,neftegaz.ru,nevasport.ru,new-magazine.ru,news.ru,novozybkov.su,nsn.fm,ohotniki.ru,oper.ru,overclockers.ru,penzainform.ru,peterburg2.ru,pnz.ru,radio1.ru,regnum.news,regnum.ru,ridlife.ru,rifey.ru,rodgor-vlg.ru,rodina-history.ru,rusnext.ru,russian.rt.com,rutube.ru,securitymedia.org,sm.news,smotrim.ru,soccer.ru,sovsport.ru,sport-express.net,sport-express.ru,sportsdaily.ru,stiletto.blog,stolicaonego.ru,stratege.ru,super.ru,syzran-small.ru,teleprogramma.org,thegirl.ru,timeweb.com,tochka.by,tsargrad.tv,tulapressa.ru,tvzvezda.ru,u-f.ru,utyug.info,vz.ru,womanhit.ru,www1.ru,xn----7sbabwosghnf8al4lkj7b.xn--p1ai,ytronews.ru,zaks.ru,zaycev.net,zr.ru##a[href*="//dzen.ru/"]
 a20599 1
 www.kinopoisk.ru##button[class*=" styles_adButton_"]
+d21515 1
+a21515 1
+levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##div[id^="yandex_direct_"]
+d22355 1
+a22355 1
+https://*adtech_uid=$~third-party,xmlhttprequest,domain=levik.blog|livejournal.com|olegmakarenko.ru|periskop.su|shakko.ru|shiro-kino.ru|vadimrazumov.ru
 d22362 1
 a22362 1
 ||pikabu.ru/ajax/*?kty5r=$xmlhttprequest
+d22437 1
+a22437 1
+levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##[role="banner"] > .s-header-extra + div[class]
+d22675 4
+a22678 4
+levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##html.html-mobile div[class$="__inner--custom-width"]
+levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##html.html-mobile div[class*=" false"]
+levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##html.html-mobile div[class*="--hideable"]
+levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##html.html-mobile div[data-banner-place-id]
 a23178 1
 weekend.rambler.ru###app > div[style^="background:"]
 a23317 1
@@ -80,9 +101,17 @@ a24825 1
 d26511 1
 a26511 1
 @@/advertisement.$domain=1ttv.net|androidhost.ru|citydog.by|coil32.ru|coinvesti.ru|futurenet.club|gallerix.ru|imgpay.ru|instrukzii.ru|lingust.ru|newsarium.org|provladimir.ru|realstrannik.com|realstream.pw|routes.in.ua|rubukkit.org|rzn.info|seriatv.ru|smizu.ru|sportbox.ru|toolson.net|ualinux.com|vsimppt.com.ua|wpnice.ru|xn--80ajbwpejjci7c.xn--p1ai|zdravedae.com
+d27784 4
+a27787 3
+levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##.mdspost > div[class]:style(min-height: 0 !important)
+levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##.s-layout > div[class]:style(min-height: 0 !important)
+levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##header > div[class]:style(min-height: 0 !important)
 d28795 1
 a28795 1
 1news.com.ua,365news.biz,4mama.ua,agroter.com.ua,apnews.com.ua,asiaplustj.info,autotema.org.ua,autotheme.info,avtodream.org,beauty.ua,chas.cv.ua,cheline.com.ua,cikavosti.com,ck.ua,cn.ua,comments.ua,cvnews.cv.ua,day.kyiv.ua,depo.ua,dv-gazeta.info,dyvys.info,economistua.com,expert.in.ua,fedpress.ru,firtka.if.ua,forpost.media,fraza.com,gazeta1.com,glavnoe24.ru,glavpost.ua,golosinfo.com.ua,gorodkiev.com.ua,grad.ua,greenpost.ua,ifnews.org.ua,inforpost.com,inkorr.com,itechua.com,kh.ua,khersonline.net,kolizhanka.com.ua,kop.net.ua,kr.ua,krymr.com,kurskcity.ru,liga.net,lvnews.org.ua,mega-music.pro,mi100.info,mind.ua,mistosumy.com,moirebenok.ua,mycompplus.ru,nashbryansk.ru,news24today.info,newsua.one,ngp-ua.info,nnews.com.ua,novavlada.info,novynarnia.com,np.pl.ua,odessa-life.od.ua,ogo.ua,panoptikon.org,pg11.ru,pik.net.ua,pingvin.pro,pl.com.ua,planetanovosti.com,podpricelom.com.ua,politnavigator.net,poltava365.com,portal.lviv.ua,pravdatutnews.com,prm.ua,procherk.info,profootball.ua,promin.cv.ua,radiosvoboda.org,ratel.kz,real-vin.com,reporter.ua,risu.ua,rivne.media,rivnenews.com.ua,rusjev.com,russianshowbiz.info,rv.ua,rvnews.rv.ua,showdream.org,sport-kr.com.ua,strana.news,strana.today,sud.ua,te.ua,telekritika.ua,tenews.org.ua,theageoffootball.com,tverigrad.ru,tverisport.ru,tvoymalysh.com.ua,uainfo.org,uanews.org.ua,uatv.ua,ukranews.com,ukrrain.com,unn.com.ua,vchaspik.ua,viva.ua,vlast.kz,vnn24.ru,volnorez.com.ua,volyninfa.com.ua,volyninfo.com,volynpost.com,volynua.com,vsviti.com.ua,westnews.info,womo.ua,wona.com.ua,wworld.com.ua,zbirna.com,zp.ua##+js(abort-current-inline-script, document.createElement, /ru-n4p|ua-n4p|загрузка.../)
+d28825 1
+a28825 1
+levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##+js(abort-on-property-read, Object.prototype._getBanner)
 d28911 1
 a28911 1
 cikavosti.com,dialogs.org.ua,fakty.ua,gorodkiev.com.ua,informator.ua,kriminal.tv,pingvin.pro,technoportal.com.ua,u-news.com.ua,uanews.org.ua,volynpost.com##+js(abort-on-property-read, weekCallbacks)

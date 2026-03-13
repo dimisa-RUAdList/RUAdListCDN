@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 13 Mar 2026 15:53:58 +0000
-! Diff-Path: ../patches/2026.3.13.953.patch#ruadlist
+! Last modified: Fri, 13 Mar 2026 20:49:14 +0000
+! Diff-Path: ../patches/2026.3.13.1249.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -16967,7 +16967,7 @@ dokumentalkino.net,lektsia.info##.jptop
 news.turizm.ru##.jq_turoperator_adv_items
 mo4movin.dyndns.org##.jqmOverlay
 mo4movin.dyndns.org##.jqmWindow
-lena-miro.ru,levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##.js--direct-ad-host
+levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##.js--direct-ad-host
 drive.ru##.js-adv-widget
 megalyrics.ru##.js-banner
 blizko.ru##.js-barmen-loaded:not([data-barmen="Showcase"])
@@ -17574,6 +17574,7 @@ redheadsound.studio##.page__text > div[style^="color:"] + p > br
 nur.kz##.page__top
 djekxa.ru##.page_index.content > p a[href][target="_blank"] > img
 1777.ru##.pages_sf_right_block > table[style*="min-height:"]
+levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##.pagewide-wrapper
 m-strana.ru##.pagination-item > [id^="bx_"] ~ :not([id^="bx_"])
 km.ru##.pane-advertisment
 rz.com.ua##.pane-node-field-right-long-banner
@@ -19249,7 +19250,7 @@ vc.ru##[data-analytics*="native"]
 shuba.life##[data-banner-container]
 bobr.by,buhonline.ru,zakon.ru##[data-banner-id]
 intent.press,karavan.ua,sportarena.ua##[data-banner-name]
-lena-miro.ru,levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##[data-banner-place-id]
+levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##[data-banner-place-id]
 focus.ua,sovets.net,tvtver.ru##[data-banner]
 tophotels.ru##[data-bh]
 newsland.com##[data-block-type="ads"]
@@ -21512,7 +21513,7 @@ indi1.top#?#div[id^="widget_wrapper_"]:-abp-has(.widget_video_ads)
 kriminal.net.ua#?#div[id^="widget_wrapper_"]:-abp-has(> .body [src="https://smi.pp.ua/vidjetua.js"])
 mosday.ru##div[id^="yaad"]
 soccer0100.com,spectehinfo.ru,trudbox.com.ua##div[id^="yandex_direct"]
-lena-miro.ru,levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##div[id^="yandex_direct_"]
+levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##div[id^="yandex_direct_"]
 24smi.org,gdz-raketa.ru##div[id^="yandex_rtb"] > :not(img)
 alcogolizm.com##div[id^="yazd_"]
 korabel.ru##div[id^="ydirect_"]
@@ -22352,7 +22353,7 @@ $csp=script-src-attr 'none',domain=eurointegration.com.ua|sportanalytic.com|note
 @@||s.znctrack.net/z|$xmlhttprequest
 @@||ssp.rambler.ru/capirs_async.js|$script,domain=www.championat.com|www.championat.ru
 @@||statika.mpsuadv.ru/scripts/*.js|$script,domain=trychatgpt.ru
-https://*adtech_uid=$~third-party,xmlhttprequest,domain=lena-miro.ru|levik.blog|livejournal.com|olegmakarenko.ru|periskop.su|shakko.ru|shiro-kino.ru|vadimrazumov.ru
+https://*adtech_uid=$~third-party,xmlhttprequest,domain=levik.blog|livejournal.com|olegmakarenko.ru|periskop.su|shakko.ru|shiro-kino.ru|vadimrazumov.ru
 ||captcha-api.yandex.ru^$domain=drive2.ru
 ||imgfrost.net^$third-party
 ||liveinternet.ru/utf/lici.js?
@@ -22434,7 +22435,7 @@ liveinternet.ru##[data-wrapper]
 mail.ru##[href*="https://dzen.ru"]
 ~dzen.ru,~sportsdzen.ru##[href^="https://dzen.ru"]
 vk.com,vk.ru##[id^="post-"] > ._post_content > :only-child
-lena-miro.ru,levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##[role="banner"] > .s-header-extra + div[class]
+levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##[role="banner"] > .s-header-extra + div[class]
 livejournal.com#?#a:-abp-has(span:-abp-contains(Реклама))
 pikabu.ru##article.story[data-text-length="1"]
 kp.kg,kp.kz,kp.md,kp.ru#?#body > #app div:-abp-properties(background-color: rgb(225, 231, 235))
@@ -22672,10 +22673,10 @@ kp.ru#?#body.wp-theme-sports .show-for-large:-abp-has(> .left-sidebar)
 kp.ru##div[class^="ad-slot"]
 kp.ru##div[style*="height:"][style*="250px"][style*="important"]
 ! мобильная версия livejournal.com
-lena-miro.ru,levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##html.html-mobile div[class$="__inner--custom-width"]
-lena-miro.ru,levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##html.html-mobile div[class*=" false"]
-lena-miro.ru,levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##html.html-mobile div[class*="--hideable"]
-lena-miro.ru,levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##html.html-mobile div[data-banner-place-id]
+levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##html.html-mobile div[class$="__inner--custom-width"]
+levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##html.html-mobile div[class*=" false"]
+levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##html.html-mobile div[class*="--hideable"]
+levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##html.html-mobile div[data-banner-place-id]
 ! Mail.ru
 ! Общие
 ~e.mail.ru,mail.ru,sportmail.ru##.article__item_conversionlink
@@ -27784,10 +27785,9 @@ www.liveinternet.ru##:not(.allpageinner) > :not(.header) > .logo > a[href="/"] >
 ! ---
 ! LiveJournal
 www.livejournal.com##.mainpage > div[class]:style(min-height: 0 !important)
-lena-miro.ru,levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##.mdspost > div[class]:style(min-height: 0 !important)
-lena-miro.ru,levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##.pagewide-wrapper:style(min-height: 0 !important)
-lena-miro.ru,levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##.s-layout > div[class]:style(min-height: 0 !important)
-lena-miro.ru,levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##header > div[class]:style(min-height: 0 !important)
+levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##.mdspost > div[class]:style(min-height: 0 !important)
+levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##.s-layout > div[class]:style(min-height: 0 !important)
+levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##header > div[class]:style(min-height: 0 !important)
 ! ---
 liveresult.ru##.main:style(margin-top: 0 !important)
 ! ---
@@ -28825,7 +28825,7 @@ dzen.ru##+js(abort-on-property-read, Object.prototype.AdFox_getCodeScript)
 drive2.ru##+js(abort-on-property-read, Object.prototype.AdfoxXhrRequestPrepared)
 liveinternet.ru,yap.ru,yaplakal.com##+js(abort-on-property-read, Object.prototype.Metrika)
 liveinternet.ru##+js(abort-on-property-read, Object.prototype.YA_TURBO_PAGES)
-lena-miro.ru,levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##+js(abort-on-property-read, Object.prototype._getBanner)
+levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##+js(abort-on-property-read, Object.prototype._getBanner)
 rbc.ru##+js(abort-on-property-read, Object.prototype._isAutostartQueueSet)
 www.kinopoisk.ru##+js(abort-on-property-read, Object.prototype.bannerOptions)
 gorodrabot.by,gorodrabot.ru##+js(abort-on-property-read, Object.prototype.direct)
