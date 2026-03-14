@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 14 Mar 2026 02:47:25 +0000
-! Diff-Path: ../patches/2026.3.14.167.patch#ruadlist
+! Last modified: Sat, 14 Mar 2026 08:49:10 +0000
+! Diff-Path: ../patches/2026.3.14.529.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -23398,7 +23398,6 @@ quote.ru##a[href="https://quote.ru/?utm_source=topline"] img
 cnews.ru#?#a[href^="https://www.cnews.ru/redirect.php"]:-abp-contains(Дзен)
 autonews.ru,rbc.ru,rbcautonews.ru,sportrbc.ru##body div .banner__container
 autonews.ru,rbc.ru,sportrbc.ru##body div .banner__filmstrip
-rbc.ru##body div[class^="MainNewsComponent_wrapper_"] [href^="https://pro.rbc.ru/"]
 rbc.ru#?#body.free .intresting__list > .intresting__item:-abp-has(a[href^="https://pro.rbc.ru/"])
 rbc.ru#?#body.free .js-index-central-column > [data-publisher-index]:-abp-has([href^="https://pro.rbc.ru"])
 rbc.ru##body.free [data-vr-zone="Топ новости"] .main__feed::before
@@ -23408,14 +23407,15 @@ rbc.ru#?#body.free [data-vr-zone="Топ новости"] div:-abp-has(> a[href*
 rbc.ru##body.free a.meta-info-row-project[href^="https://pro.rbc.ru"]
 rbc.ru##body.free a[class^="styles_message-bar_"][href^="https://pro.rbc.ru/"]
 rbc.ru#?#body.free aside.bside .sidebar:-abp-has(a[href^="https://pro.rbc.ru/"])
+rbc.ru##body.free div[class*="styles_newsfeed"] .sidebar a[href*="utm_campaign"]
+rbc.ru##body.free div[class*="styles_newsfeed"] .sidebar a[href*="utm_campaign"] ~ .meta-info-row-wrapper
+rbc.ru#?#body.free div[class*="styles_newsfeed"] .sidebar:-abp-has(a[href*="utm_campaign"])
 rbc.ru#?#body.free div[class="central-publisher-item"]:-abp-has([href^="https://pro.rbc.ru/"])
+rbc.ru##body.free div[class="central-publisher-item"]:nth-child(-n+2) [href^="https://pro.rbc.ru/"]
+rbc.ru#?#body.free div[class="central-publisher-item"]:nth-child(-n+2):-abp-has([href^="https://pro.rbc.ru/"])
+rbc.ru##body.free div[class^="MainNewsComponent_wrapper_"] [href^="https://pro.rbc.ru/"]
 rbc.ru##body.free div[class^="style_promo_"]
 rbc.ru##body.free div[data-name^="SpecialBlockPro"]
-rbc.ru##div[class*="styles_newsfeed"] .sidebar a[href*="utm_campaign"]
-rbc.ru##div[class*="styles_newsfeed"] .sidebar a[href*="utm_campaign"] ~ .meta-info-row-wrapper
-rbc.ru#?#div[class*="styles_newsfeed"] .sidebar:-abp-has(a[href*="utm_campaign"])
-rbc.ru##div[class="central-publisher-item"]:nth-child(-n+2) [href^="https://pro.rbc.ru/"]
-rbc.ru#?#div[class="central-publisher-item"]:nth-child(-n+2):-abp-has([href^="https://pro.rbc.ru/"])
 rbc.ru##div[class^="BsideBanner"]
 rbc.ru,sportrbc.ru##div[class^="bet-block"]
 rbc.ru##div[class^="commercial-formats-"]
@@ -23431,6 +23431,7 @@ rbc.ru##div[class^="styles_okko"]
 ||rbk.ru/*/_renderAggregator.js
 ||rbk.ru/*_videoCommercial.
 ||rbk.ru^*/_yaDirect.js
+||s0.rbk.ru/v6_top_pics/media/img/2/89/347628703693892.svg
 ||utro.ru/*/banners/
 ||zoom.cnews.ru/inc/bpic/
 ! Spaces и зеркала
@@ -28650,6 +28651,8 @@ rbc.ru##body > [data-yandex-name="blockad_click"]
 ! исправление ошибок и косяков оригинальной вёрстки
 rbc.ru##.video-gallery-popup.single .video-gallery-popup__body:style(left: 200px !important; right: 200px !important)
 rbc.ru##.video-gallery-popup.single .video-gallery-popup__wrap:style(max-width: 100% !important)
+rbc.ru##article .tabs-content-wrapper:style(margin-bottom: 0 !important)
+rbc.ru##article > .gutter-b:last-child:style(padding-bottom: 0 !important)
 ! ---
 26-2.ru,arbitr-praktika.ru,budgetnik.ru,buhsoft.ru,business.ru,cxychet.ru,dirsalona.ru,fd.ru,gazeta-unp.ru,gd.ru,glavbukh.ru,hr-director.ru,kdelo.ru,kom-dir.ru,law.ru,menobr.ru,pro-goszakaz.ru,pro-personal.ru,resobr.ru,rnk.ru,sekretariat.ru,stroychet.ru,trudohrana.ru,ugpr.ru,zarplata-online.ru,zdrav.ru##.body *:style(opacity: 1 !important; filter: none !important; pointer-events: auto !important)
 26-2.ru,arbitr-praktika.ru,budgetnik.ru,buhsoft.ru,business.ru,cxychet.ru,dirsalona.ru,fd.ru,gazeta-unp.ru,gd.ru,glavbukh.ru,hr-director.ru,kdelo.ru,kom-dir.ru,law.ru,menobr.ru,pro-goszakaz.ru,pro-personal.ru,resobr.ru,rnk.ru,sekretariat.ru,stroychet.ru,trudohrana.ru,ugpr.ru,zarplata-online.ru,zdrav.ru##.megaShadow

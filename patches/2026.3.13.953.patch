@@ -1,8 +1,8 @@
-diff name:ruadlist lines:35 checksum:759128afa5
+diff name:ruadlist lines:50 checksum:7ff3a75e45
 d4 2
 a5 2
-! Last modified: Sat, 14 Mar 2026 02:47:25 +0000
-! Diff-Path: ../patches/2026.3.14.167.patch#ruadlist
+! Last modified: Sat, 14 Mar 2026 08:49:10 +0000
+! Diff-Path: ../patches/2026.3.14.529.patch#ruadlist
 d16970 1
 a16970 1
 levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##.js--direct-ad-host
@@ -26,11 +26,26 @@ levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,
 levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##html.html-mobile div[class*=" false"]
 levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##html.html-mobile div[class*="--hideable"]
 levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##html.html-mobile div[data-banner-place-id]
+d23400 1
+a23409 3
+rbc.ru##body.free div[class*="styles_newsfeed"] .sidebar a[href*="utm_campaign"]
+rbc.ru##body.free div[class*="styles_newsfeed"] .sidebar a[href*="utm_campaign"] ~ .meta-info-row-wrapper
+rbc.ru#?#body.free div[class*="styles_newsfeed"] .sidebar:-abp-has(a[href*="utm_campaign"])
+a23410 3
+rbc.ru##body.free div[class="central-publisher-item"]:nth-child(-n+2) [href^="https://pro.rbc.ru/"]
+rbc.ru#?#body.free div[class="central-publisher-item"]:nth-child(-n+2):-abp-has([href^="https://pro.rbc.ru/"])
+rbc.ru##body.free div[class^="MainNewsComponent_wrapper_"] [href^="https://pro.rbc.ru/"]
+d23413 5
+a23432 1
+||s0.rbk.ru/v6_top_pics/media/img/2/89/347628703693892.svg
 d27787 4
 a27790 3
 levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##.mdspost > div[class]:style(min-height: 0 !important)
 levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##.s-layout > div[class]:style(min-height: 0 !important)
 levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##header > div[class]:style(min-height: 0 !important)
+a28652 2
+rbc.ru##article .tabs-content-wrapper:style(margin-bottom: 0 !important)
+rbc.ru##article > .gutter-b:last-child:style(padding-bottom: 0 !important)
 d28828 1
 a28828 1
 levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##+js(abort-on-property-read, Object.prototype._getBanner)
