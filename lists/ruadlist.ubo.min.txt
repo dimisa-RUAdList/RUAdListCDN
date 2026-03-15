@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 15 Mar 2026 13:13:40 +0000
-! Diff-Path: ../patches/2026.3.15.793.patch#ruadlist
+! Last modified: Sun, 15 Mar 2026 17:39:12 +0000
+! Diff-Path: ../patches/2026.3.15.1059.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -15285,6 +15285,7 @@ turanpress.kz##.advertising-blank
 minfin.com.ua##.advertising-caption
 vinnitsa.info##.advertising-card
 infotime.co##.advertising-heading
+rozetka.com.ua##.advertising-slider-theme
 mlyn.by##.advertising-widget
 artemsannikov.ru##.advertisingColumn
 gamemag.ru##.advertising_review
@@ -19473,6 +19474,7 @@ browserss.ru##[onclick^="window."][onclick*="://"]
 allboxing.ru##[onmouseenter="onClickPbButton()"]
 penzainform.ru##[pnz-ads]:not(eto-dlya-mob-ver)
 apteki.su##[poster^="http://static.apteki.su/img/banners/"]
+rozetka.com.ua#?#[rzscrollersliderbar] > div > .slide:-abp-has(> rz-product-tile [href*="/?advToken="])
 radiokot.ru##[src*="//radiokot.ru/adv/"]
 itweek.ru##[src*="/ad/banners/"]
 fixygen.ua##[src*="/assets/banner_"]
@@ -20915,6 +20917,7 @@ kanobu.ru#?#div[class^="Sidebar_sidebar_list"] > div[class]:-abp-has(> div > div
 igromania.ru,kanobu.ru##div[class^="TopPageBanner_wrap_"]
 yarnovosti.com##div[class^="_5"]
 games.pikabu.ru,t-j.ru##div[class^="_banner_"]
+tv.starhit.ru##div[class^="_partnerSlot_"]
 domashnie-zagotovki.ru##div[class^="a7-btns"]
 igdz.ru##div[class^="ab-"][class$="-text"]
 u24.ua##div[class^="ab_premium_"]
@@ -23010,7 +23013,6 @@ ok.ru##iframe[src^="//oktools.ru/page/static/"]
 116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,ya62.ru###div-hb-top-forum
 ru###jtn-common-adv-label > path
 ru###ui-common-adv-label > path
-116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,ya62.ru##.PReP\+
 ru##.advLogoWrapper
 e1.ru##.e1-top-panel__link[title="Авто"]
 116.ru,14.ru,161.ru,164.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,voronezh1.ru,ya62.ru##.forum-right-column
@@ -23033,11 +23035,11 @@ sp.ngs.ru##.sp-toppromo
 ##.widget-autoru
 fontanka.ru##[class*="pictureDayBlock_"] li > a[href*="/?erid="]
 fontanka.ru#?#[class*="pictureDayBlock_"] li:-abp-has(> a[href*="/?erid="])
-116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,ya62.ru##[data-creative]
 fontanka.ru##[data-io-article-url] > [itemprop="articleBody"] ~ p[class]
 ru##[data-ns-portal] .gridContainer div[class^="benefitsBlock_"]
 ru##[data-ns-portal] .notify-messages-popups
 ru##[data-ns-portal] [data-adv-mark]
+ru##[data-ns-portal] [data-creative]
 ru##[data-ns-portal] a[href*="://auto.ru"][href*="utm_"]
 ru##[data-ns-portal] aside div[class^="benefitsBlock_"]
 ru##[data-ns-portal] div[class^="articleBlockFullscreenGallery_"] > div[class^="wrapper_"] > div[class^="slider_"] ~ div
@@ -23047,7 +23049,6 @@ ru##[data-ns-portal] div[class^="topicsList"] a[href*="erid="]
 ru##[data-ns-portal] div[class^="wrap_"][class$=" gridFullMobile"]:empty
 ru##[data-ns-portal] div[class^="wrap_"][class$=" gridOneThirdLaptop"]:empty
 ru##[data-ns-portal] ul[class^="footerLogos_"] [href*="/?erid"]
-116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,fontanka.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,ya62.ru##[data-placement]
 116.ru,45.ru,59.ru,93.ru,fontanka.ru,ngs42.ru,ngs55.ru,v1.ru##[data-status]
 45.ru,56.ru,72.ru,74.ru,chita.ru,e1.ru,ngs.ru,ufa1.ru##[data-test="header-adv-logo"]
 116.ru,72.ru,74.ru,chita.ru,e1.ru,ngs.ru,ngs55.ru##[data-test="sticky-header"] > div > div > div > div:first-child:not([data-test])
