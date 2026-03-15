@@ -1,8 +1,8 @@
-diff name:ruadlist lines:64 checksum:ab0f576a21
+diff name:ruadlist lines:73 checksum:91fda1149e
 d4 2
 a5 2
-! Last modified: Sun, 15 Mar 2026 07:51:09 +0000
-! Diff-Path: ../patches/2026.3.15.471.patch#ruadlist
+! Last modified: Sun, 15 Mar 2026 13:13:40 +0000
+! Diff-Path: ../patches/2026.3.15.793.patch#ruadlist
 a5612 1
 ||simbad.pro^$third-party
 a5725 1
@@ -30,7 +30,8 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=levik.blog|livejournal.c
 d22437 1
 a22437 1
 levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##[role="banner"] > .s-header-extra + div[class]
-a22558 1
+a22558 2
+www.avito.ru##[data-chunks="item-buyer-view"] + div > div:first-child > div:first-child + div > div:first-child + div + div:last-child > div:only-child > div:first-child + div:last-child > div:only-child > div:first-child + div:last-child
 www.avito.ru##div[class*="avito-ads-container"]
 a22566 1
 ||avito.st/dstatic/build/client/*/creatives-outclick-beduin-layout.$domain=avito.ru
@@ -63,3 +64,11 @@ rbc.ru##article > .gutter-b:last-child:style(padding-bottom: 0 !important)
 d28828 1
 a28828 1
 levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##+js(abort-on-property-read, Object.prototype._getBanner)
+d29109 1
+a29109 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, div, /Ad.block|Adb-|Adblock|Guard|блокиратор/)
+d29111 1
+a29111 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /A.d.b.|Adb-|A-d-b-|-Gua|dGua|dblo|tick/)
+a29638 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##[style*=" 2223"]
