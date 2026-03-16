@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 16 Mar 2026 13:49:01 +0000
-! Diff-Path: ../patches/2026.3.16.829.patch#ruadlist
+! Last modified: Mon, 16 Mar 2026 19:17:22 +0000
+! Diff-Path: ../patches/2026.3.16.1157.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22107,7 +22107,7 @@ nvplay.ru##span > i > span[style="font-weight: 400;"]
 sport.tut.by#?#span > small:-abp-contains(Приведённые букмекерские коэффициенты)
 vmgu.ru#?#span.articles_info > b:-abp-contains(Реклама:)
 itechua.com##span.td_btn[style="color: #ffffff;"]
-2gis.by,2gis.kz,2gis.ru#?#span:-abp-contains(/реклама/i)
+2gis.by,2gis.kz,2gis.ru,~pro.2gis.ru#?#span:-abp-contains(/реклама/i)
 myshared.ru#?#span:-abp-contains(Advertisements)
 headinsider.net#?#span:-abp-contains(Интересные новости)
 remontka.pro#?#span:-abp-contains(Реклама)
@@ -22983,6 +22983,7 @@ okminigames.mail.ru###ok-wrapper.container span.js-href
 ok.ru###rightColumn[data-mouse-wheel]
 ok.ru##.dialogWrapperBanner
 ok.ru##.exit-popup
+ok.ru#?#.feed-list > .feed-w:-abp-has(> .feed .feed-action > [data-url*="adv_info"])
 ok.ru#?#.feed-list > .feed-w:-abp-has(> [class^="feed"] > .feed-header [class] ~ [class] ~ [class] ~ [class] ~ [class] ~ [class])
 ok.ru#?#.feed-list > .feed-w:-abp-has([class^="feed"][class*="label"]:-abp-contains(/реклама/i))
 ok.ru#?#.feed-list > .feed-w:-abp-has(button[class*="advert-badge"])

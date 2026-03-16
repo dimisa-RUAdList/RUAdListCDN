@@ -1,8 +1,8 @@
-diff name:ruadlist lines:56 checksum:6a62aad66a
+diff name:ruadlist lines:61 checksum:4abd2cbb8b
 d4 2
 a5 2
-! Last modified: Mon, 16 Mar 2026 13:49:01 +0000
-! Diff-Path: ../patches/2026.3.16.829.patch#ruadlist
+! Last modified: Mon, 16 Mar 2026 19:17:22 +0000
+! Diff-Path: ../patches/2026.3.16.1157.patch#ruadlist
 a5612 1
 ||simbad.pro^$third-party
 a5725 1
@@ -19,6 +19,9 @@ a20913 1
 tv.starhit.ru##div[class^="_partnerSlot_"]
 a22067 1
 rozetka.com.ua#?#rz-catalog-goods > .item:-abp-has(> rz-product-tile [href*="/?advToken="])
+d22102 1
+a22102 1
+2gis.by,2gis.kz,2gis.ru,~pro.2gis.ru#?#span:-abp-contains(/реклама/i)
 d22363 1
 a22363 1
 ||pikabu.ru/ajax/*?Ouip8=$xmlhttprequest
@@ -27,6 +30,8 @@ www.avito.ru##[data-chunks="item-buyer-view"] + div > div:first-child > div:firs
 www.avito.ru##div[class*="avito-ads-container"]
 a22567 1
 ||avito.st/dstatic/build/client/*/creatives-outclick-beduin-layout.$domain=avito.ru
+a22974 1
+ok.ru#?#.feed-list > .feed-w:-abp-has(> .feed .feed-action > [data-url*="adv_info"])
 d23005 1
 d23028 1
 a23032 1
