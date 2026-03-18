@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 18 Mar 2026 10:05:45 +0000
-! Diff-Path: ../patches/2026.3.18.605.patch#ruadlist
+! Last modified: Wed, 18 Mar 2026 15:18:51 +0000
+! Diff-Path: ../patches/2026.3.18.918.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10433,6 +10433,8 @@ $csp=script-src-attr 'none',domain=volyn.com.ua
 ||an.yandex.ru/count/$csp=script-src
 ||azbne.net^$csp=sandbox allow-same-origin;
 ||betnetmed.advertserve.com^$csp=sandbox allow-same-origin;
+||cdncontent.top/img_full/$csp=script-src
+||cdncontent.top/opentorrent/$csp=script-src
 ||cosplay-porn.$csp=connect-src 'self' blob: data:
 ||crossout.net/*free?*&r=$csp=sandbox allow-same-origin;
 ||drive.google.com/file/d/1VmzdhLB_-DcnBtUbKfQPnNvsEp_2gnsy/$csp=script-src
@@ -16851,6 +16853,7 @@ infox.ru##.idv3-popup-frame
 abkhasiya.ru,rp-mechanics.ru##.ignore-select
 moybrauzer.ru##.igrof
 fairtop.in##.image-side
+cdncontent.top##.images > .container
 asiapoisk.com##.img-banner-responsive
 odessa-life.od.ua##.img-responsive
 cossa.ru##.imgCorp
@@ -18111,6 +18114,7 @@ drinks.ua##.secondary-slider
 softbesplatno.net##.sect-recl
 ctrana.one,strana.news,strana.one,strana.today,stranaua.media##.sect-repeat-ban
 utkonos.mybb.ru##.section > #tn1
+cdncontent.top##.section--fill.section > center
 kulturomania.ru##.section-banner
 mastergrad.com##.section-body > [itemprop="comment"] ~ div[style="margin-bottom: 15px;"]
 gorvesti.ru#?#.section-feed-sm > div:-abp-has(> .blnk)
@@ -19561,6 +19565,7 @@ good73.net##a[\;] > img
 ren.tv##a[class*=" ya_"]
 solverbook.com##a[class*="-banner-"]
 siliconrus.com##a[class*="b-menu__li__a-"]
+vc.ru##a[class*="bar"][href^="/courses"]
 dtf.ru,vc.ru##a[class*="bar"][href^="/store"]
 prm.ru##a[class*="http"] > img[width="240"]
 amurpress.ru##a[class*="rekl"][target="_blank"]:not([href^="http://amurpress.ru/"])
@@ -22333,8 +22338,8 @@ ictv.ua,vikna.tv##div[id^="div-gpt-ad-"]
 ||dzen.ru/articles$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/news$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/pogoda/$script
-||static.dzeninfra.ru/s3/zen-apps/mobile/*/*/$script
-||static.dzeninfra.ru/s3/zen-apps/subscriptions/*/*/$script
+||static.dzeninfra.ru/s3/zen-apps/content/*/*/$script
+||static.dzeninfra.ru/s3/zen-apps/video-player-core/*/*/$script
 $csp=script-src-attr 'none',domain=eurointegration.com.ua|sportanalytic.com|notebookcheck-ru.com
 /^https?://24smi\.org/*[/]*[/][^\s]{8,}/$xmlhttprequest,domain=24smi.org
 ://mail.ru$csp=img-src 'self' https:
@@ -29418,6 +29423,7 @@ ya.ru,yandex.*##.simple-popup__overlay:remove()
 ||ipcamlive.com/player/player.php?*autoplay=true$subdocument,removeparam=autoplay
 ||kp.yandex.net/images/bnnr/brand/$domain=www.kinopoisk.ru
 ||kp.yandex.net/js/brand$domain=www.kinopoisk.ru
+||labadena.com^$popunder
 ||loadercdn.com^$important,script,redirect=noopjs
 ||m.mixadvert.com/show/$important,script
 ||mc.admetrica.ru/sync_cookie_image_check$image,redirect=1x1-transparent.gif

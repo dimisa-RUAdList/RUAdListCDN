@@ -1,12 +1,15 @@
-diff name:ruadlist lines:103 checksum:b2c045dbee
+diff name:ruadlist lines:118 checksum:6bfb74b020
 d4 2
 a5 2
-! Last modified: Wed, 18 Mar 2026 10:05:45 +0000
-! Diff-Path: ../patches/2026.3.18.605.patch#ruadlist
+! Last modified: Wed, 18 Mar 2026 15:18:51 +0000
+! Diff-Path: ../patches/2026.3.18.918.patch#ruadlist
 a117 1
 ||2xclock.com^$third-party
 a5599 1
 ||showsclicka.com^$third-party
+a10433 2
+||cdncontent.top/img_full/$csp=script-src
+||cdncontent.top/opentorrent/$csp=script-src
 d10488 1
 d10685 1
 a10685 1
@@ -24,6 +27,8 @@ d15243 1
 a15287 1
 rozetka.com.ua##.advertising-slider-theme
 d15466 1
+a16859 1
+cdncontent.top##.images > .container
 d16883 1
 a17031 1
 kirov.online##.layout_sidebar.content-card
@@ -32,6 +37,8 @@ vesti.ru##.nested-page-top
 a17807 1
 starhit.ru##.promocodes-block
 d18088 1
+a18118 1
+cdncontent.top##.section--fill.section > center
 d18638 1
 a18638 1
 key-test.ru,kurs.if.ua,vesti.ru##.top-block
@@ -46,6 +53,8 @@ a19475 1
 rozetka.com.ua#?#[rzscrollersliderbar] > div > .slide:-abp-has(> rz-product-tile [href*="/?advToken="])
 a19561 1
 vc.ru##a.sidebar-item[href^="/courses"]
+a19568 1
+vc.ru##a[class*="bar"][href^="/courses"]
 d19608 1
 a19608 1
 360tv.ru,5-tv.ru,7days.ru,avtonovostidnya.ru,avtovzglyad.ru,belarus-news.by,bfm.ru,bryansknovosti.ru,bst.bratsk.ru,comnews.ru,coop-land.ru,energyfm.ru,expert.ru,finuslugi.ru,fonmod.com,fontanka.ru,gdeichto.ru,habr.com,inosmi.ru,ixbt.com,ixbt.shop,kommersant.ru,kulturologia.ru,ladys.media,life.ru,mash.ru,media.az,metronews.ru,mgazeta.com,mk.ru,moe-belgorod.ru,moe-kursk.ru,moe-lipetsk.ru,moe-online.ru,moe-tambov.ru,moika78.ru,mydecor.ru,mywebpc.ru,myweekend.ru,naked-science.ru,neftegaz.ru,nevasport.ru,new-magazine.ru,news.ru,newskrasnodar.ru,ngzt.ru,novozybkov.su,nsn.fm,ohotniki.ru,oper.ru,overclockers.ru,penzainform.ru,peterburg2.ru,pg11.ru,pg37.ru,pg46.ru,pnz.ru,prochepetsk.ru,progorod58.ru,progorod59.ru,progorod62.ru,progorodchelny.ru,progoroduhta.ru,radio1.ru,regnum.news,regnum.ru,ridlife.ru,rifey.ru,rodgor-vlg.ru,rodina-history.ru,rusnext.ru,russian.rt.com,rutube.ru,securitymedia.org,sm.news,smotrim.ru,soccer.ru,sovsport.ru,sport-express.net,sport-express.ru,sportsdaily.ru,stiletto.blog,stolicaonego.ru,stratege.ru,super.ru,syzran-small.ru,teleprogramma.org,thegirl.ru,timeweb.com,tochka.by,tsargrad.tv,tulapressa.ru,tvzvezda.ru,u-f.ru,utyug.info,vz.ru,womanhit.ru,www1.ru,xn----7sbabwosghnf8al4lkj7b.xn--p1ai,ytronews.ru,zaks.ru,zaycev.net,zr.ru##a[href*="//dzen.ru/"]
@@ -59,6 +68,10 @@ d21304 1
 d22107 1
 a22107 1
 2gis.by,2gis.kz,2gis.ru,~pro.2gis.ru#?#span:-abp-contains(/реклама/i)
+d22342 2
+a22343 2
+||static.dzeninfra.ru/s3/zen-apps/content/*/*/$script
+||static.dzeninfra.ru/s3/zen-apps/video-player-core/*/*/$script
 d22368 1
 a22368 1
 ||pikabu.ru/ajax/*?Ouip8=$xmlhttprequest
@@ -97,6 +110,8 @@ a29092 1
 d29209 1
 a29209 1
 116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,starhit.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,www.fontanka.ru,ya62.ru##+js(set-constant, navigator.sendBeacon, noopFunc)
+a29424 1
+||labadena.com^$popunder
 a29565 1
 ||vk.com/clip_ext.php?$third-party,subdocument,removeparam=autoplay
 d29637 1
