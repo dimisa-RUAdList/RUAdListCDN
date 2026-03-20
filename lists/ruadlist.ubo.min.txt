@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 20 Mar 2026 07:51:49 +0000
-! Diff-Path: ../patches/2026.3.20.471.patch#ruadlist
+! Last modified: Fri, 20 Mar 2026 13:20:41 +0000
+! Diff-Path: ../patches/2026.3.20.800.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -15141,7 +15141,6 @@ dni.ru##.adaurum
 allinfo.kz,leroymerlin-jeb.ru##.adb
 beon.ru##.adbg
 433175.ru,allforpeople.net,govp.info,karaosha.ru,myshows.me,naurfo.ru##.adblock
-amd.online##.adblock-offer
 jaomix.ru##.adblock-service
 agroxxi.ru##.adchoice
 agri-gator.com.ua##.adcontainer
@@ -15296,6 +15295,7 @@ vringe.com##.all_news_partners
 liveinternet.ru##.allpageinner td[height="100"]
 people-ask.ru##.altAdA
 mediapapa.org##.am
+amd.online##.amd-adfree-banner
 cmlt.ru##.an-pic-top-box
 hitagro.ru##.an-sidebar1
 pogodnik.com##.animate > .day-expectations
@@ -15511,6 +15511,7 @@ anatomia-strasti.com##.b-side-block:not(.b-side-block-slider)
 d3.ru##.b-sidebar-ad
 politnavigator.net##.b-sidebar-right
 altapress.ru##.b-sidebar-right > div[style*="height: 300px;"]
+izhlife.ru##.b-slot__col--banner
 irr.ru##.b-specOffers
 pdd.ua,pddua.com##.b-stella
 www.onliner.by##.b-tiles-banner
@@ -16754,6 +16755,7 @@ tsargrad.tv##.header__btn-small
 tvmag.ru##.header__dzen-link
 smotrim.ru##.header__wrapper--inner a[href^="/tariffs?redirect="]
 i.ua,tengriauto.kz,tengrinews.kz,tengrisport.kz##.header_adv
+izhlife.ru##.header_adv_wrapper
 greenpost.ua,job.ru##.header_banner
 999.md##.header_numbersTop
 pogliad.ua##.header_rec
@@ -26810,6 +26812,7 @@ onliner.by##img[src="https://content.onliner.by/news/1100x5616/eb7d2f564b229c0da
 au-ok.com##p[style="border:3px solid #C1FF0A;background-color:#d5d5d1;padding:10px;"]
 adblock.turtlecute.org##section ._bg-orange
 forums.overclockers.ru##tr > td[nowrap="nowrap"][style^="color: red;"][style$="font-weight: bold"]
+||amd.online/*/notice-daily-modal.js
 ||anivisual.net/back/scss.js
 ||csgohelp.ru/assets/app/js/checkIn.js
 ||cxid.media/wp-content/cache/perfmatters/cxid.media/minify/*.adblock_detector.min.js
