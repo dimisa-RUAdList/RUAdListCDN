@@ -1,13 +1,25 @@
-diff name:ruadlist lines:42 checksum:22a1d88d64
+diff name:ruadlist lines:59 checksum:5166f0e368
 d4 2
 a5 2
-! Last modified: Sat, 21 Mar 2026 13:49:51 +0000
-! Diff-Path: ../patches/2026.3.21.829.patch#ruadlist
+! Last modified: Sat, 21 Mar 2026 18:51:16 +0000
+! Diff-Path: ../patches/2026.3.21.1131.patch#ruadlist
 d10221 1
 a10367 1
 ||libertycity.*/js/socad_flscr/
 a10414 1
 ||vgtimes.*/engine/ajax/push_ask.
+d10598 1
+a10598 1
+.php?id=$third-party,xmlhttprequest,domain=aniqit.com|anivod.com|kodik.biz|kodik.cc|kodik.info|kodikdb.com|kodikplayer.com
+d10686 1
+a10686 1
+/^https?://[a-z0-9]+\.in\.net/+[-a-z0-9_?&=]{25,}/$third-party,xmlhttprequest,domain=aniqit.com|anivod.com|kinoxam.ru|kodik.biz|kodik.cc|kodik.info|kodikdb.com|kodikplayer.com|u-cdn.org|u-cdn.top|u-play.pro|u-stream.in|video.doramatv.su
+d10704 1
+a10704 1
+/assets/vendor/*.xml$xmlhttprequest,domain=allohalive.com|aniqit.com|anivod.com|doefiratv.net|kinoxam.ru|kodik.biz|kodik.cc|kodik.info|kodikdb.com|kodikplayer.com|u-cdn.org|u-cdn.top|u-play.pro|u-stream.in|video.doramatv.su
+d10851 1
+a10851 1
+?subid=$third-party,xmlhttprequest,domain=aniqit.com|kodik.cc|kodik.info|kodikdb.com|kodikplayer.com
 a15161 1
 libertycity.net,libertycity.ru,vgtimes.com,vgtimes.ru##.adfshift
 d15569 1
@@ -30,14 +42,19 @@ a20922 1
 d26138 1
 a26138 1
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=1plus1.ua|1plus1.video|24tv.ua|debilizator.tv|gamak.tv|showjet.net|showjet.ru|stream.9tv.co.il|telek.top|unian.info|unian.net|unian.ua|veedi.com|vgtimes.com|vgtimes.ru|viho.me|viho.pro|viho.tv
+d26165 1
 d26721 1
 a26721 1
 vgtimes.com,vgtimes.ru#?#.article_block:-abp-has(> p > i:-abp-contains(/adblock/i))
+d26755 1
 d27739 5
 d28323 5
 a28327 1
 vgtimes.com,vgtimes.ru##a[href^="https://keysforgamers.com/"]:style(pointer-events: none !important; color: inherit !important)
 d28831 1
+d29001 1
+a29001 1
+aniqit.com,anivod.com,ashdi.vip,kodik.cc,kodik.info,kodikdb.com,kodikplayer.com,tortuga.wtf##+js(json-prune, vast)
 d29013 1
 a29016 1
 libertycity.net,libertycity.ru,vgtimes.com,vgtimes.ru##+js(nano-setInterval-booster, timeleft)

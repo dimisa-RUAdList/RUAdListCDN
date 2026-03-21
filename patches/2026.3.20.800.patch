@@ -1,8 +1,8 @@
-diff name:ruadlist lines:56 checksum:22a1d88d64
+diff name:ruadlist lines:73 checksum:5166f0e368
 d4 2
 a5 2
-! Last modified: Sat, 21 Mar 2026 13:49:51 +0000
-! Diff-Path: ../patches/2026.3.21.829.patch#ruadlist
+! Last modified: Sat, 21 Mar 2026 18:51:16 +0000
+! Diff-Path: ../patches/2026.3.21.1131.patch#ruadlist
 d10221 1
 a10367 1
 ||libertycity.*/js/socad_flscr/
@@ -10,6 +10,18 @@ a10398 1
 ||smartpress.by/bitrix/js/slam.cookie/script.js
 a10413 1
 ||vgtimes.*/engine/ajax/push_ask.
+d10597 1
+a10597 1
+.php?id=$third-party,xmlhttprequest,domain=aniqit.com|anivod.com|kodik.biz|kodik.cc|kodik.info|kodikdb.com|kodikplayer.com
+d10685 1
+a10685 1
+/^https?://[a-z0-9]+\.in\.net/+[-a-z0-9_?&=]{25,}/$third-party,xmlhttprequest,domain=aniqit.com|anivod.com|kinoxam.ru|kodik.biz|kodik.cc|kodik.info|kodikdb.com|kodikplayer.com|u-cdn.org|u-cdn.top|u-play.pro|u-stream.in|video.doramatv.su
+d10703 1
+a10703 1
+/assets/vendor/*.xml$xmlhttprequest,domain=allohalive.com|aniqit.com|anivod.com|doefiratv.net|kinoxam.ru|kodik.biz|kodik.cc|kodik.info|kodikdb.com|kodikplayer.com|u-cdn.org|u-cdn.top|u-play.pro|u-stream.in|video.doramatv.su
+d10850 1
+a10850 1
+?subid=$third-party,xmlhttprequest,domain=aniqit.com|kodik.cc|kodik.info|kodikdb.com|kodikplayer.com
 a15160 1
 libertycity.net,libertycity.ru,vgtimes.com,vgtimes.ru##.adfshift
 d15568 1
@@ -44,14 +56,19 @@ mt.today##div[style="height: 900px"]
 d26134 1
 a26134 1
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=1plus1.ua|1plus1.video|24tv.ua|debilizator.tv|gamak.tv|showjet.net|showjet.ru|stream.9tv.co.il|telek.top|unian.info|unian.net|unian.ua|veedi.com|vgtimes.com|vgtimes.ru|viho.me|viho.pro|viho.tv
+d26161 1
 d26717 1
 a26717 1
 vgtimes.com,vgtimes.ru#?#.article_block:-abp-has(> p > i:-abp-contains(/adblock/i))
+d26751 1
 d27735 5
 d28319 5
 a28323 1
 vgtimes.com,vgtimes.ru##a[href^="https://keysforgamers.com/"]:style(pointer-events: none !important; color: inherit !important)
 d28827 1
+d28997 1
+a28997 1
+aniqit.com,anivod.com,ashdi.vip,kodik.cc,kodik.info,kodikdb.com,kodikplayer.com,tortuga.wtf##+js(json-prune, vast)
 d29009 1
 a29012 1
 libertycity.net,libertycity.ru,vgtimes.com,vgtimes.ru##+js(nano-setInterval-booster, timeleft)

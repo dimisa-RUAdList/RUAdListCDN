@@ -1,8 +1,8 @@
-diff name:ruadlist lines:263 checksum:22a1d88d64
+diff name:ruadlist lines:280 checksum:5166f0e368
 d4 2
 a5 2
-! Last modified: Sat, 21 Mar 2026 13:49:51 +0000
-! Diff-Path: ../patches/2026.3.21.829.patch#ruadlist
+! Last modified: Sat, 21 Mar 2026 18:51:16 +0000
+! Diff-Path: ../patches/2026.3.21.1131.patch#ruadlist
 d97 1
 a1791 1
 ||eciaup.com^$third-party
@@ -35,14 +35,26 @@ d10514 1
 d10518 1
 d10560 1
 d10570 5
+d10598 1
+a10598 1
+.php?id=$third-party,xmlhttprequest,domain=aniqit.com|anivod.com|kodik.biz|kodik.cc|kodik.info|kodikdb.com|kodikplayer.com
 d10604 1
 d10620 1
 d10639 1
+d10689 1
+a10689 1
+/^https?://[a-z0-9]+\.in\.net/+[-a-z0-9_?&=]{25,}/$third-party,xmlhttprequest,domain=aniqit.com|anivod.com|kinoxam.ru|kodik.biz|kodik.cc|kodik.info|kodikdb.com|kodikplayer.com|u-cdn.org|u-cdn.top|u-play.pro|u-stream.in|video.doramatv.su
 d10695 1
 d10703 1
+d10709 1
+a10709 1
+/assets/vendor/*.xml$xmlhttprequest,domain=allohalive.com|aniqit.com|anivod.com|doefiratv.net|kinoxam.ru|kodik.biz|kodik.cc|kodik.info|kodikdb.com|kodikplayer.com|u-cdn.org|u-cdn.top|u-play.pro|u-stream.in|video.doramatv.su
 d10762 1
 a10762 1
 /init.js$third-party,script,domain=3rebenka.ru|info-zhilish.ru|libok.net|planetatain.ru|sovets.net|xn----ctbhcnewrrow6gsa.xn--p1ai
+d10856 1
+a10856 1
+?subid=$third-party,xmlhttprequest,domain=aniqit.com|kodik.cc|kodik.info|kodikdb.com|kodikplayer.com
 d10859 1
 d11155 1
 d11477 2
@@ -223,6 +235,7 @@ d25656 1
 d26179 1
 a26179 1
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=1plus1.ua|1plus1.video|24tv.ua|debilizator.tv|gamak.tv|showjet.net|showjet.ru|stream.9tv.co.il|telek.top|unian.info|unian.net|unian.ua|veedi.com|vgtimes.com|vgtimes.ru|viho.me|viho.pro|viho.tv
+d26206 1
 d26677 1
 d26712 1
 a26712 1
@@ -230,6 +243,7 @@ kakoysegodnyaprazdnik.ru,mmo13.ru,no-steamserv.ru#@#.adv
 d26763 1
 a26763 1
 vgtimes.com,vgtimes.ru#?#.article_block:-abp-has(> p > i:-abp-contains(/adblock/i))
+d26797 1
 a26860 1
 ||amd.online/*/notice-daily-modal.js
 d27780 5
@@ -239,6 +253,9 @@ a28370 1
 vgtimes.com,vgtimes.ru##a[href^="https://keysforgamers.com/"]:style(pointer-events: none !important; color: inherit !important)
 d28874 1
 d29000 1
+d29045 1
+a29045 1
+aniqit.com,anivod.com,ashdi.vip,kodik.cc,kodik.info,kodikdb.com,kodikplayer.com,tortuga.wtf##+js(json-prune, vast)
 d29057 1
 a29060 1
 libertycity.net,libertycity.ru,vgtimes.com,vgtimes.ru##+js(nano-setInterval-booster, timeleft)
