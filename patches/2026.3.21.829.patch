@@ -1,8 +1,10 @@
-diff name:ruadlist lines:24 checksum:326a58de9e
+diff name:ruadlist lines:36 checksum:02337672a1
 d4 2
 a5 2
-! Last modified: Mon, 23 Mar 2026 05:44:04 +0000
-! Diff-Path: ../patches/2026.3.23.344.patch#ruadlist
+! Last modified: Mon, 23 Mar 2026 10:11:31 +0000
+! Diff-Path: ../patches/2026.3.23.611.patch#ruadlist
+a8610 1
+~dzen.ru,~sportsdzen.ru##[href^="https://dzen.ru"]
 d10599 1
 a10599 1
 .php?id=$third-party,xmlhttprequest,domain=aniqit.com|anivod.com|kodik.biz|kodik.cc|kodik.info|kodikdb.com|kodikplayer.com
@@ -15,11 +17,21 @@ a10705 1
 d10852 1
 a10852 1
 ?subid=$third-party,xmlhttprequest,domain=aniqit.com|kodik.cc|kodik.info|kodikdb.com|kodikplayer.com
+d19572 1
+d22403 1
+a22712 1
+dzen.ru##div[class*="Item-desktop__ad-"]
 d26164 1
 d26754 1
+a28465 1
+dzen.ru##body:style(scroll-snap-type: none !important)
+a28476 1
+dzen.ru##html:style(scroll-snap-type: none !important)
 d28990 1
 a28990 1
 aniqit.com,anivod.com,ashdi.vip,kodik.cc,kodik.info,kodikdb.com,kodikplayer.com,tortuga.wtf##+js(json-prune, vast)
 d29077 1
 a29077 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, div, /Ad.block|Adb-|Adblock|Guard|киратор/)
+a29267 1
+dzen.ru##:matches-path(/news) div:matches-attr(/./=/misc-card/)

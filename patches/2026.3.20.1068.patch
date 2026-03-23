@@ -1,8 +1,10 @@
-diff name:ruadlist lines:69 checksum:326a58de9e
+diff name:ruadlist lines:81 checksum:02337672a1
 d4 2
 a5 2
-! Last modified: Mon, 23 Mar 2026 05:44:04 +0000
-! Diff-Path: ../patches/2026.3.23.344.patch#ruadlist
+! Last modified: Mon, 23 Mar 2026 10:11:31 +0000
+! Diff-Path: ../patches/2026.3.23.611.patch#ruadlist
+a8610 1
+~dzen.ru,~sportsdzen.ru##[href^="https://dzen.ru"]
 d10221 1
 a10367 1
 ||libertycity.*/js/socad_flscr/
@@ -36,6 +38,7 @@ rapsinews.ru,smartpress.by##.main-banner
 d18552 1
 a18552 1
 vgtimes.com,vgtimes.ru##.thisad
+d19573 1
 d19727 1
 a19727 1
 aacalc.ru,agronews.ua,ain.ua,ampercar.com,argumenti.ru,arminfo.info,autogeek.com.ua,bib.bz,blizzardheroes.ru,csgo-guides.ru,daxshat.site,for-ua.info,gameinside.ua,games-vam.ru,goal24.live,ilenta.com,img2txt.com,kontrolnaya-rabota.ru,korsars.pro,kritka.su,kurkul.com,liveball7.gq,liveball8.ml,mezha.ua,modsfire.com,mt.today,newstudio.tv,onliner.by,onlinevideoconverter.com,photoshop-besplatno.org,prosportua.com,psm7.com,real-game.net,rutracker-2017.org,soft-windows.info,stopgame.ru,tochka.net,torrent-shyter.net,ua.news,vc.ru,vgtimes.com,vgtimes.ru,windows-soft.info,xn--80ac9aeh6f.xn--p1ai,z-music.org,zbirna.com,zoneofgames.ru##a[href*="bit.ly"]
@@ -46,6 +49,9 @@ libertycity.net,libertycity.ru##div[class^="backgr"]
 d20920 1
 a20920 1
 101.ru,1plus1.ua,46tv.ru,999.md,alau.kz,aldebaran.ru,asiarussia.ru,bezparazita.ru,botinok.porn,bountymax.ru,buzulukday.ru,calend.ru,chytomo.com,citydog.by,clubvolvo.ru,crazymailing.com,dnepr.info,dom2stars.ru,dota2.ru,gmod-fan.ru,gorod.dp.ua,gorod48.ru,gtavicecity.ru,hochu.ua,igry-online.net,infobank.by,internetua.com,kamchatinfo.com,kerchinfo.com,khersonline.net,kino-kingdom.com,klops.ru,kluch.media,kvnews.ru,kyiv-independent.com,libertycity.net,libertycity.ru,lipetskmedia.ru,manga24.ru,mashintop.ru,mediaryazan.ru,menquestions.ru,mgorod.kz,mobile-review.com,modernrock.ru,moya-semya.ru,musicforums.ru,nlo-mir.ru,nn.ru,novostroev.ru,nsday.ru,ntr-24.ru,nv.ua,nversia.ru,onlineradiobox.com,orenday.ru,perevolockday.ru,pln-pskov.ru,ponedelnik.info,postovoy.net,ppt.ru,psm7.com,rtraveler.ru,saltday.ru,sevkavportal.ru,sorochinskday.ru,sovets.net,sovets24.ru,spark.ru,studfile.net,studfiles.net,subscribe.ru,telegraf.in.ua,the-village-kz.com,the-village.me,the-village.ru,tltonline.ru,torrents.in.ua,trisosny.ru,trymobile.ru,turkmenportal.com,tvzvezda.ru,ukrinform.ru,vdvsn.ru,vgtimes.com,vgtimes.ru,village.com.ua,vklybe.tv,vorle.ru,vse.sale,wheel-news.com,wincore.ru,womanhit.ru,worldofmods.ru,xn----7sbabrtfclecozdeg8b6a.xn--p1ai,yarik-sat.com,yarnews.net,zerno-ua.com,zhitomir.info,zn.ua,zoon.ru##div[class^="banner"]
+d22402 1
+a22711 1
+dzen.ru##div[class*="Item-desktop__ad-"]
 d26136 1
 a26136 1
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=1plus1.ua|1plus1.video|24tv.ua|debilizator.tv|gamak.tv|showjet.net|showjet.ru|stream.9tv.co.il|telek.top|unian.info|unian.net|unian.ua|veedi.com|vgtimes.com|vgtimes.ru|viho.me|viho.pro|viho.tv
@@ -58,6 +64,10 @@ d27737 5
 d28321 5
 a28325 1
 vgtimes.com,vgtimes.ru##a[href^="https://keysforgamers.com/"]:style(pointer-events: none !important; color: inherit !important)
+a28473 1
+dzen.ru##body:style(scroll-snap-type: none !important)
+a28484 1
+dzen.ru##html:style(scroll-snap-type: none !important)
 d28829 1
 d28999 1
 a28999 1
@@ -68,3 +78,5 @@ libertycity.net,libertycity.ru,vgtimes.com,vgtimes.ru##+js(nano-setInterval-boos
 d29086 1
 a29086 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, div, /Ad.block|Adb-|Adblock|Guard|киратор/)
+a29276 1
+dzen.ru##:matches-path(/news) div:matches-attr(/./=/misc-card/)
