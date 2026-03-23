@@ -1,8 +1,8 @@
-diff name:ruadlist lines:20 checksum:8c594232cc
+diff name:ruadlist lines:26 checksum:6b999768b6
 d4 2
 a5 2
-! Last modified: Mon, 23 Mar 2026 15:09:46 +0000
-! Diff-Path: ../patches/2026.3.23.909.patch#ruadlist
+! Last modified: Mon, 23 Mar 2026 20:49:54 +0000
+! Diff-Path: ../patches/2026.3.23.1249.patch#ruadlist
 a8610 1
 ~dzen.ru,~sportsdzen.ru##[href^="https://dzen.ru"]
 d19572 1
@@ -13,9 +13,15 @@ a28463 1
 dzen.ru##body:style(scroll-snap-type: none !important)
 a28474 1
 dzen.ru##html:style(scroll-snap-type: none !important)
+d28984 1
+a28984 1
+pikabu.ru##+js(json-prune, isVideoAutoplayMode)
 d29003 1
 d29075 1
 a29075 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, div, /Ad.block|Adb-|Adblock|Guard|киратор/)
 a29265 1
 dzen.ru##:matches-path(/news) div:matches-attr(/./=/misc-card/)
+d31484 1
+a31484 1
+/^https?:\/\/pikabu\.ru\/ajax\/([A-Za-z0-9]{7,})+\?[A-Za-z0-9]+=[0-9a-z-]+[0-9a-z]$/$xmlhttprequest,domain=pikabu.ru

@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 23 Mar 2026 15:09:46 +0000
-! Diff-Path: ../patches/2026.3.23.909.patch#ruadlist
+! Last modified: Mon, 23 Mar 2026 20:49:54 +0000
+! Diff-Path: ../patches/2026.3.23.1249.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -28983,7 +28983,7 @@ uma.media##+js(json-prune, appearance.extended_auto_start)
 ivanovonews.ru##+js(json-prune, banner.ytcode)
 kufar.by,pikabu.ru##+js(json-prune, data, errors)
 1plus1.video##+js(json-prune, dl bpas)
-pikabu.ru##+js(json-prune, isVideoAutoplayMode swUrl)
+pikabu.ru##+js(json-prune, isVideoAutoplayMode)
 igromania.ru,kanobu.ru##+js(json-prune, results.fixed)
 ya.ru##+js(json-prune, rythm_market)
 znanija.com##+js(json-prune, tiers.TIER_ANY)
@@ -31483,7 +31483,7 @@ kinoafisha.ua##.turn-off-add-block-text
 stalkerportaal.ru##.video_adsense
 bookskeeper.ru,e-xecutive.ru##.warning
 forum.bestflowers.ru##.xenOverlay
-/^https?:\/\/pikabu\.ru\/ajax\/[A-Za-z0-9]+\?[A-Za-z0-9]+=[0-9a-z-]+[0-9a-z]$/$xmlhttprequest,domain=pikabu.ru
+/^https?:\/\/pikabu\.ru\/ajax\/([A-Za-z0-9]{7,})+\?[A-Za-z0-9]+=[0-9a-z-]+[0-9a-z]$/$xmlhttprequest,domain=pikabu.ru
 /cookie_check.min.js$domain=acetv.me
 /gogl_detector$script,domain=meddaily.ru|newsru.com
 @@||anidub.com/ads.js|$script,domain=anidub.com
