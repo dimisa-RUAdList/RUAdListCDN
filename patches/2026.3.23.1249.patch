@@ -1,8 +1,19 @@
-diff name:ruadlist lines:7 checksum:974b6312d6
+diff name:ruadlist lines:18 checksum:28c9eef034
 d4 2
 a5 2
-! Last modified: Tue, 24 Mar 2026 06:08:39 +0000
-! Diff-Path: ../patches/2026.3.24.368.patch#ruadlist
+! Last modified: Tue, 24 Mar 2026 11:03:01 +0000
+! Diff-Path: ../patches/2026.3.24.663.patch#ruadlist
+a6246 1
+||tpembars.com^$third-party
+a10221 1
+vgtimes.com,vgtimes.ru##.push_status_info
 d22329 1
 a22329 1
 ||pikabu.ru/ajax/*?qC1rx=$xmlhttprequest
+a28419 1
+dzen.ru##[data-testid*="-ad-block"]
+a29491 4
+!#if !env_mobile
+libertycity.net,libertycity.ru,vgtimes.com,vgtimes.ru###mobileon
+libertycity.net,libertycity.ru,vgtimes.com,vgtimes.ru##+js(set-cookie, is_mobile, no, , reload, 1)
+!#endif

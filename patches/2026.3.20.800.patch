@@ -1,11 +1,15 @@
-diff name:ruadlist lines:95 checksum:974b6312d6
+diff name:ruadlist lines:106 checksum:28c9eef034
 d4 2
 a5 2
-! Last modified: Tue, 24 Mar 2026 06:08:39 +0000
-! Diff-Path: ../patches/2026.3.24.368.patch#ruadlist
+! Last modified: Tue, 24 Mar 2026 11:03:01 +0000
+! Diff-Path: ../patches/2026.3.24.663.patch#ruadlist
+a6246 1
+||tpembars.com^$third-party
 a8610 1
 ~dzen.ru,~sportsdzen.ru##[href^="https://dzen.ru"]
 d10221 1
+a10221 1
+vgtimes.com,vgtimes.ru##.push_status_info
 a10367 1
 ||libertycity.*/js/socad_flscr/
 a10398 1
@@ -74,6 +78,8 @@ d27735 5
 d28319 5
 a28323 1
 vgtimes.com,vgtimes.ru##a[href^="https://keysforgamers.com/"]:style(pointer-events: none !important; color: inherit !important)
+a28427 1
+dzen.ru##[data-testid*="-ad-block"]
 a28471 1
 dzen.ru##body:style(scroll-snap-type: none !important)
 a28482 1
@@ -91,6 +97,11 @@ a29084 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, div, /Ad.block|Adb-|Adblock|Guard|киратор/)
 a29274 1
 dzen.ru##:matches-path(/news) div:matches-attr(/./=/misc-card/)
+a29498 4
+!#if !env_mobile
+libertycity.net,libertycity.ru,vgtimes.com,vgtimes.ru###mobileon
+libertycity.net,libertycity.ru,vgtimes.com,vgtimes.ru##+js(set-cookie, is_mobile, no, , reload, 1)
+!#endif
 d31493 1
 a31493 1
 /^https?:\/\/pikabu\.ru\/ajax\/([A-Za-z0-9]{7,})+\?[A-Za-z0-9]+=[0-9a-z-]+[0-9a-z]$/$xmlhttprequest,domain=pikabu.ru

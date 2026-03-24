@@ -1,14 +1,25 @@
-diff name:ruadlist lines:13 checksum:974b6312d6
+diff name:ruadlist lines:24 checksum:28c9eef034
 d4 2
 a5 2
-! Last modified: Tue, 24 Mar 2026 06:08:39 +0000
-! Diff-Path: ../patches/2026.3.24.368.patch#ruadlist
+! Last modified: Tue, 24 Mar 2026 11:03:01 +0000
+! Diff-Path: ../patches/2026.3.24.663.patch#ruadlist
+a6246 1
+||tpembars.com^$third-party
+a10221 1
+vgtimes.com,vgtimes.ru##.push_status_info
 d22329 1
 a22329 1
 ||pikabu.ru/ajax/*?qC1rx=$xmlhttprequest
+a28419 1
+dzen.ru##[data-testid*="-ad-block"]
 d28986 1
 a28986 1
 pikabu.ru##+js(json-prune, isVideoAutoplayMode)
+a29491 4
+!#if !env_mobile
+libertycity.net,libertycity.ru,vgtimes.com,vgtimes.ru###mobileon
+libertycity.net,libertycity.ru,vgtimes.com,vgtimes.ru##+js(set-cookie, is_mobile, no, , reload, 1)
+!#endif
 d31486 1
 a31486 1
 /^https?:\/\/pikabu\.ru\/ajax\/([A-Za-z0-9]{7,})+\?[A-Za-z0-9]+=[0-9a-z-]+[0-9a-z]$/$xmlhttprequest,domain=pikabu.ru
