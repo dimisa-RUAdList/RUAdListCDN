@@ -1,8 +1,8 @@
-diff name:ruadlist lines:92 checksum:9640a75079
+diff name:ruadlist lines:105 checksum:5a60907440
 d4 2
 a5 2
-! Last modified: Tue, 24 Mar 2026 11:52:21 +0000
-! Diff-Path: ../patches/2026.3.24.712.patch#ruadlist
+! Last modified: Tue, 24 Mar 2026 17:11:41 +0000
+! Diff-Path: ../patches/2026.3.24.1031.patch#ruadlist
 a6246 1
 ||tpembars.com^$third-party
 a8610 1
@@ -46,6 +46,9 @@ libertycity.net,libertycity.ru##div[class^="backgr"]
 d20922 1
 a20922 1
 101.ru,1plus1.ua,46tv.ru,999.md,alau.kz,aldebaran.ru,asiarussia.ru,bezparazita.ru,botinok.porn,bountymax.ru,buzulukday.ru,calend.ru,chytomo.com,citydog.by,clubvolvo.ru,crazymailing.com,dnepr.info,dom2stars.ru,dota2.ru,gmod-fan.ru,gorod.dp.ua,gorod48.ru,gtavicecity.ru,hochu.ua,igry-online.net,infobank.by,internetua.com,kamchatinfo.com,kerchinfo.com,khersonline.net,kino-kingdom.com,klops.ru,kluch.media,kvnews.ru,kyiv-independent.com,libertycity.net,libertycity.ru,lipetskmedia.ru,manga24.ru,mashintop.ru,mediaryazan.ru,menquestions.ru,mgorod.kz,mobile-review.com,modernrock.ru,moya-semya.ru,musicforums.ru,nlo-mir.ru,nn.ru,novostroev.ru,nsday.ru,ntr-24.ru,nv.ua,nversia.ru,onlineradiobox.com,orenday.ru,perevolockday.ru,pln-pskov.ru,ponedelnik.info,postovoy.net,ppt.ru,psm7.com,rtraveler.ru,saltday.ru,sevkavportal.ru,sorochinskday.ru,sovets.net,sovets24.ru,spark.ru,studfile.net,studfiles.net,subscribe.ru,telegraf.in.ua,the-village-kz.com,the-village.me,the-village.ru,tltonline.ru,torrents.in.ua,trisosny.ru,trymobile.ru,turkmenportal.com,tvzvezda.ru,ukrinform.ru,vdvsn.ru,vgtimes.com,vgtimes.ru,village.com.ua,vklybe.tv,vorle.ru,vse.sale,wheel-news.com,wincore.ru,womanhit.ru,worldofmods.ru,xn----7sbabrtfclecozdeg8b6a.xn--p1ai,yarik-sat.com,yarnews.net,zerno-ua.com,zhitomir.info,zn.ua,zoon.ru##div[class^="banner"]
+d22305 1
+a22305 1
+://pikabu.ru/$csp=connect-src https://pikabu.ru/ajax/ https://pikabu.ru/ajax.php https://pikabu.ru/ajax?route= *.pikabu.ru/ data: https://pikabu.ru/.well-known/ wss://pikabu.ru/.well-known/
 d22330 1
 a22330 1
 ||pikabu.ru/ajax/*?qC1rx=$xmlhttprequest
@@ -71,6 +74,9 @@ dzen.ru##body:style(scroll-snap-type: none !important)
 a28486 1
 dzen.ru##html:style(scroll-snap-type: none !important)
 d28831 1
+d28898 1
+a28898 1
+80-e.ru,doramatv.live,examenpdd.com,rg.ru,shadowcore.ru##+js(abort-on-property-read, yaContextCb)
 d28997 1
 a28997 1
 pikabu.ru##+js(json-prune, isVideoAutoplayMode)
@@ -83,7 +89,14 @@ a29088 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, div, /Ad.block|Adb-|Adblock|Guard|киратор/)
 a29278 1
 dzen.ru##:matches-path(/news) div:matches-attr(/./=/misc-card/)
-a29502 4
+a29502 11
+! forum.ixbt.com
+@@||yandex.ru/ads/adfox/$xmlhttprequest,domain=forum.ixbt.com
+@@||yandex.ru/ads/system/header-bidding.js|$script,domain=forum.ixbt.com
+@@||yastatic.net/partner-code-bundles/*/*.js|$script,domain=forum.ixbt.com
+forum.ixbt.com##+js(abort-on-stack-trace, Object.prototype.getBid, /header-bidding.js)
+forum.ixbt.com##.deskadv div div:remove()
+forum.ixbt.com#@#.deskadv
 !#if !env_mobile
 libertycity.net,libertycity.ru,vgtimes.com,vgtimes.ru###mobileon
 libertycity.net,libertycity.ru,vgtimes.com,vgtimes.ru##+js(set-cookie, is_mobile, no, , reload, 1)
