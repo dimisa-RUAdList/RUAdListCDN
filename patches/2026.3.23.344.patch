@@ -1,8 +1,8 @@
-diff name:ruadlist lines:50 checksum:5a60907440
+diff name:ruadlist lines:53 checksum:1bfa7647ee
 d4 2
 a5 2
-! Last modified: Tue, 24 Mar 2026 17:11:41 +0000
-! Diff-Path: ../patches/2026.3.24.1031.patch#ruadlist
+! Last modified: Tue, 24 Mar 2026 21:48:45 +0000
+! Diff-Path: ../patches/2026.3.24.1308.patch#ruadlist
 a6246 1
 ||tpembars.com^$third-party
 a8610 1
@@ -19,12 +19,15 @@ a22329 1
 d22403 1
 a22712 1
 dzen.ru##div[class*="Item-desktop__ad-"]
+d26816 1
+a26816 1
+||amd.online/*/notice-daily
 a28419 1
 dzen.ru##[data-testid*="-ad-block"]
-a28463 1
-dzen.ru##body:style(scroll-snap-type: none !important)
-a28474 1
-dzen.ru##html:style(scroll-snap-type: none !important)
+a28474 3
+! исправление ошибок и косяков оригинальной вёрстки
+dzen.ru,sportsdzen.ru##body:style(scroll-snap-type: none !important)
+dzen.ru,sportsdzen.ru##html:style(scroll-snap-type: none !important)
 d28885 1
 a28885 1
 80-e.ru,doramatv.live,examenpdd.com,rg.ru,shadowcore.ru##+js(abort-on-property-read, yaContextCb)

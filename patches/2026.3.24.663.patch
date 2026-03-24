@@ -1,11 +1,20 @@
-diff name:ruadlist lines:18 checksum:5a60907440
+diff name:ruadlist lines:27 checksum:1bfa7647ee
 d4 2
 a5 2
-! Last modified: Tue, 24 Mar 2026 17:11:41 +0000
-! Diff-Path: ../patches/2026.3.24.1031.patch#ruadlist
+! Last modified: Tue, 24 Mar 2026 21:48:45 +0000
+! Diff-Path: ../patches/2026.3.24.1308.patch#ruadlist
 d22306 1
 a22306 1
 ://pikabu.ru/$csp=connect-src https://pikabu.ru/ajax/ https://pikabu.ru/ajax.php https://pikabu.ru/ajax?route= *.pikabu.ru/ data: https://pikabu.ru/.well-known/ wss://pikabu.ru/.well-known/
+d26818 1
+a26818 1
+||amd.online/*/notice-daily
+d28467 1
+d28479 1
+a28479 3
+! исправление ошибок и косяков оригинальной вёрстки
+dzen.ru,sportsdzen.ru##body:style(scroll-snap-type: none !important)
+dzen.ru,sportsdzen.ru##html:style(scroll-snap-type: none !important)
 d28890 1
 a28890 1
 80-e.ru,doramatv.live,examenpdd.com,rg.ru,shadowcore.ru##+js(abort-on-property-read, yaContextCb)

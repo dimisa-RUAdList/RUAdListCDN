@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 24 Mar 2026 17:11:41 +0000
-! Diff-Path: ../patches/2026.3.24.1031.patch#ruadlist
+! Last modified: Tue, 24 Mar 2026 21:48:45 +0000
+! Diff-Path: ../patches/2026.3.24.1308.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -26815,7 +26815,7 @@ onliner.by##img[src="https://content.onliner.by/news/1100x5616/eb7d2f564b229c0da
 au-ok.com##p[style="border:3px solid #C1FF0A;background-color:#d5d5d1;padding:10px;"]
 adblock.turtlecute.org##section ._bg-orange
 forums.overclockers.ru##tr > td[nowrap="nowrap"][style^="color: red;"][style$="font-weight: bold"]
-||amd.online/*/notice-daily-modal.js
+||amd.online/*/notice-daily
 ||anivisual.net/back/scss.js
 ||csgohelp.ru/assets/app/js/checkIn.js
 ||cxid.media/wp-content/cache/perfmatters/cxid.media/minify/*.adblock_detector.min.js
@@ -28464,7 +28464,6 @@ dzen.ru##.news-rubric-desktop__news > section > div > div[id]
 dzen.ru##.news-secondary-layout-column__secondary div[id]
 dzen.ru##.news-story-page div[id] > div:not([id]) > div[id]
 dzen.ru##[class^="news-site--Infinite"][class*="AdColumnItem-desktop__content"] > div[id*="-column_top"]
-dzen.ru##body:style(scroll-snap-type: none !important)
 dzen.ru##div:not(.news-rubric-desktop__adv-column) > div[class^="mg-sticky"]
 dzen.ru##div[class*="_content_with-new-"] > div[id] ~ div[id]
 dzen.ru##div[class*="_content_with-new-"] > div[id]:first-child + div[class*=" news-"]
@@ -28476,7 +28475,9 @@ dzen.ru##div[class^="news-site--"] > section ~ [id]
 dzen.ru##div[id] > div[class*="-desktop-"] > div[class*="__image-"]:empty
 dzen.ru##div[id] > div[class*="-desktop-"] > div[class*="__image-"]:empty + div[class*="__content-"]
 dzen.ru##div[id^="ad-"][class*=" news-"]
-dzen.ru##html:style(scroll-snap-type: none !important)
+! исправление ошибок и косяков оригинальной вёрстки
+dzen.ru,sportsdzen.ru##body:style(scroll-snap-type: none !important)
+dzen.ru,sportsdzen.ru##html:style(scroll-snap-type: none !important)
 ! погода
 dzen.ru##.adv-ecom
 dzen.ru##.b-page_type_maps div[class$="__content"] > [class$="__ad"] > div:style(width: unset !important)
