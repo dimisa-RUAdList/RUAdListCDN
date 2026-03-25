@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 25 Mar 2026 13:44:25 +0000
-! Diff-Path: ../patches/2026.3.25.824.patch#ruadlist
+! Last modified: Wed, 25 Mar 2026 17:14:43 +0000
+! Diff-Path: ../patches/2026.3.25.1034.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -11959,8 +11959,8 @@ igdz1.ru^$script,domain=igdz.ru
 ||ivi.ru/branding/
 ||ivi.ru/player/*autostart$subdocument,domain=moevideo.net|playreplay.net|playvideolink.com|videochart.net
 ||iviche.com/images/commertials/
+||ixbt.*/cgi-bin/banqs.cgi
 ||ixbt.com/branding/
-||ixbt.com/cgi-bin/banqs.cgi
 ||ixbt.online/banners/
 ||ixbt.online^*/brandings/
 ||iz.ru^*/banners/
@@ -16092,6 +16092,7 @@ softboard.ru##.clearfix > center:first-child
 babyblog.ru##.clearfix.blog-incut-uad
 metrologe.ru##.clearfix.content > div > .col-sm-12
 forum.saransk.ru##.clearfix.ipsSideBlock > div[class^="zone_"]:not(:last-child)
+ixbt.games,ixbt.pro##.clickable_zone
 zamunda.ch,zamunda.net##.clickads
 glazey.info##.client
 literaguru.ru##.clinic-image
@@ -16776,6 +16777,7 @@ konkurent.ru##.hidden-print
 itc.ua##.hidden-sm[style^="min-height:"]
 rgho.st##.hidden-xs.alert-warning
 russian.rt.com##.hide--partner--block
+vedomosti.ru##.hide-offer
 vokrug.tv##.hide_640
 finanz.ru##.highlightbox.content_box
 www.film.ru##.hochuvkino
@@ -17525,6 +17527,7 @@ superkarate.ru##.page-content > .row
 selezen.club,selezen.net,selezen.org#?#.page-content > .row > div[class^="col"] + div[class^="col"] > div:-abp-has(> .card h6:-abp-contains(/Реклама|Друзья/i))
 3m2.ua##.page-content section a[href^=http][target="_blank"]:not([href^="https://3m2.ua/"]) > img
 dumka.poltava.ua##.page-element > .page-element__ads ~ .page-element__ads
+vedomosti.ru##.page-gallery__loader
 mmotop.ru##.page-header > .bg-one-server
 mmotop.ru##.page-header > .left
 mmotop.ru##.page-header > .right
@@ -17996,7 +17999,7 @@ floristics.info##.rmgm
 nn.ru##.rn-global-sidebar
 nn.ru##.rn-top-banner
 root-nation.com##.rn-widget
-kommersant.ru##.rocket_man
+autopilot.ru,kommersant.ru,myweekend.ru##.rocket_man
 in-english.club##.roll_autoplay_ads
 novgorod.ru##.root > .bigb
 matematikalegko.ru##.rotac_reklama
@@ -22351,6 +22354,8 @@ flightsim.su###tie-popup-adblock {remove:true;}
 freesoft.ru###downloadAdModal {remove:true;}
 freesoft.ru###error.modal {remove:true;}
 growhow.in.ua###custom-background-css {remove:true;}
+ixbt.*##.clickable_zone {remove:true;}
+ixbt.*##style[id^="branding-"] {remove:true;}
 lenta.*##.topic-body__content> .box-external-video:last-child {remove:true;}
 lenta.*##.topic-footer > div[class^="box-"][class$="-video"] {remove:true;}
 lenta.*##.vk-video-popup {remove:true;}
@@ -22360,8 +22365,6 @@ tapochek.*##body:has(#register_link) > canvas {remove:true;}
 the-geek.ru###wp-custom-css {remove:true;}
 uwupad.*##style:has-text(lb-banner-height) {remove:true;}
 vk.*##head > style:has-text(/adchoice|mkit_|outlineBanner/i) {remove:true;}
-www.ixbt.*###branding-ssr-style {remove:true;}
-www.ixbt.*##.clickable_zone {remove:true;}
 www.ixbt.*##body > style:has-text(margin-top) {remove:true;}
 ! селекторы
 freesoft.ru###downloadAdModal
@@ -27580,7 +27583,7 @@ www.ivi.ru##body.watch > header.ivi-top:style(top: 0 !important)
 ! ---
 ixbt.com##body:not(#id) > .b-content.b-content__breadcrumbs:style(margin-top: unset !important)
 ixbt.com##body:not(#id) > .b-content__pagecontent:style(margin-top: unset !important)
-ixbt.com##body:style(background-color: inherit !important)
+ixbt.com##body:not([class*="dark:"]):style(background-color: inherit !important)
 ! ---
 forum.ixbt.com##.body_content_table > .left.column:style(margin-right: 0 !important; width: 100% !important)
 forum.ixbt.com##.body_wrapper:style(max-width: 100% !important)
@@ -27596,6 +27599,7 @@ www.ixbt.com##.branding .main__container:style(margin-top: unset !important)
 ! исправление ошибок и косяков оригинальной вёрстки
 ixbt.market,www.ixbt.com###page-wrapper .container:style(max-width: 100% !important)
 ixbt.com##.b-content__pagecontent > .b-content--wrapper > .g-grid:style(margin-top: unset !important)
+ixbt.pro##.text-color-navbar-text:style(color: inherit !important)
 ! ---
 jut-su.net##body:not(#id):style(padding-top: 0 !important; padding-bottom: 0 !important)
 ! ---
@@ -29313,6 +29317,7 @@ rutube.ru##body.wdp-scroll:style(overflow-y: auto !important)
 tapochek.net##body:has(#register_link) > canvas
 tapochek.net##body:has(#register_link) > canvas:remove()
 volyn.com.ua##body:remove-attr(/oncopy|onselectstart|oncontextmenu/)
+ixbt.pro##body:remove-class(branding)
 my-expert.ru##body:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important)
 sawlive.tv##body[onclick^="closeMyAd"] > div[id][style*="position"][style*="background-color"]
 cosplay-porn.*,fap-guru.*,mult-porno.*,sex-studentki.*##+js(remove-node-text, script, /initTeasers|initVads/)
@@ -29355,6 +29360,7 @@ kanobu.ru#?#section[class^="MaterialsManufacturerPage_infiniteWrap"] > div[class
 igromania.ru#?#section[class^="MaterialsManufacturerPage_infiniteWrap"] > div[class^="InfiniteScrollWrap_content"] > [class*="MaterialItemPage_materialSection"]:-abp-has(> .knb-grid-container > [data-io-article-url] [class^="TextContent_text"] > p:-abp-contains(/^Реклама:/)) [class^="material-content_"] a[href][target="_blank"]:not([href^="https://www.igromania.ru/"]):style(color: inherit !important; pointer-events: none !important)
 smaxim.*##+js(set-constant, flashvars.protect_block, '')
 studizba.com,surl.*##+js(nano-setInterval-booster, #timer)
+ixbt.pro##style[id^="branding-"]:remove()
 translate.yandex.ru,translate.yandex.*##+js(set-constant, Object.prototype.dispatchSignalCallbacks, undefined)
 3dnews.ru##video[autoplay="autoplay"]:remove-attr(autoplay)
 kino-teatr.ru,kinoafisha.info,kinonews.ru##videotronic-player:remove-attr(data-video-autoplay)

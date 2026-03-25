@@ -1,17 +1,29 @@
-diff name:ruadlist lines:55 checksum:a4b5726494
+diff name:ruadlist lines:80 checksum:d9e598f324
 d4 2
 a5 2
-! Last modified: Wed, 25 Mar 2026 13:44:25 +0000
-! Diff-Path: ../patches/2026.3.25.824.patch#ruadlist
+! Last modified: Wed, 25 Mar 2026 17:14:43 +0000
+! Diff-Path: ../patches/2026.3.25.1034.patch#ruadlist
 a6246 1
 ||tpembars.com^$third-party
 d9172 4
 a10221 1
 vgtimes.com,vgtimes.ru##.push_status_info
+a11963 1
+||ixbt.*/cgi-bin/banqs.cgi
+d11965 1
+a16096 1
+ixbt.games,ixbt.pro##.clickable_zone
 a16167 1
 vedomosti.ru##.commercial-logo
+a16779 1
+vedomosti.ru##.hide-offer
+a17528 1
+vedomosti.ru##.page-gallery__loader
 a17663 1
 garant.ru##.popup-social
+d17999 1
+a17999 1
+autopilot.ru,kommersant.ru,myweekend.ru##.rocket_man
 a18417 2
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__main [href*="?erid="])
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__main [title*="?erid="])
@@ -22,6 +34,10 @@ a22304 1
 d22329 1
 a22329 1
 ||pikabu.ru/ajax/*?qC1rx=$xmlhttprequest
+a22352 2
+ixbt.*##.clickable_zone {remove:true;}
+ixbt.*##style[id^="branding-"] {remove:true;}
+d22362 2
 d22406 1
 a22406 1
 pikabu.ru##article.story[data-recom-coef=""]
@@ -31,6 +47,11 @@ rbc.ru##.central-publisher-item[data-name^="CommercialAnons"]
 d26816 1
 a26816 1
 ||amd.online/*/notice-daily
+d27582 1
+a27582 1
+ixbt.com##body:not([class*="dark:"]):style(background-color: inherit !important)
+a27597 1
+ixbt.pro##.text-color-navbar-text:style(color: inherit !important)
 a28419 1
 dzen.ru##[data-testid*="-ad-block"]
 d28464 1
@@ -42,6 +63,10 @@ dzen.ru,sportsdzen.ru##html:style(scroll-snap-type: none !important)
 d28887 1
 a28887 1
 80-e.ru,doramatv.live,examenpdd.com,rg.ru,shadowcore.ru##+js(abort-on-property-read, yaContextCb)
+a29312 1
+ixbt.pro##body:remove-class(branding)
+a29354 1
+ixbt.pro##style[id^="branding-"]:remove()
 a29491 11
 ! forum.ixbt.com
 @@||yandex.ru/ads/adfox/$xmlhttprequest,domain=forum.ixbt.com

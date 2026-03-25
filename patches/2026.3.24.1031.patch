@@ -1,17 +1,33 @@
-diff name:ruadlist lines:28 checksum:a4b5726494
+diff name:ruadlist lines:53 checksum:d9e598f324
 d4 2
 a5 2
-! Last modified: Wed, 25 Mar 2026 13:44:25 +0000
-! Diff-Path: ../patches/2026.3.25.824.patch#ruadlist
+! Last modified: Wed, 25 Mar 2026 17:14:43 +0000
+! Diff-Path: ../patches/2026.3.25.1034.patch#ruadlist
 d9173 4
+a11965 1
+||ixbt.*/cgi-bin/banqs.cgi
+d11967 1
+a16098 1
+ixbt.games,ixbt.pro##.clickable_zone
 a16169 1
 vedomosti.ru##.commercial-logo
+a16781 1
+vedomosti.ru##.hide-offer
+a17530 1
+vedomosti.ru##.page-gallery__loader
 a17665 1
 garant.ru##.popup-social
+d18001 1
+a18001 1
+autopilot.ru,kommersant.ru,myweekend.ru##.rocket_man
 a18419 2
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__main [href*="?erid="])
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__main [title*="?erid="])
 d18532 1
+a22354 2
+ixbt.*##.clickable_zone {remove:true;}
+ixbt.*##style[id^="branding-"] {remove:true;}
+d22364 2
 d22408 1
 a22408 1
 pikabu.ru##article.story[data-recom-coef=""]
@@ -21,9 +37,18 @@ rbc.ru##.central-publisher-item[data-name^="CommercialAnons"]
 d26818 1
 a26818 1
 ||amd.online/*/notice-daily
+d27584 1
+a27584 1
+ixbt.com##body:not([class*="dark:"]):style(background-color: inherit !important)
+a27599 1
+ixbt.pro##.text-color-navbar-text:style(color: inherit !important)
 d28467 1
 d28479 1
 a28479 3
 ! исправление ошибок и косяков оригинальной вёрстки
 dzen.ru,sportsdzen.ru##body:style(scroll-snap-type: none !important)
 dzen.ru,sportsdzen.ru##html:style(scroll-snap-type: none !important)
+a29315 1
+ixbt.pro##body:remove-class(branding)
+a29357 1
+ixbt.pro##style[id^="branding-"]:remove()
