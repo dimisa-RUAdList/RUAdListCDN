@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 25 Mar 2026 07:15:18 +0000
-! Diff-Path: ../patches/2026.3.25.435.patch#ruadlist
+! Last modified: Wed, 25 Mar 2026 13:44:25 +0000
+! Diff-Path: ../patches/2026.3.25.824.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -9170,10 +9170,6 @@ $third-party,popup,domain=2ip.ru
 /*utm_$popup,domain=stratege.ru
 /go.php$popup,domain=piratca.net
 /redirect/cpa/*$popup,domain=rt02.ru
-://pikabu.ru/*.*.*.*.*.$popup
-://pikabu.ru/*/*/*/*--$popup
-://pikabu.ru/*/*/*/*..$popup
-://pikabu.ru/*/*/*/*_$popup
 ?partner=$popup,domain=lifehacker.ru
 |http://li.ru/go?$popup,domain=fishki.net
 ||catcut.net^$popup,domain=mobile-4at-obshenie.chatovod.ru|mobile-chat-obshenie.jimdo.com
@@ -16167,6 +16163,7 @@ glavnoe.net,infotime.co##.comments-wrapper
 pikabu.ru##.comments__adv
 car.ru##.commercial
 aniliberty.top,anilibria.top##.commercial-banner
+vedomosti.ru##.commercial-logo
 yantann.rbsmi.ru,yanzori.rbsmi.ru##.commercical_wrap
 sportanalytic.com##.common_content_news > .news > center
 samara24.ru##.common_left > [id^="rep_"] > .bl_main
@@ -17663,6 +17660,7 @@ footballgazeta.com##.popularList > center
 tourister.ru##.popularMaterialList > div[id^="readmore_"] ~ [class]:not([id^="readmore_"])
 stavcur.ru##.popup-army
 nrj.ua##.popup-banner
+garant.ru##.popup-social
 securitymedia.org##.popup_banners
 equity.today##.popup_module_container
 nashaniva.com##.pos-market
@@ -18417,6 +18415,8 @@ igry-man.net##.stockgame
 gdz.ru##.store-hosting
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__main .story__promo)
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__main > [id])
+pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__main [href*="?erid="])
+pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__main [title*="?erid="])
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__placeholder)
 pikabu.ru#?#.stories-feed__container > .story:-abp-has([class*="sponsor"])
 pikabu.ru##.stories-feed__related-stories-adv
@@ -18529,7 +18529,6 @@ starhit.ru,uralweb.ru,www.ixbt.com##.tgb
 vbr.ru##.tgb-content
 parents.ru##.tgb__heading
 telegraf.com.ua##.tgr-ads
-vedomosti.ru##.the-header__top a[href*="?erid="]
 ria.ru#?#.the-in-carousel__item:-abp-has(> [data-has-banner])
 vedomosti.ru##.the-loader
 lifehacker.ru#?#.the-tv__observer:-abp-has(.lh-article-card-meta__partner)
@@ -22405,7 +22404,7 @@ mail.ru##[href*="https://dzen.ru"]
 vk.com,vk.ru##[id^="post-"] > ._post_content > :only-child
 levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##[role="banner"] > .s-header-extra + div[class]
 livejournal.com#?#a:-abp-has(span:-abp-contains(Реклама))
-pikabu.ru##article.story[data-text-length="1"]
+pikabu.ru##article.story[data-recom-coef=""]
 kp.kg,kp.kz,kp.md,kp.ru#?#body > #app div:-abp-properties(background-color: rgb(225, 231, 235))
 sdamgia.ru##center > div[id][style]
 cq.ru#?#div:-abp-properties(content: "Реклама")
@@ -23322,7 +23321,7 @@ gazeta.press,gazeta.ru##div[id^="block_pad_id"]
 ! RBC (РБК)
 cnews.ru,utro.ru##.banner
 rbc.ru##.branding-block
-rbc.ru##.central-publisher-item[data-name="CommercialAnons"]
+rbc.ru##.central-publisher-item[data-name^="CommercialAnons"]
 rbc.ru##.fox-fallback
 rbc.ru,sportrbc.ru##.g-banner__news-footer > div[class="js-rbcslider-multi-news"]
 safe.cnews.ru##.header-brand-logo
