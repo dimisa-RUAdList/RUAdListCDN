@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 26 Mar 2026 13:51:59 +0000
-! Diff-Path: ../patches/2026.3.26.831.patch#ruadlist
+! Last modified: Thu, 26 Mar 2026 19:20:43 +0000
+! Diff-Path: ../patches/2026.3.26.1160.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -8612,6 +8612,7 @@ by,~mail.ru,ru,ua##.banner_box
 ##[href*="postlnk.com"]
 ##[href^="https://download.cdn.yandex.net/yandex-tag/weboffer/"]
 ~dzen.ru,~sportsdzen.ru##[href^="https://dzen.ru"]
+##[href^="https://dzen.ru"]
 ##[href^="https://pxl.leads.su/click/"]
 ##[href^="https://trkleads.su/click/"]
 ##[id^="n4p_"]
@@ -23371,6 +23372,7 @@ rbc.ru##.video-player__controls__ad-countdown
 utro.ru#?#[class*="title"]:-abp-contains(/новости партнеров/i)
 rbc.ru##[class^="SportMainBetBlocks_"]
 rbc.ru##[data-name="SimplePromoCard"]
+rbc.ru##[data-name="WithButtonPromoCard"]
 rbc.ru##[data-placement]
 rbc.ru##[data-yandex-name^="selfpromo_"]
 rbc.ru##[data-yandex-show="cards_marketplace_show"]
@@ -29626,6 +29628,8 @@ game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorka
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /agl007|blockPage/)
 e.mail.ru##+js(set-constant, Object.prototype.hasAdBlock, false)
 e.mail.ru#@#+js(set-constant, Object.prototype.hasAdBlock, null)
+@@||dzen.ru^$generichide
+@@||sportsdzen.ru^$generichide
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##[style*=" 11111"]
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##[style*=" 2223"]
 searchfloor.*##+js(addEventListener-defuser, DOMContentLoaded, isDonatePage)

@@ -1,14 +1,16 @@
-diff name:ruadlist lines:105 checksum:8535e2d8b1
+diff name:ruadlist lines:112 checksum:9eb3a27266
 d4 2
 a5 2
-! Last modified: Thu, 26 Mar 2026 13:51:59 +0000
-! Diff-Path: ../patches/2026.3.26.831.patch#ruadlist
+! Last modified: Thu, 26 Mar 2026 19:20:43 +0000
+! Diff-Path: ../patches/2026.3.26.1160.patch#ruadlist
 a1457 1
 ||d4ikyl4yo6.ru^$third-party
 a6246 1
 ||tpembars.com^$third-party
 a7822 1
 .ru/news.js?sid=$third-party,script
+a8611 1
+##[href^="https://dzen.ru"]
 d9172 4
 a10221 1
 vgtimes.com,vgtimes.ru##.push_status_info
@@ -54,6 +56,8 @@ pikabu.ru##article.story[data-recom-coef=""]
 d23323 1
 a23323 1
 rbc.ru##.central-publisher-item[data-name^="CommercialAnons"]
+a23367 1
+rbc.ru##[data-name="WithButtonPromoCard"]
 d25133 1
 a25133 1
 ||sberdevices.ru^$third-party,~font,~stylesheet,domain=~24ttl.stream|~citilink.ru|~dns-shop.ru|~eldorado.ru|~giga.chat|~megamarket.ru|~mvideo.ru|~salutejazz.ru|~sber.ru|~technopark.ru|~visper.tech
@@ -101,6 +105,9 @@ libertycity.net,libertycity.ru,vgtimes.com,vgtimes.ru##+js(set-cookie, is_mobile
 d29524 1
 a29524 1
 3dn.ru,a-point.info,addfiles.ru,akkordam.ru,all-for-kompa.ru,asia-tv.su,at.ua,autosimgames.ru,clan.su,db-energo.ru,devdrivers.ru,do.am,elegos.ru,elektronika56.ru,elektrosat.ru,fon-ki.com,for-gsm.ru,free-dream.ru,ftechedu.ru,fukushima-news.ru,gals.md,gloria-cedric.ru,goldformat.ru,greenflash.su,igrul-ka.ru,krasnickij.ru,krolmen.ru,megaclips.net,mow-portal.ru,moy.su,my1.ru,narod.ru,newgames.com.ua,novospasskoe-city.ru,omsimclub.ru,online-supernatural.ru,only-paper.ru,others.name,pidru4nik.com,pkrc.ru,play-force.ru,pohoronnoe-byuro.com,pokatushki-pmr.ru,pro-zakupki.ru,project-ss.ru,psxworld.ru,radiodom.org,rocketdockfree.ru,sdr-deluxe.com,soft-game.net,stalker-gsc.ru,stalker-zone.info,stalkermods.ru,svadbatomsk.ru,techmusic.ru,tes-game.ru,torfiles.ru,ucoz.club,ucoz.com,ucoz.net,ucoz.org,ucoz.ru,ucoz.ua,usite.pro,vodopads.ru,xakevsoft.ru,xn--80aeshkkbdj.xn--p1ai,zona-stalkera.ru##+js(abort-on-property-read, u_global_data)
+a29613 2
+@@||dzen.ru^$generichide
+@@||sportsdzen.ru^$generichide
 d31487 1
 a31487 1
 /^https?:\/\/pikabu\.ru\/ajax\/([A-Za-z0-9]{7,})+\?[A-Za-z0-9]+=[0-9a-z-]+[0-9a-z]$/$xmlhttprequest,domain=pikabu.ru
