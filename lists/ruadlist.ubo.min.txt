@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 27 Mar 2026 05:46:44 +0000
-! Diff-Path: ../patches/2026.3.27.346.patch#ruadlist
+! Last modified: Fri, 27 Mar 2026 09:04:17 +0000
+! Diff-Path: ../patches/2026.3.27.544.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -8612,7 +8612,6 @@ by,~mail.ru,ru,ua##.banner_box
 ##[href*="postlnk.com"]
 ##[href^="https://download.cdn.yandex.net/yandex-tag/weboffer/"]
 ~dzen.ru,~sportsdzen.ru##[href^="https://dzen.ru"]
-##[href^="https://dzen.ru"]
 ##[href^="https://pxl.leads.su/click/"]
 ##[href^="https://trkleads.su/click/"]
 ##[id^="n4p_"]
@@ -28448,6 +28447,7 @@ dzen.ru##[class*="yandex-direct"]
 dzen.ru##[data-testid="dzenpro-banner"]
 dzen.ru##div[class*="-ad-block_"]
 dzen.ru##div[class*="-right-ad-column"]
+dzen.ru##div[class*="_advertDoc2Doc-"]
 dzen.ru##div[class*="adContentWrapper"]
 dzen.ru##div[class*="adSplitEmbed"]
 dzen.ru##div[class*="bannerMain"]
