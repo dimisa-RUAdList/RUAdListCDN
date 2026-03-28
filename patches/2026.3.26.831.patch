@@ -1,8 +1,8 @@
-diff name:ruadlist lines:44 checksum:7b0420ffe9
+diff name:ruadlist lines:61 checksum:cae3c91ca3
 d4 2
 a5 2
-! Last modified: Sat, 28 Mar 2026 05:24:10 +0000
-! Diff-Path: ../patches/2026.3.28.324.patch#ruadlist
+! Last modified: Sat, 28 Mar 2026 10:46:25 +0000
+! Diff-Path: ../patches/2026.3.28.646.patch#ruadlist
 a11956 1
 ||it-world.ru/local/src/banner_click.
 d13135 1
@@ -20,11 +20,25 @@ spbit.ru##.bnnr
 d15973 1
 a15973 1
 agropolit.com,elevatorist.com,filmozavr.com,filmozavr.net,forum.zoneofgames.ru,gotennis.ru,inoprosport.ru,kinopati.ru,kurkul.com,lada-granta.net,latifundist.com,lkforum.ru,myshows.me,osp.ru,overclockers.ua,podfm.ru,popcornnews.ru,psm7.com,stopgame.ru,superagronom.com,zemliak.com##.branding
+a22334 1
+||ng72.ru^$csp=script-src 'self' 'unsafe-eval' https:
+d23147 1
+a23147 1
+/api/banner$xmlhttprequest,domain=myliski.ru|newskrasnodar.ru|newtambov.ru|ngnovoros.ru|pg02.ru|pg11.ru|pg12.ru|pg13.ru|pg21.ru|pg37.ru|pg46.ru|pgn21.ru|pgr76.ru|prochepetsk.ru|prodzer.ru|progorod33.ru|progorod43.ru|progorod58.ru|progorod59.ru|progorod62.ru|progorod76.ru|progorodnn.ru|progoroduhta.ru|prosaratov.ru|usolie.info|vladivostoktimes.ru|youtvnews.com
+d23149 1
+a23149 1
+myliski.ru,newskrasnodar.ru,newtambov.ru,ngnovoros.ru,pg02.ru,pg11.ru,pg12.ru,pg13.ru,pg21.ru,pg37.ru,pg46.ru,pgn21.ru,pgr76.ru,prochepetsk.ru,prodzer.ru,progorod33.ru,progorod43.ru,progorod58.ru,progorod59.ru,progorod76.ru,progorodnn.ru,progoroduhta.ru,prosaratov.ru,usolie.info,vladivostoktimes.ru,youtvnews.com##.contentRightMainBanner
+d23154 1
+a23154 1
+myliski.ru,newskrasnodar.ru,newtambov.ru,ngnovoros.ru,pg02.ru,pg11.ru,pg12.ru,pg13.ru,pg21.ru,pg37.ru,pg46.ru,pgn21.ru,pgr76.ru,prochepetsk.ru,prodzer.ru,progorod33.ru,progorod43.ru,progorod58.ru,progorod59.ru,progorod62.ru,progorod76.ru,progorodnn.ru,progoroduhta.ru,prosaratov.ru,usolie.info,vladivostoktimes.ru,youtvnews.com##[class^="banner"]
+d23158 1
+a23158 1
+myliski.ru,newskrasnodar.ru,ngnovoros.ru,pg02.ru,pg11.ru,pg12.ru,pg13.ru,pg21.ru,pg37.ru,pg46.ru,pgr76.ru,prochepetsk.ru,prodzer.ru,progorod33.ru,progorodnn.ru,progoroduhta.ru,prosaratov.ru,usolie.info,vladivostoktimes.ru,youtvnews.com#?#div[class*="layout_contentRightStretch_"]:-abp-has(> div:only-child:empty)
 a23373 1
 rbc.ru##[data-name="WithButtonPromoCard"]
 d26787 1
 a26787 1
-doctorrouter.ru,gamingsym.in,ranobe-novels.ru,transformator220.ru,vita-water.ru,wuxiaworld.ru##body > :not([id]):not([class]):not(script)
+doctorrouter.ru,gamingsym.in,ranobe-novels.ru,transformator220.ru,vita-water.ru,wuxiaworld.ru##body > :not([id]):not([class]):not(script):not(form)
 a27560 3
 it-world.ru##html > body > *:style(pointer-events: auto !important)
 it-world.ru##html > body:style( pointer-events: none !important; background: inherit !important)
@@ -40,6 +54,9 @@ dzen.ru##div[class*="body_branding"]:style(background: inherit !important)
 d28894 1
 a28894 1
 doctorrouter.ru,ranobe-novels.ru,tests24.su,vita-water.ru##+js(abort-on-property-write, ai_front)
+d29095 1
+a29095 1
+eg.ru,gorodche.ru,gorodvo.ru,ng72.ru##+js(remove-node-text, script, showBanner)
 a29628 2
 @@||dzen.ru^$generichide
 @@||sportsdzen.ru^$generichide
