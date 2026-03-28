@@ -1,8 +1,8 @@
-diff name:ruadlist lines:25 checksum:dd160ebe52
+diff name:ruadlist lines:40 checksum:c8b98363ba
 d4 2
 a5 2
-! Last modified: Fri, 27 Mar 2026 19:46:19 +0000
-! Diff-Path: ../patches/2026.3.27.1186.patch#ruadlist
+! Last modified: Sat, 28 Mar 2026 03:11:52 +0000
+! Diff-Path: ../patches/2026.3.28.191.patch#ruadlist
 d8615 1
 a11957 1
 ||it-world.ru/local/src/banner_click.
@@ -18,9 +18,24 @@ a15868 1
 spbit.ru#?#.blue > .header:-abp-contains(партнеры)
 a15882 1
 spbit.ru##.bnnr
+d15974 1
+a15974 1
+agropolit.com,elevatorist.com,filmozavr.com,filmozavr.net,forum.zoneofgames.ru,gotennis.ru,inoprosport.ru,kinopati.ru,kurkul.com,lada-granta.net,latifundist.com,lkforum.ru,myshows.me,osp.ru,overclockers.ua,podfm.ru,popcornnews.ru,psm7.com,stopgame.ru,superagronom.com,zemliak.com##.branding
+d26789 1
+a26789 1
+doctorrouter.ru,gamingsym.in,ranobe-novels.ru,transformator220.ru,vita-water.ru,wuxiaworld.ru##body > :not([id]):not([class]):not(script)
 a27562 3
 it-world.ru##html > body > *:style(pointer-events: auto !important)
 it-world.ru##html > body:style( pointer-events: none !important; background: inherit !important)
 ! ---
 a28450 1
 dzen.ru##div[class*="_advertDoc2Doc-"]
+a28468 2
+dzen.ru##div[class*="AdvertTsar"]
+dzen.ru##div[class*="BrandingAdvertLayoutColumn-"]
+d28470 1
+a28470 1
+dzen.ru##div[class*="body_branding"]:style(background: inherit !important)
+d28896 1
+a28896 1
+doctorrouter.ru,ranobe-novels.ru,tests24.su,vita-water.ru##+js(abort-on-property-write, ai_front)

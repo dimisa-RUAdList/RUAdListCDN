@@ -1,8 +1,8 @@
-diff name:ruadlist lines:110 checksum:dd160ebe52
+diff name:ruadlist lines:125 checksum:c8b98363ba
 d4 2
 a5 2
-! Last modified: Fri, 27 Mar 2026 19:46:19 +0000
-! Diff-Path: ../patches/2026.3.27.1186.patch#ruadlist
+! Last modified: Sat, 28 Mar 2026 03:11:52 +0000
+! Diff-Path: ../patches/2026.3.28.191.patch#ruadlist
 a1457 1
 ||d4ikyl4yo6.ru^$third-party
 a7823 1
@@ -31,6 +31,9 @@ a15869 1
 spbit.ru#?#.blue > .header:-abp-contains(партнеры)
 a15883 1
 spbit.ru##.bnnr
+d15975 1
+a15975 1
+agropolit.com,elevatorist.com,filmozavr.com,filmozavr.net,forum.zoneofgames.ru,gotennis.ru,inoprosport.ru,kinopati.ru,kurkul.com,lada-granta.net,latifundist.com,lkforum.ru,myshows.me,osp.ru,overclockers.ua,podfm.ru,popcornnews.ru,psm7.com,stopgame.ru,superagronom.com,zemliak.com##.branding
 a16098 1
 ixbt.games,ixbt.pro##.clickable_zone
 a16169 1
@@ -68,6 +71,9 @@ a25135 1
 ||sberdevices.ru^$third-party,~font,~stylesheet,domain=~24ttl.stream|~citilink.ru|~dns-shop.ru|~eldorado.ru|~giga.chat|~megamarket.ru|~mvideo.ru|~salutejazz.ru|~sber.ru|~technopark.ru|~visper.tech
 d25726 1
 d26423 1
+d26785 1
+a26785 1
+doctorrouter.ru,gamingsym.in,ranobe-novels.ru,transformator220.ru,vita-water.ru,wuxiaworld.ru##body > :not([id]):not([class]):not(script)
 d26818 1
 a26818 1
 ||amd.online/*/notice-daily
@@ -83,6 +89,12 @@ d28357 2
 a28449 1
 dzen.ru##div[class*="_advertDoc2Doc-"]
 d28467 1
+a28468 2
+dzen.ru##div[class*="AdvertTsar"]
+dzen.ru##div[class*="BrandingAdvertLayoutColumn-"]
+d28470 1
+a28470 1
+dzen.ru##div[class*="body_branding"]:style(background: inherit !important)
 d28479 1
 a28479 3
 ! исправление ошибок и косяков оригинальной вёрстки
@@ -91,6 +103,9 @@ dzen.ru,sportsdzen.ru##html:style(scroll-snap-type: none !important)
 d28890 1
 a28890 1
 80-e.ru,doramatv.live,examenpdd.com,rg.ru,shadowcore.ru##+js(abort-on-property-read, yaContextCb)
+d28894 1
+a28894 1
+doctorrouter.ru,ranobe-novels.ru,tests24.su,vita-water.ru##+js(abort-on-property-write, ai_front)
 a29315 1
 ixbt.pro##body:remove-class(branding)
 a29357 1

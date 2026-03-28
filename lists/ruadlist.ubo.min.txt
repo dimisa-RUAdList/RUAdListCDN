@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 27 Mar 2026 19:46:19 +0000
-! Diff-Path: ../patches/2026.3.27.1186.patch#ruadlist
+! Last modified: Sat, 28 Mar 2026 03:11:52 +0000
+! Diff-Path: ../patches/2026.3.28.191.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -15971,7 +15971,7 @@ citydog.by##.brandLink
 ekaraganda.kz##.brand_a
 harpersbazaar.com.ua##.brand_left
 harpersbazaar.com.ua##.brand_right
-agropolit.com,elevatorist.com,filmozavr.com,filmozavr.net,gotennis.ru,inoprosport.ru,kinopati.ru,kurkul.com,lada-granta.net,latifundist.com,lkforum.ru,myshows.me,osp.ru,overclockers.ua,podfm.ru,popcornnews.ru,psm7.com,stopgame.ru,superagronom.com,zemliak.com##.branding
+agropolit.com,elevatorist.com,filmozavr.com,filmozavr.net,forum.zoneofgames.ru,gotennis.ru,inoprosport.ru,kinopati.ru,kurkul.com,lada-granta.net,latifundist.com,lkforum.ru,myshows.me,osp.ru,overclockers.ua,podfm.ru,popcornnews.ru,psm7.com,stopgame.ru,superagronom.com,zemliak.com##.branding
 tut.by##.branding > a
 3dtoday.ru##.branding-banner
 banki.ru##.branding-bg
@@ -26786,7 +26786,7 @@ sntch.com#?#article > p:-abp-contains(/отключите блокировку �
 3drubik.ru##body > #page ~ div[id][class]
 fapvdo.ru##body > #txt
 24pdd.kz##body > .preloader
-doctorrouter.ru,gamingsym.in,ranobe-novels.ru,transformator220.ru,wuxiaworld.ru##body > :not([id]):not([class]):not(script)
+doctorrouter.ru,gamingsym.in,ranobe-novels.ru,transformator220.ru,vita-water.ru,wuxiaworld.ru##body > :not([id]):not([class]):not(script)
 mirdiets.ru,top10books.ru##body > [class*="-blackout active"]
 mirdiets.ru,top10books.ru##body > [class*="-blackout active"] + div[class$="-wrapper"]
 iblitzmods.ru##body > [class^="adbd-"]
@@ -28470,8 +28470,10 @@ dzen.ru##.news-secondary-layout-column__secondary div[id]
 dzen.ru##.news-story-page div[id] > div:not([id]) > div[id]
 dzen.ru##[class^="news-site--Infinite"][class*="AdColumnItem-desktop__content"] > div[id*="-column_top"]
 dzen.ru##div:not(.news-rubric-desktop__adv-column) > div[class^="mg-sticky"]
+dzen.ru##div[class*="AdvertTsar"]
+dzen.ru##div[class*="BrandingAdvertLayoutColumn-"]
 dzen.ru##div[class*="_content_with-new-"] > div[id] ~ div[id]
-dzen.ru##div[class*="_content_with-new-"] > div[id]:first-child + div[class*=" news-"]
+dzen.ru##div[class*="body_branding"]:style(background: inherit !important)
 dzen.ru##div[class*="new"] [class$="__rubricator"] + div[class*=" "] > div:only-child
 dzen.ru##div[class^="news"] [class*="skeleton"]:style(background-color: transparent !important)
 dzen.ru##div[class^="news-site-"][class*="-desktop-"]:style(background-color: transparent !important)
@@ -28897,7 +28899,7 @@ growhow.in.ua##+js(abort-on-property-read, wpsite_clickable_data)
 animedia.tv,animedub.ru,vsetut.su##+js(abort-on-property-read, zfgformats)
 transkarpatia.net##+js(abort-on-property-write, NiceScroll)
 24pdd.ru##+js(abort-on-property-write, adsBlocked)
-doctorrouter.ru,ranobe-novels.ru,tests24.su##+js(abort-on-property-write, ai_front)
+doctorrouter.ru,ranobe-novels.ru,tests24.su,vita-water.ru##+js(abort-on-property-write, ai_front)
 newxboxone.ru,ufchgu.ru##+js(abort-on-property-write, disableSelection)
 ufchgu.ru##+js(abort-on-property-write, disable_keystrokes)
 fssp.gov.ru,southpark.su,turkcinema.org##+js(abort-on-property-write, document.oncontextmenu)
