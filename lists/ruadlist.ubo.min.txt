@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 28 Mar 2026 15:42:13 +0000
-! Diff-Path: ../patches/2026.3.28.942.patch#ruadlist
+! Last modified: Sat, 28 Mar 2026 20:45:49 +0000
+! Diff-Path: ../patches/2026.3.28.1245.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -29066,6 +29066,7 @@ dzen.ru,frontend.vh.yandex.ru,naydex.net,widgets.kinopoisk.ru,www.kinopoisk.ru,y
 otzovik.com##+js(noeval-if, ShadowRoot)
 kvadratmetr.uz,oligarx.uz,tehnar.net.ua##+js(noeval-if, adsBlocked)
 rutube.ru##+js(prevent-addEventListener, click, showRedirectPopup)
+news.rambler.ru##+js(prevent-fetch, &origin_type=rtb, url:/rutube.ru/api/tags/video/)
 dzen.ru,sportsdzen.ru##+js(prevent-fetch, /stats/bulk|stats/pixels|zen_audit/)
 ura.news##+js(prevent-fetch, _rsc=)
 i-ua.tv##+js(remove-attr, autoplay, [data-video-player="small"], stay)
