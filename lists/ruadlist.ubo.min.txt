@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 29 Mar 2026 08:54:43 +0000
-! Diff-Path: ../patches/2026.3.29.534.patch#ruadlist
+! Last modified: Sun, 29 Mar 2026 11:38:26 +0000
+! Diff-Path: ../patches/2026.3.29.698.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -9214,6 +9214,7 @@ $third-party,popup,domain=2ip.ru
 .clickunder.$popup
 .me/js/pop.js|$script
 .webunder.$popup
+.yandex.*banerid$popup
 /*.MTblocked=$popup
 /*?teaser_id=*&site_$popup
 //kpup.*/?sid=$popup
@@ -10225,6 +10226,7 @@ domkino.tv##.social-annoyer
 my.rv.ua,ogo.ua##.spu-bg
 my.rv.ua,ogo.ua##.spu-box
 lolzona.ru##.stb-container
+pcprogs.net##.subscribe
 sravni.ru##.subscription-popup
 liga.net##.swal2-backdrop-show
 gamestatus.info##.telegram-follow-popup
@@ -10268,6 +10270,7 @@ ruskline.ru##body > div[id^="money"]
 dnpmag.com,trendymen.ru##body > div[id^="popup-"]
 7days.ru,vokrug.tv##body > div[style^="position: fixed; bottom: 0px;"]
 esputnik.com,~webinars.esputnik.com##body.cl-noscroll > .cl-dialog[style*="position: fixed"]
+pcprogs.net#?#body:-abp-has(> .subscribe[style="display: block;"]) > .overlay
 pinterest.com##div[class*="ScreenBanner"]
 lenta.ru##div[class*="cation js-"]
 rutube.ru##div[class*="portraitNoTouchScroll"] div[class^="controls-overlay-module__overlay"]
@@ -16013,6 +16016,7 @@ seeds.org.ua##.bsac
 partnerkin.com##.bst_wrap
 nnm-club.me,nnmclub.ro,nnmclub.to##.btTbl > tbody > .row1 > .genmed[align="center"] noindex
 livelib.ru##.btn-buy-holder
+s1pcprogs.ru##.btn-dw-ya
 download-windows.org,softhome.ru##.btn-installpack
 shopping.nv.ua##.btn-product-embed
 mozhaysksg.ru##.btop
@@ -18974,6 +18978,7 @@ namba.kg##.xbet
 telestrekoza.com##.xoxo.blogroll
 pornoham.net##.xpwt_video-spots-col
 tvernews.ru##.y_dzen
+pcprogs.net##.ya
 macilove.com##.ya-candy
 igrovuha.org##.ya-dl-outer
 vokrug.tv##.ya-dzen
@@ -20561,6 +20566,7 @@ om1.ru##body div[class*="-branding"]
 agronews.ua,agroreview.com,agroweek.com##body.has-aw-background::before
 anifap.com,anifap.xyz,anitokyo.tv,anitokyo1.top##body.playerCode > div[style^="position: absolute;"][onclick]
 forum.flprog.ru##body.section-index .sidebar
+pcprogs.net#?#body:-abp-has(> .ya[style="display: block;"]) > .overlay
 the-geek.ru##body::before
 livetvstream.pro,me##body[bgcolor] > #adbtm
 livetvstream.pro,me##body[bgcolor] > div[id="ads"][style^="position: absolute;"]
@@ -20745,7 +20751,7 @@ hh.ru##div[class*="banner-place"]
 bombardir.ru##div[class*="banner-placeholder"]
 mobile-review.com##div[class*="banner-wrapper"]
 finance.ua,meta.ua##div[class*="banner-zone"]
-sia.ru,voxpopuli.kz##div[class*="banner_"]
+securitylab.ru,sia.ru,voxpopuli.kz##div[class*="banner_"]
 ecology.md##div[class*="bannerplace"]
 apteka.ru,forum.krasmama.ru,mycity.by##div[class*="banners"]
 vprognoze.ru##div[class*="best-bookmakers"]
@@ -20931,7 +20937,7 @@ kaktutzhit.by##div[class^="banner"][class$="rightSide"] > .banner:nth-of-type(1)
 cisoclub.ru##div[class^="banner"][class*="LENTA"]
 meteo.ua##div[class^="banner-"]
 znanierussia.ru##div[class^="banner-under-"]
-irr.by,myfootball.pw,myfootball.ws,securitylab.ru##div[class^="banner_"]
+irr.by,myfootball.pw,myfootball.ws##div[class^="banner_"]
 caravan.su##div[class^="banner_header"]
 mnmag.ru##div[class^="banner_right"]
 fox-online.tv##div[class^="banner_sape"]
@@ -21921,6 +21927,7 @@ old.myshows.me##main > .contAlt
 allcarz.ru#?#main > .container > .site-content:-abp-has(> .content-banner)
 protanki.tv##main > .hidden
 mediaryazan.ru##main > .hide-on-mobiles > div[class="sideblock"]:first-child
+livelib.ru##main > article.main-slider
 besplatnyeprogrammy.ru#?#main > article.post:-abp-has(> header > .mainpage_title > [title^="InstallPack"])
 enthub.it##main > aside + .block > div:not([id]):not([class])
 ura.news#?#main > aside ul > li:-abp-has(a[href^="https://momenty.org/"])
