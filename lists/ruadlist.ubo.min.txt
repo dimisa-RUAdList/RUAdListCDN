@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 30 Mar 2026 13:58:18 +0000
-! Diff-Path: ../patches/2026.3.30.838.patch#ruadlist
+! Last modified: Mon, 30 Mar 2026 17:07:58 +0000
+! Diff-Path: ../patches/2026.3.30.1027.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -6599,7 +6599,6 @@
 ||viaqoo.tech^$third-party
 ||viavideo.digital^$third-party
 ||vicodes.com^$third-party
-||victorycorp.ru^$third-party
 ||vidalak.com^$third-party
 ||vidasys.ru^$third-party
 ||vidaugust.ru^
@@ -7505,6 +7504,10 @@ _verified.php?code=*&server=runetki.com
 ! Эти CDN помимо легальных сайтов обслуживают фейковые зеркала 1xbet
 ||ccdnss.com^$third-party,domain=~1xbet.by|~1xbet.com|~1xbet.com.gh|~1xbet.kz|~1xbet.ng|~1xbet.tj|~betwinner.com|~fan-sport.com|~ua-1x-bet.com
 ||cdnsfree.com^$third-party,domain=~1xbet.by|~1xbet.com|~1xbet.com.gh|~1xbet.kz|~1xbet.ng|~1xbet.tj|~betwinner.com|~fan-sport.com|~ua-1x-bet.com
+! Чёрный трекинг
+||adfax.ru^$third-party
+||qoopler.ru^$third-party
+||victorycorp.ru^$third-party
 ! Сайты-фейки и мошенники
 .24smi.host^
 .24smi.in^
@@ -12302,6 +12305,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||minecraft-gold-new.ru/offer/
 ||minfin.com.ua^*/banners$script
 ||minizal.net/js/brandminizal.js
+||mir24.tv/api/advertising-grids/
 ||mirkamnej.ru/teasernet/
 ||mirsexy.com/bo$xmlhttprequest
 ||mirsexy.com/vw$xmlhttprequest
@@ -29532,6 +29536,9 @@ forum.ixbt.com#@#.deskadv
 libertycity.net,libertycity.ru,vgtimes.com,vgtimes.ru###mobileon
 libertycity.net,libertycity.ru,vgtimes.com,vgtimes.ru##+js(set-cookie, is_mobile, no, , reload, 1)
 !#endif
+! МИР 24
+mir24.tv##+js(abort-on-stack-trace, HTMLVideoElement.prototype.play, _app-)
+mir24.tv##+js(set-constant, Object.prototype.autoPlay, {})
 ! NTV
 ntv.ru#?##air-mini-player:has(> div > .vjs-paused) ~ .air-player__controls
 ntv.ru##+js(abort-on-stack-trace, HTMLVideoElement.prototype.play, manualAutoplay)

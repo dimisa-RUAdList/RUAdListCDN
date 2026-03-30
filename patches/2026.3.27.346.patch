@@ -1,8 +1,14 @@
-diff name:ruadlist lines:156 checksum:6ea7b95b93
+diff name:ruadlist lines:168 checksum:c0e7a471e2
 d4 2
 a5 2
-! Last modified: Mon, 30 Mar 2026 13:58:18 +0000
-! Diff-Path: ../patches/2026.3.30.838.patch#ruadlist
+! Last modified: Mon, 30 Mar 2026 17:07:58 +0000
+! Diff-Path: ../patches/2026.3.30.1027.patch#ruadlist
+d6602 1
+a7507 4
+! Чёрный трекинг
+||adfax.ru^$third-party
+||qoopler.ru^$third-party
+||victorycorp.ru^$third-party
 d8615 1
 a9217 1
 .yandex.*banerid$popup
@@ -23,6 +29,8 @@ a11027 3
 ||allbasketball.org/*/branding/
 a11957 1
 ||it-world.ru/local/src/banner_click.
+a12300 1
+||mir24.tv/api/advertising-grids/
 d13136 1
 a13136 1
 ||spbit.ru/uploads/Banner/
@@ -155,3 +163,7 @@ rutube.ru##[data-testid="embed-wrapper"] > [data-testid="spinner"]
 rutube.ru##[id*="Player"] [class*="desktop-controls-layout-module__hidden_"]
 d29298 1
 d29300 1
+a29509 3
+! МИР 24
+mir24.tv##+js(abort-on-stack-trace, HTMLVideoElement.prototype.play, _app-)
+mir24.tv##+js(set-constant, Object.prototype.autoPlay, {})
