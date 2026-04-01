@@ -1,8 +1,8 @@
-diff name:ruadlist lines:98 checksum:e895b615f3
+diff name:ruadlist lines:104 checksum:d1090b8c73
 d4 2
 a5 2
-! Last modified: Wed, 01 Apr 2026 09:19:26 +0000
-! Diff-Path: ../patches/2026.4.1.559.patch#ruadlist
+! Last modified: Wed, 01 Apr 2026 15:20:40 +0000
+! Diff-Path: ../patches/2026.4.1.920.patch#ruadlist
 d6602 1
 a7507 4
 ! Чёрный трекинг
@@ -60,6 +60,9 @@ a22314 2
 d22344 1
 a22344 1
 ||pikabu.ru/ajax/*?ft6My=$xmlhttprequest
+d22421 1
+a22421 1
+pikabu.ru##article.story[data-recom-algo=""]
 a23413 1
 rbc.ru#?#div[class="central-publisher-item"]:-abp-has(div[class*="styles_word-break"]:-abp-contains(Реклама,))
 d23610 1
@@ -79,8 +82,11 @@ d28413 1
 d28447 1
 a28447 1
 dzen.ru##div[class^="dzen-desktop--"][class*="withFirstRowGrid"] div[style^="--top-padding:"]
-a28493 1
-dzen.ru##.news-page-layout__content:style(width: var(--news-content-size) !important; margin-left: auto !important ;margin-right: auto !important)
+a28478 1
+dzen.ru##[aria-label] div[id][class*="-desktop__ad-"]
+d28483 1
+a28483 1
+dzen.ru##div[class*="_content_with-new-"] > div[id] ~ div[class*="withDiscreteScroll"]
 d28988 1
 a28988 1
 hot.game,lifehacker.ru,pikabu.ru##+js(href-sanitizer, a[href][target="_blank"], ?ulp)
