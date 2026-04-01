@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 01 Apr 2026 15:20:40 +0000
-! Diff-Path: ../patches/2026.4.1.920.patch#ruadlist
+! Last modified: Wed, 01 Apr 2026 19:16:51 +0000
+! Diff-Path: ../patches/2026.4.1.1156.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22421,6 +22421,7 @@ anidub.vip,anidubonline.com##.plyr__progress__buffer
 dtf.ru##.rotator
 dtf.ru##.sticky-stack-sidebar-section .loader + div[id][class]:empty
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(/min-height: 20.px|min-height: 29.px|min-height: 30.px|min-height: 300./))
+pikabu.ru#?#.story:-abp-has(div:-abp-properties(content: none))
 dtf.ru##.supbar--top * *
 fonmod.com,ritsatv.ru,websdr.su##:not(my-obnaruzhili-blokirovshchik)
 android-mafia.com,game4you.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##:not(this-site-promotes-malware)
@@ -22433,7 +22434,6 @@ mail.ru##[href*="https://dzen.ru"]
 vk.com,vk.ru##[id^="post-"] > ._post_content > :only-child
 levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##[role="banner"] > .s-header-extra + div[class]
 livejournal.com#?#a:-abp-has(span:-abp-contains(Реклама))
-pikabu.ru##article.story[data-recom-algo=""]
 kp.kg,kp.kz,kp.md,kp.ru#?#body > #app div:-abp-properties(background-color: rgb(225, 231, 235))
 sdamgia.ru##center > div[id][style]
 cq.ru#?#div:-abp-properties(content: "Реклама")
@@ -28506,6 +28506,7 @@ dzen.ru##div[id] > div[class*="-desktop-"] > div[class*="__image-"]:empty
 dzen.ru##div[id] > div[class*="-desktop-"] > div[class*="__image-"]:empty + div[class*="__content-"]
 dzen.ru##div[id^="ad-"][class*=" news-"]
 ! исправление ошибок и косяков оригинальной вёрстки
+dzen.ru##.news-page-layout__content:style(width: var(--news-content-size) !important; margin-left: auto !important; margin-right: auto !important)
 dzen.ru,sportsdzen.ru##body:style(scroll-snap-type: none !important)
 dzen.ru,sportsdzen.ru##html:style(scroll-snap-type: none !important)
 ! погода

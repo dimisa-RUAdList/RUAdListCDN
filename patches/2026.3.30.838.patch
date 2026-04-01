@@ -1,8 +1,8 @@
-diff name:ruadlist lines:30 checksum:d1090b8c73
+diff name:ruadlist lines:32 checksum:9244f58e56
 d4 2
 a5 2
-! Last modified: Wed, 01 Apr 2026 15:20:40 +0000
-! Diff-Path: ../patches/2026.4.1.920.patch#ruadlist
+! Last modified: Wed, 01 Apr 2026 19:16:51 +0000
+! Diff-Path: ../patches/2026.4.1.1156.patch#ruadlist
 d6602 1
 a7507 4
 ! Чёрный трекинг
@@ -14,9 +14,9 @@ a12304 1
 d17053 1
 a17053 1
 24tv.ua,football24.ua,sport24.ua,zaxid.net##.legal
+a22419 1
+pikabu.ru#?#.story:-abp-has(div:-abp-properties(content: none))
 d22432 1
-a22432 1
-pikabu.ru##article.story[data-recom-algo=""]
 d28457 1
 a28457 1
 dzen.ru##div[class^="dzen-desktop--"][class*="withFirstRowGrid"] div[style^="--top-padding:"]
@@ -25,6 +25,8 @@ dzen.ru##[aria-label] div[id][class*="-desktop__ad-"]
 d28493 1
 a28493 1
 dzen.ru##div[class*="_content_with-new-"] > div[id] ~ div[class*="withDiscreteScroll"]
+a28503 1
+dzen.ru##.news-page-layout__content:style(width: var(--news-content-size) !important; margin-left: auto !important; margin-right: auto !important)
 a29534 3
 ! МИР 24
 mir24.tv##+js(abort-on-stack-trace, HTMLVideoElement.prototype.play, _app-)
