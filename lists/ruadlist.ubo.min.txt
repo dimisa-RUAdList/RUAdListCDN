@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 02 Apr 2026 15:10:58 +0000
-! Diff-Path: ../patches/2026.4.2.910.patch#ruadlist
+! Last modified: Thu, 02 Apr 2026 20:48:55 +0000
+! Diff-Path: ../patches/2026.4.2.1248.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21273,6 +21273,7 @@ kontur-map.ru,ololo.fm##div[id^="DIV_DA"]
 relax-fm.ru##div[id^="GPM_Relax_fm_"]
 news.sportbox.ru##div[id^="GPM_sportbox_"]
 tasix.me##div[id^="M"][id*="Preload"]
+yap.ru,yaplakal.com##div[id^="MF_"]
 semestr.online,semestr.ru#?#div[id^="Math"][id$="Block"] > div:-abp-has(a[href]:not([href^="/"]):not([href*=".semestr."]))
 semestr.online,semestr.ru#?#div[id^="Math"][id$="Block"] > div:-abp-has(a[href^="https://zakaz.semestr.ru/"])
 meendoru.com##div[id^="MeendoBrand"]
@@ -21672,7 +21673,7 @@ virus-stop.com.ua##footer > .footer-main
 virus-stop.com.ua##footer > h4
 forum.cxem.net#?#form > article[id^="elComment_"]:-abp-has(strong > a[href$="-Adver/"])
 payeer-gift.ru##form > div[style^="width: 300px;"]
-yap.ru,yaplakal.com#?#form > table[id^="p_row_"]:nth-of-type(2):-abp-has(*:-abp-contains(Yap))
+yap.ru,yaplakal.com#?#form > table[id]:nth-of-type(2):-abp-has(b:-abp-contains(Yap))
 leonkrevs.ucoz.ru##form[action*="wmcasher.ru"]
 megaimg.ru##form[name="show_image"] > center
 arbatmedia.kz,day.kyiv.ua#?#h2:-abp-contains(/^новости партн|^новини партн/i)
@@ -27651,8 +27652,7 @@ kinorium.com##body:style(margin-top: auto !important)
 ! ---
 kinoshack.net,tree.tv##body > .wrapper:style(margin-top: 0 !important)
 ! ---
-kinoteatr.ru##.branding-wrapper
-kinoteatr.ru##.header_container:style(margin-top: 0 !important)
+kinoteatr.ru##.mt-branding:style(margin-top: 100px !important)
 kinoteatr.ru##html > body:style(background-image: none !important; background-color: black !important)
 ! ---
 www.kinopoisk.ru###header-info-bg:style(background-color: transparent !important; background-image: none !important)

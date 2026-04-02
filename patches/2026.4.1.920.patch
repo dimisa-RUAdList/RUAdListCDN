@@ -1,8 +1,8 @@
-diff name:ruadlist lines:73 checksum:22721fd0ba
+diff name:ruadlist lines:81 checksum:5da83c8932
 d4 2
 a5 2
-! Last modified: Thu, 02 Apr 2026 15:10:58 +0000
-! Diff-Path: ../patches/2026.4.2.910.patch#ruadlist
+! Last modified: Thu, 02 Apr 2026 20:48:55 +0000
+! Diff-Path: ../patches/2026.4.2.1248.patch#ruadlist
 d2809 1
 d3981 4
 d9191 1
@@ -48,9 +48,14 @@ rozetka.com.ua#?#[rzscrollersliderbar] > div > .slide:-abp-has(> rz-product-tile
 d19642 1
 a19642 1
 hen-tay.com,mymedicalportal.net,samru.ru,work.ua##a[href*="/go.php"][target="_blank"]
+a21294 1
+yap.ru,yaplakal.com##div[id^="MF_"]
 d21342 1
 a21342 1
 advizzer.com,bigkyiv.com.ua,bragazeta.ru,cataclysmdda.ru,chehov-vid.ru,coollib.net,ekaraganda.kz,ereport.ru,euro-football.ru,floraprice.ru,gameguru.ru,go64.ru,grinkod.spb.ru,igrixl.ru,kp40.ru,kramatorsk.info,lada.kz,mirnov.ru,mix.tj,musicwars.ru,news29.ru,pogoda.com,ptzgovorit.ru,servers-samp.ru,sovets.net,sports.kz,tayga.info,tparser.org,uaprom.info,vidal.ru##div[id^="banner"]
+d21694 1
+a21694 1
+yap.ru,yaplakal.com#?#form > table[id]:nth-of-type(2):-abp-has(b:-abp-contains(Yap))
 d22059 1
 a22059 1
 rozetka.com.ua#?#rz-catalog-goods > .item:-abp-has(> rz-product-tile [aria-label*=" про рекламу"])
@@ -63,6 +68,9 @@ a23660 1
 ya.ru##section[style*="-cection-items-count:"]
 d26238 1
 d26305 2
+d27674 2
+a27675 1
+kinoteatr.ru##.mt-branding:style(margin-top: 100px !important)
 d28425 2
 a28426 2
 ya.ru##[action="https://ya.ru/search/"] ~ div[style]
