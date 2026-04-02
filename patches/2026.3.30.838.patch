@@ -1,22 +1,45 @@
-diff name:ruadlist lines:32 checksum:50d7fc4000
+diff name:ruadlist lines:55 checksum:fdc3234dd9
 d4 2
 a5 2
-! Last modified: Thu, 02 Apr 2026 05:45:49 +0000
-! Diff-Path: ../patches/2026.4.2.345.patch#ruadlist
+! Last modified: Thu, 02 Apr 2026 11:05:01 +0000
+! Diff-Path: ../patches/2026.4.2.665.patch#ruadlist
 d6602 1
 a7507 4
 ! Чёрный трекинг
 ||adfax.ru^$third-party
 ||qoopler.ru^$third-party
 ||victorycorp.ru^$third-party
+d9188 1
 a12304 1
 ||mir24.tv/api/advertising-grids/
+d15262 1
+d16073 1
+a16073 1
+rozetka.com.ua#?#.catalog-grid > .catalog-grid__cell:-abp-has(> rz-catalog-tile [aria-label*=" про рекламу"])
 d17053 1
 a17053 1
 24tv.ua,football24.ua,sport24.ua,zaxid.net##.legal
+d17075 1
+a17075 1
+rozetka.com.ua#?#.list > rz-product-tile:-abp-has(> article [aria-label*=" про рекламу"])
+d19461 1
+a19461 2
+rozetka.com.ua#?#[rzadvertisingview]:-abp-has(> div > span > rz-advertising-info-btn)
+rozetka.com.ua#?#[rzscrollersliderbar] > div > .slide:-abp-has(> rz-product-tile [aria-label*=" про рекламу"])
+d22055 1
+a22055 1
+rozetka.com.ua#?#rz-catalog-goods > .item:-abp-has(> rz-product-tile [aria-label*=" про рекламу"])
 a22419 1
 pikabu.ru#?#.story:-abp-has(div:-abp-properties(content: none))
 d22432 1
+a23386 1
+rbc.ru##.weather-widget
+a23656 1
+ya.ru##section[style*="-cection-items-count:"]
+d28421 2
+a28422 2
+ya.ru##[action="https://ya.ru/search/"] ~ div[style]
+ya.ru##[class*="feed__error"]
 d28457 1
 a28457 1
 dzen.ru##div[class^="dzen-desktop--"][class*="withFirstRowGrid"] div[style^="--top-padding:"]

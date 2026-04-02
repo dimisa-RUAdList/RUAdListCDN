@@ -1,14 +1,15 @@
-diff name:ruadlist lines:88 checksum:50d7fc4000
+diff name:ruadlist lines:107 checksum:fdc3234dd9
 d4 2
 a5 2
-! Last modified: Thu, 02 Apr 2026 05:45:49 +0000
-! Diff-Path: ../patches/2026.4.2.345.patch#ruadlist
+! Last modified: Thu, 02 Apr 2026 11:05:01 +0000
+! Diff-Path: ../patches/2026.4.2.665.patch#ruadlist
 d6602 1
 a7507 4
 ! Чёрный трекинг
 ||adfax.ru^$third-party
 ||qoopler.ru^$third-party
 ||victorycorp.ru^$third-party
+d9188 1
 d10487 1
 a10487 1
 $csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: *.addtoany.com *.amazonaws.com *.cloudflare.com content-loader.com *.dmca.com *.disqus.com *.disquscdn.com *.enduro.team *.facebook.com *.getsitecontrol.com accounts.google.com apis.google.com cse.google.com *.google.com/cse/ *.google.com/complete/ *.google.com/recaptcha/ translate.google.com www.google.com *.googleapis.com *.googletagmanager.com *.gstatic.com/recaptcha/ *.html-load.com *.icon-icons.com *.instagram.com *.jivosite.com *.jquery.com *.keycaptcha.com *.sendpulse.com *.sharethis.com cdn.snigelweb.com *.po.st *.threadloom.com *.tiktok.com *.trustpilot.com *.twitter.com vk.com www.youtube.com *.dev *.io *.net *.org *.ru *.ua,domain=agroter.com.ua|alensat.com|askentire.net|autonews.co.ua|autosoftos.com|babla.ru|bio-lessons.ru|callfilter.app|cardiagram.com.ua|clickthis.blog|coollib.net|delo.ua|elegantwoman.kyiv.ua|enduro.team|eurointegration.com.ua|farposst.ru|findhow.org|for-driver.info|gazeta-misto.te.ua|golos.te.ua|icon-icons.com|ilenta.com|index.minfin.com.ua|inforesist.org|irtafax.com|kovelpost.com|kreschatic.kiev.ua|kurs.com.ua|mirlib.ru|mobdisc.com|moddisc.com|modfix.ru|musinfo.net|newsyou.info|notebookcheck-ru.com|nsn.net.ua|okulyk.kz|ontvtime.ru|orbit-games.com|pb-news.info|perpendicular.pro|pes-files.ru|pingvin.pro|poezdato.net|poizdato.net|pravda.com.ua|rovesnyknews.te.ua|ruboard.website|skidkaonline.by|skidkaonline.ru|sundries.ua|tenews.org.ua|ternopillive.com|tribun.com.ua|uapress.kyiv.ua|valorantinfo.com|vesti-ua.net|vkazivka.com|wallpapershome.ru|xn--80aaukc.xn--j1amh
@@ -24,13 +25,20 @@ allbasketball.org###block-main-schedules > .border-bottom
 d13981 1
 a13984 1
 allbasketball.org###branding-wrapper
+d15260 1
 a15787 1
 allbasketball.org##.block-betting
 a15793 1
 allbasketball.org##.block-cf-fixed
+d16069 1
+a16069 1
+rozetka.com.ua#?#.catalog-grid > .catalog-grid__cell:-abp-has(> rz-catalog-tile [aria-label*=" про рекламу"])
 d17049 1
 a17049 1
 24tv.ua,football24.ua,sport24.ua,zaxid.net##.legal
+d17071 1
+a17071 1
+rozetka.com.ua#?#.list > rz-product-tile:-abp-has(> article [aria-label*=" про рекламу"])
 a18426 1
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__main .story__advert-info)
 a18429 1
@@ -40,8 +48,15 @@ pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__main [title*="d
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__main p:-abp-contains(/Реклама.* ИНН /i))
 a18504 1
 allbasketball.org##.team-odd
+d19452 1
+a19452 2
+rozetka.com.ua#?#[rzadvertisingview]:-abp-has(> div > span > rz-advertising-info-btn)
+rozetka.com.ua#?#[rzscrollersliderbar] > div > .slide:-abp-has(> rz-product-tile [aria-label*=" про рекламу"])
 a20230 1
 allbasketball.org##a[href^="https://go.getdirectbonus.com/"]
+d22045 1
+a22045 1
+rozetka.com.ua#?#rz-catalog-goods > .item:-abp-has(> rz-product-tile [aria-label*=" про рекламу"])
 d22314 2
 a22315 2
 ||static.dzeninfra.ru/s3/zen-apps/commets2/*/*/$script
@@ -52,20 +67,24 @@ a22345 1
 a22409 1
 pikabu.ru#?#.story:-abp-has(div:-abp-properties(content: none))
 d22422 1
+a23376 1
+rbc.ru##.weather-widget
 a23414 1
 rbc.ru#?#div[class="central-publisher-item"]:-abp-has(div[class*="styles_word-break"]:-abp-contains(Реклама,))
 d23611 1
 a23611 2
 www.ukr.net##[data-bn]
 www.ukr.net##[data-report-ad-id]
+a23644 1
+ya.ru##section[style*="-cection-items-count:"]
 d26748 1
 a26748 1
 dailymail.co.uk,fashion2news.com,hotallnews.today,ilenta.com,in-poland.com,kreschatic.kiev.ua,moyens.net,newspad.ru,pimpletv.ru,portaltele.com.ua,pravda.com.ua,tales.org.ua,ukranews.com,wormax.io,zazloo.ru##.fc-ab-root
 d26962 1
 d28410 1
 a28410 2
-ya.ru##[action="https://ya.ru/search/"] ~ aside ~ div[style]
-ya.ru##[class*=" feed"][style*="--masonry-"]
+ya.ru##[action="https://ya.ru/search/"] ~ div[style]
+ya.ru##[class*="feed__error"]
 d28412 1
 d28446 1
 a28446 1

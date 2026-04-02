@@ -1,14 +1,15 @@
-diff name:ruadlist lines:126 checksum:50d7fc4000
+diff name:ruadlist lines:145 checksum:fdc3234dd9
 d4 2
 a5 2
-! Last modified: Thu, 02 Apr 2026 05:45:49 +0000
-! Diff-Path: ../patches/2026.4.2.345.patch#ruadlist
+! Last modified: Thu, 02 Apr 2026 11:05:01 +0000
+! Diff-Path: ../patches/2026.4.2.665.patch#ruadlist
 d6602 1
 a7507 4
 ! Чёрный трекинг
 ||adfax.ru^$third-party
 ||qoopler.ru^$third-party
 ||victorycorp.ru^$third-party
+d9188 1
 a9216 1
 .yandex.*banerid$popup
 a10227 1
@@ -33,12 +34,16 @@ allbasketball.org###block-main-schedules > .border-bottom
 d13978 1
 a13981 1
 allbasketball.org###branding-wrapper
+d15257 1
 a15784 1
 allbasketball.org##.block-betting
 a15790 1
 allbasketball.org##.block-cf-fixed
 a16015 1
 s1pcprogs.ru##.btn-dw-ya
+d16065 1
+a16065 1
+rozetka.com.ua#?#.catalog-grid > .catalog-grid__cell:-abp-has(> rz-catalog-tile [aria-label*=" про рекламу"])
 a16440 1
 online-fix.me##.errors
 a16862 1
@@ -46,6 +51,9 @@ online-fix.me#?#.informer-sidebar-block:-abp-has(> #aclib)
 d17043 1
 a17043 1
 24tv.ua,football24.ua,sport24.ua,zaxid.net##.legal
+d17065 1
+a17065 1
+rozetka.com.ua#?#.list > rz-product-tile:-abp-has(> article [aria-label*=" про рекламу"])
 d18196 1
 a18421 1
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__main .story__advert-info)
@@ -58,6 +66,10 @@ a18499 1
 allbasketball.org##.team-odd
 a18976 1
 pcprogs.net##.ya
+d19446 1
+a19446 2
+rozetka.com.ua#?#[rzadvertisingview]:-abp-has(> div > span > rz-advertising-info-btn)
+rozetka.com.ua#?#[rzscrollersliderbar] > div > .slide:-abp-has(> rz-product-tile [aria-label*=" про рекламу"])
 d19710 1
 a19710 1
 777score.ru,animesure.org,football24.ru,games.portal.md,itorrents-igruha.net,itorrents-igruha.org,kino4k.in,kinofanonline.net,music-torrent.com,musictor.org,rg-mechanics.site,softbesplatno.net,texdizain.net,windowspro.ru##a[href*="aHR0c"]
@@ -73,6 +85,9 @@ a20934 1
 irr.by,myfootball.pw,myfootball.ws##div[class^="banner_"]
 a21923 1
 livelib.ru##main > article.main-slider
+d22037 1
+a22037 1
+rozetka.com.ua#?#rz-catalog-goods > .item:-abp-has(> rz-product-tile [aria-label*=" про рекламу"])
 d22306 2
 a22307 2
 ||static.dzeninfra.ru/s3/zen-apps/commets2/*/*/$script
@@ -83,12 +98,16 @@ a22337 1
 a22401 1
 pikabu.ru#?#.story:-abp-has(div:-abp-properties(content: none))
 d22414 1
+a23368 1
+rbc.ru##.weather-widget
 a23406 1
 rbc.ru#?#div[class="central-publisher-item"]:-abp-has(div[class*="styles_word-break"]:-abp-contains(Реклама,))
 d23603 1
 a23603 2
 www.ukr.net##[data-bn]
 www.ukr.net##[data-report-ad-id]
+a23636 1
+ya.ru##section[style*="-cection-items-count:"]
 d26740 1
 a26740 1
 dailymail.co.uk,fashion2news.com,hotallnews.today,ilenta.com,in-poland.com,kreschatic.kiev.ua,moyens.net,newspad.ru,pimpletv.ru,portaltele.com.ua,pravda.com.ua,tales.org.ua,ukranews.com,wormax.io,zazloo.ru##.fc-ab-root
@@ -96,8 +115,8 @@ d26954 1
 d27914 2
 d28404 1
 a28404 2
-ya.ru##[action="https://ya.ru/search/"] ~ aside ~ div[style]
-ya.ru##[class*=" feed"][style*="--masonry-"]
+ya.ru##[action="https://ya.ru/search/"] ~ div[style]
+ya.ru##[class*="feed__error"]
 d28406 1
 d28440 1
 a28440 1
