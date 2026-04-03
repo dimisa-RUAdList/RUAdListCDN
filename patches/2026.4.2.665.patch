@@ -1,8 +1,8 @@
-diff name:ruadlist lines:56 checksum:55656f3fed
+diff name:ruadlist lines:70 checksum:7e4b1a30c5
 d4 2
 a5 2
-! Last modified: Fri, 03 Apr 2026 03:22:46 +0000
-! Diff-Path: ../patches/2026.4.3.202.patch#ruadlist
+! Last modified: Fri, 03 Apr 2026 09:06:31 +0000
+! Diff-Path: ../patches/2026.4.3.546.patch#ruadlist
 d2809 1
 d3981 4
 d10498 1
@@ -19,6 +19,8 @@ a10701 1
 /api*iframe$subdocument,domain=intermusic.name|iplayer.info|ipleer.fm
 d12369 2
 d12833 1
+a13842 1
+meteovesti.ru###adv-slot
 d15211 1
 d16396 1
 d16452 1
@@ -27,15 +29,24 @@ d17487 2
 d17666 1
 a17666 1
 iplayer.info,ipleer.fm##.playlist-ad
+d18440 1
+a18440 1
+pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__main p:-abp-contains(/Реклама.* ИНН/i))
 d18687 1
 d18781 1
 d18821 2
 d19372 1
 a19372 1
 cools.biz,cools.dj,intermusic.name,iplayer.info,ipleer.fm,k1news.ru,kolesa.kz,market4game.ru,vmuzice.me,yellowpages.uz##[id*="Banner"]
+a19514 1
+meteovesti.ru##[style="width:728px;height:90px;min-height:90px;overflow:hidden;"]
+a19518 1
+meteovesti.ru##[style^="width:100%"][style*=";height:2"][style*=";min-height:2"]
 d19641 1
 a19641 1
 hen-tay.com,mymedicalportal.net,samru.ru,work.ua##a[href*="/go.php"][target="_blank"]
+a20375 1
+pikabu.ru##article[data-author-id="2"]
 a21293 1
 yap.ru,yaplakal.com##div[id^="MF_"]
 d21341 1
@@ -44,6 +55,9 @@ advizzer.com,bigkyiv.com.ua,bragazeta.ru,cataclysmdda.ru,chehov-vid.ru,coollib.n
 d21693 1
 a21693 1
 yap.ru,yaplakal.com#?#form > table[id]:nth-of-type(2):-abp-has(b:-abp-contains(Yap))
+a22070 1
+meteovesti.ru#?#section:-abp-has(> .border-bottom > .row [style="width:728px;height:90px;min-height:90px;overflow:hidden;"])
+d22444 1
 d26239 1
 d26306 2
 d27675 2

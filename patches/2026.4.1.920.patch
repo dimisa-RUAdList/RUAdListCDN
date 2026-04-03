@@ -1,8 +1,8 @@
-diff name:ruadlist lines:81 checksum:55656f3fed
+diff name:ruadlist lines:95 checksum:7e4b1a30c5
 d4 2
 a5 2
-! Last modified: Fri, 03 Apr 2026 03:22:46 +0000
-! Diff-Path: ../patches/2026.4.3.202.patch#ruadlist
+! Last modified: Fri, 03 Apr 2026 09:06:31 +0000
+! Diff-Path: ../patches/2026.4.3.546.patch#ruadlist
 d2809 1
 d3981 4
 d9191 1
@@ -20,6 +20,8 @@ a10702 1
 /api*iframe$subdocument,domain=intermusic.name|iplayer.info|ipleer.fm
 d12370 2
 d12834 1
+a13843 1
+meteovesti.ru###adv-slot
 d15212 1
 d15266 1
 d16077 1
@@ -35,6 +37,9 @@ d17489 2
 d17668 1
 a17668 1
 iplayer.info,ipleer.fm##.playlist-ad
+d18442 1
+a18442 1
+pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__main p:-abp-contains(/Реклама.* ИНН/i))
 d18689 1
 d18783 1
 d18823 2
@@ -45,9 +50,15 @@ d19465 1
 a19465 2
 rozetka.com.ua#?#[rzadvertisingview]:-abp-has(> div > span > rz-advertising-info-btn)
 rozetka.com.ua#?#[rzscrollersliderbar] > div > .slide:-abp-has(> rz-product-tile [aria-label*=" про рекламу"])
+a19515 1
+meteovesti.ru##[style="width:728px;height:90px;min-height:90px;overflow:hidden;"]
+a19519 1
+meteovesti.ru##[style^="width:100%"][style*=";height:2"][style*=";min-height:2"]
 d19642 1
 a19642 1
 hen-tay.com,mymedicalportal.net,samru.ru,work.ua##a[href*="/go.php"][target="_blank"]
+a20376 1
+pikabu.ru##article[data-author-id="2"]
 a21294 1
 yap.ru,yaplakal.com##div[id^="MF_"]
 d21342 1
@@ -59,9 +70,12 @@ yap.ru,yaplakal.com#?#form > table[id]:nth-of-type(2):-abp-has(b:-abp-contains(Y
 d22059 1
 a22059 1
 rozetka.com.ua#?#rz-catalog-goods > .item:-abp-has(> rz-product-tile [aria-label*=" про рекламу"])
+a22071 1
+meteovesti.ru#?#section:-abp-has(> .border-bottom > .row [style="width:728px;height:90px;min-height:90px;overflow:hidden;"])
 a22423 1
 pikabu.ru#?#.story:-abp-has(div:-abp-properties(content: none))
 d22436 1
+d22445 1
 a23390 1
 rbc.ru##.weather-widget
 a23660 1

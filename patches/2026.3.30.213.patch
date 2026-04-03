@@ -1,8 +1,8 @@
-diff name:ruadlist lines:154 checksum:55656f3fed
+diff name:ruadlist lines:165 checksum:7e4b1a30c5
 d4 2
 a5 2
-! Last modified: Fri, 03 Apr 2026 03:22:46 +0000
-! Diff-Path: ../patches/2026.4.3.202.patch#ruadlist
+! Last modified: Fri, 03 Apr 2026 09:06:31 +0000
+! Diff-Path: ../patches/2026.4.3.546.patch#ruadlist
 d2809 1
 d3981 4
 d6602 1
@@ -36,6 +36,8 @@ a12303 1
 ||mir24.tv/api/advertising-grids/
 d12365 2
 d12829 1
+a13838 1
+meteovesti.ru###adv-slot
 a13953 1
 allbasketball.org###block-main-schedules > .border-bottom
 d13981 1
@@ -69,7 +71,7 @@ a18429 1
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__main [href*="dhwnh.com"])
 a18430 2
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__main [title*="dhwnh.com"])
-pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__main p:-abp-contains(/Реклама.* ИНН /i))
+pikabu.ru#?#.stories-feed__container > .story:-abp-has(> .story__main p:-abp-contains(/Реклама.* ИНН/i))
 a18504 1
 allbasketball.org##.team-odd
 d18676 1
@@ -82,11 +84,17 @@ d19452 1
 a19452 2
 rozetka.com.ua#?#[rzadvertisingview]:-abp-has(> div > span > rz-advertising-info-btn)
 rozetka.com.ua#?#[rzscrollersliderbar] > div > .slide:-abp-has(> rz-product-tile [aria-label*=" про рекламу"])
+a19502 1
+meteovesti.ru##[style="width:728px;height:90px;min-height:90px;overflow:hidden;"]
+a19506 1
+meteovesti.ru##[style^="width:100%"][style*=";height:2"][style*=";min-height:2"]
 d19629 1
 a19629 1
 hen-tay.com,mymedicalportal.net,samru.ru,work.ua##a[href*="/go.php"][target="_blank"]
 a20230 1
 allbasketball.org##a[href^="https://go.getdirectbonus.com/"]
+a20362 1
+pikabu.ru##article[data-author-id="2"]
 a21280 1
 yap.ru,yaplakal.com##div[id^="MF_"]
 d21328 1
@@ -98,6 +106,8 @@ yap.ru,yaplakal.com#?#form > table[id]:nth-of-type(2):-abp-has(b:-abp-contains(Y
 d22045 1
 a22045 1
 rozetka.com.ua#?#rz-catalog-goods > .item:-abp-has(> rz-product-tile [aria-label*=" про рекламу"])
+a22057 1
+meteovesti.ru#?#section:-abp-has(> .border-bottom > .row [style="width:728px;height:90px;min-height:90px;overflow:hidden;"])
 d22314 2
 a22315 2
 ||static.dzeninfra.ru/s3/zen-apps/commets2/*/*/$script
@@ -108,6 +118,7 @@ a22345 1
 a22409 1
 pikabu.ru#?#.story:-abp-has(div:-abp-properties(content: none))
 d22422 1
+d22431 1
 a23376 1
 rbc.ru##.weather-widget
 a23414 1
