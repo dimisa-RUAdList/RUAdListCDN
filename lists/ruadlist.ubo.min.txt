@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 05 Apr 2026 13:17:51 +0000
-! Diff-Path: ../patches/2026.4.5.797.patch#ruadlist
+! Last modified: Sun, 05 Apr 2026 19:00:10 +0000
+! Diff-Path: ../patches/2026.4.5.1140.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22413,6 +22413,7 @@ pikabu.ru#?#.story:-abp-has(div:-abp-properties(content: none))
 dtf.ru##.supbar--top * *
 fonmod.com,ritsatv.ru,websdr.su##:not(my-obnaruzhili-blokirovshchik)
 android-mafia.com,game4you.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##:not(this-site-promotes-malware)
+pikabu.ru#?#:xpath(//comment()[starts-with(., "story_ad_") and contains(., "_start")]/following-sibling::article[1])
 @@||fearmp4.ru^$generichide
 @@||ozon.ru/highlight/kursk-$elemhide
 liveinternet.ru,sdamgia.ru##[data-container]
@@ -23167,7 +23168,7 @@ ngnovoros.ru,ngzt.ru,progorod59.ru,progorodchelny.ru,progorodnsk.ru,progorodsama
 pg46.ru,usolie.info##a[href*="//dzen.ru/"]
 progorod62.ru##body > section.container.bg-background
 lipetsknews.ru,myliski.ru,newskrasnodar.ru,ngnovoros.ru,pg02.ru,pg11.ru,pg12.ru,pg13.ru,pg21.ru,pg37.ru,pg46.ru,pgr76.ru,prochepetsk.ru,prodzer.ru,progorod33.ru,progorodnn.ru,progoroduhta.ru,prosaratov.ru,usolie.info,vladivostoktimes.ru,youtvnews.com#?#div[class*="layout_contentRightStretch_"]:-abp-has(> div:only-child:empty)
-pg11.ru##div[class^="article-content_articleBannerSlot_"]
+lipetsknews.ru,myliski.ru,newskrasnodar.ru,newtambov.ru,ngnovoros.ru,pg02.ru,pg11.ru,pg12.ru,pg13.ru,pg21.ru,pg37.ru,pg46.ru,pgn21.ru,pgr76.ru,prochepetsk.ru,prodzer.ru,progorod33.ru,progorod43.ru,progorod58.ru,progorod59.ru,progorod62.ru,progorod76.ru,progorodnn.ru,progoroduhta.ru,prosaratov.ru,usolie.info,vladivostoktimes.ru,youtvnews.com##div[class^="article-content_articleBannerSlot_"]
 pg11.ru,pg12.ru,pg13.ru,pg21.ru,prochepetsk.ru,prodzer.ru,progorod33.ru,progorod43.ru,progorod58.ru,progorod76.ru,progorodnn.ru,progoroduhta.ru##div[class^="social-list-subscribe"] > a[href*="yandex."]
 ! Rambler.RU и их проекты
 gazeta.ru###_id_sber_auth
@@ -29347,7 +29348,6 @@ pronpic.org##div[style="color:red;font-size:25px;"], .adblock_loock
 fanserial.*,fanserialstv.net,hdrezka.*,rezka.*##+js(set-constant, Object.prototype.preroll, undefined)
 fap-guru.*,seks-studentki.*,sex-studentki.*##+js(addEventListener-defuser, DOMContentLoaded, click_time)
 google-cloud.services,spac.me,spaces.im,spcs.bio,strip2.co,strip2.*,usersporn.com##+js(abort-current-inline-script, __require, /clickunder/)
-google-cloud.services,spac.me,spaces.im,spcs.bio,strip2.co,strip2.*,usersporn.com##+js(abort-on-property-read, Object.prototype.initOnPlay)
 google-cloud.services,spac.me,spaces.im,spcs.bio,strip2.co,strip2.*,usersporn.com##+js(set, Object.prototype.ads/mobiads, undefined)
 hdrezka.*,rezka.*##+js(abort-current-inline-script, document.getElementsByTagName, AMSP.loadAsset)
 howdyho.*##+js(no-setTimeout-if, _0x)

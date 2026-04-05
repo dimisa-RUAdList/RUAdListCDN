@@ -1,8 +1,8 @@
-diff name:ruadlist lines:64 checksum:a3241b0a82
+diff name:ruadlist lines:68 checksum:824cfc32e1
 d4 2
 a5 2
-! Last modified: Sun, 05 Apr 2026 13:17:51 +0000
-! Diff-Path: ../patches/2026.4.5.797.patch#ruadlist
+! Last modified: Sun, 05 Apr 2026 19:00:10 +0000
+! Diff-Path: ../patches/2026.4.5.1140.patch#ruadlist
 d19291 1
 a19291 1
 anilib.me,animelib.org,hentailib.me,hentailib.org,mangalib.me,mangalib.org,ranobelib.me,shlib.life,yaoilib.net##[data-scroll-content] > a[target="_blank"]:not([href="https://app.lib.social/app2.html"])
@@ -18,6 +18,8 @@ dnl.com.ua,dnl.dn.ua,go64.ru,gubkinskiy.com,infoniac.ru,lipetskmedia.ru,paparazz
 d22347 1
 a22347 1
 ||pikabu.ru/ajax/*?nmg6H=$xmlhttprequest
+a22415 1
+pikabu.ru#?#:xpath(//comment()[starts-with(., "story_ad_") and contains(., "_start")]/following-sibling::article[1])
 d23158 1
 a23158 1
 /api/banner$xmlhttprequest,domain=lipetsknews.ru|myliski.ru|newskrasnodar.ru|newtambov.ru|ngnovoros.ru|pg02.ru|pg11.ru|pg12.ru|pg13.ru|pg21.ru|pg37.ru|pg46.ru|pgn21.ru|pgr76.ru|prochepetsk.ru|prodzer.ru|progorod33.ru|progorod43.ru|progorod58.ru|progorod59.ru|progorod62.ru|progorod76.ru|progorodnn.ru|progoroduhta.ru|prosaratov.ru|usolie.info|vladivostoktimes.ru|youtvnews.com
@@ -27,9 +29,10 @@ lipetsknews.ru,myliski.ru,newskrasnodar.ru,newtambov.ru,ngnovoros.ru,pg02.ru,pg1
 d23165 1
 a23165 1
 lipetsknews.ru,myliski.ru,newskrasnodar.ru,newtambov.ru,ngnovoros.ru,pg02.ru,pg11.ru,pg12.ru,pg13.ru,pg21.ru,pg37.ru,pg46.ru,pgn21.ru,pgr76.ru,prochepetsk.ru,prodzer.ru,progorod33.ru,progorod43.ru,progorod58.ru,progorod59.ru,progorod62.ru,progorod76.ru,progorodnn.ru,progoroduhta.ru,prosaratov.ru,usolie.info,vladivostoktimes.ru,youtvnews.com##[class^="banner"]
-d23169 1
-a23169 1
+d23169 2
+a23170 2
 lipetsknews.ru,myliski.ru,newskrasnodar.ru,ngnovoros.ru,pg02.ru,pg11.ru,pg12.ru,pg13.ru,pg21.ru,pg37.ru,pg46.ru,pgr76.ru,prochepetsk.ru,prodzer.ru,progorod33.ru,progorodnn.ru,progoroduhta.ru,prosaratov.ru,usolie.info,vladivostoktimes.ru,youtvnews.com#?#div[class*="layout_contentRightStretch_"]:-abp-has(> div:only-child:empty)
+lipetsknews.ru,myliski.ru,newskrasnodar.ru,newtambov.ru,ngnovoros.ru,pg02.ru,pg11.ru,pg12.ru,pg13.ru,pg21.ru,pg37.ru,pg46.ru,pgn21.ru,pgr76.ru,prochepetsk.ru,prodzer.ru,progorod33.ru,progorod43.ru,progorod58.ru,progorod59.ru,progorod62.ru,progorod76.ru,progorodnn.ru,progoroduhta.ru,prosaratov.ru,usolie.info,vladivostoktimes.ru,youtvnews.com##div[class^="article-content_articleBannerSlot_"]
 d26782 1
 a26782 1
 /help?ajax=1&name=about_cookie$xmlhttprequest,domain=reshuent.ru|sdamgia.ru
@@ -49,6 +52,7 @@ reshuent.ru,sdamgia.ru##.SubjectMenu_desktop.PageLayout-Nav:style(position: stic
 d29247 1
 a29247 1
 reshuent.ru,sdamgia.ru##.googlead.pub_300x250.pub_300x250m.pub_728x90.text-ad.textAd.text_ad.text_ads.text-ads.text-ad-links:style(display: block !important)
+d29350 1
 d29359 3
 a29361 3
 reshuent.ru,sdamgia.ru##main > div > div > div:has-text(/rotator|блокировщик/)

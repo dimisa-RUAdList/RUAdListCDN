@@ -1,8 +1,8 @@
-diff name:ruadlist lines:157 checksum:a3241b0a82
+diff name:ruadlist lines:161 checksum:824cfc32e1
 d4 2
 a5 2
-! Last modified: Sun, 05 Apr 2026 13:17:51 +0000
-! Diff-Path: ../patches/2026.4.5.797.patch#ruadlist
+! Last modified: Sun, 05 Apr 2026 19:00:10 +0000
+! Diff-Path: ../patches/2026.4.5.1140.patch#ruadlist
 d2809 1
 d3981 4
 d9191 1
@@ -91,6 +91,8 @@ a22359 1
 ||pikabu.ru/ajax/*?nmg6H=$xmlhttprequest
 a22423 1
 pikabu.ru#?#.story:-abp-has(div:-abp-properties(content: none))
+a22426 1
+pikabu.ru#?#:xpath(//comment()[starts-with(., "story_ad_") and contains(., "_start")]/following-sibling::article[1])
 d22436 1
 d22445 1
 d23171 1
@@ -102,9 +104,10 @@ lipetsknews.ru,myliski.ru,newskrasnodar.ru,newtambov.ru,ngnovoros.ru,pg02.ru,pg1
 d23178 1
 a23178 1
 lipetsknews.ru,myliski.ru,newskrasnodar.ru,newtambov.ru,ngnovoros.ru,pg02.ru,pg11.ru,pg12.ru,pg13.ru,pg21.ru,pg37.ru,pg46.ru,pgn21.ru,pgr76.ru,prochepetsk.ru,prodzer.ru,progorod33.ru,progorod43.ru,progorod58.ru,progorod59.ru,progorod62.ru,progorod76.ru,progorodnn.ru,progoroduhta.ru,prosaratov.ru,usolie.info,vladivostoktimes.ru,youtvnews.com##[class^="banner"]
-d23182 1
-a23182 1
+d23182 2
+a23183 2
 lipetsknews.ru,myliski.ru,newskrasnodar.ru,ngnovoros.ru,pg02.ru,pg11.ru,pg12.ru,pg13.ru,pg21.ru,pg37.ru,pg46.ru,pgr76.ru,prochepetsk.ru,prodzer.ru,progorod33.ru,progorodnn.ru,progoroduhta.ru,prosaratov.ru,usolie.info,vladivostoktimes.ru,youtvnews.com#?#div[class*="layout_contentRightStretch_"]:-abp-has(> div:only-child:empty)
+lipetsknews.ru,myliski.ru,newskrasnodar.ru,newtambov.ru,ngnovoros.ru,pg02.ru,pg11.ru,pg12.ru,pg13.ru,pg21.ru,pg37.ru,pg46.ru,pgn21.ru,pgr76.ru,prochepetsk.ru,prodzer.ru,progorod33.ru,progorod43.ru,progorod58.ru,progorod59.ru,progorod62.ru,progorod76.ru,progorodnn.ru,progoroduhta.ru,prosaratov.ru,usolie.info,vladivostoktimes.ru,youtvnews.com##div[class^="article-content_articleBannerSlot_"]
 a23390 1
 rbc.ru##.weather-widget
 a23660 1
@@ -142,6 +145,7 @@ reshuent.ru,sdamgia.ru##.SubjectMenu_desktop.PageLayout-Nav:style(position: stic
 d29261 1
 a29261 1
 reshuent.ru,sdamgia.ru##.googlead.pub_300x250.pub_300x250m.pub_728x90.text-ad.textAd.text_ad.text_ads.text-ads.text-ad-links:style(display: block !important)
+d29364 1
 d29373 3
 a29375 3
 reshuent.ru,sdamgia.ru##main > div > div > div:has-text(/rotator|блокировщик/)
