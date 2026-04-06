@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 06 Apr 2026 09:20:24 +0000
-! Diff-Path: ../patches/2026.4.6.560.patch#ruadlist
+! Last modified: Mon, 06 Apr 2026 15:01:46 +0000
+! Diff-Path: ../patches/2026.4.6.901.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -16104,7 +16104,7 @@ glazey.info##.client
 literaguru.ru##.clinic-image
 gorodkiev.com.ua##.clr[style]
 timeweb.com##.cmn-banner-container
-ahen.me,allhen.online,doramatv.live,doramatv.one,doramatv.ru,findanime.ru,grouple.co,koro.life,librebook.me,mintmanga.one,mose.su,readmanga.io,selflib.me,selfmanga.live,usagi.one##.co_ba
+ahen.me,allhen.online,doramatv.live,doramatv.one,doramatv.ru,findani.me,findanime.me,findanime.ru,grouple.co,koro.life,librebook.me,mintmanga.one,mose.su,readmanga.io,selflib.me,selfmanga.live,usagi.one##.co_ba
 click-or-die.ru##.cod-price-widget-container
 click-or-die.ru##.cod-ratings-widget
 024.by,ampercar.com,autogeek.com.ua,bolshoyulov.ru,disgustingmen.com,femmie.ru,find-key.ru,fuzzmusic.ru,gadgets-help.ru,gubdaily.ru,hersonweek.net,itbusiness.com.ua,itsider.com.ua,kakbog.com,karavan.ua,kovi.ru,liza.ua,marieclaire.ua,mmr.net.ua,nnews.com.ua,o-polze.com,pcminipro.ru,poravkrym.ru,villaved.ru,vsviti.com.ua##.code-block
@@ -20707,7 +20707,7 @@ the-village.ru##div[class*="-BannerPlaceholder-"]
 servernews.ru,stolicaonego.ru##div[class*="-banner"]
 noi.md##div[class*="-bnr"]
 moskva.fm,piter.fm##div[class*="-branding-"] > a[target="_blank"]
-allhen.online,doramatv.live,doramatv.one,doramatv.ru,findanime.ru,grouple.co,librebook.me,mintmanga.one,mose.su,readmanga.io,selflib.me,selfmanga.live,usagi.one##div[class*="-brnd"]
+allhen.online,doramatv.live,doramatv.one,doramatv.ru,findani.me,findanime.me,findanime.ru,grouple.co,librebook.me,mintmanga.one,mose.su,readmanga.io,selflib.me,selfmanga.live,usagi.one##div[class*="-brnd"]
 kinoafisha.info##div[class*="-fix "][class$="as-desktop"]
 mmo13.ru##div[class*="300x600"]
 gazetametro.ru##div[class*="AdBox"]
@@ -22409,11 +22409,9 @@ anidub.vip,anidubonline.com##.plyr__progress__buffer
 dtf.ru##.rotator
 dtf.ru##.sticky-stack-sidebar-section .loader + div[id][class]:empty
 pikabu.ru#?#.stories-feed__container > .story:-abp-has(div:-abp-properties(/min-height: 20.px|min-height: 29.px|min-height: 30.px|min-height: 300./))
-pikabu.ru#?#.story:-abp-has(div:-abp-properties(content: none))
 dtf.ru##.supbar--top * *
 fonmod.com,ritsatv.ru,websdr.su##:not(my-obnaruzhili-blokirovshchik)
 android-mafia.com,game4you.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##:not(this-site-promotes-malware)
-pikabu.ru#?#:xpath(//comment()[starts-with(., "story_ad_") and contains(., "_start")]/following-sibling::article[1])
 @@||fearmp4.ru^$generichide
 @@||ozon.ru/highlight/kursk-$elemhide
 liveinternet.ru,sdamgia.ru##[data-container]
@@ -27920,6 +27918,8 @@ ohotniki.ru##.adv-banner__right:style(min-height: 0 !important)
 www.okino.ua##.fader-social
 www.okino.ua##.social-open:style(overflow: auto !important)
 ! ---
+online-fix.me##.full-story-header:style(color: #222 !important)
+! ---
 onliner.by##.adfox-banner-background ~ .layout-container:style(max-width: unset !important; top: unset !important)
 pogoda.onliner.by,tech.onliner.by##.g-container-outer > div:style(height: auto !important)
 ! ---
@@ -29245,6 +29245,7 @@ gamemag.ru##.content-text:has(em:has-text(erid:)) a > strong:style(font-weight: 
 gamemag.ru##.content-text:has(em:has-text(erid:)) a:style(pointer-events: none !important; color: inherit !important)
 playground.ru##.dfp-container:remove()
 smotrim.ru##.dialog-wrapper
+online-fix.me#@#.full-story-header:style(color: #222 !important)
 reshuent.ru,sdamgia.ru##.googlead.pub_300x250.pub_300x250m.pub_728x90.text-ad.textAd.text_ad.text_ads.text-ads.text-ad-links:style(display: block !important)
 rbc.ru##.js-index-doscroll audio[autoplay]:remove()
 igromania.ru#?#.knb-grid-container > [data-io-article-url]:-abp-has(> [class^="MaterialItemHead_head"] [href="/tags/partnyorskij-material/"]) > .knb-grid-container [class^="material-content_"] a[href][target="_blank"]:not([href^="https://www.igromania.ru/"]):style(color: inherit !important; pointer-events: none !important)
