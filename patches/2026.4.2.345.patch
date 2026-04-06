@@ -1,8 +1,8 @@
-diff name:ruadlist lines:156 checksum:2d8419e849
+diff name:ruadlist lines:195 checksum:9788ad9b84
 d4 2
 a5 2
-! Last modified: Mon, 06 Apr 2026 06:04:28 +0000
-! Diff-Path: ../patches/2026.4.6.364.patch#ruadlist
+! Last modified: Mon, 06 Apr 2026 09:20:24 +0000
+! Diff-Path: ../patches/2026.4.6.560.patch#ruadlist
 d2809 1
 d3981 4
 d9191 1
@@ -63,7 +63,7 @@ d19642 1
 a19642 1
 hen-tay.com,mymedicalportal.net,samru.ru,work.ua##a[href*="/go.php"][target="_blank"]
 a20376 1
-pikabu.ru##article[data-author-id="2"]
+pikabu.ru##article[data-author-id="3"]
 d20877 1
 a20877 1
 hentailib.me,hentailib.org,mangalib.me,mangalib.org,ranobelib.me,shlib.life,yaoilib.net##div[class][style="margin-top: 20px; margin-bottom: 20px;"]
@@ -86,9 +86,13 @@ a22059 1
 rozetka.com.ua#?#rz-catalog-goods > .item:-abp-has(> rz-product-tile [aria-label*=" про рекламу"])
 a22071 1
 meteovesti.ru#?#section:-abp-has(> .border-bottom > .row [style="width:728px;height:90px;min-height:90px;overflow:hidden;"])
+d22328 2
+a22329 2
+||static.dzeninfra.ru/s3/zen-apps/news-site/*/*/$script
+||static.dzeninfra.ru/s3/zen-apps/video-feed/*/*/$script
 d22359 1
 a22359 1
-||pikabu.ru/ajax/*?nmg6H=$xmlhttprequest
+||pikabu.ru/ajax/*?QW45r=$xmlhttprequest
 a22427 1
 pikabu.ru#?#:xpath(//comment()[starts-with(., "story_ad_") and contains(., "_start")]/following-sibling::article[1])
 d22445 1
@@ -105,6 +109,34 @@ d23182 2
 a23183 2
 lipetsknews.ru,myliski.ru,newskrasnodar.ru,ngnovoros.ru,pg02.ru,pg11.ru,pg12.ru,pg13.ru,pg21.ru,pg37.ru,pg46.ru,pgr76.ru,prochepetsk.ru,prodzer.ru,progorod33.ru,progorodnn.ru,progoroduhta.ru,prosaratov.ru,usolie.info,vladivostoktimes.ru,youtvnews.com#?#div[class*="layout_contentRightStretch_"]:-abp-has(> div:only-child:empty)
 lipetsknews.ru,myliski.ru,newskrasnodar.ru,newtambov.ru,ngnovoros.ru,pg02.ru,pg11.ru,pg12.ru,pg13.ru,pg21.ru,pg37.ru,pg46.ru,pgn21.ru,pgr76.ru,prochepetsk.ru,prodzer.ru,progorod33.ru,progorod43.ru,progorod58.ru,progorod59.ru,progorod62.ru,progorod76.ru,progorodnn.ru,progoroduhta.ru,prosaratov.ru,usolie.info,vladivostoktimes.ru,youtvnews.com##div[class^="article-content_articleBannerSlot_"]
+d23234 1
+a23234 1
+rambler.ru,rambler.ua,www.afisha.ru##[aria-label="Реклама"]
+d23246 1
+a23246 1
+rambler.ru,rambler.ua##[data-news_media-desktop*="rnet_widget"]
+d23256 1
+a23256 1
+avtorambler.com,rambler.ru,rambler.ua#?#[id^="rambler-"] ~ div:-abp-has(> div > [data-rcmw-init])
+d23280 1
+a23280 1
+avtorambler.com,rambler.ru,rambler.ua#?#div:-abp-has(> div[id^="adfox-"][id*="rambler"])
+d23289 1
+a23289 1
+avtorambler.com,rambler.ru,rambler.ua##div[class*="banner-"]
+d23305 3
+a23307 3
+avtorambler.com,rambler.ru,rambler.ua##div[style^="min-height: 250px"]
+avtorambler.com,rambler.ru,rambler.ua##div[style^="min-height: 290px"]
+avtorambler.com,rambler.ru,rambler.ua##div[style^="min-height: 300px"]
+d23312 3
+a23314 3
+avtorambler.com,rambler.ru,rambler.ua##div[style^="min-height:250px"]
+avtorambler.com,rambler.ru,rambler.ua##div[style^="min-height:290px"]
+avtorambler.com,rambler.ru,rambler.ua##div[style^="min-height:300px"]
+d23317 1
+a23317 1
+avtorambler.com,rambler.ru,rambler.ua##div[style^="order:"][style*="-1"]
 a23390 1
 rbc.ru##.weather-widget
 a23660 1
@@ -124,9 +156,16 @@ d28425 2
 a28426 2
 ya.ru##[action="https://ya.ru/search/"] ~ div[style]
 ya.ru##[class*="feed"][class*="masonry"]
-d28460 1
-a28460 1
+d28460 2
+a28461 2
 dzen.ru##div[class*="topContent"] > div:first-child + div > article[class*="_cardWrapper-"][id]:style(background: inherit !important)
+dzen.ru##div[class^="dzen-desktop--"][class*="_main-"] div[style^="--top-padding:"]
+d28494 2
+a28499 3
+dzen.ru##div[class*="content_with-new-layout"] > div[id] ~ div[id]
+dzen.ru##div[class*="content_with-new-layout"] > div[id]:first-child + div[class^="news"]
+dzen.ru##div[class*="discreteStory"] > div[class*="metachannel"] ~ div[id]
+d28504 1
 d28838 1
 a28838 1
 auto.ru,reshuent.ru,sdamgia.ru##+js(abort-on-property-read, Object.prototype.isAdfox)
