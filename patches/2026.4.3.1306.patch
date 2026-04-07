@@ -1,8 +1,8 @@
-diff name:ruadlist lines:121 checksum:751d30f3ef
+diff name:ruadlist lines:121 checksum:2d027d3fa3
 d4 2
 a5 2
-! Last modified: Mon, 06 Apr 2026 19:14:50 +0000
-! Diff-Path: ../patches/2026.4.6.1154.patch#ruadlist
+! Last modified: Tue, 07 Apr 2026 03:25:37 +0000
+! Diff-Path: ../patches/2026.4.7.205.patch#ruadlist
 d16107 1
 a16107 1
 ahen.me,allhen.online,doramatv.live,doramatv.one,doramatv.ru,findani.me,findanime.me,findanime.ru,grouple.co,koro.life,librebook.me,mintmanga.one,mose.su,readmanga.io,selflib.me,selfmanga.live,usagi.one##.co_ba
@@ -88,7 +88,7 @@ dzen.ru##div[class^="dzen-desktop--"][class*="_main-"] div[style^="--top-padding
 d28479 2
 a28484 3
 dzen.ru##div[class*="content_with-new-layout"] > div[id] ~ div[id]
-dzen.ru##div[class*="content_with-new-layout"] > div[id]:first-child + div[class^="news"]
+dzen.ru##div[class*="content_with-new-layout"] > div[id]:first-child + div[class^="news"]:not(:last-child):not([aria-label])
 dzen.ru##div[class*="discreteStory"] > div[class*="metachannel"] ~ div[id]
 d28489 1
 d28823 1
