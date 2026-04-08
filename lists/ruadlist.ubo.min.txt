@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 08 Apr 2026 11:11:36 +0000
-! Diff-Path: ../patches/2026.4.8.671.patch#ruadlist
+! Last modified: Wed, 08 Apr 2026 17:17:26 +0000
+! Diff-Path: ../patches/2026.4.8.1037.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -13133,7 +13133,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||spbdnevnik.ru/media/_b/$image
 ||spbit.ru/uploads/Banner/
 ||special.matchtv.ru/feeds/
-||special.pikabu.ru/*/banner.html
+||special.pikabu.ru^$domain=~special.pikabu.ru
 ||specials*.servicecdn.ru/$domain=dtf.ru|vc.ru
 ||speedtest.org.ua/pirate
 ||spiker.club/ads/
@@ -16162,7 +16162,6 @@ tabletki.ua##.com__panel-container
 tabletki.ua##.com__panel-header
 pcportal.org##.come_d
 news.tj##.comment-area .newsbox-outer-banner
-pikabu.ru##.comment__control_tbank
 kirov.online##.comments ~ noindex
 diablo.su##.comments-area
 superhumor.ru,voffka.com##.comments-head
@@ -19095,6 +19094,7 @@ glavred.info,glavred.net,unian.info,unian.net,unian.ua##[class*="bnr-block"]
 euro-football.ru,football.konkurent.ua##[class*="bookmaker"]
 cybersport.ru##[class*="bookmaker"]:not(.root)
 argumenti.ru##[class*="cc_adv"]
+pikabu.ru##[class*="comment__control_tbank"]
 mcrate.su##[class*="commerc_panel"]
 dni.ru##[class*="container"][class*="partner"]
 prokuzbass.ru##[class*="container-ad"]
@@ -22342,7 +22342,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=levik.blog|livejournal.c
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
 ||ng72.ru^$csp=script-src 'self' 'unsafe-eval' https:
-||pikabu.ru/ajax/*?QW45r=$xmlhttprequest
+||pikabu.ru/ajax/*?QW55r=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document

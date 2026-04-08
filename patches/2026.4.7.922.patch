@@ -1,19 +1,25 @@
-diff name:ruadlist lines:18 checksum:42314874db
+diff name:ruadlist lines:24 checksum:dc83899d3a
 d4 2
 a5 2
-! Last modified: Wed, 08 Apr 2026 11:11:36 +0000
-! Diff-Path: ../patches/2026.4.8.671.patch#ruadlist
+! Last modified: Wed, 08 Apr 2026 17:17:26 +0000
+! Diff-Path: ../patches/2026.4.8.1037.patch#ruadlist
 a9578 1
 ||tp.media^$popup
 d10273 1
 d10946 1
 d10972 1
+d13138 1
+a13138 1
+||special.pikabu.ru^$domain=~special.pikabu.ru
 a15164 1
 babyblog.ru##.adfox__topWrapper
 d15971 1
 d16100 1
-a16167 1
-pikabu.ru##.comment__control_tbank
 d16734 1
 d17212 1
 d17434 1
+a19102 1
+pikabu.ru##[class*="comment__control_tbank"]
+d22350 1
+a22350 1
+||pikabu.ru/ajax/*?QW55r=$xmlhttprequest
