@@ -1,11 +1,15 @@
-diff name:ruadlist lines:98 checksum:36164e93ca
+diff name:ruadlist lines:112 checksum:f646eb5c50
 d4 2
 a5 2
-! Last modified: Thu, 09 Apr 2026 07:51:49 +0000
-! Diff-Path: ../patches/2026.4.9.471.patch#ruadlist
+! Last modified: Thu, 09 Apr 2026 14:06:40 +0000
+! Diff-Path: ../patches/2026.4.9.846.patch#ruadlist
 d8096 1
 a8096 1
 /media/banners/*$domain=~altex.ro|~furaffinity.net
+a9066 1
+##div[class="ad-zone"]
+a9098 1
+##div[id^="movie_banner_"][style^="margin:"]
 a9578 1
 ||tp.media^$popup
 d10273 1
@@ -79,9 +83,18 @@ a23304 1
 avtorambler.com,rambler.ru,rambler.ua##div[style^="order:"][style*="-1"]
 a23416 1
 rbc.ru#?#div[class="central-publisher-item"]:-abp-has(.commercial-slider p:-abp-contains(Реклама))
+a23689 1
+yandex.ru,yandex.*##div[class^="advert-card--content-feed-"]
+a23693 1
+yandex.ru,yandex.*#?#[class^="feed__row--content-feed-"]:-abp-has(> div[class^="advert-card--content-feed-"])
 d25917 1
 d26048 1
 d26149 1
+d26560 1
+d26667 1
+a26667 1
+@@||yandex.ru/ads/system/context.js|$script,domain=limehd.tv|litehd.tv|pervyi-tv.online|russia-tv.online|shadowcore.ru|tvzvezda.ru|volley.ru
+d27604 1
 a27921 2
 online-fix.me##.full-story-header:style(color: #222 !important)
 ! ---
@@ -97,3 +110,4 @@ d28489 1
 a29246 1
 online-fix.me#@#.full-story-header:style(color: #222 !important)
 d29350 1
+d29515 7

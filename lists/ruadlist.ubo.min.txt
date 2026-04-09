@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 09 Apr 2026 07:51:49 +0000
-! Diff-Path: ../patches/2026.4.9.471.patch#ruadlist
+! Last modified: Thu, 09 Apr 2026 14:06:40 +0000
+! Diff-Path: ../patches/2026.4.9.846.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -9064,6 +9064,7 @@ me##body[onfocus*="reloadliveblock"] > #bugoverlay ~ table tr > td[height^="9"][
 ##div[class*="relap"][class*="-rec-item"]
 ##div[class*="spklw"][data-type="ad"]
 ##div[class*="td-a-rec-id-"]
+##div[class="ad-zone"]
 ##div[class^="adfinity_block"]
 ##div[class^="bidvol-widget-"]
 ##div[class^="block_fortress"]
@@ -9096,6 +9097,7 @@ me##body[onfocus*="reloadliveblock"] > #bugoverlay ~ table tr > td[height^="9"][
 ##div[id^="infox_"]
 ##div[id^="itizergroup_"]
 ##div[id^="join_informer_"]
+##div[id^="movie_banner_"][style^="margin:"]
 ##div[id^="news_2xclick_ru_"]
 ##div[id^="news_nest_msk_ru"]
 ##div[id^="news_nest_net_ru"]
@@ -23685,10 +23687,12 @@ yandex.ru,yandex.*##.stat_pixel_yes[onclick][class*="_layout_"][class*="_format_
 yandex.ru,yandex.*##a[href*="//ads.adfox.ru/"]
 yandex.ru,yandex.*##body[class*="b-page_alt-widgets_yes"] .feed ._need-stub
 yandex.ru,yandex.*##div[class$="ear_js_inited"] > a[href^="//awaps.yandex.ru"]
+yandex.ru,yandex.*##div[class^="advert-card--content-feed-"]
 yandex.ru,yandex.*##img[src*="yandex.net/get-direct"]
 yandex.ru,yandex.*#?##search-result > .serp-list__card:-abp-has(> div .organic__subtitle > span:-abp-contains(/[РPeекламa]{6,7}/))
 yandex.ru,yandex.*#?#.scroller__wrap > .showcase__item:-abp-has(.product-card__direct)
 yandex.ru,yandex.*#?#.scroller__wrap > div[class^="minibadge"]:-abp-has(.serp-item .label:-abp-contains(реклама))
+yandex.ru,yandex.*#?#[class^="feed__row--content-feed-"]:-abp-has(> div[class^="advert-card--content-feed-"])
 |https://dzen.ru/*/*/*/$subdocument,domain=dzen.ru
 ||awaps.yandex.
 ||bs-meta.yandex.$script,xmlhttprequest
@@ -26552,7 +26556,6 @@ gbsmp.ru#@#img[width="728"][height="90"]
 @@||drahelas.ru/r/www/delivery/spc.php?zones=$script,domain=drahelas.ru
 @@||drahelas.ru/r/www/delivery/spcjs.php?id=$script,domain=drahelas.ru
 @@||easymc.io/ads/px.gif?ch=$image,domain=easymc.io
-@@||forum.ixbt.com/js/fotkidepo/baners//*.js|$script,domain=forum.ixbt.com
 @@||fosshub.com/media/js/adblock.js|$domain=fosshub.com
 @@||fwdcdn.com^*/advertisment.js|$script
 @@||gamesglue.com/game_core/check/ima3.js|$script,domain=gameswf.com
@@ -26659,7 +26662,7 @@ gbsmp.ru#@#img[width="728"][height="90"]
 @@||xn--b1ajehof.xn--80asehdb^$script,domain=xn--b1ajehof.xn--80asehdb
 @@||yandex.ru/ads/system/adsdk.js$script,domain=aniboom.one|api-video.khl.ru|gisher.org|karaoke.ru|kino.tricolor.tv|m24.ru|peers.tv|player.mediavitrina.ru|ren.tv
 @@||yandex.ru/ads/system/context.js|$domain=examenpdd.com|forum.qrz.ru|yvid.ru
-@@||yandex.ru/ads/system/context.js|$script,domain=forum.ixbt.com|limehd.tv|litehd.tv|pervyi-tv.online|russia-tv.online|shadowcore.ru|tvzvezda.ru|volley.ru
+@@||yandex.ru/ads/system/context.js|$script,domain=limehd.tv|litehd.tv|pervyi-tv.online|russia-tv.online|shadowcore.ru|tvzvezda.ru|volley.ru
 @@||yarik-sat.com/reklama/*.js|$script,domain=yarik-sat.com
 @@||yastatic.net/safeframe-bundles/0.83/host.js|$script,domain=examenpdd.com
 @@||zx-pk.ru/abp/adblock_detector.js|$script,domain=zx-pk.ru
@@ -27596,7 +27599,6 @@ ixbt.com##body:not([class*="dark:"]):style(background-color: inherit !important)
 ! ---
 forum.ixbt.com##.body_content_table > .left.column:style(margin-right: 0 !important; width: 100% !important)
 forum.ixbt.com##.body_wrapper:style(max-width: 100% !important)
-forum.ixbt.com##.deskadv:style(position: absolute !important; top: -10000px !important; height: 34px !important)
 forum.ixbt.com##.fullscreen_branding ~ .body_content_table:style(margin-top: 0 !important; z-index: 0 !important)
 forum.ixbt.com##.left.column > #question.dialog_thanks:style(left: 67% !important)
 ! ---
@@ -29509,13 +29511,6 @@ bookdream.ru,booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkn
 bookdream.ru,booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkniga.ru,skanbooks.ru,x-libri.ru##+js(addEventListener-defuser, copy, preventDefault)
 bookdream.ru,booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkniga.ru,skanbooks.ru,x-libri.ru##+js(href-sanitizer, .specialcontdown > a[href^="/download?downloadlink="], ?downloadlink)
 bookdream.ru,booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkniga.ru,skanbooks.ru,x-libri.ru##+js(set-attr, .specialcontdown > a, download)
-! forum.ixbt.com
-@@||yandex.ru/ads/adfox/$xmlhttprequest,domain=forum.ixbt.com
-@@||yandex.ru/ads/system/header-bidding.js|$script,domain=forum.ixbt.com
-@@||yastatic.net/partner-code-bundles/*/*.js|$script,domain=forum.ixbt.com
-forum.ixbt.com##+js(abort-on-stack-trace, Object.prototype.getBid, /header-bidding.js)
-forum.ixbt.com##.deskadv div div:remove()
-forum.ixbt.com#@#.deskadv
 !#if !env_mobile
 libertycity.net,libertycity.ru,vgtimes.com,vgtimes.ru###mobileon
 libertycity.net,libertycity.ru,vgtimes.com,vgtimes.ru##+js(set-cookie, is_mobile, no, , reload, 1)

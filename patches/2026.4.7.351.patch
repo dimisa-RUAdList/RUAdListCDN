@@ -1,11 +1,15 @@
-diff name:ruadlist lines:41 checksum:36164e93ca
+diff name:ruadlist lines:55 checksum:f646eb5c50
 d4 2
 a5 2
-! Last modified: Thu, 09 Apr 2026 07:51:49 +0000
-! Diff-Path: ../patches/2026.4.9.471.patch#ruadlist
+! Last modified: Thu, 09 Apr 2026 14:06:40 +0000
+! Diff-Path: ../patches/2026.4.9.846.patch#ruadlist
 d8096 1
 a8096 1
 /media/banners/*$domain=~altex.ro|~furaffinity.net
+a9066 1
+##div[class="ad-zone"]
+a9098 1
+##div[id^="movie_banner_"][style^="margin:"]
 a9578 1
 ||tp.media^$popup
 d10273 1
@@ -37,6 +41,16 @@ a22347 1
 ||pikabu.ru/ajax/*?QW55r=$xmlhttprequest
 a23415 1
 rbc.ru#?#div[class="central-publisher-item"]:-abp-has(.commercial-slider p:-abp-contains(Реклама))
+a23688 1
+yandex.ru,yandex.*##div[class^="advert-card--content-feed-"]
+a23692 1
+yandex.ru,yandex.*#?#[class^="feed__row--content-feed-"]:-abp-has(> div[class^="advert-card--content-feed-"])
 d25916 1
 d26047 1
 d26148 1
+d26559 1
+d26666 1
+a26666 1
+@@||yandex.ru/ads/system/context.js|$script,domain=limehd.tv|litehd.tv|pervyi-tv.online|russia-tv.online|shadowcore.ru|tvzvezda.ru|volley.ru
+d27603 1
+d29516 7
