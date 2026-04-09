@@ -1,8 +1,8 @@
-diff name:ruadlist lines:112 checksum:f646eb5c50
+diff name:ruadlist lines:145 checksum:d94af17fa9
 d4 2
 a5 2
-! Last modified: Thu, 09 Apr 2026 14:06:40 +0000
-! Diff-Path: ../patches/2026.4.9.846.patch#ruadlist
+! Last modified: Thu, 09 Apr 2026 17:17:45 +0000
+! Diff-Path: ../patches/2026.4.9.1037.patch#ruadlist
 d8096 1
 a8096 1
 /media/banners/*$domain=~altex.ro|~furaffinity.net
@@ -30,6 +30,7 @@ d16107 1
 a16107 1
 ahen.me,allhen.online,doramatv.live,doramatv.one,doramatv.ru,findani.me,findanime.me,findanime.ru,grouple.co,koro.life,librebook.me,mintmanga.one,mose.su,readmanga.io,selflib.me,selfmanga.live,usagi.one##.co_ba
 d16732 1
+d17050 6
 d17210 1
 d17432 1
 a19100 1
@@ -49,10 +50,35 @@ a22317 2
 d22347 1
 a22347 1
 ||pikabu.ru/ajax/*?QW55r=$xmlhttprequest
+d22365 2
+a22366 2
+championat.com,lenta.ru##.js-scroll-to-site {remove:true;}
+cq.ru##[class*="grid"] > a:has(.p-item__button-sponsored) {remove:true;}
+a22369 1
+gazeta.press,gazeta.ru##.b_flowup {remove:true;}
+d22371 5
+a22375 6
+ixbt.com##.clickable_zone {remove:true;}
+ixbt.com##style[id^="branding-"] {remove:true;}
+lenta.ru##.layout__content > .js-topic:has(.topic-header__erid) {remove:true;}
+lenta.ru##.topic-body__content> .box-external-video:last-child {remove:true;}
+lenta.ru##.topic-footer > div[class^="box-"][class$="-video"] {remove:true;}
+lenta.ru##.vk-video-popup {remove:true;}
+d22377 2
+a22378 2
+tapochek.net##body:has(#register_link) > canvas
+tapochek.net##body:has(#register_link) > canvas {remove:true;}
+d22380 3
+a22382 3
+uwupad.me##style:has-text(lb-banner-height) {remove:true;}
+vk.com,vk.ru##head > style:has-text(/adchoice|mkit_|outlineBanner/i) {remove:true;}
+www.ixbt.com##body > style:has-text(margin-top) {remove:true;}
 d22412 1
 d23170 1
 a23170 1
 lipetsknews.ru,myliski.ru,newskrasnodar.ru,newtambov.ru,ngnovoros.ru,pg02.ru,pg11.ru,pg12.ru,pg13.ru,pg21.ru,pg37.ru,pg46.ru,pgn21.ru,pgr76.ru,prochepetsk.ru,prodzer.ru,progorod33.ru,progorod43.ru,progorod58.ru,progorod59.ru,progorod62.ru,progorod76.ru,progorodnn.ru,progoroduhta.ru,prosaratov.ru,usolie.info,vladivostoktimes.ru,youtvnews.com##div[class^="article-content_articleBannerSlot_"]
+a23205 1
+lenta.ru#?#.layout__content > .js-topic:-abp-has(.topic-header__erid)
 d23221 1
 a23221 1
 rambler.ru,rambler.ua,www.afisha.ru##[aria-label="Реклама"]
@@ -68,6 +94,8 @@ avtorambler.com,rambler.ru,rambler.ua#?#div:-abp-has(> div[id^="adfox-"][id*="ra
 d23276 1
 a23276 1
 avtorambler.com,rambler.ru,rambler.ua##div[class*="banner-"]
+a23289 1
+gazeta.press,gazeta.ru##div[style^="height:"][style*="vh"]:empty
 d23292 3
 a23294 3
 avtorambler.com,rambler.ru,rambler.ua##div[style^="min-height: 250px"]
@@ -107,7 +135,12 @@ dzen.ru##div[class*="content_with-new-layout"] > div[id] ~ div[id]
 dzen.ru##div[class*="content_with-new-layout"] > div[id]:first-child + div[class^="news"]:not(:last-child):not([aria-label])
 dzen.ru##div[class*="discreteStory"] > div[class*="metachannel"] ~ div[id]
 d28489 1
+a29240 1
+gazeta.press,gazeta.ru##.b_flowup:remove()
 a29246 1
 online-fix.me#@#.full-story-header:style(color: #222 !important)
+a29251 1
+lenta.ru##.layout__content > .js-topic:has(.topic-header__erid):remove()
+d29323 1
 d29350 1
 d29515 7
