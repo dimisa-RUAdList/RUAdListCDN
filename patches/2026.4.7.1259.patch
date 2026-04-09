@@ -1,8 +1,8 @@
-diff name:ruadlist lines:70 checksum:d94af17fa9
+diff name:ruadlist lines:82 checksum:559f85cf63
 d4 2
 a5 2
-! Last modified: Thu, 09 Apr 2026 17:17:45 +0000
-! Diff-Path: ../patches/2026.4.9.1037.patch#ruadlist
+! Last modified: Thu, 09 Apr 2026 22:56:09 +0000
+! Diff-Path: ../patches/2026.4.9.1376.patch#ruadlist
 a9066 1
 ##div[class="ad-zone"]
 a9098 1
@@ -13,6 +13,14 @@ d10973 1
 d13139 1
 a13139 1
 ||special.pikabu.ru^$domain=~special.pikabu.ru
+a13951 1
+anti-malware.ru###block-block-33
+a14382 1
+anti-malware.ru###main_second_ban
+a14491 1
+anti-malware.ru###page-header[role="banner"]
+a14536 1
+anti-malware.ru###popup-ank
 a15165 1
 babyblog.ru##.adfox__topWrapper
 d15972 1
@@ -22,6 +30,8 @@ d16736 1
 d17054 6
 d17214 1
 d17436 1
+a18088 1
+anti-malware.ru##.searchbar_ad
 a19104 1
 pikabu.ru##[class*="comment__control_tbank"]
 d22352 1
@@ -62,6 +72,8 @@ d26562 1
 d26669 1
 a26669 1
 @@||yandex.ru/ads/system/context.js|$script,domain=limehd.tv|litehd.tv|pervyi-tv.online|russia-tv.online|shadowcore.ru|tvzvezda.ru|volley.ru
+a27051 1
+anti-malware.ru##header .social:style(opacity: 0 !important; pointer-events: none !important)
 d27606 1
 a29244 1
 gazeta.press,gazeta.ru##.b_flowup:remove()
