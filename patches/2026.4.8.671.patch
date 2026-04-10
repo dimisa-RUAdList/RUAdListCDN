@@ -1,29 +1,85 @@
-diff name:ruadlist lines:72 checksum:05e77d4e5b
+diff name:ruadlist lines:140 checksum:5aff573183
 d4 2
 a5 2
-! Last modified: Fri, 10 Apr 2026 09:20:56 +0000
-! Diff-Path: ../patches/2026.4.10.560.patch#ruadlist
+! Last modified: Fri, 10 Apr 2026 13:43:25 +0000
+! Diff-Path: ../patches/2026.4.10.823.patch#ruadlist
+a8607 1
+~dzen.ru,~sportsdzen.ru##[href*="dzen.ru%2F"]
 a9066 1
 ##div[class="ad-zone"]
 a9098 1
 ##div[id^="movie_banner_"][style^="margin:"]
+a10166 1
+radio1.ru##.alertw
 d13136 1
 a13136 1
 ||special.pikabu.ru^$domain=~special.pikabu.ru
+d13782 1
 a13948 1
 anti-malware.ru###block-block-33
+d14101 1
+a14234 1
+sportsdaily.ru###header-menu-item-260
 a14379 1
 anti-malware.ru###main_second_ban
 a14488 1
 anti-malware.ru###page-header[role="banner"]
 a14533 1
 anti-malware.ru###popup-ank
+d15028 1
+a15028 1
+comedy-radio.ru,energyfm.ru,radioromantika.ru,relax-fm.ru,veseloeradio.ru##.D_Top
+a15063 1
+360.ru##._1lm4gq66
 d16165 1
+a16165 2
+pikabu.ru##.comment__control > span
+pikabu.ru##.comment__control_tbank_
+d16420 1
+a16420 1
+mcmaison.ru##.elle-special-projects
+a16750 2
+bst.bratsk.ru##.headerMainInlineLi > .adv-overlay
+bst.bratsk.ru##.headerMainInlineLi > .adv-overlay + .item-link
+d16773 1
+a16840 1
+mcmaison.ru##.in-content-recomendations
 d17049 6
+a17523 1
+penzainform.ru##.page-ad-internal
+a18035 1
+livejournal.com##.s-header-item__link--interesting
+d18062 1
 a18081 1
 anti-malware.ru##.searchbar_ad
-a19097 1
-pikabu.ru##[class*="comment__control_tbank"]
+d19198 1
+a19334 1
+mash.ru##[href="/go/dzen/"]
+d19532 1
+a19612 1
+sportsdaily.ru##a[href*="/bonuses/"]
+a19613 1
+sportsdaily.ru##a[href*="/bookmakers/"]
+d20702 1
+a20702 1
+mash.ru#?#div[class*=" styles_wrapper_"]:-abp-has(> [href="/go/dzen/"])
+d20868 1
+a20868 1
+kaktus.kg,kaktus.media,mir24.tv##div[class^="Banner"]
+a20947 1
+sportsdaily.ru##div[class^="bkPromo"]
+d20988 1
+a20988 1
+doctorpiter.ru,marieclaire.ru,maximonline.ru,mcmaison.ru,parents.ru,psychologies.ru,starhit.ru,the-day.ru,thegirl.ru,vokrugsveta.ru,woman.ru##div[class^="creative-placeholder"]
+a21023 1
+sportsdaily.ru##div[class^="header_headerGift"]
+a21075 1
+sportsdaily.ru##div[class^="promoMenu_giftButton_"]
+a21675 1
+sportsdaily.ru##footer > [style="display: flex; flex-direction: column;"]
+d21961 1
+a22063 1
+sportsdaily.ru##section[class^="footerMenu_wrap_"]
 d22345 1
 a22345 1
 ||pikabu.ru/ajax/*?QW55r=$xmlhttprequest
@@ -50,6 +106,9 @@ a22380 3
 uwupad.me##style:has-text(lb-banner-height) {remove:true;}
 vk.com,vk.ru##head > style:has-text(/adchoice|mkit_|outlineBanner/i) {remove:true;}
 www.ixbt.com##body > style:has-text(margin-top) {remove:true;}
+d22411 1
+a22411 1
+ritsatv.ru,websdr.su##:not(my-obnaruzhili-blokirovshchik)
 a23202 1
 lenta.ru#?#.layout__content > .js-topic:-abp-has(.topic-header__erid)
 a23286 1
@@ -65,6 +124,15 @@ a26662 1
 a27044 1
 anti-malware.ru##header .social:style(opacity: 0 !important; pointer-events: none !important)
 d27599 1
+d28208 2
+a28998 1
+livejournal.com##+js(href-sanitizer, a[href^="https://www.livejournal.com/away?to="], ?to)
+d29043 1
+d29050 1
+a29087 1
+pikabu.ru##+js(remove-class, comment__control_tbank_, .comment__control)
+a29212 1
+finuslugi.ru##+js(set-local-storage-item, headerBannerShownAt, 1)
 a29237 1
 gazeta.press,gazeta.ru##.b_flowup:remove()
 a29249 1
