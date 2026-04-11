@@ -1,8 +1,8 @@
-diff name:ruadlist lines:80 checksum:ad4c78ddbc
+diff name:ruadlist lines:110 checksum:488bbd1a52
 d4 2
 a5 2
-! Last modified: Sat, 11 Apr 2026 05:37:10 +0000
-! Diff-Path: ../patches/2026.4.11.337.patch#ruadlist
+! Last modified: Sat, 11 Apr 2026 09:53:25 +0000
+! Diff-Path: ../patches/2026.4.11.593.patch#ruadlist
 a8607 1
 ~dzen.ru,~sportsdzen.ru##[href*="dzen.ru%2F"]
 a10168 1
@@ -16,6 +16,10 @@ a15034 1
 comedy-radio.ru,energyfm.ru,radioromantika.ru,relax-fm.ru,veseloeradio.ru##.D_Top
 a15069 1
 360.ru##._1lm4gq66
+d15245 1
+a15245 1
+1obl.ru,biofile.ru,flashgames.ru,footballreview.ru,forum.mista.ru,girlsgogames.ru,inforesist.org,kubnews.ru,nightwarez.ru,nur.kz,paparazzi.ru,serialu.tv##.advert
+d15328 1
 a16170 2
 pikabu.ru##.comment__control > span
 pikabu.ru##.comment__control_tbank_
@@ -33,7 +37,11 @@ penzainform.ru##.page-ad-internal
 a18034 1
 livejournal.com##.s-header-item__link--interesting
 d18061 1
+d18603 1
+a18603 1
+1fnl.ru,1tulatv.ru,afanasy.biz,bookslist.me,bragazeta.ru,dengi.ua,dnepr24.com.ua,football.ua,frankivchany.if.ua,fullsite.org,gazeta.zp.ua,job.ru,km.ru,konkurent.ua,kr24.com.ua,litrpg.ru,livejournal.ru,mylinks.ws,nikolaev24.com.ua,novosti-n.org,odessa.net.ua,prm.ru,rusnext.ru,russia.ru,rusvesna.su,samara24.ru,smilekaluga.ru,study.ru,ucheba.ru,ura-inform.com,v-variant.com.ua,wildo.ru##.top-banner
 d19098 1
+d19131 1
 d19199 1
 a19335 1
 mash.ru##[href="/go/dzen/"]
@@ -42,9 +50,18 @@ a19613 1
 sportsdaily.ru##a[href*="/bonuses/"]
 a19614 1
 sportsdaily.ru##a[href*="/bookmakers/"]
+a20357 1
+domodedovoriamo.ru,korolevriamo.ru,krasnogorskriamo.ru,lubertsyriamo.ru,mytischiriamo.ru,podolskriamo.ru,reutovriamo.ru,riamo.ru,riamobalashiha.ru,schelkovoriamo.ru,sergposadriamo.ru##article ul > li > button
+a20577 1
+riamo.ru#?#button:-abp-has(> svg > [clip-path*="dzen"])
 d20703 1
 a20703 1
 mash.ru#?#div[class*=" styles_wrapper_"]:-abp-has(> [href="/go/dzen/"])
+a20861 4
+korolevriamo.ru,mytischiriamo.ru,riamo.ru,schelkovoriamo.ru##div[class][style^="--"][style$=":120px;"]
+riamo.ru,riamobalashiha.ru##div[class][style^="--"][style$=":250px;"]
+riamo.ru##div[class][style^="--"][style$=":300px;"]
+riamo.ru##div[class][style^="--"][style$=":500px;"]
 d20869 1
 a20869 1
 kaktus.kg,kaktus.media,mir24.tv##div[class^="Banner"]
@@ -57,6 +74,7 @@ a21024 1
 sportsdaily.ru##div[class^="header_headerGift"]
 a21076 1
 sportsdaily.ru##div[class^="promoMenu_giftButton_"]
+d21607 1
 a21676 1
 sportsdaily.ru##footer > [style="display: flex; flex-direction: column;"]
 d21962 1
@@ -68,6 +86,9 @@ a22346 1
 d22414 1
 a22414 1
 ritsatv.ru,websdr.su##:not(my-obnaruzhili-blokirovshchik)
+d24985 1
+a24985 1
+||player.panda.video/*luster.js$third-party
 d28214 2
 a29004 1
 livejournal.com##+js(href-sanitizer, a[href^="https://www.livejournal.com/away?to="], ?to)
@@ -75,7 +96,16 @@ d29049 1
 d29056 1
 a29093 1
 pikabu.ru##+js(remove-class, comment__control_tbank_, .comment__control)
+d29100 1
+a29100 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, div, /Ad.block|Adb-|Adblock|киратор|Ублок/)
+d29102 1
+a29102 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /A.d.b.|Adb-|A-d-b-|-Gua|dGua|dblo|tick|Адгуард/)
 d29117 1
 d29203 1
 a29218 1
 finuslugi.ru##+js(set-local-storage-item, headerBannerShownAt, 1)
+d29649 2
+a29650 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##body > div:has(> [style*="height"])

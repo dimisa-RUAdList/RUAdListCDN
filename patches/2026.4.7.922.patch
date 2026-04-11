@@ -1,8 +1,8 @@
-diff name:ruadlist lines:153 checksum:ad4c78ddbc
+diff name:ruadlist lines:183 checksum:488bbd1a52
 d4 2
 a5 2
-! Last modified: Sat, 11 Apr 2026 05:37:10 +0000
-! Diff-Path: ../patches/2026.4.11.337.patch#ruadlist
+! Last modified: Sat, 11 Apr 2026 09:53:25 +0000
+! Diff-Path: ../patches/2026.4.11.593.patch#ruadlist
 a8607 1
 ~dzen.ru,~sportsdzen.ru##[href*="dzen.ru%2F"]
 a9066 1
@@ -38,6 +38,10 @@ a15065 1
 360.ru##._1lm4gq66
 a15164 1
 babyblog.ru##.adfox__topWrapper
+d15240 1
+a15240 1
+1obl.ru,biofile.ru,flashgames.ru,footballreview.ru,forum.mista.ru,girlsgogames.ru,inforesist.org,kubnews.ru,nightwarez.ru,nur.kz,paparazzi.ru,serialu.tv##.advert
+d15323 1
 d15971 1
 d16100 1
 a16167 2
@@ -63,6 +67,10 @@ livejournal.com##.s-header-item__link--interesting
 d18067 1
 a18086 1
 anti-malware.ru##.searchbar_ad
+d18608 1
+a18608 1
+1fnl.ru,1tulatv.ru,afanasy.biz,bookslist.me,bragazeta.ru,dengi.ua,dnepr24.com.ua,football.ua,frankivchany.if.ua,fullsite.org,gazeta.zp.ua,job.ru,km.ru,konkurent.ua,kr24.com.ua,litrpg.ru,livejournal.ru,mylinks.ws,nikolaev24.com.ua,novosti-n.org,odessa.net.ua,prm.ru,rusnext.ru,russia.ru,rusvesna.su,samara24.ru,smilekaluga.ru,study.ru,ucheba.ru,ura-inform.com,v-variant.com.ua,wildo.ru##.top-banner
+d19135 1
 d19203 1
 a19339 1
 mash.ru##[href="/go/dzen/"]
@@ -71,9 +79,18 @@ a19617 1
 sportsdaily.ru##a[href*="/bonuses/"]
 a19618 1
 sportsdaily.ru##a[href*="/bookmakers/"]
+a20361 1
+domodedovoriamo.ru,korolevriamo.ru,krasnogorskriamo.ru,lubertsyriamo.ru,mytischiriamo.ru,podolskriamo.ru,reutovriamo.ru,riamo.ru,riamobalashiha.ru,schelkovoriamo.ru,sergposadriamo.ru##article ul > li > button
+a20581 1
+riamo.ru#?#button:-abp-has(> svg > [clip-path*="dzen"])
 d20707 1
 a20707 1
 mash.ru#?#div[class*=" styles_wrapper_"]:-abp-has(> [href="/go/dzen/"])
+a20865 4
+korolevriamo.ru,mytischiriamo.ru,riamo.ru,schelkovoriamo.ru##div[class][style^="--"][style$=":120px;"]
+riamo.ru,riamobalashiha.ru##div[class][style^="--"][style$=":250px;"]
+riamo.ru##div[class][style^="--"][style$=":300px;"]
+riamo.ru##div[class][style^="--"][style$=":500px;"]
 d20873 1
 a20873 1
 kaktus.kg,kaktus.media,mir24.tv##div[class^="Banner"]
@@ -86,6 +103,7 @@ a21028 1
 sportsdaily.ru##div[class^="header_headerGift"]
 a21080 1
 sportsdaily.ru##div[class^="promoMenu_giftButton_"]
+d21611 1
 a21680 1
 sportsdaily.ru##footer > [style="display: flex; flex-direction: column;"]
 d21966 1
@@ -128,6 +146,9 @@ a23692 1
 yandex.ru,yandex.*##div[class^="advert-card--content-feed-"]
 a23696 1
 yandex.ru,yandex.*#?#[class^="feed__row--content-feed-"]:-abp-has(> div[class^="advert-card--content-feed-"])
+d24983 1
+a24983 1
+||player.panda.video/*luster.js$third-party
 d26560 1
 d26667 1
 a26667 1
@@ -142,6 +163,12 @@ d29048 1
 d29055 1
 a29092 1
 pikabu.ru##+js(remove-class, comment__control_tbank_, .comment__control)
+d29099 1
+a29099 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, div, /Ad.block|Adb-|Adblock|киратор|Ублок/)
+d29101 1
+a29101 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /A.d.b.|Adb-|A-d-b-|-Gua|dGua|dblo|tick|Адгуард/)
 d29116 1
 d29202 1
 a29217 1
@@ -152,3 +179,6 @@ a29254 1
 lenta.ru##.layout__content > .js-topic:has(.topic-header__erid):remove()
 d29326 1
 d29517 7
+d29654 2
+a29655 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##body > div:has(> [style*="height"])
