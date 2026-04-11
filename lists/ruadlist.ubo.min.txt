@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 11 Apr 2026 14:49:31 +0000
-! Diff-Path: ../patches/2026.4.11.889.patch#ruadlist
+! Last modified: Sat, 11 Apr 2026 19:01:23 +0000
+! Diff-Path: ../patches/2026.4.11.1141.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22727,6 +22727,7 @@ news.mail.ru##aside div > div:first-child:empty ~ div
 news.mail.ru#?#aside div:-abp-has(> div:only-child:empty)
 news.mail.ru##body > div > style + div[id]
 ! Дзен новости Mail-edition
+dzen.ru##.news-rubricator [href="https://dzen.ru/news/rubric/chronologic"]
 dzen.ru##[id*="20-"]
 dzen.ru##[id*="30-"]
 dzen.ru##[id*="_R-A-"]
@@ -22745,6 +22746,7 @@ dzen.ru##div[class*="Item-desktop__ad-"]
 dzen.ru##div[class*="MyTargetAdvert"]
 dzen.ru##div[class*="_advertItem"]
 sportsdzen.ru##div[class*="bookmakerOdds"]
+dzen.ru#?#div[class*="content_with-discrete-"] > div:-abp-has(> button)
 dzen.ru,sportsdzen.ru##div[class*="mascot-banner"]
 dzen.ru##div[class*="news-advert"]
 dzen.ru##div[class*="news_branding"]
@@ -29354,6 +29356,7 @@ sawlive.tv##body[onclick^="closeMyAd"] > div[id][style*="position"][style*="back
 cosplay-porn.*,fap-guru.*,mult-porno.*,sex-studentki.*##+js(remove-node-text, script, /initTeasers|initVads/)
 cosplay-porn.*,fap-guru.*,mult-porno.*,sex-studentki.*##+js(set-cookie-reload, is_age_verified, 1)
 disk.yandex.ru,disk.yandex.*##+js(remove-class, has-fullscreen-banner|has-right-direct, .public__root, stay)
+dzen.ru##div:matches-attr(/./=/meta-channel-pinner/) > div > div
 dzen.ru##div:matches-attr(/./=/meta-channel-pinner/) > div[id]
 dzen.ru##div:matches-attr(/./=dzenpro-banner)
 dzen.ru##div:matches-attr(/[a-z0-9]/=/_ad-yp/)

@@ -1,8 +1,8 @@
-diff name:ruadlist lines:140 checksum:38bc0d48c5
+diff name:ruadlist lines:145 checksum:0636703638
 d4 2
 a5 2
-! Last modified: Sat, 11 Apr 2026 14:49:31 +0000
-! Diff-Path: ../patches/2026.4.11.889.patch#ruadlist
+! Last modified: Sat, 11 Apr 2026 19:01:23 +0000
+! Diff-Path: ../patches/2026.4.11.1141.patch#ruadlist
 a8607 1
 ~dzen.ru,~sportsdzen.ru##[href*="dzen.ru%2F"]
 a10168 1
@@ -102,6 +102,10 @@ a22341 1
 d22409 1
 a22409 1
 ritsatv.ru,websdr.su##:not(my-obnaruzhili-blokirovshchik)
+a22709 1
+dzen.ru##.news-rubricator [href="https://dzen.ru/news/rubric/chronologic"]
+a22727 1
+dzen.ru#?#div[class*="content_with-discrete-"] > div:-abp-has(> button)
 d24980 1
 a24980 1
 ||player.panda.video/*luster.js$third-party
@@ -134,7 +138,8 @@ d29111 1
 d29197 1
 a29212 1
 finuslugi.ru##+js(set-local-storage-item, headerBannerShownAt, 1)
-a29338 1
+a29338 2
+dzen.ru##div:matches-attr(/./=/meta-channel-pinner/) > div > div
 dzen.ru##div:matches-attr(/./=/meta-channel-pinner/) > div[id]
 d29643 2
 a29644 1

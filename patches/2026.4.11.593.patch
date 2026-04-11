@@ -1,14 +1,18 @@
-diff name:ruadlist lines:22 checksum:38bc0d48c5
+diff name:ruadlist lines:27 checksum:0636703638
 d4 2
 a5 2
-! Last modified: Sat, 11 Apr 2026 14:49:31 +0000
-! Diff-Path: ../patches/2026.4.11.889.patch#ruadlist
+! Last modified: Sat, 11 Apr 2026 19:01:23 +0000
+! Diff-Path: ../patches/2026.4.11.1141.patch#ruadlist
 a16457 1
 speedtest.net.ua##.ext-box
 d22329 2
 a22330 2
 ||static.dzeninfra.ru/s3/zen-apps/dzen-layout/*/*/$script
 ||static.dzeninfra.ru/s3/zen-apps/dzen-mobile/*/*/$script
+a22728 1
+dzen.ru##.news-rubricator [href="https://dzen.ru/news/rubric/chronologic"]
+a22746 1
+dzen.ru#?#div[class*="content_with-discrete-"] > div:-abp-has(> button)
 d28460 2
 a28461 2
 dzen.ru##div[class^="dzen-desktop--"][style^="--top-padding:"]
@@ -19,5 +23,6 @@ a28492 2
 dzen.ru##[aria-label="Страница новостей"] > div[class] > div[class] > div[id] ~ div[id]
 dzen.ru##[aria-label="Страница новостей"] > div[class] > div[class] > div[id]:first-child + div[class^="news"]:not(:last-child):not([aria-label])
 d28498 3
-a29355 1
+a29355 2
+dzen.ru##div:matches-attr(/./=/meta-channel-pinner/) > div > div
 dzen.ru##div:matches-attr(/./=/meta-channel-pinner/) > div[id]
