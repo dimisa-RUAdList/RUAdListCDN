@@ -1,8 +1,8 @@
-diff name:ruadlist lines:155 checksum:488bbd1a52
+diff name:ruadlist lines:173 checksum:38bc0d48c5
 d4 2
 a5 2
-! Last modified: Sat, 11 Apr 2026 09:53:25 +0000
-! Diff-Path: ../patches/2026.4.11.593.patch#ruadlist
+! Last modified: Sat, 11 Apr 2026 14:49:31 +0000
+! Diff-Path: ../patches/2026.4.11.889.patch#ruadlist
 a8607 1
 ~dzen.ru,~sportsdzen.ru##[href*="dzen.ru%2F"]
 a10168 1
@@ -34,6 +34,8 @@ pikabu.ru##.comment__control_tbank_
 d16421 1
 a16421 1
 mcmaison.ru##.elle-special-projects
+a16450 1
+speedtest.net.ua##.ext-box
 a16751 2
 bst.bratsk.ru##.headerMainInlineLi > .adv-overlay
 bst.bratsk.ru##.headerMainInlineLi > .adv-overlay + .item-link
@@ -91,6 +93,10 @@ sportsdaily.ru##footer > [style="display: flex; flex-direction: column;"]
 d21963 1
 a22065 1
 sportsdaily.ru##section[class^="footerMenu_wrap_"]
+d22316 2
+a22317 2
+||static.dzeninfra.ru/s3/zen-apps/dzen-layout/*/*/$script
+||static.dzeninfra.ru/s3/zen-apps/dzen-mobile/*/*/$script
 d22347 1
 a22347 1
 ||pikabu.ru/ajax/*?QW65r=$xmlhttprequest
@@ -130,6 +136,16 @@ a24982 1
 a27047 1
 anti-malware.ru##header .social:style(opacity: 0 !important; pointer-events: none !important)
 d28210 2
+d28444 2
+a28445 2
+dzen.ru##div[class^="dzen-desktop--"][style^="--top-padding:"]
+dzen.ru##div[class^="dzen-desktop--content-app__content-"] > div > div:first-child > div:first-child + div:style(opacity: 0 !important; pointer-events: none !important)
+a28475 1
+dzen.ru##.news-sticky__inner > div > div[id]
+a28476 2
+dzen.ru##[aria-label="Страница новостей"] > div[class] > div[class] > div[id] ~ div[id]
+dzen.ru##[aria-label="Страница новостей"] > div[class] > div[class] > div[id]:first-child + div[class^="news"]:not(:last-child):not([aria-label])
+d28482 3
 a29000 1
 livejournal.com##+js(href-sanitizer, a[href^="https://www.livejournal.com/away?to="], ?to)
 d29045 1
@@ -151,6 +167,8 @@ gazeta.press,gazeta.ru##.b_flowup:remove()
 a29251 1
 lenta.ru##.layout__content > .js-topic:has(.topic-header__erid):remove()
 d29323 1
+a29339 1
+dzen.ru##div:matches-attr(/./=/meta-channel-pinner/) > div[id]
 d29644 2
 a29645 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##body > div:has(> [style*="height"])

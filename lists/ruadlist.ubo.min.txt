@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 11 Apr 2026 09:53:25 +0000
-! Diff-Path: ../patches/2026.4.11.593.patch#ruadlist
+! Last modified: Sat, 11 Apr 2026 14:49:31 +0000
+! Diff-Path: ../patches/2026.4.11.889.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -16455,6 +16455,7 @@ infocar.ua##.euroban
 shanson.name##.execphpwidget > div[id]:not([class]):not([style])
 diets.guru,pohudet.org##.exitblock
 autogrodno.by##.expautos_detail_right > .moduletable_menu:first-child > span
+speedtest.net.ua##.ext-box
 korabel.ru##.ext_link_img
 russian.rt.com##.external-widget
 pikabu.ru##.external_branding
@@ -22326,8 +22327,8 @@ ictv.ua,vikna.tv##div[id^="div-gpt-ad-"]
 ||dzen.ru/articles$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/news$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/pogoda/$script
-||static.dzeninfra.ru/s3/zen-apps/news-site/*/*/$script
-||static.dzeninfra.ru/s3/zen-apps/video-feed/*/*/$script
+||static.dzeninfra.ru/s3/zen-apps/dzen-layout/*/*/$script
+||static.dzeninfra.ru/s3/zen-apps/dzen-mobile/*/*/$script
 $csp=script-src-attr 'none',domain=eurointegration.com.ua|sportanalytic.com|notebookcheck-ru.com
 /^https?://24smi\.org/*[/]*[/][^\s]{8,}/$xmlhttprequest,domain=24smi.org
 ://mail.ru$csp=img-src 'self' https:
@@ -28457,8 +28458,8 @@ dzen.ru##div[class*="__bannerContainer"]
 dzen.ru##div[class*="dzen-"][class*="-banner-"]
 dzen.ru##div[class*="dzen-desktop--"][class*="__ad-"]
 dzen.ru##div[class*="dzen-desktop--top-sidebar-desktop-ad__root"]
-dzen.ru##div[class*="topContent"] > div:first-child + div > article[class*="_cardWrapper-"][id]:style(background: inherit !important)
-dzen.ru##div[class^="dzen-desktop--"][class*="_main-"] div[style^="--top-padding:"]
+dzen.ru##div[class^="dzen-desktop--"][style^="--top-padding:"]
+dzen.ru##div[class^="dzen-desktop--content-app__content-"] > div > div:first-child > div:first-child + div:style(opacity: 0 !important; pointer-events: none !important)
 dzen.ru##div[id*="splashscreen"]
 dzen.ru##div[style*="12.362637362637363"]
 dzen.ru##div[style*="important"] div[class*="__main"]
@@ -28489,15 +28490,15 @@ dzen.ru##.news-page-layout__rubricator ~ [id]
 dzen.ru##.news-rubric-desktop__adv-column
 dzen.ru##.news-rubric-desktop__news > section > div > div[id]
 dzen.ru##.news-secondary-layout-column__secondary div[id]
+dzen.ru##.news-sticky__inner > div > div[id]
 dzen.ru##.news-story-page div[id] > div:not([id]) > div[id]
+dzen.ru##[aria-label="Страница новостей"] > div[class] > div[class] > div[id] ~ div[id]
+dzen.ru##[aria-label="Страница новостей"] > div[class] > div[class] > div[id]:first-child + div[class^="news"]:not(:last-child):not([aria-label])
 dzen.ru##[aria-label] div[id][class*="-desktop__ad-"]
 dzen.ru##div[class*="AdvertTsar"]
 dzen.ru##div[class*="BrandingAdvertLayoutColumn-"]
 dzen.ru##div[class*="_content_with-new-"] > div[id] ~ div[class*="withDiscreteScroll"]
 dzen.ru##div[class*="body_branding"]:style(background: inherit !important)
-dzen.ru##div[class*="content_with-new-layout"] > div[id] ~ div[id]
-dzen.ru##div[class*="content_with-new-layout"] > div[id]:first-child + div[class^="news"]:not(:last-child):not([aria-label])
-dzen.ru##div[class*="discreteStory"] > div[class*="metachannel"] ~ div[id]
 dzen.ru##div[class*="new"] [class$="__rubricator"] + div[class*=" "] > div:only-child
 dzen.ru##div[class^="news"] [class*="skeleton"]:style(background-color: transparent !important)
 dzen.ru##div[class^="news-site-"][class*="-desktop-"]:style(background-color: transparent !important)
@@ -29353,6 +29354,7 @@ sawlive.tv##body[onclick^="closeMyAd"] > div[id][style*="position"][style*="back
 cosplay-porn.*,fap-guru.*,mult-porno.*,sex-studentki.*##+js(remove-node-text, script, /initTeasers|initVads/)
 cosplay-porn.*,fap-guru.*,mult-porno.*,sex-studentki.*##+js(set-cookie-reload, is_age_verified, 1)
 disk.yandex.ru,disk.yandex.*##+js(remove-class, has-fullscreen-banner|has-right-direct, .public__root, stay)
+dzen.ru##div:matches-attr(/./=/meta-channel-pinner/) > div[id]
 dzen.ru##div:matches-attr(/./=dzenpro-banner)
 dzen.ru##div:matches-attr(/[a-z0-9]/=/_ad-yp/)
 dzen.ru##div:matches-attr(/data-[a-z0-9]/=/-ad$/)
