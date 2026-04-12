@@ -1,8 +1,8 @@
-diff name:ruadlist lines:213 checksum:3741b4d6f3
+diff name:ruadlist lines:227 checksum:c5eb6f9caa
 d4 2
 a5 2
-! Last modified: Sun, 12 Apr 2026 03:39:52 +0000
-! Diff-Path: ../patches/2026.4.12.219.patch#ruadlist
+! Last modified: Sun, 12 Apr 2026 09:01:06 +0000
+! Diff-Path: ../patches/2026.4.12.541.patch#ruadlist
 a8607 1
 ~dzen.ru,~sportsdzen.ru##[href*="dzen.ru%2F"]
 a9066 1
@@ -16,6 +16,8 @@ a11779 3
 ||gooool365.*/betli_$script
 ||gooool365.*/ggpop$script
 ||gooool365.*/uploads/*.html$subdocument
+a11906 1
+||img.zoneofgames.*/branding/$domain=www.zoneofgames.ru
 d13782 1
 a13948 1
 anti-malware.ru###block-block-33
@@ -24,6 +26,11 @@ a14234 1
 sportsdaily.ru###header-menu-item-260
 a14379 1
 anti-malware.ru###main_second_ban
+a14405 1
+www.zoneofgames.ru###mkwrapper > .logo:first-child
+d14459 1
+a14459 1
+ajsub.online,ajsub.ru,animejoy.ru,animejoya.ru###offreklama
 a14488 1
 anti-malware.ru###page-header[role="banner"]
 a14533 1
@@ -62,9 +69,12 @@ mcmaison.ru##.in-content-recomendations
 d17048 6
 a17522 1
 penzainform.ru##.page-ad-internal
+d17651 1
 a18034 1
 livejournal.com##.s-header-item__link--interesting
 d18061 1
+a18064 1
+sport-express.net,sport-express.ru#?#.se-articles-block__item:-abp-has(a[href*="erid="][target="_blank"])
 a18080 1
 anti-malware.ru##.searchbar_ad
 d18602 1
@@ -146,6 +156,8 @@ www.ixbt.com##body > style:has-text(margin-top) {remove:true;}
 d22411 1
 a22411 1
 ritsatv.ru,websdr.su##:not(my-obnaruzhili-blokirovshchik)
+a22510 1
+2ip.io,2ip.ru##.ip-links-container-item:first-child
 a22711 1
 dzen.ru##.news-rubricator [href="https://dzen.ru/news/rubric/chronologic"]
 a22729 1
@@ -184,6 +196,8 @@ dzen.ru##[aria-label="Страница новостей"] > div[class] > div[cla
 a28478 1
 dzen.ru##div[class*="body_branding"] > div[style*="background-color:"]
 d28480 3
+a28602 1
+www.zoneofgames.ru##.branding-bottom:style(height: auto !important; min-height: 0 !important)
 a28998 1
 livejournal.com##+js(href-sanitizer, a[href^="https://www.livejournal.com/away?to="], ?to)
 d29043 1

@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 12 Apr 2026 03:39:52 +0000
-! Diff-Path: ../patches/2026.4.12.219.patch#ruadlist
+! Last modified: Sun, 12 Apr 2026 09:01:06 +0000
+! Diff-Path: ../patches/2026.4.12.541.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -11908,6 +11908,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||img-fotki.yandex.ru/get/*_orig|$image,domain=masterok.livejournal.com
 ||img.*.ru/js/jquery.suSlider.js$script
 ||img.bankoboev.ru^
+||img.zoneofgames.*/branding/$domain=www.zoneofgames.ru
 ||imgal.ru^*script$script
 ||imgbum.ru^*.php$script
 ||imgix.ru/*.js|
@@ -14408,6 +14409,7 @@ stadion.uz###middle_section > div[style^="float:"]
 k-agent.ru###middletbl_r_in > a[href="http://www.sushivenik.ru"]
 tort.fm###min-banners-block
 bestfree.ru###mine
+www.zoneofgames.ru###mkwrapper > .logo:first-child
 bankchart.com.ua###modal-cpa
 mozilla-russia.org###modex
 animevost.one,animevost.org,animevost.top,vost.pw###moduleLeft[style="border:0;"]
@@ -14461,7 +14463,7 @@ youtube.com###offer-module
 russian.rt.com###offers
 kupidonia.ru###offers-right
 samlib.ru###offfy-agent-bottom
-anime-joy.ru,animejoy.ru,animejoy.site###offreklama
+ajsub.online,ajsub.ru,animejoy.ru,animejoya.ru###offreklama
 sdamgia.ru###old_school > .App > br
 onlinemschool.com###oms_center_block div[id][style*="text-align:"] > a
 zenit-fk.ru###online-bookmakers
@@ -17656,7 +17658,6 @@ pikabu.ru##.player__adfox
 lideo.ru##.player_advert
 bilshe.com#?#.playfair:-abp-has(> b:-abp-contains(/^партн/i))
 iplayer.info,ipleer.fm##.playlist-ad
-anime-joy.ru,animejoy.ru,animejoy.site#?#.playlists-items > ul > li:-abp-contains(Dzen)
 rp-mechanics.ru##.plusonet-sl
 kinovit.org##.pmedia_240
 mdex-nn.ru,videout.ru##.podpiska
@@ -18070,6 +18071,7 @@ tagilcity.ru##.sbs_p
 eva.ru##.scroll-smooth
 klanwin.ru,pi-c.ru##.scrollable
 sovets.net##.scrolled-adv
+sport-express.net,sport-express.ru#?#.se-articles-block__item:-abp-has(a[href*="erid="][target="_blank"])
 sport-express.net,sport-express.ru##.se-banner
 sport-express.net,sport-express.ru##.se-bets
 sport-express.net,sport-express.ru##.se-brandedbuttons
@@ -22527,6 +22529,7 @@ ru###ads-top.ads
 2ip.io,2ip.ru##.ad-test-vpn
 2ip.io,2ip.ru#?#.content-article p:-abp-has(> .adsbygoogle)
 2ip.io,2ip.ru##.ip-icon-x-eye
+2ip.io,2ip.ru##.ip-links-container-item:first-child
 2ip.io,2ip.ru##.main-ip-icon-warning
 2ip.io,2ip.ru##.main-ip-icon-warning ~ [aria-disabled]
 2ip.io,2ip.ru#?#.narrow-column > style ~ div > div:-abp-has(a[style^="color:"])
@@ -28623,6 +28626,7 @@ zerno-ua.com##.branding_wrapper:style(pointer-events: none !important)
 znak.com##.wrapper > header:style(margin-top: 15px !important)
 ! ---
 www.zoneofgames.ru###columns > .transparent:style(background-color: transparent !important)
+www.zoneofgames.ru##.branding-bottom:style(height: auto !important; min-height: 0 !important)
 www.zoneofgames.ru##.branding:style(background: none !important; height: auto !important)
 www.zoneofgames.ru##.logo:style(background: none !important; height: auto !important)
 www.zoneofgames.ru##body[style^="padding-top:"][style*="250px"][style*="!important"] > #mkwrapper:style(margin-top: -250px !important)
