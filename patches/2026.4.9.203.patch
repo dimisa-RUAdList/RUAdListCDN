@@ -1,8 +1,8 @@
-diff name:ruadlist lines:237 checksum:42e75df937
+diff name:ruadlist lines:246 checksum:3277a679ec
 d4 2
 a5 2
-! Last modified: Sun, 12 Apr 2026 10:53:50 +0000
-! Diff-Path: ../patches/2026.4.12.653.patch#ruadlist
+! Last modified: Sun, 12 Apr 2026 15:48:15 +0000
+! Diff-Path: ../patches/2026.4.12.948.patch#ruadlist
 a1009 1
 ||byredroll.com^$third-party
 a1484 1
@@ -85,6 +85,10 @@ livejournal.com##.s-header-item__link--interesting
 d18061 1
 a18064 1
 sport-express.net,sport-express.ru#?#.se-articles-block__item:-abp-has(a[href*="erid="][target="_blank"])
+a18066 1
+sport-express.net,sport-express.ru##.se-brand-buttons
+a18069 1
+sport-express.net,sport-express.ru##.se-sport-entity-icon-links__link--kinopoisk
 a18080 1
 anti-malware.ru##.searchbar_ad
 d18602 1
@@ -222,12 +226,17 @@ a29096 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /A.d.b.|Adb-|A-d-b-|-Gua|dGua|dblo|tick|Адгуард/)
 d29111 1
 d29197 1
-a29212 1
+a29212 2
+sport-express.net,sport-express.ru##+js(set-local-storage-item, __videoboxActive, false)
 finuslugi.ru##+js(set-local-storage-item, headerBannerShownAt, 1)
+a29218 1
+beton.ua##+js(window-close-if, /acestream/i)
 a29237 1
 gazeta.press,gazeta.ru##.b_flowup:remove()
 a29249 1
 lenta.ru##.layout__content > .js-topic:has(.topic-header__erid):remove()
+a29291 1
+@@/click?pid=*&sub1=*AceStream$doc,domain=go.affiliate-beton.com
 d29321 1
 a29337 2
 dzen.ru##div:matches-attr(/./=/meta-channel-pinner/) > div > div

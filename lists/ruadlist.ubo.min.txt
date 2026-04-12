@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 12 Apr 2026 10:53:50 +0000
-! Diff-Path: ../patches/2026.4.12.653.patch#ruadlist
+! Last modified: Sun, 12 Apr 2026 15:48:15 +0000
+! Diff-Path: ../patches/2026.4.12.948.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -18076,9 +18076,11 @@ sovets.net##.scrolled-adv
 sport-express.net,sport-express.ru#?#.se-articles-block__item:-abp-has(a[href*="erid="][target="_blank"])
 sport-express.net,sport-express.ru##.se-banner
 sport-express.net,sport-express.ru##.se-bets
+sport-express.net,sport-express.ru##.se-brand-buttons
 sport-express.net,sport-express.ru##.se-brandedbuttons
 sport-express.net,sport-express.ru##.se-material-page__footer-recommendations
 sport-express.net,sport-express.ru##.se-partner-stuffing-info
+sport-express.net,sport-express.ru##.se-sport-entity-icon-links__link--kinopoisk
 sport-express.net,sport-express.ru##.se-translation-scoreboard-event-badge
 sport-express.net,sport-express.ru##.se-translation-scoreboard-event-bets
 sport-express.net,sport-express.ru##.se-translation-scoreboard-event__header-badges
@@ -29237,6 +29239,7 @@ remanga.org##+js(set-cookie, promo-toast-tg, true)
 kinotv.ru##+js(set-cookie, telegram_popup, Y)
 championat.com,ferra.ru,gazeta.press,gazeta.ru,indicator.ru,lenta.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,secretmag.ru,wmj.ru##+js(set-cookie, unity_pause_sso, 1, '', reload, 1)
 mp3party.net##+js(set-cookie, yandexFull, true)
+sport-express.net,sport-express.ru##+js(set-local-storage-item, __videoboxActive, false)
 finuslugi.ru##+js(set-local-storage-item, headerBannerShownAt, 1)
 playground.ru##+js(set-local-storage-item, pg_GPbackVideo, on)
 rg.ru##+js(set-local-storage-item, rekl_modal_shown, {})
@@ -29244,6 +29247,7 @@ iz.ru##+js(set-local-storage-item, vipler.player.live.play, false)
 dtf.ru,vc.ru##+js(set-local-storage-item, visits-count:plus-promotion, $remove$)
 twitch.tv##+js(twitch-videoad)
 aj2738.top##+js(window-close-if)
+beton.ua##+js(window-close-if, /acestream/i)
 silvercube12.xyz##+js(window-close-if, /dispatch)
 tv.acestream.org##+js(window-close-if, /p/?q=)
 infox.sg##+js(window-close-if, utm)
@@ -29319,6 +29323,7 @@ forum.ru-board.com##:matches-path(topic=51666) .dats > a[href="javascript:pasteN
 dzen.ru##:matches-path(video/watch) [class*="_withBottomSpace-"]
 dzen.ru##:matches-path(video/watch) [class*="doc2doc-after"]
 pronpic.org#@#:not(obhod-adblocka)
+@@/click?pid=*&sub1=*AceStream$doc,domain=go.affiliate-beton.com
 @@/fuckadblock.$script,domain=aniboom.one
 @@||frontend.vh.yandex.ru/player/*autoplay=1*service=ya-sport$subdocument,removeparam=|
 @@||frontend.vh.yandex.ru/player/*autoplay=1*service=ya-video$subdocument,removeparam=|
