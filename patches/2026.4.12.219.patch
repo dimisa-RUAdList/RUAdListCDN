@@ -1,8 +1,8 @@
-diff name:ruadlist lines:49 checksum:1e1c1ea4a1
+diff name:ruadlist lines:56 checksum:367c7848e7
 d4 2
 a5 2
-! Last modified: Mon, 13 Apr 2026 12:07:50 +0000
-! Diff-Path: ../patches/2026.4.13.727.patch#ruadlist
+! Last modified: Mon, 13 Apr 2026 17:15:19 +0000
+! Diff-Path: ../patches/2026.4.13.1035.patch#ruadlist
 a1009 1
 ||byredroll.com^$third-party
 a1484 1
@@ -40,10 +40,17 @@ a23430 1
 rbc.ru#?#body.free div[class*="styles_newsfeed"] .sidebar:-abp-has(a[href^="https://editorial.rbc.ru/"])
 a28625 1
 www.zoneofgames.ru##.branding-bottom:style(height: auto !important; min-height: 0 !important)
+d29061 1
+d29120 1
+a29129 1
+ritsatv.ru##+js(remove-node-text, script, initAdblockCheck)
 a29233 1
 sport-express.net,sport-express.ru##+js(set-local-storage-item, __videoboxActive, false)
 a29240 1
 beton.ua##+js(window-close-if, /acestream/i)
+d29305 1
+a29305 1
+dzen.ru##:matches-path(/\/a/) main > div > div > [itemscope] > div > div[id]
 a29315 1
 @@/click?pid=*&sub1=*AceStream$doc,domain=go.affiliate-beton.com
 a29339 1

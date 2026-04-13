@@ -1,8 +1,8 @@
-diff name:ruadlist lines:198 checksum:1e1c1ea4a1
+diff name:ruadlist lines:204 checksum:367c7848e7
 d4 2
 a5 2
-! Last modified: Mon, 13 Apr 2026 12:07:50 +0000
-! Diff-Path: ../patches/2026.4.13.727.patch#ruadlist
+! Last modified: Mon, 13 Apr 2026 17:15:19 +0000
+! Diff-Path: ../patches/2026.4.13.1035.patch#ruadlist
 a1009 1
 ||byredroll.com^$third-party
 a1484 1
@@ -170,6 +170,7 @@ a28608 1
 www.zoneofgames.ru##.branding-bottom:style(height: auto !important; min-height: 0 !important)
 a29004 1
 livejournal.com##+js(href-sanitizer, a[href^="https://www.livejournal.com/away?to="], ?to)
+d29043 1
 d29049 1
 d29056 1
 a29093 1
@@ -177,9 +178,11 @@ pikabu.ru##+js(remove-class, comment__control_tbank_, .comment__control)
 d29100 1
 a29100 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, div, /Ad.block|Adb-|Adblock|киратор|Ублок/)
-d29102 1
-a29102 1
+d29102 2
+a29103 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /A.d.b.|Adb-|A-d-b-|-Gua|dGua|dblo|tick|Адгуард/)
+a29112 1
+ritsatv.ru##+js(remove-node-text, script, initAdblockCheck)
 d29117 1
 d29203 1
 a29218 2
@@ -187,6 +190,9 @@ sport-express.net,sport-express.ru##+js(set-local-storage-item, __videoboxActive
 finuslugi.ru##+js(set-local-storage-item, headerBannerShownAt, 1)
 a29224 1
 beton.ua##+js(window-close-if, /acestream/i)
+d29289 1
+a29289 1
+dzen.ru##:matches-path(/\/a/) main > div > div > [itemscope] > div > div[id]
 a29299 1
 @@/click?pid=*&sub1=*AceStream$doc,domain=go.affiliate-beton.com
 a29323 1
