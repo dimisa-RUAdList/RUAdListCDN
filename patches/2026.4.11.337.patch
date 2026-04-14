@@ -1,8 +1,8 @@
-diff name:ruadlist lines:134 checksum:174d58bb51
+diff name:ruadlist lines:138 checksum:32b0489b51
 d4 2
 a5 2
-! Last modified: Tue, 14 Apr 2026 15:20:58 +0000
-! Diff-Path: ../patches/2026.4.14.920.patch#ruadlist
+! Last modified: Tue, 14 Apr 2026 17:19:02 +0000
+! Diff-Path: ../patches/2026.4.14.1039.patch#ruadlist
 a1009 1
 ||byredroll.com^$third-party
 a1484 1
@@ -83,6 +83,8 @@ a22725 1
 dzen.ru##.news-rubricator [href="https://dzen.ru/news/rubric/chronologic"]
 a22743 1
 dzen.ru#?#div[class*="content_with-discrete-"] > div:-abp-has(> button)
+a22753 1
+dzen.ru##div[data-ad-index]
 a23423 1
 rbc.ru#?#body.free div[class*="styles_newsfeed"] .sidebar:-abp-has(a[href^="https://editorial.rbc.ru/"])
 d24996 1
@@ -105,6 +107,8 @@ dzen.ru##[aria-label="Страница новостей"] > div[class] > div[cla
 a28493 1
 dzen.ru##div[class*="body_branding"] > div[style*="background-color:"]
 d28495 3
+a28501 1
+dzen.ru##div[class^="news-top-stories-"][class$="other_extra"] ~ div:not([class^="news-top-stories-"][class$="other_extra"])
 a28617 1
 www.zoneofgames.ru##.branding-bottom:style(height: auto !important; min-height: 0 !important)
 d29053 1

@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 14 Apr 2026 15:20:58 +0000
-! Diff-Path: ../patches/2026.4.14.920.patch#ruadlist
+! Last modified: Tue, 14 Apr 2026 17:19:02 +0000
+! Diff-Path: ../patches/2026.4.14.1039.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22767,6 +22767,7 @@ dzen.ru##div[class^="news-"][class*="tsar"]
 dzen.ru,sportsdzen.ru##div[class^="news-mt-advert"]
 dzen.ru##div[class^="news-site--news-"]::after
 dzen.ru##div[class^="news-site--news-"][class*="__container-"]
+dzen.ru##div[data-ad-index]
 dzen.ru##div[id*="discrete-feed-banner"]
 dzen.ru##div[id*="story-skeleton"]
 dzen.ru##div[id][class*="news-"][class*="-advert"]
@@ -28518,6 +28519,7 @@ dzen.ru##div[class*="new"] [class$="__rubricator"] + div[class*=" "] > div:only-
 dzen.ru##div[class^="news"] [class*="skeleton"]:style(background-color: transparent !important)
 dzen.ru##div[class^="news-site-"][class*="-desktop-"]:style(background-color: transparent !important)
 dzen.ru,sportsdzen.ru##div[class^="news-site-"][class*="skeleton"]:style(background-color: transparent !important)
+dzen.ru##div[class^="news-top-stories-"][class$="other_extra"] ~ div:not([class^="news-top-stories-"][class$="other_extra"])
 dzen.ru##div[id] > div[class*="-desktop-"] > div[class*="__image-"]:empty
 dzen.ru##div[id] > div[class*="-desktop-"] > div[class*="__image-"]:empty + div[class*="__content-"]
 dzen.ru##div[id^="ad-"][class*=" news-"]
