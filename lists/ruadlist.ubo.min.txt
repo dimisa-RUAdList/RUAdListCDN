@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 15 Apr 2026 08:01:25 +0000
-! Diff-Path: ../patches/2026.4.15.481.patch#ruadlist
+! Last modified: Wed, 15 Apr 2026 13:59:26 +0000
+! Diff-Path: ../patches/2026.4.15.839.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -11187,6 +11187,8 @@ igdz1.ru^$script,domain=igdz.ru
 ||ban.zab.ru/
 ||bankcomat.org/res/bankomat/banners/
 ||banki.ru/ng/api/*/public/banners$script,xmlhttprequest
+||banki24.by/static/js/ads
+||banki24.by/static/js/defer
 ||banner.kaktus.media/
 ||banner.lbs.km.ru^
 ||banner.osp-ua.info^
@@ -14088,6 +14090,7 @@ top-mods.ru###content_l_box > .column_wrap > div[style*="min-height:"]
 freescreens.ru,imgbase.ru,imgcach.ru,imgclick.ru,payforpic.ru,picclick.ru,picclock.ru,picforall.ru###content_r
 alldonors.ru###content_r_box
 youtube.com#?##contents > ytd-rich-item-renderer:-abp-has(> #content > ytd-display-ad-renderer)
+banki24.by###courses-main > tbody > tr.static
 ucrazy.ru###crazy-content > div:not([id]):not([class])[style^="background-color:"]
 zzap.ru###ctl00_TopPanel_LangPanel > .top
 mukachevo.net###currency-block > .more
@@ -14396,7 +14399,6 @@ dou.ua###max-header-adv-id
 mega-tracker.net###mb_top_space
 colorforum.ru###mbanners
 coap.kz###mc_baner
-banki24.by###menu a[href^="https://insnc.onelink.me/"]
 streamzone.org###menuLeft
 bash.im###menubar > div[style^="float:"]
 freakenergy.ru###menuforum
@@ -16571,6 +16573,7 @@ alvin-almazov.ru##.forecast-ad-line
 bez-smenki.ru#?#.form-group:-abp-has(> .ulogin_block)
 loginz.org##.form-wrapper.cf
 baby.ru##.format_video_comment
+rutr.life,rutracker.lib,rutracker.net,rutracker.org##.forum > tbody > tr:not([id]) > td[colspan] > ul[data-ext_link_data]
 only-paper.ru##.forum-section .main > div[align="center"]
 rybalka.com##.forum_buttons
 poiskvps.ru##.forumbg.forumbg-table[style*="background-color:#00A857"]
@@ -18121,6 +18124,7 @@ gmod-fan.ru##.seo-info
 micro-win.com##.seoquake-nofollow
 xtreme.ws##.separator
 24.animez.live#?#.serials > .serial:-abp-has(> .serial-btn > .row > div > img[src^="/assets/smotret_anime-"])
+rutr.life,rutracker.lib,rutracker.net,rutracker.org#?#.sf_title:-abp-has(> [href="viewtopic.php?t=6661913"])
 rbook.me##.shadow.sidebar
 mmogamez.ru##.shapka > a[target="_blank"]
 moniheal.com##.shares-wrap > .container > .swiper-pagination
@@ -18469,7 +18473,6 @@ moniheal.com##.swiper-wrapper > a:not([href*="moniheal.com/"])
 tonkosti.ru##.sys-sky
 tv2.today##.t-aside-banners
 tv2.today##.t-banner
-rutr.life,rutracker.lib,rutracker.net,rutracker.org##.t-body-txt-ad
 sheru.ru##.t3-sidebar > div[class="t3-module module  "]
 translit.net##.tAdvContainer
 freezpic.ru##.t_bg > center
@@ -18831,6 +18834,7 @@ kinomania.ru##.w-banner
 vgorodekirove.ru##.w_back_shapes
 livecars.ru,livesport.ru##.wall
 wallscloud.net#?#.walls_data > .item:-abp-has(> .thumbnail script)
+rutube.ru##.wdp-onboardings-inventory-banner-module__wrapper-section
 xmages.net##.we-are-featured
 securitylab.ru##.webinar-banner
 gotoshop.ua##.welcome2
@@ -19317,6 +19321,7 @@ telegraf.com.ua##[data-text^="Новини партнер"]
 uazmi.org##[data-text^="Рекламн"]
 bryansknovosti.ru,novozybkov.su##[data-title^="erid:"]
 my.ua##[data-top-iid]
+rutr.life,rutracker.lib,rutracker.net,rutracker.org##[data-topic_id="6661913"]
 softonic.ru##[data-track-placement^="free-to-play"]
 drive2.ru#?#[data-track]:-abp-has(> div[id]:empty + script)
 rbc.ua##[data-type="_mgwidget"]
@@ -19354,6 +19359,7 @@ mobiset.ru##[href="http://www.ivlim.ru/"]
 allboxing.ru##[href="https://allboxing.ru/rejting-kapperov"]
 fishki.net##[href="https://servers.ru"]
 allbest.ru##[href="union/advert.htm"]
+rutr.life,rutracker.lib,rutracker.net,rutracker.org##[href="viewtopic.php?t=6661913"]
 itweek.ru##[href^="/ad/rd/"]
 lifehacker.ru##[href^="/tag/rasprodazha"]
 phpbbguru.net##[href^="go.php?to="]
@@ -19827,7 +19833,6 @@ repack.me##a[href*="neovpn"]
 minecraft-inside.ru##a[href*="nfemo.com/click"]
 liveresult.ru,soccer365.com.ua,soccer365.ru##a[href*="odds"]
 puerrtto.livejournal.com##a[href*="offer"][target="_blank"]
-rutr.life,rutracker.lib,rutracker.net,rutracker.org##a[href*="offer_id="]
 kinoafisha.info,www.kinopoisk.ru##a[href*="okko."]
 vtb-league.com##a[href*="olimp.bet"]:not([href*="logo_footer"])
 kkal.ru##a[href*="omniwins.ru"]
@@ -20069,7 +20074,6 @@ rusradio.ru##a[href^="/target/"]
 bigfangroup.org,freebfg.org##a[href^="/trh"]
 pornomage.net##a[href^="/url?go="]
 izgr.ru##a[href^="?uups"]
-rutr.life,rutracker.lib,rutracker.net,rutracker.org##a[href^="go.php?id="]
 sat-digest.com##a[href^="goto.php"] > img[src^="bae/"]
 soccer.ru##a[href^="http"][href*="utm_campai"]
 ochevidec.net##a[href^="http:"]:not([href*="ochevidec.net"]):not([href*="livejournal"]):not([href*="icq"])
@@ -21938,6 +21942,7 @@ disgustingmen.com##li.menu-item > a:not([href^="https://disgustingmen.com"]):not
 tvc.ru#?#li.play-button-wrap:-abp-has(> div > [id^="adfox_"])
 gofrag.ru#?#li:-abp-has(> .uk-accordion-title ~ [class] a[href*=".ufiler.pro/"])
 stopgame.ru#?#li:-abp-has(> [href="https://zen.yandex.ru/stopgame"])
+rutr.life,rutracker.lib,rutracker.net,rutracker.org#?#li:-abp-has(> [href="viewtopic.php?t=6661913"])
 zalinux.ru##li[id^="menu-item-"] > a[href^="http"]:not([href*="kali.org.ru/"]):not([href*="zalinux.ru/"])
 crackstatus.net##li[id^="slide"]
 penzainform.ru##li[style^="width: 140px; height:"][style*="max-height"]
@@ -22293,7 +22298,6 @@ hotlog.ru##tr > td[width="170px;"] ~ td[width="170px;"] > div[style^="padding: 0
 forum.tambovnet.org##tr > td[width="250 px"][valign="top"]
 worldcrisis.ru##tr > td[width="728"]
 pogoda.ru#?#tr > th:-abp-contains(Реклама на Погода.ру)
-rutr.life,rutracker.lib,rutracker.net,rutracker.org#?#tr.row3 > td > ul > li:-abp-has(> a[href*="offer_id="])
 otzovik.com#?#tr:-abp-has(> td > noindex > div > [href*="://yabs.yandex.ru/"])
 chem21.info##tr[height="250px"]
 izgr.ru##tr[height="90px"]
@@ -29255,6 +29259,7 @@ aj2738.top##+js(window-close-if)
 beton.ua##+js(window-close-if, /acestream/i)
 silvercube12.xyz##+js(window-close-if, /dispatch)
 tv.acestream.org##+js(window-close-if, /p/?q=)
+rutr.life,rutracker.lib,rutracker.net,rutracker.org##+js(window-close-if, 6661913)
 infox.sg##+js(window-close-if, utm)
 08sportbar.com,08sportbar.online,777sportba.com,777sportba.org,777streams.pro,7streams.pro,assiatv.com,barsportbar.com,boom365hd.com,cdnpotok.com,cdntvpotok.com,channels247.net,goool7.ws,hd24.pro,hd24.watch,hd365.ws,hdstream365.com,limetvv.com,live-stream365.com,live365tv.site,mc.today,oneliketv.com,oxax.tv,raes.tech,s7yours.com,sbautumn.com,sblive.online,sbsports.pro,sbstreams.ws,shd247.com,sport365hd.com,sport365hd.net,sport7.biz,sportabar01.com,sportbar.pm,sportbarchik88.com,sportbox.ws,sporting7.pw,sporting77.com,sportsite777.com,spotless365.net,stream365.pro,telecdn.net,tivix.co,tv-assia.org,vecdn.pw,vip7stream.pw,whd365.pro##+js(window.open-defuser)
 vmusi.ru##+js(window.open-defuser, /tutad\.ru/)
@@ -29317,6 +29322,7 @@ dtf.ru,vc.ru##:matches-path(-erid-) a[href*="go.vc.ru"]:style(pointer-events: no
 dzen.ru##:matches-path(/\/a/) article:matches-attr(/./=/promo-card/)
 dzen.ru##:matches-path(/\/a/) div:matches-attr(/[a-z0-9]/=article-bottom-block) > [class] ~ div:not([class]):not([id])
 dzen.ru##:matches-path(/\/a/) div[style="opacity: 1;"]
+dzen.ru##:matches-path(/\/a/) main > div > [itemscope] > div > div[id]
 dzen.ru##:matches-path(/\/a/) main > div > div > [itemscope] > div > div[id]
 dzen.ru##:matches-path(/articles) div:has(> article > [class*="adBox"])
 ozon.ru##:matches-path(/kursk-sertifikaty) [data-lcp-name*="anner-"]:style(display: block !important)
@@ -29361,9 +29367,9 @@ kp.kg,kp.kz,kp.md,kp.ru##body > #app div:matches-css(background-color: rgb(225, 
 4pda.to##body > div[id^="r"] > div[id^="r"][href]
 anime-chan.me##body > div[style^="pointer-events: none;"][style*="visible;"]
 4pda.to##body [data-revive-id] ~ script ~ [id][class]:style(background-image: none !important)
-rutube.ru##body.wdp-scroll .wdp-popup-overlay-module__overlay .wdp-onboardings-inventory-module__popup
+rutube.ru##body.wdp-scroll .wdp-popup-overlay-module__overlay [class*=" wdp-onboardings-inventory-"][class*="-module__popup "]
 rutube.ru##body.wdp-scroll .wdp-popup-overlay-module__overlay [class*="-view-trigger-popup"]
-rutube.ru##body.wdp-scroll .wdp-popup-overlay-module__overlay:has(> .wdp-onboardings-inventory-module__popup)
+rutube.ru##body.wdp-scroll .wdp-popup-overlay-module__overlay:has(> [class*=" wdp-onboardings-inventory-"][class*="-module__popup "])
 rutube.ru##body.wdp-scroll .wdp-popup-overlay-module__overlay:has(> [class*="-view-trigger-popup"])
 rutube.ru##body.wdp-scroll:style(overflow-y: auto !important)
 tapochek.net##body:has(#register_link) > canvas
