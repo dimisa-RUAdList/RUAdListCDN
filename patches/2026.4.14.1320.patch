@@ -1,8 +1,8 @@
-diff name:ruadlist lines:38 checksum:39d418e674
+diff name:ruadlist lines:40 checksum:6f6b8f8167
 d4 2
 a5 2
-! Last modified: Thu, 16 Apr 2026 06:09:32 +0000
-! Diff-Path: ../patches/2026.4.16.369.patch#ruadlist
+! Last modified: Thu, 16 Apr 2026 09:43:07 +0000
+! Diff-Path: ../patches/2026.4.16.583.patch#ruadlist
 a10170 1
 2gis.by,2gis.kz,2gis.ru##._e27xbxx
 a11189 2
@@ -13,27 +13,29 @@ banki24.by###courses-main > tbody > tr.static
 d14399 1
 a16573 1
 rutr.life,rutracker.lib,rutracker.net,rutracker.org##.forum > tbody > tr:not([id]) > td[colspan] > ul[data-ext_link_data]
-a18123 1
-rutr.life,rutracker.lib,rutracker.net,rutracker.org#?#.sf_title:-abp-has(> [href="viewtopic.php?t=6661913"])
 d18472 1
 a18833 1
 rutube.ru##.wdp-onboardings-inventory-banner-module__wrapper-section
-a19319 1
-rutr.life,rutracker.lib,rutracker.net,rutracker.org##[data-topic_id="6661913"]
-a19356 1
-rutr.life,rutracker.lib,rutracker.net,rutracker.org##[href="viewtopic.php?t=6661913"]
 d19830 1
 d20072 1
-a21940 1
-rutr.life,rutracker.lib,rutracker.net,rutracker.org#?#li:-abp-has(> [href="viewtopic.php?t=6661913"])
 d22296 1
-a29257 1
-rutr.life,rutracker.lib,rutracker.net,rutracker.org##+js(window-close-if, 6661913)
+d22741 4
+a22744 2
+dzen.ru##[aria-label="Контент страницы сюжета"] > [class*="discrete"] > div > div > div[id]
+dzen.ru#?#[aria-label="Контент страницы сюжета"] > [class*="discrete"] > div > div:-abp-has(> div[id])
+d22747 3
 a29319 1
 dzen.ru##:matches-path(/\/a/) main > div > [itemscope] > div > div[id]
+a29323 1
+dzen.ru##:matches-path(/news) :matches-attr(/./=/feed/) > div:not([id]) > div[id*="feed"]
+d29325 1
 d29364 1
 a29364 1
 rutube.ru##body.wdp-scroll .wdp-popup-overlay-module__overlay [class*=" wdp-onboardings-inventory-"][class*="-module__popup "]
 d29366 1
 a29366 1
 rutube.ru##body.wdp-scroll .wdp-popup-overlay-module__overlay:has(> [class*=" wdp-onboardings-inventory-"][class*="-module__popup "])
+a29383 1
+dzen.ru##div:matches-path(/news/search?query=) [aria-label="Страница новостей"] > div:only-child > div > div[id]
+a29384 1
+dzen.ru##div[class^="news-"]:matches-attr(/./=/-stub/)

@@ -1,5 +1,22 @@
-diff name:ruadlist lines:4 checksum:39d418e674
+diff name:ruadlist lines:21 checksum:6f6b8f8167
 d4 2
 a5 2
-! Last modified: Thu, 16 Apr 2026 06:09:32 +0000
-! Diff-Path: ../patches/2026.4.16.369.patch#ruadlist
+! Last modified: Thu, 16 Apr 2026 09:43:07 +0000
+! Diff-Path: ../patches/2026.4.16.583.patch#ruadlist
+d18128 1
+d19325 1
+d19363 1
+d21946 1
+d22746 4
+a22749 2
+dzen.ru##[aria-label="Контент страницы сюжета"] > [class*="discrete"] > div > div > div[id]
+dzen.ru#?#[aria-label="Контент страницы сюжета"] > [class*="discrete"] > div > div:-abp-has(> div[id])
+d22752 3
+d29263 1
+a29330 1
+dzen.ru##:matches-path(/news) :matches-attr(/./=/feed/) > div:not([id]) > div[id*="feed"]
+d29332 1
+a29390 1
+dzen.ru##div:matches-path(/news/search?query=) [aria-label="Страница новостей"] > div:only-child > div > div[id]
+a29391 1
+dzen.ru##div[class^="news-"]:matches-attr(/./=/-stub/)

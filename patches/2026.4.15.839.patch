@@ -1,7 +1,24 @@
-diff name:ruadlist lines:6 checksum:39d418e674
+diff name:ruadlist lines:23 checksum:6f6b8f8167
 d4 2
 a5 2
-! Last modified: Thu, 16 Apr 2026 06:09:32 +0000
-! Diff-Path: ../patches/2026.4.16.369.patch#ruadlist
+! Last modified: Thu, 16 Apr 2026 09:43:07 +0000
+! Diff-Path: ../patches/2026.4.16.583.patch#ruadlist
 a10170 1
 2gis.by,2gis.kz,2gis.ru##._e27xbxx
+d18127 1
+d19324 1
+d19362 1
+d21945 1
+d22745 4
+a22748 2
+dzen.ru##[aria-label="Контент страницы сюжета"] > [class*="discrete"] > div > div > div[id]
+dzen.ru#?#[aria-label="Контент страницы сюжета"] > [class*="discrete"] > div > div:-abp-has(> div[id])
+d22751 3
+d29262 1
+a29329 1
+dzen.ru##:matches-path(/news) :matches-attr(/./=/feed/) > div:not([id]) > div[id*="feed"]
+d29331 1
+a29389 1
+dzen.ru##div:matches-path(/news/search?query=) [aria-label="Страница новостей"] > div:only-child > div > div[id]
+a29390 1
+dzen.ru##div[class^="news-"]:matches-attr(/./=/-stub/)
