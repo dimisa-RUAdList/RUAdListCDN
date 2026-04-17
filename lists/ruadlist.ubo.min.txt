@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 17 Apr 2026 15:08:24 +0000
-! Diff-Path: ../patches/2026.4.17.908.patch#ruadlist
+! Last modified: Fri, 17 Apr 2026 20:58:16 +0000
+! Diff-Path: ../patches/2026.4.17.1258.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -29122,6 +29122,7 @@ rutube.ru##+js(prevent-addEventListener, click, showRedirectPopup)
 news.rambler.ru##+js(prevent-fetch, &origin_type=rtb, url:/rutube.ru/api/tags/video/)
 dzen.ru,sportsdzen.ru##+js(prevent-fetch, /stats/bulk|stats/pixels|zen_audit/)
 ura.news##+js(prevent-fetch, _rsc=)
+forum.ixbt.com##+js(prevent-setTimeout, count_banners)
 i-ua.tv##+js(remove-attr, autoplay, [data-video-player="small"], stay)
 cnews.ru,gfycat.com,inter.ua,obozrevatel.com,platformcraft.ru,protv.md,rg.ru,rusvesna.su,tv8.md,xsport.ua##+js(remove-attr, autoplay, video, stay)
 u24.ua##+js(remove-attr, autoplay|loop, .watch-live__link > video, stay)
