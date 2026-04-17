@@ -1,29 +1,79 @@
-diff name:ruadlist lines:40 checksum:c4c1e7a180
+diff name:ruadlist lines:90 checksum:151f4b83a3
 d4 2
 a5 2
-! Last modified: Fri, 17 Apr 2026 03:37:46 +0000
-! Diff-Path: ../patches/2026.4.17.217.patch#ruadlist
+! Last modified: Fri, 17 Apr 2026 09:42:02 +0000
+! Diff-Path: ../patches/2026.4.17.582.patch#ruadlist
 a10170 1
 2gis.by,2gis.kz,2gis.ru##._e27xbxx
+a10699 1
+/advertising/banners/*$domain=sravni.ru
 a11189 2
 ||banki24.by/static/js/ads
 ||banki24.by/static/js/defer
+a12479 1
+||ngenix.net/branding/$domain=sravni.ru
+a13175 1
+||sravni.ru/proxy-organizations/banners?
 a14090 1
 banki24.by###courses-main > tbody > tr.static
 d14399 1
+a15075 1
+sravni.ru##._12siume
+d16061 1
 a16573 1
 rutr.life,rutracker.lib,rutracker.net,rutracker.org##.forum > tbody > tr:not([id]) > td[colspan] > ul[data-ext_link_data]
 d18472 1
 a18833 1
 rutube.ru##.wdp-onboardings-inventory-banner-module__wrapper-section
+a19164 1
+sravni.ru##[class^="RedirectAdvertisingTag"]
+a19559 1
+sravni.ru##a[class^="BrandingHeader_clickZone_"]
 d19830 1
 d20072 1
+a20241 1
+sravni.ru##a[href^="https://goto.startracking.ru/"]
+a20278 1
+sravni.ru##a[href^="https://www.sravni.ru/special/"][href*="erid="]
+d20376 1
+a20376 1
+pikabu.ru##article[data-author-id="5"]
+a20718 2
+sravni.ru##div[class*=" banner_"]
+sravni.ru##div[class*=" bordered-banner_"]
+a20800 1
+sravni.ru##div[class*="hero-section_branding_"]
+a20864 1
+sravni.ru#?#div[class]:-abp-has(> [class] ~ div[style^="height:"] > [src*="sravni.ru/special-offers/"])
+a20885 1
+sravni.ru##div[class^="ADengiBanner_"]
+a20891 1
+sravni.ru##div[class^="BrandingHeader_sponsorBlock_"]
+d20954 1
+a20954 1
+101.ru,1plus1.ua,46tv.ru,999.md,alau.kz,aldebaran.ru,asiarussia.ru,bezparazita.ru,botinok.porn,bountymax.ru,buzulukday.ru,calend.ru,chytomo.com,citydog.by,clubvolvo.ru,crazymailing.com,dnepr.info,dom2stars.ru,dota2.ru,gmod-fan.ru,gorod.dp.ua,gorod48.ru,gtavicecity.ru,hochu.ua,igry-online.net,infobank.by,internetua.com,kamchatinfo.com,kerchinfo.com,khersonline.net,kino-kingdom.com,klops.ru,kluch.media,kvnews.ru,kyiv-independent.com,libertycity.net,libertycity.ru,lipetskmedia.ru,manga24.ru,mashintop.ru,mediaryazan.ru,menquestions.ru,mgorod.kz,mobile-review.com,modernrock.ru,moya-semya.ru,musicforums.ru,nlo-mir.ru,nn.ru,novostroev.ru,nsday.ru,ntr-24.ru,nv.ua,nversia.ru,onlineradiobox.com,orenday.ru,perevolockday.ru,pln-pskov.ru,ponedelnik.info,postovoy.net,ppt.ru,psm7.com,rtraveler.ru,saltday.ru,sevkavportal.ru,sorochinskday.ru,sovets.net,sovets24.ru,spark.ru,sravni.ru,studfile.net,studfiles.net,subscribe.ru,telegraf.in.ua,the-village-kz.com,the-village.me,the-village.ru,tltonline.ru,torrents.in.ua,trisosny.ru,trymobile.ru,turkmenportal.com,tvzvezda.ru,ukrinform.ru,vdvsn.ru,vgtimes.com,vgtimes.ru,village.com.ua,vklybe.tv,vorle.ru,vse.sale,wheel-news.com,wincore.ru,womanhit.ru,worldofmods.ru,xn----7sbabrtfclecozdeg8b6a.xn--p1ai,yarik-sat.com,yarnews.net,zerno-ua.com,zhitomir.info,zn.ua,zoon.ru##div[class^="banner"]
+a21151 1
+sravni.ru#?#div[class^="style_wrapper_"]:-abp-has(> [class^="style_card_"] [class^="style_advertising"] )
+a21163 1
+sravni.ru##div[class^="top-offers_"]
 d22296 1
+d22370 1
+a22370 1
+||pikabu.ru/ajax/*?xbL7L=$xmlhttprequest
 d22741 4
 a22744 2
 dzen.ru##[aria-label="Контент страницы сюжета"] > [class*="discrete"] > div > div > div[id]
 dzen.ru#?#[aria-label="Контент страницы сюжета"] > [class*="discrete"] > div > div:-abp-has(> div[id])
 d22747 3
+d28479 1
+a28479 1
+dzen.ru##div[style*="12.36263736263736"]
+d28510 2
+a28511 2
+dzen.ru##[aria-label="Страница с новостями"] > div[class] > div > div[id] + div[class^="news"]:not(:last-child):not([aria-label])
+dzen.ru##[aria-label="Страница с новостями"] > div[class] > div > div[id] ~ div[id]
+a28519 1
+dzen.ru##div[class^="news-"][style="margin-top: 0px; height: calc(100% - 0px);"]
 a29319 1
 dzen.ru##:matches-path(/\/a/) main > div > [itemscope] > div > div[id]
 a29323 1
@@ -36,6 +86,6 @@ d29366 1
 a29366 1
 rutube.ru##body.wdp-scroll .wdp-popup-overlay-module__overlay:has(> [class*=" wdp-onboardings-inventory-"][class*="-module__popup "])
 a29383 1
-dzen.ru##div:matches-path(/news/search?query=) [aria-label="Страница новостей"] > div:only-child > div > div[id]
+dzen.ru##div:matches-path(/news/search?query=) [aria-label="Страница с новостями"] > div:only-child > div > div:first-child:not([style]):not([aria-label])
 a29384 1
 dzen.ru##div[class^="news-"]:matches-attr(/./=/-stub/)
