@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 18 Apr 2026 09:01:48 +0000
-! Diff-Path: ../patches/2026.4.18.541.patch#ruadlist
+! Last modified: Sat, 18 Apr 2026 11:46:14 +0000
+! Diff-Path: ../patches/2026.4.18.706.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -17077,6 +17077,7 @@ cwer.me,cwer.ru,cwer.su,cwer.ws##.like_hide
 homeporno.org##.line > a[href][target="_blank"] > *
 mmotop.ru##.link-1
 androidinsider.ru,appleinsider.ru##.link-alert
+androidinsider.ru,appleinsider.ru##.link-default[rel*="sponsored"]
 vinbazar.com##.link_image
 vinbazar.com##.link_img
 online-films.ckoro.ru##.link_test
@@ -17321,6 +17322,7 @@ mayaksbor.ru##.module__block_rectangle
 osobye.ru##.modulebody > table[style="width:200px"]
 zamena-podshipnikov.ru##.moduletabletimer-buf
 autogrodno.by##.mogo-link
+ritsatv.ru##.monetization-button
 dorognoe.ru#?#.more-news:-abp-contains(Новости партнеров)
 multiki-online.net##.more-teaser
 macosworld.ru##.morefoot_back
@@ -27014,7 +27016,7 @@ alllyr.ru##.fancybox-enabled:style(overflow: auto !important)
 androidinsider.ru###trend:style(margin-bottom: 0 !important)
 androidinsider.ru###wrapper:style(background: none !important)
 androidinsider.ru,appleinsider.ru##[href*="://s.click.aliexpress.ru/"]:style(pointer-events: none !important; color: inherit !important; border-bottom: inherit !important)
-androidinsider.ru,appleinsider.ru##[href^="https://www.ozon.ru/product/"]:style(pointer-events: none !important; color: inherit !important; border-bottom: inherit !important)
+androidinsider.ru,appleinsider.ru##[href*="ozon."]:style(pointer-events: none !important; color: inherit !important; border-bottom: inherit !important)
 androidinsider.ru,appleinsider.ru##a[href*="://ali.ski/"]:style(pointer-events: none !important; color: inherit !important; border-bottom: inherit !important)
 androidinsider.ru,appleinsider.ru##a[href*="://aliexpress.ru/item/"]:style(pointer-events: none !important; color: inherit !important; border-bottom: inherit !important)
 androidinsider.ru,appleinsider.ru##a[href*="://bit.ly/"]:style(pointer-events: none !important; color: inherit !important; border-bottom: inherit !important)
