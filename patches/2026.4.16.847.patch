@@ -1,8 +1,8 @@
-diff name:ruadlist lines:114 checksum:6c220cf7b3
+diff name:ruadlist lines:126 checksum:2460811999
 d4 2
 a5 2
-! Last modified: Mon, 20 Apr 2026 15:24:27 +0000
-! Diff-Path: ../patches/2026.4.20.924.patch#ruadlist
+! Last modified: Mon, 20 Apr 2026 20:58:12 +0000
+! Diff-Path: ../patches/2026.4.20.1258.patch#ruadlist
 a10700 1
 /advertising/banners/*$domain=sravni.ru
 d11918 1
@@ -42,6 +42,8 @@ androidinsider.ru,appleinsider.ru##.link-default[rel*="sponsored"]
 a17319 1
 ritsatv.ru##.monetization-button
 d17910 1
+a18945 1
+kursiv.media##.widgets-container
 a19168 1
 sravni.ru##[class^="RedirectAdvertisingTag"]
 a19525 1
@@ -85,6 +87,9 @@ a22341 2
 d22371 1
 a22371 1
 ||pikabu.ru/ajax/*?h0oMa=$xmlhttprequest
+d22569 1
+a22569 1
+www.avito.ru##[data-chunks="item"] + div > div:first-child > div:first-child + div > div:first-child + div + div:last-child > div:only-child > div:first-child + div:last-child > div:only-child > div:first-child + div:last-child
 a26720 1
 psytests.org,psytests.org.ru#@##TopAd
 d27001 1
@@ -100,6 +105,8 @@ ya.ru##[id^="ryt"][id*="m-f"][id$="d"]
 d28475 1
 a28475 1
 dzen.ru##div[style*="12.36263736263736"]
+a28486 1
+dzen.ru##div[class*="-ad-branding-"]
 d28506 2
 a28507 2
 dzen.ru##[aria-label="Страница с новостями"] > div[class] > div > div[id] + div[class^="news"]:not(:last-child):not([aria-label])
@@ -108,6 +115,11 @@ a28515 1
 dzen.ru##div[class^="news-"][style="margin-top: 0px; height: calc(100% - 0px);"]
 a29107 1
 forum.ixbt.com##+js(prevent-setTimeout, count_banners)
+a29314 1
+dzen.ru##:matches-path(/\/a/) div[class*="Doc2Doc"]
+d29316 2
+a29317 1
+dzen.ru##:matches-path(/\/a/) main div [itemscope] > div > div[id]
 d29381 1
 a29381 1
 dzen.ru##div:matches-path(/news/search?query=) [aria-label="Страница с новостями"] > div:only-child > div > div:first-child:not([style]):not([aria-label])

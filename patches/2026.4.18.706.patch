@@ -1,8 +1,8 @@
-diff name:ruadlist lines:53 checksum:6c220cf7b3
+diff name:ruadlist lines:65 checksum:2460811999
 d4 2
 a5 2
-! Last modified: Mon, 20 Apr 2026 15:24:27 +0000
-! Diff-Path: ../patches/2026.4.20.924.patch#ruadlist
+! Last modified: Mon, 20 Apr 2026 20:58:12 +0000
+! Diff-Path: ../patches/2026.4.20.1258.patch#ruadlist
 d11919 1
 a11919 1
 ||img.zoneofgames.*/branding/$domain=zoneofgames.ru
@@ -27,6 +27,8 @@ yap.ru,yaplakal.com#?#.lenta > tbody > tr:-abp-has(> .topic-header > .topic-head
 yap.ru,yaplakal.com#?#.lenta > tbody > tr:-abp-has(> .topic-header > .topic-header-parent > .mainpage-rank-container:empty) + tr
 yap.ru,yaplakal.com#?#.lenta > tbody > tr:-abp-has(> .topic-header > .topic-header-parent > .mainpage-rank-container:empty) + tr + tr
 d17916 1
+a18951 1
+kursiv.media##.widgets-container
 a19532 1
 kod.ru##[title="Яндекс.Дзен"]
 d20388 1
@@ -41,6 +43,9 @@ a22359 2
 d22389 1
 a22389 1
 ||pikabu.ru/ajax/*?h0oMa=$xmlhttprequest
+d22587 1
+a22587 1
+www.avito.ru##[data-chunks="item"] + div > div:first-child > div:first-child + div > div:first-child + div + div:last-child > div:only-child > div:first-child + div:last-child > div:only-child > div:first-child + div:last-child
 a26738 1
 psytests.org,psytests.org.ru#@##TopAd
 a27543 2
@@ -50,5 +55,12 @@ d28119 2
 d28456 2
 a28457 1
 ya.ru##[id^="ryt"][id*="m-f"][id$="d"]
+a28504 1
+dzen.ru##div[class*="-ad-branding-"]
+a29334 1
+dzen.ru##:matches-path(/\/a/) div[class*="Doc2Doc"]
+d29336 2
+a29337 1
+dzen.ru##:matches-path(/\/a/) main div [itemscope] > div > div[id]
 a29612 1
 vk.com,vk.ru,vkvideo.ru##+js(set-constant, Object.prototype.endscreenAnnouncement, undefined)

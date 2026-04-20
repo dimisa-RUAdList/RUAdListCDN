@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 20 Apr 2026 15:24:27 +0000
-! Diff-Path: ../patches/2026.4.20.924.patch#ruadlist
+! Last modified: Mon, 20 Apr 2026 20:58:12 +0000
+! Diff-Path: ../patches/2026.4.20.1258.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -18956,6 +18956,7 @@ gitarshkola.net##.widget_widget_catchbox_adwidget
 elevatorist.com##.widget_wrap
 agrognom.ru,apral.ru,kvmarvel.ru,samelectric.ru##.widget_zen_widget
 burninghut.ru##.widgets-area--above-comments
+kursiv.media##.widgets-container
 inetsovety.ru##.wiged.widget_text
 enovosty.com##.wiget.ukr_links
 forum.taxiservice.com.ua#?#.windowbg:-abp-has(> .poster > h4:-abp-contains(Форум Такси Сервис))
@@ -22593,7 +22594,7 @@ ru###ads-top.ads
 ||proxyelite.info^$third-party,popup
 ||proxyshare.com^$third-party,popup
 ! Avito
-www.avito.ru##[data-chunks="item-buyer-view"] + div > div:first-child > div:first-child + div > div:first-child + div + div:last-child > div:only-child > div:first-child + div:last-child > div:only-child > div:first-child + div:last-child
+www.avito.ru##[data-chunks="item"] + div > div:first-child > div:first-child + div > div:first-child + div + div:last-child > div:only-child > div:first-child + div:last-child > div:only-child > div:first-child + div:last-child
 www.avito.ru##div[class*="avito-ads-container"]
 www.avito.ru##div[class*="index-advRootWidget"]
 www.avito.ru##div[class*="styles-module-root_animation-"]:empty
@@ -28511,6 +28512,7 @@ dzen.ru##.content--styles__banner-cc + [aria-label] ~ div
 dzen.ru##[class*="yandex-direct"]
 dzen.ru##[data-testid="dzenpro-banner"]
 dzen.ru##div[class*="-ad-block_"]
+dzen.ru##div[class*="-ad-branding-"]
 dzen.ru##div[class*="-right-ad-column"]
 dzen.ru##div[class*="_advertDoc2Doc-"]
 dzen.ru##div[class*="adContentWrapper"]
@@ -29341,9 +29343,9 @@ dtf.ru,vc.ru##:matches-path(-erid-) .block-special-button
 dtf.ru,vc.ru##:matches-path(-erid-) a[href*="go.vc.ru"]:style(pointer-events: none !important; color: inherit !important)
 dzen.ru##:matches-path(/\/a/) article:matches-attr(/./=/promo-card/)
 dzen.ru##:matches-path(/\/a/) div:matches-attr(/[a-z0-9]/=article-bottom-block) > [class] ~ div:not([class]):not([id])
+dzen.ru##:matches-path(/\/a/) div[class*="Doc2Doc"]
 dzen.ru##:matches-path(/\/a/) div[style="opacity: 1;"]
-dzen.ru##:matches-path(/\/a/) main > div > [itemscope] > div > div[id]
-dzen.ru##:matches-path(/\/a/) main > div > div > [itemscope] > div > div[id]
+dzen.ru##:matches-path(/\/a/) main div [itemscope] > div > div[id]
 dzen.ru##:matches-path(/articles) div:has(> article > [class*="adBox"])
 ozon.ru##:matches-path(/kursk-sertifikaty) [data-lcp-name*="anner-"]:style(display: block !important)
 ozon.ru##:matches-path(/kursk-sertifikaty) div[data-widget="banner"]:style(display: block !important)

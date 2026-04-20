@@ -1,8 +1,8 @@
-diff name:ruadlist lines:62 checksum:6c220cf7b3
+diff name:ruadlist lines:74 checksum:2460811999
 d4 2
 a5 2
-! Last modified: Mon, 20 Apr 2026 15:24:27 +0000
-! Diff-Path: ../patches/2026.4.20.924.patch#ruadlist
+! Last modified: Mon, 20 Apr 2026 20:58:12 +0000
+! Diff-Path: ../patches/2026.4.20.1258.patch#ruadlist
 d11919 1
 a11919 1
 ||img.zoneofgames.*/branding/$domain=zoneofgames.ru
@@ -31,6 +31,8 @@ androidinsider.ru,appleinsider.ru##.link-default[rel*="sponsored"]
 a17323 1
 ritsatv.ru##.monetization-button
 d17914 1
+a18949 1
+kursiv.media##.widgets-container
 a19530 1
 kod.ru##[title="Яндекс.Дзен"]
 d20386 1
@@ -45,6 +47,9 @@ a22357 2
 d22387 1
 a22387 1
 ||pikabu.ru/ajax/*?h0oMa=$xmlhttprequest
+d22585 1
+a22585 1
+www.avito.ru##[data-chunks="item"] + div > div:first-child > div:first-child + div > div:first-child + div + div:last-child > div:only-child > div:first-child + div:last-child > div:only-child > div:first-child + div:last-child
 a26736 1
 psytests.org,psytests.org.ru#@##TopAd
 d27017 1
@@ -57,7 +62,14 @@ d28117 2
 d28454 2
 a28455 1
 ya.ru##[id^="ryt"][id*="m-f"][id$="d"]
+a28502 1
+dzen.ru##div[class*="-ad-branding-"]
 a29124 1
 forum.ixbt.com##+js(prevent-setTimeout, count_banners)
+a29331 1
+dzen.ru##:matches-path(/\/a/) div[class*="Doc2Doc"]
+d29333 2
+a29334 1
+dzen.ru##:matches-path(/\/a/) main div [itemscope] > div > div[id]
 a29609 1
 vk.com,vk.ru,vkvideo.ru##+js(set-constant, Object.prototype.endscreenAnnouncement, undefined)
