@@ -1,8 +1,8 @@
-diff name:ruadlist lines:107 checksum:db4738e7ed
+diff name:ruadlist lines:113 checksum:1e5755034b
 d4 2
 a5 2
-! Last modified: Mon, 20 Apr 2026 03:47:19 +0000
-! Diff-Path: ../patches/2026.4.20.227.patch#ruadlist
+! Last modified: Mon, 20 Apr 2026 09:14:24 +0000
+! Diff-Path: ../patches/2026.4.20.554.patch#ruadlist
 a10700 1
 /advertising/banners/*$domain=sravni.ru
 a12482 1
@@ -47,7 +47,7 @@ a20283 1
 sravni.ru##a[href^="https://www.sravni.ru/special/"][href*="erid="]
 d20381 1
 a20381 1
-pikabu.ru##article[data-author-id="5"]
+pikabu.ru##article[data-author-id="6"]
 a20498 1
 playground.ru##body > a[href][style]
 a20723 2
@@ -70,9 +70,13 @@ a21168 1
 sravni.ru##div[class^="top-offers_"]
 d21709 1
 d21946 1
+d22344 2
+a22345 2
+||static.dzeninfra.ru/s3/zen-apps/mobile/*/*/$script
+||static.dzeninfra.ru/s3/zen-apps/subscriptions/*/*/$script
 d22375 1
 a22375 1
-||pikabu.ru/ajax/*?xbL7L=$xmlhttprequest
+||pikabu.ru/ajax/*?h0oMa=$xmlhttprequest
 d22746 4
 a22749 2
 dzen.ru##[aria-label="Контент страницы сюжета"] > [class*="discrete"] > div > div > div[id]
@@ -106,3 +110,5 @@ a29390 1
 dzen.ru##div:matches-path(/news/search?query=) [aria-label="Страница с новостями"] > div:only-child > div > div:first-child:not([style]):not([aria-label])
 a29391 1
 dzen.ru##div[class^="news-"]:matches-attr(/./=/-stub/)
+a29600 1
+vk.com,vk.ru,vkvideo.ru##+js(set-constant, Object.prototype.endscreenAnnouncement, undefined)

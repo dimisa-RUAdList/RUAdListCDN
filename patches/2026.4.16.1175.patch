@@ -1,8 +1,8 @@
-diff name:ruadlist lines:93 checksum:db4738e7ed
+diff name:ruadlist lines:99 checksum:1e5755034b
 d4 2
 a5 2
-! Last modified: Mon, 20 Apr 2026 03:47:19 +0000
-! Diff-Path: ../patches/2026.4.20.227.patch#ruadlist
+! Last modified: Mon, 20 Apr 2026 09:14:24 +0000
+! Diff-Path: ../patches/2026.4.20.554.patch#ruadlist
 a10700 1
 /advertising/banners/*$domain=sravni.ru
 a12482 1
@@ -44,7 +44,7 @@ a20280 1
 sravni.ru##a[href^="https://www.sravni.ru/special/"][href*="erid="]
 d20378 1
 a20378 1
-pikabu.ru##article[data-author-id="5"]
+pikabu.ru##article[data-author-id="6"]
 a20495 1
 playground.ru##body > a[href][style]
 a20720 2
@@ -66,9 +66,13 @@ sravni.ru#?#div[class^="style_wrapper_"]:-abp-has(> [class^="style_card_"] [clas
 a21165 1
 sravni.ru##div[class^="top-offers_"]
 d21706 1
+d22340 2
+a22341 2
+||static.dzeninfra.ru/s3/zen-apps/mobile/*/*/$script
+||static.dzeninfra.ru/s3/zen-apps/subscriptions/*/*/$script
 d22371 1
 a22371 1
-||pikabu.ru/ajax/*?xbL7L=$xmlhttprequest
+||pikabu.ru/ajax/*?h0oMa=$xmlhttprequest
 a26720 1
 psytests.org,psytests.org.ru#@##TopAd
 d27001 1
@@ -92,3 +96,5 @@ forum.ixbt.com##+js(prevent-setTimeout, count_banners)
 d29381 1
 a29381 1
 dzen.ru##div:matches-path(/news/search?query=) [aria-label="Страница с новостями"] > div:only-child > div > div:first-child:not([style]):not([aria-label])
+a29592 1
+vk.com,vk.ru,vkvideo.ru##+js(set-constant, Object.prototype.endscreenAnnouncement, undefined)
