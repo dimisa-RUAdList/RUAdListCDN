@@ -1,10 +1,11 @@
-diff name:ruadlist lines:72 checksum:dda8fe2986
+diff name:ruadlist lines:82 checksum:57fa7d9fbf
 d4 2
 a5 2
-! Last modified: Tue, 21 Apr 2026 09:47:23 +0000
-! Diff-Path: ../patches/2026.4.21.587.patch#ruadlist
+! Last modified: Tue, 21 Apr 2026 14:04:10 +0000
+! Diff-Path: ../patches/2026.4.21.844.patch#ruadlist
 d11919 1
-a11919 1
+a11919 2
+||img.playground.ru/moevideo_*.html
 ||img.zoneofgames.*/branding/$domain=zoneofgames.ru
 a13938 1
 psytests.org,psytests.org.ru###beyond
@@ -33,17 +34,25 @@ ritsatv.ru##.monetization-button
 d17914 1
 a18949 1
 kursiv.media##.widgets-container
+a19487 1
+playground.ru##[src*="/moevideo_"][src$=".html"]
 a19530 1
 kod.ru##[title="Яндекс.Дзен"]
 d20386 1
 a20386 1
 pikabu.ru##article[data-author-id="6"]
+d20605 1
+a20605 1
+360.ru,riamo.ru#?#button:-abp-has(> svg > [clip-path*="dzen"])
 a21001 1
 forum.zoneofgames.ru##div[class^="branding"]
 d22356 2
 a22357 2
 ||static.dzeninfra.ru/s3/zen-apps/mobile/*/*/$script
 ||static.dzeninfra.ru/s3/zen-apps/subscriptions/*/*/$script
+d22361 1
+a22361 1
+://pikabu.ru/$csp=connect-src https://pikabu.ru/ajax/ https://pikabu.ru/ajax.php https://pikabu.ru/ajax?route= *.pikabu.ru/ data: https://pikabu.ru/.well-known/ wss://pikabu.ru/.well-known/ wss://ws.pikabu.ru/
 d22387 1
 a22387 1
 ||pikabu.ru/ajax/*?h0oMa=$xmlhttprequest
@@ -58,6 +67,7 @@ androidinsider.ru,appleinsider.ru##[href*="ozon."]:style(pointer-events: none !i
 a27541 2
 hdrezka.inc,rezka.biz##.container > #content:style(margin-top: unset !important)
 ! ---
+d27644 1
 d28117 2
 d28454 2
 a28455 1

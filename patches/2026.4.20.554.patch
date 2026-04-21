@@ -1,10 +1,11 @@
-diff name:ruadlist lines:31 checksum:dda8fe2986
+diff name:ruadlist lines:41 checksum:57fa7d9fbf
 d4 2
 a5 2
-! Last modified: Tue, 21 Apr 2026 09:47:23 +0000
-! Diff-Path: ../patches/2026.4.21.587.patch#ruadlist
+! Last modified: Tue, 21 Apr 2026 14:04:10 +0000
+! Diff-Path: ../patches/2026.4.21.844.patch#ruadlist
 d11919 1
-a11919 1
+a11919 2
+||img.playground.ru/moevideo_*.html
 ||img.zoneofgames.*/branding/$domain=zoneofgames.ru
 d16000 1
 a16000 1
@@ -15,11 +16,20 @@ yap.ru,yaplakal.com#?#.lenta > tbody > tr:-abp-has(> .topic-header > .topic-head
 yap.ru,yaplakal.com#?#.lenta > tbody > tr:-abp-has(> .topic-header > .topic-header-parent > .mainpage-rank-container:empty) + tr + tr
 a18955 1
 kursiv.media##.widgets-container
+a19493 1
+playground.ru##[src*="/moevideo_"][src$=".html"]
+d20612 1
+a20612 1
+360.ru,riamo.ru#?#button:-abp-has(> svg > [clip-path*="dzen"])
 a21008 1
 forum.zoneofgames.ru##div[class^="branding"]
+d22368 1
+a22368 1
+://pikabu.ru/$csp=connect-src https://pikabu.ru/ajax/ https://pikabu.ru/ajax.php https://pikabu.ru/ajax?route= *.pikabu.ru/ data: https://pikabu.ru/.well-known/ wss://pikabu.ru/.well-known/ wss://ws.pikabu.ru/
 d22592 1
 a22592 1
 www.avito.ru##[data-chunks="item"] + div > div:first-child > div:first-child + div > div:first-child + div + div:last-child > div:only-child > div:first-child + div:last-child > div:only-child > div:first-child + div:last-child
+d27654 1
 d28462 2
 a28463 1
 ya.ru##[id^="ryt"][id*="m-f"][id$="d"]

@@ -1,10 +1,11 @@
-diff name:ruadlist lines:65 checksum:dda8fe2986
+diff name:ruadlist lines:75 checksum:57fa7d9fbf
 d4 2
 a5 2
-! Last modified: Tue, 21 Apr 2026 09:47:23 +0000
-! Diff-Path: ../patches/2026.4.21.587.patch#ruadlist
+! Last modified: Tue, 21 Apr 2026 14:04:10 +0000
+! Diff-Path: ../patches/2026.4.21.844.patch#ruadlist
 d11919 1
-a11919 1
+a11919 2
+||img.playground.ru/moevideo_*.html
 ||img.zoneofgames.*/branding/$domain=zoneofgames.ru
 a13938 1
 psytests.org,psytests.org.ru###beyond
@@ -29,17 +30,25 @@ yap.ru,yaplakal.com#?#.lenta > tbody > tr:-abp-has(> .topic-header > .topic-head
 d17916 1
 a18951 1
 kursiv.media##.widgets-container
+a19489 1
+playground.ru##[src*="/moevideo_"][src$=".html"]
 a19532 1
 kod.ru##[title="Яндекс.Дзен"]
 d20388 1
 a20388 1
 pikabu.ru##article[data-author-id="6"]
+d20607 1
+a20607 1
+360.ru,riamo.ru#?#button:-abp-has(> svg > [clip-path*="dzen"])
 a21003 1
 forum.zoneofgames.ru##div[class^="branding"]
 d22358 2
 a22359 2
 ||static.dzeninfra.ru/s3/zen-apps/mobile/*/*/$script
 ||static.dzeninfra.ru/s3/zen-apps/subscriptions/*/*/$script
+d22363 1
+a22363 1
+://pikabu.ru/$csp=connect-src https://pikabu.ru/ajax/ https://pikabu.ru/ajax.php https://pikabu.ru/ajax?route= *.pikabu.ru/ data: https://pikabu.ru/.well-known/ wss://pikabu.ru/.well-known/ wss://ws.pikabu.ru/
 d22389 1
 a22389 1
 ||pikabu.ru/ajax/*?h0oMa=$xmlhttprequest
@@ -51,6 +60,7 @@ psytests.org,psytests.org.ru#@##TopAd
 a27543 2
 hdrezka.inc,rezka.biz##.container > #content:style(margin-top: unset !important)
 ! ---
+d27646 1
 d28119 2
 d28456 2
 a28457 1
