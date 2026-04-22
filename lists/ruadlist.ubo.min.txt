@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 22 Apr 2026 09:45:49 +0000
-! Diff-Path: ../patches/2026.4.22.585.patch#ruadlist
+! Last modified: Wed, 22 Apr 2026 15:22:27 +0000
+! Diff-Path: ../patches/2026.4.22.922.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -19600,6 +19600,7 @@ menu.cc.ua,mycooking.pp.ua##a[href$=".htm"]
 serialy-2021.com,serialy-tor.com##a[href$=".php"]
 2baksa.ws##a[href$=".php"] > img
 pr-people.ru##a[href$=".php"][target="_blank"]
+gofrag.ru##a[href$="/pomoshch"]
 eadaily.com##a[href*="#after_incut"]
 lostfilm.download,lostfilm.life,lostfilm.one,lostfilm.pro,lostfilm.space,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv5.site##a[href*="&brid="]
 allfight.ru##a[href*="-pokupka-zhilya-"]
@@ -19940,7 +19941,6 @@ kinotorrs.me##a[href="/help"]
 101.ru##a[href="/menu-subscription"]
 uafix.net##a[href="/noads.html"]
 kinobaza.net##a[href="/out.php"]
-gofrag.ru##a[href="/pomoshch"]
 news29.ru##a[href="/reklama/"]
 windata.ru##a[href="/shorturl"]
 l2argument.ru##a[href="buy-ads.html"]
@@ -20771,6 +20771,7 @@ mydiv.net##div[class*="__top-ad"]
 rg.ru##div[class*="_fox__"]
 poltavawave.com.ua##div[class*="_place__"]
 tass.ru##div[class*="_top_ad_"]
+sovsport.ru##div[class*="_winline"]
 rg.ru##div[class*="adBox"]
 rg.ru##div[class*="adFox"]
 agroxxi.ru##div[class*="adagro"]
@@ -21025,7 +21026,6 @@ lada-granta.net,lkforum.ru##div[class^="but-150"]
 sovsport.ru##div[class^="button_advertisement"]
 umu.org.ua##div[class^="c40-reveal-modal"]
 sovsport.ru##div[class^="card-carousel_coefficient"]
-sovsport.ru##div[class^="card-carousel_winline"]
 chita.ru##div[class^="chitaru__wonder"]
 pogoda.meta.ua##div[class^="city__banner"]
 click-or-die.ru##div[class^="click-content"]
@@ -21198,6 +21198,7 @@ sravni.ru##div[class^="top-offers_"]
 flcksbr.top,flicksbar.fun,flicksbar.info,flicksbar.mom##div[class^="topAd"]
 tproger.ru##div[class^="tp-"][class$="-top-container"]
 formulalubvi.com##div[class^="traffic-video"]
+sovsport.ru##div[class^="trend-item_bet_"]
 rbook.me##div[class^="trsm"]
 alimero.ru##div[class^="two-column-page-sidebar-slided-boners"]
 uaserials.com,uaserials.my##div[class^="uas-custom-"]
