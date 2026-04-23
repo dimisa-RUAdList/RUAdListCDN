@@ -1,8 +1,8 @@
-diff name:ruadlist lines:57 checksum:6ac0bc598a
+diff name:ruadlist lines:63 checksum:669de598dd
 d4 2
 a5 2
-! Last modified: Thu, 23 Apr 2026 16:02:47 +0000
-! Diff-Path: ../patches/2026.4.23.962.patch#ruadlist
+! Last modified: Thu, 23 Apr 2026 21:01:34 +0000
+! Diff-Path: ../patches/2026.4.23.1261.patch#ruadlist
 a16083 1
 matematika-doma.org#?#.card:-abp-has(> .card-body > .custom > div[class^="custom"][class$="ad"])
 a19602 1
@@ -16,6 +16,9 @@ sovsport.ru##div[class*="_winline"]
 d21028 1
 a21200 1
 sovsport.ru##div[class^="trend-item_bet_"]
+d22339 2
+a22340 1
+wildberries.ru,wildberries.*##div[class*="billboard"]
 d22481 1
 a22481 1
 kp.kg,kp.kz,kp.ru,md.kp.media#?#body > #app div:-abp-properties(background-color: rgb(225, 231, 235))
@@ -53,6 +56,9 @@ kp.ru##+js(set-cookie, geoid, 32767, /, dontOverwrite, 1)
 d29389 1
 a29389 1
 kp.kg,kp.kz,kp.ru,md.kp.media##body > #app div:matches-css(background-color: rgb(225, 231, 235))
+d29453 1
+a29453 1
+wildberries.*##+js(set-constant, Object.prototype._prepareBannersList, noopFunc)
 d29704 1
 a29704 1
 7days.ru,cdn.viqeo.tv,kinonews.ru,kp.kg,kp.kz,kp.ru,md.kp.media,mk.ru,ohotniki.ru,portalvirtualreality.ru,radiokp.ru,sportkp.ru,the-day.ru,woman.ru,www.fontanka.ru##+js(addEventListener-defuser, visibilitychange, captureContext)

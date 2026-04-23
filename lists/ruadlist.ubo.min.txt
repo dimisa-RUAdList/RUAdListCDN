@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 23 Apr 2026 16:02:47 +0000
-! Diff-Path: ../patches/2026.4.23.962.patch#ruadlist
+! Last modified: Thu, 23 Apr 2026 21:01:34 +0000
+! Diff-Path: ../patches/2026.4.23.1261.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22338,8 +22338,7 @@ repost.uz##video[src*="/storage/uploads/"][src$=".mp4"]
 vc.ru##vue[name="booster"]
 wasd.tv##wasd-banner
 wasd.tv##wasd-player-overlay-banner
-wildberries.ru,wildberries.*##div.banner
-wildberries.ru,wildberries.*##div.j-banners-block
+wildberries.ru,wildberries.*##div[class*="billboard"]
 mivmeste.info##wix-iframe
 pogodairadar.com.ua##wo-ad
 101xp.com##xp-banner-sidebar
@@ -29451,7 +29450,7 @@ translate.yandex.ru,translate.yandex.*##+js(set-constant, Object.prototype.dispa
 gofrag.ru##video:remove-attr(autoplay)
 3dnews.ru##video[autoplay="autoplay"]:remove-attr(autoplay)
 kino-teatr.ru,kinoafisha.info,kinonews.ru##videotronic-player:remove-attr(data-video-autoplay)
-wildberries.*##+js(set-constant, Object.prototype._prepareBannersList, undefined)
+wildberries.*##+js(set-constant, Object.prototype._prepareBannersList, noopFunc)
 ya.ru,yandex.*##+js(remove-node-text, script, DistributionLinkBro)
 ya.ru,yandex.*##.dist-overlay__popup:remove()
 ya.ru,yandex.*##.simple-popup__overlay:remove()

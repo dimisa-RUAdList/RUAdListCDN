@@ -1,8 +1,8 @@
-diff name:ruadlist lines:89 checksum:6ac0bc598a
+diff name:ruadlist lines:95 checksum:669de598dd
 d4 2
 a5 2
-! Last modified: Thu, 23 Apr 2026 16:02:47 +0000
-! Diff-Path: ../patches/2026.4.23.962.patch#ruadlist
+! Last modified: Thu, 23 Apr 2026 21:01:34 +0000
+! Diff-Path: ../patches/2026.4.23.1261.patch#ruadlist
 a9919 1
 ||getdstudio.app^$popup
 a11918 1
@@ -30,6 +30,9 @@ sovsport.ru##div[class*="_winline"]
 d21024 1
 a21196 1
 sovsport.ru##div[class^="trend-item_bet_"]
+d22335 2
+a22336 1
+wildberries.ru,wildberries.*##div[class*="billboard"]
 d22372 1
 a22372 1
 ://pikabu.ru/$csp=connect-src https://pikabu.ru/ajax/ https://pikabu.ru/ajax.php https://pikabu.ru/ajax?route= *.pikabu.ru/ data: https://pikabu.ru/.well-known/ wss://pikabu.ru/.well-known/ wss://ws.pikabu.ru/
@@ -83,6 +86,9 @@ a29385 1
 kp.kg,kp.kz,kp.ru,md.kp.media##body > #app div:matches-css(background-color: rgb(225, 231, 235))
 a29445 1
 gofrag.ru##video:remove-attr(autoplay)
+d29448 1
+a29448 1
+wildberries.*##+js(set-constant, Object.prototype._prepareBannersList, noopFunc)
 a29513 1
 pogoda.mail.ru##+js(prevent-setTimeout, 'return Z', 100)
 d29698 1
