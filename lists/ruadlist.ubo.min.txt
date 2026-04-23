@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 23 Apr 2026 06:14:36 +0000
-! Diff-Path: ../patches/2026.4.23.374.patch#ruadlist
+! Last modified: Thu, 23 Apr 2026 12:05:10 +0000
+! Diff-Path: ../patches/2026.4.23.725.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -16081,6 +16081,7 @@ vkfaces.com#?#.card-separator__title:-abp-contains(реклама)
 pronovostroy.ru##.card-special-gallery--topic
 solidarnost.org##.card-yandex
 1tv.ru##.card.promo
+matematika-doma.org#?#.card:-abp-has(> .card-body > .custom > div[class^="custom"][class$="ad"])
 sovsport.ru##.cardForecast_card_container__b_Ukm > div[class^="cardForecast_btn"]
 edimdoma.ru##.card_commercial
 marketsakhcom.ru#?#.cards__col:-abp-has(> .card_cb)
@@ -19628,7 +19629,7 @@ akipress.org##a[href*="/?from=portal&place=ver-slider"]
 sia.ru##a[href*="/?section=519"]
 glazey.info##a[href*="/Na-pravah-reklamy/"]
 pr-cy.ru##a[href*="/a/click/"]
-5terka.com,animemobi.ru,ap22.ru,app-time.ru,bakemono.ru,bik-info.ru,chemezova.ru,click-or-die.ru,elektrosat.ru,f-igri.ru,gameout.ru,gazetaby.com,gazetaby.info,gazetaby.media,gitjournal.tech,hdclub.ua,inform-ua.info,instrument16.ru,klub-masterov.ru,kp.kg,kp.kz,kp.md,kp.ru,kritika24.ru,ladylib.net,libking.ru,moy-instrument.ru,mrtranslate.ru,multfilms.online,ok-tv.org,only-tv.org,osortah.ru,outsidethebox.ms,peugeot-citroen.net,pluggedin.ru,presentation-creation.ru,privatbankrf.ru,remont-avtovaz.ru,rpgdon.com,rusplt.ru,rutracker.ru,samelectric.ru,selomoe.ru,seloved.ru,shkolniku.com,simhost.org,stiralkainfo.ru,technical.city,tivix.co,tmbw.ru,trackitonline.ru,tuttop.com,tv-only.org,uanic.name,uaspectr.com,ustanovkaos.ru,volga.news,vsetop.org,vsetut.su##a[href*="/ad.admitad.com/"]
+5terka.com,animemobi.ru,ap22.ru,app-time.ru,bakemono.ru,bik-info.ru,chemezova.ru,click-or-die.ru,elektrosat.ru,f-igri.ru,gameout.ru,gazetaby.com,gazetaby.info,gazetaby.media,gitjournal.tech,hdclub.ua,inform-ua.info,instrument16.ru,klub-masterov.ru,kritika24.ru,ladylib.net,libking.ru,moy-instrument.ru,mrtranslate.ru,multfilms.online,ok-tv.org,only-tv.org,osortah.ru,outsidethebox.ms,peugeot-citroen.net,pluggedin.ru,presentation-creation.ru,privatbankrf.ru,remont-avtovaz.ru,rpgdon.com,rusplt.ru,rutracker.ru,samelectric.ru,selomoe.ru,seloved.ru,shkolniku.com,simhost.org,stiralkainfo.ru,technical.city,tivix.co,tmbw.ru,trackitonline.ru,tuttop.com,tv-only.org,uanic.name,uaspectr.com,ustanovkaos.ru,volga.news,vsetop.org,vsetut.su##a[href*="/ad.admitad.com/"]
 1fnl.ru,1tulatv.ru,aif.ru,alogvinov.com,compulenta.ru,computerra.ru,forums.goha.ru,gamebomb.ru,gamer-info.com,gismeteo.ru,gotps3.ru,kudago.com,maximonline.ru,move.ru,omskpress.ru,osp.ru,penzavzglyad.ru,ps3hits.ru,radiorecord.ru,shazoo.ru,sobaka.ru,soccer.ru,sportbox.ru##a[href*="/ad.adriver."]
 forum.woodtools.ru##a[href*="/ad/www/delivery/ck.php"]
 alldz.net##a[href*="/addownload.html"]
@@ -22479,7 +22480,7 @@ mail.ru##[href*="https://dzen.ru"]
 vk.com,vk.ru##[id^="post-"] > ._post_content > :only-child
 levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##[role="banner"] > .s-header-extra + div[class]
 livejournal.com#?#a:-abp-has(span:-abp-contains(Реклама))
-kp.kg,kp.kz,kp.md,kp.ru#?#body > #app div:-abp-properties(background-color: rgb(225, 231, 235))
+kp.kg,kp.kz,kp.ru,md.kp.media#?#body > #app div:-abp-properties(background-color: rgb(225, 231, 235))
 sdamgia.ru##center > div[id][style]
 cq.ru#?#div:-abp-properties(content: "Реклама")
 drive2.ru#?#div:-abp-properties(min-height: 555px)
@@ -22670,18 +22671,15 @@ $third-party,script,xmlhttprequest,domain=kino-live8.biz
 @@||googleads.g.doubleclick.net/$xmlhttprequest,domain=kino-live8.biz
 kino-live8.biz#?#div[class^="right"] .ramka1:-abp-has(noindex)
 ! Комсомольская правда
-kp.kg,kp.kz,kp.md,kp.ru##[data-subscribe-zen]
-kp.kg,kp.kz,kp.md,kp.ru##[data-test-id="News_SpecialArticle"]
-kp.kg,kp.kz,kp.md,kp.ru##[data-without-height]
-kp.kg,kp.kz,kp.md,kp.ru#?#body > #app [data-gtm-el="content-body"] ~ div > div:-abp-has(> [data-subscribe-zen])
-kp.kg,kp.kz,kp.md,kp.ru#?#body > #app div:-abp-has(> div:first-child + div > div:first-child > div:first-child + section > div > div > script[data-key])
-kp.kg,kp.kz,kp.md,kp.ru#?#body > #app div:last-child:-abp-has(> div > div > div ~ section > div > [id^="unit_"])
-kp.kg,kp.kz,kp.md,kp.ru##div[data-name]:not(.buttonContainer)
+kp.kg,kp.kz,kp.ru,md.kp.media##[data-test-id="News_SpecialArticle"]
+kp.kg,kp.kz,kp.ru,md.kp.media#?#body > #app div:last-child:-abp-has(> div > div > div ~ section > div > [id^="unit_"])
+kp.kg,kp.kz,kp.ru,md.kp.media##div[data-name]:not(.buttonContainer)
 ! спецпроекты, типа отдых в россии
 kp.ru##.inner-layout > div[style*="250px"]
 kp.ru##.kpad
 kp.ru##.kupi-reklamu-btn
 kp.ru##.rcard_link
+kp.ru##div[class^="rec-slot_"]
 ! путеводитель
 kp.ru###sidebar-block-top
 kp.ru##.kion__wrapper
@@ -22699,7 +22697,7 @@ kp.ru##.tgb_block
 kp.ru##div[id^="rec"] > div div[style="align-items:center;"]
 ||kp.ru/guide/js/brp.js
 ! эксперт
-/market-static/*$domain=kp.kg|kp.kz|kp.md|kp.ru
+/market-static/*$domain=kp.kg|kp.kz|kp.ru|md.kp.media
 kp.ru##.ya-market
 kp.ru##div.ad-slot
 ||kp.ru/*/expert-market/
@@ -27785,11 +27783,11 @@ korabel.ru##div[id^="newsid_"] > .row0[style="margin-bottom:8px;"]:style(pointer
 ! ---
 kp.ru###allrecords > #t-header + div + div[id^="rec"][style*="padding-top:"]:style(padding-top: 0 !important)
 kp.ru###allrecords > #t-header + div[id^="rec"][style*="padding-top:"]:style(padding-top: 0 !important)
-kp.kg,kp.kz,kp.md,kp.ru##.page-header__promo-btn[href*="/reklama/"]
+kp.kg,kp.kz,kp.ru,md.kp.media##.page-header__promo-btn[href*="/reklama/"]
 kp.ru##.page-wrapper > .page-inner:style(margin-top: auto !important)
-kp.kg,kp.kz,kp.md,kp.ru##a[href^="https://advert.kp.ru"]
-kp.kg,kp.kz,kp.md,kp.ru##body > #app [data-branding-wrapper]:style(padding-top: 0 !important)
-kp.kg,kp.kz,kp.md,kp.ru##body > #app div[style="display:block !important"] > div:first-child > div:first-child + div > div:first-child + div > div[data-name]:first-child + div:style(margin-top: auto !important)
+kp.kg,kp.kz,kp.ru,md.kp.media##a[href^="https://advert.kp.ru"]
+kp.kg,kp.kz,kp.ru,md.kp.media##body > #app [data-branding-wrapper]:style(padding-top: 0 !important)
+kp.kg,kp.kz,kp.ru,md.kp.media##body > #app div[style="display:block !important"] > div:first-child > div:first-child + div > div:first-child + div > div[data-name]:first-child + div:style(margin-top: auto !important)
 ! ---
 ! krasview.ru - зеркала
 hlamer.ru,ru##body[style*="://image.krasview.ru/channel"]:style(background-color: #596c84 !important)
@@ -28397,9 +28395,10 @@ videomore.ru##body > .wrapper:style(padding-top: 0 !important; background-color:
 videoredaktor.ru##div[style^="min-height: 100vh;"]:style(min-height: 0 !important)
 ! ---
 ! VIQEO, обще стили для плеера
-kp.kg,kp.kz,kp.md,media,ru,russian.rt.com##.buttonContainer[data-name="play"][style*="left: 10px;"]:style(opacity: unset !important)
+kp.kg,kp.kz,md,media,ru,russian.rt.com##.buttonContainer[data-name="play"][style*="left: 10px;"]:style(opacity: unset !important)
 cdn.viqeo.tv##[data-video_status="paused"] .buttonContainer[data-name="play"][style*="left: 10px;"]:style(opacity: unset !important)
 ! Фикс для VK-плеера во фреймах VIQEO
+club,com,kg,kz,md,media,net,org,ru,su,tv##[data-video_status][data-adapter="vk"] .mediaContainer:style(display: unset !important)
 club,com,kg,kz,md,media,net,org,ru,su,tv##[data-video_status][data-adapter="vk"] .previewContainer
 ! ---
 virtualbrest.ru##body > div[id][class] > .header > div > div:not([class^="header"]) > *
@@ -29009,7 +29008,7 @@ rutube.ru##+js(addEventListener-defuser, click, current, elements, [data-testid=
 ~player.smotrim.ru,smotrim.ru##+js(addEventListener-defuser, click, matches)
 lrepacks.net##+js(addEventListener-defuser, click, pop)
 ~id.rambler.ru,~mail.rambler.ru,rambler.ru,~vp.rambler.ru##+js(addEventListener-defuser, copy, extra)
-kp.kg,kp.kz,kp.md,kp.ru,rbc.ru,sportrbc.ru##+js(addEventListener-defuser, copy, getSelection)
+kp.kg,kp.kz,kp.ru,md.kp.media,rbc.ru,sportrbc.ru##+js(addEventListener-defuser, copy, getSelection)
 aione.ru,carservic.ru,iptv.org.ua,newxboxone.ru,tva.org.ua,ufchgu.ru##+js(addEventListener-defuser, copy, pagelink)
 cq.ru##+js(addEventListener-defuser, copy, preventDefault)
 megaprogz.ru,programhub.ru##+js(addEventListener-defuser, download, isMonetized)
@@ -29213,7 +29212,7 @@ frontend.vh.yandex.ru##+js(set-constant, Object.prototype.autoplay, false)
 eagleplatform.com##+js(set-constant, Object.prototype.autoplay, null)
 embed.dugout.com##+js(set-constant, Object.prototype.autostart, noopFunc)
 sports.ru##+js(set-constant, Object.prototype.branding, undefined)
-dni.expert,dni.ru,kp.kg,kp.kz,kp.md,kp.ru,ladys.media,lifehacker.ru,mk.ru,ohotniki.ru,portalvirtualreality.ru,radiokp.ru,russian.rt.com,sportkp.ru,stopgame.ru,the-day.ru,woman.ru,womanhit.ru##+js(set-constant, Object.prototype.changeVisible, noopFunc)
+dni.expert,dni.ru,kp.kg,kp.kz,kp.ru,ladys.media,lifehacker.ru,md.kp.media,mk.ru,ohotniki.ru,portalvirtualreality.ru,radiokp.ru,russian.rt.com,sportkp.ru,stopgame.ru,the-day.ru,woman.ru,womanhit.ru##+js(set-constant, Object.prototype.changeVisible, noopFunc)
 ati.su##+js(set-constant, Object.prototype.createBannerItem, null)
 24smi.org##+js(set-constant, Object.prototype.detect, noopFunc)
 examenpdd.com##+js(set-constant, Object.prototype.detectAdblock, noopFunc)
@@ -29266,6 +29265,7 @@ nnm-club.me,nnmclub.ro,nnmclub.to##+js(set-cookie, clear, ok, , reload, 1)
 liga.net##+js(set-cookie, cookieAccepted, true)
 ixbt.com##+js(set-cookie, cookie_accept, 1)
 avito.ru##+js(set-cookie, cookie_consent_shown, 1)
+kp.ru##+js(set-cookie, geoid, 32767, /, dontOverwrite, 1)
 forum.ixbt.com##+js(set-cookie, ha, 1)
 kufar.by##+js(set-cookie, kuf_agr, true)
 lk.emias.mos.ru##+js(set-cookie, lk-hasConsent, True)
@@ -29387,7 +29387,7 @@ aniu.ru,liveball.*##+js(no-setInterval-if, debugger)
 cq.ru#?#article:-abp-has(> div .p__affiliate) a[href^="http"]:not([href*="cq.ru/"]):style(pointer-events: none !important; border-bottom: none !important; color: inherit !important)
 dzen.ru##article:has(> div:matches-attr(/[a-z0-9]/=/_ad-yp|direct|mytarget/))
 autonews.co.ua,in-poland.com,liveball.*,ukrainianwall.com##+js(addEventListener-defuser, /contextmenu|copy|keydown|selectstart/)
-kp.kg,kp.kz,kp.md,kp.ru##body > #app div:matches-css(background-color: rgb(225, 231, 235))
+kp.kg,kp.kz,kp.ru,md.kp.media##body > #app div:matches-css(background-color: rgb(225, 231, 235))
 4pda.to##body > #ipbwrapper > script + div > table > tbody > tr > td[width] + td
 4pda.to##body > div[id^="r"] > div[id^="r"][href]
 anime-chan.me##body > div[style^="pointer-events: none;"][style*="visible;"]
@@ -29702,7 +29702,7 @@ gazeta.press,gazeta.ru,lenta.ru,secretmag.ru,wmj.ru##iframe[src^="https://vp.ram
 !#endif
 ! VIQEO автоплей на Shkulev Media, только для десктопов
 !#if !env_mobile
-7days.ru,cdn.viqeo.tv,kinonews.ru,kp.kg,kp.kz,kp.md,kp.ru,mk.ru,ohotniki.ru,portalvirtualreality.ru,radiokp.ru,sportkp.ru,the-day.ru,woman.ru,www.fontanka.ru##+js(addEventListener-defuser, visibilitychange, captureContext)
+7days.ru,cdn.viqeo.tv,kinonews.ru,kp.kg,kp.kz,kp.ru,md.kp.media,mk.ru,ohotniki.ru,portalvirtualreality.ru,radiokp.ru,sportkp.ru,the-day.ru,woman.ru,www.fontanka.ru##+js(addEventListener-defuser, visibilitychange, captureContext)
 116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,starhit.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,www.fontanka.ru,ya62.ru##+js(set-constant, Object.prototype.autoplay, undefined)
 !#endif
 !#if env_mv3
