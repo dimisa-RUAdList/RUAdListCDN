@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 24 Apr 2026 03:44:14 +0000
-! Diff-Path: ../patches/2026.4.24.224.patch#ruadlist
+! Last modified: Fri, 24 Apr 2026 09:06:20 +0000
+! Diff-Path: ../patches/2026.4.24.546.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -15325,6 +15325,7 @@ vringe.com##.all_news_partners
 liveinternet.ru##.allpageinner td[height="100"]
 people-ask.ru##.altAdA
 mediapapa.org##.am
+gofrag.ru##.amb-other
 amd.online##.amd-adfree-banner
 cmlt.ru##.an-pic-top-box
 hitagro.ru##.an-sidebar1
@@ -22400,7 +22401,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=levik.blog|livejournal.c
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
 ||ng72.ru^$csp=script-src 'self' 'unsafe-eval' https:
-||pikabu.ru/ajax/*?h0oMa=$xmlhttprequest
+||pikabu.ru/ajax/*?Uy7Tr=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -28138,9 +28139,6 @@ rg.ru##div[class^="PageMediaContentVideo_mainContent"]:style(min-height: 0 !impo
 rg.ru##div[class^="Page_main"][style*="min-height:"]:style(min-height: 0 !important)
 rg.ru##html[style*="overflow:"] > body:style(padding-right: 0 !important)
 rg.ru##html[style*="overflow:"]:style(overflow: auto !important)
-! ---
-ria.ru##.m-blur ~ #modalLayer
-ria.ru##.m-blur:style(filter: none !important; position: relative !important)
 ! ---
 riotpixels.com##body:not(#id) .all-wrapper:style(top: 0 !important)
 riotpixels.com##body:not(#id) .bottom-bar:style(top: 0 !important)
