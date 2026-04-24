@@ -1,23 +1,47 @@
-diff name:ruadlist lines:69 checksum:53e63d4f69
+diff name:ruadlist lines:99 checksum:86359c19c5
 d4 2
 a5 2
-! Last modified: Fri, 24 Apr 2026 12:02:05 +0000
-! Diff-Path: ../patches/2026.4.24.722.patch#ruadlist
+! Last modified: Fri, 24 Apr 2026 17:09:36 +0000
+! Diff-Path: ../patches/2026.4.24.1029.patch#ruadlist
+a6243 1
+||tp.media^$third-party
+a9042 1
+~bookmaker-ratings.ru##a[href^="https://bookmaker-ratings.ru/bookmakers-homepage/"][target="_blank"]
+a9053 1
+##a[href^="https://tp.media/r?"]
+d13168 1
+a13168 1
+||sport24.ru/hub-
 a15327 1
 gofrag.ru##.amb-other
 a16083 1
 matematika-doma.org#?#.card:-abp-has(> .card-body > .custom > div[class^="custom"][class$="ad"])
+a19058 1
+dumatv.ru##.zen
+a19278 1
+dumatv.ru##[data-dzen-url]
+d19531 1
+a19582 1
+sport24.ru##a[class][style*="; cursor: pointer;"]:not([href])
 a19602 1
 gofrag.ru##a[href$="/pomoshch"]
 d19630 1
 a19630 1
 5terka.com,animemobi.ru,ap22.ru,app-time.ru,bakemono.ru,bik-info.ru,chemezova.ru,click-or-die.ru,elektrosat.ru,f-igri.ru,gameout.ru,gazetaby.com,gazetaby.info,gazetaby.media,gitjournal.tech,hdclub.ua,inform-ua.info,instrument16.ru,klub-masterov.ru,kritika24.ru,ladylib.net,libking.ru,moy-instrument.ru,mrtranslate.ru,multfilms.online,ok-tv.org,only-tv.org,osortah.ru,outsidethebox.ms,peugeot-citroen.net,pluggedin.ru,presentation-creation.ru,privatbankrf.ru,remont-avtovaz.ru,rpgdon.com,rusplt.ru,rutracker.ru,samelectric.ru,selomoe.ru,seloved.ru,shkolniku.com,simhost.org,stiralkainfo.ru,technical.city,tivix.co,tmbw.ru,trackitonline.ru,tuttop.com,tv-only.org,uanic.name,uaspectr.com,ustanovkaos.ru,volga.news,vsetop.org,vsetut.su##a[href*="/ad.admitad.com/"]
 d19943 1
+a20282 1
+sport24.ru##a[href^="https://ref."][target="_blank"]
+a20524 1
+domeno.ru##body > center > a[target="_blank"]
+a20727 1
+sport24.ru#?#div[aria-expanded="false"]:-abp-contains(Реклама)
 a20773 1
 sovsport.ru##div[class*="_winline"]
 d21028 1
 a21200 1
 sovsport.ru##div[class^="trend-item_bet_"]
+a21617 1
+sport24.ru##div[style="height:3rem;margin-bottom:0.75rem"]
 d22339 2
 a22340 1
 wildberries.ru,wildberries.*##div[class*="billboard"]
@@ -51,9 +75,15 @@ a28399 1
 kp.kg,kp.kz,md,media,ru,russian.rt.com##.buttonContainer[data-name="play"][style*="left: 10px;"]:style(opacity: unset !important)
 a28401 1
 club,com,kg,kz,md,media,net,org,ru,su,tv##[data-video_status][data-adapter="vk"] .mediaContainer:style(display: unset !important)
+d28537 2
+a28539 2
+dzen.ru##[aria-label^="Страница "][aria-label*=" новост"] > div[class] > div > div[id] + div[class^="news"]:not(:last-child):not([aria-label])
+dzen.ru##[aria-label^="Страница "][aria-label*=" новост"] > div[class] > div > div[id] ~ div[id]
 d29011 1
 a29011 1
 kp.kg,kp.kz,kp.ru,md.kp.media,rbc.ru,sportrbc.ru##+js(addEventListener-defuser, copy, getSelection)
+a29136 1
+dumatv.ru##+js(prevent-addEventListener, message, AUTOPLAY)
 d29215 1
 a29215 1
 dni.expert,dni.ru,kp.kg,kp.kz,kp.ru,ladys.media,lifehacker.ru,md.kp.media,mk.ru,ohotniki.ru,portalvirtualreality.ru,radiokp.ru,russian.rt.com,sportkp.ru,stopgame.ru,the-day.ru,woman.ru,womanhit.ru##+js(set-constant, Object.prototype.changeVisible, noopFunc)

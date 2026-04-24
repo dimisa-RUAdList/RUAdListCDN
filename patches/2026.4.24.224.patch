@@ -1,11 +1,41 @@
-diff name:ruadlist lines:10 checksum:53e63d4f69
+diff name:ruadlist lines:40 checksum:86359c19c5
 d4 2
 a5 2
-! Last modified: Fri, 24 Apr 2026 12:02:05 +0000
-! Diff-Path: ../patches/2026.4.24.722.patch#ruadlist
+! Last modified: Fri, 24 Apr 2026 17:09:36 +0000
+! Diff-Path: ../patches/2026.4.24.1029.patch#ruadlist
+a6243 1
+||tp.media^$third-party
+a9042 1
+~bookmaker-ratings.ru##a[href^="https://bookmaker-ratings.ru/bookmakers-homepage/"][target="_blank"]
+a9053 1
+##a[href^="https://tp.media/r?"]
+d13168 1
+a13168 1
+||sport24.ru/hub-
 a15327 1
 gofrag.ru##.amb-other
+a19059 1
+dumatv.ru##.zen
+a19279 1
+dumatv.ru##[data-dzen-url]
+d19532 1
+a19583 1
+sport24.ru##a[class][style*="; cursor: pointer;"]:not([href])
+a20283 1
+sport24.ru##a[href^="https://ref."][target="_blank"]
+a20525 1
+domeno.ru##body > center > a[target="_blank"]
+a20728 1
+sport24.ru#?#div[aria-expanded="false"]:-abp-contains(Реклама)
+a21619 1
+sport24.ru##div[style="height:3rem;margin-bottom:0.75rem"]
 d22403 1
 a22403 1
 ||pikabu.ru/ajax/*?Uy7Tr=$xmlhttprequest
-d28141 3
+d28142 3
+d28536 2
+a28538 2
+dzen.ru##[aria-label^="Страница "][aria-label*=" новост"] > div[class] > div > div[id] + div[class^="news"]:not(:last-child):not([aria-label])
+dzen.ru##[aria-label^="Страница "][aria-label*=" новост"] > div[class] > div > div[id] ~ div[id]
+a29135 1
+dumatv.ru##+js(prevent-addEventListener, message, AUTOPLAY)
