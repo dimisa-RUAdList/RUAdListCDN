@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 25 Apr 2026 09:05:32 +0000
-! Diff-Path: ../patches/2026.4.25.545.patch#ruadlist
+! Last modified: Sat, 25 Apr 2026 13:35:23 +0000
+! Diff-Path: ../patches/2026.4.25.815.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -23079,8 +23079,9 @@ ngsrabota.com.ua##.ra-top-banner
 fontanka.ru#?#.record > div[class]:-abp-has(> div > [href="/pressrelease/"])
 sp.ngs.ru##.sp-toppromo
 ##.widget-autoru
-fontanka.ru##[class*="pictureDayBlock_"] li > a[href*="/?erid="]
-fontanka.ru#?#[class*="pictureDayBlock_"] li:-abp-has(> a[href*="/?erid="])
+fontanka.ru,ngs.ru,ngs55.ru##[class*="pictureDayBlock_"] div[class*=" advMark_"]
+fontanka.ru,ngs.ru,ngs55.ru##[class*="pictureDayBlock_"] li > a[href*="/?erid="]
+fontanka.ru,ngs.ru,ngs55.ru#?#[class*="pictureDayBlock_"] li:-abp-has(> a[href*="/?erid="])
 fontanka.ru##[data-io-article-url] > [itemprop="articleBody"] ~ p[class]
 ru##[data-ns-portal] .gridContainer div[class^="benefitsBlock_"]
 ru##[data-ns-portal] .notify-messages-popups
