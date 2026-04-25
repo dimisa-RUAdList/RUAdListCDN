@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 25 Apr 2026 03:27:43 +0000
-! Diff-Path: ../patches/2026.4.25.207.patch#ruadlist
+! Last modified: Sat, 25 Apr 2026 09:05:32 +0000
+! Diff-Path: ../patches/2026.4.25.545.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -2383,6 +2383,7 @@
 ||gj7.ru^$third-party
 ||gjafchbcfgbigaheeeg.ru^$third-party
 ||gjslm.com^
+||gjv7fg.ru^$third-party
 ||gkiop.com^$third-party
 ||gkzba.com^$third-party
 ||gkzrev.ru^$third-party
@@ -16901,7 +16902,7 @@ igromania.ru,kanobu.ru##.informer-container
 online-fix.me#?#.informer-sidebar-block:-abp-has(> #aclib)
 gazeta.ua##.informer.double
 sinoptik.ua##.informerTop
-meteoprog.ua##.informer[id^="mp_banner_"]
+meteoprog.com##.informer[id^="mp_banner_"]
 lostpix.com##.infotext
 europaplus.ru##.infox
 education.ua##.inl-blk
@@ -17877,7 +17878,7 @@ tvcook.ru##.recipe-adv_bottom
 19216811.ru##.recl
 depfile.com##.recl_vert
 arigus.tv##.reclam
-kurkul.com,meteoprog.ua##.reclama
+kurkul.com##.reclama
 programki.net##.reclama_v
 peopletalk.ru##.reclame-banner
 mmo13.ru##.recomend
@@ -20701,6 +20702,7 @@ ura.news#?#div:-abp-has(> [id^="adv-"])
 blackwot.ru,draug.ru,emdigital.ru,enthub.it,modsforwot.ru,pogodavtomske.ru#?#div:-abp-has(> [id^="yandex_rtb"])
 photofuneditor.com#?#div:-abp-has(> [src*="pagead2."])
 gdz.ninja,gdzotputina.club,gdzputina.net,reshebnik.com,spishi.fun,zoobrilka.net#?#div:-abp-has(> [src="/secret.png"])
+sport24.ru#?#div:-abp-has(> [style^="margin-bottom:"][style*="1rem"] > a > .bookmaker-rating)
 drive2.ru#?#div:-abp-has(> a[href] > div > div > div > div)
 anwap.film#?#div:-abp-has(> a[href]:not([href^="/films/"]):not([href^="/serials/"]) > div)
 fragrantica.ru#?#div:-abp-has(> a[href^="/goto.php"])
