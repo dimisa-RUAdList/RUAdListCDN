@@ -1,8 +1,8 @@
-diff name:ruadlist lines:88 checksum:749691e580
+diff name:ruadlist lines:115 checksum:d50f53ee29
 d4 2
 a5 2
-! Last modified: Mon, 27 Apr 2026 09:26:40 +0000
-! Diff-Path: ../patches/2026.4.27.566.patch#ruadlist
+! Last modified: Mon, 27 Apr 2026 16:49:25 +0000
+! Diff-Path: ../patches/2026.4.27.1009.patch#ruadlist
 a2119 1
 ||fittingjob.pro^$third-party
 a2385 1
@@ -27,31 +27,55 @@ a13168 1
 ||sport24.ru/hub-
 a15327 1
 gofrag.ru##.amb-other
+a16068 1
+shuba.life#?#.c-post__aside-wrapper > aside:-abp-has(.c-product-card)
 d16193 2
 d16900 1
 a16900 1
 meteoprog.com##.informer[id^="mp_banner_"]
+d17531 1
 d17876 1
 a17876 1
 kurkul.com##.reclama
 a19059 1
 dumatv.ru##.zen
+d19206 1
+a19255 1
+shuba.life#?#[data-article] > section:-abp-has(.c-product-card)
+d19278 1
 a19279 1
 dumatv.ru##[data-dzen-url]
+d19307 1
+a19307 1
+studopedia.ru,studopedia.su##[data-partner]
+d19312 1
+d19314 1
+a19479 1
+shuba.life#?#[role="button"]:-abp-contains(Купит)
 d19532 1
 a19583 1
 sport24.ru##a[class][style*="; cursor: pointer;"]:not([href])
+d19672 1
+d19678 1
 d19691 1
+a20095 1
+rutr.life,rutracker.lib,rutracker.net,rutracker.org##a[href^="go.php?id="]
 a20283 1
 sport24.ru##a[href^="https://ref."][target="_blank"]
+d20453 1
 a20525 1
 domeno.ru##body > center > a[target="_blank"]
+d20622 2
 a20695 1
 sport24.ru#?#div:-abp-has(> [style^="margin-bottom:"][style*="1rem"] > a > .bookmaker-rating)
 a20728 1
 sport24.ru#?#div[aria-expanded="false"]:-abp-contains(Реклама)
 a21619 1
 sport24.ru##div[style="height:3rem;margin-bottom:0.75rem"]
+d22111 1
+d22341 1
+a22341 1
+wildberries.ru,wildberries.*##div[class*="media-placement"]
 d22372 2
 a22373 2
 ||static.dzeninfra.ru/s3/zen-apps/content/*/*/$script
@@ -87,3 +111,6 @@ a29327 2
 pikabu.ru##.sidebar-block:has(> div:matches-css(height: 0px)):remove()
 pikabu.ru##.sidebar-block:not(.sidebar-block_border):remove()
 d29331 1
+d29453 1
+a29453 1
+wildberries.*##+js(set-constant, Object.prototype.prepareBannersList, noopFunc)
