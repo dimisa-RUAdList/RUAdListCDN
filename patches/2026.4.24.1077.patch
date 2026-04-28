@@ -1,8 +1,8 @@
-diff name:ruadlist lines:99 checksum:7c617dd0fb
+diff name:ruadlist lines:116 checksum:b8d1fded4f
 d4 2
 a5 2
-! Last modified: Tue, 28 Apr 2026 11:57:31 +0000
-! Diff-Path: ../patches/2026.4.28.717.patch#ruadlist
+! Last modified: Tue, 28 Apr 2026 17:00:04 +0000
+! Diff-Path: ../patches/2026.4.28.1020.patch#ruadlist
 a2119 1
 ||fittingjob.pro^$third-party
 a2385 1
@@ -28,6 +28,8 @@ d17535 1
 d17880 1
 a17880 1
 kurkul.com##.reclama
+a18095 1
+pikabu.ru##.sber-smile
 d19211 1
 a19260 1
 shuba.life#?#[data-article] > section:-abp-has(.c-product-card)
@@ -48,6 +50,9 @@ d19684 1
 d19697 1
 a20101 1
 rutr.life,rutracker.lib,rutracker.net,rutracker.org##a[href^="go.php?id="]
+d20408 1
+a20408 1
+pikabu.ru##article[data-author-id="7"]
 d20460 1
 d20626 1
 d20630 2
@@ -64,6 +69,8 @@ a22383 2
 d22413 1
 a22413 1
 ||pikabu.ru/ajax/*?hJK7w=$xmlhttprequest
+a22444 1
+stratege.ru##html[xmlns] > body > script + script + style {remove:true;}
 d22684 1
 a22684 1
 kp.kg,kp.kz,kp.ru,md.kp.media#?#div:-abp-has(> section > div > [data-name^="widget"])
@@ -74,9 +81,17 @@ a23081 3
 fontanka.ru,ngs.ru,ngs55.ru##[class*="pictureDayBlock_"] div[class*=" advMark_"]
 fontanka.ru,ngs.ru,ngs55.ru##[class*="pictureDayBlock_"] li > a[href*="/?erid="]
 fontanka.ru,ngs.ru,ngs55.ru#?#[class*="pictureDayBlock_"] li:-abp-has(> a[href*="/?erid="])
+d26000 1
+d26042 2
+a26051 1
+@@||ads.x5media.ru/api/$popup,domain=5ka.ru|perekrestok.ru
 d26584 1
 d26618 1
 d28029 6
+d28290 1
+a28291 2
+stratege.ru##html[xmlns] #globalcontent:style(padding-top: 0 !important)
+stratege.ru##html[xmlns] .above_body:style(margin-bottom: auto !important)
 d28848 2
 d28852 1
 d28858 1
@@ -90,6 +105,8 @@ fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, DOMContentLoaded, /0
 d29159 1
 a29170 1
 fastpic.org,~new.fastpic.org##+js(remove-node-text, script, Math.rnd)
+a29182 1
+stratege.ru##+js(remove-node-text, style, #000000 !important;)
 d29333 1
 a29335 2
 pikabu.ru##.sidebar-block:has(> div:matches-css(height: 0px)):remove()

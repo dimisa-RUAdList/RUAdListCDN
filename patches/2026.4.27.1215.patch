@@ -1,10 +1,12 @@
-diff name:ruadlist lines:25 checksum:7c617dd0fb
+diff name:ruadlist lines:42 checksum:b8d1fded4f
 d4 2
 a5 2
-! Last modified: Tue, 28 Apr 2026 11:57:31 +0000
-! Diff-Path: ../patches/2026.4.28.717.patch#ruadlist
+! Last modified: Tue, 28 Apr 2026 17:00:04 +0000
+! Diff-Path: ../patches/2026.4.28.1020.patch#ruadlist
 a11204 1
 ||banners-website.wildberries.
+a18095 1
+pikabu.ru##.sber-smile
 a19297 1
 shuba.life##[data-ingredients] > div > div ~ span ~ div > button:first-child
 a19352 1
@@ -12,7 +14,20 @@ shuba.life##[data-v-app] [role="button"]
 d19483 1
 a19543 1
 fastpic.org##[tabindex][role="link"]
+d20404 1
+a20404 1
+pikabu.ru##article[data-author-id="7"]
 d20621 1
+a22437 1
+stratege.ru##html[xmlns] > body > script + script + style {remove:true;}
+d25995 1
+d26037 2
+a26046 1
+@@||ads.x5media.ru/api/$popup,domain=5ka.ru|perekrestok.ru
+d28277 1
+a28278 2
+stratege.ru##html[xmlns] #globalcontent:style(padding-top: 0 !important)
+stratege.ru##html[xmlns] .above_body:style(margin-bottom: auto !important)
 d28835 1
 d28843 1
 a28843 1
@@ -24,3 +39,5 @@ fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, /click|load/, /exopo
 fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, DOMContentLoaded, /0x|popMagic/)
 a29154 1
 fastpic.org,~new.fastpic.org##+js(remove-node-text, script, Math.rnd)
+a29166 1
+stratege.ru##+js(remove-node-text, style, #000000 !important;)

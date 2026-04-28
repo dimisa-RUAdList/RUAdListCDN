@@ -1,8 +1,8 @@
-diff name:ruadlist lines:89 checksum:7c617dd0fb
+diff name:ruadlist lines:106 checksum:b8d1fded4f
 d4 2
 a5 2
-! Last modified: Tue, 28 Apr 2026 11:57:31 +0000
-! Diff-Path: ../patches/2026.4.28.717.patch#ruadlist
+! Last modified: Tue, 28 Apr 2026 17:00:04 +0000
+! Diff-Path: ../patches/2026.4.28.1020.patch#ruadlist
 a2119 1
 ||fittingjob.pro^$third-party
 a9183 1
@@ -20,6 +20,8 @@ a16073 1
 shuba.life#?#.c-post__aside-wrapper > aside:-abp-has(.c-product-card)
 d16198 2
 d17536 1
+a18096 1
+pikabu.ru##.sber-smile
 d19212 1
 a19261 1
 shuba.life#?#[data-article] > section:-abp-has(.c-product-card)
@@ -40,6 +42,9 @@ d19685 1
 d19698 1
 a20102 1
 rutr.life,rutracker.lib,rutracker.net,rutracker.org##a[href^="go.php?id="]
+d20409 1
+a20409 1
+pikabu.ru##article[data-author-id="7"]
 d20461 1
 d20627 1
 d20631 2
@@ -54,6 +59,8 @@ a22385 2
 d22415 1
 a22415 1
 ||pikabu.ru/ajax/*?hJK7w=$xmlhttprequest
+a22446 1
+stratege.ru##html[xmlns] > body > script + script + style {remove:true;}
 d22686 1
 a22686 1
 kp.kg,kp.kz,kp.ru,md.kp.media#?#div:-abp-has(> section > div > [data-name^="widget"])
@@ -64,9 +71,17 @@ a23083 3
 fontanka.ru,ngs.ru,ngs55.ru##[class*="pictureDayBlock_"] div[class*=" advMark_"]
 fontanka.ru,ngs.ru,ngs55.ru##[class*="pictureDayBlock_"] li > a[href*="/?erid="]
 fontanka.ru,ngs.ru,ngs55.ru#?#[class*="pictureDayBlock_"] li:-abp-has(> a[href*="/?erid="])
+d26002 1
+d26044 2
+a26053 1
+@@||ads.x5media.ru/api/$popup,domain=5ka.ru|perekrestok.ru
 d26586 1
 d26620 1
 d28031 6
+d28292 1
+a28293 2
+stratege.ru##html[xmlns] #globalcontent:style(padding-top: 0 !important)
+stratege.ru##html[xmlns] .above_body:style(margin-bottom: auto !important)
 d28850 2
 d28854 1
 d28860 1
@@ -80,6 +95,8 @@ fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, DOMContentLoaded, /0
 d29161 1
 a29172 1
 fastpic.org,~new.fastpic.org##+js(remove-node-text, script, Math.rnd)
+a29184 1
+stratege.ru##+js(remove-node-text, style, #000000 !important;)
 d29335 1
 a29337 2
 pikabu.ru##.sidebar-block:has(> div:matches-css(height: 0px)):remove()

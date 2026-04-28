@@ -1,13 +1,15 @@
-diff name:ruadlist lines:56 checksum:7c617dd0fb
+diff name:ruadlist lines:73 checksum:b8d1fded4f
 d4 2
 a5 2
-! Last modified: Tue, 28 Apr 2026 11:57:31 +0000
-! Diff-Path: ../patches/2026.4.28.717.patch#ruadlist
+! Last modified: Tue, 28 Apr 2026 17:00:04 +0000
+! Diff-Path: ../patches/2026.4.28.1020.patch#ruadlist
 a11204 1
 ||banners-website.wildberries.
 a16074 1
 shuba.life#?#.c-post__aside-wrapper > aside:-abp-has(.c-product-card)
 d17535 1
+a18095 1
+pikabu.ru##.sber-smile
 d19211 1
 a19260 1
 shuba.life#?#[data-article] > section:-abp-has(.c-product-card)
@@ -27,6 +29,9 @@ d19678 1
 d19684 1
 a20100 1
 rutr.life,rutracker.lib,rutracker.net,rutracker.org##a[href^="go.php?id="]
+d20407 1
+a20407 1
+pikabu.ru##article[data-author-id="7"]
 d20459 1
 d20625 1
 d20629 2
@@ -41,6 +46,16 @@ a22383 2
 d22413 1
 a22413 1
 ||pikabu.ru/ajax/*?hJK7w=$xmlhttprequest
+a22444 1
+stratege.ru##html[xmlns] > body > script + script + style {remove:true;}
+d26002 1
+d26044 2
+a26053 1
+@@||ads.x5media.ru/api/$popup,domain=5ka.ru|perekrestok.ru
+d28284 1
+a28285 2
+stratege.ru##html[xmlns] #globalcontent:style(padding-top: 0 !important)
+stratege.ru##html[xmlns] .above_body:style(margin-bottom: auto !important)
 d28842 1
 d28850 1
 a28850 1
@@ -52,6 +67,8 @@ fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, /click|load/, /exopo
 fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, DOMContentLoaded, /0x|popMagic/)
 a29161 1
 fastpic.org,~new.fastpic.org##+js(remove-node-text, script, Math.rnd)
+a29173 1
+stratege.ru##+js(remove-node-text, style, #000000 !important;)
 d29452 1
 a29452 1
 wildberries.*##+js(set-constant, Object.prototype.prepareBannersList, noopFunc)

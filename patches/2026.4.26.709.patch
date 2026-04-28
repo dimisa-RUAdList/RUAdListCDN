@@ -1,8 +1,8 @@
-diff name:ruadlist lines:74 checksum:7c617dd0fb
+diff name:ruadlist lines:91 checksum:b8d1fded4f
 d4 2
 a5 2
-! Last modified: Tue, 28 Apr 2026 11:57:31 +0000
-! Diff-Path: ../patches/2026.4.28.717.patch#ruadlist
+! Last modified: Tue, 28 Apr 2026 17:00:04 +0000
+! Diff-Path: ../patches/2026.4.28.1020.patch#ruadlist
 a2119 1
 ||fittingjob.pro^$third-party
 a9183 1
@@ -16,6 +16,8 @@ d12222 1
 a16073 1
 shuba.life#?#.c-post__aside-wrapper > aside:-abp-has(.c-product-card)
 d17534 1
+a18094 1
+pikabu.ru##.sber-smile
 d19210 1
 a19259 1
 shuba.life#?#[data-article] > section:-abp-has(.c-product-card)
@@ -35,6 +37,9 @@ d19677 1
 d19683 1
 a20099 1
 rutr.life,rutracker.lib,rutracker.net,rutracker.org##a[href^="go.php?id="]
+d20406 1
+a20406 1
+pikabu.ru##article[data-author-id="7"]
 d20458 1
 d20624 1
 d20628 2
@@ -49,12 +54,22 @@ a22382 2
 d22412 1
 a22412 1
 ||pikabu.ru/ajax/*?hJK7w=$xmlhttprequest
+a22443 1
+stratege.ru##html[xmlns] > body > script + script + style {remove:true;}
 d22683 1
 a22683 1
 kp.kg,kp.kz,kp.ru,md.kp.media#?#div:-abp-has(> section > div > [data-name^="widget"])
 a22684 1
 kp.kg,kp.kz,kp.ru,md.kp.media#?#section:-abp-has(> div[class]:first-child div[id^="unit_"])
+d26000 1
+d26042 2
+a26051 1
+@@||ads.x5media.ru/api/$popup,domain=5ka.ru|perekrestok.ru
 d28027 6
+d28288 1
+a28289 2
+stratege.ru##html[xmlns] #globalcontent:style(padding-top: 0 !important)
+stratege.ru##html[xmlns] .above_body:style(margin-bottom: auto !important)
 d28846 1
 d28854 1
 a28854 1
@@ -66,6 +81,8 @@ fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, /click|load/, /exopo
 fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, DOMContentLoaded, /0x|popMagic/)
 a29165 1
 fastpic.org,~new.fastpic.org##+js(remove-node-text, script, Math.rnd)
+a29177 1
+stratege.ru##+js(remove-node-text, style, #000000 !important;)
 a29329 2
 pikabu.ru##.sidebar-block:has(> div:matches-css(height: 0px)):remove()
 pikabu.ru##.sidebar-block:not(.sidebar-block_border):remove()

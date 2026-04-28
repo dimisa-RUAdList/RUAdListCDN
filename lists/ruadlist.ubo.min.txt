@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 28 Apr 2026 11:57:31 +0000
-! Diff-Path: ../patches/2026.4.28.717.patch#ruadlist
+! Last modified: Tue, 28 Apr 2026 17:00:04 +0000
+! Diff-Path: ../patches/2026.4.28.1020.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -18094,6 +18094,7 @@ rupier.com##.sb > a > img[src^="http://rupier.com/forum/"]
 beauty.ua,viva.ua##.sb-partners
 edyna.media#?#.sb__column > .sb__section:-abp-has(> .sb-partners)
 agroinfo.kz##.sbanner
+pikabu.ru##.sber-smile
 uaspectr.com##.sbr-slider > .pst-block > .pst-block-head
 tagilcity.ru##.sbs_p
 eva.ru##.scroll-smooth
@@ -20404,7 +20405,7 @@ glavpost.com##article div[style*="#EFEFEF"]
 domodedovoriamo.ru,korolevriamo.ru,krasnogorskriamo.ru,lubertsyriamo.ru,mytischiriamo.ru,podolskriamo.ru,reutovriamo.ru,riamo.ru,riamobalashiha.ru,schelkovoriamo.ru,sergposadriamo.ru##article ul > li > button
 4pda.to#?#article ~ article:-abp-has(> [class] > div:only-child > img:first-child)
 point.md#?#article:-abp-has(> div[id^="article-"] > .business)
-pikabu.ru##article[data-author-id="6"]
+pikabu.ru##article[data-author-id="7"]
 qip.ru##article[data-type="advert"]
 mi100.info##article[id^="post-"] > .entry-meta + div[style^="padding-bottom:"]
 sport-tv.pro##aside .HTML > .widget-content > a > img
@@ -22437,6 +22438,7 @@ lenta.ru##.topic-body__content> .box-external-video:last-child {remove:true;}
 lenta.ru##.topic-footer > div[class^="box-"][class$="-video"] {remove:true;}
 lenta.ru##.vk-video-popup {remove:true;}
 playground.ru###dfpPrerollDelay {remove:true;}
+stratege.ru##html[xmlns] > body > script + script + style {remove:true;}
 tapochek.net##body:has(#register_link) > canvas
 tapochek.net##body:has(#register_link) > canvas {remove:true;}
 the-geek.ru###wp-custom-css {remove:true;}
@@ -25994,7 +25996,6 @@ xn--112-5cd3baof9c5c.xn--p1ai#@#.wrapad
 @@/webadvert.$domain=webadvert.net|webadvert.ru
 @@://*.*.*.*.m3u8$xmlhttprequest,domain=tvvse.my1.ru
 @@://*.*.*.*.ts|$xmlhttprequest,domain=tvvse.my1.ru
-@@://ads.$popup,domain=ads.moscow
 @@://adshow.ru/$domain=adshow.ru
 @@://adv.*.lawport.ru$~third-party,domain=lawport.ru
 @@://adv.*.lawport.ru^$third-party,popup
@@ -26036,8 +26037,6 @@ xn--112-5cd3baof9c5c.xn--p1ai#@#.wrapad
 @@||ads.adfox.ru^$popup,domain=magnit.ru
 @@||ads.adfox.ru^$popup,domain=vklybe.tv
 @@||ads.adfox.ru^*/goLink$popup,domain=2x2tv.ru|friday.ru
-@@||ads.moscow^$domain=ads.moscow
-@@||ads.moscow^$third-party,popup
 @@||ads.rb.ru/video_banner.php$object
 @@||ads.sagan-nur.info^$~third-party
 @@||ads.setby.net^$domain=ads.setby.net
@@ -26046,6 +26045,7 @@ xn--112-5cd3baof9c5c.xn--p1ai#@#.wrapad
 @@||ads.tomtel.ru/adjs.$script
 @@||ads.vk.com/api/v*/*.json$xmlhttprequest,domain=vk.com
 @@||ads.vyborg-press.ru^$domain=vyborg-press.ru
+@@||ads.x5media.ru/api/$popup,domain=5ka.ru|perekrestok.ru
 @@||adsbox.$domain=adsbox.com.ua|adsbox.ru
 @@||adseo.com.ua^$~third-party
 @@||adseo.pro^$~third-party
@@ -28276,8 +28276,9 @@ stopgame.ru###preroll_mediaplayer
 stopgame.ru##body:style(cursor: default !important)
 stopgame.ru##div[id^="videoplayer_"][class^="iframe_wrapper"]:style(display: block !important)
 ! ---
-stratege.ru###vbulletin_html .above_body:style(margin-bottom: auto !important)
 stratege.ru##html:style(background-color: #dbdbdb !important)
+stratege.ru##html[xmlns] #globalcontent:style(padding-top: 0 !important)
+stratege.ru##html[xmlns] .above_body:style(margin-bottom: auto !important)
 ! ---
 stravy.net##.right-sidebar:style(margin-top: 0 !important; overflow: hidden !important)
 ! ---
@@ -29166,6 +29167,7 @@ gsm.in.ua##+js(remove-node-text, script, message_ads)
 kriminal.net.ua##+js(remove-node-text, script, nidclick)
 sichnews.ua##+js(remove-node-text, script, right_click)
 eg.ru,gorodche.ru,gorodvo.ru,ng72.ru##+js(remove-node-text, script, showBanner)
+stratege.ru##+js(remove-node-text, style, #000000 !important;)
 stratege.ru##+js(remove-node-text, style, background: black !important;)
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, style, epom-brend)
 uwupad.me##+js(remove-node-text, style, lb-banner-height)
