@@ -1,8 +1,8 @@
-diff name:ruadlist lines:117 checksum:ec296e3854
+diff name:ruadlist lines:129 checksum:7c617dd0fb
 d4 2
 a5 2
-! Last modified: Tue, 28 Apr 2026 06:39:02 +0000
-! Diff-Path: ../patches/2026.4.28.399.patch#ruadlist
+! Last modified: Tue, 28 Apr 2026 11:57:31 +0000
+! Diff-Path: ../patches/2026.4.28.717.patch#ruadlist
 a2119 1
 ||fittingjob.pro^$third-party
 a2385 1
@@ -55,6 +55,8 @@ d19315 1
 a19350 1
 shuba.life##[data-v-app] [role="button"]
 d19533 1
+a19541 1
+fastpic.org##[tabindex][role="link"]
 a19584 1
 sport24.ru##a[class][style*="; cursor: pointer;"]:not([href])
 d19673 1
@@ -103,11 +105,21 @@ d28534 2
 a28536 2
 dzen.ru##[aria-label^="Страница "][aria-label*=" новост"] > div[class] > div > div[id] + div[class^="news"]:not(:last-child):not([aria-label])
 dzen.ru##[aria-label^="Страница "][aria-label*=" новост"] > div[class] > div > div[id] ~ div[id]
-d28839 1
+d28839 2
 d28843 1
+d28849 1
+a28849 1
+kg-portal.ru,nnm-club.me,nnmclub.ro,nnmclub.to##+js(abort-current-inline-script, document.createElement, Math.random)
+d28987 1
+d29013 1
+a29132 2
+fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, /click|load/, /exopop|popMagic/)
+fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, DOMContentLoaded, /0x|popMagic/)
 a29133 1
 dumatv.ru##+js(prevent-addEventListener, message, AUTOPLAY)
 d29149 1
+a29160 1
+fastpic.org,~new.fastpic.org##+js(remove-node-text, script, Math.rnd)
 d29323 1
 a29325 2
 pikabu.ru##.sidebar-block:has(> div:matches-css(height: 0px)):remove()
