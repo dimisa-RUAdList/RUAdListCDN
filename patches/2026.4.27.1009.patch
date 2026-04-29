@@ -1,8 +1,8 @@
-diff name:ruadlist lines:51 checksum:5cd94b5e34
+diff name:ruadlist lines:64 checksum:47a1f6aa46
 d4 2
 a5 2
-! Last modified: Wed, 29 Apr 2026 09:19:19 +0000
-! Diff-Path: ../patches/2026.4.29.559.patch#ruadlist
+! Last modified: Wed, 29 Apr 2026 14:24:55 +0000
+! Diff-Path: ../patches/2026.4.29.864.patch#ruadlist
 a5128 1
 ||reckless-variation.pro^$third-party
 d10460 1
@@ -27,16 +27,29 @@ pikabu.ru##article[data-author-id="7"]
 d20621 1
 a22437 1
 stratege.ru##html[xmlns] > body > script + script + style {remove:true;}
+a23162 1
+overclockers.ru#?#.newsline > .newsline-item ~ div[class="ui grid"]:-abp-has(> div:empty)
 d23170 1
 d23176 1
+d23711 1
+a23711 1
+ya.ru##section[style*="-cektion-items-count:"]
 d25995 1
 d26037 2
 a26046 1
 @@||ads.x5media.ru/api/$popup,domain=5ka.ru|perekrestok.ru
 d28277 1
-a28278 2
+a28278 7
 stratege.ru##html[xmlns] #globalcontent:style(padding-top: 0 !important)
 stratege.ru##html[xmlns] .above_body:style(margin-bottom: auto !important)
+! stratege.ru###globalcontent:style(margin-top: 0 !important)
+! stratege.ru##.above_body:style(margin-bottom: auto !important)
+! & for Users
+! stratege.ru##html:style(background: #dbdbdb !important)
+! stratege.ru##body > [id][class]:first-of-type:style(display: unset !important)
+d28461 1
+a28461 1
+ya.ru##[action*="/search/"] ~ div[style]
 d28835 1
 d28843 1
 a28843 1

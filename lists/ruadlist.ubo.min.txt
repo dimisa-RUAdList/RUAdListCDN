@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 29 Apr 2026 09:19:19 +0000
-! Diff-Path: ../patches/2026.4.29.559.patch#ruadlist
+! Last modified: Wed, 29 Apr 2026 14:24:55 +0000
+! Diff-Path: ../patches/2026.4.29.864.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -23166,6 +23166,7 @@ overclockers.ru##.material-content > .column > p > ins ~ br
 overclockers.ru##.material-inline-an
 overclockers.ru##.material-other-feed
 forums.overclockers.ru##.needblock
+overclockers.ru#?#.newsline > .newsline-item ~ div[class="ui grid"]:-abp-has(> div:empty)
 overclockers.ru##.right-content-wrap.sticky-container
 overclockers.ru#?#.right-sticky-content:-abp-has(> ins)
 overclockers.ru#?#.spoiler-block:-abp-has(> .spoiler-body > [id^="yandex_rtb_"])
@@ -23712,7 +23713,7 @@ ya.ru##[style*="feed"][style*="min-height:"]
 ya.ru##body > div[data-hydration-id] > [href^="https://yabs.yandex.ru/count/"] + div
 ya.ru##body > div[data-hydration-id] > div > [src^="https://yabs.yandex.ru/count/"] + div
 ya.ru##section[class^="reaso"]
-ya.ru##section[style*="-cection-items-count:"]
+ya.ru##section[style*="-cektion-items-count:"]
 ya.ru##ul[class*="-section__list"]
 ya.ru,yandex.ru,yandex.*##.AdvProductGallery
 ya.ru,yandex.ru,yandex.*##.layout__banner
@@ -28279,6 +28280,11 @@ stopgame.ru##div[id^="videoplayer_"][class^="iframe_wrapper"]:style(display: blo
 stratege.ru##html:style(background-color: #dbdbdb !important)
 stratege.ru##html[xmlns] #globalcontent:style(padding-top: 0 !important)
 stratege.ru##html[xmlns] .above_body:style(margin-bottom: auto !important)
+! stratege.ru###globalcontent:style(margin-top: 0 !important)
+! stratege.ru##.above_body:style(margin-bottom: auto !important)
+! & for Users
+! stratege.ru##html:style(background: #dbdbdb !important)
+! stratege.ru##body > [id][class]:first-of-type:style(display: unset !important)
 ! ---
 stravy.net##.right-sidebar:style(margin-top: 0 !important; overflow: hidden !important)
 ! ---
@@ -28461,7 +28467,7 @@ ya.ru##.i-mini-bem[style]
 ya.ru,yandex.by,yandex.kz,yandex.uz##.link-bro
 ya.ru##.market-feed
 ya.ru##.reasoning-section
-ya.ru##[action="https://ya.ru/search/"] ~ div[style]
+ya.ru##[action*="/search/"] ~ div[style]
 ya.ru##[id^="ryt"][id*="m-f"][id$="d"]
 ya.ru##html[class*="_neuro"] aside ~ div[style]
 ya.ru##html[class*="_reaso"] aside ~ div[style]
