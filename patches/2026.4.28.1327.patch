@@ -1,14 +1,18 @@
-diff name:ruadlist lines:77 checksum:02f827aa37
+diff name:ruadlist lines:100 checksum:ebc3dfd038
 d4 2
 a5 2
-! Last modified: Fri, 01 May 2026 15:09:14 +0000
-! Diff-Path: ../patches/2026.5.1.909.patch#ruadlist
+! Last modified: Fri, 01 May 2026 19:34:34 +0000
+! Diff-Path: ../patches/2026.5.1.1174.patch#ruadlist
 a447 1
 ||allhoney.pro^$third-party
 a5128 1
 ||reckless-message.pro^$third-party
 a6451 1
 ||unawarepatience.pro^$third-party
+a7806 1
+.com/services/?fx=$third-party,script
+a7807 1
+.com/services/?rt=$third-party,script
 a7882 1
 /^https?:\/\/[-a-z]{6,}\.(?:com?|info|pro|xyz)\/[a-d][-.\/A-Z_a-z][DHWXm][-.\/A-Z_a-z][59FVZ][-.\/A-Z_a-z][6swyz][-.\/A-Z_a-z][-\/0-9A-Z_a-z][-.\/A-Z_a-z][-\/0-9A-Z_a-z]+(?:$|\?)/$third-party,match-case,script
 d8579 1
@@ -23,9 +27,13 @@ a9328 1
 ||byteengineering.net^$popup
 a9925 1
 ||getdownloadstudio.net^$popup
+a10252 1
+okko.sport,okko.tv##[data-testid="player_osd"] > div[style*="--duration-"] > div:first-child::after
 d15241 1
 a15241 1
 3iks.org,androidkino.net,btrans.by,crimea-news.com,dugtor.ru,dv-gazeta.info,internet-technologies.ru,kinosimka.be,kniga-online.com,novyny.live,progroshi.news,proukraine.news,qna.center,reestr.rublacklist.net,resheba.top,reviewscompanies.club,vesti.uz,wotsite.net,xcadr.tv##.adv
+a15301 1
+aigenda.ru##.af-product
 a17488 1
 habr.com##.nornickel-special
 d18413 1
@@ -46,7 +54,20 @@ a22380 2
 d22410 1
 a22410 1
 ||pikabu.ru/ajax/*?hJK6w=$xmlhttprequest
+a22461 6
+aigenda.ru#@#.ad-placeholder
+aigenda.ru#@#.ad-slot
+aigenda.ru#@#.adbanner
+aigenda.ru#@#.ads-banner
+aigenda.ru#@#.adsbox
+aigenda.ru#@#.adsbygoogle
+a22462 1
+aigenda.ru#@#.banner_ad
+a22474 1
+aigenda.ru#@#.pub_300x250
 d22477 1
+a22478 1
+aigenda.ru#@#.textads
 a22489 3
 pikabu.ru#?#article:-abp-has(> .story__main > div > header + div[class^="story"] > div:not([id]))
 pikabu.ru#?#article:-abp-has(> .story__main > div > header + div[class^="story"]:not(:-abp-has(*)))
@@ -73,6 +94,8 @@ dzen.ru##[aria-label*="траница"][aria-label*="овост"] > div[class] >
 d28535 2
 a29053 1
 soft2u.ru##+js(href-sanitizer, a[href^="https://soft2u.ru/url.php?to="], ?to)
+a29134 1
+aigenda.ru##+js(prevent-setTimeout, combinedDetector)
 a29155 1
 fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /adsterra|decodeURIComponent|Math.rnd/)
 d29158 1

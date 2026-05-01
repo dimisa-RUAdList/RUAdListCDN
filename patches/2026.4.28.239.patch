@@ -1,8 +1,8 @@
-diff name:ruadlist lines:107 checksum:02f827aa37
+diff name:ruadlist lines:130 checksum:ebc3dfd038
 d4 2
 a5 2
-! Last modified: Fri, 01 May 2026 15:09:14 +0000
-! Diff-Path: ../patches/2026.5.1.909.patch#ruadlist
+! Last modified: Fri, 01 May 2026 19:34:34 +0000
+! Diff-Path: ../patches/2026.5.1.1174.patch#ruadlist
 a447 1
 ||allhoney.pro^$third-party
 a5128 2
@@ -10,6 +10,10 @@ a5128 2
 ||reckless-variation.pro^$third-party
 a6450 1
 ||unawarepatience.pro^$third-party
+a7805 1
+.com/services/?fx=$third-party,script
+a7806 1
+.com/services/?rt=$third-party,script
 a7881 1
 /^https?:\/\/[-a-z]{6,}\.(?:com?|info|pro|xyz)\/[a-d][-.\/A-Z_a-z][DHWXm][-.\/A-Z_a-z][59FVZ][-.\/A-Z_a-z][6swyz][-.\/A-Z_a-z][-\/0-9A-Z_a-z][-.\/A-Z_a-z][-\/0-9A-Z_a-z]+(?:$|\?)/$third-party,match-case,script
 d8578 1
@@ -24,12 +28,16 @@ a9327 1
 ||byteengineering.net^$popup
 a9924 1
 ||getdownloadstudio.net^$popup
+a10251 1
+okko.sport,okko.tv##[data-testid="player_osd"] > div[style*="--duration-"] > div:first-child::after
 d10460 1
 a14498 1
 cdncontent.top###overlay
 d15240 1
 a15240 1
 3iks.org,androidkino.net,btrans.by,crimea-news.com,dugtor.ru,dv-gazeta.info,internet-technologies.ru,kinosimka.be,kniga-online.com,novyny.live,progroshi.news,proukraine.news,qna.center,reestr.rublacklist.net,resheba.top,reviewscompanies.club,vesti.uz,wotsite.net,xcadr.tv##.adv
+a15300 1
+aigenda.ru##.af-product
 a17487 1
 habr.com##.nornickel-special
 a18096 1
@@ -59,7 +67,20 @@ a22407 1
 ||pikabu.ru/ajax/*?hJK6w=$xmlhttprequest
 a22438 1
 stratege.ru##html[xmlns] > body > script + script + style {remove:true;}
+a22457 6
+aigenda.ru#@#.ad-placeholder
+aigenda.ru#@#.ad-slot
+aigenda.ru#@#.adbanner
+aigenda.ru#@#.ads-banner
+aigenda.ru#@#.adsbox
+aigenda.ru#@#.adsbygoogle
+a22458 1
+aigenda.ru#@#.banner_ad
+a22470 1
+aigenda.ru#@#.pub_300x250
 d22473 1
+a22474 1
+aigenda.ru#@#.textads
 a22485 3
 pikabu.ru#?#article:-abp-has(> .story__main > div > header + div[class^="story"] > div:not([id]))
 pikabu.ru#?#article:-abp-has(> .story__main > div > header + div[class^="story"]:not(:-abp-has(*)))
@@ -102,6 +123,8 @@ soft2u.ru##+js(href-sanitizer, a[href^="https://soft2u.ru/url.php?to="], ?to)
 a29127 2
 fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, /click|load/, /exopop|popMagic/)
 fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, DOMContentLoaded, /0x|popMagic/)
+a29132 1
+aigenda.ru##+js(prevent-setTimeout, combinedDetector)
 a29153 1
 fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /adsterra|decodeURIComponent|Math.rnd/)
 a29167 1
