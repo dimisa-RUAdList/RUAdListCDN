@@ -1,10 +1,14 @@
-diff name:ruadlist lines:45 checksum:dab7ff6fd6
+diff name:ruadlist lines:52 checksum:02f827aa37
 d4 2
 a5 2
-! Last modified: Fri, 01 May 2026 09:05:17 +0000
-! Diff-Path: ../patches/2026.5.1.545.patch#ruadlist
+! Last modified: Fri, 01 May 2026 15:09:14 +0000
+! Diff-Path: ../patches/2026.5.1.909.patch#ruadlist
 a447 1
 ||allhoney.pro^$third-party
+a5128 1
+||reckless-message.pro^$third-party
+a7883 1
+/^https?:\/\/[-a-z]{6,}\.(?:com?|info|pro|xyz)\/[a-d][-.\/A-Z_a-z][DHWXm][-.\/A-Z_a-z][59FVZ][-.\/A-Z_a-z][6swyz][-.\/A-Z_a-z][-\/0-9A-Z_a-z][-.\/A-Z_a-z][-\/0-9A-Z_a-z]+(?:$|\?)/$third-party,match-case,script
 d8580 1
 a8580 1
 ##[data-href*="://download.cdn.yandex.net/yandex-tag/weboffer/"]
@@ -15,6 +19,9 @@ a9330 1
 ||byteengineering.net^$popup
 a9927 1
 ||getdownloadstudio.net^$popup
+d15243 1
+a15243 1
+3iks.org,androidkino.net,btrans.by,crimea-news.com,dugtor.ru,dv-gazeta.info,internet-technologies.ru,kinosimka.be,kniga-online.com,novyny.live,progroshi.news,proukraine.news,qna.center,reestr.rublacklist.net,resheba.top,reviewscompanies.club,vesti.uz,wotsite.net,xcadr.tv##.adv
 d19090 1
 a19090 1
 activation-keys.ru,adregain.ru,ads.bid,apicloud.ru,appt12mn.com,banner.mob.ru.com,bestsoft.club,browser-extensions.club,cheatget.ru,click2soft.ru,clickbytes.ru,content.directadvert.ru,cs-serva.net,directx.biz,dnevni4ok.com,download.studio,downloadamigo.com,downloadbrowser.ru,driverpack.io,driverpaksolution.ru,drp.su,dugtor-deer.pw,dw1-msetup.org,elementsbrowser.com,etarg.network,everinform.com,ex.24smi.info,ex.24smi.site,ex.infox.sg,exonews.ru,fast2click.ru,filetaker.ru,fin-vector.ru,flebolab.ru,getappwiz.ru,getappwizard.ru,getdownloadstudio.net,getdstud.io,getdstudio.app,getdstudio.cab,getdstudio.com,getdstudio.dev,getfiletds.ru,getyoursoft.ru,globalstylis.ru,hdvideoboxs.ru,health-official.ru,idealmedia.io,install-now.com,installpack.net,kinowinx.ru,linksoftbox.ru,litebrowser.ru,losnews.ru,mainews.ru,manysoftlink.ru,marketgid.ru,medicin-novosti-24.com,medicineteaser.org,medicineteaser.ru,morelnk.ru,msetup.pro,mysoftbox.ru,mytrk.xyz,nalivali.ru,new-rutor.website,news-decent.com,news-sphere.com,newsma.ru,novostly.com,offergate.pro,ognyvo.ru,olx.ua.partners,orgsales.ru,picpick.ru,pochistit.ru,popcornhd.ru,prime-oblako.ru,programma-ochistki.ru,readvesti.ru,rotateme.ru,rsboot.ru,rustoria-topnews.ru,rutor.ml,rutorrent.co,rutors.tk,rutracker.eu,rutracker.work,rutraker.org,sandboxie.ru,saymigren.net,sb-on-line.ru,search-cdn.ru,searchcdn.ru,smiru.ru,softboxtds.ru,spishi.vip,starblog.org,sysenvfiles.net,t-lafa-site.ru,t1mcapp.com,tdsclicks2.ru,tdsrotations.ru,tft-test.ru,tlmnt.com,top-rutor.eu,top.24smi.info,topnews.smi.one,toprated-film.co,tordrom.com,torrentum.ru,ubar-pro.ru,ubar-pro2.ru,ubar-pro3.ru,ubar-pro4.ru,ubar.pro,ufiler-download.ru,ufiler-pro.ru,ufiler-pro2.ru,ufiler.pro,upro.me,utorria.ru,viniki.ru,vserpg.ru,wogoods.com,womens-journal.ru,worldinform.ru,xbox-torrent.ru,ya-browser.ru,ya-cdn.ru,ya-distrib.ru,yabrowser.su,yadistr.ru,yasearch-cdn.ru,yasearchcdn.ru,ynsearch.ru,zodiac-game.info,zpppstop.ru,zqwjpxow7boc.ru##:not(this-site-is-fake)
@@ -36,8 +43,8 @@ pikabu.ru#?#article:-abp-has(> .story__main > div > header + div[class^="story"]
 pikabu.ru#?#article:-abp-has(> .story__main > div > header + div[class^="story"]:not(:-abp-has(*)))
 pikabu.ru#?#article:-abp-has(> .story__main > div:empty)
 a28540 2
-dzen.ru##[aria-label*="траница"][aria-label*="овост"] > div[class] > div > div[id] + div[class^="news"]:not(:last-child):not([aria-label])
 dzen.ru##[aria-label*="траница"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id]
+dzen.ru##[aria-label*="траница"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not(:last-child):not([aria-label])
 d28542 2
 a29060 1
 soft2u.ru##+js(href-sanitizer, a[href^="https://soft2u.ru/url.php?to="], ?to)

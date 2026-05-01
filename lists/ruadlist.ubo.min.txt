@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 01 May 2026 09:05:17 +0000
-! Diff-Path: ../patches/2026.5.1.545.patch#ruadlist
+! Last modified: Fri, 01 May 2026 15:09:14 +0000
+! Diff-Path: ../patches/2026.5.1.909.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -5127,6 +5127,7 @@
 ||reborko.com^$third-party
 ||receivedachest.com^$third-party
 ||reckintersupwas.info^$third-party
+||reckless-message.pro^$third-party
 ||reckless-variation.pro^$third-party
 ||reclame.io^$third-party
 ||recordsbluemountain.com^$third-party
@@ -7882,6 +7883,7 @@ _verified.php?code=*&server=runetki.com
 /\/[a-z]{1,3}\?zoneId\=\d{7}\-\d{7}$/$third-party,script
 /^https?://([^.]+\.)+[a-z]+\.(?:biz|ru|space)/[a-z][/?][-a-z0-9_?&=]{5,45}$/$third-party,script,domain=~hotcharts.ru
 /^https?://[0-9a-f]{10}\.[0-9a-f]{10}\.com\/[0-9a-f]{32}\.js$/$third-party,script
+/^https?:\/\/[-a-z]{6,}\.(?:com?|info|pro|xyz)\/[a-d][-.\/A-Z_a-z][DHWXm][-.\/A-Z_a-z][59FVZ][-.\/A-Z_a-z][6swyz][-.\/A-Z_a-z][-\/0-9A-Z_a-z][-.\/A-Z_a-z][-\/0-9A-Z_a-z]+(?:$|\?)/$third-party,match-case,script
 /a/ipn/js/*$third-party,script
 /a/pop/js/*$third-party,script
 /abnl/?ucozads^
@@ -15243,7 +15245,7 @@ englishsub.ru,lenglish.ru##.adsense_blok
 24.cv.ua,sho.org.ua,uman24.org.ua##.adsgoogle
 vise.im##.adsplaser_pro_abtest
 ok-pressa.ru##.adstitles
-3iks.org,androidkino.net,btrans.by,crimea-news.com,dugtor.ru,dv-gazeta.info,internet-technologies.ru,kinosimka.be,novyny.live,progroshi.news,proukraine.news,qna.center,reestr.rublacklist.net,resheba.top,reviewscompanies.club,vesti.uz,wotsite.net,xcadr.tv##.adv
+3iks.org,androidkino.net,btrans.by,crimea-news.com,dugtor.ru,dv-gazeta.info,internet-technologies.ru,kinosimka.be,kniga-online.com,novyny.live,progroshi.news,proukraine.news,qna.center,reestr.rublacklist.net,resheba.top,reviewscompanies.club,vesti.uz,wotsite.net,xcadr.tv##.adv
 regnum.news,regnum.ru##.adv-container-wrapper
 do-slez.com##.adv-heading
 backup.menu,dedicated.menu,hosting.cafe,https.menu,license.menu,shared.menu,vds.menu##.adv-hidden-xs
@@ -28544,8 +28546,8 @@ dzen.ru##.news-rubric-desktop__news > section > div > div[id]
 dzen.ru##.news-secondary-layout-column__secondary div[id]
 dzen.ru##.news-sticky__inner > div > div[id]
 dzen.ru##.news-story-page div[id] > div:not([id]) > div[id]
-dzen.ru##[aria-label*="траница"][aria-label*="овост"] > div[class] > div > div[id] + div[class^="news"]:not(:last-child):not([aria-label])
 dzen.ru##[aria-label*="траница"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id]
+dzen.ru##[aria-label*="траница"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not(:last-child):not([aria-label])
 dzen.ru##[aria-label] div[id][class*="-desktop__ad-"]
 dzen.ru##div[class*="AdvertTsar"]
 dzen.ru##div[class*="BrandingAdvertLayoutColumn-"]

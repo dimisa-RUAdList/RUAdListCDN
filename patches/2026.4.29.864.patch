@@ -1,12 +1,16 @@
-diff name:ruadlist lines:52 checksum:dab7ff6fd6
+diff name:ruadlist lines:59 checksum:02f827aa37
 d4 2
 a5 2
-! Last modified: Fri, 01 May 2026 09:05:17 +0000
-! Diff-Path: ../patches/2026.5.1.545.patch#ruadlist
+! Last modified: Fri, 01 May 2026 15:09:14 +0000
+! Diff-Path: ../patches/2026.5.1.909.patch#ruadlist
 a447 1
 ||allhoney.pro^$third-party
+a5128 1
+||reckless-message.pro^$third-party
 a6451 1
 ||unawarepatience.pro^$third-party
+a7882 1
+/^https?:\/\/[-a-z]{6,}\.(?:com?|info|pro|xyz)\/[a-d][-.\/A-Z_a-z][DHWXm][-.\/A-Z_a-z][59FVZ][-.\/A-Z_a-z][6swyz][-.\/A-Z_a-z][-\/0-9A-Z_a-z][-.\/A-Z_a-z][-\/0-9A-Z_a-z]+(?:$|\?)/$third-party,match-case,script
 d8579 1
 a8579 1
 ##[data-href*="://download.cdn.yandex.net/yandex-tag/weboffer/"]
@@ -19,6 +23,9 @@ a9328 1
 ||byteengineering.net^$popup
 a9925 1
 ||getdownloadstudio.net^$popup
+d15241 1
+a15241 1
+3iks.org,androidkino.net,btrans.by,crimea-news.com,dugtor.ru,dv-gazeta.info,internet-technologies.ru,kinosimka.be,kniga-online.com,novyny.live,progroshi.news,proukraine.news,qna.center,reestr.rublacklist.net,resheba.top,reviewscompanies.club,vesti.uz,wotsite.net,xcadr.tv##.adv
 d18414 1
 d19089 1
 a19089 1
@@ -43,8 +50,8 @@ pikabu.ru#?#article:-abp-has(> .story__main > div > header + div[class^="story"]
 pikabu.ru#?#article:-abp-has(> .story__main > div > header + div[class^="story"]:not(:-abp-has(*)))
 pikabu.ru#?#article:-abp-has(> .story__main > div:empty)
 a28538 2
-dzen.ru##[aria-label*="траница"][aria-label*="овост"] > div[class] > div > div[id] + div[class^="news"]:not(:last-child):not([aria-label])
 dzen.ru##[aria-label*="траница"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id]
+dzen.ru##[aria-label*="траница"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not(:last-child):not([aria-label])
 d28540 2
 a29058 1
 soft2u.ru##+js(href-sanitizer, a[href^="https://soft2u.ru/url.php?to="], ?to)
