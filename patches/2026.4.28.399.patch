@@ -1,15 +1,8 @@
-diff name:ruadlist lines:130 checksum:54e862409c
+diff name:ruadlist lines:140 checksum:e23a62ef20
 d4 2
 a5 2
-! Last modified: Sat, 02 May 2026 03:44:38 +0000
-! Diff-Path: ../patches/2026.5.2.224.patch#ruadlist
-a447 1
-||allhoney.pro^$third-party
-a5128 2
-||reckless-message.pro^$third-party
-||reckless-variation.pro^$third-party
-a6450 1
-||unawarepatience.pro^$third-party
+! Last modified: Sat, 02 May 2026 10:05:50 +0000
+! Diff-Path: ../patches/2026.5.2.605.patch#ruadlist
 a7805 1
 .com/services/?fx=$third-party,script
 a7806 1
@@ -31,6 +24,8 @@ a9924 1
 a10251 1
 okko.sport,okko.tv##[data-testid="player_osd"] > div[style*="--duration-"] > div:first-child::after
 d10460 1
+a11634 1
+||fishki.net/sw-main.js
 a14498 1
 cdncontent.top###overlay
 d15240 1
@@ -96,6 +91,7 @@ d25996 1
 d26038 2
 a26047 1
 @@||ads.x5media.ru/api/$popup,domain=5ka.ru|perekrestok.ru
+d28161 3
 d28278 1
 a28279 7
 stratege.ru##html[xmlns] #globalcontent:style(padding-top: 0 !important)
@@ -118,6 +114,8 @@ a28844 1
 kg-portal.ru,nnm-club.me,nnmclub.ro,nnmclub.to##+js(abort-current-inline-script, document.createElement, Math.random)
 d28982 1
 d29008 1
+d29025 1
+d29047 1
 a29053 1
 soft2u.ru##+js(href-sanitizer, a[href^="https://soft2u.ru/url.php?to="], ?to)
 a29127 2
@@ -125,7 +123,19 @@ fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, /click|load/, /exopo
 fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, DOMContentLoaded, /0x|popMagic/)
 a29132 1
 aigenda.ru##+js(prevent-setTimeout, combinedDetector)
-a29153 1
+d29151 1
+d29153 1
+a29153 2
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /A.d.b.|Adb-|A-d-b-|-Gua|dGua|dblo|tick|Адгу-/)
 fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /adsterra|decodeURIComponent|Math.rnd/)
 a29167 1
 stratege.ru##+js(remove-node-text, style, #000000 !important;)
+a29385 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##body > p
+a29400 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div#body_container:style(top: 0 !important; position: absolute !important)
+a29413 1
+fishki.net,game4you.top,hot.game,innal.top,mp3party.net,naylo.top,rustorka.*,rustorkacom.lib##+js(href-sanitizer, [href*="url=https"], ?url)
+d29712 1
+a29712 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##body > [style*="height"]

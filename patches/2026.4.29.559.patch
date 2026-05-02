@@ -1,14 +1,9 @@
-diff name:ruadlist lines:96 checksum:54e862409c
+diff name:ruadlist lines:108 checksum:e23a62ef20
 d4 2
 a5 2
-! Last modified: Sat, 02 May 2026 03:44:38 +0000
-! Diff-Path: ../patches/2026.5.2.224.patch#ruadlist
-a447 1
-||allhoney.pro^$third-party
-a5128 1
-||reckless-message.pro^$third-party
-a6451 1
-||unawarepatience.pro^$third-party
+! Last modified: Sat, 02 May 2026 10:05:50 +0000
+! Diff-Path: ../patches/2026.5.2.605.patch#ruadlist
+d5129 1
 a7806 1
 .com/services/?fx=$third-party,script
 a7807 1
@@ -29,6 +24,8 @@ a9925 1
 ||getdownloadstudio.net^$popup
 a10252 1
 okko.sport,okko.tv##[data-testid="player_osd"] > div[style*="--duration-"] > div:first-child::after
+a11634 1
+||fishki.net/sw-main.js
 d15241 1
 a15241 1
 3iks.org,androidkino.net,btrans.by,crimea-news.com,dugtor.ru,dv-gazeta.info,internet-technologies.ru,kinosimka.be,kniga-online.com,novyny.live,progroshi.news,proukraine.news,qna.center,reestr.rublacklist.net,resheba.top,reviewscompanies.club,vesti.uz,wotsite.net,xcadr.tv##.adv
@@ -75,6 +72,7 @@ overclockers.ru#?#.newsline > .newsline-item ~ div[class="ui grid"]:-abp-has(> d
 d23715 1
 a23715 1
 ya.ru##section[style*="-cektion-items-count:"]
+d28162 3
 a28281 5
 ! stratege.ru###globalcontent:style(margin-top: 0 !important)
 ! stratege.ru##.above_body:style(margin-bottom: auto !important)
@@ -88,10 +86,24 @@ a28532 2
 dzen.ru##[aria-label*="траница"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id]
 dzen.ru##[aria-label*="траница"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not(:last-child):not([aria-label])
 d28534 2
+d29024 1
+d29046 1
 a29052 1
 soft2u.ru##+js(href-sanitizer, a[href^="https://soft2u.ru/url.php?to="], ?to)
 a29133 1
 aigenda.ru##+js(prevent-setTimeout, combinedDetector)
-a29154 1
+d29152 1
+d29154 1
+a29154 2
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /A.d.b.|Adb-|A-d-b-|-Gua|dGua|dblo|tick|Адгу-/)
 fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /adsterra|decodeURIComponent|Math.rnd/)
 d29157 1
+a29388 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##body > p
+a29403 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div#body_container:style(top: 0 !important; position: absolute !important)
+a29416 1
+fishki.net,game4you.top,hot.game,innal.top,mp3party.net,naylo.top,rustorka.*,rustorkacom.lib##+js(href-sanitizer, [href*="url=https"], ?url)
+d29715 1
+a29715 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##body > [style*="height"]

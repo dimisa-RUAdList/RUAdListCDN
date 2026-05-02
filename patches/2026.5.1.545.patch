@@ -1,10 +1,11 @@
-diff name:ruadlist lines:37 checksum:54e862409c
+diff name:ruadlist lines:56 checksum:e23a62ef20
 d4 2
 a5 2
-! Last modified: Sat, 02 May 2026 03:44:38 +0000
-! Diff-Path: ../patches/2026.5.2.224.patch#ruadlist
-a5129 1
-||reckless-message.pro^$third-party
+! Last modified: Sat, 02 May 2026 10:05:50 +0000
+! Diff-Path: ../patches/2026.5.2.605.patch#ruadlist
+d448 1
+d5130 1
+d6453 1
 a7808 1
 .com/services/?fx=$third-party,script
 a7809 1
@@ -13,6 +14,8 @@ a7884 1
 /^https?:\/\/[-a-z]{6,}\.(?:com?|info|pro|xyz)\/[a-d][-.\/A-Z_a-z][DHWXm][-.\/A-Z_a-z][59FVZ][-.\/A-Z_a-z][6swyz][-.\/A-Z_a-z][-\/0-9A-Z_a-z][-.\/A-Z_a-z][-\/0-9A-Z_a-z]+(?:$|\?)/$third-party,match-case,script
 a10257 1
 okko.sport,okko.tv##[data-testid="player_osd"] > div[style*="--duration-"] > div:first-child::after
+a11639 1
+||fishki.net/sw-main.js
 d15246 1
 a15246 1
 3iks.org,androidkino.net,btrans.by,crimea-news.com,dugtor.ru,dv-gazeta.info,internet-technologies.ru,kinosimka.be,kniga-online.com,novyny.live,progroshi.news,proukraine.news,qna.center,reestr.rublacklist.net,resheba.top,reviewscompanies.club,vesti.uz,wotsite.net,xcadr.tv##.adv
@@ -31,8 +34,24 @@ a22481 1
 aigenda.ru#@#.pub_300x250
 a22484 1
 aigenda.ru#@#.textads
+d28171 3
 d28547 1
 a28548 1
 dzen.ru##[aria-label*="траница"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not(:last-child):not([aria-label])
+d29038 1
+d29060 1
 a29148 1
 aigenda.ru##+js(prevent-setTimeout, combinedDetector)
+d29167 1
+d29169 1
+a29169 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /A.d.b.|Adb-|A-d-b-|-Gua|dGua|dblo|tick|Адгу-/)
+a29403 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##body > p
+a29418 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div#body_container:style(top: 0 !important; position: absolute !important)
+a29431 1
+fishki.net,game4you.top,hot.game,innal.top,mp3party.net,naylo.top,rustorka.*,rustorkacom.lib##+js(href-sanitizer, [href*="url=https"], ?url)
+d29730 1
+a29730 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##body > [style*="height"]
