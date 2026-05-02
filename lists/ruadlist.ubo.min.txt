@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 02 May 2026 10:05:50 +0000
-! Diff-Path: ../patches/2026.5.2.605.patch#ruadlist
+! Last modified: Sat, 02 May 2026 15:00:09 +0000
+! Diff-Path: ../patches/2026.5.2.900.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -277,6 +277,7 @@
 ||ads.digitalcaramel.com^$third-party
 ||ads.vk.com/|$xmlhttprequest,domain=~ads.vk.com
 ||ads2.bid^$third-party
+||adsafee.io^$third-party
 ||adsclick.ru^$third-party
 ||adseedtech.com^$third-party
 ||adselector.ru^$third-party
@@ -13240,6 +13241,11 @@ igdz1.ru^$script,domain=igdz.ru
 ||station.ru/upload/contents/*210x260
 ||station.ru/upload/contents/*240x250
 ||statuserdata.ru/player/
+||stavka.tv/*bonus
+||stavka.tv/*bookmakers
+||stavka.tv/*catfish
+||stavka.tv/*popup
+||stavka.tv/*promo
 ||stena.ee/sites/default/files/stenaee_rek.
 ||step2nature.ru/upload/alexkova.popupad/$image
 ||stereohead.ru/_main_page/images/
@@ -15079,6 +15085,7 @@ meduza.io##.Layout-bannerTop
 meduza.io##.Layout-module-banner
 myshows.me##.LayoutWrapper__promo
 spot.uz##.LeaderBoard
+stavka.tv##.MatchHeaderCoefs
 russian.rt.com##.Mirtesen-root
 do.ru##.MyOpacity1
 tonkosti.ru##.NoCurTips
@@ -17373,8 +17380,6 @@ ip.osnova.news##.my-4
 mymsk.online##.my-5
 inetsovety.ru##.my-block[style="height:730px;"]
 bst.bratsk.ru##.my-sheet-Adv
-repack.me##.my.row > div:first-child .panel-primary.short-title
-repack.me##.my.row > div:first-child .panel-primary.short-title ~ br
 xboxrussia.ru##.mylink
 drive.ru##.mywidget-item[class*="teaser"]
 ykt.ru##.n-ad-silver
@@ -17710,6 +17715,7 @@ footballgazeta.com##.popularList > center
 tourister.ru##.popularMaterialList > div[id^="readmore_"] ~ [class]:not([id^="readmore_"])
 stavcur.ru##.popup-army
 nrj.ua##.popup-banner
+stavka.tv##.popup-button
 garant.ru##.popup-social
 securitymedia.org##.popup_banners
 equity.today##.popup_module_container
@@ -18061,6 +18067,8 @@ internetsms.org##.row-fluid.center > h3
 internetsms.org##.row-fluid.center > h4
 metrogame.net##.row.row-flash.roll
 investoday.ru##.row2 > span[style^="float:"]
+repack.me##.row[class*=" my"] > div:first-child .panel-primary.short-title
+repack.me##.row[class*=" my"] > div:first-child .panel-primary.short-title ~ br
 nikcenter.org#?#.row[style^="padding-"]:-abp-has(> .nchead > .ncheading:-abp-contains(/^партн/i))
 epravda.com.ua,eurointegration.com.ua##.rpad script[src*="orbit.lun.ua"] + span
 thesame.tv##.rs-promo
@@ -19165,6 +19173,7 @@ minfin.com.ua##[class*="mfz-banner"]
 minfin.com.ua##[class*="mfz-teaser"]
 virusbase.ru.free-anti-spy.com##[class*="modal"]
 igrigo.net#?#[class*="navi_title"]:-abp-contains(/браузер|партнеры/i)
+stavka.tv##[class*="ookmakers"]
 24tv.ua,football24.ua,sport24.ua,zaxid.net##[class*="partner-insert"]
 24tv.ua,football24.ua,sport24.ua##[class*="partner-insert"] + .media_embed
 24tv.ua,football24.ua,sport24.ua##[class*="partner-insert"] + p
@@ -19200,6 +19209,7 @@ igromania.ru,kanobu.ru#?#[class^="MaterialsManufacturerPage_infiniteWrap"] > div
 igromania.ru,kanobu.ru#?#[class^="MaterialsManufacturerPage_infiniteWrap"] > div[class^="InfiniteScrollWrap_content"] > [class^="MaterialItemPage_materialSection"]:-abp-has(> div [class^="SpecialLabelOfArticle_isPartnerMaterial"])
 igromania.ru,kanobu.ru##[class^="PlotWithMaterials_plots_"] [class*="_tabs"] > button ~ button
 igromania.ru,kanobu.ru#?#[class^="PlotWithMaterials_plots_"]:-abp-has(> div [class*="_tabs"] > button ~ button[class*="_active_"]) [class^="PlotWithMaterials_head_"] ~ div
+stavka.tv##[class^="Promo"]
 sravni.ru##[class^="RedirectAdvertisingTag"]
 stopgame.ru#?#[class^="_content"] > div[class^="_video-wrapper"] ~ [class] [class^="_list_"]:-abp-has(b > [href^="/to?http"][href*="%2Fgo"])
 stopgame.ru#?#[class^="_content"] > div[class^="_video-wrapper"] ~ [class] b:-abp-contains(/скидка|скидки|промокод|партнёр/i)
@@ -19384,9 +19394,12 @@ ogemorroe.com##[href*="=ogemorroe.com"]
 local.com.ua##[href*="local.com.ua/banner"]
 tnt-premier.life##[href*="mclk.ru"]
 podelki-doma.ru##[href*="ohnet.ru"]
+stavka.tv##[href="/bookmakers"]
 mash.ru##[href="/go/dzen/"]
 torrent-igruha.ru##[href="/kak-skachat.html"]
+stavka.tv##[href="/promo"]
 onlinestreams.ru##[href="/reyting-bukmekerov/"]
+repack.me##[href="/yapack"]
 comss.ru##[href="download/page.php?id=5511"]
 surgeryzone.net##[href="http://surgeryzone.net/knigi-po-medicine"]
 mobiset.ru##[href="http://www.ivlim.ru/"]
@@ -19862,7 +19875,6 @@ bigbangtv.ru,new-team.org,onlysimpsons.ru,swip.su,vskazketv.com##a[href*="myprin
 site-do.ru##a[href*="myrusakov.ru"]
 freetp.org,freetp.ru##a[href*="nacked_tits_bot"]
 halyavin.ru,internethalyava.ru##a[href*="nanokleber-original.com"]
-repack.me##a[href*="neovpn"]
 minecraft-inside.ru##a[href*="nfemo.com/click"]
 liveresult.ru,soccer365.com.ua,soccer365.ru##a[href*="odds"]
 puerrtto.livejournal.com##a[href*="offer"][target="_blank"]
@@ -19949,7 +19961,6 @@ footballhd.ru##a[href="/bookmakersrating/"]
 football.konkurent.ua##a[href="/casino/"]
 alvin-almazov.ru##a[href="/category/theory/"]
 rutracker21.org##a[href="/donate.php"] + a[target="_blank"]
-repack.me##a[href="/download"]
 gameinonline.com##a[href="/go/vshapke.html"]
 soft-file.ru##a[href="/golink/https://soft-file.ru/yandeks-brauzer/"]
 kinotorrs.me##a[href="/help"]
@@ -28137,7 +28148,7 @@ regnum.news,regnum.ru##.page-column > .right-adv-container:style(top: 100px !imp
 mag.relax.by##.b-global-branding[branding_url*=http] .b-global-wrap:style(cursor: auto !important)
 mag.relax.by##.b-global-wrap > .b-global-offset:style(padding: unset !important)
 ! ---
-repack.me##main > .container:style(padding-top: 0 !important; margin-top: 0 !important)
+repack.me##main > div[class^="container"]:style(padding-top: 0 !important; margin-top: 0 !important)
 ! ---
 reshebnik.com##div[id*="-error-page"] > p:style(height: 0 !important; opacity: 0 !important)
 ! ---

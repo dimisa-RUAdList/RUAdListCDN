@@ -1,8 +1,10 @@
-diff name:ruadlist lines:94 checksum:e23a62ef20
+diff name:ruadlist lines:125 checksum:03781db2f1
 d4 2
 a5 2
-! Last modified: Sat, 02 May 2026 10:05:50 +0000
-! Diff-Path: ../patches/2026.5.2.605.patch#ruadlist
+! Last modified: Sat, 02 May 2026 15:00:09 +0000
+! Diff-Path: ../patches/2026.5.2.900.patch#ruadlist
+a279 1
+||adsafee.io^$third-party
 d5129 1
 a7806 1
 .com/services/?fx=$third-party,script
@@ -26,18 +28,44 @@ a10252 1
 okko.sport,okko.tv##[data-testid="player_osd"] > div[style*="--duration-"] > div:first-child::after
 a11634 1
 ||fishki.net/sw-main.js
+a13235 5
+||stavka.tv/*bonus
+||stavka.tv/*bookmakers
+||stavka.tv/*catfish
+||stavka.tv/*popup
+||stavka.tv/*promo
+a15074 1
+stavka.tv##.MatchHeaderCoefs
 d15241 1
 a15241 1
 3iks.org,androidkino.net,btrans.by,crimea-news.com,dugtor.ru,dv-gazeta.info,internet-technologies.ru,kinosimka.be,kniga-online.com,novyny.live,progroshi.news,proukraine.news,qna.center,reestr.rublacklist.net,resheba.top,reviewscompanies.club,vesti.uz,wotsite.net,xcadr.tv##.adv
 a15301 1
 aigenda.ru##.af-product
+d17368 2
+a17704 1
+stavka.tv##.popup-button
+a18055 2
+repack.me##.row[class*=" my"] > div:first-child .panel-primary.short-title
+repack.me##.row[class*=" my"] > div:first-child .panel-primary.short-title ~ br
 d18414 1
 d19089 1
 a19089 1
 activation-keys.ru,adregain.ru,ads.bid,apicloud.ru,appt12mn.com,banner.mob.ru.com,bestsoft.club,browser-extensions.club,cheatget.ru,click2soft.ru,clickbytes.ru,content.directadvert.ru,cs-serva.net,directx.biz,dnevni4ok.com,download.studio,downloadamigo.com,downloadbrowser.ru,driverpack.io,driverpaksolution.ru,drp.su,dugtor-deer.pw,dw1-msetup.org,elementsbrowser.com,etarg.network,everinform.com,ex.24smi.info,ex.24smi.site,ex.infox.sg,exonews.ru,fast2click.ru,filetaker.ru,fin-vector.ru,flebolab.ru,getappwiz.ru,getappwizard.ru,getdownloadstudio.net,getdstud.io,getdstudio.app,getdstudio.cab,getdstudio.com,getdstudio.dev,getfiletds.ru,getyoursoft.ru,globalstylis.ru,hdvideoboxs.ru,health-official.ru,idealmedia.io,install-now.com,installpack.net,kinowinx.ru,linksoftbox.ru,litebrowser.ru,losnews.ru,mainews.ru,manysoftlink.ru,marketgid.ru,medicin-novosti-24.com,medicineteaser.org,medicineteaser.ru,morelnk.ru,msetup.pro,mysoftbox.ru,mytrk.xyz,nalivali.ru,new-rutor.website,news-decent.com,news-sphere.com,newsma.ru,novostly.com,offergate.pro,ognyvo.ru,olx.ua.partners,orgsales.ru,picpick.ru,pochistit.ru,popcornhd.ru,prime-oblako.ru,programma-ochistki.ru,readvesti.ru,rotateme.ru,rsboot.ru,rustoria-topnews.ru,rutor.ml,rutorrent.co,rutors.tk,rutracker.eu,rutracker.work,rutraker.org,sandboxie.ru,saymigren.net,sb-on-line.ru,search-cdn.ru,searchcdn.ru,smiru.ru,softboxtds.ru,spishi.vip,starblog.org,sysenvfiles.net,t-lafa-site.ru,t1mcapp.com,tdsclicks2.ru,tdsrotations.ru,tft-test.ru,tlmnt.com,top-rutor.eu,top.24smi.info,topnews.smi.one,toprated-film.co,tordrom.com,torrentum.ru,ubar-pro.ru,ubar-pro2.ru,ubar-pro3.ru,ubar-pro4.ru,ubar.pro,ufiler-download.ru,ufiler-pro.ru,ufiler-pro2.ru,ufiler.pro,upro.me,utorria.ru,viniki.ru,vserpg.ru,wogoods.com,womens-journal.ru,worldinform.ru,xbox-torrent.ru,ya-browser.ru,ya-cdn.ru,ya-distrib.ru,yabrowser.su,yadistr.ru,yasearch-cdn.ru,yasearchcdn.ru,ynsearch.ru,zodiac-game.info,zpppstop.ru,zqwjpxow7boc.ru##:not(this-site-is-fake)
 a19146 1
 soft2u.ru##[class*="download-page__alt-ads"]
+a19159 1
+stavka.tv##[class*="ookmakers"]
+a19194 1
+stavka.tv##[class^="Promo"]
+a19378 1
+stavka.tv##[href="/bookmakers"]
+a19380 1
+stavka.tv##[href="/promo"]
+a19381 1
+repack.me##[href="/yapack"]
 d19553 1
+d19858 1
+d19945 1
 a19979 1
 gsett.ru##a[href="https://gsett.ru/gs"]
 a21122 1
@@ -67,6 +95,9 @@ a22490 3
 pikabu.ru#?#article:-abp-has(> .story__main > div > header + div[class^="story"] > div:not([id]))
 pikabu.ru#?#article:-abp-has(> .story__main > div > header + div[class^="story"]:not(:-abp-has(*)))
 pikabu.ru#?#article:-abp-has(> .story__main > div:empty)
+d28120 1
+a28120 1
+repack.me##main > div[class^="container"]:style(padding-top: 0 !important; margin-top: 0 !important)
 d28163 3
 a28538 2
 dzen.ru##[aria-label*="траница"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id]
