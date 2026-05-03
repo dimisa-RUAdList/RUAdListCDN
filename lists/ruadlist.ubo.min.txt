@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 03 May 2026 06:33:35 +0000
-! Diff-Path: ../patches/2026.5.3.393.patch#ruadlist
+! Last modified: Sun, 03 May 2026 11:53:49 +0000
+! Diff-Path: ../patches/2026.5.3.713.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10918,7 +10918,6 @@ igdz1.ru^$script,domain=igdz.ru
 ||21region.org/uploads/main/rb/
 ||21region.org/uploads/main/re/
 ||24stoma.ru/rkm/
-||2baksa.ws^$script
 ||2ch.*/banners/
 ||2d.windows-8.ru
 ||2gis.*/ads/advise/
@@ -11793,7 +11792,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||golos.te.ua/wp-content/uploads/*.mp4|
 ||golovne.net^$object
 ||golubok.mobi/js*ab.js$script
-||goo.gl^$domain=2baksa.ws|nowa.cc
+||goo.gl^$domain=nowa.cc
 ||goo.gl^$third-party,script
 ||good73.net^$object
 ||goodfilm.top^*/pek.png
@@ -18129,7 +18128,6 @@ sport-express.net,sport-express.ru##.se-sport-entity-icon-links__link--kinopoisk
 sport-express.net,sport-express.ru##.se-translation-scoreboard-event-badge
 sport-express.net,sport-express.ru##.se-translation-scoreboard-event-bets
 sport-express.net,sport-express.ru##.se-translation-scoreboard-event__header-badges
-sport-express.net,sport-express.ru##.se-translation-scoreboard-extra__bookie
 search.tut.by##.search-i > .b-results-list:first-child:not([start])
 move.ru##.search-item_tgb
 sletat.ru##.search-result__list-item[data-offerid]
@@ -18336,7 +18334,6 @@ grodno24.com##.similar
 podillyanews.com##.similar-news
 novostiua.net##.simple-banner
 kurs.if.ua##.simple-top-block
-lifehacker.ru##.single-article > .widgets-renderer
 lifehacker.ru##.single-article__content article > .core-buttons
 lifehacker.ru##.single-article__content article a[target="_blank"][rel*="sponsored"] > img
 lifehacker.ru##.single-article__content article a[target="_blank"][rel*="sponsored"] ~ .wp-element-caption[style]
@@ -19152,6 +19149,7 @@ disgustingmen.com##[class*="bg_banner"]
 vse.rv.ua##[class*="billboard"]
 anna-news.info##[class*="blog-holder"] > noindex
 glavred.info,glavred.net,unian.info,unian.net,unian.ua##[class*="bnr-block"]
+sport-express.net,sport-express.ru##[class*="bookie"]
 euro-football.ru,football.konkurent.ua##[class*="bookmaker"]
 cybersport.ru##[class*="bookmaker"]:not(.root)
 argumenti.ru##[class*="cc_adv"]
@@ -19248,9 +19246,9 @@ cpa.rip##[class^="quads-"]
 c-sgo.ru##[class^="rekl"]
 kinohit.uz##[class^="reklama-ads-"]
 sovetromantica.com##[class^="sbrand--"]
-sport-express.net,sport-express.ru##[class^="se-bookie"]
 fishki.net##[class^="side"][class*="right"] div[class*="promo"]
 neg.by##[class^="side-banner"]
+lifehacker.ru##[class^="single-article"] > .widgets-renderer
 1kr.ua##[class^="spec-block-"]
 sports.kz##[class^="sponsor_"]
 sims3pack.ru##[class^="st-br"] > *
@@ -19629,7 +19627,6 @@ ixbt.com##a[data-menuitem="honor"]
 grippua.com.ua##a[data-wpel-link="external"][target][rel*="nofollow"] > img
 menu.cc.ua,mycooking.pp.ua##a[href$=".htm"]
 serialy-2021.com,serialy-tor.com##a[href$=".php"]
-2baksa.ws##a[href$=".php"] > img
 pr-people.ru##a[href$=".php"][target="_blank"]
 gofrag.ru##a[href$="/pomoshch"]
 eadaily.com##a[href*="#after_incut"]
@@ -19638,7 +19635,6 @@ allfight.ru##a[href*="-pokupka-zhilya-"]
 manutd.ru,sportliga.com##a[href*=".ashx?"]
 onliner.by##a[href*=".betera.by"]
 fishingsib.ru,hunting.ru##a[href*=".fhserv.ru"]:not([href^="https://image.fhserv.ru"])
-2baksa.ws##a[href*=".htm"] > img
 texnic.ru##a[href*=".php?ad="]
 onliner.by##a[href*=".pm.by"]
 sport.tut.by##a[href*=".pm.by/"]
@@ -20598,7 +20594,6 @@ pay-day.ru##body > div[style*="fixed"]:not([id]):not([class])
 ykt.ru##body > div[style*="height:"][style*="180px"]
 news.zerkalo.io##body > div[style*="height:250px"]
 biqle.org,biqle.ru##body > div[style*="position"][style*="background"]
-2baksa.ws##body > div[style*="right"] > a[target="_blank"]
 cakevita.ru,darevamed.ru##body > div[style*="width"][style*="z-index"][style*="position"]
 chelnyclub.ru##body > div[style*="width: 990px"]
 wowjp.net##body > div[style*="z-index: 10000"]
@@ -20862,6 +20857,7 @@ niscu.ru##div[class*="iw-modal"]
 7days.ru##div[class*="js-banner_ad_"]
 esports.ru##div[class*="js-present-"]
 kingisepp-today.ru,xn----etbbecbrbp5ahkja1ae7v.xn--p1ai##div[class*="ks-banner-news"]
+sport-express.net,sport-express.ru##div[class*="matchcenter"][class$="links"]
 vprognoze.ru##div[class*="menu-bar__gift"]
 ts.kg##div[class*="oops-"]
 altapress.ru,etextlib.ru##div[class*="partners"]
@@ -22211,7 +22207,6 @@ cyberforum.ru##table[id^="post"] ~ div[style^="margin: 3px 0px"][style*="display
 dusterclubs.ru#?#table[id^="post"]:-abp-has(> tbody > tr > .thead:-abp-contains(Это может быть интересно))
 lifter.com.ua##table[id^="post-"] + div[style]
 womanbusiness.ru##table[style*="2px dashed;"]
-2baksa.ws##table[style*="width: 468px;"][style*="border-collapse: collapse;"][style*="height: 60px;"]
 sudakonline.info##table[style="height: 20px; width: 100%;"]
 radiodacha.ru##table[style="margin-top:5px"] a[href^="/adclick/"]
 zol.ru##table[style="table-layout:fixed; border-collapse:collapse"]
@@ -26036,7 +26031,6 @@ xn--112-5cd3baof9c5c.xn--p1ai#@#.wrapad
 @@||$domain=auth.wi-fi.ru
 @@||100pravda.com/includes/ads_kola/$domain=100pravda.com
 @@||156.ru/uploads/ads/$image,domain=156.ru|1743.ru|gts.tv
-@@||2baksa.ws/work/javascript/$script,~third-party
 @@||2ip.*/js/evercookie/js/evercookie.js|$script,~third-party
 @@||2mdn.net/instream/$third-party,script
 @@||365news.biz^$font,domain=365news.biz
@@ -26910,7 +26904,6 @@ motorpage.ru##body.noscroll::before
 qrz.ru#?#div[class]:-abp-has(> .inner > a[href="/help/adblock/"])
 live.vkvideo.ru##div[class^="Notifications_root"]
 pronetblog.by##div[class^="adsensepost"]
-2baksa.ws##div[class^="ant"][class*="block"]
 hitsovet.ru,mod-wot.ru##div[class^="chp_ads_block"]
 sport-express.net,sport-express.ru##div[class^="se-bn"][class*="-notice"]
 pulsesync.dev##div[class^="warnNotification-module-"]
@@ -29071,9 +29064,9 @@ appleinsider.ru##+js(href-sanitizer, a[href*="?goto=https"], ?goto)
 rambler.ru##+js(href-sanitizer, a[href*="?utm_"][data-main-link], +https)
 kluchikipro.ru##+js(href-sanitizer, a[href*="deeplink="], ?deeplink)
 innal.top,seedoff.net,zannn.top##+js(href-sanitizer, a[href*="to=aHR0c"], ?to -base64)
+hot.game,lifehacker.ru,pikabu.ru##+js(href-sanitizer, a[href*="ulp="][target="_blank"], ?ulp)
 kichkas.biz,rsload.net##+js(href-sanitizer, a[href*="url=aHR0c"], ?url -base64)
 lifehacker.ru##+js(href-sanitizer, a[href][rel*="sponsored"][target="_blank"], ?goto)
-hot.game,lifehacker.ru,pikabu.ru##+js(href-sanitizer, a[href][target="_blank"], ?ulp)
 www.ixbt.com##+js(href-sanitizer, a[href^="//www.ixbt.com/click/?c="], [title])
 wotspeak.org##+js(href-sanitizer, a[href^="/engine/dwn"], ?xf)
 rambler.ru##+js(href-sanitizer, a[href^="http:"][aria-label^="Перейти на страницу источника"], +https)
