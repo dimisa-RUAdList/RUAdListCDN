@@ -1,15 +1,20 @@
-diff name:ruadlist lines:143 checksum:b4bfbf03e9
+diff name:ruadlist lines:153 checksum:965719b50f
 d4 2
 a5 2
-! Last modified: Sun, 03 May 2026 17:02:29 +0000
-! Diff-Path: ../patches/2026.5.3.1022.patch#ruadlist
+! Last modified: Sun, 03 May 2026 21:55:11 +0000
+! Diff-Path: ../patches/2026.5.3.1315.patch#ruadlist
 a279 1
 ||adsafee.io^$third-party
+a1535 1
+||deltarockme.com^$third-party
 d5129 1
+a5955 1
+||tallertorn.com^$third-party
 d6452 1
 a7807 1
 .com/services/?fx=$third-party,script
-a7808 1
+a7808 2
+.com/services/?ns=$third-party,script
 .com/services/?rt=$third-party,script
 a7883 1
 /^https?:\/\/[-a-z]{6,}\.(?:com?|info|pro|xyz)\/[a-d][-.\/A-Z_a-z][DHWXm][-.\/A-Z_a-z][59FVZ][-.\/A-Z_a-z][6swyz][-.\/A-Z_a-z][-\/0-9A-Z_a-z][-.\/A-Z_a-z][-\/0-9A-Z_a-z]+(?:$|\?)/$third-party,match-case,script
@@ -114,6 +119,10 @@ d28122 1
 a28122 1
 repack.me##main > div[class^="container"]:style(padding-top: 0 !important; margin-top: 0 !important)
 d28165 3
+d28282 5
+a28286 2
+stratege.ru###globalcontent:style(margin-top: 0 !important)
+stratege.ru##.above_body:style(margin-bottom: auto !important)
 a28540 2
 dzen.ru##[aria-label*="траница"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id]
 dzen.ru##[aria-label*="траница"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not(:last-child):not([aria-label])
@@ -133,6 +142,7 @@ a29162 2
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /A.d.b.|Adb-|A-d-b-|-Gua|dGua|dblo|tick|Адгу-/)
 fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /adsterra|decodeURIComponent|Math.rnd/)
 d29165 1
+d29178 2
 a29396 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##body > p
 a29411 1
@@ -141,4 +151,4 @@ a29424 1
 fishki.net,game4you.top,hot.game,innal.top,mp3party.net,naylo.top,rustorka.*,rustorkacom.lib##+js(href-sanitizer, [href*="url=https"], ?url)
 d29723 1
 a29723 1
-game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##body > [style*="height"]
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##body > [style^="height"]

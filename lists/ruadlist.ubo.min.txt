@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 03 May 2026 17:02:29 +0000
-! Diff-Path: ../patches/2026.5.3.1022.patch#ruadlist
+! Last modified: Sun, 03 May 2026 21:55:11 +0000
+! Diff-Path: ../patches/2026.5.3.1315.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -1534,6 +1534,7 @@
 ||delmlk.com^$third-party
 ||delo-teh.ru^$third-party
 ||delta.mediafort.ru^$third-party
+||deltarockme.com^$third-party
 ||deltomix.ru^$third-party
 ||demepatut.com^$third-party
 ||demigart.info^$third-party
@@ -5953,6 +5954,7 @@
 ||takipp.ru^$third-party
 ||takitdska.ga^$third-party
 ||talktomeplease.biz^$third-party
+||tallertorn.com^$third-party
 ||tamerliqus.com^$third-party
 ||tanlitthisdint.ru^$third-party
 ||tapnetwork.ru^$third-party
@@ -7806,6 +7808,7 @@ _verified.php?code=*&server=runetki.com
 .com/resources/draw_script.js$third-party,script
 .com/services/?fx=$third-party,script
 .com/services/?id=$third-party,script
+.com/services/?ns=$third-party,script
 .com/services/?rt=$third-party,script
 .com/vinos.js?$third-party,script
 .gold/next.html?$third-party,script
@@ -28298,11 +28301,8 @@ stopgame.ru###preroll_mediaplayer
 stopgame.ru##body:style(cursor: default !important)
 stopgame.ru##div[id^="videoplayer_"][class^="iframe_wrapper"]:style(display: block !important)
 ! ---
-stratege.ru##html:style(background-color: #dbdbdb !important)
-stratege.ru##html[xmlns] #globalcontent:style(padding-top: 0 !important)
-stratege.ru##html[xmlns] .above_body:style(margin-bottom: auto !important)
-! stratege.ru###globalcontent:style(margin-top: 0 !important)
-! stratege.ru##.above_body:style(margin-bottom: auto !important)
+stratege.ru###globalcontent:style(margin-top: 0 !important)
+stratege.ru##.above_body:style(margin-bottom: auto !important)
 ! & for Users
 ! stratege.ru##html:style(background: #dbdbdb !important)
 ! stratege.ru##body > [id][class]:first-of-type:style(display: unset !important)
@@ -29193,8 +29193,6 @@ gsm.in.ua##+js(remove-node-text, script, message_ads)
 kriminal.net.ua##+js(remove-node-text, script, nidclick)
 sichnews.ua##+js(remove-node-text, script, right_click)
 eg.ru,gorodche.ru,gorodvo.ru,ng72.ru##+js(remove-node-text, script, showBanner)
-stratege.ru##+js(remove-node-text, style, #000000 !important;)
-stratege.ru##+js(remove-node-text, style, background: black !important;)
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, style, epom-brend)
 uwupad.me##+js(remove-node-text, style, lb-banner-height)
 playvillage.ru##+js(set-attr, ._1z_ ._21_, style, '')
@@ -29741,7 +29739,7 @@ e.mail.ru##+js(set-constant, Object.prototype.hasAdBlock, false)
 e.mail.ru#@#+js(set-constant, Object.prototype.hasAdBlock, null)
 @@||dzen.ru^$generichide
 @@||sportsdzen.ru^$generichide
-game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##body > [style*="height"]
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##body > [style^="height"]
 searchfloor.*##+js(addEventListener-defuser, DOMContentLoaded, isDonatePage)
 ||cdn.viqeo.tv/js/assets/master-*/styles/vn_player.css$stylesheet
 ||st.top100.ru/top100/top100.js$domain=www.rambler.ru

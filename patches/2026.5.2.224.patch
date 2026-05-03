@@ -1,13 +1,19 @@
-diff name:ruadlist lines:78 checksum:b4bfbf03e9
+diff name:ruadlist lines:89 checksum:965719b50f
 d4 2
 a5 2
-! Last modified: Sun, 03 May 2026 17:02:29 +0000
-! Diff-Path: ../patches/2026.5.3.1022.patch#ruadlist
+! Last modified: Sun, 03 May 2026 21:55:11 +0000
+! Diff-Path: ../patches/2026.5.3.1315.patch#ruadlist
 a279 1
 ||adsafee.io^$third-party
 d448 1
+a1536 1
+||deltarockme.com^$third-party
 d5130 2
+a5957 1
+||tallertorn.com^$third-party
 d6454 1
+a7811 1
+.com/services/?ns=$third-party,script
 d10924 1
 a11644 1
 ||fishki.net/sw-main.js
@@ -59,6 +65,10 @@ d28143 1
 a28143 1
 repack.me##main > div[class^="container"]:style(padding-top: 0 !important; margin-top: 0 !important)
 d28186 3
+d28303 5
+a28307 2
+stratege.ru###globalcontent:style(margin-top: 0 !important)
+stratege.ru##.above_body:style(margin-bottom: auto !important)
 d29053 1
 a29069 1
 hot.game,lifehacker.ru,pikabu.ru##+js(href-sanitizer, a[href*="ulp="][target="_blank"], ?ulp)
@@ -68,6 +78,7 @@ d29183 1
 d29185 1
 a29185 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /A.d.b.|Adb-|A-d-b-|-Gua|dGua|dblo|tick|Адгу-/)
+d29201 2
 a29419 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##body > p
 a29434 1
@@ -76,4 +87,4 @@ a29447 1
 fishki.net,game4you.top,hot.game,innal.top,mp3party.net,naylo.top,rustorka.*,rustorkacom.lib##+js(href-sanitizer, [href*="url=https"], ?url)
 d29746 1
 a29746 1
-game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##body > [style*="height"]
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##body > [style^="height"]
