@@ -1,8 +1,8 @@
-diff name:ruadlist lines:142 checksum:d522f4eca4
+diff name:ruadlist lines:146 checksum:44cc6b3c28
 d4 2
 a5 2
-! Last modified: Mon, 04 May 2026 18:46:49 +0000
-! Diff-Path: ../patches/2026.5.4.1126.patch#ruadlist
+! Last modified: Mon, 04 May 2026 22:11:09 +0000
+! Diff-Path: ../patches/2026.5.4.1331.patch#ruadlist
 a279 1
 ||adsafee.io^$third-party
 d448 1
@@ -46,9 +46,6 @@ osnmedia.ru##.logo1000
 d17373 2
 a17709 1
 stavka.tv##.popup-button
-a18054 2
-repack.me##.row > div:first-child .panel-primary.short-title
-repack.me##.row > div:first-child .panel-primary.short-title ~ br
 d18121 1
 d18328 1
 a19143 1
@@ -95,6 +92,13 @@ a22481 1
 aigenda.ru#@#.pub_300x250
 a22484 1
 aigenda.ru#@#.textads
+a23510 6
+! REPAK.me
+repack.me##.row > div:first-child .panel-primary:nth-child(-n+3)
+repack.me##.row > div:first-child .panel-primary:nth-child(-n+3) + br
+! блокировки, добавленные из-за агрессивного обхода >
+||t.me/neovpnbot?$third-party,popup
+||waicore.net^$third-party,popup
 d23618 1
 d23620 3
 a23622 1
@@ -111,7 +115,7 @@ d26016 1
 d26890 1
 d28128 1
 a28128 1
-repack.me##.cnt:style(padding-top: 0 !important; margin-top: 0 !important)
+repack.me##.cont:style(padding-top: 0 !important; margin-top: 0 !important)
 d28171 3
 d28288 5
 a28292 2

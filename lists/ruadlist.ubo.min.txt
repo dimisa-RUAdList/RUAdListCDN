@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 04 May 2026 18:46:49 +0000
-! Diff-Path: ../patches/2026.5.4.1126.patch#ruadlist
+! Last modified: Mon, 04 May 2026 22:11:09 +0000
+! Diff-Path: ../patches/2026.5.4.1331.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -18065,8 +18065,6 @@ bestradio.fm##.row .panel-danger
 5-tv.ru##.row > .col3.positionRelative
 my-hit.org##.row > .hidden-sm.hidden-xs > :not([class])
 pingvin.pro#?#.row > div:-abp-has(> .card-blog script)
-repack.me##.row > div:first-child .panel-primary.short-title
-repack.me##.row > div:first-child .panel-primary.short-title ~ br
 censor.net,lookatme.ru##.row-banner
 the-village-kz.com,the-village.me,the-village.ru,village.com.ua##.row-banner-top
 internetsms.org##.row-fluid.center > h3
@@ -23530,6 +23528,12 @@ rbc.ru##div[class^="styles_okko"]
 ||s0.rbk.ru/v6_top_pics/media/img/2/89/347628703693892.svg
 ||utro.ru/*/banners/
 ||zoom.cnews.ru/inc/bpic/
+! REPAK.me
+repack.me##.row > div:first-child .panel-primary:nth-child(-n+3)
+repack.me##.row > div:first-child .panel-primary:nth-child(-n+3) + br
+! блокировки, добавленные из-за агрессивного обхода >
+||t.me/neovpnbot?$third-party,popup
+||waicore.net^$third-party,popup
 ! Spaces и зеркала
 google-cloud.services,spac.me,spaces.im,spcs.bio,strip2.co,strip2.*,usersporn.com###sidebar > div[class]:last-child
 google-cloud.services,spac.me,spaces.im,spcs.bio,strip2.co,strip2.*,usersporn.com###siteContent > div:not([id]):not([class]) ~ div[class]
@@ -28142,7 +28146,7 @@ regnum.news,regnum.ru##.page-column > .right-adv-container:style(top: 100px !imp
 mag.relax.by##.b-global-branding[branding_url*=http] .b-global-wrap:style(cursor: auto !important)
 mag.relax.by##.b-global-wrap > .b-global-offset:style(padding: unset !important)
 ! ---
-repack.me##.cnt:style(padding-top: 0 !important; margin-top: 0 !important)
+repack.me##.cont:style(padding-top: 0 !important; margin-top: 0 !important)
 ! ---
 reshebnik.com##div[id*="-error-page"] > p:style(height: 0 !important; opacity: 0 !important)
 ! ---

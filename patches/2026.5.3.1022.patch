@@ -1,8 +1,8 @@
-diff name:ruadlist lines:51 checksum:d522f4eca4
+diff name:ruadlist lines:55 checksum:44cc6b3c28
 d4 2
 a5 2
-! Last modified: Mon, 04 May 2026 18:46:49 +0000
-! Diff-Path: ../patches/2026.5.4.1126.patch#ruadlist
+! Last modified: Mon, 04 May 2026 22:11:09 +0000
+! Diff-Path: ../patches/2026.5.4.1331.patch#ruadlist
 a1536 1
 ||deltarockme.com^$third-party
 a5955 1
@@ -12,9 +12,6 @@ a7808 2
 .com/services/?ns=$third-party,script
 a17144 1
 osnmedia.ru##.logo1000
-a18062 2
-repack.me##.row > div:first-child .panel-primary.short-title
-repack.me##.row > div:first-child .panel-primary.short-title ~ br
 d18069 2
 d20425 1
 d22395 2
@@ -24,6 +21,13 @@ a22396 2
 d22426 1
 a22426 1
 ||pikabu.ru/ajax/*?pwX1U=$xmlhttprequest
+a23528 6
+! REPAK.me
+repack.me##.row > div:first-child .panel-primary:nth-child(-n+3)
+repack.me##.row > div:first-child .panel-primary:nth-child(-n+3) + br
+! блокировки, добавленные из-за агрессивного обхода >
+||t.me/neovpnbot?$third-party,popup
+||waicore.net^$third-party,popup
 d23636 1
 d23638 3
 a23640 1
@@ -38,7 +42,7 @@ a23659 1
 ||static.*.tribuna.com/_next/static/chunks/3340.a9e1afb602402a44.js
 d28144 1
 a28144 1
-repack.me##.cnt:style(padding-top: 0 !important; margin-top: 0 !important)
+repack.me##.cont:style(padding-top: 0 !important; margin-top: 0 !important)
 d28301 5
 a28305 2
 stratege.ru###globalcontent:style(margin-top: 0 !important)
