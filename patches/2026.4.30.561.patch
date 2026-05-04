@@ -1,8 +1,8 @@
-diff name:ruadlist lines:153 checksum:bbc022e0dc
+diff name:ruadlist lines:156 checksum:b74eb6b5c9
 d4 2
 a5 2
-! Last modified: Mon, 04 May 2026 04:02:16 +0000
-! Diff-Path: ../patches/2026.5.4.242.patch#ruadlist
+! Last modified: Mon, 04 May 2026 09:28:48 +0000
+! Diff-Path: ../patches/2026.5.4.568.patch#ruadlist
 a279 1
 ||adsafee.io^$third-party
 a1535 1
@@ -13,7 +13,8 @@ a5955 1
 d6452 1
 a7807 1
 .com/services/?fx=$third-party,script
-a7808 2
+a7808 3
+.com/services/?ix=$third-party,script
 .com/services/?ns=$third-party,script
 .com/services/?rt=$third-party,script
 a7883 1
@@ -49,12 +50,14 @@ a15243 1
 3iks.org,androidkino.net,btrans.by,crimea-news.com,dugtor.ru,dv-gazeta.info,internet-technologies.ru,kinosimka.be,kniga-online.com,novyny.live,progroshi.news,proukraine.news,qna.center,reestr.rublacklist.net,resheba.top,reviewscompanies.club,vesti.uz,wotsite.net,xcadr.tv##.adv
 a15303 1
 aigenda.ru##.af-product
+a17132 1
+osnmedia.ru##.logo1000
 d17370 2
 a17706 1
 stavka.tv##.popup-button
-a18057 2
-repack.me##.row[class*=" my"] > div:first-child .panel-primary.short-title
-repack.me##.row[class*=" my"] > div:first-child .panel-primary.short-title ~ br
+a18051 2
+repack.me##.row > div:first-child .panel-primary.short-title
+repack.me##.row > div:first-child .panel-primary.short-title ~ br
 d18118 1
 d18325 1
 d19090 1
@@ -117,7 +120,7 @@ d26010 1
 d26884 1
 d28122 1
 a28122 1
-repack.me##main > div[class^="container"]:style(padding-top: 0 !important; margin-top: 0 !important)
+repack.me##.cnt:style(padding-top: 0 !important; margin-top: 0 !important)
 d28165 3
 d28282 5
 a28286 2
@@ -146,7 +149,7 @@ d29178 2
 a29396 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##body > p
 a29411 1
-game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div#body_container:style(top: 0 !important; position: absolute !important)
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div#body_container:style(top: 0 !important; position: absolute !important; margin-top: 0 !important; margin-bottom: 0 !important; min-width: 99.7% !important)
 a29424 1
 fishki.net,game4you.top,hot.game,innal.top,mp3party.net,naylo.top,rustorka.*,rustorkacom.lib##+js(href-sanitizer, [href*="url=https"], ?url)
 d29723 1

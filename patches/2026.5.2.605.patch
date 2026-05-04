@@ -1,15 +1,16 @@
-diff name:ruadlist lines:71 checksum:bbc022e0dc
+diff name:ruadlist lines:77 checksum:b74eb6b5c9
 d4 2
 a5 2
-! Last modified: Mon, 04 May 2026 04:02:16 +0000
-! Diff-Path: ../patches/2026.5.4.242.patch#ruadlist
+! Last modified: Mon, 04 May 2026 09:28:48 +0000
+! Diff-Path: ../patches/2026.5.4.568.patch#ruadlist
 a279 1
 ||adsafee.io^$third-party
 a1535 1
 ||deltarockme.com^$third-party
 a5954 1
 ||tallertorn.com^$third-party
-a7807 1
+a7807 2
+.com/services/?ix=$third-party,script
 .com/services/?ns=$third-party,script
 d10920 1
 d11795 1
@@ -23,12 +24,14 @@ a13242 5
 ||stavka.tv/*promo
 a15081 1
 stavka.tv##.MatchHeaderCoefs
+a17138 1
+osnmedia.ru##.logo1000
 d17376 2
 a17712 1
 stavka.tv##.popup-button
-a18063 2
-repack.me##.row[class*=" my"] > div:first-child .panel-primary.short-title
-repack.me##.row[class*=" my"] > div:first-child .panel-primary.short-title ~ br
+a18057 2
+repack.me##.row > div:first-child .panel-primary.short-title
+repack.me##.row > div:first-child .panel-primary.short-title ~ br
 d18124 1
 d18331 1
 a19146 1
@@ -58,7 +61,7 @@ d26028 1
 d26902 1
 d28140 1
 a28140 1
-repack.me##main > div[class^="container"]:style(padding-top: 0 !important; margin-top: 0 !important)
+repack.me##.cnt:style(padding-top: 0 !important; margin-top: 0 !important)
 d28297 5
 a28301 2
 stratege.ru###globalcontent:style(margin-top: 0 !important)
@@ -67,6 +70,9 @@ a29062 1
 hot.game,lifehacker.ru,pikabu.ru##+js(href-sanitizer, a[href*="ulp="][target="_blank"], ?ulp)
 d29065 1
 d29192 2
+d29427 1
+a29427 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div#body_container:style(top: 0 !important; position: absolute !important; margin-top: 0 !important; margin-bottom: 0 !important; min-width: 99.7% !important)
 d29740 1
 a29740 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##body > [style^="height"]

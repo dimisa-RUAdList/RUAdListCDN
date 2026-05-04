@@ -1,8 +1,8 @@
-diff name:ruadlist lines:111 checksum:bbc022e0dc
+diff name:ruadlist lines:114 checksum:b74eb6b5c9
 d4 2
 a5 2
-! Last modified: Mon, 04 May 2026 04:02:16 +0000
-! Diff-Path: ../patches/2026.5.4.242.patch#ruadlist
+! Last modified: Mon, 04 May 2026 09:28:48 +0000
+! Diff-Path: ../patches/2026.5.4.568.patch#ruadlist
 a279 1
 ||adsafee.io^$third-party
 d448 1
@@ -14,7 +14,8 @@ a5957 1
 d6454 1
 a7809 1
 .com/services/?fx=$third-party,script
-a7810 2
+a7810 3
+.com/services/?ix=$third-party,script
 .com/services/?ns=$third-party,script
 .com/services/?rt=$third-party,script
 a10259 1
@@ -35,12 +36,14 @@ a15081 1
 stavka.tv##.MatchHeaderCoefs
 a15308 1
 aigenda.ru##.af-product
+a17137 1
+osnmedia.ru##.logo1000
 d17375 2
 a17711 1
 stavka.tv##.popup-button
-a18062 2
-repack.me##.row[class*=" my"] > div:first-child .panel-primary.short-title
-repack.me##.row[class*=" my"] > div:first-child .panel-primary.short-title ~ br
+a18056 2
+repack.me##.row > div:first-child .panel-primary.short-title
+repack.me##.row > div:first-child .panel-primary.short-title ~ br
 d18123 1
 d18330 1
 a19145 1
@@ -83,7 +86,7 @@ d26018 1
 d26892 1
 d28130 1
 a28130 1
-repack.me##main > div[class^="container"]:style(padding-top: 0 !important; margin-top: 0 !important)
+repack.me##.cnt:style(padding-top: 0 !important; margin-top: 0 !important)
 d28173 3
 d28290 5
 a28294 2
@@ -104,7 +107,7 @@ d29187 2
 a29405 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##body > p
 a29420 1
-game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div#body_container:style(top: 0 !important; position: absolute !important)
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div#body_container:style(top: 0 !important; position: absolute !important; margin-top: 0 !important; margin-bottom: 0 !important; min-width: 99.7% !important)
 a29433 1
 fishki.net,game4you.top,hot.game,innal.top,mp3party.net,naylo.top,rustorka.*,rustorkacom.lib##+js(href-sanitizer, [href*="url=https"], ?url)
 d29732 1

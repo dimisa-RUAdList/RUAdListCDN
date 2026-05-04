@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 04 May 2026 04:02:16 +0000
-! Diff-Path: ../patches/2026.5.4.242.patch#ruadlist
+! Last modified: Mon, 04 May 2026 09:28:48 +0000
+! Diff-Path: ../patches/2026.5.4.568.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -7808,6 +7808,7 @@ _verified.php?code=*&server=runetki.com
 .com/resources/draw_script.js$third-party,script
 .com/services/?fx=$third-party,script
 .com/services/?id=$third-party,script
+.com/services/?ix=$third-party,script
 .com/services/?ns=$third-party,script
 .com/services/?rt=$third-party,script
 .com/vinos.js?$third-party,script
@@ -17145,6 +17146,7 @@ gamemag.ru##.logo-df
 clubfile.net##.logo-w + a[target="blank_"]
 gamemag.ru##.logo-zen-feed
 chevy-niva.ru##.logo.right
+osnmedia.ru##.logo1000
 21region.org##.logo_ad_wrap
 ixbt.com##.logohonor
 sapr.ru##.lolcount
@@ -18063,14 +18065,14 @@ bestradio.fm##.row .panel-danger
 5-tv.ru##.row > .col3.positionRelative
 my-hit.org##.row > .hidden-sm.hidden-xs > :not([class])
 pingvin.pro#?#.row > div:-abp-has(> .card-blog script)
+repack.me##.row > div:first-child .panel-primary.short-title
+repack.me##.row > div:first-child .panel-primary.short-title ~ br
 censor.net,lookatme.ru##.row-banner
 the-village-kz.com,the-village.me,the-village.ru,village.com.ua##.row-banner-top
 internetsms.org##.row-fluid.center > h3
 internetsms.org##.row-fluid.center > h4
 metrogame.net##.row.row-flash.roll
 investoday.ru##.row2 > span[style^="float:"]
-repack.me##.row[class*=" my"] > div:first-child .panel-primary.short-title
-repack.me##.row[class*=" my"] > div:first-child .panel-primary.short-title ~ br
 nikcenter.org#?#.row[style^="padding-"]:-abp-has(> .nchead > .ncheading:-abp-contains(/^партн/i))
 epravda.com.ua,eurointegration.com.ua##.rpad script[src*="orbit.lun.ua"] + span
 thesame.tv##.rs-promo
@@ -28144,7 +28146,7 @@ regnum.news,regnum.ru##.page-column > .right-adv-container:style(top: 100px !imp
 mag.relax.by##.b-global-branding[branding_url*=http] .b-global-wrap:style(cursor: auto !important)
 mag.relax.by##.b-global-wrap > .b-global-offset:style(padding: unset !important)
 ! ---
-repack.me##main > div[class^="container"]:style(padding-top: 0 !important; margin-top: 0 !important)
+repack.me##.cnt:style(padding-top: 0 !important; margin-top: 0 !important)
 ! ---
 reshebnik.com##div[id*="-error-page"] > p:style(height: 0 !important; opacity: 0 !important)
 ! ---
@@ -29426,7 +29428,7 @@ sawlive.tv##body[onclick^="closeMyAd"] > div[id][style*="position"][style*="back
 cosplay-porn.*,fap-guru.*,mult-porno.*,sex-studentki.*##+js(remove-node-text, script, /initTeasers|initVads/)
 cosplay-porn.*,fap-guru.*,mult-porno.*,sex-studentki.*##+js(set-cookie-reload, is_age_verified, 1)
 disk.yandex.ru,disk.yandex.*##+js(remove-class, has-fullscreen-banner|has-right-direct, .public__root, stay)
-game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div#body_container:style(top: 0 !important; position: absolute !important)
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div#body_container:style(top: 0 !important; position: absolute !important; margin-top: 0 !important; margin-bottom: 0 !important; min-width: 99.7% !important)
 dzen.ru##div:matches-attr(/./=/meta-channel-pinner/) > div > div
 dzen.ru##div:matches-attr(/./=/meta-channel-pinner/) > div[id]
 dzen.ru##div:matches-attr(/./=dzenpro-banner)
