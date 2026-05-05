@@ -1,8 +1,8 @@
-diff name:ruadlist lines:32 checksum:db7c06e7f3
+diff name:ruadlist lines:41 checksum:b404d4fef7
 d4 2
 a5 2
-! Last modified: Tue, 05 May 2026 09:14:57 +0000
-! Diff-Path: ../patches/2026.5.5.554.patch#ruadlist
+! Last modified: Tue, 05 May 2026 16:49:03 +0000
+! Diff-Path: ../patches/2026.5.5.1009.patch#ruadlist
 d18068 2
 d20430 1
 d22400 2
@@ -14,8 +14,8 @@ a22431 1
 ||pikabu.ru/ajax/*?pwX1U=$xmlhttprequest
 a23533 6
 ! REPAK.me
-repack.me#?#.panel:-abp-has(> .panel-body > p > a[href*="/waicore"])
-repack.me#?#.panel:-abp-has(> .panel-body > p > a[href^="/neo"])
+repack.me#?#.panel:-abp-has(> .panel-body > p > a[href*="/ne"])
+repack.me#?#.panel:-abp-has(> .panel-body > p > a[href*="/wa"])
 ! блокировки, добавленные из-за агрессивного обхода >
 ||t.me/neovpnbot?$third-party,popup
 ||waicore.net^$third-party,popup
@@ -31,3 +31,12 @@ tribuna.com##div[data-anchor^="_"][class^="_"]
 d23652 2
 a23664 1
 ||static.*.tribuna.com/_next/static/chunks/3340.a9e1afb602402a44.js
+d23747 1
+a23747 1
+ya.ru##section[style*="-cekktion-items-count:"]
+d28149 1
+a28149 1
+repack.me##main > div:style(padding-top: 0 !important; margin-top: 0 !important)
+d28494 1
+a28494 1
+ya.ru##[id^="r"][id*="yt"][id*="m-f"][id$="d"]

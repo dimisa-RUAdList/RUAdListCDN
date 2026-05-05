@@ -1,8 +1,8 @@
-diff name:ruadlist lines:138 checksum:db7c06e7f3
+diff name:ruadlist lines:144 checksum:b404d4fef7
 d4 2
 a5 2
-! Last modified: Tue, 05 May 2026 09:14:57 +0000
-! Diff-Path: ../patches/2026.5.5.554.patch#ruadlist
+! Last modified: Tue, 05 May 2026 16:49:03 +0000
+! Diff-Path: ../patches/2026.5.5.1009.patch#ruadlist
 a279 1
 ||adsafee.io^$third-party
 d448 1
@@ -89,8 +89,8 @@ a22486 1
 aigenda.ru#@#.textads
 a23512 6
 ! REPAK.me
-repack.me#?#.panel:-abp-has(> .panel-body > p > a[href*="/waicore"])
-repack.me#?#.panel:-abp-has(> .panel-body > p > a[href^="/neo"])
+repack.me#?#.panel:-abp-has(> .panel-body > p > a[href*="/ne"])
+repack.me#?#.panel:-abp-has(> .panel-body > p > a[href*="/wa"])
 ! блокировки, добавленные из-за агрессивного обхода >
 ||t.me/neovpnbot?$third-party,popup
 ||waicore.net^$third-party,popup
@@ -106,16 +106,22 @@ tribuna.com##div[data-anchor^="_"][class^="_"]
 d23631 2
 a23643 1
 ||static.*.tribuna.com/_next/static/chunks/3340.a9e1afb602402a44.js
+d23726 1
+a23726 1
+ya.ru##section[style*="-cekktion-items-count:"]
 d26018 1
 d26892 1
 d28130 1
 a28130 1
-repack.me##.cnt:style(padding-top: 0 !important; margin-top: 0 !important)
+repack.me##main > div:style(padding-top: 0 !important; margin-top: 0 !important)
 d28173 3
 d28290 5
 a28294 2
 stratege.ru###globalcontent:style(margin-top: 0 !important)
 stratege.ru##.above_body:style(margin-bottom: auto !important)
+d28481 1
+a28481 1
+ya.ru##[id^="r"][id*="yt"][id*="m-f"][id$="d"]
 d29040 1
 a29056 1
 hot.game,lifehacker.ru,pikabu.ru##+js(href-sanitizer, a[href*="ulp="][target="_blank"], ?ulp)
