@@ -1,8 +1,8 @@
-diff name:ruadlist lines:42 checksum:c8a8a5e695
+diff name:ruadlist lines:42 checksum:db7c06e7f3
 d4 2
 a5 2
-! Last modified: Tue, 05 May 2026 03:43:28 +0000
-! Diff-Path: ../patches/2026.5.5.223.patch#ruadlist
+! Last modified: Tue, 05 May 2026 09:14:57 +0000
+! Diff-Path: ../patches/2026.5.5.554.patch#ruadlist
 a7810 1
 .com/services/?ix=$third-party,script
 a17147 1
@@ -18,8 +18,8 @@ a22429 1
 ||pikabu.ru/ajax/*?pwX1U=$xmlhttprequest
 a23531 6
 ! REPAK.me
-repack.me##.row > div:first-child .panel-primary:nth-child(-n+3)
-repack.me##.row > div:first-child .panel-primary:nth-child(-n+3) + br
+repack.me#?#.panel:-abp-has(> .panel-body > p > a[href*="/waicore"])
+repack.me#?#.panel:-abp-has(> .panel-body > p > a[href^="/neo"])
 ! блокировки, добавленные из-за агрессивного обхода >
 ||t.me/neovpnbot?$third-party,popup
 ||waicore.net^$third-party,popup
@@ -37,7 +37,7 @@ a23662 1
 ||static.*.tribuna.com/_next/static/chunks/3340.a9e1afb602402a44.js
 d28147 1
 a28147 1
-repack.me##.cont:style(padding-top: 0 !important; margin-top: 0 !important)
+repack.me##.cnt:style(padding-top: 0 !important; margin-top: 0 !important)
 d29429 1
 a29429 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div#body_container:style(top: 0 !important; position: absolute !important; margin-top: 0 !important; margin-bottom: 0 !important; min-width: 99.7% !important)

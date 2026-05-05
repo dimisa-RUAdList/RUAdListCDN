@@ -1,8 +1,8 @@
-diff name:ruadlist lines:101 checksum:c8a8a5e695
+diff name:ruadlist lines:101 checksum:db7c06e7f3
 d4 2
 a5 2
-! Last modified: Tue, 05 May 2026 03:43:28 +0000
-! Diff-Path: ../patches/2026.5.5.223.patch#ruadlist
+! Last modified: Tue, 05 May 2026 09:14:57 +0000
+! Diff-Path: ../patches/2026.5.5.554.patch#ruadlist
 a279 1
 ||adsafee.io^$third-party
 a1535 1
@@ -64,8 +64,8 @@ a22420 1
 ||pikabu.ru/ajax/*?pwX1U=$xmlhttprequest
 a23522 6
 ! REPAK.me
-repack.me##.row > div:first-child .panel-primary:nth-child(-n+3)
-repack.me##.row > div:first-child .panel-primary:nth-child(-n+3) + br
+repack.me#?#.panel:-abp-has(> .panel-body > p > a[href*="/waicore"])
+repack.me#?#.panel:-abp-has(> .panel-body > p > a[href^="/neo"])
 ! блокировки, добавленные из-за агрессивного обхода >
 ||t.me/neovpnbot?$third-party,popup
 ||waicore.net^$third-party,popup
@@ -85,7 +85,7 @@ d26028 1
 d26902 1
 d28140 1
 a28140 1
-repack.me##.cont:style(padding-top: 0 !important; margin-top: 0 !important)
+repack.me##.cnt:style(padding-top: 0 !important; margin-top: 0 !important)
 d28297 5
 a28301 2
 stratege.ru###globalcontent:style(margin-top: 0 !important)

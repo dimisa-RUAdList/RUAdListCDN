@@ -1,16 +1,13 @@
-diff name:ruadlist lines:15 checksum:c8a8a5e695
+diff name:ruadlist lines:12 checksum:db7c06e7f3
 d4 2
 a5 2
-! Last modified: Tue, 05 May 2026 03:43:28 +0000
-! Diff-Path: ../patches/2026.5.5.223.patch#ruadlist
+! Last modified: Tue, 05 May 2026 09:14:57 +0000
+! Diff-Path: ../patches/2026.5.5.554.patch#ruadlist
 d18068 2
 a23532 6
 ! REPAK.me
-repack.me##.row > div:first-child .panel-primary:nth-child(-n+3)
-repack.me##.row > div:first-child .panel-primary:nth-child(-n+3) + br
+repack.me#?#.panel:-abp-has(> .panel-body > p > a[href*="/waicore"])
+repack.me#?#.panel:-abp-has(> .panel-body > p > a[href^="/neo"])
 ! блокировки, добавленные из-за агрессивного обхода >
 ||t.me/neovpnbot?$third-party,popup
 ||waicore.net^$third-party,popup
-d28145 1
-a28145 1
-repack.me##.cont:style(padding-top: 0 !important; margin-top: 0 !important)
