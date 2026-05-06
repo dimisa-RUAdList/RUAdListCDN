@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 06 May 2026 09:32:36 +0000
-! Diff-Path: ../patches/2026.5.6.572.patch#ruadlist
+! Last modified: Wed, 06 May 2026 14:39:20 +0000
+! Diff-Path: ../patches/2026.5.6.879.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -11286,6 +11286,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||boosterrock.com^$third-party
 ||bos.bz/assets/php/banners/
 ||botanam.net/wp-content/themes/reshebnik/*.swf
+||botanichka.ru/wp-content/uploads/sbl-assets/
 ||bouncekitchen.ru^*.php$script
 ||bountyporn.com/7c24c1.js
 ||br.kcdn.kz^
@@ -11330,7 +11331,6 @@ igdz1.ru^$script,domain=igdz.ru
 ||cda.pl/xml_pool/*pool*.php$xmlhttprequest
 ||cdn.anison.fm/images$object
 ||cdn.banki.ru/*/widget-calculators$domain=banki.ru
-||cdn.botanichka.ru/pics/brand/
 ||cdn.gravitec.net/styles/unbloc*.png
 ||cdn.hsmedia.ru/dist/maxim/Product.
 ||cdn.hsmedia.ru/scrooge-client/hsm-creative-manager$script
@@ -21310,7 +21310,7 @@ finmarket.ru##div[id*="_ban"]
 niv.ru##div[id*="_ban_"]
 kavkazova.ru##div[id*="actionteaser"]
 ochevidets.ru##div[id*="baner"]
-bina.az,bitpump.ru,chem21.info,enovosty.com,ogorodnik.com,orelgrad.ru,propozitsiya.com,qafqazinfo.az,snow-motion.ru,stadion.uz,tap.az,turbo.az,uralpress.ru##div[id*="banner"]
+bina.az,bitpump.ru,botanichka.ru,chem21.info,enovosty.com,ogorodnik.com,orelgrad.ru,propozitsiya.com,qafqazinfo.az,snow-motion.ru,stadion.uz,tap.az,turbo.az,uralpress.ru##div[id*="banner"]
 propozitsiya.com##div[id*="bunner"]
 drom.ru,newsvl.ru,vl.ru##div[id*="candy"]
 akipress.org##div[id*="company"]
@@ -23534,8 +23534,8 @@ rbc.ru##div[class^="styles_okko"]
 repack.me##.my.row > div:first-child .panel-primary.short-title
 repack.me##.my.row > div:first-child .panel-primary.short-title ~ br
 ! блокировки, добавленные из-за агрессивного обхода >
-||t.me/neovpnbot?$third-party,popup
-||waicore.net^$third-party,popup
+!||t.me/neovpnbot?$third-party,popup
+!||waicore.net^$third-party,popup
 ! Spaces и зеркала
 google-cloud.services,spac.me,spaces.im,spcs.bio,strip2.co,strip2.*,usersporn.com###sidebar > div[class]:last-child
 google-cloud.services,spac.me,spaces.im,spcs.bio,strip2.co,strip2.*,usersporn.com###siteContent > div:not([id]):not([class]) ~ div[class]
@@ -26218,7 +26218,6 @@ xn--112-5cd3baof9c5c.xn--p1ai#@#.wrapad
 @@||fonts.gstatic.com^
 @@||foodzy.ru/i/b/$image,domain=foodzy.ru
 @@||forecabox.foreca.com/css/*X*css|$stylesheet,domain=forecabox.foreca.com
-@@||franecki.net/favicon.ico$image,domain=hdninja.club
 @@||fundament-spb24.ru^*/images/$image,domain=fundament-spb24.ru
 @@||gamearmy.ru/images/$image,domain=setitagila.3dn.ru
 @@||games-tv.ru/openx/www/delivery/ajs.php?$script,domain=games-tv.ru
@@ -28148,7 +28147,7 @@ regnum.news,regnum.ru##.page-column > .right-adv-container:style(top: 100px !imp
 mag.relax.by##.b-global-branding[branding_url*=http] .b-global-wrap:style(cursor: auto !important)
 mag.relax.by##.b-global-wrap > .b-global-offset:style(padding: unset !important)
 ! ---
-repack.me##main > div:style(padding-top: 0 !important; margin-top: 0 !important)
+repack.me##main > div[class^="container"]:style(padding-top: 0 !important; margin-top: 0 !important)
 ! ---
 reshebnik.com##div[id*="-error-page"] > p:style(height: 0 !important; opacity: 0 !important)
 ! ---
@@ -29327,7 +29326,7 @@ dtf.ru,vc.ru##.author__avatar video:remove-attr(autoplay)
 footboom.com,footboom.kz##.b-article-content > h2:has-text(букмекер)
 gazeta.press,gazeta.ru##.b_flowup:remove()
 lostfilm.download,lostfilm.life,lostfilm.one,lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##.body > .body:style(user-select: text !important; -moz-user-select: text !important; -webkit-user-select: text !important)
-dtf.ru,vc.ru##.comment-media > .andropov-video > video:remove-attr(autoplay)
+dtf.ru,vc.ru##.comment-media .andropov-video video:remove-attr(autoplay)
 gamemag.ru##.content-text:has(em:has-text(erid:)) a > strong:style(font-weight: inherit !important)
 gamemag.ru##.content-text:has(em:has-text(erid:)) a:style(pointer-events: none !important; color: inherit !important)
 playground.ru##.dfp-container:remove()
@@ -29341,7 +29340,7 @@ ozon.ru##.layout-page > div:has(> div > p > a[href*="://docs.ozon.ru/common/prav
 lenta.ru##.layout__content > .js-topic:has(.topic-header__erid):remove()
 inoreader.com##.leaderboard_ad:style(display: block !important; position: fixed !important; top: -10000px !important; left: -10000px !important)
 nrj.ua##.main__slider > a:not([href^="https://nrj.ua/"]):remove()
-dtf.ru,vc.ru##.media > .andropov-video > video:remove-attr(autoplay)
+dtf.ru,vc.ru##.media .andropov-video video:remove-attr(autoplay)
 hideip.me#@#.node-promoted
 author.today##.noselect:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -khtml-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important)
 vm.ru##.onair_wrapper > [name="btn_air_close"]

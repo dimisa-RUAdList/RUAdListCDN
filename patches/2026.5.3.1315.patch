@@ -1,13 +1,16 @@
-diff name:ruadlist lines:55 checksum:6165e7e02e
+diff name:ruadlist lines:65 checksum:619e0a9ca1
 d4 2
 a5 2
-! Last modified: Wed, 06 May 2026 09:32:36 +0000
-! Diff-Path: ../patches/2026.5.6.572.patch#ruadlist
+! Last modified: Wed, 06 May 2026 14:39:20 +0000
+! Diff-Path: ../patches/2026.5.6.879.patch#ruadlist
 a244 1
 ||adlook.tv^$third-party
 d6735 1
 a7810 1
 .com/services/?ix=$third-party,script
+a11287 1
+||botanichka.ru/wp-content/uploads/sbl-assets/
+d11332 1
 a13165 1
 ||spdmpgcdn.com/veoveo-creative/
 a17147 1
@@ -16,6 +19,9 @@ d18072 2
 a20326 1
 mt.today##a[href^="https://www.komus.ru/katalog/"]
 d20428 1
+d21312 1
+a21312 1
+bina.az,bitpump.ru,botanichka.ru,chem21.info,enovosty.com,ogorodnik.com,orelgrad.ru,propozitsiya.com,qafqazinfo.az,snow-motion.ru,stadion.uz,tap.az,turbo.az,uralpress.ru##div[id*="banner"]
 d22398 2
 a22399 2
 ||static.dzeninfra.ru/s3/zen-apps/news-site/*/*/$script
@@ -28,8 +34,8 @@ a23531 6
 repack.me##.my.row > div:first-child .panel-primary.short-title
 repack.me##.my.row > div:first-child .panel-primary.short-title ~ br
 ! блокировки, добавленные из-за агрессивного обхода >
-||t.me/neovpnbot?$third-party,popup
-||waicore.net^$third-party,popup
+!||t.me/neovpnbot?$third-party,popup
+!||waicore.net^$third-party,popup
 d23639 1
 d23641 3
 a23643 1
@@ -45,12 +51,16 @@ a23662 1
 d23745 1
 a23745 1
 ya.ru##section[style*="-cekktion-items-count:"]
-d28147 1
-a28147 1
-repack.me##main > div:style(padding-top: 0 !important; margin-top: 0 !important)
+d26217 1
 d28492 1
 a28492 1
 ya.ru##[id^="r"][id*="yt"][id*="m-f"][id$="d"]
+d29326 1
+a29326 1
+dtf.ru,vc.ru##.comment-media .andropov-video video:remove-attr(autoplay)
+d29340 1
+a29340 1
+dtf.ru,vc.ru##.media .andropov-video video:remove-attr(autoplay)
 d29429 1
 a29429 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div#body_container:style(top: 0 !important; position: absolute !important; margin-top: 0 !important; margin-bottom: 0 !important; min-width: 99.7% !important)

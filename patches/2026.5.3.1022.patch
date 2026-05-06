@@ -1,8 +1,8 @@
-diff name:ruadlist lines:68 checksum:6165e7e02e
+diff name:ruadlist lines:78 checksum:619e0a9ca1
 d4 2
 a5 2
-! Last modified: Wed, 06 May 2026 09:32:36 +0000
-! Diff-Path: ../patches/2026.5.6.572.patch#ruadlist
+! Last modified: Wed, 06 May 2026 14:39:20 +0000
+! Diff-Path: ../patches/2026.5.6.879.patch#ruadlist
 a244 1
 ||adlook.tv^$third-party
 a1536 1
@@ -13,6 +13,9 @@ d6733 1
 a7808 2
 .com/services/?ix=$third-party,script
 .com/services/?ns=$third-party,script
+a11284 1
+||botanichka.ru/wp-content/uploads/sbl-assets/
+d11329 1
 a13162 1
 ||spdmpgcdn.com/veoveo-creative/
 a17144 1
@@ -21,6 +24,9 @@ d18069 2
 a20323 1
 mt.today##a[href^="https://www.komus.ru/katalog/"]
 d20425 1
+d21309 1
+a21309 1
+bina.az,bitpump.ru,botanichka.ru,chem21.info,enovosty.com,ogorodnik.com,orelgrad.ru,propozitsiya.com,qafqazinfo.az,snow-motion.ru,stadion.uz,tap.az,turbo.az,uralpress.ru##div[id*="banner"]
 d22395 2
 a22396 2
 ||static.dzeninfra.ru/s3/zen-apps/news-site/*/*/$script
@@ -33,8 +39,8 @@ a23528 6
 repack.me##.my.row > div:first-child .panel-primary.short-title
 repack.me##.my.row > div:first-child .panel-primary.short-title ~ br
 ! блокировки, добавленные из-за агрессивного обхода >
-||t.me/neovpnbot?$third-party,popup
-||waicore.net^$third-party,popup
+!||t.me/neovpnbot?$third-party,popup
+!||waicore.net^$third-party,popup
 d23636 1
 d23638 3
 a23640 1
@@ -50,9 +56,7 @@ a23659 1
 d23742 1
 a23742 1
 ya.ru##section[style*="-cekktion-items-count:"]
-d28144 1
-a28144 1
-repack.me##main > div:style(padding-top: 0 !important; margin-top: 0 !important)
+d26214 1
 d28301 5
 a28305 2
 stratege.ru###globalcontent:style(margin-top: 0 !important)
@@ -61,6 +65,12 @@ d28492 1
 a28492 1
 ya.ru##[id^="r"][id*="yt"][id*="m-f"][id$="d"]
 d29196 2
+d29328 1
+a29328 1
+dtf.ru,vc.ru##.comment-media .andropov-video video:remove-attr(autoplay)
+d29342 1
+a29342 1
+dtf.ru,vc.ru##.media .andropov-video video:remove-attr(autoplay)
 d29431 1
 a29431 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div#body_container:style(top: 0 !important; position: absolute !important; margin-top: 0 !important; margin-bottom: 0 !important; min-width: 99.7% !important)
