@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 06 May 2026 14:39:20 +0000
-! Diff-Path: ../patches/2026.5.6.879.patch#ruadlist
+! Last modified: Wed, 06 May 2026 20:42:21 +0000
+! Diff-Path: ../patches/2026.5.6.1242.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -13561,6 +13561,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||videouroki.net^$domain=kopilkaurokov.ru
 ||vikna.if.ua/assets/upload/banner/
 ||viknaodessa.od.ua/baner468
+||vipapi.org/*.xml?$xmlhttprequest
 ||vipidei.com/wp-json/
 ||vipk-cache.cdnvideo.ru/
 ||viplist.fun/yandex
@@ -15263,7 +15264,6 @@ backup.menu,dedicated.menu,hosting.cafe,https.menu,license.menu,shared.menu,vds.
 komionline.ru##.adv-hint
 football24.ua##.adv-insert
 xn--c1acj.xn--p1ai##.adv-links
-aniqit.com,kodik.biz,kodik.cc,kodik.info,kodikdb.com##.adv-player
 sintetiki.net##.adv-sale
 24tv.ua,pise4ka.net##.adv-wrapper
 education.ua##.advOnTop
@@ -21544,7 +21544,7 @@ matiz-club.com##div[id^="sape_links"]
 ne-kurim.ru##div[id^="sbs"]
 newsru.co.il##div[id^="section_"]
 sibnet.ru##div[id^="sibAd_"]
-spletnik.ru##div[id^="side_ads_content"]
+spletnik.ru##div[id^="side_ads_"]
 photofuneditor.com#?#div[id^="sidebar"] div[id^="sidebar"]:-abp-has(div > [src*="pagead2."])
 realstream.space##div[id^="slice-"]
 1parazit.ru,24stoma.ru,alcogolizm.com,alkogolu.net,alkotraz.ru,big-stirka.ru,bolshoyulov.ru,cardiologiya.com,electric-220.ru,f4iwiki.ru,fastcarp.ru,firstfisher.ru,floradoma.com,kakbik.ru,literaguru.ru,luckyfamilyman.ru,medicina-kirov.ru,medotvet.com,mixednews.ru,moikolodets.ru,moyapechen.ru,mpsdoc.com,mr-build.ru,nosnebolit.ru,oprostatit.ru,samelectric.ru,selok.ru,silaman.ru,sustav.info,udermis.ru,vesdoloi.ru,villaved.ru,vitaminius.ru,wheeclamp.ru,youpk.ru##div[id^="slidebox"]
@@ -26843,6 +26843,7 @@ tarkov-market.com##.disable-adblock
 internetsms.org##.fade[class^="modal"]
 dailymail.co.uk,fashion2news.com,hotallnews.today,ilenta.com,in-poland.com,kreschatic.kiev.ua,moyens.net,newspad.ru,pimpletv.ru,portaltele.com.ua,pravda.com.ua,tales.org.ua,ukranews.com,wormax.io,zazloo.ru##.fc-ab-root
 hdkinoteatr.com##.fixedBg
+aniqit.com,kodik.cc,kodik.info,kodikdb.com,kodikplayer.com##.fp-message .second-message
 wowhead.com##.is-atf.horizontal-bg
 wowhead.com##.is-atf.vertical-bg
 wowhead.com##.is-btf.horizontal-bg
