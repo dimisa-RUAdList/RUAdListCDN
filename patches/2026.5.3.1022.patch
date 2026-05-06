@@ -1,15 +1,20 @@
-diff name:ruadlist lines:63 checksum:8f1878995a
+diff name:ruadlist lines:68 checksum:6165e7e02e
 d4 2
 a5 2
-! Last modified: Wed, 06 May 2026 06:40:08 +0000
-! Diff-Path: ../patches/2026.5.6.400.patch#ruadlist
+! Last modified: Wed, 06 May 2026 09:32:36 +0000
+! Diff-Path: ../patches/2026.5.6.572.patch#ruadlist
+a244 1
+||adlook.tv^$third-party
 a1536 1
 ||deltarockme.com^$third-party
 a5955 1
 ||tallertorn.com^$third-party
+d6733 1
 a7808 2
 .com/services/?ix=$third-party,script
 .com/services/?ns=$third-party,script
+a13162 1
+||spdmpgcdn.com/veoveo-creative/
 a17144 1
 osnmedia.ru##.logo1000
 d18069 2
@@ -25,8 +30,8 @@ a22426 1
 ||pikabu.ru/ajax/*?pwX1U=$xmlhttprequest
 a23528 6
 ! REPAK.me
-repack.me#?#.panel:-abp-has(> .panel-body > p > a[href*="/ne"])
-repack.me#?#.panel:-abp-has(> .panel-body > p > a[href*="/wa"])
+repack.me##.my.row > div:first-child .panel-primary.short-title
+repack.me##.my.row > div:first-child .panel-primary.short-title ~ br
 ! блокировки, добавленные из-за агрессивного обхода >
 ||t.me/neovpnbot?$third-party,popup
 ||waicore.net^$third-party,popup
