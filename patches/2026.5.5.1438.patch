@@ -1,8 +1,8 @@
-diff name:ruadlist lines:41 checksum:e800f191cd
+diff name:ruadlist lines:36 checksum:6cedd748d4
 d4 2
 a5 2
-! Last modified: Wed, 06 May 2026 20:42:21 +0000
-! Diff-Path: ../patches/2026.5.6.1242.patch#ruadlist
+! Last modified: Thu, 07 May 2026 03:57:36 +0000
+! Diff-Path: ../patches/2026.5.7.237.patch#ruadlist
 a244 1
 ||adlook.tv^$third-party
 d6735 1
@@ -21,19 +21,14 @@ d21546 1
 a21546 1
 spletnik.ru##div[id^="side_ads_"]
 d23533 2
-a23534 2
-repack.me##.my.row > div:first-child .panel-primary.short-title
-repack.me##.my.row > div:first-child .panel-primary.short-title ~ br
-d23536 2
-a23537 2
-!||t.me/neovpnbot?$third-party,popup
-!||waicore.net^$third-party,popup
+a23534 1
+repack.me#?#div:first-child > .panel:-abp-has(> .panel-body > p > a)
+a23536 2
+||telegram.me/neovpnbot?$third-party,popup
+||waicore.com^$third-party,popup
 d26220 1
 a26845 1
 aniqit.com,kodik.cc,kodik.info,kodikdb.com,kodikplayer.com##.fp-message .second-message
-d28150 1
-a28150 1
-repack.me##main > div[class^="container"]:style(padding-top: 0 !important; margin-top: 0 !important)
 d29329 1
 a29329 1
 dtf.ru,vc.ru##.comment-media .andropov-video video:remove-attr(autoplay)

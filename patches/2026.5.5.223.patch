@@ -1,8 +1,8 @@
-diff name:ruadlist lines:49 checksum:e800f191cd
+diff name:ruadlist lines:47 checksum:6cedd748d4
 d4 2
 a5 2
-! Last modified: Wed, 06 May 2026 20:42:21 +0000
-! Diff-Path: ../patches/2026.5.6.1242.patch#ruadlist
+! Last modified: Thu, 07 May 2026 03:57:36 +0000
+! Diff-Path: ../patches/2026.5.7.237.patch#ruadlist
 a244 1
 ||adlook.tv^$third-party
 d6735 1
@@ -23,13 +23,11 @@ d21545 1
 a21545 1
 spletnik.ru##div[id^="side_ads_"]
 d23532 2
-a23533 2
-repack.me##.my.row > div:first-child .panel-primary.short-title
-repack.me##.my.row > div:first-child .panel-primary.short-title ~ br
-d23535 2
-a23536 2
-!||t.me/neovpnbot?$third-party,popup
-!||waicore.net^$third-party,popup
+a23533 1
+repack.me#?#div:first-child > .panel:-abp-has(> .panel-body > p > a)
+a23535 2
+||telegram.me/neovpnbot?$third-party,popup
+||waicore.com^$third-party,popup
 d23747 1
 a23747 1
 ya.ru##section[style*="-cekktion-items-count:"]
@@ -38,7 +36,7 @@ a26844 1
 aniqit.com,kodik.cc,kodik.info,kodikdb.com,kodikplayer.com##.fp-message .second-message
 d28149 1
 a28149 1
-repack.me##main > div[class^="container"]:style(padding-top: 0 !important; margin-top: 0 !important)
+repack.me##main > div:style(padding-top: 0 !important; margin-top: 0 !important)
 d28494 1
 a28494 1
 ya.ru##[id^="r"][id*="yt"][id*="m-f"][id$="d"]

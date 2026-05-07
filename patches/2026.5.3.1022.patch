@@ -1,8 +1,8 @@
-diff name:ruadlist lines:86 checksum:e800f191cd
+diff name:ruadlist lines:90 checksum:6cedd748d4
 d4 2
 a5 2
-! Last modified: Wed, 06 May 2026 20:42:21 +0000
-! Diff-Path: ../patches/2026.5.6.1242.patch#ruadlist
+! Last modified: Thu, 07 May 2026 03:57:36 +0000
+! Diff-Path: ../patches/2026.5.7.237.patch#ruadlist
 a244 1
 ||adlook.tv^$third-party
 a1536 1
@@ -40,13 +40,14 @@ a22396 2
 d22426 1
 a22426 1
 ||pikabu.ru/ajax/*?pwX1U=$xmlhttprequest
-a23528 6
+a23528 7
 ! REPAK.me
-repack.me##.my.row > div:first-child .panel-primary.short-title
-repack.me##.my.row > div:first-child .panel-primary.short-title ~ br
+repack.me#?#div:first-child > .panel:-abp-has(> .panel-body > p > a)
 ! блокировки, добавленные из-за агрессивного обхода >
-!||t.me/neovpnbot?$third-party,popup
-!||waicore.net^$third-party,popup
+||t.me/neovpnbot?$third-party,popup
+||telegram.me/neovpnbot?$third-party,popup
+||waicore.com^$third-party,popup
+||waicore.net^$third-party,popup
 d23636 1
 d23638 3
 a23640 1
@@ -65,6 +66,9 @@ ya.ru##section[style*="-cekktion-items-count:"]
 d26214 1
 a26839 1
 aniqit.com,kodik.cc,kodik.info,kodikdb.com,kodikplayer.com##.fp-message .second-message
+d28144 1
+a28144 1
+repack.me##main > div:style(padding-top: 0 !important; margin-top: 0 !important)
 d28301 5
 a28305 2
 stratege.ru###globalcontent:style(margin-top: 0 !important)
