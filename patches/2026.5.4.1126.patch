@@ -1,8 +1,8 @@
-diff name:ruadlist lines:50 checksum:999d69aea9
+diff name:ruadlist lines:71 checksum:87cb76e3f8
 d4 2
 a5 2
-! Last modified: Thu, 07 May 2026 14:42:47 +0000
-! Diff-Path: ../patches/2026.5.7.882.patch#ruadlist
+! Last modified: Thu, 07 May 2026 20:22:21 +0000
+! Diff-Path: ../patches/2026.5.7.1222.patch#ruadlist
 a244 1
 ||adlook.tv^$third-party
 d6735 1
@@ -15,6 +15,7 @@ a13562 1
 ||vipapi.org/*.xml?$xmlhttprequest
 d15265 1
 d18068 2
+d19573 1
 a20328 1
 mt.today##a[href^="https://www.komus.ru/katalog/"]
 d21313 1
@@ -23,6 +24,8 @@ bina.az,bitpump.ru,botanichka.ru,chem21.info,enovosty.com,ogorodnik.com,orelgrad
 d21547 1
 a21547 1
 spletnik.ru##div[id^="side_ads_"]
+a21819 1
+fastpic.org##i[tabindex][role]
 a23532 7
 ! REPAK.me
 repack.me#?#div:first-child > .panel:-abp-has(> .panel-body > p > a)
@@ -33,7 +36,9 @@ repack.me#?#div:first-child > .panel:-abp-has(> .panel-body > p > a)
 ||waicore.net^$third-party,popup
 d23743 1
 a23743 1
-ya.ru##section[style*="-cekktion-items-count:"]
+ya.ru##section[style*="ekktion-items-count:"]
+a23902 1
+dzen.ru##.mini-suggest__popup-extra
 d26215 1
 a26840 1
 aniqit.com,kodik.cc,kodik.info,kodikdb.com,kodikplayer.com##.fp-message .second-message
@@ -42,7 +47,23 @@ a28145 1
 repack.me##main > div:style(padding-top: 0 !important; margin-top: 0 !important)
 d28490 1
 a28490 1
-ya.ru##[id^="r"][id*="yt"][id*="m-f"][id$="d"]
+ya.ru##[id^="r"][id*="yt"][id*="m-f"]
+d28526 1
+d28558 2
+a28559 2
+dzen.ru##[aria-label*="тран"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id]
+dzen.ru##[aria-label*="тран"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not(:last-child):not([aria-label])
+d28568 1
+a28568 1
+dzen.ru##div[class^="news-"][style="margin-top: 0px; height: calc(99.99% - 0px);"]
+a28574 1
+dzen.ru##div[style*="12.3626373626373"]
+d28894 1
+a28896 1
+dzen.ru##+js(abort-on-property-read, Object.prototype.UserBlocking)
+d29179 1
+a29179 1
+fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /adsterra|base64|decodeURIComponent|Math.rnd/)
 d29324 1
 a29324 1
 dtf.ru,vc.ru##.comment-media .andropov-video video:remove-attr(autoplay)

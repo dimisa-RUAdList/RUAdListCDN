@@ -1,14 +1,17 @@
-diff name:ruadlist lines:24 checksum:999d69aea9
+diff name:ruadlist lines:51 checksum:87cb76e3f8
 d4 2
 a5 2
-! Last modified: Thu, 07 May 2026 14:42:47 +0000
-! Diff-Path: ../patches/2026.5.7.882.patch#ruadlist
+! Last modified: Thu, 07 May 2026 20:22:21 +0000
+! Diff-Path: ../patches/2026.5.7.1222.patch#ruadlist
 a13563 1
 ||vipapi.org/*.xml?$xmlhttprequest
 d15266 1
+d19572 1
 d21547 1
 a21547 1
 spletnik.ru##div[id^="side_ads_"]
+a21819 1
+fastpic.org##i[tabindex][role]
 d23534 2
 a23535 1
 repack.me#?#div:first-child > .panel:-abp-has(> .panel-body > p > a)
@@ -18,8 +21,32 @@ a23538 4
 ||telegram.me/neovpnbot?$third-party,popup
 ||waicore.com^$third-party,popup
 ||waicore.net^$third-party,popup
+d23749 1
+a23749 1
+ya.ru##section[style*="ekktion-items-count:"]
+a23908 1
+dzen.ru##.mini-suggest__popup-extra
 a26845 1
 aniqit.com,kodik.cc,kodik.info,kodikdb.com,kodikplayer.com##.fp-message .second-message
 d28150 1
 a28150 1
 repack.me##main > div:style(padding-top: 0 !important; margin-top: 0 !important)
+d28495 1
+a28495 1
+ya.ru##[id^="r"][id*="yt"][id*="m-f"]
+d28531 1
+d28563 2
+a28564 2
+dzen.ru##[aria-label*="тран"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id]
+dzen.ru##[aria-label*="тран"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not(:last-child):not([aria-label])
+d28573 1
+a28573 1
+dzen.ru##div[class^="news-"][style="margin-top: 0px; height: calc(99.99% - 0px);"]
+a28579 1
+dzen.ru##div[style*="12.3626373626373"]
+d28899 1
+a28901 1
+dzen.ru##+js(abort-on-property-read, Object.prototype.UserBlocking)
+d29184 1
+a29184 1
+fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /adsterra|base64|decodeURIComponent|Math.rnd/)

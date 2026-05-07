@@ -1,8 +1,8 @@
-diff name:ruadlist lines:77 checksum:999d69aea9
+diff name:ruadlist lines:98 checksum:87cb76e3f8
 d4 2
 a5 2
-! Last modified: Thu, 07 May 2026 14:42:47 +0000
-! Diff-Path: ../patches/2026.5.7.882.patch#ruadlist
+! Last modified: Thu, 07 May 2026 20:22:21 +0000
+! Diff-Path: ../patches/2026.5.7.1222.patch#ruadlist
 a244 1
 ||adlook.tv^$third-party
 d6735 1
@@ -19,6 +19,7 @@ d15264 1
 a17147 1
 osnmedia.ru##.logo1000
 d18072 2
+d19571 1
 a20326 1
 mt.today##a[href^="https://www.komus.ru/katalog/"]
 d20428 1
@@ -28,6 +29,8 @@ bina.az,bitpump.ru,botanichka.ru,chem21.info,enovosty.com,ogorodnik.com,orelgrad
 d21546 1
 a21546 1
 spletnik.ru##div[id^="side_ads_"]
+a21818 1
+fastpic.org##i[tabindex][role]
 d22398 2
 a22399 2
 ||static.dzeninfra.ru/s3/zen-apps/news-site/*/*/$script
@@ -57,7 +60,9 @@ a23662 1
 ||static.*.tribuna.com/_next/static/chunks/3340.a9e1afb602402a44.js
 d23745 1
 a23745 1
-ya.ru##section[style*="-cekktion-items-count:"]
+ya.ru##section[style*="ekktion-items-count:"]
+a23904 1
+dzen.ru##.mini-suggest__popup-extra
 d26217 1
 a26842 1
 aniqit.com,kodik.cc,kodik.info,kodikdb.com,kodikplayer.com##.fp-message .second-message
@@ -66,7 +71,23 @@ a28147 1
 repack.me##main > div:style(padding-top: 0 !important; margin-top: 0 !important)
 d28492 1
 a28492 1
-ya.ru##[id^="r"][id*="yt"][id*="m-f"][id$="d"]
+ya.ru##[id^="r"][id*="yt"][id*="m-f"]
+d28528 1
+d28560 2
+a28561 2
+dzen.ru##[aria-label*="тран"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id]
+dzen.ru##[aria-label*="тран"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not(:last-child):not([aria-label])
+d28570 1
+a28570 1
+dzen.ru##div[class^="news-"][style="margin-top: 0px; height: calc(99.99% - 0px);"]
+a28576 1
+dzen.ru##div[style*="12.3626373626373"]
+d28896 1
+a28898 1
+dzen.ru##+js(abort-on-property-read, Object.prototype.UserBlocking)
+d29181 1
+a29181 1
+fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /adsterra|base64|decodeURIComponent|Math.rnd/)
 d29326 1
 a29326 1
 dtf.ru,vc.ru##.comment-media .andropov-video video:remove-attr(autoplay)

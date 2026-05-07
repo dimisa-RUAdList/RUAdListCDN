@@ -1,29 +1,56 @@
-diff name:ruadlist lines:31 checksum:999d69aea9
+diff name:ruadlist lines:58 checksum:87cb76e3f8
 d4 2
 a5 2
-! Last modified: Thu, 07 May 2026 14:42:47 +0000
-! Diff-Path: ../patches/2026.5.7.882.patch#ruadlist
+! Last modified: Thu, 07 May 2026 20:22:21 +0000
+! Diff-Path: ../patches/2026.5.7.1222.patch#ruadlist
 a11288 1
 ||botanichka.ru/wp-content/uploads/sbl-assets/
 d11333 1
 a13563 1
 ||vipapi.org/*.xml?$xmlhttprequest
 d15266 1
+d19572 1
 d21313 1
 a21313 1
 bina.az,bitpump.ru,botanichka.ru,chem21.info,enovosty.com,ogorodnik.com,orelgrad.ru,propozitsiya.com,qafqazinfo.az,snow-motion.ru,stadion.uz,tap.az,turbo.az,uralpress.ru##div[id*="banner"]
 d21547 1
 a21547 1
 spletnik.ru##div[id^="side_ads_"]
+a21819 1
+fastpic.org##i[tabindex][role]
 d23534 2
 a23535 1
 repack.me#?#div:first-child > .panel:-abp-has(> .panel-body > p > a)
 a23537 2
 ||telegram.me/neovpnbot?$third-party,popup
 ||waicore.com^$third-party,popup
+d23749 1
+a23749 1
+ya.ru##section[style*="ekktion-items-count:"]
+a23908 1
+dzen.ru##.mini-suggest__popup-extra
 d26221 1
 a26846 1
 aniqit.com,kodik.cc,kodik.info,kodikdb.com,kodikplayer.com##.fp-message .second-message
+d28496 1
+a28496 1
+ya.ru##[id^="r"][id*="yt"][id*="m-f"]
+d28532 1
+d28564 2
+a28565 2
+dzen.ru##[aria-label*="тран"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id]
+dzen.ru##[aria-label*="тран"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not(:last-child):not([aria-label])
+d28574 1
+a28574 1
+dzen.ru##div[class^="news-"][style="margin-top: 0px; height: calc(99.99% - 0px);"]
+a28580 1
+dzen.ru##div[style*="12.3626373626373"]
+d28900 1
+a28902 1
+dzen.ru##+js(abort-on-property-read, Object.prototype.UserBlocking)
+d29185 1
+a29185 1
+fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /adsterra|base64|decodeURIComponent|Math.rnd/)
 d29330 1
 a29330 1
 dtf.ru,vc.ru##.comment-media .andropov-video video:remove-attr(autoplay)
