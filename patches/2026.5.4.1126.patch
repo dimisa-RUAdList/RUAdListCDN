@@ -1,8 +1,8 @@
-diff name:ruadlist lines:71 checksum:f513a6d24c
+diff name:ruadlist lines:68 checksum:41ac2f4712
 d4 2
 a5 2
-! Last modified: Fri, 08 May 2026 06:05:35 +0000
-! Diff-Path: ../patches/2026.5.8.365.patch#ruadlist
+! Last modified: Fri, 08 May 2026 11:40:26 +0000
+! Diff-Path: ../patches/2026.5.8.700.patch#ruadlist
 a244 1
 ||adlook.tv^$third-party
 d6735 1
@@ -13,7 +13,14 @@ a13166 1
 ||spdmpgcdn.com/veoveo-creative/
 a13562 1
 ||vipapi.org/*.xml?$xmlhttprequest
+d14293 1
 d15265 1
+a17381 2
+repack.me##.my > .ads
+repack.me##.my > .ads + br
+a17407 1
+fastpic.org##.navbar > div:not([class])
+d17410 1
 d18068 2
 d19573 1
 a20328 1
@@ -24,27 +31,17 @@ bina.az,bitpump.ru,botanichka.ru,chem21.info,enovosty.com,ogorodnik.com,orelgrad
 d21547 1
 a21547 1
 spletnik.ru##div[id^="side_ads_"]
-a21819 1
-fastpic.org##i[tabindex][role]
-a23532 7
-! REPAK.me
-repack.me#?#div:first-child > .panel:-abp-has(> .panel-body > p > a)
-! блокировки, добавленные из-за агрессивного обхода >
-||t.me/neovpnbot?$third-party,popup
-||telegram.me/neovpnbot?$third-party,popup
-||waicore.com^$third-party,popup
-||waicore.net^$third-party,popup
 d23743 1
 a23743 1
 ya.ru##section[style*="ekktion-items-count:"]
 a23902 1
-dzen.ru##.mini-suggest__popup-extra
+dzen.ru##.mini-suggest__popup-extra .slices
 d26215 1
 a26840 1
 aniqit.com,kodik.cc,kodik.info,kodikdb.com,kodikplayer.com##.fp-message .second-message
 d28145 1
 a28145 1
-repack.me##main > div:style(padding-top: 0 !important; margin-top: 0 !important)
+repack.me##html:not(.admin) > body > main > div:style(padding-top: 0 !important; margin-top: 0 !important)
 d28490 1
 a28490 1
 ya.ru##[id^="r"][id*="yt"][id*="m-f"]
@@ -63,7 +60,7 @@ a28896 1
 dzen.ru##+js(abort-on-property-read, Object.prototype.UserBlocking)
 d29179 1
 a29179 1
-fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /adsterra|base64|decodeURIComponent|Math.rnd/)
+fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /adsterra|decodeURIComponent|Math.rnd|window._/)
 d29324 1
 a29324 1
 dtf.ru,vc.ru##.comment-media .andropov-video video:remove-attr(autoplay)

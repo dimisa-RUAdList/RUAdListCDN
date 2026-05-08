@@ -1,28 +1,25 @@
-diff name:ruadlist lines:43 checksum:f513a6d24c
+diff name:ruadlist lines:40 checksum:41ac2f4712
 d4 2
 a5 2
-! Last modified: Fri, 08 May 2026 06:05:35 +0000
-! Diff-Path: ../patches/2026.5.8.365.patch#ruadlist
+! Last modified: Fri, 08 May 2026 11:40:26 +0000
+! Diff-Path: ../patches/2026.5.8.700.patch#ruadlist
+d14295 1
+a17382 2
+repack.me##.my > .ads
+repack.me##.my > .ads + br
+a17408 1
+fastpic.org##.navbar > div:not([class])
+d17411 1
 d19572 1
-a21819 1
-fastpic.org##i[tabindex][role]
-d23534 2
-a23535 1
-repack.me#?#div:first-child > .panel:-abp-has(> .panel-body > p > a)
-d23537 2
-a23538 4
-||t.me/neovpnbot?$third-party,popup
-||telegram.me/neovpnbot?$third-party,popup
-||waicore.com^$third-party,popup
-||waicore.net^$third-party,popup
+d23533 6
 d23749 1
 a23749 1
 ya.ru##section[style*="ekktion-items-count:"]
 a23908 1
-dzen.ru##.mini-suggest__popup-extra
+dzen.ru##.mini-suggest__popup-extra .slices
 d28151 1
 a28151 1
-repack.me##main > div:style(padding-top: 0 !important; margin-top: 0 !important)
+repack.me##html:not(.admin) > body > main > div:style(padding-top: 0 !important; margin-top: 0 !important)
 d28496 1
 a28496 1
 ya.ru##[id^="r"][id*="yt"][id*="m-f"]
@@ -41,4 +38,4 @@ a28902 1
 dzen.ru##+js(abort-on-property-read, Object.prototype.UserBlocking)
 d29185 1
 a29185 1
-fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /adsterra|base64|decodeURIComponent|Math.rnd/)
+fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /adsterra|decodeURIComponent|Math.rnd|window._/)

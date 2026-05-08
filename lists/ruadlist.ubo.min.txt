@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 08 May 2026 06:05:35 +0000
-! Diff-Path: ../patches/2026.5.8.365.patch#ruadlist
+! Last modified: Fri, 08 May 2026 11:40:26 +0000
+! Diff-Path: ../patches/2026.5.8.700.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -14292,7 +14292,6 @@ megalyrics.ru###header_bottom
 sitepartners.ru###header_center
 radidomapro.ru###header_partenaire
 pesiq.ru###header_right_cell
-fastpic.org###headermenu a[target="_blank"]
 gzt-sv.ru###headerq
 bigkyiv.com.ua###headlessui-portal-root
 chess-samara.ru###headlineAdv
@@ -17380,6 +17379,8 @@ videochart.net##.mv-advert-position
 moevideo.net,playvideolink.com,thesame.tv,videochart.net##.mv-advert-position__pause
 beremennost.net,imolodost.com,menportal.info,nmedic.info##.mv-content
 infosmi.net#?#.mvp-widget-home-title:-abp-contains(Реклама)
+repack.me##.my > .ads
+repack.me##.my > .ads + br
 glavred.info,glavred.net,teleport2001.ru##.my-3
 ip.osnova.news##.my-4
 mymsk.online##.my-5
@@ -17406,9 +17407,9 @@ drive.ru##.nav-menu > li > a[href][target="_blank"]
 webmasters.ru##.nav_we > a:not([href^="http://webmasters.ru/"]):not([href^="/"]):not([href^="."])
 forum.soft4dle.com##.navbar > br
 forum.soft4dle.com##.navbar > center
+fastpic.org##.navbar > div:not([class])
 nalogikz.kz##.navbar-fixed-bottom
 newkaliningrad.ru##.navbar-nav > .important
-fastpic.org##.navbar-nav > a[target="_blank"]
 forum.fonarevka.ru##.navbar_banners
 srtclub.ru##.navbar_notice a[href][target="_blank"]
 mobile-review.com##.navmenu__advert
@@ -21816,7 +21817,6 @@ comss.ru##html:not([style]) > body getsitecontrol-widget:not(#getsitecontrol-766
 4pda.to##html[style] > body[style="background-color: rgb(230, 231, 233) !important;"] [id][class][style^="overflow: hidden; height:"] > div[style*="display: block;"]
 4pda.to##html[style] > body[style="background-color: rgb(230, 231, 233) !important;"] article ~ article:nth-child(3)
 4pda.to##html[style] > body[style="background-color: rgb(230, 231, 233) !important;"] article:not([id]):not([itemid]):first-child + article
-fastpic.org##i[tabindex][role]
 s13.ru##iframe[data-src*="/icontent/"]
 sarov.info##iframe[data-src*="/reklama."]
 ek.ua,m.ua##iframe[name*="banner"]
@@ -23530,13 +23530,6 @@ rbc.ru##div[class^="styles_okko"]
 ||s0.rbk.ru/v6_top_pics/media/img/2/89/347628703693892.svg
 ||utro.ru/*/banners/
 ||zoom.cnews.ru/inc/bpic/
-! REPAK.me
-repack.me#?#div:first-child > .panel:-abp-has(> .panel-body > p > a)
-! блокировки, добавленные из-за агрессивного обхода >
-||t.me/neovpnbot?$third-party,popup
-||telegram.me/neovpnbot?$third-party,popup
-||waicore.com^$third-party,popup
-||waicore.net^$third-party,popup
 ! Spaces и зеркала
 google-cloud.services,spac.me,spaces.im,spcs.bio,strip2.co,strip2.*,usersporn.com###sidebar > div[class]:last-child
 google-cloud.services,spac.me,spaces.im,spcs.bio,strip2.co,strip2.*,usersporn.com###siteContent > div:not([id]):not([class]) ~ div[class]
@@ -23907,7 +23900,7 @@ tv.yandex.ru,tv.yandex.*##script[nonce] + script[nonce] + div[class]
 ! Дзен Yandex-edition
 dzen.ru###branded-banner
 dzen.ru##.adv-skeleton___main
-dzen.ru##.mini-suggest__popup-extra
+dzen.ru##.mini-suggest__popup-extra .slices
 dzen.ru##[aria-label^="Peкл"]
 dzen.ru##[aria-label^="Карточк"][aria-label*=" p"][aria-label*="кл"]
 dzen.ru##[aria-label^="Карточк"][aria-label*=" рекл"]
@@ -28150,7 +28143,7 @@ regnum.news,regnum.ru##.page-column > .right-adv-container:style(top: 100px !imp
 mag.relax.by##.b-global-branding[branding_url*=http] .b-global-wrap:style(cursor: auto !important)
 mag.relax.by##.b-global-wrap > .b-global-offset:style(padding: unset !important)
 ! ---
-repack.me##main > div:style(padding-top: 0 !important; margin-top: 0 !important)
+repack.me##html:not(.admin) > body > main > div:style(padding-top: 0 !important; margin-top: 0 !important)
 ! ---
 reshebnik.com##div[id*="-error-page"] > p:style(height: 0 !important; opacity: 0 !important)
 ! ---
@@ -29184,7 +29177,7 @@ ya.ru##+js(remove-node-text, a, /Установите Яндекс Браузе�
 ya.ru##+js(remove-node-text, div, 'ad-mark__b-unit')
 nullcms.ru##+js(remove-node-text, script, 'decodeURIComponent(escape')
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /A.d.b.|Adb-|A-d-b-|-Gua|dGua|dblo|tick|Адгу-/)
-fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /adsterra|base64|decodeURIComponent|Math.rnd/)
+fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /adsterra|decodeURIComponent|Math.rnd|window._/)
 tapochek.net##+js(remove-node-text, script, /document.head.appendChild|document.referrer/)
 inforesist.org##+js(remove-node-text, script, /gtag\('event'/)
 questtime.net##+js(remove-node-text, script, MsgNoAD)
