@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 08 May 2026 11:40:26 +0000
-! Diff-Path: ../patches/2026.5.8.700.patch#ruadlist
+! Last modified: Fri, 08 May 2026 17:40:48 +0000
+! Diff-Path: ../patches/2026.5.8.1060.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -9183,7 +9183,7 @@ me##td[background^="//cdn.livetv"] tr > td[valign="top"] + td[align="right"]
 ##.a-buttons.green-but.a-clock
 ##div[style="width: 252px; height: 450px; position: fixed; right: 0px; top: 0px; overflow: hidden; z-index: 10000;"]
 ! *** ./advblock/popup.txt ***
-$popup,domain=176.114.0.126|176.114.0.132|37.220.36.15|assiatv.com|cdnpotok.com|cdntvpotok.com|freescreens.ru|imgbase.ru|imgcach.ru|imgclick.ru|kolikbolik.top|oneliketv.com|payforpic.ru|picclick.ru|picclock.ru|picforall.ru|protonvideo.to|telecdn.net|tv-assia.org
+$popup,domain=176.114.0.126|176.114.0.132|37.220.36.15|assiatv.com|cdnpotok.com|cdntvpotok.com|fastpic.org|freescreens.ru|imgbase.ru|imgcach.ru|imgclick.ru|kolikbolik.top|oneliketv.com|payforpic.ru|picclick.ru|picclock.ru|picforall.ru|protonvideo.to|telecdn.net|tv-assia.org
 $third-party,popup,domain=2ip.ru
 &utm_campaign=$popup,domain=itc.ua|sc2tv.ru|www.film.ru
 /*utm_$popup,domain=stratege.ru
@@ -9379,6 +9379,7 @@ $third-party,popup,domain=2ip.ru
 ||dominantroute.com^$popup
 ||download/*rd.php?id=$third-party,popup
 ||drako.ru/refredirect$popup
+||dsbuiu.com^$popup
 ||dxasracer.bid^$popup
 ||dyshagi.ru^$popup
 ||earnshill.com/images/sp/$popup
@@ -29177,7 +29178,7 @@ ya.ru##+js(remove-node-text, a, /Установите Яндекс Браузе�
 ya.ru##+js(remove-node-text, div, 'ad-mark__b-unit')
 nullcms.ru##+js(remove-node-text, script, 'decodeURIComponent(escape')
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /A.d.b.|Adb-|A-d-b-|-Gua|dGua|dblo|tick|Адгу-/)
-fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /adsterra|decodeURIComponent|Math.rnd|window._/)
+fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /adsterra|decodeURIComponent|document.cookie|Math.rnd|window._/)
 tapochek.net##+js(remove-node-text, script, /document.head.appendChild|document.referrer/)
 inforesist.org##+js(remove-node-text, script, /gtag\('event'/)
 questtime.net##+js(remove-node-text, script, MsgNoAD)

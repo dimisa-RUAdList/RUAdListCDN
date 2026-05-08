@@ -1,11 +1,16 @@
-diff name:ruadlist lines:66 checksum:41ac2f4712
+diff name:ruadlist lines:71 checksum:0bc99d74c6
 d4 2
 a5 2
-! Last modified: Fri, 08 May 2026 11:40:26 +0000
-! Diff-Path: ../patches/2026.5.8.700.patch#ruadlist
+! Last modified: Fri, 08 May 2026 17:40:48 +0000
+! Diff-Path: ../patches/2026.5.8.1060.patch#ruadlist
 a244 1
 ||adlook.tv^$third-party
 d6735 1
+d9186 1
+a9186 1
+$popup,domain=176.114.0.126|176.114.0.132|37.220.36.15|assiatv.com|cdnpotok.com|cdntvpotok.com|fastpic.org|freescreens.ru|imgbase.ru|imgcach.ru|imgclick.ru|kolikbolik.top|oneliketv.com|payforpic.ru|picclick.ru|picclock.ru|picforall.ru|protonvideo.to|telecdn.net|tv-assia.org
+a9381 1
+||dsbuiu.com^$popup
 a11288 1
 ||botanichka.ru/wp-content/uploads/sbl-assets/
 d11333 1
@@ -58,7 +63,7 @@ a28901 1
 dzen.ru##+js(abort-on-property-read, Object.prototype.UserBlocking)
 d29184 1
 a29184 1
-fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /adsterra|decodeURIComponent|Math.rnd|window._/)
+fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /adsterra|decodeURIComponent|document.cookie|Math.rnd|window._/)
 d29329 1
 a29329 1
 dtf.ru,vc.ru##.comment-media .andropov-video video:remove-attr(autoplay)
