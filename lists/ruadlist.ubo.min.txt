@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 09 May 2026 10:14:29 +0000
-! Diff-Path: ../patches/2026.5.9.614.patch#ruadlist
+! Last modified: Sat, 09 May 2026 16:01:50 +0000
+! Diff-Path: ../patches/2026.5.9.961.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10721,7 +10721,7 @@ $xmlhttprequest,domain=happy-biock.info|happy-block.info|howto-news.info|mschist
 /ajax/hitsadv.php?$domain=newsomsk.ru|omskregion.info
 /anbaplashka.jpg$domain=sportcast.online
 /api*iframe$subdocument,domain=intermusic.name|iplayer.info|ipleer.fm
-/api/*/ads-banners$domain=limehd.tv|litehd.tv|pervyi-tv.online|russia-tv.online
+/api/*/ads$xmlhttprequest,domain=limehd.tv|litehd.tv|pervyi-tv.online|russia-tv.online
 /api/*/ainfo/*$domain=igromania.ru|kanobu.ru
 /api/ad/*$domain=lampa.mx
 /api/branding/*$domain=lalafo.az|lalafo.kg
