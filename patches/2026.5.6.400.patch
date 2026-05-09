@@ -1,8 +1,8 @@
-diff name:ruadlist lines:71 checksum:44bb07d810
+diff name:ruadlist lines:83 checksum:bf68944c2d
 d4 2
 a5 2
-! Last modified: Sat, 09 May 2026 03:49:51 +0000
-! Diff-Path: ../patches/2026.5.9.229.patch#ruadlist
+! Last modified: Sat, 09 May 2026 10:14:29 +0000
+! Diff-Path: ../patches/2026.5.9.614.patch#ruadlist
 a244 1
 ||adlook.tv^$third-party
 d6735 1
@@ -40,11 +40,17 @@ ya.ru##section[style*="ekktion-items-count:"]
 a23907 1
 dzen.ru##.mini-suggest__popup-extra .slices
 d26220 1
+a26773 1
+evribiont.ru#@#.AdSense
 a26845 1
 aniqit.com,kodik.cc,kodik.info,kodikdb.com,kodikplayer.com##.fp-message .second-message
 d28150 1
 a28150 1
 repack.me##html:not(.admin) > body > main > div:style(padding-top: 0 !important; margin-top: 0 !important)
+d28307 2
+a28308 2
+stratege.ru###globalcontent:style(margin-top: 0 !important; padding-top: 0 !important)
+stratege.ru##.above_body:style(margin-bottom: 0 !important)
 d28495 1
 a28495 1
 ya.ru##[id^="r"][id*="yt"][id*="m-f"]
@@ -61,12 +67,18 @@ dzen.ru##div[style*="12.3626373626373"]
 d28899 1
 a28901 1
 dzen.ru##+js(abort-on-property-read, Object.prototype.UserBlocking)
+a29162 1
+evribiont.ru##+js(prevent-setTimeout, adTestElement)
+a29164 1
+fastpic.org,~new.fastpic.org##+js(prevent-window-open)
 d29184 1
 a29184 1
-fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /adsterra|decodeURIComponent|document.cookie|Math.rnd|window._/)
+fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /ABN|adsterra|generateContent|Math.rnd|parseInt|window.open/)
 d29329 1
 a29329 1
 dtf.ru,vc.ru##.comment-media .andropov-video video:remove-attr(autoplay)
 d29343 1
 a29343 1
 dtf.ru,vc.ru##.media .andropov-video video:remove-attr(autoplay)
+a29407 1
+fastpic.org,~new.fastpic.org##a[href="https://static.fastpic.ru/FastPicUploader.apk"]:remove-attr(target)

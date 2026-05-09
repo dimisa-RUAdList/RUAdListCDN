@@ -1,8 +1,8 @@
-diff name:ruadlist lines:66 checksum:44bb07d810
+diff name:ruadlist lines:78 checksum:bf68944c2d
 d4 2
 a5 2
-! Last modified: Sat, 09 May 2026 03:49:51 +0000
-! Diff-Path: ../patches/2026.5.9.229.patch#ruadlist
+! Last modified: Sat, 09 May 2026 10:14:29 +0000
+! Diff-Path: ../patches/2026.5.9.614.patch#ruadlist
 d9186 1
 a9186 1
 $popup,domain=176.114.0.126|176.114.0.132|37.220.36.15|assiatv.com|cdnpotok.com|cdntvpotok.com|fastpic.org|freescreens.ru|imgbase.ru|imgcach.ru|imgclick.ru|kolikbolik.top|oneliketv.com|payforpic.ru|picclick.ru|picclock.ru|picforall.ru|protonvideo.to|telecdn.net|tv-assia.org
@@ -35,11 +35,17 @@ ya.ru##section[style*="ekktion-items-count:"]
 a23908 1
 dzen.ru##.mini-suggest__popup-extra .slices
 d26221 1
+a26774 1
+evribiont.ru#@#.AdSense
 a26846 1
 aniqit.com,kodik.cc,kodik.info,kodikdb.com,kodikplayer.com##.fp-message .second-message
 d28151 1
 a28151 1
 repack.me##html:not(.admin) > body > main > div:style(padding-top: 0 !important; margin-top: 0 !important)
+d28308 2
+a28309 2
+stratege.ru###globalcontent:style(margin-top: 0 !important; padding-top: 0 !important)
+stratege.ru##.above_body:style(margin-bottom: 0 !important)
 d28496 1
 a28496 1
 ya.ru##[id^="r"][id*="yt"][id*="m-f"]
@@ -56,12 +62,18 @@ dzen.ru##div[style*="12.3626373626373"]
 d28900 1
 a28902 1
 dzen.ru##+js(abort-on-property-read, Object.prototype.UserBlocking)
+a29163 1
+evribiont.ru##+js(prevent-setTimeout, adTestElement)
+a29165 1
+fastpic.org,~new.fastpic.org##+js(prevent-window-open)
 d29185 1
 a29185 1
-fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /adsterra|decodeURIComponent|document.cookie|Math.rnd|window._/)
+fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /ABN|adsterra|generateContent|Math.rnd|parseInt|window.open/)
 d29330 1
 a29330 1
 dtf.ru,vc.ru##.comment-media .andropov-video video:remove-attr(autoplay)
 d29344 1
 a29344 1
 dtf.ru,vc.ru##.media .andropov-video video:remove-attr(autoplay)
+a29408 1
+fastpic.org,~new.fastpic.org##a[href="https://static.fastpic.ru/FastPicUploader.apk"]:remove-attr(target)
