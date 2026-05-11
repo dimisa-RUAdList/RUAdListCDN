@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 11 May 2026 12:19:14 +0000
-! Diff-Path: ../patches/2026.5.11.739.patch#ruadlist
+! Last modified: Mon, 11 May 2026 18:01:36 +0000
+! Diff-Path: ../patches/2026.5.11.1081.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -5433,7 +5433,6 @@
 ||s1venus.com^$third-party
 ||s1venus.org^$third-party
 ||s1vesta.com^$third-party
-||s2517.com^$third-party
 ||s2normal.com^$third-party
 ||s2r.tut.by^
 ||s37click.fun^$third-party
@@ -5620,7 +5619,6 @@
 ||silvermob.com^$third-party
 ||simbad.pro^$third-party
 ||simofor.ru^$third-party
-||simplejsmenu.com^$third-party
 ||sinfosi.ru^$third-party
 ||sionotti.ru^$third-party
 ||siresuperm.bid^$third-party
@@ -23839,6 +23837,7 @@ yandex.ru,yandex.*#?#html[class*=" Theme_color_news-"] div[class*="_type_native"
 ! Яндекс.Афиша
 afisha.yandex.ru,afisha.yandex.*##.adfox
 afisha.yandex.ru,afisha.yandex.*##.afisha-profit-banner
+afisha.yandex.ru,afisha.yandex.*##.top-branding-holder
 afisha.yandex.ru,afisha.yandex.*##div[data-banner-id]
 afisha.yandex.ru,afisha.yandex.*#?#div[data-component="Grid__Page"]:-abp-has(> div > div.adfox[id])
 ! Яндекс.Видео
