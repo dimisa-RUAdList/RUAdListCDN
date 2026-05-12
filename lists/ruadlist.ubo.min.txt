@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 12 May 2026 06:44:30 +0000
-! Diff-Path: ../patches/2026.5.12.404.patch#ruadlist
+! Last modified: Tue, 12 May 2026 12:05:46 +0000
+! Diff-Path: ../patches/2026.5.12.725.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -6687,6 +6687,7 @@
 ||vinregle.com^
 ||vioturallis.com^$third-party
 ||vip-click.biz^$third-party
+||vipapi.org^$third-party
 ||viparchive1.ru^$third-party
 ||vipavf.com^$third-party
 ||vipsearch.guru^$third-party
@@ -12947,6 +12948,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||rsload.net/images*/appwizard.
 ||rss-script.ru^$domain=vk-cc.com
 ||rstprgapipt.com/*.xml?$xmlhttprequest
+||rstprgapipt.com/api-integration/
 ||rt-ddd.ru/image/banner/
 ||rt.com/scripts/adfox/
 ||rtg.real-vin.com/
@@ -13328,6 +13330,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||telekomza.ru/wp-content/uploads/$object
 ||telik.top^*randomator.js
 ||temptcdn.com/*.xml?$xmlhttprequest
+||temptcdn.com/api-integration/
 ||tengrinews.kz/js/loader.js
 ||teremok.org.ua/partner/images/
 ||ternopillive.com/wp-content/uploads/*.mp4|
@@ -13558,7 +13561,6 @@ igdz1.ru^$script,domain=igdz.ru
 ||videouroki.net^$domain=kopilkaurokov.ru
 ||vikna.if.ua/assets/upload/banner/
 ||viknaodessa.od.ua/baner468
-||vipapi.org/*.xml?$xmlhttprequest
 ||vipidei.com/wp-json/
 ||vipk-cache.cdnvideo.ru/
 ||viplist.fun/yandex
@@ -14654,7 +14656,6 @@ novate.ru###right > .bordered ~ .bordered ~ .bordered
 filmitorrent.net,utorr.cc###right > .colorstrip
 n71.ru###right > .nofloat
 sun-news.ru###right > .sideblock > :not(#vk_groups):not(.fb-page)
-kinokong.sk###right > div[style*="height:"][style*="255px"]
 itnews.com.ua###right > div[style^="height:"]
 novate.ru###right > h2 ~ div + br + br + h2
 novate.ru#?##right > h2:-abp-contains(Рекомендуем)
@@ -22421,7 +22422,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=levik.blog|livejournal.c
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
 ||ng72.ru^$csp=script-src 'self' 'unsafe-eval' https:
-||pikabu.ru/ajax/*?pwX1U=$xmlhttprequest
+||pikabu.ru/ajax/*?o45Tr=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -27579,6 +27580,8 @@ hdkinozzoro.ru##body:not(#id):style(padding-top: 0 !important)
 ! HDREZKA
 ac,ag,biz,buzz,by,city,club,co,com,fi,in,ink,kim,loan,me,name,net,org,pub,rest,run,sh,si,so,space,su,today,tv,vip,website,win##body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"] > [id$="er"]:nth-child(-n+3):style(width: unset !important)
 ac,ag,biz,buzz,by,city,club,co,com,fi,in,ink,kim,loan,me,name,net,org,pub,rest,run,sh,si,so,space,su,today,tv,vip,website,win##body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"]:style(padding-top: 0 !important; background-color: inherit !important)
+! Моносериальные домены HDrezka
+net##body.branded:not([id]):not([style]) > #wrapper:not([class]):not([style]):style(margin-top: unset !important)
 ! ---
 hdrezka.inc,rezka.biz##.container > #content:style(margin-top: unset !important)
 ! ---
@@ -27726,7 +27729,7 @@ kino.video,tasix.me##.publisher-name > [id^="blink"]:style(-webkit-animation: no
 ! ---
 kinoakter.net##body > div[class^="wrapper"]:style(margin-top: 0 !important)
 ! ---
-kinokong.sk,kinokrad.net###wrapper:not(#id):style(margin-top: 67px !important)
+kinokong.li,kinokrad.cc###wrapper:not(#id):style(margin-top: 67px !important)
 kinokrad.my##body > div[style^="height:"]:style(height: auto !important)
 ! ---
 kinokladovka.com##.b-background:style(background: none !important; padding-top: 0 !important)
@@ -29093,7 +29096,7 @@ muzlan.top##+js(nano-setInterval-booster, .numcard)
 mp3crown.cc##+js(nano-setInterval-booster, .time)
 sorokam.ru##+js(nano-setInterval-booster, .track-download__timer)
 bitshare.link##+js(nano-setInterval-booster, closeWait, 1800)
-kinogo-720.net,kinokong.sk,uakino.best,win-lite.site##+js(nano-setInterval-booster, countdown)
+kinogo-720.net,kinokong.li,uakino.best,win-lite.site##+js(nano-setInterval-booster, countdown)
 startgamer.ru##+js(nano-setInterval-booster, js-game-loader-block, 1000, 0.0001)
 3mod.ru,iblitzmods.ru##+js(nano-setInterval-booster, ks_counter)
 wowskill.ru##+js(nano-setInterval-booster, p)
@@ -29235,7 +29238,7 @@ retail.ru##+js(set-constant, Object.prototype.detectBlockAds, noopFunc)
 embed.twitch.tv,player.twitch.tv##+js(set-constant, Object.prototype.disableAutoplay, true)
 www.mos.ru##+js(set-constant, Object.prototype.disablePaste, false)
 1tv.ru##+js(set-constant, Object.prototype.disableSeek, noopFunc)
-kinokong.sk##+js(set-constant, Object.prototype.disableSelection, noopFunc)
+kinokong.li##+js(set-constant, Object.prototype.disableSelection, noopFunc)
 dzen.ru,frontend.vh.yandex.ru##+js(set-constant, Object.prototype.getAutoplay, noopFunc)
 shedevrum.ai##+js(set-constant, Object.prototype.getUaasConfig, undefined)
 frontend.vh.yandex.ru##+js(set-constant, Object.prototype.initialAutoplay, null)
