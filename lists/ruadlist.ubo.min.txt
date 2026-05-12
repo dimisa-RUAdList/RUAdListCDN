@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 12 May 2026 12:05:46 +0000
-! Diff-Path: ../patches/2026.5.12.725.patch#ruadlist
+! Last modified: Tue, 12 May 2026 17:19:23 +0000
+! Diff-Path: ../patches/2026.5.12.1039.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21704,7 +21704,7 @@ mozaika.biz#?#div[style]:-abp-has(> a[href]:not([href^="/"]):not([href^="https:/
 kirov-portal.ru#?#div[style]:-abp-has(> ntvk)
 small-games.info#?#div[style]:-abp-has(> p > [href="#hideRekCaption"])
 buhoblik.org.ua##div[style][onclick*="/rizni/"]
-opennet.me,opennet.ru##div[style^="background-color: #E9EAD6; width:100%; height:"]
+opennet.me,opennet.ru##div[style^="background-color: #E9EAD7; width:100%; height:"]
 all-sci.net,bib.social,economics.studio,economuch.com,finbook.news,lawbook.online,lawbooks.news,lib.sale,medinfo.live,myzooplanet.ru,pravo.studio,provse.news,psihologia.biz,sci-lib.biz,sci.house,scicenter.online,textbooks.studio,uchebnikfree.com,xn--80aaivjfyj3e.com##div[style^="background-color: rgb(204, 0, 0)"]
 risovach.ru##div[style^="background: url"]
 xn--c1ajfnfb.xn--p1acf##div[style^="background:"][style*="/ple.jpg)"]
@@ -23744,9 +23744,8 @@ ya.ru,yandex.ru,yandex.*##.main-home-banner
 ya.ru,yandex.ru,yandex.*##.main__block-banner
 ya.ru,yandex.ru,yandex.*##.main__distr-popup
 ya.ru,yandex.ru,yandex.*##.Organic_withPromoOffer
+ya.ru,yandex.ru,yandex.*#?##search-result > [class]:-abp-has(> div.Organic > div a[href*="_crpd"])
 ya.ru,yandex.ru,yandex.*#?#.content__left > #search-result > li:-abp-has(> .Organic_withPromoOffer)
-ya.ru,yandex.ru,yandex.*#?#.content__left > #search-result > li:-abp-has(> div .Organic-Subtitle > span:-abp-contains(/[РPeекламa]{6,7}/))
-ya.ru,yandex.ru,yandex.*#?#.content__left > #search-result > li:-abp-has(> div .organic__subtitle > span:-abp-contains(/[РPeекламa]{6,7}/))
 ya.ru,yandex.ru,yandex.*#?#.content__right div[class]:-abp-has(> div > script)
 ya.ru,yandex.ru,yandex.*#?#.content__right div[class][data-log-node]:-abp-has(.DirectInlineContainer)
 yandex.ru,yandex.*###banner.b-banner__content
@@ -28485,7 +28484,7 @@ ya.ru##.i-mini-bem[style]
 ya.ru,yandex.by,yandex.kz,yandex.uz##.link-bro
 ya.ru##.market-feed
 ya.ru##.reasoning-section
-ya.ru##[action*="/search/"] ~ div[style]
+ya.ru##[action*="/search/"] ~ section + div
 ya.ru##[id^="r"][id*="yt"][id*="m-f"]
 ya.ru##html[class*="_neuro"] aside ~ div[style]
 ya.ru##html[class*="_reaso"] aside ~ div[style]

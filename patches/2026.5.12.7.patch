@@ -1,8 +1,8 @@
-diff name:ruadlist lines:27 checksum:1264f277aa
+diff name:ruadlist lines:36 checksum:1960483091
 d4 2
 a5 2
-! Last modified: Tue, 12 May 2026 12:05:46 +0000
-! Diff-Path: ../patches/2026.5.12.725.patch#ruadlist
+! Last modified: Tue, 12 May 2026 17:19:23 +0000
+! Diff-Path: ../patches/2026.5.12.1039.patch#ruadlist
 a6689 1
 ||vipapi.org^$third-party
 a12949 1
@@ -11,15 +11,24 @@ a13330 1
 ||temptcdn.com/api-integration/
 d13561 1
 d14657 1
+d21706 1
+a21706 1
+opennet.me,opennet.ru##div[style^="background-color: #E9EAD7; width:100%; height:"]
 d22424 1
 a22424 1
 ||pikabu.ru/ajax/*?o45Tr=$xmlhttprequest
+a23745 1
+ya.ru,yandex.ru,yandex.*#?##search-result > [class]:-abp-has(> div.Organic > div a[href*="_crpd"])
+d23747 2
 a27581 2
 ! Моносериальные домены HDrezka
 net##body.branded:not([id]):not([style]) > #wrapper:not([class]):not([style]):style(margin-top: unset !important)
 d27729 1
 a27729 1
 kinokong.li,kinokrad.cc###wrapper:not(#id):style(margin-top: 67px !important)
+d28485 1
+a28485 1
+ya.ru##[action*="/search/"] ~ section + div
 d29096 1
 a29096 1
 kinogo-720.net,kinokong.li,uakino.best,win-lite.site##+js(nano-setInterval-booster, countdown)

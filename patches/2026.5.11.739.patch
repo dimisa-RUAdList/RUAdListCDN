@@ -1,8 +1,8 @@
-diff name:ruadlist lines:31 checksum:1264f277aa
+diff name:ruadlist lines:40 checksum:1960483091
 d4 2
 a5 2
-! Last modified: Tue, 12 May 2026 12:05:46 +0000
-! Diff-Path: ../patches/2026.5.12.725.patch#ruadlist
+! Last modified: Tue, 12 May 2026 17:19:23 +0000
+! Diff-Path: ../patches/2026.5.12.1039.patch#ruadlist
 d5436 1
 d5623 1
 a6691 1
@@ -13,9 +13,15 @@ a13332 1
 ||temptcdn.com/api-integration/
 d13563 1
 d14659 1
+d21708 1
+a21708 1
+opennet.me,opennet.ru##div[style^="background-color: #E9EAD7; width:100%; height:"]
 d22426 1
 a22426 1
 ||pikabu.ru/ajax/*?o45Tr=$xmlhttprequest
+a23747 1
+ya.ru,yandex.ru,yandex.*#?##search-result > [class]:-abp-has(> div.Organic > div a[href*="_crpd"])
+d23749 2
 a23841 1
 afisha.yandex.ru,afisha.yandex.*##.top-branding-holder
 a27582 2
@@ -24,6 +30,9 @@ net##body.branded:not([id]):not([style]) > #wrapper:not([class]):not([style]):st
 d27730 1
 a27730 1
 kinokong.li,kinokrad.cc###wrapper:not(#id):style(margin-top: 67px !important)
+d28486 1
+a28486 1
+ya.ru##[action*="/search/"] ~ section + div
 d29097 1
 a29097 1
 kinogo-720.net,kinokong.li,uakino.best,win-lite.site##+js(nano-setInterval-booster, countdown)
