@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 13 May 2026 06:53:28 +0000
-! Diff-Path: ../patches/2026.5.13.413.patch#ruadlist
+! Last modified: Wed, 13 May 2026 12:18:08 +0000
+! Diff-Path: ../patches/2026.5.13.738.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22391,8 +22391,8 @@ ictv.ua,vikna.tv##div[id^="div-gpt-ad-"]
 ||dzen.ru/articles$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/news$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/pogoda/$script
-||static.dzeninfra.ru/s3/zen-apps/news-site/*/*/$script
-||static.dzeninfra.ru/s3/zen-apps/video-feed/*/*/$script
+||static.dzeninfra.ru/s3/zen-apps/dzen-mobile/*/*/$script
+||static.dzeninfra.ru/s3/zen-apps/mobile/*/*/$script
 $csp=script-src-attr 'none',domain=eurointegration.com.ua|sportanalytic.com|notebookcheck-ru.com
 /^https?://24smi\.org/*[/]*[/][^\s]{8,}/$xmlhttprequest,domain=24smi.org
 ://mail.ru$csp=img-src 'self' https:
@@ -27729,6 +27729,7 @@ kino.video,tasix.me##.publisher-name > [id^="blink"]:style(-webkit-animation: no
 kinoakter.net##body > div[class^="wrapper"]:style(margin-top: 0 !important)
 ! ---
 kinokong.li,kinokrad.cc###wrapper:not(#id):style(margin-top: 67px !important)
+kinokong.day##.wrapper:style(padding-top: 0 !important)
 kinokrad.my##body > div[style^="height:"]:style(height: auto !important)
 ! ---
 kinokladovka.com##.b-background:style(background: none !important; padding-top: 0 !important)

@@ -1,8 +1,8 @@
-diff name:ruadlist lines:36 checksum:7fc6a843ab
+diff name:ruadlist lines:41 checksum:834b0f2b3f
 d4 2
 a5 2
-! Last modified: Wed, 13 May 2026 06:53:28 +0000
-! Diff-Path: ../patches/2026.5.13.413.patch#ruadlist
+! Last modified: Wed, 13 May 2026 12:18:08 +0000
+! Diff-Path: ../patches/2026.5.13.738.patch#ruadlist
 a6689 1
 ||vipapi.org^$third-party
 a12949 1
@@ -14,6 +14,10 @@ d14657 1
 d21706 1
 a21706 1
 opennet.me,opennet.ru##div[style^="background-color: #E9EAD7; width:100%; height:"]
+d22393 2
+a22394 2
+||static.dzeninfra.ru/s3/zen-apps/dzen-mobile/*/*/$script
+||static.dzeninfra.ru/s3/zen-apps/mobile/*/*/$script
 d22424 1
 a22424 1
 ||pikabu.ru/ajax/*?o45Tr=$xmlhttprequest
@@ -24,8 +28,9 @@ a27581 2
 ! Моносериальные домены HDrezka
 net##body.branded:not([id]):not([style]) > #wrapper:not([class]):not([style]):style(margin-top: unset !important)
 d27729 1
-a27729 1
+a27729 2
 kinokong.li,kinokrad.cc###wrapper:not(#id):style(margin-top: 67px !important)
+kinokong.day##.wrapper:style(padding-top: 0 !important)
 d28485 1
 a28485 1
 ya.ru##[action*="/search/"] ~ section + div
