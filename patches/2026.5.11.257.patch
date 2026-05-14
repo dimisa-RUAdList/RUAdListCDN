@@ -1,8 +1,8 @@
-diff name:ruadlist lines:64 checksum:ef54501524
+diff name:ruadlist lines:66 checksum:beeb06dbab
 d4 2
 a5 2
-! Last modified: Thu, 14 May 2026 17:05:45 +0000
-! Diff-Path: ../patches/2026.5.14.1025.patch#ruadlist
+! Last modified: Thu, 14 May 2026 22:17:02 +0000
+! Diff-Path: ../patches/2026.5.14.1337.patch#ruadlist
 a181 1
 ||a.rutube.ru^
 d420 1
@@ -38,6 +38,8 @@ a22396 2
 d22426 1
 a22426 1
 ||pikabu.ru/ajax/*?o45Tr=$xmlhttprequest
+a22456 1
+pikabu.ru##head > style:has-text(min-height:301px;) {remove:true;}
 a22516 1
 pikabu.ru#?#article:-abp-has(> .story__main:not(:-abp-has(*)))
 a23516 1
