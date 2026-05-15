@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 15 May 2026 13:01:10 +0000
-! Diff-Path: ../patches/2026.5.15.781.patch#ruadlist
+! Last modified: Fri, 15 May 2026 19:50:00 +0000
+! Diff-Path: ../patches/2026.5.15.1190.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -12990,6 +12990,8 @@ igdz1.ru^$script,domain=igdz.ru
 ||ruspdd.ru/*.php?$script
 ||ruspicbox.ru/tpl/
 ||ruspicbox.ru^*/clicunder.js
+||rusport.live/wp-content/uploads/*/branding_
+||rusport.live/wp-content/uploads/wpadcenter_uploads/
 ||rusradio.ru/uploads/pixel.js
 ||russian.fi/include/banners.php
 ||russian.rt.com/static/views/wMainBannerTop.
@@ -19539,6 +19541,7 @@ pechera.info##[src*="/storage/banner_upload/"]
 promin.cv.ua##[src*="/uploads/banner"]
 kuban24.tv##[src*="/uploads/banners/"]
 bidbaits.ru##[src*="/uploads/commerce/"]
+rusport.live##[src*="/wpadcenter_uploads/"]
 73online.ru##[src*="://73online.ru/advert/"]
 happymodern.ru##[src*="://pagead2.googlesyndication.com/"]
 hi-fi-forum.net##[src*="_partners/"]
@@ -28189,6 +28192,8 @@ rusnext.ru##.header20-00:style(height: auto !important)
 ! ---
 rusprofile.ru###subscription_banner_root
 rusprofile.ru##body:style(overflow: auto !important)
+! ---
+rusport.live##body:style(padding-top: 0 !important)
 ! ---
 rutr.life,rutracker.lib,rutracker.net,rutracker.org###topic_main > [id^="post_"] ~ .hide-for-print
 rutr.life,rutracker.lib,rutracker.net,rutracker.org###topic_main > [id^="post_"] ~ tbody:not([id^="post_"]) > [class]

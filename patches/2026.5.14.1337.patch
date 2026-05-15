@@ -1,11 +1,19 @@
-diff name:ruadlist lines:10 checksum:0bc1236087
+diff name:ruadlist lines:18 checksum:8b5f902d2f
 d4 2
 a5 2
-! Last modified: Fri, 15 May 2026 13:01:10 +0000
-! Diff-Path: ../patches/2026.5.15.781.patch#ruadlist
+! Last modified: Fri, 15 May 2026 19:50:00 +0000
+! Diff-Path: ../patches/2026.5.15.1190.patch#ruadlist
 d10461 2
 a10462 1
 |http*://fastpic.org/$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' static.fastpic.org; connect-src 'self'; frame-src 'self'
+a12993 2
+||rusport.live/wp-content/uploads/*/branding_
+||rusport.live/wp-content/uploads/wpadcenter_uploads/
+a19542 1
+rusport.live##[src*="/wpadcenter_uploads/"]
 a22518 1
 pikabu.ru#?#article:-abp-has(> .story__left > span:only-child)
 d22521 1
+a28192 2
+! ---
+rusport.live##body:style(padding-top: 0 !important)
