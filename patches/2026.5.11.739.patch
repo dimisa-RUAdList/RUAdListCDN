@@ -1,8 +1,8 @@
-diff name:ruadlist lines:64 checksum:d1dd8cd35b
+diff name:ruadlist lines:70 checksum:b727e229b8
 d4 2
 a5 2
-! Last modified: Fri, 15 May 2026 04:12:59 +0000
-! Diff-Path: ../patches/2026.5.15.252.patch#ruadlist
+! Last modified: Fri, 15 May 2026 08:11:08 +0000
+! Diff-Path: ../patches/2026.5.15.491.patch#ruadlist
 a181 1
 ||a.rutube.ru^
 d420 1
@@ -13,6 +13,9 @@ a6691 1
 d8221 1
 a8221 1
 /tizer/*$domain=~asau.ru|~vkusvill.ru
+d10462 2
+a10463 1
+|http*://fastpic.org/$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' static.fastpic.org; connect-src 'self'; frame-src 'self'
 a11035 1
 ||ajur.info/cgi-bin/ac.fcgi?
 a12951 1
@@ -40,6 +43,9 @@ a22426 1
 ||pikabu.ru/ajax/*?o45Tr=$xmlhttprequest
 a22456 1
 pikabu.ru##head > style:has-text(min-height:301px;) {remove:true;}
+a22513 1
+pikabu.ru#?#article:-abp-has(> .story__left > span:only-child)
+d22516 1
 a22516 1
 pikabu.ru#?#article:-abp-has(> .story__main:not(:-abp-has(*)))
 a23747 1
