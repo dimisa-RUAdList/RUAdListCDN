@@ -1,8 +1,8 @@
-diff name:ruadlist lines:52 checksum:34c13c402e
+diff name:ruadlist lines:67 checksum:183233c6f1
 d4 2
 a5 2
-! Last modified: Sat, 16 May 2026 06:29:56 +0000
-! Diff-Path: ../patches/2026.5.16.389.patch#ruadlist
+! Last modified: Sat, 16 May 2026 11:59:52 +0000
+! Diff-Path: ../patches/2026.5.16.719.patch#ruadlist
 a181 1
 ||a.rutube.ru^
 d420 1
@@ -20,12 +20,15 @@ a12992 2
 a13577 2
 ||vkusvill.ru/upload/ext_assets/mail_ru_top_
 ||vkusvill.ru/upload/ext_assets/targetads.js
+a15710 1
+glavcom.ua##.banner_grid
 a19512 1
 ficbook.net##[src*=".net/banners/"]
 a19538 1
 rusport.live##[src*="/wpadcenter_uploads/"]
 a19573 1
 vkusvill.ru##[title="Яндекс Дзен"]
+d21453 1
 d21707 1
 a21707 1
 opennet.me,opennet.ru##div[style^="background-color: #E9EAD7; width:100%; height:"]
@@ -43,6 +46,8 @@ pikabu.ru#?#article:-abp-has(> .story__main:not(:-abp-has(*)))
 a23746 1
 ya.ru,yandex.ru,yandex.*#?##search-result > [class]:-abp-has(> div.Organic > div a[href*="_crpd"])
 d23748 2
+a26743 1
+@@||www.googletagmanager.com/gtag/js?id=$script,domain=proxyorb.com
 a27732 1
 kinokong.day##.wrapper:style(padding-top: 0 !important)
 a28186 2
@@ -51,3 +56,13 @@ rusport.live##body:style(padding-top: 0 !important)
 d28488 1
 a28488 1
 ya.ru##[action*="/search/"] ~ section + div
+a28515 1
+dzen.ru##div[class*=" dzen-"][style^="--top-padding:"]
+d28522 1
+d28556 2
+a28557 2
+dzen.ru##[aria-label*="тра"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id]
+dzen.ru##[aria-label*="тра"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not(:last-child):not([aria-label])
+d29407 1
+a29407 1
+dzen.ru##article:has(> div:matches-attr(/[a-z0-9]/=/-yp$|direct|mytarget/))

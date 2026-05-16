@@ -1,8 +1,8 @@
-diff name:ruadlist lines:74 checksum:34c13c402e
+diff name:ruadlist lines:89 checksum:183233c6f1
 d4 2
 a5 2
-! Last modified: Sat, 16 May 2026 06:29:56 +0000
-! Diff-Path: ../patches/2026.5.16.389.patch#ruadlist
+! Last modified: Sat, 16 May 2026 11:59:52 +0000
+! Diff-Path: ../patches/2026.5.16.719.patch#ruadlist
 a181 1
 ||a.rutube.ru^
 d420 1
@@ -28,12 +28,15 @@ a13575 2
 ||vkusvill.ru/upload/ext_assets/mail_ru_top_
 ||vkusvill.ru/upload/ext_assets/targetads.js
 d14657 1
+a15709 1
+glavcom.ua##.banner_grid
 a19511 1
 ficbook.net##[src*=".net/banners/"]
 a19537 1
 rusport.live##[src*="/wpadcenter_uploads/"]
 a19572 1
 vkusvill.ru##[title="Яндекс Дзен"]
+d21452 1
 d21706 1
 a21706 1
 opennet.me,opennet.ru##div[style^="background-color: #E9EAD7; width:100%; height:"]
@@ -54,6 +57,8 @@ pikabu.ru#?#article:-abp-has(> .story__main:not(:-abp-has(*)))
 a23745 1
 ya.ru,yandex.ru,yandex.*#?##search-result > [class]:-abp-has(> div.Organic > div a[href*="_crpd"])
 d23747 2
+a26742 1
+@@||www.googletagmanager.com/gtag/js?id=$script,domain=proxyorb.com
 a27581 2
 ! Моносериальные домены HDrezka
 net##body.branded:not([id]):not([style]) > #wrapper:not([class]):not([style]):style(margin-top: unset !important)
@@ -67,9 +72,19 @@ rusport.live##body:style(padding-top: 0 !important)
 d28485 1
 a28485 1
 ya.ru##[action*="/search/"] ~ section + div
+a28512 1
+dzen.ru##div[class*=" dzen-"][style^="--top-padding:"]
+d28519 1
+d28553 2
+a28554 2
+dzen.ru##[aria-label*="тра"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id]
+dzen.ru##[aria-label*="тра"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not(:last-child):not([aria-label])
 d29096 1
 a29096 1
 kinogo-720.net,kinokong.li,uakino.best,win-lite.site##+js(nano-setInterval-booster, countdown)
 d29238 1
 a29238 1
 kinokong.li##+js(set-constant, Object.prototype.disableSelection, noopFunc)
+d29404 1
+a29404 1
+dzen.ru##article:has(> div:matches-attr(/[a-z0-9]/=/-yp$|direct|mytarget/))

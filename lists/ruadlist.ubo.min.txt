@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 16 May 2026 06:29:56 +0000
-! Diff-Path: ../patches/2026.5.16.389.patch#ruadlist
+! Last modified: Sat, 16 May 2026 11:59:52 +0000
+! Diff-Path: ../patches/2026.5.16.719.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -15712,6 +15712,7 @@ livejournal.com,novyny.pro##.banner_container
 autostat.ru##.banner_content
 listaj.ru##.banner_dc
 autodoc.ru##.banner_div
+glavcom.ua##.banner_grid
 camelot.multilocal.ru,camelot.userlan.ru##.banner_header
 mybrazz.club##.banner_holder
 vd-tv.ru##.banner_home
@@ -21457,7 +21458,6 @@ finam.ru##div[id^="cntnt_block_"]
 ku66.ru##div[id^="comp_"]
 mmo13.ru##div[id^="container"]
 site-do.ru#?#div[id^="content_text"] > center:-abp-has(a[href*="myrusakov.ru"])
-glavcom.ua##div[id^="corebanner"]
 spletnik.ru##div[id^="desktop_content_side_banner"]
 spletnik.ru##div[id^="desktop_in_"]
 webdiana.ru##div[id^="diana_"]
@@ -26749,6 +26749,7 @@ gbsmp.ru#@#img[width="728"][height="90"]
 @@||wakanim.tv^*/video/adsunauth$domain=wakanim.tv
 @@||wambacdn.net^$script,domain=love.0629.com.ua|love.mail.ru|mamba.ru|wamba.com
 @@||ww400.smartadserver.com/ac$script,domain=www.deezer.com
+@@||www.googletagmanager.com/gtag/js?id=$script,domain=proxyorb.com
 @@||www.meteoblue.com/build/website/gpt.js|$xmlhttprequest,domain=meteoblue.com
 @@||www3.doubleclick.net/|$xmlhttprequest,domain=animix.lol
 @@||xksqb.com/native.$script,domain=gwss.ru
@@ -28524,13 +28525,13 @@ dzen.ru##a[href*="://yandex.ru/an/count/"]
 dzen.ru##a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div
 dzen.ru##article[data-card-type*="-promo"]
 dzen.ru##body:style(overflow-y: unset !important)
+dzen.ru##div[class*=" dzen-"][style^="--top-padding:"]
 dzen.ru##div[class*="--corner-banner_"]
 dzen.ru##div[class*="-top-of-the-day-ad"]:style(opacity: 0 !important)
 dzen.ru##div[class*="__bannerContainer"]
 dzen.ru##div[class*="dzen-"][class*="-banner-"]
 dzen.ru##div[class*="dzen-desktop--"][class*="__ad-"]
 dzen.ru##div[class*="dzen-desktop--top-sidebar-desktop-ad__root"]
-dzen.ru##div[class^="dzen-desktop--"][style^="--top-padding:"]
 dzen.ru##div[class^="dzen-desktop--content-app__content-"] > div > div:first-child > div:first-child + div:style(opacity: 0 !important; pointer-events: none !important)
 dzen.ru##div[id*="splashscreen"]
 dzen.ru##div[style*="important"] div[class*="__main"]
@@ -28564,8 +28565,8 @@ dzen.ru##.news-rubric-desktop__news > section > div > div[id]
 dzen.ru##.news-secondary-layout-column__secondary div[id]
 dzen.ru##.news-sticky__inner > div > div[id]
 dzen.ru##.news-story-page div[id] > div:not([id]) > div[id]
-dzen.ru##[aria-label*="тран"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id]
-dzen.ru##[aria-label*="тран"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not(:last-child):not([aria-label])
+dzen.ru##[aria-label*="тра"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id]
+dzen.ru##[aria-label*="тра"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not(:last-child):not([aria-label])
 dzen.ru##[aria-label] div[id][class*="-desktop__ad-"]
 dzen.ru##div[class*="AdvertTsar"]
 dzen.ru##div[class*="BrandingAdvertLayoutColumn-"]
@@ -29415,7 +29416,7 @@ gazeta.press,gazeta.ru##^responseheader(location)
 fastpic.org,~new.fastpic.org##a[href="https://static.fastpic.ru/FastPicUploader.apk"]:remove-attr(target)
 aniu.ru,liveball.*##+js(no-setInterval-if, debugger)
 cq.ru#?#article:-abp-has(> div .p__affiliate) a[href^="http"]:not([href*="cq.ru/"]):style(pointer-events: none !important; border-bottom: none !important; color: inherit !important)
-dzen.ru##article:has(> div:matches-attr(/[a-z0-9]/=/_ad-yp|direct|mytarget/))
+dzen.ru##article:has(> div:matches-attr(/[a-z0-9]/=/-yp$|direct|mytarget/))
 autonews.co.ua,in-poland.com,liveball.*,ukrainianwall.com##+js(addEventListener-defuser, /contextmenu|copy|keydown|selectstart/)
 kp.kg,kp.kz,kp.ru,md.kp.media##body > #app div:matches-css(background-color: rgb(225, 231, 235))
 4pda.to##body > #ipbwrapper > script + div > table > tbody > tr > td[width] + td

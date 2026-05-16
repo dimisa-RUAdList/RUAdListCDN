@@ -1,8 +1,8 @@
-diff name:ruadlist lines:35 checksum:34c13c402e
+diff name:ruadlist lines:50 checksum:183233c6f1
 d4 2
 a5 2
-! Last modified: Sat, 16 May 2026 06:29:56 +0000
-! Diff-Path: ../patches/2026.5.16.389.patch#ruadlist
+! Last modified: Sat, 16 May 2026 11:59:52 +0000
+! Diff-Path: ../patches/2026.5.16.719.patch#ruadlist
 a181 1
 ||a.rutube.ru^
 d420 1
@@ -20,10 +20,13 @@ a12992 2
 a13577 2
 ||vkusvill.ru/upload/ext_assets/mail_ru_top_
 ||vkusvill.ru/upload/ext_assets/targetads.js
+a15710 1
+glavcom.ua##.banner_grid
 a19539 1
 rusport.live##[src*="/wpadcenter_uploads/"]
 a19574 1
 vkusvill.ru##[title="Яндекс Дзен"]
+d21454 1
 a22456 1
 pikabu.ru##head > style:has-text(min-height:301px;) {remove:true;}
 a22513 1
@@ -31,6 +34,18 @@ pikabu.ru#?#article:-abp-has(> .story__left > span:only-child)
 d22516 1
 a22516 1
 pikabu.ru#?#article:-abp-has(> .story__main:not(:-abp-has(*)))
-a28186 2
-! ---
+a26743 1
+@@||www.googletagmanager.com/gtag/js?id=$script,domain=proxyorb.com
+a28187 2
 rusport.live##body:style(padding-top: 0 !important)
+! ---
+a28516 1
+dzen.ru##div[class*=" dzen-"][style^="--top-padding:"]
+d28523 1
+d28557 2
+a28558 2
+dzen.ru##[aria-label*="тра"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id]
+dzen.ru##[aria-label*="тра"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not(:last-child):not([aria-label])
+d29408 1
+a29408 1
+dzen.ru##article:has(> div:matches-attr(/[a-z0-9]/=/-yp$|direct|mytarget/))
