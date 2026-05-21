@@ -1,8 +1,8 @@
-diff name:ruadlist lines:88 checksum:13c06ffd1a
+diff name:ruadlist lines:95 checksum:c8160f0c8d
 d4 2
 a5 2
-! Last modified: Wed, 20 May 2026 18:27:06 +0000
-! Diff-Path: ../patches/2026.5.20.1107.patch#ruadlist
+! Last modified: Thu, 21 May 2026 00:14:36 +0000
+! Diff-Path: ../patches/2026.5.21.14.patch#ruadlist
 a5816 1
 ||static.smartframe.io/embed.js$third-party
 d8212 1
@@ -65,6 +65,10 @@ respawn.media#?#p:-abp-contains(Где купить)
 a22107 1
 respawn.media#?#p:-abp-has(> [data-gtag-analytics="click:ya-market-post-link"])
 d22109 1
+d22396 2
+a22397 2
+||static.dzeninfra.ru/s3/zen-apps/dzen-layout/*/*/$script
+||static.dzeninfra.ru/s3/zen-apps/subscriptions/*/*/$script
 d22427 1
 a22427 1
 ||pikabu.ru/ajax/*?Y578t=$xmlhttprequest
@@ -78,6 +82,9 @@ dzen.ru##div[class^="dzen-desktop--"]:first-child > div[class^="dzen-desktop--"]
 dzen.ru##div[class^="dzen-desktop--"]:first-child > div[class^="dzen-desktop--"]:first-child > div[class^="dzen-desktop--"]:first-child + div[class^="dzen-"]:style(border: inherit !important)
 d29014 1
 d29033 1
+d29184 1
+a29184 1
+fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /ABN|adsterra|adManager|atOptions|generateContent|Math.rnd|parseInt|window.open/)
 d29347 1
 d29393 1
 d29410 1

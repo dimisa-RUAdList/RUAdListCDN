@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 20 May 2026 18:27:06 +0000
-! Diff-Path: ../patches/2026.5.20.1107.patch#ruadlist
+! Last modified: Thu, 21 May 2026 00:14:36 +0000
+! Diff-Path: ../patches/2026.5.21.14.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22390,8 +22390,8 @@ ictv.ua,vikna.tv##div[id^="div-gpt-ad-"]
 ||dzen.ru/articles$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/news$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/pogoda/$script
-||static.dzeninfra.ru/s3/zen-apps/dzen-mobile/*/*/$script
-||static.dzeninfra.ru/s3/zen-apps/mobile/*/*/$script
+||static.dzeninfra.ru/s3/zen-apps/dzen-layout/*/*/$script
+||static.dzeninfra.ru/s3/zen-apps/subscriptions/*/*/$script
 $csp=script-src-attr 'none',domain=eurointegration.com.ua|sportanalytic.com|notebookcheck-ru.com
 /^https?://24smi\.org/*[/]*[/][^\s]{8,}/$xmlhttprequest,domain=24smi.org
 ://mail.ru$csp=img-src 'self' https:
@@ -29173,7 +29173,7 @@ ya.ru##+js(remove-node-text, a, /Установите Яндекс Браузе�
 ya.ru##+js(remove-node-text, div, 'ad-mark__b-unit')
 nullcms.ru##+js(remove-node-text, script, 'decodeURIComponent(escape')
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /A.d.b.|Adb-|A-d-b-|-Gua|dGua|dblo|tick|Адгу-/)
-fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /ABN|adsterra|generateContent|Math.rnd|parseInt|window.open/)
+fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /ABN|adsterra|adManager|atOptions|generateContent|Math.rnd|parseInt|window.open/)
 tapochek.net##+js(remove-node-text, script, /document.head.appendChild|document.referrer/)
 inforesist.org##+js(remove-node-text, script, /gtag\('event'/)
 questtime.net##+js(remove-node-text, script, MsgNoAD)
