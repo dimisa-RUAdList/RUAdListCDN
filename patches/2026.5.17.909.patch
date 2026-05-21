@@ -1,8 +1,8 @@
-diff name:ruadlist lines:95 checksum:c87a05b1b6
+diff name:ruadlist lines:108 checksum:d7cf81ee8d
 d4 2
 a5 2
-! Last modified: Thu, 21 May 2026 05:16:27 +0000
-! Diff-Path: ../patches/2026.5.21.316.patch#ruadlist
+! Last modified: Thu, 21 May 2026 09:59:01 +0000
+! Diff-Path: ../patches/2026.5.21.599.patch#ruadlist
 a5816 1
 ||static.smartframe.io/embed.js$third-party
 d8212 1
@@ -22,6 +22,9 @@ d10351 1
 d11426 2
 d14140 1
 d14235 1
+d15298 1
+a15298 1
+almodi.org,expres.online,fightnews.info,kun.uz,liveinternet.ru,respawn.media##.advertisement
 a16294 1
 respawn.media#?#.content-highlight-block:-abp-has(.leading-relaxed > span:-abp-contains(Цена:))
 a16304 3
@@ -72,10 +75,20 @@ a22397 2
 d22427 1
 a22427 1
 ||pikabu.ru/ajax/*?Y578t=$xmlhttprequest
+a22515 2
+pikabu.ru#?#article:-abp-has(> .story__left > .story__pin)
+pikabu.ru#?#article:-abp-has(> .story__left > span:first-child)
+d23741 1
+a23741 1
+ya.ru##section[style*="sectlon-items-count:"]
 d26530 1
 d26744 1
 d27289 2
 d28189 2
+d28492 2
+a28493 2
+ya.ru##[action*="/search/"] ~ aside + div
+ya.ru##[id^="r"][id*="yt"][id*="m"][id*="-"][id*="f"]
 a28526 3
 dzen.ru##div[class^="dzen-desktop--"]:first-child > div[class^="dzen-desktop--"]:first-child > div[class^="dzen-desktop--"]:first-child + div[class^="dzen-"] > div:empty + div div:style(background-color: transparent !important)
 dzen.ru##div[class^="dzen-desktop--"]:first-child > div[class^="dzen-desktop--"]:first-child > div[class^="dzen-desktop--"]:first-child + div[class^="dzen-"] > div:empty:style(background-color: transparent !important)

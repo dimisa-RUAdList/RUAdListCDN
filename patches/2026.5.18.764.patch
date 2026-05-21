@@ -1,8 +1,8 @@
-diff name:ruadlist lines:30 checksum:c87a05b1b6
+diff name:ruadlist lines:43 checksum:d7cf81ee8d
 d4 2
 a5 2
-! Last modified: Thu, 21 May 2026 05:16:27 +0000
-! Diff-Path: ../patches/2026.5.21.316.patch#ruadlist
+! Last modified: Thu, 21 May 2026 09:59:01 +0000
+! Diff-Path: ../patches/2026.5.21.599.patch#ruadlist
 a5816 1
 ||static.smartframe.io/embed.js$third-party
 d8212 1
@@ -16,6 +16,9 @@ a9178 1
 a10264 1
 onliner.by##[onclick="window.openCookieConsentSettings()"]
 d14137 1
+d15294 1
+a15294 1
+almodi.org,expres.online,fightnews.info,kun.uz,liveinternet.ru,respawn.media##.advertisement
 d20984 1
 a20984 1
 iphones.ru,lovitut.ru,pc.ru##div[class^="advert"]
@@ -26,6 +29,16 @@ a22392 2
 d22422 1
 a22422 1
 ||pikabu.ru/ajax/*?Y578t=$xmlhttprequest
+a22510 2
+pikabu.ru#?#article:-abp-has(> .story__left > .story__pin)
+pikabu.ru#?#article:-abp-has(> .story__left > span:first-child)
+d23736 1
+a23736 1
+ya.ru##section[style*="sectlon-items-count:"]
+d28481 2
+a28482 2
+ya.ru##[action*="/search/"] ~ aside + div
+ya.ru##[id^="r"][id*="yt"][id*="m"][id*="-"][id*="f"]
 d29174 1
 a29174 1
 fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /ABN|adsterra|adManager|atOptions|generateContent|Math.rnd|parseInt|window.open/)
