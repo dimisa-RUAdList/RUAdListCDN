@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 21 May 2026 09:59:01 +0000
-! Diff-Path: ../patches/2026.5.21.599.patch#ruadlist
+! Last modified: Thu, 21 May 2026 16:21:22 +0000
+! Diff-Path: ../patches/2026.5.21.981.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -9599,7 +9599,7 @@ $third-party,popup,domain=2ip.ru
 ||toolsins.com^$popup
 ||top/*rd.php?id=$third-party,popup
 ||torvind.com^$popup
-||tp.media^$popup
+||tp.media^$popup,domain=~aviasales.ru
 ||tptrk.ru^$popup
 ||track.adwad.ru^$popup
 ||tracka58563945.com^$popup
@@ -23109,6 +23109,8 @@ fontanka.ru,ngs.ru,ngs55.ru#?#[class*="pictureDayBlock_"] li:-abp-has(> a[href*=
 fontanka.ru##[data-io-article-url] > [itemprop="articleBody"] ~ p[class]
 ru##[data-ns-portal] .gridContainer div[class^="benefitsBlock_"]
 ru##[data-ns-portal] .notify-messages-popups
+ru##[data-ns-portal] [class*="hasBranding"] div[class^="benefitsBlock_"]
+ru##[data-ns-portal] [class^="asideContent"] div[class^="benefitsBlock_"]
 ru##[data-ns-portal] [data-adv-mark]
 ru##[data-ns-portal] [data-creative]
 ru##[data-ns-portal] a[href*="://auto.ru"][href*="utm_"]
