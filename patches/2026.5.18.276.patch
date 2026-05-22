@@ -1,8 +1,8 @@
-diff name:ruadlist lines:114 checksum:c2225980c3
+diff name:ruadlist lines:119 checksum:e0247d2a9a
 d4 2
 a5 2
-! Last modified: Fri, 22 May 2026 15:16:05 +0000
-! Diff-Path: ../patches/2026.5.22.916.patch#ruadlist
+! Last modified: Fri, 22 May 2026 20:01:59 +0000
+! Diff-Path: ../patches/2026.5.22.1201.patch#ruadlist
 a5816 1
 ||static.smartframe.io/embed.js$third-party
 d8212 1
@@ -25,6 +25,9 @@ d10351 1
 d11426 2
 d14140 1
 d14235 1
+a15083 1
+myshows.me##.Home__ad
+d15096 1
 d15298 1
 a15298 1
 almodi.org,expres.online,fightnews.info,kun.uz,liveinternet.ru,respawn.media##.advertisement
@@ -61,6 +64,8 @@ burninghut.ru,lifehacker.ru,mt.today,respawn.media##a[href^="https://market.yand
 d20492 1
 a20492 1
 respawn.media#?#b:-abp-contains(Где купить)
+a20958 1
+myshows.me##div[class^="OnlineLink"]
 d20991 1
 a20991 1
 iphones.ru,lovitut.ru,pc.ru##div[class^="advert"]
@@ -86,15 +91,15 @@ ru##[data-ns-portal] [class*="hasBranding"] div[class^="benefitsBlock_"]
 ru##[data-ns-portal] [class^="asideContent"] div[class^="benefitsBlock_"]
 d23741 1
 a23741 1
-ya.ru##section[style*="sectlon-items-count:"]
+ya.ru##section[style*="tlon-items-count:"]
 d26530 1
 d26744 1
 d27289 2
 d28189 2
-d28492 2
-a28493 2
-ya.ru##[action*="/search/"] ~ aside + div
+d28492 5
+a28496 2
 ya.ru##[id^="r"][id*="yt"][id*="m"][id*="-"][id*="f"]
+ya.ru##html[class*="document_extra-content"] aside + div
 a28526 3
 dzen.ru##div[class^="dzen-desktop--"]:first-child > div[class^="dzen-desktop--"]:first-child > div[class^="dzen-desktop--"]:first-child + div[class^="dzen-"] > div:empty + div div:style(background-color: transparent !important)
 dzen.ru##div[class^="dzen-desktop--"]:first-child > div[class^="dzen-desktop--"]:first-child > div[class^="dzen-desktop--"]:first-child + div[class^="dzen-"] > div:empty:style(background-color: transparent !important)

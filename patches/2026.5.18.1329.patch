@@ -1,17 +1,22 @@
-diff name:ruadlist lines:36 checksum:c2225980c3
+diff name:ruadlist lines:41 checksum:e0247d2a9a
 d4 2
 a5 2
-! Last modified: Fri, 22 May 2026 15:16:05 +0000
-! Diff-Path: ../patches/2026.5.22.916.patch#ruadlist
+! Last modified: Fri, 22 May 2026 20:01:59 +0000
+! Diff-Path: ../patches/2026.5.22.1201.patch#ruadlist
 d8213 1
 a8213 1
 /teasers/*$domain=~ableton.com|~adtran.com|~adventuregamers.com|~agderposten.no|~amway.ru|~amway.ua|~asml.com|~av.by|~babla.ru|~bmw.de|~bmw.ro|~bmw.ru|~business-gazeta.ru|~fujifilm.eu|~gismeteo.by|~gismeteo.kz|~kinobulvar.info|~meganomkino.ru|~novsu.ru|~parool.nl|~rce.by|~road.cc|~stackoverflow.com|~teaserstar.ru|~trouw.nl|~volkskrant.nl|~wetteronline.de|~www.kinopoisk.ru|~yandex.by|~yandex.com|~yandex.com.tr|~yandex.fr|~yandex.kz|~yandex.ru
 d9602 1
 a9602 1
 ||tp.media^$popup,domain=~aviasales.ru
+a15081 1
+myshows.me##.Home__ad
+d15094 1
 d15296 1
 a15296 1
 almodi.org,expres.online,fightnews.info,kun.uz,liveinternet.ru,respawn.media##.advertisement
+a20953 1
+myshows.me##div[class^="OnlineLink"]
 d22393 2
 a22394 2
 ||static.dzeninfra.ru/s3/zen-apps/dzen-layout/*/*/$script
@@ -27,11 +32,11 @@ ru##[data-ns-portal] [class*="hasBranding"] div[class^="benefitsBlock_"]
 ru##[data-ns-portal] [class^="asideContent"] div[class^="benefitsBlock_"]
 d23738 1
 a23738 1
-ya.ru##section[style*="sectlon-items-count:"]
-d28483 2
-a28484 2
-ya.ru##[action*="/search/"] ~ aside + div
+ya.ru##section[style*="tlon-items-count:"]
+d28483 5
+a28487 2
 ya.ru##[id^="r"][id*="yt"][id*="m"][id*="-"][id*="f"]
+ya.ru##html[class*="document_extra-content"] aside + div
 d29176 1
 a29176 1
 fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /ABN|adsterra|adManager|atOptions|generateContent|Math.rnd|parseInt|window.open/)
