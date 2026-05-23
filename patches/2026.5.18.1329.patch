@@ -1,8 +1,8 @@
-diff name:ruadlist lines:41 checksum:2195d02c3e
+diff name:ruadlist lines:44 checksum:fbe38d719a
 d4 2
 a5 2
-! Last modified: Sat, 23 May 2026 06:41:15 +0000
-! Diff-Path: ../patches/2026.5.23.401.patch#ruadlist
+! Last modified: Sat, 23 May 2026 12:04:02 +0000
+! Diff-Path: ../patches/2026.5.23.724.patch#ruadlist
 d8213 1
 a8213 1
 /teasers/*$domain=~ableton.com|~adtran.com|~adventuregamers.com|~agderposten.no|~amway.ru|~amway.ua|~asml.com|~av.by|~babla.ru|~bmw.de|~bmw.ro|~bmw.ru|~business-gazeta.ru|~fujifilm.eu|~gismeteo.by|~gismeteo.kz|~kinobulvar.info|~meganomkino.ru|~novsu.ru|~parool.nl|~rce.by|~road.cc|~stackoverflow.com|~teaserstar.ru|~trouw.nl|~volkskrant.nl|~wetteronline.de|~www.kinopoisk.ru|~yandex.by|~yandex.com|~yandex.com.tr|~yandex.fr|~yandex.kz|~yandex.ru
@@ -40,3 +40,6 @@ ya.ru##html[class*="document_extra-content"] aside + div
 d29176 1
 a29176 1
 fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /ABN|adsterra|adManager|atOptions|generateContent|Math.rnd|parseInt|window.open/)
+d29537 1
+a29537 1
+pogoda.mail.ru##+js(prevent-setTimeout, 'return t', 100)

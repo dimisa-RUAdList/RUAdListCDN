@@ -1,8 +1,8 @@
-diff name:ruadlist lines:35 checksum:2195d02c3e
+diff name:ruadlist lines:38 checksum:fbe38d719a
 d4 2
 a5 2
-! Last modified: Sat, 23 May 2026 06:41:15 +0000
-! Diff-Path: ../patches/2026.5.23.401.patch#ruadlist
+! Last modified: Sat, 23 May 2026 12:04:02 +0000
+! Diff-Path: ../patches/2026.5.23.724.patch#ruadlist
 d9602 1
 a9602 1
 ||tp.media^$popup,domain=~aviasales.ru
@@ -34,3 +34,6 @@ ya.ru##html[class*="document_extra-content"] aside + div
 d29176 1
 a29176 1
 fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /ABN|adsterra|adManager|atOptions|generateContent|Math.rnd|parseInt|window.open/)
+d29537 1
+a29537 1
+pogoda.mail.ru##+js(prevent-setTimeout, 'return t', 100)
