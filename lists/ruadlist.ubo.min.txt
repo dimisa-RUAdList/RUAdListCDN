@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 24 May 2026 07:52:46 +0000
-! Diff-Path: ../patches/2026.5.24.472.patch#ruadlist
+! Last modified: Sun, 24 May 2026 13:54:55 +0000
+! Diff-Path: ../patches/2026.5.24.834.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21718,6 +21718,7 @@ lumpics.ru##div[style^="height:120px;display:block"]
 kinonews.ru##div[style^="height:250px"]
 sinoptik.ua##div[style^="margin"][style$="width: 300px;"]
 vgae.ru##div[style^="margin"][style*="-10px;"]
+sport24.ru#?#div[style^="margin-bottom:"]:-abp-has(> div > div[aria-expanded="false"]:-abp-contains(Реклама))
 onlinetv.one##div[style^="margin: 20px 0;min-height:"]
 xn----7sbb0bildcbgm8a.xn--p1ai##div[style^="max-width:"][style*="200deg"]
 get-save.com##div[style^="min-height: 250px;"]

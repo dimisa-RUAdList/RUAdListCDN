@@ -1,8 +1,8 @@
-diff name:ruadlist lines:25 checksum:7f71a758c1
+diff name:ruadlist lines:27 checksum:cbc4de9ff1
 d4 2
 a5 2
-! Last modified: Sun, 24 May 2026 07:52:46 +0000
-! Diff-Path: ../patches/2026.5.24.472.patch#ruadlist
+! Last modified: Sun, 24 May 2026 13:54:55 +0000
+! Diff-Path: ../patches/2026.5.24.834.patch#ruadlist
 d9602 1
 a9602 1
 ||tp.media^$popup,domain=~aviasales.ru
@@ -11,6 +11,8 @@ myshows.me##.Home__ad
 d15094 1
 a20953 1
 myshows.me##div[class^="OnlineLink"]
+a21719 1
+sport24.ru#?#div[style^="margin-bottom:"]:-abp-has(> div > div[aria-expanded="false"]:-abp-contains(Реклама))
 a23111 2
 ru##[data-ns-portal] [class*="hasBranding"] div[class^="benefitsBlock_"]
 ru##[data-ns-portal] [class^="asideContent"] div[class^="benefitsBlock_"]
