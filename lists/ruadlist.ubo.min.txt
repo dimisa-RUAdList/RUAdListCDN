@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 25 May 2026 17:50:11 +0000
-! Diff-Path: ../patches/2026.5.25.1070.patch#ruadlist
+! Last modified: Mon, 25 May 2026 23:17:47 +0000
+! Diff-Path: ../patches/2026.5.25.1397.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -539,6 +539,7 @@
 ||astdn.ru^$third-party
 ||asuler.ru^$third-party
 ||atavas.ru^$third-party
+||atddmn.com^$third-party
 ||ati30re4.ru^$third-party
 ||atizer.ru^$third-party
 ||atrafik.ru^$third-party
@@ -16860,6 +16861,7 @@ ixbt.com##.horb
 kino-teatr.ru##.horisontal_delim
 comss.ru#?#.horizontal > .rbox:-abp-has(> div a[href*="page.php?id=3023"])
 gorodovoy.ru##.horizontal-banner
+autoportal.ua##.horizontal__banner
 rz.com.ua##.horizontal_baner
 tonkosti.ru##.hotel-form__header
 bezformata.com##.hottopicadvertbox
@@ -17886,6 +17888,7 @@ vokrug.tv##.read-more__block
 twizz.ru##.read-next
 okna.ua##.read__right
 vmo24.ru##.readall > p:first-child
+com-x.life##.reader-ads
 sustav.info,udermis.ru##.readthis
 vmo24.ru##.readyandex
 flatfy.lun.ua##.realty-short-preview
@@ -18396,6 +18399,7 @@ hitmotop.com##.soc-auth-btns
 ukrlib.com.ua##.social-box-item
 pay-day.ru,pnz.ru,podolyaka.com,podolyaka.ru,tvcenter.ru,warhead.su##.social-button--yandexzen
 nevnov.ru##.social-container
+autoportal.ua##.social-info
 ukrinform.ua##.socialBlockSlide
 securitymedia.org#?#.socials__social:-abp-has(> a[href^="https://dzen.ru/"])
 samlab.ws##.soft-day:not(:first-child) > .box
@@ -18805,7 +18809,7 @@ sichnews.ua##.vcex-image-banner
 ixbt.com##.vcont
 l2db.ru##.vda
 ixbt.com##.vertb
-112.ua,inkorr.com##.vertical__banner
+112.ua,autoportal.ua,inkorr.com##.vertical__banner
 mobportal.net##.verx_r
 facenews.ua##.verytopbanner
 alcogolizm.com,jlady.ru,parazitovnetu.ru,spinazdorov.ru##.vex
@@ -21868,6 +21872,7 @@ jofo.ru##iframe[src^="http://creatagen.ru/"]
 smotretonline.ucoz.org##iframe[src^="http://kinohouse.ucoz.ru"]
 arminfo.info##iframe[src^="https://www.arminfo.info/"][src$=".html"]
 www.mp4upload.com##iframe[src^="https://www.mp4upload.com/"][src$=".html"]
+5.ua##iframe[srcdoc*="banner"]
 fastpic.org##iframe[srcdoc]
 forum.watch.ru##iframe[style="width: 100%; height: 60px;"]
 forum.watch.ru##iframe[style="width:100%; height:110px;"]
@@ -22465,7 +22470,7 @@ tapochek.net##body:has(#register_link) > canvas {remove:true;}
 the-geek.ru###wp-custom-css {remove:true;}
 uwupad.me##style:has-text(lb-banner-height) {remove:true;}
 vk.com,vk.ru##head > style:has-text(/adchoice|mkit_|outlineBanner/i) {remove:true;}
-www.ixbt.com##body > style:has-text(margin-top) {remove:true;}
+www.ixbt.com##body style:has-text(margin-top: 1) {remove:true;}
 ! селекторы
 freesoft.ru###downloadAdModal
 vk.com,vk.ru###feed_rows > .feed_row > div:not([id])
@@ -23295,7 +23300,6 @@ finance.rambler.ru##.finance__partners
 horoscopes.rambler.ru##.fzwuC
 championat.com,championat.ru##.game-of-day
 championat.com,championat.ru##.header-bottom__adv
-lenta.ru##.header__my
 championat.com,championat.ru##.infographic-countdown
 championat.com,championat.ru##.infographic-duel
 lenta.ru##.js-video-eagle > div[style^="height:"][style*="overflow:"]
@@ -29199,6 +29203,7 @@ sichnews.ua##+js(remove-node-text, script, right_click)
 eg.ru,gorodche.ru,gorodvo.ru,ng72.ru##+js(remove-node-text, script, showBanner)
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, style, epom-brend)
 uwupad.me##+js(remove-node-text, style, lb-banner-height)
+www.ixbt.com##+js(remove-node-text, style, rose.ixbt.com/banner/)
 playvillage.ru##+js(set-attr, ._1z_ ._21_, style, '')
 dtf.ru,vc.ru##+js(set-attr, .comment-media .andropov-video video, controls, true)
 rbc.ru##+js(set-attr, .content-custom [href*="?from="]:not([href*="utm"]), target, true)

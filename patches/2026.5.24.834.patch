@@ -1,8 +1,10 @@
-diff name:ruadlist lines:29 checksum:f392ded20e
+diff name:ruadlist lines:48 checksum:9f1dad5617
 d4 2
 a5 2
-! Last modified: Mon, 25 May 2026 17:50:11 +0000
-! Diff-Path: ../patches/2026.5.25.1070.patch#ruadlist
+! Last modified: Mon, 25 May 2026 23:17:47 +0000
+! Diff-Path: ../patches/2026.5.25.1397.patch#ruadlist
+a541 1
+||atddmn.com^$third-party
 a11782 1
 ||glavnoe.in.ua/wp-content/themes/glavnoeinua/ad/
 a12127 1
@@ -15,6 +17,15 @@ d15160 1
 a15160 1
 delfi.ee,glavnoe.in.ua##.ad-container
 d16244 2
+a16860 1
+autoportal.ua##.horizontal__banner
+a17886 1
+com-x.life##.reader-ads
+a18396 1
+autoportal.ua##.social-info
+d18806 1
+a18806 1
+112.ua,autoportal.ua,inkorr.com##.vertical__banner
 d18874 1
 d19428 1
 a20013 1
@@ -23,8 +34,16 @@ a21238 1
 securitylab.ru##div[class^="webinar-"]
 a21790 1
 minfin.com.ua##header.mfz-container::after
+a21867 1
+5.ua##iframe[srcdoc*="banner"]
+d22465 1
+a22465 1
+www.ixbt.com##body style:has-text(margin-top: 1) {remove:true;}
 a22773 1
 ~e.mail.ru,mail.ru,sportmail.ru##div[article-item-type="contentroll"]:empty
-a28314 2
-! ---
+d23294 1
+a28315 2
 tartugi.net##.pagebg > .wrapper:style(padding-top: 0 !important)
+! ---
+a29195 1
+www.ixbt.com##+js(remove-node-text, style, rose.ixbt.com/banner/)
