@@ -1,12 +1,13 @@
-diff name:ruadlist lines:2427 checksum:797fd3ec60
+diff name:ruadlist lines:2437 checksum:1e7854debd
 d4 2
 a5 2
-! Last modified: Wed, 27 May 2026 04:43:26 +0000
-! Diff-Path: ../patches/2026.5.27.283.patch#ruadlist
+! Last modified: Wed, 27 May 2026 12:28:37 +0000
+! Diff-Path: ../patches/2026.5.27.748.patch#ruadlist
 a541 1
 ||atddmn.com^$third-party
 a2536 1
 ||gusfioner.live^$third-party
+d10428 1
 a11782 1
 ||glavnoe.in.ua/wp-content/themes/glavnoeinua/ad/
 a12127 1
@@ -26,6 +27,8 @@ delfi.ee,glavnoe.in.ua##.ad-container
 d16036 1
 a16036 1
 ain.ua,pogoda.tut.by##.branding-top
+a16216 1
+slovoidilo.ua##.commentars
 d16244 2
 a16860 1
 autoportal.ua##.horizontal__banner
@@ -72,6 +75,7 @@ ya.ru##section[style*="sektlion-items-count:"]
 d27778 1
 a27778 1
 www.kinopoisk.ru###modal-container > [class^="styles_root_"] ~ div:not([class^="styles_modal_"]):not([class^="styles_overlay_"])
+d27792 1
 a28313 2
 tartugi.net##.pagebg > .wrapper:style(padding-top: 0 !important)
 ! ---
@@ -79,9 +83,15 @@ d28487 5
 a28491 2
 ya.ru##[id^="r"][id*="it"][id*="m"][id*="-"][id*="f"]
 ya.ru##html[class*="sektlion_top"] aside + div
+a28888 1
+lenta.ru##+js(abort-current-script, window._lentaData, url_for_scroll)
 d29125 1
+a29149 1
+www.kinopoisk.ru##+js(prevent-addEventListener, /canplay|loadeddata|playing|timeupdate/, '', elements, [poster][loop])
 a29196 1
 www.ixbt.com##+js(remove-node-text, style, rose.ixbt.com/banner/)
+d29498 2
+d29522 1
 d29541 1
 a29541 1
 pogoda.mail.ru##+js(prevent-setTimeout, 'return t', 100)

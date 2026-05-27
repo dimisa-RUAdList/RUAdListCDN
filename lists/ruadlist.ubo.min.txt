@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 27 May 2026 04:43:26 +0000
-! Diff-Path: ../patches/2026.5.27.283.patch#ruadlist
+! Last modified: Wed, 27 May 2026 12:28:37 +0000
+! Diff-Path: ../patches/2026.5.27.748.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10427,7 +10427,6 @@ surl.*#?#.text-center:-abp-has(> form > .disabled) > p ~ *
 ||senior.ua/disable/request-banner
 ||shokru.com/wp-content/plugins/elegance-modal-box/
 ||sim-portal.ru/jfbe7r9.js
-||slovoidilo.ua/cp/css/reminder.css$stylesheet
 ||smartpress.by/bitrix/js/slam.cookie/script.js
 ||sovkusom.ru/wp-content/plugins/as-social-popup/
 ||stroyres.net/wp-content/plugins/social-community-popup/
@@ -16221,6 +16220,7 @@ tabletki.ua##.com__panel-header
 pcportal.org##.come_d
 news.tj##.comment-area .newsbox-outer-banner
 yap.ru,yaplakal.com#?#.comment-table:-abp-has(> tbody div[id^="MF_"])
+slovoidilo.ua##.commentars
 kirov.online##.comments ~ noindex
 diablo.su##.comments-area
 superhumor.ru,voffka.com##.comments-head
@@ -27805,7 +27805,6 @@ www.kinopoisk.ru###actorListBlock:style(padding-right: 19px !important)
 www.kinopoisk.ru##.content-container_app-width_wide:style(max-width: 100% !important)
 www.kinopoisk.ru##.desktop-layout-with-sidebar__content > div[class][data-tid]:style(width: auto !important)
 www.kinopoisk.ru##.filmsListNew .info:style(padding-right: 116px !important)
-www.kinopoisk.ru##.header-navigation:style(max-width: 100% !important)
 www.kinopoisk.ru##.modal-root div[class^="fullscreen-selector"]:style(opacity: inherit !important)
 www.kinopoisk.ru##div > a[aria-label="КиноПоиск"] ~ div > button ~ div:style(opacity: inherit !important)
 www.kinopoisk.ru##div[class*="styles_headerContainer"] + div[class^="styles_"]:style(max-width: 100% !important)
@@ -28901,6 +28900,7 @@ marieclaire.ua##+js(abort-current-inline-script, redram, /загрузка.../)
 livesport.ws##+js(abort-current-inline-script, setTimeout, adblockwarn)
 liga.net##+js(abort-current-inline-script, window.innerWidth, rcBuf)
 techmusic.ru##+js(abort-current-inline-script, window.onload, _uWnd)
+lenta.ru##+js(abort-current-script, window._lentaData, url_for_scroll)
 htmlweb.ru##+js(abort-on-property-read, AdbBanner)
 fapreactor.com,pornreactor.cc,reactor.cc##+js(abort-on-property-read, CTRManager.host3)
 anifap.com,anifap.xyz,anipoisk.org,anitokyo.tv,anitokyo1.top,hcdn.online,kinofilm.co##+js(abort-on-property-read, ClickUndercookie)
@@ -29161,6 +29161,7 @@ sm.news##+js(no-xhr-if, method:GET)
 dzen.ru,frontend.vh.yandex.ru,naydex.net,widgets.kinopoisk.ru,www.kinopoisk.ru,yastatic.net##+js(no-xhr-if, strm.yandex.ru/get/)
 otzovik.com##+js(noeval-if, ShadowRoot)
 kvadratmetr.uz,oligarx.uz,tehnar.net.ua##+js(noeval-if, adsBlocked)
+www.kinopoisk.ru##+js(prevent-addEventListener, /canplay|loadeddata|playing|timeupdate/, '', elements, [poster][loop])
 fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, /click|load/, /exopop|popMagic/)
 fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, DOMContentLoaded, /0x|popMagic/)
 rutube.ru##+js(prevent-addEventListener, click, showRedirectPopup)
@@ -29510,8 +29511,6 @@ ya.ru,yandex.*##.simple-popup__overlay:remove()
 ||frontend.vh.yandex.ru/player/*autoplay=1$subdocument,removeparam=|,domain=~music.yandex.*|~music.yandex.ru
 ||googletagmanager.com/gtag/js?id=UA-$important,script,domain=inforesist.org
 ||ipcamlive.com/player/player.php?*autoplay=true$subdocument,removeparam=autoplay
-||kp.yandex.net/images/bnnr/brand/$domain=www.kinopoisk.ru
-||kp.yandex.net/js/brand$domain=www.kinopoisk.ru
 ||loadercdn.com^$important,script,redirect=noopjs
 ||m.mixadvert.com/show/$important,script
 ||mc.admetrica.ru/sync_cookie_image_check$image,redirect=1x1-transparent.gif
@@ -29534,7 +29533,6 @@ ya.ru,yandex.*##.simple-popup__overlay:remove()
 ||video.matchtv.ru/iframe/feed/*autostart=1$subdocument,removeparam=autostart
 ||video.matchtv.ru/iframe/feed/*autostart=1$subdocument,removeparam=skin_name
 ||video.sports.ru/embed/*autoplay=1$subdocument,removeparam=autoplay
-||widgets.kinopoisk.ru/discovery/trailer/*&loop=1&autoplay=1$subdocument,domain=www.kinopoisk.ru
 ||yandex.ru/ads/system/context.js$script,redirect=noopjs,domain=tragtorr.in|tragtorr.info
 ||yastatic.net/s3/home-static/feeds/$third-party
 ||youtube-nocookie.com/embed/*autoplay=1$subdocument,removeparam=autoplay,domain=weukraine.tv
