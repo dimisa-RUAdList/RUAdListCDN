@@ -1,11 +1,13 @@
-diff name:ruadlist lines:2386 checksum:1e7854debd
+diff name:ruadlist lines:2409 checksum:db34c176cb
 d4 2
 a5 2
-! Last modified: Wed, 27 May 2026 12:28:37 +0000
-! Diff-Path: ../patches/2026.5.27.748.patch#ruadlist
+! Last modified: Wed, 27 May 2026 19:30:35 +0000
+! Diff-Path: ../patches/2026.5.27.1170.patch#ruadlist
 a2537 1
 ||gusfioner.live^$third-party
 d10429 1
+a11260 1
+||biz.nv.ua/upload/proconnect_$image
 a15006 1
 minfin.com.ua###wgt_view
 d16041 1
@@ -13,11 +15,22 @@ a16041 1
 ain.ua,pogoda.tut.by##.branding-top
 a16221 1
 slovoidilo.ua##.commentars
+a19776 1
+nv.ua##a[href*="_nvbanner"][target="_blank"]
 a20045 1
 thepublic.info##a[href][target="_blank"][rel="noopener nofollow"] > img
 a21160 1
 sovsport.ru##div[class^="promo-menu"]
 d21875 1
+a21943 1
+biz.nv.ua##img[src*="/upload/proconnect_"]
+d22403 2
+a22404 2
+||static.dzeninfra.ru/s3/zen-apps/commets2/*/*/$script
+||static.dzeninfra.ru/s3/zen-apps/desktop2/*/*/$script
+d22434 1
+a22434 1
+||pikabu.ru/ajax/*?iUt4b=$xmlhttprequest
 d22523 1
 a22523 2
 pikabu.ru#?#article:-abp-has(> .story__left .story__pin)
@@ -37,6 +50,16 @@ d28499 2
 a28500 2
 ya.ru##[id^="r"][id*="it"][id*="m"][id*="-"][id*="f"]
 ya.ru##html[class*="sektlion_top"] aside + div
+d28567 2
+a28568 2
+dzen.ru##[aria-label*="ра"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id]
+dzen.ru##[aria-label*="ра"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not(:last-child):not([aria-label])
+d28577 1
+a28577 1
+dzen.ru##div[class^="news-"][style="margin-top: 0px; height: calc(99.998% - 0px);"]
+d28584 1
+a28584 1
+dzen.ru##div[style*="12.362637362637"]
 a28897 1
 lenta.ru##+js(abort-current-script, window._lentaData, url_for_scroll)
 d29134 1

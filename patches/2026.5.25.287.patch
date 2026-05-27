@@ -1,13 +1,15 @@
-diff name:ruadlist lines:2425 checksum:1e7854debd
+diff name:ruadlist lines:2448 checksum:db34c176cb
 d4 2
 a5 2
-! Last modified: Wed, 27 May 2026 12:28:37 +0000
-! Diff-Path: ../patches/2026.5.27.748.patch#ruadlist
+! Last modified: Wed, 27 May 2026 19:30:35 +0000
+! Diff-Path: ../patches/2026.5.27.1170.patch#ruadlist
 a541 1
 ||atddmn.com^$third-party
 a2536 1
 ||gusfioner.live^$third-party
 d10428 1
+a11259 1
+||biz.nv.ua/upload/proconnect_$image
 a11782 1
 ||glavnoe.in.ua/wp-content/themes/glavnoeinua/ad/
 a12127 1
@@ -36,6 +38,8 @@ a18807 1
 112.ua,autoportal.ua,inkorr.com##.vertical__banner
 d18875 1
 d19429 1
+a19773 1
+nv.ua##a[href*="_nvbanner"][target="_blank"]
 a20014 1
 komersant.ua##a[href]:not([href^="/"]):not([href^="https://komersant.ua/"]) > .alignnone
 a20041 1
@@ -46,6 +50,15 @@ a21239 1
 securitylab.ru##div[class^="webinar-"]
 a21791 1
 minfin.com.ua##header.mfz-container::after
+a21936 1
+biz.nv.ua##img[src*="/upload/proconnect_"]
+d22396 2
+a22397 2
+||static.dzeninfra.ru/s3/zen-apps/commets2/*/*/$script
+||static.dzeninfra.ru/s3/zen-apps/desktop2/*/*/$script
+d22427 1
+a22427 1
+||pikabu.ru/ajax/*?iUt4b=$xmlhttprequest
 d22466 1
 a22466 1
 www.ixbt.com##body style:has-text(margin-top: 1) {remove:true;}
@@ -74,6 +87,16 @@ d28490 2
 a28491 2
 ya.ru##[id^="r"][id*="it"][id*="m"][id*="-"][id*="f"]
 ya.ru##html[class*="sektlion_top"] aside + div
+d28558 2
+a28559 2
+dzen.ru##[aria-label*="ра"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id]
+dzen.ru##[aria-label*="ра"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not(:last-child):not([aria-label])
+d28568 1
+a28568 1
+dzen.ru##div[class^="news-"][style="margin-top: 0px; height: calc(99.998% - 0px);"]
+d28575 1
+a28575 1
+dzen.ru##div[style*="12.362637362637"]
 a28888 1
 lenta.ru##+js(abort-current-script, window._lentaData, url_for_scroll)
 d29125 1
