@@ -1,8 +1,8 @@
-diff name:ruadlist lines:2480 checksum:8df68fa775
+diff name:ruadlist lines:2489 checksum:cd48b921dc
 d4 2
 a5 2
-! Last modified: Thu, 28 May 2026 04:23:35 +0000
-! Diff-Path: ../patches/2026.5.28.263.patch#ruadlist
+! Last modified: Thu, 28 May 2026 12:39:58 +0000
+! Diff-Path: ../patches/2026.5.28.759.patch#ruadlist
 a541 1
 ||atddmn.com^$third-party
 a2536 1
@@ -115,13 +115,19 @@ d28488 2
 a28489 2
 ya.ru##[id^="r"][id*="it"][id*="m"][id*="-"][id*="f"]
 ya.ru##html[class*="sektlion_top"] aside + div
+d28520 3
+a28522 4
+dzen.ru##div[class^="dzen-desktop--"]:first-child:only-child > div[class^="dzen-desktop--"]:first-child > div[class^="dzen-desktop--"]:first-child + div[class^="dzen-"]:last-child > div > div:empty + div div:style(background-color: inherit !important)
+dzen.ru##div[class^="dzen-desktop--"]:first-child:only-child > div[class^="dzen-desktop--"]:first-child > div[class^="dzen-desktop--"]:first-child + div[class^="dzen-"]:last-child > div > div:empty:style(background-color: inherit !important)
+dzen.ru##div[class^="dzen-desktop--"]:first-child:only-child > div[class^="dzen-desktop--"]:first-child > div[class^="dzen-desktop--"]:first-child + div[class^="dzen-"]:last-child > div:style(border: inherit !important)
+dzen.ru##div[class^="dzen-desktop--"]:first-child:only-child > div[class^="dzen-desktop--"]:first-child > div[class^="dzen-desktop--"]:first-child + div[class^="dzen-"]:last-child:style(background: inherit !important)
 d28556 2
 a28557 2
 dzen.ru##[aria-label*="ра"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id]
 dzen.ru##[aria-label*="ра"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not(:last-child):not([aria-label])
 d28566 1
 a28566 1
-dzen.ru##div[class^="news-"][style="margin-top: 0px; height: calc(99.998% - 0px);"]
+dzen.ru##div[class^="news-"][style^="margin-top: 0px; height: calc(99.998% "]
 d28573 1
 a28573 1
 dzen.ru##div[style*="12.362637362637"]
@@ -131,8 +137,11 @@ lenta.ru##+js(abort-current-script, window._lentaData, url_for_scroll)
 d29123 1
 a29147 1
 www.kinopoisk.ru##+js(prevent-addEventListener, /canplay|loadeddata|playing|timeupdate/, '', elements, [poster][loop])
+d29175 1
 a29194 1
 www.ixbt.com##+js(remove-node-text, style, rose.ixbt.com/banner/)
+a29434 1
+dzen.ru##div:not([class^="dzen-desktop--trends-"]):matches-css(height: 212px):style(opacity: 0 !important)
 d29496 2
 d29520 1
 d29539 1
