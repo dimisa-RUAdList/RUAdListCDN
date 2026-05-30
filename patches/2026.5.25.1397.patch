@@ -1,8 +1,8 @@
-diff name:ruadlist lines:2488 checksum:c0ae86c3e9
+diff name:ruadlist lines:2491 checksum:9d2d8ea51e
 d4 2
 a5 2
-! Last modified: Sat, 30 May 2026 19:38:19 +0000
-! Diff-Path: ../patches/2026.5.30.1178.patch#ruadlist
+! Last modified: Sat, 30 May 2026 23:11:59 +0000
+! Diff-Path: ../patches/2026.5.30.1391.patch#ruadlist
 d5196 1
 a5196 1
 ||relap.io^$third-party,domain=~briefly.ru|~fitseven.ru|~inmyroom.ru|~life.ru|~sntch.com|~tut.by|~ustaliy.ru|~www.goha.ru|~zhzh.com.ua|~zhzh.info
@@ -87,6 +87,9 @@ pikabu.ru#?#article:-abp-has(> .story__left .story__pin)
 pikabu.ru#?#article:-abp-has(> .story__left > div:not([class]):only-child)
 a22525 1
 pikabu.ru#?#article:-abp-has(> .story__main > div:only-child)
+d22646 1
+a22646 1
+www.avito.ru##[data-chunks="item"] + div > div:first-child > div:first-child > div[class] > div:first-child + div > div:first-child + div + div:last-child > div:only-child > div:first-child + div:last-child > div:only-child > div:first-child + div:last-child
 a23120 1
 ru##[data-ns-portal] .gridContainer > div[class^="wrap-cp_"]:empty
 d23752 1
