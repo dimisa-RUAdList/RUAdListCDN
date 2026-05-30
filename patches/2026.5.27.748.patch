@@ -1,8 +1,9 @@
-diff name:ruadlist lines:104 checksum:3d97db0f11
+diff name:ruadlist lines:110 checksum:c0ae86c3e9
 d4 2
 a5 2
-! Last modified: Sat, 30 May 2026 13:59:47 +0000
-! Diff-Path: ../patches/2026.5.30.839.patch#ruadlist
+! Last modified: Sat, 30 May 2026 19:38:19 +0000
+! Diff-Path: ../patches/2026.5.30.1178.patch#ruadlist
+d2538 1
 d5197 1
 a5197 1
 ||relap.io^$third-party,domain=~briefly.ru|~fitseven.ru|~inmyroom.ru|~life.ru|~sntch.com|~tut.by|~ustaliy.ru|~www.goha.ru|~zhzh.com.ua|~zhzh.info
@@ -36,8 +37,9 @@ shuba.life##.c-product-card
 a16457 1
 dynamo.kiev.ua##.dynamo-b
 d17022 1
-a18644 1
+a18644 2
 habr.com##.tm-layout__wrapper > .container-wrapper[style]
+habr.com##.tm-page__wrapper > .content-blur:empty
 d19285 1
 a19285 1
 shuba.life#?#[data-article] > .c-section:-abp-has(.c-product-card)
@@ -103,3 +105,7 @@ d29192 1
 a29452 1
 dzen.ru##div:not([class^="dzen-desktop--trends-"]):matches-css(height: 212px):style(opacity: 0 !important)
 d29672 2
+a29673 3
+! ---
+tsargrad.tv##.video-aside
+tsargrad.tv##.video-aside:remove()

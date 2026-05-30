@@ -1,12 +1,10 @@
-diff name:ruadlist lines:2501 checksum:3d97db0f11
+diff name:ruadlist lines:2504 checksum:c0ae86c3e9
 d4 2
 a5 2
-! Last modified: Sat, 30 May 2026 13:59:47 +0000
-! Diff-Path: ../patches/2026.5.30.839.patch#ruadlist
+! Last modified: Sat, 30 May 2026 19:38:19 +0000
+! Diff-Path: ../patches/2026.5.30.1178.patch#ruadlist
 a541 1
 ||atddmn.com^$third-party
-a2536 1
-||gusfioner.live^$third-party
 d5195 1
 a5195 1
 ||relap.io^$third-party,domain=~briefly.ru|~fitseven.ru|~inmyroom.ru|~life.ru|~sntch.com|~tut.by|~ustaliy.ru|~www.goha.ru|~zhzh.com.ua|~zhzh.info
@@ -54,8 +52,9 @@ a17888 1
 com-x.life##.reader-ads
 a18398 1
 autoportal.ua##.social-info
-a18638 1
+a18638 2
 habr.com##.tm-layout__wrapper > .container-wrapper[style]
+habr.com##.tm-page__wrapper > .content-blur:empty
 d18808 1
 a18808 1
 112.ua,autoportal.ua,inkorr.com##.vertical__banner
@@ -159,6 +158,10 @@ dzen.ru##div:not([class^="dzen-desktop--trends-"]):matches-css(height: 212px):st
 d29503 2
 d29527 1
 d29664 2
+a29665 3
+! ---
+tsargrad.tv##.video-aside
+tsargrad.tv##.video-aside:remove()
 d29833 1293
 a31125 2336
 ||2znp09oa.com^

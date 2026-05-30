@@ -1,8 +1,9 @@
-diff name:ruadlist lines:61 checksum:3d97db0f11
+diff name:ruadlist lines:67 checksum:c0ae86c3e9
 d4 2
 a5 2
-! Last modified: Sat, 30 May 2026 13:59:47 +0000
-! Diff-Path: ../patches/2026.5.30.839.patch#ruadlist
+! Last modified: Sat, 30 May 2026 19:38:19 +0000
+! Diff-Path: ../patches/2026.5.30.1178.patch#ruadlist
+d2538 1
 d10444 1
 d10715 1
 a10715 1
@@ -23,8 +24,9 @@ a15639 1
 d16100 1
 a16101 1
 shuba.life##.c-product-card
-a18646 1
+a18646 2
 habr.com##.tm-layout__wrapper > .container-wrapper[style]
+habr.com##.tm-page__wrapper > .content-blur:empty
 d19287 1
 a19287 1
 shuba.life#?#[data-article] > .c-section:-abp-has(.c-product-card)
@@ -60,3 +62,7 @@ d29198 1
 a29458 1
 dzen.ru##div:not([class^="dzen-desktop--trends-"]):matches-css(height: 212px):style(opacity: 0 !important)
 d29678 2
+a29679 3
+! ---
+tsargrad.tv##.video-aside
+tsargrad.tv##.video-aside:remove()
