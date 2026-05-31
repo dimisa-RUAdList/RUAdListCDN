@@ -1,8 +1,8 @@
-diff name:ruadlist lines:122 checksum:a12812c677
+diff name:ruadlist lines:142 checksum:d8ab6c488c
 d4 2
 a5 2
-! Last modified: Sun, 31 May 2026 04:46:10 +0000
-! Diff-Path: ../patches/2026.5.31.286.patch#ruadlist
+! Last modified: Sun, 31 May 2026 11:04:34 +0000
+! Diff-Path: ../patches/2026.5.31.664.patch#ruadlist
 d2538 1
 d5197 1
 a5197 1
@@ -19,9 +19,16 @@ a10824 1
 /pub/banners/*$domain=channel4it.com|glavcom.ua|weukraine.tv
 a11261 1
 ||biz.nv.ua/upload/proconnect_$image
+a11541 1
+||dynamo.kiev.ua/media/bimg/
 d11815 1
+a12615 1
+||opennet.*/cgi-bin/opennet/hints.cgi
+d12619 1
+d13950 1
 a14454 1
 tsargrad.tv###moreContentnews > div.news-item_article
+d14549 1
 d15550 1
 d15580 1
 a15580 1
@@ -40,6 +47,8 @@ slovoidilo.ua##.commentars
 a16457 1
 dynamo.kiev.ua##.dynamo-b
 d17022 1
+a17753 1
+radiokot.ru##.post[id] ~ .post:not([id])
 a18644 2
 habr.com##.tm-layout__wrapper > .container-wrapper[style]
 habr.com##.tm-page__wrapper > .content-blur:empty
@@ -52,17 +61,23 @@ d19323 1
 d19379 1
 a19379 1
 shuba.life##[data-v-app] button.cursor-pointer
+d19515 1
+a19516 1
+radiokot.ru##[src*="/adv/"]
 a19778 1
 nv.ua##a[href*="_nvbanner"][target="_blank"]
 a20465 1
 ringside24.com#?#aside > div:-abp-has(> #ringside_scroll)
 a20468 1
 ringside24.com##aside > div:first-child
+a20595 1
+opennet.me,opennet.ru##body > div[style$="width:100%; height: 62px;"]
 a20820 1
 gordonua.com##div[class*="ba"][class*="nner"]
 d21317 1
 a21317 1
 bina.az,bitpump.ru,botanichka.ru,chem21.info,enovosty.com,ogorodnik.com,orelgrad.ru,propozitsiya.com,qafqazinfo.az,snow-motion.ru,stadion.uz,tap.az,turbo.az,uralpress.ru,www.ixbt.com##div[id*="banner"]
+d21715 1
 a21946 1
 biz.nv.ua##img[src*="/upload/proconnect_"]
 d22406 2
@@ -75,6 +90,10 @@ a22437 1
 d22651 1
 a22651 1
 www.avito.ru##[data-chunks="item"] + div > div:first-child > div:first-child > div[class] > div:first-child + div > div:first-child + div + div:last-child > div:only-child > div:first-child + div:last-child > div:only-child > div:first-child + div:last-child
+a24409 1
+||cdn.eicom.ru/media/uploads/adv/$third-party
+a24411 1
+||cdn.tmelectronics.ru/img/$third-party
 d26716 1
 d26813 1
 a26957 1
@@ -116,6 +135,7 @@ a29451 1
 dzen.ru##div:not([class^="dzen-desktop--trends-"]):matches-css(height: 212px):style(opacity: 0 !important)
 d29513 2
 d29537 1
+d29556 1
 d29674 2
 a29675 3
 ! ---
