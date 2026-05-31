@@ -1,8 +1,8 @@
-diff name:ruadlist lines:142 checksum:8cc9f6a7a5
+diff name:ruadlist lines:153 checksum:cb68d5f56a
 d4 2
 a5 2
-! Last modified: Sun, 31 May 2026 14:52:18 +0000
-! Diff-Path: ../patches/2026.5.31.892.patch#ruadlist
+! Last modified: Sun, 31 May 2026 20:18:25 +0000
+! Diff-Path: ../patches/2026.5.31.1218.patch#ruadlist
 d2538 1
 d5197 1
 a5197 1
@@ -110,11 +110,11 @@ dzen.ru##div[class^="dzen-desktop--"]:first-child:only-child > div[class^="dzen-
 dzen.ru##div[class^="dzen-desktop--"]:first-child:only-child > div[class^="dzen-desktop--"]:first-child > div[class^="dzen-desktop--"]:first-child + div[class^="dzen-"]:last-child:style(background: inherit !important)
 d28573 2
 a28574 2
-dzen.ru##[aria-label*="ра"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id]
-dzen.ru##[aria-label*="ра"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not(:last-child):not([aria-label])
+dzen.ru,sportsdzen.ru##[aria-label*="ра"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id]
+dzen.ru,sportsdzen.ru##[aria-label*="ра"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not([class*="-rubric-"]):not(:last-child):not([aria-label])
 d28583 1
 a28583 1
-dzen.ru##div[class^="news-"][style^="margin-top: 0px; height: calc(99.998% "]
+dzen.ru,sportsdzen.ru##div[class^="news-"][style^="margin-top: 0px; height: calc(99.998% "]
 d28590 1
 a28590 1
 dzen.ru##div[style*="12.362637362637"]
@@ -124,6 +124,9 @@ a28884 1
 a28903 2
 dynamo.kiev.ua##+js(abort-current-script, document.getElementById, document.body.style.overflow)
 lenta.ru##+js(abort-current-script, window._lentaData, url_for_scroll)
+d28912 1
+a28912 1
+dzen.ru,sportsdzen.ru##+js(abort-on-property-read, Object.prototype.UserBlocking)
 d28951 1
 a28951 1
 ritsatv.ru##+js(abort-on-property-read, console.clear)
@@ -131,6 +134,14 @@ d29026 1
 a29163 1
 www.kinopoisk.ru##+js(prevent-addEventListener, /canplay|loadeddata|playing|timeupdate/, '', elements, [poster][loop])
 d29191 1
+d29387 2
+a29388 2
+dzen.ru,sportsdzen.ru##:matches-path(/news) :matches-attr(/./=/feed/) > div:not([id]) > div[id*="feed"]
+dzen.ru,sportsdzen.ru##:matches-path(/news) div:matches-attr(/./=/misc-card/)
+d29445 2
+a29446 2
+dzen.ru,sportsdzen.ru##div:matches-attr(/./=/meta-channel-pinner/) > div > div
+dzen.ru,sportsdzen.ru##div:matches-attr(/./=/meta-channel-pinner/) > div[id]
 a29451 1
 dzen.ru##div:not([class^="dzen-desktop--trends-"]):matches-css(height: 212px):style(opacity: 0 !important)
 d29513 2

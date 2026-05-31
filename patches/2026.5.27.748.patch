@@ -1,8 +1,8 @@
-diff name:ruadlist lines:133 checksum:8cc9f6a7a5
+diff name:ruadlist lines:144 checksum:cb68d5f56a
 d4 2
 a5 2
-! Last modified: Sun, 31 May 2026 14:52:18 +0000
-! Diff-Path: ../patches/2026.5.31.892.patch#ruadlist
+! Last modified: Sun, 31 May 2026 20:18:25 +0000
+! Diff-Path: ../patches/2026.5.31.1218.patch#ruadlist
 d2538 1
 d5197 1
 a5197 1
@@ -106,11 +106,11 @@ dzen.ru##div[class^="dzen-desktop--"]:first-child:only-child > div[class^="dzen-
 dzen.ru##div[class^="dzen-desktop--"]:first-child:only-child > div[class^="dzen-desktop--"]:first-child > div[class^="dzen-desktop--"]:first-child + div[class^="dzen-"]:last-child:style(background: inherit !important)
 d28572 2
 a28573 2
-dzen.ru##[aria-label*="ра"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id]
-dzen.ru##[aria-label*="ра"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not(:last-child):not([aria-label])
+dzen.ru,sportsdzen.ru##[aria-label*="ра"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id]
+dzen.ru,sportsdzen.ru##[aria-label*="ра"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not([class*="-rubric-"]):not(:last-child):not([aria-label])
 d28582 1
 a28582 1
-dzen.ru##div[class^="news-"][style^="margin-top: 0px; height: calc(99.998% "]
+dzen.ru,sportsdzen.ru##div[class^="news-"][style^="margin-top: 0px; height: calc(99.998% "]
 d28589 1
 a28589 1
 dzen.ru##div[style*="12.362637362637"]
@@ -119,11 +119,22 @@ a28883 1
 1news.com.ua,365news.biz,4mama.ua,agroter.com.ua,apnews.com.ua,asiaplustj.info,autotema.org.ua,autotheme.info,avtodream.org,beauty.ua,chas.cv.ua,cheline.com.ua,cikavosti.com,ck.ua,cn.ua,comments.ua,cvnews.cv.ua,day.kyiv.ua,depo.ua,dv-gazeta.info,dyvys.info,economistua.com,expert.in.ua,fedpress.ru,firtka.if.ua,forpost.media,fraza.com,gazeta1.com,glavnoe24.ru,glavpost.ua,golosinfo.com.ua,gorodkiev.com.ua,grad.ua,greenpost.ua,ifnews.org.ua,inforpost.com,inkorr.com,itechua.com,kh.ua,khersonline.net,kolizhanka.com.ua,kop.net.ua,kr.ua,krymr.com,kurskcity.ru,liga.net,lvnews.org.ua,mega-music.pro,mi100.info,mind.ua,mistosumy.com,moirebenok.ua,mycompplus.ru,nashbryansk.ru,news24today.info,newsua.one,ngp-ua.info,nnews.com.ua,novavlada.info,novynarnia.com,np.pl.ua,odessa-life.od.ua,ogo.ua,panoptikon.org,pg11.ru,pik.net.ua,pingvin.pro,pl.com.ua,planetanovosti.com,podpricelom.com.ua,politnavigator.net,poltava365.com,portal.lviv.ua,pravdatutnews.com,prm.ua,procherk.info,profootball.ua,promin.cv.ua,radiosvoboda.org,ratel.kz,real-vin.com,reporter.ua,risu.ua,rivne.media,rivnenews.com.ua,rusjev.com,russianshowbiz.info,rv.ua,rvnews.rv.ua,showdream.org,sport-kr.com.ua,strana.news,strana.today,sud.ua,te.ua,telekritika.ua,tenews.org.ua,theageoffootball.com,tverigrad.ru,tverisport.ru,tvoymalysh.com.ua,uainfo.org,uanews.org.ua,uatv.ua,ukranews.com,ukrrain.com,vchaspik.ua,viva.ua,vlast.kz,vnn24.ru,volnorez.com.ua,volyninfa.com.ua,volyninfo.com,volynpost.com,volynua.com,vsviti.com.ua,westnews.info,womo.ua,wona.com.ua,wworld.com.ua,zbirna.com,zp.ua##+js(abort-current-inline-script, document.createElement, /ru-n4p|ua-n4p|загрузка.../)
 a28902 1
 dynamo.kiev.ua##+js(abort-current-script, document.getElementById, document.body.style.overflow)
+d28912 1
+a28912 1
+dzen.ru,sportsdzen.ru##+js(abort-on-property-read, Object.prototype.UserBlocking)
 d28951 1
 a28951 1
 ritsatv.ru##+js(abort-on-property-read, console.clear)
 d29026 1
 d29192 1
+d29388 2
+a29389 2
+dzen.ru,sportsdzen.ru##:matches-path(/news) :matches-attr(/./=/feed/) > div:not([id]) > div[id*="feed"]
+dzen.ru,sportsdzen.ru##:matches-path(/news) div:matches-attr(/./=/misc-card/)
+d29446 2
+a29447 2
+dzen.ru,sportsdzen.ru##div:matches-attr(/./=/meta-channel-pinner/) > div > div
+dzen.ru,sportsdzen.ru##div:matches-attr(/./=/meta-channel-pinner/) > div[id]
 a29452 1
 dzen.ru##div:not([class^="dzen-desktop--trends-"]):matches-css(height: 212px):style(opacity: 0 !important)
 d29554 1

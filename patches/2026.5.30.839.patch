@@ -1,8 +1,8 @@
-diff name:ruadlist lines:34 checksum:8cc9f6a7a5
+diff name:ruadlist lines:52 checksum:cb68d5f56a
 d4 2
 a5 2
-! Last modified: Sun, 31 May 2026 14:52:18 +0000
-! Diff-Path: ../patches/2026.5.31.892.patch#ruadlist
+! Last modified: Sun, 31 May 2026 20:18:25 +0000
+! Diff-Path: ../patches/2026.5.31.1218.patch#ruadlist
 d2538 1
 a11541 1
 ||dynamo.kiev.ua/media/bimg/
@@ -28,6 +28,24 @@ a24415 1
 ||cdn.eicom.ru/media/uploads/adv/$third-party
 a24417 1
 ||cdn.tmelectronics.ru/img/$third-party
+d28577 2
+a28578 2
+dzen.ru,sportsdzen.ru##[aria-label*="ра"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id]
+dzen.ru,sportsdzen.ru##[aria-label*="ра"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not([class*="-rubric-"]):not(:last-child):not([aria-label])
+d28587 1
+a28587 1
+dzen.ru,sportsdzen.ru##div[class^="news-"][style^="margin-top: 0px; height: calc(99.998% "]
+d28918 1
+a28918 1
+dzen.ru,sportsdzen.ru##+js(abort-on-property-read, Object.prototype.UserBlocking)
+d29392 2
+a29393 2
+dzen.ru,sportsdzen.ru##:matches-path(/news) :matches-attr(/./=/feed/) > div:not([id]) > div[id*="feed"]
+dzen.ru,sportsdzen.ru##:matches-path(/news) div:matches-attr(/./=/misc-card/)
+d29450 2
+a29451 2
+dzen.ru,sportsdzen.ru##div:matches-attr(/./=/meta-channel-pinner/) > div > div
+dzen.ru,sportsdzen.ru##div:matches-attr(/./=/meta-channel-pinner/) > div[id]
 d29559 1
 a29676 3
 ! ---
