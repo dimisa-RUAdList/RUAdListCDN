@@ -1,8 +1,8 @@
-diff name:ruadlist lines:52 checksum:b90b2557e1
+diff name:ruadlist lines:54 checksum:ccd06fbe19
 d4 2
 a5 2
-! Last modified: Mon, 01 Jun 2026 10:28:30 +0000
-! Diff-Path: ../patches/2026.6.1.628.patch#ruadlist
+! Last modified: Mon, 01 Jun 2026 16:44:27 +0000
+! Diff-Path: ../patches/2026.6.1.1004.patch#ruadlist
 d2538 1
 a11541 1
 ||dynamo.kiev.ua/media/bimg/
@@ -13,14 +13,16 @@ d13949 1
 d14549 1
 a17753 1
 radiokot.ru##.post[id] ~ .post:not([id])
+a18189 1
+newsarmenia.am##.showBanner
 a18645 1
 habr.com##.tm-page__wrapper > .content-blur:empty
 d19516 1
 a19517 1
 radiokot.ru##[src*="/adv/"]
-a20599 1
-opennet.me,opennet.ru##body > div[style$="width:100%; height: 62px;"]
 d21720 1
+a21720 1
+opennet.me,opennet.ru##div[style^="background-color: #E9EAD"][style*="; width:100%; height: 6"]
 d22657 1
 a22657 1
 www.avito.ru##[data-chunks="item"] + div > div:first-child > div:first-child > div[class] > div:first-child + div > div:first-child + div + div:last-child > div:only-child > div:first-child + div:last-child > div:only-child > div:first-child + div:last-child
