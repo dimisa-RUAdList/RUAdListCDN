@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 03 Jun 2026 05:05:50 +0000
-! Diff-Path: ../patches/2026.6.3.305.patch#ruadlist
+! Last modified: Wed, 03 Jun 2026 14:55:43 +0000
+! Diff-Path: ../patches/2026.6.3.895.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -7886,8 +7886,8 @@ _verified.php?code=*&server=runetki.com
 /?t=b&blockids=$script
 /?t=rot&pid=$script
 /\/[a-z]{1,3}\?zoneId\=\d{7}\-\d{7}$/$third-party,script
+/^https:\/\/[0-9a-f]{10}\.[0-9a-f]{10}\.com\/.*\.js$/$third-party,match-case,script
 /^https?://([^.]+\.)+[a-z]+\.(?:biz|ru|space)/[a-z][/?][-a-z0-9_?&=]{5,45}$/$third-party,script,domain=~hotcharts.ru
-/^https?://[0-9a-f]{10}\.[0-9a-f]{10}\.com\/[0-9a-f]{32}\.js$/$third-party,script
 /^https?:\/\/[-a-z]{6,}\.(?:com?|info|pro|xyz)\/[a-d][-.\/A-Z_a-z][DHWXm][-.\/A-Z_a-z][59FVZ][-.\/A-Z_a-z][6swyz][-.\/A-Z_a-z][-\/0-9A-Z_a-z][-.\/A-Z_a-z][-\/0-9A-Z_a-z]+(?:$|\?)/$third-party,match-case,script
 /a/ipn/js/*$third-party,script
 /a/pop/js/*$third-party,script
@@ -21677,6 +21677,7 @@ my.mosenergosbyt.ru#?#div[style="min-height: 50px;"]:-abp-has(> img[src*="/file/
 gagadget.com##div[style="min-height: 89px;"]
 technical.city##div[style="min-height: 90px"]
 turkcinema.org##div[style="min-height:120px;"]
+ostmusic.org##div[style="min-height:280px; text-align:center;"]
 meddaily.ru##div[style="overflow:hidden"] > div[align="center"][style^="height:"]
 gamer-info.com##div[style="overflow:hidden;"]
 baibako.tv##div[style="padding-bottom:15px;margin-bottom:15px;border-bottom:1px solid #dfdfdf;"]
@@ -22410,8 +22411,7 @@ ictv.ua,vikna.tv##div[id^="div-gpt-ad-"]
 ||dzen.ru/articles$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/news$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/pogoda/$script
-||static.dzeninfra.ru/s3/zen-apps/commets2/*/*/$script
-||static.dzeninfra.ru/s3/zen-apps/desktop2/*/*/$script
+||static.dzeninfra.ru/s3/zen-apps/*/*/*/$script
 $csp=script-src-attr 'none',domain=eurointegration.com.ua|sportanalytic.com|notebookcheck-ru.com
 /^https?://24smi\.org/*[/]*[/][^\s]{8,}/$xmlhttprequest,domain=24smi.org
 ://mail.ru$csp=img-src 'self' https:
@@ -23490,8 +23490,10 @@ rbc.ru,rbclifemedia.ru##.topline-desktop-link-branding
 autonews.ru,rbc.ru,rbcautonews.ru,rbcrealty.ru##.topline__branding__wrapper
 autonews.ru,rbc.ru,rbcautonews.ru,rbcrealty.ru,sportrbc.ru##.topline__disable-adv__button
 autonews.ru,rbc.ru,rbcautonews.ru,rbcrealty.ru,sportrbc.ru##.topline__item__image-block
+rbc.ru##.ui-branding-logo
 rbc.ru##.video-player__controls__ad-countdown
 rbc.ru##.weather-widget
+rbc.ru##.wrapper-top-line-branding
 /*betblock$domain=rbc.ru|sportrbc.ru
 /browser-updater$script,domain=autonews.ru|rbc.ru|sportrbc.ru
 /rbcbanners-*/_fullscreen.js$script,domain=autonews.ru|rbc.ru|rbcautonews.ru|sportrbc.ru
@@ -23506,9 +23508,7 @@ rbc.ru##[data-yandex-show="cards_marketplace_show"]
 rbc.ru##[data-yandex-show^="commercial_cards_"]
 autonews.ru,rbc.ru,sportrbc.ru,utro.ru##[id^="unit_"]
 rbc.ru##a.video-player__details[target="_blank"]
-quote.ru##a[href*="bannersdisable_button"]
 sportrbc.ru##a[href*="erid="][target="_blank"]
-quote.ru##a[href="https://quote.ru/?utm_source=topline"] img
 cnews.ru#?#a[href^="https://www.cnews.ru/redirect.php"]:-abp-contains(Дзен)
 autonews.ru,rbc.ru,rbcautonews.ru,sportrbc.ru##body div .banner__container
 autonews.ru,rbc.ru,sportrbc.ru##body div .banner__filmstrip
@@ -28533,7 +28533,7 @@ dzen.ru##a[href*="://yandex.ru/an/count/"]
 dzen.ru##a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~ div
 dzen.ru##article[data-card-type*="-promo"]
 dzen.ru##body:style(overflow-y: unset !important)
-dzen.ru##div[class*=" dzen-"][style^="--top-padding:"]
+dzen.ru##div[class*=" dzen-"] [style^="--top-padding:"]
 dzen.ru##div[class*="--corner-banner_"]
 dzen.ru##div[class*="-top-of-the-day-ad"]:style(opacity: 0 !important)
 dzen.ru##div[class*="__bannerContainer"]
@@ -29457,7 +29457,7 @@ dzen.ru##div:matches-attr(/[a-z0-9]/=/_ad-yp/)
 dzen.ru##div:matches-attr(/data-[a-z0-9]/=/-ad$/)
 dzen.ru##div:matches-attr(/data-is-/="false")
 dzen.ru##div:matches-path(/news/search?query=) [aria-label="Страница с новостями"] > div:only-child > div > div:first-child:not([style]):not([aria-label])
-dzen.ru##div:not([class^="dzen-desktop--trends-"]):matches-css(height: 212px):style(opacity: 0 !important)
+dzen.ru##div:not([class^="dzen-desktop--trends-"]):matches-css(height: 212px):matches-css(width: 365px):style(background: inherit  !important)
 dzen.ru##div[class^="news-"]:matches-attr(/./=/-stub/)
 ozon.ru##div[data-widget="banner"]:matches-path(/my/reviews/promo):style(display: block !important)
 pronpic.org##div[style="color:red;font-size:25px;"], .adblock_loock

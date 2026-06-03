@@ -1,9 +1,12 @@
-diff name:ruadlist lines:61 checksum:4d16ed4094
+diff name:ruadlist lines:81 checksum:9d0ec8ec48
 d4 2
 a5 2
-! Last modified: Wed, 03 Jun 2026 05:05:50 +0000
-! Diff-Path: ../patches/2026.6.3.305.patch#ruadlist
+! Last modified: Wed, 03 Jun 2026 14:55:43 +0000
+! Diff-Path: ../patches/2026.6.3.895.patch#ruadlist
 d2538 1
+a7889 1
+/^https:\/\/[0-9a-f]{10}\.[0-9a-f]{10}\.com\/.*\.js$/$third-party,match-case,script
+d7891 1
 a11541 1
 ||dynamo.kiev.ua/media/bimg/
 a12614 1
@@ -23,19 +26,33 @@ habr.com##.tm-page__wrapper > .content-blur:empty
 d19514 1
 a19515 1
 radiokot.ru##[src*="/adv/"]
+a21676 1
+ostmusic.org##div[style="min-height:280px; text-align:center;"]
 d21718 1
 a21718 1
 opennet.me,opennet.ru##div[style^="background-color: #E9EAD"][style*="; width:100%; height: 6"]
+d22410 2
+a22411 1
+||static.dzeninfra.ru/s3/zen-apps/*/*/*/$script
 d22441 1
 a22441 1
 ||pikabu.ru/ajax/*?Ht56l=$xmlhttprequest
 d22655 1
 a22655 1
 www.avito.ru##[data-chunks="item"] + div > div:first-child > div:first-child > div[class] > div:first-child + div > div:first-child + div + div:last-child > div:only-child > div:first-child + div:last-child > div:only-child > div:first-child + div:last-child
+a23489 1
+rbc.ru##.ui-branding-logo
+a23491 1
+rbc.ru##.wrapper-top-line-branding
+d23506 1
+d23508 1
 a24413 1
 ||cdn.eicom.ru/media/uploads/adv/$third-party
 a24415 1
 ||cdn.tmelectronics.ru/img/$third-party
+d28531 1
+a28531 1
+dzen.ru##div[class*=" dzen-"] [style^="--top-padding:"]
 d28575 2
 a28576 2
 dzen.ru,sportsdzen.ru##[aria-label*="ра"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id]
@@ -54,6 +71,9 @@ d29448 2
 a29449 2
 dzen.ru,sportsdzen.ru##div:matches-attr(/./=/meta-channel-pinner/) > div > div
 dzen.ru,sportsdzen.ru##div:matches-attr(/./=/meta-channel-pinner/) > div[id]
+d29455 1
+a29455 1
+dzen.ru##div:not([class^="dzen-desktop--trends-"]):matches-css(height: 212px):matches-css(width: 365px):style(background: inherit  !important)
 d29557 1
 d29675 2
 a29676 3
