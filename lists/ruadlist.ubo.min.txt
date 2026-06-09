@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 09 Jun 2026 04:19:06 +0000
-! Diff-Path: ../patches/2026.6.9.259.patch#ruadlist
+! Last modified: Tue, 09 Jun 2026 08:37:41 +0000
+! Diff-Path: ../patches/2026.6.9.517.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -23468,10 +23468,7 @@ pro.rbc.ru##.header__partner
 rbc.ru##.header__project__info
 rbc.ru#?#.item-in-article:-abp-has([href*="erid="])
 sportrbc.ru##.js-header-slider-container
-rbc.ru##.js-index-central-column .item-commercial-anons-wrapper
 cash.rbc.ru##.js-one-office.premium
-rbc.ru##.js-pro-slider__container
-rbc.ru##.js-snippet-pro-container
 rbc.ru##.js-video-player-ad-skip
 rbc.ru#?#.l-col-100h:-abp-has(> div [href*="banner"])
 rbc.ru##.mts-promo
@@ -23520,11 +23517,6 @@ cnews.ru#?#a[href^="https://www.cnews.ru/redirect.php"]:-abp-contains(Дзен)
 autonews.ru,rbc.ru,rbcautonews.ru,sportrbc.ru##body div .banner__container
 autonews.ru,rbc.ru,sportrbc.ru##body div .banner__filmstrip
 rbc.ru#?#body.free .intresting__list > .intresting__item:-abp-has(a[href^="https://pro.rbc.ru/"])
-rbc.ru#?#body.free .js-index-central-column > [data-publisher-index]:-abp-has([href^="https://pro.rbc.ru"])
-rbc.ru##body.free [data-vr-zone="Топ новости"] .main__feed::before
-rbc.ru##body.free [data-vr-zone="Топ новости"] a[href*="utm_campaign"]:not([href^="https://pro.rbc.ru/"])
-rbc.ru##body.free [data-vr-zone="Топ новости"] a[href^="https://pro.rbc.ru/"]
-rbc.ru#?#body.free [data-vr-zone="Топ новости"] div:-abp-has(> a[href*="utm_campaign"]:not([href^="https://pro.rbc.ru/"]))
 rbc.ru##body.free a.meta-info-row-project[href^="https://pro.rbc.ru"]
 rbc.ru##body.free a[class^="styles_message-bar_"][href^="https://pro.rbc.ru/"]
 rbc.ru#?#body.free aside.bside .sidebar:-abp-has(a[href^="https://pro.rbc.ru/"])
@@ -23538,7 +23530,9 @@ rbc.ru#?#body.free div[class="central-publisher-item"]:nth-child(-n+2):-abp-has(
 rbc.ru##body.free div[class^="MainNewsComponent_wrapper_"] [href^="https://pro.rbc.ru/"]
 rbc.ru##body.free div[class^="style_promo_"]
 rbc.ru##body.free div[data-name^="SpecialBlockPro"]
+rbc.ru##div[class="central-publisher-item"] a[href*="erid="]
 rbc.ru#?#div[class="central-publisher-item"]:-abp-has(.commercial-slider p:-abp-contains(Реклама))
+rbc.ru#?#div[class="central-publisher-item"]:-abp-has([href*="erid="])
 rbc.ru#?#div[class="central-publisher-item"]:-abp-has(div[class*="styles_word-break"]:-abp-contains(Реклама,))
 rbc.ru##div[class^="BsideBanner"]
 rbc.ru,sportrbc.ru##div[class^="bet-block"]
