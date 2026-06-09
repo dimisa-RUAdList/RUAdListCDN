@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 09 Jun 2026 08:37:41 +0000
-! Diff-Path: ../patches/2026.6.9.517.patch#ruadlist
+! Last modified: Tue, 09 Jun 2026 16:10:13 +0000
+! Diff-Path: ../patches/2026.6.9.970.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22120,6 +22120,7 @@ skmash.ru##p > script[src*="wmrfast.com"] ~ *
 benzin-price.ru#?#p > strong:-abp-contains(реклама)
 onfoto.ru##p > table[cellspacing="5"][cellpadding="0"][width="100%"] > tbody > tr > td[width="50%"][style="border: 1px solid #000;"]
 vc.ru##p a[href^="https://market.yandex.ru/"]
+sport.ua##p.accent-block
 cameleo.xyz#?#p.main:-abp-has([href*="bit.ly"])
 thg.ru#?#p:-abp-contains(Erid:)
 respawn.media#?#p:-abp-contains(Где купить)
