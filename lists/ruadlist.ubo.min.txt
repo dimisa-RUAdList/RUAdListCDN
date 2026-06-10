@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 10 Jun 2026 10:18:23 +0000
-! Diff-Path: ../patches/2026.6.10.618.patch#ruadlist
+! Last modified: Wed, 10 Jun 2026 14:27:04 +0000
+! Diff-Path: ../patches/2026.6.10.867.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22090,6 +22090,7 @@ tltnews.ru##noindex > marquee
 ruskino.ru##noindex > nofallow
 filebase.ws,torrent-bort.ru##noindex > nofollow
 peterburg2.ru##noindex > noindex
+small-games.info##noindex > p[style="margin-top: -10px; margin-bottom: 15px;"]
 medicina.ua##noindex > script[src^="/adv.php?"] ~ div
 torrents-soft.ru##noindex > table > tbody > tr > td[style^="width:50%"] > ul
 torrents-soft.ru##noindex > table > tbody > tr > td[style^="width:50%"][style*="#22c55e"]:first-child
@@ -22448,7 +22449,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=levik.blog|livejournal.c
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
 ||ng72.ru^$csp=script-src 'self' 'unsafe-eval' https:
-||pikabu.ru/ajax/*?ljh6T=$xmlhttprequest
+||pikabu.ru/ajax/*?pjD3y=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
