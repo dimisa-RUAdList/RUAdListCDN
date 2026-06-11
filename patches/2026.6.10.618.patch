@@ -1,8 +1,8 @@
-diff name:ruadlist lines:91 checksum:a32d12a0d3
+diff name:ruadlist lines:95 checksum:32f0263a65
 d4 2
 a5 2
-! Last modified: Thu, 11 Jun 2026 16:16:50 +0000
-! Diff-Path: ../patches/2026.6.11.976.patch#ruadlist
+! Last modified: Thu, 11 Jun 2026 22:08:58 +0000
+! Diff-Path: ../patches/2026.6.11.1328.patch#ruadlist
 a6542 1
 ||v-js-menu.run^$third-party
 a6772 1
@@ -41,8 +41,6 @@ a15860 1
 dtf.ru,vc.ru##.block-special-button > a[target="_blank"]
 a16467 1
 matchtv.ru##.e-ad-base-block
-a16516 1
-matchtv.ru##.f-bonus-button__icon-wrapper
 a16561 1
 rayon.in.ua##.flex-column-reverse > .d-none
 d16784 1
@@ -59,10 +57,14 @@ mukachevo.net,varta1.com.ua##.ova-place-block
 a17826 1
 versii.if.ua##.promo-slot
 d18378 1
+a19172 1
+matchtv.ru##[class*="f-bonus-"]
 a19428 1
 versii.if.ua##[href^="tel:"]
 a19496 1
 sverhestestvennoe.club##[itemprop="video"] > div[id][style*="pointer"]
+a20661 1
+rutube.sport##button[aria-label*="баннер"]
 d20722 1
 a20722 1
 versii.if.ua#?#div:-abp-has(> .indication-bor-rad)
@@ -70,6 +72,8 @@ a20851 1
 24tv.ua##div[class*="branding-placeholder"]
 a20983 1
 day.kyiv.ua##div[class^="_ads-"]
+a21142 1
+sovsport.ru##div[class^="matches-by-id_seo_text_"]
 a21695 1
 thepage.ua##div[style="position:relative;padding-bottom:56.25%;overflow:hidden"]
 a22037 1

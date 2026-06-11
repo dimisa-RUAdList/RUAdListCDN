@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 11 Jun 2026 16:16:50 +0000
-! Diff-Path: ../patches/2026.6.11.976.patch#ruadlist
+! Last modified: Thu, 11 Jun 2026 22:08:58 +0000
+! Diff-Path: ../patches/2026.6.11.1328.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -16524,7 +16524,6 @@ korabel.ru##.ext_link_img
 russian.rt.com##.external-widget
 pikabu.ru##.external_branding
 carsweek.ru##.extra
-matchtv.ru##.f-bonus-button__icon-wrapper
 superjob.ru#?#.f-test-search-result-item:-abp-has(> div > div .f-test-link-Podrobnee)
 superjob.ru#?#.f-test-search-result-item:-abp-has(> div li div:empty:first-child + div:empty)
 1777.ru##.f80
@@ -19183,6 +19182,7 @@ dni.ru##[class*="container"][class*="partner"]
 prokuzbass.ru##[class*="container-ad"]
 detaly.co.il##[class*="container_ads"]
 soft2u.ru##[class*="download-page__alt-ads"]
+matchtv.ru##[class*="f-bonus-"]
 kinorium.com##[class*="film-page__buttons-watch"]
 allboxing.ru##[class*="fullscreen-banner"]
 forum.guns.ru##[class*="hide"][class$="ban"]
@@ -20674,6 +20674,7 @@ hi-fi.ru##body[data-pageid] #ipsLayout_sidebar
 2gis.by,2gis.kz,2gis.ru##button > div[style^="width: 136px; height: 100%;"] ~ div[style*="pointer-events: auto"]
 novayagazeta.eu#?#button:-abp-has(> [src^="/vpnovaya_"])
 360.ru,riamo.ru#?#button:-abp-has(> svg > [clip-path*="dzen"])
+rutube.sport##button[aria-label*="баннер"]
 www.kinopoisk.ru##button[class*=" styles_adButton_"]
 flamp.ru##cat-banner
 exnews.org##center + noindex
@@ -21157,6 +21158,7 @@ sovsport.ru##div[class^="marquee_wrapper_"]
 sovsport.ru##div[class^="match-day_advBlock"]
 sovsport.ru##div[class^="match-day_footer_"]
 sovsport.ru##div[class^="matches-by-id_bkRating"]
+sovsport.ru##div[class^="matches-by-id_seo_text_"]
 itc.ua,mc.today##div[class^="max-"]
 baltanews.city,barnews.city,bilopillia.city,bilyayivka.city,chernihiv.city,chortkiv.city,dobronews.city,drohobych.city,energodar.city,fastivnews.city,gylyajpole.city,hadiach.city,haisyn.city,hlukhiv.city,horodok.city,izmacity.com,kagarlyk.city,kalushnews.city,kalynivka.city,kavun.city,kitsman.city,konotop.city,kremenets.city,kuma.city,lozova.city,mltpl.city,netishyn.city,nikopol.city,nizhyn.city,novakahovka.city,novograd.city,nsirogozy.city,oretsk.city,pereiaslav.city,petropavlivka.city,popasnaya.city,primorka.city,rakhiv.city,sarnynews.city,shostkanews.city,skadovsk.city,slavuta.city,starkon.city,susidy.city,svatove.city,thegard.city,tira.city,toretsk.city,troyitske.city,volnovakha.city,volodymyrets.city,yuzhkanews.city,zhmerynka.city,zoloto.city##div[class^="mc-banner"]
 metronews.ru##div[class^="metro_banner_"]
