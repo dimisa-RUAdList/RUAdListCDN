@@ -1,8 +1,8 @@
-diff name:ruadlist lines:88 checksum:1a0a95f7dc
+diff name:ruadlist lines:114 checksum:f153d16963
 d4 2
 a5 2
-! Last modified: Fri, 12 Jun 2026 12:26:52 +0000
-! Diff-Path: ../patches/2026.6.12.746.patch#ruadlist
+! Last modified: Fri, 12 Jun 2026 16:25:31 +0000
+! Diff-Path: ../patches/2026.6.12.985.patch#ruadlist
 a11285 1
 ||bonasus.livesport.ru/$subdocument
 d12224 2
@@ -49,6 +49,11 @@ a21044 1
 101.ru,1plus1.ua,46tv.ru,999.md,alau.kz,aldebaran.ru,asiarussia.ru,bezparazita.ru,botinok.porn,bountymax.ru,buzulukday.ru,calend.ru,chytomo.com,citydog.by,clubvolvo.ru,crazymailing.com,dnepr.info,dom2stars.ru,dota2.ru,el-polis.ru,gmod-fan.ru,gorod.dp.ua,gorod48.ru,gtavicecity.ru,hochu.ua,igry-online.net,infobank.by,internetua.com,kamchatinfo.com,kerchinfo.com,khersonline.net,kino-kingdom.com,klops.ru,kluch.media,kvnews.ru,kyiv-independent.com,libertycity.net,libertycity.ru,lipetskmedia.ru,manga24.ru,mashintop.ru,mediaryazan.ru,menquestions.ru,mgorod.kz,mobile-review.com,modernrock.ru,moya-semya.ru,musicforums.ru,nlo-mir.ru,nn.ru,novostroev.ru,nsday.ru,ntr-24.ru,nv.ua,nversia.ru,onlineradiobox.com,orenday.ru,perevolockday.ru,pln-pskov.ru,ponedelnik.info,postovoy.net,ppt.ru,psm7.com,rtraveler.ru,saltday.ru,sevkavportal.ru,sorochinskday.ru,sovets.net,sovets24.ru,spark.ru,sravni.ru,studfile.net,studfiles.net,subscribe.ru,telegraf.in.ua,the-village-kz.com,the-village.me,the-village.ru,tltonline.ru,torrents.in.ua,trisosny.ru,trymobile.ru,turkmenportal.com,tvzvezda.ru,ukrinform.ru,vdvsn.ru,vgtimes.com,vgtimes.ru,village.com.ua,vklybe.tv,vorle.ru,vse.sale,wheel-news.com,wincore.ru,womanhit.ru,worldofmods.ru,xn----7sbabrtfclecozdeg8b6a.xn--p1ai,yarik-sat.com,yarnews.net,zerno-ua.com,zhitomir.info,zn.ua,zoon.ru##div[class^="banner"]
 a21159 1
 sovsport.ru##div[class^="matches-by-id_seo_text_"]
+d22489 1
+a22489 1
+championat.com,championat.ru,lenta.ru##[class*="scroll-to-site"] {remove:true;}
+a23341 1
+championat.com,championat.ru##.gift-banner
 a23591 2
 sports.ru##.ad-banner-layout
 sports.ru##.app-ratings
@@ -74,6 +79,9 @@ sports.ru##a[href*="/click?offer_id="][href*="landing_"][href*="partner_"]
 sports.ru##a[href*="/odds/"]
 a23700 1
 ||senoval.cdn.sports.ru/betting-content/
+d27629 1
+a27629 1
+net,org##body.branded:not([id]):not([style]) > #wrapper:not([class]):not([style]):style(margin-top: unset !important)
 d27900 1
 a27900 1
 livecars.ru##.content:style(margin-top: 0 !important)
@@ -87,3 +95,21 @@ dzen.ru##div[class^="dzen-layout--desktop-page-layout__afterHeader-"] div:only-c
 dzen.ru##div[class^="dzen-layout--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child:style(background-color: inherit !important)
 dzen.ru##div[class^="dzen-layout--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty + div:last-child div:style(background-color: inherit !important)
 dzen.ru##div[class^="dzen-layout--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty:style(background-color: inherit !important)
+d28999 1
+a28999 1
+buhplatforma.com.ua,championat.com,championat.ru,doramy.club,dzplatforma.com.ua,medplatforma.com.ua,oblikbudget.com.ua,oplatforma.com.ua,pro-op.com.ua,prokadry.com.ua,turkish-tv-series.ru##+js(abort-on-property-read, getSelection)
+d29083 1
+a29083 1
+championat.com,championat.ru##+js(addEventListener-defuser, scroll, window.location.href)
+d29337 1
+a29337 1
+championat.com,championat.ru,ferra.ru,gazeta.press,gazeta.ru,indicator.ru,lenta.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,secretmag.ru,wmj.ru##+js(set-cookie, unity_pause_sso, 1, '', reload, 1)
+d29435 1
+a29435 1
+championat.com,championat.ru,lenta.ru##[class*="scroll-to-site"]:remove()
+d29765 1
+a29765 1
+||zoomdecorate.rambler.ru^$script,redirect=noopjs,domain=afisha.ru|autorambler.ru|championat.com|championat.ru|eda.ru|gazeta.press|gazeta.ru|lenta.ru|letidor.ru|moslenta.ru|motor.ru|passion.ru|quto.ru|rambler.ru|wmj.ru
+d29775 1
+a29775 1
+afisha.ru,autorambler.ru,championat.com,championat.ru,eda.ru,gazeta.press,gazeta.ru,lenta.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,rambler.ru,wmj.ru##+js(abort-current-inline-script, dispatchEvent, zoomdecorate)

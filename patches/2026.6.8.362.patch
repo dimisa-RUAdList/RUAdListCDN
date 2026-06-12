@@ -1,8 +1,8 @@
-diff name:ruadlist lines:217 checksum:1a0a95f7dc
+diff name:ruadlist lines:243 checksum:f153d16963
 d4 2
 a5 2
-! Last modified: Fri, 12 Jun 2026 12:26:52 +0000
-! Diff-Path: ../patches/2026.6.12.746.patch#ruadlist
+! Last modified: Fri, 12 Jun 2026 16:25:31 +0000
+! Diff-Path: ../patches/2026.6.12.985.patch#ruadlist
 a6542 1
 ||v-js-menu.run^$third-party
 a6772 1
@@ -149,6 +149,11 @@ habinfo.ru##section[class^="container-ad"]
 d22445 1
 a22445 1
 ||pikabu.ru/ajax/*?pjD3y=$xmlhttprequest
+d22463 1
+a22463 1
+championat.com,championat.ru,lenta.ru##[class*="scroll-to-site"] {remove:true;}
+a23315 1
+championat.com,championat.ru##.gift-banner
 a23352 1
 sport.rambler.ru#?#[data-sport_media-desktop="content_block"] ~ div div:-abp-has(> div > [data-rcmw-init])
 d23465 1
@@ -194,6 +199,9 @@ a27589 3
 habinfo.ru##.box-day-widget
 habinfo.ru##.header:style(height: auto !important)
 ! ---
+d27603 1
+a27603 1
+net,org##body.branded:not([id]):not([style]) > #wrapper:not([class]):not([style]):style(margin-top: unset !important)
 d27820 1
 a27820 1
 kinovibe.cc##div[class^="center-box"]:style(margin-top: unset !important)
@@ -214,5 +222,23 @@ dzen.ru##div[class^="dzen-layout--desktop-page-layout__afterHeader-"] div:only-c
 dzen.ru##div[class^="dzen-layout--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child:style(background-color: inherit !important)
 dzen.ru##div[class^="dzen-layout--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty + div:last-child div:style(background-color: inherit !important)
 dzen.ru##div[class^="dzen-layout--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty:style(background-color: inherit !important)
+d28976 1
+a28976 1
+buhplatforma.com.ua,championat.com,championat.ru,doramy.club,dzplatforma.com.ua,medplatforma.com.ua,oblikbudget.com.ua,oplatforma.com.ua,pro-op.com.ua,prokadry.com.ua,turkish-tv-series.ru##+js(abort-on-property-read, getSelection)
+d29060 1
+a29060 1
+championat.com,championat.ru##+js(addEventListener-defuser, scroll, window.location.href)
+d29314 1
+a29314 1
+championat.com,championat.ru,ferra.ru,gazeta.press,gazeta.ru,indicator.ru,lenta.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,secretmag.ru,wmj.ru##+js(set-cookie, unity_pause_sso, 1, '', reload, 1)
+d29412 1
+a29412 1
+championat.com,championat.ru,lenta.ru##[class*="scroll-to-site"]:remove()
 a29541 1
 ||widgets.kinopoisk.ru/discovery/trailer/*&loop=1&autoplay=1$subdocument,domain=www.kinopoisk.ru
+d29741 1
+a29741 1
+||zoomdecorate.rambler.ru^$script,redirect=noopjs,domain=afisha.ru|autorambler.ru|championat.com|championat.ru|eda.ru|gazeta.press|gazeta.ru|lenta.ru|letidor.ru|moslenta.ru|motor.ru|passion.ru|quto.ru|rambler.ru|wmj.ru
+d29751 1
+a29751 1
+afisha.ru,autorambler.ru,championat.com,championat.ru,eda.ru,gazeta.press,gazeta.ru,lenta.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,rambler.ru,wmj.ru##+js(abort-current-inline-script, dispatchEvent, zoomdecorate)

@@ -1,8 +1,8 @@
-diff name:ruadlist lines:155 checksum:1a0a95f7dc
+diff name:ruadlist lines:181 checksum:f153d16963
 d4 2
 a5 2
-! Last modified: Fri, 12 Jun 2026 12:26:52 +0000
-! Diff-Path: ../patches/2026.6.12.746.patch#ruadlist
+! Last modified: Fri, 12 Jun 2026 16:25:31 +0000
+! Diff-Path: ../patches/2026.6.12.985.patch#ruadlist
 a6773 1
 ||vrglcmzgbj.com^$third-party
 d7876 1
@@ -107,6 +107,11 @@ a21697 1
 thepage.ua##div[style="position:relative;padding-bottom:56.25%;overflow:hidden"]
 a22039 1
 versii.if.ua#?#main > [class="brxe-section"]:-abp-has(.indication-bor-rad)
+d22472 1
+a22472 1
+championat.com,championat.ru,lenta.ru##[class*="scroll-to-site"] {remove:true;}
+a23324 1
+championat.com,championat.ru##.gift-banner
 a23574 2
 sports.ru##.ad-banner-layout
 sports.ru##.app-ratings
@@ -137,6 +142,9 @@ a23682 1
 d23770 1
 a23770 1
 ya.ru##section[style*="sektillon-items-count:"]
+d27611 1
+a27611 1
+net,org##body.branded:not([id]):not([style]) > #wrapper:not([class]):not([style]):style(margin-top: unset !important)
 d27882 1
 a27882 1
 livecars.ru##.content:style(margin-top: 0 !important)
@@ -154,3 +162,21 @@ dzen.ru##div[class^="dzen-layout--desktop-page-layout__afterHeader-"] div:only-c
 dzen.ru##div[class^="dzen-layout--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child:style(background-color: inherit !important)
 dzen.ru##div[class^="dzen-layout--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty + div:last-child div:style(background-color: inherit !important)
 dzen.ru##div[class^="dzen-layout--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty:style(background-color: inherit !important)
+d28984 1
+a28984 1
+buhplatforma.com.ua,championat.com,championat.ru,doramy.club,dzplatforma.com.ua,medplatforma.com.ua,oblikbudget.com.ua,oplatforma.com.ua,pro-op.com.ua,prokadry.com.ua,turkish-tv-series.ru##+js(abort-on-property-read, getSelection)
+d29068 1
+a29068 1
+championat.com,championat.ru##+js(addEventListener-defuser, scroll, window.location.href)
+d29322 1
+a29322 1
+championat.com,championat.ru,ferra.ru,gazeta.press,gazeta.ru,indicator.ru,lenta.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,secretmag.ru,wmj.ru##+js(set-cookie, unity_pause_sso, 1, '', reload, 1)
+d29420 1
+a29420 1
+championat.com,championat.ru,lenta.ru##[class*="scroll-to-site"]:remove()
+d29750 1
+a29750 1
+||zoomdecorate.rambler.ru^$script,redirect=noopjs,domain=afisha.ru|autorambler.ru|championat.com|championat.ru|eda.ru|gazeta.press|gazeta.ru|lenta.ru|letidor.ru|moslenta.ru|motor.ru|passion.ru|quto.ru|rambler.ru|wmj.ru
+d29760 1
+a29760 1
+afisha.ru,autorambler.ru,championat.com,championat.ru,eda.ru,gazeta.press,gazeta.ru,lenta.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,rambler.ru,wmj.ru##+js(abort-current-inline-script, dispatchEvent, zoomdecorate)
