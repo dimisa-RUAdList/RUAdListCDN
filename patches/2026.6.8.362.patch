@@ -1,8 +1,8 @@
-diff name:ruadlist lines:140 checksum:0787cd8434
+diff name:ruadlist lines:217 checksum:1a0a95f7dc
 d4 2
 a5 2
-! Last modified: Fri, 12 Jun 2026 04:57:16 +0000
-! Diff-Path: ../patches/2026.6.12.297.patch#ruadlist
+! Last modified: Fri, 12 Jun 2026 12:26:52 +0000
+! Diff-Path: ../patches/2026.6.12.746.patch#ruadlist
 a6542 1
 ||v-js-menu.run^$third-party
 a6772 1
@@ -25,10 +25,15 @@ a10841 1
 /upload/rk/*$domain=37.ru|62info.ru|actualcomment.ru|afanasy.biz|agrostory.com|arsenaltula.ru|asn24.ru|automobili.ru|avtosreda.ru|baikal-daily.ru|bits.media|con-med.ru|cryptolymp.ru|dnl.com.ua|dnl.dn.ua|floraprice.ru|footballreview.ru|go64.ru|gorod3466.ru|gorod48.ru|gorodarmavir.ru|gubkinskiy.com|hi-fi.ru|hsl.com.ua|i2hard.ru|infoniac.ru|innov.ru|it-world.ru|k1news.ru|kluch.media|kubnews.ru|lgz.ru|likeni.ru|lipetskmedia.ru|marpravda.ru|matchfishing.ru|mediaryazan.ru|mk.tula.ru|mnmag.ru|mos.news|newkaliningrad.ru|newsroom24.ru|nmosktoday.com|officelife.media|ohranatruda.ru|onlinetambov.ru|paparazzi.ru|planetaseminarov.ru|portamur.ru|rabochy-put.ru|riavrn.ru|ruwest.ru|securitylab.ru|seonews.ru|sochi.com|todaykhv.ru|trk7.ru|tvk6.ru|ural56.ru|vdvsn.ru|velikiynovgorod.ru|vladtv.ru|vn.ru|vt-inform.ru|x-race.info|yantann.rbsmi.ru|yanzori.rbsmi.ru|zebra-tv.ru|zi.ua
 a10880 1
 _video_banner.mp4$domain=enovosty.com
+a11280 1
+||bonasus.livesport.ru/$subdocument
 a11732 1
 ||galka-if-ua.b-cdn.net/app/uploads/*.gif
 a12199 1
 ||list.in.ua/ajax/get-banners
+d12217 2
+a12218 1
+||livesport.ru/*/wow
 a13026 1
 ||s.m24.ru/
 a13366 1
@@ -38,8 +43,21 @@ a13522 1
 ||varta1.com.ua/bundle/assets/place-block-
 a13534 1
 ||versii.if.ua/wp-content/themes/bricks-child/inc/ads-rotation.js
+a15376 1
+livesport.ru##.article-betline
+a15388 1
+livesport.ru##.article-odds
+a15395 2
+livesport.ru##.article-tipsvrez
+livesport.ru##.article-vote
+a15437 1
+livesport.ru##.aside-betting
+a15439 1
+livesport.ru##.aside-bonus
 a15461 1
 enovosty.com##.auto-banner
+a15491 1
+ukranews.com##.b-banner-bottom
 a15678 1
 rayon.in.ua##.banner-slot-container
 d15752 1
@@ -48,6 +66,8 @@ a15752 1
 d15857 1
 a15857 1
 dtf.ru,vc.ru##.block-special-button > a[target="_blank"]
+a15973 1
+ua-football.com##.bookmakers-top__wrapper
 a16464 1
 matchtv.ru##.e-ad-base-block
 a16558 1
@@ -62,14 +82,24 @@ a17031 1
 habinfo.ru##.k-box-adv
 a17062 1
 rayon.in.ua#?#.latestNews__list > .latestNews__item:-abp-has(> a > div > .latestNewsCard__tag:-abp-contains(РЕКЛАМА))
+a17401 1
+livesport.ru##.name-like-h3
+a17513 1
+ua-football.com##.notification-bonus
 d17555 1
 a17555 1
 mukachevo.net,varta1.com.ua##.ova-place-block
+a17798 1
+livesport.ru##.pro-gift
 a17822 1
 versii.if.ua##.promo-slot
+a18186 1
+ua-football.com#?#.show-post > div[style]:-abp-has(a[href^="https://sport.ua/go/"])
 d18374 1
 a18383 1
 m24.ru##.sm24-floor-ad
+a19121 1
+livesport.ru##[aria-label="Партнёрское объявление"]
 a19167 1
 matchtv.ru##[class*="f-bonus-"]
 d19324 1
@@ -82,6 +112,12 @@ a19421 1
 versii.if.ua##[href^="tel:"]
 a19489 1
 sverhestestvennoe.club##[itemprop="video"] > div[id][style*="pointer"]
+a19642 1
+livesport.ru##a[href*="-tiz"]
+a20284 1
+ua-football.com##a[href^="https://advertlinks.info/"]
+a20488 1
+livesport.ru##aside.right > a[target="_blank"]
 a20654 1
 rutube.sport##button[aria-label*="баннер"]
 d20715 1
@@ -92,6 +128,9 @@ a20844 1
 d20936 3
 a20979 1
 day.kyiv.ua##div[class^="_ads-"]
+d21023 1
+a21023 1
+101.ru,1plus1.ua,46tv.ru,999.md,alau.kz,aldebaran.ru,asiarussia.ru,bezparazita.ru,botinok.porn,bountymax.ru,buzulukday.ru,calend.ru,chytomo.com,citydog.by,clubvolvo.ru,crazymailing.com,dnepr.info,dom2stars.ru,dota2.ru,el-polis.ru,gmod-fan.ru,gorod.dp.ua,gorod48.ru,gtavicecity.ru,hochu.ua,igry-online.net,infobank.by,internetua.com,kamchatinfo.com,kerchinfo.com,khersonline.net,kino-kingdom.com,klops.ru,kluch.media,kvnews.ru,kyiv-independent.com,libertycity.net,libertycity.ru,lipetskmedia.ru,manga24.ru,mashintop.ru,mediaryazan.ru,menquestions.ru,mgorod.kz,mobile-review.com,modernrock.ru,moya-semya.ru,musicforums.ru,nlo-mir.ru,nn.ru,novostroev.ru,nsday.ru,ntr-24.ru,nv.ua,nversia.ru,onlineradiobox.com,orenday.ru,perevolockday.ru,pln-pskov.ru,ponedelnik.info,postovoy.net,ppt.ru,psm7.com,rtraveler.ru,saltday.ru,sevkavportal.ru,sorochinskday.ru,sovets.net,sovets24.ru,spark.ru,sravni.ru,studfile.net,studfiles.net,subscribe.ru,telegraf.in.ua,the-village-kz.com,the-village.me,the-village.ru,tltonline.ru,torrents.in.ua,trisosny.ru,trymobile.ru,turkmenportal.com,tvzvezda.ru,ukrinform.ru,vdvsn.ru,vgtimes.com,vgtimes.ru,village.com.ua,vklybe.tv,vorle.ru,vse.sale,wheel-news.com,wincore.ru,womanhit.ru,worldofmods.ru,xn----7sbabrtfclecozdeg8b6a.xn--p1ai,yarik-sat.com,yarnews.net,zerno-ua.com,zhitomir.info,zn.ua,zoon.ru##div[class^="banner"]
 a21138 1
 sovsport.ru##div[class^="matches-by-id_seo_text_"]
 a21691 1
@@ -119,8 +158,33 @@ a23534 1
 rbc.ru##div[class="central-publisher-item"] a[href*="erid="]
 a23535 1
 rbc.ru#?#div[class="central-publisher-item"]:-abp-has([href*="erid="])
+a23570 2
+sports.ru##.ad-banner-layout
+sports.ru##.app-ratings
+a23571 1
+sports.ru##.bookmaker-bonus-block
+a23588 3
+sports.ru##.match-factoid-item__betting
+sports.ru##.match-factoid-item__bookmaker-button
+sports.ru#?#.match-poll:not(:-abp-has(*))
+a23610 1
+sports.ru##.post-layout__frame
+a23615 1
+sports.ru##.reliable-bookmakers
+a23625 1
+sports.ru##.widget-odds
+a23627 2
+sports.ru#?#[analytic-id="facts"]:not(:-abp-has(*))
+sports.ru##[bonus-sum]
+a23646 1
+sports.ru##[type="bookmaker-bonus"]
+a23649 2
+sports.ru##a[href*="/click?offer_id="][href*="landing_"][href*="partner_"]
+sports.ru##a[href*="/odds/"]
 a23661 1
 tribuna.com#?#div:-abp-has(> div > [style="display: flex;"] > div[id*="_Inread"])
+a23678 1
+||senoval.cdn.sports.ru/betting-content/
 d23766 1
 a23766 1
 ya.ru##section[style*="sektillon-items-count:"]
@@ -133,9 +197,22 @@ habinfo.ru##.header:style(height: auto !important)
 d27820 1
 a27820 1
 kinovibe.cc##div[class^="center-box"]:style(margin-top: unset !important)
+d27874 1
+a27874 1
+livecars.ru##.content:style(margin-top: 0 !important)
+a27889 3
+livesport.ru##body:style(background-color: inherit !important)
+livesport.ru##main:style(margin-top: 0 !important)
+! ---
 d28150 3
 d28510 1
 a28510 1
 ya.ru##html[class*="sektillon_top"] aside + div
+d28541 4
+a28545 4
+dzen.ru##div[class^="dzen-layout--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child > div:only-child:style(border: inherit !important)
+dzen.ru##div[class^="dzen-layout--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child:style(background-color: inherit !important)
+dzen.ru##div[class^="dzen-layout--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty + div:last-child div:style(background-color: inherit !important)
+dzen.ru##div[class^="dzen-layout--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty:style(background-color: inherit !important)
 a29541 1
 ||widgets.kinopoisk.ru/discovery/trailer/*&loop=1&autoplay=1$subdocument,domain=www.kinopoisk.ru
