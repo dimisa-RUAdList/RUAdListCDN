@@ -1,8 +1,8 @@
-diff name:ruadlist lines:204 checksum:a2201f26ce
+diff name:ruadlist lines:228 checksum:88eccfaf6e
 d4 2
 a5 2
-! Last modified: Sat, 13 Jun 2026 11:22:31 +0000
-! Diff-Path: ../patches/2026.6.13.682.patch#ruadlist
+! Last modified: Sat, 13 Jun 2026 16:40:25 +0000
+! Diff-Path: ../patches/2026.6.13.1000.patch#ruadlist
 a6542 1
 ||v-js-menu.run^$third-party
 a6772 1
@@ -24,6 +24,8 @@ a11281 1
 ||bonasus.livesport.ru/$subdocument
 a11733 1
 ||galka-if-ua.b-cdn.net/app/uploads/*.gif
+a11754 1
+||gazeta.bo/api/banner/
 a12200 1
 ||list.in.ua/ajax/get-banners
 d12218 2
@@ -77,6 +79,8 @@ a17405 1
 livesport.ru##.name-like-h3
 a17517 1
 ua-football.com##.notification-bonus
+a17518 1
+business-gazeta.ru##.nova--wrapper
 d17559 1
 a17559 1
 mukachevo.net,varta1.com.ua##.ova-place-block
@@ -91,6 +95,8 @@ a19126 1
 livesport.ru##[aria-label="Партнёрское объявление"]
 a19172 1
 matchtv.ru##[class*="f-bonus-"]
+a19363 1
+business-gazeta.ru##[data-slot]
 a19428 1
 versii.if.ua##[href^="tel:"]
 a19496 1
@@ -128,6 +134,9 @@ versii.if.ua#?#main > [class="brxe-section"]:-abp-has(.indication-bor-rad)
 d22470 1
 a22470 1
 championat.com,championat.ru,lenta.ru##[class*="scroll-to-site"] {remove:true;}
+d23299 1
+a23299 1
+sport.rambler.ru,weekend.rambler.ru###app > div[style^="background:"]
 a23322 1
 championat.com,championat.ru##.gift-banner
 a23572 2
@@ -143,20 +152,32 @@ a23612 1
 sports.ru##.post-layout__frame
 a23617 1
 sports.ru##.reliable-bookmakers
+a23625 1
+sports.ru##.super-top
 a23627 1
 sports.ru##.widget-odds
 a23629 2
 sports.ru#?#[analytic-id="facts"]:not(:-abp-has(*))
 sports.ru##[bonus-sum]
+a23636 1
+sports.ru##[data-content-name="banner-static"][data-content-piece^="SALES-"]
+a23644 2
+sports.ru##[data-link*="=erid"]
+sports.ru##[data-link*="erid="]
 a23648 1
 sports.ru##[type="bookmaker-bonus"]
-a23651 2
+a23651 3
 sports.ru##a[href*="/click?offer_id="][href*="landing_"][href*="partner_"]
 sports.ru##a[href*="/odds/"]
+sports.ru##a[href*="=erid"]
+a23653 1
+sports.ru##a[href*="erid="]
 a23663 1
 tribuna.com#?#div:-abp-has(> div > [style="display: flex;"] > div[id*="_Inread"])
 a23680 1
 ||senoval.cdn.sports.ru/betting-content/
+a23683 1
+||sports.ru/special/supertop-iframe/
 d23768 1
 a23768 1
 ya.ru##section[style*="sektillon-items-count:"]
@@ -176,6 +197,7 @@ livesport.ru##body:style(background-color: inherit !important)
 livesport.ru##main:style(margin-top: 0 !important)
 ! ---
 d28155 3
+d28306 1
 d28515 1
 a28515 1
 ya.ru##html[class*="sektillon_top"] aside + div
@@ -197,6 +219,8 @@ championat.com,championat.ru,ferra.ru,gazeta.press,gazeta.ru,indicator.ru,lenta.
 d29417 1
 a29417 1
 championat.com,championat.ru,lenta.ru##[class*="scroll-to-site"]:remove()
+a29534 1
+||rutube.ru/play/embed/*?dist=$subdocument,removeparam=autoplay
 d29747 1
 a29747 1
 ||zoomdecorate.rambler.ru^$script,redirect=noopjs,domain=afisha.ru|autorambler.ru|championat.com|championat.ru|eda.ru|gazeta.press|gazeta.ru|lenta.ru|letidor.ru|moslenta.ru|motor.ru|passion.ru|quto.ru|rambler.ru|wmj.ru

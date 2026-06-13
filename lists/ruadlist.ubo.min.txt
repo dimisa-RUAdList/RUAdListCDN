@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 13 Jun 2026 11:22:31 +0000
-! Diff-Path: ../patches/2026.6.13.682.patch#ruadlist
+! Last modified: Sat, 13 Jun 2026 16:40:25 +0000
+! Diff-Path: ../patches/2026.6.13.1000.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -11758,6 +11758,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||garant.ru/images/*/goldfish/
 ||gastri.ru/wp-content/uploads/
 ||gay.ru/a2/
+||gazeta.bo/api/banner/
 ||gazetabalakovo.ru/wp-content/uploads/*/rek.$image
 ||gazetametro.ru/commercial/banners/
 ||gcmsite.ru/img/nostromo-x.jpg
@@ -17539,6 +17540,7 @@ esp8266.ru##.notice[data-notice-id="1"]
 sandero.ru##.notices_img_ad
 ua-football.com##.notification-bonus
 audiopoisk.narod.ru##.noun
+business-gazeta.ru##.nova--wrapper
 wi-fi.ru##.novelty-aside__i_ad
 mmatoday.info##.npt
 novostroykin.ru##.ntgb_
@@ -19388,6 +19390,7 @@ smi2.ru##[data-sentry-component="PartnersBlock"]
 remanga.org##[data-sentry-source-file="promobanners.tsx"]
 tgstat.com,tgstat.ru##[data-slick*="autoplay"]
 zr.ru##[data-slot-name]
+business-gazeta.ru##[data-slot]
 iphones.ru##[data-slug="damprodam"]
 arbatmedia.kz##[data-smi-widget-id]
 mac.org.ua##[data-src*="bashmac"]
@@ -23334,7 +23337,7 @@ pg11.ru,pg12.ru,pg13.ru,pg21.ru,prochepetsk.ru,prodzer.ru,progorod33.ru,progorod
 gazeta.ru###_id_sber_auth
 www.rambler.ru###app > .ad
 auto.rambler.ru,avtorambler.com###app > .ad_branding_header ~ div[class] > div[class]:empty
-weekend.rambler.ru###app > div[style^="background:"]
+sport.rambler.ru,weekend.rambler.ru###app > div[style^="background:"]
 www.rambler.ru###app > script + div
 eda.ru###billboard
 daily.afisha.ru###partners-news-container
@@ -23670,6 +23673,7 @@ sports.ru##.short-news > [data-content-name]
 sports.ru##.short-news > br
 sports.ru#?#.short-news > p:-abp-has(> .advert_material)
 sports.ru##.social-links__zn
+sports.ru##.super-top
 sports.ru##.teaser-before-links__adv-label
 cyber.sports.ru##.teaser-bookmaker
 sports.ru##.widget-odds
@@ -23684,6 +23688,7 @@ sports.ru#?#[class]:-abp-has(> .aside-news-list__advert:-abp-contains(Рекла
 sports.ru##[data-banner-id]
 sports.ru##[data-banner-type]
 sports.ru##[data-content-name="banner-dfp"]
+sports.ru##[data-content-name="banner-static"][data-content-piece^="SALES-"]
 sports.ru#?#[data-control*="Common.CarouselOfCards"]:-abp-has(a[href^="https://sirena.world/"])
 sports.ru##[data-control*="Videonow"]
 sports.ru##[data-control*="adblock"]
@@ -23692,6 +23697,8 @@ sports.ru##[data-control="Stat.OkkoButton"]
 sports.ru##[data-control^="Aliens."]
 sports.ru##[data-control^="Banners."]
 sports.ru##[data-is-ad-poll] .bookmaker-info
+sports.ru##[data-link*="=erid"]
+sports.ru##[data-link*="erid="]
 sports.ru##[data-type="reklama"]
 sports.ru##[id*="ScriptRoot"]
 sports.ru##[id^="dfp-fullscreen-"]
@@ -23702,8 +23709,10 @@ tribuna.com##a[href*="/bet/"]
 tribuna.com##a[href*="/betting/"]
 sports.ru##a[href*="/click?offer_id="][href*="landing_"][href*="partner_"]
 sports.ru##a[href*="/odds/"]
+sports.ru##a[href*="=erid"]
 tribuna.com##a[href*="bit.ly"]
 sports.ru##a[href*="click"][target="_blank"][style^="display"]
+sports.ru##a[href*="erid="]
 sports.ru##a[href*="fon.bet/"]
 sports.ru,tribuna.com##a[href*="utm_campai"]
 sports.ru##a[href="https://trbna.co/2u3V2dO"]
@@ -23736,6 +23745,7 @@ sports.ru##style:first-child ~ [class^="gift__"]
 ||senoval.cdn.sports.ru/cross-recommender/
 ||senoval.cdn.sports.ru/news-renderer/public/SparrowRecommendations-
 ||senoval.cdn.sports.ru/s-presence/sblock-presence.min.js
+||sports.ru/special/supertop-iframe/
 ||sports.ru^*/banners/
 ||static.*.tribuna.com/_next/static/chunks/3340.a9e1afb602402a44.js
 ||taboola.com^$domain=sports.ru|tribuna.com
@@ -28359,7 +28369,6 @@ sports.ru###branding-layout:style(pointer-events: none !important)
 sports.ru##.columns-layout__right > div > div[id][class]:style(min-height: 0 !important)
 sports.ru##.x5-popup-overlay
 sports.ru##:not(.nba-global-nav-wrapper) + #branding-layout:not(#id):style(margin-top: 96px !important)
-sports.ru##[data-content-name="banner-static"]:style(position: fixed !important; left: -10000px !important; transform: scale(0) !important; display: none !important)
 sports.ru##body > div[id][style="padding-top: 306px; margin-top: 0px;"]:style(padding-top: 96px !important)
 sports.ru##body.img-bg:style(padding-top: 0 !important)
 sports.ru##body.is-fixed:style(overflow: auto !important)
@@ -29588,6 +29597,7 @@ ya.ru,yandex.*##.simple-popup__overlay:remove()
 ||pronpic.org^$third-party,badfilter
 ||rbk.ru/*/_videoAutoplayRecommend.js
 ||rbk.ru/*/build/fn/_oprosso.js
+||rutube.ru/play/embed/*?dist=$subdocument,removeparam=autoplay
 ||s-cdn.org/promo/*.mp4$media,redirect=noop-0.1s.mp3,domain=player-films.online
 ||s-club.tv/promo/*.mp4$media,redirect=noop-0.1s.mp3,domain=player-films.online
 ||skam.online^$csp=script-src 'self' * 'unsafe-eval' data:,badfilter

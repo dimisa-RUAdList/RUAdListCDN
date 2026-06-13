@@ -1,10 +1,16 @@
-diff name:ruadlist lines:47 checksum:a2201f26ce
+diff name:ruadlist lines:72 checksum:88eccfaf6e
 d4 2
 a5 2
-! Last modified: Sat, 13 Jun 2026 11:22:31 +0000
-! Diff-Path: ../patches/2026.6.13.682.patch#ruadlist
+! Last modified: Sat, 13 Jun 2026 16:40:25 +0000
+! Diff-Path: ../patches/2026.6.13.1000.patch#ruadlist
+a11760 1
+||gazeta.bo/api/banner/
 a16336 1
 playua.net#?#.content__text > p:-abp-has(> em > [href*="rozetka"])
+a17540 1
+business-gazeta.ru##.nova--wrapper
+a19389 1
+business-gazeta.ru##[data-slot]
 d19892 1
 d20445 1
 a20445 1
@@ -14,14 +20,31 @@ sport24.ua##app-popup21-plus
 d22507 1
 a22507 1
 championat.com,championat.ru,lenta.ru##[class*="scroll-to-site"] {remove:true;}
+d23336 1
+a23336 1
+sport.rambler.ru,weekend.rambler.ru###app > div[style^="background:"]
 a23359 1
 championat.com,championat.ru##.gift-banner
+a23670 1
+sports.ru##.super-top
+a23684 1
+sports.ru##[data-content-name="banner-static"][data-content-piece^="SALES-"]
+a23692 2
+sports.ru##[data-link*="=erid"]
+sports.ru##[data-link*="erid="]
+a23702 1
+sports.ru##a[href*="=erid"]
+a23704 1
+sports.ru##a[href*="erid="]
+a23736 1
+||sports.ru/special/supertop-iframe/
 d27662 1
 a27662 1
 net,org##body.branded:not([id]):not([style]) > #wrapper:not([class]):not([style]):style(margin-top: unset !important)
 d27872 1
 a27872 1
 www.kinopoisk.ru##body[class*="body"][style*="overflow:"][style*="hidden"]:style(overflow: auto !important)
+d28360 1
 a28580 4
 dzen.ru##.secondChunkSyncExp div[class^="dzen-layout--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child > div:only-child:style(border: inherit !important)
 dzen.ru##.secondChunkSyncExp div[class^="dzen-layout--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child:style(background-color: inherit !important)
@@ -40,6 +63,8 @@ championat.com,championat.ru,ferra.ru,gazeta.press,gazeta.ru,indicator.ru,lenta.
 d29471 1
 a29471 1
 championat.com,championat.ru,lenta.ru##[class*="scroll-to-site"]:remove()
+a29588 1
+||rutube.ru/play/embed/*?dist=$subdocument,removeparam=autoplay
 d29801 1
 a29801 1
 ||zoomdecorate.rambler.ru^$script,redirect=noopjs,domain=afisha.ru|autorambler.ru|championat.com|championat.ru|eda.ru|gazeta.press|gazeta.ru|lenta.ru|letidor.ru|moslenta.ru|motor.ru|passion.ru|quto.ru|rambler.ru|wmj.ru
