@@ -1,14 +1,32 @@
-diff name:ruadlist lines:29 checksum:88eccfaf6e
+diff name:ruadlist lines:52 checksum:edde5a8917
 d4 2
 a5 2
-! Last modified: Sat, 13 Jun 2026 16:40:25 +0000
-! Diff-Path: ../patches/2026.6.13.1000.patch#ruadlist
+! Last modified: Sat, 13 Jun 2026 22:14:36 +0000
+! Diff-Path: ../patches/2026.6.13.1334.patch#ruadlist
+a9184 1
+##script ~ #adspace
+a10425 1
+||psm7.com/wp-content/themes/PSM_WPM_*/dist/js/deferred.min.js
 a11760 1
 ||gazeta.bo/api/banner/
+a12497 1
+||newsauto.com.ua/wp-content/themes/viral-pro-child/inc/banner/
+d12851 1
+d16049 1
+a16049 1
+agropolit.com,elevatorist.com,filmozavr.com,filmozavr.net,gotennis.ru,inoprosport.ru,kinopati.ru,kurkul.com,lada-granta.net,latifundist.com,lkforum.ru,myshows.me,osp.ru,overclockers.ua,podfm.ru,popcornnews.ru,stopgame.ru,superagronom.com,zemliak.com##.branding
 a17541 1
 business-gazeta.ru##.nova--wrapper
+d17750 1
+a17750 1
+football.konkurent.ua,nrj.ua##.popup-banner
 a19390 1
 business-gazeta.ru##[data-slot]
+d21062 1
+a21062 1
+101.ru,1plus1.ua,46tv.ru,999.md,alau.kz,aldebaran.ru,asiarussia.ru,bezparazita.ru,botinok.porn,bountymax.ru,buzulukday.ru,calend.ru,chytomo.com,citydog.by,clubvolvo.ru,crazymailing.com,dnepr.info,dom2stars.ru,dota2.ru,el-polis.ru,gmod-fan.ru,gorod.dp.ua,gorod48.ru,gtavicecity.ru,hochu.ua,igry-online.net,infobank.by,internetua.com,kamchatinfo.com,kerchinfo.com,khersonline.net,kino-kingdom.com,klops.ru,kluch.media,kvnews.ru,kyiv-independent.com,libertycity.net,libertycity.ru,lipetskmedia.ru,manga24.ru,mashintop.ru,mediaryazan.ru,menquestions.ru,mgorod.kz,mobile-review.com,modernrock.ru,moya-semya.ru,musicforums.ru,nlo-mir.ru,nn.ru,novostroev.ru,nsday.ru,ntr-24.ru,nv.ua,nversia.ru,onlineradiobox.com,orenday.ru,perevolockday.ru,pln-pskov.ru,ponedelnik.info,postovoy.net,ppt.ru,rtraveler.ru,saltday.ru,sevkavportal.ru,sorochinskday.ru,sovets.net,sovets24.ru,spark.ru,sravni.ru,studfile.net,studfiles.net,subscribe.ru,telegraf.in.ua,the-village-kz.com,the-village.me,the-village.ru,tltonline.ru,torrents.in.ua,trisosny.ru,trymobile.ru,turkmenportal.com,tvzvezda.ru,ukrinform.ru,vdvsn.ru,vgtimes.com,vgtimes.ru,village.com.ua,vklybe.tv,vorle.ru,vse.sale,wheel-news.com,wincore.ru,womanhit.ru,worldofmods.ru,xn----7sbabrtfclecozdeg8b6a.xn--p1ai,yarik-sat.com,yarnews.net,zerno-ua.com,zhitomir.info,zn.ua,zoon.ru##div[class^="banner"]
+a21608 1
+newsauto.com.ua##div[id^="t"][id$="-wrap"]
 d23337 1
 a23337 1
 sport.rambler.ru,weekend.rambler.ru###app > div[style^="background:"]
@@ -25,6 +43,11 @@ a23706 1
 sports.ru##a[href*="erid="]
 a23738 1
 ||sports.ru/special/supertop-iframe/
+a27890 4
+! ---
+football.konkurent.ua##body[style*="overflow:"][style*="hidden"] .popup_age
+football.konkurent.ua##body[style*="overflow:"][style*="hidden"]:style(overflow: auto !important)
+! ---
 d28362 1
 a29590 1
 ||rutube.ru/play/embed/*?dist=$subdocument,removeparam=autoplay
