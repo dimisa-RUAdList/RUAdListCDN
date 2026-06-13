@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 12 Jun 2026 21:57:34 +0000
-! Diff-Path: ../patches/2026.6.12.1317.patch#ruadlist
+! Last modified: Sat, 13 Jun 2026 04:43:34 +0000
+! Diff-Path: ../patches/2026.6.13.283.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -27870,7 +27870,7 @@ www.kinopoisk.ru##.content-container_app-width_wide:style(max-width: 100% !impor
 www.kinopoisk.ru##.desktop-layout-with-sidebar__content > div[class][data-tid]:style(width: auto !important)
 www.kinopoisk.ru##.filmsListNew .info:style(padding-right: 116px !important)
 www.kinopoisk.ru##.modal-root div[class^="fullscreen-selector"]:style(opacity: inherit !important)
-www.kinopoisk.ru##body[class*="body"][class*="_"]:style(overflow: auto !important)
+www.kinopoisk.ru##body[class*="body"][style*="overflow:"][style*="hidden"]:style(overflow: auto !important)
 www.kinopoisk.ru##div > a[aria-label="КиноПоиск"] ~ div > button ~ div:style(opacity: inherit !important)
 www.kinopoisk.ru##div[class*="styles_headerContainer"] + div[class^="styles_"]:style(max-width: 100% !important)
 www.kinopoisk.ru##div[class*="user-bar"] > div > button ~ div:style(opacity: inherit !important)
