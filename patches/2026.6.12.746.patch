@@ -1,8 +1,16 @@
-diff name:ruadlist lines:33 checksum:60c400c539
+diff name:ruadlist lines:47 checksum:a2201f26ce
 d4 2
 a5 2
-! Last modified: Sat, 13 Jun 2026 04:43:34 +0000
-! Diff-Path: ../patches/2026.6.13.283.patch#ruadlist
+! Last modified: Sat, 13 Jun 2026 11:22:31 +0000
+! Diff-Path: ../patches/2026.6.13.682.patch#ruadlist
+a16336 1
+playua.net#?#.content__text > p:-abp-has(> em > [href*="rozetka"])
+d19892 1
+d20445 1
+a20445 1
+football24.ua,sport24.ua##app-external-content
+a20447 1
+sport24.ua##app-popup21-plus
 d22507 1
 a22507 1
 championat.com,championat.ru,lenta.ru##[class*="scroll-to-site"] {remove:true;}
@@ -14,6 +22,12 @@ net,org##body.branded:not([id]):not([style]) > #wrapper:not([class]):not([style]
 d27872 1
 a27872 1
 www.kinopoisk.ru##body[class*="body"][style*="overflow:"][style*="hidden"]:style(overflow: auto !important)
+a28580 4
+dzen.ru##.secondChunkSyncExp div[class^="dzen-layout--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child > div:only-child:style(border: inherit !important)
+dzen.ru##.secondChunkSyncExp div[class^="dzen-layout--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child:style(background-color: inherit !important)
+dzen.ru##.secondChunkSyncExp div[class^="dzen-layout--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty + div:last-child div:style(background-color: inherit !important)
+dzen.ru##.secondChunkSyncExp div[class^="dzen-layout--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty:style(background-color: inherit !important)
+d28601 4
 d29035 1
 a29035 1
 buhplatforma.com.ua,championat.com,championat.ru,doramy.club,dzplatforma.com.ua,medplatforma.com.ua,oblikbudget.com.ua,oplatforma.com.ua,pro-op.com.ua,prokadry.com.ua,turkish-tv-series.ru##+js(abort-on-property-read, getSelection)

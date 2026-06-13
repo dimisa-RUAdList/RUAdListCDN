@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 13 Jun 2026 04:43:34 +0000
-! Diff-Path: ../patches/2026.6.13.283.patch#ruadlist
+! Last modified: Sat, 13 Jun 2026 11:22:31 +0000
+! Diff-Path: ../patches/2026.6.13.682.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -16334,6 +16334,7 @@ afportal.ru#?#.content:-abp-has(> div > #nadoelo)
 sexytales.org##.contentBox > noindex
 spot.uz##.contentBoxR.floating_banner
 i2hard.ru##.content__col-left
+playua.net#?#.content__text > p:-abp-has(> em > [href*="rozetka"])
 kriminal.tv,marpravda.ru##.content_banner
 kino-teatr.ru#?#.content_block > .page_content_block:-abp-has(> div[style] [id*="_dobro"])
 kino-teatr.ru##.content_block > div[class*="_text_white"]
@@ -19889,7 +19890,6 @@ myshows.me##a[href*="hd.kinopoisk.ru"]
 ignio.com##a[href*="helpix.ru"]
 2ip.ua##a[href*="hidemy.name"]
 minecraft-mods.ru##a[href*="http://new-igry.ru/games/"] > img[src^="/uploads/posts/"]
-playua.net##a[href*="https://patreon.com/"]
 dietdo.ru##a[href*="iherb.com"]
 drochunov.net##a[href*="in.htm?"]
 infobank.by##a[href*="infobank.by/modules/astat/click.aspx"][target="_blank"]
@@ -20442,9 +20442,10 @@ dp.ru##app-adfox-banner
 nsp.ru##app-advertising-card a[href*="utm_campaign"][target="_blank"]
 nsp.ru##app-article-banner
 24tv.ua##app-desktop-top-banner
-football24.ua##app-external-content
+football24.ua,sport24.ua##app-external-content
 football24.ua##app-ideal-media-between-news
 24tv.ua,football24.ua##app-main-page-adv-block
+sport24.ua##app-popup21-plus
 football24.ua##app-simple-membrana-adv-block
 nsp.ru##app-topline-advertising
 24tv.ua,football24.ua##app-video-adv-block
@@ -28579,6 +28580,10 @@ disk.yandex.by,disk.yandex.com,disk.yandex.kz,disk.yandex.ru,disk.yandex.uz##div
 ! ---
 ! дзен
 ! главная
+dzen.ru##.secondChunkSyncExp div[class^="dzen-layout--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child > div:only-child:style(border: inherit !important)
+dzen.ru##.secondChunkSyncExp div[class^="dzen-layout--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child:style(background-color: inherit !important)
+dzen.ru##.secondChunkSyncExp div[class^="dzen-layout--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty + div:last-child div:style(background-color: inherit !important)
+dzen.ru##.secondChunkSyncExp div[class^="dzen-layout--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty:style(background-color: inherit !important)
 dzen.ru##[class*="CardRtb"]
 dzen.ru##[class*="card-rtb"]
 dzen.ru##[class*="desktop"] ~ [id*="teaser"]
@@ -28599,10 +28604,6 @@ dzen.ru##div[class*="dzen-"][class*="-banner-"]
 dzen.ru##div[class*="dzen-desktop--"][class*="__ad-"]
 dzen.ru##div[class*="dzen-desktop--top-sidebar-desktop-ad__root"]
 dzen.ru##div[class^="dzen-desktop--content-app__content-"] > div > div:first-child > div:first-child + div:style(opacity: 0 !important; pointer-events: none !important)
-dzen.ru##div[class^="dzen-layout--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child > div:only-child:style(border: inherit !important)
-dzen.ru##div[class^="dzen-layout--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child:style(background-color: inherit !important)
-dzen.ru##div[class^="dzen-layout--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty + div:last-child div:style(background-color: inherit !important)
-dzen.ru##div[class^="dzen-layout--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty:style(background-color: inherit !important)
 dzen.ru##div[id*="splashscreen"]
 dzen.ru##div[style*="important"] div[class*="__main"]
 ! исправление ошибок и косяков оригинальной вёрстки
