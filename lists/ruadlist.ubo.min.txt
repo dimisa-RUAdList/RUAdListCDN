@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 14 Jun 2026 06:01:33 +0000
-! Diff-Path: ../patches/2026.6.14.361.patch#ruadlist
+! Last modified: Sun, 14 Jun 2026 12:08:36 +0000
+! Diff-Path: ../patches/2026.6.14.728.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -13178,6 +13178,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||spbdnevnik.ru/media/_b/$image
 ||spbit.ru/uploads/Banner/
 ||spdmpgcdn.com/veoveo-creative/
+||special.matchtv.ru/api/*bonuses?
 ||special.matchtv.ru/feeds/
 ||special.pikabu.ru^$domain=~special.pikabu.ru
 ||specials*.servicecdn.ru/$domain=dtf.ru|vc.ru
@@ -18094,7 +18095,7 @@ autopilot.ru,kommersant.ru,myweekend.ru##.rocket_man
 in-english.club##.roll_autoplay_ads
 novgorod.ru##.root > .bigb
 matematikalegko.ru##.rotac_reklama
-officepackage.info,vc.ru##.rotator
+dtf.ru,officepackage.info,vc.ru##.rotator
 milknet.ru##.rotator-wrap
 bestradio.fm##.row .panel-danger
 5-tv.ru##.row > .col3.positionRelative
@@ -18537,7 +18538,7 @@ newinform.com##.subscribe
 rtraveler.ru##.subscribe-wrap
 autopilot.ru##.subscribe_announcement
 playmaker24.ru##.subscrite-widget:first-child
-vc.ru##.supbar--top
+dtf.ru,vc.ru##.supbar--top
 klops.ru##.supercover-banner-header
 bilshe.com#?#.svejnov:-abp-has(> h2 > b:-abp-contains(/^Інші/))
 games-porno.net##.swfgame_banners
@@ -21661,7 +21662,7 @@ dltv.org##div[style*="/uploads/banners/"]
 doefiratv.info##div[style*="339px;"]
 x-console.com##div[style*="710px;"][style*="70px;"]
 forums.ngemu.com##div[style*="920px;"][style*="250px;"]
-vc.ru##div[style*="banner-height"]
+dtf.ru,vc.ru##div[style*="banner-height"]
 bikepost.ru##div[style*="block"][style*="center"][style*="width:"][style*="height:"]
 dumskaya.net##div[style*="display:inline-bl1ock"]
 kinogo.ru.net##div[style*="fyi5fimf."]
@@ -22567,9 +22568,6 @@ freesoft.ru##.modal-backdrop
 anidub.vip,anidubonline.com##.plyr__menu
 anidub.vip,anidubonline.com##.plyr__progress__buffer
 aigenda.ru#@#.pub_300x250
-dtf.ru##.rotator
-dtf.ru##.sticky-stack-sidebar-section .loader + div[id][class]:empty
-dtf.ru##.supbar--top * *
 aigenda.ru#@#.textads
 ritsatv.ru,websdr.su##:not(my-obnaruzhili-blokirovshchik)
 android-mafia.com,game4you.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##:not(this-site-promotes-malware)
@@ -22603,7 +22601,6 @@ rg.ru##div[id][class*="__"]:empty
 shedevrum.ai##div[id^="header_block_"]
 sdamgia.ru##div[id^="yandex_vario"]
 liveinternet.ru##div[style*="!important; "]
-dtf.ru##div[style*="banner-height"]
 sdamgia.ru##div[style*="important;"][style*="width:"][style*="height:"] *
 www.drive2.ru##iframe[style="display: block; border-width: 0px;"]
 www.drive2.ru##iframe[style="opacity: 1;"]
@@ -27446,13 +27443,6 @@ forums.drom.ru##.contentWrap .lcWrap:style(padding-right: unset !important)
 ! ---
 dtf.ru,vc.ru##.sticky-stack-sidebar__section:not(:only-child):style(min-height: 0 !important)
 dtf.ru,vc.ru##html:style(--layout-header-height-large: 60px !important)
-! суррогат
-dtf.ru##.rotator *
-dtf.ru##.rotator--limitless
-dtf.ru##.rotator:style(height: 100px !important; margin-top: -100px !important; margin-bottom: unset !important; pointer-events: none !important; background-color: transparent !important;)
-dtf.ru##.supbar--top:style(height: 100px !important; margin-top: -200px !important; pointer-events: none !important; background-color: transparent !important)
-dtf.ru##[class*="sidebar"] div[style*="banner-height"] *
-dtf.ru##[class*="sidebar"] div[style*="banner-height"]:style(height: 100px !important; margin-top: -120px !important; pointer-events: none !important; background-color: transparent !important;)
 ! ---
 dugtor.ru###left-block:style(min-height: 100% !important)
 dugtor.ru###right-block:style(min-height: 100% !important)
