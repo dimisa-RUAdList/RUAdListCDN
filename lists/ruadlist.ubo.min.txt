@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 15 Jun 2026 06:34:09 +0000
-! Diff-Path: ../patches/2026.6.15.394.patch#ruadlist
+! Last modified: Mon, 15 Jun 2026 13:22:49 +0000
+! Diff-Path: ../patches/2026.6.15.802.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -15274,7 +15274,7 @@ englishsub.ru,lenglish.ru##.adsense_blok
 vise.im##.adsplaser_pro_abtest
 ok-pressa.ru##.adstitles
 3iks.org,androidkino.net,btrans.by,crimea-news.com,dugtor.ru,dv-gazeta.info,internet-technologies.ru,kinosimka.be,kniga-online.com,novyny.live,progroshi.news,proukraine.news,qna.center,reestr.rublacklist.net,resheba.top,reviewscompanies.club,vesti.uz,wotsite.net,xcadr.online##.adv
-regnum.news,regnum.ru##.adv-container-wrapper
+regnum.ru##.adv-container-wrapper
 do-slez.com##.adv-heading
 backup.menu,dedicated.menu,hosting.cafe,https.menu,license.menu,shared.menu,vds.menu##.adv-hidden-xs
 komionline.ru##.adv-hint
@@ -16953,6 +16953,7 @@ galka.if.ua#?#.infoblock:-abp-has(> a.infoblock-count[target="_blank"])
 gorodkiev.com.ua##.infolinks
 app2top.ru##.information-block-top
 uaspectr.com##.information__image
+kinoafisha.ua##.informer > noindex
 igromania.ru,kanobu.ru##.informer-container
 online-fix.me#?#.informer-sidebar-block:-abp-has(> #aclib)
 gazeta.ua##.informer.double
@@ -17692,7 +17693,7 @@ censor.net,fc-zenit.ru,grodnonews.by,highload.tech,itc.ua,mc.today,mgorod.kz,mos
 sport.ua,sportonline.ua##.partners-block
 zanmsk.ru##.partners-block > a[href][target="_blank"]
 tyzhden.ua##.partners-block-wrapper
-regnum.news,regnum.ru##.partners-container
+regnum.ru##.partners-container
 1fnl.ru##.partners-list
 fc-zenit.ru##.partners-logo
 telekritika.ua##.partners-news
@@ -17846,7 +17847,7 @@ allmoldova.com,gdeposylka.ru,infomir59.ru,pavlodar.news,pavon.kz,rentv-smolensk.
 roskomsvoboda.org##.promo-banner
 expertcen.ru##.promo-block
 habr.com##.promo-block_courses
-regnum.news,regnum.ru##.promo-card-small
+regnum.ru##.promo-card-small
 app2top.ru##.promo-events-block
 vechirniy.kyiv.ua##.promo-inner > .container > a[href="https://vechirniy.kyiv.ua/reklama/"]
 vechirniy.kyiv.ua#?#.promo-inner > .container:-abp-has(> .media:only-child)
@@ -20812,7 +20813,7 @@ sport24.ru#?#div[aria-expanded="false"]:-abp-contains(Реклама)
 rg.ru##div[aria-label="Дзен"]
 litres.ru##div[aria-label="Реклама"]
 1743.ru,gts.tv,ntsk.ru,orki.ru,orsk.ru##div[bs_id]
-regnum.news,regnum.ru##div[class$=" feed-item"]
+regnum.ru##div[class$=" feed-item"]
 mt.today,znak.com##div[class$="-ads"]
 bhf.su##div[class$="-bannerContent"]
 proufu.ru#?#div[class$="-main"]:-abp-has(> p:-abp-contains(Новости партнеров))
@@ -22497,7 +22498,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=levik.blog|livejournal.c
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
 ||ng72.ru^$csp=script-src 'self' 'unsafe-eval' https:
-||pikabu.ru/ajax/*?pjD3y=$xmlhttprequest
+||pikabu.ru/ajax/*?p5Oho=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -23248,6 +23249,8 @@ ru##.GameContainerInner__sb
 ||ngs.ru/static/js/uglify/dfpScript.js
 ||reklama*.ngs.ru/$script
 ||static.ngs.ru/jtnews/*/asdk
+! бесконечная загрузка >
+||n1s1.hsmedia.ru/svgs/2a/2a43966fea9b70195cad785bbf199cf0.svg$domain=e1.ru
 ! обфускация
 e1.ru##[class*=" undefi"]
 www.e1.ru#?#[itemprop] > div:-abp-has(> div > [id*="ad"])
@@ -28226,7 +28229,7 @@ rbkgames.com##html[xmlns]:style(background-image: none !important)
 ! ---
 redheadsound.studio##.page__text > div[style^="color:"] + p:style(margin-bottom: unset !important)
 ! ---
-regnum.news,regnum.ru##.page-column > .right-adv-container:style(top: 100px !important)
+regnum.ru##.page-column > .right-adv-container:style(top: 100px !important)
 ! ---
 mag.relax.by##.b-global-branding[branding_url*=http] .b-global-wrap:style(cursor: auto !important)
 mag.relax.by##.b-global-wrap > .b-global-offset:style(padding: unset !important)
@@ -29107,7 +29110,7 @@ xv-ru.com##+js(addEventListener-defuser, DOMContentLoaded, exo_tracker)
 litnet.com##+js(addEventListener-defuser, DOMContentLoaded, feedback)
 allboxing.ru##+js(addEventListener-defuser, DOMContentLoaded, popup)
 vedomosti.ru##+js(addEventListener-defuser, click, '', elements, a[href*="?from="])
-regnum.news,regnum.ru,tproger.ru##+js(addEventListener-defuser, click, '', elements, a[href*="utm_campaign"])
+regnum.ru,tproger.ru##+js(addEventListener-defuser, click, '', elements, a[href*="utm_campaign"])
 forbes.ru##+js(addEventListener-defuser, click, '', elements, a[href*="utm_campaign="])
 116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,www.fontanka.ru,ya62.ru##+js(addEventListener-defuser, click, , elements, [class^="plotsLine_"] > div)
 softonic.ru##+js(addEventListener-defuser, click, [native code])

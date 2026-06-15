@@ -1,8 +1,8 @@
-diff name:ruadlist lines:189 checksum:97249783ab
+diff name:ruadlist lines:215 checksum:a5b0075309
 d4 2
 a5 2
-! Last modified: Mon, 15 Jun 2026 06:34:09 +0000
-! Diff-Path: ../patches/2026.6.15.394.patch#ruadlist
+! Last modified: Mon, 15 Jun 2026 13:22:49 +0000
+! Diff-Path: ../patches/2026.6.15.802.patch#ruadlist
 a9184 1
 ##script ~ #adspace
 a10425 1
@@ -25,6 +25,9 @@ a13486 1
 ||ukrlib.com.ua/ad/
 a15174 1
 fishki.net##.ad-div
+d15270 1
+a15270 1
+regnum.ru##.adv-container-wrapper
 a15386 1
 livesport.ru##.article-betline
 a15398 1
@@ -45,17 +48,25 @@ a16041 1
 agropolit.com,elevatorist.com,filmozavr.com,filmozavr.net,gotennis.ru,inoprosport.ru,kinopati.ru,kurkul.com,lada-granta.net,latifundist.com,lkforum.ru,myshows.me,osp.ru,overclockers.ua,podfm.ru,popcornnews.ru,stopgame.ru,superagronom.com,zemliak.com##.branding
 a16328 1
 playua.net#?#.content__text > p:-abp-has(> em > [href*="rozetka"])
+a16939 1
+kinoafisha.ua##.informer > noindex
 a17417 1
 livesport.ru##.name-like-h3
 a17529 1
 ua-football.com##.notification-bonus
 a17530 1
 business-gazeta.ru##.nova--wrapper
+d17676 1
+a17676 1
+regnum.ru##.partners-container
 d17739 1
 a17739 1
 football.konkurent.ua,nrj.ua##.popup-banner
 a17814 1
 livesport.ru##.pro-gift
+d17829 1
+a17829 1
+regnum.ru##.promo-card-small
 d18081 1
 a18081 1
 dtf.ru,officepackage.info,vc.ru##.rotator
@@ -83,6 +94,9 @@ a20432 1
 sport24.ua##app-popup21-plus
 a20510 1
 livesport.ru##aside.right > a[target="_blank"]
+d20789 1
+a20789 1
+regnum.ru##div[class$=" feed-item"]
 d21045 1
 a21045 1
 101.ru,1plus1.ua,46tv.ru,999.md,alau.kz,aldebaran.ru,asiarussia.ru,bezparazita.ru,botinok.porn,bountymax.ru,buzulukday.ru,calend.ru,chytomo.com,citydog.by,clubvolvo.ru,crazymailing.com,dnepr.info,dom2stars.ru,dota2.ru,el-polis.ru,gmod-fan.ru,gorod.dp.ua,gorod48.ru,gtavicecity.ru,hochu.ua,igry-online.net,infobank.by,internetua.com,kamchatinfo.com,kerchinfo.com,khersonline.net,kino-kingdom.com,klops.ru,kluch.media,kvnews.ru,kyiv-independent.com,libertycity.net,libertycity.ru,lipetskmedia.ru,manga24.ru,mashintop.ru,mediaryazan.ru,menquestions.ru,mgorod.kz,mobile-review.com,modernrock.ru,moya-semya.ru,musicforums.ru,nlo-mir.ru,nn.ru,novostroev.ru,nsday.ru,ntr-24.ru,nv.ua,nversia.ru,onlineradiobox.com,orenday.ru,perevolockday.ru,pln-pskov.ru,ponedelnik.info,postovoy.net,ppt.ru,rtraveler.ru,saltday.ru,sevkavportal.ru,sorochinskday.ru,sovets.net,sovets24.ru,spark.ru,sravni.ru,studfile.net,studfiles.net,subscribe.ru,telegraf.in.ua,the-village-kz.com,the-village.me,the-village.ru,tltonline.ru,torrents.in.ua,trisosny.ru,trymobile.ru,turkmenportal.com,tvzvezda.ru,ukrinform.ru,vdvsn.ru,vgtimes.com,vgtimes.ru,village.com.ua,vklybe.tv,vorle.ru,vse.sale,wheel-news.com,wincore.ru,womanhit.ru,worldofmods.ru,xn----7sbabrtfclecozdeg8b6a.xn--p1ai,yarik-sat.com,yarnews.net,zerno-ua.com,zhitomir.info,zn.ua,zoon.ru##div[class^="banner"]
@@ -91,11 +105,17 @@ newsauto.com.ua##div[id^="t"][id$="-wrap"]
 d21641 1
 a21641 1
 dtf.ru,vc.ru##div[style*="banner-height"]
+d22473 1
+a22473 1
+||pikabu.ru/ajax/*?p5Oho=$xmlhttprequest
 d22491 1
 a22491 1
 championat.com,championat.ru,lenta.ru##[class*="scroll-to-site"] {remove:true;}
 d22547 3
 d22583 1
+a23227 2
+! бесконечная загрузка >
+||n1s1.hsmedia.ru/svgs/2a/2a43966fea9b70195cad785bbf199cf0.svg$domain=e1.ru
 d23320 1
 a23320 1
 sport.rambler.ru,weekend.rambler.ru###app > div[style^="background:"]
@@ -157,6 +177,9 @@ a27917 3
 livesport.ru##body:style(background-color: inherit !important)
 livesport.ru##main:style(margin-top: 0 !important)
 ! ---
+d28183 1
+a28183 1
+regnum.ru##.page-column > .right-adv-container:style(top: 100px !important)
 d28326 1
 a28546 4
 dzen.ru##.secondChunkSyncExp div[class^="dzen-layout--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child > div:only-child:style(border: inherit !important)
@@ -168,6 +191,9 @@ d28950 1
 d29001 1
 a29001 1
 buhplatforma.com.ua,championat.com,championat.ru,doramy.club,dzplatforma.com.ua,medplatforma.com.ua,oblikbudget.com.ua,oplatforma.com.ua,pro-op.com.ua,prokadry.com.ua,turkish-tv-series.ru##+js(abort-on-property-read, getSelection)
+d29066 1
+a29066 1
+regnum.ru,tproger.ru##+js(addEventListener-defuser, click, '', elements, a[href*="utm_campaign"])
 d29085 1
 a29085 1
 championat.com,championat.ru##+js(addEventListener-defuser, scroll, window.location.href)
