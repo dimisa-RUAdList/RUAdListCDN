@@ -1,8 +1,8 @@
-diff name:ruadlist lines:49 checksum:b66b63e3c3
+diff name:ruadlist lines:57 checksum:aa86f6990c
 d4 2
 a5 2
-! Last modified: Tue, 16 Jun 2026 17:17:11 +0000
-! Diff-Path: ../patches/2026.6.16.1037.patch#ruadlist
+! Last modified: Tue, 16 Jun 2026 23:44:01 +0000
+! Diff-Path: ../patches/2026.6.16.1424.patch#ruadlist
 a10268 1
 videobel.by##[class*="player-skin-holder-uicomponent__Holder-sc-"]::before
 a13491 1
@@ -29,6 +29,12 @@ regnum.ru##div[class$=" feed-item"]
 d22499 1
 a22499 1
 ||pikabu.ru/ajax/*?p5Oho=$xmlhttprequest
+a22878 1
+finance.mail.ru,news.mail.ru##div[data-tooltip-root]
+a22914 1
+sportmail.ru##div[data-tooltip-root]
+a22922 1
+pogoda.mail.ru##div[data-tooltip-root]
 a23249 2
 ! бесконечная загрузка >
 ||n1s1.hsmedia.ru/svgs/2a/2a43966fea9b70195cad785bbf199cf0.svg$domain=e1.ru
@@ -43,6 +49,8 @@ fishki.net##+js(abort-on-property-read, fishki.branding)
 d29109 1
 a29109 1
 regnum.ru,tproger.ru##+js(addEventListener-defuser, click, '', elements, a[href*="utm_campaign"])
+a29129 1
+videobel.by##+js(adjust-setInterval, opacity-.05, 16, 25)
 d29562 1
 a29562 1
 gofrag.ru,videobel.by##video:remove-attr(autoplay)

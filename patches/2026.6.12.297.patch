@@ -1,8 +1,8 @@
-diff name:ruadlist lines:229 checksum:b66b63e3c3
+diff name:ruadlist lines:237 checksum:aa86f6990c
 d4 2
 a5 2
-! Last modified: Tue, 16 Jun 2026 17:17:11 +0000
-! Diff-Path: ../patches/2026.6.16.1037.patch#ruadlist
+! Last modified: Tue, 16 Jun 2026 23:44:01 +0000
+! Diff-Path: ../patches/2026.6.16.1424.patch#ruadlist
 a9184 1
 ##script ~ #adspace
 a10267 1
@@ -117,6 +117,12 @@ a22491 1
 championat.com,championat.ru,lenta.ru##[class*="scroll-to-site"] {remove:true;}
 d22547 3
 d22583 1
+a22856 1
+finance.mail.ru,news.mail.ru##div[data-tooltip-root]
+a22892 1
+sportmail.ru##div[data-tooltip-root]
+a22900 1
+pogoda.mail.ru##div[data-tooltip-root]
 a23227 2
 ! бесконечная загрузка >
 ||n1s1.hsmedia.ru/svgs/2a/2a43966fea9b70195cad785bbf199cf0.svg$domain=e1.ru
@@ -206,6 +212,8 @@ regnum.ru,tproger.ru##+js(addEventListener-defuser, click, '', elements, a[href*
 d29085 1
 a29085 1
 championat.com,championat.ru##+js(addEventListener-defuser, scroll, window.location.href)
+a29086 1
+videobel.by##+js(adjust-setInterval, opacity-.05, 16, 25)
 d29177 1
 a29255 1
 fishki.net##+js(set-constant, HTMLVideoElement.prototype.volume, trueFunc)

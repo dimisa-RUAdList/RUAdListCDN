@@ -1,8 +1,8 @@
-diff name:ruadlist lines:119 checksum:b66b63e3c3
+diff name:ruadlist lines:127 checksum:aa86f6990c
 d4 2
 a5 2
-! Last modified: Tue, 16 Jun 2026 17:17:11 +0000
-! Diff-Path: ../patches/2026.6.16.1037.patch#ruadlist
+! Last modified: Tue, 16 Jun 2026 23:44:01 +0000
+! Diff-Path: ../patches/2026.6.16.1424.patch#ruadlist
 a9184 1
 ##script ~ #adspace
 a10267 1
@@ -70,6 +70,12 @@ a22490 1
 ||pikabu.ru/ajax/*?p5Oho=$xmlhttprequest
 d22564 3
 d22600 1
+a22873 1
+finance.mail.ru,news.mail.ru##div[data-tooltip-root]
+a22909 1
+sportmail.ru##div[data-tooltip-root]
+a22917 1
+pogoda.mail.ru##div[data-tooltip-root]
 a23244 2
 ! бесконечная загрузка >
 ||n1s1.hsmedia.ru/svgs/2a/2a43966fea9b70195cad785bbf199cf0.svg$domain=e1.ru
@@ -108,6 +114,8 @@ fishki.net##+js(abort-on-property-read, fishki.branding)
 d29102 1
 a29102 1
 regnum.ru,tproger.ru##+js(addEventListener-defuser, click, '', elements, a[href*="utm_campaign"])
+a29122 1
+videobel.by##+js(adjust-setInterval, opacity-.05, 16, 25)
 d29213 1
 a29291 1
 fishki.net##+js(set-constant, HTMLVideoElement.prototype.volume, trueFunc)
