@@ -1,10 +1,12 @@
-diff name:ruadlist lines:222 checksum:add6c1795a
+diff name:ruadlist lines:231 checksum:c3eea68b18
 d4 2
 a5 2
-! Last modified: Tue, 16 Jun 2026 05:24:57 +0000
-! Diff-Path: ../patches/2026.6.16.324.patch#ruadlist
+! Last modified: Tue, 16 Jun 2026 11:29:57 +0000
+! Diff-Path: ../patches/2026.6.16.689.patch#ruadlist
 a9184 1
 ##script ~ #adspace
+a10267 1
+videobel.by##[class*="player-skin-holder-uicomponent__Holder-sc-"]::before
 a10425 1
 ||psm7.com/wp-content/themes/PSM_WPM_*/dist/js/deferred.min.js
 a11285 1
@@ -23,6 +25,8 @@ a13177 1
 ||special.matchtv.ru/api/*bonuses?
 a13486 1
 ||ukrlib.com.ua/ad/
+a14631 1
+pravo.by###r_banner
 a15174 1
 fishki.net##.ad-div
 d15270 1
@@ -213,6 +217,11 @@ championat.com,championat.ru,ferra.ru,gazeta.press,gazeta.ru,indicator.ru,lenta.
 d29435 1
 a29435 1
 championat.com,championat.ru,lenta.ru##[class*="scroll-to-site"]:remove()
+d29517 1
+a29517 1
+gofrag.ru,videobel.by##video:remove-attr(autoplay)
+a29548 1
+||pravo.by/local/templates/.default/js/addtocopy.js
 a29552 1
 ||rutube.ru/play/embed/*?dist=$subdocument,removeparam=autoplay
 d29765 1

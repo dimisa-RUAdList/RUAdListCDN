@@ -1,10 +1,12 @@
-diff name:ruadlist lines:80 checksum:add6c1795a
+diff name:ruadlist lines:89 checksum:c3eea68b18
 d4 2
 a5 2
-! Last modified: Tue, 16 Jun 2026 05:24:57 +0000
-! Diff-Path: ../patches/2026.6.16.324.patch#ruadlist
+! Last modified: Tue, 16 Jun 2026 11:29:57 +0000
+! Diff-Path: ../patches/2026.6.16.689.patch#ruadlist
 a9184 1
 ##script ~ #adspace
+a10267 1
+videobel.by##[class*="player-skin-holder-uicomponent__Holder-sc-"]::before
 a10425 1
 ||psm7.com/wp-content/themes/PSM_WPM_*/dist/js/deferred.min.js
 a12498 1
@@ -16,6 +18,8 @@ a13178 1
 ||special.matchtv.ru/api/*bonuses?
 a13487 1
 ||ukrlib.com.ua/ad/
+a14632 1
+pravo.by###r_banner
 a15175 1
 fishki.net##.ad-div
 d15271 1
@@ -79,3 +83,8 @@ regnum.ru,tproger.ru##+js(addEventListener-defuser, click, '', elements, a[href*
 d29222 1
 a29300 1
 fishki.net##+js(set-constant, HTMLVideoElement.prototype.volume, trueFunc)
+d29564 1
+a29564 1
+gofrag.ru,videobel.by##video:remove-attr(autoplay)
+a29595 1
+||pravo.by/local/templates/.default/js/addtocopy.js

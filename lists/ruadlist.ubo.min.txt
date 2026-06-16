@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 16 Jun 2026 05:24:57 +0000
-! Diff-Path: ../patches/2026.6.16.324.patch#ruadlist
+! Last modified: Tue, 16 Jun 2026 11:29:57 +0000
+! Diff-Path: ../patches/2026.6.16.689.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10266,6 +10266,7 @@ povar.ru##.vk.soc-banner
 blogspot.ru##.widget-content > #overlay
 inforeactor.ru##.yandex-widget
 tass.ru##[class*="Layout_bottom_fixed_"]
+videobel.by##[class*="player-skin-holder-uicomponent__Holder-sc-"]::before
 tass.ru##[data-no-mourning="true"][class^="DesktopLayout_above"]
 pasy.media##[data-remodal-id]
 okko.sport,okko.tv##[data-testid="player_osd"] > div[style*="--duration-"] > div:first-child::after
@@ -14635,6 +14636,7 @@ duster-clubs.ru###r-colonka > .f-block ~ .f-block ~ .f-block
 mundolatino.org.ua#?##r-colonka > .f-block:-abp-has(.b-topa:-abp-contains(/интересные блоки|еклама/i))
 duster-clubs.ru###r-colonka > a[target="_blank"]
 duster-clubs.ru###r-colonka > center
+pravo.by###r_banner
 netall.ru###r_detail_bottom
 volna.top###radiorek
 documentalnye.ru###rbc
@@ -29563,7 +29565,7 @@ smaxim.*##+js(set-constant, flashvars.protect_block, '')
 studizba.com,surl.*##+js(nano-setInterval-booster, #timer)
 ixbt.pro##style[id^="branding-"]:remove()
 translate.yandex.ru,translate.yandex.*##+js(set-constant, Object.prototype.dispatchSignalCallbacks, undefined)
-gofrag.ru##video:remove-attr(autoplay)
+gofrag.ru,videobel.by##video:remove-attr(autoplay)
 3dnews.ru##video[autoplay="autoplay"]:remove-attr(autoplay)
 kino-teatr.ru,kinoafisha.info,kinonews.ru##videotronic-player:remove-attr(data-video-autoplay)
 wildberries.*##+js(set-constant, Object.prototype.prepareBannersList, noopFunc)
@@ -29595,6 +29597,7 @@ ya.ru,yandex.*##.simple-popup__overlay:remove()
 ||my.mail.ru/video/embed/*autoplay=1$subdocument,removeparam=autoplay
 ||myfootball.*/betking/$media,redirect=noopmp4-1s
 ||partnerprofitboost.com^$popunder
+||pravo.by/local/templates/.default/js/addtocopy.js
 ||pronpic.org^$subdocument,redirect=noopframe,domain=pronpic.org
 ||pronpic.org^$third-party,badfilter
 ||rbk.ru/*/_videoAutoplayRecommend.js
