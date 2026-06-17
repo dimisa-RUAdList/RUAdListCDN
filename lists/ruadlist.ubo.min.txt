@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 17 Jun 2026 05:05:54 +0000
-! Diff-Path: ../patches/2026.6.17.305.patch#ruadlist
+! Last modified: Wed, 17 Jun 2026 09:58:02 +0000
+! Diff-Path: ../patches/2026.6.17.598.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -11341,6 +11341,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||cda.pl/xml_pool/*pool*.php$xmlhttprequest
 ||cdn.anison.fm/images$object
 ||cdn.banki.ru/*/widget-calculators$domain=banki.ru
+||cdn.fishki.net/upload/ftp/files/roborock-
 ||cdn.gravitec.net/styles/unbloc*.png
 ||cdn.hsmedia.ru/dist/maxim/Product.
 ||cdn.hsmedia.ru/scrooge-client/hsm-creative-manager$script
@@ -29099,7 +29100,6 @@ phys-kids.com##+js(abort-on-property-write, fetch)
 kakprosto.ru##+js(abort-on-property-write, window.yaProxy)
 dtf.ru,vc.ru##+js(abort-on-stack-trace, HTMLVideoElement.prototype.play, /index-)
 tvzvezda.ru##+js(abort-on-stack-trace, Object.prototype.autoplay, assets)
-vk.com,vk.ru##+js(abort-on-stack-trace, Object.prototype.dispatcher, /chunks/9635)
 ya.ru##+js(abort-on-stack-trace, Object.prototype.loadAdvertScriptMode, /yastatic\.net/)
 shadowcore.ru##+js(abort-on-stack-trace, document.createElement, checkAboba)
 ai-next.ru##+js(abort-on-stack-trace, document.getElementById, /723-|ai-2-/)
