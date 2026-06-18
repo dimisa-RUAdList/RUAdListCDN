@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 17 Jun 2026 22:49:57 +0000
-! Diff-Path: ../patches/2026.6.17.1369.patch#ruadlist
+! Last modified: Thu, 18 Jun 2026 06:06:09 +0000
+! Diff-Path: ../patches/2026.6.18.366.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22505,7 +22505,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=levik.blog|livejournal.c
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
 ||ng72.ru^$csp=script-src 'self' 'unsafe-eval' https:
-||pikabu.ru/ajax/*?p5Oho=$xmlhttprequest
+||pikabu.ru/ajax/*?p5Oio=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -23689,7 +23689,6 @@ sports.ru##.short-news > [data-content-name]
 sports.ru##.short-news > br
 sports.ru#?#.short-news > p:-abp-has(> .advert_material)
 sports.ru##.social-links__zn
-sports.ru##.super-top
 sports.ru##.teaser-before-links__adv-label
 cyber.sports.ru##.teaser-bookmaker
 sports.ru##.widget-odds
@@ -23719,6 +23718,7 @@ sports.ru##[data-type="reklama"]
 sports.ru##[id*="ScriptRoot"]
 sports.ru##[id^="dfp-fullscreen-"]
 sports.ru##[id^="unit_"]
+sports.ru##[src*="/supertop-iframe/"]
 sports.ru##[type="bookmaker-bonus"]
 sports.ru##a#sitewrapper[href][target="_blank"][style*="cursor"]
 tribuna.com##a[href*="/bet/"]
