@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 18 Jun 2026 10:43:28 +0000
-! Diff-Path: ../patches/2026.6.18.643.patch#ruadlist
+! Last modified: Thu, 18 Jun 2026 18:09:29 +0000
+! Diff-Path: ../patches/2026.6.18.1089.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -12061,7 +12061,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||kerchinfo.com/uploads/img_ban/
 ||keysportal.com/yandex$image
 ||kg-portal.ru/banned/
-||kg-portal.ru/brandbook/
+||kg-portal.ru/brandbook/$~stylesheet
 ||kg-portal.ru^*/bg.jpg|
 ||kgd.ru/images/commerc/
 ||kharkov.info/files/image*/banner
@@ -18172,6 +18172,7 @@ sport-express.net,sport-express.ru##.se-banner
 sport-express.net,sport-express.ru##.se-bets
 sport-express.net,sport-express.ru##.se-brand-buttons
 sport-express.net,sport-express.ru##.se-brandedbuttons
+sport-express.net,sport-express.ru##.se-football-world-betboom-widget
 sport-express.net,sport-express.ru##.se-material-page__footer-recommendations
 sport-express.net,sport-express.ru##.se-partner-stuffing-info
 sport-express.net,sport-express.ru##.se-sport-entity-icon-links__link--kinopoisk
@@ -27805,14 +27806,11 @@ jut-su.net##body:not(#id):style(padding-top: 0 !important; padding-bottom: 0 !im
 ! ---
 kanaldim.tv,uatv.ua##body > .playerlive
 ! ---
-kg-portal.ru##.comments_form:style(min-height: 0 !important)
-kg-portal.ru##.content_wrap > div[class^="content_"] > div > a[href^="/go.php?id="]
-kg-portal.ru##.ten_ears_wrap:style(margin: 35px auto 0 auto !important)
+kg-portal.ru##.ten_ears_wrap:style(margin-top: 0 !important; background-color: #a5a5a5 !important)
 kg-portal.ru##.ten_topbar + div:not(.ten_ears_wrap)
-kg-portal.ru##.ten_topbar ~ div[class]:not([id]):nth-child(-n+10):not(.ten_ears_wrap):not(.content_wrap):not(.footer_wrap)
-kg-portal.ru##.ten_topbar:style(height: 0 !important)
+kg-portal.ru##.ten_topbar:style(max-height: 10px !important)
 kg-portal.ru##body > .menu_wrap:style(position: relative !important)
-kg-portal.ru##body:style(background-image: none !important; background-color: #bdbdbd !important)
+kg-portal.ru##body:style(background-image: none !important; background-color: inherit !important)
 ! ---
 kharkovforum.com##body > table > tbody > tr > td[align="center"]
 ! ---
