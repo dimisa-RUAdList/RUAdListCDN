@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 19 Jun 2026 07:21:25 +0000
-! Diff-Path: ../patches/2026.6.19.441.patch#ruadlist
+! Last modified: Fri, 19 Jun 2026 12:15:12 +0000
+! Diff-Path: ../patches/2026.6.19.735.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -6649,7 +6649,6 @@
 ||videosmor.com^$third-party
 ||videotoper.com^$third-party
 ||videotrailer.top^$third-party
-||videotronic.io^$third-party
 ||videovikt.com^$third-party
 ||videovint.com^$third-party
 ||videsjs.com^$third-party
@@ -23855,6 +23854,7 @@ ya.ru,yandex.ru,yandex.*##.main-home-banner
 ya.ru,yandex.ru,yandex.*##.main__block-banner
 ya.ru,yandex.ru,yandex.*##.main__distr-popup
 ya.ru,yandex.ru,yandex.*##.Organic_withPromoOffer
+ya.ru,yandex.ru,yandex.*##div[class^="AdvRsya"]
 ya.ru,yandex.ru,yandex.*#?##search-result > [class]:-abp-has(> div.Organic > div a[href*="_crpd"])
 ya.ru,yandex.ru,yandex.*#?#.content__left > #search-result > li:-abp-has(> .Organic_withPromoOffer)
 ya.ru,yandex.ru,yandex.*#?#.content__right div[class]:-abp-has(> div > script)
