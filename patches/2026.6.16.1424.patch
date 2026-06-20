@@ -1,8 +1,8 @@
-diff name:ruadlist lines:50 checksum:5109fc415b
+diff name:ruadlist lines:53 checksum:88b70e8028
 d4 2
 a5 2
-! Last modified: Sat, 20 Jun 2026 14:26:12 +0000
-! Diff-Path: ../patches/2026.6.20.866.patch#ruadlist
+! Last modified: Sat, 20 Jun 2026 20:22:56 +0000
+! Diff-Path: ../patches/2026.6.20.1222.patch#ruadlist
 a386 1
 ||agl011.art^$third-party
 d6651 1
@@ -28,16 +28,16 @@ telegraf.com.ua,telegraf.ua##.tgr-ads
 d19414 1
 a19414 1
 telegraf.com.ua,telegraf.ua##[data-text^="Новини партнер"]
-d21139 1
-a21139 1
-byrut.games,onlinestreams.ru##div[class^="dle_b_"]
+a19603 1
+byrut.games##[src="/sm/images/btn.svg"]
 d22503 1
 a22503 1
 ||pikabu.ru/ajax/*?p5Oio=$xmlhttprequest
 d23687 1
 a23716 1
 sports.ru##[src*="/supertop-iframe/"]
-a23851 1
+a23851 2
+ya.ru,yandex.ru,yandex.*##[id^="search-"] .SportAdfox
 ya.ru,yandex.ru,yandex.*##div[class^="AdvRsya"]
 d27803 3
 a27805 1
@@ -48,4 +48,7 @@ kg-portal.ru##.ten_topbar:style(max-height: 10px !important)
 d27810 1
 a27810 1
 kg-portal.ru##body:style(background-image: none !important; background-color: inherit !important)
+d27888 1
+a27888 1
+www.kinopoisk.ru##body[class*="body"]:style(overflow: auto !important)
 d29102 1

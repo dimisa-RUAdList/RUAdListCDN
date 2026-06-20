@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 20 Jun 2026 14:26:12 +0000
-! Diff-Path: ../patches/2026.6.20.866.patch#ruadlist
+! Last modified: Sat, 20 Jun 2026 20:22:56 +0000
+! Diff-Path: ../patches/2026.6.20.1222.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -19606,6 +19606,7 @@ sibnet.ru##[src*="sibnet.ru/iframe-wink"]
 ski.ru##[src*="ski.ru/vertelka/"]
 clubsandero.ru##[src="//an.yandex.ru/system/context.js"] ~ iframe
 rutor.org.ru##[src="/download32.png"]
+byrut.games##[src="/sm/images/btn.svg"]
 linux.org.ru##[src^="/adv/"]
 news.soundex.ru##[src^="http://news.soundex.ru/images/banners/"]
 pikabu.ru##[src^="https://special.pikabu.ru/"][src*="banner.html"]
@@ -21141,7 +21142,7 @@ arz-biz.ru##div[class^="direkt-"]
 prazdnovik.ru##div[class^="distr"]
 trashbox.ru##div[class^="div_branding_"]
 aum.news##div[class^="djslider"]
-byrut.games,onlinestreams.ru##div[class^="dle_b_"]
+onlinestreams.ru##div[class^="dle_b_"]
 z-torrents.ru##div[class^="dle_b_app"]
 btu.org.ua##div[class^="dle_b_banner"]
 btu.org.ua##div[class^="dle_b_bet"]
@@ -23854,6 +23855,7 @@ ya.ru,yandex.ru,yandex.*##.main-home-banner
 ya.ru,yandex.ru,yandex.*##.main__block-banner
 ya.ru,yandex.ru,yandex.*##.main__distr-popup
 ya.ru,yandex.ru,yandex.*##.Organic_withPromoOffer
+ya.ru,yandex.ru,yandex.*##[id^="search-"] .SportAdfox
 ya.ru,yandex.ru,yandex.*##div[class^="AdvRsya"]
 ya.ru,yandex.ru,yandex.*#?##search-result > [class]:-abp-has(> div.Organic > div a[href*="_crpd"])
 ya.ru,yandex.ru,yandex.*#?#.content__left > #search-result > li:-abp-has(> .Organic_withPromoOffer)
@@ -27888,7 +27890,7 @@ www.kinopoisk.ru##.content-container_app-width_wide:style(max-width: 100% !impor
 www.kinopoisk.ru##.desktop-layout-with-sidebar__content > div[class][data-tid]:style(width: auto !important)
 www.kinopoisk.ru##.filmsListNew .info:style(padding-right: 116px !important)
 www.kinopoisk.ru##.modal-root div[class^="fullscreen-selector"]:style(opacity: inherit !important)
-www.kinopoisk.ru##body[class*="body"][style*="overflow:"][style*="hidden"]:style(overflow: auto !important)
+www.kinopoisk.ru##body[class*="body"]:style(overflow: auto !important)
 www.kinopoisk.ru##div > a[aria-label="КиноПоиск"] ~ div > button ~ div:style(opacity: inherit !important)
 www.kinopoisk.ru##div[class*="styles_headerContainer"] + div[class^="styles_"]:style(max-width: 100% !important)
 www.kinopoisk.ru##div[class*="user-bar"] > div > button ~ div:style(opacity: inherit !important)
