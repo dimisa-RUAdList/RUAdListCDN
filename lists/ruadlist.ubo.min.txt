@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 21 Jun 2026 06:14:12 +0000
-! Diff-Path: ../patches/2026.6.21.374.patch#ruadlist
+! Last modified: Sun, 21 Jun 2026 10:39:21 +0000
+! Diff-Path: ../patches/2026.6.21.639.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -13406,6 +13406,8 @@ igdz1.ru^$script,domain=igdz.ru
 ||torrenther.com^*.php|$script
 ||torrentinka.me/templates/Default/images/prestol
 ||torrentporno.ru/jrt-$script
+||torrents.ws/otorrente/Antivirus_brandmauer.jpg
+||torrents.ws/yandex_reklama
 ||tort.fm/banners/
 ||tourdom.ru/_ad/
 ||tourdom.ru/_nuxt/img/*X*_$image
@@ -16475,7 +16477,7 @@ griffiny.ru##.dopoln
 1progs.ru,notorgames.net##.down
 gamestracker.org##.down-mg
 slo.ru##.download-box > div:not([class="download"])
-igrovuha.org##.download-btn
+igrovuha.org,torrent-stop.org##.download-btn
 rl-team.net##.download_blue_yellow
 terabit.biz##.download_inner
 fishki.net#?#.drag_element:-abp-has(.adv_info_wrapper)
@@ -19082,7 +19084,7 @@ pornoham.net##.xpwt_video-spots-col
 tvernews.ru##.y_dzen
 pcprogs.net##.ya
 macilove.com##.ya-candy
-igrovuha.org##.ya-dl-outer
+igrovuha.org,torrent-stop.org##.ya-dl-outer
 vokrug.tv##.ya-dzen
 infox.ru##.ya-invite-block
 u-f.ru##.ya-news
@@ -20738,7 +20740,6 @@ trserial.net.ua##center > ins ~ *
 gizmod.ru##center > noindex
 fullgames.ru,haleava.net##center > noindex > a[target="_blank"]
 2olega.ru##center > object > a[target="_blank"]
-torrent-stop.org##center > p > a[target="_blank"]
 itechua.com##center > pre
 maulnet.ru##center > strong
 mmaps.net##center > table > tbody > tr[valign="middle"]:first-child + tr:last-child
@@ -21142,7 +21143,7 @@ arz-biz.ru##div[class^="direkt-"]
 prazdnovik.ru##div[class^="distr"]
 trashbox.ru##div[class^="div_branding_"]
 aum.news##div[class^="djslider"]
-onlinestreams.ru##div[class^="dle_b_"]
+onlinestreams.ru,selezen.games##div[class^="dle_b_"]
 z-torrents.ru##div[class^="dle_b_app"]
 btu.org.ua##div[class^="dle_b_banner"]
 btu.org.ua##div[class^="dle_b_bet"]
@@ -29668,7 +29669,7 @@ ok.ru##body > div:not([id]):not([class]) > .exit-popup:style(display: block !imp
 ok.ru##div[class*="__banner-feed"]
 ||ad.mail.ru/dist/
 ||mail.ru/api-proxy/rb-mimic/
-||media-trend.mail.ru/api/*/mix/*/get/$xmlhttprequest
+||media-trend.mail.ru/api/*/mix/*/get/$xmlhttprequest,domain=~news.mail.ru
 ||ok.ru/res/js/app/VideoEmbed_*.js|$script
 ||ok.ru/videoembed/*autoplay=1$subdocument,removeparam=|
 ||ok.ru/web-api/*/hobby/getMailRuHobbyFeedScriptSrc$domain=mail.ru
