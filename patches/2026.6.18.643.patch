@@ -1,8 +1,8 @@
-diff name:ruadlist lines:43 checksum:db1c231fd3
+diff name:ruadlist lines:55 checksum:fed2da8f3c
 d4 2
 a5 2
-! Last modified: Sun, 21 Jun 2026 10:39:21 +0000
-! Diff-Path: ../patches/2026.6.21.639.patch#ruadlist
+! Last modified: Sun, 21 Jun 2026 16:04:23 +0000
+! Diff-Path: ../patches/2026.6.21.964.patch#ruadlist
 d6652 1
 d12064 1
 a12064 1
@@ -18,15 +18,26 @@ sport-express.net,sport-express.ru##.se-football-world-betboom-widget
 d19085 1
 a19085 1
 igrovuha.org,torrent-stop.org##.ya-dl-outer
+d19498 1
+a19498 1
+svpressa.ru,trainzland.ru##[id^="adfox_"]
 a19608 1
 byrut.games##[src="/sm/images/btn.svg"]
 d20740 1
 d21144 1
 a21144 1
 onlinestreams.ru,selezen.games##div[class^="dle_b_"]
+a23630 1
+sports.ru##.ad-banner
+a23763 1
+||senoval.cdn.sports.ru/tagchester/*/actual-matches-widget/
 a23856 2
 ya.ru,yandex.ru,yandex.*##[id^="search-"] .SportAdfox
 ya.ru,yandex.ru,yandex.*##div[class^="AdvRsya"]
+a25940 1
+@@||trainzland.ru^$generichide
+d26655 1
+d26718 1
 d27808 3
 a27810 1
 kg-portal.ru##.ten_ears_wrap:style(margin-top: 0 !important; background-color: #a5a5a5 !important)
@@ -39,6 +50,7 @@ kg-portal.ru##body:style(background-image: none !important; background-color: in
 d27893 1
 a27893 1
 www.kinopoisk.ru##body[class*="body"]:style(overflow: auto !important)
+d28977 1
 d29671 1
 a29671 1
 ||media-trend.mail.ru/api/*/mix/*/get/$xmlhttprequest,domain=~news.mail.ru

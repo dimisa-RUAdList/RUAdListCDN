@@ -1,8 +1,8 @@
-diff name:ruadlist lines:66 checksum:db1c231fd3
+diff name:ruadlist lines:78 checksum:fed2da8f3c
 d4 2
 a5 2
-! Last modified: Sun, 21 Jun 2026 10:39:21 +0000
-! Diff-Path: ../patches/2026.6.21.639.patch#ruadlist
+! Last modified: Sun, 21 Jun 2026 16:04:23 +0000
+! Diff-Path: ../patches/2026.6.21.964.patch#ruadlist
 a386 1
 ||agl011.art^$third-party
 d6651 1
@@ -35,6 +35,9 @@ igrovuha.org,torrent-stop.org##.ya-dl-outer
 d19415 1
 a19415 1
 telegraf.com.ua,telegraf.ua##[data-text^="Новини партнер"]
+d19494 1
+a19494 1
+svpressa.ru,trainzland.ru##[id^="adfox_"]
 a19604 1
 byrut.games##[src="/sm/images/btn.svg"]
 d20736 1
@@ -44,12 +47,20 @@ onlinestreams.ru,selezen.games##div[class^="dle_b_"]
 d22504 1
 a22504 1
 ||pikabu.ru/ajax/*?p5Oio=$xmlhttprequest
+a23626 1
+sports.ru##.ad-banner
 d23688 1
 a23717 1
 sports.ru##[src*="/supertop-iframe/"]
+a23759 1
+||senoval.cdn.sports.ru/tagchester/*/actual-matches-widget/
 a23852 2
 ya.ru,yandex.ru,yandex.*##[id^="search-"] .SportAdfox
 ya.ru,yandex.ru,yandex.*##div[class^="AdvRsya"]
+a25936 1
+@@||trainzland.ru^$generichide
+d26651 1
+d26714 1
 d27804 3
 a27806 1
 kg-portal.ru##.ten_ears_wrap:style(margin-top: 0 !important; background-color: #a5a5a5 !important)
@@ -62,6 +73,7 @@ kg-portal.ru##body:style(background-image: none !important; background-color: in
 d27889 1
 a27889 1
 www.kinopoisk.ru##body[class*="body"]:style(overflow: auto !important)
+d28973 1
 d29667 1
 a29667 1
 ||media-trend.mail.ru/api/*/mix/*/get/$xmlhttprequest,domain=~news.mail.ru
