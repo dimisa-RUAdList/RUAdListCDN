@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 22 Jun 2026 05:24:03 +0000
-! Diff-Path: ../patches/2026.6.22.324.patch#ruadlist
+! Last modified: Mon, 22 Jun 2026 12:22:23 +0000
+! Diff-Path: ../patches/2026.6.22.742.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22507,7 +22507,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=levik.blog|livejournal.c
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
 ||ng72.ru^$csp=script-src 'self' 'unsafe-eval' https:
-||pikabu.ru/ajax/*?p5Oio=$xmlhttprequest
+||pikabu.ru/ajax/*?j5Oio=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -22860,6 +22860,7 @@ mail.ru##.ph-project-promo-container
 ~e.mail.ru,mail.ru,sportmail.ru#?#tbody:-abp-has(> tr > td > [class*="daynews__item"]) > tr > td ~ td ~ td:last-child
 ~e.mail.ru,mail.ru,sportmail.ru##tr > .daynews__spring
 ! Главная
+~e.mail.ru,mail.ru,~octavius.mail.ru##.ads_overflow-disabled
 ~e.mail.ru,mail.ru,~octavius.mail.ru##.fullscreen-ad-wrapper
 ~e.mail.ru,mail.ru,~octavius.mail.ru##.stripe-wrapper
 ~e.mail.ru,mail.ru,~octavius.mail.ru##.tgb-wrapper
@@ -23850,7 +23851,7 @@ ya.ru##[style*="feed"][style*="min-height:"]
 ya.ru##body > div[data-hydration-id] > [href^="https://yabs.yandex.ru/count/"] + div
 ya.ru##body > div[data-hydration-id] > div > [src^="https://yabs.yandex.ru/count/"] + div
 ya.ru##section[class^="reaso"]
-ya.ru##section[style*="sektillon-items-count:"]
+ya.ru##section[style*="sektlilon-items-count:"]
 ya.ru##ul[class*="-section__list"]
 ya.ru,yandex.ru,yandex.*##.AdvProductGallery
 ya.ru,yandex.ru,yandex.*##.layout__banner
@@ -28592,6 +28593,9 @@ ya.ru,yandex.by,yandex.kz,yandex.uz##.link-bro
 ya.ru##.market-feed
 ya.ru##.reasoning-section
 ya.ru##[id^="r"][id*="it"][id*="m"][id*="-"][id*="f"]
+ya.ru##[id^="r"][id*="yt"][id*="m"][id*="-"][id*="f"]
+ya.ru##html[class*="sektlilon_top"] aside + div
+ya.ru##html[class*="sektlilon_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
 ya.ru##main.body__wrapper > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
 ! афиша
 afisha.yandex.ru##[style^="width:"][style*="100%;"][style*="height:"][style*="240px;"][style*="display:"][style*="block;"]:empty
@@ -29669,7 +29673,6 @@ ok.ru##body > div:not([id]):not([class]) > .exit-popup:style(display: block !imp
 ok.ru##div[class*="__banner-feed"]
 ||ad.mail.ru/dist/
 ||mail.ru/api-proxy/rb-mimic/
-||media-trend.mail.ru/api/*/mix/*/get/$xmlhttprequest,domain=~news.mail.ru
 ||ok.ru/res/js/app/VideoEmbed_*.js|$script
 ||ok.ru/videoembed/*autoplay=1$subdocument,removeparam=|
 ||ok.ru/web-api/*/hobby/getMailRuHobbyFeedScriptSrc$domain=mail.ru
@@ -29706,6 +29709,7 @@ mail.ru##[slot="main-column"] .news-item:matches-media((max-width: 1280px)):styl
 mail.ru##[slot="main-column"] > .tabs:matches-media((max-width: 1280px)):style(height: 20px !important)
 !#if env_mobile
 mail.ru#@#body:not(.js-module) .tabs + div[class]:style(min-width: fit-content !important)
+||media-trend.mail.ru/api/*/mix/*/get/$xmlhttprequest,domain=~news.mail.ru
 !#endif
 ! Book service read&download
 bookdream.ru,booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkniga.ru,skanbooks.ru,x-libri.ru##+js(abort-on-property-read, disable_keystrokes)

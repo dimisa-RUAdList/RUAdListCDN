@@ -1,8 +1,8 @@
-diff name:ruadlist lines:44 checksum:3a6c83e871
+diff name:ruadlist lines:56 checksum:ed6d0a690b
 d4 2
 a5 2
-! Last modified: Mon, 22 Jun 2026 05:24:03 +0000
-! Diff-Path: ../patches/2026.6.22.324.patch#ruadlist
+! Last modified: Mon, 22 Jun 2026 12:22:23 +0000
+! Diff-Path: ../patches/2026.6.22.742.patch#ruadlist
 d6652 1
 d12064 1
 a12064 1
@@ -25,10 +25,18 @@ d20741 1
 d21145 1
 a21145 1
 onlinestreams.ru,selezen.games##div[class^="dle_b_"]
+d22509 1
+a22509 1
+||pikabu.ru/ajax/*?j5Oio=$xmlhttprequest
+a22861 1
+~e.mail.ru,mail.ru,~octavius.mail.ru##.ads_overflow-disabled
 a23631 1
 sports.ru##.ad-banner
 a23764 1
 ||senoval.cdn.sports.ru/tagchester/*/actual-matches-widget/
+d23850 1
+a23850 1
+ya.ru##section[style*="sektlilon-items-count:"]
 a23857 2
 ya.ru,yandex.ru,yandex.*##[id^="search-"] .SportAdfox
 ya.ru,yandex.ru,yandex.*##div[class^="AdvRsya"]
@@ -39,7 +47,11 @@ d26719 1
 d27891 1
 a27891 1
 www.kinopoisk.ru##body[class*="body"]:style(overflow: auto !important)
+a28590 3
+ya.ru##[id^="r"][id*="yt"][id*="m"][id*="-"][id*="f"]
+ya.ru##html[class*="sektlilon_top"] aside + div
+ya.ru##html[class*="sektlilon_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
 d28975 1
 d29669 1
-a29669 1
+a29705 1
 ||media-trend.mail.ru/api/*/mix/*/get/$xmlhttprequest,domain=~news.mail.ru

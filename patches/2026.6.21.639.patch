@@ -1,20 +1,35 @@
-diff name:ruadlist lines:19 checksum:3a6c83e871
+diff name:ruadlist lines:34 checksum:ed6d0a690b
 d4 2
 a5 2
-! Last modified: Mon, 22 Jun 2026 05:24:03 +0000
-! Diff-Path: ../patches/2026.6.22.324.patch#ruadlist
+! Last modified: Mon, 22 Jun 2026 12:22:23 +0000
+! Diff-Path: ../patches/2026.6.22.742.patch#ruadlist
 d12063 1
 a12063 1
 ||kg-portal.ru/brandbook/
 d19500 1
 a19500 1
 svpressa.ru,trainzland.ru##[id^="adfox_"]
+d22510 1
+a22510 1
+||pikabu.ru/ajax/*?j5Oio=$xmlhttprequest
+a22862 1
+~e.mail.ru,mail.ru,~octavius.mail.ru##.ads_overflow-disabled
 a23632 1
 sports.ru##.ad-banner
 a23765 1
 ||senoval.cdn.sports.ru/tagchester/*/actual-matches-widget/
+d23851 1
+a23851 1
+ya.ru##section[style*="sektlilon-items-count:"]
 a25944 1
 @@||trainzland.ru^$generichide
 d26659 1
 d26722 1
+a28593 3
+ya.ru##[id^="r"][id*="yt"][id*="m"][id*="-"][id*="f"]
+ya.ru##html[class*="sektlilon_top"] aside + div
+ya.ru##html[class*="sektlilon_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
 d28978 1
+d29672 1
+a29708 1
+||media-trend.mail.ru/api/*/mix/*/get/$xmlhttprequest,domain=~news.mail.ru
