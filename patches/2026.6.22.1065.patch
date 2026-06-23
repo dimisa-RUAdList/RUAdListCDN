@@ -1,8 +1,8 @@
-diff name:ruadlist lines:46 checksum:c2d1d8f9ea
+diff name:ruadlist lines:85 checksum:299c5d7d67
 d4 2
 a5 2
-! Last modified: Tue, 23 Jun 2026 12:43:48 +0000
-! Diff-Path: ../patches/2026.6.23.763.patch#ruadlist
+! Last modified: Tue, 23 Jun 2026 18:07:22 +0000
+! Diff-Path: ../patches/2026.6.23.1087.patch#ruadlist
 d7877 1
 a7877 1
 //mads.$domain=~mads.team|~mads.uz
@@ -23,9 +23,12 @@ a19417 1
 magnit.ru##[data-test-id="adfox"]
 a19667 1
 magnit.ru##a[aria-label^="Реклама"]
+d22499 1
 d22511 1
 a22511 1
 ||pikabu.ru/ajax/*?r7n8M=$xmlhttprequest
+a22923 1
+dzen.ru,sportsdzen.ru##div[style*="--mascot-"]
 d23855 1
 a23855 1
 ya.ru##section[style*="sektllion-items-count:"]
@@ -42,6 +45,42 @@ d28599 2
 a28600 2
 ya.ru##html[class*="sektllion_top"] aside + div
 ya.ru##html[class*="sektllion_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
+d28613 4
+a28616 6
+dzen.ru##.secondChunkSyncExp div[class*="-layout--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child > div:only-child:style(border: inherit !important)
+dzen.ru##.secondChunkSyncExp div[class*="-layout--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child:style(background-color: inherit !important)
+dzen.ru##.secondChunkSyncExp div[class*="-layout--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty + div:last-child div:style(background-color: inherit !important)
+dzen.ru##.secondChunkSyncExp div[class*="-layout--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty:style(background-color: inherit !important)
+dzen.ru,sportsdzen.ru##[aria-label*="Pа"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id]
+dzen.ru,sportsdzen.ru##[aria-label*="Pа"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not([class*="-rubric-"]):not(:last-child):not([aria-label])
+d28679 1
+a28679 1
+dzen.ru,sportsdzen.ru##div[class^="news-"][style^="margin-top: 0px; height: calc(99.997% "]
+d28686 1
+a28686 1
+dzen.ru##div[style*="12.36263736263"]
+d29009 1
+a29019 1
+dzen.ru,sportsdzen.ru##+js(abort-on-property-read, Object.prototype.setContainer)
 d29130 1
 a29130 1
 magnit.ru,regnum.ru,tproger.ru##+js(addEventListener-defuser, click, '', elements, a[href*="utm_campaign"])
+a29642 1
+account.mail.ru,o2.mail.ru#@#+js()
+d29645 1
+a29645 1
+~e.mail.ru,mail.ru,~octavius.mail.ru,sportmail.ru##+js(abort-current-script, __mediaTrend, TrendVideoArticle)
+d29652 3
+a29654 3
+~3igames.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~finance.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru,~vfokuse.mail.ru,~widgets.mail.ru##+js(no-fetch-if, /\/apic\//)
+~3igames.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~finance.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru,~vfokuse.mail.ru,~widgets.mail.ru##+js(prevent-xhr, &pgid=)
+~3igames.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~finance.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru,~vfokuse.mail.ru,~widgets.mail.ru##+js(remove-node-text, script, violatedDirective)
+d29659 1
+a29659 1
+~calls.mail.ru,~e.mail.ru,~finance.mail.ru,mail.ru,~my.mail.ru,~news.mail.ru,~octavius.mail.ru,~sportmail.ru,~touch.mail.ru,~vfokuse.mail.ru##+js(set-constant, Object.prototype.mimic, undefined)
+a29662 1
+~3igames.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~finance.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru,~vfokuse.mail.ru,~widgets.mail.ru##+js(set-constant, __PHS._.props.html, null)
+d29664 2
+a29665 2
+~3igames.mail.ru,~auto.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~finance.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru,~vfokuse.mail.ru,~widgets.mail.ru##+js(set-constant, document.title, null)
+~3igames.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~finance.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru,~vfokuse.mail.ru,~widgets.mail.ru##+js(set-constant, mr._mimic.locator.transform, undefined)

@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 23 Jun 2026 12:43:48 +0000
-! Diff-Path: ../patches/2026.6.23.763.patch#ruadlist
+! Last modified: Tue, 23 Jun 2026 18:07:22 +0000
+! Diff-Path: ../patches/2026.6.23.1087.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22505,7 +22505,6 @@ $csp=script-src-attr 'none',domain=eurointegration.com.ua|sportanalytic.com|note
 @@||s.zhctrack.net/z|$xmlhttprequest
 @@||s.zmctrack.net/z|$xmlhttprequest
 @@||s.znctrack.net/z|$xmlhttprequest
-@@||ssp.rambler.ru/capirs_async.js|$script,domain=www.championat.com|www.championat.ru
 @@||statika.mpsuadv.ru/scripts/*.js|$script,domain=trychatgpt.ru
 https://*adtech_uid=$~third-party,xmlhttprequest,domain=levik.blog|livejournal.com|olegmakarenko.ru|periskop.su|shakko.ru|shiro-kino.ru|vadimrazumov.ru
 ||captcha-api.yandex.ru^$domain=drive2.ru
@@ -22930,6 +22929,7 @@ dzen.ru##div[id*="discrete-feed-banner"]
 dzen.ru##div[id*="story-skeleton"]
 dzen.ru##div[id][class*="news-"][class*="-advert"]
 dzen.ru##div[id][class*="news-"][class*="_loaded"]
+dzen.ru,sportsdzen.ru##div[style*="--mascot-"]
 ! Спорт
 sportmail.ru##.sidebar_video:empty
 sportmail.ru##a[href="/bookmakers/"]
@@ -28616,10 +28616,12 @@ disk.yandex.by,disk.yandex.com,disk.yandex.kz,disk.yandex.ru,disk.yandex.uz##div
 ! ---
 ! дзен
 ! главная
-dzen.ru##.secondChunkSyncExp div[class^="dzen-layout--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child > div:only-child:style(border: inherit !important)
-dzen.ru##.secondChunkSyncExp div[class^="dzen-layout--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child:style(background-color: inherit !important)
-dzen.ru##.secondChunkSyncExp div[class^="dzen-layout--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty + div:last-child div:style(background-color: inherit !important)
-dzen.ru##.secondChunkSyncExp div[class^="dzen-layout--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty:style(background-color: inherit !important)
+dzen.ru##.secondChunkSyncExp div[class*="-layout--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child > div:only-child:style(border: inherit !important)
+dzen.ru##.secondChunkSyncExp div[class*="-layout--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child:style(background-color: inherit !important)
+dzen.ru##.secondChunkSyncExp div[class*="-layout--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty + div:last-child div:style(background-color: inherit !important)
+dzen.ru##.secondChunkSyncExp div[class*="-layout--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty:style(background-color: inherit !important)
+dzen.ru,sportsdzen.ru##[aria-label*="Pа"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id]
+dzen.ru,sportsdzen.ru##[aria-label*="Pа"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not([class*="-rubric-"]):not(:last-child):not([aria-label])
 dzen.ru##[class*="CardRtb"]
 dzen.ru##[class*="card-rtb"]
 dzen.ru##[class*="desktop"] ~ [id*="teaser"]
@@ -28682,14 +28684,14 @@ dzen.ru##div[class*="body_branding"] > div[style*="background-color:"]
 dzen.ru##div[class*="body_branding"]:style(background: inherit !important)
 dzen.ru##div[class*="new"] [class$="__rubricator"] + div[class*=" "] > div:only-child
 dzen.ru##div[class^="news"] [class*="skeleton"]:style(background-color: transparent !important)
-dzen.ru,sportsdzen.ru##div[class^="news-"][style^="margin-top: 0px; height: calc(99.998% "]
+dzen.ru,sportsdzen.ru##div[class^="news-"][style^="margin-top: 0px; height: calc(99.997% "]
 dzen.ru##div[class^="news-site-"][class*="-desktop-"]:style(background-color: transparent !important)
 dzen.ru,sportsdzen.ru##div[class^="news-site-"][class*="skeleton"]:style(background-color: transparent !important)
 dzen.ru##div[class^="news-top-stories-"][class$="other_extra"] ~ div:not([class^="news-top-stories-"][class$="other_extra"])
 dzen.ru##div[id] > div[class*="-desktop-"] > div[class*="__image-"]:empty
 dzen.ru##div[id] > div[class*="-desktop-"] > div[class*="__image-"]:empty + div[class*="__content-"]
 dzen.ru##div[id^="ad-"][class*=" news-"]
-dzen.ru##div[style*="12.362637362637"]
+dzen.ru##div[style*="12.36263736263"]
 ! исправление ошибок и косяков оригинальной вёрстки
 dzen.ru##.news-page-layout__content:style(width: var(--news-content-size) !important; margin-left: auto !important; margin-right: auto !important)
 dzen.ru,sportsdzen.ru##body:style(scroll-snap-type: none !important)
@@ -29012,7 +29014,6 @@ vk.com,vk.ru##+js(abort-on-property-read, Groups.showDisclaimer)
 rutor.org##+js(abort-on-property-read, Light.Popup)
 drive2.ru##+js(abort-on-property-read, Object.prototype.AdfoxXhrRequestPrepared)
 liveinternet.ru,yap.ru,yaplakal.com##+js(abort-on-property-read, Object.prototype.Metrika)
-dzen.ru,sportsdzen.ru##+js(abort-on-property-read, Object.prototype.UserBlocking)
 liveinternet.ru##+js(abort-on-property-read, Object.prototype.YA_TURBO_PAGES)
 levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##+js(abort-on-property-read, Object.prototype._getBanner)
 rbc.ru##+js(abort-on-property-read, Object.prototype._isAutostartQueueSet)
@@ -29023,6 +29024,7 @@ rbc.ru##+js(abort-on-property-read, Object.prototype.isApplySticky)
 e1.ru,nova.rambler.ru,pikabu.ru##+js(abort-on-property-read, Object.prototype.loadBanner)
 24smi.org##+js(abort-on-property-read, Object.prototype.render)
 gismeteo.by,gismeteo.kz,gismeteo.ru##+js(abort-on-property-read, Object.prototype.scriptsViaXhr)
+dzen.ru,sportsdzen.ru##+js(abort-on-property-read, Object.prototype.setContainer)
 drive2.ru,razlozhi.ru##+js(abort-on-property-read, Object.prototype.yaContextCb)
 f1comp.ru,tagaev.com,times.zt.ua##+js(abort-on-property-read, PUM.getPopup)
 gencit.info##+js(abort-on-property-read, Radish)
@@ -29646,29 +29648,31 @@ ya.ru,yandex.*##.simple-popup__overlay:remove()
 ! Mail.RU
 mail.ru###grid div[class^="feed__"]:remove()
 cloud.mail.ru###react-modals:has(a[href^="https://vk.cc/"])
+account.mail.ru,o2.mail.ru#@#+js()
 minigames.mail.ru##+js(abort-current-inline-script, $, blockWarnClass)
 mmminigames.mail.ru##+js(abort-current-inline-script, $, mimicTopClass)
-~account.mail.ru,~e.mail.ru,mail.ru,~o2.mail.ru,~octavius.mail.ru,sportmail.ru##+js(abort-current-script, __mediaTrend, TrendVideoArticle)
+~e.mail.ru,mail.ru,~octavius.mail.ru,sportmail.ru##+js(abort-current-script, __mediaTrend, TrendVideoArticle)
 ok.ru##+js(abort-on-property-read, globalAuthLoginPopupCounter)
 ok.ru##+js(abort-on-property-write, mailruEnabled)
 light.mail.ru##+js(href-sanitizer, [href^="https://checklink.mail.ru/proxy?"], ?url)
 light.mail.ru##+js(href-sanitizer, [href^="https://click.mail.ru/redir?u="], ?u)
 my.mail.ru##+js(href-sanitizer, [href^="https://clicker.mail.ru/redir?u="], ?u)
 ok.ru,touch.mail.ru##+js(json-prune, result.body.direct)
-~3igames.mail.ru,~account.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~finance.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru,~vfokuse.mail.ru,~widgets.mail.ru##+js(no-fetch-if, /\/apic\//)
-~3igames.mail.ru,~account.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~finance.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru,~vfokuse.mail.ru,~widgets.mail.ru##+js(prevent-xhr, &pgid=)
-~3igames.mail.ru,~account.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~finance.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru,~vfokuse.mail.ru,~widgets.mail.ru##+js(remove-node-text, script, violatedDirective)
+~3igames.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~finance.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru,~vfokuse.mail.ru,~widgets.mail.ru##+js(no-fetch-if, /\/apic\//)
+~3igames.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~finance.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru,~vfokuse.mail.ru,~widgets.mail.ru##+js(prevent-xhr, &pgid=)
+~3igames.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~finance.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru,~vfokuse.mail.ru,~widgets.mail.ru##+js(remove-node-text, script, violatedDirective)
 okminigames.mail.ru##+js(set-constant, NO_ADV, 1)
 player-smotri.mail.ru##+js(set-constant, Object.prototype.autoPlayParams, false)
 ok.ru##+js(set-constant, Object.prototype.detectAdBlock, undefined)
 finance.mail.ru,news.mail.ru,sportmail.ru,vfokuse.mail.ru##+js(set-constant, Object.prototype.enableMimic, noopFunc)
-~calls.mail.ru,~e.mail.ru,~finance.mail.ru,mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~sportmail.ru,~touch.mail.ru,~vfokuse.mail.ru##+js(set-constant, Object.prototype.mimic, undefined)
+~calls.mail.ru,~e.mail.ru,~finance.mail.ru,mail.ru,~my.mail.ru,~news.mail.ru,~octavius.mail.ru,~sportmail.ru,~touch.mail.ru,~vfokuse.mail.ru##+js(set-constant, Object.prototype.mimic, undefined)
 ok.ru##+js(set-constant, Object.prototype.obfuscateParams, undefined)
 my.mail.ru##+js(set-constant, Object.prototype.runMimic, noopFunc)
 pogoda.mail.ru##+js(set-constant, Object.prototype.useMimic, noopFunc)
+~3igames.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~finance.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru,~vfokuse.mail.ru,~widgets.mail.ru##+js(set-constant, __PHS._.props.html, null)
 news.mail.ru##+js(set-constant, __PHS._.props.html, {})
-~3igames.mail.ru,~account.mail.ru,~auto.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~finance.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru,~vfokuse.mail.ru,~widgets.mail.ru##+js(set-constant, document.title, null)
-~3igames.mail.ru,~account.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~finance.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~o2.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru,~vfokuse.mail.ru,~widgets.mail.ru##+js(set-constant, mr._mimic.locator.transform, undefined)
+~3igames.mail.ru,~auto.mail.ru,~biz.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~finance.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru,~vfokuse.mail.ru,~widgets.mail.ru##+js(set-constant, document.title, null)
+~3igames.mail.ru,~auto.mail.ru,~biz.mail.ru,~blog.mail.ru,~bonus.mail.ru,~calendar.mail.ru,~calls.mail.ru,~cloud.mail.ru,~connect.mail.ru,~deti.mail.ru,~dobro.mail.ru,~e.mail.ru,~finance.mail.ru,~gibdd.mail.ru,~health.mail.ru,~help.mail.ru,~hi-tech.mail.ru,~horo.mail.ru,~kino.mail.ru,~lady.mail.ru,~love.mail.ru,mail.ru,~mcs.mail.ru,~minigames.mail.ru,~my.mail.ru,~news.mail.ru,~octavius.mail.ru,~okminigames.mail.ru,~otvet.mail.ru,~pets.mail.ru,~player-smotri.mail.ru,~pogoda.mail.ru,~top.mail.ru,~touch.mail.ru,~tv.mail.ru,~vfokuse.mail.ru,~widgets.mail.ru##+js(set-constant, mr._mimic.locator.transform, undefined)
 touch.mail.ru##.page__content__slide > .messagelist > div:not([cid]):not([style]):not([id]):not([class])
 mail.ru##.tv-widget [class^="vk-video"]
 mail.ru##.tv-widget [class^="vk-video"]:remove()
