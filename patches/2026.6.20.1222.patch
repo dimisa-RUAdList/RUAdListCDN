@@ -1,8 +1,11 @@
-diff name:ruadlist lines:56 checksum:17ec0234e6
+diff name:ruadlist lines:82 checksum:0dcad2d748
 d4 2
 a5 2
-! Last modified: Tue, 23 Jun 2026 05:11:35 +0000
-! Diff-Path: ../patches/2026.6.23.311.patch#ruadlist
+! Last modified: Tue, 23 Jun 2026 09:59:00 +0000
+! Diff-Path: ../patches/2026.6.23.598.patch#ruadlist
+d7877 1
+a7877 1
+//mads.$domain=~mads.team|~mads.uz
 d12063 1
 a12063 1
 ||kg-portal.ru/brandbook/
@@ -12,24 +15,38 @@ a13351 2
 a13408 2
 ||torrents.ws/otorrente/Antivirus_brandmauer.jpg
 ||torrents.ws/yandex_reklama
+a15234 1
+magnit.ru##.adfox-carousel-skeleton-wrapper
 a15898 1
 habr.com##.block-wrapper ~ .block-wrapper::after
 d16478 1
 a16478 1
 igrovuha.org,torrent-stop.org##.download-btn
+a17728 1
+magnit.ru##.pharmacy
+a18472 1
+magnit.ru##.special-offers
+a18721 1
+magnit.ru##.top-carousel-wrapper
+a18835 1
+magnit.ru##.unit-ad-block-message
 d19085 1
 a19085 1
 igrovuha.org,torrent-stop.org##.ya-dl-outer
+a19414 1
+magnit.ru##[data-test-id="adfox"]
 d19498 1
 a19498 1
 svpressa.ru,trainzland.ru##[id^="adfox_"]
+a19664 1
+magnit.ru##a[aria-label^="Реклама"]
 d20741 1
 d21145 1
 a21145 1
 onlinestreams.ru,selezen.games##div[class^="dle_b_"]
 d22509 1
 a22509 1
-||pikabu.ru/ajax/*?j5Oio=$xmlhttprequest
+||pikabu.ru/ajax/*?r7n8M=$xmlhttprequest
 a22861 1
 ~e.mail.ru,mail.ru,~octavius.mail.ru##.ads_overflow-disabled
 a23631 1
@@ -38,20 +55,29 @@ a23764 1
 ||senoval.cdn.sports.ru/tagchester/*/actual-matches-widget/
 d23850 1
 a23850 1
-ya.ru##section[style*="sektlilon-items-count:"]
+ya.ru##section[style*="sektllion-items-count:"]
 a23892 1
 yandex.ru,yandex.*##div[class^="AreYouGoodPromo_"]
 a25507 1
 ||temp2cdn.link^$third-party,xmlhttprequest
+d25830 1
 a25943 1
 @@||trainzland.ru^$generichide
-d26658 1
+d26176 1
+d26401 1
+d26657 2
+d26666 1
 d26721 1
+a28591 1
+ya.ru##[id^="r"][id*="et"][id*="m"][id*="-"][id*="f"]
 a28592 3
 ya.ru##[id^="r"][id*="yt"][id*="m"][id*="-"][id*="f"]
-ya.ru##html[class*="sektlilon_top"] aside + div
-ya.ru##html[class*="sektlilon_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
+ya.ru##html[class*="sektllion_top"] aside + div
+ya.ru##html[class*="sektllion_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
 d28977 1
+d29123 1
+a29123 1
+magnit.ru,regnum.ru,tproger.ru##+js(addEventListener-defuser, click, '', elements, a[href*="utm_campaign"])
 d29671 1
 a29707 1
 ||media-trend.mail.ru/api/*/mix/*/get/$xmlhttprequest,domain=~news.mail.ru

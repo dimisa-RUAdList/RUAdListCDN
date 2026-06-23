@@ -1,14 +1,51 @@
-diff name:ruadlist lines:13 checksum:17ec0234e6
+diff name:ruadlist lines:50 checksum:0dcad2d748
 d4 2
 a5 2
-! Last modified: Tue, 23 Jun 2026 05:11:35 +0000
-! Diff-Path: ../patches/2026.6.23.311.patch#ruadlist
+! Last modified: Tue, 23 Jun 2026 09:59:00 +0000
+! Diff-Path: ../patches/2026.6.23.598.patch#ruadlist
+d7877 1
+a7877 1
+//mads.$domain=~mads.team|~mads.uz
 a13351 2
 ||temp2cdn.link/*.xml?$xmlhttprequest
 ||temp2cdn.link/api-integration/
+a15236 1
+magnit.ru##.adfox-carousel-skeleton-wrapper
 a15900 1
 habr.com##.block-wrapper ~ .block-wrapper::after
+a17730 1
+magnit.ru##.pharmacy
+a18474 1
+magnit.ru##.special-offers
+a18723 1
+magnit.ru##.top-carousel-wrapper
+a18837 1
+magnit.ru##.unit-ad-block-message
+a19416 1
+magnit.ru##[data-test-id="adfox"]
+a19666 1
+magnit.ru##a[aria-label^="Реклама"]
+d22510 1
+a22510 1
+||pikabu.ru/ajax/*?r7n8M=$xmlhttprequest
+d23854 1
+a23854 1
+ya.ru##section[style*="sektllion-items-count:"]
 a23896 1
 yandex.ru,yandex.*##div[class^="AreYouGoodPromo_"]
 a25511 1
 ||temp2cdn.link^$third-party,xmlhttprequest
+d25834 1
+d26181 1
+d26406 1
+d26662 1
+d26670 1
+a28594 1
+ya.ru##[id^="r"][id*="et"][id*="m"][id*="-"][id*="f"]
+d28597 2
+a28598 2
+ya.ru##html[class*="sektllion_top"] aside + div
+ya.ru##html[class*="sektllion_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
+d29128 1
+a29128 1
+magnit.ru,regnum.ru,tproger.ru##+js(addEventListener-defuser, click, '', elements, a[href*="utm_campaign"])
