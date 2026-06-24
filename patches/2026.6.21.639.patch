@@ -1,15 +1,18 @@
-diff name:ruadlist lines:140 checksum:3564ea5a3c
+diff name:ruadlist lines:147 checksum:8c5924975c
 d4 2
 a5 2
-! Last modified: Wed, 24 Jun 2026 20:00:40 +0000
-! Diff-Path: ../patches/2026.6.24.1200.patch#ruadlist
+! Last modified: Wed, 24 Jun 2026 23:17:20 +0000
+! Diff-Path: ../patches/2026.6.24.1397.patch#ruadlist
 a5601 1
 ||shortener2.link^$third-party
-a6795 1
+a6795 2
+||vvcat.me^$third-party
 ||vvcat.org^$third-party
 d7877 1
 a7877 1
 //mads.$domain=~mads.team|~mads.uz
+a8392 1
+||vvcat.*/api-integration/assets/*.txt?*=$third-party,xmlhttprequest
 a10440 1
 ||svetovik.info/assets/browser-*.js
 d10519 1
@@ -59,6 +62,8 @@ a19500 1
 svpressa.ru,trainzland.ru##[id^="adfox_"]
 a19666 1
 magnit.ru##a[aria-label^="Реклама"]
+a21824 1
+hdrezka.my##div[style^="width:680px;height:200px;padding-top:"]
 d22498 1
 d22510 1
 a22510 1
@@ -90,6 +95,8 @@ d26667 1
 d26722 1
 a27045 1
 ||svetovik.info/theme-javascripts/b5922af41abdff2a6391e82fa9fa11e48d84bb4d.js
+a27689 1
+hdrezka.my##.main-container:style(margin-top: 0 !important)
 a28592 1
 ya.ru##[id^="r"][id*="et"][id*="m"][id*="-"][id*="f"]
 a28593 3

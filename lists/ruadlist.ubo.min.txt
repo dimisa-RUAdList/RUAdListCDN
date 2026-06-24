@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 24 Jun 2026 20:00:40 +0000
-! Diff-Path: ../patches/2026.6.24.1200.patch#ruadlist
+! Last modified: Wed, 24 Jun 2026 23:17:20 +0000
+! Diff-Path: ../patches/2026.6.24.1397.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -6794,6 +6794,7 @@
 ||vutrem.com^$third-party
 ||vuwgt.com^$third-party
 ||vuwsdds.pro^$third-party
+||vvcat.me^$third-party
 ||vvcat.org^$third-party
 ||vvmblock.ru^
 ||vvvsd.space^$third-party
@@ -8392,6 +8393,7 @@ _tizers.
 ||v.adfox.ru^$object,xmlhttprequest
 ||vip/?pu=$third-party,script
 ||vst.videolink.$third-party
+||vvcat.*/api-integration/assets/*.txt?*=$third-party,xmlhttprequest
 ||work/?pu=$third-party,script
 ||xn--p1ai/banner/
 ||xyz/*?mobile=null&tablet=null&os=null&site=*&rand=$third-party,xmlhttprequest
@@ -21834,6 +21836,7 @@ appstudio.org##div[style^="width:100%; height:90px;"]
 inmoment.ru##div[style^="width:199px;height:299px;"]
 bookz.ru##div[style^="width:240px;height:400px"]
 m24.ru##div[style^="width:300px;height:600px"]
+hdrezka.my##div[style^="width:680px;height:200px;padding-top:"]
 liveinternet.ru##div[style^="width:970px; height:280px;"]
 forbes.ru##div[type="ad"]
 ebalovo.*,epalovo.*##.fad
@@ -27700,6 +27703,7 @@ ac,ag,biz,buzz,by,city,club,co,com,fi,in,ink,kim,loan,me,name,net,org,pub,rest,r
 net,org##body.branded:not([id]):not([style]) > #wrapper:not([class]):not([style]):style(margin-top: unset !important)
 ! ---
 hdrezka.inc,rezka.biz##.container > #content:style(margin-top: unset !important)
+hdrezka.my##.main-container:style(margin-top: 0 !important)
 ! ---
 hdru.net##.page:style(margin-top: 0 !important)
 ! ---
