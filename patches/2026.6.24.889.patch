@@ -1,13 +1,16 @@
-diff name:ruadlist lines:32 checksum:c439673039
+diff name:ruadlist lines:38 checksum:cddba8dade
 d4 2
 a5 2
-! Last modified: Thu, 25 Jun 2026 04:18:58 +0000
-! Diff-Path: ../patches/2026.6.25.258.patch#ruadlist
+! Last modified: Thu, 25 Jun 2026 11:46:53 +0000
+! Diff-Path: ../patches/2026.6.25.706.patch#ruadlist
 a6796 2
 ||vvcat.me^$third-party
 ||vvcat.org^$third-party
 a8393 1
 ||vvcat.*/api-integration/assets/*.txt?*=$third-party,xmlhttprequest
+d10880 1
+a10880 1
+/wp-content/uploads/*_1920x1080$image,domain=agronews.ua|agroreview.com|agroweek.com|growhow.in.ua
 d11494 1
 a12575 1
 ||nv86.ru/ajax/banner.php
@@ -31,3 +34,6 @@ a23652 1
 sports.ru##.card-odds
 a27702 1
 hdrezka.my##.main-container:style(margin-top: 0 !important)
+a29492 1
+dzen.ru##:matches-path(/articles) div[class^="article-feed--"] > div[class] ~ div[id]
+d29497 1
