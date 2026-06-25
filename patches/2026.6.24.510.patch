@@ -1,13 +1,15 @@
-diff name:ruadlist lines:46 checksum:e01d56c291
+diff name:ruadlist lines:64 checksum:6e292c44de
 d4 2
 a5 2
-! Last modified: Thu, 25 Jun 2026 14:49:38 +0000
-! Diff-Path: ../patches/2026.6.25.889.patch#ruadlist
+! Last modified: Thu, 25 Jun 2026 20:18:23 +0000
+! Diff-Path: ../patches/2026.6.25.1218.patch#ruadlist
+a6590 1
+||veoapi.net^$third-party
 a6796 2
 ||vvcat.me^$third-party
 ||vvcat.org^$third-party
-a8393 1
-||vvcat.*/api-integration/assets/*.txt?*=$third-party,xmlhttprequest
+a7924 1
+/api-integration/assets/*.txt?*=$third-party,xmlhttprequest
 a10441 1
 ||svetovik.info/assets/browser-*.js
 d10520 1
@@ -35,13 +37,29 @@ a19352 1
 focus.ua,nv86.ru,sovets.net,tvtver.ru##[data-banner]
 a21836 1
 hdrezka.my##div[style^="width:680px;height:200px;padding-top:"]
+a23647 2
+sports.ru##.ad-widget
+sports.ru##.ad-wrapper
+a23650 1
+sports.ru##.bookmaker-bonuses
 a23651 1
 sports.ru##.card-odds
+a23667 1
+sports.ru##.match-card-cta-button
+a23669 1
+sports.ru##.match-of-the-day__ad-label
+a23674 1
+sports.ru##.mc-layout__top-ads
+a23682 1
+sports.ru##.news-page__branding
+a23693 1
+sports.ru##.post-page__branding
 a27701 1
 hdrezka.my##.main-container:style(margin-top: 0 !important)
 a29491 1
 dzen.ru##:matches-path(/articles) div[class^="article-feed--"] > div[class] ~ div[id]
 d29496 1
+d29509 1
 d29632 1
 a29632 1
 ||rutube.ru/play/embed/*dist=$subdocument,removeparam=autoplay

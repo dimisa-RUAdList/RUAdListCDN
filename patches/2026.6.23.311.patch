@@ -1,18 +1,20 @@
-diff name:ruadlist lines:128 checksum:e01d56c291
+diff name:ruadlist lines:146 checksum:6e292c44de
 d4 2
 a5 2
-! Last modified: Thu, 25 Jun 2026 14:49:38 +0000
-! Diff-Path: ../patches/2026.6.25.889.patch#ruadlist
+! Last modified: Thu, 25 Jun 2026 20:18:23 +0000
+! Diff-Path: ../patches/2026.6.25.1218.patch#ruadlist
 a5601 1
 ||shortener2.link^$third-party
+a6589 1
+||veoapi.net^$third-party
 a6795 2
 ||vvcat.me^$third-party
 ||vvcat.org^$third-party
 d7877 1
 a7877 1
 //mads.$domain=~mads.team|~mads.uz
-a8392 1
-||vvcat.*/api-integration/assets/*.txt?*=$third-party,xmlhttprequest
+a7923 1
+/api-integration/assets/*.txt?*=$third-party,xmlhttprequest
 a10440 1
 ||svetovik.info/assets/browser-*.js
 d10519 1
@@ -62,8 +64,23 @@ a22513 1
 ||pikabu.ru/ajax/*?r7n8M=$xmlhttprequest
 a22925 1
 dzen.ru,sportsdzen.ru##div[style*="--mascot-"]
+a23638 2
+sports.ru##.ad-widget
+sports.ru##.ad-wrapper
+a23641 1
+sports.ru##.bookmaker-bonuses
 a23642 1
 sports.ru##.card-odds
+a23658 1
+sports.ru##.match-card-cta-button
+a23660 1
+sports.ru##.match-of-the-day__ad-label
+a23665 1
+sports.ru##.mc-layout__top-ads
+a23673 1
+sports.ru##.news-page__branding
+a23684 1
+sports.ru##.post-page__branding
 d23857 1
 a23857 1
 ya.ru##section[style*="sektllion-items-count:"]
@@ -105,6 +122,7 @@ magnit.ru,regnum.ru,tproger.ru##+js(addEventListener-defuser, click, '', element
 a29483 1
 dzen.ru##:matches-path(/articles) div[class^="article-feed--"] > div[class] ~ div[id]
 d29488 1
+d29501 1
 d29624 1
 a29624 1
 ||rutube.ru/play/embed/*dist=$subdocument,removeparam=autoplay

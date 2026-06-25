@@ -1,18 +1,20 @@
-diff name:ruadlist lines:156 checksum:e01d56c291
+diff name:ruadlist lines:174 checksum:6e292c44de
 d4 2
 a5 2
-! Last modified: Thu, 25 Jun 2026 14:49:38 +0000
-! Diff-Path: ../patches/2026.6.25.889.patch#ruadlist
+! Last modified: Thu, 25 Jun 2026 20:18:23 +0000
+! Diff-Path: ../patches/2026.6.25.1218.patch#ruadlist
 a5601 1
 ||shortener2.link^$third-party
+a6589 1
+||veoapi.net^$third-party
 a6795 2
 ||vvcat.me^$third-party
 ||vvcat.org^$third-party
 d7877 1
 a7877 1
 //mads.$domain=~mads.team|~mads.uz
-a8392 1
-||vvcat.*/api-integration/assets/*.txt?*=$third-party,xmlhttprequest
+a7923 1
+/api-integration/assets/*.txt?*=$third-party,xmlhttprequest
 a10440 1
 ||svetovik.info/assets/browser-*.js
 d10519 1
@@ -77,8 +79,23 @@ a22921 1
 dzen.ru,sportsdzen.ru##div[style*="--mascot-"]
 a23632 1
 sports.ru##.ad-banner
+a23633 2
+sports.ru##.ad-widget
+sports.ru##.ad-wrapper
+a23636 1
+sports.ru##.bookmaker-bonuses
 a23637 1
 sports.ru##.card-odds
+a23653 1
+sports.ru##.match-card-cta-button
+a23655 1
+sports.ru##.match-of-the-day__ad-label
+a23660 1
+sports.ru##.mc-layout__top-ads
+a23668 1
+sports.ru##.news-page__branding
+a23679 1
+sports.ru##.post-page__branding
 a23765 1
 ||senoval.cdn.sports.ru/tagchester/*/actual-matches-widget/
 d23851 1
@@ -130,6 +147,7 @@ magnit.ru,regnum.ru,tproger.ru##+js(addEventListener-defuser, click, '', element
 a29474 1
 dzen.ru##:matches-path(/articles) div[class^="article-feed--"] > div[class] ~ div[id]
 d29479 1
+d29492 1
 d29615 1
 a29615 1
 ||rutube.ru/play/embed/*dist=$subdocument,removeparam=autoplay
