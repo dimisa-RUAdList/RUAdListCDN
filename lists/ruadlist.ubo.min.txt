@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 26 Jun 2026 12:22:24 +0000
-! Diff-Path: ../patches/2026.6.26.742.patch#ruadlist
+! Last modified: Fri, 26 Jun 2026 15:28:53 +0000
+! Diff-Path: ../patches/2026.6.26.928.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -28701,6 +28701,7 @@ dzen.ru##[aria-label] div[id][class*="-desktop__ad-"]
 dzen.ru##div[class*="AdvertTsar"]
 dzen.ru##div[class*="BrandingAdvertLayoutColumn-"]
 dzen.ru##div[class*="_content_with-new-"] > div[id] ~ div[class*="withDiscreteScroll"]
+dzen.ru##div[class*="_is-branding"] > div[style^="background-color:"]
 dzen.ru##div[class*="body_branding"] > div[style*="background-color:"]
 dzen.ru##div[class*="body_branding"]:style(background: inherit !important)
 dzen.ru##div[class*="new"] [class$="__rubricator"] + div[class*=" "] > div:only-child
