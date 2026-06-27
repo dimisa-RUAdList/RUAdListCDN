@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 27 Jun 2026 14:51:35 +0000
-! Diff-Path: ../patches/2026.6.27.891.patch#ruadlist
+! Last modified: Sat, 27 Jun 2026 16:15:38 +0000
+! Diff-Path: ../patches/2026.6.27.975.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -23730,6 +23730,7 @@ sports.ru##.write-post__placeholder:empty
 @@||r.sprts.ru/recommender/|$xmlhttprequest,domain=www.sports.ru
 sports.ru#?#[analytic-id="facts"]:not(:-abp-has(*))
 sports.ru##[bonus-sum]
+sports.ru##[class*="bookmaker-ratings"]
 cyber.sports.ru##[class*="okko"]
 sports.ru##[class*="parimatch"]
 sports.ru#?#[class]:-abp-has(> .aside-news-list__advert ~ a[href^="https://sprts.cc/"])
