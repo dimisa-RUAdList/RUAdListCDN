@@ -1,8 +1,10 @@
-diff name:ruadlist lines:52 checksum:a415832e7e
+diff name:ruadlist lines:63 checksum:69f059662a
 d4 2
 a5 2
-! Last modified: Fri, 26 Jun 2026 20:03:44 +0000
-! Diff-Path: ../patches/2026.6.26.1203.patch#ruadlist
+! Last modified: Sat, 27 Jun 2026 04:11:44 +0000
+! Diff-Path: ../patches/2026.6.27.251.patch#ruadlist
+a1137 1
+||cenoobi.run^$third-party
 a6590 1
 ||veoapi.net^$third-party
 a6694 1
@@ -11,15 +13,22 @@ a6796 1
 ||vvcat.me^$third-party
 a6797 1
 ||vvhub.me^$third-party
+a7893 1
+/^https:\/\/[a-z0-9-]+\.[a-z0-9-]+\.[a-z]+\/(api-integration\/)?cdn\/[a-z0-9]+\.js\?[a-z0-9]+=[a-z0-9_=-]{6,}/$third-party,xmlhttprequest
 a7925 1
 /api-integration/assets/*.txt?*=$third-party,xmlhttprequest
+a8122 1
+/movie/files/episodes/*bet.mp4|$third-party,media
 d10881 1
 a10881 1
 /wp-content/uploads/*_1920x1080$image,domain=agronews.ua|agroreview.com|agroweek.com|growhow.in.ua
-a13653 1
-||vveu.spdmpgcdn.com/
+d11950 1
+d13188 1
+d13654 1
 a15123 1
 myshows.me##.MovieCardPromo__buttons
+a18879 1
+livejournal.com##.video-autoplay-adv
 a21836 1
 hdrezka.my##div[style^="width:680px;height:200px;padding-top:"]
 d22521 1
@@ -40,6 +49,8 @@ a23683 1
 sports.ru##.news-page__branding
 a23694 1
 sports.ru##.post-page__branding
+a25455 1
+||spdmpgcdn.com^$third-party,media
 a27702 1
 hdrezka.my##.main-container:style(margin-top: 0 !important)
 a28686 1

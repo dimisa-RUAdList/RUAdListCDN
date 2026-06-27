@@ -1,8 +1,10 @@
-diff name:ruadlist lines:78 checksum:a415832e7e
+diff name:ruadlist lines:89 checksum:69f059662a
 d4 2
 a5 2
-! Last modified: Fri, 26 Jun 2026 20:03:44 +0000
-! Diff-Path: ../patches/2026.6.26.1203.patch#ruadlist
+! Last modified: Sat, 27 Jun 2026 04:11:44 +0000
+! Diff-Path: ../patches/2026.6.27.251.patch#ruadlist
+a1137 1
+||cenoobi.run^$third-party
 a5601 1
 ||shortener2.link^$third-party
 a6589 1
@@ -13,8 +15,12 @@ a6795 3
 ||vvcat.me^$third-party
 ||vvcat.org^$third-party
 ||vvhub.me^$third-party
+a7891 1
+/^https:\/\/[a-z0-9-]+\.[a-z0-9-]+\.[a-z]+\/(api-integration\/)?cdn\/[a-z0-9]+\.js\?[a-z0-9]+=[a-z0-9_=-]{6,}/$third-party,xmlhttprequest
 a7923 1
 /api-integration/assets/*.txt?*=$third-party,xmlhttprequest
+a8120 1
+/movie/files/episodes/*bet.mp4|$third-party,media
 a10440 1
 ||svetovik.info/assets/browser-*.js
 d10519 1
@@ -24,10 +30,11 @@ d10878 1
 a10878 1
 /wp-content/uploads/*_1920x1080$image,domain=agronews.ua|agroreview.com|agroweek.com|growhow.in.ua
 d11492 1
+d11948 1
 a12573 1
 ||nv86.ru/ajax/banner.php
-a13650 1
-||vveu.spdmpgcdn.com/
+d13185 1
+d13651 1
 d14708 1
 a14708 1
 klopotenko.com###right_banner
@@ -41,6 +48,8 @@ a15330 1
 fireman.club,ku66.ru,pershij.com.ua,prostoprosport.ru,qrz.ru,track24.ru,ufanet.ru,xsport.ua##.advertising
 d17344 1
 d18269 1
+a18878 1
+livejournal.com##.video-autoplay-adv
 d19351 1
 a19351 1
 focus.ua,nv86.ru,sovets.net,tvtver.ru##[data-banner]
@@ -66,6 +75,8 @@ a23681 1
 sports.ru##.news-page__branding
 a23692 1
 sports.ru##.post-page__branding
+a25453 1
+||spdmpgcdn.com^$third-party,media
 a27700 1
 hdrezka.my##.main-container:style(margin-top: 0 !important)
 a28684 1

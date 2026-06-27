@@ -1,14 +1,27 @@
-diff name:ruadlist lines:13 checksum:a415832e7e
+diff name:ruadlist lines:26 checksum:69f059662a
 d4 2
 a5 2
-! Last modified: Fri, 26 Jun 2026 20:03:44 +0000
-! Diff-Path: ../patches/2026.6.26.1203.patch#ruadlist
+! Last modified: Sat, 27 Jun 2026 04:11:44 +0000
+! Diff-Path: ../patches/2026.6.27.251.patch#ruadlist
+a1137 1
+||cenoobi.run^$third-party
 a6800 1
 ||vvhub.me^$third-party
+a7896 1
+/^https:\/\/[a-z0-9-]+\.[a-z0-9-]+\.[a-z]+\/(api-integration\/)?cdn\/[a-z0-9]+\.js\?[a-z0-9]+=[a-z0-9_=-]{6,}/$third-party,xmlhttprequest
+a8126 1
+/movie/files/episodes/*bet.mp4|$third-party,media
+d11954 1
+d13192 1
+d13658 2
 a15128 1
 myshows.me##.MovieCardPromo__buttons
+a18884 1
+livejournal.com##.video-autoplay-adv
 d22527 1
 a22527 1
 ||pikabu.ru/ajax/*?Grt5e=$xmlhttprequest
+a25469 1
+||spdmpgcdn.com^$third-party,media
 a28701 1
 dzen.ru##div[class*="_is-branding"] > div[style^="background-color:"]

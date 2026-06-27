@@ -1,24 +1,33 @@
-diff name:ruadlist lines:47 checksum:a415832e7e
+diff name:ruadlist lines:58 checksum:69f059662a
 d4 2
 a5 2
-! Last modified: Fri, 26 Jun 2026 20:03:44 +0000
-! Diff-Path: ../patches/2026.6.26.1203.patch#ruadlist
+! Last modified: Sat, 27 Jun 2026 04:11:44 +0000
+! Diff-Path: ../patches/2026.6.27.251.patch#ruadlist
+a1137 1
+||cenoobi.run^$third-party
 a6590 1
 ||veoapi.net^$third-party
 a6694 1
 ||vipapi.me^$third-party
 a6798 1
 ||vvhub.me^$third-party
+a7894 1
+/^https:\/\/[a-z0-9-]+\.[a-z0-9-]+\.[a-z]+\/(api-integration\/)?cdn\/[a-z0-9]+\.js\?[a-z0-9]+=[a-z0-9_=-]{6,}/$third-party,xmlhttprequest
 a7926 1
 /api-integration/assets/*.txt?*=$third-party,xmlhttprequest
+a8123 1
+/movie/files/episodes/*bet.mp4|$third-party,media
 d8396 1
 d10883 1
 a10883 1
 /wp-content/uploads/*_1920x1080$image,domain=agronews.ua|agroreview.com|agroweek.com|growhow.in.ua
-a13655 1
-||vveu.spdmpgcdn.com/
+d11952 1
+d13190 1
+d13656 1
 a15125 1
 myshows.me##.MovieCardPromo__buttons
+a18881 1
+livejournal.com##.video-autoplay-adv
 d22524 1
 a22524 1
 ||pikabu.ru/ajax/*?Grt5e=$xmlhttprequest
@@ -37,6 +46,8 @@ a23686 1
 sports.ru##.news-page__branding
 a23697 1
 sports.ru##.post-page__branding
+a25458 1
+||spdmpgcdn.com^$third-party,media
 a28690 1
 dzen.ru##div[class*="_is-branding"] > div[style^="background-color:"]
 a29496 1
