@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 29 Jun 2026 09:55:15 +0000
-! Diff-Path: ../patches/2026.6.29.595.patch#ruadlist
+! Last modified: Mon, 29 Jun 2026 17:45:19 +0000
+! Diff-Path: ../patches/2026.6.29.1065.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -13040,7 +13040,8 @@ igdz1.ru^$script,domain=igdz.ru
 ||rutrk.org/
 ||rutube.ru/api/advert/
 ||rutube.ru/pangolin/api/web/yappy/v*/$xmlhttprequest
-||rutube.ru/play/embed/*?autostart$subdocument,domain=7days.ru|vokrug.tv
+||rutube.ru/play/embed/*/?dist=vokrugtvstick$subdocument,domain=vokrug.tv
+||rutube.ru/play/embed/*autostart$subdocument,domain=7days.ru|vokrug.tv
 ||rutube.ru^$domain=ditey.com|nashamama.com
 ||ruxox.ru/js/plears.js
 ||rybalka.com/images/forum_buttons/
@@ -13859,6 +13860,7 @@ onlinemusic.com.ua###GoodVane
 cheline.com.ua###IUAfinanceBlock
 samods.ru###LeftBox
 www.i.ua###Premium
+7days.ru,vokrug.tv###RutubeFlyroll
 7days.ru###RutubePlayerNews
 urod.ru###Stage
 myzuka.club###TVZavr
@@ -17754,7 +17756,7 @@ eva.ru##.place-content-center
 limehd.tv,litehd.tv,pervyi-tv.online,russia-tv.online##.place-content-center > [data-test="channel-name-link"] ~ div:not([data-test="channel-name-link"])
 patee.ru##.placeR > .link
 nnportal.org##.place_bottom
-galnet.fm,spletnik.ru##.placeholder
+galnet.fm,spletnik.ru,woman.ru##.placeholder
 house.kg,mashina.kg##.placeholder-branding
 spletnik.ru##.placeholder_billboard
 oane.ws##.plaintext > noindex
@@ -19375,7 +19377,7 @@ examenpdd.com,liveinternet.ru##[data-container="outer"]
 rosteplo.ru##[data-content*="ERID"]
 gdz4you.com##[data-controller="SearchInputController"] ~ .well-container
 vgae.ru##[data-count="b/s/"]
-starhit.ru##[data-creative]
+starhit.ru,woman.ru##[data-creative]
 drive2.com,drive2.ru##[data-data-ym-view]
 banki.ru##[data-dfp-container]
 briefly.ru##[data-disclaimer*="Реклама"]
@@ -22533,7 +22535,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=levik.blog|livejournal.c
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
 ||ng72.ru^$csp=script-src 'self' 'unsafe-eval' https:
-||pikabu.ru/ajax/*?Grt5e=$xmlhttprequest
+||pikabu.ru/ajax/*?B56gH=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -23289,8 +23291,6 @@ ru##.GameContainerInner__sb
 ||ngs.ru/static/js/uglify/dfpScript.js
 ||reklama*.ngs.ru/$script
 ||static.ngs.ru/jtnews/*/asdk
-! бесконечная загрузка >
-||n1s1.hsmedia.ru/svgs/2a/2a43966fea9b70195cad785bbf199cf0.svg$domain=e1.ru
 ! обфускация
 e1.ru##[class*=" undefi"]
 www.e1.ru#?#[itemprop] > div:-abp-has(> div > [id*="ad"])
@@ -27727,6 +27727,8 @@ net,org##body.branded:not([id]):not([style]) > #wrapper:not([class]):not([style]
 ! ---
 hdrezka.inc,rezka.biz##.container > #content:style(margin-top: unset !important)
 hdrezka.my##.main-container:style(margin-top: 0 !important)
+hdrezka.pl##.wrap-main:style(margin-top: 0 !important)
+hdrezka.pl##.wrap:style(padding-top: 0 !important)
 ! ---
 hdru.net##.page:style(margin-top: 0 !important)
 ! ---
@@ -28322,6 +28324,7 @@ rserials.net###subheader:style(padding-top: 0 !important)
 forum.ru-board.com##.ny-lights:style(animation: none !important)
 forum.ru-board.com##.tpc > .post > a[href]:style(word-break: break-all)
 forum.ru-board.com##.tpc > .post > table[width] > tbody > tr > .lgf:style(word-break: break-word)
+forum.ru-board.com##body > .tb ~ .tb .tpc > span.post:style(word-break: break-word)
 ! ---
 rusnext.ru##.header20-00:style(height: auto !important)
 ! ---
@@ -29657,7 +29660,7 @@ ya.ru,yandex.*##.simple-popup__overlay:remove()
 ||pronpic.org^$third-party,badfilter
 ||rbk.ru/*/_videoAutoplayRecommend.js
 ||rbk.ru/*/build/fn/_oprosso.js
-||rutube.ru/play/embed/*dist=$subdocument,removeparam=autoplay
+||rutube.ru/play/embed/$third-party,subdocument,removeparam=autoplay
 ||s-cdn.org/promo/*.mp4$media,redirect=noop-0.1s.mp3,domain=player-films.online
 ||s-club.tv/promo/*.mp4$media,redirect=noop-0.1s.mp3,domain=player-films.online
 ||skam.online^$csp=script-src 'self' * 'unsafe-eval' data:,badfilter
