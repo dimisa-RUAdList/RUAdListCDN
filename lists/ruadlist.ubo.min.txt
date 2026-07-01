@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 30 Jun 2026 19:03:50 +0000
-! Diff-Path: ../patches/2026.6.30.1143.patch#ruadlist
+! Last modified: Wed, 01 Jul 2026 00:16:59 +0000
+! Diff-Path: ../patches/2026.7.1.16.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -8150,6 +8150,8 @@ _verified.php?code=*&server=runetki.com
 /oyy.js
 /partner/banner/*
 /partner/images/banners/*
+/pipipi/files/episodes/*-RU.mp4|$third-party,media
+/pipipi/files/episodes/*bet.mp4|$third-party,media
 /pixel2/video?$third-party,script
 /play/?ref=*/play/*$third-party,subdocument
 /player/ads.php?cp.host=$xmlhttprequest
@@ -20336,7 +20338,6 @@ epravda.com.ua##a[href^="http://ua.hit.gemius.pl/hitredir/id="]
 sdelaycomp.ru##a[href^="http://vk.cc/"][target="_blank"]
 skyback.ru##a[href^="http://vk.com/club61342137"]
 trishurupa.ru##a[href^="http://vneftegaze.ru/"]
-ag.ru##a[href^="http://www.ag.ru/go/outer"]
 punkt-a.info##a[href^="http://www.alekseevskiy.astf.ru/"]
 leonkrevs.ucoz.ru##a[href^="http://www.anketka.ru"]
 sol-online.ru##a[href^="http://www.ars-plus.ru/"]
@@ -24408,6 +24409,7 @@ zarulem.ws##td[style^="text-align:center;width:50%"]
 ||amazonaws.com/widget-bucket-files$third-party
 ||amh.ru^
 ||amigo-browser.ml^$third-party
+||amisogwagn.link^$third-party,media
 ||amssoft.ru^*/banner$third-party
 ||analitycs.net^$third-party
 ||anews.cc^$third-party
@@ -27165,9 +27167,6 @@ noddb.ru##html:style(overflow: auto !important)
 ! ---
 adme.media##body.ReactModal__Body--open > div[style^="z-index: 999; position: absolute;"]
 adme.media##body.ReactModal__Body--open:style(overflow: auto !important)
-! ---
-ag.ru###header-links
-ag.ru###new_logo_helper01:style(top: 0 !important)
 ! ---
 agronom.com.ua,tt-cup.com##body > *:style(pointer-events: auto !important)
 agronom.com.ua,tt-cup.com##body:style(cursor: auto !important)

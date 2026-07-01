@@ -1,8 +1,8 @@
-diff name:ruadlist lines:67 checksum:1ad7d21ac1
+diff name:ruadlist lines:74 checksum:1aaca33fd3
 d4 2
 a5 2
-! Last modified: Tue, 30 Jun 2026 19:03:50 +0000
-! Diff-Path: ../patches/2026.6.30.1143.patch#ruadlist
+! Last modified: Wed, 01 Jul 2026 00:16:59 +0000
+! Diff-Path: ../patches/2026.7.1.16.patch#ruadlist
 a266 1
 ||adport.net^$third-party
 a1137 1
@@ -13,6 +13,9 @@ a7897 1
 /^https:\/\/[a-z0-9-]+\.[a-z0-9-]+\.[a-z]+\/(api-integration\/)?cdn\/[a-z0-9]+\.js\?[a-z0-9]+=[a-z0-9_=-]{6,}/$third-party,xmlhttprequest
 a8127 1
 /movie/files/episodes/*bet.mp4|$third-party,media
+a8147 2
+/pipipi/files/episodes/*-RU.mp4|$third-party,media
+/pipipi/files/episodes/*bet.mp4|$third-party,media
 d8226 1
 a8226 1
 /teasers/*$domain=~ableton.com|~adtran.com|~adventuregamers.com|~agderposten.no|~amway.ru|~amway.ua|~asml.com|~av.by|~babla.ru|~bmw.de|~bmw.ro|~bmw.ru|~business-gazeta.ru|~fujifilm.eu|~gismeteo.by|~gismeteo.kz|~igorlink.com|~kinobulvar.info|~meganomkino.ru|~novsu.ru|~parool.nl|~rce.by|~road.cc|~stackoverflow.com|~teaserstar.ru|~trouw.nl|~volkskrant.nl|~wetteronline.de|~www.kinopoisk.ru|~yandex.by|~yandex.com|~yandex.com.tr|~yandex.fr|~yandex.kz|~yandex.ru
@@ -43,6 +46,7 @@ a19373 1
 starhit.ru,woman.ru##[data-creative]
 a19391 1
 24tv.ua,football24.ua,sport24.ua##[data-injection-type="LEGAL_SMALL"]
+d20330 1
 a21755 1
 football24.ua##div[style="min-height: 375px;"]
 d22529 1
@@ -51,10 +55,13 @@ a22529 1
 d23285 2
 a23731 1
 sports.ru##[class*="bookmaker-ratings"]
+a24401 1
+||amisogwagn.link^$third-party,media
 a25471 1
 ||spdmpgcdn.com^$third-party,media
 a27014 1
 magnit.ru##[class*="unit-yaslot-error-popup"]
+d27158 3
 a27719 2
 hdrezka.pl##.wrap-main:style(margin-top: 0 !important)
 hdrezka.pl##.wrap:style(padding-top: 0 !important)
