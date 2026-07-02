@@ -1,13 +1,15 @@
-diff name:ruadlist lines:67 checksum:d1274b74ab
+diff name:ruadlist lines:72 checksum:e8f9ad1ac0
 d4 2
 a5 2
-! Last modified: Thu, 02 Jul 2026 11:40:33 +0000
-! Diff-Path: ../patches/2026.7.2.700.patch#ruadlist
+! Last modified: Thu, 02 Jul 2026 16:58:21 +0000
+! Diff-Path: ../patches/2026.7.2.1018.patch#ruadlist
+a3880 1
+||mimokrikodil.link^$third-party
 a6800 1
 ||vvapi.org^$third-party
+a7898 1
+/^https:\/\/(?:[a-z0-9-]+\.)?[a-z0-9-]+\.[a-z]+\/(api-integration\/)?(cdn|lib)\/[a-z0-9]+\.(js|txt|xml)\?[a-z0-9]+=[a-z0-9_=-]{5,}/$third-party,xmlhttprequest
 d7900 1
-a7900 1
-/^https:\/\/[a-z0-9-]+\.[a-z0-9-]+\.[a-z]+\/(api-integration\/)?(cdn|lib)\/[a-z0-9]+\.(js|txt|xml)\?[a-z0-9]+=[a-z0-9_=-]{5,}/$third-party,xmlhttprequest
 a8151 2
 /pipipi/files/episodes/*-RU.mp4|$third-party,media
 /pipipi/files/episodes/*bet.mp4|$third-party,media
@@ -41,7 +43,7 @@ a21756 1
 football24.ua##div[style="min-height: 375px;"]
 d22530 1
 a22530 1
-||pikabu.ru/ajax/*?B56gH=$xmlhttprequest
+||pikabu.ru/ajax/*?eH1kf=$xmlhttprequest
 d22740 1
 a22740 1
 avito.ru##[data-chunks="item"] + div > div:first-child > div:first-child div:first-child + div > div:first-child + div + div:last-child > div:only-child > div:first-child + div:last-child > div:only-child > div:first-child + div:last-child
@@ -63,6 +65,9 @@ d28630 2
 a28631 2
 ya.ru##html[class*="sectllion_top"] aside + div
 ya.ru##html[class*="sectllion_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
+d29196 1
+a29196 1
+vk.com,vk.ru,vkvideo.ru##+js(href-sanitizer, a[href*="/away.php?"], ?to -uricomponent)
 d29654 1
 a29654 1
 ||rutube.ru/play/embed/$third-party,subdocument,removeparam=autoplay
