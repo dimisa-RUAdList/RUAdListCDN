@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 02 Jul 2026 04:15:57 +0000
-! Diff-Path: ../patches/2026.7.2.255.patch#ruadlist
+! Last modified: Thu, 02 Jul 2026 11:40:33 +0000
+! Diff-Path: ../patches/2026.7.2.700.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22747,7 +22747,7 @@ ru###ads-top.ads
 ||proxyelite.info^$third-party,popup
 ||proxyshare.com^$third-party,popup
 ! Avito
-www.avito.ru##[data-chunks="item"] + div > div:first-child > div:first-child > div[class] > div:first-child + div > div:first-child + div + div:last-child > div:only-child > div:first-child + div:last-child > div:only-child > div:first-child + div:last-child
+avito.ru##[data-chunks="item"] + div > div:first-child > div:first-child div:first-child + div > div:first-child + div + div:last-child > div:only-child > div:first-child + div:last-child > div:only-child > div:first-child + div:last-child
 www.avito.ru##div[class*="avito-ads-container"]
 www.avito.ru##div[class*="index-advRootWidget"]
 www.avito.ru##div[class*="styles-module-root_animation-"]:empty
