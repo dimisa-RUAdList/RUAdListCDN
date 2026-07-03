@@ -1,12 +1,14 @@
-diff name:ruadlist lines:37 checksum:c6906acca0
+diff name:ruadlist lines:44 checksum:2b4d95e911
 d4 2
 a5 2
-! Last modified: Fri, 03 Jul 2026 04:52:15 +0000
-! Diff-Path: ../patches/2026.7.3.292.patch#ruadlist
+! Last modified: Fri, 03 Jul 2026 11:38:59 +0000
+! Diff-Path: ../patches/2026.7.3.698.patch#ruadlist
+a3277 1
+||kleveromal.link^$third-party
 a3880 1
 ||mimokrikodil.link^$third-party
 a7899 1
-/^https:\/\/(?:[a-z0-9-]+\.)?[a-z0-9-]+\.[a-z]+\/(api-integration\/)?(cdn|lib)\/[a-z0-9]+\.(js|txt|xml)\?[a-z0-9]+=[a-z0-9_=-]{5,}/$third-party,xmlhttprequest
+/^https:\/\/(?:[a-z0-9-]+\.)?[a-z0-9-]+\.[a-z]+\/(api-integration\/)?(cdn|lib|static)\/[a-z0-9]+\.(js|txt|xml|json)\?[a-z0-9]+=[a-z0-9_=-]{3,}/$third-party,xmlhttprequest
 d7901 1
 a8152 2
 /pipipi/files/episodes/*-RU.mp4|$third-party,media
@@ -36,3 +38,8 @@ ya.ru##html[class*="sectllion_top"] main > div[class*="__"] ~ div[class*="__"] ~
 d29206 1
 a29206 1
 vk.com,vk.ru,vkvideo.ru##+js(href-sanitizer, a[href*="/away.php?"], ?to -uricomponent)
+a29759 4
+!#endif
+!#if !env_mobile
+vk.com,vk.ru##+js(set-attr, html[lang], href-sanitizer, true)
+vk.com,vk.ru##html[href-sanitizer] a[href*="/away.php?"][href*="to=http"]:style(pointer-events: none !important)
