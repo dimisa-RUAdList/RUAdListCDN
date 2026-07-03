@@ -1,8 +1,8 @@
-diff name:ruadlist lines:67 checksum:2b4d95e911
+diff name:ruadlist lines:70 checksum:8b2c5c0dcf
 d4 2
 a5 2
-! Last modified: Fri, 03 Jul 2026 11:38:59 +0000
-! Diff-Path: ../patches/2026.7.3.698.patch#ruadlist
+! Last modified: Fri, 03 Jul 2026 16:42:15 +0000
+! Diff-Path: ../patches/2026.7.3.1002.patch#ruadlist
 a3277 1
 ||kleveromal.link^$third-party
 a3880 1
@@ -12,9 +12,10 @@ a6800 1
 a7898 1
 /^https:\/\/(?:[a-z0-9-]+\.)?[a-z0-9-]+\.[a-z]+\/(api-integration\/)?(cdn|lib|static)\/[a-z0-9]+\.(js|txt|xml|json)\?[a-z0-9]+=[a-z0-9_=-]{3,}/$third-party,xmlhttprequest
 d7900 1
-a8151 2
-/pipipi/files/episodes/*-RU.mp4|$third-party,media
-/pipipi/files/episodes/*bet.mp4|$third-party,media
+a8050 2
+/files/episodes/*-RU.mp4|$third-party,media
+/files/episodes/*bet.mp4|$third-party,media
+d8130 2
 d13043 1
 a13043 2
 ||rutube.ru/play/embed/*/?dist=vokrugtvstick$subdocument,domain=vokrug.tv
@@ -43,6 +44,8 @@ a23891 1
 ya.ru##section[style*="sectllion-items-count:"]
 a24409 1
 ||amisogwagn.link^$third-party,media
+a25575 1
+||tomatochips.link^$third-party,media
 d27168 3
 a27729 2
 hdrezka.pl##.wrap-main:style(margin-top: 0 !important)

@@ -1,8 +1,8 @@
-diff name:ruadlist lines:25 checksum:2b4d95e911
+diff name:ruadlist lines:32 checksum:8b2c5c0dcf
 d4 2
 a5 2
-! Last modified: Fri, 03 Jul 2026 11:38:59 +0000
-! Diff-Path: ../patches/2026.7.3.698.patch#ruadlist
+! Last modified: Fri, 03 Jul 2026 16:42:15 +0000
+! Diff-Path: ../patches/2026.7.3.1002.patch#ruadlist
 a3277 1
 ||kleveromal.link^$third-party
 a3880 1
@@ -10,12 +10,19 @@ a3880 1
 a7899 1
 /^https:\/\/(?:[a-z0-9-]+\.)?[a-z0-9-]+\.[a-z]+\/(api-integration\/)?(cdn|lib|static)\/[a-z0-9]+\.(js|txt|xml|json)\?[a-z0-9]+=[a-z0-9_=-]{3,}/$third-party,xmlhttprequest
 d7901 1
+a8051 2
+/files/episodes/*-RU.mp4|$third-party,media
+/files/episodes/*bet.mp4|$third-party,media
+d8131 2
+d8153 2
 d22540 1
 a22540 1
 ||pikabu.ru/ajax/*?eH1kf=$xmlhttprequest
 d22750 1
 a22750 1
 avito.ru##[data-chunks="item"] + div > div:first-child > div:first-child div:first-child + div > div:first-child + div + div:last-child > div:only-child > div:first-child + div:last-child > div:only-child > div:first-child + div:last-child
+a25578 1
+||tomatochips.link^$third-party,media
 d29206 1
 a29206 1
 vk.com,vk.ru,vkvideo.ru##+js(href-sanitizer, a[href*="/away.php?"], ?to -uricomponent)
