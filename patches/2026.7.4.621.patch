@@ -1,8 +1,8 @@
-diff name:ruadlist lines:82 checksum:eccfe2c6d1
+diff name:ruadlist lines:96 checksum:2b3c9b4696
 d4 2
 a5 2
-! Last modified: Mon, 06 Jul 2026 09:07:21 +0000
-! Diff-Path: ../patches/2026.7.6.547.patch#ruadlist
+! Last modified: Mon, 06 Jul 2026 16:26:37 +0000
+! Diff-Path: ../patches/2026.7.6.986.patch#ruadlist
 a261 1
 ||adnetwork.bet^$third-party
 a7269 1
@@ -11,9 +11,12 @@ a7577 1
 ||cdn-mst-ru.com^$third-party
 d7902 1
 a7902 1
-/^https:\/\/(?:[a-z0-9-]+\.)?[a-z0-9-]+\.[a-z]+\/(api-integration\/)?(cdn|lib|media|static)\/[a-z0-9]+\.(js|txt|xml|json)\?[a-z0-9]+=[a-z0-9_=-]{3,}/$third-party,xmlhttprequest
+/^https:\/\/(?:[a-z0-9-]+\.)?[a-z0-9-]+\.(link|me|org|com)\/(api-integration\/)?(cdn|lib|media|static)\/[a-z0-9]+\.(js|txt|xml|json)\?[a-z0-9]+=[a-z0-9_=-]/$third-party,xmlhttprequest
+a8741 1
+##a[href*="//yandex.ru/adfox/"]
 a8909 1
 ##a[href*="adnetwork.bet/"]
+d9092 1
 d9210 1
 a9210 1
 $popup,domain=176.114.0.126|176.114.0.132|37.220.36.15|assiatv.com|cdnpotok.com|cdntvpotok.com|fastpic.org|freescreens.ru|imgbase.ru|imgcach.ru|imgclick.ru|kolikbolik.top|oneliketv.com|payforpic.ru|picclick.ru|picclock.ru|picforall.ru|protonvideo.to|telecdn.net|temptcdn.com|tv-assia.org
@@ -38,6 +41,8 @@ euro-football.ru##.article__match-ad__block
 euro-football.ru##.article__match-coeff
 d15928 1
 d15933 1
+a16668 1
+kommersant.ru##.footer_section--brands
 a17323 1
 euro-football.ru##.match-advertisement-widget [class]
 a17324 1
@@ -75,9 +80,18 @@ liveball.sx,liveball.*##.freebet_block
 liveball.sx,liveball.*##[class*="odds_"]
 liveball.sx,liveball.*##[class^="custom_brand"]
 liveball.sx,liveball.*##div[class^="catfish_"]
+a22505 1
+/^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^/]+\/[^/]+\/[^/.]+(?:\?.*)?$/$script
 d22539 1
 a22539 1
 ||pikabu.ru/ajax/*?b34RT=$xmlhttprequest
+a22569 1
+liveball.sx,liveball.*###custom_brand {remove:true;}
+a24014 1
+yandex.ru,yandex.*#?#.toponym-card-view__overview > .toponym-card-view__section:-abp-has(> .advert-spacer-view)
 d27023 1
 a27023 1
 2es.work,adventuretime.ru,ani.wtf,cdnpotok.com,cdntelesee.com,cdntvpotok.com,chepok.xyz,domatv.net,hdone.net,hdru.net,hindcine.tv,kipolino.site,klplayer.website,liveball.my,liveball.uno,liveball.*,luxurytv.online,oneliketv.com,phys-kids.com,pokaz.me,rxtv.github.io,sovetromantica.com,strah.video,t1pochek.site,tip0chek.site,tipochek.xyz,volley.ru,worldvideo.site#?#[id^="oframe"] > pjsdiv:-abp-has(> pjsdiv:-abp-contains(/adblock|adblok|адблок|блокировщик|блокировку|фрибет/i))
+d28723 1
+a28723 1
+dzen.ru,sportsdzen.ru##div[class^="news-"][style="margin-top: 0px; height: calc(100% - 0px);"]

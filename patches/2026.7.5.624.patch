@@ -1,16 +1,33 @@
-diff name:ruadlist lines:15 checksum:eccfe2c6d1
+diff name:ruadlist lines:32 checksum:2b3c9b4696
 d4 2
 a5 2
-! Last modified: Mon, 06 Jul 2026 09:07:21 +0000
-! Diff-Path: ../patches/2026.7.6.547.patch#ruadlist
+! Last modified: Mon, 06 Jul 2026 16:26:37 +0000
+! Diff-Path: ../patches/2026.7.6.986.patch#ruadlist
+d7905 1
+a7905 1
+/^https:\/\/(?:[a-z0-9-]+\.)?[a-z0-9-]+\.(link|me|org|com)\/(api-integration\/)?(cdn|lib|media|static)\/[a-z0-9]+\.(js|txt|xml|json)\?[a-z0-9]+=[a-z0-9_=-]/$third-party,xmlhttprequest
+a8744 1
+##a[href*="//yandex.ru/adfox/"]
+d9096 1
 d12242 1
 a12242 3
 ||liveball.*/public/*clickunder.js
 ||liveball.*/public/js/dm.min.js
 ||liveball.*/public/js/fcap.js
+a16679 1
+kommersant.ru##.footer_section--brands
 d19245 1
 a19245 1
 5koleso.ru,amic.ru,anime-bit.ru,hi-fi.ru,inflora.ru,lifenews.ru,lifenews78.ru,obozrevatel.com,opticlub.org,players.com.ua,podrobnosti.ua,ua-independent.com,vbryanske.com##[class*="banner"]
+a22526 1
+/^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^/]+\/[^/]+\/[^/.]+(?:\?.*)?$/$script
 d22560 1
 a22560 1
 ||pikabu.ru/ajax/*?b34RT=$xmlhttprequest
+a22590 1
+liveball.sx,liveball.*###custom_brand {remove:true;}
+a24035 1
+yandex.ru,yandex.*#?#.toponym-card-view__overview > .toponym-card-view__section:-abp-has(> .advert-spacer-view)
+d28744 1
+a28744 1
+dzen.ru,sportsdzen.ru##div[class^="news-"][style="margin-top: 0px; height: calc(100% - 0px);"]
