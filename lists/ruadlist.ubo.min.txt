@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 07 Jul 2026 05:02:07 +0000
-! Diff-Path: ../patches/2026.7.7.302.patch#ruadlist
+! Last modified: Tue, 07 Jul 2026 12:06:23 +0000
+! Diff-Path: ../patches/2026.7.7.726.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -5982,6 +5982,7 @@
 ||tarry.ru^$third-party
 ||tauptoat.com^
 ||tauruallop.download^$third-party
+||tazaromikaz.link^$third-party
 ||tb.mybb.ru^$third-party
 ||tbizw.top^$third-party
 ||tbn.ru/bb.cgi?
@@ -7577,6 +7578,7 @@ _verified.php?code=*&server=runetki.com
 ||burlyblogs.com^
 ||buyfordreams.ru^
 ||c9wap.com^
+||cdn-global-mb.com^$third-party
 ||cdn-mst-ru.com^$third-party
 ||chain-reaction-pro.com^
 ||cifaceg.gos-arhiv.ru^
@@ -7833,6 +7835,7 @@ _verified.php?code=*&server=runetki.com
 .gold/next.html?$third-party,script
 .htm?href=*&tm_mode=
 .info/next.html?$third-party,script
+.json?fre=$third-party,xmlhttprequest
 .mail.ru/pixel/$image
 .marketgid.com^$domain=~marketgid.com
 .md/ads/
@@ -7902,7 +7905,6 @@ _verified.php?code=*&server=runetki.com
 /?t=b&blockids=$script
 /?t=rot&pid=$script
 /\/[a-z]{1,3}\?zoneId\=\d{7}\-\d{7}$/$third-party,script
-/^https:\/\/(?:[a-z0-9-]+\.)?[a-z0-9-]+\.(link|me|org|com)\/(api-integration\/)?(cdn|lib|media|static)\/[a-z0-9]+\.(js|txt|xml|json)\?[a-z0-9]+=[a-z0-9_=-]/$third-party,xmlhttprequest
 /^https:\/\/[0-9a-f]{10}\.[0-9a-f]{10}\.com\/.*\.js$/$third-party,match-case,script
 /^https?://([^.]+\.)+[a-z]+\.(?:biz|ru|space)/[a-z][/?][-a-z0-9_?&=]{5,45}$/$third-party,script,domain=~hotcharts.ru
 /^https?:\/\/[-a-z]{6,}\.(?:com?|info|pro|xyz)\/[a-d][-.\/A-Z_a-z][DHWXm][-.\/A-Z_a-z][59FVZ][-.\/A-Z_a-z][6swyz][-.\/A-Z_a-z][-\/0-9A-Z_a-z][-.\/A-Z_a-z][-\/0-9A-Z_a-z]+(?:$|\?)/$third-party,match-case,script
@@ -7936,6 +7938,7 @@ _verified.php?code=*&server=runetki.com
 /afisha_banner/*
 /aika.swf
 /amcu_$script
+/api-integration/*?unique=$third-party,xmlhttprequest
 /api-integration/assets/*.txt?*=$third-party,xmlhttprequest
 /api/content/jsonp?offerid=$third-party,script
 /api/getslug*?partner_apikey=$third-party,xmlhttprequest
@@ -12242,9 +12245,6 @@ igdz1.ru^$script,domain=igdz.ru
 ||liveball.*/public/*clickunder.js
 ||liveball.*/public/js/dm.min.js
 ||liveball.*/public/js/fcap.js
-||liveball.*/public/js/nav-init-ext.js
-||liveball.*/public/js/nav-init.js
-||liveball.*/public/js/view-rules.js
 ||livecars.ru^*/wall_
 ||livefootball.ws^$object
 ||liveinternet.ru/cgi-bin/adt.fcgi

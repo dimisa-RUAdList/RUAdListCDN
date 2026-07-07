@@ -1,16 +1,22 @@
-diff name:ruadlist lines:35 checksum:c2b74a98a8
+diff name:ruadlist lines:41 checksum:ad564dc039
 d4 2
 a5 2
-! Last modified: Tue, 07 Jul 2026 05:02:07 +0000
-! Diff-Path: ../patches/2026.7.7.302.patch#ruadlist
+! Last modified: Tue, 07 Jul 2026 12:06:23 +0000
+! Diff-Path: ../patches/2026.7.7.726.patch#ruadlist
+a5984 1
+||tazaromikaz.link^$third-party
+a7579 1
+||cdn-global-mb.com^$third-party
+a7835 1
+.json?fre=$third-party,xmlhttprequest
 d7905 1
-a7905 1
-/^https:\/\/(?:[a-z0-9-]+\.)?[a-z0-9-]+\.(link|me|org|com)\/(api-integration\/)?(cdn|lib|media|static)\/[a-z0-9]+\.(js|txt|xml|json)\?[a-z0-9]+=[a-z0-9_=-]/$third-party,xmlhttprequest
+a7938 1
+/api-integration/*?unique=$third-party,xmlhttprequest
 a8744 1
 ##a[href*="//yandex.ru/adfox/"]
 d9096 1
-d12242 1
-a12242 3
+d12242 4
+a12245 3
 ||liveball.*/public/*clickunder.js
 ||liveball.*/public/js/dm.min.js
 ||liveball.*/public/js/fcap.js

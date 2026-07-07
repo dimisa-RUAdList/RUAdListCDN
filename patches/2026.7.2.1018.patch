@@ -1,19 +1,24 @@
-diff name:ruadlist lines:126 checksum:c2b74a98a8
+diff name:ruadlist lines:128 checksum:ad564dc039
 d4 2
 a5 2
-! Last modified: Tue, 07 Jul 2026 05:02:07 +0000
-! Diff-Path: ../patches/2026.7.7.302.patch#ruadlist
+! Last modified: Tue, 07 Jul 2026 12:06:23 +0000
+! Diff-Path: ../patches/2026.7.7.726.patch#ruadlist
 a261 1
 ||adnetwork.bet^$third-party
 a3277 1
 ||kleveromal.link^$third-party
+a5982 1
+||tazaromikaz.link^$third-party
 a7268 1
 ||zamorokeharu.link^$third-party
-a7576 1
+a7576 2
+||cdn-global-mb.com^$third-party
 ||cdn-mst-ru.com^$third-party
+a7831 1
+.json?fre=$third-party,xmlhttprequest
 d7901 1
-a7901 1
-/^https:\/\/(?:[a-z0-9-]+\.)?[a-z0-9-]+\.(link|me|org|com)\/(api-integration\/)?(cdn|lib|media|static)\/[a-z0-9]+\.(js|txt|xml|json)\?[a-z0-9]+=[a-z0-9_=-]/$third-party,xmlhttprequest
+a7934 1
+/api-integration/*?unique=$third-party,xmlhttprequest
 a8052 2
 /files/episodes/*-RU.mp4|$third-party,media
 /files/episodes/*bet.mp4|$third-party,media
@@ -43,13 +48,10 @@ d11933 1
 a11933 1
 ||html-load.com/loader.min.js$domain=businessua.com|eurointegration.com.ua|news.zerkalo.io|newsyou.info|notebookcheck-ru.com|pravda.com.ua|sportanalytic.com
 d12236 1
-a12236 6
+a12236 3
 ||liveball.*/public/*clickunder.js
 ||liveball.*/public/js/dm.min.js
 ||liveball.*/public/js/fcap.js
-||liveball.*/public/js/nav-init-ext.js
-||liveball.*/public/js/nav-init.js
-||liveball.*/public/js/view-rules.js
 a15346 1
 euro-football.ru##.advertisement-block
 a15461 2
