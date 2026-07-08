@@ -1,21 +1,43 @@
-diff name:ruadlist lines:25 checksum:f335ab5b9b
+diff name:ruadlist lines:56 checksum:c645b8b38a
 d4 2
 a5 2
-! Last modified: Wed, 08 Jul 2026 14:34:30 +0000
-! Diff-Path: ../patches/2026.7.8.874.patch#ruadlist
+! Last modified: Wed, 08 Jul 2026 20:34:35 +0000
+! Diff-Path: ../patches/2026.7.8.1234.patch#ruadlist
 a5984 1
 ||tazaromikaz.link^$third-party
 a7579 1
 ||cdn-global-mb.com^$third-party
 a7835 1
 .json?fre=$third-party,xmlhttprequest
+a7881 1
+.txt?fre=$third-party,xmlhttprequest
 d7905 1
 a7938 1
 /api-integration/*?unique=$third-party,xmlhttprequest
 d8133 1
 a8133 1
 /media/banners/*$domain=~altex.ro|~furaffinity.net|~trolle.media
+a8569 1
+##.perfluence-widget-block
+d10621 1
+d12126 2
 d12245 3
+d14007 1
+a14007 1
+kinoprosmotr.site###bannerlayer
+a15724 1
+kinomania.ru##.banner-gray-wrapper
+a16808 1
+kinomania.ru##.grid-content-banner__banner
+d16819 1
+a17118 1
+kinomania.kz##.km-ad
+d18317 1
+a18317 1
+headphone-review.ru,kinomania.kz##.sidebar .widget_text
+d18971 1
+a18974 1
+kinomania.ru##.watch-page__play-button
 d21834 1
 a21834 1
 opennet.me,opennet.ru##div[style^="background-color: #E9EAD"][style*="; width:"][style*="height: 6"]
@@ -24,3 +46,12 @@ a22913 1
 d22946 1
 d22984 1
 d22993 1
+a25234 1
+||perfluence.net/blogger/promocode-api/$third-party
+a25235 1
+||pfm.promo^$third-party
+d27424 2
+d27907 2
+d29345 1
+a29345 1
+afisha.ru,film.ru,filmpro.ru,kinomania.ru,thelastdb.games,thelastupd.org##+js(remove-attr, autoplay|loop, video, stay)

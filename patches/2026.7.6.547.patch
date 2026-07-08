@@ -1,26 +1,48 @@
-diff name:ruadlist lines:42 checksum:f335ab5b9b
+diff name:ruadlist lines:73 checksum:c645b8b38a
 d4 2
 a5 2
-! Last modified: Wed, 08 Jul 2026 14:34:30 +0000
-! Diff-Path: ../patches/2026.7.8.874.patch#ruadlist
+! Last modified: Wed, 08 Jul 2026 20:34:35 +0000
+! Diff-Path: ../patches/2026.7.8.1234.patch#ruadlist
 a5984 1
 ||tazaromikaz.link^$third-party
 a7579 1
 ||cdn-global-mb.com^$third-party
 a7835 1
 .json?fre=$third-party,xmlhttprequest
+a7881 1
+.txt?fre=$third-party,xmlhttprequest
 d7905 1
 a7938 1
 /api-integration/*?unique=$third-party,xmlhttprequest
 d8133 1
 a8133 1
 /media/banners/*$domain=~altex.ro|~furaffinity.net|~trolle.media
+a8569 1
+##.perfluence-widget-block
 a8744 1
 ##a[href*="//yandex.ru/adfox/"]
 d9096 1
+d10621 1
+d12126 2
 d12245 3
+d14007 1
+a14007 1
+kinoprosmotr.site###bannerlayer
+a15724 1
+kinomania.ru##.banner-gray-wrapper
 a16681 1
 kommersant.ru##.footer_section--brands
+a16807 1
+kinomania.ru##.grid-content-banner__banner
+d16818 1
+a17117 1
+kinomania.kz##.km-ad
+d18316 1
+a18316 1
+headphone-review.ru,kinomania.kz##.sidebar .widget_text
+d18970 1
+a18973 1
+kinomania.ru##.watch-page__play-button
 d21833 1
 a21833 1
 opennet.me,opennet.ru##div[style^="background-color: #E9EAD"][style*="; width:"][style*="height: 6"]
@@ -35,9 +57,18 @@ d22981 1
 d22990 1
 a24037 1
 yandex.ru,yandex.*#?#.toponym-card-view__overview > .toponym-card-view__section:-abp-has(> .advert-spacer-view)
+a25230 1
+||perfluence.net/blogger/promocode-api/$third-party
+a25231 1
+||pfm.promo^$third-party
+d27420 2
+d27903 2
 d28746 1
 a28746 1
 dzen.ru,sportsdzen.ru##div[class^="news-"][style="margin-top: 0px; height: calc(100% - 0px);"]
+d29341 1
+a29341 1
+afisha.ru,film.ru,filmpro.ru,kinomania.ru,thelastdb.games,thelastupd.org##+js(remove-attr, autoplay|loop, video, stay)
 a29356 1
 ritsatv.ru##+js(remove-node-text, script, /checkAds|initAdblockCheck/)
 d29366 1

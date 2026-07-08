@@ -1,8 +1,8 @@
-diff name:ruadlist lines:90 checksum:f335ab5b9b
+diff name:ruadlist lines:121 checksum:c645b8b38a
 d4 2
 a5 2
-! Last modified: Wed, 08 Jul 2026 14:34:30 +0000
-! Diff-Path: ../patches/2026.7.8.874.patch#ruadlist
+! Last modified: Wed, 08 Jul 2026 20:34:35 +0000
+! Diff-Path: ../patches/2026.7.8.1234.patch#ruadlist
 a261 1
 ||adnetwork.bet^$third-party
 a5983 1
@@ -12,31 +12,47 @@ a7578 2
 ||cdn-mst-ru.com^$third-party
 a7833 1
 .json?fre=$third-party,xmlhttprequest
+a7879 1
+.txt?fre=$third-party,xmlhttprequest
 d7903 1
 a7936 1
 /api-integration/*?unique=$third-party,xmlhttprequest
 d8131 1
 a8131 1
 /media/banners/*$domain=~altex.ro|~furaffinity.net|~trolle.media
+a8567 1
+##.perfluence-widget-block
 a8742 1
 ##a[href*="//yandex.ru/adfox/"]
 a8910 1
 ##a[href*="adnetwork.bet/"]
 d9093 1
+d10618 1
+d12123 2
 d12239 1
 a12239 3
 ||liveball.*/public/*clickunder.js
 ||liveball.*/public/js/dm.min.js
 ||liveball.*/public/js/fcap.js
+d13999 1
+a13999 1
+kinoprosmotr.site###bannerlayer
 a15349 1
 euro-football.ru##.advertisement-block
 a15464 2
 euro-football.ru##.article__match-ad__block
 euro-football.ru##.article__match-coeff
+a15713 1
+kinomania.ru##.banner-gray-wrapper
 d15932 1
 d15937 1
 a16672 1
 kommersant.ru##.footer_section--brands
+a16798 1
+kinomania.ru##.grid-content-banner__banner
+d16809 1
+a17108 1
+kinomania.kz##.km-ad
 a17327 1
 euro-football.ru##.match-advertisement-widget [class]
 a17328 1
@@ -45,8 +61,14 @@ a17331 1
 euro-football.ru##.match-poll-widget
 a17853 1
 euro-football.ru##.pre-match-predictions-widget
+d18303 1
+a18303 1
+headphone-review.ru,kinomania.kz##.sidebar .widget_text
 a18596 1
 euro-football.ru##.table-bets
+d18956 1
+a18959 1
+kinomania.ru##.watch-page__play-button
 d19233 1
 a19233 1
 5koleso.ru,amic.ru,anime-bit.ru,hi-fi.ru,inflora.ru,lifenews.ru,lifenews78.ru,obozrevatel.com,opticlub.org,players.com.ua,podrobnosti.ua,ua-independent.com,vbryanske.com##[class*="banner"]
@@ -80,12 +102,21 @@ d22963 1
 d22972 1
 a24019 1
 yandex.ru,yandex.*#?#.toponym-card-view__overview > .toponym-card-view__section:-abp-has(> .advert-spacer-view)
+a25212 1
+||perfluence.net/blogger/promocode-api/$third-party
+a25213 1
+||pfm.promo^$third-party
 d27028 1
 a27028 1
 2es.work,adventuretime.ru,ani.wtf,cdnpotok.com,cdntelesee.com,cdntvpotok.com,chepok.xyz,domatv.net,hdone.net,hdru.net,hindcine.tv,kipolino.site,klplayer.website,liveball.my,liveball.uno,liveball.*,luxurytv.online,oneliketv.com,phys-kids.com,pokaz.me,rxtv.github.io,sovetromantica.com,strah.video,t1pochek.site,tip0chek.site,tipochek.xyz,volley.ru,worldvideo.site#?#[id^="oframe"] > pjsdiv:-abp-has(> pjsdiv:-abp-contains(/adblock|adblok|адблок|блокировщик|блокировку|фрибет/i))
+d27402 2
+d27885 2
 d28728 1
 a28728 1
 dzen.ru,sportsdzen.ru##div[class^="news-"][style="margin-top: 0px; height: calc(100% - 0px);"]
+d29323 1
+a29323 1
+afisha.ru,film.ru,filmpro.ru,kinomania.ru,thelastdb.games,thelastupd.org##+js(remove-attr, autoplay|loop, video, stay)
 a29338 1
 ritsatv.ru##+js(remove-node-text, script, /checkAds|initAdblockCheck/)
 d29348 1

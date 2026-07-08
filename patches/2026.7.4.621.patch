@@ -1,8 +1,8 @@
-diff name:ruadlist lines:112 checksum:f335ab5b9b
+diff name:ruadlist lines:143 checksum:c645b8b38a
 d4 2
 a5 2
-! Last modified: Wed, 08 Jul 2026 14:34:30 +0000
-! Diff-Path: ../patches/2026.7.8.874.patch#ruadlist
+! Last modified: Wed, 08 Jul 2026 20:34:35 +0000
+! Diff-Path: ../patches/2026.7.8.1234.patch#ruadlist
 a261 1
 ||adnetwork.bet^$third-party
 a5983 1
@@ -14,12 +14,16 @@ a7577 2
 ||cdn-mst-ru.com^$third-party
 a7832 1
 .json?fre=$third-party,xmlhttprequest
+a7878 1
+.txt?fre=$third-party,xmlhttprequest
 d7902 1
 a7935 1
 /api-integration/*?unique=$third-party,xmlhttprequest
 d8130 1
 a8130 1
 /media/banners/*$domain=~altex.ro|~furaffinity.net|~trolle.media
+a8566 1
+##.perfluence-widget-block
 a8741 1
 ##a[href*="//yandex.ru/adfox/"]
 a8909 1
@@ -34,20 +38,32 @@ a9678 1
 ||ykoza.com^$popup
 a10030 1
 ||pfdzbcmost.com^$popup
+d10614 1
+d12119 2
 d12235 1
 a12235 3
 ||liveball.*/public/*clickunder.js
 ||liveball.*/public/js/dm.min.js
 ||liveball.*/public/js/fcap.js
+d13995 1
+a13995 1
+kinoprosmotr.site###bannerlayer
 a15345 1
 euro-football.ru##.advertisement-block
 a15460 2
 euro-football.ru##.article__match-ad__block
 euro-football.ru##.article__match-coeff
+a15709 1
+kinomania.ru##.banner-gray-wrapper
 d15928 1
 d15933 1
 a16668 1
 kommersant.ru##.footer_section--brands
+a16794 1
+kinomania.ru##.grid-content-banner__banner
+d16805 1
+a17104 1
+kinomania.kz##.km-ad
 a17323 1
 euro-football.ru##.match-advertisement-widget [class]
 a17324 1
@@ -58,8 +74,14 @@ a17538 1
 businessua.com##.news__date
 a17848 1
 euro-football.ru##.pre-match-predictions-widget
+d18298 1
+a18298 1
+headphone-review.ru,kinomania.kz##.sidebar .widget_text
 a18591 1
 euro-football.ru##.table-bets
+d18951 1
+a18954 1
+kinomania.ru##.watch-page__play-button
 d19182 1
 a19182 1
 activation-keys.ru,adregain.ru,ads.bid,apicloud.ru,appt12mn.com,banner.mob.ru.com,bestsoft.club,browser-extensions.club,cheatget.ru,click2soft.ru,clickbytes.ru,content.directadvert.ru,cs-serva.net,directx.biz,dnevni4ok.com,download.studio,downloadamigo.com,downloadbrowser.ru,driverpack.io,driverpaksolution.ru,drp.su,dugtor-deer.pw,dw1-msetup.org,elementsbrowser.com,etarg.network,everinform.com,ex.24smi.info,ex.24smi.site,ex.infox.sg,exonews.ru,fast2click.ru,filetaker.ru,fin-vector.ru,flebolab.ru,getappwiz.ru,getappwizard.ru,getdownloadstudio.net,getdstud.io,getdstudio.app,getdstudio.cab,getdstudio.com,getdstudio.dev,getfiletds.ru,getyoursoft.ru,globalstylis.ru,hdvideoboxs.ru,health-official.ru,idealmedia.io,install-now.com,installpack.net,kinowinx.ru,linksoftbox.ru,litebrowser.ru,losnews.ru,mainews.ru,manysoftlink.ru,marketgid.ru,medicin-novosti-24.com,medicineteaser.org,medicineteaser.ru,morelnk.ru,msetup.pro,mysoftbox.ru,mytrk.xyz,nalivali.ru,new-rutor.website,news-decent.com,news-sphere.com,newsma.ru,novostly.com,offergate.pro,ognyvo.ru,olx.ua.partners,orgsales.ru,pfdzbcmost.com,picpick.ru,pochistit.ru,popcornhd.ru,prime-oblako.ru,programma-ochistki.ru,readvesti.ru,rotateme.ru,rsboot.ru,rustoria-topnews.ru,rutor.ml,rutorrent.co,rutors.tk,rutracker.eu,rutracker.work,rutraker.org,sandboxie.ru,saymigren.net,sb-on-line.ru,search-cdn.ru,searchcdn.ru,smiru.ru,softboxtds.ru,spishi.vip,starblog.org,sysenvfiles.net,t-lafa-site.ru,t1mcapp.com,tdsclicks2.ru,tdsrotations.ru,tft-test.ru,tlmnt.com,top-rutor.eu,top.24smi.info,topnews.smi.one,toprated-film.co,tordrom.com,torrentum.ru,ubar-pro.ru,ubar-pro2.ru,ubar-pro3.ru,ubar-pro4.ru,ubar.pro,ufiler-download.ru,ufiler-pro.ru,ufiler-pro2.ru,ufiler.pro,upro.me,utorria.ru,viniki.ru,vserpg.ru,wogoods.com,womens-journal.ru,worldinform.ru,xbox-torrent.ru,ya-browser.ru,ya-cdn.ru,ya-distrib.ru,yabrowser.su,yadistr.ru,yasearch-cdn.ru,yasearchcdn.ru,ynsearch.ru,zodiac-game.info,zpppstop.ru,zqwjpxow7boc.ru##:not(this-site-is-fake)
@@ -102,12 +124,21 @@ d22958 1
 d22967 1
 a24014 1
 yandex.ru,yandex.*#?#.toponym-card-view__overview > .toponym-card-view__section:-abp-has(> .advert-spacer-view)
+a25207 1
+||perfluence.net/blogger/promocode-api/$third-party
+a25208 1
+||pfm.promo^$third-party
 d27023 1
 a27023 1
 2es.work,adventuretime.ru,ani.wtf,cdnpotok.com,cdntelesee.com,cdntvpotok.com,chepok.xyz,domatv.net,hdone.net,hdru.net,hindcine.tv,kipolino.site,klplayer.website,liveball.my,liveball.uno,liveball.*,luxurytv.online,oneliketv.com,phys-kids.com,pokaz.me,rxtv.github.io,sovetromantica.com,strah.video,t1pochek.site,tip0chek.site,tipochek.xyz,volley.ru,worldvideo.site#?#[id^="oframe"] > pjsdiv:-abp-has(> pjsdiv:-abp-contains(/adblock|adblok|адблок|блокировщик|блокировку|фрибет/i))
+d27397 2
+d27880 2
 d28723 1
 a28723 1
 dzen.ru,sportsdzen.ru##div[class^="news-"][style="margin-top: 0px; height: calc(100% - 0px);"]
+d29318 1
+a29318 1
+afisha.ru,film.ru,filmpro.ru,kinomania.ru,thelastdb.games,thelastupd.org##+js(remove-attr, autoplay|loop, video, stay)
 a29333 1
 ritsatv.ru##+js(remove-node-text, script, /checkAds|initAdblockCheck/)
 d29343 1
