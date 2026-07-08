@@ -1,8 +1,8 @@
-diff name:ruadlist lines:104 checksum:58152a98d3
+diff name:ruadlist lines:112 checksum:a5deb43f97
 d4 2
 a5 2
-! Last modified: Wed, 08 Jul 2026 03:38:47 +0000
-! Diff-Path: ../patches/2026.7.8.218.patch#ruadlist
+! Last modified: Wed, 08 Jul 2026 09:30:37 +0000
+! Diff-Path: ../patches/2026.7.8.570.patch#ruadlist
 a261 1
 ||adnetwork.bet^$third-party
 a5983 1
@@ -17,6 +17,9 @@ a7832 1
 d7902 1
 a7935 1
 /api-integration/*?unique=$third-party,xmlhttprequest
+d8130 1
+a8130 1
+/media/banners/*$domain=~altex.ro|~furaffinity.net|~trolle.media
 a8741 1
 ##a[href*="//yandex.ru/adfox/"]
 a8909 1
@@ -92,6 +95,11 @@ a22539 1
 ||pikabu.ru/ajax/*?b34RT=$xmlhttprequest
 a22569 1
 liveball.sx,liveball.*###custom_brand {remove:true;}
+a22887 1
+~e.mail.ru,mail.ru,sportmail.ru##div[data-tooltip-root]
+d22920 1
+d22958 1
+d22967 1
 a24014 1
 yandex.ru,yandex.*#?#.toponym-card-view__overview > .toponym-card-view__section:-abp-has(> .advert-spacer-view)
 d27023 1
