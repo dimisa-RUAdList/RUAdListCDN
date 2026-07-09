@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 09 Jul 2026 08:41:20 +0000
-! Diff-Path: ../patches/2026.7.9.521.patch#ruadlist
+! Last modified: Thu, 09 Jul 2026 16:07:01 +0000
+! Diff-Path: ../patches/2026.7.9.967.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -14037,6 +14037,7 @@ fapvdo.ru###block-29
 growhow.in.ua###block-5
 growhow.in.ua###block-6
 anti-malware.ru###block-block-1
+anti-malware.ru###block-block-107
 anti-malware.ru###block-block-21
 rusnext.ru,rusvesna.su###block-block-22
 anti-malware.ru###block-block-31
@@ -23914,7 +23915,7 @@ ya.ru##[style*="feed"][style*="min-height:"]
 ya.ru##body > div[data-hydration-id] > [href^="https://yabs.yandex.ru/count/"] + div
 ya.ru##body > div[data-hydration-id] > div > [src^="https://yabs.yandex.ru/count/"] + div
 ya.ru##section[class^="reaso"]
-ya.ru##section[style*="sectllion-items-count:"]
+ya.ru##section[style*="sectillion-items-count:"]
 ya.ru##ul[class*="-section__list"]
 ya.ru,yandex.ru,yandex.*##.AdvProductGallery
 ya.ru,yandex.ru,yandex.*##.layout__banner
@@ -28652,17 +28653,16 @@ www.xcom-shop.ru##html:style(overflow-y: auto !important)
 xsport.ua##.site:style(margin-top: 0 !important)
 ! ---
 ! Yandex
+ya.ru###reedhm-rreid
 ya.ru##.document_overflow-scroll_yes:not(.document_new-year-feed-own-scroll_yes) body:style(overflow-y: unset !important)
 ya.ru##.i-mini-bem[style]
 ya.ru,yandex.by,yandex.kz,yandex.uz##.link-bro
 ya.ru##.market-feed
 ya.ru##.reasoning-section
 ya.ru##[id^="r"][id*="ed"][id*="m"][id*="-"][id*="f"]
-ya.ru##[id^="r"][id*="et"][id*="m"][id*="-"][id*="f"]
-ya.ru##[id^="r"][id*="it"][id*="m"][id*="-"][id*="f"]
 ya.ru##[id^="r"][id*="yt"][id*="m"][id*="-"][id*="f"]
-ya.ru##html[class*="sectllion_top"] aside + div
-ya.ru##html[class*="sectllion_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
+ya.ru##html[class*="sectillion_top"] aside + div
+ya.ru##html[class*="sectillion_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
 ya.ru##main.body__wrapper > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
 ! афиша
 afisha.yandex.ru##[style^="width:"][style*="100%;"][style*="height:"][style*="240px;"][style*="display:"][style*="block;"]:empty
