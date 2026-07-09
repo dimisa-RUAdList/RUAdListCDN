@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 09 Jul 2026 05:06:49 +0000
-! Diff-Path: ../patches/2026.7.9.306.patch#ruadlist
+! Last modified: Thu, 09 Jul 2026 08:41:20 +0000
+! Diff-Path: ../patches/2026.7.9.521.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22528,7 +22528,7 @@ ictv.ua,vikna.tv##div[id^="div-gpt-ad-"]
 !#if ext_abp
 ! запросы
 ! ловушка для обфускации дзена: главная, статьи, новости, погода
-/^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^/]+\/[^/]+\/[^/.]+(?:\?.*)?$/$script
+/^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]+[^.j][^s](?:\?.*)?$/$script
 ||dzen.ru/a/$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/articles$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/news$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
@@ -28675,12 +28675,11 @@ disk.yandex.by,disk.yandex.com,disk.yandex.kz,disk.yandex.ru,disk.yandex.uz##div
 ! ---
 ! дзен
 ! главная
-dzen.ru##.secondChunkSyncExp div[class*="-layout--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child > div:only-child:style(border: inherit !important)
-dzen.ru##.secondChunkSyncExp div[class*="-layout--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child:style(background-color: inherit !important)
-dzen.ru##.secondChunkSyncExp div[class*="-layout--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty + div:last-child div:style(background-color: inherit !important)
-dzen.ru##.secondChunkSyncExp div[class*="-layout--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty:style(background-color: inherit !important)
-dzen.ru,sportsdzen.ru##[aria-label*="Pа"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id]
-dzen.ru,sportsdzen.ru##[aria-label*="Pа"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not([class*="-rubric-"]):not(:last-child):not([aria-label])
+dzen.ru##.secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child > [class]:only-child [id]:style(border: inherit !important)
+dzen.ru##.secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child > [class]:only-child:style(background-color: inherit !important; border: inherit !important)
+dzen.ru##.secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child:style(background-color: inherit !important)
+dzen.ru##.secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty + div:last-child div:style(background-color: inherit !important)
+dzen.ru##.secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty:style(background-color: inherit !important)
 dzen.ru##[class*="CardRtb"]
 dzen.ru##[class*="card-rtb"]
 dzen.ru##[class*="desktop"] ~ [id*="teaser"]
@@ -28702,6 +28701,7 @@ dzen.ru##div[class*="dzen-desktop--"][class*="__ad-"]
 dzen.ru##div[class*="dzen-desktop--top-sidebar-desktop-ad__root"]
 dzen.ru##div[class^="dzen-desktop--content-app__content-"] > div > div:first-child > div:first-child + div:style(opacity: 0 !important; pointer-events: none !important)
 dzen.ru##div[id*="splashscreen"]
+dzen.ru##div[style*="12.3626373626"]
 dzen.ru##div[style*="important"] div[class*="__main"]
 ! исправление ошибок и косяков оригинальной вёрстки
 dzen.ru###SECOND_CHUNK_APP_CONTAINER_MicroRoot div[class^="dzen-layout--desktop-page-layout__left"]:style(height: calc(91vh - var(--desktopPageLayoutHeaderHeight)) !important)
@@ -28733,8 +28733,8 @@ dzen.ru##.news-rubric-desktop__news > section > div > div[id]
 dzen.ru##.news-secondary-layout-column__secondary div[id]
 dzen.ru##.news-sticky__inner > div > div[id]
 dzen.ru##.news-story-page div[id] > div:not([id]) > div[id]
-dzen.ru,sportsdzen.ru##[aria-label*="ра"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id]
-dzen.ru,sportsdzen.ru##[aria-label*="ра"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not([class*="-rubric-"]):not(:last-child):not([aria-label])
+dzen.ru,sportsdzen.ru##[aria-label*="PА"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id]
+dzen.ru,sportsdzen.ru##[aria-label*="PА"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not([class*="-rubric-"]):not(:last-child):not([aria-label])
 dzen.ru##[aria-label] div[id][class*="-desktop__ad-"]
 dzen.ru##div[class*="AdvertTsar"]
 dzen.ru##div[class*="BrandingAdvertLayoutColumn-"]
@@ -28751,7 +28751,6 @@ dzen.ru##div[class^="news-top-stories-"][class$="other_extra"] ~ div:not([class^
 dzen.ru##div[id] > div[class*="-desktop-"] > div[class*="__image-"]:empty
 dzen.ru##div[id] > div[class*="-desktop-"] > div[class*="__image-"]:empty + div[class*="__content-"]
 dzen.ru##div[id^="ad-"][class*=" news-"]
-dzen.ru##div[style*="12.36263736263"]
 ! исправление ошибок и косяков оригинальной вёрстки
 dzen.ru##.news-page-layout__content:style(width: var(--news-content-size) !important; margin-left: auto !important; margin-right: auto !important)
 dzen.ru,sportsdzen.ru##body:style(scroll-snap-type: none !important)
@@ -29079,12 +29078,12 @@ levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,
 rbc.ru##+js(abort-on-property-read, Object.prototype._isAutostartQueueSet)
 www.kinopoisk.ru##+js(abort-on-property-read, Object.prototype.bannerOptions)
 gorodrabot.by,gorodrabot.ru##+js(abort-on-property-read, Object.prototype.direct)
+dzen.ru##+js(abort-on-property-read, Object.prototype.initAdRefreshment)
 auto.ru,reshuent.ru,sdamgia.ru##+js(abort-on-property-read, Object.prototype.isAdfox)
 rbc.ru##+js(abort-on-property-read, Object.prototype.isApplySticky)
 e1.ru,nova.rambler.ru,pikabu.ru##+js(abort-on-property-read, Object.prototype.loadBanner)
 24smi.org##+js(abort-on-property-read, Object.prototype.render)
 gismeteo.by,gismeteo.kz,gismeteo.ru##+js(abort-on-property-read, Object.prototype.scriptsViaXhr)
-dzen.ru,sportsdzen.ru##+js(abort-on-property-read, Object.prototype.setContainer)
 drive2.ru,razlozhi.ru##+js(abort-on-property-read, Object.prototype.yaContextCb)
 f1comp.ru,tagaev.com,times.zt.ua##+js(abort-on-property-read, PUM.getPopup)
 gencit.info##+js(abort-on-property-read, Radish)

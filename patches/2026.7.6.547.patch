@@ -1,8 +1,8 @@
-diff name:ruadlist lines:73 checksum:7b0a182f10
+diff name:ruadlist lines:90 checksum:c2dbe395e2
 d4 2
 a5 2
-! Last modified: Thu, 09 Jul 2026 05:06:49 +0000
-! Diff-Path: ../patches/2026.7.9.306.patch#ruadlist
+! Last modified: Thu, 09 Jul 2026 08:41:20 +0000
+! Diff-Path: ../patches/2026.7.9.521.patch#ruadlist
 a5984 1
 ||tazaromikaz.link^$third-party
 a7579 1
@@ -47,7 +47,7 @@ d21833 1
 a21833 1
 opennet.me,opennet.ru##div[style^="background-color: #E9EAD"][style*="; width:"][style*="height: 6"]
 a22528 1
-/^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^/]+\/[^/]+\/[^/.]+(?:\?.*)?$/$script
+/^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]+[^.j][^s](?:\?.*)?$/$script
 a22592 1
 liveball.sx,liveball.*###custom_brand {remove:true;}
 a22910 1
@@ -63,9 +63,26 @@ a25231 1
 ||pfm.promo^$third-party
 d27420 2
 d27903 2
+d28677 6
+a28682 5
+dzen.ru##.secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child > [class]:only-child [id]:style(border: inherit !important)
+dzen.ru##.secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child > [class]:only-child:style(background-color: inherit !important; border: inherit !important)
+dzen.ru##.secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child:style(background-color: inherit !important)
+dzen.ru##.secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty + div:last-child div:style(background-color: inherit !important)
+dzen.ru##.secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty:style(background-color: inherit !important)
+a28703 1
+dzen.ru##div[style*="12.3626373626"]
+d28735 2
+a28736 2
+dzen.ru,sportsdzen.ru##[aria-label*="PА"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id]
+dzen.ru,sportsdzen.ru##[aria-label*="PА"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not([class*="-rubric-"]):not(:last-child):not([aria-label])
 d28746 1
 a28746 1
 dzen.ru,sportsdzen.ru##div[class^="news-"][style="margin-top: 0px; height: calc(100% - 0px);"]
+d28753 1
+a29080 1
+dzen.ru##+js(abort-on-property-read, Object.prototype.initAdRefreshment)
+d29086 1
 d29341 1
 a29341 1
 afisha.ru,film.ru,filmpro.ru,kinomania.ru,thelastdb.games,thelastupd.org##+js(remove-attr, autoplay|loop, video, stay)

@@ -1,8 +1,8 @@
-diff name:ruadlist lines:120 checksum:7b0a182f10
+diff name:ruadlist lines:137 checksum:c2dbe395e2
 d4 2
 a5 2
-! Last modified: Thu, 09 Jul 2026 05:06:49 +0000
-! Diff-Path: ../patches/2026.7.9.306.patch#ruadlist
+! Last modified: Thu, 09 Jul 2026 08:41:20 +0000
+! Diff-Path: ../patches/2026.7.9.521.patch#ruadlist
 a261 1
 ||adnetwork.bet^$third-party
 a5983 1
@@ -88,7 +88,7 @@ liveball.sx,liveball.*##[class*="odds_"]
 liveball.sx,liveball.*##[class^="custom_brand"]
 liveball.sx,liveball.*##div[class^="catfish_"]
 a22511 1
-/^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^/]+\/[^/]+\/[^/.]+(?:\?.*)?$/$script
+/^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]+[^.j][^s](?:\?.*)?$/$script
 d22545 1
 a22545 1
 ||pikabu.ru/ajax/*?b34RT=$xmlhttprequest
@@ -110,9 +110,26 @@ a27029 1
 2es.work,adventuretime.ru,ani.wtf,cdnpotok.com,cdntelesee.com,cdntvpotok.com,chepok.xyz,domatv.net,hdone.net,hdru.net,hindcine.tv,kipolino.site,klplayer.website,liveball.my,liveball.uno,liveball.*,luxurytv.online,oneliketv.com,phys-kids.com,pokaz.me,rxtv.github.io,sovetromantica.com,strah.video,t1pochek.site,tip0chek.site,tipochek.xyz,volley.ru,worldvideo.site#?#[id^="oframe"] > pjsdiv:-abp-has(> pjsdiv:-abp-contains(/adblock|adblok|адблок|блокировщик|блокировку|фрибет/i))
 d27403 2
 d27886 2
+d28660 6
+a28665 5
+dzen.ru##.secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child > [class]:only-child [id]:style(border: inherit !important)
+dzen.ru##.secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child > [class]:only-child:style(background-color: inherit !important; border: inherit !important)
+dzen.ru##.secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child:style(background-color: inherit !important)
+dzen.ru##.secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty + div:last-child div:style(background-color: inherit !important)
+dzen.ru##.secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty:style(background-color: inherit !important)
+a28686 1
+dzen.ru##div[style*="12.3626373626"]
+d28718 2
+a28719 2
+dzen.ru,sportsdzen.ru##[aria-label*="PА"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id]
+dzen.ru,sportsdzen.ru##[aria-label*="PА"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not([class*="-rubric-"]):not(:last-child):not([aria-label])
 d28729 1
 a28729 1
 dzen.ru,sportsdzen.ru##div[class^="news-"][style="margin-top: 0px; height: calc(100% - 0px);"]
+d28736 1
+a29063 1
+dzen.ru##+js(abort-on-property-read, Object.prototype.initAdRefreshment)
+d29069 1
 d29324 1
 a29324 1
 afisha.ru,film.ru,filmpro.ru,kinomania.ru,thelastdb.games,thelastupd.org##+js(remove-attr, autoplay|loop, video, stay)

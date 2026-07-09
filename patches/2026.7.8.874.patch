@@ -1,8 +1,8 @@
-diff name:ruadlist lines:35 checksum:7b0a182f10
+diff name:ruadlist lines:55 checksum:c2dbe395e2
 d4 2
 a5 2
-! Last modified: Thu, 09 Jul 2026 05:06:49 +0000
-! Diff-Path: ../patches/2026.7.9.306.patch#ruadlist
+! Last modified: Thu, 09 Jul 2026 08:41:20 +0000
+! Diff-Path: ../patches/2026.7.9.521.patch#ruadlist
 a7884 1
 .txt?fre=$third-party,xmlhttprequest
 a8572 1
@@ -25,12 +25,32 @@ headphone-review.ru,kinomania.kz##.sidebar .widget_text
 d18971 1
 a18974 1
 kinomania.ru##.watch-page__play-button
+d22530 1
+a22530 1
+/^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]+[^.j][^s](?:\?.*)?$/$script
 a25232 1
 ||perfluence.net/blogger/promocode-api/$third-party
 a25233 1
 ||pfm.promo^$third-party
 d27422 2
 d27905 2
+d28679 6
+a28684 5
+dzen.ru##.secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child > [class]:only-child [id]:style(border: inherit !important)
+dzen.ru##.secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child > [class]:only-child:style(background-color: inherit !important; border: inherit !important)
+dzen.ru##.secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child:style(background-color: inherit !important)
+dzen.ru##.secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty + div:last-child div:style(background-color: inherit !important)
+dzen.ru##.secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty:style(background-color: inherit !important)
+a28705 1
+dzen.ru##div[style*="12.3626373626"]
+d28737 2
+a28738 2
+dzen.ru,sportsdzen.ru##[aria-label*="PА"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id]
+dzen.ru,sportsdzen.ru##[aria-label*="PА"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not([class*="-rubric-"]):not(:last-child):not([aria-label])
+d28755 1
+a29082 1
+dzen.ru##+js(abort-on-property-read, Object.prototype.initAdRefreshment)
+d29088 1
 d29343 1
 a29343 1
 afisha.ru,film.ru,filmpro.ru,kinomania.ru,thelastdb.games,thelastupd.org##+js(remove-attr, autoplay|loop, video, stay)
