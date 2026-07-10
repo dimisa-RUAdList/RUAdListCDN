@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 10 Jul 2026 04:06:49 +0000
-! Diff-Path: ../patches/2026.7.10.246.patch#ruadlist
+! Last modified: Fri, 10 Jul 2026 11:14:34 +0000
+! Diff-Path: ../patches/2026.7.10.674.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -5900,6 +5900,7 @@
 ||sutgof.ru^$third-party
 ||suuut.com^$third-party
 ||sv-pr.ru^$third-party
+||svarogonil.link^$third-party
 ||svedkan.com^$third-party
 ||svegt.com^$third-party
 ||sveklon.com^$third-party
@@ -23248,9 +23249,9 @@ ngsrabota.com.ua##.ra-top-banner
 fontanka.ru#?#.record > div[class]:-abp-has(> div > [href="/pressrelease/"])
 sp.ngs.ru##.sp-toppromo
 ##.widget-autoru
-fontanka.ru,ngs.ru,ngs55.ru##[class*="pictureDayBlock_"] div[class*=" advMark_"]
-fontanka.ru,ngs.ru,ngs55.ru##[class*="pictureDayBlock_"] li > a[href*="/?erid="]
-fontanka.ru,ngs.ru,ngs55.ru#?#[class*="pictureDayBlock_"] li:-abp-has(> a[href*="/?erid="])
+59.ru,fontanka.ru,msk1.ru,ngs.ru,ngs55.ru##[class*="pictureDayBlock_"] div[class*=" advMark_"]
+59.ru,fontanka.ru,msk1.ru,ngs.ru,ngs55.ru##[class*="pictureDayBlock_"] li > a[href*="/?erid="]
+59.ru,fontanka.ru,msk1.ru,ngs.ru,ngs55.ru#?#[class*="pictureDayBlock_"] li:-abp-has(> a[href*="/?erid="])
 fontanka.ru##[data-io-article-url] > [itemprop="articleBody"] ~ p[class]
 ru##[data-ns-portal] .gridContainer > div[class^="wrap-cp_"]:empty
 ru##[data-ns-portal] .gridContainer div[class^="benefitsBlock_"]
@@ -27747,8 +27748,8 @@ hdkinozzoro.ru##.jirrua:style(margin-top: 0 !important)
 hdkinozzoro.ru##body:not(#id):style(padding-top: 0 !important)
 ! ---
 ! HDREZKA
-ac,ag,biz,buzz,by,city,club,co,com,fi,in,ink,kim,loan,me,name,net,org,pub,rest,run,sh,si,so,space,su,today,tv,vip,website,win##body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"] > [id$="er"]:nth-child(-n+3):style(width: unset !important)
-ac,ag,biz,buzz,by,city,club,co,com,fi,in,ink,kim,loan,me,name,net,org,pub,rest,run,sh,si,so,space,su,today,tv,vip,website,win##body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"]:style(padding-top: 0 !important; background-color: inherit !important)
+ac,ag,biz,buzz,by,city,club,co,com,fi,in,ink,kim,la,loan,me,name,net,org,pub,rest,run,sh,si,so,space,su,today,tv,vip,website,win##body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"] > [id$="er"]:nth-child(-n+3):style(width: unset !important)
+ac,ag,biz,buzz,by,city,club,co,com,fi,in,ink,kim,la,loan,me,name,net,org,pub,rest,run,sh,si,so,space,su,today,tv,vip,website,win##body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"]:style(padding-top: 0 !important; background-color: inherit !important)
 ! Моносериальные домены HDrezka
 net,org##body.branded:not([id]):not([style]) > #wrapper:not([class]):not([style]):style(margin-top: unset !important)
 ! ---
