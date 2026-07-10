@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 10 Jul 2026 11:14:34 +0000
-! Diff-Path: ../patches/2026.7.10.674.patch#ruadlist
+! Last modified: Fri, 10 Jul 2026 14:47:21 +0000
+! Diff-Path: ../patches/2026.7.10.887.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -23806,7 +23806,9 @@ cyber.sports.ru##a[href^="https://redirect.appmetrica.yandex.com/serve/"]
 sports.ru##a[href^="https://sprts.cc/"]
 sports.ru##a[href^="https://zen.yandex.ru/"]
 sports.ru##ad-slot
+sports.ru##article.material-list__item[data-link^="https://goo.su/"]
 sports.ru##article.material-list__item[data-link^="https://sirena.world/"]
+sports.ru##article[data-article-type="promo"]
 sports.ru##body > div[class^="br-lt"] > :not(.page-layout):not(.pageLayout)
 tribuna.com#?#div:-abp-has(> div > [style="display: flex;"] > div[id*="_Inread"])
 sports.ru##div[class*="SALES"] > .accordion__handle
