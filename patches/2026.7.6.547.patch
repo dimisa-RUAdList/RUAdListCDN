@@ -1,8 +1,8 @@
-diff name:ruadlist lines:120 checksum:b397393e05
+diff name:ruadlist lines:126 checksum:d71c4f7d6e
 d4 2
 a5 2
-! Last modified: Fri, 10 Jul 2026 14:47:21 +0000
-! Diff-Path: ../patches/2026.7.10.887.patch#ruadlist
+! Last modified: Fri, 10 Jul 2026 20:38:37 +0000
+! Diff-Path: ../patches/2026.7.10.1238.patch#ruadlist
 a5902 1
 ||svarogonil.link^$third-party
 a5984 1
@@ -23,7 +23,13 @@ a8569 1
 ##.perfluence-widget-block
 a8744 1
 ##a[href*="//yandex.ru/adfox/"]
+a8840 1
+com,~hoster.ru,me,net,org,ru##a[href*="://hoster.ru"][target="_blank"]:not(thanks-opennet.ru)
+a9084 1
+com,~ishosting.com,me,net,org,ru##a[href^="https://ishosting.com"][target="_blank"]:not(thanks-opennet.ru)
 d9096 1
+a9096 1
+com,me,net,org,~postgrespro.ru,ru##a[href^="https://www.postgrespro.ru"][target="_blank"]:not(thanks-opennet.ru)
 d10621 1
 d12126 2
 d12245 3
@@ -47,9 +53,9 @@ headphone-review.ru,kinomania.kz##.sidebar .widget_text
 d18970 1
 a18973 1
 kinomania.ru##.watch-page__play-button
+a21725 1
+opennet.me,opennet.ru#?#div[style*="background-color:"]:-abp-has(> div:-abp-contains(/Партнёры:|Хостинг:/))
 d21833 1
-a21833 1
-opennet.me,opennet.ru##div[style^="background-color: #E9E"][style*="; width:"][style*="height: 6"]
 a22528 1
 /^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]+[^.j][^s](?:\?.*)?$/$script
 a22592 1
