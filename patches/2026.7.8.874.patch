@@ -1,8 +1,8 @@
-diff name:ruadlist lines:123 checksum:13b6b693d1
+diff name:ruadlist lines:137 checksum:20a9c3f08a
 d4 2
 a5 2
-! Last modified: Sun, 12 Jul 2026 06:42:54 +0000
-! Diff-Path: ../patches/2026.7.12.402.patch#ruadlist
+! Last modified: Sun, 12 Jul 2026 12:05:01 +0000
+! Diff-Path: ../patches/2026.7.12.725.patch#ruadlist
 a5902 1
 ||svarogonil.link^$third-party
 a7884 1
@@ -70,11 +70,18 @@ a23916 1
 ya.ru##section[style*="sectillion-items-count:"]
 a23918 1
 ya.ru,yandex.ru,yandex.*##.ImagesApp .AdvPremium-List
-a23947 2
+a23947 3
 yandex.ru,yandex.*##.RealtyListing-AdfoxBanner
 yandex.ru,yandex.*##.RealtyListing-AdvItem
+yandex.ru,yandex.*##.RealtyListing-NewbuildingsPromo
 a23961 1
 yandex.ru,yandex.*#?#.RealtySnippetCard:-abp-has(.AdvCaption_variant_promo)
+d24024 3
+a24026 4
+ya.ru,yandex.ru,yandex.*##.DirectStripe
+ya.ru,yandex.ru,yandex.*##.VideoViewer .Viewer-ScrollContainer > div[class]:first-child > div[id][class]:first-child:empty + div
+ya.ru,yandex.ru,yandex.*##.VideoViewer-Direct
+ya.ru,yandex.ru,yandex.*#?#div[class*="VideoViewer-Block"] > .VideoPlayerMetaInfo ~ div:-abp-has(> div[id]:empty)
 a25232 1
 ||perfluence.net/blogger/promocode-api/$third-party
 a25233 1
@@ -112,6 +119,10 @@ a28738 2
 dzen.ru,sportsdzen.ru##[aria-label*="PА"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id]
 dzen.ru,sportsdzen.ru##[aria-label*="PА"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not([class*="-rubric-"]):not(:last-child):not([aria-label])
 d28755 1
+a28819 3
+tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.uz##html.modal_open .fullscreen-notification__overrideModal
+tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.uz##html.modal_open .page:style(overflow-y: auto !important)
+tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.uz##html.modal_open:style(margin-right: unset !important)
 d29083 1
 a29083 2
 dzen.ru##+js(abort-on-property-read, Object.prototype.initAdRefreshment)
@@ -119,6 +130,9 @@ reshuent.ru,sdamgia.ru##+js(abort-on-property-read, Object.prototype.isAdfox)
 a29084 1
 auto.ru##+js(abort-on-property-read, Object.prototype.isTopAd)
 d29088 1
+d29283 1
+a29283 1
+anifap.com,anifap.xyz,diplomsrazu.ru,igrozoom.ru,pro-books.ru,ru-minecraft.ru,softomania.net,vip-mods.ru,warezok.net,windows-driver.com,windows-driver.net,windows-program.com##+js(nano-setInterval-booster, timer)
 d29343 1
 a29343 1
 afisha.ru,film.ru,filmpro.ru,kinomania.ru,thelastdb.games,thelastupd.org##+js(remove-attr, autoplay|loop, video, stay)

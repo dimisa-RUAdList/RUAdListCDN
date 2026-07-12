@@ -1,8 +1,8 @@
-diff name:ruadlist lines:47 checksum:13b6b693d1
+diff name:ruadlist lines:61 checksum:20a9c3f08a
 d4 2
 a5 2
-! Last modified: Sun, 12 Jul 2026 06:42:54 +0000
-! Diff-Path: ../patches/2026.7.12.402.patch#ruadlist
+! Last modified: Sun, 12 Jul 2026 12:05:01 +0000
+! Diff-Path: ../patches/2026.7.12.725.patch#ruadlist
 a8847 1
 com,~hoster.ru,me,net,org,ru##a[href*="://hoster.ru"][target="_blank"]:not(thanks-opennet.ru)
 a9091 1
@@ -33,16 +33,30 @@ a23809 1
 sports.ru##article[data-article-type="promo"]
 a23921 1
 ya.ru,yandex.ru,yandex.*##.ImagesApp .AdvPremium-List
-a23950 2
+a23950 3
 yandex.ru,yandex.*##.RealtyListing-AdfoxBanner
 yandex.ru,yandex.*##.RealtyListing-AdvItem
+yandex.ru,yandex.*##.RealtyListing-NewbuildingsPromo
 a23964 1
 yandex.ru,yandex.*#?#.RealtySnippetCard:-abp-has(.AdvCaption_variant_promo)
+d24027 3
+a24029 4
+ya.ru,yandex.ru,yandex.*##.DirectStripe
+ya.ru,yandex.ru,yandex.*##.VideoViewer .Viewer-ScrollContainer > div[class]:first-child > div[id][class]:first-child:empty + div
+ya.ru,yandex.ru,yandex.*##.VideoViewer-Direct
+ya.ru,yandex.ru,yandex.*#?#div[class*="VideoViewer-Block"] > .VideoPlayerMetaInfo ~ div:-abp-has(> div[id]:empty)
 d27445 1
 a27445 1
 cinema-hd.ru,doramatv.su,filmshd.vip,goodfilms.su,hdrezka.it,kinoxa.cc,lordfilm.lu,lordserial.fun,lordserial.run,lordserial.top,newseries.me,uaserials.com,uaserials.my,yummyanime.best##.wrap:style(padding-top: 0 !important)
+a28818 3
+tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.uz##html.modal_open .fullscreen-notification__overrideModal
+tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.uz##html.modal_open .page:style(overflow-y: auto !important)
+tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.uz##html.modal_open:style(margin-right: unset !important)
 d29083 1
 a29083 1
 reshuent.ru,sdamgia.ru##+js(abort-on-property-read, Object.prototype.isAdfox)
 a29084 1
 auto.ru##+js(abort-on-property-read, Object.prototype.isTopAd)
+d29282 1
+a29282 1
+anifap.com,anifap.xyz,diplomsrazu.ru,igrozoom.ru,pro-books.ru,ru-minecraft.ru,softomania.net,vip-mods.ru,warezok.net,windows-driver.com,windows-driver.net,windows-program.com##+js(nano-setInterval-booster, timer)

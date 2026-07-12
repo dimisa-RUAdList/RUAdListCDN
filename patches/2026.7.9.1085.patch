@@ -1,8 +1,8 @@
-diff name:ruadlist lines:61 checksum:13b6b693d1
+diff name:ruadlist lines:75 checksum:20a9c3f08a
 d4 2
 a5 2
-! Last modified: Sun, 12 Jul 2026 06:42:54 +0000
-! Diff-Path: ../patches/2026.7.12.402.patch#ruadlist
+! Last modified: Sun, 12 Jul 2026 12:05:01 +0000
+! Diff-Path: ../patches/2026.7.12.725.patch#ruadlist
 a5902 1
 ||svarogonil.link^$third-party
 a8846 1
@@ -40,11 +40,18 @@ a23808 1
 sports.ru##article[data-article-type="promo"]
 a23920 1
 ya.ru,yandex.ru,yandex.*##.ImagesApp .AdvPremium-List
-a23949 2
+a23949 3
 yandex.ru,yandex.*##.RealtyListing-AdfoxBanner
 yandex.ru,yandex.*##.RealtyListing-AdvItem
+yandex.ru,yandex.*##.RealtyListing-NewbuildingsPromo
 a23963 1
 yandex.ru,yandex.*#?#.RealtySnippetCard:-abp-has(.AdvCaption_variant_promo)
+d24026 3
+a24028 4
+ya.ru,yandex.ru,yandex.*##.DirectStripe
+ya.ru,yandex.ru,yandex.*##.VideoViewer .Viewer-ScrollContainer > div[class]:first-child > div[id][class]:first-child:empty + div
+ya.ru,yandex.ru,yandex.*##.VideoViewer-Direct
+ya.ru,yandex.ru,yandex.*#?#div[class*="VideoViewer-Block"] > .VideoPlayerMetaInfo ~ div:-abp-has(> div[id]:empty)
 a27080 1
 live.vkvideo.ru##div[class*=" App_appWithMinWidth_"] > [class^="Notifications_root"]
 d27082 1
@@ -55,8 +62,15 @@ d27750 2
 a27751 2
 ac,ag,biz,buzz,by,city,club,co,com,fi,in,ink,kim,la,loan,me,name,net,org,pub,rest,run,sh,si,so,space,su,today,tv,vip,website,win##body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"] > [id$="er"]:nth-child(-n+3):style(width: unset !important)
 ac,ag,biz,buzz,by,city,club,co,com,fi,in,ink,kim,la,loan,me,name,net,org,pub,rest,run,sh,si,so,space,su,today,tv,vip,website,win##body[class^="has-brand"][class*=" active-brand"][class*="fixed-header"]:style(padding-top: 0 !important; background-color: inherit !important)
+a28817 3
+tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.uz##html.modal_open .fullscreen-notification__overrideModal
+tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.uz##html.modal_open .page:style(overflow-y: auto !important)
+tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.uz##html.modal_open:style(margin-right: unset !important)
 d29082 1
 a29082 1
 reshuent.ru,sdamgia.ru##+js(abort-on-property-read, Object.prototype.isAdfox)
 a29083 1
 auto.ru##+js(abort-on-property-read, Object.prototype.isTopAd)
+d29281 1
+a29281 1
+anifap.com,anifap.xyz,diplomsrazu.ru,igrozoom.ru,pro-books.ru,ru-minecraft.ru,softomania.net,vip-mods.ru,warezok.net,windows-driver.com,windows-driver.net,windows-program.com##+js(nano-setInterval-booster, timer)
