@@ -1,15 +1,55 @@
-diff name:ruadlist lines:32 checksum:52576e010c
+diff name:ruadlist lines:81 checksum:4e7d1e4e78
 d4 2
 a5 2
-! Last modified: Sun, 12 Jul 2026 16:07:10 +0000
-! Diff-Path: ../patches/2026.7.12.967.patch#ruadlist
+! Last modified: Sun, 12 Jul 2026 21:01:43 +0000
+! Diff-Path: ../patches/2026.7.12.1261.patch#ruadlist
+a12613 5
+||oc.kg/background/$~media
+||oc.kg/js/click.js
+||oc.kg/outsidead.php
+||oc.kg/preroll.php
+||oc.kg/sidebanner.php
+d13241 1
+a13479 1
+||ts.kg/static/*.|$~media
+a13861 1
+||oc.kg/background/*.mp4$rewrite=abp-resource:blank-mp4,domain=oc.kg
+a13864 1
+||ts.kg/static/*.|$rewrite=abp-resource:blank-mp4,domain=ts.kg
+d14107 1
+a14141 1
+oc.kg###container > .hidden-xs
+a14142 1
+oc.kg###container > .visible-xs-block
+a14143 1
+oc.kg###container > a[target="_blank"]
 a15174 1
 sravni.ru##._1p39i0c
+a15425 1
+ts.kg##.app-ad-category
+d16065 1
+a16065 1
+forum.finance.ua,moscow-post.com,oc.kg##.bottom_banner
 a17147 1
 dsgners.ru##.layout > .overflow-hidden[style^="background"]
+a17797 1
+ts.kg##.player.video-js > div[id][class]:not([style])
+d18033 1
+a18033 1
+3iks.pw,lenfilm.tv,russian7.ru,sex-comics.mobi,sportnet.live,youblogs.ru##.rekl
+a18311 1
+oc.kg##.side_banner
 d19913 1
 a19913 1
 alltor.me,backup.menu,beremennost.net,buhgalter911.com,dead-serial.com,dedicated.menu,domohozayki.com,dsgners.ru,electricalschool.info,elementarno-tv.com,fishki.net,forum-profit.ru,hosting.cafe,https.menu,kopilkaurokov.ru,kosti-tv.com,license.menu,multiurok.ru,ogribax.ru,openssource.biz,palantinbest.ru,php.ru,shared.menu,traktorist.ua,uvelir.info,uvelir.net,vds.menu,vorozheya.org,vskazke-tv.com,www.pesticidy.ru##a[href*="banner"][target="_blank"]
+a20648 1
+ts.kg##body > .hidden-xs
+a20660 1
+ts.kg##body > .visible-xs-block
+a20710 1
+ts.kg##body > div[id][data-link]
+a21278 1
+ts.kg##div[class^="player"] > [data-link]
 a23927 1
 ya.ru,yandex.ru,yandex.*##.ImagesApp .AdvPremium-List
 a23956 3
@@ -24,6 +64,11 @@ ya.ru,yandex.ru,yandex.*##.DirectStripe
 ya.ru,yandex.ru,yandex.*##.VideoViewer .Viewer-ScrollContainer > div[class]:first-child > div[id][class]:first-child:empty + div
 ya.ru,yandex.ru,yandex.*##.VideoViewer-Direct
 ya.ru,yandex.ru,yandex.*#?#div[class*="VideoViewer-Block"] > .VideoPlayerMetaInfo ~ div:-abp-has(> div[id]:empty)
+a26530 1
+@@||oc.kg/js/videojs.ga.js|$script,~third-party
+d28548 1
+a28548 1
+oc.kg,ts.kg##body:style(background-color: inherit !important; background-image: none !important)
 a28824 3
 tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.uz##html.modal_open .fullscreen-notification__overrideModal
 tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.uz##html.modal_open .page:style(overflow-y: auto !important)
@@ -31,3 +76,7 @@ tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.uz##html.modal_open:style(margi
 d29289 1
 a29289 1
 anifap.com,anifap.xyz,diplomsrazu.ru,igrozoom.ru,pro-books.ru,ru-minecraft.ru,softomania.net,vip-mods.ru,warezok.net,windows-driver.com,windows-driver.net,windows-program.com##+js(nano-setInterval-booster, timer)
+a29688 1
+||oc.kg/background/*.mp4$media,redirect=noop-0.1s.mp3
+a29702 1
+||ts.kg/static/*.|$media,redirect=noop-0.1s.mp3
