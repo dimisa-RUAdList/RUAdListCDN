@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 13 Jul 2026 07:31:34 +0000
-! Diff-Path: ../patches/2026.7.13.451.patch#ruadlist
+! Last modified: Mon, 13 Jul 2026 14:54:07 +0000
+! Diff-Path: ../patches/2026.7.13.894.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -14403,6 +14403,7 @@ www.ixbt.com###ixbt-video-news-block:empty
 pravo-porada.com.ua###jm-right .bannergroup
 metanit.com###jma
 joker.ykt.ru###jok-banner-affix
+interface31.ru###js-dynamic-ad-container
 autoua.net###js-preload-banner
 vkfaces.com###js-slider-1
 nur.kz###js-widget-pm
@@ -15304,7 +15305,10 @@ hsl.com.ua##.ads-place
 fireman.club##.ads-popup
 medialeaks.ru##.ads-run-blocks
 klubok.com##.ads-separator
+interface31.ru##.ads-sidebar-top
 cn.ru##.ads-soloway
+interface31.ru##.ads-top-container
+interface31.ru##.ads-widget-bottom
 in-poland.com##.adsContainer
 meta.ua##.ads_240
 topradio.me##.ads_R
@@ -17742,6 +17746,7 @@ lrepacks.net,rusplt.ru##.partner-block
 autosport.com.ru##.partner-content
 zahav.ru##.partner-iframe
 w7phone.ru##.partner-in-sidebar
+24tv.ua,zaxid.net##.partner-info
 allboxing.ru,dyvys.info,glavred.info,glavred.net,gorodkirov.ru,ictv.ua,unian.info,unian.net,unian.ua##.partner-news
 zi.ua##.partner-news-content
 rusplt.ru##.partner-news-wrapper
@@ -19023,8 +19028,6 @@ shopinfo.com.ua##.widget-group-no-name .sidebarAdvertising
 shopinfo.com.ua#?#.widget-group-no-name:-abp-has(.sidebarAdvertising)
 tv.i.ua##.widget-news_premium
 maanimo.com##.widget-offers
-interface31.ru##.widget-pages a[href][target="_blank"] > img
-interface31.ru#?#.widget-pages:-abp-has(> .widget-header:-abp-contains(Реклама))
 nur.kz##.widget-parimatch-wrapper
 bibliofond.ru##.widget-pomogi
 au-ok.com#?#.widget-sidebar:-abp-has(> div .adsbygoogle)
@@ -22586,7 +22589,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=levik.blog|livejournal.c
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
 ||ng72.ru^$csp=script-src 'self' 'unsafe-eval' https:
-||pikabu.ru/ajax/*?b34RT=$xmlhttprequest
+||pikabu.ru/ajax/*?qct6Y=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -23990,6 +23993,7 @@ yandex.ru,yandex.*##div[class^="advert-card--content-feed-"]
 yandex.ru,yandex.*##div[class^="AreYouGoodPromo_"]
 yandex.ru,yandex.*##img[src*="yandex.net/get-direct"]
 yandex.ru,yandex.*#?##search-result > .serp-list__card:-abp-has(> div .organic__subtitle > span:-abp-contains(/[РPeекламa]{6,7}/))
+yandex.ru,yandex.*#?#.RealtyListing-SnippetsListSidebarWrapperSidebar:-abp-has(> .AdfoxBanner )
 yandex.ru,yandex.*#?#.RealtySnippetCard:-abp-has(.AdvCaption_variant_promo)
 yandex.ru,yandex.*#?#.scroller__wrap > .showcase__item:-abp-has(.product-card__direct)
 yandex.ru,yandex.*#?#.scroller__wrap > div[class^="minibadge"]:-abp-has(.serp-item .label:-abp-contains(реклама))
@@ -28728,6 +28732,7 @@ dzen.ru##div[class*=" dzen-"] [style^="--top-padding:"]
 dzen.ru##div[class*="--corner-banner_"]
 dzen.ru##div[class*="-top-of-the-day-ad"]:style(opacity: 0 !important)
 dzen.ru##div[class*="__bannerContainer"]
+dzen.ru##div[class*="_bannerWrapper-"]
 dzen.ru##div[class*="dzen-"][class*="-banner-"]
 dzen.ru##div[class*="dzen-desktop--"][class*="__ad-"]
 dzen.ru##div[class*="dzen-desktop--top-sidebar-desktop-ad__root"]
