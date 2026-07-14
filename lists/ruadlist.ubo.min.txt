@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 14 Jul 2026 03:24:59 +0000
-! Diff-Path: ../patches/2026.7.14.204.patch#ruadlist
+! Last modified: Tue, 14 Jul 2026 09:13:08 +0000
+! Diff-Path: ../patches/2026.7.14.553.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -8063,6 +8063,8 @@ _verified.php?code=*&server=runetki.com
 /files/banners/*$domain=~aktiv48.ru|~boysandgirls24.com|~dsns.gov.ua|~ivory.co.il|~ksimart.com|~ksimart.ml|~pgpru.com|~rooborisov.by
 /files/episodes/*-RU.mp4|$third-party,media
 /files/episodes/*bet.mp4|$third-party,media
+/files/series/*-RU.mp4|$third-party,media
+/files/series/*bet.mp4|$third-party,media
 /forum?t=$third-party,subdocument
 /fotocash.js
 /free/banners/*
@@ -16030,7 +16032,7 @@ facenews.ua##.bnblock
 1istochnik.ru##.bnbox
 newdaynews.ru#?#.bnd-cnt:-abp-has(> [class] > b:-abp-contains(Новости партнеров))
 spbit.ru##.bnnr
-apostrophe.ua,bitcryptonews.ru,news.ru,ogolosha.ua,turizm.ru##.bnr
+apostrophe.ua,bitcryptonews.ru,info24.ru,news.ru,ogolosha.ua,turizm.ru##.bnr
 splkirov.ru##.bnr-2horizontal
 newauto.kz##.bnr-tall
 punkt-a.info##.bnr-top
@@ -17362,6 +17364,7 @@ cherkassy-sport.com##.mark_top > .textwidget
 kinofann.ru##.market
 russkiypro.ru##.market-div
 belretail.by##.market-link
+speedtest.ru##.market-message
 wylsa.com##.marketWidgetWrapper
 supersadovnik.ru##.marketgid
 sovets.net,sovets24.ru##.mask
@@ -17968,6 +17971,7 @@ parnuxi.biz##.pw-rkl-section
 crackstatus.net#?#.px-nav-dropdown-menu > .px-nav-item:-abp-has(> a > #uLogin)
 qip.ru##.q_banner
 qip.ru##.q_teaser
+detector404.ru##.qms
 shopping-spb.su##.queen_link
 ktozvonit.com.ua#?#.question:-abp-has(> .adsbygoogle)
 dtf.ru##.quiz-promo
@@ -25470,6 +25474,7 @@ zarulem.ws##td[style^="text-align:center;width:50%"]
 ||s.s-ports.ru/sites/default/files/i/brandings/
 ||sabrinavi.ru/external_list.js?
 ||sampishi.ru^$third-party
+||samzalupa.link^$third-party,media
 ||sape.ru/bn/
 ||sape.ru/images/banners/
 ||sapfir.tv^$third-party
