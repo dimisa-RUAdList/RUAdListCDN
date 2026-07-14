@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 14 Jul 2026 09:13:08 +0000
-! Diff-Path: ../patches/2026.7.14.553.patch#ruadlist
+! Last modified: Tue, 14 Jul 2026 14:06:48 +0000
+! Diff-Path: ../patches/2026.7.14.846.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -23154,7 +23154,7 @@ vkplay.ru##div[class*="ArtBannerSkeleton"]
 ||pets.mail.ru/my/pets/add
 ||privacy-cs.mail.ru^$third-party
 ||r.mail.ru/*=videoplayer$popup,domain=my.mail.ru
-||r.mradx.net/$domain=dzen.ru
+||r.mradx.net/$domain=dzen.ru|sportsdzen.ru
 ||r.mradx.net/$script,domain=auto.mail.ru|deti.mail.ru|e.mail.ru|health.mail.ru|kino.mail.ru|lady.mail.ru|my.mail.ru|otvet.mail.ru|pets.mail.ru|pogoda.mail.ru|tv.mail.ru
 ||r.mradx.net/r/$script
 ||r.mradx.net^$subdocument
@@ -24137,7 +24137,7 @@ dzen.ru##[data-testid="bottom-ad"]
 dzen.ru##[data-testid="right-ad-block"]
 dzen.ru##[data-type="rtb_card"]
 dzen.ru##[id*="-teaser"] > div[id]
-dzen.ru##a[href*="://t.mail.ru/redir/"]
+dzen.ru,sportsdzen.ru##a[href*="://t.mail.ru/redir/"]
 dzen.ru##a[href^="https://trk.mail.ru/"]
 dzen.ru#?#article:-abp-has(> div[data-ad-type])
 dzen.ru#?#div:-abp-has(> .adv-skeleton___main)
@@ -28788,9 +28788,9 @@ dzen.ru##[aria-label] div[id][class*="-desktop__ad-"]
 dzen.ru##div[class*="AdvertTsar"]
 dzen.ru##div[class*="BrandingAdvertLayoutColumn-"]
 dzen.ru##div[class*="_content_with-new-"] > div[id] ~ div[class*="withDiscreteScroll"]
-dzen.ru##div[class*="_is-branding"] > div[style^="background-color:"]
-dzen.ru##div[class*="body_branding"] > div[style*="background-color:"]
-dzen.ru##div[class*="body_branding"]:style(background: inherit !important)
+dzen.ru,sportsdzen.ru##div[class*="_is-branding"] > div[style^="background-color:"]
+dzen.ru,sportsdzen.ru##div[class*="body_branding"] > div[style*="background-color:"]
+dzen.ru,sportsdzen.ru##div[class*="body_branding"]:style(background: inherit !important)
 dzen.ru##div[class*="new"] [class$="__rubricator"] + div[class*=" "] > div:only-child
 dzen.ru##div[class^="news"] [class*="skeleton"]:style(background-color: transparent !important)
 dzen.ru,sportsdzen.ru##div[class^="news-"][style="margin-top: 0px; height: calc(100% - 0px);"]
@@ -29130,7 +29130,7 @@ levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,
 rbc.ru##+js(abort-on-property-read, Object.prototype._isAutostartQueueSet)
 www.kinopoisk.ru##+js(abort-on-property-read, Object.prototype.bannerOptions)
 gorodrabot.by,gorodrabot.ru##+js(abort-on-property-read, Object.prototype.direct)
-dzen.ru##+js(abort-on-property-read, Object.prototype.initAdRefreshment)
+dzen.ru,sportsdzen.ru##+js(abort-on-property-read, Object.prototype.initAdRefreshment)
 reshuent.ru,sdamgia.ru##+js(abort-on-property-read, Object.prototype.isAdfox)
 rbc.ru##+js(abort-on-property-read, Object.prototype.isApplySticky)
 auto.ru##+js(abort-on-property-read, Object.prototype.isTopAd)

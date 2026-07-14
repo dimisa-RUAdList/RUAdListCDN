@@ -1,8 +1,8 @@
-diff name:ruadlist lines:41 checksum:8e7d032140
+diff name:ruadlist lines:55 checksum:5d77a51538
 d4 2
 a5 2
-! Last modified: Tue, 14 Jul 2026 09:13:08 +0000
-! Diff-Path: ../patches/2026.7.14.553.patch#ruadlist
+! Last modified: Tue, 14 Jul 2026 14:06:48 +0000
+! Diff-Path: ../patches/2026.7.14.846.patch#ruadlist
 a3451 1
 ||leproletsu.link^$third-party
 a7839 1
@@ -35,8 +35,22 @@ kinogo.my,kinogohd.im,kinogoua.net##.regpro
 a18758 1
 habr.com##.tm-articles-list__after-article [class*="special "]
 d23029 1
+d23145 1
+a23145 1
+||r.mradx.net/$domain=dzen.ru|sportsdzen.ru
+d24128 1
+a24128 1
+dzen.ru,sportsdzen.ru##a[href*="://t.mail.ru/redir/"]
 a25464 1
 ||samzalupa.link^$third-party,media
 d26535 1
+d28779 3
+a28781 3
+dzen.ru,sportsdzen.ru##div[class*="_is-branding"] > div[style^="background-color:"]
+dzen.ru,sportsdzen.ru##div[class*="body_branding"] > div[style*="background-color:"]
+dzen.ru,sportsdzen.ru##div[class*="body_branding"]:style(background: inherit !important)
+d29121 1
+a29121 1
+dzen.ru,sportsdzen.ru##+js(abort-on-property-read, Object.prototype.initAdRefreshment)
 a29369 1
 mem-hub.ru##+js(prevent-addEventListener, DOMContentLoaded, /adBlocks|adObserver|appPromoModal/)

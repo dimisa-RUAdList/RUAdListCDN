@@ -1,8 +1,8 @@
-diff name:ruadlist lines:163 checksum:8e7d032140
+diff name:ruadlist lines:175 checksum:5d77a51538
 d4 2
 a5 2
-! Last modified: Tue, 14 Jul 2026 09:13:08 +0000
-! Diff-Path: ../patches/2026.7.14.553.patch#ruadlist
+! Last modified: Tue, 14 Jul 2026 14:06:48 +0000
+! Diff-Path: ../patches/2026.7.14.846.patch#ruadlist
 a3451 1
 ||leproletsu.link^$third-party
 a7839 1
@@ -112,6 +112,9 @@ d22567 1
 a22567 1
 ||pikabu.ru/ajax/*?qct6Y=$xmlhttprequest
 d23004 1
+d23120 1
+a23120 1
+||r.mradx.net/$domain=dzen.ru|sportsdzen.ru
 a23808 1
 sports.ru##article.material-list__item[data-link^="https://goo.su/"]
 a23809 1
@@ -131,6 +134,9 @@ ya.ru,yandex.ru,yandex.*##.DirectStripe
 ya.ru,yandex.ru,yandex.*##.VideoViewer .Viewer-ScrollContainer > div[class]:first-child > div[id][class]:first-child:empty + div
 ya.ru,yandex.ru,yandex.*##.VideoViewer-Direct
 ya.ru,yandex.ru,yandex.*#?#div[class*="VideoViewer-Block"] > .VideoPlayerMetaInfo ~ div:-abp-has(> div[id]:empty)
+d24094 1
+a24094 1
+dzen.ru,sportsdzen.ru##a[href*="://t.mail.ru/redir/"]
 a25430 1
 ||samzalupa.link^$third-party,media
 d26501 1
@@ -144,12 +150,18 @@ a28542 1
 oc.kg,ts.kg##body:style(background-color: inherit !important; background-image: none !important)
 a28699 1
 dzen.ru##div[class*="_bannerWrapper-"]
+d28743 3
+a28745 3
+dzen.ru,sportsdzen.ru##div[class*="_is-branding"] > div[style^="background-color:"]
+dzen.ru,sportsdzen.ru##div[class*="body_branding"] > div[style*="background-color:"]
+dzen.ru,sportsdzen.ru##div[class*="body_branding"]:style(background: inherit !important)
 a28818 3
 tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.uz##html.modal_open .fullscreen-notification__overrideModal
 tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.uz##html.modal_open .page:style(overflow-y: auto !important)
 tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.uz##html.modal_open:style(margin-right: unset !important)
-d29083 1
-a29083 1
+d29082 2
+a29083 2
+dzen.ru,sportsdzen.ru##+js(abort-on-property-read, Object.prototype.initAdRefreshment)
 reshuent.ru,sdamgia.ru##+js(abort-on-property-read, Object.prototype.isAdfox)
 a29084 1
 auto.ru##+js(abort-on-property-read, Object.prototype.isTopAd)

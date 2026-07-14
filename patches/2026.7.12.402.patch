@@ -1,8 +1,8 @@
-diff name:ruadlist lines:122 checksum:8e7d032140
+diff name:ruadlist lines:136 checksum:5d77a51538
 d4 2
 a5 2
-! Last modified: Tue, 14 Jul 2026 09:13:08 +0000
-! Diff-Path: ../patches/2026.7.14.553.patch#ruadlist
+! Last modified: Tue, 14 Jul 2026 14:06:48 +0000
+! Diff-Path: ../patches/2026.7.14.846.patch#ruadlist
 a3451 1
 ||leproletsu.link^$third-party
 a7839 1
@@ -88,6 +88,9 @@ d22573 1
 a22573 1
 ||pikabu.ru/ajax/*?qct6Y=$xmlhttprequest
 d23010 1
+d23126 1
+a23126 1
+||r.mradx.net/$domain=dzen.ru|sportsdzen.ru
 a23961 1
 yandex.ru,yandex.*##.RealtyListing-NewbuildingsPromo
 a23975 1
@@ -98,6 +101,9 @@ ya.ru,yandex.ru,yandex.*##.DirectStripe
 ya.ru,yandex.ru,yandex.*##.VideoViewer .Viewer-ScrollContainer > div[class]:first-child > div[id][class]:first-child:empty + div
 ya.ru,yandex.ru,yandex.*##.VideoViewer-Direct
 ya.ru,yandex.ru,yandex.*#?#div[class*="VideoViewer-Block"] > .VideoPlayerMetaInfo ~ div:-abp-has(> div[id]:empty)
+d24106 1
+a24106 1
+dzen.ru,sportsdzen.ru##a[href*="://t.mail.ru/redir/"]
 a25442 1
 ||samzalupa.link^$third-party,media
 d26513 1
@@ -108,10 +114,18 @@ a28554 1
 oc.kg,ts.kg##body:style(background-color: inherit !important; background-image: none !important)
 a28711 1
 dzen.ru##div[class*="_bannerWrapper-"]
+d28755 3
+a28757 3
+dzen.ru,sportsdzen.ru##div[class*="_is-branding"] > div[style^="background-color:"]
+dzen.ru,sportsdzen.ru##div[class*="body_branding"] > div[style*="background-color:"]
+dzen.ru,sportsdzen.ru##div[class*="body_branding"]:style(background: inherit !important)
 a28830 3
 tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.uz##html.modal_open .fullscreen-notification__overrideModal
 tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.uz##html.modal_open .page:style(overflow-y: auto !important)
 tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.uz##html.modal_open:style(margin-right: unset !important)
+d29094 1
+a29094 1
+dzen.ru,sportsdzen.ru##+js(abort-on-property-read, Object.prototype.initAdRefreshment)
 d29295 1
 a29295 1
 anifap.com,anifap.xyz,diplomsrazu.ru,igrozoom.ru,pro-books.ru,ru-minecraft.ru,softomania.net,vip-mods.ru,warezok.net,windows-driver.com,windows-driver.net,windows-program.com##+js(nano-setInterval-booster, timer)
