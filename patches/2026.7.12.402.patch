@@ -1,10 +1,14 @@
-diff name:ruadlist lines:182 checksum:2419ea68c7
+diff name:ruadlist lines:208 checksum:3c1939dd10
 d4 2
 a5 2
-! Last modified: Thu, 16 Jul 2026 06:27:18 +0000
-! Diff-Path: ../patches/2026.7.16.387.patch#ruadlist
+! Last modified: Thu, 16 Jul 2026 11:49:16 +0000
+! Diff-Path: ../patches/2026.7.16.709.patch#ruadlist
+a774 1
+||betamountwo.com^$third-party
 a3451 1
 ||leproletsu.link^$third-party
+a5315 1
+||roomgome.com^$third-party
 a7839 1
 .json?unique=$third-party,xmlhttprequest
 a8063 2
@@ -68,10 +72,13 @@ apostrophe.ua,bitcryptonews.ru,info24.ru,news.ru,ogolosha.ua,turizm.ru##.bnr
 d16066 1
 a16066 1
 forum.finance.ua,moscow-post.com,oc.kg##.bottom_banner
+d16173 1
 a16510 1
 moviestape.lat##.dle_b_branding
 a16797 1
 grad.ua##.googleBnr
+a16951 1
+zorox.sex##.hsd
 a17344 1
 speedtest.ru##.market-message
 d17735 1
@@ -102,9 +109,17 @@ habr.com##.tm-articles-list__after-article [class*="special "]
 d19014 2
 a19017 1
 dyvys.info##.widget-poster
+a19345 1
+shuba.life##[class^="c-product-"]
 d19380 1
 a19380 1
 apostrophe.ua,realist.online,zn.ua##[data-action="banners"]
+d19395 1
+a19395 1
+shuba.life#?#[data-article] > .c-section:-abp-has([class^="c-product-"])
+d19493 1
+a19493 1
+shuba.life##[data-v-app] button[tabindex]
 a20650 1
 ts.kg##body > .hidden-xs
 a20662 1
@@ -150,6 +165,7 @@ a25442 1
 d26513 1
 a26536 1
 @@||oc.kg/js/videojs.ga.js|$script,~third-party
+d26739 2
 d27549 1
 d28554 1
 a28554 1
@@ -172,12 +188,22 @@ tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.uz##html.modal_open:style(margi
 d29094 1
 a29094 1
 dzen.ru,sportsdzen.ru##+js(abort-on-property-read, Object.prototype.initAdRefreshment)
+d29193 1
 d29295 1
 a29295 1
 anifap.com,anifap.xyz,diplomsrazu.ru,igrozoom.ru,pro-books.ru,ru-minecraft.ru,softomania.net,vip-mods.ru,warezok.net,windows-driver.com,windows-driver.net,windows-program.com##+js(nano-setInterval-booster, timer)
 a29342 1
 mem-hub.ru##+js(prevent-addEventListener, DOMContentLoaded, /adBlocks|adObserver|appPromoModal/)
+d29389 1
+a29389 1
+dtf.ru,vc.ru##+js(set-attr, .comment-media .andropov-video video, loop, true)
+d29393 1
+a29490 1
+dtf.ru,vc.ru##+js(set-local-storage-item, video-autoplay, false)
+d29508 1
+d29517 1
 a29694 1
 ||oc.kg/background/*.mp4$media,redirect=noop-0.1s.mp3
 a29708 1
 ||ts.kg/static/*.|$media,redirect=noop-0.1s.mp3
+d29897 1

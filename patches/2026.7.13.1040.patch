@@ -1,8 +1,12 @@
-diff name:ruadlist lines:87 checksum:2419ea68c7
+diff name:ruadlist lines:113 checksum:3c1939dd10
 d4 2
 a5 2
-! Last modified: Thu, 16 Jul 2026 06:27:18 +0000
-! Diff-Path: ../patches/2026.7.16.387.patch#ruadlist
+! Last modified: Thu, 16 Jul 2026 11:49:16 +0000
+! Diff-Path: ../patches/2026.7.16.709.patch#ruadlist
+a774 1
+||betamountwo.com^$third-party
+a5316 1
+||roomgome.com^$third-party
 a8065 2
 /files/series/*-RU.mp4|$third-party,media
 /files/series/*bet.mp4|$third-party,media
@@ -27,10 +31,13 @@ d15006 1
 d16031 1
 a16031 1
 apostrophe.ua,bitcryptonews.ru,info24.ru,news.ru,ogolosha.ua,turizm.ru##.bnr
+d16190 1
 a16527 1
 moviestape.lat##.dle_b_branding
 a16814 1
 grad.ua##.googleBnr
+a16968 1
+zorox.sex##.hsd
 a17361 1
 speedtest.ru##.market-message
 d17753 1
@@ -48,9 +55,17 @@ a18174 1
 root-nation.com##.rn-review-bg-click
 a19037 1
 dyvys.info##.widget-poster
+a19365 1
+shuba.life##[class^="c-product-"]
 d19400 1
 a19400 1
 apostrophe.ua,realist.online,zn.ua##[data-action="banners"]
+d19415 1
+a19415 1
+shuba.life#?#[data-article] > .c-section:-abp-has([class^="c-product-"])
+d19513 1
+a19513 1
+shuba.life##[data-v-app] button[tabindex]
 d21918 1
 a22307 1
 dyvys.info#?#section.page-section:-abp-has(> .wrap > div > script)
@@ -71,6 +86,7 @@ a24132 1
 dzen.ru,sportsdzen.ru##a[href*="://t.mail.ru/redir/"]
 a25468 1
 ||samzalupa.link^$third-party,media
+d26765 2
 d27575 1
 d28703 2
 a28704 2
@@ -84,5 +100,15 @@ dzen.ru,sportsdzen.ru##div[class*="body_branding"]:style(background: inherit !im
 d29124 1
 a29124 1
 dzen.ru,sportsdzen.ru##+js(abort-on-property-read, Object.prototype.initAdRefreshment)
+d29223 1
 a29372 1
 mem-hub.ru##+js(prevent-addEventListener, DOMContentLoaded, /adBlocks|adObserver|appPromoModal/)
+d29419 1
+a29419 1
+dtf.ru,vc.ru##+js(set-attr, .comment-media .andropov-video video, loop, true)
+d29423 1
+a29520 1
+dtf.ru,vc.ru##+js(set-local-storage-item, video-autoplay, false)
+d29538 1
+d29547 1
+d29929 1
