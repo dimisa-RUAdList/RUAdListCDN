@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 16 Jul 2026 11:49:16 +0000
-! Diff-Path: ../patches/2026.7.16.709.patch#ruadlist
+! Last modified: Thu, 16 Jul 2026 16:36:40 +0000
+! Diff-Path: ../patches/2026.7.16.996.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -3314,6 +3314,7 @@
 ||koreshblock.ru^$third-party
 ||kornistvol.ru^$third-party
 ||kost.tv^$third-party
+||koverdynya.link^$third-party
 ||koviovius.com^
 ||kpnqp847j4.ru^$third-party
 ||kpqnj.top^$third-party
@@ -7888,6 +7889,7 @@ _verified.php?code=*&server=runetki.com
 .trafficdok.com^
 .trafficlide.com^
 .txt?fre=$third-party,xmlhttprequest
+.txt?unique=$third-party,xmlhttprequest
 .viptizer.
 .wasm|$third-party,xmlhttprequest,domain=amt-games.com|~dj19uo012yu4h.cloudfront.net|~lite.boxshot.com|~rbwtech.net
 .xml?v=*&external_subid=$xmlhttprequest
@@ -28799,7 +28801,7 @@ dzen.ru,sportsdzen.ru##div[class*="body_branding"] > div[style*="background-colo
 dzen.ru,sportsdzen.ru##div[class*="body_branding"]:style(background: inherit !important)
 dzen.ru##div[class*="new"] [class$="__rubricator"] + div[class*=" "] > div:only-child
 dzen.ru##div[class^="news"] [class*="skeleton"]:style(background-color: transparent !important)
-dzen.ru,sportsdzen.ru##div[class^="news-"][style="margin-top: 0px; height: calc(100% - 0px);"]
+dzen.ru,sportsdzen.ru##div[class^="news-"][style^="margin-top: 0px; height: calc(100% "][style$=" 0px);"]
 dzen.ru##div[class^="news-site-"][class*="-desktop-"]:style(background-color: transparent !important)
 dzen.ru,sportsdzen.ru##div[class^="news-site-"][class*="skeleton"]:style(background-color: transparent !important)
 dzen.ru##div[class^="news-top-stories-"][class$="other_extra"] ~ div:not([class^="news-top-stories-"][class$="other_extra"])
@@ -29971,6 +29973,7 @@ gazeta.press,gazeta.ru,lenta.ru,secretmag.ru,wmj.ru##iframe[src^="https://vp.ram
 !#if env_mv3
 payment.mts.ru###__next > div[id^="adfox_"]:not(:empty):style(display: block !important)
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib###logo:style(min-height: 100px !important)
+$script,responseheader=x-yandex-req-id,domain=dzen.ru|sportsdzen.ru
 afisha.ru,autorambler.ru,championat.com,championat.ru,eda.ru,gazeta.press,gazeta.ru,lenta.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,rambler.ru,wmj.ru##+js(abort-current-inline-script, dispatchEvent, zoomdecorate)
 dtf.ru##+js(addEventListener-defuser, click, '', elements, a[href^="/"][data-router-link])
 e.mail.ru##+js(no-setTimeout-if, '()=>n()', 50)
