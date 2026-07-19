@@ -1,8 +1,8 @@
-diff name:ruadlist lines:97 checksum:83b39cf28b
+diff name:ruadlist lines:102 checksum:427e9d43e8
 d4 2
 a5 2
-! Last modified: Sun, 19 Jul 2026 13:45:35 +0000
-! Diff-Path: ../patches/2026.7.19.825.patch#ruadlist
+! Last modified: Sun, 19 Jul 2026 18:04:56 +0000
+! Diff-Path: ../patches/2026.7.19.1084.patch#ruadlist
 a942 1
 ||brodownload*s.com^$third-party
 a2512 1
@@ -17,6 +17,8 @@ a7890 1
 .txt?unique=$third-party,xmlhttprequest
 a8067 1
 /files/series/*).mp4|$third-party,media
+a8635 1
+link##[data-testid="player-title"] p.typography
 a9111 1
 ##a[href^="https://yandex.ru/project/browser/bonus/multioffer/affiliate_"]
 a9118 1
@@ -91,6 +93,9 @@ evribiont.xyz#@#.AdSense
 d28802 1
 a28802 1
 dzen.ru,sportsdzen.ru##div[class^="news-"][style^="margin-top: 0px; height: calc(100% "][style$=" 0px);"]
+a28863 2
+mail.yandex.by,mail.yandex.com,mail.yandex.kz,mail.yandex.ru,mail.yandex.uz##body[style*="padding-right:"][style*="15px"]:style(padding-right: 0 !important)
+mail.yandex.by,mail.yandex.com,mail.yandex.kz,mail.yandex.ru,mail.yandex.uz##html[style*="padding-right:"][style*="15px"]:style(padding-right: 0 !important)
 d29393 1
 a29393 1
 evribiont.xyz##+js(prevent-setTimeout, adTestElement)

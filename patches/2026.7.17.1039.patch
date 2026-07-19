@@ -1,8 +1,8 @@
-diff name:ruadlist lines:60 checksum:83b39cf28b
+diff name:ruadlist lines:65 checksum:427e9d43e8
 d4 2
 a5 2
-! Last modified: Sun, 19 Jul 2026 13:45:35 +0000
-! Diff-Path: ../patches/2026.7.19.825.patch#ruadlist
+! Last modified: Sun, 19 Jul 2026 18:04:56 +0000
+! Diff-Path: ../patches/2026.7.19.1084.patch#ruadlist
 a942 1
 ||brodownload*s.com^$third-party
 a6756 1
@@ -11,6 +11,8 @@ a7845 1
 .link/*/*?fre=$third-party,xmlhttprequest
 a8070 1
 /files/series/*).mp4|$third-party,media
+a8638 1
+link##[data-testid="player-title"] p.typography
 a9114 1
 ##a[href^="https://yandex.ru/project/browser/bonus/multioffer/affiliate_"]
 a9121 1
@@ -59,3 +61,6 @@ a22120 1
 dnl.com.ua,dnl.dn.ua,go64.ru,gubkinskiy.com,infoniac.ru,lipetskmedia.ru,paparazzi.ru,securitylab.ru,todaykhv.ru,trk7.ru##img[src*="/upload/rk/"]
 a24863 1
 ||gnedonartemiy.link^$third-party,media
+a28869 2
+mail.yandex.by,mail.yandex.com,mail.yandex.kz,mail.yandex.ru,mail.yandex.uz##body[style*="padding-right:"][style*="15px"]:style(padding-right: 0 !important)
+mail.yandex.by,mail.yandex.com,mail.yandex.kz,mail.yandex.ru,mail.yandex.uz##html[style*="padding-right:"][style*="15px"]:style(padding-right: 0 !important)

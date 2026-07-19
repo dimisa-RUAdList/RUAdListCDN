@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 19 Jul 2026 13:45:35 +0000
-! Diff-Path: ../patches/2026.7.19.825.patch#ruadlist
+! Last modified: Sun, 19 Jul 2026 18:04:56 +0000
+! Diff-Path: ../patches/2026.7.19.1084.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -8640,6 +8640,7 @@ by,~mail.ru,ru,ua##.banner_box
 ##[data-link*="://ubar-pro"]
 ##[data-membrana-container]
 ##[data-src^="https://news.te.ua/widget/"]
+link##[data-testid="player-title"] p.typography
 ##[data-url*="://installpack.net"]
 ##[href*=".drp.su/"]
 ##[href*="//loadbrowser.ru/"]
@@ -28877,6 +28878,8 @@ yandex.by,yandex.kz,yandex.ru,yandex.uz##.suggest2_align_center[data-bem*="weath
 ! ---
 ! почта
 mail.yandex.by,mail.yandex.com,mail.yandex.kz,mail.yandex.ru,mail.yandex.uz##[class*="ComposeDoneScreen"] *:style(height: auto !important; min-height: 0 !important)
+mail.yandex.by,mail.yandex.com,mail.yandex.kz,mail.yandex.ru,mail.yandex.uz##body[style*="padding-right:"][style*="15px"]:style(padding-right: 0 !important)
+mail.yandex.by,mail.yandex.com,mail.yandex.kz,mail.yandex.ru,mail.yandex.uz##html[style*="padding-right:"][style*="15px"]:style(padding-right: 0 !important)
 ! ---
 ! тв
 tv.yandex.by,tv.yandex.kz,tv.yandex.ru,tv.yandex.uz###mount main > div[class^="content__"] > .content__main ~ div[class*="content__"] > *
