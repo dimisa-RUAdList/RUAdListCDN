@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 20 Jul 2026 03:56:07 +0000
-! Diff-Path: ../patches/2026.7.20.236.patch#ruadlist
+! Last modified: Mon, 20 Jul 2026 11:09:40 +0000
+! Diff-Path: ../patches/2026.7.20.669.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -988,6 +988,7 @@
 ||bunkr.top^$third-party
 ||burburem.ru^$third-party
 ||burningpushing.info^$third-party
+||burunduksha.link^$third-party
 ||businesq.men^$third-party
 ||busncuy4dmiuurl.ru^
 ||bussters.com^
@@ -5989,7 +5990,6 @@
 ||tarry.ru^$third-party
 ||tauptoat.com^
 ||tauruallop.download^$third-party
-||tazaromikaz.link^$third-party
 ||tb.mybb.ru^$third-party
 ||tbizw.top^$third-party
 ||tbn.ru/bb.cgi?
@@ -8640,7 +8640,6 @@ by,~mail.ru,ru,ua##.banner_box
 ##[data-link*="://ubar-pro"]
 ##[data-membrana-container]
 ##[data-src^="https://news.te.ua/widget/"]
-link##[data-testid="player-title"] p.typography
 ##[data-url*="://installpack.net"]
 ##[href*=".drp.su/"]
 ##[href*="//loadbrowser.ru/"]
@@ -19557,6 +19556,8 @@ dotaguide.ru##[href*="://dotaguide.ru/go/"]
 kg.ua##[href*="://flaerok.ua"]
 anistar.org,astar.bz,online-star.org,online-stars.org##[href*="://r.advg.agency/"]
 ogemorroe.com##[href*="=ogemorroe.com"]
+vk.com,vk.ru##[href*="?erid="][target="_blank"]
+vk.com,vk.ru##[href*="Ferid%"][target="_blank"]
 local.com.ua##[href*="local.com.ua/banner"]
 tnt-premier.life##[href*="mclk.ru"]
 podelki-doma.ru##[href*="ohnet.ru"]
@@ -25640,6 +25641,7 @@ zarulem.ws##td[style^="text-align:center;width:50%"]
 ||tanygin.me/tmp/
 ||taverkegaard.com^$third-party
 ||taxi-tourister.ru^$third-party
+||tazaromikaz.link^$third-party,media
 ||tdmplus.ru^$third-party
 ||tds-banner.do.am^
 ||teaone.net^$third-party
