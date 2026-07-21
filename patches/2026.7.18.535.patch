@@ -1,8 +1,8 @@
-diff name:ruadlist lines:163 checksum:2e0f521eed
+diff name:ruadlist lines:180 checksum:cbc0d1301a
 d4 2
 a5 2
-! Last modified: Tue, 21 Jul 2026 03:35:43 +0000
-! Diff-Path: ../patches/2026.7.21.215.patch#ruadlist
+! Last modified: Tue, 21 Jul 2026 09:33:25 +0000
+! Diff-Path: ../patches/2026.7.21.573.patch#ruadlist
 a942 1
 ||brodownload*s.com^$third-party
 a989 1
@@ -12,8 +12,12 @@ a3345 1
 a5975 1
 ||taramashka.link^$third-party
 d5991 1
+a6732 1
+||vk.ru/rtrg$third-party
 a6756 1
 ||vne56wxlp.shop^$third-party
+a7845 1
+.link/*/*?cF4YuD=$third-party,xmlhttprequest
 a9116 1
 ##a[href^="https://yandex.ru/project/browser/bonus/multioffer/affiliate_"]
 a9868 1
@@ -120,9 +124,19 @@ a25628 1
 ||superklizma.link^$third-party,media
 a25639 1
 ||tazaromikaz.link^$third-party,media
+d26772 1
 d28078 1
 a28078 1
 lenta.news,lenta.ru##.longgrid-list__box:style(justify-content: unset !important)
+d28773 1
+a28773 1
+dzen.ru##div[style*="12.3626373625"]
+a28793 1
+dzen.ru##div[class^="content--article-right-ads_"]
+d28805 2
+a28806 2
+dzen.ru,sportsdzen.ru##[aria-label*="ница"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id]
+dzen.ru,sportsdzen.ru##[aria-label*="ница"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not([class*="-rubric-"]):not(:last-child):not([aria-label])
 a28877 2
 mail.yandex.by,mail.yandex.com,mail.yandex.kz,mail.yandex.ru,mail.yandex.uz##body[style*="padding-right:"][style*="15px"]:style(padding-right: 0 !important)
 mail.yandex.by,mail.yandex.com,mail.yandex.kz,mail.yandex.ru,mail.yandex.uz##html[style*="padding-right:"][style*="15px"]:style(padding-right: 0 !important)
@@ -152,6 +166,9 @@ lenta.news,lenta.ru##.topic-footer > div[class^="box-"][class$="-video"]:remove(
 d29606 1
 a29606 1
 lenta.news,lenta.ru##.vk-video-popup:remove()
+d29613 1
+a29613 1
+dzen.ru##:matches-path(/\/a/) article:matches-attr(/./=/promo-card|skeleton/)
 d29639 1
 a29639 1
 championat.com,championat.ru,lenta.news,lenta.ru##[class*="scroll-to-site"]:remove()

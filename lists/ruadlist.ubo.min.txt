@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 21 Jul 2026 03:35:43 +0000
-! Diff-Path: ../patches/2026.7.21.215.patch#ruadlist
+! Last modified: Tue, 21 Jul 2026 09:33:25 +0000
+! Diff-Path: ../patches/2026.7.21.573.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -6733,6 +6733,7 @@
 ||vjcbm.com^$third-party
 ||vjqvcl.com^$third-party
 ||vk.com/rtrg$third-party
+||vk.ru/rtrg$third-party
 ||vk242.ru^$third-party
 ||vkcdn.ru^$third-party,domain=~vk.company
 ||vkkpv.com^$third-party
@@ -7847,6 +7848,7 @@ _verified.php?code=*&server=runetki.com
 .info/next.html?$third-party,script
 .json?fre=$third-party,xmlhttprequest
 .json?unique=$third-party,xmlhttprequest
+.link/*/*?cF4YuD=$third-party,xmlhttprequest
 .link/*/*?fre=$third-party,xmlhttprequest
 .mail.ru/pixel/$image
 .marketgid.com^$domain=~marketgid.com
@@ -26777,7 +26779,6 @@ xn--112-5cd3baof9c5c.xn--p1ai#@#.wrapad
 @@||vk.com/ads_office_api.php?act=fetch_notices|$xmlhttprequest,domain=biz.production.vklanding.ru|vk.com
 @@||vk.com/ads_rotate.php?$xmlhttprequest,domain=biz.production.vklanding.ru
 @@||vk.com/js/api/openapi.js$domain=~winstation.ru
-@@||vk.com/rtrg$image,domain=24cyber.ru
 @@||vkbog.com/account/advertiser/check|$xmlhttprequest,domain=vkbog.com
 @@||vodyanoy.com.ua^*700_200.jpg|$domain=vodyanoy.com.ua
 @@||voenhronika.ru/banners/*.png|$domain=voenhronika.ru
@@ -28778,7 +28779,7 @@ dzen.ru##div[class*="dzen-desktop--"][class*="__ad-"]
 dzen.ru##div[class*="dzen-desktop--top-sidebar-desktop-ad__root"]
 dzen.ru##div[class^="dzen-desktop--content-app__content-"] > div > div:first-child > div:first-child + div:style(opacity: 0 !important; pointer-events: none !important)
 dzen.ru##div[id*="splashscreen"]
-dzen.ru##div[style*="12.3626373626"]
+dzen.ru##div[style*="12.3626373625"]
 dzen.ru##div[style*="important"] div[class*="__main"]
 ! исправление ошибок и косяков оригинальной вёрстки
 dzen.ru###SECOND_CHUNK_APP_CONTAINER_MicroRoot div[class^="dzen-layout--desktop-page-layout__left"]:style(height: calc(91vh - var(--desktopPageLayoutHeaderHeight)) !important)
@@ -28799,6 +28800,7 @@ dzen.ru##div[class*="bannerMain"]
 dzen.ru##div[class*="dzenProBanner"]
 dzen.ru##div[class*="multiEmbedMode"]
 dzen.ru##div[class^="content--article-bottom-single-"]
+dzen.ru##div[class^="content--article-right-ads_"]
 dzen.ru##div[id$="-rtb"]
 dzen.ru##div[id^="article-showcase-"]
 ! новости
@@ -28810,8 +28812,8 @@ dzen.ru##.news-rubric-desktop__news > section > div > div[id]
 dzen.ru##.news-secondary-layout-column__secondary div[id]
 dzen.ru##.news-sticky__inner > div > div[id]
 dzen.ru##.news-story-page div[id] > div:not([id]) > div[id]
-dzen.ru,sportsdzen.ru##[aria-label*="PА"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id]
-dzen.ru,sportsdzen.ru##[aria-label*="PА"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not([class*="-rubric-"]):not(:last-child):not([aria-label])
+dzen.ru,sportsdzen.ru##[aria-label*="ница"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id]
+dzen.ru,sportsdzen.ru##[aria-label*="ница"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not([class*="-rubric-"]):not(:last-child):not([aria-label])
 dzen.ru##[aria-label] div[id][class*="-desktop__ad-"]
 dzen.ru##div[class*="AdvertTsar"]
 dzen.ru##div[class*="BrandingAdvertLayoutColumn-"]
@@ -29619,7 +29621,7 @@ vk.com,vk.ru##.wall_module > div[id]:first-child > :matches-prop(innerHTML="/for
 24parik.*,parik24.*##+js(window-close-if, /adtag|creative_id/)
 dtf.ru,vc.ru##:matches-path(-erid-) .block-special-button
 dtf.ru,vc.ru##:matches-path(-erid-) a[href*="go.vc.ru"]:style(pointer-events: none !important; color: inherit !important)
-dzen.ru##:matches-path(/\/a/) article:matches-attr(/./=/promo-card/)
+dzen.ru##:matches-path(/\/a/) article:matches-attr(/./=/promo-card|skeleton/)
 dzen.ru##:matches-path(/\/a/) div:matches-attr(/[a-z0-9]/=article-bottom-block) > [class] ~ div:not([class]):not([id])
 dzen.ru##:matches-path(/\/a/) div[class*="Doc2Doc"]
 dzen.ru##:matches-path(/\/a/) div[style="opacity: 1;"]

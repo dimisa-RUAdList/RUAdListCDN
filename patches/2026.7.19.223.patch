@@ -1,8 +1,8 @@
-diff name:ruadlist lines:123 checksum:2e0f521eed
+diff name:ruadlist lines:140 checksum:cbc0d1301a
 d4 2
 a5 2
-! Last modified: Tue, 21 Jul 2026 03:35:43 +0000
-! Diff-Path: ../patches/2026.7.21.215.patch#ruadlist
+! Last modified: Tue, 21 Jul 2026 09:33:25 +0000
+! Diff-Path: ../patches/2026.7.21.573.patch#ruadlist
 a990 1
 ||burunduksha.link^$third-party
 a3346 1
@@ -10,6 +10,10 @@ a3346 1
 a5976 1
 ||taramashka.link^$third-party
 d5992 1
+a6733 1
+||vk.ru/rtrg$third-party
+a7847 1
+.link/*/*?cF4YuD=$third-party,xmlhttprequest
 d16097 1
 a19558 2
 vk.com,vk.ru##[href*="?erid="][target="_blank"]
@@ -80,9 +84,19 @@ a25630 1
 ||superklizma.link^$third-party,media
 a25641 1
 ||tazaromikaz.link^$third-party,media
+d26774 1
 d28080 1
 a28080 1
 lenta.news,lenta.ru##.longgrid-list__box:style(justify-content: unset !important)
+d28775 1
+a28775 1
+dzen.ru##div[style*="12.3626373625"]
+a28795 1
+dzen.ru##div[class^="content--article-right-ads_"]
+d28807 2
+a28808 2
+dzen.ru,sportsdzen.ru##[aria-label*="ница"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id]
+dzen.ru,sportsdzen.ru##[aria-label*="ница"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not([class*="-rubric-"]):not(:last-child):not([aria-label])
 a28879 2
 mail.yandex.by,mail.yandex.com,mail.yandex.kz,mail.yandex.ru,mail.yandex.uz##body[style*="padding-right:"][style*="15px"]:style(padding-right: 0 !important)
 mail.yandex.by,mail.yandex.com,mail.yandex.kz,mail.yandex.ru,mail.yandex.uz##html[style*="padding-right:"][style*="15px"]:style(padding-right: 0 !important)
@@ -112,6 +126,9 @@ lenta.news,lenta.ru##.topic-footer > div[class^="box-"][class$="-video"]:remove(
 d29608 1
 a29608 1
 lenta.news,lenta.ru##.vk-video-popup:remove()
+d29615 1
+a29615 1
+dzen.ru##:matches-path(/\/a/) article:matches-attr(/./=/promo-card|skeleton/)
 d29641 1
 a29641 1
 championat.com,championat.ru,lenta.news,lenta.ru##[class*="scroll-to-site"]:remove()

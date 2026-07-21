@@ -1,8 +1,8 @@
-diff name:ruadlist lines:121 checksum:2e0f521eed
+diff name:ruadlist lines:138 checksum:cbc0d1301a
 d4 2
 a5 2
-! Last modified: Tue, 21 Jul 2026 03:35:43 +0000
-! Diff-Path: ../patches/2026.7.21.215.patch#ruadlist
+! Last modified: Tue, 21 Jul 2026 09:33:25 +0000
+! Diff-Path: ../patches/2026.7.21.573.patch#ruadlist
 a990 1
 ||burunduksha.link^$third-party
 a3346 1
@@ -10,6 +10,10 @@ a3346 1
 a5976 1
 ||taramashka.link^$third-party
 d5992 1
+a6733 1
+||vk.ru/rtrg$third-party
+a7847 1
+.link/*/*?cF4YuD=$third-party,xmlhttprequest
 d8643 1
 d16098 1
 a19559 2
@@ -81,9 +85,19 @@ a25631 1
 ||superklizma.link^$third-party,media
 a25642 1
 ||tazaromikaz.link^$third-party,media
+d26775 1
 d28081 1
 a28081 1
 lenta.news,lenta.ru##.longgrid-list__box:style(justify-content: unset !important)
+d28776 1
+a28776 1
+dzen.ru##div[style*="12.3626373625"]
+a28796 1
+dzen.ru##div[class^="content--article-right-ads_"]
+d28808 2
+a28809 2
+dzen.ru,sportsdzen.ru##[aria-label*="ница"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id]
+dzen.ru,sportsdzen.ru##[aria-label*="ница"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not([class*="-rubric-"]):not(:last-child):not([aria-label])
 d28955 1
 a28955 1
 gagadget.com,gazeta.press,gazeta.ru,lenta.news,lenta.ru,rambler.ru##body:not(#id):style(overflow-y: auto !important)
@@ -110,6 +124,9 @@ lenta.news,lenta.ru##.topic-footer > div[class^="box-"][class$="-video"]:remove(
 d29611 1
 a29611 1
 lenta.news,lenta.ru##.vk-video-popup:remove()
+d29618 1
+a29618 1
+dzen.ru##:matches-path(/\/a/) article:matches-attr(/./=/promo-card|skeleton/)
 d29644 1
 a29644 1
 championat.com,championat.ru,lenta.news,lenta.ru##[class*="scroll-to-site"]:remove()

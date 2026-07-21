@@ -1,8 +1,8 @@
-diff name:ruadlist lines:179 checksum:2e0f521eed
+diff name:ruadlist lines:195 checksum:cbc0d1301a
 d4 2
 a5 2
-! Last modified: Tue, 21 Jul 2026 03:35:43 +0000
-! Diff-Path: ../patches/2026.7.21.215.patch#ruadlist
+! Last modified: Tue, 21 Jul 2026 09:33:25 +0000
+! Diff-Path: ../patches/2026.7.21.573.patch#ruadlist
 a942 1
 ||brodownload*s.com^$third-party
 a989 1
@@ -12,9 +12,12 @@ a3345 1
 a5975 1
 ||taramashka.link^$third-party
 d5991 1
+a6732 1
+||vk.ru/rtrg$third-party
 a6756 1
 ||vne56wxlp.shop^$third-party
-a7845 1
+a7845 2
+.link/*/*?cF4YuD=$third-party,xmlhttprequest
 .link/*/*?fre=$third-party,xmlhttprequest
 a8070 1
 /files/series/*).mp4|$third-party,media
@@ -136,9 +139,19 @@ a25620 1
 ||superklizma.link^$third-party,media
 a25631 1
 ||tazaromikaz.link^$third-party,media
+d26764 1
 d28070 1
 a28070 1
 lenta.news,lenta.ru##.longgrid-list__box:style(justify-content: unset !important)
+d28765 1
+a28765 1
+dzen.ru##div[style*="12.3626373625"]
+a28785 1
+dzen.ru##div[class^="content--article-right-ads_"]
+d28797 2
+a28798 2
+dzen.ru,sportsdzen.ru##[aria-label*="ница"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id]
+dzen.ru,sportsdzen.ru##[aria-label*="ница"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not([class*="-rubric-"]):not(:last-child):not([aria-label])
 a28869 2
 mail.yandex.by,mail.yandex.com,mail.yandex.kz,mail.yandex.ru,mail.yandex.uz##body[style*="padding-right:"][style*="15px"]:style(padding-right: 0 !important)
 mail.yandex.by,mail.yandex.com,mail.yandex.kz,mail.yandex.ru,mail.yandex.uz##html[style*="padding-right:"][style*="15px"]:style(padding-right: 0 !important)
@@ -168,6 +181,9 @@ lenta.news,lenta.ru##.topic-footer > div[class^="box-"][class$="-video"]:remove(
 d29598 1
 a29598 1
 lenta.news,lenta.ru##.vk-video-popup:remove()
+d29605 1
+a29605 1
+dzen.ru##:matches-path(/\/a/) article:matches-attr(/./=/promo-card|skeleton/)
 d29631 1
 a29631 1
 championat.com,championat.ru,lenta.news,lenta.ru##[class*="scroll-to-site"]:remove()
