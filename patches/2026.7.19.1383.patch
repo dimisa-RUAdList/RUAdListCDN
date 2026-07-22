@@ -1,8 +1,8 @@
-diff name:ruadlist lines:166 checksum:7c8905d722
+diff name:ruadlist lines:182 checksum:07b7825913
 d4 2
 a5 2
-! Last modified: Wed, 22 Jul 2026 11:58:21 +0000
-! Diff-Path: ../patches/2026.7.22.718.patch#ruadlist
+! Last modified: Wed, 22 Jul 2026 16:38:53 +0000
+! Diff-Path: ../patches/2026.7.22.998.patch#ruadlist
 a990 1
 ||burunduksha.link^$third-party
 a3331 1
@@ -12,6 +12,8 @@ a3346 1
 a5976 1
 ||taramashka.link^$third-party
 d5992 1
+a6608 1
+||vertiguzha.link^$third-party
 a6733 1
 ||vk.ru/rtrg$third-party
 a7402 1
@@ -24,6 +26,8 @@ a12202 1
 ||kritika24.ru/js/sochbot-chat.js
 a13659 1
 ||vk.ru/*/left_menu_invite_promo_menu_item_onboarding.
+a13811 1
+||yap.ru/html/static/brand-
 d16098 1
 a18262 1
 youla.ru##.sc-bzywxr
@@ -52,6 +56,8 @@ a22977 1
 ~deti.mail.ru,~e.mail.ru,mail.ru,sportmail.ru##div[data-tooltip-root]
 a23105 1
 deti.mail.ru##div[data-tooltip-root][style*="fixed"]
+a23185 1
+||static.dzeninfra.ru/s3/zen-apps/*-browser-switch-trap.
 d23478 1
 a23478 1
 lenta.news,lenta.ru#?#._longgrid:-abp-has(> [class*="info"] > [class*="_ad-title"])
@@ -115,6 +121,10 @@ youla.ru##[data-test-component="Notice"]
 d28081 1
 a28081 1
 lenta.news,lenta.ru##.longgrid-list__box:style(justify-content: unset !important)
+a28726 1
+ya.ru###feed-ssr
+a28774 1
+dzen.ru##div[class^="dzen-desktop--modal__rootElement-"]
 d28776 1
 a28776 1
 dzen.ru##div[style*="12.3626373625"]
@@ -126,6 +136,7 @@ d28808 2
 a28809 2
 dzen.ru,sportsdzen.ru##[aria-label*="ница"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id]
 dzen.ru,sportsdzen.ru##[aria-label*="ница"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not([class*="-rubric-"]):not(:last-child):not([aria-label])
+d28929 1
 d28955 1
 a28955 1
 gagadget.com,gazeta.press,gazeta.ru,lenta.news,lenta.ru,rambler.ru##body:not(#id):style(overflow-y: auto !important)
@@ -142,6 +153,8 @@ lenta.news,lenta.ru##+js(remove-attr, class, .js-video-box__container)
 d29548 1
 a29548 1
 championat.com,championat.ru,ferra.ru,gazeta.press,gazeta.ru,indicator.ru,lenta.news,lenta.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,secretmag.ru,wmj.ru##+js(set-cookie, unity_pause_sso, 1, '', reload, 1)
+a29550 1
+dzen.ru##+js(set-local-storage-item, browser-switch-trap-ts, {})
 d29590 1
 a29590 1
 lenta.news,lenta.ru##.layout__content > .js-topic:has(.topic-header__erid):remove()
@@ -158,6 +171,9 @@ dzen.ru##:matches-path(/\/a/) article:matches-attr(/./=/promo-card|skeleton/)
 d29644 1
 a29644 1
 championat.com,championat.ru,lenta.news,lenta.ru##[class*="scroll-to-site"]:remove()
+d29780 1
+a29780 1
+||yastatic.net/s3/home-static/feeds$third-party
 d29974 3
 a29976 3
 gazeta.press,gazeta.ru,lenta.news,lenta.ru,secretmag.ru,wmj.ru##iframe[src^="https://vp.rambler.ru/player/"] ~ svg

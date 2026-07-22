@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 22 Jul 2026 11:58:21 +0000
-! Diff-Path: ../patches/2026.7.22.718.patch#ruadlist
+! Last modified: Wed, 22 Jul 2026 16:38:53 +0000
+! Diff-Path: ../patches/2026.7.22.998.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -6609,6 +6609,7 @@
 ||vergilimus.com^$third-party
 ||verhedttot.pro^$third-party
 ||veroui.com^
+||vertiguzha.link^$third-party
 ||vesiboe.ru^$third-party
 ||vesjolye-vedrussy.ru^$third-party
 ||vesofich.ru^$third-party
@@ -13814,6 +13815,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||yangi-kinolar.ru/vast/$xmlhttprequest
 ||yangteacher.ru/s.png
 ||yangteacher.ru^*.js|$script
+||yap.ru/html/static/brand-
 ||yapantiabp.ru/player/
 ||yapcdnimg.ru/player/
 ||yapfiles.ru/uploads/branddata/
@@ -23189,6 +23191,7 @@ vkplay.ru##div[class*="ArtBannerSkeleton"]
 ||radar.imgsmail.ru^
 ||rs.mail.ru^$domain=~account.mail.ru|~o2.mail.ru
 ||showbiz.mail.ru^$third-party
+||static.dzeninfra.ru/s3/zen-apps/*-browser-switch-trap.
 ||storage.mds.yandex.net/get-canvas-html5/$domain=dzen.ru
 ||t.mail.ru/redir/$popup,domain=~e.mail.ru
 ||top-fwz1.mail.ru^$domain=~account.mail.ru|~o2.mail.ru
@@ -28733,6 +28736,7 @@ www.xcom-shop.ru##html:style(overflow-y: auto !important)
 xsport.ua##.site:style(margin-top: 0 !important)
 ! ---
 ! Yandex
+ya.ru###feed-ssr
 ya.ru###reedhm-rreid
 ya.ru##.document_overflow-scroll_yes:not(.document_new-year-feed-own-scroll_yes) body:style(overflow-y: unset !important)
 ya.ru##.i-mini-bem[style]
@@ -28781,6 +28785,7 @@ dzen.ru##div[class*="dzen-"][class*="-banner-"]
 dzen.ru##div[class*="dzen-desktop--"][class*="__ad-"]
 dzen.ru##div[class*="dzen-desktop--top-sidebar-desktop-ad__root"]
 dzen.ru##div[class^="dzen-desktop--content-app__content-"] > div > div:first-child > div:first-child + div:style(opacity: 0 !important; pointer-events: none !important)
+dzen.ru##div[class^="dzen-desktop--modal__rootElement-"]
 dzen.ru##div[id*="splashscreen"]
 dzen.ru##div[style*="12.3626373625"]
 dzen.ru##div[style*="important"] div[class*="__main"]
@@ -28937,7 +28942,6 @@ ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[data-vnl*="rsya_guarantee"]
 ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##div[class="serp-item RsyaGuarantee"]
 ! ---
 yap.ru,yaplakal.com###footer:style(background: none !important; padding: 0 !important)
-yap.ru,yaplakal.com##body:not(#id):style(background-color: #9ab9a7 !important)
 ! ---
 yk.kz##.top-line
 yk.kz##.top-line + header.main:style(top: auto !important)
@@ -29558,6 +29562,7 @@ kinotv.ru##+js(set-cookie, telegram_popup, Y)
 championat.com,championat.ru,ferra.ru,gazeta.press,gazeta.ru,indicator.ru,lenta.news,lenta.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,secretmag.ru,wmj.ru##+js(set-cookie, unity_pause_sso, 1, '', reload, 1)
 mp3party.net##+js(set-cookie, yandexFull, true)
 sport-express.net,sport-express.ru##+js(set-local-storage-item, __videoboxActive, false)
+dzen.ru##+js(set-local-storage-item, browser-switch-trap-ts, {})
 finuslugi.ru##+js(set-local-storage-item, headerBannerShownAt, 1)
 playground.ru##+js(set-local-storage-item, pg_GPbackVideo, on)
 rg.ru##+js(set-local-storage-item, rekl_modal_shown, {})
@@ -29787,7 +29792,7 @@ ya.ru,yandex.*##.simple-popup__overlay:remove()
 ||video.sports.ru/embed/*autoplay=1$subdocument,removeparam=autoplay
 ||widgets.kinopoisk.ru/discovery/trailer/*&loop=1&autoplay=1$subdocument,domain=www.kinopoisk.ru
 ||yandex.ru/ads/system/context.js$script,redirect=noopjs,domain=tragtorr.in|tragtorr.info
-||yastatic.net/s3/home-static/feeds/$third-party
+||yastatic.net/s3/home-static/feeds$third-party
 ||youtube-nocookie.com/embed/*autoplay=1$subdocument,removeparam=autoplay,domain=weukraine.tv
 ||youtube.com/embed/*autoplay=1$subdocument,removeparam=autoplay,domain=~dtf.ru|~kinoafisha.info|~pikabu.ru|~poolsuite.net|~vc.ru
 ||youtube.com/embed/?enablejsapi=1&origin=*3dnews.*&widgetid=1$subdocument,badfilter,domain=3dnews.ru
