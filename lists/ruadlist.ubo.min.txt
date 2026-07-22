@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 22 Jul 2026 16:38:53 +0000
-! Diff-Path: ../patches/2026.7.22.998.patch#ruadlist
+! Last modified: Wed, 22 Jul 2026 22:12:50 +0000
+! Diff-Path: ../patches/2026.7.22.1332.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -8865,7 +8865,7 @@ by,~mail.ru,ru,ua##.banner_box
 ##a[href*="://gonewfiles.ru/"]
 ##a[href*="://gopremiumsoft.com/"]
 ##a[href*="://gridsiali.com/"]
-com,~hoster.ru,me,net,org,ru##a[href*="://hoster.ru"][target="_blank"]:not(thanks-opennet.ru)
+~hoster.ru##a[href*="://hoster.ru"][target="_blank"]:not(thanks-opennet.ru)
 ##a[href*="://hypmag.ru/search/pereh.php"]
 ##a[href*="://installpack.ru"]
 ##a[href*="://kinobud.site/"]
@@ -9110,7 +9110,7 @@ com,~hoster.ru,me,net,org,ru##a[href*="://hoster.ru"][target="_blank"]:not(thank
 ~dtpchp.ru##a[href^="https://dtpchp.ru/"]
 ~fukaka.ru##a[href^="https://fukaka.ru/"]
 ##a[href^="https://homyanus.com"]
-com,~ishosting.com,me,net,org,ru##a[href^="https://ishosting.com"][target="_blank"]:not(thanks-opennet.ru)
+~ishosting.com##a[href^="https://ishosting.com"][target="_blank"]:not(thanks-opennet.ru)
 ##a[href^="https://kshop"][href*=".com/"]
 ##a[href^="https://kshop"][href*=".pro/"]
 ##a[href^="https://msetup.pro"]
@@ -9122,7 +9122,7 @@ com,~ishosting.com,me,net,org,ru##a[href^="https://ishosting.com"][target="_blan
 ##a[href^="https://wcm"][href*="weborama"][href*="/fcgi-bin/dispatch.fcgi?"]
 ##a[href^="https://www.juicer.io?referrer="]
 ~litres.ru##a[href^="https://www.litres.ru/"][href$="#buy_now_noreg"]
-com,me,net,org,~postgrespro.ru,ru##a[href^="https://www.postgrespro.ru"][target="_blank"]:not(thanks-opennet.ru)
+~postgrespro.ru##a[href^="https://www.postgrespro.ru"][target="_blank"]:not(thanks-opennet.ru)
 ##a[href^="https://yandex.ru/project/browser/bonus/multioffer/affiliate_"]
 ##a[onclick*="/link-fes.ru"]
 ##a[onclick*="https://dzen.ru/news/?favid="]
@@ -21153,6 +21153,7 @@ auto.ru##div[class^="RecommendationsItem__ad-"]
 hromadske.radio#?#div[class^="SidebarNews_"] > article:-abp-has(> div > h3 > [class^="SidebarPreview_promoted_"])
 kanobu.ru#?#div[class^="Sidebar_sidebar_list"] > div[class]:-abp-has(> div > div > span:-abp-contains(Партнерский материал))
 igromania.ru,kanobu.ru##div[class^="TopPageBanner_wrap_"]
+vk.com,vk.ru##div[class^="YandexBrowserBanner"]
 yarnovosti.com##div[class^="_5"]
 day.kyiv.ua##div[class^="_ads-"]
 games.pikabu.ru,t-j.ru##div[class^="_banner_"]
@@ -30011,6 +30012,9 @@ e.mail.ru##+js(set-constant, Object.prototype.hasAdBlock, false)
 e.mail.ru#@#+js(set-constant, Object.prototype.hasAdBlock, null)
 @@||dzen.ru^$generichide
 @@||sportsdzen.ru^$generichide
+com,~hoster.ru,me,net,org,ru##a[href*="://hoster.ru"][target="_blank"]:not(thanks-opennet.ru)
+com,~ishosting.com,me,net,org,ru##a[href^="https://ishosting.com"][target="_blank"]:not(thanks-opennet.ru)
+com,me,net,org,~postgrespro.ru,ru##a[href^="https://www.postgrespro.ru"][target="_blank"]:not(thanks-opennet.ru)
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##body > [style^="height"]
 searchfloor.*##+js(addEventListener-defuser, DOMContentLoaded, isDonatePage)
 ||cdn.viqeo.tv/js/assets/master-*/styles/vn_player.css$stylesheet

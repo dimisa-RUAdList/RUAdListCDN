@@ -1,8 +1,8 @@
-diff name:ruadlist lines:204 checksum:07b7825913
+diff name:ruadlist lines:218 checksum:a0d62c6b37
 d4 2
 a5 2
-! Last modified: Wed, 22 Jul 2026 16:38:53 +0000
-! Diff-Path: ../patches/2026.7.22.998.patch#ruadlist
+! Last modified: Wed, 22 Jul 2026 22:12:50 +0000
+! Diff-Path: ../patches/2026.7.22.1332.patch#ruadlist
 a942 1
 ||brodownload*s.com^$third-party
 a989 1
@@ -22,7 +22,15 @@ a7401 1
 ||zveroboyna.link^$third-party
 a7846 1
 .link/*/*?cF4YuD=$third-party,xmlhttprequest
-a9117 1
+d8860 1
+a8860 1
+~hoster.ru##a[href*="://hoster.ru"][target="_blank"]:not(thanks-opennet.ru)
+d9105 1
+a9105 1
+~ishosting.com##a[href^="https://ishosting.com"][target="_blank"]:not(thanks-opennet.ru)
+d9117 1
+a9117 2
+~postgrespro.ru##a[href^="https://www.postgrespro.ru"][target="_blank"]:not(thanks-opennet.ru)
 ##a[href^="https://yandex.ru/project/browser/bonus/multioffer/affiliate_"]
 a9869 1
 ||ya.ru/bonus/status/catalog?source=$third-party,popup
@@ -56,6 +64,8 @@ a19828 1
 d19944 1
 a19944 1
 777score.ru,animesure.org,football24.ru,games.portal.md,itorrents-igruha.net,itorrents-igruha.org,kino4k.in,kinofanonline.net,music-torrent.com,rg-mechanics.site,softbesplatno.net,texdizain.net,windowspro.ru##a[href*="aHR0c"]
+a21141 1
+vk.com,vk.ru##div[class^="YandexBrowserBanner"]
 d21644 1
 d21681 1
 d22622 1
@@ -203,3 +213,7 @@ gazeta.press,gazeta.ru,lenta.news,lenta.ru,secretmag.ru,wmj.ru##iframe[src^="htt
 ||vp.rambler.ru/player/$csp=media-src 'self',domain=championat.com|championat.ru|lenta.news|lenta.ru|gazeta.press|gazeta.ru|rambler.ru|~vp.rambler.ru|secretmag.ru|wmj.ru
 d29975 3
 d29987 1
+a29995 3
+com,~hoster.ru,me,net,org,ru##a[href*="://hoster.ru"][target="_blank"]:not(thanks-opennet.ru)
+com,~ishosting.com,me,net,org,ru##a[href^="https://ishosting.com"][target="_blank"]:not(thanks-opennet.ru)
+com,me,net,org,~postgrespro.ru,ru##a[href^="https://www.postgrespro.ru"][target="_blank"]:not(thanks-opennet.ru)

@@ -1,12 +1,21 @@
-diff name:ruadlist lines:43 checksum:07b7825913
+diff name:ruadlist lines:58 checksum:a0d62c6b37
 d4 2
 a5 2
-! Last modified: Wed, 22 Jul 2026 16:38:53 +0000
-! Diff-Path: ../patches/2026.7.22.998.patch#ruadlist
+! Last modified: Wed, 22 Jul 2026 22:12:50 +0000
+! Diff-Path: ../patches/2026.7.22.1332.patch#ruadlist
 a3332 1
 ||krasnomaga.link^$third-party
 a6610 1
 ||vertiguzha.link^$third-party
+d8866 1
+a8866 1
+~hoster.ru##a[href*="://hoster.ru"][target="_blank"]:not(thanks-opennet.ru)
+d9111 1
+a9111 1
+~ishosting.com##a[href^="https://ishosting.com"][target="_blank"]:not(thanks-opennet.ru)
+d9123 1
+a9123 1
+~postgrespro.ru##a[href^="https://www.postgrespro.ru"][target="_blank"]:not(thanks-opennet.ru)
 d12205 2
 a12206 1
 ||kritika24.ru/js/sochbot-chat.js
@@ -19,6 +28,8 @@ youla.ru##.sc-bzywxr
 d19838 1
 a19838 1
 5terka.com,animemobi.ru,ap22.ru,app-time.ru,bakemono.ru,bik-info.ru,chemezova.ru,click-or-die.ru,elektrosat.ru,f-igri.ru,gameout.ru,gazetaby.com,gazetaby.info,gazetaby.media,gitjournal.tech,hdclub.ua,inform-ua.info,instrument16.ru,klub-masterov.ru,ladylib.net,libking.ru,moy-instrument.ru,mrtranslate.ru,multfilms.online,ok-tv.org,only-tv.org,osortah.ru,outsidethebox.ms,peugeot-citroen.net,pluggedin.ru,presentation-creation.ru,privatbankrf.ru,remont-avtovaz.ru,rpgdon.com,rusplt.ru,rutracker.ru,samelectric.ru,selomoe.ru,seloved.ru,shkolniku.com,simhost.org,stiralkainfo.ru,technical.city,tivix.co,tmbw.ru,trackitonline.ru,tuttop.com,tv-only.org,uanic.name,uaspectr.com,ustanovkaos.ru,volga.news,vsetop.org,vsetut.su##a[href*="/ad.admitad.com/"]
+a21151 1
+vk.com,vk.ru##div[class^="YandexBrowserBanner"]
 d21654 1
 d21691 1
 d22982 1
@@ -42,3 +53,7 @@ dzen.ru##+js(set-local-storage-item, browser-switch-trap-ts, {})
 d29787 1
 a29787 1
 ||yastatic.net/s3/home-static/feeds$third-party
+a30005 3
+com,~hoster.ru,me,net,org,ru##a[href*="://hoster.ru"][target="_blank"]:not(thanks-opennet.ru)
+com,~ishosting.com,me,net,org,ru##a[href^="https://ishosting.com"][target="_blank"]:not(thanks-opennet.ru)
+com,me,net,org,~postgrespro.ru,ru##a[href^="https://www.postgrespro.ru"][target="_blank"]:not(thanks-opennet.ru)
