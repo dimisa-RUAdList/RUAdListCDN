@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 23 Jul 2026 03:38:37 +0000
-! Diff-Path: ../patches/2026.7.23.218.patch#ruadlist
+! Last modified: Thu, 23 Jul 2026 09:30:11 +0000
+! Diff-Path: ../patches/2026.7.23.570.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -9111,6 +9111,7 @@ by,~mail.ru,ru,ua##.banner_box
 ~fukaka.ru##a[href^="https://fukaka.ru/"]
 ##a[href^="https://homyanus.com"]
 ~ishosting.com##a[href^="https://ishosting.com"][target="_blank"]:not(thanks-opennet.ru)
+~jump-jump.com##a[href^="https://jump-jump.com"]
 ##a[href^="https://kshop"][href*=".com/"]
 ##a[href^="https://kshop"][href*=".pro/"]
 ##a[href^="https://msetup.pro"]
@@ -16187,6 +16188,7 @@ livelib.ru##.btn-buy-holder
 s1pcprogs.ru##.btn-dw-ya
 download-windows.org,softhome.ru##.btn-installpack
 shopping.nv.ua##.btn-product-embed
+lenkino.adult,yalenkino.org##.btn-spt
 mozhaysksg.ru##.btop
 newauthor.ru##.bue-align-c
 ua-football.com##.buk-table
@@ -18959,7 +18961,6 @@ vitaportal.ru##.vHeight300
 batsa.me,express-novosti.ru##.v_adv
 val.ua##.val-external__top-banner
 val.ua##.val-sidebar
-lenkino.adult,yalenkino.org##.vb-spt
 loveradio.ru##.vbanners
 upl.ua##.vbet-mid
 myshave.ru##.vbmenu_popup + div[align="center"]:not([id]):not([class])
@@ -20554,6 +20555,7 @@ babysaratov.ru##a[target="_blank"] > img[width="210"][height="115"]
 f-1.ru,sakh.com##a[target="_blank"] > img[width="240"]
 bvedomosti.ru##a[target="_blank"] > input[type="image"][style]
 yap.ru,yaplakal.com##a[target="_blank"][href*="/click/?http"]
+yap.ru,yaplakal.com##a[target="_blank"][href*="/click/?http"] + br
 sarafannoeradio.org##a[target="_blank"][href*="/webiz/"]
 booksgid.com##a[target="_blank"][href*="besthosting.ua/"]
 sportgoal.net##a[target="_blank"][href*="olimp"]
@@ -22364,7 +22366,7 @@ agro-business.com.ua##section[id^="sp-subcribe-footer"]:not(#sp-subcribe-footer)
 sex-studentki.*##.description > button[style*="color:red;"]
 shiki.one,shikimori.one,shikimori.*##div[class^="spns"]
 shiki.one,shikimori.one,shikimori.*#?#.f-user:-abp-has(> div[class^="spns"])
-sosalkino.tube,sosalkino.*##.spot.after_player
+sosalkino.guru,sosalkino.*##.spot.after_player
 point.md##span > a[href*="/novosti/business/"]
 bhf.io##span > a[href][target="_blank"][rel="nofollow"]
 nvplay.ru##span > i > span[style="font-weight: 400;"]
@@ -24177,6 +24179,7 @@ dzen.ru,sportsdzen.ru##a[href*="://t.mail.ru/redir/"]
 dzen.ru##a[href^="https://trk.mail.ru/"]
 dzen.ru#?#article:-abp-has(> div[data-ad-type])
 dzen.ru#?#div:-abp-has(> .adv-skeleton___main)
+dzen.ru##div[class*="--corner-banner_"]
 dzen.ru##div[class*="-top-ad-"]
 dzen.ru##div[class*="_isRtb-"]
 dzen.ru##div[class*="_rightAdWrapper"]
@@ -28778,7 +28781,6 @@ dzen.ru##a[href*="://yandex.ru/an/count/"] ~ a[href*="://yandex.ru/an/count/"] ~
 dzen.ru##article[data-card-type*="-promo"]
 dzen.ru##body:style(overflow-y: unset !important)
 dzen.ru##div[class*=" dzen-"] [style^="--top-padding:"]
-dzen.ru##div[class*="--corner-banner_"]
 dzen.ru##div[class*="-top-of-the-day-ad"]:style(opacity: 0 !important)
 dzen.ru##div[class*="__bannerContainer"]
 dzen.ru##div[class*="_bannerWrapper-"]
@@ -29743,7 +29745,7 @@ gofrag.ru,videobel.by##video:remove-attr(autoplay)
 3dnews.ru##video[autoplay="autoplay"]:remove-attr(autoplay)
 kino-teatr.ru,kinoafisha.info,kinonews.ru##videotronic-player:remove-attr(data-video-autoplay)
 wildberries.*##+js(set-constant, Object.prototype.prepareBannersList, noopFunc)
-ya.ru,yandex.*##+js(remove-node-text, script, DistributionLinkBro)
+ya.ru,yandex.*##+js(remove-node-text, script, /DistributionLinkBro|-masonry-feed-/)
 ya.ru,yandex.*##.dist-overlay__popup:remove()
 ya.ru,yandex.*##.simple-popup__overlay:remove()
 ||1plus1.video/*/embed/*autoplay=1$subdocument,removeparam=|

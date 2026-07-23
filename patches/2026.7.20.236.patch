@@ -1,8 +1,8 @@
-diff name:ruadlist lines:197 checksum:ca38491c3e
+diff name:ruadlist lines:212 checksum:92e534aaa3
 d4 2
 a5 2
-! Last modified: Thu, 23 Jul 2026 03:38:37 +0000
-! Diff-Path: ../patches/2026.7.23.218.patch#ruadlist
+! Last modified: Thu, 23 Jul 2026 09:30:11 +0000
+! Diff-Path: ../patches/2026.7.23.570.patch#ruadlist
 a990 1
 ||burunduksha.link^$third-party
 a3331 1
@@ -25,8 +25,9 @@ d8862 1
 a8862 1
 ~hoster.ru##a[href*="://hoster.ru"][target="_blank"]:not(thanks-opennet.ru)
 d9107 1
-a9107 1
+a9107 2
 ~ishosting.com##a[href^="https://ishosting.com"][target="_blank"]:not(thanks-opennet.ru)
+~jump-jump.com##a[href^="https://jump-jump.com"]
 d9119 1
 a9119 1
 ~postgrespro.ru##a[href^="https://www.postgrespro.ru"][target="_blank"]:not(thanks-opennet.ru)
@@ -38,18 +39,26 @@ a13659 1
 a13811 1
 ||yap.ru/html/static/brand-
 d16098 1
+a16183 1
+lenkino.adult,yalenkino.org##.btn-spt
 a18262 1
 youla.ru##.sc-bzywxr
+d18955 1
 a19559 2
 vk.com,vk.ru##[href*="?erid="][target="_blank"]
 vk.com,vk.ru##[href*="Ferid%"][target="_blank"]
 d19833 1
 a19833 1
 5terka.com,animemobi.ru,ap22.ru,app-time.ru,bakemono.ru,bik-info.ru,chemezova.ru,click-or-die.ru,elektrosat.ru,f-igri.ru,gameout.ru,gazetaby.com,gazetaby.info,gazetaby.media,gitjournal.tech,hdclub.ua,inform-ua.info,instrument16.ru,klub-masterov.ru,ladylib.net,libking.ru,moy-instrument.ru,mrtranslate.ru,multfilms.online,ok-tv.org,only-tv.org,osortah.ru,outsidethebox.ms,peugeot-citroen.net,pluggedin.ru,presentation-creation.ru,privatbankrf.ru,remont-avtovaz.ru,rpgdon.com,rusplt.ru,rutracker.ru,samelectric.ru,selomoe.ru,seloved.ru,shkolniku.com,simhost.org,stiralkainfo.ru,technical.city,tivix.co,tmbw.ru,trackitonline.ru,tuttop.com,tv-only.org,uanic.name,uaspectr.com,ustanovkaos.ru,volga.news,vsetop.org,vsetut.su##a[href*="/ad.admitad.com/"]
+a20547 1
+yap.ru,yaplakal.com##a[target="_blank"][href*="/click/?http"] + br
 a21146 1
 vk.com,vk.ru##div[class^="YandexBrowserBanner"]
 d21649 1
 d21686 1
+d22359 1
+a22359 1
+sosalkino.guru,sosalkino.*##.spot.after_player
 d22627 1
 a22627 1
 ||pikabu.ru/ajax/*?zx4Fh=$xmlhttprequest
@@ -122,6 +131,8 @@ a23614 1
 ||lenta.*fenwick$xmlhttprequest,domain=lenta.news|lenta.ru
 a23792 1
 sports.ru##.news-layout__branding
+a24168 1
+dzen.ru##div[class*="--corner-banner_"]
 a25631 1
 ||superklizma.link^$third-party,media
 a25642 1
@@ -134,6 +145,7 @@ a28081 1
 lenta.news,lenta.ru##.longgrid-list__box:style(justify-content: unset !important)
 a28726 1
 ya.ru###feed-ssr
+d28767 1
 a28774 1
 dzen.ru##div[class^="dzen-desktop--modal__rootElement-"]
 d28776 1
@@ -182,6 +194,9 @@ dzen.ru##:matches-path(/\/a/) article:matches-attr(/./=/promo-card|skeleton/)
 d29644 1
 a29644 1
 championat.com,championat.ru,lenta.news,lenta.ru##[class*="scroll-to-site"]:remove()
+d29730 1
+a29730 1
+ya.ru,yandex.*##+js(remove-node-text, script, /DistributionLinkBro|-masonry-feed-/)
 d29780 1
 a29780 1
 ||yastatic.net/s3/home-static/feeds$third-party

@@ -1,19 +1,34 @@
-diff name:ruadlist lines:19 checksum:ca38491c3e
+diff name:ruadlist lines:34 checksum:92e534aaa3
 d4 2
 a5 2
-! Last modified: Thu, 23 Jul 2026 03:38:37 +0000
-! Diff-Path: ../patches/2026.7.23.218.patch#ruadlist
+! Last modified: Thu, 23 Jul 2026 09:30:11 +0000
+! Diff-Path: ../patches/2026.7.23.570.patch#ruadlist
 d8868 1
 a8868 1
 ~hoster.ru##a[href*="://hoster.ru"][target="_blank"]:not(thanks-opennet.ru)
 d9113 1
-a9113 1
+a9113 2
 ~ishosting.com##a[href^="https://ishosting.com"][target="_blank"]:not(thanks-opennet.ru)
+~jump-jump.com##a[href^="https://jump-jump.com"]
 d9125 1
 a9125 1
 ~postgrespro.ru##a[href^="https://www.postgrespro.ru"][target="_blank"]:not(thanks-opennet.ru)
+a16189 1
+lenkino.adult,yalenkino.org##.btn-spt
+d18962 1
+a20556 1
+yap.ru,yaplakal.com##a[target="_blank"][href*="/click/?http"] + br
 a21155 1
 vk.com,vk.ru##div[class^="YandexBrowserBanner"]
+d22366 1
+a22366 1
+sosalkino.guru,sosalkino.*##.spot.after_player
+a24178 1
+dzen.ru##div[class*="--corner-banner_"]
+d28780 1
+d29745 1
+a29745 1
+ya.ru,yandex.*##+js(remove-node-text, script, /DistributionLinkBro|-masonry-feed-/)
 a30013 3
 com,~hoster.ru,me,net,org,ru##a[href*="://hoster.ru"][target="_blank"]:not(thanks-opennet.ru)
 com,~ishosting.com,me,net,org,ru##a[href^="https://ishosting.com"][target="_blank"]:not(thanks-opennet.ru)

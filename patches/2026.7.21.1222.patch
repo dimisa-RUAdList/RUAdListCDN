@@ -1,8 +1,8 @@
-diff name:ruadlist lines:58 checksum:ca38491c3e
+diff name:ruadlist lines:73 checksum:92e534aaa3
 d4 2
 a5 2
-! Last modified: Thu, 23 Jul 2026 03:38:37 +0000
-! Diff-Path: ../patches/2026.7.23.218.patch#ruadlist
+! Last modified: Thu, 23 Jul 2026 09:30:11 +0000
+! Diff-Path: ../patches/2026.7.23.570.patch#ruadlist
 a3332 1
 ||krasnomaga.link^$third-party
 a6610 1
@@ -11,8 +11,9 @@ d8866 1
 a8866 1
 ~hoster.ru##a[href*="://hoster.ru"][target="_blank"]:not(thanks-opennet.ru)
 d9111 1
-a9111 1
+a9111 2
 ~ishosting.com##a[href^="https://ishosting.com"][target="_blank"]:not(thanks-opennet.ru)
+~jump-jump.com##a[href^="https://jump-jump.com"]
 d9123 1
 a9123 1
 ~postgrespro.ru##a[href^="https://www.postgrespro.ru"][target="_blank"]:not(thanks-opennet.ru)
@@ -23,15 +24,23 @@ a13663 1
 ||vk.ru/*/left_menu_invite_promo_menu_item_onboarding.
 a13815 1
 ||yap.ru/html/static/brand-
+a16186 1
+lenkino.adult,yalenkino.org##.btn-spt
 a18265 1
 youla.ru##.sc-bzywxr
+d18958 1
 d19838 1
 a19838 1
 5terka.com,animemobi.ru,ap22.ru,app-time.ru,bakemono.ru,bik-info.ru,chemezova.ru,click-or-die.ru,elektrosat.ru,f-igri.ru,gameout.ru,gazetaby.com,gazetaby.info,gazetaby.media,gitjournal.tech,hdclub.ua,inform-ua.info,instrument16.ru,klub-masterov.ru,ladylib.net,libking.ru,moy-instrument.ru,mrtranslate.ru,multfilms.online,ok-tv.org,only-tv.org,osortah.ru,outsidethebox.ms,peugeot-citroen.net,pluggedin.ru,presentation-creation.ru,privatbankrf.ru,remont-avtovaz.ru,rpgdon.com,rusplt.ru,rutracker.ru,samelectric.ru,selomoe.ru,seloved.ru,shkolniku.com,simhost.org,stiralkainfo.ru,technical.city,tivix.co,tmbw.ru,trackitonline.ru,tuttop.com,tv-only.org,uanic.name,uaspectr.com,ustanovkaos.ru,volga.news,vsetop.org,vsetut.su##a[href*="/ad.admitad.com/"]
+a20552 1
+yap.ru,yaplakal.com##a[target="_blank"][href*="/click/?http"] + br
 a21151 1
 vk.com,vk.ru##div[class^="YandexBrowserBanner"]
 d21654 1
 d21691 1
+d22364 1
+a22364 1
+sosalkino.guru,sosalkino.*##.spot.after_player
 d22982 1
 a22982 1
 ~deti.mail.ru,~e.mail.ru,mail.ru,sportmail.ru##div[data-tooltip-root]
@@ -39,10 +48,13 @@ a23110 1
 deti.mail.ru##div[data-tooltip-root][style*="fixed"]
 a23190 1
 ||static.dzeninfra.ru/s3/zen-apps/*-browser-switch-trap.
+a24174 1
+dzen.ru##div[class*="--corner-banner_"]
 a27137 1
 youla.ru##[data-test-component="Notice"]
 a28733 1
 ya.ru###feed-ssr
+d28774 1
 a28781 1
 dzen.ru##div[class^="dzen-desktop--modal__rootElement-"]
 a28797 1
@@ -50,6 +62,9 @@ dzen.ru##div[class*="_forceShow"]
 d28937 1
 a29557 1
 dzen.ru##+js(set-local-storage-item, browser-switch-trap-ts, {})
+d29737 1
+a29737 1
+ya.ru,yandex.*##+js(remove-node-text, script, /DistributionLinkBro|-masonry-feed-/)
 d29787 1
 a29787 1
 ||yastatic.net/s3/home-static/feeds$third-party
