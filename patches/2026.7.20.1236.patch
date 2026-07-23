@@ -1,10 +1,12 @@
-diff name:ruadlist lines:105 checksum:cdd9ee9f8b
+diff name:ruadlist lines:111 checksum:279a11b3b1
 d4 2
 a5 2
-! Last modified: Thu, 23 Jul 2026 14:25:21 +0000
-! Diff-Path: ../patches/2026.7.23.865.patch#ruadlist
+! Last modified: Thu, 23 Jul 2026 20:17:10 +0000
+! Diff-Path: ../patches/2026.7.23.1217.patch#ruadlist
 a3332 1
 ||krasnomaga.link^$third-party
+a3983 1
+||morozovnya.link^$third-party
 a5978 1
 ||taramashka.link^$third-party
 a6609 1
@@ -13,6 +15,8 @@ a6734 1
 ||vk.ru/rtrg$third-party
 a6780 1
 ||vorogushka.link^$third-party
+a6933 1
+||widgets.outbrain.com/outbrain.js$third-party,script
 a7403 1
 ||zveroboyna.link^$third-party
 a7848 1
@@ -100,6 +104,8 @@ ya.ru,yandex.*##+js(remove-node-text, script, /DistributionLinkBro|-masonry-feed
 d29782 1
 a29782 1
 ||yastatic.net/s3/home-static/feeds$third-party
+a29977 1
+rutube.ru/play/embed##+js(json-prune-fetch-response, appearance.auto_start)
 a30000 3
 com,~hoster.ru,me,net,org,ru##a[href*="://hoster.ru"][target="_blank"]:not(thanks-opennet.ru)
 com,~ishosting.com,me,net,org,ru##a[href^="https://ishosting.com"][target="_blank"]:not(thanks-opennet.ru)

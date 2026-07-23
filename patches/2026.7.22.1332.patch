@@ -1,10 +1,14 @@
-diff name:ruadlist lines:26 checksum:cdd9ee9f8b
+diff name:ruadlist lines:32 checksum:279a11b3b1
 d4 2
 a5 2
-! Last modified: Thu, 23 Jul 2026 14:25:21 +0000
-! Diff-Path: ../patches/2026.7.23.865.patch#ruadlist
+! Last modified: Thu, 23 Jul 2026 20:17:10 +0000
+! Diff-Path: ../patches/2026.7.23.1217.patch#ruadlist
+a3984 1
+||morozovnya.link^$third-party
 a6784 1
 ||vorogushka.link^$third-party
+a6937 1
+||widgets.outbrain.com/outbrain.js$third-party,script
 a9113 1
 ~jump-jump.com##a[href^="https://jump-jump.com"]
 a16189 1
@@ -25,3 +29,5 @@ d28781 1
 d29746 1
 a29746 1
 ya.ru,yandex.*##+js(remove-node-text, script, /DistributionLinkBro|-masonry-feed-/)
+a29991 1
+rutube.ru/play/embed##+js(json-prune-fetch-response, appearance.auto_start)

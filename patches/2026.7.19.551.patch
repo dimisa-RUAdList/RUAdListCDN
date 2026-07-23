@@ -1,14 +1,16 @@
-diff name:ruadlist lines:219 checksum:cdd9ee9f8b
+diff name:ruadlist lines:224 checksum:279a11b3b1
 d4 2
 a5 2
-! Last modified: Thu, 23 Jul 2026 14:25:21 +0000
-! Diff-Path: ../patches/2026.7.23.865.patch#ruadlist
+! Last modified: Thu, 23 Jul 2026 20:17:10 +0000
+! Diff-Path: ../patches/2026.7.23.1217.patch#ruadlist
 a990 1
 ||burunduksha.link^$third-party
 a3331 1
 ||krasnomaga.link^$third-party
 a3346 1
 ||kudlavasta.link^$third-party
+a3981 1
+||morozovnya.link^$third-party
 a5976 1
 ||taramashka.link^$third-party
 d5992 1
@@ -18,6 +20,8 @@ a6733 1
 ||vk.ru/rtrg$third-party
 a6779 1
 ||vorogushka.link^$third-party
+a6932 1
+||widgets.outbrain.com/outbrain.js$third-party,script
 a7402 1
 ||zveroboyna.link^$third-party
 a7847 1
@@ -208,9 +212,10 @@ d29777 1
 a29777 1
 ||yastatic.net/s3/home-static/feeds$third-party
 d29971 3
-a29973 3
+a29973 4
 gazeta.press,gazeta.ru,lenta.news,lenta.ru,secretmag.ru,wmj.ru##iframe[src^="https://vp.rambler.ru/player/"] ~ svg
 gazeta.press,gazeta.ru,lenta.news,lenta.ru,secretmag.ru,wmj.ru##iframe[src^="https://vp.rambler.ru/player/"]:style(position: relative !important)
+rutube.ru/play/embed##+js(json-prune-fetch-response, appearance.auto_start)
 ||vp.rambler.ru/player/$csp=media-src 'self',domain=championat.com|championat.ru|lenta.news|lenta.ru|gazeta.press|gazeta.ru|rambler.ru|~vp.rambler.ru|secretmag.ru|wmj.ru
 d29979 3
 d29991 1

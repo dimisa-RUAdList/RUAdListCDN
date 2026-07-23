@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 23 Jul 2026 14:25:21 +0000
-! Diff-Path: ../patches/2026.7.23.865.patch#ruadlist
+! Last modified: Thu, 23 Jul 2026 20:17:10 +0000
+! Diff-Path: ../patches/2026.7.23.1217.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -3982,6 +3982,7 @@
 ||morenews4.net^
 ||morissette.link^$third-party
 ||morksin.com^$third-party
+||morozovnya.link^$third-party
 ||mortalo.com^$third-party
 ||mosciski.link^$third-party
 ||motazeever.com^$third-party
@@ -6936,6 +6937,7 @@
 ||widetunel.ru^$third-party
 ||widget.mediastealer.com^$third-party
 ||widget.socialmart.ru^$third-party
+||widgets.outbrain.com/outbrain.js$third-party,script
 ||wikianimez.ru^$third-party
 ||wildianing.ru^$third-party
 ||wildmikky.com^$third-party
@@ -29994,6 +29996,7 @@ ya.ru##div[style]:matches-prop(innerText="/РЕКЛАМА/")
 ya.ru##div[style]:matches-prop(innerText="/РЕКЛАМА/"):remove()
 gazeta.press,gazeta.ru,lenta.news,lenta.ru,secretmag.ru,wmj.ru##iframe[src^="https://vp.rambler.ru/player/"] ~ svg
 gazeta.press,gazeta.ru,lenta.news,lenta.ru,secretmag.ru,wmj.ru##iframe[src^="https://vp.rambler.ru/player/"]:style(position: relative !important)
+rutube.ru/play/embed##+js(json-prune-fetch-response, appearance.auto_start)
 ||vp.rambler.ru/player/$csp=media-src 'self',domain=championat.com|championat.ru|lenta.news|lenta.ru|gazeta.press|gazeta.ru|rambler.ru|~vp.rambler.ru|secretmag.ru|wmj.ru
 !#endif
 !#if !env_firefox
