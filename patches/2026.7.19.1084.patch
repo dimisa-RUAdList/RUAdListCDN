@@ -1,8 +1,8 @@
-diff name:ruadlist lines:212 checksum:92e534aaa3
+diff name:ruadlist lines:217 checksum:cdd9ee9f8b
 d4 2
 a5 2
-! Last modified: Thu, 23 Jul 2026 09:30:11 +0000
-! Diff-Path: ../patches/2026.7.23.570.patch#ruadlist
+! Last modified: Thu, 23 Jul 2026 14:25:21 +0000
+! Diff-Path: ../patches/2026.7.23.865.patch#ruadlist
 a990 1
 ||burunduksha.link^$third-party
 a3331 1
@@ -16,6 +16,8 @@ a6608 1
 ||vertiguzha.link^$third-party
 a6733 1
 ||vk.ru/rtrg$third-party
+a6779 1
+||vorogushka.link^$third-party
 a7402 1
 ||zveroboyna.link^$third-party
 a7847 1
@@ -62,6 +64,8 @@ sosalkino.guru,sosalkino.*##.spot.after_player
 d22627 1
 a22627 1
 ||pikabu.ru/ajax/*?zx4Fh=$xmlhttprequest
+a22630 1
+||rutube.ru/api/tags/video/$domain=www.rambler.ru
 d22645 1
 a22645 1
 championat.com,championat.ru,lenta.ru,lenta.news##[class*="scroll-to-site"] {remove:true;}
@@ -108,7 +112,8 @@ lenta.news,lenta.ru##.traffic-exchange
 lenta.news,lenta.ru##.vk-video-popup
 lenta.news,lenta.ru##.yandex-games
 d23520 1
-a23520 1
+a23520 2
+www.rambler.ru##[class*="licy-not"]
 championat.com,lenta.news,lenta.ru##[class*="scroll-to-site"]
 d23547 1
 a23547 1

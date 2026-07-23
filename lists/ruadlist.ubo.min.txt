@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 23 Jul 2026 09:30:11 +0000
-! Diff-Path: ../patches/2026.7.23.570.patch#ruadlist
+! Last modified: Thu, 23 Jul 2026 14:25:21 +0000
+! Diff-Path: ../patches/2026.7.23.865.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -6782,6 +6782,7 @@
 ||voono.ru^
 ||voortexter.com^$third-party
 ||vornz.com^$third-party
+||vorogushka.link^$third-party
 ||vpbyl.com^
 ||vpdsd.top^$third-party
 ||vpejn.top^$third-party
@@ -22638,6 +22639,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=levik.blog|livejournal.c
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
+||rutube.ru/api/tags/video/$domain=www.rambler.ru
 ||websdr.su^$~document,~third-party
 ! howdyho - набор правил для проверки таймаута рецидивов
 howdyho.net#@#.g-ads
@@ -23529,6 +23531,7 @@ lenta.news,lenta.ru##.vk-video-popup
 lenta.news,lenta.ru##.yandex-games
 rambler.ru,rambler.ua,www.afisha.ru##[aria-label="Реклама"]
 mail.rambler.ru##[class*="MaillistItemAdvertPlace"]
+www.rambler.ru##[class*="licy-not"]
 championat.com,lenta.news,lenta.ru##[class*="scroll-to-site"]
 auto.rambler.ru,avtorambler.com##[data-auto_media-desktop*="rnet_widget"]
 auto.rambler.ru,avtorambler.com#?#[data-auto_media-desktop="content_block"] ~ div div:-abp-has(> div > [data-rcmw-init])
