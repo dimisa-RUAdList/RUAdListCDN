@@ -1,17 +1,116 @@
-diff name:ruadlist lines:16 checksum:0c02b4808e
+diff name:ruadlist lines:115 checksum:58573fd5dc
 d4 2
 a5 2
-! Last modified: Fri, 24 Jul 2026 03:36:14 +0000
-! Diff-Path: ../patches/2026.7.24.216.patch#ruadlist
+! Last modified: Fri, 24 Jul 2026 09:27:21 +0000
+! Diff-Path: ../patches/2026.7.24.567.patch#ruadlist
 a3984 1
 ||morozovnya.link^$third-party
+a4210 1
+||nevalyashka.link^$third-party
 a6784 1
 ||vorogushka.link^$third-party
 a6937 1
 ||widgets.outbrain.com/outbrain.js$third-party,script
 a22640 1
 ||rutube.ru/api/tags/video/$domain=www.rambler.ru
+d22655 1
+a22655 1
+championat.com,championat.ru,lenta.news,lenta.ru##[class*="scroll-to-site"] {remove:true;}
+d22664 4
+a22667 5
+lenta.news,lenta.ru##.layout__content > .js-topic:has(.topic-header__erid) {remove:true;}
+lenta.news,lenta.ru##.layout__content > [id^="newsBody_news-"] ~ [id^="articleBody_articles-"] {remove:true;}
+lenta.news,lenta.ru##.topic-body__content> .box-external-video:last-child {remove:true;}
+lenta.news,lenta.ru##.topic-footer > div[class^="box-"][class$="-video"] {remove:true;}
+lenta.news,lenta.ru##.vk-video-popup {remove:true;}
+a23370 1
+ngs.ru#?#section > div > section[class^="baseBlock_"]:-abp-has(> a[href*="utm_campaign"])
+d23484 1
+a23484 1
+auto.rambler.ru###app > .ad_branding_header ~ div[class] > div[class]:empty
+d23493 1
+a23493 1
+rambler.ru##.adfox-background-container
+d23502 3
+a23504 3
+rambler.ru##.commercial-branding [id^="rambler-currency-converter-container:"] + div[class]
+rambler.ru##.commercial-branding article > div:only-child > div:first-child + div + div:last-child
+rambler.ru#?#.commercial-branding div:-abp-has(> a[href^="https://ads.adfox.ru/"])
+a23514 1
+lenta.news,lenta.ru##.layout__content > [id^="newsBody_news-"] ~ [id^="articleBody_articles-"]
 a23531 1
 www.rambler.ru##[class*="licy-not"]
+d23533 2
+a23534 2
+auto.rambler.ru##[data-auto_media-desktop*="rnet_widget"]
+auto.rambler.ru#?#[data-auto_media-desktop="content_block"] ~ div div:-abp-has(> div > [data-rcmw-init])
+d23545 1
+a23545 1
+rambler.ru##[data-rcmw-init]
+d23554 2
+a23555 2
+rambler.ru,rambler.ua#?#[id^="rambler-"] ~ div:-abp-has(> div > [data-rcmw-init])
+rambler.ru##[id^="rambler-promo-"]
+d23560 1
+a23560 1
+rambler.ru##a[href*="//ads.adfox.ru/"]
+d23570 3
+a23572 3
+rambler.ru#?#article div:-abp-has(> rambler-car-loan-calculator)
+rambler.ru#?#article div:-abp-has(> rambler-info-banner)
+rambler.ru#?#aside:-abp-has(> div > [class^="banner--native-partner_widget"])
+d23577 2
+a23578 2
+rambler.ru#?#div:-abp-has(> div[id*=":_adfox_"])
+rambler.ru,rambler.ua#?#div:-abp-has(> div[id^="adfox-"][id*="rambler"])
+d23587 1
+a23587 1
+rambler.ru,rambler.ua##div[class*="banner-"]
+d23595 2
+a23596 2
+rambler.ru##div[id^="rambler-info-banner-"]
+rambler.ru##div[id^="rcmw-container-"][id*="-horizontal-"]
+d23598 3
+a23600 3
+rambler.ru##div[style="min-height: 600px;"] ~ div
+rambler.ru##div[style="min-height:600px"] ~ div
+rambler.ru##div[style^="height: 290px"][style*="overflow: hidden"]
+d23603 6
+a23608 6
+rambler.ru##div[style^="min-height: 240px"]
+rambler.ru,rambler.ua##div[style^="min-height: 250px"]
+rambler.ru,rambler.ua##div[style^="min-height: 290px"]
+rambler.ru,rambler.ua##div[style^="min-height: 300px"]
+rambler.ru##div[style^="min-height: 400px"]
+rambler.ru##div[style^="min-height: 600px"]
+d23610 8
+a23617 8
+rambler.ru##div[style^="min-height:240px"]
+rambler.ru,rambler.ua##div[style^="min-height:250px"]
+rambler.ru,rambler.ua##div[style^="min-height:290px"]
+rambler.ru,rambler.ua##div[style^="min-height:300px"]
+rambler.ru##div[style^="min-height:400px"]
+rambler.ru##div[style^="min-height:600px"]
+rambler.ru,rambler.ua##div[style^="order:"][style*="-1"]
+rambler.ru##rambler-info-banner
+d23638 1
+a23638 1
+rambler.ru#?#.commercial-branding div:-abp-properties(min-height: 125px)
+d23646 1
+a23646 1
+rambler.ru#?#div:-abp-has(> div[style^="min-height:"]) > p ~ div:-abp-contains(Продолжение истории после рекламы)
+d28377 4
+a28380 4
+rambler.ru##.commercial-branding > div script ~ div > div:last-child div:style(min-height: 0 !important)
+rambler.ru##.commercial-branding > div script ~ div > div:style(min-height: 0 !important)
+rambler.ru##.commercial-branding article > div:only-child > div:first-child + div > div > div:first-child + div:style(box-shadow: none !important)
+rambler.ru##.commercial-branding:style(margin-top: unset !important; margin-bottom: unset !important)
+a28389 1
+rambler.ru##[data-cerber="weather-widget"] > a[href^="https://weather.rambler.ru/"] > [data-text="true"]:style(container-type: inherit !important)
+d28791 1
+a28791 1
+dzen.ru##div[class^="dzen-desktop--modal__rootElement-"][style^="z-index: 1000"]
+a29608 1
+lenta.news,lenta.ru##.layout__content > [id^="newsBody_news-"] ~ [id^="articleBody_articles-"]:remove()
 a29993 1
 rutube.ru/play/embed##+js(json-prune-fetch-response, appearance.auto_start)

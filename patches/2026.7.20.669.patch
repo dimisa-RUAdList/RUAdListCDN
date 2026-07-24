@@ -1,14 +1,16 @@
-diff name:ruadlist lines:213 checksum:0c02b4808e
+diff name:ruadlist lines:290 checksum:58573fd5dc
 d4 2
 a5 2
-! Last modified: Fri, 24 Jul 2026 03:36:14 +0000
-! Diff-Path: ../patches/2026.7.24.216.patch#ruadlist
+! Last modified: Fri, 24 Jul 2026 09:27:21 +0000
+! Diff-Path: ../patches/2026.7.24.567.patch#ruadlist
 a3332 1
 ||krasnomaga.link^$third-party
 a3347 1
 ||kudlavasta.link^$third-party
 a3982 1
 ||morozovnya.link^$third-party
+a4208 1
+||nevalyashka.link^$third-party
 a5977 1
 ||taramashka.link^$third-party
 a6608 1
@@ -65,13 +67,14 @@ a22631 1
 ||rutube.ru/api/tags/video/$domain=www.rambler.ru
 d22646 1
 a22646 1
-championat.com,championat.ru,lenta.ru,lenta.news##[class*="scroll-to-site"] {remove:true;}
+championat.com,championat.ru,lenta.news,lenta.ru##[class*="scroll-to-site"] {remove:true;}
 d22655 4
-a22658 4
-lenta.ru,lenta.news##.layout__content > .js-topic:has(.topic-header__erid) {remove:true;}
-lenta.ru,lenta.news##.topic-body__content> .box-external-video:last-child {remove:true;}
-lenta.ru,lenta.news##.topic-footer > div[class^="box-"][class$="-video"] {remove:true;}
-lenta.ru,lenta.news##.vk-video-popup {remove:true;}
+a22658 5
+lenta.news,lenta.ru##.layout__content > .js-topic:has(.topic-header__erid) {remove:true;}
+lenta.news,lenta.ru##.layout__content > [id^="newsBody_news-"] ~ [id^="articleBody_articles-"] {remove:true;}
+lenta.news,lenta.ru##.topic-body__content> .box-external-video:last-child {remove:true;}
+lenta.news,lenta.ru##.topic-footer > div[class^="box-"][class$="-video"] {remove:true;}
+lenta.news,lenta.ru##.vk-video-popup {remove:true;}
 d22978 1
 a22978 1
 ~deti.mail.ru,~e.mail.ru,mail.ru,sportmail.ru##div[data-tooltip-root]
@@ -79,9 +82,17 @@ a23106 1
 deti.mail.ru##div[data-tooltip-root][style*="fixed"]
 a23186 1
 ||static.dzeninfra.ru/s3/zen-apps/*-browser-switch-trap.
+a23359 1
+ngs.ru#?#section > div > section[class^="baseBlock_"]:-abp-has(> a[href*="utm_campaign"])
+d23473 1
+a23473 1
+auto.rambler.ru###app > .ad_branding_header ~ div[class] > div[class]:empty
 d23479 1
 a23479 1
 lenta.news,lenta.ru#?#._longgrid:-abp-has(> [class*="info"] > [class*="_ad-title"])
+d23482 1
+a23482 1
+rambler.ru##.adfox-background-container
 d23484 1
 a23484 1
 lenta.news,lenta.ru##.advertisable-plate__erid
@@ -89,13 +100,17 @@ d23487 2
 a23488 2
 championat.com,championat.ru,gazeta.press,gazeta.ru,lenta.news,lenta.ru##.banner
 lenta.news,lenta.ru##.banner + div[class][id]
-d23494 1
-a23494 1
+d23491 4
+a23494 4
+rambler.ru##.commercial-branding [id^="rambler-currency-converter-container:"] + div[class]
+rambler.ru##.commercial-branding article > div:only-child > div:first-child + div + div:last-child
+rambler.ru#?#.commercial-branding div:-abp-has(> a[href^="https://ads.adfox.ru/"])
 lenta.news,lenta.ru##.custom-banner
 d23502 2
-a23503 2
+a23503 3
 lenta.news,lenta.ru##.js-video-eagle > div[style^="height:"][style*="overflow:"]
 lenta.news,lenta.ru#?#.layout__content > .js-topic:-abp-has(.topic-header__erid)
+lenta.news,lenta.ru##.layout__content > [id^="newsBody_news-"] ~ [id^="articleBody_articles-"]
 d23506 2
 a23507 2
 lenta.news,lenta.ru##.olympiad
@@ -108,15 +123,23 @@ lenta.news,lenta.ru##.topic-page__info ~ div
 lenta.news,lenta.ru##.traffic-exchange
 lenta.news,lenta.ru##.vk-video-popup
 lenta.news,lenta.ru##.yandex-games
-d23521 1
-a23521 2
+d23521 3
+a23523 4
 www.rambler.ru##[class*="licy-not"]
 championat.com,lenta.news,lenta.ru##[class*="scroll-to-site"]
-d23548 1
-a23548 1
+auto.rambler.ru##[data-auto_media-desktop*="rnet_widget"]
+auto.rambler.ru#?#[data-auto_media-desktop="content_block"] ~ div div:-abp-has(> div > [data-rcmw-init])
+d23534 1
+a23534 1
+rambler.ru##[data-rcmw-init]
+d23543 2
+a23544 2
+rambler.ru,rambler.ua#?#[id^="rambler-"] ~ div:-abp-has(> div > [data-rcmw-init])
+rambler.ru##[id^="rambler-promo-"]
+d23548 4
+a23551 4
 lenta.news,lenta.ru##a.card-mini[href^="https://lenta.ru/extlink/"]
-d23550 2
-a23551 2
+rambler.ru##a[href*="//ads.adfox.ru/"]
 gazeta.press,gazeta.ru,lenta.news,lenta.ru##a[href*="/tvz"]
 gazeta.press,gazeta.ru,lenta.news,lenta.ru##a[href*="/twz"]
 d23553 1
@@ -125,12 +148,57 @@ lenta.news,lenta.ru##a[href*="?erid="]
 d23555 1
 a23555 1
 championat.com,championat.ru,lenta.news,lenta.ru##a[href*="okko.sport"]
+d23559 3
+a23561 3
+rambler.ru#?#article div:-abp-has(> rambler-car-loan-calculator)
+rambler.ru#?#article div:-abp-has(> rambler-info-banner)
+rambler.ru#?#aside:-abp-has(> div > [class^="banner--native-partner_widget"])
+d23566 2
+a23567 2
+rambler.ru#?#div:-abp-has(> div[id*=":_adfox_"])
+rambler.ru,rambler.ua#?#div:-abp-has(> div[id^="adfox-"][id*="rambler"])
+d23576 1
+a23576 1
+rambler.ru,rambler.ua##div[class*="banner-"]
 d23578 1
 a23578 1
 lenta.news,lenta.ru##div[class*="goodnews"][class*=" "]
+d23584 2
+a23585 2
+rambler.ru##div[id^="rambler-info-banner-"]
+rambler.ru##div[id^="rcmw-container-"][id*="-horizontal-"]
+d23587 3
+a23589 3
+rambler.ru##div[style="min-height: 600px;"] ~ div
+rambler.ru##div[style="min-height:600px"] ~ div
+rambler.ru##div[style^="height: 290px"][style*="overflow: hidden"]
+d23592 6
+a23597 6
+rambler.ru##div[style^="min-height: 240px"]
+rambler.ru,rambler.ua##div[style^="min-height: 250px"]
+rambler.ru,rambler.ua##div[style^="min-height: 290px"]
+rambler.ru,rambler.ua##div[style^="min-height: 300px"]
+rambler.ru##div[style^="min-height: 400px"]
+rambler.ru##div[style^="min-height: 600px"]
+d23599 8
+a23606 8
+rambler.ru##div[style^="min-height:240px"]
+rambler.ru,rambler.ua##div[style^="min-height:250px"]
+rambler.ru,rambler.ua##div[style^="min-height:290px"]
+rambler.ru,rambler.ua##div[style^="min-height:300px"]
+rambler.ru##div[style^="min-height:400px"]
+rambler.ru##div[style^="min-height:600px"]
+rambler.ru,rambler.ua##div[style^="order:"][style*="-1"]
+rambler.ru##rambler-info-banner
 d23615 1
 a23615 1
 ||lenta.*fenwick$xmlhttprequest,domain=lenta.news|lenta.ru
+d23627 1
+a23627 1
+rambler.ru#?#.commercial-branding div:-abp-properties(min-height: 125px)
+d23635 1
+a23635 1
+rambler.ru#?#div:-abp-has(> div[style^="min-height:"]) > p ~ div:-abp-contains(Продолжение истории после рекламы)
 a23793 1
 sports.ru##.news-layout__branding
 a24169 1
@@ -143,11 +211,19 @@ youla.ru##[data-test-component="Notice"]
 d28083 1
 a28083 1
 lenta.news,lenta.ru##.longgrid-list__box:style(justify-content: unset !important)
+d28363 4
+a28366 4
+rambler.ru##.commercial-branding > div script ~ div > div:last-child div:style(min-height: 0 !important)
+rambler.ru##.commercial-branding > div script ~ div > div:style(min-height: 0 !important)
+rambler.ru##.commercial-branding article > div:only-child > div:first-child + div > div > div:first-child + div:style(box-shadow: none !important)
+rambler.ru##.commercial-branding:style(margin-top: unset !important; margin-bottom: unset !important)
+a28375 1
+rambler.ru##[data-cerber="weather-widget"] > a[href^="https://weather.rambler.ru/"] > [data-text="true"]:style(container-type: inherit !important)
 a28728 1
 ya.ru###feed-ssr
 d28769 1
 a28776 1
-dzen.ru##div[class^="dzen-desktop--modal__rootElement-"]
+dzen.ru##div[class^="dzen-desktop--modal__rootElement-"][style^="z-index: 1000"]
 d28778 1
 a28778 1
 dzen.ru##div[style*="12.3626373625"]
@@ -179,8 +255,9 @@ championat.com,championat.ru,ferra.ru,gazeta.press,gazeta.ru,indicator.ru,lenta.
 a29552 1
 dzen.ru##+js(set-local-storage-item, browser-switch-trap-ts, {})
 d29592 1
-a29592 1
+a29592 2
 lenta.news,lenta.ru##.layout__content > .js-topic:has(.topic-header__erid):remove()
+lenta.news,lenta.ru##.layout__content > [id^="newsBody_news-"] ~ [id^="articleBody_articles-"]:remove()
 d29609 2
 a29610 2
 lenta.news,lenta.ru##.topic-body__content > .box-external-video:last-child:remove()

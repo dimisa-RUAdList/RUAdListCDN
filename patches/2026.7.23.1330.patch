@@ -1,5 +1,104 @@
-diff name:ruadlist lines:4 checksum:0c02b4808e
+diff name:ruadlist lines:103 checksum:58573fd5dc
 d4 2
 a5 2
-! Last modified: Fri, 24 Jul 2026 03:36:14 +0000
-! Diff-Path: ../patches/2026.7.24.216.patch#ruadlist
+! Last modified: Fri, 24 Jul 2026 09:27:21 +0000
+! Diff-Path: ../patches/2026.7.24.567.patch#ruadlist
+a4211 1
+||nevalyashka.link^$third-party
+d22659 1
+a22659 1
+championat.com,championat.ru,lenta.news,lenta.ru##[class*="scroll-to-site"] {remove:true;}
+d22668 4
+a22671 5
+lenta.news,lenta.ru##.layout__content > .js-topic:has(.topic-header__erid) {remove:true;}
+lenta.news,lenta.ru##.layout__content > [id^="newsBody_news-"] ~ [id^="articleBody_articles-"] {remove:true;}
+lenta.news,lenta.ru##.topic-body__content> .box-external-video:last-child {remove:true;}
+lenta.news,lenta.ru##.topic-footer > div[class^="box-"][class$="-video"] {remove:true;}
+lenta.news,lenta.ru##.vk-video-popup {remove:true;}
+a23374 1
+ngs.ru#?#section > div > section[class^="baseBlock_"]:-abp-has(> a[href*="utm_campaign"])
+d23488 1
+a23488 1
+auto.rambler.ru###app > .ad_branding_header ~ div[class] > div[class]:empty
+d23497 1
+a23497 1
+rambler.ru##.adfox-background-container
+d23506 3
+a23508 3
+rambler.ru##.commercial-branding [id^="rambler-currency-converter-container:"] + div[class]
+rambler.ru##.commercial-branding article > div:only-child > div:first-child + div + div:last-child
+rambler.ru#?#.commercial-branding div:-abp-has(> a[href^="https://ads.adfox.ru/"])
+a23518 1
+lenta.news,lenta.ru##.layout__content > [id^="newsBody_news-"] ~ [id^="articleBody_articles-"]
+d23538 2
+a23539 2
+auto.rambler.ru##[data-auto_media-desktop*="rnet_widget"]
+auto.rambler.ru#?#[data-auto_media-desktop="content_block"] ~ div div:-abp-has(> div > [data-rcmw-init])
+d23550 1
+a23550 1
+rambler.ru##[data-rcmw-init]
+d23559 2
+a23560 2
+rambler.ru,rambler.ua#?#[id^="rambler-"] ~ div:-abp-has(> div > [data-rcmw-init])
+rambler.ru##[id^="rambler-promo-"]
+d23565 1
+a23565 1
+rambler.ru##a[href*="//ads.adfox.ru/"]
+d23575 3
+a23577 3
+rambler.ru#?#article div:-abp-has(> rambler-car-loan-calculator)
+rambler.ru#?#article div:-abp-has(> rambler-info-banner)
+rambler.ru#?#aside:-abp-has(> div > [class^="banner--native-partner_widget"])
+d23582 2
+a23583 2
+rambler.ru#?#div:-abp-has(> div[id*=":_adfox_"])
+rambler.ru,rambler.ua#?#div:-abp-has(> div[id^="adfox-"][id*="rambler"])
+d23592 1
+a23592 1
+rambler.ru,rambler.ua##div[class*="banner-"]
+d23600 2
+a23601 2
+rambler.ru##div[id^="rambler-info-banner-"]
+rambler.ru##div[id^="rcmw-container-"][id*="-horizontal-"]
+d23603 3
+a23605 3
+rambler.ru##div[style="min-height: 600px;"] ~ div
+rambler.ru##div[style="min-height:600px"] ~ div
+rambler.ru##div[style^="height: 290px"][style*="overflow: hidden"]
+d23608 6
+a23613 6
+rambler.ru##div[style^="min-height: 240px"]
+rambler.ru,rambler.ua##div[style^="min-height: 250px"]
+rambler.ru,rambler.ua##div[style^="min-height: 290px"]
+rambler.ru,rambler.ua##div[style^="min-height: 300px"]
+rambler.ru##div[style^="min-height: 400px"]
+rambler.ru##div[style^="min-height: 600px"]
+d23615 8
+a23622 8
+rambler.ru##div[style^="min-height:240px"]
+rambler.ru,rambler.ua##div[style^="min-height:250px"]
+rambler.ru,rambler.ua##div[style^="min-height:290px"]
+rambler.ru,rambler.ua##div[style^="min-height:300px"]
+rambler.ru##div[style^="min-height:400px"]
+rambler.ru##div[style^="min-height:600px"]
+rambler.ru,rambler.ua##div[style^="order:"][style*="-1"]
+rambler.ru##rambler-info-banner
+d23643 1
+a23643 1
+rambler.ru#?#.commercial-branding div:-abp-properties(min-height: 125px)
+d23651 1
+a23651 1
+rambler.ru#?#div:-abp-has(> div[style^="min-height:"]) > p ~ div:-abp-contains(Продолжение истории после рекламы)
+d28382 4
+a28385 4
+rambler.ru##.commercial-branding > div script ~ div > div:last-child div:style(min-height: 0 !important)
+rambler.ru##.commercial-branding > div script ~ div > div:style(min-height: 0 !important)
+rambler.ru##.commercial-branding article > div:only-child > div:first-child + div > div > div:first-child + div:style(box-shadow: none !important)
+rambler.ru##.commercial-branding:style(margin-top: unset !important; margin-bottom: unset !important)
+a28394 1
+rambler.ru##[data-cerber="weather-widget"] > a[href^="https://weather.rambler.ru/"] > [data-text="true"]:style(container-type: inherit !important)
+d28796 1
+a28796 1
+dzen.ru##div[class^="dzen-desktop--modal__rootElement-"][style^="z-index: 1000"]
+a29613 1
+lenta.news,lenta.ru##.layout__content > [id^="newsBody_news-"] ~ [id^="articleBody_articles-"]:remove()
