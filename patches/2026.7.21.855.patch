@@ -1,8 +1,10 @@
-diff name:ruadlist lines:221 checksum:c13b008bb3
+diff name:ruadlist lines:231 checksum:0725f82f26
 d4 2
 a5 2
-! Last modified: Sat, 25 Jul 2026 09:07:27 +0000
-! Diff-Path: ../patches/2026.7.25.547.patch#ruadlist
+! Last modified: Sat, 25 Jul 2026 13:56:22 +0000
+! Diff-Path: ../patches/2026.7.25.836.patch#ruadlist
+a617 1
+||balamutka.link^$third-party
 a3332 1
 ||krasnomaga.link^$third-party
 a3983 1
@@ -65,6 +67,8 @@ a19531 1
 vk.com,vk.ru##[data-testid="leftmenu"] [id^="l_invite_"][id*="_promo"]
 a19681 1
 vk.com,vk.ru#?#[role="feed"] > article:-abp-has([aria-label="Реклама от автора"])
+a19782 1
+kinorium.com##a[class*="_branding_movie_"]
 d19837 1
 a19837 1
 5terka.com,animemobi.ru,ap22.ru,app-time.ru,bakemono.ru,bik-info.ru,chemezova.ru,click-or-die.ru,elektrosat.ru,f-igri.ru,gameout.ru,gazetaby.com,gazetaby.info,gazetaby.media,gitjournal.tech,hdclub.ua,inform-ua.info,instrument16.ru,klub-masterov.ru,ladylib.net,libking.ru,moy-instrument.ru,mrtranslate.ru,multfilms.online,ok-tv.org,only-tv.org,osortah.ru,outsidethebox.ms,peugeot-citroen.net,pluggedin.ru,presentation-creation.ru,privatbankrf.ru,remont-avtovaz.ru,rpgdon.com,rusplt.ru,rutracker.ru,samelectric.ru,selomoe.ru,seloved.ru,shkolniku.com,simhost.org,stiralkainfo.ru,technical.city,tivix.co,tmbw.ru,trackitonline.ru,tuttop.com,tv-only.org,uanic.name,uaspectr.com,ustanovkaos.ru,volga.news,vsetop.org,vsetut.su##a[href*="/ad.admitad.com/"]
@@ -72,6 +76,9 @@ a20551 1
 yap.ru,yaplakal.com##a[target="_blank"][href*="/click/?http"] + br
 a21150 1
 vk.com,vk.ru##div[class^="YandexBrowserBanner"]
+d21499 1
+a21499 1
+bina.az,bitpump.ru,botanichka.ru,chem21.info,enovosty.com,ixbt.games,ixbt.market,ixbt.pro,ogorodnik.com,orelgrad.ru,propozitsiya.com,qafqazinfo.az,snow-motion.ru,stadion.uz,tap.az,turbo.az,uralpress.ru,www.ixbt.com##div[id*="banner"]
 d21653 1
 d21690 1
 a22292 1
@@ -188,14 +195,17 @@ a25750 1
 ||unpkg.com/@vkid/$third-party,script
 a27136 1
 youla.ru##[data-test-component="Notice"]
+a27184 1
+||hqtv.su/iframe/js.js
 d28367 4
 a28370 4
 rambler.ru##.commercial-branding > div script ~ div > div:last-child div:style(min-height: 0 !important)
 rambler.ru##.commercial-branding > div script ~ div > div:style(min-height: 0 !important)
 rambler.ru##.commercial-branding article > div:only-child > div:first-child + div > div > div:first-child + div:style(box-shadow: none !important)
 rambler.ru##.commercial-branding:style(margin-top: unset !important; margin-bottom: unset !important)
-a28379 1
+a28379 2
 rambler.ru##[data-cerber="weather-widget"] > a[href^="https://weather.rambler.ru/"] > [data-text="true"]:style(container-type: inherit !important)
+rambler.ru##[data-cerber="weather-widget"] > a[href^="https://weather.rambler.ru/"] > div:first-child::before:style(background-position: inherit !important)
 a28732 1
 ya.ru###feed-ssr
 d28773 1

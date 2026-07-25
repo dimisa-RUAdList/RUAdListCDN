@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 25 Jul 2026 09:07:27 +0000
-! Diff-Path: ../patches/2026.7.25.547.patch#ruadlist
+! Last modified: Sat, 25 Jul 2026 13:56:22 +0000
+! Diff-Path: ../patches/2026.7.25.836.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -615,6 +615,7 @@
 ||bajvt.com^$third-party
 ||bakibarus.com^$third-party
 ||baks-easy.com^$third-party
+||balamutka.link^$third-party
 ||bamboss.ru^$third-party
 ||bambun.ru^$third-party
 ||banalyze.net^$third-party
@@ -19794,6 +19795,7 @@ good73.net##a[\;] > img
 magnit.ru##a[aria-label^="Реклама"]
 ren.tv##a[class*=" ya_"]
 solverbook.com##a[class*="-banner-"]
+kinorium.com##a[class*="_branding_movie_"]
 siliconrus.com##a[class*="b-menu__li__a-"]
 vc.ru##a[class*="bar"][href^="/courses"]
 dtf.ru,vc.ru##a[class*="bar"][href^="/store"]
@@ -21512,7 +21514,7 @@ finmarket.ru##div[id*="_ban"]
 niv.ru##div[id*="_ban_"]
 kavkazova.ru##div[id*="actionteaser"]
 ochevidets.ru##div[id*="baner"]
-bina.az,bitpump.ru,botanichka.ru,chem21.info,enovosty.com,ogorodnik.com,orelgrad.ru,propozitsiya.com,qafqazinfo.az,snow-motion.ru,stadion.uz,tap.az,turbo.az,uralpress.ru,www.ixbt.com##div[id*="banner"]
+bina.az,bitpump.ru,botanichka.ru,chem21.info,enovosty.com,ixbt.games,ixbt.market,ixbt.pro,ogorodnik.com,orelgrad.ru,propozitsiya.com,qafqazinfo.az,snow-motion.ru,stadion.uz,tap.az,turbo.az,uralpress.ru,www.ixbt.com##div[id*="banner"]
 propozitsiya.com##div[id*="bunner"]
 drom.ru,newsvl.ru,vl.ru##div[id*="candy"]
 akipress.org##div[id*="company"]
@@ -27211,6 +27213,7 @@ forums.overclockers.ru##tr > td[nowrap="nowrap"][style^="color: red;"][style$="f
 ||gametorrent.org/templates/gametorrent/js/ablock.js
 ||glav.su/js/libs/abd/abd.js
 ||howdyho.*/media/js/main-pn5-ru.js
+||hqtv.su/iframe/js.js
 ||in-english.club/statistic/my.js
 ||itcrowd.top/templates/yootheme/block.js
 ||moi-detsad.ru/wp-content/cache/autoptimize/js/autoptimize_*.js
@@ -28407,6 +28410,7 @@ horoscopes.rambler.ru##.ad_branding_main > div[class]:first-child:style(margin-l
 horoscopes.rambler.ru##.ad_branding_main > div[class]:style(max-width: 100% !important)
 horoscopes.rambler.ru##.ad_branding_main:style(max-width: 100% !important)
 rambler.ru##[data-cerber="weather-widget"] > a[href^="https://weather.rambler.ru/"] > [data-text="true"]:style(container-type: inherit !important)
+rambler.ru##[data-cerber="weather-widget"] > a[href^="https://weather.rambler.ru/"] > div:first-child::before:style(background-position: inherit !important)
 www.rambler.ru##footer:style(max-width: 100% !important)
 ! ---
 rbkgames.com##.branding .main-content:style(margin-top: 90px !important)

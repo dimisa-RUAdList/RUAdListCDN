@@ -1,8 +1,10 @@
-diff name:ruadlist lines:141 checksum:c13b008bb3
+diff name:ruadlist lines:151 checksum:0725f82f26
 d4 2
 a5 2
-! Last modified: Sat, 25 Jul 2026 09:07:27 +0000
-! Diff-Path: ../patches/2026.7.25.547.patch#ruadlist
+! Last modified: Sat, 25 Jul 2026 13:56:22 +0000
+! Diff-Path: ../patches/2026.7.25.836.patch#ruadlist
+a617 1
+||balamutka.link^$third-party
 a4211 1
 ||nevalyashka.link^$third-party
 a5601 1
@@ -31,6 +33,11 @@ a19540 1
 vk.com,vk.ru##[data-testid="leftmenu"] [id^="l_invite_"][id*="_promo"]
 a19690 1
 vk.com,vk.ru#?#[role="feed"] > article:-abp-has([aria-label="Реклама от автора"])
+a19791 1
+kinorium.com##a[class*="_branding_movie_"]
+d21510 1
+a21510 1
+bina.az,bitpump.ru,botanichka.ru,chem21.info,enovosty.com,ixbt.games,ixbt.market,ixbt.pro,ogorodnik.com,orelgrad.ru,propozitsiya.com,qafqazinfo.az,snow-motion.ru,stadion.uz,tap.az,turbo.az,uralpress.ru,www.ixbt.com##div[id*="banner"]
 a22301 1
 svo.aero##overlay-image-fixed
 d22659 1
@@ -127,14 +134,17 @@ a25361 1
 ||pomyaniubogogo.link^$third-party,media
 a25764 1
 ||unpkg.com/@vkid/$third-party,script
+a27199 1
+||hqtv.su/iframe/js.js
 d28382 4
 a28385 4
 rambler.ru##.commercial-branding > div script ~ div > div:last-child div:style(min-height: 0 !important)
 rambler.ru##.commercial-branding > div script ~ div > div:style(min-height: 0 !important)
 rambler.ru##.commercial-branding article > div:only-child > div:first-child + div > div > div:first-child + div:style(box-shadow: none !important)
 rambler.ru##.commercial-branding:style(margin-top: unset !important; margin-bottom: unset !important)
-a28394 1
+a28394 2
 rambler.ru##[data-cerber="weather-widget"] > a[href^="https://weather.rambler.ru/"] > [data-text="true"]:style(container-type: inherit !important)
+rambler.ru##[data-cerber="weather-widget"] > a[href^="https://weather.rambler.ru/"] > div:first-child::before:style(background-position: inherit !important)
 d28796 1
 a28796 1
 dzen.ru##div[class^="dzen-desktop--modal__rootElement-"][style^="z-index: 1000"]
