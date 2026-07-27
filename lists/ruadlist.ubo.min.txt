@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 27 Jul 2026 17:04:31 +0000
-! Diff-Path: ../patches/2026.7.27.1024.patch#ruadlist
+! Last modified: Mon, 27 Jul 2026 22:13:43 +0000
+! Diff-Path: ../patches/2026.7.27.1333.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -23548,6 +23548,7 @@ championat.com,championat.ru##a[href*="offer_id="]
 championat.com,championat.ru,lenta.news,lenta.ru##a[href*="okko.sport"]
 www.afisha.ru##a[href^="/out/?url="]
 gazeta.press,gazeta.ru##a[href^="/prcom/"]
+rambler.ru##article [id^="rambler-weather-container:"] ~ div[class]
 rambler.ru#?#article div:-abp-has(> div > [id^="rcmw-container"]:empty)
 rambler.ru#?#article div:-abp-has(> rambler-car-loan-calculator)
 rambler.ru#?#article div:-abp-has(> rambler-info-banner)
