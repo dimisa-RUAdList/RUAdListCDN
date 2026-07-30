@@ -1,21 +1,73 @@
-diff name:ruadlist lines:32 checksum:447a96c613
+diff name:ruadlist lines:93 checksum:c944a9dea6
 d4 2
 a5 2
-! Last modified: Thu, 30 Jul 2026 14:25:47 +0000
-! Diff-Path: ../patches/2026.7.30.865.patch#ruadlist
+! Last modified: Thu, 30 Jul 2026 20:21:25 +0000
+! Diff-Path: ../patches/2026.7.30.1221.patch#ruadlist
 a6455 1
 ||unicontext.ru^$third-party
+d10765 1
+a10765 1
+/api/*/ainfo/*$domain=igromania.ru
+d13277 1
 a13542 1
 ||up.mk.ua/assets/reclams/
 d13875 1
+d15234 1
+a15234 1
+igromania.ru##.ad-brending
 a15278 1
 rutube.ru#?#.additional-recommendations-module__grid-card:-abp-has([id^=adfox])
+d16319 1
+a16319 1
+aniliberty.top##.commercial-banner
+d16631 1
+d17027 1
+a17027 1
+igromania.ru##.informer-container
 d17033 1
+d17146 2
+a17147 2
+igromania.ru##.knb-grid-layout > .no-radius
+igromania.ru##.knb-informer
 d17471 1
+d17480 1
+a17480 1
+aniliberty.top#?#.mt-8:-abp-has(> .commercial-banner)
 a17818 1
 dorognoe.ru,radio7.ru##.player-rekl-container
 d18599 1
+a18934 1
+aniliberty.top#?#.v-carousel-item:-abp-has(> div a[href^="https://funpay.com/"])
+d19259 1
+a19259 1
+kanobu.ru,uznayvse.ru##[aria-label="Реклама"]
+d19275 1
+a19275 1
+igromania.ru##[class*="HeadingPage_most_discussed"]
+d19343 2
+a19344 2
+igromania.ru##[class^="AdButtons"]
+igromania.ru##[class^="AdFoxBanner"]
+d19348 2
+a19349 1
+igromania.ru##[class^="LentaAdFox_"]
+d19351 5
+a19355 5
+igromania.ru#?#[class^="MaterialsManufacturerPage_infiniteWrap"] > div[class^="InfiniteScrollWrap_content"] > [class^="MaterialItemPage_isFirst"] ~ [class^="MaterialItemPage_materialSection"]:-abp-has(> div > [data-io-article-url] [class^="TextContent_text"] > p:-abp-contains(/^Реклама:/))
+igromania.ru#?#[class^="MaterialsManufacturerPage_infiniteWrap"] > div[class^="InfiniteScrollWrap_content"] > [class^="MaterialItemPage_materialSection"]:-abp-has(> div > [data-io-article-url] a[href="/tags/partnyorskij-material/"])
+igromania.ru#?#[class^="MaterialsManufacturerPage_infiniteWrap"] > div[class^="InfiniteScrollWrap_content"] > [class^="MaterialItemPage_materialSection"]:-abp-has(> div [class^="SpecialLabelOfArticle_isPartnerMaterial"])
+igromania.ru##[class^="PlotWithMaterials_plots_"] [class*="_tabs"] > button ~ button
+igromania.ru#?#[class^="PlotWithMaterials_plots_"]:-abp-has(> div [class*="_tabs"] > button ~ button[class*="_active_"]) [class^="PlotWithMaterials_head_"] ~ div
 d21100 1
+d21112 1
+a21112 1
+igromania.ru##div[class^="AdLink_"]
+d21125 1
+a21125 1
+igromania.ru##div[class^="MaterialSubscription_root_"]
+d21135 2
+a21136 1
+igromania.ru##div[class^="TopPageBanner_wrap_"]
 a21346 1
 up.mk.ua##div[class^="reclam_"]
 d21529 1
@@ -26,8 +78,17 @@ a23482 1
 gazeta.press,gazeta.ru##.b_promo_twz
 a23513 1
 lenta.news,lenta.ru##.twz-banner
+d27339 3
+a27341 3
+aniliberty.top##.v-carousel
+aniliberty.top##.v-carousel + div.d-flex
+aniliberty.top##[class*="image-blur-"]:style(filter: none !important)
 d29250 1
 a29250 1
 80-e.ru,examenpdd.com,rg.ru,shadowcore.ru##+js(abort-on-property-read, yaContextCb)
+d29344 1
+a29344 1
+igromania.ru##+js(json-prune, results.fixed)
 a29539 1
 doramatv.live,doramatv.one,doramatv.ru##+js(set-cookie, auth-required-win, true)
+d29725 1
