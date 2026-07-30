@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 30 Jul 2026 09:35:51 +0000
-! Diff-Path: ../patches/2026.7.30.575.patch#ruadlist
+! Last modified: Thu, 30 Jul 2026 14:25:47 +0000
+! Diff-Path: ../patches/2026.7.30.865.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -13541,6 +13541,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||unturned-load.ru/c/
 ||unvan.az/banner/
 ||unvan.az/reklamexport_
+||up.mk.ua/assets/reclams/
 ||upl.ua/images/puma_
 ||upl.ua/images/vbet_
 ||upload.ee//
@@ -15276,6 +15277,7 @@ hibinform.ru,tatfish.com##.add
 openssource.biz##.add-link
 brunet-ka.ru,poleznii-site.ru##.add_zen
 multiurok.ru##.additional-info > nofollow > [align="center"] > a[target="_blank"] > img
+rutube.ru#?#.additional-recommendations-module__grid-card:-abp-has([id^=adfox])
 spbdnevnik.ru##.adds
 kg-portal.ru##.adex
 togliatti24.ru##.adf-ins
@@ -21341,6 +21343,7 @@ pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##div[class^="raleas-navb
 agropolit.com,elevatorist.com,kurkul.com,latifundist.com,superagronom.com,zemliak.com##div[class^="rcl-"]
 samaragovorit.ru##div[class^="rec"]
 newsler.ru,xittv.net##div[class^="rec-"]
+up.mk.ua##div[class^="reclam_"]
 radioprofusion.com##div[class^="reclama_"]
 brovary.net.ua,neboleem.net,zhenskij-sajt-katerina.ru##div[class^="rek"]
 vesti.az##div[class^="rek_"]
@@ -23476,6 +23479,7 @@ championat.com,championat.ru##.adv-mark
 lenta.news,lenta.ru##.advertisable-plate__erid
 championat.com,championat.ru#?#.article-preview._video:-abp-has(> div > a[href*="okko.sport"])
 gazeta.press,gazeta.ru##.b_custom_logo
+gazeta.press,gazeta.ru##.b_promo_twz
 championat.com,championat.ru,gazeta.press,gazeta.ru,lenta.news,lenta.ru##.banner
 lenta.news,lenta.ru##.banner + div[class][id]
 championat.com,championat.ru##.banner-announce
@@ -23507,6 +23511,7 @@ lenta.news,lenta.ru##.topic-body__content > .box-external-video:last-child
 lenta.news,lenta.ru##.topic-footer > .box-external-video
 lenta.news,lenta.ru##.topic-page__info ~ div
 lenta.news,lenta.ru##.traffic-exchange
+lenta.news,lenta.ru##.twz-banner
 lenta.news,lenta.ru##.vk-video-popup
 lenta.news,lenta.ru##.yandex-games
 rambler.ru,rambler.ua,www.afisha.ru##[aria-label="Реклама"]
