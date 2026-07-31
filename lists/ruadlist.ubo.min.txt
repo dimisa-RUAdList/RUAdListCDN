@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 31 Jul 2026 15:25:46 +0000
-! Diff-Path: ../patches/2026.7.31.925.patch#ruadlist
+! Last modified: Fri, 31 Jul 2026 21:16:01 +0000
+! Diff-Path: ../patches/2026.7.31.1276.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -29651,7 +29651,7 @@ rutube.ru##[id*="Player"] [class*="desktop-controls-layout-module__hidden_"]
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[id^="suggest-item-"]:has(> a[href*="://yabs.yandex."][href*="/count/"]):remove()
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[id^="suggest-item-"]:has(> a[href][target="_blank"]):remove()
 pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##[value="Скачать"]:remove-attr(disabled)
-gazeta.press,gazeta.ru##^responseheader(location)
+www.gazeta.ru##^responseheader(location)
 24smi.org##a[href*="://24smi.org/"]:remove-attr(target)
 fastpic.org,~new.fastpic.org##a[href="https://static.fastpic.ru/FastPicUploader.apk"]:remove-attr(target)
 aniu.ru,liveball.*##+js(no-setInterval-if, debugger)

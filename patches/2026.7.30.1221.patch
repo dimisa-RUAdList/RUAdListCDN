@@ -1,8 +1,8 @@
-diff name:ruadlist lines:37 checksum:2dcb629d28
+diff name:ruadlist lines:40 checksum:89bb737933
 d4 2
 a5 2
-! Last modified: Fri, 31 Jul 2026 15:25:46 +0000
-! Diff-Path: ../patches/2026.7.31.925.patch#ruadlist
+! Last modified: Fri, 31 Jul 2026 21:16:01 +0000
+! Diff-Path: ../patches/2026.7.31.1276.patch#ruadlist
 d7827 1
 a7827 2
 .link/*?fre=$third-party,xmlhttprequest
@@ -30,6 +30,9 @@ smotrim.ru##+js(json-prune, data.adverts data.ageRestriction)
 d29348 2
 d29525 1
 d29586 1
+d29657 1
+a29657 1
+www.gazeta.ru##^responseheader(location)
 a29761 1
 ||pikabu.ru/ajax/*_*?*=$xmlhttprequest,responseheader=llasalbbubrrl
 d32877 1
