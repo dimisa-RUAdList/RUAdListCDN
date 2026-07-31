@@ -1,13 +1,15 @@
-diff name:ruadlist lines:169 checksum:96afadde5c
+diff name:ruadlist lines:196 checksum:2dcb629d28
 d4 2
 a5 2
-! Last modified: Fri, 31 Jul 2026 10:48:22 +0000
-! Diff-Path: ../patches/2026.7.31.648.patch#ruadlist
+! Last modified: Fri, 31 Jul 2026 15:25:46 +0000
+! Diff-Path: ../patches/2026.7.31.925.patch#ruadlist
 a6455 1
 ||unicontext.ru^$third-party
-d7825 1
-a7825 1
+d7825 2
+a7826 3
 .link/*/*/*?*=*-*-*-$third-party,xmlhttprequest
+.link/*?fre=$third-party,xmlhttprequest
+.link/*?xJyqWI=$third-party,xmlhttprequest
 d8546 1
 a10256 1
 oboz.info##.gdpr_messagebar_detail
@@ -36,12 +38,15 @@ a15233 1
 igromania.ru##.ad-brending
 a15277 1
 rutube.ru#?#.additional-recommendations-module__grid-card:-abp-has([id^=adfox])
+a15284 1
+smotrim.ru##.adfox-topline
 d16318 1
 a16318 1
 aniliberty.top##.commercial-banner
 d16630 1
 a16892 1
 vokrug.tv##.header-new-submenu__promo
+d16917 1
 d17025 1
 a17025 1
 igromania.ru##.informer-container
@@ -50,16 +55,22 @@ d17144 2
 a17145 2
 igromania.ru##.knb-grid-layout > .no-radius
 igromania.ru##.knb-informer
+d17222 1
+a17222 1
+androidinsider.ru,appleinsider.ru##.link-alert[rel*="sponsored"]
 d17469 1
 d17478 1
 a17478 1
 aniliberty.top#?#.mt-8:-abp-has(> .commercial-banner)
 a17523 1
 notebookcheck-ru.com##.nbc-r-float-inline
+a17667 1
+kanobu.ru#?#.overflow-hidden:-abp-has(> [src^="/_next/static/media/grid_ad_"])
 a17815 1
 dorognoe.ru,radio7.ru##.player-rekl-container
 a18088 1
 check-host.net##.ri-btive
+d18116 1
 a18246 1
 vokrug.tv##.sd_top_block
 d18384 1
@@ -119,6 +130,9 @@ a21889 1
 notebookcheck-ru.com##div[style^="display: inline-block; text-align: center; vertical-align: top;"]
 a22580 1
 /^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]+[^e]\.js(?:\?.*)?$/$script
+d22614 1
+a22614 1
+||pikabu.ru/ajax/*?pg5Pu=$xmlhttprequest
 a22697 1
 drive2.ru##[data-slot="drom.root"] + [data-track]
 d22712 1
@@ -149,16 +163,29 @@ aniliberty.top##.v-carousel
 aniliberty.top##.v-carousel + div.d-flex
 aniliberty.top##[class*="image-blur-"]:style(filter: none !important)
 d27348 7
+d29171 1
+a29171 1
+e1.ru,nova.rambler.ru##+js(abort-on-property-read, Object.prototype.loadBanner)
 d29254 2
 a29255 2
 80-e.ru,examenpdd.com,rg.ru,shadowcore.ru##+js(abort-on-property-read, yaContextCb)
 vsetut.su##+js(abort-on-property-read, zfgformats)
+d29288 1
+d29345 1
+a29345 2
+kufar.by##+js(json-prune, data, errors)
+smotrim.ru##+js(json-prune, data.adverts data.ageRestriction)
 d29348 1
 a29348 1
 igromania.ru##+js(json-prune, results.fixed)
+d29354 2
+d29531 1
 a29543 1
 doramatv.live,doramatv.one,doramatv.ru##+js(set-cookie, auth-required-win, true)
+d29591 1
 d29729 1
+a29767 1
+||pikabu.ru/ajax/*_*?*=$xmlhttprequest,responseheader=llasalbbubrrl
 a30086 1
 ||pastedownload.com/template/nova/js/adb/
 a32440 1

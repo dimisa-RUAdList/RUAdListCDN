@@ -1,10 +1,14 @@
-diff name:ruadlist lines:97 checksum:96afadde5c
+diff name:ruadlist lines:126 checksum:2dcb629d28
 d4 2
 a5 2
-! Last modified: Fri, 31 Jul 2026 10:48:22 +0000
-! Diff-Path: ../patches/2026.7.31.648.patch#ruadlist
+! Last modified: Fri, 31 Jul 2026 15:25:46 +0000
+! Diff-Path: ../patches/2026.7.31.925.patch#ruadlist
 a6455 1
 ||unicontext.ru^$third-party
+d7826 1
+a7826 2
+.link/*?fre=$third-party,xmlhttprequest
+.link/*?xJyqWI=$third-party,xmlhttprequest
 d10765 1
 a10765 1
 /api/*/ainfo/*$domain=igromania.ru
@@ -17,10 +21,13 @@ a15234 1
 igromania.ru##.ad-brending
 a15278 1
 rutube.ru#?#.additional-recommendations-module__grid-card:-abp-has([id^=adfox])
+a15285 1
+smotrim.ru##.adfox-topline
 d16319 1
 a16319 1
 aniliberty.top##.commercial-banner
 d16631 1
+d16919 1
 d17027 1
 a17027 1
 igromania.ru##.informer-container
@@ -29,12 +36,18 @@ d17146 2
 a17147 2
 igromania.ru##.knb-grid-layout > .no-radius
 igromania.ru##.knb-informer
+d17224 1
+a17224 1
+androidinsider.ru,appleinsider.ru##.link-alert[rel*="sponsored"]
 d17471 1
 d17480 1
 a17480 1
 aniliberty.top#?#.mt-8:-abp-has(> .commercial-banner)
+a17670 1
+kanobu.ru#?#.overflow-hidden:-abp-has(> [src^="/_next/static/media/grid_ad_"])
 a17818 1
 dorognoe.ru,radio7.ru##.player-rekl-container
+d18120 1
 d18599 1
 a18934 1
 aniliberty.top#?#.v-carousel-item:-abp-has(> div a[href^="https://funpay.com/"])
@@ -71,6 +84,9 @@ igromania.ru##div[class^="TopPageBanner_wrap_"]
 a21346 1
 up.mk.ua##div[class^="reclam_"]
 d21529 1
+d22619 1
+a22619 1
+||pikabu.ru/ajax/*?pg5Pu=$xmlhttprequest
 a22702 1
 drive2.ru##[data-slot="drom.root"] + [data-track]
 d22717 1
@@ -83,15 +99,28 @@ a27341 3
 aniliberty.top##.v-carousel
 aniliberty.top##.v-carousel + div.d-flex
 aniliberty.top##[class*="image-blur-"]:style(filter: none !important)
+d29167 1
+a29167 1
+e1.ru,nova.rambler.ru##+js(abort-on-property-read, Object.prototype.loadBanner)
 d29250 1
 a29250 1
 80-e.ru,examenpdd.com,rg.ru,shadowcore.ru##+js(abort-on-property-read, yaContextCb)
+d29284 1
+d29341 1
+a29341 2
+kufar.by##+js(json-prune, data, errors)
+smotrim.ru##+js(json-prune, data.adverts data.ageRestriction)
 d29344 1
 a29344 1
 igromania.ru##+js(json-prune, results.fixed)
+d29350 2
+d29527 1
 a29539 1
 doramatv.live,doramatv.one,doramatv.ru##+js(set-cookie, auth-required-win, true)
+d29587 1
 d29725 1
+a29763 1
+||pikabu.ru/ajax/*_*?*=$xmlhttprequest,responseheader=llasalbbubrrl
 d32879 1
 d32924 1
 a32924 1

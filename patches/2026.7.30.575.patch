@@ -1,8 +1,12 @@
-diff name:ruadlist lines:79 checksum:96afadde5c
+diff name:ruadlist lines:108 checksum:2dcb629d28
 d4 2
 a5 2
-! Last modified: Fri, 31 Jul 2026 10:48:22 +0000
-! Diff-Path: ../patches/2026.7.31.648.patch#ruadlist
+! Last modified: Fri, 31 Jul 2026 15:25:46 +0000
+! Diff-Path: ../patches/2026.7.31.925.patch#ruadlist
+d7827 1
+a7827 2
+.link/*?fre=$third-party,xmlhttprequest
+.link/*?xJyqWI=$third-party,xmlhttprequest
 d10766 1
 a10766 1
 /api/*/ainfo/*$domain=igromania.ru
@@ -14,10 +18,13 @@ a15234 1
 igromania.ru##.ad-brending
 a15278 1
 rutube.ru#?#.additional-recommendations-module__grid-card:-abp-has([id^=adfox])
+a15285 1
+smotrim.ru##.adfox-topline
 d16319 1
 a16319 1
 aniliberty.top##.commercial-banner
 d16631 1
+d16919 1
 d17027 1
 a17027 1
 igromania.ru##.informer-container
@@ -25,9 +32,15 @@ d17145 2
 a17146 2
 igromania.ru##.knb-grid-layout > .no-radius
 igromania.ru##.knb-informer
+d17223 1
+a17223 1
+androidinsider.ru,appleinsider.ru##.link-alert[rel*="sponsored"]
 d17478 1
 a17478 1
 aniliberty.top#?#.mt-8:-abp-has(> .commercial-banner)
+a17668 1
+kanobu.ru#?#.overflow-hidden:-abp-has(> [src^="/_next/static/media/grid_ad_"])
+d18119 1
 a18932 1
 aniliberty.top#?#.v-carousel-item:-abp-has(> div a[href^="https://funpay.com/"])
 d19257 1
@@ -61,6 +74,9 @@ a21133 1
 igromania.ru##div[class^="TopPageBanner_wrap_"]
 a21343 1
 up.mk.ua##div[class^="reclam_"]
+d22615 1
+a22615 1
+||pikabu.ru/ajax/*?pg5Pu=$xmlhttprequest
 a23478 1
 gazeta.press,gazeta.ru##.b_promo_twz
 a23509 1
@@ -70,10 +86,23 @@ a27337 3
 aniliberty.top##.v-carousel
 aniliberty.top##.v-carousel + div.d-flex
 aniliberty.top##[class*="image-blur-"]:style(filter: none !important)
+d29163 1
+a29163 1
+e1.ru,nova.rambler.ru##+js(abort-on-property-read, Object.prototype.loadBanner)
+d29280 1
+d29337 1
+a29337 2
+kufar.by##+js(json-prune, data, errors)
+smotrim.ru##+js(json-prune, data.adverts data.ageRestriction)
 d29340 1
 a29340 1
 igromania.ru##+js(json-prune, results.fixed)
+d29346 2
+d29523 1
+d29584 1
 d29722 1
+a29760 1
+||pikabu.ru/ajax/*_*?*=$xmlhttprequest,responseheader=llasalbbubrrl
 d32876 1
 d32921 1
 a32921 1

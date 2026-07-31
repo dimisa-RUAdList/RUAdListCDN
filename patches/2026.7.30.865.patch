@@ -1,8 +1,12 @@
-diff name:ruadlist lines:69 checksum:96afadde5c
+diff name:ruadlist lines:98 checksum:2dcb629d28
 d4 2
 a5 2
-! Last modified: Fri, 31 Jul 2026 10:48:22 +0000
-! Diff-Path: ../patches/2026.7.31.648.patch#ruadlist
+! Last modified: Fri, 31 Jul 2026 15:25:46 +0000
+! Diff-Path: ../patches/2026.7.31.925.patch#ruadlist
+d7827 1
+a7827 2
+.link/*?fre=$third-party,xmlhttprequest
+.link/*?xJyqWI=$third-party,xmlhttprequest
 d10766 1
 a10766 1
 /api/*/ainfo/*$domain=igromania.ru
@@ -10,10 +14,13 @@ d13278 1
 d15235 1
 a15235 1
 igromania.ru##.ad-brending
+a15287 1
+smotrim.ru##.adfox-topline
 d16321 1
 a16321 1
 aniliberty.top##.commercial-banner
 d16633 1
+d16921 1
 d17029 1
 a17029 1
 igromania.ru##.informer-container
@@ -21,9 +28,15 @@ d17147 2
 a17148 2
 igromania.ru##.knb-grid-layout > .no-radius
 igromania.ru##.knb-informer
+d17225 1
+a17225 1
+androidinsider.ru,appleinsider.ru##.link-alert[rel*="sponsored"]
 d17480 1
 a17480 1
 aniliberty.top#?#.mt-8:-abp-has(> .commercial-banner)
+a17670 1
+kanobu.ru#?#.overflow-hidden:-abp-has(> [src^="/_next/static/media/grid_ad_"])
+d18121 1
 a18934 1
 aniliberty.top#?#.v-carousel-item:-abp-has(> div a[href^="https://funpay.com/"])
 d19259 1
@@ -55,15 +68,31 @@ igromania.ru##div[class^="MaterialSubscription_root_"]
 d21134 2
 a21135 1
 igromania.ru##div[class^="TopPageBanner_wrap_"]
+d22618 1
+a22618 1
+||pikabu.ru/ajax/*?pg5Pu=$xmlhttprequest
 d27340 3
 a27342 3
 aniliberty.top##.v-carousel
 aniliberty.top##.v-carousel + div.d-flex
 aniliberty.top##[class*="image-blur-"]:style(filter: none !important)
+d29168 1
+a29168 1
+e1.ru,nova.rambler.ru##+js(abort-on-property-read, Object.prototype.loadBanner)
+d29285 1
+d29342 1
+a29342 2
+kufar.by##+js(json-prune, data, errors)
+smotrim.ru##+js(json-prune, data.adverts data.ageRestriction)
 d29345 1
 a29345 1
 igromania.ru##+js(json-prune, results.fixed)
+d29351 2
+d29528 1
+d29589 1
 d29727 1
+a29765 1
+||pikabu.ru/ajax/*_*?*=$xmlhttprequest,responseheader=llasalbbubrrl
 d32881 1
 d32926 1
 a32926 1

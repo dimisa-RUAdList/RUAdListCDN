@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 31 Jul 2026 10:48:22 +0000
-! Diff-Path: ../patches/2026.7.31.648.patch#ruadlist
+! Last modified: Fri, 31 Jul 2026 15:25:46 +0000
+! Diff-Path: ../patches/2026.7.31.925.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -7824,7 +7824,8 @@ _verified.php?code=*&server=runetki.com
 .json?fre=$third-party,xmlhttprequest
 .json?unique=$third-party,xmlhttprequest
 .link/*/*/*?*=*-*-*-$third-party,xmlhttprequest
-.link/*/*?fre=$third-party,xmlhttprequest
+.link/*?fre=$third-party,xmlhttprequest
+.link/*?xJyqWI=$third-party,xmlhttprequest
 .mail.ru/pixel/$image
 .marketgid.com^$domain=~marketgid.com
 .md/ads/
@@ -15284,6 +15285,7 @@ gastronom.ru##.adfox-banner
 www.onliner.by##.adfox-banner-background
 magnit.ru##.adfox-carousel-skeleton-wrapper
 profile.ru##.adfox-hidden
+smotrim.ru##.adfox-topline
 baby.ru##.adfox-video-desk
 ren.tv##.adfox-wrapper
 babyblog.ru##.adfox__topWrapper
@@ -16916,7 +16918,6 @@ chelny-izvest.ru##.header__block > .header__block-title
 vse-pro-sport.com.ua,vseprosport.by,vseprosport.kz,vseprosport.ru##.header__bonus
 tsargrad.tv##.header__btn-small
 tvmag.ru##.header__dzen-link
-smotrim.ru##.header__wrapper--inner a[href^="/tariffs?redirect="]
 i.ua,tengriauto.kz,tengrinews.kz,tengrisport.kz##.header_adv
 izhlife.ru##.header_adv_wrapper
 greenpost.ua,job.ru##.header_banner
@@ -17220,7 +17221,7 @@ cubiq.ru##.lets-review-block__aff
 cwer.me,cwer.ru,cwer.su,cwer.ws##.like_hide
 homeporno.org##.line > a[href][target="_blank"] > *
 mmotop.ru##.link-1
-androidinsider.ru,appleinsider.ru##.link-alert
+androidinsider.ru,appleinsider.ru##.link-alert[rel*="sponsored"]
 androidinsider.ru,appleinsider.ru##.link-default[rel*="sponsored"]
 vinbazar.com##.link_image
 vinbazar.com##.link_img
@@ -17666,6 +17667,7 @@ zazbruchem.te.ua##.ova-place-block__position--rendered
 tv-assia.org##.ovdiv
 domkad.ru##.over-rsi
 russia-tv.online##.overflow-hidden.border[class*="border-brand-base"]
+kanobu.ru#?#.overflow-hidden:-abp-has(> [src^="/_next/static/media/grid_ad_"])
 bstudy.net,ozlib.com,studbooks.net,studme.org,studref.com,studwood.net,vuzlit.com,xstud.org##.overheader
 krastown.com##.overlay_wrap
 truba.com##.overvideo
@@ -18116,7 +18118,6 @@ wkino4.net##.right-full > noindex
 f1analytic.com,f1ua.org.ua#?#.right-indent > .wrapper-box:-abp-has(> div > .boxTitle:-abp-contains(/реклама/i))
 1kr.ua##.right-inner > .right-social ~ .right-social
 anistar.org,astar.bz,online-star.org,online-stars.org##.right-panel-bottom > .favorites ~ span
-gorod48.ru#?#.right-side > .reading:-abp-has(> div > #MediaMetricsInject)
 playboyrussia.com##.right-side > .sticky
 galka.if.ua##.right-sidebar .widget_text:last-child
 sochinyashka.ru##.right-sidebar > .block
@@ -22612,7 +22613,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=levik.blog|livejournal.c
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
 ||ng72.ru^$csp=script-src 'self' 'unsafe-eval' https:
-||pikabu.ru/ajax/*?pg6Pu=$xmlhttprequest
+||pikabu.ru/ajax/*?pg5Pu=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -29162,7 +29163,7 @@ dzen.ru,sportsdzen.ru##+js(abort-on-property-read, Object.prototype.initAdRefres
 reshuent.ru,sdamgia.ru##+js(abort-on-property-read, Object.prototype.isAdfox)
 rbc.ru##+js(abort-on-property-read, Object.prototype.isApplySticky)
 auto.ru##+js(abort-on-property-read, Object.prototype.isTopAd)
-e1.ru,nova.rambler.ru,pikabu.ru##+js(abort-on-property-read, Object.prototype.loadBanner)
+e1.ru,nova.rambler.ru##+js(abort-on-property-read, Object.prototype.loadBanner)
 24smi.org##+js(abort-on-property-read, Object.prototype.render)
 gismeteo.by,gismeteo.kz,gismeteo.ru##+js(abort-on-property-read, Object.prototype.scriptsViaXhr)
 drive2.ru,razlozhi.ru##+js(abort-on-property-read, Object.prototype.yaContextCb)
@@ -29279,7 +29280,6 @@ forbes.ru##+js(addEventListener-defuser, click, '', elements, a[href*="utm_campa
 116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,www.fontanka.ru,ya62.ru##+js(addEventListener-defuser, click, , elements, [class^="plotsLine_"] > div)
 softonic.ru##+js(addEventListener-defuser, click, [native code])
 rutube.ru##+js(addEventListener-defuser, click, current, elements, [data-testid="embed-wrapper"])
-~player.smotrim.ru,smotrim.ru##+js(addEventListener-defuser, click, matches)
 lrepacks.net##+js(addEventListener-defuser, click, pop)
 ~id.rambler.ru,~mail.rambler.ru,rambler.ru,~vp.rambler.ru##+js(addEventListener-defuser, copy, extra)
 kp.kg,kp.kz,kp.ru,md.kp.media,rbc.ru,sportrbc.ru##+js(addEventListener-defuser, copy, getSelection)
@@ -29336,7 +29336,8 @@ livejournal.com##+js(href-sanitizer, a[href^="https://www.livejournal.com/away?t
 youtube.com##+js(href-sanitizer, a[href^="https://www.youtube.com/redirect?event="][href*="&q=http"], ?q)
 uma.media##+js(json-prune, appearance.extended_auto_start)
 ivanovonews.ru##+js(json-prune, banner.ytcode)
-kufar.by,pikabu.ru##+js(json-prune, data, errors)
+kufar.by##+js(json-prune, data, errors)
+smotrim.ru##+js(json-prune, data.adverts data.ageRestriction)
 1plus1.video##+js(json-prune, dl bpas)
 pikabu.ru##+js(json-prune, isVideoAutoplayMode)
 igromania.ru##+js(json-prune, results.fixed)
@@ -29345,8 +29346,6 @@ znanija.com##+js(json-prune, tiers.TIER_ANY)
 aniqit.com,anivod.com,ashdi.vip,kodik.cc,kodik.info,kodikdb.com,kodikplayer.com,tortuga.wtf##+js(json-prune, vast)
 lumex.space##+js(json-prune-fetch-response, ads.banners.endtag ads.banners.pausebanner ads.rolls)
 rutube.ru##+js(json-prune-fetch-response, appearance.auto_start, '', stackToMatch, embed)
-player.smotrim.ru##+js(json-prune-fetch-response, data.age_restrictions)
-player.smotrim.ru##+js(json-prune-fetch-response, data.template.disable_registration)
 ohmywishes.com##+js(json-prune-fetch-response, item.banners)
 595.ucoz.net,5wip-file.ru,file-mods.ru,infourok.ru,mixmuz.ru,myshared.ru,sims3pack.ru,wallegend.net##+js(nano-setInterval-booster)
 muzlan.top##+js(nano-setInterval-booster, .numcard)
@@ -29522,7 +29521,6 @@ playground.ru##+js(set-constant, localStorage.localstorageGameData, '')
 tv-gubernia.ru##+js(set-constant, main_air_closed, true)
 116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,starhit.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,www.fontanka.ru,ya62.ru##+js(set-constant, navigator.sendBeacon, noopFunc)
 vk.com,vk.ru##+js(set-constant, noAdsAtAll, {})
-player.smotrim.ru##+js(set-constant, pl.getParams.isPlay, null)
 eagleplatform.com##+js(set-constant, player.options.scroll, false)
 kinescope.io##+js(set-constant, playerOptions.behaviour.autoPlay, false)
 m24.ru##+js(set-constant, player_options.autoplay, false)
@@ -29583,7 +29581,6 @@ lostfilm.download,lostfilm.life,lostfilm.one,lostfilm.pro,lostfilm.today,lostfil
 gamemag.ru##.content-text:has(em:has-text(erid:)) a > strong:style(font-weight: inherit !important)
 gamemag.ru##.content-text:has(em:has-text(erid:)) a:style(pointer-events: none !important; color: inherit !important)
 playground.ru##.dfp-container:remove()
-smotrim.ru##.dialog-wrapper
 online-fix.me#@#.full-story-header:style(color: #222 !important)
 reshuent.ru,sdamgia.ru##.googlead.pub_300x250.pub_300x250m.pub_728x90.text-ad.textAd.text_ad.text_ads.text-ads.text-ad-links:style(display: block !important)
 rbc.ru##.js-index-doscroll audio[autoplay]:remove()
@@ -29759,6 +29756,7 @@ ya.ru,yandex.*##.simple-popup__overlay:remove()
 ||myfootball.*/betking/$media,redirect=noopmp4-1s
 ||oc.kg/background/*.mp4$media,redirect=noop-0.1s.mp3
 ||partnerprofitboost.com^$popunder
+||pikabu.ru/ajax/*_*?*=$xmlhttprequest,responseheader=llasalbbubrrl
 ||pravo.by/local/templates/.default/js/addtocopy.js
 ||pronpic.org^$subdocument,redirect=noopframe,domain=pronpic.org
 ||pronpic.org^$third-party,badfilter
