@@ -1,8 +1,8 @@
-diff name:ruadlist lines:93 checksum:c944a9dea6
+diff name:ruadlist lines:97 checksum:ee47e8a97a
 d4 2
 a5 2
-! Last modified: Thu, 30 Jul 2026 20:21:25 +0000
-! Diff-Path: ../patches/2026.7.30.1221.patch#ruadlist
+! Last modified: Fri, 31 Jul 2026 00:11:55 +0000
+! Diff-Path: ../patches/2026.7.31.11.patch#ruadlist
 a6455 1
 ||unicontext.ru^$third-party
 d10765 1
@@ -92,3 +92,7 @@ igromania.ru##+js(json-prune, results.fixed)
 a29539 1
 doramatv.live,doramatv.one,doramatv.ru##+js(set-cookie, auth-required-win, true)
 d29725 1
+d32879 1
+d32924 1
+a32924 1
+/^https?:\/\/pikabu\.ru\/ajax\/([A-Za-z0-9_]{7,})+\?[A-Za-z0-9]+=[0-9a-z-]+[0-9a-z_]/$xmlhttprequest,domain=pikabu.ru
