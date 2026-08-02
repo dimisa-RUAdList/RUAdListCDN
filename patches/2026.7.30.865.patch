@@ -1,8 +1,8 @@
-diff name:ruadlist lines:167 checksum:dfaad1fce3
+diff name:ruadlist lines:198 checksum:70c5eea0e8
 d4 2
 a5 2
-! Last modified: Sat, 01 Aug 2026 21:04:54 +0000
-! Diff-Path: ../patches/2026.8.1.1264.patch#ruadlist
+! Last modified: Sun, 02 Aug 2026 03:45:19 +0000
+! Diff-Path: ../patches/2026.8.2.225.patch#ruadlist
 d7567 2
 d7824 4
 d7874 2
@@ -24,11 +24,20 @@ a10766 1
 d12999 2
 d13278 1
 d13385 4
+d14477 1
+a14477 1
+fastpic.org###mainContainer > .d-lg-block
+d15105 1
 d15235 1
 a15235 1
 igromania.ru##.ad-brending
 a15287 1
 smotrim.ru##.adfox-topline
+a15896 1
+fastpic.org##.bg-light.rounded
+d16266 1
+a16266 1
+fastpic.org##.col-auto > .justify-content-center
 d16321 1
 a16321 1
 aniliberty.top##.commercial-banner
@@ -49,7 +58,11 @@ a17480 1
 aniliberty.top#?#.mt-8:-abp-has(> .commercial-banner)
 a17670 1
 kanobu.ru#?#.overflow-hidden:-abp-has(> [src^="/_next/static/media/grid_ad_"])
+a17671 1
+fastpic.org##.overlay-banner-container
 d18121 1
+a18600 1
+fastpic.org##.sticky-top
 a18934 1
 aniliberty.top#?#.v-carousel-item:-abp-has(> div a[href^="https://funpay.com/"])
 d19259 1
@@ -72,6 +85,13 @@ igromania.ru#?#[class^="MaterialsManufacturerPage_infiniteWrap"] > div[class^="I
 igromania.ru#?#[class^="MaterialsManufacturerPage_infiniteWrap"] > div[class^="InfiniteScrollWrap_content"] > [class^="MaterialItemPage_materialSection"]:-abp-has(> div [class^="SpecialLabelOfArticle_isPartnerMaterial"])
 igromania.ru##[class^="PlotWithMaterials_plots_"] [class*="_tabs"] > button ~ button
 igromania.ru#?#[class^="PlotWithMaterials_plots_"]:-abp-has(> div [class*="_tabs"] > button ~ button[class*="_active_"]) [class^="PlotWithMaterials_head_"] ~ div
+d19379 1
+d20699 1
+a20752 1
+fastpic.org##body > div[id][aria-hidden]
+a20810 1
+fastpic.org##body[class] > div[id]:not([class]):not([style])
+d21066 1
 d21111 1
 a21111 1
 igromania.ru##div[class^="AdLink_"]
@@ -84,6 +104,12 @@ igromania.ru##div[class^="MaterialSubscription_root_"]
 d21134 2
 a21135 1
 igromania.ru##div[class^="TopPageBanner_wrap_"]
+d21375 1
+d21643 1
+d21861 1
+a21861 1
+www.kinopoisk.ru##div[style="width: 100%; height: 250px;"]
+d22050 1
 d22618 1
 a22618 1
 ||pikabu.ru/ajax/*?pg5Pu=$xmlhttprequest
@@ -154,6 +180,11 @@ d29345 1
 a29345 1
 igromania.ru##+js(json-prune, results.fixed)
 d29351 2
+d29439 1
+a29439 1
+fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /ABN|adMa|atOptions|body.appendChild|generateContent|Math.floor|Math.rnd|MutationObserver|parseInt/)
+a29453 1
+fastpic.org,~new.fastpic.org##+js(remove-node-text, style, /ex-over-top|2147483647/)
 d29528 1
 d29589 1
 d29660 1

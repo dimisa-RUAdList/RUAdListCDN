@@ -1,8 +1,8 @@
-diff name:ruadlist lines:194 checksum:dfaad1fce3
+diff name:ruadlist lines:225 checksum:70c5eea0e8
 d4 2
 a5 2
-! Last modified: Sat, 01 Aug 2026 21:04:54 +0000
-! Diff-Path: ../patches/2026.8.1.1264.patch#ruadlist
+! Last modified: Sun, 02 Aug 2026 03:45:19 +0000
+! Diff-Path: ../patches/2026.8.2.225.patch#ruadlist
 a6455 1
 ||unicontext.ru^$third-party
 d7566 2
@@ -29,6 +29,10 @@ d13384 4
 a13542 1
 ||up.mk.ua/assets/reclams/
 d13875 1
+d14476 1
+a14476 1
+fastpic.org###mainContainer > .d-lg-block
+d15104 1
 d15234 1
 a15234 1
 igromania.ru##.ad-brending
@@ -36,6 +40,11 @@ a15278 1
 rutube.ru#?#.additional-recommendations-module__grid-card:-abp-has([id^=adfox])
 a15285 1
 smotrim.ru##.adfox-topline
+a15894 1
+fastpic.org##.bg-light.rounded
+d16264 1
+a16264 1
+fastpic.org##.col-auto > .justify-content-center
 d16319 1
 a16319 1
 aniliberty.top##.commercial-banner
@@ -58,10 +67,14 @@ a17480 1
 aniliberty.top#?#.mt-8:-abp-has(> .commercial-banner)
 a17670 1
 kanobu.ru#?#.overflow-hidden:-abp-has(> [src^="/_next/static/media/grid_ad_"])
+a17671 1
+fastpic.org##.overlay-banner-container
 a17818 1
 dorognoe.ru,radio7.ru##.player-rekl-container
 d18120 1
 d18599 1
+a18600 1
+fastpic.org##.sticky-top
 a18934 1
 aniliberty.top#?#.v-carousel-item:-abp-has(> div a[href^="https://funpay.com/"])
 d19259 1
@@ -84,6 +97,13 @@ igromania.ru#?#[class^="MaterialsManufacturerPage_infiniteWrap"] > div[class^="I
 igromania.ru#?#[class^="MaterialsManufacturerPage_infiniteWrap"] > div[class^="InfiniteScrollWrap_content"] > [class^="MaterialItemPage_materialSection"]:-abp-has(> div [class^="SpecialLabelOfArticle_isPartnerMaterial"])
 igromania.ru##[class^="PlotWithMaterials_plots_"] [class*="_tabs"] > button ~ button
 igromania.ru#?#[class^="PlotWithMaterials_plots_"]:-abp-has(> div [class*="_tabs"] > button ~ button[class*="_active_"]) [class^="PlotWithMaterials_head_"] ~ div
+d19379 1
+d20699 1
+a20752 1
+fastpic.org##body > div[id][aria-hidden]
+a20810 1
+fastpic.org##body[class] > div[id]:not([class]):not([style])
+d21066 1
 d21100 1
 d21112 1
 a21112 1
@@ -99,7 +119,13 @@ a21136 1
 igromania.ru##div[class^="TopPageBanner_wrap_"]
 a21346 1
 up.mk.ua##div[class^="reclam_"]
+d21375 1
 d21529 1
+d21644 1
+d21862 1
+a21862 1
+www.kinopoisk.ru##div[style="width: 100%; height: 250px;"]
+d22051 1
 d22619 1
 a22619 1
 ||pikabu.ru/ajax/*?pg5Pu=$xmlhttprequest
@@ -179,6 +205,11 @@ d29344 1
 a29344 1
 igromania.ru##+js(json-prune, results.fixed)
 d29350 2
+d29438 1
+a29438 1
+fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /ABN|adMa|atOptions|body.appendChild|generateContent|Math.floor|Math.rnd|MutationObserver|parseInt/)
+a29452 1
+fastpic.org,~new.fastpic.org##+js(remove-node-text, style, /ex-over-top|2147483647/)
 d29527 1
 a29539 1
 doramatv.live,doramatv.one,doramatv.ru##+js(set-cookie, auth-required-win, true)
