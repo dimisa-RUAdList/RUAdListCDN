@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 02 Aug 2026 17:10:50 +0000
-! Diff-Path: ../patches/2026.8.2.1030.patch#ruadlist
+! Last modified: Sun, 02 Aug 2026 22:04:21 +0000
+! Diff-Path: ../patches/2026.8.2.1324.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -6736,6 +6736,7 @@
 ||vne56wxlp.shop^$third-party
 ||vnhhg.com^$third-party
 ||vnlxijwb6yu1w.ru^$third-party
+||vnmfvnkd.win^$third-party
 ||vnrvss.com^$third-party
 ||vogfzg.com^$third-party
 ||vogodita.com^
@@ -8047,6 +8048,7 @@ _verified.php?code=*&server=runetki.com
 /get.php?user_id=*&mode=$third-party,script
 /get?script_slot=beroll_script
 /get_ads.php?player=$~third-party,xmlhttprequest
+/get_adv?player=*&rolltype=$xmlhttprequest
 /get_banner_flash.*&shop=
 /get_tiz.
 /getcode/?domain=$third-party,script
