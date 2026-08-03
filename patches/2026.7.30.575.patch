@@ -1,8 +1,8 @@
-diff name:ruadlist lines:229 checksum:a4db506c5e
+diff name:ruadlist lines:261 checksum:6dbcaadd80
 d4 2
 a5 2
-! Last modified: Mon, 03 Aug 2026 11:38:25 +0000
-! Diff-Path: ../patches/2026.8.3.698.patch#ruadlist
+! Last modified: Mon, 03 Aug 2026 17:17:06 +0000
+! Diff-Path: ../patches/2026.8.3.1037.patch#ruadlist
 a6738 1
 ||vnmfvnkd.win^$third-party
 d7567 2
@@ -28,6 +28,8 @@ a10753 1
 d10766 1
 a10766 1
 /api/*/ainfo/*$domain=igromania.ru
+a11650 1
+||fastpic.org/p.js
 a12011 1
 ||interface31.ru/images/mikrotik-sensei-
 d12999 2
@@ -57,6 +59,9 @@ a15704 1
 pingvinus.ru##.ban-wideline
 a15894 1
 fastpic.org##.bg-light.rounded
+d16252 1
+a16252 1
+ahen.me,allhen.online,doramatv.live,doramatv.one,doramatv.ru,findani.me,findanime.me,findanime.ru,grouple.co,koro.life,librebook.me,mintmanga.com,mintmanga.one,mose.rocks,readmanga.io,readmanga.ru,selflib.me,selfmanga.live,usagi.one,zazaza.me##.co_ba
 d16264 1
 a16264 1
 fastpic.org##.col-auto > .justify-content-center
@@ -82,6 +87,7 @@ a17668 1
 kanobu.ru#?#.overflow-hidden:-abp-has(> [src^="/_next/static/media/grid_ad_"])
 a17669 1
 fastpic.org##.overlay-banner-container
+d17707 1
 d18119 1
 a18598 1
 fastpic.org##.sticky-top
@@ -113,6 +119,9 @@ a20750 1
 fastpic.org##body > div[id][aria-hidden]
 a20808 1
 fastpic.org##body[class] > div[id]:not([class]):not([style])
+d20946 1
+a20946 1
+ahen.me,allhen.online,doramatv.live,doramatv.one,doramatv.ru,findani.me,findanime.me,findanime.ru,grouple.co,librebook.me,mintmanga.com,mintmanga.one,mose.rocks,readmanga.io,readmanga.ru,selflib.me,selfmanga.live,usagi.one,zazaza.me##div[class*="-brnd"]
 d21064 1
 d21109 1
 a21109 1
@@ -133,24 +142,28 @@ d21640 1
 d21858 1
 a21858 1
 www.kinopoisk.ru##div[style="width: 100%; height: 250px;"]
+a21935 1
+filmix.*,filmix.gg,filmix.date,filmix.life,filmix.pub,filmix.tech##.page-wrapper .last-news ~ .container > .information
 d22047 1
+d22599 1
+a22599 1
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js|$domain=besthdwallpaper.com|doramatv.ru|mintmanga.com
 d22615 1
 a22615 1
 ||pikabu.ru/ajax/*?pg5Pu=$xmlhttprequest
 d22635 1
 d22713 1
-a22733 37
+a22733 36
 ! Плеер VeoVeo
 $popup,domain=rstprgapipt.com|temp2cdn.link|temptcdn.com
 .json?fre=$third-party,xmlhttprequest
 .json?unique=$third-party,xmlhttprequest
 .link/*/*/*?*=*-*-*-$third-party,xmlhttprequest
+.link/*?*=*-*-*-*-$third-party,xmlhttprequest
 .link/*?fre=$third-party,xmlhttprequest
-.link/*?xJyqWI=$third-party,xmlhttprequest
-.link/stBeGraeBzBvfQItsbjwobxnoQUnPPyg?$third-party,xmlhttprequest
+.link/4ilxeli2d?$third-party,xmlhttprequest
 .txt?fre=$third-party,xmlhttprequest
 .txt?unique=$third-party,xmlhttprequest
-/\.link\/[a-zA-Z]{25,}.*\?(fre|xJyqWI)=/$third-party,xmlhttprequest
 /ad-rotator/ad-list.json
 /ad-rotator/vast.xml
 /api-integration/*?unique=$third-party,xmlhttprequest
@@ -181,11 +194,20 @@ a23478 1
 gazeta.press,gazeta.ru##.b_promo_twz
 a23509 1
 lenta.news,lenta.ru##.twz-banner
+a24379 1
+##body > #adbd.overdiv
+a24381 1
+##body > div[style^="position:fixed;inset:0;z-index:2147483647;background:black;opacity:0.01"]
+a24382 1
+##html > div[style="position:fixed;inset:0px;z-index:2147483647;pointer-events:auto;"]
 d24512 1
 d24915 1
 d25478 1
 d25657 2
 d25682 1
+d27105 1
+a27165 1
+filmix.*,filmix.gg,filmix.date,filmix.life,filmix.pub,filmix.tech##.remove-sda-wrap
 d27335 3
 a27337 3
 aniliberty.top##.v-carousel
@@ -197,6 +219,8 @@ interface31.ru##.ads-top-container:style(min-height: 0 !important; margin-bottom
 d29163 1
 a29163 1
 e1.ru,nova.rambler.ru##+js(abort-on-property-read, Object.prototype.loadBanner)
+a29261 1
+doramatv.ru,mintmanga.com##+js(abort-on-stack-trace, document.getElementById, /createAdblockBlock|createBlock/)
 d29280 1
 d29315 1
 a29317 1
@@ -211,12 +235,20 @@ d29340 1
 a29340 1
 igromania.ru##+js(json-prune, results.fixed)
 d29346 2
+d29404 1
+a29404 1
+fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, /click|load/, /exopop|popMagic|isTrusted/)
 d29434 1
 a29434 1
 fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /ABN|adMa|atOptions|body.appendChild|generateContent|Math.floor|Math.rnd|MutationObserver|parseInt/)
+d29442 1
+a29444 1
+ahen.me##+js(remove-node-text, script, isAdBlock)
 a29448 1
 fastpic.org,~new.fastpic.org##+js(remove-node-text, style, /ex-over-top|2147483647/)
 d29523 1
+a29544 1
+findanime.me##+js(set-cookie, mose-banner, true)
 d29584 1
 d29655 1
 a29655 1
