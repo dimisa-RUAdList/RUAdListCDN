@@ -1,8 +1,8 @@
-diff name:ruadlist lines:83 checksum:c94ac35a01
+diff name:ruadlist lines:94 checksum:9da9919bfe
 d4 2
 a5 2
-! Last modified: Wed, 05 Aug 2026 15:23:08 +0000
-! Diff-Path: ../patches/2026.8.5.923.patch#ruadlist
+! Last modified: Wed, 05 Aug 2026 21:21:15 +0000
+! Diff-Path: ../patches/2026.8.5.1281.patch#ruadlist
 a6738 1
 ||vnmfvnkd.win^$third-party
 a8049 1
@@ -30,6 +30,8 @@ a17949 1
 dtf.ru##.quiz-shell > .promo-wrapper
 a18484 1
 rzd-partner.ru##.sm-banner
+a20850 1
+drive2.ru#?#div:-abp-has(> .drom-grid)
 d20923 1
 a20923 1
 ahen.me,allhen.online,doramatv.live,doramatv.one,doramatv.ru,findani.me,findanime.me,findanime.ru,grouple.co,librebook.me,mintmanga.com,mintmanga.one,mose.rocks,readmanga.io,readmanga.ru,selflib.me,selfmanga.live,usagi.one,zazaza.me##div[class*="-brnd"]
@@ -45,6 +47,14 @@ a22572 1
 d22588 1
 a22588 1
 ||pikabu.ru/ajax/*?pg4Pu=$xmlhttprequest
+d22671 1
+d22685 2
+a22686 1
+drive2.ru##div[class$="--w-label"][data-slot]
+d22691 1
+a22691 2
+liveinternet.ru,sdamgia.ru##div[data-name="adWrapper"]
+drive2.ru#?#div[data-track]:-abp-has(> [id] > span:only-child:empty)
 a22709 1
 .link/*?*=*-*-*-*-$third-party,xmlhttprequest
 d22711 2
@@ -66,7 +76,7 @@ filmix.date,filmix.gg,filmix.life,filmix.pub,filmix.tech##.main-wrapper:style(ma
 filmix.date,filmix.gg,filmix.life,filmix.pub,filmix.tech##.page-wrapper:style(margin-top: 0 !important)
 d28105 2
 a29149 1
-fastpic.org,~new.fastpic.org##+js(abort-current-script, JSON, location.href)
+fastpic.org,~new.fastpic.org##+js(abort-current-script, document.addEventListener, 'opener=null')
 a29267 1
 doramatv.ru,mintmanga.com##+js(abort-on-stack-trace, document.getElementById, /createAdblockBlock|createBlock/)
 d29409 2
@@ -75,7 +85,8 @@ fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, DOMContentLoaded, 0x
 fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, click, /0x|isTrusted/)
 d29439 1
 d29447 1
-a29449 1
+a29449 2
+fastpic.org,~new.fastpic.org##+js(remove-node-text, script, getElementById, includes, referrer)
 ahen.me##+js(remove-node-text, script, isAdBlock)
 d29454 1
 a29454 1

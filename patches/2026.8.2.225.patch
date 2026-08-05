@@ -1,8 +1,8 @@
-diff name:ruadlist lines:100 checksum:c94ac35a01
+diff name:ruadlist lines:111 checksum:9da9919bfe
 d4 2
 a5 2
-! Last modified: Wed, 05 Aug 2026 15:23:08 +0000
-! Diff-Path: ../patches/2026.8.5.923.patch#ruadlist
+! Last modified: Wed, 05 Aug 2026 21:21:15 +0000
+! Diff-Path: ../patches/2026.8.5.1281.patch#ruadlist
 a6738 1
 ||vnmfvnkd.win^$third-party
 a8049 1
@@ -44,6 +44,8 @@ a17948 1
 dtf.ru##.quiz-shell > .promo-wrapper
 a18483 1
 rzd-partner.ru##.sm-banner
+a20849 1
+drive2.ru#?#div:-abp-has(> .drom-grid)
 d20922 1
 a20922 1
 ahen.me,allhen.online,doramatv.live,doramatv.one,doramatv.ru,findani.me,findanime.me,findanime.ru,grouple.co,librebook.me,mintmanga.com,mintmanga.one,mose.rocks,readmanga.io,readmanga.ru,selflib.me,selfmanga.live,usagi.one,zazaza.me##div[class*="-brnd"]
@@ -59,6 +61,14 @@ a22571 1
 d22587 1
 a22587 1
 ||pikabu.ru/ajax/*?pg4Pu=$xmlhttprequest
+d22670 1
+d22684 2
+a22685 1
+drive2.ru##div[class$="--w-label"][data-slot]
+d22690 1
+a22690 2
+liveinternet.ru,sdamgia.ru##div[data-name="adWrapper"]
+drive2.ru#?#div[data-track]:-abp-has(> [id] > span:only-child:empty)
 a22708 1
 .link/*?*=*-*-*-*-$third-party,xmlhttprequest
 d22710 2
@@ -83,7 +93,7 @@ interface31.ru##.ads-top-container:style(min-height: 0 !important; margin-bottom
 ! ---
 d28102 2
 a29146 1
-fastpic.org,~new.fastpic.org##+js(abort-current-script, JSON, location.href)
+fastpic.org,~new.fastpic.org##+js(abort-current-script, document.addEventListener, 'opener=null')
 a29264 1
 doramatv.ru,mintmanga.com##+js(abort-on-stack-trace, document.getElementById, /createAdblockBlock|createBlock/)
 d29406 2
@@ -92,7 +102,8 @@ fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, DOMContentLoaded, 0x
 fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, click, /0x|isTrusted/)
 d29436 1
 d29444 1
-a29446 1
+a29446 2
+fastpic.org,~new.fastpic.org##+js(remove-node-text, script, getElementById, includes, referrer)
 ahen.me##+js(remove-node-text, script, isAdBlock)
 d29451 1
 a29451 1

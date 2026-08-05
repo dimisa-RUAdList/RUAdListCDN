@@ -1,8 +1,8 @@
-diff name:ruadlist lines:125 checksum:c94ac35a01
+diff name:ruadlist lines:136 checksum:9da9919bfe
 d4 2
 a5 2
-! Last modified: Wed, 05 Aug 2026 15:23:08 +0000
-! Diff-Path: ../patches/2026.8.5.923.patch#ruadlist
+! Last modified: Wed, 05 Aug 2026 21:21:15 +0000
+! Diff-Path: ../patches/2026.8.5.1281.patch#ruadlist
 a6738 1
 ||vnmfvnkd.win^$third-party
 a8049 1
@@ -63,6 +63,8 @@ a20724 1
 fastpic.org##body > div[id][aria-hidden]
 a20782 1
 fastpic.org##body[class] > div[id]:not([class]):not([style])
+a20847 1
+drive2.ru#?#div:-abp-has(> .drom-grid)
 d20920 1
 a20920 1
 ahen.me,allhen.online,doramatv.live,doramatv.one,doramatv.ru,findani.me,findanime.me,findanime.ru,grouple.co,librebook.me,mintmanga.com,mintmanga.one,mose.rocks,readmanga.io,readmanga.ru,selflib.me,selfmanga.live,usagi.one,zazaza.me##div[class*="-brnd"]
@@ -85,6 +87,14 @@ a22573 1
 d22589 1
 a22589 1
 ||pikabu.ru/ajax/*?pg4Pu=$xmlhttprequest
+d22672 1
+d22686 2
+a22687 1
+drive2.ru##div[class$="--w-label"][data-slot]
+d22692 1
+a22692 2
+liveinternet.ru,sdamgia.ru##div[data-name="adWrapper"]
+drive2.ru#?#div[data-track]:-abp-has(> [id] > span:only-child:empty)
 a22710 1
 .link/*?*=*-*-*-*-$third-party,xmlhttprequest
 d22712 2
@@ -109,7 +119,7 @@ interface31.ru##.ads-top-container:style(min-height: 0 !important; margin-bottom
 ! ---
 d28104 2
 a29148 1
-fastpic.org,~new.fastpic.org##+js(abort-current-script, JSON, location.href)
+fastpic.org,~new.fastpic.org##+js(abort-current-script, document.addEventListener, 'opener=null')
 a29266 1
 doramatv.ru,mintmanga.com##+js(abort-on-stack-trace, document.getElementById, /createAdblockBlock|createBlock/)
 d29408 2
@@ -118,7 +128,8 @@ fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, DOMContentLoaded, 0x
 fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, click, /0x|isTrusted/)
 d29438 1
 d29446 1
-a29448 1
+a29448 2
+fastpic.org,~new.fastpic.org##+js(remove-node-text, script, getElementById, includes, referrer)
 ahen.me##+js(remove-node-text, script, isAdBlock)
 a29452 1
 fastpic.org,~new.fastpic.org##+js(remove-node-text, style, /ex-over-top|214748364/)

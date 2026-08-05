@@ -1,8 +1,8 @@
-diff name:ruadlist lines:79 checksum:c94ac35a01
+diff name:ruadlist lines:90 checksum:9da9919bfe
 d4 2
 a5 2
-! Last modified: Wed, 05 Aug 2026 15:23:08 +0000
-! Diff-Path: ../patches/2026.8.5.923.patch#ruadlist
+! Last modified: Wed, 05 Aug 2026 21:21:15 +0000
+! Diff-Path: ../patches/2026.8.5.1281.patch#ruadlist
 d9204 1
 a9204 1
 $popup,domain=176.114.0.126|176.114.0.132|37.220.36.15|assiatv.com|cdnpotok.com|cdntvpotok.com|freescreens.ru|imgbase.ru|imgcach.ru|imgclick.ru|kolikbolik.top|oneliketv.com|payforpic.ru|picclick.ru|picclock.ru|picforall.ru|protonvideo.to|telecdn.net|tv-assia.org
@@ -26,6 +26,8 @@ a17951 1
 dtf.ru##.quiz-shell > .promo-wrapper
 a18486 1
 rzd-partner.ru##.sm-banner
+a20852 1
+drive2.ru#?#div:-abp-has(> .drom-grid)
 d20925 1
 a20925 1
 ahen.me,allhen.online,doramatv.live,doramatv.one,doramatv.ru,findani.me,findanime.me,findanime.ru,grouple.co,librebook.me,mintmanga.com,mintmanga.one,mose.rocks,readmanga.io,readmanga.ru,selflib.me,selfmanga.live,usagi.one,zazaza.me##div[class*="-brnd"]
@@ -41,6 +43,14 @@ a22574 1
 d22590 1
 a22590 1
 ||pikabu.ru/ajax/*?pg4Pu=$xmlhttprequest
+d22673 1
+d22687 2
+a22688 1
+drive2.ru##div[class$="--w-label"][data-slot]
+d22693 1
+a22693 2
+liveinternet.ru,sdamgia.ru##div[data-name="adWrapper"]
+drive2.ru#?#div[data-track]:-abp-has(> [id] > span:only-child:empty)
 a22711 1
 .link/*?*=*-*-*-*-$third-party,xmlhttprequest
 d22713 2
@@ -62,7 +72,7 @@ filmix.date,filmix.gg,filmix.life,filmix.pub,filmix.tech##.main-wrapper:style(ma
 filmix.date,filmix.gg,filmix.life,filmix.pub,filmix.tech##.page-wrapper:style(margin-top: 0 !important)
 d28107 2
 a29151 1
-fastpic.org,~new.fastpic.org##+js(abort-current-script, JSON, location.href)
+fastpic.org,~new.fastpic.org##+js(abort-current-script, document.addEventListener, 'opener=null')
 a29269 1
 doramatv.ru,mintmanga.com##+js(abort-on-stack-trace, document.getElementById, /createAdblockBlock|createBlock/)
 d29411 2
@@ -71,7 +81,8 @@ fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, DOMContentLoaded, 0x
 fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, click, /0x|isTrusted/)
 d29441 1
 d29449 1
-a29451 1
+a29451 2
+fastpic.org,~new.fastpic.org##+js(remove-node-text, script, getElementById, includes, referrer)
 ahen.me##+js(remove-node-text, script, isAdBlock)
 d29456 1
 a29456 1
