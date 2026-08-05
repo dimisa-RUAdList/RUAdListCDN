@@ -1,8 +1,8 @@
-diff name:ruadlist lines:183 checksum:7f10dad258
+diff name:ruadlist lines:182 checksum:c94ac35a01
 d4 2
 a5 2
-! Last modified: Wed, 05 Aug 2026 10:43:49 +0000
-! Diff-Path: ../patches/2026.8.5.643.patch#ruadlist
+! Last modified: Wed, 05 Aug 2026 15:23:08 +0000
+! Diff-Path: ../patches/2026.8.5.923.patch#ruadlist
 a6738 1
 ||vnmfvnkd.win^$third-party
 d7567 2
@@ -15,7 +15,7 @@ a8067 1
 /get_adv?player=*&rolltype=$xmlhttprequest
 d9220 1
 a9220 1
-$popup,domain=176.114.0.126|176.114.0.132|37.220.36.15|assiatv.com|cdnpotok.com|cdntvpotok.com|fastpic.org|freescreens.ru|imgbase.ru|imgcach.ru|imgclick.ru|kolikbolik.top|oneliketv.com|payforpic.ru|picclick.ru|picclock.ru|picforall.ru|protonvideo.to|telecdn.net|tv-assia.org
+$popup,domain=176.114.0.126|176.114.0.132|37.220.36.15|assiatv.com|cdnpotok.com|cdntvpotok.com|freescreens.ru|imgbase.ru|imgcach.ru|imgclick.ru|kolikbolik.top|oneliketv.com|payforpic.ru|picclick.ru|picclock.ru|picforall.ru|protonvideo.to|telecdn.net|tv-assia.org
 d9299 1
 d9691 1
 d10045 1
@@ -96,8 +96,6 @@ d22048 1
 d22600 1
 a22600 1
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=besthdwallpaper.com|doramatv.ru|mintmanga.com
-a22608 1
-||fastpic.org/fullview/$csp=style-src static.fastpic.org
 d22616 1
 a22616 1
 ||pikabu.ru/ajax/*?pg4Pu=$xmlhttprequest
@@ -162,6 +160,8 @@ a27889 2
 interface31.ru##.ads-top-container:style(min-height: 0 !important; margin-bottom: 0 !important)
 ! ---
 d28102 2
+a29146 1
+fastpic.org,~new.fastpic.org##+js(abort-current-script, JSON, location.href)
 a29264 1
 doramatv.ru,mintmanga.com##+js(abort-on-stack-trace, document.getElementById, /createAdblockBlock|createBlock/)
 d29317 1
@@ -169,16 +169,15 @@ a29319 1
 appleinsider.ru,znayka.cc##+js(href-sanitizer, a[href*="goto=https"], ?goto)
 a29320 1
 znayka.cc##+js(href-sanitizer, a[href*="to=https"], ?to)
-d29405 1
-a29405 1
-fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, /click|load/, /exopop|popMagic|isTrusted/)
+d29405 2
+a29407 2
+fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, DOMContentLoaded, 0x)
+fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, click, /0x|isTrusted/)
 d29435 1
-a29435 1
-fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /ABN|adMa|atOptions|body.appendChild|generateContent|Math.floor|Math.rnd|MutationObserver|parseInt/)
 d29443 1
 a29445 1
 ahen.me##+js(remove-node-text, script, isAdBlock)
 a29449 1
-fastpic.org,~new.fastpic.org##+js(remove-node-text, style, /ex-over-top|2147483647/)
+fastpic.org,~new.fastpic.org##+js(remove-node-text, style, /ex-over-top|214748364/)
 a29544 1
 findanime.me##+js(set-cookie, mose-banner, true)

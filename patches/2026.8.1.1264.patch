@@ -1,12 +1,15 @@
-diff name:ruadlist lines:123 checksum:7f10dad258
+diff name:ruadlist lines:125 checksum:c94ac35a01
 d4 2
 a5 2
-! Last modified: Wed, 05 Aug 2026 10:43:49 +0000
-! Diff-Path: ../patches/2026.8.5.643.patch#ruadlist
+! Last modified: Wed, 05 Aug 2026 15:23:08 +0000
+! Diff-Path: ../patches/2026.8.5.923.patch#ruadlist
 a6738 1
 ||vnmfvnkd.win^$third-party
 a8049 1
 /get_adv?player=*&rolltype=$xmlhttprequest
+d9202 1
+a9202 1
+$popup,domain=176.114.0.126|176.114.0.132|37.220.36.15|assiatv.com|cdnpotok.com|cdntvpotok.com|freescreens.ru|imgbase.ru|imgcach.ru|imgclick.ru|kolikbolik.top|oneliketv.com|payforpic.ru|picclick.ru|picclock.ru|picforall.ru|protonvideo.to|telecdn.net|tv-assia.org
 d10532 1
 a10532 1
 $csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: *.addtoany.com *.amazonaws.com *.cloudflare.com content-loader.com *.crx4chrome.com *.dmca.com *.disqus.com *.disquscdn.com *.enduro.team *.facebook.com *.getsitecontrol.com accounts.google.com apis.google.com cse.google.com *.google.com/cse/ *.google.com/complete/ *.google.com/recaptcha/ translate.google.com www.google.com *.googleapis.com *.googletagmanager.com *.gstatic.com/ *.html-load.com *.icon-icons.com *.instagram.com *.jivosite.com *.jquery.com *.keycaptcha.com *.sendpulse.com *.sharethis.com cdn.snigelweb.com *.po.st *.threadloom.com *.tiktok.com *.trustpilot.com *.twitter.com vk.com www.youtube.com *.dev *.io *.net *.org *.ru *.ua,domain=agroter.com.ua|alensat.com|askentire.net|autonews.co.ua|autosoftos.com|babla.ru|bio-lessons.ru|callfilter.app|cardiagram.com.ua|clickthis.blog|coollib.net|crx4chrome.com|delo.ua|elegantwoman.kyiv.ua|enduro.team|eurointegration.com.ua|farposst.ru|findhow.org|for-driver.info|gazeta-misto.te.ua|golos.te.ua|icon-icons.com|ilenta.com|index.minfin.com.ua|inforesist.org|irtafax.com|kovelpost.com|kreschatic.kiev.ua|kurs.com.ua|mirlib.ru|mobdisc.com|moddisc.com|modfix.ru|musinfo.net|newsyou.info|notebookcheck-ru.com|nsn.net.ua|okulyk.kz|ontvtime.ru|orbit-games.com|pb-news.info|perpendicular.pro|pes-files.ru|pingvin.pro|poezdato.net|poizdato.net|pravda.com.ua|prilivy.com|rovesnyknews.te.ua|ruboard.website|skidkaonline.by|skidkaonline.ru|sundries.ua|tempmailg.com|tenews.org.ua|ternopillive.com|tribun.com.ua|uapress.kyiv.ua|valorantinfo.com|vesti-ua.net|vkazivka.com|wallpapershome.ru|xn--80aaukc.xn--j1amh
@@ -79,8 +82,6 @@ d22021 1
 d22573 1
 a22573 1
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=besthdwallpaper.com|doramatv.ru|mintmanga.com
-a22581 1
-||fastpic.org/fullview/$csp=style-src static.fastpic.org
 d22589 1
 a22589 1
 ||pikabu.ru/ajax/*?pg4Pu=$xmlhttprequest
@@ -107,18 +108,19 @@ a27891 2
 interface31.ru##.ads-top-container:style(min-height: 0 !important; margin-bottom: 0 !important)
 ! ---
 d28104 2
+a29148 1
+fastpic.org,~new.fastpic.org##+js(abort-current-script, JSON, location.href)
 a29266 1
 doramatv.ru,mintmanga.com##+js(abort-on-stack-trace, document.getElementById, /createAdblockBlock|createBlock/)
-d29408 1
-a29408 1
-fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, /click|load/, /exopop|popMagic|isTrusted/)
+d29408 2
+a29410 2
+fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, DOMContentLoaded, 0x)
+fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, click, /0x|isTrusted/)
 d29438 1
-a29438 1
-fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /ABN|adMa|atOptions|body.appendChild|generateContent|Math.floor|Math.rnd|MutationObserver|parseInt/)
 d29446 1
 a29448 1
 ahen.me##+js(remove-node-text, script, isAdBlock)
 a29452 1
-fastpic.org,~new.fastpic.org##+js(remove-node-text, style, /ex-over-top|2147483647/)
+fastpic.org,~new.fastpic.org##+js(remove-node-text, style, /ex-over-top|214748364/)
 a29547 1
 findanime.me##+js(set-cookie, mose-banner, true)
