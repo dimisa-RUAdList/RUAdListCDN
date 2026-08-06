@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 06 Aug 2026 03:28:46 +0000
-! Diff-Path: ../patches/2026.8.6.208.patch#ruadlist
+! Last modified: Thu, 06 Aug 2026 06:40:05 +0000
+! Diff-Path: ../patches/2026.8.6.400.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -29153,7 +29153,7 @@ marieclaire.ua##+js(abort-current-inline-script, redram, /загрузка.../)
 livesport.ws##+js(abort-current-inline-script, setTimeout, adblockwarn)
 liga.net##+js(abort-current-inline-script, window.innerWidth, rcBuf)
 techmusic.ru##+js(abort-current-inline-script, window.onload, _uWnd)
-fastpic.org,~new.fastpic.org##+js(abort-current-script, document.addEventListener, 'opener=null')
+fastpic.org,~new.fastpic.org##+js(abort-current-script, document.addEventListener, location.href)
 dynamo.kiev.ua##+js(abort-current-script, document.getElementById, document.body.style.overflow)
 lenta.news,lenta.ru##+js(abort-current-script, window._lentaData, url_for_scroll)
 htmlweb.ru##+js(abort-on-property-read, AdbBanner)

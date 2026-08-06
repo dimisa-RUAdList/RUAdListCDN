@@ -1,8 +1,8 @@
-diff name:ruadlist lines:54 checksum:c18b44c1bd
+diff name:ruadlist lines:54 checksum:fea700932c
 d4 2
 a5 2
-! Last modified: Thu, 06 Aug 2026 03:28:46 +0000
-! Diff-Path: ../patches/2026.8.6.208.patch#ruadlist
+! Last modified: Thu, 06 Aug 2026 06:40:05 +0000
+! Diff-Path: ../patches/2026.8.6.400.patch#ruadlist
 d9204 1
 a9204 1
 $popup,domain=176.114.0.126|176.114.0.132|37.220.36.15|assiatv.com|cdnpotok.com|cdntvpotok.com|freescreens.ru|imgbase.ru|imgcach.ru|imgclick.ru|kolikbolik.top|oneliketv.com|payforpic.ru|picclick.ru|picclock.ru|picforall.ru|protonvideo.to|telecdn.net|tv-assia.org
@@ -42,7 +42,7 @@ liveinternet.ru,sdamgia.ru##div[data-name="adWrapper"]
 drive2.ru#?#div[data-track]:-abp-has(> [id] > span:only-child:empty)
 d28110 2
 a29154 1
-fastpic.org,~new.fastpic.org##+js(abort-current-script, document.addEventListener, 'opener=null')
+fastpic.org,~new.fastpic.org##+js(abort-current-script, document.addEventListener, location.href)
 d29415 2
 a29417 2
 fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, DOMContentLoaded, 0x)
