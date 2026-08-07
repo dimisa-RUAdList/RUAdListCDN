@@ -1,8 +1,8 @@
-diff name:ruadlist lines:51 checksum:69898623ff
+diff name:ruadlist lines:50 checksum:c74a8531a6
 d4 2
 a5 2
-! Last modified: Fri, 07 Aug 2026 07:36:49 +0000
-! Diff-Path: ../patches/2026.8.7.456.patch#ruadlist
+! Last modified: Fri, 07 Aug 2026 13:23:39 +0000
+! Diff-Path: ../patches/2026.8.7.803.patch#ruadlist
 d9204 1
 a9204 1
 $popup,domain=176.114.0.126|176.114.0.132|37.220.36.15|assiatv.com|cdnpotok.com|cdntvpotok.com|freescreens.ru|imgbase.ru|imgcach.ru|imgclick.ru|kolikbolik.top|oneliketv.com|payforpic.ru|picclick.ru|picclock.ru|picforall.ru|protonvideo.to|telecdn.net|tv-assia.org
@@ -28,14 +28,15 @@ d22698 1
 a22698 2
 liveinternet.ru,sdamgia.ru##div[data-name="adWrapper"]
 drive2.ru#?#div[data-track]:-abp-has(> [id] > span:only-child:empty)
-a29156 2
-fastpic.org,~new.fastpic.org##+js(abort-current-script, document.addEventListener, 1e3)
-fastpic.org,~new.fastpic.org##+js(abort-current-script, document.addEventListener, location.href)
+d27658 1
+a29117 1
+*/splash.php?cat=$popunder
+a29156 1
+fastpic.org,~new.fastpic.org##+js(abort-current-script, document.documentElement, Date.now)
 d29417 2
-a29419 4
+a29419 3
 fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, DOMContentLoaded, 0x)
 fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, click, '', elements, html)
-fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, click, '', elements, window)
 fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, click, /0x|isTrusted/)
 d29447 1
 a29456 1
@@ -45,8 +46,6 @@ fastpic.org,~new.fastpic.org##+js(remove-node-text, script, location.href.split)
 d29462 1
 a29462 1
 fastpic.org,~new.fastpic.org##+js(remove-node-text, style, /divExo|ex-over-top|214748364/)
-a29629 1
-/splash.php?cat=$popunder
 d29740 1
 a29740 1
 embed.smotrim.ru,gofrag.ru,videobel.by##video:remove-attr(autoplay)

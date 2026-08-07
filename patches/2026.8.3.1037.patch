@@ -1,8 +1,8 @@
-diff name:ruadlist lines:79 checksum:69898623ff
+diff name:ruadlist lines:78 checksum:c74a8531a6
 d4 2
 a5 2
-! Last modified: Fri, 07 Aug 2026 07:36:49 +0000
-! Diff-Path: ../patches/2026.8.7.456.patch#ruadlist
+! Last modified: Fri, 07 Aug 2026 13:23:39 +0000
+! Diff-Path: ../patches/2026.8.7.803.patch#ruadlist
 d9204 1
 a9204 1
 $popup,domain=176.114.0.126|176.114.0.132|37.220.36.15|assiatv.com|cdnpotok.com|cdntvpotok.com|freescreens.ru|imgbase.ru|imgcach.ru|imgclick.ru|kolikbolik.top|oneliketv.com|payforpic.ru|picclick.ru|picclock.ru|picforall.ru|protonvideo.to|telecdn.net|tv-assia.org
@@ -51,19 +51,20 @@ d22694 1
 a22694 2
 liveinternet.ru,sdamgia.ru##div[data-name="adWrapper"]
 drive2.ru#?#div[data-track]:-abp-has(> [id] > span:only-child:empty)
+d27654 1
 d27670 2
 a27671 2
 filmix.date,filmix.gg,filmix.life,filmix.pub,filmix.tech##.main-wrapper:style(margin-top: 0 !important)
 filmix.date,filmix.gg,filmix.life,filmix.pub,filmix.tech##.page-wrapper:style(margin-top: 0 !important)
 d28110 2
-a29154 2
-fastpic.org,~new.fastpic.org##+js(abort-current-script, document.addEventListener, 1e3)
-fastpic.org,~new.fastpic.org##+js(abort-current-script, document.addEventListener, location.href)
+a29115 1
+*/splash.php?cat=$popunder
+a29154 1
+fastpic.org,~new.fastpic.org##+js(abort-current-script, document.documentElement, Date.now)
 d29415 2
-a29417 4
+a29417 3
 fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, DOMContentLoaded, 0x)
 fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, click, '', elements, html)
-fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, click, '', elements, window)
 fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, click, /0x|isTrusted/)
 d29445 1
 a29454 1
@@ -73,8 +74,6 @@ fastpic.org,~new.fastpic.org##+js(remove-node-text, script, location.href.split)
 d29460 1
 a29460 1
 fastpic.org,~new.fastpic.org##+js(remove-node-text, style, /divExo|ex-over-top|214748364/)
-a29627 1
-/splash.php?cat=$popunder
 d29738 1
 a29738 1
 embed.smotrim.ru,gofrag.ru,videobel.by##video:remove-attr(autoplay)

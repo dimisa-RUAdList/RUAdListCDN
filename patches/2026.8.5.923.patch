@@ -1,8 +1,8 @@
-diff name:ruadlist lines:44 checksum:69898623ff
+diff name:ruadlist lines:43 checksum:c74a8531a6
 d4 2
 a5 2
-! Last modified: Fri, 07 Aug 2026 07:36:49 +0000
-! Diff-Path: ../patches/2026.8.7.456.patch#ruadlist
+! Last modified: Fri, 07 Aug 2026 13:23:39 +0000
+! Diff-Path: ../patches/2026.8.7.803.patch#ruadlist
 a10227 1
 embed.smotrim.ru##.disclaimers
 d11632 1
@@ -24,13 +24,14 @@ d22697 1
 a22697 2
 liveinternet.ru,sdamgia.ru##div[data-name="adWrapper"]
 drive2.ru#?#div[data-track]:-abp-has(> [id] > span:only-child:empty)
+d27657 1
+a29116 1
+*/splash.php?cat=$popunder
 d29156 1
-a29156 2
-fastpic.org,~new.fastpic.org##+js(abort-current-script, document.addEventListener, 1e3)
-fastpic.org,~new.fastpic.org##+js(abort-current-script, document.addEventListener, location.href)
-a29418 2
+a29156 1
+fastpic.org,~new.fastpic.org##+js(abort-current-script, document.documentElement, Date.now)
+a29418 1
 fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, click, '', elements, html)
-fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, click, '', elements, window)
 a29455 1
 fastpic.org,~new.fastpic.org##+js(remove-node-text, script, getElementById, includes, referrer)
 a29456 1
@@ -38,8 +39,6 @@ fastpic.org,~new.fastpic.org##+js(remove-node-text, script, location.href.split)
 d29461 1
 a29461 1
 fastpic.org,~new.fastpic.org##+js(remove-node-text, style, /divExo|ex-over-top|214748364/)
-a29628 1
-/splash.php?cat=$popunder
 d29739 1
 a29739 1
 embed.smotrim.ru,gofrag.ru,videobel.by##video:remove-attr(autoplay)
