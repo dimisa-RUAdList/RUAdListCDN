@@ -1,28 +1,33 @@
-diff name:ruadlist lines:27 checksum:e7eda85203
+diff name:ruadlist lines:32 checksum:3b478aa336
 d4 2
 a5 2
-! Last modified: Thu, 06 Aug 2026 12:10:25 +0000
-! Diff-Path: ../patches/2026.8.6.730.patch#ruadlist
+! Last modified: Fri, 07 Aug 2026 00:43:00 +0000
+! Diff-Path: ../patches/2026.8.7.42.patch#ruadlist
 a10227 1
 embed.smotrim.ru##.disclaimers
-d11632 2
-a11633 1
+d11632 1
+a11632 1
 ||fastpic.org/*provider.js
 a12257 1
 ||love-games1.net/yb2.
+a12807 1
+||povarenok.ru/css/style-sp.css$stylesheet
 a18339 1
 love-games1.net##.sidebar > .accordion-in ~ .accordion-in
 d29156 1
 a29156 2
 fastpic.org,~new.fastpic.org##+js(abort-current-script, document.addEventListener, 1e3)
 fastpic.org,~new.fastpic.org##+js(abort-current-script, document.addEventListener, location.href)
+a29418 2
+fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, click, '', elements, html)
+fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, click, '', elements, window)
 a29457 1
 fastpic.org,~new.fastpic.org##+js(remove-node-text, script, location.href.split)
 d29462 1
 a29462 1
 fastpic.org,~new.fastpic.org##+js(remove-node-text, style, /divExo|ex-over-top|214748364/)
+a29629 1
+/splash.php?cat=$popunder
 d29740 1
 a29740 1
 embed.smotrim.ru,gofrag.ru,videobel.by##video:remove-attr(autoplay)
-a30008 1
-fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, click, '', elements, document)
