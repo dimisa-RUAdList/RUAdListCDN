@@ -1,8 +1,8 @@
-diff name:ruadlist lines:108 checksum:c74a8531a6
+diff name:ruadlist lines:114 checksum:d690b10cbc
 d4 2
 a5 2
-! Last modified: Fri, 07 Aug 2026 13:23:39 +0000
-! Diff-Path: ../patches/2026.8.7.803.patch#ruadlist
+! Last modified: Fri, 07 Aug 2026 17:02:29 +0000
+! Diff-Path: ../patches/2026.8.7.1022.patch#ruadlist
 d9204 1
 a9204 1
 $popup,domain=176.114.0.126|176.114.0.132|37.220.36.15|assiatv.com|cdnpotok.com|cdntvpotok.com|freescreens.ru|imgbase.ru|imgcach.ru|imgclick.ru|kolikbolik.top|oneliketv.com|payforpic.ru|picclick.ru|picclock.ru|picforall.ru|protonvideo.to|telecdn.net|tv-assia.org
@@ -29,6 +29,8 @@ a16996 1
 interfax.ru##.info-landing-wrap
 a17196 1
 rzd-partner.ru##.lg-banner
+a17489 1
+lifehacker.ru##.nav-menu__items .category-item__customized
 d17686 1
 a17951 1
 dtf.ru##.quiz-shell > .promo-wrapper
@@ -36,6 +38,8 @@ a18336 1
 love-games1.net##.sidebar > .accordion-in ~ .accordion-in
 a18486 1
 rzd-partner.ru##.sm-banner
+a18616 1
+lifehacker.ru##.swiper-wrapper .menu-item__link--colored
 a20852 1
 drive2.ru#?#div:-abp-has(> .drom-grid)
 d20925 1
@@ -83,7 +87,7 @@ filmix.date,filmix.gg,filmix.life,filmix.pub,filmix.tech##.main-wrapper:style(ma
 filmix.date,filmix.gg,filmix.life,filmix.pub,filmix.tech##.page-wrapper:style(margin-top: 0 !important)
 d28107 2
 a29112 1
-*/splash.php?cat=$popunder
+*/splash.php?*fastpic$popunder
 a29151 1
 fastpic.org,~new.fastpic.org##+js(abort-current-script, document.documentElement, Date.now)
 a29269 1
@@ -107,3 +111,5 @@ findanime.me##+js(set-cookie, mose-banner, true)
 d29733 1
 a29733 1
 embed.smotrim.ru,gofrag.ru,videobel.by##video:remove-attr(autoplay)
+a29753 1
+||fastpic.org/cz/u.php?$popunder

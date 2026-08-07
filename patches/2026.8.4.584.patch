@@ -1,8 +1,8 @@
-diff name:ruadlist lines:63 checksum:c74a8531a6
+diff name:ruadlist lines:69 checksum:d690b10cbc
 d4 2
 a5 2
-! Last modified: Fri, 07 Aug 2026 13:23:39 +0000
-! Diff-Path: ../patches/2026.8.7.803.patch#ruadlist
+! Last modified: Fri, 07 Aug 2026 17:02:29 +0000
+! Diff-Path: ../patches/2026.8.7.1022.patch#ruadlist
 d9204 1
 a9204 1
 $popup,domain=176.114.0.126|176.114.0.132|37.220.36.15|assiatv.com|cdnpotok.com|cdntvpotok.com|freescreens.ru|imgbase.ru|imgcach.ru|imgclick.ru|kolikbolik.top|oneliketv.com|payforpic.ru|picclick.ru|picclock.ru|picforall.ru|protonvideo.to|telecdn.net|tv-assia.org
@@ -19,12 +19,16 @@ a16997 1
 interfax.ru##.info-landing-wrap
 a17197 1
 rzd-partner.ru##.lg-banner
+a17490 1
+lifehacker.ru##.nav-menu__items .category-item__customized
 a17951 1
 dtf.ru##.quiz-shell > .promo-wrapper
 a18336 1
 love-games1.net##.sidebar > .accordion-in ~ .accordion-in
 a18486 1
 rzd-partner.ru##.sm-banner
+a18616 1
+lifehacker.ru##.swiper-wrapper .menu-item__link--colored
 a20852 1
 drive2.ru#?#div:-abp-has(> .drom-grid)
 a21782 1
@@ -43,7 +47,7 @@ liveinternet.ru,sdamgia.ru##div[data-name="adWrapper"]
 drive2.ru#?#div[data-track]:-abp-has(> [id] > span:only-child:empty)
 d27653 1
 a29112 1
-*/splash.php?cat=$popunder
+*/splash.php?*fastpic$popunder
 a29151 1
 fastpic.org,~new.fastpic.org##+js(abort-current-script, document.documentElement, Date.now)
 d29412 2
@@ -62,3 +66,5 @@ fastpic.org,~new.fastpic.org##+js(remove-node-text, style, /divExo|ex-over-top|2
 d29735 1
 a29735 1
 embed.smotrim.ru,gofrag.ru,videobel.by##video:remove-attr(autoplay)
+a29755 1
+||fastpic.org/cz/u.php?$popunder
