@@ -1,8 +1,8 @@
-diff name:ruadlist lines:33 checksum:200b8c4aaa
+diff name:ruadlist lines:40 checksum:075d0cb24e
 d4 2
 a5 2
-! Last modified: Sun, 09 Aug 2026 09:51:12 +0000
-! Diff-Path: ../patches/2026.8.9.591.patch#ruadlist
+! Last modified: Sun, 09 Aug 2026 14:45:59 +0000
+! Diff-Path: ../patches/2026.8.9.885.patch#ruadlist
 a11633 1
 ||fastpic.org/p.js
 a12808 1
@@ -21,12 +21,19 @@ eapteka.ru##a[href="/~social_zen"]
 d27077 1
 a27077 1
 rknweb.ru##.IsAfBlo
+a27656 1
+fastpic.org###picContainer > [style="position: relative;"]:style(background-image: none !important)
 d27659 1
+d28825 1
+a28825 1
+dzen.ru,sportsdzen.ru##[aria-label*="ница"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not([class*="MainPageTitle"]):not([class*="-rubric-"]):not(:last-child):not([aria-label])
 a29117 1
 *$popunder,domain=fastpic.org
 d29158 2
 a29159 1
-fastpic.org,~new.fastpic.org##+js(abort-current-script, document.documentElement, VIDEO)
+fastpic.org,~new.fastpic.org##+js(abort-current-script, document.documentElement, href.indexOf)
+a29273 1
+fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, Math.random, inlineScript)
 a29421 1
 fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, click, '', elements, html)
 a29764 1
