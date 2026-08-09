@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 09 Aug 2026 14:45:59 +0000
-! Diff-Path: ../patches/2026.8.9.885.patch#ruadlist
+! Last modified: Sun, 09 Aug 2026 19:42:36 +0000
+! Diff-Path: ../patches/2026.8.9.1182.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -29279,7 +29279,7 @@ fssp.gov.ru,southpark.su,turkcinema.org##+js(abort-on-property-write, document.o
 fssp.gov.ru,southpark.su,turkcinema.org##+js(abort-on-property-write, document.onselectstart)
 phys-kids.com##+js(abort-on-property-write, fetch)
 kakprosto.ru##+js(abort-on-property-write, window.yaProxy)
-fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, Math.random, inlineScript)
+fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, Math.round, inlineScript)
 tvzvezda.ru##+js(abort-on-stack-trace, Object.prototype.autoplay, assets)
 ya.ru##+js(abort-on-stack-trace, Object.prototype.loadAdvertScriptMode, /yastatic\.net/)
 shadowcore.ru##+js(abort-on-stack-trace, document.createElement, checkAboba)
