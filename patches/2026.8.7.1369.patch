@@ -1,8 +1,14 @@
-diff name:ruadlist lines:24 checksum:59e76189f7
+diff name:ruadlist lines:34 checksum:b6fb5efedb
 d4 2
 a5 2
-! Last modified: Mon, 10 Aug 2026 02:27:49 +0000
-! Diff-Path: ../patches/2026.8.10.147.patch#ruadlist
+! Last modified: Mon, 10 Aug 2026 08:47:09 +0000
+! Diff-Path: ../patches/2026.8.10.527.patch#ruadlist
+a278 1
+||ads-media.wildberries.ru^$third-party
+a5080 1
+||rb.infox.ru^
+a16429 1
+abnews.ru##.cubemagic
 a17148 1
 eapteka.ru##.layout__banners
 a19615 2
@@ -10,6 +16,8 @@ eapteka.ru#?#[id^="single-spa-application:@front-office/app-marketing-system/Pla
 eapteka.ru##[id^="single-spa-application:@front-office/app-marketing-system/Placement"][id$="One"]
 a20117 1
 eapteka.ru##a[href="/~social_zen"]
+a23445 1
+pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net###post_prelast_ad
 a27660 1
 fastpic.org###picContainer > [style="position: relative;"]:style(background-image: none !important)
 d28828 1
@@ -19,7 +27,9 @@ a29120 1
 *$popunder,domain=fastpic.org
 d29122 2
 d29163 1
-a29163 1
-fastpic.org,~new.fastpic.org##+js(abort-current-script, document.documentElement, href.indexOf)
+a29164 1
+fastpic.org,~new.fastpic.org##+js(abort-current-script, navigator.userAgent, finally)
 a29277 1
-fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, Math.round, inlineScript)
+fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, Math.round, /injectedScript|inlineScript/)
+a29432 1
+fastpic.org,~new.fastpic.org##+js(prevent-setInterval, #mainContainer)

@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 10 Aug 2026 02:27:49 +0000
-! Diff-Path: ../patches/2026.8.10.147.patch#ruadlist
+! Last modified: Mon, 10 Aug 2026 08:47:09 +0000
+! Diff-Path: ../patches/2026.8.10.527.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -276,6 +276,7 @@
 ||adrow.ru^$third-party
 ||adrun.ru^$third-party
 ||ads-lot.ru^$third-party
+||ads-media.wildberries.ru^$third-party
 ||ads-provider.com^$third-party
 ||ads-upload.gazprom-media.net^$third-party
 ||ads.digitalcaramel.com^$third-party
@@ -5078,6 +5079,7 @@
 ||razvitie-dushi.ru^$third-party
 ||razvod-suprugov.ru^$third-party
 ||rb-net.com^
+||rb.infox.ru^
 ||rb.infox.sg^
 ||rbaleno.info^$third-party
 ||rbarore.ru^$third-party
@@ -16427,6 +16429,7 @@ realt.by#?#.csc-textpic:-abp-has(> .csc-textpic-imagewrap > a > img[src*="realt.
 inforesist.org##.css-next-loader
 1000sovetov.ru##.ctaRightWidget
 google.by,google.com,google.com.ua,google.kz,google.ru##.cu-container > div[class*="commercial-unit"]
+abnews.ru##.cubemagic
 cubiq.ru##.cubiq-button
 mukachevo.net##.currency-block__logo
 business-gazeta.ru##.currency__logo
@@ -23447,6 +23450,7 @@ pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net###main_content_wrap > table[w
 pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net###page_footer .vBottom[style]
 pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net###page_header > div[style^="position:"] > a[href][target="_blank"]
 pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net###pl-speedbar
+pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net###post_prelast_ad
 pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net###tor-fl-bgn
 $third-party,object,subdocument,domain=pornolab.biz|pornolab.cc|pornolab.lib|pornolab.net
 pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net#?#.forums > tbody > tr[id]:-abp-has(> td script)
@@ -29164,8 +29168,8 @@ marieclaire.ua##+js(abort-current-inline-script, redram, /загрузка.../)
 livesport.ws##+js(abort-current-inline-script, setTimeout, adblockwarn)
 liga.net##+js(abort-current-inline-script, window.innerWidth, rcBuf)
 techmusic.ru##+js(abort-current-inline-script, window.onload, _uWnd)
-fastpic.org,~new.fastpic.org##+js(abort-current-script, document.documentElement, href.indexOf)
 dynamo.kiev.ua##+js(abort-current-script, document.getElementById, document.body.style.overflow)
+fastpic.org,~new.fastpic.org##+js(abort-current-script, navigator.userAgent, finally)
 lenta.news,lenta.ru##+js(abort-current-script, window._lentaData, url_for_scroll)
 htmlweb.ru##+js(abort-on-property-read, AdbBanner)
 fapreactor.com,pornreactor.cc,reactor.cc##+js(abort-on-property-read, CTRManager.host3)
@@ -29279,7 +29283,7 @@ fssp.gov.ru,southpark.su,turkcinema.org##+js(abort-on-property-write, document.o
 fssp.gov.ru,southpark.su,turkcinema.org##+js(abort-on-property-write, document.onselectstart)
 phys-kids.com##+js(abort-on-property-write, fetch)
 kakprosto.ru##+js(abort-on-property-write, window.yaProxy)
-fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, Math.round, inlineScript)
+fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, Math.round, /injectedScript|inlineScript/)
 tvzvezda.ru##+js(abort-on-stack-trace, Object.prototype.autoplay, assets)
 ya.ru##+js(abort-on-stack-trace, Object.prototype.loadAdvertScriptMode, /yastatic\.net/)
 shadowcore.ru##+js(abort-on-stack-trace, document.createElement, checkAboba)
@@ -29435,6 +29439,7 @@ dumatv.ru##+js(prevent-addEventListener, message, AUTOPLAY)
 news.rambler.ru##+js(prevent-fetch, &origin_type=rtb, url:/rutube.ru/api/tags/video/)
 dzen.ru,sportsdzen.ru##+js(prevent-fetch, /stats/bulk|stats/pixels|zen_audit/)
 ura.news##+js(prevent-fetch, _rsc=)
+fastpic.org,~new.fastpic.org##+js(prevent-setInterval, #mainContainer)
 evribiont.xyz##+js(prevent-setTimeout, adTestElement)
 aigenda.ru##+js(prevent-setTimeout, combinedDetector)
 forum.ixbt.com##+js(prevent-setTimeout, count_banners)

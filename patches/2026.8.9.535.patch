@@ -1,15 +1,25 @@
-diff name:ruadlist lines:14 checksum:59e76189f7
+diff name:ruadlist lines:24 checksum:b6fb5efedb
 d4 2
 a5 2
-! Last modified: Mon, 10 Aug 2026 02:27:49 +0000
-! Diff-Path: ../patches/2026.8.10.147.patch#ruadlist
+! Last modified: Mon, 10 Aug 2026 08:47:09 +0000
+! Diff-Path: ../patches/2026.8.10.527.patch#ruadlist
+a278 1
+||ads-media.wildberries.ru^$third-party
+a5080 1
+||rb.infox.ru^
+a16429 1
+abnews.ru##.cubemagic
+a23449 1
+pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net###post_prelast_ad
 a27664 1
 fastpic.org###picContainer > [style="position: relative;"]:style(background-image: none !important)
 d28832 1
 a28832 1
 dzen.ru,sportsdzen.ru##[aria-label*="ница"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not([class*="MainPageTitle"]):not([class*="-rubric-"]):not(:last-child):not([aria-label])
 d29166 1
-a29166 1
-fastpic.org,~new.fastpic.org##+js(abort-current-script, document.documentElement, href.indexOf)
+a29167 1
+fastpic.org,~new.fastpic.org##+js(abort-current-script, navigator.userAgent, finally)
 a29280 1
-fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, Math.round, inlineScript)
+fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, Math.round, /injectedScript|inlineScript/)
+a29435 1
+fastpic.org,~new.fastpic.org##+js(prevent-setInterval, #mainContainer)
