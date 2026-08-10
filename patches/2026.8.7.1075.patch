@@ -1,8 +1,8 @@
-diff name:ruadlist lines:40 checksum:b6fb5efedb
+diff name:ruadlist lines:43 checksum:9dda162b5e
 d4 2
 a5 2
-! Last modified: Mon, 10 Aug 2026 08:47:09 +0000
-! Diff-Path: ../patches/2026.8.10.527.patch#ruadlist
+! Last modified: Mon, 10 Aug 2026 10:32:42 +0000
+! Diff-Path: ../patches/2026.8.10.632.patch#ruadlist
 a278 1
 ||ads-media.wildberries.ru^$third-party
 a5080 1
@@ -16,6 +16,9 @@ eapteka.ru#?#[id^="single-spa-application:@front-office/app-marketing-system/Pla
 eapteka.ru##[id^="single-spa-application:@front-office/app-marketing-system/Placement"][id$="One"]
 a20117 1
 eapteka.ru##a[href="/~social_zen"]
+d22601 1
+a22601 1
+||pikabu.ru/ajax/*?pg3Pu=$xmlhttprequest
 a23445 1
 pornolab.biz,pornolab.cc,pornolab.lib,pornolab.net###post_prelast_ad
 d27081 1
@@ -30,10 +33,10 @@ a29120 1
 *$popunder,domain=fastpic.org
 d29122 1
 d29162 1
-a29163 1
-fastpic.org,~new.fastpic.org##+js(abort-current-script, navigator.userAgent, finally)
+a29162 1
+fastpic.org,~new.fastpic.org##+js(abort-current-script, document.documentElement.addEventListener, test)
 a29276 1
-fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, Math.round, /injectedScript|inlineScript/)
+fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, Math.round, !eval)
 a29431 1
 fastpic.org,~new.fastpic.org##+js(prevent-setInterval, #mainContainer)
 d29769 1
