@@ -1,8 +1,8 @@
-diff name:ruadlist lines:33 checksum:f5123ff705
+diff name:ruadlist lines:57 checksum:a67fbc7dad
 d4 2
 a5 2
-! Last modified: Tue, 11 Aug 2026 07:21:59 +0000
-! Diff-Path: ../patches/2026.8.11.441.patch#ruadlist
+! Last modified: Tue, 11 Aug 2026 11:00:51 +0000
+! Diff-Path: ../patches/2026.8.11.660.patch#ruadlist
 a9081 1
 ##a[href^="https://topchiksoftik.ru/"]
 d10546 1
@@ -18,6 +18,27 @@ a22608 1
 d22731 1
 a22731 1
 .link/r1svj83?$third-party,xmlhttprequest
+d23475 5
+a23479 3
+/api/banner*=$xmlhttprequest,domain=lipetsknews.ru|myliski.ru|newskrasnodar.ru|newtambov.ru|ngnovoros.ru|ngzt.ru|pg02.ru|pg11.ru|pg12.ru|pg13.ru|pg21.ru|pg37.ru|pg46.ru|pgn21.ru|pgr76.ru|prochepetsk.ru|prodzer.ru|progorod33.ru|progorod43.ru|progorod58.ru|progorod76.ru|progorodnn.ru|progoroduhta.ru|prosaratov.ru|usolie.info|vladivostoktimes.ru|youtvnews.com
+progorod59.ru,progorodchelny.ru,progorodnsk.ru,progorodsamara.ru,prokazan.ru##.adf-ins
+progorodsamara.ru#?#.other-news:-abp-has(> .rotator-b)
+d23481 4
+a23484 1
+progorod62.ru#?#.space-y-5:-abp-has(div[id$="holder"])
+d23486 2
+a23487 5
+progorod62.ru#?#div:-abp-has(> #mediametrics-holder)
+progorod62.ru#?#div:-abp-has(> #smi2-holder)
+lipetsknews.ru,myliski.ru,newskrasnodar.ru,newtambov.ru,ngnovoros.ru,ngzt.ru,pg02.ru,pg11.ru,pg12.ru,pg13.ru,pg21.ru,pg37.ru,pg46.ru,pgn21.ru,pgr76.ru,prochepetsk.ru,prodzer.ru,progorod33.ru,progorod43.ru,progorod58.ru,progorod76.ru,progorodnn.ru,progoroduhta.ru,prosaratov.ru,usolie.info,vladivostoktimes.ru,youtvnews.com##div[class*="Promo"]
+lipetsknews.ru,myliski.ru,newskrasnodar.ru,ngnovoros.ru,ngzt.ru,pg02.ru,pg11.ru,pg12.ru,pg13.ru,pg21.ru,pg37.ru,pg46.ru,pgr76.ru,prochepetsk.ru,prodzer.ru,progorod33.ru,progorodnn.ru,progoroduhta.ru,prosaratov.ru,usolie.info,vladivostoktimes.ru,youtvnews.com#?#div[class*="layout_contentRightStretch_"]:-abp-has(> div:only-child:empty)
+lipetsknews.ru,myliski.ru,newskrasnodar.ru,newtambov.ru,ngnovoros.ru,ngzt.ru,pg02.ru,pg11.ru,pg12.ru,pg13.ru,pg21.ru,pg37.ru,pg46.ru,pgn21.ru,pgr76.ru,prochepetsk.ru,prodzer.ru,progorod33.ru,progorod43.ru,progorod58.ru,progorod76.ru,progorodnn.ru,progoroduhta.ru,prosaratov.ru,usolie.info,vladivostoktimes.ru,youtvnews.com##div[class^="promo"]
+a23488 1
+progorod62.ru##div[id^="fancy-place-ad"]
+d28836 2
+a28837 2
+dzen.ru,sportsdzen.ru##[aria-label*="ица"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id]
+dzen.ru,sportsdzen.ru##[aria-label*="ица"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not([class*="MainPageTitle"]):not([class*="-rubric-"]):not(:last-child):not([aria-label])
 a28956 1
 yap.ru,yaplakal.com##body:not(#id):style(background-color: #85c5a8 !important)
 a29170 1
@@ -26,6 +47,9 @@ d29172 1
 d29286 1
 a29286 1
 fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, Math.round, !eval)
+d29441 1
+a29441 1
+progorod62.ru,ura.news##+js(prevent-fetch, _rsc=)
 a29465 1
 fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /children.length|location.href.split/)
 d29476 1
