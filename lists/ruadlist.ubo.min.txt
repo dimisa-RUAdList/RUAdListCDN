@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 11 Aug 2026 11:51:59 +0000
-! Diff-Path: ../patches/2026.8.11.711.patch#ruadlist
+! Last modified: Tue, 11 Aug 2026 16:08:10 +0000
+! Diff-Path: ../patches/2026.8.11.968.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -15412,6 +15412,7 @@ vringe.com##.all_news_partners
 liveinternet.ru##.allpageinner td[height="100"]
 people-ask.ru##.altAdA
 mediapapa.org##.am
+libertycity.net,libertycity.ru##.amazing
 gofrag.ru##.amb-other
 amd.online##.amd-adfree-banner
 cmlt.ru##.an-pic-top-box
@@ -16214,6 +16215,7 @@ reviewdetector.ru##.center_banner
 pornoshara.tv##.center_col > .layout
 vseosi.ru##.centercol > center
 all-for-kompa.ru##.centersideinn > .cblock
+libertycity.net,libertycity.ru##.cfeffdfebabbfee
 pulscen.ru##.chameleon
 play.tavr.media##.channel-centre > .bottom-links ~ .d-md-block
 tlgrm.ru#?#.channel-feed > .channel-feed__brick:-abp-has(> .cfeed-card > .cfeed-card-contents--banner)
@@ -20732,7 +20734,7 @@ siver.com.ua##body > div[align="right"] > span
 progipertoniyu.ru##body > div[class*="modal"]
 povarenok.ru##body > div[class]:empty:not([style])
 votrube.ru##body > div[class]:last-of-type
-ura.news##body > div[class]:not([class*=" "]):not(.gO):not([style])
+ura.news##body > div[class]:not([class*=" "]):not([class^="geo-region-"]):not([style])
 stopgame.ru##body > div[class]:not([id]):not([style]):empty
 anilib.moe,anilib.one,anilib.top,anilibria.iss.one,anilibria.tv##body > div[class]:not([id]):nth-child(-n+5) > a[href]
 finam.ru##body > div[class^="hidden-"]
@@ -21276,6 +21278,7 @@ sm.news#?#div[class^="it_"]:-abp-has(> div[class^="banner"])
 itechua.com##div[class^="itech-"][id^="itech-"]
 objectiv.tv##div[class^="l-banners"]
 ati.su##div[class^="large-mk"]
+libertycity.net,libertycity.ru##div[class^="lc-stage-gap-"]
 sovsport.ru##div[class^="league_event_container"]
 grad.ua##div[class^="lentainform"]
 football24.ru##div[class^="leon"]
