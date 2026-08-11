@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 11 Aug 2026 16:08:10 +0000
-! Diff-Path: ../patches/2026.8.11.968.patch#ruadlist
+! Last modified: Tue, 11 Aug 2026 20:58:01 +0000
+! Diff-Path: ../patches/2026.8.11.1258.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -13976,7 +13976,7 @@ prestige-gaming.ru###back_brd
 westudents.com.ua###ban > #lin
 westudents.com.ua###ban noindex
 meteonova.ru###ban_500
-cripo.com.ua,fergananews.com,infobank.by,link.ac,liveangarsk.ru,lm-games.com,ping-admin.ru,premiership.ru,qupier.org,readbookz.com,redheadsound.studio,urod.ru,voxpopuli.kz,xtreme.ws###banner
+cripo.com.ua,fergananews.com,infobank.by,link.ac,liveangarsk.ru,lm-games.com,ping-admin.ru,premiership.ru,qupier.org,readbookz.com,urod.ru,voxpopuli.kz,xtreme.ws###banner
 9tv.co.il###banner-container
 gamexp.ru###banner-slider
 get-tune.net,mirmmo.ru,oneprogs.ru###banner-top
@@ -17702,8 +17702,6 @@ bdf.ms##.pageContent > div[style^="outline"] > a[href]:not([href^="../threads/"]
 matematikalegko.ru##.page_Banner
 darktorrent.org##.page__main a[href][target="_blank"] > img
 businessman.ru#?#.page__section:-abp-has(> .partner)
-redheadsound.studio##.page__text > div[style^="color:"]
-redheadsound.studio##.page__text > div[style^="color:"] + p > br
 nur.kz##.page__top
 djekxa.ru##.page_index.content > p a[href][target="_blank"] > img
 1777.ru##.pages_sf_right_block > table[style*="min-height:"]
@@ -18320,7 +18318,6 @@ wm-school.ru##.side-bar > div[style="margin-bottom: 10px;"]
 kinotv1.ru##.side-block > .boxTable ~ .boxTable
 tv-gubernia.ru#?#.side-block:-abp-has(> .side-header + .side-article > .side-article-title > [href=""])
 e-news.pro,e-news.su#?#.side-block:-abp-has(div:-abp-contains(Реклама))
-redheadsound.studio##.side-block[id]
 knigomir.info#?#.side-box:-abp-has(> [id="div-gpt-ad-sidebar"])
 agro-biz.ru##.side-cpa
 drive.ru##.side-link
@@ -19440,7 +19437,7 @@ starhit.ru,woman.ru##[data-creative]
 drive2.com,drive2.ru##[data-data-ym-view]
 banki.ru##[data-dfp-container]
 briefly.ru##[data-disclaimer*="Реклама"]
-basaru.net.ru,gooool365.com,gooool365.org,gooool365.sx,lexxs.us,musictor.ru,redheadsound.studio,superkarate.ru,topfile.tj,uzmov.net,weblance.com.ua##[data-dlebclicks]
+basaru.net.ru,gooool365.com,gooool365.org,gooool365.sx,lexxs.us,musictor.ru,superkarate.ru,topfile.tj,uzmov.net,weblance.com.ua##[data-dlebclicks]
 dumatv.ru##[data-dzen-url]
 arguments.kyiv.ua,dailynews.kyiv.ua,elegantwoman.kyiv.ua,glamour.kyiv.ua,lady.kyiv.ua,medicalanswers.com.ua,news24.in.ua,ua-novosti.info,ua-vestnik.com,useti.org.ua,womanlife.kyiv.ua,zhenskiy.kyiv.ua##[data-element_type="widget"] a[rel="nofollow"]
 gdetraffic.com##[data-gcat="ads"]
@@ -21011,6 +21008,7 @@ joinfo.ua##div[class*="content_ads"]
 livelib.ru##div[class*="context-ads-"]
 highload.tech,mc.today##div[class*="course-widget"]
 ren.tv##div[class*="customButtonsWrapper_"] > div
+redheadsound.studio##div[class*="description"] > p + div[style^="background-color:"]
 fireman.club##div[class*="desktop_direct"]
 www.zoneofgames.ru##div[class*="dver"]
 dltv.org##div[class*="erid"]
@@ -21546,7 +21544,6 @@ andevice.ru##div[id^="ad_header"]
 indigomath.ru##div[id^="ad_id"]
 imagenizr.net##div[id^="adblock-"]
 menquestions.ru##div[id^="add_rek"]
-redheadsound.studio##div[id^="adfinity-"]
 baginya.org##div[id^="admitad"]
 marieclaire.ua##div[id^="admixer_"] ~ .line
 baby.ru,rb.ru,susanin.news##div[id^="adriver_banner"]
@@ -26534,7 +26531,7 @@ xn--112-5cd3baof9c5c.xn--p1ai#@#.wrapad
 @@||imagebam.com/JS/js-cookie.js|$script,domain=imagebam.com
 @@||imagebam.com/assets/js/image_bootstrap.js|$script,domain=imagebam.com
 @@||images.ua.prom.st/*-canon-ir-adv.jpg|$image,domain=printerservice.com.ua
-@@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=1plus1.ua|1plus1.video|24tv.ua|debilizator.tv|gamak.tv|showjet.net|showjet.ru|stream.9tv.co.il|telek.top|unian.info|unian.net|unian.ua|veedi.com|vgtimes.com|vgtimes.ru|viho.me|viho.pro|viho.tv
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=1plus1.ua|1plus1.video|24tv.ua|debilizator.tv|gamak.tv|redheadsound.studio|showjet.net|showjet.ru|stream.9tv.co.il|telek.top|unian.info|unian.net|unian.ua|veedi.com|vgtimes.com|vgtimes.ru|viho.me|viho.pro|viho.tv
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$script,domain=stream.9tv.co.il
 @@||imasdk.googleapis.com/pal/sdkloader/pal.js$script,domain=stream.9tv.co.il
 @@||img.ria.ru/userpic/$image,domain=ria.ru
@@ -28403,8 +28400,6 @@ www.rambler.ru##footer:style(max-width: 100% !important)
 rbkgames.com##.branding .main-content:style(margin-top: 90px !important)
 rbkgames.com##html[xmlns]:style(background-image: none !important)
 ! ---
-redheadsound.studio##.page__text > div[style^="color:"] + p:style(margin-bottom: unset !important)
-! ---
 regnum.ru##.page-column > .right-adv-container:style(top: 100px !important)
 ! ---
 mag.relax.by##.b-global-branding[branding_url*=http] .b-global-wrap:style(cursor: auto !important)
@@ -29446,6 +29441,7 @@ fastpic.org,~new.fastpic.org##+js(prevent-setInterval, #mainContainer)
 evribiont.xyz##+js(prevent-setTimeout, adTestElement)
 aigenda.ru##+js(prevent-setTimeout, combinedDetector)
 forum.ixbt.com##+js(prevent-setTimeout, count_banners)
+redheadsound.studio##+js(prevent-setTimeout, initAds)
 fastpic.org,~new.fastpic.org##+js(prevent-window-open)
 i-ua.tv##+js(remove-attr, autoplay, [data-video-player="small"], stay)
 cnews.ru,gfycat.com,inter.ua,obozrevatel.com,platformcraft.ru,protv.md,rg.ru,rusvesna.su,tv8.md,xsport.ua##+js(remove-attr, autoplay, video, stay)
