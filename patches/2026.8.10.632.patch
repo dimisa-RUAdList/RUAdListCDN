@@ -1,8 +1,8 @@
-diff name:ruadlist lines:94 checksum:8171e7d60c
+diff name:ruadlist lines:96 checksum:6d127e01f9
 d4 2
 a5 2
-! Last modified: Wed, 12 Aug 2026 17:06:22 +0000
-! Diff-Path: ../patches/2026.8.12.1026.patch#ruadlist
+! Last modified: Wed, 12 Aug 2026 21:56:05 +0000
+! Diff-Path: ../patches/2026.8.12.1316.patch#ruadlist
 a9081 1
 ##a[href^="https://topchiksoftik.ru/"]
 d10546 1
@@ -90,6 +90,8 @@ redheadsound.studio##+js(prevent-setTimeout, initAds)
 a29465 1
 fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /children.length|location.href.split/)
 d29476 1
+a29579 1
+d3.ru##+js(set-cookie, purchase_invite_shown, 1)
 d32953 1
 a32953 1
 /^https?:\/\/pikabu\.ru\/ajax\/+[A-Za-z0-9_.-]{7,}\?[A-Za-z0-9]+=[0-9a-z_-]+/$xmlhttprequest,domain=pikabu.ru
