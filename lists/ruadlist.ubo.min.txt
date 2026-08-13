@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 13 Aug 2026 13:37:32 +0000
-! Diff-Path: ../patches/2026.8.13.817.patch#ruadlist
+! Last modified: Thu, 13 Aug 2026 18:02:06 +0000
+! Diff-Path: ../patches/2026.8.13.1082.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -15204,6 +15204,8 @@ healthinfo.ua##.abox
 matematikalegko.ru##.abs
 we-reads.com##.abs_row
 kidstaff.com.ua##.absk
+dtf.ru,vc.ru##.account-menu__item > [href^="/store"]
+dtf.ru,vc.ru##.account-menu__item > a[href^="https://edu.vc.ru/"]
 digger.ru##.acid
 pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##.active[style="background: #f9561b;; padding: 8px;"]
 alvin-almazov.ru##.active_bet
@@ -22574,8 +22576,8 @@ ictv.ua,vikna.tv##div[id^="div-gpt-ad-"]
 !#if ext_abp
 ! запросы
 ! ловушка для обфускации дзена: главная, статьи, новости, погода
-/^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]+[^.j][^s](?:\?.*)?$/$script
 /^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]+[^e]\.js(?:\?.*)?$/$script
+/^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]+\.e\.js(?:\?.*)?$/$script
 ||dzen.ru/a/$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/articles$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/news$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
@@ -27275,6 +27277,7 @@ www.1tv.ru##div[class^="Branding_container_"]:style(margin-top: unset !important
 24smi.org##.footer:style(margin-top: 20px !important)
 24smi.org##.out__inner > header:style(visibility: inherit !important)
 ! ---
+2gis.by,2gis.kz,2gis.ru##a[title="Гид по городу"] > div svg:style(animation: none !important)
 2gis.by,2gis.kz,2gis.ru##a[title="Гид по городу"] > div:style(animation: none !important)
 ! ---
 2ip.io,2ip.ru##.consent__notice
@@ -32959,6 +32962,7 @@ kinoafisha.ua##.turn-off-add-block-text
 stalkerportaal.ru##.video_adsense
 bookskeeper.ru,e-xecutive.ru##.warning
 forum.bestflowers.ru##.xenOverlay
+/^https?:\/\/pikabu\.ru\/ajax\/+[A-Za-z0-9_-]+(\.[A-Za-z0-9]{1,2})?\?[A-Za-z0-9]+=[0-9a-z_-]+/$xmlhttprequest,domain=pikabu.ru
 /cookie_check.min.js$domain=acetv.me
 /gogl_detector$script,domain=meddaily.ru|newsru.com
 @@||anidub.com/ads.js|$script,domain=anidub.com
@@ -33043,6 +33047,7 @@ bigpuzzle.ru##td[valign="top"][width="240px"][height="600"]
 ||kontrolnaya-rabota.ru^*/toastr.$script,stylesheet
 ||mobzon.ru/adbp/adbp.js
 ||nnm-club.ws/forum/docs/requests.js
+||pikabu.ru/ajax//$xmlhttprequest
 ||pwnews.net/des/antiblock.js$script
 ||rockstargame.su/adb_script$script
 ||rusnext.ru/advar.js$script

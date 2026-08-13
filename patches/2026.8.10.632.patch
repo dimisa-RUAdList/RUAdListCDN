@@ -1,8 +1,8 @@
-diff name:ruadlist lines:100 checksum:13cf0e8d89
+diff name:ruadlist lines:111 checksum:ca2de4788d
 d4 2
 a5 2
-! Last modified: Thu, 13 Aug 2026 13:37:32 +0000
-! Diff-Path: ../patches/2026.8.13.817.patch#ruadlist
+! Last modified: Thu, 13 Aug 2026 18:02:06 +0000
+! Diff-Path: ../patches/2026.8.13.1082.patch#ruadlist
 a9081 1
 ##a[href^="https://topchiksoftik.ru/"]
 d10290 1
@@ -16,6 +16,9 @@ a13978 1
 cripo.com.ua,fergananews.com,infobank.by,link.ac,liveangarsk.ru,lm-games.com,ping-admin.ru,premiership.ru,qupier.org,readbookz.com,urod.ru,voxpopuli.kz,xtreme.ws###banner
 a15166 1
 2gis.by,2gis.kz,2gis.ru##._1ktx0p1
+a15204 2
+dtf.ru,vc.ru##.account-menu__item > [href^="/store"]
+dtf.ru,vc.ru##.account-menu__item > a[href^="https://edu.vc.ru/"]
 a15413 1
 libertycity.net,libertycity.ru##.amazing
 a16215 1
@@ -49,6 +52,9 @@ sovsport.ru##div[class^="button"][class*="advertisement"]
 a21278 1
 libertycity.net,libertycity.ru##div[class^="lc-stage-gap-"]
 d21546 1
+d22573 1
+a22574 1
+/^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]+\.e\.js(?:\?.*)?$/$script
 d22731 1
 a22731 1
 .link/r1svj83?$third-party,xmlhttprequest
@@ -76,7 +82,8 @@ a25449 1
 d26535 1
 a26535 1
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=1plus1.ua|1plus1.video|24tv.ua|debilizator.tv|gamak.tv|redheadsound.studio|showjet.net|showjet.ru|stream.9tv.co.il|telek.top|unian.info|unian.net|unian.ua|veedi.com|vgtimes.com|vgtimes.ru|viho.me|viho.pro|viho.tv
-a27272 2
+a27272 3
+2gis.by,2gis.kz,2gis.ru##a[title="Гид по городу"] > div svg:style(animation: none !important)
 2gis.by,2gis.kz,2gis.ru##a[title="Гид по городу"] > div:style(animation: none !important)
 ! ---
 d28404 2
@@ -99,3 +106,7 @@ d29476 1
 a29579 1
 d3.ru##+js(set-cookie, purchase_invite_shown, 1)
 d32953 1
+a32953 1
+/^https?:\/\/pikabu\.ru\/ajax\/+[A-Za-z0-9_-]+(\.[A-Za-z0-9]{1,2})?\?[A-Za-z0-9]+=[0-9a-z_-]+/$xmlhttprequest,domain=pikabu.ru
+a33037 1
+||pikabu.ru/ajax//$xmlhttprequest

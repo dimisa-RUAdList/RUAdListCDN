@@ -1,8 +1,8 @@
-diff name:ruadlist lines:50 checksum:13cf0e8d89
+diff name:ruadlist lines:61 checksum:ca2de4788d
 d4 2
 a5 2
-! Last modified: Thu, 13 Aug 2026 13:37:32 +0000
-! Diff-Path: ../patches/2026.8.13.817.patch#ruadlist
+! Last modified: Thu, 13 Aug 2026 18:02:06 +0000
+! Diff-Path: ../patches/2026.8.13.1082.patch#ruadlist
 d10291 1
 a10291 1
 okko.sport,okko.tv##[data-testid="player_osd"] > div[style*="--duration-"] > div:first-child:empty
@@ -11,6 +11,9 @@ a13979 1
 cripo.com.ua,fergananews.com,infobank.by,link.ac,liveangarsk.ru,lm-games.com,ping-admin.ru,premiership.ru,qupier.org,readbookz.com,urod.ru,voxpopuli.kz,xtreme.ws###banner
 a15167 1
 2gis.by,2gis.kz,2gis.ru##._1ktx0p1
+a15205 2
+dtf.ru,vc.ru##.account-menu__item > [href^="/store"]
+dtf.ru,vc.ru##.account-menu__item > a[href^="https://edu.vc.ru/"]
 a16997 1
 sovsport.ru##.index-module-scss-module__gfQhda__wrapper
 d17705 2
@@ -31,6 +34,9 @@ d21217 1
 a21217 1
 sovsport.ru##div[class^="button"][class*="advertisement"]
 d21549 1
+d22576 1
+a22577 1
+/^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]+\.e\.js(?:\?.*)?$/$script
 a23853 1
 sports.ru##.super-top
 a25451 1
@@ -38,7 +44,8 @@ a25451 1
 d26537 1
 a26537 1
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=1plus1.ua|1plus1.video|24tv.ua|debilizator.tv|gamak.tv|redheadsound.studio|showjet.net|showjet.ru|stream.9tv.co.il|telek.top|unian.info|unian.net|unian.ua|veedi.com|vgtimes.com|vgtimes.ru|viho.me|viho.pro|viho.tv
-a27274 2
+a27274 3
+2gis.by,2gis.kz,2gis.ru##a[title="Гид по городу"] > div svg:style(animation: none !important)
 2gis.by,2gis.kz,2gis.ru##a[title="Гид по городу"] > div:style(animation: none !important)
 ! ---
 d28406 2
@@ -49,3 +56,7 @@ redheadsound.studio##+js(prevent-setTimeout, initAds)
 a29582 1
 d3.ru##+js(set-cookie, purchase_invite_shown, 1)
 d32956 1
+a32956 1
+/^https?:\/\/pikabu\.ru\/ajax\/+[A-Za-z0-9_-]+(\.[A-Za-z0-9]{1,2})?\?[A-Za-z0-9]+=[0-9a-z_-]+/$xmlhttprequest,domain=pikabu.ru
+a33040 1
+||pikabu.ru/ajax//$xmlhttprequest
