@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 13 Aug 2026 04:59:25 +0000
-! Diff-Path: ../patches/2026.8.13.299.patch#ruadlist
+! Last modified: Thu, 13 Aug 2026 08:39:03 +0000
+! Diff-Path: ../patches/2026.8.13.519.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10288,7 +10288,7 @@ tass.ru##[class*="Layout_bottom_fixed_"]
 videobel.by##[class*="player-skin-holder-uicomponent__Holder-sc-"]::before
 tass.ru##[data-no-mourning="true"][class^="DesktopLayout_above"]
 pasy.media##[data-remodal-id]
-okko.sport,okko.tv##[data-testid="player_osd"] > div[style*="--duration-"] > div:first-child::after
+okko.sport,okko.tv##[data-testid="player_osd"] > div[style*="--duration-"] > div:first-child:empty
 9111.ru##[id^="site-welcome"]
 onliner.by##[onclick="window.openCookieConsentSettings()"]
 novoruskino.net##[src$="/social.gif"]
@@ -27274,6 +27274,8 @@ www.1tv.ru##div[class^="Branding_container_"]:style(margin-top: unset !important
 ! ---
 24smi.org##.footer:style(margin-top: 20px !important)
 24smi.org##.out__inner > header:style(visibility: inherit !important)
+! ---
+2gis.by,2gis.kz,2gis.ru##a[title="Гид по городу"] > div:style(animation: none !important)
 ! ---
 2ip.io,2ip.ru##.consent__notice
 2ip.io,2ip.ru##.consent__notice ~ .body-blackout
