@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 16 Aug 2026 16:35:55 +0000
-! Diff-Path: ../patches/2026.8.16.995.patch#ruadlist
+! Last modified: Sun, 16 Aug 2026 21:29:15 +0000
+! Diff-Path: ../patches/2026.8.16.1289.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -29483,6 +29483,7 @@ ritsatv.ru##+js(remove-node-text, script, /checkAds|initAdblockCheck/)
 fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /children.length|location.href.split/)
 tapochek.net##+js(remove-node-text, script, /document.head.appendChild|document.referrer/)
 inforesist.org##+js(remove-node-text, script, /gtag\('event'/)
+fastpic.org,~new.fastpic.org##+js(remove-node-text, script, =window,d=)
 questtime.net##+js(remove-node-text, script, MsgNoAD)
 pikabu.ru##+js(remove-node-text, script, addPlaceholder)
 uwupad.me##+js(remove-node-text, script, checkAdBlock)
