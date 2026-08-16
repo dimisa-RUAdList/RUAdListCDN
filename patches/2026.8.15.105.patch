@@ -1,11 +1,18 @@
-diff name:ruadlist lines:10 checksum:c5b3a3f2db
+diff name:ruadlist lines:17 checksum:e174ebb232
 d4 2
 a5 2
-! Last modified: Sun, 16 Aug 2026 06:54:07 +0000
-! Diff-Path: ../patches/2026.8.16.414.patch#ruadlist
+! Last modified: Sun, 16 Aug 2026 11:29:14 +0000
+! Diff-Path: ../patches/2026.8.16.689.patch#ruadlist
 a20962 1
 www.kinopoisk.ru##div[class*="SuperBanner"]
 a23064 1
 sportmail.ru##.rb-bookmaker__swiper
 a23065 1
 sportmail.ru##[data-logger="sport__MatchCenter"]
+a24840 1
+||fastpic.ru^$third-party,domain=~fastpic.org
+a29187 1
+fastpic.org,~new.fastpic.org##+js(abort-on-property-read, Element.prototype.attachShadow)
+a29475 1
+fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /AppleWebKit|children.length|location.href.split|Mozilla/)
+d29477 1

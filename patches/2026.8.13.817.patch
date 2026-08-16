@@ -1,8 +1,8 @@
-diff name:ruadlist lines:22 checksum:c5b3a3f2db
+diff name:ruadlist lines:29 checksum:e174ebb232
 d4 2
 a5 2
-! Last modified: Sun, 16 Aug 2026 06:54:07 +0000
-! Diff-Path: ../patches/2026.8.16.414.patch#ruadlist
+! Last modified: Sun, 16 Aug 2026 11:29:14 +0000
+! Diff-Path: ../patches/2026.8.16.689.patch#ruadlist
 a15206 2
 dtf.ru,vc.ru##.account-menu__item > [href^="/store"]
 dtf.ru,vc.ru##.account-menu__item > a[href^="https://edu.vc.ru/"]
@@ -15,8 +15,15 @@ a23062 1
 sportmail.ru##.rb-bookmaker__swiper
 a23063 1
 sportmail.ru##[data-logger="sport__MatchCenter"]
+a24838 1
+||fastpic.ru^$third-party,domain=~fastpic.org
 a27277 1
 2gis.by,2gis.kz,2gis.ru##a[title="Гид по городу"] > div svg:style(animation: none !important)
+a29184 1
+fastpic.org,~new.fastpic.org##+js(abort-on-property-read, Element.prototype.attachShadow)
+a29472 1
+fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /AppleWebKit|children.length|location.href.split|Mozilla/)
+d29474 1
 a32961 1
 /^https?:\/\/pikabu\.ru\/ajax\/+[A-Za-z0-9_-]+(\.[A-Za-z0-9]{1,2})?\?[A-Za-z0-9]+=[0-9a-z_-]+/$xmlhttprequest,domain=pikabu.ru
 a33045 1
