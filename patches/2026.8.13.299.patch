@@ -1,8 +1,8 @@
-diff name:ruadlist lines:35 checksum:e174ebb232
+diff name:ruadlist lines:34 checksum:d7d3061f00
 d4 2
 a5 2
-! Last modified: Sun, 16 Aug 2026 11:29:14 +0000
-! Diff-Path: ../patches/2026.8.16.689.patch#ruadlist
+! Last modified: Sun, 16 Aug 2026 16:35:55 +0000
+! Diff-Path: ../patches/2026.8.16.995.patch#ruadlist
 d10291 1
 a10291 1
 okko.sport,okko.tv##[data-testid="player_osd"] > div[style*="--duration-"] > div:first-child:empty
@@ -26,9 +26,8 @@ a27277 3
 ! ---
 a29182 1
 fastpic.org,~new.fastpic.org##+js(abort-on-property-read, Element.prototype.attachShadow)
-a29470 1
-fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /AppleWebKit|children.length|location.href.split|Mozilla/)
-d29472 1
+a29468 1
+fastpic.org,~new.fastpic.org##+js(remove-node-text, script, "][")
 d32960 1
 a32960 1
 /^https?:\/\/pikabu\.ru\/ajax\/+[A-Za-z0-9_-]+(\.[A-Za-z0-9]{1,2})?\?[A-Za-z0-9]+=[0-9a-z_-]+/$xmlhttprequest,domain=pikabu.ru
