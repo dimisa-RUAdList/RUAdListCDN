@@ -1,16 +1,35 @@
-diff name:ruadlist lines:15 checksum:e323809089
+diff name:ruadlist lines:34 checksum:52c400f67c
 d4 2
 a5 2
-! Last modified: Mon, 17 Aug 2026 13:00:56 +0000
-! Diff-Path: ../patches/2026.8.17.780.patch#ruadlist
+! Last modified: Mon, 17 Aug 2026 17:36:55 +0000
+! Diff-Path: ../patches/2026.8.17.1056.patch#ruadlist
+d9207 1
+a9207 1
+$popup,domain=176.114.0.126|176.114.0.132|37.220.36.15|assiatv.com|cdnpotok.com|cdntvpotok.com|fastpic.org|freescreens.ru|imgbase.ru|imgcach.ru|imgclick.ru|kolikbolik.top|oneliketv.com|payforpic.ru|picclick.ru|picclock.ru|picforall.ru|protonvideo.to|telecdn.net|tv-assia.org
+d11636 2
+a11637 2
+||fastpic.org/*provider.js$script
+||fastpic.org/p.js$script
+a19635 1
+mt.today##[itemprop="articleBody"] > div[style^="text-align: center;"] > a[href$=".html"]
 d22615 1
 a22615 1
 ||pikabu.ru/ajax/*?fFN9t=$xmlhttprequest
+d22831 1
+a22831 1
+2ip.io,2ip.ru##.ip-links-container-row:first-child
 a24843 1
 ||fastpic.ru^$third-party,domain=~fastpic.org
+d29184 1
 a29190 1
 fastpic.org,~new.fastpic.org##+js(abort-on-property-read, Element.prototype.attachShadow)
+d29299 1
 a29339 1
 goddess-game.com,lust-girls.com##+js(close-window)
-a29476 1
-fastpic.org,~new.fastpic.org##+js(remove-node-text, script, ')||')
+d29448 2
+d29455 1
+a29477 1
+fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /0\,window|a0_0x|ad-provider|AdProvider|adManager|atOptions|disconnect|document\,window|https|globalThis|isTrusted|location\.href\.split|parentNode\.removeChild|Math\.random|MAX_CLICKS/)
+d29480 1
+a29700 1
+fastpic.org,~new.fastpic.org##[srcdoc]:remove()
