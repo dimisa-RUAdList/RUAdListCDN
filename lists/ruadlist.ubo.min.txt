@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 17 Aug 2026 03:08:03 +0000
-! Diff-Path: ../patches/2026.8.17.188.patch#ruadlist
+! Last modified: Mon, 17 Aug 2026 07:11:22 +0000
+! Diff-Path: ../patches/2026.8.17.431.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22612,7 +22612,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=levik.blog|livejournal.c
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
 ||ng72.ru^$csp=script-src 'self' 'unsafe-eval' https:
-||pikabu.ru/ajax/*?pg3Pu=$xmlhttprequest
+||pikabu.ru/ajax/*?fFN9t=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -29339,6 +29339,7 @@ rutube.ru##+js(addEventListener-defuser, visibilitychange, document.hidden)
 videobel.by##+js(adjust-setInterval, opacity-.05, 16, 25)
 reshuent.ru,sdamgia.ru##+js(adjust-setTimeout, (!1)}, 20000)
 ritsatv.ru##+js(alert-buster)
+goddess-game.com,lust-girls.com##+js(close-window)
 comedy-radio.ru,kufar.by,radioromantika.ru,relax-fm.ru,rg.ru,sm.news,veseloeradio.ru##+js(cookie-remover, /^bda|^bltsr/)
 drive2.ru##+js(cookie-remover, hurricane)
 24smi.org##+js(cookie-remover, isab)
@@ -29476,14 +29477,13 @@ online-fix.me##+js(remove-node-text, #text, РЕКЛАМНЫЙ БЛОК:)
 farposst.ru##+js(remove-node-text, #text, Реклама)
 filmitorrent.net,utorr.cc##+js(remove-node-text, #text, Реклама:)
 ya.ru##+js(remove-node-text, a, /Установите Яндекс Браузер|Установить поиск Яндекса/)
-fastpic.org,~new.fastpic.org##+js(remove-node-text, script, "][")
+fastpic.org,~new.fastpic.org##+js(remove-node-text, script, ')||')
 nullcms.ru##+js(remove-node-text, script, 'decodeURIComponent(escape')
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /A.d.b.|Adb-|A-d-b-|-Gua|dGua|dblo|tick|Адгу-/)
 ritsatv.ru##+js(remove-node-text, script, /checkAds|initAdblockCheck/)
 fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /children.length|location.href.split/)
 tapochek.net##+js(remove-node-text, script, /document.head.appendChild|document.referrer/)
 inforesist.org##+js(remove-node-text, script, /gtag\('event'/)
-fastpic.org,~new.fastpic.org##+js(remove-node-text, script, =window,d=)
 questtime.net##+js(remove-node-text, script, MsgNoAD)
 pikabu.ru##+js(remove-node-text, script, addPlaceholder)
 uwupad.me##+js(remove-node-text, script, checkAdBlock)

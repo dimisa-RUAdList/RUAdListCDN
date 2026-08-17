@@ -1,10 +1,13 @@
-diff name:ruadlist lines:18 checksum:f25242e899
+diff name:ruadlist lines:21 checksum:c792be30d5
 d4 2
 a5 2
-! Last modified: Mon, 17 Aug 2026 03:08:03 +0000
-! Diff-Path: ../patches/2026.8.17.188.patch#ruadlist
+! Last modified: Mon, 17 Aug 2026 07:11:22 +0000
+! Diff-Path: ../patches/2026.8.17.431.patch#ruadlist
 a20962 1
 www.kinopoisk.ru##div[class*="SuperBanner"]
+d22614 1
+a22614 1
+||pikabu.ru/ajax/*?fFN9t=$xmlhttprequest
 a23064 1
 sportmail.ru##.rb-bookmaker__swiper
 a23065 1
@@ -13,7 +16,7 @@ a24840 1
 ||fastpic.ru^$third-party,domain=~fastpic.org
 a29187 1
 fastpic.org,~new.fastpic.org##+js(abort-on-property-read, Element.prototype.attachShadow)
+a29336 1
+goddess-game.com,lust-girls.com##+js(close-window)
 a29473 1
-fastpic.org,~new.fastpic.org##+js(remove-node-text, script, "][")
-a29479 1
-fastpic.org,~new.fastpic.org##+js(remove-node-text, script, =window,d=)
+fastpic.org,~new.fastpic.org##+js(remove-node-text, script, ')||')
