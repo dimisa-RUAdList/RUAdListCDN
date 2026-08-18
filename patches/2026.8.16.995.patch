@@ -1,8 +1,8 @@
-diff name:ruadlist lines:51 checksum:e8ec683e60
+diff name:ruadlist lines:61 checksum:9ea676c07b
 d4 2
 a5 2
-! Last modified: Tue, 18 Aug 2026 13:51:07 +0000
-! Diff-Path: ../patches/2026.8.18.831.patch#ruadlist
+! Last modified: Tue, 18 Aug 2026 18:51:13 +0000
+! Diff-Path: ../patches/2026.8.18.1131.patch#ruadlist
 d9207 1
 a9207 1
 $popup,domain=176.114.0.126|176.114.0.132|37.220.36.15|assiatv.com|cdnpotok.com|cdntvpotok.com|fastpic.org|freescreens.ru|imgbase.ru|imgcach.ru|imgclick.ru|kolikbolik.top|oneliketv.com|payforpic.ru|picclick.ru|picclock.ru|picforall.ru|protonvideo.to|telecdn.net|tv-assia.org
@@ -30,23 +30,33 @@ a22615 1
 d22831 1
 a22831 1
 2ip.io,2ip.ru##.ip-links-container-row:first-child
+a22861 2
+www.avito.ru##div[class*=" adv-"]
+www.avito.ru##div[class*=" advRoot"]
+a22864 1
+www.avito.ru##div[class^="adv-"]
 d24108 1
 a24108 1
 mail.yandex.ru,mail.yandex.*##.RightColumnRoot
 d26132 1
 a26132 1
 @@||trainzland.org^$generichide
+d29143 1
+a29143 1
+$doc,reason=malicious,domain=apad2.top|besplatnyeprogrammy.ru|byrut.org.ru|dsazfk.com|hdrip.info|mediagetguru.ru|mixsoft.org|monna2.top|torrent-music.ru|torrent-soft.ru
 d29185 1
 d29301 1
 a29341 1
-goddess-game.com,lust-girls.com##+js(close-window)
+goddess-game.com,lust-girls.com,ouraidream.com,proceedflow.info##+js(close-window)
 d29451 1
 d29457 1
+a29457 1
+fastpic.org,~new.fastpic.org##+js(prevent-setTimeout, ad)
 d29479 1
 a29480 1
-fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /0\,window|a0_0x|ad-provider|AdProvider|adManager|atOptions|disconnect|document\,window|globalThis|isTrusted|parentNode\.removeChild|Math\.random|MAX_CLICKS/)
+fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /0\,window|a0_0x|ad-provider|AdProvider|adManager|atOptions|disconnect|document\,window|globalThis|isTrusted|parentNode\.removeChild|Math\.random|MAX_CLICKS|setTimeout/)
 d29483 1
 a29703 1
 fastpic.org,~new.fastpic.org##[srcdoc]:remove()
 a29705 1
-fastpic.org,~new.fastpic.org##a[href*="/fullview/"] > img[src*="/preview/"]:matches-path(/.html$/):style(clip-path: inset(0 0 38px 0) !important)
+fastpic.org,~new.fastpic.org##a[href*="/fullview/"] > img[src*="/preview/"]:style(clip-path: inset(0 0 38px 0) !important)

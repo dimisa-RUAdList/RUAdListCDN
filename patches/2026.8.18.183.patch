@@ -1,8 +1,8 @@
-diff name:ruadlist lines:27 checksum:e8ec683e60
+diff name:ruadlist lines:40 checksum:9ea676c07b
 d4 2
 a5 2
-! Last modified: Tue, 18 Aug 2026 13:51:07 +0000
-! Diff-Path: ../patches/2026.8.18.831.patch#ruadlist
+! Last modified: Tue, 18 Aug 2026 18:51:13 +0000
+! Diff-Path: ../patches/2026.8.18.1131.patch#ruadlist
 a12216 1
 ||libertycity.*/img/bg-web-amazing-
 a15087 1
@@ -15,14 +15,27 @@ a19590 1
 svpressa.ru,trainzland.org##[id^="adfox_"]
 a21150 1
 rknweb.ru##div[class^="adlook-"]
+a22862 2
+www.avito.ru##div[class*=" adv-"]
+www.avito.ru##div[class*=" advRoot"]
+a22865 1
+www.avito.ru##div[class^="adv-"]
 d24109 1
 a24109 1
 mail.yandex.ru,mail.yandex.*##.RightColumnRoot
 d26133 1
 a26133 1
 @@||trainzland.org^$generichide
+d29144 1
+a29144 1
+$doc,reason=malicious,domain=apad2.top|besplatnyeprogrammy.ru|byrut.org.ru|dsazfk.com|hdrip.info|mediagetguru.ru|mixsoft.org|monna2.top|torrent-music.ru|torrent-soft.ru
+d29341 1
+a29341 1
+goddess-game.com,lust-girls.com,ouraidream.com,proceedflow.info##+js(close-window)
+a29455 1
+fastpic.org,~new.fastpic.org##+js(prevent-setTimeout, ad)
 d29478 1
 a29478 1
-fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /0\,window|a0_0x|ad-provider|AdProvider|adManager|atOptions|disconnect|document\,window|globalThis|isTrusted|parentNode\.removeChild|Math\.random|MAX_CLICKS/)
+fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /0\,window|a0_0x|ad-provider|AdProvider|adManager|atOptions|disconnect|document\,window|globalThis|isTrusted|parentNode\.removeChild|Math\.random|MAX_CLICKS|setTimeout/)
 a29703 1
-fastpic.org,~new.fastpic.org##a[href*="/fullview/"] > img[src*="/preview/"]:matches-path(/.html$/):style(clip-path: inset(0 0 38px 0) !important)
+fastpic.org,~new.fastpic.org##a[href*="/fullview/"] > img[src*="/preview/"]:style(clip-path: inset(0 0 38px 0) !important)
