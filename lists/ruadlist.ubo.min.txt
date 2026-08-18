@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 18 Aug 2026 08:48:40 +0000
-! Diff-Path: ../patches/2026.8.18.528.patch#ruadlist
+! Last modified: Tue, 18 Aug 2026 13:02:36 +0000
+! Diff-Path: ../patches/2026.8.18.782.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -12214,6 +12214,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||lgotivam.ru/promo.php?
 ||li.ru/static/radio/
 ||lib.rus.ec/sites/default/files/$object
+||libertycity.*/img/bg-web-amazing-
 ||life170.ru/img/main-bg-dn.png
 ||lifehacker.ru/api/*/*/scripts*path=$xmlhttprequest
 ||lifetambov.ru/reklama
@@ -15085,6 +15086,7 @@ itc.ua###wrapper > .container > p > .out-link1
 metodsilva.ru###wrapper > .fma-bg
 gagadget.com###wrapper > .l-container_wide[style*="min-height:"]
 rasfokus.ru,waralbum.ru###wrapper > noindex
+fastpic.org###x9f8e2b
 newsko.ru###xtest-videoad
 soft.sibnet.ru###ya-block
 80-e.ru###ya-bottom
@@ -18225,7 +18227,7 @@ cnc3018.ru,termoportal.ru,zerocoolpro.biz##.samCodeUnit
 forum-volgograd.ru##.samListItem
 news.ru##.samolet-ad
 uman24.org.ua##.sample-posts
-sho.org.ua#?#.sample-posts > h4:-abp-contains(/партнер/i)
+sho.org.ua#?#.sample-posts > h2:-abp-contains(/партнер/i)
 24.cv.ua#?#.sample-posts:-abp-has(> h4:-abp-contains(/^новини партн/i))
 materialscience.ru##.sape
 ladylib.net##.sape[style="width:500px;"]
@@ -19587,7 +19589,7 @@ stratege.ru##[id][class] > [src*="ads.adfox.ru"] + style + div[id]
 stratege.ru##[id][class] > style:first-child + div[id]
 cxem.net##[id^="_myproduct"]
 onlinetambov.ru##[id^="ad"][class*="ads"]
-svpressa.ru,trainzland.ru##[id^="adfox_"]
+svpressa.ru,trainzland.org##[id^="adfox_"]
 depositfiles.com##[id^="ads_zone"]
 forum.krasmama.ru##[id^="adv_"]
 tuzlist.ru##[id^="adv_orders_"]
@@ -21148,6 +21150,7 @@ xn--k1afadd0cwc.xn--p1ai##div[class^="adace"]
 cameralabs.org##div[class^="adaptivgoogle"]
 e-ink-reader.ru##div[class^="adb"]
 hibiny.ru##div[class^="adfox_"]
+rknweb.ru##div[class^="adlook-"]
 vlasti.net,winnote.ru##div[class^="adrotate"]
 chernomorets.odessa.ua,moei.ru,shaiba.kz,sports.kz,x-kuzov.ru##div[class^="ads"]
 amoledo.com##div[class^="adsbanner"]
@@ -24106,7 +24109,7 @@ docviewer.yandex.ru,docviewer.yandex.*##.with-bottom-direct > div[class] > div[c
 eda.yandex.ru##[data-testid="open-advert-modal-button"]
 eda.yandex.ru##div[class^="banner_"]
 mail.yandex.ru,mail.yandex.*##.b-direct-stripe
-mail.yandex.ru,mail.yandex.*##.RightColumnRoot.WithGlobalBar
+mail.yandex.ru,mail.yandex.*##.RightColumnRoot
 mail.yandex.ru,mail.yandex.*##div[class*="DirectLine"]
 mail.yandex.ru,mail.yandex.*#?#[data-key="box=left-box"]:-abp-has(> [data-key="view=react-left-column"] + div:empty) a[href*="/premium-"]
 rasp.yandex.ru,rasp.yandex.*##.Direct
@@ -26130,7 +26133,7 @@ zarulem.ws##td[style^="text-align:center;width:50%"]
 @@||tehnar.net.ua^$generichide
 @@||tmbw.ru^$generichide
 @@||todotech20.com^$generichide
-@@||trainzland.ru^$generichide
+@@||trainzland.org^$generichide
 @@||tvizorcdn.ru^$generichide
 @@||u-cdn.org/start/$generichide
 @@||u-cdn.top/start/$generichide
@@ -29475,7 +29478,7 @@ farposst.ru##+js(remove-node-text, #text, Реклама)
 filmitorrent.net,utorr.cc##+js(remove-node-text, #text, Реклама:)
 ya.ru##+js(remove-node-text, a, /Установите Яндекс Браузер|Установить поиск Яндекса/)
 nullcms.ru##+js(remove-node-text, script, 'decodeURIComponent(escape')
-fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /0\,window|a0_0x|ad-provider|AdProvider|adManager|atOptions|disconnect|document\,window|globalThis|isTrusted|location\.href\.split|parentNode\.removeChild|Math\.random|MAX_CLICKS/)
+fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /0\,window|a0_0x|ad-provider|AdProvider|adManager|atOptions|disconnect|document\,window|globalThis|isTrusted|parentNode\.removeChild|Math\.random|MAX_CLICKS/)
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /A.d.b.|Adb-|A-d-b-|-Gua|dGua|dblo|tick|Адгу-/)
 ritsatv.ru##+js(remove-node-text, script, /checkAds|initAdblockCheck/)
 tapochek.net##+js(remove-node-text, script, /document.head.appendChild|document.referrer/)
@@ -29701,6 +29704,7 @@ dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[id^="suggest-item-"]:has
 fastpic.org,~new.fastpic.org##[srcdoc]:remove()
 pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##[value="Скачать"]:remove-attr(disabled)
 www.gazeta.ru##^responseheader(location)
+fastpic.org,~new.fastpic.org##a[href*="/fullview/"] > img[src*="/preview/"]:matches-path(/.html$/):style(clip-path: inset(0 0 38px 0) !important)
 24smi.org##a[href*="://24smi.org/"]:remove-attr(target)
 fastpic.org,~new.fastpic.org##a[href="https://static.fastpic.ru/FastPicUploader.apk"]:remove-attr(target)
 aniu.ru,liveball.*##+js(no-setInterval-if, debugger)
