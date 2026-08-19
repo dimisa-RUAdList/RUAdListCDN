@@ -1,8 +1,10 @@
-diff name:ruadlist lines:23 checksum:263c23d41c
+diff name:ruadlist lines:29 checksum:be2a6e8747
 d4 2
 a5 2
-! Last modified: Wed, 19 Aug 2026 09:43:45 +0000
-! Diff-Path: ../patches/2026.8.19.583.patch#ruadlist
+! Last modified: Wed, 19 Aug 2026 14:45:52 +0000
+! Diff-Path: ../patches/2026.8.19.885.patch#ruadlist
+a20710 1
+fastpic.org,~new.fastpic.org##body > [style*="fixed"]
 a22865 2
 www.avito.ru##div[class*=" adv-"]
 www.avito.ru##div[class*=" advRoot"]
@@ -14,11 +16,15 @@ $doc,reason=malicious,domain=apad2.top|besplatnyeprogrammy.ru|byrut.org.ru|dsazf
 d29344 1
 a29344 1
 goddess-game.com,lust-girls.com,ouraidream.com,proceedflow.info##+js(close-window)
-a29458 1
-fastpic.org,~new.fastpic.org##+js(prevent-setTimeout, ad)
 d29481 1
-a29481 1
+a29481 2
+fastpic.org,~new.fastpic.org##+js(remove-node-text, script, )};)
 fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /0\,window|a0_0x|ad-provider|AdProvider|adManager|atOptions|disconnect|document\,window|globalThis|isTrusted|parentNode\.removeChild|Math\.random|MAX_CLICKS|setTimeout/)
+a29565 1
+fastpic.org,~new.fastpic.org##+js(set-constant, document.documentElement.onclick, noopFunc)
+a29705 1
+fastpic.org,~new.fastpic.org##^a > script:not(:last-child)
 d29707 1
 a29707 1
 fastpic.org,~new.fastpic.org##a[href*="/fullview/"] > img[src*="/preview/"]:style(clip-path: inset(0 0 38px 0) !important)
+d29800 1

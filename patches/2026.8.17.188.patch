@@ -1,8 +1,8 @@
-diff name:ruadlist lines:62 checksum:263c23d41c
+diff name:ruadlist lines:68 checksum:be2a6e8747
 d4 2
 a5 2
-! Last modified: Wed, 19 Aug 2026 09:43:45 +0000
-! Diff-Path: ../patches/2026.8.19.583.patch#ruadlist
+! Last modified: Wed, 19 Aug 2026 14:45:52 +0000
+! Diff-Path: ../patches/2026.8.19.885.patch#ruadlist
 d9207 1
 a9207 1
 $popup,domain=176.114.0.126|176.114.0.132|37.220.36.15|assiatv.com|cdnpotok.com|cdntvpotok.com|fastpic.org|freescreens.ru|imgbase.ru|imgcach.ru|imgclick.ru|kolikbolik.top|oneliketv.com|payforpic.ru|picclick.ru|picclock.ru|picforall.ru|protonvideo.to|telecdn.net|tv-assia.org
@@ -22,6 +22,8 @@ a19590 1
 svpressa.ru,trainzland.org##[id^="adfox_"]
 a19635 1
 mt.today##[itemprop="articleBody"] > div[style^="text-align: center;"] > a[href$=".html"]
+a20707 1
+fastpic.org,~new.fastpic.org##body > [style*="fixed"]
 a21149 1
 rknweb.ru##div[class^="adlook-"]
 d22615 1
@@ -50,14 +52,18 @@ a29341 1
 goddess-game.com,lust-girls.com,ouraidream.com,proceedflow.info##+js(close-window)
 d29451 1
 d29457 1
-a29457 1
-fastpic.org,~new.fastpic.org##+js(prevent-setTimeout, ad)
 d29479 1
-a29480 1
+a29480 2
+fastpic.org,~new.fastpic.org##+js(remove-node-text, script, )};)
 fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /0\,window|a0_0x|ad-provider|AdProvider|adManager|atOptions|disconnect|document\,window|globalThis|isTrusted|parentNode\.removeChild|Math\.random|MAX_CLICKS|setTimeout/)
 d29483 1
 d29486 1
+a29566 1
+fastpic.org,~new.fastpic.org##+js(set-constant, document.documentElement.onclick, noopFunc)
 a29704 1
 fastpic.org,~new.fastpic.org##[srcdoc]:remove()
+a29705 1
+fastpic.org,~new.fastpic.org##^a > script:not(:last-child)
 a29706 1
 fastpic.org,~new.fastpic.org##a[href*="/fullview/"] > img[src*="/preview/"]:style(clip-path: inset(0 0 38px 0) !important)
+d29799 1
