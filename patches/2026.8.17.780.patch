@@ -1,8 +1,8 @@
-diff name:ruadlist lines:93 checksum:b6b2982fe9
+diff name:ruadlist lines:95 checksum:295bd41e87
 d4 2
 a5 2
-! Last modified: Thu, 20 Aug 2026 15:43:43 +0000
-! Diff-Path: ../patches/2026.8.20.943.patch#ruadlist
+! Last modified: Thu, 20 Aug 2026 20:38:48 +0000
+! Diff-Path: ../patches/2026.8.20.1238.patch#ruadlist
 d9207 1
 a9207 1
 $popup,domain=176.114.0.126|176.114.0.132|37.220.36.15|assiatv.com|cdnpotok.com|cdntvpotok.com|fastpic.org|freescreens.ru|imgbase.ru|imgcach.ru|imgclick.ru|kolikbolik.top|oneliketv.com|payforpic.ru|picclick.ru|picclock.ru|picforall.ru|protonvideo.to|telecdn.net|tv-assia.org
@@ -49,11 +49,13 @@ ya.ru##section[style*="sektilliom-items-count:"]
 d24108 1
 a24108 1
 mail.yandex.ru,mail.yandex.*##.RightColumnRoot
+a24109 1
+mail.yandex.ru,mail.yandex.*##div[class^="Loading-m__root--"]:empty
 d26132 1
 a26132 1
 @@||trainzland.org^$generichide
 a26309 1
-@@/fastpic\.ru\/.*\.(jpg|png|gif)\?r=1$/$third-party,image
+@@/fastpic\.ru\/.*\.(gif|jpeg|jpg|png)\?r=1$/$third-party,image
 a26934 1
 @@||fastpic.org/px/*/300x250.gif|$image,~third-party
 d28773 2
