@@ -1,8 +1,8 @@
-diff name:ruadlist lines:98 checksum:63852549f4
+diff name:ruadlist lines:100 checksum:028ccfe0d2
 d4 2
 a5 2
-! Last modified: Fri, 21 Aug 2026 01:52:02 +0000
-! Diff-Path: ../patches/2026.8.21.112.patch#ruadlist
+! Last modified: Fri, 21 Aug 2026 07:01:47 +0000
+! Diff-Path: ../patches/2026.8.21.421.patch#ruadlist
 d9207 1
 a9207 1
 $popup,domain=176.114.0.126|176.114.0.132|37.220.36.15|assiatv.com|cdnpotok.com|cdntvpotok.com|fastpic.org|freescreens.ru|imgbase.ru|imgcach.ru|imgclick.ru|kolikbolik.top|oneliketv.com|payforpic.ru|picclick.ru|picclock.ru|picforall.ru|protonvideo.to|telecdn.net|tv-assia.org
@@ -65,35 +65,37 @@ d28773 2
 a28774 2
 ya.ru##html[class*="sektilliom_top"] aside + div
 ya.ru##html[class*="sektilliom_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
-d29143 1
-a29143 1
-$doc,reason=malicious,domain=apad2.top|besplatnyeprogrammy.ru|dsazfk.com|games-7.com|hdrip.info|mediagetguru.ru|mixsoft.org|monna2.top|torrent-muzic.ru|torrent-soft.ru
+d29143 2
+a29144 1
+$doc,reason=malicious,domain=apad2.top|besplatnyeprogrammy.ru|dsazfk.com|fastpic.org|games-7.com|hdrip.info|mediagetguru.ru|mixsoft.org|monna2.top|~new.fastpic.org|torrent-muzic.ru|torrent-soft.ru
 d29185 1
+d29192 1
 d29301 1
 d29342 1
 a29342 1
 goddess-game.com,lust-girls.com,ouraidream.com,proceedflow.info##+js(close-window)
-d29452 1
+d29450 3
 d29458 1
+d29463 1
 d29480 1
-a29481 2
+d29484 1
+d29493 1
+d29499 1
+d29708 1
+d29799 1
+a29837 15
+! FastPic
+*$popunder,domain=fastpic.org
+fastpic.org##+js(abort-on-property-read, Element.prototype.attachShadow)
+fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, DOMContentLoaded, 0x)
+fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, click, '', elements, html)
+fastpic.org,~new.fastpic.org##+js(prevent-window-open)
 fastpic.org,~new.fastpic.org##+js(remove-node-text, script, )};)
 fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /0\,window|a0_0x|ad-provider|AdProvider|adManager|atOptions|disconnect|document\,window|globalThis|isTrusted|parentNode\.removeChild|Math\.random|MAX_CLICKS|setTimeout/)
-d29484 1
-a29566 1
+fastpic.org,~new.fastpic.org##+js(remove-node-text, script, getElementById, includes, referrer)
+fastpic.org,~new.fastpic.org##+js(remove-node-text, style, /divExo|ex-over-top|214748364/)
 fastpic.org,~new.fastpic.org##+js(set-constant, document.documentElement.onclick, noopFunc)
-a29704 1
-fastpic.org,~new.fastpic.org##[srcdoc]:remove()
-a29705 1
+fastpic.org##[srcdoc]:remove()
 fastpic.org,~new.fastpic.org##^a > script:not(:last-child)
-a29706 1
 fastpic.org,~new.fastpic.org##a[href*="/fullview/"] > img[src*="/preview/"]:style(clip-path: inset(0 0 38px 0) !important)
-d29799 1
-a29837 7
-! FastPic
-://fastpic.org/$inline-script
-fastpic.org,~new.fastpic.org##body:remove()
-fastpic.org,~new.fastpic.org##head:remove()
-fastpic.org,~new.fastpic.org##html::after:style(content: '⚠️ WARNING! Site infected. CLOSE THIS TAB IMMEDIATELY!' !important; font-size: 24px !important; font-weight: bold !important; text-align: center !important; line-height: 1.4 !important; margin-top: 20px !important;)
-fastpic.org,~new.fastpic.org##html::before:style(content: '⚠️ ВНИМАНИЕ! Сайт заражён. НЕМЕДЛЕННО ЗАКРОЙТЕ ВКЛАДКУ!' !important; font-size: 24px !important; font-weight: bold !important; text-align: center !important; line-height: 1.4 !important;)
-fastpic.org,~new.fastpic.org##html:style(background-color: #800000 !important; color: #ffffff !important; display: flex !important; flex-direction: column !important; align-items: center !important; justify-content: center !important; height: 100vh !important; margin: 0 !important; padding: 20px !important; box-sizing: border-box !important; font-family: sans-serif !important;)
+fastpic.org,~new.fastpic.org##a[href="https://static.fastpic.ru/FastPicUploader.apk"]:remove-attr(target)
