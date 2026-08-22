@@ -1,8 +1,8 @@
-diff name:ruadlist lines:56 checksum:cb90b998d9
+diff name:ruadlist lines:61 checksum:855ac90803
 d4 2
 a5 2
-! Last modified: Sat, 22 Aug 2026 07:39:03 +0000
-! Diff-Path: ../patches/2026.8.22.459.patch#ruadlist
+! Last modified: Sat, 22 Aug 2026 12:55:33 +0000
+! Diff-Path: ../patches/2026.8.22.775.patch#ruadlist
 a13953 1
 lifehacker.ru#?##article > p:-abp-has(> em:-abp-contains(отключите блокировщик рекламы))
 d19278 1
@@ -17,9 +17,12 @@ a20993 1
 d22620 1
 a22620 1
 ||pikabu.ru/ajax/*?fFN8t=$xmlhttprequest
+d22743 1
+a22743 1
+.link/2tjl3er?$third-party,xmlhttprequest
 d26319 1
 a26319 1
-@@/fastpic\.ru\/.*\.(gif|jpeg|jpg|png|webp)\?r=1$/$third-party,image
+@@/fastpic\.ru\/.*\.(gif|jpeg|jpg|png|webp)/$third-party,image
 a28134 1
 lifehacker.ru##a[href*="erid="]:not([href^="/"]):not([href^="https://lifehacker.ru/"]):style(pointer-events:none !important; border-bottom: none !important; color: inherit !important)
 d29154 2
@@ -36,6 +39,8 @@ d29713 1
 d29715 1
 d29717 1
 d29719 1
+a29772 1
+music.yandex.*##+js(prevent-addEventListener, wheel, preventDefault)
 d29849 6
 a29854 17
 *$popunder,domain=fastpic.org
