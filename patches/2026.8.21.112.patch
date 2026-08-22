@@ -1,8 +1,8 @@
-diff name:ruadlist lines:58 checksum:855ac90803
+diff name:ruadlist lines:62 checksum:5b0c4aac2e
 d4 2
 a5 2
-! Last modified: Sat, 22 Aug 2026 12:55:33 +0000
-! Diff-Path: ../patches/2026.8.22.775.patch#ruadlist
+! Last modified: Sat, 22 Aug 2026 17:30:14 +0000
+! Diff-Path: ../patches/2026.8.22.1050.patch#ruadlist
 a13953 1
 lifehacker.ru#?##article > p:-abp-has(> em:-abp-contains(отключите блокировщик рекламы))
 d19278 1
@@ -17,9 +17,9 @@ a20993 1
 d22743 1
 a22743 1
 .link/2tjl3er?$third-party,xmlhttprequest
+d24853 1
 d26319 1
-a26319 1
-@@/fastpic\.ru\/.*\.(gif|jpeg|jpg|png|webp)/$third-party,image
+d26945 1
 a28134 1
 lifehacker.ru##a[href*="erid="]:not([href^="/"]):not([href^="https://lifehacker.ru/"]):style(pointer-events:none !important; border-bottom: none !important; color: inherit !important)
 d29154 2
@@ -37,23 +37,27 @@ d29715 1
 d29717 1
 d29719 1
 a29772 1
-music.yandex.*##+js(prevent-addEventListener, wheel, preventDefault)
+music.yandex.*##+js(prevent-addEventListener, wheel, shadowParent)
 d29849 6
-a29854 17
+a29854 21
 *$popunder,domain=fastpic.org
 fastpic.org##+js(abort-on-property-read, Element.prototype.attachShadow)
 fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, DOMContentLoaded, 0x)
 fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, click, '', elements, html)
 fastpic.org,~new.fastpic.org##+js(prevent-window-open)
+fastpic.org,~new.fastpic.org##+js(remove-attr, src|style)
 fastpic.org,~new.fastpic.org##+js(remove-node-text, script, )};)
 fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /0\,window|a0_0x|ad-provider|AdProvider|adManager|atOptions|disconnect|document\,window|globalThis|isTrusted|parentNode\.removeChild|Math\.random|MAX_CLICKS|setTimeout/)
 fastpic.org,~new.fastpic.org##+js(remove-node-text, script, getElementById, includes, referrer)
 fastpic.org,~new.fastpic.org##+js(remove-node-text, style, /divExo|ex-over-top|214748364/)
 fastpic.org,~new.fastpic.org##+js(set-constant, document.documentElement.onclick, noopFunc)
+://fastpic.org^
+fastpic.org,~new.fastpic.org##:not(this-site-promotes-malware)
 fastpic.org##[srcdoc]:remove()
 fastpic.org,~new.fastpic.org##^a > script:not(:last-child)
 fastpic.org,~new.fastpic.org##a[href*="/fullview/"] > img[src*="/preview/"]:style(clip-path: inset(0 0 38px 0) !important)
 fastpic.org,~new.fastpic.org##a[href="https://static.fastpic.ru/FastPicUploader.apk"]:remove-attr(target)
 !#if env_mv3
+://fastpic.org^$badfilter
 ://fastpic.org^$doc
 !#endif

@@ -1,8 +1,8 @@
-diff name:ruadlist lines:29 checksum:855ac90803
+diff name:ruadlist lines:35 checksum:5b0c4aac2e
 d4 2
 a5 2
-! Last modified: Sat, 22 Aug 2026 12:55:33 +0000
-! Diff-Path: ../patches/2026.8.22.775.patch#ruadlist
+! Last modified: Sat, 22 Aug 2026 17:30:14 +0000
+! Diff-Path: ../patches/2026.8.22.1050.patch#ruadlist
 a13953 1
 lifehacker.ru#?##article > p:-abp-has(> em:-abp-contains(отключите блокировщик рекламы))
 d19278 1
@@ -17,14 +17,20 @@ a20993 1
 d22743 1
 a22743 1
 .link/2tjl3er?$third-party,xmlhttprequest
+d24853 1
 d26319 1
-a26319 1
-@@/fastpic\.ru\/.*\.(gif|jpeg|jpg|png|webp)/$third-party,image
+d26945 1
 a28134 1
 lifehacker.ru##a[href*="erid="]:not([href^="/"]):not([href^="https://lifehacker.ru/"]):style(pointer-events:none !important; border-bottom: none !important; color: inherit !important)
 a29758 1
-music.yandex.*##+js(prevent-addEventListener, wheel, preventDefault)
-a29848 3
+music.yandex.*##+js(prevent-addEventListener, wheel, shadowParent)
+a29839 1
+fastpic.org,~new.fastpic.org##+js(remove-attr, src|style)
+a29844 2
+://fastpic.org^
+fastpic.org,~new.fastpic.org##:not(this-site-promotes-malware)
+a29848 4
 !#if env_mv3
+://fastpic.org^$badfilter
 ://fastpic.org^$doc
 !#endif

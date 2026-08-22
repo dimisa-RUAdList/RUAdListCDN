@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 22 Aug 2026 12:55:33 +0000
-! Diff-Path: ../patches/2026.8.22.775.patch#ruadlist
+! Last modified: Sat, 22 Aug 2026 17:30:14 +0000
+! Diff-Path: ../patches/2026.8.22.1050.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -24851,7 +24851,6 @@ zarulem.ws##td[style^="text-align:center;width:50%"]
 ||fantasy.d2.ru/showban
 ||farle.ru/?bn=
 ||fast-anime.ru^$third-party
-||fastpic.ru^$third-party,domain=~fastpic.org
 ||fatal.ru/adfatal.js
 ||favbet999.com^$third-party
 ||fbs.for-ua.org.ua^
@@ -26317,7 +26316,6 @@ xn--112-5cd3baof9c5c.xn--p1ai#@#.wrapad
 @@/ai/adbanner/*$domain=akado.ru|megafon.ru
 @@/assets/ads/*$domain=abcphoto.com.ua
 @@/banner/468$domain=matematikalegko.ru
-@@/fastpic\.ru\/.*\.(gif|jpeg|jpg|png|webp)/$third-party,image
 @@/files/ads/*$~third-party,domain=crbmpurga.ru
 @@/images/google-play-clear$domain=context.reverso.net
 @@/images/star_share.png|$image,domain=animevost.org|animevost.top|vost.pw
@@ -26943,7 +26941,6 @@ gbsmp.ru#@#img[width="728"][height="90"]
 @@||drahelas.ru/r/www/delivery/spc.php?zones=$script,domain=drahelas.ru
 @@||drahelas.ru/r/www/delivery/spcjs.php?id=$script,domain=drahelas.ru
 @@||easymc.io/ads/px.gif?ch=$image,domain=easymc.io
-@@||fastpic.org/px/*/300x250.gif|$image,~third-party
 @@||fosshub.com/media/js/adblock.js|$domain=fosshub.com
 @@||fwdcdn.com^*/advertisment.js|$script
 @@||gamesglue.com/game_core/check/ima3.js|$script,domain=gameswf.com
@@ -29758,7 +29755,7 @@ m.rp5.*#@#.adsbygoogle
 reshuent.ru,sdamgia.ru##main > div > div > div:has-text(/rotator|блокировщик/)
 reshuent.ru,sdamgia.ru##main > div:first-child:empty + div:not([class]) > div > div
 reshuent.ru,sdamgia.ru##main > div:first-child:empty + div:not([class]) > div:style(min-height: 86px !important; height: 86px !important; margin-bottom: -80px !important)
-music.yandex.*##+js(prevent-addEventListener, wheel, preventDefault)
+music.yandex.*##+js(prevent-addEventListener, wheel, shadowParent)
 draug.ru,modsforwot.ru##p:has-text(Для скачивания подождите отсчет таймера...)
 tvzvezda.ru##pjsdiv[id^="oframe"] > pjsdiv[style*="opacity: 0.1;"]:empty
 tvzvezda.ru##pjsdiv[id^="oframe"] [style="animation-play-state: running;"]
@@ -29840,16 +29837,20 @@ fastpic.org##+js(abort-on-property-read, Element.prototype.attachShadow)
 fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, DOMContentLoaded, 0x)
 fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, click, '', elements, html)
 fastpic.org,~new.fastpic.org##+js(prevent-window-open)
+fastpic.org,~new.fastpic.org##+js(remove-attr, src|style)
 fastpic.org,~new.fastpic.org##+js(remove-node-text, script, )};)
 fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /0\,window|a0_0x|ad-provider|AdProvider|adManager|atOptions|disconnect|document\,window|globalThis|isTrusted|parentNode\.removeChild|Math\.random|MAX_CLICKS|setTimeout/)
 fastpic.org,~new.fastpic.org##+js(remove-node-text, script, getElementById, includes, referrer)
 fastpic.org,~new.fastpic.org##+js(remove-node-text, style, /divExo|ex-over-top|214748364/)
 fastpic.org,~new.fastpic.org##+js(set-constant, document.documentElement.onclick, noopFunc)
+://fastpic.org^
+fastpic.org,~new.fastpic.org##:not(this-site-promotes-malware)
 fastpic.org##[srcdoc]:remove()
 fastpic.org,~new.fastpic.org##^a > script:not(:last-child)
 fastpic.org,~new.fastpic.org##a[href*="/fullview/"] > img[src*="/preview/"]:style(clip-path: inset(0 0 38px 0) !important)
 fastpic.org,~new.fastpic.org##a[href="https://static.fastpic.ru/FastPicUploader.apk"]:remove-attr(target)
 !#if env_mv3
+://fastpic.org^$badfilter
 ://fastpic.org^$doc
 !#endif
 ! Mail.RU
