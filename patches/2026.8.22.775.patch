@@ -1,20 +1,26 @@
-diff name:ruadlist lines:19 checksum:c7fc419968
+diff name:ruadlist lines:25 checksum:d473a1d88a
 d4 2
 a5 2
-! Last modified: Sun, 23 Aug 2026 07:41:31 +0000
-! Diff-Path: ../patches/2026.8.23.461.patch#ruadlist
+! Last modified: Sun, 23 Aug 2026 08:42:16 +0000
+! Diff-Path: ../patches/2026.8.23.522.patch#ruadlist
 a22591 1
 ||static.dzeninfra.ru/s3/zen-apps/*.me.js$script
 d24854 1
 d26320 1
 d26946 1
+a29644 1
+povarenok.ru##.m-img:has(> [href*="?erid="]):style(min-height: 0 !important)
 d29761 1
 a29761 1
 music.yandex.*##+js(prevent-addEventListener, wheel, shadowParent)
 a29842 1
 fastpic.org,~new.fastpic.org##+js(remove-attr, src|style)
+a29846 1
+fastpic.org,~new.fastpic.org##+js(remove-node-text, title, /^/)
 a29847 2
 ://fastpic.org^
 fastpic.org,~new.fastpic.org##:not(this-site-promotes-malware)
+a29849 1
+fastpic.org,~new.fastpic.org##^responseheader(location)
 a29852 1
 ://fastpic.org^$badfilter

@@ -1,8 +1,8 @@
-diff name:ruadlist lines:69 checksum:c7fc419968
+diff name:ruadlist lines:73 checksum:d473a1d88a
 d4 2
 a5 2
-! Last modified: Sun, 23 Aug 2026 07:41:31 +0000
-! Diff-Path: ../patches/2026.8.23.461.patch#ruadlist
+! Last modified: Sun, 23 Aug 2026 08:42:16 +0000
+! Diff-Path: ../patches/2026.8.23.522.patch#ruadlist
 a13953 1
 lifehacker.ru#?##article > p:-abp-has(> em:-abp-contains(отключите блокировщик рекламы))
 d19278 1
@@ -39,6 +39,8 @@ d29487 2
 d29499 1
 d29505 1
 d29573 1
+a29651 1
+povarenok.ru##.m-img:has(> [href*="?erid="]):style(min-height: 0 !important)
 d29712 1
 d29714 1
 d29716 1
@@ -46,7 +48,7 @@ d29718 1
 a29771 1
 music.yandex.*##+js(prevent-addEventListener, wheel, shadowParent)
 d29848 6
-a29853 21
+a29853 23
 *$popunder,domain=fastpic.org
 fastpic.org##+js(abort-on-property-read, Element.prototype.attachShadow)
 fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, DOMContentLoaded, 0x)
@@ -57,11 +59,13 @@ fastpic.org,~new.fastpic.org##+js(remove-node-text, script, )};)
 fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /0\,window|a0_0x|ad-provider|AdProvider|adManager|atOptions|disconnect|document\,window|globalThis|isTrusted|parentNode\.removeChild|Math\.random|MAX_CLICKS|setTimeout/)
 fastpic.org,~new.fastpic.org##+js(remove-node-text, script, getElementById, includes, referrer)
 fastpic.org,~new.fastpic.org##+js(remove-node-text, style, /divExo|ex-over-top|214748364/)
+fastpic.org,~new.fastpic.org##+js(remove-node-text, title, /^/)
 fastpic.org,~new.fastpic.org##+js(set-constant, document.documentElement.onclick, noopFunc)
 ://fastpic.org^
 fastpic.org,~new.fastpic.org##:not(this-site-promotes-malware)
 fastpic.org##[srcdoc]:remove()
 fastpic.org,~new.fastpic.org##^a > script:not(:last-child)
+fastpic.org,~new.fastpic.org##^responseheader(location)
 fastpic.org,~new.fastpic.org##a[href*="/fullview/"] > img[src*="/preview/"]:style(clip-path: inset(0 0 38px 0) !important)
 fastpic.org,~new.fastpic.org##a[href="https://static.fastpic.ru/FastPicUploader.apk"]:remove-attr(target)
 !#if env_mv3
