@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 23 Aug 2026 13:39:43 +0000
-! Diff-Path: ../patches/2026.8.23.819.patch#ruadlist
+! Last modified: Sun, 23 Aug 2026 18:43:02 +0000
+! Diff-Path: ../patches/2026.8.23.1123.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -11020,7 +11020,6 @@ igdz1.ru^$script,domain=igdz.ru
 ||acc.cv.ua/images/acc_rek/
 ||acc.cv.ua/images/bimg/
 ||actualtraffic.ru/uploads/promo/
-||ad.adriver.ru^$object,domain=onlineguru.ru|peers.tv|seasonvar.ru
 ||ad.cbonds.info/
 ||ad.cheatsbase.ru/
 ||ad.f1cd.ru^
@@ -15043,6 +15042,7 @@ delovoy-kirov.ru###uzhanina
 heregirl.ru,ledilana.ru###vgtrk_bottom
 virusinfo.info###vi_ad
 virusinfo.info###vi_adlink
+peers.tv###vid_vpaut_div
 ivi.ru###video-flack
 xv-ru.com###video-right
 videonews.club###video_bootom
@@ -15331,6 +15331,7 @@ football24.ua##.adv-insert
 football24.ua#?#.adv-insert + p:-abp-has(img)
 xn--c1acj.xn--p1ai##.adv-links
 sintetiki.net##.adv-sale
+peers.tv##.adv-wrap
 24tv.ua,pise4ka.net##.adv-wrapper
 education.ua##.advOnTop
 splkirov.ru##.adv_240x400
@@ -17463,6 +17464,7 @@ osobye.ru##.modulebody > table[style="width:200px"]
 zamena-podshipnikov.ru##.moduletabletimer-buf
 autogrodno.by##.mogo-link
 ritsatv.ru##.monetization-button
+openspeedtest.ru##.monitoring-promo-banner
 multiki-online.net##.more-teaser
 macosworld.ru##.morefoot_back
 serveradmin.ru##.mot
@@ -17991,6 +17993,7 @@ aromatmasla.ru,progrib.ru##.randomizer
 animemobi.ru##.randomnews > .videorek
 zakonia.ru##.randomtable
 www.zoneofgames.ru##.randshop > a:not([href^="https://forum.zoneofgames.ru/"])
+openspeedtest.ru##.rating-promo-block
 glas.ru##.rb
 kinozal.guru,kinozal.me,kinozal.tv,kinozaltv.life##.rb_new
 bashskazki.ru##.rblock
@@ -18559,6 +18562,7 @@ xxx-russian.ru##.speedbar ~ .rad5
 www.obozrevatel.com#?#.splide__list > .splide__slide:-abp-has(> article > .banner)
 alexua.tv,anilib.moe,anilib.one,anilib.top,anilibria.iss.one,anilibria.tv,avtovzglyad.ru,fco.com.ua,filmozavr.com,filmozavr.net,forexsystemsru.com,itc.ua,itweek.ru,medkrug.ru,must-see.top,womanhit.ru##.sponsor
 radioshanson.fm##.sponsor a[href][target="_blank"]
+openspeedtest.ru##.sponsor-info
 fbu.ua,stroimdom.com.ua##.sponsors
 zi.ua##.sponsors-holder
 stroimdom.com.ua##.sponsors_big
@@ -19156,6 +19160,7 @@ charter97.org##.wrapper-sponsors
 urank.ru##.wrapper-sticky
 tele.ru##.wrapper-sticky .wpb_content_element
 aldebaran.ru##.wrapper_ban
+peers.tv##.wrp-rklm-mid
 volnafm.com##.wsite-image-border-thin > a[target="_blank"]
 freehat.cc##.wtp-banner
 winzoro.net##.wzADS
