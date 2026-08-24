@@ -1,9 +1,14 @@
-diff name:ruadlist lines:40 checksum:87148994ff
+diff name:ruadlist lines:56 checksum:cbd92dcb23
 d4 2
 a5 2
-! Last modified: Mon, 24 Aug 2026 04:55:37 +0000
-! Diff-Path: ../patches/2026.8.24.295.patch#ruadlist
+! Last modified: Mon, 24 Aug 2026 09:57:32 +0000
+! Diff-Path: ../patches/2026.8.24.597.patch#ruadlist
+d9207 2
+a9208 1
+$popup,domain=176.114.0.126|176.114.0.132|37.220.36.15|assiatv.com|cdnpotok.com|cdntvpotok.com|freescreens.ru|imgbase.ru|imgcach.ru|imgclick.ru|kolikbolik.top|oneliketv.com|payforpic.ru|picclick.ru|picclock.ru|picforall.ru|protonvideo.to|telecdn.net|tv-assia.org
 d11023 1
+a11636 1
+||fastpic.org/fpv.js$script
 a15045 1
 peers.tv###vid_vpaut_div
 a15333 1
@@ -16,6 +21,10 @@ a18561 1
 openspeedtest.ru##.sponsor-info
 a19158 1
 peers.tv##.wrp-rklm-mid
+a20740 1
+povarenok.ru##body > div[class*="202"] > img
+a21457 1
+vk.com,vk.ru##div[data-testid="subscriptionbanner"]
 a22591 1
 ||static.dzeninfra.ru/s3/zen-apps/*.me.js$script
 d22744 1
@@ -24,18 +33,25 @@ a22744 1
 d24854 1
 d26320 1
 d26946 1
+d29156 1
+a29156 1
+$document,reason=malicious,domain=apad2.top|besplatnyeprogrammy.ru|dsazfk.com|games-7.com|hdrip.info|mediagetguru.ru|mixsoft.org|monna2.top|torrent-muzic.ru|torrent-soft.ru
 a29644 1
 povarenok.ru##.m-img:has(> [href*="?erid="]):style(min-height: 0 !important)
 a29760 1
 music.yandex.*##+js(prevent-addEventListener, wheel, shadowParent)
-a29841 1
-fastpic.org,~new.fastpic.org##+js(remove-attr, src|style)
-a29845 1
-fastpic.org,~new.fastpic.org##+js(remove-node-text, title, /^/)
-a29846 2
-://fastpic.org^
-fastpic.org,~new.fastpic.org##:not(this-site-promotes-malware)
-a29848 1
-fastpic.org,~new.fastpic.org##^responseheader(location)
-a29851 1
-://fastpic.org^$badfilter
+d29837 1
+d29851 3
+a29853 12
+! отключенные на время теста правила
+!*$popunder,domain=fastpic.org
+!://fastpic.org^
+!$document,reason=malicious,from=~new.fastpic.org|fastpic.org
+!fastpic.org,~new.fastpic.org##+js(remove-attr, src|style)
+!fastpic.org,~new.fastpic.org##+js(remove-node-text, title, /^/)
+!fastpic.org,~new.fastpic.org##:not(this-site-promotes-malware)
+!fastpic.org,~new.fastpic.org##^responseheader(location)
+!!#if env_mv3
+!://fastpic.org^$badfilter
+!://fastpic.org^$doc
+!!#endif

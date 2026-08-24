@@ -1,9 +1,14 @@
-diff name:ruadlist lines:81 checksum:87148994ff
+diff name:ruadlist lines:92 checksum:cbd92dcb23
 d4 2
 a5 2
-! Last modified: Mon, 24 Aug 2026 04:55:37 +0000
-! Diff-Path: ../patches/2026.8.24.295.patch#ruadlist
+! Last modified: Mon, 24 Aug 2026 09:57:32 +0000
+! Diff-Path: ../patches/2026.8.24.597.patch#ruadlist
+d9207 2
+a9208 1
+$popup,domain=176.114.0.126|176.114.0.132|37.220.36.15|assiatv.com|cdnpotok.com|cdntvpotok.com|freescreens.ru|imgbase.ru|imgcach.ru|imgclick.ru|kolikbolik.top|oneliketv.com|payforpic.ru|picclick.ru|picclock.ru|picforall.ru|protonvideo.to|telecdn.net|tv-assia.org
 d11023 1
+a11636 1
+||fastpic.org/fpv.js$script
 a13953 1
 lifehacker.ru#?##article > p:-abp-has(> em:-abp-contains(отключите блокировщик рекламы))
 a15044 1
@@ -21,12 +26,16 @@ peers.tv##.wrp-rklm-mid
 d19278 1
 a19278 1
 scarabey.org,ura.news##[class*="ad-block"]
+a20739 1
+povarenok.ru##body > div[class*="202"] > img
 d20744 1
 a20988 1
 ura.news##div[class*="advertisement"]
 d20993 1
 a20993 1
 1777.ru,19rus.info,19rusinfo.ru,1ul.ru,20minut.ua,2goroda.ru,365info.kz,3ys.ru,73online.ru,9tv.co.il,advis.ru,agronews.ua,agropolit.com,agroreview.com,agrotimes.net,autodmir.ru,avtodispetcher.ru,bakemono.ru,bel.ru,bezformata.com,bhub.com.ua,bon.ua,budport.com.ua,car.ru,cbonds.ru,champion.com.ua,codernet.ru,comments.ua,con-med.ru,cryptonewsua.com,cybersport.ru,echosevera.ru,elevatorist.com,epravda.com.ua,fatalgame.com,fbu.ua,filmz.ru,fishingsib.ru,flamp.ru,food.ru,footballua.tv,forum-profit.ru,gameguru.ru,gecid.com,goodfon.ru,gorodvitebsk.by,gp.by,growhow.in.ua,haqqin.az,hunting.ru,industry-hunter.com,infpol.ru,investfunds.ru,ircity.ru,islam-today.ru,iz.ru,joborgame.ru,jut.su,k1news.ru,klavogonki.ru,knijky.ru,kt.kz,kurkul.com,kursktv.ru,laradiofm.ru,latifundist.com,lifehacker.ru,livesport.ws,locals.md,medialeaks.ru,megatyumen.ru,menportal.info,myslo.ru,neboleem.net,news.ru,nmedic.info,nv-online.info,oboz.info,obyava.ua,okna.ua,penza-press.ru,povarenok.ru,ppt4web.ru,pravda.com.ua,pravoved.ru,primemusic.cc,profibeer.ru,prostatitanet.com,redfm.ru,relax-fm.ru,rg.ru,roscontrol.com,sibnet.ru,skachat-kino.fun,smolensk-i.ru,sovsport.ru,spanishrestaurant.ru,sport5.by,sportanalytic.com,sportguide.kiev.ua,start33.ru,superagronom.com,syzran-small.ru,tele.ru,tengriauto.kz,tengrinews.kz,tengrisport.kz,tengritravel.kz,the-flow.ru,thequestion.ru,thg.ru,tveda.ru,twentysix.ru,ufanotes.ru,ura.news,valverus.info,vashurok.ru,veterinargid.ru,vikka.ua,vinnitsa.info,vklasse.online,vovka.su,vringe.com,vshkole.com,woman.ru,wonderzine.com,wowjp.net,xsport.ua,zagorod.spb.ru,zaim-profi.ru,zaryad.me,zebra-tv.ru,zemliak.com,zoohoz.ru,zorbasmedia.ru##div[class*="banner"]
+a21456 1
+vk.com,vk.ru##div[data-testid="subscriptionbanner"]
 a22590 1
 ||static.dzeninfra.ru/s3/zen-apps/*.me.js$script
 d22743 1
@@ -39,7 +48,7 @@ a28134 1
 lifehacker.ru##a[href*="erid="]:not([href^="/"]):not([href^="https://lifehacker.ru/"]):style(pointer-events:none !important; border-bottom: none !important; color: inherit !important)
 d29154 2
 a29155 1
-$doc,reason=malicious,domain=apad2.top|besplatnyeprogrammy.ru|dsazfk.com|fastpic.org|games-7.com|hdrip.info|mediagetguru.ru|mixsoft.org|monna2.top|~new.fastpic.org|torrent-muzic.ru|torrent-soft.ru
+$document,reason=malicious,domain=apad2.top|besplatnyeprogrammy.ru|dsazfk.com|games-7.com|hdrip.info|mediagetguru.ru|mixsoft.org|monna2.top|torrent-muzic.ru|torrent-soft.ru
 d29202 1
 d29459 2
 d29470 1
@@ -56,27 +65,29 @@ d29719 1
 a29772 1
 music.yandex.*##+js(prevent-addEventListener, wheel, shadowParent)
 d29849 6
-a29854 23
-*$popunder,domain=fastpic.org
+a29854 25
 fastpic.org##+js(abort-on-property-read, Element.prototype.attachShadow)
 fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, DOMContentLoaded, 0x)
 fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, click, '', elements, html)
 fastpic.org,~new.fastpic.org##+js(prevent-window-open)
-fastpic.org,~new.fastpic.org##+js(remove-attr, src|style)
 fastpic.org,~new.fastpic.org##+js(remove-node-text, script, )};)
 fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /0\,window|a0_0x|ad-provider|AdProvider|adManager|atOptions|disconnect|document\,window|globalThis|isTrusted|parentNode\.removeChild|Math\.random|MAX_CLICKS|setTimeout/)
 fastpic.org,~new.fastpic.org##+js(remove-node-text, script, getElementById, includes, referrer)
 fastpic.org,~new.fastpic.org##+js(remove-node-text, style, /divExo|ex-over-top|214748364/)
-fastpic.org,~new.fastpic.org##+js(remove-node-text, title, /^/)
 fastpic.org,~new.fastpic.org##+js(set-constant, document.documentElement.onclick, noopFunc)
-://fastpic.org^
-fastpic.org,~new.fastpic.org##:not(this-site-promotes-malware)
 fastpic.org##[srcdoc]:remove()
 fastpic.org,~new.fastpic.org##^a > script:not(:last-child)
-fastpic.org,~new.fastpic.org##^responseheader(location)
 fastpic.org,~new.fastpic.org##a[href*="/fullview/"] > img[src*="/preview/"]:style(clip-path: inset(0 0 38px 0) !important)
 fastpic.org,~new.fastpic.org##a[href="https://static.fastpic.ru/FastPicUploader.apk"]:remove-attr(target)
-!#if env_mv3
-://fastpic.org^$badfilter
-://fastpic.org^$doc
-!#endif
+! отключенные на время теста правила
+!*$popunder,domain=fastpic.org
+!://fastpic.org^
+!$document,reason=malicious,from=~new.fastpic.org|fastpic.org
+!fastpic.org,~new.fastpic.org##+js(remove-attr, src|style)
+!fastpic.org,~new.fastpic.org##+js(remove-node-text, title, /^/)
+!fastpic.org,~new.fastpic.org##:not(this-site-promotes-malware)
+!fastpic.org,~new.fastpic.org##^responseheader(location)
+!!#if env_mv3
+!://fastpic.org^$badfilter
+!://fastpic.org^$doc
+!!#endif

@@ -1,5 +1,36 @@
-diff name:ruadlist lines:4 checksum:87148994ff
+diff name:ruadlist lines:35 checksum:cbd92dcb23
 d4 2
 a5 2
-! Last modified: Mon, 24 Aug 2026 04:55:37 +0000
-! Diff-Path: ../patches/2026.8.24.295.patch#ruadlist
+! Last modified: Mon, 24 Aug 2026 09:57:32 +0000
+! Diff-Path: ../patches/2026.8.24.597.patch#ruadlist
+d9207 2
+a9208 1
+$popup,domain=176.114.0.126|176.114.0.132|37.220.36.15|assiatv.com|cdnpotok.com|cdntvpotok.com|freescreens.ru|imgbase.ru|imgcach.ru|imgclick.ru|kolikbolik.top|oneliketv.com|payforpic.ru|picclick.ru|picclock.ru|picforall.ru|protonvideo.to|telecdn.net|tv-assia.org
+a11635 1
+||fastpic.org/fpv.js$script
+a20745 1
+povarenok.ru##body > div[class*="202"] > img
+a21462 1
+vk.com,vk.ru##div[data-testid="subscriptionbanner"]
+d29159 1
+a29159 1
+$document,reason=malicious,domain=apad2.top|besplatnyeprogrammy.ru|dsazfk.com|games-7.com|hdrip.info|mediagetguru.ru|mixsoft.org|monna2.top|torrent-muzic.ru|torrent-soft.ru
+d29842 1
+d29847 1
+d29852 1
+d29854 2
+d29858 1
+d29861 4
+a29864 12
+! отключенные на время теста правила
+!*$popunder,domain=fastpic.org
+!://fastpic.org^
+!$document,reason=malicious,from=~new.fastpic.org|fastpic.org
+!fastpic.org,~new.fastpic.org##+js(remove-attr, src|style)
+!fastpic.org,~new.fastpic.org##+js(remove-node-text, title, /^/)
+!fastpic.org,~new.fastpic.org##:not(this-site-promotes-malware)
+!fastpic.org,~new.fastpic.org##^responseheader(location)
+!!#if env_mv3
+!://fastpic.org^$badfilter
+!://fastpic.org^$doc
+!!#endif
