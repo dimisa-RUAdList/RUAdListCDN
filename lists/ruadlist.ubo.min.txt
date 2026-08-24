@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 24 Aug 2026 09:57:32 +0000
-! Diff-Path: ../patches/2026.8.24.597.patch#ruadlist
+! Last modified: Mon, 24 Aug 2026 14:53:28 +0000
+! Diff-Path: ../patches/2026.8.24.893.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21149,6 +21149,7 @@ yarnovosti.com##div[class^="_5"]
 day.kyiv.ua##div[class^="_ads-"]
 games.pikabu.ru,t-j.ru##div[class^="_banner_"]
 tv.starhit.ru##div[class^="_partnerSlot_"]
+t-j.ru##div[class^="_skeleton_"]
 domashnie-zagotovki.ru##div[class^="a7-btns"]
 igdz.ru##div[class^="ab-"][class$="-text"]
 u24.ua##div[class^="ab_premium_"]
@@ -29466,6 +29467,7 @@ dumatv.ru##+js(prevent-addEventListener, message, AUTOPLAY)
 news.rambler.ru##+js(prevent-fetch, &origin_type=rtb, url:/rutube.ru/api/tags/video/)
 dzen.ru,sportsdzen.ru##+js(prevent-fetch, /stats/bulk|stats/pixels|zen_audit/)
 progorod62.ru,ura.news##+js(prevent-fetch, _rsc=)
+reddit.com##+js(prevent-setTimeout, '{e(n,t,r)}', 30000)
 evribiont.xyz##+js(prevent-setTimeout, adTestElement)
 aigenda.ru##+js(prevent-setTimeout, combinedDetector)
 forum.ixbt.com##+js(prevent-setTimeout, count_banners)
