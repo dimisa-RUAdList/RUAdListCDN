@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 25 Aug 2026 05:40:05 +0000
-! Diff-Path: ../patches/2026.8.25.340.patch#ruadlist
+! Last modified: Tue, 25 Aug 2026 10:43:33 +0000
+! Diff-Path: ../patches/2026.8.25.643.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22628,7 +22628,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=levik.blog|livejournal.c
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
 ||ng72.ru^$csp=script-src 'self' 'unsafe-eval' https:
-||pikabu.ru/ajax/*?fFN8t=$xmlhttprequest
+||pikabu.ru/ajax/*?fFN7t=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -24038,7 +24038,7 @@ ya.ru##[style*="feed"][style*="min-height:"]
 ya.ru##body > div[data-hydration-id] > [href^="https://yabs.yandex.ru/count/"] + div
 ya.ru##body > div[data-hydration-id] > div > [src^="https://yabs.yandex.ru/count/"] + div
 ya.ru##section[class^="reaso"]
-ya.ru##section[style*="sektilliom-items-count:"]
+ya.ru##section[style*="sektllliom-items-count:"]
 ya.ru##ul[class*="-section__list"]
 ya.ru,yandex.ru,yandex.*##.AdvProductGallery
 ya.ru,yandex.ru,yandex.*##.ImagesApp .AdvPremium-List
@@ -28414,6 +28414,8 @@ pvpru.com##.above_body > div[style]:style(height: auto !important)
 ! ---
 radioclub.ua###js-content:style(padding-top: 40px !important)
 ! ---
+radiosputnik.ru##.radiosputnik-fixed-video:style(height: auto !important)
+! ---
 www.rambler.ru###app > div:style(min-height: 0 !important)
 rambler.ru##.commercial-branding > div script ~ div > div:last-child div:style(min-height: 0 !important)
 rambler.ru##.commercial-branding > div script ~ div > div:style(min-height: 0 !important)
@@ -28781,17 +28783,14 @@ www.xcom-shop.ru##html:style(overflow-y: auto !important)
 xsport.ua##.site:style(margin-top: 0 !important)
 ! ---
 ! Yandex
-ya.ru###feed-ssr
-ya.ru###reedhm-rreid
+ya.ru###rythm-feed
 ya.ru##.document_overflow-scroll_yes:not(.document_new-year-feed-own-scroll_yes) body:style(overflow-y: unset !important)
 ya.ru##.i-mini-bem[style]
 ya.ru,yandex.by,yandex.kz,yandex.uz##.link-bro
 ya.ru##.market-feed
 ya.ru##.reasoning-section
-ya.ru##[id^="r"][id*="ed"][id*="m"][id*="-"][id*="f"]
-ya.ru##[id^="r"][id*="yt"][id*="m"][id*="-"][id*="f"]
-ya.ru##html[class*="sektilliom_top"] aside + div
-ya.ru##html[class*="sektilliom_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
+ya.ru##html[class*="sektllliom_top"] aside + div
+ya.ru##html[class*="sektllliom_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
 ya.ru##main.body__wrapper > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
 ! афиша
 afisha.yandex.ru##[style^="width:"][style*="100%;"][style*="height:"][style*="240px;"][style*="display:"][style*="block;"]:empty
@@ -29784,7 +29783,7 @@ smaxim.*##+js(set-constant, flashvars.protect_block, '')
 studizba.com,surl.*##+js(nano-setInterval-booster, #timer)
 ixbt.pro##style[id^="branding-"]:remove()
 translate.yandex.ru,translate.yandex.*##+js(set-constant, Object.prototype.dispatchSignalCallbacks, undefined)
-embed.smotrim.ru,gofrag.ru,videobel.by##video:remove-attr(autoplay)
+embed.smotrim.ru,gofrag.ru,radiosputnik.ru,videobel.by##video:remove-attr(autoplay)
 3dnews.ru##video[autoplay="autoplay"]:remove-attr(autoplay)
 kino-teatr.ru,kinoafisha.info,kinonews.ru##videotronic-player:remove-attr(data-video-autoplay)
 wildberries.*##+js(set-constant, Object.prototype.prepareBannersList, noopFunc)

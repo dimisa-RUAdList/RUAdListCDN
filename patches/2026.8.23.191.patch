@@ -1,8 +1,8 @@
-diff name:ruadlist lines:54 checksum:040c0344d5
+diff name:ruadlist lines:73 checksum:530b8adf14
 d4 2
 a5 2
-! Last modified: Tue, 25 Aug 2026 05:40:05 +0000
-! Diff-Path: ../patches/2026.8.25.340.patch#ruadlist
+! Last modified: Tue, 25 Aug 2026 10:43:33 +0000
+! Diff-Path: ../patches/2026.8.25.643.patch#ruadlist
 d9207 2
 a9208 1
 $popup,domain=176.114.0.126|176.114.0.132|37.220.36.15|assiatv.com|cdnpotok.com|cdntvpotok.com|freescreens.ru|imgbase.ru|imgcach.ru|imgclick.ru|kolikbolik.top|oneliketv.com|payforpic.ru|picclick.ru|picclock.ru|picforall.ru|protonvideo.to|telecdn.net|tv-assia.org
@@ -29,6 +29,22 @@ a21447 1
 t-j.ru##div[data-level-type="personal-carousel"]
 a21457 1
 vk.com,vk.ru##div[data-testid="subscriptionbanner"]
+d22622 1
+a22622 1
+||pikabu.ru/ajax/*?fFN7t=$xmlhttprequest
+d24032 1
+a24032 1
+ya.ru##section[style*="sektllliom-items-count:"]
+a28407 2
+radiosputnik.ru##.radiosputnik-fixed-video:style(height: auto !important)
+! ---
+d28775 2
+a28776 1
+ya.ru###rythm-feed
+d28782 4
+a28785 2
+ya.ru##html[class*="sektllliom_top"] aside + div
+ya.ru##html[class*="sektllliom_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
 d29154 1
 a29154 1
 $document,reason=malicious,domain=apad2.top|besplatnyeprogrammy.ru|dsazfk.com|games-7.com|hdrip.info|mediagetguru.ru|mixsoft.org|monna2.top|torrent-muzic.ru|torrent-soft.ru
@@ -36,6 +52,9 @@ a29461 1
 reddit.com##+js(prevent-setTimeout, '{e(n,t,r)}', 30000)
 a29642 1
 povarenok.ru##.m-img:has(> [href*="?erid="]):style(min-height: 0 !important)
+d29776 1
+a29776 1
+embed.smotrim.ru,gofrag.ru,radiosputnik.ru,videobel.by##video:remove-attr(autoplay)
 d29836 1
 d29841 1
 d29847 2
