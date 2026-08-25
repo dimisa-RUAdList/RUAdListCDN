@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 25 Aug 2026 15:53:39 +0000
-! Diff-Path: ../patches/2026.8.25.953.patch#ruadlist
+! Last modified: Tue, 25 Aug 2026 20:38:57 +0000
+! Diff-Path: ../patches/2026.8.25.1238.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -19441,6 +19441,9 @@ ixbt.com##[data-branding-content-offset]
 click-or-die.ru##[data-cfpa]
 vgorodekirove.ru##[data-click]
 tvtver.ru##[data-comment*="reklama"]
+t-j.ru##[data-component="product-card"] > a[target="_blank"]
+t-j.ru##[data-component="product-card"] [class^="_priceWrapper_"] > div[class^="_iconLink_"]
+t-j.ru##[data-component="product-card"] div[class^="_moreOffersWrapper_"]
 sport-express.net,sport-express.ru##[data-component="widget-bookmaker-rating"]
 examenpdd.com,liveinternet.ru##[data-container="outer"]
 rosteplo.ru##[data-content*="ERID"]
