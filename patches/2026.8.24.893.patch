@@ -1,13 +1,19 @@
-diff name:ruadlist lines:59 checksum:d0061945cd
+diff name:ruadlist lines:73 checksum:3260772f0d
 d4 2
 a5 2
-! Last modified: Wed, 26 Aug 2026 23:22:57 +0000
-! Diff-Path: ../patches/2026.8.26.1402.patch#ruadlist
+! Last modified: Thu, 27 Aug 2026 09:30:23 +0000
+! Diff-Path: ../patches/2026.8.27.570.patch#ruadlist
+a286 1
+||adsconex.com^$third-party
 a8549 1
 ##.nts-ad
 a15211 1
 libertycity.net,libertycity.ru##.acfbcbddbddddbfcdc
 d16225 1
+d16430 1
+d17635 1
+d18332 1
+d19008 1
 a19443 3
 t-j.ru##[data-component="product-card"] > a[target="_blank"]
 t-j.ru##[data-component="product-card"] [class^="_priceWrapper_"] > div[class^="_iconLink_"]
@@ -20,6 +26,7 @@ d22600 1
 d22630 1
 a22630 1
 ||pikabu.ru/ajax/*?fFN7t=$xmlhttprequest
+d23482 1
 a23934 2
 tribuna.com#?#div[class*="right_column"] div:-abp-has(> [style^="--banner-height:"])
 tribuna.com##div[class^="Banner-module"]
@@ -33,6 +40,7 @@ ya.ru##section[style*="sektllliom-items-count:"]
 d26171 1
 d26174 2
 d26181 1
+d26185 1
 d26204 2
 d26216 2
 d26222 1
@@ -41,6 +49,7 @@ d26229 3
 d26234 1
 d26236 1
 d26242 1
+d26266 1
 a26273 1
 u-news.com.ua#@#.nts-ad
 d26280 1
@@ -58,3 +67,8 @@ ya.ru##html[class*="sektllliom_top"] main > div[class*="__"] ~ div[class*="__"] 
 d29786 1
 a29786 1
 embed.smotrim.ru,gofrag.ru,radiosputnik.ru,videobel.by##video:remove-attr(autoplay)
+a30165 1
+||polygon.com/fetch/next/mural/
+d33005 1
+a33005 1
+/^https?:\/\/pikabu\.ru\/ajax\/{1,2}[A-Za-z0-9_-]{8,}(?:\.[A-Za-z0-9_-]{1,2})?\?[A-Za-z0-9]+=[0-9a-z_-]+/$xmlhttprequest,domain=pikabu.ru
