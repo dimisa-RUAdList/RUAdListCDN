@@ -1,8 +1,8 @@
-diff name:ruadlist lines:71 checksum:3260772f0d
+diff name:ruadlist lines:94 checksum:9df81e5369
 d4 2
 a5 2
-! Last modified: Thu, 27 Aug 2026 09:30:23 +0000
-! Diff-Path: ../patches/2026.8.27.570.patch#ruadlist
+! Last modified: Thu, 27 Aug 2026 20:20:10 +0000
+! Diff-Path: ../patches/2026.8.27.1220.patch#ruadlist
 a286 1
 ||adsconex.com^$third-party
 a8549 1
@@ -13,18 +13,33 @@ d16225 1
 d16430 1
 d17635 1
 d18332 1
+d18881 1
+a18881 1
+tproger.ru##.tp-lubok-top
 d19008 1
+a19407 1
+tproger.ru##[class^="tp-new-design-"][class*="-posts__"]:empty
 a19443 3
 t-j.ru##[data-component="product-card"] > a[target="_blank"]
 t-j.ru##[data-component="product-card"] [class^="_priceWrapper_"] > div[class^="_iconLink_"]
 t-j.ru##[data-component="product-card"] div[class^="_moreOffersWrapper_"]
+a19669 1
+vk.com,vk.ru#?#[role="feed"] > article:-abp-has(> [data-post-id] [href*="utm_source=vk_ads"])
+d21412 1
+a22209 1
+profinance.ru##main > .content-grid > aside
 a22595 1
 /^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]+\.[^/?.]{1,3}\.js(?:\?.*)?$/$script
 d22601 1
 d22631 1
 a22631 1
 ||pikabu.ru/ajax/*?fFN7t=$xmlhttprequest
+d22847 1
+a22847 1
+2ip.io,2ip.ru##.ip-links-container-row-x
 d23483 1
+a23774 1
+rbc.ru#?#main > article > div:-abp-has(.commercial-slider)
 a23935 2
 tribuna.com#?#div[class*="right_column"] div:-abp-has(> [style^="--banner-height:"])
 tribuna.com##div[class^="Banner-module"]
@@ -52,9 +67,13 @@ a26274 1
 u-news.com.ua#@#.nts-ad
 d26281 1
 d26673 1
+a28399 2
+profinance.ru##main > .content-grid:style(grid-template-columns: unset !important)
+! ---
 a28416 2
 radiosputnik.ru##.radiosputnik-fixed-video:style(height: auto !important)
 ! ---
+d28658 3
 d28784 2
 a28785 1
 ya.ru###rythm-feed
@@ -62,6 +81,10 @@ d28791 4
 a28794 2
 ya.ru##html[class*="sektllliom_top"] aside + div
 ya.ru##html[class*="sektllliom_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
+d29336 1
+a29336 1
+magnit.ru,regnum.ru##+js(addEventListener-defuser, click, '', elements, a[href*="utm_campaign"])
+d29471 1
 d29787 1
 a29787 1
 embed.smotrim.ru,gofrag.ru,radiosputnik.ru,videobel.by##video:remove-attr(autoplay)

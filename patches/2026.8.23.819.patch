@@ -1,8 +1,8 @@
-diff name:ruadlist lines:121 checksum:3260772f0d
+diff name:ruadlist lines:141 checksum:9df81e5369
 d4 2
 a5 2
-! Last modified: Thu, 27 Aug 2026 09:30:23 +0000
-! Diff-Path: ../patches/2026.8.27.570.patch#ruadlist
+! Last modified: Thu, 27 Aug 2026 20:20:10 +0000
+! Diff-Path: ../patches/2026.8.27.1220.patch#ruadlist
 a286 1
 ||adsconex.com^$third-party
 a8549 1
@@ -29,28 +29,43 @@ openspeedtest.ru##.rating-promo-block
 d18329 1
 a18561 1
 openspeedtest.ru##.sponsor-info
+d18877 1
+a18877 1
+tproger.ru##.tp-lubok-top
 d19004 1
 a19158 1
 peers.tv##.wrp-rklm-mid
+a19402 1
+tproger.ru##[class^="tp-new-design-"][class*="-posts__"]:empty
 a19438 3
 t-j.ru##[data-component="product-card"] > a[target="_blank"]
 t-j.ru##[data-component="product-card"] [class^="_priceWrapper_"] > div[class^="_iconLink_"]
 t-j.ru##[data-component="product-card"] div[class^="_moreOffersWrapper_"]
+a19664 1
+vk.com,vk.ru#?#[role="feed"] > article:-abp-has(> [data-post-id] [href*="utm_source=vk_ads"])
 a20740 1
 povarenok.ru##body > div[class*="202"] > img
 a21145 1
 t-j.ru##div[class^="_skeleton_"]
+d21405 1
 a21447 1
 t-j.ru##div[data-level-type="personal-carousel"]
 a21457 1
 vk.com,vk.ru##div[data-testid="subscriptionbanner"]
+a22200 1
+profinance.ru##main > .content-grid > aside
 a22586 1
 /^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]+\.[^/?.]{1,3}\.js(?:\?.*)?$/$script
 d22592 1
 d22622 1
 a22622 1
 ||pikabu.ru/ajax/*?fFN7t=$xmlhttprequest
+d22838 1
+a22838 1
+2ip.io,2ip.ru##.ip-links-container-row-x
 d23474 1
+a23765 1
+rbc.ru#?#main > article > div:-abp-has(.commercial-slider)
 a23926 2
 tribuna.com#?#div[class*="right_column"] div:-abp-has(> [style^="--banner-height:"])
 tribuna.com##div[class^="Banner-module"]
@@ -78,9 +93,13 @@ a26265 1
 u-news.com.ua#@#.nts-ad
 d26272 1
 d26664 1
+a28390 2
+profinance.ru##main > .content-grid:style(grid-template-columns: unset !important)
+! ---
 a28407 2
 radiosputnik.ru##.radiosputnik-fixed-video:style(height: auto !important)
 ! ---
+d28649 3
 d28775 2
 a28776 1
 ya.ru###rythm-feed
@@ -91,8 +110,9 @@ ya.ru##html[class*="sektllliom_top"] main > div[class*="__"] ~ div[class*="__"] 
 d29154 1
 a29154 1
 $document,reason=malicious,domain=apad2.top|besplatnyeprogrammy.ru|dsazfk.com|games-7.com|hdrip.info|mediagetguru.ru|mixsoft.org|monna2.top|torrent-muzic.ru|torrent-soft.ru
-a29461 1
-reddit.com##+js(prevent-setTimeout, '{e(n,t,r)}', 30000)
+d29327 1
+a29327 1
+magnit.ru,regnum.ru##+js(addEventListener-defuser, click, '', elements, a[href*="utm_campaign"])
 d29777 1
 a29777 1
 embed.smotrim.ru,gofrag.ru,radiosputnik.ru,videobel.by##video:remove-attr(autoplay)

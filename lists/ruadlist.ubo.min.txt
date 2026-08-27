@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 27 Aug 2026 09:30:23 +0000
-! Diff-Path: ../patches/2026.8.27.570.patch#ruadlist
+! Last modified: Thu, 27 Aug 2026 20:20:10 +0000
+! Diff-Path: ../patches/2026.8.27.1220.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -18877,7 +18877,7 @@ rabota24online.ru##.topright
 cinephile-online-hd.xyzy.ru##.topsbox
 baibako.tv##.topserial > a[href]
 dynamo.kiev.ua##.torba-lightbox-side-wrap
-tproger.ru##.tp-layout-default__aside-right-content > div:empty
+tproger.ru##.tp-lubok-top
 rybolov.ee##.tp_rightblock_noframe [width="336"][height="240"]
 irad.ru##.tr-banner
 24.kz,fanforum.ru##.tradingview-widget-container
@@ -19403,6 +19403,7 @@ eanews.ru##[class^="styled__AdvLink-sc-"]
 life.ru#?#[class^="styles_title_"]:-abp-contains(Новости партнеров)
 kg-portal.ru##[class^="ten_frontrow"]
 moyskelet.ru,obrazovaka.ru##[class^="tizdiv"]
+tproger.ru##[class^="tp-new-design-"][class*="-posts__"]:empty
 volynnews.com##[class^="view_back"]
 asienda.ru,diets.ru,mycharm.ru,myjane.ru,povarenok.ru,ptichka.ru,relook.ru,stranamam.ru##[class^="vigvam"]
 business-gazeta.ru##[class^="weather-block"] ~ div
@@ -19668,6 +19669,7 @@ browserss.ru##[onclick^="window."][onclick*="://"]
 allboxing.ru##[onmouseenter="onClickPbButton()"]
 penzainform.ru##[pnz-ads]:not(eto-dlya-mob-ver)
 apteki.su##[poster^="http://static.apteki.su/img/banners/"]
+vk.com,vk.ru#?#[role="feed"] > article:-abp-has(> [data-post-id] [href*="utm_source=vk_ads"])
 vk.com,vk.ru#?#[role="feed"] > article:-abp-has([aria-label="Реклама от автора"])
 rozetka.com.ua#?#[rzadvertisingview]:-abp-has(> div > span > rz-advertising-info-btn)
 rozetka.com.ua#?#[rzscrollersliderbar] > div > .slide:-abp-has(> rz-product-tile [aria-label*=" про рекламу"])
@@ -21410,7 +21412,6 @@ dlltop.ru##div[class^="tm-article-banner"]
 odeve.ru##div[class^="toneBlock"]
 sravni.ru##div[class^="top-offers_"]
 flcksbr.top,flicksbar.fun,flicksbar.info,flicksbar.mom##div[class^="topAd"]
-tproger.ru##div[class^="tp-"][class$="-top-container"]
 formulalubvi.com##div[class^="traffic-video"]
 sovsport.ru##div[class^="trend-item_bet_"]
 rbook.me##div[class^="trsm"]
@@ -22208,6 +22209,7 @@ lurkmore.*###n-Группа-в-Дискорде
 lurkmore.*###n-Канал-в-Телеграме
 old.myshows.me##main > .contAlt
 allcarz.ru#?#main > .container > .site-content:-abp-has(> .content-banner)
+profinance.ru##main > .content-grid > aside
 protanki.tv##main > .hidden
 mediaryazan.ru##main > .hide-on-mobiles > div[class="sideblock"]:first-child
 versii.if.ua#?#main > [class="brxe-section"]:-abp-has(.indication-bor-rad)
@@ -22845,7 +22847,7 @@ ru###ads-top.ads
 2ip.io,2ip.ru##.ad-test-vpn
 2ip.io,2ip.ru#?#.content-article p:-abp-has(> .adsbygoogle)
 2ip.io,2ip.ru##.ip-icon-x-eye
-2ip.io,2ip.ru##.ip-links-container-row:first-child
+2ip.io,2ip.ru##.ip-links-container-row-x
 2ip.io,2ip.ru##.main-ip-icon-warning
 2ip.io,2ip.ru##.main-ip-icon-warning ~ [aria-disabled]
 2ip.io,2ip.ru#?#.narrow-column > style ~ div > div:-abp-has(a[style^="color:"])
@@ -23772,6 +23774,7 @@ rbc.ru##div[class^="item-slider__partner"]
 utro.ru##div[class^="partners-block"]
 rbc.ru##div[class^="styles_aside-top_"]
 rbc.ru##div[class^="styles_okko"]
+rbc.ru#?#main > article > div:-abp-has(.commercial-slider)
 ||api.mindbox.ru/scripts/*/tracker.$domain=rbc.ru
 ||cnews.ru/inc/js/height_max_banner.js
 ||market.cnews.ru/widget$domain=www.cnews.ru
@@ -28382,6 +28385,8 @@ prikol.ru###container:style(top: auto !important)
 prikol.ru##html > body > *:style(pointer-events: auto !important)
 prikol.ru##html > body:style(background-image:none !important; pointer-events: none !important)
 ! ---
+profinance.ru##main > .content-grid:style(grid-template-columns: unset !important)
+! ---
 profootball.ua###page:style(margin-top: 0 !important)
 ! ---
 promodj.com###topbrandingspot:style(padding-top: 0 !important; background: none !important)
@@ -28641,9 +28646,6 @@ tort.fm###topper_up:style(height: 88px !important)
 tourpom.ru##.modal-open .adv_modal
 tourpom.ru##.modal-open > .modal-backdrop
 tourpom.ru##.modal-open:style(overflow: auto !important)
-! ---
-! исправление ошибок и косяков оригинальной вёрстки
-tproger.ru##.tp-widget-pinned-post-item__title > a:style(pointer-events: auto !important)
 ! ---
 translit.ru##.tBlurred:style(-webkit-filter: none !important)
 translit.ru##.tPechenkiInfoblock
@@ -29317,7 +29319,7 @@ xv-ru.com##+js(addEventListener-defuser, DOMContentLoaded, exo_tracker)
 litnet.com##+js(addEventListener-defuser, DOMContentLoaded, feedback)
 allboxing.ru##+js(addEventListener-defuser, DOMContentLoaded, popup)
 vedomosti.ru##+js(addEventListener-defuser, click, '', elements, a[href*="?from="])
-magnit.ru,regnum.ru,tproger.ru##+js(addEventListener-defuser, click, '', elements, a[href*="utm_campaign"])
+magnit.ru,regnum.ru##+js(addEventListener-defuser, click, '', elements, a[href*="utm_campaign"])
 forbes.ru##+js(addEventListener-defuser, click, '', elements, a[href*="utm_campaign="])
 116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,www.fontanka.ru,ya62.ru##+js(addEventListener-defuser, click, , elements, [class^="plotsLine_"] > div)
 softonic.ru##+js(addEventListener-defuser, click, [native code])
@@ -29452,7 +29454,6 @@ dumatv.ru##+js(prevent-addEventListener, message, AUTOPLAY)
 news.rambler.ru##+js(prevent-fetch, &origin_type=rtb, url:/rutube.ru/api/tags/video/)
 dzen.ru,sportsdzen.ru##+js(prevent-fetch, /stats/bulk|stats/pixels|zen_audit/)
 progorod62.ru,ura.news##+js(prevent-fetch, _rsc=)
-reddit.com##+js(prevent-setTimeout, '{e(n,t,r)}', 30000)
 evribiont.xyz##+js(prevent-setTimeout, adTestElement)
 aigenda.ru##+js(prevent-setTimeout, combinedDetector)
 forum.ixbt.com##+js(prevent-setTimeout, count_banners)
