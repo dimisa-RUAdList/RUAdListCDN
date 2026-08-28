@@ -1,12 +1,14 @@
-diff name:ruadlist lines:68 checksum:2e03c5a751
+diff name:ruadlist lines:79 checksum:b517fbf46d
 d4 2
 a5 2
-! Last modified: Fri, 28 Aug 2026 05:18:46 +0000
-! Diff-Path: ../patches/2026.8.28.318.patch#ruadlist
+! Last modified: Fri, 28 Aug 2026 18:34:52 +0000
+! Diff-Path: ../patches/2026.8.28.1114.patch#ruadlist
 a286 1
 ||adsconex.com^$third-party
 a8549 1
 ##.nts-ad
+a15905 1
+glav.su#?#.bl-m:-abp-has(> div:only-child > div:only-child > div[id^="js-y-rtb"]:first-child)
 d16430 1
 d17635 1
 d18332 1
@@ -24,10 +26,17 @@ profinance.ru##main > .content-grid > aside
 a22598 1
 /^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]+\.[^/?.]{1,3}\.js(?:\?.*)?$/$script
 d22604 1
+d22634 1
+a22634 1
+||pikabu.ru/ajax/*?fFN6t=$xmlhttprequest
 d22850 1
 a22850 1
 2ip.io,2ip.ru##.ip-links-container-row-x
 d23486 1
+a23759 1
+rbc.ru#?#body.free div[class="central-publisher-item"]:-abp-has([href^="/story/pro"])
+a23762 1
+rbc.ru##body.free div[class^="MainNewsComponent_wrapper_"] [href*="utm_campaign"]
 a23777 1
 rbc.ru#?#main > article > div:-abp-has(.commercial-slider)
 a23938 2
@@ -58,6 +67,8 @@ a28402 2
 profinance.ru##main > .content-grid:style(grid-template-columns: unset !important)
 ! ---
 d28663 3
+a28874 1
+dzen.ru,sportsdzen.ru##div[class*="_content_with-discrete-layout"] > div > div > div[style^="height:"] > div > div[id]
 d29338 1
 a29338 1
 magnit.ru,regnum.ru##+js(addEventListener-defuser, click, '', elements, a[href*="utm_campaign"])
