@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 28 Aug 2026 18:34:52 +0000
-! Diff-Path: ../patches/2026.8.28.1114.patch#ruadlist
+! Last modified: Sat, 29 Aug 2026 02:05:55 +0000
+! Diff-Path: ../patches/2026.8.29.125.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10511,6 +10511,7 @@ $csp=script-src-attr 'none',domain=volyn.com.ua
 ||forum.ru-board.com/*.cgi?*=5&topic=51666$csp=img-src 'self' http://forum.ru-board.com/ https://forum.ru-board.com/ addons.mozilla.org raw.githubusercontent.com
 ||forums.rusmedserv.com/$csp=script-src 'unsafe-inline' 'unsafe-eval' data: https://forums.rusmedserv.com/clientscript/ cse.google.com *.google.com/cse/ *.googleapis.com
 ||gdz-ru.work/subscribe/$csp=sandbox allow-same-origin;
+||getblockify.com/adblock-test$csp=connect-src 'self'
 ||hawk.live/$csp=sandbox allow-same-origin;
 ||idealmedia.io$csp=script-src
 ||lis-gor.com/$csp=sandbox allow-same-origin;
@@ -10526,6 +10527,7 @@ $csp=script-src-attr 'none',domain=volyn.com.ua
 ||skam.online^$csp=script-src 'self' * 'unsafe-eval' data:
 ||smartmama.com.ua^$csp=media-src 'none'
 ||statusklic.info^$csp=sandbox allow-same-origin;
+||superadblocktest.com^$csp=connect-src 'self'
 ||syndication.exosrv.com^$csp=sandbox allow-same-origin;
 ||t1mcapp.com^$csp=script-src
 ||tapochek.net^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data:
@@ -26273,19 +26275,14 @@ grafik-smen.ru#@#.reklam
 landlord.ua,poima360.ru,rodinkam.net,skylineproduction.com.ua#@#.reklama
 rabkor.ru#@#.sidebar-ad-c
 krym.news,novostivl.ru,ryazan.life,v-tatarstane.ru,yakutsk.ru#@#.sidebar_ads
-abrikos.us#@#.single-ad
-leanforum.ru#@#.sponsor_block
 milanac.ru#@#.td-a-rec
 milanac.ru#@#.td-ad-m
 milanac.ru#@#.td-ad-tp
 milanac.ru#@#.td-header-ad-wrap
 myprogulki.ru#@#.vertical-ads
 156.ru#@#.view-ads
-redkino-admin.ru#@#.vl-advertisment
-redkino-admin.ru#@#.vl-header-ads
 mts.ru#@#.wide-ad
 aannov.ru#@#.widget_supermag_ad
-redkino-admin.ru#@#.widget_viral_advertisement
 xn--112-5cd3baof9c5c.xn--p1ai#@#.wrapad
 @@$domain=elama.com.br|elama.global|elama.kz|elama.ru
 @@-300x600.$image,~third-party,domain=5sotok.by|delmet.by|delmet.demo2.e-inform.by|dveri.d3-group.ru|dverybest.ru|specodezhda-siz.ru
