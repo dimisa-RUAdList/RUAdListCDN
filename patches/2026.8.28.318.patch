@@ -1,14 +1,23 @@
-diff name:ruadlist lines:22 checksum:16a7d29c34
+diff name:ruadlist lines:36 checksum:03fae1f00a
 d4 2
 a5 2
-! Last modified: Sat, 29 Aug 2026 02:05:55 +0000
-! Diff-Path: ../patches/2026.8.29.125.patch#ruadlist
+! Last modified: Sat, 29 Aug 2026 08:57:25 +0000
+! Diff-Path: ../patches/2026.8.29.537.patch#ruadlist
 a10513 1
 ||getblockify.com/adblock-test$csp=connect-src 'self'
+a10516 1
+||mobileproxy.space/*adblock-test.$csp=connect-src 'self'
 a10528 1
 ||superadblocktest.com^$csp=connect-src 'self'
 a15907 1
 glav.su#?#.bl-m:-abp-has(> div:only-child > div:only-child > div[id^="js-y-rtb"]:first-child)
+a18588 1
+mobileproxy.space#?#.status-badge:-abp-has(> #statusText:-abp-contains(Test complete)) > .fa-spin
+d20001 1
+a20007 1
+sport.ua,vringe.com##a[href*="ggbet"][target="_blank"]
+a20102 1
+sport.ua,vringe.com##a[href*="vbet"][target="_blank"]
 d22634 1
 a22634 1
 ||pikabu.ru/ajax/*?fFN6t=$xmlhttprequest
@@ -16,8 +25,13 @@ a23758 1
 rbc.ru#?#body.free div[class="central-publisher-item"]:-abp-has([href^="/story/pro"])
 a23761 1
 rbc.ru##body.free div[class^="MainNewsComponent_wrapper_"] [href*="utm_campaign"]
+a24050 1
+ya.ru,yandex.ru,yandex.*##.Bno_isPromoSnippet
 d26273 2
 d26281 2
 d26285 1
+a27806 2
+globus.ru##a[itemtype*="://schema.org/Product"] span > img:style(filter: none !important)
+! ---
 a28858 1
 dzen.ru,sportsdzen.ru##div[class*="_content_with-discrete-layout"] > div > div > div[style^="height:"] > div > div[id]

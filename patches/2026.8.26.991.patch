@@ -1,12 +1,14 @@
-diff name:ruadlist lines:60 checksum:16a7d29c34
+diff name:ruadlist lines:74 checksum:03fae1f00a
 d4 2
 a5 2
-! Last modified: Sat, 29 Aug 2026 02:05:55 +0000
-! Diff-Path: ../patches/2026.8.29.125.patch#ruadlist
+! Last modified: Sat, 29 Aug 2026 08:57:25 +0000
+! Diff-Path: ../patches/2026.8.29.537.patch#ruadlist
 a286 1
 ||adsconex.com^$third-party
 a10512 1
 ||getblockify.com/adblock-test$csp=connect-src 'self'
+a10515 1
+||mobileproxy.space/*adblock-test.$csp=connect-src 'self'
 a10527 1
 ||superadblocktest.com^$csp=connect-src 'self'
 a15906 1
@@ -14,6 +16,8 @@ glav.su#?#.bl-m:-abp-has(> div:only-child > div:only-child > div[id^="js-y-rtb"]
 d16431 1
 d17636 1
 d18333 1
+a18590 1
+mobileproxy.space#?#.status-badge:-abp-has(> #statusText:-abp-contains(Test complete)) > .fa-spin
 d18882 1
 a18882 1
 tproger.ru##.tp-lubok-top
@@ -22,6 +26,11 @@ a19408 1
 tproger.ru##[class^="tp-new-design-"][class*="-posts__"]:empty
 a19673 1
 vk.com,vk.ru#?#[role="feed"] > article:-abp-has(> [data-post-id] [href*="utm_source=vk_ads"])
+d20002 1
+a20008 1
+sport.ua,vringe.com##a[href*="ggbet"][target="_blank"]
+a20103 1
+sport.ua,vringe.com##a[href*="vbet"][target="_blank"]
 d21416 1
 a22213 1
 profinance.ru##main > .content-grid > aside
@@ -38,12 +47,17 @@ a23763 1
 rbc.ru##body.free div[class^="MainNewsComponent_wrapper_"] [href*="utm_campaign"]
 a23778 1
 rbc.ru#?#main > article > div:-abp-has(.commercial-slider)
+a24051 1
+ya.ru,yandex.ru,yandex.*##.Bno_isPromoSnippet
 d26190 1
 d26209 1
 d26260 1
 d26277 2
 d26285 2
 d26289 1
+a27810 2
+globus.ru##a[itemtype*="://schema.org/Product"] span > img:style(filter: none !important)
+! ---
 a28391 2
 profinance.ru##main > .content-grid:style(grid-template-columns: unset !important)
 ! ---
