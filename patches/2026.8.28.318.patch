@@ -1,8 +1,14 @@
-diff name:ruadlist lines:43 checksum:03c523af04
+diff name:ruadlist lines:65 checksum:a56e2f668f
 d4 2
 a5 2
-! Last modified: Sat, 29 Aug 2026 14:24:38 +0000
-! Diff-Path: ../patches/2026.8.29.864.patch#ruadlist
+! Last modified: Sat, 29 Aug 2026 21:40:31 +0000
+! Diff-Path: ../patches/2026.8.29.1300.patch#ruadlist
+a1735 1
+||dtxelz.com^$document^$document
+a1906 1
+||epicgameshubham.com^$document
+a2433 1
+||goddess-game.com^$document
 a10513 1
 ||getblockify.com/adblock-test$csp=connect-src 'self'
 a10516 1
@@ -14,8 +20,13 @@ a10528 1
 ||superadblocktest.com^$csp=connect-src 'self'
 a10534 1
 ||whox.com/*ad-blocker-test$csp=connect-src 'self'; img-src 'self'
+d15214 1
+a15390 1
+libertycity.net,libertycity.ru##.aeaadbeafef
 a15907 1
 glav.su#?#.bl-m:-abp-has(> div:only-child > div:only-child > div[id^="js-y-rtb"]:first-child)
+a19528 1
+libertycity.net,libertycity.ru##[data-umami-event*="Brand"]
 a19672 1
 vk.com,vk.ru#?#[role="feed"] > article:-abp-has(> [data-post-id] a[rel]:-abp-contains(vk.cc/))
 d20001 1
@@ -40,5 +51,16 @@ d26285 1
 a27806 2
 globus.ru##a[itemtype*="://schema.org/Product"] span > img:style(filter: none !important)
 ! ---
+a28128 2
+libertycity.net,libertycity.ru##body > div[class]:not([id]):not([style]):style(background-image: none !important)
+! ---
 a28858 1
 dzen.ru,sportsdzen.ru##div[class*="_content_with-discrete-layout"] > div > div > div[style^="height:"] > div > div[id]
+a29831 1
+*$third-party,popunder,domain=fastpic.org
+d29836 1
+a29836 1
+fastpic.org,~new.fastpic.org##+js(remove-node-text, script, 'return;try')
+a29844 2
+fastpic.org/fullview##+js(abort-on-property-read, document.body.appendChild)
+fastpic.org/view##+js(abort-on-property-read, document.body.appendChild)

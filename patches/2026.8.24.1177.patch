@@ -1,10 +1,16 @@
-diff name:ruadlist lines:129 checksum:03c523af04
+diff name:ruadlist lines:148 checksum:a56e2f668f
 d4 2
 a5 2
-! Last modified: Sat, 29 Aug 2026 14:24:38 +0000
-! Diff-Path: ../patches/2026.8.29.864.patch#ruadlist
+! Last modified: Sat, 29 Aug 2026 21:40:31 +0000
+! Diff-Path: ../patches/2026.8.29.1300.patch#ruadlist
 a286 1
 ||adsconex.com^$third-party
+a1734 1
+||dtxelz.com^$document^$document
+a1905 1
+||epicgameshubham.com^$document
+a2432 1
+||goddess-game.com^$document
 a8549 1
 ##.nts-ad
 a10511 1
@@ -18,8 +24,8 @@ a10526 1
 ||superadblocktest.com^$csp=connect-src 'self'
 a10532 1
 ||whox.com/*ad-blocker-test$csp=connect-src 'self'; img-src 'self'
-a15211 1
-libertycity.net,libertycity.ru##.acfbcbddbddddbfcdc
+a15387 1
+libertycity.net,libertycity.ru##.aeaadbeafef
 a15904 1
 glav.su#?#.bl-m:-abp-has(> div:only-child > div:only-child > div[id^="js-y-rtb"]:first-child)
 d16225 1
@@ -36,6 +42,8 @@ a19443 3
 t-j.ru##[data-component="product-card"] > a[target="_blank"]
 t-j.ru##[data-component="product-card"] [class^="_priceWrapper_"] > div[class^="_iconLink_"]
 t-j.ru##[data-component="product-card"] div[class^="_moreOffersWrapper_"]
+a19526 1
+libertycity.net,libertycity.ru##[data-umami-event*="Brand"]
 a19669 2
 vk.com,vk.ru#?#[role="feed"] > article:-abp-has(> [data-post-id] [href*="utm_source=vk_ads"])
 vk.com,vk.ru#?#[role="feed"] > article:-abp-has(> [data-post-id] a[rel]:-abp-contains(vk.cc/))
@@ -100,6 +108,9 @@ d26673 1
 a27818 2
 globus.ru##a[itemtype*="://schema.org/Product"] span > img:style(filter: none !important)
 ! ---
+a28140 2
+libertycity.net,libertycity.ru##body > div[class]:not([id]):not([style]):style(background-image: none !important)
+! ---
 a28399 2
 profinance.ru##main > .content-grid:style(grid-template-columns: unset !important)
 ! ---
@@ -123,6 +134,14 @@ d29471 1
 d29787 1
 a29787 1
 embed.smotrim.ru,gofrag.ru,radiosputnik.ru,videobel.by##video:remove-attr(autoplay)
+a29846 1
+*$third-party,popunder,domain=fastpic.org
+d29851 1
+a29851 1
+fastpic.org,~new.fastpic.org##+js(remove-node-text, script, 'return;try')
+a29859 2
+fastpic.org/fullview##+js(abort-on-property-read, document.body.appendChild)
+fastpic.org/view##+js(abort-on-property-read, document.body.appendChild)
 a30166 1
 ||polygon.com/fetch/next/mural/
 d33006 1
