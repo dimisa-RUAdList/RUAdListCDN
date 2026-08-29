@@ -1,8 +1,8 @@
-diff name:ruadlist lines:100 checksum:03fae1f00a
+diff name:ruadlist lines:106 checksum:03c523af04
 d4 2
 a5 2
-! Last modified: Sat, 29 Aug 2026 08:57:25 +0000
-! Diff-Path: ../patches/2026.8.29.537.patch#ruadlist
+! Last modified: Sat, 29 Aug 2026 14:24:38 +0000
+! Diff-Path: ../patches/2026.8.29.864.patch#ruadlist
 a286 1
 ||adsconex.com^$third-party
 a8549 1
@@ -10,24 +10,28 @@ a8549 1
 a10511 1
 ||getblockify.com/adblock-test$csp=connect-src 'self'
 a10514 1
-||mobileproxy.space/*adblock-test.$csp=connect-src 'self'
+||mobileproxy.*/adblock-test.$csp=connect-src 'self'
+d10519 1
+a10519 1
+||obfusgated.com/*/tools/ad-block-test$csp=connect-src 'self'; img-src 'self'
 a10526 1
 ||superadblocktest.com^$csp=connect-src 'self'
+a10532 1
+||whox.com/*ad-blocker-test$csp=connect-src 'self'; img-src 'self'
 a15905 1
 glav.su#?#.bl-m:-abp-has(> div:only-child > div:only-child > div[id^="js-y-rtb"]:first-child)
 d16430 1
 d17635 1
 d18332 1
-a18589 1
-mobileproxy.space#?#.status-badge:-abp-has(> #statusText:-abp-contains(Test complete)) > .fa-spin
 d18881 1
 a18881 1
 tproger.ru##.tp-lubok-top
 d19008 1
 a19407 1
 tproger.ru##[class^="tp-new-design-"][class*="-posts__"]:empty
-a19672 1
+a19672 2
 vk.com,vk.ru#?#[role="feed"] > article:-abp-has(> [data-post-id] [href*="utm_source=vk_ads"])
+vk.com,vk.ru#?#[role="feed"] > article:-abp-has(> [data-post-id] a[rel]:-abp-contains(vk.cc/))
 d20001 1
 a20007 1
 sport.ua,vringe.com##a[href*="ggbet"][target="_blank"]
@@ -36,6 +40,8 @@ sport.ua,vringe.com##a[href*="vbet"][target="_blank"]
 d21415 1
 a22212 1
 profinance.ru##main > .content-grid > aside
+a22228 1
+mobileproxy.*#?#.status-badge:-abp-has(> #statusText:-abp-contains(/ /)) > .fa-spin
 a22598 1
 /^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]+\.[^/?.]{1,3}\.js(?:\?.*)?$/$script
 d22604 1

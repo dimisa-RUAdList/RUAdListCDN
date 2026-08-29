@@ -1,26 +1,18 @@
-diff name:ruadlist lines:25 checksum:03c523af04
+diff name:ruadlist lines:17 checksum:03c523af04
 d4 2
 a5 2
 ! Last modified: Sat, 29 Aug 2026 14:24:38 +0000
 ! Diff-Path: ../patches/2026.8.29.864.patch#ruadlist
-a10517 1
+d10518 1
+a10518 1
 ||mobileproxy.*/adblock-test.$csp=connect-src 'self'
-d10522 1
-a10522 1
+d10523 1
+a10523 1
 ||obfusgated.com/*/tools/ad-block-test$csp=connect-src 'self'; img-src 'self'
-a10536 1
+a10537 1
 ||whox.com/*ad-blocker-test$csp=connect-src 'self'; img-src 'self'
-a19675 1
+d18593 1
+a19677 1
 vk.com,vk.ru#?#[role="feed"] > article:-abp-has(> [data-post-id] a[rel]:-abp-contains(vk.cc/))
-d20004 1
-a20010 1
-sport.ua,vringe.com##a[href*="ggbet"][target="_blank"]
-a20105 1
-sport.ua,vringe.com##a[href*="vbet"][target="_blank"]
-a22231 1
+a22234 1
 mobileproxy.*#?#.status-badge:-abp-has(> #statusText:-abp-contains(/ /)) > .fa-spin
-a24055 1
-ya.ru,yandex.ru,yandex.*##.Bno_isPromoSnippet
-a27805 2
-! ---
-globus.ru##a[itemtype*="://schema.org/Product"] span > img:style(filter: none !important)

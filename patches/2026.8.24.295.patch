@@ -1,8 +1,8 @@
-diff name:ruadlist lines:157 checksum:03fae1f00a
+diff name:ruadlist lines:163 checksum:03c523af04
 d4 2
 a5 2
-! Last modified: Sat, 29 Aug 2026 08:57:25 +0000
-! Diff-Path: ../patches/2026.8.29.537.patch#ruadlist
+! Last modified: Sat, 29 Aug 2026 14:24:38 +0000
+! Diff-Path: ../patches/2026.8.29.864.patch#ruadlist
 a286 1
 ||adsconex.com^$third-party
 a8549 1
@@ -13,9 +13,14 @@ $popup,domain=176.114.0.126|176.114.0.132|37.220.36.15|assiatv.com|cdnpotok.com|
 a10512 1
 ||getblockify.com/adblock-test$csp=connect-src 'self'
 a10515 1
-||mobileproxy.space/*adblock-test.$csp=connect-src 'self'
+||mobileproxy.*/adblock-test.$csp=connect-src 'self'
+d10520 1
+a10520 1
+||obfusgated.com/*/tools/ad-block-test$csp=connect-src 'self'; img-src 'self'
 a10527 1
 ||superadblocktest.com^$csp=connect-src 'self'
+a10533 1
+||whox.com/*ad-blocker-test$csp=connect-src 'self'; img-src 'self'
 a11635 1
 ||fastpic.org/fpv.js$script
 a15211 1
@@ -26,8 +31,6 @@ d16225 1
 d16430 1
 d17635 1
 d18332 1
-a18589 1
-mobileproxy.space#?#.status-badge:-abp-has(> #statusText:-abp-contains(Test complete)) > .fa-spin
 d18881 1
 a18881 1
 tproger.ru##.tp-lubok-top
@@ -38,8 +41,9 @@ a19443 3
 t-j.ru##[data-component="product-card"] > a[target="_blank"]
 t-j.ru##[data-component="product-card"] [class^="_priceWrapper_"] > div[class^="_iconLink_"]
 t-j.ru##[data-component="product-card"] div[class^="_moreOffersWrapper_"]
-a19669 1
+a19669 2
 vk.com,vk.ru#?#[role="feed"] > article:-abp-has(> [data-post-id] [href*="utm_source=vk_ads"])
+vk.com,vk.ru#?#[role="feed"] > article:-abp-has(> [data-post-id] a[rel]:-abp-contains(vk.cc/))
 d19998 1
 a20004 1
 sport.ua,vringe.com##a[href*="ggbet"][target="_blank"]
@@ -56,6 +60,8 @@ a21462 1
 vk.com,vk.ru##div[data-testid="subscriptionbanner"]
 a22205 1
 profinance.ru##main > .content-grid > aside
+a22221 1
+mobileproxy.*#?#.status-badge:-abp-has(> #statusText:-abp-contains(/ /)) > .fa-spin
 a22591 1
 /^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]+\.[^/?.]{1,3}\.js(?:\?.*)?$/$script
 d22597 1

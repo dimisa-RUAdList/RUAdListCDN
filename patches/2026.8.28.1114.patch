@@ -1,21 +1,28 @@
-diff name:ruadlist lines:25 checksum:03fae1f00a
+diff name:ruadlist lines:32 checksum:03c523af04
 d4 2
 a5 2
-! Last modified: Sat, 29 Aug 2026 08:57:25 +0000
-! Diff-Path: ../patches/2026.8.29.537.patch#ruadlist
+! Last modified: Sat, 29 Aug 2026 14:24:38 +0000
+! Diff-Path: ../patches/2026.8.29.864.patch#ruadlist
 a10513 1
 ||getblockify.com/adblock-test$csp=connect-src 'self'
 a10516 1
-||mobileproxy.space/*adblock-test.$csp=connect-src 'self'
+||mobileproxy.*/adblock-test.$csp=connect-src 'self'
+d10521 1
+a10521 1
+||obfusgated.com/*/tools/ad-block-test$csp=connect-src 'self'; img-src 'self'
 a10528 1
 ||superadblocktest.com^$csp=connect-src 'self'
-a18589 1
-mobileproxy.space#?#.status-badge:-abp-has(> #statusText:-abp-contains(Test complete)) > .fa-spin
+a10534 1
+||whox.com/*ad-blocker-test$csp=connect-src 'self'; img-src 'self'
+a19673 1
+vk.com,vk.ru#?#[role="feed"] > article:-abp-has(> [data-post-id] a[rel]:-abp-contains(vk.cc/))
 d20002 1
 a20008 1
 sport.ua,vringe.com##a[href*="ggbet"][target="_blank"]
 a20103 1
 sport.ua,vringe.com##a[href*="vbet"][target="_blank"]
+a22229 1
+mobileproxy.*#?#.status-badge:-abp-has(> #statusText:-abp-contains(/ /)) > .fa-spin
 a24053 1
 ya.ru,yandex.ru,yandex.*##.Bno_isPromoSnippet
 d26276 2

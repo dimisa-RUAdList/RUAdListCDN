@@ -1,8 +1,8 @@
-diff name:ruadlist lines:123 checksum:03fae1f00a
+diff name:ruadlist lines:129 checksum:03c523af04
 d4 2
 a5 2
-! Last modified: Sat, 29 Aug 2026 08:57:25 +0000
-! Diff-Path: ../patches/2026.8.29.537.patch#ruadlist
+! Last modified: Sat, 29 Aug 2026 14:24:38 +0000
+! Diff-Path: ../patches/2026.8.29.864.patch#ruadlist
 a286 1
 ||adsconex.com^$third-party
 a8549 1
@@ -10,9 +10,14 @@ a8549 1
 a10511 1
 ||getblockify.com/adblock-test$csp=connect-src 'self'
 a10514 1
-||mobileproxy.space/*adblock-test.$csp=connect-src 'self'
+||mobileproxy.*/adblock-test.$csp=connect-src 'self'
+d10519 1
+a10519 1
+||obfusgated.com/*/tools/ad-block-test$csp=connect-src 'self'; img-src 'self'
 a10526 1
 ||superadblocktest.com^$csp=connect-src 'self'
+a10532 1
+||whox.com/*ad-blocker-test$csp=connect-src 'self'; img-src 'self'
 a15211 1
 libertycity.net,libertycity.ru##.acfbcbddbddddbfcdc
 a15904 1
@@ -21,8 +26,6 @@ d16225 1
 d16430 1
 d17635 1
 d18332 1
-a18589 1
-mobileproxy.space#?#.status-badge:-abp-has(> #statusText:-abp-contains(Test complete)) > .fa-spin
 d18881 1
 a18881 1
 tproger.ru##.tp-lubok-top
@@ -33,8 +36,9 @@ a19443 3
 t-j.ru##[data-component="product-card"] > a[target="_blank"]
 t-j.ru##[data-component="product-card"] [class^="_priceWrapper_"] > div[class^="_iconLink_"]
 t-j.ru##[data-component="product-card"] div[class^="_moreOffersWrapper_"]
-a19669 1
+a19669 2
 vk.com,vk.ru#?#[role="feed"] > article:-abp-has(> [data-post-id] [href*="utm_source=vk_ads"])
+vk.com,vk.ru#?#[role="feed"] > article:-abp-has(> [data-post-id] a[rel]:-abp-contains(vk.cc/))
 d19998 1
 a20004 1
 sport.ua,vringe.com##a[href*="ggbet"][target="_blank"]
@@ -43,6 +47,8 @@ sport.ua,vringe.com##a[href*="vbet"][target="_blank"]
 d21412 1
 a22209 1
 profinance.ru##main > .content-grid > aside
+a22225 1
+mobileproxy.*#?#.status-badge:-abp-has(> #statusText:-abp-contains(/ /)) > .fa-spin
 a22595 1
 /^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]+\.[^/?.]{1,3}\.js(?:\?.*)?$/$script
 d22601 1
