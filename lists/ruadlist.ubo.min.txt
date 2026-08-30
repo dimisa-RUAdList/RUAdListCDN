@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 30 Aug 2026 05:19:26 +0000
-! Diff-Path: ../patches/2026.8.30.319.patch#ruadlist
+! Last modified: Sun, 30 Aug 2026 11:49:00 +0000
+! Diff-Path: ../patches/2026.8.30.708.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10498,6 +10498,7 @@ $csp=script-src-attr 'none',domain=volyn.com.ua
 ||24smi.*/top/$csp=script-src
 ||24top.*/top/$csp=script-src
 ||adblock.turtlecute.org^$csp=connect-src 'self'; script-src https://adblock.turtlecute.org/js/index.js
+||adblockbench.com^$csp=connect-src 'self'; img-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'
 ||an.yandex.ru/count/$csp=script-src
 ||azbne.net^$csp=sandbox allow-same-origin;
 ||betnetmed.advertserve.com^$csp=sandbox allow-same-origin;
@@ -15290,6 +15291,7 @@ sravni.ru##.adfox_placeholder
 libertycity.net,libertycity.ru,vgtimes.com,vgtimes.ru##.adfshift
 wintech.net.ru##.adgoogle
 onlinetestpad.com##.adleft
+rutv.pw##.adlook-pc-wrapper
 ua.today##.admix
 promigren.ru##.adp-block
 asiaplustj.info,news.tj##.adredirector
@@ -19154,6 +19156,7 @@ sport.ua##.wrap > div[style^="height"]
 avtosreda.ru##.wrap > noindex
 vse42.ru##.wrap-adplace-frame
 kurer-sreda.ru##.wrap-inf4x4
+p2plive7.top##.wrap-overlay
 osvita.ua##.wrapbanner
 novy.tv##.wrapper > #header > a[href][target="_blank"] > img
 grinkod.spb.ru##.wrapper > aside
@@ -20993,6 +20996,7 @@ rg.ru##div[class*="_fox__"]
 poltavawave.com.ua##div[class*="_place__"]
 tass.ru##div[class*="_top_ad_"]
 sovsport.ru##div[class*="_winline"]
+adblockbench.com##div[class*="ad-"][id][style*="height:"]
 rg.ru##div[class*="adBox"]
 rg.ru##div[class*="adFox"]
 agroxxi.ru##div[class*="adagro"]
@@ -26243,8 +26247,7 @@ ds45spb.ru#@#.ads_item
 ntsk.ru#@#.adsinfo
 vtomske.ru#@#.adtable
 kvartirant.by#@#.adtxt
-board.sibnet.ru,fridger.com.ua,hawk.ru,hmgma.ru,openbudget.gfu.ru,pcradio.ru,postiralka.com.ua,school.kupiltovar.ru,servkino.ru,siproen.ru,sovcombank.ru,tehnika4u.ru#@#.adv
-school.kupiltovar.ru#@#.adv-4
+board.sibnet.ru,fridger.com.ua,hawk.ru,hmgma.ru,openbudget.gfu.ru,pcradio.ru,postiralka.com.ua,servkino.ru,siproen.ru,sovcombank.ru,tehnika4u.ru#@#.adv
 azartcash.com,twite.ru#@#.adv-block
 xn--74-6kcaj3c0aikq.xn--p1ai#@#.adv-right
 100kolyasok.kz,4.u0166811.z8.ru,calls.su,chistosex.org,teu-eurocara.com.ua#@#.adv-text
@@ -26530,6 +26533,7 @@ xn--112-5cd3baof9c5c.xn--p1ai#@#.wrapad
 @@||foodzy.ru/i/b/$image,domain=foodzy.ru
 @@||forecabox.foreca.com/css/*X*css|$stylesheet,domain=forecabox.foreca.com
 @@||fundament-spb24.ru^*/images/$image,domain=fundament-spb24.ru
+@@||g.alicdn.com/AWSC/fireyejs/*/fireyejs.js|$script,domain=aliexpress.ru
 @@||gamearmy.ru/images/$image,domain=setitagila.3dn.ru
 @@||games-tv.ru/openx/www/delivery/ajs.php?$script,domain=games-tv.ru
 @@||gardenshop.com.ua/assets/components/phpthumbof/cache/$image,domain=gardenshop.com.ua

@@ -1,14 +1,16 @@
-diff name:ruadlist lines:87 checksum:4bc1d93786
+diff name:ruadlist lines:100 checksum:5729c8bffd
 d4 2
 a5 2
-! Last modified: Sun, 30 Aug 2026 05:19:26 +0000
-! Diff-Path: ../patches/2026.8.30.319.patch#ruadlist
+! Last modified: Sun, 30 Aug 2026 11:49:00 +0000
+! Diff-Path: ../patches/2026.8.30.708.patch#ruadlist
 a1735 1
 ||dtxelz.com^$document^$document
 a1906 1
 ||epicgameshubham.com^$document
 a2433 1
 ||goddess-game.com^$document
+a10497 1
+||adblockbench.com^$csp=connect-src 'self'; img-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'
 a10513 1
 ||getblockify.com/adblock-test$csp=connect-src 'self'
 a10516 1
@@ -21,6 +23,8 @@ a10528 1
 a10534 1
 ||whox.com/*ad-blocker-test$csp=connect-src 'self'; img-src 'self'
 d15214 1
+a15286 1
+rutv.pw##.adlook-pc-wrapper
 a15390 1
 libertycity.net,libertycity.ru##.aeaadbeafef
 a15907 1
@@ -28,6 +32,8 @@ glav.su#?#.bl-m:-abp-has(> div:only-child > div:only-child > div[id^="js-y-rtb"]
 d18880 1
 a18880 1
 tproger.ru##.tp-lubok-top
+a19148 1
+p2plive7.top##.wrap-overlay
 a19405 1
 tproger.ru##[class^="tp-new-design-"][class*="-posts__"]:empty
 a19527 1
@@ -40,6 +46,8 @@ a20005 1
 sport.ua,vringe.com##a[href*="ggbet"][target="_blank"]
 a20100 1
 sport.ua,vringe.com##a[href*="vbet"][target="_blank"]
+a20982 1
+adblockbench.com##div[class*="ad-"][id][style*="height:"]
 d21413 1
 a22210 1
 profinance.ru##main > .content-grid > aside
@@ -59,9 +67,14 @@ a23774 1
 rbc.ru#?#main > article > div:-abp-has(.commercial-slider)
 a24047 1
 ya.ru,yandex.ru,yandex.*##.Bno_isPromoSnippet
+d26228 2
+a26229 1
+board.sibnet.ru,fridger.com.ua,hawk.ru,hmgma.ru,openbudget.gfu.ru,pcradio.ru,postiralka.com.ua,servkino.ru,siproen.ru,sovcombank.ru,tehnika4u.ru#@#.adv
 d26270 2
 d26278 2
 d26282 1
+a26519 1
+@@||g.alicdn.com/AWSC/fireyejs/*/fireyejs.js|$script,domain=aliexpress.ru
 a27803 2
 globus.ru##a[itemtype*="://schema.org/Product"] span > img:style(filter: none !important)
 ! ---
