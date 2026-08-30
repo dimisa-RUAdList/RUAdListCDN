@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 30 Aug 2026 16:36:05 +0000
-! Diff-Path: ../patches/2026.8.30.996.patch#ruadlist
+! Last modified: Sun, 30 Aug 2026 22:40:59 +0000
+! Diff-Path: ../patches/2026.8.30.1360.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -1733,7 +1733,6 @@
 ||dspnow.ru^$third-party
 ||dtashjvcjswq.info^$third-party
 ||dtudz.top^$third-party
-||dtxelz.com^$document^$document
 ||dubnokhi.ru^$third-party
 ||dubochiy.ru^$third-party
 ||dudintrec.ru^$third-party
@@ -1905,7 +1904,6 @@
 ||eomrvyl9fqmkwiw.ru^$third-party
 ||eozjqg.com^$third-party
 ||epaaab.com^$third-party
-||epicgameshubham.com^$document
 ||epoquels.com^
 ||epqzviy9.bid^$third-party
 ||eprofri.info^$third-party
@@ -2433,7 +2431,6 @@
 ||goallead.ru^$third-party
 ||gocdn.ru^
 ||goclass.ru^$third-party
-||goddess-game.com^$document
 ||godsave.lgbt^$third-party
 ||gogetlinks.net^$third-party
 ||gogo4girlz.com^$third-party
@@ -7428,6 +7425,15 @@ _vodkov.net
 ||extract.zz.mu^$third-party
 ||getout.besaba.com^
 ||kipfilms.ru^$third-party
+! FastPic-partners
+||crmared.com^$document
+||dsazfk.com^$document
+||dteifi.com^$document
+||dtxelz.com^$document
+||epicgameshubham.com^$document
+||goddess-game.com^$document
+||redirectthisclick.com^$document
+||thtrck.com^$document
 ! People-Group.su
 ###pgeldiz
 ! $domain=people-group.eu|people-group.su
@@ -15149,6 +15155,7 @@ razvitierebenka.com#?#.HTML:-abp-has(> .widget-content > .adsbygoogle)
 myshows.me#?#.Home-section:-abp-has(> div .title [class*="romo"])
 myshows.me#?#.HomeSection--separator:-abp-has(> .Container > [class*="Promo"])
 myshows.me##.Home__ad
+liveinternet.ru##.Inner > .BAR + br + br + .BAR
 forbes.ru##.Ix-yg
 russiandc.com##.L
 meduza.io##.Layout-bannerTop
@@ -19590,7 +19597,7 @@ virpl.ru##[id$="-banner"]
 cools.biz,cools.dj,intermusic.name,iplayer.info,ipleer.fm,k1news.ru,kolesa.kz,market4game.ru,vmuzice.me,yellowpages.uz##[id*="Banner"]
 espreso.tv##[id*="ScriptRoot"]:not(.news-block-magick)
 football24.ua,zaxid.net##[id*="VideoAdvWrapper"]
-liveinternet.ru,livejournal.com##[id*="_R-A-"]
+liveinternet.ru,livejournal.com##[id*="_R-A-"]:not(img)
 kino-teatr.ru##[id*="_dobro"]
 makler.md##[id*="_wideBann"]
 liveangarsk.ru##[id*="abovecontent"]
@@ -19683,6 +19690,7 @@ penzainform.ru##[pnz-ads]:not(eto-dlya-mob-ver)
 apteki.su##[poster^="http://static.apteki.su/img/banners/"]
 vk.com,vk.ru#?#[role="feed"] > article:-abp-has(> [data-post-id] [href*="utm_source=vk_ads"])
 vk.com,vk.ru#?#[role="feed"] > article:-abp-has(> [data-post-id] a[rel]:-abp-contains(vk.cc/))
+vk.com,vk.ru#?#[role="feed"] > article:-abp-has(> [data-post-id] a[rel][href*="utm_campaign"])
 vk.com,vk.ru#?#[role="feed"] > article:-abp-has([aria-label="Реклама от автора"])
 rozetka.com.ua#?#[rzadvertisingview]:-abp-has(> div > span > rz-advertising-info-btn)
 rozetka.com.ua#?#[rzscrollersliderbar] > div > .slide:-abp-has(> rz-product-tile [aria-label*=" про рекламу"])
@@ -22893,7 +22901,7 @@ ru###ads-top.ads
 ||proxyelite.info^$third-party,popup
 ||proxyshare.com^$third-party,popup
 ! Avito
-avito.ru##[data-chunks="item"] + div > div:first-child > div:first-child div:first-child + div > div:first-child + div + div:last-child > div:only-child > div:first-child + div:last-child > div:only-child > div:first-child + div:last-child
+avito.ru##[data-chunks="item"] + div div:last-child > div:only-child > div:first-child + div:last-child > div:only-child > div:first-child + div:last-child
 www.avito.ru##div[class*=" adv-"]
 www.avito.ru##div[class*=" advRoot"]
 www.avito.ru##div[class*="avito-ads-container"]
@@ -29165,7 +29173,7 @@ inoreader.com###reader_pane:style(padding-right: unset !important)
 inoreader.com###sinner_container:style(display: block !important; z-index: 0 !important)
 rambler.ru###summary ~ div:has(> [id^="cluster-video-ad"]):remove()
 pronpic.org###vO5STmSLgNAkebzSluI8coxpDgsG97g:style(height: 1px !important; min-height: 1px !important)
-$document,reason=malicious,domain=apad2.top|besplatnyeprogrammy.ru|dsazfk.com|games-7.com|hdrip.info|mediagetguru.ru|mixsoft.org|monna2.top|torrent-muzic.ru|torrent-soft.ru
+$document,reason=malicious,domain=apad2.top|besplatnyeprogrammy.ru|games-7.com|hdrip.info|mediagetguru.ru|mixsoft.org|monna2.top|torrent-muzic.ru|torrent-soft.ru
 */bens/vinos.js$popunder
 kolizhanka.com.ua,miyzvuk.net,ozon.ru##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important)
 captcha-api.yandex.ru,id.vk.ru,passport.yandex.ru,sso.dzen.ru,sso.ya.ru#@#+js()
@@ -29216,7 +29224,6 @@ vk.com,vk.ru##+js(abort-on-property-read, Groups.showDisclaimer)
 rutor.org##+js(abort-on-property-read, Light.Popup)
 drive2.ru##+js(abort-on-property-read, Object.prototype.AdfoxXhrRequestPrepared)
 liveinternet.ru,yap.ru,yaplakal.com##+js(abort-on-property-read, Object.prototype.Metrika)
-liveinternet.ru##+js(abort-on-property-read, Object.prototype.YA_TURBO_PAGES)
 levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##+js(abort-on-property-read, Object.prototype._getBanner)
 rbc.ru##+js(abort-on-property-read, Object.prototype._isAutostartQueueSet)
 www.kinopoisk.ru##+js(abort-on-property-read, Object.prototype.bannerOptions)
@@ -29469,6 +29476,7 @@ kvadratmetr.uz,oligarx.uz,tehnar.net.ua##+js(noeval-if, adsBlocked)
 www.kinopoisk.ru##+js(prevent-addEventListener, /canplay|loadeddata|playing|timeupdate/, '', elements, [poster][loop])
 mem-hub.ru##+js(prevent-addEventListener, DOMContentLoaded, /adBlocks|adObserver|appPromoModal/)
 rutube.ru##+js(prevent-addEventListener, click, showRedirectPopup)
+liveinternet.ru##+js(prevent-addEventListener, load, AdvManager)
 dumatv.ru##+js(prevent-addEventListener, message, AUTOPLAY)
 news.rambler.ru##+js(prevent-fetch, &origin_type=rtb, url:/rutube.ru/api/tags/video/)
 dzen.ru,sportsdzen.ru##+js(prevent-fetch, /stats/bulk|stats/pixels|zen_audit/)

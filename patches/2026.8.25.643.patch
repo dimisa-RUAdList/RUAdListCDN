@@ -1,16 +1,20 @@
-diff name:ruadlist lines:145 checksum:a2d41a3a15
+diff name:ruadlist lines:164 checksum:ad010aaa5f
 d4 2
 a5 2
-! Last modified: Sun, 30 Aug 2026 16:36:05 +0000
-! Diff-Path: ../patches/2026.8.30.996.patch#ruadlist
+! Last modified: Sun, 30 Aug 2026 22:40:59 +0000
+! Diff-Path: ../patches/2026.8.30.1360.patch#ruadlist
 a286 1
 ||adsconex.com^$third-party
-a1734 1
-||dtxelz.com^$document^$document
-a1905 1
+a7426 9
+! FastPic-partners
+||crmared.com^$document
+||dsazfk.com^$document
+||dteifi.com^$document
+||dtxelz.com^$document
 ||epicgameshubham.com^$document
-a2432 1
 ||goddess-game.com^$document
+||redirectthisclick.com^$document
+||thtrck.com^$document
 a8549 1
 ##.nts-ad
 a10495 1
@@ -26,6 +30,8 @@ a10526 1
 ||superadblocktest.com^$csp=connect-src 'self'
 a10532 1
 ||whox.com/*ad-blocker-test$csp=connect-src 'self'; img-src 'self'
+a15141 1
+liveinternet.ru##.Inner > .BAR + br + br + .BAR
 a15283 1
 rutv.pw##.adlook-pc-wrapper
 a15387 1
@@ -50,9 +56,13 @@ t-j.ru##[data-component="product-card"] [class^="_priceWrapper_"] > div[class^="
 t-j.ru##[data-component="product-card"] div[class^="_moreOffersWrapper_"]
 a19526 1
 libertycity.net,libertycity.ru##[data-umami-event*="Brand"]
-a19669 2
+d19579 1
+a19579 1
+liveinternet.ru,livejournal.com##[id*="_R-A-"]:not(img)
+a19669 3
 vk.com,vk.ru#?#[role="feed"] > article:-abp-has(> [data-post-id] [href*="utm_source=vk_ads"])
 vk.com,vk.ru#?#[role="feed"] > article:-abp-has(> [data-post-id] a[rel]:-abp-contains(vk.cc/))
+vk.com,vk.ru#?#[role="feed"] > article:-abp-has(> [data-post-id] a[rel][href*="utm_campaign"])
 d19998 1
 a20004 1
 sport.ua,vringe.com##a[href*="ggbet"][target="_blank"]
@@ -74,6 +84,9 @@ a22631 1
 d22847 1
 a22847 1
 2ip.io,2ip.ru##.ip-links-container-row-x
+d22877 1
+a22877 1
+avito.ru##[data-chunks="item"] + div div:last-child > div:only-child > div:first-child + div:last-child > div:only-child > div:first-child + div:last-child
 d23483 1
 a23756 1
 rbc.ru#?#body.free div[class="central-publisher-item"]:-abp-has([href^="/story/pro"])
@@ -127,9 +140,15 @@ profinance.ru##main > .content-grid:style(grid-template-columns: unset !importan
 d28660 3
 a28871 1
 dzen.ru,sportsdzen.ru##div[class*="_content_with-discrete-layout"] > div > div > div[style^="height:"] > div > div[id]
+d29162 1
+a29162 1
+$document,reason=malicious,domain=apad2.top|besplatnyeprogrammy.ru|games-7.com|hdrip.info|mediagetguru.ru|mixsoft.org|monna2.top|torrent-muzic.ru|torrent-soft.ru
+d29213 1
 d29335 1
 a29335 1
 magnit.ru,regnum.ru##+js(addEventListener-defuser, click, '', elements, a[href*="utm_campaign"])
+a29465 1
+liveinternet.ru##+js(prevent-addEventListener, load, AdvManager)
 d29470 1
 a29845 1
 *$third-party,popunder,domain=fastpic.org

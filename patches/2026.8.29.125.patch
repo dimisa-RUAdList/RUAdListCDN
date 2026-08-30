@@ -1,14 +1,18 @@
-diff name:ruadlist lines:60 checksum:a2d41a3a15
+diff name:ruadlist lines:79 checksum:ad010aaa5f
 d4 2
 a5 2
-! Last modified: Sun, 30 Aug 2026 16:36:05 +0000
-! Diff-Path: ../patches/2026.8.30.996.patch#ruadlist
-a1735 1
-||dtxelz.com^$document^$document
-a1906 1
+! Last modified: Sun, 30 Aug 2026 22:40:59 +0000
+! Diff-Path: ../patches/2026.8.30.1360.patch#ruadlist
+a7427 9
+! FastPic-partners
+||crmared.com^$document
+||dsazfk.com^$document
+||dteifi.com^$document
+||dtxelz.com^$document
 ||epicgameshubham.com^$document
-a2433 1
 ||goddess-game.com^$document
+||redirectthisclick.com^$document
+||thtrck.com^$document
 a10497 1
 ||adblockbench.com^$csp=connect-src 'self'; img-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'
 a10517 1
@@ -18,6 +22,8 @@ a10522 1
 ||obfusgated.com/*/tools/ad-block-test$csp=connect-src 'self'; img-src 'self'
 a10536 1
 ||whox.com/*ad-blocker-test$csp=connect-src 'self'; img-src 'self'
+a15145 1
+liveinternet.ru##.Inner > .BAR + br + br + .BAR
 d15216 1
 a15288 1
 rutv.pw##.adlook-pc-wrapper
@@ -27,8 +33,12 @@ a19151 1
 p2plive7.top##.wrap-overlay
 a19531 1
 libertycity.net,libertycity.ru##[data-umami-event*="Brand"]
-a19675 1
+d19584 1
+a19584 1
+liveinternet.ru,livejournal.com##[id*="_R-A-"]:not(img)
+a19675 2
 vk.com,vk.ru#?#[role="feed"] > article:-abp-has(> [data-post-id] a[rel]:-abp-contains(vk.cc/))
+vk.com,vk.ru#?#[role="feed"] > article:-abp-has(> [data-post-id] a[rel][href*="utm_campaign"])
 d20004 1
 a20010 1
 sport.ua,vringe.com##a[href*="ggbet"][target="_blank"]
@@ -38,6 +48,9 @@ a20987 1
 adblockbench.com##div[class*="ad-"][id][style*="height:"]
 a22231 1
 mobileproxy.*#?#.status-badge:-abp-has(> #statusText:-abp-contains(/ /)) > .fa-spin
+d22883 1
+a22883 1
+avito.ru##[data-chunks="item"] + div div:last-child > div:only-child > div:first-child + div:last-child > div:only-child > div:first-child + div:last-child
 a24055 1
 ya.ru,yandex.ru,yandex.*##.Bno_isPromoSnippet
 d26236 2
@@ -51,6 +64,12 @@ globus.ru##a[itemtype*="://schema.org/Product"] span > img:style(filter: none !i
 a28128 2
 libertycity.net,libertycity.ru##body > div[class]:not([id]):not([style]):style(background-image: none !important)
 ! ---
+d29150 1
+a29150 1
+$document,reason=malicious,domain=apad2.top|besplatnyeprogrammy.ru|games-7.com|hdrip.info|mediagetguru.ru|mixsoft.org|monna2.top|torrent-muzic.ru|torrent-soft.ru
+d29201 1
+a29453 1
+liveinternet.ru##+js(prevent-addEventListener, load, AdvManager)
 a29832 1
 *$third-party,popunder,domain=fastpic.org
 d29837 1

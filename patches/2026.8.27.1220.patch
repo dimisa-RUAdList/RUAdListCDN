@@ -1,14 +1,18 @@
-diff name:ruadlist lines:78 checksum:a2d41a3a15
+diff name:ruadlist lines:97 checksum:ad010aaa5f
 d4 2
 a5 2
-! Last modified: Sun, 30 Aug 2026 16:36:05 +0000
-! Diff-Path: ../patches/2026.8.30.996.patch#ruadlist
-a1735 1
-||dtxelz.com^$document^$document
-a1906 1
+! Last modified: Sun, 30 Aug 2026 22:40:59 +0000
+! Diff-Path: ../patches/2026.8.30.1360.patch#ruadlist
+a7427 9
+! FastPic-partners
+||crmared.com^$document
+||dsazfk.com^$document
+||dteifi.com^$document
+||dtxelz.com^$document
 ||epicgameshubham.com^$document
-a2433 1
 ||goddess-game.com^$document
+||redirectthisclick.com^$document
+||thtrck.com^$document
 a10497 1
 ||adblockbench.com^$csp=connect-src 'self'; img-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'
 a10513 1
@@ -22,6 +26,8 @@ a10528 1
 ||superadblocktest.com^$csp=connect-src 'self'
 a10534 1
 ||whox.com/*ad-blocker-test$csp=connect-src 'self'; img-src 'self'
+a15143 1
+liveinternet.ru##.Inner > .BAR + br + br + .BAR
 d15214 1
 a15286 1
 rutv.pw##.adlook-pc-wrapper
@@ -33,8 +39,12 @@ a19148 1
 p2plive7.top##.wrap-overlay
 a19528 1
 libertycity.net,libertycity.ru##[data-umami-event*="Brand"]
-a19672 1
+d19581 1
+a19581 1
+liveinternet.ru,livejournal.com##[id*="_R-A-"]:not(img)
+a19672 2
 vk.com,vk.ru#?#[role="feed"] > article:-abp-has(> [data-post-id] a[rel]:-abp-contains(vk.cc/))
+vk.com,vk.ru#?#[role="feed"] > article:-abp-has(> [data-post-id] a[rel][href*="utm_campaign"])
 d20001 1
 a20007 1
 sport.ua,vringe.com##a[href*="ggbet"][target="_blank"]
@@ -47,6 +57,9 @@ mobileproxy.*#?#.status-badge:-abp-has(> #statusText:-abp-contains(/ /)) > .fa-s
 d22634 1
 a22634 1
 ||pikabu.ru/ajax/*?fFN6t=$xmlhttprequest
+d22880 1
+a22880 1
+avito.ru##[data-chunks="item"] + div div:last-child > div:only-child > div:first-child + div:last-child > div:only-child > div:first-child + div:last-child
 a23758 1
 rbc.ru#?#body.free div[class="central-publisher-item"]:-abp-has([href^="/story/pro"])
 a23761 1
@@ -69,6 +82,12 @@ libertycity.net,libertycity.ru##body > div[class]:not([id]):not([style]):style(b
 ! ---
 a28858 1
 dzen.ru,sportsdzen.ru##div[class*="_content_with-discrete-layout"] > div > div > div[style^="height:"] > div > div[id]
+d29149 1
+a29149 1
+$document,reason=malicious,domain=apad2.top|besplatnyeprogrammy.ru|games-7.com|hdrip.info|mediagetguru.ru|mixsoft.org|monna2.top|torrent-muzic.ru|torrent-soft.ru
+d29200 1
+a29452 1
+liveinternet.ru##+js(prevent-addEventListener, load, AdvManager)
 a29831 1
 *$third-party,popunder,domain=fastpic.org
 d29836 1
