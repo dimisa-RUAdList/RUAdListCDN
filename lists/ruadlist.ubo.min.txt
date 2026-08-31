@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 31 Aug 2026 01:20:27 +0000
-! Diff-Path: ../patches/2026.8.31.80.patch#ruadlist
+! Last modified: Mon, 31 Aug 2026 08:34:46 +0000
+! Diff-Path: ../patches/2026.8.31.514.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -7430,10 +7430,25 @@ _vodkov.net
 ||dsazfk.com^$document
 ||dteifi.com^$document
 ||dtxelz.com^$document
+||dtyvtj.com^$document
 ||epicgameshubham.com^$document
+||eprdl.online^$document
+||exoclocks.com^$document
 ||goddess-game.com^$document
+||gptgirlfriend.online^$document
+||insta-cams.com^$document
+||metricaops.com^$document
+||myallz.com^$document
+||ouraidream.com^$document
+||ourdream.ai^$document
 ||redirectthisclick.com^$document
+||rttrk.com^$document
+||sexselector.com^$document
+||singleflirt.com^$document
+||spxxxtube.com^$document
 ||thtrck.com^$document
+||trackinginwtd.pro^$document
+||vividkink.com^$document
 ! People-Group.su
 ###pgeldiz
 ! $domain=people-group.eu|people-group.su
@@ -8640,10 +8655,10 @@ by,~mail.ru,ru,ua##.banner_box
 ##[href*="driftawayforfun.com"]
 ##[href*="driverpack.io/"]
 ~dzen.ru,~sportsdzen.ru##[href*="dzen.ru%2F"]
+~dzen.ru,~sportsdzen.ru##[href*="https://dzen.ru"]
 ~media.hubfiles.gdn##[href*="media.hubfiles.gdn"]
 ##[href*="pigiuqproxy.com"]
 ##[href*="postlnk.com"]
-~dzen.ru,~sportsdzen.ru##[href^="https://dzen.ru"]
 ##[href^="https://pxl.leads.su/click/"]
 ##[href^="https://trkleads.su/click/"]
 ##[id^="n4p_"]
@@ -22655,7 +22670,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=levik.blog|livejournal.c
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
 ||ng72.ru^$csp=script-src 'self' 'unsafe-eval' https:
-||pikabu.ru/ajax/*?fFN6t=$xmlhttprequest
+||pikabu.ru/ajax/*?fFN5t=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -29385,6 +29400,7 @@ vz.ru##+js(href-sanitizer, a[href*="/redir/"], ?vzurl)
 dtf.ru,vc.ru##+js(href-sanitizer, a[href*="/redirect?to="], ?to)
 opennet.me,opennet.ru##+js(href-sanitizer, a[href*="://click.opennet.ru/cgi-bin/"], ?to)
 e.mail.ru,mail.rambler.ru,mail.yandex.ru,octavius.mail.ru##+js(href-sanitizer, a[href*="://opros.mosreg.ru/callback/survey"][href*="/direct_url/?redirect="], ?redirect)
+liveinternet.ru##+js(href-sanitizer, a[href*="?action=redirect&url="], ?url)
 rambler.ru##+js(href-sanitizer, a[href*="?utm_"][data-main-link], +https)
 kluchikipro.ru##+js(href-sanitizer, a[href*="deeplink="], ?deeplink)
 appleinsider.ru,znayka.cc##+js(href-sanitizer, a[href*="goto=https"], ?goto)
@@ -29870,8 +29886,6 @@ fastpic.org##[srcdoc]:remove()
 fastpic.org,~new.fastpic.org##^a > script:not(:last-child)
 fastpic.org,~new.fastpic.org##a[href*="/fullview/"] > img[src*="/preview/"]:style(clip-path: inset(0 0 38px 0) !important)
 fastpic.org,~new.fastpic.org##a[href="https://static.fastpic.ru/FastPicUploader.apk"]:remove-attr(target)
-fastpic.org/fullview##+js(abort-on-property-read, document.body.appendChild)
-fastpic.org/view##+js(abort-on-property-read, document.body.appendChild)
 ! отключенные на время теста правила
 !*$popunder,domain=fastpic.org
 !://fastpic.org^
