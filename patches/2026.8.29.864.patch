@@ -1,8 +1,8 @@
-diff name:ruadlist lines:120 checksum:d65ba14a36
+diff name:ruadlist lines:142 checksum:b448f14734
 d4 2
 a5 2
-! Last modified: Tue, 01 Sep 2026 07:43:01 +0000
-! Diff-Path: ../patches/2026.9.1.463.patch#ruadlist
+! Last modified: Tue, 01 Sep 2026 13:27:03 +0000
+! Diff-Path: ../patches/2026.9.1.807.patch#ruadlist
 a7427 26
 ! FastPic-partners
 ||crmared.com^$document
@@ -73,6 +73,10 @@ a20731 1
 101.ru,101kofemashina.ru,1in.am,alau.kz,alexua.tv,animejapan.tv,autosport.com.ru,bit.ua,bugaga.ru,c-inform.info,comments.ua,csgamer.ru,ctv7.ru,cvnews.cv.ua,dead-serial.com,e-libra.ru,epravda.com.ua,fashiony.ru,fclmnews.ru,fishki.net,forpost.lviv.ua,game2day.ru,gameinside.ua,ggscore.com,gorod.dp.ua,grimm-online.org,gta.com.ua,horrorzone.ru,ifnews.org.ua,igry-online.net,itechua.com,izbezhat-nakazania.com,jetsetter.ua,jut.su,kievvlast.com.ua,kinoafisha.info,kinorium.com,ko.com.ua,kosti-tv.com,kushvsporte.ru,likeni.ru,lovesun.by,lvnews.org.ua,mac-torrent-download.net,madjong-besplatno.ru,mirf.ru,moldfootball.com,mybrazz.club,nashkiev.ua,ne-kurim.ru,orelgrad.ru,pesikot.org,pimpletv.me,playua.net,post-tracker.ru,povarenok.ru,prodota.ru,prosports.kg,prosports.kz,prosportua.com,qafqazinfo.az,relook.ru,rvnews.rv.ua,saratovnews.ru,securitymedia.org,shuba.life,sopsport.org,spletnica-tv.com,strela-online.com,teenwolf-tv.com,tenews.org.ua,tg.telepult.pro,the-geek.ru,theflash-tv.com,topfile.tj,traktorist.ua,uafix.net,uanews.org.ua,udargol.com,upl.ua,vskazke-tv.com,zab.ru,zorgee.ru##body > a[href][target="_blank"]
 a20991 1
 adblockbench.com##div[class*="ad-"][id][style*="height:"]
+a21056 1
+maxdash.ru#?#div[class*="lot_"]:-abp-has(> article > [class*="_adMarker_"])
+a21160 1
+maxdash.ru##div[class^="_exchangeArea_"]
 d22127 3
 a22129 3
 pimpletv.me##img[src*="/img/mars_"]
@@ -80,7 +84,7 @@ pimpletv.me##img[src*="/img/melbet"]
 pimpletv.me##img[src*="/img/riobet"]
 d22642 1
 a22642 1
-||pikabu.ru/ajax/*?fFN5t=$xmlhttprequest
+||pikabu.ru/ajax/*?yDk2i=$xmlhttprequest
 d22888 1
 a22888 1
 avito.ru##[data-chunks="item"] + div div:last-child > div:only-child > div:first-child + div:last-child > div:only-child > div:first-child + div:last-child
@@ -100,6 +104,16 @@ overclockers.ru##a.over-hiddenlink-html[href*="://market.yandex.ru/"][target="_b
 d28350 1
 a28350 1
 pimpletv.me##body > #branding:style(padding-top: 0 !important)
+d28828 1
+a28828 1
+dzen.ru##div[style*="12.362637362"]
+d28862 2
+a28863 2
+dzen.ru,sportsdzen.ru##[aria-label*="ца"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id]
+dzen.ru,sportsdzen.ru##[aria-label*="ца"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not([class*="MainPageTitle"]):not([class*="-rubric-"]):not(:last-child):not([aria-label])
+d28874 1
+a28874 1
+dzen.ru,sportsdzen.ru##div[class^="news-"][style^="margin-top: 0px; height: calc("][style$=" - 0px);"]
 d29158 1
 a29158 1
 $document,reason=malicious,domain=apad2.top|besplatnyeprogrammy.ru|games-7.com|hdrip.info|mediagetguru.ru|mixsoft.org|monna2.top|torrent-muzic.ru|torrent-soft.ru
@@ -119,3 +133,11 @@ a29845 1
 fastpic.org,~new.fastpic.org##+js(remove-node-text, script, 'return;try')
 a29848 1
 fastpic.org,~new.fastpic.org##+js(set-constant, HTMLHtmlElement.prototype.onclick, noopFunc)
+a30163 1
+||savefiles.com/js/noadblocker.js
+d32524 1
+a32526 1
+firestream.to##.adblock-overlay
+d33001 1
+a33001 1
+/^https?:\/\/pikabu\.ru\/ajax\/{1,2}[A-Za-z0-9_.-]+\?[A-Za-z0-9]+=[0-9a-f]{24,}_[0-9]+/$xmlhttprequest,domain=pikabu.ru
