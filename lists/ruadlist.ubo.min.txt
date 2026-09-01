@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 01 Sep 2026 17:46:49 +0000
-! Diff-Path: ../patches/2026.9.1.1066.patch#ruadlist
+! Last modified: Tue, 01 Sep 2026 23:14:49 +0000
+! Diff-Path: ../patches/2026.9.1.1394.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -7426,9 +7426,11 @@ _vodkov.net
 ||getout.besaba.com^
 ||kipfilms.ru^$third-party
 ! FastPic-partners
+/splash.php?*fastpic$document
 ||crmared.com^$document
 ||dsazfk.com^$document
 ||dteifi.com^$document
+||dttxqa.com^$document
 ||dtxelz.com^$document
 ||dtyvtj.com^$document
 ||epicgameshubham.com^$document
@@ -23788,7 +23790,7 @@ rbc.ru##[data-yandex-show="cards_marketplace_show"]
 rbc.ru##[data-yandex-show^="commercial_cards_"]
 autonews.ru,rbc.ru,sportrbc.ru,utro.ru##[id^="unit_"]
 rbc.ru##a.video-player__details[target="_blank"]
-sportrbc.ru##a[href*="erid="][target="_blank"]
+autonews.ru,rbc.ru,rbcautonews.ru,rbclifemedia.ru,sportrbc.ru##a[href*="erid="][target="_blank"]
 cnews.ru#?#a[href^="https://www.cnews.ru/redirect.php"]:-abp-contains(Дзен)
 autonews.ru,rbc.ru,rbcautonews.ru,sportrbc.ru##body div .banner__container
 autonews.ru,rbc.ru,sportrbc.ru##body div .banner__filmstrip
@@ -23815,6 +23817,7 @@ rbc.ru#?#div[class="central-publisher-item"]:-abp-has(div[class*="styles_word-br
 rbc.ru##div[class^="BsideBanner"]
 rbc.ru,sportrbc.ru##div[class^="bet-block"]
 rbc.ru##div[class^="commercial-formats-"]
+autonews.ru,rbc.ru,rbcautonews.ru,rbclifemedia.ru,sportrbc.ru##div[class^="fox-"][class*="banner"]
 autonews.ru,rbc.ru,rbcautonews.ru,rbclifemedia.ru,sportrbc.ru##div[class^="fox-tail"]
 rbc.ru##div[class^="item-slider__partner"]
 utro.ru##div[class^="partners-block"]
@@ -24090,8 +24093,10 @@ ya.ru##.i-mini-bem[class*="banner"]
 ya.ru##[style*="feed"][style*="min-height:"]
 ya.ru##body > div[data-hydration-id] > [href^="https://yabs.yandex.ru/count/"] + div
 ya.ru##body > div[data-hydration-id] > div > [src^="https://yabs.yandex.ru/count/"] + div
+ya.ru##html[class*="sekdllliom_top"] aside + div
+ya.ru##html[class*="sekdllliom_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
 ya.ru##section[class^="reaso"]
-ya.ru##section[style*="sektllliom-items-count:"]
+ya.ru##section[style*="sekdllliom-items-count:"]
 ya.ru##ul[class*="-section__list"]
 ya.ru,yandex.ru,yandex.*##.AdvProductGallery
 ya.ru,yandex.ru,yandex.*##.Bno_isPromoSnippet
@@ -28823,8 +28828,6 @@ ya.ru##.i-mini-bem[style]
 ya.ru,yandex.by,yandex.kz,yandex.uz##.link-bro
 ya.ru##.market-feed
 ya.ru##.reasoning-section
-ya.ru##html[class*="sektllliom_top"] aside + div
-ya.ru##html[class*="sektllliom_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
 ya.ru##main.body__wrapper > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
 ! афиша
 afisha.yandex.ru##[style^="width:"][style*="100%;"][style*="height:"][style*="240px;"][style*="display:"][style*="block;"]:empty
@@ -28903,7 +28906,7 @@ dzen.ru,sportsdzen.ru##[aria-label*="ца"][aria-label*="овост"] > div[clas
 dzen.ru##[aria-label] div[id][class*="-desktop__ad-"]
 dzen.ru##div[class*="AdvertTsar"]
 dzen.ru##div[class*="BrandingAdvertLayoutColumn-"]
-dzen.ru,sportsdzen.ru##div[class*="_content_with-discrete-layout"] > div > div > div[style^="height:"] > div > div[id]
+dzen.ru,sportsdzen.ru##div[class*="_content_with-"][class$="layout"] > div > div > div[style^="height:"] > div > div[id]
 dzen.ru##div[class*="_content_with-new-"] > div[id] ~ div[class*="withDiscreteScroll"]
 dzen.ru,sportsdzen.ru##div[class*="_is-branding"] > div[style^="background-color:"]
 dzen.ru,sportsdzen.ru##div[class*="body_branding"] > div[style*="background-color:"]

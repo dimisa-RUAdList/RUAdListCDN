@@ -1,16 +1,18 @@
-diff name:ruadlist lines:133 checksum:f4df878db1
+diff name:ruadlist lines:150 checksum:0ecad961eb
 d4 2
 a5 2
-! Last modified: Tue, 01 Sep 2026 17:46:49 +0000
-! Diff-Path: ../patches/2026.9.1.1066.patch#ruadlist
+! Last modified: Tue, 01 Sep 2026 23:14:49 +0000
+! Diff-Path: ../patches/2026.9.1.1394.patch#ruadlist
 d1736 1
 d1908 1
 d2436 1
-a7430 26
+a7430 28
 ! FastPic-partners
+/splash.php?*fastpic$document
 ||crmared.com^$document
 ||dsazfk.com^$document
 ||dteifi.com^$document
+||dttxqa.com^$document
 ||dtxelz.com^$document
 ||dtyvtj.com^$document
 ||epicgameshubham.com^$document
@@ -86,6 +88,17 @@ a22646 1
 d22892 1
 a22892 1
 avito.ru##[data-chunks="item"] + div div:last-child > div:only-child > div:first-child + div:last-child > div:only-child > div:first-child + div:last-child
+d23759 1
+a23759 1
+autonews.ru,rbc.ru,rbcautonews.ru,rbclifemedia.ru,sportrbc.ru##a[href*="erid="][target="_blank"]
+a23785 1
+autonews.ru,rbc.ru,rbcautonews.ru,rbclifemedia.ru,sportrbc.ru##div[class^="fox-"][class*="banner"]
+a24060 2
+ya.ru##html[class*="sekdllliom_top"] aside + div
+ya.ru##html[class*="sekdllliom_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
+d24062 1
+a24062 1
+ya.ru##section[style*="sekdllliom-items-count:"]
 d26246 2
 a26247 1
 board.sibnet.ru,fridger.com.ua,hawk.ru,hmgma.ru,openbudget.gfu.ru,pcradio.ru,postiralka.com.ua,servkino.ru,siproen.ru,sovcombank.ru,tehnika4u.ru#@#.adv
@@ -99,6 +112,7 @@ overclockers.ru##a.over-hiddenlink-html[href*="://market.yandex.ru/"][target="_b
 d28356 1
 a28356 1
 pimpletv.me##body > #branding:style(padding-top: 0 !important)
+d28793 2
 d28834 1
 a28834 1
 dzen.ru##div[style*="12.362637362"]
@@ -106,6 +120,9 @@ d28868 2
 a28869 2
 dzen.ru,sportsdzen.ru##[aria-label*="ца"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id]
 dzen.ru,sportsdzen.ru##[aria-label*="ца"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not([class*="MainPageTitle"]):not([class*="-rubric-"]):not(:last-child):not([aria-label])
+d28873 1
+a28873 1
+dzen.ru,sportsdzen.ru##div[class*="_content_with-"][class$="layout"] > div > div > div[style^="height:"] > div > div[id]
 d28880 1
 a28880 1
 dzen.ru,sportsdzen.ru##div[class^="news-"][style^="margin-top: 0px; height: calc("][style$=" - 0px);"]

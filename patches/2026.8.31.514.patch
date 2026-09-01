@@ -1,8 +1,12 @@
-diff name:ruadlist lines:71 checksum:f4df878db1
+diff name:ruadlist lines:90 checksum:0ecad961eb
 d4 2
 a5 2
-! Last modified: Tue, 01 Sep 2026 17:46:49 +0000
-! Diff-Path: ../patches/2026.9.1.1066.patch#ruadlist
+! Last modified: Tue, 01 Sep 2026 23:14:49 +0000
+! Diff-Path: ../patches/2026.9.1.1394.patch#ruadlist
+a7428 1
+/splash.php?*fastpic$document
+a7431 1
+||dttxqa.com^$document
 a7450 2
 ||trytracklink.com^$document
 ||unsightly-reserve.com^$document
@@ -38,6 +42,17 @@ pimpletv.me##img[src*="/img/riobet"]
 d22673 1
 a22673 1
 ||pikabu.ru/ajax/*?yDk2i=$xmlhttprequest
+d23786 1
+a23786 1
+autonews.ru,rbc.ru,rbcautonews.ru,rbclifemedia.ru,sportrbc.ru##a[href*="erid="][target="_blank"]
+a23812 1
+autonews.ru,rbc.ru,rbcautonews.ru,rbclifemedia.ru,sportrbc.ru##div[class^="fox-"][class*="banner"]
+a24087 2
+ya.ru##html[class*="sekdllliom_top"] aside + div
+ya.ru##html[class*="sekdllliom_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
+d24089 1
+a24089 1
+ya.ru##section[style*="sekdllliom-items-count:"]
 d27167 1
 a27167 1
 dailymail.co.uk,fashion2news.com,hotallnews.today,ilenta.com,in-poland.com,kreschatic.kiev.ua,moyens.net,newspad.ru,pimpletv.me,portaltele.com.ua,pravda.com.ua,tales.org.ua,ukranews.com,wormax.io,zazloo.ru##.fc-ab-root
@@ -46,6 +61,7 @@ overclockers.ru##a.over-hiddenlink-html[href*="://market.yandex.ru/"][target="_b
 d28383 1
 a28383 1
 pimpletv.me##body > #branding:style(padding-top: 0 !important)
+d28820 2
 d28861 1
 a28861 1
 dzen.ru##div[style*="12.362637362"]
@@ -53,6 +69,9 @@ d28895 2
 a28896 2
 dzen.ru,sportsdzen.ru##[aria-label*="ца"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id]
 dzen.ru,sportsdzen.ru##[aria-label*="ца"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not([class*="MainPageTitle"]):not([class*="-rubric-"]):not(:last-child):not([aria-label])
+d28900 1
+a28900 1
+dzen.ru,sportsdzen.ru##div[class*="_content_with-"][class$="layout"] > div > div > div[style^="height:"] > div > div[id]
 d28907 1
 a28907 1
 dzen.ru,sportsdzen.ru##div[class^="news-"][style^="margin-top: 0px; height: calc("][style$=" - 0px);"]

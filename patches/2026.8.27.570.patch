@@ -1,13 +1,15 @@
-diff name:ruadlist lines:199 checksum:f4df878db1
+diff name:ruadlist lines:213 checksum:0ecad961eb
 d4 2
 a5 2
-! Last modified: Tue, 01 Sep 2026 17:46:49 +0000
-! Diff-Path: ../patches/2026.9.1.1066.patch#ruadlist
-a7427 26
+! Last modified: Tue, 01 Sep 2026 23:14:49 +0000
+! Diff-Path: ../patches/2026.9.1.1394.patch#ruadlist
+a7427 28
 ! FastPic-partners
+/splash.php?*fastpic$document
 ||crmared.com^$document
 ||dsazfk.com^$document
 ||dteifi.com^$document
+||dttxqa.com^$document
 ||dtxelz.com^$document
 ||dtyvtj.com^$document
 ||epicgameshubham.com^$document
@@ -121,12 +123,23 @@ a22848 1
 d22878 1
 a22878 1
 avito.ru##[data-chunks="item"] + div div:last-child > div:only-child > div:first-child + div:last-child > div:only-child > div:first-child + div:last-child
+d23745 1
+a23745 1
+autonews.ru,rbc.ru,rbcautonews.ru,rbclifemedia.ru,sportrbc.ru##a[href*="erid="][target="_blank"]
 a23756 1
 rbc.ru#?#body.free div[class="central-publisher-item"]:-abp-has([href^="/story/pro"])
 a23759 1
 rbc.ru##body.free div[class^="MainNewsComponent_wrapper_"] [href*="utm_campaign"]
+a23769 1
+autonews.ru,rbc.ru,rbcautonews.ru,rbclifemedia.ru,sportrbc.ru##div[class^="fox-"][class*="banner"]
 a23774 1
 rbc.ru#?#main > article > div:-abp-has(.commercial-slider)
+a24043 2
+ya.ru##html[class*="sekdllliom_top"] aside + div
+ya.ru##html[class*="sekdllliom_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
+d24045 1
+a24045 1
+ya.ru##section[style*="sekdllliom-items-count:"]
 a24047 1
 ya.ru,yandex.ru,yandex.*##.Bno_isPromoSnippet
 d26228 2
@@ -155,6 +168,7 @@ a28384 2
 profinance.ru##main > .content-grid:style(grid-template-columns: unset !important)
 ! ---
 d28645 3
+d28777 2
 d28818 1
 a28818 1
 dzen.ru##div[style*="12.362637362"]
@@ -163,7 +177,7 @@ a28853 2
 dzen.ru,sportsdzen.ru##[aria-label*="ца"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id]
 dzen.ru,sportsdzen.ru##[aria-label*="ца"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not([class*="MainPageTitle"]):not([class*="-rubric-"]):not(:last-child):not([aria-label])
 a28856 1
-dzen.ru,sportsdzen.ru##div[class*="_content_with-discrete-layout"] > div > div > div[style^="height:"] > div > div[id]
+dzen.ru,sportsdzen.ru##div[class*="_content_with-"][class$="layout"] > div > div > div[style^="height:"] > div > div[id]
 d28863 1
 a28863 1
 dzen.ru,sportsdzen.ru##div[class^="news-"][style^="margin-top: 0px; height: calc("][style$=" - 0px);"]
