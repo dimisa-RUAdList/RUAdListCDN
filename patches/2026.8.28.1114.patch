@@ -1,8 +1,8 @@
-diff name:ruadlist lines:187 checksum:8fc19ed9d1
+diff name:ruadlist lines:196 checksum:3fe67913a3
 d4 2
 a5 2
-! Last modified: Wed, 02 Sep 2026 09:30:01 +0000
-! Diff-Path: ../patches/2026.9.2.570.patch#ruadlist
+! Last modified: Wed, 02 Sep 2026 14:22:15 +0000
+! Diff-Path: ../patches/2026.9.2.862.patch#ruadlist
 a7427 25
 ! FastPic-partners
 /splash.php?*fastpic$document
@@ -100,11 +100,20 @@ pimpletv.me##img[src*="/img/melbet"]
 pimpletv.me##img[src*="/img/riobet"]
 a22229 1
 mobileproxy.*#?#.status-badge:-abp-has(> #statusText:-abp-contains(/ /)) > .fa-spin
+a22600 1
+/^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]+\.[^/?]{1,5}\.js(?:\?.*)?$/$script
 a22605 1
 ||static.dzeninfra.ru/s3/zen-apps/*.wave.js$script
 d22635 1
 a22635 1
 ||pikabu.ru/ajax/*?yDk2i=$xmlhttprequest
+d22758 1
+a22758 1
+.link/6p80h?$third-party,xmlhttprequest
+d22766 5
+a22785 2
+||vveu.*.link/$third-party,media
+||vvru.*.link/$third-party,media
 d22881 1
 a22881 1
 avito.ru##[data-chunks="item"] + div div:last-child > div:only-child > div:first-child + div:last-child > div:only-child > div:first-child + div:last-child
@@ -150,7 +159,7 @@ dzen.ru##div[style*="12.362637362"]
 d28857 2
 a28858 2
 dzen.ru,sportsdzen.ru##[aria-label*="ца"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id]
-dzen.ru,sportsdzen.ru##[aria-label*="ца"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not([class*="MainPageTitle"]):not([class*="-rubric-"]):not(:last-child):not([aria-label])
+dzen.ru,sportsdzen.ru##[aria-label*="ца"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not([class*="MainPageTitle"]):not([class*="ubric"]):not(:last-child):not([aria-label])
 d28862 1
 a28862 1
 dzen.ru,sportsdzen.ru##div[class*="_content_with-"][class$="layout"] > div > div > div[style^="height:"] > div > div[id]

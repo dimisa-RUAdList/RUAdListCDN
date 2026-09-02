@@ -1,16 +1,25 @@
-diff name:ruadlist lines:30 checksum:8fc19ed9d1
+diff name:ruadlist lines:42 checksum:3fe67913a3
 d4 2
 a5 2
-! Last modified: Wed, 02 Sep 2026 09:30:01 +0000
-! Diff-Path: ../patches/2026.9.2.570.patch#ruadlist
+! Last modified: Wed, 02 Sep 2026 14:22:15 +0000
+! Diff-Path: ../patches/2026.9.2.862.patch#ruadlist
 a7428 2
 /splash.php?*fastpic$document
 =*=*fastpic$document
 d7430 4
 a7439 1
 ||lustgoddess.com^$document
+a22643 1
+/^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]+\.[^/?]{1,5}\.js(?:\?.*)?$/$script
 a22648 1
 ||static.dzeninfra.ru/s3/zen-apps/*.wave.js$script
+d22801 1
+a22801 1
+.link/6p80h?$third-party,xmlhttprequest
+d22809 5
+a22828 2
+||vveu.*.link/$third-party,media
+||vvru.*.link/$third-party,media
 d23791 1
 a23791 1
 autonews.ru,rbc.ru,rbcautonews.ru,rbclifemedia.ru,sportrbc.ru##a[href*="erid="][target="_blank"]
@@ -23,6 +32,9 @@ d24094 1
 a24094 1
 ya.ru##section[style*="sekdllliom-items-count:"]
 d28826 2
+d28902 1
+a28902 1
+dzen.ru,sportsdzen.ru##[aria-label*="ца"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not([class*="MainPageTitle"]):not([class*="ubric"]):not(:last-child):not([aria-label])
 d28906 1
 a28906 1
 dzen.ru,sportsdzen.ru##div[class*="_content_with-"][class$="layout"] > div > div > div[style^="height:"] > div > div[id]
