@@ -1,23 +1,20 @@
-diff name:ruadlist lines:191 checksum:a00eef7faa
+diff name:ruadlist lines:192 checksum:8fc19ed9d1
 d4 2
 a5 2
-! Last modified: Wed, 02 Sep 2026 04:20:06 +0000
-! Diff-Path: ../patches/2026.9.2.260.patch#ruadlist
-a7427 28
+! Last modified: Wed, 02 Sep 2026 09:30:01 +0000
+! Diff-Path: ../patches/2026.9.2.570.patch#ruadlist
+a7427 25
 ! FastPic-partners
 /splash.php?*fastpic$document
+=*=*fastpic$document
 ||crmared.com^$document
-||dsazfk.com^$document
-||dteifi.com^$document
-||dttxqa.com^$document
-||dtxelz.com^$document
-||dtyvtj.com^$document
 ||epicgameshubham.com^$document
 ||eprdl.online^$document
 ||exoclocks.com^$document
 ||goddess-game.com^$document
 ||gptgirlfriend.online^$document
 ||insta-cams.com^$document
+||lustgoddess.com^$document
 ||metricaops.com^$document
 ||myallz.com^$document
 ||ouraidream.com^$document
@@ -105,6 +102,8 @@ pimpletv.me##img[src*="/img/melbet"]
 pimpletv.me##img[src*="/img/riobet"]
 a22228 1
 mobileproxy.*#?#.status-badge:-abp-has(> #statusText:-abp-contains(/ /)) > .fa-spin
+a22604 1
+||static.dzeninfra.ru/s3/zen-apps/*.wave.js$script
 d22634 1
 a22634 1
 ||pikabu.ru/ajax/*?yDk2i=$xmlhttprequest
@@ -173,7 +172,8 @@ a29452 1
 liveinternet.ru##+js(prevent-addEventListener, load, AdvManager)
 a29831 1
 *$third-party,popunder,domain=fastpic.org
-a29832 3
+a29832 4
+fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, Event.prototype.preventDefault, inlineScript)
 fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, EventTarget, inlineScript)
 fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, document.onclick, inlineScript)
 fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, onclick, inlineScript)
@@ -182,6 +182,7 @@ a29836 1
 fastpic.org,~new.fastpic.org##+js(remove-node-text, script, 'return;try')
 a29839 1
 fastpic.org,~new.fastpic.org##+js(set-constant, HTMLHtmlElement.prototype.onclick, noopFunc)
+d29842 1
 a30154 1
 ||savefiles.com/js/noadblocker.js
 d32515 1

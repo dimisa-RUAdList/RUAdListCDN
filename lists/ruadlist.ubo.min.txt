@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 02 Sep 2026 04:20:06 +0000
-! Diff-Path: ../patches/2026.9.2.260.patch#ruadlist
+! Last modified: Wed, 02 Sep 2026 09:30:01 +0000
+! Diff-Path: ../patches/2026.9.2.570.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -7427,18 +7427,15 @@ _vodkov.net
 ||kipfilms.ru^$third-party
 ! FastPic-partners
 /splash.php?*fastpic$document
+=*=*fastpic$document
 ||crmared.com^$document
-||dsazfk.com^$document
-||dteifi.com^$document
-||dttxqa.com^$document
-||dtxelz.com^$document
-||dtyvtj.com^$document
 ||epicgameshubham.com^$document
 ||eprdl.online^$document
 ||exoclocks.com^$document
 ||goddess-game.com^$document
 ||gptgirlfriend.online^$document
 ||insta-cams.com^$document
+||lustgoddess.com^$document
 ||metricaops.com^$document
 ||myallz.com^$document
 ||ouraidream.com^$document
@@ -22648,6 +22645,7 @@ ictv.ua,vikna.tv##div[id^="div-gpt-ad-"]
 ||dzen.ru/articles$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/news$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/pogoda/$script
+||static.dzeninfra.ru/s3/zen-apps/*.wave.js$script
 ||static.dzeninfra.ru/s3/zen-apps/*/*/*/$script
 $csp=script-src-attr 'none',domain=eurointegration.com.ua|sportanalytic.com|notebookcheck-ru.com|businessua.com
 /^https?://24smi\.org/*[/]*[/][^\s]{8,}/$xmlhttprequest,domain=24smi.org
@@ -29883,6 +29881,7 @@ ya.ru,yandex.*##.simple-popup__overlay:remove()
 ! FastPic
 *$third-party,popunder,domain=fastpic.org
 fastpic.org##+js(abort-on-property-read, Element.prototype.attachShadow)
+fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, Event.prototype.preventDefault, inlineScript)
 fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, EventTarget, inlineScript)
 fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, document.onclick, inlineScript)
 fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, onclick, inlineScript)
@@ -29896,7 +29895,6 @@ fastpic.org,~new.fastpic.org##+js(remove-node-text, style, /divExo|ex-over-top|2
 fastpic.org,~new.fastpic.org##+js(set-constant, HTMLHtmlElement.prototype.onclick, noopFunc)
 fastpic.org,~new.fastpic.org##+js(set-constant, document.documentElement.onclick, noopFunc)
 fastpic.org##[srcdoc]:remove()
-fastpic.org,~new.fastpic.org##^a > script:not(:last-child)
 fastpic.org,~new.fastpic.org##a[href*="/fullview/"] > img[src*="/preview/"]:style(clip-path: inset(0 0 38px 0) !important)
 fastpic.org,~new.fastpic.org##a[href="https://static.fastpic.ru/FastPicUploader.apk"]:remove-attr(target)
 ! отключенные на время теста правила

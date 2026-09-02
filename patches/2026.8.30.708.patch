@@ -1,26 +1,23 @@
-diff name:ruadlist lines:137 checksum:a00eef7faa
+diff name:ruadlist lines:138 checksum:8fc19ed9d1
 d4 2
 a5 2
-! Last modified: Wed, 02 Sep 2026 04:20:06 +0000
-! Diff-Path: ../patches/2026.9.2.260.patch#ruadlist
+! Last modified: Wed, 02 Sep 2026 09:30:01 +0000
+! Diff-Path: ../patches/2026.9.2.570.patch#ruadlist
 d1736 1
 d1908 1
 d2436 1
-a7430 28
+a7430 25
 ! FastPic-partners
 /splash.php?*fastpic$document
+=*=*fastpic$document
 ||crmared.com^$document
-||dsazfk.com^$document
-||dteifi.com^$document
-||dttxqa.com^$document
-||dtxelz.com^$document
-||dtyvtj.com^$document
 ||epicgameshubham.com^$document
 ||eprdl.online^$document
 ||exoclocks.com^$document
 ||goddess-game.com^$document
 ||gptgirlfriend.online^$document
 ||insta-cams.com^$document
+||lustgoddess.com^$document
 ||metricaops.com^$document
 ||myallz.com^$document
 ||ouraidream.com^$document
@@ -74,6 +71,8 @@ a22137 3
 pimpletv.me##img[src*="/img/mars_"]
 pimpletv.me##img[src*="/img/melbet"]
 pimpletv.me##img[src*="/img/riobet"]
+a22620 1
+||static.dzeninfra.ru/s3/zen-apps/*.wave.js$script
 d22650 1
 a22650 1
 ||pikabu.ru/ajax/*?yDk2i=$xmlhttprequest
@@ -121,12 +120,14 @@ a29380 1
 liveinternet.ru##+js(href-sanitizer, a[href*="?action=redirect&url="], ?url)
 a29471 1
 liveinternet.ru##+js(prevent-addEventListener, load, AdvManager)
-a29852 3
+a29852 4
+fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, Event.prototype.preventDefault, inlineScript)
 fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, EventTarget, inlineScript)
 fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, document.onclick, inlineScript)
 fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, onclick, inlineScript)
 a29859 1
 fastpic.org,~new.fastpic.org##+js(set-constant, HTMLHtmlElement.prototype.onclick, noopFunc)
+d29862 1
 d29865 2
 a30176 1
 ||savefiles.com/js/noadblocker.js
