@@ -1,8 +1,8 @@
-diff name:ruadlist lines:16 checksum:a1ce296645
+diff name:ruadlist lines:18 checksum:92668498af
 d4 2
 a5 2
-! Last modified: Thu, 03 Sep 2026 04:14:17 +0000
-! Diff-Path: ../patches/2026.9.3.254.patch#ruadlist
+! Last modified: Thu, 03 Sep 2026 09:39:11 +0000
+! Diff-Path: ../patches/2026.9.3.579.patch#ruadlist
 a22642 1
 /^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]+\.[^/?]{1,5}\.js(?:\?.*)?$/$script
 d22801 1
@@ -12,6 +12,8 @@ d22809 5
 a22828 2
 ||vveu.*.link/$third-party,media
 ||vvru.*.link/$third-party,media
+a23573 1
+rambler.ru##.ad_branding_site > div[style^="--background:"]
 d28903 1
 a28903 1
 dzen.ru,sportsdzen.ru##[aria-label*="ца"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not([class*="MainPageTitle"]):not([class*="ubric"]):not(:last-child):not([aria-label])
