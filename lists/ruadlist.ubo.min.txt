@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 04 Sep 2026 04:20:46 +0000
-! Diff-Path: ../patches/2026.9.4.260.patch#ruadlist
+! Last modified: Fri, 04 Sep 2026 09:31:52 +0000
+! Diff-Path: ../patches/2026.9.4.571.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -7431,7 +7431,7 @@ _vodkov.net
 ||kipfilms.ru^$third-party
 ! FastPic-partners
 /splash.php?*fastpic$document
-=*=*fastpic$document
+=*=*fastpic*%$document
 ||crmared.com^$document
 ||epicgameshubham.com^$document
 ||eprdl.online^$document
@@ -23795,6 +23795,7 @@ cnews.ru#?#a[href^="https://www.cnews.ru/redirect.php"]:-abp-contains(Дзен)
 autonews.ru,rbc.ru,rbcautonews.ru,sportrbc.ru##body div .banner__container
 autonews.ru,rbc.ru,sportrbc.ru##body div .banner__filmstrip
 rbc.ru#?#body.free .intresting__list > .intresting__item:-abp-has(a[href^="https://pro.rbc.ru/"])
+rbc.ru#?#body.free .sticky-element > article:-abp-has([href^="/story/pro"])
 rbc.ru##body.free a.meta-info-row-project[href^="https://pro.rbc.ru"]
 rbc.ru##body.free a[class^="styles_message-bar_"][href^="https://pro.rbc.ru/"]
 rbc.ru#?#body.free aside.bside .sidebar:-abp-has(a[href^="https://pro.rbc.ru/"])
@@ -23809,6 +23810,7 @@ rbc.ru#?#body.free div[class="central-publisher-item"]:nth-child(-n+2):-abp-has(
 rbc.ru##body.free div[class^="MainNewsComponent_wrapper_"] [href*="utm_campaign"]
 rbc.ru##body.free div[class^="MainNewsComponent_wrapper_"] [href^="https://pro.rbc.ru/"]
 rbc.ru##body.free div[class^="style_promo_"]
+rbc.ru#?#body.free div[data-metronome-unit="article"] > div:-abp-has([href^="/story/pro"])
 rbc.ru##body.free div[data-name^="SpecialBlockPro"]
 rbc.ru##div[class="central-publisher-item"] a[href*="erid="]
 rbc.ru#?#div[class="central-publisher-item"]:-abp-has(.commercial-slider p:-abp-contains(Реклама))
@@ -27190,6 +27192,7 @@ allbookerka.org##.overhang
 2x2tv.ru##.owl-wrapper-outer .slideAlt
 retail.ru##.p1-retail
 retail.ru##.p2-retail
+rosserialhd.ru##.player_ad_attention
 clan-soprano.ru##.popupBlock
 uniondht.org##.post_body > div[style="color:red;font-size:25px;"]
 electric-house.ru#?#.rules:-abp-has(> p > [src="/img/no_ad.png"])
@@ -29886,18 +29889,19 @@ fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, Event.prototype.preventD
 fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, EventTarget, inlineScript)
 fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, document.onclick, inlineScript)
 fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, onclick, inlineScript)
-fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, DOMContentLoaded, 0x)
+fastpic.org##+js(href-sanitizer, a[href="http://static.fastpic.ru/fpuploader/FPUploader.exe"], +https)
 fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, click, '', elements, html)
+fastpic.org,~new.fastpic.org##+js(prevent-navigation, /^(?:https?:)?\/\/(?!(?:[^\/]+\.)?fastpic\.org(?:[\/:]|$))/)
 fastpic.org,~new.fastpic.org##+js(prevent-window-open)
-fastpic.org,~new.fastpic.org##+js(remove-node-text, script, 'return;try')
-fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /0\,window|a0_0x|ad-provider|AdProvider|adManager|atOptions|disconnect|document\,window|globalThis|isTrusted|parentNode\.removeChild|Math\.random|MAX_CLICKS|setTimeout/)
 fastpic.org,~new.fastpic.org##+js(remove-node-text, script, getElementById, includes, referrer)
-fastpic.org,~new.fastpic.org##+js(remove-node-text, style, /divExo|ex-over-top|214748364/)
+fastpic.org,~new.fastpic.org##+js(remove-node-text, style, /divExo|ex-over-top/)
+fastpic.org,~new.fastpic.org##+js(rmnt, script, /__BIM__|box-shadow|initCustomEvent|Math\.random|tOptions/)
 fastpic.org,~new.fastpic.org##+js(set-constant, HTMLHtmlElement.prototype.onclick, noopFunc)
 fastpic.org,~new.fastpic.org##+js(set-constant, document.documentElement.onclick, noopFunc)
-fastpic.org##[srcdoc]:remove()
+fastpic.org,~new.fastpic.org##[srcdoc]:remove()
 fastpic.org,~new.fastpic.org##a[href*="/fullview/"] > img[src*="/preview/"]:style(clip-path: inset(0 0 38px 0) !important)
 fastpic.org,~new.fastpic.org##a[href="https://static.fastpic.ru/FastPicUploader.apk"]:remove-attr(target)
+fastpic.org,~new.fastpic.org##body > template:remove()
 ! отключенные на время теста правила
 !*$popunder,domain=fastpic.org
 !://fastpic.org^

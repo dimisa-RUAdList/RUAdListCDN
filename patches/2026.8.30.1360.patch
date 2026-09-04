@@ -1,8 +1,8 @@
-diff name:ruadlist lines:139 checksum:f9e372b6a7
+diff name:ruadlist lines:157 checksum:220fda5bf3
 d4 2
 a5 2
-! Last modified: Fri, 04 Sep 2026 04:20:46 +0000
-! Diff-Path: ../patches/2026.9.4.260.patch#ruadlist
+! Last modified: Fri, 04 Sep 2026 09:31:52 +0000
+! Diff-Path: ../patches/2026.9.4.571.patch#ruadlist
 a773 1
 ||betadw.com^$third-party
 a2475 1
@@ -13,7 +13,7 @@ a6224 1
 ||torraria.com^$third-party
 a7428 2
 /splash.php?*fastpic$document
-=*=*fastpic$document
+=*=*fastpic*%$document
 d7430 3
 a7433 2
 ||eprdl.online^$document
@@ -88,6 +88,10 @@ rambler.ru##.ad_branding_site > div[style^="--background:"]
 d23771 1
 a23771 1
 autonews.ru,rbc.ru,rbcautonews.ru,rbclifemedia.ru,sportrbc.ru##a[href*="erid="][target="_blank"]
+a23775 1
+rbc.ru#?#body.free .sticky-element > article:-abp-has([href^="/story/pro"])
+a23789 1
+rbc.ru#?#body.free div[data-metronome-unit="article"] > div:-abp-has([href^="/story/pro"])
 a23797 1
 autonews.ru,rbc.ru,rbcautonews.ru,rbclifemedia.ru,sportrbc.ru##div[class^="fox-"][class*="banner"]
 a24072 2
@@ -100,6 +104,8 @@ d26544 1
 d27152 1
 a27152 1
 dailymail.co.uk,fashion2news.com,hotallnews.today,ilenta.com,in-poland.com,kreschatic.kiev.ua,moyens.net,newspad.ru,pimpletv.me,portaltele.com.ua,pravda.com.ua,tales.org.ua,ukranews.com,wormax.io,zazloo.ru##.fc-ab-root
+a27168 1
+rosserialhd.ru##.player_ad_attention
 a28345 1
 overclockers.ru##a.over-hiddenlink-html[href*="://market.yandex.ru/"][target="_blank"]:style(pointer-events: none !important; color: inherit !important)
 d28368 1
@@ -121,15 +127,27 @@ a28892 1
 dzen.ru,sportsdzen.ru##div[class^="news-"][style^="margin-top: 0px; height: calc("][style$=" - 0px);"]
 a29387 1
 liveinternet.ru##+js(href-sanitizer, a[href*="?action=redirect&url="], ?url)
-a29860 4
+d29861 1
+a29861 5
 fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, Event.prototype.preventDefault, inlineScript)
 fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, EventTarget, inlineScript)
 fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, document.onclick, inlineScript)
 fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, onclick, inlineScript)
-a29867 1
+fastpic.org##+js(href-sanitizer, a[href="http://static.fastpic.ru/fpuploader/FPUploader.exe"], +https)
+a29862 1
+fastpic.org,~new.fastpic.org##+js(prevent-navigation, /^(?:https?:)?\/\/(?!(?:[^\/]+\.)?fastpic\.org(?:[\/:]|$))/)
+d29864 2
+d29867 1
+a29867 3
+fastpic.org,~new.fastpic.org##+js(remove-node-text, style, /divExo|ex-over-top/)
+fastpic.org,~new.fastpic.org##+js(rmnt, script, /__BIM__|box-shadow|initCustomEvent|Math\.random|tOptions/)
 fastpic.org,~new.fastpic.org##+js(set-constant, HTMLHtmlElement.prototype.onclick, noopFunc)
-d29870 1
+d29869 2
+a29870 1
+fastpic.org,~new.fastpic.org##[srcdoc]:remove()
 d29873 2
+a29874 1
+fastpic.org,~new.fastpic.org##body > template:remove()
 a30184 1
 ||savefiles.com/js/noadblocker.js
 d32545 1

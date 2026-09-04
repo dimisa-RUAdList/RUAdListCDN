@@ -1,5 +1,29 @@
-diff name:ruadlist lines:4 checksum:f9e372b6a7
+diff name:ruadlist lines:28 checksum:220fda5bf3
 d4 2
 a5 2
-! Last modified: Fri, 04 Sep 2026 04:20:46 +0000
-! Diff-Path: ../patches/2026.9.4.260.patch#ruadlist
+! Last modified: Fri, 04 Sep 2026 09:31:52 +0000
+! Diff-Path: ../patches/2026.9.4.571.patch#ruadlist
+d7434 1
+a7434 1
+=*=*fastpic*%$document
+a23797 1
+rbc.ru#?#body.free .sticky-element > article:-abp-has([href^="/story/pro"])
+a23811 1
+rbc.ru#?#body.free div[data-metronome-unit="article"] > div:-abp-has([href^="/story/pro"])
+a27192 1
+rosserialhd.ru##.player_ad_attention
+d29889 1
+a29889 1
+fastpic.org##+js(href-sanitizer, a[href="http://static.fastpic.ru/fpuploader/FPUploader.exe"], +https)
+a29890 1
+fastpic.org,~new.fastpic.org##+js(prevent-navigation, /^(?:https?:)?\/\/(?!(?:[^\/]+\.)?fastpic\.org(?:[\/:]|$))/)
+d29892 2
+d29895 1
+a29895 2
+fastpic.org,~new.fastpic.org##+js(remove-node-text, style, /divExo|ex-over-top/)
+fastpic.org,~new.fastpic.org##+js(rmnt, script, /__BIM__|box-shadow|initCustomEvent|Math\.random|tOptions/)
+d29898 1
+a29898 1
+fastpic.org,~new.fastpic.org##[srcdoc]:remove()
+a29900 1
+fastpic.org,~new.fastpic.org##body > template:remove()

@@ -1,8 +1,8 @@
-diff name:ruadlist lines:76 checksum:f9e372b6a7
+diff name:ruadlist lines:96 checksum:220fda5bf3
 d4 2
 a5 2
-! Last modified: Fri, 04 Sep 2026 04:20:46 +0000
-! Diff-Path: ../patches/2026.9.4.260.patch#ruadlist
+! Last modified: Fri, 04 Sep 2026 09:31:52 +0000
+! Diff-Path: ../patches/2026.9.4.571.patch#ruadlist
 a773 1
 ||betadw.com^$third-party
 a2475 1
@@ -13,7 +13,7 @@ a6224 1
 ||torraria.com^$third-party
 a7428 2
 /splash.php?*fastpic$document
-=*=*fastpic$document
+=*=*fastpic*%$document
 d7430 4
 a7439 1
 ||lustgoddess.com^$document
@@ -41,6 +41,10 @@ rambler.ru##.ad_branding_site > div[style^="--background:"]
 d23789 1
 a23789 1
 autonews.ru,rbc.ru,rbcautonews.ru,rbclifemedia.ru,sportrbc.ru##a[href*="erid="][target="_blank"]
+a23793 1
+rbc.ru#?#body.free .sticky-element > article:-abp-has([href^="/story/pro"])
+a23807 1
+rbc.ru#?#body.free div[data-metronome-unit="article"] > div:-abp-has([href^="/story/pro"])
 a23815 1
 autonews.ru,rbc.ru,rbcautonews.ru,rbclifemedia.ru,sportrbc.ru##div[class^="fox-"][class*="banner"]
 a24090 2
@@ -50,6 +54,8 @@ d24092 1
 a24092 1
 ya.ru##section[style*="sekdllliom-items-count:"]
 d26562 1
+a27186 1
+rosserialhd.ru##.player_ad_attention
 d28824 2
 d28865 1
 a28865 1
@@ -66,7 +72,21 @@ a28911 1
 dzen.ru,sportsdzen.ru##div[class^="news-"][style^="margin-top: 0px; height: calc("][style$=" - 0px);"]
 a29880 1
 fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, Event.prototype.preventDefault, inlineScript)
-d29894 1
+d29884 1
+a29884 1
+fastpic.org##+js(href-sanitizer, a[href="http://static.fastpic.ru/fpuploader/FPUploader.exe"], +https)
+a29885 1
+fastpic.org,~new.fastpic.org##+js(prevent-navigation, /^(?:https?:)?\/\/(?!(?:[^\/]+\.)?fastpic\.org(?:[\/:]|$))/)
+d29887 2
+d29890 1
+a29890 2
+fastpic.org,~new.fastpic.org##+js(remove-node-text, style, /divExo|ex-over-top/)
+fastpic.org,~new.fastpic.org##+js(rmnt, script, /__BIM__|box-shadow|initCustomEvent|Math\.random|tOptions/)
+d29893 2
+a29894 1
+fastpic.org,~new.fastpic.org##[srcdoc]:remove()
+a29896 1
+fastpic.org,~new.fastpic.org##body > template:remove()
 a30206 1
 ||savefiles.com/js/noadblocker.js
 d32567 1

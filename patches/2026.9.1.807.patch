@@ -1,8 +1,8 @@
-diff name:ruadlist lines:54 checksum:f9e372b6a7
+diff name:ruadlist lines:74 checksum:220fda5bf3
 d4 2
 a5 2
-! Last modified: Fri, 04 Sep 2026 04:20:46 +0000
-! Diff-Path: ../patches/2026.9.4.260.patch#ruadlist
+! Last modified: Fri, 04 Sep 2026 09:31:52 +0000
+! Diff-Path: ../patches/2026.9.4.571.patch#ruadlist
 a773 1
 ||betadw.com^$third-party
 a2475 1
@@ -13,7 +13,7 @@ a6224 1
 ||torraria.com^$third-party
 a7428 2
 /splash.php?*fastpic$document
-=*=*fastpic$document
+=*=*fastpic*%$document
 d7430 4
 a7439 1
 ||lustgoddess.com^$document
@@ -34,6 +34,10 @@ rambler.ru##.ad_branding_site > div[style^="--background:"]
 d23791 1
 a23791 1
 autonews.ru,rbc.ru,rbcautonews.ru,rbclifemedia.ru,sportrbc.ru##a[href*="erid="][target="_blank"]
+a23795 1
+rbc.ru#?#body.free .sticky-element > article:-abp-has([href^="/story/pro"])
+a23809 1
+rbc.ru#?#body.free div[data-metronome-unit="article"] > div:-abp-has([href^="/story/pro"])
 a23817 1
 autonews.ru,rbc.ru,rbcautonews.ru,rbclifemedia.ru,sportrbc.ru##div[class^="fox-"][class*="banner"]
 a24092 2
@@ -43,6 +47,8 @@ d24094 1
 a24094 1
 ya.ru##section[style*="sekdllliom-items-count:"]
 d26564 1
+a27188 1
+rosserialhd.ru##.player_ad_attention
 d28826 2
 d28902 1
 a28902 1
@@ -52,4 +58,18 @@ a28906 1
 dzen.ru,sportsdzen.ru##div[class*="_content_with-"][class$="layout"] > div > div > div[style^="height:"] > div > div[id]
 a29882 1
 fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, Event.prototype.preventDefault, inlineScript)
-d29896 1
+d29886 1
+a29886 1
+fastpic.org##+js(href-sanitizer, a[href="http://static.fastpic.ru/fpuploader/FPUploader.exe"], +https)
+a29887 1
+fastpic.org,~new.fastpic.org##+js(prevent-navigation, /^(?:https?:)?\/\/(?!(?:[^\/]+\.)?fastpic\.org(?:[\/:]|$))/)
+d29889 2
+d29892 1
+a29892 2
+fastpic.org,~new.fastpic.org##+js(remove-node-text, style, /divExo|ex-over-top/)
+fastpic.org,~new.fastpic.org##+js(rmnt, script, /__BIM__|box-shadow|initCustomEvent|Math\.random|tOptions/)
+d29895 2
+a29896 1
+fastpic.org,~new.fastpic.org##[srcdoc]:remove()
+a29898 1
+fastpic.org,~new.fastpic.org##body > template:remove()
