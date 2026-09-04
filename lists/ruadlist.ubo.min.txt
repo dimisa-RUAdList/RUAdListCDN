@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 04 Sep 2026 14:15:45 +0000
-! Diff-Path: ../patches/2026.9.4.855.patch#ruadlist
+! Last modified: Fri, 04 Sep 2026 21:22:45 +0000
+! Diff-Path: ../patches/2026.9.4.1282.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22433,6 +22433,7 @@ forum.abok.ru##span[style^="color: #4F4F4F; font-size: 6pt; text-align: left;"]
 flashscore.com.ua,flashscore.ru.com,flashscore.ua,flashscorekz.com,livescore.in,soccerstand.com##sport[name="soccer"]
 nuriknur.ucoz.com##strong > span[style="color:red"]
 onliner.by#?#strong:-abp-contains(нож блокировщику)
+fastpic.org##style:first-child + b:empty:last-child
 surl.*##.promo-block
 surl.*##.promo-title
 surl.*##.very-nice-button
@@ -25295,6 +25296,7 @@ zarulem.ws##td[style^="text-align:center;width:50%"]
 ||mostinfo.net/img/top/
 ||mostlv.com^$third-party,subdocument
 ||moviecash.ru^$third-party
+||movieweb.ru^$third-party,script
 ||mrringo.com/images/banners/$third-party
 ||multiclick.ru^
 ||multonly.ru^$third-party
