@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 05 Sep 2026 08:58:33 +0000
-! Diff-Path: ../patches/2026.9.5.538.patch#ruadlist
+! Last modified: Sat, 05 Sep 2026 15:59:02 +0000
+! Diff-Path: ../patches/2026.9.5.959.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21375,7 +21375,6 @@ www.film.ru##div[class^="okko"]
 open4business.com.ua##div[class^="open4-sidebar"]
 drive.ru##div[class^="osago-"]
 investing.com##div[class^="outbrain_outbrain-wrapper_"]
-caniplay.ru##div[class^="page-block-ad"]
 n1.ru##div[class^="page-header__top-banner"]
 soccer365.com.ua,soccer365.ru#?#div[class^="page_"][class$="_right"] div:-abp-has(> div[id]:empty ~ script)
 miasskiy.ru##div[class^="papex"]
@@ -23065,7 +23064,7 @@ mail.ru##.ph-project-promo-container
 ~e.mail.ru,mail.ru,sportmail.ru##div[article-item-type="contentroll"]:empty
 ~e.mail.ru,mail.ru,sportmail.ru##div[class*="rb-slot_plug"]
 ~e.mail.ru,mail.ru,sportmail.ru##div[data-closewrap-container]
-~deti.mail.ru,~e.mail.ru,mail.ru,sportmail.ru##div[data-tooltip-root]
+~e.mail.ru,mail.ru,sportmail.ru##div[data-tooltip-root][style*="fixed"]
 ~dobro.mail.ru,~e.mail.ru,mail.ru,~my.mail.ru,sportmail.ru##table > tbody > tr > td:first-child + td + td:last-child
 ~e.mail.ru,mail.ru,sportmail.ru#?#tbody:-abp-has(> tr > td > [class*="daynews__item"]) > tr > td ~ td ~ td:last-child
 ~e.mail.ru,mail.ru,sportmail.ru##tr > .daynews__spring
@@ -23196,7 +23195,6 @@ otvet.mail.ru##div[data-pos]
 deti.mail.ru##.cols__wrapper > aside
 deti.mail.ru##.deti-slot_exchange
 deti.mail.ru##.js-smoky-end
-deti.mail.ru##div[data-tooltip-root][style*="fixed"]
 ! Мини-игры
 minigames.mail.ru##.left-advert-block
 minigames.mail.ru,okminigames.mail.ru#?#[href^="https://minigames.imgsmail.ru/static/css/social-likes."] ~ div[class]:-abp-has([href*="/info/adblock"])
@@ -29144,6 +29142,7 @@ mail.ru##.tabs-content > :first-child:style(max-width: 750px !important)
 mail.ru##.weather_right-column .weather__block:style(height: auto !important)
 mail.ru##.weather_right-column .weather__description::after
 my.mail.ru##:not(.l-common__container) > div[style*="position"][style*="display"][style*="visible"][style*="opacity"][style*="background-color"]
+tv.mail.ru##[data-qa="Wrapper"][class]:style(min-height: 0 !important)
 mail.ru##[data-testid="grid-left-col"] > .logo:style(margin-top: 4px !important; margin-bottom: 4px !important)
 mail.ru##[data-testid="news-tabs"] ~ div > div ~ div > div[style]
 mail.ru,sportmail.ru##a[id^="tb-"][class^="tb-"][target="_blank"]

@@ -1,8 +1,8 @@
-diff name:ruadlist lines:68 checksum:aa4fc85d91
+diff name:ruadlist lines:75 checksum:39766ed9c2
 d4 2
 a5 2
-! Last modified: Sat, 05 Sep 2026 08:58:33 +0000
-! Diff-Path: ../patches/2026.9.5.538.patch#ruadlist
+! Last modified: Sat, 05 Sep 2026 15:59:02 +0000
+! Diff-Path: ../patches/2026.9.5.959.patch#ruadlist
 a773 1
 ||betadw.com^$third-party
 a2475 1
@@ -25,6 +25,7 @@ a21079 1
 sportsdaily.ru##div[class*="giftButton"]
 d21154 1
 d21333 1
+d21373 1
 d21391 1
 a22430 1
 fastpic.org##style:first-child + b:empty:last-child
@@ -38,6 +39,10 @@ d22809 5
 a22828 2
 ||vveu.*.link/$third-party,media
 ||vvru.*.link/$third-party,media
+d23066 1
+a23066 1
+~e.mail.ru,mail.ru,sportmail.ru##div[data-tooltip-root][style*="fixed"]
+d23197 1
 a23573 1
 rambler.ru##.ad_branding_site > div[style^="--background:"]
 a23795 1
@@ -52,6 +57,8 @@ rosserialhd.ru##.player_ad_attention
 d28903 1
 a28903 1
 dzen.ru,sportsdzen.ru##[aria-label*="ца"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not([class*="MainPageTitle"]):not([class*="ubric"]):not(:last-child):not([aria-label])
+a29140 1
+tv.mail.ru##[data-qa="Wrapper"][class]:style(min-height: 0 !important)
 d29888 1
 a29888 1
 fastpic.org##+js(href-sanitizer, a[href="http://static.fastpic.ru/fpuploader/FPUploader.exe"], +https)

@@ -1,8 +1,8 @@
-diff name:ruadlist lines:109 checksum:aa4fc85d91
+diff name:ruadlist lines:116 checksum:39766ed9c2
 d4 2
 a5 2
-! Last modified: Sat, 05 Sep 2026 08:58:33 +0000
-! Diff-Path: ../patches/2026.9.5.538.patch#ruadlist
+! Last modified: Sat, 05 Sep 2026 15:59:02 +0000
+! Diff-Path: ../patches/2026.9.5.959.patch#ruadlist
 a773 1
 ||betadw.com^$third-party
 a2475 1
@@ -32,6 +32,7 @@ d21154 1
 a21194 1
 maxdash.ru##div[class^="_exchangeArea_"]
 d21332 1
+d21372 1
 d21390 1
 a22429 1
 fastpic.org##style:first-child + b:empty:last-child
@@ -47,6 +48,10 @@ d22807 5
 a22826 2
 ||vveu.*.link/$third-party,media
 ||vvru.*.link/$third-party,media
+d23064 1
+a23064 1
+~e.mail.ru,mail.ru,sportmail.ru##div[data-tooltip-root][style*="fixed"]
+d23195 1
 a23571 1
 rambler.ru##.ad_branding_site > div[style^="--background:"]
 d23789 1
@@ -83,6 +88,8 @@ dzen.ru,sportsdzen.ru##div[class*="_content_with-"][class$="layout"] > div > div
 d28911 1
 a28911 1
 dzen.ru,sportsdzen.ru##div[class^="news-"][style^="margin-top: 0px; height: calc("][style$=" - 0px);"]
+a29137 1
+tv.mail.ru##[data-qa="Wrapper"][class]:style(min-height: 0 !important)
 a29880 1
 fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, Event.prototype.preventDefault, inlineScript)
 d29884 1
