@@ -1,8 +1,8 @@
-diff name:ruadlist lines:96 checksum:e7cb4fa713
+diff name:ruadlist lines:104 checksum:9cf353999e
 d4 2
 a5 2
-! Last modified: Sun, 06 Sep 2026 16:56:44 +0000
-! Diff-Path: ../patches/2026.9.6.1016.patch#ruadlist
+! Last modified: Sun, 06 Sep 2026 23:47:08 +0000
+! Diff-Path: ../patches/2026.9.6.1427.patch#ruadlist
 a773 1
 ||betadw.com^$third-party
 a2475 1
@@ -53,21 +53,29 @@ d22811 5
 a22830 2
 ||vveu.*.link/$third-party,media
 ||vvru.*.link/$third-party,media
+d22926 1
+a22926 1
+avito.ru##[data-chunks="item"] + div > [style] > span ~ div > div > div:first-child + div > div:last-child > div:last-child > div:first-child + div:last-child > div:only-child > div:first-child + div:last-child
 d23068 1
 a23068 1
 ~e.mail.ru,mail.ru,sportmail.ru##div[data-tooltip-root][style*="fixed"]
 d23199 1
 a23575 1
 rambler.ru##.ad_branding_site > div[style^="--background:"]
+a23740 1
+rbc.ru#?#.column-central-plus-side > .column-fullwidth:-abp-has([data-metronome-paywall="true"]) ~ .column-fullwidth:-abp-has([data-metronome-paywall="true"])
 a23797 1
 rbc.ru#?#body.free .sticky-element > article:-abp-has([href^="/story/pro"])
 a23811 1
 rbc.ru#?#body.free div[data-metronome-unit="article"] > div:-abp-has([href^="/story/pro"])
+a23812 1
+rbc.ru##div[class*="PartnersNews_wrapper"]
 a25294 1
 ||movieweb.ru^$third-party,script
 d26240 1
 a26240 1
 slavyansk.biz,tagline.ru,x-time.ru#@##adv
+d26278 1
 d26569 1
 a27193 1
 rosserialhd.ru##.player_ad_attention
