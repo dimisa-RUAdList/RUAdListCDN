@@ -1,8 +1,8 @@
-diff name:ruadlist lines:92 checksum:29359b8c20
+diff name:ruadlist lines:98 checksum:b7c630b4ea
 d4 2
 a5 2
-! Last modified: Mon, 07 Sep 2026 15:48:04 +0000
-! Diff-Path: ../patches/2026.9.7.948.patch#ruadlist
+! Last modified: Mon, 07 Sep 2026 22:45:29 +0000
+! Diff-Path: ../patches/2026.9.7.1365.patch#ruadlist
 a7433 1
 /splash.php?*fHBvcE1hZ2lj$document
 a7441 1
@@ -57,11 +57,11 @@ a23815 1
 rbc.ru##div[class*="PartnersNews_wrapper"]
 d24099 2
 a24100 2
-ya.ru##html[class*="seckdllliom_top"] aside + div
-ya.ru##html[class*="seckdllliom_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
+ya.ru##html[class*="kdllliom_top"] aside + div
+ya.ru##html[class*="kdllliom_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
 d24102 1
 a24102 1
-ya.ru##section[style*="seckdllliom-items-count:"]
+ya.ru##section[style*="kdllliom-items-count:"]
 a25297 1
 ||movieweb.ru^$third-party,script
 d26242 2
@@ -71,12 +71,18 @@ d26281 1
 d26303 1
 d26319 1
 d26765 1
+a28833 2
+ya.ru##html[class*="-content_yes"] div[class*="_disclaimer_no"]
+ya.ru##html[class*="-content_yes"] div[class*="_disclaimer_no"] + div[class*="_border"]
 a29145 1
 tv.mail.ru##[data-qa="Wrapper"][class]:style(min-height: 0 !important)
 a29273 1
 ya.ru##+js(abort-on-property-read, __FEED_ES_BRIDGE_BAKED_STATE__)
 a29513 1
 themoscowtimes.com##+js(prevent-setTimeout, contribute-modal)
+d29825 1
+a29825 1
+ixbt.com,ixbt.pro##style[id^="branding-"]:remove()
 d29889 1
 a29889 1
 fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, Event.prototype.preventDefault, /blob|injectedScript|inlineScript/)

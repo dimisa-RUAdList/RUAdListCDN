@@ -1,8 +1,8 @@
-diff name:ruadlist lines:54 checksum:29359b8c20
+diff name:ruadlist lines:60 checksum:b7c630b4ea
 d4 2
 a5 2
-! Last modified: Mon, 07 Sep 2026 15:48:04 +0000
-! Diff-Path: ../patches/2026.9.7.948.patch#ruadlist
+! Last modified: Mon, 07 Sep 2026 22:45:29 +0000
+! Diff-Path: ../patches/2026.9.7.1365.patch#ruadlist
 a7433 1
 /splash.php?*fHBvcE1hZ2lj$document
 a7441 1
@@ -30,18 +30,24 @@ a23811 1
 rbc.ru##div[class*="PartnersNews_wrapper"]
 d24095 2
 a24096 2
-ya.ru##html[class*="seckdllliom_top"] aside + div
-ya.ru##html[class*="seckdllliom_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
+ya.ru##html[class*="kdllliom_top"] aside + div
+ya.ru##html[class*="kdllliom_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
 d24098 1
 a24098 1
-ya.ru##section[style*="seckdllliom-items-count:"]
+ya.ru##section[style*="kdllliom-items-count:"]
 d26239 1
 d26278 1
 d26300 1
 d26316 1
 d26762 1
+a28830 2
+ya.ru##html[class*="-content_yes"] div[class*="_disclaimer_no"]
+ya.ru##html[class*="-content_yes"] div[class*="_disclaimer_no"] + div[class*="_border"]
 a29271 1
 ya.ru##+js(abort-on-property-read, __FEED_ES_BRIDGE_BAKED_STATE__)
+d29824 1
+a29824 1
+ixbt.com,ixbt.pro##style[id^="branding-"]:remove()
 d29894 1
 a29894 1
 fastpic.org,~new.fastpic.org##+js(prevent-navigation, /^(?!fastpic\.org)/)
