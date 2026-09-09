@@ -1,20 +1,25 @@
-diff name:ruadlist lines:129 checksum:249cfc7937
+diff name:ruadlist lines:156 checksum:45f618e361
 d4 2
 a5 2
-! Last modified: Tue, 08 Sep 2026 18:33:38 +0000
-! Diff-Path: ../patches/2026.9.8.1113.patch#ruadlist
+! Last modified: Wed, 09 Sep 2026 00:05:47 +0000
+! Diff-Path: ../patches/2026.9.9.5.patch#ruadlist
 d7434 1
 a7434 2
 /splash.php?*fHBvcE1hZ2lj$document
 =*=*fastpic*%$document
 a7441 1
 ||lu-games.com^$document
+d7814 1
+a7814 1
+||pw^$third-party,script,xmlhttprequest,domain=~adwiz.pp.ua|~dewalt.store|~forum.worldofwarships.eu|~forum.worldofwarships.ru|~hansgrohe.ru|~hdvbplayer.tk|~herokuapp.com|~liveball.cc|~liveball.gg|~liveball.im|~liveball.my|~liveball.sx|~liveball.uno|~liveball.ws|~masterclub.store|~movielab.pro|~osu.ppy.sh|~panomama.ru|~pelcn.net|~philips.ru|~purina.ru|~softpir.com|~sportsvideoline3.pw|~tefal.ru|~tikkurila.ru|~vk-apps.com|~vulpecula.host
 d11357 2
+d11401 1
 a11694 1
 ||film.ru/themes/filmru_desk/img/okko/
 d11932 1
 a11932 1
 ||hhcdn.ru/file/18459591.jpg
+d12270 3
 d14161 1
 d15756 1
 a15756 1
@@ -34,6 +39,8 @@ a18835 1
 1fnl.ru,1tulatv.ru,afanasy.biz,bookslist.me,bragazeta.ru,bratsk.org,dengi.ua,dnepr24.com.ua,football.ua,frankivchany.if.ua,fullsite.org,gazeta.zp.ua,job.ru,km.ru,konkurent.ua,kr24.com.ua,litrpg.ru,livejournal.ru,mylinks.ws,nikolaev24.com.ua,novosti-n.org,odessa.net.ua,prm.ru,rusnext.ru,russia.ru,rusvesna.su,samara24.ru,smilekaluga.ru,study.ru,ucheba.ru,ura-inform.com,v-variant.com.ua,wildo.ru##.top-banner
 a19042 1
 vk.com,vk.ru#?#.vkuiGroup__modeCard > [role="feed"] > article:-abp-has(> [data-post-id] a[rel]:-abp-contains(vk.cc/))
+a19612 1
+link.softoroom.org##[href^="https://softoroom.org/link/jump.php"]
 d19713 1
 a19713 1
 vk.com,vk.ru#?#[role="feed"] > article:-abp-has(> [data-post-id] a[rel]:-abp-contains(onelink.me/))
@@ -47,6 +54,8 @@ d21158 1
 d21337 1
 d21377 1
 d21395 1
+d22194 1
+d22246 6
 a22267 1
 hh.ru##main > div[class*=" bp-applicant-wrapper-"]
 a22434 1
@@ -54,12 +63,21 @@ fastpic.org##style:first-child + b:empty:last-child
 d22682 1
 a22682 1
 ||pikabu.ru/ajax/*?j3T2r=$xmlhttprequest
+d22714 1
+a22714 1
+liveball.sx,liveball.*##body > style[id] {remove:true;}
 d22895 1
 a22907 1
 2ip.io,2ip.ru##div[class^="ip-links-container-row-"]:first-child
 d22925 1
 a22925 1
 avito.ru##[data-chunks="item"] + div > [style] > span ~ div > div > div:first-child + div > div:last-child > div:last-child > div:first-child + div:last-child > div:only-child > div:first-child + div:last-child
+a23043 5
+! LiveBall
+liveball.sx,liveball.*##[data-noclick]
+liveball.sx,liveball.*##body > div[class]:not([id]):not([style]):empty
+||cdn.lbs.pw/rek/
+||liveball.*/public/js/dm.min.js
 d23067 1
 a23067 1
 ~e.mail.ru,mail.ru,sportmail.ru##div[data-tooltip-root][style*="fixed"]
@@ -90,15 +108,24 @@ d26316 1
 d26762 1
 a27192 1
 rosserialhd.ru##.player_ad_attention
+d28191 2
+a28192 2
+liveball.gg,liveball.im,liveball.my,liveball.space,liveball.sx,liveball.uno,liveball.ws##footer:style(max-width: 100% !important)
+liveball.gg,liveball.im,liveball.my,liveball.space,liveball.sx,liveball.uno,liveball.ws##main.main_div:style(margin-top: 0 !important; max-width: 100% !important; border-radius: inherit !important; background-size: unset !important)
 a28829 2
 ya.ru##html[class*="-content_yes"] div[class*="_disclaimer_no"]
 ya.ru##html[class*="-content_yes"] div[class*="_disclaimer_no"] + div[class*="_border"]
 a29141 1
 tv.mail.ru##[data-qa="Wrapper"][class]:style(min-height: 0 !important)
+a29241 1
+tapochek.net##+js(abort-on-property-read, ABNS)
 a29269 1
 ya.ru##+js(abort-on-property-read, __FEED_ES_BRIDGE_BAKED_STATE__)
 a29509 1
 themoscowtimes.com##+js(prevent-setTimeout, contribute-modal)
+d29801 1
+a29801 1
+liveball.*##+js(prevent-addEventListener, DOMContentLoaded, start)
 d29821 1
 a29821 1
 ixbt.com,ixbt.pro##style[id^="branding-"]:remove()

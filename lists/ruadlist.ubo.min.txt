@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 08 Sep 2026 18:33:38 +0000
-! Diff-Path: ../patches/2026.9.8.1113.patch#ruadlist
+! Last modified: Wed, 09 Sep 2026 00:05:47 +0000
+! Diff-Path: ../patches/2026.9.9.5.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -7813,7 +7813,7 @@ _verified.php?code=*&server=runetki.com
 ||quelliclub.ru^$third-party,script,subdocument
 ||servebbs.net^$third-party,script,subdocument
 ||asia^$third-party,script,subdocument,xmlhttprequest,domain=~gallerix.org
-||pw^$third-party,script,xmlhttprequest,domain=~adwiz.pp.ua|~dewalt.store|~forum.worldofwarships.eu|~forum.worldofwarships.ru|~hansgrohe.ru|~hdvbplayer.tk|~herokuapp.com|~liveball.cc|~liveball.gg|~liveball.my|~liveball.sx|~liveball.uno|~liveball.ws|~masterclub.store|~movielab.pro|~osu.ppy.sh|~panomama.ru|~pelcn.net|~philips.ru|~purina.ru|~softpir.com|~sportsvideoline3.pw|~tefal.ru|~tikkurila.ru|~vk-apps.com|~vulpecula.host
+||pw^$third-party,script,xmlhttprequest,domain=~adwiz.pp.ua|~dewalt.store|~forum.worldofwarships.eu|~forum.worldofwarships.ru|~hansgrohe.ru|~hdvbplayer.tk|~herokuapp.com|~liveball.cc|~liveball.gg|~liveball.im|~liveball.my|~liveball.sx|~liveball.uno|~liveball.ws|~masterclub.store|~movielab.pro|~osu.ppy.sh|~panomama.ru|~pelcn.net|~philips.ru|~purina.ru|~softpir.com|~sportsvideoline3.pw|~tefal.ru|~tikkurila.ru|~vk-apps.com|~vulpecula.host
 ! Исключения
 @@||12go.asia/dist/prod/build.*.js|$third-party,script
 @@||12go.asia/tools/form/$third-party,script
@@ -11398,7 +11398,6 @@ igdz1.ru^$script,domain=igdz.ru
 ||cdn.gravitec.net/styles/unbloc*.png
 ||cdn.hsmedia.ru/dist/maxim/Product.
 ||cdn.hsmedia.ru/scrooge-client/hsm-creative-manager$script
-||cdn.liveball.space/public/img/overlay
 ||cdn.livetv*.me/html/$subdocument
 ||cdn.livetv*.me/tmp/$subdocument
 ||cdn.muzofon.tech/banner/$image
@@ -12268,9 +12267,6 @@ igdz1.ru^$script,domain=igdz.ru
 ||live4fun.ru/bitpapa/
 ||liveangarsk.ru/files/k
 ||liveangarsk.ru/specfiles/
-||liveball.*/public/*clickunder.js
-||liveball.*/public/js/dm.min.js
-||liveball.*/public/js/fcap.js
 ||livecars.ru^*/wall_
 ||livefootball.ws^$object
 ||liveinternet.ru/cgi-bin/adt.fcgi
@@ -19613,6 +19609,7 @@ nntt.org##[href^="http://numbuster.com"]
 nntt.org##[href^="http://www.cenam.net"]
 game2day.ru##[href^="https://p2d.ru/"]
 smi2.ru##[href^="https://smi2.ru/newdata/adpreview?ad="]
+link.softoroom.org##[href^="https://softoroom.org/link/jump.php"]
 divxplayer.ml,haes.tech,hcdn.online,hqq.tv,metaverseid.tk,player.cvary.org##[href^="https://t.me/"]
 forum.ru-board.com##[href^="postings.cgi?action=edit&forum=5&topic=51666"]:not([href$="postno=1"]) ~ .post img:not([src*="://forum.ru-board.com/board/"])
 versii.if.ua##[href^="tel:"]
@@ -22187,7 +22184,6 @@ chexov.info##img[src*="chexov.info/images/banners/"]
 cqham.ru##img[src*="cqham.ru/forum/ad/"]
 poltava365.com##img[src*="img/adw/"]
 jobvacancy.pro##img[src*="jobvacancy.pro/img/commin/"]
-softoroom.org##img[src*="yandexbr."]
 1pnz.ru##img[src*="баннеры"]
 officebesplatno.com##img[src="/download.png"]
 folkdoctor.ru##img[src="/images/banners/virtoo.jpg"]
@@ -22239,12 +22235,6 @@ stopgame.ru#?#li:-abp-has(> [href="https://zen.yandex.ru/stopgame"])
 zalinux.ru##li[id^="menu-item-"] > a[href^="http"]:not([href*="kali.org.ru/"]):not([href*="zalinux.ru/"])
 crackstatus.net##li[id^="slide"]
 penzainform.ru##li[style^="width: 140px; height:"][style*="max-height"]
-liveball.sx,liveball.*###fullscreen
-liveball.sx,liveball.*##.bp_wrap
-liveball.sx,liveball.*##.freebet_block
-liveball.sx,liveball.*##[class*="odds_"]
-liveball.sx,liveball.*##[class^="custom_brand"]
-liveball.sx,liveball.*##div[class^="catfish_"]
 lurkmore.*###localNotice #aside_buttons
 lurkmore.*###localNotice .infobox
 lurkmore.*###n-Группа-в-Дискорде
@@ -22709,7 +22699,7 @@ lenta.news,lenta.ru##.layout__content > [id^="newsBody_news-"] ~ [id^="articleBo
 lenta.news,lenta.ru##.topic-body__content> .box-external-video:last-child {remove:true;}
 lenta.news,lenta.ru##.topic-footer > div[class^="box-"][class$="-video"] {remove:true;}
 lenta.news,lenta.ru##.vk-video-popup {remove:true;}
-liveball.sx,liveball.*###custom_brand {remove:true;}
+liveball.sx,liveball.*##body > style[id] {remove:true;}
 pikabu.ru##head > style:has-text(min-height:301px;) {remove:true;}
 playground.ru###dfpPrerollDelay {remove:true;}
 stratege.ru##html[xmlns] > body > script + script + style {remove:true;}
@@ -23039,6 +23029,11 @@ kp.ru##body.wp-theme-sports .left-sidebar
 kp.ru#?#body.wp-theme-sports .show-for-large:-abp-has(> .left-sidebar)
 kp.ru##div[class^="ad-slot"]
 kp.ru##div[style*="height:"][style*="250px"][style*="important"]
+! LiveBall
+liveball.sx,liveball.*##[data-noclick]
+liveball.sx,liveball.*##body > div[class]:not([id]):not([style]):empty
+||cdn.lbs.pw/rek/
+||liveball.*/public/js/dm.min.js
 ! мобильная версия livejournal.com
 levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##html.html-mobile div[class$="__inner--custom-width"]
 levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##html.html-mobile div[class*=" false"]
@@ -28186,8 +28181,8 @@ lifehacker.ru##[data-video_status]:not([data-video_status="initial"]) .splash-pl
 ! ---
 lifetambov.ru##.theme-wrapper > .container > div:style(padding-bottom: unset !important)
 ! ---
-liveball.gg,liveball.my,liveball.space,liveball.sx,liveball.uno,liveball.ws##footer:style(max-width: 100% !important)
-liveball.gg,liveball.my,liveball.space,liveball.sx,liveball.uno,liveball.ws##main.main_div:style(margin-top: 0 !important; max-width: 100% !important; border-radius: inherit !important)
+liveball.gg,liveball.im,liveball.my,liveball.space,liveball.sx,liveball.uno,liveball.ws##footer:style(max-width: 100% !important)
+liveball.gg,liveball.im,liveball.my,liveball.space,liveball.sx,liveball.uno,liveball.ws##main.main_div:style(margin-top: 0 !important; max-width: 100% !important; border-radius: inherit !important; background-size: unset !important)
 ! ---
 livecars.ru##.content:style(margin-top: 0 !important)
 ! ---
@@ -29240,6 +29235,7 @@ liga.net##+js(abort-current-inline-script, window.innerWidth, rcBuf)
 techmusic.ru##+js(abort-current-inline-script, window.onload, _uWnd)
 dynamo.kiev.ua##+js(abort-current-script, document.getElementById, document.body.style.overflow)
 lenta.news,lenta.ru##+js(abort-current-script, window._lentaData, url_for_scroll)
+tapochek.net##+js(abort-on-property-read, ABNS)
 htmlweb.ru##+js(abort-on-property-read, AdbBanner)
 fapreactor.com,pornreactor.cc,reactor.cc##+js(abort-on-property-read, CTRManager.host3)
 anifap.com,anifap.xyz,anipoisk.org,anitokyo.tv,anitokyo1.top,hcdn.online,kinofilm.co##+js(abort-on-property-read, ClickUndercookie)
@@ -29801,7 +29797,7 @@ howdyho.*##+js(no-setTimeout-if, _0x)
 howdyho.*##+js(set-attr, #progress-value, data-timer, 25)
 ferra.ru,indicator.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,secretmag.ru,wmj.ru##html[data-env]:style(container-type: unset !important)
 kinoblin.ru,pornoakt.*,serialai.ru##+js(addEventListener-defuser, mousedown, pop.doEvent)
-liveball.*,tapochek.net##+js(abort-on-property-read, ABNS)
+liveball.*##+js(prevent-addEventListener, DOMContentLoaded, start)
 m.rp5.*#@#.adsbygoogle
 reshuent.ru,sdamgia.ru##main > div > div > div:has-text(/rotator|блокировщик/)
 reshuent.ru,sdamgia.ru##main > div:first-child:empty + div:not([class]) > div > div

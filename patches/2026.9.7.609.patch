@@ -1,14 +1,19 @@
-diff name:ruadlist lines:42 checksum:249cfc7937
+diff name:ruadlist lines:69 checksum:45f618e361
 d4 2
 a5 2
-! Last modified: Tue, 08 Sep 2026 18:33:38 +0000
-! Diff-Path: ../patches/2026.9.8.1113.patch#ruadlist
+! Last modified: Wed, 09 Sep 2026 00:05:47 +0000
+! Diff-Path: ../patches/2026.9.9.5.patch#ruadlist
 a7433 1
 /splash.php?*fHBvcE1hZ2lj$document
 a7441 1
 ||lu-games.com^$document
+d7814 1
+a7814 1
+||pw^$third-party,script,xmlhttprequest,domain=~adwiz.pp.ua|~dewalt.store|~forum.worldofwarships.eu|~forum.worldofwarships.ru|~hansgrohe.ru|~hdvbplayer.tk|~herokuapp.com|~liveball.cc|~liveball.gg|~liveball.im|~liveball.my|~liveball.sx|~liveball.uno|~liveball.ws|~masterclub.store|~movielab.pro|~osu.ppy.sh|~panomama.ru|~pelcn.net|~philips.ru|~purina.ru|~softpir.com|~sportsvideoline3.pw|~tefal.ru|~tikkurila.ru|~vk-apps.com|~vulpecula.host
+d11399 1
 a11692 1
 ||film.ru/themes/filmru_desk/img/okko/
+d12268 3
 d14159 1
 d18205 1
 a18205 1
@@ -16,11 +21,24 @@ kinonews.ru##.rightzagolup:first-child
 d18394 1
 a19043 1
 vk.com,vk.ru#?#.vkuiGroup__modeCard > [role="feed"] > article:-abp-has(> [data-post-id] a[rel]:-abp-contains(vk.cc/))
+a19613 1
+link.softoroom.org##[href^="https://softoroom.org/link/jump.php"]
 d19715 1
 d19919 1
+d22190 1
+d22242 6
+d22712 1
+a22712 1
+liveball.sx,liveball.*##body > style[id] {remove:true;}
 d22893 1
 a22905 1
 2ip.io,2ip.ru##div[class^="ip-links-container-row-"]:first-child
+a23041 5
+! LiveBall
+liveball.sx,liveball.*##[data-noclick]
+liveball.sx,liveball.*##body > div[class]:not([id]):not([style]):empty
+||cdn.lbs.pw/rek/
+||liveball.*/public/js/dm.min.js
 d24097 2
 a24098 2
 ya.ru##html[class*="kdllliom_top"] aside + div
@@ -32,9 +50,18 @@ d26241 1
 d26301 1
 d26317 1
 d26763 1
+d28193 2
+a28194 2
+liveball.gg,liveball.im,liveball.my,liveball.space,liveball.sx,liveball.uno,liveball.ws##footer:style(max-width: 100% !important)
+liveball.gg,liveball.im,liveball.my,liveball.space,liveball.sx,liveball.uno,liveball.ws##main.main_div:style(margin-top: 0 !important; max-width: 100% !important; border-radius: inherit !important; background-size: unset !important)
 a28831 2
 ya.ru##html[class*="-content_yes"] div[class*="_disclaimer_no"]
 ya.ru##html[class*="-content_yes"] div[class*="_disclaimer_no"] + div[class*="_border"]
+a29244 1
+tapochek.net##+js(abort-on-property-read, ABNS)
+d29806 1
+a29806 1
+liveball.*##+js(prevent-addEventListener, DOMContentLoaded, start)
 d29826 1
 a29826 1
 ixbt.com,ixbt.pro##style[id^="branding-"]:remove()
