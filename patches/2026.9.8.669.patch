@@ -1,8 +1,8 @@
-diff name:ruadlist lines:33 checksum:45f618e361
+diff name:ruadlist lines:37 checksum:73bfc3d355
 d4 2
 a5 2
-! Last modified: Wed, 09 Sep 2026 00:05:47 +0000
-! Diff-Path: ../patches/2026.9.9.5.patch#ruadlist
+! Last modified: Wed, 09 Sep 2026 09:37:00 +0000
+! Diff-Path: ../patches/2026.9.9.576.patch#ruadlist
 d7816 1
 a7816 1
 ||pw^$third-party,script,xmlhttprequest,domain=~adwiz.pp.ua|~dewalt.store|~forum.worldofwarships.eu|~forum.worldofwarships.ru|~hansgrohe.ru|~hdvbplayer.tk|~herokuapp.com|~liveball.cc|~liveball.gg|~liveball.im|~liveball.my|~liveball.sx|~liveball.uno|~liveball.ws|~masterclub.store|~movielab.pro|~osu.ppy.sh|~panomama.ru|~pelcn.net|~philips.ru|~purina.ru|~softpir.com|~sportsvideoline3.pw|~tefal.ru|~tikkurila.ru|~vk-apps.com|~vulpecula.host
@@ -23,6 +23,10 @@ liveball.sx,liveball.*##[data-noclick]
 liveball.sx,liveball.*##body > div[class]:not([id]):not([style]):empty
 ||cdn.lbs.pw/rek/
 ||liveball.*/public/js/dm.min.js
+d28109 1
+a28115 2
+www.kinopoisk.ru##div[class^="app__"] > div:not([class*="media"]):not([class*="content"]):first-child > div:first-child:style(min-height: 0 !important)
+www.kinopoisk.ru##div[class^="app__"] > div:not([class*="media"]):not([class*="content"]):first-child:style(min-height: 0 !important)
 d28188 2
 a28189 2
 liveball.gg,liveball.im,liveball.my,liveball.space,liveball.sx,liveball.uno,liveball.ws##footer:style(max-width: 100% !important)
