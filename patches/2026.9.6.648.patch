@@ -1,8 +1,8 @@
-diff name:ruadlist lines:108 checksum:e6623c6f55
+diff name:ruadlist lines:137 checksum:fed0ac3e33
 d4 2
 a5 2
-! Last modified: Wed, 09 Sep 2026 14:27:50 +0000
-! Diff-Path: ../patches/2026.9.9.867.patch#ruadlist
+! Last modified: Wed, 09 Sep 2026 21:38:46 +0000
+! Diff-Path: ../patches/2026.9.9.1298.patch#ruadlist
 a7433 1
 /splash.php?*fHBvcE1hZ2lj$document
 a7441 1
@@ -10,6 +10,8 @@ a7441 1
 d7814 1
 a7814 1
 ||pw^$third-party,script,xmlhttprequest,domain=~adwiz.pp.ua|~dewalt.store|~forum.worldofwarships.eu|~forum.worldofwarships.ru|~hansgrohe.ru|~hdvbplayer.tk|~herokuapp.com|~liveball.cc|~liveball.gg|~liveball.im|~liveball.my|~liveball.sx|~liveball.uno|~liveball.ws|~masterclub.store|~movielab.pro|~osu.ppy.sh|~panomama.ru|~pelcn.net|~philips.ru|~purina.ru|~softpir.com|~sportsvideoline3.pw|~tefal.ru|~tikkurila.ru|~vk-apps.com|~vulpecula.host
+a9239 1
+.html$third-party,popup,domain=fastpic.org|~new.fastpic.org
 d11399 1
 a11692 1
 ||film.ru/themes/filmru_desk/img/okko/
@@ -36,9 +38,12 @@ d22191 1
 d22243 6
 a22264 1
 hh.ru##main > div[class*=" bp-applicant-wrapper-"]
+d22644 3
+a22646 1
+/^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]+\.(?:[^b].....|.[^u]....|..[^n]...)\.js(?:\?.*)?$/$script
 d22680 1
 a22680 1
-||pikabu.ru/ajax/*?j3T2r=$xmlhttprequest
+||pikabu.ru/ajax/*?j4T2r=$xmlhttprequest
 d22712 1
 a22712 1
 liveball.sx,liveball.*##body > style[id] {remove:true;}
@@ -50,7 +55,7 @@ a22923 1
 avito.ru##[data-chunks="item"] + div > [style] > span ~ div > div > div:first-child + div > div:last-child > div:last-child > div:first-child + div:last-child > div:only-child > div:first-child + div:last-child
 a23041 5
 ! LiveBall
-liveball.sx,liveball.*##[data-noclick]
+liveball.sx,liveball.*##[data-noclick]:not(#player_block)
 liveball.sx,liveball.*##body > div[class]:not([id]):not([style]):empty
 ||cdn.lbs.pw/rek/
 ||liveball.*/public/js/dm.min.js
@@ -65,6 +70,8 @@ ya.ru##html[class*="kdllliom_top"] main > div[class*="__"] ~ div[class*="__"] ~ 
 d24098 1
 a24098 1
 ya.ru##section[style*="kdllliom-items-count:"]
+a24174 1
+alice.yandex.ru,alice.yandex.*##.MessageBubble-Container_component_futurisAdOnly
 d26239 2
 a26240 1
 slavyansk.biz,tagline.ru,x-time.ru#@##adv
@@ -83,10 +90,24 @@ liveball.gg,liveball.im,liveball.my,liveball.space,liveball.sx,liveball.uno,live
 a28830 2
 ya.ru##html[class*="-content_yes"] div[class*="_disclaimer_no"]
 ya.ru##html[class*="-content_yes"] div[class*="_disclaimer_no"] + div[class*="_border"]
+d28870 1
+a28870 1
+dzen.ru##div[style*="12.36263736"]
+d28904 2
+a28905 2
+dzen.ru,sportsdzen.ru##[aria-label*="а н"][aria-label$="овостей"] > div[class] > div > div[id] ~ div[id]
+dzen.ru,sportsdzen.ru##[aria-label*="а н"][aria-label$="овостей"] > div[class] > div > div[id]:first-child + div[class^="news"]:not([class*="MainPageTitle"]):not([class*="ubric"]):not(:last-child):not([aria-label])
+a28923 1
+dzen.ru##div[style*="12.36263736"]
 a29243 1
 tapochek.net##+js(abort-on-property-read, ABNS)
 a29271 1
 ya.ru##+js(abort-on-property-read, __FEED_ES_BRIDGE_BAKED_STATE__)
+a29549 1
+link.softoroom.org##+js(remove-node-text, title, Adblock)
+a29792 2
+link.softoroom.org##div[id] > a[title]:hover:style(color: #1a73e8 !important; text-decoration: underline !important)
+link.softoroom.org##div[id] > a[title]:style(font-size: 20px !important)
 d29804 1
 a29804 1
 liveball.*##+js(prevent-addEventListener, DOMContentLoaded, start)
@@ -94,11 +115,19 @@ d29824 1
 a29824 1
 ixbt.com,ixbt.pro##style[id^="branding-"]:remove()
 d29888 1
-a29888 1
+a29888 3
 fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, Event.prototype.preventDefault, /blob|injectedScript|inlineScript/)
+fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, Event.prototype.stopImmediatePropagation, /blob|injectedScript|inlineScript/)
+fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, Event.prototype.stopPropagation, /blob|injectedScript|inlineScript/)
+a29889 1
+fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, HTMLAnchorElement.prototype.dispatchEvent, /blob|injectedScript|inlineScript/)
 d29894 1
 a29894 1
 fastpic.org,~new.fastpic.org##+js(prevent-navigation, /^(?!fastpic\.org)/)
+a29901 1
+fastpic.org,~new.fastpic.org##a[href*="/big/"]:remove-attr(target)
+a29902 1
+fastpic.org,~new.fastpic.org##a[href*="/fullview/"]:remove-attr(target)
 a30136 2
 ya.ru##div[class^="main-home-"][class$="_hidden_no"]
 ya.ru##li > a.home-link2

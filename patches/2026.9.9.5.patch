@@ -1,9 +1,45 @@
-diff name:ruadlist lines:8 checksum:e6623c6f55
+diff name:ruadlist lines:44 checksum:fed0ac3e33
 d4 2
 a5 2
-! Last modified: Wed, 09 Sep 2026 14:27:50 +0000
-! Diff-Path: ../patches/2026.9.9.867.patch#ruadlist
+! Last modified: Wed, 09 Sep 2026 21:38:46 +0000
+! Diff-Path: ../patches/2026.9.9.1298.patch#ruadlist
+a9241 1
+.html$third-party,popup,domain=fastpic.org|~new.fastpic.org
+d22634 3
+a22636 1
+/^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]+\.(?:[^b].....|.[^u]....|..[^n]...)\.js(?:\?.*)?$/$script
+d22670 1
+a22670 1
+||pikabu.ru/ajax/*?j4T2r=$xmlhttprequest
+d23033 1
+a23033 1
+liveball.sx,liveball.*##[data-noclick]:not(#player_block)
+a24171 1
+alice.yandex.ru,alice.yandex.*##.MessageBubble-Container_component_futurisAdOnly
 d28105 1
 a28111 2
 www.kinopoisk.ru##div[class^="app__"] > div:not([class*="media"]):not([class*="content"]):first-child > div:first-child:style(min-height: 0 !important)
 www.kinopoisk.ru##div[class^="app__"] > div:not([class*="media"]):not([class*="content"]):first-child:style(min-height: 0 !important)
+d28864 1
+a28864 1
+dzen.ru##div[style*="12.36263736"]
+d28898 2
+a28899 2
+dzen.ru,sportsdzen.ru##[aria-label*="а н"][aria-label$="овостей"] > div[class] > div > div[id] ~ div[id]
+dzen.ru,sportsdzen.ru##[aria-label*="а н"][aria-label$="овостей"] > div[class] > div > div[id]:first-child + div[class^="news"]:not([class*="MainPageTitle"]):not([class*="ubric"]):not(:last-child):not([aria-label])
+a28917 1
+dzen.ru##div[style*="12.36263736"]
+a29545 1
+link.softoroom.org##+js(remove-node-text, title, Adblock)
+a29788 2
+link.softoroom.org##div[id] > a[title]:hover:style(color: #1a73e8 !important; text-decoration: underline !important)
+link.softoroom.org##div[id] > a[title]:style(font-size: 20px !important)
+a29884 2
+fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, Event.prototype.stopImmediatePropagation, /blob|injectedScript|inlineScript/)
+fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, Event.prototype.stopPropagation, /blob|injectedScript|inlineScript/)
+a29885 1
+fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, HTMLAnchorElement.prototype.dispatchEvent, /blob|injectedScript|inlineScript/)
+a29897 1
+fastpic.org,~new.fastpic.org##a[href*="/big/"]:remove-attr(target)
+a29898 1
+fastpic.org,~new.fastpic.org##a[href*="/fullview/"]:remove-attr(target)

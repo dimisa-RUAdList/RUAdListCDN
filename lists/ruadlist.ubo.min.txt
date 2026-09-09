@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 09 Sep 2026 14:27:50 +0000
-! Diff-Path: ../patches/2026.9.9.867.patch#ruadlist
+! Last modified: Wed, 09 Sep 2026 21:38:46 +0000
+! Diff-Path: ../patches/2026.9.9.1298.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -9239,6 +9239,7 @@ me##td[background^="//cdn.livetv"] tr > td[valign="top"] + td[align="right"]
 ! *** ./advblock/popup.txt ***
 $popup,domain=176.114.0.126|176.114.0.132|37.220.36.15|assiatv.com|cdnpotok.com|cdntvpotok.com|freescreens.ru|imgbase.ru|imgcach.ru|imgclick.ru|kolikbolik.top|oneliketv.com|payforpic.ru|picclick.ru|picclock.ru|picforall.ru|protonvideo.to|telecdn.net|tv-assia.org
 &utm_campaign=$popup,domain=itc.ua|sc2tv.ru|www.film.ru
+.html$third-party,popup,domain=fastpic.org|~new.fastpic.org
 /*utm_$popup,domain=stratege.ru
 /go.php$popup,domain=piratca.net
 /redirect/cpa/*$popup,domain=rt02.ru
@@ -22631,9 +22632,7 @@ ictv.ua,vikna.tv##div[id^="div-gpt-ad-"]
 ! запросы
 ! ловушка для обфускации дзена: главная, статьи, новости, погода
 /^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]+[^e]\.js(?:\?.*)?$/$script
-/^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]+\.[^/?.]{1,3}\.js(?:\?.*)?$/$script
-/^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]+\.[^/?]{1,5}\.js(?:\?.*)?$/$script
-/^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]+\.e\.js(?:\?.*)?$/$script
+/^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]+\.(?:[^b].....|.[^u]....|..[^n]...)\.js(?:\?.*)?$/$script
 ||dzen.ru/a/$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/articles$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/news$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
@@ -22667,7 +22666,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=levik.blog|livejournal.c
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
 ||ng72.ru^$csp=script-src 'self' 'unsafe-eval' https:
-||pikabu.ru/ajax/*?j3T2r=$xmlhttprequest
+||pikabu.ru/ajax/*?j4T2r=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -23030,7 +23029,7 @@ kp.ru#?#body.wp-theme-sports .show-for-large:-abp-has(> .left-sidebar)
 kp.ru##div[class^="ad-slot"]
 kp.ru##div[style*="height:"][style*="250px"][style*="important"]
 ! LiveBall
-liveball.sx,liveball.*##[data-noclick]
+liveball.sx,liveball.*##[data-noclick]:not(#player_block)
 liveball.sx,liveball.*##body > div[class]:not([id]):not([style]):empty
 ||cdn.lbs.pw/rek/
 ||liveball.*/public/js/dm.min.js
@@ -24169,6 +24168,7 @@ yandex.ru,yandex.*#?#[class^="feed__row--content-feed-"]:-abp-has(> div[class^="
 ||yastatic.net/*/rsya-tag-users/
 ||yastatic.net/daas/
 ! Прочее
+alice.yandex.ru,alice.yandex.*##.MessageBubble-Container_component_futurisAdOnly
 disk.yandex.ru,disk.yandex.*##.awaps__banner
 disk.yandex.ru,disk.yandex.*##.software-header-promo
 disk.yandex.ru,disk.yandex.*##.top-direct-line
@@ -28862,7 +28862,7 @@ dzen.ru##div[class*="dzen-desktop--top-sidebar-desktop-ad__root"]
 dzen.ru##div[class^="dzen-desktop--content-app__content-"] > div > div:first-child > div:first-child + div:style(opacity: 0 !important; pointer-events: none !important)
 dzen.ru##div[class^="dzen-desktop--modal__rootElement-"][style^="z-index: 1000"]
 dzen.ru##div[id*="splashscreen"]
-dzen.ru##div[style*="12.362637362"]
+dzen.ru##div[style*="12.36263736"]
 dzen.ru##div[style*="important"] div[class*="__main"]
 ! исправление ошибок и косяков оригинальной вёрстки
 dzen.ru###SECOND_CHUNK_APP_CONTAINER_MicroRoot div[class^="dzen-layout--desktop-page-layout__left"]:style(height: calc(91vh - var(--desktopPageLayoutHeaderHeight)) !important)
@@ -28896,8 +28896,8 @@ dzen.ru##.news-rubric-desktop__news > section > div > div[id]
 dzen.ru##.news-secondary-layout-column__secondary div[id]
 dzen.ru##.news-sticky__inner > div > div[id]
 dzen.ru##.news-story-page div[id] > div:not([id]) > div[id]
-dzen.ru,sportsdzen.ru##[aria-label*="ца"][aria-label*="овост"] > div[class] > div > div[id] ~ div[id]
-dzen.ru,sportsdzen.ru##[aria-label*="ца"][aria-label*="овост"] > div[class] > div > div[id]:first-child + div[class^="news"]:not([class*="MainPageTitle"]):not([class*="ubric"]):not(:last-child):not([aria-label])
+dzen.ru,sportsdzen.ru##[aria-label*="а н"][aria-label$="овостей"] > div[class] > div > div[id] ~ div[id]
+dzen.ru,sportsdzen.ru##[aria-label*="а н"][aria-label$="овостей"] > div[class] > div > div[id]:first-child + div[class^="news"]:not([class*="MainPageTitle"]):not([class*="ubric"]):not(:last-child):not([aria-label])
 dzen.ru##[aria-label] div[id][class*="-desktop__ad-"]
 dzen.ru##div[class*="AdvertTsar"]
 dzen.ru##div[class*="BrandingAdvertLayoutColumn-"]
@@ -28916,6 +28916,7 @@ dzen.ru##div[id] > div[class*="-desktop-"] > div[class*="__image-"]:empty
 dzen.ru##div[id] > div[class*="-desktop-"] > div[class*="__image-"]:empty + div[class*="__content-"]
 dzen.ru##div[id^="ad-"][class*=" news-"]
 dzen.ru,sportsdzen.ru##div[style*="--branding-column-sticky-top-offset"]
+dzen.ru##div[style*="12.36263736"]
 ! исправление ошибок и косяков оригинальной вёрстки
 dzen.ru##.news-page-layout__content:style(width: var(--news-content-size) !important; margin-left: auto !important; margin-right: auto !important)
 dzen.ru,sportsdzen.ru##body:style(scroll-snap-type: none !important)
@@ -29544,6 +29545,7 @@ eg.ru,gorodche.ru,gorodvo.ru,ng72.ru##+js(remove-node-text, script, showBanner)
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, style, epom-brend)
 uwupad.me##+js(remove-node-text, style, lb-banner-height)
 www.ixbt.com##+js(remove-node-text, style, rose.ixbt.com/banner/)
+link.softoroom.org##+js(remove-node-text, title, Adblock)
 playvillage.ru##+js(set-attr, ._1z_ ._21_, style, '')
 dtf.ru,vc.ru##+js(set-attr, .comment-media .andropov-video video, loop, true)
 rbc.ru##+js(set-attr, .content-custom [href*="?from="]:not([href*="utm"]), target, true)
@@ -29787,6 +29789,8 @@ dzen.ru##div:matches-path(/news/search?query=) [aria-label="Страница с 
 dzen.ru##div:not([class^="dzen-desktop--trends-"]):matches-css(height: 212px):matches-css(width: 365px):style(background: inherit  !important)
 dzen.ru##div[class^="news-"]:matches-attr(/./=/-stub/)
 ozon.ru##div[data-widget="banner"]:matches-path(/my/reviews/promo):style(display: block !important)
+link.softoroom.org##div[id] > a[title]:hover:style(color: #1a73e8 !important; text-decoration: underline !important)
+link.softoroom.org##div[id] > a[title]:style(font-size: 20px !important)
 pronpic.org##div[style="color:red;font-size:25px;"], .adblock_loock
 fanserial.*,fanserialstv.net,hdrezka.*,rezka.*##+js(set-constant, Object.prototype.preroll, undefined)
 fap-guru.*,seks-studentki.*,sex-studentki.*##+js(addEventListener-defuser, DOMContentLoaded, click_time)
@@ -29883,7 +29887,10 @@ ya.ru,yandex.*##.simple-popup__overlay:remove()
 *$third-party,popunder,domain=fastpic.org
 fastpic.org##+js(abort-on-property-read, Element.prototype.attachShadow)
 fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, Event.prototype.preventDefault, /blob|injectedScript|inlineScript/)
+fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, Event.prototype.stopImmediatePropagation, /blob|injectedScript|inlineScript/)
+fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, Event.prototype.stopPropagation, /blob|injectedScript|inlineScript/)
 fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, EventTarget, inlineScript)
+fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, HTMLAnchorElement.prototype.dispatchEvent, /blob|injectedScript|inlineScript/)
 fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, document.onclick, inlineScript)
 fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, onclick, inlineScript)
 fastpic.org##+js(href-sanitizer, a[href="http://static.fastpic.ru/fpuploader/FPUploader.exe"], +https)
@@ -29896,7 +29903,9 @@ fastpic.org,~new.fastpic.org##+js(rmnt, script, /__BIM__|box-shadow|initCustomEv
 fastpic.org,~new.fastpic.org##+js(set-constant, HTMLHtmlElement.prototype.onclick, noopFunc)
 fastpic.org,~new.fastpic.org##+js(set-constant, document.documentElement.onclick, noopFunc)
 fastpic.org,~new.fastpic.org##[srcdoc]:remove()
+fastpic.org,~new.fastpic.org##a[href*="/big/"]:remove-attr(target)
 fastpic.org,~new.fastpic.org##a[href*="/fullview/"] > img[src*="/preview/"]:style(clip-path: inset(0 0 38px 0) !important)
+fastpic.org,~new.fastpic.org##a[href*="/fullview/"]:remove-attr(target)
 fastpic.org,~new.fastpic.org##a[href="https://static.fastpic.ru/FastPicUploader.apk"]:remove-attr(target)
 fastpic.org,~new.fastpic.org##body > template:remove()
 ! отключенные на время теста правила

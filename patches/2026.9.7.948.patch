@@ -1,11 +1,13 @@
-diff name:ruadlist lines:57 checksum:e6623c6f55
+diff name:ruadlist lines:90 checksum:fed0ac3e33
 d4 2
 a5 2
-! Last modified: Wed, 09 Sep 2026 14:27:50 +0000
-! Diff-Path: ../patches/2026.9.9.867.patch#ruadlist
+! Last modified: Wed, 09 Sep 2026 21:38:46 +0000
+! Diff-Path: ../patches/2026.9.9.1298.patch#ruadlist
 d7816 1
 a7816 1
 ||pw^$third-party,script,xmlhttprequest,domain=~adwiz.pp.ua|~dewalt.store|~forum.worldofwarships.eu|~forum.worldofwarships.ru|~hansgrohe.ru|~hdvbplayer.tk|~herokuapp.com|~liveball.cc|~liveball.gg|~liveball.im|~liveball.my|~liveball.sx|~liveball.uno|~liveball.ws|~masterclub.store|~movielab.pro|~osu.ppy.sh|~panomama.ru|~pelcn.net|~philips.ru|~purina.ru|~softpir.com|~sportsvideoline3.pw|~tefal.ru|~tikkurila.ru|~vk-apps.com|~vulpecula.host
+a9241 1
+.html$third-party,popup,domain=fastpic.org|~new.fastpic.org
 d11401 1
 a11694 1
 ||film.ru/themes/filmru_desk/img/okko/
@@ -21,12 +23,18 @@ d19715 1
 d19919 1
 d22190 1
 d22242 6
+d22644 3
+a22646 1
+/^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]+\.(?:[^b].....|.[^u]....|..[^n]...)\.js(?:\?.*)?$/$script
+d22680 1
+a22680 1
+||pikabu.ru/ajax/*?j4T2r=$xmlhttprequest
 d22712 1
 a22712 1
 liveball.sx,liveball.*##body > style[id] {remove:true;}
 a23041 5
 ! LiveBall
-liveball.sx,liveball.*##[data-noclick]
+liveball.sx,liveball.*##[data-noclick]:not(#player_block)
 liveball.sx,liveball.*##body > div[class]:not([id]):not([style]):empty
 ||cdn.lbs.pw/rek/
 ||liveball.*/public/js/dm.min.js
@@ -37,6 +45,8 @@ ya.ru##html[class*="kdllliom_top"] main > div[class*="__"] ~ div[class*="__"] ~ 
 d24100 1
 a24100 1
 ya.ru##section[style*="kdllliom-items-count:"]
+a24176 1
+alice.yandex.ru,alice.yandex.*##.MessageBubble-Container_component_futurisAdOnly
 d28110 1
 a28116 2
 www.kinopoisk.ru##div[class^="app__"] > div:not([class*="media"]):not([class*="content"]):first-child > div:first-child:style(min-height: 0 !important)
@@ -48,11 +58,34 @@ liveball.gg,liveball.im,liveball.my,liveball.space,liveball.sx,liveball.uno,live
 a28827 2
 ya.ru##html[class*="-content_yes"] div[class*="_disclaimer_no"]
 ya.ru##html[class*="-content_yes"] div[class*="_disclaimer_no"] + div[class*="_border"]
+d28867 1
+a28867 1
+dzen.ru##div[style*="12.36263736"]
+d28901 2
+a28902 2
+dzen.ru,sportsdzen.ru##[aria-label*="а н"][aria-label$="овостей"] > div[class] > div > div[id] ~ div[id]
+dzen.ru,sportsdzen.ru##[aria-label*="а н"][aria-label$="овостей"] > div[class] > div > div[id]:first-child + div[class^="news"]:not([class*="MainPageTitle"]):not([class*="ubric"]):not(:last-child):not([aria-label])
+a28920 1
+dzen.ru##div[style*="12.36263736"]
 a29240 1
 tapochek.net##+js(abort-on-property-read, ABNS)
+a29547 1
+link.softoroom.org##+js(remove-node-text, title, Adblock)
+a29790 2
+link.softoroom.org##div[id] > a[title]:hover:style(color: #1a73e8 !important; text-decoration: underline !important)
+link.softoroom.org##div[id] > a[title]:style(font-size: 20px !important)
 d29802 1
 a29802 1
 liveball.*##+js(prevent-addEventListener, DOMContentLoaded, start)
 d29822 1
 a29822 1
 ixbt.com,ixbt.pro##style[id^="branding-"]:remove()
+a29886 2
+fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, Event.prototype.stopImmediatePropagation, /blob|injectedScript|inlineScript/)
+fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, Event.prototype.stopPropagation, /blob|injectedScript|inlineScript/)
+a29887 1
+fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, HTMLAnchorElement.prototype.dispatchEvent, /blob|injectedScript|inlineScript/)
+a29899 1
+fastpic.org,~new.fastpic.org##a[href*="/big/"]:remove-attr(target)
+a29900 1
+fastpic.org,~new.fastpic.org##a[href*="/fullview/"]:remove-attr(target)
