@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 09 Sep 2026 21:38:46 +0000
-! Diff-Path: ../patches/2026.9.9.1298.patch#ruadlist
+! Last modified: Thu, 10 Sep 2026 04:31:49 +0000
+! Diff-Path: ../patches/2026.9.10.271.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -23032,6 +23032,7 @@ kp.ru##div[style*="height:"][style*="250px"][style*="important"]
 liveball.sx,liveball.*##[data-noclick]:not(#player_block)
 liveball.sx,liveball.*##body > div[class]:not([id]):not([style]):empty
 ||cdn.lbs.pw/rek/
+||liveball.*/public/*clickunder.js
 ||liveball.*/public/js/dm.min.js
 ! мобильная версия livejournal.com
 levik.blog,livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##html.html-mobile div[class$="__inner--custom-width"]
