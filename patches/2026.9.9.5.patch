@@ -1,8 +1,8 @@
-diff name:ruadlist lines:57 checksum:be1715932e
+diff name:ruadlist lines:62 checksum:ee06be207a
 d4 2
 a5 2
-! Last modified: Fri, 11 Sep 2026 04:28:36 +0000
-! Diff-Path: ../patches/2026.9.11.268.patch#ruadlist
+! Last modified: Fri, 11 Sep 2026 09:33:40 +0000
+! Diff-Path: ../patches/2026.9.11.573.patch#ruadlist
 a9241 1
 .html$third-party,popup,domain=fastpic.org|~new.fastpic.org
 d10245 1
@@ -24,15 +24,20 @@ a23033 1
 liveball.sx,liveball.*##[data-noclick]:not(#player_block)
 a23035 1
 ||liveball.*/public/*clickunder.js
+a23093 1
+dzen.ru,sportsdzen.ru##.news-ad-swap-root
 a24171 1
 alice.yandex.ru,alice.yandex.*##.MessageBubble-Container_component_futurisAdOnly
 d28105 1
 a28111 2
 www.kinopoisk.ru##div[class^="app__"] > div:not([class*="media"]):not([class*="content"]):first-child > div:first-child:style(min-height: 0 !important)
 www.kinopoisk.ru##div[class^="app__"] > div:not([class*="media"]):not([class*="content"]):first-child:style(min-height: 0 !important)
+d28854 1
 d28864 1
 a28864 1
 dzen.ru##div[style*="12.36263736"]
+a28865 1
+dzen.ru##div[style^="--top-padding:"] div[style^="--imageHeight:"]
 d28898 2
 a28899 2
 dzen.ru,sportsdzen.ru##[aria-label*="а н"][aria-label$="овостей"] > div[class] > div > div[id] ~ div[id]

@@ -1,8 +1,8 @@
-diff name:ruadlist lines:89 checksum:be1715932e
+diff name:ruadlist lines:94 checksum:ee06be207a
 d4 2
 a5 2
-! Last modified: Fri, 11 Sep 2026 04:28:36 +0000
-! Diff-Path: ../patches/2026.9.11.268.patch#ruadlist
+! Last modified: Fri, 11 Sep 2026 09:33:40 +0000
+! Diff-Path: ../patches/2026.9.11.573.patch#ruadlist
 d7816 1
 a7816 1
 ||pw^$third-party,script,xmlhttprequest,domain=~adwiz.pp.ua|~dewalt.store|~forum.worldofwarships.eu|~forum.worldofwarships.ru|~hansgrohe.ru|~hdvbplayer.tk|~herokuapp.com|~liveball.cc|~liveball.gg|~liveball.im|~liveball.my|~liveball.sx|~liveball.uno|~liveball.ws|~masterclub.store|~movielab.pro|~osu.ppy.sh|~panomama.ru|~pelcn.net|~philips.ru|~purina.ru|~softpir.com|~sportsvideoline3.pw|~tefal.ru|~tikkurila.ru|~vk-apps.com|~vulpecula.host
@@ -47,6 +47,8 @@ liveball.sx,liveball.*##body > div[class]:not([id]):not([style]):empty
 ||cdn.lbs.pw/rek/
 ||liveball.*/public/*clickunder.js
 ||liveball.*/public/js/dm.min.js
+a23098 1
+dzen.ru,sportsdzen.ru##.news-ad-swap-root
 a24176 1
 alice.yandex.ru,alice.yandex.*##.MessageBubble-Container_component_futurisAdOnly
 d28110 1
@@ -57,9 +59,12 @@ d28189 2
 a28190 2
 liveball.gg,liveball.im,liveball.my,liveball.space,liveball.sx,liveball.uno,liveball.ws##footer:style(max-width: 100% !important)
 liveball.gg,liveball.im,liveball.my,liveball.space,liveball.sx,liveball.uno,liveball.ws##main.main_div:style(margin-top: 0 !important; max-width: 100% !important; border-radius: inherit !important; background-size: unset !important)
+d28859 1
 d28869 1
 a28869 1
 dzen.ru##div[style*="12.36263736"]
+a28870 1
+dzen.ru##div[style^="--top-padding:"] div[style^="--imageHeight:"]
 d28903 2
 a28904 2
 dzen.ru,sportsdzen.ru##[aria-label*="а н"][aria-label$="овостей"] > div[class] > div > div[id] ~ div[id]
