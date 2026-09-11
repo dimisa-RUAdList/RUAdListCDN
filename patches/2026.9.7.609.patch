@@ -1,8 +1,8 @@
-diff name:ruadlist lines:123 checksum:46b4c9f65d
+diff name:ruadlist lines:134 checksum:10cd08df56
 d4 2
 a5 2
-! Last modified: Fri, 11 Sep 2026 14:20:08 +0000
-! Diff-Path: ../patches/2026.9.11.860.patch#ruadlist
+! Last modified: Fri, 11 Sep 2026 21:40:38 +0000
+! Diff-Path: ../patches/2026.9.11.1300.patch#ruadlist
 a7433 1
 /splash.php?*fHBvcE1hZ2lj$document
 a7441 1
@@ -31,8 +31,9 @@ kinonews.ru##.rightzagolup:first-child
 d18394 1
 a19043 1
 vk.com,vk.ru#?#.vkuiGroup__modeCard > [role="feed"] > article:-abp-has(> [data-post-id] a[rel]:-abp-contains(vk.cc/))
-a19613 1
+a19613 2
 link.softoroom.org##[href^="https://softoroom.org/link/jump.php"]
+link.softoroom.org##[href^="https://softoroom.org/link/jump.php"] ~ div[id]
 d19715 1
 d19919 1
 d22190 1
@@ -99,8 +100,18 @@ a28924 1
 dzen.ru##div[style*="12.36263736"]
 a29244 1
 tapochek.net##+js(abort-on-property-read, ABNS)
+d29264 1
+a29264 1
+razlozhi.ru##+js(abort-on-property-read, Object.prototype.yaContextCb)
+d29364 1
+a29373 1
+drive2.ru,shedevrum.ai##+js(addEventListener-defuser, beforeunload, /477|setCookies|srcElement/)
+a29442 1
+drive2.ru##+js(json-prune, offers)
 a29551 1
 link.softoroom.org##+js(remove-node-text, title, Adblock)
+a29684 1
+shedevrum.ai##.fixed#root-toasts[style^="top:"]
 a29794 2
 link.softoroom.org##div[id] > a[title]:hover:style(color: #1a73e8 !important; text-decoration: underline !important)
 link.softoroom.org##div[id] > a[title]:style(font-size: 20px !important)

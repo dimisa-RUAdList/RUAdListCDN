@@ -1,8 +1,8 @@
-diff name:ruadlist lines:62 checksum:46b4c9f65d
+diff name:ruadlist lines:74 checksum:10cd08df56
 d4 2
 a5 2
-! Last modified: Fri, 11 Sep 2026 14:20:08 +0000
-! Diff-Path: ../patches/2026.9.11.860.patch#ruadlist
+! Last modified: Fri, 11 Sep 2026 21:40:38 +0000
+! Diff-Path: ../patches/2026.9.11.1300.patch#ruadlist
 a9241 1
 .html$third-party,popup,domain=fastpic.org|~new.fastpic.org
 d10245 1
@@ -13,6 +13,8 @@ d15208 1
 d15216 1
 d15219 1
 d17419 1
+a19612 1
+link.softoroom.org##[href^="https://softoroom.org/link/jump.php"] ~ div[id]
 d22634 3
 a22636 1
 /^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]+\.(?:[^b].....|.[^u]....|..[^n]...)\.js(?:\?.*)?$/$script
@@ -47,8 +49,18 @@ a28910 1
 dzen.ru,sportsdzen.ru##div[class^="news-"] [style^="margin-top: 0px; height: calc("][style$=" - 0px);"]
 a28917 1
 dzen.ru##div[style*="12.36263736"]
+d29258 1
+a29258 1
+razlozhi.ru##+js(abort-on-property-read, Object.prototype.yaContextCb)
+d29358 1
+a29367 1
+drive2.ru,shedevrum.ai##+js(addEventListener-defuser, beforeunload, /477|setCookies|srcElement/)
+a29436 1
+drive2.ru##+js(json-prune, offers)
 a29545 1
 link.softoroom.org##+js(remove-node-text, title, Adblock)
+a29678 1
+shedevrum.ai##.fixed#root-toasts[style^="top:"]
 a29788 2
 link.softoroom.org##div[id] > a[title]:hover:style(color: #1a73e8 !important; text-decoration: underline !important)
 link.softoroom.org##div[id] > a[title]:style(font-size: 20px !important)

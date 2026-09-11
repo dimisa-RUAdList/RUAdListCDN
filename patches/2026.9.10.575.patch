@@ -1,8 +1,10 @@
-diff name:ruadlist lines:12 checksum:46b4c9f65d
+diff name:ruadlist lines:24 checksum:10cd08df56
 d4 2
 a5 2
-! Last modified: Fri, 11 Sep 2026 14:20:08 +0000
-! Diff-Path: ../patches/2026.9.11.860.patch#ruadlist
+! Last modified: Fri, 11 Sep 2026 21:40:38 +0000
+! Diff-Path: ../patches/2026.9.11.1300.patch#ruadlist
+a19610 1
+link.softoroom.org##[href^="https://softoroom.org/link/jump.php"] ~ div[id]
 a23090 1
 dzen.ru,sportsdzen.ru##.news-ad-swap-root
 d28853 1
@@ -11,3 +13,13 @@ dzen.ru##div[style^="--top-padding:"] div[style^="--imageHeight:"]
 d28909 1
 a28909 1
 dzen.ru,sportsdzen.ru##div[class^="news-"] [style^="margin-top: 0px; height: calc("][style$=" - 0px);"]
+d29258 1
+a29258 1
+razlozhi.ru##+js(abort-on-property-read, Object.prototype.yaContextCb)
+d29358 1
+a29367 1
+drive2.ru,shedevrum.ai##+js(addEventListener-defuser, beforeunload, /477|setCookies|srcElement/)
+a29436 1
+drive2.ru##+js(json-prune, offers)
+a29679 1
+shedevrum.ai##.fixed#root-toasts[style^="top:"]
