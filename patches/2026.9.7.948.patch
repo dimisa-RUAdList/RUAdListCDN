@@ -1,8 +1,8 @@
-diff name:ruadlist lines:118 checksum:50272fa4c3
+diff name:ruadlist lines:136 checksum:cd070f6dcc
 d4 2
 a5 2
-! Last modified: Sat, 12 Sep 2026 04:28:47 +0000
-! Diff-Path: ../patches/2026.9.12.268.patch#ruadlist
+! Last modified: Sat, 12 Sep 2026 09:12:27 +0000
+! Diff-Path: ../patches/2026.9.12.552.patch#ruadlist
 d7816 1
 a7816 1
 ||pw^$third-party,script,xmlhttprequest,domain=~adwiz.pp.ua|~dewalt.store|~forum.worldofwarships.eu|~forum.worldofwarships.ru|~hansgrohe.ru|~hdvbplayer.tk|~herokuapp.com|~liveball.cc|~liveball.gg|~liveball.im|~liveball.my|~liveball.sx|~liveball.uno|~liveball.ws|~masterclub.store|~movielab.pro|~osu.ppy.sh|~panomama.ru|~pelcn.net|~philips.ru|~purina.ru|~softpir.com|~sportsvideoline3.pw|~tefal.ru|~tikkurila.ru|~vk-apps.com|~vulpecula.host
@@ -19,6 +19,9 @@ d12270 3
 d15211 1
 d15219 1
 d15222 1
+d15264 1
+a15264 1
+blitzfoxhub.com##.ad-free-button
 d17422 1
 d18206 1
 a18206 1
@@ -30,6 +33,9 @@ link.softoroom.org##[href^="https://softoroom.org/link/jump.php"]
 link.softoroom.org##[href^="https://softoroom.org/link/jump.php"] ~ div[id]
 d19715 1
 d19919 1
+d20941 1
+a20941 1
+blitzfoxhub.com,draug.ru,emdigital.ru,enthub.it,modsforwot.ru,pogodavtomske.ru#?#div:-abp-has(> [id^="yandex_rtb"])
 d22190 1
 d22242 6
 d22644 3
@@ -59,6 +65,13 @@ a24100 1
 ya.ru##section[style*="kdllliom-items-count:"]
 a24176 1
 alice.yandex.ru,alice.yandex.*##.MessageBubble-Container_component_futurisAdOnly
+d26114 1
+d26965 1
+a26965 1
+@@||an.yandex.ru/system/context.js|$domain=blitzfoxhub.com|onlinelpu.ru|ryfma.com
+d27023 1
+a27023 1
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js|$domain=595.ucoz.net|adult-images.ru|anypictures.ru|blitzfoxhub.com|blogging-techies.com|botrix.live|crast.net|di.fm|fcportables.com|freeopenvpn.org|ikigaitest.com|imgbum.ru|investing.com|izi-invest.ru|kvadratmetr.uz|mod-wot.ru|nv.ua|oligarx.uz|otzovik.com|ozlib.com|parnuxi.biz|pixcloud.ru|radio-archive.ru|radioromantika.ru|shadowcore.ru|tarkov-market.com|tehnar.net.ua|tehnobzor.ru|tehnografi.com|tests24.su|tubeload.co|xpicture.ru|yvid.ru
 d28110 1
 a28116 2
 www.kinopoisk.ru##div[class^="app__"] > div:not([class*="media"]):not([class*="content"]):first-child > div:first-child:style(min-height: 0 !important)
@@ -90,9 +103,14 @@ tapochek.net##+js(abort-on-property-read, ABNS)
 d29260 1
 a29260 1
 razlozhi.ru##+js(abort-on-property-read, Object.prototype.yaContextCb)
+d29352 1
 d29360 1
+a29364 1
+blitzfoxhub.com##+js(addEventListener-defuser, DOMContentLoaded, AnalyticMonitor)
 a29369 1
 drive2.ru,shedevrum.ai##+js(addEventListener-defuser, beforeunload, /477|setCookies|srcElement/)
+d29383 1
+d29398 1
 a29438 1
 drive2.ru##+js(json-prune, offers)
 a29547 1

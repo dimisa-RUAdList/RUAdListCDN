@@ -1,8 +1,8 @@
-diff name:ruadlist lines:70 checksum:50272fa4c3
+diff name:ruadlist lines:88 checksum:cd070f6dcc
 d4 2
 a5 2
-! Last modified: Sat, 12 Sep 2026 04:28:47 +0000
-! Diff-Path: ../patches/2026.9.12.268.patch#ruadlist
+! Last modified: Sat, 12 Sep 2026 09:12:27 +0000
+! Diff-Path: ../patches/2026.9.12.552.patch#ruadlist
 a9241 1
 .html$third-party,popup,domain=fastpic.org|~new.fastpic.org
 d10245 1
@@ -12,9 +12,15 @@ a10245 2
 d15208 1
 d15216 1
 d15219 1
+d15261 1
+a15261 1
+blitzfoxhub.com##.ad-free-button
 d17419 1
 a19612 1
 link.softoroom.org##[href^="https://softoroom.org/link/jump.php"] ~ div[id]
+d20938 1
+a20938 1
+blitzfoxhub.com,draug.ru,emdigital.ru,enthub.it,modsforwot.ru,pogodavtomske.ru#?#div:-abp-has(> [id^="yandex_rtb"])
 d22634 3
 a22636 1
 /^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]+\.(?:[^b].....|.[^u]....|..[^n]...)\.js(?:\?.*)?$/$script
@@ -30,6 +36,13 @@ a23093 1
 dzen.ru,sportsdzen.ru##.news-ad-swap-root
 a24171 1
 alice.yandex.ru,alice.yandex.*##.MessageBubble-Container_component_futurisAdOnly
+d26109 1
+d26960 1
+a26960 1
+@@||an.yandex.ru/system/context.js|$domain=blitzfoxhub.com|onlinelpu.ru|ryfma.com
+d27018 1
+a27018 1
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js|$domain=595.ucoz.net|adult-images.ru|anypictures.ru|blitzfoxhub.com|blogging-techies.com|botrix.live|crast.net|di.fm|fcportables.com|freeopenvpn.org|ikigaitest.com|imgbum.ru|investing.com|izi-invest.ru|kvadratmetr.uz|mod-wot.ru|nv.ua|oligarx.uz|otzovik.com|ozlib.com|parnuxi.biz|pixcloud.ru|radio-archive.ru|radioromantika.ru|shadowcore.ru|tarkov-market.com|tehnar.net.ua|tehnobzor.ru|tehnografi.com|tests24.su|tubeload.co|xpicture.ru|yvid.ru
 d28855 1
 d28865 1
 a28865 1
@@ -48,9 +61,14 @@ dzen.ru##div[style*="12.36263736"]
 d29259 1
 a29259 1
 razlozhi.ru##+js(abort-on-property-read, Object.prototype.yaContextCb)
+d29351 1
 d29359 1
+a29363 1
+blitzfoxhub.com##+js(addEventListener-defuser, DOMContentLoaded, AnalyticMonitor)
 a29368 1
 drive2.ru,shedevrum.ai##+js(addEventListener-defuser, beforeunload, /477|setCookies|srcElement/)
+d29382 1
+d29397 1
 a29437 1
 drive2.ru##+js(json-prune, offers)
 a29546 1

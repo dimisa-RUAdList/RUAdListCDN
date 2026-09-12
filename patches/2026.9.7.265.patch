@@ -1,8 +1,8 @@
-diff name:ruadlist lines:150 checksum:50272fa4c3
+diff name:ruadlist lines:168 checksum:cd070f6dcc
 d4 2
 a5 2
-! Last modified: Sat, 12 Sep 2026 04:28:47 +0000
-! Diff-Path: ../patches/2026.9.12.268.patch#ruadlist
+! Last modified: Sat, 12 Sep 2026 09:12:27 +0000
+! Diff-Path: ../patches/2026.9.12.552.patch#ruadlist
 a7433 1
 /splash.php?*fHBvcE1hZ2lj$document
 a7441 1
@@ -27,6 +27,9 @@ d14159 1
 d15210 1
 d15218 1
 d15221 1
+d15263 1
+a15263 1
+blitzfoxhub.com##.ad-free-button
 d17421 1
 d18205 1
 a18205 1
@@ -40,6 +43,9 @@ link.softoroom.org##[href^="https://softoroom.org/link/jump.php"] ~ div[id]
 d19715 1
 d19919 1
 d20761 1
+d20942 1
+a20942 1
+blitzfoxhub.com,draug.ru,emdigital.ru,enthub.it,modsforwot.ru,pogodavtomske.ru#?#div:-abp-has(> [id^="yandex_rtb"])
 d22191 1
 d22243 6
 a22264 1
@@ -74,10 +80,17 @@ a24100 1
 ya.ru##section[style*="kdllliom-items-count:"]
 a24176 1
 alice.yandex.ru,alice.yandex.*##.MessageBubble-Container_component_futurisAdOnly
+d26114 1
 d26241 1
 d26301 1
 d26317 1
 d26763 1
+d26969 1
+a26969 1
+@@||an.yandex.ru/system/context.js|$domain=blitzfoxhub.com|onlinelpu.ru|ryfma.com
+d27027 1
+a27027 1
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js|$domain=595.ucoz.net|adult-images.ru|anypictures.ru|blitzfoxhub.com|blogging-techies.com|botrix.live|crast.net|di.fm|fcportables.com|freeopenvpn.org|ikigaitest.com|imgbum.ru|investing.com|izi-invest.ru|kvadratmetr.uz|mod-wot.ru|nv.ua|oligarx.uz|otzovik.com|ozlib.com|parnuxi.biz|pixcloud.ru|radio-archive.ru|radioromantika.ru|shadowcore.ru|tarkov-market.com|tehnar.net.ua|tehnobzor.ru|tehnografi.com|tests24.su|tubeload.co|xpicture.ru|yvid.ru
 d28114 1
 a28120 2
 www.kinopoisk.ru##div[class^="app__"] > div:not([class*="media"]):not([class*="content"]):first-child > div:first-child:style(min-height: 0 !important)
@@ -111,9 +124,14 @@ a29264 1
 razlozhi.ru##+js(abort-on-property-read, Object.prototype.yaContextCb)
 a29272 1
 ya.ru##+js(abort-on-property-read, __FEED_ES_BRIDGE_BAKED_STATE__)
+d29355 1
 d29363 1
+a29367 1
+blitzfoxhub.com##+js(addEventListener-defuser, DOMContentLoaded, AnalyticMonitor)
 a29372 1
 drive2.ru,shedevrum.ai##+js(addEventListener-defuser, beforeunload, /477|setCookies|srcElement/)
+d29386 1
+d29401 1
 a29441 1
 drive2.ru##+js(json-prune, offers)
 a29550 1

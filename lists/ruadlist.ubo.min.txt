@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 12 Sep 2026 04:28:47 +0000
-! Diff-Path: ../patches/2026.9.12.268.patch#ruadlist
+! Last modified: Sat, 12 Sep 2026 09:12:27 +0000
+! Diff-Path: ../patches/2026.9.12.552.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -15257,7 +15257,7 @@ igromania.ru##.ad-brending
 delfi.ee,glavnoe.in.ua,popcake.news##.ad-container
 fishki.net##.ad-div
 kirovnet.ru##.ad-forum-block
-blackwot.ru##.ad-free-button
+blitzfoxhub.com##.ad-free-button
 1927.kiev.ua##.ad-modal
 usionline.com##.ad-wrapper-small
 akniga.org,newsvideo.su##.ad1
@@ -20934,7 +20934,7 @@ liveresult.ru#?#div:-abp-has(> [data-has-bookmaker-odds])
 gdzguru.com,reshebnik.com#?#div:-abp-has(> [href*="://gdz-ru.work/"])
 7themes.su,yakutsk.ru#?#div:-abp-has(> [id^="adfox_"])
 ura.news#?#div:-abp-has(> [id^="adv-"])
-blackwot.ru,draug.ru,emdigital.ru,enthub.it,modsforwot.ru,pogodavtomske.ru#?#div:-abp-has(> [id^="yandex_rtb"])
+blitzfoxhub.com,draug.ru,emdigital.ru,enthub.it,modsforwot.ru,pogodavtomske.ru#?#div:-abp-has(> [id^="yandex_rtb"])
 photofuneditor.com#?#div:-abp-has(> [src*="pagead2."])
 gdz.ninja,gdzotputina.club,gdzputina.net,reshebnik.com,spishi.fun,zoobrilka.net#?#div:-abp-has(> [src="/secret.png"])
 sport24.ru#?#div:-abp-has(> [style^="margin-bottom:"][style*="1rem"] > a > .bookmaker-rating)
@@ -26106,7 +26106,6 @@ zarulem.ws##td[style^="text-align:center;width:50%"]
 @@||audioskazki.net^$generichide
 @@||auth.wi-fi.ru^$generichide
 @@||ava-avto.ru^$generichide
-@@||blackwot.ru^$generichide
 @@||browserleaks.com^$generichide
 @@||cdnstreamfree.com^$generichide
 @@||cdnstreamlive.com^$generichide
@@ -26957,7 +26956,7 @@ gbsmp.ru#@#img[width="728"][height="90"]
 @@||an.yandex.ru/meta/$xmlhttprequest,domain=examenpdd.com
 @@||an.yandex.ru/resource/context_static_r_*.js|$domain=otzovik.com
 @@||an.yandex.ru/system/context.js$domain=awaps.yandex.net|ctc.ru|otzovik.com|www.rusprofile.ru
-@@||an.yandex.ru/system/context.js|$domain=onlinelpu.ru|ryfma.com
+@@||an.yandex.ru/system/context.js|$domain=blitzfoxhub.com|onlinelpu.ru|ryfma.com
 @@||ansedo.com/js/*.js|$script,domain=ansedo.com
 @@||ava-avto.ru^$image,domain=ava-avto.ru
 @@||awaps.yandex.net^$script,domain=delovoe.tv|lentv24.ru|piter.tv|smexo.tv
@@ -27015,7 +27014,7 @@ gbsmp.ru#@#img[width="728"][height="90"]
 @@||olegon.ru/ads/$script,domain=olegon.ru
 @@||opel-omega.ru^*?adType=$script,domain=opel-omega.ru
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=in-poland.com
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js|$domain=595.ucoz.net|adult-images.ru|anypictures.ru|blogging-techies.com|botrix.live|crast.net|di.fm|fcportables.com|freeopenvpn.org|ikigaitest.com|imgbum.ru|investing.com|izi-invest.ru|kvadratmetr.uz|mod-wot.ru|nv.ua|oligarx.uz|otzovik.com|ozlib.com|parnuxi.biz|pixcloud.ru|radio-archive.ru|radioromantika.ru|shadowcore.ru|tarkov-market.com|tehnar.net.ua|tehnobzor.ru|tehnografi.com|tests24.su|tubeload.co|xpicture.ru|yvid.ru
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js|$domain=595.ucoz.net|adult-images.ru|anypictures.ru|blitzfoxhub.com|blogging-techies.com|botrix.live|crast.net|di.fm|fcportables.com|freeopenvpn.org|ikigaitest.com|imgbum.ru|investing.com|izi-invest.ru|kvadratmetr.uz|mod-wot.ru|nv.ua|oligarx.uz|otzovik.com|ozlib.com|parnuxi.biz|pixcloud.ru|radio-archive.ru|radioromantika.ru|shadowcore.ru|tarkov-market.com|tehnar.net.ua|tehnobzor.ru|tehnografi.com|tests24.su|tubeload.co|xpicture.ru|yvid.ru
 @@||patents.su/assets/themes/patents/js/main/$script,domain=patents.su
 @@||peers.tv/cnplayer/imasdk/$domain=peers.tv
 @@||persey.if.ua/images/attention.jpg$image,domain=persey.if.ua
@@ -29349,7 +29348,6 @@ fssp.gov.ru,southpark.su,turkcinema.org##+js(abort-on-property-write, document.o
 fssp.gov.ru,southpark.su,turkcinema.org##+js(abort-on-property-write, document.ondragstart)
 fssp.gov.ru,southpark.su,turkcinema.org##+js(abort-on-property-write, document.onselectstart)
 phys-kids.com##+js(abort-on-property-write, fetch)
-kakprosto.ru##+js(abort-on-property-write, window.yaProxy)
 tvzvezda.ru##+js(abort-on-stack-trace, Object.prototype.autoplay, assets)
 ya.ru##+js(abort-on-stack-trace, Object.prototype.loadAdvertScriptMode, /yastatic\.net/)
 shadowcore.ru##+js(abort-on-stack-trace, document.createElement, checkAboba)
@@ -29361,6 +29359,7 @@ biqle.org,biqle.ru##+js(addEventListener-defuser, /click|mousedown/, popunder)
 lrepacks.net##+js(addEventListener-defuser, /click|mousedown/, setClickedUrl)
 ~id.rambler.ru,rambler.ru,~vp.rambler.ru##+js(addEventListener-defuser, DOMContentLoaded, .j-mini-player__video)
 sibnet.ru##+js(addEventListener-defuser, DOMContentLoaded, /EventTracker|utm_campaign/)
+blitzfoxhub.com##+js(addEventListener-defuser, DOMContentLoaded, AnalyticMonitor)
 buhplatforma.com.ua,dzplatforma.com.ua,medplatforma.com.ua,oblikbudget.com.ua,oplatforma.com.ua,pro-op.com.ua,prokadry.com.ua##+js(addEventListener-defuser, DOMContentLoaded, StrategyHandler)
 doramaland.plus##+js(addEventListener-defuser, DOMContentLoaded, _Modal)
 xv-ru.com##+js(addEventListener-defuser, DOMContentLoaded, exo_tracker)
@@ -29380,7 +29379,6 @@ aione.ru,carservic.ru,iptv.org.ua,newxboxone.ru,tva.org.ua,ufchgu.ru##+js(addEve
 megaprogz.ru,programhub.ru##+js(addEventListener-defuser, download, isMonetized)
 trychatgpt.ru##+js(addEventListener-defuser, error, '', elements, [data-status="loading"])
 romakatya.ru##+js(addEventListener-defuser, load, AdBlock)
-blackwot.ru##+js(addEventListener-defuser, load, detect-modal)
 bonus-tv.ru##+js(addEventListener-defuser, loadstart, isImmediatePropagationStopped)
 rutube.ru##+js(addEventListener-defuser, message, __messagesAtom)
 www.vesti.ru##+js(addEventListener-defuser, scroll, players)
@@ -29395,7 +29393,6 @@ comedy-radio.ru,kufar.by,radioromantika.ru,relax-fm.ru,rg.ru,sm.news,veseloeradi
 drive2.ru##+js(cookie-remover, hurricane)
 24smi.org##+js(cookie-remover, isab)
 shedevrum.ai##+js(cookie-remover, shedevrum-aab)
-kakprosto.ru##+js(cookie-remover, yadb)
 portalvirtualreality.ru##+js(href-sanitizer, a[href*="&link=https://"], ?link)
 e.mail.ru,mail.rambler.ru,mail.yandex.ru,octavius.mail.ru##+js(href-sanitizer, a[href*=".mck"][href*=".ru/c/"], ?u)
 softoroom.org##+js(href-sanitizer, a[href*=".php?go="], ?go)
