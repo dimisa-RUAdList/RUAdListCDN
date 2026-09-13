@@ -1,14 +1,20 @@
-diff name:ruadlist lines:30 checksum:832ae0dc1e
+diff name:ruadlist lines:36 checksum:558f8fe430
 d4 2
 a5 2
-! Last modified: Sat, 12 Sep 2026 19:12:32 +0000
-! Diff-Path: ../patches/2026.9.12.1152.patch#ruadlist
+! Last modified: Sun, 13 Sep 2026 00:53:04 +0000
+! Diff-Path: ../patches/2026.9.13.53.patch#ruadlist
 d15260 1
 a15260 1
 blitzfoxhub.com##.ad-free-button
 d19184 1
 a19184 1
 livep2p.top,p2plive7.top##.wrap-overlay
+a19273 4
+2gis.ru,2gis.*##[type="button"] > div[style^="width: 136px; height: 100%;"]
+2gis.ru,2gis.*##[type="button"] > div[style^="width: 136px; height: 100%;"] ~ div[style*="pointer-events: auto"]
+2gis.ru,2gis.*##button > div[style^="width: 136px; height: 100%;"]
+2gis.ru,2gis.*##button > div[style^="width: 136px; height: 100%;"] ~ div[style*="pointer-events: auto"]
+d20862 2
 d20937 1
 a20937 1
 blitzfoxhub.com,draug.ru,emdigital.ru,enthub.it,modsforwot.ru,pogodavtomske.ru#?#div:-abp-has(> [id^="yandex_rtb"])
