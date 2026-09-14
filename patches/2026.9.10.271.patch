@@ -1,8 +1,8 @@
-diff name:ruadlist lines:84 checksum:d7be081d25
+diff name:ruadlist lines:110 checksum:44f3ab8e3f
 d4 2
 a5 2
-! Last modified: Mon, 14 Sep 2026 10:31:52 +0000
-! Diff-Path: ../patches/2026.9.14.631.patch#ruadlist
+! Last modified: Mon, 14 Sep 2026 16:55:35 +0000
+! Diff-Path: ../patches/2026.9.14.1015.patch#ruadlist
 a4656 1
 ||pcmdcdn.com^$third-party
 a5768 1
@@ -13,6 +13,9 @@ d10246 1
 a10246 2
 2gis.by,2gis.kz,2gis.ru##._1nnq5pzj
 2gis.by,2gis.kz,2gis.ru##._fh8krf5
+d10780 1
+a10780 1
+/^https?:\/\/stratege\.ru\/misc\/[a-z0-9]{25,}/$image,domain=stratege.ru
 d15209 1
 d15217 1
 d15220 1
@@ -20,6 +23,8 @@ d15262 1
 a15262 1
 blitzfoxhub.com##.ad-free-button
 d17420 1
+a19041 1
+vk.com,vk.ru#?#.vkuiGroup__modeCard > [role="feed"] > article:-abp-has(> [data-post-id] [data-testid="post-header"] > div:nth-child(2) > div + div > div span)
 d19187 1
 a19187 1
 livep2p.top,p2plive7.top##.wrap-overlay
@@ -37,10 +42,23 @@ d20864 2
 d20939 1
 a20939 1
 blitzfoxhub.com,draug.ru,emdigital.ru,enthub.it,modsforwot.ru,pogodavtomske.ru#?#div:-abp-has(> [id^="yandex_rtb"])
+d21831 1
+a21831 1
+opennet.me,opennet.ru#?#div[style*="background-color:"]:-abp-has(> div > .promo-banner)
+d22669 1
+a22669 1
+||pikabu.ru/ajax/*?j5T2r=$xmlhttprequest
 a23093 1
 dzen.ru,sportsdzen.ru##.news-ad-swap-root
 a23425 1
 ru##[data-test="themes-line"] a[href][aria-label="Баннер"]
+d24092 2
+a24093 2
+ya.ru##html[class*="ktllliom_top"] aside + div
+ya.ru##html[class*="ktllliom_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
+d24095 1
+a24095 1
+ya.ru##section[style*="ktllliom-items-count:"]
 d26110 1
 d26961 1
 a26961 1
@@ -51,6 +69,9 @@ a27019 1
 a28039 2
 kanobu.ru##a[href*="erid="]:style(pointer-events: none !important; color: inherit !important)
 ! ---
+a28824 2
+ya.ru##html[class*="-content_yes"] .banner-media
+ya.ru##html[class*="-content_yes"] .banner-media + div[class*="_border"]
 d28856 1
 a28867 1
 dzen.ru##div[style^="--top-padding:"] div[style^="--imageHeight:"]
@@ -64,6 +85,8 @@ d29342 1
 a29342 1
 80-e.ru,blitzfoxhub.com,examenpdd.com,rg.ru,shadowcore.ru##+js(abort-on-property-read, yaContextCb)
 d29353 1
+a29354 1
+ya.ru##+js(abort-on-stack-trace, Object.prototype.feed, yandex-portal.naydex.net)
 d29361 1
 a29365 1
 blitzfoxhub.com##+js(addEventListener-defuser, DOMContentLoaded, AnalyticMonitor)
@@ -77,6 +100,9 @@ a29682 1
 shedevrum.ai##.fixed#root-toasts[style^="top:"]
 a29810 1
 kanobu.ru##main > div:has(> section [href="/tags/partnyorskij-material/"]) > article a[href]:not([href^="/"]):not([href^="https://kanobu.ru/"]):style(pointer-events: none !important; color: inherit !important)
+d30145 1
+a30146 1
+ya.ru##section li > a.home-link2
 a30219 1
 ||luluvdo.com/js/jdadbl.js
 a30231 1
