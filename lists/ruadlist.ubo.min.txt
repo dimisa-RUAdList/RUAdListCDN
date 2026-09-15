@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 15 Sep 2026 14:54:21 +0000
-! Diff-Path: ../patches/2026.9.15.894.patch#ruadlist
+! Last modified: Tue, 15 Sep 2026 22:07:55 +0000
+! Diff-Path: ../patches/2026.9.15.1327.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21999,6 +21999,7 @@ filmix.*,filmix.gg,filmix.date,filmix.life,filmix.pub,filmix.tech##.page-wrapper
 virus-stop.com.ua##footer > .footer-main
 sportsdaily.ru##footer > [style="display: flex; flex-direction: column;"]
 virus-stop.com.ua##footer > h4
+rg.ru##footer[class^="AuthModalRightWrapper_footer_"]
 forum.cxem.net#?#form > article[id^="elComment_"]:-abp-has(strong > a[href$="-Adver/"])
 payeer-gift.ru##form > div[style^="width: 300px;"]
 leonkrevs.ucoz.ru##form[action*="wmcasher.ru"]
@@ -23036,6 +23037,7 @@ kp.ru##div[style*="height:"][style*="250px"][style*="important"]
 liveball.sx,liveball.*##[data-noclick]:not(#player_block)
 liveball.sx,liveball.*##body > div[class]:not([id]):not([style]):empty
 ||cdn.lbs.pw/rek/
+||lbs.pw/liveball/img/brand
 ||liveball.*/public/*clickunder.js
 ||liveball.*/public/js/dm.min.js
 ! мобильная версия livejournal.com
@@ -29349,7 +29351,7 @@ cikavosti.com,dialogs.org.ua,fakty.ua,gorodkiev.com.ua,informator.ua,kriminal.tv
 bombardir.ru,comp-service.kiev.ua,inforesist.org,www.xcom-shop.ru##+js(abort-on-property-read, window.alert)
 softportal.com##+js(abort-on-property-read, window.block)
 growhow.in.ua##+js(abort-on-property-read, wpsite_clickable_data)
-80-e.ru,blitzfoxhub.com,examenpdd.com,rg.ru,shadowcore.ru##+js(abort-on-property-read, yaContextCb)
+80-e.ru,blitzfoxhub.com,examenpdd.com,shadowcore.ru##+js(abort-on-property-read, yaContextCb)
 vsetut.su##+js(abort-on-property-read, zfgformats)
 transkarpatia.net##+js(abort-on-property-write, NiceScroll)
 24pdd.ru##+js(abort-on-property-write, adsBlocked)

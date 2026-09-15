@@ -1,8 +1,8 @@
-diff name:ruadlist lines:38 checksum:82948dd594
+diff name:ruadlist lines:45 checksum:a763ae006e
 d4 2
 a5 2
-! Last modified: Tue, 15 Sep 2026 14:54:21 +0000
-! Diff-Path: ../patches/2026.9.15.894.patch#ruadlist
+! Last modified: Tue, 15 Sep 2026 22:07:55 +0000
+! Diff-Path: ../patches/2026.9.15.1327.patch#ruadlist
 d10784 1
 a10784 1
 /^https?:\/\/stratege\.ru\/misc\/[a-z0-9]{25,}/$image,domain=stratege.ru
@@ -11,9 +11,13 @@ vk.com,vk.ru#?#.vkuiGroup__modeCard > [role="feed"] > article:-abp-has(> [data-p
 a20831 1
 opennet.me,opennet.ru#?#body > div[style]:-abp-has(.promo-banner)
 d21834 1
+a22000 1
+rg.ru##footer[class^="AuthModalRightWrapper_footer_"]
 d22672 1
 a22672 1
 ||pikabu.ru/ajax/*?j5T2r=$xmlhttprequest
+a23037 1
+||lbs.pw/liveball/img/brand
 d24097 2
 a24098 2
 ya.ru##html[class*="ktllliom_top"] aside + div
@@ -26,6 +30,9 @@ ya.ru##html[class*="-content_yes"] .banner-media
 ya.ru##html[class*="-content_yes"] .banner-media + div[class*="_border"]
 a29328 1
 film.ru##+js(abort-on-property-read, posterPlayer)
+d29348 1
+a29348 1
+80-e.ru,blitzfoxhub.com,examenpdd.com,shadowcore.ru##+js(abort-on-property-read, yaContextCb)
 a29359 1
 ya.ru##+js(abort-on-stack-trace, Object.prototype.feed, yandex-portal.naydex.net)
 d29868 1

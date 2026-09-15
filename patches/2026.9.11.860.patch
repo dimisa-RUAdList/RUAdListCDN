@@ -1,8 +1,8 @@
-diff name:ruadlist lines:102 checksum:82948dd594
+diff name:ruadlist lines:106 checksum:a763ae006e
 d4 2
 a5 2
-! Last modified: Tue, 15 Sep 2026 14:54:21 +0000
-! Diff-Path: ../patches/2026.9.15.894.patch#ruadlist
+! Last modified: Tue, 15 Sep 2026 22:07:55 +0000
+! Diff-Path: ../patches/2026.9.15.1327.patch#ruadlist
 a4656 1
 ||pcmdcdn.com^$third-party
 a5768 1
@@ -37,9 +37,13 @@ d20936 1
 a20936 1
 blitzfoxhub.com,draug.ru,emdigital.ru,enthub.it,modsforwot.ru,pogodavtomske.ru#?#div:-abp-has(> [id^="yandex_rtb"])
 d21828 1
+a21994 1
+rg.ru##footer[class^="AuthModalRightWrapper_footer_"]
 d22666 1
 a22666 1
 ||pikabu.ru/ajax/*?j5T2r=$xmlhttprequest
+a23031 1
+||lbs.pw/liveball/img/brand
 a23423 1
 ru##[data-test="themes-line"] a[href][aria-label="Баннер"]
 d24090 2
@@ -69,7 +73,7 @@ a29320 1
 film.ru##+js(abort-on-property-read, posterPlayer)
 d29340 1
 a29340 1
-80-e.ru,blitzfoxhub.com,examenpdd.com,rg.ru,shadowcore.ru##+js(abort-on-property-read, yaContextCb)
+80-e.ru,blitzfoxhub.com,examenpdd.com,shadowcore.ru##+js(abort-on-property-read, yaContextCb)
 d29351 1
 a29352 1
 ya.ru##+js(abort-on-stack-trace, Object.prototype.feed, yandex-portal.naydex.net)
