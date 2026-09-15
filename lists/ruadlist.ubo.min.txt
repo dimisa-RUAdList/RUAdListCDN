@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 15 Sep 2026 09:59:06 +0000
-! Diff-Path: ../patches/2026.9.15.599.patch#ruadlist
+! Last modified: Tue, 15 Sep 2026 14:54:21 +0000
+! Diff-Path: ../patches/2026.9.15.894.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -20830,6 +20830,7 @@ allmmorpg.ru##body > div[style="display: inline-block"]
 kinozal.jumpingcrab.com##body > div[style="position: absolute; z-index: 99999"]
 tamboff.ru##body > div[style="width: 960px; margin: 0 auto; height: 300px; position: relative;"]
 laststicker.ru##body > div[style] > noindex
+opennet.me,opennet.ru#?#body > div[style]:-abp-has(.promo-banner)
 obob.tv##body > div[style^="padding:"] > a[href]
 footlook.top,rplnews.online##body > div[style^="position: fixed"]
 root-nation.com##body > div[style^="position: fixed; display: flow-root; z-index:"]
@@ -21750,7 +21751,6 @@ vk.com,vk.ru##div[id^="post-"][onmousedown^="wall.postClickStat(event)"]
 minfin.com.ua##div[id^="premium-"]
 smartphone.ua##div[id^="premium-banner"]
 sm.news##div[id^="prog_adv_"]
-opennet.me,opennet.ru##div[id^="promo"]
 allcc.ru##div[id^="promo_"]
 berdyansk.biz##div[id^="promo_banner"]
 kosmetista.ru##div[id^="psn_"]
@@ -21833,7 +21833,6 @@ dltv.org##div[style*="/uploads/banners/"]
 doefiratv.info##div[style*="339px;"]
 x-console.com##div[style*="710px;"][style*="70px;"]
 forums.ngemu.com##div[style*="920px;"][style*="250px;"]
-opennet.me,opennet.ru#?#div[style*="background-color:"]:-abp-has(> div > .promo-banner)
 dtf.ru,vc.ru##div[style*="banner-height"]
 bikepost.ru##div[style*="block"][style*="center"][style*="width:"][style*="height:"]
 dumskaya.net##div[style*="display:inline-bl1ock"]
@@ -29330,6 +29329,7 @@ kolizhanka.com.ua##+js(abort-on-property-read, nocontext)
 stoigr.org##+js(abort-on-property-read, noselect)
 it-actual.ru##+js(abort-on-property-read, onload)
 freehat.cc,hlamer.ru,lostpix.com,potokcdn.com,prostoporno.help,saltday.ru,uploadimagex.com,wowskill.ru,xittv.net##+js(abort-on-property-read, open)
+film.ru##+js(abort-on-property-read, posterPlayer)
 sm.news##+js(abort-on-property-read, preventSelection)
 zab.ru##+js(abort-on-property-read, scrollw)
 anime-chan.me##+js(abort-on-property-read, sparkle)
@@ -29870,7 +29870,7 @@ ya.ru,yandex.*##.simple-popup__overlay:remove()
 ||myfootball.*/betking/$media,redirect=noopmp4-1s
 ||oc.kg/background/*.mp4$media,redirect=noop-0.1s.mp3
 ||partnerprofitboost.com^$popunder
-||pikabu.ru/ajax/*_*?*=$xmlhttprequest,responseheader=llasalbbubrrl
+||pikabu.ru/ajax/$xmlhttprequest,responseheader=llasalbbubrrl
 ||pravo.by/local/templates/.default/js/addtocopy.js
 ||pronpic.org^$subdocument,redirect=noopframe,domain=pronpic.org
 ||pronpic.org^$third-party,badfilter
@@ -33075,7 +33075,7 @@ kinoafisha.ua##.turn-off-add-block-text
 stalkerportaal.ru##.video_adsense
 bookskeeper.ru,e-xecutive.ru##.warning
 forum.bestflowers.ru##.xenOverlay
-/^https?:\/\/pikabu\.ru\/ajax\/{1,2}[A-Za-z0-9_%.-]+\?[A-Za-z0-9]+=[0-9a-f]{23,}_[0-9]+/$xmlhttprequest,domain=pikabu.ru
+/^https?:\/\/pikabu\.ru\/ajax\/{1,2}[^?]+\?[A-Za-z0-9]+=[0-9a-f]{22,}_[0-9]+/$xmlhttprequest,domain=pikabu.ru
 /cookie_check.min.js$domain=acetv.me
 /gogl_detector$script,domain=meddaily.ru|newsru.com
 @@||anidub.com/ads.js|$script,domain=anidub.com

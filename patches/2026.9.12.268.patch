@@ -1,8 +1,8 @@
-diff name:ruadlist lines:84 checksum:eea4d07b1a
+diff name:ruadlist lines:90 checksum:82948dd594
 d4 2
 a5 2
-! Last modified: Tue, 15 Sep 2026 09:59:06 +0000
-! Diff-Path: ../patches/2026.9.15.599.patch#ruadlist
+! Last modified: Tue, 15 Sep 2026 14:54:21 +0000
+! Diff-Path: ../patches/2026.9.15.894.patch#ruadlist
 a4656 1
 ||pcmdcdn.com^$third-party
 a5768 1
@@ -28,15 +28,13 @@ a19273 4
 d19281 1
 a19281 1
 activation-keys.ru,adregain.ru,ads.bid,apicloud.ru,appt12mn.com,banner.mob.ru.com,bestsoft.club,browser-extensions.club,cheatget.ru,click2soft.ru,clickbytes.ru,content.directadvert.ru,cs-serva.net,directx.biz,dnevni4ok.com,download.studio,downloadamigo.com,downloadbrowser.ru,driverpack.io,driverpaksolution.ru,drp.su,dugtor-deer.pw,dw1-msetup.org,elementsbrowser.com,etarg.network,everinform.com,ex.24smi.info,ex.24smi.site,ex.infox.sg,exonews.ru,fast2click.ru,filetaker.ru,fin-vector.ru,flebolab.ru,getappwiz.ru,getappwizard.ru,getdownloadstudio.net,getdstud.io,getdstudio.app,getdstudio.cab,getdstudio.com,getdstudio.dev,getfiletds.ru,getyoursoft.ru,globalstylis.ru,hdvideoboxs.ru,health-official.ru,idealmedia.io,install-now.com,installpack.net,kinowinx.ru,linksoftbox.ru,litebrowser.ru,losnews.ru,mainews.ru,manysoftlink.ru,marketgid.ru,medicin-novosti-24.com,medicineteaser.org,medicineteaser.ru,morelnk.ru,msetup.pro,mysoftbox.ru,mytrk.xyz,nalivali.ru,new-rutor.website,news-decent.com,news-sphere.com,newsma.ru,novostly.com,offergate.pro,ognyvo.ru,olx.ua.partners,orgsales.ru,pfdzbcmost.com,picpick.ru,pochistit.ru,popcornhd.ru,prime-oblako.ru,programma-ochistki.ru,readvesti.ru,rotateme.ru,rsboot.ru,rustoria-topnews.ru,rutor-info.shop,rutor.ml,rutorrent.co,rutors.tk,rutracker.eu,rutracker.work,rutraker.org,sandboxie.ru,saymigren.net,sb-on-line.ru,search-cdn.ru,searchcdn.ru,smiru.ru,softboxtds.ru,spishi.vip,starblog.org,sysenvfiles.net,t-lafa-site.ru,t1mcapp.com,tdsclicks2.ru,tdsrotations.ru,tft-test.ru,tlmnt.com,top-rutor.eu,top.24smi.info,topnews.smi.one,toprated-film.co,tordrom.com,torrentum.ru,ubar-pro.ru,ubar-pro2.ru,ubar-pro3.ru,ubar-pro4.ru,ubar.pro,ufiler-download.ru,ufiler-pro.ru,ufiler-pro2.ru,ufiler.pro,upro.me,utorria.ru,viniki.ru,vserpg.ru,wogoods.com,womens-journal.ru,worldinform.ru,xbox-torrent.ru,ya-browser.ru,ya-cdn.ru,ya-distrib.ru,yabrowser.su,yadistr.ru,yasearch-cdn.ru,yasearchcdn.ru,ynsearch.ru,zodiac-game.info,zpppstop.ru,zqwjpxow7boc.ru##:not(this-site-is-fake)
+a20824 1
+opennet.me,opennet.ru#?#body > div[style]:-abp-has(.promo-banner)
 d20862 2
 d20937 1
 a20937 1
 blitzfoxhub.com,draug.ru,emdigital.ru,enthub.it,modsforwot.ru,pogodavtomske.ru#?#div:-abp-has(> [id^="yandex_rtb"])
-a21746 1
-opennet.me,opennet.ru##div[id^="promo"]
 d21829 1
-a21829 1
-opennet.me,opennet.ru#?#div[style*="background-color:"]:-abp-has(> div > .promo-banner)
 d22667 1
 a22667 1
 ||pikabu.ru/ajax/*?j5T2r=$xmlhttprequest
@@ -62,6 +60,8 @@ kanobu.ru##a[href*="erid="]:style(pointer-events: none !important; color: inheri
 a28823 2
 ya.ru##html[class*="-content_yes"] .banner-media
 ya.ru##html[class*="-content_yes"] .banner-media + div[class*="_border"]
+a29321 1
+film.ru##+js(abort-on-property-read, posterPlayer)
 d29341 1
 a29341 1
 80-e.ru,blitzfoxhub.com,examenpdd.com,rg.ru,shadowcore.ru##+js(abort-on-property-read, yaContextCb)
@@ -74,6 +74,9 @@ d29383 1
 d29398 1
 a29811 1
 kanobu.ru##main > div:has(> section [href="/tags/partnyorskij-material/"]) > article a[href]:not([href^="/"]):not([href^="https://kanobu.ru/"]):style(pointer-events: none !important; color: inherit !important)
+d29862 1
+a29862 1
+||pikabu.ru/ajax/$xmlhttprequest,responseheader=llasalbbubrrl
 d30146 1
 a30147 1
 ya.ru##section li > a.home-link2
@@ -83,3 +86,6 @@ a30232 1
 ||antiadblockcore.com^$third-party
 a32638 1
 @@||tpi.li^$generichide
+d33064 1
+a33064 1
+/^https?:\/\/pikabu\.ru\/ajax\/{1,2}[^?]+\?[A-Za-z0-9]+=[0-9a-f]{22,}_[0-9]+/$xmlhttprequest,domain=pikabu.ru

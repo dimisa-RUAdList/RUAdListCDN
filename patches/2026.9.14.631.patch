@@ -1,18 +1,16 @@
-diff name:ruadlist lines:32 checksum:eea4d07b1a
+diff name:ruadlist lines:38 checksum:82948dd594
 d4 2
 a5 2
-! Last modified: Tue, 15 Sep 2026 09:59:06 +0000
-! Diff-Path: ../patches/2026.9.15.599.patch#ruadlist
+! Last modified: Tue, 15 Sep 2026 14:54:21 +0000
+! Diff-Path: ../patches/2026.9.15.894.patch#ruadlist
 d10784 1
 a10784 1
 /^https?:\/\/stratege\.ru\/misc\/[a-z0-9]{25,}/$image,domain=stratege.ru
 a19041 1
 vk.com,vk.ru#?#.vkuiGroup__modeCard > [role="feed"] > article:-abp-has(> [data-post-id] [data-testid="post-header"] > div:nth-child(2) > div + div > div span)
-a21751 1
-opennet.me,opennet.ru##div[id^="promo"]
+a20831 1
+opennet.me,opennet.ru#?#body > div[style]:-abp-has(.promo-banner)
 d21834 1
-a21834 1
-opennet.me,opennet.ru#?#div[style*="background-color:"]:-abp-has(> div > .promo-banner)
 d22672 1
 a22672 1
 ||pikabu.ru/ajax/*?j5T2r=$xmlhttprequest
@@ -26,8 +24,16 @@ ya.ru##section[style*="ktllliom-items-count:"]
 a28830 2
 ya.ru##html[class*="-content_yes"] .banner-media
 ya.ru##html[class*="-content_yes"] .banner-media + div[class*="_border"]
+a29328 1
+film.ru##+js(abort-on-property-read, posterPlayer)
 a29359 1
 ya.ru##+js(abort-on-stack-trace, Object.prototype.feed, yandex-portal.naydex.net)
+d29868 1
+a29868 1
+||pikabu.ru/ajax/$xmlhttprequest,responseheader=llasalbbubrrl
 d30152 1
 a30153 1
 ya.ru##section li > a.home-link2
+d33073 1
+a33073 1
+/^https?:\/\/pikabu\.ru\/ajax\/{1,2}[^?]+\?[A-Za-z0-9]+=[0-9a-f]{22,}_[0-9]+/$xmlhttprequest,domain=pikabu.ru
