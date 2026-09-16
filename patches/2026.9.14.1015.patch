@@ -1,20 +1,43 @@
-diff name:ruadlist lines:22 checksum:3fae0ced71
+diff name:ruadlist lines:45 checksum:2018fcca5f
 d4 2
 a5 2
-! Last modified: Wed, 16 Sep 2026 05:55:30 +0000
-! Diff-Path: ../patches/2026.9.16.355.patch#ruadlist
+! Last modified: Wed, 16 Sep 2026 11:23:35 +0000
+! Diff-Path: ../patches/2026.9.16.683.patch#ruadlist
 a20832 1
 opennet.me,opennet.ru#?#body > div[style]:-abp-has(.promo-banner)
 d21835 1
 a22001 1
 rg.ru##footer[class^="AuthModalRightWrapper_footer_"]
+d22638 2
+a22639 1
+/^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]+(?:[^u]....|.[^n]...|..[^d]..|...[^l].|....[^e])\.js(?:\?.*)?$/$script
 a23038 1
 ||lbs.pw/liveball/img/brand
+d27024 1
+a27024 1
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js|$domain=595.ucoz.net|adult-images.ru|anypictures.ru|blitzfoxhub.com|blogging-techies.com|botrix.live|crast.net|di.fm|fcportables.com|freeopenvpn.org|ikigaitest.com|imgbum.ru|investing.com|izi-invest.ru|kvadratmetr.uz|mod-wot.ru|nv.ua|oligarx.uz|otzovik.com|ozlib.com|parnuxi.biz|pixcloud.ru|radio-archive.ru|radioromantika.ru|tarkov-market.com|tehnar.net.ua|tehnobzor.ru|tehnografi.com|tests24.su|tubeload.co|xpicture.ru|yvid.ru
+a27048 1
+@@||shadowcore.ru/public/ads/banner.png$image,~third-party
+d27090 1
+a27090 1
+@@||yandex.ru/ads/system/context.js|$script,domain=limehd.tv|litehd.tv|pervyi-tv.online|russia-tv.online|tvzvezda.ru|volley.ru
+d28112 1
+a28112 1
+www.kinopoisk.ru###modal-container > [class^="styles_root_"] ~ div:not([class^="styles_modal_"]):not([class^="styles_overlay_"]):not([class^="styles_touch"]):not([class^="styles_closeArea"])
+d28909 2
+a28910 1
+dzen.ru,sportsdzen.ru##[aria-label] > div[class*="_content_"] > div > div > div[style^="height:"] > div > div[id]
+a28911 1
+dzen.ru,sportsdzen.ru##div[class*="-swap-root "]
+d28914 1
 a29331 1
 film.ru##+js(abort-on-property-read, posterPlayer)
 d29351 1
 a29351 1
-80-e.ru,blitzfoxhub.com,examenpdd.com,shadowcore.ru##+js(abort-on-property-read, yaContextCb)
+80-e.ru,blitzfoxhub.com,examenpdd.com##+js(abort-on-property-read, yaContextCb)
+a29353 1
+shadowcore.ru##+js(abort-on-property-write, __trap_run)
+d29365 1
 d29872 1
 a29872 1
 ||pikabu.ru/ajax/$xmlhttprequest,responseheader=llasalbbubrrl

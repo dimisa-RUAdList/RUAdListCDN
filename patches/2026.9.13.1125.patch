@@ -1,8 +1,8 @@
-diff name:ruadlist lines:65 checksum:3fae0ced71
+diff name:ruadlist lines:88 checksum:2018fcca5f
 d4 2
 a5 2
-! Last modified: Wed, 16 Sep 2026 05:55:30 +0000
-! Diff-Path: ../patches/2026.9.16.355.patch#ruadlist
+! Last modified: Wed, 16 Sep 2026 11:23:35 +0000
+! Diff-Path: ../patches/2026.9.16.683.patch#ruadlist
 a4656 1
 ||pcmdcdn.com^$third-party
 a5768 1
@@ -22,6 +22,9 @@ opennet.me,opennet.ru#?#body > div[style]:-abp-has(.promo-banner)
 d21831 1
 a21997 1
 rg.ru##footer[class^="AuthModalRightWrapper_footer_"]
+d22634 2
+a22635 1
+/^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]+(?:[^u]....|.[^n]...|..[^d]..|...[^l].|....[^e])\.js(?:\?.*)?$/$script
 d22669 1
 a22669 1
 ||pikabu.ru/ajax/*?j5T2r=$xmlhttprequest
@@ -34,19 +37,39 @@ ya.ru##html[class*="ktllliom_top"] main > div[class*="__"] ~ div[class*="__"] ~ 
 d24097 1
 a24097 1
 ya.ru##section[style*="ktllliom-items-count:"]
+d27020 1
+a27020 1
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js|$domain=595.ucoz.net|adult-images.ru|anypictures.ru|blitzfoxhub.com|blogging-techies.com|botrix.live|crast.net|di.fm|fcportables.com|freeopenvpn.org|ikigaitest.com|imgbum.ru|investing.com|izi-invest.ru|kvadratmetr.uz|mod-wot.ru|nv.ua|oligarx.uz|otzovik.com|ozlib.com|parnuxi.biz|pixcloud.ru|radio-archive.ru|radioromantika.ru|tarkov-market.com|tehnar.net.ua|tehnobzor.ru|tehnografi.com|tests24.su|tubeload.co|xpicture.ru|yvid.ru
+a27044 1
+@@||shadowcore.ru/public/ads/banner.png$image,~third-party
+d27086 1
+a27086 1
+@@||yandex.ru/ads/system/context.js|$script,domain=limehd.tv|litehd.tv|pervyi-tv.online|russia-tv.online|tvzvezda.ru|volley.ru
 a28040 2
 kanobu.ru##a[href*="erid="]:style(pointer-events: none !important; color: inherit !important)
 ! ---
+d28106 1
+a28106 1
+www.kinopoisk.ru###modal-container > [class^="styles_root_"] ~ div:not([class^="styles_modal_"]):not([class^="styles_overlay_"]):not([class^="styles_touch"]):not([class^="styles_closeArea"])
 a28825 2
 ya.ru##html[class*="-content_yes"] .banner-media
 ya.ru##html[class*="-content_yes"] .banner-media + div[class*="_border"]
+d28901 2
+a28902 1
+dzen.ru,sportsdzen.ru##[aria-label] > div[class*="_content_"] > div > div > div[style^="height:"] > div > div[id]
+a28903 1
+dzen.ru,sportsdzen.ru##div[class*="-swap-root "]
+d28906 1
 a29323 1
 film.ru##+js(abort-on-property-read, posterPlayer)
 d29343 1
 a29343 1
-80-e.ru,blitzfoxhub.com,examenpdd.com,shadowcore.ru##+js(abort-on-property-read, yaContextCb)
+80-e.ru,blitzfoxhub.com,examenpdd.com##+js(abort-on-property-read, yaContextCb)
+a29345 1
+shadowcore.ru##+js(abort-on-property-write, __trap_run)
 a29354 1
 ya.ru##+js(abort-on-stack-trace, Object.prototype.feed, yandex-portal.naydex.net)
+d29356 1
 a29811 1
 kanobu.ru##main > div:has(> section [href="/tags/partnyorskij-material/"]) > article a[href]:not([href^="/"]):not([href^="https://kanobu.ru/"]):style(pointer-events: none !important; color: inherit !important)
 d29862 1
