@@ -1,26 +1,55 @@
-diff name:ruadlist lines:92 checksum:a268198660
+diff name:ruadlist lines:127 checksum:7926bd2b43
 d4 2
 a5 2
-! Last modified: Wed, 16 Sep 2026 16:45:12 +0000
-! Diff-Path: ../patches/2026.9.16.1005.patch#ruadlist
+! Last modified: Wed, 16 Sep 2026 22:52:26 +0000
+! Diff-Path: ../patches/2026.9.16.1372.patch#ruadlist
 a4656 1
 ||pcmdcdn.com^$third-party
 a5768 1
 ||sphookup.com^$third-party
 a7652 1
 ||kontentpage.pro^
+d10192 1
+a10192 1
+kinogo.my,kinogohd.im,kinogomy.net,kinogoua.net###kpOverlay
+d10216 1
+a10216 1
+kinogo.my,kinogohd.im,kinogomy.net,kinogoua.net###pwa-bar
 d10781 1
 a10781 1
 /^https?:\/\/stratege\.ru\/misc\/[a-z0-9]{25,}/$image,domain=stratege.ru
+a10905 1
+/tmp-new/js/kgi.js$domain=kinogo.my|kinogohd.im|kinogomy.net|kinogoua.net
+a12468 1
+||mt.today/js/yandexloader.js
+d15243 2
+a15367 1
+kyivvlada.com.ua##.adv-swiper
 a15584 1
 agroreview.com,agroweek.com##.awb-slot
+a15802 1
+agronom.com.ua##.banner-top__wrapper
+d18082 1
+a18082 1
+kinogo.my,kinogohd.im,kinogomy.net,kinogoua.net##.regpro
+d18476 1
+a18476 1
+dtf.ru,vc.ru##.sidebar__section-content > a[href^="https://edu.vc.ru/"]
+a18524 1
+kyivvlada.com.ua##.site-side-banner
 a19038 1
 vk.com,vk.ru#?#.vkuiGroup__modeCard > [role="feed"] > article:-abp-has(> [data-post-id] [data-testid="post-header"] > div:nth-child(2) > div + div > div span)
 d19285 1
 a19285 1
 activation-keys.ru,adregain.ru,ads.bid,apicloud.ru,appt12mn.com,banner.mob.ru.com,bestsoft.club,browser-extensions.club,cheatget.ru,click2soft.ru,clickbytes.ru,content.directadvert.ru,cs-serva.net,directx.biz,dnevni4ok.com,download.studio,downloadamigo.com,downloadbrowser.ru,driverpack.io,driverpaksolution.ru,drp.su,dugtor-deer.pw,dw1-msetup.org,elementsbrowser.com,etarg.network,everinform.com,ex.24smi.info,ex.24smi.site,ex.infox.sg,exonews.ru,fast2click.ru,filetaker.ru,fin-vector.ru,flebolab.ru,getappwiz.ru,getappwizard.ru,getdownloadstudio.net,getdstud.io,getdstudio.app,getdstudio.cab,getdstudio.com,getdstudio.dev,getfiletds.ru,getyoursoft.ru,globalstylis.ru,hdvideoboxs.ru,health-official.ru,idealmedia.io,install-now.com,installpack.net,kinowinx.ru,linksoftbox.ru,litebrowser.ru,losnews.ru,mainews.ru,manysoftlink.ru,marketgid.ru,medicin-novosti-24.com,medicineteaser.org,medicineteaser.ru,morelnk.ru,msetup.pro,mysoftbox.ru,mytrk.xyz,nalivali.ru,new-rutor.website,news-decent.com,news-sphere.com,newsma.ru,novostly.com,offergate.pro,ognyvo.ru,olx.ua.partners,orgsales.ru,pfdzbcmost.com,picpick.ru,pochistit.ru,popcornhd.ru,prime-oblako.ru,programma-ochistki.ru,readvesti.ru,rotateme.ru,rsboot.ru,rustoria-topnews.ru,rutor-info.shop,rutor.ml,rutorrent.co,rutors.tk,rutracker.eu,rutracker.work,rutraker.org,sandboxie.ru,saymigren.net,sb-on-line.ru,search-cdn.ru,searchcdn.ru,smiru.ru,softboxtds.ru,spishi.vip,starblog.org,sysenvfiles.net,t-lafa-site.ru,t1mcapp.com,tdsclicks2.ru,tdsrotations.ru,tft-test.ru,tlmnt.com,top-rutor.eu,top.24smi.info,topnews.smi.one,toprated-film.co,tordrom.com,torrentum.ru,ubar-pro.ru,ubar-pro2.ru,ubar-pro3.ru,ubar-pro4.ru,ubar.pro,ufiler-download.ru,ufiler-pro.ru,ufiler-pro2.ru,ufiler.pro,upro.me,utorria.ru,viniki.ru,vserpg.ru,wogoods.com,womens-journal.ru,worldinform.ru,xbox-torrent.ru,ya-browser.ru,ya-cdn.ru,ya-distrib.ru,yabrowser.su,yadistr.ru,yasearch-cdn.ru,yasearchcdn.ru,ynsearch.ru,zodiac-game.info,zpppstop.ru,zqwjpxow7boc.ru##:not(this-site-is-fake)
+a19676 1
+kyivvlada.com.ua##[id^="sidebar-"][id*="banner"]
+a19800 1
+mt.today##a.background
 a20828 1
 opennet.me,opennet.ru#?#body > div[style]:-abp-has(.promo-banner)
+a20983 1
+mt.today##div[class$="-only"][style]
 d21831 1
 a21997 1
 rg.ru##footer[class^="AuthModalRightWrapper_footer_"]
@@ -30,6 +59,9 @@ a22635 1
 d22669 1
 a22669 1
 ||pikabu.ru/ajax/*?j5T2r=$xmlhttprequest
+d22791 2
+a22792 1
+.link/jal559hv?$third-party,xmlhttprequest
 a23034 1
 ||lbs.pw/liveball/img/brand
 d24094 2
@@ -47,6 +79,9 @@ a27044 1
 d27086 1
 a27086 1
 @@||yandex.ru/ads/system/context.js|$script,domain=limehd.tv|litehd.tv|pervyi-tv.online|russia-tv.online|tvzvezda.ru|volley.ru
+d27309 1
+a27309 1
+baskino.film,dnepr.info,dugtor.ru,filmitorrent.net,filmitorrent.site,jetsetter.ua,kinoafisha.ua,kinobar.vip,kinoukr.com,konohatv.life,ladys.media,moskva.fm,newstudio.tv,nnm-club.me,nnmclub.ro,nnmclub.to,pay-day.ru,roem.ru,rusfootball.info,uaserial.tv,utorr.cc,vc.ru,virusinfo.info,xxxadulttorrent.org,you-anime.ru,yummyanime.tv,zombie-film.live##body:not(#id):style(padding-top: 0 !important)
 a28040 2
 kanobu.ru##a[href*="erid="]:style(pointer-events: none !important; color: inherit !important)
 ! ---
