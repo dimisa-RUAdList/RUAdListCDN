@@ -1,14 +1,17 @@
-diff name:ruadlist lines:127 checksum:fbc5ca87e9
+diff name:ruadlist lines:136 checksum:5da1af2124
 d4 2
 a5 2
-! Last modified: Thu, 17 Sep 2026 18:08:29 +0000
-! Diff-Path: ../patches/2026.9.17.1088.patch#ruadlist
+! Last modified: Fri, 18 Sep 2026 00:08:05 +0000
+! Diff-Path: ../patches/2026.9.18.8.patch#ruadlist
 a4656 1
 ||pcmdcdn.com^$third-party
 a5768 1
 ||sphookup.com^$third-party
 a7652 1
 ||kontentpage.pro^
+d7816 1
+a7816 1
+||pw^$third-party,script,xmlhttprequest,domain=~adwiz.pp.ua|~dewalt.store|~easyquote.pw|~forum.worldofwarships.eu|~forum.worldofwarships.ru|~hansgrohe.ru|~hdvbplayer.tk|~herokuapp.com|~liveball.cc|~liveball.gg|~liveball.im|~liveball.my|~liveball.sx|~liveball.uno|~liveball.ws|~masterclub.store|~movielab.pro|~osu.ppy.sh|~panomama.ru|~pelcn.net|~philips.ru|~purina.ru|~softpir.com|~sportsvideoline3.pw|~tefal.ru|~tikkurila.ru|~vk-apps.com|~vulpecula.host
 d10192 1
 a10192 1
 kinogo.my,kinogohd.im,kinogomy.net,kinogoua.net###kpOverlay
@@ -58,10 +61,13 @@ a22635 1
 /^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]+(?:[^u]....|.[^n]...|..[^d]..|...[^l].|....[^e])\.js(?:\?.*)?$/$script
 d22669 1
 a22669 1
-||pikabu.ru/ajax/*?j5T2r=$xmlhttprequest
+||pikabu.ru/ajax/*?j6T2r=$xmlhttprequest
 d22791 2
 a22792 1
-.link/jal559hv?$third-party,xmlhttprequest
+.link/jvp0461jga?$third-party,xmlhttprequest
+a22804 2
+||gogo.*.org/$third-party,media
+||ozzi.*.org/$third-party,media
 a23034 1
 ||lbs.pw/liveball/img/brand
 d24094 2
@@ -114,6 +120,9 @@ kanobu.ru##main > div:has(> section [href="/tags/partnyorskij-material/"]) > art
 d29862 1
 a29862 1
 ||pikabu.ru/ajax/$xmlhttprequest,responseheader=llasalbbubrrl
+a29890 2
+fastpic.org,~new.fastpic.org##+js(abort-on-property-read, MouseEvent)
+fastpic.org,~new.fastpic.org##+js(abort-on-property-read, document.dispatchEvent)
 d30146 1
 a30147 1
 ya.ru##section li > a.home-link2
