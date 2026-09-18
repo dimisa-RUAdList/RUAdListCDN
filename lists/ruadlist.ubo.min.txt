@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 18 Sep 2026 09:37:45 +0000
-! Diff-Path: ../patches/2026.9.18.577.patch#ruadlist
+! Last modified: Fri, 18 Sep 2026 14:24:03 +0000
+! Diff-Path: ../patches/2026.9.18.864.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -19055,6 +19055,7 @@ livecars.ru,livesport.ru##.wall
 wallscloud.net#?#.walls_data > .item:-abp-has(> .thumbnail script)
 kinomania.ru##.watch-page__play-button
 rutube.ru##.wdp-onboardings-inventory-banner-module__wrapper-section
+rutube.ru##.wdp-recommended-ad-card-module__ad-banner-container
 xmages.net##.we-are-featured
 gotoshop.ua##.welcome2
 semestr.online,semestr.ru##.well-google
@@ -22796,7 +22797,7 @@ $popup,domain=rstprgapipt.com|temp2cdn.link|temptcdn.com
 .json?unique=$third-party,xmlhttprequest
 .link/*/*/*?*=*-*-*-$third-party,xmlhttprequest
 .link/*?*=*-*-*-*-$third-party,xmlhttprequest
-.link/jvp0461jga?$third-party,xmlhttprequest
+.link/yh1eo0l?$third-party,xmlhttprequest
 .txt?fre=$third-party,xmlhttprequest
 .txt?unique=$third-party,xmlhttprequest
 /ad-rotator/ad-list.json
@@ -22809,18 +22810,18 @@ $popup,domain=rstprgapipt.com|temp2cdn.link|temptcdn.com
 ||cdn-global-mb.com^$third-party
 ||cdn-global-mst.com^$third-party
 ||cdn-mst-ru.com^$third-party
-||gogo.*.org/$third-party,media
-||ozzi.*.org/$third-party,media
 ||pfdzbcmost.com^$popup
 ||rstprgapipt.com/*.xml?$xmlhttprequest
 ||rstprgapipt.com/api-integration/
 ||rstprgapipt.com^$third-party,xmlhttprequest
+||rubakaka.org^$third-party
 ||temp2cdn.link/*.xml?$xmlhttprequest
 ||temp2cdn.link/api-integration/
 ||temp2cdn.link^$third-party,xmlhttprequest
 ||temptcdn.com/*.xml?$xmlhttprequest
 ||temptcdn.com/api-integration/
 ||temptcdn.com^$third-party,xmlhttprequest
+||vertiguzha.link^$third-party
 ||vveu.*.link/$third-party,media
 ||vvru.*.link/$third-party,media
 ||ykoza.com^$popup
