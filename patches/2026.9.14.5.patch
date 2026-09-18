@@ -1,8 +1,8 @@
-diff name:ruadlist lines:136 checksum:43df19895c
+diff name:ruadlist lines:154 checksum:9512318a17
 d4 2
 a5 2
-! Last modified: Fri, 18 Sep 2026 04:35:06 +0000
-! Diff-Path: ../patches/2026.9.18.275.patch#ruadlist
+! Last modified: Fri, 18 Sep 2026 09:37:45 +0000
+! Diff-Path: ../patches/2026.9.18.577.patch#ruadlist
 a4656 1
 ||pcmdcdn.com^$third-party
 a5768 1
@@ -25,6 +25,13 @@ a10905 1
 /tmp-new/js/kgi.js$domain=kinogo.my|kinogohd.im|kinogomy.net|kinogoua.net
 a12468 1
 ||mt.today/js/yandexloader.js
+d14061 1
+d14120 1
+d14496 1
+a14496 2
+fastpic.org#?##mainContainer:-abp-has(a[href*="/big/"] > img:not([src])) a[href*="html?info=1"]
+fastpic.org#?##mainContainer:-abp-has(a[href*="/fullview/"] > img:not([src])) a[href*="html?info=1"]
+d15125 1
 d15243 2
 a15367 1
 kyivvlada.com.ua##.adv-swiper
@@ -32,6 +39,7 @@ a15584 1
 agroreview.com,agroweek.com##.awb-slot
 a15802 1
 agronom.com.ua##.banner-top__wrapper
+d15923 1
 d18082 1
 a18082 1
 kinogo.my,kinogohd.im,kinogomy.net,kinogoua.net##.regpro
@@ -40,6 +48,7 @@ a18476 1
 dtf.ru,vc.ru##.sidebar__section-content > a[href^="https://edu.vc.ru/"]
 a18524 1
 kyivvlada.com.ua##.site-side-banner
+d18634 1
 a19038 1
 vk.com,vk.ru#?#.vkuiGroup__modeCard > [role="feed"] > article:-abp-has(> [data-post-id] [data-testid="post-header"] > div:nth-child(2) > div + div > div span)
 d19285 1
@@ -49,10 +58,16 @@ a19676 1
 kyivvlada.com.ua##[id^="sidebar-"][id*="banner"]
 a19800 1
 mt.today##a.background
+a19906 1
+fastpic.org##a[href*="/fullview/"] > img:not([src])
 a20828 1
 opennet.me,opennet.ru#?#body > div[style]:-abp-has(.promo-banner)
 a20983 1
 mt.today##div[class$="-only"][style]
+d21160 2
+a21163 2
+korolevriamo.ru,mytischiriamo.ru,riamo.ru,schelkovoriamo.ru##div[class][style^="--"][style*="120px"] > div:first-child
+riamo.ru,riamobalashiha.ru##div[class][style^="--"][style*=":250px"]
 d21831 1
 a21997 1
 rg.ru##footer[class^="AuthModalRightWrapper_footer_"]
@@ -77,6 +92,7 @@ ya.ru##html[class*="ktllliom_top"] main > div[class*="__"] ~ div[class*="__"] ~ 
 d24097 1
 a24097 1
 ya.ru##section[style*="ktllliom-items-count:"]
+d26223 1
 d27020 1
 a27020 1
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js|$domain=595.ucoz.net|adult-images.ru|anypictures.ru|blitzfoxhub.com|blogging-techies.com|botrix.live|crast.net|di.fm|fcportables.com|freeopenvpn.org|ikigaitest.com|imgbum.ru|investing.com|izi-invest.ru|kvadratmetr.uz|mod-wot.ru|nv.ua|oligarx.uz|otzovik.com|ozlib.com|parnuxi.biz|pixcloud.ru|radio-archive.ru|radioromantika.ru|tarkov-market.com|tehnar.net.ua|tehnobzor.ru|tehnografi.com|tests24.su|tubeload.co|xpicture.ru|yvid.ru
@@ -88,6 +104,8 @@ a27086 1
 d27309 1
 a27309 1
 baskino.film,dnepr.info,dugtor.ru,filmitorrent.net,filmitorrent.site,jetsetter.ua,kinoafisha.ua,kinobar.vip,kinoukr.com,konohatv.life,ladys.media,moskva.fm,newstudio.tv,nnm-club.me,nnmclub.ro,nnmclub.to,pay-day.ru,roem.ru,rusfootball.info,uaserial.tv,utorr.cc,vc.ru,virusinfo.info,xxxadulttorrent.org,you-anime.ru,yummyanime.tv,zombie-film.live##body:not(#id):style(padding-top: 0 !important)
+a27731 1
+fastpic.org##.col-auto > div[class]:style(background-image: none !important)
 a28040 2
 kanobu.ru##a[href*="erid="]:style(pointer-events: none !important; color: inherit !important)
 ! ---

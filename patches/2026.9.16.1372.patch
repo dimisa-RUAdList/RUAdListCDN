@@ -1,11 +1,26 @@
-diff name:ruadlist lines:19 checksum:43df19895c
+diff name:ruadlist lines:37 checksum:9512318a17
 d4 2
 a5 2
-! Last modified: Fri, 18 Sep 2026 04:35:06 +0000
-! Diff-Path: ../patches/2026.9.18.275.patch#ruadlist
+! Last modified: Fri, 18 Sep 2026 09:37:45 +0000
+! Diff-Path: ../patches/2026.9.18.577.patch#ruadlist
 d7819 1
 a7819 1
 ||pw^$third-party,script,xmlhttprequest,domain=~adwiz.pp.ua|~dewalt.store|~easyquote.pw|~forum.worldofwarships.eu|~forum.worldofwarships.ru|~hansgrohe.ru|~hdvbplayer.tk|~herokuapp.com|~liveball.cc|~liveball.gg|~liveball.im|~liveball.my|~liveball.sx|~liveball.uno|~liveball.ws|~masterclub.store|~movielab.pro|~osu.ppy.sh|~panomama.ru|~pelcn.net|~philips.ru|~purina.ru|~softpir.com|~sportsvideoline3.pw|~tefal.ru|~tikkurila.ru|~vk-apps.com|~vulpecula.host
+d14066 1
+d14125 1
+d14501 1
+a14501 2
+fastpic.org#?##mainContainer:-abp-has(a[href*="/big/"] > img:not([src])) a[href*="html?info=1"]
+fastpic.org#?##mainContainer:-abp-has(a[href*="/fullview/"] > img:not([src])) a[href*="html?info=1"]
+d15130 1
+d15929 1
+d18641 1
+a19916 1
+fastpic.org##a[href*="/fullview/"] > img:not([src])
+d21172 2
+a21175 2
+korolevriamo.ru,mytischiriamo.ru,riamo.ru,schelkovoriamo.ru##div[class][style^="--"][style*="120px"] > div:first-child
+riamo.ru,riamobalashiha.ru##div[class][style^="--"][style*=":250px"]
 d22680 1
 a22680 1
 ||pikabu.ru/ajax/*?j6T2r=$xmlhttprequest
@@ -15,6 +30,9 @@ a22802 1
 a22814 2
 ||gogo.*.org/$third-party,media
 ||ozzi.*.org/$third-party,media
+d26234 1
+a27743 1
+fastpic.org##.col-auto > div[class]:style(background-image: none !important)
 a29909 2
 fastpic.org,~new.fastpic.org##+js(abort-on-property-read, MouseEvent)
 fastpic.org,~new.fastpic.org##+js(abort-on-property-read, document.dispatchEvent)

@@ -1,8 +1,8 @@
-diff name:ruadlist lines:55 checksum:43df19895c
+diff name:ruadlist lines:73 checksum:9512318a17
 d4 2
 a5 2
-! Last modified: Fri, 18 Sep 2026 04:35:06 +0000
-! Diff-Path: ../patches/2026.9.18.275.patch#ruadlist
+! Last modified: Fri, 18 Sep 2026 09:37:45 +0000
+! Diff-Path: ../patches/2026.9.18.577.patch#ruadlist
 d7819 1
 a7819 1
 ||pw^$third-party,script,xmlhttprequest,domain=~adwiz.pp.ua|~dewalt.store|~easyquote.pw|~forum.worldofwarships.eu|~forum.worldofwarships.ru|~hansgrohe.ru|~hdvbplayer.tk|~herokuapp.com|~liveball.cc|~liveball.gg|~liveball.im|~liveball.my|~liveball.sx|~liveball.uno|~liveball.ws|~masterclub.store|~movielab.pro|~osu.ppy.sh|~panomama.ru|~pelcn.net|~philips.ru|~purina.ru|~softpir.com|~sportsvideoline3.pw|~tefal.ru|~tikkurila.ru|~vk-apps.com|~vulpecula.host
@@ -16,6 +16,13 @@ a10908 1
 /tmp-new/js/kgi.js$domain=kinogo.my|kinogohd.im|kinogomy.net|kinogoua.net
 a12471 1
 ||mt.today/js/yandexloader.js
+d14064 1
+d14123 1
+d14499 1
+a14499 2
+fastpic.org#?##mainContainer:-abp-has(a[href*="/big/"] > img:not([src])) a[href*="html?info=1"]
+fastpic.org#?##mainContainer:-abp-has(a[href*="/fullview/"] > img:not([src])) a[href*="html?info=1"]
+d15128 1
 d15246 2
 a15370 1
 kyivvlada.com.ua##.adv-swiper
@@ -23,6 +30,7 @@ a15587 1
 agroreview.com,agroweek.com##.awb-slot
 a15805 1
 agronom.com.ua##.banner-top__wrapper
+d15926 1
 d18085 1
 a18085 1
 kinogo.my,kinogohd.im,kinogomy.net,kinogoua.net##.regpro
@@ -31,12 +39,19 @@ a18479 1
 dtf.ru,vc.ru##.sidebar__section-content > a[href^="https://edu.vc.ru/"]
 a18527 1
 kyivvlada.com.ua##.site-side-banner
+d18637 1
 a19680 1
 kyivvlada.com.ua##[id^="sidebar-"][id*="banner"]
 a19804 1
 mt.today##a.background
+a19910 1
+fastpic.org##a[href*="/fullview/"] > img:not([src])
 a20988 1
 mt.today##div[class$="-only"][style]
+d21165 2
+a21168 2
+korolevriamo.ru,mytischiriamo.ru,riamo.ru,schelkovoriamo.ru##div[class][style^="--"][style*="120px"] > div:first-child
+riamo.ru,riamobalashiha.ru##div[class][style^="--"][style*=":250px"]
 d22673 1
 a22673 1
 ||pikabu.ru/ajax/*?j6T2r=$xmlhttprequest
@@ -46,9 +61,12 @@ a22796 1
 a22808 2
 ||gogo.*.org/$third-party,media
 ||ozzi.*.org/$third-party,media
+d26228 1
 d27315 1
 a27315 1
 baskino.film,dnepr.info,dugtor.ru,filmitorrent.net,filmitorrent.site,jetsetter.ua,kinoafisha.ua,kinobar.vip,kinoukr.com,konohatv.life,ladys.media,moskva.fm,newstudio.tv,nnm-club.me,nnmclub.ro,nnmclub.to,pay-day.ru,roem.ru,rusfootball.info,uaserial.tv,utorr.cc,vc.ru,virusinfo.info,xxxadulttorrent.org,you-anime.ru,yummyanime.tv,zombie-film.live##body:not(#id):style(padding-top: 0 !important)
+a27737 1
+fastpic.org##.col-auto > div[class]:style(background-image: none !important)
 a29251 1
 agroreview.com,agroweek.com##+js(abort-on-property-read, AWB)
 a29902 2
