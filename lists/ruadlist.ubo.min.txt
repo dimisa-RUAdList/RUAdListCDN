@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 20 Sep 2026 11:13:28 +0000
-! Diff-Path: ../patches/2026.9.20.673.patch#ruadlist
+! Last modified: Sun, 20 Sep 2026 15:58:12 +0000
+! Diff-Path: ../patches/2026.9.20.958.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10394,7 +10394,7 @@ surl.*##.card-body > .row > div:first-child:not(:only-child)
 surl.*#?#.text-center:-abp-has(> form > .disabled) > p ~ *
 ! --- Блокировки
 .mp3$media,domain=pb.wtf|pirat.one|piratbit.fun|piratbit.org|piratbit.top
-/*magnific-popup.$script,stylesheet,domain=bhub.com.ua|kazus.ru
+/*magnific-popup.$script,stylesheet,domain=bhub.com.ua|kazus.ru|zahidfront.com.ua
 /build/js/base-modal-*.js|$script,domain=interesno.cc|obaldenno.com|pomada.cc|prikolno.cc
 /build/js/popup-*js|$script,domain=obaldenno.com|pomada.cc
 /eagle.autostart.$script,domain=gazeta.press|gazeta.ru|lenta.ru|rambler.ru
@@ -13860,6 +13860,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||zagorod.spb.ru/js/bnr.js
 ||zahav.ru/lenta$subdocument
 ||zahav.ru/mirtesen$subdocument
+||zahidfront.com.ua/img/videoprodaction.
 ||zakarpatpost.net//zakfiles/uploaded/2022/10/yasno62.png
 ||zakarpattya.net.ua/_adv/
 ||zakon.ru/BannerManipulation/
@@ -16946,7 +16947,7 @@ votpusk.ru##.header-vt-bn
 gazeta-severny.ru##.header-widget
 cont.ws##.header2
 xvatit.com##.header2 > .header
-obozrevatel.com##.headerBiding
+oboz.ua,obozrevatel.com##.headerBiding
 bst.bratsk.ru##.headerMainInlineLi > .adv-overlay
 bst.bratsk.ru##.headerMainInlineLi > .adv-overlay + .item-link
 city-n.ru##.header__adv
