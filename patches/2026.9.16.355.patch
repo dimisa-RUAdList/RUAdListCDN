@@ -1,8 +1,8 @@
-diff name:ruadlist lines:163 checksum:79b2cd6fa0
+diff name:ruadlist lines:174 checksum:be58d11e29
 d4 2
 a5 2
-! Last modified: Sun, 20 Sep 2026 06:06:21 +0000
-! Diff-Path: ../patches/2026.9.20.366.patch#ruadlist
+! Last modified: Sun, 20 Sep 2026 11:13:28 +0000
+! Diff-Path: ../patches/2026.9.20.673.patch#ruadlist
 a12 1
 ://fastpic.org^
 a4121 1
@@ -76,6 +76,8 @@ a19923 1
 sport-express.net,sport-express.ru##a[href*="/rating-book"]
 a19927 1
 vedomosti.ru##a[href*="/sport/rb"]
+a20041 1
+gdebenz.ru##a[href*="erid"]
 d20129 1
 d20224 1
 a20634 1
@@ -105,6 +107,8 @@ a22813 1
 ||rubakaka.org^$third-party
 a22819 1
 ||vertiguzha.link^$third-party
+a23630 1
+www.rambler.ru##[data-overflow-item="spasibo"]
 a23888 2
 sports.ru##.match-factoids
 sports.ru##.match-odds
@@ -122,9 +126,14 @@ a27315 1
 baskino.film,dnepr.info,dugtor.ru,filmitorrent.net,filmitorrent.site,jetsetter.ua,kinoafisha.ua,kinobar.vip,kinoukr.com,konohatv.life,ladys.media,moskva.fm,newstudio.tv,nnm-club.me,nnmclub.ro,nnmclub.to,pay-day.ru,roem.ru,rusfootball.info,uaserial.tv,utorr.cc,vc.ru,virusinfo.info,xxxadulttorrent.org,you-anime.ru,yummyanime.tv,zombie-film.live##body:not(#id):style(padding-top: 0 !important)
 a27737 1
 fastpic.org##.col-auto > div[class]:style(background-image: none !important)
+a27738 2
+ac,ag,ai,app,art,biz,blog,buzz,by,cc,city,cloud,club,co,com,dev,family,fi,fm,gg,in,info,ink,io,is,kim,kz,la,lib,life,loan,love,me,name,net,news,org,plus,press,pro,pub,rest,ru,run,sh,si,so,space,su,tech,today,tv,ua,video,vip,website,wiki,win,work,xyz##a[href*="fastpic.org"]:not([href^="https://new.fastpic.org/"]):style(pointer-events: none !important)
+ac,ag,ai,app,art,biz,blog,buzz,by,cc,city,cloud,club,co,com,dev,family,fi,fm,gg,in,info,ink,io,is,kim,kz,la,lib,life,loan,love,me,name,net,news,org,plus,press,pro,pub,rest,ru,run,sh,si,so,space,su,tech,today,tv,ua,video,vip,website,wiki,win,work,xyz##a[href*="fastpic.ru"]:style(pointer-events: none !important)
 d28114 1
 a28114 1
 www.kinopoisk.ru###modal-container > [class^="styles_root_"] ~ div:not([class^="styles_modal_"]):not([class^="styles_overlay_"]):not([class^="styles_touch"]):not([class^="styles_closeArea"])
+a28479 1
+www.rambler.ru##div[id^="tabs-_"][id$="_-more"]:not([style]):style(opacity: 0 !important)
 d28911 2
 a28912 1
 dzen.ru,sportsdzen.ru##[aria-label] > div[class*="_content_"] > div > div > div[style^="height:"] > div > div[id]
@@ -146,6 +155,8 @@ a29354 1
 a29356 1
 shadowcore.ru##+js(abort-on-property-write, __trap_run)
 d29368 1
+a29517 1
+www.rambler.ru##+js(prevent-addEventListener, scroll, requestAnimationFrame)
 a29567 1
 rutr.life,rutracker.lib,rutracker.net,rutracker.org##+js(set-attr, a.postLink[href^="http"]:not([target="_blank"]), target, true)
 a29767 1

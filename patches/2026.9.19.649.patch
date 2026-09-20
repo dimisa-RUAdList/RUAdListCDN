@@ -1,8 +1,8 @@
-diff name:ruadlist lines:44 checksum:79b2cd6fa0
+diff name:ruadlist lines:55 checksum:be58d11e29
 d4 2
 a5 2
-! Last modified: Sun, 20 Sep 2026 06:06:21 +0000
-! Diff-Path: ../patches/2026.9.20.366.patch#ruadlist
+! Last modified: Sun, 20 Sep 2026 11:13:28 +0000
+! Diff-Path: ../patches/2026.9.20.673.patch#ruadlist
 a12 1
 ://fastpic.org^
 a4121 1
@@ -15,6 +15,8 @@ a10527 1
 ://fastpic.org^$csp=sandbox allow-same-origin;
 a13308 1
 ||static.fastpic.org^$domain=fastpic.org|~new.fastpic.org
+a20052 1
+gdebenz.ru##a[href*="erid"]
 a20643 1
 riamo.ru,riamobalashiha.ru##article > div[class][style^="--"][style*="0px"]
 a20656 1
@@ -23,6 +25,13 @@ d21178 1
 d22796 1
 a22796 1
 apad2.top,besplatnyeprogrammy.ru,fastpic.org,games-7.com,hdrip.info,mediagetguru.ru,mixsoft.org,monna2.top,~new.fastpic.org,torrent-muzic.ru,torrent-soft.ru##:not(this-site-promotes-malware)
+a23641 1
+www.rambler.ru##[data-overflow-item="spasibo"]
+a27752 2
+ac,ag,ai,app,art,biz,blog,buzz,by,cc,city,cloud,club,co,com,dev,family,fi,fm,gg,in,info,ink,io,is,kim,kz,la,lib,life,loan,love,me,name,net,news,org,plus,press,pro,pub,rest,ru,run,sh,si,so,space,su,tech,today,tv,ua,video,vip,website,wiki,win,work,xyz##a[href*="fastpic.org"]:not([href^="https://new.fastpic.org/"]):style(pointer-events: none !important)
+ac,ag,ai,app,art,biz,blog,buzz,by,cc,city,cloud,club,co,com,dev,family,fi,fm,gg,in,info,ink,io,is,kim,kz,la,lib,life,loan,love,me,name,net,news,org,plus,press,pro,pub,rest,ru,run,sh,si,so,space,su,tech,today,tv,ua,video,vip,website,wiki,win,work,xyz##a[href*="fastpic.ru"]:style(pointer-events: none !important)
+a28493 1
+www.rambler.ru##div[id^="tabs-_"][id$="_-more"]:not([style]):style(opacity: 0 !important)
 d28957 1
 a28957 2
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.app__wrapper .game-root:style(width: 100% !important)
@@ -30,6 +39,8 @@ yandex.by,yandex.kz,yandex.ru,yandex.uz##.app__wrapper .play-similar-games:style
 d29222 1
 a29222 1
 $document,reason=malicious,domain=apad2.top|besplatnyeprogrammy.ru|fastpic.org|games-7.com|hdrip.info|mediagetguru.ru|mixsoft.org|monna2.top|~new.fastpic.org|torrent-muzic.ru|torrent-soft.ru
+a29531 1
+www.rambler.ru##+js(prevent-addEventListener, scroll, requestAnimationFrame)
 a29581 1
 rutr.life,rutracker.lib,rutracker.net,rutracker.org##+js(set-attr, a.postLink[href^="http"]:not([target="_blank"]), target, true)
 a29781 1

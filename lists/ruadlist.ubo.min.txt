@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 20 Sep 2026 06:06:21 +0000
-! Diff-Path: ../patches/2026.9.20.366.patch#ruadlist
+! Last modified: Sun, 20 Sep 2026 11:13:28 +0000
+! Diff-Path: ../patches/2026.9.20.673.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -20056,6 +20056,7 @@ softportal.com##a[href*="driverpack-solution"]
 gurutestov.ru##a[href*="ecvator."]
 komapz.net##a[href*="epidems.net"]
 kubyshka.org,radiochief.ru,riperam.org,znamyuzl.ru##a[href*="epngo.bz"]
+gdebenz.ru##a[href*="erid"]
 cybersport.ru##a[href*="erid:"][target="_blank"]
 business-gazeta.ru,www.ixbt.com##a[href*="erid="]
 66.ru,agronovosti.ru,kinorium.com,sport-express.net,sport-express.ru##a[href*="erid="][target="_blank"]
@@ -23646,6 +23647,7 @@ championat.com,championat.ru##[data-href*="okko.sport"]
 championat.com,championat.ru##[data-href*="utm_"]
 motor.ru##[data-motor-desktop*="exchange_block"]
 rambler.ru,rambler.ua##[data-news_media-desktop*="rnet_widget"]
+www.rambler.ru##[data-overflow-item="spasibo"]
 ferra.ru,indicator.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,secretmag.ru,wmj.ru##[data-qa="lb-content"] ~ [data-qa="lb-footer"] ~ div
 rambler.ru##[data-rcmw-init]
 sport.rambler.ru##[data-sport_media-desktop*="rnet_widget"]
@@ -27757,6 +27759,8 @@ factor.ua##body:style(overflow: auto !important)
 fastpic.org###picContainer > [style="position: relative;"]:style(background-image: none !important)
 fastpic.org##.col-auto > div[class]:style(background-image: none !important)
 fastpic.org##.justify-content-center > .col[id]:style(max-width: max-content !important)
+ac,ag,ai,app,art,biz,blog,buzz,by,cc,city,cloud,club,co,com,dev,family,fi,fm,gg,in,info,ink,io,is,kim,kz,la,lib,life,loan,love,me,name,net,news,org,plus,press,pro,pub,rest,ru,run,sh,si,so,space,su,tech,today,tv,ua,video,vip,website,wiki,win,work,xyz##a[href*="fastpic.org"]:not([href^="https://new.fastpic.org/"]):style(pointer-events: none !important)
+ac,ag,ai,app,art,biz,blog,buzz,by,cc,city,cloud,club,co,com,dev,family,fi,fm,gg,in,info,ink,io,is,kim,kz,la,lib,life,loan,love,me,name,net,news,org,plus,press,pro,pub,rest,ru,run,sh,si,so,space,su,tech,today,tv,ua,video,vip,website,wiki,win,work,xyz##a[href*="fastpic.ru"]:style(pointer-events: none !important)
 fastpic.org##body > footer:style(background: none !important)
 ! ---
 fbsearch.ru###search_panel > .panel-body ~ div
@@ -28498,6 +28502,7 @@ horoscopes.rambler.ru##.ad_branding_main > div[class]:style(max-width: 100% !imp
 horoscopes.rambler.ru##.ad_branding_main:style(max-width: 100% !important)
 rambler.ru##[data-cerber="weather-widget"] > a[href^="https://weather.rambler.ru/"] > [data-text="true"]:style(container-type: inherit !important)
 rambler.ru##[data-cerber="weather-widget"] > a[href^="https://weather.rambler.ru/"] > div:first-child::before:style(background-position: inherit !important)
+www.rambler.ru##div[id^="tabs-_"][id$="_-more"]:not([style]):style(opacity: 0 !important)
 www.rambler.ru##footer:style(max-width: 100% !important)
 ! ---
 rbkgames.com##.branding .main-content:style(margin-top: 90px !important)
@@ -29537,6 +29542,7 @@ mem-hub.ru##+js(prevent-addEventListener, DOMContentLoaded, /adBlocks|adObserver
 rutube.ru##+js(prevent-addEventListener, click, showRedirectPopup)
 liveinternet.ru##+js(prevent-addEventListener, load, AdvManager)
 dumatv.ru##+js(prevent-addEventListener, message, AUTOPLAY)
+www.rambler.ru##+js(prevent-addEventListener, scroll, requestAnimationFrame)
 news.rambler.ru##+js(prevent-fetch, &origin_type=rtb, url:/rutube.ru/api/tags/video/)
 dzen.ru,sportsdzen.ru##+js(prevent-fetch, /stats/bulk|stats/pixels|zen_audit/)
 progorod62.ru,ura.news##+js(prevent-fetch, _rsc=)
