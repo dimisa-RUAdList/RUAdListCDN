@@ -1,13 +1,23 @@
-diff name:ruadlist lines:61 checksum:dd61953307
+diff name:ruadlist lines:93 checksum:79b2cd6fa0
 d4 2
 a5 2
-! Last modified: Sat, 19 Sep 2026 20:32:14 +0000
-! Diff-Path: ../patches/2026.9.19.1232.patch#ruadlist
+! Last modified: Sun, 20 Sep 2026 06:06:21 +0000
+! Diff-Path: ../patches/2026.9.20.366.patch#ruadlist
+a12 1
+://fastpic.org^
+a4121 1
+||nalitek.com^$third-party
 a5776 1
 ||sportrg.ru^
+a10271 1
+vitrina.tv##.fCCDro
+a10527 1
+://fastpic.org^$csp=sandbox allow-same-origin;
 a13269 2
 ||sportandbets.com/local/components/desktop_adv/
 ||sportandbets.com/main/betsonsport.
+a13306 1
+||static.fastpic.org^$domain=fastpic.org|~new.fastpic.org
 a14060 1
 sportandbets.com###bk-rating-aside
 d14066 1
@@ -36,10 +46,16 @@ a19933 1
 vedomosti.ru##a[href*="/sport/rb"]
 d20135 1
 d20230 1
+a20640 1
+riamo.ru,riamobalashiha.ru##article > div[class][style^="--"][style*="0px"]
+a20653 1
+riamo.ru,riamobalashiha.ru##article ~ div[class][style^="--"][style*="0px"]
 d21172 2
-a21175 2
+a21175 1
 korolevriamo.ru,mytischiriamo.ru,riamo.ru,schelkovoriamo.ru##div[class][style^="--"][style*="120px"] > div:first-child
-riamo.ru,riamobalashiha.ru##div[class][style^="--"][style*=":250px"]
+d22793 1
+a22793 1
+apad2.top,besplatnyeprogrammy.ru,fastpic.org,games-7.com,hdrip.info,mediagetguru.ru,mixsoft.org,monna2.top,~new.fastpic.org,torrent-muzic.ru,torrent-soft.ru##:not(this-site-promotes-malware)
 d22802 1
 a22802 1
 .link/yh1eo0l?$third-party,xmlhttprequest
@@ -60,3 +76,19 @@ d28951 1
 a28951 2
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.app__wrapper .game-root:style(width: 100% !important)
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.app__wrapper .play-similar-games:style(width: 100% !important)
+d29216 1
+a29216 1
+$document,reason=malicious,domain=apad2.top|besplatnyeprogrammy.ru|fastpic.org|games-7.com|hdrip.info|mediagetguru.ru|mixsoft.org|monna2.top|~new.fastpic.org|torrent-muzic.ru|torrent-soft.ru
+a29575 1
+rutr.life,rutracker.lib,rutracker.net,rutracker.org##+js(set-attr, a.postLink[href^="http"]:not([target="_blank"]), target, true)
+a29775 1
+rutr.life,rutracker.lib,rutracker.net,rutracker.org##a.postLink[href^="http"]:remove-class(p-ext-link)
+d29936 12
+a29947 5
+! Блокировка, в связи с намеренной несовместимостью
+fastpic.org,~new.fastpic.org##+js(remove-attr, src|style)
+fastpic.org,~new.fastpic.org##+js(remove-node-text, title, /^/)
+fastpic.org,~new.fastpic.org##^responseheader(location)
+fastpic.org,~new.fastpic.org##html:remove()
+a30081 1
+||vk.ru/clip_ext.php?$third-party,subdocument,removeparam=autoplay

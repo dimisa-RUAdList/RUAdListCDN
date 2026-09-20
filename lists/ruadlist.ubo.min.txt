@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 19 Sep 2026 20:32:14 +0000
-! Diff-Path: ../patches/2026.9.19.1232.patch#ruadlist
+! Last modified: Sun, 20 Sep 2026 06:06:21 +0000
+! Diff-Path: ../patches/2026.9.20.366.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10,6 +10,7 @@
 .vnadsrv.com^
 //89.108.109.12^$object
 //95.169.186.139^
+://fastpic.org^
 |ws*//*.igrid.org^
 |ws*//*10root25.website^
 |ws*//*185.87.50.147^
@@ -4119,6 +4120,7 @@
 ||nadajotum.com^$third-party
 ||naiton.ru^*/lookbanner/
 ||nalabutenahah.com^$third-party
+||nalitek.com^$third-party
 ||nalivaj.ru^$third-party
 ||namefeedever.online^$third-party
 ||namezones.ru^$third-party
@@ -10270,6 +10272,7 @@ embed.smotrim.ru##.disclaimers
 gofrag.ru##.eb-inst
 rufonts.ru##.elementor-popup-modal
 elhow.ru##.extra-banner
+vitrina.tv##.fCCDro
 great.az##.facebook-bg,.facebook-window
 alllyr.ru##.fancybox-container
 advis.ru##.fancybox-overlay
@@ -10526,6 +10529,7 @@ $csp=script-src-attr 'none',domain=volyn.com.ua
 .softoroom.org^$csp=default-src 'unsafe-inline',domain=~gzip.softoroom.org|~m.softoroom.org
 /bens/vinos.js$csp=sandbox allow-same-origin;
 /gateway/aHR0c$csp=script-src
+://fastpic.org^$csp=sandbox allow-same-origin;
 |http*://fastpic.org/$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' static.fastpic.org; connect-src 'self'; frame-src 'self'
 ||24click.*/top/$csp=script-src
 ||24smi-*/top/$csp=script-src
@@ -13307,6 +13311,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||static.criteo.net^$script,domain=minfin.com.ua
 ||static.ctnews.ru/js/prod/uniroll.js
 ||static.fastpic.$subdocument,domain=fastpic.org
+||static.fastpic.org^$domain=fastpic.org|~new.fastpic.org
 ||static.kulina.ru/br/
 ||static.li.ru/radio/*rmm.$script,stylesheet
 ||static.lostfilm.top/temp/wow_
@@ -20642,6 +20647,7 @@ zlatopil.com##article > a[target="_blank"][style="display: block; width: 100%;"]
 bankiros.ru#?#article > aside:-abp-has(> [data-offer])
 zmi.ck.ua##article > br + small
 vsthemes.org##article > div:not([class])
+riamo.ru,riamobalashiha.ru##article > div[class][style^="--"][style*="0px"]
 vladday.ru##article > div[style^="min-height:"]
 dtf.ru#?#article > figure:-abp-has(> .block-wrapper__content a[href]:-abp-contains(пополнить Steam))
 24boxing.com.ua#?#article > h2:-abp-contains(/реклама/i)
@@ -20655,6 +20661,7 @@ semestr.online,semestr.ru#?#article div:-abp-has(> [action*="vse-sdal.com"])
 glavpost.com##article div[style*="#EFEFEF"]
 domodedovoriamo.ru,korolevriamo.ru,krasnogorskriamo.ru,lubertsyriamo.ru,mytischiriamo.ru,podolskriamo.ru,reutovriamo.ru,riamo.ru,riamobalashiha.ru,schelkovoriamo.ru,sergposadriamo.ru##article ul > li > button
 4pda.to#?#article ~ article:-abp-has(> [class] > div:only-child > img:first-child)
+riamo.ru,riamobalashiha.ru##article ~ div[class][style^="--"][style*="0px"]
 point.md#?#article:-abp-has(> div[id^="article-"] > .business)
 qip.ru##article[data-type="advert"]
 mi100.info##article[id^="post-"] > .entry-meta + div[style^="padding-bottom:"]
@@ -21176,7 +21183,6 @@ hentailib.me,hentailib.org,mangalib.me,mangalib.org,ranobelib.me,shlib.life,yaoi
 riamo.ru##div[class][style^="--"][style$=":300px;"]
 riamo.ru##div[class][style^="--"][style$=":500px;"]
 korolevriamo.ru,mytischiriamo.ru,riamo.ru,schelkovoriamo.ru##div[class][style^="--"][style*="120px"] > div:first-child
-riamo.ru,riamobalashiha.ru##div[class][style^="--"][style*=":250px"]
 puzzleheap.ru##div[class][style^="height:"][id]:empty
 livejournal.com#?#div[class][style^="height:"][style*="background-color: black; position: relative;"]:-abp-has([src*="docking"][src*="eaglecdn"])
 news.pn##div[class][style^="width:"][style$="300px;"]
@@ -22794,7 +22800,7 @@ www.drive2.ru##iframe[style="opacity: 1;"]
 liveinternet.ru##style + div > div > div > div > div a
 !#endif
 ! Блокировка ресурсов, намеренно продвигающих вредоносное ПО и фейки
-apad2.top,besplatnyeprogrammy.ru,games-7.com,hdrip.info,mediagetguru.ru,mixsoft.org,monna2.top,torrent-muzic.ru,torrent-soft.ru##:not(this-site-promotes-malware)
+apad2.top,besplatnyeprogrammy.ru,fastpic.org,games-7.com,hdrip.info,mediagetguru.ru,mixsoft.org,monna2.top,~new.fastpic.org,torrent-muzic.ru,torrent-soft.ru##:not(this-site-promotes-malware)
 ! Намеренное продвижение фейков и мошенников
 ||tele.ru^$xmlhttprequest,domain=tele.ru
 ! Плеер VeoVeo
@@ -29221,7 +29227,7 @@ inoreader.com###reader_pane:style(padding-right: unset !important)
 inoreader.com###sinner_container:style(display: block !important; z-index: 0 !important)
 rambler.ru###summary ~ div:has(> [id^="cluster-video-ad"]):remove()
 pronpic.org###vO5STmSLgNAkebzSluI8coxpDgsG97g:style(height: 1px !important; min-height: 1px !important)
-$document,reason=malicious,domain=apad2.top|besplatnyeprogrammy.ru|games-7.com|hdrip.info|mediagetguru.ru|mixsoft.org|monna2.top|torrent-muzic.ru|torrent-soft.ru
+$document,reason=malicious,domain=apad2.top|besplatnyeprogrammy.ru|fastpic.org|games-7.com|hdrip.info|mediagetguru.ru|mixsoft.org|monna2.top|~new.fastpic.org|torrent-muzic.ru|torrent-soft.ru
 */bens/vinos.js$popunder
 kolizhanka.com.ua,miyzvuk.net,ozon.ru##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important)
 captcha-api.yandex.ru,id.vk.ru,passport.yandex.ru,sso.dzen.ru,sso.ya.ru#@#+js()
@@ -29581,6 +29587,7 @@ rbc.ru##+js(set-attr, .content-custom [href*="?from="]:not([href*="utm"]), targe
 fishki.net##+js(set-attr, .cycle-carousel-wrap > a.bottom_slide__item > img, src, [data-src])
 fishki.net##+js(set-attr, .drag_element a[href*=".html"], target, true)
 eneyida.tv##+js(set-attr, .owl-item > a > img, src, [data-src])
+rutr.life,rutracker.lib,rutracker.net,rutracker.org##+js(set-attr, a.postLink[href^="http"]:not([target="_blank"]), target, true)
 rbc.ru##+js(set-attr, a[href*="?from=newsfeed"][data-role="title-link"], target, true)
 overclockers.ru##+js(set-attr, img[src="https://overclockers.ru/assets/logo_gray_stub.gif"], src, [data-src])
 joyreactor.cc,reactor.cc##+js(set-attr, video, controls, true)
@@ -29781,6 +29788,7 @@ dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[id^="suggest-item-"]:has
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[id^="suggest-item-"]:has(> a[href][target="_blank"]):remove()
 pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##[value="Скачать"]:remove-attr(disabled)
 www.gazeta.ru##^responseheader(location)
+rutr.life,rutracker.lib,rutracker.net,rutracker.org##a.postLink[href^="http"]:remove-class(p-ext-link)
 24smi.org##a[href*="://24smi.org/"]:remove-attr(target)
 aniu.ru,liveball.*##+js(no-setInterval-if, debugger)
 respawn.media#?#article:has(> div span:has-text(/РЕКЛАМА: ЕРИД/i)) a[href^="http"]:not([href*="respawn.media/"]):style(pointer-events: none !important; border-bottom: none !important; color: inherit !important)
@@ -29941,18 +29949,11 @@ fastpic.org,~new.fastpic.org##a[href*="/fullview/"] > img[src*="/preview/"]:styl
 fastpic.org,~new.fastpic.org##a[href*="/fullview/"]:remove-attr(target)
 fastpic.org,~new.fastpic.org##a[href="https://static.fastpic.ru/FastPicUploader.apk"]:remove-attr(target)
 fastpic.org,~new.fastpic.org##body > template:remove()
-! отключенные на время теста правила
-!*$popunder,domain=fastpic.org
-!://fastpic.org^
-!$document,reason=malicious,from=~new.fastpic.org|fastpic.org
-!fastpic.org,~new.fastpic.org##+js(remove-attr, src|style)
-!fastpic.org,~new.fastpic.org##+js(remove-node-text, title, /^/)
-!fastpic.org,~new.fastpic.org##:not(this-site-promotes-malware)
-!fastpic.org,~new.fastpic.org##^responseheader(location)
-!!#if env_mv3
-!://fastpic.org^$badfilter
-!://fastpic.org^$doc
-!!#endif
+! Блокировка, в связи с намеренной несовместимостью
+fastpic.org,~new.fastpic.org##+js(remove-attr, src|style)
+fastpic.org,~new.fastpic.org##+js(remove-node-text, title, /^/)
+fastpic.org,~new.fastpic.org##^responseheader(location)
+fastpic.org,~new.fastpic.org##html:remove()
 ! Mail.RU
 mail.ru###grid div[class^="feed__"]:remove()
 cloud.mail.ru###react-modals:has(a[href^="https://vk.cc/"])
@@ -30087,6 +30088,7 @@ vk.ru/video_ext.php##+js(set-constant, Object.prototype.autoplay, undefined)
 vkvideo.ru/video_ext.php##+js(set-constant, Object.prototype.autoplay, undefined)
 ||vk.com/clip_ext.php?$third-party,subdocument,removeparam=autoplay
 ||vk.com/video_ext.php?$third-party,subdocument,removeparam=autoplay,domain=~mediahope.ru
+||vk.ru/clip_ext.php?$third-party,subdocument,removeparam=autoplay
 ||vk.ru/video_ext.php?$third-party,subdocument,removeparam=autoplay
 ||vkvideo.ru/video_ext.php?$third-party,subdocument,removeparam=autoplay
 ! ---
