@@ -1,15 +1,27 @@
-diff name:ruadlist lines:39 checksum:52ee974254
+diff name:ruadlist lines:58 checksum:58dcd99a5f
 d4 2
 a5 2
-! Last modified: Sun, 20 Sep 2026 21:28:14 +0000
-! Diff-Path: ../patches/2026.9.20.1288.patch#ruadlist
+! Last modified: Mon, 21 Sep 2026 04:48:56 +0000
+! Diff-Path: ../patches/2026.9.21.288.patch#ruadlist
+a2170 1
+||fontmenice.com^$third-party
 d9291 1
+a14625 1
+sportarena.ua###page > .nomobile:empty
+d14895 1
+a14895 1
+4studio.com.ua###sidebar > .widget_text
+a15199 1
+xsport.ua#?#.MuiBox-root:-abp-has(> .MuiStack-root + .MuiStack-root [rel*="sponsored"])
 d15905 1
+a16261 1
+sportarena.ua##.category__advertisement
 d16398 1
 a16398 1
 flashscore.com.ua,flashscore.ua,flashscorekz.com,livescore.in##.container__bannerZone
 d16482 1
 d16547 1
+d17448 1
 d17678 1
 a17678 1
 flashscore.com.ua,flashscore.ua,flashscorekz.com,livescore.in,pimpletv.me##.odds
@@ -22,6 +34,7 @@ a19483 2
 flashscore.com.ua,flashscore.ua,flashscorekz.com,livescore.in##[data-analytics-alias*="odds"]
 flashscore.com.ua,flashscore.ua,flashscorekz.com,livescore.in##[data-analytics-context="widget-match-summary-odds"]
 d20748 1
+d20772 1
 d20885 3
 d21693 1
 a21693 1
@@ -29,6 +42,8 @@ flashscore.com.ua,flashscore.ua,flashscorekz.com,livescore.in##div[id^="box-over
 d22444 1
 a22444 1
 flashscore.com.ua,flashscore.ua,flashscorekz.com,livescore.in##sport[name="soccer"]
+a22468 1
+livetv.sx#?#table[bgcolor] > tbody > tr > td[bgcolor]:-abp-has(.odb)
 a22807 8
 ! Плееры livetv.sx
 livetvstream.pro,me,online##body > #localpp[onclick*="window.open"]
@@ -38,3 +53,7 @@ livetvstream.pro,me,online##body[bgcolor] > div[id^="iframe-container"]
 ||ii.apl*.me/js/pop.js|$script
 ||ii.apl*.online/js/pop.js|$script
 ||ii.apl*.pro/js/pop.js|$script
+a24012 1
+tribuna.com#?#div[class$="match_layout__left_column__main"] > div:-abp-has([href*="/betting/"])
+a24018 1
+tribuna.com#?#div[class^="MatchLayout-module__"][class$="__match_layout"] > [data-test]:-abp-has([href*="/betting/"])

@@ -1,10 +1,12 @@
-diff name:ruadlist lines:92 checksum:52ee974254
+diff name:ruadlist lines:111 checksum:58dcd99a5f
 d4 2
 a5 2
-! Last modified: Sun, 20 Sep 2026 21:28:14 +0000
-! Diff-Path: ../patches/2026.9.20.1288.patch#ruadlist
+! Last modified: Mon, 21 Sep 2026 04:48:56 +0000
+! Diff-Path: ../patches/2026.9.21.288.patch#ruadlist
 a12 1
 ://fastpic.org^
+a2169 1
+||fontmenice.com^$third-party
 a4121 1
 ||nalitek.com^$third-party
 d9289 1
@@ -19,7 +21,16 @@ a13309 1
 ||static.fastpic.org^$domain=fastpic.org|~new.fastpic.org
 a13857 1
 ||zahidfront.com.ua/img/videoprodaction.
+a14619 1
+sportarena.ua###page > .nomobile:empty
+d14889 1
+a14889 1
+4studio.com.ua###sidebar > .widget_text
+a15193 1
+xsport.ua#?#.MuiBox-root:-abp-has(> .MuiStack-root + .MuiStack-root [rel*="sponsored"])
 d15899 1
+a16255 1
+sportarena.ua##.category__advertisement
 d16392 1
 a16392 1
 flashscore.com.ua,flashscore.ua,flashscorekz.com,livescore.in##.container__bannerZone
@@ -28,6 +39,7 @@ d16541 1
 d16944 1
 a16944 1
 oboz.ua,obozrevatel.com##.headerBiding
+d17442 1
 d17672 1
 a17672 1
 flashscore.com.ua,flashscore.ua,flashscorekz.com,livescore.in,pimpletv.me##.odds
@@ -46,6 +58,7 @@ riamo.ru,riamobalashiha.ru##article > div[class][style^="--"][style*="0px"]
 a20657 1
 riamo.ru,riamobalashiha.ru##article ~ div[class][style^="--"][style*="0px"]
 d20739 1
+d20763 1
 d20876 3
 d21179 1
 d21685 1
@@ -54,6 +67,8 @@ flashscore.com.ua,flashscore.ua,flashscorekz.com,livescore.in##div[id^="box-over
 d22436 1
 a22436 1
 flashscore.com.ua,flashscore.ua,flashscorekz.com,livescore.in##sport[name="soccer"]
+a22460 1
+livetv.sx#?#table[bgcolor] > tbody > tr > td[bgcolor]:-abp-has(.odb)
 d22797 1
 a22797 1
 apad2.top,besplatnyeprogrammy.ru,fastpic.org,games-7.com,hdrip.info,mediagetguru.ru,mixsoft.org,monna2.top,~new.fastpic.org,torrent-muzic.ru,torrent-soft.ru##:not(this-site-promotes-malware)
@@ -68,6 +83,10 @@ livetvstream.pro,me,online##body[bgcolor] > div[id^="iframe-container"]
 ||ii.apl*.pro/js/pop.js|$script
 a23642 1
 www.rambler.ru##[data-overflow-item="spasibo"]
+a24003 1
+tribuna.com#?#div[class$="match_layout__left_column__main"] > div:-abp-has([href*="/betting/"])
+a24009 1
+tribuna.com#?#div[class^="MatchLayout-module__"][class$="__match_layout"] > [data-test]:-abp-has([href*="/betting/"])
 a27753 2
 ac,ag,ai,app,art,biz,blog,buzz,by,cc,city,cloud,club,co,com,dev,family,fi,fm,gg,in,info,ink,io,is,kim,kz,la,lib,life,loan,love,me,name,net,news,org,plus,press,pro,pub,rest,ru,run,sh,si,so,space,su,tech,today,tv,ua,video,vip,website,wiki,win,work,xyz##a[href*="fastpic.org"]:not([href^="https://new.fastpic.org/"]):style(pointer-events: none !important)
 ac,ag,ai,app,art,biz,blog,buzz,by,cc,city,cloud,club,co,com,dev,family,fi,fm,gg,in,info,ink,io,is,kim,kz,la,lib,life,loan,love,me,name,net,news,org,plus,press,pro,pub,rest,ru,run,sh,si,so,space,su,tech,today,tv,ua,video,vip,website,wiki,win,work,xyz##a[href*="fastpic.ru"]:style(pointer-events: none !important)
