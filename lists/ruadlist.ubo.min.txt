@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 21 Sep 2026 10:37:08 +0000
-! Diff-Path: ../patches/2026.9.21.637.patch#ruadlist
+! Last modified: Mon, 21 Sep 2026 16:58:41 +0000
+! Diff-Path: ../patches/2026.9.21.1018.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -19050,7 +19050,7 @@ sovetromantica.com##.vjs-overlay-background
 prgazeta.ru##.vk-group
 gdz-putina.fun##.vk_show
 vk.com,vk.ru##.vkuiBanner__host
-vk.com,vk.ru#?#.vkuiGroup__modeCard > [role="feed"] > article:-abp-has(> [data-post-id] [data-testid="post-header"] > div:nth-child(2) > div + div > div span)
+vk.com,vk.ru#?#.vkuiGroup__modeCard > [role="feed"] > article:-abp-has(> [data-post-id] [data-testid="post-header"] > div:nth-child(2) > div + div > div span[data-role])
 vk.com,vk.ru#?#.vkuiGroup__modeCard > [role="feed"] > article:-abp-has(> [data-post-id] a[rel]:-abp-contains(vk.cc/))
 yapx.ru##.vlDxyyFUTdjDdXmIBPxWDa
 spletnik.ru##.vms_article_parent a[href*="utm_"]
@@ -22817,7 +22817,7 @@ $popup,domain=rstprgapipt.com|temp2cdn.link|temptcdn.com
 .json?unique=$third-party,xmlhttprequest
 .link/*/*/*?*=*-*-*-$third-party,xmlhttprequest
 .link/*?*=*-*-*-*-$third-party,xmlhttprequest
-.link/yh1eo0l?$third-party,xmlhttprequest
+.link/nrybn33j9e?$third-party,xmlhttprequest
 .txt?fre=$third-party,xmlhttprequest
 .txt?unique=$third-party,xmlhttprequest
 /ad-rotator/ad-list.json
@@ -22830,7 +22830,9 @@ $popup,domain=rstprgapipt.com|temp2cdn.link|temptcdn.com
 ||cdn-global-mb.com^$third-party
 ||cdn-global-mst.com^$third-party
 ||cdn-mst-ru.com^$third-party
+||eugeniy.org^$third-party
 ||krasnomaga.link^$third-party
+||morozovnya.link^$third-party
 ||pfdzbcmost.com^$popup
 ||rstprgapipt.com/*.xml?$xmlhttprequest
 ||rstprgapipt.com/api-integration/
@@ -23988,6 +23990,7 @@ sports.ru##[data-control^="Banners."]
 sports.ru##[data-is-ad-poll] .bookmaker-info
 sports.ru##[data-link*="=erid"]
 sports.ru##[data-link*="erid="]
+tribuna.com##[data-menu-mainsections="casino"]
 sports.ru##[data-type="reklama"]
 sports.ru##[id*="ScriptRoot"]
 sports.ru##[id^="dfp-fullscreen-"]
@@ -24018,6 +24021,8 @@ sports.ru##body > div[class^="br-lt"] > :not(.page-layout):not(.pageLayout)
 tribuna.com#?#div:-abp-has(> div > [style="display: flex;"] > div[id*="_Inread"])
 tribuna.com#?#div[class$="match_layout__left_column__main"] > div:-abp-has([href*="/betting/"])
 sports.ru##div[class*="SALES"] > .accordion__handle
+tribuna.com##div[class*="_match_page__chat_odds_wrapper"]
+tribuna.com##div[class*="_tournament-branding__empty-block"]
 tribuna.com##div[class*="main_layout__empty_block"]
 tribuna.com#?#div[class*="right_column"] div:-abp-has(> [style^="--banner-height:"])
 tribuna.com##div[class^="Banner-module"]
@@ -24026,6 +24031,7 @@ tribuna.com##div[class^="MatchLayout-module_"] > [style="display: contents;"] > 
 tribuna.com#?#div[class^="MatchLayout-module__"][class$="__match_layout"] > [data-test]:-abp-has([href*="/betting/"])
 tribuna.com##div[class^="_ideal-media_"]
 tribuna.com#?#div[class^="_structured-body_"] > div:-abp-has([id*="Postscripts_News"])
+tribuna.com##div[class^="_tournaments-header__hero_"]
 cyber.sports.ru##div[class^="desktop-teaser_"] a[href*="://sirena.world/"]
 tribuna.com##div[data-anchor^="_"][class^="_"]
 sports.ru##div[data-control-noinit="Common.BetsTabs"]
