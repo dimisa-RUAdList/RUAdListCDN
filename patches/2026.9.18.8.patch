@@ -1,8 +1,8 @@
-diff name:ruadlist lines:202 checksum:54cfc3ff40
+diff name:ruadlist lines:210 checksum:b8d0ef48e8
 d4 2
 a5 2
-! Last modified: Tue, 22 Sep 2026 04:43:51 +0000
-! Diff-Path: ../patches/2026.9.22.283.patch#ruadlist
+! Last modified: Tue, 22 Sep 2026 09:51:42 +0000
+! Diff-Path: ../patches/2026.9.22.591.patch#ruadlist
 a12 1
 ://fastpic.org^
 a422 1
@@ -142,14 +142,17 @@ livetvstream.pro,me,online##body[bgcolor] > div[id^="iframe-container"]
 ||ii.apl*.pro/js/pop.js|$script
 d22802 1
 a22802 1
-.link/nrybn33j9e?$third-party,xmlhttprequest
+.link/zy6mjntx3ds?$third-party,xmlhttprequest
 d22815 2
-a22816 3
+a22816 5
 ||eugeniy.org^$third-party
+||evropidar.org^$third-party
 ||krasnomaga.link^$third-party
 ||morozovnya.link^$third-party
-a22820 1
+||nevalyashka.link^$third-party
+a22820 2
 ||rubakaka.org^$third-party
+||strashnokrivo.org^$third-party
 a22826 1
 ||vertiguzha.link^$third-party
 a23637 1
@@ -179,6 +182,9 @@ a28405 1
 pimpletv.me,pimpletv.ru##body > #branding:style(padding-top: 0 !important)
 a28487 1
 www.rambler.ru##div[id^="tabs-_"][id$="_-more"]:not([style]):style(opacity: 0 !important)
+d28947 1
+a28947 1
+dzen.ru##.forecast-details > article[class^="card "] ~ div:last-child
 d28951 1
 a28951 2
 yandex.by,yandex.kz,yandex.ru,yandex.uz##.app__wrapper .game-root:style(width: 100% !important)
@@ -190,6 +196,8 @@ a29525 1
 www.rambler.ru##+js(prevent-addEventListener, scroll, requestAnimationFrame)
 a29575 1
 rutr.life,rutracker.lib,rutracker.net,rutracker.org##+js(set-attr, a.postLink[href^="http"]:not([target="_blank"]), target, true)
+a29706 1
+lenta.news,lenta.ru##.js-topic:remove-attr(data-rcmclid)
 a29775 1
 rutr.life,rutracker.lib,rutracker.net,rutracker.org##a.postLink[href^="http"]:remove-class(p-ext-link)
 d29936 12
