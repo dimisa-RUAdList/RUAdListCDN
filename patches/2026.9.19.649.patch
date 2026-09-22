@@ -1,8 +1,8 @@
-diff name:ruadlist lines:178 checksum:e4ff01a5a4
+diff name:ruadlist lines:210 checksum:5a5ddffb1a
 d4 2
 a5 2
-! Last modified: Tue, 22 Sep 2026 14:43:26 +0000
-! Diff-Path: ../patches/2026.9.22.883.patch#ruadlist
+! Last modified: Tue, 22 Sep 2026 18:47:19 +0000
+! Diff-Path: ../patches/2026.9.22.1127.patch#ruadlist
 a12 1
 ://fastpic.org^
 a422 1
@@ -51,6 +51,9 @@ d16540 1
 d16943 1
 a16943 1
 oboz.ua,obozrevatel.com##.headerBiding
+d17143 1
+a17143 1
+livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##.js--direct-ad-host
 a17342 1
 kyivpost.com##.main-header-info > div > .text-end
 d17407 1
@@ -59,6 +62,9 @@ d17671 1
 d17691 1
 a17691 1
 flashscore.com.ua,flashscore.ua,flashscorekz.com,livescore.in##.otPlaceholder
+d17758 1
+a17758 1
+livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##.pagewide-wrapper
 a18690 1
 flashscore.com.ua,flashscore.ua,flashscorekz.com,livescore.in##.tabContent__odds-comparison
 d19046 1
@@ -69,6 +75,9 @@ a19282 1
 a19476 2
 flashscore.com.ua,flashscore.ua,flashscorekz.com,livescore.in##[data-analytics-alias*="odds"]
 flashscore.com.ua,flashscore.ua,flashscorekz.com,livescore.in##[data-analytics-context="widget-match-summary-odds"]
+d19481 1
+a19481 1
+livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##[data-banner-place-id]
 a20052 1
 gdebenz.ru##a[href*="erid"]
 a20643 1
@@ -83,6 +92,9 @@ d21178 1
 d21684 1
 a21684 1
 flashscore.com.ua,flashscore.ua,flashscorekz.com,livescore.in##div[id^="box-over-content"]
+d21818 1
+a21818 1
+livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##div[id^="yandex_direct_"]
 a22008 1
 flashscore.com.ua,flashscore.ua,flashscorekz.com,livescore.in,pimpletv.ru,pimpletv.*##.odds
 d22175 3
@@ -96,9 +108,15 @@ a22435 1
 flashscore.com.ua,flashscore.ua,flashscorekz.com,livescore.in##sport[name="soccer"]
 a22459 1
 livetv.sx#?#table[bgcolor] > tbody > tr > td[bgcolor]:-abp-has(.odb)
+d22673 1
+a22673 1
+https://*adtech_uid=$~third-party,xmlhttprequest,domain=livejournal.com|olegmakarenko.ru|periskop.su|shakko.ru|shiro-kino.ru|vadimrazumov.ru
 d22683 1
 a22683 1
 ||pikabu.ru/ajax/*?j7T2r=$xmlhttprequest
+d22769 1
+a22769 1
+livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##[role="banner"] > .s-header-extra + div[class]
 d22796 1
 a22796 1
 apad2.top,besplatnyeprogrammy.ru,fastpic.org,games-7.com,hdrip.info,mediagetguru.ru,mixsoft.org,monna2.top,~new.fastpic.org,torrent-muzic.ru,torrent-soft.ru##:not(this-site-promotes-malware)
@@ -122,6 +140,12 @@ a22818 2
 ||nevalyashka.link^$third-party
 a22823 1
 ||strashnokrivo.org^$third-party
+d23055 4
+a23058 4
+livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##html.html-mobile div[class$="__inner--custom-width"]
+livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##html.html-mobile div[class*=" false"]
+livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##html.html-mobile div[class*="--hideable"]
+livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##html.html-mobile div[data-banner-place-id]
 a23641 1
 www.rambler.ru##[data-overflow-item="spasibo"]
 a23974 1
@@ -145,6 +169,11 @@ ya.ru##section[style*="secktian-items-count:"]
 a27752 2
 ac,ag,ai,app,art,biz,blog,buzz,by,cc,city,cloud,club,co,com,dev,family,fi,fm,gg,in,info,ink,io,is,kim,kz,la,lib,life,loan,love,me,name,net,news,org,plus,press,pro,pub,rest,ru,run,sh,si,so,space,su,tech,today,tv,ua,video,vip,website,wiki,win,work,xyz##a[href*="fastpic.org"]:not([href^="https://new.fastpic.org/"]):style(pointer-events: none !important)
 ac,ag,ai,app,art,biz,blog,buzz,by,cc,city,cloud,club,co,com,dev,family,fi,fm,gg,in,info,ink,io,is,kim,kz,la,lib,life,loan,love,me,name,net,news,org,plus,press,pro,pub,rest,ru,run,sh,si,so,space,su,tech,today,tv,ua,video,vip,website,wiki,win,work,xyz##a[href*="fastpic.ru"]:style(pointer-events: none !important)
+d28220 3
+a28222 3
+livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##.mdspost > div[class]:style(min-height: 0 !important)
+livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##.s-layout > div[class]:style(min-height: 0 !important)
+livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##header > div[class]:style(min-height: 0 !important)
 d28411 1
 a28411 1
 pimpletv.me,pimpletv.ru##body > #branding:style(padding-top: 0 !important)
@@ -160,6 +189,9 @@ yandex.by,yandex.kz,yandex.ru,yandex.uz##.app__wrapper .play-similar-games:style
 d29222 1
 a29222 1
 $document,reason=malicious,domain=apad2.top|besplatnyeprogrammy.ru|fastpic.org|games-7.com|hdrip.info|mediagetguru.ru|mixsoft.org|monna2.top|~new.fastpic.org|torrent-muzic.ru|torrent-soft.ru
+d29275 1
+a29275 1
+livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##+js(abort-on-property-read, Object.prototype._getBanner)
 a29531 1
 www.rambler.ru##+js(prevent-addEventListener, scroll, requestAnimationFrame)
 a29581 1
