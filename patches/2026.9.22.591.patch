@@ -1,10 +1,12 @@
-diff name:ruadlist lines:47 checksum:e2be33a750
+diff name:ruadlist lines:59 checksum:74797b9284
 d4 2
 a5 2
-! Last modified: Wed, 23 Sep 2026 05:52:16 +0000
-! Diff-Path: ../patches/2026.9.23.352.patch#ruadlist
+! Last modified: Wed, 23 Sep 2026 11:24:50 +0000
+! Diff-Path: ../patches/2026.9.23.684.patch#ruadlist
 a10445 1
 ||form-assets.mailchimp.com/snippet/$domain=kyivpost.com
+a15446 1
+agronom.com.ua##.agronom_widget
 d17151 1
 a17151 1
 livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##.js--direct-ad-host
@@ -13,6 +15,8 @@ kyivpost.com##.main-header-info > div > .text-end
 d17763 1
 a17763 1
 livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##.pagewide-wrapper
+a18992 1
+agronom.com.ua##.vc_widget_sidebar > .widget_custom_html:first-child
 d19490 1
 a19490 1
 livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##[data-banner-place-id]
@@ -25,6 +29,11 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=livejournal.com|olegmaka
 d22777 1
 a22777 1
 livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##[role="banner"] > .s-header-extra + div[class]
+a22918 1
+2ip.io,2ip.ru#?#.ip-links-container-row:-abp-has(> div[class])
+d22931 1
+a22947 1
+||rsv.today^$third-party,popup
 d23076 4
 a23079 4
 livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##html.html-mobile div[class$="__inner--custom-width"]
@@ -46,3 +55,6 @@ livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumo
 d29307 1
 a29307 1
 livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##+js(abort-on-property-read, Object.prototype._getBanner)
+a30207 2
+||hdmnm.link^*2ip.$document
+||rsv.today/promo/2ipchange$document

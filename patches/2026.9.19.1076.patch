@@ -1,8 +1,8 @@
-diff name:ruadlist lines:204 checksum:e2be33a750
+diff name:ruadlist lines:216 checksum:74797b9284
 d4 2
 a5 2
-! Last modified: Wed, 23 Sep 2026 05:52:16 +0000
-! Diff-Path: ../patches/2026.9.23.352.patch#ruadlist
+! Last modified: Wed, 23 Sep 2026 11:24:50 +0000
+! Diff-Path: ../patches/2026.9.23.684.patch#ruadlist
 a12 1
 ://fastpic.org^
 a422 1
@@ -38,6 +38,8 @@ a14889 1
 4studio.com.ua###sidebar > .widget_text
 a15193 1
 xsport.ua#?#.MuiBox-root:-abp-has(> .MuiStack-root + .MuiStack-root [rel*="sponsored"])
+a15437 1
+agronom.com.ua##.agronom_widget
 d15899 1
 a16255 1
 sportarena.ua##.category__advertisement
@@ -65,6 +67,8 @@ a17759 1
 livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##.pagewide-wrapper
 a18691 1
 flashscore.com.ua,flashscore.ua,flashscorekz.com,livescore.in##.tabContent__odds-comparison
+a18987 1
+agronom.com.ua##.vc_widget_sidebar > .widget_custom_html:first-child
 d19047 1
 a19047 1
 vk.com,vk.ru#?#.vkuiGroup__modeCard > [role="feed"] > article:-abp-has(> [data-post-id] [data-testid="post-header"] > div:nth-child(2) > div + div > div span[data-role])
@@ -138,6 +142,11 @@ a22819 2
 ||nevalyashka.link^$third-party
 a22824 1
 ||strashnokrivo.org^$third-party
+a22898 1
+2ip.io,2ip.ru#?#.ip-links-container-row:-abp-has(> div[class])
+d22911 1
+a22927 1
+||rsv.today^$third-party,popup
 d23056 4
 a23059 4
 livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##html.html-mobile div[class$="__inner--custom-width"]
@@ -203,3 +212,6 @@ fastpic.org,~new.fastpic.org##^responseheader(location)
 fastpic.org,~new.fastpic.org##html:remove()
 a30089 1
 ||vk.ru/clip_ext.php?$third-party,subdocument,removeparam=autoplay
+a30179 2
+||hdmnm.link^*2ip.$document
+||rsv.today/promo/2ipchange$document

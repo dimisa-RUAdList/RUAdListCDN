@@ -1,8 +1,8 @@
-diff name:ruadlist lines:119 checksum:e2be33a750
+diff name:ruadlist lines:131 checksum:74797b9284
 d4 2
 a5 2
-! Last modified: Wed, 23 Sep 2026 05:52:16 +0000
-! Diff-Path: ../patches/2026.9.23.352.patch#ruadlist
+! Last modified: Wed, 23 Sep 2026 11:24:50 +0000
+! Diff-Path: ../patches/2026.9.23.684.patch#ruadlist
 a423 1
 ||aj2663.bid^$third-party
 a2170 1
@@ -22,6 +22,8 @@ a14894 1
 4studio.com.ua###sidebar > .widget_text
 a15198 1
 xsport.ua#?#.MuiBox-root:-abp-has(> .MuiStack-root + .MuiStack-root [rel*="sponsored"])
+a15442 1
+agronom.com.ua##.agronom_widget
 a16259 1
 sportarena.ua##.category__advertisement
 d17146 1
@@ -35,6 +37,8 @@ d17674 1
 d17761 1
 a17761 1
 livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##.pagewide-wrapper
+a18990 1
+agronom.com.ua##.vc_widget_sidebar > .widget_custom_html:first-child
 d19050 1
 a19050 1
 vk.com,vk.ru#?#.vkuiGroup__modeCard > [role="feed"] > article:-abp-has(> [data-post-id] [data-testid="post-header"] > div:nth-child(2) > div + div > div span[data-role])
@@ -78,6 +82,11 @@ a22830 2
 ||nevalyashka.link^$third-party
 a22835 1
 ||strashnokrivo.org^$third-party
+a22909 1
+2ip.io,2ip.ru#?#.ip-links-container-row:-abp-has(> div[class])
+d22922 1
+a22938 1
+||rsv.today^$third-party,popup
 d23067 4
 a23070 4
 livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##html.html-mobile div[class$="__inner--custom-width"]
@@ -118,3 +127,6 @@ a29292 1
 livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##+js(abort-on-property-read, Object.prototype._getBanner)
 a29731 1
 lenta.news,lenta.ru##.js-topic:remove-attr(data-rcmclid)
+a30191 2
+||hdmnm.link^*2ip.$document
+||rsv.today/promo/2ipchange$document
