@@ -1,8 +1,8 @@
-diff name:ruadlist lines:216 checksum:74797b9284
+diff name:ruadlist lines:233 checksum:49eeb7050d
 d4 2
 a5 2
-! Last modified: Wed, 23 Sep 2026 11:24:50 +0000
-! Diff-Path: ../patches/2026.9.23.684.patch#ruadlist
+! Last modified: Wed, 23 Sep 2026 16:48:06 +0000
+! Diff-Path: ../patches/2026.9.23.1008.patch#ruadlist
 a12 1
 ://fastpic.org^
 a422 1
@@ -27,6 +27,9 @@ a12774 4
 ||pimpletv.*/wp-content/uploads/img/melbet
 ||pimpletv.*/wp-content/uploads/img/riobet_
 ||pimpletv.*branding.
+d13011 1
+a13011 1
+||ritsatv.ru/PLAYER/antiblok.js
 a13309 1
 ||static.fastpic.org^$domain=fastpic.org|~new.fastpic.org
 a13857 1
@@ -110,6 +113,8 @@ a22436 1
 flashscore.com.ua,flashscore.ua,flashscorekz.com,livescore.in##sport[name="soccer"]
 a22460 1
 livetv.sx#?#table[bgcolor] > tbody > tr > td[bgcolor]:-abp-has(.odb)
+a22649 1
+/^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]*\/[^/?]*[a-zA-Z0-9]{20,}[^/?]*\.js(?:\?.*)?$/$script
 d22674 1
 a22674 1
 https://*adtech_uid=$~third-party,xmlhttprequest,domain=livejournal.com|olegmakarenko.ru|periskop.su|shakko.ru|shiro-kino.ru|vadimrazumov.ru
@@ -133,14 +138,18 @@ livetvstream.pro,me,online##body[bgcolor] > div[id^="iframe-container"]
 ||ii.apl*.pro/js/pop.js|$script
 d22806 1
 a22806 1
-.link/zy6mjntx3ds?$third-party,xmlhttprequest
+.link/nyn3j9?$third-party,xmlhttprequest
 a22818 2
 ||eugeniy.org^$third-party
 ||evropidar.org^$third-party
-a22819 2
+a22819 3
+||leningrib.org^$third-party
 ||morozovnya.link^$third-party
 ||nevalyashka.link^$third-party
-a22824 1
+a22820 1
+||pizzahuizza.org^$third-party
+a22824 2
+||skovorodnya.link^$third-party
 ||strashnokrivo.org^$third-party
 a22898 1
 2ip.io,2ip.ru#?#.ip-links-container-row:-abp-has(> div[class])
@@ -153,8 +162,12 @@ livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumo
 livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##html.html-mobile div[class*=" false"]
 livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##html.html-mobile div[class*="--hideable"]
 livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##html.html-mobile div[data-banner-place-id]
+a23612 1
+moslenta.ru##.lb-ad-visible + div:not([data-qa="partner-wrapper"])
 a23642 1
 www.rambler.ru##[data-overflow-item="spasibo"]
+a23729 1
+||rcm.rambler.ru/*?adtech_uid=$xmlhttprequest,domain=moslenta.ru
 a23975 1
 tribuna.com##[data-menu-mainsections="casino"]
 a24003 1
@@ -186,6 +199,9 @@ a28412 1
 pimpletv.me,pimpletv.ru##body > #branding:style(padding-top: 0 !important)
 a28494 1
 www.rambler.ru##div[id^="tabs-_"][id$="_-more"]:not([style]):style(opacity: 0 !important)
+d28928 1
+a28936 1
+dzen.ru,sportsdzen.ru##div[class^="news-"] [class*="-root "]
 d28954 1
 a28954 1
 dzen.ru##.forecast-details > article[class^="card "] ~ div:last-child
@@ -199,6 +215,7 @@ a29533 1
 www.rambler.ru##+js(prevent-addEventListener, scroll, requestAnimationFrame)
 a29583 1
 rutr.life,rutracker.lib,rutracker.net,rutracker.org##+js(set-attr, a.postLink[href^="http"]:not([target="_blank"]), target, true)
+d29643 1
 a29714 1
 lenta.news,lenta.ru##.js-topic:remove-attr(data-rcmclid)
 a29783 1

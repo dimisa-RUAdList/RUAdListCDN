@@ -1,8 +1,8 @@
-diff name:ruadlist lines:131 checksum:74797b9284
+diff name:ruadlist lines:148 checksum:49eeb7050d
 d4 2
 a5 2
-! Last modified: Wed, 23 Sep 2026 11:24:50 +0000
-! Diff-Path: ../patches/2026.9.23.684.patch#ruadlist
+! Last modified: Wed, 23 Sep 2026 16:48:06 +0000
+! Diff-Path: ../patches/2026.9.23.1008.patch#ruadlist
 a423 1
 ||aj2663.bid^$third-party
 a2170 1
@@ -15,6 +15,9 @@ a12777 4
 ||pimpletv.*/wp-content/uploads/img/melbet
 ||pimpletv.*/wp-content/uploads/img/riobet_
 ||pimpletv.*branding.
+d13014 1
+a13014 1
+||ritsatv.ru/PLAYER/antiblok.js
 a14624 1
 sportarena.ua###page > .nomobile:empty
 d14894 1
@@ -62,6 +65,8 @@ pimpletv.ru,pimpletv.*##img[src*="/img/melbet"]
 pimpletv.ru,pimpletv.*##img[src*="/img/riobet"]
 a22463 1
 livetv.sx#?#table[bgcolor] > tbody > tr > td[bgcolor]:-abp-has(.odb)
+a22652 1
+/^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]*\/[^/?]*[a-zA-Z0-9]{20,}[^/?]*\.js(?:\?.*)?$/$script
 d22677 1
 a22677 1
 https://*adtech_uid=$~third-party,xmlhttprequest,domain=livejournal.com|olegmakarenko.ru|periskop.su|shakko.ru|shiro-kino.ru|vadimrazumov.ru
@@ -73,14 +78,18 @@ a22773 1
 livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##[role="banner"] > .s-header-extra + div[class]
 d22817 1
 a22817 1
-.link/zy6mjntx3ds?$third-party,xmlhttprequest
+.link/nyn3j9?$third-party,xmlhttprequest
 a22829 2
 ||eugeniy.org^$third-party
 ||evropidar.org^$third-party
-a22830 2
+a22830 3
+||leningrib.org^$third-party
 ||morozovnya.link^$third-party
 ||nevalyashka.link^$third-party
-a22835 1
+a22831 1
+||pizzahuizza.org^$third-party
+a22835 2
+||skovorodnya.link^$third-party
 ||strashnokrivo.org^$third-party
 a22909 1
 2ip.io,2ip.ru#?#.ip-links-container-row:-abp-has(> div[class])
@@ -93,6 +102,10 @@ livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumo
 livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##html.html-mobile div[class*=" false"]
 livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##html.html-mobile div[class*="--hideable"]
 livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##html.html-mobile div[data-banner-place-id]
+a23623 1
+moslenta.ru##.lb-ad-visible + div:not([data-qa="partner-wrapper"])
+a23741 1
+||rcm.rambler.ru/*?adtech_uid=$xmlhttprequest,domain=moslenta.ru
 a23987 1
 tribuna.com##[data-menu-mainsections="casino"]
 a24015 1
@@ -119,12 +132,16 @@ livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumo
 d28426 1
 a28426 1
 pimpletv.me,pimpletv.ru##body > #branding:style(padding-top: 0 !important)
+d28943 1
+a28951 1
+dzen.ru,sportsdzen.ru##div[class^="news-"] [class*="-root "]
 d28969 1
 a28969 1
 dzen.ru##.forecast-details > article[class^="card "] ~ div:last-child
 d29292 1
 a29292 1
 livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##+js(abort-on-property-read, Object.prototype._getBanner)
+d29660 1
 a29731 1
 lenta.news,lenta.ru##.js-topic:remove-attr(data-rcmclid)
 a30191 2

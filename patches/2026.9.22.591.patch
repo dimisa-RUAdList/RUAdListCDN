@@ -1,10 +1,13 @@
-diff name:ruadlist lines:59 checksum:74797b9284
+diff name:ruadlist lines:81 checksum:49eeb7050d
 d4 2
 a5 2
-! Last modified: Wed, 23 Sep 2026 11:24:50 +0000
-! Diff-Path: ../patches/2026.9.23.684.patch#ruadlist
+! Last modified: Wed, 23 Sep 2026 16:48:06 +0000
+! Diff-Path: ../patches/2026.9.23.1008.patch#ruadlist
 a10445 1
 ||form-assets.mailchimp.com/snippet/$domain=kyivpost.com
+d13016 1
+a13016 1
+||ritsatv.ru/PLAYER/antiblok.js
 a15446 1
 agronom.com.ua##.agronom_widget
 d17151 1
@@ -23,12 +26,23 @@ livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumo
 d21823 1
 a21823 1
 livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##div[id^="yandex_direct_"]
+a22656 1
+/^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]*\/[^/?]*[a-zA-Z0-9]{20,}[^/?]*\.js(?:\?.*)?$/$script
 d22681 1
 a22681 1
 https://*adtech_uid=$~third-party,xmlhttprequest,domain=livejournal.com|olegmakarenko.ru|periskop.su|shakko.ru|shiro-kino.ru|vadimrazumov.ru
 d22777 1
 a22777 1
 livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##[role="banner"] > .s-header-extra + div[class]
+d22821 1
+a22821 1
+.link/nyn3j9?$third-party,xmlhttprequest
+a22836 1
+||leningrib.org^$third-party
+a22839 1
+||pizzahuizza.org^$third-party
+a22843 1
+||skovorodnya.link^$third-party
 a22918 1
 2ip.io,2ip.ru#?#.ip-links-container-row:-abp-has(> div[class])
 d22931 1
@@ -40,6 +54,10 @@ livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumo
 livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##html.html-mobile div[class*=" false"]
 livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##html.html-mobile div[class*="--hideable"]
 livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##html.html-mobile div[data-banner-place-id]
+a23632 1
+moslenta.ru##.lb-ad-visible + div:not([data-qa="partner-wrapper"])
+a23750 1
+||rcm.rambler.ru/*?adtech_uid=$xmlhttprequest,domain=moslenta.ru
 d24141 2
 a24142 2
 ya.ru##html[class*="secktian_top"] aside + div
@@ -52,9 +70,13 @@ a28252 3
 livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##.mdspost > div[class]:style(min-height: 0 !important)
 livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##.s-layout > div[class]:style(min-height: 0 !important)
 livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##header > div[class]:style(min-height: 0 !important)
+d28958 1
+a28966 1
+dzen.ru,sportsdzen.ru##div[class^="news-"] [class*="-root "]
 d29307 1
 a29307 1
 livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##+js(abort-on-property-read, Object.prototype._getBanner)
+d29675 1
 a30207 2
 ||hdmnm.link^*2ip.$document
 ||rsv.today/promo/2ipchange$document

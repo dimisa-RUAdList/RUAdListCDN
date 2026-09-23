@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 23 Sep 2026 11:24:50 +0000
-! Diff-Path: ../patches/2026.9.23.684.patch#ruadlist
+! Last modified: Wed, 23 Sep 2026 16:48:06 +0000
+! Diff-Path: ../patches/2026.9.23.1008.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -13014,7 +13014,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||rintor.space/*.js|$script
 ||riotpixels.com/ogolop/
 ||riotpixels.net/playo
-||ritsatv.ru/files/reklama
+||ritsatv.ru/PLAYER/antiblok.js
 ||rlsnet.ru/image_banner_id_
 ||rlsnet.ru/images/3dbanner
 ||rlsnet.ru/images/banners/branding/
@@ -22658,6 +22658,7 @@ ictv.ua,vikna.tv##div[id^="div-gpt-ad-"]
 !#if ext_abp
 ! запросы
 ! ловушка для обфускации дзена: главная, статьи, новости, погода
+/^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]*\/[^/?]*[a-zA-Z0-9]{20,}[^/?]*\.js(?:\?.*)?$/$script
 /^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]+(?:[^u]....|.[^n]...|..[^d]..|...[^l].|....[^e])\.js(?:\?.*)?$/$script
 ||dzen.ru/a/$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/articles$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
@@ -22822,7 +22823,7 @@ $popup,domain=rstprgapipt.com|temp2cdn.link|temptcdn.com
 .json?unique=$third-party,xmlhttprequest
 .link/*/*/*?*=*-*-*-$third-party,xmlhttprequest
 .link/*?*=*-*-*-*-$third-party,xmlhttprequest
-.link/zy6mjntx3ds?$third-party,xmlhttprequest
+.link/nyn3j9?$third-party,xmlhttprequest
 .txt?fre=$third-party,xmlhttprequest
 .txt?unique=$third-party,xmlhttprequest
 /ad-rotator/ad-list.json
@@ -22838,13 +22839,16 @@ $popup,domain=rstprgapipt.com|temp2cdn.link|temptcdn.com
 ||eugeniy.org^$third-party
 ||evropidar.org^$third-party
 ||krasnomaga.link^$third-party
+||leningrib.org^$third-party
 ||morozovnya.link^$third-party
 ||nevalyashka.link^$third-party
 ||pfdzbcmost.com^$popup
+||pizzahuizza.org^$third-party
 ||rstprgapipt.com/*.xml?$xmlhttprequest
 ||rstprgapipt.com/api-integration/
 ||rstprgapipt.com^$third-party,xmlhttprequest
 ||rubakaka.org^$third-party
+||skovorodnya.link^$third-party
 ||strashnokrivo.org^$third-party
 ||temp2cdn.link/*.xml?$xmlhttprequest
 ||temp2cdn.link/api-integration/
@@ -23635,6 +23639,7 @@ lenta.news,lenta.ru##.js-video-eagle > div[style^="height:"][style*="overflow:"]
 lenta.news,lenta.ru#?#.layout__content > .js-topic:-abp-has(.topic-header__erid)
 lenta.news,lenta.ru##.layout__content > [id^="newsBody_news-"] ~ [id^="articleBody_articles-"]
 ferra.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,secretmag.ru,wmj.ru##.lb-ad-visible
+moslenta.ru##.lb-ad-visible + div:not([data-qa="partner-wrapper"])
 gazeta.press,gazeta.ru##.m_zen
 lenta.news,lenta.ru##.olympiad
 lenta.news,lenta.ru##.promo-block
@@ -23753,6 +23758,7 @@ nova.rambler.ru##section > article[class*=" Serp__item"]:not([class^=" Serp__ite
 ||rambler.ru/*/okko-metrics
 ||rambler.ru/special/okko/
 ||rcm.rambler.ru/*/widget?adtech_uid=
+||rcm.rambler.ru/*?adtech_uid=$xmlhttprequest,domain=moslenta.ru
 ||rcmjs.rambler.ru/static/rcmw/rcmw.*.horizontal.
 ||rcmjs.rambler.ru/static/recommender.js
 ||ssp.rambler.ru^$domain=~ssp.rambler.ru
@@ -28960,7 +28966,6 @@ dzen.ru##.news-sticky__inner > div > div[id]
 dzen.ru##.news-story-page div[id] > div:not([id]) > div[id]
 dzen.ru,sportsdzen.ru##[aria-label] > div[class*="_content_"] > div > div > div[style^="height:"] > div > div[id]
 dzen.ru##[aria-label] div[id][class*="-desktop__ad-"]
-dzen.ru,sportsdzen.ru##div[class*="-swap-root "]
 dzen.ru##div[class*="AdvertTsar"]
 dzen.ru##div[class*="BrandingAdvertLayoutColumn-"]
 dzen.ru##div[class*="_content_with-new-"] > div[id] ~ div[class*="withDiscreteScroll"]
@@ -28969,6 +28974,7 @@ dzen.ru,sportsdzen.ru##div[class*="body_branding"] > div[style*="background-colo
 dzen.ru,sportsdzen.ru##div[class*="body_branding"]:style(background: inherit !important)
 dzen.ru##div[class*="new"] [class$="__rubricator"] + div[class*=" "] > div:only-child
 dzen.ru##div[class^="news"] [class*="skeleton"]:style(background-color: transparent !important)
+dzen.ru,sportsdzen.ru##div[class^="news-"] [class*="-root "]
 dzen.ru,sportsdzen.ru##div[class^="news-"] [style^="margin-top: 0px; height: calc("][style$=" - 0px);"]
 dzen.ru##div[class^="news-site-"][class*="-desktop-"]:style(background-color: transparent !important)
 dzen.ru,sportsdzen.ru##div[class^="news-site-"][class*="skeleton"]:style(background-color: transparent !important)
@@ -29677,7 +29683,6 @@ razlozhi.ru##+js(set-constant, cadb, false)
 audioportal.su##+js(set-constant, clicks, 2)
 pb.wtf,pirat.one,piratbit.fun,piratbit.org,piratbit.top##+js(set-constant, countdownNum, 0)
 gazeta.press,gazeta.ru##+js(set-constant, g_GazetaNoExchange, true)
-gazeta.press,gazeta.ru##+js(set-constant, history.replaceState, noopFunc)
 gazeta.press,gazeta.ru##+js(set-constant, isAdFree, noopFunc)
 playground.ru##+js(set-constant, localStorage.localstorageGameData, '')
 tv-gubernia.ru##+js(set-constant, main_air_closed, true)
