@@ -1,8 +1,8 @@
-diff name:ruadlist lines:154 checksum:71262a42de
+diff name:ruadlist lines:167 checksum:dc98c51e93
 d4 2
 a5 2
-! Last modified: Thu, 24 Sep 2026 04:36:28 +0000
-! Diff-Path: ../patches/2026.9.24.276.patch#ruadlist
+! Last modified: Thu, 24 Sep 2026 09:54:19 +0000
+! Diff-Path: ../patches/2026.9.24.594.patch#ruadlist
 a423 1
 ||aj2663.bid^$third-party
 a2170 1
@@ -52,6 +52,8 @@ shelter.in.ua##[data-ad-pushed]
 d19487 1
 a19487 1
 livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##[data-banner-place-id]
+a19555 1
+dtf.ru##[data-section="services"]
 a19790 1
 shelter.in.ua##[style="height: 250px; opacity: 0;"]
 d20770 1
@@ -76,23 +78,28 @@ a22677 1
 https://*adtech_uid=$~third-party,xmlhttprequest,domain=livejournal.com|olegmakarenko.ru|periskop.su|shakko.ru|shiro-kino.ru|vadimrazumov.ru
 d22687 1
 a22687 1
-||pikabu.ru/ajax/*?j7T2r=$xmlhttprequest
+||pikabu.ru/ajax/*?p7F8a=$xmlhttprequest
 d22773 1
 a22773 1
 livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##[role="banner"] > .s-header-extra + div[class]
+a22814 1
+.link/$third-party,domain=tazaromikaz.link
 d22817 1
 a22817 1
-.link/nyn3j9?$third-party,xmlhttprequest
-a22829 2
+.link/y6jt3d?$third-party,xmlhttprequest
+a22829 4
 ||eugeniy.org^$third-party
 ||evropidar.org^$third-party
+||greatekran.org^$third-party
+||kinzazaza.org^$third-party
 a22830 3
 ||leningrib.org^$third-party
 ||morozovnya.link^$third-party
 ||nevalyashka.link^$third-party
 a22831 1
 ||pizzahuizza.org^$third-party
-a22835 2
+a22835 3
+||shaloburda.link^$third-party
 ||skovorodnya.link^$third-party
 ||strashnokrivo.org^$third-party
 a22909 1
@@ -106,8 +113,11 @@ livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumo
 livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##html.html-mobile div[class*=" false"]
 livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##html.html-mobile div[class*="--hideable"]
 livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##html.html-mobile div[data-banner-place-id]
-a23623 1
+a23598 1
+rambler.ru##.ad_branding_site div[style*="background-image:"][style*="rambler.ru/special/"]
+a23623 2
 moslenta.ru##.lb-ad-visible + div:not([data-qa="partner-wrapper"])
+news.rambler.ru##.linkitbe-content-container script + div:empty
 a23741 1
 ||rcm.rambler.ru/*?adtech_uid=$xmlhttprequest,domain=moslenta.ru|motor.ru
 a23987 1
@@ -153,3 +163,6 @@ d29801 1
 a30191 2
 ||hdmnm.link^*2ip.$document
 ||rsv.today/promo/2ipchange$document
+d33110 1
+a33110 1
+/^https?:\/\/pikabu\.ru\/ajax\/{1,2}[^?]+\?[A-Za-z0-9]+=[0-9a-f]{22,}_[a-z0-9_]+/$xmlhttprequest,domain=pikabu.ru

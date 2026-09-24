@@ -1,8 +1,8 @@
-diff name:ruadlist lines:44 checksum:71262a42de
+diff name:ruadlist lines:61 checksum:dc98c51e93
 d4 2
 a5 2
-! Last modified: Thu, 24 Sep 2026 04:36:28 +0000
-! Diff-Path: ../patches/2026.9.24.276.patch#ruadlist
+! Last modified: Thu, 24 Sep 2026 09:54:19 +0000
+! Diff-Path: ../patches/2026.9.24.594.patch#ruadlist
 d13017 1
 a13017 1
 ||ritsatv.ru/PLAYER/antiblok.js
@@ -12,26 +12,40 @@ a18994 1
 agronom.com.ua##.vc_widget_sidebar > .widget_custom_html:first-child
 a19475 1
 shelter.in.ua##[data-ad-pushed]
+a19560 1
+dtf.ru##[data-section="services"]
 a19795 1
 shelter.in.ua##[style="height: 250px; opacity: 0;"]
 a22658 1
 /^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]*\/[^/?]*[a-zA-Z0-9]{20,}[^/?]*\.js(?:\?.*)?$/$script
+d22693 1
+a22693 1
+||pikabu.ru/ajax/*?p7F8a=$xmlhttprequest
+a22820 1
+.link/$third-party,domain=tazaromikaz.link
 d22823 1
 a22823 1
-.link/nyn3j9?$third-party,xmlhttprequest
+.link/y6jt3d?$third-party,xmlhttprequest
+a22837 2
+||greatekran.org^$third-party
+||kinzazaza.org^$third-party
 a22838 1
 ||leningrib.org^$third-party
 a22841 1
 ||pizzahuizza.org^$third-party
-a22845 1
+a22845 2
+||shaloburda.link^$third-party
 ||skovorodnya.link^$third-party
 a22920 1
 2ip.io,2ip.ru#?#.ip-links-container-row:-abp-has(> div[class])
 d22933 1
 a22949 1
 ||rsv.today^$third-party,popup
-a23634 1
+a23609 1
+rambler.ru##.ad_branding_site div[style*="background-image:"][style*="rambler.ru/special/"]
+a23634 2
 moslenta.ru##.lb-ad-visible + div:not([data-qa="partner-wrapper"])
+news.rambler.ru##.linkitbe-content-container script + div:empty
 a23752 1
 ||rcm.rambler.ru/*?adtech_uid=$xmlhttprequest,domain=moslenta.ru|motor.ru
 d28960 1
@@ -43,3 +57,6 @@ d29819 1
 a30209 2
 ||hdmnm.link^*2ip.$document
 ||rsv.today/promo/2ipchange$document
+d33128 1
+a33128 1
+/^https?:\/\/pikabu\.ru\/ajax\/{1,2}[^?]+\?[A-Za-z0-9]+=[0-9a-f]{22,}_[a-z0-9_]+/$xmlhttprequest,domain=pikabu.ru

@@ -1,14 +1,36 @@
-diff name:ruadlist lines:13 checksum:71262a42de
+diff name:ruadlist lines:35 checksum:dc98c51e93
 d4 2
 a5 2
-! Last modified: Thu, 24 Sep 2026 04:36:28 +0000
-! Diff-Path: ../patches/2026.9.24.276.patch#ruadlist
+! Last modified: Thu, 24 Sep 2026 09:54:19 +0000
+! Diff-Path: ../patches/2026.9.24.594.patch#ruadlist
 a19477 1
 shelter.in.ua##[data-ad-pushed]
+a19562 1
+dtf.ru##[data-section="services"]
 a19797 1
 shelter.in.ua##[style="height: 250px; opacity: 0;"]
+d22696 1
+a22696 1
+||pikabu.ru/ajax/*?p7F8a=$xmlhttprequest
+a22823 1
+.link/$third-party,domain=tazaromikaz.link
+d22826 1
+a22826 1
+.link/y6jt3d?$third-party,xmlhttprequest
+a22840 2
+||greatekran.org^$third-party
+||kinzazaza.org^$third-party
+a22850 1
+||shaloburda.link^$third-party
+a23616 1
+rambler.ru##.ad_branding_site div[style*="background-image:"][style*="rambler.ru/special/"]
+a23642 1
+news.rambler.ru##.linkitbe-content-container script + div:empty
 d23761 1
 a23761 1
 ||rcm.rambler.ru/*?adtech_uid=$xmlhttprequest,domain=moslenta.ru|motor.ru
 d29626 1
 d29827 1
+d33138 1
+a33138 1
+/^https?:\/\/pikabu\.ru\/ajax\/{1,2}[^?]+\?[A-Za-z0-9]+=[0-9a-f]{22,}_[a-z0-9_]+/$xmlhttprequest,domain=pikabu.ru

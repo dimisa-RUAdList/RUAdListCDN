@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 24 Sep 2026 04:36:28 +0000
-! Diff-Path: ../patches/2026.9.24.276.patch#ruadlist
+! Last modified: Thu, 24 Sep 2026 09:54:19 +0000
+! Diff-Path: ../patches/2026.9.24.594.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -19561,6 +19561,7 @@ goldsrc.ru##[data-role="primaryNavBar"] a[href^="https://gamecms.ru/"]
 zoneofgames.ru##[data-role="sidebarAd"]
 malenkiy.ru##[data-role="sidebarAd"] > center
 anilib.me,animelib.org,hentailib.me,hentailib.org,mangalib.me,mangalib.org,ranobelib.me,shlib.life,yaoilib.net##[data-scroll-content] > a[target="_blank"]:not([href="https://app.lib.social/app2.html"])
+dtf.ru##[data-section="services"]
 smi2.ru##[data-sentry-component="Finam"] a
 smi2.ru##[data-sentry-component="PartnersBlock"]
 remanga.org##[data-sentry-source-file="promobanners.tsx"]
@@ -22695,7 +22696,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=livejournal.com|olegmaka
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
 ||ng72.ru^$csp=script-src 'self' 'unsafe-eval' https:
-||pikabu.ru/ajax/*?j7T2r=$xmlhttprequest
+||pikabu.ru/ajax/*?p7F8a=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -22823,9 +22824,10 @@ livetvstream.pro,me,online##body[bgcolor] > div[id^="iframe-container"]
 $popup,domain=rstprgapipt.com|temp2cdn.link|temptcdn.com
 .json?fre=$third-party,xmlhttprequest
 .json?unique=$third-party,xmlhttprequest
+.link/$third-party,domain=tazaromikaz.link
 .link/*/*/*?*=*-*-*-$third-party,xmlhttprequest
 .link/*?*=*-*-*-*-$third-party,xmlhttprequest
-.link/nyn3j9?$third-party,xmlhttprequest
+.link/y6jt3d?$third-party,xmlhttprequest
 .txt?fre=$third-party,xmlhttprequest
 .txt?unique=$third-party,xmlhttprequest
 /ad-rotator/ad-list.json
@@ -22840,6 +22842,8 @@ $popup,domain=rstprgapipt.com|temp2cdn.link|temptcdn.com
 ||cdn-mst-ru.com^$third-party
 ||eugeniy.org^$third-party
 ||evropidar.org^$third-party
+||greatekran.org^$third-party
+||kinzazaza.org^$third-party
 ||krasnomaga.link^$third-party
 ||leningrib.org^$third-party
 ||morozovnya.link^$third-party
@@ -22850,6 +22854,7 @@ $popup,domain=rstprgapipt.com|temp2cdn.link|temptcdn.com
 ||rstprgapipt.com/api-integration/
 ||rstprgapipt.com^$third-party,xmlhttprequest
 ||rubakaka.org^$third-party
+||shaloburda.link^$third-party
 ||skovorodnya.link^$third-party
 ||strashnokrivo.org^$third-party
 ||temp2cdn.link/*.xml?$xmlhttprequest
@@ -23616,6 +23621,7 @@ lenta.news,lenta.ru#?#._longgrid:-abp-has(> [class*="info"] > [class*="_ad-title
 eda.ru#?#.ad_branding_footer div[class^="emotion"]:-abp-has(> [title="yandexzen"])
 eda.ru##.ad_branding_header > section
 rambler.ru##.ad_branding_site > div[style^="--background:"]
+rambler.ru##.ad_branding_site div[style*="background-image:"][style*="rambler.ru/special/"]
 rambler.ru##.adfox-background-container
 championat.com,championat.ru##.adv-mark
 lenta.news,lenta.ru##.advertisable-plate__erid
@@ -23642,6 +23648,7 @@ lenta.news,lenta.ru#?#.layout__content > .js-topic:-abp-has(.topic-header__erid)
 lenta.news,lenta.ru##.layout__content > [id^="newsBody_news-"] ~ [id^="articleBody_articles-"]
 ferra.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,secretmag.ru,wmj.ru##.lb-ad-visible
 moslenta.ru##.lb-ad-visible + div:not([data-qa="partner-wrapper"])
+news.rambler.ru##.linkitbe-content-container script + div:empty
 gazeta.press,gazeta.ru##.m_zen
 lenta.news,lenta.ru##.olympiad
 lenta.news,lenta.ru##.promo-block
@@ -33135,7 +33142,7 @@ kinoafisha.ua##.turn-off-add-block-text
 stalkerportaal.ru##.video_adsense
 bookskeeper.ru,e-xecutive.ru##.warning
 forum.bestflowers.ru##.xenOverlay
-/^https?:\/\/pikabu\.ru\/ajax\/{1,2}[^?]+\?[A-Za-z0-9]+=[0-9a-f]{22,}_[0-9]+/$xmlhttprequest,domain=pikabu.ru
+/^https?:\/\/pikabu\.ru\/ajax\/{1,2}[^?]+\?[A-Za-z0-9]+=[0-9a-f]{22,}_[a-z0-9_]+/$xmlhttprequest,domain=pikabu.ru
 /cookie_check.min.js$domain=acetv.me
 /gogl_detector$script,domain=meddaily.ru|newsru.com
 @@||anidub.com/ads.js|$script,domain=anidub.com

@@ -1,28 +1,42 @@
-diff name:ruadlist lines:32 checksum:71262a42de
+diff name:ruadlist lines:49 checksum:dc98c51e93
 d4 2
 a5 2
-! Last modified: Thu, 24 Sep 2026 04:36:28 +0000
-! Diff-Path: ../patches/2026.9.24.276.patch#ruadlist
+! Last modified: Thu, 24 Sep 2026 09:54:19 +0000
+! Diff-Path: ../patches/2026.9.24.594.patch#ruadlist
 d13017 1
 a13017 1
 ||ritsatv.ru/PLAYER/antiblok.js
 a19477 1
 shelter.in.ua##[data-ad-pushed]
+a19562 1
+dtf.ru##[data-section="services"]
 a19797 1
 shelter.in.ua##[style="height: 250px; opacity: 0;"]
 a22660 1
 /^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]*\/[^/?]*[a-zA-Z0-9]{20,}[^/?]*\.js(?:\?.*)?$/$script
+d22695 1
+a22695 1
+||pikabu.ru/ajax/*?p7F8a=$xmlhttprequest
+a22822 1
+.link/$third-party,domain=tazaromikaz.link
 d22825 1
 a22825 1
-.link/nyn3j9?$third-party,xmlhttprequest
+.link/y6jt3d?$third-party,xmlhttprequest
+a22839 2
+||greatekran.org^$third-party
+||kinzazaza.org^$third-party
 a22840 1
 ||leningrib.org^$third-party
 a22843 1
 ||pizzahuizza.org^$third-party
-a22847 1
+a22847 2
+||shaloburda.link^$third-party
 ||skovorodnya.link^$third-party
-a23637 1
+a23612 1
+rambler.ru##.ad_branding_site div[style*="background-image:"][style*="rambler.ru/special/"]
+a23637 2
 moslenta.ru##.lb-ad-visible + div:not([data-qa="partner-wrapper"])
+news.rambler.ru##.linkitbe-content-container script + div:empty
 a23755 1
 ||rcm.rambler.ru/*?adtech_uid=$xmlhttprequest,domain=moslenta.ru|motor.ru
 d28963 1
@@ -31,3 +45,6 @@ dzen.ru,sportsdzen.ru##div[class^="news-"] [class*="-root "]
 d29620 1
 d29680 1
 d29822 1
+d33133 1
+a33133 1
+/^https?:\/\/pikabu\.ru\/ajax\/{1,2}[^?]+\?[A-Za-z0-9]+=[0-9a-f]{22,}_[a-z0-9_]+/$xmlhttprequest,domain=pikabu.ru
