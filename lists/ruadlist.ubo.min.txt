@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 24 Sep 2026 09:54:19 +0000
-! Diff-Path: ../patches/2026.9.24.594.patch#ruadlist
+! Last modified: Thu, 24 Sep 2026 14:56:50 +0000
+! Diff-Path: ../patches/2026.9.24.896.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -9894,11 +9894,13 @@ $popup,domain=176.114.0.126|176.114.0.132|37.220.36.15|assiatv.com|cdnpotok.com|
 ||gamerulet.ru^$popup
 ||gemoroy-stop.biz^$popup
 ||getappwiz.ru^$popup
+||getappwizard.net^$popup
 ||getappwizard.ru^$popup
 ||gglead.net^$popup
 ||gglead.org^$popup
 ||hanata.pp.ua^$popup
 ||intoxic.biz^$popup
+||linkaroute.com^$popup
 ||linksoftbox.ru^$popup
 ||medicineteaser.org^$popup
 ||morelnk.ru^$popup
@@ -10826,8 +10828,10 @@ $xmlhttprequest,domain=happy-biock.info|happy-block.info|howto-news.info|mschist
 /data*?bid=$domain=ebooks.skin
 /distribution?place=header$xmlhttprequest,domain=dtf.ru|vc.ru
 /do/*$domain=myzuka.club
+/download32.$domain=nnm-club-me.ru|rutracker.org.ru
 /ebllbe/*$image,domain=lostfilm.download|lostfilm.life|lostfilm.one|lostfilm.pro|lostfilm.space|lostfilm.today|lostfilm.tv|lostfilm.tw|lostfilm.uno|lostfilm.win|lostfilmtv.site|lostfilmtv.uno|lostfilmtv2.site|lostfilmtv3.site|lostfilmtv5.site
 /exchange$domain=koob.ru
+/exitblock/*$domain=nnm-club-me.ru|rutracker.org.ru
 /files/rk/*$domain=gorvesti.ru|xn--b1ats.xn--80asehdb
 /forum/images/*$object,domain=hvosty.ru|vsehvosty.ru
 /foto/rkl$domain=b17.ru|klex.ru|koob.ru
@@ -13089,8 +13093,6 @@ igdz1.ru^$script,domain=igdz.ru
 ||rutracker-net.ru/img/rtn/ban/
 ||rutracker.net/004/
 ||rutracker.net/iframe/
-||rutracker.org.ru/download32.
-||rutracker.org.ru/exitblock/
 ||rutracker.org/004/
 ||rutracker.org/iframe/
 ||rutracker.ru/images/partner/
@@ -22721,8 +22723,6 @@ freesoft.ru###downloadAdModal {remove:true;}
 freesoft.ru###error.modal {remove:true;}
 gazeta.press,gazeta.ru##.b_flowup {remove:true;}
 growhow.in.ua###custom-background-css {remove:true;}
-ixbt.com##.clickable_zone {remove:true;}
-ixbt.com##style[id^="branding-"] {remove:true;}
 lenta.news,lenta.ru##.layout__content > .js-topic:has(.topic-header__erid) {remove:true;}
 lenta.news,lenta.ru##.layout__content > [id^="newsBody_news-"] ~ [id^="articleBody_articles-"] {remove:true;}
 lenta.news,lenta.ru##.topic-body__content> .box-external-video:last-child {remove:true;}
@@ -28100,6 +28100,7 @@ ixbt.market,www.ixbt.com###page-wrapper > #wrapper:style(padding-top: 0 !importa
 www.ixbt.com###page-wrapper > .tm-wrapper > .tm:style(margin-bottom: auto !important)
 www.ixbt.com###page-wrapper:style(background-color: white !important)
 www.ixbt.com##.branding .main__container:style(margin-top: unset !important)
+www.ixbt.com##html:not(.dark) > body:style(background-color: inherit !important)
 ! исправление ошибок и косяков оригинальной вёрстки
 ixbt.market,www.ixbt.com###page-wrapper .container:style(max-width: 100% !important)
 ixbt.com##.b-content__pagecontent > .b-content--wrapper > .g-grid:style(margin-top: unset !important)
@@ -29904,7 +29905,7 @@ tochka.by##section:remove-class(brand)
 igromania.ru#?#section[class^="MaterialsManufacturerPage_infiniteWrap"] > div[class^="InfiniteScrollWrap_content"] > [class*="MaterialItemPage_materialSection"]:-abp-has(> .knb-grid-container > [data-io-article-url] [class^="TextContent_text"] > p:-abp-contains(/^Реклама:/)) [class^="material-content_"] a[href][target="_blank"]:not([href^="https://www.igromania.ru/"]):style(color: inherit !important; pointer-events: none !important)
 smaxim.*##+js(set-constant, flashvars.protect_block, '')
 studizba.com,surl.*##+js(nano-setInterval-booster, #timer)
-ixbt.com,ixbt.pro##style[id^="branding-"]:remove()
+ixbt.pro##style[id^="branding-"]:remove()
 translate.yandex.ru,translate.yandex.*##+js(set-constant, Object.prototype.dispatchSignalCallbacks, undefined)
 embed.smotrim.ru,gofrag.ru,radiosputnik.ru,videobel.by##video:remove-attr(autoplay)
 3dnews.ru##video[autoplay="autoplay"]:remove-attr(autoplay)

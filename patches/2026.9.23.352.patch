@@ -1,11 +1,20 @@
-diff name:ruadlist lines:61 checksum:dc98c51e93
+diff name:ruadlist lines:76 checksum:cb131391c3
 d4 2
 a5 2
-! Last modified: Thu, 24 Sep 2026 09:54:19 +0000
-! Diff-Path: ../patches/2026.9.24.594.patch#ruadlist
+! Last modified: Thu, 24 Sep 2026 14:56:50 +0000
+! Diff-Path: ../patches/2026.9.24.896.patch#ruadlist
+a9896 1
+||getappwizard.net^$popup
+a9901 1
+||linkaroute.com^$popup
+a10828 1
+/download32.$domain=nnm-club-me.ru|rutracker.org.ru
+a10830 1
+/exitblock/*$domain=nnm-club-me.ru|rutracker.org.ru
 d13017 1
 a13017 1
 ||ritsatv.ru/PLAYER/antiblok.js
+d13092 2
 a15447 1
 agronom.com.ua##.agronom_widget
 a18994 1
@@ -21,6 +30,7 @@ a22658 1
 d22693 1
 a22693 1
 ||pikabu.ru/ajax/*?p7F8a=$xmlhttprequest
+d22718 2
 a22820 1
 .link/$third-party,domain=tazaromikaz.link
 d22823 1
@@ -48,12 +58,17 @@ moslenta.ru##.lb-ad-visible + div:not([data-qa="partner-wrapper"])
 news.rambler.ru##.linkitbe-content-container script + div:empty
 a23752 1
 ||rcm.rambler.ru/*?adtech_uid=$xmlhttprequest,domain=moslenta.ru|motor.ru
+a28084 1
+www.ixbt.com##html:not(.dark) > body:style(background-color: inherit !important)
 d28960 1
 a28968 1
 dzen.ru,sportsdzen.ru##div[class^="news-"] [class*="-root "]
 d29617 1
 d29677 1
 d29819 1
+d29892 1
+a29892 1
+ixbt.pro##style[id^="branding-"]:remove()
 a30209 2
 ||hdmnm.link^*2ip.$document
 ||rsv.today/promo/2ipchange$document

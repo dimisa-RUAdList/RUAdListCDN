@@ -1,13 +1,22 @@
-diff name:ruadlist lines:113 checksum:dc98c51e93
+diff name:ruadlist lines:128 checksum:cb131391c3
 d4 2
 a5 2
-! Last modified: Thu, 24 Sep 2026 09:54:19 +0000
-! Diff-Path: ../patches/2026.9.24.594.patch#ruadlist
+! Last modified: Thu, 24 Sep 2026 14:56:50 +0000
+! Diff-Path: ../patches/2026.9.24.896.patch#ruadlist
+a9896 1
+||getappwizard.net^$popup
+a9901 1
+||linkaroute.com^$popup
 a10445 1
 ||form-assets.mailchimp.com/snippet/$domain=kyivpost.com
+a10827 1
+/download32.$domain=nnm-club-me.ru|rutracker.org.ru
+a10829 1
+/exitblock/*$domain=nnm-club-me.ru|rutracker.org.ru
 d13016 1
 a13016 1
 ||ritsatv.ru/PLAYER/antiblok.js
+d13091 2
 a15446 1
 agronom.com.ua##.agronom_widget
 d17151 1
@@ -40,6 +49,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=livejournal.com|olegmaka
 d22691 1
 a22691 1
 ||pikabu.ru/ajax/*?p7F8a=$xmlhttprequest
+d22716 2
 d22777 1
 a22777 1
 livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##[role="banner"] > .s-header-extra + div[class]
@@ -87,6 +97,8 @@ ya.ru##html[class*="secktian_top"] main > div[class*="__"] ~ div[class*="__"] ~ 
 d24141 1
 a24141 1
 ya.ru##section[style*="secktian-items-count:"]
+a28079 1
+www.ixbt.com##html:not(.dark) > body:style(background-color: inherit !important)
 d28247 3
 a28249 3
 livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##.mdspost > div[class]:style(min-height: 0 !important)
@@ -106,6 +118,9 @@ d29672 1
 a29743 1
 lenta.news,lenta.ru##.js-topic:remove-attr(data-rcmclid)
 d29813 1
+d29886 1
+a29886 1
+ixbt.pro##style[id^="branding-"]:remove()
 a30203 2
 ||hdmnm.link^*2ip.$document
 ||rsv.today/promo/2ipchange$document

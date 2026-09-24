@@ -1,8 +1,8 @@
-diff name:ruadlist lines:246 checksum:dc98c51e93
+diff name:ruadlist lines:261 checksum:cb131391c3
 d4 2
 a5 2
-! Last modified: Thu, 24 Sep 2026 09:54:19 +0000
-! Diff-Path: ../patches/2026.9.24.594.patch#ruadlist
+! Last modified: Thu, 24 Sep 2026 14:56:50 +0000
+! Diff-Path: ../patches/2026.9.24.896.patch#ruadlist
 a12 1
 ://fastpic.org^
 a422 1
@@ -12,6 +12,10 @@ a2169 1
 a4121 1
 ||nalitek.com^$third-party
 d9289 1
+a9893 1
+||getappwizard.net^$popup
+a9898 1
+||linkaroute.com^$popup
 a10272 1
 vitrina.tv##.fCCDro
 d10394 1
@@ -21,6 +25,10 @@ a10441 1
 ||form-assets.mailchimp.com/snippet/$domain=kyivpost.com
 a10528 1
 ://fastpic.org^$csp=sandbox allow-same-origin;
+a10822 1
+/download32.$domain=nnm-club-me.ru|rutracker.org.ru
+a10824 1
+/exitblock/*$domain=nnm-club-me.ru|rutracker.org.ru
 d12771 4
 a12774 4
 ||pimpletv.*/wp-content/uploads/img/mars_
@@ -30,6 +38,7 @@ a12774 4
 d13011 1
 a13011 1
 ||ritsatv.ru/PLAYER/antiblok.js
+d13086 2
 a13309 1
 ||static.fastpic.org^$domain=fastpic.org|~new.fastpic.org
 a13857 1
@@ -127,6 +136,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=livejournal.com|olegmaka
 d22684 1
 a22684 1
 ||pikabu.ru/ajax/*?p7F8a=$xmlhttprequest
+d22709 2
 d22770 1
 a22770 1
 livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##[role="banner"] > .s-header-extra + div[class]
@@ -203,6 +213,8 @@ ya.ru##section[style*="secktian-items-count:"]
 a27753 2
 ac,ag,ai,app,art,biz,blog,buzz,by,cc,city,cloud,club,co,com,dev,family,fi,fm,gg,in,info,ink,io,is,kim,kz,la,lib,life,loan,love,me,name,net,news,org,plus,press,pro,pub,rest,ru,run,sh,si,so,space,su,tech,today,tv,ua,video,vip,website,wiki,win,work,xyz##a[href*="fastpic.org"]:not([href^="https://new.fastpic.org/"]):style(pointer-events: none !important)
 ac,ag,ai,app,art,biz,blog,buzz,by,cc,city,cloud,club,co,com,dev,family,fi,fm,gg,in,info,ink,io,is,kim,kz,la,lib,life,loan,love,me,name,net,news,org,plus,press,pro,pub,rest,ru,run,sh,si,so,space,su,tech,today,tv,ua,video,vip,website,wiki,win,work,xyz##a[href*="fastpic.ru"]:style(pointer-events: none !important)
+a28053 1
+www.ixbt.com##html:not(.dark) > body:style(background-color: inherit !important)
 d28221 3
 a28223 3
 livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##.mdspost > div[class]:style(min-height: 0 !important)
@@ -230,6 +242,9 @@ www.rambler.ru##+js(prevent-addEventListener, scroll, requestAnimationFrame)
 d29643 1
 a29714 1
 lenta.news,lenta.ru##.js-topic:remove-attr(data-rcmclid)
+d29856 1
+a29856 1
+ixbt.pro##style[id^="branding-"]:remove()
 d29944 12
 a29955 5
 ! Блокировка, в связи с намеренной несовместимостью
