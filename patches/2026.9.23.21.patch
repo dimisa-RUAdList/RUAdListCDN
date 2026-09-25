@@ -1,8 +1,8 @@
-diff name:ruadlist lines:92 checksum:dfc89290bc
+diff name:ruadlist lines:101 checksum:c88f55d202
 d4 2
 a5 2
-! Last modified: Fri, 25 Sep 2026 07:40:02 +0000
-! Diff-Path: ../patches/2026.9.25.460.patch#ruadlist
+! Last modified: Fri, 25 Sep 2026 13:38:57 +0000
+! Diff-Path: ../patches/2026.9.25.818.patch#ruadlist
 a9896 1
 ||getappwizard.net^$popup
 a9901 1
@@ -15,6 +15,8 @@ d13017 1
 a13017 1
 ||ritsatv.ru/PLAYER/antiblok.js
 d13092 2
+a13347 1
+||stopgame.ru/ajax/ads/
 a15434 1
 mirf.ru##.advt-simb-ad
 a15447 1
@@ -39,11 +41,11 @@ d22693 1
 a22693 1
 ||pikabu.ru/ajax/*?p7F8a=$xmlhttprequest
 d22718 2
-a22820 1
+d22819 7
+a22825 1
 .link/$third-party,domain=tazaromikaz.link
-d22823 1
-a22823 1
-.link/y6jt3d?$third-party,xmlhttprequest
+a22832 1
+||balamutka.link^$third-party
 a22837 2
 ||greatekran.org^$third-party
 ||kinzazaza.org^$third-party
@@ -74,11 +76,18 @@ fcportables.com#?#body > div[id][class]:-abp-has([src*="/chp-ads-block-detector/
 d27295 1
 a27295 1
 afrowesh.org##div[id][class^="popup"][class$="wrap"]
+d27742 2
+a27743 2
+dyvys.info,stopgame.ru,valetudo.ru##body > *:style(pointer-events: auto !important)
+dyvys.info,stopgame.ru,valetudo.ru##body:style(pointer-events: none !important)
 a28084 1
 www.ixbt.com##html:not(.dark) > body:style(background-color: inherit !important)
+d28792 3
 d28960 1
 a28968 1
 dzen.ru,sportsdzen.ru##div[class^="news-"] [class*="-root "]
+a29321 1
+root-nation.com##+js(abort-on-property-read, RNRRM)
 d29617 1
 d29677 1
 d29819 1

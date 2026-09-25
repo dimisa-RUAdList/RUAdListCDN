@@ -1,8 +1,8 @@
-diff name:ruadlist lines:198 checksum:dfc89290bc
+diff name:ruadlist lines:207 checksum:c88f55d202
 d4 2
 a5 2
-! Last modified: Fri, 25 Sep 2026 07:40:02 +0000
-! Diff-Path: ../patches/2026.9.25.460.patch#ruadlist
+! Last modified: Fri, 25 Sep 2026 13:38:57 +0000
+! Diff-Path: ../patches/2026.9.25.818.patch#ruadlist
 a423 1
 ||aj2663.bid^$third-party
 a2170 1
@@ -27,6 +27,8 @@ d13014 1
 a13014 1
 ||ritsatv.ru/PLAYER/antiblok.js
 d13089 2
+a13344 1
+||stopgame.ru/ajax/ads/
 a14624 1
 sportarena.ua###page > .nomobile:empty
 d14894 1
@@ -100,11 +102,11 @@ d22712 2
 d22773 1
 a22773 1
 livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##[role="banner"] > .s-header-extra + div[class]
-a22814 1
+d22813 7
+a22819 1
 .link/$third-party,domain=tazaromikaz.link
-d22817 1
-a22817 1
-.link/y6jt3d?$third-party,xmlhttprequest
+a22826 1
+||balamutka.link^$third-party
 a22829 4
 ||eugeniy.org^$third-party
 ||evropidar.org^$third-party
@@ -164,6 +166,10 @@ fcportables.com#?#body > div[id][class]:-abp-has([src*="/chp-ads-block-detector/
 d27278 1
 a27278 1
 afrowesh.org##div[id][class^="popup"][class$="wrap"]
+d27725 2
+a27726 2
+dyvys.info,stopgame.ru,valetudo.ru##body > *:style(pointer-events: auto !important)
+dyvys.info,stopgame.ru,valetudo.ru##body:style(pointer-events: none !important)
 a28067 1
 www.ixbt.com##html:not(.dark) > body:style(background-color: inherit !important)
 d28235 3
@@ -174,6 +180,7 @@ livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumo
 d28426 1
 a28426 1
 pimpletv.me,pimpletv.ru##body > #branding:style(padding-top: 0 !important)
+d28775 3
 d28943 1
 a28951 1
 dzen.ru,sportsdzen.ru##div[class^="news-"] [class*="-root "]
@@ -183,6 +190,8 @@ dzen.ru##.forecast-details > article[class^="card "] ~ div:last-child
 d29292 1
 a29292 1
 livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##+js(abort-on-property-read, Object.prototype._getBanner)
+a29304 1
+root-nation.com##+js(abort-on-property-read, RNRRM)
 d29600 1
 d29660 1
 a29731 1

@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 25 Sep 2026 07:40:02 +0000
-! Diff-Path: ../patches/2026.9.25.460.patch#ruadlist
+! Last modified: Fri, 25 Sep 2026 13:38:57 +0000
+! Diff-Path: ../patches/2026.9.25.818.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -13347,6 +13347,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||stereohead.ru/_main_page/images/
 ||stgkrf.ru/*.php?$xmlhttprequest
 ||stoigr.org/uploads/sslsldny.
+||stopgame.ru/ajax/ads/
 ||stopgame.ru/dist/*/stalcraft
 ||storage.googleapis.com/html5banners/$domain=komedra.com|milliarderr.com
 ||storage.gorod55.ru/promo/
@@ -22826,14 +22827,7 @@ livetvstream.pro,me,online##body[bgcolor] > div[id^="iframe-container"]
 ||ii.apl*.pro/js/pop.js|$script
 ! Плеер VeoVeo
 $popup,domain=rstprgapipt.com|temp2cdn.link|temptcdn.com
-.json?fre=$third-party,xmlhttprequest
-.json?unique=$third-party,xmlhttprequest
 .link/$third-party,domain=tazaromikaz.link
-.link/*/*/*?*=*-*-*-$third-party,xmlhttprequest
-.link/*?*=*-*-*-*-$third-party,xmlhttprequest
-.link/y6jt3d?$third-party,xmlhttprequest
-.txt?fre=$third-party,xmlhttprequest
-.txt?unique=$third-party,xmlhttprequest
 /ad-rotator/ad-list.json
 /ad-rotator/vast.xml
 /api-integration/*?unique=$third-party,xmlhttprequest
@@ -22841,6 +22835,7 @@ $popup,domain=rstprgapipt.com|temp2cdn.link|temptcdn.com
 /api-integration/assets/*.txt?*=$third-party,xmlhttprequest
 /vast/ad-rotator/*
 ?utm_source=veoveo$popup
+||balamutka.link^$third-party
 ||cdn-global-mb.com^$third-party
 ||cdn-global-mst.com^$third-party
 ||cdn-mst-ru.com^$third-party
@@ -27762,8 +27757,8 @@ dtf.ru,vc.ru##html:style(--layout-header-height-large: 60px !important)
 dugtor.ru###left-block:style(min-height: 100% !important)
 dugtor.ru###right-block:style(min-height: 100% !important)
 ! ---
-dyvys.info##body > *:style(pointer-events: auto !important)
-dyvys.info##body:style(pointer-events: none !important)
+dyvys.info,stopgame.ru,valetudo.ru##body > *:style(pointer-events: auto !important)
+dyvys.info,stopgame.ru,valetudo.ru##body:style(pointer-events: none !important)
 ! ---
 dynamo.kiev.ua##body:style(padding-top: 60px !important)
 ! ---
@@ -28813,9 +28808,6 @@ uteka.ua###page:style(-webkit-filter:none !important; filter: none !important)
 uteka.ua##.fancybox-lock .fancybox-overlay
 uteka.ua##.fancybox-lock body:style(overflow: auto !important)
 ! ---
-valetudo.ru##body > *:style(pointer-events: auto !important)
-valetudo.ru##body:style(pointer-events: none !important)
-! ---
 versii.if.ua##.fb-sidebar__main > a[href]:style(pointer-events: none !important)
 ! ---
 vgae.ru###cmain:style(margin-left: unset !important)
@@ -29343,6 +29335,7 @@ e1.ru,nova.rambler.ru##+js(abort-on-property-read, Object.prototype.loadBanner)
 gismeteo.by,gismeteo.kz,gismeteo.ru##+js(abort-on-property-read, Object.prototype.scriptsViaXhr)
 razlozhi.ru##+js(abort-on-property-read, Object.prototype.yaContextCb)
 f1comp.ru,tagaev.com,times.zt.ua##+js(abort-on-property-read, PUM.getPopup)
+root-nation.com##+js(abort-on-property-read, RNRRM)
 gencit.info##+js(abort-on-property-read, Radish)
 sinoptik.ua##+js(abort-on-property-read, SIN.AdsLoader)
 porngames.su,rintor.info,rintor.net##+js(abort-on-property-read, TotemToolsObject)
