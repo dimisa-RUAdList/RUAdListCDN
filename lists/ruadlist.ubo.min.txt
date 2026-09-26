@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 26 Sep 2026 17:04:58 +0000
-! Diff-Path: ../patches/2026.9.26.1024.patch#ruadlist
+! Last modified: Sat, 26 Sep 2026 22:41:23 +0000
+! Diff-Path: ../patches/2026.9.26.1361.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10391,6 +10391,7 @@ orybe.com##div[id^="lbx_"]
 yagd-torr.ru##div[id^="plusplus_mw"]
 agrarii-razom.com.ua##div[id^="user-to-register"]
 htmlacademy.ru##div[style^="margin-left:"][style*="margin-bottom:"][style*="position:"][style*="orange"][style*="z-index:"]
+epscape.*##.fixed.backdrop-blur-sm
 drukarnia.com.ua##header ~ section[role="dialog"]
 bbc.com#?#header[role="banner"] > div > div:has(> div > div > p > [href*="/cookies/"])
 surl.*##.card-body > .row > div:first-child:not(:only-child)
@@ -15522,6 +15523,7 @@ viva.ua##.article-partners
 vedomosti.ru##.article-recommendation
 wotsite.net#?#.article-right > div:-abp-contains(Реклама)
 industry-hunter.com##.article-single .bg-light
+vm.ru##.article-socials-news
 games.24tv.ua#?#.article-text > .insert:-abp-has(a[rel*="sponsored"])
 livesport.ru##.article-tipsvrez
 livesport.ru##.article-vote
@@ -22021,6 +22023,7 @@ ebalovo.*,epalovo.*##.fad
 ebalovo.*,epalovo.*##.pad
 onliner.by#?#em:-abp-contains(нож блокировщику)
 botanam.net,gdzputina.me##embed
+epscape.*##.otk-slot
 fap-guru.*,mult-porno.*,sex-studentki.*##.vpsembedmob
 imageup.ru##fieldset[style^="display: inline; width: 45%;"]
 znak.com##figure
@@ -29880,6 +29883,7 @@ ozon.ru##div[data-widget="banner"]:matches-path(/my/reviews/promo):style(display
 link.softoroom.org##div[id] > a[title]:hover:style(color: #1a73e8 !important; text-decoration: underline !important)
 link.softoroom.org##div[id] > a[title]:style(font-size: 20px !important)
 pronpic.org##div[style="color:red;font-size:25px;"], .adblock_loock
+epscape.*##+js(prevent-setTimeout, shouldShowPrompt)
 fanserial.*,fanserialstv.net,hdrezka.*,rezka.*##+js(set-constant, Object.prototype.preroll, undefined)
 fap-guru.*,seks-studentki.*,sex-studentki.*##+js(addEventListener-defuser, DOMContentLoaded, click_time)
 fishki.net,game4you.top,hot.game,innal.top,mp3party.net,naylo.top,rustorka.*,rustorkacom.lib##+js(href-sanitizer, [href*="url=https"], ?url)

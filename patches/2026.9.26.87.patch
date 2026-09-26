@@ -1,11 +1,13 @@
-diff name:ruadlist lines:65 checksum:f1854b4158
+diff name:ruadlist lines:73 checksum:81f7f01420
 d4 2
 a5 2
-! Last modified: Sat, 26 Sep 2026 17:04:58 +0000
-! Diff-Path: ../patches/2026.9.26.1024.patch#ruadlist
+! Last modified: Sat, 26 Sep 2026 22:41:23 +0000
+! Diff-Path: ../patches/2026.9.26.1361.patch#ruadlist
 d9269 1
 a9269 1
 ||onelink.me^$popup,domain=2ip.io|2ip.ua
+a10393 1
+epscape.*##.fixed.backdrop-blur-sm
 d10815 1
 a10815 1
 /banners/*$image,domain=2ip.io
@@ -14,6 +16,8 @@ a10834 1
 /exitblock/*$domain=nnm-club-me.ru|rutor.org.ru|rutracker.org.ru
 a15279 1
 player.cdnvideohub.com##.ad-wait-caption
+a15523 1
+vm.ru##.article-socials-news
 d18598 1
 d19348 1
 a19348 1
@@ -22,6 +26,8 @@ a19484 1
 kinofilm.io##[data-ad-slot="player_side"]
 a19538 1
 shelter.in.ua##[data-in-view]
+a22021 1
+epscape.*##.otk-slot
 d22929 18
 a22946 18
 ! 2ip.io
@@ -64,3 +70,5 @@ a29319 1
 anifap.com,anifap.xyz,anipoisk.org,anitokyo.tv,anitokyo1.top,hcdn.online##+js(abort-on-property-read, ClickUndercookie)
 a29587 1
 kinofilm.io##+js(prevent-setTimeout, baitHidden)
+a29874 1
+epscape.*##+js(prevent-setTimeout, shouldShowPrompt)

@@ -1,8 +1,8 @@
-diff name:ruadlist lines:195 checksum:f1854b4158
+diff name:ruadlist lines:203 checksum:81f7f01420
 d4 2
 a5 2
-! Last modified: Sat, 26 Sep 2026 17:04:58 +0000
-! Diff-Path: ../patches/2026.9.26.1024.patch#ruadlist
+! Last modified: Sat, 26 Sep 2026 22:41:23 +0000
+! Diff-Path: ../patches/2026.9.26.1361.patch#ruadlist
 d9269 1
 a9269 1
 ||onelink.me^$popup,domain=2ip.io|2ip.ua
@@ -10,6 +10,8 @@ a9896 1
 ||getappwizard.net^$popup
 a9901 1
 ||linkaroute.com^$popup
+a10391 1
+epscape.*##.fixed.backdrop-blur-sm
 a10445 1
 ||form-assets.mailchimp.com/snippet/$domain=kyivpost.com
 d10812 1
@@ -31,6 +33,8 @@ a15433 1
 mirf.ru##.advt-simb-ad
 a15446 1
 agronom.com.ua##.agronom_widget
+a15517 1
+vm.ru##.article-socials-news
 a16665 1
 ren.tv##.fc-hover-orange[href*="sport-express."]
 d17151 1
@@ -66,6 +70,8 @@ geekcity.ru##div[class*="-pubadban "]
 d21823 1
 a21823 1
 livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##div[id^="yandex_direct_"]
+a22007 1
+epscape.*##.otk-slot
 a22656 1
 /^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]*\/[^/?]*[a-zA-Z0-9]{20,}[^/?]*\.js(?:\?.*)?$/$script
 d22681 1
@@ -185,6 +191,8 @@ kinofilm.io##+js(prevent-setTimeout, baitHidden)
 d29615 1
 d29675 1
 d29817 1
+a29858 1
+epscape.*##+js(prevent-setTimeout, shouldShowPrompt)
 d29890 1
 a29890 1
 ixbt.pro##style[id^="branding-"]:remove()
