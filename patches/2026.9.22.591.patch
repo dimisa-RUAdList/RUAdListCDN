@@ -1,18 +1,24 @@
-diff name:ruadlist lines:144 checksum:f6e5886f34
+diff name:ruadlist lines:193 checksum:fa9106b562
 d4 2
 a5 2
-! Last modified: Sat, 26 Sep 2026 07:33:14 +0000
-! Diff-Path: ../patches/2026.9.26.453.patch#ruadlist
+! Last modified: Sat, 26 Sep 2026 12:59:40 +0000
+! Diff-Path: ../patches/2026.9.26.779.patch#ruadlist
+d9269 1
+a9269 1
+||onelink.me^$popup,domain=2ip.io|2ip.ua
 a9896 1
 ||getappwizard.net^$popup
 a9901 1
 ||linkaroute.com^$popup
 a10445 1
 ||form-assets.mailchimp.com/snippet/$domain=kyivpost.com
+d10812 1
+a10812 1
+/banners/*$image,domain=2ip.io
 a10827 1
 /download32.$domain=nnm-club-me.ru|rutracker.org.ru
 a10829 1
-/exitblock/*$domain=nnm-club-me.ru|rutracker.org.ru
+/exitblock/*$domain=nnm-club-me.ru|rutor.org.ru|rutracker.org.ru
 d13016 1
 a13016 1
 ||ritsatv.ru/PLAYER/antiblok.js
@@ -33,15 +39,22 @@ kyivpost.com##.main-header-info > div > .text-end
 d17763 1
 a17763 1
 livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##.pagewide-wrapper
+d18590 1
 a18992 1
 agronom.com.ua##.vc_widget_sidebar > .widget_custom_html:first-child
 a19313 1
 root-nation.com##[aria-label="Root-Nation Ad-Free"]
-a19473 1
+d19338 1
+a19338 1
+ura.news##[class*="ad-block"]
+a19473 2
 shelter.in.ua##[data-ad-pushed]
+kinofilm.io##[data-ad-slot="player_side"]
 d19490 1
 a19490 1
 livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##[data-banner-place-id]
+a19527 1
+shelter.in.ua##[data-in-view]
 a19558 1
 dtf.ru##[data-section="services"]
 a19793 1
@@ -78,9 +91,26 @@ a22839 1
 a22843 2
 ||shaloburda.link^$third-party
 ||skovorodnya.link^$third-party
-a22918 1
-2ip.io,2ip.ru#?#.ip-links-container-row:-abp-has(> div[class])
-d22931 1
+d22915 18
+a22932 18
+! 2ip.io
+2ip.io##.ad-test-vpn
+2ip.io#?#.content-article p:-abp-has(> .adsbygoogle)
+2ip.io##.ip-icon-x-eye
+2ip.io#?#.ip-links-container-row:-abp-has(> div[class])
+2ip.io##.main-ip-icon-warning
+2ip.io##.main-ip-icon-warning ~ [aria-disabled]
+2ip.io#?#.narrow-column > style ~ div > div:-abp-has(a[style^="color:"])
+2ip.io##a[href*="://fineproxy.org"]
+2ip.io##a[href*="://finevpn.org"]
+2ip.io##a[href*="://hdmnm"]
+2ip.io##a[href*="://hidem"]
+2ip.io##a[href*="://proxyelite.info"]
+2ip.io##a[href*="://sx.org/"]
+2ip.io##a[href*="adBannerRedirector"]
+2ip.io##a[href*="proxyshare.com/"]
+2ip.io##div[class^="ad-"][class*="change-ip"]
+2ip.io##nav a[target="_blank"]
 a22947 1
 ||rsv.today^$third-party,popup
 d23076 4
@@ -103,34 +133,53 @@ ya.ru##html[class*="secktian_top"] main > div[class*="__"] ~ div[class*="__"] ~ 
 d24144 1
 a24144 1
 ya.ru##section[style*="secktian-items-count:"]
+a26193 1
+@@||kinofilm.io/watch/$generichide
 d27066 1
 a27066 1
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js|$domain=595.ucoz.net|adult-images.ru|anypictures.ru|blitzfoxhub.com|blogging-techies.com|botrix.live|crast.net|di.fm|freeopenvpn.org|ikigaitest.com|imgbum.ru|investing.com|izi-invest.ru|kvadratmetr.uz|mod-wot.ru|nv.ua|oligarx.uz|otzovik.com|ozlib.com|parnuxi.biz|pixcloud.ru|radio-archive.ru|radioromantika.ru|tarkov-market.com|tehnar.net.ua|tehnobzor.ru|tehnografi.com|tests24.su|tubeload.co|xpicture.ru|yvid.ru
+a27240 1
+meteoservice.ru##.snackbar.alert
 a27282 1
 fcportables.com#?#body > div[id][class]:-abp-has([src*="/chp-ads-block-detector/")
 d27293 1
 a27293 1
 afrowesh.org##div[id][class^="popup"][class$="wrap"]
+d27382 3
+a27384 4
+2ip.io##.consent__notice
+2ip.io##.consent__notice ~ .body-blackout
+2ip.io##.content:style(max-width: 100% !important)
+2ip.io##body:style(overflow: auto !important)
 d27740 2
 a27741 2
 dyvys.info,stopgame.ru,valetudo.ru##body > *:style(pointer-events: auto !important)
 dyvys.info,stopgame.ru,valetudo.ru##body:style(pointer-events: none !important)
 a28082 1
 www.ixbt.com##html:not(.dark) > body:style(background-color: inherit !important)
+a28166 1
+www.kinopoisk.ru##div[class^="desktop_root_"] > div[class]:first-child:style(min-height: 0 !important)
 d28250 3
 a28252 3
 livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##.mdspost > div[class]:style(min-height: 0 !important)
 livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##.s-layout > div[class]:style(min-height: 0 !important)
 livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##header > div[class]:style(min-height: 0 !important)
 d28790 3
+a28955 1
+dzen.ru,sportsdzen.ru##[aria-label] > div[class*="_content_"] > div > div > div[style^="--height"] > div > div[id]
 d28958 1
 a28966 1
 dzen.ru,sportsdzen.ru##div[class^="news-"] [class*="-root "]
+d29301 1
+a29301 1
+anifap.com,anifap.xyz,anipoisk.org,anitokyo.tv,anitokyo1.top,hcdn.online##+js(abort-on-property-read, ClickUndercookie)
 d29307 1
 a29307 1
 livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##+js(abort-on-property-read, Object.prototype._getBanner)
 a29319 1
 root-nation.com##+js(abort-on-property-read, RNRRM)
+a29568 1
+kinofilm.io##+js(prevent-setTimeout, baitHidden)
 d29615 1
 d29675 1
 d29817 1

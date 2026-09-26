@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 26 Sep 2026 07:33:14 +0000
-! Diff-Path: ../patches/2026.9.26.453.patch#ruadlist
+! Last modified: Sat, 26 Sep 2026 12:59:40 +0000
+! Diff-Path: ../patches/2026.9.26.779.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -9266,7 +9266,7 @@ $popup,domain=176.114.0.126|176.114.0.132|37.220.36.15|assiatv.com|cdnpotok.com|
 ||motorpage.ru/click/$popup,domain=motorpage.ru
 ||namba.kg^$popup,domain=namba.kg
 ||namba.tj^$popup,domain=namba.tj
-||onelink.me^$popup,domain=2ip.io|2ip.ru|2ip.ua
+||onelink.me^$popup,domain=2ip.io|2ip.ua
 ||otus.ru/*utm_$third-party,popup
 ||special.playground.info/haval$popup
 ||topofgames.com^*?path=$popup
@@ -10812,7 +10812,7 @@ $xmlhttprequest,domain=happy-biock.info|happy-block.info|howto-news.info|mschist
 /async.php$third-party,xmlhttprequest,domain=newsvl.ru|vl.ru
 /banner/bookmaker-$domain=vse-pro-sport.com.ua|vseprosport.by|vseprosport.kz|vseprosport.ru
 /banner_fullscreen.js|$domain=namba.kg|namba.tj
-/banners/*$image,domain=2ip.io|2ip.ru
+/banners/*$image,domain=2ip.io
 /banners/images/*$domain=vashurok.ru
 /bazr/*$domain=allsoch.ru|gdz.work|megaresheba.ru|pedportal.net|ronl.ru|spishy.net|zoobrilka.net
 /block/partners$domain=glavred.info|glavred.net|unian.info|unian.net|unian.ua
@@ -10831,7 +10831,7 @@ $xmlhttprequest,domain=happy-biock.info|happy-block.info|howto-news.info|mschist
 /download32.$domain=nnm-club-me.ru|rutracker.org.ru
 /ebllbe/*$image,domain=lostfilm.download|lostfilm.life|lostfilm.one|lostfilm.pro|lostfilm.space|lostfilm.today|lostfilm.tv|lostfilm.tw|lostfilm.uno|lostfilm.win|lostfilmtv.site|lostfilmtv.uno|lostfilmtv2.site|lostfilmtv3.site|lostfilmtv5.site
 /exchange$domain=koob.ru
-/exitblock/*$domain=nnm-club-me.ru|rutracker.org.ru
+/exitblock/*$domain=nnm-club-me.ru|rutor.org.ru|rutracker.org.ru
 /files/rk/*$domain=gorvesti.ru|xn--b1ats.xn--80asehdb
 /forum/images/*$object,domain=hvosty.ru|vsehvosty.ru
 /foto/rkl$domain=b17.ru|klex.ru|koob.ru
@@ -18595,7 +18595,6 @@ armflot.ru#?#.sp-column > .sp-module:-abp-has([id*="ScriptRoot"])
 povarenok.ru##.sp-header-block
 hi.dn.ua,slavinfo.dn.ua##.sp-module-content > div[class=""][style=""]
 forum.taxiservice.com.ua##.sp_block script[src*="pagead2."] ~ a
-kinofilm.co##.sp_darkvids
 pornogam.tv#?#.span4:-abp-has(.thumbnail > a[href*="/asd/"])
 matematikalegko.ru##.spanlink[onclick*="biorepet-ufa.ru"]
 matematikalegko.ru##.spanlink[onclick*="e-autopay.com"]
@@ -19345,7 +19344,7 @@ business-gazeta.ru##[class*="__advertising-"]
 libsib.ru##[class*="_a24"]
 kino-teatr.ru##[class*="_dobro"]
 pravdanews.info,ruspravda.info#?#[class*="_title"]:-abp-contains(/ партн|реклама/i)
-scarabey.org,ura.news##[class*="ad-block"]
+ura.news##[class*="ad-block"]
 nur.kz##[class*="ad-slot-module"]
 vz.ru##[class*="ad_banner"]
 nur.kz##[class*="adv"][class*="laceholder"]
@@ -19482,6 +19481,7 @@ tsn.ua##[data-ad-container]
 liza.ua##[data-ad-id]
 delfi.lv##[data-ad-placement]
 shelter.in.ua##[data-ad-pushed]
+kinofilm.io##[data-ad-slot="player_side"]
 ps4.in.ua##[data-ad-slot]
 buhgalter.com.ua,buhgalter911.com,factor.ua,tsn.ua,unian.info,unian.net,unian.ua##[data-ad]
 banki.ru##[data-adfox-container]
@@ -19536,6 +19536,7 @@ progrib.ru##[data-href*="adbl"]
 softonic.ru##[data-href*="offer_id="]
 tulapressa.ru##[data-href*="yandex."][data-href*="news"][data-href*="favid"]
 dltv.org##[data-id]
+shelter.in.ua##[data-in-view]
 app2top.ru##[data-information]
 24tv.ua,football24.ua,sport24.ua##[data-injection-type="LEGAL_SMALL"]
 forbes.ru##[data-interval] > li div[style="min-height: 64px;"]
@@ -22926,24 +22927,24 @@ ru###ads-top.ads
 ||hlamer.ru/stargate?id=$popup
 ||ru/content/stargate/*.jpg$image,~third-party
 ! ---
-! 2ip.ru и 2ip.io
-2ip.io,2ip.ru##.ad-test-vpn
-2ip.io,2ip.ru#?#.content-article p:-abp-has(> .adsbygoogle)
-2ip.io,2ip.ru##.ip-icon-x-eye
-2ip.io,2ip.ru#?#.ip-links-container-row:-abp-has(> div[class])
-2ip.io,2ip.ru##.main-ip-icon-warning
-2ip.io,2ip.ru##.main-ip-icon-warning ~ [aria-disabled]
-2ip.io,2ip.ru#?#.narrow-column > style ~ div > div:-abp-has(a[style^="color:"])
-2ip.io,2ip.ru##a[href*="://fineproxy.org"]
-2ip.io,2ip.ru##a[href*="://finevpn.org"]
-2ip.io,2ip.ru##a[href*="://hdmnm"]
-2ip.io,2ip.ru##a[href*="://hidem"]
-2ip.io,2ip.ru##a[href*="://proxyelite.info"]
-2ip.io,2ip.ru##a[href*="://sx.org/"]
-2ip.io,2ip.ru##a[href*="adBannerRedirector"]
-2ip.io,2ip.ru##a[href*="proxyshare.com/"]
-2ip.io,2ip.ru##div[class^="ad-"][class*="change-ip"]
-2ip.io,2ip.ru##nav a[target="_blank"]
+! 2ip.io
+2ip.io##.ad-test-vpn
+2ip.io#?#.content-article p:-abp-has(> .adsbygoogle)
+2ip.io##.ip-icon-x-eye
+2ip.io#?#.ip-links-container-row:-abp-has(> div[class])
+2ip.io##.main-ip-icon-warning
+2ip.io##.main-ip-icon-warning ~ [aria-disabled]
+2ip.io#?#.narrow-column > style ~ div > div:-abp-has(a[style^="color:"])
+2ip.io##a[href*="://fineproxy.org"]
+2ip.io##a[href*="://finevpn.org"]
+2ip.io##a[href*="://hdmnm"]
+2ip.io##a[href*="://hidem"]
+2ip.io##a[href*="://proxyelite.info"]
+2ip.io##a[href*="://sx.org/"]
+2ip.io##a[href*="adBannerRedirector"]
+2ip.io##a[href*="proxyshare.com/"]
+2ip.io##div[class^="ad-"][class*="change-ip"]
+2ip.io##nav a[target="_blank"]
 ! блокировки, добавленнные из-за агрессивного обхода адблока на 2ip.ru, 2ip.io, 2ip.ua ~>
 ||fineproxy.org^$third-party,popup
 ||finevpn.org^$third-party,popup
@@ -26210,6 +26211,7 @@ zarulem.ws##td[style^="text-align:center;width:50%"]
 @@||in-trend.biz^$generichide
 @@||inforline.com.ua^$generichide
 @@||kg-portal.ru^$generichide
+@@||kinofilm.io/watch/$generichide
 @@||komarovskiy.net^$generichide
 @@||kote.ws^$generichide
 @@||kvadratmetr.uz^$generichide
@@ -27257,6 +27259,7 @@ electric-house.ru#?#.rules:-abp-has(> p > [src="/img/no_ad.png"])
 satdx.club##.rules[style^="display:"][style*="position:"][style*="z-index:"]
 radioromantika.ru##.showMessageAdBlock
 uakino.best##.side-content-adblock
+meteoservice.ru##.snackbar.alert
 kg-portal.ru##.social_login > .ulogin ~ .caution
 pikabu.ru##.toast_danger
 pedagog-organizator.ru##.vk-one-tap
@@ -27399,9 +27402,10 @@ www.1tv.ru##div[class^="Branding_container_"]:style(margin-top: unset !important
 2gis.by,2gis.kz,2gis.ru##a[title="Гид по городу"] > div svg:style(animation: none !important)
 2gis.by,2gis.kz,2gis.ru##a[title="Гид по городу"] > div:style(animation: none !important)
 ! ---
-2ip.io,2ip.ru##.consent__notice
-2ip.io,2ip.ru##.consent__notice ~ .body-blackout
-2ip.io,2ip.ru##body:style(overflow: auto !important)
+2ip.io##.consent__notice
+2ip.io##.consent__notice ~ .body-blackout
+2ip.io##.content:style(max-width: 100% !important)
+2ip.io##body:style(overflow: auto !important)
 ! ---
 3dnews.ru##.article > .onadlable
 3dnews.ru##.article > .onadlable ~ .js-mediator-article a[href]:not([href^="/"]):not([href^="#"]):not([href*="3dnews."]):style(pointer-events: none !important; text-decoration: none !important; color: inherit !important)
@@ -28185,6 +28189,7 @@ www.kinopoisk.ru##div[class*="__EPaSo"]
 www.kinopoisk.ru##div[class*="kinopoisk-media-container_pending"]:style(min-height: 0 !important)
 www.kinopoisk.ru##div[class^="app__"] > div:not([class*="media"]):not([class*="content"]):first-child > div:first-child:style(min-height: 0 !important)
 www.kinopoisk.ru##div[class^="app__"] > div:not([class*="media"]):not([class*="content"]):first-child:style(min-height: 0 !important)
+www.kinopoisk.ru##div[class^="desktop_root_"] > div[class]:first-child:style(min-height: 0 !important)
 www.kinopoisk.ru##div[id*="_superbanner_"]
 ! исправление ошибок и косяков оригинальной вёрстки
 www.kinopoisk.ru###actorListBlock:style(padding-right: 19px !important)
@@ -28971,6 +28976,7 @@ dzen.ru##.news-rubric-desktop__news > section > div > div[id]
 dzen.ru##.news-secondary-layout-column__secondary div[id]
 dzen.ru##.news-sticky__inner > div > div[id]
 dzen.ru##.news-story-page div[id] > div:not([id]) > div[id]
+dzen.ru,sportsdzen.ru##[aria-label] > div[class*="_content_"] > div > div > div[style^="--height"] > div > div[id]
 dzen.ru,sportsdzen.ru##[aria-label] > div[class*="_content_"] > div > div > div[style^="height:"] > div > div[id]
 dzen.ru##[aria-label] div[id][class*="-desktop__ad-"]
 dzen.ru##div[class*="AdvertTsar"]
@@ -29316,7 +29322,7 @@ tapochek.net##+js(abort-on-property-read, ABNS)
 agroreview.com,agroweek.com##+js(abort-on-property-read, AWB)
 htmlweb.ru##+js(abort-on-property-read, AdbBanner)
 fapreactor.com,pornreactor.cc,reactor.cc##+js(abort-on-property-read, CTRManager.host3)
-anifap.com,anifap.xyz,anipoisk.org,anitokyo.tv,anitokyo1.top,hcdn.online,kinofilm.co##+js(abort-on-property-read, ClickUndercookie)
+anifap.com,anifap.xyz,anipoisk.org,anitokyo.tv,anitokyo1.top,hcdn.online##+js(abort-on-property-read, ClickUndercookie)
 comedy-radio.ru,radioromantika.ru,relax-fm.ru,sm.news,veseloeradio.ru,www.e1.ru##+js(abort-on-property-read, Date.prototype.toUTCString)
 vk.com,vk.ru##+js(abort-on-property-read, Groups.showDisclaimer)
 rutor.org##+js(abort-on-property-read, Light.Popup)
@@ -29585,6 +29591,7 @@ news.rambler.ru##+js(prevent-fetch, &origin_type=rtb, url:/rutube.ru/api/tags/vi
 dzen.ru,sportsdzen.ru##+js(prevent-fetch, /stats/bulk|stats/pixels|zen_audit/)
 progorod62.ru,ura.news##+js(prevent-fetch, _rsc=)
 evribiont.xyz##+js(prevent-setTimeout, adTestElement)
+kinofilm.io##+js(prevent-setTimeout, baitHidden)
 aigenda.ru##+js(prevent-setTimeout, combinedDetector)
 themoscowtimes.com##+js(prevent-setTimeout, contribute-modal)
 forum.ixbt.com##+js(prevent-setTimeout, count_banners)
