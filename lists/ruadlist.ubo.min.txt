@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 26 Sep 2026 12:59:40 +0000
-! Diff-Path: ../patches/2026.9.26.779.patch#ruadlist
+! Last modified: Sat, 26 Sep 2026 17:04:58 +0000
+! Diff-Path: ../patches/2026.9.26.1024.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -15277,6 +15277,7 @@ fishki.net##.ad-div
 kirovnet.ru##.ad-forum-block
 blitzfoxhub.com##.ad-free-button
 1927.kiev.ua##.ad-modal
+player.cdnvideohub.com##.ad-wait-caption
 usionline.com##.ad-wrapper-small
 akniga.org,newsvideo.su##.ad1
 akniga.org,newsvideo.su,orda.kz##.ad2
@@ -27302,7 +27303,7 @@ rasfokus.ru##body > div[id] > [align="center"] > a[target="_blank"]
 anime-free.ru,pastebin.com,primpogoda.ru##body > div[id]:not([class])[style="display: block;"]
 fashion2news.com,hotallnews.today,newspad.ru##body > div[id][class]
 24pdd.ru,nullcms.ru#?#body > div[id][class]:-abp-has(> div[id][class] [class^="adblock"])
-fcportables.com#?#body > div[id][class]:-abp-has([src*="/chp-ads-block-detector/")
+fcportables.com#?#body > div[id][class]:-abp-has([src*="/chp-ads-block-detector/"])
 kurs.com.ua,ontvtime.ru,ritsatv.ru,skidkaonline.ru,ternopillive.com##body > div[style*="background-color:"][style*="z-index:"]
 gsm.in.ua##body > div[style^="background:"][style*="display: block"]
 www.kolesa.ru##body > div[style^="position: fixed;"][style*="z-index:"]
