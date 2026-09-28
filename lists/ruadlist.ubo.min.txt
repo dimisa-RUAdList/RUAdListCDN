@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 28 Sep 2026 06:42:32 +0000
-! Diff-Path: ../patches/2026.9.28.402.patch#ruadlist
+! Last modified: Mon, 28 Sep 2026 15:19:22 +0000
+! Diff-Path: ../patches/2026.9.28.919.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -9257,6 +9257,7 @@ $popup,domain=176.114.0.126|176.114.0.132|37.220.36.15|assiatv.com|cdnpotok.com|
 ||catcut.net^$popup,domain=mobile-4at-obshenie.chatovod.ru|mobile-chat-obshenie.jimdo.com
 ||clck.ru^$popup,domain=playground.ru
 ||com/?id=*&t=direct^$popup
+||fon.bet/promo/$popup
 ||gemius.pl^$popup,domain=terrikon.com
 ||getitbit.net/ads/$popup
 ||goo.gl^$popup,domain=gamegpu.com|vsofte.biz
@@ -9301,6 +9302,7 @@ $popup,domain=176.114.0.126|176.114.0.132|37.220.36.15|assiatv.com|cdnpotok.com|
 /adv_clk_redirect.php?$popup
 /bens/vinos.js$popup
 /click/body.php?id=*&hash=$popup
+/click?utm_source=var&offer_id=*={partner}$popup
 /clicks/*==.php$popup
 /code/click.php?id=$popup
 /fcgi-bin/dispatch.fcgi?$popup
@@ -9552,6 +9554,7 @@ $popup,domain=176.114.0.126|176.114.0.132|37.220.36.15|assiatv.com|cdnpotok.com|
 ||mobilecontents.mobi^$popup
 ||molot-tora.com^$third-party,popup
 ||molot-toras.com^$third-party,popup
+||monoclick.top^$popup
 ||mxttrf.com^$popup
 ||my.id/help/?$third-party,popup
 ||myoctotracker.com^$popup
@@ -14668,6 +14671,7 @@ litres.ru###partnerLine
 footballua.tv###partner_title
 sibmama.info,sibmama.ru###partners
 dofiga.net###pbie_25
+sportcsat.ru###pc-container
 poleno.net###pddk221
 onyxgame.com###pegination ~ a
 sportrecs.com###player .MuiButton-containedPrimary
@@ -15334,7 +15338,7 @@ sravni.ru##.adfox_placeholder
 libertycity.net,libertycity.ru,vgtimes.com,vgtimes.ru##.adfshift
 wintech.net.ru##.adgoogle
 onlinetestpad.com##.adleft
-rutv.pw##.adlook-pc-wrapper
+rutv.pw,sportcsat.ru##.adlook-pc-wrapper
 ua.today##.admix
 promigren.ru##.adp-block
 asiaplustj.info,news.tj##.adredirector
@@ -16583,6 +16587,7 @@ teleprogramma.org##.dna-adfox-block
 good73.net##.dns_banner
 gtk.tv##.document-advertising
 tatler.ru##.dog
+sportcsat.ru##.donat
 griffiny.ru##.dopoln
 gamestracker.org##.down-mg
 slo.ru##.download-box > div:not([class="download"])
@@ -22706,7 +22711,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=livejournal.com|olegmaka
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
 ||ng72.ru^$csp=script-src 'self' 'unsafe-eval' https:
-||pikabu.ru/ajax/*?p7F8a=$xmlhttprequest
+||pikabu.ru/ajax/*?w6Vmw=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -28689,6 +28694,9 @@ old.sport-tv.by###page:style(padding-top: 0 !important)
 sport-tv.by##.main:style(padding-top: 0 !important)
 ! ---
 sport.ua###outer-top:style(padding-top: initial !important)
+! ---
+sportcsat.ru,vitalsport1.ru##div[style^="position:"][style*=" top: 0px; left: 0px; width: 100%; height: 100%;"][style*="z-index:"][style*="cursor: pointer;"]
+sportcsat.ru,vitalsport1.ru##iframe[src]:style(pointer-events: auto !important)
 ! ---
 sportkp.ru##.header-middle-wrapper:style(height: auto !important)
 ! ---

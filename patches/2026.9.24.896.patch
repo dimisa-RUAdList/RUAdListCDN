@@ -1,11 +1,17 @@
-diff name:ruadlist lines:105 checksum:1c3259799b
+diff name:ruadlist lines:125 checksum:db1479c609
 d4 2
 a5 2
-! Last modified: Mon, 28 Sep 2026 06:42:32 +0000
-! Diff-Path: ../patches/2026.9.28.402.patch#ruadlist
+! Last modified: Mon, 28 Sep 2026 15:19:22 +0000
+! Diff-Path: ../patches/2026.9.28.919.patch#ruadlist
+a9259 1
+||fon.bet/promo/$popup
 d9269 1
 a9269 1
 ||onelink.me^$popup,domain=2ip.io|2ip.ua
+a9303 1
+/click?utm_source=var&offer_id=*={partner}$popup
+a9554 1
+||monoclick.top^$popup
 a10393 1
 epscape.*##.fixed.backdrop-blur-sm
 d10815 1
@@ -16,13 +22,20 @@ a10834 1
 /exitblock/*$domain=nnm-club-me.ru|rutor.org.ru|rutracker.org.ru
 a13349 1
 ||stopgame.ru/ajax/ads/
+a14668 1
+sportcsat.ru###pc-container
 a15278 1
 player.cdnvideohub.com##.ad-wait-caption
+d15334 1
+a15334 1
+rutv.pw,sportcsat.ru##.adlook-pc-wrapper
 a15436 1
 mirf.ru##.advt-simb-ad
 a15521 1
 vm.ru##.article-socials-news
 d16512 1
+a16581 1
+sportcsat.ru##.donat
 a16669 1
 ren.tv##.fc-hover-orange[href*="sport-express."]
 d17482 1
@@ -43,6 +56,9 @@ a21032 1
 geekcity.ru##div[class*="-pubadban "]
 a22016 1
 epscape.*##.otk-slot
+d22701 1
+a22701 1
+||pikabu.ru/ajax/*?w6Vmw=$xmlhttprequest
 d22825 2
 d22828 5
 a22839 1
@@ -91,6 +107,10 @@ dyvys.info,stopgame.ru,valetudo.ru##body > *:style(pointer-events: auto !importa
 dyvys.info,stopgame.ru,valetudo.ru##body:style(pointer-events: none !important)
 a28187 1
 www.kinopoisk.ru##div[class^="desktop_root_"] > div[class]:first-child:style(min-height: 0 !important)
+a28685 3
+sportcsat.ru,vitalsport1.ru##div[style^="position:"][style*=" top: 0px; left: 0px; width: 100%; height: 100%;"][style*="z-index:"][style*="cursor: pointer;"]
+sportcsat.ru,vitalsport1.ru##iframe[src]:style(pointer-events: auto !important)
+! ---
 d28811 3
 a28976 1
 dzen.ru,sportsdzen.ru##[aria-label] > div[class*="_content_"] > div > div > div[style^="--height"] > div > div[id]

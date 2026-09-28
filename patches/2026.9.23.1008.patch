@@ -1,11 +1,17 @@
-diff name:ruadlist lines:143 checksum:1c3259799b
+diff name:ruadlist lines:160 checksum:db1479c609
 d4 2
 a5 2
-! Last modified: Mon, 28 Sep 2026 06:42:32 +0000
-! Diff-Path: ../patches/2026.9.28.402.patch#ruadlist
+! Last modified: Mon, 28 Sep 2026 15:19:22 +0000
+! Diff-Path: ../patches/2026.9.28.919.patch#ruadlist
+a9259 1
+||fon.bet/promo/$popup
 d9269 1
 a9269 1
 ||onelink.me^$popup,domain=2ip.io|2ip.ua
+a9303 1
+/click?utm_source=var&offer_id=*={partner}$popup
+a9554 1
+||monoclick.top^$popup
 a9896 1
 ||getappwizard.net^$popup
 a9901 1
@@ -22,13 +28,20 @@ a10830 1
 d13092 2
 a13347 1
 ||stopgame.ru/ajax/ads/
+a14666 1
+sportcsat.ru###pc-container
 a15276 1
 player.cdnvideohub.com##.ad-wait-caption
+d15332 1
+a15332 1
+rutv.pw,sportcsat.ru##.adlook-pc-wrapper
 a15434 1
 mirf.ru##.advt-simb-ad
 a15519 1
 vm.ru##.article-socials-news
 d16510 1
+a16579 1
+sportcsat.ru##.donat
 a16667 1
 ren.tv##.fc-hover-orange[href*="sport-express."]
 d17480 1
@@ -56,7 +69,7 @@ a22011 1
 epscape.*##.otk-slot
 d22696 1
 a22696 1
-||pikabu.ru/ajax/*?p7F8a=$xmlhttprequest
+||pikabu.ru/ajax/*?w6Vmw=$xmlhttprequest
 d22721 2
 d22822 7
 a22828 1
@@ -121,6 +134,10 @@ a28093 1
 www.ixbt.com##html:not(.dark) > body:style(background-color: inherit !important)
 a28177 1
 www.kinopoisk.ru##div[class^="desktop_root_"] > div[class]:first-child:style(min-height: 0 !important)
+a28675 3
+sportcsat.ru,vitalsport1.ru##div[style^="position:"][style*=" top: 0px; left: 0px; width: 100%; height: 100%;"][style*="z-index:"][style*="cursor: pointer;"]
+sportcsat.ru,vitalsport1.ru##iframe[src]:style(pointer-events: auto !important)
+! ---
 d28801 3
 a28966 1
 dzen.ru,sportsdzen.ru##[aria-label] > div[class*="_content_"] > div > div > div[style^="--height"] > div > div[id]
