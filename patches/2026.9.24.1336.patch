@@ -1,8 +1,9 @@
-diff name:ruadlist lines:137 checksum:091e80b469
+diff name:ruadlist lines:145 checksum:edf1d9b1dc
 d4 2
 a5 2
-! Last modified: Tue, 29 Sep 2026 15:41:49 +0000
-! Diff-Path: ../patches/2026.9.29.941.patch#ruadlist
+! Last modified: Tue, 29 Sep 2026 20:41:03 +0000
+! Diff-Path: ../patches/2026.9.29.1241.patch#ruadlist
+d1750 1
 a9259 1
 ||fon.bet/promo/$popup
 d9269 1
@@ -51,6 +52,8 @@ a19482 1
 kinofilm.io##[data-ad-slot="player_side"]
 a19536 1
 shelter.in.ua##[data-in-view]
+a20800 1
+streame.center##body > a[style^="display: none; visibility: hidden;"]
 a21034 1
 geekcity.ru##div[class*="-pubadban "]
 d21076 1
@@ -94,6 +97,9 @@ a22949 18
 d23176 1
 a23176 1
 dzen.ru,sportsdzen.ru##div[data-ad-index]
+d23869 1
+a23869 1
+rbc.ru#?#body.free div[data-metronome-unit="article"] > div div:-abp-has([href^="/story/pro"])
 a24363 1
 dzen.ru##div[class^="video"][class*="-advert-"]
 a26215 1
@@ -129,6 +135,8 @@ a29325 1
 anifap.com,anifap.xyz,anipoisk.org,anitokyo.tv,anitokyo1.top,hcdn.online##+js(abort-on-property-read, ClickUndercookie)
 a29343 1
 root-nation.com##+js(abort-on-property-read, RNRRM)
+a29458 1
+streame.center##+js(addEventListener-defuser, click, _0x)
 a29592 1
 kinofilm.io##+js(prevent-setTimeout, baitHidden)
 a29870 1
