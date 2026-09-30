@@ -1,11 +1,33 @@
-diff name:ruadlist lines:10 checksum:2c720170b4
+diff name:ruadlist lines:32 checksum:9d9563d124
 d4 2
 a5 2
-! Last modified: Wed, 30 Sep 2026 13:35:49 +0000
-! Diff-Path: ../patches/2026.9.30.815.patch#ruadlist
+! Last modified: Wed, 30 Sep 2026 19:08:42 +0000
+! Diff-Path: ../patches/2026.9.30.1148.patch#ruadlist
 d21134 1
 a21134 1
 mydash.ru#?#div[class*="lot_"]:-abp-has(> article > [class*="_adMarker_"])
 d21237 1
 a21237 1
 mydash.ru##div[class^="_exchangeArea_"]
+d21600 2
+a21601 2
+www.kinopoisk.ru##div[id] > .anim-on ~ #kebab
+www.kinopoisk.ru##div[id] > .anim-on ~ div[style^="display"][style*="pointer-events:"]
+d22681 2
+a22682 1
+/^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]*\/[^/?]*[a-zA-Z0-9]{20,}/$script
+d22716 1
+a22716 1
+||pikabu.ru/ajax/*?w5Vmw=$xmlhttprequest
+a22854 1
+||imgkcdn.com^$third-party
+a22876 2
+||veselchaga.link^$third-party
+||viieqcjw.com^$third-party
+d24171 2
+a24172 2
+ya.ru##html[class*="seckcian_top"] aside + div
+ya.ru##html[class*="seckcian_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
+d24174 1
+a24174 1
+ya.ru##section[style*="seckcian-items-count:"]

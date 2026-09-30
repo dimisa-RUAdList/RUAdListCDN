@@ -1,8 +1,8 @@
-diff name:ruadlist lines:80 checksum:2c720170b4
+diff name:ruadlist lines:95 checksum:9d9563d124
 d4 2
 a5 2
-! Last modified: Wed, 30 Sep 2026 13:35:49 +0000
-! Diff-Path: ../patches/2026.9.30.815.patch#ruadlist
+! Last modified: Wed, 30 Sep 2026 19:08:42 +0000
+! Diff-Path: ../patches/2026.9.30.1148.patch#ruadlist
 d1750 1
 a9259 1
 ||fon.bet/promo/$popup
@@ -43,24 +43,39 @@ d21231 1
 a21231 1
 mydash.ru##div[class^="_exchangeArea_"]
 a21593 2
-www.kinopoisk.ru##div[id] > .banner-fullscreen ~ #kebab
-www.kinopoisk.ru##div[id] > .banner-fullscreen ~ div[style^="display"][style*="pointer-events:"]
+www.kinopoisk.ru##div[id] > .anim-on ~ #kebab
+www.kinopoisk.ru##div[id] > .anim-on ~ div[style^="display"][style*="pointer-events:"]
 a22022 1
 epscape.*##.otk-slot
+d22672 2
+a22673 1
+/^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]*\/[^/?]*[a-zA-Z0-9]{20,}/$script
 d22707 1
 a22707 1
-||pikabu.ru/ajax/*?w6Vmw=$xmlhttprequest
+||pikabu.ru/ajax/*?w5Vmw=$xmlhttprequest
 d22831 1
 a22831 1
 .link/$third-party,domain=gorodyshka.link|player.temptcdn.com|tazaromikaz.link
+a22845 1
+||imgkcdn.com^$third-party
 a22849 1
 ||myagkotela.link^$third-party
+a22866 2
+||veselchaga.link^$third-party
+||viieqcjw.com^$third-party
 d23174 1
 a23174 1
 dzen.ru,sportsdzen.ru##div[data-ad-index]
 d23867 1
 a23867 1
 rbc.ru#?#body.free div[data-metronome-unit="article"] > div div:-abp-has([href^="/story/pro"])
+d24161 2
+a24162 2
+ya.ru##html[class*="seckcian_top"] aside + div
+ya.ru##html[class*="seckcian_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
+d24164 1
+a24164 1
+ya.ru##section[style*="seckcian-items-count:"]
 a24361 1
 dzen.ru##div[class^="video"][class*="-advert-"]
 d27305 1

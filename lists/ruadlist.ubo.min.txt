@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 30 Sep 2026 13:35:49 +0000
-! Diff-Path: ../patches/2026.9.30.815.patch#ruadlist
+! Last modified: Wed, 30 Sep 2026 19:08:42 +0000
+! Diff-Path: ../patches/2026.9.30.1148.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21597,8 +21597,8 @@ infobank.by##div[id*="swiffycontainer"]
 flowtation.ru##div[id*="tizer"]
 1tv.ru,4pda.to,artem-kashkanov.ru,astrakhan-24.ru,baraholka.onliner.by,bigpicture.ru,energyfm.ru,galya.ru,gotovim-doma.ru,qip.ru,vputilkovo.ru##div[id*="yandex_ad"]
 www.sibnet.ru##div[id="head-links"]
-www.kinopoisk.ru##div[id] > .banner-fullscreen ~ #kebab
-www.kinopoisk.ru##div[id] > .banner-fullscreen ~ div[style^="display"][style*="pointer-events:"]
+www.kinopoisk.ru##div[id] > .anim-on ~ #kebab
+www.kinopoisk.ru##div[id] > .anim-on ~ div[style^="display"][style*="pointer-events:"]
 mivmeste.info#?#div[id]:-abp-has(> wix-iframe)
 gorodrabot.ru##div[id]:not([class]):not([style])[aria-hidden="true"]
 allgames.zone,bestgamer.su##div[id][align="center"]
@@ -22678,8 +22678,7 @@ ictv.ua,vikna.tv##div[id^="div-gpt-ad-"]
 !#if ext_abp
 ! запросы
 ! ловушка для обфускации дзена: главная, статьи, новости, погода
-/^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]*\/[^/?]*[a-zA-Z0-9]{20,}[^/?]*\.js(?:\?.*)?$/$script
-/^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]+(?:[^u]....|.[^n]...|..[^d]..|...[^l].|....[^e])\.js(?:\?.*)?$/$script
+/^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]*\/[^/?]*[a-zA-Z0-9]{20,}/$script
 ||dzen.ru/a/$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/articles$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/news$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
@@ -22713,7 +22712,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=livejournal.com|olegmaka
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
 ||ng72.ru^$csp=script-src 'self' 'unsafe-eval' https:
-||pikabu.ru/ajax/*?w6Vmw=$xmlhttprequest
+||pikabu.ru/ajax/*?w5Vmw=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -22852,6 +22851,7 @@ $popup,domain=rstprgapipt.com|temp2cdn.link|temptcdn.com
 ||eugeniy.org^$third-party
 ||evropidar.org^$third-party
 ||greatekran.org^$third-party
+||imgkcdn.com^$third-party
 ||kinzazaza.org^$third-party
 ||krasnomaga.link^$third-party
 ||leningrib.org^$third-party
@@ -22874,6 +22874,8 @@ $popup,domain=rstprgapipt.com|temp2cdn.link|temptcdn.com
 ||temptcdn.com/api-integration/
 ||temptcdn.com^$third-party,xmlhttprequest
 ||vertiguzha.link^$third-party
+||veselchaga.link^$third-party
+||viieqcjw.com^$third-party
 ||vveu.*.link/$third-party,media
 ||vvru.*.link/$third-party,media
 ||ykoza.com^$popup
@@ -24168,10 +24170,10 @@ ya.ru##.i-mini-bem[class*="banner"]
 ya.ru##[style*="feed"][style*="min-height:"]
 ya.ru##body > div[data-hydration-id] > [href^="https://yabs.yandex.ru/count/"] + div
 ya.ru##body > div[data-hydration-id] > div > [src^="https://yabs.yandex.ru/count/"] + div
-ya.ru##html[class*="secktian_top"] aside + div
-ya.ru##html[class*="secktian_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
+ya.ru##html[class*="seckcian_top"] aside + div
+ya.ru##html[class*="seckcian_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
 ya.ru##section[class^="reaso"]
-ya.ru##section[style*="secktian-items-count:"]
+ya.ru##section[style*="seckcian-items-count:"]
 ya.ru##ul[class*="-section__list"]
 ya.ru,yandex.ru,yandex.*##.AdvProductGallery
 ya.ru,yandex.ru,yandex.*##.Bno_isPromoSnippet
