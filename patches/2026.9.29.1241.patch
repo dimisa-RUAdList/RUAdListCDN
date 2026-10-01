@@ -1,8 +1,8 @@
-diff name:ruadlist lines:35 checksum:66b7be310b
+diff name:ruadlist lines:46 checksum:df1802d959
 d4 2
 a5 2
-! Last modified: Thu, 01 Oct 2026 02:02:04 +0000
-! Diff-Path: ../patches/2026.10.1.122.patch#ruadlist
+! Last modified: Thu, 01 Oct 2026 08:46:27 +0000
+! Diff-Path: ../patches/2026.10.1.526.patch#ruadlist
 d21134 1
 a21134 1
 mydash.ru#?#div[class*="lot_"]:-abp-has(> article > [class*="_adMarker_"])
@@ -19,8 +19,13 @@ a22682 1
 d22716 1
 a22716 1
 ||pikabu.ru/ajax/*?w5Vmw=$xmlhttprequest
+d22840 1
+a22840 1
+.link/$third-party,domain=gorodyshka.link|perepolokha.link|player.temptcdn.com|tazaromikaz.link
 a22854 1
 ||imgkcdn.com^$third-party
+a22860 1
+||pepyakanew.link^$third-party
 a22876 2
 ||veselchaga.link^$third-party
 ||viieqcjw.com^$third-party
@@ -31,6 +36,12 @@ ya.ru##html[class*="seckcian_top"] main > div[class*="__"] ~ div[class*="__"] ~ 
 d24174 1
 a24174 1
 ya.ru##section[style*="seckcian-items-count:"]
+d28994 2
+a28995 1
+dzen.ru,sportsdzen.ru##[aria-label] > div[class*="_content_"] > div > div > div[style^="--"][style*="height:"] > div > div[id]
+d29023 1
+a29023 1
+dzen.ru##[data-bem*="segment-details"] > article[class^="card "] ~ div:last-child
 d29475 1
 a29632 1
 streame.center##+js(remove-node-text, script, /adserverDomain|popundersPerIP|right-click/)

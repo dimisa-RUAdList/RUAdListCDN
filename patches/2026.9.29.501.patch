@@ -1,8 +1,8 @@
-diff name:ruadlist lines:63 checksum:66b7be310b
+diff name:ruadlist lines:71 checksum:df1802d959
 d4 2
 a5 2
-! Last modified: Thu, 01 Oct 2026 02:02:04 +0000
-! Diff-Path: ../patches/2026.10.1.122.patch#ruadlist
+! Last modified: Thu, 01 Oct 2026 08:46:27 +0000
+! Diff-Path: ../patches/2026.10.1.526.patch#ruadlist
 d1750 1
 a12316 1
 ||love-games1.net/distribution.
@@ -29,11 +29,13 @@ a22714 1
 ||pikabu.ru/ajax/*?w5Vmw=$xmlhttprequest
 d22838 1
 a22838 1
-.link/$third-party,domain=gorodyshka.link|player.temptcdn.com|tazaromikaz.link
+.link/$third-party,domain=gorodyshka.link|perepolokha.link|player.temptcdn.com|tazaromikaz.link
 a22852 1
 ||imgkcdn.com^$third-party
 a22856 1
 ||myagkotela.link^$third-party
+a22857 1
+||pepyakanew.link^$third-party
 a22873 2
 ||veselchaga.link^$third-party
 ||viieqcjw.com^$third-party
@@ -58,6 +60,12 @@ kingball.top,sportcsat.ru,streame.center,vitalsport1.ru##div[style^="position:"]
 kingball.top,sportcsat.ru,streame.center,vitalsport1.ru##iframe[src]:style(pointer-events: auto !important)
 a28942 1
 dzen.ru##article[class*="_trendsEntry-"]
+d28989 2
+a28990 1
+dzen.ru,sportsdzen.ru##[aria-label] > div[class*="_content_"] > div > div > div[style^="--"][style*="height:"] > div > div[id]
+d29018 1
+a29018 1
+dzen.ru##[data-bem*="segment-details"] > article[class^="card "] ~ div:last-child
 a29626 1
 streame.center##+js(remove-node-text, script, /adserverDomain|popundersPerIP|right-click/)
 a29882 1

@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 01 Oct 2026 02:02:04 +0000
-! Diff-Path: ../patches/2026.10.1.122.patch#ruadlist
+! Last modified: Thu, 01 Oct 2026 08:46:27 +0000
+! Diff-Path: ../patches/2026.10.1.526.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22836,7 +22836,7 @@ livetvstream.pro,me,online##body[bgcolor] > div[id^="iframe-container"]
 ||ii.apl*.pro/js/pop.js|$script
 ! Плеер VeoVeo
 $popup,domain=rstprgapipt.com|temp2cdn.link|temptcdn.com
-.link/$third-party,domain=gorodyshka.link|player.temptcdn.com|tazaromikaz.link
+.link/$third-party,domain=gorodyshka.link|perepolokha.link|player.temptcdn.com|tazaromikaz.link
 /ad-rotator/ad-list.json
 /ad-rotator/vast.xml
 /api-integration/*?unique=$third-party,xmlhttprequest
@@ -22858,6 +22858,7 @@ $popup,domain=rstprgapipt.com|temp2cdn.link|temptcdn.com
 ||morozovnya.link^$third-party
 ||myagkotela.link^$third-party
 ||nevalyashka.link^$third-party
+||pepyakanew.link^$third-party
 ||pfdzbcmost.com^$popup
 ||pizzahuizza.org^$third-party
 ||rstprgapipt.com/*.xml?$xmlhttprequest
@@ -28993,8 +28994,7 @@ dzen.ru##.news-rubric-desktop__news > section > div > div[id]
 dzen.ru##.news-secondary-layout-column__secondary div[id]
 dzen.ru##.news-sticky__inner > div > div[id]
 dzen.ru##.news-story-page div[id] > div:not([id]) > div[id]
-dzen.ru,sportsdzen.ru##[aria-label] > div[class*="_content_"] > div > div > div[style^="--height"] > div > div[id]
-dzen.ru,sportsdzen.ru##[aria-label] > div[class*="_content_"] > div > div > div[style^="height:"] > div > div[id]
+dzen.ru,sportsdzen.ru##[aria-label] > div[class*="_content_"] > div > div > div[style^="--"][style*="height:"] > div > div[id]
 dzen.ru##[aria-label] div[id][class*="-desktop__ad-"]
 dzen.ru##div[class*="AdvertTsar"]
 dzen.ru##div[class*="BrandingAdvertLayoutColumn-"]
@@ -29022,7 +29022,7 @@ dzen.ru,sportsdzen.ru##html:style(scroll-snap-type: none !important)
 dzen.ru##.adv-ecom
 dzen.ru##.b-page_type_maps div[class$="__content"] > [class$="__ad"] > div:style(width: unset !important)
 dzen.ru##.climate-calendar__cell:style(width: 13.8% !important; -webkit-flex-basis: 13.8% !important; flex-basis: 13.8% !important)
-dzen.ru##.forecast-details > article[class^="card "] ~ div:last-child
+dzen.ru##[data-bem*="segment-details"] > article[class^="card "] ~ div:last-child
 dzen.ru##div[class*="dzen-wrapper-with-top-content-desktop__topContent-"]:style(grid-template-columns: inherit !important)
 ! ---
 ! игры
