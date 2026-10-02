@@ -1,14 +1,25 @@
-diff name:ruadlist lines:82 checksum:31225ca3e9
+diff name:ruadlist lines:111 checksum:b874156249
 d4 2
 a5 2
-! Last modified: Fri, 02 Oct 2026 08:23:53 +0000
-! Diff-Path: ../patches/2026.10.2.503.patch#ruadlist
+! Last modified: Fri, 02 Oct 2026 15:43:19 +0000
+! Diff-Path: ../patches/2026.10.2.943.patch#ruadlist
+d13 1
 d1750 1
+d7439 27
+d9250 1
+d10540 1
+d11693 1
 a12316 1
 ||love-games1.net/distribution.
+d13322 1
+a13322 1
+||static.fastpic.org/js/fppop.js
+d14518 2
 d16489 1
+d17751 1
 a19580 1
 t-j.ru##[data-skeleton="true"]:empty
+d19948 1
 a20809 1
 streame.center##body > a[style^="display: none; visibility: hidden;"]
 d21086 1
@@ -27,12 +38,17 @@ t-j.ru##div[class^="_skeleton_"][style^="margin-top:"]
 a21599 2
 www.kinopoisk.ru##div[id] > .anim-on ~ #kebab
 www.kinopoisk.ru##div[id] > .anim-on ~ div[style^="display"][style*="pointer-events:"]
+a21758 1
+pravda.ru##div[id^="loader_"][style*="/pix/loading.gif"]
 d22679 2
 a22680 1
 /^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]*\/[^/?]*[a-zA-Z0-9]{20,}/$script
 d22714 1
 a22714 1
 ||pikabu.ru/ajax/*?w5Vmw=$xmlhttprequest
+d22825 1
+a22825 1
+apad2.top,besplatnyeprogrammy.ru,games-7.com,hdrip.info,mediagetguru.ru,mixsoft.org,monna2.top,torrent-muzic.ru,torrent-soft.ru##:not(this-site-promotes-malware)
 d22838 1
 a22838 1
 .link/$third-party,domain=gorodyshka.link|perepolokha.link|player.temptcdn.com|tazaromikaz.link
@@ -65,6 +81,7 @@ a24171 1
 ya.ru##section[style*="seckcian-items-count:"]
 a24368 1
 dzen.ru##div[class^="video"][class*="-advert-"]
+d27812 2
 d28698 2
 a28699 2
 kingball.top,sportcsat.ru,streame.center,vitalsport1.ru##div[style^="position:"][style*=" top: 0px; left: 0px; width: 100%; height: 100%;"][style*="z-index:"][style*="cursor: pointer;"]
@@ -77,7 +94,19 @@ dzen.ru,sportsdzen.ru##[aria-label] > div[class*="_content_"] > div > div > div[
 d29018 1
 a29018 1
 dzen.ru##[data-bem*="segment-details"] > article[class^="card "] ~ div:last-child
+d29288 1
+a29288 1
+$document,reason=malicious,domain=apad2.top|besplatnyeprogrammy.ru|games-7.com|hdrip.info|mediagetguru.ru|mixsoft.org|monna2.top|torrent-muzic.ru|torrent-soft.ru
 a29626 1
 streame.center##+js(remove-node-text, script, /adserverDomain|popundersPerIP|right-click/)
 a29882 1
 dzen.ru##div:matches-attr(/[a-z0-9]/=trends-entry-desktop)
+d29986 1
+a29986 1
+fastpic.org,~new.fastpic.org##+js(abort-current-script, document.getElementById, maybeShow)
+d29988 9
+d29998 3
+a30000 1
+fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /__BIM__|box-shadow/)
+d30002 4
+d30012 5

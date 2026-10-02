@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 02 Oct 2026 08:23:53 +0000
-! Diff-Path: ../patches/2026.10.2.503.patch#ruadlist
+! Last modified: Fri, 02 Oct 2026 15:43:19 +0000
+! Diff-Path: ../patches/2026.10.2.943.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10,7 +10,6 @@
 .vnadsrv.com^
 //89.108.109.12^$object
 //95.169.186.139^
-://fastpic.org^
 |ws*//*.igrid.org^
 |ws*//*10root25.website^
 |ws*//*185.87.50.147^
@@ -7435,33 +7434,6 @@ _vodkov.net
 ||extract.zz.mu^$third-party
 ||getout.besaba.com^
 ||kipfilms.ru^$third-party
-! FastPic-partners
-/splash.php?*fastpic$document
-/splash.php?*fHBvcE1hZ2lj$document
-=*=*fastpic*%$document
-||crmared.com^$document
-||epicgameshubham.com^$document
-||eprdl.online^$document
-||exoclocks.com^$document
-||goddess-game.com^$document
-||gptgirlfriend.online^$document
-||insta-cams.com^$document
-||lu-games.com^$document
-||lustgoddess.com^$document
-||metricaops.com^$document
-||myallz.com^$document
-||ouraidream.com^$document
-||ourdream.ai^$document
-||redirectthisclick.com^$document
-||rttrk.com^$document
-||sexselector.com^$document
-||singleflirt.com^$document
-||spxxxtube.com^$document
-||thtrck.com^$document
-||trackinginwtd.pro^$document
-||trytracklink.com^$document
-||unsightly-reserve.com^$document
-||vividkink.com^$document
 ! People-Group.su
 ###pgeldiz
 ! $domain=people-group.eu|people-group.su
@@ -9246,7 +9218,6 @@ me##td[background^="//cdn.livetv"] tr > td[valign="top"] + td[align="right"]
 ! *** ./advblock/popup.txt ***
 $popup,domain=176.114.0.126|176.114.0.132|37.220.36.15|assiatv.com|cdnpotok.com|cdntvpotok.com|freescreens.ru|imgbase.ru|imgcach.ru|imgclick.ru|kolikbolik.top|oneliketv.com|payforpic.ru|picclick.ru|picclock.ru|picforall.ru|protonvideo.to|telecdn.net|tv-assia.org
 &utm_campaign=$popup,domain=itc.ua|sc2tv.ru|www.film.ru
-.html$third-party,popup,domain=fastpic.org|~new.fastpic.org
 /*utm_$popup,domain=stratege.ru
 /go.php$popup,domain=piratca.net
 /redirect/cpa/*$popup,domain=rt02.ru
@@ -10536,7 +10507,6 @@ $csp=script-src-attr 'none',domain=volyn.com.ua
 .softoroom.org^$csp=default-src 'unsafe-inline',domain=~gzip.softoroom.org|~m.softoroom.org
 /bens/vinos.js$csp=sandbox allow-same-origin;
 /gateway/aHR0c$csp=script-src
-://fastpic.org^$csp=sandbox allow-same-origin;
 |http*://fastpic.org/$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' static.fastpic.org; connect-src 'self'; frame-src 'self'
 ||24click.*/top/$csp=script-src
 ||24smi-*/top/$csp=script-src
@@ -11689,7 +11659,6 @@ igdz1.ru^$script,domain=igdz.ru
 ||faspiic.ru/js/go_re.js
 ||fastpic.org/*provider.js$script
 ||fastpic.org/fpv.js$script
-||fastpic.org/p.js$script
 ||fastpic.org/view/$script
 ||fastpicc.ru^$third-party,script
 ||fatalgame.com/content/js/andfox.
@@ -13319,7 +13288,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||static.criteo.net^$script,domain=minfin.com.ua
 ||static.ctnews.ru/js/prod/uniroll.js
 ||static.fastpic.$subdocument,domain=fastpic.org
-||static.fastpic.org^$domain=fastpic.org|~new.fastpic.org
+||static.fastpic.org/js/fppop.js
 ||static.kulina.ru/br/
 ||static.li.ru/radio/*rmm.$script,stylesheet
 ||static.lostfilm.top/temp/wow_
@@ -14515,8 +14484,6 @@ gramota.ru###main-sec > .block-side ~ .block-side
 hdd.by###main-sidebar > .widget_custom_html:last-child
 vjazhi.ru###main-top
 referatwork.ru###main2 > table
-fastpic.org#?##mainContainer:-abp-has(a[href*="/big/"] > img:not([src])) a[href*="html?info=1"]
-fastpic.org#?##mainContainer:-abp-has(a[href*="/fullview/"] > img:not([src])) a[href*="html?info=1"]
 shans.com.ua###mainContent > noindex
 avtotachki.com###mainFloatDesctop
 shans.com.ua###mainNav > .titleBlue ~ .titleBlue
@@ -17747,7 +17714,6 @@ domik.ua##.pad_banner
 komapz.net##.padding > table[width="180"]:nth-of-type(4)
 8lap.ru##.padding.right > .block
 uralweb.ru##.padspo
-pravda.ru##.page > .header
 3ppc.net##.page > div > center > noindex
 penzainform.ru##.page-ad-internal
 mydiv.net##.page-banner__wrapper
@@ -19945,7 +19911,6 @@ podolyaka.com,podolyaka.ru##a[href*="/dzen/"]
 liveinternet.ru##a[href*="/fastvk.com/"]
 litlib.net##a[href*="/feisovet/"]
 fonzo.ru,kape.cc##a[href*="/fonzo.ru/adv/"]
-fastpic.org##a[href*="/fullview/"] > img:not([src])
 vz.ru##a[href*="/games/"]
 hen-tay.com,mymedicalportal.net,samru.ru,work.ua##a[href*="/go.php"][target="_blank"]
 x-16.ru##a[href*="/go.php?id="]
@@ -21760,6 +21725,7 @@ fotostrana.ru##div[id^="king-rightplace"]
 korabel.ru##div[id^="kodirect_"]
 anekdot.ru##div[id^="krt-"]
 goroday.ru##div[id^="lngtblck_"]
+pravda.ru##div[id^="loader_"][style*="/pix/loading.gif"]
 myfootball.pw,myfootball.ws##div[id^="main-"][id*="-ranking"]
 great-tv.ru,vserialy.com,vserialy.fun##div[id^="main_banner"]
 ixbt.com,rbkgames.com,vyborok.com##div[id^="marketWidget"]
@@ -22825,7 +22791,7 @@ www.drive2.ru##iframe[style="opacity: 1;"]
 liveinternet.ru##style + div > div > div > div > div a
 !#endif
 ! Блокировка ресурсов, намеренно продвигающих вредоносное ПО и фейки
-apad2.top,besplatnyeprogrammy.ru,fastpic.org,games-7.com,hdrip.info,mediagetguru.ru,mixsoft.org,monna2.top,~new.fastpic.org,torrent-muzic.ru,torrent-soft.ru##:not(this-site-promotes-malware)
+apad2.top,besplatnyeprogrammy.ru,games-7.com,hdrip.info,mediagetguru.ru,mixsoft.org,monna2.top,torrent-muzic.ru,torrent-soft.ru##:not(this-site-promotes-malware)
 ! Намеренное продвижение фейков и мошенников
 ||tele.ru^$xmlhttprequest,domain=tele.ru
 ! Плееры livetv.sx
@@ -27821,8 +27787,6 @@ factor.ua##body:style(overflow: auto !important)
 fastpic.org###picContainer > [style="position: relative;"]:style(background-image: none !important)
 fastpic.org##.col-auto > div[class]:style(background-image: none !important)
 fastpic.org##.justify-content-center > .col[id]:style(max-width: max-content !important)
-ac,ag,ai,app,art,biz,blog,buzz,by,cc,city,cloud,club,co,com,dev,family,fi,fm,gg,in,info,ink,io,is,kim,kz,la,lib,life,loan,love,me,name,net,news,org,plus,press,pro,pub,rest,ru,run,sh,si,so,space,su,tech,today,tv,ua,video,vip,website,wiki,win,work,xyz##a[href*="fastpic.org"]:not([href^="https://new.fastpic.org/"]):style(pointer-events: none !important)
-ac,ag,ai,app,art,biz,blog,buzz,by,cc,city,cloud,club,co,com,dev,family,fi,fm,gg,in,info,ink,io,is,kim,kz,la,lib,life,loan,love,me,name,net,news,org,plus,press,pro,pub,rest,ru,run,sh,si,so,space,su,tech,today,tv,ua,video,vip,website,wiki,win,work,xyz##a[href*="fastpic.ru"]:style(pointer-events: none !important)
 fastpic.org##body > footer:style(background: none !important)
 ! ---
 fbsearch.ru###search_panel > .panel-body ~ div
@@ -29297,7 +29261,7 @@ inoreader.com###reader_pane:style(padding-right: unset !important)
 inoreader.com###sinner_container:style(display: block !important; z-index: 0 !important)
 rambler.ru###summary ~ div:has(> [id^="cluster-video-ad"]):remove()
 pronpic.org###vO5STmSLgNAkebzSluI8coxpDgsG97g:style(height: 1px !important; min-height: 1px !important)
-$document,reason=malicious,domain=apad2.top|besplatnyeprogrammy.ru|fastpic.org|games-7.com|hdrip.info|mediagetguru.ru|mixsoft.org|monna2.top|~new.fastpic.org|torrent-muzic.ru|torrent-soft.ru
+$document,reason=malicious,domain=apad2.top|besplatnyeprogrammy.ru|games-7.com|hdrip.info|mediagetguru.ru|mixsoft.org|monna2.top|torrent-muzic.ru|torrent-soft.ru
 */bens/vinos.js$popunder
 kolizhanka.com.ua,miyzvuk.net,ozon.ru##*:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important)
 captcha-api.yandex.ru,id.vk.ru,passport.yandex.ru,sso.dzen.ru,sso.ya.ru#@#+js()
@@ -29997,37 +29961,17 @@ ya.ru,yandex.*##.simple-popup__overlay:remove()
 ||youtube.com/embed/*autoplay=1$subdocument,removeparam=autoplay,domain=~dtf.ru|~kinoafisha.info|~pikabu.ru|~poolsuite.net|~vc.ru
 ||youtube.com/embed/?enablejsapi=1&origin=*3dnews.*&widgetid=1$subdocument,badfilter,domain=3dnews.ru
 ! FastPic
-*$third-party,popunder,domain=fastpic.org
+fastpic.org,~new.fastpic.org##+js(abort-current-script, document.getElementById, maybeShow)
 fastpic.org##+js(abort-on-property-read, Element.prototype.attachShadow)
-fastpic.org,~new.fastpic.org##+js(abort-on-property-read, MouseEvent)
-fastpic.org,~new.fastpic.org##+js(abort-on-property-read, document.dispatchEvent)
-fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, Event.prototype.preventDefault, /blob|injectedScript|inlineScript/)
-fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, Event.prototype.stopImmediatePropagation, /blob|injectedScript|inlineScript/)
-fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, Event.prototype.stopPropagation, /blob|injectedScript|inlineScript/)
-fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, EventTarget, inlineScript)
-fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, HTMLAnchorElement.prototype.dispatchEvent, /blob|injectedScript|inlineScript/)
-fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, document.onclick, inlineScript)
-fastpic.org,~new.fastpic.org##+js(abort-on-stack-trace, onclick, inlineScript)
 fastpic.org##+js(href-sanitizer, a[href="http://static.fastpic.ru/fpuploader/FPUploader.exe"], +https)
-fastpic.org,~new.fastpic.org##+js(prevent-addEventListener, click, '', elements, html)
-fastpic.org,~new.fastpic.org##+js(prevent-navigation, /^(?!fastpic\.org)/)
-fastpic.org,~new.fastpic.org##+js(prevent-window-open)
+fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /__BIM__|box-shadow/)
 fastpic.org,~new.fastpic.org##+js(remove-node-text, script, getElementById, includes, referrer)
-fastpic.org,~new.fastpic.org##+js(remove-node-text, style, /divExo|ex-over-top/)
-fastpic.org,~new.fastpic.org##+js(rmnt, script, /__BIM__|box-shadow|initCustomEvent|Math\.random|tOptions/)
-fastpic.org,~new.fastpic.org##+js(set-constant, HTMLHtmlElement.prototype.onclick, noopFunc)
-fastpic.org,~new.fastpic.org##+js(set-constant, document.documentElement.onclick, noopFunc)
 fastpic.org,~new.fastpic.org##[srcdoc]:remove()
 fastpic.org,~new.fastpic.org##a[href*="/big/"]:remove-attr(target)
 fastpic.org,~new.fastpic.org##a[href*="/fullview/"] > img[src*="/preview/"]:style(clip-path: inset(0 0 38px 0) !important)
 fastpic.org,~new.fastpic.org##a[href*="/fullview/"]:remove-attr(target)
 fastpic.org,~new.fastpic.org##a[href="https://static.fastpic.ru/FastPicUploader.apk"]:remove-attr(target)
 fastpic.org,~new.fastpic.org##body > template:remove()
-! Блокировка, в связи с намеренной несовместимостью
-fastpic.org,~new.fastpic.org##+js(remove-attr, src|style)
-fastpic.org,~new.fastpic.org##+js(remove-node-text, title, /^/)
-fastpic.org,~new.fastpic.org##^responseheader(location)
-fastpic.org,~new.fastpic.org##html:remove()
 ! Mail.RU
 mail.ru###grid div[class^="feed__"]:remove()
 cloud.mail.ru###react-modals:has(a[href^="https://vk.cc/"])

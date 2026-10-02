@@ -1,9 +1,12 @@
-diff name:ruadlist lines:109 checksum:31225ca3e9
+diff name:ruadlist lines:138 checksum:b874156249
 d4 2
 a5 2
-! Last modified: Fri, 02 Oct 2026 08:23:53 +0000
-! Diff-Path: ../patches/2026.10.2.503.patch#ruadlist
+! Last modified: Fri, 02 Oct 2026 15:43:19 +0000
+! Diff-Path: ../patches/2026.10.2.943.patch#ruadlist
+d13 1
 d1750 1
+d7439 27
+d9250 1
 a9259 1
 ||fon.bet/promo/$popup
 a9303 1
@@ -12,8 +15,14 @@ a9554 1
 ||monoclick.top^$popup
 a10393 1
 epscape.*##.fixed.backdrop-blur-sm
+d10536 1
+d11689 1
 a12312 1
 ||love-games1.net/distribution.
+d13318 1
+a13318 1
+||static.fastpic.org/js/fppop.js
+d14514 2
 a14669 1
 sportcsat.ru###pc-container
 d15336 1
@@ -26,11 +35,13 @@ d16515 1
 a16584 1
 sportcsat.ru##.donat
 d17486 1
+d17746 1
 a19180 1
 minsknews.by##.widget_wp_ad_widget
 d19286 1
 a19575 1
 t-j.ru##[data-skeleton="true"]:empty
+d19943 1
 a20804 1
 streame.center##body > a[style^="display: none; visibility: hidden;"]
 d21081 1
@@ -49,6 +60,8 @@ t-j.ru##div[class^="_skeleton_"][style^="margin-top:"]
 a21594 2
 www.kinopoisk.ru##div[id] > .anim-on ~ #kebab
 www.kinopoisk.ru##div[id] > .anim-on ~ div[style^="display"][style*="pointer-events:"]
+a21753 1
+pravda.ru##div[id^="loader_"][style*="/pix/loading.gif"]
 a22023 1
 epscape.*##.otk-slot
 d22673 2
@@ -57,6 +70,9 @@ a22674 1
 d22708 1
 a22708 1
 ||pikabu.ru/ajax/*?w5Vmw=$xmlhttprequest
+d22819 1
+a22819 1
+apad2.top,besplatnyeprogrammy.ru,games-7.com,hdrip.info,mediagetguru.ru,mixsoft.org,monna2.top,torrent-muzic.ru,torrent-soft.ru##:not(this-site-promotes-malware)
 d22832 1
 a22832 1
 .link/$third-party,domain=gorodyshka.link|perepolokha.link|player.temptcdn.com|tazaromikaz.link
@@ -89,6 +105,7 @@ a24165 1
 ya.ru##section[style*="seckcian-items-count:"]
 a24362 1
 dzen.ru##div[class^="video"][class*="-advert-"]
+d27806 2
 a28691 3
 kingball.top,sportcsat.ru,streame.center,vitalsport1.ru##div[style^="position:"][style*=" top: 0px; left: 0px; width: 100%; height: 100%;"][style*="z-index:"][style*="cursor: pointer;"]
 kingball.top,sportcsat.ru,streame.center,vitalsport1.ru##iframe[src]:style(pointer-events: auto !important)
@@ -101,10 +118,22 @@ dzen.ru,sportsdzen.ru##[aria-label] > div[class*="_content_"] > div > div > div[
 d29009 1
 a29009 1
 dzen.ru##[data-bem*="segment-details"] > article[class^="card "] ~ div:last-child
+d29279 1
+a29279 1
+$document,reason=malicious,domain=apad2.top|besplatnyeprogrammy.ru|games-7.com|hdrip.info|mediagetguru.ru|mixsoft.org|monna2.top|torrent-muzic.ru|torrent-soft.ru
 a29617 1
 streame.center##+js(remove-node-text, script, /adserverDomain|popundersPerIP|right-click/)
 a29873 1
 dzen.ru##div:matches-attr(/[a-z0-9]/=trends-entry-desktop)
 a29882 1
 epscape.*##+js(prevent-setTimeout, shouldShowPrompt)
+d29976 1
+a29976 1
+fastpic.org,~new.fastpic.org##+js(abort-current-script, document.getElementById, maybeShow)
+d29978 9
+d29988 3
+a29990 1
+fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /__BIM__|box-shadow/)
+d29992 4
+d30002 5
 d30191 1

@@ -1,11 +1,22 @@
-diff name:ruadlist lines:62 checksum:31225ca3e9
+diff name:ruadlist lines:91 checksum:b874156249
 d4 2
 a5 2
-! Last modified: Fri, 02 Oct 2026 08:23:53 +0000
-! Diff-Path: ../patches/2026.10.2.503.patch#ruadlist
+! Last modified: Fri, 02 Oct 2026 15:43:19 +0000
+! Diff-Path: ../patches/2026.10.2.943.patch#ruadlist
+d13 1
 d1750 1
+d7439 27
+d9250 1
+d10540 1
+d11693 1
+d13323 1
+a13323 1
+||static.fastpic.org/js/fppop.js
+d14519 2
+d17751 1
 a19580 1
 t-j.ru##[data-skeleton="true"]:empty
+d19948 1
 a20809 1
 streame.center##body > a[style^="display: none; visibility: hidden;"]
 d21134 1
@@ -22,12 +33,17 @@ d21600 2
 a21601 2
 www.kinopoisk.ru##div[id] > .anim-on ~ #kebab
 www.kinopoisk.ru##div[id] > .anim-on ~ div[style^="display"][style*="pointer-events:"]
+a21760 1
+pravda.ru##div[id^="loader_"][style*="/pix/loading.gif"]
 d22681 2
 a22682 1
 /^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]*\/[^/?]*[a-zA-Z0-9]{20,}/$script
 d22716 1
 a22716 1
 ||pikabu.ru/ajax/*?w5Vmw=$xmlhttprequest
+d22827 1
+a22827 1
+apad2.top,besplatnyeprogrammy.ru,games-7.com,hdrip.info,mediagetguru.ru,mixsoft.org,monna2.top,torrent-muzic.ru,torrent-soft.ru##:not(this-site-promotes-malware)
 d22840 1
 a22840 1
 .link/$third-party,domain=gorodyshka.link|perepolokha.link|player.temptcdn.com|tazaromikaz.link
@@ -53,11 +69,24 @@ ya.ru##html[class*="seckcian_top"] main > div[class*="__"] ~ div[class*="__"] ~ 
 d24174 1
 a24174 1
 ya.ru##section[style*="seckcian-items-count:"]
+d27816 2
 d28994 2
 a28995 1
 dzen.ru,sportsdzen.ru##[aria-label] > div[class*="_content_"] > div > div > div[style^="--"][style*="height:"] > div > div[id]
 d29023 1
 a29023 1
 dzen.ru##[data-bem*="segment-details"] > article[class^="card "] ~ div:last-child
+d29293 1
+a29293 1
+$document,reason=malicious,domain=apad2.top|besplatnyeprogrammy.ru|games-7.com|hdrip.info|mediagetguru.ru|mixsoft.org|monna2.top|torrent-muzic.ru|torrent-soft.ru
 a29631 1
 streame.center##+js(remove-node-text, script, /adserverDomain|popundersPerIP|right-click/)
+d29992 1
+a29992 1
+fastpic.org,~new.fastpic.org##+js(abort-current-script, document.getElementById, maybeShow)
+d29994 9
+d30004 3
+a30006 1
+fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /__BIM__|box-shadow/)
+d30008 4
+d30018 5
