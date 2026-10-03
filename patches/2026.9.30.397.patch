@@ -1,8 +1,8 @@
-diff name:ruadlist lines:83 checksum:8f948c37d5
+diff name:ruadlist lines:124 checksum:517efed155
 d4 2
 a5 2
-! Last modified: Sat, 03 Oct 2026 06:22:59 +0000
-! Diff-Path: ../patches/2026.10.3.382.patch#ruadlist
+! Last modified: Sat, 03 Oct 2026 12:27:06 +0000
+! Diff-Path: ../patches/2026.10.3.747.patch#ruadlist
 d13 1
 d7438 27
 d9249 1
@@ -56,6 +56,42 @@ a22876 2
 a22878 2
 ||yankimanki.org^$third-party
 ||yaropolka.link^$third-party
+a23629 1
+horoscopes.rambler.ru##.Q5XIu
+d23650 1
+d23677 1
+a23677 2
+rambler.ru#?#[aria-label="Виджеты"] div:-abp-has(> div > [data-rcmw-init])
+rambler.ru,www.afisha.ru##[aria-label="Реклама"]
+d23682 1
+d23691 1
+a23691 1
+rambler.ru##[data-news_media-desktop*="rnet_widget"]
+d23696 1
+d23703 1
+d23719 1
+d23725 1
+d23728 1
+a23728 1
+rambler.ru#?#div:-abp-has(> div[id^="adfox-"][id*="rambler"])
+d23737 1
+a23737 1
+rambler.ru##div[class*="banner-"]
+d23740 1
+d23746 1
+d23754 3
+a23756 3
+rambler.ru##div[style^="min-height: 250px"]
+rambler.ru##div[style^="min-height: 290px"]
+rambler.ru##div[style^="min-height: 300px"]
+d23761 3
+a23763 3
+rambler.ru##div[style^="min-height:250px"]
+rambler.ru##div[style^="min-height:290px"]
+rambler.ru##div[style^="min-height:300px"]
+d23766 1
+a23766 1
+rambler.ru##div[style^="order:"][style*="-1"]
 d24171 2
 a24172 2
 ya.ru##html[class*="seckcian_top"] aside + div
@@ -70,9 +106,13 @@ dzen.ru,sportsdzen.ru##[aria-label] > div[class*="_content_"] > div > div > div[
 d29023 1
 a29023 1
 dzen.ru##[data-bem*="segment-details"] > article[class^="card "] ~ div:last-child
+d29291 1
 d29293 1
 a29293 1
 $document,reason=malicious,domain=apad2.top|besplatnyeprogrammy.ru|games-7.com|hdrip.info|mediagetguru.ru|mixsoft.org|monna2.top|torrent-muzic.ru|torrent-soft.ru
+d29605 1
+a29843 1
+rambler.ru##[aria-label="Реклама"] iframe:remove()
 d29993 1
 a29993 1
 fastpic.org,~new.fastpic.org##+js(abort-current-script, document.getElementById, maybeShow)
@@ -81,4 +121,5 @@ d30005 3
 a30007 1
 fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /__BIM__|box-shadow/)
 d30009 4
+d30015 1
 d30019 5

@@ -1,8 +1,8 @@
-diff name:ruadlist lines:111 checksum:8f948c37d5
+diff name:ruadlist lines:152 checksum:517efed155
 d4 2
 a5 2
-! Last modified: Sat, 03 Oct 2026 06:22:59 +0000
-! Diff-Path: ../patches/2026.10.3.382.patch#ruadlist
+! Last modified: Sat, 03 Oct 2026 12:27:06 +0000
+! Diff-Path: ../patches/2026.10.3.747.patch#ruadlist
 d13 1
 d1750 1
 d7439 27
@@ -69,6 +69,42 @@ a22875 2
 d23181 1
 a23181 1
 dzen.ru,sportsdzen.ru##div[data-ad-index]
+a23626 1
+horoscopes.rambler.ru##.Q5XIu
+d23647 1
+d23674 1
+a23674 2
+rambler.ru#?#[aria-label="Виджеты"] div:-abp-has(> div > [data-rcmw-init])
+rambler.ru,www.afisha.ru##[aria-label="Реклама"]
+d23679 1
+d23688 1
+a23688 1
+rambler.ru##[data-news_media-desktop*="rnet_widget"]
+d23693 1
+d23700 1
+d23716 1
+d23722 1
+d23725 1
+a23725 1
+rambler.ru#?#div:-abp-has(> div[id^="adfox-"][id*="rambler"])
+d23734 1
+a23734 1
+rambler.ru##div[class*="banner-"]
+d23737 1
+d23743 1
+d23751 3
+a23753 3
+rambler.ru##div[style^="min-height: 250px"]
+rambler.ru##div[style^="min-height: 290px"]
+rambler.ru##div[style^="min-height: 300px"]
+d23758 3
+a23760 3
+rambler.ru##div[style^="min-height:250px"]
+rambler.ru##div[style^="min-height:290px"]
+rambler.ru##div[style^="min-height:300px"]
+d23763 1
+a23763 1
+rambler.ru##div[style^="order:"][style*="-1"]
 d23874 1
 a23874 1
 rbc.ru#?#body.free div[data-metronome-unit="article"] > div div:-abp-has([href^="/story/pro"])
@@ -94,11 +130,15 @@ dzen.ru,sportsdzen.ru##[aria-label] > div[class*="_content_"] > div > div > div[
 d29018 1
 a29018 1
 dzen.ru##[data-bem*="segment-details"] > article[class^="card "] ~ div:last-child
+d29286 1
 d29288 1
 a29288 1
 $document,reason=malicious,domain=apad2.top|besplatnyeprogrammy.ru|games-7.com|hdrip.info|mediagetguru.ru|mixsoft.org|monna2.top|torrent-muzic.ru|torrent-soft.ru
+d29600 1
 a29626 1
 streame.center##+js(remove-node-text, script, /adserverDomain|popundersPerIP|right-click/)
+a29837 1
+rambler.ru##[aria-label="Реклама"] iframe:remove()
 a29882 1
 dzen.ru##div:matches-attr(/[a-z0-9]/=trends-entry-desktop)
 d29986 1
@@ -109,4 +149,5 @@ d29998 3
 a30000 1
 fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /__BIM__|box-shadow/)
 d30002 4
+d30008 1
 d30012 5

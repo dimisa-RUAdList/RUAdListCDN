@@ -1,8 +1,8 @@
-diff name:ruadlist lines:33 checksum:8f948c37d5
+diff name:ruadlist lines:74 checksum:517efed155
 d4 2
 a5 2
-! Last modified: Sat, 03 Oct 2026 06:22:59 +0000
-! Diff-Path: ../patches/2026.10.3.382.patch#ruadlist
+! Last modified: Sat, 03 Oct 2026 12:27:06 +0000
+! Diff-Path: ../patches/2026.10.3.747.patch#ruadlist
 d13 1
 d7438 27
 d9249 1
@@ -19,10 +19,50 @@ pravda.ru##div[id^="loader_"][style*="/pix/loading.gif"]
 d22828 1
 a22828 1
 apad2.top,besplatnyeprogrammy.ru,games-7.com,hdrip.info,mediagetguru.ru,mixsoft.org,monna2.top,torrent-muzic.ru,torrent-soft.ru##:not(this-site-promotes-malware)
+a23637 1
+horoscopes.rambler.ru##.Q5XIu
+d23658 1
+d23685 1
+a23685 2
+rambler.ru#?#[aria-label="Виджеты"] div:-abp-has(> div > [data-rcmw-init])
+rambler.ru,www.afisha.ru##[aria-label="Реклама"]
+d23690 1
+d23699 1
+a23699 1
+rambler.ru##[data-news_media-desktop*="rnet_widget"]
+d23704 1
+d23711 1
+d23727 1
+d23733 1
+d23736 1
+a23736 1
+rambler.ru#?#div:-abp-has(> div[id^="adfox-"][id*="rambler"])
+d23745 1
+a23745 1
+rambler.ru##div[class*="banner-"]
+d23748 1
+d23754 1
+d23762 3
+a23764 3
+rambler.ru##div[style^="min-height: 250px"]
+rambler.ru##div[style^="min-height: 290px"]
+rambler.ru##div[style^="min-height: 300px"]
+d23769 3
+a23771 3
+rambler.ru##div[style^="min-height:250px"]
+rambler.ru##div[style^="min-height:290px"]
+rambler.ru##div[style^="min-height:300px"]
+d23774 1
+a23774 1
+rambler.ru##div[style^="order:"][style*="-1"]
 d27824 2
+d29298 1
 d29300 1
 a29300 1
 $document,reason=malicious,domain=apad2.top|besplatnyeprogrammy.ru|games-7.com|hdrip.info|mediagetguru.ru|mixsoft.org|monna2.top|torrent-muzic.ru|torrent-soft.ru
+d29612 1
+a29850 1
+rambler.ru##[aria-label="Реклама"] iframe:remove()
 d30000 1
 a30000 1
 fastpic.org,~new.fastpic.org##+js(abort-current-script, document.getElementById, maybeShow)
@@ -31,4 +71,5 @@ d30012 3
 a30014 1
 fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /__BIM__|box-shadow/)
 d30016 4
+d30022 1
 d30026 5
