@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 05 Oct 2026 15:54:14 +0000
-! Diff-Path: ../patches/2026.10.5.954.patch#ruadlist
+! Last modified: Mon, 05 Oct 2026 22:33:01 +0000
+! Diff-Path: ../patches/2026.10.5.1353.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -11066,7 +11066,6 @@ igdz1.ru^$script,domain=igdz.ru
 ||admin.tenews.te.ua/plugins/galleryadvert/
 ||ado.delfi.ee^
 ||ads-u.depositfiles.com/
-||ads.prod.vdsprts.ru/
 ||adult-images.ru^*.php$script
 ||adultphotosets.net^$script
 ||adverman.*/banners/
@@ -24046,6 +24045,7 @@ sports.ru##p > a[rel="nofollow"] > img[height][width]
 sports.ru#?#p:-abp-has(> a[href]:-abp-contains(М.Видео))
 tribuna.com##span[class^="_comments__loader"][class*="_spinner_"]
 sports.ru##style:first-child ~ [class^="gift__"]
+||ads.prod.vdsprts.ru/
 ||dumpster.cdn.sports.ru/*.png|$image
 ||dumpster.cdn.sports.ru/*.webp|$image
 ||s5o.ru/build/_desktop/split_testing_init.js
@@ -24054,6 +24054,7 @@ sports.ru##style:first-child ~ [class^="gift__"]
 ||senoval.cdn.sports.ru/news-renderer/public/SparrowRecommendations-
 ||senoval.cdn.sports.ru/s-presence/sblock-presence.min.js
 ||senoval.cdn.sports.ru/tagchester/*/actual-matches-widget/
+||sp.prod.vdsprts.ru/
 ||sports.ru/special/supertop-iframe/
 ||sports.ru^*/banners/
 ||static.*.tribuna.com/_next/static/chunks/3340.a9e1afb602402a44.js
