@@ -1,8 +1,8 @@
-diff name:ruadlist lines:97 checksum:466781312a
+diff name:ruadlist lines:109 checksum:379756e486
 d4 2
 a5 2
-! Last modified: Tue, 06 Oct 2026 02:53:48 +0000
-! Diff-Path: ../patches/2026.10.6.173.patch#ruadlist
+! Last modified: Tue, 06 Oct 2026 10:06:30 +0000
+! Diff-Path: ../patches/2026.10.6.606.patch#ruadlist
 d13 1
 a1414 1
 ||ctv.house^$third-party
@@ -32,6 +32,9 @@ t-j.ru##div[class^="_promoGallery_"]
 t-j.ru##div[class^="_skeleton_"][style^="margin-top:"]
 a21760 1
 pravda.ru##div[id^="loader_"][style*="/pix/loading.gif"]
+d22715 1
+a22715 1
+||pikabu.ru/ajax/*?w4Vmw=$xmlhttprequest
 d22826 1
 a22826 1
 apad2.top,besplatnyeprogrammy.ru,games-7.com,hdrip.info,mediagetguru.ru,mixsoft.org,monna2.top,torrent-muzic.ru,torrent-soft.ru##:not(this-site-promotes-malware)
@@ -77,11 +80,20 @@ a24083 1
 ||ads.prod.vdsprts.ru/
 a24091 1
 ||sp.prod.vdsprts.ru/
+d24176 2
+a24177 1
+ya.ru##html[class*="sectian_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
+d24179 1
+a24179 1
+ya.ru##section[style*="sectian-items-count:"]
 d27821 2
 d29295 1
 d29297 1
 a29297 1
 $document,reason=malicious,domain=apad2.top|besplatnyeprogrammy.ru|games-7.com|hdrip.info|mediagetguru.ru|mixsoft.org|monna2.top|torrent-muzic.ru|torrent-soft.ru
+a29348 1
+dzen.ru,sportsdzen.ru##+js(abort-on-property-read, Object.prototype.AdvManagerLoadStart)
+d29354 1
 d29370 1
 d29609 1
 a29847 1
