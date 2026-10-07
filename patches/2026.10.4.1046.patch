@@ -1,8 +1,8 @@
-diff name:ruadlist lines:64 checksum:50c1cd114b
+diff name:ruadlist lines:66 checksum:b236062579
 d4 2
 a5 2
-! Last modified: Wed, 07 Oct 2026 16:21:08 +0000
-! Diff-Path: ../patches/2026.10.7.981.patch#ruadlist
+! Last modified: Wed, 07 Oct 2026 21:56:12 +0000
+! Diff-Path: ../patches/2026.10.7.1316.patch#ruadlist
 a3895 1
 ||mirdox.xyz^$third-party
 a5739 1
@@ -60,6 +60,8 @@ dzen.ru,sportsdzen.ru##+js(abort-on-property-read, Object.prototype.AdvManagerLo
 d29315 1
 a29498 1
 video.sports.ru##+js(json-prune, data.sponsorCampaign)
+a29935 1
+||rutube.ru/api/play/options/*&referer=rambler.$xmlhttprequest,removeparam=referer
 d33111 1
 a33111 1
 /^https?:\/\/pikabu\.ru\/ajax\/{1,2}[^?]+\?[A-Za-z0-9]+=_*[0-9a-f]{22,}_[a-z0-9_]+/$xmlhttprequest,domain=pikabu.ru

@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 07 Oct 2026 16:21:08 +0000
-! Diff-Path: ../patches/2026.10.7.981.patch#ruadlist
+! Last modified: Wed, 07 Oct 2026 21:56:12 +0000
+! Diff-Path: ../patches/2026.10.7.1316.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -29942,6 +29942,7 @@ ya.ru,yandex.*##.simple-popup__overlay:remove()
 ||pronpic.org^$third-party,badfilter
 ||rbk.ru/*/_videoAutoplayRecommend.js
 ||rbk.ru/*/build/fn/_oprosso.js
+||rutube.ru/api/play/options/*&referer=rambler.$xmlhttprequest,removeparam=referer
 ||rutube.ru/play/embed/$third-party,subdocument,removeparam=autoplay
 ||s-cdn.org/promo/*.mp4$media,redirect=noop-0.1s.mp3,domain=player-films.online
 ||s-club.tv/promo/*.mp4$media,redirect=noop-0.1s.mp3,domain=player-films.online

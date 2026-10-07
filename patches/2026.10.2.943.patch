@@ -1,8 +1,8 @@
-diff name:ruadlist lines:108 checksum:50c1cd114b
+diff name:ruadlist lines:110 checksum:b236062579
 d4 2
 a5 2
-! Last modified: Wed, 07 Oct 2026 16:21:08 +0000
-! Diff-Path: ../patches/2026.10.7.981.patch#ruadlist
+! Last modified: Wed, 07 Oct 2026 21:56:12 +0000
+! Diff-Path: ../patches/2026.10.7.1316.patch#ruadlist
 a1413 1
 ||ctv.house^$third-party
 a3894 1
@@ -103,6 +103,8 @@ video.sports.ru##+js(json-prune, data.sponsorCampaign)
 d29576 1
 a29814 1
 rambler.ru##[aria-label="Реклама"] iframe:remove()
+a29942 1
+||rutube.ru/api/play/options/*&referer=rambler.$xmlhttprequest,removeparam=referer
 d29971 1
 d33119 1
 a33119 1
