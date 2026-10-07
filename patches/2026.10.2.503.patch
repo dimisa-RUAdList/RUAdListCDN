@@ -1,8 +1,8 @@
-diff name:ruadlist lines:117 checksum:0decbf503e
+diff name:ruadlist lines:137 checksum:50c1cd114b
 d4 2
 a5 2
-! Last modified: Wed, 07 Oct 2026 08:33:19 +0000
-! Diff-Path: ../patches/2026.10.7.513.patch#ruadlist
+! Last modified: Wed, 07 Oct 2026 16:21:08 +0000
+! Diff-Path: ../patches/2026.10.7.981.patch#ruadlist
 d13 1
 a1414 1
 ||ctv.house^$third-party
@@ -26,6 +26,8 @@ d15188 1
 a15575 2
 dtf.ru,vc.ru##.aside a[href^="/store"]
 dtf.ru##.aside a[href^="https://edu.vc.ru"]
+a17223 1
+voshod-solnca.ru#?#.layout-row > div:-abp-has(> div > div > .advertisement)
 d17750 1
 d18501 1
 a19391 1
@@ -36,6 +38,9 @@ d19864 1
 d19948 1
 a21762 1
 pravda.ru##div[id^="loader_"][style*="/pix/loading.gif"]
+d22683 1
+a22683 1
+/^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]*\/(?:[^/?0-9]*[0-9]){5}[^/?]*(?:\?.*)?$/$script
 d22687 1
 a22687 1
 ||dzen.ru/pogoda/$script,xmlhttprequest
@@ -93,8 +98,18 @@ ya.ru##html[class*="sectian_top"] main > div[class*="__"] ~ div[class*="__"] ~ d
 d24182 1
 a24182 1
 ya.ru##section[style*="sectian-items-count:"]
+a24355 1
+dzen.ru##.climate-calendar-container > .climate-calendar-container__content ~ div
 d26000 1
 d27824 2
+a28878 2
+voshod-solnca.ru###sidebar:style(background: none !important)
+! ---
+a28963 1
+dzen.ru##div[class*="dzen-wrapper-with-top-content-desktop__topContent-"]:style(grid-template-columns: inherit !important)
+a29028 1
+dzen.ru##.climate-calendar-container:style(margin: unset !important)
+d29031 1
 d29298 1
 d29300 1
 a29300 1
@@ -103,6 +118,8 @@ a29351 1
 dzen.ru,sportsdzen.ru##+js(abort-on-property-read, Object.prototype.AdvManagerLoadStart)
 d29357 1
 d29373 1
+a29541 1
+video.sports.ru##+js(json-prune, data.sponsorCampaign)
 d29612 1
 a29850 1
 rambler.ru##[aria-label="Реклама"] iframe:remove()
@@ -116,3 +133,6 @@ fastpic.org,~new.fastpic.org##+js(remove-node-text, script, /__BIM__|box-shadow/
 d30016 4
 d30022 1
 d30026 5
+d33175 1
+a33175 1
+/^https?:\/\/pikabu\.ru\/ajax\/{1,2}[^?]+\?[A-Za-z0-9]+=_*[0-9a-f]{22,}_[a-z0-9_]+/$xmlhttprequest,domain=pikabu.ru

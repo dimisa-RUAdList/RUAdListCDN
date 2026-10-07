@@ -1,8 +1,8 @@
-diff name:ruadlist lines:44 checksum:0decbf503e
+diff name:ruadlist lines:64 checksum:50c1cd114b
 d4 2
 a5 2
-! Last modified: Wed, 07 Oct 2026 08:33:19 +0000
-! Diff-Path: ../patches/2026.10.7.513.patch#ruadlist
+! Last modified: Wed, 07 Oct 2026 16:21:08 +0000
+! Diff-Path: ../patches/2026.10.7.981.patch#ruadlist
 a3895 1
 ||mirdox.xyz^$third-party
 a5739 1
@@ -15,12 +15,17 @@ d15156 1
 a15543 2
 dtf.ru,vc.ru##.aside a[href^="/store"]
 dtf.ru##.aside a[href^="https://edu.vc.ru"]
+a17191 1
+voshod-solnca.ru#?#.layout-row > div:-abp-has(> div > div > .advertisement)
 d18468 1
 a19358 1
 vk.com,vk.ru##[class*="onversationsBar"]
 a19562 1
 vk.com,vk.ru##[data-testid="feed_main_container"] > div > section
 d19831 1
+d22650 1
+a22650 1
+/^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]*\/(?:[^/?0-9]*[0-9]){5}[^/?]*(?:\?.*)?$/$script
 d22654 1
 a22654 1
 ||dzen.ru/pogoda/$script,xmlhttprequest
@@ -39,7 +44,22 @@ ya.ru##html[class*="sectian_top"] main > div[class*="__"] ~ div[class*="__"] ~ d
 d24143 1
 a24143 1
 ya.ru##section[style*="sectian-items-count:"]
+a24316 1
+dzen.ru##.climate-calendar-container > .climate-calendar-container__content ~ div
 d25961 1
+a28837 2
+voshod-solnca.ru###sidebar:style(background: none !important)
+! ---
+a28922 1
+dzen.ru##div[class*="dzen-wrapper-with-top-content-desktop__topContent-"]:style(grid-template-columns: inherit !important)
+a28987 1
+dzen.ru##.climate-calendar-container:style(margin: unset !important)
+d28990 1
 a29309 1
 dzen.ru,sportsdzen.ru##+js(abort-on-property-read, Object.prototype.AdvManagerLoadStart)
 d29315 1
+a29498 1
+video.sports.ru##+js(json-prune, data.sponsorCampaign)
+d33111 1
+a33111 1
+/^https?:\/\/pikabu\.ru\/ajax\/{1,2}[^?]+\?[A-Za-z0-9]+=_*[0-9a-f]{22,}_[a-z0-9_]+/$xmlhttprequest,domain=pikabu.ru
