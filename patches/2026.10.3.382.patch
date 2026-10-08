@@ -1,8 +1,8 @@
-diff name:ruadlist lines:125 checksum:ad620b4f89
+diff name:ruadlist lines:138 checksum:66090af0a2
 d4 2
 a5 2
-! Last modified: Thu, 08 Oct 2026 08:50:05 +0000
-! Diff-Path: ../patches/2026.10.8.530.patch#ruadlist
+! Last modified: Thu, 08 Oct 2026 16:23:37 +0000
+! Diff-Path: ../patches/2026.10.8.983.patch#ruadlist
 a1413 1
 ||ctv.house^$third-party
 a3894 1
@@ -31,6 +31,8 @@ a19561 1
 vk.com,vk.ru##[data-testid="feed_main_container"] > div > section
 d19830 1
 d19910 1
+a21852 1
+snookerist.ru##div[style*="max-height:"][style*="min-height:"]
 d22649 1
 a22649 1
 /^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]*\/(?:[^/?0-9]*[0-9]){5}[^/?]*(?:\?.*)?$/$script
@@ -39,7 +41,9 @@ a22653 1
 ||dzen.ru/pogoda/$script,xmlhttprequest
 d22683 1
 a22683 1
-||pikabu.ru/ajax/*?w4Vmw=$xmlhttprequest
+||pikabu.ru/ajax/*?w3Vmw=$xmlhttprequest
+a23137 1
+dzen.ru##[id*="_R-Q-"]
 a23603 1
 horoscopes.rambler.ru##.Q5XIu
 d23624 1
@@ -92,14 +96,20 @@ a24321 1
 dzen.ru##.climate-calendar-container > .climate-calendar-container__content ~ div
 d25966 1
 a27204 3
-p2.jut-su.online##.agp-err > b
-p2.jut-su.online##.agp-err > div > [data-ab="reload"]
-p2.jut-su.online##.agp-err > p
+jut-su.online##.agp-err > b
+jut-su.online##.agp-err > div > [data-ab="reload"]
+jut-su.online##.agp-err > p
 a28842 2
 voshod-solnca.ru###sidebar:style(background: none !important)
 ! ---
 a28927 1
 dzen.ru##div[class*="dzen-wrapper-with-top-content-desktop__topContent-"]:style(grid-template-columns: inherit !important)
+d28966 1
+a28966 1
+dzen.ru,sportsdzen.ru##[aria-label] > div[class*="_content"] > div > div > div[style^="--"][style*="height:"] > div > div[id]
+d28974 1
+a28974 1
+dzen.ru,sportsdzen.ru##div[class*="new"] [class*="__rubricator"] + div[class*=" "] > div:only-child
 a28992 1
 dzen.ru##.climate-calendar-container:style(margin: unset !important)
 d28995 1
@@ -114,10 +124,13 @@ d29576 1
 d29658 1
 a29658 1
 dni.expert,dni.ru,kp.kg,kp.kz,kp.ru,ladys.media,lifehacker.ru,md.kp.media,mk.ru,ohotniki.ru,podolyaka.ru,portalvirtualreality.ru,radiokp.ru,russian.rt.com,sportkp.ru,stopgame.ru,the-day.ru,woman.ru,womanhit.ru##+js(set-constant, Object.prototype.changeVisible, noopFunc)
+d29797 1
+a29797 1
+dzen.ru##:matches-path(/articles) div:has(> article > [class*="Box"])
 a29814 1
 rambler.ru##[aria-label="Реклама"] iframe:remove()
 a29928 1
-||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=p2.jut-su.online
+||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=jut-su.online
 a29942 1
 ||rutube.ru/api/play/options/*&referer=rambler.$xmlhttprequest,removeparam=referer
 d29971 1

@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 08 Oct 2026 08:50:05 +0000
-! Diff-Path: ../patches/2026.10.8.530.patch#ruadlist
+! Last modified: Thu, 08 Oct 2026 16:23:37 +0000
+! Diff-Path: ../patches/2026.10.8.983.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21852,6 +21852,7 @@ argumenti.ru##div[style*="height: 264px;"]
 reshak.ru##div[style*="height:325px;"]
 euro-football.ru,liveresult.ru##div[style*="height:400px;"]
 narutoplanet.ru##div[style*="margin-top: 9.5px;"]
+snookerist.ru##div[style*="max-height:"][style*="min-height:"]
 euro-football.ru,liveresult.ru##div[style*="min-height:"][style*="00px"]
 news.zerkalo.io##div[style*="min-height:"][style*="250px"]
 chipmaker.ru##div[style*="min-height:100px;"]
@@ -22682,7 +22683,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=livejournal.com|olegmaka
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
 ||ng72.ru^$csp=script-src 'self' 'unsafe-eval' https:
-||pikabu.ru/ajax/*?w4Vmw=$xmlhttprequest
+||pikabu.ru/ajax/*?w3Vmw=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -23137,6 +23138,7 @@ dzen.ru##[aria-label="Контент страницы сюжета"] > [class*="
 dzen.ru#?#[aria-label="Контент страницы сюжета"] > [class*="discrete"] > div > div:-abp-has(> div[id])
 dzen.ru##[id*="_R-I-"]
 dzen.ru##[id*="_R-N-"]
+dzen.ru##[id*="_R-Q-"]
 dzen.ru##[id*="_tsar"]
 dzen.ru##[id*="news_discrete_right"]
 sportsdzen.ru##div[class*="-sports-button-ad_"]
@@ -27200,9 +27202,9 @@ usemind.org##.a-top
 delfi.ee##.ad-block-layer
 ogorod.ru##.adblock_popup_warning
 wowjp.net##.adblocker-notification
-p2.jut-su.online##.agp-err > b
-p2.jut-su.online##.agp-err > div > [data-ab="reload"]
-p2.jut-su.online##.agp-err > p
+jut-su.online##.agp-err > b
+jut-su.online##.agp-err > div > [data-ab="reload"]
+jut-su.online##.agp-err > p
 pes-files.ru##.alert-blue
 electric-house.ru##.alert_warn
 stylenews.ru##.alm-btn-wrap
@@ -28967,7 +28969,7 @@ dzen.ru##.news-rubric-desktop__news > section > div > div[id]
 dzen.ru##.news-secondary-layout-column__secondary div[id]
 dzen.ru##.news-sticky__inner > div > div[id]
 dzen.ru##.news-story-page div[id] > div:not([id]) > div[id]
-dzen.ru,sportsdzen.ru##[aria-label] > div[class*="_content_"] > div > div > div[style^="--"][style*="height:"] > div > div[id]
+dzen.ru,sportsdzen.ru##[aria-label] > div[class*="_content"] > div > div > div[style^="--"][style*="height:"] > div > div[id]
 dzen.ru##[aria-label] div[id][class*="-desktop__ad-"]
 dzen.ru##div[class*="AdvertTsar"]
 dzen.ru##div[class*="BrandingAdvertLayoutColumn-"]
@@ -28975,7 +28977,7 @@ dzen.ru##div[class*="_content_with-new-"] > div[id] ~ div[class*="withDiscreteSc
 dzen.ru,sportsdzen.ru##div[class*="_is-branding"] > div[style^="background-color:"]
 dzen.ru,sportsdzen.ru##div[class*="body_branding"] > div[style*="background-color:"]
 dzen.ru,sportsdzen.ru##div[class*="body_branding"]:style(background: inherit !important)
-dzen.ru##div[class*="new"] [class$="__rubricator"] + div[class*=" "] > div:only-child
+dzen.ru,sportsdzen.ru##div[class*="new"] [class*="__rubricator"] + div[class*=" "] > div:only-child
 dzen.ru##div[class^="news"] [class*="skeleton"]:style(background-color: transparent !important)
 dzen.ru,sportsdzen.ru##div[class^="news-"] [class*="-root "]
 dzen.ru,sportsdzen.ru##div[class^="news-"] [style^="margin-top: 0px; height: calc("][style$=" - 0px);"]
@@ -29796,7 +29798,7 @@ dzen.ru##:matches-path(/\/a/) div:matches-attr(/[a-z0-9]/=article-bottom-block) 
 dzen.ru##:matches-path(/\/a/) div[class*="Doc2Doc"]
 dzen.ru##:matches-path(/\/a/) div[style="opacity: 1;"]
 dzen.ru##:matches-path(/\/a/) main div [itemscope] > div > div[id]
-dzen.ru##:matches-path(/articles) div:has(> article > [class*="adBox"])
+dzen.ru##:matches-path(/articles) div:has(> article > [class*="Box"])
 dzen.ru##:matches-path(/articles) div[class^="article-feed--"] > div[class] ~ div[id]
 ozon.ru##:matches-path(/kursk-sertifikaty) [data-lcp-name*="anner-"]:style(display: block !important)
 ozon.ru##:matches-path(/kursk-sertifikaty) div[data-widget="banner"]:style(display: block !important)
@@ -29929,7 +29931,7 @@ ya.ru,yandex.*##.simple-popup__overlay:remove()
 ||franecki.net/js/lib.js$important,script,redirect=noop.js
 ||frontend.vh.yandex.ru/player/*autoplay=1$subdocument,removeparam=|,domain=~music.yandex.*|~music.yandex.ru
 ||googletagmanager.com/gtag/js?id=UA-$important,script,domain=inforesist.org
-||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=p2.jut-su.online
+||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=jut-su.online
 ||ipcamlive.com/player/player.php?*autoplay=true$subdocument,removeparam=autoplay
 ||loadercdn.com^$important,script,redirect=noopjs
 ||m.mixadvert.com/show/$important,script
