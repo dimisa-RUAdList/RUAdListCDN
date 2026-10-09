@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 09 Oct 2026 08:53:56 +0000
-! Diff-Path: ../patches/2026.10.9.533.patch#ruadlist
+! Last modified: Fri, 09 Oct 2026 16:06:44 +0000
+! Diff-Path: ../patches/2026.10.9.966.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -3694,6 +3694,7 @@
 ||mallplg.com^
 ||malokacha.club^$third-party
 ||mampark.ru^$third-party
+||mamshirt.com^$third-party
 ||mamypos.com^
 ||managedcollapsed.in^
 ||manselisten.com^$third-party
@@ -4936,6 +4937,7 @@
 ||pushdealer.com^$third-party
 ||pusherworker.com^$third-party
 ||pushina.info^$third-party
+||pushmoose.com^$third-party
 ||pushprofit.ru^$third-party
 ||pushreal.media^$third-party
 ||pushtosh.fun^$third-party
@@ -15913,6 +15915,7 @@ vesti.kz##.betconest
 officelife.media##.betera-widget
 1927.kiev.ua##.bets-block
 ska.ru##.betting
+24tv.ua,football24.ua,sport24.ua##.betting-content
 gooool365.com,gooool365.org,gooool365.sx##.bg-ad
 mmotop.ru##.bg-general
 agronom.top##.bg-gray
@@ -16041,6 +16044,7 @@ oko-planet.su#?#.bltitle:-abp-contains(Реклама)
 spbit.ru#?#.blue > .header:-abp-contains(партнеры)
 dnepr.info##.blue-bann
 ecm-journal.ru##.blurb
+medvestnik.ru##.bm-banners
 777score.ru,comnews.ru,emotionalrating.com,kluch.media,ok-magazine.ru,poltava.to##.bn
 dota2.ru##.bn-btm
 brokker.news##.bn-content
@@ -16214,6 +16218,7 @@ dsnews.ua#?#.c-feed__list-item:-abp-has(> .c-feed__item > .c-r)
 drive2.com,drive2.ru#?#.c-header:-abp-contains(/Ads|Реклама/)
 telegraf.com.ua,telegraf.ua#?#.c-post__content > div:-abp-has(> [id^="_vidverto-"])
 delo.ua,dsnews.ua,focus.ua##.c-r
+medvestnik.ru##.c-recommendations-widget
 5-tv.ru##.cFadeDark
 nashamama.com#?#.cN-linkList:-abp-has(> h3:only-child)
 tomat-pomidor.com##.cPost + script + center
@@ -19541,6 +19546,7 @@ goldsrc.ru##[data-role="primaryNavBar"] a[href^="http://csserv.ru/"]
 goldsrc.ru##[data-role="primaryNavBar"] a[href^="https://gamecms.ru/"]
 zoneofgames.ru##[data-role="sidebarAd"]
 malenkiy.ru##[data-role="sidebarAd"] > center
+medvestnik.ru##[data-route*="banners"]
 anilib.me,animelib.org,hentailib.me,hentailib.org,mangalib.me,mangalib.org,ranobelib.me,shlib.life,yaoilib.net##[data-scroll-content] > a[target="_blank"]:not([href="https://app.lib.social/app2.html"])
 dtf.ru##[data-section="services"]
 smi2.ru##[data-sentry-component="Finam"] a
@@ -22759,7 +22765,7 @@ anidub.vip,anidubonline.com##.plyr__progress__buffer
 aigenda.ru#@#.pub_300x250
 aigenda.ru#@#.textads
 ritsatv.ru,websdr.su##:not(my-obnaruzhili-blokirovshchik)
-android-mafia.com,game4you.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##:not(this-site-promotes-malware)
+game4you.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##:not(this-site-promotes-malware)
 @@||fearmp4.ru^$generichide
 @@||ozon.ru/highlight/kursk-$elemhide
 liveinternet.ru,sdamgia.ru##[data-container]
@@ -25699,6 +25705,7 @@ zarulem.ws##td[style^="text-align:center;width:50%"]
 ||serialinfo.ru^$third-party
 ||seriouspartner.ru^$third-party
 ||server.adeasy.ru^
+||services.bionika-digital.ru/b/$third-party
 ||servidormensseger.hotbox.ru^
 ||setka.media^$third-party
 ||setka.news^$third-party
@@ -27202,9 +27209,9 @@ usemind.org##.a-top
 delfi.ee##.ad-block-layer
 ogorod.ru##.adblock_popup_warning
 wowjp.net##.adblocker-notification
-jut-su.online##.agp-err > b
-jut-su.online##.agp-err > div > [data-ab="reload"]
-jut-su.online##.agp-err > p
+ani7.top,jut-su.online##.agp-err > b
+ani7.top,jut-su.online##.agp-err > div > [data-ab="reload"]
+ani7.top,jut-su.online##.agp-err > p
 pes-files.ru##.alert-blue
 electric-house.ru##.alert_warn
 stylenews.ru##.alm-btn-wrap
@@ -29931,7 +29938,7 @@ ya.ru,yandex.*##.simple-popup__overlay:remove()
 ||franecki.net/js/lib.js$important,script,redirect=noop.js
 ||frontend.vh.yandex.ru/player/*autoplay=1$subdocument,removeparam=|,domain=~music.yandex.*|~music.yandex.ru
 ||googletagmanager.com/gtag/js?id=UA-$important,script,domain=inforesist.org
-||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=jut-su.online
+||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=ani7.top|jut-su.online
 ||ipcamlive.com/player/player.php?*autoplay=true$subdocument,removeparam=autoplay
 ||loadercdn.com^$important,script,redirect=noopjs
 ||m.mixadvert.com/show/$important,script
@@ -32990,6 +32997,7 @@ comptoir-info.com#@#.textad
 ! *** antiadblockfilters:antiadblockfilters/antiadblock_german.txt ***
 usgang.ch###rectangle-wrapper
 ##.diysdk_webServices_banners1und1MainContent
+igorslab.de##.ilab-adblocker-notice
 ||jappy.tv/i/wrbng/abb.png
 ! *** antiadblockfilters:antiadblockfilters/antiadblock_hebrew.txt ***
 ! *** antiadblockfilters:antiadblockfilters/antiadblock_indonesian.txt ***

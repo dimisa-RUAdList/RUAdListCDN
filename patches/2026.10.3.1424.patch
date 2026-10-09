@@ -1,12 +1,16 @@
-diff name:ruadlist lines:96 checksum:fded14375e
+diff name:ruadlist lines:115 checksum:273f592f1a
 d4 2
 a5 2
-! Last modified: Fri, 09 Oct 2026 08:53:56 +0000
-! Diff-Path: ../patches/2026.10.9.533.patch#ruadlist
+! Last modified: Fri, 09 Oct 2026 16:06:44 +0000
+! Diff-Path: ../patches/2026.10.9.966.patch#ruadlist
 a1413 1
 ||ctv.house^$third-party
+a3695 1
+||mamshirt.com^$third-party
 a3894 1
 ||mirdox.xyz^$third-party
+a4936 1
+||pushmoose.com^$third-party
 a5738 1
 ||somepossibility.com^$third-party
 d10571 1
@@ -18,6 +22,12 @@ a15542 2
 dtf.ru,vc.ru##.aside a[href^="/store"]
 dtf.ru##.aside a[href^="https://edu.vc.ru"]
 d15671 1
+a15913 1
+24tv.ua,football24.ua,sport24.ua##.betting-content
+a16041 1
+medvestnik.ru##.bm-banners
+a16214 1
+medvestnik.ru##.c-recommendations-widget
 a17190 1
 voshod-solnca.ru#?#.layout-row > div:-abp-has(> div > div > .advertisement)
 d18467 1
@@ -27,6 +37,8 @@ vk.com,vk.ru#?#.vkitInternalGroupCard > [role="feed"] > article:-abp-has(> [data
 d19031 2
 a19357 1
 vk.com,vk.ru##[class*="onversationsBar"]
+a19540 1
+medvestnik.ru##[data-route*="banners"]
 a19561 1
 vk.com,vk.ru##[data-testid="feed_main_container"] > div > section
 d19830 1
@@ -42,6 +54,9 @@ a22653 1
 d22683 1
 a22683 1
 ||pikabu.ru/ajax/*?w3Vmw=$xmlhttprequest
+d22759 1
+a22759 1
+game4you.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##:not(this-site-promotes-malware)
 a23137 1
 dzen.ru##[id*="_R-Q-"]
 a23808 1
@@ -58,11 +73,13 @@ a24142 1
 ya.ru##section[style*="sectian-items-count:"]
 a24315 1
 dzen.ru##.climate-calendar-container > .climate-calendar-container__content ~ div
+a25694 1
+||services.bionika-digital.ru/b/$third-party
 d25960 1
 a27198 3
-jut-su.online##.agp-err > b
-jut-su.online##.agp-err > div > [data-ab="reload"]
-jut-su.online##.agp-err > p
+ani7.top,jut-su.online##.agp-err > b
+ani7.top,jut-su.online##.agp-err > div > [data-ab="reload"]
+ani7.top,jut-su.online##.agp-err > p
 a28836 2
 voshod-solnca.ru###sidebar:style(background: none !important)
 ! ---
@@ -89,9 +106,11 @@ d29788 1
 a29788 1
 dzen.ru##:matches-path(/articles) div:has(> article > [class*="Box"])
 a29920 1
-||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=jut-su.online
+||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=ani7.top|jut-su.online
 a29934 1
 ||rutube.ru/api/play/options/*&referer=rambler.$xmlhttprequest,removeparam=referer
+a32977 1
+igorslab.de##.ilab-adblocker-notice
 d33110 1
 a33110 1
 /^https?:\/\/pikabu\.ru\/ajax\/{1,2}[^?]+\?[A-Za-z0-9]+=_*[0-9a-f]{22,}_[a-z0-9_]+/$xmlhttprequest,domain=pikabu.ru
