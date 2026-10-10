@@ -1,8 +1,8 @@
-diff name:ruadlist lines:101 checksum:eb2d5fdab3
+diff name:ruadlist lines:107 checksum:3a384e6d35
 d4 2
 a5 2
-! Last modified: Sat, 10 Oct 2026 13:33:44 +0000
-! Diff-Path: ../patches/2026.10.10.813.patch#ruadlist
+! Last modified: Sat, 10 Oct 2026 18:29:01 +0000
+! Diff-Path: ../patches/2026.10.10.1109.patch#ruadlist
 a3696 1
 ||mamshirt.com^$third-party
 a4938 1
@@ -88,12 +88,18 @@ dzen.ru,sportsdzen.ru##[aria-label] > div[class*="_content"] > div > div > div[s
 d28977 1
 a28977 1
 dzen.ru,sportsdzen.ru##div[class*="new"] [class*="__rubricator"] + div[class*=" "] > div:only-child
+a29423 1
+fishki.net##+js(abort-on-stack-trace, HTMLVideoElement.prototype.play, playVideo)
+a29574 1
+rutube.ru##+js(prevent-addEventListener, ended, _endedNotifier)
 d29659 1
 a29659 1
 dni.expert,dni.ru,kp.kg,kp.kz,kp.ru,ladys.media,lifehacker.ru,md.kp.media,mk.ru,ohotniki.ru,podolyaka.ru,portalvirtualreality.ru,radiokp.ru,russian.rt.com,sportkp.ru,stopgame.ru,the-day.ru,woman.ru,womanhit.ru##+js(set-constant, Object.prototype.changeVisible, noopFunc)
 d29798 1
 a29798 1
 dzen.ru##:matches-path(/articles) div:has(> article > [class*="Box"])
+a29898 1
+rutube.ru/play/embed/##div[class*="touch-handlers-layout-module__waiting"] div[class^="spinner-module__spinner_"]
 a29930 1
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=ani7.top|jut-su.online
 a29944 1
