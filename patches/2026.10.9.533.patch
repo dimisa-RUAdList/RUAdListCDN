@@ -1,12 +1,15 @@
-diff name:ruadlist lines:59 checksum:57ac0b3d6f
+diff name:ruadlist lines:70 checksum:bc88e99ce8
 d4 2
 a5 2
-! Last modified: Fri, 09 Oct 2026 20:48:28 +0000
-! Diff-Path: ../patches/2026.10.9.1248.patch#ruadlist
+! Last modified: Sat, 10 Oct 2026 06:58:04 +0000
+! Diff-Path: ../patches/2026.10.10.418.patch#ruadlist
 a3696 1
 ||mamshirt.com^$third-party
 a4938 1
 ||pushmoose.com^$third-party
+a15235 2
+dtf.ru,vc.ru##.account-menu a[href^="/store"]
+dtf.ru##.account-menu a[href^="https://edu.vc.ru"]
 d15376 1
 a15376 1
 autopilot.ru,myweekend.ru##.adv_nest
@@ -43,8 +46,13 @@ d22039 1
 d22762 1
 a22762 1
 game4you.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##:not(this-site-promotes-malware)
+a23283 2
+! Финансы
+finance.mail.ru##[data-logger="ArticleContent_product"]
 a25701 1
 ||services.bionika-digital.ru/b/$third-party
+a26034 1
+||yandex.ru./$third-party
 d26759 1
 d27205 3
 a27207 3
@@ -53,6 +61,9 @@ ani7.top,jut-su.online##.agp-err > div > [data-ab="reload"]
 ani7.top,jut-su.online##.agp-err > p
 a28151 1
 www.kinopoisk.ru##a[href^="https://igromir.yandex.ru/"]:style(pointer-events: none !important; color: inherit !important; background-image: none !important)
+a28167 1
+www.kinopoisk.ru###__next > div[class^="styles_root__"]:first-of-type > div[class^="styles_root__"]:first-child + div > div > div:first-child:style(min-height: 0 !important)
+d28178 1
 d29934 1
 a29934 1
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=ani7.top|jut-su.online
