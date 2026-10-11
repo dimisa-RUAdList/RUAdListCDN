@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 11 Oct 2026 01:48:01 +0000
-! Diff-Path: ../patches/2026.10.11.108.patch#ruadlist
+! Last modified: Sun, 11 Oct 2026 08:41:33 +0000
+! Diff-Path: ../patches/2026.10.11.521.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21163,6 +21163,7 @@ budport.com.ua##div[class] > a[href][rel="nofollow"] > p
 driver.ru##div[class] > a[href][target="_blank"] > img
 animespirit.tv#?#div[class]:-abp-has(> .content-b noindex)
 sravni.ru#?#div[class]:-abp-has(> [class] ~ div[style^="height:"] > [src*="sravni.ru/special-offers/"])
+mgazeta.com#?#div[class]:-abp-has(> [class^="_blockTitle_"] ~ div [class^="_teaserItem_"])
 bitcryptonews.ru,forum.materinstvo.ru,vse-shutochki.ru#?#div[class]:-abp-has(> [id^="yandex_rtb_"])
 point.md#?#div[class]:-abp-has(> a[href*="://sales.simpals.com/"][href*="banner"])
 spafilms.me#?#div[class]:-abp-has(> a[title] > div[class])
