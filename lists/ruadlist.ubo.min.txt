@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 12 Oct 2026 07:16:21 +0000
-! Diff-Path: ../patches/2026.10.12.436.patch#ruadlist
+! Last modified: Mon, 12 Oct 2026 17:46:36 +0000
+! Diff-Path: ../patches/2026.10.12.1066.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -9093,6 +9093,7 @@ by,~mail.ru,ru,ua##.banner_box
 ##a[href^="https://kshop"][href*=".pro/"]
 ##a[href^="https://msetup.pro"]
 ~netplayer.ru##a[href^="https://netplayer.ru/"]
+~pari.ru##a[href^="https://pari.ru/authProcess/"]
 ~pari.ru##a[href^="https://pari.ru/promo/"]
 ~pikadil.ru##a[href^="https://pikadil.ru"]
 ##a[href^="https://relap.io/"][href*="promo_ad_link"]
@@ -15768,7 +15769,7 @@ gid-minecraft.ru##.banner-bottom-wrapper
 dynamomania.com##.banner-box
 driveroff.net,samlab.ws##.banner-categories
 repost.uz,tvmag.ru##.banner-center
-amurmedia.ru,angarskmedia.ru,chitamedia.su,chukotkamedia.ru,eaomedia.ru,irkutskmedia.ru,job.ru,kamchatkamedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,magadanmedia.ru,molbuk.ua,nakhodka.media,newsvl.ru,nord-news.ru,novostirostov.ru,omskmedia.su,peterburgmedia.ru,priamurmedia.ru,primadonna.media,primamedia.ru,sakhalinmedia.ru,sevastopolmedia.ru,shedevrum.ai,sochimedia.su,stavropol.media,stolicamedia.ru,tayga.info,tet.tv,ulanmedia.ru,unian.info,unian.net,unian.ua,ussurmedia.ru,vctr.media,wallnews.org,yakutiamedia.ru,yugopolis.ru##.banner-container
+amurmedia.ru,angarskmedia.ru,chitamedia.su,chukotkamedia.ru,eaomedia.ru,irkutskmedia.ru,job.ru,kamchatkamedia.ru,krasnodarmedia.su,krasnoyarskmedia.ru,magadanmedia.ru,molbuk.ua,nakhodka.media,newsvl.ru,nord-news.ru,novostirostov.ru,omskmedia.su,ostro.org,peterburgmedia.ru,priamurmedia.ru,primadonna.media,primamedia.ru,sakhalinmedia.ru,sevastopolmedia.ru,shedevrum.ai,sochimedia.su,stavropol.media,stolicamedia.ru,tayga.info,tet.tv,ulanmedia.ru,unian.info,unian.net,unian.ua,ussurmedia.ru,vctr.media,wallnews.org,yakutiamedia.ru,yugopolis.ru##.banner-container
 para.by##.banner-cube
 biysk-ok.ru##.banner-default
 vikna.if.ua##.banner-fullborder
@@ -15921,7 +15922,6 @@ ska.ru##.betting
 gooool365.com,gooool365.org,gooool365.sx##.bg-ad
 mmotop.ru##.bg-general
 agronom.top##.bg-gray
-esports.ru##.bg-gray-chg
 myfin.by##.bg-light-blue
 eurolab.ua,gdetraffic.com,novaposhta.ua,penza-press.ru,tveda.ru##.bg-link
 socportal.info##.bg-logo-ads
@@ -17937,6 +17937,7 @@ isport.ua##.premium-desk
 wowhead.com##.premium-promo-row
 animebuff.ru##.premium-wrapper
 bigmir.net##.premium_banner
+ostro.org##.press-reliz
 vidoza.net##.prevent-first-click
 study.ru#?#.preview-item:-abp-has(> [id^="yandex_rtb"])
 epizod.life##.prf-box[style="padding:30px"]
@@ -19109,7 +19110,6 @@ storinka.com.ua,storinka.site##.widget:not([class$="hidden-xs"])
 gazetavv.com##.widget_ad_unit
 i.ua##.widget_adv
 atlasprirodirossii.ru,hyperione.com,portaltele.com.ua,sho.org.ua,zazloo.ru##.widget_block
-esports.ru##.widget_block a[target="_blank"][rel="noindex nofollow"]
 volyninfo.com##.widget_calendar ~ .widget_text ~ .widget_text
 rustaste.ru#?#.widget_categories:-abp-has(> div[align="center"] > img[src*="/aliban"])
 sdelalremont.ru##.widget_cb_widget
@@ -19527,7 +19527,9 @@ myukraina.com.ua##[data-link*="goo.gl"]
 myfin.by##[data-link*="winline.by"]
 rocketdockfree.ru##[data-msetup]
 woman.ru##[data-name*="Banner"]
+esports.ru##[data-name*="steam/balance-"]
 re.kufar.by#?#[data-name="ad_in_listing"] > article:-abp-has(> div > [id^="adfox_"])
+esports.ru##[data-name="navigation/action-bar"] > .js-present
 newsinfo.ru##[data-name^="news_item_in_text_"]
 eapteka.ru##[data-neon-skeleton-removable]
 vladnews.ru##[data-newsb]
@@ -19599,6 +19601,7 @@ pikabu.ru##[href*="/acceptable-ads"]
 xn--80awhdeco3h.xn--p1ai,yarportal.ru##[href*="/goto.php?id="][target="_blank"] > img[src^="http://yarportal.ru/"]
 gorobzor.ru##[href*="/link?to="]
 football.kulichki.net##[href*="/pari"]
+ostro.org##[href*="/press-releases"]
 dotaguide.ru##[href*="://dotaguide.ru/go/"]
 kg.ua##[href*="://flaerok.ua"]
 anistar.org,astar.bz,online-star.org,online-stars.org##[href*="://r.advg.agency/"]
@@ -20025,7 +20028,7 @@ forum.mista.ru##a[href*="banners.php?click="]
 forum.mista.ru##a[href*="banners.php?click="] + a
 minecraft15.my1.ru##a[href*="barbarisnews.ru"]
 all-sci.net,bib.social,economics.studio,economuch.com,finbook.news,lawbook.online,lawbooks.news,lib.sale,medinfo.live,myzooplanet.ru,pravo.studio,provse.news,psihologia.biz,sci-lib.biz,sci.house,scicenter.online,textbooks.studio,uchebnikfree.com,xn--80aaivjfyj3e.com##a[href*="bear"]
-cybersport.ru,dltv.org,esports.ru,prodota.ru##a[href*="betboom.bet"]
+cybersport.ru,dltv.org,prodota.ru##a[href*="betboom.bet"]
 okrain.net.ua##a[href*="billing.hostpro.ua"]
 allsport-live.ru,allsport-news.net##a[href*="binance.com"]
 aacalc.ru,agronews.ua,ain.ua,ampercar.com,argumenti.ru,arminfo.info,autogeek.com.ua,bib.bz,blizzardheroes.ru,csgo-guides.ru,daxshat.site,for-ua.info,gameinside.ua,games-vam.ru,goal24.live,ilenta.com,img2txt.com,kontrolnaya-rabota.ru,korsars.pro,kritka.su,kurkul.com,mezha.ua,modsfire.com,mt.today,newstudio.tv,onliner.by,onlinevideoconverter.com,photoshop-besplatno.org,prosportua.com,psm7.com,real-game.net,rutracker-2017.org,soft-windows.info,stopgame.ru,tochka.net,torrent-shyter.net,ua.news,vc.ru,vgtimes.com,vgtimes.ru,windows-soft.info,xn--80ac9aeh6f.xn--p1ai,z-music.org,zbirna.com,zoneofgames.ru##a[href*="bit.ly"]
@@ -20225,14 +20228,13 @@ fchimik.ru##a[href="http://www.polyplast-un.ru/"]
 fchimik.ru##a[href="http://www.pravo.gov.ru/"]
 fchimik.ru##a[href="http://www.procterandgamble.ru/"]
 vd-tv.ru##a[href="http://www.vdclab.ru/"]
-esports.ru##a[href="https://go.esports.ru/roulette"]
+esports.ru##a[href="https://esports.ru/popolnienie-steam-v-rossii/"]
 gsett.ru##a[href="https://gsett.ru/gs"]
 oper.ru##a[href="https://oper.ru/follow/wi"]
 thelastgame.ru##a[href="https://thelastgame.ru/how-to-load/"]
 ukrfootball.ua##a[href="https://ukrfootball.ua/bookmaker/"]
 ukrfootball.ua##a[href="https://ukrfootball.ua/casino/"]
 3dn.ru##a[href="https://vk.com/sochirealtys"]
-esports.ru##a[href="https://www.esports.ru/news-betboom/"]
 cska-hockey.ru,hctorpedo.ru##a[href="https://www.sogaz.ru/sport"]
 inforesist.org##a[href="https://www.ukr.net/ru/news/companies.html"]
 olivkafrekenbok.myqip.ru##a[href="javascript:"]
@@ -20969,6 +20971,7 @@ okna.ua#?#div:-abp-has(> div[id][data-url])
 silver.ru#?#div:-abp-has(> div[id^="M"][id*="Composite"])
 liveresult.ru#?#div:-abp-has(> div[style="color:#D42A28"])
 koolinar.ru#?#div:-abp-has(> header ~ a[href][rel="sponsored"])
+esports.ru#?#div:-abp-has(> img ~ a[href*="://tracker.partnersmelbet.ru/"])
 gdzguru.com#?#div:-abp-has(> img[src*="ops."])
 computer76.ru,rp5.am,rp5.by,rp5.co.nz,rp5.kz,rp5.md,rp5.ru,videoredaktor.ru#?#div:-abp-has(> ins)
 doramatv.live,doramatv.one,doramatv.ru#?#div:-abp-has(> noindex > script)
@@ -22691,7 +22694,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=livejournal.com|olegmaka
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
 ||ng72.ru^$csp=script-src 'self' 'unsafe-eval' https:
-||pikabu.ru/ajax/*?w3Vmw=$xmlhttprequest
+||pikabu.ru/ajax/*?w2Vmw=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -27035,6 +27038,7 @@ gbsmp.ru#@#img[width="728"][height="90"]
 @@||cdn.vidyomani.com^*/showads.js|$script,domain=vidyomani.com|webeyo.com
 @@||cdn.webeyo.com^*/showads.js|$script,domain=vidyomani.com|webeyo.com
 @@||chess-samara.ru/js/adsbygoogle.js$script,domain=chess-samara.ru
+@@||code.moviead55.ru/ovpaid.php?v=*&position=pre|$xmlhttprequest,domain=~ani5.top|~ani7.top|imasdk.googleapis.com|~jut-su.online
 @@||com^$script,domain=videomega.tv
 @@||contextual.media.net/dmedianet.js|$object,domain=tests24.su
 @@||debfile.com/ads/adframe.js$script,domain=debfile.com
@@ -27056,6 +27060,8 @@ gbsmp.ru#@#img[width="728"][height="90"]
 @@||gwss.ru^$xmlhttprequest,domain=gwss.ru
 @@||hack-master.ru^*AdblockDetected$script,domain=hack-master.ru
 @@||ictv.ua/wp-content/themes/ictv/includes/js/cnads.js|$script,domain=ictv.ua
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js|$script,domain=ani5.top|ani7.top|jut-su.online
+@@||imasdk.googleapis.com/js/sdkloader/loader.js|$script,domain=ani5.top|ani7.top|jut-su.online
 @@||it-like.ru/ads_load/*.js|$domain=it-like.ru
 @@||ivbt.ru^$elemhide
 @@||knigilub.ru/*.js|$script,domain=knigilub.ru
@@ -27213,6 +27219,7 @@ usemind.org##.a-top
 delfi.ee##.ad-block-layer
 ogorod.ru##.adblock_popup_warning
 wowjp.net##.adblocker-notification
+ani5.top,ani7.top,jut-su.online##.agp-ad > [class]
 ani5.top,ani7.top,jut-su.online##.agp-err > b
 ani5.top,ani7.top,jut-su.online##.agp-err > div > [data-ab="reload"]
 ani5.top,ani7.top,jut-su.online##.agp-err > p
@@ -27781,6 +27788,9 @@ eplus.by##body:style(overflow: auto !important)
 ! ---
 seasonvar.ru,uniondht.org##body:not(#id):style(padding: 0 !important)
 seasonvar.ru,uniondht.org##html:not(#id):style(padding: 0 !important)
+! ---
+esports.ru##html.overflow-hidden .js-popup-promo
+esports.ru##html.overflow-hidden:style(overflow: auto !important)
 ! ---
 espreso.tv###disqus_thread:style(min-width: 700px !important)
 ! ---
@@ -29945,7 +29955,7 @@ ya.ru,yandex.*##.simple-popup__overlay:remove()
 ||franecki.net/js/lib.js$important,script,redirect=noop.js
 ||frontend.vh.yandex.ru/player/*autoplay=1$subdocument,removeparam=|,domain=~music.yandex.*|~music.yandex.ru
 ||googletagmanager.com/gtag/js?id=UA-$important,script,domain=inforesist.org
-||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=ani5.top|ani7.top|jut-su.online
+||imasdk.googleapis.com/js/sdkloader/ima3.js$important,script,redirect=google-ima.js,domain=ani5.top|ani7.top|jut-su.online
 ||ipcamlive.com/player/player.php?*autoplay=true$subdocument,removeparam=autoplay
 ||loadercdn.com^$important,script,redirect=noopjs
 ||m.mixadvert.com/show/$important,script
