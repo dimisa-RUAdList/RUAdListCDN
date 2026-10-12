@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 11 Oct 2026 20:11:09 +0000
-! Diff-Path: ../patches/2026.10.11.1211.patch#ruadlist
+! Last modified: Mon, 12 Oct 2026 07:16:21 +0000
+! Diff-Path: ../patches/2026.10.12.436.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -27213,9 +27213,9 @@ usemind.org##.a-top
 delfi.ee##.ad-block-layer
 ogorod.ru##.adblock_popup_warning
 wowjp.net##.adblocker-notification
-ani7.top,jut-su.online##.agp-err > b
-ani7.top,jut-su.online##.agp-err > div > [data-ab="reload"]
-ani7.top,jut-su.online##.agp-err > p
+ani5.top,ani7.top,jut-su.online##.agp-err > b
+ani5.top,ani7.top,jut-su.online##.agp-err > div > [data-ab="reload"]
+ani5.top,ani7.top,jut-su.online##.agp-err > p
 pes-files.ru##.alert-blue
 electric-house.ru##.alert_warn
 stylenews.ru##.alm-btn-wrap
@@ -29649,7 +29649,7 @@ joyreactor.cc,reactor.cc##+js(set-attr, video, controls, true)
 3dnews.ru##+js(set-attr, video[controls="controls"], controls, true)
 peers.tv##+js(set-constant, ADV_DISABLED, true)
 www.ukr.net##+js(set-constant, Clicks._test_meta_referer, null)
-fishki.net##+js(set-constant, HTMLVideoElement.prototype.volume, trueFunc)
+fishki.net##+js(set-constant, HTMLVideoElement.prototype.volume, true)
 vk.com,vk.ru##+js(set-constant, Object.prototype.AdChoices, undefined)
 ivi.ru##+js(set-constant, Object.prototype.AdvObject, noopFunc)
 ictv.ua,inter.ua,k1.ua,novy.tv,ntn.ua,starlight.digital,stb.ua,teleportal.ua##+js(set-constant, Object.prototype.AdvertisementManager, undefined)
@@ -29945,7 +29945,7 @@ ya.ru,yandex.*##.simple-popup__overlay:remove()
 ||franecki.net/js/lib.js$important,script,redirect=noop.js
 ||frontend.vh.yandex.ru/player/*autoplay=1$subdocument,removeparam=|,domain=~music.yandex.*|~music.yandex.ru
 ||googletagmanager.com/gtag/js?id=UA-$important,script,domain=inforesist.org
-||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=ani7.top|jut-su.online
+||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=ani5.top|ani7.top|jut-su.online
 ||ipcamlive.com/player/player.php?*autoplay=true$subdocument,removeparam=autoplay
 ||loadercdn.com^$important,script,redirect=noopjs
 ||m.mixadvert.com/show/$important,script

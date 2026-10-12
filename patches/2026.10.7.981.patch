@@ -1,8 +1,8 @@
-diff name:ruadlist lines:118 checksum:20bcf0723e
+diff name:ruadlist lines:121 checksum:11075b0b9c
 d4 2
 a5 2
-! Last modified: Sun, 11 Oct 2026 20:11:09 +0000
-! Diff-Path: ../patches/2026.10.11.1211.patch#ruadlist
+! Last modified: Mon, 12 Oct 2026 07:16:21 +0000
+! Diff-Path: ../patches/2026.10.12.436.patch#ruadlist
 a3696 1
 ||mamshirt.com^$third-party
 a4938 1
@@ -84,9 +84,9 @@ a26034 1
 ||yandex.ru./$third-party
 d26759 1
 a27204 3
-ani7.top,jut-su.online##.agp-err > b
-ani7.top,jut-su.online##.agp-err > div > [data-ab="reload"]
-ani7.top,jut-su.online##.agp-err > p
+ani5.top,ani7.top,jut-su.online##.agp-err > b
+ani5.top,ani7.top,jut-su.online##.agp-err > div > [data-ab="reload"]
+ani5.top,ani7.top,jut-su.online##.agp-err > p
 a28148 1
 www.kinopoisk.ru##a[href^="https://igromir.yandex.ru/"]:style(pointer-events: none !important; color: inherit !important; background-image: none !important)
 a28164 1
@@ -102,6 +102,9 @@ a29423 1
 fishki.net##+js(abort-on-stack-trace, HTMLVideoElement.prototype.play, playVideo)
 a29574 1
 rutube.ru##+js(prevent-addEventListener, ended, _endedNotifier)
+d29635 1
+a29635 1
+fishki.net##+js(set-constant, HTMLVideoElement.prototype.volume, true)
 d29659 1
 a29659 1
 dni.expert,dni.ru,kp.kg,kp.kz,kp.ru,ladys.media,lifehacker.ru,md.kp.media,mk.ru,ohotniki.ru,podolyaka.ru,portalvirtualreality.ru,radiokp.ru,russian.rt.com,sportkp.ru,stopgame.ru,the-day.ru,woman.ru,womanhit.ru##+js(set-constant, Object.prototype.changeVisible, noopFunc)
@@ -112,7 +115,7 @@ a29898 1
 rutube.ru/play/embed/##div[class*="touch-handlers-layout-module__waiting"] div[class^="spinner-module__spinner_"]
 d29909 1
 a29930 1
-||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=ani7.top|jut-su.online
+||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=ani5.top|ani7.top|jut-su.online
 a29944 1
 ||rutube.ru/api/play/options/*&referer=rambler.$xmlhttprequest,removeparam=referer
 a32987 1
