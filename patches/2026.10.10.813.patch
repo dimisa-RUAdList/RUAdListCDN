@@ -1,8 +1,8 @@
-diff name:ruadlist lines:75 checksum:1f0c1898fd
+diff name:ruadlist lines:80 checksum:e5c267af40
 d4 2
 a5 2
-! Last modified: Tue, 13 Oct 2026 00:32:53 +0000
-! Diff-Path: ../patches/2026.10.13.32.patch#ruadlist
+! Last modified: Tue, 13 Oct 2026 07:38:25 +0000
+! Diff-Path: ../patches/2026.10.13.458.patch#ruadlist
 a9095 1
 ~pari.ru##a[href^="https://pari.ru/authProcess/"]
 a9617 1
@@ -46,6 +46,8 @@ wildberries.ru,wildberries.*##div[class*="-bnrs"]
 d22690 1
 a22690 1
 ||pikabu.ru/ajax/*?w2Vmw=$xmlhttprequest
+a22776 1
+pikabu.ru#?#article:-abp-has(> .story__left > .story__scroll-btn)
 a27033 1
 @@||code.moviead55.ru/ovpaid.php?v=*&position=pre|$xmlhttprequest,domain=~ani5.top|~ani7.top|imasdk.googleapis.com|~jut-su.online
 a27054 2
@@ -74,3 +76,6 @@ d29920 1
 d29942 1
 a29942 1
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$important,script,redirect=google-ima.js,domain=ani5.top|ani7.top|jut-su.online
+d33134 1
+a33134 1
+/^https?:\/\/pikabu\.ru\/ajax\/{1,2}[^?]+\?[A-Za-z0-9]+=_*(?:%20)?[0-9a-f]{22,}_[a-z0-9_]+/$xmlhttprequest,domain=pikabu.ru

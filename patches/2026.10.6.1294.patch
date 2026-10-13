@@ -1,8 +1,8 @@
-diff name:ruadlist lines:181 checksum:1f0c1898fd
+diff name:ruadlist lines:183 checksum:e5c267af40
 d4 2
 a5 2
-! Last modified: Tue, 13 Oct 2026 00:32:53 +0000
-! Diff-Path: ../patches/2026.10.13.32.patch#ruadlist
+! Last modified: Tue, 13 Oct 2026 07:38:25 +0000
+! Diff-Path: ../patches/2026.10.13.458.patch#ruadlist
 a3696 1
 ||mamshirt.com^$third-party
 a4938 1
@@ -108,6 +108,8 @@ a22686 1
 d22762 1
 a22762 1
 game4you.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##:not(this-site-promotes-malware)
+a22772 1
+pikabu.ru#?#article:-abp-has(> .story__left > .story__scroll-btn)
 a23140 1
 dzen.ru##[id*="_R-Q-"]
 a23282 2
@@ -179,4 +181,4 @@ a32981 1
 igorslab.de##.ilab-adblocker-notice
 d33114 1
 a33114 1
-/^https?:\/\/pikabu\.ru\/ajax\/{1,2}[^?]+\?[A-Za-z0-9]+=_*[0-9a-f]{22,}_[a-z0-9_]+/$xmlhttprequest,domain=pikabu.ru
+/^https?:\/\/pikabu\.ru\/ajax\/{1,2}[^?]+\?[A-Za-z0-9]+=_*(?:%20)?[0-9a-f]{22,}_[a-z0-9_]+/$xmlhttprequest,domain=pikabu.ru

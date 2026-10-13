@@ -1,8 +1,8 @@
-diff name:ruadlist lines:51 checksum:1f0c1898fd
+diff name:ruadlist lines:56 checksum:e5c267af40
 d4 2
 a5 2
-! Last modified: Tue, 13 Oct 2026 00:32:53 +0000
-! Diff-Path: ../patches/2026.10.13.32.patch#ruadlist
+! Last modified: Tue, 13 Oct 2026 07:38:25 +0000
+! Diff-Path: ../patches/2026.10.13.458.patch#ruadlist
 a9095 1
 ~pari.ru##a[href^="https://pari.ru/authProcess/"]
 a9617 1
@@ -36,6 +36,8 @@ esports.ru#?#div:-abp-has(> img ~ a[href*="://tracker.partnersmelbet.ru/"])
 d22694 1
 a22694 1
 ||pikabu.ru/ajax/*?w2Vmw=$xmlhttprequest
+a22780 1
+pikabu.ru#?#article:-abp-has(> .story__left > .story__scroll-btn)
 a27037 1
 @@||code.moviead55.ru/ovpaid.php?v=*&position=pre|$xmlhttprequest,domain=~ani5.top|~ani7.top|imasdk.googleapis.com|~jut-su.online
 a27058 2
@@ -50,3 +52,6 @@ esports.ru##html.overflow-hidden:style(overflow: auto !important)
 d29948 1
 a29948 1
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$important,script,redirect=google-ima.js,domain=ani5.top|ani7.top|jut-su.online
+d33140 1
+a33140 1
+/^https?:\/\/pikabu\.ru\/ajax\/{1,2}[^?]+\?[A-Za-z0-9]+=_*(?:%20)?[0-9a-f]{22,}_[a-z0-9_]+/$xmlhttprequest,domain=pikabu.ru
