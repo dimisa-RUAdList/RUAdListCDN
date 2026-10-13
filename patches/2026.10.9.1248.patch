@@ -1,8 +1,8 @@
-diff name:ruadlist lines:102 checksum:c27e6058c8
+diff name:ruadlist lines:106 checksum:61a4fa6c20
 d4 2
 a5 2
-! Last modified: Tue, 13 Oct 2026 15:52:55 +0000
-! Diff-Path: ../patches/2026.10.13.952.patch#ruadlist
+! Last modified: Tue, 13 Oct 2026 21:10:18 +0000
+! Diff-Path: ../patches/2026.10.13.1270.patch#ruadlist
 a9095 1
 ~pari.ru##a[href^="https://pari.ru/authProcess/"]
 a9432 1
@@ -18,6 +18,8 @@ $third-party,script,domain=1000iodinsovet.ru|100polezno.ru|100popugaev.ru|1080ki
 a11824 1
 ||geobasket.ru/*/crm-bnrs/
 d12080 1
+a12929 1
+||radikal.host/aq*.js
 a13712 1
 ||wbbasket.ru/*/FullscreenBannerOnboardingViewModel.
 a15237 2
@@ -92,6 +94,8 @@ rutube.ru##+js(prevent-addEventListener, ended, _endedNotifier)
 d29641 1
 a29641 1
 fishki.net##+js(set-constant, HTMLVideoElement.prototype.volume, true)
+a29759 1
+fishki.net##.content__filter-tip > .quick-settings__toggle:has(> .autoplay)
 a29904 1
 rutube.ru/play/embed/##div[class*="touch-handlers-layout-module__waiting"] div[class^="spinner-module__spinner_"]
 d29915 1

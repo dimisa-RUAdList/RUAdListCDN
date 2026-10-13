@@ -1,8 +1,8 @@
-diff name:ruadlist lines:162 checksum:c27e6058c8
+diff name:ruadlist lines:166 checksum:61a4fa6c20
 d4 2
 a5 2
-! Last modified: Tue, 13 Oct 2026 15:52:55 +0000
-! Diff-Path: ../patches/2026.10.13.952.patch#ruadlist
+! Last modified: Tue, 13 Oct 2026 21:10:18 +0000
+! Diff-Path: ../patches/2026.10.13.1270.patch#ruadlist
 a3696 1
 ||mamshirt.com^$third-party
 a4938 1
@@ -22,6 +22,8 @@ $third-party,script,domain=1000iodinsovet.ru|100polezno.ru|100popugaev.ru|1080ki
 a11822 1
 ||geobasket.ru/*/crm-bnrs/
 d12078 1
+a12927 1
+||radikal.host/aq*.js
 a13710 1
 ||wbbasket.ru/*/FullscreenBannerOnboardingViewModel.
 a15235 2
@@ -147,6 +149,8 @@ rutube.ru##+js(prevent-addEventListener, ended, _endedNotifier)
 d29636 1
 a29636 1
 fishki.net##+js(set-constant, HTMLVideoElement.prototype.volume, true)
+a29754 1
+fishki.net##.content__filter-tip > .quick-settings__toggle:has(> .autoplay)
 d29799 1
 a29799 1
 dzen.ru##:matches-path(/articles) div:has(> article > [class*="Box"])
