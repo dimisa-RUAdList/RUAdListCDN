@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 12 Oct 2026 17:46:36 +0000
-! Diff-Path: ../patches/2026.10.12.1066.patch#ruadlist
+! Last modified: Tue, 13 Oct 2026 00:32:53 +0000
+! Diff-Path: ../patches/2026.10.13.32.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -9616,6 +9616,7 @@ $popup,domain=176.114.0.126|176.114.0.132|37.220.36.15|assiatv.com|cdnpotok.com|
 ||ska4at.ru^$popup
 ||skiles.link^$third-party,popup
 ||social-leads.ru^$third-party,popup
+||sparksvale.com^$popup
 ||spiderbig.info^$popup
 ||starcrowd.ru^$popup
 ||starinform.ru^$third-party,popup
@@ -13711,6 +13712,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||watch.ru/bp/
 ||watchcine.ru/templates/HDKINOMAX/images/bg.jpg
 ||wbbasket.ru/*/crm-bnrs/
+||wbbasket.ru/*/FullscreenBannerOnboardingViewModel.
 ||wdomain.ru/*.php|$script,domain=wdomain.ru
 ||weacom.ru/abrakadabra/
 ||weather7.ru/wp-content/uploads/*bonka*.jpg
@@ -20712,6 +20714,7 @@ ukrfootball.ua#?#aside > section:-abp-has(> .colum_widget_block_pp)
 jooble.org##aside > section[class^="ad"]
 stankiexpert.ru##aside a[id][href][target="_blank"]
 riwkus.pro##aside a[onclick^="yaCounter"]
+esports.ru##aside a[target="_blank"][rel="noindex nofollow"]
 bessarabiainform.com##aside div[class^="a-single"]
 adme.media##aside div[style^="min-height:"]
 magtimes.info##aside img[src^="http://magtimes.info/wp-content/uploads/"]
