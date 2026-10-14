@@ -1,8 +1,8 @@
-diff name:ruadlist lines:18 checksum:b7c967ebc8
+diff name:ruadlist lines:28 checksum:e913b5c27d
 d4 2
 a5 2
-! Last modified: Wed, 14 Oct 2026 00:15:34 +0000
-! Diff-Path: ../patches/2026.10.14.15.patch#ruadlist
+! Last modified: Wed, 14 Oct 2026 06:03:03 +0000
+! Diff-Path: ../patches/2026.10.14.363.patch#ruadlist
 a9433 1
 ||eykek.com^$popup
 a10234 1
@@ -10,8 +10,18 @@ a10234 1
 d10236 1
 a12931 1
 ||radikal.host/aq*.js
+d19044 1
+a19044 2
+vk.com,vk.ru,vkvideo.ru##.vkuiBanner__host
+vkvideo.ru##.vkuiBanner__host + div[style^="--vkit_internal--spacing_gap_size:"]
 a22786 1
 pikabu.ru#?#article:-abp-has(> .story__left > .story__scroll-btn)
+d24162 1
+a24162 1
+ya.ru##html[class*="secctian_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
+d24164 1
+a24164 1
+ya.ru##section[style*="secctian-items-count:"]
 a29783 1
 fishki.net##.content__filter-tip > .quick-settings__toggle:has(> .autoplay)
 d33153 1

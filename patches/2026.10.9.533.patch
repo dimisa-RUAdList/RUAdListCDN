@@ -1,8 +1,8 @@
-diff name:ruadlist lines:153 checksum:b7c967ebc8
+diff name:ruadlist lines:163 checksum:e913b5c27d
 d4 2
 a5 2
-! Last modified: Wed, 14 Oct 2026 00:15:34 +0000
-! Diff-Path: ../patches/2026.10.14.15.patch#ruadlist
+! Last modified: Wed, 14 Oct 2026 06:03:03 +0000
+! Diff-Path: ../patches/2026.10.14.363.patch#ruadlist
 a3696 1
 ||mamshirt.com^$third-party
 a4938 1
@@ -65,6 +65,10 @@ d18527 1
 d18828 1
 a18828 1
 kinoplex.ru,kommersant.ru##.top-banners
+d19034 1
+a19034 2
+vk.com,vk.ru,vkvideo.ru##.vkuiBanner__host
+vkvideo.ru##.vkuiBanner__host + div[style^="--vkit_internal--spacing_gap_size:"]
 d19105 1
 a19522 1
 esports.ru##[data-name*="steam/balance-"]
@@ -107,6 +111,12 @@ pikabu.ru#?#article:-abp-has(> .story__left > .story__scroll-btn)
 a23283 2
 ! Финансы
 finance.mail.ru##[data-logger="ArticleContent_product"]
+d24146 1
+a24146 1
+ya.ru##html[class*="secctian_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
+d24148 1
+a24148 1
+ya.ru##section[style*="secctian-items-count:"]
 a25701 1
 ||services.bionika-digital.ru/b/$third-party
 a26034 1
