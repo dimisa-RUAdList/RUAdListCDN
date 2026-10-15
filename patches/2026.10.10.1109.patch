@@ -1,8 +1,8 @@
-diff name:ruadlist lines:127 checksum:b8141d8e2a
+diff name:ruadlist lines:139 checksum:bf09c631ef
 d4 2
 a5 2
-! Last modified: Thu, 15 Oct 2026 09:47:18 +0000
-! Diff-Path: ../patches/2026.10.15.587.patch#ruadlist
+! Last modified: Thu, 15 Oct 2026 14:53:36 +0000
+! Diff-Path: ../patches/2026.10.15.893.patch#ruadlist
 a289 1
 ||adsensei.ai^$third-party
 a804 1
@@ -17,9 +17,10 @@ a9432 1
 ||eykek.com^$popup
 a9617 1
 ||sparksvale.com^$popup
-a10232 1
-2gis.by,2gis.kz,2gis.ru##._1nhfz2
-d10234 1
+d10233 2
+a10308 2
+2gis.ru,2gis.*##._1nhfz2
+2gis.ru,2gis.*##._1nnq5pzj
 a10573 1
 $third-party,media,domain=player.cdnvideohub.com
 a11824 1
@@ -34,6 +35,7 @@ a13700 1
 ||vzsar.ru/ads_p.php?bid=
 a13711 1
 ||wbbasket.ru/*/FullscreenBannerOnboardingViewModel.
+d15201 1
 d15752 1
 a15752 1
 168.ru,1plus1.international,1prime.ru,1sn.ru,2mm.ru,2plus2.ua,2pricolisty.ru,78.142.19.8,agrobusiness.com.ua,altgazeta.ru,anadyr.org,apihost.ru,avoka.do,baikal-daily.ru,baltnews.ee,be-in.ru,belretail.by,belsat.eu,bestrussia.tv,bgoperator.ru,blitz.if.ua,blizko.ru,business-gazeta.ru,bzserial.online,carsweek.ru,champion.com.ua,chehov-vid.ru,chipfind.ru,chistosex.org,cinetv.ru,copyright.ru,dailycomm.ru,danilin.biz,defence-ua.com,delfi.lt,delovoibiysk.ru,dengi.ua,dentalmagazine.ru,dialog.ua,dnl.com.ua,dnl.dn.ua,domashniy.ru,dostyp.com.ua,echo-oren.ru,echomsk.spb.ru,ecology.md,examen.ru,exler.ru,f1cd.ru,f1news.ru,factroom.ru,fantv.ru,fc-zenit.ru,fedpress.ru,finobzor.ru,fn-volga.ru,fnvolga.ru,foodinnovation.ru,football.ua,forum.tiguans.ru,fotoinform.net,frankmedia.ru,fraza.com,gamestar.ru,glavcom.ua,go32.ru,gooool365.com,gooool365.org,gooool365.sx,goooool.org,gorod55.ru,gre4ka.info,hen-tai.ru,hen-tay.com,hightech.fm,hostingkartinok.com,i2hard.ru,iasakh.com,igry-man.net,inc-news.ru,info-ua.com,inosmi.ru,interfax.by,interior.ru,intermedia.ru,it-world.ru,joxi.ru,karelia.news,kherson.net.ua,kinoafisha.ua,kinoplex.ru,klassnye-chasy.ru,kolesa.kz,konkurent.ua,korabel.ru,kulichki.net,kurgan.ru,kurs.com.ua,kursiv.media,lentasporta.com,ligasy.kz,live4fun.ru,livejournal.com,lookatme.ru,loveradio.ru,marker.ru,minus.lviv.ua,mipped.com,mods-fs.net,moldfootball.com,mos-holidays.ru,mosfilmgold.ru,moviestape.lat,musictor.ru,mv.org.ua,namba.kg,namba.kz,namba.tj,news.nashbryansk.ru,news.pn,newslab.ru,nnews.com.ua,odpublic.net,officepackage.info,ogosex.com.ua,oneprog.ru,online-mult.net,ontvtime.ru,oper.ru,osvita.ua,penzadoctor.ru,peugeot-citroen.net,playboyrussia.com,pn.com.ua,politobzor.net,poltavske.tv,portal.lviv.ua,post-tracker.ru,ppc.world,pravo.ru,prm.ru,radiosputnik.ru,render911.ru,reporter.ua,repost.uz,reverso.net,ria.ru,rodgor-vlg.ru,roem.ru,rudetective.tv,ruinformer.com,rusroman.ru,russia.ru,rybalka.com,rzn.info,sakh.com,sakhalin.info,samara24.ru,sarnovosti.ru,savepic.ru,seodiz.ru,showgid.tv,sib.fm,skypefree.info,slon.ru,softkey.ru,sonikelf.ru,sopsport.org,spbdnevnik.ru,sport-tv.by,sportandbets.com,sports.uz,stereo.ru,stopcor.org,stranaru.ru,strashnoe.tv,subota.online,superomsk.ru,supersadovnik.ru,tele.click,teleg.run,tet.tv,text.ru,theblueprint.ru,themoscowtimes.com,tochka.net,topwar.ru,tr.anidub.com,trademaster.ua,tulapressa.ru,tumix.ru,turizm.ru,tvernews.ru,tvrain.tv,uaportal.com,ucrazy.org,ugorod.kr.ua,ukraina.ru,ukrlife.tv,ukrreal.info,ukurier.gov.ua,unian.tv,val.ua,vce-besplatno.ru,vesty.co.il,vikna.if.ua,vlast.kz,vm.ru,vomske.ru,vsluh.net,vzsar.ru,warfiles.ru,weacom.ru,weukraine.tv,wildo.ru,www.ivi.ru,yk.kz,yourlink.in,yuginform.ru,yugopolis.ru,yznal.ru,zanoza.kg,zvezdi.ru##.banner
@@ -52,12 +54,19 @@ a19039 2
 vk.com,vk.ru,vkvideo.ru##.vkuiBanner__host
 vkvideo.ru##.vkuiBanner__host + div[style^="--vkit_internal--spacing_gap_size:"]
 d19110 1
+a19275 1
+2gis.ru,2gis.*##._1ktx0p1
+a19277 1
+2gis.ru,2gis.*##a[href*="://redirect.2gis.com/adv/"]
+a19279 1
+2gis.ru,2gis.*,~pro.2gis.ru#?#span:-abp-contains(/реклама/i)
 a19527 1
 esports.ru##[data-name*="steam/balance-"]
 a19528 1
 esports.ru##[data-name="navigation/action-bar"] > .js-present
 a19599 1
 ostro.org##[href*="/press-releases"]
+d19979 1
 d20026 1
 a20026 1
 cybersport.ru,dltv.org,prodota.ru##a[href*="betboom.bet"]
@@ -71,6 +80,9 @@ a20969 1
 esports.ru#?#div:-abp-has(> img ~ a[href*="://tracker.partnersmelbet.ru/"])
 a21165 1
 mgazeta.com#?#div[class]:-abp-has(> [class^="_blockTitle_"] ~ div [class^="_teaserItem_"])
+a21368 1
+sovsport.ru##div[class^="match-card-module-scss-module_"][class$="_coefficient"]
+d22427 1
 d22629 1
 a22629 2
 wildberries.ru,wildberries.*##.bnr
