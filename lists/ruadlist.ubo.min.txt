@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 15 Oct 2026 04:26:04 +0000
-! Diff-Path: ../patches/2026.10.15.266.patch#ruadlist
+! Last modified: Thu, 15 Oct 2026 09:47:18 +0000
+! Diff-Path: ../patches/2026.10.15.587.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -287,6 +287,7 @@
 ||adsconex.com^$third-party
 ||adseedtech.com^$third-party
 ||adselector.ru^$third-party
+||adsensei.ai^$third-party
 ||adservob.com^$third-party
 ||adservone.com^$third-party
 ||adsfin.pro^$third-party
@@ -802,6 +803,7 @@
 ||bid.run^$third-party
 ||bidajet.info^$third-party
 ||bidder.smartytouch.co^$third-party
+||bidderstack.com^$third-party
 ||bidmatic.io^$third-party
 ||bidster.net^$third-party
 ||bidtizadd.ru^$third-party
@@ -939,6 +941,7 @@
 ||brightilight.ru^$third-party
 ||brilliantbc9.club^$third-party
 ||brinaltrak.com^$third-party
+||bringads.com^$third-party
 ||brlxlpe8pmdgqv.ru^$third-party
 ||brndrm.com^
 ||bro2.biz^$third-party
@@ -3516,6 +3519,7 @@
 ||linkodir.ru^
 ||linkpeoples.com^
 ||links-wm.ru^$third-party
+||linkssp.ru^$third-party
 ||linksviewer2013.com^
 ||linkunder.ru^$third-party
 ||linkupper.ru^
@@ -12336,6 +12340,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||mebelminsk.by/assets/images/swf/
 ||med2.ru/branding/
 ||media.aso.altapress.ru/
+||media.ixbt.com/*/banner/
 ||media.kaifolog.ru$script,domain=kaifolog.ru
 ||media.v102.ru/abs/
 ||media.v102.ru/players/advplayer$object
@@ -12794,6 +12799,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||playvideolink.com/player/
 ||pln-pskov.ru/roll/
 ||plodovie.ru/wp-content/sno*.js
+||plusani.me/assets/promo/preroll.js
 ||pn.com.ua^*/pnimages/banners/
 ||pnp.ru/upload/user/banner-adv-$image
 ||pnz.ru^$xmlhttprequest,domain=www.penzainform.ru
@@ -23675,6 +23681,7 @@ lenta.news,lenta.ru##.traffic-exchange
 lenta.news,lenta.ru##.twz-banner
 lenta.news,lenta.ru##.vk-video-popup
 lenta.news,lenta.ru##.yandex-games
+rambler.ru#?#[aria-label="Виджеты"] div:-abp-has(> [data-rcm-widget])
 rambler.ru#?#[aria-label="Виджеты"] div:-abp-has(> div > [data-rcmw-init])
 rambler.ru,www.afisha.ru##[aria-label="Реклама"]
 mail.rambler.ru##[class*="MaillistItemAdvertPlace"]
@@ -23714,7 +23721,7 @@ championat.com,championat.ru##a[href*="offer_id="]
 championat.com,championat.ru,lenta.news,lenta.ru##a[href*="okko.sport"]
 www.afisha.ru##a[href^="/out/?url="]
 gazeta.press,gazeta.ru##a[href^="/prcom/"]
-rambler.ru##article [id^="rambler-weather-container:"] ~ div[class]
+rambler.ru##article [id^="rambler-weather-container:"] ~ div[class*=" "]
 rambler.ru#?#article div:-abp-has(> rambler-car-loan-calculator)
 rambler.ru#?#article div:-abp-has(> rambler-info-banner)
 rambler.ru#?#aside:-abp-has(> div > [class^="banner--native-partner_widget"])
@@ -25530,6 +25537,7 @@ zarulem.ws##td[style^="text-align:center;width:50%"]
 ||player.panda.video/*luster.js$third-party
 ||plesen.net/kp*.
 ||plus10sm.ru^$third-party
+||plusani.me^$third-party
 ||po2l.ru^$third-party
 ||poisk.su/img.php?
 ||poisk.su/top.php?
@@ -29503,6 +29511,7 @@ comedy-radio.ru,kufar.by,radioromantika.ru,relax-fm.ru,rg.ru,sm.news,veseloeradi
 drive2.ru##+js(cookie-remover, hurricane)
 24smi.org##+js(cookie-remover, isab)
 shedevrum.ai##+js(cookie-remover, shedevrum-aab)
+fishki.net##+js(cookie-remover, video_autoplay_off)
 portalvirtualreality.ru##+js(href-sanitizer, a[href*="&link=https://"], ?link)
 e.mail.ru,mail.rambler.ru,mail.yandex.ru,octavius.mail.ru##+js(href-sanitizer, a[href*=".mck"][href*=".ru/c/"], ?u)
 softoroom.org##+js(href-sanitizer, a[href*=".php?go="], ?go)

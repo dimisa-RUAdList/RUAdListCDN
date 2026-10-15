@@ -1,8 +1,16 @@
-diff name:ruadlist lines:118 checksum:9159e52fb4
+diff name:ruadlist lines:139 checksum:b8141d8e2a
 d4 2
 a5 2
-! Last modified: Thu, 15 Oct 2026 04:26:04 +0000
-! Diff-Path: ../patches/2026.10.15.266.patch#ruadlist
+! Last modified: Thu, 15 Oct 2026 09:47:18 +0000
+! Diff-Path: ../patches/2026.10.15.587.patch#ruadlist
+a289 1
+||adsensei.ai^$third-party
+a804 1
+||bidderstack.com^$third-party
+a941 1
+||bringads.com^$third-party
+a3518 1
+||linkssp.ru^$third-party
 a9095 1
 ~pari.ru##a[href^="https://pari.ru/authProcess/"]
 a9432 1
@@ -20,6 +28,10 @@ $third-party,script,domain=1000iodinsovet.ru|100polezno.ru|100popugaev.ru|1080ki
 a11824 1
 ||geobasket.ru/*/crm-bnrs/
 d12080 1
+a12334 1
+||media.ixbt.com/*/banner/
+a12792 1
+||plusani.me/assets/promo/preroll.js
 a12929 1
 ||radikal.host/aq*.js
 a13701 1
@@ -74,12 +86,19 @@ a22690 1
 ||pikabu.ru/ajax/*?w2Vmw=$xmlhttprequest
 a22776 1
 pikabu.ru#?#article:-abp-has(> .story__left > .story__scroll-btn)
+a23660 1
+rambler.ru#?#[aria-label="Виджеты"] div:-abp-has(> [data-rcm-widget])
+d23700 1
+a23700 1
+rambler.ru##article [id^="rambler-weather-container:"] ~ div[class*=" "]
 d24152 1
 a24152 1
 ya.ru##html[class*="secctian_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
 d24154 1
 a24154 1
 ya.ru##section[style*="secctian-items-count:"]
+a25515 1
+||plusani.me^$third-party
 a26040 1
 ||yandex.*/ads/adfox/$third-party
 a27033 1
@@ -99,6 +118,8 @@ esports.ru##html.overflow-hidden:style(overflow: auto !important)
 ! ---
 a29434 1
 fishki.net##+js(abort-on-stack-trace, HTMLVideoElement.prototype.play, playVideo)
+a29479 1
+fishki.net##+js(cookie-remover, video_autoplay_off)
 a29585 1
 rutube.ru##+js(prevent-addEventListener, ended, _endedNotifier)
 d29646 1
