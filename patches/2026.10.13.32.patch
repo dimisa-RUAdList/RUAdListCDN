@@ -1,8 +1,8 @@
-diff name:ruadlist lines:76 checksum:5ac51c7284
+diff name:ruadlist lines:82 checksum:d90840fda3
 d4 2
 a5 2
-! Last modified: Thu, 15 Oct 2026 22:09:18 +0000
-! Diff-Path: ../patches/2026.10.15.1329.patch#ruadlist
+! Last modified: Fri, 16 Oct 2026 05:45:39 +0000
+! Diff-Path: ../patches/2026.10.16.345.patch#ruadlist
 a289 1
 ||adsensei.ai^$third-party
 a804 1
@@ -49,6 +49,9 @@ d19986 1
 a21377 1
 sovsport.ru##div[class^="match-card-module-scss-module_"][class$="_coefficient"]
 d22436 1
+d22700 1
+a22700 1
+||pikabu.ru/ajax/*?hB9Hk=$xmlhttprequest
 a22786 1
 pikabu.ru#?#article:-abp-has(> .story__left > .story__scroll-btn)
 a23670 1
@@ -56,12 +59,15 @@ rambler.ru#?#[aria-label="Виджеты"] div:-abp-has(> [data-rcm-widget])
 d23710 1
 a23710 1
 rambler.ru##article [id^="rambler-weather-container:"] ~ div[class*=" "]
+d23792 1
+a23849 1
+rbc.ru#?#body.free .column-central-plus-side > [id^="article-block-"]:-abp-has(header [class*="styles_material-pro-logo"]) ~ [id^="article-block-"]:-abp-has(header [class*="styles_material-pro-logo"])
 d24162 1
 a24162 1
-ya.ru##html[class*="secctian_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
+ya.ru##html[class*="secctsian_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
 d24164 1
 a24164 1
-ya.ru##section[style*="secctian-items-count:"]
+ya.ru##section[style*="secctsian-items-count:"]
 a25525 1
 ||plusani.me^$third-party
 a26050 1
@@ -74,4 +80,4 @@ a30185 1
 /rutube\.ru\/api\/play\/options\/.*[?&]referer=https.*(116|14|161|164|173|178|26|29|35|43|45|48|51|53|56|59|60|63|68|71|72|74|76|86|89|93|chita|e1|fontanka|ircity|izh1|mgorsk|msk1|ngs22|ngs24|ngs42|ngs55|ngs70|ngs|nn|sochi1|starhit|sterlitamak1|tolyatty|ufa1|v1|vladivostok1|voronezh1|ya62)\.ru/$xmlhttprequest,removeparam=referer
 d33153 1
 a33153 1
-/^https?:\/\/pikabu\.ru\/ajax\/{1,2}[^?]+\?[A-Za-z0-9]+=_*(?:%20)?[0-9a-f]{22,}_[a-z0-9_]+/$xmlhttprequest,domain=pikabu.ru
+/^https?:\/\/pikabu\.ru\/ajax\/{1,2}[^?]+\?[A-Za-z0-9]+=[A-Za-z0-9_%-]*[0-9a-f]{20,}_[a-z0-9_]+/$xmlhttprequest,domain=pikabu.ru

@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 15 Oct 2026 22:09:18 +0000
-! Diff-Path: ../patches/2026.10.15.1329.patch#ruadlist
+! Last modified: Fri, 16 Oct 2026 05:45:39 +0000
+! Diff-Path: ../patches/2026.10.16.345.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22711,7 +22711,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=livejournal.com|olegmaka
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
 ||ng72.ru^$csp=script-src 'self' 'unsafe-eval' https:
-||pikabu.ru/ajax/*?w2Vmw=$xmlhttprequest
+||pikabu.ru/ajax/*?hB9Hk=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -23805,7 +23805,6 @@ gazeta.press,gazeta.ru##div[id^="block_pad_id"]
 cnews.ru,utro.ru##.banner
 rbc.ru##.branding-block
 rbc.ru##.central-publisher-item[data-name^="CommercialAnons"]
-rbc.ru#?#.column-central-plus-side > .column-fullwidth:-abp-has([data-metronome-paywall="true"]) ~ .column-fullwidth:-abp-has([data-metronome-paywall="true"])
 rbc.ru##.fox-fallback
 rbc.ru,sportrbc.ru##.g-banner__news-footer > div[class="js-rbcslider-multi-news"]
 safe.cnews.ru##.header-brand-logo
@@ -23863,6 +23862,7 @@ autonews.ru,rbc.ru,rbcautonews.ru,rbclifemedia.ru,sportrbc.ru##a[href*="erid="][
 cnews.ru#?#a[href^="https://www.cnews.ru/redirect.php"]:-abp-contains(Дзен)
 autonews.ru,rbc.ru,rbcautonews.ru,sportrbc.ru##body div .banner__container
 autonews.ru,rbc.ru,sportrbc.ru##body div .banner__filmstrip
+rbc.ru#?#body.free .column-central-plus-side > [id^="article-block-"]:-abp-has(header [class*="styles_material-pro-logo"]) ~ [id^="article-block-"]:-abp-has(header [class*="styles_material-pro-logo"])
 rbc.ru#?#body.free .intresting__list > .intresting__item:-abp-has(a[href^="https://pro.rbc.ru/"])
 rbc.ru#?#body.free .sticky-element > article:-abp-has([href^="/story/pro"])
 rbc.ru##body.free a.meta-info-row-project[href^="https://pro.rbc.ru"]
@@ -24175,9 +24175,9 @@ ya.ru##.i-mini-bem[class*="banner"]
 ya.ru##[style*="feed"][style*="min-height:"]
 ya.ru##body > div[data-hydration-id] > [href^="https://yabs.yandex.ru/count/"] + div
 ya.ru##body > div[data-hydration-id] > div > [src^="https://yabs.yandex.ru/count/"] + div
-ya.ru##html[class*="secctian_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
+ya.ru##html[class*="secctsian_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
 ya.ru##section[class^="reaso"]
-ya.ru##section[style*="secctian-items-count:"]
+ya.ru##section[style*="secctsian-items-count:"]
 ya.ru##ul[class*="-section__list"]
 ya.ru,yandex.ru,yandex.*##.AdvProductGallery
 ya.ru,yandex.ru,yandex.*##.Bno_isPromoSnippet
@@ -33171,7 +33171,7 @@ kinoafisha.ua##.turn-off-add-block-text
 stalkerportaal.ru##.video_adsense
 bookskeeper.ru,e-xecutive.ru##.warning
 forum.bestflowers.ru##.xenOverlay
-/^https?:\/\/pikabu\.ru\/ajax\/{1,2}[^?]+\?[A-Za-z0-9]+=_*(?:%20)?[0-9a-f]{22,}_[a-z0-9_]+/$xmlhttprequest,domain=pikabu.ru
+/^https?:\/\/pikabu\.ru\/ajax\/{1,2}[^?]+\?[A-Za-z0-9]+=[A-Za-z0-9_%-]*[0-9a-f]{20,}_[a-z0-9_]+/$xmlhttprequest,domain=pikabu.ru
 /cookie_check.min.js$domain=acetv.me
 /gogl_detector$script,domain=meddaily.ru|newsru.com
 @@||anidub.com/ads.js|$script,domain=anidub.com
