@@ -1,8 +1,8 @@
-diff name:ruadlist lines:74 checksum:07343066d9
+diff name:ruadlist lines:81 checksum:bceff9cb0b
 d4 2
 a5 2
-! Last modified: Fri, 16 Oct 2026 11:13:27 +0000
-! Diff-Path: ../patches/2026.10.16.673.patch#ruadlist
+! Last modified: Fri, 16 Oct 2026 16:31:53 +0000
+! Diff-Path: ../patches/2026.10.16.991.patch#ruadlist
 a289 1
 ||adsensei.ai^$third-party
 a804 1
@@ -48,11 +48,17 @@ d22438 1
 d22702 1
 a22702 1
 ||pikabu.ru/ajax/*?hB9Hk=$xmlhttprequest
+d22789 2
+a22790 1
+pikabu.ru#?#article:-abp-has(> .story__left > div:not([class]))
+a22792 1
+pikabu.ru#?#article:-abp-has(> .story__main > div:not(:-abp-has(*)))
 a23673 1
 rambler.ru#?#[aria-label="Виджеты"] div:-abp-has(> [data-rcm-widget])
 d23713 1
 a23713 1
 rambler.ru##article [id^="rambler-weather-container:"] ~ div[class*=" "]
+d23719 1
 d23795 1
 a23852 1
 rbc.ru#?#body.free .column-central-plus-side > [id^="article-block-"]:-abp-has(header [class*="styles_material-pro-logo"]) ~ [id^="article-block-"]:-abp-has(header [class*="styles_material-pro-logo"])
@@ -70,6 +76,7 @@ a29500 1
 fishki.net##+js(cookie-remover, video_autoplay_off)
 a30189 1
 /rutube\.ru\/api\/play\/options\/.*[?&]referer=https.*(116|14|161|164|173|178|26|29|35|43|45|48|51|53|56|59|60|63|68|71|72|74|76|86|89|93|chita|e1|fontanka|ircity|izh1|mgorsk|msk1|ngs22|ngs24|ngs42|ngs55|ngs70|ngs|nn|sochi1|starhit|sterlitamak1|tolyatty|ufa1|v1|vladivostok1|voronezh1|ya62)\.ru/$xmlhttprequest,removeparam=referer
+d30204 1
 d33157 1
 a33157 1
 /^https?:\/\/pikabu\.ru\/ajax\/{1,2}[^?]+\?[A-Za-z0-9]+=[A-Za-z0-9_%-]*[0-9a-f]{20,}_[a-z0-9_]+/$xmlhttprequest,domain=pikabu.ru
