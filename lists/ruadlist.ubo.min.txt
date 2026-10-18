@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sun, 18 Oct 2026 09:29:11 +0000
-! Diff-Path: ../patches/2026.10.18.569.patch#ruadlist
+! Last modified: Sun, 18 Oct 2026 17:15:59 +0000
+! Diff-Path: ../patches/2026.10.18.1035.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -27062,7 +27062,7 @@ gbsmp.ru#@#img[width="728"][height="90"]
 @@||cdn.vidyomani.com^*/showads.js|$script,domain=vidyomani.com|webeyo.com
 @@||cdn.webeyo.com^*/showads.js|$script,domain=vidyomani.com|webeyo.com
 @@||chess-samara.ru/js/adsbygoogle.js$script,domain=chess-samara.ru
-@@||code.moviead55.ru/ovpaid.php?v=*&position=pre|$xmlhttprequest,domain=~ani5.top|~ani7.top|imasdk.googleapis.com|~jut-su.online
+@@||code.moviead55.ru/ovpaid.php?v=*&position=pre|$xmlhttprequest,domain=~ani5.top|~ani6.top|~ani7.top|imasdk.googleapis.com|~jut-su.online
 @@||com^$script,domain=videomega.tv
 @@||contextual.media.net/dmedianet.js|$object,domain=tests24.su
 @@||debfile.com/ads/adframe.js$script,domain=debfile.com
@@ -27084,8 +27084,8 @@ gbsmp.ru#@#img[width="728"][height="90"]
 @@||gwss.ru^$xmlhttprequest,domain=gwss.ru
 @@||hack-master.ru^*AdblockDetected$script,domain=hack-master.ru
 @@||ictv.ua/wp-content/themes/ictv/includes/js/cnads.js|$script,domain=ictv.ua
-@@||imasdk.googleapis.com/js/sdkloader/ima3.js|$script,domain=ani5.top|ani7.top|jut-su.online
-@@||imasdk.googleapis.com/js/sdkloader/loader.js|$script,domain=ani5.top|ani7.top|jut-su.online
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js|$script,domain=ani5.top|ani6.top|ani7.top|jut-su.online
+@@||imasdk.googleapis.com/js/sdkloader/loader.js|$script,domain=ani5.top|ani6.top|ani7.top|jut-su.online
 @@||it-like.ru/ads_load/*.js|$domain=it-like.ru
 @@||ivbt.ru^$elemhide
 @@||knigilub.ru/*.js|$script,domain=knigilub.ru
@@ -27243,10 +27243,10 @@ usemind.org##.a-top
 delfi.ee##.ad-block-layer
 ogorod.ru##.adblock_popup_warning
 wowjp.net##.adblocker-notification
-ani5.top,ani7.top,jut-su.online##.agp-ad > [class]
-ani5.top,ani7.top,jut-su.online##.agp-err > b
-ani5.top,ani7.top,jut-su.online##.agp-err > div > [data-ab="reload"]
-ani5.top,ani7.top,jut-su.online##.agp-err > p
+ani5.top,ani6.top,ani7.top,jut-su.online##.agp-ad > [class]
+ani5.top,ani6.top,ani7.top,jut-su.online##.agp-err > b
+ani5.top,ani6.top,ani7.top,jut-su.online##.agp-err > div > [data-ab="reload"]
+ani5.top,ani6.top,ani7.top,jut-su.online##.agp-err > p
 pes-files.ru##.alert-blue
 electric-house.ru##.alert_warn
 stylenews.ru##.alm-btn-wrap
@@ -29982,7 +29982,7 @@ ya.ru,yandex.*##.simple-popup__overlay:remove()
 ||franecki.net/js/lib.js$important,script,redirect=noop.js
 ||frontend.vh.yandex.ru/player/*autoplay=1$subdocument,removeparam=|,domain=~music.yandex.*|~music.yandex.ru
 ||googletagmanager.com/gtag/js?id=UA-$important,script,domain=inforesist.org
-||imasdk.googleapis.com/js/sdkloader/ima3.js$important,script,redirect=google-ima.js,domain=ani5.top|ani7.top|jut-su.online
+||imasdk.googleapis.com/js/sdkloader/ima3.js$important,script,redirect=google-ima.js,domain=ani5.top|ani6.top|ani7.top|jut-su.online
 ||ipcamlive.com/player/player.php?*autoplay=true$subdocument,removeparam=autoplay
 ||loadercdn.com^$important,script,redirect=noopjs
 ||m.mixadvert.com/show/$important,script
