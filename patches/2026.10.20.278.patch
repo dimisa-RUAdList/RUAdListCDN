@@ -1,8 +1,8 @@
-diff name:ruadlist lines:21 checksum:756269ed56
+diff name:ruadlist lines:26 checksum:3ad3582058
 d4 2
 a5 2
-! Last modified: Tue, 20 Oct 2026 09:57:27 +0000
-! Diff-Path: ../patches/2026.10.20.597.patch#ruadlist
+! Last modified: Tue, 20 Oct 2026 14:57:54 +0000
+! Diff-Path: ../patches/2026.10.20.897.patch#ruadlist
 a9089 1
 ##a[href^="https://click.sportbb.ru/"]
 a9238 1
@@ -11,6 +11,9 @@ a9385 1
 ||click.sportbb.ru^$third-party,popup
 a12942 1
 ||radar-map.ru/static/vendor/adfinity.js
+d19060 1
+a19060 1
+~id.vk.ru,vk.com,vk.ru,vkvideo.ru##.vkuiBanner__host
 a20027 1
 sovsport.ru##a[href*="?landing="]
 d22844 1
@@ -18,5 +21,7 @@ a22844 1
 .link/$third-party,domain=gorodyshka.link|kurolesya.link|perepolokha.link|player.temptcdn.com|shortener2.link|tazaromikaz.link
 a22870 1
 ||pustobrya.link^$third-party
+a22884 1
+||tikhomira.link^$third-party
 a29403 1
 radar-map.ru##+js(abort-on-property-read, __adfinityLaunch)
