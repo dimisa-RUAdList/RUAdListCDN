@@ -1,21 +1,33 @@
-diff name:ruadlist lines:27 checksum:23320a1c26
+diff name:ruadlist lines:41 checksum:756269ed56
 d4 2
 a5 2
-! Last modified: Tue, 20 Oct 2026 04:38:47 +0000
-! Diff-Path: ../patches/2026.10.20.278.patch#ruadlist
+! Last modified: Tue, 20 Oct 2026 09:57:27 +0000
+! Diff-Path: ../patches/2026.10.20.597.patch#ruadlist
+a9089 1
+##a[href^="https://click.sportbb.ru/"]
+a9238 1
+||betboom.ru/welcome?utm_$third-party,popup
+a9385 1
+||click.sportbb.ru^$third-party,popup
+a12942 1
+||radar-map.ru/static/vendor/adfinity.js
 d13924 1
 d16154 1
 a16154 1
 agroinfo.kz,livejournal.com##.brand
+a20028 1
+sovsport.ru##a[href*="?landing="]
 d21500 1
 a22710 2
 @@||stravers.live^$third-party,subdocument
 @@||stravers.live^$~third-party
 d22844 1
 a22844 1
-.link/$third-party,domain=gorodyshka.link|kurolesya.link|perepolokha.link|player.temptcdn.com|tazaromikaz.link
+.link/$third-party,domain=gorodyshka.link|kurolesya.link|perepolokha.link|player.temptcdn.com|shortener2.link|tazaromikaz.link
 a22859 1
 ||khitrozya.link^$third-party
+a22869 1
+||pustobrya.link^$third-party
 a22927 9
 ! Flicksbar
 brogiro.cfd,bulkikim.cfd,fixtyflux.cfd,flicksbar.*,flcksbr.top,flcksbr.*###tgWrapper
@@ -26,3 +38,5 @@ cfd##body > .wrapper > #tgWrapper
 cfd##body > .wrapper > #TopAdMb
 cfd##body > .wrapper > .brand
 cfd##body > .wrapper > div[class^="topAd"]
+a29393 1
+radar-map.ru##+js(abort-on-property-read, __adfinityLaunch)
