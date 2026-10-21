@@ -1,8 +1,8 @@
-diff name:ruadlist lines:166 checksum:c4a2708b1a
+diff name:ruadlist lines:178 checksum:b6eb742310
 d4 2
 a5 2
-! Last modified: Wed, 21 Oct 2026 07:28:29 +0000
-! Diff-Path: ../patches/2026.10.21.448.patch#ruadlist
+! Last modified: Wed, 21 Oct 2026 13:41:30 +0000
+! Diff-Path: ../patches/2026.10.21.821.patch#ruadlist
 a9089 1
 ##a[href^="https://click.sportbb.ru/"]
 a9092 2
@@ -41,6 +41,10 @@ sn.by##.upper-top-head
 d19055 1
 a19055 1
 ~id.vk.ru,vk.com,vk.ru,vkvideo.ru##.vkuiBanner__host
+a19093 1
+sport.rbc.ua##.widget-bookmakers
+a19098 1
+sport.rbc.ua##.widget-odds
 a19126 1
 golossokal.com.ua#?#.widget_block:-abp-has(> [id*="ScriptRoot"])
 d19149 1
@@ -73,12 +77,16 @@ d22714 1
 a22714 1
 ||pikabu.ru/ajax/*?hB8Hk=$xmlhttprequest
 d22762 4
+a22804 1
+pikabu.ru#?#article:-abp-has(> .story__main > div:not([class]))
 d22827 2
 d22839 1
 a22839 1
 .link/$third-party,domain=gorodyshka.link|kurolesya.link|perepolokha.link|player.temptcdn.com|shortener2.link|tazaromikaz.link
 a22847 1
 ||beloboka.link^$third-party
+a22850 1
+||dolgoruka.link^$third-party
 a22854 1
 ||khitrozya.link^$third-party
 a22864 1
@@ -111,11 +119,15 @@ dzen.ru,sportsdzen.ru##[id*="_R-Q-"]
 dzen.ru,sportsdzen.ru##[id*="_R-T-"]
 a23192 1
 dzen.ru,sportsdzen.ru##div[id*="floor_ad"]
+a23451 1
+116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,ya62.ru#?#.block-top-news > div[class^="list_"] > article:-abp-has(> div > a[href*="?erid="])
+a23474 1
+ru##[data-ns-portal] .block-top-news > div[class^="list_"] > article > span[class^="index_"]
 d23511 1
 a23511 1
 116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,fontanka.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,ya62.ru#?#div[class^="newsFeedBlock_"] > div[class^="news_"]:-abp-has(> a[href*="?erid="])
-a23513 1
-116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,fontanka.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,ya62.ru#?#div[class^="news_"]:-abp-has(> div[class*=" advMark_"])
+a23512 1
+116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,fontanka.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,ya62.ru#?#div[class^="newsFeedBlock_"] > div[class^="news_"]:-abp-has(> div[class*=" advMark_"])
 d24177 1
 a24177 1
 ya.ru##html[class*="secctssian_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
