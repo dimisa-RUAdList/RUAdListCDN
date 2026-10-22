@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 22 Oct 2026 07:28:12 +0000
-! Diff-Path: ../patches/2026.10.22.448.patch#ruadlist
+! Last modified: Thu, 22 Oct 2026 13:42:42 +0000
+! Diff-Path: ../patches/2026.10.22.822.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -16261,7 +16261,6 @@ programy.com.ua##.cars2
 echosevera.ru##.cartoon
 livejournal.com##.cat-widget__adv-container
 livejournal.com##.cat-widget__card-wrap--adv
-vsthemes.org#?#.catalog > .shorty:-abp-has(> .block)
 rozetka.com.ua#?#.catalog-grid > .catalog-grid__cell:-abp-has(> rz-catalog-tile [aria-label*=" про рекламу"])
 hotline.ua##.catalog-three-products
 yamart.ru##.catalogElAd
@@ -19078,6 +19077,7 @@ wallscloud.net#?#.walls_data > .item:-abp-has(> .thumbnail script)
 kinomania.ru##.watch-page__play-button
 rutube.ru##.wdp-onboardings-inventory-banner-module__wrapper-section
 rutube.ru##.wdp-recommended-ad-card-module__ad-banner-container
+rutube.ru##.wdp-wrapper-module__wdp-common-wrapper > .wdp-carousel-module__carouselWrapper
 xmages.net##.we-are-featured
 gotoshop.ua##.welcome2
 semestr.online,semestr.ru##.well-google
@@ -20088,7 +20088,7 @@ kubyshka.org,radiochief.ru,riperam.org,znamyuzl.ru##a[href*="epngo.bz"]
 gdebenz.ru##a[href*="erid"]
 cybersport.ru##a[href*="erid:"][target="_blank"]
 business-gazeta.ru,www.ixbt.com##a[href*="erid="]
-66.ru,agronovosti.ru,kinorium.com,sport-express.net,sport-express.ru##a[href*="erid="][target="_blank"]
+66.ru,agronovosti.ru,kinorium.com,rutube.ru,sport-express.net,sport-express.ru##a[href*="erid="][target="_blank"]
 7ba.org,7ba.ru##a[href*="erotel.org"]
 forum.amit.ru##a[href*="evroremont.amit.ru"]
 ilenta.com,lelang.su,rutr.life,rutracker.lib,rutracker.net,rutracker.org,shopping.nv.ua##a[href*="fas.st/"]
@@ -20675,7 +20675,6 @@ uznayvse.ru#?#article > .hidden:-abp-has(> [aria-label="Реклама"])
 zlatopil.com##article > a[target="_blank"][style="display: block; width: 100%;"]
 bankiros.ru#?#article > aside:-abp-has(> [data-offer])
 zmi.ck.ua##article > br + small
-vsthemes.org##article > div:not([class])
 riamo.ru,riamobalashiha.ru##article > div[class][style^="--"][style*="0px"]
 vladday.ru##article > div[style^="min-height:"]
 dtf.ru#?#article > figure:-abp-has(> .block-wrapper__content a[href]:-abp-contains(пополнить Steam))
@@ -22868,6 +22867,7 @@ $popup,domain=rstprgapipt.com|temp2cdn.link|temptcdn.com
 ||khitrozya.link^$third-party
 ||kinzazaza.org^$third-party
 ||krasnomaga.link^$third-party
+||kruglyashka.link^$third-party
 ||leningrib.org^$third-party
 ||morozovnya.link^$third-party
 ||mudrobasa.link^$third-party
@@ -29658,6 +29658,7 @@ kvadratmetr.uz,oligarx.uz,tehnar.net.ua##+js(noeval-if, adsBlocked)
 www.kinopoisk.ru##+js(prevent-addEventListener, /canplay|loadeddata|playing|timeupdate/, '', elements, [poster][loop])
 mem-hub.ru##+js(prevent-addEventListener, DOMContentLoaded, /adBlocks|adObserver|appPromoModal/)
 rutube.ru##+js(prevent-addEventListener, click, showRedirectPopup)
+vsthemes.org##+js(prevent-addEventListener, copy, preventDefault)
 rutube.ru##+js(prevent-addEventListener, ended, _endedNotifier)
 liveinternet.ru##+js(prevent-addEventListener, load, AdvManager)
 dumatv.ru##+js(prevent-addEventListener, message, AUTOPLAY)
@@ -29876,6 +29877,7 @@ vk.com,vk.ru##.wall_module > div[id]:first-child > :matches-prop(innerHTML="/for
 /^https?://yastatic\.net\/www\/_\/[^\s]{150,}/$image,domain=yandex.by|yandex.kz|yandex.ru|yandex.uz
 /sm\.news/[^\s]{80,}/$script,xmlhttprequest,badfilter,domain=sm.news
 24parik.*,parik24.*##+js(window-close-if, /adtag|creative_id/)
+shuba.life##::selection:style(background-color: Highlight !important; color: HighlightText !important)
 dtf.ru,vc.ru##:matches-path(-erid-) .block-special-button
 dtf.ru,vc.ru##:matches-path(-erid-) a[href*="go.vc.ru"]:style(pointer-events: none !important; color: inherit !important)
 dzen.ru##:matches-path(/\/a/) article:matches-attr(/./=/promo-card|skeleton/)
@@ -33208,7 +33210,7 @@ kinoafisha.ua##.turn-off-add-block-text
 stalkerportaal.ru##.video_adsense
 bookskeeper.ru,e-xecutive.ru##.warning
 forum.bestflowers.ru##.xenOverlay
-/^https?:\/\/pikabu\.ru\/ajax\/{1,2}[^?]+\?[A-Za-z0-9]+=[A-Za-z0-9_%-]*[0-9a-f]{20,}_[a-z0-9_]+/$xmlhttprequest,domain=pikabu.ru
+/^https?:\/\/pikabu\.ru\/ajax\/{1,2}[^?]+\?[A-Za-z0-9]+=[A-Za-z0-9_%.-]*[0-9a-f]{20,}_[a-z0-9_]+/$xmlhttprequest,domain=pikabu.ru
 /cookie_check.min.js$domain=acetv.me
 /gogl_detector$script,domain=meddaily.ru|newsru.com
 @@||anidub.com/ads.js|$script,domain=anidub.com
@@ -33293,7 +33295,6 @@ bigpuzzle.ru##td[valign="top"][width="240px"][height="600"]
 ||kontrolnaya-rabota.ru^*/toastr.$script,stylesheet
 ||mobzon.ru/adbp/adbp.js
 ||nnm-club.ws/forum/docs/requests.js
-||pikabu.ru/ajax//$xmlhttprequest
 ||pwnews.net/des/antiblock.js$script
 ||rockstargame.su/adb_script$script
 ||rusnext.ru/advar.js$script

@@ -1,8 +1,8 @@
-diff name:ruadlist lines:174 checksum:fcb8c2f7c8
+diff name:ruadlist lines:191 checksum:22271106d4
 d4 2
 a5 2
-! Last modified: Thu, 22 Oct 2026 07:28:12 +0000
-! Diff-Path: ../patches/2026.10.22.448.patch#ruadlist
+! Last modified: Thu, 22 Oct 2026 13:42:42 +0000
+! Diff-Path: ../patches/2026.10.22.822.patch#ruadlist
 a9089 1
 ##a[href^="https://click.sportbb.ru/"]
 a9238 1
@@ -28,6 +28,7 @@ sn.by##.banner-list
 d16152 1
 a16152 1
 agroinfo.kz,livejournal.com##.brand
+d16259 1
 d18329 1
 a18534 1
 gk-press.if.ua##.site-content .some-widgets > a
@@ -38,6 +39,8 @@ sn.by##.upper-top-head
 d19057 1
 a19057 1
 ~id.vk.ru,vk.com,vk.ru,vkvideo.ru##.vkuiBanner__host
+a19073 1
+rutube.ru##.wdp-wrapper-module__wdp-common-wrapper > .wdp-carousel-module__carouselWrapper
 a19095 1
 sport.rbc.ua##.widget-bookmakers
 a19100 1
@@ -53,6 +56,10 @@ a19160 1
 d19215 1
 a20024 1
 sovsport.ru##a[href*="?landing="]
+d20081 1
+a20081 1
+66.ru,agronovosti.ru,kinorium.com,rutube.ru,sport-express.net,sport-express.ru##a[href*="erid="][target="_blank"]
+d20668 1
 d21069 1
 a21069 1
 knigavuhe.org,yummy-ani.me,yummy-anime.ru,yummyani.me##div[class*="adfinity_block"]
@@ -82,6 +89,8 @@ a22854 1
 ||dolgoruka.link^$third-party
 a22858 1
 ||khitrozya.link^$third-party
+a22860 1
+||kruglyashka.link^$third-party
 a22862 1
 ||mudrobasa.link^$third-party
 a22868 1
@@ -159,9 +168,13 @@ a29310 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib###page_header > br
 a29388 1
 radar-map.ru##+js(abort-on-property-read, __adfinityLaunch)
+a29625 1
+vsthemes.org##+js(prevent-addEventListener, copy, preventDefault)
 d29655 1
 a29655 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /A.d.b.|Adb-|A-d-b-|-Gua|dblo|detected|dGua|tick|Адгу-/)
+a29843 1
+shuba.life##::selection:style(background-color: Highlight !important; color: HighlightText !important)
 d29892 1
 d29984 1
 a29984 1
@@ -173,3 +186,7 @@ a30237 2
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib###page_header > :empty
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib###page_header > [id][style^="margin: 0 0 0 0;"]
 d30250 1
+d33176 1
+a33176 1
+/^https?:\/\/pikabu\.ru\/ajax\/{1,2}[^?]+\?[A-Za-z0-9]+=[A-Za-z0-9_%.-]*[0-9a-f]{20,}_[a-z0-9_]+/$xmlhttprequest,domain=pikabu.ru
+d33261 1

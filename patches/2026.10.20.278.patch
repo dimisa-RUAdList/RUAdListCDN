@@ -1,8 +1,8 @@
-diff name:ruadlist lines:68 checksum:fcb8c2f7c8
+diff name:ruadlist lines:85 checksum:22271106d4
 d4 2
 a5 2
-! Last modified: Thu, 22 Oct 2026 07:28:12 +0000
-! Diff-Path: ../patches/2026.10.22.448.patch#ruadlist
+! Last modified: Thu, 22 Oct 2026 13:42:42 +0000
+! Diff-Path: ../patches/2026.10.22.822.patch#ruadlist
 a9089 1
 ##a[href^="https://click.sportbb.ru/"]
 a9238 1
@@ -11,15 +11,22 @@ a9385 1
 ||click.sportbb.ru^$third-party,popup
 a12942 1
 ||radar-map.ru/static/vendor/adfinity.js
+d16260 1
 d19060 1
 a19060 1
 ~id.vk.ru,vk.com,vk.ru,vkvideo.ru##.vkuiBanner__host
+a19076 1
+rutube.ru##.wdp-wrapper-module__wdp-common-wrapper > .wdp-carousel-module__carouselWrapper
 a19098 1
 sport.rbc.ua##.widget-bookmakers
 a19103 1
 sport.rbc.ua##.widget-odds
 a20027 1
 sovsport.ru##a[href*="?landing="]
+d20084 1
+a20084 1
+66.ru,agronovosti.ru,kinorium.com,rutube.ru,sport-express.net,sport-express.ru##a[href*="erid="][target="_blank"]
+d20671 1
 d21072 1
 a21072 1
 knigavuhe.org,yummy-ani.me,yummy-anime.ru,yummyani.me##div[class*="adfinity_block"]
@@ -39,6 +46,8 @@ a22852 1
 ||beloboka.link^$third-party
 a22855 1
 ||dolgoruka.link^$third-party
+a22862 1
+||kruglyashka.link^$third-party
 a22864 1
 ||mudrobasa.link^$third-party
 a22870 1
@@ -65,5 +74,13 @@ a28883 1
 club,com,kg,kz,md,media,net,org,ru,su,tv##[data-video_status][data-adapter="vk"] .spinnerContainer
 a29403 1
 radar-map.ru##+js(abort-on-property-read, __adfinityLaunch)
+a29640 1
+vsthemes.org##+js(prevent-addEventListener, copy, preventDefault)
+a29858 1
+shuba.life##::selection:style(background-color: Highlight !important; color: HighlightText !important)
 a30180 1
 ||vk.ru/video_ext.php?*partner_name=viqeo$third-party,subdocument,removeparam=js_api
+d33190 1
+a33190 1
+/^https?:\/\/pikabu\.ru\/ajax\/{1,2}[^?]+\?[A-Za-z0-9]+=[A-Za-z0-9_%.-]*[0-9a-f]{20,}_[a-z0-9_]+/$xmlhttprequest,domain=pikabu.ru
+d33275 1

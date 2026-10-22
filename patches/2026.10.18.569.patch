@@ -1,8 +1,8 @@
-diff name:ruadlist lines:161 checksum:fcb8c2f7c8
+diff name:ruadlist lines:178 checksum:22271106d4
 d4 2
 a5 2
-! Last modified: Thu, 22 Oct 2026 07:28:12 +0000
-! Diff-Path: ../patches/2026.10.22.448.patch#ruadlist
+! Last modified: Thu, 22 Oct 2026 13:42:42 +0000
+! Diff-Path: ../patches/2026.10.22.822.patch#ruadlist
 a9089 1
 ##a[href^="https://click.sportbb.ru/"]
 a9238 1
@@ -28,6 +28,7 @@ sn.by##.banner-list
 d16152 1
 a16152 1
 agroinfo.kz,livejournal.com##.brand
+d16259 1
 d18329 1
 a18534 1
 gk-press.if.ua##.site-content .some-widgets > a
@@ -38,6 +39,8 @@ sn.by##.upper-top-head
 d19057 1
 a19057 1
 ~id.vk.ru,vk.com,vk.ru,vkvideo.ru##.vkuiBanner__host
+a19073 1
+rutube.ru##.wdp-wrapper-module__wdp-common-wrapper > .wdp-carousel-module__carouselWrapper
 a19095 1
 sport.rbc.ua##.widget-bookmakers
 a19100 1
@@ -53,6 +56,10 @@ a19160 1
 d19215 1
 a20024 1
 sovsport.ru##a[href*="?landing="]
+d20081 1
+a20081 1
+66.ru,agronovosti.ru,kinorium.com,rutube.ru,sport-express.net,sport-express.ru##a[href*="erid="][target="_blank"]
+d20668 1
 d21069 1
 a21069 1
 knigavuhe.org,yummy-ani.me,yummy-anime.ru,yummyani.me##div[class*="adfinity_block"]
@@ -82,6 +89,8 @@ a22854 1
 ||dolgoruka.link^$third-party
 a22858 1
 ||khitrozya.link^$third-party
+a22860 1
+||kruglyashka.link^$third-party
 a22862 1
 ||mudrobasa.link^$third-party
 a22868 1
@@ -155,8 +164,16 @@ a29029 1
 dzen.ru,sportsdzen.ru##div[class^="news-"] [style^="margin-top: 0px; height: calc("][style*=" - 0px"]
 a29390 1
 radar-map.ru##+js(abort-on-property-read, __adfinityLaunch)
+a29627 1
+vsthemes.org##+js(prevent-addEventListener, copy, preventDefault)
+a29845 1
+shuba.life##::selection:style(background-color: Highlight !important; color: HighlightText !important)
 d29985 1
 a29985 1
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$important,script,redirect=google-ima.js,domain=ani5.top|ani6.top|ani7.top|jut-su.online
 a30167 1
 ||vk.ru/video_ext.php?*partner_name=viqeo$third-party,subdocument,removeparam=js_api
+d33177 1
+a33177 1
+/^https?:\/\/pikabu\.ru\/ajax\/{1,2}[^?]+\?[A-Za-z0-9]+=[A-Za-z0-9_%.-]*[0-9a-f]{20,}_[a-z0-9_]+/$xmlhttprequest,domain=pikabu.ru
+d33262 1
