@@ -1,8 +1,8 @@
-diff name:ruadlist lines:137 checksum:f9d7a965d9
+diff name:ruadlist lines:151 checksum:aa42da0bd8
 d4 2
 a5 2
-! Last modified: Fri, 23 Oct 2026 07:21:58 +0000
-! Diff-Path: ../patches/2026.10.23.441.patch#ruadlist
+! Last modified: Fri, 23 Oct 2026 18:14:36 +0000
+! Diff-Path: ../patches/2026.10.23.1094.patch#ruadlist
 a9089 1
 ##a[href^="https://click.sportbb.ru/"]
 a9238 1
@@ -18,6 +18,8 @@ d11191 1
 a12942 1
 ||radar-map.ru/static/vendor/adfinity.js
 d13924 1
+a16031 1
+eurointegration.com.ua##.block_post > div[style^="min-height:"]
 d16154 1
 a16154 1
 agroinfo.kz,livejournal.com##.brand
@@ -25,6 +27,8 @@ d16261 1
 d16571 1
 a16614 1
 sdamgia.ru##.ege-adv-container
+a17493 1
+eurointegration.com.ua##.mobile-only-ads
 a17863 1
 appstorrent.ru##.plati-block
 d18331 1
@@ -69,6 +73,8 @@ a22723 1
 d22771 4
 a22813 1
 pikabu.ru#?#article:-abp-has(> .story__main > div:not([class]))
+a22814 1
+pikabu.ru#?#article:-abp-has(> .story__main > div[class] ~ div[class])
 d22836 2
 d22848 1
 a22848 1
@@ -79,8 +85,9 @@ a22859 1
 ||dolgoruka.link^$third-party
 a22863 1
 ||khitrozya.link^$third-party
-a22865 1
+a22865 2
 ||kruglyashka.link^$third-party
+||kudroshapka.link^$third-party
 a22867 1
 ||mudrobasa.link^$third-party
 a22873 1
@@ -92,8 +99,9 @@ a22878 2
 ||skorobeyka.link^$third-party
 a22879 1
 ||sosilapu.org^$third-party
-a22886 1
+a22886 2
 ||tikhomira.link^$third-party
+||velogonshik.org^$third-party
 a22894 2
 ||zhenivalka.link^$third-party
 ||zlatobryuga.link^$third-party
@@ -126,12 +134,18 @@ a28876 1
 club,com,kg,kz,md,media,net,org,ru,su,tv##[data-video_status][data-adapter="vk"] .spinnerContainer
 a29396 1
 radar-map.ru##+js(abort-on-property-read, __adfinityLaunch)
+d29575 1
+a29575 1
+rutube.ru##+js(json-prune-fetch-response, appearance.auto_start, '', stackToMatch, !.ru/video/)
 a29633 1
 vsthemes.org##+js(prevent-addEventListener, copy, preventDefault)
 a29851 1
 shuba.life##::selection:style(background-color: Highlight !important; color: HighlightText !important)
+d30006 1
 a30173 1
 ||vk.ru/video_ext.php?*partner_name=viqeo$third-party,subdocument,removeparam=js_api
+d30214 1
+d30216 1
 d33183 1
 a33183 1
 /^https?:\/\/pikabu\.ru\/ajax\/{1,2}[^?]+\?[A-Za-z0-9]+=[A-Za-z0-9_%.-]*[0-9a-f]{20,}_[a-z0-9_]+/$xmlhttprequest,domain=pikabu.ru

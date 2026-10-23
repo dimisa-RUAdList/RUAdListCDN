@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 23 Oct 2026 07:21:58 +0000
-! Diff-Path: ../patches/2026.10.23.441.patch#ruadlist
+! Last modified: Fri, 23 Oct 2026 18:14:36 +0000
+! Diff-Path: ../patches/2026.10.23.1094.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -16032,6 +16032,7 @@ gooool365.com,gooool365.org,gooool365.sx##.block_d
 kino-teatr.ru##.block_ivi
 openssource.biz##.block_left
 chatadelic.net,db.chgk.info,forzajuve.ru,gubkabob.net,imageban.ru,kak-spasti-mir.ru,moi-detsad.ru,podrobno.uz,prostomac.com,rap-text.ru,recensent.ru,seriatv.ru,volomy.ru##.block_links
+eurointegration.com.ua##.block_post > div[style^="min-height:"]
 sportanalytic.com##.block_project_menu
 electrik.org##.block_r
 show-online.tv##.block_rekno + iframe
@@ -17493,6 +17494,7 @@ ixbt.com##.mobadv
 ixbt.com##.mobb
 zaxid.net##.mobile-branding-wrapper
 ixbt.com,ixbt.games,ixbt.pro,www1.ru##.mobile-c
+eurointegration.com.ua##.mobile-only-ads
 bankua.com.ua##.mod-custom
 love-sims.ru##.mod-custom3[style]
 newdaynews.ru##.mod-floatbann
@@ -22818,6 +22820,7 @@ pikabu.ru#?#article:-abp-has(> .story__left > span:only-child)
 pikabu.ru#?#article:-abp-has(> .story__main > div:not(:-abp-has(*)))
 pikabu.ru#?#article:-abp-has(> .story__main > div:not([class]))
 pikabu.ru#?#article:-abp-has(> .story__main > div:only-child)
+pikabu.ru#?#article:-abp-has(> .story__main > div[class] ~ div[class])
 pikabu.ru#?#article:-abp-has(> .story__main:not(:-abp-has(*)))
 kp.kg,kp.kz,kp.ru,md.kp.media#?#body > #app div:-abp-properties(background-color: rgb(225, 231, 235))
 sdamgia.ru##center > div[id][style]
@@ -22871,6 +22874,7 @@ $popup,domain=rstprgapipt.com|temp2cdn.link|temptcdn.com
 ||kinzazaza.org^$third-party
 ||krasnomaga.link^$third-party
 ||kruglyashka.link^$third-party
+||kudroshapka.link^$third-party
 ||leningrib.org^$third-party
 ||morozovnya.link^$third-party
 ||mudrobasa.link^$third-party
@@ -22899,6 +22903,7 @@ $popup,domain=rstprgapipt.com|temp2cdn.link|temptcdn.com
 ||temptcdn.com/api-integration/
 ||temptcdn.com^$third-party,xmlhttprequest
 ||tikhomira.link^$third-party
+||velogonshik.org^$third-party
 ||vertiguzha.link^$third-party
 ||veselchaga.link^$third-party
 ||viieqcjw.com^$third-party
@@ -29603,7 +29608,7 @@ ya.ru##+js(json-prune, rythm_market)
 znanija.com##+js(json-prune, tiers.TIER_ANY)
 aniqit.com,anivod.com,ashdi.vip,kodik.cc,kodik.info,kodikdb.com,kodikplayer.com,tortuga.wtf##+js(json-prune, vast)
 lumex.space##+js(json-prune-fetch-response, ads.banners.endtag ads.banners.pausebanner ads.rolls)
-rutube.ru##+js(json-prune-fetch-response, appearance.auto_start, '', stackToMatch, embed)
+rutube.ru##+js(json-prune-fetch-response, appearance.auto_start, '', stackToMatch, !.ru/video/)
 ohmywishes.com##+js(json-prune-fetch-response, item.banners)
 595.ucoz.net,5wip-file.ru,file-mods.ru,infourok.ru,mixmuz.ru,myshared.ru,sims3pack.ru,wallegend.net##+js(nano-setInterval-booster)
 muzlan.top##+js(nano-setInterval-booster, .numcard)
@@ -30036,7 +30041,6 @@ ya.ru,yandex.*##.simple-popup__overlay:remove()
 ||pronpic.org^$third-party,badfilter
 ||rbk.ru/*/_videoAutoplayRecommend.js
 ||rbk.ru/*/build/fn/_oprosso.js
-||rutube.ru/api/play/options/*&referer=rambler.$xmlhttprequest,removeparam=referer
 ||rutube.ru/play/embed/$third-party,subdocument,removeparam=autoplay
 ||s-cdn.org/promo/*.mp4$media,redirect=noop-0.1s.mp3,domain=player-films.online
 ||s-club.tv/promo/*.mp4$media,redirect=noop-0.1s.mp3,domain=player-films.online
@@ -30245,9 +30249,7 @@ www.kinopoisk.ru##div[style="width: 100%; height: 249px;"]
 !#endif
 ! Фоксо-специфичные случаи >
 !#if env_firefox
-rutube.ru##+js(json-edit-fetch-response, [?!.video_balancer.default].appearance.auto_start, propsToMatch, /api/play)
 ya.ru#@#+js(remove-node-text, div, 'ad-mark__b-unit')
-/rutube\.ru\/api\/play\/options\/.*[?&]referer=https.*(116|14|161|164|173|178|26|29|35|43|45|48|51|53|56|59|60|63|68|71|72|74|76|86|89|93|chita|e1|fontanka|ircity|izh1|mgorsk|msk1|ngs22|ngs24|ngs42|ngs55|ngs70|ngs|nn|sochi1|starhit|sterlitamak1|tolyatty|ufa1|v1|vladivostok1|voronezh1|ya62)\.ru/$xmlhttprequest,removeparam=referer
 @@$cname,domain=360tv.ru|3sat.de|innal.top|kyiv.ua|sports.ru|tosdr.org
 ndelo.ru##^.js-login > input
 root-nation.com##^.td-a-rec

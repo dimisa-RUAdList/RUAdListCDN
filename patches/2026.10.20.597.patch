@@ -1,15 +1,19 @@
-diff name:ruadlist lines:84 checksum:f9d7a965d9
+diff name:ruadlist lines:98 checksum:aa42da0bd8
 d4 2
 a5 2
-! Last modified: Fri, 23 Oct 2026 07:21:58 +0000
-! Diff-Path: ../patches/2026.10.23.441.patch#ruadlist
+! Last modified: Fri, 23 Oct 2026 18:14:36 +0000
+! Diff-Path: ../patches/2026.10.23.1094.patch#ruadlist
 a11065 1
 ||ac.rutube.ru/api/*/banner_rules?
 d11194 1
+a16034 1
+eurointegration.com.ua##.block_post > div[style^="min-height:"]
 d16264 1
 d16574 1
 a16617 1
 sdamgia.ru##.ege-adv-container
+a17496 1
+eurointegration.com.ua##.mobile-only-ads
 a17866 1
 appstorrent.ru##.plati-block
 d19064 1
@@ -44,12 +48,15 @@ a22726 1
 d22774 4
 a22816 1
 pikabu.ru#?#article:-abp-has(> .story__main > div:not([class]))
+a22817 1
+pikabu.ru#?#article:-abp-has(> .story__main > div[class] ~ div[class])
 a22857 1
 ||beloboka.link^$third-party
 a22860 1
 ||dolgoruka.link^$third-party
-a22867 1
+a22867 2
 ||kruglyashka.link^$third-party
+||kudroshapka.link^$third-party
 a22869 1
 ||mudrobasa.link^$third-party
 a22882 2
@@ -57,8 +64,9 @@ a22882 2
 ||skorobeyka.link^$third-party
 a22883 1
 ||sosilapu.org^$third-party
-a22890 1
+a22890 2
 ||tikhomira.link^$third-party
+||velogonshik.org^$third-party
 a22898 2
 ||zhenivalka.link^$third-party
 ||zlatobryuga.link^$third-party
@@ -73,12 +81,18 @@ a23535 1
 116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,fontanka.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,ya62.ru#?#div[class^="newsFeedBlock_"] > div[class^="news_"]:-abp-has(> div[class*=" advMark_"])
 a28889 1
 club,com,kg,kz,md,media,net,org,ru,su,tv##[data-video_status][data-adapter="vk"] .spinnerContainer
+d29589 1
+a29589 1
+rutube.ru##+js(json-prune-fetch-response, appearance.auto_start, '', stackToMatch, !.ru/video/)
 a29647 1
 vsthemes.org##+js(prevent-addEventListener, copy, preventDefault)
 a29865 1
 shuba.life##::selection:style(background-color: Highlight !important; color: HighlightText !important)
+d30020 1
 a30187 1
 ||vk.ru/video_ext.php?*partner_name=viqeo$third-party,subdocument,removeparam=js_api
+d30228 1
+d30230 1
 d33197 1
 a33197 1
 /^https?:\/\/pikabu\.ru\/ajax\/{1,2}[^?]+\?[A-Za-z0-9]+=[A-Za-z0-9_%.-]*[0-9a-f]{20,}_[a-z0-9_]+/$xmlhttprequest,domain=pikabu.ru

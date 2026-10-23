@@ -1,8 +1,8 @@
-diff name:ruadlist lines:207 checksum:f9d7a965d9
+diff name:ruadlist lines:221 checksum:aa42da0bd8
 d4 2
 a5 2
-! Last modified: Fri, 23 Oct 2026 07:21:58 +0000
-! Diff-Path: ../patches/2026.10.23.441.patch#ruadlist
+! Last modified: Fri, 23 Oct 2026 18:14:36 +0000
+! Diff-Path: ../patches/2026.10.23.1094.patch#ruadlist
 a9089 1
 ##a[href^="https://click.sportbb.ru/"]
 a9238 1
@@ -28,6 +28,8 @@ a14545 1
 gk-press.if.ua###more-articles > .auto-load
 a15801 1
 sn.by##.banner-list
+a16029 1
+eurointegration.com.ua##.block_post > div[style^="min-height:"]
 d16152 1
 a16152 1
 agroinfo.kz,livejournal.com##.brand
@@ -35,6 +37,8 @@ d16259 1
 d16569 1
 a16612 1
 sdamgia.ru##.ege-adv-container
+a17491 1
+eurointegration.com.ua##.mobile-only-ads
 a17861 1
 appstorrent.ru##.plati-block
 d18329 1
@@ -94,6 +98,8 @@ a22718 1
 d22766 4
 a22808 1
 pikabu.ru#?#article:-abp-has(> .story__main > div:not([class]))
+a22809 1
+pikabu.ru#?#article:-abp-has(> .story__main > div[class] ~ div[class])
 d22831 2
 d22843 1
 a22843 1
@@ -104,8 +110,9 @@ a22854 1
 ||dolgoruka.link^$third-party
 a22858 1
 ||khitrozya.link^$third-party
-a22860 1
+a22860 2
 ||kruglyashka.link^$third-party
+||kudroshapka.link^$third-party
 a22862 1
 ||mudrobasa.link^$third-party
 a22868 1
@@ -117,8 +124,9 @@ a22873 2
 ||skorobeyka.link^$third-party
 a22874 1
 ||sosilapu.org^$third-party
-a22881 1
+a22881 2
 ||tikhomira.link^$third-party
+||velogonshik.org^$third-party
 a22889 2
 ||zhenivalka.link^$third-party
 ||zlatobryuga.link^$third-party
@@ -184,6 +192,9 @@ a29310 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib###page_header > br
 a29388 1
 radar-map.ru##+js(abort-on-property-read, __adfinityLaunch)
+d29567 1
+a29567 1
+rutube.ru##+js(json-prune-fetch-response, appearance.auto_start, '', stackToMatch, !.ru/video/)
 a29625 1
 vsthemes.org##+js(prevent-addEventListener, copy, preventDefault)
 d29655 1
@@ -195,8 +206,11 @@ d29892 1
 d29984 1
 a29984 1
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$important,script,redirect=google-ima.js,domain=ani5.top|ani6.top|ani7.top|jut-su.online
+d29999 1
 a30166 1
 ||vk.ru/video_ext.php?*partner_name=viqeo$third-party,subdocument,removeparam=js_api
+d30207 1
+d30209 1
 d30237 1
 a30237 2
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib###page_header > :empty

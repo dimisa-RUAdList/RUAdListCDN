@@ -1,15 +1,19 @@
-diff name:ruadlist lines:38 checksum:f9d7a965d9
+diff name:ruadlist lines:53 checksum:aa42da0bd8
 d4 2
 a5 2
-! Last modified: Fri, 23 Oct 2026 07:21:58 +0000
-! Diff-Path: ../patches/2026.10.23.441.patch#ruadlist
+! Last modified: Fri, 23 Oct 2026 18:14:36 +0000
+! Diff-Path: ../patches/2026.10.23.1094.patch#ruadlist
 a11065 1
 ||ac.rutube.ru/api/*/banner_rules?
 d11194 1
+a16034 1
+eurointegration.com.ua##.block_post > div[style^="min-height:"]
 d16264 1
 d16574 1
 a16617 1
 sdamgia.ru##.ege-adv-container
+a17496 1
+eurointegration.com.ua##.mobile-only-ads
 a17866 1
 appstorrent.ru##.plati-block
 a19080 1
@@ -25,14 +29,25 @@ a20091 1
 d20678 1
 a21201 1
 ixbt.com#?#div[class]:-abp-has(> [data-testid="yandex-id-button"])
-a22870 1
+a22818 1
+pikabu.ru#?#article:-abp-has(> .story__main > div[class] ~ div[class])
+a22870 2
 ||kruglyashka.link^$third-party
+||kudroshapka.link^$third-party
 a22886 1
 ||sinebryuga.link^$third-party
+a22897 1
+||velogonshik.org^$third-party
+d29602 1
+a29602 1
+rutube.ru##+js(json-prune-fetch-response, appearance.auto_start, '', stackToMatch, !.ru/video/)
 a29660 1
 vsthemes.org##+js(prevent-addEventListener, copy, preventDefault)
 a29878 1
 shuba.life##::selection:style(background-color: Highlight !important; color: HighlightText !important)
+d30033 1
+d30242 1
+d30244 1
 d33211 1
 a33211 1
 /^https?:\/\/pikabu\.ru\/ajax\/{1,2}[^?]+\?[A-Za-z0-9]+=[A-Za-z0-9_%.-]*[0-9a-f]{20,}_[a-z0-9_]+/$xmlhttprequest,domain=pikabu.ru

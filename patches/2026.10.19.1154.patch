@@ -1,8 +1,8 @@
-diff name:ruadlist lines:120 checksum:f9d7a965d9
+diff name:ruadlist lines:134 checksum:aa42da0bd8
 d4 2
 a5 2
-! Last modified: Fri, 23 Oct 2026 07:21:58 +0000
-! Diff-Path: ../patches/2026.10.23.441.patch#ruadlist
+! Last modified: Fri, 23 Oct 2026 18:14:36 +0000
+! Diff-Path: ../patches/2026.10.23.1094.patch#ruadlist
 a9089 1
 ##a[href^="https://click.sportbb.ru/"]
 a9238 1
@@ -15,6 +15,8 @@ d11191 1
 a12942 1
 ||radar-map.ru/static/vendor/adfinity.js
 d13924 1
+a16031 1
+eurointegration.com.ua##.block_post > div[style^="min-height:"]
 d16154 1
 a16154 1
 agroinfo.kz,livejournal.com##.brand
@@ -22,6 +24,8 @@ d16261 1
 d16571 1
 a16614 1
 sdamgia.ru##.ege-adv-container
+a17493 1
+eurointegration.com.ua##.mobile-only-ads
 a17863 1
 appstorrent.ru##.plati-block
 d19061 1
@@ -61,6 +65,8 @@ a22721 1
 d22769 4
 a22811 1
 pikabu.ru#?#article:-abp-has(> .story__main > div:not([class]))
+a22812 1
+pikabu.ru#?#article:-abp-has(> .story__main > div[class] ~ div[class])
 d22844 1
 a22844 1
 .link/$third-party,domain=gorodyshka.link|kurolesya.link|perepolokha.link|player.temptcdn.com|shortener2.link|tazaromikaz.link
@@ -70,8 +76,9 @@ a22855 1
 ||dolgoruka.link^$third-party
 a22859 1
 ||khitrozya.link^$third-party
-a22861 1
+a22861 2
 ||kruglyashka.link^$third-party
+||kudroshapka.link^$third-party
 a22863 1
 ||mudrobasa.link^$third-party
 a22869 1
@@ -81,8 +88,9 @@ a22875 2
 ||skorobeyka.link^$third-party
 a22876 1
 ||sosilapu.org^$third-party
-a22883 1
+a22883 2
 ||tikhomira.link^$third-party
+||velogonshik.org^$third-party
 a22891 2
 ||zhenivalka.link^$third-party
 ||zlatobryuga.link^$third-party
@@ -109,12 +117,18 @@ a28873 1
 club,com,kg,kz,md,media,net,org,ru,su,tv##[data-video_status][data-adapter="vk"] .spinnerContainer
 a29393 1
 radar-map.ru##+js(abort-on-property-read, __adfinityLaunch)
+d29572 1
+a29572 1
+rutube.ru##+js(json-prune-fetch-response, appearance.auto_start, '', stackToMatch, !.ru/video/)
 a29630 1
 vsthemes.org##+js(prevent-addEventListener, copy, preventDefault)
 a29848 1
 shuba.life##::selection:style(background-color: Highlight !important; color: HighlightText !important)
+d30003 1
 a30170 1
 ||vk.ru/video_ext.php?*partner_name=viqeo$third-party,subdocument,removeparam=js_api
+d30211 1
+d30213 1
 d33180 1
 a33180 1
 /^https?:\/\/pikabu\.ru\/ajax\/{1,2}[^?]+\?[A-Za-z0-9]+=[A-Za-z0-9_%.-]*[0-9a-f]{20,}_[a-z0-9_]+/$xmlhttprequest,domain=pikabu.ru
