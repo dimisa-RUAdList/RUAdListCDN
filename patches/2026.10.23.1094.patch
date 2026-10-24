@@ -1,8 +1,8 @@
-diff name:ruadlist lines:22 checksum:55d0098a56
+diff name:ruadlist lines:32 checksum:c1dab8c9b2
 d4 2
 a5 2
-! Last modified: Sat, 24 Oct 2026 05:42:01 +0000
-! Diff-Path: ../patches/2026.10.24.342.patch#ruadlist
+! Last modified: Sat, 24 Oct 2026 10:48:51 +0000
+! Diff-Path: ../patches/2026.10.24.648.patch#ruadlist
 a14342 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib###gogfilmsfuck
 d20344 1
@@ -11,10 +11,20 @@ actualcomment.ru,asn24.ru,automobili.ru,gorod48.ru,kubnews.ru,lgz.ru,mediaryazan
 a20540 1
 2x2tv.ru##a[href^="https://2x2tv.ru/~"]
 d20793 1
+a22864 1
+||bystroglaza.link^$third-party
 a22882 1
 ||pedofobnatural.org^$third-party
 a22891 1
 ||ryabokoshka.link^$third-party
+a22896 1
+||smertotmikrotikov.org^$third-party
+a28873 3
+! исправление ошибок и косяков оригинальной вёрстки
+ucrazy.org##.related-grid:style(display: unset !important)
+! ---
+a29538 1
+ucrazy.org##+js(addEventListener-defuser, click, '', elements, a[href*="utm_source="])
 d29810 1
 a29817 1
 lk.emias.mos.ru##+js(set-cookie-reload, lk-hasConsent, True)

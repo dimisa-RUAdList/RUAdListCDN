@@ -1,8 +1,8 @@
-diff name:ruadlist lines:38 checksum:55d0098a56
+diff name:ruadlist lines:48 checksum:c1dab8c9b2
 d4 2
 a5 2
-! Last modified: Sat, 24 Oct 2026 05:42:01 +0000
-! Diff-Path: ../patches/2026.10.24.342.patch#ruadlist
+! Last modified: Sat, 24 Oct 2026 10:48:51 +0000
+! Diff-Path: ../patches/2026.10.24.648.patch#ruadlist
 a14342 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib###gogfilmsfuck
 a16034 1
@@ -17,14 +17,24 @@ a20538 1
 d20791 1
 a22820 1
 pikabu.ru#?#article:-abp-has(> .story__main > div[class] ~ div[class])
+a22861 1
+||bystroglaza.link^$third-party
 a22873 1
 ||kudroshapka.link^$third-party
 a22878 1
 ||pedofobnatural.org^$third-party
 a22887 1
 ||ryabokoshka.link^$third-party
+a22892 1
+||smertotmikrotikov.org^$third-party
 a22901 1
 ||velogonshik.org^$third-party
+a28868 3
+! исправление ошибок и косяков оригинальной вёрстки
+ucrazy.org##.related-grid:style(display: unset !important)
+! ---
+a29533 1
+ucrazy.org##+js(addEventListener-defuser, click, '', elements, a[href*="utm_source="])
 d29606 1
 a29606 1
 rutube.ru##+js(json-prune-fetch-response, appearance.auto_start, '', stackToMatch, !.ru/video/)

@@ -1,8 +1,8 @@
-diff name:ruadlist lines:55 checksum:55d0098a56
+diff name:ruadlist lines:65 checksum:c1dab8c9b2
 d4 2
 a5 2
-! Last modified: Sat, 24 Oct 2026 05:42:01 +0000
-! Diff-Path: ../patches/2026.10.24.342.patch#ruadlist
+! Last modified: Sat, 24 Oct 2026 10:48:51 +0000
+! Diff-Path: ../patches/2026.10.24.648.patch#ruadlist
 a11065 1
 ||ac.rutube.ru/api/*/banner_rules?
 d11194 1
@@ -32,6 +32,8 @@ a21200 1
 ixbt.com#?#div[class]:-abp-has(> [data-testid="yandex-id-button"])
 a22817 1
 pikabu.ru#?#article:-abp-has(> .story__main > div[class] ~ div[class])
+a22858 1
+||bystroglaza.link^$third-party
 a22870 1
 ||kudroshapka.link^$third-party
 a22875 1
@@ -40,8 +42,16 @@ a22884 1
 ||ryabokoshka.link^$third-party
 a22886 1
 ||sinebryuga.link^$third-party
+a22888 1
+||smertotmikrotikov.org^$third-party
 a22897 1
 ||velogonshik.org^$third-party
+a28864 3
+! исправление ошибок и косяков оригинальной вёрстки
+ucrazy.org##.related-grid:style(display: unset !important)
+! ---
+a29529 1
+ucrazy.org##+js(addEventListener-defuser, click, '', elements, a[href*="utm_source="])
 d29602 1
 a29602 1
 rutube.ru##+js(json-prune-fetch-response, appearance.auto_start, '', stackToMatch, !.ru/video/)

@@ -1,8 +1,8 @@
-diff name:ruadlist lines:90 checksum:55d0098a56
+diff name:ruadlist lines:100 checksum:c1dab8c9b2
 d4 2
 a5 2
-! Last modified: Sat, 24 Oct 2026 05:42:01 +0000
-! Diff-Path: ../patches/2026.10.24.342.patch#ruadlist
+! Last modified: Sat, 24 Oct 2026 10:48:51 +0000
+! Diff-Path: ../patches/2026.10.24.648.patch#ruadlist
 a11065 1
 ||ac.rutube.ru/api/*/banner_rules?
 d11194 1
@@ -45,6 +45,8 @@ a22814 1
 pikabu.ru#?#article:-abp-has(> .story__main > div:not([class]))
 a22815 1
 pikabu.ru#?#article:-abp-has(> .story__main > div[class] ~ div[class])
+a22856 1
+||bystroglaza.link^$third-party
 a22859 1
 ||dolgoruka.link^$third-party
 a22866 2
@@ -58,6 +60,8 @@ a22879 1
 ||ryabokoshka.link^$third-party
 a22881 1
 ||sinebryuga.link^$third-party
+a22883 1
+||smertotmikrotikov.org^$third-party
 a22892 1
 ||velogonshik.org^$third-party
 a22901 1
@@ -69,6 +73,12 @@ ru##[data-ns-portal] .block-top-news > div[class^="list_"] > article > span[clas
 a23538 1
 116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,fontanka.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,ya62.ru#?#div[class^="newsFeedBlock_"] > div[class^="news_"]:-abp-has(> div[class*=" advMark_"])
 d23540 1
+a28856 3
+! исправление ошибок и косяков оригинальной вёрстки
+ucrazy.org##.related-grid:style(display: unset !important)
+! ---
+a29521 1
+ucrazy.org##+js(addEventListener-defuser, click, '', elements, a[href*="utm_source="])
 d29594 1
 a29594 1
 rutube.ru##+js(json-prune-fetch-response, appearance.auto_start, '', stackToMatch, !.ru/video/)

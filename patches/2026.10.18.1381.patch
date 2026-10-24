@@ -1,8 +1,8 @@
-diff name:ruadlist lines:209 checksum:55d0098a56
+diff name:ruadlist lines:217 checksum:c1dab8c9b2
 d4 2
 a5 2
-! Last modified: Sat, 24 Oct 2026 05:42:01 +0000
-! Diff-Path: ../patches/2026.10.24.342.patch#ruadlist
+! Last modified: Sat, 24 Oct 2026 10:48:51 +0000
+! Diff-Path: ../patches/2026.10.24.648.patch#ruadlist
 a9089 1
 ##a[href^="https://click.sportbb.ru/"]
 a9238 1
@@ -112,8 +112,9 @@ d22831 2
 d22843 1
 a22843 1
 .link/$third-party,domain=gorodyshka.link|kurolesya.link|perepolokha.link|player.temptcdn.com|shortener2.link|tazaromikaz.link
-a22851 1
+a22851 2
 ||beloboka.link^$third-party
+||bystroglaza.link^$third-party
 a22854 1
 ||dolgoruka.link^$third-party
 a22858 1
@@ -133,7 +134,8 @@ a22872 2
 a22873 2
 ||sinebryuga.link^$third-party
 ||skorobeyka.link^$third-party
-a22874 1
+a22874 2
+||smertotmikrotikov.org^$third-party
 ||sosilapu.org^$third-party
 a22881 2
 ||tikhomira.link^$third-party
@@ -174,6 +176,10 @@ ya.ru##html[class*="secctssian_top"] main > div[class*="__"] ~ div[class*="__"] 
 d24183 1
 a24183 1
 ya.ru##section[style*="secctssian-items-count:"]
+a28833 3
+! исправление ошибок и косяков оригинальной вёрстки
+ucrazy.org##.related-grid:style(display: unset !important)
+! ---
 a28870 1
 club,com,kg,kz,md,media,net,org,ru,su,tv##[data-video_status][data-adapter="vk"] .spinnerContainer
 d29018 1
@@ -186,6 +192,8 @@ a29029 1
 dzen.ru,sportsdzen.ru##div[class^="news-"] [style^="margin-top: 0px; height: calc("][style*=" - 0px"]
 a29390 1
 radar-map.ru##+js(abort-on-property-read, __adfinityLaunch)
+a29496 1
+ucrazy.org##+js(addEventListener-defuser, click, '', elements, a[href*="utm_source="])
 d29569 1
 a29569 1
 rutube.ru##+js(json-prune-fetch-response, appearance.auto_start, '', stackToMatch, !.ru/video/)
