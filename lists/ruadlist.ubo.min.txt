@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 23 Oct 2026 18:14:36 +0000
-! Diff-Path: ../patches/2026.10.23.1094.patch#ruadlist
+! Last modified: Sat, 24 Oct 2026 00:32:33 +0000
+! Diff-Path: ../patches/2026.10.24.32.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -14340,6 +14340,7 @@ narkoseti.ru###gifts
 zaqw.ru###gkBanner1
 gameround.ru###global_back_link
 chepetsk.ru###glory
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib###gogfilmsfuck
 seriatv.ru###google_box
 otzyvua.net###google_recommended
 womanadvice.ru###googlerekl
@@ -29807,7 +29808,6 @@ avito.ru##+js(set-cookie, cookie_consent_shown, 1)
 forum.ixbt.com##+js(set-cookie, cookie_policy_accepted, 110)
 kp.ru##+js(set-cookie, geoid, 32767, /, dontOverwrite, 1)
 kufar.by##+js(set-cookie, kuf_agr, true)
-lk.emias.mos.ru##+js(set-cookie, lk-hasConsent, True)
 findanime.me##+js(set-cookie, mose-banner, true)
 playground.ru##+js(set-cookie, pg_SuggestGameFollow, true)
 remanga.org##+js(set-cookie, promo-toast-tg, true)
@@ -29815,6 +29815,7 @@ d3.ru##+js(set-cookie, purchase_invite_shown, 1)
 kinotv.ru##+js(set-cookie, telegram_popup, Y)
 championat.com,championat.ru,ferra.ru,gazeta.press,gazeta.ru,indicator.ru,lenta.news,lenta.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,secretmag.ru,wmj.ru##+js(set-cookie, unity_pause_sso, 1, '', reload, 1)
 mp3party.net##+js(set-cookie, yandexFull, true)
+lk.emias.mos.ru##+js(set-cookie-reload, lk-hasConsent, True)
 sport-express.net,sport-express.ru##+js(set-local-storage-item, __videoboxActive, false)
 dzen.ru##+js(set-local-storage-item, browser-switch-trap-ts, {})
 finuslugi.ru##+js(set-local-storage-item, headerBannerShownAt, 1)
@@ -30278,7 +30279,7 @@ gazeta.press,gazeta.ru,lenta.news,lenta.ru,secretmag.ru,wmj.ru##iframe[src^="htt
 !#if env_mv3
 payment.mts.ru###__next > div[id^="adfox_"]:not(:empty):style(display: block !important)
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib###page_header > :empty
-game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib###page_header > [id][style^="margin: 0 0 0 0;"]
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib###page_header [style*="margin: 0 0 "]
 $script,responseheader=x-yandex-req-id,domain=dzen.ru|sportsdzen.ru
 dtf.ru##+js(addEventListener-defuser, click, '', elements, a[href^="/"][data-router-link])
 e.mail.ru##+js(no-setTimeout-if, '()=>n()', 50)
