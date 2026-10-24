@@ -1,13 +1,15 @@
-diff name:ruadlist lines:81 checksum:c1dab8c9b2
+diff name:ruadlist lines:93 checksum:0b6e10ef82
 d4 2
 a5 2
-! Last modified: Sat, 24 Oct 2026 10:48:51 +0000
-! Diff-Path: ../patches/2026.10.24.648.patch#ruadlist
+! Last modified: Sat, 24 Oct 2026 18:03:32 +0000
+! Diff-Path: ../patches/2026.10.24.1083.patch#ruadlist
 a11065 1
 ||ac.rutube.ru/api/*/banner_rules?
 d11194 1
 a14342 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib###gogfilmsfuck
+a15817 1
+ucrazy.org##.banner-slot
 a16034 1
 eurointegration.com.ua##.block_post > div[style^="min-height:"]
 d16264 1
@@ -38,9 +40,13 @@ d20790 1
 a21201 1
 ixbt.com#?#div[class]:-abp-has(> [data-testid="yandex-id-button"])
 a22818 1
-pikabu.ru#?#article:-abp-has(> .story__main > div[class] ~ div[class])
+pikabu.ru#?#article:-abp-has(> .story__main > div[class] + div[class])
+a22850 1
+.org/$third-party,domain=gorodyshka.link|kurolesya.link|perepolokha.link|player.temptcdn.com|shortener2.link|tazaromikaz.link
 a22859 1
 ||bystroglaza.link^$third-party
+a22869 1
+||konvtriko.org^$third-party
 a22870 2
 ||kruglyashka.link^$third-party
 ||kudroshapka.link^$third-party
@@ -54,6 +60,12 @@ a22888 1
 ||smertotmikrotikov.org^$third-party
 a22897 1
 ||velogonshik.org^$third-party
+a22900 1
+||volanbora.org^$third-party
+a28528 3
+! мобильный макет
+pikabu.ru##.header:style(top: 0 !important)
+pikabu.ru##.promo-banner
 a28864 3
 ! исправление ошибок и косяков оригинальной вёрстки
 ucrazy.org##.related-grid:style(display: unset !important)

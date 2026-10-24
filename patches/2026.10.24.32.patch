@@ -1,22 +1,37 @@
-diff name:ruadlist lines:24 checksum:c1dab8c9b2
+diff name:ruadlist lines:39 checksum:0b6e10ef82
 d4 2
 a5 2
-! Last modified: Sat, 24 Oct 2026 10:48:51 +0000
-! Diff-Path: ../patches/2026.10.24.648.patch#ruadlist
+! Last modified: Sat, 24 Oct 2026 18:03:32 +0000
+! Diff-Path: ../patches/2026.10.24.1083.patch#ruadlist
+a15818 1
+ucrazy.org##.banner-slot
 d20345 1
 a20345 1
 actualcomment.ru,asn24.ru,automobili.ru,gorod48.ru,kubnews.ru,lgz.ru,mediaryazan.ru,mk.tula.ru,mos.news,newsroom24.ru,ohranatruda.ru,onlinetambov.ru,podrobno.uz,rabochy-put.ru,securitylab.ru,sochi.com,vegetarian.ru,velikiynovgorod.ru##a[href^="/bitrix/rk.php"][href*="banner"]
 a20541 1
 2x2tv.ru##a[href^="https://2x2tv.ru/~"]
 d20794 1
+d22824 1
+a22824 1
+pikabu.ru#?#article:-abp-has(> .story__main > div[class] + div[class])
+a22856 1
+.org/$third-party,domain=gorodyshka.link|kurolesya.link|perepolokha.link|player.temptcdn.com|shortener2.link|tazaromikaz.link
 a22865 1
 ||bystroglaza.link^$third-party
+a22875 1
+||konvtriko.org^$third-party
 a22883 1
 ||pedofobnatural.org^$third-party
 a22892 1
 ||ryabokoshka.link^$third-party
 a22897 1
 ||smertotmikrotikov.org^$third-party
+a22910 1
+||volanbora.org^$third-party
+a28538 3
+! мобильный макет
+pikabu.ru##.header:style(top: 0 !important)
+pikabu.ru##.promo-banner
 a28874 3
 ! исправление ошибок и косяков оригинальной вёрстки
 ucrazy.org##.related-grid:style(display: unset !important)

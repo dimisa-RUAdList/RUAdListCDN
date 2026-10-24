@@ -1,8 +1,8 @@
-diff name:ruadlist lines:217 checksum:c1dab8c9b2
+diff name:ruadlist lines:228 checksum:0b6e10ef82
 d4 2
 a5 2
-! Last modified: Sat, 24 Oct 2026 10:48:51 +0000
-! Diff-Path: ../patches/2026.10.24.648.patch#ruadlist
+! Last modified: Sat, 24 Oct 2026 18:03:32 +0000
+! Diff-Path: ../patches/2026.10.24.1083.patch#ruadlist
 a9089 1
 ##a[href^="https://click.sportbb.ru/"]
 a9238 1
@@ -30,6 +30,8 @@ a14545 1
 gk-press.if.ua###more-articles > .auto-load
 a15801 1
 sn.by##.banner-list
+a15812 1
+ucrazy.org##.banner-slot
 a16029 1
 eurointegration.com.ua##.block_post > div[style^="min-height:"]
 d16152 1
@@ -107,11 +109,12 @@ d22766 4
 a22808 1
 pikabu.ru#?#article:-abp-has(> .story__main > div:not([class]))
 a22809 1
-pikabu.ru#?#article:-abp-has(> .story__main > div[class] ~ div[class])
+pikabu.ru#?#article:-abp-has(> .story__main > div[class] + div[class])
 d22831 2
 d22843 1
-a22843 1
+a22843 2
 .link/$third-party,domain=gorodyshka.link|kurolesya.link|perepolokha.link|player.temptcdn.com|shortener2.link|tazaromikaz.link
+.org/$third-party,domain=gorodyshka.link|kurolesya.link|perepolokha.link|player.temptcdn.com|shortener2.link|tazaromikaz.link
 a22851 2
 ||beloboka.link^$third-party
 ||bystroglaza.link^$third-party
@@ -119,6 +122,8 @@ a22854 1
 ||dolgoruka.link^$third-party
 a22858 1
 ||khitrozya.link^$third-party
+a22859 1
+||konvtriko.org^$third-party
 a22860 2
 ||kruglyashka.link^$third-party
 ||kudroshapka.link^$third-party
@@ -140,6 +145,8 @@ a22874 2
 a22881 2
 ||tikhomira.link^$third-party
 ||velogonshik.org^$third-party
+a22884 1
+||volanbora.org^$third-party
 a22889 2
 ||zhenivalka.link^$third-party
 ||zlatobryuga.link^$third-party
@@ -176,6 +183,10 @@ ya.ru##html[class*="secctssian_top"] main > div[class*="__"] ~ div[class*="__"] 
 d24183 1
 a24183 1
 ya.ru##section[style*="secctssian-items-count:"]
+a28497 3
+! мобильный макет
+pikabu.ru##.header:style(top: 0 !important)
+pikabu.ru##.promo-banner
 a28833 3
 ! исправление ошибок и косяков оригинальной вёрстки
 ucrazy.org##.related-grid:style(display: unset !important)

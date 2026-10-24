@@ -1,8 +1,8 @@
-diff name:ruadlist lines:141 checksum:c1dab8c9b2
+diff name:ruadlist lines:152 checksum:0b6e10ef82
 d4 2
 a5 2
-! Last modified: Sat, 24 Oct 2026 10:48:51 +0000
-! Diff-Path: ../patches/2026.10.24.648.patch#ruadlist
+! Last modified: Sat, 24 Oct 2026 18:03:32 +0000
+! Diff-Path: ../patches/2026.10.24.1083.patch#ruadlist
 a9089 1
 ##a[href^="https://click.sportbb.ru/"]
 a9238 1
@@ -16,6 +16,8 @@ a12942 1
 ||radar-map.ru/static/vendor/adfinity.js
 a14338 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib###gogfilmsfuck
+a15813 1
+ucrazy.org##.banner-slot
 a16030 1
 eurointegration.com.ua##.block_post > div[style^="min-height:"]
 d16260 1
@@ -67,15 +69,18 @@ d22769 4
 a22811 1
 pikabu.ru#?#article:-abp-has(> .story__main > div:not([class]))
 a22812 1
-pikabu.ru#?#article:-abp-has(> .story__main > div[class] ~ div[class])
+pikabu.ru#?#article:-abp-has(> .story__main > div[class] + div[class])
 d22844 1
-a22844 1
+a22844 2
 .link/$third-party,domain=gorodyshka.link|kurolesya.link|perepolokha.link|player.temptcdn.com|shortener2.link|tazaromikaz.link
+.org/$third-party,domain=gorodyshka.link|kurolesya.link|perepolokha.link|player.temptcdn.com|shortener2.link|tazaromikaz.link
 a22852 2
 ||beloboka.link^$third-party
 ||bystroglaza.link^$third-party
 a22855 1
 ||dolgoruka.link^$third-party
+a22861 1
+||konvtriko.org^$third-party
 a22862 2
 ||kruglyashka.link^$third-party
 ||kudroshapka.link^$third-party
@@ -96,6 +101,8 @@ a22877 2
 a22884 2
 ||tikhomira.link^$third-party
 ||velogonshik.org^$third-party
+a22887 1
+||volanbora.org^$third-party
 a22892 2
 ||zhenivalka.link^$third-party
 ||zlatobryuga.link^$third-party
@@ -108,6 +115,10 @@ a23528 1
 116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,fontanka.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,ya62.ru#?#div[class^="newsFeedBlock_"] > div[class^="news_"]:-abp-has(> a[href*="?erid="])
 a23529 1
 116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,fontanka.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,ya62.ru#?#div[class^="newsFeedBlock_"] > div[class^="news_"]:-abp-has(> div[class*=" advMark_"])
+a28510 3
+! мобильный макет
+pikabu.ru##.header:style(top: 0 !important)
+pikabu.ru##.promo-banner
 a28846 3
 ! исправление ошибок и косяков оригинальной вёрстки
 ucrazy.org##.related-grid:style(display: unset !important)

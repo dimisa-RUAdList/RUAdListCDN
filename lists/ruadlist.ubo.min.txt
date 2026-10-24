@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 24 Oct 2026 10:48:51 +0000
-! Diff-Path: ../patches/2026.10.24.648.patch#ruadlist
+! Last modified: Sat, 24 Oct 2026 18:03:32 +0000
+! Diff-Path: ../patches/2026.10.24.1083.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -15816,6 +15816,7 @@ aum.news,kinoprofi.vip##.banner-sidebar
 gotennis.ru##.banner-simple
 habr.com##.banner-slider
 koroldanylo.com.ua##.banner-slider-container
+ucrazy.org##.banner-slot
 rayon.in.ua##.banner-slot-container
 ogo.ua##.banner-strip
 trud.com##.banner-systems-container
@@ -22821,7 +22822,7 @@ pikabu.ru#?#article:-abp-has(> .story__left > span:only-child)
 pikabu.ru#?#article:-abp-has(> .story__main > div:not(:-abp-has(*)))
 pikabu.ru#?#article:-abp-has(> .story__main > div:not([class]))
 pikabu.ru#?#article:-abp-has(> .story__main > div:only-child)
-pikabu.ru#?#article:-abp-has(> .story__main > div[class] ~ div[class])
+pikabu.ru#?#article:-abp-has(> .story__main > div[class] + div[class])
 pikabu.ru#?#article:-abp-has(> .story__main:not(:-abp-has(*)))
 kp.kg,kp.kz,kp.ru,md.kp.media#?#body > #app div:-abp-properties(background-color: rgb(225, 231, 235))
 sdamgia.ru##center > div[id][style]
@@ -22854,6 +22855,7 @@ livetvstream.pro,me,online##body[bgcolor] > div[id^="iframe-container"]
 ! Плеер VeoVeo
 $popup,domain=rstprgapipt.com|temp2cdn.link|temptcdn.com
 .link/$third-party,domain=gorodyshka.link|kurolesya.link|perepolokha.link|player.temptcdn.com|shortener2.link|tazaromikaz.link
+.org/$third-party,domain=gorodyshka.link|kurolesya.link|perepolokha.link|player.temptcdn.com|shortener2.link|tazaromikaz.link
 /ad-rotator/ad-list.json
 /ad-rotator/vast.xml
 /api-integration/*?unique=$third-party,xmlhttprequest
@@ -22874,6 +22876,7 @@ $popup,domain=rstprgapipt.com|temp2cdn.link|temptcdn.com
 ||imgkcdn.com^$third-party
 ||khitrozya.link^$third-party
 ||kinzazaza.org^$third-party
+||konvtriko.org^$third-party
 ||krasnomaga.link^$third-party
 ||kruglyashka.link^$third-party
 ||kudroshapka.link^$third-party
@@ -22912,6 +22915,7 @@ $popup,domain=rstprgapipt.com|temp2cdn.link|temptcdn.com
 ||vertiguzha.link^$third-party
 ||veselchaga.link^$third-party
 ||viieqcjw.com^$third-party
+||volanbora.org^$third-party
 ||vveu.*.link/$third-party,media
 ||vvru.*.link/$third-party,media
 ||yankimanki.org^$third-party
@@ -28540,6 +28544,9 @@ pikabu.ru##.app > .app__inner[style*="padding-top"]:style(padding-top: 64px !imp
 pikabu.ru##.footer__inner:style(background-color: var(--color--app__bg) !important; color: var(--color--app__text) !important)
 pikabu.ru##div[class*="page-story"][class*="ments"] div:style(min-height: 0 !important)
 pikabu.ru##header > .header__main:style(background-color: var(--color--header__bg) !important)
+! мобильный макет
+pikabu.ru##.header:style(top: 0 !important)
+pikabu.ru##.promo-banner
 ! ---
 pimpletv.me,pimpletv.ru##body > #branding:style(padding-top: 0 !important)
 ! ---
