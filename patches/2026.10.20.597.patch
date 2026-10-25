@@ -1,8 +1,8 @@
-diff name:ruadlist lines:140 checksum:6d0269ebce
+diff name:ruadlist lines:144 checksum:078508e7df
 d4 2
 a5 2
-! Last modified: Sun, 25 Oct 2026 05:58:18 +0000
-! Diff-Path: ../patches/2026.10.25.358.patch#ruadlist
+! Last modified: Sun, 25 Oct 2026 11:14:28 +0000
+! Diff-Path: ../patches/2026.10.25.674.patch#ruadlist
 a11065 1
 ||ac.rutube.ru/api/*/banner_rules?
 d11194 1
@@ -60,8 +60,11 @@ a22816 1
 pikabu.ru#?#article:-abp-has(> .story__main > div:not([class]))
 a22817 1
 pikabu.ru#?#article:-abp-has(> .story__main > div[class] + div[class])
-a22849 1
+a22849 2
 .org/$third-party,domain=gorodyshka.link|kurolesya.link|perepolokha.link|player.temptcdn.com|shortener2.link|tazaromikaz.link
+.org/vwm2zm76jr?$third-party,xmlhttprequest
+a22856 1
+||antonshipanov.org^$third-party
 a22857 2
 ||beloboka.link^$third-party
 ||bystroglaza.link^$third-party
@@ -80,8 +83,9 @@ a22869 1
 ||mudrobasa.link^$third-party
 a22871 1
 ||pedofobnatural.org^$third-party
-a22880 1
+a22880 2
 ||ryabokoshka.link^$third-party
+||sablyaizgovna.org^$third-party
 a22882 2
 ||sinebryuga.link^$third-party
 ||skorobeyka.link^$third-party
