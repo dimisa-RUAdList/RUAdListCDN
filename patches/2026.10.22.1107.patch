@@ -1,44 +1,67 @@
-diff name:ruadlist lines:75 checksum:9b51c9d111
+diff name:ruadlist lines:114 checksum:a6c425c53b
 d4 2
 a5 2
-! Last modified: Mon, 26 Oct 2026 04:38:15 +0000
-! Diff-Path: ../patches/2026.10.26.278.patch#ruadlist
+! Last modified: Mon, 26 Oct 2026 10:58:37 +0000
+! Diff-Path: ../patches/2026.10.26.658.patch#ruadlist
 a406 1
 ||aj0453.top^$third-party
 a3710 1
 ||marketer.lv^$third-party
+a11809 1
+||gamemag.ru/ads.txt
 a14342 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib###gogfilmsfuck
 a15817 1
 ucrazy.org##.banner-slot
 a16034 1
 eurointegration.com.ua##.block_post > div[style^="min-height:"]
+d17306 1
 a17495 1
 eurointegration.com.ua##.mobile-only-ads
+d17611 1
+a18392 1
+appstorrent.ru##.side-tile a[target="_blank"]
+d19535 1
+a19535 1
+basaru.net.ru,gooool365.com,gooool365.org,gooool365.sx,lexxs.us,musictor.ru,superkarate.ru,topfile.tj,uzmov.net,weblance.com.ua##[data-dlebclicks]
+d19914 1
+a19914 1
+1tv.ru,drive.ru,f1news.ru,film.ru,kinoafisha.info,kinonews.ru,kinorium.com,livejournal.com,myshows.me,onlinestreams.ru,pikabu.ru,pluggedin.ru,spletnik.ru,tolknews.ru,trinixy.ru,www.pesticidy.ru##a[href*="//ads.adfox.ru/"]
 d20342 1
 a20342 1
 actualcomment.ru,asn24.ru,automobili.ru,gorod48.ru,kubnews.ru,lgz.ru,mediaryazan.ru,mk.tula.ru,mos.news,newsroom24.ru,ohranatruda.ru,onlinetambov.ru,podrobno.uz,rabochy-put.ru,securitylab.ru,sochi.com,vegetarian.ru,velikiynovgorod.ru##a[href^="/bitrix/rk.php"][href*="banner"]
 a20538 1
 2x2tv.ru##a[href^="https://2x2tv.ru/~"]
 d20791 1
+d22805 1
 a22820 1
 pikabu.ru#?#article:-abp-has(> .story__main > div[class] + div[class])
 a22852 2
 .org/$third-party,domain=gorodyshka.link|kurolesya.link|perepolokha.link|player.temptcdn.com|shortener2.link|tazaromikaz.link
-.org/vwm2zm76jr?$third-party,xmlhttprequest
+/7yi5n0iht7f?$third-party,xmlhttprequest
 a22859 1
 ||antonshipanov.org^$third-party
-a22861 1
+a22861 3
+||borisgovorunov.org^$third-party
+||burunduksha.link^$third-party
 ||bystroglaza.link^$third-party
 a22867 2
 ||genocidevreev.org^$third-party
 ||gnevizada.org^$third-party
-a22871 1
+a22868 1
+||gromoboyara.link^$third-party
+a22871 3
+||kleveromal.link^$third-party
 ||konvtriko.org^$third-party
-a22873 1
+||koverdynya.link^$third-party
+a22873 2
+||kudlavasta.link^$third-party
 ||kudroshapka.link^$third-party
-a22874 1
+a22874 4
+||leproletsu.link^$third-party
+||lovinarkomana.org^$third-party
 ||megadela.org^$third-party
+||mimokrikodil.link^$third-party
 a22878 1
 ||pedofobnatural.org^$third-party
 a22887 2
@@ -48,18 +71,31 @@ a22889 1
 ||sinebryuga.link^$third-party
 a22891 1
 ||smertotmikrotikov.org^$third-party
+a22893 2
+||svarogonil.link^$third-party
+||taramashka.link^$third-party
 a22900 1
 ||velogonshik.org^$third-party
-a22903 1
+a22903 2
 ||volanbora.org^$third-party
-a28531 3
+||vorogushka.link^$third-party
+a22908 1
+||zamorokeharu.link^$third-party
+a22910 1
+||zveroboyna.link^$third-party
+a26104 1
+||yandex.*/adfox/
+d27953 4
+a28531 4
 ! мобильный макет
-pikabu.ru##.header:style(top: 0 !important)
 pikabu.ru##.promo-banner
+pikabu.ru##.promo-banner-sticky .header-tab-list:style(top: 0 !important)
+pikabu.ru##.promo-banner-sticky .header:style(top: 0 !important)
 a28867 3
 ! исправление ошибок и косяков оригинальной вёрстки
 ucrazy.org##.related-grid:style(display: unset !important)
 ! ---
+d29436 1
 a29532 1
 ucrazy.org##+js(addEventListener-defuser, click, '', elements, a[href*="utm_source="])
 d29605 1
@@ -68,6 +104,9 @@ rutube.ru##+js(json-prune-fetch-response, appearance.auto_start, '', stackToMatc
 d29804 1
 a29811 1
 lk.emias.mos.ru##+js(set-cookie-reload, lk-hasConsent, True)
+d29843 2
+a29844 1
+gamemag.ru##.content-row__content:has(p:has-text(erid:)) > p a:not([href^="/"]):not([href^="https://gamemag.ru/"]):style(pointer-events: none !important; color: inherit !important)
 d30038 1
 d30247 1
 d30249 1

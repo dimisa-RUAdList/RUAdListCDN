@@ -1,8 +1,8 @@
-diff name:ruadlist lines:106 checksum:9b51c9d111
+diff name:ruadlist lines:139 checksum:a6c425c53b
 d4 2
 a5 2
-! Last modified: Mon, 26 Oct 2026 04:38:15 +0000
-! Diff-Path: ../patches/2026.10.26.278.patch#ruadlist
+! Last modified: Mon, 26 Oct 2026 10:58:37 +0000
+! Diff-Path: ../patches/2026.10.26.658.patch#ruadlist
 a406 1
 ||aj0453.top^$third-party
 a3710 1
@@ -10,6 +10,8 @@ a3710 1
 a11065 1
 ||ac.rutube.ru/api/*/banner_rules?
 d11194 1
+a11809 1
+||gamemag.ru/ads.txt
 a14342 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib###gogfilmsfuck
 a15817 1
@@ -20,17 +22,21 @@ d16264 1
 d16574 1
 a16617 1
 sdamgia.ru##.ege-adv-container
+d17307 1
 a17496 1
 eurointegration.com.ua##.mobile-only-ads
+d17612 1
 a17866 1
 appstorrent.ru##.plati-block
+a18392 1
+appstorrent.ru##.side-tile a[target="_blank"]
 a19080 1
 rutube.ru##.wdp-wrapper-module__wdp-common-wrapper > .wdp-carousel-module__carouselWrapper
-d19534 1
-a19534 1
-appstorrent.ru,basaru.net.ru,gooool365.com,gooool365.org,gooool365.sx,lexxs.us,musictor.ru,superkarate.ru,topfile.tj,uzmov.net,weblance.com.ua##[data-dlebclicks]
 a19853 1
 appstorrent.ru##a.dialog-adguard-btn:not([href^="/"]):not([href^="https://appstorrent.ru/"])
+d19912 1
+a19912 1
+1tv.ru,drive.ru,f1news.ru,film.ru,kinoafisha.info,kinonews.ru,kinorium.com,livejournal.com,myshows.me,onlinestreams.ru,pikabu.ru,pluggedin.ru,spletnik.ru,tolknews.ru,trinixy.ru,www.pesticidy.ru##a[href*="//ads.adfox.ru/"]
 d20091 1
 a20091 1
 66.ru,agronovosti.ru,kinorium.com,rutube.ru,sport-express.net,sport-express.ru##a[href*="erid="][target="_blank"]
@@ -43,25 +49,36 @@ d20678 1
 d20790 1
 a21201 1
 ixbt.com#?#div[class]:-abp-has(> [data-testid="yandex-id-button"])
+d22803 1
 a22818 1
 pikabu.ru#?#article:-abp-has(> .story__main > div[class] + div[class])
 a22850 2
 .org/$third-party,domain=gorodyshka.link|kurolesya.link|perepolokha.link|player.temptcdn.com|shortener2.link|tazaromikaz.link
-.org/vwm2zm76jr?$third-party,xmlhttprequest
+/7yi5n0iht7f?$third-party,xmlhttprequest
 a22857 1
 ||antonshipanov.org^$third-party
-a22859 1
+a22859 3
+||borisgovorunov.org^$third-party
+||burunduksha.link^$third-party
 ||bystroglaza.link^$third-party
 a22865 2
 ||genocidevreev.org^$third-party
 ||gnevizada.org^$third-party
-a22869 1
+a22866 1
+||gromoboyara.link^$third-party
+a22869 3
+||kleveromal.link^$third-party
 ||konvtriko.org^$third-party
-a22870 2
+||koverdynya.link^$third-party
+a22870 3
 ||kruglyashka.link^$third-party
+||kudlavasta.link^$third-party
 ||kudroshapka.link^$third-party
-a22871 1
+a22871 4
+||leproletsu.link^$third-party
+||lovinarkomana.org^$third-party
 ||megadela.org^$third-party
+||mimokrikodil.link^$third-party
 a22875 1
 ||pedofobnatural.org^$third-party
 a22884 2
@@ -71,18 +88,31 @@ a22886 1
 ||sinebryuga.link^$third-party
 a22888 1
 ||smertotmikrotikov.org^$third-party
+a22890 2
+||svarogonil.link^$third-party
+||taramashka.link^$third-party
 a22897 1
 ||velogonshik.org^$third-party
-a22900 1
+a22900 2
 ||volanbora.org^$third-party
-a28528 3
+||vorogushka.link^$third-party
+a22905 1
+||zamorokeharu.link^$third-party
+a22907 1
+||zveroboyna.link^$third-party
+a26101 1
+||yandex.*/adfox/
+d27950 4
+a28528 4
 ! мобильный макет
-pikabu.ru##.header:style(top: 0 !important)
 pikabu.ru##.promo-banner
+pikabu.ru##.promo-banner-sticky .header-tab-list:style(top: 0 !important)
+pikabu.ru##.promo-banner-sticky .header:style(top: 0 !important)
 a28864 3
 ! исправление ошибок и косяков оригинальной вёрстки
 ucrazy.org##.related-grid:style(display: unset !important)
 ! ---
+d29433 1
 a29529 1
 ucrazy.org##+js(addEventListener-defuser, click, '', elements, a[href*="utm_source="])
 d29602 1
@@ -93,6 +123,9 @@ vsthemes.org##+js(prevent-addEventListener, copy, preventDefault)
 d29800 1
 a29807 1
 lk.emias.mos.ru##+js(set-cookie-reload, lk-hasConsent, True)
+d29839 2
+a29840 1
+gamemag.ru##.content-row__content:has(p:has-text(erid:)) > p a:not([href^="/"]):not([href^="https://gamemag.ru/"]):style(pointer-events: none !important; color: inherit !important)
 a29878 1
 shuba.life##::selection:style(background-color: Highlight !important; color: HighlightText !important)
 d30033 1

@@ -1,44 +1,84 @@
-diff name:ruadlist lines:43 checksum:9b51c9d111
+diff name:ruadlist lines:83 checksum:a6c425c53b
 d4 2
 a5 2
-! Last modified: Mon, 26 Oct 2026 04:38:15 +0000
-! Diff-Path: ../patches/2026.10.26.278.patch#ruadlist
+! Last modified: Mon, 26 Oct 2026 10:58:37 +0000
+! Diff-Path: ../patches/2026.10.26.658.patch#ruadlist
 a406 1
 ||aj0453.top^$third-party
 a3710 1
 ||marketer.lv^$third-party
+a11809 1
+||gamemag.ru/ads.txt
 a15818 1
 ucrazy.org##.banner-slot
+d17308 1
+d17614 1
+a18395 1
+appstorrent.ru##.side-tile a[target="_blank"]
+d19538 1
+a19538 1
+basaru.net.ru,gooool365.com,gooool365.org,gooool365.sx,lexxs.us,musictor.ru,superkarate.ru,topfile.tj,uzmov.net,weblance.com.ua##[data-dlebclicks]
+d19917 1
+a19917 1
+1tv.ru,drive.ru,f1news.ru,film.ru,kinoafisha.info,kinonews.ru,kinorium.com,livejournal.com,myshows.me,onlinestreams.ru,pikabu.ru,pluggedin.ru,spletnik.ru,tolknews.ru,trinixy.ru,www.pesticidy.ru##a[href*="//ads.adfox.ru/"]
+d22808 1
 d22824 1
 a22824 1
 pikabu.ru#?#article:-abp-has(> .story__main > div[class] + div[class])
 a22856 2
 .org/$third-party,domain=gorodyshka.link|kurolesya.link|perepolokha.link|player.temptcdn.com|shortener2.link|tazaromikaz.link
-.org/vwm2zm76jr?$third-party,xmlhttprequest
+/7yi5n0iht7f?$third-party,xmlhttprequest
 a22863 1
 ||antonshipanov.org^$third-party
-a22865 1
+a22865 3
+||borisgovorunov.org^$third-party
+||burunduksha.link^$third-party
 ||bystroglaza.link^$third-party
 a22871 2
 ||genocidevreev.org^$third-party
 ||gnevizada.org^$third-party
-a22875 1
+a22872 1
+||gromoboyara.link^$third-party
+a22875 3
+||kleveromal.link^$third-party
 ||konvtriko.org^$third-party
-a22879 1
+||koverdynya.link^$third-party
+a22877 1
+||kudlavasta.link^$third-party
+a22879 4
+||leproletsu.link^$third-party
+||lovinarkomana.org^$third-party
 ||megadela.org^$third-party
+||mimokrikodil.link^$third-party
 a22894 1
 ||sablyaizgovna.org^$third-party
 a22899 1
 ||smertotmikrotikov.org^$third-party
-a22912 1
+a22901 2
+||svarogonil.link^$third-party
+||taramashka.link^$third-party
+a22912 2
 ||volanbora.org^$third-party
-a28540 3
+||vorogushka.link^$third-party
+a22917 1
+||zamorokeharu.link^$third-party
+a22919 1
+||zveroboyna.link^$third-party
+a26113 1
+||yandex.*/adfox/
+d27962 4
+a28540 4
 ! мобильный макет
-pikabu.ru##.header:style(top: 0 !important)
 pikabu.ru##.promo-banner
+pikabu.ru##.promo-banner-sticky .header-tab-list:style(top: 0 !important)
+pikabu.ru##.promo-banner-sticky .header:style(top: 0 !important)
 a28876 3
 ! исправление ошибок и косяков оригинальной вёрстки
 ucrazy.org##.related-grid:style(display: unset !important)
 ! ---
+d29445 1
 a29541 1
 ucrazy.org##+js(addEventListener-defuser, click, '', elements, a[href*="utm_source="])
+d29852 2
+a29853 1
+gamemag.ru##.content-row__content:has(p:has-text(erid:)) > p a:not([href^="/"]):not([href^="https://gamemag.ru/"]):style(pointer-events: none !important; color: inherit !important)
