@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 26 Oct 2026 10:58:37 +0000
-! Diff-Path: ../patches/2026.10.26.658.patch#ruadlist
+! Last modified: Mon, 26 Oct 2026 17:16:40 +0000
+! Diff-Path: ../patches/2026.10.26.1036.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -20754,6 +20754,7 @@ bessarabiainform.com##aside div[class^="a-single"]
 adme.media##aside div[style^="min-height:"]
 magtimes.info##aside img[src^="http://magtimes.info/wp-content/uploads/"]
 poligon.by##aside#sidebar > a[href]
+shuba.life##aside.product-block
 livesport.ru##aside.right > a[target="_blank"]
 autotheme.info##aside.sidebar > .custom-html-widget
 autotheme.info##aside.sidebar > h2:first-child
@@ -24059,6 +24060,7 @@ cyber.sports.ru##.polling
 cyber.sports.ru##.post-content a[href*="://sirena.world/"]
 sports.ru##.post-layout__branding
 sports.ru##.post-layout__frame
+sports.ru##.post-layout__recs
 sports.ru##.post-page__branding
 sports.ru##.promo-link
 sports.ru##.promo-timer__broadcast-label
@@ -29705,6 +29707,7 @@ vsthemes.org##+js(prevent-addEventListener, copy, preventDefault)
 rutube.ru##+js(prevent-addEventListener, ended, _endedNotifier)
 liveinternet.ru##+js(prevent-addEventListener, load, AdvManager)
 dumatv.ru##+js(prevent-addEventListener, message, AUTOPLAY)
+shuba.life##+js(prevent-addEventListener, message, element.contentWindow)
 www.rambler.ru##+js(prevent-addEventListener, scroll, requestAnimationFrame)
 dzen.ru,sportsdzen.ru##+js(prevent-fetch, /stats/bulk|stats/pixels|zen_audit/)
 progorod62.ru,ura.news##+js(prevent-fetch, _rsc=)
@@ -29880,6 +29883,7 @@ dtf.ru,vc.ru##.author__avatar video:remove-attr(autoplay)
 footboom.com,footboom.kz##.b-article-content > h2:has-text(букмекер)
 gazeta.press,gazeta.ru##.b_flowup:remove()
 lostfilm.download,lostfilm.life,lostfilm.one,lostfilm.pro,lostfilm.today,lostfilm.tv,lostfilm.tw,lostfilm.uno,lostfilm.win,lostfilmtv.site,lostfilmtv.uno,lostfilmtv1.site,lostfilmtv2.site,lostfilmtv3.site,lostfilmtv4.site,lostfilmtv5.site##.body > .body:style(user-select: text !important; -moz-user-select: text !important; -webkit-user-select: text !important)
+shuba.life##.c-shorts-slider__mask
 gamemag.ru##.content-row__content:has(p:has-text(erid:)) > p a:not([href^="/"]):not([href^="https://gamemag.ru/"]):style(pointer-events: none !important; color: inherit !important)
 fishki.net##.content__filter-tip > .quick-settings__toggle:has(> .autoplay)
 playground.ru##.dfp-container:remove()

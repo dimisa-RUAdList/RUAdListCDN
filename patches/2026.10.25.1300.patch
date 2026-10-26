@@ -1,8 +1,8 @@
-diff name:ruadlist lines:56 checksum:a6c425c53b
+diff name:ruadlist lines:63 checksum:fb8437b739
 d4 2
 a5 2
-! Last modified: Mon, 26 Oct 2026 10:58:37 +0000
-! Diff-Path: ../patches/2026.10.26.658.patch#ruadlist
+! Last modified: Mon, 26 Oct 2026 17:16:40 +0000
+! Diff-Path: ../patches/2026.10.26.1036.patch#ruadlist
 a11811 1
 ||gamemag.ru/ads.txt
 d17311 1
@@ -15,6 +15,8 @@ basaru.net.ru,gooool365.com,gooool365.org,gooool365.sx,lexxs.us,musictor.ru,supe
 d19920 1
 a19920 1
 1tv.ru,drive.ru,f1news.ru,film.ru,kinoafisha.info,kinonews.ru,kinorium.com,livejournal.com,myshows.me,onlinestreams.ru,pikabu.ru,pluggedin.ru,spletnik.ru,tolknews.ru,trinixy.ru,www.pesticidy.ru##a[href*="//ads.adfox.ru/"]
+a20756 1
+shuba.life##aside.product-block
 d22811 1
 d22861 1
 a22861 1
@@ -44,6 +46,8 @@ a22931 1
 ||zamorokeharu.link^$third-party
 a22933 1
 ||zveroboyna.link^$third-party
+a24048 1
+sports.ru##.post-layout__recs
 a26127 1
 ||yandex.*/adfox/
 d27976 4
@@ -52,6 +56,9 @@ a28557 2
 pikabu.ru##.promo-banner-sticky .header-tab-list:style(top: 0 !important)
 pikabu.ru##.promo-banner-sticky .header:style(top: 0 !important)
 d29465 1
+a29697 1
+shuba.life##+js(prevent-addEventListener, message, element.contentWindow)
 d29873 2
-a29874 1
+a29874 2
+shuba.life##.c-shorts-slider__mask
 gamemag.ru##.content-row__content:has(p:has-text(erid:)) > p a:not([href^="/"]):not([href^="https://gamemag.ru/"]):style(pointer-events: none !important; color: inherit !important)

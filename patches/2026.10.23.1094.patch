@@ -1,8 +1,8 @@
-diff name:ruadlist lines:100 checksum:a6c425c53b
+diff name:ruadlist lines:107 checksum:fb8437b739
 d4 2
 a5 2
-! Last modified: Mon, 26 Oct 2026 10:58:37 +0000
-! Diff-Path: ../patches/2026.10.26.658.patch#ruadlist
+! Last modified: Mon, 26 Oct 2026 17:16:40 +0000
+! Diff-Path: ../patches/2026.10.26.1036.patch#ruadlist
 a406 1
 ||aj0453.top^$third-party
 a3710 1
@@ -28,6 +28,8 @@ a20344 1
 actualcomment.ru,asn24.ru,automobili.ru,gorod48.ru,kubnews.ru,lgz.ru,mediaryazan.ru,mk.tula.ru,mos.news,newsroom24.ru,ohranatruda.ru,onlinetambov.ru,podrobno.uz,rabochy-put.ru,securitylab.ru,sochi.com,vegetarian.ru,velikiynovgorod.ru##a[href^="/bitrix/rk.php"][href*="banner"]
 a20540 1
 2x2tv.ru##a[href^="https://2x2tv.ru/~"]
+a20751 1
+shuba.life##aside.product-block
 d20793 1
 d22807 1
 d22823 1
@@ -75,6 +77,8 @@ a22914 1
 ||zamorokeharu.link^$third-party
 a22916 1
 ||zveroboyna.link^$third-party
+a24031 1
+sports.ru##.post-layout__recs
 a26110 1
 ||yandex.*/adfox/
 d27959 4
@@ -90,11 +94,14 @@ ucrazy.org##.related-grid:style(display: unset !important)
 d29442 1
 a29538 1
 ucrazy.org##+js(addEventListener-defuser, click, '', elements, a[href*="utm_source="])
+a29673 1
+shuba.life##+js(prevent-addEventListener, message, element.contentWindow)
 d29810 1
 a29817 1
 lk.emias.mos.ru##+js(set-cookie-reload, lk-hasConsent, True)
 d29849 2
-a29850 1
+a29850 2
+shuba.life##.c-shorts-slider__mask
 gamemag.ru##.content-row__content:has(p:has-text(erid:)) > p a:not([href^="/"]):not([href^="https://gamemag.ru/"]):style(pointer-events: none !important; color: inherit !important)
 d30281 1
 a30281 1
