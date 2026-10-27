@@ -1,8 +1,8 @@
-diff name:ruadlist lines:119 checksum:2e59cba0d2
+diff name:ruadlist lines:122 checksum:015b28fb1e
 d4 2
 a5 2
-! Last modified: Tue, 27 Oct 2026 07:41:46 +0000
-! Diff-Path: ../patches/2026.10.27.461.patch#ruadlist
+! Last modified: Tue, 27 Oct 2026 14:21:19 +0000
+! Diff-Path: ../patches/2026.10.27.861.patch#ruadlist
 a406 1
 ||aj0453.top^$third-party
 a3710 1
@@ -101,8 +101,6 @@ d29437 1
 a29533 1
 ucrazy.org##+js(addEventListener-defuser, click, '', elements, a[href*="utm_source="])
 d29606 1
-a29606 1
-rutube.ru##+js(json-prune-fetch-response, appearance.auto_start, '', stackToMatch, !/video/)
 a29668 1
 shuba.life##+js(prevent-addEventListener, message, element.contentWindow)
 d29805 1
@@ -113,6 +111,11 @@ a29845 2
 shuba.life##.c-shorts-slider__mask
 gamemag.ru##.content-row__content:has(p:has-text(erid:)) > p a:not([href^="/"]):not([href^="https://gamemag.ru/"]):style(pointer-events: none !important; color: inherit !important)
 d30039 1
+a30174 4
+! Rutube автоплей, только десктопы
+!#if !env_mobile
+rutube.ru##+js(json-prune-fetch-response, appearance.auto_start, '', stackToMatch, !/video/)
+!#endif
 d30248 1
 d30250 1
 d30279 1

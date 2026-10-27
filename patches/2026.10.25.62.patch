@@ -1,8 +1,8 @@
-diff name:ruadlist lines:76 checksum:2e59cba0d2
+diff name:ruadlist lines:79 checksum:015b28fb1e
 d4 2
 a5 2
-! Last modified: Tue, 27 Oct 2026 07:41:46 +0000
-! Diff-Path: ../patches/2026.10.27.461.patch#ruadlist
+! Last modified: Tue, 27 Oct 2026 14:21:19 +0000
+! Diff-Path: ../patches/2026.10.27.861.patch#ruadlist
 a406 1
 ||aj0453.top^$third-party
 a3710 1
@@ -67,11 +67,14 @@ pikabu.ru##.promo-banner-sticky .header-tab-list:style(top: 0 !important)
 pikabu.ru##.promo-banner-sticky .header:style(top: 0 !important)
 d29457 1
 d29627 1
-a29627 1
-rutube.ru##+js(json-prune-fetch-response, appearance.auto_start, '', stackToMatch, !/video/)
 a29689 1
 shuba.life##+js(prevent-addEventListener, message, element.contentWindow)
 d29865 2
 a29866 2
 shuba.life##.c-shorts-slider__mask
 gamemag.ru##.content-row__content:has(p:has-text(erid:)) > p a:not([href^="/"]):not([href^="https://gamemag.ru/"]):style(pointer-events: none !important; color: inherit !important)
+a30194 4
+! Rutube автоплей, только десктопы
+!#if !env_mobile
+rutube.ru##+js(json-prune-fetch-response, appearance.auto_start, '', stackToMatch, !/video/)
+!#endif

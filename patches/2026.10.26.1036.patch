@@ -1,8 +1,11 @@
-diff name:ruadlist lines:7 checksum:2e59cba0d2
+diff name:ruadlist lines:10 checksum:015b28fb1e
 d4 2
 a5 2
-! Last modified: Tue, 27 Oct 2026 07:41:46 +0000
-! Diff-Path: ../patches/2026.10.27.461.patch#ruadlist
+! Last modified: Tue, 27 Oct 2026 14:21:19 +0000
+! Diff-Path: ../patches/2026.10.27.861.patch#ruadlist
 d29647 1
-a29647 1
+a30215 4
+! Rutube автоплей, только десктопы
+!#if !env_mobile
 rutube.ru##+js(json-prune-fetch-response, appearance.auto_start, '', stackToMatch, !/video/)
+!#endif
