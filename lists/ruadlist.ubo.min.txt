@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 28 Oct 2026 12:40:57 +0000
-! Diff-Path: ../patches/2026.10.28.760.patch#ruadlist
+! Last modified: Wed, 28 Oct 2026 18:46:57 +0000
+! Diff-Path: ../patches/2026.10.28.1126.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10320,6 +10320,7 @@ blogspot.ru##.widget-content > #overlay
 inforeactor.ru##.yandex-widget
 2gis.ru,2gis.*##._1nhfz2
 2gis.ru,2gis.*##._1nnq5pzj
+24tv.ua##[app-age-gate-card]
 tass.ru##[class*="Layout_bottom_fixed_"]
 videobel.by##[class*="player-skin-holder-uicomponent__Holder-sc-"]::before
 tass.ru##[data-no-mourning="true"][class^="DesktopLayout_above"]
@@ -15820,7 +15821,7 @@ aum.news,kinoprofi.vip##.banner-sidebar
 gotennis.ru##.banner-simple
 habr.com##.banner-slider
 koroldanylo.com.ua##.banner-slider-container
-ucrazy.org##.banner-slot
+24tv.ua,ucrazy.org##.banner-slot
 rayon.in.ua##.banner-slot-container
 ogo.ua##.banner-strip
 trud.com##.banner-systems-container
@@ -18148,6 +18149,7 @@ business-class.su,time.kz##.rennab
 terabit.biz##.reset > li > a[target="_blank"]
 otzovik.com##.review-body > div
 tmbw.ru#?#.reviewwidget:-abp-has(.adwidget)
+24tv.ua##.revive-block
 medvesti.com##.rew-block
 matchtv.ru##.rexona_player_play
 tass.ru##.rfm-marquee-container
@@ -19340,6 +19342,10 @@ ilenta.com##[alt="Ads"]
 taxifm.ru##[alt="LoveProd"]
 chipmaker.ru,goldsrc.ru##[alt="advertisement_alt"]
 gzt-sv.ru##[alt^="Реклама"]
+24tv.ua##[app-ad]
+24tv.ua##[app-article-fuel]
+24tv.ua##[app-article-ita]
+24tv.ua##[app-article-partner-ad]
 root-nation.com##[aria-label="Root-Nation Ad-Free"]
 gordonua.com##[aria-label="advertisement"]
 uznayvse.ru##[aria-label="areaAdvertise"]
@@ -19774,6 +19780,7 @@ browserss.ru##[onclick^="window."][onclick*="://"]
 allboxing.ru##[onmouseenter="onClickPbButton()"]
 penzainform.ru##[pnz-ads]:not(eto-dlya-mob-ver)
 apteki.su##[poster^="http://static.apteki.su/img/banners/"]
+vk.com,vk.ru#?#[role="feed"] > article:-abp-has(> [data-post-id] [data-promo-post-hash])
 vk.com,vk.ru#?#[role="feed"] > article:-abp-has(> [data-post-id] [href*="utm_source=vk_ads"])
 vk.com,vk.ru#?#[role="feed"] > article:-abp-has(> [data-post-id] a[rel]:-abp-contains(onelink.me/))
 vk.com,vk.ru#?#[role="feed"] > article:-abp-has(> [data-post-id] a[rel][href*="utm_campaign"])
@@ -23018,6 +23025,7 @@ hdrezka.*,rezka.*##body.has-brand .b-content__main > div[style^="height: 250px; 
 /stargate/?mode=vast&location=
 ru###ads-top.ads
 ||hlamer.ru/stargate?id=$popup
+||ru/content/stargate/*.gif$image,~third-party
 ||ru/content/stargate/*.jpg$image,~third-party
 ! ---
 ! 2ip.io
@@ -28336,7 +28344,7 @@ kp.kg,kp.kz,kp.ru,md.kp.media##body > #app [data-branding-wrapper]:style(padding
 kp.kg,kp.kz,kp.ru,md.kp.media##body > #app div[style="display:block !important"] > div:first-child > div:first-child + div > div:first-child + div > div[data-name]:first-child + div:style(margin-top: auto !important)
 ! ---
 ! krasview.ru - зеркала
-hlamer.ru,ru##body[style*="://image.krasview.ru/channel"]:style(background-color: #596c84 !important)
+hlamer.ru,qanime.ru,sersoap.ru,smartkino.ru,zseek.ru##body:style(background-color: #596c84 !important; background-image: none !important)
 ! ---
 kredos.com.ua,smartphone.ua###header:style(height: auto !important)
 ! ---
@@ -29035,10 +29043,10 @@ disk.yandex.by,disk.yandex.com,disk.yandex.kz,disk.yandex.ru,disk.yandex.uz##div
 ! ---
 ! дзен
 ! главная
-dzen.ru##.secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child > [class]:only-child [id]:style(border: inherit !important)
-dzen.ru##.secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child > [class]:only-child:style(background-color: inherit !important; border: inherit !important)
+dzen.ru##.secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child > [class]:only-child
 dzen.ru##.secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child:style(background-color: inherit !important)
-dzen.ru##.secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty + div:last-child div:style(background-color: inherit !important)
+dzen.ru##.secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty + div[class]:not(last-child):empty + div[class]:last-child:empty:style(background-color: inherit !important)
+dzen.ru##.secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty + div[class]:not(last-child):empty:style(background-color: inherit !important)
 dzen.ru##.secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty:style(background-color: inherit !important)
 dzen.ru##[class*="CardRtb"]
 dzen.ru##[class*="card-rtb"]
@@ -29059,16 +29067,12 @@ dzen.ru##div[class*="_bannerWrapper-"]
 dzen.ru##div[class*="dzen-"][class*="-banner-"]
 dzen.ru##div[class*="dzen-desktop--"][class*="__ad-"]
 dzen.ru##div[class*="dzen-desktop--top-sidebar-desktop-ad__root"]
-dzen.ru##div[class*="dzen-wrapper-with-top-content-desktop__topContent-"]:style(grid-template-columns: inherit !important)
 dzen.ru##div[class^="dzen-desktop--content-app__content-"] > div > div:first-child > div:first-child + div:style(opacity: 0 !important; pointer-events: none !important)
 dzen.ru##div[class^="dzen-desktop--modal__rootElement-"][style^="z-index: 1000"]
 dzen.ru##div[id*="splashscreen"]
 dzen.ru##div[style*="12.36263736"]
 dzen.ru##div[style*="important"] div[class*="__main"]
 dzen.ru##div[style^="--top-padding:"] div[style^="--imageHeight:"]
-! исправление ошибок и косяков оригинальной вёрстки
-dzen.ru###SECOND_CHUNK_APP_CONTAINER_MicroRoot div[class^="dzen-layout--desktop-page-layout__left"]:style(height: calc(91vh - var(--desktopPageLayoutHeaderHeight)) !important)
-dzen.ru###SECOND_CHUNK_APP_CONTAINER_MicroRoot div[class^="dzen-layout--desktop-page-layout__root"]:style(min-height: 0 !important; --desktopPageLayoutCenterPadding: inherit !important)
 ! видео
 dzen.ru##div[class*="watch-page-content"] [aria-label] > div[id]
 ! статьи
@@ -29476,6 +29480,7 @@ comedy-radio.ru,radioromantika.ru,relax-fm.ru,veseloeradio.ru##+js(abort-on-prop
 forum.overclockers.ua##+js(abort-on-property-read, a_urls)
 kufar.by,sm.news##+js(abort-on-property-read, aab)
 bstudy.net,ozlib.com,studbooks.net,studme.org,studref.com,studwood.net,vuzlit.com,xstud.org##+js(abort-on-property-read, abl)
+hlamer.ru,qanime.ru,sersoap.ru,smartkino.ru,zseek.ru##+js(abort-on-property-read, adOnClick)
 upload.ee##+js(abort-on-property-read, adcashMacros)
 versia.ru##+js(abort-on-property-read, addLink)
 bb.lv##+js(abort-on-property-read, adjustBackground)
@@ -29522,7 +29527,7 @@ city.ogo.ua##+js(abort-on-property-read, myatu_bgm)
 kolizhanka.com.ua##+js(abort-on-property-read, nocontext)
 stoigr.org##+js(abort-on-property-read, noselect)
 it-actual.ru##+js(abort-on-property-read, onload)
-freehat.cc,hlamer.ru,lostpix.com,potokcdn.com,prostoporno.help,saltday.ru,uploadimagex.com,wowskill.ru,xittv.net##+js(abort-on-property-read, open)
+freehat.cc,lostpix.com,potokcdn.com,prostoporno.help,saltday.ru,uploadimagex.com,wowskill.ru,xittv.net##+js(abort-on-property-read, open)
 film.ru##+js(abort-on-property-read, posterPlayer)
 sm.news##+js(abort-on-property-read, preventSelection)
 zab.ru##+js(abort-on-property-read, scrollw)
