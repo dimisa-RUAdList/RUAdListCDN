@@ -1,8 +1,8 @@
-diff name:ruadlist lines:123 checksum:2a22d7dbdd
+diff name:ruadlist lines:138 checksum:64e7ccbfc7
 d4 2
 a5 2
-! Last modified: Thu, 29 Oct 2026 09:48:33 +0000
-! Diff-Path: ../patches/2026.10.29.588.patch#ruadlist
+! Last modified: Thu, 29 Oct 2026 16:51:36 +0000
+! Diff-Path: ../patches/2026.10.29.1011.patch#ruadlist
 a10322 1
 24tv.ua##[app-age-gate-card]
 d10784 1
@@ -93,6 +93,8 @@ a22739 1
 ||pikabu.ru/ajax/*?mRm3c=$xmlhttprequest
 a23014 1
 ||ru/content/stargate/*.gif$image,~third-party
+a23242 1
+dzen.ru,sportsdzen.ru##[id*="_R-U-"]
 d24253 1
 a24253 1
 ya.ru##html[class*="secctsslan_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
@@ -114,11 +116,24 @@ dzen.ru##.secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] d
 dzen.ru##.secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty + div[class]:not(last-child):empty:style(background-color: inherit !important)
 d29056 1
 d29063 3
+d29096 1
+a29097 1
+dzen.ru,sportsdzen.ru##[aria-label][id] > div[class^="news-"] > div[class*="_content "] > div[id] + div[class*=" "] > div:only-child
+d29106 1
+a29106 1
+dzen.ru,sportsdzen.ru##div[class^="news-"] [style^="margin-top: 0px; height: calc("][style*=" - "]
+d29446 1
+d29452 1
+a29452 1
+dzen.ru,reshuent.ru,sdamgia.ru,sportsdzen.ru##+js(abort-on-property-read, Object.prototype.isAdfox)
 a29472 1
 hlamer.ru,qanime.ru,sersoap.ru,smartkino.ru,zseek.ru##+js(abort-on-property-read, adOnClick)
 d29519 1
 a29519 1
 freehat.cc,lostpix.com,potokcdn.com,prostoporno.help,saltday.ru,uploadimagex.com,wowskill.ru,xittv.net##+js(abort-on-property-read, open)
+a29633 1
+rutube.ru##+js(json-edit-fetch-response, [?!.referer=="https://rutube.ru"].appearance.auto_start, propsToMatch, /api/play)
 d29792 1
 a29792 1
 dni.expert,dni.ru,kp.kg,kp.kz,kp.ru,ladys.media,lifehacker.ru,md.kp.media,mk.ru,ohotniki.ru,podolyaka.ru,portalvirtualreality.ru,radiokp.ru,russiatoday.ru,sportkp.ru,stopgame.ru,the-day.ru,woman.ru,womanhit.ru##+js(set-constant, Object.prototype.changeVisible, noopFunc)
+d30215 4

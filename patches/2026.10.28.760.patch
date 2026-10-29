@@ -1,8 +1,8 @@
-diff name:ruadlist lines:38 checksum:2a22d7dbdd
+diff name:ruadlist lines:53 checksum:64e7ccbfc7
 d4 2
 a5 2
-! Last modified: Thu, 29 Oct 2026 09:48:33 +0000
-! Diff-Path: ../patches/2026.10.29.588.patch#ruadlist
+! Last modified: Thu, 29 Oct 2026 16:51:36 +0000
+! Diff-Path: ../patches/2026.10.29.1011.patch#ruadlist
 a10322 1
 24tv.ua##[app-age-gate-card]
 d15823 1
@@ -20,6 +20,8 @@ vk.com,vk.ru#?#[role="feed"] > article:-abp-has(> [data-post-id] [data-promo-pos
 vk.com,vk.ru#?#[role="feed"] > article:-abp-has(> [data-post-id] [data-testid="post-header-coowners-title"])
 a23020 1
 ||ru/content/stargate/*.gif$image,~third-party
+a23248 1
+dzen.ru,sportsdzen.ru##[id*="_R-U-"]
 d28339 1
 a28339 1
 hlamer.ru,qanime.ru,sersoap.ru,smartkino.ru,zseek.ru##body:style(background-color: #596c84 !important; background-image: none !important)
@@ -32,8 +34,21 @@ dzen.ru##.secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] d
 dzen.ru##.secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty + div[class]:not(last-child):empty:style(background-color: inherit !important)
 d29062 1
 d29069 3
+d29102 1
+a29103 1
+dzen.ru,sportsdzen.ru##[aria-label][id] > div[class^="news-"] > div[class*="_content "] > div[id] + div[class*=" "] > div:only-child
+d29112 1
+a29112 1
+dzen.ru,sportsdzen.ru##div[class^="news-"] [style^="margin-top: 0px; height: calc("][style*=" - "]
+d29452 1
+d29458 1
+a29458 1
+dzen.ru,reshuent.ru,sdamgia.ru,sportsdzen.ru##+js(abort-on-property-read, Object.prototype.isAdfox)
 a29478 1
 hlamer.ru,qanime.ru,sersoap.ru,smartkino.ru,zseek.ru##+js(abort-on-property-read, adOnClick)
 d29525 1
 a29525 1
 freehat.cc,lostpix.com,potokcdn.com,prostoporno.help,saltday.ru,uploadimagex.com,wowskill.ru,xittv.net##+js(abort-on-property-read, open)
+a29639 1
+rutube.ru##+js(json-edit-fetch-response, [?!.referer=="https://rutube.ru"].appearance.auto_start, propsToMatch, /api/play)
+d30221 4

@@ -1,8 +1,8 @@
-diff name:ruadlist lines:188 checksum:2a22d7dbdd
+diff name:ruadlist lines:197 checksum:64e7ccbfc7
 d4 2
 a5 2
-! Last modified: Thu, 29 Oct 2026 09:48:33 +0000
-! Diff-Path: ../patches/2026.10.29.588.patch#ruadlist
+! Last modified: Thu, 29 Oct 2026 16:51:36 +0000
+! Diff-Path: ../patches/2026.10.29.1011.patch#ruadlist
 a10322 1
 24tv.ua##[app-age-gate-card]
 d10784 1
@@ -136,6 +136,8 @@ a22933 1
 ||zveroboyna.link^$third-party
 a23000 1
 ||ru/content/stargate/*.gif$image,~third-party
+a23228 1
+dzen.ru,sportsdzen.ru##[id*="_R-U-"]
 a24048 1
 sports.ru##.post-layout__recs
 d24238 1
@@ -166,12 +168,24 @@ dzen.ru##.secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] d
 dzen.ru##.secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty + div[class]:not(last-child):empty:style(background-color: inherit !important)
 d29043 1
 d29050 3
+d29083 1
+a29084 1
+dzen.ru,sportsdzen.ru##[aria-label][id] > div[class^="news-"] > div[class*="_content "] > div[id] + div[class*=" "] > div:only-child
+d29093 1
+a29093 1
+dzen.ru,sportsdzen.ru##div[class^="news-"] [style^="margin-top: 0px; height: calc("][style*=" - "]
+d29433 1
+d29439 1
+a29439 1
+dzen.ru,reshuent.ru,sdamgia.ru,sportsdzen.ru##+js(abort-on-property-read, Object.prototype.isAdfox)
 a29459 1
 hlamer.ru,qanime.ru,sersoap.ru,smartkino.ru,zseek.ru##+js(abort-on-property-read, adOnClick)
 d29465 1
 d29507 1
 a29507 1
 freehat.cc,lostpix.com,potokcdn.com,prostoporno.help,saltday.ru,uploadimagex.com,wowskill.ru,xittv.net##+js(abort-on-property-read, open)
+a29621 1
+rutube.ru##+js(json-edit-fetch-response, [?!.referer=="https://rutube.ru"].appearance.auto_start, propsToMatch, /api/play)
 d29635 1
 a29697 1
 shuba.life##+js(prevent-addEventListener, message, element.contentWindow)
@@ -182,8 +196,3 @@ d29873 2
 a29874 2
 shuba.life##.c-shorts-slider__mask
 gamemag.ru##.content-row__content:has(p:has-text(erid:)) > p a:not([href^="/"]):not([href^="https://gamemag.ru/"]):style(pointer-events: none !important; color: inherit !important)
-a30202 4
-! Rutube автоплей, только десктопы
-!#if !env_mobile
-rutube.ru##+js(json-prune-fetch-response, appearance.auto_start, '', stackToMatch, !/video/)
-!#endif

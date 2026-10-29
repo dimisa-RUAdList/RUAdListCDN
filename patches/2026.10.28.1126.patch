@@ -1,7 +1,22 @@
-diff name:ruadlist lines:6 checksum:2a22d7dbdd
+diff name:ruadlist lines:21 checksum:64e7ccbfc7
 d4 2
 a5 2
-! Last modified: Thu, 29 Oct 2026 09:48:33 +0000
-! Diff-Path: ../patches/2026.10.29.588.patch#ruadlist
+! Last modified: Thu, 29 Oct 2026 16:51:36 +0000
+! Diff-Path: ../patches/2026.10.29.1011.patch#ruadlist
 a19783 1
 vk.com,vk.ru#?#[role="feed"] > article:-abp-has(> [data-post-id] [data-testid="post-header-coowners-title"])
+a23256 1
+dzen.ru,sportsdzen.ru##[id*="_R-U-"]
+d29106 1
+a29107 1
+dzen.ru,sportsdzen.ru##[aria-label][id] > div[class^="news-"] > div[class*="_content "] > div[id] + div[class*=" "] > div:only-child
+d29116 1
+a29116 1
+dzen.ru,sportsdzen.ru##div[class^="news-"] [style^="margin-top: 0px; height: calc("][style*=" - "]
+d29456 1
+d29462 1
+a29462 1
+dzen.ru,reshuent.ru,sdamgia.ru,sportsdzen.ru##+js(abort-on-property-read, Object.prototype.isAdfox)
+a29644 1
+rutube.ru##+js(json-edit-fetch-response, [?!.referer=="https://rutube.ru"].appearance.auto_start, propsToMatch, /api/play)
+d30226 4
