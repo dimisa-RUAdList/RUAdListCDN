@@ -1,8 +1,8 @@
-diff name:ruadlist lines:53 checksum:7420879b20
+diff name:ruadlist lines:64 checksum:628c3557f0
 d4 2
 a5 2
-! Last modified: Fri, 30 Oct 2026 15:49:49 +0000
-! Diff-Path: ../patches/2026.10.30.949.patch#ruadlist
+! Last modified: Fri, 30 Oct 2026 20:40:57 +0000
+! Diff-Path: ../patches/2026.10.30.1240.patch#ruadlist
 a10322 1
 24tv.ua##[app-age-gate-card]
 d15823 1
@@ -40,6 +40,8 @@ dzen.ru,sportsdzen.ru##[aria-label][id] > div[class^="news-"] > div[class*="_con
 d29112 1
 a29112 1
 dzen.ru,sportsdzen.ru##div[class^="news-"] [style^="margin-top: 0px; height: calc("][style*=" - "]
+d29389 1
+d29395 1
 d29452 1
 d29458 1
 a29458 1
@@ -51,4 +53,13 @@ a29525 1
 freehat.cc,lostpix.com,potokcdn.com,prostoporno.help,saltday.ru,uploadimagex.com,wowskill.ru,xittv.net##+js(abort-on-property-read, open)
 a29639 1
 rutube.ru##+js(json-edit-fetch-response, [?!.referer=="https://rutube.ru"].appearance.auto_start, propsToMatch, /api/play)
+a30008 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div[id*="gagah"]
+a30010 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div[id^="page_"] > br
 d30221 4
+d30326 1
+a30340 3
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div[id^="page_"] > :empty
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div[id^="page_"] > [style*="margin: 0 0 "]
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div[style*="position:"][style*="11111"]
