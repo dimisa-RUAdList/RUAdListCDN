@@ -1,8 +1,8 @@
-diff name:ruadlist lines:149 checksum:0d07c6cdb7
+diff name:ruadlist lines:170 checksum:19c75d2a60
 d4 2
 a5 2
-! Last modified: Sat, 31 Oct 2026 06:54:40 +0000
-! Diff-Path: ../patches/2026.10.31.414.patch#ruadlist
+! Last modified: Sat, 31 Oct 2026 13:34:30 +0000
+! Diff-Path: ../patches/2026.10.31.814.patch#ruadlist
 a10322 1
 24tv.ua##[app-age-gate-card]
 d10784 1
@@ -19,6 +19,8 @@ d14386 1
 d14607 1
 a14607 1
 russiatoday.ru###offers
+a14966 1
+vk.com,vk.ru#?##spa_layout_content > div[style*="--vkui--z_index_popout"]:-abp-has([data-testid="feed_replaced_item_notify_modal"])
 d15018 1
 a15018 1
 russiatoday.ru###today-media-article
@@ -52,11 +54,16 @@ d16997 1
 a16997 1
 russiatoday.ru##.hide--partner--block
 d17053 1
+d17091 1
+a17091 1
+catalog.onliner.by,kommersant.ru##.inline-banner
 d17295 1
 a17295 1
 russiatoday.ru##.listing_partners-news
 a17685 1
 nikvesti.com##.nv-ad
+a18056 1
+sportarena.ua##.rating
 a18147 1
 24tv.ua##.revive-block
 d18175 1
@@ -66,11 +73,18 @@ a18266 1
 russiatoday.ru##.rt--partner-block
 a18592 1
 russiatoday.ru##.socials__link_yandex-zen
+d18621 1
 a18852 1
 niknews.mk.ua##.top-add
 d18859 1
 a18859 1
 1fnl.ru,1tulatv.ru,afanasy.biz,bookslist.me,bragazeta.ru,bratsk.org,dengi.ua,dnepr24.com.ua,football.ua,frankivchany.if.ua,fullsite.org,gazeta.zp.ua,job.ru,km.ru,konkurent.ua,kr24.com.ua,litrpg.ru,livejournal.ru,mylinks.ws,nikolaev24.com.ua,odessa.net.ua,prm.ru,rusnext.ru,russia.ru,rusvesna.su,samara24.ru,smilekaluga.ru,study.ru,ucheba.ru,ura-inform.com,v-variant.com.ua,wildo.ru##.top-banner
+a18897 1
+obozrevatel.com##.topTopicsMenu_list > a:not([href*="obozrevatel.com"]):not([href^="/"])
+d19068 2
+a19071 2
+vk.com,vk.ru#?#.vkuiInternalGroup--mode-card > [role="feed"] > article:-abp-has(> [data-post-id] [data-testid="post-header"] > div:nth-child(2) > div + div > div span[data-role])
+vk.com,vk.ru#?#.vkuiInternalGroup--mode-card > [role="feed"] > article:-abp-has(> [data-post-id] a[rel]:-abp-contains(vk.cc/))
 a19336 4
 24tv.ua##[app-ad]
 24tv.ua##[app-article-fuel]
@@ -93,6 +107,8 @@ a22739 1
 ||pikabu.ru/ajax/*?mRm3c=$xmlhttprequest
 a23014 1
 ||ru/content/stargate/*.gif$image,~third-party
+a23017 1
+2ip.io##.ad-container
 a23242 1
 dzen.ru,sportsdzen.ru##[id*="_R-U-"]
 d24253 1
@@ -101,6 +117,11 @@ ya.ru##html[class*="secctsslan_top"] main > div[class*="__"] ~ div[class*="__"] 
 d24255 1
 a24255 1
 ya.ru##section[style*="secctsslan-items-count:"]
+a24330 1
+||yastatic.net/pcode-bundles/
+d24470 3
+a24472 1
+bloknot-astrakhan.ru,bloknot-donetsk.ru,bloknot-gelendzhik.ru,bloknot-herson.ru,bloknot-kamyshin.ru,bloknot-krasnodar.ru,bloknot-krymska.ru,bloknot-lugansk.ru,bloknot-moldova.ru,bloknot-morozovsk.ru,bloknot-novorossiysk.ru,bloknot-odessa.ru,bloknot-rostov.ru,bloknot-shakhty.ru,bloknot-stavropol.ru,bloknot-taganrog.ru,bloknot-volgodonsk.ru,bloknot-volgograd.ru,bloknot-volzhsky.ru,bloknot-voronezh.ru,bloknot-zaporozhie.ru,bloknot.ru,bloknotanapa.ru,bloknotanna.ru,bloknotborisoglebsk.ru,bloknotsaratov.ru,bloknottambov.ru,sochi-bloknot.ru##div[class*="banner"]
 d28333 1
 a28333 1
 hlamer.ru,qanime.ru,sersoap.ru,smartkino.ru,zseek.ru##body:style(background-color: #596c84 !important; background-image: none !important)
