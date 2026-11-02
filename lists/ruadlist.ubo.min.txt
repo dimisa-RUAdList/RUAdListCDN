@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 02 Nov 2026 07:35:17 +0000
-! Diff-Path: ../patches/2026.11.2.455.patch#ruadlist
+! Last modified: Mon, 02 Nov 2026 18:11:54 +0000
+! Diff-Path: ../patches/2026.11.2.1091.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10275,6 +10275,7 @@ championat.asia##.fbOverlay
 anime777.ru##.first-popup
 berkem.ru##.fixed_link--telegram-group
 oboz.info##.gdpr_messagebar_detail
+gamemag.ru##.gm-install
 marieclaire.ru,maximonline.ru,mydecor.ru,parents.ru,psychologies.ru,starhit.ru,the-day.ru,thegirl.ru,vokrugsveta.ru,woman.ru##.in-content-recomendations
 brutaljack.ru##.in.fade.modal
 voprosov-net.ru##.isShow.popup
@@ -11263,6 +11264,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||b-port.com/mediafiles/banners/
 ||b.fotos.ua/check_place.js$script
 ||b.frida.vse42.ru/$domain=~b.frida.vse42.ru
+||b.myfin.by/x/?id=
 ||b.netall.ru^
 ||b.penzainform.ru/*.gif
 ||b13.penzainform.ru/
@@ -12506,6 +12508,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||my-cinema.net/branding/
 ||my.mosenergosbyt.ru/file/id_content:$image
 ||mydiv.net/tim/newold
+||myfin.by/ajax-communication/get-active-communication
 ||myfootball.*/betking/$~media
 ||mymedicalportal.net^$xmlhttprequest
 ||mynizhyn.com/image/banners/
@@ -22715,6 +22718,7 @@ ictv.ua,vikna.tv##div[id^="div-gpt-ad-"]
 ! запросы
 ! ловушка для обфускации дзена: главная, статьи, новости, погода
 /^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]*\/(?:[^/?0-9]*[0-9]){5}[^/?]*(?:\?.*)?$/$script
+/^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]*\/[^/?]*\.d\.bundle\./$script
 ||dzen.ru/a/$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/articles$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/news$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
@@ -22752,7 +22756,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=livejournal.com|olegmaka
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
 ||ng72.ru^$csp=script-src 'self' 'unsafe-eval' https:
-||pikabu.ru/ajax/*?mRm3c=$xmlhttprequest
+||pikabu.ru/ajax/*?rXu1p=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -24096,7 +24100,6 @@ sports.ru##.short-news > [data-content-name]
 sports.ru##.short-news > br
 sports.ru#?#.short-news > p:-abp-has(> .advert_material)
 sports.ru##.social-links__zn
-sports.ru##.super-top
 sports.ru##.teaser-before-links__adv-label
 cyber.sports.ru##.teaser-bookmaker
 sports.ru##.widget-odds
@@ -27163,6 +27166,7 @@ gbsmp.ru#@#img[width="728"][height="90"]
 @@||easymc.io/ads/px.gif?ch=$image,domain=easymc.io
 @@||fosshub.com/media/js/adblock.js|$domain=fosshub.com
 @@||fwdcdn.com^*/advertisment.js|$script
+@@||gamemag.ru/js/admanager.js$script,domain=gamemag.ru
 @@||gamesglue.com/game_core/check/ima3.js|$script,domain=gameswf.com
 @@||gaua.hit.gemius.pl/gemiuslib.js$domain=1plus1.video|unian.info|unian.net|unian.ua
 @@||gemius.pl/gplayer.js|$script,domain=1plus1.video|unian.info|unian.net|unian.ua
@@ -27690,6 +27694,7 @@ av.by##.av-branding:style(background: none !important)
 www.aviasales.by,www.aviasales.kg,www.aviasales.md,www.aviasales.ru,www.aviasales.ua,www.aviasales.uz##[data-test-id="avia_form"] > div[class*="footer"] label:style(zoom: 2 !important; color: #f57c00 !important; font-weight: bold !important)
 ! ---
 avito.ru##.avito-ads-container:style(margin: 0 !important; min-height: 0 !important; padding-top: 0 !important)
+avito.ru##[data-element^="beduin-"][data-element$="/public-profile"] [style*="beduin-child-height:"]:style(height: auto !important)
 ! ---
 abw.by##.app-branding:style(transform: none !important)
 abw.by##.application:style(top: 0 !important)
@@ -29561,6 +29566,7 @@ fssp.gov.ru,southpark.su,turkcinema.org##+js(abort-on-property-write, document.o
 fssp.gov.ru,southpark.su,turkcinema.org##+js(abort-on-property-write, document.ondragstart)
 fssp.gov.ru,southpark.su,turkcinema.org##+js(abort-on-property-write, document.onselectstart)
 phys-kids.com##+js(abort-on-property-write, fetch)
+gamemag.ru##+js(abort-on-property-write, keepAdblock)
 fishki.net##+js(abort-on-stack-trace, HTMLVideoElement.prototype.play, playVideo)
 tvzvezda.ru##+js(abort-on-stack-trace, Object.prototype.autoplay, assets)
 ya.ru##+js(abort-on-stack-trace, Object.prototype.feed, yandex-portal.naydex.net)
