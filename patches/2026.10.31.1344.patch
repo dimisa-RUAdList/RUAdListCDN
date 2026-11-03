@@ -1,19 +1,23 @@
-diff name:ruadlist lines:22 checksum:c2c5dcef11
+diff name:ruadlist lines:28 checksum:4ab8e4b772
 d4 2
 a5 2
-! Last modified: Mon, 02 Nov 2026 18:11:54 +0000
-! Diff-Path: ../patches/2026.11.2.1091.patch#ruadlist
+! Last modified: Tue, 03 Nov 2026 01:30:40 +0000
+! Diff-Path: ../patches/2026.11.3.90.patch#ruadlist
 a10277 1
 gamemag.ru##.gm-install
 a11265 1
 ||b.myfin.by/x/?id=
 a12508 1
 ||myfin.by/ajax-communication/get-active-communication
+a13765 1
+||wink.ru/omnichat/*/trailer$domain=lk.rt.ru
 a22717 1
 /^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]*\/[^/?]*\.d\.bundle\./$script
 d22755 1
 a22755 1
 ||pikabu.ru/ajax/*?rXu1p=$xmlhttprequest
+a22785 1
+lk.rt.ru##[class^="omch-wink-player"] {remove:true;}
 d24099 1
 a27165 1
 @@||gamemag.ru/js/admanager.js$script,domain=gamemag.ru
@@ -21,3 +25,5 @@ a27692 1
 avito.ru##[data-element^="beduin-"][data-element$="/public-profile"] [style*="beduin-child-height:"]:style(height: auto !important)
 a29563 1
 gamemag.ru##+js(abort-on-property-write, keepAdblock)
+a29968 1
+lk.rt.ru##[class^="omch-wink-player"]:remove()

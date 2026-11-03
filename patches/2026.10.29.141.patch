@@ -1,14 +1,16 @@
-diff name:ruadlist lines:69 checksum:c2c5dcef11
+diff name:ruadlist lines:75 checksum:4ab8e4b772
 d4 2
 a5 2
-! Last modified: Mon, 02 Nov 2026 18:11:54 +0000
-! Diff-Path: ../patches/2026.11.2.1091.patch#ruadlist
+! Last modified: Tue, 03 Nov 2026 01:30:40 +0000
+! Diff-Path: ../patches/2026.11.3.90.patch#ruadlist
 a10277 1
 gamemag.ru##.gm-install
 a11265 1
 ||b.myfin.by/x/?id=
 a12508 1
 ||myfin.by/ajax-communication/get-active-communication
+a13765 1
+||wink.ru/omnichat/*/trailer$domain=lk.rt.ru
 a14967 1
 vk.com,vk.ru#?##spa_layout_content > div[style*="--vkui--z_index_popout"]:-abp-has([data-testid="feed_replaced_item_notify_modal"])
 d17094 1
@@ -28,6 +30,8 @@ a22715 1
 d22753 1
 a22753 1
 ||pikabu.ru/ajax/*?rXu1p=$xmlhttprequest
+a22783 1
+lk.rt.ru##[class^="omch-wink-player"] {remove:true;}
 a23032 1
 2ip.io##.ad-container
 a23257 1
@@ -58,6 +62,8 @@ a29563 1
 gamemag.ru##+js(abort-on-property-write, keepAdblock)
 a29645 1
 rutube.ru##+js(json-edit-fetch-response, [?!.referer=="https://rutube.ru"].appearance.auto_start, propsToMatch, /api/play)
+a29967 1
+lk.rt.ru##[class^="omch-wink-player"]:remove()
 a30014 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##div[id*="gagah"]
 a30016 1

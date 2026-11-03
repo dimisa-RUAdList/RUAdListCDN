@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 02 Nov 2026 18:11:54 +0000
-! Diff-Path: ../patches/2026.11.2.1091.patch#ruadlist
+! Last modified: Tue, 03 Nov 2026 01:30:40 +0000
+! Diff-Path: ../patches/2026.11.3.90.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -13766,6 +13766,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||windows64.net/123456.jpg
 ||windowspro.ru/universa*.js
 ||windowspro.ru^*.php|$script,domain=windowspro.ru
+||wink.ru/omnichat/*/trailer$domain=lk.rt.ru
 ||winksplay.ru/fmnr.js
 ||wiselawyer.ru^*.php$script,domain=wiselawyer.ru
 ||wkino4.net/templates/wkino4/images/body.
@@ -22787,6 +22788,7 @@ lenta.news,lenta.ru##.topic-body__content> .box-external-video:last-child {remov
 lenta.news,lenta.ru##.topic-footer > div[class^="box-"][class$="-video"] {remove:true;}
 lenta.news,lenta.ru##.vk-video-popup {remove:true;}
 liveball.sx,liveball.*##body > style[id] {remove:true;}
+lk.rt.ru##[class^="omch-wink-player"] {remove:true;}
 pikabu.ru##head > style:has-text(min-height:301px;) {remove:true;}
 playground.ru###dfpPrerollDelay {remove:true;}
 stratege.ru##html[xmlns] > body > script + script + style {remove:true;}
@@ -29972,6 +29974,7 @@ dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__it
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href*="://yandex."][href*="/clck/"]):remove()
 dzen.ru,ya.ru,yandex.by,yandex.kz,yandex.ru,yandex.uz##[class*="mini-suggest__item"]:has(> a[href][target="_blank"]):remove()
 championat.com,championat.ru,lenta.news,lenta.ru##[class*="scroll-to-site"]:remove()
+lk.rt.ru##[class^="omch-wink-player"]:remove()
 ozon.ru##[data-lcp-name*="anner-"]:matches-path(/my/reviews/promo):style(display: block !important)
 www.sports.ru##[data-noinit]
 rutube.ru##[data-testid="embed-wrapper"] > [class^="stub-iframe-module__iframeWrapper_"]:style(opacity: unset !important)
