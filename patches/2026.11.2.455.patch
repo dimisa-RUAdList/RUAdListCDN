@@ -1,16 +1,26 @@
-diff name:ruadlist lines:28 checksum:d1e6ddf24d
+diff name:ruadlist lines:38 checksum:eac9cde9d6
 d4 2
 a5 2
-! Last modified: Tue, 03 Nov 2026 09:26:22 +0000
-! Diff-Path: ../patches/2026.11.3.566.patch#ruadlist
+! Last modified: Tue, 03 Nov 2026 17:44:21 +0000
+! Diff-Path: ../patches/2026.11.3.1064.patch#ruadlist
 a10277 1
 gamemag.ru##.gm-install
+d10945 1
+a10945 1
+/wp-content/uploads/*_1920x1080$image,domain=agronews.ua|agroreview.com|agroweek.com|growhow.in.ua|sportnews.com.ua
 a11265 1
 ||b.myfin.by/x/?id=
+a11814 1
+||gamemag.ru/assets/*/js/branding-fade.js
 a12508 1
 ||myfin.by/ajax-communication/get-active-communication
 a13765 1
 ||wink.ru/omnichat/*/trailer$domain=lk.rt.ru
+d19355 1
+a19355 1
+kanobu.ru,respawn.media,uznayvse.ru##[aria-label="Реклама"]
+a21498 1
+sportnews.com.ua##div[class^="si"][class*="e-branding-"]
 a22717 1
 /^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]*\/[^/?]*\.d\.bundle\./$script
 d22755 1
@@ -18,12 +28,12 @@ a22755 1
 ||pikabu.ru/ajax/*?rXu1p=$xmlhttprequest
 a22785 1
 lk.rt.ru##[class^="omch-wink-player"] {remove:true;}
+a22843 1
+pikabu.ru#?#article:-abp-has(> .story__main > div[class] ~ :empty ~ div[class])
 d24099 1
-a27165 1
-@@||gamemag.ru/js/admanager.js$script,domain=gamemag.ru
+a25159 1
+||ggbetuapromotion.com^$third-party
 a27692 1
 avito.ru##[data-element^="beduin-"][data-element$="/public-profile"] [style*="beduin-child-height:"]:style(height: auto !important)
-a29563 1
-gamemag.ru##+js(abort-on-property-write, keepAdblock)
 a29968 1
 lk.rt.ru##[class^="omch-wink-player"]:remove()

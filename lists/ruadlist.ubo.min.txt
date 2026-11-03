@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 03 Nov 2026 09:26:22 +0000
-! Diff-Path: ../patches/2026.11.3.566.patch#ruadlist
+! Last modified: Tue, 03 Nov 2026 17:44:21 +0000
+! Diff-Path: ../patches/2026.11.3.1064.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10943,7 +10943,7 @@ $xmlhttprequest,domain=happy-biock.info|happy-block.info|howto-news.info|mschist
 /wp-content/uploads/*/elitstroj*.$image,domain=vb.by
 /wp-content/uploads/*/kurery*.$image,domain=vb.by
 /wp-content/uploads/*/med.$image,domain=vb.by
-/wp-content/uploads/*_1920x1080$image,domain=agronews.ua|agroreview.com|agroweek.com|growhow.in.ua
+/wp-content/uploads/*_1920x1080$image,domain=agronews.ua|agroreview.com|agroweek.com|growhow.in.ua|sportnews.com.ua
 /www/base/*&cb=$domain=namba.kg|namba.tj
 /yandex.b.js$script,domain=krossava.ru
 /yandex.js$domain=camorca.ru
@@ -11814,6 +11814,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||gameinside.ua^*/branding$image
 ||gamelayer.ru/dist/public/preloader.js
 ||gamemag.ru/ads.txt
+||gamemag.ru/assets/*/js/branding-fade.js
 ||gamemag.ru/images/top-img$image
 ||gamer.ru/*branding
 ||gamer.ru/assets/skins/
@@ -19356,7 +19357,7 @@ root-nation.com##[aria-label="Root-Nation Ad-Free"]
 gordonua.com##[aria-label="advertisement"]
 uznayvse.ru##[aria-label="areaAdvertise"]
 livesport.ru##[aria-label="Партнёрское объявление"]
-kanobu.ru,uznayvse.ru##[aria-label="Реклама"]
+kanobu.ru,respawn.media,uznayvse.ru##[aria-label="Реклама"]
 pravda.if.ua##[aria-label="Рекомендований контент"]
 rutube.ru##[aria-label="информационный баннер"]
 kurs.com.ua#?#[aria-live] > tr:-abp-has(> .currencycom)
@@ -21500,6 +21501,7 @@ sd.ua##div[class^="sed"] > .half.right > .sdbrick
 sd.ua##div[class^="sed"] > a[rel="nofollow"]
 internet-technologies.ru##div[class^="shortcode-"] > [data-href]
 internet-technologies.ru##div[class^="shortcode-"] > a[href*="/go/"]
+sportnews.com.ua##div[class^="si"][class*="e-branding-"]
 rcity.by##div[class^="sidebar-"] > div[id^="media_image-"]
 kinovidos.com##div[class^="sidebar-"] > div[type="text/css"][rel="nofollow"]
 prikol.ru##div[class^="sidebar-advert-block"]
@@ -22847,6 +22849,7 @@ pikabu.ru#?#article:-abp-has(> .story__main > div:not(:-abp-has(*)))
 pikabu.ru#?#article:-abp-has(> .story__main > div:not([class]))
 pikabu.ru#?#article:-abp-has(> .story__main > div:only-child)
 pikabu.ru#?#article:-abp-has(> .story__main > div[class] + div[class])
+pikabu.ru#?#article:-abp-has(> .story__main > div[class] ~ :empty ~ div[class])
 pikabu.ru#?#article:-abp-has(> .story__main:not(:-abp-has(*)))
 kp.kg,kp.kz,kp.ru,md.kp.media#?#body > #app div:-abp-properties(background-color: rgb(225, 231, 235))
 sdamgia.ru##center > div[id][style]
@@ -25162,6 +25165,7 @@ zarulem.ws##td[style^="text-align:center;width:50%"]
 ||getcryptotab.com^*promo/ad/$third-party
 ||getta.top^$third-party
 ||gettraf.org^
+||ggbetuapromotion.com^$third-party
 ||ggsaffiliates.com^
 ||gig-games.net^$third-party
 ||gigamega.ru^
@@ -27168,7 +27172,6 @@ gbsmp.ru#@#img[width="728"][height="90"]
 @@||easymc.io/ads/px.gif?ch=$image,domain=easymc.io
 @@||fosshub.com/media/js/adblock.js|$domain=fosshub.com
 @@||fwdcdn.com^*/advertisment.js|$script
-@@||gamemag.ru/js/admanager.js$script,domain=gamemag.ru
 @@||gamesglue.com/game_core/check/ima3.js|$script,domain=gameswf.com
 @@||gaua.hit.gemius.pl/gemiuslib.js$domain=1plus1.video|unian.info|unian.net|unian.ua
 @@||gemius.pl/gplayer.js|$script,domain=1plus1.video|unian.info|unian.net|unian.ua
@@ -29568,7 +29571,6 @@ fssp.gov.ru,southpark.su,turkcinema.org##+js(abort-on-property-write, document.o
 fssp.gov.ru,southpark.su,turkcinema.org##+js(abort-on-property-write, document.ondragstart)
 fssp.gov.ru,southpark.su,turkcinema.org##+js(abort-on-property-write, document.onselectstart)
 phys-kids.com##+js(abort-on-property-write, fetch)
-gamemag.ru##+js(abort-on-property-write, keepAdblock)
 fishki.net##+js(abort-on-stack-trace, HTMLVideoElement.prototype.play, playVideo)
 tvzvezda.ru##+js(abort-on-stack-trace, Object.prototype.autoplay, assets)
 ya.ru##+js(abort-on-stack-trace, Object.prototype.feed, yandex-portal.naydex.net)

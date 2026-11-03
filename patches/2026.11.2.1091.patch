@@ -1,11 +1,27 @@
-diff name:ruadlist lines:10 checksum:d1e6ddf24d
+diff name:ruadlist lines:26 checksum:eac9cde9d6
 d4 2
 a5 2
-! Last modified: Tue, 03 Nov 2026 09:26:22 +0000
-! Diff-Path: ../patches/2026.11.3.566.patch#ruadlist
+! Last modified: Tue, 03 Nov 2026 17:44:21 +0000
+! Diff-Path: ../patches/2026.11.3.1064.patch#ruadlist
+d10946 1
+a10946 1
+/wp-content/uploads/*_1920x1080$image,domain=agronews.ua|agroreview.com|agroweek.com|growhow.in.ua|sportnews.com.ua
+a11816 1
+||gamemag.ru/assets/*/js/branding-fade.js
 a13768 1
 ||wink.ru/omnichat/*/trailer$domain=lk.rt.ru
+d19358 1
+a19358 1
+kanobu.ru,respawn.media,uznayvse.ru##[aria-label="Реклама"]
+a21501 1
+sportnews.com.ua##div[class^="si"][class*="e-branding-"]
 a22789 1
 lk.rt.ru##[class^="omch-wink-player"] {remove:true;}
+a22847 1
+pikabu.ru#?#article:-abp-has(> .story__main > div[class] ~ :empty ~ div[class])
+a25162 1
+||ggbetuapromotion.com^$third-party
+d27169 1
+d29569 1
 a29974 1
 lk.rt.ru##[class^="omch-wink-player"]:remove()
