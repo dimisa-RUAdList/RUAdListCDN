@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 04 Nov 2026 14:20:49 +0000
-! Diff-Path: ../patches/2026.11.4.860.patch#ruadlist
+! Last modified: Wed, 04 Nov 2026 21:14:45 +0000
+! Diff-Path: ../patches/2026.11.4.1274.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -19066,6 +19066,7 @@ kino-teatr.ru##.view_online_block
 lektsii.org##.viewinfo ~ center > .link1
 lektsii.org##.viewinfo ~ center > .link2
 teleport2001.ru##.views-row-banner
+oper.ru##.vip-banner
 l2argument.ru##.vipblock.container
 baby.ru##.viqeo-embed
 virus-stop.com.ua##.virus-widget
@@ -23258,6 +23259,7 @@ dzen.ru,sportsdzen.ru##.news-ad-swap-root
 dzen.ru##.news-rubricator [href="https://dzen.ru/news/rubric/chronologic"]
 dzen.ru##[aria-label="Контент страницы сюжета"] > [class*="discrete"] > div > div > div[id]
 dzen.ru#?#[aria-label="Контент страницы сюжета"] > [class*="discrete"] > div > div:-abp-has(> div[id])
+dzen.ru,sportsdzen.ru##[id*="_R-B-"]
 dzen.ru,sportsdzen.ru##[id*="_R-I-"]
 dzen.ru,sportsdzen.ru##[id*="_R-N-"]
 dzen.ru,sportsdzen.ru##[id*="_R-Q-"]
