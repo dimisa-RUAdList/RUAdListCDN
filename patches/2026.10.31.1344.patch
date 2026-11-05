@@ -1,8 +1,10 @@
-diff name:ruadlist lines:67 checksum:3e69f0811e
+diff name:ruadlist lines:75 checksum:8af9224c7a
 d4 2
 a5 2
-! Last modified: Thu, 05 Nov 2026 02:16:24 +0000
-! Diff-Path: ../patches/2026.11.5.136.patch#ruadlist
+! Last modified: Thu, 05 Nov 2026 10:43:53 +0000
+! Diff-Path: ../patches/2026.11.5.643.patch#ruadlist
+a6367 1
+||trust-id.ru^$third-party
 a10277 1
 gamemag.ru##.gm-install
 d10945 1
@@ -34,7 +36,7 @@ a22717 1
 /^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]*\/[^/?]*\.d\.bundle\./$script
 d22755 1
 a22755 1
-||pikabu.ru/ajax/*?rXu1p=$xmlhttprequest
+||pikabu.ru/ajax/*?rXu2p=$xmlhttprequest
 a22785 1
 lk.rt.ru##[class^="omch-wink-player"] {remove:true;}
 a22843 1
@@ -53,6 +55,12 @@ a23866 1
 a23872 1
 ||lenta.*/assets/webpack/images/giveaway/$domain=lenta.news|lenta.ru
 d24099 1
+d24272 1
+a24272 1
+ya.ru##html[class*="secctslan_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
+d24274 1
+a24274 1
+ya.ru##section[style*="secctslan-items-count:"]
 a25159 1
 ||ggbetuapromotion.com^$third-party
 a27692 1

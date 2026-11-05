@@ -1,8 +1,10 @@
-diff name:ruadlist lines:55 checksum:3e69f0811e
+diff name:ruadlist lines:66 checksum:8af9224c7a
 d4 2
 a5 2
-! Last modified: Thu, 05 Nov 2026 02:16:24 +0000
-! Diff-Path: ../patches/2026.11.5.136.patch#ruadlist
+! Last modified: Thu, 05 Nov 2026 10:43:53 +0000
+! Diff-Path: ../patches/2026.11.5.643.patch#ruadlist
+a6367 1
+||trust-id.ru^$third-party
 d10946 1
 a10946 1
 /wp-content/uploads/*_1920x1080$image,domain=agronews.ua|agroreview.com|agroweek.com|growhow.in.ua|sportnews.com.ua
@@ -24,6 +26,9 @@ d20165 1
 a21501 1
 sportnews.com.ua##div[class^="si"][class*="e-branding-"]
 d22356 1
+d22759 1
+a22759 1
+||pikabu.ru/ajax/*?rXu2p=$xmlhttprequest
 a22789 1
 lk.rt.ru##[class^="omch-wink-player"] {remove:true;}
 a22847 1
@@ -41,6 +46,12 @@ a23870 1
 ||championat.*/fenwick/
 a23876 1
 ||lenta.*/assets/webpack/images/giveaway/$domain=lenta.news|lenta.ru
+d24275 1
+a24275 1
+ya.ru##html[class*="secctslan_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
+d24277 1
+a24277 1
+ya.ru##section[style*="secctslan-items-count:"]
 a25162 1
 ||ggbetuapromotion.com^$third-party
 d27169 1
