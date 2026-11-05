@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 05 Nov 2026 10:43:53 +0000
-! Diff-Path: ../patches/2026.11.5.643.patch#ruadlist
+! Last modified: Thu, 05 Nov 2026 18:40:14 +0000
+! Diff-Path: ../patches/2026.11.5.1120.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -11396,7 +11396,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||buzines.net/banner/
 ||bw.myjob.by^$object
 ||bycard.by/uploads/branding/
-||byrutgame.org/templates/byrut_upd/js/ip-check.js
+||byrutgame.org/templates/byrut_upd/modules/game-window/
 ||c-inform.info/images/*banner/
 ||c.hqq.tv/js/betterjs/
 ||c5l.ru^$domain=leroymerlin-jeb.ru
@@ -16834,6 +16834,7 @@ travelask.ru##.gallery-sidead__ad
 rbkgames.com##.game-description-text a[class][href][target="_blank"]:not([href^="/"]):not([href^="https://rbkgames.com/"])
 shaiba.kz##.game-info__bottom
 gamasexual.com,gamasexual.ru##.game-preview-wrap > :not([class="game-preview"])
+byrutgame.org##.game-window__open
 myfin.by##.game__label
 myfin.by##.game__partner-logo
 myplaycity.ru##.gamepage_download_left
@@ -22880,13 +22881,13 @@ livetvstream.pro,me,online##body[bgcolor] > div[id^="iframe-container"]
 $popup,domain=rstprgapipt.com|temp2cdn.link|temptcdn.com
 .link/$third-party,domain=gorodyshka.link|kurolesya.link|perepolokha.link|player.temptcdn.com|shortener2.link|tazaromikaz.link
 .org/$third-party,domain=gorodyshka.link|kurolesya.link|perepolokha.link|player.temptcdn.com|shortener2.link|tazaromikaz.link
-/7yi5n0iht7f?$third-party,xmlhttprequest
 /ad-rotator/ad-list.json
 /ad-rotator/vast.xml
 /api-integration/*?unique=$third-party,xmlhttprequest
 /api-integration/ad-rotator/*$third-party,xmlhttprequest
 /api-integration/assets/*.txt?*=$third-party,xmlhttprequest
 /vast/ad-rotator/*
+/yi5n0iht7?$third-party,xmlhttprequest
 ?utm_source=veoveo$popup
 ||antonshipanov.org^$third-party
 ||balamutka.link^$third-party
@@ -23908,6 +23909,7 @@ rambler.ru#?#div:-abp-has(> div[style^="min-height:"]) > p ~ div:-abp-contains(�
 gazeta.press,gazeta.ru##div[class^="gazeta-dynamic-ban-"]
 gazeta.press,gazeta.ru##div[id^="block_pad_id"]
 ! RBC (РБК)
+rbc.ru###js_anons_container_rbc:empty
 cnews.ru,utro.ru##.banner
 rbc.ru##.branding-block
 rbc.ru##.central-publisher-item[data-name^="CommercialAnons"]
