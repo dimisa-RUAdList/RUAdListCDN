@@ -1,8 +1,8 @@
-diff name:ruadlist lines:76 checksum:28dddf061c
+diff name:ruadlist lines:83 checksum:a0734e8867
 d4 2
 a5 2
-! Last modified: Fri, 06 Nov 2026 06:27:07 +0000
-! Diff-Path: ../patches/2026.11.6.387.patch#ruadlist
+! Last modified: Fri, 06 Nov 2026 14:56:42 +0000
+! Diff-Path: ../patches/2026.11.6.896.patch#ruadlist
 a6367 1
 ||trust-id.ru^$third-party
 d10946 1
@@ -20,6 +20,8 @@ d15270 1
 a15270 1
 agravery.com,babla.ru,clickthis.blog,cont.ws,dp.ua,dumskaya.net,filehippo.com,ifun.ru,inform-ua.info,kinda.media,klops.ru,kosht.media,liga.net,lookmeet.tv,mmovote.ru,myshared.ru,news.pn,obsuzhday.com,pik.net.ua,primpogoda.ru,prostopleer.com,regmarkets.ru,riavrn.ru,tempmailg.com,tut.by,vgolos.ua,vogue.ru,vz.ru,zaks.ru##.ad
 d16139 1
+a16253 1
+drive2.ru#?#.c-user-section:-abp-has(> .drom-grid)
 a16836 1
 byrutgame.org##.game-window__open
 a19069 1
@@ -28,6 +30,10 @@ d19358 1
 a19358 1
 kanobu.ru,respawn.media,uznayvse.ru##[aria-label="Реклама"]
 d20165 1
+a21130 1
+sovsport.ru##div[class*="betInfo"]
+a21435 1
+sovsport.ru##div[class^="match-of-the-day-widget-"]
 a21501 1
 sportnews.com.ua##div[class^="si"][class*="e-branding-"]
 d22356 1
@@ -36,8 +42,9 @@ a22759 1
 ||pikabu.ru/ajax/*?rXu2p=$xmlhttprequest
 a22789 1
 lk.rt.ru##[class^="omch-wink-player"] {remove:true;}
-a22847 1
+a22847 2
 pikabu.ru#?#article:-abp-has(> .story__main > div[class] ~ :empty ~ div[class])
+pikabu.ru#?#article:-abp-has(> .story__main > div[class] ~ span)
 d22881 1
 a22887 1
 /yi5n0iht7?$third-party,xmlhttprequest
