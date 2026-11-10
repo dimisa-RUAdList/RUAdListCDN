@@ -1,13 +1,19 @@
-diff name:ruadlist lines:71 checksum:be48daa47b
+diff name:ruadlist lines:93 checksum:338c8b9835
 d4 2
 a5 2
-! Last modified: Mon, 09 Nov 2026 18:41:01 +0000
-! Diff-Path: ../patches/2026.11.9.1121.patch#ruadlist
+! Last modified: Tue, 10 Nov 2026 01:58:58 +0000
+! Diff-Path: ../patches/2026.11.10.118.patch#ruadlist
 a6367 1
 ||trust-id.ru^$third-party
 d8330 1
 a8330 1
 _baner.$domain=~gemotest.ru|~run-balkan.com|~torrentpharma.ru|~xn----8sblrkq3eyc.xn--p1ai
+a9315 1
+||clicks.*.com/click?offer_id=$popup
+a9389 1
+||click.lp-link.ru^$popup
+a9696 1
+||winline.onelink.me^$popup
 d11398 1
 a11398 1
 ||byrutgame.org/templates/byrut_upd/modules/game-window/
@@ -20,10 +26,26 @@ a16835 1
 byrutgame.org##.game-window__open
 a19068 1
 oper.ru##.vip-banner
+a19480 1
+sportsdaily.ru##[class^="matchCardCoef_"]
+a19687 1
+sportsdaily.ru##[href^="https://winline.onelink.me/"]
+a19736 1
+sportsdaily.ru##[id^="koeffitsienty-"]
 a21128 1
 sovsport.ru##div[class*="betInfo"]
+a21134 1
+sportsdaily.ru##div[class*="bonus"]
+a21169 1
+sportsdaily.ru##div[class*="odds"]
+a21174 1
+sportsdaily.ru##div[class*="predictionBet"]
 a21433 1
 sovsport.ru##div[class^="match-of-the-day-widget-"]
+a21553 1
+sportsdaily.ru##div[class^="widgetList_"]
+a21619 1
+sportsdaily.ru##div[id*="bonus"]
 d22757 1
 a22757 1
 ||pikabu.ru/ajax/*?rXu3p=$xmlhttprequest
