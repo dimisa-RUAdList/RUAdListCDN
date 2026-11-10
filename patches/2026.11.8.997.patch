@@ -1,8 +1,8 @@
-diff name:ruadlist lines:46 checksum:e3fac7d6cb
+diff name:ruadlist lines:57 checksum:b0114170c3
 d4 2
 a5 2
-! Last modified: Tue, 10 Nov 2026 09:38:51 +0000
-! Diff-Path: ../patches/2026.11.10.578.patch#ruadlist
+! Last modified: Tue, 10 Nov 2026 17:41:16 +0000
+! Diff-Path: ../patches/2026.11.10.1061.patch#ruadlist
 d8331 1
 a8331 1
 _baner.$domain=~gemotest.ru|~run-balkan.com|~torrentpharma.ru|~xn----8sblrkq3eyc.xn--p1ai
@@ -12,12 +12,19 @@ a9390 1
 ||click.lp-link.ru^$popup
 a9697 1
 ||winline.onelink.me^$popup
+d15540 1
+a17339 1
+radiosputnik.ru,ria.ru##.m-zen
+d18805 1
+d19125 1
 a19484 1
 sportsdaily.ru##[class^="matchCardCoef_"]
 a19691 1
 sportsdaily.ru##[href^="https://winline.onelink.me/"]
 a19740 1
 sportsdaily.ru##[id^="koeffitsienty-"]
+a21087 1
+sportsdaily.ru##div[class*="Bookmakers"]
 a21139 1
 sportsdaily.ru##div[class*="bonus"]
 a21174 1
@@ -28,6 +35,7 @@ a21559 1
 sportsdaily.ru##div[class^="widgetList_"]
 a21625 1
 sportsdaily.ru##div[id*="bonus"]
+d22330 1
 d22763 1
 a22763 1
 ||pikabu.ru/ajax/*?rXu3p=$xmlhttprequest
@@ -43,5 +51,8 @@ a27291 1
 d29567 1
 a29567 1
 bombardir.ru,comp-service.kiev.ua,inforesist.org,nsk-tv.narod.ru,www.xcom-shop.ru##+js(abort-on-property-read, window.alert)
+d30011 1
+a30011 1
+rutube.ru##body.wdp-scroll:style(overflow-y: auto !important; touch-action: auto !important)
 a30037 1
 rambler.ru##div[style*="user-select: none;"]:style(user-select: text !important)

@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 10 Nov 2026 09:38:51 +0000
-! Diff-Path: ../patches/2026.11.10.578.patch#ruadlist
+! Last modified: Tue, 10 Nov 2026 17:41:16 +0000
+! Diff-Path: ../patches/2026.11.10.1061.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -15540,7 +15540,6 @@ korrespondent.net#?#.article:-abp-has(> .article__title > a > .advertising)
 espreso.tv##.articleContent > .recomendation_list + h2.block-title
 1istochnik.ru##.article__aaa
 u24.ua##.article__adml
-allcarz.ru,radiosputnik.ru,ria.ru##.article__aggr
 fb.ru##.article__annex
 myfin.by,tsargrad.tv##.article__banner
 info.sibnet.ru##.article__banner-link
@@ -17340,6 +17339,7 @@ mirkvartir.ru##.m-mimikria
 rifey.ru##.m-padding
 tut.by##.m-topic-tam,.m-topic-tam ~ div
 imhonet.ru##.m-videoplayer-advert
+radiosputnik.ru,ria.ru##.m-zen
 fotokto.ru##.m2
 ppl.nnov.ru##.m_lbanner
 promodj.com##.magig_conteiner
@@ -18805,7 +18805,6 @@ vbr.ru##.tgb-content
 parents.ru##.tgb__heading
 telegraf.com.ua,telegraf.ua##.tgr-ads
 ria.ru#?#.the-in-carousel__item:-abp-has(> .footer__social-wr > .m-zen)
-ria.ru#?#.the-in-carousel__item:-abp-has(> [data-has-banner])
 vedomosti.ru##.the-loader
 lifehacker.ru#?#.the-tv__observer:-abp-has(.lh-article-card-meta__partner)
 lifehacker.ru#?#.the-tv__observer:-abp-has(.lh-article-card-meta__promo)
@@ -19125,7 +19124,6 @@ factroom.ru##.widget-area div[class*="-banner"]
 volnorez.com.ua#?#.widget-area:-abp-has(> .widget_text > .textwidget > [id^="CNM"])
 volnorez.com.ua#?#.widget-area:-abp-has(> .widget_text > .textwidget > [id^="MarketGid"])
 knife.media,lemonade.style##.widget-banner
-allcarz.ru##.widget-bnnr
 sport.rbc.ua##.widget-bookmakers
 5peciali5t.tk##.widget-content > a > img[width="200"]
 bibliofond.ru##.widget-direct
@@ -21091,6 +21089,7 @@ rg.ru##div[class*="Adfox"]
 banki.ru##div[class*="AdfoxBannerWrapper"]
 food.ru,korabel.ru,market4game.ru##div[class*="Banner"]
 zhukvesti.ru##div[class*="Banners"]
+sportsdaily.ru##div[class*="Bookmakers"]
 football24.ua##div[class*="BrandingPlace"]
 tass.ru##div[class*="CardsGrid_ad_"]
 career.ru##div[class*="HHC-Banner-"]
@@ -22338,7 +22337,6 @@ lurkmore.*###localNotice .infobox
 lurkmore.*###n-Группа-в-Дискорде
 lurkmore.*###n-Канал-в-Телеграме
 old.myshows.me##main > .contAlt
-allcarz.ru#?#main > .container > .site-content:-abp-has(> .content-banner)
 profinance.ru##main > .content-grid > aside
 protanki.tv##main > .hidden
 mediaryazan.ru##main > .hide-on-mobiles > div[class="sideblock"]:first-child
@@ -30019,7 +30017,7 @@ rutube.ru##body.wdp-scroll .wdp-popup-overlay-module__overlay [class*=" wdp-onbo
 rutube.ru##body.wdp-scroll .wdp-popup-overlay-module__overlay [class*="-view-trigger-popup"]
 rutube.ru##body.wdp-scroll .wdp-popup-overlay-module__overlay:has(> [class*=" wdp-onboardings-inventory-"][class*="-module__popup "])
 rutube.ru##body.wdp-scroll .wdp-popup-overlay-module__overlay:has(> [class*="-view-trigger-popup"])
-rutube.ru##body.wdp-scroll:style(overflow-y: auto !important)
+rutube.ru##body.wdp-scroll:style(overflow-y: auto !important; touch-action: auto !important)
 tapochek.net##body:has(#register_link) > canvas
 tapochek.net##body:has(#register_link) > canvas:remove()
 rusport.live##body:has(header > .is-fixed):style(padding-top: 65px !important)
