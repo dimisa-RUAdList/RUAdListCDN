@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Wed, 11 Nov 2026 10:44:05 +0000
-! Diff-Path: ../patches/2026.11.11.644.patch#ruadlist
+! Last modified: Wed, 11 Nov 2026 18:37:02 +0000
+! Diff-Path: ../patches/2026.11.11.1117.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -13369,7 +13369,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||streamapps.ru^$script
 ||streamguard.cc^*.js|$script
 ||strikes.ru/steamtrade_net$image
-||strm.yandex.*/vh-adfox-converted/$media
+||strm.yandex.*/vh-adfo*-converted/$media
 ||strm.yandex.ru^$domain=1tv.ru|drive2.ru|karaoke.ru|livejournal.com|mediavitrina.ru
 ||stroitel-lab.ru/js_content/
 ||stroy-podskazka.ru/adfallback/
@@ -17390,6 +17390,7 @@ ska.ru##.main-section-adfox
 salonav.com##.main-sidebar > .mom_custom_text ~ .mom_custom_text
 vedomosti-ua.com#?#.main-sidebar > .row > div:-abp-has(.active:-abp-contains(Реклама))
 vg-news.ru##.main-small-right-block
+nv.ua##.main-wrapper .container > .row > a[target="_blank"] > picture
 autostat.ru##.mainBannerBlockCenter
 polosedan-club.com##.mainContent > #Notices
 vuzopedia.ru##.mainReclame
@@ -22732,7 +22733,8 @@ ictv.ua,vikna.tv##div[id^="div-gpt-ad-"]
 ! запросы
 ! ловушка для обфускации дзена: главная, статьи, новости, погода
 /^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]*\/(?:[^/?0-9]*[0-9]){5}[^/?]*(?:\?.*)?$/$script
-/^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]*\/[^/?]*\.d\.bundle\./$script
+/^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]*\/[^/?]*\.[a-zA-Z]{1,3}\.bundle\.(?:js|jsx)(?:\?.*)?$/$script
+/^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]*\/[^/?]*\.d\.bundle\..*$/$script
 ||dzen.ru/a/$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/articles$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
 ||dzen.ru/news$csp=script-src 'unsafe-inline' 'unsafe-eval' data: static.dzeninfra.ru/react/ static.dzeninfra.ru/s3/zen-apps/ static.dzeninfra.ru/s3/zen-lib/ yandex.ru/ads/ vk.com/dist/ vk.com/js/api/videoplayer.js vk.com/dist/public/api/
@@ -24145,6 +24147,7 @@ sports.ru##[data-content-name="banner-static"][data-content-piece^="SALES-"]
 sports.ru#?#[data-control*="Common.CarouselOfCards"]:-abp-has(a[href^="https://sirena.world/"])
 sports.ru##[data-control*="Videonow"]
 sports.ru##[data-control*="adblock"]
+sports.ru##[data-control="Common.RbPromo"]
 sports.ru##[data-control="Stat.KinopoiskButton"]
 sports.ru##[data-control="Stat.OkkoButton"]
 sports.ru##[data-control^="Aliens."]
@@ -26187,6 +26190,7 @@ zarulem.ws##td[style^="text-align:center;width:50%"]
 ||xn--b1aygfn8d.xn--p1ai/informer/$third-party
 ||xstats.in^
 ||xxx-news.$third-party
+||ya.ru/adfox/
 ||yandex-games.ru/ok/banners/
 ||yandex.*/adfox/
 ||yandex.*/ads/adfox/$third-party
@@ -28724,7 +28728,7 @@ rezkahd.life##.have-brand .wrap:style(margin-top: 0 !important)
 ! ---
 rg.ru###cookie-consent
 rg.ru###cookie-consent ~ [class*="_root_"]:style(top: unset !important)
-rg.ru##div[class*="_spiegelWrapper"]:style(padding-top: 0 !important)
+rg.ru##div[class*="_"][class*="piegel"][class*="rapper"]:style(padding-top: 0 !important)
 rg.ru##div[class^="PageMediaContentVideo_mainContent"]:style(min-height: 0 !important)
 rg.ru##div[class^="Page_main"][style*="min-height:"]:style(min-height: 0 !important)
 rg.ru##html[style*="overflow:"] > body:style(padding-right: 0 !important)
@@ -30381,6 +30385,10 @@ ya.ru##section li > a.home-link2
 ||rsv.today/promo/2ipchange$document
 ||st.top100.ru/top100/top100.js$domain=www.rambler.ru
 !#endif
+! Временные фиксы для ELC
+evroopt.by##+js(prevent-addEventListener, /^(?:click|scroll|keydown|touchstart|mouseenter)$/, cookies)
+igra.evroopt.by##body:style(overflow: auto !important)
+myfin.by##html,body:style(overflow: auto !important; padding-right: 0 !important)
 ! --- AWRL-non-sync---
 ! *** ./AWRL-non-sync.txt ***
 [Adblock Plus 2.0]

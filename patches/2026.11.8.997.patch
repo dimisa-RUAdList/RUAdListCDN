@@ -1,8 +1,8 @@
-diff name:ruadlist lines:59 checksum:d9b390bcd5
+diff name:ruadlist lines:80 checksum:c1da262be5
 d4 2
 a5 2
-! Last modified: Wed, 11 Nov 2026 10:44:05 +0000
-! Diff-Path: ../patches/2026.11.11.644.patch#ruadlist
+! Last modified: Wed, 11 Nov 2026 18:37:02 +0000
+! Diff-Path: ../patches/2026.11.11.1117.patch#ruadlist
 a7834 1
 .bid/vast/$third-party,xmlhttprequest
 d8331 1
@@ -14,9 +14,14 @@ a9390 1
 ||click.lp-link.ru^$popup
 a9697 1
 ||winline.onelink.me^$popup
+d13368 1
+a13368 1
+||strm.yandex.*/vh-adfo*-converted/$media
 d15540 1
 a17339 1
 radiosputnik.ru,ria.ru##.m-zen
+a17388 1
+nv.ua##.main-wrapper .container > .row > a[target="_blank"] > picture
 d18805 1
 d19125 1
 a19484 1
@@ -38,6 +43,10 @@ sportsdaily.ru##div[class^="widgetList_"]
 a21625 1
 sportsdaily.ru##div[id*="bonus"]
 d22330 1
+d22725 1
+a22725 2
+/^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]*\/[^/?]*\.[a-zA-Z]{1,3}\.bundle\.(?:js|jsx)(?:\?.*)?$/$script
+/^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]*\/[^/?]*\.d\.bundle\..*$/$script
 d22763 1
 a22763 1
 ||pikabu.ru/ajax/*?rXu3p=$xmlhttprequest
@@ -47,9 +56,16 @@ a23594 1
 ru##[data-ns-portal] section[class*="topNewsBlock_"] > div[class^="list_"] > article > span[class^="index_"]
 a23626 1
 116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,ya62.ru#?#section[class*="topNewsBlock_"] > div[class^="list_"] > article:-abp-has(> div > a[href*="?erid="])
+a24137 1
+sports.ru##[data-control="Common.RbPromo"]
+a26179 1
+||ya.ru/adfox/
 d27291 1
 a27291 1
 @@||yandex.ru/ads/system/context.js|$script,domain=limehd.tv|litehd.tv|nsk-tv.narod.ru|pervyi-tv.online|russia-tv.online|tvzvezda.ru|volley.ru
+d28717 1
+a28717 1
+rg.ru##div[class*="_"][class*="piegel"][class*="rapper"]:style(padding-top: 0 !important)
 d29567 1
 a29567 1
 bombardir.ru,comp-service.kiev.ua,inforesist.org,nsk-tv.narod.ru,www.xcom-shop.ru##+js(abort-on-property-read, window.alert)
@@ -58,3 +74,8 @@ a30011 1
 rutube.ru##body.wdp-scroll:style(overflow-y: auto !important; touch-action: auto !important)
 a30037 1
 rambler.ru##div[style*="user-select: none;"]:style(user-select: text !important)
+a30372 4
+! Временные фиксы для ELC
+evroopt.by##+js(prevent-addEventListener, /^(?:click|scroll|keydown|touchstart|mouseenter)$/, cookies)
+igra.evroopt.by##body:style(overflow: auto !important)
+myfin.by##html,body:style(overflow: auto !important; padding-right: 0 !important)
