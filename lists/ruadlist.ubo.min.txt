@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 12 Nov 2026 09:42:22 +0000
-! Diff-Path: ../patches/2026.11.12.582.patch#ruadlist
+! Last modified: Thu, 12 Nov 2026 18:10:19 +0000
+! Diff-Path: ../patches/2026.11.12.1090.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -7969,7 +7969,7 @@ _verified.php?code=*&server=runetki.com
 /bannergzo/*
 /banners.mvc?
 /banners/*/*/0/index.$subdocument
-/banners/*_*x*?$domain=~asus.com|~challonge.com|~etsy.com|~moto-store.com.ua
+/banners/*_*x*?$domain=~asus.com|~atbmarket.com|~challonge.com|~etsy.com|~moto-store.com.ua
 /bannerz.$object
 /bazar_fast/*
 /bb/getcode?apiKey=$third-party,script
@@ -22867,6 +22867,7 @@ pikabu.ru#?#article:-abp-has(> .story__main > div:not([class]))
 pikabu.ru#?#article:-abp-has(> .story__main > div:only-child)
 pikabu.ru#?#article:-abp-has(> .story__main > div[class] + div[class])
 pikabu.ru#?#article:-abp-has(> .story__main > div[class] ~ :empty ~ div[class])
+pikabu.ru#?#article:-abp-has(> .story__main > div[class] ~ :not([class]))
 pikabu.ru#?#article:-abp-has(> .story__main > div[class] ~ span)
 pikabu.ru#?#article:-abp-has(> .story__main:not(:-abp-has(*)))
 kp.kg,kp.kz,kp.ru,md.kp.media#?#body > #app div:-abp-properties(background-color: rgb(225, 231, 235))
