@@ -1,8 +1,8 @@
-diff name:ruadlist lines:84 checksum:c57338da9e
+diff name:ruadlist lines:102 checksum:c0a8839c66
 d4 2
 a5 2
-! Last modified: Sat, 14 Nov 2026 10:08:57 +0000
-! Diff-Path: ../patches/2026.11.14.608.patch#ruadlist
+! Last modified: Sat, 14 Nov 2026 16:33:49 +0000
+! Diff-Path: ../patches/2026.11.14.993.patch#ruadlist
 a2154 1
 ||fly.codes^$third-party
 a7834 1
@@ -10,6 +10,8 @@ a7834 1
 d7971 1
 a7971 1
 /banners/*_*x*?$domain=~asus.com|~atbmarket.com|~challonge.com|~etsy.com|~moto-store.com.ua
+a8440 1
+||site/rtr/$script
 a11837 1
 ||gc.onliner.by/js/growthbook-*.js
 d13371 1
@@ -28,6 +30,9 @@ nv.ua##.main-wrapper .container > .row > a[target="_blank"] > picture
 d17549 1
 d18808 1
 d19128 1
+d19240 1
+a19240 1
+kingp2p.top,livep2p.top,p2plive7.top##.wrap-overlay
 a19600 1
 onliner.by##[data-placement]
 a20096 1
@@ -41,6 +46,8 @@ d21179 1
 d21286 1
 a21286 1
 mydash.ru##div[class^="_boticaArea_"]
+a21640 1
+anti-malware.ru##div[id*="footer-message"]
 d22341 1
 d22736 1
 a22736 2
@@ -69,15 +76,26 @@ a26190 1
 d26350 1
 a27416 1
 hcdn.online,hencdn.top##.video-js > [class][role="status"][aria-live="polite"]
+a27494 1
+||rapp.su/assets/js/player/counter.js
 d28728 1
 a28728 1
 rg.ru##div[class*="_"][class*="piegel"][class*="rapper"]:style(padding-top: 0 !important)
+d29429 1
 d29482 1
 a29482 1
 anifap.com,anifap.xyz,anipoisk.org,anitokyo.tv,anitokyo1.top,hcdn.online,hentasis.me##+js(abort-on-property-read, ClickUndercookie)
+d29778 1
+a29786 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, detected)
 d30022 1
 a30022 1
 rutube.ru##body.wdp-scroll:style(overflow-y: auto !important; touch-action: auto !important)
+a30030 2
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##br + div[id] > p:style(margin-top: unset !important)
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##br + div[id]:style(height: auto !important)
+d30361 1
+d30376 2
 a30384 4
 ! Временные фиксы для ELC
 evroopt.by##+js(prevent-addEventListener, /^(?:click|scroll|keydown|touchstart|mouseenter)$/, cookies)

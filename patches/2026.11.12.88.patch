@@ -1,16 +1,21 @@
-diff name:ruadlist lines:38 checksum:c57338da9e
+diff name:ruadlist lines:56 checksum:c0a8839c66
 d4 2
 a5 2
-! Last modified: Sat, 14 Nov 2026 10:08:57 +0000
-! Diff-Path: ../patches/2026.11.14.608.patch#ruadlist
+! Last modified: Sat, 14 Nov 2026 16:33:49 +0000
+! Diff-Path: ../patches/2026.11.14.993.patch#ruadlist
 a2154 1
 ||fly.codes^$third-party
 d7972 1
 a7972 1
 /banners/*_*x*?$domain=~asus.com|~atbmarket.com|~challonge.com|~etsy.com|~moto-store.com.ua
+a8441 1
+||site/rtr/$script
 a11838 1
 ||gc.onliner.by/js/growthbook-*.js
 d17552 1
+d19241 1
+a19241 1
+kingp2p.top,livep2p.top,p2plive7.top##.wrap-overlay
 d20945 1
 a20945 1
 anifap.com,anifap.xyz,anitokyo.tv,anitokyo1.top,hentasis.me##body.playerCode > div[style^="position: absolute;"][onclick]
@@ -18,6 +23,8 @@ d21183 1
 d21290 1
 a21290 1
 mydash.ru##div[class^="_boticaArea_"]
+a21644 1
+anti-malware.ru##div[id*="footer-message"]
 a22868 1
 pikabu.ru#?#article:-abp-has(> .story__main > div[class] ~ :not([class]))
 d22909 1
@@ -34,6 +41,17 @@ ya.ru##section[style*="secctslon-items-count:"]
 d26356 1
 a27422 1
 hcdn.online,hencdn.top##.video-js > [class][role="status"][aria-live="polite"]
+a27500 1
+||rapp.su/assets/js/player/counter.js
+d29435 1
 d29488 1
 a29488 1
 anifap.com,anifap.xyz,anipoisk.org,anitokyo.tv,anitokyo1.top,hcdn.online,hentasis.me##+js(abort-on-property-read, ClickUndercookie)
+d29784 1
+a29792 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, detected)
+a30036 2
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##br + div[id] > p:style(margin-top: unset !important)
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##br + div[id]:style(height: auto !important)
+d30367 1
+d30382 2

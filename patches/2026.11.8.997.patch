@@ -1,8 +1,8 @@
-diff name:ruadlist lines:123 checksum:c57338da9e
+diff name:ruadlist lines:141 checksum:c0a8839c66
 d4 2
 a5 2
-! Last modified: Sat, 14 Nov 2026 10:08:57 +0000
-! Diff-Path: ../patches/2026.11.14.608.patch#ruadlist
+! Last modified: Sat, 14 Nov 2026 16:33:49 +0000
+! Diff-Path: ../patches/2026.11.14.993.patch#ruadlist
 a2154 1
 ||fly.codes^$third-party
 a7834 1
@@ -13,6 +13,8 @@ a7971 1
 d8331 1
 a8331 1
 _baner.$domain=~gemotest.ru|~run-balkan.com|~torrentpharma.ru|~xn----8sblrkq3eyc.xn--p1ai
+a8440 1
+||site/rtr/$script
 a9316 1
 ||clicks.*.com/click?offer_id=$popup
 a9390 1
@@ -37,6 +39,9 @@ nv.ua##.main-wrapper .container > .row > a[target="_blank"] > picture
 d17546 1
 d18805 1
 d19125 1
+d19237 1
+a19237 1
+kingp2p.top,livep2p.top,p2plive7.top##.wrap-overlay
 a19484 1
 sportsdaily.ru##[class^="matchCardCoef_"]
 a19596 1
@@ -66,6 +71,8 @@ a21559 1
 sportsdaily.ru##div[class^="widgetList_"]
 a21625 1
 sportsdaily.ru##div[id*="bonus"]
+a21629 1
+anti-malware.ru##div[id*="footer-message"]
 d22330 1
 d22725 1
 a22725 2
@@ -103,20 +110,31 @@ a27291 1
 @@||yandex.ru/ads/system/context.js|$script,domain=limehd.tv|litehd.tv|nsk-tv.narod.ru|pervyi-tv.online|russia-tv.online|tvzvezda.ru|volley.ru
 a27405 1
 hcdn.online,hencdn.top##.video-js > [class][role="status"][aria-live="polite"]
+a27483 1
+||rapp.su/assets/js/player/counter.js
 d28717 1
 a28717 1
 rg.ru##div[class*="_"][class*="piegel"][class*="rapper"]:style(padding-top: 0 !important)
+d29418 1
 d29471 1
 a29471 1
 anifap.com,anifap.xyz,anipoisk.org,anitokyo.tv,anitokyo1.top,hcdn.online,hentasis.me##+js(abort-on-property-read, ClickUndercookie)
 d29567 1
 a29567 1
 bombardir.ru,comp-service.kiev.ua,inforesist.org,nsk-tv.narod.ru,www.xcom-shop.ru##+js(abort-on-property-read, window.alert)
+d29767 1
+a29775 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, detected)
 d30011 1
 a30011 1
 rutube.ru##body.wdp-scroll:style(overflow-y: auto !important; touch-action: auto !important)
+a30019 2
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##br + div[id] > p:style(margin-top: unset !important)
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##br + div[id]:style(height: auto !important)
 a30037 1
 rambler.ru##div[style*="user-select: none;"]:style(user-select: text !important)
+d30349 1
+d30364 2
 a30372 4
 ! Временные фиксы для ELC
 evroopt.by##+js(prevent-addEventListener, /^(?:click|scroll|keydown|touchstart|mouseenter)$/, cookies)
