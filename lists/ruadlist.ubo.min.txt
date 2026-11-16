@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 16 Nov 2026 09:29:18 +0000
-! Diff-Path: ../patches/2026.11.16.569.patch#ruadlist
+! Last modified: Mon, 16 Nov 2026 20:19:14 +0000
+! Diff-Path: ../patches/2026.11.16.1219.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -15824,7 +15824,6 @@ amoledo.com,zhitomir.info##.banner-link
 sn.by##.banner-list
 newsazerbaijan.ru##.banner-middle
 gx.net.ua,tut.by##.banner-place
-sdelanounas.ru##.banner-post
 agroter.com.ua##.banner-promotions-wrapper
 metro-cc.ru##.banner-retail-rocket
 profi-forex.org,vl.ru##.banner-right
@@ -18478,6 +18477,7 @@ web-shpargalka.ru##.sidebar-blocks-block[style="height: 1700px;"]
 t.ks.ua#?#.sidebar-box:-abp-has(> .row > .block-block)
 t.ks.ua#?#.sidebar-box:-abp-has(> [class^="ne-banner-"])
 ixbt.com,ixbt.games##.sidebar-c
+sdelanounas.ru##.sidebar-card--useful-links
 buknews.com.ua##.sidebar-container > a[rel="nofollow"] > img
 culturemeter.od.ua##.sidebar-content > .widget_custom_html
 istorikonline.ru##.sidebar-content > .widget_custom_html ~ *
@@ -21256,6 +21256,7 @@ id.vk.com,id.vk.ru##div[class^="AdvertisingBanner-"]
 kaktus.kg,kaktus.media,mir24.tv##div[class^="Banner"]
 360tv.ru##div[class^="Banners_skeleton_"]
 sravni.ru##div[class^="BrandingHeader_sponsorBlock_"]
+1tv.ru##div[class^="Branding_container_"]
 comedy-radio.ru,radioromantika.ru,relax-fm.ru,veseloeradio.ru##div[class^="D_"][class*="x"]
 tass.ru##div[class^="DesktopLayout_top"]
 rg.ru##div[class^="EditorialPageArticleAside_item"][style^="height:"]
@@ -21329,7 +21330,7 @@ kaktutzhit.by##div[class^="banner"][class$="rightSide"] > .banner:nth-of-type(1)
 cisoclub.ru##div[class^="banner"][class*="LENTA"]
 meteo.ua##div[class^="banner-"]
 znanierussia.ru##div[class^="banner-under-"]
-irr.by,myfootball.pw,myfootball.ws##div[class^="banner_"]
+irr.by,myfootball.pw,myfootball.ws,sdelanounas.ru##div[class^="banner_"]
 caravan.su##div[class^="banner_header"]
 mnmag.ru##div[class^="banner_right"]
 fox-online.tv##div[class^="banner_sape"]
@@ -22743,7 +22744,7 @@ https://*adtech_uid=$~third-party,xmlhttprequest,domain=livejournal.com|olegmaka
 ||newsyou.info/wp-content/plugins/gtranslate/
 ||newsyou.info^$csp=script-src-elem 'self' https:
 ||ng72.ru^$csp=script-src 'self' 'unsafe-eval' https:
-||pikabu.ru/ajax/*?rXu4p=$xmlhttprequest
+||pikabu.ru/ajax/*?v2lVm=$xmlhttprequest
 ||ritsatv.ru^$csp=script-src
 ||ritsatv.ru^$popup
 ||ritsatv.ru^$~document
@@ -24038,7 +24039,7 @@ sovsport.ru#?#div[class*="_mainPageContent"]:-abp-has(a[href*="/bookmaker"])
 sovsport.ru##div[class*="_notice"]
 sovsport.ru##div[class*="_predictions"]
 sovsport.ru##div[class*="_seoBlock"]
-sovsport.ru##div[class*="_widget"]
+sovsport.ru##div[class*="_widget"]:not([class*="_widgetNews"])
 sovsport.ru##div[class*="coefficient"]
 sovsport.ru##div[class*="freeBet"]
 sovsport.ru##div[class*="partnerMark"]
@@ -27557,7 +27558,7 @@ root-nation.com##html:not(#id) > body:not(#id):style(background: none !important
 2plus2.ua,bigudi.tv,plus-plus.tv##body:style(padding-top: 0 !important)
 1plus1.video##div[class^="playlist-player-branding-"] ~ .playlist-player:style(max-width: 1155px !important)
 ! ---
-www.1tv.ru##div[class^="Branding_container_"]:style(margin-top: unset !important; height: auto !important)
+www.1tv.ru##div[class*="Branding_branding_"]:style(padding-top: unset !important)
 ! ---
 24smi.org##.footer:style(margin-top: 20px !important)
 24smi.org##.out__inner > header:style(visibility: inherit !important)
@@ -28777,6 +28778,11 @@ sdamgia.ru##[role="main"] div[style^="position: absolute; top: 0px; "]
 sdamgia.ru##aside > div[class]:first-child div:style(height: auto !important)
 sdamgia.ru##center > div[style^="position: absolute; top: 0px; "]
 sdamgia.ru##div[style] > a[target="_blank"] > img[src^="data:"]
+! ---
+sdelanounas.ru###SocialWelcome
+sdelanounas.ru###modalOverlay
+sdelanounas.ru##body:style(overflow-x: auto !important; position: initial !important)
+sdelanounas.ru##html:style(overflow-x: auto !important; position: initial !important)
 ! ---
 sc2tv.ru##.body--brranding > .content:style(margin-top: unset !important)
 sc2tv.ru##html:not(#id) > body:not(#id) .body--brranding > *:style(pointer-events: auto !important)
@@ -30377,6 +30383,7 @@ game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorka
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /agl007|blockPage/)
 e.mail.ru##+js(set-constant, Object.prototype.hasAdBlock, false)
 e.mail.ru#@#+js(set-constant, Object.prototype.hasAdBlock, null)
+/adfox/*/getCode?$third-party,xmlhttprequest
 @@||dzen.ru^$generichide
 @@||sportsdzen.ru^$generichide
 com,~hoster.ru,me,net,org,ru##a[href*="://hoster.ru"][target="_blank"]:not(thanks-opennet.ru)

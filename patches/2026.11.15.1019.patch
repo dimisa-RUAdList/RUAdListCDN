@@ -1,19 +1,22 @@
-diff name:ruadlist lines:96 checksum:6fdace13df
+diff name:ruadlist lines:118 checksum:f39e26e37e
 d4 2
 a5 2
-! Last modified: Mon, 16 Nov 2026 09:29:18 +0000
-! Diff-Path: ../patches/2026.11.16.569.patch#ruadlist
+! Last modified: Mon, 16 Nov 2026 20:19:14 +0000
+! Diff-Path: ../patches/2026.11.16.1219.patch#ruadlist
 d13200 1
 a13200 2
 ||sia.ru/*/piroman_
 ||sia.ru/files/b/
 a14484 1
 sia.ru###left_fixed_block-rand-1
+d15825 1
 d16121 1
 d16274 1
 a16978 1
 sia.ru#?#.header:-abp-has(> h3 > a[href="/?section=519"])
 d17081 1
+a18480 1
+sdelanounas.ru##.sidebar-card--useful-links
 d19477 1
 d19489 1
 d19693 1
@@ -36,9 +39,14 @@ d21140 1
 a21140 1
 securitylab.ru,voxpopuli.kz##div[class*="banner_"]
 d21144 1
+a21268 1
+1tv.ru##div[class^="Branding_container_"]
 d21303 1
 a21303 1
 footbole24.com,rutv.pw,sportcsat.ru##div[class^="adlook-"][class*="-wrapper"]
+d21342 1
+a21342 1
+irr.by,myfootball.pw,myfootball.ws,sdelanounas.ru##div[class^="banner_"]
 d21362 1
 d21376 1
 d21378 1
@@ -55,6 +63,9 @@ d22113 1
 d22221 1
 d22449 1
 d22454 1
+d22779 1
+a22779 1
+||pikabu.ru/ajax/*?v2lVm=$xmlhttprequest
 a22868 1
 pikabu.ru#?#article:-abp-has(> .story__main > div[class] + header > :empty)
 a24049 33
@@ -81,7 +92,7 @@ sovsport.ru#?#div[class*="_mainPageContent"]:-abp-has(a[href*="/bookmaker"])
 sovsport.ru##div[class*="_notice"]
 sovsport.ru##div[class*="_predictions"]
 sovsport.ru##div[class*="_seoBlock"]
-sovsport.ru##div[class*="_widget"]
+sovsport.ru##div[class*="_widget"]:not([class*="_widgetNews"])
 sovsport.ru##div[class*="coefficient"]
 sovsport.ru##div[class*="freeBet"]
 sovsport.ru##div[class*="partnerMark"]
@@ -91,7 +102,18 @@ sovsport.ru##section[class*="_advPlayer"]
 sovsport.ru#?#ul[class*="_mediaList"] > li:-abp-has(a[href*="bonus"])
 sovsport.ru#?#ul[class*="_mediaList"] > li:-abp-has(a[href*="bookmaker"])
 ||sovsport.ru/api/proxy/api/promolink/
+d27559 1
+a27559 1
+www.1tv.ru##div[class*="Branding_branding_"]:style(padding-top: unset !important)
+a28779 5
+sdelanounas.ru###SocialWelcome
+sdelanounas.ru###modalOverlay
+sdelanounas.ru##body:style(overflow-x: auto !important; position: initial !important)
+sdelanounas.ru##html:style(overflow-x: auto !important; position: initial !important)
+! ---
 d28852 2
 a28853 2
 footbole24.com,kingball.top,sportcsat.com,sportcsat.ru,streame.center,vitalsport1.ru##div[style^="position:"][style*=" top: 0px; left: 0px; width: 100%; height: 100%;"][style*="z-index:"][style*="cursor: pointer;"]
 footbole24.com,kingball.top,sportcsat.com,sportcsat.ru,streame.center,vitalsport1.ru##iframe[src]:style(pointer-events: auto !important)
+a30378 1
+/adfox/*/getCode?$third-party,xmlhttprequest

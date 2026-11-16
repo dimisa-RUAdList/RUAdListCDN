@@ -1,8 +1,8 @@
-diff name:ruadlist lines:198 checksum:6fdace13df
+diff name:ruadlist lines:217 checksum:f39e26e37e
 d4 2
 a5 2
-! Last modified: Mon, 16 Nov 2026 09:29:18 +0000
-! Diff-Path: ../patches/2026.11.16.569.patch#ruadlist
+! Last modified: Mon, 16 Nov 2026 20:19:14 +0000
+! Diff-Path: ../patches/2026.11.16.1219.patch#ruadlist
 a2154 1
 ||fly.codes^$third-party
 a7834 1
@@ -28,6 +28,7 @@ sia.ru###left_fixed_block-rand-1
 d14667 1
 d15345 1
 d15543 1
+d15823 1
 d16119 1
 d16272 1
 a16279 1
@@ -43,6 +44,8 @@ radiosputnik.ru,ria.ru##.m-zen
 a17391 1
 nv.ua##.main-wrapper .container > .row > a[target="_blank"] > picture
 d17549 1
+a18476 1
+sdelanounas.ru##.sidebar-card--useful-links
 d18808 1
 d19128 1
 d19240 1
@@ -80,12 +83,17 @@ a21135 1
 securitylab.ru,voxpopuli.kz##div[class*="banner_"]
 d21139 1
 d21179 1
+a21264 1
+1tv.ru##div[class^="Branding_container_"]
 d21286 1
 a21286 1
 mydash.ru##div[class^="_boticaArea_"]
 d21299 1
 a21299 1
 footbole24.com,rutv.pw,sportcsat.ru##div[class^="adlook-"][class*="-wrapper"]
+d21338 1
+a21338 1
+irr.by,myfootball.pw,myfootball.ws,sdelanounas.ru##div[class^="banner_"]
 d21358 1
 d21372 1
 d21374 1
@@ -111,7 +119,7 @@ a22736 2
 /^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]*\/[^/?]*\.d\.bundle\..*$/$script
 d22774 1
 a22774 1
-||pikabu.ru/ajax/*?rXu4p=$xmlhttprequest
+||pikabu.ru/ajax/*?v2lVm=$xmlhttprequest
 a22863 1
 pikabu.ru#?#article:-abp-has(> .story__main > div[class] + header > :empty)
 a22864 1
@@ -145,7 +153,7 @@ sovsport.ru#?#div[class*="_mainPageContent"]:-abp-has(a[href*="/bookmaker"])
 sovsport.ru##div[class*="_notice"]
 sovsport.ru##div[class*="_predictions"]
 sovsport.ru##div[class*="_seoBlock"]
-sovsport.ru##div[class*="_widget"]
+sovsport.ru##div[class*="_widget"]:not([class*="_widgetNews"])
 sovsport.ru##div[class*="coefficient"]
 sovsport.ru##div[class*="freeBet"]
 sovsport.ru##div[class*="partnerMark"]
@@ -170,9 +178,18 @@ a27416 1
 hcdn.online,hencdn.top##.video-js > [class][role="status"][aria-live="polite"]
 a27494 1
 ||rapp.su/assets/js/player/counter.js
+d27549 1
+a27549 1
+www.1tv.ru##div[class*="Branding_branding_"]:style(padding-top: unset !important)
 d28728 1
 a28728 1
 rg.ru##div[class*="_"][class*="piegel"][class*="rapper"]:style(padding-top: 0 !important)
+a28769 5
+sdelanounas.ru###SocialWelcome
+sdelanounas.ru###modalOverlay
+sdelanounas.ru##body:style(overflow-x: auto !important; position: initial !important)
+sdelanounas.ru##html:style(overflow-x: auto !important; position: initial !important)
+! ---
 d28842 2
 a28843 2
 footbole24.com,kingball.top,sportcsat.com,sportcsat.ru,streame.center,vitalsport1.ru##div[style^="position:"][style*=" top: 0px; left: 0px; width: 100%; height: 100%;"][style*="z-index:"][style*="cursor: pointer;"]
@@ -191,6 +208,8 @@ a30030 2
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##br + div[id] > p:style(margin-top: unset !important)
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##br + div[id]:style(height: auto !important)
 d30361 1
+a30368 1
+/adfox/*/getCode?$third-party,xmlhttprequest
 d30376 2
 a30384 4
 ! Временные фиксы для ELC
