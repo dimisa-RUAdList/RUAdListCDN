@@ -1,8 +1,8 @@
-diff name:ruadlist lines:135 checksum:130582b3c0
+diff name:ruadlist lines:150 checksum:6fdace13df
 d4 2
 a5 2
-! Last modified: Sun, 15 Nov 2026 21:41:10 +0000
-! Diff-Path: ../patches/2026.11.15.1301.patch#ruadlist
+! Last modified: Mon, 16 Nov 2026 09:29:18 +0000
+! Diff-Path: ../patches/2026.11.16.569.patch#ruadlist
 a2154 1
 ||fly.codes^$third-party
 d7972 1
@@ -10,12 +10,20 @@ a7972 1
 /banners/*_*x*?$domain=~asus.com|~atbmarket.com|~challonge.com|~etsy.com|~moto-store.com.ua
 a8441 1
 ||site/rtr/$script
+d13198 1
+a13198 2
+||sia.ru/*/piroman_
+||sia.ru/files/b/
+a14482 1
+sia.ru###left_fixed_block-rand-1
 d15347 1
 d16120 1
 d16273 1
 d16325 1
 a16325 1
 024.by,1progs.ru,ampercar.com,autogeek.com.ua,bolshoyulov.ru,disgustingmen.com,femmie.ru,find-key.ru,fuzzmusic.ru,gadgets-help.ru,gubdaily.ru,hersonweek.net,itbusiness.com.ua,itsider.com.ua,kakbog.com,karavan.ua,kovi.ru,liza.ua,marieclaire.ua,mmr.net.ua,nnews.com.ua,notorgames.org,o-polze.com,pcminipro.ru,poravkrym.ru,rknweb.ru,villaved.ru,vsviti.com.ua##.code-block
+a16977 1
+sia.ru#?#.header:-abp-has(> h3 > a[href="/?section=519"])
 d17080 1
 d17553 1
 d19242 1
@@ -37,9 +45,14 @@ d20946 1
 a20946 1
 anifap.com,anifap.xyz,anitokyo.tv,anitokyo1.top,hentasis.me##body.playerCode > div[style^="position: absolute;"][onclick]
 d21114 1
+a21132 1
+sia.ru##div[class*="banana"]
 d21134 1
 a21134 1
-1777.ru,19rus.info,19rusinfo.ru,1ul.ru,20minut.ua,2goroda.ru,365info.kz,3ys.ru,73online.ru,9tv.co.il,advis.ru,agronews.ua,agropolit.com,agroreview.com,agrotimes.net,autodmir.ru,avtodispetcher.ru,bakemono.ru,bel.ru,bezformata.com,bhub.com.ua,bon.ua,budport.com.ua,c-o-k.ru,car.ru,cbonds.ru,champion.com.ua,codernet.ru,comments.ua,con-med.ru,cryptonewsua.com,cybersport.ru,echosevera.ru,elevatorist.com,epravda.com.ua,fatalgame.com,fbu.ua,filmz.ru,fishingsib.ru,flamp.ru,food.ru,footballua.tv,forum-profit.ru,gameguru.ru,gecid.com,goodfon.ru,gorodvitebsk.by,gp.by,growhow.in.ua,haqqin.az,hunting.ru,industry-hunter.com,infpol.ru,investfunds.ru,ircity.ru,islam-today.ru,iz.ru,joborgame.ru,jut.su,k1news.ru,klavogonki.ru,knijky.ru,kt.kz,kurkul.com,kursktv.ru,laradiofm.ru,latifundist.com,lifehacker.ru,livesport.ws,locals.md,medialeaks.ru,megatyumen.ru,menportal.info,myslo.ru,neboleem.net,news.ru,nmedic.info,novosti-n.org,nv-online.info,oboz.info,obyava.ua,okna.ua,penza-press.ru,povarenok.ru,ppt4web.ru,pravda.com.ua,pravoved.ru,primemusic.cc,profibeer.ru,prostatitanet.com,redfm.ru,relax-fm.ru,rg.ru,roscontrol.com,russiatoday.ru,sibnet.ru,skachat-kino.fun,smolensk-i.ru,spanishrestaurant.ru,sport5.by,sportanalytic.com,sportguide.kiev.ua,start33.ru,stopgame.ru,superagronom.com,syzran-small.ru,tengriauto.kz,tengrinews.kz,tengrisport.kz,tengritravel.kz,the-flow.ru,thequestion.ru,thg.ru,tveda.ru,twentysix.ru,ufanotes.ru,ura.news,valverus.info,vashurok.ru,veterinargid.ru,vikka.ua,vinnitsa.info,vklasse.online,vovka.su,vringe.com,vshkole.com,woman.ru,wonderzine.com,wowjp.net,xsport.ua,zagorod.spb.ru,zaim-profi.ru,zaryad.me,zebra-tv.ru,zemliak.com,zoohoz.ru,zorbasmedia.ru##div[class*="banner"]
+1777.ru,19rus.info,19rusinfo.ru,1ul.ru,20minut.ua,2goroda.ru,365info.kz,3ys.ru,73online.ru,9tv.co.il,advis.ru,agronews.ua,agropolit.com,agroreview.com,agrotimes.net,autodmir.ru,avtodispetcher.ru,bakemono.ru,bel.ru,bezformata.com,bhub.com.ua,bon.ua,budport.com.ua,c-o-k.ru,car.ru,cbonds.ru,champion.com.ua,codernet.ru,comments.ua,con-med.ru,cryptonewsua.com,cybersport.ru,echosevera.ru,elevatorist.com,epravda.com.ua,fatalgame.com,fbu.ua,filmz.ru,fishingsib.ru,flamp.ru,food.ru,footballua.tv,forum-profit.ru,gameguru.ru,gecid.com,goodfon.ru,gorodvitebsk.by,gp.by,growhow.in.ua,haqqin.az,hunting.ru,industry-hunter.com,infpol.ru,investfunds.ru,ircity.ru,islam-today.ru,iz.ru,joborgame.ru,jut.su,k1news.ru,klavogonki.ru,knijky.ru,kt.kz,kurkul.com,kursktv.ru,laradiofm.ru,latifundist.com,lifehacker.ru,livesport.ws,locals.md,medialeaks.ru,megatyumen.ru,menportal.info,myslo.ru,neboleem.net,news.ru,nmedic.info,novosti-n.org,nv-online.info,oboz.info,obyava.ua,okna.ua,penza-press.ru,povarenok.ru,ppt4web.ru,pravda.com.ua,pravoved.ru,primemusic.cc,profibeer.ru,prostatitanet.com,redfm.ru,relax-fm.ru,rg.ru,roscontrol.com,russiatoday.ru,sia.ru,sibnet.ru,skachat-kino.fun,smolensk-i.ru,spanishrestaurant.ru,sport5.by,sportanalytic.com,sportguide.kiev.ua,start33.ru,stopgame.ru,superagronom.com,syzran-small.ru,tengriauto.kz,tengrinews.kz,tengrisport.kz,tengritravel.kz,the-flow.ru,thequestion.ru,thg.ru,tveda.ru,twentysix.ru,ufanotes.ru,ura.news,valverus.info,vashurok.ru,veterinargid.ru,vikka.ua,vinnitsa.info,vklasse.online,vovka.su,vringe.com,vshkole.com,woman.ru,wonderzine.com,wowjp.net,xsport.ua,zagorod.spb.ru,zaim-profi.ru,zaryad.me,zebra-tv.ru,zemliak.com,zoohoz.ru,zorbasmedia.ru##div[class*="banner"]
+d21140 1
+a21140 1
+securitylab.ru,voxpopuli.kz##div[class*="banner_"]
 d21144 1
 d21184 1
 d21291 1
@@ -66,6 +79,8 @@ d22113 1
 d22221 1
 d22449 1
 d22454 1
+a22868 1
+pikabu.ru#?#article:-abp-has(> .story__main > div[class] + header > :empty)
 a22869 1
 pikabu.ru#?#article:-abp-has(> .story__main > div[class] ~ :not([class]))
 d22910 1
@@ -77,7 +92,7 @@ a24047 33
 ! Советсткий СПОРТ
 sovsport.ru###match-forecasts
 sovsport.ru##.offers-carousel
-sovsport.ru##[class*="_sidebar"] > div[class*="_container"]
+sovsport.ru##[class*="_sidebar"] > div ~ div[class*="_container"]
 sovsport.ru##[href*="/promo"]
 sovsport.ru##[href^="https://np.plat.services/"]
 sovsport.ru##a[class*="_btn"][target="_blank"][style*="background:"]
