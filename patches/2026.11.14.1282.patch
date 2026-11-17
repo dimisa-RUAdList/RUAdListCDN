@@ -1,8 +1,8 @@
-diff name:ruadlist lines:152 checksum:09ee162aba
+diff name:ruadlist lines:156 checksum:2fa6f08ee4
 d4 2
 a5 2
-! Last modified: Tue, 17 Nov 2026 13:08:53 +0000
-! Diff-Path: ../patches/2026.11.17.788.patch#ruadlist
+! Last modified: Tue, 17 Nov 2026 21:43:32 +0000
+! Diff-Path: ../patches/2026.11.17.1303.patch#ruadlist
 d13200 1
 a13200 2
 ||sia.ru/*/piroman_
@@ -84,7 +84,7 @@ a23218 1
 liveball.sx,liveball.*##.home-hero__odds
 a23220 1
 liveball.sx,liveball.*#?#.mt-panel-card:-abp-has(> [data-noclick])
-a24050 35
+a24050 39
 ! Советсткий СПОРТ
 sovsport.ru###match-forecasts
 sovsport.ru##.offers-carousel
@@ -106,6 +106,10 @@ sovsport.ru##div[class*="_advertisement"]
 sovsport.ru##div[class*="_bonus"]
 sovsport.ru##div[class*="_headerFlex"] div[class*="_wrapper"]
 sovsport.ru#?#div[class*="_mainPageContent"]:-abp-has(a[href*="/bookmaker"])
+sovsport.ru##div[class*="_matches"] > div[class*="_eventMatch"]
+sovsport.ru#?#div[class*="_menuWrapper"] div[class*="_container"] > div[class*="_item"]:-abp-has(> [class*="_advertisement"])
+sovsport.ru#?#div[class*="_menuWrapper"] div[class*="_container"] > div[class*="_item"]:-abp-has(> [href*="/bonuses"])
+sovsport.ru#?#div[class*="_menuWrapper"] div[class*="_container"] > div[class*="_item"]:-abp-has(> [href*="/predictions"])
 sovsport.ru##div[class*="_notice"]
 sovsport.ru##div[class*="_predictions"]
 sovsport.ru##div[class*="_seoBlock"]

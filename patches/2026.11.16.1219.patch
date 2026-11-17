@@ -1,8 +1,8 @@
-diff name:ruadlist lines:37 checksum:09ee162aba
+diff name:ruadlist lines:42 checksum:2fa6f08ee4
 d4 2
 a5 2
-! Last modified: Tue, 17 Nov 2026 13:08:53 +0000
-! Diff-Path: ../patches/2026.11.17.788.patch#ruadlist
+! Last modified: Tue, 17 Nov 2026 21:43:32 +0000
+! Diff-Path: ../patches/2026.11.17.1303.patch#ruadlist
 d13262 1
 d21612 1
 a21612 1
@@ -18,6 +18,11 @@ a23188 1
 liveball.sx,liveball.*#?#.mt-panel-card:-abp-has(> [data-noclick])
 a24034 1
 sovsport.ru#?#div[class$="_grid"] > div[class*="_cell "]:-abp-has(> div:empty)
+a24038 4
+sovsport.ru##div[class*="_matches"] > div[class*="_eventMatch"]
+sovsport.ru#?#div[class*="_menuWrapper"] div[class*="_container"] > div[class*="_item"]:-abp-has(> [class*="_advertisement"])
+sovsport.ru#?#div[class*="_menuWrapper"] div[class*="_container"] > div[class*="_item"]:-abp-has(> [href*="/bonuses"])
+sovsport.ru#?#div[class*="_menuWrapper"] div[class*="_container"] > div[class*="_item"]:-abp-has(> [href*="/predictions"])
 a24050 1
 ||sovsport.ru/api/bonus-rating
 d24312 1
