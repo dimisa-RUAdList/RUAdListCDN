@@ -1,8 +1,9 @@
-diff name:ruadlist lines:32 checksum:dcb42a57c6
+diff name:ruadlist lines:62 checksum:09ee162aba
 d4 2
 a5 2
-! Last modified: Tue, 17 Nov 2026 03:42:54 +0000
-! Diff-Path: ../patches/2026.11.17.222.patch#ruadlist
+! Last modified: Tue, 17 Nov 2026 13:08:53 +0000
+! Diff-Path: ../patches/2026.11.17.788.patch#ruadlist
+d13262 1
 d15827 1
 a18480 1
 sdelanounas.ru##.sidebar-card--useful-links
@@ -11,15 +12,34 @@ a21258 1
 d21332 1
 a21332 1
 irr.by,myfootball.pw,myfootball.ws,sdelanounas.ru##div[class^="banner_"]
+d21611 1
+a21611 1
+bina.az,bitpump.ru,botanichka.ru,chem21.info,enovosty.com,ixbt.games,ixbt.market,ixbt.pro,ixbt.video,ogorodnik.com,orelgrad.ru,propozitsiya.com,qafqazinfo.az,snow-motion.ru,stadion.uz,tap.az,turbo.az,uralpress.ru,www.ixbt.com,www1.ru##div[id*="banner"]
 d22064 1
 a22064 1
 epscape.*##[class^="otk"][class*="-"]
 d22746 1
 a22746 1
 ||pikabu.ru/ajax/*?v2lVm=$xmlhttprequest
+a22836 1
+pikabu.ru#?#article:-abp-has(> .story__main > div[class] + header > span)
+a23185 1
+liveball.sx,liveball.*##.home-hero__odds
+a23187 1
+liveball.sx,liveball.*#?#.mt-panel-card:-abp-has(> [data-noclick])
+a24033 1
+sovsport.ru#?#div[class$="_grid"] > div[class*="_cell "]:-abp-has(> div:empty)
 d24041 1
 a24041 1
 sovsport.ru##div[class*="_widget"]:not([class*="_widgetNews"])
+a24049 1
+||sovsport.ru/api/bonus-rating
+d24311 1
+a24311 1
+ya.ru##html[class*="seecctslan_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
+d24313 1
+a24313 1
+ya.ru##section[style*="seecctslan-items-count:"]
 d27560 1
 a27560 1
 www.1tv.ru##div[class*="Branding_branding_"]:style(padding-top: unset !important)
@@ -29,5 +49,15 @@ sdelanounas.ru###modalOverlay
 sdelanounas.ru##body:style(overflow-x: auto !important; position: initial !important)
 sdelanounas.ru##html:style(overflow-x: auto !important; position: initial !important)
 ! ---
+d29089 5
+a29093 5
+dzen.ru##.content div[class*="--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child > [class]:only-child
+dzen.ru##.content div[class*="--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child:style(background-color: inherit !important)
+dzen.ru##.content div[class*="--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty + div[class]:not(last-child):empty + div[class]:last-child:empty:style(background-color: inherit !important)
+dzen.ru##.content div[class*="--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty + div[class]:not(last-child):empty:style(background-color: inherit !important)
+dzen.ru##.content div[class*="--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty:style(background-color: inherit !important)
+d29764 1
+a29764 1
+progorod62.ru,sovsport.ru,ura.news##+js(prevent-fetch, _rsc=)
 a30379 1
 /adfox/*/getCode?$third-party,xmlhttprequest

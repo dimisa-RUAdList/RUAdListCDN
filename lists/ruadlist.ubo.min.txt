@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Tue, 17 Nov 2026 03:42:54 +0000
-! Diff-Path: ../patches/2026.11.17.222.patch#ruadlist
+! Last modified: Tue, 17 Nov 2026 13:08:53 +0000
+! Diff-Path: ../patches/2026.11.17.788.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -13259,7 +13259,6 @@ igdz1.ru^$script,domain=igdz.ru
 ||sovets.net/teaser/
 ||sovets24.ru/?r=$xmlhttprequest
 ||sovets24.ru^*/modal-baner.css$stylesheet
-||sovsport.ru/api/smartTableWidget
 ||sozdik.kz/code/js/b.js
 ||spac.me/js/mobiads.js
 ||space.com.ua/ban_
@@ -21609,7 +21608,7 @@ finmarket.ru##div[id*="_ban"]
 niv.ru##div[id*="_ban_"]
 kavkazova.ru##div[id*="actionteaser"]
 ochevidets.ru##div[id*="baner"]
-bina.az,bitpump.ru,botanichka.ru,chem21.info,enovosty.com,ixbt.games,ixbt.market,ixbt.pro,ixbt.video,ogorodnik.com,orelgrad.ru,propozitsiya.com,qafqazinfo.az,snow-motion.ru,stadion.uz,tap.az,turbo.az,uralpress.ru,www.ixbt.com##div[id*="banner"]
+bina.az,bitpump.ru,botanichka.ru,chem21.info,enovosty.com,ixbt.games,ixbt.market,ixbt.pro,ixbt.video,ogorodnik.com,orelgrad.ru,propozitsiya.com,qafqazinfo.az,snow-motion.ru,stadion.uz,tap.az,turbo.az,uralpress.ru,www.ixbt.com,www1.ru##div[id*="banner"]
 sportsdaily.ru##div[id*="bonus"]
 propozitsiya.com##div[id*="bunner"]
 drom.ru,newsvl.ru,vl.ru##div[id*="candy"]
@@ -22835,6 +22834,7 @@ pikabu.ru#?#article:-abp-has(> .story__main > div:not([class]))
 pikabu.ru#?#article:-abp-has(> .story__main > div:only-child)
 pikabu.ru#?#article:-abp-has(> .story__main > div[class] + div[class])
 pikabu.ru#?#article:-abp-has(> .story__main > div[class] + header > :empty)
+pikabu.ru#?#article:-abp-has(> .story__main > div[class] + header > span)
 pikabu.ru#?#article:-abp-has(> .story__main > div[class] ~ :empty ~ div[class])
 pikabu.ru#?#article:-abp-has(> .story__main > div[class] ~ :not([class]))
 pikabu.ru#?#article:-abp-has(> .story__main > div[class] ~ span)
@@ -23184,8 +23184,10 @@ kp.ru#?#body.wp-theme-sports .show-for-large:-abp-has(> .left-sidebar)
 kp.ru##div[class^="ad-slot"]
 kp.ru##div[style*="height:"][style*="250px"][style*="important"]
 ! LiveBall
+liveball.sx,liveball.*##.home-hero__odds
 liveball.sx,liveball.*##[data-noclick]:not(#player_block)
 liveball.sx,liveball.*##body > div[class]:not([id]):not([style]):empty
+liveball.sx,liveball.*#?#.mt-panel-card:-abp-has(> [data-noclick])
 ||cdn.lbs.pw/rek/
 ||lbs.pw/liveball/img/brand
 ||liveball.*/public/*clickunder.js
@@ -24032,6 +24034,7 @@ sovsport.ru##a[href*="winline.ru"]
 sovsport.ru##a[href="#match-forecasts"]
 sovsport.ru##div[class$="_bet"]
 sovsport.ru##div[class$="_book"]
+sovsport.ru#?#div[class$="_grid"] > div[class*="_cell "]:-abp-has(> div:empty)
 sovsport.ru##div[class*="_advertisement"]
 sovsport.ru##div[class*="_bonus"]
 sovsport.ru##div[class*="_headerFlex"] div[class*="_wrapper"]
@@ -24048,6 +24051,7 @@ sovsport.ru#?#h3:-abp-contains(/бонусы| ставки | ставок | ст
 sovsport.ru##section[class*="_advPlayer"]
 sovsport.ru#?#ul[class*="_mediaList"] > li:-abp-has(a[href*="bonus"])
 sovsport.ru#?#ul[class*="_mediaList"] > li:-abp-has(a[href*="bookmaker"])
+||sovsport.ru/api/bonus-rating
 ||sovsport.ru/api/proxy/api/promolink/
 ! Sports.ru, а также by.tribuna.com, ua.tribuna.com
 sports.ru###media-promo-mount-point [class*="adv-text"]
@@ -24309,9 +24313,9 @@ ya.ru##.i-mini-bem[class*="banner"]
 ya.ru##[style*="feed"][style*="min-height:"]
 ya.ru##body > div[data-hydration-id] > [href^="https://yabs.yandex.ru/count/"] + div
 ya.ru##body > div[data-hydration-id] > div > [src^="https://yabs.yandex.ru/count/"] + div
-ya.ru##html[class*="secctslon_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
+ya.ru##html[class*="seecctslan_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
 ya.ru##section[class^="reaso"]
-ya.ru##section[style*="secctslon-items-count:"]
+ya.ru##section[style*="seecctslan-items-count:"]
 ya.ru##ul[class*="-section__list"]
 ya.ru,yandex.ru,yandex.*##.AdvProductGallery
 ya.ru,yandex.ru,yandex.*##.Bno_isPromoSnippet
@@ -29092,11 +29096,11 @@ disk.yandex.by,disk.yandex.com,disk.yandex.kz,disk.yandex.ru,disk.yandex.uz##div
 ! ---
 ! дзен
 ! главная
-dzen.ru##.secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child > [class]:only-child
-dzen.ru##.secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child:style(background-color: inherit !important)
-dzen.ru##.secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty + div[class]:not(last-child):empty + div[class]:last-child:empty:style(background-color: inherit !important)
-dzen.ru##.secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty + div[class]:not(last-child):empty:style(background-color: inherit !important)
-dzen.ru##.secondChunkSyncExp div[class*="--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty:style(background-color: inherit !important)
+dzen.ru##.content div[class*="--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child > [class]:only-child
+dzen.ru##.content div[class*="--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child:style(background-color: inherit !important)
+dzen.ru##.content div[class*="--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty + div[class]:not(last-child):empty + div[class]:last-child:empty:style(background-color: inherit !important)
+dzen.ru##.content div[class*="--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty + div[class]:not(last-child):empty:style(background-color: inherit !important)
+dzen.ru##.content div[class*="--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty:style(background-color: inherit !important)
 dzen.ru##[class*="CardRtb"]
 dzen.ru##[class*="card-rtb"]
 dzen.ru##[class*="desktop"] ~ [id*="teaser"]
@@ -29767,7 +29771,7 @@ dumatv.ru##+js(prevent-addEventListener, message, AUTOPLAY)
 shuba.life##+js(prevent-addEventListener, message, element.contentWindow)
 www.rambler.ru##+js(prevent-addEventListener, scroll, requestAnimationFrame)
 dzen.ru,sportsdzen.ru##+js(prevent-fetch, /stats/bulk|stats/pixels|zen_audit/)
-progorod62.ru,ura.news##+js(prevent-fetch, _rsc=)
+progorod62.ru,sovsport.ru,ura.news##+js(prevent-fetch, _rsc=)
 evribiont.xyz##+js(prevent-setTimeout, adTestElement)
 kinofilm.io##+js(prevent-setTimeout, baitHidden)
 aigenda.ru##+js(prevent-setTimeout, combinedDetector)

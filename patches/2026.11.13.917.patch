@@ -1,8 +1,8 @@
-diff name:ruadlist lines:161 checksum:dcb42a57c6
+diff name:ruadlist lines:182 checksum:09ee162aba
 d4 2
 a5 2
-! Last modified: Tue, 17 Nov 2026 03:42:54 +0000
-! Diff-Path: ../patches/2026.11.17.222.patch#ruadlist
+! Last modified: Tue, 17 Nov 2026 13:08:53 +0000
+! Diff-Path: ../patches/2026.11.17.788.patch#ruadlist
 a2154 1
 ||fly.codes^$third-party
 a8441 1
@@ -11,6 +11,7 @@ d13198 1
 a13198 2
 ||sia.ru/*/piroman_
 ||sia.ru/files/b/
+d13259 1
 a14482 1
 sia.ru###left_fixed_block-rand-1
 d15347 1
@@ -74,6 +75,9 @@ d21462 1
 d21487 1
 d21533 1
 d21554 1
+d21640 1
+a21640 1
+bina.az,bitpump.ru,botanichka.ru,chem21.info,enovosty.com,ixbt.games,ixbt.market,ixbt.pro,ixbt.video,ogorodnik.com,orelgrad.ru,propozitsiya.com,qafqazinfo.az,snow-motion.ru,stadion.uz,tap.az,turbo.az,uralpress.ru,www.ixbt.com,www1.ru##div[id*="banner"]
 a21645 1
 anti-malware.ru##div[id*="footer-message"]
 d22092 1
@@ -87,14 +91,19 @@ d22454 1
 d22779 1
 a22779 1
 ||pikabu.ru/ajax/*?v2lVm=$xmlhttprequest
-a22868 1
+a22868 2
 pikabu.ru#?#article:-abp-has(> .story__main > div[class] + header > :empty)
+pikabu.ru#?#article:-abp-has(> .story__main > div[class] + header > span)
 d22911 1
 a22911 1
 /ybn3j9e?$third-party,xmlhttprequest
+a23217 1
+liveball.sx,liveball.*##.home-hero__odds
+a23219 1
+liveball.sx,liveball.*#?#.mt-panel-card:-abp-has(> [data-noclick])
 a23630 1
 116.ru,14.ru,161.ru,164.ru,173.ru,178.ru,26.ru,29.ru,35.ru,43.ru,45.ru,48.ru,51.ru,53.ru,56.ru,59.ru,60.ru,63.ru,68.ru,71.ru,72.ru,74.ru,76.ru,86.ru,89.ru,93.ru,chita.ru,e1.ru,fontanka.ru,ircity.ru,izh1.ru,mgorsk.ru,msk1.ru,ngs.ru,ngs22.ru,ngs24.ru,ngs42.ru,ngs55.ru,ngs70.ru,nn.ru,sochi1.ru,sterlitamak1.ru,tolyatty.ru,ufa1.ru,v1.ru,vladivostok1.ru,voronezh1.ru,ya62.ru#?#div[class^="announcementList_"] > div[class^="wrap_"]:-abp-has(> div[class*=" advMark_"])
-a24048 33
+a24048 35
 ! Советсткий СПОРТ
 sovsport.ru###match-forecasts
 sovsport.ru##.offers-carousel
@@ -111,6 +120,7 @@ sovsport.ru##a[href*="winline.ru"]
 sovsport.ru##a[href="#match-forecasts"]
 sovsport.ru##div[class$="_bet"]
 sovsport.ru##div[class$="_book"]
+sovsport.ru#?#div[class$="_grid"] > div[class*="_cell "]:-abp-has(> div:empty)
 sovsport.ru##div[class*="_advertisement"]
 sovsport.ru##div[class*="_bonus"]
 sovsport.ru##div[class*="_headerFlex"] div[class*="_wrapper"]
@@ -127,13 +137,14 @@ sovsport.ru#?#h3:-abp-contains(/бонусы| ставки | ставок | ст
 sovsport.ru##section[class*="_advPlayer"]
 sovsport.ru#?#ul[class*="_mediaList"] > li:-abp-has(a[href*="bonus"])
 sovsport.ru#?#ul[class*="_mediaList"] > li:-abp-has(a[href*="bookmaker"])
+||sovsport.ru/api/bonus-rating
 ||sovsport.ru/api/proxy/api/promolink/
 d24309 1
 a24309 1
-ya.ru##html[class*="secctslon_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
+ya.ru##html[class*="seecctslan_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
 d24311 1
 a24311 1
-ya.ru##section[style*="secctslon-items-count:"]
+ya.ru##section[style*="seecctslan-items-count:"]
 a27502 1
 ||rapp.su/assets/js/player/counter.js
 d27557 1
@@ -149,7 +160,17 @@ d28850 2
 a28851 2
 footbole24.com,kingball.top,sportcsat.com,sportcsat.ru,streame.center,vitalsport1.ru##div[style^="position:"][style*=" top: 0px; left: 0px; width: 100%; height: 100%;"][style*="z-index:"][style*="cursor: pointer;"]
 footbole24.com,kingball.top,sportcsat.com,sportcsat.ru,streame.center,vitalsport1.ru##iframe[src]:style(pointer-events: auto !important)
+d29086 5
+a29090 5
+dzen.ru##.content div[class*="--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child > [class]:only-child
+dzen.ru##.content div[class*="--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child:style(background-color: inherit !important)
+dzen.ru##.content div[class*="--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty + div[class]:not(last-child):empty + div[class]:last-child:empty:style(background-color: inherit !important)
+dzen.ru##.content div[class*="--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty + div[class]:not(last-child):empty:style(background-color: inherit !important)
+dzen.ru##.content div[class*="--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty:style(background-color: inherit !important)
 d29437 1
+d29762 1
+a29762 1
+progorod62.ru,sovsport.ru,ura.news##+js(prevent-fetch, _rsc=)
 d29786 1
 a29794 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, detected)
