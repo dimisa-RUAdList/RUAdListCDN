@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 16 Nov 2026 20:19:14 +0000
-! Diff-Path: ../patches/2026.11.16.1219.patch#ruadlist
+! Last modified: Tue, 17 Nov 2026 03:42:54 +0000
+! Diff-Path: ../patches/2026.11.17.222.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -22062,7 +22062,7 @@ ebalovo.*,epalovo.*##.fad
 ebalovo.*,epalovo.*##.pad
 onliner.by#?#em:-abp-contains(нож блокировщику)
 botanam.net,gdzputina.me##embed
-epscape.*##.otk-slot
+epscape.*##[class^="otk"][class*="-"]
 fap-guru.*,mult-porno.*,sex-studentki.*##.vpsembedmob
 imageup.ru##fieldset[style^="display: inline; width: 45%;"]
 znak.com##figure
