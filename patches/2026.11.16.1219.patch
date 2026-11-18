@@ -1,8 +1,8 @@
-diff name:ruadlist lines:51 checksum:9d82a5dfa4
+diff name:ruadlist lines:57 checksum:97bdf2ef9d
 d4 2
 a5 2
-! Last modified: Wed, 18 Nov 2026 12:56:46 +0000
-! Diff-Path: ../patches/2026.11.18.776.patch#ruadlist
+! Last modified: Wed, 18 Nov 2026 21:20:29 +0000
+! Diff-Path: ../patches/2026.11.18.1280.patch#ruadlist
 d13262 1
 a14980 1
 vk.com,vk.ru#?##spa_layout_content > div[style*="--vkui--z_index_popout"]:-abp-has([aria-label^="Вам видны"])
@@ -19,6 +19,12 @@ vk.com,vk.ru##div[role="main"] [data-feed-fpc-exclude]:not(:empty)
 d22065 1
 a22065 1
 epscape.*##[class^="otk"][class*="-"]
+d22708 1
+a22708 1
+/^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]*\/[^/?]*[.]{2,}.*$/$script
+d22747 1
+a22747 1
+||pikabu.ru/ajax/*?iHY0b=$xmlhttprequest
 a22837 1
 pikabu.ru#?#article:-abp-has(> .story__main > div[class] + header > span)
 a23186 1
