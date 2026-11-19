@@ -1,8 +1,11 @@
-diff name:ruadlist lines:57 checksum:26623e12e2
+diff name:ruadlist lines:65 checksum:fb2bc4ea56
 d4 2
 a5 2
-! Last modified: Thu, 19 Nov 2026 03:13:26 +0000
-! Diff-Path: ../patches/2026.11.19.193.patch#ruadlist
+! Last modified: Thu, 19 Nov 2026 12:51:56 +0000
+! Diff-Path: ../patches/2026.11.19.771.patch#ruadlist
+d13093 1
+a13093 1
+||rusradio.ru/static/heart-widget.js
 d13262 1
 a14980 1
 vk.com,vk.ru#?##spa_layout_content > div[style*="--vkui--z_index_popout"]:-abp-has([aria-label^="Вам видны"])
@@ -19,18 +22,23 @@ vk.com,vk.ru##div[role="main"] [data-feed-fpc-exclude]:not(:empty)
 d22065 1
 a22065 1
 epscape.*##[class^="otk"][class*="-"]
+a22450 1
+byxatab.com#?#section.sect.sect--bdt:nth-of-type(2) #dle-content > a:-abp-has(> .icon-arrow-right > .item__meta3:last-child)
 d22708 1
 a22708 1
 /^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]*\/[^/?]*[.]{2,}.*$/$script
 d22747 1
 a22747 1
 ||pikabu.ru/ajax/*?iHY0b=$xmlhttprequest
+d22837 1
 a22837 1
-pikabu.ru#?#article:-abp-has(> .story__main > div[class] + header > span)
+pikabu.ru#?#article:-abp-has(> .story__main > div[class] + header span:empty)
 a23186 1
 liveball.sx,liveball.*##.home-hero__odds
 a23188 1
 liveball.sx,liveball.*#?#.mt-panel-card:-abp-has(> [data-noclick])
+a23254 1
+dzen.ru,sportsdzen.ru##[id*="_R-C-"]
 a24034 1
 sovsport.ru#?#div[class$="_grid"] > div[class*="_cell "]:-abp-has(> div:empty)
 a24038 4

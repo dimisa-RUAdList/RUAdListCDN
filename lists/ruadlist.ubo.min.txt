@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Thu, 19 Nov 2026 03:13:26 +0000
-! Diff-Path: ../patches/2026.11.19.193.patch#ruadlist
+! Last modified: Thu, 19 Nov 2026 12:51:56 +0000
+! Diff-Path: ../patches/2026.11.19.771.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -13090,7 +13090,7 @@ igdz1.ru^$script,domain=igdz.ru
 ||ruspicbox.ru^*/clicunder.js
 ||rusport.live/wp-content/uploads/*/branding_
 ||rusport.live/wp-content/uploads/wpadcenter_uploads/
-||rusradio.ru/uploads/pixel.js
+||rusradio.ru/static/heart-widget.js
 ||russian.fi/include/banners.php
 ||russiandc.com/ebs_show.php?
 ||russianfood.com/js/informb_
@@ -22450,6 +22450,7 @@ amurmedia.ru,angarskmedia.ru,chitamedia.su,chukotkamedia.ru,eaomedia.ru,irkutskm
 dyvys.info#?#section.page-section:-abp-has(> .wrap > div > script)
 iguides.ru#?#section.row > section:-abp-has(> article [href*="?erid="])
 byxatab.com##section.sect.sect--bdt:nth-of-type(1)
+byxatab.com#?#section.sect.sect--bdt:nth-of-type(2) #dle-content > a:-abp-has(> .icon-arrow-right > .item__meta3:last-child)
 frankmedia.ru#?#section:-abp-has(> .block > .header > [href*="partners-material"])
 meteovesti.ru#?#section:-abp-has(> .border-bottom > .row [style="width:728px;height:90px;min-height:90px;overflow:hidden;"])
 tengrinews.kz#?#section:-abp-has(> .ya-news)
@@ -22836,8 +22837,7 @@ pikabu.ru#?#article:-abp-has(> .story__main > div:not(:-abp-has(*)))
 pikabu.ru#?#article:-abp-has(> .story__main > div:not([class]))
 pikabu.ru#?#article:-abp-has(> .story__main > div:only-child)
 pikabu.ru#?#article:-abp-has(> .story__main > div[class] + div[class])
-pikabu.ru#?#article:-abp-has(> .story__main > div[class] + header > :empty)
-pikabu.ru#?#article:-abp-has(> .story__main > div[class] + header > span)
+pikabu.ru#?#article:-abp-has(> .story__main > div[class] + header span:empty)
 pikabu.ru#?#article:-abp-has(> .story__main > div[class] ~ :empty ~ div[class])
 pikabu.ru#?#article:-abp-has(> .story__main > div[class] ~ :not([class]))
 pikabu.ru#?#article:-abp-has(> .story__main > div[class] ~ span)
@@ -23257,6 +23257,7 @@ dzen.ru##.news-rubricator [href="https://dzen.ru/news/rubric/chronologic"]
 dzen.ru##[aria-label="Контент страницы сюжета"] > [class*="discrete"] > div > div > div[id]
 dzen.ru#?#[aria-label="Контент страницы сюжета"] > [class*="discrete"] > div > div:-abp-has(> div[id])
 dzen.ru,sportsdzen.ru##[id*="_R-B-"]
+dzen.ru,sportsdzen.ru##[id*="_R-C-"]
 dzen.ru,sportsdzen.ru##[id*="_R-I-"]
 dzen.ru,sportsdzen.ru##[id*="_R-N-"]
 dzen.ru,sportsdzen.ru##[id*="_R-Q-"]
