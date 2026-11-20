@@ -1,8 +1,8 @@
-diff name:ruadlist lines:36 checksum:4b5acb20ff
+diff name:ruadlist lines:55 checksum:b231017374
 d4 2
 a5 2
-! Last modified: Fri, 20 Nov 2026 03:00:52 +0000
-! Diff-Path: ../patches/2026.11.20.180.patch#ruadlist
+! Last modified: Fri, 20 Nov 2026 11:23:07 +0000
+! Diff-Path: ../patches/2026.11.20.683.patch#ruadlist
 d13093 1
 a13093 1
 ||rusradio.ru/static/heart-widget.js
@@ -13,6 +13,8 @@ vk.com,vk.ru#?##spa_layout_content > div[style*="--vkui--z_index_popout"]:-abp-h
 d19635 1
 a19745 1
 vk.com,vk.ru##[id^="l_invite_"][id$="_promo"]
+a21262 1
+igromania.ru##div[class^="GtaButton_button_"]
 a21263 1
 igromania.ru##div[class^="HeaderPromo_"]
 a21893 1
@@ -25,13 +27,30 @@ a22707 1
 d22746 1
 a22746 1
 ||pikabu.ru/ajax/*?iHY0b=$xmlhttprequest
-d22836 2
+d22837 1
 a22837 1
 pikabu.ru#?#article:-abp-has(> .story__main > div[class] + header span:empty)
-a23256 1
+a23256 2
 dzen.ru,sportsdzen.ru##[id*="_R-C-"]
-a24041 4
+dzen.ru,sportsdzen.ru##[id*="_R-D-"]
+a24041 5
 sovsport.ru##div[class*="_matches"] > div[class*="_eventMatch"]
 sovsport.ru#?#div[class*="_menuWrapper"] div[class*="_container"] > div[class*="_item"]:-abp-has(> [class*="_advertisement"])
+sovsport.ru#?#div[class*="_menuWrapper"] div[class*="_container"] > div[class*="_item"]:-abp-has(> [href*="/bets/"])
 sovsport.ru#?#div[class*="_menuWrapper"] div[class*="_container"] > div[class*="_item"]:-abp-has(> [href*="/bonuses"])
 sovsport.ru#?#div[class*="_menuWrapper"] div[class*="_container"] > div[class*="_item"]:-abp-has(> [href*="/predictions"])
+d24316 1
+a24316 1
+ya.ru##html[class*="sectslon_top "] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
+d24318 1
+a24318 1
+ya.ru##section[style*="sectslon-items-count:"]
+d29099 5
+a29103 1
+dzen.ru##.yAq4AkIBtCFhYnrKpjv9ffTyKSwIHDaoBbXvxSZJavnOFSIszzVdoO4lLKSPD:style(opacity: 0 !important)
+d29169 1
+a29169 1
+dzen.ru,sportsdzen.ru##div[class^="news-"] [style*="margin-top: 0px; height: calc("][style*=" - "]
+d30065 1
+a30065 1
+dzen.ru##div:not([class^="dzen-desktop--trends-"]):matches-css(height: 212px):matches-css(width: 365px):style(opacity: 0 !important)

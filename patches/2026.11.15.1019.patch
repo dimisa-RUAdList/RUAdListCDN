@@ -1,8 +1,8 @@
-diff name:ruadlist lines:172 checksum:4b5acb20ff
+diff name:ruadlist lines:179 checksum:b231017374
 d4 2
 a5 2
-! Last modified: Fri, 20 Nov 2026 03:00:52 +0000
-! Diff-Path: ../patches/2026.11.20.180.patch#ruadlist
+! Last modified: Fri, 20 Nov 2026 11:23:07 +0000
+! Diff-Path: ../patches/2026.11.20.683.patch#ruadlist
 d13093 1
 a13093 1
 ||rusradio.ru/static/heart-widget.js
@@ -52,6 +52,8 @@ securitylab.ru,voxpopuli.kz##div[class*="banner_"]
 d21144 1
 a21268 1
 1tv.ru##div[class^="Branding_container_"]
+a21272 1
+igromania.ru##div[class^="GtaButton_button_"]
 a21273 1
 igromania.ru##div[class^="HeaderPromo_"]
 d21303 1
@@ -92,15 +94,17 @@ a22740 1
 d22779 1
 a22779 1
 ||pikabu.ru/ajax/*?iHY0b=$xmlhttprequest
-a22868 1
+a22868 2
+pikabu.ru#?#article:-abp-has(> .story__main > div[class] + header > :empty)
 pikabu.ru#?#article:-abp-has(> .story__main > div[class] + header span:empty)
 a23217 1
 liveball.sx,liveball.*##.home-hero__odds
 a23219 1
 liveball.sx,liveball.*#?#.mt-panel-card:-abp-has(> [data-noclick])
-a23285 1
+a23285 2
 dzen.ru,sportsdzen.ru##[id*="_R-C-"]
-a24049 39
+dzen.ru,sportsdzen.ru##[id*="_R-D-"]
+a24049 40
 ! Советсткий СПОРТ
 sovsport.ru###match-forecasts
 sovsport.ru##.offers-carousel
@@ -124,6 +128,7 @@ sovsport.ru##div[class*="_headerFlex"] div[class*="_wrapper"]
 sovsport.ru#?#div[class*="_mainPageContent"]:-abp-has(a[href*="/bookmaker"])
 sovsport.ru##div[class*="_matches"] > div[class*="_eventMatch"]
 sovsport.ru#?#div[class*="_menuWrapper"] div[class*="_container"] > div[class*="_item"]:-abp-has(> [class*="_advertisement"])
+sovsport.ru#?#div[class*="_menuWrapper"] div[class*="_container"] > div[class*="_item"]:-abp-has(> [href*="/bets/"])
 sovsport.ru#?#div[class*="_menuWrapper"] div[class*="_container"] > div[class*="_item"]:-abp-has(> [href*="/bonuses"])
 sovsport.ru#?#div[class*="_menuWrapper"] div[class*="_container"] > div[class*="_item"]:-abp-has(> [href*="/predictions"])
 sovsport.ru##div[class*="_notice"]
@@ -142,10 +147,10 @@ sovsport.ru#?#ul[class*="_mediaList"] > li:-abp-has(a[href*="bookmaker"])
 ||sovsport.ru/api/proxy/api/promolink/
 d24310 1
 a24310 1
-ya.ru##html[class*="seecctslan_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
+ya.ru##html[class*="sectslon_top "] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
 d24312 1
 a24312 1
-ya.ru##section[style*="seecctslan-items-count:"]
+ya.ru##section[style*="sectslon-items-count:"]
 d27559 1
 a27559 1
 www.1tv.ru##div[class*="Branding_branding_"]:style(padding-top: unset !important)
@@ -160,14 +165,16 @@ a28853 2
 footbole24.com,kingball.top,sportcsat.com,sportcsat.ru,streame.center,vitalsport1.ru##div[style^="position:"][style*=" top: 0px; left: 0px; width: 100%; height: 100%;"][style*="z-index:"][style*="cursor: pointer;"]
 footbole24.com,kingball.top,sportcsat.com,sportcsat.ru,streame.center,vitalsport1.ru##iframe[src]:style(pointer-events: auto !important)
 d29088 5
-a29092 5
-dzen.ru##.content div[class*="--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child > [class]:only-child
-dzen.ru##.content div[class*="--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child:style(background-color: inherit !important)
-dzen.ru##.content div[class*="--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty + div[class]:not(last-child):empty + div[class]:last-child:empty:style(background-color: inherit !important)
-dzen.ru##.content div[class*="--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty + div[class]:not(last-child):empty:style(background-color: inherit !important)
-dzen.ru##.content div[class*="--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty:style(background-color: inherit !important)
+a29092 1
+dzen.ru##.yAq4AkIBtCFhYnrKpjv9ffTyKSwIHDaoBbXvxSZJavnOFSIszzVdoO4lLKSPD:style(opacity: 0 !important)
+d29158 1
+a29158 1
+dzen.ru,sportsdzen.ru##div[class^="news-"] [style*="margin-top: 0px; height: calc("][style*=" - "]
 d29763 1
 a29763 1
 progorod62.ru,sovsport.ru,ura.news##+js(prevent-fetch, _rsc=)
+d30054 1
+a30054 1
+dzen.ru##div:not([class^="dzen-desktop--trends-"]):matches-css(height: 212px):matches-css(width: 365px):style(opacity: 0 !important)
 a30378 1
 /adfox/*/getCode?$third-party,xmlhttprequest

@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 20 Nov 2026 03:00:52 +0000
-! Diff-Path: ../patches/2026.11.20.180.patch#ruadlist
+! Last modified: Fri, 20 Nov 2026 11:23:07 +0000
+! Diff-Path: ../patches/2026.11.20.683.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -21262,6 +21262,7 @@ comedy-radio.ru,radioromantika.ru,relax-fm.ru,veseloeradio.ru##div[class^="D_"][
 tass.ru##div[class^="DesktopLayout_top"]
 rg.ru##div[class^="EditorialPageArticleAside_item"][style^="height:"]
 apteka.ru##div[class^="Eshop"]
+igromania.ru##div[class^="GtaButton_button_"]
 newsru.co.il##div[class^="HP_"]
 igromania.ru##div[class^="HeaderPromo_"]
 igromania.ru##div[class^="KeysForGamers_button"]
@@ -22838,6 +22839,7 @@ pikabu.ru#?#article:-abp-has(> .story__main > div:not(:-abp-has(*)))
 pikabu.ru#?#article:-abp-has(> .story__main > div:not([class]))
 pikabu.ru#?#article:-abp-has(> .story__main > div:only-child)
 pikabu.ru#?#article:-abp-has(> .story__main > div[class] + div[class])
+pikabu.ru#?#article:-abp-has(> .story__main > div[class] + header > :empty)
 pikabu.ru#?#article:-abp-has(> .story__main > div[class] + header span:empty)
 pikabu.ru#?#article:-abp-has(> .story__main > div[class] ~ :empty ~ div[class])
 pikabu.ru#?#article:-abp-has(> .story__main > div[class] ~ :not([class]))
@@ -23259,6 +23261,7 @@ dzen.ru##[aria-label="Контент страницы сюжета"] > [class*="
 dzen.ru#?#[aria-label="Контент страницы сюжета"] > [class*="discrete"] > div > div:-abp-has(> div[id])
 dzen.ru,sportsdzen.ru##[id*="_R-B-"]
 dzen.ru,sportsdzen.ru##[id*="_R-C-"]
+dzen.ru,sportsdzen.ru##[id*="_R-D-"]
 dzen.ru,sportsdzen.ru##[id*="_R-I-"]
 dzen.ru,sportsdzen.ru##[id*="_R-N-"]
 dzen.ru,sportsdzen.ru##[id*="_R-Q-"]
@@ -24046,6 +24049,7 @@ sovsport.ru##div[class*="_headerFlex"] div[class*="_wrapper"]
 sovsport.ru#?#div[class*="_mainPageContent"]:-abp-has(a[href*="/bookmaker"])
 sovsport.ru##div[class*="_matches"] > div[class*="_eventMatch"]
 sovsport.ru#?#div[class*="_menuWrapper"] div[class*="_container"] > div[class*="_item"]:-abp-has(> [class*="_advertisement"])
+sovsport.ru#?#div[class*="_menuWrapper"] div[class*="_container"] > div[class*="_item"]:-abp-has(> [href*="/bets/"])
 sovsport.ru#?#div[class*="_menuWrapper"] div[class*="_container"] > div[class*="_item"]:-abp-has(> [href*="/bonuses"])
 sovsport.ru#?#div[class*="_menuWrapper"] div[class*="_container"] > div[class*="_item"]:-abp-has(> [href*="/predictions"])
 sovsport.ru##div[class*="_notice"]
@@ -24322,9 +24326,9 @@ ya.ru##.i-mini-bem[class*="banner"]
 ya.ru##[style*="feed"][style*="min-height:"]
 ya.ru##body > div[data-hydration-id] > [href^="https://yabs.yandex.ru/count/"] + div
 ya.ru##body > div[data-hydration-id] > div > [src^="https://yabs.yandex.ru/count/"] + div
-ya.ru##html[class*="seecctslan_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
+ya.ru##html[class*="sectslon_top "] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
 ya.ru##section[class^="reaso"]
-ya.ru##section[style*="seecctslan-items-count:"]
+ya.ru##section[style*="sectslon-items-count:"]
 ya.ru##ul[class*="-section__list"]
 ya.ru,yandex.ru,yandex.*##.AdvProductGallery
 ya.ru,yandex.ru,yandex.*##.Bno_isPromoSnippet
@@ -29105,11 +29109,7 @@ disk.yandex.by,disk.yandex.com,disk.yandex.kz,disk.yandex.ru,disk.yandex.uz##div
 ! ---
 ! дзен
 ! главная
-dzen.ru##.content div[class*="--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child > [class]:only-child
-dzen.ru##.content div[class*="--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child:style(background-color: inherit !important)
-dzen.ru##.content div[class*="--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty + div[class]:not(last-child):empty + div[class]:last-child:empty:style(background-color: inherit !important)
-dzen.ru##.content div[class*="--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty + div[class]:not(last-child):empty:style(background-color: inherit !important)
-dzen.ru##.content div[class*="--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty:style(background-color: inherit !important)
+dzen.ru##.yAq4AkIBtCFhYnrKpjv9ffTyKSwIHDaoBbXvxSZJavnOFSIszzVdoO4lLKSPD:style(opacity: 0 !important)
 dzen.ru##[class*="CardRtb"]
 dzen.ru##[class*="card-rtb"]
 dzen.ru##[class*="desktop"] ~ [id*="teaser"]
@@ -29175,7 +29175,7 @@ dzen.ru,sportsdzen.ru##div[class*="body_branding"] > div[style*="background-colo
 dzen.ru,sportsdzen.ru##div[class*="body_branding"]:style(background: inherit !important)
 dzen.ru##div[class^="news"] [class*="skeleton"]:style(background-color: transparent !important)
 dzen.ru,sportsdzen.ru##div[class^="news-"] [class*="-root "]
-dzen.ru,sportsdzen.ru##div[class^="news-"] [style^="margin-top: 0px; height: calc("][style*=" - "]
+dzen.ru,sportsdzen.ru##div[class^="news-"] [style*="margin-top: 0px; height: calc("][style*=" - "]
 dzen.ru##div[class^="news-site-"][class*="-desktop-"]:style(background-color: transparent !important)
 dzen.ru,sportsdzen.ru##div[class^="news-site-"][class*="skeleton"]:style(background-color: transparent !important)
 dzen.ru##div[class^="news-top-stories-"][class$="other_extra"] ~ div:not([class^="news-top-stories-"][class$="other_extra"])
@@ -30071,7 +30071,7 @@ dzen.ru##div:matches-attr(/[a-z0-9]/=trends-entry-desktop)
 dzen.ru##div:matches-attr(/data-[a-z0-9]/=/-ad$/)
 dzen.ru##div:matches-attr(/data-is-/="false")
 dzen.ru##div:matches-path(/news/search?query=) [aria-label="Страница с новостями"] > div:only-child > div > div:first-child:not([style]):not([aria-label])
-dzen.ru##div:not([class^="dzen-desktop--trends-"]):matches-css(height: 212px):matches-css(width: 365px):style(background: inherit  !important)
+dzen.ru##div:not([class^="dzen-desktop--trends-"]):matches-css(height: 212px):matches-css(width: 365px):style(opacity: 0 !important)
 dzen.ru##div[class^="news-"]:matches-attr(/./=/-stub/)
 ozon.ru##div[data-widget="banner"]:matches-path(/my/reviews/promo):style(display: block !important)
 link.softoroom.org##div[id] > a[title]:hover:style(color: #1a73e8 !important; text-decoration: underline !important)

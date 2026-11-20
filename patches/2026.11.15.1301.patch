@@ -1,8 +1,8 @@
-diff name:ruadlist lines:107 checksum:4b5acb20ff
+diff name:ruadlist lines:114 checksum:b231017374
 d4 2
 a5 2
-! Last modified: Fri, 20 Nov 2026 03:00:52 +0000
-! Diff-Path: ../patches/2026.11.20.180.patch#ruadlist
+! Last modified: Fri, 20 Nov 2026 11:23:07 +0000
+! Diff-Path: ../patches/2026.11.20.683.patch#ruadlist
 d13093 1
 a13093 1
 ||rusradio.ru/static/heart-widget.js
@@ -35,6 +35,8 @@ a21127 1
 securitylab.ru,voxpopuli.kz##div[class*="banner_"]
 a21254 1
 1tv.ru##div[class^="Branding_container_"]
+a21258 1
+igromania.ru##div[class^="GtaButton_button_"]
 a21259 1
 igromania.ru##div[class^="HeaderPromo_"]
 d21328 1
@@ -56,22 +58,25 @@ a22703 1
 d22742 1
 a22742 1
 ||pikabu.ru/ajax/*?iHY0b=$xmlhttprequest
-a22831 1
+a22831 2
+pikabu.ru#?#article:-abp-has(> .story__main > div[class] + header > :empty)
 pikabu.ru#?#article:-abp-has(> .story__main > div[class] + header span:empty)
 a23180 1
 liveball.sx,liveball.*##.home-hero__odds
 a23182 1
 liveball.sx,liveball.*#?#.mt-panel-card:-abp-has(> [data-noclick])
-a23248 1
+a23248 2
 dzen.ru,sportsdzen.ru##[id*="_R-C-"]
+dzen.ru,sportsdzen.ru##[id*="_R-D-"]
 d24016 1
 a24016 1
 sovsport.ru##[class*="_sidebar"] > div ~ div[class*="_container"]
 a24028 1
 sovsport.ru#?#div[class$="_grid"] > div[class*="_cell "]:-abp-has(> div:empty)
-a24032 4
+a24032 5
 sovsport.ru##div[class*="_matches"] > div[class*="_eventMatch"]
 sovsport.ru#?#div[class*="_menuWrapper"] div[class*="_container"] > div[class*="_item"]:-abp-has(> [class*="_advertisement"])
+sovsport.ru#?#div[class*="_menuWrapper"] div[class*="_container"] > div[class*="_item"]:-abp-has(> [href*="/bets/"])
 sovsport.ru#?#div[class*="_menuWrapper"] div[class*="_container"] > div[class*="_item"]:-abp-has(> [href*="/bonuses"])
 sovsport.ru#?#div[class*="_menuWrapper"] div[class*="_container"] > div[class*="_item"]:-abp-has(> [href*="/predictions"])
 d24036 1
@@ -81,10 +86,10 @@ a24044 1
 ||sovsport.ru/api/bonus-rating
 d24306 1
 a24306 1
-ya.ru##html[class*="seecctslan_top"] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
+ya.ru##html[class*="sectslon_top "] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
 d24308 1
 a24308 1
-ya.ru##section[style*="seecctslan-items-count:"]
+ya.ru##section[style*="sectslon-items-count:"]
 d27555 1
 a27555 1
 www.1tv.ru##div[class*="Branding_branding_"]:style(padding-top: unset !important)
@@ -95,14 +100,16 @@ sdelanounas.ru##body:style(overflow-x: auto !important; position: initial !impor
 sdelanounas.ru##html:style(overflow-x: auto !important; position: initial !important)
 ! ---
 d29084 5
-a29088 5
-dzen.ru##.content div[class*="--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child > [class]:only-child
-dzen.ru##.content div[class*="--desktop-page-layout__afterHeader-"] div:only-child > div:only-child > div:only-child > div:first-child > div:first-child + div:last-child:style(background-color: inherit !important)
-dzen.ru##.content div[class*="--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty + div[class]:not(last-child):empty + div[class]:last-child:empty:style(background-color: inherit !important)
-dzen.ru##.content div[class*="--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty + div[class]:not(last-child):empty:style(background-color: inherit !important)
-dzen.ru##.content div[class*="--desktop-page-layout__afterHeader-"] div[class]:first-child > div[class]:first-child:empty:style(background-color: inherit !important)
+a29088 1
+dzen.ru##.yAq4AkIBtCFhYnrKpjv9ffTyKSwIHDaoBbXvxSZJavnOFSIszzVdoO4lLKSPD:style(opacity: 0 !important)
+d29154 1
+a29154 1
+dzen.ru,sportsdzen.ru##div[class^="news-"] [style*="margin-top: 0px; height: calc("][style*=" - "]
 d29759 1
 a29759 1
 progorod62.ru,sovsport.ru,ura.news##+js(prevent-fetch, _rsc=)
+d30050 1
+a30050 1
+dzen.ru##div:not([class^="dzen-desktop--trends-"]):matches-css(height: 212px):matches-css(width: 365px):style(opacity: 0 !important)
 a30374 1
 /adfox/*/getCode?$third-party,xmlhttprequest
