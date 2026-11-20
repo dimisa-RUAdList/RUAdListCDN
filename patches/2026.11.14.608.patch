@@ -1,10 +1,11 @@
-diff name:ruadlist lines:201 checksum:b231017374
+diff name:ruadlist lines:215 checksum:93581b78e4
 d4 2
 a5 2
-! Last modified: Fri, 20 Nov 2026 11:23:07 +0000
-! Diff-Path: ../patches/2026.11.20.683.patch#ruadlist
+! Last modified: Fri, 20 Nov 2026 19:59:54 +0000
+! Diff-Path: ../patches/2026.11.20.1199.patch#ruadlist
 a8442 1
 ||site/rtr/$script
+d10337 1
 d13092 1
 a13092 1
 ||rusradio.ru/static/heart-widget.js
@@ -173,6 +174,9 @@ sdelanounas.ru###modalOverlay
 sdelanounas.ru##body:style(overflow-x: auto !important; position: initial !important)
 sdelanounas.ru##html:style(overflow-x: auto !important; position: initial !important)
 ! ---
+d28806 1
+a28806 1
+shedevrum.ai###app > [class*="center"] > div[class]:style(height: unset !important)
 d28850 2
 a28851 2
 footbole24.com,kingball.top,sportcsat.com,sportcsat.ru,streame.center,vitalsport1.ru##div[style^="position:"][style*=" top: 0px; left: 0px; width: 100%; height: 100%;"][style*="z-index:"][style*="cursor: pointer;"]
@@ -184,12 +188,22 @@ d29156 1
 a29156 1
 dzen.ru,sportsdzen.ru##div[class^="news-"] [style*="margin-top: 0px; height: calc("][style*=" - "]
 d29437 1
+d29494 1
+a29498 1
+drive2.ru##+js(abort-on-property-read, Object.prototype.createAd)
+a29501 1
+shedevrum.ai##+js(abort-on-property-read, Object.prototype.isAutoPlacementUnit)
+d29619 1
+a29619 1
+drive2.ru,shedevrum.ai##+js(addEventListener-defuser, beforeunload, /setCookies|srcElement|this/)
+d29691 1
 d29762 1
 a29762 1
 progorod62.ru,sovsport.ru,ura.news##+js(prevent-fetch, _rsc=)
 d29786 1
 a29794 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, detected)
+d29852 1
 a30038 2
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##br + div[id] > p:style(margin-top: unset !important)
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##br + div[id]:style(height: auto !important)

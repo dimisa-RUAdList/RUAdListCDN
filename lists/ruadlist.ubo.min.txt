@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 20 Nov 2026 11:23:07 +0000
-! Diff-Path: ../patches/2026.11.20.683.patch#ruadlist
+! Last modified: Fri, 20 Nov 2026 19:59:54 +0000
+! Diff-Path: ../patches/2026.11.20.1199.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10335,7 +10335,6 @@ tass.ru##[data-no-mourning="true"][class^="DesktopLayout_above"]
 pasy.media##[data-remodal-id]
 okko.sport,okko.tv##[data-testid="player_osd"] > div[style*="--duration-"] > div:first-child:empty
 9111.ru##[id^="site-welcome"]
-drive2.com,drive2.ru#?#[itemtype="https://schema.org/BlogPosting"] .x-box[data-track]:-abp-has(.c-post-card)
 onliner.by##[onclick="window.openCookieConsentSettings()"]
 novoruskino.net##[src$="/social.gif"]
 24tv.ua##app-age-popup
@@ -28829,7 +28828,7 @@ shaiba.kz##.page-layout-without-banner:style(margin-top: 0 !important)
 shazoo.ru##html.dark > body:style(background-color: #171717 !important)
 shazoo.ru##html:not(.dark) > body:style(background: initial !important)
 ! ---
-shedevrum.ai###app > .items-center > div[class]:style(height: unset !important)
+shedevrum.ai###app > [class*="center"] > div[class]:style(height: unset !important)
 ! ---
 sherdog.com##body > div[class]:not([id])[style^="background-color"][style*="z-index:"]
 sherdog.com##html > body:style(overflow: auto !important)
@@ -29512,14 +29511,15 @@ anifap.com,anifap.xyz,anipoisk.org,anitokyo.tv,anitokyo1.top,hcdn.online,hentasi
 comedy-radio.ru,radioromantika.ru,relax-fm.ru,sm.news,veseloeradio.ru,www.e1.ru##+js(abort-on-property-read, Date.prototype.toUTCString)
 vk.com,vk.ru##+js(abort-on-property-read, Groups.showDisclaimer)
 rutor.org##+js(abort-on-property-read, Light.Popup)
-drive2.ru##+js(abort-on-property-read, Object.prototype.AdfoxXhrRequestPrepared)
 liveinternet.ru,yap.ru,yaplakal.com##+js(abort-on-property-read, Object.prototype.Metrika)
 livejournal.com,olegmakarenko.ru,periskop.su,shakko.ru,shiro-kino.ru,vadimrazumov.ru##+js(abort-on-property-read, Object.prototype._getBanner)
 rbc.ru##+js(abort-on-property-read, Object.prototype._isAutostartQueueSet)
 www.kinopoisk.ru##+js(abort-on-property-read, Object.prototype.bannerOptions)
+drive2.ru##+js(abort-on-property-read, Object.prototype.createAd)
 gorodrabot.by,gorodrabot.ru##+js(abort-on-property-read, Object.prototype.direct)
 dzen.ru,reshuent.ru,sdamgia.ru,sportsdzen.ru##+js(abort-on-property-read, Object.prototype.isAdfox)
 rbc.ru##+js(abort-on-property-read, Object.prototype.isApplySticky)
+shedevrum.ai##+js(abort-on-property-read, Object.prototype.isAutoPlacementUnit)
 auto.ru##+js(abort-on-property-read, Object.prototype.isTopAd)
 e1.ru,nova.rambler.ru##+js(abort-on-property-read, Object.prototype.loadBanner)
 24smi.org##+js(abort-on-property-read, Object.prototype.render)
@@ -29637,7 +29637,7 @@ doramaland.plus##+js(addEventListener-defuser, DOMContentLoaded, _Modal)
 xv-ru.com##+js(addEventListener-defuser, DOMContentLoaded, exo_tracker)
 litnet.com##+js(addEventListener-defuser, DOMContentLoaded, feedback)
 allboxing.ru##+js(addEventListener-defuser, DOMContentLoaded, popup)
-drive2.ru,shedevrum.ai##+js(addEventListener-defuser, beforeunload, /477|setCookies|srcElement/)
+drive2.ru,shedevrum.ai##+js(addEventListener-defuser, beforeunload, /setCookies|srcElement|this/)
 vedomosti.ru##+js(addEventListener-defuser, click, '', elements, a[href*="?from="])
 magnit.ru,regnum.ru##+js(addEventListener-defuser, click, '', elements, a[href*="utm_campaign"])
 forbes.ru##+js(addEventListener-defuser, click, '', elements, a[href*="utm_campaign="])
@@ -29709,7 +29709,6 @@ smotrim.ru##+js(json-prune, data.adverts data.ageRestriction)
 video.sports.ru##+js(json-prune, data.sponsorCampaign)
 1plus1.video##+js(json-prune, dl bpas)
 pikabu.ru##+js(json-prune, isVideoAutoplayMode)
-drive2.ru##+js(json-prune, offers)
 igromania.ru##+js(json-prune, results.fixed)
 ya.ru##+js(json-prune, rythm_market)
 znanija.com##+js(json-prune, tiers.TIER_ANY)
@@ -29870,7 +29869,6 @@ www.mos.ru##+js(set-constant, Object.prototype.disablePaste, false)
 1tv.ru##+js(set-constant, Object.prototype.disableSeek, noopFunc)
 kinokong.li##+js(set-constant, Object.prototype.disableSelection, noopFunc)
 dzen.ru,frontend.vh.yandex.ru##+js(set-constant, Object.prototype.getAutoplay, noopFunc)
-shedevrum.ai##+js(set-constant, Object.prototype.getUaasConfig, undefined)
 frontend.vh.yandex.ru##+js(set-constant, Object.prototype.initialAutoplay, null)
 rbc.ru,rbcrealty.ru,sportrbc.ru##+js(set-constant, Object.prototype.livetv-state, true)
 tenews.org.ua##+js(set-constant, Object.prototype.manualAutoplay_, null)

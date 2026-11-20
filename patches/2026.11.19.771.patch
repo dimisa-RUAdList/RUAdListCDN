@@ -1,8 +1,9 @@
-diff name:ruadlist lines:29 checksum:b231017374
+diff name:ruadlist lines:43 checksum:93581b78e4
 d4 2
 a5 2
-! Last modified: Fri, 20 Nov 2026 11:23:07 +0000
-! Diff-Path: ../patches/2026.11.20.683.patch#ruadlist
+! Last modified: Fri, 20 Nov 2026 19:59:54 +0000
+! Diff-Path: ../patches/2026.11.20.1199.patch#ruadlist
+d10338 1
 a13945 1
 kanobu.ru###__next > div > .bg-background > section[aria-label]
 a21263 1
@@ -19,12 +20,25 @@ ya.ru##html[class*="sectslon_top "] main > div[class*="__"] ~ div[class*="__"] ~
 d24326 1
 a24326 1
 ya.ru##section[style*="sectslon-items-count:"]
+d28827 1
+a28827 1
+shedevrum.ai###app > [class*="center"] > div[class]:style(height: unset !important)
 d29107 5
 a29111 1
 dzen.ru##.yAq4AkIBtCFhYnrKpjv9ffTyKSwIHDaoBbXvxSZJavnOFSIszzVdoO4lLKSPD:style(opacity: 0 !important)
 d29177 1
 a29177 1
 dzen.ru,sportsdzen.ru##div[class^="news-"] [style*="margin-top: 0px; height: calc("][style*=" - "]
+d29514 1
+a29518 1
+drive2.ru##+js(abort-on-property-read, Object.prototype.createAd)
+a29521 1
+shedevrum.ai##+js(abort-on-property-read, Object.prototype.isAutoPlacementUnit)
+d29639 1
+a29639 1
+drive2.ru,shedevrum.ai##+js(addEventListener-defuser, beforeunload, /setCookies|srcElement|this/)
+d29711 1
+d29872 1
 d30073 1
 a30073 1
 dzen.ru##div:not([class^="dzen-desktop--trends-"]):matches-css(height: 212px):matches-css(width: 365px):style(opacity: 0 !important)

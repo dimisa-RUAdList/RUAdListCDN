@@ -1,0 +1,19 @@
+diff name:ruadlist lines:18 checksum:93581b78e4
+d4 2
+a5 2
+! Last modified: Fri, 20 Nov 2026 19:59:54 +0000
+! Diff-Path: ../patches/2026.11.20.1199.patch#ruadlist
+d10338 1
+d28832 1
+a28832 1
+shedevrum.ai###app > [class*="center"] > div[class]:style(height: unset !important)
+d29515 1
+a29519 1
+drive2.ru##+js(abort-on-property-read, Object.prototype.createAd)
+a29522 1
+shedevrum.ai##+js(abort-on-property-read, Object.prototype.isAutoPlacementUnit)
+d29640 1
+a29640 1
+drive2.ru,shedevrum.ai##+js(addEventListener-defuser, beforeunload, /setCookies|srcElement|this/)
+d29712 1
+d29873 1

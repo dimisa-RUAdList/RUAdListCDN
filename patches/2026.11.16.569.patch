@@ -1,8 +1,9 @@
-diff name:ruadlist lines:94 checksum:b231017374
+diff name:ruadlist lines:108 checksum:93581b78e4
 d4 2
 a5 2
-! Last modified: Fri, 20 Nov 2026 11:23:07 +0000
-! Diff-Path: ../patches/2026.11.20.683.patch#ruadlist
+! Last modified: Fri, 20 Nov 2026 19:59:54 +0000
+! Diff-Path: ../patches/2026.11.20.1199.patch#ruadlist
+d10338 1
 d13093 1
 a13093 1
 ||rusradio.ru/static/heart-widget.js
@@ -79,15 +80,28 @@ sdelanounas.ru###modalOverlay
 sdelanounas.ru##body:style(overflow-x: auto !important; position: initial !important)
 sdelanounas.ru##html:style(overflow-x: auto !important; position: initial !important)
 ! ---
+d28809 1
+a28809 1
+shedevrum.ai###app > [class*="center"] > div[class]:style(height: unset !important)
 d29089 5
 a29093 1
 dzen.ru##.yAq4AkIBtCFhYnrKpjv9ffTyKSwIHDaoBbXvxSZJavnOFSIszzVdoO4lLKSPD:style(opacity: 0 !important)
 d29159 1
 a29159 1
 dzen.ru,sportsdzen.ru##div[class^="news-"] [style*="margin-top: 0px; height: calc("][style*=" - "]
+d29496 1
+a29500 1
+drive2.ru##+js(abort-on-property-read, Object.prototype.createAd)
+a29503 1
+shedevrum.ai##+js(abort-on-property-read, Object.prototype.isAutoPlacementUnit)
+d29621 1
+a29621 1
+drive2.ru,shedevrum.ai##+js(addEventListener-defuser, beforeunload, /setCookies|srcElement|this/)
+d29693 1
 d29764 1
 a29764 1
 progorod62.ru,sovsport.ru,ura.news##+js(prevent-fetch, _rsc=)
+d29854 1
 d30055 1
 a30055 1
 dzen.ru##div:not([class^="dzen-desktop--trends-"]):matches-css(height: 212px):matches-css(width: 365px):style(opacity: 0 !important)
