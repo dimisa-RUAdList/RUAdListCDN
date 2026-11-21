@@ -1,24 +1,33 @@
-diff name:ruadlist lines:128 checksum:42698fe060
+diff name:ruadlist lines:148 checksum:202b430a1e
 d4 2
 a5 2
-! Last modified: Sat, 21 Nov 2026 09:38:07 +0000
-! Diff-Path: ../patches/2026.11.21.578.patch#ruadlist
+! Last modified: Sat, 21 Nov 2026 17:22:25 +0000
+! Diff-Path: ../patches/2026.11.21.1042.patch#ruadlist
 d10338 1
 d13093 1
 a13093 1
 ||rusradio.ru/static/heart-widget.js
 d13200 1
-a13200 2
+a13200 3
 ||sia.ru/*/piroman_
 ||sia.ru/files/b/
+||sib.fm/storage/banner/
 d13261 1
 a13945 1
 kanobu.ru###__next > div > .bg-background > section[aria-label]
+d14024 3
 a14484 1
 sia.ru###left_fixed_block-rand-1
 a14978 1
 vk.com,vk.ru#?##spa_layout_content > div[style*="--vkui--z_index_popout"]:-abp-has([aria-label^="Вам видны"])
 d15825 1
+d16016 1
+a16016 1
+sib.fm##.block-sticky div[style^="min-height:"]
+a16415 1
+sib.fm##.container > div[style^="min-height:"]
+a16755 1
+sib.fm##.footer-article__more
 a16976 1
 sia.ru#?#.header:-abp-has(> h3 > a[href="/?section=519"])
 a18477 1
@@ -26,6 +35,9 @@ sdelanounas.ru##.sidebar-card--useful-links
 d19633 1
 a19743 1
 vk.com,vk.ru##[id^="l_invite_"][id$="_promo"]
+d20815 1
+a20815 1
+comedy-radio.ru##body > .container[style*="height:"]
 a21119 1
 sia.ru##div[class*="banana"]
 d21121 1
@@ -48,6 +60,8 @@ a21607 1
 bina.az,bitpump.ru,botanichka.ru,chem21.info,enovosty.com,ixbt.games,ixbt.market,ixbt.pro,ixbt.video,ogorodnik.com,orelgrad.ru,propozitsiya.com,qafqazinfo.az,snow-motion.ru,stadion.uz,tap.az,turbo.az,uralpress.ru,www.ixbt.com,www1.ru##div[id*="banner"]
 a21889 1
 vk.com,vk.ru##div[role="main"] [data-feed-fpc-exclude]:not(:empty)
+a22035 1
+sib.fm#?#div[style^="min-height:"]:-abp-has(.banner)
 d22060 1
 a22060 1
 epscape.*##[class^="otk"][class*="-"]
@@ -72,8 +86,9 @@ dzen.ru,sportsdzen.ru##[id*="_R-D-"]
 d24016 1
 a24016 1
 sovsport.ru##[class*="_sidebar"] > div ~ div[class*="_container"]
-a24028 1
+a24028 2
 sovsport.ru#?#div[class$="_grid"] > div[class*="_cell "]:-abp-has(> div:empty)
+sovsport.ru##div[class$="_space"]:empty
 a24032 5
 sovsport.ru##div[class*="_matches"] > div[class*="_eventMatch"]
 sovsport.ru#?#div[class*="_menuWrapper"] div[class*="_container"] > div[class*="_item"]:-abp-has(> [class*="_advertisement"])
@@ -104,16 +119,20 @@ d28804 1
 a28804 1
 shedevrum.ai###app > [class*="center"] > div[class]:style(height: unset !important)
 d29084 5
-a29088 1
-dzen.ru##.yAq4AkIBtCFhYnrKpjv9ffTyKSwIHDaoBbXvxSZJavnOFSIszzVdoO4lLKSPD:style(opacity: 0 !important)
 d29154 1
 a29154 1
 dzen.ru,sportsdzen.ru##div[class^="news-"] [style*="margin-top: 0px; height: calc("][style*=" - "]
+d29488 1
+a29488 1
+radioromantika.ru,relax-fm.ru,sm.news,veseloeradio.ru,www.e1.ru##+js(abort-on-property-read, Date.prototype.toUTCString)
 d29491 1
 a29495 1
 drive2.ru##+js(abort-on-property-read, Object.prototype.createAd)
 a29498 1
 shedevrum.ai##+js(abort-on-property-read, Object.prototype.isAutoPlacementUnit)
+d29514 1
+a29514 1
+radioromantika.ru,relax-fm.ru,veseloeradio.ru##+js(abort-on-property-read, __vasActiveTestIds)
 d29616 1
 a29616 1
 drive2.ru,shedevrum.ai##+js(addEventListener-defuser, beforeunload, /setCookies|srcElement|this/)
@@ -122,8 +141,9 @@ d29759 1
 a29759 1
 progorod62.ru,sovsport.ru,ura.news##+js(prevent-fetch, _rsc=)
 d29849 1
+a30041 2
+dzen.ru##div:first-child > div:first-child + div:last-child:has(> div:only-child > div:empty:first-child + div:empty + div:empty:last-child):style(opacity: 0 !important)
+dzen.ru##div:has(> article[class*="isSidebar"]):style(opacity: 0 !important)
 d30050 1
-a30050 1
-dzen.ru##div:not([class^="dzen-desktop--trends-"]):matches-css(height: 212px):matches-css(width: 365px):style(opacity: 0 !important)
 a30374 1
 /adfox/*/getCode?$third-party,xmlhttprequest

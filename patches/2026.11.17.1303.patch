@@ -1,25 +1,40 @@
-diff name:ruadlist lines:65 checksum:42698fe060
+diff name:ruadlist lines:87 checksum:202b430a1e
 d4 2
 a5 2
-! Last modified: Sat, 21 Nov 2026 09:38:07 +0000
-! Diff-Path: ../patches/2026.11.21.578.patch#ruadlist
+! Last modified: Sat, 21 Nov 2026 17:22:25 +0000
+! Diff-Path: ../patches/2026.11.21.1042.patch#ruadlist
 d10338 1
 d13093 1
 a13093 1
 ||rusradio.ru/static/heart-widget.js
+a13201 1
+||sib.fm/storage/banner/
 a13945 1
 kanobu.ru###__next > div > .bg-background > section[aria-label]
+d14024 3
 a14979 1
 vk.com,vk.ru#?##spa_layout_content > div[style*="--vkui--z_index_popout"]:-abp-has([aria-label^="Вам видны"])
+d16016 1
+a16016 1
+sib.fm##.block-sticky div[style^="min-height:"]
+a16415 1
+sib.fm##.container > div[style^="min-height:"]
+a16755 1
+sib.fm##.footer-article__more
 d19635 1
 a19745 1
 vk.com,vk.ru##[id^="l_invite_"][id$="_promo"]
+d20817 1
+a20817 1
+comedy-radio.ru##body > .container[style*="height:"]
 a21262 1
 igromania.ru##div[class^="GtaButton_button_"]
 a21263 1
 igromania.ru##div[class^="HeaderPromo_"]
 a21893 1
 vk.com,vk.ru##div[role="main"] [data-feed-fpc-exclude]:not(:empty)
+a22039 1
+sib.fm#?#div[style^="min-height:"]:-abp-has(.banner)
 a22449 1
 byxatab.com#?#section.sect.sect--bdt:nth-of-type(2) #dle-content > a:-abp-has(> .icon-arrow-right > .item__meta3:last-child)
 d22707 1
@@ -34,6 +49,8 @@ pikabu.ru#?#article:-abp-has(> .story__main > div[class] + header span:empty)
 a23256 2
 dzen.ru,sportsdzen.ru##[id*="_R-C-"]
 dzen.ru,sportsdzen.ru##[id*="_R-D-"]
+a24037 1
+sovsport.ru##div[class$="_space"]:empty
 a24043 1
 sovsport.ru#?#div[class*="_menuWrapper"] div[class*="_container"] > div[class*="_item"]:-abp-has(> [href*="/bets/"])
 d24320 1
@@ -46,21 +63,26 @@ d28823 1
 a28823 1
 shedevrum.ai###app > [class*="center"] > div[class]:style(height: unset !important)
 d29103 5
-a29107 1
-dzen.ru##.yAq4AkIBtCFhYnrKpjv9ffTyKSwIHDaoBbXvxSZJavnOFSIszzVdoO4lLKSPD:style(opacity: 0 !important)
 d29173 1
 a29173 1
 dzen.ru,sportsdzen.ru##div[class^="news-"] [style*="margin-top: 0px; height: calc("][style*=" - "]
+d29507 1
+a29507 1
+radioromantika.ru,relax-fm.ru,sm.news,veseloeradio.ru,www.e1.ru##+js(abort-on-property-read, Date.prototype.toUTCString)
 d29510 1
 a29514 1
 drive2.ru##+js(abort-on-property-read, Object.prototype.createAd)
 a29517 1
 shedevrum.ai##+js(abort-on-property-read, Object.prototype.isAutoPlacementUnit)
+d29533 1
+a29533 1
+radioromantika.ru,relax-fm.ru,veseloeradio.ru##+js(abort-on-property-read, __vasActiveTestIds)
 d29635 1
 a29635 1
 drive2.ru,shedevrum.ai##+js(addEventListener-defuser, beforeunload, /setCookies|srcElement|this/)
 d29707 1
 d29868 1
+a30060 2
+dzen.ru##div:first-child > div:first-child + div:last-child:has(> div:only-child > div:empty:first-child + div:empty + div:empty:last-child):style(opacity: 0 !important)
+dzen.ru##div:has(> article[class*="isSidebar"]):style(opacity: 0 !important)
 d30069 1
-a30069 1
-dzen.ru##div:not([class^="dzen-desktop--trends-"]):matches-css(height: 212px):matches-css(width: 365px):style(opacity: 0 !important)

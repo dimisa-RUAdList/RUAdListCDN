@@ -1,26 +1,35 @@
-diff name:ruadlist lines:193 checksum:42698fe060
+diff name:ruadlist lines:213 checksum:202b430a1e
 d4 2
 a5 2
-! Last modified: Sat, 21 Nov 2026 09:38:07 +0000
-! Diff-Path: ../patches/2026.11.21.578.patch#ruadlist
+! Last modified: Sat, 21 Nov 2026 17:22:25 +0000
+! Diff-Path: ../patches/2026.11.21.1042.patch#ruadlist
 d10338 1
 d13093 1
 a13093 1
 ||rusradio.ru/static/heart-widget.js
 d13200 1
-a13200 2
+a13200 3
 ||sia.ru/*/piroman_
 ||sia.ru/files/b/
+||sib.fm/storage/banner/
 d13261 1
 a13945 1
 kanobu.ru###__next > div > .bg-background > section[aria-label]
+d14024 3
 a14484 1
 sia.ru###left_fixed_block-rand-1
 a14978 1
 vk.com,vk.ru#?##spa_layout_content > div[style*="--vkui--z_index_popout"]:-abp-has([aria-label^="Вам видны"])
 d15825 1
+d16016 1
+a16016 1
+sib.fm##.block-sticky div[style^="min-height:"]
 d16121 1
 d16274 1
+a16417 1
+sib.fm##.container > div[style^="min-height:"]
+a16757 1
+sib.fm##.footer-article__more
 a16978 1
 sia.ru#?#.header:-abp-has(> h3 > a[href="/?section=519"])
 d17081 1
@@ -41,6 +50,9 @@ a20382 1
 777score.ru##a[href^="/bookmakers"]
 d20601 1
 d20604 1
+d20827 1
+a20827 1
+comedy-radio.ru##body > .container[style*="height:"]
 d21114 1
 a21132 1
 sia.ru##div[class*="banana"]
@@ -79,6 +91,8 @@ a21639 1
 bina.az,bitpump.ru,botanichka.ru,chem21.info,enovosty.com,ixbt.games,ixbt.market,ixbt.pro,ixbt.video,ogorodnik.com,orelgrad.ru,propozitsiya.com,qafqazinfo.az,snow-motion.ru,stadion.uz,tap.az,turbo.az,uralpress.ru,www.ixbt.com,www1.ru##div[id*="banner"]
 a21921 1
 vk.com,vk.ru##div[role="main"] [data-feed-fpc-exclude]:not(:empty)
+a22067 1
+sib.fm#?#div[style^="min-height:"]:-abp-has(.banner)
 d22092 1
 a22092 1
 epscape.*##[class^="otk"][class*="-"]
@@ -105,7 +119,7 @@ liveball.sx,liveball.*#?#.mt-panel-card:-abp-has(> [data-noclick])
 a23285 2
 dzen.ru,sportsdzen.ru##[id*="_R-C-"]
 dzen.ru,sportsdzen.ru##[id*="_R-D-"]
-a24049 40
+a24049 41
 ! Советсткий СПОРТ
 sovsport.ru###match-forecasts
 sovsport.ru##.offers-carousel
@@ -123,6 +137,7 @@ sovsport.ru##a[href="#match-forecasts"]
 sovsport.ru##div[class$="_bet"]
 sovsport.ru##div[class$="_book"]
 sovsport.ru#?#div[class$="_grid"] > div[class*="_cell "]:-abp-has(> div:empty)
+sovsport.ru##div[class$="_space"]:empty
 sovsport.ru##div[class*="_advertisement"]
 sovsport.ru##div[class*="_bonus"]
 sovsport.ru##div[class*="_headerFlex"] div[class*="_wrapper"]
@@ -169,16 +184,20 @@ a28853 2
 footbole24.com,kingball.top,sportcsat.com,sportcsat.ru,streame.center,vitalsport1.ru##div[style^="position:"][style*=" top: 0px; left: 0px; width: 100%; height: 100%;"][style*="z-index:"][style*="cursor: pointer;"]
 footbole24.com,kingball.top,sportcsat.com,sportcsat.ru,streame.center,vitalsport1.ru##iframe[src]:style(pointer-events: auto !important)
 d29088 5
-a29092 1
-dzen.ru##.yAq4AkIBtCFhYnrKpjv9ffTyKSwIHDaoBbXvxSZJavnOFSIszzVdoO4lLKSPD:style(opacity: 0 !important)
 d29158 1
 a29158 1
 dzen.ru,sportsdzen.ru##div[class^="news-"] [style*="margin-top: 0px; height: calc("][style*=" - "]
+d29492 1
+a29492 1
+radioromantika.ru,relax-fm.ru,sm.news,veseloeradio.ru,www.e1.ru##+js(abort-on-property-read, Date.prototype.toUTCString)
 d29495 1
 a29499 1
 drive2.ru##+js(abort-on-property-read, Object.prototype.createAd)
 a29502 1
 shedevrum.ai##+js(abort-on-property-read, Object.prototype.isAutoPlacementUnit)
+d29518 1
+a29518 1
+radioromantika.ru,relax-fm.ru,veseloeradio.ru##+js(abort-on-property-read, __vasActiveTestIds)
 d29620 1
 a29620 1
 drive2.ru,shedevrum.ai##+js(addEventListener-defuser, beforeunload, /setCookies|srcElement|this/)
@@ -187,8 +206,9 @@ d29763 1
 a29763 1
 progorod62.ru,sovsport.ru,ura.news##+js(prevent-fetch, _rsc=)
 d29853 1
+a30045 2
+dzen.ru##div:first-child > div:first-child + div:last-child:has(> div:only-child > div:empty:first-child + div:empty + div:empty:last-child):style(opacity: 0 !important)
+dzen.ru##div:has(> article[class*="isSidebar"]):style(opacity: 0 !important)
 d30054 1
-a30054 1
-dzen.ru##div:not([class^="dzen-desktop--trends-"]):matches-css(height: 212px):matches-css(width: 365px):style(opacity: 0 !important)
 a30378 1
 /adfox/*/getCode?$third-party,xmlhttprequest

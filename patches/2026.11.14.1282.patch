@@ -1,30 +1,39 @@
-diff name:ruadlist lines:197 checksum:42698fe060
+diff name:ruadlist lines:217 checksum:202b430a1e
 d4 2
 a5 2
-! Last modified: Sat, 21 Nov 2026 09:38:07 +0000
-! Diff-Path: ../patches/2026.11.21.578.patch#ruadlist
+! Last modified: Sat, 21 Nov 2026 17:22:25 +0000
+! Diff-Path: ../patches/2026.11.21.1042.patch#ruadlist
 d10338 1
 d13093 1
 a13093 1
 ||rusradio.ru/static/heart-widget.js
 d13200 1
-a13200 2
+a13200 3
 ||sia.ru/*/piroman_
 ||sia.ru/files/b/
+||sib.fm/storage/banner/
 d13261 1
 a13945 1
 kanobu.ru###__next > div > .bg-background > section[aria-label]
+d14024 3
 a14484 1
 sia.ru###left_fixed_block-rand-1
 a14978 1
 vk.com,vk.ru#?##spa_layout_content > div[style*="--vkui--z_index_popout"]:-abp-has([aria-label^="Вам видны"])
 d15349 1
 d15826 1
+d16017 1
+a16017 1
+sib.fm##.block-sticky div[style^="min-height:"]
 d16122 1
 d16275 1
 d16327 1
 a16327 1
 024.by,1progs.ru,ampercar.com,autogeek.com.ua,bolshoyulov.ru,disgustingmen.com,femmie.ru,find-key.ru,fuzzmusic.ru,gadgets-help.ru,gubdaily.ru,hersonweek.net,itbusiness.com.ua,itsider.com.ua,kakbog.com,karavan.ua,kovi.ru,liza.ua,marieclaire.ua,mmr.net.ua,nnews.com.ua,notorgames.org,o-polze.com,pcminipro.ru,poravkrym.ru,rknweb.ru,villaved.ru,vsviti.com.ua##.code-block
+a16418 1
+sib.fm##.container > div[style^="min-height:"]
+a16758 1
+sib.fm##.footer-article__more
 a16979 1
 sia.ru#?#.header:-abp-has(> h3 > a[href="/?section=519"])
 d17082 1
@@ -45,6 +54,9 @@ a20383 1
 777score.ru##a[href^="/bookmakers"]
 d20602 1
 d20605 1
+d20828 1
+a20828 1
+comedy-radio.ru##body > .container[style*="height:"]
 d21115 1
 a21133 1
 sia.ru##div[class*="banana"]
@@ -83,6 +95,8 @@ a21640 1
 bina.az,bitpump.ru,botanichka.ru,chem21.info,enovosty.com,ixbt.games,ixbt.market,ixbt.pro,ixbt.video,ogorodnik.com,orelgrad.ru,propozitsiya.com,qafqazinfo.az,snow-motion.ru,stadion.uz,tap.az,turbo.az,uralpress.ru,www.ixbt.com,www1.ru##div[id*="banner"]
 a21922 1
 vk.com,vk.ru##div[role="main"] [data-feed-fpc-exclude]:not(:empty)
+a22068 1
+sib.fm#?#div[style^="min-height:"]:-abp-has(.banner)
 d22093 1
 a22093 1
 epscape.*##[class^="otk"][class*="-"]
@@ -109,7 +123,7 @@ liveball.sx,liveball.*#?#.mt-panel-card:-abp-has(> [data-noclick])
 a23286 2
 dzen.ru,sportsdzen.ru##[id*="_R-C-"]
 dzen.ru,sportsdzen.ru##[id*="_R-D-"]
-a24050 40
+a24050 41
 ! Советсткий СПОРТ
 sovsport.ru###match-forecasts
 sovsport.ru##.offers-carousel
@@ -127,6 +141,7 @@ sovsport.ru##a[href="#match-forecasts"]
 sovsport.ru##div[class$="_bet"]
 sovsport.ru##div[class$="_book"]
 sovsport.ru#?#div[class$="_grid"] > div[class*="_cell "]:-abp-has(> div:empty)
+sovsport.ru##div[class$="_space"]:empty
 sovsport.ru##div[class*="_advertisement"]
 sovsport.ru##div[class*="_bonus"]
 sovsport.ru##div[class*="_headerFlex"] div[class*="_wrapper"]
@@ -173,16 +188,20 @@ a28854 2
 footbole24.com,kingball.top,sportcsat.com,sportcsat.ru,streame.center,vitalsport1.ru##div[style^="position:"][style*=" top: 0px; left: 0px; width: 100%; height: 100%;"][style*="z-index:"][style*="cursor: pointer;"]
 footbole24.com,kingball.top,sportcsat.com,sportcsat.ru,streame.center,vitalsport1.ru##iframe[src]:style(pointer-events: auto !important)
 d29089 5
-a29093 1
-dzen.ru##.yAq4AkIBtCFhYnrKpjv9ffTyKSwIHDaoBbXvxSZJavnOFSIszzVdoO4lLKSPD:style(opacity: 0 !important)
 d29159 1
 a29159 1
 dzen.ru,sportsdzen.ru##div[class^="news-"] [style*="margin-top: 0px; height: calc("][style*=" - "]
+d29493 1
+a29493 1
+radioromantika.ru,relax-fm.ru,sm.news,veseloeradio.ru,www.e1.ru##+js(abort-on-property-read, Date.prototype.toUTCString)
 d29496 1
 a29500 1
 drive2.ru##+js(abort-on-property-read, Object.prototype.createAd)
 a29503 1
 shedevrum.ai##+js(abort-on-property-read, Object.prototype.isAutoPlacementUnit)
+d29519 1
+a29519 1
+radioromantika.ru,relax-fm.ru,veseloeradio.ru##+js(abort-on-property-read, __vasActiveTestIds)
 d29621 1
 a29621 1
 drive2.ru,shedevrum.ai##+js(addEventListener-defuser, beforeunload, /setCookies|srcElement|this/)
@@ -191,8 +210,9 @@ d29764 1
 a29764 1
 progorod62.ru,sovsport.ru,ura.news##+js(prevent-fetch, _rsc=)
 d29854 1
+a30046 2
+dzen.ru##div:first-child > div:first-child + div:last-child:has(> div:only-child > div:empty:first-child + div:empty + div:empty:last-child):style(opacity: 0 !important)
+dzen.ru##div:has(> article[class*="isSidebar"]):style(opacity: 0 !important)
 d30055 1
-a30055 1
-dzen.ru##div:not([class^="dzen-desktop--trends-"]):matches-css(height: 212px):matches-css(width: 365px):style(opacity: 0 !important)
 a30379 1
 /adfox/*/getCode?$third-party,xmlhttprequest
