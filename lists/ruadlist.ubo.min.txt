@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 21 Nov 2026 23:04:37 +0000
-! Diff-Path: ../patches/2026.11.21.1384.patch#ruadlist
+! Last modified: Sun, 22 Nov 2026 11:06:25 +0000
+! Diff-Path: ../patches/2026.11.22.666.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -20085,7 +20085,7 @@ softpir.com##a[href*="azbukasofta.xyz"]
 koob.ru##a[href*="b17.ru/"]
 beremennost.net##a[href*="babyitalia.ru"]
 2ip.ua,agro-business.com.ua,agronomy.com.ua,alcogolizm.com,anekdot.ru,bitpump.ru,blisch.by,glavagronom.ru,gomel-sat.bz,gre4ka.info,legkopolezno.ru,maw.ru,ozersk74.ru,post-tracker.ru,pravda.if.ua,threatpost.ru,topfile.tj,uamotors.com.ua,yaizakon.com.ua,zhacker.net##a[href*="banner"]
-alltor.me,backup.menu,beremennost.net,buhgalter911.com,dead-serial.com,dedicated.menu,domohozayki.com,dsgners.ru,electricalschool.info,elementarno-tv.com,fishki.net,forum-profit.ru,hosting.cafe,https.menu,kopilkaurokov.ru,kosti-tv.com,license.menu,multiurok.ru,ogribax.ru,openssource.biz,palantinbest.ru,php.ru,shared.menu,traktorist.ua,uvelir.info,uvelir.net,vds.menu,vorozheya.org,vskazke-tv.com,www.pesticidy.ru##a[href*="banner"][target="_blank"]
+alltor.me,backup.menu,beremennost.net,buhgalter911.com,dead-serial.com,dedicated.menu,domohozayki.com,dsgners.ru,electricalschool.info,elementarno-tv.com,fishki.net,forum-profit.ru,hosting.cafe,https.menu,kopilkaurokov.ru,kosti-tv.com,license.menu,multiurok.ru,ogribax.ru,openssource.biz,palantinbest.ru,php.ru,shared.menu,shazoo.ru,traktorist.ua,uvelir.info,uvelir.net,vds.menu,vorozheya.org,vskazke-tv.com,www.pesticidy.ru##a[href*="banner"][target="_blank"]
 forum.mista.ru##a[href*="banners.php?click="]
 forum.mista.ru##a[href*="banners.php?click="] + a
 minecraft15.my1.ru##a[href*="barbarisnews.ru"]
@@ -21011,6 +21011,7 @@ forumhouse.ru#?#div:-abp-has(> [class$="relap-block"])
 podarkus.ru#?#div:-abp-has(> [class^="G-work-podarkus"] > a[href*="erid="])
 liveresult.ru#?#div:-abp-has(> [data-has-bookmaker-odds])
 gdzguru.com,reshebnik.com#?#div:-abp-has(> [href*="://gdz-ru.work/"])
+ixbt.games#?#div:-abp-has(> [href*="utm_campaign"] ~ button)
 7themes.su,yakutsk.ru#?#div:-abp-has(> [id^="adfox_"])
 ura.news#?#div:-abp-has(> [id^="adv-"])
 blitzfoxhub.com,draug.ru,emdigital.ru,enthub.it,modsforwot.ru,pogodavtomske.ru#?#div:-abp-has(> [id^="yandex_rtb"])
@@ -23748,6 +23749,7 @@ rambler.ru##.ad_branding_site div[style*="background-image:"][style*="rambler.ru
 rambler.ru##.adfox-background-container
 championat.com,championat.ru##.adv-mark
 lenta.news,lenta.ru##.advertisable-plate__erid
+championat.com,championat.ru#?#.article-preview-list > .article-preview:-abp-has(a[href^="https://gglead.org/"])
 championat.com,championat.ru#?#.article-preview._video:-abp-has(> div > a[href*="okko.sport"])
 gazeta.press,gazeta.ru##.b_custom_logo
 gazeta.press,gazeta.ru##.b_promo_twz
