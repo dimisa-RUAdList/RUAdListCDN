@@ -1,9 +1,11 @@
-diff name:ruadlist lines:155 checksum:cd59240cda
+diff name:ruadlist lines:159 checksum:50176598bd
 d4 2
 a5 2
-! Last modified: Sun, 22 Nov 2026 11:06:25 +0000
-! Diff-Path: ../patches/2026.11.22.666.patch#ruadlist
+! Last modified: Sun, 22 Nov 2026 18:26:13 +0000
+! Diff-Path: ../patches/2026.11.22.1106.patch#ruadlist
 d10338 1
+a10359 1
+t-j.ru##body > div[class^="_popup_"][aria-modal]
 d13093 1
 a13093 1
 ||rusradio.ru/static/heart-widget.js
@@ -113,6 +115,8 @@ ya.ru##html[class*="sectslon_top "] main > div[class*="__"] ~ div[class*="__"] ~
 d24308 1
 a24308 1
 ya.ru##section[style*="sectslon-items-count:"]
+a26601 1
+@@||192.168.*.$~third-party
 d27555 1
 a27555 1
 www.1tv.ru##div[class*="Branding_branding_"]:style(padding-top: unset !important)
@@ -140,9 +144,9 @@ shedevrum.ai##+js(abort-on-property-read, Object.prototype.isAutoPlacementUnit)
 d29514 1
 a29514 1
 radioromantika.ru,relax-fm.ru,veseloeradio.ru##+js(abort-on-property-read, __vasActiveTestIds)
+a29605 1
+drive2.ru,shedevrum.ai##+js(addEventListener-defuser, /beforeunload|pagehide/, /setCookies|srcElement|this/)
 d29616 1
-a29616 1
-drive2.ru,shedevrum.ai##+js(addEventListener-defuser, beforeunload, /setCookies|srcElement|this/)
 d29688 1
 d29759 1
 a29759 1
