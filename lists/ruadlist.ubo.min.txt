@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Mon, 23 Nov 2026 08:55:10 +0000
-! Diff-Path: ../patches/2026.11.23.535.patch#ruadlist
+! Last modified: Mon, 23 Nov 2026 21:13:41 +0000
+! Diff-Path: ../patches/2026.11.23.1273.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -806,7 +806,6 @@
 ||bidder.smartytouch.co^$third-party
 ||bidderstack.com^$third-party
 ||bidmatic.io^$third-party
-||bidster.net^$third-party
 ||bidtizadd.ru^$third-party
 ||bidtraffic.ru^
 ||bidvay.com^$third-party
@@ -21034,7 +21033,7 @@ okna.ua#?#div:-abp-has(> div[id][data-url])
 silver.ru#?#div:-abp-has(> div[id^="M"][id*="Composite"])
 liveresult.ru#?#div:-abp-has(> div[style="color:#D42A28"])
 koolinar.ru#?#div:-abp-has(> header ~ a[href][rel="sponsored"])
-esports.ru#?#div:-abp-has(> img ~ a[href*="://tracker.partnersmelbet.ru/"])
+esports.ru#?#div:-abp-has(> img ~ a[href*="melbet.ru/"])
 gdzguru.com#?#div:-abp-has(> img[src*="ops."])
 computer76.ru,rp5.am,rp5.by,rp5.co.nz,rp5.kz,rp5.md,rp5.ru,videoredaktor.ru#?#div:-abp-has(> ins)
 doramatv.live,doramatv.one,doramatv.ru#?#div:-abp-has(> noindex > script)
@@ -24071,6 +24070,7 @@ sovsport.ru#?#h3:-abp-contains(/бонусы| ставки | ставок | ст
 sovsport.ru##section[class*="_advPlayer"]
 sovsport.ru#?#ul[class*="_mediaList"] > li:-abp-has(a[href*="bonus"])
 sovsport.ru#?#ul[class*="_mediaList"] > li:-abp-has(a[href*="bookmaker"])
+sovsport.ru#?#ul[class*="_mediaList"] > li:-abp-has(a[href*="dzen.ru/"])
 ||sovsport.ru/api/bonus-rating
 ||sovsport.ru/api/proxy/api/promolink/
 ! Sports.ru, а также by.tribuna.com, ua.tribuna.com
