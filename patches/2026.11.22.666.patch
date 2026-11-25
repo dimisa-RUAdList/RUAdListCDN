@@ -1,12 +1,14 @@
-diff name:ruadlist lines:96 checksum:6c9b66f70c
+diff name:ruadlist lines:121 checksum:0c78e7d3d0
 d4 2
 a5 2
-! Last modified: Wed, 25 Nov 2026 12:38:43 +0000
-! Diff-Path: ../patches/2026.11.25.758.patch#ruadlist
+! Last modified: Wed, 25 Nov 2026 22:25:39 +0000
+! Diff-Path: ../patches/2026.11.25.1345.patch#ruadlist
 d809 1
 d8065 1
 a8065 1
 /files/banner/*$domain=~answear.ua|~bel-mt.ru|~burganyatirim.com.tr|~crbmpurga.ru|~easyship.ru|~saabcity.ru|~technoavia.ru|~xn--d1abblrh2byewa.xn--p1ai|~yarkiy.ru
+a9243 1
+?source=liveball.$popup,domain=liveball.im|liveball.sx
 a10326 1
 rutube.ru##.wdp-system-notifications-toaster-module__root
 a10358 1
@@ -33,6 +35,8 @@ anistar.org,astar.bz,astar.pw,online-star.org,online-stars.org##.content-pravo >
 d17034 1
 a17034 1
 gorodovoy.ru,popcornnews.ru##.horizontal-banner
+a17333 1
+sport-express.net,sport-express.ru##.ls-social-block__dzen
 a18027 1
 rutube.ru##.promocode-disable-ad-24hours-topline-banner-module__wrapper
 d18197 1
@@ -54,6 +58,8 @@ anistar.org,astar.bz,astar.pw,online-star.org,online-stars.org##a[onclick^="if(t
 d21035 1
 a21035 1
 esports.ru#?#div:-abp-has(> img ~ a[href*="melbet.ru/"])
+a21278 1
+igromania.ru#?#div[class^="Sidebar_sidebar_list_"] > .knb-card:-abp-has(> .knb-card--footer [class*="CategoryLabel_partner_"])
 a21893 1
 7kanal.co.il##div[role="banner"]
 a22014 1
@@ -67,6 +73,21 @@ a22715 1
 d22753 1
 a22753 1
 ||pikabu.ru/ajax/*?vjH7h=$xmlhttprequest
+d22783 1
+d22844 1
+d23194 5
+a23198 10
+liveball.sx,liveball.*##.home-hero__chips
+liveball.sx,liveball.*##.home-seo
+liveball.sx,liveball.*##a[onclick][target="_blank"]
+liveball.sx,liveball.*##body > a[href][target="_blank"]
+liveball.sx,liveball.*##body > div[id]:not([class]):not([style])
+liveball.sx,liveball.*##body > div[id][class][style^="display:"][style*="block"]
+liveball.sx,liveball.*#?#.mt-panel-card:-abp-has(> a[target="_blank"])
+liveball.sx,liveball.*#?#.sm-card:-abp-has(> a[target="_blank"])
+||cdn.lbs.pw/st/
+||lbs.pw/liveball/img/bc/
+d23200 1
 a23265 1
 dzen.ru,sportsdzen.ru##[id*="_R-E-"]
 a24046 1
@@ -86,12 +107,16 @@ a26627 1
 d27712 6
 a27717 1
 anistar.org,astar.bz,astar.pw,online-star.org,online-stars.org##.news_avatar > img:style(filter: none !important)
+d28445 1
 d29171 1
 a29171 1
 dzen.ru,sportsdzen.ru##[id] > div[class^="news-"] > div[class*="_content "] > div[id] + div[class*=" "] > div:only-child
 a29632 1
 drive2.ru,shedevrum.ai##+js(addEventListener-defuser, /beforeunload|pagehide/, /setCookies|srcElement|this/)
 d29643 1
+d30095 1
+a30095 1
+liveball.*##+js(prevent-addEventListener, click, excluded)
 d33337 1
 a33337 1
 /^https?:\/\/pikabu\.ru\/ajax\/[^?]*\?[^=]+=[^&]*[0-9a-f]{20,}_[A-Za-z0-9_%-]+/$xmlhttprequest,domain=pikabu.ru
