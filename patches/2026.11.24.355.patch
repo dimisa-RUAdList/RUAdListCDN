@@ -1,24 +1,41 @@
-diff name:ruadlist lines:40 checksum:54e92cdf5f
+diff name:ruadlist lines:71 checksum:6c9b66f70c
 d4 2
 a5 2
-! Last modified: Wed, 25 Nov 2026 02:17:46 +0000
-! Diff-Path: ../patches/2026.11.25.137.patch#ruadlist
+! Last modified: Wed, 25 Nov 2026 12:38:43 +0000
+! Diff-Path: ../patches/2026.11.25.758.patch#ruadlist
+d8064 1
+a8064 1
+/files/banner/*$domain=~answear.ua|~bel-mt.ru|~burganyatirim.com.tr|~crbmpurga.ru|~easyship.ru|~saabcity.ru|~technoavia.ru|~xn--d1abblrh2byewa.xn--p1ai|~yarkiy.ru
+a10325 1
+rutube.ru##.wdp-system-notifications-toaster-module__root
 d10786 1
 a10786 1
 /*banner*.php|$subdocument,domain=anistar.org|astar.bz|astar.pw|online-star.org|online-stars.org
 d10880 1
+d12845 1
 d14262 2
 a14263 1
 anistar.org,astar.bz,astar.pw,online-star.org,online-stars.org#?##dle-content > .news:-abp-has(> .news_text :not(.text_spoiler) > a:not([href^="/"]):not([href*="anistar.org/"]):not([href*="astar.bz/"]):not([href*="astar.pw/"]):not([href*="online-star.org/"]):not([href*="online-stars.org/"]))
+d16187 1
+a16187 1
+agropolit.com,elevatorist.com,filmozavr.com,filmozavr.net,gotennis.ru,inoprosport.ru,kinopati.ru,kurkul.com,lada-granta.net,latifundist.com,lkforum.ru,myshows.me,osp.ru,overclockers.ua,podfm.ru,stopgame.ru,superagronom.com,zemliak.com##.branding
 d16466 1
 a16466 1
 anistar.org,astar.bz,astar.pw,online-star.org,online-stars.org##.content-pravo > .news-list ~ div[class^="center"]
+d17035 1
+a17035 1
+gorodovoy.ru,popcornnews.ru##.horizontal-banner
+a18028 1
+rutube.ru##.promocode-disable-ad-24hours-topline-banner-module__wrapper
 d18198 1
 a18198 1
 anistar.org,astar.bz,astar.pw,online-star.org,online-stars.org##.right-panel-bottom > .favorites ~ span
+a19036 1
+popcornnews.ru##.vertical-banner
 d19667 1
 a19667 1
 anistar.org,astar.bz,astar.pw,online-star.org,online-stars.org##[href*="://r.advg.agency/"]
+d19744 1
 d20036 1
 d20227 1
 a20227 1
@@ -29,8 +46,19 @@ anistar.org,astar.bz,astar.pw,online-star.org,online-stars.org##a[onclick^="if(t
 d22163 1
 a22163 1
 anistar.org,astar.bz,astar.pw,online-star.org,online-stars.org##iframe[src*="banner"]:not([src*="widget_comments.php"])
+d22717 2
+a22718 1
+/^https:\/\/static\.dzeninfra\.ru\/s3\/zen-apps\/[^?]*\/[^/?]*\.(?:d|mode)\.bundle\..*$/$script
+a23268 1
+dzen.ru,sportsdzen.ru##[id*="_R-E-"]
 a24049 1
 sovsport.ru##div[class$="_disclaimer"]
+d24336 1
+a24336 1
+ya.ru##html[class*="sectlon_top "] main > div[class*="__"] ~ div[class*="__"] ~ div[class*="__"] > div
+d24338 1
+a24338 1
+ya.ru##section[style*="sectlon-items-count:"]
 a26355 1
 @@||astar.pw^$generichide
 d27717 6
@@ -39,3 +67,6 @@ anistar.org,astar.bz,astar.pw,online-star.org,online-stars.org##.news_avatar > i
 d29176 1
 a29176 1
 dzen.ru,sportsdzen.ru##[id] > div[class^="news-"] > div[class*="_content "] > div[id] + div[class*=" "] > div:only-child
+d33342 1
+a33342 1
+/^https?:\/\/pikabu\.ru\/ajax\/[^?]*\?[^=]+=[^&]*[0-9a-f]{20,}_[A-Za-z0-9_%-]+/$xmlhttprequest,domain=pikabu.ru
