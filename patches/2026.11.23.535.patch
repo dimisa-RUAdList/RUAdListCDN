@@ -1,8 +1,8 @@
-diff name:ruadlist lines:102 checksum:d97f20e958
+diff name:ruadlist lines:125 checksum:baad8eae18
 d4 2
 a5 2
-! Last modified: Thu, 26 Nov 2026 04:56:21 +0000
-! Diff-Path: ../patches/2026.11.26.296.patch#ruadlist
+! Last modified: Thu, 26 Nov 2026 15:00:06 +0000
+! Diff-Path: ../patches/2026.11.26.900.patch#ruadlist
 d809 1
 d8065 1
 a8065 1
@@ -16,9 +16,16 @@ a10787 1
 /*banner*.php|$subdocument,domain=anistar.org|astar.bz|astar.pw|online-star.org|online-stars.org
 d10881 1
 d12846 1
+a12907 3
+||profinance.ru/adv/
+||profinance.ru/andromeda/embed.js
+||profinance.ru/js/tgbnr.js
 d14263 2
 a14264 1
 anistar.org,astar.bz,astar.pw,online-star.org,online-stars.org#?##dle-content > .news:-abp-has(> .news_text :not(.text_spoiler) > a:not([href^="/"]):not([href*="anistar.org/"]):not([href*="astar.bz/"]):not([href*="astar.pw/"]):not([href*="online-star.org/"]):not([href*="online-stars.org/"]))
+d15840 1
+a15840 1
+1743.ru,7kanal.co.il,bashinform.rugameportalrf.ru,gts.tv,k-ur.ru,kinoprofi.vip,liga.net,ntsk.ru,online.ua,orki.ru,orsk.ru,sakhalin.info,smotra.ru,solncevo.info##.banner-top
 d16188 1
 a16188 1
 agropolit.com,elevatorist.com,filmozavr.com,filmozavr.net,gotennis.ru,inoprosport.ru,kinopati.ru,kurkul.com,lada-granta.net,latifundist.com,lkforum.ru,myshows.me,osp.ru,overclockers.ua,podfm.ru,stopgame.ru,superagronom.com,zemliak.com##.branding
@@ -32,9 +39,14 @@ a17335 1
 sport-express.net,sport-express.ru##.ls-social-block__dzen
 a18029 1
 rutube.ru##.promocode-disable-ad-24hours-topline-banner-module__wrapper
+d18078 1
+a18078 1
+kinozal.cloudns.nz,kinozal.guru,kinozal.me,kinozal.tv,kinozaltv.life##.rb_new
 d18199 1
 a18199 1
 anistar.org,astar.bz,astar.pw,online-star.org,online-stars.org##.right-panel-bottom > .favorites ~ span
+a18739 1
+7kanal.co.il##.taboola
 a19037 1
 popcornnews.ru##.vertical-banner
 d19668 1
@@ -42,6 +54,9 @@ a19668 1
 anistar.org,astar.bz,astar.pw,online-star.org,online-stars.org##[href*="://r.advg.agency/"]
 d19745 1
 d20037 1
+d20069 1
+a20069 1
+anilib.me,animelib.org,asienda.ru,cybersport.ru,diets.ru,hentailib.me,hentailib.org,iphones.ru,mangalib.me,mangalib.org,mt.today,mycharm.ru,myjane.ru,povarenok.ru,profinance.ru,ptichka.ru,ranobelib.me,relook.ru,sostav.ru,stranamam.ru,vuzopedia.ru##a[href*="?erid="]
 d20228 1
 a20228 1
 1news.com.ua,1plus1.video,1snau.ru,4pda.to,7dach.ru,abw.by,agronews.ua,allbasketball.org,animaunt.org,anistar.org,app2top.ru,aqua-therm.ru,arsenaltula.ru,astar.bz,astar.pw,autoreview.ru,bez-smenki.ru,byxatab.org,cy-pr.com,darkermagazine.ru,enovosty.com,euro-football.ru,festima.ru,fishki.net,football.ua,forum.watch.ru,gazeta.uz,gdz.ru,glavagronom.ru,glavpahar.ru,gnatkovsky.com.ua,grippua.com.ua,gsminfo.com.ua,horrorzone.ru,inforeactor.ru,informator.ua,junona.pro,landlord.ua,lgoty-vsem.ru,liveresult.ru,med2.ru,meteo-tv.ru,mezha.ua,nachasi.com,news.sportbox.ru,nim.ru,online-star.org,online-stars.org,orelgrad.ru,playground.ru,playmaker24.ru,point.md,pr-cy.ru,prodota.ru,proglib.io,prosports.kg,prosports.kz,riafan.ru,russorosso.ru,rusvesna.su,shkole.net,silver.ru,smartpress.by,solncevo.info,sostav.ua,sovetromantica.com,spafilms.me,sport-express.net,sport-express.ru,sport-tv.by,sportsdaily.ru,stratege.ru,tayga.info,thg.ru,tt-cup.com,tvmag.ru,uoor.com.ua,val.ua,vandrouki.by,vashurok.ru,vc.ru,vgr.by,vjazhi.ru,vmgu.ru,volnorez.com.ua,www.film.ru,www.khl.ru,www.zoneofgames.ru,yap.ru,yaplakal.com,zakon.kz,zanmsk.ru##a[href*="utm_campai"]
@@ -53,6 +68,12 @@ a21037 1
 esports.ru#?#div:-abp-has(> img ~ a[href*="melbet.ru/"])
 a21280 1
 igromania.ru#?#div[class^="Sidebar_sidebar_list_"] > .knb-card:-abp-has(> .knb-card--footer [class*="CategoryLabel_partner_"])
+d21610 1
+a21610 1
+regmarkets.ru,spravkus.com##div[id*="_R-"]
+d21988 1
+a21988 1
+dorama.land,doramaland.plus,kinozal.cloudns.nz,kinozal.guru,kinozal.me,kinozal.tv,kinozaltv.life##div[style="position: absolute; z-index: 99999"]
 d22164 1
 a22164 1
 anistar.org,astar.bz,astar.pw,online-star.org,online-stars.org##iframe[src*="banner"]:not([src*="widget_comments.php"])
@@ -86,6 +107,8 @@ ya.ru##html[class*="sectlon_top "] main > div[class*="__"] ~ div[class*="__"] ~ 
 d24338 1
 a24338 1
 ya.ru##section[style*="sectlon-items-count:"]
+a24430 1
+radio.yandex.ru##div[class^="DefaultLayout-module-scss-module_"][class$="_bottomBar"] > aside
 a26355 1
 @@||astar.pw^$generichide
 d27717 6
