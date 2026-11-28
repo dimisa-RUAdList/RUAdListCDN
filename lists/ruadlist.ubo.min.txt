@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Fri, 27 Nov 2026 18:07:54 +0000
-! Diff-Path: ../patches/2026.11.27.1087.patch#ruadlist
+! Last modified: Sat, 28 Nov 2026 01:23:49 +0000
+! Diff-Path: ../patches/2026.11.28.83.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -19530,9 +19530,8 @@ vk.com,vk.ru##[data-ad-block-uid]
 tsn.ua##[data-ad-container]
 liza.ua##[data-ad-id]
 delfi.lv##[data-ad-placement]
-shelter.in.ua##[data-ad-pushed]
 kinofilm.io##[data-ad-slot="player_side"]
-ps4.in.ua##[data-ad-slot]
+ps4.in.ua,shelter.in.ua##[data-ad-slot]
 buhgalter.com.ua,buhgalter911.com,factor.ua,tsn.ua,unian.info,unian.net,unian.ua##[data-ad]
 banki.ru##[data-adfox-container]
 vse42.ru##[data-adplace-inited]
@@ -19587,7 +19586,6 @@ progrib.ru##[data-href*="adbl"]
 softonic.ru##[data-href*="offer_id="]
 tulapressa.ru##[data-href*="yandex."][data-href*="news"][data-href*="favid"]
 dltv.org##[data-id]
-shelter.in.ua##[data-in-view]
 app2top.ru##[data-information]
 24tv.ua,football24.ua,sport24.ua##[data-injection-type="LEGAL_SMALL"]
 forbes.ru##[data-interval] > li div[style="min-height: 64px;"]
@@ -29527,6 +29525,7 @@ marieclaire.ua##+js(abort-current-inline-script, redram, /загрузка.../)
 livesport.ws##+js(abort-current-inline-script, setTimeout, adblockwarn)
 liga.net##+js(abort-current-inline-script, window.innerWidth, rcBuf)
 techmusic.ru##+js(abort-current-inline-script, window.onload, _uWnd)
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(abort-current-script, document.documentElement.innerHTML, пацаны)
 dynamo.kiev.ua##+js(abort-current-script, document.getElementById, document.body.style.overflow)
 lenta.news,lenta.ru##+js(abort-current-script, window._lentaData, url_for_scroll)
 tapochek.net##+js(abort-on-property-read, ABNS)
@@ -29806,6 +29805,7 @@ shuba.life##+js(prevent-addEventListener, message, element.contentWindow)
 www.rambler.ru##+js(prevent-addEventListener, scroll, requestAnimationFrame)
 dzen.ru,sportsdzen.ru##+js(prevent-fetch, /stats/bulk|stats/pixels|zen_audit/)
 progorod62.ru,sovsport.ru,ura.news##+js(prevent-fetch, _rsc=)
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(prevent-setTimeout, ['onerror'])
 evribiont.xyz##+js(prevent-setTimeout, adTestElement)
 kinofilm.io##+js(prevent-setTimeout, baitHidden)
 aigenda.ru##+js(prevent-setTimeout, combinedDetector)
@@ -29837,7 +29837,6 @@ questtime.net##+js(remove-node-text, script, MsgNoAD)
 pikabu.ru##+js(remove-node-text, script, addPlaceholder)
 uwupad.me##+js(remove-node-text, script, checkAdBlock)
 agronews.ua,agroreview.com,agroweek.com##+js(remove-node-text, script, clickedOnContent)
-game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, detected)
 newsyou.info##+js(remove-node-text, script, error-report.com)
 fapvdo.ru##+js(remove-node-text, script, getComputedStyle)
 ahen.me##+js(remove-node-text, script, isAdBlock)
@@ -30415,10 +30414,10 @@ gazeta.press,gazeta.ru,lenta.news,lenta.ru,secretmag.ru,wmj.ru##iframe[src^="htt
 !#if env_mv3
 payment.mts.ru###__next > div[id^="adfox_"]:not(:empty):style(display: block !important)
 $script,responseheader=x-yandex-req-id,domain=dzen.ru|sportsdzen.ru
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(abort-current-script, document.createElement, blockPage)
 dtf.ru##+js(addEventListener-defuser, click, '', elements, a[href^="/"][data-router-link])
 e.mail.ru##+js(no-setTimeout-if, '()=>n()', 50)
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(prevent-setTimeout, _0x)
-game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(remove-node-text, script, /agl007|blockPage/)
 e.mail.ru##+js(set-constant, Object.prototype.hasAdBlock, false)
 e.mail.ru#@#+js(set-constant, Object.prototype.hasAdBlock, null)
 /adfox/*/getCode?$third-party,xmlhttprequest

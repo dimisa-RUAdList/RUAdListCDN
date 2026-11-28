@@ -1,8 +1,8 @@
-diff name:ruadlist lines:199 checksum:6aa3b8490c
+diff name:ruadlist lines:212 checksum:5810b4e845
 d4 2
 a5 2
-! Last modified: Fri, 27 Nov 2026 18:07:54 +0000
-! Diff-Path: ../patches/2026.11.27.1087.patch#ruadlist
+! Last modified: Sat, 28 Nov 2026 01:23:49 +0000
+! Diff-Path: ../patches/2026.11.28.83.patch#ruadlist
 d809 1
 d8065 1
 a8065 1
@@ -73,8 +73,13 @@ a18737 1
 7kanal.co.il##.taboola
 a19035 1
 popcornnews.ru##.vertical-banner
+d19523 1
+d19525 1
+a19525 1
+ps4.in.ua,shelter.in.ua##[data-ad-slot]
 a19546 1
 oil-club.ru##[data-blocktitle^="Реклама"]
+d19579 1
 a19583 1
 oil-club.ru##[data-ips-ad]
 d19666 1
@@ -189,12 +194,20 @@ d28694 2
 d29169 1
 a29169 1
 dzen.ru,sportsdzen.ru##[id] > div[class^="news-"] > div[class*="_content "] > div[id] + div[class*=" "] > div:only-child
+a29504 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(abort-current-script, document.documentElement.innerHTML, пацаны)
 a29630 1
 drive2.ru,shedevrum.ai##+js(addEventListener-defuser, /beforeunload|pagehide/, /setCookies|srcElement|this/)
 d29641 1
+a29783 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(prevent-setTimeout, ['onerror'])
+d29815 1
 d30093 1
 a30093 1
 liveball.*##+js(prevent-addEventListener, click, excluded)
+a30392 1
+game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(abort-current-script, document.createElement, blockPage)
+d30396 1
 d33335 1
 a33335 1
 /^https?:\/\/pikabu\.ru\/ajax\/[^?]*\?[^=]+=[^&]*[0-9a-f]{20,}_[A-Za-z0-9_%-]+/$xmlhttprequest,domain=pikabu.ru
