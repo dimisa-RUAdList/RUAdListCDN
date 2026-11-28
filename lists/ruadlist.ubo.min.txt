@@ -1,8 +1,8 @@
 [uBlock Origin 1.0]
 ! Title: RU AdList for uBO only
 ! Expires: 4 days
-! Last modified: Sat, 28 Nov 2026 10:13:45 +0000
-! Diff-Path: ../patches/2026.11.28.613.patch#ruadlist
+! Last modified: Sat, 28 Nov 2026 18:51:04 +0000
+! Diff-Path: ../patches/2026.11.28.1131.patch#ruadlist
 ! Diff-Expires: 5 hours
 ! License: https://github.com/dimisa-RUAdList/RUAdListCDN/blob/main/LICENSE
 ! *** ruadlist:RuAdList-uBO.txt ***
@@ -10409,6 +10409,7 @@ surl.*#?#.text-center:-abp-has(> form > .disabled) > p ~ *
 /frontend/*/remodal$script,stylesheet,~third-party,domain=ifnews.org.ua|lvnews.org.ua|rvnews.rv.ua|tenews.org.ua
 /jquery.arcticmodal$script,stylesheet,domain=rusvesna.su|smiruponitke.info|stranadetstva.ru|sud.ua
 /jquery.simplemodal.js$script,domain=holod72.ru
+/js/socad_flscr/*$domain=libertycity.net|libertycity.ru|vgtimes.com|vgtimes.ru
 /nocopy.js$script,domain=xn--90adear.xn--p1ai
 /plugins/wordpress-popup/*$~stylesheet,domain=o-nedvizhke.ru
 /plugins/wp-lopus-popus/*$domain=e5450.com
@@ -10471,7 +10472,6 @@ surl.*#?#.text-center:-abp-has(> form > .disabled) > p ~ *
 ||klassno.tv/wp-content/plugins/mashshare-videopost/
 ||kursremonta.ru/wp-content/plugins/popup-by-supsystic/
 ||lektsia.info/js/services/boxBeforeClosingShare.js
-||libertycity.*/js/socad_flscr/
 ||life.ru/_next/static/chunks/2793.
 ||linkis.com/ajax/get-popup-html$xmlhttprequest
 ||litnet.com/common/*/confirm_age/
@@ -22121,6 +22121,7 @@ minfin.com.ua##header.mfz-container::after
 sims3pack.ru##header.st-flex
 sims3pack.ru##header.st-flex ~ *
 tr.anidub.com##header::after
+igromania.ru##html.is-mobile [class^="MaterialsManufacturerPage_infiniteWrap"] > div[class^="InfiniteScrollWrap_content"] > div[style^="margin-bottom:"] ~ div[style^="margin-bottom:"]
 comss.ru##html:not([style]) > body getsitecontrol-widget:not(#getsitecontrol-7665)
 4pda.to##html[style] > body[style=";background-color:#E6E7E9!important"] .advanced-area .post[itemid] ~ .post:not([itemid]):nth-child(-n+3)
 4pda.to#?#html[style] > body[style=";background-color:#E6E7E9!important"] .article > div[style^="background-color:"]:-abp-has(> span + a[id][href][target="_blank"])
@@ -25109,6 +25110,7 @@ zarulem.ws##td[style^="text-align:center;width:50%"]
 ||dhgate.com^$third-party
 ||diamondelectric.ru/partner_block.php?
 ||digitalcaramel.com/caramel.js
+||digitalcaramel.com/caramel.sdk.js
 ||dimpy.narod.ru^
 ||dnr.kz/test/$third-party,object
 ||dns-shop.ru/export/
@@ -27580,7 +27582,7 @@ forums.overclockers.ru##tr > td[nowrap="nowrap"][style^="color: red;"][style$="f
 aif.ru,ain.ua,bit.ua,budport.com.ua,ixbt.com,ko.com.ua,kv.by,livejournal.com,mc.today,newstudio.tv,oper.ru,pay-day.ru,sc2tv.ru,stopgame.ru,userstyles.org,zakarpatpost.net##body:not(#id):style(background-image: none !important)
 2pay-day.ru,4video.adult,aif.ru,ain.ua,bit.ua,budport.com.ua,ixbt.com,ko.com.ua,kv.by,livejournal.com,mc.today,newstudio.tv,oper.ru,sc2tv.ru,stopgame.ru,userstyles.org,zakarpatpost.net##html:not(#id):style(background-image: none !important)
 ! ---
-baskino.film,dnepr.info,dugtor.ru,filmitorrent.net,filmitorrent.site,jetsetter.ua,kinoafisha.ua,kinobar.vip,kinoukr.com,konohatv.life,ladys.media,moskva.fm,newstudio.tv,nnm-club.me,nnmclub.ro,nnmclub.to,pay-day.ru,roem.ru,rusfootball.info,uaserial.tv,utorr.cc,vc.ru,virusinfo.info,xxxadulttorrent.org,you-anime.ru,yummyanime.tv,zombie-film.live##body:not(#id):style(padding-top: 0 !important)
+baskino.film,dnepr.info,dugtor.ru,filmitorrent.net,filmitorrent.site,jetsetter.ua,kinoafisha.ua,kinobar.vip,kinoukr.com,konohatv.life,ladys.media,moskva.fm,newstudio.tv,nnm-club.me,nnmclub.ro,nnmclub.to,pay-day.ru,roem.ru,rusfootball.info,uakino-hd.com,uaserial.tv,utorr.cc,vc.ru,virusinfo.info,xxxadulttorrent.org,you-anime.ru,yummyanime.tv,zombie-film.live##body:not(#id):style(padding-top: 0 !important)
 ! ---
 radioromantika.ru##.main-wrapp__content:style(margin-top: 0 !important)
 101.ru##.wrapper-branding
@@ -30106,7 +30108,7 @@ pronpic.org##div[style="color:red;font-size:25px;"], .adblock_loock
 epscape.*##+js(prevent-setTimeout, shouldShowPrompt)
 fanserial.*,fanserialstv.net,hdrezka.*,rezka.*##+js(set-constant, Object.prototype.preroll, undefined)
 fap-guru.*,seks-studentki.*,sex-studentki.*##+js(addEventListener-defuser, DOMContentLoaded, click_time)
-fishki.net,game4you.top,hot.game,innal.top,mp3party.net,naylo.top,rustorka.*,rustorkacom.lib##+js(href-sanitizer, [href*="url=https"], ?url)
+fishki.net,game4you.top,hot.game,innal.top,libertycity.*,mp3party.net,naylo.top,rustorka.*,rustorkacom.lib,vgtimes.*##+js(href-sanitizer, [href*="url=https"], ?url)
 google-cloud.services,spac.me,spaces.im,spcs.bio,strip2.co,strip2.*,usersporn.com##+js(abort-current-inline-script, __require, /clickunder/)
 google-cloud.services,spac.me,spaces.im,spcs.bio,strip2.co,strip2.*,usersporn.com##+js(set, Object.prototype.ads/mobiads, undefined)
 hdrezka.*,rezka.*##+js(abort-current-inline-script, document.getElementsByTagName, AMSP.loadAsset)
@@ -30114,6 +30116,9 @@ howdyho.*##+js(no-setTimeout-if, _0x)
 howdyho.*##+js(set-attr, #progress-value, data-timer, 25)
 ferra.ru,indicator.ru,letidor.ru,moslenta.ru,motor.ru,passion.ru,quto.ru,secretmag.ru,wmj.ru##html[data-env]:style(container-type: unset !important)
 kinoblin.ru,pornoakt.*,serialai.ru##+js(addEventListener-defuser, mousedown, pop.doEvent)
+libertycity.*,vgtimes.*##+js(prevent-setTimeout, ad_fullscreen_shown)
+libertycity.*,vgtimes.*##^.adfshift
+libertycity.*,vgtimes.*##^.backgr42
 liveball.*##+js(prevent-addEventListener, click, excluded)
 m.rp5.*#@#.adsbygoogle
 reshuent.ru,sdamgia.ru##main > div > div > div:has-text(/rotator|блокировщик/)
@@ -30295,10 +30300,6 @@ bookdream.ru,booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkn
 bookdream.ru,booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkniga.ru,skanbooks.ru,x-libri.ru##+js(addEventListener-defuser, copy, preventDefault)
 bookdream.ru,booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkniga.ru,skanbooks.ru,x-libri.ru##+js(href-sanitizer, .specialcontdown > a[href^="/download?downloadlink="], ?downloadlink)
 bookdream.ru,booksreed.ru,electrobooks.ru,lit-web.net,litruso.ru,my-lib.ru,novkniga.ru,skanbooks.ru,x-libri.ru##+js(set-attr, .specialcontdown > a, download)
-!#if !env_mobile
-libertycity.net,libertycity.ru,vgtimes.com,vgtimes.ru###mobileon
-libertycity.net,libertycity.ru,vgtimes.com,vgtimes.ru##+js(set-cookie, is_mobile, no, , reload, 1)
-!#endif
 ! МИР 24
 mir24.tv##+js(abort-on-stack-trace, HTMLVideoElement.prototype.play, _app-)
 mir24.tv##+js(set-constant, Object.prototype.autoPlay, {})

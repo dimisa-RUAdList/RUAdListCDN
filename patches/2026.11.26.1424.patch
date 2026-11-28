@@ -1,13 +1,16 @@
-diff name:ruadlist lines:38 checksum:47925e1cd3
+diff name:ruadlist lines:56 checksum:57ab6e3ffc
 d4 2
 a5 2
-! Last modified: Sat, 28 Nov 2026 10:13:45 +0000
-! Diff-Path: ../patches/2026.11.28.613.patch#ruadlist
+! Last modified: Sat, 28 Nov 2026 18:51:04 +0000
+! Diff-Path: ../patches/2026.11.28.1131.patch#ruadlist
 d10330 1
 a10330 1
 2gis.ru,2gis.*###vpn-popup
 a10399 1
 igromania.ru##html.is-mobile div[class^="InTextTableOfContents_floatingButtonWrapper_"]
+a10410 1
+/js/socad_flscr/*$domain=libertycity.net|libertycity.ru|vgtimes.com|vgtimes.ru
+d10473 1
 a15307 1
 euroauto.ru##.ad__badges
 a16674 2
@@ -22,6 +25,8 @@ oil-club.ru##[data-blocktitle^="Реклама"]
 d19585 1
 a19589 1
 oil-club.ru##[data-ips-ad]
+a22119 1
+igromania.ru##html.is-mobile [class^="MaterialsManufacturerPage_infiniteWrap"] > div[class^="InfiniteScrollWrap_content"] > div[style^="margin-bottom:"] ~ div[style^="margin-bottom:"]
 d22759 1
 a22759 1
 ||pikabu.ru/ajax/*?vjH8h=$xmlhttprequest
@@ -29,11 +34,24 @@ a23083 1
 www.avito.ru##div[class^="ads-_"]
 a23893 1
 ||embeds.rambler.ru/partners/credit-game/
+a25105 1
+||digitalcaramel.com/caramel.sdk.js
+d27577 1
+a27577 1
+baskino.film,dnepr.info,dugtor.ru,filmitorrent.net,filmitorrent.site,jetsetter.ua,kinoafisha.ua,kinobar.vip,kinoukr.com,konohatv.life,ladys.media,moskva.fm,newstudio.tv,nnm-club.me,nnmclub.ro,nnmclub.to,pay-day.ru,roem.ru,rusfootball.info,uakino-hd.com,uaserial.tv,utorr.cc,vc.ru,virusinfo.info,xxxadulttorrent.org,you-anime.ru,yummyanime.tv,zombie-film.live##body:not(#id):style(padding-top: 0 !important)
 a29521 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(abort-current-script, document.documentElement.innerHTML, пацаны)
 a29800 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(prevent-setTimeout, ['onerror'])
 d29832 1
+d30102 1
+a30102 1
+fishki.net,game4you.top,hot.game,innal.top,libertycity.*,mp3party.net,naylo.top,rustorka.*,rustorkacom.lib,vgtimes.*##+js(href-sanitizer, [href*="url=https"], ?url)
+a30109 3
+libertycity.*,vgtimes.*##+js(prevent-setTimeout, ad_fullscreen_shown)
+libertycity.*,vgtimes.*##^.adfshift
+libertycity.*,vgtimes.*##^.backgr42
+d30291 4
 a30409 1
 game4you.top,innal.top,naylo.top,rustorka.com,rustorka.net,rustorka.top,rustorkacom.lib##+js(abort-current-script, document.createElement, blockPage)
 d30413 1
